@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/mbeddr.formal.nusmv/mbeddr.formal.nusmv.devkit" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.expressions/com.mbeddr.formal.base.expressions.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv/com.mbeddr.formal.nusmv.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nusmv/test.mbeddr.formal.nusmv.msd" folder="tests" />
+    </projectModules>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+# -----------------------------------------------------------
+# General
+
+
+artifacts/*
+
+*.class
+
+.idea
+workspace.xml
+
+
+junitvmwatcher*.properties
+build.properties
+TEST-*.xml
+junit*.properties
+
+classes_gen
+source_gen
+source_gen.caches
+result_gen
+jimple_gen
+
+
+# -----------------------------------------------------------
+# * tests
+test_gen
+test_gen.caches
+
+
