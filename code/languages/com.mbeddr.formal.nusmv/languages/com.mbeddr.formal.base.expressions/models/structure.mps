@@ -186,5 +186,55 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1IrBcRpi7GI">
+    <property role="EcuMT" value="1989356068341840686" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="UnaryExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="1IrBcRpi7IO" role="1TKVEi">
+      <property role="IQ2ns" value="1989356068341840820" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1IrBcRpi7Jh">
+    <property role="EcuMT" value="1989356068341840849" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ParensExpression" />
+    <property role="34LRSv" value="( ... )" />
+    <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="7mSH3WmWS3c">
+    <property role="EcuMT" value="8482728081213325516" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <property role="TrG5h" value="GenericDotExpression" />
+    <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="7mSH3WmWS3d" role="1TKVEi">
+      <property role="IQ2ns" value="8482728081213325517" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lhs" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7mSH3WmWS3g" role="1TKVEi">
+      <property role="IQ2ns" value="8482728081213325520" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7mSH3WmWS3l" resolve="DotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mSH3WmWS3l">
+    <property role="EcuMT" value="8482728081213325525" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <property role="TrG5h" value="DotTarget" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

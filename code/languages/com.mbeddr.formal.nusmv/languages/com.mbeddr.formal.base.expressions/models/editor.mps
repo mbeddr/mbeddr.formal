@@ -152,7 +152,7 @@
   <node concept="V5hpn" id="6NmtaR1SVqz">
     <property role="TrG5h" value="basic_formal_styles" />
     <node concept="14StLt" id="6NmtaR1SVrw" role="V601i">
-      <property role="TrG5h" value="keyword" />
+      <property role="TrG5h" value="KeywordStyle" />
       <node concept="Vb9p2" id="6NmtaR1SWf7" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
@@ -161,7 +161,7 @@
       </node>
     </node>
     <node concept="14StLt" id="2CEi94dh36z" role="V601i">
-      <property role="TrG5h" value="parens" />
+      <property role="TrG5h" value="ParensStyle" />
       <node concept="3mYdg7" id="2CEi94dh36$" role="3F10Kt">
         <property role="1413C4" value="parenthesis" />
       </node>
@@ -171,7 +171,7 @@
       <node concept="Vb9p2" id="2CEi94dhicz" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="2CEi94dgUHC" role="V601i">
-      <property role="TrG5h" value="Number" />
+      <property role="TrG5h" value="NumberStyle" />
       <node concept="VechU" id="2CEi94dgUHD" role="3F10Kt">
         <property role="Vb096" value="black" />
         <node concept="1iSF2X" id="2CEi94dgUHE" role="VblUZ">
@@ -193,7 +193,7 @@
         </node>
         <node concept="3F0ifn" id="3_qrK00j4t$" role="3EZMnx">
           <property role="3F0ifm" value="(" />
-          <ref role="1k5W1q" node="2CEi94dh36z" resolve="parens" />
+          <ref role="1k5W1q" node="2CEi94dh36z" resolve="ParensStyle" />
           <node concept="pkWqt" id="3_qrK00j4t_" role="pqm2j">
             <node concept="3clFbS" id="3_qrK00j4tA" role="2VODD2">
               <node concept="3clFbF" id="3_qrK00j4tB" role="3cqZAp">
@@ -257,7 +257,7 @@
         </node>
         <node concept="3F0ifn" id="3_qrK00jd$Z" role="3EZMnx">
           <property role="3F0ifm" value=")" />
-          <ref role="1k5W1q" node="2CEi94dh36z" resolve="parens" />
+          <ref role="1k5W1q" node="2CEi94dh36z" resolve="ParensStyle" />
           <node concept="pkWqt" id="3_qrK00jd_0" role="pqm2j">
             <node concept="3clFbS" id="3_qrK00jd_1" role="2VODD2">
               <node concept="3clFbF" id="3_qrK00jd_2" role="3cqZAp">
@@ -298,7 +298,7 @@
         </node>
         <node concept="3F0ifn" id="3_qrK00jd_d" role="3EZMnx">
           <property role="3F0ifm" value="(" />
-          <ref role="1k5W1q" node="2CEi94dh36z" resolve="parens" />
+          <ref role="1k5W1q" node="2CEi94dh36z" resolve="ParensStyle" />
           <node concept="11LMrY" id="3_qrK00jd_e" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -379,7 +379,7 @@
         </node>
         <node concept="3F0ifn" id="3_qrK00j4ux" role="3EZMnx">
           <property role="3F0ifm" value=")" />
-          <ref role="1k5W1q" node="2CEi94dh36z" resolve="parens" />
+          <ref role="1k5W1q" node="2CEi94dh36z" resolve="ParensStyle" />
           <node concept="pkWqt" id="3_qrK00j4uy" role="pqm2j">
             <node concept="3clFbS" id="3_qrK00j4uz" role="2VODD2">
               <node concept="3clFbF" id="3_qrK00j4u$" role="3cqZAp">
@@ -453,7 +453,7 @@
         <node concept="1kIj98" id="1Ia5rYltMfn" role="3EZMnx">
           <node concept="2lNzut" id="D5oLwMtubt" role="1kIj9b">
             <ref role="1NtTu8" to="ehqg:6NmtaR20s4L" resolve="value" />
-            <ref role="1k5W1q" node="2CEi94dgUHC" resolve="Number" />
+            <ref role="1k5W1q" node="2CEi94dgUHC" resolve="NumberStyle" />
             <node concept="bYqod" id="D5oLwMT$B9" role="2lD6_D" />
           </node>
         </node>
@@ -464,6 +464,57 @@
   <node concept="3p36aQ" id="6NmtaR20s5N">
     <property role="3GE5qa" value="expressions.literals" />
     <ref role="aqKnT" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+  </node>
+  <node concept="24kQdi" id="1IrBcRpi7Ln">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="ehqg:1IrBcRpi7Jh" resolve="ParensExpression" />
+    <node concept="3EZMnI" id="1IrBcRpi7Nu" role="2wV5jI">
+      <node concept="3F0ifn" id="1IrBcRpi7NF" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11LMrY" id="1IrBcRpi7Oo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1IrBcRpi7NR" role="3EZMnx">
+        <ref role="1NtTu8" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+      </node>
+      <node concept="3F0ifn" id="1IrBcRpi7O9" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11L4FC" id="1IrBcRpi7Ok" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1IrBcRpi7Nx" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mSH3WmWS3J">
+    <property role="3GE5qa" value="expressions.dot" />
+    <ref role="1XX52x" to="ehqg:7mSH3WmWS3c" resolve="GenericDotExpression" />
+    <node concept="1WcQYu" id="7mSH3WmWS3L" role="2wV5jI">
+      <node concept="2ElW$n" id="7mSH3WmWS3N" role="2El2Yn" />
+      <node concept="3EZMnI" id="7mSH3WmWS40" role="1LiK7o">
+        <node concept="1kIj98" id="7mSH3WmWS4e" role="3EZMnx">
+          <node concept="3F1sOY" id="7mSH3WmWS4m" role="1kIj9b">
+            <ref role="1NtTu8" to="ehqg:7mSH3WmWS3d" resolve="lhs" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="7mSH3WmWS4x" role="3EZMnx">
+          <property role="3F0ifm" value="." />
+          <node concept="11L4FC" id="7mSH3WmY5oY" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="7mSH3WmY5pa" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="7mSH3WmWS4M" role="3EZMnx">
+          <ref role="1NtTu8" to="ehqg:7mSH3WmWS3g" resolve="target" />
+        </node>
+        <node concept="l2Vlx" id="7mSH3WmWS43" role="2iSdaV" />
+      </node>
+    </node>
   </node>
 </model>
 
