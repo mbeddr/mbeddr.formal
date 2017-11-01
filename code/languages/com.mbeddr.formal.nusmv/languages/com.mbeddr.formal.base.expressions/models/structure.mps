@@ -203,7 +203,7 @@
   </node>
   <node concept="1TIwiD" id="1IrBcRpi7Jh">
     <property role="EcuMT" value="1989356068341840849" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.unary" />
     <property role="TrG5h" value="ParensExpression" />
     <property role="34LRSv" value="( ... )" />
     <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
@@ -257,6 +257,13 @@
     <property role="TrG5h" value="FalseLiteral" />
     <property role="34LRSv" value="false" />
     <ref role="1TJDcQ" node="7mSH3Wn6oBK" resolve="BooleanLiteral" />
+  </node>
+  <node concept="1TIwiD" id="7mSH3Wn8bMM">
+    <property role="EcuMT" value="8482728081216289970" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="NotExpression" />
+    <property role="34LRSv" value="!" />
+    <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
 </model>
 

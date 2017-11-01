@@ -286,7 +286,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1IrBcRpiBvb">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.unary" />
     <ref role="13h7C2" to="ehqg:1IrBcRpi7Jh" resolve="ParensExpression" />
     <node concept="13hLZK" id="1IrBcRpiBvc" role="13h7CW">
       <node concept="3clFbS" id="1IrBcRpiBvd" role="2VODD2" />
@@ -307,6 +307,54 @@
         </node>
       </node>
       <node concept="10Oyi0" id="1IrBcRpiBJr" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mSH3Wn8bVD">
+    <property role="3GE5qa" value="expressions.logical" />
+    <ref role="13h7C2" to="ehqg:7mSH3Wn8bMM" resolve="NotExpression" />
+    <node concept="13hLZK" id="7mSH3Wn8bVE" role="13h7CW">
+      <node concept="3clFbS" id="7mSH3Wn8bVF" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7mSH3Wn8c77" role="13h7CS">
+      <property role="TrG5h" value="getPriolevel" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
+      <node concept="3Tm1VV" id="7mSH3Wn8c78" role="1B3o_S" />
+      <node concept="3clFbS" id="7mSH3Wn8c7d" role="3clF47">
+        <node concept="3clFbF" id="7mSH3Wn8cjp" role="3cqZAp">
+          <node concept="3cmrfG" id="7mSH3Wn8cjo" role="3clFbG">
+            <property role="3cmrfH" value="3000" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="7mSH3Wn8c7e" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mSH3WnbhM3">
+    <property role="3GE5qa" value="expressions.dot" />
+    <ref role="13h7C2" to="ehqg:7mSH3WmWS3c" resolve="GenericDotExpression" />
+    <node concept="13hLZK" id="7mSH3WnbhM4" role="13h7CW">
+      <node concept="3clFbS" id="7mSH3WnbhM5" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7mSH3WnbkdQ" role="13h7CS">
+      <property role="TrG5h" value="getPriolevel" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
+      <node concept="3Tm1VV" id="7mSH3WnbkdR" role="1B3o_S" />
+      <node concept="3clFbS" id="7mSH3WnbkdW" role="3clF47">
+        <node concept="3clFbF" id="7mSH3Wnbkq2" role="3cqZAp">
+          <node concept="3cmrfG" id="7mSH3Wnbkq1" role="3clFbG">
+            <property role="3cmrfH" value="4000" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="7mSH3WnbkdX" role="3clF45" />
     </node>
   </node>
 </model>

@@ -13,6 +13,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="3fe0" ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)" implicit="true" />
+    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -83,6 +84,7 @@
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -665,6 +667,10 @@
     <property role="3GE5qa" value="types" />
     <ref role="1XX52x" to="gioj:7mSH3WmWrHX" resolve="ModuleType" />
     <node concept="3EZMnI" id="7mSH3WmWrI8" role="2wV5jI">
+      <node concept="1kHk_G" id="7K_2cV$Golz" role="3EZMnx">
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+        <ref role="1NtTu8" to="gioj:7mSH3Wn8VYT" resolve="process" />
+      </node>
       <node concept="1iCGBv" id="7mSH3WmWrIi" role="3EZMnx">
         <ref role="1NtTu8" to="gioj:7mSH3WmWrHY" resolve="module" />
         <node concept="1sVBvm" id="7mSH3WmWrIk" role="1sWHZn">
@@ -716,6 +722,51 @@
     <node concept="3F0ifn" id="7mSH3Wn5Ovx" role="2wV5jI">
       <property role="3F0ifm" value="integer" />
       <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mSH3Wn9yWW">
+    <property role="3GE5qa" value="spec" />
+    <ref role="1XX52x" to="gioj:7mSH3Wn9yWs" resolve="SpecSection" />
+    <node concept="3EZMnI" id="7mSH3Wn9yWY" role="2wV5jI">
+      <node concept="3F0ifn" id="7mSH3Wn9yX8" role="3EZMnx">
+        <property role="3F0ifm" value="SPEC" />
+      </node>
+      <node concept="3F1sOY" id="7mSH3Wn9yXh" role="3EZMnx">
+        <ref role="1NtTu8" to="gioj:7mSH3Wn9yWw" resolve="exp" />
+      </node>
+      <node concept="3F0ifn" id="7mSH3Wn9yXR" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="7mSH3Wn9yXZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7mSH3Wn9yX1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mSH3Wn9_sY">
+    <property role="3GE5qa" value="expressions.temporal" />
+    <ref role="1XX52x" to="gioj:7mSH3Wn9zzz" resolve="AG" />
+    <node concept="3EZMnI" id="7mSH3Wn9_t0" role="2wV5jI">
+      <node concept="3F0ifn" id="7mSH3Wn9_ta" role="3EZMnx">
+        <property role="3F0ifm" value="AG" />
+      </node>
+      <node concept="3F1sOY" id="7mSH3Wn9_tj" role="3EZMnx">
+        <ref role="1NtTu8" to="gioj:7mSH3Wn9_sV" resolve="exp" />
+      </node>
+      <node concept="l2Vlx" id="7mSH3Wn9_t3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7mSH3WnacGY">
+    <property role="3GE5qa" value="expressions.dot" />
+    <ref role="1XX52x" to="gioj:7mSH3WnacGx" resolve="VarRef" />
+    <node concept="1iCGBv" id="7mSH3WnacH0" role="2wV5jI">
+      <ref role="1NtTu8" to="gioj:7mSH3WnacGy" resolve="var" />
+      <node concept="1sVBvm" id="7mSH3WnacH2" role="1sWHZn">
+        <node concept="3F0A7n" id="7mSH3WnacHg" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
