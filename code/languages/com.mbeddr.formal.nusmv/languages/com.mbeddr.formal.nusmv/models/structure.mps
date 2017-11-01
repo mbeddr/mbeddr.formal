@@ -423,5 +423,12 @@
       <ref role="20lvS9" node="7mSH3WmVwfT" resolve="DefineDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7mSH3Wn5Ovu">
+    <property role="EcuMT" value="8482728081215670238" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="IntegerType" />
+    <property role="34LRSv" value="integer" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+  </node>
 </model>
 

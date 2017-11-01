@@ -236,5 +236,27 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="7mSH3Wn6oBK">
+    <property role="EcuMT" value="8482728081215818224" />
+    <property role="3GE5qa" value="expressions.literals.boolean" />
+    <property role="TrG5h" value="BooleanLiteral" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6NmtaR20s4J" resolve="Literal" />
+  </node>
+  <node concept="1TIwiD" id="7mSH3Wn6oBL">
+    <property role="EcuMT" value="8482728081215818225" />
+    <property role="3GE5qa" value="expressions.literals.boolean" />
+    <property role="TrG5h" value="TrueLiteral" />
+    <property role="34LRSv" value="true" />
+    <ref role="1TJDcQ" node="7mSH3Wn6oBK" resolve="BooleanLiteral" />
+  </node>
+  <node concept="1TIwiD" id="7mSH3Wn6oDZ">
+    <property role="EcuMT" value="8482728081215818367" />
+    <property role="3GE5qa" value="expressions.literals.boolean" />
+    <property role="TrG5h" value="FalseLiteral" />
+    <property role="34LRSv" value="false" />
+    <ref role="1TJDcQ" node="7mSH3Wn6oBK" resolve="BooleanLiteral" />
+  </node>
 </model>
 

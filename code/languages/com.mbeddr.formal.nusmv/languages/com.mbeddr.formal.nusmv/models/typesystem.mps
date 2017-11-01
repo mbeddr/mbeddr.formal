@@ -98,7 +98,7 @@
           <node concept="1Z2H0r" id="4qazcyJOVB6" role="mwGJk">
             <node concept="2OqwBi" id="4qazcyJOVB9" role="1Z2MuG">
               <node concept="1YBJjd" id="7mSH3WmYFmp" role="2Oq$k0">
-                <ref role="1YBMHb" node="7mSH3WmYF90" resolve="variableDeclaration" />
+                <ref role="1YBMHb" node="7mSH3WmYF90" resolve="vd" />
               </node>
               <node concept="3TrEf2" id="7mSH3WmYUOy" role="2OqNvi">
                 <ref role="3Tt5mk" to="gioj:6NmtaR1SVeb" resolve="type" />
@@ -109,24 +109,15 @@
         <node concept="mw_s8" id="4qazcyJOVB4" role="1ZfhK$">
           <node concept="1Z2H0r" id="4qazcyJOVAY" role="mwGJk">
             <node concept="1YBJjd" id="7mSH3WmYFhX" role="1Z2MuG">
-              <ref role="1YBMHb" node="7mSH3WmYF90" resolve="variableDeclaration" />
+              <ref role="1YBMHb" node="7mSH3WmYF90" resolve="vd" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="7mSH3WmYF90" role="1YuTPh">
-      <property role="TrG5h" value="variableDeclaration" />
+      <property role="TrG5h" value="vd" />
       <ref role="1YaFvo" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="7mSH3WmYFrQ">
-    <property role="TrG5h" value="typeof_BooleanType" />
-    <property role="3GE5qa" value="types" />
-    <node concept="3clFbS" id="7mSH3WmYFrR" role="18ibNy" />
-    <node concept="1YaCAy" id="7mSH3WmYFrT" role="1YuTPh">
-      <property role="TrG5h" value="booleanType" />
-      <ref role="1YaFvo" to="gioj:6NmtaR1SVkl" resolve="BooleanType" />
     </node>
   </node>
 </model>

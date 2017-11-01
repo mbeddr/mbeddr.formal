@@ -710,5 +710,13 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7mSH3Wn5Ovv">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="gioj:7mSH3Wn5Ovu" resolve="IntegerType" />
+    <node concept="3F0ifn" id="7mSH3Wn5Ovx" role="2wV5jI">
+      <property role="3F0ifm" value="integer" />
+      <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+    </node>
+  </node>
 </model>
 
