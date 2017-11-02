@@ -265,5 +265,12 @@
     <property role="34LRSv" value="!" />
     <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
+  <node concept="1TIwiD" id="7mSH3WncPcK">
+    <property role="EcuMT" value="8482728081217508144" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="Implies" />
+    <property role="34LRSv" value="-&gt;" />
+    <ref role="1TJDcQ" node="6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 

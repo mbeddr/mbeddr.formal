@@ -953,5 +953,79 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="7mSH3WncQ_x">
+    <property role="3GE5qa" value="expressions.temporal" />
+    <ref role="WuzLi" to="gioj:7mSH3WncQ$j" resolve="AF" />
+    <node concept="11bSqf" id="7mSH3WncQ_y" role="11c4hB">
+      <node concept="3clFbS" id="7mSH3WncQ_z" role="2VODD2">
+        <node concept="lc7rE" id="7mSH3WncQ_R" role="3cqZAp">
+          <node concept="la8eA" id="7mSH3WncQAf" role="lcghm">
+            <property role="lacIc" value="AF " />
+          </node>
+          <node concept="l9hG8" id="7mSH3WncQBq" role="lcghm">
+            <node concept="2OqwBi" id="7mSH3WncQMt" role="lb14g">
+              <node concept="117lpO" id="7mSH3WncQCm" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7mSH3WncR6h" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:7mSH3Wn9_sV" resolve="exp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7mSH3WnduE5">
+    <property role="3GE5qa" value="fairness" />
+    <ref role="WuzLi" to="gioj:7mSH3Wnduvu" resolve="FairnessSection" />
+    <node concept="11bSqf" id="7mSH3WnduE6" role="11c4hB">
+      <node concept="3clFbS" id="7mSH3WnduE7" role="2VODD2">
+        <node concept="lc7rE" id="7mSH3WnduEr" role="3cqZAp">
+          <node concept="la8eA" id="7mSH3WnduEs" role="lcghm">
+            <property role="lacIc" value="FAIRNESS" />
+          </node>
+          <node concept="l8MVK" id="7mSH3WnduEt" role="lcghm" />
+        </node>
+        <node concept="3izx1p" id="7mSH3WnduEu" role="3cqZAp">
+          <node concept="3clFbS" id="7mSH3WnduEv" role="3izTki">
+            <node concept="1bpajm" id="7mSH3WnduEw" role="3cqZAp" />
+            <node concept="2Gpval" id="7mSH3WnduEx" role="3cqZAp">
+              <node concept="2GrKxI" id="7mSH3WnduEy" role="2Gsz3X">
+                <property role="TrG5h" value="c" />
+              </node>
+              <node concept="2OqwBi" id="7mSH3WnduEz" role="2GsD0m">
+                <node concept="117lpO" id="7mSH3WnduE$" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="7mSH3WnduZu" role="2OqNvi">
+                  <ref role="3TtcxE" to="gioj:7mSH3Wnduvy" resolve="conditions" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="7mSH3WnduEA" role="2LFqv$">
+                <node concept="lc7rE" id="7mSH3WnduEB" role="3cqZAp">
+                  <node concept="l9hG8" id="7mSH3WnduEC" role="lcghm">
+                    <node concept="2GrUjf" id="7mSH3WnduED" role="lb14g">
+                      <ref role="2Gs0qQ" node="7mSH3WnduEy" resolve="c" />
+                    </node>
+                  </node>
+                  <node concept="l8MVK" id="7mSH3WnduEE" role="lcghm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7mSH3WndvaF">
+    <property role="3GE5qa" value="fairness" />
+    <ref role="WuzLi" to="gioj:7mSH3Wndu_4" resolve="Running" />
+    <node concept="11bSqf" id="7mSH3WndvaG" role="11c4hB">
+      <node concept="3clFbS" id="7mSH3WndvaH" role="2VODD2">
+        <node concept="lc7rE" id="7mSH3Wndvb1" role="3cqZAp">
+          <node concept="la8eA" id="7mSH3Wndvbp" role="lcghm">
+            <property role="lacIc" value="running" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

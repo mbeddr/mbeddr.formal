@@ -58,6 +58,7 @@
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
       <concept id="1989356068341973268" name="com.mbeddr.formal.nusmv.structure.ModExpression" flags="ng" index="32OhRp" />
+      <concept id="8482728081217513747" name="com.mbeddr.formal.nusmv.structure.AF" flags="ng" index="1yyXOG" />
       <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VarRef" flags="ng" index="1y$7Wu">
         <reference id="8482728081216817954" name="var" index="1y$7Wt" />
       </concept>
@@ -97,6 +98,7 @@
       <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
         <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
+      <concept id="8482728081217508144" name="com.mbeddr.formal.base.expressions.structure.Implies" flags="ng" index="1yyYsf" />
       <concept id="8482728081216289970" name="com.mbeddr.formal.base.expressions.structure.NotExpression" flags="ng" index="1yA0yd" />
       <concept id="8482728081215818225" name="com.mbeddr.formal.base.expressions.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081215818367" name="com.mbeddr.formal.base.expressions.structure.FalseLiteral" flags="ng" index="1yCjT0" />
@@ -505,6 +507,42 @@
                       <node concept="2He$iJ" id="7mSH3WncEn0" role="1ziNjM">
                         <ref role="2He$iI" node="7mSH3Wn8T0Q" resolve="proc1" />
                       </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1yBDGz" id="7mSH3WncP9L" role="2HcbjO">
+        <node concept="1yBCNs" id="7mSH3WncPaQ" role="1yBDGv">
+          <node concept="32OYss" id="7mSH3WncQzz" role="1yBIc4">
+            <node concept="1yyYsf" id="7mSH3Wndut8" role="32OYtT">
+              <node concept="2HbLFT" id="7mSH3Wndut9" role="2H9Iav">
+                <node concept="1ziNjN" id="7mSH3Wnduta" role="2H9Iav">
+                  <node concept="2He$iJ" id="7mSH3WncPaY" role="1ziNjM">
+                    <ref role="2He$iI" node="7mSH3Wn8T0Q" resolve="proc1" />
+                  </node>
+                  <node concept="1y$7Wu" id="7mSH3WncPbI" role="1ziNjJ">
+                    <ref role="1y$7Wt" node="7mSH3Wn89AN" resolve="state" />
+                  </node>
+                </node>
+                <node concept="2HeeqP" id="7mSH3WncPcG" role="2H9Ial">
+                  <ref role="2HeeqO" node="7mSH3Wn89C7" resolve="entering" />
+                </node>
+              </node>
+              <node concept="1yyXOG" id="7mSH3Wnduts" role="2H9Ial">
+                <node concept="2HbLFT" id="7mSH3Wnduux" role="1yBIc4">
+                  <node concept="2HeeqP" id="7mSH3Wnduvq" role="2H9Ial">
+                    <ref role="2HeeqO" node="7mSH3Wn89D5" resolve="critical" />
+                  </node>
+                  <node concept="1ziNjN" id="7mSH3WndutJ" role="2H9Iav">
+                    <node concept="1y$7Wu" id="7mSH3Wnduuq" role="1ziNjJ">
+                      <ref role="1y$7Wt" node="7mSH3Wn89AN" resolve="state" />
+                    </node>
+                    <node concept="2He$iJ" id="7mSH3Wndut_" role="1ziNjM">
+                      <ref role="2He$iI" node="7mSH3Wn8T0Q" resolve="proc1" />
                     </node>
                   </node>
                 </node>

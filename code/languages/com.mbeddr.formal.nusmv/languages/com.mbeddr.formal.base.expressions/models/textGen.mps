@@ -260,5 +260,34 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="7mSH3WncPda">
+    <property role="3GE5qa" value="expressions.logical" />
+    <ref role="WuzLi" to="ehqg:7mSH3WncPcK" resolve="Implies" />
+    <node concept="11bSqf" id="7mSH3WncPdb" role="11c4hB">
+      <node concept="3clFbS" id="7mSH3WncPdc" role="2VODD2">
+        <node concept="lc7rE" id="7mSH3WncPdw" role="3cqZAp">
+          <node concept="l9hG8" id="7mSH3WncPdS" role="lcghm">
+            <node concept="2OqwBi" id="7mSH3WncPoV" role="lb14g">
+              <node concept="117lpO" id="7mSH3WncPeM" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7mSH3WncPzs" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:6NmtaR1W9oM" resolve="left" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="7mSH3WncPI9" role="lcghm">
+            <property role="lacIc" value=" -&gt; " />
+          </node>
+          <node concept="l9hG8" id="7mSH3WncPTW" role="lcghm">
+            <node concept="2OqwBi" id="7mSH3WncQa4" role="lb14g">
+              <node concept="117lpO" id="7mSH3WncPZX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7mSH3WncQtS" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:6NmtaR1W9oS" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
