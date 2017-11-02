@@ -2,6 +2,7 @@
 <model ref="r:b9b861c2-9263-4359-9ac2-d6716beab411(test.mbeddr.formal.nusmv.basic)">
   <persistence version="9" />
   <languages>
+    <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
   <imports />
@@ -14,6 +15,8 @@
       <concept id="7842584090744230922" name="com.mbeddr.formal.nusmv.structure.CaseExpression" flags="ng" index="2H9I2B">
         <child id="7842584090744230924" name="cases" index="2H9I2x" />
       </concept>
+      <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
+      <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
       <concept id="7842584090743391222" name="com.mbeddr.formal.nusmv.structure.EnumerationType" flags="ng" index="2Hdrtr">
         <child id="7842584090743391224" name="members" index="2Hdrtl" />
@@ -59,9 +62,11 @@
       </concept>
       <concept id="1989356068341973268" name="com.mbeddr.formal.nusmv.structure.ModExpression" flags="ng" index="32OhRp" />
       <concept id="8482728081217513747" name="com.mbeddr.formal.nusmv.structure.AF" flags="ng" index="1yyXOG" />
+      <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
       <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VarRef" flags="ng" index="1y$7Wu">
         <reference id="8482728081216817954" name="var" index="1y$7Wt" />
       </concept>
+      <concept id="8482728081216289970" name="com.mbeddr.formal.nusmv.structure.NotExpression" flags="ng" index="1yA0yd" />
       <concept id="8482728081216649443" name="com.mbeddr.formal.nusmv.structure.AG" flags="ng" index="1yBCNs" />
       <concept id="8482728081216646940" name="com.mbeddr.formal.nusmv.structure.SpecSection" flags="ng" index="1yBDGz">
         <child id="8482728081216646944" name="exp" index="1yBDGv" />
@@ -89,8 +94,6 @@
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
-      <concept id="7842584090744811092" name="com.mbeddr.formal.base.expressions.structure.EqualsExpression" flags="ng" index="2HbLFT" />
-      <concept id="7842584090744804989" name="com.mbeddr.formal.base.expressions.structure.AndExpression" flags="ng" index="2HbMbg" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -98,8 +101,6 @@
       <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
         <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
-      <concept id="8482728081217508144" name="com.mbeddr.formal.base.expressions.structure.Implies" flags="ng" index="1yyYsf" />
-      <concept id="8482728081216289970" name="com.mbeddr.formal.base.expressions.structure.NotExpression" flags="ng" index="1yA0yd" />
       <concept id="8482728081215818225" name="com.mbeddr.formal.base.expressions.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081215818367" name="com.mbeddr.formal.base.expressions.structure.FalseLiteral" flags="ng" index="1yCjT0" />
       <concept id="8482728081213325516" name="com.mbeddr.formal.base.expressions.structure.GenericDotExpression" flags="ng" index="1ziNjN">
@@ -114,7 +115,7 @@
     </language>
   </registry>
   <node concept="2HdtXS" id="6NmtaR1TTJH">
-    <property role="TrG5h" value="_010_tutorial_1" />
+    <property role="TrG5h" value="_010_tutorial_single_process" />
     <node concept="2Hdtz0" id="6NmtaR1U7lt" role="2HcuB8">
       <property role="TrG5h" value="main" />
       <node concept="2Hfkzq" id="6NmtaR1V2PN" role="2HcbjO">
@@ -186,7 +187,7 @@
     </node>
   </node>
   <node concept="2HdtXS" id="1IrBcRpgRnx">
-    <property role="TrG5h" value="_010_tutorial_2" />
+    <property role="TrG5h" value="_010_tutorial_binary_counter" />
     <node concept="2Hdtz0" id="1IrBcRpgRny" role="2HcuB8">
       <property role="TrG5h" value="counter_cell" />
       <node concept="2Hdtzr" id="1IrBcRph7M2" role="2Hdtzq">

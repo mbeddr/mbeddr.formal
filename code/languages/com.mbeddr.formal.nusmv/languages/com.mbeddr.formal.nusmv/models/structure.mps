@@ -531,5 +531,40 @@
     <property role="34LRSv" value="running" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
   </node>
+  <node concept="1TIwiD" id="6NmtaR1YmTk">
+    <property role="EcuMT" value="7842584090744811092" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="EqualsExpression" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WnsxBK" resolve="EqualsExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="6NmtaR1YlpX">
+    <property role="EcuMT" value="7842584090744804989" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="AndExpression" />
+    <property role="34LRSv" value="&amp;&amp;" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WnsxDR" resolve="AndExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="7mSH3WncPcK">
+    <property role="EcuMT" value="8482728081217508144" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="ImpliesExpression" />
+    <property role="34LRSv" value="-&gt;" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WnsxEd" resolve="ImpliesExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="7mSH3Wn8bMM">
+    <property role="EcuMT" value="8482728081216289970" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="NotExpression" />
+    <property role="34LRSv" value="!" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3Wnsy0f" resolve="NotExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="6NmtaR1YlVK">
+    <property role="EcuMT" value="7842584090744807152" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="OrExpression" />
+    <property role="34LRSv" value="||" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3Wnte8z" resolve="OrExpressionBase" />
+  </node>
 </model>
 
