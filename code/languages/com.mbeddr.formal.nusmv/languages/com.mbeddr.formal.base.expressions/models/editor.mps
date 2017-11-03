@@ -541,23 +541,9 @@
       <ref role="1k5W1q" node="6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
-  <node concept="24kQdi" id="7mSH3Wn8bNc">
-    <property role="3GE5qa" value="expressions.logical" />
-    <ref role="1XX52x" to="ehqg:7mSH3Wnsy0f" resolve="NotExpressionBase" />
-    <node concept="1WcQYu" id="7mSH3Wn8bNA" role="2wV5jI">
-      <node concept="2ElW$n" id="7mSH3Wn8bNC" role="2El2Yn" />
-      <node concept="3EZMnI" id="7mSH3Wn8bUx" role="1LiK7o">
-        <node concept="PMmxH" id="7mSH3Wnsy0D" role="3EZMnx">
-          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        </node>
-        <node concept="1kIj98" id="7mSH3Wn8bUU" role="3EZMnx">
-          <node concept="3F1sOY" id="7mSH3Wn8bV8" role="1kIj9b">
-            <ref role="1NtTu8" to="ehqg:1IrBcRpi7IO" resolve="exp" />
-          </node>
-        </node>
-        <node concept="l2Vlx" id="7mSH3Wn8bU$" role="2iSdaV" />
-      </node>
-    </node>
+  <node concept="3p36aQ" id="7mSH3WnxOXf">
+    <property role="3GE5qa" value="expressions.dot" />
+    <ref role="aqKnT" to="ehqg:7mSH3WmWS3c" resolve="GenericDotExpression" />
   </node>
 </model>
 
