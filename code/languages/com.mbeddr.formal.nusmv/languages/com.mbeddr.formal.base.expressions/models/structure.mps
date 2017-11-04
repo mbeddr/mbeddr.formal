@@ -279,5 +279,13 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7mSH3Wn6oBK" resolve="BooleanLiteral" />
   </node>
+  <node concept="1TIwiD" id="7mSH3WnHVWN">
+    <property role="EcuMT" value="8482728081226186547" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="XorExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 

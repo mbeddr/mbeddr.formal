@@ -685,5 +685,31 @@
       <ref role="20lvS9" node="6NmtaR1V302" resolve="VariableRef" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7mSH3WnE5iE">
+    <property role="EcuMT" value="8482728081225176234" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="WordType" />
+    <property role="34LRSv" value="word" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="7mSH3WnE5iF" role="1TKVEi">
+      <property role="IQ2ns" value="8482728081225176235" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyi" id="7mSH3WnE5iJ" role="1TKVEl">
+      <property role="IQ2nx" value="8482728081225176239" />
+      <property role="TrG5h" value="signed" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7mSH3WnHWkc">
+    <property role="EcuMT" value="8482728081226188044" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="XorExpression" />
+    <property role="34LRSv" value="xor" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WnHVWN" resolve="XorExpressionBase" />
+  </node>
 </model>
 
