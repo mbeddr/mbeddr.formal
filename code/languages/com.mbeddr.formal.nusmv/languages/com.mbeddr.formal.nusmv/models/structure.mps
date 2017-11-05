@@ -361,13 +361,7 @@
     <property role="EcuMT" value="8482728081211544281" />
     <property role="3GE5qa" value="define" />
     <property role="TrG5h" value="Definition" />
-    <node concept="1TJgyj" id="7mSH3WmQ5dj" role="1TKVEi">
-      <property role="IQ2ns" value="8482728081211544403" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="def" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7mSH3WmVwfT" resolve="DefineDeclaration" />
-    </node>
+    <ref role="1TJDcQ" node="7mSH3WmVxaO" resolve="VariableDeclarationBase" />
     <node concept="1TJgyj" id="7mSH3WmQ5dm" role="1TKVEi">
       <property role="IQ2ns" value="8482728081211544406" />
       <property role="20lmBu" value="aggregation" />
@@ -378,12 +372,6 @@
     <node concept="PrWs8" id="7mSH3WmQ5bq" role="PzmwI">
       <ref role="PrY4T" node="1IrBcRpiVFr" resolve="IDefineContent" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="7mSH3WmVwfT">
-    <property role="EcuMT" value="8482728081212965881" />
-    <property role="3GE5qa" value="define" />
-    <property role="TrG5h" value="DefineDeclaration" />
-    <ref role="1TJDcQ" node="7mSH3WmVxaO" resolve="VariableDeclarationBase" />
   </node>
   <node concept="1TIwiD" id="7mSH3WmVxaO">
     <property role="EcuMT" value="8482728081212969652" />
@@ -430,7 +418,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="outVar" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7mSH3WmVwfT" resolve="DefineDeclaration" />
+      <ref role="20lvS9" node="7mSH3WmQ5bp" resolve="Definition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3Wn5Ovu">

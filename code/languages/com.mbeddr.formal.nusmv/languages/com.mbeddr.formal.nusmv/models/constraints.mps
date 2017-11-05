@@ -177,8 +177,8 @@
                 </node>
                 <node concept="2Rf3mk" id="2zzTeYj2j2o" role="2OqNvi">
                   <node concept="1xMEDy" id="2zzTeYj2j2q" role="1xVPHs">
-                    <node concept="chp4Y" id="2zzTeYj2jgi" role="ri$Ld">
-                      <ref role="cht4Q" to="gioj:7mSH3WmVwfT" resolve="DefineDeclaration" />
+                    <node concept="chp4Y" id="2zzTeYj92oq" role="ri$Ld">
+                      <ref role="cht4Q" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
                     </node>
                   </node>
                 </node>
