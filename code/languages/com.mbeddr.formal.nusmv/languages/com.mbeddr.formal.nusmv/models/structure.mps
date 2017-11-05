@@ -361,7 +361,6 @@
     <property role="EcuMT" value="8482728081211544281" />
     <property role="3GE5qa" value="define" />
     <property role="TrG5h" value="Definition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mSH3WmQ5dj" role="1TKVEi">
       <property role="IQ2ns" value="8482728081211544403" />
       <property role="20lmBu" value="aggregation" />
