@@ -33,6 +33,7 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="hw40" ref="r:0afb84b9-23b5-436c-af26-53b9b7f39fbc(com.mbeddr.formal.nusmv.editor)" />
+    <import index="70es" ref="r:0da43dab-51b4-49c4-9dae-6b508a700deb(com.mbeddr.formal.nusmv.arch.editor)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
   </imports>
   <registry>
@@ -735,9 +736,9 @@
     <property role="TrG5h" value="DiagramSwitcher" />
     <ref role="2hhq6$" to="gioj:7mSH3WmWrHX" resolve="ModuleType" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
-      <property role="33g7Lv" value="Composed Module Diagram View" />
-      <ref role="33glcW" to="hw40:7mSH3WnI4q7" resolve="NuSMV_Graphical" />
-      <ref role="33glcY" to="hw40:7mSH3WnI4Ep" resolve="GRAPHICAL" />
+      <property role="33g7Lv" value="Architecture Diagram View" />
+      <ref role="33glcW" to="70es:7mSH3WnI4q7" resolve="NuSMV_Graphical" />
+      <ref role="33glcY" to="70es:7mSH3WnI4Ep" resolve="GRAPHICAL" />
     </node>
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
