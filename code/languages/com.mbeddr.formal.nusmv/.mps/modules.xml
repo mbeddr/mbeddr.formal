@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/mbeddr.formal.nusmv/mbeddr.formal.nusmv.devkit" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.expressions/com.mbeddr.formal.base.expressions.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base/com.mbeddr.formal.base.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.arch/com.mbeddr.formal.nusmv.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv/com.mbeddr.formal.nusmv.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang" />
