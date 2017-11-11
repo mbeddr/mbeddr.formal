@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -29,6 +30,11 @@
     <property role="TrG5h" value="ModulesWiringSection" />
     <property role="34LRSv" value="WIRING" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1UNLR" resolve="VariablesSection" />
+  </node>
+  <node concept="1TIwiD" id="43FRfGJQZfY">
+    <property role="EcuMT" value="4678075609352238078" />
+    <property role="TrG5h" value="UnboundPortExpression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
   </node>
 </model>
 
