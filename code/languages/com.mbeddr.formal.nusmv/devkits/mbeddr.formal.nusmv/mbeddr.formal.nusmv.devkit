@@ -2,5 +2,6 @@
 <dev-kit name="mbeddr.formal.nusmv" uuid="edb51d2d-64eb-404a-818e-c1cabf1d58d5">
   <exported-language name="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" />
   <exported-language name="22a84bd5-d947-48ae-b9f6-8288eea41dce(com.mbeddr.formal.nusmv.arch)" />
+  <exported-language name="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" />
 </dev-kit>
 

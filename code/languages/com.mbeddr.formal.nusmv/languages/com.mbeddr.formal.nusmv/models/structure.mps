@@ -707,5 +707,18 @@
     <property role="34LRSv" value="xor" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnHVWN" resolve="XorExpressionBase" />
   </node>
+  <node concept="1TIwiD" id="43FRfGJVcU2">
+    <property role="EcuMT" value="4678075609353342594" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="DefineRef" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="43FRfGJVcU3" role="1TKVEi">
+      <property role="IQ2ns" value="4678075609353342595" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="def" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7mSH3WmQ5bp" resolve="Definition" />
+    </node>
+  </node>
 </model>
 
