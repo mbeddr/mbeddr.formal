@@ -15,6 +15,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="w3o4" ref="r:f6eb91ea-a20a-402b-a44f-2cf1ab3951a4(com.mbeddr.formal.nusmv.tests.plugin)" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -190,6 +191,10 @@
       </concept>
       <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG">
         <child id="3785936898437886280" name="items" index="3hTmz4" />
+      </concept>
+      <concept id="3785936898437629002" name="de.slisson.mps.tables.structure.BorderLeftWidthStyleItem" flags="lg" index="3hShR6" />
+      <concept id="3785936898437423425" name="de.slisson.mps.tables.structure.IntegerTableStyleItem" flags="lg" index="3hSBzd">
+        <property id="3785936898437424562" name="value" index="3hSBKY" />
       </concept>
       <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="lg" index="3hZEDM">
         <child id="3785936898438271388" name="query" index="3hZOwg" />
@@ -594,6 +599,9 @@
             </node>
             <node concept="Qq2$L" id="4ncOM41viDH" role="3F10Kt">
               <property role="Qq2$K" value="CENTER" />
+            </node>
+            <node concept="3hShR6" id="3UuTDIONNkK" role="3hTmz4">
+              <property role="3hSBKY" value="3" />
             </node>
             <node concept="bmIQc" id="3UuTDIOG9xW" role="3hTmz4">
               <node concept="3hZENJ" id="3UuTDIOGtz8" role="3hZOwg">
