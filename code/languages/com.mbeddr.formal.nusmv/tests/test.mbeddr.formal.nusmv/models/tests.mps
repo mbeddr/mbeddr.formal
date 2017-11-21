@@ -5,7 +5,9 @@
     <use id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="x4aj" ref="r:b9b861c2-9263-4359-9ac2-d6716beab411(test.mbeddr.formal.nusmv.tutorial_samples)" />
+  </imports>
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
@@ -86,6 +88,18 @@
         </node>
         <node concept="2IPVmt" id="43FRfGK5Qh0" role="1J0m7K">
           <property role="2IPVms" value="4" />
+        </node>
+      </node>
+    </node>
+    <node concept="1J0nI2" id="4NkweGh4ZQp" role="1J0nHx">
+      <property role="TrG5h" value="tc2" />
+      <ref role="1J0niy" to="x4aj:1IrBcRpgRny" resolve="counter_cell" />
+      <node concept="1J0m7Y" id="4NkweGh4ZQq" role="1J0m7J">
+        <node concept="2IPVmt" id="4NkweGh4ZR9" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4NkweGh4ZRe" role="1J0m7K">
+          <property role="2IPVms" value="2" />
         </node>
       </node>
     </node>

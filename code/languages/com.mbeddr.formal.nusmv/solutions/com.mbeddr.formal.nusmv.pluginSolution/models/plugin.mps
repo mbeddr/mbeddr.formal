@@ -34,7 +34,10 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="hw40" ref="r:0afb84b9-23b5-436c-af26-53b9b7f39fbc(com.mbeddr.formal.nusmv.editor)" />
     <import index="70es" ref="r:0da43dab-51b4-49c4-9dae-6b508a700deb(com.mbeddr.formal.nusmv.arch.editor)" />
+    <import index="r1jp" ref="r:1982e326-4f5d-4777-8712-b7a85c46db6c(com.mbeddr.formal.nusmv.sm.editor)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
+    <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" implicit="true" />
+    <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -732,17 +735,31 @@
     </node>
   </node>
   <node concept="33ghlw" id="3onExzPnGul">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="DiagramSwitcher" />
-    <ref role="2hhq6$" to="gioj:7mSH3WmWrHX" resolve="ModuleType" />
+    <property role="3GE5qa" value="diagrams" />
+    <property role="TrG5h" value="ArchitectureDiagramSwitcher" />
+    <ref role="2hhq6$" to="rvcq:3ZkhnXRcJqG" resolve="ModulesWiringSection" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="Architecture Diagram View" />
-      <ref role="33glcW" to="70es:7mSH3WnI4q7" resolve="NuSMV_Graphical" />
-      <ref role="33glcY" to="70es:7mSH3WnI4Ep" resolve="GRAPHICAL" />
+      <ref role="33glcW" to="70es:7mSH3WnI4q7" resolve="Architecture_Graphical" />
+      <ref role="33glcY" to="70es:7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
     </node>
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
       <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
+  </node>
+  <node concept="33ghlw" id="3UuTDIOPbpG">
+    <property role="3GE5qa" value="diagrams" />
+    <property role="TrG5h" value="StateMachineDiagramSwitcher" />
+    <ref role="2hhq6$" to="ahnd:3UuTDIOP4Kz" resolve="StateMachineSection" />
+    <node concept="33gmoH" id="3UuTDIOPbpH" role="2hfSGL">
+      <property role="33g7Lv" value="State-Machine Diagram View" />
+      <ref role="33glcW" to="r1jp:7mSH3WnI4q7" resolve="StateMachine_Graphical" />
+      <ref role="33glcY" to="r1jp:7mSH3WnI4Ep" resolve="SM_GRAPHICAL" />
+    </node>
+    <node concept="tT9cl" id="3UuTDIOPbpI" role="2hfP89">
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
     </node>
   </node>
 </model>

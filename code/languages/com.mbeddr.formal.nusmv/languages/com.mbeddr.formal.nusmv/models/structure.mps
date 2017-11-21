@@ -110,6 +110,7 @@
     <property role="EcuMT" value="7842584090743386548" />
     <property role="TrG5h" value="VariableDeclaration" />
     <property role="3GE5qa" value="vars" />
+    <property role="34LRSv" value="variable declaration" />
     <ref role="1TJDcQ" node="7mSH3WmVxaO" resolve="VariableDeclarationBase" />
     <node concept="1TJgyj" id="6NmtaR1SVeb" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743387019" />
@@ -117,6 +118,9 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="4NkweGh54Sa" role="PzmwI">
+      <ref role="PrY4T" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SVkl">
@@ -182,7 +186,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="vars" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6NmtaR1SV6O" resolve="VariableDeclaration" />
+      <ref role="20lvS9" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
     </node>
     <node concept="PrWs8" id="6NmtaR1UNLS" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
@@ -718,6 +722,20 @@
       <property role="20kJfa" value="def" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7mSH3WmQ5bp" resolve="Definition" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4NkweGh54S6">
+    <property role="EcuMT" value="5536191589037395462" />
+    <property role="3GE5qa" value="vars" />
+    <property role="TrG5h" value="IVariableDeclarationSectionContent" />
+  </node>
+  <node concept="1TIwiD" id="4NkweGh54S7">
+    <property role="EcuMT" value="5536191589037395463" />
+    <property role="3GE5qa" value="vars" />
+    <property role="TrG5h" value="EmptyVariableDeclaration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4NkweGh54S8" role="PzmwI">
+      <ref role="PrY4T" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
     </node>
   </node>
 </model>

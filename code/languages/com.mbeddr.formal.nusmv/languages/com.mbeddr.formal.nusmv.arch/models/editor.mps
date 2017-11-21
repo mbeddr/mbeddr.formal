@@ -2666,12 +2666,12 @@
     <node concept="2tJIrI" id="7Je984OVYqO" role="jymVt" />
   </node>
   <node concept="2ABfQD" id="7mSH3WnI4q7">
-    <property role="TrG5h" value="NuSMV_Graphical" />
+    <property role="TrG5h" value="Architecture_Graphical" />
     <property role="3GE5qa" value="graphical" />
     <node concept="2BsEeg" id="7mSH3WnI4Ep" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="GRAPHICAL" />
-      <property role="2BUmq6" value="GRAPHICAL" />
+      <property role="TrG5h" value="ARCH_GRAPHICAL" />
+      <property role="2BUmq6" value="ARCH_GRAPHICAL" />
     </node>
   </node>
   <node concept="24kQdi" id="7mSH3WnI5Lo">
@@ -3578,7 +3578,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="7mSH3WnI5Lq" role="CpUAK">
-      <ref role="2$4xQ3" node="7mSH3WnI4Ep" resolve="GRAPHICAL" />
+      <ref role="2$4xQ3" node="7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
     </node>
   </node>
   <node concept="312cEu" id="43FRfGJOwCK">
