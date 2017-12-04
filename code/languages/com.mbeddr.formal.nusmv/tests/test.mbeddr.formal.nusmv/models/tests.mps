@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
+      </concept>
       <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
         <child id="7842584090743586905" name="content" index="2HcbjO" />
         <child id="7842584090743385207" name="params" index="2Hdtzq" />
@@ -18,6 +21,21 @@
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="modules" index="2HcuB8" />
       </concept>
+      <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
+      <concept id="7842584090743880820" name="com.mbeddr.formal.nusmv.structure.AssignmentsSection" flags="ng" index="2Hfkzp">
+        <child id="7842584090743880984" name="assignments" index="2HfkAP" />
+      </concept>
+      <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
+        <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="7842584090743880983" name="com.mbeddr.formal.nusmv.structure.AbstractAssignment" flags="ng" index="2HfkAU">
+        <child id="7842584090743943213" name="rhs" index="2He$i0" />
+        <child id="7842584090743943207" name="lhs" index="2He$ia" />
+      </concept>
+      <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
       <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
         <child id="1989356068342053586" name="definitions" index="32O2ov" />
       </concept>
@@ -26,6 +44,7 @@
       </concept>
       <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
+      <concept id="8482728081215670238" name="com.mbeddr.formal.nusmv.structure.IntegerType" flags="ng" index="1yFZfx" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
@@ -61,7 +80,7 @@
     </language>
   </registry>
   <node concept="1J0nZ8" id="43FRfGK0Tb8">
-    <property role="TrG5h" value="simple_tests_collection" />
+    <property role="TrG5h" value="_010_defines_tests" />
     <node concept="1J0nI2" id="43FRfGK2qsv" role="1J0nHx">
       <property role="TrG5h" value="test1" />
       <ref role="1J0niy" node="43FRfGK16Ep" resolve="simple_defines" />
@@ -132,7 +151,7 @@
     </node>
   </node>
   <node concept="2HdtXS" id="43FRfGK16Eo">
-    <property role="TrG5h" value="sut1" />
+    <property role="TrG5h" value="_010_defines_sut" />
     <node concept="2Hdtz0" id="43FRfGK16Ep" role="2HcuB8">
       <property role="TrG5h" value="simple_defines" />
       <node concept="2Hdtzr" id="43FRfGK16Vw" role="2Hdtzq">
@@ -158,6 +177,83 @@
               <ref role="32Ogvr" node="43FRfGK16VA" resolve="in2" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="5uW1px6nux$">
+    <property role="TrG5h" value="_020_assign_sut" />
+    <node concept="2Hdtz0" id="5uW1px6nux_" role="2HcuB8">
+      <property role="TrG5h" value="simple_assign" />
+      <node concept="2Hdtzr" id="5uW1px6nuxA" role="2Hdtzq">
+        <property role="TrG5h" value="in1" />
+      </node>
+      <node concept="2Hfkzq" id="5uW1px6nuzy" role="2HcbjO">
+        <node concept="2Hdskp" id="5uW1px6nu$o" role="2Hfkx9">
+          <property role="TrG5h" value="var" />
+          <node concept="1yFZfx" id="5uW1px6nu$J" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="5uW1px6nu_f" role="2HcbjO">
+        <node concept="2HfkAV" id="5uW1px6nu_E" role="2HfkAP">
+          <node concept="2He$iJ" id="5uW1px6nu_T" role="2He$ia">
+            <ref role="2He$iI" node="5uW1px6nu$o" resolve="var" />
+          </node>
+          <node concept="32Ogvo" id="5uW1px6nuCe" role="2He$i0">
+            <ref role="32Ogvr" node="5uW1px6nuxA" resolve="in1" />
+          </node>
+        </node>
+        <node concept="2HevG6" id="5uW1px6nuAl" role="2HfkAP">
+          <node concept="2He$iJ" id="5uW1px6nuAH" role="2He$ia">
+            <ref role="2He$iI" node="5uW1px6nu$o" resolve="var" />
+          </node>
+          <node concept="2H9FEB" id="5uW1px6nuAZ" role="2He$i0">
+            <node concept="32Ogvo" id="5uW1px6nuBo" role="2H9Ial">
+              <ref role="32Ogvr" node="5uW1px6nuxA" resolve="in1" />
+            </node>
+            <node concept="2He$iJ" id="5uW1px6nuCr" role="2H9Iav">
+              <ref role="2He$iI" node="5uW1px6nu$o" resolve="var" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="32O2o0" id="5uW1px6nuxC" role="2HcbjO">
+        <node concept="1zoerA" id="5uW1px6nuxD" role="32O2ov">
+          <property role="TrG5h" value="out1" />
+          <node concept="2He$iJ" id="5uW1px6nuBx" role="1zoetD">
+            <ref role="2He$iI" node="5uW1px6nu$o" resolve="var" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1J0nZ8" id="5uW1px6nuxJ">
+    <property role="TrG5h" value="_020_assign_tests" />
+    <node concept="1J0nI2" id="5uW1px6nuy3" role="1J0nHx">
+      <property role="TrG5h" value="assign_test1" />
+      <ref role="1J0niy" node="5uW1px6nux_" resolve="simple_assign" />
+      <node concept="1J0m7Y" id="5uW1px6nuy4" role="1J0m7J">
+        <node concept="2IPVmt" id="5uW1px6nuBE" role="1J0m7X">
+          <property role="2IPVms" value="42" />
+        </node>
+        <node concept="2IPVmt" id="5uW1px6nuBN" role="1J0m7K">
+          <property role="2IPVms" value="42" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="5uW1px6nuy7" role="1J0m7J">
+        <node concept="2IPVmt" id="5uW1px6nuBT" role="1J0m7X">
+          <property role="2IPVms" value="2" />
+        </node>
+        <node concept="2IPVmt" id="5uW1px6nuC2" role="1J0m7K">
+          <property role="2IPVms" value="44" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="5uW1px6nuya" role="1J0m7J">
+        <node concept="2IPVmt" id="5uW1px6nuC_" role="1J0m7X">
+          <property role="2IPVms" value="10" />
+        </node>
+        <node concept="2IPVmt" id="5uW1px6nuCH" role="1J0m7K">
+          <property role="2IPVms" value="54" />
         </node>
       </node>
     </node>
