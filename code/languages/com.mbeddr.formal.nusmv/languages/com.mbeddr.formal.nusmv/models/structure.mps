@@ -45,6 +45,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -198,6 +199,14 @@
     <property role="TrG5h" value="InitAssignment" />
     <property role="34LRSv" value="init" />
     <ref role="1TJDcQ" node="6NmtaR1UNOn" resolve="AbstractAssignment" />
+    <node concept="1TJgyj" id="3YQnHt3vU0" role="1TKVEi">
+      <property role="IQ2ns" value="71733767949909632" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lhs" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6NmtaR1V302" resolve="VariableRef" />
+      <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNOn">
     <property role="EcuMT" value="7842584090743880983" />
@@ -269,6 +278,14 @@
     <property role="TrG5h" value="NextAssignment" />
     <property role="34LRSv" value="next" />
     <ref role="1TJDcQ" node="6NmtaR1UNOn" resolve="AbstractAssignment" />
+    <node concept="1TJgyj" id="3YQnHt3VFQ" role="1TKVEi">
+      <property role="IQ2ns" value="71733767950023414" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lhs" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6NmtaR1V302" resolve="VariableRef" />
+      <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1W9ga">
     <property role="EcuMT" value="7842584090744230922" />

@@ -24,6 +24,8 @@
       <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
+      <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
+      <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
@@ -44,6 +46,7 @@
       </concept>
     </language>
     <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
+      <concept id="71733767948742370" name="com.mbeddr.formal.nusmv.tests.structure.EmptyTestsCollectionContent" flags="ng" index="1s0Jup" />
       <concept id="4678075609353207045" name="com.mbeddr.formal.nusmv.tests.structure.TestStep" flags="ng" index="1J0m7Y">
         <child id="4678075609353207051" name="expectedValues" index="1J0m7K" />
         <child id="4678075609353207046" name="inputs" index="1J0m7X" />
@@ -87,20 +90,44 @@
           <property role="2IPVms" value="3" />
         </node>
         <node concept="2IPVmt" id="43FRfGK5Qh0" role="1J0m7K">
-          <property role="2IPVms" value="4" />
+          <property role="2IPVms" value="5" />
         </node>
       </node>
     </node>
-    <node concept="1J0nI2" id="4NkweGh4ZQp" role="1J0nHx">
-      <property role="TrG5h" value="tc2" />
-      <ref role="1J0niy" to="x4aj:1IrBcRpgRny" resolve="counter_cell" />
-      <node concept="1J0m7Y" id="4NkweGh4ZQq" role="1J0m7J">
-        <node concept="2IPVmt" id="4NkweGh4ZR9" role="1J0m7X">
+    <node concept="1s0Jup" id="3YQnHsZaT7" role="1J0nHx" />
+    <node concept="1J0nI2" id="3YQnHsZbha" role="1J0nHx">
+      <property role="TrG5h" value="test2" />
+      <ref role="1J0niy" node="43FRfGK16Ep" resolve="simple_defines" />
+      <node concept="1J0m7Y" id="3YQnHsZbhb" role="1J0m7J">
+        <node concept="2IPVmt" id="3YQnHsZbhc" role="1J0m7X">
           <property role="2IPVms" value="1" />
         </node>
-        <node concept="2IPVmt" id="4NkweGh4ZRe" role="1J0m7K">
+        <node concept="2IPVmt" id="3YQnHsZbhd" role="1J0m7X">
           <property role="2IPVms" value="2" />
         </node>
+        <node concept="2IPVmt" id="3YQnHsZbhe" role="1J0m7K">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="3YQnHsZbhf" role="1J0m7K">
+          <property role="2IPVms" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="3YQnHsZbgB" role="1J0nHx" />
+    <node concept="1J0nI2" id="4NkweGh4ZQp" role="1J0nHx">
+      <property role="TrG5h" value="counter_cell_test1" />
+      <ref role="1J0niy" to="x4aj:1IrBcRpgRny" resolve="counter_cell" />
+      <node concept="1J0m7Y" id="4NkweGh4ZQq" role="1J0m7J">
+        <node concept="1yCjRe" id="3YQnHt48f9" role="1J0m7X" />
+        <node concept="1yCjT0" id="3YQnHt48fr" role="1J0m7K" />
+      </node>
+      <node concept="1J0m7Y" id="3YQnHt48fA" role="1J0m7J">
+        <node concept="1yCjRe" id="3YQnHt48fN" role="1J0m7X" />
+        <node concept="1yCjRe" id="3YQnHt48fU" role="1J0m7K" />
+      </node>
+      <node concept="1J0m7Y" id="3YQnHt48fX" role="1J0m7J">
+        <node concept="1yCjRe" id="3YQnHt48gg" role="1J0m7X" />
+        <node concept="1yCjT0" id="3YQnHt48go" role="1J0m7K" />
       </node>
     </node>
   </node>

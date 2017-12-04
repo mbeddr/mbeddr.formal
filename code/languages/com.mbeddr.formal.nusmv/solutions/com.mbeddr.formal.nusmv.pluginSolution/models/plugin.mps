@@ -35,6 +35,8 @@
     <import index="hw40" ref="r:0afb84b9-23b5-436c-af26-53b9b7f39fbc(com.mbeddr.formal.nusmv.editor)" />
     <import index="70es" ref="r:0da43dab-51b4-49c4-9dae-6b508a700deb(com.mbeddr.formal.nusmv.arch.editor)" />
     <import index="r1jp" ref="r:1982e326-4f5d-4777-8712-b7a85c46db6c(com.mbeddr.formal.nusmv.sm.editor)" />
+    <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
+    <import index="g3py" ref="r:05a8bb09-6d40-4741-a42b-3e0bea0a1b95(com.mbeddr.formal.nusmv.plugin)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" implicit="true" />
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" implicit="true" />
@@ -114,6 +116,9 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -231,7 +236,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -260,6 +272,14 @@
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
@@ -760,6 +780,70 @@
     <node concept="tT9cl" id="3UuTDIOPbpI" role="2hfP89">
       <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="5uW1px6mShW">
+    <property role="TrG5h" value="RunTests" />
+    <property role="2uzpH1" value="Run Tests" />
+    <node concept="tnohg" id="5uW1px6mShX" role="tncku">
+      <node concept="3clFbS" id="5uW1px6mShY" role="2VODD2">
+        <node concept="2Gpval" id="3YQnHt2HEj" role="3cqZAp">
+          <node concept="2GrKxI" id="3YQnHt2HEl" role="2Gsz3X">
+            <property role="TrG5h" value="testCase" />
+          </node>
+          <node concept="2OqwBi" id="5uW1px6n5Pn" role="2GsD0m">
+            <node concept="2OqwBi" id="5uW1px6n5I7" role="2Oq$k0">
+              <node concept="2WthIp" id="5uW1px6n5Ia" role="2Oq$k0" />
+              <node concept="3gHZIF" id="5uW1px6n5Ic" role="2OqNvi">
+                <ref role="2WH_rO" node="5uW1px6n5Gv" resolve="m" />
+              </node>
+            </node>
+            <node concept="2SmgA7" id="5uW1px6n66X" role="2OqNvi">
+              <node concept="chp4Y" id="5uW1px6n67M" role="1dBWTz">
+                <ref role="cht4Q" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3YQnHt2HEp" role="2LFqv$">
+            <node concept="3clFbF" id="3YQnHt2Ilv" role="3cqZAp">
+              <node concept="2YIFZM" id="3YQnHt2Ilx" role="3clFbG">
+                <ref role="37wK5l" to="g3py:3xDNhgd54rl" resolve="evaluate" />
+                <ref role="1Pybhc" to="g3py:43FRfGJU_ih" resolve="NuSMVEvaluatorHelper" />
+                <node concept="2GrUjf" id="3YQnHt2Inz" role="37wK5m">
+                  <ref role="2Gs0qQ" node="3YQnHt2HEl" resolve="testCase" />
+                </node>
+                <node concept="2ShNRf" id="3YQnHt2Ilz" role="37wK5m">
+                  <node concept="1pGfFk" id="3YQnHt2Il$" role="2ShVmc">
+                    <ref role="37wK5l" to="g3py:5PjCZ8mVMZJ" resolve="NuSMVContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5uW1px6mSiQ" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="1QGGSu" id="5uW1px6mSiX" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/tests.png" />
+    </node>
+    <node concept="2S4$dB" id="5uW1px6n5Gv" role="1NuT2Z">
+      <property role="TrG5h" value="m" />
+      <node concept="3Tm6S6" id="5uW1px6n5Gw" role="1B3o_S" />
+      <node concept="1oajcY" id="5uW1px6n5Gx" role="1oa70y" />
+      <node concept="H_c77" id="5uW1px6n5AB" role="1tU5fm" />
+    </node>
+  </node>
+  <node concept="tC5Ba" id="5uW1px6ni3m">
+    <property role="TrG5h" value="TestsGroup" />
+    <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
+      <node concept="tCFHf" id="5uW1px6ni3p" role="ftvYc">
+        <ref role="tCJdB" node="5uW1px6mShW" resolve="RunTests" />
+      </node>
+    </node>
+    <node concept="tT9cl" id="5uW1px6ni3q" role="2f5YQi">
+      <ref role="tU$_T" to="d244:goNQ8fiCdc" resolve="mbeddrPlatformModelGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fiCdf" resolve="mbeddrPlatformModelExtensions" />
     </node>
   </node>
 </model>
