@@ -332,6 +332,7 @@
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
       <concept id="8377729485182319155" name="de.itemis.mps.editor.diagram.structure.PaletteSource_EntryQuery" flags="ig" index="gQ1qB" />
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
+        <child id="5725606875425248008" name="delete" index="1ide8m" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
       </concept>
@@ -379,6 +380,9 @@
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
         <child id="9064581101900868073" name="target" index="ljJml" />
       </concept>
+    </language>
+    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -433,6 +437,9 @@
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
+        <reference id="1139867957129" name="concept" index="1_rbq0" />
       </concept>
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
@@ -2946,6 +2953,18 @@
             <node concept="3clFbT" id="2zzTeYicC$A" role="SH2gk">
               <property role="3clFbU" value="false" />
             </node>
+            <node concept="2fs66k" id="32N7t0a9FG6" role="2fs69h">
+              <node concept="3clFbS" id="32N7t0a9FG7" role="2VODD2">
+                <node concept="3clFbF" id="32N7t0abNE7" role="3cqZAp">
+                  <node concept="2OqwBi" id="32N7t0abNNC" role="3clFbG">
+                    <node concept="37u81S" id="32N7t0aj5lr" role="2Oq$k0" />
+                    <node concept="2DeJnW" id="32N7t0abU$x" role="2OqNvi">
+                      <ref role="1_rbq0" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="ahg9e" id="2zzTeYigHNR" role="aCds2">
             <node concept="238au4" id="2zzTeYigHNS" role="23bJyd">
@@ -2984,6 +3003,18 @@
                 </node>
               </node>
             </node>
+            <node concept="2fs66k" id="1Jt7aYfnRlT" role="2fs69h">
+              <node concept="3clFbS" id="1Jt7aYfnRlU" role="2VODD2">
+                <node concept="3clFbF" id="32N7t0ahHQs" role="3cqZAp">
+                  <node concept="2OqwBi" id="32N7t0ahI7P" role="3clFbG">
+                    <node concept="37u81S" id="32N7t0ahHQq" role="2Oq$k0" />
+                    <node concept="2DeJnW" id="32N7t0aiC4h" role="2OqNvi">
+                      <ref role="1_rbq0" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="ahg9e" id="2zzTeYihiYX" role="aCds2">
             <node concept="238au4" id="2zzTeYihiYY" role="23bJyd">
@@ -3018,6 +3049,18 @@
                 </node>
                 <node concept="liA8E" id="2zzTeYiPC3U" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                </node>
+              </node>
+            </node>
+            <node concept="2fs66k" id="32N7t0a9c_e" role="2fs69h">
+              <node concept="3clFbS" id="32N7t0a9c_f" role="2VODD2">
+                <node concept="3clFbF" id="32N7t0aj5NB" role="3cqZAp">
+                  <node concept="2OqwBi" id="32N7t0aj5XQ" role="3clFbG">
+                    <node concept="37u81S" id="32N7t0aj5Ny" role="2Oq$k0" />
+                    <node concept="2DeJnW" id="32N7t0aj6qZ" role="2OqNvi">
+                      <ref role="1_rbq0" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -3295,6 +3338,16 @@
                 </node>
               </node>
             </node>
+            <node concept="2fs66k" id="32N7t0a9Elk" role="1ide8m">
+              <node concept="3clFbS" id="32N7t0a9Ell" role="2VODD2">
+                <node concept="3clFbF" id="32N7t0a9EuW" role="3cqZAp">
+                  <node concept="2OqwBi" id="32N7t0a9EAF" role="3clFbG">
+                    <node concept="37u81S" id="32N7t0a9EuV" role="2Oq$k0" />
+                    <node concept="3YRAZt" id="32N7t0a9F0o" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2M4Efz" id="2zzTeYj3XWj" role="aCds2">
             <node concept="3Tqbb2" id="2zzTeYj3XWk" role="2M4AHM">
@@ -3351,6 +3404,18 @@
                   <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
                   <ref role="37wK5l" node="5sbrvaL$ljo" resolve="computeEdgeTargetPortName" />
                   <node concept="37u81S" id="2zzTeYj3XWF" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="2fs66k" id="32N7t0a9DDR" role="1ide8m">
+              <node concept="3clFbS" id="32N7t0a9DDS" role="2VODD2">
+                <node concept="3clFbF" id="32N7t0a9DNv" role="3cqZAp">
+                  <node concept="2OqwBi" id="32N7t0a9DV6" role="3clFbG">
+                    <node concept="37u81S" id="32N7t0a9DNu" role="2Oq$k0" />
+                    <node concept="2DeJnW" id="32N7t0akUYo" role="2OqNvi">
+                      <ref role="1_rbq0" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -3418,6 +3483,23 @@
                 </node>
               </node>
             </node>
+            <node concept="2fs66k" id="1Jt7aYfohvG" role="1ide8m">
+              <node concept="3clFbS" id="1Jt7aYfohvH" role="2VODD2">
+                <node concept="3clFbF" id="1Jt7aYfohEM" role="3cqZAp">
+                  <node concept="2OqwBi" id="1Jt7aYfohP9" role="3clFbG">
+                    <node concept="2OqwBi" id="32N7t0aktoS" role="2Oq$k0">
+                      <node concept="37u81S" id="1Jt7aYfohEL" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="32N7t0aktGT" role="2OqNvi">
+                        <ref role="3Tt5mk" to="gioj:7mSH3WmQ5dm" resolve="rhs" />
+                      </node>
+                    </node>
+                    <node concept="2DeJnW" id="32N7t0akt8M" role="2OqNvi">
+                      <ref role="1_rbq0" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2M4Efz" id="2zzTeYipoi_" role="aCds2">
             <node concept="3Tqbb2" id="2zzTeYipoiA" role="2M4AHM">
@@ -3476,6 +3558,18 @@
                   <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
                   <ref role="37wK5l" node="5sbrvaL$ljo" resolve="computeEdgeTargetPortName" />
                   <node concept="37u81S" id="2zzTeYipoiY" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="2fs66k" id="1Jt7aYfoDMY" role="1ide8m">
+              <node concept="3clFbS" id="1Jt7aYfoDMZ" role="2VODD2">
+                <node concept="3clFbF" id="1Jt7aYfoDWM" role="3cqZAp">
+                  <node concept="2OqwBi" id="1Jt7aYfoE4x" role="3clFbG">
+                    <node concept="37u81S" id="1Jt7aYfoDWL" role="2Oq$k0" />
+                    <node concept="2DeJnW" id="32N7t0ak06Y" role="2OqNvi">
+                      <ref role="1_rbq0" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
