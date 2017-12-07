@@ -287,5 +287,45 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
   </node>
+  <node concept="1TIwiD" id="2uEbjWK0fi0">
+    <property role="EcuMT" value="2858146662931559552" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="LessExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2uEbjWK0x0T" resolve="BinaryOrderedComparisonExpression" />
+  </node>
+  <node concept="1TIwiD" id="2uEbjWK0x0T">
+    <property role="EcuMT" value="2858146662931632185" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="BinaryOrderedComparisonExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6NmtaR1YmTj" resolve="BinaryComparisonExpression" />
+  </node>
+  <node concept="1TIwiD" id="2uEbjWK0yab">
+    <property role="EcuMT" value="2858146662931636875" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="GreaterExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2uEbjWK0x0T" resolve="BinaryOrderedComparisonExpression" />
+  </node>
+  <node concept="1TIwiD" id="2uEbjWK0yac">
+    <property role="EcuMT" value="2858146662931636876" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="LessEqualsExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2uEbjWK0x0T" resolve="BinaryOrderedComparisonExpression" />
+  </node>
+  <node concept="1TIwiD" id="2uEbjWK0yad">
+    <property role="EcuMT" value="2858146662931636877" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="GreaterEqualsExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2uEbjWK0x0T" resolve="BinaryOrderedComparisonExpression" />
+  </node>
 </model>
 

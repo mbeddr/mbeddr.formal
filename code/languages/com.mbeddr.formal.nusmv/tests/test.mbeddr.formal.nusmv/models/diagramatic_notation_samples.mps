@@ -4952,18 +4952,18 @@
           <node concept="37mRIm" id="4NkweGheykl" role="37mRID">
             <property role="37mO49" value="box_5536191589039875148" />
             <node concept="gqqVs" id="4NkweGheykk" role="37mO4d">
-              <property role="gqqTZ" value="138.0" />
-              <property role="gqqTW" value="154.0" />
-              <property role="gqqTX" value="78.0" />
-              <property role="gqqTy" value="26.0" />
+              <property role="gqqTZ" value="118.0" />
+              <property role="gqqTW" value="109.0" />
+              <property role="gqqTX" value="22.0" />
+              <property role="gqqTy" value="24.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
           <node concept="37mRIm" id="4NkweGheyoQ" role="37mRID">
             <property role="37mO49" value="box_5536191589039875526" />
             <node concept="gqqVs" id="4NkweGheyoP" role="37mO4d">
-              <property role="gqqTZ" value="-65.0" />
-              <property role="gqqTW" value="154.0" />
+              <property role="gqqTZ" value="-73.0" />
+              <property role="gqqTW" value="145.0" />
               <property role="gqqTX" value="78.0" />
               <property role="gqqTy" value="26.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />

@@ -755,5 +755,33 @@
       <ref role="PrY4T" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2uEbjWK0yae">
+    <property role="EcuMT" value="2858146662931636878" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="LessExpression" />
+    <property role="34LRSv" value="&lt;" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0fi0" resolve="LessExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2uEbjWK0yaf">
+    <property role="EcuMT" value="2858146662931636879" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="LessEqualsExpression" />
+    <property role="34LRSv" value="&lt;=" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0yac" resolve="LessEqualsExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2uEbjWK0yag">
+    <property role="EcuMT" value="2858146662931636880" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="GreaterExpression" />
+    <property role="34LRSv" value="&gt;" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0yab" resolve="GreaterExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2uEbjWK0yah">
+    <property role="EcuMT" value="2858146662931636881" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="GreaterEqualsExpression" />
+    <property role="34LRSv" value="&gt;=" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0yad" resolve="GreaterEqualsExpressionBase" />
+  </node>
 </model>
 

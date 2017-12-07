@@ -802,5 +802,29 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="2uEbjWK0fiY">
+    <property role="3GE5qa" value="expressions.comparison" />
+    <ref role="13h7C2" to="ehqg:2uEbjWK0x0T" resolve="BinaryOrderedComparisonExpression" />
+    <node concept="13hLZK" id="2uEbjWK0fiZ" role="13h7CW">
+      <node concept="3clFbS" id="2uEbjWK0fj0" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2uEbjWK0x12" role="13h7CS">
+      <property role="TrG5h" value="getPriolevel" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
+      <node concept="3Tm1VV" id="2uEbjWK0x13" role="1B3o_S" />
+      <node concept="3clFbS" id="2uEbjWK0x18" role="3clF47">
+        <node concept="3clFbF" id="2uEbjWK0y16" role="3cqZAp">
+          <node concept="3cmrfG" id="2uEbjWK0y15" role="3clFbG">
+            <property role="3cmrfH" value="925" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2uEbjWK0x19" role="3clF45" />
+    </node>
+  </node>
 </model>
 
