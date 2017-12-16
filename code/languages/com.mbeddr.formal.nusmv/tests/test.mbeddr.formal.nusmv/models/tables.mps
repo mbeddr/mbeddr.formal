@@ -10,11 +10,17 @@
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base" version="0" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
-    <use id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.tabular" version="0" />
+    <use id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.base.tabular" version="0" />
+    <use id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular" version="-1" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
   <imports />
   <registry>
+    <language id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular">
+      <concept id="3038640987157452302" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
+        <child id="3038640987157837161" name="table" index="3PlPU9" />
+      </concept>
+    </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
       <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
@@ -43,19 +49,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.tabular">
-      <concept id="7480847423937116655" name="com.mbeddr.formal.tabular.structure.Output" flags="ng" index="2HuVrR">
+    <language id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.base.tabular">
+      <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.Output" flags="ng" index="2HuVrR">
         <child id="5453576532413735747" name="exp" index="agTQP" />
       </concept>
-      <concept id="3038640987157452671" name="com.mbeddr.formal.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
-      <concept id="3038640987157452302" name="com.mbeddr.formal.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
-        <child id="3038640987157837161" name="table" index="3PlPU9" />
-      </concept>
-      <concept id="3038640987154488121" name="com.mbeddr.formal.tabular.structure.HorizontalConditionTable" flags="ng" index="3PoB3p">
+      <concept id="3038640987157452671" name="com.mbeddr.formal.base.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
+      <concept id="3038640987154488121" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable" flags="ng" index="3PoB3p">
         <child id="3038640987155459296" name="conditions" index="3Pv8s0" />
         <child id="3038640987155459300" name="outputVariables" index="3Pv8s4" />
       </concept>
-      <concept id="3038640987155459340" name="com.mbeddr.formal.tabular.structure.SubconditionResult" flags="ng" index="3Pv8rG">
+      <concept id="3038640987155459340" name="com.mbeddr.formal.base.tabular.structure.SubconditionResult" flags="ng" index="3Pv8rG">
         <child id="3038640987155465385" name="cond" index="3PsQX9" />
         <child id="3038640987155465389" name="subCond" index="3PsQXd" />
         <child id="3038640987155465396" name="output" index="3PsQXk" />

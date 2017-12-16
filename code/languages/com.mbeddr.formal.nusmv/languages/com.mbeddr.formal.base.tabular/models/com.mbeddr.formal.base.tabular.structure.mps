@@ -102,21 +102,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2CFqY3vt_oe">
-    <property role="EcuMT" value="3038640987157452302" />
-    <property role="TrG5h" value="FunctionTableSection" />
-    <property role="34LRSv" value="FUNCTION-TABLE" />
-    <node concept="PrWs8" id="2CFqY3vuOM7" role="PzmwI">
-      <ref role="PrY4T" to="gioj:6NmtaR1UNLQ" resolve="IModuleContent" />
-    </node>
-    <node concept="1TJgyj" id="2CFqY3vv3lD" role="1TKVEi">
-      <property role="IQ2ns" value="3038640987157837161" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="table" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2CFqY3vihGT" resolve="HorizontalConditionTable" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2CFqY3vt_tZ">
     <property role="EcuMT" value="3038640987157452671" />
     <property role="3GE5qa" value="horizontal_condition_table" />
