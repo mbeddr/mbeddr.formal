@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.formal.tabular" uuid="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" languageVersion="0" moduleVersion="0">
+<language namespace="com.mbeddr.formal.base.tabular" uuid="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="com.mbeddr.formal.tabular#3038640987154488023" uuid="52af87be-cc32-4f3c-b430-eb1c8eb8a984" reflective-queries="true">
+    <generator alias="main" namespace="com.mbeddr.formal.base.tabular#3038640987154488023" uuid="52af87be-cc32-4f3c-b430-eb1c8eb8a984" reflective-queries="true">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
