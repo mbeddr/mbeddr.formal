@@ -9,6 +9,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -70,7 +71,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="modules" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6NmtaR1SULH" resolve="ModuleDeclaration" />
+      <ref role="20lvS9" node="5_V$TJxCJMd" resolve="ISystemContent" />
     </node>
     <node concept="PrWs8" id="6NmtaR1SUJm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -101,11 +102,17 @@
     <node concept="PrWs8" id="1IrBcRph3S9" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="PrWs8" id="5_V$TJxCJMo" role="PzmwI">
+      <ref role="PrY4T" node="5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SULQ">
     <property role="EcuMT" value="7842584090743385206" />
     <property role="TrG5h" value="ParameterDeclaration" />
     <ref role="1TJDcQ" node="7mSH3WmVxaO" resolve="VariableDeclarationBase" />
+    <node concept="PrWs8" id="5_V$TJxB7Iw" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SV6O">
     <property role="EcuMT" value="7842584090743386548" />
@@ -401,6 +408,9 @@
     </node>
     <node concept="PrWs8" id="7mSH3WmQ5bq" role="PzmwI">
       <ref role="PrY4T" node="1IrBcRpiVFr" resolve="IDefineContent" />
+    </node>
+    <node concept="PrWs8" id="5_V$TJxBddM" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WmVxaO">
@@ -782,6 +792,18 @@
     <property role="TrG5h" value="GreaterEqualsExpression" />
     <property role="34LRSv" value="&gt;=" />
     <ref role="1TJDcQ" to="ehqg:2uEbjWK0yad" resolve="GreaterEqualsExpressionBase" />
+  </node>
+  <node concept="PlHQZ" id="5_V$TJxCJMd">
+    <property role="EcuMT" value="6447909589225766029" />
+    <property role="TrG5h" value="ISystemContent" />
+  </node>
+  <node concept="1TIwiD" id="5_V$TJxCJMz">
+    <property role="EcuMT" value="6447909589225766051" />
+    <property role="TrG5h" value="EmptySystemContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5_V$TJxCJM$" role="PzmwI">
+      <ref role="PrY4T" node="5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
   </node>
 </model>
 

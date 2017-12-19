@@ -11,6 +11,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="w3o4" ref="r:f6eb91ea-a20a-402b-a44f-2cf1ab3951a4(com.mbeddr.formal.nusmv.tests.plugin)" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -209,7 +210,7 @@
                 <node concept="I4A8Y" id="3YQnHt2okg" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="3YQnHt2oU$" role="2OqNvi">
-                <ref role="1j9C0d" to="fnq2:3YQnHt0gBu" resolve="CurrentValueAnnotation" />
+                <ref role="1j9C0d" to="b19z:3YQnHt0gBu" resolve="CurrentSimulationValueAnnotation" />
               </node>
             </node>
             <node concept="2es0OD" id="3YQnHt2vdq" role="2OqNvi">

@@ -37,11 +37,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
-      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <property id="1186403713874" name="color" index="Vb096" />
-      </concept>
-      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -54,6 +49,9 @@
       </concept>
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
+        <property id="1139746504291" name="imageFile" index="1ubRXE" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -304,6 +302,10 @@
         <node concept="VPM3Z" id="43FRfGJUEvc" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
+        <node concept="1u4HXA" id="5_V$TJxC_wJ" role="3EZMnx">
+          <property role="1ubRXE" value="${module}/icons/tests.png" />
+        </node>
+        <node concept="3F0ifn" id="5_V$TJxCEzz" role="3EZMnx" />
         <node concept="3F0ifn" id="43FRfGJUEvx" role="3EZMnx">
           <property role="3F0ifm" value="tests collection:" />
         </node>
@@ -721,19 +723,6 @@
   </node>
   <node concept="3p36aQ" id="3YQnHsZ2W5">
     <ref role="aqKnT" to="fnq2:3YQnHsZ2Vy" resolve="EmptyTestsCollectionContent" />
-  </node>
-  <node concept="24kQdi" id="3YQnHt0gBK">
-    <ref role="1XX52x" to="fnq2:3YQnHt0gBu" resolve="CurrentValueAnnotation" />
-    <node concept="3EZMnI" id="3YQnHt0gBM" role="2wV5jI">
-      <node concept="3F0A7n" id="3YQnHt0gBW" role="3EZMnx">
-        <ref role="1NtTu8" to="fnq2:3YQnHt0gB_" resolve="value" />
-        <node concept="Veino" id="3YQnHt1BKf" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
-        </node>
-      </node>
-      <node concept="2SsqMj" id="3YQnHt0gC5" role="3EZMnx" />
-      <node concept="2iRkQZ" id="3YQnHt0gBP" role="2iSdaV" />
-    </node>
   </node>
 </model>
 

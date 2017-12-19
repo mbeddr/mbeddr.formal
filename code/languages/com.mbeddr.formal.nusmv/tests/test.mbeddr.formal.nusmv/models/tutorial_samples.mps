@@ -162,11 +162,6 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
-    <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
-      <concept id="71733767949060574" name="com.mbeddr.formal.nusmv.tests.structure.CurrentValueAnnotation" flags="ng" index="1tZX2_">
-        <property id="71733767949060581" name="value" index="1tZX2u" />
-      </concept>
-    </language>
   </registry>
   <node concept="2HdtXS" id="6NmtaR1TTJH">
     <property role="TrG5h" value="_010_tutorial_single_process" />
@@ -246,9 +241,6 @@
       <property role="TrG5h" value="counter_cell" />
       <node concept="2Hdtzr" id="1IrBcRph7M2" role="2Hdtzq">
         <property role="TrG5h" value="carry_in" />
-        <node concept="1tZX2_" id="2uEbjWK09nW" role="lGtFl">
-          <property role="1tZX2u" value="true" />
-        </node>
       </node>
       <node concept="2Hfkzq" id="1IrBcRpi7EE" role="2HcbjO">
         <node concept="2Hdskp" id="1IrBcRpi7EF" role="2Hfkx9">
@@ -260,9 +252,6 @@
         <node concept="2HfkAV" id="1IrBcRpi7Fq" role="2HfkAP">
           <node concept="2He$iJ" id="1IrBcRpi7FJ" role="2He$ia">
             <ref role="2He$iI" node="1IrBcRpi7EF" resolve="value" />
-            <node concept="1tZX2_" id="2uEbjWK09nX" role="lGtFl">
-              <property role="1tZX2u" value="false" />
-            </node>
           </node>
           <node concept="1yCjT0" id="7mSH3WnHVVU" role="2He$i0" />
         </node>
@@ -290,9 +279,6 @@
             <node concept="2He$iJ" id="7mSH3WmWrG$" role="2H9Iav">
               <ref role="2He$iI" node="1IrBcRpi7EF" resolve="value" />
             </node>
-          </node>
-          <node concept="1tZX2_" id="2uEbjWK09nY" role="lGtFl">
-            <property role="1tZX2u" value="false" />
           </node>
         </node>
       </node>
