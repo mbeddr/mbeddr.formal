@@ -71,6 +71,8 @@
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
+      <concept id="1233752719417" name="jetbrains.mps.lang.textGen.structure.IncreaseDepthOperation" flags="nn" index="11p84A" />
+      <concept id="1233752780875" name="jetbrains.mps.lang.textGen.structure.DecreaseDepthOperation" flags="nn" index="11pn5k" />
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
       <concept id="1236188139846" name="jetbrains.mps.lang.textGen.structure.WithIndentOperation" flags="nn" index="3izx1p">
         <child id="1236188238861" name="list" index="3izTki" />
@@ -415,7 +417,7 @@
             <node concept="2OqwBi" id="6NmtaR23vk5" role="lb14g">
               <node concept="117lpO" id="6NmtaR23vb9" role="2Oq$k0" />
               <node concept="3TrEf2" id="6NmtaR23vtD" role="2OqNvi">
-                <ref role="3Tt5mk" to="gioj:6NmtaR1V30B" resolve="lhs" />
+                <ref role="3Tt5mk" to="gioj:3YQnHt3vU0" resolve="lhs" />
               </node>
             </node>
           </node>
@@ -496,7 +498,7 @@
             <node concept="2OqwBi" id="6NmtaR23y0z" role="lb14g">
               <node concept="117lpO" id="6NmtaR23y0$" role="2Oq$k0" />
               <node concept="3TrEf2" id="6NmtaR23y0_" role="2OqNvi">
-                <ref role="3Tt5mk" to="gioj:6NmtaR1V30B" resolve="lhs" />
+                <ref role="3Tt5mk" to="gioj:3YQnHt3VFQ" resolve="lhs" />
               </node>
             </node>
           </node>
@@ -531,6 +533,7 @@
               </node>
               <node concept="l8MVK" id="6NmtaR23yeB" role="lcghm" />
             </node>
+            <node concept="11p84A" id="3JhRrgbjS0b" role="3cqZAp" />
             <node concept="2Gpval" id="6NmtaR23ygD" role="3cqZAp">
               <node concept="2GrKxI" id="6NmtaR23ygF" role="2Gsz3X">
                 <property role="TrG5h" value="c" />
@@ -553,6 +556,8 @@
                 </node>
               </node>
             </node>
+            <node concept="11pn5k" id="3JhRrgbjSaT" role="3cqZAp" />
+            <node concept="1bpajm" id="3JhRrgbjNfl" role="3cqZAp" />
             <node concept="lc7rE" id="6NmtaR23yQm" role="3cqZAp">
               <node concept="la8eA" id="6NmtaR23yWs" role="lcghm">
                 <property role="lacIc" value="esac" />
