@@ -8,6 +8,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="jx4r" ref="r:20b428fb-5ad4-48f7-a0e1-326c84a8081b(com.mbeddr.formal.nusmv.tabular.structure)" />
     <import index="vlrt" ref="r:3ddaee68-0b72-48af-bc28-bb60d8c7c95e(com.mbeddr.formal.base.tabular.structure)" implicit="true" />
     <import index="lj33" ref="r:1176dd27-5bf8-413c-9989-2654e0832f90(com.mbeddr.formal.base.tabular.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -393,7 +394,7 @@
                                     <node concept="2WmjW8" id="5MukRfurq1Q" role="2OqNvi">
                                       <node concept="1PxgMI" id="5MukRfuzVZw" role="25WWJ7">
                                         <node concept="chp4Y" id="5MukRfuzW7k" role="3oSUPX">
-                                          <ref role="cht4Q" to="vlrt:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+                                          <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
                                         </node>
                                         <node concept="130tyv" id="5MukRfurq3l" role="1m5AlR" />
                                       </node>
@@ -507,13 +508,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2CFqY3vtAwI">
-    <property role="3GE5qa" value="horizontal_condition_table" />
-    <ref role="1XX52x" to="vlrt:2CFqY3vt_tZ" resolve="FunctionValueContent" />
-    <node concept="3F0A7n" id="2CFqY3vtAwK" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
   <node concept="24kQdi" id="4IIZJp1Vmdf">
