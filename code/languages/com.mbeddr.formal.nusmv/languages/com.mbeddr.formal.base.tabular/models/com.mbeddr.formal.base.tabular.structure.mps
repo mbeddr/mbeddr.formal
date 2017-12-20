@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="jx4r" ref="r:20b428fb-5ad4-48f7-a0e1-326c84a8081b(com.mbeddr.formal.nusmv.tabular.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
@@ -16,7 +17,9 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
-        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -24,10 +27,6 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
-      </concept>
-      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
-        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
-        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -64,7 +63,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outputVariables" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueContent" />
+      <ref role="20lvS9" node="3JhRrgbktEe" resolve="IFunctionValueContent" />
     </node>
     <node concept="PrWs8" id="2CFqY3vmZqN" role="PzmwI">
       <ref role="PrY4T" to="gioj:6NmtaR1UNLQ" resolve="IModuleContent" />
@@ -96,20 +95,6 @@
       <property role="20kJfa" value="output" />
       <ref role="20lvS9" node="6vhjLzaEJBJ" resolve="Output" />
     </node>
-    <node concept="1TJgyi" id="4IIZJp1ZT9k" role="1TKVEl">
-      <property role="IQ2nx" value="5453576532414927444" />
-      <property role="TrG5h" value="rowCount" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2CFqY3vt_tZ">
-    <property role="EcuMT" value="3038640987157452671" />
-    <property role="3GE5qa" value="horizontal_condition_table" />
-    <property role="TrG5h" value="FunctionValueContent" />
-    <ref role="1TJDcQ" to="gioj:7mSH3WmVxaO" resolve="VariableDeclarationBase" />
-    <node concept="PrWs8" id="2CFqY3vt_u0" role="PzmwI">
-      <ref role="PrY4T" to="gioj:1IrBcRpiVFr" resolve="IDefineContent" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6vhjLzaEJBJ">
     <property role="EcuMT" value="7480847423937116655" />
@@ -122,6 +107,14 @@
       <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3JhRrgbktEe">
+    <property role="EcuMT" value="4310470083724040846" />
+    <property role="3GE5qa" value="horizontal_condition_table" />
+    <property role="TrG5h" value="IFunctionValueContent" />
+    <node concept="PrWs8" id="3JhRrgboitu" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

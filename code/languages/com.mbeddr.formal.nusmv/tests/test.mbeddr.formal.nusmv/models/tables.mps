@@ -17,6 +17,7 @@
   <imports />
   <registry>
     <language id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular">
+      <concept id="3038640987157452671" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
       <concept id="3038640987157452302" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
         <child id="3038640987157837161" name="table" index="3PlPU9" />
       </concept>
@@ -31,6 +32,7 @@
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="modules" index="2HcuB8" />
       </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
       <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
@@ -53,7 +55,6 @@
       <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.Output" flags="ng" index="2HuVrR">
         <child id="5453576532413735747" name="exp" index="agTQP" />
       </concept>
-      <concept id="3038640987157452671" name="com.mbeddr.formal.base.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
       <concept id="3038640987154488121" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable" flags="ng" index="3PoB3p">
         <child id="3038640987155459296" name="conditions" index="3Pv8s0" />
         <child id="3038640987155459300" name="outputVariables" index="3Pv8s4" />
@@ -309,6 +310,8 @@
         </node>
       </node>
     </node>
+    <node concept="2SQmWS" id="3JhRrgbnXjF" role="2HcuB8" />
+    <node concept="2SQmWS" id="3JhRrgbnXmI" role="2HcuB8" />
   </node>
 </model>
 
