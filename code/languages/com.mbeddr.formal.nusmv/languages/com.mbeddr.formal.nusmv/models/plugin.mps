@@ -248,6 +248,7 @@
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -687,6 +688,7 @@
                       <ref role="cht4Q" to="gioj:6NmtaR1UNLO" resolve="AssignmentsSection" />
                     </node>
                   </node>
+                  <node concept="1xIGOp" id="2j97AIfukrP" role="1xVPHs" />
                 </node>
               </node>
             </node>
@@ -716,6 +718,7 @@
                       <ref role="cht4Q" to="gioj:6NmtaR1UNLR" resolve="VariablesSection" />
                     </node>
                   </node>
+                  <node concept="1xIGOp" id="2j97AIfukpG" role="1xVPHs" />
                 </node>
               </node>
             </node>
@@ -745,6 +748,7 @@
                       <ref role="cht4Q" to="gioj:1IrBcRpiVFd" resolve="DefineSection" />
                     </node>
                   </node>
+                  <node concept="1xIGOp" id="2j97AIfuktY" role="1xVPHs" />
                 </node>
               </node>
             </node>
