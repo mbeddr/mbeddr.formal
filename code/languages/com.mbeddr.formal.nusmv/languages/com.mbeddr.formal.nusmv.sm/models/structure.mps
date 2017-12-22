@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
-    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -130,7 +130,7 @@
       <property role="20kJfa" value="lhs" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4NkweGhcVOY" resolve="StateVariableRef" />
-      <ref role="20ksaX" to="gioj:6NmtaR1V30B" resolve="lhs" />
+      <ref role="20ksaX" to="gioj:3YQnHt3VFQ" resolve="lhs" />
     </node>
     <node concept="1TJgyj" id="4NkweGhcVQq" role="1TKVEi">
       <property role="IQ2ns" value="5536191589039455642" />
@@ -202,6 +202,48 @@
       <property role="20kJfa" value="transition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4NkweGhcVzM" resolve="Transition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$vmWKMqHFe">
+    <property role="EcuMT" value="1810266507803548366" />
+    <property role="TrG5h" value="TransitionsAssignmentForInternalVars" />
+    <property role="34LRSv" value="transitions assignment for internal variables" />
+    <ref role="1TJDcQ" to="gioj:6NmtaR1VSYF" resolve="NextAssignment" />
+    <node concept="1TJgyj" id="1$vmWKMqHFg" role="1TKVEi">
+      <property role="IQ2ns" value="1810266507803548368" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rhs" />
+      <property role="20lbJX" value="1" />
+      <ref role="20ksaX" to="gioj:6NmtaR1V30H" resolve="rhs" />
+      <ref role="20lvS9" node="1$vmWKMr0SF" resolve="TransitionsForInternalVariables" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$vmWKMr0SF">
+    <property role="EcuMT" value="1810266507803627051" />
+    <property role="TrG5h" value="TransitionsForInternalVariables" />
+    <property role="34LRSv" value="transitions for internal variables" />
+    <ref role="1TJDcQ" to="gioj:6NmtaR1W9ga" resolve="CaseExpression" />
+    <node concept="1TJgyj" id="1$vmWKMr8Tt" role="1TKVEi">
+      <property role="IQ2ns" value="1810266507803659869" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cases" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1$vmWKMr0SG" resolve="TransitionForInternalVariable" />
+      <ref role="20ksaX" to="gioj:6NmtaR1W9gc" resolve="cases" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$vmWKMr0SG">
+    <property role="EcuMT" value="1810266507803627052" />
+    <property role="TrG5h" value="TransitionForInternalVariable" />
+    <property role="34LRSv" value="transition" />
+    <ref role="1TJDcQ" to="gioj:6NmtaR1W9gb" resolve="SingleCase" />
+    <node concept="1TJgyj" id="1$vmWKMr0SH" role="1TKVEi">
+      <property role="IQ2ns" value="1810266507803627053" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="guard" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="36cijvuunqC" resolve="TransitionRef" />
+      <ref role="20ksaX" to="gioj:6NmtaR1W9m2" resolve="guard" />
     </node>
   </node>
 </model>

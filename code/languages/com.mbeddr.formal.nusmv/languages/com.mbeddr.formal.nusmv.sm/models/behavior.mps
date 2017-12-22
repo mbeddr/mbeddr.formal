@@ -256,5 +256,31 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="1$vmWKMt1qj">
+    <ref role="13h7C2" to="ahnd:1$vmWKMr0SF" resolve="TransitionsForInternalVariables" />
+    <node concept="13hLZK" id="1$vmWKMt1qk" role="13h7CW">
+      <node concept="3clFbS" id="1$vmWKMt1ql" role="2VODD2">
+        <node concept="3clFbF" id="1$vmWKMt1qv" role="3cqZAp">
+          <node concept="2OqwBi" id="1$vmWKMt3vk" role="3clFbG">
+            <node concept="2OqwBi" id="1$vmWKMt1yV" role="2Oq$k0">
+              <node concept="13iPFW" id="1$vmWKMt1qu" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1$vmWKMt1K1" role="2OqNvi">
+                <ref role="3TtcxE" to="ahnd:1$vmWKMr8Tt" resolve="cases" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="1$vmWKMt7lN" role="2OqNvi">
+              <node concept="2ShNRf" id="1$vmWKMt84C" role="25WWJ7">
+                <node concept="3zrR0B" id="1$vmWKMt8rD" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1$vmWKMt8rF" role="3zrR0E">
+                    <ref role="ehGHo" to="ahnd:1$vmWKMr0SG" resolve="TransitionForInternalVariable" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
