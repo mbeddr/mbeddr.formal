@@ -446,7 +446,7 @@
       </node>
       <node concept="3F0ifn" id="14CuINs4Qgl" role="3EZMnx" />
       <node concept="3F2HdR" id="6NmtaR1TTPF" role="3EZMnx">
-        <ref role="1NtTu8" to="gioj:6NmtaR1TTP_" resolve="modules" />
+        <ref role="1NtTu8" to="gioj:6NmtaR1TTP_" resolve="content" />
         <node concept="2iRkQZ" id="6NmtaR1TTPI" role="2czzBx" />
         <node concept="VPM3Z" id="6NmtaR1TTPJ" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -815,7 +815,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6NmtaR1V31V" role="3EZMnx">
-        <ref role="1NtTu8" to="gioj:6NmtaR1V30B" resolve="lhs" />
+        <ref role="1NtTu8" to="gioj:3YQnHt3vU0" resolve="lhs" />
       </node>
       <node concept="3F0ifn" id="6NmtaR1V32x" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -877,7 +877,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6NmtaR1VSZJ" role="3EZMnx">
-        <ref role="1NtTu8" to="gioj:6NmtaR1V30B" resolve="lhs" />
+        <ref role="1NtTu8" to="gioj:3YQnHt3VFQ" resolve="lhs" />
       </node>
       <node concept="3F0ifn" id="6NmtaR1VT0l" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1647,6 +1647,24 @@
   </node>
   <node concept="3p36aQ" id="5_V$TJxCX3_">
     <ref role="aqKnT" to="gioj:5_V$TJxCJMz" resolve="EmptySystemContent" />
+  </node>
+  <node concept="24kQdi" id="1ZsZb$iAmYc">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="gioj:1ZsZb$iAmXE" resolve="IntervalType" />
+    <node concept="3EZMnI" id="1ZsZb$iAmYe" role="2wV5jI">
+      <node concept="1kIj98" id="1ZsZb$iAmYo" role="3EZMnx">
+        <node concept="3F1sOY" id="1ZsZb$iAmYw" role="1kIj9b">
+          <ref role="1NtTu8" to="gioj:1ZsZb$iAmXF" resolve="left" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1ZsZb$iAmYF" role="3EZMnx">
+        <property role="3F0ifm" value=".." />
+      </node>
+      <node concept="3F1sOY" id="1ZsZb$iAmYW" role="3EZMnx">
+        <ref role="1NtTu8" to="gioj:1ZsZb$iAmXI" resolve="right" />
+      </node>
+      <node concept="l2Vlx" id="1ZsZb$iAmYh" role="2iSdaV" />
+    </node>
   </node>
 </model>
 

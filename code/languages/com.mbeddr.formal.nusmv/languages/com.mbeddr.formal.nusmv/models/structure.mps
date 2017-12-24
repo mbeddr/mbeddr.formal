@@ -69,7 +69,7 @@
     <node concept="1TJgyj" id="6NmtaR1TTP_" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743643493" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="modules" />
+      <property role="20kJfa" value="content" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="5_V$TJxCJMd" resolve="ISystemContent" />
     </node>
@@ -803,6 +803,35 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5_V$TJxCJM$" role="PzmwI">
       <ref role="PrY4T" node="5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ZsZb$iA1dJ">
+    <property role="EcuMT" value="2295987781863215983" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="NotEqualsExpression" />
+    <property role="34LRSv" value="!=" />
+    <ref role="1TJDcQ" to="ehqg:1ZsZb$iA1dK" resolve="NotEqualsExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="1ZsZb$iAmXE">
+    <property role="EcuMT" value="2295987781863305066" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="IntervalType" />
+    <property role="34LRSv" value="interval type" />
+    <property role="R4oN_" value="x..y" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="1ZsZb$iAmXF" role="1TKVEi">
+      <property role="IQ2ns" value="2295987781863305067" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyj" id="1ZsZb$iAmXI" role="1TKVEi">
+      <property role="IQ2ns" value="2295987781863305070" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
     </node>
   </node>
 </model>
