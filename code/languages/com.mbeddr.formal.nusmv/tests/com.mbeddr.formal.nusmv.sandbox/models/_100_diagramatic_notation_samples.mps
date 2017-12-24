@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9848e765-0581-466f-b06a-e06c1d20dd56(test.mbeddr.formal.nusmv.diagramatic_notation_samples)">
+<model ref="r:3dc3cc5d-ad63-4a42-9845-769f5de2905e(_100_diagramatic_notation_samples)">
   <persistence version="9" />
   <languages>
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />

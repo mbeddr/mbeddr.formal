@@ -5,9 +5,7 @@
     <use id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
-  <imports>
-    <import index="x4aj" ref="r:b9b861c2-9263-4359-9ac2-d6716beab411(test.mbeddr.formal.nusmv.tutorial_samples)" />
-  </imports>
+  <imports />
   <registry>
     <language id="c1b1e23f-b677-40b8-a490-e192dd8d78e5" name="com.mbeddr.formal.nusmv.sm">
       <concept id="4512297433099947043" name="com.mbeddr.formal.nusmv.sm.structure.StateMachineSection" flags="ng" index="2aiEES" />
@@ -43,9 +41,11 @@
         <child id="7842584090744230924" name="cases" index="2H9I2x" />
       </concept>
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
+      <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
       <concept id="7842584090743391222" name="com.mbeddr.formal.nusmv.structure.EnumerationType" flags="ng" index="2Hdrtr">
         <child id="7842584090743391224" name="members" index="2Hdrtl" />
       </concept>
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
         <child id="7842584090743387019" name="type" index="2HdssA" />
       </concept>
@@ -82,6 +82,7 @@
       <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
+      <concept id="8482728081226188044" name="com.mbeddr.formal.nusmv.structure.XorExpression" flags="ng" index="1y3R4N" />
       <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
       <concept id="8482728081215670238" name="com.mbeddr.formal.nusmv.structure.IntegerType" flags="ng" index="1yFZfx" />
@@ -226,7 +227,7 @@
     <node concept="1s0Jup" id="3YQnHsZbgB" role="1J0nHx" />
     <node concept="1J0nI2" id="4NkweGh4ZQp" role="1J0nHx">
       <property role="TrG5h" value="counter_cell_test1" />
-      <ref role="1J0niy" to="x4aj:1IrBcRpgRny" resolve="counter_cell" />
+      <ref role="1J0niy" node="1IrBcRpgRny" resolve="define_and_assign" />
       <node concept="1J0m7Y" id="4NkweGh4ZQq" role="1J0m7J">
         <node concept="1yCjRe" id="3YQnHt48f9" role="1J0m7X" />
         <node concept="1yCjT0" id="3YQnHt48fr" role="1J0m7K" />
@@ -271,6 +272,54 @@
         </node>
       </node>
     </node>
+    <node concept="2SQmWS" id="1ZsZb$i$J5r" role="2HcuB8" />
+    <node concept="2Hdtz0" id="1IrBcRpgRny" role="2HcuB8">
+      <property role="TrG5h" value="define_and_assign" />
+      <node concept="2Hdtzr" id="1IrBcRph7M2" role="2Hdtzq">
+        <property role="TrG5h" value="carry_in" />
+      </node>
+      <node concept="2Hfkzq" id="1IrBcRpi7EE" role="2HcbjO">
+        <node concept="2Hdskp" id="1IrBcRpi7EF" role="2Hfkx9">
+          <property role="TrG5h" value="value" />
+          <node concept="2Hds6S" id="7mSH3WnHVVu" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="1IrBcRpi7F8" role="2HcbjO">
+        <node concept="2HfkAV" id="1IrBcRpi7Fq" role="2HfkAP">
+          <node concept="2He$iJ" id="1IrBcRpi7FJ" role="2He$ia">
+            <ref role="2He$iI" node="1IrBcRpi7EF" resolve="value" />
+          </node>
+          <node concept="1yCjT0" id="7mSH3WnHVVU" role="2He$i0" />
+        </node>
+        <node concept="2HevG6" id="1IrBcRpi7G9" role="2HfkAP">
+          <node concept="2He$iJ" id="1IrBcRpi7GB" role="2He$ia">
+            <ref role="2He$iI" node="1IrBcRpi7EF" resolve="value" />
+          </node>
+          <node concept="1y3R4N" id="7mSH3WnI0ds" role="2He$i0">
+            <node concept="32Ogvo" id="7mSH3WnI0dX" role="2H9Ial">
+              <ref role="32Ogvr" node="1IrBcRph7M2" resolve="carry_in" />
+            </node>
+            <node concept="2He$iJ" id="7mSH3WnHVWy" role="2H9Iav">
+              <ref role="2He$iI" node="1IrBcRpi7EF" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="32O2o0" id="7mSH3WmVwfh" role="2HcbjO">
+        <node concept="1zoerA" id="7mSH3WmWrGl" role="32O2ov">
+          <property role="TrG5h" value="carry_out" />
+          <node concept="2HbMbg" id="7mSH3WmWrGF" role="1zoetD">
+            <node concept="32Ogvo" id="7mSH3WmWrGZ" role="2H9Ial">
+              <ref role="32Ogvr" node="1IrBcRph7M2" resolve="carry_in" />
+            </node>
+            <node concept="2He$iJ" id="7mSH3WmWrG$" role="2H9Iav">
+              <ref role="2He$iI" node="1IrBcRpi7EF" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="1ZsZb$i$J5M" role="2HcuB8" />
   </node>
   <node concept="2HdtXS" id="5uW1px6nux$">
     <property role="TrG5h" value="_020_assign_sut" />
