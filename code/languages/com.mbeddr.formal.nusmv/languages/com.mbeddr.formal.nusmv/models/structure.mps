@@ -834,5 +834,33 @@
       <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1ZsZb$iN442">
+    <property role="EcuMT" value="2295987781866635522" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ConditionalExpression" />
+    <property role="34LRSv" value="?" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="1ZsZb$iN6Uf" role="1TKVEi">
+      <property role="IQ2ns" value="2295987781866647183" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cond" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1ZsZb$iN6Ui" role="1TKVEi">
+      <property role="IQ2ns" value="2295987781866647186" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="thenExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1ZsZb$iN6Un" role="1TKVEi">
+      <property role="IQ2ns" value="2295987781866647191" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elseExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

@@ -22,6 +22,7 @@
     <dependency reexport="false">22a84bd5-d947-48ae-b9f6-8288eea41dce(com.mbeddr.formal.nusmv.arch)</dependency>
     <dependency reexport="false">c1b1e23f-b677-40b8-a490-e192dd8d78e5(com.mbeddr.formal.nusmv.sm)</dependency>
     <dependency reexport="false">cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />

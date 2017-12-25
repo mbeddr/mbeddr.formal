@@ -41,6 +41,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -122,6 +125,34 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3YQnHsZ2Vz" role="PzmwI">
       <ref role="PrY4T" node="3YQnHsZ2Vx" resolve="ITestsCollectionContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ZsZb$iIWjt">
+    <property role="EcuMT" value="2295987781865555165" />
+    <property role="TrG5h" value="ExecutableTestCase" />
+    <property role="3GE5qa" value="generation_only" />
+    <node concept="1TJgyj" id="6NmtaR1TTP_" role="1TKVEi">
+      <property role="IQ2ns" value="7842584090743643493" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="PrWs8" id="1ZsZb$iK9Ok" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ZsZb$iK_4w">
+    <property role="EcuMT" value="2295987781865984288" />
+    <property role="3GE5qa" value="generation_only" />
+    <property role="TrG5h" value="NAryAndExpression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="1ZsZb$iK_4x" role="1TKVEi">
+      <property role="IQ2ns" value="2295987781865984289" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="atomicCondition" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
 </model>
