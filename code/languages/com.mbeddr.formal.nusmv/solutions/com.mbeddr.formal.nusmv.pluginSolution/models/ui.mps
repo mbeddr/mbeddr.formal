@@ -11,7 +11,6 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
-    <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
     <import index="v4mk" ref="4c16cb42-7fa3-47c7-89c7-1c479c287588/java:org.jdesktop.swingx(com.mbeddr.analyses.utils/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
@@ -21,6 +20,7 @@
     <import index="rgfa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.tree(JDK/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
+    <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" />
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" implicit="true" />
@@ -244,7 +244,7 @@
     <property role="TrG5h" value="NuSMVRawOutputUI" />
     <property role="3GE5qa" value="" />
     <node concept="3uibUv" id="3DDJouLEILw" role="1zkMxy">
-      <ref role="3uigEE" to="vbi4:3DDJouLExSa" resolve="AnalysesRawResultsUIBase" />
+      <ref role="3uigEE" to="vxn5:3DDJouLExSa" resolve="AnalysesRawResultsUIBase" />
     </node>
     <node concept="2tJIrI" id="6izRX53pUYV" role="jymVt" />
     <node concept="312cEg" id="6izRX53q3SS" role="jymVt">
@@ -295,7 +295,7 @@
         <node concept="3clFbF" id="6izRX53qhhZ" role="3cqZAp">
           <node concept="37vLTI" id="6izRX53qh$6" role="3clFbG">
             <node concept="1rXfSq" id="3DDJouLFUA2" role="37vLTx">
-              <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
+              <ref role="37wK5l" to="vxn5:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
               <node concept="Xl_RD" id="3DDJouLHNiZ" role="37wK5m">
                 <property role="Xl_RC" value="Stdout" />
               </node>
@@ -311,7 +311,7 @@
         <node concept="3clFbF" id="4kcU3Yrmt5Z" role="3cqZAp">
           <node concept="37vLTI" id="4kcU3Yrmt60" role="3clFbG">
             <node concept="1rXfSq" id="3DDJouLFXcP" role="37vLTx">
-              <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
+              <ref role="37wK5l" to="vxn5:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
               <node concept="Xl_RD" id="3DDJouLHRB4" role="37wK5m">
                 <property role="Xl_RC" value="Stderr" />
               </node>
@@ -327,7 +327,7 @@
         <node concept="3clFbF" id="4$9c1ZyA9Ey" role="3cqZAp">
           <node concept="37vLTI" id="4$9c1ZyA9Ez" role="3clFbG">
             <node concept="1rXfSq" id="3DDJouLFYbM" role="37vLTx">
-              <ref role="37wK5l" to="vbi4:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
+              <ref role="37wK5l" to="vxn5:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
               <node concept="Xl_RD" id="3DDJouLHToN" role="37wK5m">
                 <property role="Xl_RC" value="Raw command" />
               </node>
@@ -344,7 +344,7 @@
         <node concept="3clFbF" id="1agNx8KPxIH" role="3cqZAp">
           <node concept="2OqwBi" id="1agNx8KPy$v" role="3clFbG">
             <node concept="37vLTw" id="3DDJouLGuNZ" role="2Oq$k0">
-              <ref role="3cqZAo" to="vbi4:3DDJouLGc5S" resolve="mySearchPanel" />
+              <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
             </node>
             <node concept="liA8E" id="1agNx8KPzFJ" role="2OqNvi">
               <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
@@ -358,7 +358,7 @@
         <node concept="3clFbF" id="1agNx8KJjyq" role="3cqZAp">
           <node concept="2OqwBi" id="1agNx8KJkjZ" role="3clFbG">
             <node concept="37vLTw" id="3DDJouLF7Zq" role="2Oq$k0">
-              <ref role="3cqZAo" to="vbi4:3DDJouLEMgn" resolve="tabbed" />
+              <ref role="3cqZAo" to="vxn5:3DDJouLEMgn" resolve="tabbed" />
             </node>
             <node concept="liA8E" id="1agNx8KJkZD" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JTabbedPane.addChangeListener(javax.swing.event.ChangeListener):void" resolve="addChangeListener" />
@@ -388,7 +388,7 @@
                             <node concept="3clFbF" id="1agNx8KNh1N" role="3cqZAp">
                               <node concept="2OqwBi" id="1agNx8KNhnp" role="3clFbG">
                                 <node concept="37vLTw" id="3DDJouLGv$1" role="2Oq$k0">
-                                  <ref role="3cqZAo" to="vbi4:3DDJouLGc5S" resolve="mySearchPanel" />
+                                  <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                 </node>
                                 <node concept="liA8E" id="1agNx8KNirt" role="2OqNvi">
                                   <ref role="37wK5l" to="uipx:1agNx8KBxaD" resolve="deactivate" />
@@ -398,7 +398,7 @@
                             <node concept="3KaCP$" id="1agNx8KJqpu" role="3cqZAp">
                               <node concept="2OqwBi" id="1agNx8KJrel" role="3KbGdf">
                                 <node concept="37vLTw" id="3DDJouLF8EF" role="2Oq$k0">
-                                  <ref role="3cqZAo" to="vbi4:3DDJouLEMgn" resolve="tabbed" />
+                                  <ref role="3cqZAo" to="vxn5:3DDJouLEMgn" resolve="tabbed" />
                                 </node>
                                 <node concept="liA8E" id="1agNx8KJsev" role="2OqNvi">
                                   <ref role="37wK5l" to="dxuu:~JTabbedPane.getSelectedIndex():int" resolve="getSelectedIndex" />
@@ -413,7 +413,7 @@
                                   <node concept="3clFbF" id="1agNx8KJWNk" role="3cqZAp">
                                     <node concept="2OqwBi" id="1agNx8KJWNl" role="3clFbG">
                                       <node concept="37vLTw" id="3DDJouLGw74" role="2Oq$k0">
-                                        <ref role="3cqZAo" to="vbi4:3DDJouLGc5S" resolve="mySearchPanel" />
+                                        <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                       </node>
                                       <node concept="liA8E" id="1agNx8KJWNn" role="2OqNvi">
                                         <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
@@ -431,7 +431,7 @@
                                   <node concept="3clFbF" id="1agNx8KJZiw" role="3cqZAp">
                                     <node concept="2OqwBi" id="1agNx8KJZix" role="3clFbG">
                                       <node concept="37vLTw" id="3DDJouLGxWZ" role="2Oq$k0">
-                                        <ref role="3cqZAo" to="vbi4:3DDJouLGc5S" resolve="mySearchPanel" />
+                                        <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                       </node>
                                       <node concept="liA8E" id="1agNx8KJZiz" role="2OqNvi">
                                         <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
@@ -452,7 +452,7 @@
                                   <node concept="3clFbF" id="1agNx8KK0_B" role="3cqZAp">
                                     <node concept="2OqwBi" id="1agNx8KK0_C" role="3clFbG">
                                       <node concept="37vLTw" id="3DDJouLGy_Z" role="2Oq$k0">
-                                        <ref role="3cqZAo" to="vbi4:3DDJouLGc5S" resolve="mySearchPanel" />
+                                        <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                       </node>
                                       <node concept="liA8E" id="1agNx8KK0_E" role="2OqNvi">
                                         <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
@@ -472,7 +472,7 @@
                           <node concept="3y3z36" id="1agNx8KO_GB" role="3clFbw">
                             <node concept="10Nm6u" id="1agNx8KOA3q" role="3uHU7w" />
                             <node concept="37vLTw" id="3DDJouLGwKs" role="3uHU7B">
-                              <ref role="3cqZAo" to="vbi4:3DDJouLGc5S" resolve="mySearchPanel" />
+                              <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                             </node>
                           </node>
                         </node>
@@ -627,7 +627,7 @@
     <property role="TrG5h" value="NuSMVResultsUI" />
     <node concept="3Tm1VV" id="4_pSipqUB$$" role="1B3o_S" />
     <node concept="3uibUv" id="2k2dPZH6hHE" role="1zkMxy">
-      <ref role="3uigEE" to="vbi4:2k2dPZH6gae" resolve="AnalysesResultsUIBase" />
+      <ref role="3uigEE" to="vxn5:2k2dPZH6gae" resolve="AnalysesResultsUIBase" />
     </node>
     <node concept="2tJIrI" id="JsaLOciL5x" role="jymVt" />
     <node concept="312cEg" id="JsaLOcpPtm" role="jymVt">
@@ -724,7 +724,7 @@
             <node concept="liA8E" id="1GgrF83cQyq" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
               <node concept="37vLTw" id="1GgrF83ezNy" role="37wK5m">
-                <ref role="3cqZAo" to="vbi4:1GgrF83etM0" resolve="MY_FONT" />
+                <ref role="3cqZAo" to="vxn5:1GgrF83etM0" resolve="MY_FONT" />
               </node>
             </node>
           </node>
@@ -819,7 +819,7 @@
                                   <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
                                   <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                   <node concept="37vLTw" id="2k2dPZH6$tk" role="37wK5m">
-                                    <ref role="3cqZAo" to="vbi4:JsaLOcnA09" resolve="analysesResultsTable" />
+                                    <ref role="3cqZAo" to="vxn5:JsaLOcnA09" resolve="analysesResultsTable" />
                                   </node>
                                   <node concept="2OqwBi" id="2k2dPZH6$tl" role="37wK5m">
                                     <node concept="37vLTw" id="2k2dPZH6$tm" role="2Oq$k0">
@@ -912,7 +912,7 @@
                         <node concept="10Oyi0" id="2k2dPZH4h85" role="1tU5fm" />
                         <node concept="2OqwBi" id="2k2dPZH4h86" role="33vP2m">
                           <node concept="37vLTw" id="2k2dPZH4h87" role="2Oq$k0">
-                            <ref role="3cqZAo" to="vbi4:JsaLOcnA09" resolve="analysesResultsTable" />
+                            <ref role="3cqZAo" to="vxn5:JsaLOcnA09" resolve="analysesResultsTable" />
                           </node>
                           <node concept="liA8E" id="2k2dPZH4h88" role="2OqNvi">
                             <ref role="37wK5l" to="dxuu:~JTable.getSelectedRow():int" resolve="getSelectedRow" />
@@ -945,11 +945,11 @@
                                   <node concept="1eOMI4" id="hgayPfhWfc" role="2Oq$k0">
                                     <node concept="10QFUN" id="hgayPfhWf9" role="1eOMHV">
                                       <node concept="3uibUv" id="hgayPfhZtp" role="10QFUM">
-                                        <ref role="3uigEE" to="vbi4:4wNvmgrbgv0" resolve="AnalysesResultsTreeTableModel" />
+                                        <ref role="3uigEE" to="vxn5:4wNvmgrbgv0" resolve="AnalysesResultsTreeTableModel" />
                                       </node>
                                       <node concept="2OqwBi" id="hgayPfh1jD" role="10QFUP">
                                         <node concept="37vLTw" id="hgayPfh08d" role="2Oq$k0">
-                                          <ref role="3cqZAo" to="vbi4:JsaLOcnA09" resolve="analysesResultsTable" />
+                                          <ref role="3cqZAo" to="vxn5:JsaLOcnA09" resolve="analysesResultsTable" />
                                         </node>
                                         <node concept="liA8E" id="hgayPfh5qf" role="2OqNvi">
                                           <ref role="37wK5l" to="v4mk:~JXTreeTable.getTreeTableModel():org.jdesktop.swingx.treetable.TreeTableModel" resolve="getTreeTableModel" />
@@ -958,7 +958,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="hgayPfi1TQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="vbi4:hgayPfhqiB" resolve="getResults" />
+                                    <ref role="37wK5l" to="vxn5:hgayPfhqiB" resolve="getResults" />
                                   </node>
                                 </node>
                               </node>
@@ -976,7 +976,7 @@
                         </node>
                         <node concept="2OqwBi" id="2k2dPZH4h8c" role="33vP2m">
                           <node concept="37vLTw" id="2k2dPZH4h8d" role="2Oq$k0">
-                            <ref role="3cqZAo" to="vbi4:JsaLOcnA09" resolve="analysesResultsTable" />
+                            <ref role="3cqZAo" to="vxn5:JsaLOcnA09" resolve="analysesResultsTable" />
                           </node>
                           <node concept="liA8E" id="2k2dPZH4h8e" role="2OqNvi">
                             <ref role="37wK5l" to="v4mk:~JXTreeTable.getPathForRow(int):javax.swing.tree.TreePath" resolve="getPathForRow" />
@@ -1074,7 +1074,7 @@
                               <ref role="3cqZAo" node="JsaLOcpPtm" resolve="whitnessTableModel" />
                             </node>
                             <node concept="liA8E" id="2k2dPZH4h9w" role="2OqNvi">
-                              <ref role="37wK5l" to="vbi4:31nZcrlJSz0" resolve="setWhitnessEntries" />
+                              <ref role="37wK5l" to="vxn5:31nZcrlJSz0" resolve="setWhitnessEntries" />
                               <node concept="2OqwBi" id="2k2dPZH4h9x" role="37wK5m">
                                 <node concept="37vLTw" id="2k2dPZH4h9y" role="2Oq$k0">
                                   <ref role="3cqZAo" node="2k2dPZH4h8$" resolve="result" />
@@ -1089,7 +1089,7 @@
                         <node concept="3clFbF" id="2k2dPZH4h9$" role="3cqZAp">
                           <node concept="2OqwBi" id="2k2dPZH4h9_" role="3clFbG">
                             <node concept="37vLTw" id="2k2dPZH4h9A" role="2Oq$k0">
-                              <ref role="3cqZAo" to="vbi4:JsaLOcpHxc" resolve="whitnessTable" />
+                              <ref role="3cqZAo" to="vxn5:JsaLOcpHxc" resolve="whitnessTable" />
                             </node>
                             <node concept="liA8E" id="2k2dPZH4h9B" role="2OqNvi">
                               <ref role="37wK5l" to="dxuu:~JTable.updateUI():void" resolve="updateUI" />
@@ -1307,7 +1307,7 @@
                             <ref role="37wK5l" to="dxuu:~JTable.getSelectedRow():int" resolve="getSelectedRow" />
                           </node>
                           <node concept="37vLTw" id="2k2dPZHaOXu" role="2Oq$k0">
-                            <ref role="3cqZAo" to="vbi4:JsaLOcpHxc" resolve="whitnessTable" />
+                            <ref role="3cqZAo" to="vxn5:JsaLOcpHxc" resolve="whitnessTable" />
                           </node>
                         </node>
                       </node>
@@ -1324,7 +1324,7 @@
                             <ref role="3cqZAo" node="JsaLOcpPtm" resolve="whitnessTableModel" />
                           </node>
                           <node concept="liA8E" id="2k2dPZHaOX$" role="2OqNvi">
-                            <ref role="37wK5l" to="vbi4:WwTuEsr05r" resolve="getNodeAt" />
+                            <ref role="37wK5l" to="vxn5:WwTuEsr05r" resolve="getNodeAt" />
                             <node concept="37vLTw" id="2k2dPZHaOX_" role="37wK5m">
                               <ref role="3cqZAo" node="2k2dPZHaOXq" resolve="selectedRow" />
                             </node>
@@ -1502,7 +1502,7 @@
           <node concept="37vLTI" id="31nZcrlJSAF" role="3clFbG">
             <node concept="2ShNRf" id="31nZcrlJSAI" role="37vLTx">
               <node concept="1pGfFk" id="31nZcrlJSAM" role="2ShVmc">
-                <ref role="37wK5l" to="vbi4:1EZfgaQov_b" resolve="WhitnessTable" />
+                <ref role="37wK5l" to="vxn5:1EZfgaQov_b" resolve="WhitnessTable" />
                 <node concept="37vLTw" id="TJrbIN5izE" role="37wK5m">
                   <ref role="3cqZAo" node="JsaLOcpPtm" resolve="whitnessTableModel" />
                 </node>
@@ -1519,7 +1519,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="2k2dPZH5TFm" role="37vLTJ">
-              <ref role="3cqZAo" to="vbi4:JsaLOcpHxc" resolve="whitnessTable" />
+              <ref role="3cqZAo" to="vxn5:JsaLOcpHxc" resolve="whitnessTable" />
             </node>
           </node>
         </node>
@@ -1571,7 +1571,7 @@
     <property role="3GE5qa" value="" />
     <node concept="3Tm1VV" id="31nZcrlJSx0" role="1B3o_S" />
     <node concept="3uibUv" id="1EZfgaQnOvF" role="1zkMxy">
-      <ref role="3uigEE" to="vbi4:31nZcrlJSwS" resolve="WhitnessTableModelBase" />
+      <ref role="3uigEE" to="vxn5:31nZcrlJSwS" resolve="WhitnessTableModelBase" />
       <node concept="3uibUv" id="1ZsZb$iTmun" role="11_B2D">
         <ref role="3uigEE" to="4c75:1ZsZb$iTdy_" resolve="INuSMVWitnessEntry" />
       </node>
@@ -1639,7 +1639,7 @@
             <node concept="3cpWs6" id="2lN4cj_RDcK" role="3cqZAp">
               <node concept="2OqwBi" id="2lN4cj_ROCH" role="3cqZAk">
                 <node concept="1rXfSq" id="2lN4cj_RMNE" role="2Oq$k0">
-                  <ref role="37wK5l" to="vbi4:WwTuEsr05r" resolve="getNodeAt" />
+                  <ref role="37wK5l" to="vxn5:WwTuEsr05r" resolve="getNodeAt" />
                   <node concept="37vLTw" id="2lN4cj_RObv" role="37wK5m">
                     <ref role="3cqZAo" node="31nZcrlJSxl" resolve="rowIndex" />
                   </node>
@@ -1662,7 +1662,7 @@
         <node concept="3cpWs6" id="2lN4cj_RPNx" role="3cqZAp">
           <node concept="2OqwBi" id="2lN4cj_RPNy" role="3cqZAk">
             <node concept="1rXfSq" id="2lN4cj_RPNz" role="2Oq$k0">
-              <ref role="37wK5l" to="vbi4:WwTuEsr05r" resolve="getNodeAt" />
+              <ref role="37wK5l" to="vxn5:WwTuEsr05r" resolve="getNodeAt" />
               <node concept="37vLTw" id="2lN4cj_RPN$" role="37wK5m">
                 <ref role="3cqZAo" node="31nZcrlJSxl" resolve="rowIndex" />
               </node>
@@ -1690,10 +1690,10 @@
         <node concept="3clFbF" id="2lN4cj_RUz$" role="3cqZAp">
           <node concept="37vLTI" id="2lN4cj_RVwZ" role="3clFbG">
             <node concept="37vLTw" id="2lN4cj_RW8K" role="37vLTx">
-              <ref role="3cqZAo" to="vbi4:5Ac5QKE1GFn" resolve="allWhitnessEntries" />
+              <ref role="3cqZAo" to="vxn5:5Ac5QKE1GFn" resolve="allWhitnessEntries" />
             </node>
             <node concept="37vLTw" id="2lN4cj_RUzz" role="37vLTJ">
-              <ref role="3cqZAo" to="vbi4:31nZcrlJSwT" resolve="filteredWhitnessEntries" />
+              <ref role="3cqZAo" to="vxn5:31nZcrlJSwT" resolve="filteredWhitnessEntries" />
             </node>
           </node>
         </node>

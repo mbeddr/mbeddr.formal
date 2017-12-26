@@ -19,29 +19,27 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
-    <import index="qh45" ref="r:f908bdad-115d-4765-b796-2646eba0b9ab(com.mbeddr.analyses.utils.make)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
-    <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
     <import index="878u" ref="r:7f63918f-7729-4e00-be8e-c747863e4766(com.mbeddr.formal.nusmv.pluginSolution.ui)" />
     <import index="jtsr" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.project(MPS.OpenAPI/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="hw40" ref="r:0afb84b9-23b5-436c-af26-53b9b7f39fbc(com.mbeddr.formal.nusmv.editor)" />
     <import index="70es" ref="r:0da43dab-51b4-49c4-9dae-6b508a700deb(com.mbeddr.formal.nusmv.arch.editor)" />
     <import index="r1jp" ref="r:1982e326-4f5d-4777-8712-b7a85c46db6c(com.mbeddr.formal.nusmv.sm.editor)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="g3py" ref="r:05a8bb09-6d40-4741-a42b-3e0bea0a1b95(com.mbeddr.formal.nusmv.plugin)" />
-    <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
-    <import index="npwl" ref="r:ca7aba72-9b45-4105-b4ef-5e520eda75c0(com.mbeddr.analyses.utils.results_model)" />
+    <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
+    <import index="2ocj" ref="r:0af55dc0-14f5-45c8-bf12-3c673ca075ac(com.mbeddr.formal.base.tooling.analyzer)" />
+    <import index="c9r8" ref="r:7a0d71dd-b922-4116-87c2-af6c95c3f7c3(com.mbeddr.formal.base.tooling.results_model)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" implicit="true" />
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" implicit="true" />
+    <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -347,8 +345,8 @@
               <ref role="3uigEE" to="5zyv:~Future" resolve="Future" />
             </node>
             <node concept="2YIFZM" id="4arT0cnzgZW" role="33vP2m">
-              <ref role="37wK5l" to="qh45:4FpLBMtUK3m" resolve="makeProject" />
-              <ref role="1Pybhc" to="qh45:6SYIklyM6Mg" resolve="MakeUtils" />
+              <ref role="1Pybhc" to="fhlc:6SYIklyM6Mg" resolve="MakeUtils" />
+              <ref role="37wK5l" to="fhlc:4FpLBMtUK3m" resolve="makeProject" />
               <node concept="37vLTw" id="7uk5GW4OOM3" role="37wK5m">
                 <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
               </node>
@@ -386,7 +384,7 @@
         <node concept="3cpWs8" id="7mSH3WncNZN" role="3cqZAp">
           <node concept="3cpWsn" id="7mSH3WncNZO" role="3cpWs9">
             <property role="TrG5h" value="toolAdapter" />
-            <node concept="3uibUv" id="7mSH3WncNZK" role="1tU5fm">
+            <node concept="3uibUv" id="1ZsZb$iVKIx" role="1tU5fm">
               <ref role="3uigEE" node="7mSH3Wn3WlO" resolve="NuSMVToolAdapter" />
             </node>
             <node concept="2ShNRf" id="7mSH3WncNZP" role="33vP2m">
@@ -411,7 +409,7 @@
             <node concept="2ShNRf" id="7mSH3WncOOd" role="33vP2m">
               <node concept="1pGfFk" id="7mSH3WncOOe" role="2ShVmc">
                 <ref role="37wK5l" to="4c75:7mSH3Wn4kz0" resolve="NuSMVAnalyzerFactory" />
-                <node concept="37vLTw" id="7mSH3WncOOf" role="37wK5m">
+                <node concept="37vLTw" id="1ZsZb$iVKPU" role="37wK5m">
                   <ref role="3cqZAo" node="7mSH3WncNZO" resolve="toolAdapter" />
                 </node>
                 <node concept="37vLTw" id="7mSH3WncOOg" role="37wK5m">
@@ -429,8 +427,8 @@
         </node>
         <node concept="3clFbF" id="2H5doxugIEf" role="3cqZAp">
           <node concept="2YIFZM" id="2H5doxugIMV" role="3clFbG">
-            <ref role="1Pybhc" to="ood5:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
-            <ref role="37wK5l" to="ood5:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
+            <ref role="1Pybhc" to="2ocj:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
+            <ref role="37wK5l" to="2ocj:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
             <node concept="37vLTw" id="7uk5GW4OOP7" role="37wK5m">
               <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
             </node>
@@ -583,7 +581,7 @@
     <property role="TrG5h" value="NuSMVToolAdapter" />
     <node concept="3Tm1VV" id="7mSH3Wn3WlP" role="1B3o_S" />
     <node concept="3uibUv" id="7mSH3Wn3Wq2" role="EKbjA">
-      <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
+      <ref role="3uigEE" to="2ocj:5A94f9EE$RB" resolve="MPSToolAdapter" />
       <node concept="_YKpA" id="7mSH3Wn4OCY" role="11_B2D">
         <node concept="3uibUv" id="7mSH3Wn4OPx" role="_ZDj9">
           <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
@@ -979,8 +977,8 @@
               <ref role="3uigEE" to="5zyv:~Future" resolve="Future" />
             </node>
             <node concept="2YIFZM" id="1ZsZb$iM_jE" role="33vP2m">
-              <ref role="1Pybhc" to="qh45:6SYIklyM6Mg" resolve="MakeUtils" />
-              <ref role="37wK5l" to="qh45:4FpLBMtUK3m" resolve="makeProject" />
+              <ref role="1Pybhc" to="fhlc:6SYIklyM6Mg" resolve="MakeUtils" />
+              <ref role="37wK5l" to="fhlc:4FpLBMtUK3m" resolve="makeProject" />
               <node concept="37vLTw" id="1ZsZb$iM_jF" role="37wK5m">
                 <ref role="3cqZAo" node="1ZsZb$iM_jp" resolve="mpsProject" />
               </node>
@@ -1061,8 +1059,8 @@
         </node>
         <node concept="3clFbF" id="1ZsZb$iM_ka" role="3cqZAp">
           <node concept="2YIFZM" id="1ZsZb$iM_kb" role="3clFbG">
-            <ref role="1Pybhc" to="ood5:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
-            <ref role="37wK5l" to="ood5:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
+            <ref role="1Pybhc" to="2ocj:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
+            <ref role="37wK5l" to="2ocj:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
             <node concept="37vLTw" id="1ZsZb$iM_kc" role="37wK5m">
               <ref role="3cqZAo" node="1ZsZb$iM_jp" resolve="mpsProject" />
             </node>
@@ -1111,7 +1109,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2UdJgvD7_zK" role="2OqNvi">
-              <ref role="37wK5l" to="vbi4:7F8$WoVE14R" resolve="appendResult" />
+              <ref role="37wK5l" to="vxn5:7F8$WoVE14R" resolve="appendResult" />
               <node concept="37vLTw" id="5pu3t965HTs" role="37wK5m">
                 <ref role="3cqZAo" node="2UdJgvD7_zL" resolve="result" />
               </node>
@@ -1139,7 +1137,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1ZsZb$iU$ln" role="2OqNvi">
-              <ref role="37wK5l" to="vbi4:4_pSipqULFV" resolve="setResults" />
+              <ref role="37wK5l" to="vxn5:4_pSipqULFV" resolve="setResults" />
               <node concept="1eOMI4" id="2_0vIjsd68H" role="37wK5m">
                 <node concept="10QFUN" id="2_0vIjsd68I" role="1eOMHV">
                   <node concept="10QFUN" id="2_0vIjsd68D" role="10QFUP">
@@ -1152,7 +1150,7 @@
                   </node>
                   <node concept="_YKpA" id="2_0vIjsd6f4" role="10QFUM">
                     <node concept="3uibUv" id="2_0vIjsd6DY" role="_ZDj9">
-                      <ref role="3uigEE" to="npwl:TJrbIN7de$" resolve="IAnalysisResult" />
+                      <ref role="3uigEE" to="c9r8:TJrbIN7de$" resolve="IAnalysisResult" />
                     </node>
                   </node>
                 </node>
