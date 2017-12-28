@@ -10,18 +10,18 @@
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
-    <import index="v4mk" ref="4c16cb42-7fa3-47c7-89c7-1c479c287588/java:org.jdesktop.swingx(com.mbeddr.analyses.utils/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
-    <import index="iqf9" ref="4c16cb42-7fa3-47c7-89c7-1c479c287588/java:org.jdesktop.swingx.renderer(com.mbeddr.analyses.utils/)" />
-    <import index="7tm6" ref="4c16cb42-7fa3-47c7-89c7-1c479c287588/java:org.jdesktop.swingx.treetable(com.mbeddr.analyses.utils/)" />
     <import index="c8ee" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.table(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="lg3m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.search(MPS.Platform/)" />
     <import index="rgfa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.tree(JDK/)" />
-    <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c9r8" ref="r:7a0d71dd-b922-4116-87c2-af6c95c3f7c3(com.mbeddr.formal.base.tooling.results_model)" />
+    <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" />
+    <import index="iqf9" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx.renderer(com.mbeddr.formal.base.tooling/)" />
+    <import index="v4mk" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx(com.mbeddr.formal.base.tooling/)" />
+    <import index="7tm6" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx.treetable(com.mbeddr.formal.base.tooling/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -595,15 +595,15 @@
       <property role="TrG5h" value="mySearchPanel" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="3DDJouLGgU5" role="1B3o_S" />
-      <node concept="3uibUv" id="3Hm$$iWjWQw" role="1tU5fm">
-        <ref role="3uigEE" to="uipx:1agNx8KBsHD" resolve="GenericSearchPanel" />
+      <node concept="3uibUv" id="42jqVeFlHvH" role="1tU5fm">
+        <ref role="3uigEE" to="ztk3:1agNx8KBsHD" resolve="GenericSearchPanel" />
       </node>
       <node concept="NWlO9" id="3DDJouLGcnd" role="lGtFl">
         <property role="NWlVz" value="Search panel." />
       </node>
       <node concept="2ShNRf" id="3DDJouLGhj6" role="33vP2m">
         <node concept="HV5vD" id="3DDJouLGiUU" role="2ShVmc">
-          <ref role="HV5vE" to="uipx:1agNx8KBsHD" resolve="GenericSearchPanel" />
+          <ref role="HV5vE" to="ztk3:1agNx8KBsHD" resolve="GenericSearchPanel" />
         </node>
       </node>
     </node>

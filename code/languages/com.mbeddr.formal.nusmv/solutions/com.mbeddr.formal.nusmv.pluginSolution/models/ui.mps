@@ -12,7 +12,6 @@
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
-    <import index="v4mk" ref="4c16cb42-7fa3-47c7-89c7-1c479c287588/java:org.jdesktop.swingx(com.mbeddr.analyses.utils/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
@@ -21,7 +20,8 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
     <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" />
-    <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" implicit="true" />
+    <import index="v4mk" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx(com.mbeddr.formal.base.tooling/)" />
+    <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.analyses.spin.rt.analyzer)" implicit="true" />
   </imports>
@@ -347,7 +347,7 @@
               <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
             </node>
             <node concept="liA8E" id="1agNx8KPzFJ" role="2OqNvi">
-              <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
+              <ref role="37wK5l" to="ztk3:1agNx8KJx1_" resolve="setCurrentTextComponent" />
               <node concept="37vLTw" id="1VTqiUVmIqf" role="37wK5m">
                 <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
               </node>
@@ -391,7 +391,7 @@
                                   <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                 </node>
                                 <node concept="liA8E" id="1agNx8KNirt" role="2OqNvi">
-                                  <ref role="37wK5l" to="uipx:1agNx8KBxaD" resolve="deactivate" />
+                                  <ref role="37wK5l" to="ztk3:1agNx8KBxaD" resolve="deactivate" />
                                 </node>
                               </node>
                             </node>
@@ -416,7 +416,7 @@
                                         <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                       </node>
                                       <node concept="liA8E" id="1agNx8KJWNn" role="2OqNvi">
-                                        <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
+                                        <ref role="37wK5l" to="ztk3:1agNx8KJx1_" resolve="setCurrentTextComponent" />
                                         <node concept="37vLTw" id="1VTqiUVmMrY" role="37wK5m">
                                           <ref role="3cqZAo" node="6izRX53q3SS" resolve="stdoutText" />
                                         </node>
@@ -434,7 +434,7 @@
                                         <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                       </node>
                                       <node concept="liA8E" id="1agNx8KJZiz" role="2OqNvi">
-                                        <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
+                                        <ref role="37wK5l" to="ztk3:1agNx8KJx1_" resolve="setCurrentTextComponent" />
                                         <node concept="37vLTw" id="1VTqiUVmP_l" role="37wK5m">
                                           <ref role="3cqZAo" node="4kcU3YrmsGl" resolve="stderrText" />
                                         </node>
@@ -455,7 +455,7 @@
                                         <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
                                       </node>
                                       <node concept="liA8E" id="1agNx8KK0_E" role="2OqNvi">
-                                        <ref role="37wK5l" to="uipx:1agNx8KJx1_" resolve="setCurrentTextComponent" />
+                                        <ref role="37wK5l" to="ztk3:1agNx8KJx1_" resolve="setCurrentTextComponent" />
                                         <node concept="37vLTw" id="1VTqiUVmQ_1" role="37wK5m">
                                           <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
                                         </node>
