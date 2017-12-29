@@ -2,8 +2,6 @@
 # General
 
 
-artifacts/*
-
 *.class
 
 .idea
@@ -27,4 +25,9 @@ jimple_gen
 test_gen
 test_gen.caches
 
-
+# --------------------------------------- 
+# RCP
+artifacts/*
+build/*
+build.xml
+buildDistribution.xml
