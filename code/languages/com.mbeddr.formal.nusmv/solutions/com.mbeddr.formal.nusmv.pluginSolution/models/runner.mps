@@ -1000,7 +1000,7 @@
         <node concept="3clFbF" id="6mm$FLYPy7P" role="3cqZAp">
           <node concept="37vLTI" id="6mm$FLYPy7Q" role="3clFbG">
             <node concept="Xl_RD" id="6mm$FLYPzC7" role="37vLTx">
-              <property role="Xl_RC" value="fata error" />
+              <property role="Xl_RC" value="fatal error" />
             </node>
             <node concept="2OqwBi" id="6mm$FLYPy7S" role="37vLTJ">
               <node concept="Xjq3P" id="6mm$FLYPy7T" role="2Oq$k0" />
