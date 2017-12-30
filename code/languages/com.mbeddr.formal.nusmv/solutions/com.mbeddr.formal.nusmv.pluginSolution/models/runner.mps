@@ -1560,20 +1560,6 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="3clFbS" id="1ZsZb$iMIJL" role="3clF47">
-        <node concept="3clFbF" id="6mm$FLYT50F" role="3cqZAp">
-          <node concept="2OqwBi" id="6mm$FLYT50C" role="3clFbG">
-            <node concept="10M0yZ" id="6mm$FLYT50D" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="6mm$FLYT50E" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="6mm$FLYT5kq" role="37wK5m">
-                <property role="Xl_RC" value="-------------- NuSMVTeAnalyzer - entering doInBackground" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1ZsZb$iMIJM" role="3cqZAp">
           <node concept="37vLTI" id="1ZsZb$iMIJN" role="3clFbG">
             <node concept="3cmrfG" id="1ZsZb$iMIJO" role="37vLTx">

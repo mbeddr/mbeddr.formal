@@ -2,7 +2,6 @@
 <model ref="r:d9e70cd7-5bba-4146-b9d2-6eab353213c5(test.mbeddr.formal.nusmv.tests)">
   <persistence version="9" />
   <languages>
-    <use id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
   <imports />
@@ -238,7 +237,7 @@
       </node>
       <node concept="1J0m7Y" id="3YQnHt48fX" role="1J0m7J">
         <node concept="1yCjRe" id="3YQnHt48gg" role="1J0m7X" />
-        <node concept="1yCjT0" id="3YQnHt48go" role="1J0m7K" />
+        <node concept="1yCjT0" id="6mm$FLYXSrl" role="1J0m7K" />
       </node>
     </node>
   </node>

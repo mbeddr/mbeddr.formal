@@ -128,6 +128,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
@@ -190,7 +191,7 @@
     <property role="TrG5h" value="_010_defines_tests" />
     <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="6mm$FLYRvvo" role="1SL9yI">
-      <property role="TrG5h" value="test1" />
+      <property role="TrG5h" value="test_define_tests_001" />
       <node concept="3cqZAl" id="6mm$FLYRvvp" role="3clF45" />
       <node concept="3clFbS" id="6mm$FLYRvvt" role="3clF47">
         <node concept="3cpWs8" id="6mm$FLYSyMF" role="3cqZAp">
@@ -199,13 +200,13 @@
             <node concept="3uibUv" id="6mm$FLYSyME" role="1tU5fm">
               <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
             </node>
-            <node concept="2YIFZM" id="6mm$FLYSyMH" role="33vP2m">
-              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMV" />
+            <node concept="NRdvd" id="6mm$FLYTOLu" role="33vP2m">
               <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
-              <node concept="Xl_RD" id="6mm$FLYSyMI" role="37wK5m">
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMV" />
+              <node concept="Xl_RD" id="6mm$FLYTOLv" role="37wK5m">
                 <property role="Xl_RC" value="_010_defines_tests" />
               </node>
-              <node concept="Xl_RD" id="6mm$FLYSyMJ" role="37wK5m">
+              <node concept="Xl_RD" id="6mm$FLYTOLw" role="37wK5m">
                 <property role="Xl_RC" value="define_tests_001" />
               </node>
             </node>
@@ -217,6 +218,74 @@
               <ref role="3cqZAo" node="6mm$FLYSyMG" resolve="res" />
             </node>
             <node concept="liA8E" id="6mm$FLYSzbl" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6mm$FLYTOMw" role="1SL9yI">
+      <property role="TrG5h" value="test_define_tests_002" />
+      <node concept="3cqZAl" id="6mm$FLYTOMx" role="3clF45" />
+      <node concept="3clFbS" id="6mm$FLYTOMy" role="3clF47">
+        <node concept="3cpWs8" id="6mm$FLYTOMz" role="3cqZAp">
+          <node concept="3cpWsn" id="6mm$FLYTOM$" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="6mm$FLYTOM_" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="6mm$FLYTOMA" role="33vP2m">
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMV" />
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <node concept="Xl_RD" id="6mm$FLYTOMB" role="37wK5m">
+                <property role="Xl_RC" value="_010_defines_tests" />
+              </node>
+              <node concept="Xl_RD" id="6mm$FLYTOMC" role="37wK5m">
+                <property role="Xl_RC" value="define_tests_002" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="6mm$FLYTOMD" role="3cqZAp">
+          <node concept="2OqwBi" id="6mm$FLYTOME" role="3vwVQn">
+            <node concept="37vLTw" id="6mm$FLYTOMF" role="2Oq$k0">
+              <ref role="3cqZAo" node="6mm$FLYTOM$" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6mm$FLYTOMG" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6mm$FLYTORd" role="1SL9yI">
+      <property role="TrG5h" value="test_define_tests_003" />
+      <node concept="3cqZAl" id="6mm$FLYTORe" role="3clF45" />
+      <node concept="3clFbS" id="6mm$FLYTORf" role="3clF47">
+        <node concept="3cpWs8" id="6mm$FLYTORg" role="3cqZAp">
+          <node concept="3cpWsn" id="6mm$FLYTORh" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="6mm$FLYTORi" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="6mm$FLYTORj" role="33vP2m">
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMV" />
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <node concept="Xl_RD" id="6mm$FLYTORk" role="37wK5m">
+                <property role="Xl_RC" value="_010_defines_tests" />
+              </node>
+              <node concept="Xl_RD" id="6mm$FLYTORl" role="37wK5m">
+                <property role="Xl_RC" value="define_tests_003" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="6mm$FLYTORm" role="3cqZAp">
+          <node concept="2OqwBi" id="6mm$FLYTORn" role="3vwVQn">
+            <node concept="37vLTw" id="6mm$FLYTORo" role="2Oq$k0">
+              <ref role="3cqZAo" node="6mm$FLYTORh" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6mm$FLYTORp" role="2OqNvi">
               <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
             </node>
           </node>
