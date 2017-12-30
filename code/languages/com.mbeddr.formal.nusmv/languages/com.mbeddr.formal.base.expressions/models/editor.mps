@@ -73,6 +73,7 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
@@ -558,6 +559,28 @@
   <node concept="3p36aQ" id="7mSH3WnxOXf">
     <property role="3GE5qa" value="expressions.dot" />
     <ref role="aqKnT" to="ehqg:7mSH3WmWS3c" resolve="GenericDotExpression" />
+  </node>
+  <node concept="24kQdi" id="6mm$FLYVIZK">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
+    <node concept="3EZMnI" id="6mm$FLYVJ0c" role="2wV5jI">
+      <node concept="3F0ifn" id="6mm$FLYVJ0e" role="3EZMnx">
+        <property role="3F0ifm" value="$" />
+        <node concept="VechU" id="6mm$FLYVJ15" role="3F10Kt">
+          <property role="Vb096" value="magenta" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6mm$FLYVJ0C" role="3EZMnx">
+        <ref role="1NtTu8" to="ehqg:6mm$FLYVIZj" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="6mm$FLYVJ0U" role="3EZMnx">
+        <property role="3F0ifm" value="$" />
+        <node concept="VechU" id="6mm$FLYVJ19" role="3F10Kt">
+          <property role="Vb096" value="magenta" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6mm$FLYVJ0f" role="2iSdaV" />
+    </node>
   </node>
 </model>
 
