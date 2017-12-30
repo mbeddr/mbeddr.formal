@@ -6,7 +6,8 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" implicit="true" />
+    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -16,6 +17,14 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -118,6 +127,84 @@
     <node concept="1YaCAy" id="7mSH3WmYF90" role="1YuTPh">
       <property role="TrG5h" value="vd" />
       <ref role="1YaFvo" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6mm$FLYUVOO">
+    <property role="TrG5h" value="typeof_TrueLiteral" />
+    <property role="3GE5qa" value="expressions.literals.boolean" />
+    <node concept="3clFbS" id="6mm$FLYUVOP" role="18ibNy">
+      <node concept="1Z5TYs" id="6mm$FLYUW7L" role="3cqZAp">
+        <node concept="mw_s8" id="6mm$FLYUW8l" role="1ZfhKB">
+          <node concept="2pJPEk" id="6mm$FLYUW8h" role="mwGJk">
+            <node concept="2pJPED" id="6mm$FLYUW8A" role="2pJPEn">
+              <ref role="2pJxaS" to="gioj:6NmtaR1SVkl" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6mm$FLYUW7O" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6mm$FLYUVPg" role="mwGJk">
+            <node concept="1YBJjd" id="6mm$FLYUVR6" role="1Z2MuG">
+              <ref role="1YBMHb" node="6mm$FLYUVOR" resolve="trueLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6mm$FLYUVOR" role="1YuTPh">
+      <property role="TrG5h" value="trueLiteral" />
+      <ref role="1YaFvo" to="gioj:7mSH3Wn6oBL" resolve="TrueLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6mm$FLYUW9V">
+    <property role="TrG5h" value="typeof_NumberLiteral" />
+    <property role="3GE5qa" value="expressions.literals.boolean" />
+    <node concept="3clFbS" id="6mm$FLYUW9W" role="18ibNy">
+      <node concept="1Z5TYs" id="6mm$FLYUWr0" role="3cqZAp">
+        <node concept="mw_s8" id="6mm$FLYUWr$" role="1ZfhKB">
+          <node concept="2pJPEk" id="6mm$FLYUWrw" role="mwGJk">
+            <node concept="2pJPED" id="6mm$FLYUWxV" role="2pJPEn">
+              <ref role="2pJxaS" to="gioj:7mSH3Wn5Ovu" resolve="IntegerType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6mm$FLYUWr3" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6mm$FLYUWan" role="mwGJk">
+            <node concept="1YBJjd" id="6mm$FLYUWcd" role="1Z2MuG">
+              <ref role="1YBMHb" node="6mm$FLYUW9Y" resolve="numberLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6mm$FLYUW9Y" role="1YuTPh">
+      <property role="TrG5h" value="numberLiteral" />
+      <ref role="1YaFvo" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6mm$FLYUWsL">
+    <property role="TrG5h" value="typeof_FalseLiteral" />
+    <property role="3GE5qa" value="expressions.literals.boolean" />
+    <node concept="3clFbS" id="6mm$FLYUWsM" role="18ibNy">
+      <node concept="1Z5TYs" id="6mm$FLYUWsN" role="3cqZAp">
+        <node concept="mw_s8" id="6mm$FLYUWsO" role="1ZfhKB">
+          <node concept="2pJPEk" id="6mm$FLYUWsP" role="mwGJk">
+            <node concept="2pJPED" id="6mm$FLYUWsQ" role="2pJPEn">
+              <ref role="2pJxaS" to="gioj:6NmtaR1SVkl" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6mm$FLYUWsR" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6mm$FLYUWsS" role="mwGJk">
+            <node concept="1YBJjd" id="6mm$FLYUWsT" role="1Z2MuG">
+              <ref role="1YBMHb" node="6mm$FLYUWsU" resolve="falseLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6mm$FLYUWsU" role="1YuTPh">
+      <property role="TrG5h" value="falseLiteral" />
+      <ref role="1YaFvo" to="gioj:7mSH3Wn6oDZ" resolve="FalseLiteral" />
     </node>
   </node>
 </model>
