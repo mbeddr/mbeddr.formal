@@ -6,6 +6,8 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
   </languages>
   <imports>
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
@@ -489,10 +491,16 @@
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
+      <node concept="NWlO9" id="6mm$FLYTze$" role="lGtFl">
+        <property role="NWlVz" value="Runs NuSMV on a given file." />
+      </node>
     </node>
     <node concept="2tJIrI" id="7Rf0$0HRxFR" role="jymVt" />
     <node concept="2tJIrI" id="HmUOIG_52U" role="jymVt" />
     <node concept="3Tm1VV" id="4kcU3YrkdpO" role="1B3o_S" />
+    <node concept="NWlO9" id="6mm$FLYTzde" role="lGtFl">
+      <property role="NWlVz" value="Run NuSMV." />
+    </node>
   </node>
   <node concept="312cEu" id="7mSH3Wn47W5">
     <property role="TrG5h" value="NuSMVAnalyzerFactory" />
@@ -1552,6 +1560,20 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="3clFbS" id="1ZsZb$iMIJL" role="3clF47">
+        <node concept="3clFbF" id="6mm$FLYT50F" role="3cqZAp">
+          <node concept="2OqwBi" id="6mm$FLYT50C" role="3clFbG">
+            <node concept="10M0yZ" id="6mm$FLYT50D" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="6mm$FLYT50E" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6mm$FLYT5kq" role="37wK5m">
+                <property role="Xl_RC" value="-------------- NuSMVTeAnalyzer - entering doInBackground" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1ZsZb$iMIJM" role="3cqZAp">
           <node concept="37vLTI" id="1ZsZb$iMIJN" role="3clFbG">
             <node concept="3cmrfG" id="1ZsZb$iMIJO" role="37vLTx">
