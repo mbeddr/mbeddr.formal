@@ -55,7 +55,7 @@
       </concept>
       <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
-        <child id="7842584090743643493" name="modules" index="2HcuB8" />
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
       <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumMemberRef" flags="ng" index="2HeeqP">
         <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
@@ -174,7 +174,7 @@
   <node concept="1J0nZ8" id="43FRfGK0Tb8">
     <property role="TrG5h" value="_010_defines_tests" />
     <node concept="1J0nI2" id="43FRfGK2qsv" role="1J0nHx">
-      <property role="TrG5h" value="test1" />
+      <property role="TrG5h" value="define_tests_001" />
       <ref role="1J0niy" node="43FRfGK16Ep" resolve="simple_defines" />
       <node concept="1J0m7Y" id="43FRfGK4Ib1" role="1J0m7J">
         <node concept="2IPVmt" id="43FRfGK58gJ" role="1J0m7X">
@@ -207,7 +207,7 @@
     </node>
     <node concept="1s0Jup" id="3YQnHsZaT7" role="1J0nHx" />
     <node concept="1J0nI2" id="3YQnHsZbha" role="1J0nHx">
-      <property role="TrG5h" value="test2" />
+      <property role="TrG5h" value="define_tests_002" />
       <ref role="1J0niy" node="43FRfGK16Ep" resolve="simple_defines" />
       <node concept="1J0m7Y" id="3YQnHsZbhb" role="1J0m7J">
         <node concept="2IPVmt" id="3YQnHsZbhc" role="1J0m7X">
@@ -226,7 +226,7 @@
     </node>
     <node concept="1s0Jup" id="3YQnHsZbgB" role="1J0nHx" />
     <node concept="1J0nI2" id="4NkweGh4ZQp" role="1J0nHx">
-      <property role="TrG5h" value="counter_cell_test1" />
+      <property role="TrG5h" value="define_tests_003" />
       <ref role="1J0niy" node="1IrBcRpgRny" resolve="define_and_assign" />
       <node concept="1J0m7Y" id="4NkweGh4ZQq" role="1J0m7J">
         <node concept="1yCjRe" id="3YQnHt48f9" role="1J0m7X" />
