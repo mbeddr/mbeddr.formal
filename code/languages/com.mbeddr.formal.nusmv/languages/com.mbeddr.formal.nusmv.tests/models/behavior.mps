@@ -10,6 +10,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="w3o4" ref="r:f6eb91ea-a20a-402b-a44f-2cf1ab3951a4(com.mbeddr.formal.nusmv.tests.plugin)" />
+    <import index="p98h" ref="r:c81d99d9-842f-4ea8-b4f3-8f7f171b410f(com.mbeddr.formal.nusmv.pluginSolution.tests)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -245,9 +246,9 @@
           </node>
           <node concept="3clFbS" id="5uW1px6lXjR" role="2LFqv$">
             <node concept="3clFbJ" id="5uW1px6lXoF" role="3cqZAp">
-              <node concept="2YIFZM" id="5uW1px6lXOW" role="3clFbw">
-                <ref role="37wK5l" to="w3o4:3UuTDIOHIhD" resolve="stepIsRed" />
-                <ref role="1Pybhc" to="w3o4:3UuTDIOHgO_" resolve="TestsResultsCache" />
+              <node concept="2YIFZM" id="2xeYpNC7Dzl" role="3clFbw">
+                <ref role="37wK5l" to="p98h:3UuTDIOHIhD" resolve="stepIsRed" />
+                <ref role="1Pybhc" to="p98h:3UuTDIOHgO_" resolve="TestsResultsCache" />
                 <node concept="2GrUjf" id="5uW1px6lXPB" role="37wK5m">
                   <ref role="2Gs0qQ" node="5uW1px6lXjD" resolve="step" />
                 </node>
@@ -277,9 +278,9 @@
               </node>
               <node concept="3eNFk2" id="5uW1px6lYKc" role="3eNLev">
                 <node concept="3fqX7Q" id="5uW1px6lYLt" role="3eO9$A">
-                  <node concept="2YIFZM" id="5uW1px6lYNj" role="3fr31v">
-                    <ref role="37wK5l" to="w3o4:3UuTDIOH$4l" resolve="stepIsGreen" />
-                    <ref role="1Pybhc" to="w3o4:3UuTDIOHgO_" resolve="TestsResultsCache" />
+                  <node concept="2YIFZM" id="2xeYpNC7Dzk" role="3fr31v">
+                    <ref role="37wK5l" to="p98h:3UuTDIOH$4l" resolve="stepIsGreen" />
+                    <ref role="1Pybhc" to="p98h:3UuTDIOHgO_" resolve="TestsResultsCache" />
                     <node concept="2GrUjf" id="5uW1px6lYO4" role="37wK5m">
                       <ref role="2Gs0qQ" node="5uW1px6lXjD" resolve="step" />
                     </node>
