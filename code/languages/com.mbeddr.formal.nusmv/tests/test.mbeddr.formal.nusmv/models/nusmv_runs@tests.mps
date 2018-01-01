@@ -541,5 +541,43 @@
     </node>
     <node concept="3Tm1VV" id="6mm$FLYRuDJ" role="1B3o_S" />
   </node>
+  <node concept="1lH9Xt" id="6mm$FLZ2b9r">
+    <property role="TrG5h" value="_020_assigns_tests" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="6mm$FLZ2b9s" role="1SL9yI">
+      <property role="TrG5h" value="test_assign_tests_001" />
+      <node concept="3cqZAl" id="6mm$FLZ2b9t" role="3clF45" />
+      <node concept="3clFbS" id="6mm$FLZ2b9u" role="3clF47">
+        <node concept="3cpWs8" id="6mm$FLZ2b9v" role="3cqZAp">
+          <node concept="3cpWsn" id="6mm$FLZ2b9w" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="6mm$FLZ2b9x" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="6mm$FLZ2b9y" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMV" />
+              <node concept="Xl_RD" id="6mm$FLZ2b9z" role="37wK5m">
+                <property role="Xl_RC" value="_020_assign_tests" />
+              </node>
+              <node concept="Xl_RD" id="6mm$FLZ2b9$" role="37wK5m">
+                <property role="Xl_RC" value="_020_assign_test1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="6mm$FLZ2b9_" role="3cqZAp">
+          <node concept="2OqwBi" id="6mm$FLZ2b9A" role="3vwVQn">
+            <node concept="37vLTw" id="6mm$FLZ2b9B" role="2Oq$k0">
+              <ref role="3cqZAo" node="6mm$FLZ2b9w" resolve="res" />
+            </node>
+            <node concept="liA8E" id="6mm$FLZ2b9C" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
