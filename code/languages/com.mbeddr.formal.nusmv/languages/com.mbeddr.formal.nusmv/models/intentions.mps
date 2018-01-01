@@ -96,5 +96,41 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="6mm$FLZ1uuL">
+    <property role="3GE5qa" value="expressions.literals" />
+    <property role="TrG5h" value="toggleSignedness" />
+    <ref role="2ZfgGC" to="gioj:6mm$FLYZR9W" resolve="WordConstant" />
+    <node concept="2S6ZIM" id="6mm$FLZ1uuM" role="2ZfVej">
+      <node concept="3clFbS" id="6mm$FLZ1uuN" role="2VODD2">
+        <node concept="3clFbF" id="6mm$FLZ1uuO" role="3cqZAp">
+          <node concept="Xl_RD" id="6mm$FLZ1uuP" role="3clFbG">
+            <property role="Xl_RC" value="Toggle Signed/Unsigned Word" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6mm$FLZ1uuQ" role="2ZfgGD">
+      <node concept="3clFbS" id="6mm$FLZ1uuR" role="2VODD2">
+        <node concept="3clFbF" id="6mm$FLZ1uuS" role="3cqZAp">
+          <node concept="37vLTI" id="6mm$FLZ1uuT" role="3clFbG">
+            <node concept="3fqX7Q" id="6mm$FLZ1uuU" role="37vLTx">
+              <node concept="2OqwBi" id="6mm$FLZ1uuV" role="3fr31v">
+                <node concept="2Sf5sV" id="6mm$FLZ1uuW" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6mm$FLZ1vKE" role="2OqNvi">
+                  <ref role="3TsBF5" to="gioj:6mm$FLYZRH1" resolve="signed" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6mm$FLZ1uuY" role="37vLTJ">
+              <node concept="2Sf5sV" id="6mm$FLZ1uuZ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6mm$FLZ1vxt" role="2OqNvi">
+                <ref role="3TsBF5" to="gioj:6mm$FLYZRH1" resolve="signed" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

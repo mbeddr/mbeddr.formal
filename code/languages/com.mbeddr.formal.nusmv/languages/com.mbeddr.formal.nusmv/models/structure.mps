@@ -862,5 +862,68 @@
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6mm$FLYYmm$">
+    <property role="EcuMT" value="7320199582619100580" />
+    <property role="3GE5qa" value="expressions.conversion" />
+    <property role="TrG5h" value="Word2ConstBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="6mm$FLYYmmU" role="1TKVEi">
+      <property role="IQ2ns" value="7320199582619100602" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constant" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyj" id="6mm$FLYYmmY" role="1TKVEi">
+      <property role="IQ2ns" value="7320199582619100606" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mm$FLYYpoh">
+    <property role="EcuMT" value="7320199582619112977" />
+    <property role="3GE5qa" value="expressions.conversion" />
+    <property role="TrG5h" value="SWConst" />
+    <property role="34LRSv" value="swconst" />
+    <ref role="1TJDcQ" node="6mm$FLYYmm$" resolve="Word2ConstBase" />
+  </node>
+  <node concept="1TIwiD" id="6mm$FLYYpoB">
+    <property role="EcuMT" value="7320199582619112999" />
+    <property role="3GE5qa" value="expressions.conversion" />
+    <property role="TrG5h" value="UWConst" />
+    <property role="34LRSv" value="uwconst" />
+    <ref role="1TJDcQ" node="6mm$FLYYmm$" resolve="Word2ConstBase" />
+  </node>
+  <node concept="1TIwiD" id="6mm$FLYZR9W">
+    <property role="EcuMT" value="7320199582619497084" />
+    <property role="3GE5qa" value="expressions.literals" />
+    <property role="TrG5h" value="WordConstant" />
+    <property role="34LRSv" value="&lt;&lt;word&gt;&gt;" />
+    <property role="R4oN_" value="word constant" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR20s4J" resolve="Literal" />
+    <node concept="1TJgyj" id="6mm$FLYZRIS" role="1TKVEi">
+      <property role="IQ2ns" value="7320199582619499448" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyj" id="6mm$FLYZRIW" role="1TKVEi">
+      <property role="IQ2ns" value="7320199582619499452" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyi" id="6mm$FLYZRH1" role="1TKVEl">
+      <property role="IQ2nx" value="7320199582619499329" />
+      <property role="TrG5h" value="signed" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 
