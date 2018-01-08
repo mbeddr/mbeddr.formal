@@ -13,6 +13,7 @@
     <import index="w3o4" ref="r:f6eb91ea-a20a-402b-a44f-2cf1ab3951a4(com.mbeddr.formal.nusmv.tests.plugin)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="p98h" ref="r:c81d99d9-842f-4ea8-b4f3-8f7f171b410f(com.mbeddr.formal.nusmv.pluginSolution.tests)" />
+    <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -273,6 +274,86 @@
                   <node concept="1pGfFk" id="3YQnHt2Il$" role="2ShVmc">
                     <ref role="37wK5l" to="g3py:5PjCZ8mVMZJ" resolve="NuSMVContext" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2xeYpNCzXYC">
+    <property role="TrG5h" value="performStepUsingNuSMV" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+    <node concept="2S6ZIM" id="2xeYpNCzXYD" role="2ZfVej">
+      <node concept="3clFbS" id="2xeYpNCzXYE" role="2VODD2">
+        <node concept="3clFbF" id="2xeYpNCzXYF" role="3cqZAp">
+          <node concept="Xl_RD" id="2xeYpNCzXYG" role="3clFbG">
+            <property role="Xl_RC" value="NuSMV Simulator: Perform Single Step" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2xeYpNCzXYH" role="2ZfgGD">
+      <node concept="3clFbS" id="2xeYpNCzXYI" role="2VODD2">
+        <node concept="3clFbF" id="2xeYpNCzXYJ" role="3cqZAp">
+          <node concept="2YIFZM" id="2xeYpNCzYQt" role="3clFbG">
+            <ref role="37wK5l" to="4c75:3YQnHsZq3M" resolve="performStep" />
+            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+            <node concept="2Sf5sV" id="2xeYpNCzYQu" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2xeYpNCzYSw">
+    <property role="TrG5h" value="resetStepsUsingNuSMV" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+    <node concept="2S6ZIM" id="2xeYpNCzYSx" role="2ZfVej">
+      <node concept="3clFbS" id="2xeYpNCzYSy" role="2VODD2">
+        <node concept="3clFbF" id="2xeYpNCzYSz" role="3cqZAp">
+          <node concept="Xl_RD" id="2xeYpNCzYS$" role="3clFbG">
+            <property role="Xl_RC" value="NuSMV Simulator: Reset" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2xeYpNCzYS_" role="2ZfgGD">
+      <node concept="3clFbS" id="2xeYpNCzYSA" role="2VODD2">
+        <node concept="3clFbF" id="2xeYpNCzYSB" role="3cqZAp">
+          <node concept="2YIFZM" id="2xeYpNC$0BI" role="3clFbG">
+            <ref role="37wK5l" to="4c75:3YQnHsZl7I" resolve="reset" />
+            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2xeYpNCzYSD" role="3cqZAp">
+          <node concept="2OqwBi" id="2xeYpNCzYSE" role="3clFbG">
+            <node concept="2OqwBi" id="2xeYpNCzYSF" role="2Oq$k0">
+              <node concept="2OqwBi" id="2xeYpNCzYSG" role="2Oq$k0">
+                <node concept="2Sf5sV" id="2xeYpNCzYSH" role="2Oq$k0" />
+                <node concept="I4A8Y" id="2xeYpNCzYSI" role="2OqNvi" />
+              </node>
+              <node concept="1j9C0f" id="2xeYpNCzYSJ" role="2OqNvi">
+                <ref role="1j9C0d" to="b19z:3YQnHt0gBu" resolve="CurrentSimulationValueAnnotation" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="2xeYpNCzYSK" role="2OqNvi">
+              <node concept="1bVj0M" id="2xeYpNCzYSL" role="23t8la">
+                <node concept="3clFbS" id="2xeYpNCzYSM" role="1bW5cS">
+                  <node concept="3clFbF" id="2xeYpNCzYSN" role="3cqZAp">
+                    <node concept="2OqwBi" id="2xeYpNCzYSO" role="3clFbG">
+                      <node concept="37vLTw" id="2xeYpNCzYSP" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2xeYpNCzYSR" resolve="it" />
+                      </node>
+                      <node concept="3YRAZt" id="2xeYpNCzYSQ" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="2xeYpNCzYSR" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="2xeYpNCzYSS" role="1tU5fm" />
                 </node>
               </node>
             </node>
