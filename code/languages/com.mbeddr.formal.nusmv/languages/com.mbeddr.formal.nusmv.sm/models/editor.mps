@@ -57,12 +57,18 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
+        <property id="1221209241505" name="value" index="1lJzqX" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -246,6 +252,12 @@
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
+    </language>
+    <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="4682418030829244851" name="de.itemis.mps.editor.celllayout.structure.StringStyle" flags="lg" index="2TzlJg">
+        <property id="1238091709220" name="value" index="1413C4" />
+      </concept>
+      <concept id="4682418030829299311" name="de.itemis.mps.editor.celllayout.structure.FontFamilyStyle" flags="lg" index="2TzqKc" />
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
       <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
@@ -542,6 +554,15 @@
                     </node>
                     <node concept="3F0A7n" id="1$vmWKMr_CS" role="3EZMnx">
                       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="VechU" id="2xeYpNCnECp" role="3F10Kt">
+                        <property role="Vb096" value="DARK_BLUE" />
+                      </node>
+                      <node concept="Vb9p2" id="2xeYpNCnNxm" role="3F10Kt">
+                        <property role="Vbekb" value="BOLD_ITALIC" />
+                      </node>
+                      <node concept="2TzqKc" id="2xeYpNCnWqD" role="3F10Kt">
+                        <property role="1413C4" value="Arial" />
+                      </node>
                     </node>
                     <node concept="l2Vlx" id="1$vmWKMr_k1" role="2iSdaV" />
                   </node>
@@ -663,6 +684,9 @@
                         <node concept="r$x8Z" id="1$vmWKMs53I" role="3EZMnx" />
                       </node>
                     </node>
+                  </node>
+                  <node concept="VSNWy" id="2xeYpNCnoCX" role="3F10Kt">
+                    <property role="1lJzqX" value="10" />
                   </node>
                 </node>
               </node>

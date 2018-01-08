@@ -194,7 +194,6 @@
   <node concept="1TIwiD" id="36cijvuunqC">
     <property role="EcuMT" value="3570309108902491816" />
     <property role="TrG5h" value="TransitionRef" />
-    <property role="34LRSv" value="transition" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="36cijvuunqD" role="1TKVEi">
       <property role="IQ2ns" value="3570309108902491817" />
