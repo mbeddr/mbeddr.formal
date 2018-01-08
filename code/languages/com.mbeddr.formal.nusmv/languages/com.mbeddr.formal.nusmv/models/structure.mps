@@ -366,7 +366,7 @@
   <node concept="1TIwiD" id="1IrBcRpiVFd">
     <property role="EcuMT" value="1989356068342053581" />
     <property role="TrG5h" value="DefineSection" />
-    <property role="34LRSv" value="DEFINE" />
+    <property role="34LRSv" value="define" />
     <property role="3GE5qa" value="define" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1IrBcRpiVFi" role="1TKVEi">

@@ -209,6 +209,7 @@
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -1042,7 +1043,11 @@
   <node concept="24kQdi" id="1IrBcRpiVFw">
     <property role="3GE5qa" value="define" />
     <ref role="1XX52x" to="gioj:1IrBcRpiVFq" resolve="EmptyDefine" />
-    <node concept="3F0ifn" id="1IrBcRpiVFy" role="2wV5jI" />
+    <node concept="3F0ifn" id="1IrBcRpiVFy" role="2wV5jI">
+      <node concept="VPxyj" id="2xeYpNCm8RI" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
   </node>
   <node concept="3p36aQ" id="1IrBcRpiVG0">
     <property role="3GE5qa" value="define" />
@@ -1121,8 +1126,11 @@
       <node concept="2ElW$n" id="7mSH3WmQ5b$" role="2El2Yn" />
       <node concept="3EZMnI" id="7mSH3WmQ5d5" role="1LiK7o">
         <node concept="l2Vlx" id="7mSH3WmQ5d6" role="2iSdaV" />
-        <node concept="3F0A7n" id="2zzTeYj91yd" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="1kIj98" id="2xeYpNCseyI" role="3EZMnx">
+          <property role="3g2DhO" value="true" />
+          <node concept="3F0A7n" id="2xeYpNCqZE8" role="1kIj9b">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
         </node>
         <node concept="3F0ifn" id="7mSH3WmQ5dI" role="3EZMnx">
           <property role="3F0ifm" value=":=" />
