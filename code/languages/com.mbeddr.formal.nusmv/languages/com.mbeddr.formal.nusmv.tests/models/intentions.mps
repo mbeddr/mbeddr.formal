@@ -283,14 +283,14 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2xeYpNCzXYC">
-    <property role="TrG5h" value="performStepUsingNuSMV" />
+    <property role="TrG5h" value="performForwardStepUsingNuSMV" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
     <node concept="2S6ZIM" id="2xeYpNCzXYD" role="2ZfVej">
       <node concept="3clFbS" id="2xeYpNCzXYE" role="2VODD2">
         <node concept="3clFbF" id="2xeYpNCzXYF" role="3cqZAp">
           <node concept="Xl_RD" id="2xeYpNCzXYG" role="3clFbG">
-            <property role="Xl_RC" value="NuSMV Simulator: Perform Single Step" />
+            <property role="Xl_RC" value="NuSMV Simulator: Perform Forward Step" />
           </node>
         </node>
       </node>
@@ -299,7 +299,7 @@
       <node concept="3clFbS" id="2xeYpNCzXYI" role="2VODD2">
         <node concept="3clFbF" id="2xeYpNCzXYJ" role="3cqZAp">
           <node concept="2YIFZM" id="2xeYpNCzYQt" role="3clFbG">
-            <ref role="37wK5l" to="4c75:3YQnHsZq3M" resolve="performStep" />
+            <ref role="37wK5l" to="4c75:3YQnHsZq3M" resolve="performForwardStep" />
             <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
             <node concept="2Sf5sV" id="2xeYpNCzYQu" role="37wK5m" />
           </node>
@@ -357,6 +357,31 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2mjHtwTov3E">
+    <property role="TrG5h" value="performBackwardStepUsingNuSMV" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+    <node concept="2S6ZIM" id="2mjHtwTov3F" role="2ZfVej">
+      <node concept="3clFbS" id="2mjHtwTov3G" role="2VODD2">
+        <node concept="3clFbF" id="2mjHtwTov3H" role="3cqZAp">
+          <node concept="Xl_RD" id="2mjHtwTov3I" role="3clFbG">
+            <property role="Xl_RC" value="NuSMV Simulator: Perform Backward Step" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2mjHtwTov3J" role="2ZfgGD">
+      <node concept="3clFbS" id="2mjHtwTov3K" role="2VODD2">
+        <node concept="3clFbF" id="2mjHtwTov3L" role="3cqZAp">
+          <node concept="2YIFZM" id="2mjHtwTovVC" role="3clFbG">
+            <ref role="37wK5l" to="4c75:2mjHtwToqFh" resolve="performBackwardStep" />
+            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+            <node concept="2Sf5sV" id="2mjHtwTovVD" role="37wK5m" />
           </node>
         </node>
       </node>
