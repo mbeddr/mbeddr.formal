@@ -81,7 +81,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -599,8 +598,8 @@
       <node concept="2ElW$n" id="1ZsZb$iEb$L" role="2El2Yn" />
       <node concept="3EZMnI" id="6NmtaR1SVda" role="1LiK7o">
         <node concept="1kIj98" id="1ZsZb$iGvp7" role="3EZMnx">
+          <property role="3g2DhO" value="true" />
           <node concept="3F0A7n" id="1ZsZb$iGvpn" role="1kIj9b">
-            <property role="1cu_pB" value="2" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
@@ -1894,6 +1893,61 @@
         <ref role="1NtTu8" to="gioj:6mm$FLYZRIW" resolve="value" />
       </node>
       <node concept="l2Vlx" id="6mm$FLYZRHv" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2mjHtwTraBO">
+    <property role="3GE5qa" value="types" />
+    <ref role="1XX52x" to="gioj:2mjHtwTraxU" resolve="ArrayType" />
+    <node concept="3EZMnI" id="2mjHtwTraHj" role="2wV5jI">
+      <node concept="3F0ifn" id="2mjHtwTraHt" role="3EZMnx">
+        <property role="3F0ifm" value="array" />
+      </node>
+      <node concept="3F1sOY" id="2mjHtwTraHS" role="3EZMnx">
+        <ref role="1NtTu8" to="gioj:2mjHtwTraHA" resolve="low" />
+      </node>
+      <node concept="3F0ifn" id="2mjHtwTraI5" role="3EZMnx">
+        <property role="3F0ifm" value=".." />
+        <node concept="11L4FC" id="2mjHtwTrbyG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2mjHtwTrbyO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2mjHtwTraIm" role="3EZMnx">
+        <ref role="1NtTu8" to="gioj:2mjHtwTraHF" resolve="upper" />
+      </node>
+      <node concept="3F0ifn" id="2mjHtwTraIF" role="3EZMnx">
+        <property role="3F0ifm" value="of" />
+      </node>
+      <node concept="3F1sOY" id="2mjHtwTraJ4" role="3EZMnx">
+        <ref role="1NtTu8" to="gioj:2mjHtwTraBo" resolve="baseType" />
+      </node>
+      <node concept="l2Vlx" id="2mjHtwTraHm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2mjHtwTszoB">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="gioj:2mjHtwTsziH" resolve="ArrayExpression" />
+    <node concept="3EZMnI" id="2mjHtwTszu6" role="2wV5jI">
+      <node concept="3F0ifn" id="2mjHtwTszug" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="2mjHtwTszuP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2mjHtwTszup" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="gioj:2mjHtwTszob" resolve="elements" />
+        <node concept="l2Vlx" id="2mjHtwTszur" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="2mjHtwTszu9" role="2iSdaV" />
+      <node concept="3F0ifn" id="2mjHtwTszuF" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="2mjHtwTszuS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

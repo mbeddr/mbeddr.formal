@@ -1456,5 +1456,74 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="2mjHtwTszvk">
+    <property role="3GE5qa" value="types" />
+    <ref role="WuzLi" to="gioj:2mjHtwTraxU" resolve="ArrayType" />
+    <node concept="11bSqf" id="2mjHtwTszvl" role="11c4hB">
+      <node concept="3clFbS" id="2mjHtwTszvm" role="2VODD2">
+        <node concept="lc7rE" id="2mjHtwTsz_7" role="3cqZAp">
+          <node concept="la8eA" id="2mjHtwTsz_v" role="lcghm">
+            <property role="lacIc" value="array " />
+          </node>
+          <node concept="l9hG8" id="2mjHtwTszBn" role="lcghm">
+            <node concept="2OqwBi" id="2mjHtwTszL8" role="lb14g">
+              <node concept="117lpO" id="2mjHtwTszCj" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2mjHtwTszUt" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:2mjHtwTraHA" resolve="low" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2mjHtwTs$3G" role="lcghm">
+            <property role="lacIc" value=".." />
+          </node>
+          <node concept="l9hG8" id="2mjHtwTs$da" role="lcghm">
+            <node concept="2OqwBi" id="2mjHtwTs$ri" role="lb14g">
+              <node concept="117lpO" id="2mjHtwTs$it" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2mjHtwTs$$B" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:2mjHtwTraHF" resolve="upper" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2mjHtwTs$In" role="lcghm">
+            <property role="lacIc" value=" of " />
+          </node>
+          <node concept="l9hG8" id="2mjHtwTs$Tx" role="lcghm">
+            <node concept="2OqwBi" id="2mjHtwTs_8a" role="lb14g">
+              <node concept="117lpO" id="2mjHtwTs$Zl" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2mjHtwTs_pA" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:2mjHtwTraBo" resolve="baseType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2mjHtwTs_uM">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="WuzLi" to="gioj:2mjHtwTsziH" resolve="ArrayExpression" />
+    <node concept="11bSqf" id="2mjHtwTs_uN" role="11c4hB">
+      <node concept="3clFbS" id="2mjHtwTs_uO" role="2VODD2">
+        <node concept="lc7rE" id="2mjHtwTs_$_" role="3cqZAp">
+          <node concept="la8eA" id="2mjHtwTs_$X" role="lcghm">
+            <property role="lacIc" value="[" />
+          </node>
+          <node concept="l9S2W" id="2mjHtwTs__T" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=", " />
+            <node concept="2OqwBi" id="2mjHtwTs_Ig" role="lbANJ">
+              <node concept="117lpO" id="2mjHtwTs_Al" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2mjHtwTs_PP" role="2OqNvi">
+                <ref role="3TtcxE" to="gioj:2mjHtwTszob" resolve="elements" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2mjHtwTsC5P" role="lcghm">
+            <property role="lacIc" value="]" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

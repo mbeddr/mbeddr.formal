@@ -925,5 +925,48 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2mjHtwTraxU">
+    <property role="EcuMT" value="2707707741260785786" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ArrayType" />
+    <property role="34LRSv" value="array" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="2mjHtwTraHA" role="1TKVEi">
+      <property role="IQ2ns" value="2707707741260786534" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="low" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2mjHtwTraHF" role="1TKVEi">
+      <property role="IQ2ns" value="2707707741260786539" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="upper" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2mjHtwTraBo" role="1TKVEi">
+      <property role="IQ2ns" value="2707707741260786136" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mjHtwTsziH">
+    <property role="EcuMT" value="2707707741261149357" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ArrayExpression" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="array expression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="2mjHtwTszob" role="1TKVEi">
+      <property role="IQ2ns" value="2707707741261149707" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
