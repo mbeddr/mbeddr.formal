@@ -158,7 +158,7 @@
       <node concept="3clFbS" id="1ZsZb$irBUI" role="3clF47">
         <node concept="3clFbF" id="1ZsZb$irC3l" role="3cqZAp">
           <node concept="Xl_RD" id="1ZsZb$irC3n" role="3clFbG">
-            <property role="Xl_RC" value="__state" />
+            <property role="Xl_RC" value="_state_" />
           </node>
         </node>
       </node>
