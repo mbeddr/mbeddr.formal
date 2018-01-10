@@ -676,6 +676,9 @@
     <property role="3GE5qa" value="trans" />
     <property role="TrG5h" value="EmptyTransContent" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2mjHtwT$sUY" role="PzmwI">
+      <ref role="PrY4T" node="7mSH3WnvMF6" resolve="ITransContent" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7mSH3WnvMF6">
     <property role="EcuMT" value="8482728081222478534" />
@@ -966,6 +969,43 @@
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mjHtwTupZz">
+    <property role="EcuMT" value="2707707741261635555" />
+    <property role="TrG5h" value="DocumentationLine" />
+    <property role="34LRSv" value="--" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2mjHtwTuqz_" role="1TKVEl">
+      <property role="IQ2nx" value="2707707741261637861" />
+      <property role="TrG5h" value="documentation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTuqtq" role="PzmwI">
+      <ref role="PrY4T" node="5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTuqt_" role="PzmwI">
+      <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTxAmh" role="PzmwI">
+      <ref role="PrY4T" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTyVgE" role="PzmwI">
+      <ref role="PrY4T" node="1IrBcRpiVFr" resolve="IDefineContent" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTyVh8" role="PzmwI">
+      <ref role="PrY4T" node="7mSH3WnuJCF" resolve="IInitContent" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTyVhG" role="PzmwI">
+      <ref role="PrY4T" node="7mSH3WnvMF6" resolve="ITransContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mjHtwTwhR5">
+    <property role="EcuMT" value="2707707741262126533" />
+    <property role="TrG5h" value="EmptyModuleContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2mjHtwTwhWz" role="PzmwI">
+      <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
     </node>
   </node>
 </model>
