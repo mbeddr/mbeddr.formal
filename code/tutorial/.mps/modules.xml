@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.tutorial/com.mbeddr.formal.nusmv.tutorial.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.users_guide/com.mbeddr.formal.nusmv.users_guide.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
