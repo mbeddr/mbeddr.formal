@@ -830,7 +830,7 @@
       <property role="TrG5h" value="counter" />
       <node concept="2Hfkzq" id="1$vmWKMsXDj" role="2HcbjO">
         <node concept="2aiWHP" id="1$vmWKMsXDr" role="2Hfkx9">
-          <property role="TrG5h" value="__state" />
+          <property role="TrG5h" value="_state_" />
           <node concept="1tT3Dm" id="1$vmWKMsXDs" role="2HdssA">
             <node concept="1tYPd3" id="1$vmWKMsXDt" role="2Hdrtl">
               <property role="TrG5h" value="Init" />
@@ -898,7 +898,7 @@
         </node>
         <node concept="2HfkAV" id="1$vmWKMt0Mo" role="2HfkAP">
           <node concept="2He$iJ" id="1$vmWKMt12D" role="2He$ia">
-            <ref role="2He$iI" node="1$vmWKMsXDr" resolve="__state" />
+            <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
           </node>
           <node concept="2HeeqP" id="1$vmWKMt12Q" role="2He$i0">
             <ref role="2HeeqO" node="1$vmWKMsXDt" resolve="Init" />
@@ -906,13 +906,13 @@
         </node>
         <node concept="1tTNHs" id="1$vmWKMt138" role="2HfkAP">
           <node concept="1tTNRl" id="1$vmWKMt13w" role="2He$ia">
-            <ref role="2He$iI" node="1$vmWKMsXDr" resolve="__state" />
+            <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
           </node>
           <node concept="1tTNP8" id="1$vmWKMt13H" role="2He$i0">
             <node concept="1tTNwp" id="1$vmWKMt13I" role="2H9I2x">
               <property role="TrG5h" value="starting" />
               <node concept="1tTNRl" id="1$vmWKMt13Q" role="3JXa2C">
-                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="__state" />
+                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
               </node>
               <node concept="1tS8IT" id="1$vmWKMt142" role="3JZSx7">
                 <ref role="1tS8HL" node="1$vmWKMsXDt" resolve="Init" />
@@ -942,7 +942,7 @@
                 <ref role="1tS8HL" node="1$vmWKMsXDu" resolve="Counting" />
               </node>
               <node concept="1tTNRl" id="1$vmWKMt15D" role="3JXa2C">
-                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="__state" />
+                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
               </node>
             </node>
             <node concept="1tTNwp" id="1$vmWKMt16B" role="2H9I2x">
@@ -960,7 +960,7 @@
                 <ref role="1tS8HL" node="1$vmWKMsXDt" resolve="Init" />
               </node>
               <node concept="1tTNRl" id="1$vmWKMt17x" role="3JXa2C">
-                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="__state" />
+                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
               </node>
             </node>
           </node>

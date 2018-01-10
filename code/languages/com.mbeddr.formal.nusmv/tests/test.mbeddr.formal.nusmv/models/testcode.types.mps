@@ -7,6 +7,14 @@
   <imports />
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2707707741261149357" name="com.mbeddr.formal.nusmv.structure.ArrayExpression" flags="ng" index="sSo5P">
+        <child id="2707707741261149707" name="elements" index="sSofj" />
+      </concept>
+      <concept id="2707707741260785786" name="com.mbeddr.formal.nusmv.structure.ArrayType" flags="ng" index="sZLQy">
+        <child id="2707707741260786136" name="baseType" index="sZLK0" />
+        <child id="2707707741260786539" name="upper" index="sZLUN" />
+        <child id="2707707741260786534" name="low" index="sZLUY" />
+      </concept>
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
         <child id="7842584090743387019" name="type" index="2HdssA" />
@@ -17,10 +25,13 @@
       </concept>
       <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
-        <child id="7842584090743643493" name="modules" index="2HcuB8" />
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
       <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
         <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
+        <child id="1989356068342053586" name="definitions" index="32O2ov" />
       </concept>
       <concept id="8482728081225176234" name="com.mbeddr.formal.nusmv.structure.WordType" flags="ng" index="1y4e2l">
         <property id="8482728081225176239" name="signed" index="1y4e2g" />
@@ -30,6 +41,9 @@
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
+      </concept>
+      <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
+        <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -88,6 +102,79 @@
             <property role="1y4e2g" value="true" />
             <node concept="2IPVmt" id="7mSH3WnFwqk" role="1y4e2k">
               <property role="2IPVms" value="12" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Hdskp" id="2mjHtwTswqQ" role="2Hfkx9">
+          <property role="TrG5h" value="arr1" />
+          <node concept="sZLQy" id="2mjHtwTsws1" role="2HdssA">
+            <node concept="2IPVmt" id="2mjHtwTsws3" role="sZLUY">
+              <property role="2IPVms" value="1" />
+            </node>
+            <node concept="2IPVmt" id="2mjHtwTsws5" role="sZLUN">
+              <property role="2IPVms" value="23" />
+            </node>
+            <node concept="2Hds6S" id="2mjHtwTswtQ" role="sZLK0" />
+          </node>
+        </node>
+        <node concept="2Hdskp" id="2mjHtwTswv7" role="2Hfkx9">
+          <property role="TrG5h" value="arr2" />
+          <node concept="sZLQy" id="2mjHtwTswxv" role="2HdssA">
+            <node concept="2IPVmt" id="2mjHtwTswxx" role="sZLUY">
+              <property role="2IPVms" value="1" />
+            </node>
+            <node concept="2IPVmt" id="2mjHtwTswxz" role="sZLUN">
+              <property role="2IPVms" value="4" />
+            </node>
+            <node concept="sZLQy" id="2mjHtwTswzg" role="sZLK0">
+              <node concept="2IPVmt" id="2mjHtwTswzi" role="sZLUY">
+                <property role="2IPVms" value="-12" />
+              </node>
+              <node concept="2IPVmt" id="2mjHtwTswzk" role="sZLUN">
+                <property role="2IPVms" value="23" />
+              </node>
+              <node concept="1y4e2l" id="2mjHtwTswBm" role="sZLK0">
+                <node concept="2IPVmt" id="2mjHtwTswBo" role="1y4e2k">
+                  <property role="2IPVms" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="32O2o0" id="2mjHtwTszhs" role="2HcbjO">
+        <node concept="1zoerA" id="2mjHtwTszi$" role="32O2ov">
+          <property role="TrG5h" value="arrayBuilder" />
+          <node concept="sSo5P" id="2mjHtwTu0d4" role="1zoetD">
+            <node concept="2IPVmt" id="2mjHtwTu0dg" role="sSofj">
+              <property role="2IPVms" value="1" />
+            </node>
+            <node concept="2IPVmt" id="2mjHtwTu0dv" role="sSofj">
+              <property role="2IPVms" value="2" />
+            </node>
+            <node concept="2IPVmt" id="2mjHtwTu0dM" role="sSofj">
+              <property role="2IPVms" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="1zoerA" id="2mjHtwTu0ec" role="32O2ov">
+          <property role="TrG5h" value="arrayBuilder1" />
+          <node concept="sSo5P" id="2mjHtwTu0ev" role="1zoetD">
+            <node concept="sSo5P" id="2mjHtwTu0eD" role="sSofj">
+              <node concept="2IPVmt" id="2mjHtwTu0eP" role="sSofj">
+                <property role="2IPVms" value="1" />
+              </node>
+              <node concept="2IPVmt" id="2mjHtwTu0f4" role="sSofj">
+                <property role="2IPVms" value="2" />
+              </node>
+            </node>
+            <node concept="sSo5P" id="2mjHtwTu0fn" role="sSofj">
+              <node concept="2IPVmt" id="2mjHtwTu0fD" role="sSofj">
+                <property role="2IPVms" value="3" />
+              </node>
+              <node concept="2IPVmt" id="2mjHtwTu0fP" role="sSofj">
+                <property role="2IPVms" value="4" />
+              </node>
             </node>
           </node>
         </node>

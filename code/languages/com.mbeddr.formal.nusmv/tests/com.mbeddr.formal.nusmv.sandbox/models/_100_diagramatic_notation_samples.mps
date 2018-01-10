@@ -52,7 +52,7 @@
       </concept>
       <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
-        <child id="7842584090743643493" name="modules" index="2HcuB8" />
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
       <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumMemberRef" flags="ng" index="2HeeqP">
         <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
@@ -4774,7 +4774,7 @@
       <property role="TrG5h" value="counter" />
       <node concept="2Hfkzq" id="4NkweGh6k2R" role="2HcbjO">
         <node concept="2aiWHP" id="4NkweGhexnU" role="2Hfkx9">
-          <property role="TrG5h" value="__state" />
+          <property role="TrG5h" value="_state_" />
           <node concept="1tT3Dm" id="4NkweGhexnV" role="2HdssA">
             <node concept="1tYPd3" id="4NkweGhexnW" role="2Hdrtl">
               <property role="TrG5h" value="s1" />
@@ -4795,7 +4795,7 @@
       <node concept="2aiEES" id="4NkweGh8PkD" role="2HcbjO">
         <node concept="2HfkAV" id="4NkweGhcVE1" role="2HfkAP">
           <node concept="2He$iJ" id="4NkweGhexpJ" role="2He$ia">
-            <ref role="2He$iI" node="4NkweGhexnU" resolve="__state" />
+            <ref role="2He$iI" node="4NkweGhexnU" resolve="_state_" />
           </node>
           <node concept="2HeeqP" id="4NkweGhcVEF" role="2He$i0">
             <ref role="2HeeqO" node="4NkweGhexnW" resolve="s1" />
@@ -4803,7 +4803,7 @@
         </node>
         <node concept="1tTNHs" id="4NkweGhd9uJ" role="2HfkAP">
           <node concept="2He$iJ" id="4NkweGhexqQ" role="2He$ia">
-            <ref role="2He$iI" node="4NkweGhexnU" resolve="__state" />
+            <ref role="2He$iI" node="4NkweGhexnU" resolve="_state_" />
           </node>
           <node concept="1tTNP8" id="4NkweGhd9vU" role="2He$i0">
             <node concept="1tTNwp" id="2wmv3YIQ5qD" role="2H9I2x">
@@ -4816,7 +4816,7 @@
                 <ref role="1tS8HL" node="4NkweGhexnX" resolve="s2" />
               </node>
               <node concept="1tTNRl" id="2wmv3YIQ5r1" role="3JXa2C">
-                <ref role="2He$iI" node="4NkweGhexnU" resolve="__state" />
+                <ref role="2He$iI" node="4NkweGhexnU" resolve="_state_" />
               </node>
             </node>
             <node concept="1tTNwp" id="2wmv3YIPYPU" role="2H9I2x">
@@ -4826,7 +4826,7 @@
               </node>
               <node concept="1yCjRe" id="2wmv3YIPYQH" role="2H9I4J" />
               <node concept="1tTNRl" id="2wmv3YIPYQg" role="3JXa2C">
-                <ref role="2He$iI" node="4NkweGhexnU" resolve="__state" />
+                <ref role="2He$iI" node="4NkweGhexnU" resolve="_state_" />
               </node>
               <node concept="1tS8IT" id="2wmv3YIQeL3" role="2H9I4_">
                 <ref role="1tS8HL" node="4NkweGhexCM" resolve="s3" />
