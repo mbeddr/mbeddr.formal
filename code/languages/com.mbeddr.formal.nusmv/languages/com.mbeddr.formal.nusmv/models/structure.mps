@@ -166,7 +166,7 @@
     <property role="EcuMT" value="7842584090743880820" />
     <property role="TrG5h" value="AssignmentsSection" />
     <property role="3GE5qa" value="assign" />
-    <property role="34LRSv" value="ASSIGN" />
+    <property role="34LRSv" value="assign" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6NmtaR1UNOe" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
@@ -187,7 +187,7 @@
     <property role="EcuMT" value="7842584090743880823" />
     <property role="3GE5qa" value="vars" />
     <property role="TrG5h" value="VariablesSection" />
-    <property role="34LRSv" value="VAR" />
+    <property role="34LRSv" value="var" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6NmtaR1UNN$" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743880932" />
@@ -471,7 +471,7 @@
   <node concept="1TIwiD" id="7mSH3Wn9yWs">
     <property role="EcuMT" value="8482728081216646940" />
     <property role="TrG5h" value="SpecSection" />
-    <property role="34LRSv" value="SPEC" />
+    <property role="34LRSv" value="spec" />
     <property role="3GE5qa" value="spec" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mSH3Wn9yWw" role="1TKVEi">
@@ -537,7 +537,7 @@
   <node concept="1TIwiD" id="7mSH3Wnduvu">
     <property role="EcuMT" value="8482728081217677278" />
     <property role="TrG5h" value="FairnessSection" />
-    <property role="34LRSv" value="FAIRNESS" />
+    <property role="34LRSv" value="fairness" />
     <property role="3GE5qa" value="fairness" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mSH3Wnduvy" role="1TKVEi">
@@ -597,6 +597,7 @@
     <property role="EcuMT" value="8482728081222203940" />
     <property role="TrG5h" value="InitSection" />
     <property role="3GE5qa" value="init" />
+    <property role="34LRSv" value="init" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7mSH3WnuJC_" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
@@ -657,7 +658,7 @@
   <node concept="1TIwiD" id="7mSH3WnvMF1">
     <property role="EcuMT" value="8482728081222478529" />
     <property role="TrG5h" value="TransSection" />
-    <property role="34LRSv" value="TRANS" />
+    <property role="34LRSv" value="trans" />
     <property role="3GE5qa" value="trans" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mSH3WnvMF7" role="1TKVEi">

@@ -94,7 +94,7 @@
       <node concept="3clFbS" id="3UuTDIOIqLm" role="2VODD2">
         <node concept="3clFbF" id="3UuTDIOIqUS" role="3cqZAp">
           <node concept="Xl_RD" id="3UuTDIOIqUR" role="3clFbG">
-            <property role="Xl_RC" value="Tests: Clear Cache" />
+            <property role="Xl_RC" value="Tests: Clear Cached Results" />
           </node>
         </node>
       </node>

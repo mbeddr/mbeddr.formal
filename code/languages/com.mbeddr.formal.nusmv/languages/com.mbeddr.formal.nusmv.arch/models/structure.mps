@@ -28,7 +28,7 @@
   <node concept="1TIwiD" id="3ZkhnXRcJqG">
     <property role="EcuMT" value="4599377533215110828" />
     <property role="TrG5h" value="ModulesWiringSection" />
-    <property role="34LRSv" value="WIRING" />
+    <property role="34LRSv" value="wiring" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1UNLR" resolve="VariablesSection" />
   </node>
   <node concept="1TIwiD" id="43FRfGJQZfY">

@@ -43,7 +43,7 @@
   <node concept="1TIwiD" id="3UuTDIOP4Kz">
     <property role="EcuMT" value="4512297433099947043" />
     <property role="TrG5h" value="StateMachineSection" />
-    <property role="34LRSv" value="STATE-MACHINE" />
+    <property role="34LRSv" value="state-machine" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1UNLO" resolve="AssignmentsSection" />
   </node>
   <node concept="1TIwiD" id="3UuTDIOPiRI">
