@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="m6f0" ref="r:0eb0cd32-f456-4fb2-b2bf-88e1b019b19d(_010_nusmv_base)" />
+    <import index="qmbe" ref="r:dc2f2276-db8a-4c75-a8c5-c04c514cae35(_020_nusmv_unit_tests)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -35,6 +36,7 @@
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
+        <reference id="2587259889032869885" name="originalNode" index="1wz7Nk" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
         <child id="8624890525767908695" name="sizeSpec" index="3SHJ_F" />
@@ -103,7 +105,7 @@
   </registry>
   <node concept="1_1swa" id="2mjHtwTu97P">
     <property role="yApLE" value="1" />
-    <property role="TrG5h" value="Overview" />
+    <property role="TrG5h" value="_000_overview" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="2mjHtwTu9dj" role="1_0VJ0">
       <property role="TrG5h" value="Overview" />
@@ -212,7 +214,7 @@
               <node concept="1jUjqm" id="2mjHtwTu9uR" role="19SJt6">
                 <node concept="19SGf9" id="2mjHtwTu9uS" role="$DsGW">
                   <node concept="19SUe$" id="2mjHtwTu9uT" role="19SJt6">
-                    <property role="19SUeA" value="com.mbeddr.formal.nusmv.tabural" />
+                    <property role="19SUeA" value="com.mbeddr.formal.nusmv.tabular" />
                   </node>
                 </node>
               </node>
@@ -225,196 +227,6 @@
       </node>
       <node concept="1_1sxE" id="2mjHtwTu9lT" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="1_0VNX" id="2mjHtwTu9xR" role="1_0VJ0">
-        <property role="TrG5h" value="nusmv_base" />
-        <property role="1_0VJr" value="NuSMV Base Language" />
-        <node concept="1_0LV8" id="2mjHtwTu9$E" role="1_0VJ0">
-          <node concept="19SGf9" id="2mjHtwTu9$F" role="1_0LWR">
-            <node concept="19SUe$" id="2mjHtwTu9$G" role="19SJt6">
-              <property role="19SUeA" value="This language implements (an ever growing subset of) the NuSMV language specification. Each NuSMV specification resides in an " />
-            </node>
-            <node concept="1jUjqm" id="2mjHtwTu9_4" role="19SJt6">
-              <node concept="19SGf9" id="2mjHtwTu9_5" role="$DsGW">
-                <node concept="19SUe$" id="2mjHtwTu9_6" role="19SJt6">
-                  <property role="19SUeA" value="system" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2mjHtwTu9_7" role="19SJt6">
-              <property role="19SUeA" value=" root node. In the figure below is an example of a " />
-            </node>
-            <node concept="1jUjqm" id="2mjHtwTuaeV" role="19SJt6">
-              <node concept="19SGf9" id="2mjHtwTuaeW" role="$DsGW">
-                <node concept="19SUe$" id="2mjHtwTuaeX" role="19SJt6">
-                  <property role="19SUeA" value="system" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2mjHtwTuaeY" role="19SJt6">
-              <property role="19SUeA" value=" containing two modules. From each " />
-            </node>
-            <node concept="1jUjqm" id="2mjHtwTuaes" role="19SJt6">
-              <node concept="19SGf9" id="2mjHtwTuaet" role="$DsGW">
-                <node concept="19SUe$" id="2mjHtwTuaeu" role="19SJt6">
-                  <property role="19SUeA" value="system" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2mjHtwTuaev" role="19SJt6">
-              <property role="19SUeA" value=" we generate a '.smv' file which will be subsequently used as input to NuSMV.&#10;" />
-            </node>
-          </node>
-        </node>
-        <node concept="3z_lpU" id="2mjHtwTuado" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="2mjHtwTuadp" role="3z_lpI">
-            <node concept="2NCMab" id="2mjHtwTuadQ" role="2NCMaf">
-              <ref role="2NCMaa" to="m6f0:1IrBcRpgRnx" resolve="_010_binary_counter" />
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="2mjHtwTuadU" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="1_0VNX" id="2mjHtwTuagz" role="1_0VJ0">
-          <property role="TrG5h" value="nusmv_base_differences" />
-          <property role="1_0VJr" value="Differences w.r.t. NuSMV Language Specification" />
-          <node concept="1_0LV8" id="2mjHtwTuahG" role="1_0VJ0">
-            <node concept="19SGf9" id="2mjHtwTuahH" role="1_0LWR">
-              <node concept="19SUe$" id="2mjHtwTuahI" role="19SJt6">
-                <property role="19SUeA" value="We tried to keep the differences as small as possible such that the semantics gets preserved. There are however a handful of differences as explained below:" />
-              </node>
-            </node>
-          </node>
-          <node concept="3X6WG5" id="2mjHtwTuaic" role="1_0VJ0">
-            <node concept="3X6T9g" id="2mjHtwTuaid" role="3Xp5NH">
-              <node concept="OjmMv" id="2mjHtwTuaie" role="3X6T9h">
-                <node concept="19SGf9" id="2mjHtwTuaif" role="OjmMu">
-                  <node concept="19SUe$" id="2mjHtwTuaig" role="19SJt6">
-                    <property role="19SUeA" value="when a verification is performed, the NuSMV tool takes a single file as input. The entire system then must be contained in a single file. " />
-                  </node>
-                  <node concept="1jUjqm" id="2mjHtwTuaiH" role="19SJt6">
-                    <node concept="19SGf9" id="2mjHtwTuaiI" role="$DsGW">
-                      <node concept="19SUe$" id="2mjHtwTuaiJ" role="19SJt6">
-                        <property role="19SUeA" value="mbeddr.nusmv" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="19SUe$" id="2mjHtwTuaiK" role="19SJt6">
-                    <property role="19SUeA" value=" overcomes this limitation and allows the definition of modules in different " />
-                  </node>
-                  <node concept="1jUjqm" id="2mjHtwTuaj0" role="19SJt6">
-                    <node concept="19SGf9" id="2mjHtwTuaj1" role="$DsGW">
-                      <node concept="19SUe$" id="2mjHtwTuaj2" role="19SJt6">
-                        <property role="19SUeA" value="system" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="19SUe$" id="2mjHtwTuaj3" role="19SJt6">
-                    <property role="19SUeA" value=" nodes. During code generation, we take care that only one file is generated and this file is self-contained (all modules needed will be copied there). " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_1sxE" id="2mjHtwTu9vb" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="1_0VNX" id="2mjHtwTu9lm" role="1_0VJ0">
-        <property role="TrG5h" value="nusmv_test" />
-        <property role="1_0VJr" value="Unit-testing of modules" />
-        <node concept="1_0LV8" id="2mjHtwT_Mxs" role="1_0VJ0">
-          <node concept="19SGf9" id="2mjHtwT_Mxt" role="1_0LWR">
-            <node concept="19SUe$" id="2mjHtwT_Mxu" role="19SJt6">
-              <property role="19SUeA" value="Once a module is defined, we allow writing of unit-tests. The unit-tests language considers the inputs of the module to be the parameters and the outputs the definitions. From each test-case we generate a '.smv' file and the tests are run by calling NuSMV on the generated file.&#10;&#10;Test cases are organized in " />
-            </node>
-            <node concept="1jUjqm" id="2mjHtwT_Nz7" role="19SJt6">
-              <node concept="19SGf9" id="2mjHtwT_Nz8" role="$DsGW">
-                <node concept="19SUe$" id="2mjHtwT_Nz9" role="19SJt6">
-                  <property role="19SUeA" value="test collections" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2mjHtwT_Nza" role="19SJt6">
-              <property role="19SUeA" value=". For executing a test-case, please right-click on a " />
-            </node>
-            <node concept="1jUjqm" id="2mjHtwT_OLS" role="19SJt6">
-              <node concept="19SGf9" id="2mjHtwT_OLT" role="$DsGW">
-                <node concept="19SUe$" id="2mjHtwT_OLU" role="19SJt6">
-                  <property role="19SUeA" value="test case" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2mjHtwT_OLV" role="19SJt6">
-              <property role="19SUeA" value=" node and call " />
-            </node>
-            <node concept="28N2ik" id="2mjHtwT_OMn" role="19SJt6">
-              <node concept="19SGf9" id="2mjHtwT_OMo" role="$DsGW">
-                <node concept="19SUe$" id="2mjHtwT_OMp" role="19SJt6">
-                  <property role="19SUeA" value="Run NuSMV on Test-Case" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2mjHtwT_OMq" role="19SJt6">
-              <property role="19SUeA" value=". We allow also running all tests defined in a collection (see figure below) or all test collections defined in a model." />
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="2mjHtwT_OzB" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="2SaynC" id="2mjHtwT_OPD" role="1_0VJ0">
-          <property role="TrG5h" value="nusmv_tests_execution" />
-          <property role="2Sbq$t" value="true" />
-          <node concept="2Sb_l4" id="2mjHtwT_OPE" role="2SbwM5">
-            <property role="2Sb_kV" value="nusmv_tests_execution.png" />
-            <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
-          </node>
-          <node concept="OjmMv" id="2mjHtwT_OPF" role="2SaI5j">
-            <node concept="19SGf9" id="2mjHtwT_OPG" role="OjmMu">
-              <node concept="19SUe$" id="2mjHtwT_OPH" role="19SJt6">
-                <property role="19SUeA" value="The execution of tests happens by calling NuSMV on the generated files corresponding to each test-case." />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="2mjHtwT_OPI" role="3SHJ_F" />
-        </node>
-        <node concept="1_0LV8" id="2mjHtwT_OKV" role="1_0VJ0">
-          <node concept="19SGf9" id="2mjHtwT_OKW" role="1_0LWR">
-            <node concept="19SUe$" id="2mjHtwT_OKX" role="19SJt6">
-              <property role="19SUeA" value="Each test-case references the module which it tests. Inputs are the parameters of the module, outputs are the definitions. Each test-case contains a set of test steps - in the figure below is an example of a failed test case (i.e. test3) due to the fact that the expected value of the third step is different from the current value." />
-            </node>
-          </node>
-        </node>
-        <node concept="2SaynC" id="2mjHtwT_NtV" role="1_0VJ0">
-          <property role="2Sbq$t" value="true" />
-          <property role="TrG5h" value="nusmv_tests_overview" />
-          <node concept="2Sb_l4" id="2mjHtwT_Nz2" role="2SbwM5">
-            <property role="2Sb_kV" value="nusmv_tests_overview.png" />
-            <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
-          </node>
-          <node concept="OjmMv" id="2mjHtwT_NtZ" role="2SaI5j">
-            <node concept="19SGf9" id="2mjHtwT_Nu0" role="OjmMu">
-              <node concept="19SUe$" id="2mjHtwT_Nu1" role="19SJt6">
-                <property role="19SUeA" value="The system under test is a NuSMV module (left); a test collection with a set of test-cases (center); the results of running the tests (right). " />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="2mjHtwT_Nu3" role="3SHJ_F" />
-        </node>
-        <node concept="1_1sxE" id="2mjHtwT_O$0" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-      </node>
-      <node concept="1_1sxE" id="2mjHtwT_NkE" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="1_0VNX" id="2mjHtwTu9jF" role="1_0VJ0">
-        <property role="TrG5h" value="nusmv_arch" />
-        <property role="1_0VJr" value="Describing the architecture" />
       </node>
     </node>
   </node>
@@ -435,6 +247,438 @@
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="figures" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="2mjHtwTDz15">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_020_unit_testing" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1mvXsy" id="2mjHtwTD$5A" role="1_0VJ0">
+      <property role="TrG5h" value="unit_testing" />
+      <property role="1_0VJr" value="Unit-testing of modules" />
+      <node concept="1_0LV8" id="2mjHtwTDzTC" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDzTD" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDzTE" role="19SJt6">
+            <property role="19SUeA" value="Once a module is defined, we allow writing of unit-tests. The unit-tests language considers the inputs of the module to be the parameters and the outputs the definitions. From each test-case we generate a '.smv' file and the tests are run by calling NuSMV on the generated file.&#10;&#10;Test cases are organized in " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDzTF" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDzTG" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDzTH" role="19SJt6">
+                <property role="19SUeA" value="test collections" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDzTI" role="19SJt6">
+            <property role="19SUeA" value=". For executing a test-case, please right-click on a " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDzTJ" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDzTK" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDzTL" role="19SJt6">
+                <property role="19SUeA" value="test case" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDzTM" role="19SJt6">
+            <property role="19SUeA" value=" node and call " />
+          </node>
+          <node concept="28N2ik" id="2mjHtwTDzTN" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDzTO" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDzTP" role="19SJt6">
+                <property role="19SUeA" value="Run NuSMV on Test-Case" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDzTQ" role="19SJt6">
+            <property role="19SUeA" value=". We allow also running all tests defined in a collection (see figure below) or all test collections defined in a model." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTDzTR" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="2SaynC" id="2mjHtwTDzTS" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_tests_execution" />
+        <property role="2Sbq$t" value="true" />
+        <ref role="1wz7Nk" to="qmbe:2mjHtwTuaJy" resolve="_010_binary_counter_tests" />
+        <node concept="2Sb_l4" id="2mjHtwTDzTT" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_tests_execution.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTDzTU" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTDzTV" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTDzTW" role="19SJt6">
+              <property role="19SUeA" value="The execution of tests happens by calling NuSMV on the generated files corresponding to each test-case." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTDzTX" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTDzTY" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDzTZ" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDzU0" role="19SJt6">
+            <property role="19SUeA" value="Each test-case references the module which it tests. Inputs are the parameters of the module, outputs are the definitions. Each test-case contains a set of test steps - in the figure below is an example of a failed test case (i.e. test3) due to the fact that the expected value of the third step is different from the current value." />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="2mjHtwTDzU1" role="1_0VJ0">
+        <property role="2Sbq$t" value="true" />
+        <property role="TrG5h" value="nusmv_tests_overview" />
+        <ref role="1wz7Nk" to="qmbe:2mjHtwTuaJy" resolve="_010_binary_counter_tests" />
+        <node concept="2Sb_l4" id="2mjHtwTDzU2" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_tests_overview.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTDzU3" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTDzU4" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTDzU5" role="19SJt6">
+              <property role="19SUeA" value="The system under test is a NuSMV module (left); a test collection with a set of test-cases (center); the results of running the tests (right). " />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTDzU6" role="3SHJ_F" />
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTDzU7" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+    </node>
+    <node concept="1_1sxE" id="2mjHtwTDzU8" role="1_0VJ0">
+      <property role="TrG5h" value="empty_-1" />
+    </node>
+  </node>
+  <node concept="1_1swa" id="2mjHtwTDzN4">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_010_nusmv_base_language" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1mvXsy" id="2mjHtwTD$aE" role="1_0VJ0">
+      <property role="TrG5h" value="base_language" />
+      <property role="1_0VJr" value="NuSMV Base Language" />
+      <node concept="1_0LV8" id="2mjHtwTDzN6" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDzN7" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDzN8" role="19SJt6">
+            <property role="19SUeA" value="This language implements (an ever growing subset of) the NuSMV language specification. Each NuSMV specification resides in an " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDzN9" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDzNa" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDzNb" role="19SJt6">
+                <property role="19SUeA" value="system" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDzNc" role="19SJt6">
+            <property role="19SUeA" value=" root node. In the figure below is an example of a " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDzNd" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDzNe" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDzNf" role="19SJt6">
+                <property role="19SUeA" value="system" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDzNg" role="19SJt6">
+            <property role="19SUeA" value=" containing two modules. From each " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDzNh" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDzNi" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDzNj" role="19SJt6">
+                <property role="19SUeA" value="system" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDzNk" role="19SJt6">
+            <property role="19SUeA" value=" we generate a '.smv' file which will be subsequently used as input to NuSMV.&#10;" />
+          </node>
+        </node>
+      </node>
+      <node concept="3z_lpU" id="2mjHtwTDzNl" role="1_0VJ0">
+        <property role="3z_lpW" value="mbeddr" />
+        <node concept="2NCZwO" id="2mjHtwTDzNm" role="3z_lpI">
+          <node concept="2NCMab" id="2mjHtwTDzNn" role="2NCMaf">
+            <ref role="2NCMaa" to="m6f0:1IrBcRpgRnx" resolve="_010_binary_counter" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTDzNo" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="2mjHtwTDzNp" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_base_differences" />
+        <property role="1_0VJr" value="Differences w.r.t. NuSMV Language Specification" />
+        <node concept="1_0LV8" id="2mjHtwTDzNq" role="1_0VJ0">
+          <node concept="19SGf9" id="2mjHtwTDzNr" role="1_0LWR">
+            <node concept="19SUe$" id="2mjHtwTDzNs" role="19SJt6">
+              <property role="19SUeA" value="We tried to keep the differences as small as possible such that the semantics gets preserved. There are however a handful of differences as explained below:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3X6WG5" id="2mjHtwTDzNt" role="1_0VJ0">
+          <node concept="3X6T9g" id="2mjHtwTDzNu" role="3Xp5NH">
+            <node concept="OjmMv" id="2mjHtwTDzNv" role="3X6T9h">
+              <node concept="19SGf9" id="2mjHtwTDzNw" role="OjmMu">
+                <node concept="19SUe$" id="2mjHtwTDzNx" role="19SJt6">
+                  <property role="19SUeA" value="when a verification is performed, the NuSMV tool takes a single file as input. The entire system then must be contained in a single file. " />
+                </node>
+                <node concept="1jUjqm" id="2mjHtwTDzNy" role="19SJt6">
+                  <node concept="19SGf9" id="2mjHtwTDzNz" role="$DsGW">
+                    <node concept="19SUe$" id="2mjHtwTDzN$" role="19SJt6">
+                      <property role="19SUeA" value="mbeddr.nusmv" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="2mjHtwTDzN_" role="19SJt6">
+                  <property role="19SUeA" value=" overcomes this limitation and allows the definition of modules in different " />
+                </node>
+                <node concept="1jUjqm" id="2mjHtwTDzNA" role="19SJt6">
+                  <node concept="19SGf9" id="2mjHtwTDzNB" role="$DsGW">
+                    <node concept="19SUe$" id="2mjHtwTDzNC" role="19SJt6">
+                      <property role="19SUeA" value="system" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="2mjHtwTDzND" role="19SJt6">
+                  <property role="19SUeA" value=" nodes. During code generation, we take care that only one file is generated and this file is self-contained (all modules needed will be copied there). " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="2mjHtwTD$1m">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_030_architecture" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0VNX" id="2mjHtwTu9jF" role="1_0VJ0">
+      <property role="TrG5h" value="nusmv_arch" />
+      <property role="1_0VJr" value="Describing the Architecture" />
+      <node concept="1_1sxE" id="2mjHtwTD$jt" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTD$jC" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTD$jD" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTD$jE" role="19SJt6">
+            <property role="19SUeA" value="We created a DSL which restricts the NuSMV base language in order to describe architectures." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTD$jS" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="3X6WG5" id="2mjHtwTD$kr" role="1_0VJ0">
+        <node concept="3X6T9g" id="2mjHtwTD$ks" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTD$kt" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTD$ku" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTD$l2" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTD$kZ" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTD$l0" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTD$l1" role="19SJt6">
+                    <property role="19SUeA" value="components" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTD$l3" role="19SJt6">
+                <property role="19SUeA" value=" are NuSMV variables with modules types" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2mjHtwTD$lj" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTD$lk" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTD$ll" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTD$lY" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTD$lV" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTD$lW" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTD$lX" role="19SJt6">
+                    <property role="19SUeA" value="input ports" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTD$lZ" role="19SJt6">
+                <property role="19SUeA" value=" are parameters of NuSMV modules" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2mjHtwTD$mf" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTD$mg" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTD$mh" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTD$ni" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTD$nf" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTD$ng" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTD$nh" role="19SJt6">
+                    <property role="19SUeA" value="output ports" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTD$nj" role="19SJt6">
+                <property role="19SUeA" value=" are definitions of the module" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2mjHtwTD$nz" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTD$n$" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTD$n_" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTD$oY" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTD$oV" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTD$oW" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTD$oX" role="19SJt6">
+                    <property role="19SUeA" value="channels" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTD$oZ" role="19SJt6">
+                <property role="19SUeA" value=" are actual parameters" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTDAbq" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTDAfN" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDAfO" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDAfP" role="19SJt6">
+            <property role="19SUeA" value="In the figure below we illustrate an architecture in textual projection and the correponding generated code. When an architecture is defined, the " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDAit" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDAiu" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDAiv" role="19SJt6">
+                <property role="19SUeA" value="VAR" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDAiw" role="19SJt6">
+            <property role="19SUeA" value=" section of a module is replaced by a " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDAia" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDAib" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDAic" role="19SJt6">
+                <property role="19SUeA" value="WIRING" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDAid" role="19SJt6">
+            <property role="19SUeA" value=" section. The " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDAjB" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDAjC" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDAjD" role="19SJt6">
+                <property role="19SUeA" value="WIRING" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDAjE" role="19SJt6">
+            <property role="19SUeA" value=" section behaves like a restricted " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDAiW" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDAiX" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDAiY" role="19SJt6">
+                <property role="19SUeA" value="VAR" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDAiZ" role="19SJt6">
+            <property role="19SUeA" value=" - actual parameters can be either constants, parameters of the containing module or definitions contained in peer module instances." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTDA5j" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="2SaynC" id="2mjHtwTDA92" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_arch" />
+        <ref role="1wz7Nk" node="2mjHtwTD$1m" resolve="_030_architecture" />
+        <node concept="2Sb_l4" id="2mjHtwTDAbj" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_arch_textual_notation.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTDA96" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTDA97" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTDA98" role="19SJt6">
+              <property role="19SUeA" value="Architecture description in textual projection (left); corresponding generated code (right)" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTDA9a" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTDAr0" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDAr1" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDAr2" role="19SJt6">
+            <property role="19SUeA" value="Via the " />
+          </node>
+          <node concept="2vpllh" id="2mjHtwTDAuj" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDAuk" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDAul" role="19SJt6">
+                <property role="19SUeA" value="Projection -&gt; Architecture Diagram View" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDAum" role="19SJt6">
+            <property role="19SUeA" value=" menu, one can switch to the diagramatic projection of architectures." />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="2mjHtwTDAy5" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_arch_projection_switch" />
+        <ref role="1wz7Nk" node="2mjHtwTD$1m" resolve="_030_architecture" />
+        <node concept="2Sb_l4" id="2mjHtwTDA_W" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_arch_projection_switch.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTDAy9" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTDAya" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTDAyb" role="19SJt6">
+              <property role="19SUeA" value="One can switch between textual and diagramatic notations by using the " />
+            </node>
+            <node concept="2vpllh" id="2mjHtwTDAA1" role="19SJt6">
+              <node concept="19SGf9" id="2mjHtwTDAA2" role="$DsGW">
+                <node concept="19SUe$" id="2mjHtwTDAA3" role="19SJt6">
+                  <property role="19SUeA" value="Projection" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="2mjHtwTDAA4" role="19SJt6">
+              <property role="19SUeA" value=" menu. This menu will be active only if an editor containing a " />
+            </node>
+            <node concept="1jUjqm" id="2mjHtwTDAAk" role="19SJt6">
+              <node concept="19SGf9" id="2mjHtwTDAAl" role="$DsGW">
+                <node concept="19SUe$" id="2mjHtwTDAAm" role="19SJt6">
+                  <property role="19SUeA" value="WIRING" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="2mjHtwTDAAn" role="19SJt6">
+              <property role="19SUeA" value=" section is focused." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTDAyd" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTDAIV" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDAIW" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDAIX" role="19SJt6">
+            <property role="19SUeA" value="In figure below we illustrate the diagramatic notation for the Sender - Receiver example." />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="2mjHtwTDARp" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_arch_diagramatic_notation" />
+        <ref role="1wz7Nk" node="2mjHtwTD$1m" resolve="_030_architecture" />
+        <node concept="2Sb_l4" id="2mjHtwTDARq" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_arch_diagramatic_notation.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTDARr" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTDARs" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTDARt" role="19SJt6">
+              <property role="19SUeA" value="Example of the diagramatic notation. One can edit the architecture in the diagramatic form by using drag-and-drop." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTDARA" role="3SHJ_F" />
       </node>
     </node>
   </node>
