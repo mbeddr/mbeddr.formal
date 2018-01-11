@@ -137,9 +137,6 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
-      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
-        <child id="1154032183016" name="body" index="2LFqv$" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -319,14 +316,6 @@
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
-      </concept>
-      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
-        <child id="1153944400369" name="variable" index="2Gsz3X" />
-        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
-      </concept>
-      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
-      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
-        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435808" name="initValue" index="HW$Y0" />
@@ -969,64 +958,9 @@
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
     </node>
   </node>
-  <node concept="sE7Ow" id="5uW1px6mShW">
-    <property role="TrG5h" value="RunTests" />
-    <property role="2uzpH1" value="Run Tests" />
-    <node concept="tnohg" id="5uW1px6mShX" role="tncku">
-      <node concept="3clFbS" id="5uW1px6mShY" role="2VODD2">
-        <node concept="2Gpval" id="3YQnHt2HEj" role="3cqZAp">
-          <node concept="2GrKxI" id="3YQnHt2HEl" role="2Gsz3X">
-            <property role="TrG5h" value="testCase" />
-          </node>
-          <node concept="2OqwBi" id="5uW1px6n5Pn" role="2GsD0m">
-            <node concept="2OqwBi" id="5uW1px6n5I7" role="2Oq$k0">
-              <node concept="2WthIp" id="5uW1px6n5Ia" role="2Oq$k0" />
-              <node concept="3gHZIF" id="5uW1px6n5Ic" role="2OqNvi">
-                <ref role="2WH_rO" node="5uW1px6n5Gv" resolve="m" />
-              </node>
-            </node>
-            <node concept="2SmgA7" id="5uW1px6n66X" role="2OqNvi">
-              <node concept="chp4Y" id="5uW1px6n67M" role="1dBWTz">
-                <ref role="cht4Q" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="3YQnHt2HEp" role="2LFqv$">
-            <node concept="3clFbF" id="3YQnHt2Ilv" role="3cqZAp">
-              <node concept="2YIFZM" id="3YQnHt2Ilx" role="3clFbG">
-                <ref role="37wK5l" to="g3py:3xDNhgd54rl" resolve="evaluate" />
-                <ref role="1Pybhc" to="g3py:43FRfGJU_ih" resolve="NuSMVEvaluatorHelper" />
-                <node concept="2GrUjf" id="3YQnHt2Inz" role="37wK5m">
-                  <ref role="2Gs0qQ" node="3YQnHt2HEl" resolve="testCase" />
-                </node>
-                <node concept="2ShNRf" id="3YQnHt2Ilz" role="37wK5m">
-                  <node concept="1pGfFk" id="3YQnHt2Il$" role="2ShVmc">
-                    <ref role="37wK5l" to="g3py:5PjCZ8mVMZJ" resolve="NuSMVContext" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5uW1px6mSiQ" role="3cqZAp" />
-      </node>
-    </node>
-    <node concept="1QGGSu" id="5uW1px6mSiX" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/tests.png" />
-    </node>
-    <node concept="2S4$dB" id="5uW1px6n5Gv" role="1NuT2Z">
-      <property role="TrG5h" value="m" />
-      <node concept="3Tm6S6" id="5uW1px6n5Gw" role="1B3o_S" />
-      <node concept="1oajcY" id="5uW1px6n5Gx" role="1oa70y" />
-      <node concept="H_c77" id="5uW1px6n5AB" role="1tU5fm" />
-    </node>
-  </node>
   <node concept="tC5Ba" id="5uW1px6ni3m">
     <property role="TrG5h" value="TestsGroup" />
     <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
-      <node concept="tCFHf" id="5uW1px6ni3p" role="ftvYc">
-        <ref role="tCJdB" node="5uW1px6mShW" resolve="RunTests" />
-      </node>
       <node concept="tCFHf" id="2xeYpNCdQDD" role="ftvYc">
         <ref role="tCJdB" node="2xeYpNCdzDf" resolve="RunNUSMVOnModel" />
       </node>
