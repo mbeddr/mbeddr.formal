@@ -241,7 +241,7 @@
       <node concept="37vLTG" id="1ZsZb$iJNee" role="3clF46">
         <property role="TrG5h" value="d" />
         <node concept="3Tqbb2" id="1ZsZb$iJNef" role="1tU5fm">
-          <ref role="ehGHo" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
+          <ref role="ehGHo" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
         </node>
       </node>
     </node>

@@ -600,8 +600,8 @@
                         </node>
                         <node concept="2Rf3mk" id="43FRfGK5Hy2" role="2OqNvi">
                           <node concept="1xMEDy" id="43FRfGK5Hy4" role="1xVPHs">
-                            <node concept="chp4Y" id="43FRfGK5I01" role="ri$Ld">
-                              <ref role="cht4Q" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
+                            <node concept="chp4Y" id="2mjHtwTGyvd" role="ri$Ld">
+                              <ref role="cht4Q" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
                             </node>
                           </node>
                         </node>

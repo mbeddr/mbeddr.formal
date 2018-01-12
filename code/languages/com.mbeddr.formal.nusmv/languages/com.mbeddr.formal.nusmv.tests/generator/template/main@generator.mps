@@ -360,8 +360,8 @@
     </node>
     <node concept="2rT7sh" id="1ZsZb$iJHUY" role="2rTMjI">
       <property role="TrG5h" value="output2Definition" />
-      <ref role="2rTdP9" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
       <ref role="2rZz_L" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
+      <ref role="2rTdP9" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
     </node>
     <node concept="3aamgX" id="1ZsZb$iIVrN" role="3acgRq">
       <ref role="30HIoZ" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
@@ -549,8 +549,8 @@
                               </node>
                               <node concept="2Rf3mk" id="1ZsZb$iKQjt" role="2OqNvi">
                                 <node concept="1xMEDy" id="1ZsZb$iKQju" role="1xVPHs">
-                                  <node concept="chp4Y" id="1ZsZb$iKQjv" role="ri$Ld">
-                                    <ref role="cht4Q" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
+                                  <node concept="chp4Y" id="2mjHtwTGIyx" role="ri$Ld">
+                                    <ref role="cht4Q" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
                                   </node>
                                 </node>
                               </node>
@@ -692,8 +692,8 @@
                           </node>
                           <node concept="2Rf3mk" id="6mm$FLYWGrZ" role="2OqNvi">
                             <node concept="1xMEDy" id="6mm$FLYWGs0" role="1xVPHs">
-                              <node concept="chp4Y" id="6mm$FLYWGs1" role="ri$Ld">
-                                <ref role="cht4Q" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
+                              <node concept="chp4Y" id="2mjHtwTGG13" role="ri$Ld">
+                                <ref role="cht4Q" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
                               </node>
                             </node>
                           </node>
