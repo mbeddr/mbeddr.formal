@@ -412,7 +412,7 @@
       <ref role="PrY4T" node="1IrBcRpiVFr" resolve="IDefineContent" />
     </node>
     <node concept="PrWs8" id="2mjHtwTGt9V" role="PzmwI">
-      <ref role="PrY4T" node="2mjHtwTGt9x" resolve="IDefineLike" />
+      <ref role="PrY4T" node="2mjHtwTGt9x" resolve="IDefinitionLike" />
     </node>
     <node concept="PrWs8" id="5_V$TJxBddM" role="PzmwI">
       <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
@@ -464,6 +464,10 @@
       <property role="20kJfa" value="definition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7mSH3WmQ5bp" resolve="Definition" />
+      <ref role="20ksaX" node="2mjHtwTKxtS" resolve="definitionLike" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTKxEv" role="PzmwI">
+      <ref role="PrY4T" node="2mjHtwTKxtR" resolve="IDefinitionLikeRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3Wn5Ovu">
@@ -1017,12 +1021,24 @@
   <node concept="PlHQZ" id="2mjHtwTGt9x">
     <property role="EcuMT" value="2707707741265318497" />
     <property role="3GE5qa" value="define" />
-    <property role="TrG5h" value="IDefineLike" />
+    <property role="TrG5h" value="IDefinitionLike" />
     <node concept="PrWs8" id="2mjHtwTGt9y" role="PrDN$">
       <ref role="PrY4T" node="1IrBcRpiVFr" resolve="IDefineContent" />
     </node>
     <node concept="PrWs8" id="2mjHtwTGt9L" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2mjHtwTKxtR">
+    <property role="EcuMT" value="2707707741266384759" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <property role="TrG5h" value="IDefinitionLikeRef" />
+    <node concept="1TJgyj" id="2mjHtwTKxtS" role="1TKVEi">
+      <property role="IQ2ns" value="2707707741266384760" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definitionLike" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2mjHtwTGt9x" resolve="IDefinitionLike" />
     </node>
   </node>
 </model>

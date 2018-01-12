@@ -8,6 +8,7 @@
   <imports>
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="vlrt" ref="r:3ddaee68-0b72-48af-bc28-bb60d8c7c95e(com.mbeddr.formal.base.tabular.structure)" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -28,6 +29,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -66,6 +68,22 @@
     </node>
     <node concept="PrWs8" id="2mjHtwTGtdH" role="PzmwI">
       <ref role="PrY4T" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mjHtwTIKkx">
+    <property role="EcuMT" value="2707707741265921313" />
+    <property role="TrG5h" value="FunctionValueContentRef" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+    <node concept="1TJgyj" id="2mjHtwTIKk$" role="1TKVEi">
+      <property role="IQ2ns" value="2707707741265921316" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="functionValueContent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueContent" />
+      <ref role="20ksaX" to="gioj:2mjHtwTKxtS" resolve="defineLike" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTKxWE" role="PzmwI">
+      <ref role="PrY4T" to="gioj:2mjHtwTKxtR" resolve="IDefineLikeRef" />
     </node>
   </node>
 </model>
