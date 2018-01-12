@@ -5,5 +5,7 @@
   <exported-language name="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" />
   <exported-language name="c1b1e23f-b677-40b8-a490-e192dd8d78e5(com.mbeddr.formal.nusmv.sm)" />
   <exported-language name="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" />
+  <exported-language name="450c81f1-1811-41ac-a9c8-8fda59f778ca(com.mbeddr.formal.nusmv.tabular)" />
+  <exported-language name="b3b9fe18-f0c4-4cea-83c5-45faa74e0911(com.mbeddr.formal.base.tabular)" />
 </dev-kit>
 
