@@ -61,11 +61,11 @@
     <property role="TrG5h" value="FunctionValueContent" />
     <property role="34LRSv" value="output definition" />
     <ref role="1TJDcQ" to="gioj:7mSH3WmVxaO" resolve="VariableDeclarationBase" />
-    <node concept="PrWs8" id="2CFqY3vt_u0" role="PzmwI">
-      <ref role="PrY4T" to="gioj:1IrBcRpiVFr" resolve="IDefineContent" />
-    </node>
     <node concept="PrWs8" id="3JhRrgbktEt" role="PzmwI">
       <ref role="PrY4T" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
+    </node>
+    <node concept="PrWs8" id="2mjHtwTGtdH" role="PzmwI">
+      <ref role="PrY4T" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
     </node>
   </node>
 </model>
