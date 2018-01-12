@@ -870,7 +870,7 @@
   </node>
   <node concept="WtQ9Q" id="7mSH3Wn0QWk">
     <property role="3GE5qa" value="expressions.dot" />
-    <ref role="WuzLi" to="gioj:7mSH3WmXrCB" resolve="OutVariableRef" />
+    <ref role="WuzLi" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
     <node concept="11bSqf" id="7mSH3Wn0QWl" role="11c4hB">
       <node concept="3clFbS" id="7mSH3Wn0QWm" role="2VODD2">
         <node concept="lc7rE" id="7mSH3Wn0QWE" role="3cqZAp">
@@ -879,7 +879,7 @@
               <node concept="2OqwBi" id="7mSH3Wn0R6J" role="2Oq$k0">
                 <node concept="117lpO" id="7mSH3Wn0QXW" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7mSH3Wn0ReS" role="2OqNvi">
-                  <ref role="3Tt5mk" to="gioj:7mSH3WmXrCC" resolve="outVar" />
+                  <ref role="3Tt5mk" to="gioj:7mSH3WmXrCC" resolve="definition" />
                 </node>
               </node>
               <node concept="3TrcHB" id="7mSH3Wn0RMi" role="2OqNvi">

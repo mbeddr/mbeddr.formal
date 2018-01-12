@@ -1202,9 +1202,9 @@
   </node>
   <node concept="24kQdi" id="7mSH3WmXrD4">
     <property role="3GE5qa" value="expressions.dot" />
-    <ref role="1XX52x" to="gioj:7mSH3WmXrCB" resolve="OutVariableRef" />
+    <ref role="1XX52x" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
     <node concept="1iCGBv" id="7mSH3WmXrD6" role="2wV5jI">
-      <ref role="1NtTu8" to="gioj:7mSH3WmXrCC" resolve="outVar" />
+      <ref role="1NtTu8" to="gioj:7mSH3WmXrCC" resolve="definition" />
       <node concept="1sVBvm" id="7mSH3WmXrD8" role="1sWHZn">
         <node concept="3F0A7n" id="7mSH3WmXrDi" role="2wV5jI">
           <property role="1Intyy" value="true" />

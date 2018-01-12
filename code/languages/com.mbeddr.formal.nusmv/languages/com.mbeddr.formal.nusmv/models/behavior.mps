@@ -260,7 +260,7 @@
   </node>
   <node concept="13h7C7" id="5_V$TJxG2rJ">
     <property role="3GE5qa" value="expressions.dot" />
-    <ref role="13h7C2" to="gioj:7mSH3WmXrCB" resolve="OutVariableRef" />
+    <ref role="13h7C2" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
     <node concept="13hLZK" id="5_V$TJxG2rK" role="13h7CW">
       <node concept="3clFbS" id="5_V$TJxG2rL" role="2VODD2" />
     </node>
@@ -277,7 +277,7 @@
             <node concept="2OqwBi" id="5_V$TJxG2I3" role="2Oq$k0">
               <node concept="13iPFW" id="5_V$TJxG2$C" role="2Oq$k0" />
               <node concept="3TrEf2" id="5_V$TJxG2Tz" role="2OqNvi">
-                <ref role="3Tt5mk" to="gioj:7mSH3WmXrCC" resolve="outVar" />
+                <ref role="3Tt5mk" to="gioj:7mSH3WmXrCC" resolve="definition" />
               </node>
             </node>
             <node concept="3TrcHB" id="5_V$TJxG3ZO" role="2OqNvi">

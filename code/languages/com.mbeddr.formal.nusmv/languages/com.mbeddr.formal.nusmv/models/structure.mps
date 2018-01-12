@@ -455,13 +455,13 @@
   </node>
   <node concept="1TIwiD" id="7mSH3WmXrCB">
     <property role="EcuMT" value="8482728081213471271" />
-    <property role="TrG5h" value="OutVariableRef" />
+    <property role="TrG5h" value="DefinitionRef" />
     <property role="3GE5qa" value="expressions.dot" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
     <node concept="1TJgyj" id="7mSH3WmXrCC" role="1TKVEi">
       <property role="IQ2ns" value="8482728081213471272" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="outVar" />
+      <property role="20kJfa" value="definition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7mSH3WmQ5bp" resolve="Definition" />
     </node>
