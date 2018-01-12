@@ -388,6 +388,7 @@
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -3453,6 +3454,19 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2mjHtwToRxD" role="3clF47">
+        <node concept="3clFbJ" id="2mjHtwTECdf" role="3cqZAp">
+          <node concept="3clFbS" id="2mjHtwTECdh" role="3clFbx">
+            <node concept="3cpWs6" id="2mjHtwTEFCP" role="3cqZAp">
+              <node concept="3clFbT" id="2mjHtwTEFDW" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2mjHtwTEDMi" role="3clFbw">
+            <node concept="37vLTw" id="2mjHtwTECqC" role="2Oq$k0">
+              <ref role="3cqZAo" node="2mjHtwToRGL" resolve="stdErr" />
+            </node>
+            <node concept="1v1jN8" id="2mjHtwTEF$t" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3cpWs6" id="2mjHtwToRWC" role="3cqZAp">
           <node concept="2OqwBi" id="2mjHtwToSjN" role="3cqZAk">
             <node concept="2OqwBi" id="2mjHtwToUOh" role="2Oq$k0">
@@ -3463,14 +3477,14 @@
                 <node concept="1bVj0M" id="2mjHtwToWGU" role="23t8la">
                   <node concept="3clFbS" id="2mjHtwToWGV" role="1bW5cS">
                     <node concept="3clFbF" id="2mjHtwToWXZ" role="3cqZAp">
-                      <node concept="2OqwBi" id="2mjHtwToXuO" role="3clFbG">
-                        <node concept="37vLTw" id="2mjHtwToWXY" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2mjHtwTEFIo" role="3clFbG">
+                        <node concept="37vLTw" id="2mjHtwTEFIp" role="2Oq$k0">
                           <ref role="3cqZAo" node="2mjHtwToWGW" resolve="it" />
                         </node>
-                        <node concept="liA8E" id="2mjHtwToYvi" role="2OqNvi">
+                        <node concept="liA8E" id="2mjHtwTEFIq" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                          <node concept="Xl_RD" id="2mjHtwToYJc" role="37wK5m">
-                            <property role="Xl_RC" value="ERROR" />
+                          <node concept="Xl_RD" id="2mjHtwTEFIr" role="37wK5m">
+                            <property role="Xl_RC" value="Aborting batch mode" />
                           </node>
                         </node>
                       </node>
