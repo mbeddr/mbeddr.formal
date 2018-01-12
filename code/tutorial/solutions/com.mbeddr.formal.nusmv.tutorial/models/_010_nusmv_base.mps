@@ -54,6 +54,7 @@
       <concept id="7842584090745934021" name="com.mbeddr.formal.nusmv.structure.ChoiceExpression" flags="ng" index="2IRehC">
         <child id="7842584090745934022" name="choices" index="2IRehF" />
       </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
       <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
         <child id="1989356068342053586" name="definitions" index="32O2ov" />
       </concept>
@@ -210,6 +211,7 @@
         </node>
       </node>
     </node>
+    <node concept="2SQmWS" id="2mjHtwTFNJr" role="2HcuB8" />
     <node concept="2Hdtz0" id="7mSH3WmWrH3" role="2HcuB8">
       <property role="TrG5h" value="main" />
       <node concept="2Hfkzq" id="7mSH3WmWrHO" role="2HcbjO">

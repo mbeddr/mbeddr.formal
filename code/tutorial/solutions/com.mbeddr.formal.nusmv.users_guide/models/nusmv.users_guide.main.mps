@@ -7,6 +7,7 @@
   <imports>
     <import index="m6f0" ref="r:0eb0cd32-f456-4fb2-b2bf-88e1b019b19d(_010_nusmv_base)" />
     <import index="qmbe" ref="r:dc2f2276-db8a-4c75-a8c5-c04c514cae35(_020_nusmv_unit_tests)" />
+    <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_050_nusmv_tables)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -660,7 +661,17 @@
       <node concept="1_0LV8" id="2mjHtwTDAIV" role="1_0VJ0">
         <node concept="19SGf9" id="2mjHtwTDAIW" role="1_0LWR">
           <node concept="19SUe$" id="2mjHtwTDAIX" role="19SJt6">
-            <property role="19SUeA" value="In figure below we illustrate the diagramatic notation for the Sender - Receiver example." />
+            <property role="19SUeA" value="In figure below we illustrate the diagramatic notation for the Sender - Receiver example. Using drag-and-drop from the " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDQzP" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDQzQ" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDQzR" role="19SJt6">
+                <property role="19SUeA" value="Diagram Palette" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDQzS" role="19SJt6">
+            <property role="19SUeA" value=" one can add new elements. Deleting of component instances or channels is possible as well." />
           </node>
         </node>
       </node>
@@ -679,6 +690,252 @@
           </node>
         </node>
         <node concept="2bctqb" id="2mjHtwTDARA" role="3SHJ_F" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="2mjHtwTDQ$8">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_040_state_machines" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0VNX" id="2mjHtwTDQ$9" role="1_0VJ0">
+      <property role="TrG5h" value="nusmv_sm" />
+      <property role="1_0VJr" value="Describing the State-Machines" />
+      <node concept="1_1sxE" id="2mjHtwTDQ$a" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTDQ$b" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDQ$c" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDQ$d" role="19SJt6">
+            <property role="19SUeA" value="We created a DSL which restricts the NuSMV base language in order to describe common state-machines." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTDQ$e" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="3X6WG5" id="2mjHtwTDQ$f" role="1_0VJ0">
+        <node concept="3X6T9g" id="2mjHtwTDQ$g" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTDQ$h" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTDQ$i" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTDQ$j" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTDQ$k" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTDQ$l" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTDQ$m" role="19SJt6">
+                    <property role="19SUeA" value="current state" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTDQ$n" role="19SJt6">
+                <property role="19SUeA" value=" is a variable named '_state_' with enumeration type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2mjHtwTDQ$o" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTDQ$p" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTDQ$q" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTDQ$r" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTDQ$s" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTDQ$t" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTDQ$u" role="19SJt6">
+                    <property role="19SUeA" value="states" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTDQ$v" role="19SJt6">
+                <property role="19SUeA" value=" are members of the enumeration which is the type of the current state variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2mjHtwTDQ$w" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTDQ$x" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTDQ$y" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTDQ$z" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTDQ$$" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTDQ$_" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTDQ$A" role="19SJt6">
+                    <property role="19SUeA" value="transitions guards" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTDQ$B" role="19SJt6">
+                <property role="19SUeA" value=" are the expressions used when defining the " />
+              </node>
+              <node concept="1jUjqm" id="2mjHtwTDQ_H" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTDQ_I" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTDQ_J" role="19SJt6">
+                    <property role="19SUeA" value="next(_state_)" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTDQ_K" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2mjHtwTDQ$C" role="3Xp5NH">
+          <node concept="OjmMv" id="2mjHtwTDQ$D" role="3X6T9h">
+            <node concept="19SGf9" id="2mjHtwTDQ$E" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTDQ$F" role="19SJt6" />
+              <node concept="2vpllh" id="2mjHtwTDQ$G" role="19SJt6">
+                <node concept="19SGf9" id="2mjHtwTDQ$H" role="$DsGW">
+                  <node concept="19SUe$" id="2mjHtwTDQ$I" role="19SJt6">
+                    <property role="19SUeA" value="actions" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="2mjHtwTDQ$J" role="19SJt6">
+                <property role="19SUeA" value=" are changes of additional state variables" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTDQ$L" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDQ$M" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDQ$N" role="19SJt6">
+            <property role="19SUeA" value="In the figure below we illustrate the definition of a " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTDQ$O" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDQ$P" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDQ$Q" role="19SJt6">
+                <property role="19SUeA" value="STATE-MACHINE" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDQ$R" role="19SJt6">
+            <property role="19SUeA" value=" section for a traffic-lights controller in textual notation." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2mjHtwTDQ_4" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="2SaynC" id="2mjHtwTDQ_5" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_sm_textual_notation" />
+        <ref role="1wz7Nk" node="2mjHtwTDQ$8" resolve="_040_state_machines" />
+        <node concept="2Sb_l4" id="2mjHtwTDQ_6" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_sm_textual_notation.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTDQ_7" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTDQ_8" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTDQ_9" role="19SJt6">
+              <property role="19SUeA" value="State-machine description in textual projection." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTDQ_a" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTDQ_b" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTDQ_c" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTDQ_d" role="19SJt6">
+            <property role="19SUeA" value="Via the " />
+          </node>
+          <node concept="2vpllh" id="2mjHtwTDQ_e" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTDQ_f" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTDQ_g" role="19SJt6">
+                <property role="19SUeA" value="Projection -&gt; State-machine Diagram View" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTDQ_h" role="19SJt6">
+            <property role="19SUeA" value=" menu, one can switch to the diagramatic projection of state-machines. Using drag-and-drop from the " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTFNl9" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTFNla" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTFNlb" role="19SJt6">
+                <property role="19SUeA" value="Diagram Palette" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTFNlc" role="19SJt6">
+            <property role="19SUeA" value=" one can add new states. New transitions can be created by selecting the source state, clicking on the + icon and dragging to the target state. " />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="2mjHtwTDQ_B" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_sm_diagramatic_notation" />
+        <ref role="1wz7Nk" node="2mjHtwTDQ$8" resolve="_040_state_machines" />
+        <node concept="2Sb_l4" id="2mjHtwTDQ_C" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_sm_diagramatic_notation.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTDQ_D" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTDQ_E" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTDQ_F" role="19SJt6">
+              <property role="19SUeA" value="Example of the diagramatic notation for state-machines. The STATE-MACHINE section is projected as a diagram, everything else remains the same." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTDQ_G" role="3SHJ_F" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="2mjHtwTG722">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_050_tables" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0VNX" id="2mjHtwTG723" role="1_0VJ0">
+      <property role="TrG5h" value="nusmv_sm" />
+      <property role="1_0VJr" value="Specification Using Tables" />
+      <node concept="1_1sxE" id="2mjHtwTG724" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="2mjHtwTG725" role="1_0VJ0">
+        <node concept="19SGf9" id="2mjHtwTG726" role="1_0LWR">
+          <node concept="19SUe$" id="2mjHtwTG727" role="19SJt6">
+            <property role="19SUeA" value="We created a DSL which implements function-tables. A " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTGo90" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTGo91" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTGo92" role="19SJt6">
+                <property role="19SUeA" value="FUNCTION-TABLE" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTGo93" role="19SJt6">
+            <property role="19SUeA" value=" section is a specialization of the " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTGo9o" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTGo9p" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTGo9q" role="19SJt6">
+                <property role="19SUeA" value="DEFINE" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTGo9r" role="19SJt6">
+            <property role="19SUeA" value=" section. In the figure below we illustrate the definition of a " />
+          </node>
+          <node concept="1jUjqm" id="2mjHtwTGoa1" role="19SJt6">
+            <node concept="19SGf9" id="2mjHtwTGoa2" role="$DsGW">
+              <node concept="19SUe$" id="2mjHtwTGoa3" role="19SJt6">
+                <property role="19SUeA" value="FUNCTION-TABLE" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2mjHtwTGoa0" role="19SJt6">
+            <property role="19SUeA" value=" for computing a one bit full adder. " />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="2mjHtwTG72Q" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_function_table" />
+        <ref role="1wz7Nk" to="l9d9:2mjHtwTG75u" resolve="one_bit_full_adder" />
+        <node concept="2Sb_l4" id="2mjHtwTG72R" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_function_table.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2mjHtwTG72S" role="2SaI5j">
+          <node concept="19SGf9" id="2mjHtwTG72T" role="OjmMu">
+            <node concept="19SUe$" id="2mjHtwTG72U" role="19SJt6">
+              <property role="19SUeA" value="A function table which implements a one-bit full adder." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2mjHtwTG72V" role="3SHJ_F" />
       </node>
     </node>
   </node>
