@@ -1123,6 +1123,20 @@
       <node concept="3cqZAl" id="505H3_WY3P3" role="3clF45" />
       <node concept="3Tm1VV" id="505H3_WY3P4" role="1B3o_S" />
       <node concept="3clFbS" id="505H3_WY3P5" role="3clF47">
+        <node concept="3clFbF" id="2mjHtwTFnNM" role="3cqZAp">
+          <node concept="1rXfSq" id="2mjHtwTFnNK" role="3clFbG">
+            <ref role="37wK5l" node="2mjHtwTF4Mi" resolve="saveRunInfos" />
+            <node concept="37vLTw" id="2mjHtwTFoh8" role="37wK5m">
+              <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
+            </node>
+            <node concept="37vLTw" id="2mjHtwTFokS" role="37wK5m">
+              <ref role="3cqZAo" node="505H3_WY3Q6" resolve="af" />
+            </node>
+            <node concept="37vLTw" id="2mjHtwTFor_" role="37wK5m">
+              <ref role="3cqZAo" node="505H3_WY3Q8" resolve="make" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1Qk2BLgCE8l" role="3cqZAp">
           <node concept="3cpWsn" id="1Qk2BLgCE8m" role="3cpWs9">
             <property role="TrG5h" value="latch" />
@@ -1484,8 +1498,131 @@
         <property role="NWlVz" value="Makes the project and runs the analysis as a background task in MPS." />
       </node>
     </node>
-    <node concept="2tJIrI" id="505H3_WY3Qa" role="jymVt" />
     <node concept="2tJIrI" id="505H3_WY3Qb" role="jymVt" />
+    <node concept="2YIFZL" id="2mjHtwTFcTW" role="jymVt">
+      <property role="TrG5h" value="reRunLastAnalysis" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2mjHtwTFcTZ" role="3clF47">
+        <node concept="3clFbF" id="2mjHtwTFdUZ" role="3cqZAp">
+          <node concept="1rXfSq" id="2mjHtwTFdUY" role="3clFbG">
+            <ref role="37wK5l" node="505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
+            <node concept="37vLTw" id="2mjHtwTFe3O" role="37wK5m">
+              <ref role="3cqZAo" node="2mjHtwTF6ck" resolve="lastProj" />
+            </node>
+            <node concept="37vLTw" id="2mjHtwTFea6" role="37wK5m">
+              <ref role="3cqZAo" node="2mjHtwTF74A" resolve="lastAnalyzerFactory" />
+            </node>
+            <node concept="37vLTw" id="2mjHtwTFeob" role="37wK5m">
+              <ref role="3cqZAo" node="2mjHtwTF7wr" resolve="lastMake" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2mjHtwTFcqI" role="1B3o_S" />
+      <node concept="3cqZAl" id="2mjHtwTFcHM" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="2mjHtwTFdmN" role="jymVt" />
+    <node concept="2YIFZL" id="2mjHtwTF4Mi" role="jymVt">
+      <property role="TrG5h" value="saveRunInfos" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="2mjHtwTF5dw" role="3clF46">
+        <property role="TrG5h" value="proj" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="2mjHtwTF5dx" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2mjHtwTF5dy" role="3clF46">
+        <property role="TrG5h" value="af" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="2mjHtwTF5dz" role="1tU5fm">
+          <ref role="3uigEE" node="5uqRFp8ViLO" resolve="AnalyzerFactory" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2mjHtwTF5d$" role="3clF46">
+        <property role="TrG5h" value="make" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="2mjHtwTF5d_" role="1tU5fm">
+          <ref role="3uigEE" to="5zyv:~Future" resolve="Future" />
+          <node concept="3uibUv" id="2mjHtwTF5dA" role="11_B2D">
+            <ref role="3uigEE" to="i9so:17I1R__cQ5X" resolve="IResult" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="2mjHtwTF4Ml" role="3clF47">
+        <node concept="3clFbF" id="2mjHtwTFb0k" role="3cqZAp">
+          <node concept="37vLTI" id="2mjHtwTFbdB" role="3clFbG">
+            <node concept="37vLTw" id="2mjHtwTFbji" role="37vLTx">
+              <ref role="3cqZAo" node="2mjHtwTF5dw" resolve="proj" />
+            </node>
+            <node concept="37vLTw" id="2mjHtwTFb0j" role="37vLTJ">
+              <ref role="3cqZAo" node="2mjHtwTF6ck" resolve="lastProj" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2mjHtwTFbrJ" role="3cqZAp">
+          <node concept="37vLTI" id="2mjHtwTFbzg" role="3clFbG">
+            <node concept="37vLTw" id="2mjHtwTFbAA" role="37vLTx">
+              <ref role="3cqZAo" node="2mjHtwTF5dy" resolve="af" />
+            </node>
+            <node concept="37vLTw" id="2mjHtwTFbrH" role="37vLTJ">
+              <ref role="3cqZAo" node="2mjHtwTF74A" resolve="lastAnalyzerFactory" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2mjHtwTFbJ5" role="3cqZAp">
+          <node concept="37vLTI" id="2mjHtwTFbSR" role="3clFbG">
+            <node concept="37vLTw" id="2mjHtwTFbVY" role="37vLTx">
+              <ref role="3cqZAo" node="2mjHtwTF5d$" resolve="make" />
+            </node>
+            <node concept="37vLTw" id="2mjHtwTFbJ3" role="37vLTJ">
+              <ref role="3cqZAo" node="2mjHtwTF7wr" resolve="lastMake" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="2mjHtwTF4kl" role="1B3o_S" />
+      <node concept="3cqZAl" id="2mjHtwTF4LX" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="2mjHtwTF3Sf" role="jymVt" />
+    <node concept="Wx3nA" id="2mjHtwTF6ck" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="lastProj" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="2mjHtwTF5Gu" role="1B3o_S" />
+      <node concept="3uibUv" id="2mjHtwTF6bO" role="1tU5fm">
+        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2mjHtwTF74A" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="lastAnalyzerFactory" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="2mjHtwTF74B" role="1B3o_S" />
+      <node concept="3uibUv" id="2mjHtwTF7YM" role="1tU5fm">
+        <ref role="3uigEE" node="5uqRFp8ViLO" resolve="AnalyzerFactory" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="2mjHtwTF7wr" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="lastMake" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="2mjHtwTF7ws" role="1B3o_S" />
+      <node concept="3uibUv" id="2mjHtwTF84$" role="1tU5fm">
+        <ref role="3uigEE" to="5zyv:~Future" resolve="Future" />
+        <node concept="3uibUv" id="2mjHtwTF87R" role="11_B2D">
+          <ref role="3uigEE" to="i9so:17I1R__cQ5X" resolve="IResult" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2mjHtwTF6BU" role="jymVt" />
     <node concept="Wx3nA" id="5uqRFp8V965" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
