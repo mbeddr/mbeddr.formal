@@ -43,7 +43,7 @@
   <node concept="1TIwiD" id="2CFqY3vt_oe">
     <property role="EcuMT" value="3038640987157452302" />
     <property role="TrG5h" value="FunctionTableSection" />
-    <property role="34LRSv" value="function-table" />
+    <property role="34LRSv" value="FUNCTION-TABLE" />
     <node concept="PrWs8" id="2CFqY3vuOM7" role="PzmwI">
       <ref role="PrY4T" to="gioj:6NmtaR1UNLQ" resolve="IModuleContent" />
     </node>

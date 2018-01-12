@@ -8,7 +8,6 @@
   <imports>
     <import index="jx4r" ref="r:20b428fb-5ad4-48f7-a0e1-326c84a8081b(com.mbeddr.formal.nusmv.tabular.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
@@ -26,7 +25,6 @@
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
-        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -64,9 +62,6 @@
       <property role="20kJfa" value="outputVariables" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3JhRrgbktEe" resolve="IFunctionValueContent" />
-    </node>
-    <node concept="PrWs8" id="2CFqY3vmZqN" role="PzmwI">
-      <ref role="PrY4T" to="gioj:6NmtaR1UNLQ" resolve="IModuleContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="2CFqY3vlYOc">
