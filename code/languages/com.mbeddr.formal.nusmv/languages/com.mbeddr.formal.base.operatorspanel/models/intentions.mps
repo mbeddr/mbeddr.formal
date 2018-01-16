@@ -95,6 +95,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -108,6 +111,7 @@
   </registry>
   <node concept="2S6QgY" id="2mjHtwTZRkj">
     <property role="TrG5h" value="surroundWithHorizontalCollection" />
+    <property role="3GE5qa" value="base" />
     <ref role="2ZfgGC" to="8b9w:2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     <node concept="2S6ZIM" id="2mjHtwTZRkk" role="2ZfVej">
       <node concept="3clFbS" id="2mjHtwTZRkl" role="2VODD2">
@@ -182,6 +186,7 @@
   </node>
   <node concept="2S6QgY" id="3G$pWQNtrST">
     <property role="TrG5h" value="addLeftSibling" />
+    <property role="3GE5qa" value="base" />
     <ref role="2ZfgGC" to="8b9w:2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     <node concept="2S6ZIM" id="3G$pWQNtrSU" role="2ZfVej">
       <node concept="3clFbS" id="3G$pWQNtrSV" role="2VODD2">
@@ -230,6 +235,7 @@
   </node>
   <node concept="2S6QgY" id="3G$pWQNtCh8">
     <property role="TrG5h" value="addRightSibling" />
+    <property role="3GE5qa" value="base" />
     <ref role="2ZfgGC" to="8b9w:2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     <node concept="2S6ZIM" id="3G$pWQNtCh9" role="2ZfVej">
       <node concept="3clFbS" id="3G$pWQNtCha" role="2VODD2">
@@ -269,6 +275,104 @@
             <node concept="1mIQ4w" id="3G$pWQNtCht" role="2OqNvi">
               <node concept="chp4Y" id="3G$pWQNtChu" role="cj9EA">
                 <ref role="cht4Q" to="8b9w:2mjHtwTZvMV" resolve="HorizontalCollection" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3G$pWQNu3AQ">
+    <property role="TrG5h" value="addTopSibling" />
+    <property role="3GE5qa" value="base" />
+    <ref role="2ZfgGC" to="8b9w:2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    <node concept="2S6ZIM" id="3G$pWQNu3AR" role="2ZfVej">
+      <node concept="3clFbS" id="3G$pWQNu3AS" role="2VODD2">
+        <node concept="3clFbF" id="3G$pWQNu3AT" role="3cqZAp">
+          <node concept="Xl_RD" id="3G$pWQNu3AU" role="3clFbG">
+            <property role="Xl_RC" value="Operators Panel: Add Top Sibling" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3G$pWQNu3AV" role="2ZfgGD">
+      <node concept="3clFbS" id="3G$pWQNu3AW" role="2VODD2">
+        <node concept="3clFbF" id="3G$pWQNu3AX" role="3cqZAp">
+          <node concept="2OqwBi" id="3G$pWQNu3AY" role="3clFbG">
+            <node concept="2Sf5sV" id="3G$pWQNu3AZ" role="2Oq$k0" />
+            <node concept="HtX7F" id="3G$pWQNu3B0" role="2OqNvi">
+              <node concept="2ShNRf" id="3G$pWQNu3B1" role="HtX7I">
+                <node concept="3zrR0B" id="3G$pWQNu3B2" role="2ShVmc">
+                  <node concept="3Tqbb2" id="3G$pWQNu3B3" role="3zrR0E">
+                    <ref role="ehGHo" to="8b9w:2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="3G$pWQNu3B4" role="2ZfVeh">
+      <node concept="3clFbS" id="3G$pWQNu3B5" role="2VODD2">
+        <node concept="3clFbF" id="3G$pWQNu3B6" role="3cqZAp">
+          <node concept="2OqwBi" id="3G$pWQNu3B7" role="3clFbG">
+            <node concept="2OqwBi" id="3G$pWQNu3B8" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3G$pWQNu3B9" role="2Oq$k0" />
+              <node concept="1mfA1w" id="3G$pWQNu3Ba" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="3G$pWQNu3Bb" role="2OqNvi">
+              <node concept="chp4Y" id="3G$pWQNu4BF" role="cj9EA">
+                <ref role="cht4Q" to="8b9w:3G$pWQNu3hp" resolve="VerticalCollection" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3G$pWQNu4Nd">
+    <property role="TrG5h" value="addBottomSibling" />
+    <property role="3GE5qa" value="base" />
+    <ref role="2ZfgGC" to="8b9w:2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    <node concept="2S6ZIM" id="3G$pWQNu4Ne" role="2ZfVej">
+      <node concept="3clFbS" id="3G$pWQNu4Nf" role="2VODD2">
+        <node concept="3clFbF" id="3G$pWQNu4Ng" role="3cqZAp">
+          <node concept="Xl_RD" id="3G$pWQNu4Nh" role="3clFbG">
+            <property role="Xl_RC" value="Operators Panel: Add Bottom Sibling" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3G$pWQNu4Ni" role="2ZfgGD">
+      <node concept="3clFbS" id="3G$pWQNu4Nj" role="2VODD2">
+        <node concept="3clFbF" id="3G$pWQNu4Nk" role="3cqZAp">
+          <node concept="2OqwBi" id="3G$pWQNu4Nl" role="3clFbG">
+            <node concept="2Sf5sV" id="3G$pWQNu4Nm" role="2Oq$k0" />
+            <node concept="HtI8k" id="3G$pWQNu61T" role="2OqNvi">
+              <node concept="2ShNRf" id="3G$pWQNu6x9" role="HtI8F">
+                <node concept="3zrR0B" id="3G$pWQNu6xa" role="2ShVmc">
+                  <node concept="3Tqbb2" id="3G$pWQNu6xb" role="3zrR0E">
+                    <ref role="ehGHo" to="8b9w:2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="3G$pWQNu4Nr" role="2ZfVeh">
+      <node concept="3clFbS" id="3G$pWQNu4Ns" role="2VODD2">
+        <node concept="3clFbF" id="3G$pWQNu4Nt" role="3cqZAp">
+          <node concept="2OqwBi" id="3G$pWQNu4Nu" role="3clFbG">
+            <node concept="2OqwBi" id="3G$pWQNu4Nv" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3G$pWQNu4Nw" role="2Oq$k0" />
+              <node concept="1mfA1w" id="3G$pWQNu4Nx" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="3G$pWQNu4Ny" role="2OqNvi">
+              <node concept="chp4Y" id="3G$pWQNu4Nz" role="cj9EA">
+                <ref role="cht4Q" to="8b9w:3G$pWQNu3hp" resolve="VerticalCollection" />
               </node>
             </node>
           </node>

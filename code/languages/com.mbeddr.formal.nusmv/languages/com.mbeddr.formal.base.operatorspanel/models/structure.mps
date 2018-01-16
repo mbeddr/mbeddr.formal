@@ -40,6 +40,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -66,23 +69,19 @@
     <property role="EcuMT" value="2707707741267713727" />
     <property role="TrG5h" value="ColoredCircle" />
     <property role="34LRSv" value="colored circle" />
+    <property role="3GE5qa" value="shapes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2mjHtwTQz3K" role="1TKVEi">
       <property role="IQ2ns" value="2707707741267964144" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="color" />
+      <property role="20kJfa" value="colorProvider" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>
     <node concept="1TJgyj" id="2mjHtwTQz3P" role="1TKVEi">
       <property role="IQ2ns" value="2707707741267964149" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="radius" />
+      <property role="20kJfa" value="radiusProvider" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
-    </node>
-    <node concept="1TJgyi" id="2mjHtwTP_V0" role="1TKVEl">
-      <property role="IQ2nx" value="2707707741267713728" />
-      <property role="TrG5h" value="defaultColor" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="2mjHtwTP_V5" role="1TKVEl">
       <property role="IQ2nx" value="2707707741267713733" />
@@ -92,6 +91,9 @@
     <node concept="PrWs8" id="2mjHtwTP_VW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3G$pWQNtNpW" role="PzmwI">
+      <ref role="PrY4T" node="3G$pWQNtNpd" resolve="IColoredShape" />
+    </node>
     <node concept="PrWs8" id="2mjHtwTPP_1" role="PzmwI">
       <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     </node>
@@ -99,10 +101,12 @@
   <node concept="PlHQZ" id="2mjHtwTPOin">
     <property role="EcuMT" value="2707707741267772567" />
     <property role="TrG5h" value="IOperatorsPanelContent" />
+    <property role="3GE5qa" value="base" />
   </node>
   <node concept="PlHQZ" id="2mjHtwTQz3J">
     <property role="EcuMT" value="2707707741267964143" />
     <property role="TrG5h" value="IIntegerValueProvider" />
+    <property role="3GE5qa" value="base" />
     <node concept="PrWs8" id="2mjHtwTRFdX" role="PrDN$">
       <ref role="PrY4T" node="2mjHtwTRFdW" resolve="IValueProvider" />
     </node>
@@ -110,11 +114,13 @@
   <node concept="PlHQZ" id="2mjHtwTRFdW">
     <property role="EcuMT" value="2707707741268259708" />
     <property role="TrG5h" value="IValueProvider" />
+    <property role="3GE5qa" value="base" />
   </node>
   <node concept="1TIwiD" id="2mjHtwTZvMV">
     <property role="EcuMT" value="2707707741270310075" />
     <property role="TrG5h" value="HorizontalCollection" />
     <property role="34LRSv" value="horizontal collection" />
+    <property role="3GE5qa" value="collections" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2mjHtwTZvMW" role="PzmwI">
       <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
@@ -129,7 +135,9 @@
   </node>
   <node concept="1TIwiD" id="2mjHtwTZvO5">
     <property role="EcuMT" value="2707707741270310149" />
-    <property role="TrG5h" value="Separator" />
+    <property role="TrG5h" value="ColoredRectangle" />
+    <property role="34LRSv" value="colored rectangle" />
+    <property role="3GE5qa" value="shapes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2mjHtwTZwwp" role="1TKVEl">
       <property role="IQ2nx" value="2707707741270312985" />
@@ -141,13 +149,62 @@
       <property role="TrG5h" value="height" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="2mjHtwTZKpd" role="1TKVEl">
-      <property role="IQ2nx" value="2707707741270378061" />
-      <property role="TrG5h" value="color" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="PrWs8" id="2mjHtwTZvO6" role="PzmwI">
       <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    </node>
+    <node concept="PrWs8" id="3G$pWQNtNQJ" role="PzmwI">
+      <ref role="PrY4T" node="3G$pWQNtNpd" resolve="IColoredShape" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3G$pWQNtNm3">
+    <property role="EcuMT" value="4261645280576222595" />
+    <property role="TrG5h" value="ColorDefinition" />
+    <property role="34LRSv" value="color definition" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3G$pWQNtNm4" role="1TKVEl">
+      <property role="IQ2nx" value="4261645280576222596" />
+      <property role="TrG5h" value="r" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3G$pWQNtNm8" role="1TKVEl">
+      <property role="IQ2nx" value="4261645280576222600" />
+      <property role="TrG5h" value="g" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3G$pWQNtNmf" role="1TKVEl">
+      <property role="IQ2nx" value="4261645280576222607" />
+      <property role="TrG5h" value="b" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3G$pWQNtNpd">
+    <property role="EcuMT" value="4261645280576222797" />
+    <property role="TrG5h" value="IColoredShape" />
+    <property role="3GE5qa" value="base" />
+    <node concept="1TJgyj" id="3G$pWQNtNpe" role="1TKVEi">
+      <property role="IQ2ns" value="4261645280576222798" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="color" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3G$pWQNu3hp">
+    <property role="EcuMT" value="4261645280576287833" />
+    <property role="TrG5h" value="VerticalCollection" />
+    <property role="34LRSv" value="horizontal collection" />
+    <property role="3GE5qa" value="collections" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3G$pWQNu3hq" role="PzmwI">
+      <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    </node>
+    <node concept="1TJgyj" id="3G$pWQNu3hr" role="1TKVEi">
+      <property role="IQ2ns" value="4261645280576287835" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     </node>
   </node>
 </model>
