@@ -701,6 +701,12 @@
         <node concept="3LEDTy" id="2ShgyhefatJ" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
         </node>
+        <node concept="3LEDTy" id="3G$pWQNudJK" role="3LEDUa">
+          <ref role="3LEDTV" node="42jqVeFkUut" resolve="com.mbeddr.formal.nusmv.tabular" />
+        </node>
+        <node concept="3LEDTy" id="3G$pWQNudJL" role="3LEDUa">
+          <ref role="3LEDTV" node="42jqVeFkUv1" resolve="com.mbeddr.formal.base.tabular" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="42jqVeFkUv2" role="3989C9">
@@ -977,12 +983,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="42jqVeFkZId" role="3bR37C">
-          <node concept="3bR9La" id="42jqVeFkZIe" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="42jqVeFkUv1" resolve="com.mbeddr.formal.base.tabular" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="42jqVeFkZIf" role="3bR37C">
           <node concept="3bR9La" id="42jqVeFkZIg" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -1009,6 +1009,29 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3G$pWQNuekF" role="3bR37C">
+          <node concept="3bR9La" id="3G$pWQNuekG" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3G$pWQNuekH" role="3bR37C">
+          <node concept="3bR9La" id="3G$pWQNuekI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3G$pWQNuekJ" role="3bR37C">
+          <node concept="3bR9La" id="3G$pWQNuekK" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3G$pWQNuekL" role="3bR37C">
+          <node concept="1Busua" id="3G$pWQNuekM" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUv1" resolve="com.mbeddr.formal.base.tabular" />
           </node>
         </node>
       </node>
