@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
+        <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
+      </concept>
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
         <child id="7842584090744231298" name="guard" index="2H9I4J" />
@@ -97,9 +100,7 @@
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.OutVariableRef" flags="ng" index="1zjgSo">
-        <reference id="8482728081213471272" name="outVar" index="1zjgSn" />
-      </concept>
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
@@ -230,8 +231,8 @@
               <node concept="2He$iJ" id="7mSH3WmYGSe" role="1ziNjM">
                 <ref role="2He$iI" node="7mSH3WmWrHP" resolve="bit0" />
               </node>
-              <node concept="1zjgSo" id="7mSH3Wn04$$" role="1ziNjJ">
-                <ref role="1zjgSn" node="7mSH3WmWrGl" resolve="carry_out" />
+              <node concept="1zjgSo" id="3G$pWQNsxev" role="1ziNjJ">
+                <ref role="skqaw" node="7mSH3WmWrGl" resolve="carry_out" />
               </node>
             </node>
           </node>
@@ -241,8 +242,8 @@
           <node concept="1zigX2" id="7mSH3Wn04_L" role="2HdssA">
             <ref role="1zigX1" node="1IrBcRpgRny" resolve="counter_cell" />
             <node concept="1ziNjN" id="7mSH3Wn04Ah" role="1zigYY">
-              <node concept="1zjgSo" id="7mSH3Wn04Bs" role="1ziNjJ">
-                <ref role="1zjgSn" node="7mSH3WmWrGl" resolve="carry_out" />
+              <node concept="1zjgSo" id="3G$pWQNsxg6" role="1ziNjJ">
+                <ref role="skqaw" node="7mSH3WmWrGl" resolve="carry_out" />
               </node>
               <node concept="2He$iJ" id="7mSH3Wn04_X" role="1ziNjM">
                 <ref role="2He$iI" node="7mSH3WmWS2M" resolve="bit1" />
