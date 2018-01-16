@@ -36,7 +36,6 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -150,7 +149,9 @@
       <property role="TrG5h" value="evaluate" />
       <node concept="3clFbS" id="2mjHtwTSxQR" role="3clF47" />
       <node concept="3Tm1VV" id="2mjHtwTSxQS" role="1B3o_S" />
-      <node concept="10Oyi0" id="2mjHtwTT_6D" role="3clF45" />
+      <node concept="3uibUv" id="2mjHtwTZumA" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+      </node>
       <node concept="37vLTG" id="2mjHtwTSyhG" role="3clF46">
         <property role="TrG5h" value="currentSimulationValue" />
         <node concept="17QB3L" id="2mjHtwTSyhF" role="1tU5fm" />
