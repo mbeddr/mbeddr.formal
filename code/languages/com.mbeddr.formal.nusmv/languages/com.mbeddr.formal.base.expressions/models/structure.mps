@@ -18,6 +18,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -153,6 +154,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
+    <node concept="PrWs8" id="1gJVC85JI6$" role="PzmwI">
+      <ref role="PrY4T" node="1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR20s4K">
     <property role="EcuMT" value="7842584090745356592" />
@@ -343,6 +347,11 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="1gJVC85JI6z">
+    <property role="EcuMT" value="1454643446873514403" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="IStaticallyEvaluatable" />
   </node>
 </model>
 

@@ -17,6 +17,7 @@
     <language slang="l:b3b9fe18-f0c4-4cea-83c5-45faa74e0911:com.mbeddr.formal.tabular" version="0" />
     <language slang="l:001b2375-3bd5-4d5e-9958-6b3f62dc8548:com.mbeddr.formal.nusmv" version="0" />
     <language slang="l:22a84bd5-d947-48ae-b9f6-8288eea41dce:com.mbeddr.formal.nusmv.arch" version="0" />
+    <language slang="l:c0e6afd4-e20f-4e33-9970-004cf26b9bf6:com.mbeddr.formal.nusmv.ext" version="0" />
     <language slang="l:2dd5dace-06d5-4283-a878-7272f2df6d4b:com.mbeddr.formal.nusmv.operatorspanel" version="0" />
     <language slang="l:c1b1e23f-b677-40b8-a490-e192dd8d78e5:com.mbeddr.formal.nusmv.sm" version="0" />
     <language slang="l:450c81f1-1811-41ac-a9c8-8fda59f778ca:com.mbeddr.formal.nusmv.tabular" version="0" />
