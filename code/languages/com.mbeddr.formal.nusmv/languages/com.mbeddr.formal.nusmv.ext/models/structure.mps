@@ -76,5 +76,74 @@
       <ref role="PrY4T" to="ehqg:1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1gJVC85KmLe">
+    <property role="EcuMT" value="1454643446873680974" />
+    <property role="3GE5qa" value="function_macro" />
+    <property role="TrG5h" value="FunctionMacroDefinition" />
+    <property role="34LRSv" value="#FUNCTION" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1gJVC85KmM5" role="1TKVEi">
+      <property role="IQ2ns" value="1454643446873681029" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="params" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gJVC85KmLf" resolve="FunctionMacroParameterDefinition" />
+    </node>
+    <node concept="1TJgyj" id="1gJVC85KmM8" role="1TKVEi">
+      <property role="IQ2ns" value="1454643446873681032" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1gJVC85KmLR" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="PrWs8" id="1gJVC85KmLZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1gJVC85KmLf">
+    <property role="EcuMT" value="1454643446873680975" />
+    <property role="3GE5qa" value="function_macro" />
+    <property role="TrG5h" value="FunctionMacroParameterDefinition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1gJVC85KmLg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1gJVC85KmLt">
+    <property role="EcuMT" value="1454643446873680989" />
+    <property role="3GE5qa" value="function_macro" />
+    <property role="TrG5h" value="FunctionMacroParameterRef" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="1gJVC85KmLu" role="1TKVEi">
+      <property role="IQ2ns" value="1454643446873680990" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gJVC85KmLf" resolve="FunctionMacroParameterDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1gJVC85KmPN">
+    <property role="EcuMT" value="1454643446873681267" />
+    <property role="3GE5qa" value="function_macro" />
+    <property role="TrG5h" value="FunctionMacroCall" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="1gJVC85KmQs" role="1TKVEi">
+      <property role="IQ2ns" value="1454643446873681308" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1gJVC85KmPO" role="1TKVEi">
+      <property role="IQ2ns" value="1454643446873681268" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="func" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gJVC85KmLe" resolve="FunctionMacroDefinition" />
+    </node>
+  </node>
 </model>
 
