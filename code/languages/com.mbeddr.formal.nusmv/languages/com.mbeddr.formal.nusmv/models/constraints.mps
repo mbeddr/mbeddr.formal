@@ -484,8 +484,8 @@
                   <node concept="2rP1CM" id="1gJVC85NBey" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="1gJVC85NBez" role="2OqNvi">
                     <node concept="1xMEDy" id="1gJVC85NBe$" role="1xVPHs">
-                      <node concept="chp4Y" id="1gJVC85NBe_" role="ri$Ld">
-                        <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+                      <node concept="chp4Y" id="6WmpcHMKiJC" role="ri$Ld">
+                        <ref role="cht4Q" to="gioj:6NmtaR1SUJl" resolve="System" />
                       </node>
                     </node>
                   </node>
