@@ -15,8 +15,7 @@
   <imports>
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
-    <import index="elx0" ref="r:5f7ddb06-5d75-458f-81ae-6e536ea218ae(com.mbeddr.formal.nusmv.tests.generator.utils)" />
-    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
+    <import index="apby" ref="r:cbf2d485-170e-4c61-8ea2-9bef1e4395b5(com.mbeddr.formal.nusmv.tests.util)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -40,6 +39,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -582,6 +584,20 @@
                     </node>
                   </node>
                 </node>
+                <node concept="17Uvod" id="1gJVC85LZ$c" role="lGtFl">
+                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                  <property role="2qtEX9" value="name" />
+                  <node concept="3zFVjK" id="1gJVC85LZ$d" role="3zH0cK">
+                    <node concept="3clFbS" id="1gJVC85LZ$e" role="2VODD2">
+                      <node concept="3clFbF" id="1gJVC85LZTG" role="3cqZAp">
+                        <node concept="10M0yZ" id="1gJVC85P$S2" role="3clFbG">
+                          <ref role="3cqZAo" to="apby:1gJVC85LZiJ" resolve="ORACLE_VARIABLE_NAME" />
+                          <ref role="1PxDUh" to="apby:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="1zoerA" id="6mm$FLYVoYA" role="32O2ov">
                 <property role="TrG5h" value="in_val" />
@@ -591,9 +607,9 @@
                     <node concept="2kFOW8" id="6mm$FLYVtBt" role="2kGFt3">
                       <node concept="3clFbS" id="6mm$FLYVtBu" role="2VODD2">
                         <node concept="3clFbF" id="6mm$FLYWAAv" role="3cqZAp">
-                          <node concept="2YIFZM" id="6mm$FLYWAPv" role="3clFbG">
-                            <ref role="37wK5l" to="elx0:6mm$FLYWs7I" resolve="buildDefineForInput" />
-                            <ref role="1Pybhc" to="elx0:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
+                          <node concept="2YIFZM" id="1gJVC85P$S6" role="3clFbG">
+                            <ref role="37wK5l" to="apby:6mm$FLYWs7I" resolve="buildDefineForInput" />
+                            <ref role="1Pybhc" to="apby:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
                             <node concept="2OqwBi" id="6mm$FLYWAZm" role="37wK5m">
                               <node concept="1iwH7S" id="6mm$FLYWAZn" role="2Oq$k0" />
                               <node concept="1bhEwm" id="6mm$FLYWAZo" role="2OqNvi">
@@ -639,9 +655,9 @@
                   <node concept="3zFVjK" id="6mm$FLYVsF4" role="3zH0cK">
                     <node concept="3clFbS" id="6mm$FLYVsF5" role="2VODD2">
                       <node concept="3clFbF" id="6mm$FLYVsYd" role="3cqZAp">
-                        <node concept="2YIFZM" id="6mm$FLYVsYe" role="3clFbG">
-                          <ref role="37wK5l" to="elx0:1ZsZb$iJLq0" resolve="variableNameForParameter" />
-                          <ref role="1Pybhc" to="elx0:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
+                        <node concept="2YIFZM" id="1gJVC85P$S4" role="3clFbG">
+                          <ref role="37wK5l" to="apby:1ZsZb$iJLq0" resolve="variableNameForParameter" />
+                          <ref role="1Pybhc" to="apby:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
                           <node concept="30H73N" id="6mm$FLYVsYf" role="37wK5m" />
                         </node>
                       </node>
@@ -657,9 +673,9 @@
                     <node concept="2kFOW8" id="6mm$FLYWJ0r" role="2kGFt3">
                       <node concept="3clFbS" id="6mm$FLYWJ0s" role="2VODD2">
                         <node concept="3clFbF" id="6mm$FLYWJ3R" role="3cqZAp">
-                          <node concept="2YIFZM" id="6mm$FLYWKZ9" role="3clFbG">
-                            <ref role="37wK5l" to="elx0:6mm$FLYWJrD" resolve="buildDefineForOutput" />
-                            <ref role="1Pybhc" to="elx0:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
+                          <node concept="2YIFZM" id="1gJVC85P$S7" role="3clFbG">
+                            <ref role="37wK5l" to="apby:6mm$FLYWJrD" resolve="buildDefineForOutput" />
+                            <ref role="1Pybhc" to="apby:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
                             <node concept="2OqwBi" id="6mm$FLYWKZa" role="37wK5m">
                               <node concept="1iwH7S" id="6mm$FLYWKZb" role="2Oq$k0" />
                               <node concept="1bhEwm" id="6mm$FLYWKZc" role="2OqNvi">
@@ -709,9 +725,9 @@
                   <node concept="3zFVjK" id="6mm$FLYWI6e" role="3zH0cK">
                     <node concept="3clFbS" id="6mm$FLYWI6f" role="2VODD2">
                       <node concept="3clFbF" id="6mm$FLYWInn" role="3cqZAp">
-                        <node concept="2YIFZM" id="6mm$FLYWIno" role="3clFbG">
-                          <ref role="37wK5l" to="elx0:1ZsZb$iJNe4" resolve="variableNameForDefinition" />
-                          <ref role="1Pybhc" to="elx0:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
+                        <node concept="2YIFZM" id="1gJVC85P$S5" role="3clFbG">
+                          <ref role="37wK5l" to="apby:1ZsZb$iJNe4" resolve="variableNameForDefinition" />
+                          <ref role="1Pybhc" to="apby:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
                           <node concept="30H73N" id="6mm$FLYWInp" role="37wK5m" />
                         </node>
                       </node>
@@ -983,9 +999,9 @@
               </node>
             </node>
             <node concept="3clFbF" id="2xeYpNCiiAe" role="3cqZAp">
-              <node concept="2YIFZM" id="2xeYpNCiiC5" role="3clFbG">
-                <ref role="37wK5l" to="elx0:2xeYpNChYC8" resolve="collectRecursivelyUsedModules" />
-                <ref role="1Pybhc" to="elx0:2xeYpNChYrb" resolve="DependenciesUtils" />
+              <node concept="2YIFZM" id="1gJVC85P$S3" role="3clFbG">
+                <ref role="37wK5l" to="apby:2xeYpNChYC8" resolve="collectRecursivelyUsedModules" />
+                <ref role="1Pybhc" to="apby:2xeYpNChYrb" resolve="DependenciesUtils" />
                 <node concept="37vLTw" id="2xeYpNCij8r" role="37wK5m">
                   <ref role="3cqZAo" node="2xeYpNCiiE9" resolve="allDependentModules" />
                 </node>
