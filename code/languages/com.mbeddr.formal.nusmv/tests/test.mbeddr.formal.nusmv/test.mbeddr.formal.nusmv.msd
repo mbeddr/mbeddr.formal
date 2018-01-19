@@ -16,9 +16,12 @@
   <languageVersions>
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
+    <language slang="l:b3b9fe18-f0c4-4cea-83c5-45faa74e0911:com.mbeddr.formal.tabular" version="0" />
     <language slang="l:001b2375-3bd5-4d5e-9958-6b3f62dc8548:com.mbeddr.formal.nusmv" version="-1" />
     <language slang="l:22a84bd5-d947-48ae-b9f6-8288eea41dce:com.mbeddr.formal.nusmv.arch" version="0" />
+    <language slang="l:c0e6afd4-e20f-4e33-9970-004cf26b9bf6:com.mbeddr.formal.nusmv.ext" version="0" />
     <language slang="l:c1b1e23f-b677-40b8-a490-e192dd8d78e5:com.mbeddr.formal.nusmv.sm" version="0" />
+    <language slang="l:450c81f1-1811-41ac-a9c8-8fda59f778ca:com.mbeddr.formal.nusmv.tabular" version="0" />
     <language slang="l:cac6875e-14fd-4552-a69e-b3168e27e2ff:com.mbeddr.formal.nusmv.tests" version="0" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="0" />
