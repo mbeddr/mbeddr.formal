@@ -228,7 +228,7 @@
     <property role="TrG5h" value="_010_defines_tests" />
     <node concept="1J0nI2" id="43FRfGK2qsv" role="1J0nHx">
       <property role="TrG5h" value="define_tests_001" />
-      <ref role="1J0niy" node="43FRfGK16Ep" resolve="module_with_spec" />
+      <ref role="1J0niy" node="1gJVC85Ls5F" resolve="simple_defines" />
       <node concept="1J0m7Y" id="43FRfGK4Ib1" role="1J0m7J">
         <node concept="2IPVmt" id="43FRfGK58gJ" role="1J0m7X">
           <property role="2IPVms" value="1" />
@@ -261,7 +261,7 @@
     <node concept="1s0Jup" id="3YQnHsZaT7" role="1J0nHx" />
     <node concept="1J0nI2" id="3YQnHsZbha" role="1J0nHx">
       <property role="TrG5h" value="define_tests_002" />
-      <ref role="1J0niy" node="43FRfGK16Ep" resolve="module_with_spec" />
+      <ref role="1J0niy" node="1gJVC85Ls5F" resolve="simple_defines" />
       <node concept="1J0m7Y" id="3YQnHsZbhb" role="1J0m7J">
         <node concept="2IPVmt" id="3YQnHsZbhc" role="1J0m7X">
           <property role="2IPVms" value="1" />
