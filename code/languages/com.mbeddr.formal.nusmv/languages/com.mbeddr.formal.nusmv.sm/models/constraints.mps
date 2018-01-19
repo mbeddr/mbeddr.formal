@@ -716,5 +716,40 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1gJVC85UM9l">
+    <ref role="1M2myG" to="ahnd:4NkweGhcVOY" resolve="StateVariableRef" />
+    <node concept="1N5Pfh" id="1gJVC85UMdg" role="1Mr941">
+      <ref role="1N5Vy1" to="ahnd:4NkweGhcVQ6" resolve="var" />
+      <node concept="3dgokm" id="1gJVC85UMdo" role="1N6uqs">
+        <node concept="3clFbS" id="1gJVC85UMdq" role="2VODD2">
+          <node concept="3clFbF" id="1gJVC85UMgn" role="3cqZAp">
+            <node concept="2YIFZM" id="1gJVC85UMgo" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1gJVC85UOjT" role="37wK5m">
+                <node concept="2OqwBi" id="1gJVC85UOjU" role="2Oq$k0">
+                  <node concept="2rP1CM" id="1gJVC85UOjV" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1gJVC85UOjW" role="2OqNvi">
+                    <node concept="1xMEDy" id="1gJVC85UOjX" role="1xVPHs">
+                      <node concept="chp4Y" id="1gJVC85UOjY" role="ri$Ld">
+                        <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="1gJVC85UOjZ" role="2OqNvi">
+                  <node concept="1xMEDy" id="1gJVC85UOk0" role="1xVPHs">
+                    <node concept="chp4Y" id="1gJVC85UOk1" role="ri$Ld">
+                      <ref role="cht4Q" to="ahnd:3UuTDIOPiRI" resolve="StateVariableDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

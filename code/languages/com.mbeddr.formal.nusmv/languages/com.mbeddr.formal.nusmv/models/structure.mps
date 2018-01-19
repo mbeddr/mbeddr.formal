@@ -213,8 +213,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lhs" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6NmtaR1V302" resolve="VariableRef" />
       <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
+      <ref role="20lvS9" node="mJkiyMzeTG" resolve="IVariableRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNOn">
@@ -253,6 +253,9 @@
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6NmtaR1SV6O" resolve="VariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="mJkiyMzeTH" role="PzmwI">
+      <ref role="PrY4T" node="mJkiyMzeTG" resolve="IVariableRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1VmI_">
@@ -1040,6 +1043,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2mjHtwTGt9x" resolve="IDefinitionLike" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="mJkiyMzeTG">
+    <property role="EcuMT" value="409635326350126700" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="IVariableRef" />
   </node>
 </model>
 

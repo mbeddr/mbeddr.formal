@@ -1998,5 +1998,17 @@
       <ref role="2$4xQ3" node="7mSH3WnI4Ep" resolve="SM_GRAPHICAL" />
     </node>
   </node>
+  <node concept="24kQdi" id="1gJVC85UR6w">
+    <ref role="1XX52x" to="ahnd:4NkweGhcVOY" resolve="StateVariableRef" />
+    <node concept="1iCGBv" id="1gJVC85UR6B" role="2wV5jI">
+      <ref role="1NtTu8" to="ahnd:4NkweGhcVQ6" resolve="var" />
+      <node concept="1sVBvm" id="1gJVC85UR6D" role="1sWHZn">
+        <node concept="3F0A7n" id="1gJVC85UR6V" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

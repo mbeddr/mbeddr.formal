@@ -144,14 +144,16 @@
   <node concept="1TIwiD" id="4NkweGhcVOY">
     <property role="EcuMT" value="5536191589039455550" />
     <property role="TrG5h" value="StateVariableRef" />
-    <ref role="1TJDcQ" to="gioj:6NmtaR1V302" resolve="VariableRef" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="4NkweGhcVQ6" role="1TKVEi">
       <property role="IQ2ns" value="5536191589039455622" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3UuTDIOPiRI" resolve="StateVariableDeclaration" />
-      <ref role="20ksaX" to="gioj:6NmtaR1V303" resolve="var" />
+    </node>
+    <node concept="PrWs8" id="mJkiyMzeTL" role="PzmwI">
+      <ref role="PrY4T" to="gioj:mJkiyMzeTG" resolve="IVariableRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="4NkweGhcVQz">
