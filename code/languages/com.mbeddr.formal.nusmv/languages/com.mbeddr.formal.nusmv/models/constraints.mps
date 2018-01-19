@@ -398,5 +398,41 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1gJVC85NBbs">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1M2myG" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+    <node concept="1N5Pfh" id="1gJVC85NBbt" role="1Mr941">
+      <ref role="1N5Vy1" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
+      <node concept="3dgokm" id="1gJVC85NBbx" role="1N6uqs">
+        <node concept="3clFbS" id="1gJVC85NBby" role="2VODD2">
+          <node concept="3clFbF" id="1gJVC85NBeu" role="3cqZAp">
+            <node concept="2YIFZM" id="1gJVC85NBev" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="1gJVC85NBew" role="37wK5m">
+                <node concept="2OqwBi" id="1gJVC85NBex" role="2Oq$k0">
+                  <node concept="2rP1CM" id="1gJVC85NBey" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1gJVC85NBez" role="2OqNvi">
+                    <node concept="1xMEDy" id="1gJVC85NBe$" role="1xVPHs">
+                      <node concept="chp4Y" id="1gJVC85NBe_" role="ri$Ld">
+                        <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="1gJVC85NBeA" role="2OqNvi">
+                  <node concept="1xMEDy" id="1gJVC85NBeB" role="1xVPHs">
+                    <node concept="chp4Y" id="1gJVC85NBIn" role="ri$Ld">
+                      <ref role="cht4Q" to="gioj:6NmtaR1SWfR" resolve="EnumerationMember" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
