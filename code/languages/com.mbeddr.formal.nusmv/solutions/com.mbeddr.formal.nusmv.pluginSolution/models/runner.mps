@@ -30,7 +30,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" />
-    <import index="apby" ref="r:cbf2d485-170e-4c61-8ea2-9bef1e4395b5(com.mbeddr.formal.nusmv.tests.util)" />
+    <import index="se73" ref="r:2bad243b-1b8c-4ccd-8ea4-2b77e6c2045e(com.mbeddr.formal.nusmv.tests.util)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -2650,9 +2650,9 @@
           <node concept="3cpWsn" id="1gJVC85McJM" role="3cpWs9">
             <property role="TrG5h" value="oracleVarName" />
             <node concept="17QB3L" id="1gJVC85McJK" role="1tU5fm" />
-            <node concept="10M0yZ" id="1gJVC85P$S1" role="33vP2m">
-              <ref role="3cqZAo" to="apby:1gJVC85LZiJ" resolve="ORACLE_VARIABLE_NAME" />
-              <ref role="1PxDUh" to="apby:1ZsZb$iIXYi" resolve="NuSMVTestsGenerationUtils" />
+            <node concept="10M0yZ" id="mJkiyMDmNl" role="33vP2m">
+              <ref role="3cqZAo" to="se73:mJkiyMDl7t" resolve="ORACLE_VARIABLE_NAME" />
+              <ref role="1PxDUh" to="se73:mJkiyMCuAI" resolve="NuSMVTestsGenerationUtils" />
             </node>
           </node>
         </node>

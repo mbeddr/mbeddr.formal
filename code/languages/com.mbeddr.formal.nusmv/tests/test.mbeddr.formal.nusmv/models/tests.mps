@@ -23,7 +23,9 @@
       </concept>
       <concept id="5536191589039455159" name="com.mbeddr.formal.nusmv.sm.structure.TransitionsAssignment" flags="ng" index="1tTNHs" />
       <concept id="5536191589039455651" name="com.mbeddr.formal.nusmv.sm.structure.Transitions" flags="ng" index="1tTNP8" />
-      <concept id="5536191589039455550" name="com.mbeddr.formal.nusmv.sm.structure.StateVariableRef" flags="ng" index="1tTNRl" />
+      <concept id="5536191589039455550" name="com.mbeddr.formal.nusmv.sm.structure.StateVariableRef" flags="ng" index="1tTNRl">
+        <reference id="5536191589039455622" name="var" index="1tTNPH" />
+      </concept>
       <concept id="5536191589039199144" name="com.mbeddr.formal.nusmv.sm.structure.State" flags="ng" index="1tYPd3" />
       <concept id="3570309108902491816" name="com.mbeddr.formal.nusmv.sm.structure.TransitionRef" flags="ng" index="3JXjYv">
         <reference id="3570309108902491817" name="transition" index="3JXjYu" />
@@ -40,6 +42,9 @@
       <concept id="7320199582619497084" name="com.mbeddr.formal.nusmv.structure.WordConstant" flags="ng" index="rqu30">
         <child id="7320199582619499452" name="value" index="rqu$0" />
         <child id="7320199582619499448" name="size" index="rqu$4" />
+      </concept>
+      <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
+        <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
@@ -117,9 +122,7 @@
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo">
-        <reference id="8482728081213471272" name="outVar" index="1zjgSn" />
-      </concept>
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
@@ -536,8 +539,8 @@
         <node concept="1zoerA" id="5_V$TJxFNKJ" role="32O2ov">
           <property role="TrG5h" value="out" />
           <node concept="1ziNjN" id="5_V$TJxFNLi" role="1zoetD">
-            <node concept="1zjgSo" id="5_V$TJxIbaM" role="1ziNjJ">
-              <ref role="1zjgSn" node="5_V$TJxCJJt" resolve="out1" />
+            <node concept="1zjgSo" id="6WmpcHMJBkI" role="1ziNjJ">
+              <ref role="skqaw" node="5_V$TJxCJJt" resolve="out1" />
             </node>
             <node concept="2He$iJ" id="5_V$TJxIbas" role="1ziNjM">
               <ref role="2He$iI" node="5_V$TJxFNEw" resolve="a1" />
@@ -587,8 +590,8 @@
         <node concept="1zoerA" id="5_V$TJxMsUF" role="32O2ov">
           <property role="TrG5h" value="out" />
           <node concept="1ziNjN" id="1$vmWKMkLjJ" role="1zoetD">
-            <node concept="1zjgSo" id="1$vmWKMkLkI" role="1ziNjJ">
-              <ref role="1zjgSn" node="5_V$TJxCJLv" resolve="out2" />
+            <node concept="1zjgSo" id="6WmpcHMJBkM" role="1ziNjJ">
+              <ref role="skqaw" node="5_V$TJxCJLv" resolve="out2" />
             </node>
             <node concept="2He$iJ" id="1$vmWKMkLjo" role="1ziNjM">
               <ref role="2He$iI" node="1$vmWKMkLfT" resolve="a2" />
@@ -611,8 +614,8 @@
           <node concept="1zigX2" id="1$vmWKMkLgm" role="2HdssA">
             <ref role="1zigX1" node="5_V$TJxCJLs" resolve="add2" />
             <node concept="1ziNjN" id="1$vmWKMkLgQ" role="1zigYY">
-              <node concept="1zjgSo" id="1$vmWKMkLhT" role="1ziNjJ">
-                <ref role="1zjgSn" node="5_V$TJxCJJt" resolve="out1" />
+              <node concept="1zjgSo" id="6WmpcHMJBkQ" role="1ziNjJ">
+                <ref role="skqaw" node="5_V$TJxCJJt" resolve="out1" />
               </node>
               <node concept="2He$iJ" id="1$vmWKMkLgw" role="1ziNjM">
                 <ref role="2He$iI" node="5_V$TJxMsUK" resolve="a1" />
@@ -950,23 +953,20 @@
           </node>
         </node>
         <node concept="2HfkAV" id="1$vmWKMt0Mo" role="2HfkAP">
-          <node concept="2He$iJ" id="1$vmWKMt12D" role="2He$ia">
-            <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
+          <node concept="1tTNRl" id="mJkiyMBS7t" role="2He$ia">
+            <ref role="1tTNPH" node="1$vmWKMsXDr" resolve="_state_" />
           </node>
           <node concept="2HeeqP" id="1$vmWKMt12Q" role="2He$i0">
             <ref role="2HeeqO" node="1$vmWKMsXDt" resolve="Init" />
           </node>
         </node>
         <node concept="1tTNHs" id="1$vmWKMt138" role="2HfkAP">
-          <node concept="1tTNRl" id="1$vmWKMt13w" role="2He$ia">
-            <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
+          <node concept="1tTNRl" id="mJkiyMBSbC" role="2He$ia">
+            <ref role="1tTNPH" node="1$vmWKMsXDr" resolve="_state_" />
           </node>
           <node concept="1tTNP8" id="1$vmWKMt13H" role="2He$i0">
             <node concept="1tTNwp" id="1$vmWKMt13I" role="2H9I2x">
               <property role="TrG5h" value="starting" />
-              <node concept="1tTNRl" id="1$vmWKMt13Q" role="3JXa2C">
-                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
-              </node>
               <node concept="1tS8IT" id="1$vmWKMt142" role="3JZSx7">
                 <ref role="1tS8HL" node="1$vmWKMsXDt" resolve="Init" />
               </node>
@@ -978,6 +978,9 @@
               </node>
               <node concept="1tS8IT" id="1$vmWKMt150" role="2H9I4_">
                 <ref role="1tS8HL" node="1$vmWKMsXDu" resolve="Counting" />
+              </node>
+              <node concept="1tTNRl" id="mJkiyMBSbz" role="3JXa2C">
+                <ref role="1tTNPH" node="1$vmWKMsXDr" resolve="_state_" />
               </node>
             </node>
             <node concept="1tTNwp" id="1$vmWKMt154" role="2H9I2x">
@@ -994,8 +997,8 @@
               <node concept="1tS8IT" id="1$vmWKMt16y" role="2H9I4_">
                 <ref role="1tS8HL" node="1$vmWKMsXDu" resolve="Counting" />
               </node>
-              <node concept="1tTNRl" id="1$vmWKMt15D" role="3JXa2C">
-                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
+              <node concept="1tTNRl" id="mJkiyMzeaX" role="3JXa2C">
+                <ref role="1tTNPH" node="1$vmWKMsXDr" resolve="_state_" />
               </node>
             </node>
             <node concept="1tTNwp" id="1$vmWKMt16B" role="2H9I2x">
@@ -1012,8 +1015,8 @@
               <node concept="1tS8IT" id="1$vmWKMt18m" role="2H9I4_">
                 <ref role="1tS8HL" node="1$vmWKMsXDt" resolve="Init" />
               </node>
-              <node concept="1tTNRl" id="1$vmWKMt17x" role="3JXa2C">
-                <ref role="2He$iI" node="1$vmWKMsXDr" resolve="_state_" />
+              <node concept="1tTNRl" id="mJkiyMzeb2" role="3JXa2C">
+                <ref role="1tTNPH" node="1$vmWKMsXDr" resolve="_state_" />
               </node>
             </node>
           </node>
@@ -1224,6 +1227,7 @@
         <property role="TrG5h" value="stop" />
       </node>
     </node>
+    <node concept="2SQmWS" id="1gJVC85U_hC" role="2HcuB8" />
   </node>
   <node concept="1J0nZ8" id="1$vmWKMtb6Q">
     <property role="TrG5h" value="_200_sm_tests" />
