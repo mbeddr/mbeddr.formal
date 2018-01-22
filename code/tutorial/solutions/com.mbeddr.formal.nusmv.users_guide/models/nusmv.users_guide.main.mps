@@ -5,9 +5,9 @@
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
-    <import index="m6f0" ref="r:0eb0cd32-f456-4fb2-b2bf-88e1b019b19d(_010_nusmv_base)" />
-    <import index="qmbe" ref="r:dc2f2276-db8a-4c75-a8c5-c04c514cae35(_020_nusmv_unit_tests)" />
-    <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_050_nusmv_tables)" />
+    <import index="m6f0" ref="r:0eb0cd32-f456-4fb2-b2bf-88e1b019b19d(_010_features._010_nusmv_base)" />
+    <import index="qmbe" ref="r:dc2f2276-db8a-4c75-a8c5-c04c514cae35(_010_features._020_nusmv_unit_tests)" />
+    <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
