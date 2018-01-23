@@ -3134,12 +3134,17 @@
                       </node>
                       <node concept="liA8E" id="1ZsZb$iREA0" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
-                        <node concept="2OqwBi" id="1ZsZb$iRGNZ" role="37wK5m">
-                          <node concept="37vLTw" id="1ZsZb$iRFko" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1ZsZb$iRyj6" resolve="specificationMarker" />
+                        <node concept="3cpWs3" id="6WmpcHMOPKi" role="37wK5m">
+                          <node concept="3cmrfG" id="6WmpcHMOPLi" role="3uHU7w">
+                            <property role="3cmrfH" value="1" />
                           </node>
-                          <node concept="liA8E" id="1ZsZb$iRK6k" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                          <node concept="2OqwBi" id="1ZsZb$iRGNZ" role="3uHU7B">
+                            <node concept="37vLTw" id="1ZsZb$iRFko" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1ZsZb$iRyj6" resolve="specificationMarker" />
+                            </node>
+                            <node concept="liA8E" id="1ZsZb$iRK6k" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                            </node>
                           </node>
                         </node>
                         <node concept="2OqwBi" id="1ZsZb$iRNnB" role="37wK5m">
