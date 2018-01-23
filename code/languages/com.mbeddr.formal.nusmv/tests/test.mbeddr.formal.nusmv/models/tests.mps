@@ -46,6 +46,9 @@
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
+      <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
+        <child id="8482728081216646944" name="" index="1yBDGv" />
+      </concept>
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
         <child id="7842584090744231298" name="guard" index="2H9I4J" />
@@ -104,9 +107,7 @@
         <child id="8482728081222732063" name="var" index="1yeVOw" />
       </concept>
       <concept id="8482728081216649443" name="com.mbeddr.formal.nusmv.structure.AG" flags="ng" index="1yBCNs" />
-      <concept id="8482728081216646940" name="com.mbeddr.formal.nusmv.structure.SpecSection" flags="ng" index="1yBDGz">
-        <child id="8482728081216646944" name="exp" index="1yBDGv" />
-      </concept>
+      <concept id="8482728081216646940" name="com.mbeddr.formal.nusmv.structure.SpecSection" flags="ng" index="1yBDGz" />
       <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
         <child id="8482728081216657211" name="exp" index="1yBIc4" />
       </concept>

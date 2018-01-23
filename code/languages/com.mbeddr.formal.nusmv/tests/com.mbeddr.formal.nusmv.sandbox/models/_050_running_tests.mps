@@ -13,6 +13,9 @@
       </concept>
       <concept id="2858146662931636881" name="com.mbeddr.formal.nusmv.structure.GreaterEqualsExpression" flags="ng" index="nE0YI" />
       <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
+      <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
+        <child id="8482728081216646944" name="" index="1yBDGv" />
+      </concept>
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
         <child id="7842584090744231298" name="guard" index="2H9I4J" />
@@ -58,9 +61,7 @@
       <concept id="5536191589037395463" name="com.mbeddr.formal.nusmv.structure.EmptyVariableDeclaration" flags="ng" index="1tKcVG" />
       <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
       <concept id="8482728081216649443" name="com.mbeddr.formal.nusmv.structure.AG" flags="ng" index="1yBCNs" />
-      <concept id="8482728081216646940" name="com.mbeddr.formal.nusmv.structure.SpecSection" flags="ng" index="1yBDGz">
-        <child id="8482728081216646944" name="exp" index="1yBDGv" />
-      </concept>
+      <concept id="8482728081216646940" name="com.mbeddr.formal.nusmv.structure.SpecSection" flags="ng" index="1yBDGz" />
       <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
         <child id="8482728081216657211" name="exp" index="1yBIc4" />
       </concept>
@@ -69,7 +70,7 @@
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.OutVariableRef" flags="ng" index="1zjgSo">
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo">
         <reference id="8482728081213471272" name="outVar" index="1zjgSn" />
       </concept>
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
