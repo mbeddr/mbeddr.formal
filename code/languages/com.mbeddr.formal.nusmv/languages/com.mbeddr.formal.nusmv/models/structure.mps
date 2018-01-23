@@ -482,17 +482,7 @@
     <property role="TrG5h" value="SpecSection" />
     <property role="34LRSv" value="SPEC" />
     <property role="3GE5qa" value="spec" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7mSH3Wn9yWw" role="1TKVEi">
-      <property role="IQ2ns" value="8482728081216646944" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="exp" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="7mSH3Wn9yWt" role="PzmwI">
-      <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
-    </node>
+    <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
   </node>
   <node concept="1TIwiD" id="7mSH3Wn9zzy">
     <property role="EcuMT" value="8482728081216649442" />
@@ -504,10 +494,11 @@
   </node>
   <node concept="1TIwiD" id="7mSH3Wn9zzz">
     <property role="EcuMT" value="8482728081216649443" />
-    <property role="3GE5qa" value="expressions.temporal" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.unary" />
     <property role="TrG5h" value="AG" />
     <property role="34LRSv" value="AG" />
-    <ref role="1TJDcQ" node="7mSH3Wn9_sU" resolve="UnaryTemporalExpression" />
+    <property role="R4oN_" value="forall globally" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_Ry" resolve="UnaryCTLExpression" />
   </node>
   <node concept="1TIwiD" id="7mSH3Wn9_sU">
     <property role="EcuMT" value="8482728081216657210" />
@@ -538,10 +529,11 @@
   </node>
   <node concept="1TIwiD" id="7mSH3WncQ$j">
     <property role="EcuMT" value="8482728081217513747" />
-    <property role="3GE5qa" value="expressions.temporal" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.unary" />
     <property role="TrG5h" value="AF" />
     <property role="34LRSv" value="AF" />
-    <ref role="1TJDcQ" node="7mSH3Wn9_sU" resolve="UnaryTemporalExpression" />
+    <property role="R4oN_" value="forall finally" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_Ry" resolve="UnaryCTLExpression" />
   </node>
   <node concept="1TIwiD" id="7mSH3Wnduvu">
     <property role="EcuMT" value="8482728081217677278" />
@@ -1048,6 +1040,113 @@
     <property role="EcuMT" value="409635326350126700" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="IVariableRef" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMKsPT">
+    <property role="EcuMT" value="8004696212664077689" />
+    <property role="3GE5qa" value="spec" />
+    <property role="TrG5h" value="AbstractSpecSection" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6WmpcHMKsPU" role="PzmwI">
+      <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="7mSH3Wn9yWw" role="1TKVEi">
+      <property role="IQ2ns" value="8482728081216646944" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMKvdD">
+    <property role="EcuMT" value="8004696212664087401" />
+    <property role="3GE5qa" value="spec" />
+    <property role="TrG5h" value="CTLSpecSection" />
+    <property role="34LRSv" value="CTLSPEC" />
+    <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQvoC">
+    <property role="EcuMT" value="8004696212665660968" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.unary" />
+    <property role="TrG5h" value="AX" />
+    <property role="34LRSv" value="AX" />
+    <property role="R4oN_" value="forall next state" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_Ry" resolve="UnaryCTLExpression" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQ_Rx">
+    <property role="EcuMT" value="8004696212665687521" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.unary" />
+    <property role="TrG5h" value="EG" />
+    <property role="34LRSv" value="EG" />
+    <property role="R4oN_" value="exists globally" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_Ry" resolve="UnaryCTLExpression" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQ_Ry">
+    <property role="EcuMT" value="8004696212665687522" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.base" />
+    <property role="TrG5h" value="UnaryCTLExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7mSH3Wn9_sU" resolve="UnaryTemporalExpression" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQ_Rz">
+    <property role="EcuMT" value="8004696212665687523" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.unary" />
+    <property role="TrG5h" value="EF" />
+    <property role="34LRSv" value="EF" />
+    <property role="R4oN_" value="exists finally" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_Ry" resolve="UnaryCTLExpression" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQ_R$">
+    <property role="EcuMT" value="8004696212665687524" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.unary" />
+    <property role="TrG5h" value="EX" />
+    <property role="34LRSv" value="EX" />
+    <property role="R4oN_" value="exists next state" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_Ry" resolve="UnaryCTLExpression" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQ_RC">
+    <property role="EcuMT" value="8004696212665687528" />
+    <property role="3GE5qa" value="expressions.temporal" />
+    <property role="TrG5h" value="BinaryTemporalExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7mSH3Wn9zzy" resolve="TemporalExpression" />
+    <node concept="1TJgyj" id="6WmpcHMQ_RD" role="1TKVEi">
+      <property role="IQ2ns" value="8004696212665687529" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6WmpcHMQ_RE" role="1TKVEi">
+      <property role="IQ2ns" value="8004696212665687530" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp2" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQ_RL">
+    <property role="EcuMT" value="8004696212665687537" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.base" />
+    <property role="TrG5h" value="BinaryCTLExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_RC" resolve="BinaryTemporalExpression" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQ_RM">
+    <property role="EcuMT" value="8004696212665687538" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.binary" />
+    <property role="TrG5h" value="EU" />
+    <property role="34LRSv" value="EU" />
+    <property role="R4oN_" value="exists until" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_RL" resolve="BinaryCTLExpression" />
+  </node>
+  <node concept="1TIwiD" id="6WmpcHMQBt6">
+    <property role="EcuMT" value="8004696212665694022" />
+    <property role="3GE5qa" value="expressions.temporal.ctl.binary" />
+    <property role="TrG5h" value="AU" />
+    <property role="34LRSv" value="AU" />
+    <property role="R4oN_" value="forall until" />
+    <ref role="1TJDcQ" node="6WmpcHMQ_RL" resolve="BinaryCTLExpression" />
   </node>
 </model>
 

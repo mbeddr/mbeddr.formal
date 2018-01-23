@@ -309,8 +309,8 @@
               <node concept="nLn13" id="7mSH3Wn9zF9" role="2Oq$k0" />
               <node concept="2Xjw5R" id="7mSH3Wn9$b4" role="2OqNvi">
                 <node concept="1xMEDy" id="7mSH3Wn9$b6" role="1xVPHs">
-                  <node concept="chp4Y" id="7mSH3Wn9$k9" role="ri$Ld">
-                    <ref role="cht4Q" to="gioj:7mSH3Wn9yWs" resolve="SpecSection" />
+                  <node concept="chp4Y" id="6WmpcHMNWcP" role="ri$Ld">
+                    <ref role="cht4Q" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="7mSH3Wn9$Cv" role="1xVPHs" />
