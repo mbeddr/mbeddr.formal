@@ -16,6 +16,7 @@
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="se73" ref="r:2bad243b-1b8c-4ccd-8ea4-2b77e6c2045e(com.mbeddr.formal.nusmv.tests.util)" />
+    <import index="psnb" ref="r:2e7496be-1823-4cc2-8679-50be80c3cf85(util)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -159,7 +160,7 @@
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
-        <child id="8482728081216646944" name="" index="1yBDGv" />
+        <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
@@ -1000,9 +1001,9 @@
               </node>
             </node>
             <node concept="3clFbF" id="2xeYpNCiiAe" role="3cqZAp">
-              <node concept="2YIFZM" id="1gJVC85P$S3" role="3clFbG">
-                <ref role="1Pybhc" to="se73:mJkiyMCeSe" resolve="DependenciesUtils" />
-                <ref role="37wK5l" to="se73:mJkiyMCeUn" resolve="collectRecursivelyUsedModules" />
+              <node concept="2YIFZM" id="6Kf5KB6$xXd" role="3clFbG">
+                <ref role="37wK5l" to="psnb:mJkiyMCeUn" resolve="collectRecursivelyUsedModules" />
+                <ref role="1Pybhc" to="psnb:mJkiyMCeSe" resolve="DependenciesUtils" />
                 <node concept="37vLTw" id="2xeYpNCij8r" role="37wK5m">
                   <ref role="3cqZAo" node="2xeYpNCiiE9" resolve="allDependentModules" />
                 </node>
