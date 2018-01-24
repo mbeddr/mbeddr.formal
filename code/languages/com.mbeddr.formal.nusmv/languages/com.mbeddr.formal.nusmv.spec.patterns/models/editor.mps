@@ -8,6 +8,7 @@
   <imports>
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="aoh3" ref="r:f2f03ae8-d8d7-4909-bf68-6c512b1415d7(com.mbeddr.formal.nusmv.spec.patterns.structure)" implicit="true" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -21,6 +22,9 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -54,6 +58,7 @@
       </node>
       <node concept="3F0ifn" id="6WmpcHMKsPs" role="3EZMnx">
         <property role="3F0ifm" value="is false" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6WmpcHMKsPI" role="3EZMnx">
         <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
@@ -66,6 +71,7 @@
     <ref role="1XX52x" to="aoh3:6WmpcHMKwtj" resolve="GloballyScope" />
     <node concept="3F0ifn" id="6WmpcHMKwtm" role="2wV5jI">
       <property role="3F0ifm" value="globally" />
+      <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
     </node>
   </node>
   <node concept="24kQdi" id="6WmpcHMKwtT">
@@ -74,6 +80,7 @@
     <node concept="3EZMnI" id="6WmpcHMKwtV" role="2wV5jI">
       <node concept="3F0ifn" id="6WmpcHMKwu8" role="3EZMnx">
         <property role="3F0ifm" value="after" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6WmpcHMKwuk" role="3EZMnx">
         <ref role="1NtTu8" to="aoh3:6WmpcHMKwts" resolve="q" />
@@ -87,6 +94,7 @@
     <node concept="3EZMnI" id="6WmpcHMKwuW" role="2wV5jI">
       <node concept="3F0ifn" id="6WmpcHMKwv9" role="3EZMnx">
         <property role="3F0ifm" value="before" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6WmpcHMKwvt" role="3EZMnx">
         <ref role="1NtTu8" to="aoh3:6WmpcHMKwut" resolve="r" />
