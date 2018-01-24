@@ -78,6 +78,9 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -426,6 +429,7 @@
         </node>
         <node concept="3F0ifn" id="3UuTDIOPeuV" role="3EZMnx">
           <property role="3F0ifm" value="STATE-MACHINE" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="3UuTDIOPevb" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -1284,6 +1288,7 @@
     <node concept="3EZMnI" id="6NmtaR1VSYI" role="2wV5jI">
       <node concept="3F0ifn" id="6NmtaR1VSZ1" role="3EZMnx">
         <property role="3F0ifm" value="next" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="6NmtaR1VSZj" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1459,6 +1464,7 @@
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9hr" role="3EZMnx">
           <property role="3F0ifm" value="case" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="l2Vlx" id="6NmtaR1W9h5" role="2iSdaV" />
       </node>
@@ -1541,6 +1547,7 @@
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9kn" role="3EZMnx">
           <property role="3F0ifm" value="esac" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9lK" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -1851,6 +1858,7 @@
         </node>
         <node concept="3F0ifn" id="1$vmWKMrg88" role="3EZMnx">
           <property role="3F0ifm" value="case" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="l2Vlx" id="1$vmWKMrg89" role="2iSdaV" />
       </node>
@@ -1940,6 +1948,7 @@
         </node>
         <node concept="3F0ifn" id="1$vmWKMrg8k" role="3EZMnx">
           <property role="3F0ifm" value="esac" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="1$vmWKMrg8l" role="3EZMnx">
           <property role="3F0ifm" value=";" />
