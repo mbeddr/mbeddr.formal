@@ -479,6 +479,7 @@
         </node>
         <node concept="3F0ifn" id="6NmtaR1SUMF" role="3EZMnx">
           <property role="3F0ifm" value="MODULE" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="6NmtaR1SUMX" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -678,6 +679,7 @@
         </node>
         <node concept="PMmxH" id="3ZkhnXRlNLE" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6NmtaR1Ul64" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -749,6 +751,7 @@
         </node>
         <node concept="PMmxH" id="4NkweGh8PId" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6NmtaR1V2UU" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -823,6 +826,7 @@
     <node concept="3EZMnI" id="6NmtaR1V30U" role="2wV5jI">
       <node concept="3F0ifn" id="6NmtaR1V31d" role="3EZMnx">
         <property role="3F0ifm" value="init" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="6NmtaR1V31v" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -885,6 +889,7 @@
     <node concept="3EZMnI" id="6NmtaR1VSYI" role="2wV5jI">
       <node concept="3F0ifn" id="6NmtaR1VSZ1" role="3EZMnx">
         <property role="3F0ifm" value="next" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="6NmtaR1VSZj" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -950,6 +955,7 @@
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9hr" role="3EZMnx">
           <property role="3F0ifm" value="case" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="l2Vlx" id="6NmtaR1W9h5" role="2iSdaV" />
       </node>
@@ -974,6 +980,7 @@
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9kn" role="3EZMnx">
           <property role="3F0ifm" value="esac" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9lK" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -1227,6 +1234,7 @@
     <node concept="3EZMnI" id="7mSH3Wn9yWY" role="2wV5jI">
       <node concept="3F0ifn" id="7mSH3Wn9yX8" role="3EZMnx">
         <property role="3F0ifm" value="SPEC" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="7mSH3Wn9yXh" role="3EZMnx">
         <ref role="1NtTu8" to="gioj:7mSH3Wn9yWw" resolve="expr" />
@@ -1440,6 +1448,7 @@
         </node>
         <node concept="3F0ifn" id="7mSH3WnvMGX" role="3EZMnx">
           <property role="3F0ifm" value="TRANS" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="7mSH3WnvMGY" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -1997,6 +2006,7 @@
     <node concept="3EZMnI" id="6WmpcHMKKqc" role="2wV5jI">
       <node concept="3F0ifn" id="6WmpcHMKKqd" role="3EZMnx">
         <property role="3F0ifm" value="CTLSPEC" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6WmpcHMMALi" role="3EZMnx">
         <ref role="1NtTu8" to="gioj:7mSH3Wn9yWw" resolve="expr" />
@@ -2016,6 +2026,7 @@
     <node concept="3EZMnI" id="6WmpcHMP6ul" role="2wV5jI">
       <node concept="PMmxH" id="6WmpcHMP6uy" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6WmpcHMP6uH" role="3EZMnx">
         <ref role="1NtTu8" to="gioj:7mSH3Wn9_sV" resolve="exp" />
