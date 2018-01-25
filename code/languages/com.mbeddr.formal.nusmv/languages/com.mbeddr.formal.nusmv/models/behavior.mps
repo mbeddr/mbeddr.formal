@@ -296,6 +296,26 @@
       </node>
       <node concept="17QB3L" id="5_V$TJxG0Cs" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6Kf5KB6G6x5" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="variableDeclaration" />
+      <ref role="13i0hy" node="6Kf5KB6G5PF" resolve="variableDeclaration" />
+      <node concept="3Tm1VV" id="6Kf5KB6G6x6" role="1B3o_S" />
+      <node concept="3clFbS" id="6Kf5KB6G6x9" role="3clF47">
+        <node concept="3clFbF" id="6Kf5KB6G6BI" role="3cqZAp">
+          <node concept="2OqwBi" id="6Kf5KB6G6M0" role="3clFbG">
+            <node concept="13iPFW" id="6Kf5KB6G6BH" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6Kf5KB6G7bO" role="2OqNvi">
+              <ref role="3Tt5mk" to="gioj:6NmtaR1V303" resolve="var" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6Kf5KB6G6xa" role="3clF45">
+        <ref role="ehGHo" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5_V$TJxG2rJ">
     <property role="3GE5qa" value="expressions.dot" />
@@ -474,6 +494,23 @@
     </node>
     <node concept="13hLZK" id="2mjHtwTKZM4" role="13h7CW">
       <node concept="3clFbS" id="2mjHtwTKZM5" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6Kf5KB6G5Pw">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="13h7C2" to="gioj:mJkiyMzeTG" resolve="IVariableRef" />
+    <node concept="13i0hz" id="6Kf5KB6G5PF" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="variableDeclaration" />
+      <node concept="3Tm1VV" id="6Kf5KB6G5PG" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6Kf5KB6G5Qf" role="3clF45">
+        <ref role="ehGHo" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
+      </node>
+      <node concept="3clFbS" id="6Kf5KB6G5PI" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="6Kf5KB6G5Px" role="13h7CW">
+      <node concept="3clFbS" id="6Kf5KB6G5Py" role="2VODD2" />
     </node>
   </node>
 </model>

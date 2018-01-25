@@ -11,6 +11,7 @@
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -322,6 +323,26 @@
     <ref role="13h7C2" to="ahnd:4NkweGhcVOY" resolve="StateVariableRef" />
     <node concept="13hLZK" id="1ZsZb$irBUx" role="13h7CW">
       <node concept="3clFbS" id="1ZsZb$irBUy" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6Kf5KB6G5Rf" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="variableDeclaration" />
+      <ref role="13i0hy" to="23hk:6Kf5KB6G5PF" resolve="variableDeclaration" />
+      <node concept="3Tm1VV" id="6Kf5KB6G5Rg" role="1B3o_S" />
+      <node concept="3clFbS" id="6Kf5KB6G5Rj" role="3clF47">
+        <node concept="3clFbF" id="6Kf5KB6G5RY" role="3cqZAp">
+          <node concept="2OqwBi" id="6Kf5KB6G62g" role="3clFbG">
+            <node concept="13iPFW" id="6Kf5KB6G5RX" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6Kf5KB6G6s4" role="2OqNvi">
+              <ref role="3Tt5mk" to="ahnd:4NkweGhcVQ6" resolve="var" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6Kf5KB6G5Rk" role="3clF45">
+        <ref role="ehGHo" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1ZsZb$iv48y">

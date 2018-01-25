@@ -1427,7 +1427,7 @@
     <ref role="1XX52x" to="ahnd:36cijvuunqC" resolve="TransitionRef" />
     <node concept="3EZMnI" id="36cijvuunr9" role="2wV5jI">
       <node concept="3F0ifn" id="36cijvuunrp" role="3EZMnx">
-        <property role="3F0ifm" value="transition" />
+        <property role="3F0ifm" value="guard_of" />
         <node concept="VechU" id="39cjjo2ketW" role="3F10Kt">
           <property role="Vb096" value="lightGray" />
         </node>
