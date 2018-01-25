@@ -565,6 +565,9 @@
         <node concept="3_I8Xc" id="4aeOpjl$fXD" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
         </node>
+        <node concept="3_I8Xc" id="6Kf5KB6RmeW" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1nJh0raVyYj" resolve="modelchecker.jar" />
+        </node>
         <node concept="3ygNvl" id="4aeOpjlDTTO" role="39821P">
           <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
         </node>
@@ -715,6 +718,9 @@
         </node>
         <node concept="3LEDTy" id="1gJVC85JRof" role="3LEDUa">
           <ref role="3LEDTV" node="1gJVC85JQA9" resolve="com.mbeddr.formal.nusmv.ext" />
+        </node>
+        <node concept="3LEDTy" id="6Kf5KB6FD_$" role="3LEDUa">
+          <ref role="3LEDTV" node="6Kf5KB6_1El" resolve="com.mbeddr.formal.nusmv.spec.patterns" />
         </node>
       </node>
     </node>
