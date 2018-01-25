@@ -1045,6 +1045,8 @@
     <property role="EcuMT" value="8004696212664077689" />
     <property role="3GE5qa" value="spec" />
     <property role="TrG5h" value="AbstractSpecSection" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6WmpcHMKsPU" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
