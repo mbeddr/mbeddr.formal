@@ -87,5 +87,9 @@
       <property role="1uS6qv" value="4" />
     </node>
   </node>
+  <node concept="PlHQZ" id="6Kf5KB6TZVg">
+    <property role="EcuMT" value="7786467611506114256" />
+    <property role="TrG5h" value="ISimulationEntryPoint" />
+  </node>
 </model>
 
