@@ -84,6 +84,9 @@
     <node concept="PrWs8" id="6Kf5KB6UiOT" role="PzmwI">
       <ref role="PrY4T" to="b19z:6Kf5KB6TZVg" resolve="ISimulationEntryPoint" />
     </node>
+    <node concept="PrWs8" id="6Kf5KB75yDC" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="43FRfGJUExp" role="1TKVEi">
       <property role="IQ2ns" value="4678075609353201753" />
       <property role="20lmBu" value="reference" />

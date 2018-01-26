@@ -107,6 +107,9 @@
     <node concept="PrWs8" id="5_V$TJxCJMo" role="PzmwI">
       <ref role="PrY4T" node="5_V$TJxCJMd" resolve="ISystemContent" />
     </node>
+    <node concept="PrWs8" id="6Kf5KB75xjZ" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SULQ">
     <property role="EcuMT" value="7842584090743385206" />

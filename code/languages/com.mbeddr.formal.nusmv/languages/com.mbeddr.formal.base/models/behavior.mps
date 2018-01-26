@@ -25,8 +25,13 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
@@ -40,10 +45,17 @@
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
     </language>
   </registry>
@@ -91,6 +103,26 @@
       <node concept="3Tm1VV" id="6Kf5KB6U0bj" role="1B3o_S" />
       <node concept="3cqZAl" id="6Kf5KB6U0c2" role="3clF45" />
       <node concept="3clFbS" id="6Kf5KB6U0bl" role="3clF47" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6Kf5KB75w8S">
+    <ref role="13h7C2" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
+    <node concept="13i0hz" id="6Kf5KB75w93" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="visibleElementsInScope" />
+      <node concept="3Tm1VV" id="6Kf5KB75w94" role="1B3o_S" />
+      <node concept="A3Dl8" id="6Kf5KB75x9P" role="3clF45">
+        <node concept="3Tqbb2" id="6Kf5KB75x9Q" role="A3Ik2" />
+      </node>
+      <node concept="3clFbS" id="6Kf5KB75w96" role="3clF47" />
+      <node concept="37vLTG" id="6Kf5KB75waV" role="3clF46">
+        <property role="TrG5h" value="c" />
+        <node concept="3bZ5Sz" id="6Kf5KB75wbx" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="6Kf5KB75w8T" role="13h7CW">
+      <node concept="3clFbS" id="6Kf5KB75w8U" role="2VODD2" />
     </node>
   </node>
 </model>

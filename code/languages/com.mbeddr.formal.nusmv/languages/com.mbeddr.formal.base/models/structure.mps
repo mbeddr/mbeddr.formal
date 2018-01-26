@@ -91,5 +91,9 @@
     <property role="EcuMT" value="7786467611506114256" />
     <property role="TrG5h" value="ISimulationEntryPoint" />
   </node>
+  <node concept="PlHQZ" id="6Kf5KB75w8u">
+    <property role="EcuMT" value="7786467611509129758" />
+    <property role="TrG5h" value="IVisibleElementsScopeProvider" />
+  </node>
 </model>
 
