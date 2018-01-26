@@ -31,7 +31,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" />
     <import index="se73" ref="r:2bad243b-1b8c-4ccd-8ea4-2b77e6c2045e(com.mbeddr.formal.nusmv.tests.util)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -44,6 +44,7 @@
       </concept>
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="1215695201514" name="jetbrains.mps.baseLanguage.structure.MinusAssignmentExpression" flags="nn" index="d5anL" />
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -260,6 +261,13 @@
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -279,12 +287,6 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -4106,8 +4108,8 @@
     </node>
   </node>
   <node concept="312cEu" id="2xeYpNCeotf">
-    <property role="TrG5h" value="NuSMVSimulator" />
-    <property role="3GE5qa" value="simulator" />
+    <property role="TrG5h" value="NuSMVTestCaseSimulator" />
+    <property role="3GE5qa" value="simulator.testcase" />
     <node concept="3Tm1VV" id="2xeYpNCeotg" role="1B3o_S" />
     <node concept="3uibUv" id="2xeYpNCepgP" role="1zkMxy">
       <ref role="3uigEE" node="1ZsZb$iRm$D" resolve="NuSMVAnalyzerBase" />
@@ -4295,8 +4297,13 @@
               <node concept="2YIFZM" id="2xeYpNCztJw" role="37vLTx">
                 <ref role="37wK5l" node="2xeYpNCfPgd" resolve="liftSimulationTrace" />
                 <ref role="1Pybhc" node="2xeYpNCxZf$" resolve="NuSMVSimulationTraceLifter" />
-                <node concept="37vLTw" id="2xeYpNCztJx" role="37wK5m">
-                  <ref role="3cqZAo" node="2xeYpNCeqdD" resolve="testCase" />
+                <node concept="2OqwBi" id="6Kf5KB6TmYK" role="37wK5m">
+                  <node concept="37vLTw" id="2xeYpNCztJx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2xeYpNCeqdD" resolve="testCase" />
+                  </node>
+                  <node concept="3TrEf2" id="6Kf5KB6Tno1" role="2OqNvi">
+                    <ref role="3Tt5mk" to="fnq2:43FRfGJUExp" resolve="module" />
+                  </node>
                 </node>
                 <node concept="37vLTw" id="2xeYpNCztJy" role="37wK5m">
                   <ref role="3cqZAo" node="2xeYpNCesTh" resolve="result" />
@@ -4351,10 +4358,13 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2xeYpNCesPB" role="jymVt" />
+    <node concept="NWlO9" id="6Kf5KB6TqI2" role="lGtFl">
+      <property role="NWlVz" value="Simulates the trace from test-case." />
+    </node>
   </node>
   <node concept="312cEu" id="2xeYpNCfDJV">
     <property role="TrG5h" value="NuSMVSimulatorFactory" />
-    <property role="3GE5qa" value="simulator" />
+    <property role="3GE5qa" value="simulator.testcase" />
     <node concept="3Tm1VV" id="2xeYpNCfDJW" role="1B3o_S" />
     <node concept="3uibUv" id="2xeYpNCfDJX" role="1zkMxy">
       <ref role="3uigEE" to="2ocj:5uqRFp8ViLO" resolve="AnalyzerFactory" />
@@ -4484,7 +4494,7 @@
         <node concept="3clFbF" id="2xeYpNCfDKM" role="3cqZAp">
           <node concept="2ShNRf" id="2xeYpNCfDKN" role="3clFbG">
             <node concept="1pGfFk" id="2xeYpNCfDKO" role="2ShVmc">
-              <ref role="37wK5l" node="2xeYpNCeptc" resolve="NuSMVSimulator" />
+              <ref role="37wK5l" node="2xeYpNCeptc" resolve="NuSMVTestCaseSimulator" />
               <node concept="37vLTw" id="2xeYpNCfDKP" role="37wK5m">
                 <ref role="3cqZAo" node="2xeYpNCfDJZ" resolve="toolAdapter" />
               </node>
@@ -4529,6 +4539,10 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="6Kf5KB6Xq6$" role="3clF46">
+        <property role="TrG5h" value="simulationEntryNode" />
+        <node concept="3Tqbb2" id="6Kf5KB6Xq6_" role="1tU5fm" />
+      </node>
       <node concept="3clFbS" id="3YQnHsZl7L" role="3clF47">
         <node concept="3clFbF" id="3YQnHsZlbm" role="3cqZAp">
           <node concept="37vLTI" id="3YQnHsZlPL" role="3clFbG">
@@ -4537,6 +4551,21 @@
             </node>
             <node concept="37vLTw" id="2xeYpNCxyS4" role="37vLTJ">
               <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+            </node>
+          </node>
+        </node>
+        <node concept="1QHqEO" id="6Kf5KB6Xq8Q" role="3cqZAp">
+          <node concept="1QHqEC" id="6Kf5KB6Xq8R" role="1QHqEI">
+            <node concept="3clFbS" id="6Kf5KB6Xq8S" role="1bW5cS">
+              <node concept="3clFbF" id="6Kf5KB6Xq8T" role="3cqZAp">
+                <node concept="2YIFZM" id="6Kf5KB6Xq8U" role="3clFbG">
+                  <ref role="37wK5l" node="2mjHtwTopeo" resolve="doPerformStep" />
+                  <ref role="1Pybhc" node="2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+                  <node concept="37vLTw" id="6Kf5KB6Xq8V" role="37wK5m">
+                    <ref role="3cqZAo" node="6Kf5KB6Xq6$" resolve="simulationEntryNode" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -4551,39 +4580,25 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="3YQnHsZq3P" role="3clF47">
-        <node concept="3clFbJ" id="3YQnHsZwJS" role="3cqZAp">
-          <node concept="3clFbS" id="3YQnHsZwJU" role="3clFbx">
-            <node concept="3clFbF" id="2mjHtwTopet" role="3cqZAp">
-              <node concept="2YIFZM" id="2mjHtwTopes" role="3clFbG">
-                <ref role="1Pybhc" node="2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
-                <ref role="37wK5l" node="2mjHtwTopeo" resolve="doPerformStep" />
-                <node concept="37vLTw" id="2mjHtwToper" role="37wK5m">
-                  <ref role="3cqZAo" node="3YQnHsZqbM" resolve="tc" />
+        <node concept="1QHqEO" id="6Kf5KB6Wpjp" role="3cqZAp">
+          <node concept="1QHqEC" id="6Kf5KB6Wpjr" role="1QHqEI">
+            <node concept="3clFbS" id="6Kf5KB6Wpjt" role="1bW5cS">
+              <node concept="3clFbF" id="3YQnHsZK9m" role="3cqZAp">
+                <node concept="3uNrnE" id="3YQnHsZKRU" role="3clFbG">
+                  <node concept="37vLTw" id="2xeYpNCxySn" role="2$L3a6">
+                    <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+                  </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbF" id="3YQnHsZK9m" role="3cqZAp">
-              <node concept="3uNrnE" id="3YQnHsZKRU" role="3clFbG">
-                <node concept="37vLTw" id="2xeYpNCxySn" role="2$L3a6">
-                  <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+              <node concept="3clFbF" id="2mjHtwTopet" role="3cqZAp">
+                <node concept="2YIFZM" id="2mjHtwTopes" role="3clFbG">
+                  <ref role="1Pybhc" node="2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+                  <ref role="37wK5l" node="2mjHtwTopeo" resolve="doPerformStep" />
+                  <node concept="37vLTw" id="2mjHtwToper" role="37wK5m">
+                    <ref role="3cqZAo" node="3YQnHsZqbM" resolve="simulationEntryNode" />
+                  </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3eOVzh" id="3YQnHsZ$Or" role="3clFbw">
-            <node concept="2OqwBi" id="3YQnHsZG4I" role="3uHU7w">
-              <node concept="2OqwBi" id="3YQnHsZ_hl" role="2Oq$k0">
-                <node concept="37vLTw" id="3YQnHsZ$ST" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3YQnHsZqbM" resolve="tc" />
-                </node>
-                <node concept="3Tsc0h" id="3YQnHsZ_IH" role="2OqNvi">
-                  <ref role="3TtcxE" to="fnq2:43FRfGJUFOk" resolve="steps" />
-                </node>
-              </node>
-              <node concept="34oBXx" id="3YQnHsZJTR" role="2OqNvi" />
-            </node>
-            <node concept="37vLTw" id="2xeYpNCxySs" role="3uHU7B">
-              <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
             </node>
           </node>
         </node>
@@ -4591,10 +4606,8 @@
       <node concept="3Tm1VV" id="3YQnHsZpWI" role="1B3o_S" />
       <node concept="3cqZAl" id="3YQnHsZq3E" role="3clF45" />
       <node concept="37vLTG" id="3YQnHsZqbM" role="3clF46">
-        <property role="TrG5h" value="tc" />
-        <node concept="3Tqbb2" id="3YQnHsZqbL" role="1tU5fm">
-          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-        </node>
+        <property role="TrG5h" value="simulationEntryNode" />
+        <node concept="3Tqbb2" id="3YQnHsZqbL" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="2mjHtwToqu7" role="jymVt" />
@@ -4604,34 +4617,28 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2mjHtwToqFi" role="3clF47">
-        <node concept="3clFbJ" id="2mjHtwToqFj" role="3cqZAp">
-          <node concept="3clFbS" id="2mjHtwToqFk" role="3clFbx">
-            <node concept="3clFbF" id="2mjHtwTosr4" role="3cqZAp">
-              <node concept="d5anL" id="2mjHtwTou0N" role="3clFbG">
-                <node concept="3cmrfG" id="2mjHtwTou2i" role="37vLTx">
-                  <property role="3cmrfH" value="2" />
-                </node>
-                <node concept="37vLTw" id="2mjHtwTot6A" role="37vLTJ">
-                  <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2mjHtwToqFl" role="3cqZAp">
-              <node concept="2YIFZM" id="2mjHtwToqFm" role="3clFbG">
-                <ref role="1Pybhc" node="2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
-                <ref role="37wK5l" node="2mjHtwTopeo" resolve="doPerformStep" />
-                <node concept="37vLTw" id="2mjHtwToqFn" role="37wK5m">
-                  <ref role="3cqZAo" node="2mjHtwToqFy" resolve="tc" />
+        <node concept="1QHqEO" id="6Kf5KB6WpPD" role="3cqZAp">
+          <node concept="1QHqEC" id="6Kf5KB6WpPF" role="1QHqEI">
+            <node concept="3clFbS" id="6Kf5KB6WpPH" role="1bW5cS">
+              <node concept="3clFbF" id="2mjHtwTosr4" role="3cqZAp">
+                <node concept="d5anL" id="2mjHtwTou0N" role="3clFbG">
+                  <node concept="3cmrfG" id="2mjHtwTou2i" role="37vLTx">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="37vLTw" id="2mjHtwTot6A" role="37vLTJ">
+                    <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+                  </node>
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3eOSWO" id="2mjHtwTorPs" role="3clFbw">
-            <node concept="37vLTw" id="2mjHtwToqFM" role="3uHU7B">
-              <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
-            </node>
-            <node concept="3cmrfG" id="2mjHtwTosgU" role="3uHU7w">
-              <property role="3cmrfH" value="1" />
+              <node concept="3clFbF" id="2mjHtwToqFl" role="3cqZAp">
+                <node concept="2YIFZM" id="2mjHtwToqFm" role="3clFbG">
+                  <ref role="1Pybhc" node="2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+                  <ref role="37wK5l" node="2mjHtwTopeo" resolve="doPerformStep" />
+                  <node concept="37vLTw" id="2mjHtwToqFn" role="37wK5m">
+                    <ref role="3cqZAo" node="2mjHtwToqFy" resolve="simulationEntryNode" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -4639,10 +4646,8 @@
       <node concept="3Tm1VV" id="2mjHtwToqFw" role="1B3o_S" />
       <node concept="3cqZAl" id="2mjHtwToqFx" role="3clF45" />
       <node concept="37vLTG" id="2mjHtwToqFy" role="3clF46">
-        <property role="TrG5h" value="tc" />
-        <node concept="3Tqbb2" id="2mjHtwToqFz" role="1tU5fm">
-          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-        </node>
+        <property role="TrG5h" value="simulationEntryNode" />
+        <node concept="3Tqbb2" id="2mjHtwToqFz" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="2mjHtwToq$G" role="jymVt" />
@@ -4651,10 +4656,8 @@
       <node concept="3Tm6S6" id="2mjHtwTopep" role="1B3o_S" />
       <node concept="3cqZAl" id="2mjHtwTopeq" role="3clF45" />
       <node concept="37vLTG" id="2mjHtwTopej" role="3clF46">
-        <property role="TrG5h" value="tc" />
-        <node concept="3Tqbb2" id="2mjHtwTopek" role="1tU5fm">
-          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-        </node>
+        <property role="TrG5h" value="simulationEntryNode" />
+        <node concept="3Tqbb2" id="2mjHtwTopek" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="2mjHtwTopcT" role="3clF47">
         <node concept="3cpWs8" id="2mjHtwTopcU" role="3cqZAp">
@@ -4667,17 +4670,21 @@
               <ref role="37wK5l" node="2xeYpNCxElA" resolve="getSimulationTrace" />
               <ref role="1Pybhc" node="2xeYpNCxAqa" resolve="NuSMVSimulationRegistry" />
               <node concept="37vLTw" id="2mjHtwTopel" role="37wK5m">
-                <ref role="3cqZAo" node="2mjHtwTopej" resolve="tc" />
+                <ref role="3cqZAo" node="2mjHtwTopej" resolve="simulationEntryNode" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbJ" id="2mjHtwU1top" role="3cqZAp">
           <node concept="3clFbS" id="2mjHtwU1tor" role="3clFbx">
-            <node concept="2xdQw9" id="2mjHtwU1udG" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
-              <node concept="Xl_RD" id="2mjHtwU1udI" role="9lYJi">
-                <property role="Xl_RC" value="no simulation trace associated to this test case - please re-run the simulator" />
+            <node concept="3clFbF" id="6Kf5KB6X3WJ" role="3cqZAp">
+              <node concept="2YIFZM" id="6Kf5KB6X3WK" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <node concept="10Nm6u" id="6Kf5KB6X3WL" role="37wK5m" />
+                <node concept="Xl_RD" id="6Kf5KB6X3WM" role="37wK5m">
+                  <property role="Xl_RC" value="No simulation trace associated to this node - please re-run the simulator" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="2mjHtwU1um5" role="3cqZAp" />
@@ -4689,6 +4696,88 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="6Kf5KB6WXjE" role="3cqZAp">
+          <node concept="3clFbS" id="6Kf5KB6WXjG" role="3clFbx">
+            <node concept="3clFbF" id="6Kf5KB6X0iv" role="3cqZAp">
+              <node concept="2YIFZM" id="6Kf5KB6X0pQ" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <node concept="10Nm6u" id="6Kf5KB6X0v$" role="37wK5m" />
+                <node concept="Xl_RD" id="6Kf5KB6X0VT" role="37wK5m">
+                  <property role="Xl_RC" value="Beginning of the trace!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6Kf5KB6WZlM" role="3cqZAp">
+              <node concept="37vLTI" id="6Kf5KB6X017" role="3clFbG">
+                <node concept="3cmrfG" id="6Kf5KB6X01P" role="37vLTx">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="37vLTw" id="6Kf5KB6WZlK" role="37vLTJ">
+                  <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6Kf5KB6X0TH" role="3cqZAp" />
+          </node>
+          <node concept="2dkUwp" id="6Kf5KB6WZ3h" role="3clFbw">
+            <node concept="37vLTw" id="6Kf5KB6WXMF" role="3uHU7B">
+              <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+            </node>
+            <node concept="3cmrfG" id="6Kf5KB6WYOu" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6Kf5KB6X1Tw" role="3cqZAp">
+          <node concept="3clFbS" id="6Kf5KB6X1Tx" role="3clFbx">
+            <node concept="3clFbF" id="6Kf5KB6X1Ty" role="3cqZAp">
+              <node concept="2YIFZM" id="6Kf5KB6X1Tz" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <node concept="10Nm6u" id="6Kf5KB6X1T$" role="37wK5m" />
+                <node concept="Xl_RD" id="6Kf5KB6X1T_" role="37wK5m">
+                  <property role="Xl_RC" value="End of the trace!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6Kf5KB6X1TA" role="3cqZAp">
+              <node concept="37vLTI" id="6Kf5KB6X1TB" role="3clFbG">
+                <node concept="37vLTw" id="6Kf5KB6X1TN" role="37vLTJ">
+                  <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+                </node>
+                <node concept="3cpWsd" id="6Kf5KB6X3Ap" role="37vLTx">
+                  <node concept="3cmrfG" id="6Kf5KB6X3Es" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="2OqwBi" id="6Kf5KB6X2L9" role="3uHU7B">
+                    <node concept="37vLTw" id="6Kf5KB6X2La" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2mjHtwTopcV" resolve="res" />
+                    </node>
+                    <node concept="liA8E" id="6Kf5KB6X2Lb" role="2OqNvi">
+                      <ref role="37wK5l" node="6Kf5KB6Tuh3" resolve="getNumberOfSteps" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="6Kf5KB6X1TD" role="3cqZAp" />
+          </node>
+          <node concept="2dkUwp" id="6Kf5KB6X2th" role="3clFbw">
+            <node concept="2OqwBi" id="6Kf5KB6X2ti" role="3uHU7B">
+              <node concept="37vLTw" id="6Kf5KB6X2tj" role="2Oq$k0">
+                <ref role="3cqZAo" node="2mjHtwTopcV" resolve="res" />
+              </node>
+              <node concept="liA8E" id="6Kf5KB6X2tk" role="2OqNvi">
+                <ref role="37wK5l" node="6Kf5KB6Tuh3" resolve="getNumberOfSteps" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6Kf5KB6X2ts" role="3uHU7w">
+              <ref role="3cqZAo" node="3YQnHsZkKm" resolve="idx" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6Kf5KB6X4Ci" role="3cqZAp" />
         <node concept="3SKdUt" id="2mjHtwTopd0" role="3cqZAp">
           <node concept="3SKdUq" id="2mjHtwTopd1" role="3SKWNk">
             <property role="3SKdUp" value="display values" />
@@ -5199,12 +5288,10 @@
     <property role="TrG5h" value="NuSMVSimulationRegistry" />
     <node concept="2tJIrI" id="2xeYpNCxAAA" role="jymVt" />
     <node concept="Wx3nA" id="2xeYpNCxBLn" role="jymVt">
-      <property role="TrG5h" value="test2result" />
+      <property role="TrG5h" value="entryNode2SimTrace" />
       <node concept="3Tm6S6" id="2xeYpNCxBLp" role="1B3o_S" />
       <node concept="3rvAFt" id="2xeYpNCxBS8" role="1tU5fm">
-        <node concept="3Tqbb2" id="2xeYpNCxBYx" role="3rvQeY">
-          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-        </node>
+        <node concept="3Tqbb2" id="2xeYpNCxBYx" role="3rvQeY" />
         <node concept="3uibUv" id="2xeYpNCxJCl" role="3rvSg0">
           <ref role="3uigEE" node="2xeYpNCxFMj" resolve="NuSMVSimulationTrace" />
         </node>
@@ -5214,9 +5301,7 @@
           <node concept="3uibUv" id="2xeYpNCxJLs" role="3rHtpV">
             <ref role="3uigEE" node="2xeYpNCxFMj" resolve="NuSMVSimulationTrace" />
           </node>
-          <node concept="3Tqbb2" id="2xeYpNCxCwQ" role="3rHrn6">
-            <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-          </node>
+          <node concept="3Tqbb2" id="2xeYpNCxCwQ" role="3rHrn6" />
         </node>
       </node>
     </node>
@@ -5234,10 +5319,10 @@
             </node>
             <node concept="3EllGN" id="2xeYpNCxD2X" role="37vLTJ">
               <node concept="37vLTw" id="2xeYpNCxD4i" role="3ElVtu">
-                <ref role="3cqZAo" node="2xeYpNCxAQJ" resolve="tc" />
+                <ref role="3cqZAo" node="2xeYpNCxAQJ" resolve="simulationEntry" />
               </node>
               <node concept="37vLTw" id="2xeYpNCxCMT" role="3ElQJh">
-                <ref role="3cqZAo" node="2xeYpNCxBLn" resolve="test2result" />
+                <ref role="3cqZAo" node="2xeYpNCxBLn" resolve="entryNode2SimTrace" />
               </node>
             </node>
           </node>
@@ -5246,16 +5331,17 @@
       <node concept="3Tm1VV" id="2xeYpNCxADP" role="1B3o_S" />
       <node concept="3cqZAl" id="2xeYpNCxAK8" role="3clF45" />
       <node concept="37vLTG" id="2xeYpNCxAQJ" role="3clF46">
-        <property role="TrG5h" value="tc" />
-        <node concept="3Tqbb2" id="2xeYpNCxAQI" role="1tU5fm">
-          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-        </node>
+        <property role="TrG5h" value="simulationEntry" />
+        <node concept="3Tqbb2" id="2xeYpNCxAQI" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="2xeYpNCxBdp" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="3uibUv" id="2xeYpNCxJoM" role="1tU5fm">
           <ref role="3uigEE" node="2xeYpNCxFMj" resolve="NuSMVSimulationTrace" />
         </node>
+      </node>
+      <node concept="NWlO9" id="6Kf5KB6Tora" role="lGtFl">
+        <property role="NWlVz" value="Registers a simulation trace on a node entry." />
       </node>
     </node>
     <node concept="2tJIrI" id="2xeYpNCxEiP" role="jymVt" />
@@ -5268,10 +5354,10 @@
         <node concept="3clFbF" id="2xeYpNCxElC" role="3cqZAp">
           <node concept="3EllGN" id="2xeYpNCxElF" role="3clFbG">
             <node concept="37vLTw" id="2xeYpNCxElG" role="3ElVtu">
-              <ref role="3cqZAo" node="2xeYpNCxElJ" resolve="tc" />
+              <ref role="3cqZAo" node="2xeYpNCxElJ" resolve="entry" />
             </node>
             <node concept="37vLTw" id="2xeYpNCxElR" role="3ElQJh">
-              <ref role="3cqZAo" node="2xeYpNCxBLn" resolve="test2result" />
+              <ref role="3cqZAo" node="2xeYpNCxBLn" resolve="entryNode2SimTrace" />
             </node>
           </node>
         </node>
@@ -5281,14 +5367,18 @@
         <ref role="3uigEE" node="2xeYpNCxFMj" resolve="NuSMVSimulationTrace" />
       </node>
       <node concept="37vLTG" id="2xeYpNCxElJ" role="3clF46">
-        <property role="TrG5h" value="tc" />
-        <node concept="3Tqbb2" id="2xeYpNCxElK" role="1tU5fm">
-          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-        </node>
+        <property role="TrG5h" value="entry" />
+        <node concept="3Tqbb2" id="2xeYpNCxElK" role="1tU5fm" />
+      </node>
+      <node concept="NWlO9" id="6Kf5KB6Tovf" role="lGtFl">
+        <property role="NWlVz" value="Returns the simulation trace attached to this node." />
       </node>
     </node>
     <node concept="2tJIrI" id="2xeYpNCxEkc" role="jymVt" />
     <node concept="3Tm1VV" id="2xeYpNCxAqb" role="1B3o_S" />
+    <node concept="NWlO9" id="6Kf5KB6Toy6" role="lGtFl">
+      <property role="NWlVz" value="Registry of simulation traces." />
+    </node>
   </node>
   <node concept="312cEu" id="2xeYpNCxFMj">
     <property role="3GE5qa" value="simulator" />
@@ -5384,6 +5474,26 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2xeYpNCyi8h" role="jymVt" />
+    <node concept="3clFb_" id="6Kf5KB6Tuh3" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getNumberOfSteps" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6Kf5KB6Tuh6" role="3clF47">
+        <node concept="3cpWs6" id="6Kf5KB6Tv45" role="3cqZAp">
+          <node concept="2OqwBi" id="6Kf5KB6Twnm" role="3cqZAk">
+            <node concept="37vLTw" id="6Kf5KB6Tvl3" role="2Oq$k0">
+              <ref role="3cqZAo" node="2xeYpNCycvx" resolve="listOfNode2Value" />
+            </node>
+            <node concept="34oBXx" id="6Kf5KB6TyBZ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6Kf5KB6TtPl" role="1B3o_S" />
+      <node concept="10Oyi0" id="6Kf5KB6Tufy" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6Kf5KB6TuCn" role="jymVt" />
     <node concept="3clFb_" id="2xeYpNCyijS" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addCexEntry" />
@@ -5521,7 +5631,7 @@
               <node concept="1pGfFk" id="2xeYpNCg8we" role="2ShVmc">
                 <ref role="37wK5l" node="2xeYpNCxGqt" resolve="NuSMVSimulationTrace" />
                 <node concept="37vLTw" id="2xeYpNCg8wf" role="37wK5m">
-                  <ref role="3cqZAo" node="2xeYpNCfPi_" resolve="testCase" />
+                  <ref role="3cqZAo" node="2xeYpNCfPi_" resolve="module" />
                 </node>
                 <node concept="37vLTw" id="2xeYpNCg8wg" role="37wK5m">
                   <ref role="3cqZAo" node="2xeYpNCfPiB" resolve="res" />
@@ -5656,13 +5766,8 @@
                     <node concept="3Tqbb2" id="2xeYpNCznpu" role="1tU5fm" />
                     <node concept="1rXfSq" id="2xeYpNCznpL" role="33vP2m">
                       <ref role="37wK5l" node="2xeYpNCySRL" resolve="findNode" />
-                      <node concept="2OqwBi" id="2xeYpNCznpM" role="37wK5m">
-                        <node concept="37vLTw" id="2xeYpNCznpN" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2xeYpNCfPi_" resolve="testCase" />
-                        </node>
-                        <node concept="3TrEf2" id="2xeYpNCznpO" role="2OqNvi">
-                          <ref role="3Tt5mk" to="fnq2:43FRfGJUExp" resolve="module" />
-                        </node>
+                      <node concept="37vLTw" id="2xeYpNCznpN" role="37wK5m">
+                        <ref role="3cqZAo" node="2xeYpNCfPi_" resolve="module" />
                       </node>
                       <node concept="37vLTw" id="2xeYpNC$5TS" role="37wK5m">
                         <ref role="3cqZAo" node="2xeYpNC$5TO" resolve="fullyQualifiedVarName" />
@@ -5744,9 +5849,9 @@
       </node>
       <node concept="3Tm1VV" id="2xeYpNCfPiy" role="1B3o_S" />
       <node concept="37vLTG" id="2xeYpNCfPi_" role="3clF46">
-        <property role="TrG5h" value="testCase" />
+        <property role="TrG5h" value="module" />
         <node concept="3Tqbb2" id="2xeYpNCfPiA" role="1tU5fm">
-          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+          <ref role="ehGHo" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
         </node>
       </node>
       <node concept="37vLTG" id="2xeYpNCfPiB" role="3clF46">
