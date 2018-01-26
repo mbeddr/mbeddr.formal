@@ -8,6 +8,7 @@
   <imports>
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -65,6 +66,9 @@
     <property role="TrG5h" value="State" />
     <property role="34LRSv" value="state" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1SWfR" resolve="EnumerationMember" />
+    <node concept="PrWs8" id="6Kf5KB7bA8_" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4NkweGhcbEX">
     <property role="EcuMT" value="5536191589039258301" />
