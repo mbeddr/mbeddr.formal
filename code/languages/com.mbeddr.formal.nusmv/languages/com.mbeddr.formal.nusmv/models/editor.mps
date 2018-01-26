@@ -56,6 +56,10 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -164,6 +168,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -253,6 +258,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -954,6 +962,7 @@
     <property role="3GE5qa" value="expressions.case" />
     <ref role="1XX52x" to="gioj:6NmtaR1W9ga" resolve="CaseExpression" />
     <node concept="3EZMnI" id="6NmtaR1W9gH" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3EZMnI" id="6NmtaR1W9h0" role="3EZMnx">
         <node concept="VPM3Z" id="6NmtaR1W9h2" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -994,6 +1003,30 @@
           </node>
         </node>
         <node concept="l2Vlx" id="6NmtaR1W9ko" role="2iSdaV" />
+      </node>
+      <node concept="1HlG4h" id="6Kf5KB6YBoI" role="AHCbl">
+        <node concept="1HfYo3" id="6Kf5KB6YBoJ" role="1HlULh">
+          <node concept="3TQlhw" id="6Kf5KB6YBoK" role="1Hhtcw">
+            <node concept="3clFbS" id="6Kf5KB6YBoL" role="2VODD2">
+              <node concept="3clFbF" id="6Kf5KB6YBxn" role="3cqZAp">
+                <node concept="3cpWs3" id="6Kf5KB6YG2W" role="3clFbG">
+                  <node concept="Xl_RD" id="6Kf5KB6YG3q" role="3uHU7w">
+                    <property role="Xl_RC" value=" cases" />
+                  </node>
+                  <node concept="2OqwBi" id="6Kf5KB6YBIW" role="3uHU7B">
+                    <node concept="pncrf" id="6Kf5KB6YBxm" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="6Kf5KB6YC4_" role="2OqNvi">
+                      <ref role="3TtcxE" to="gioj:6NmtaR1W9gc" resolve="cases" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VechU" id="6Kf5KB6YIID" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
       </node>
     </node>
   </node>
