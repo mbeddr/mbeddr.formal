@@ -851,6 +851,12 @@
             <ref role="3bR37D" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6Kf5KB75SCO" role="3bR37C">
+          <node concept="3bR9La" id="6Kf5KB75SCP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTVPu" resolve="jetbrains.mps.lang.scopes" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="42jqVeFkUtZ" role="2G$12L">
         <property role="BnDLt" value="true" />

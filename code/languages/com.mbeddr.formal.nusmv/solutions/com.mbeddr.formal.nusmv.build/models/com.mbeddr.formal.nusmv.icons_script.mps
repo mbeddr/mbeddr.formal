@@ -159,13 +159,13 @@
     </node>
     <node concept="3Tm1VV" id="2ShgyhegN8M" role="1B3o_S" />
     <node concept="Wx3nA" id="2ShgyhegGu$" role="jymVt">
-      <property role="TrG5h" value="SAFETY_LAB_HOME" />
+      <property role="TrG5h" value="MBEDDR_FORMAL_HOME" />
       <property role="2dlcS1" value="false" />
       <property role="3TUv4t" value="true" />
       <property role="2dld4O" value="false" />
       <node concept="17QB3L" id="2ShgyhegGu_" role="1tU5fm" />
       <node concept="Xl_RD" id="2ShgyhegGuA" role="33vP2m">
-        <property role="Xl_RC" value="d:\\work\\mbeddr.formal" />
+        <property role="Xl_RC" value="d:\\x\\mbeddr.formal" />
       </node>
     </node>
     <node concept="Wx3nA" id="2ShgyhegGuB" role="jymVt">
@@ -176,7 +176,7 @@
       <node concept="17QB3L" id="2ShgyhegGuC" role="1tU5fm" />
       <node concept="3cpWs3" id="2ShgyhegGuD" role="33vP2m">
         <node concept="37vLTw" id="2ShgyhegN9o" role="3uHU7B">
-          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="SAFETY_LAB_HOME" />
+          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="MBEDDR_FORMAL_HOME" />
         </node>
         <node concept="Xl_RD" id="2ShgyhegGuF" role="3uHU7w">
           <property role="Xl_RC" value="\\build.xml" />
@@ -191,7 +191,7 @@
       <node concept="17QB3L" id="2ShgyhegGuH" role="1tU5fm" />
       <node concept="3cpWs3" id="2ShgyhegGuI" role="33vP2m">
         <node concept="37vLTw" id="2ShgyhegN9s" role="3uHU7B">
-          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="SAFETY_LAB_HOME" />
+          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="MBEDDR_FORMAL_HOME" />
         </node>
         <node concept="Xl_RD" id="2ShgyhegGuK" role="3uHU7w">
           <property role="Xl_RC" value="\\code\\languages\\com.mbeddr.formal.nusmv\\languages" />
@@ -206,7 +206,7 @@
       <node concept="17QB3L" id="7vIaqyYjfZ2" role="1tU5fm" />
       <node concept="3cpWs3" id="7vIaqyYjh0c" role="33vP2m">
         <node concept="37vLTw" id="7vIaqyYjh0g" role="3uHU7B">
-          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="SAFETY_LAB_HOME" />
+          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="MBEDDR_FORMAL_HOME" />
         </node>
         <node concept="Xl_RD" id="7vIaqyYjh0d" role="3uHU7w">
           <property role="Xl_RC" value="\\code\\languages\\com.mbeddr.formal.nusmv\\solutions" />
@@ -221,7 +221,7 @@
       <node concept="17QB3L" id="7vIaqyYjJQ6" role="1tU5fm" />
       <node concept="3cpWs3" id="7vIaqyYjPw1" role="33vP2m">
         <node concept="37vLTw" id="7vIaqyYjPw5" role="3uHU7B">
-          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="SAFETY_LAB_HOME" />
+          <ref role="3cqZAo" node="2ShgyhegGu$" resolve="MBEDDR_FORMAL_HOME" />
         </node>
         <node concept="Xl_RD" id="7vIaqyYjPw2" role="3uHU7w">
           <property role="Xl_RC" value="\\code\\languages\\com.mbeddr.formal.nusmv" />
