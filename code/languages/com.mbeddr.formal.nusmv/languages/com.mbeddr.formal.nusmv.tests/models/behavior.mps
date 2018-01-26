@@ -11,6 +11,8 @@
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="w3o4" ref="r:f6eb91ea-a20a-402b-a44f-2cf1ab3951a4(com.mbeddr.formal.nusmv.tests.plugin)" />
     <import index="p98h" ref="r:c81d99d9-842f-4ea8-b4f3-8f7f171b410f(com.mbeddr.formal.nusmv.pluginSolution.tests)" />
+    <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" />
+    <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -99,6 +101,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
@@ -185,6 +188,57 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="6Kf5KB6UFQC" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="performForwardStep" />
+      <ref role="13i0hy" to="w873:6Kf5KB6U07$" resolve="performForwardStep" />
+      <node concept="3Tm1VV" id="6Kf5KB6UFQD" role="1B3o_S" />
+      <node concept="3clFbS" id="6Kf5KB6UFQG" role="3clF47">
+        <node concept="3clFbF" id="2xeYpNCzXYJ" role="3cqZAp">
+          <node concept="2YIFZM" id="2xeYpNCzYQt" role="3clFbG">
+            <ref role="37wK5l" to="4c75:3YQnHsZq3M" resolve="performForwardStep" />
+            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+            <node concept="13iPFW" id="6Kf5KB6VsMw" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6Kf5KB6UFQH" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6Kf5KB6UFQI" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="performBackwardStep" />
+      <ref role="13i0hy" to="w873:6Kf5KB6U09h" resolve="performBackwardStep" />
+      <node concept="3Tm1VV" id="6Kf5KB6UFQJ" role="1B3o_S" />
+      <node concept="3clFbS" id="6Kf5KB6UFQM" role="3clF47">
+        <node concept="3clFbF" id="6Kf5KB6VsPJ" role="3cqZAp">
+          <node concept="2YIFZM" id="6Kf5KB6VsRd" role="3clFbG">
+            <ref role="37wK5l" to="4c75:2mjHtwToqFh" resolve="performBackwardStep" />
+            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+            <node concept="13iPFW" id="6Kf5KB6VsRe" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6Kf5KB6UFQN" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6Kf5KB6UFQO" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="resetSimulation" />
+      <ref role="13i0hy" to="w873:6Kf5KB6U0bi" resolve="resetSimulation" />
+      <node concept="3Tm1VV" id="6Kf5KB6UFQP" role="1B3o_S" />
+      <node concept="3clFbS" id="6Kf5KB6UFQS" role="3clF47">
+        <node concept="3clFbF" id="6Kf5KB6VsS4" role="3cqZAp">
+          <node concept="2YIFZM" id="6Kf5KB6VsU6" role="3clFbG">
+            <ref role="37wK5l" to="4c75:3YQnHsZl7I" resolve="reset" />
+            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+            <node concept="13iPFW" id="6Kf5KB6X$Tv" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6Kf5KB6UFQT" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="43FRfGK1zWO">

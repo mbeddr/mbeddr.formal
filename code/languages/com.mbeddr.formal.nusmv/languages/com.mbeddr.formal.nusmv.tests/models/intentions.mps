@@ -154,6 +154,7 @@
           <node concept="2YIFZM" id="2xeYpNC$0BI" role="3clFbG">
             <ref role="37wK5l" to="4c75:3YQnHsZl7I" resolve="reset" />
             <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
+            <node concept="2Sf5sV" id="6Kf5KB6X$W6" role="37wK5m" />
           </node>
         </node>
         <node concept="3clFbF" id="2xeYpNCzYSD" role="3cqZAp">
