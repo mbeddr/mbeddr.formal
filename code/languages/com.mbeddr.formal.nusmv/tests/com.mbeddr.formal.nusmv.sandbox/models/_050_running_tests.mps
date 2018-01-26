@@ -13,8 +13,11 @@
       </concept>
       <concept id="2858146662931636881" name="com.mbeddr.formal.nusmv.structure.GreaterEqualsExpression" flags="ng" index="nE0YI" />
       <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
+      <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
+        <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
+      </concept>
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
-        <child id="8482728081216646944" name="" index="1yBDGv" />
+        <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
@@ -70,9 +73,7 @@
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo">
-        <reference id="8482728081213471272" name="outVar" index="1zjgSn" />
-      </concept>
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
@@ -176,8 +177,8 @@
               <ref role="2He$iI" node="1ZsZb$iIQQ1" resolve="s_out_expected" />
             </node>
             <node concept="1ziNjN" id="1ZsZb$iIQVZ" role="2H9Iav">
-              <node concept="1zjgSo" id="1ZsZb$iIQWu" role="1ziNjJ">
-                <ref role="1zjgSn" node="1ZsZb$iCSZP" resolve="out" />
+              <node concept="1zjgSo" id="6Kf5KB75vl4" role="1ziNjJ">
+                <ref role="skqaw" node="1ZsZb$iCSZP" resolve="out" />
               </node>
               <node concept="2He$iJ" id="1ZsZb$iIQVC" role="1ziNjM">
                 <ref role="2He$iI" node="1ZsZb$iD1gn" resolve="s" />
