@@ -1177,6 +1177,12 @@
             <ref role="3bR37D" node="42jqVeFkUuJ" resolve="com.mbeddr.formal.nusmv.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6Kf5KB72geH" role="3bR37C">
+          <node concept="3bR9La" id="6Kf5KB72geI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="42jqVeFkUuD" role="2G$12L">
         <property role="BnDLt" value="true" />
