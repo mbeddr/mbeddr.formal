@@ -110,6 +110,12 @@
     <node concept="PrWs8" id="6Kf5KB75xjZ" role="PzmwI">
       <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
     </node>
+    <node concept="PrWs8" id="6Kf5KB784W$" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6Kf5KB6TZVg" resolve="ISimulationEntryPoint" />
+    </node>
+    <node concept="PrWs8" id="6Kf5KB77MHn" role="PzmwI">
+      <ref role="PrY4T" node="6Kf5KB77LXR" resolve="IMayActAsMainModule" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SULQ">
     <property role="EcuMT" value="7842584090743385206" />
@@ -429,6 +435,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7mSH3WmVxaP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6Kf5KB7apU5" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WmWrHX">
@@ -1152,6 +1161,10 @@
     <property role="34LRSv" value="AU" />
     <property role="R4oN_" value="forall until" />
     <ref role="1TJDcQ" node="6WmpcHMQ_RL" resolve="BinaryCTLExpression" />
+  </node>
+  <node concept="PlHQZ" id="6Kf5KB77LXR">
+    <property role="EcuMT" value="7786467611509727095" />
+    <property role="TrG5h" value="IMayActAsMainModule" />
   </node>
 </model>
 

@@ -4327,6 +4327,9 @@
                 <node concept="37vLTw" id="2xeYpNCztJy" role="37wK5m">
                   <ref role="3cqZAo" node="2xeYpNCesTh" resolve="result" />
                 </node>
+                <node concept="3clFbT" id="6Kf5KB7ad0O" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
               </node>
               <node concept="37vLTw" id="2xeYpNCztJz" role="37vLTJ">
                 <ref role="3cqZAo" node="2xeYpNCesTq" resolve="res" />
@@ -5729,18 +5732,23 @@
                   </node>
                 </node>
                 <node concept="3clFbJ" id="2xeYpNC$7N$" role="3cqZAp">
-                  <node concept="3eOSWO" id="2xeYpNC$7N_" role="3clFbw">
-                    <node concept="3cmrfG" id="2xeYpNC$7NA" role="3uHU7w">
-                      <property role="3cmrfH" value="0" />
+                  <node concept="1Wc70l" id="6Kf5KB79VWA" role="3clFbw">
+                    <node concept="37vLTw" id="6Kf5KB7a49I" role="3uHU7B">
+                      <ref role="3cqZAo" node="6Kf5KB79Voa" resolve="entryModuleWasGenerated" />
                     </node>
-                    <node concept="2OqwBi" id="2xeYpNC$7NB" role="3uHU7B">
-                      <node concept="37vLTw" id="2xeYpNC$7NC" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2xeYpNC$5TO" resolve="fullyQualifiedVarName" />
+                    <node concept="3eOSWO" id="2xeYpNC$7N_" role="3uHU7w">
+                      <node concept="3cmrfG" id="2xeYpNC$7NA" role="3uHU7w">
+                        <property role="3cmrfH" value="0" />
                       </node>
-                      <node concept="liA8E" id="2xeYpNC$7ND" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.indexOf(int):int" resolve="indexOf" />
-                        <node concept="1Xhbcc" id="2xeYpNC$QKc" role="37wK5m">
-                          <property role="1XhdNS" value="." />
+                      <node concept="2OqwBi" id="2xeYpNC$7NB" role="3uHU7B">
+                        <node concept="37vLTw" id="2xeYpNC$7NC" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2xeYpNC$5TO" resolve="fullyQualifiedVarName" />
+                        </node>
+                        <node concept="liA8E" id="2xeYpNC$7ND" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.indexOf(int):int" resolve="indexOf" />
+                          <node concept="1Xhbcc" id="2xeYpNC$QKc" role="37wK5m">
+                            <property role="1XhdNS" value="." />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -5878,6 +5886,10 @@
         <node concept="3uibUv" id="2xeYpNCfPiC" role="1tU5fm">
           <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
         </node>
+      </node>
+      <node concept="37vLTG" id="6Kf5KB79Voa" role="3clF46">
+        <property role="TrG5h" value="entryModuleWasGenerated" />
+        <node concept="10P_77" id="6Kf5KB79VO8" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="2xeYpNC_oNV" role="3clF45">
         <ref role="3uigEE" node="2xeYpNCxFMj" resolve="NuSMVSimulationTrace" />
