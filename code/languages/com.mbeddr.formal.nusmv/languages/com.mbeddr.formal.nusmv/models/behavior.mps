@@ -45,9 +45,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -72,7 +69,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -570,57 +566,6 @@
         </node>
       </node>
       <node concept="10P_77" id="6Kf5KB77NlB" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6Kf5KB784WU" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="performForwardStep" />
-      <ref role="13i0hy" to="w873:6Kf5KB6U07$" resolve="performForwardStep" />
-      <node concept="3Tm1VV" id="6Kf5KB784WV" role="1B3o_S" />
-      <node concept="3clFbS" id="6Kf5KB784WY" role="3clF47">
-        <node concept="3clFbF" id="2xeYpNCzXYJ" role="3cqZAp">
-          <node concept="2YIFZM" id="2xeYpNCzYQt" role="3clFbG">
-            <ref role="37wK5l" to="4c75:3YQnHsZq3M" resolve="performForwardStep" />
-            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
-            <node concept="13iPFW" id="6Kf5KB6VsMw" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="6Kf5KB784WZ" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6Kf5KB784X0" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="performBackwardStep" />
-      <ref role="13i0hy" to="w873:6Kf5KB6U09h" resolve="performBackwardStep" />
-      <node concept="3Tm1VV" id="6Kf5KB784X1" role="1B3o_S" />
-      <node concept="3clFbS" id="6Kf5KB784X4" role="3clF47">
-        <node concept="3clFbF" id="6Kf5KB785Kv" role="3cqZAp">
-          <node concept="2YIFZM" id="6Kf5KB785N3" role="3clFbG">
-            <ref role="37wK5l" to="4c75:2mjHtwToqFh" resolve="performBackwardStep" />
-            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
-            <node concept="13iPFW" id="6Kf5KB785N4" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="6Kf5KB784X5" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="6Kf5KB784X6" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="resetSimulation" />
-      <ref role="13i0hy" to="w873:6Kf5KB6U0bi" resolve="resetSimulation" />
-      <node concept="3Tm1VV" id="6Kf5KB784X7" role="1B3o_S" />
-      <node concept="3clFbS" id="6Kf5KB784Xa" role="3clF47">
-        <node concept="3clFbF" id="6Kf5KB785PZ" role="3cqZAp">
-          <node concept="2YIFZM" id="6Kf5KB785Ug" role="3clFbG">
-            <ref role="37wK5l" to="4c75:3YQnHsZl7I" resolve="reset" />
-            <ref role="1Pybhc" to="4c75:2xeYpNCxxWg" resolve="NuSMVSimulationStepPerformer" />
-            <node concept="13iPFW" id="6Kf5KB785Uh" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="6Kf5KB784Xb" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2mjHtwTKZM3">
