@@ -25,11 +25,10 @@
     <import index="2avh" ref="r:d71bd9ec-2dae-496f-9887-8fb9facf61b7(com.mbeddr.formal.base.tooling.tools)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" />
+    <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -148,7 +147,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -256,9 +254,6 @@
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -1209,30 +1204,6 @@
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="3clFbF" id="6Kf5KB78iO2" role="3cqZAp">
-                                    <node concept="2OqwBi" id="6Kf5KB78iNZ" role="3clFbG">
-                                      <node concept="10M0yZ" id="6Kf5KB78iO0" role="2Oq$k0">
-                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                                      </node>
-                                      <node concept="liA8E" id="6Kf5KB78iO1" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                        <node concept="3cpWs3" id="6Kf5KB78jUD" role="37wK5m">
-                                          <node concept="2OqwBi" id="6Kf5KB79Qjo" role="3uHU7w">
-                                            <node concept="37vLTw" id="6Kf5KB79PDF" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="6Kf5KB71D3H" resolve="rootModule" />
-                                            </node>
-                                            <node concept="3TrcHB" id="6Kf5KB79QQe" role="2OqNvi">
-                                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                            </node>
-                                          </node>
-                                          <node concept="Xl_RD" id="6Kf5KB78jsJ" role="3uHU7B">
-                                            <property role="Xl_RC" value="-----------------NuSMVResUI: " />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
                                 </node>
                                 <node concept="JncvC" id="6Kf5KB77qG8" role="JncvA">
                                   <property role="TrG5h" value="sys" />
@@ -1288,9 +1259,9 @@
                           </node>
                         </node>
                         <node concept="3clFbF" id="2xeYpNC_nmp" role="3cqZAp">
-                          <node concept="2YIFZM" id="2xeYpNC_nBZ" role="3clFbG">
-                            <ref role="37wK5l" to="4c75:2xeYpNCxAKh" resolve="registerSimulationTrace" />
-                            <ref role="1Pybhc" to="4c75:2xeYpNCxAqa" resolve="NuSMVSimulationRegistry" />
+                          <node concept="2YIFZM" id="3fsZMFLDOYK" role="3clFbG">
+                            <ref role="37wK5l" to="mc3u:2xeYpNCxAKh" resolve="registerSimulationTrace" />
+                            <ref role="1Pybhc" to="mc3u:2xeYpNCxAqa" resolve="SimulationRegistry" />
                             <node concept="37vLTw" id="6Kf5KB71qXZ" role="37wK5m">
                               <ref role="3cqZAo" node="6Kf5KB71ni8" resolve="analyzedNode" />
                             </node>

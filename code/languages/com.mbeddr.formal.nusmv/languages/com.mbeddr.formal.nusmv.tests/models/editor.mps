@@ -19,6 +19,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="p98h" ref="r:c81d99d9-842f-4ea8-b4f3-8f7f171b410f(com.mbeddr.formal.nusmv.pluginSolution.tests)" />
     <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
+    <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -285,9 +286,9 @@
             <node concept="3clFbF" id="6Kf5KB6UiY2" role="3cqZAp">
               <node concept="3y3z36" id="6Kf5KB6UkQ2" role="3clFbG">
                 <node concept="10Nm6u" id="6Kf5KB6UkYL" role="3uHU7w" />
-                <node concept="2YIFZM" id="6Kf5KB6UjcM" role="3uHU7B">
-                  <ref role="37wK5l" to="4c75:2xeYpNCxElA" resolve="getSimulationTrace" />
-                  <ref role="1Pybhc" to="4c75:2xeYpNCxAqa" resolve="NuSMVSimulationRegistry" />
+                <node concept="2YIFZM" id="3fsZMFLDOYM" role="3uHU7B">
+                  <ref role="37wK5l" to="mc3u:2xeYpNCxElA" resolve="getSimulationTrace" />
+                  <ref role="1Pybhc" to="mc3u:2xeYpNCxAqa" resolve="SimulationRegistry" />
                   <node concept="pncrf" id="6Kf5KB6UjmK" role="37wK5m" />
                 </node>
               </node>
