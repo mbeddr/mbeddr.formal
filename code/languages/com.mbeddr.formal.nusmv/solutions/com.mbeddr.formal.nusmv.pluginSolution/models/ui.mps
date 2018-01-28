@@ -888,6 +888,47 @@
         </node>
       </node>
       <node concept="3clFbS" id="2k2dPZH6$r5" role="3clF47">
+        <node concept="3cpWs8" id="6PRHFscOWER" role="3cqZAp">
+          <node concept="3cpWsn" id="6PRHFscOWES" role="3cpWs9">
+            <property role="TrG5h" value="widgetsPanel" />
+            <node concept="3uibUv" id="6PRHFscOWET" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+            </node>
+            <node concept="2ShNRf" id="6PRHFscOYiN" role="33vP2m">
+              <node concept="1pGfFk" id="6PRHFscP04G" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6PRHFscOJJ5" role="3cqZAp">
+          <node concept="2OqwBi" id="6PRHFscOLsR" role="3clFbG">
+            <node concept="37vLTw" id="6PRHFscP151" role="2Oq$k0">
+              <ref role="3cqZAo" node="6PRHFscOWES" resolve="widgetsPanel" />
+            </node>
+            <node concept="liA8E" id="6PRHFscONpm" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
+              <node concept="2ShNRf" id="6PRHFscONUw" role="37wK5m">
+                <node concept="1pGfFk" id="6PRHFscOQ1G" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~FlowLayout.&lt;init&gt;()" resolve="FlowLayout" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6PRHFscP3fx" role="3cqZAp">
+          <node concept="2OqwBi" id="6PRHFscP4Zu" role="3clFbG">
+            <node concept="37vLTw" id="6PRHFscP3fv" role="2Oq$k0">
+              <ref role="3cqZAo" node="2k2dPZH6$t_" resolve="bottomHalf" />
+            </node>
+            <node concept="liA8E" id="6PRHFscP6Cv" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <node concept="37vLTw" id="6PRHFscP7wJ" role="37wK5m">
+                <ref role="3cqZAo" node="6PRHFscOWES" resolve="widgetsPanel" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2k2dPZH6$sW" role="3cqZAp">
           <node concept="2OqwBi" id="2k2dPZH6$sX" role="3clFbG">
             <node concept="37vLTw" id="2k2dPZH6$sY" role="2Oq$k0">
@@ -970,8 +1011,8 @@
         </node>
         <node concept="3clFbF" id="7YdkGnq9oq" role="3cqZAp">
           <node concept="2OqwBi" id="7YdkGnqaaM" role="3clFbG">
-            <node concept="37vLTw" id="7YdkGnq9oo" role="2Oq$k0">
-              <ref role="3cqZAo" node="2k2dPZH6$t_" resolve="bottomHalf" />
+            <node concept="37vLTw" id="6PRHFscP8yc" role="2Oq$k0">
+              <ref role="3cqZAo" node="6PRHFscOWES" resolve="widgetsPanel" />
             </node>
             <node concept="liA8E" id="7YdkGnqbC_" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
@@ -1280,8 +1321,8 @@
         </node>
         <node concept="3clFbF" id="6Kf5KB70Gn4" role="3cqZAp">
           <node concept="2OqwBi" id="6Kf5KB70Gn5" role="3clFbG">
-            <node concept="37vLTw" id="6Kf5KB70Gn6" role="2Oq$k0">
-              <ref role="3cqZAo" node="2k2dPZH6$t_" resolve="bottomHalf" />
+            <node concept="37vLTw" id="6PRHFscP9Hv" role="2Oq$k0">
+              <ref role="3cqZAo" node="6PRHFscOWES" resolve="widgetsPanel" />
             </node>
             <node concept="liA8E" id="6Kf5KB70Gn7" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
