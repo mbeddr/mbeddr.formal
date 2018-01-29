@@ -132,11 +132,6 @@
         <child id="4678075609353201562" name="testCases" index="1J0nHx" />
       </concept>
     </language>
-    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="71733767949060574" name="com.mbeddr.formal.base.structure.CurrentSimulationValueAnnotation" flags="ng" index="1tZX2_">
-        <property id="71733767949060581" name="value" index="1tZX2u" />
-      </concept>
-    </language>
   </registry>
   <node concept="2HdtXS" id="2mjHtwTuajv">
     <property role="TrG5h" value="_010_binary_counter" />
@@ -144,17 +139,11 @@
       <property role="TrG5h" value="counter_cell" />
       <node concept="2Hdtzr" id="2mjHtwTuajx" role="2Hdtzq">
         <property role="TrG5h" value="carry_in" />
-        <node concept="1tZX2_" id="6PRHFscQv8t" role="lGtFl">
-          <property role="1tZX2u" value="TRUE" />
-        </node>
       </node>
       <node concept="2Hfkzq" id="2mjHtwTuajy" role="2HcbjO">
         <node concept="2Hdskp" id="2mjHtwTuajz" role="2Hfkx9">
           <property role="TrG5h" value="value" />
           <node concept="2Hds6S" id="2mjHtwTuaj$" role="2HdssA" />
-          <node concept="1tZX2_" id="6PRHFscQv8s" role="lGtFl">
-            <property role="1tZX2u" value="FALSE" />
-          </node>
         </node>
       </node>
       <node concept="2Hfkzp" id="2mjHtwTuaj_" role="2HcbjO">
@@ -171,9 +160,6 @@
           <node concept="1y3R4N" id="2mjHtwTuajF" role="2He$i0">
             <node concept="32Ogvo" id="2mjHtwTuajG" role="2H9Ial">
               <ref role="32Ogvr" node="2mjHtwTuajx" resolve="carry_in" />
-              <node concept="1tZX2_" id="6PRHFscQv8u" role="lGtFl">
-                <property role="1tZX2u" value="TRUE" />
-              </node>
             </node>
             <node concept="2He$iJ" id="2mjHtwTuajH" role="2H9Iav">
               <ref role="2He$iI" node="2mjHtwTuajz" resolve="value" />
@@ -187,16 +173,10 @@
           <node concept="2HbMbg" id="2mjHtwTuajK" role="1zoetD">
             <node concept="32Ogvo" id="2mjHtwTuajL" role="2H9Ial">
               <ref role="32Ogvr" node="2mjHtwTuajx" resolve="carry_in" />
-              <node concept="1tZX2_" id="6PRHFscQv8v" role="lGtFl">
-                <property role="1tZX2u" value="TRUE" />
-              </node>
             </node>
             <node concept="2He$iJ" id="2mjHtwTuajM" role="2H9Iav">
               <ref role="2He$iI" node="2mjHtwTuajz" resolve="value" />
             </node>
-          </node>
-          <node concept="1tZX2_" id="6PRHFscQv8o" role="lGtFl">
-            <property role="1tZX2u" value="FALSE" />
           </node>
         </node>
       </node>
@@ -221,9 +201,6 @@
               </node>
               <node concept="1zjgSo" id="6WmpcHMKr0Z" role="1ziNjJ">
                 <ref role="skqaw" node="2mjHtwTuajJ" resolve="carry_out" />
-                <node concept="1tZX2_" id="6PRHFscQv8p" role="lGtFl">
-                  <property role="1tZX2u" value="FALSE" />
-                </node>
               </node>
             </node>
           </node>
@@ -235,9 +212,6 @@
             <node concept="1ziNjN" id="2mjHtwTuajZ" role="1zigYY">
               <node concept="1zjgSo" id="6WmpcHMKr2A" role="1ziNjJ">
                 <ref role="skqaw" node="2mjHtwTuajJ" resolve="carry_out" />
-                <node concept="1tZX2_" id="6PRHFscQv8q" role="lGtFl">
-                  <property role="1tZX2u" value="FALSE" />
-                </node>
               </node>
               <node concept="2He$iJ" id="2mjHtwTuak1" role="1ziNjM">
                 <ref role="2He$iI" node="2mjHtwTuajS" resolve="bit1" />
@@ -251,9 +225,6 @@
           <node concept="1ziNjN" id="KwKRgpPmIh" role="1yBIc4">
             <node concept="1zjgSo" id="KwKRgpPmJw" role="1ziNjJ">
               <ref role="skqaw" node="2mjHtwTuajJ" resolve="carry_out" />
-              <node concept="1tZX2_" id="6PRHFscQv8r" role="lGtFl">
-                <property role="1tZX2u" value="FALSE" />
-              </node>
             </node>
             <node concept="2He$iJ" id="KwKRgpPmHW" role="1ziNjM">
               <ref role="2He$iI" node="2mjHtwTuajX" resolve="bit2" />
