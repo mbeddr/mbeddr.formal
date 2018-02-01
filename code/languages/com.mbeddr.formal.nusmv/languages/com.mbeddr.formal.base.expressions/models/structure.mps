@@ -355,5 +355,12 @@
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="IStaticallyEvaluatable" />
   </node>
+  <node concept="1TIwiD" id="Kom1UAIr3o">
+    <property role="EcuMT" value="871543416565641432" />
+    <property role="3GE5qa" value="expressions.unary" />
+    <property role="TrG5h" value="UnaryMinus" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
+  </node>
 </model>
 

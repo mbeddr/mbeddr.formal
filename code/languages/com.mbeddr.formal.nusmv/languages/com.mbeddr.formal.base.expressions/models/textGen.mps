@@ -236,5 +236,26 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="Kom1UAMoJy">
+    <property role="3GE5qa" value="expressions.unary" />
+    <ref role="WuzLi" to="ehqg:Kom1UAIr3o" resolve="UnaryMinus" />
+    <node concept="11bSqf" id="Kom1UAMoJz" role="11c4hB">
+      <node concept="3clFbS" id="Kom1UAMoJ$" role="2VODD2">
+        <node concept="lc7rE" id="Kom1UAMoJS" role="3cqZAp">
+          <node concept="la8eA" id="Kom1UAMoKg" role="lcghm">
+            <property role="lacIc" value="-" />
+          </node>
+          <node concept="l9hG8" id="Kom1UAMoLc" role="lcghm">
+            <node concept="2OqwBi" id="Kom1UAMoV_" role="lb14g">
+              <node concept="117lpO" id="Kom1UAMoM8" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Kom1UAMpd1" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

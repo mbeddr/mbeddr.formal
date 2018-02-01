@@ -588,5 +588,32 @@
       <node concept="l2Vlx" id="6mm$FLYVJ0f" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="Kom1UAIr3p">
+    <property role="3GE5qa" value="expressions.unary" />
+    <ref role="1XX52x" to="ehqg:Kom1UAIr3o" resolve="UnaryMinus" />
+    <node concept="1WcQYu" id="Kom1UAIruM" role="2wV5jI">
+      <node concept="2ElW$n" id="Kom1UAIruO" role="2El2Yn">
+        <node concept="2OqwBi" id="Kom1UAIrNy" role="2EmURo">
+          <node concept="2EmZKS" id="Kom1UAIr$Z" role="2Oq$k0" />
+          <node concept="2qgKlT" id="Kom1UAIspu" role="2OqNvi">
+            <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="Kom1UAIr$i" role="1LiK7o">
+        <node concept="l2Vlx" id="Kom1UAIr$j" role="2iSdaV" />
+        <node concept="yw3OH" id="Kom1UAIrv5" role="3EZMnx">
+          <node concept="3F0ifn" id="Kom1UAIrvd" role="yw3OG">
+            <property role="3F0ifm" value="-" />
+          </node>
+        </node>
+        <node concept="1kIj98" id="Kom1UAIr$J" role="3EZMnx">
+          <node concept="3F1sOY" id="Kom1UAIr$V" role="1kIj9b">
+            <ref role="1NtTu8" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
