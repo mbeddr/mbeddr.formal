@@ -1166,5 +1166,26 @@
     <property role="EcuMT" value="7786467611509727095" />
     <property role="TrG5h" value="IMayActAsMainModule" />
   </node>
+  <node concept="1TIwiD" id="Kom1UAJhav">
+    <property role="EcuMT" value="871543416565863071" />
+    <property role="3GE5qa" value="expressions.arithmetic" />
+    <property role="TrG5h" value="AbsExpression" />
+    <property role="34LRSv" value="abs" />
+    <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="Kom1UAKxQg">
+    <property role="EcuMT" value="871543416566193552" />
+    <property role="3GE5qa" value="expressions.arithmetic" />
+    <property role="TrG5h" value="MaxExpression" />
+    <property role="34LRSv" value="max" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="Kom1UAKzux">
+    <property role="EcuMT" value="871543416566200225" />
+    <property role="3GE5qa" value="expressions.arithmetic" />
+    <property role="TrG5h" value="MinExpression" />
+    <property role="34LRSv" value="min" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
+  </node>
 </model>
 

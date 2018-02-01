@@ -1624,5 +1624,99 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="Kom1UAJhgx">
+    <property role="3GE5qa" value="expressions.arithmetic" />
+    <ref role="WuzLi" to="gioj:Kom1UAJhav" resolve="AbsExpression" />
+    <node concept="11bSqf" id="Kom1UAJhgy" role="11c4hB">
+      <node concept="3clFbS" id="Kom1UAJhgz" role="2VODD2">
+        <node concept="lc7rE" id="Kom1UAJhgR" role="3cqZAp">
+          <node concept="la8eA" id="Kom1UAJhhf" role="lcghm">
+            <property role="lacIc" value="abs(" />
+          </node>
+          <node concept="l9hG8" id="Kom1UAJhiq" role="lcghm">
+            <node concept="2OqwBi" id="Kom1UAJhsN" role="lb14g">
+              <node concept="117lpO" id="Kom1UAJhjm" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Kom1UAJhIf" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="Kom1UAJhSI" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="Kom1UAKxTi">
+    <property role="3GE5qa" value="expressions.arithmetic" />
+    <ref role="WuzLi" to="gioj:Kom1UAKxQg" resolve="MaxExpression" />
+    <node concept="11bSqf" id="Kom1UAKxTj" role="11c4hB">
+      <node concept="3clFbS" id="Kom1UAKxTk" role="2VODD2">
+        <node concept="lc7rE" id="Kom1UAKxTC" role="3cqZAp">
+          <node concept="la8eA" id="Kom1UAKxU0" role="lcghm">
+            <property role="lacIc" value="max(" />
+          </node>
+          <node concept="l9hG8" id="Kom1UAKxVq" role="lcghm">
+            <node concept="2OqwBi" id="Kom1UAKy5N" role="lb14g">
+              <node concept="117lpO" id="Kom1UAKxWm" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Kom1UAKynf" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:6NmtaR1W9oM" resolve="left" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="Kom1UAKyxI" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="Kom1UAKyGC" role="lcghm">
+            <node concept="2OqwBi" id="Kom1UAKyW0" role="lb14g">
+              <node concept="117lpO" id="Kom1UAKyMz" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Kom1UAKzds" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:6NmtaR1W9oS" resolve="right" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="Kom1UAKzos" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="Kom1UAKzvU">
+    <property role="3GE5qa" value="expressions.arithmetic" />
+    <ref role="WuzLi" to="gioj:Kom1UAKzux" resolve="MinExpression" />
+    <node concept="11bSqf" id="Kom1UAKzvV" role="11c4hB">
+      <node concept="3clFbS" id="Kom1UAKzvW" role="2VODD2">
+        <node concept="lc7rE" id="Kom1UAKzwj" role="3cqZAp">
+          <node concept="la8eA" id="Kom1UAKzwk" role="lcghm">
+            <property role="lacIc" value="min(" />
+          </node>
+          <node concept="l9hG8" id="Kom1UAKzwl" role="lcghm">
+            <node concept="2OqwBi" id="Kom1UAKzwm" role="lb14g">
+              <node concept="117lpO" id="Kom1UAKzwn" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Kom1UAKzwo" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:6NmtaR1W9oM" resolve="left" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="Kom1UAKzwp" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="Kom1UAKzwq" role="lcghm">
+            <node concept="2OqwBi" id="Kom1UAKzwr" role="lb14g">
+              <node concept="117lpO" id="Kom1UAKzws" role="2Oq$k0" />
+              <node concept="3TrEf2" id="Kom1UAKzwt" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:6NmtaR1W9oS" resolve="right" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="Kom1UAKzwu" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
