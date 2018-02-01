@@ -9,5 +9,7 @@
   <exported-language name="b3b9fe18-f0c4-4cea-83c5-45faa74e0911(com.mbeddr.formal.base.tabular)" />
   <exported-language name="c0e6afd4-e20f-4e33-9970-004cf26b9bf6(com.mbeddr.formal.nusmv.ext)" />
   <exported-language name="7f9f6ff3-a7e5-4005-bb24-0a686daae0a1(com.mbeddr.formal.nusmv.spec.patterns)" />
+  <exported-language name="3fb92f6f-450c-4e41-8129-97a4b9978951(com.mbeddr.formal.base.operatorspanel)" />
+  <exported-language name="2dd5dace-06d5-4283-a878-7272f2df6d4b(com.mbeddr.formal.nusmv.operatorspanel)" />
 </dev-kit>
 

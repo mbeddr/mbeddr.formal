@@ -2,6 +2,8 @@
 <model ref="r:50270b39-1844-4141-88fe-c7afa14cdcc0(com.mbeddr.formal.nusmv.operatorspanel.util)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -387,6 +389,42 @@
         <node concept="17QB3L" id="2mjHtwTSW9S" role="1tU5fm" />
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="2mjHtwTSH06">
+    <property role="TrG5h" value="NamingUtils" />
+    <node concept="2tJIrI" id="2mjHtwTSH19" role="jymVt" />
+    <node concept="2YIFZL" id="2mjHtwTSH2e" role="jymVt">
+      <property role="TrG5h" value="nameOfGeneratedAdapterClass" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2mjHtwTSH2h" role="3clF47">
+        <node concept="3clFbF" id="2mjHtwTS_$6" role="3cqZAp">
+          <node concept="3cpWs3" id="2mjHtwTSB1_" role="3clFbG">
+            <node concept="2OqwBi" id="2mjHtwTSEX2" role="3uHU7w">
+              <node concept="2JrnkZ" id="2mjHtwTSEGH" role="2Oq$k0">
+                <node concept="37vLTw" id="2mjHtwTSDUc" role="2JrQYb">
+                  <ref role="3cqZAo" node="2mjHtwTSH2U" resolve="n" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2mjHtwTSFlA" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2mjHtwTS_$5" role="3uHU7B">
+              <property role="Xl_RC" value="ValueAdapter_nodeId_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2mjHtwTSH1A" role="1B3o_S" />
+      <node concept="17QB3L" id="2mjHtwTSH23" role="3clF45" />
+      <node concept="37vLTG" id="2mjHtwTSH2U" role="3clF46">
+        <property role="TrG5h" value="n" />
+        <node concept="3Tqbb2" id="2mjHtwTSH2T" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2mjHtwTSH07" role="1B3o_S" />
   </node>
 </model>
 

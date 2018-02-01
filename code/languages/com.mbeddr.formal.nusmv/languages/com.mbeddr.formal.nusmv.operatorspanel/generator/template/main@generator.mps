@@ -7,7 +7,6 @@
   <imports>
     <import index="ula4" ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)" />
     <import index="2mtz" ref="r:50270b39-1844-4141-88fe-c7afa14cdcc0(com.mbeddr.formal.nusmv.operatorspanel.util)" />
-    <import index="loxc" ref="r:6e08cc18-758e-4947-baed-4b2fef32f100(com.mbeddr.formal.nusmv.operatorspanel.generator.com.mbeddr.formal.nusmv.operatorspanel.utils)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -341,9 +340,9 @@
       <node concept="3zFVjK" id="2mjHtwTS_db" role="3zH0cK">
         <node concept="3clFbS" id="2mjHtwTS_dc" role="2VODD2">
           <node concept="3clFbF" id="2mjHtwTSK7h" role="3cqZAp">
-            <node concept="2YIFZM" id="2mjHtwTSKLV" role="3clFbG">
-              <ref role="37wK5l" to="loxc:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
-              <ref role="1Pybhc" to="loxc:2mjHtwTSH06" resolve="NamingUtils" />
+            <node concept="2YIFZM" id="Kom1UANDzQ" role="3clFbG">
+              <ref role="37wK5l" to="2mtz:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
+              <ref role="1Pybhc" to="2mtz:2mjHtwTSH06" resolve="NamingUtils" />
               <node concept="2OqwBi" id="2mjHtwTSYCT" role="37wK5m">
                 <node concept="1iwH7S" id="2mjHtwTSYnQ" role="2Oq$k0" />
                 <node concept="12$id9" id="2mjHtwTSYUA" role="2OqNvi">

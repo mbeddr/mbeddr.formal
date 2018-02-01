@@ -6,20 +6,12 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="loxc" ref="r:6e08cc18-758e-4947-baed-4b2fef32f100(com.mbeddr.formal.nusmv.operatorspanel.generator.com.mbeddr.formal.nusmv.operatorspanel.utils)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="vg6j" ref="r:fbed989a-961b-4fe2-9864-6e725aeda7a1(com.mbeddr.formal.nusmv.operatorspanel.intentions)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
-    <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
-    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="8b9w" ref="r:76e92037-38d8-4be4-999f-3a851f86ac42(com.mbeddr.formal.base.operatorspanel.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="2mtz" ref="r:50270b39-1844-4141-88fe-c7afa14cdcc0(com.mbeddr.formal.nusmv.operatorspanel.util)" />
     <import index="ula4" ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)" implicit="true" />
   </imports>
   <registry>
@@ -203,9 +195,9 @@
                           <property role="Xl_RC" value="." />
                         </node>
                       </node>
-                      <node concept="2YIFZM" id="2mjHtwTUlyS" role="3uHU7w">
-                        <ref role="1Pybhc" to="loxc:2mjHtwTSH06" resolve="NamingUtils" />
-                        <ref role="37wK5l" to="loxc:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
+                      <node concept="2YIFZM" id="Kom1UANDzR" role="3uHU7w">
+                        <ref role="37wK5l" to="2mtz:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
+                        <ref role="1Pybhc" to="2mtz:2mjHtwTSH06" resolve="NamingUtils" />
                         <node concept="2GrUjf" id="2mjHtwTUlyT" role="37wK5m">
                           <ref role="2Gs0qQ" node="2mjHtwTUfzY" resolve="ada" />
                         </node>
