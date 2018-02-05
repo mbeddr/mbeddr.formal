@@ -606,20 +606,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7z30MUmes_i" role="3cqZAp">
-          <node concept="3cpWsn" id="7z30MUmes_l" role="3cpWs9">
-            <property role="TrG5h" value="y2" />
-            <node concept="10P55v" id="7z30MUmes_g" role="1tU5fm" />
-            <node concept="3cpWs3" id="7z30MUmeuyS" role="33vP2m">
-              <node concept="37vLTw" id="7z30MUmeuz5" role="3uHU7w">
-                <ref role="3cqZAo" node="7z30MUmeexa" resolve="height" />
-              </node>
-              <node concept="37vLTw" id="7z30MUmetXC" role="3uHU7B">
-                <ref role="3cqZAo" node="7z30MUmeexm" resolve="y" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="7z30MUmevXw" role="3cqZAp">
           <node concept="3cpWsn" id="7z30MUmevXz" role="3cpWs9">
             <property role="TrG5h" value="centerY" />
