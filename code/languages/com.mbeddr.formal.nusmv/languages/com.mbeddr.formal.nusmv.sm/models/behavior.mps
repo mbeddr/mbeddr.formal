@@ -134,7 +134,7 @@
         <node concept="3clFbF" id="4NkweGh6lMI" role="3cqZAp">
           <node concept="37vLTI" id="4NkweGh6m$r" role="3clFbG">
             <node concept="BsUDl" id="1ZsZb$irNLn" role="37vLTx">
-              <ref role="37wK5l" node="1ZsZb$irBUF" resolve="stateVariableName" />
+              <ref role="37wK5l" node="1ZsZb$irBUF" resolve="stateVariableDefaultName" />
             </node>
             <node concept="2OqwBi" id="4NkweGh6lXA" role="37vLTJ">
               <node concept="13iPFW" id="4NkweGh6lMH" role="2Oq$k0" />
@@ -165,7 +165,7 @@
     </node>
     <node concept="13i0hz" id="1ZsZb$irBUF" role="13h7CS">
       <property role="2Ki8OM" value="true" />
-      <property role="TrG5h" value="stateVariableName" />
+      <property role="TrG5h" value="stateVariableDefaultName" />
       <node concept="3Tm1VV" id="1ZsZb$irBUG" role="1B3o_S" />
       <node concept="17QB3L" id="1ZsZb$irBYn" role="3clF45" />
       <node concept="3clFbS" id="1ZsZb$irBUI" role="3clF47">
