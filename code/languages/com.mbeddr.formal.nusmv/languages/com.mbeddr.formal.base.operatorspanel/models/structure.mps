@@ -139,6 +139,19 @@
     <property role="34LRSv" value="colored rectangle" />
     <property role="3GE5qa" value="shapes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2bsfjeWb_RP" role="1TKVEi">
+      <property role="IQ2ns" value="2511949984575675893" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="textProvider" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2bsfjeWbeM2" resolve="IStringValueProvider" />
+    </node>
+    <node concept="1TJgyj" id="2bsfjeWcfRp" role="1TKVEi">
+      <property role="IQ2ns" value="2511949984575847897" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="colorProvider" />
+      <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
+    </node>
     <node concept="1TJgyi" id="2mjHtwTZwwp" role="1TKVEl">
       <property role="IQ2nx" value="2707707741270312985" />
       <property role="TrG5h" value="width" />
@@ -147,6 +160,11 @@
     <node concept="1TJgyi" id="2mjHtwTZwwt" role="1TKVEl">
       <property role="IQ2nx" value="2707707741270312989" />
       <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2bsfjeWa$wJ" role="1TKVEl">
+      <property role="IQ2nx" value="2511949984575408175" />
+      <property role="TrG5h" value="fontSize" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="2mjHtwTZvO6" role="PzmwI">
@@ -205,6 +223,29 @@
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2bsfjeWbeM2">
+    <property role="EcuMT" value="2511949984575581314" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IStringValueProvider" />
+    <node concept="PrWs8" id="2bsfjeWbeM3" role="PrDN$">
+      <ref role="PrY4T" node="2mjHtwTRFdW" resolve="IValueProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2bsfjeWbNUk">
+    <property role="EcuMT" value="2511949984575733396" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ConstantStringValueProvider" />
+    <property role="34LRSv" value="constant string value" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2bsfjeWbNUp" role="1TKVEl">
+      <property role="IQ2nx" value="2511949984575733401" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2bsfjeWbNUl" role="PzmwI">
+      <ref role="PrY4T" node="2bsfjeWbeM2" resolve="IStringValueProvider" />
     </node>
   </node>
 </model>

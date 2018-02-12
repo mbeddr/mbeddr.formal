@@ -6,7 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="ula4" ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)" implicit="true" />
+    <import index="ula4" ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -46,9 +46,15 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="2mjHtwTRejx">
-    <ref role="1XX52x" to="ula4:2mjHtwTR7dR" resolve="DefinitionValueProvider" />
+    <property role="3GE5qa" value="value_provider" />
+    <ref role="1XX52x" to="ula4:2bsfjeWbjC9" resolve="DefinitionValueProviderBase" />
     <node concept="3EZMnI" id="2mjHtwTRelo" role="2wV5jI">
       <node concept="2iRkQZ" id="2mjHtwTRelp" role="2iSdaV" />
       <node concept="3EZMnI" id="2mjHtwTRejz" role="3EZMnx">
