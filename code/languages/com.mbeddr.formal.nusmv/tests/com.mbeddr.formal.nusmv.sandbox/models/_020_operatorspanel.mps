@@ -159,9 +159,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -188,11 +185,6 @@
       </concept>
       <concept id="4678075609353200435" name="com.mbeddr.formal.nusmv.tests.structure.TestsCollection" flags="ng" index="1J0nZ8">
         <child id="4678075609353201562" name="testCases" index="1J0nHx" />
-      </concept>
-    </language>
-    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="71733767949060574" name="com.mbeddr.formal.base.structure.CurrentSimulationValueAnnotation" flags="ng" index="1tZX2_">
-        <property id="71733767949060581" name="value" index="1tZX2u" />
       </concept>
     </language>
   </registry>
@@ -252,34 +244,12 @@
         </node>
         <node concept="sr$zt" id="Kom1UAUGn8" role="sr$zp">
           <property role="srrR1" value="60" />
-          <property role="srrR5" value="30" />
+          <property role="srrR5" value="28" />
           <property role="2uXBks" value="10" />
-          <node concept="28kP9e" id="Kom1UAUGna" role="28kP63">
-            <property role="28kP99" value="122" />
-            <property role="28kP95" value="232" />
-            <property role="28kP92" value="44" />
-          </node>
           <node concept="2uWgsR" id="2bsfjeWbSh9" role="2uWA36">
             <ref role="sjWCb" node="2bsfjeWdASp" resolve="pedestrians_crossing_allowed" />
             <node concept="2uWgdj" id="2bsfjeWbSkC" role="sjsS3">
               <node concept="3clFbS" id="2bsfjeWbSkD" role="2VODD2">
-                <node concept="3clFbF" id="2bsfjeWdilo" role="3cqZAp">
-                  <node concept="2OqwBi" id="2bsfjeWdilp" role="3clFbG">
-                    <node concept="10M0yZ" id="2bsfjeWdilq" role="2Oq$k0">
-                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    </node>
-                    <node concept="liA8E" id="2bsfjeWdilr" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="3cpWs3" id="2bsfjeWdils" role="37wK5m">
-                        <node concept="sjv21" id="2bsfjeWdilt" role="3uHU7w" />
-                        <node concept="Xl_RD" id="2bsfjeWdilu" role="3uHU7B">
-                          <property role="Xl_RC" value="---------------- TEXT curreSimuValu: " />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbJ" id="2bsfjeWbVJu" role="3cqZAp">
                   <node concept="3clFbS" id="2bsfjeWbVJw" role="3clFbx">
                     <node concept="3cpWs6" id="2bsfjeWbW4_" role="3cqZAp">
@@ -305,9 +275,7 @@
                   </node>
                 </node>
                 <node concept="3cpWs6" id="2bsfjeWbX24" role="3cqZAp">
-                  <node concept="Xl_RD" id="2bsfjeWbXk_" role="3cqZAk">
-                    <property role="Xl_RC" value=" " />
-                  </node>
+                  <node concept="10Nm6u" id="o$TLCsPNd6" role="3cqZAk" />
                 </node>
               </node>
             </node>
@@ -341,12 +309,15 @@
                   </node>
                 </node>
                 <node concept="3cpWs6" id="2bsfjeWcjcd" role="3cqZAp">
-                  <node concept="3cmrfG" id="2bsfjeWcUus" role="3cqZAk">
-                    <property role="3cmrfH" value="16777215" />
-                  </node>
+                  <node concept="10Nm6u" id="o$TLCsPL6i" role="3cqZAk" />
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="28kP9e" id="o$TLCsPMfh" role="28kP63">
+            <property role="28kP99" value="120" />
+            <property role="28kP95" value="120" />
+            <property role="28kP92" value="120" />
           </node>
         </node>
       </node>
@@ -404,14 +375,45 @@
       </node>
       <node concept="sr$zt" id="2bsfjeWcdIC" role="sr$zp">
         <property role="srrR1" value="60" />
-        <property role="srrR5" value="30" />
+        <property role="srrR5" value="28" />
         <property role="2uXBks" value="10" />
         <node concept="2uWgsR" id="2bsfjeWcdJJ" role="2uWA36">
           <ref role="sjWCb" node="2bsfjeWdASp" resolve="pedestrians_crossing_allowed" />
           <node concept="2uWgdj" id="2bsfjeWcdJO" role="sjsS3">
             <node concept="3clFbS" id="2bsfjeWcdJP" role="2VODD2">
+              <node concept="3clFbF" id="o$TLCsQ973" role="3cqZAp">
+                <node concept="2OqwBi" id="o$TLCsQ974" role="3clFbG">
+                  <node concept="10M0yZ" id="o$TLCsQ975" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  </node>
+                  <node concept="liA8E" id="o$TLCsQ976" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="o$TLCsQaQk" role="37wK5m">
+                      <node concept="sjv21" id="o$TLCsQbkQ" role="3uHU7w" />
+                      <node concept="Xl_RD" id="o$TLCsQ977" role="3uHU7B">
+                        <property role="Xl_RC" value="------ traffic_lights - in Red - getting the text - currSimVal: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="2bsfjeWceap" role="3cqZAp">
                 <node concept="3clFbS" id="2bsfjeWceaq" role="3clFbx">
+                  <node concept="3clFbF" id="o$TLCsPZVU" role="3cqZAp">
+                    <node concept="2OqwBi" id="o$TLCsPZVR" role="3clFbG">
+                      <node concept="10M0yZ" id="o$TLCsPZVS" role="2Oq$k0">
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                      </node>
+                      <node concept="liA8E" id="o$TLCsPZVT" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <node concept="Xl_RD" id="o$TLCsQ0eI" role="37wK5m">
+                          <property role="Xl_RC" value="------ traffic_lights - text: Dont Walk" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs6" id="2bsfjeWcear" role="3cqZAp">
                     <node concept="Xl_RD" id="2bsfjeWceas" role="3cqZAk">
                       <property role="Xl_RC" value="Dont Walk" />
@@ -435,22 +437,32 @@
                 </node>
               </node>
               <node concept="3cpWs6" id="2bsfjeWceax" role="3cqZAp">
-                <node concept="Xl_RD" id="2bsfjeWceay" role="3cqZAk">
-                  <property role="Xl_RC" value=" " />
-                </node>
+                <node concept="10Nm6u" id="o$TLCsPNzs" role="3cqZAk" />
               </node>
             </node>
           </node>
-        </node>
-        <node concept="28kP9e" id="2bsfjeWcdIF" role="28kP63">
-          <property role="28kP99" value="255" />
-          <property role="28kP95" value="0" />
-          <property role="28kP92" value="0" />
         </node>
         <node concept="sjWqJ" id="2bsfjeWcxfZ" role="2uVc3E">
           <ref role="sjWCb" node="2bsfjeWdASp" resolve="pedestrians_crossing_allowed" />
           <node concept="sjofy" id="2bsfjeWcxg0" role="sjsS3">
             <node concept="3clFbS" id="2bsfjeWcxg1" role="2VODD2">
+              <node concept="3clFbF" id="o$TLCsQkLe" role="3cqZAp">
+                <node concept="2OqwBi" id="o$TLCsQkLf" role="3clFbG">
+                  <node concept="10M0yZ" id="o$TLCsQkLg" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="o$TLCsQkLh" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="o$TLCsQkLi" role="37wK5m">
+                      <node concept="sjv21" id="o$TLCsQkLj" role="3uHU7w" />
+                      <node concept="Xl_RD" id="o$TLCsQkLk" role="3uHU7B">
+                        <property role="Xl_RC" value="------ traffic_lights - in Red - getting the color - currSimVal: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="2bsfjeWcxg2" role="3cqZAp">
                 <node concept="3clFbS" id="2bsfjeWcxg3" role="3clFbx">
                   <node concept="3cpWs6" id="2bsfjeWcxg4" role="3cqZAp">
@@ -476,12 +488,15 @@
                 </node>
               </node>
               <node concept="3cpWs6" id="2bsfjeWcxga" role="3cqZAp">
-                <node concept="3cmrfG" id="2bsfjeWcULa" role="3cqZAk">
-                  <property role="3cmrfH" value="16777215" />
-                </node>
+                <node concept="10Nm6u" id="o$TLCsPLEL" role="3cqZAk" />
               </node>
             </node>
           </node>
+        </node>
+        <node concept="28kP9e" id="o$TLCsPMfw" role="28kP63">
+          <property role="28kP99" value="120" />
+          <property role="28kP95" value="120" />
+          <property role="28kP92" value="120" />
         </node>
       </node>
     </node>
@@ -533,9 +548,6 @@
           <node concept="2He$iJ" id="2mjHtwTRpUH" role="1zoetD">
             <ref role="2He$iI" node="2mjHtwTRpJw" resolve="tlc_state" />
           </node>
-          <node concept="1tZX2_" id="o$TLCsPcQS" role="lGtFl">
-            <property role="1tZX2u" value="Red" />
-          </node>
         </node>
         <node concept="1zoerA" id="2bsfjeWdASp" role="32O2ov">
           <property role="TrG5h" value="pedestrians_crossing_allowed" />
@@ -546,9 +558,6 @@
             <node concept="2HeeqP" id="2bsfjeWdAUN" role="2H9Ial">
               <ref role="2HeeqO" node="2mjHtwTRpJO" resolve="Red" />
             </node>
-          </node>
-          <node concept="1tZX2_" id="o$TLCsPcQZ" role="lGtFl">
-            <property role="1tZX2u" value="TRUE" />
           </node>
         </node>
       </node>
@@ -565,9 +574,6 @@
             <node concept="2Hdrtq" id="2mjHtwTRpLt" role="2Hdrtl">
               <property role="TrG5h" value="Green" />
             </node>
-          </node>
-          <node concept="1tZX2_" id="o$TLCsPcQR" role="lGtFl">
-            <property role="1tZX2u" value="Red" />
           </node>
         </node>
       </node>
@@ -597,9 +603,6 @@
                 </node>
                 <node concept="32Ogvo" id="2bsfjeWdB0r" role="2H9Ial">
                   <ref role="32Ogvr" node="2mjHtwTRpVH" resolve="crossing_request" />
-                  <node concept="1tZX2_" id="o$TLCsPcQU" role="lGtFl">
-                    <property role="1tZX2u" value="FALSE" />
-                  </node>
                 </node>
               </node>
               <node concept="2HeeqP" id="2bsfjeWdB82" role="2H9I4_">
@@ -643,16 +646,13 @@
       </node>
       <node concept="2Hdtzr" id="2mjHtwTRpVH" role="2Hdtzq">
         <property role="TrG5h" value="crossing_request" />
-        <node concept="1tZX2_" id="o$TLCsPcQT" role="lGtFl">
-          <property role="1tZX2u" value="FALSE" />
-        </node>
       </node>
     </node>
   </node>
   <node concept="1J0nZ8" id="2mjHtwTRpUY">
     <property role="TrG5h" value="tlc_tests" />
     <node concept="1J0nI2" id="2mjHtwTRq0J" role="1J0nHx">
-      <property role="TrG5h" value="t1" />
+      <property role="TrG5h" value="test_case1" />
       <ref role="1J0niy" node="2mjHtwTRpHS" resolve="simple_traffic_lights_controller" />
       <node concept="1J0m7Y" id="2mjHtwTRq0K" role="1J0m7J">
         <node concept="1yCjRe" id="2mjHtwTRq0Y" role="1J0m7X" />

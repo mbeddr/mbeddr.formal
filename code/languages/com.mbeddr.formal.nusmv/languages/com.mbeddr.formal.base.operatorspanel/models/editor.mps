@@ -23,7 +23,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6m3u" ref="r:67761219-191d-44af-aaf0-3da2d685817e(com.mbeddr.formal.base.operatorspanel.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1509,25 +1508,6 @@
                                       </node>
                                       <node concept="37vLTw" id="2bsfjeW9GFD" role="37vLTJ">
                                         <ref role="3cqZAo" node="2bsfjeW9Fef" resolve="myText" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="3clFbF" id="o$TLCsPggY" role="3cqZAp">
-                                    <node concept="2OqwBi" id="o$TLCsPggV" role="3clFbG">
-                                      <node concept="10M0yZ" id="o$TLCsPggW" role="2Oq$k0">
-                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                                      </node>
-                                      <node concept="liA8E" id="o$TLCsPggX" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                                        <node concept="3cpWs3" id="o$TLCsPhdF" role="37wK5m">
-                                          <node concept="37vLTw" id="o$TLCsPhFT" role="3uHU7w">
-                                            <ref role="3cqZAo" node="2bsfjeW9Fef" resolve="myText" />
-                                          </node>
-                                          <node concept="Xl_RD" id="o$TLCsPgOs" role="3uHU7B">
-                                            <property role="Xl_RC" value="---------------- ColoredRectangle: " />
-                                          </node>
-                                        </node>
                                       </node>
                                     </node>
                                   </node>

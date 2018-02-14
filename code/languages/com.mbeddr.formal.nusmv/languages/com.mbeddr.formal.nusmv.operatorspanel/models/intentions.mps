@@ -158,8 +158,8 @@
             <node concept="2Sf5sV" id="2mjHtwTUf_V" role="2Oq$k0" />
             <node concept="2Rf3mk" id="2mjHtwTUg6U" role="2OqNvi">
               <node concept="1xMEDy" id="2mjHtwTUg6W" role="1xVPHs">
-                <node concept="chp4Y" id="2mjHtwTUgky" role="ri$Ld">
-                  <ref role="cht4Q" to="ula4:2mjHtwTRzoU" resolve="DefinitionIntegerValueAdapter" />
+                <node concept="chp4Y" id="o$TLCsQ$VM" role="ri$Ld">
+                  <ref role="cht4Q" to="ula4:2bsfjeWbjD3" resolve="DefinitionValueAdapterBase" />
                 </node>
               </node>
             </node>
