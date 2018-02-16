@@ -4,20 +4,11 @@
   <languages>
     <use id="3fb92f6f-450c-4e41-8129-97a4b9978951" name="com.mbeddr.formal.base.operatorspanel" version="-1" />
     <use id="2dd5dace-06d5-4283-a878-7272f2df6d4b" name="com.mbeddr.formal.nusmv.operatorspanel" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
   <imports>
-    <import index="ula4" ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)" />
-    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -32,16 +23,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
-      </concept>
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -52,7 +34,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -381,39 +362,8 @@
           <ref role="sjWCb" node="2bsfjeWdASp" resolve="pedestrians_crossing_allowed" />
           <node concept="2uWgdj" id="2bsfjeWcdJO" role="sjsS3">
             <node concept="3clFbS" id="2bsfjeWcdJP" role="2VODD2">
-              <node concept="3clFbF" id="o$TLCsQ973" role="3cqZAp">
-                <node concept="2OqwBi" id="o$TLCsQ974" role="3clFbG">
-                  <node concept="10M0yZ" id="o$TLCsQ975" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  </node>
-                  <node concept="liA8E" id="o$TLCsQ976" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="o$TLCsQaQk" role="37wK5m">
-                      <node concept="sjv21" id="o$TLCsQbkQ" role="3uHU7w" />
-                      <node concept="Xl_RD" id="o$TLCsQ977" role="3uHU7B">
-                        <property role="Xl_RC" value="------ traffic_lights - in Red - getting the text - currSimVal: " />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbJ" id="2bsfjeWceap" role="3cqZAp">
                 <node concept="3clFbS" id="2bsfjeWceaq" role="3clFbx">
-                  <node concept="3clFbF" id="o$TLCsPZVU" role="3cqZAp">
-                    <node concept="2OqwBi" id="o$TLCsPZVR" role="3clFbG">
-                      <node concept="10M0yZ" id="o$TLCsPZVS" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      </node>
-                      <node concept="liA8E" id="o$TLCsPZVT" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="Xl_RD" id="o$TLCsQ0eI" role="37wK5m">
-                          <property role="Xl_RC" value="------ traffic_lights - text: Dont Walk" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3cpWs6" id="2bsfjeWcear" role="3cqZAp">
                     <node concept="Xl_RD" id="2bsfjeWceas" role="3cqZAk">
                       <property role="Xl_RC" value="Dont Walk" />
@@ -446,23 +396,6 @@
           <ref role="sjWCb" node="2bsfjeWdASp" resolve="pedestrians_crossing_allowed" />
           <node concept="sjofy" id="2bsfjeWcxg0" role="sjsS3">
             <node concept="3clFbS" id="2bsfjeWcxg1" role="2VODD2">
-              <node concept="3clFbF" id="o$TLCsQkLe" role="3cqZAp">
-                <node concept="2OqwBi" id="o$TLCsQkLf" role="3clFbG">
-                  <node concept="10M0yZ" id="o$TLCsQkLg" role="2Oq$k0">
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  </node>
-                  <node concept="liA8E" id="o$TLCsQkLh" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="o$TLCsQkLi" role="37wK5m">
-                      <node concept="sjv21" id="o$TLCsQkLj" role="3uHU7w" />
-                      <node concept="Xl_RD" id="o$TLCsQkLk" role="3uHU7B">
-                        <property role="Xl_RC" value="------ traffic_lights - in Red - getting the color - currSimVal: " />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbJ" id="2bsfjeWcxg2" role="3cqZAp">
                 <node concept="3clFbS" id="2bsfjeWcxg3" role="3clFbx">
                   <node concept="3cpWs6" id="2bsfjeWcxg4" role="3cqZAp">
