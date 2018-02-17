@@ -2044,6 +2044,9 @@
       </node>
       <node concept="3F0ifn" id="2mjHtwTuTyZ" role="3EZMnx">
         <property role="3F0ifm" value=";" />
+        <node concept="VechU" id="59AZjhg3DlL" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
       </node>
       <node concept="l2Vlx" id="2mjHtwTuqzf" role="2iSdaV" />
     </node>
