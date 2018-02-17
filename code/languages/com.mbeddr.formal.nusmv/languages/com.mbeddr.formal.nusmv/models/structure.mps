@@ -1187,5 +1187,12 @@
     <property role="34LRSv" value="min" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
   </node>
+  <node concept="1TIwiD" id="59AZjhfZW2w">
+    <property role="EcuMT" value="5937711559856865440" />
+    <property role="3GE5qa" value="spec" />
+    <property role="TrG5h" value="INVARSpecSecion" />
+    <property role="34LRSv" value="INVARSPEC" />
+    <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
+  </node>
 </model>
 

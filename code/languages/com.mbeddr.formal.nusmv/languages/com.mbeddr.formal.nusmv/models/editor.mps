@@ -2256,5 +2256,25 @@
       <node concept="l2Vlx" id="Kom1UAKzv8" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="59AZjhfZW2$">
+    <property role="3GE5qa" value="spec" />
+    <ref role="1XX52x" to="gioj:59AZjhfZW2w" resolve="INVARSpecSecion" />
+    <node concept="3EZMnI" id="59AZjhfZW2A" role="2wV5jI">
+      <node concept="3F0ifn" id="59AZjhfZW2B" role="3EZMnx">
+        <property role="3F0ifm" value="INVARSPEC" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="59AZjhfZW2C" role="3EZMnx">
+        <ref role="1NtTu8" to="gioj:7mSH3Wn9yWw" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="59AZjhfZW2D" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="59AZjhfZW2E" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="59AZjhfZW2F" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
