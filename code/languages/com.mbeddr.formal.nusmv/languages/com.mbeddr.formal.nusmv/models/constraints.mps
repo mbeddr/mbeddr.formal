@@ -542,8 +542,8 @@
           <node concept="2OqwBi" id="59AZjhg013z" role="3clFbw">
             <node concept="2DD5aU" id="59AZjhg013$" role="2Oq$k0" />
             <node concept="2Zo12i" id="59AZjhg013_" role="2OqNvi">
-              <node concept="chp4Y" id="59AZjhg013A" role="2Zo12j">
-                <ref role="cht4Q" to="gioj:6WmpcHMQ_RL" resolve="BinaryCTLExpression" />
+              <node concept="chp4Y" id="7V1Bqz6UdMR" role="2Zo12j">
+                <ref role="cht4Q" to="gioj:7mSH3Wn9_sU" resolve="UnaryTemporalExpression" />
               </node>
             </node>
           </node>
@@ -559,8 +559,8 @@
           <node concept="2OqwBi" id="59AZjhg01EQ" role="3clFbw">
             <node concept="2DD5aU" id="59AZjhg01ER" role="2Oq$k0" />
             <node concept="2Zo12i" id="59AZjhg01ES" role="2OqNvi">
-              <node concept="chp4Y" id="59AZjhg01Qg" role="2Zo12j">
-                <ref role="cht4Q" to="gioj:6WmpcHMQ_Ry" resolve="UnaryCTLExpression" />
+              <node concept="chp4Y" id="7V1Bqz6UfsF" role="2Zo12j">
+                <ref role="cht4Q" to="gioj:6WmpcHMQ_RC" resolve="BinaryTemporalExpression" />
               </node>
             </node>
           </node>
