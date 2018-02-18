@@ -11,6 +11,7 @@
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -289,11 +290,21 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="1$vmWKMsYzR" role="3uHU7B">
-                    <node concept="2DD5aU" id="1$vmWKMsYzS" role="2Oq$k0" />
-                    <node concept="3O6GUB" id="1$vmWKMsYzT" role="2OqNvi">
-                      <node concept="chp4Y" id="1$vmWKMsYO5" role="3QVz_e">
-                        <ref role="cht4Q" to="gioj:6NmtaR1VmI_" resolve="EmptyAssignment" />
+                  <node concept="22lmx$" id="7V1Bqz70oBt" role="3uHU7B">
+                    <node concept="2OqwBi" id="7V1Bqz70pag" role="3uHU7B">
+                      <node concept="2DD5aU" id="7V1Bqz70oO9" role="2Oq$k0" />
+                      <node concept="3O6GUB" id="7V1Bqz70pDu" role="2OqNvi">
+                        <node concept="chp4Y" id="7V1Bqz70pTe" role="3QVz_e">
+                          <ref role="cht4Q" to="tpck:3Rc6kd0K$RF" resolve="BaseCommentAttribute" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="1$vmWKMsYzR" role="3uHU7w">
+                      <node concept="2DD5aU" id="1$vmWKMsYzS" role="2Oq$k0" />
+                      <node concept="3O6GUB" id="1$vmWKMsYzT" role="2OqNvi">
+                        <node concept="chp4Y" id="1$vmWKMsYO5" role="3QVz_e">
+                          <ref role="cht4Q" to="gioj:6NmtaR1VmI_" resolve="EmptyAssignment" />
+                        </node>
                       </node>
                     </node>
                   </node>
