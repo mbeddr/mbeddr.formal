@@ -12,8 +12,6 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
-    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
-    <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -102,7 +100,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -115,9 +112,6 @@
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
-      </concept>
-      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
-        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -499,37 +493,6 @@
   <node concept="1M2fIO" id="1gJVC85NBbs">
     <property role="3GE5qa" value="expressions" />
     <ref role="1M2myG" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
-    <node concept="1N5Pfh" id="1gJVC85NBbt" role="1Mr941">
-      <ref role="1N5Vy1" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
-      <node concept="3dgokm" id="1gJVC85NBbx" role="1N6uqs">
-        <node concept="3clFbS" id="1gJVC85NBby" role="2VODD2">
-          <node concept="3clFbF" id="1gJVC85NBeu" role="3cqZAp">
-            <node concept="2YIFZM" id="1gJVC85NBev" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="1gJVC85NBew" role="37wK5m">
-                <node concept="2OqwBi" id="1gJVC85NBex" role="2Oq$k0">
-                  <node concept="2rP1CM" id="1gJVC85NBey" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="1gJVC85NBez" role="2OqNvi">
-                    <node concept="1xMEDy" id="1gJVC85NBe$" role="1xVPHs">
-                      <node concept="chp4Y" id="6Kf5KB75wjU" role="ri$Ld">
-                        <ref role="cht4Q" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="6Kf5KB75wCE" role="2OqNvi">
-                  <ref role="37wK5l" to="w873:6Kf5KB75w93" resolve="visibleElementsInScope" />
-                  <node concept="35c_gC" id="6Kf5KB75wLV" role="37wK5m">
-                    <ref role="35c_gD" to="gioj:6NmtaR1SWfR" resolve="EnumerationMember" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="59AZjhfZY6m">
     <property role="3GE5qa" value="spec" />
