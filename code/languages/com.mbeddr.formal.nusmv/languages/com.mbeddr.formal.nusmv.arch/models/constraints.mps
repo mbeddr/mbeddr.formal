@@ -308,8 +308,8 @@
                 <node concept="2OqwBi" id="3ZkhnXRmZyp" role="3uHU7w">
                   <node concept="2DD5aU" id="3ZkhnXRmZer" role="2Oq$k0" />
                   <node concept="2Zo12i" id="3ZkhnXRmZW7" role="2OqNvi">
-                    <node concept="chp4Y" id="3ZkhnXRn0rj" role="2Zo12j">
-                      <ref role="cht4Q" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+                    <node concept="chp4Y" id="7V1Bqz725Ty" role="2Zo12j">
+                      <ref role="cht4Q" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
                     </node>
                   </node>
                 </node>
