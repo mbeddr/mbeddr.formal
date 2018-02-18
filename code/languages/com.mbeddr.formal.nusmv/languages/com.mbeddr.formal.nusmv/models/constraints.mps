@@ -398,33 +398,13 @@
                 </node>
                 <node concept="2Rf3mk" id="7mSH3WnaUX4" role="2OqNvi">
                   <node concept="1xMEDy" id="7mSH3WnaUX6" role="1xVPHs">
-                    <node concept="chp4Y" id="7mSH3WnaV5J" role="ri$Ld">
+                    <node concept="chp4Y" id="7V1Bqz70yon" role="ri$Ld">
                       <ref role="cht4Q" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="9S07l" id="7mSH3WnacHI" role="9Vyp8">
-      <node concept="3clFbS" id="7mSH3WnacHJ" role="2VODD2">
-        <node concept="3clFbF" id="7mSH3WnacOU" role="3cqZAp">
-          <node concept="2OqwBi" id="7mSH3Wnae2Z" role="3clFbG">
-            <node concept="2OqwBi" id="7mSH3Wnad3Y" role="2Oq$k0">
-              <node concept="nLn13" id="7mSH3WnacOT" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="7mSH3WnadkO" role="2OqNvi">
-                <node concept="1xMEDy" id="7mSH3WnadkQ" role="1xVPHs">
-                  <node concept="chp4Y" id="7mSH3WnadtT" role="ri$Ld">
-                    <ref role="cht4Q" to="gioj:7mSH3Wn9yWs" resolve="SpecSection" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="7mSH3WnadMf" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="7mSH3WnaepO" role="2OqNvi" />
           </node>
         </node>
       </node>
