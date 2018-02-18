@@ -642,5 +642,29 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7V1Bqz6WUP0">
+    <property role="3GE5qa" value="expressions.temporal.ltl.base" />
+    <ref role="13h7C2" to="gioj:7V1Bqz6Uhgs" resolve="BinaryLTLExpression" />
+    <node concept="13hLZK" id="7V1Bqz6WUP1" role="13h7CW">
+      <node concept="3clFbS" id="7V1Bqz6WUP2" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7V1Bqz6WUPb" role="13h7CS">
+      <property role="TrG5h" value="getPriolevel" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="false" />
+      <property role="13i0is" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
+      <node concept="3Tm1VV" id="7V1Bqz6WUPc" role="1B3o_S" />
+      <node concept="3clFbS" id="7V1Bqz6WUPh" role="3clF47">
+        <node concept="3clFbF" id="7V1Bqz6WV1v" role="3cqZAp">
+          <node concept="3cmrfG" id="7V1Bqz6WV1u" role="3clFbG">
+            <property role="3cmrfH" value="200" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="7V1Bqz6WUPi" role="3clF45" />
+    </node>
+  </node>
 </model>
 
