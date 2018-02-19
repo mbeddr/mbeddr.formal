@@ -24,6 +24,7 @@
     <import index="mk90" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="ludi" ref="r:803e6d69-0426-4755-9575-7a746b92894e(com.mbeddr.formal.base.analyses.structure)" />
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -472,6 +473,20 @@
         <ref role="3uigEE" node="5A94f9EE$RB" resolve="MPSToolAdapter" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5HwHP1ObJ6V" role="jymVt" />
+    <node concept="312cEg" id="1ZsZb$iRnYA" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="repo" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="1ZsZb$iRnWH" role="1tU5fm">
+        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+      </node>
+      <node concept="3Tmbuc" id="1ZsZb$iRo0w" role="1B3o_S" />
+      <node concept="NWlO9" id="1ZsZb$iRo1t" role="lGtFl">
+        <property role="NWlVz" value="My repository." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="7iCG_8WCy6n" role="jymVt" />
     <node concept="312cEg" id="7F8$WoW31Ww" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -543,6 +558,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5HwHP1ObOpc" role="3cqZAp">
+          <node concept="37vLTI" id="5HwHP1ObQM_" role="3clFbG">
+            <node concept="37vLTw" id="5HwHP1ObRgv" role="37vLTx">
+              <ref role="3cqZAo" node="5HwHP1ObNs_" resolve="repo" />
+            </node>
+            <node concept="2OqwBi" id="5HwHP1ObOUU" role="37vLTJ">
+              <node concept="Xjq3P" id="5HwHP1ObOpa" role="2Oq$k0" />
+              <node concept="2OwXpG" id="5HwHP1ObPLi" role="2OqNvi">
+                <ref role="2Oxat5" node="1ZsZb$iRnYA" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="6DyMuFe0W9n" role="1B3o_S" />
       <node concept="37vLTG" id="6DyMuFe0W9N" role="3clF46">
@@ -555,6 +583,12 @@
         <property role="TrG5h" value="pi" />
         <node concept="3uibUv" id="5uqRFp8UUbf" role="1tU5fm">
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5HwHP1ObNs_" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5HwHP1ObNF7" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
