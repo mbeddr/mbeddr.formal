@@ -39,9 +39,9 @@
     <import index="f9gx" ref="r:aff1ad0d-17a1-4e56-b10e-af8f09549165(com.mbeddr.mpsutil.codereview.pluginSolution.highlighting)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
+    <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" implicit="true" />
     <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" implicit="true" />
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" implicit="true" />
-    <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" implicit="true" />
     <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -855,7 +855,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2xeYpNCwR$3" role="2OqNvi">
-                  <ref role="37wK5l" to="878u:4_pSipqVBn_" resolve="setCurrentProject" />
+                  <ref role="37wK5l" to="vxn5:4_pSipqVBn_" resolve="setCurrentProject" />
                   <node concept="37vLTw" id="2xeYpNCx0AU" role="37wK5m">
                     <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
                   </node>
