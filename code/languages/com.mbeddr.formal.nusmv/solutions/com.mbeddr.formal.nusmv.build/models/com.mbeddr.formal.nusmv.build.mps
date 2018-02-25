@@ -728,6 +728,9 @@
         <node concept="3LEDTy" id="Kom1UAN8ti" role="3LEDUa">
           <ref role="3LEDTV" node="Kom1UAN72k" resolve="com.mbeddr.formal.nusmv.operatorspanel" />
         </node>
+        <node concept="3LEDTy" id="6glUKoNRb1A" role="3LEDUa">
+          <ref role="3LEDTV" node="6glUKoNR9Tl" resolve="com.mbeddr.formal.nusmv.source" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="42jqVeFkUv2" role="3989C9">
@@ -956,6 +959,47 @@
           <node concept="3bR9La" id="6PRHFscNYz0" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="42jqVeFkUuJ" resolve="com.mbeddr.formal.nusmv.pluginSolution" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="6glUKoNR9Tl" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.nusmv.source" />
+        <property role="3LESm3" value="bf72618c-958a-47f5-9aac-3eff98d79ffd" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="6glUKoNR9Tm" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="code" />
+          <node concept="2Ry0Ak" id="6glUKoNR9Tn" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6glUKoNR9To" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.source" />
+              <node concept="2Ry0Ak" id="6glUKoNRav9" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.source.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6glUKoNR9Tq" role="3bR37C">
+          <node concept="3bR9La" id="6glUKoNR9Tr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="6glUKoNR9T$" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.formal.nusmv.source#7211928790175210128" />
+          <property role="3LESm3" value="e3cfd49e-a5cf-4400-94d8-db632f188b6b" />
+          <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1SiIV0" id="6glUKoNRaDf" role="3bR37C">
+          <node concept="3bR9La" id="6glUKoNRaDg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6glUKoNRaDh" role="3bR37C">
+          <node concept="3bR9La" id="6glUKoNRaDi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
           </node>
         </node>
       </node>
@@ -1348,6 +1392,12 @@
           <property role="3LESm3" value="efc78f4f-3f4c-411f-b8ce-0a9afe9b33b0" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="6glUKoNR9AQ" role="3bR37C">
+          <node concept="3bR9La" id="6glUKoNR9AR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6Kf5KB6_1El" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1691,6 +1741,12 @@
           <node concept="3bR9La" id="3Z1wPJ7Koug" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6glUKoNRaOX" role="3bR37C">
+          <node concept="3bR9La" id="6glUKoNRaOY" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6glUKoNR9Tl" resolve="com.mbeddr.formal.nusmv.source" />
           </node>
         </node>
       </node>
