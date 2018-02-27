@@ -228,12 +228,12 @@
       </node>
       <node concept="3_J27D" id="42jqVeFkUtz" role="2EtHGA">
         <node concept="3Mxwew" id="42jqVeFkUt$" role="3MwsjC">
-          <property role="3MwjfP" value="mbeddr.formal.nusmv" />
+          <property role="3MwjfP" value="FASTEN" />
         </node>
       </node>
       <node concept="3_J27D" id="42jqVeFkUt_" role="2EtHGT">
         <node concept="3Mxwew" id="42jqVeFkUtA" role="3MwsjC">
-          <property role="3MwjfP" value="mbeddr.formal.nusmv" />
+          <property role="3MwjfP" value="Formal Specification Environment" />
         </node>
       </node>
       <node concept="NbPM2" id="42jqVeFkUtB" role="2OjNyQ">
@@ -459,23 +459,23 @@
           </node>
         </node>
         <node concept="28jJK3" id="42jqVeFkUvs" role="39821P">
-          <node concept="1688n2" id="42jqVeFkUvt" role="28jJR8">
+          <node concept="1688n2" id="7xR82YgMFB5" role="28jJR8">
+            <property role="1688n3" value="FASTEN" />
             <property role="1688n6" value="g" />
-            <property role="1688n3" value="\.MPS(\w+)" />
-            <node concept="NbPM2" id="42jqVeFkUvu" role="1688n0">
-              <node concept="3Mxwew" id="42jqVeFkUvv" role="3MwsjC">
-                <property role="3MwjfP" value="\." />
+            <node concept="NbPM2" id="7xR82YgMFB7" role="1688n0">
+              <node concept="3Mxwew" id="7xR82YgMGi9" role="3MwsjC">
+                <property role="3MwjfP" value="FASTEN_" />
               </node>
-              <node concept="3Mxwey" id="42jqVeFkUvw" role="3MwsjC">
-                <ref role="3Mxwex" node="42jqVeFkUtg" resolve="build.number" />
+              <node concept="3Mxwey" id="7xR82YgMGic" role="3MwsjC">
+                <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
               </node>
             </node>
           </node>
           <node concept="398BVA" id="42jqVeFkUvg" role="28jJRO">
-            <ref role="398BVh" node="42jqVeFkUtk" resolve="mps_home" />
+            <ref role="398BVh" node="2ShgyheeCX6" resolve="rcp_resources" />
             <node concept="2Ry0Ak" id="42jqVeFkUvh" role="iGT6I">
               <property role="2Ry0Am" value="bin" />
-              <node concept="2Ry0Ak" id="42jqVeFkUvi" role="2Ry0An">
+              <node concept="2Ry0Ak" id="7xR82YgKFSY" role="2Ry0An">
                 <property role="2Ry0Am" value="idea.properties" />
               </node>
             </node>
@@ -486,10 +486,35 @@
             <ref role="398BVh" node="2ShgyheeCX6" resolve="rcp_resources" />
             <node concept="2Ry0Ak" id="2ShgyheeJpJ" role="iGT6I">
               <property role="2Ry0Am" value="bin" />
-              <node concept="2Ry0Ak" id="2ShgyheeJxg" role="2Ry0An">
-                <property role="2Ry0Am" value="mps.bat" />
+              <node concept="2Ry0Ak" id="7xR82YgKGIy" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.bat" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="398223" id="7xR82YgKH6g" role="39821P">
+        <node concept="398223" id="7xR82YgKHu6" role="39821P">
+          <node concept="3_J27D" id="7xR82YgKHu8" role="Nbhlr">
+            <node concept="3Mxwew" id="7xR82YgKHCV" role="3MwsjC">
+              <property role="3MwjfP" value="options" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="7xR82YgKHCY" role="39821P">
+            <node concept="398BVA" id="7xR82YgKHNL" role="2HvfZ0">
+              <ref role="398BVh" node="2ShgyheeCX6" resolve="rcp_resources" />
+              <node concept="2Ry0Ak" id="7xR82YgKI9q" role="iGT6I">
+                <property role="2Ry0Am" value="config" />
+                <node concept="2Ry0Ak" id="7xR82YgKI9x" role="2Ry0An">
+                  <property role="2Ry0Am" value="options" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3_J27D" id="7xR82YgKH6i" role="Nbhlr">
+          <node concept="3Mxwew" id="7xR82YgKHjj" role="3MwsjC">
+            <property role="3MwjfP" value="config" />
           </node>
         </node>
       </node>
@@ -515,7 +540,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
-            <ref role="1zDrgn" node="42jqVeFkUtq" resolve="mbeddr.formal.nusmv 1.0" />
+            <ref role="1zDrgn" node="42jqVeFkUtq" resolve="Formal Specification Environment 1.0" />
           </node>
         </node>
       </node>
@@ -736,7 +761,7 @@
     <node concept="2G$12M" id="42jqVeFkUv2" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.formal.nusmv" />
       <node concept="1E1JtD" id="42jqVeFkUuV" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.formal.base" />
         <property role="3LESm3" value="83ed2dfe-f724-46cc-852a-dce086daee3f" />
         <property role="2GAjPV" value="false" />
@@ -1954,16 +1979,19 @@
           </node>
           <node concept="3_J27D" id="42jqVeFkU_2" role="Nbhlr">
             <node concept="3Mxwew" id="42jqVeFkU_3" role="3MwsjC">
-              <property role="3MwjfP" value="com.mbeddr.formal.nusmv " />
+              <property role="3MwjfP" value="fasten-" />
             </node>
             <node concept="3Mxwey" id="42jqVeFkU_4" role="3MwsjC">
-              <ref role="3Mxwex" node="42jqVeFkUwF" resolve="version" />
+              <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
             </node>
           </node>
         </node>
         <node concept="3_J27D" id="42jqVeFkU_5" role="Nbhlr">
-          <node concept="3Mxwey" id="42jqVeFkU_6" role="3MwsjC">
-            <ref role="3Mxwex" node="42jqVeFkUtg" resolve="build.number" />
+          <node concept="3Mxwew" id="7xR82YgKFox" role="3MwsjC">
+            <property role="3MwjfP" value="fasten-" />
+          </node>
+          <node concept="3Mxwey" id="7xR82YgKFoA" role="3MwsjC">
+            <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
           </node>
           <node concept="3Mxwew" id="42jqVeFkU_7" role="3MwsjC">
             <property role="3MwjfP" value=".zip" />
@@ -1981,16 +2009,6 @@
             <node concept="2Ry0Ak" id="3ZV5FZJk1Ti" role="2Ry0An">
               <property role="2Ry0Am" value="MPS_2017_2_2" />
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2kB4xC" id="42jqVeFkUwF" role="1l3spd">
-      <property role="TrG5h" value="version" />
-      <node concept="aVJcg" id="42jqVeFkUwG" role="aVJcv">
-        <node concept="NbPM2" id="42jqVeFkUwH" role="aVJcq">
-          <node concept="3Mxwew" id="42jqVeFkUwI" role="3MwsjC">
-            <property role="3MwjfP" value="2018-02-01" />
           </node>
         </node>
       </node>

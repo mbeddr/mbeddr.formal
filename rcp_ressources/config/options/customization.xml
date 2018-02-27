@@ -1,0 +1,545 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+    <group value="Subversion.Relocate" is_action="true" action_type="-1" position="30">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Subversion.Unlock" is_action="true" action_type="-1" position="29">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Subversion.Lock" is_action="true" action_type="-1" position="28">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="27">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Subversion.Copy" is_action="true" action_type="-1" position="26">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="CheckForUpdate" is_action="true" action_type="-1" position="19">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Help" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="CompareClipboardWithSelection" is_action="true" action_type="-1" position="18">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="17">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="EditCustomVmOptions" is_action="true" action_type="-1" position="16">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Help" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="$SearchWeb" is_action="true" action_type="-1" position="16">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.vcs.platform.actions.MPSGlobalVcsGroup_ActionGroup" is_group="true" action_type="-1" position="15">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="EditCustomProperties" is_action="true" action_type="-1" position="15">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Help" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="GoToCodeGroup" is_group="true" action_type="-1" position="14">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.ide.actions.View_ActionGroup" is_group="true" action_type="-1" position="13">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ChangesView.ApplyPatchFromClipboard" is_action="true" action_type="-1" position="13">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="SendFeedback" is_action="true" action_type="-1" position="13">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Help" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="com.mbeddr.mpsutil.print.pluginSolution.plugin.PrintGroup_ActionGroup" is_group="true" action_type="-1" position="12">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="File" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ChangesView.ApplyPatch" is_action="true" action_type="-1" position="12">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="TechnicalSupport" is_action="true" action_type="-1" position="12">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Help" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="EditorToggleActions" is_group="true" action_type="-1" position="11">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.ide.platform.actions.GoToPlatform_ActionGroup" is_group="true" action_type="-1" position="11">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ChangesView.CreatePatch" is_action="true" action_type="-1" position="11">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Subversion.SetProperty" is_action="true" action_type="-1" position="11">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="UIToggleActions" is_group="true" action_type="-1" position="10">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Subversion.ShowProperties" is_action="true" action_type="-1" position="10">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ToolsMenu" is_group="true" action_type="-1" position="9">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="PowerSaveGroup" is_group="true" action_type="-1" position="9">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="File" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="QuickChangeScheme" is_action="true" action_type="-1" position="9">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="RunMenu" is_group="true" action_type="-1" position="8">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ToggleReadOnlyAttribute" is_action="true" action_type="-1" position="8">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="File" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="8">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="BackgroundTasks" is_group="true" action_type="-1" position="8">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Window" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="BuildMenu" is_group="true" action_type="-1" position="7">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="PrintExportGroup" is_group="true" action_type="-1" position="7">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="File" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="CompareActions" is_group="true" action_type="-1" position="7">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Vcs.Specific" is_group="true" action_type="-1" position="7">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="IntegrateFiles" is_action="true" action_type="-1" position="7">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="AnalyzeMenu" is_group="true" action_type="-1" position="6">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.ide.actions.Goto_ActionGroupgotoConceptAspects" is_action="true" action_type="-1" position="6">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <path value="Go To" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Vcs.Import" is_group="true" action_type="-1" position="6">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="UpdateFiles" is_action="true" action_type="-1" position="6">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="CodeMenu" is_group="true" action_type="-1" position="5">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="5">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <path value="Go To" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Vcs.Checkout" is_group="true" action_type="-1" position="5">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Help.JetBrainsTV" is_action="true" action_type="-1" position="5">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Help" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="5">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="MainToolBarSettings" />
+      <path value="VCS Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.ide.actions.GoToRootNode_Action#!" is_action="true" action_type="-1" position="4">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <path value="Go To" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="CompareFileWithEditor" is_action="true" action_type="-1" position="4">
+      <path value="root" />
+      <path value="Project View Popup Menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ChangesView.ApplyPatch" is_action="true" action_type="-1" position="4">
+      <path value="root" />
+      <path value="Navigation Bar" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="com.mbeddr.core.base.pluginSolution.plugin.mbeddrPlatformProjectionModeGroup_ActionGroup" is_group="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ExportImportGroup" is_group="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="File" />
+      <path value="Settings Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ViewSource" is_action="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.ide.actions.GoToFile_Action#!" is_action="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <path value="Go To" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Vcs.IntegrateProject" is_action="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="OnlineDocAction" is_action="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Help" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="RunnerActions" is_group="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ChangesView.ApplyPatch" is_action="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Project View Popup Menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="EditSource" is_action="true" action_type="-1" position="2">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="2">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <path value="Go To" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="2">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="RunConfiguration" is_action="true" action_type="-1" position="2">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="FileOtherSettingsGroup" is_group="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="File" />
+      <path value="Settings Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="QuickActions" is_group="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="RecentChangedFiles" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <path value="View Recent Actions Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.ide.actions.Goto_ActionGroupgotoVCS" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <path value="Go To" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Start.Use.Vcs" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="LocalHistory.PutLabel" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="Local History" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Subversion.Create.External" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Git.Tag" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Git" />
+      <path value="GitRepositoryActions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="MPSToolbarRunGroup" is_group="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ShowSettings" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="MainToolBarSettings" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="FileOpenGroup" is_group="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="File" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ToolWindowsGroup" is_group="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="RecentFiles" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <path value="View Recent Actions Group" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="GotoLine" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="jetbrains.mps.ide.actions.GoToAction_Action#!" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Navigate" />
+      <path value="Go To" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Subversion.Share" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="VCS" />
+      <path value="VCS Group" />
+      <path value="Subversion" />
+      <path value="SubversionGroup" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="AssociateWithFileType" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Project View Popup Menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="AssociateWithFileType" is_action="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Navigation Bar" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ViewToolButtons" is_action="true" action_type="1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ViewToolBar" is_action="true" action_type="1" position="1">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ViewStatusBar" is_action="true" action_type="1" position="2">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="com.siemens.ct.scanner.pluginsolution.plugin.ScannerWizards_ActionGroup" is_group="true" action_type="1" position="4">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+  </component>
+</application>
