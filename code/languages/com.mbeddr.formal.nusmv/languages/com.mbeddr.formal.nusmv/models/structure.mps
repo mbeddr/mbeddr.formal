@@ -2,7 +2,7 @@
 <model ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -223,7 +223,7 @@
       <property role="20kJfa" value="lhs" />
       <property role="20lbJX" value="1" />
       <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
-      <ref role="20lvS9" node="mJkiyMzeTG" resolve="IVariableRef" />
+      <ref role="20lvS9" node="6oUHYl_Xm5W" resolve="AbstractVariableRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNOn">
@@ -255,16 +255,13 @@
     <property role="EcuMT" value="7842584090743943170" />
     <property role="TrG5h" value="VariableRef" />
     <property role="3GE5qa" value="expressions" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <ref role="1TJDcQ" node="6oUHYl_Xm5W" resolve="AbstractVariableRef" />
     <node concept="1TJgyj" id="6NmtaR1V303" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743943171" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6NmtaR1SV6O" resolve="VariableDeclaration" />
-    </node>
-    <node concept="PrWs8" id="mJkiyMzeTH" role="PzmwI">
-      <ref role="PrY4T" node="mJkiyMzeTG" resolve="IVariableRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1VmI_">
@@ -304,8 +301,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lhs" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6NmtaR1V302" resolve="VariableRef" />
       <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
+      <ref role="20lvS9" node="6oUHYl_Xm5W" resolve="AbstractVariableRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1W9ga">
@@ -1340,6 +1337,17 @@
     <property role="34LRSv" value="T" />
     <property role="R4oN_" value="triggered" />
     <ref role="1TJDcQ" node="7V1Bqz6Uhgs" resolve="BinaryLTLExpression" />
+  </node>
+  <node concept="1TIwiD" id="6oUHYl_Xm5W">
+    <property role="EcuMT" value="7366402336403841404" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="AbstractVariableRef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="PrWs8" id="6oUHYl_Xm5X" role="PzmwI">
+      <ref role="PrY4T" node="mJkiyMzeTG" resolve="IVariableRef" />
+    </node>
   </node>
 </model>
 

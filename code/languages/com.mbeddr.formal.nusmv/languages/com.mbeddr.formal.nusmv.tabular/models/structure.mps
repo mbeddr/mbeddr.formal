@@ -2,7 +2,7 @@
 <model ref="r:20b428fb-5ad4-48f7-a0e1-326c84a8081b(com.mbeddr.formal.nusmv.tabular.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -67,7 +67,7 @@
       <ref role="PrY4T" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
     </node>
     <node concept="PrWs8" id="2mjHtwTGtdH" role="PzmwI">
-      <ref role="PrY4T" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
+      <ref role="PrY4T" to="gioj:2mjHtwTGt9x" resolve="IDefinitionLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="2mjHtwTIKkx">
@@ -80,10 +80,10 @@
       <property role="20kJfa" value="functionValueContent" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueContent" />
-      <ref role="20ksaX" to="gioj:2mjHtwTKxtS" resolve="defineLike" />
+      <ref role="20ksaX" to="gioj:2mjHtwTKxtS" resolve="definitionLike" />
     </node>
     <node concept="PrWs8" id="2mjHtwTKxWE" role="PzmwI">
-      <ref role="PrY4T" to="gioj:2mjHtwTKxtR" resolve="IDefineLikeRef" />
+      <ref role="PrY4T" to="gioj:2mjHtwTKxtR" resolve="IDefinitionLikeRef" />
     </node>
   </node>
 </model>

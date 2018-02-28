@@ -2,7 +2,7 @@
 <model ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -133,8 +133,8 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lhs" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4NkweGhcVOY" resolve="StateVariableRef" />
       <ref role="20ksaX" to="gioj:3YQnHt3VFQ" resolve="lhs" />
+      <ref role="20lvS9" node="4NkweGhcVOY" resolve="StateVariableRef" />
     </node>
     <node concept="1TJgyj" id="4NkweGhcVQq" role="1TKVEi">
       <property role="IQ2ns" value="5536191589039455642" />
@@ -148,16 +148,13 @@
   <node concept="1TIwiD" id="4NkweGhcVOY">
     <property role="EcuMT" value="5536191589039455550" />
     <property role="TrG5h" value="StateVariableRef" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <ref role="1TJDcQ" to="gioj:6oUHYl_Xm5W" resolve="AbstractVariableRef" />
     <node concept="1TJgyj" id="4NkweGhcVQ6" role="1TKVEi">
       <property role="IQ2ns" value="5536191589039455622" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3UuTDIOPiRI" resolve="StateVariableDeclaration" />
-    </node>
-    <node concept="PrWs8" id="mJkiyMzeTL" role="PzmwI">
-      <ref role="PrY4T" to="gioj:mJkiyMzeTG" resolve="IVariableRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="4NkweGhcVQz">
