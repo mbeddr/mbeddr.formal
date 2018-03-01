@@ -590,11 +590,8 @@
         </node>
       </node>
       <node concept="398223" id="42jqVeFkUvF" role="39821P">
-        <node concept="3_I8Xc" id="4aeOpjl$d83" role="39821P">
-          <ref role="3_I8Xa" to="al5i:6ucYLjol21$" resolve="mbeddr.mpsutil" />
-        </node>
-        <node concept="3_I8Xc" id="4aeOpjl$dGJ" role="39821P">
-          <ref role="3_I8Xa" to="90a9:29so9Vb$6Tw" resolve="mps-tables" />
+        <node concept="3ygNvl" id="6oUHYlAi5Mo" role="39821P">
+          <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
         </node>
         <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">
           <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
@@ -637,9 +634,6 @@
         </node>
         <node concept="3_I8Xc" id="6Kf5KB6RmeW" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1nJh0raVyYj" resolve="modelchecker.jar" />
-        </node>
-        <node concept="3ygNvl" id="4aeOpjlDTTO" role="39821P">
-          <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
         </node>
         <node concept="28jJK3" id="678OVF49bt_" role="39821P">
           <node concept="398BVA" id="678OVF49ngg" role="28jJRO">
