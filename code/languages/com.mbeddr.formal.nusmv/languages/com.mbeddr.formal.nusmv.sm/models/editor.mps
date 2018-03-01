@@ -2074,7 +2074,7 @@
     <node concept="3EZMnI" id="1$vmWKMrQPI" role="2wV5jI">
       <node concept="s8t4o" id="1$vmWKMrUDB" role="3EZMnx">
         <property role="28Zw97" value="true" />
-        <ref role="28F8cf" to="gioj:6NmtaR1V302" resolve="VariableRef" />
+        <ref role="28F8cf" to="gioj:6oUHYl_Xm5W" resolve="AbstractVariableRef" />
         <node concept="xShMh" id="1$vmWKMrUDD" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

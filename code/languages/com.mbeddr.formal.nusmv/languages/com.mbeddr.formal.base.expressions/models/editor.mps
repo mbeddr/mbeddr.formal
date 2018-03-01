@@ -38,6 +38,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
@@ -193,6 +194,25 @@
       </node>
       <node concept="Vb9p2" id="2CEi94dgUHF" role="3F10Kt">
         <property role="Vbekb" value="PLAIN" />
+      </node>
+    </node>
+    <node concept="14StLt" id="y826GHffn9" role="V601i">
+      <property role="TrG5h" value="OpStyle" />
+      <node concept="VechU" id="y826GHffoW" role="3F10Kt">
+        <property role="Vb096" value="black" />
+      </node>
+      <node concept="Vb9p2" id="y826GHffoY" role="3F10Kt">
+        <property role="Vbekb" value="PLAIN" />
+      </node>
+    </node>
+    <node concept="14StLt" id="2CEi94e3iKI" role="V601i">
+      <property role="TrG5h" value="PassiveTextStyle" />
+      <node concept="VPxyj" id="2CEi94dUSQp" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+      <node concept="Vb9p2" id="2CEi94e7jvE" role="3F10Kt" />
+      <node concept="VechU" id="2CEi94dZG7m" role="3F10Kt">
+        <property role="Vb096" value="darkGray" />
       </node>
     </node>
   </node>
