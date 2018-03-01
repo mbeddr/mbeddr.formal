@@ -29,7 +29,12 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
@@ -94,6 +99,13 @@
   <node concept="PlHQZ" id="6Kf5KB75w8u">
     <property role="EcuMT" value="7786467611509129758" />
     <property role="TrG5h" value="IVisibleElementsScopeProvider" />
+  </node>
+  <node concept="PlHQZ" id="6oUHYlAmoE8">
+    <property role="EcuMT" value="7366402336410405512" />
+    <property role="TrG5h" value="IIdentifierNamedConcept" />
+    <node concept="PrWs8" id="6oUHYlAmoE9" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
