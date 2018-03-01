@@ -385,16 +385,6 @@
         </node>
       </node>
     </node>
-    <node concept="2kB4xC" id="4aeOpjlAy7f" role="1l3spd">
-      <property role="TrG5h" value="version" />
-      <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
-        <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
-          <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2018-02-18" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="6mm$FLYQyYs" role="1l3spd">
       <property role="TrG5h" value="code" />
       <node concept="55IIr" id="6mm$FLYQyZk" role="398pKh">
@@ -405,6 +395,27 @@
             <node concept="2Ry0Ak" id="6mm$FLYQyZJ" role="2Ry0An">
               <property role="2Ry0Am" value="com.mbeddr.formal.nusmv" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6oUHYlAgti$" role="1l3spd">
+      <property role="TrG5h" value="tutorial" />
+      <node concept="55IIr" id="6oUHYlAgti_" role="398pKh">
+        <node concept="2Ry0Ak" id="6oUHYlAgtiA" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="6oUHYlAgtiB" role="2Ry0An">
+            <property role="2Ry0Am" value="tutorial" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2kB4xC" id="4aeOpjlAy7f" role="1l3spd">
+      <property role="TrG5h" value="version" />
+      <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
+        <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
+          <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
+            <property role="3MwjfP" value="2018-03-01" />
           </node>
         </node>
       </node>
@@ -503,6 +514,17 @@
             </node>
           </node>
         </node>
+        <node concept="28jJK3" id="6oUHYlAhXuu" role="39821P">
+          <node concept="398BVA" id="6oUHYlAhXuv" role="28jJRO">
+            <ref role="398BVh" node="2ShgyheeCX6" resolve="rcp_resources" />
+            <node concept="2Ry0Ak" id="6oUHYlAhXuw" role="iGT6I">
+              <property role="2Ry0Am" value="bin" />
+              <node concept="2Ry0Ak" id="6oUHYlAhXDe" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.ico" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="398223" id="7xR82YgKH6g" role="39821P">
         <node concept="398223" id="7xR82YgKHu6" role="39821P">
@@ -552,6 +574,18 @@
           </node>
           <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
             <ref role="1zDrgn" node="42jqVeFkUtq" resolve="Formal Specification Environment 1.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="398223" id="6oUHYlAgucX" role="39821P">
+        <node concept="3_J27D" id="6oUHYlAgucZ" role="Nbhlr">
+          <node concept="3Mxwew" id="6oUHYlAguoL" role="3MwsjC">
+            <property role="3MwjfP" value="tutorial" />
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="6oUHYlAguoN" role="39821P">
+          <node concept="398BVA" id="6oUHYlAguzg" role="2HvfZ0">
+            <ref role="398BVh" node="6oUHYlAgti$" resolve="tutorial" />
           </node>
         </node>
       </node>
@@ -2218,14 +2252,11 @@
               <node concept="3LWZYq" id="4aeOpjlBxiF" role="2HvfZ1">
                 <property role="3LWZYl" value="idea.properties" />
               </node>
-              <node concept="3LWZYq" id="7l_qOis5sVb" role="2HvfZ1">
-                <property role="3LWZYl" value="mps.exe.vmoptions" />
-              </node>
-              <node concept="3LWZYq" id="7l_qOis5sVc" role="2HvfZ1">
-                <property role="3LWZYl" value="mps64.exe.vmoptions" />
-              </node>
               <node concept="3LWZYq" id="2ShgyheeITT" role="2HvfZ1">
                 <property role="3LWZYl" value="mps.bat" />
+              </node>
+              <node concept="3LWZYq" id="6oUHYlAhXYC" role="2HvfZ1">
+                <property role="3LWZYl" value="mps.ico" />
               </node>
               <node concept="398BVA" id="42jqVeFkUy9" role="2HvfZ0">
                 <ref role="398BVh" node="42jqVeFkUwE" resolve="mps_home" />
