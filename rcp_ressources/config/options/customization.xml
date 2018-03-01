@@ -45,12 +45,6 @@
       <path value="SubversionGroup" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="CheckForUpdate" is_action="true" action_type="-1" position="19">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Help" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
     <group value="CompareClipboardWithSelection" is_action="true" action_type="-1" position="18">
       <path value="root" />
       <path value="Editor Popup Menu" />
@@ -61,28 +55,9 @@
       <path value="Editor Popup Menu" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="EditCustomVmOptions" is_action="true" action_type="-1" position="16">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Help" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
     <group value="$SearchWeb" is_action="true" action_type="-1" position="16">
       <path value="root" />
       <path value="Editor Popup Menu" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="jetbrains.mps.vcs.platform.actions.MPSGlobalVcsGroup_ActionGroup" is_group="true" action_type="-1" position="15">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="VCS" />
-      <path value="VCS Group" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="EditCustomProperties" is_action="true" action_type="-1" position="15">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Help" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group value="GoToCodeGroup" is_group="true" action_type="-1" position="14">
@@ -97,36 +72,10 @@
       <path value="View" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="ChangesView.ApplyPatchFromClipboard" is_action="true" action_type="-1" position="13">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="VCS" />
-      <path value="VCS Group" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="SendFeedback" is_action="true" action_type="-1" position="13">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Help" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
     <group value="com.mbeddr.mpsutil.print.pluginSolution.plugin.PrintGroup_ActionGroup" is_group="true" action_type="-1" position="12">
       <path value="root" />
       <path value="Main menu" />
       <path value="File" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="ChangesView.ApplyPatch" is_action="true" action_type="-1" position="12">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="VCS" />
-      <path value="VCS Group" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="TechnicalSupport" is_action="true" action_type="-1" position="12">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Help" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group value="EditorToggleActions" is_group="true" action_type="-1" position="11">
@@ -139,13 +88,6 @@
       <path value="root" />
       <path value="Main menu" />
       <path value="Navigate" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="ChangesView.CreatePatch" is_action="true" action_type="-1" position="11">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="VCS" />
-      <path value="VCS Group" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group value="Subversion.SetProperty" is_action="true" action_type="-1" position="11">
@@ -320,11 +262,6 @@
       <path value="Navigation Bar" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="com.mbeddr.core.base.pluginSolution.plugin.mbeddrPlatformProjectionModeGroup_ActionGroup" is_group="true" action_type="-1" position="3">
-      <path value="root" />
-      <path value="Main menu" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
     <group value="ExportImportGroup" is_group="true" action_type="-1" position="3">
       <path value="root" />
       <path value="Main menu" />
@@ -336,6 +273,12 @@
       <path value="root" />
       <path value="Main menu" />
       <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="com.mbeddr.core.base.pluginSolution.plugin.EditorButtonGroup_ActionGroup" is_group="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Projection" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group value="jetbrains.mps.ide.actions.GoToFile_Action#!" is_action="true" action_type="-1" position="3">
@@ -486,6 +429,27 @@
       <path value="View Recent Actions Group" />
       <option name="myInitialPosition" value="-1" />
     </group>
+    <group seperator="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Projection" />
+      <path value="GroupStateMachineDiagramSwitcher" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Projection" />
+      <path value="GroupArchitectureDiagramSwitcher" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group seperator="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main menu" />
+      <path value="Projection" />
+      <path value="GrouppresentationMode" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
     <group value="GotoLine" is_action="true" action_type="-1" position="0">
       <path value="root" />
       <path value="Main menu" />
@@ -534,11 +498,6 @@
       <path value="root" />
       <path value="Main menu" />
       <path value="View" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="com.siemens.ct.scanner.pluginsolution.plugin.ScannerWizards_ActionGroup" is_group="true" action_type="1" position="4">
-      <path value="root" />
-      <path value="Main menu" />
       <option name="myInitialPosition" value="-1" />
     </group>
   </component>
