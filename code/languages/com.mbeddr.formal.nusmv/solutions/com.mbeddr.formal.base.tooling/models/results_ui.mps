@@ -188,6 +188,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -6740,12 +6743,20 @@
             <node concept="37vLTw" id="7V1Bqz75Llz" role="37vLTJ">
               <ref role="3cqZAo" node="JsaLOcqBeI" resolve="project" />
             </node>
-            <node concept="2YIFZM" id="7V1Bqz73hBD" role="37vLTx">
-              <ref role="37wK5l" to="alof:~ProjectHelper.toMPSProject(com.intellij.openapi.project.Project):jetbrains.mps.project.Project" resolve="toMPSProject" />
+            <node concept="2YIFZM" id="2YRLzYFL8o1" role="37vLTx">
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <node concept="37vLTw" id="7V1Bqz73hBE" role="37wK5m">
+              <node concept="37vLTw" id="2YRLzYFL8o2" role="37wK5m">
                 <ref role="3cqZAo" node="4_pSipqVBnB" resolve="proj" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="2YRLzYFL9Q1" role="3cqZAp">
+          <node concept="3y3z36" id="2YRLzYFLbzz" role="1gVkn0">
+            <node concept="10Nm6u" id="2YRLzYFLc7J" role="3uHU7w" />
+            <node concept="37vLTw" id="2YRLzYFLaSu" role="3uHU7B">
+              <ref role="3cqZAo" node="JsaLOcqBeI" resolve="project" />
             </node>
           </node>
         </node>
