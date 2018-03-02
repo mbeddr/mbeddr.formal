@@ -641,7 +641,6 @@
   </node>
   <node concept="312cEu" id="7mSH3Wn3WlO">
     <property role="TrG5h" value="NuSMVToolAdapter" />
-    <node concept="3Tm1VV" id="7mSH3Wn3WlP" role="1B3o_S" />
     <node concept="3uibUv" id="7mSH3Wn3Wq2" role="EKbjA">
       <ref role="3uigEE" to="2ocj:5A94f9EE$RB" resolve="MPSToolAdapter" />
       <node concept="3uibUv" id="2xeYpNC6yCd" role="11_B2D">

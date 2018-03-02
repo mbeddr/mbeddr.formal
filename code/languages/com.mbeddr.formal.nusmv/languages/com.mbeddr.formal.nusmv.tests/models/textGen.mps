@@ -56,7 +56,7 @@
         <node concept="lc7rE" id="1ZsZb$iK_5j" role="3cqZAp">
           <node concept="l9S2W" id="1ZsZb$iK_5F" role="lcghm">
             <property role="XA4eZ" value="true" />
-            <property role="lbP0B" value="&amp;" />
+            <property role="lbP0B" value=" &amp; " />
             <node concept="2OqwBi" id="1ZsZb$iK_ci" role="lbANJ">
               <node concept="117lpO" id="1ZsZb$iK_65" role="2Oq$k0" />
               <node concept="3Tsc0h" id="1ZsZb$iK_jR" role="2OqNvi">
