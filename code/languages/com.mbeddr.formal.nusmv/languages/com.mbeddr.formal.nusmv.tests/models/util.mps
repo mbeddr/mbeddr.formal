@@ -7,8 +7,6 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="se73" ref="r:2bad243b-1b8c-4ccd-8ea4-2b77e6c2045e(com.mbeddr.formal.nusmv.tests.util)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
@@ -192,34 +190,6 @@
   </registry>
   <node concept="312cEu" id="mJkiyMCuAI">
     <property role="TrG5h" value="NuSMVTestsGenerationUtils" />
-    <node concept="2tJIrI" id="mJkiyMCuAW" role="jymVt" />
-    <node concept="2tJIrI" id="mJkiyMDlRY" role="jymVt" />
-    <node concept="2YIFZL" id="mJkiyMCuBn" role="jymVt">
-      <property role="TrG5h" value="variableNameForParameter" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="37vLTG" id="mJkiyMCuBo" role="3clF46">
-        <property role="TrG5h" value="p" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3Tqbb2" id="mJkiyMCwXO" role="1tU5fm">
-          <ref role="ehGHo" to="gioj:6NmtaR1SULQ" resolve="ParameterDeclaration" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="mJkiyMCuBr" role="3clF47">
-        <node concept="3clFbF" id="mJkiyMCuBs" role="3cqZAp">
-          <node concept="2OqwBi" id="mJkiyMCvql" role="3clFbG">
-            <node concept="37vLTw" id="mJkiyMCvqk" role="2Oq$k0">
-              <ref role="3cqZAo" node="mJkiyMCuBo" resolve="p" />
-            </node>
-            <node concept="3TrcHB" id="mJkiyMCxrU" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="mJkiyMCuBw" role="1B3o_S" />
-      <node concept="17QB3L" id="mJkiyMCwHW" role="3clF45" />
-    </node>
     <node concept="2tJIrI" id="mJkiyMCxN8" role="jymVt" />
     <node concept="2YIFZL" id="mJkiyMCuBy" role="jymVt">
       <property role="TrG5h" value="variableNameForDefinition" />
@@ -808,8 +778,8 @@
                   <ref role="3cqZAo" node="7ODrlMnLZ8u" resolve="expected" />
                 </node>
                 <node concept="1mIQ4w" id="7ODrlMnM00f" role="2OqNvi">
-                  <node concept="chp4Y" id="7ODrlMnM03r" role="cj9EA">
-                    <ref role="cht4Q" to="fnq2:7ODrlMnL7Fg" resolve="AnyValue" />
+                  <node concept="chp4Y" id="4IuDkoKJqWr" role="cj9EA">
+                    <ref role="cht4Q" to="fnq2:4IuDkoKJ7d1" resolve="DontCare" />
                   </node>
                 </node>
               </node>

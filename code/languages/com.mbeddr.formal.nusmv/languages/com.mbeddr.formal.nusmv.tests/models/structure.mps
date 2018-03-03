@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
-    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -168,6 +168,22 @@
     <property role="TrG5h" value="AnyValue" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="any value" />
+    <property role="3GE5qa" value="generic" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="4IuDkoKJr7O" role="1TKVEi">
+      <property role="IQ2ns" value="5448974320048910836" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tpe" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IuDkoKJ7d1">
+    <property role="EcuMT" value="5448974320048829249" />
+    <property role="3GE5qa" value="generic" />
+    <property role="TrG5h" value="DontCare" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="don't care" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
   </node>
 </model>

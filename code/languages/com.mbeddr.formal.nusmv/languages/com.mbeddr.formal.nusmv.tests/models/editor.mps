@@ -87,6 +87,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -850,6 +851,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7ODrlMnL7Fh">
+    <property role="3GE5qa" value="generic" />
     <ref role="1XX52x" to="fnq2:7ODrlMnL7Fg" resolve="AnyValue" />
     <node concept="3F0ifn" id="7ODrlMnL7Fj" role="2wV5jI">
       <property role="3F0ifm" value="*" />
@@ -857,6 +859,28 @@
         <property role="Vb096" value="magenta" />
       </node>
       <node concept="Vb9p2" id="7ODrlMnLMyR" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="4IuDkoKJr7V" role="6VMZX">
+      <node concept="3F0ifn" id="4IuDkoKJr7X" role="3EZMnx">
+        <property role="3F0ifm" value="type:" />
+      </node>
+      <node concept="3F1sOY" id="4IuDkoKJr85" role="3EZMnx">
+        <ref role="1NtTu8" to="fnq2:4IuDkoKJr7O" resolve="tpe" />
+      </node>
+      <node concept="l2Vlx" id="4IuDkoKJr7Y" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4IuDkoKJ7d2">
+    <property role="3GE5qa" value="generic" />
+    <ref role="1XX52x" to="fnq2:4IuDkoKJ7d1" resolve="DontCare" />
+    <node concept="3F0ifn" id="4IuDkoKJ7d4" role="2wV5jI">
+      <property role="3F0ifm" value="#" />
+      <node concept="VechU" id="4IuDkoKJ7d7" role="3F10Kt">
+        <property role="Vb096" value="cyan" />
+      </node>
+      <node concept="Vb9p2" id="4IuDkoKJ7dc" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
     </node>

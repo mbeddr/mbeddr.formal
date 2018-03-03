@@ -1260,7 +1260,7 @@
     <property role="TrG5h" value="_001_tests_running_generalized_tests" />
     <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="4IuDkoKGJ97" role="1SL9yI">
-      <property role="TrG5h" value="test_AnyVal_properly_handled" />
+      <property role="TrG5h" value="test_AnyVal_as_output_properly_handled_pass" />
       <node concept="3cqZAl" id="4IuDkoKGJ98" role="3clF45" />
       <node concept="3clFbS" id="4IuDkoKGJ99" role="3clF47">
         <node concept="3cpWs8" id="4IuDkoKGJ9a" role="3cqZAp">
@@ -1288,6 +1288,40 @@
             </node>
             <node concept="liA8E" id="4IuDkoKGJ9j" role="2OqNvi">
               <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4IuDkoKIyPy" role="1SL9yI">
+      <property role="TrG5h" value="test_AnyVal_as_output_properly_handled_fail" />
+      <node concept="3cqZAl" id="4IuDkoKIyPz" role="3clF45" />
+      <node concept="3clFbS" id="4IuDkoKIyP$" role="3clF47">
+        <node concept="3cpWs8" id="4IuDkoKIyP_" role="3cqZAp">
+          <node concept="3cpWsn" id="4IuDkoKIyPA" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="4IuDkoKIyPB" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="4IuDkoKIyPC" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="4IuDkoKIyPD" role="37wK5m">
+                <property role="Xl_RC" value="_001_generalized_tests_running_tests" />
+              </node>
+              <node concept="Xl_RD" id="4IuDkoKIyPE" role="37wK5m">
+                <property role="Xl_RC" value="tests_running_ignore_output_fails" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="4IuDkoKIyPF" role="3cqZAp">
+          <node concept="2OqwBi" id="4IuDkoKIyPG" role="3vwVQn">
+            <node concept="37vLTw" id="4IuDkoKIyPH" role="2Oq$k0">
+              <ref role="3cqZAo" node="4IuDkoKIyPA" resolve="res" />
+            </node>
+            <node concept="liA8E" id="4IuDkoKIyPI" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
             </node>
           </node>
         </node>
