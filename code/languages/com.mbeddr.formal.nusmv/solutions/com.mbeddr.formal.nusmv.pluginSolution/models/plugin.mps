@@ -752,9 +752,6 @@
       <node concept="3clFbS" id="7mSH3Wn3WqX" role="3clF47">
         <node concept="3clFbF" id="7F8$WoVMovB" role="3cqZAp">
           <node concept="2OqwBi" id="7F8$WoVMoz0" role="3clFbG">
-            <node concept="37vLTw" id="7mSH3Wn4SPu" role="2Oq$k0">
-              <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="nusmvRawResultsTool" />
-            </node>
             <node concept="2XshWL" id="7F8$WoVMoW9" role="2OqNvi">
               <ref role="2WH_rO" node="3Ymokd9FeZe" resolve="setOutput" />
               <node concept="2OqwBi" id="7mSH3Wn5Iu$" role="2XxRq1">
@@ -782,17 +779,30 @@
                 </node>
               </node>
             </node>
+            <node concept="2OqwBi" id="7ODrlMnMnTA" role="2Oq$k0">
+              <node concept="37vLTw" id="7ODrlMnMnTB" role="2Oq$k0">
+                <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+              </node>
+              <node concept="LR4U6" id="7ODrlMnMnTC" role="2OqNvi">
+                <ref role="LR4U5" node="6izRX53qGZb" resolve="NuSMVRawResultTool" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1ZsZb$iUyqU" role="3cqZAp">
           <node concept="2OqwBi" id="1ZsZb$iUyHH" role="3clFbG">
-            <node concept="37vLTw" id="1ZsZb$iUyqS" role="2Oq$k0">
-              <ref role="3cqZAo" node="1ZsZb$iUoHC" resolve="nusmvLiftedResultsTool" />
-            </node>
             <node concept="2XshWL" id="1ZsZb$iUz3N" role="2OqNvi">
               <ref role="2WH_rO" node="2UdJgvD7_zC" resolve="appendResult" />
               <node concept="37vLTw" id="1ZsZb$iUz$j" role="2XxRq1">
                 <ref role="3cqZAo" node="7mSH3Wn3WqU" resolve="result" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7ODrlMnMnLb" role="2Oq$k0">
+              <node concept="37vLTw" id="7ODrlMnMnLc" role="2Oq$k0">
+                <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+              </node>
+              <node concept="LR4U6" id="7ODrlMnMnLd" role="2OqNvi">
+                <ref role="LR4U5" node="1ZsZb$iUoX6" resolve="NuSMVLiftedResultTool" />
               </node>
             </node>
           </node>
@@ -813,13 +823,18 @@
           <node concept="3clFbS" id="7mSH3Wn4t0m" role="3clFbx">
             <node concept="3clFbF" id="7mSH3Wn4rjS" role="3cqZAp">
               <node concept="2OqwBi" id="7mSH3Wn4rvV" role="3clFbG">
-                <node concept="37vLTw" id="7mSH3Wn4rjR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="nusmvRawResultsTool" />
-                </node>
                 <node concept="liA8E" id="7mSH3Wn4rJc" role="2OqNvi">
                   <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
                   <node concept="3clFbT" id="7mSH3Wn4rRG" role="37wK5m">
                     <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7ODrlMnMnaQ" role="2Oq$k0">
+                  <node concept="37vLTw" id="7ODrlMnMnaR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+                  </node>
+                  <node concept="LR4U6" id="7ODrlMnMnaS" role="2OqNvi">
+                    <ref role="LR4U5" node="6izRX53qGZb" resolve="NuSMVRawResultTool" />
                   </node>
                 </node>
               </node>
@@ -827,21 +842,31 @@
             <node concept="3clFbF" id="2xeYpNCwikt" role="3cqZAp">
               <node concept="2OqwBi" id="2xeYpNCwU95" role="3clFbG">
                 <node concept="2OqwBi" id="2xeYpNCwRNm" role="2Oq$k0">
-                  <node concept="37vLTw" id="2xeYpNCwikv" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1ZsZb$iUoHC" resolve="nusmvLiftedResultsTool" />
-                  </node>
                   <node concept="2XshWL" id="2xeYpNCwSki" role="2OqNvi">
                     <ref role="2WH_rO" node="1ZsZb$iUoXp" resolve="getPanel" />
+                  </node>
+                  <node concept="2OqwBi" id="7ODrlMnMnkP" role="2Oq$k0">
+                    <node concept="37vLTw" id="7ODrlMnMnkQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+                    </node>
+                    <node concept="LR4U6" id="7ODrlMnMnkR" role="2OqNvi">
+                      <ref role="LR4U5" node="1ZsZb$iUoX6" resolve="NuSMVLiftedResultTool" />
+                    </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="2xeYpNCwW0h" role="2OqNvi">
                   <ref role="37wK5l" to="878u:71H03GAYclT" resolve="setRawUI" />
                   <node concept="2OqwBi" id="2xeYpNCwnk7" role="37wK5m">
-                    <node concept="37vLTw" id="2xeYpNCwn3D" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="nusmvRawResultsTool" />
-                    </node>
                     <node concept="2XshWL" id="2xeYpNCwnBY" role="2OqNvi">
                       <ref role="2WH_rO" node="hgayPfeilJ" resolve="getPanel" />
+                    </node>
+                    <node concept="2OqwBi" id="7ODrlMnMB_E" role="2Oq$k0">
+                      <node concept="37vLTw" id="7ODrlMnMB_F" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+                      </node>
+                      <node concept="LR4U6" id="7ODrlMnMB_G" role="2OqNvi">
+                        <ref role="LR4U5" node="6izRX53qGZb" resolve="NuSMVRawResultTool" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -850,11 +875,16 @@
             <node concept="3clFbF" id="2xeYpNCwPBx" role="3cqZAp">
               <node concept="2OqwBi" id="2xeYpNCwQ_J" role="3clFbG">
                 <node concept="2OqwBi" id="2xeYpNCwPTc" role="2Oq$k0">
-                  <node concept="37vLTw" id="2xeYpNCwPBv" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1ZsZb$iUoHC" resolve="nusmvLiftedResultsTool" />
-                  </node>
                   <node concept="2XshWL" id="2xeYpNCwQcc" role="2OqNvi">
                     <ref role="2WH_rO" node="1ZsZb$iUoXp" resolve="getPanel" />
+                  </node>
+                  <node concept="2OqwBi" id="7ODrlMnMnul" role="2Oq$k0">
+                    <node concept="37vLTw" id="7ODrlMnMnum" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+                    </node>
+                    <node concept="LR4U6" id="7ODrlMnMnun" role="2OqNvi">
+                      <ref role="LR4U5" node="1ZsZb$iUoX6" resolve="NuSMVLiftedResultTool" />
+                    </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="2xeYpNCwR$3" role="2OqNvi">
@@ -867,13 +897,18 @@
             </node>
             <node concept="3clFbF" id="1ZsZb$iUE34" role="3cqZAp">
               <node concept="2OqwBi" id="1ZsZb$iUEmc" role="3clFbG">
-                <node concept="37vLTw" id="1ZsZb$iUE32" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1ZsZb$iUoHC" resolve="nusmvLiftedResultsTool" />
-                </node>
                 <node concept="liA8E" id="1ZsZb$iUERZ" role="2OqNvi">
                   <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
                   <node concept="3clFbT" id="1ZsZb$iUF4l" role="37wK5m">
                     <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7ODrlMnMnBc" role="2Oq$k0">
+                  <node concept="37vLTw" id="7ODrlMnMnBd" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+                  </node>
+                  <node concept="LR4U6" id="7ODrlMnMnBe" role="2OqNvi">
+                    <ref role="LR4U5" node="1ZsZb$iUoX6" resolve="NuSMVLiftedResultTool" />
                   </node>
                 </node>
               </node>
@@ -881,11 +916,16 @@
           </node>
           <node concept="3fqX7Q" id="7mSH3Wn4t3J" role="3clFbw">
             <node concept="2OqwBi" id="7mSH3Wn4tlb" role="3fr31v">
-              <node concept="37vLTw" id="7mSH3Wn4t6Z" role="2Oq$k0">
-                <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="nusmvRawResultsTool" />
-              </node>
               <node concept="liA8E" id="7mSH3Wn4tJO" role="2OqNvi">
                 <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+              </node>
+              <node concept="2OqwBi" id="7ODrlMnMn0N" role="2Oq$k0">
+                <node concept="37vLTw" id="7ODrlMnMn0O" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+                </node>
+                <node concept="LR4U6" id="7ODrlMnMn0P" role="2OqNvi">
+                  <ref role="LR4U5" node="6izRX53qGZb" resolve="NuSMVRawResultTool" />
+                </node>
               </node>
             </node>
           </node>
@@ -904,9 +944,6 @@
       <node concept="3clFbS" id="7mSH3Wn3Wr9" role="3clF47">
         <node concept="3clFbF" id="7mSH3Wn4s5n" role="3cqZAp">
           <node concept="2OqwBi" id="7mSH3Wn4shy" role="3clFbG">
-            <node concept="37vLTw" id="7mSH3Wn4s5m" role="2Oq$k0">
-              <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="nusmvRawResultsTool" />
-            </node>
             <node concept="2XshWL" id="7mSH3Wn4ukL" role="2OqNvi">
               <ref role="2WH_rO" node="3Ymokd9FeZe" resolve="setOutput" />
               <node concept="Xl_RD" id="7mSH3Wn4um1" role="2XxRq1">
@@ -919,13 +956,18 @@
                 <property role="Xl_RC" value="" />
               </node>
             </node>
+            <node concept="2OqwBi" id="7ODrlMnMmkm" role="2Oq$k0">
+              <node concept="37vLTw" id="7ODrlMnMmkn" role="2Oq$k0">
+                <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+              </node>
+              <node concept="LR4U6" id="7ODrlMnMmko" role="2OqNvi">
+                <ref role="LR4U5" node="6izRX53qGZb" resolve="NuSMVRawResultTool" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1ZsZb$iUFom" role="3cqZAp">
           <node concept="2OqwBi" id="1ZsZb$iUFE8" role="3clFbG">
-            <node concept="37vLTw" id="1ZsZb$iUFok" role="2Oq$k0">
-              <ref role="3cqZAo" node="1ZsZb$iUoHC" resolve="nusmvLiftedResultsTool" />
-            </node>
             <node concept="2XshWL" id="1ZsZb$iUFYZ" role="2OqNvi">
               <ref role="2WH_rO" node="1ZsZb$iU$lf" resolve="setResults" />
               <node concept="2ShNRf" id="1ZsZb$iUG1f" role="2XxRq1">
@@ -934,6 +976,14 @@
                     <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7ODrlMnMlDw" role="2Oq$k0">
+              <node concept="37vLTw" id="7ODrlMnMlP0" role="2Oq$k0">
+                <ref role="3cqZAo" node="2xeYpNCwYqF" resolve="project" />
+              </node>
+              <node concept="LR4U6" id="7ODrlMnMlDy" role="2OqNvi">
+                <ref role="LR4U5" node="1ZsZb$iUoX6" resolve="NuSMVLiftedResultTool" />
               </node>
             </node>
           </node>

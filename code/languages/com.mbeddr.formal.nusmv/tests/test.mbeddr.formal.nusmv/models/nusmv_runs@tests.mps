@@ -10,6 +10,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
   </languages>
   <imports>
     <import index="82db" ref="r:d9e70cd7-5bba-4146-b9d2-6eab353213c5(test.mbeddr.formal.nusmv.tests)" />
@@ -22,7 +23,6 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -74,9 +74,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -998,33 +995,46 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1gJVC85MyHt" role="3cqZAp" />
-        <node concept="3clFbF" id="1gJVC85Mz59" role="3cqZAp">
-          <node concept="2OqwBi" id="1gJVC85Mz56" role="3clFbG">
-            <node concept="10M0yZ" id="1gJVC85Mz57" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="1gJVC85Mz58" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="2OqwBi" id="1gJVC85MzhB" role="37wK5m">
-                <node concept="37vLTw" id="1gJVC85Mz71" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1gJVC85Lt93" resolve="res" />
-                </node>
-                <node concept="liA8E" id="1gJVC85Mzu6" role="2OqNvi">
-                  <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1gJVC85Mzxe" role="3cqZAp" />
         <node concept="3vwNmj" id="1gJVC85Lt98" role="3cqZAp">
           <node concept="2OqwBi" id="1gJVC85Lt99" role="3vwVQn">
             <node concept="37vLTw" id="1gJVC85Lt9a" role="2Oq$k0">
               <ref role="3cqZAo" node="1gJVC85Lt93" resolve="res" />
             </node>
             <node concept="liA8E" id="1gJVC85Lt9b" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4IuDkoKGIYz" role="1SL9yI">
+      <property role="TrG5h" value="test_module_with_nondeterminism_is_properly_found_001" />
+      <node concept="3cqZAl" id="4IuDkoKGIY$" role="3clF45" />
+      <node concept="3clFbS" id="4IuDkoKGIY_" role="3clF47">
+        <node concept="3cpWs8" id="4IuDkoKGIYA" role="3cqZAp">
+          <node concept="3cpWsn" id="4IuDkoKGIYB" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="4IuDkoKGIYC" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="4IuDkoKGIYD" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="4IuDkoKGIYE" role="37wK5m">
+                <property role="Xl_RC" value="_000_tests_running_tests" />
+              </node>
+              <node concept="Xl_RD" id="4IuDkoKGIYF" role="37wK5m">
+                <property role="Xl_RC" value="tests_running_tests_with_nondeterminism_001" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="4IuDkoKGIYG" role="3cqZAp">
+          <node concept="2OqwBi" id="4IuDkoKGIYH" role="3vwVQn">
+            <node concept="37vLTw" id="4IuDkoKGIYI" role="2Oq$k0">
+              <ref role="3cqZAo" node="4IuDkoKGIYB" resolve="res" />
+            </node>
+            <node concept="liA8E" id="4IuDkoKGIYJ" role="2OqNvi">
               <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
             </node>
           </node>
@@ -1239,6 +1249,44 @@
               </node>
             </node>
             <node concept="liA8E" id="7V1Bqz6Yr4k" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="4IuDkoKGJ96">
+    <property role="TrG5h" value="_001_tests_running_generalized_tests" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="4IuDkoKGJ97" role="1SL9yI">
+      <property role="TrG5h" value="test_AnyVal_properly_handled" />
+      <node concept="3cqZAl" id="4IuDkoKGJ98" role="3clF45" />
+      <node concept="3clFbS" id="4IuDkoKGJ99" role="3clF47">
+        <node concept="3cpWs8" id="4IuDkoKGJ9a" role="3cqZAp">
+          <node concept="3cpWsn" id="4IuDkoKGJ9b" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="4IuDkoKGJ9c" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="4IuDkoKGJ9d" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="4IuDkoKGJ9e" role="37wK5m">
+                <property role="Xl_RC" value="_001_generalized_tests_running_tests" />
+              </node>
+              <node concept="Xl_RD" id="4IuDkoKGJ9f" role="37wK5m">
+                <property role="Xl_RC" value="tests_running_ignore_output_pass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="4IuDkoKGJ9g" role="3cqZAp">
+          <node concept="2OqwBi" id="4IuDkoKGJ9h" role="3vwVQn">
+            <node concept="37vLTw" id="4IuDkoKGJ9i" role="2Oq$k0">
+              <ref role="3cqZAo" node="4IuDkoKGJ9b" resolve="res" />
+            </node>
+            <node concept="liA8E" id="4IuDkoKGJ9j" role="2OqNvi">
               <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
             </node>
           </node>

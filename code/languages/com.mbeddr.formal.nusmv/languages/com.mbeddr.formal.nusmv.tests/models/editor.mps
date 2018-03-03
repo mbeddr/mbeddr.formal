@@ -49,6 +49,9 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -844,6 +847,18 @@
         <property role="3F0ifm" value="]" />
       </node>
       <node concept="l2Vlx" id="1ZsZb$iKHun" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7ODrlMnL7Fh">
+    <ref role="1XX52x" to="fnq2:7ODrlMnL7Fg" resolve="AnyValue" />
+    <node concept="3F0ifn" id="7ODrlMnL7Fj" role="2wV5jI">
+      <property role="3F0ifm" value="*" />
+      <node concept="VechU" id="7ODrlMnL7Fo" role="3F10Kt">
+        <property role="Vb096" value="magenta" />
+      </node>
+      <node concept="Vb9p2" id="7ODrlMnLMyR" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
     </node>
   </node>
 </model>
