@@ -23,8 +23,8 @@
     <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
     <import index="9yqz" ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)" />
     <import index="2avh" ref="r:d71bd9ec-2dae-496f-9887-8fb9facf61b7(com.mbeddr.formal.base.tooling.tools)" />
-    <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.formal.spin.analyzer.model)" implicit="true" />
-    <import index="xm5e" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd291(com.mbeddr.formal.spin.runner)" implicit="true" />
+    <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.formal.spin.analyzer.model)" />
+    <import index="xm5e" ref="r:051a08a3-bd4e-4f65-9fad-0d3503acd291(com.mbeddr.formal.spin.runner)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
     <import index="vt3w" ref="r:adc36c3c-4daf-4fb6-87db-41b3b762af25(com.mbeddr.formal.spin.analyses.behavior)" implicit="true" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
@@ -3049,12 +3049,12 @@
     <node concept="3uibUv" id="5uY69zuR3dx" role="1zkMxy">
       <ref role="3uigEE" to="2ocj:6DyMuFe0PCB" resolve="AnalyzerBase" />
       <node concept="_YKpA" id="5uY69zuR3ef" role="11_B2D">
-        <node concept="3uibUv" id="5uY69zuR3eg" role="_ZDj9">
+        <node concept="3uibUv" id="1aNYNUmkml" role="_ZDj9">
           <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
         </node>
       </node>
       <node concept="_YKpA" id="5uY69zuR3eh" role="11_B2D">
-        <node concept="3uibUv" id="5uY69zuR3ei" role="_ZDj9">
+        <node concept="3uibUv" id="1aNYNUmkkc" role="_ZDj9">
           <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
         </node>
       </node>
