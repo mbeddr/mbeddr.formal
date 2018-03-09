@@ -344,7 +344,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="4_pH3zvmydf">
-    <property role="3GE5qa" value="statements" />
+    <property role="3GE5qa" value="statements.builtin" />
     <ref role="WuzLi" to="o3hv:4_pH3zvi8Ka" resolve="PrintfStatement" />
     <node concept="11bSqf" id="4_pH3zvmydg" role="11c4hB">
       <node concept="3clFbS" id="4_pH3zvmydh" role="2VODD2">
@@ -521,6 +521,30 @@
         <node concept="lc7rE" id="4_pH3zvneOx" role="3cqZAp">
           <node concept="la8eA" id="4_pH3zvneZn" role="lcghm">
             <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2DjQaub$5zP">
+    <property role="3GE5qa" value="statements.builtin" />
+    <ref role="WuzLi" to="o3hv:2DjQaub$5vR" resolve="AssertStatement" />
+    <node concept="11bSqf" id="2DjQaub$5zQ" role="11c4hB">
+      <node concept="3clFbS" id="2DjQaub$5zR" role="2VODD2">
+        <node concept="lc7rE" id="2DjQaub$5$a" role="3cqZAp">
+          <node concept="la8eA" id="2DjQaub$5$y" role="lcghm">
+            <property role="lacIc" value="assert(" />
+          </node>
+          <node concept="l9hG8" id="2DjQaub$5_H" role="lcghm">
+            <node concept="2OqwBi" id="2DjQaub$5IP" role="lb14g">
+              <node concept="117lpO" id="2DjQaub$5AD" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2DjQaub$5XT" role="2OqNvi">
+                <ref role="3Tt5mk" to="o3hv:2DjQaub$5wN" resolve="exp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2DjQaub$66Q" role="lcghm">
+            <property role="lacIc" value=");" />
           </node>
         </node>
       </node>

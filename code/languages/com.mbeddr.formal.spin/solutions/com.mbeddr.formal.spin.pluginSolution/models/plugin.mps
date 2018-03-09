@@ -400,12 +400,12 @@
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="3lXW7OZ6VXi" role="1tU5fm">
-              <ref role="ehGHo" to="9yqz:4_pH3zvozx3" resolve="SpinBasedAnalysis" />
+              <ref role="ehGHo" to="9yqz:4_pH3zvoE5u" resolve="AssertionsSpinAnalysis" />
             </node>
             <node concept="2ShNRf" id="3lXW7OZ6W2T" role="33vP2m">
               <node concept="3zrR0B" id="3lXW7OZ6Wfj" role="2ShVmc">
                 <node concept="3Tqbb2" id="3lXW7OZ6Wfl" role="3zrR0E">
-                  <ref role="ehGHo" to="9yqz:4_pH3zvozx3" resolve="SpinBasedAnalysis" />
+                  <ref role="ehGHo" to="9yqz:4_pH3zvoE5u" resolve="AssertionsSpinAnalysis" />
                 </node>
               </node>
             </node>

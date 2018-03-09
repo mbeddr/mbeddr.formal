@@ -192,6 +192,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -852,6 +855,14 @@
               <node concept="37vLTw" id="5KBiyqyvp0c" role="37wK5m">
                 <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1aNYNUnK5P" role="3cqZAp">
+          <node concept="3y3z36" id="1aNYNUnL_w" role="1gVkn0">
+            <node concept="10Nm6u" id="1aNYNUnLFB" role="3uHU7w" />
+            <node concept="37vLTw" id="1aNYNUnKig" role="3uHU7B">
+              <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
             </node>
           </node>
         </node>

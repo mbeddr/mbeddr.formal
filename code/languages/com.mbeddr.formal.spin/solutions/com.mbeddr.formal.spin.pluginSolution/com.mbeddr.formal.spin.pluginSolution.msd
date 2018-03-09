@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.spin.pluginSolution" uuid="9ce94094-51d9-4013-bdfc-e4db03298f9f" moduleVersion="0" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
+<solution name="com.mbeddr.formal.spin.pluginSolution" uuid="9ce94094-51d9-4013-bdfc-e4db03298f9f" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

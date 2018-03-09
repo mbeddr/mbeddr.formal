@@ -22,11 +22,19 @@
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
+      <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -37,7 +45,17 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -78,6 +96,50 @@
     </node>
     <node concept="13hLZK" id="4_pH3zvoG3U" role="13h7CW">
       <node concept="3clFbS" id="4_pH3zvoG3V" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2DjQaubzPVr">
+    <ref role="13h7C2" to="9yqz:4_pH3zvoE5u" resolve="AssertionsSpinAnalysis" />
+    <node concept="13hLZK" id="2DjQaubzPVs" role="13h7CW">
+      <node concept="3clFbS" id="2DjQaubzPVt" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2DjQaubzPWA" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="createAnalyzer" />
+      <ref role="13i0hy" node="4_pH3zvoG50" resolve="createAnalyzer" />
+      <node concept="3Tm1VV" id="2DjQaubzPWB" role="1B3o_S" />
+      <node concept="3clFbS" id="2DjQaubzPWI" role="3clF47">
+        <node concept="3clFbF" id="2DjQaubzPXR" role="3cqZAp">
+          <node concept="2ShNRf" id="2DjQaubzPXL" role="3clFbG">
+            <node concept="1pGfFk" id="2DjQaubzX$1" role="2ShVmc">
+              <ref role="37wK5l" to="5do7:1wu5Hv6f$71" resolve="SpinAssertionsAnalyzerFactory" />
+              <node concept="37vLTw" id="2DjQaubzX_0" role="37wK5m">
+                <ref role="3cqZAo" node="2DjQaubzPWJ" resolve="toolAdapter" />
+              </node>
+              <node concept="13iPFW" id="2DjQaubzY00" role="37wK5m" />
+              <node concept="37vLTw" id="2DjQaubzY5l" role="37wK5m">
+                <ref role="3cqZAo" node="2DjQaubzPWL" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2DjQaubzPWJ" role="3clF46">
+        <property role="TrG5h" value="toolAdapter" />
+        <node concept="3uibUv" id="2DjQaubzPWK" role="1tU5fm">
+          <ref role="3uigEE" to="2ocj:5A94f9EE$RB" resolve="MPSToolAdapter" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2DjQaubzPWL" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="2DjQaubzPWM" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2DjQaubzPWN" role="3clF45">
+        <ref role="3uigEE" to="5do7:5uY69zuQJv8" resolve="SpinAnalyzerFactory" />
+      </node>
     </node>
   </node>
 </model>

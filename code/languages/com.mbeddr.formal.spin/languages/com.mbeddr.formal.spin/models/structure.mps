@@ -267,7 +267,7 @@
   </node>
   <node concept="1TIwiD" id="4_pH3zvi8Ka">
     <property role="EcuMT" value="5285453794053229578" />
-    <property role="3GE5qa" value="statements" />
+    <property role="3GE5qa" value="statements.builtin" />
     <property role="TrG5h" value="PrintfStatement" />
     <property role="34LRSv" value="printf" />
     <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
@@ -289,6 +289,20 @@
       <property role="IQ2nx" value="5285453794053229582" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2DjQaub$5vR">
+    <property role="EcuMT" value="3050019586772588535" />
+    <property role="3GE5qa" value="statements.builtin" />
+    <property role="TrG5h" value="AssertStatement" />
+    <property role="34LRSv" value="assert" />
+    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="1TJgyj" id="2DjQaub$5wN" role="1TKVEi">
+      <property role="IQ2ns" value="3050019586772588595" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
 </model>
