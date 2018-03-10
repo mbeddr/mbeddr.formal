@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
-    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
+    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -53,6 +53,14 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -68,6 +76,12 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
   <node concept="13h7C7" id="4_pH3zvgGXT">
@@ -113,6 +127,30 @@
         </node>
       </node>
       <node concept="10Oyi0" id="4_pH3zvi7fC" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2DjQaubA2NU">
+    <ref role="13h7C2" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+    <node concept="13hLZK" id="2DjQaubA2NV" role="13h7CW">
+      <node concept="3clFbS" id="2DjQaubA2NW" role="2VODD2">
+        <node concept="3clFbF" id="2DjQaubA2Oc" role="3cqZAp">
+          <node concept="2OqwBi" id="2DjQaubA4zv" role="3clFbG">
+            <node concept="2OqwBi" id="2DjQaubA2VQ" role="2Oq$k0">
+              <node concept="13iPFW" id="2DjQaubA2Ob" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2DjQaubA3ia" role="2OqNvi">
+                <ref role="3TtcxE" to="o3hv:4_pH3zvds0E" resolve="content" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="2DjQaubA7kQ" role="2OqNvi">
+              <node concept="2pJPEk" id="2DjQaubA7wg" role="25WWJ7">
+                <node concept="2pJPED" id="2DjQaubA7If" role="2pJPEn">
+                  <ref role="2pJxaS" to="o3hv:2DjQaub_wDs" resolve="EmptyModelContent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

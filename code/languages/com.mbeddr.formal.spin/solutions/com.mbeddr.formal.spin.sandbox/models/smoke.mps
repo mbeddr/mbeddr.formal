@@ -42,6 +42,17 @@
       <concept id="5285453794051997733" name="com.mbeddr.formal.spin.structure.PromelaModel" flags="ng" index="2mr7gt">
         <child id="5285453794051997738" name="content" index="2mr7gi" />
       </concept>
+      <concept id="3050019586772961991" name="com.mbeddr.formal.spin.structure.MtypeDeclaration" flags="ng" index="2xLt9w">
+        <child id="3050019586772962061" name="literals" index="2xLteE" />
+      </concept>
+      <concept id="3050019586772962007" name="com.mbeddr.formal.spin.structure.MtypeLiteral" flags="ng" index="2xLt9K" />
+      <concept id="3050019586773241125" name="com.mbeddr.formal.spin.structure.MtypeLiteralRef" flags="ng" index="2xMpm2">
+        <reference id="3050019586773241132" name="literal" index="2xMpmb" />
+      </concept>
+      <concept id="3050019586773531795" name="com.mbeddr.formal.spin.structure.MtypeType" flags="ng" index="2xNmgO" />
+      <concept id="3050019586773371914" name="com.mbeddr.formal.spin.structure.GlobalVariableDeclaration" flags="ng" index="2xNTiH">
+        <child id="3050019586773371938" name="init" index="2xNTi5" />
+      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744251143" name="com.mbeddr.formal.base.expressions.structure.DivisionExpression" flags="ng" index="2H9DuE" />
@@ -150,6 +161,34 @@
             <ref role="2m6DZP" node="4_pH3zvi7dr" resolve="reversed" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mr7gt" id="2DjQaub_wDr">
+    <property role="TrG5h" value="types" />
+    <node concept="2xLt9w" id="2DjQaubA$Oi" role="2mr7gi">
+      <node concept="2xLt9K" id="2DjQaubA$Om" role="2xLteE">
+        <property role="TrG5h" value="first" />
+      </node>
+      <node concept="2xLt9K" id="2DjQaubA$Op" role="2xLteE">
+        <property role="TrG5h" value="second" />
+      </node>
+      <node concept="2xLt9K" id="2DjQaubA$Ou" role="2xLteE">
+        <property role="TrG5h" value="third" />
+      </node>
+    </node>
+    <node concept="2xNTiH" id="2DjQaubCqLO" role="2mr7gi">
+      <property role="TrG5h" value="anIntGlobalVar" />
+      <node concept="2m7kok" id="2DjQaubCqLM" role="2m6DZC" />
+      <node concept="2IPVmt" id="2DjQaubCqMc" role="2xNTi5">
+        <property role="2IPVms" value="0" />
+      </node>
+    </node>
+    <node concept="2xNTiH" id="2DjQaubCrJ0" role="2mr7gi">
+      <property role="TrG5h" value="turn" />
+      <node concept="2xNmgO" id="2DjQaubCrIY" role="2m6DZC" />
+      <node concept="2xMpm2" id="2DjQaubCrJw" role="2xNTi5">
+        <ref role="2xMpmb" node="2DjQaubA$Om" resolve="first" />
       </node>
     </node>
   </node>
