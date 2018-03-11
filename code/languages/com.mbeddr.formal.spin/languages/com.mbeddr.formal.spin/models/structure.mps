@@ -414,7 +414,7 @@
   </node>
   <node concept="1TIwiD" id="2DjQaubD1Zz">
     <property role="EcuMT" value="3050019586773884899" />
-    <property role="3GE5qa" value="statements.do" />
+    <property role="3GE5qa" value="statements.if_do" />
     <property role="TrG5h" value="DoStatement" />
     <property role="34LRSv" value="do" />
     <property role="R4oN_" value="do ... od" />
@@ -422,11 +422,14 @@
     <node concept="1TJgyj" id="2DjQaubD1ZE" role="1TKVEi">
       <property role="IQ2ns" value="3050019586773884906" />
       <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2DjQaubD1ZH" resolve="ChoiceLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="2DjQaubD1ZH">
     <property role="EcuMT" value="3050019586773884909" />
-    <property role="3GE5qa" value="statements.do" />
+    <property role="3GE5qa" value="statements.if_do" />
     <property role="TrG5h" value="ChoiceLike" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -440,7 +443,7 @@
   </node>
   <node concept="1TIwiD" id="2DjQaubD1ZR">
     <property role="EcuMT" value="3050019586773884919" />
-    <property role="3GE5qa" value="statements.do" />
+    <property role="3GE5qa" value="statements.if_do" />
     <property role="TrG5h" value="Choice" />
     <property role="34LRSv" value="::" />
     <property role="R4oN_" value="a choice" />
@@ -450,12 +453,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="guard" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4_pH3zvfIkq" resolve="Statement" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="2DjQaubD43L">
     <property role="EcuMT" value="3050019586773893361" />
-    <property role="3GE5qa" value="statements.do" />
+    <property role="3GE5qa" value="statements.if_do" />
     <property role="TrG5h" value="BreakChoice" />
     <property role="34LRSv" value="break" />
     <property role="R4oN_" value="break choice" />
@@ -463,10 +466,73 @@
   </node>
   <node concept="1TIwiD" id="2DjQaubD47f">
     <property role="EcuMT" value="3050019586773893583" />
-    <property role="3GE5qa" value="statements.do" />
+    <property role="3GE5qa" value="statements.if_do" />
     <property role="TrG5h" value="Else" />
     <property role="34LRSv" value=":: else" />
     <ref role="1TJDcQ" node="2DjQaubD1ZH" resolve="ChoiceLike" />
+  </node>
+  <node concept="1TIwiD" id="2DjQaubFlq6">
+    <property role="EcuMT" value="3050019586774488710" />
+    <property role="3GE5qa" value="statements.if_do" />
+    <property role="TrG5h" value="IfStatement" />
+    <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="if ... fi" />
+    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="1TJgyj" id="2DjQaubFlrf" role="1TKVEi">
+      <property role="IQ2ns" value="3050019586774488783" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2DjQaubD1ZH" resolve="ChoiceLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2DjQaubG55Z">
+    <property role="EcuMT" value="3050019586774684031" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="EqualsExpression" />
+    <property role="34LRSv" value="==" />
+    <property role="R4oN_" value="logical equals" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WnsxBK" resolve="EqualsExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2DjQaubG566">
+    <property role="EcuMT" value="3050019586774684038" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="GreaterExpression" />
+    <property role="34LRSv" value="&gt;" />
+    <property role="R4oN_" value="greater than" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0yab" resolve="GreaterExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2DjQaubG56d">
+    <property role="EcuMT" value="3050019586774684045" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="GreaterEqualsExpression" />
+    <property role="34LRSv" value="&gt;=" />
+    <property role="R4oN_" value="greater equals than" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0yad" resolve="GreaterEqualsExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2DjQaubG56k">
+    <property role="EcuMT" value="3050019586774684052" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="LessExpression" />
+    <property role="34LRSv" value="&lt;" />
+    <property role="R4oN_" value="less than" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0fi0" resolve="LessExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2DjQaubG56o">
+    <property role="EcuMT" value="3050019586774684056" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="LessEqualsExpression" />
+    <property role="34LRSv" value="&lt;=" />
+    <property role="R4oN_" value="less equals than" />
+    <ref role="1TJDcQ" to="ehqg:2uEbjWK0yac" resolve="LessEqualsExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="2DjQaubG6gx">
+    <property role="EcuMT" value="3050019586774688801" />
+    <property role="3GE5qa" value="expressions.comparison" />
+    <property role="TrG5h" value="NotEqualsExpression" />
+    <property role="34LRSv" value="!=" />
+    <property role="R4oN_" value="not equals" />
+    <ref role="1TJDcQ" to="ehqg:1ZsZb$iA1dK" resolve="NotEqualsExpressionBase" />
   </node>
 </model>
 

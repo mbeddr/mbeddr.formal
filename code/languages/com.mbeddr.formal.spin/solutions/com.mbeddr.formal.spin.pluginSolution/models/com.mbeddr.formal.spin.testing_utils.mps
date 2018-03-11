@@ -18,6 +18,8 @@
     <import index="5do7" ref="r:42e0f0fc-96f0-4fca-9aeb-f9625e145b23(com.mbeddr.formal.spin.analyzer)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.formal.spin.analyzer.model)" />
     <import index="2ocj" ref="r:0af55dc0-14f5-45c8-bf12-3c673ca075ac(com.mbeddr.formal.base.tooling.analyzer)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
     <import index="9yqz" ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)" implicit="true" />
     <import index="vt3w" ref="r:adc36c3c-4daf-4fb6-87db-41b3b762af25(com.mbeddr.formal.spin.analyses.behavior)" implicit="true" />
@@ -153,6 +155,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -238,6 +241,12 @@
         <property role="TrG5h" value="spinModuleName" />
         <node concept="17QB3L" id="6BM8NjXd_zr" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="2DjQaubGjw$" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="2DjQaubGjBP" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3clFbS" id="4QGaVz5ryAp" role="3clF47">
         <node concept="3cpWs8" id="4QGaVz5sxQY" role="3cqZAp">
           <node concept="3cpWsn" id="4QGaVz5sxQZ" role="3cpWs9">
@@ -306,6 +315,9 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="2DjQaubGjH_" role="ukAjM">
+            <ref role="3cqZAo" node="2DjQaubGjw$" resolve="repo" />
+          </node>
         </node>
         <node concept="3cpWs8" id="3lXW7OZ6VXk" role="3cqZAp">
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
@@ -345,6 +357,9 @@
               <node concept="37vLTw" id="5yxSA$IRGlo" role="37wK5m">
                 <ref role="3cqZAo" node="3lXW7OZ6VXn" resolve="aa" />
               </node>
+              <node concept="37vLTw" id="2DjQaubGlcy" role="37wK5m">
+                <ref role="3cqZAo" node="2DjQaubGjw$" resolve="repo" />
+              </node>
             </node>
             <node concept="1uHKPH" id="63QgsF$O_Ke" role="2OqNvi" />
           </node>
@@ -368,6 +383,12 @@
         <property role="TrG5h" value="spinModuleName" />
         <node concept="17QB3L" id="_jsMICrMgh" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="2DjQaubGluE" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="2DjQaubGluF" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3clFbS" id="_jsMICrMgi" role="3clF47">
         <node concept="3clFbF" id="_jsMICrNP4" role="3cqZAp">
           <node concept="2OqwBi" id="_jsMICrOai" role="3clFbG">
@@ -378,6 +399,9 @@
               </node>
               <node concept="37vLTw" id="_jsMICrO5o" role="37wK5m">
                 <ref role="3cqZAo" node="_jsMICrMgg" resolve="spinModuleName" />
+              </node>
+              <node concept="37vLTw" id="2DjQaubGl$B" role="37wK5m">
+                <ref role="3cqZAo" node="2DjQaubGluE" resolve="repo" />
               </node>
             </node>
             <node concept="liA8E" id="_jsMICrOsY" role="2OqNvi">
@@ -415,6 +439,12 @@
       <node concept="37vLTG" id="5yxSA$IRHT5" role="3clF46">
         <property role="TrG5h" value="spinModuleName" />
         <node concept="17QB3L" id="5yxSA$IRHT6" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2DjQaubGlh8" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="2DjQaubGlh9" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="3clFbS" id="5yxSA$IRHT7" role="3clF47">
         <node concept="3cpWs8" id="5yxSA$IRT33" role="3cqZAp">
@@ -521,6 +551,9 @@
             <node concept="37vLTw" id="5yxSA$IRUx8" role="37wK5m">
               <ref role="3cqZAo" node="5yxSA$IRT34" resolve="sba" />
             </node>
+            <node concept="37vLTw" id="2DjQaubGlpZ" role="37wK5m">
+              <ref role="3cqZAo" node="2DjQaubGlh8" resolve="repo" />
+            </node>
           </node>
         </node>
       </node>
@@ -544,6 +577,12 @@
           <ref role="ehGHo" to="9yqz:4_pH3zvozx3" resolve="SpinBasedAnalysis" />
         </node>
       </node>
+      <node concept="37vLTG" id="2DjQaubGknC" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="2DjQaubGkFE" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3clFbS" id="5yxSA$IRGiH" role="3clF47">
         <node concept="3cpWs8" id="4l47ydyeJ8h" role="3cqZAp">
           <node concept="3cpWsn" id="4l47ydyeJ8i" role="3cpWs9">
@@ -561,7 +600,9 @@
                   <ref role="37wK5l" to="2ocj:HmUOIGAXzl" resolve="newInstance" />
                   <ref role="1Pybhc" to="2ocj:HmUOIGARns" resolve="EmptyToolAdapter" />
                 </node>
-                <node concept="10Nm6u" id="4l47ydyeJ8n" role="37wK5m" />
+                <node concept="37vLTw" id="2DjQaubGkRG" role="37wK5m">
+                  <ref role="3cqZAo" node="2DjQaubGknC" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>

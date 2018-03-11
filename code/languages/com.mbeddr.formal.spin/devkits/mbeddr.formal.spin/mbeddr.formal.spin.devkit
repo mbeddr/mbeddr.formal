@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="mbeddr.formal.spin" uuid="5a232fd9-bc69-417b-bce9-56292eaa62a5">
+  <exported-language name="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" />
+  <exported-language name="ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)" />
+  <exported-language name="80ea7e60-3c36-4583-be96-3e7d3ad3504e(com.mbeddr.formal.spin.analyses)" />
+  <exported-language name="bd54ef69-17ec-411b-8f49-485702e74565(com.mbeddr.formal.spin.ext)" />
+  <exported-language name="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" />
+</dev-kit>
+
