@@ -21,6 +21,7 @@
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -87,6 +88,7 @@
   </registry>
   <node concept="1lH9Xt" id="2DjQaubG7mP">
     <property role="TrG5h" value="_010_statements" />
+    <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="2DjQaubG7mQ" role="1SL9yI">
       <property role="TrG5h" value="test_010_statements_if" />
       <node concept="3cqZAl" id="2DjQaubG7mR" role="3clF45" />
