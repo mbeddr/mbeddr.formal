@@ -13,20 +13,33 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -58,6 +71,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1221737317277" name="jetbrains.mps.baseLanguage.structure.StaticInitializer" flags="lg" index="1Pe0a1">
+        <child id="1221737317278" name="statementList" index="1Pe0a2" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -80,6 +96,25 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1240247536947" name="jetbrains.mps.baseLanguage.collections.structure.TreeSetCreator" flags="nn" index="34wSKj" />
+      <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
   <node concept="312cEu" id="3tIDuP5tlRy">
@@ -120,6 +155,307 @@
     <node concept="3Tm1VV" id="3tIDuP5tlRz" role="1B3o_S" />
     <node concept="NWlO9" id="3tIDuP5tlSj" role="lGtFl">
       <property role="NWlVz" value="Utility for naming consistency." />
+    </node>
+  </node>
+  <node concept="312cEu" id="407WgdX3Evc">
+    <property role="TrG5h" value="PromelaKeywords" />
+    <node concept="2tJIrI" id="407WgdX3E$N" role="jymVt" />
+    <node concept="Wx3nA" id="407WgdX3EJV" role="jymVt">
+      <property role="TrG5h" value="promelaBasicKeywords" />
+      <property role="3TUv4t" value="false" />
+      <node concept="_YKpA" id="37J4MLLB0JI" role="1tU5fm">
+        <node concept="17QB3L" id="37J4MLLB0JJ" role="_ZDj9" />
+      </node>
+      <node concept="3Tm1VV" id="407WgdX3EJA" role="1B3o_S" />
+    </node>
+    <node concept="3Tm1VV" id="407WgdX3Evd" role="1B3o_S" />
+    <node concept="NWlO9" id="407WgdX3ER2" role="lGtFl">
+      <property role="NWlVz" value="Keywords of the Promela language." />
+    </node>
+    <node concept="Wx3nA" id="407WgdX3EVp" role="jymVt">
+      <property role="TrG5h" value="promelaCIntegration" />
+      <property role="3TUv4t" value="false" />
+      <node concept="_YKpA" id="37J4MLLB0JR" role="1tU5fm">
+        <node concept="17QB3L" id="37J4MLLB0JS" role="_ZDj9" />
+      </node>
+      <node concept="3Tm1VV" id="407WgdX3GeN" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="407WgdX3Gqa" role="jymVt">
+      <property role="TrG5h" value="promelaKeywords" />
+      <property role="3TUv4t" value="false" />
+      <node concept="2hMVRd" id="407WgdX3OAb" role="1tU5fm">
+        <node concept="17QB3L" id="407WgdX3OAd" role="2hN53Y" />
+      </node>
+      <node concept="3Tm1VV" id="407WgdX3Gqd" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="407WgdX3ERa" role="jymVt" />
+    <node concept="1Pe0a1" id="407WgdX3EYN" role="jymVt">
+      <node concept="3clFbS" id="407WgdX3EYP" role="1Pe0a2">
+        <node concept="3clFbF" id="407WgdX3F0w" role="3cqZAp">
+          <node concept="37vLTI" id="407WgdX3Fws" role="3clFbG">
+            <node concept="37vLTw" id="407WgdX3F0v" role="37vLTJ">
+              <ref role="3cqZAo" node="407WgdX3EJV" resolve="promelaBasicKeywords" />
+            </node>
+            <node concept="2ShNRf" id="37J4MLLB0JK" role="37vLTx">
+              <node concept="Tc6Ow" id="37J4MLLB0JL" role="2ShVmc">
+                <node concept="17QB3L" id="37J4MLLB0JM" role="HW$YZ" />
+                <node concept="Xl_RD" id="37J4MLLB0JN" role="HW$Y0">
+                  <property role="Xl_RC" value="void" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCHuZ" role="HW$Y0">
+                  <property role="Xl_RC" value="static" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCHMd" role="HW$Y0">
+                  <property role="Xl_RC" value="auto" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCVqI" role="HW$Y0">
+                  <property role="Xl_RC" value="for" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCVI$" role="HW$Y0">
+                  <property role="Xl_RC" value="while" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCVZk" role="HW$Y0">
+                  <property role="Xl_RC" value="if" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCWcO" role="HW$Y0">
+                  <property role="Xl_RC" value="else" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCWMT" role="HW$Y0">
+                  <property role="Xl_RC" value="break" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCXg4" role="HW$Y0">
+                  <property role="Xl_RC" value="continue" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCXE2" role="HW$Y0">
+                  <property role="Xl_RC" value="do" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCXSG" role="HW$Y0">
+                  <property role="Xl_RC" value="case" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCY7F" role="HW$Y0">
+                  <property role="Xl_RC" value="const" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCYzf" role="HW$Y0">
+                  <property role="Xl_RC" value="enum" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCYZl" role="HW$Y0">
+                  <property role="Xl_RC" value="extern" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCZwj" role="HW$Y0">
+                  <property role="Xl_RC" value="goto" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLCZKu" role="HW$Y0">
+                  <property role="Xl_RC" value="sizeof" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLD0ea" role="HW$Y0">
+                  <property role="Xl_RC" value="struct" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLD0Go" role="HW$Y0">
+                  <property role="Xl_RC" value="switch" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLD120" role="HW$Y0">
+                  <property role="Xl_RC" value="typedef" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLD1_P" role="HW$Y0">
+                  <property role="Xl_RC" value="union" />
+                </node>
+                <node concept="Xl_RD" id="37J4MLLD1Wd" role="HW$Y0">
+                  <property role="Xl_RC" value="volatile" />
+                </node>
+                <node concept="Xl_RD" id="3FLb4OJTOYd" role="HW$Y0">
+                  <property role="Xl_RC" value="return" />
+                </node>
+                <node concept="Xl_RD" id="7kl_6u3SYXV" role="HW$Y0">
+                  <property role="Xl_RC" value="printf" />
+                </node>
+                <node concept="Xl_RD" id="7kl_6u3T0pZ" role="HW$Y0">
+                  <property role="Xl_RC" value="assert" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBpZTRk" role="HW$Y0">
+                  <property role="Xl_RC" value="::" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBpZXZw" role="HW$Y0">
+                  <property role="Xl_RC" value="fi" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBpZYmy" role="HW$Y0">
+                  <property role="Xl_RC" value="skip" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2R44" role="HW$Y0">
+                  <property role="Xl_RC" value="active" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2RrU" role="HW$Y0">
+                  <property role="Xl_RC" value="atomic" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2S7P" role="HW$Y0">
+                  <property role="Xl_RC" value="d_step" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2SEj" role="HW$Y0">
+                  <property role="Xl_RC" value="D_proctype" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2Txh" role="HW$Y0">
+                  <property role="Xl_RC" value="empty" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2U9T" role="HW$Y0">
+                  <property role="Xl_RC" value="emabled" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2UCU" role="HW$Y0">
+                  <property role="Xl_RC" value="full" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2V8q" role="HW$Y0">
+                  <property role="Xl_RC" value="hidden" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2VtL" role="HW$Y0">
+                  <property role="Xl_RC" value="init" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2Wne" role="HW$Y0">
+                  <property role="Xl_RC" value="len" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2WHh" role="HW$Y0">
+                  <property role="Xl_RC" value="mtype" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2XeH" role="HW$Y0">
+                  <property role="Xl_RC" value="nempty" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2XvL" role="HW$Y0">
+                  <property role="Xl_RC" value="never" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2Y2b" role="HW$Y0">
+                  <property role="Xl_RC" value="nfull" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2Yvj" role="HW$Y0">
+                  <property role="Xl_RC" value="od" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2YWP" role="HW$Y0">
+                  <property role="Xl_RC" value="of" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2ZkQ" role="HW$Y0">
+                  <property role="Xl_RC" value="pc_value" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq2ZTc" role="HW$Y0">
+                  <property role="Xl_RC" value="printf" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq30nW" role="HW$Y0">
+                  <property role="Xl_RC" value="priority" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq30Xg" role="HW$Y0">
+                  <property role="Xl_RC" value="proctype" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq31yM" role="HW$Y0">
+                  <property role="Xl_RC" value="provided" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq31Ws" role="HW$Y0">
+                  <property role="Xl_RC" value="run" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq32MZ" role="HW$Y0">
+                  <property role="Xl_RC" value="timeout" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq34aJ" role="HW$Y0">
+                  <property role="Xl_RC" value="unless" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq34_o" role="HW$Y0">
+                  <property role="Xl_RC" value="xr" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq35sj" role="HW$Y0">
+                  <property role="Xl_RC" value="xs" />
+                </node>
+                <node concept="Xl_RD" id="407WgdX3D6D" role="HW$Y0">
+                  <property role="Xl_RC" value="chan" />
+                </node>
+                <node concept="Xl_RD" id="407WgdX3DvK" role="HW$Y0">
+                  <property role="Xl_RC" value="byte" />
+                </node>
+                <node concept="Xl_RD" id="407WgdX3E71" role="HW$Y0">
+                  <property role="Xl_RC" value="int" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="407WgdX3FD0" role="3cqZAp">
+          <node concept="37vLTI" id="407WgdX3G9V" role="3clFbG">
+            <node concept="37vLTw" id="407WgdX3FCY" role="37vLTJ">
+              <ref role="3cqZAo" node="407WgdX3EVp" resolve="promelaCIntegration" />
+            </node>
+            <node concept="2ShNRf" id="37J4MLLB0JT" role="37vLTx">
+              <node concept="Tc6Ow" id="37J4MLLB0JU" role="2ShVmc">
+                <node concept="17QB3L" id="37J4MLLB0JV" role="HW$YZ" />
+                <node concept="Xl_RD" id="37J4MLLB0JW" role="HW$Y0">
+                  <property role="Xl_RC" value="c_decl" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBpZJWo" role="HW$Y0">
+                  <property role="Xl_RC" value="c_code" />
+                </node>
+                <node concept="Xl_RD" id="7XJGPBq371u" role="HW$Y0">
+                  <property role="Xl_RC" value="c_track" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="407WgdX3Gtw" role="3cqZAp">
+          <node concept="37vLTI" id="407WgdX3GY_" role="3clFbG">
+            <node concept="2ShNRf" id="407WgdX3GZD" role="37vLTx">
+              <node concept="34wSKj" id="407WgdX3NXd" role="2ShVmc">
+                <node concept="17QB3L" id="407WgdX3Ofi" role="HW$YZ" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="407WgdX3Gtu" role="37vLTJ">
+              <ref role="3cqZAo" node="407WgdX3Gqa" resolve="promelaKeywords" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="407WgdX3H1Z" role="3cqZAp">
+          <node concept="2OqwBi" id="407WgdX3Hz8" role="3clFbG">
+            <node concept="37vLTw" id="407WgdX3H1X" role="2Oq$k0">
+              <ref role="3cqZAo" node="407WgdX3Gqa" resolve="promelaKeywords" />
+            </node>
+            <node concept="X8dFx" id="407WgdX3IPf" role="2OqNvi">
+              <node concept="37vLTw" id="407WgdX3J0L" role="25WWJ7">
+                <ref role="3cqZAo" node="407WgdX3EJV" resolve="promelaBasicKeywords" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="407WgdX3Jla" role="3cqZAp">
+          <node concept="2OqwBi" id="407WgdX3JQq" role="3clFbG">
+            <node concept="37vLTw" id="407WgdX3Jl8" role="2Oq$k0">
+              <ref role="3cqZAo" node="407WgdX3Gqa" resolve="promelaKeywords" />
+            </node>
+            <node concept="X8dFx" id="407WgdX3L8z" role="2OqNvi">
+              <node concept="37vLTw" id="407WgdX3LFo" role="25WWJ7">
+                <ref role="3cqZAo" node="407WgdX3EVp" resolve="promelaCIntegration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="407WgdX3LJH" role="jymVt" />
+    <node concept="2YIFZL" id="407WgdX3LRq" role="jymVt">
+      <property role="TrG5h" value="isKeyword" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="407WgdX3LRt" role="3clF47">
+        <node concept="3clFbF" id="407WgdX3LUz" role="3cqZAp">
+          <node concept="2OqwBi" id="407WgdX3Myx" role="3clFbG">
+            <node concept="37vLTw" id="407WgdX3LUy" role="2Oq$k0">
+              <ref role="3cqZAo" node="407WgdX3Gqa" resolve="promelaKeywords" />
+            </node>
+            <node concept="3JPx81" id="407WgdX3NOL" role="2OqNvi">
+              <node concept="37vLTw" id="407WgdX3NPM" role="25WWJ7">
+                <ref role="3cqZAo" node="407WgdX3LTw" resolve="str" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="407WgdX3LNl" role="1B3o_S" />
+      <node concept="10P_77" id="407WgdX3LPk" role="3clF45" />
+      <node concept="37vLTG" id="407WgdX3LTw" role="3clF46">
+        <property role="TrG5h" value="str" />
+        <node concept="17QB3L" id="407WgdX3LTv" role="1tU5fm" />
+      </node>
     </node>
   </node>
 </model>

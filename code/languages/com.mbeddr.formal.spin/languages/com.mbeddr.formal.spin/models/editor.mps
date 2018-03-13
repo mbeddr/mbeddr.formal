@@ -458,6 +458,7 @@
     <node concept="3EZMnI" id="2DjQaub$5wj" role="2wV5jI">
       <node concept="3F0ifn" id="2DjQaub$5wt" role="3EZMnx">
         <property role="3F0ifm" value="assert" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="2DjQaub$5wA" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -664,6 +665,7 @@
       </node>
       <node concept="3F0ifn" id="2DjQaubD44p" role="3EZMnx">
         <property role="3F0ifm" value="break" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="l2Vlx" id="2DjQaubD449" role="2iSdaV" />
     </node>
