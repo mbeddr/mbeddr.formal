@@ -77,6 +77,9 @@
     <node concept="PrWs8" id="6NmtaR1SUJm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="407WgdWZgUB" role="PzmwI">
+      <ref role="PrY4T" to="b19z:407WgdWZ7F6" resolve="IKeywordsProvider" />
+    </node>
     <node concept="1QGGSu" id="14CuINs5VhI" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/system.png" />
     </node>

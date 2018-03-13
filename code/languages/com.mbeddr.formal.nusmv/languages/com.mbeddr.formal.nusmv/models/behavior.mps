@@ -15,6 +15,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
+    <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -44,6 +45,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -403,6 +407,29 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="407WgdWZhcb" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isKeyword" />
+      <ref role="13i0hy" to="w873:407WgdWZ7FF" resolve="isKeyword" />
+      <node concept="3Tm1VV" id="407WgdWZhcc" role="1B3o_S" />
+      <node concept="3clFbS" id="407WgdWZhch" role="3clF47">
+        <node concept="3clFbF" id="407WgdWZxwt" role="3cqZAp">
+          <node concept="2YIFZM" id="407WgdWZxwW" role="3clFbG">
+            <ref role="37wK5l" to="kldk:407WgdWZrQC" resolve="isKeyword" />
+            <ref role="1Pybhc" to="kldk:407WgdWZhFK" resolve="NuSMVKeywords" />
+            <node concept="37vLTw" id="407WgdWZxxm" role="37wK5m">
+              <ref role="3cqZAo" node="407WgdWZhci" resolve="str" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="407WgdWZhci" role="3clF46">
+        <property role="TrG5h" value="str" />
+        <node concept="17QB3L" id="407WgdWZhcj" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="407WgdWZhck" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1ZsZb$iN7CN">
