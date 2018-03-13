@@ -356,7 +356,7 @@
   </node>
   <node concept="sE7Ow" id="EVDykUC7Si">
     <property role="TrG5h" value="SpinCheckAction" />
-    <property role="2uzpH1" value="Verify Model (with Spin)" />
+    <property role="2uzpH1" value="Verify Model (Run Pan)" />
     <property role="fJN8o" value="true" />
     <node concept="2ScWuX" id="Rd$2EC5$hT" role="tmbBb">
       <node concept="3clFbS" id="Rd$2EC5$hU" role="2VODD2">
