@@ -52,6 +52,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -127,6 +128,66 @@
                   <node concept="1xMEDy" id="2DjQaubG3lX" role="1xVPHs">
                     <node concept="chp4Y" id="2DjQaubG3se" role="ri$Ld">
                       <ref role="cht4Q" to="o3hv:4_pH3zvgMHB" resolve="LocalVariableDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="407WgdX9Wpn">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1M2myG" to="o3hv:407WgdX9Woy" resolve="GlobalVarRef" />
+    <node concept="1N5Pfh" id="407WgdX9Wpr" role="1Mr941">
+      <ref role="1N5Vy1" to="o3hv:4_pH3zvgMJd" resolve="var" />
+      <node concept="3dgokm" id="407WgdX9Wpu" role="1N6uqs">
+        <node concept="3clFbS" id="407WgdX9Wpv" role="2VODD2">
+          <node concept="3clFbF" id="407WgdX9Wsq" role="3cqZAp">
+            <node concept="2YIFZM" id="407WgdX9Wxl" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="407WgdX9Xj$" role="37wK5m">
+                <node concept="2OqwBi" id="407WgdX9WML" role="2Oq$k0">
+                  <node concept="2rP1CM" id="407WgdX9WA4" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="407WgdX9X39" role="2OqNvi" />
+                </node>
+                <node concept="2Rf3mk" id="407WgdX9X$i" role="2OqNvi">
+                  <node concept="1xMEDy" id="407WgdX9X$k" role="1xVPHs">
+                    <node concept="chp4Y" id="407WgdX9XEr" role="ri$Ld">
+                      <ref role="cht4Q" to="o3hv:2DjQaubB4Ka" resolve="GlobalVariableDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="407WgdXgm_R">
+    <property role="3GE5qa" value="statements.builtin" />
+    <ref role="1M2myG" to="o3hv:407WgdXfxhc" resolve="RunStatement" />
+    <node concept="1N5Pfh" id="407WgdXgm_Y" role="1Mr941">
+      <ref role="1N5Vy1" to="o3hv:407WgdXfxhm" resolve="proc" />
+      <node concept="3dgokm" id="407WgdXgmA1" role="1N6uqs">
+        <node concept="3clFbS" id="407WgdXgmA2" role="2VODD2">
+          <node concept="3clFbF" id="407WgdXgmCX" role="3cqZAp">
+            <node concept="2YIFZM" id="407WgdXgmHS" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="407WgdXgnx1" role="37wK5m">
+                <node concept="2OqwBi" id="407WgdXgn0e" role="2Oq$k0">
+                  <node concept="2rP1CM" id="407WgdXgmN4" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="407WgdXgngA" role="2OqNvi" />
+                </node>
+                <node concept="2Rf3mk" id="407WgdXgnLi" role="2OqNvi">
+                  <node concept="1xMEDy" id="407WgdXgnLk" role="1xVPHs">
+                    <node concept="chp4Y" id="407WgdXgnRr" role="ri$Ld">
+                      <ref role="cht4Q" to="o3hv:4_pH3zvfIn7" resolve="ProcType" />
                     </node>
                   </node>
                 </node>
