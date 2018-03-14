@@ -725,7 +725,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6NmtaR1V302" resolve="VariableRef" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WnE5iE">
