@@ -59,9 +59,19 @@
       <concept id="3050019586773371914" name="com.mbeddr.formal.spin.structure.GlobalVariableDeclaration" flags="ng" index="2xNTiH">
         <child id="3050019586773371938" name="init" index="2xNTi5" />
       </concept>
+      <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
+      <concept id="5430620409969180562" name="com.mbeddr.formal.spin.structure.ArrowExpression" flags="ng" index="PrSZJ">
+        <child id="5430620409969180570" name="body" index="PrSZB" />
+        <child id="5430620409969180566" name="exp" index="PrSZF" />
+      </concept>
+      <concept id="5430620409968767889" name="com.mbeddr.formal.spin.structure.NrPr" flags="ng" index="PssfG" />
+      <concept id="4613921340547705769" name="com.mbeddr.formal.spin.structure.EmptyStatement" flags="ng" index="WXPEE" />
       <concept id="4613921340551317026" name="com.mbeddr.formal.spin.structure.GlobalVarRef" flags="ng" index="X83sx" />
       <concept id="4613921340550954664" name="com.mbeddr.formal.spin.structure.ByteType" flags="ng" index="X9sYF" />
       <concept id="4613921340551525460" name="com.mbeddr.formal.spin.structure.Pid" flags="ng" index="Xbgln" />
+      <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
+        <child id="4613921340551921928" name="exp" index="XdJ0b" />
+      </concept>
       <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunStatement" flags="ng" index="Xeulf">
         <reference id="4613921340552778838" name="proc" index="Xeull" />
         <child id="4613921340552778841" name="args" index="Xeulq" />
@@ -347,6 +357,22 @@
               </node>
               <node concept="2IPVmt" id="407WgdXgm_p" role="Xeulq">
                 <property role="2IPVms" value="15" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="WXPEE" id="4Hts7PYniHc" role="2mpP4z" />
+        <node concept="XdJ7S" id="4Hts7PYcJVx" role="2mpP4z">
+          <node concept="PrSZJ" id="4Hts7PYmgWI" role="XdJ0b">
+            <node concept="2mpP4x" id="4Hts7PYmgWK" role="PrSZB">
+              <node concept="2mpP4y" id="4Hts7PYmgWL" role="2mpP4z" />
+            </node>
+            <node concept="32OYss" id="4Hts7PYcJVy" role="PrSZF">
+              <node concept="2xSSBo" id="4Hts7PYcJVz" role="32OYtT">
+                <node concept="PssfG" id="4Hts7PYcJTX" role="2H9Iav" />
+                <node concept="2IPVmt" id="4Hts7PYcJV$" role="2H9Ial">
+                  <property role="2IPVms" value="1" />
+                </node>
               </node>
             </node>
           </node>

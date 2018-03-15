@@ -59,6 +59,9 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+      </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -91,6 +94,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -99,6 +103,10 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
+      <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
+        <child id="5083944728300220903" name="wrapped" index="yw3OG" />
+      </concept>
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
@@ -107,7 +115,13 @@
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
+        <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
+      <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
+      <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
+        <child id="2862331529394487726" name="query" index="1Lj8FM" />
       </concept>
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
@@ -938,6 +952,62 @@
         </node>
       </node>
       <node concept="l2Vlx" id="407WgdXfxhG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Hts7PYbbeo">
+    <property role="3GE5qa" value="expressions.builtin" />
+    <ref role="1XX52x" to="o3hv:4Hts7PYbbeh" resolve="NrPr" />
+    <node concept="3F0ifn" id="4Hts7PYbbeq" role="2wV5jI">
+      <property role="3F0ifm" value="_nr_pr" />
+      <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Hts7PYcJYx">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="o3hv:4Hts7PYcJYi" resolve="ArrowExpression" />
+    <node concept="1WcQYu" id="4Hts7PYgzdx" role="2wV5jI">
+      <node concept="3EZMnI" id="4Hts7PYcJZ7" role="1LiK7o">
+        <node concept="l2Vlx" id="4Hts7PYcJZ8" role="2iSdaV" />
+        <node concept="1kIj98" id="4Hts7PYcJYX" role="3EZMnx">
+          <node concept="3F1sOY" id="4Hts7PYcJZr" role="1kIj9b">
+            <property role="1cu_pB" value="2" />
+            <ref role="1NtTu8" to="o3hv:4Hts7PYcJYm" resolve="exp" />
+          </node>
+          <node concept="2ee1ZP" id="4Hts7PYiuBs" role="2ee62g">
+            <node concept="3clFbS" id="4Hts7PYiuBt" role="2VODD2">
+              <node concept="3clFbF" id="4Hts7PYiuCi" role="3cqZAp">
+                <node concept="Xl_RD" id="4Hts7PYiuCh" role="3clFbG">
+                  <property role="Xl_RC" value="-&gt;" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ee1ZP" id="4Hts7PYlhQv" role="2ee7bq">
+            <node concept="3clFbS" id="4Hts7PYlhQw" role="2VODD2">
+              <node concept="3clFbF" id="4Hts7PYlhRl" role="3cqZAp">
+                <node concept="10Nm6u" id="4Hts7PYlhRk" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="yw3OH" id="4Hts7PYjpTa" role="3EZMnx">
+          <node concept="1Lj6DL" id="4Hts7PYjpTD" role="yw3OG">
+            <node concept="1Lj6DC" id="4Hts7PYjpTF" role="1Lj8FM">
+              <node concept="3clFbS" id="4Hts7PYjpTH" role="2VODD2">
+                <node concept="3clFbF" id="4Hts7PYjq2e" role="3cqZAp">
+                  <node concept="Xl_RD" id="4Hts7PYjq2d" role="3clFbG">
+                    <property role="Xl_RC" value="-&gt;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F1sOY" id="4Hts7PYiuGY" role="3EZMnx">
+          <ref role="1NtTu8" to="o3hv:4Hts7PYcJYq" resolve="body" />
+        </node>
+      </node>
+      <node concept="2ElW$n" id="4Hts7PYkm6v" role="2El2Yn" />
     </node>
   </node>
 </model>
