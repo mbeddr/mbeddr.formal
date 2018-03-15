@@ -5,5 +5,6 @@
   <exported-language name="80ea7e60-3c36-4583-be96-3e7d3ad3504e(com.mbeddr.formal.spin.analyses)" />
   <exported-language name="bd54ef69-17ec-411b-8f49-485702e74565(com.mbeddr.formal.spin.ext)" />
   <exported-language name="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" />
+  <exported-language name="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" />
 </dev-kit>
 

@@ -2,7 +2,7 @@
 <model ref="r:29b11bdf-9484-4bfd-9769-910b3dd25e7f(com.mbeddr.formal.spin.sandbox.smoke)">
   <persistence version="9" />
   <languages>
-    <use id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin" version="0" />
+    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(mbeddr.formal.spin)" />
   </languages>
   <imports />
   <registry>
@@ -46,6 +46,10 @@
       <concept id="5285453794051997741" name="com.mbeddr.formal.spin.structure.Init" flags="ng" index="2mr7gl" />
       <concept id="5285453794051997733" name="com.mbeddr.formal.spin.structure.PromelaModel" flags="ng" index="2mr7gt">
         <child id="5285453794051997738" name="content" index="2mr7gi" />
+        <child id="5430620409971960826" name="includes" index="P01I7" />
+      </concept>
+      <concept id="3050019586772588535" name="com.mbeddr.formal.spin.structure.AssertStatement" flags="ng" index="2xKSXg">
+        <child id="3050019586772588595" name="exp" index="2xKS2k" />
       </concept>
       <concept id="3050019586772961991" name="com.mbeddr.formal.spin.structure.MtypeDeclaration" flags="ng" index="2xLt9w">
         <child id="3050019586772962061" name="literals" index="2xLteE" />
@@ -60,6 +64,10 @@
         <child id="3050019586773371938" name="init" index="2xNTi5" />
       </concept>
       <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
+      <concept id="3050019586774688801" name="com.mbeddr.formal.spin.structure.NotEqualsExpression" flags="ng" index="2xSVM6" />
+      <concept id="5430620409972500087" name="com.mbeddr.formal.spin.structure.CommentLine" flags="ng" index="Pedoa">
+        <property id="5430620409972500140" name="text" index="Pedrh" />
+      </concept>
       <concept id="5430620409969180562" name="com.mbeddr.formal.spin.structure.ArrowExpression" flags="ng" index="PrSZJ">
         <child id="5430620409969180570" name="body" index="PrSZB" />
         <child id="5430620409969180566" name="exp" index="PrSZF" />
@@ -81,6 +89,9 @@
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
+        <property id="7320199582618415059" name="value" index="ru7PJ" />
+      </concept>
       <concept id="7842584090744251143" name="com.mbeddr.formal.base.expressions.structure.DivisionExpression" flags="ng" index="2H9DuE" />
       <concept id="7842584090744249522" name="com.mbeddr.formal.base.expressions.structure.MultiplyExpression" flags="ng" index="2H9Ewv" />
       <concept id="7842584090744245770" name="com.mbeddr.formal.base.expressions.structure.PlusExpression" flags="ng" index="2H9FEB" />
@@ -95,6 +106,14 @@
       <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
         <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -293,6 +312,9 @@
         <node concept="2m6DXv" id="407WgdXcfWO" role="2mpP4z">
           <property role="TrG5h" value="temp" />
           <node concept="X9sYF" id="407WgdXcfWM" role="2m6DZC" />
+          <node concept="2IPVmt" id="4Hts7PYrz_4" role="2m6DY6">
+            <property role="2IPVms" value="0" />
+          </node>
         </node>
         <node concept="2m6DZN" id="407WgdXcfXe" role="2mpP4z">
           <node concept="2m6Dwh" id="407WgdXcfXc" role="2m6DZo">
@@ -362,10 +384,22 @@
           </node>
         </node>
         <node concept="WXPEE" id="4Hts7PYniHc" role="2mpP4z" />
+        <node concept="Pedoa" id="4Hts7PYrzxC" role="2mpP4z">
+          <property role="Pedrh" value="wait until the processes started above finish" />
+        </node>
         <node concept="XdJ7S" id="4Hts7PYcJVx" role="2mpP4z">
           <node concept="PrSZJ" id="4Hts7PYmgWI" role="XdJ0b">
             <node concept="2mpP4x" id="4Hts7PYmgWK" role="PrSZB">
-              <node concept="2mpP4y" id="4Hts7PYmgWL" role="2mpP4z" />
+              <node concept="2xKSXg" id="4Hts7PYrzzT" role="2mpP4z">
+                <node concept="2xSVM6" id="4Hts7PYrz$o" role="2xKS2k">
+                  <node concept="2IPVmt" id="4Hts7PYrz$F" role="2H9Ial">
+                    <property role="2IPVms" value="15" />
+                  </node>
+                  <node concept="X83sx" id="4Hts7PYrz$e" role="2H9Iav">
+                    <ref role="2m6DZP" node="407WgdXbwdb" resolve="n" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="32OYss" id="4Hts7PYcJVy" role="PrSZF">
               <node concept="2xSSBo" id="4Hts7PYcJVz" role="32OYtT">
@@ -378,6 +412,32 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2mr7gt" id="4Hts7PYpqlj">
+    <property role="TrG5h" value="_070_includes" />
+    <node concept="2xLtbV" id="4Hts7PYpqlF" role="2mr7gi" />
+    <node concept="2mr7gl" id="4Hts7PYpqlG" role="2mr7gi">
+      <node concept="2mpP4x" id="4Hts7PYpqlH" role="2mpP4J">
+        <node concept="Pedoa" id="4Hts7PYqshf" role="2mpP4z">
+          <property role="Pedrh" value="N is defined to be 42 in the included file - assertion should FAIL" />
+        </node>
+        <node concept="2xKSXg" id="4Hts7PYpqnO" role="2mpP4z">
+          <node concept="2xSVM6" id="4Hts7PYpqo6" role="2xKS2k">
+            <node concept="2IPVmt" id="4Hts7PYpqop" role="2H9Ial">
+              <property role="2IPVms" value="42" />
+            </node>
+            <node concept="ru7O1" id="4Hts7PYpqnX" role="2H9Iav">
+              <property role="ru7PJ" value="N" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3NXOOs" id="4Hts7PYpqme" role="P01I7">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="includes/constants.h" />
     </node>
   </node>
 </model>

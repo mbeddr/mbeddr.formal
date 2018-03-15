@@ -8,6 +8,7 @@
   <imports>
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -71,6 +72,13 @@
     </node>
     <node concept="PrWs8" id="407WgdX3PnK" role="PzmwI">
       <ref role="PrY4T" to="b19z:407WgdWZ7F6" resolve="IKeywordsProvider" />
+    </node>
+    <node concept="1TJgyj" id="4Hts7PYnmJU" role="1TKVEi">
+      <property role="IQ2ns" value="5430620409971960826" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="includes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
     </node>
     <node concept="1TJgyj" id="4_pH3zvds0E" role="1TKVEi">
       <property role="IQ2ns" value="5285453794051997738" />
@@ -690,6 +698,19 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4_pH3zvfIkp" resolve="StatementsList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Hts7PYpqpR">
+    <property role="EcuMT" value="5430620409972500087" />
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="CommentLine" />
+    <property role="34LRSv" value="//" />
+    <property role="R4oN_" value="comment" />
+    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="1TJgyi" id="4Hts7PYpqqG" role="1TKVEl">
+      <property role="IQ2nx" value="5430620409972500140" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
