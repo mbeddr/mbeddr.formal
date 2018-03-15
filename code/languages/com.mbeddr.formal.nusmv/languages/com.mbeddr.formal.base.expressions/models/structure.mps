@@ -12,6 +12,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -100,6 +101,7 @@
     <property role="TrG5h" value="PlusExpression" />
     <property role="34LRSv" value="+" />
     <property role="3GE5qa" value="expressions.arithmetic" />
+    <property role="R4oN_" value="plus" />
     <ref role="1TJDcQ" node="6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1Wdsy">
@@ -107,6 +109,7 @@
     <property role="TrG5h" value="MinusExpression" />
     <property role="34LRSv" value="-" />
     <property role="3GE5qa" value="expressions.arithmetic" />
+    <property role="R4oN_" value="minus" />
     <ref role="1TJDcQ" node="6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1WdMM">
@@ -114,6 +117,7 @@
     <property role="TrG5h" value="MultiplyExpression" />
     <property role="34LRSv" value="*" />
     <property role="3GE5qa" value="expressions.arithmetic" />
+    <property role="R4oN_" value="multiply" />
     <ref role="1TJDcQ" node="6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1Wec7">
@@ -121,6 +125,7 @@
     <property role="TrG5h" value="DivisionExpression" />
     <property role="34LRSv" value="/" />
     <property role="3GE5qa" value="expressions.arithmetic" />
+    <property role="R4oN_" value="divide" />
     <ref role="1TJDcQ" node="6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1YlpY">
@@ -189,12 +194,14 @@
     <property role="3GE5qa" value="expressions.unary" />
     <property role="TrG5h" value="ParensExpression" />
     <property role="34LRSv" value="( ... )" />
+    <property role="R4oN_" value="parens" />
     <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="7mSH3WmWS3c">
     <property role="EcuMT" value="8482728081213325516" />
     <property role="3GE5qa" value="expressions.dot" />
     <property role="TrG5h" value="GenericDotExpression" />
+    <property role="R4oN_" value="dot" />
     <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="7mSH3WmWS3d" role="1TKVEi">
       <property role="IQ2ns" value="8482728081213325517" />
@@ -343,6 +350,8 @@
     <property role="EcuMT" value="7320199582618415037" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="ArbitraryTextExpression" />
+    <property role="34LRSv" value="$arbitrary text$" />
+    <property role="R4oN_" value="arbitrary text expression" />
     <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyi" id="6mm$FLYVIZj" role="1TKVEl">
       <property role="IQ2nx" value="7320199582618415059" />
@@ -360,6 +369,7 @@
     <property role="3GE5qa" value="expressions.unary" />
     <property role="TrG5h" value="UnaryMinus" />
     <property role="34LRSv" value="-" />
+    <property role="R4oN_" value="unary minus" />
     <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
 </model>
