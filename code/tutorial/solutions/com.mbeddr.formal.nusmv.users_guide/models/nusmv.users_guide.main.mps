@@ -8,6 +8,7 @@
     <import index="m6f0" ref="r:0eb0cd32-f456-4fb2-b2bf-88e1b019b19d(_010_features._010_nusmv_base)" />
     <import index="qmbe" ref="r:dc2f2276-db8a-4c75-a8c5-c04c514cae35(_010_features._020_nusmv_unit_tests)" />
     <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" />
+    <import index="9pd" ref="r:272c7e50-c3af-4365-bda8-43f746c4aee3(_010_features._100_nusmv_operators_panels)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -339,8 +340,106 @@
         </node>
         <node concept="2bctqb" id="2mjHtwTDzU6" role="3SHJ_F" />
       </node>
+      <node concept="1_0LV8" id="4Hts7PY_Lfi" role="1_0VJ0">
+        <node concept="19SGf9" id="4Hts7PY_Lfj" role="1_0LWR">
+          <node concept="19SUe$" id="4Hts7PY_Lfk" role="19SJt6">
+            <property role="19SUeA" value="Users have the possibility to specify test-cases in a more generic fashion by chosing for a certain step and a certain input " />
+          </node>
+          <node concept="1jUjqm" id="4Hts7PY_LgZ" role="19SJt6">
+            <node concept="19SGf9" id="4Hts7PY_Lh0" role="$DsGW">
+              <node concept="19SUe$" id="4Hts7PY_Lh1" role="19SJt6">
+                <property role="19SUeA" value="AnyVal" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="4Hts7PY_Lh2" role="19SJt6">
+            <property role="19SUeA" value=" symbolized with " />
+          </node>
+          <node concept="2vpllh" id="4Hts7PY_Lhi" role="19SJt6">
+            <node concept="19SGf9" id="4Hts7PY_Lhj" role="$DsGW">
+              <node concept="19SUe$" id="4Hts7PY_Lhk" role="19SJt6">
+                <property role="19SUeA" value="*" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="4Hts7PY_Lhl" role="19SJt6">
+            <property role="19SUeA" value=" and for outputs " />
+          </node>
+          <node concept="1jUjqm" id="4Hts7PY_LhL" role="19SJt6">
+            <node concept="19SGf9" id="4Hts7PY_LhM" role="$DsGW">
+              <node concept="19SUe$" id="4Hts7PY_LhN" role="19SJt6">
+                <property role="19SUeA" value="DontCare" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="4Hts7PY_LhO" role="19SJt6">
+            <property role="19SUeA" value=" symbolized with " />
+          </node>
+          <node concept="2vpllh" id="4Hts7PY_Lis" role="19SJt6">
+            <node concept="19SGf9" id="4Hts7PY_Lit" role="$DsGW">
+              <node concept="19SUe$" id="4Hts7PY_Liu" role="19SJt6">
+                <property role="19SUeA" value="#" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="4Hts7PY_Liv" role="19SJt6">
+            <property role="19SUeA" value=". " />
+          </node>
+        </node>
+      </node>
       <node concept="1_1sxE" id="2mjHtwTDzU7" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="2SaynC" id="4Hts7PY_LlK" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_generalized_tests" />
+        <property role="2Sbq$t" value="true" />
+        <ref role="1wz7Nk" to="qmbe:407WgdX8xWI" resolve="_020_emergency_stop_tests" />
+        <node concept="2Sb_l4" id="4Hts7PY_LlL" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_generalized_tests.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="4Hts7PY_LlM" role="2SaI5j">
+          <node concept="19SGf9" id="4Hts7PY_LlN" role="OjmMu">
+            <node concept="19SUe$" id="4Hts7PY_LlO" role="19SJt6">
+              <property role="19SUeA" value="For certain steps we can specify that a certain input can take any value (*) with a given type specified in the inspector. Furthermore, by using hash (#) we can specify that we are not interested about the value of a certain output. " />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="4Hts7PY_LlP" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="4Hts7PY_LAS" role="1_0VJ0">
+        <node concept="19SGf9" id="4Hts7PY_LAT" role="1_0LWR">
+          <node concept="19SUe$" id="4Hts7PY_LAU" role="19SJt6">
+            <property role="19SUeA" value="The test vector is expressed as an LTL property (we generate a property with form " />
+          </node>
+          <node concept="1jUjqm" id="4Hts7PY_LGZ" role="19SJt6">
+            <node concept="19SGf9" id="4Hts7PY_LH0" role="$DsGW">
+              <node concept="19SUe$" id="4Hts7PY_LH1" role="19SJt6">
+                <property role="19SUeA" value="actual_out1 = expected_out1 &amp; X actual_out1 = expected_out1 &amp; X X actual_out1 = expected_out1 &amp; ..." />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="4Hts7PY_LH2" role="19SJt6">
+            <property role="19SUeA" value=" to ensure that despite the eventual non-determinism in the model, the outputs are as expected). Running the test means the verification of this property (using BMC or BDD based model checking)." />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="4Hts7PY_LDK" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_checking_tests" />
+        <property role="2Sbq$t" value="true" />
+        <ref role="1wz7Nk" to="9pd:o$TLCsQZ$i" resolve="_010_traffic_lights_controller_baseLang_tests" />
+        <node concept="2Sb_l4" id="4Hts7PY_LDL" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_tests_checking.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="4Hts7PY_LDM" role="2SaI5j">
+          <node concept="19SGf9" id="4Hts7PY_LDN" role="OjmMu">
+            <node concept="19SUe$" id="4Hts7PY_LDO" role="19SJt6">
+              <property role="19SUeA" value="Checking of tests is done by verifying the associated property.." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="4Hts7PY_LDP" role="3SHJ_F" />
       </node>
     </node>
     <node concept="1_1sxE" id="2mjHtwTDzU8" role="1_0VJ0">
