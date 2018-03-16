@@ -284,6 +284,70 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="4Hts7PYBLHH" role="1SL9yI">
+      <property role="TrG5h" value="test_010_statements_d_step" />
+      <node concept="3cqZAl" id="4Hts7PYBLHI" role="3clF45" />
+      <node concept="3clFbS" id="4Hts7PYBLHJ" role="3clF47">
+        <node concept="3cpWs8" id="4Hts7PYBLHK" role="3cqZAp">
+          <node concept="3cpWsn" id="4Hts7PYBLHL" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="4Hts7PYBLHM" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="4Hts7PYBLHN" role="33vP2m">
+              <node concept="1jxXqW" id="4Hts7PYBLHO" role="2Oq$k0" />
+              <node concept="liA8E" id="4Hts7PYBLHP" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4Hts7PYBLHQ" role="3cqZAp">
+          <node concept="3cpWsn" id="4Hts7PYBLHR" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="4Hts7PYBLHS" role="1tU5fm" />
+            <node concept="BaHAS" id="4Hts7PYBLHT" role="33vP2m">
+              <property role="BaHAW" value="test.mbeddr.formal.spin.base_testcode" />
+              <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="4Hts7PYBLHU" role="up2gk">
+                <ref role="3cqZAo" node="4Hts7PYBLHL" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4Hts7PYBLHV" role="3cqZAp">
+          <node concept="3cpWsn" id="4Hts7PYBLHW" role="3cpWs9">
+            <property role="TrG5h" value="lr" />
+            <node concept="3uibUv" id="4Hts7PYBLHX" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="4Hts7PYBLHY" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="4Hts7PYBLHZ" role="37wK5m">
+                <ref role="3cqZAo" node="4Hts7PYBLHR" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="4Hts7PYBLI0" role="37wK5m">
+                <property role="Xl_RC" value="_010_statements_d_step" />
+              </node>
+              <node concept="37vLTw" id="4Hts7PYBLI1" role="37wK5m">
+                <ref role="3cqZAo" node="4Hts7PYBLHL" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="4Hts7PYBLI2" role="3cqZAp">
+          <node concept="2OqwBi" id="4Hts7PYBLI3" role="3vwVQn">
+            <node concept="37vLTw" id="4Hts7PYBLI4" role="2Oq$k0">
+              <ref role="3cqZAo" node="4Hts7PYBLHW" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="4Hts7PYBLI5" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2XOHcx" id="407WgdX4X7z">
     <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.spin/" />
