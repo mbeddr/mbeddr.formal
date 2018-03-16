@@ -212,11 +212,11 @@
         <child id="7842584090743943207" name="lhs" index="2He$ia" />
       </concept>
       <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
+      <concept id="9133754867501306922" name="com.mbeddr.formal.nusmv.structure.LTLSpecSection" flags="ng" index="2Sa8A2" />
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
       <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
         <child id="1989356068342053586" name="definitions" index="32O2ov" />
       </concept>
-      <concept id="8482728081216646940" name="com.mbeddr.formal.nusmv.structure.SpecSection" flags="ng" index="1yBDGz" />
       <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
         <reference id="8482728081213209470" name="module" index="1zigX1" />
@@ -699,18 +699,18 @@
                 </node>
               </node>
             </node>
-            <node concept="1yBDGz" id="7Q0jYGK3vmT" role="2HcbjO">
-              <node concept="1yCjRe" id="7Q0jYGK3wJH" role="1yBDGv">
-                <node concept="1pdMLZ" id="7Q0jYGK3wJW" role="lGtFl">
-                  <node concept="2kFOW8" id="7Q0jYGK3wNz" role="2kGFt3">
-                    <node concept="3clFbS" id="7Q0jYGK3wN$" role="2VODD2">
-                      <node concept="3clFbF" id="7Q0jYGK3wR0" role="3cqZAp">
-                        <node concept="2YIFZM" id="7Q0jYGK3xON" role="3clFbG">
+            <node concept="2Sa8A2" id="4Hts7PYswhn" role="2HcbjO">
+              <node concept="1yCjRe" id="4Hts7PYsxam" role="1yBDGv">
+                <node concept="1pdMLZ" id="4Hts7PYsxan" role="lGtFl">
+                  <node concept="2kFOW8" id="4Hts7PYsxao" role="2kGFt3">
+                    <node concept="3clFbS" id="4Hts7PYsxap" role="2VODD2">
+                      <node concept="3clFbF" id="4Hts7PYsxaq" role="3cqZAp">
+                        <node concept="2YIFZM" id="4Hts7PYsxar" role="3clFbG">
                           <ref role="37wK5l" to="se73:7Q0jYGK2iXO" resolve="buildOracle" />
                           <ref role="1Pybhc" to="se73:mJkiyMCuAI" resolve="NuSMVTestsGenerationUtils" />
-                          <node concept="2OqwBi" id="7Q0jYGK3yrn" role="37wK5m">
-                            <node concept="1iwH7S" id="7Q0jYGK3xSZ" role="2Oq$k0" />
-                            <node concept="1bhEwm" id="7Q0jYGK3y$_" role="2OqNvi">
+                          <node concept="2OqwBi" id="4Hts7PYsxas" role="37wK5m">
+                            <node concept="1iwH7S" id="4Hts7PYsxat" role="2Oq$k0" />
+                            <node concept="1bhEwm" id="4Hts7PYsxau" role="2OqNvi">
                               <ref role="1bhEwk" node="1ZsZb$iJdYf" resolve="tc" />
                             </node>
                           </node>

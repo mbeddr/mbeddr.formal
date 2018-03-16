@@ -9,6 +9,7 @@
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="2" />
     <use id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips" version="0" />
     <use id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -240,6 +241,9 @@
         <child id="6466068411884348445" name="editorCell" index="1A0rbF" />
       </concept>
     </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -358,6 +362,15 @@
       <node concept="3F0ifn" id="43FRfGK10nU" role="3EZMnx">
         <property role="3F0ifm" value="}" />
       </node>
+    </node>
+    <node concept="3EZMnI" id="4Hts7PYx34L" role="6VMZX">
+      <node concept="3F0ifn" id="4Hts7PYwWmj" role="3EZMnx">
+        <property role="3F0ifm" value="check with BMC:" />
+      </node>
+      <node concept="27S6Sx" id="4Hts7PYwWl0" role="3EZMnx">
+        <ref role="1NtTu8" to="fnq2:4Hts7PYwWaA" resolve="checkWithBMC" />
+      </node>
+      <node concept="l2Vlx" id="4Hts7PYx34M" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="43FRfGJUEuS">

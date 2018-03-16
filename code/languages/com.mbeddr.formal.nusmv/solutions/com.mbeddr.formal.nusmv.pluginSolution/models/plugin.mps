@@ -1027,7 +1027,7 @@
     <property role="TrG5h" value="TestsGroup" />
     <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
       <node concept="tCFHf" id="2xeYpNCdQDD" role="ftvYc">
-        <ref role="tCJdB" node="2xeYpNCdzDf" resolve="RunNUSMVOnModel" />
+        <ref role="tCJdB" node="2xeYpNCdzDf" resolve="RunNUSMVOnTestsFromModel" />
       </node>
     </node>
     <node concept="tT9cl" id="5uW1px6ni3q" role="2f5YQi">
@@ -1494,7 +1494,7 @@
     </node>
   </node>
   <node concept="sE7Ow" id="2xeYpNCdzDf">
-    <property role="TrG5h" value="RunNUSMVOnModel" />
+    <property role="TrG5h" value="RunNUSMVOnTestsFromModel" />
     <property role="2uzpH1" value="Run NuSMV on Tests from Model" />
     <node concept="tnohg" id="2xeYpNCdzDg" role="tncku">
       <node concept="3clFbS" id="2xeYpNCdzDh" role="2VODD2">
