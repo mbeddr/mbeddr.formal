@@ -441,5 +441,36 @@
       <ref role="1YaFvo" to="gioj:7mSH3WmWrHX" resolve="ModuleType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4Hts7PYJtwD">
+    <property role="TrG5h" value="typeof_VarRef" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <node concept="3clFbS" id="4Hts7PYJtwE" role="18ibNy">
+      <node concept="1Z5TYs" id="4Hts7PYJtLz" role="3cqZAp">
+        <node concept="mw_s8" id="4Hts7PYJtMf" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4Hts7PYJtMb" role="mwGJk">
+            <node concept="2OqwBi" id="4Hts7PYJtVc" role="1Z2MuG">
+              <node concept="1YBJjd" id="4Hts7PYJtMD" role="2Oq$k0">
+                <ref role="1YBMHb" node="4Hts7PYJtwG" resolve="varRef" />
+              </node>
+              <node concept="3TrEf2" id="4Hts7PYJu44" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:7mSH3WnacGy" resolve="var" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4Hts7PYJtLA" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4Hts7PYJtwN" role="mwGJk">
+            <node concept="1YBJjd" id="4Hts7PYJtyG" role="1Z2MuG">
+              <ref role="1YBMHb" node="4Hts7PYJtwG" resolve="varRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4Hts7PYJtwG" role="1YuTPh">
+      <property role="TrG5h" value="varRef" />
+      <ref role="1YaFvo" to="gioj:7mSH3WnacGx" resolve="VarRef" />
+    </node>
+  </node>
 </model>
 
