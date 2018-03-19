@@ -968,15 +968,47 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="2ShgyhegGyg" role="3cqZAp">
-                                  <node concept="2OqwBi" id="2ShgyhegGyh" role="3clFbG">
-                                    <node concept="37vLTw" id="2ShgyhegGyi" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="2ShgyhegGxY" resolve="prefix" />
+                                <node concept="3clFbJ" id="17WoWxlCGfg" role="3cqZAp">
+                                  <node concept="3clFbS" id="17WoWxlCGfi" role="3clFbx">
+                                    <node concept="3clFbF" id="2ShgyhegGyg" role="3cqZAp">
+                                      <node concept="2OqwBi" id="2ShgyhegGyh" role="3clFbG">
+                                        <node concept="37vLTw" id="2ShgyhegGyi" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="2ShgyhegGxY" resolve="prefix" />
+                                        </node>
+                                        <node concept="liA8E" id="2ShgyhegGyj" role="2OqNvi">
+                                          <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                                          <node concept="Xl_RD" id="2ShgyhegGyk" role="37wK5m">
+                                            <property role="Xl_RC" value="structure" />
+                                          </node>
+                                        </node>
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="2ShgyhegGyj" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
-                                      <node concept="Xl_RD" id="2ShgyhegGyk" role="37wK5m">
-                                        <property role="Xl_RC" value="structure" />
+                                  </node>
+                                  <node concept="2OqwBi" id="17WoWxlCHQo" role="3clFbw">
+                                    <node concept="37vLTw" id="17WoWxlCHqv" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="7vIaqyYjStV" resolve="solutionOrLanguage" />
+                                    </node>
+                                    <node concept="liA8E" id="17WoWxlCIg0" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <node concept="Xl_RD" id="17WoWxlCIBG" role="37wK5m">
+                                        <property role="Xl_RC" value="languages" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="9aQIb" id="17WoWxlCLxL" role="9aQIa">
+                                    <node concept="3clFbS" id="17WoWxlCLxM" role="9aQI4">
+                                      <node concept="3clFbF" id="17WoWxlCLTT" role="3cqZAp">
+                                        <node concept="2OqwBi" id="17WoWxlCLTU" role="3clFbG">
+                                          <node concept="37vLTw" id="17WoWxlCLTV" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="2ShgyhegGxY" resolve="prefix" />
+                                          </node>
+                                          <node concept="liA8E" id="17WoWxlCLTW" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                                            <node concept="Xl_RD" id="17WoWxlCLTX" role="37wK5m">
+                                              <property role="Xl_RC" value="plugin" />
+                                            </node>
+                                          </node>
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
