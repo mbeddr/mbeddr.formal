@@ -66,6 +66,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -178,6 +179,7 @@
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="13h7C7" id="43FRfGK1djZ">
@@ -229,6 +231,25 @@
       </node>
       <node concept="A3Dl8" id="6Kf5KB75yE8" role="3clF45">
         <node concept="3Tqbb2" id="6Kf5KB75yE9" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="4Hts7PYLOP4" role="13h7CS">
+      <property role="TrG5h" value="bmcLength" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="4Hts7PYLOP5" role="1B3o_S" />
+      <node concept="10Oyi0" id="4Hts7PYLPfA" role="3clF45" />
+      <node concept="3clFbS" id="4Hts7PYLOP7" role="3clF47">
+        <node concept="3clFbF" id="4Hts7PYLPgt" role="3cqZAp">
+          <node concept="2OqwBi" id="4Hts7PYLRxx" role="3clFbG">
+            <node concept="2OqwBi" id="4Hts7PYLPsh" role="2Oq$k0">
+              <node concept="13iPFW" id="4Hts7PYLPgs" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4Hts7PYLPGC" role="2OqNvi">
+                <ref role="3TtcxE" to="fnq2:43FRfGJUFOk" resolve="steps" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="4Hts7PYLUQr" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

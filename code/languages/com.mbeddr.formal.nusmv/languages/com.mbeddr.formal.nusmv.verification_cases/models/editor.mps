@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -15,7 +16,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -97,6 +100,9 @@
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
       </concept>
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -194,6 +200,27 @@
       <node concept="3F0ifn" id="43FRfGK10nU" role="3EZMnx">
         <property role="3F0ifm" value="}" />
       </node>
+    </node>
+    <node concept="3EZMnI" id="4Hts7PYM7uD" role="6VMZX">
+      <node concept="3EZMnI" id="4Hts7PYx34L" role="3EZMnx">
+        <node concept="3F0ifn" id="4Hts7PYwWmj" role="3EZMnx">
+          <property role="3F0ifm" value="check with BMC:" />
+        </node>
+        <node concept="27S6Sx" id="4Hts7PYwWl0" role="3EZMnx">
+          <ref role="1NtTu8" to="fnq2:4Hts7PYwWaA" resolve="checkWithBMC" />
+        </node>
+        <node concept="l2Vlx" id="4Hts7PYx34M" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="4Hts7PYM7BG" role="3EZMnx">
+        <node concept="3F0ifn" id="4Hts7PYM7BH" role="3EZMnx">
+          <property role="3F0ifm" value="BMC length:" />
+        </node>
+        <node concept="3F0A7n" id="4Hts7PYM7CG" role="3EZMnx">
+          <ref role="1NtTu8" to="z1em:4Hts7PYM6PE" resolve="bmcLength" />
+        </node>
+        <node concept="l2Vlx" id="4Hts7PYM7BJ" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="4Hts7PYM7uE" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4Hts7PYBX0o">

@@ -13,6 +13,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="l5b3" ref="r:9abeb3ed-8820-461b-9215-78f8d3ac8111(com.mbeddr.formal.nusmv.verification_cases.util)" />
+    <import index="df40" ref="r:c88e1664-0fbc-44f2-8fe6-03b1ff0f4de7(main@generator)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -53,6 +54,8 @@
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
+        <child id="1195502100749" name="preMappingScript" index="1puA0r" />
+        <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
       <concept id="5015072279636464462" name="jetbrains.mps.lang.generator.structure.VarMacro" flags="lg" index="2jeGV$">
         <child id="5015072279636624635" name="type" index="2jfP_h" />
@@ -80,6 +83,9 @@
       </concept>
       <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="ln" index="1pdMLZ">
         <child id="1170725844563" name="mapperFunction" index="2kGFt3" />
+      </concept>
+      <concept id="1195502151594" name="jetbrains.mps.lang.generator.structure.MappingScriptReference" flags="lg" index="1puMqW">
+        <reference id="1195502167610" name="mappingScript" index="1puQsG" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
@@ -885,6 +891,12 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1puMqW" id="4Hts7PYImRb" role="1pvy6N">
+      <ref role="1puQsG" to="df40:4IuDkoKHtQq" resolve="resolveAnyValInInputs" />
+    </node>
+    <node concept="1puMqW" id="4Hts7PYIuV3" role="1puA0r">
+      <ref role="1puQsG" to="df40:1ZsZb$iIWjA" resolve="createExecutableTests" />
     </node>
   </node>
 </model>
