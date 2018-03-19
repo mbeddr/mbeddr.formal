@@ -12,5 +12,6 @@
   <exported-language name="3fb92f6f-450c-4e41-8129-97a4b9978951(com.mbeddr.formal.base.operatorspanel)" />
   <exported-language name="2dd5dace-06d5-4283-a878-7272f2df6d4b(com.mbeddr.formal.nusmv.operatorspanel)" />
   <exported-language name="bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)" />
+  <exported-language name="0da073b7-14da-42e6-8db1-df42c803e079(com.mbeddr.formal.nusmv.verification_cases)" />
 </dev-kit>
 

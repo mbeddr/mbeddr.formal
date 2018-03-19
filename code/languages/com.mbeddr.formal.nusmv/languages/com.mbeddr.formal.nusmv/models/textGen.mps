@@ -1307,11 +1307,7 @@
     <property role="3GE5qa" value="vars" />
     <ref role="WuzLi" to="gioj:4NkweGh54S7" resolve="EmptyVariableDeclaration" />
     <node concept="11bSqf" id="1ZsZb$iIReU" role="11c4hB">
-      <node concept="3clFbS" id="1ZsZb$iIReV" role="2VODD2">
-        <node concept="lc7rE" id="1ZsZb$iIRff" role="3cqZAp">
-          <node concept="l8MVK" id="1ZsZb$iIRfg" role="lcghm" />
-        </node>
-      </node>
+      <node concept="3clFbS" id="1ZsZb$iIReV" role="2VODD2" />
     </node>
   </node>
   <node concept="WtQ9Q" id="1ZsZb$iN8mG">
@@ -1540,7 +1536,6 @@
               </node>
             </node>
           </node>
-          <node concept="l8MVK" id="2mjHtwTur4A" role="lcghm" />
         </node>
       </node>
     </node>
