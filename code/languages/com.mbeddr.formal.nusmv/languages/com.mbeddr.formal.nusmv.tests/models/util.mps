@@ -115,7 +115,6 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
-      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -585,6 +584,14 @@
               </node>
             </node>
             <node concept="1Dw8fO" id="7Q0jYGK37PQ" role="3cqZAp">
+              <node concept="3eOVzh" id="67icRu62pcg" role="1Dwp0S">
+                <node concept="37vLTw" id="67icRu62pdh" role="3uHU7B">
+                  <ref role="3cqZAo" node="7Q0jYGK37PT" resolve="j" />
+                </node>
+                <node concept="37vLTw" id="67icRu62plc" role="3uHU7w">
+                  <ref role="3cqZAo" node="7Q0jYGK2k1G" resolve="i" />
+                </node>
+              </node>
               <node concept="3clFbS" id="7Q0jYGK37PS" role="2LFqv$">
                 <node concept="3clFbF" id="7Q0jYGK3aur" role="3cqZAp">
                   <node concept="37vLTI" id="7Q0jYGK3aB3" role="3clFbG">
@@ -612,14 +619,6 @@
                 <node concept="10Oyi0" id="7Q0jYGK37St" role="1tU5fm" />
                 <node concept="3cmrfG" id="7Q0jYGK37Vr" role="33vP2m">
                   <property role="3cmrfH" value="0" />
-                </node>
-              </node>
-              <node concept="3eOVzh" id="7Q0jYGK39tU" role="1Dwp0S">
-                <node concept="37vLTw" id="7Q0jYGK39wN" role="3uHU7w">
-                  <ref role="3cqZAo" node="7Q0jYGK2k1G" resolve="i" />
-                </node>
-                <node concept="37vLTw" id="7Q0jYGK37XL" role="3uHU7B">
-                  <ref role="3cqZAo" node="7Q0jYGK37PT" resolve="j" />
                 </node>
               </node>
               <node concept="3uNrnE" id="7Q0jYGK3an4" role="1Dwrff">
@@ -915,7 +914,7 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="7Q0jYGK3hDi" role="1B3o_S" />
+      <node concept="3Tm1VV" id="67icRu62hmA" role="1B3o_S" />
       <node concept="3Tqbb2" id="7Q0jYGK2m$8" role="3clF45">
         <ref role="ehGHo" to="ehqg:6NmtaR1V301" resolve="Expression" />
       </node>
