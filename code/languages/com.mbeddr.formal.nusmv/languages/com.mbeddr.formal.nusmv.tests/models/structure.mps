@@ -196,5 +196,20 @@
     <property role="R4oN_" value="don't care" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
   </node>
+  <node concept="1TIwiD" id="67icRu60OOF">
+    <property role="EcuMT" value="7048752955230735659" />
+    <property role="TrG5h" value="DocumentationLineTestsCollectionContent" />
+    <property role="34LRSv" value="--" />
+    <property role="R4oN_" value="documentation line" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="67icRu60OOJ" role="1TKVEl">
+      <property role="IQ2nx" value="7048752955230735663" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="67icRu60OOG" role="PzmwI">
+      <ref role="PrY4T" node="3YQnHsZ2Vx" resolve="ITestsCollectionContent" />
+    </node>
+  </node>
 </model>
 
