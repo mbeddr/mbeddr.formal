@@ -9,6 +9,7 @@
     <import index="qmbe" ref="r:dc2f2276-db8a-4c75-a8c5-c04c514cae35(_010_features._020_nusmv_unit_tests)" />
     <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" />
     <import index="9pd" ref="r:272c7e50-c3af-4365-bda8-43f746c4aee3(_010_features._100_nusmv_operators_panels)" />
+    <import index="s0k6" ref="r:7c8a192c-7615-4a1b-a608-a18a83365e6b(_010_features._070_nusmv_verification_cases)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -29,6 +30,7 @@
       <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
+        <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
       <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
@@ -61,6 +63,9 @@
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922836" name="language" index="3z_lpW" />
+      </concept>
+      <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
+        <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
@@ -978,7 +983,7 @@
     <property role="TrG5h" value="_050_tables" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1_0VNX" id="2mjHtwTG723" role="1_0VJ0">
-      <property role="TrG5h" value="nusmv_sm" />
+      <property role="TrG5h" value="nusmv_tables" />
       <property role="1_0VJr" value="Specification Using Tables" />
       <node concept="1_1sxE" id="2mjHtwTG724" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
@@ -1036,6 +1041,45 @@
         </node>
         <node concept="2bctqb" id="2mjHtwTG72V" role="3SHJ_F" />
       </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="67icRu62XMj">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_070_verification_cases" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0VNX" id="67icRu62XMk" role="1_0VJ0">
+      <property role="TrG5h" value="nusmv_verification_cases" />
+      <property role="1_0VJr" value="Verification Cases" />
+      <node concept="1_1sxE" id="67icRu62XMl" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="67icRu62XMm" role="1_0VJ0">
+        <node concept="19SGf9" id="67icRu62XMn" role="1_0LWR">
+          <node concept="19SUe$" id="67icRu62XMo" role="19SJt6">
+            <property role="19SUeA" value="We extend the unit testing DSL with the possibility to run test vectors after the system under verification reaches a certain state (i.e. the initial condition after which the tests are started). " />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="67icRu62XM_" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_verification_case" />
+        <property role="2Sbq$t" value="true" />
+        <ref role="1wz7Nk" to="s0k6:3cHtG5tUd_q" resolve="_010_long_warmup_time_verification_case" />
+        <node concept="2Sb_l4" id="67icRu62XMA" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_verification_cases.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="67icRu62XMB" role="2SaI5j">
+          <node concept="19SGf9" id="67icRu62XMC" role="OjmMu">
+            <node concept="19SUe$" id="67icRu62XMD" role="19SJt6">
+              <property role="19SUeA" value="A verification case first brings the system in a certain state and only after this the tests are run" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="67icRu62XME" role="3SHJ_F" />
+      </node>
+    </node>
+    <node concept="1_0j5j" id="67icRu62XMH" role="1DXQ57">
+      <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
     </node>
   </node>
 </model>
