@@ -161,14 +161,6 @@
     <property role="EcuMT" value="5536191589039455651" />
     <property role="TrG5h" value="Transitions" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1W9ga" resolve="CaseExpression" />
-    <node concept="1TJgyj" id="4NkweGhcVRF" role="1TKVEi">
-      <property role="IQ2ns" value="5536191589039455723" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="cases" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="4NkweGhcVzM" resolve="Transition" />
-      <ref role="20ksaX" to="gioj:6NmtaR1W9gc" resolve="cases" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4NkweGhd0G5">
     <property role="EcuMT" value="5536191589039475461" />

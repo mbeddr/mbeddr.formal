@@ -64,6 +64,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">d8f591ec-4d86-4af2-9f92-a9e93c803ffa(jetbrains.mps.lang.scopes)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
