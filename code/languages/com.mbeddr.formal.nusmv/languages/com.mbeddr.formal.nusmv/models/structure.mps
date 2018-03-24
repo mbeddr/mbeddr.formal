@@ -171,8 +171,8 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="EnumerationMember" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6NmtaR1U$wj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="3cHtG5tUeGE" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNLO">
@@ -318,7 +318,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cases" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6NmtaR1W9gb" resolve="SingleCase" />
+      <ref role="20lvS9" node="3cHtG5tVuGX" resolve="ISingleCaseLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1W9gb">
@@ -340,6 +340,9 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3cHtG5tVuHA" role="PzmwI">
+      <ref role="PrY4T" node="3cHtG5tVuGX" resolve="ISingleCaseLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR22D35">
@@ -1015,6 +1018,9 @@
     <node concept="PrWs8" id="2mjHtwTxAmh" role="PzmwI">
       <ref role="PrY4T" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
     </node>
+    <node concept="PrWs8" id="3cHtG5tVuJt" role="PzmwI">
+      <ref role="PrY4T" node="3cHtG5tVuGX" resolve="ISingleCaseLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2mjHtwTwhR5">
     <property role="EcuMT" value="2707707741262126533" />
@@ -1349,6 +1355,21 @@
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="PrWs8" id="6oUHYl_Xm5X" role="PzmwI">
       <ref role="PrY4T" node="mJkiyMzeTG" resolve="IVariableRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3cHtG5tVuGX">
+    <property role="EcuMT" value="3687734242762943293" />
+    <property role="3GE5qa" value="expressions.case" />
+    <property role="TrG5h" value="ISingleCaseLike" />
+  </node>
+  <node concept="1TIwiD" id="3cHtG5tVuHE">
+    <property role="EcuMT" value="3687734242762943338" />
+    <property role="3GE5qa" value="expressions.case" />
+    <property role="TrG5h" value="EmptySingleCase" />
+    <property role="34LRSv" value="empty" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3cHtG5tVuIf" role="PzmwI">
+      <ref role="PrY4T" node="3cHtG5tVuGX" resolve="ISingleCaseLike" />
     </node>
   </node>
 </model>

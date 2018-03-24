@@ -43,6 +43,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -700,8 +701,8 @@
         <node concept="VPM3Z" id="7mSH3Wne5mG" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3F0ifn" id="7mSH3Wne5mN" role="3EZMnx">
-          <property role="3F0ifm" value="ASSIGN" />
+        <node concept="PMmxH" id="3cHtG5tStUn" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         </node>
         <node concept="3F0ifn" id="7mSH3Wne5mV" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -879,6 +880,19 @@
           <node concept="2iRkQZ" id="6NmtaR1W9j0" role="2czzBx" />
           <node concept="VPM3Z" id="6NmtaR1W9j1" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+          <node concept="4$FPG" id="3cHtG5tVuMd" role="4_6I_">
+            <node concept="3clFbS" id="3cHtG5tVuMe" role="2VODD2">
+              <node concept="3clFbF" id="3cHtG5tVvqJ" role="3cqZAp">
+                <node concept="2ShNRf" id="3cHtG5tVvqH" role="3clFbG">
+                  <node concept="3zrR0B" id="3cHtG5tVGtS" role="2ShVmc">
+                    <node concept="3Tqbb2" id="3cHtG5tVGtU" role="3zrR0E">
+                      <ref role="ehGHo" to="gioj:3cHtG5tVuHE" resolve="EmptySingleCase" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="l2Vlx" id="6NmtaR1W9i1" role="2iSdaV" />
@@ -2165,6 +2179,20 @@
         <node concept="l2Vlx" id="7V1Bqz6Uq69" role="2iSdaV" />
       </node>
     </node>
+  </node>
+  <node concept="24kQdi" id="3cHtG5tVuIj">
+    <property role="3GE5qa" value="expressions.case" />
+    <ref role="1XX52x" to="gioj:3cHtG5tVuHE" resolve="EmptySingleCase" />
+    <node concept="3F0ifn" id="3cHtG5tVuIT" role="2wV5jI">
+      <property role="3F0ifm" value="" />
+      <node concept="VPxyj" id="3cHtG5tVLv9" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="IW6AY" id="3cHtG5tVuLy">
+    <property role="3GE5qa" value="expressions.case" />
+    <ref role="aqKnT" to="gioj:3cHtG5tVuHE" resolve="EmptySingleCase" />
   </node>
 </model>
 

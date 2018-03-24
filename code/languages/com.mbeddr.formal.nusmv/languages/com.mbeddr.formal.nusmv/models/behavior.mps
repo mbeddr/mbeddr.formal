@@ -693,5 +693,26 @@
       <node concept="10Oyi0" id="7V1Bqz6WUPi" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="3cHtG5tVG_p">
+    <property role="3GE5qa" value="expressions.case" />
+    <ref role="13h7C2" to="gioj:6NmtaR1W9ga" resolve="CaseExpression" />
+    <node concept="13hLZK" id="3cHtG5tVG_q" role="13h7CW">
+      <node concept="3clFbS" id="3cHtG5tVG_r" role="2VODD2">
+        <node concept="3clFbF" id="3cHtG5tVGA9" role="3cqZAp">
+          <node concept="2OqwBi" id="3cHtG5tVIay" role="3clFbG">
+            <node concept="2OqwBi" id="3cHtG5tVGHP" role="2Oq$k0">
+              <node concept="13iPFW" id="3cHtG5tVGA8" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3cHtG5tVGTl" role="2OqNvi">
+                <ref role="3TtcxE" to="gioj:6NmtaR1W9gc" resolve="cases" />
+              </node>
+            </node>
+            <node concept="WFELt" id="3cHtG5tVKVT" role="2OqNvi">
+              <ref role="1A0vxQ" to="gioj:3cHtG5tVuHE" resolve="EmptySingleCase" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
