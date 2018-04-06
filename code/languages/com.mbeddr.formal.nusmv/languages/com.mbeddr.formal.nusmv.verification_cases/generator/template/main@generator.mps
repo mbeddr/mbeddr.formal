@@ -112,6 +112,9 @@
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
+      <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
+        <property id="2707707741261637861" name="documentation" index="sUxOX" />
+      </concept>
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
         <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
@@ -124,6 +127,8 @@
       </concept>
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
       <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
+      <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
         <child id="7842584090743387019" name="type" index="2HdssA" />
       </concept>
@@ -158,10 +163,12 @@
       </concept>
       <concept id="5536191589037395463" name="com.mbeddr.formal.nusmv.structure.EmptyVariableDeclaration" flags="ng" index="1tKcVG" />
       <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
+      <concept id="8482728081216289970" name="com.mbeddr.formal.nusmv.structure.NotExpression" flags="ng" index="1yA0yd" />
       <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
         <child id="8482728081216657211" name="exp" index="1yBIc4" />
       </concept>
       <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
+      <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
@@ -288,6 +295,20 @@
             <property role="TrG5h" value="main" />
             <node concept="raruj" id="1ZsZb$iIZ4Z" role="lGtFl" />
             <node concept="2Hfkzq" id="1ZsZb$iIZ58" role="2HcbjO">
+              <node concept="sUyCV" id="5H79n532OeY" role="2Hfkx9">
+                <property role="sUxOX" value="nondet flag to consider all stateReached not only initial one" />
+              </node>
+              <node concept="2Hdskp" id="5H79n5313h6" role="2Hfkx9">
+                <property role="TrG5h" value="__shouldConsiderStateReached" />
+                <node concept="2Hds6S" id="5H79n5314RM" role="2HdssA" />
+              </node>
+              <node concept="sUyCV" id="5H79n532Rqi" role="2Hfkx9">
+                <property role="sUxOX" value="have we already started to run the test?" />
+              </node>
+              <node concept="2Hdskp" id="5H79n531_qM" role="2Hfkx9">
+                <property role="TrG5h" value="__haveAlreadyConsideredStateReached" />
+                <node concept="2Hds6S" id="5H79n531B1Q" role="2HdssA" />
+              </node>
               <node concept="2Hdskp" id="1ZsZb$iIZeo" role="2Hfkx9">
                 <property role="TrG5h" value="__crtStep" />
                 <node concept="dhpfj" id="1ZsZb$iIZfv" role="2HdssA">
@@ -555,28 +576,35 @@
                   </node>
                 </node>
               </node>
-              <node concept="1zoerA" id="67icRu60$yx" role="32O2ov">
+              <node concept="1zoerA" id="5H79n5317Ux" role="32O2ov">
                 <property role="TrG5h" value="stateReached" />
-                <node concept="1ziNjN" id="67icRu60_0E" role="1zoetD">
-                  <node concept="1zjgSo" id="67icRu60_0F" role="1ziNjJ">
-                    <ref role="skqaw" node="1ZsZb$iIZ5o" resolve="out" />
-                  </node>
-                  <node concept="2He$iJ" id="67icRu60_0G" role="1ziNjM">
-                    <ref role="2He$iI" node="1ZsZb$iIZ5E" resolve="sut" />
-                  </node>
-                  <node concept="29HgVG" id="67icRu60_0H" role="lGtFl">
-                    <node concept="3NFfHV" id="67icRu60_0I" role="3NFExx">
-                      <node concept="3clFbS" id="67icRu60_0J" role="2VODD2">
-                        <node concept="3clFbF" id="67icRu60_0K" role="3cqZAp">
-                          <node concept="2OqwBi" id="67icRu60_0L" role="3clFbG">
-                            <node concept="30H73N" id="67icRu60_0M" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="67icRu60_0N" role="2OqNvi">
-                              <ref role="3Tt5mk" to="z1em:4Hts7PYE9uh" resolve="initialState" />
+                <node concept="2HbMbg" id="5H79n5317Uy" role="1zoetD">
+                  <node concept="32OYss" id="5H79n5317Uz" role="2H9Iav">
+                    <node concept="1ziNjN" id="5H79n5317U$" role="32OYtT">
+                      <node concept="29HgVG" id="67icRu60_0H" role="lGtFl">
+                        <node concept="3NFfHV" id="67icRu60_0I" role="3NFExx">
+                          <node concept="3clFbS" id="67icRu60_0J" role="2VODD2">
+                            <node concept="3clFbF" id="67icRu60_0K" role="3cqZAp">
+                              <node concept="2OqwBi" id="67icRu60_0L" role="3clFbG">
+                                <node concept="30H73N" id="67icRu60_0M" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="67icRu60_0N" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="z1em:4Hts7PYE9uh" resolve="initialState" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
+                      <node concept="2He$iJ" id="67icRu60_0G" role="1ziNjM">
+                        <ref role="2He$iI" node="1ZsZb$iIZ5E" resolve="sut" />
+                      </node>
+                      <node concept="1zjgSo" id="67icRu60_0F" role="1ziNjJ">
+                        <ref role="skqaw" node="1ZsZb$iIZ5o" resolve="out" />
+                      </node>
                     </node>
+                  </node>
+                  <node concept="2He$iJ" id="5H79n532nEY" role="2H9Ial">
+                    <ref role="2He$iI" node="5H79n5313h6" resolve="__shouldConsiderStateReached" />
                   </node>
                 </node>
               </node>
@@ -606,7 +634,7 @@
                         </node>
                       </node>
                       <node concept="1J1L9T" id="67icRu60F4L" role="2H9Ial">
-                        <ref role="1J1L9S" node="67icRu60$yx" resolve="stateReached" />
+                        <ref role="1J1L9S" node="5H79n5317Ux" resolve="stateReached" />
                       </node>
                     </node>
                     <node concept="2IPVmt" id="67icRu60F4T" role="2H9I4_">
@@ -672,29 +700,62 @@
                   </node>
                 </node>
               </node>
+              <node concept="2HfkAV" id="5H79n532HHm" role="2HfkAP">
+                <node concept="2He$iJ" id="5H79n532HYK" role="2He$ia">
+                  <ref role="2He$iI" node="5H79n531_qM" resolve="__haveAlreadyConsideredStateReached" />
+                </node>
+                <node concept="1yCjT0" id="5H79n532HZ1" role="2He$i0" />
+              </node>
+              <node concept="2HevG6" id="5H79n531Bjb" role="2HfkAP">
+                <node concept="2He$iJ" id="5H79n532_om" role="2He$ia">
+                  <ref role="2He$iI" node="5H79n531_qM" resolve="__haveAlreadyConsideredStateReached" />
+                </node>
+                <node concept="2HbMDt" id="5H79n531B$L" role="2He$i0">
+                  <node concept="1J1L9T" id="5H79n532Hkr" role="2H9Ial">
+                    <ref role="1J1L9S" node="5H79n5317Ux" resolve="stateReached" />
+                  </node>
+                  <node concept="2He$iJ" id="5H79n532_o$" role="2H9Iav">
+                    <ref role="2He$iI" node="5H79n531_qM" resolve="__haveAlreadyConsideredStateReached" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="2Sa8A2" id="4Hts7PYEq3E" role="2HcbjO">
               <node concept="2SafMM" id="4Hts7PYEq3F" role="1yBDGv">
-                <node concept="32OYss" id="4Hts7PYEq3G" role="1yBIc4">
-                  <node concept="1yyYsf" id="4Hts7PYEq3H" role="32OYtT">
-                    <node concept="1ziNjN" id="4Hts7PYEq3I" role="2H9Iav">
-                      <node concept="1zjgSo" id="4Hts7PYEq3J" role="1ziNjJ">
-                        <ref role="skqaw" node="1ZsZb$iIZ5o" resolve="out" />
-                      </node>
-                      <node concept="2He$iJ" id="4Hts7PYEq3K" role="1ziNjM">
-                        <ref role="2He$iI" node="1ZsZb$iIZ5E" resolve="sut" />
-                      </node>
-                      <node concept="29HgVG" id="4Hts7PYEq3L" role="lGtFl">
-                        <node concept="3NFfHV" id="4Hts7PYEq3M" role="3NFExx">
-                          <node concept="3clFbS" id="4Hts7PYEq3N" role="2VODD2">
-                            <node concept="3clFbF" id="4Hts7PYEq3O" role="3cqZAp">
-                              <node concept="2OqwBi" id="4Hts7PYEq3P" role="3clFbG">
-                                <node concept="30H73N" id="4Hts7PYEq3Q" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="4Hts7PYEt0c" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="z1em:4Hts7PYE9uh" resolve="initialState" />
+                <node concept="32OYss" id="5H79n532I77" role="1yBIc4">
+                  <node concept="1yyYsf" id="5H79n532I78" role="32OYtT">
+                    <node concept="32OYss" id="5H79n532I79" role="2H9Iav">
+                      <node concept="2HbMbg" id="5H79n532I7a" role="32OYtT">
+                        <node concept="2HbMbg" id="5H79n532I7b" role="2H9Iav">
+                          <node concept="1ziNjN" id="5H79n532I7c" role="2H9Iav">
+                            <node concept="29HgVG" id="4Hts7PYEq3L" role="lGtFl">
+                              <node concept="3NFfHV" id="4Hts7PYEq3M" role="3NFExx">
+                                <node concept="3clFbS" id="4Hts7PYEq3N" role="2VODD2">
+                                  <node concept="3clFbF" id="4Hts7PYEq3O" role="3cqZAp">
+                                    <node concept="2OqwBi" id="4Hts7PYEq3P" role="3clFbG">
+                                      <node concept="30H73N" id="4Hts7PYEq3Q" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="4Hts7PYEt0c" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="z1em:4Hts7PYE9uh" resolve="initialState" />
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
+                            <node concept="2He$iJ" id="4Hts7PYEq3K" role="1ziNjM">
+                              <ref role="2He$iI" node="1ZsZb$iIZ5E" resolve="sut" />
+                            </node>
+                            <node concept="1zjgSo" id="4Hts7PYEq3J" role="1ziNjJ">
+                              <ref role="skqaw" node="1ZsZb$iIZ5o" resolve="out" />
+                            </node>
+                          </node>
+                          <node concept="1J1L9T" id="5H79n532_oS" role="2H9Ial">
+                            <ref role="1J1L9S" node="5H79n5317Ux" resolve="stateReached" />
+                          </node>
+                        </node>
+                        <node concept="1yA0yd" id="5H79n532IhE" role="2H9Ial">
+                          <node concept="2He$iJ" id="5H79n532IoK" role="32OYtT">
+                            <ref role="2He$iI" node="5H79n531_qM" resolve="__haveAlreadyConsideredStateReached" />
                           </node>
                         </node>
                       </node>

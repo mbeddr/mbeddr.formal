@@ -247,6 +247,9 @@
     </language>
     <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
       <concept id="71733767948742370" name="com.mbeddr.formal.nusmv.tests.structure.EmptyTestsCollectionContent" flags="ng" index="1s0Jup" />
+      <concept id="7048752955230735659" name="com.mbeddr.formal.nusmv.tests.structure.DocumentationLineTestsCollectionContent" flags="ng" index="3BOnTs">
+        <property id="7048752955230735663" name="text" index="3BOnTo" />
+      </concept>
       <concept id="9018859973236783824" name="com.mbeddr.formal.nusmv.tests.structure.AnyValue" flags="ng" index="3EVhuc">
         <child id="5448974320048910836" name="tpe" index="1V8LiM" />
       </concept>
@@ -2376,6 +2379,10 @@
             </node>
           </node>
         </node>
+        <node concept="2Hdskp" id="5H79n531WOO" role="2Hfkx9">
+          <property role="TrG5h" value="out" />
+          <node concept="2Hds6S" id="5H79n531WPm" role="2HdssA" />
+        </node>
       </node>
       <node concept="2Hfkzp" id="4Hts7PYBQsP" role="2HcbjO">
         <node concept="2HfkAV" id="4Hts7PYBQtd" role="2HfkAP">
@@ -2412,6 +2419,14 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="2HevG6" id="5H79n531WPv" role="2HfkAP">
+          <node concept="2He$iJ" id="5H79n531WQ7" role="2He$ia">
+            <ref role="2He$iI" node="5H79n531WOO" resolve="out" />
+          </node>
+          <node concept="1J1L9T" id="5H79n531WQj" role="2He$i0">
+            <ref role="1J1L9S" node="4Hts7PYBQCX" resolve="error_out" />
           </node>
         </node>
       </node>
@@ -2455,6 +2470,12 @@
       <node concept="2Hds6S" id="4Hts7PYFA1B" role="PXOzY" />
     </node>
     <node concept="1s0Jup" id="4Hts7PYD06x" role="1J0nHx" />
+    <node concept="3BOnTs" id="5H79n5311_x" role="1J0nHx">
+      <property role="3BOnTo" value="this passes because error can be TRUE only after cnt = 80 AND in1 = TRUE" />
+    </node>
+    <node concept="3BOnTs" id="5H79n5311Dm" role="1J0nHx">
+      <property role="3BOnTo" value="from the first state cnt = 78 we need two steps only to get into cnt = 80" />
+    </node>
     <node concept="PYscC" id="4Hts7PYDWmB" role="1J0nHx">
       <property role="TrG5h" value="test_after_78_ticks_PASS" />
       <ref role="1J0niy" node="4Hts7PYBQqE" resolve="delayed_error" />
@@ -2464,11 +2485,11 @@
       </node>
       <node concept="1J0m7Y" id="4Hts7PYDWpV" role="1J0m7J">
         <node concept="1yCjRe" id="4Hts7PYDWpW" role="1J0m7X" />
-        <node concept="1yCjT0" id="4Hts7PYDWpX" role="1J0m7K" />
+        <node concept="1yCjT0" id="5H79n5324mL" role="1J0m7K" />
       </node>
       <node concept="1J0m7Y" id="4Hts7PYDWpY" role="1J0m7J">
         <node concept="1yCjT0" id="4Hts7PYGBqP" role="1J0m7X" />
-        <node concept="1yCjT0" id="4Hts7PYDWq0" role="1J0m7K" />
+        <node concept="1yCjT0" id="5H79n5324n2" role="1J0m7K" />
       </node>
       <node concept="2HbLFT" id="4Hts7PYFA0m" role="PXuvG">
         <node concept="2IPVmt" id="4Hts7PYFA0n" role="2H9Ial">
@@ -2484,7 +2505,42 @@
       <node concept="2Hds6S" id="4Hts7PYFA1S" role="PXOzY" />
     </node>
     <node concept="1s0Jup" id="4Hts7PYDWwm" role="1J0nHx" />
+    <node concept="3BOnTs" id="5H79n532aRr" role="1J0nHx">
+      <property role="3BOnTo" value="if input is TRUE anytime after the first 80 steps then error_out will be true - PASS" />
+    </node>
+    <node concept="PYscC" id="5H79n5327Zz" role="1J0nHx">
+      <property role="TrG5h" value="test_after_more_than_80_ticks_PASS" />
+      <ref role="1J0niy" node="4Hts7PYBQqE" resolve="delayed_error" />
+      <node concept="1J0m7Y" id="5H79n5327Z$" role="1J0m7J">
+        <node concept="1yCjRe" id="5H79n5327Z_" role="1J0m7X" />
+        <node concept="1yCjRe" id="5H79n532EEu" role="1J0m7K" />
+      </node>
+      <node concept="1J0m7Y" id="5H79n5327ZB" role="1J0m7J">
+        <node concept="1yCjT0" id="5H79n532EEI" role="1J0m7K" />
+        <node concept="1yCjT0" id="5H79n532ex2" role="1J0m7X" />
+      </node>
+      <node concept="1J0m7Y" id="5H79n5327ZE" role="1J0m7J">
+        <node concept="1yCjRe" id="5H79n532exr" role="1J0m7X" />
+        <node concept="1yCjRe" id="5H79n532EF4" role="1J0m7K" />
+      </node>
+      <node concept="nE0YJ" id="5H79n53283m" role="PXuvG">
+        <node concept="1ziNjN" id="5H79n5327ZJ" role="2H9Iav">
+          <node concept="1y$7Wu" id="5H79n5327ZK" role="1ziNjJ">
+            <ref role="1y$7Wt" node="4Hts7PYBQr0" resolve="cnt" />
+          </node>
+          <node concept="PKE1D" id="5H79n5327ZL" role="1ziNjM" />
+        </node>
+        <node concept="2IPVmt" id="5H79n5327ZI" role="2H9Ial">
+          <property role="2IPVms" value="80" />
+        </node>
+      </node>
+      <node concept="2Hds6S" id="5H79n5327ZM" role="PXOzY" />
+    </node>
+    <node concept="1s0Jup" id="5H79n5327XA" role="1J0nHx" />
     <node concept="1s0Jup" id="4Hts7PYGEX0" role="1J0nHx" />
+    <node concept="3BOnTs" id="5H79n5311xu" role="1J0nHx">
+      <property role="3BOnTo" value="suv.cnt = 92 cannot be reached =&gt; vacuity" />
+    </node>
     <node concept="PYscC" id="4Hts7PYDW_L" role="1J0nHx">
       <property role="TrG5h" value="test_after_92_ticks_PASS_VACUOUSLY" />
       <ref role="1J0niy" node="4Hts7PYBQqE" resolve="delayed_error" />

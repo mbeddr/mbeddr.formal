@@ -1399,6 +1399,40 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="5H79n532TUK" role="1SL9yI">
+      <property role="TrG5h" value="test_more_than_80_ticks_PASS" />
+      <node concept="3cqZAl" id="5H79n532TUL" role="3clF45" />
+      <node concept="3clFbS" id="5H79n532TUM" role="3clF47">
+        <node concept="3cpWs8" id="5H79n532TUN" role="3cqZAp">
+          <node concept="3cpWsn" id="5H79n532TUO" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="5H79n532TUP" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="5H79n532TUQ" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="5H79n532TUR" role="37wK5m">
+                <property role="Xl_RC" value="_070_verification_cases_tests_like_tests" />
+              </node>
+              <node concept="Xl_RD" id="5H79n532TUS" role="37wK5m">
+                <property role="Xl_RC" value="test_after_more_than_80_ticks_PASS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5H79n532TUT" role="3cqZAp">
+          <node concept="2OqwBi" id="5H79n532TUU" role="3vwVQn">
+            <node concept="37vLTw" id="5H79n532TUV" role="2Oq$k0">
+              <ref role="3cqZAo" node="5H79n532TUO" resolve="res" />
+            </node>
+            <node concept="liA8E" id="5H79n532TUW" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="4Hts7PYGEQt" role="1SL9yI">
       <property role="TrG5h" value="test_after_92_ticks_PASS_VACUOUSLY" />
       <node concept="3cqZAl" id="4Hts7PYGEQu" role="3clF45" />
