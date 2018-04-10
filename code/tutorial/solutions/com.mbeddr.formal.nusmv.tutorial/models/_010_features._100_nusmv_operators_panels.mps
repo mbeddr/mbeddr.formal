@@ -177,9 +177,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -206,11 +203,6 @@
       </concept>
       <concept id="4678075609353200435" name="com.mbeddr.formal.nusmv.tests.structure.TestsCollection" flags="ng" index="1J0nZ8">
         <child id="4678075609353201562" name="testCases" index="1J0nHx" />
-      </concept>
-    </language>
-    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="71733767949060574" name="com.mbeddr.formal.base.structure.CurrentSimulationValueAnnotation" flags="ng" index="1tZX2_">
-        <property id="71733767949060581" name="value" index="1tZX2u" />
       </concept>
     </language>
   </registry>
@@ -619,9 +611,6 @@
       <property role="TrG5h" value="traffic_lights_controller" />
       <node concept="2Hdtzr" id="3R2p3fiGCz3" role="2Hdtzq">
         <property role="TrG5h" value="cross_request" />
-        <node concept="1tZX2_" id="o$TLCsRuAV" role="lGtFl">
-          <property role="1tZX2u" value="FALSE" />
-        </node>
       </node>
       <node concept="32O2o0" id="o$TLCsR0Ly" role="2HcbjO">
         <node concept="1zoerA" id="o$TLCsR0Lz" role="32O2ov">
@@ -629,17 +618,11 @@
           <node concept="2He$iJ" id="o$TLCsR10r" role="1zoetD">
             <ref role="2He$iI" node="3R2p3fiGCVR" resolve="traffic" />
           </node>
-          <node concept="1tZX2_" id="o$TLCsRuBd" role="lGtFl">
-            <property role="1tZX2u" value="Green" />
-          </node>
         </node>
         <node concept="1zoerA" id="o$TLCsR0L_" role="32O2ov">
           <property role="TrG5h" value="pedestriansSignal" />
           <node concept="2He$iJ" id="o$TLCsR10G" role="1zoetD">
             <ref role="2He$iI" node="3R2p3fiGCza" resolve="pedestrian" />
-          </node>
-          <node concept="1tZX2_" id="o$TLCsRuBo" role="lGtFl">
-            <property role="1tZX2u" value="DontWalk" />
           </node>
         </node>
       </node>
@@ -657,9 +640,6 @@
               <property role="TrG5h" value="Red" />
             </node>
           </node>
-          <node concept="1tZX2_" id="o$TLCsRuBb" role="lGtFl">
-            <property role="1tZX2u" value="Green" />
-          </node>
         </node>
         <node concept="2Hdskp" id="3R2p3fiGCza" role="2Hfkx9">
           <property role="TrG5h" value="pedestrian" />
@@ -671,9 +651,6 @@
               <property role="TrG5h" value="DontWalk" />
             </node>
           </node>
-          <node concept="1tZX2_" id="o$TLCsRuBn" role="lGtFl">
-            <property role="1tZX2u" value="DontWalk" />
-          </node>
         </node>
         <node concept="2Hdskp" id="3R2p3fiGCze" role="2Hfkx9">
           <property role="TrG5h" value="timer" />
@@ -684,9 +661,6 @@
             <node concept="2IPVmt" id="3R2p3fiGCzh" role="dhpfn">
               <property role="2IPVms" value="10" />
             </node>
-          </node>
-          <node concept="1tZX2_" id="o$TLCsRuBc" role="lGtFl">
-            <property role="1tZX2u" value="0" />
           </node>
         </node>
       </node>
@@ -716,9 +690,6 @@
                 </node>
                 <node concept="32Ogvo" id="3R2p3fiGDje" role="2H9Ial">
                   <ref role="32Ogvr" node="3R2p3fiGCz3" resolve="cross_request" />
-                  <node concept="1tZX2_" id="o$TLCsRuAW" role="lGtFl">
-                    <property role="1tZX2u" value="FALSE" />
-                  </node>
                 </node>
               </node>
               <node concept="2HeeqP" id="3R2p3fiGDkb" role="2H9I4_">
@@ -804,9 +775,6 @@
                 </node>
                 <node concept="32Ogvo" id="3R2p3fiGDDu" role="2H9Ial">
                   <ref role="32Ogvr" node="3R2p3fiGCz3" resolve="cross_request" />
-                  <node concept="1tZX2_" id="o$TLCsRuAX" role="lGtFl">
-                    <property role="1tZX2u" value="FALSE" />
-                  </node>
                 </node>
               </node>
               <node concept="2IPVmt" id="3R2p3fiGDDB" role="2H9I4_">
@@ -1020,9 +988,6 @@
               </node>
               <node concept="32Ogvo" id="3R2p3fiGCAw" role="2H9Iav">
                 <ref role="32Ogvr" node="3R2p3fiGCz3" resolve="cross_request" />
-                <node concept="1tZX2_" id="o$TLCsRuAY" role="lGtFl">
-                  <property role="1tZX2u" value="FALSE" />
-                </node>
               </node>
             </node>
           </node>
