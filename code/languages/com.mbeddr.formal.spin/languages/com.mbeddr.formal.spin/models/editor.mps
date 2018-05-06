@@ -661,8 +661,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="2DjQaubCrKK">
-    <property role="3GE5qa" value="statements.builtin" />
-    <ref role="1XX52x" to="o3hv:2DjQaubCrKG" resolve="PromelaPrintfStatement" />
+    <property role="3GE5qa" value="statements.c" />
+    <ref role="1XX52x" to="o3hv:2DjQaubCrKG" resolve="PrintfCStatement" />
     <node concept="3EZMnI" id="2DjQaubCrKM" role="2wV5jI">
       <node concept="3F0ifn" id="2DjQaubCrKN" role="3EZMnx">
         <property role="3F0ifm" value="Printf" />
@@ -1066,6 +1066,19 @@
         <ref role="1NtTu8" to="o3hv:4Hts7PYAJTw" resolve="stmts" />
       </node>
       <node concept="l2Vlx" id="4Hts7PYAJU8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5y2MdLwTJQm">
+    <property role="3GE5qa" value="statements.c" />
+    <ref role="1XX52x" to="o3hv:5y2MdLwTJQi" resolve="CCode" />
+    <node concept="3EZMnI" id="5y2MdLwTJQ_" role="2wV5jI">
+      <node concept="3F0ifn" id="5y2MdLwTJQJ" role="3EZMnx">
+        <property role="3F0ifm" value="c_code" />
+      </node>
+      <node concept="3F1sOY" id="5y2MdLwTJQS" role="3EZMnx">
+        <ref role="1NtTu8" to="o3hv:5y2MdLwTJQj" resolve="body" />
+      </node>
+      <node concept="l2Vlx" id="5y2MdLwTJQC" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -742,8 +742,8 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2DjQaubCrLM">
-    <property role="3GE5qa" value="statements.builtin" />
-    <ref role="WuzLi" to="o3hv:2DjQaubCrKG" resolve="PromelaPrintfStatement" />
+    <property role="3GE5qa" value="statements.c" />
+    <ref role="WuzLi" to="o3hv:2DjQaubCrKG" resolve="PrintfCStatement" />
     <node concept="11bSqf" id="2DjQaubCrLN" role="11c4hB">
       <node concept="3clFbS" id="2DjQaubCrLO" role="2VODD2">
         <node concept="lc7rE" id="2DjQaubCrMa" role="3cqZAp">
@@ -1248,6 +1248,28 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="5y2MdLwTJVE">
+    <property role="3GE5qa" value="statements.c" />
+    <ref role="WuzLi" to="o3hv:5y2MdLwTJQi" resolve="CCode" />
+    <node concept="11bSqf" id="5y2MdLwTJVF" role="11c4hB">
+      <node concept="3clFbS" id="5y2MdLwTJVG" role="2VODD2">
+        <node concept="lc7rE" id="5y2MdLwTJVZ" role="3cqZAp">
+          <node concept="la8eA" id="5y2MdLwTJWn" role="lcghm">
+            <property role="lacIc" value="c_code " />
+          </node>
+          <node concept="l9hG8" id="5y2MdLwTJY0" role="lcghm">
+            <node concept="2OqwBi" id="5y2MdLwTK7Y" role="lb14g">
+              <node concept="117lpO" id="5y2MdLwTJYW" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5y2MdLwTKg7" role="2OqNvi">
+                <ref role="3Tt5mk" to="o3hv:5y2MdLwTJQj" resolve="body" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="5y2MdLwTKxi" role="lcghm" />
         </node>
       </node>
     </node>
