@@ -333,9 +333,7 @@
             <node concept="37vLTw" id="4FpLBMtULaj" role="37wK5m">
               <ref role="3cqZAo" node="5dSPU6qaBE3" resolve="model" />
             </node>
-            <node concept="3clFbT" id="4FpLBMtULdY" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
+            <node concept="3clFbT" id="4FpLBMtULdY" role="37wK5m" />
           </node>
         </node>
       </node>
