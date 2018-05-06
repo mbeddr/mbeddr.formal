@@ -14,6 +14,7 @@
     <import index="2avh" ref="r:d71bd9ec-2dae-496f-9887-8fb9facf61b7(com.mbeddr.formal.base.tooling.tools)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
+    <import index="eats" ref="r:3654a487-2c9f-407a-a51c-9aa5b4da2208(com.mbeddr.formal.spin.plugin)" />
     <import index="9yqz" ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)" implicit="true" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
   </imports>
@@ -136,6 +137,12 @@
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -264,6 +271,17 @@
         <node concept="3clFbH" id="7VkE0BpwcPf" role="3cqZAp" />
         <node concept="3clFbJ" id="7VkE0BpuGuC" role="3cqZAp">
           <node concept="3clFbS" id="7VkE0BpuGuE" role="3clFbx">
+            <node concept="RRSsy" id="5y2MdLwGfkW" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="3cpWs3" id="5y2MdLwGfR3" role="RRSoy">
+                <node concept="37vLTw" id="5y2MdLwGfST" role="3uHU7w">
+                  <ref role="3cqZAo" node="4kcU3Yrkv2h" resolve="panFileFullyQualifiedName" />
+                </node>
+                <node concept="Xl_RD" id="5y2MdLwGfkY" role="3uHU7B">
+                  <property role="Xl_RC" value="file not found: " />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="69N9a9ZRext" role="3cqZAp">
               <node concept="3cpWsn" id="69N9a9ZRexu" role="3cpWs9">
                 <property role="TrG5h" value="result" />
@@ -791,15 +809,28 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7Rf0$0HRxRF" role="3clF47">
-        <node concept="3cpWs6" id="4_pH3zvoLgT" role="3cqZAp">
-          <node concept="2YIFZM" id="4_pH3zvoM8v" role="3cqZAk">
-            <ref role="37wK5l" to="fhlc:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
-            <ref role="1Pybhc" to="fhlc:3AFGfkfpqfj" resolve="PathsUtils" />
-            <node concept="2OqwBi" id="4_pH3zvoMGR" role="37wK5m">
-              <node concept="37vLTw" id="4_pH3zvoMmy" role="2Oq$k0">
-                <ref role="3cqZAo" node="7Rf0$0HRxUb" resolve="pm" />
+        <node concept="3cpWs8" id="5y2MdLwLsIT" role="3cqZAp">
+          <node concept="3cpWsn" id="5y2MdLwLsIU" role="3cpWs9">
+            <property role="TrG5h" value="pathToGeneratedPromelaDir" />
+            <node concept="17QB3L" id="5y2MdLwLsIR" role="1tU5fm" />
+            <node concept="2YIFZM" id="5y2MdLwLsIV" role="33vP2m">
+              <ref role="37wK5l" to="fhlc:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
+              <ref role="1Pybhc" to="fhlc:3AFGfkfpqfj" resolve="PathsUtils" />
+              <node concept="2OqwBi" id="5y2MdLwLsIW" role="37wK5m">
+                <node concept="37vLTw" id="5y2MdLwLsIX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Rf0$0HRxUb" resolve="pm" />
+                </node>
+                <node concept="I4A8Y" id="5y2MdLwLsIY" role="2OqNvi" />
               </node>
-              <node concept="I4A8Y" id="4_pH3zvoN2B" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4_pH3zvoLgT" role="3cqZAp">
+          <node concept="2YIFZM" id="5y2MdLwLvNK" role="3cqZAk">
+            <ref role="37wK5l" to="eats:5y2MdLwLq_K" resolve="getVerifierDirectory" />
+            <ref role="1Pybhc" to="eats:5y2MdLwKWYo" resolve="VerifierFileUtils" />
+            <node concept="37vLTw" id="5y2MdLwLw3Y" role="37wK5m">
+              <ref role="3cqZAo" node="5y2MdLwLsIU" resolve="pathToGeneratedPromelaDir" />
             </node>
           </node>
         </node>
