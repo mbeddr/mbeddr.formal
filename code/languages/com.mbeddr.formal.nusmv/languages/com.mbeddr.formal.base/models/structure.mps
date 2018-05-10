@@ -114,5 +114,13 @@
     <property role="EcuMT" value="4613921340548479686" />
     <property role="TrG5h" value="IKeywordsProvider" />
   </node>
+  <node concept="PlHQZ" id="1ZejHLlGC0C">
+    <property role="EcuMT" value="2291855968615694376" />
+    <property role="TrG5h" value="ICommentable" />
+  </node>
+  <node concept="PlHQZ" id="1ZejHLlGFyV">
+    <property role="EcuMT" value="2291855968615708859" />
+    <property role="TrG5h" value="IEmptyLine" />
+  </node>
 </model>
 
