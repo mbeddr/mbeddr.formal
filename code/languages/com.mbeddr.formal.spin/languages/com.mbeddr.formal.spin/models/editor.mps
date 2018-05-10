@@ -14,6 +14,7 @@
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="3fe0" ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1079,6 +1080,29 @@
         <ref role="1NtTu8" to="o3hv:5y2MdLwTJQj" resolve="body" />
       </node>
       <node concept="l2Vlx" id="5y2MdLwTJQC" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1ZejHLlJMH8">
+    <property role="3GE5qa" value="statements" />
+    <ref role="1XX52x" to="o3hv:1ZejHLlJMGA" resolve="SkipStatement" />
+    <node concept="3F0ifn" id="1ZejHLlJMHg" role="2wV5jI">
+      <property role="3F0ifm" value="skip;" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1ZejHLlKNJo">
+    <property role="3GE5qa" value="expressions.unary" />
+    <ref role="1XX52x" to="o3hv:1ZejHLlKNJe" resolve="NotExpression" />
+    <node concept="3EZMnI" id="1ZejHLlKNJz" role="2wV5jI">
+      <node concept="3F0ifn" id="1ZejHLlKNJH" role="3EZMnx">
+        <property role="3F0ifm" value="!" />
+        <node concept="11LMrY" id="1ZejHLlLLEw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1ZejHLlKNJQ" role="3EZMnx">
+        <ref role="1NtTu8" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+      </node>
+      <node concept="l2Vlx" id="1ZejHLlKNJA" role="2iSdaV" />
     </node>
   </node>
 </model>
