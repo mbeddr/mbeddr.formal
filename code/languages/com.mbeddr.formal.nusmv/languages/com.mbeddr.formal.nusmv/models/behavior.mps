@@ -714,5 +714,26 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="1ZejHLlHO2F">
+    <ref role="13h7C2" to="gioj:1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    <node concept="13i0hz" id="1ZejHLlHrcP" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getCommentedPrefix" />
+      <ref role="13i0hy" to="w873:1ZejHLlHkZr" resolve="getCommentedPrefix" />
+      <node concept="3Tm1VV" id="1ZejHLlHrcQ" role="1B3o_S" />
+      <node concept="3clFbS" id="1ZejHLlHrcV" role="3clF47">
+        <node concept="3clFbF" id="1ZejHLlHrlk" role="3cqZAp">
+          <node concept="Xl_RD" id="1ZejHLlHrlj" role="3clFbG">
+            <property role="Xl_RC" value="--" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1ZejHLlHrcW" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="1ZejHLlHO2G" role="13h7CW">
+      <node concept="3clFbS" id="1ZejHLlHO2H" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

@@ -273,11 +273,17 @@
     <node concept="PrWs8" id="6NmtaR1VppW" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1VmIA" resolve="IAssignmentContent" />
     </node>
+    <node concept="PrWs8" id="1ZejHLlHO1O" role="PzmwI">
+      <ref role="PrY4T" to="b19z:1ZejHLlGFyV" resolve="IEmptyLine" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6NmtaR1VmIA">
     <property role="EcuMT" value="7842584090744023974" />
     <property role="3GE5qa" value="assign" />
     <property role="TrG5h" value="IAssignmentContent" />
+    <node concept="PrWs8" id="1ZejHLlHO3B" role="PrDN$">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1VD8o">
     <property role="EcuMT" value="7842584090744099352" />
@@ -404,6 +410,9 @@
     <node concept="PrWs8" id="1IrBcRpiVFs" role="PzmwI">
       <ref role="PrY4T" node="1IrBcRpiVFr" resolve="IDefineContent" />
     </node>
+    <node concept="PrWs8" id="1ZejHLlHkYW" role="PzmwI">
+      <ref role="PrY4T" to="b19z:1ZejHLlGFyV" resolve="IEmptyLine" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1IrBcRpiVFr">
     <property role="EcuMT" value="1989356068342053595" />
@@ -497,6 +506,9 @@
     <property role="34LRSv" value="SPEC" />
     <property role="3GE5qa" value="spec" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
+    <node concept="PrWs8" id="1ZejHLlHO3M" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7mSH3Wn9zzy">
     <property role="EcuMT" value="8482728081216649442" />
@@ -629,6 +641,9 @@
     <property role="EcuMT" value="8482728081222203947" />
     <property role="3GE5qa" value="init" />
     <property role="TrG5h" value="IInitContent" />
+    <node concept="PrWs8" id="1ZejHLlI04X" role="PrDN$">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WnuJCJ">
     <property role="EcuMT" value="8482728081222203951" />
@@ -637,6 +652,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7mSH3WnuJCK" role="PzmwI">
       <ref role="PrY4T" node="7mSH3WnuJCF" resolve="IInitContent" />
+    </node>
+    <node concept="PrWs8" id="1ZejHLlI04T" role="PzmwI">
+      <ref role="PrY4T" to="b19z:1ZejHLlGFyV" resolve="IEmptyLine" />
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WnuJEr">
@@ -695,11 +713,17 @@
     <node concept="PrWs8" id="2mjHtwT$sUY" role="PzmwI">
       <ref role="PrY4T" node="7mSH3WnvMF6" resolve="ITransContent" />
     </node>
+    <node concept="PrWs8" id="1ZejHLlI04K" role="PzmwI">
+      <ref role="PrY4T" to="b19z:1ZejHLlGFyV" resolve="IEmptyLine" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7mSH3WnvMF6">
     <property role="EcuMT" value="8482728081222478534" />
     <property role="3GE5qa" value="trans" />
     <property role="TrG5h" value="ITransContent" />
+    <node concept="PrWs8" id="1ZejHLlI04O" role="PrDN$">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WnvMFa">
     <property role="EcuMT" value="8482728081222478538" />
@@ -774,12 +798,18 @@
     <property role="EcuMT" value="5536191589037395462" />
     <property role="3GE5qa" value="vars" />
     <property role="TrG5h" value="IVariableDeclarationSectionContent" />
+    <node concept="PrWs8" id="1ZejHLlHO3J" role="PrDN$">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4NkweGh54S7">
     <property role="EcuMT" value="5536191589037395463" />
     <property role="3GE5qa" value="vars" />
     <property role="TrG5h" value="EmptyVariableDeclaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1ZejHLlHO1X" role="PzmwI">
+      <ref role="PrY4T" to="b19z:1ZejHLlGFyV" resolve="IEmptyLine" />
+    </node>
     <node concept="PrWs8" id="4NkweGh54S8" role="PzmwI">
       <ref role="PrY4T" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
     </node>
@@ -815,6 +845,9 @@
   <node concept="PlHQZ" id="5_V$TJxCJMd">
     <property role="EcuMT" value="6447909589225766029" />
     <property role="TrG5h" value="ISystemContent" />
+    <node concept="PrWs8" id="1ZejHLlHX1e" role="PrDN$">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5_V$TJxCJMz">
     <property role="EcuMT" value="6447909589225766051" />
@@ -1029,6 +1062,9 @@
     <node concept="PrWs8" id="2mjHtwTwhWz" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
     </node>
+    <node concept="PrWs8" id="1ZejHLlI04D" role="PzmwI">
+      <ref role="PrY4T" to="b19z:1ZejHLlGFyV" resolve="IEmptyLine" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2mjHtwTGt9x">
     <property role="EcuMT" value="2707707741265318497" />
@@ -1039,6 +1075,9 @@
     </node>
     <node concept="PrWs8" id="2mjHtwTGt9L" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1ZejHLlHO3E" role="PrDN$">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
     </node>
   </node>
   <node concept="PlHQZ" id="2mjHtwTKxtR">
@@ -1370,6 +1409,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3cHtG5tVuIf" role="PzmwI">
       <ref role="PrY4T" node="3cHtG5tVuGX" resolve="ISingleCaseLike" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1ZejHLlHO2f">
+    <property role="EcuMT" value="2291855968616005775" />
+    <property role="TrG5h" value="ICommentableNuSMVElement" />
+    <node concept="PrWs8" id="1ZejHLlHO2g" role="PrDN$">
+      <ref role="PrY4T" to="b19z:1ZejHLlGC0C" resolve="ICommentable" />
     </node>
   </node>
 </model>
