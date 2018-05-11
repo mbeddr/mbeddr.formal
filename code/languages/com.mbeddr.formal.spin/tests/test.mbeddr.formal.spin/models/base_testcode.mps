@@ -60,11 +60,17 @@
       <concept id="5430620409975995993" name="com.mbeddr.formal.spin.structure.DStep" flags="ng" index="PLSS$">
         <child id="5430620409975996000" name="stmts" index="PLSSt" />
       </concept>
+      <concept id="6377880871154154898" name="com.mbeddr.formal.spin.structure.CCode" flags="ng" index="Sp3le">
+        <child id="6377880871154154899" name="body" index="Sp3lf" />
+      </concept>
       <concept id="4613921340549752918" name="com.mbeddr.formal.spin.structure.GotoStatement" flags="ng" index="X21_l">
         <reference id="4613921340549753231" name="label" index="X21yc" />
       </concept>
       <concept id="4613921340549749726" name="com.mbeddr.formal.spin.structure.Label" flags="ng" index="X22Ft" />
       <concept id="4613921340551317026" name="com.mbeddr.formal.spin.structure.GlobalVarRef" flags="ng" index="X83sx" />
+      <concept id="2291855968618030330" name="com.mbeddr.formal.spin.structure.ProcRef" flags="ng" index="1a66CA">
+        <reference id="2291855968618030351" name="proc" index="1a66Jj" />
+      </concept>
       <concept id="2291855968617711762" name="com.mbeddr.formal.spin.structure.Select" flags="ng" index="1a7Kpe">
         <child id="2291855968617711774" name="high" index="1a7Kp2" />
         <child id="2291855968617711767" name="low" index="1a7Kpb" />
@@ -72,12 +78,16 @@
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744245770" name="com.mbeddr.formal.base.expressions.structure.PlusExpression" flags="ng" index="2H9FEB" />
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
+      <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
+        <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -415,6 +425,63 @@
             </node>
             <node concept="2m6Dwh" id="1ZejHLlPnxG" role="2H9Iav">
               <ref role="2m6DZP" node="1ZejHLlPnu9" resolve="var" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mr7gt" id="1ZejHLlQ$T5">
+    <property role="TrG5h" value="_100_c_code_proc_var_ref" />
+    <node concept="2mpP7Z" id="1ZejHLlQ$T6" role="2mr7gi">
+      <property role="2mpCJw" value="true" />
+      <property role="TrG5h" value="proc_var_ref_expression" />
+      <node concept="2mpP4x" id="1ZejHLlQ$T7" role="2mpP4J">
+        <node concept="2m6DXv" id="1ZejHLlQ$T8" role="2mpP4z">
+          <property role="TrG5h" value="var" />
+          <node concept="2m7kok" id="1ZejHLlQ$T9" role="2m6DZC" />
+        </node>
+        <node concept="1a7Kpe" id="1ZejHLlQ$Ta" role="2mpP4z">
+          <node concept="2m6Dwh" id="1ZejHLlQ$Tb" role="1a7Kpf">
+            <ref role="2m6DZP" node="1ZejHLlQ$T8" resolve="var" />
+          </node>
+          <node concept="2IPVmt" id="1ZejHLlQ$Tc" role="1a7Kpb">
+            <property role="2IPVms" value="1" />
+          </node>
+          <node concept="2IPVmt" id="1ZejHLlQ$Td" role="1a7Kp2">
+            <property role="2IPVms" value="25" />
+          </node>
+        </node>
+        <node concept="Sp3le" id="1ZejHLlQ$YG" role="2mpP4z">
+          <node concept="2mpP4x" id="1ZejHLlQ$YH" role="Sp3lf">
+            <node concept="2m6DZN" id="1ZejHLlQ_2S" role="2mpP4z">
+              <node concept="1a66CA" id="1ZejHLlQ_2O" role="2m6DZo">
+                <ref role="1a66Jj" node="1ZejHLlQ$T6" resolve="proc_var_ref_expression" />
+                <node concept="2m6Dwh" id="1ZejHLlQ_32" role="32OYtT">
+                  <ref role="2m6DZP" node="1ZejHLlQ$T8" resolve="var" />
+                </node>
+              </node>
+              <node concept="1a66CA" id="1ZejHLlQ_38" role="2m6DZq">
+                <ref role="1a66Jj" node="1ZejHLlQ$T6" resolve="proc_var_ref_expression" />
+                <node concept="2H9FEB" id="1ZejHLlQ_3i" role="32OYtT">
+                  <node concept="2IPVmt" id="1ZejHLlQ_3_" role="2H9Ial">
+                    <property role="2IPVms" value="2" />
+                  </node>
+                  <node concept="2m6Dwh" id="1ZejHLlQ_39" role="2H9Iav">
+                    <ref role="2m6DZP" node="1ZejHLlQ$T8" resolve="var" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2xKSXg" id="1ZejHLlQ_0b" role="2mpP4z">
+          <node concept="2xSVM6" id="1ZejHLlQ_40" role="2xKS2k">
+            <node concept="2IPVmt" id="1ZejHLlQ_4j" role="2H9Ial">
+              <property role="2IPVms" value="21" />
+            </node>
+            <node concept="2m6Dwh" id="1ZejHLlQ_3N" role="2H9Iav">
+              <ref role="2m6DZP" node="1ZejHLlQ$T8" resolve="var" />
             </node>
           </node>
         </node>
