@@ -65,6 +65,11 @@
       </concept>
       <concept id="4613921340549749726" name="com.mbeddr.formal.spin.structure.Label" flags="ng" index="X22Ft" />
       <concept id="4613921340551317026" name="com.mbeddr.formal.spin.structure.GlobalVarRef" flags="ng" index="X83sx" />
+      <concept id="2291855968617711762" name="com.mbeddr.formal.spin.structure.Select" flags="ng" index="1a7Kpe">
+        <child id="2291855968617711774" name="high" index="1a7Kp2" />
+        <child id="2291855968617711767" name="low" index="1a7Kpb" />
+        <child id="2291855968617711763" name="var" index="1a7Kpf" />
+      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
@@ -381,6 +386,40 @@
       </node>
     </node>
     <node concept="2xLtbV" id="4Hts7PYBLy3" role="2mr7gi" />
+  </node>
+  <node concept="2mr7gt" id="1ZejHLlPnu6">
+    <property role="TrG5h" value="_010_statements_select" />
+    <node concept="2mpP7Z" id="1ZejHLlPnu7" role="2mr7gi">
+      <property role="2mpCJw" value="true" />
+      <property role="TrG5h" value="select_statements" />
+      <node concept="2mpP4x" id="1ZejHLlPnu8" role="2mpP4J">
+        <node concept="2m6DXv" id="1ZejHLlPnu9" role="2mpP4z">
+          <property role="TrG5h" value="var" />
+          <node concept="2m7kok" id="1ZejHLlPnua" role="2m6DZC" />
+        </node>
+        <node concept="1a7Kpe" id="1ZejHLlPnwK" role="2mpP4z">
+          <node concept="2m6Dwh" id="1ZejHLlPnxl" role="1a7Kpf">
+            <ref role="2m6DZP" node="1ZejHLlPnu9" resolve="var" />
+          </node>
+          <node concept="2IPVmt" id="1ZejHLlPnxu" role="1a7Kpb">
+            <property role="2IPVms" value="1" />
+          </node>
+          <node concept="2IPVmt" id="1ZejHLlPnxA" role="1a7Kp2">
+            <property role="2IPVms" value="25" />
+          </node>
+        </node>
+        <node concept="2xKSXg" id="1ZejHLlPnux" role="2mpP4z">
+          <node concept="2xSVM6" id="1ZejHLlPnuy" role="2xKS2k">
+            <node concept="2IPVmt" id="1ZejHLlPnuz" role="2H9Ial">
+              <property role="2IPVms" value="23" />
+            </node>
+            <node concept="2m6Dwh" id="1ZejHLlPnxG" role="2H9Iav">
+              <ref role="2m6DZP" node="1ZejHLlPnu9" resolve="var" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

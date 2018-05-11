@@ -759,5 +759,34 @@
     <property role="R4oN_" value="not" />
     <ref role="1TJDcQ" to="ehqg:7mSH3Wnsy0f" resolve="NotExpressionBase" />
   </node>
+  <node concept="1TIwiD" id="1ZejHLlOkyi">
+    <property role="EcuMT" value="2291855968617711762" />
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="Select" />
+    <property role="34LRSv" value="select" />
+    <property role="R4oN_" value="non-deterministic value selection" />
+    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="1TJgyj" id="1ZejHLlOkyj" role="1TKVEi">
+      <property role="IQ2ns" value="2291855968617711763" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4_pH3zvgMJc" resolve="IVariableReference" />
+    </node>
+    <node concept="1TJgyj" id="1ZejHLlOkyn" role="1TKVEi">
+      <property role="IQ2ns" value="2291855968617711767" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="low" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1ZejHLlOkyu" role="1TKVEi">
+      <property role="IQ2ns" value="2291855968617711774" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="high" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
