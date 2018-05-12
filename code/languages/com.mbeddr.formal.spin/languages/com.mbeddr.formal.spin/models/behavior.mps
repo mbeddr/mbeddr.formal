@@ -217,7 +217,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5y2MdLwVRLy">
-    <property role="3GE5qa" value="statements.c" />
+    <property role="3GE5qa" value="c.statements" />
     <ref role="13h7C2" to="o3hv:5y2MdLwTJQi" resolve="CCode" />
     <node concept="13hLZK" id="5y2MdLwVRLz" role="13h7CW">
       <node concept="3clFbS" id="5y2MdLwVRL$" role="2VODD2">

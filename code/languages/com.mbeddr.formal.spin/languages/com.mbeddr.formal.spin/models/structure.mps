@@ -412,7 +412,7 @@
   </node>
   <node concept="1TIwiD" id="2DjQaubCrKG">
     <property role="EcuMT" value="3050019586773728300" />
-    <property role="3GE5qa" value="statements.c" />
+    <property role="3GE5qa" value="c.statements" />
     <property role="TrG5h" value="PrintfCStatement" />
     <property role="34LRSv" value="Printf" />
     <property role="R4oN_" value="Promela internal Printf" />
@@ -730,7 +730,7 @@
   </node>
   <node concept="1TIwiD" id="5y2MdLwTJQi">
     <property role="EcuMT" value="6377880871154154898" />
-    <property role="3GE5qa" value="statements.c" />
+    <property role="3GE5qa" value="c.statements" />
     <property role="TrG5h" value="CCode" />
     <property role="34LRSv" value="c_code" />
     <property role="R4oN_" value="c_code section" />
@@ -790,7 +790,7 @@
   </node>
   <node concept="1TIwiD" id="1ZejHLlPyjU">
     <property role="EcuMT" value="2291855968618030330" />
-    <property role="3GE5qa" value="expressions.c" />
+    <property role="3GE5qa" value="c.expressions" />
     <property role="TrG5h" value="ProcRef" />
     <property role="34LRSv" value="P" />
     <property role="R4oN_" value="process reference" />
@@ -802,6 +802,29 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4_pH3zvfIn7" resolve="ProcType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1ZejHLlQMY8">
+    <property role="EcuMT" value="2291855968618360712" />
+    <property role="3GE5qa" value="c.top_level" />
+    <property role="TrG5h" value="CDecl" />
+    <property role="34LRSv" value="c_decl" />
+    <property role="R4oN_" value="c_decl section" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1ZejHLlQN60" role="1TKVEi">
+      <property role="IQ2ns" value="2291855968618361216" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="decls" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1ZejHLlNdmI" resolve="ISUVModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1ZejHLlQMY9" role="PzmwI">
+      <ref role="PrY4T" node="4_pH3zvds0D" resolve="IPromelaModelContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1ZejHLlNdmI">
+    <property role="EcuMT" value="2291855968617420206" />
+    <property role="TrG5h" value="ISUVModuleContent" />
+    <property role="3GE5qa" value="c.top_level" />
   </node>
 </model>
 
