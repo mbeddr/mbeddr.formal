@@ -19,7 +19,9 @@
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
     <language slang="l:ad8d48af-022b-40dc-8979-2b76074fb438:com.mbeddr.formal.spin" version="0" />
     <language slang="l:80ea7e60-3c36-4583-be96-3e7d3ad3504e:com.mbeddr.formal.spin.analyses" version="0" />
+    <language slang="l:ef89f137-f966-4966-a202-ab9ea26e79fe:com.mbeddr.formal.spin.c.core" version="0" />
     <language slang="l:bd54ef69-17ec-411b-8f49-485702e74565:com.mbeddr.formal.spin.ext" version="0" />
+    <language slang="l:628c1bba-6b54-4c71-927c-3cff044349e4:com.mbeddr.formal.spin.hdl" version="-1" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:a482b416-d0c9-473f-8f67-725ed642b3f3:com.mbeddr.mpsutil.breadcrumb" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
