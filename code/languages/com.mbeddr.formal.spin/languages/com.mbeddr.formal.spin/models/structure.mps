@@ -826,5 +826,15 @@
     <property role="TrG5h" value="ISUVModuleContent" />
     <property role="3GE5qa" value="c.top_level" />
   </node>
+  <node concept="1TIwiD" id="1ZejHLlSia0">
+    <property role="EcuMT" value="2291855968618750592" />
+    <property role="TrG5h" value="ArbitraryText" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1ZejHLlSibf" role="1TKVEl">
+      <property role="IQ2nx" value="2291855968618750671" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
