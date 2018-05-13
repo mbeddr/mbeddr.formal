@@ -520,7 +520,7 @@
       <node concept="37vLTG" id="4kcU3Yrkd$2" role="3clF46">
         <property role="TrG5h" value="pm" />
         <node concept="3Tqbb2" id="4kcU3Yrkd$1" role="1tU5fm">
-          <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+          <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
         </node>
       </node>
       <node concept="37vLTG" id="5yxSA$IRl4H" role="3clF46">
@@ -794,7 +794,7 @@
       <node concept="37vLTG" id="HmUOIG_5bB" role="3clF46">
         <property role="TrG5h" value="pm" />
         <node concept="3Tqbb2" id="HmUOIG_5bC" role="1tU5fm">
-          <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+          <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
         </node>
       </node>
       <node concept="37vLTG" id="71H03GAUOM6" role="3clF46">
@@ -840,7 +840,7 @@
       <node concept="37vLTG" id="7Rf0$0HRxUb" role="3clF46">
         <property role="TrG5h" value="pm" />
         <node concept="3Tqbb2" id="7Rf0$0HRxUa" role="1tU5fm">
-          <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+          <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
         </node>
       </node>
     </node>

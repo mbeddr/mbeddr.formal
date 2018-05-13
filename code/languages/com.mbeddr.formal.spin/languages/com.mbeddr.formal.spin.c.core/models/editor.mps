@@ -78,6 +78,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -268,6 +271,52 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="l2Vlx" id="1ZejHLlS04f" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1ZejHLm2DLZ">
+    <property role="3GE5qa" value="statements.if" />
+    <ref role="1XX52x" to="vshk:1ZejHLm2DL1" resolve="IfStatement" />
+    <node concept="3EZMnI" id="1ZejHLm2DM1" role="2wV5jI">
+      <node concept="3F0ifn" id="1ZejHLm2DMe" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+      </node>
+      <node concept="3F0ifn" id="1ZejHLm2DMq" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="1ZejHLm2R$1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1ZejHLm2DMG" role="3EZMnx">
+        <ref role="1NtTu8" to="vshk:1ZejHLm2DLv" resolve="cond" />
+      </node>
+      <node concept="3F0ifn" id="1ZejHLm2DN4" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="1ZejHLm2R$9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="1ZejHLm2DNy" role="3EZMnx">
+        <ref role="1NtTu8" to="vshk:1ZejHLm2DLr" resolve="thenPart" />
+      </node>
+      <node concept="_tjkj" id="1ZejHLm2DO$" role="3EZMnx">
+        <node concept="3F1sOY" id="1ZejHLm2DP2" role="_tjki">
+          <ref role="1NtTu8" to="vshk:1ZejHLm2DNN" resolve="elsePart" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1ZejHLm2DM4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1ZejHLm2G_k">
+    <property role="3GE5qa" value="statements.if" />
+    <ref role="1XX52x" to="vshk:1ZejHLm2DP7" resolve="ElsePart" />
+    <node concept="3EZMnI" id="1ZejHLm2G_p" role="2wV5jI">
+      <node concept="3F0ifn" id="1ZejHLm2G_A" role="3EZMnx">
+        <property role="3F0ifm" value="else" />
+      </node>
+      <node concept="3F1sOY" id="1ZejHLm2G_M" role="3EZMnx">
+        <ref role="1NtTu8" to="vshk:1ZejHLm2DP8" resolve="body" />
+      </node>
+      <node concept="l2Vlx" id="1ZejHLm2G_s" role="2iSdaV" />
     </node>
   </node>
 </model>

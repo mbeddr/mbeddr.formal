@@ -69,8 +69,8 @@
     <node concept="1QGGSu" id="1ZejHLlNjFG" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/spin_harness.png" />
     </node>
-    <node concept="PrWs8" id="1ZejHLlQGX$" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="1ZejHLm7aPA" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
     </node>
   </node>
   <node concept="PlHQZ" id="1ZejHLlNgt6">
@@ -119,7 +119,9 @@
     <property role="EcuMT" value="2291855968617622741" />
     <property role="TrG5h" value="HarnessDefinition" />
     <property role="3GE5qa" value="harness" />
-    <node concept="PrWs8" id="1ZejHLlNYUb" role="PzmwI">
+    <property role="34LRSv" value="harness definition" />
+    <property role="R4oN_" value="harness definition module" />
+    <node concept="PrWs8" id="1ZejHLm7aPw" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="1ZejHLlNYYR" role="PzmwI">
@@ -142,7 +144,7 @@
     <property role="EcuMT" value="2291855968617623670" />
     <property role="3GE5qa" value="harness" />
     <property role="TrG5h" value="EmptyHarnessDefinitionContent" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
     <node concept="PrWs8" id="1ZejHLlNZ1R" role="PzmwI">
       <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
     </node>
@@ -153,7 +155,7 @@
     <property role="34LRSv" value="nondet_assig" />
     <property role="R4oN_" value="nondeterministic assignment" />
     <property role="3GE5qa" value="harness.content.nondet" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
     <node concept="1TJgyj" id="1ZejHLlO7vF" role="1TKVEi">
       <property role="IQ2ns" value="2291855968617658347" />
       <property role="20lmBu" value="aggregation" />
@@ -207,6 +209,24 @@
       <property role="20kJfa" value="members" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ZejHLm3R6v">
+    <property role="EcuMT" value="2291855968621785503" />
+    <property role="3GE5qa" value="harness.content" />
+    <property role="TrG5h" value="Assert" />
+    <property role="34LRSv" value="assert" />
+    <property role="R4oN_" value="assert statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1ZejHLm3Rl0" role="1TKVEi">
+      <property role="IQ2ns" value="2291855968621786432" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cond" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1ZejHLm3RkW" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
     </node>
   </node>
 </model>

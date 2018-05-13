@@ -62,7 +62,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="env" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+      <ref role="20lvS9" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
     </node>
     <node concept="1TJgyj" id="4_pH3zvoJ0x" role="1TKVEi">
       <property role="IQ2ns" value="5285453794054959137" />

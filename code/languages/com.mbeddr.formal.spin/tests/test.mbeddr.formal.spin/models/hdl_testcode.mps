@@ -22,6 +22,9 @@
       <concept id="2291855968617420216" name="com.mbeddr.formal.spin.c.core.structure.Char" flags="ng" index="1a0DH$" />
     </language>
     <language id="628c1bba-6b54-4c71-927c-3cff044349e4" name="com.mbeddr.formal.spin.hdl">
+      <concept id="2291855968621785503" name="com.mbeddr.formal.spin.hdl.structure.Assert" flags="ng" index="19KjX3">
+        <child id="2291855968621786432" name="cond" index="19KjIs" />
+      </concept>
       <concept id="2291855968617622741" name="com.mbeddr.formal.spin.hdl.structure.HarnessDefinition" flags="ng" index="1a0q89">
         <child id="2291855968617623485" name="content" index="1a0q5x" />
       </concept>
@@ -45,7 +48,15 @@
         <child id="2291855968617675967" name="members" index="1a7J9z" />
       </concept>
     </language>
+    <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
+      <concept id="3050019586774684052" name="com.mbeddr.formal.spin.structure.LessExpression" flags="ng" index="2xSS$N" />
+      <concept id="3050019586774688801" name="com.mbeddr.formal.spin.structure.NotEqualsExpression" flags="ng" index="2xSVM6" />
+    </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
+        <child id="7842584090744231480" name="right" index="2H9Ial" />
+        <child id="7842584090744231474" name="left" index="2H9Iav" />
+      </concept>
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -57,7 +68,7 @@
     </language>
   </registry>
   <node concept="1a0OAp" id="1ZejHLlNjYp">
-    <property role="TrG5h" value="nondets" />
+    <property role="TrG5h" value="_010_nondets" />
     <node concept="1a0O_Y" id="1ZejHLlNxnw" role="1a0O6w">
       <node concept="1a039r" id="1ZejHLlNQja" role="1a0O$p">
         <property role="TrG5h" value="rangeVar" />
@@ -104,6 +115,26 @@
         </node>
       </node>
       <node concept="1a0rUE" id="1ZejHLlOkxE" role="1a0q5x" />
+      <node concept="19KjX3" id="1ZejHLm43WP" role="1a0q5x">
+        <node concept="2xSVM6" id="1ZejHLm43XQ" role="19KjIs">
+          <node concept="2IPVmt" id="1ZejHLm43Y9" role="2H9Ial">
+            <property role="2IPVms" value="11" />
+          </node>
+          <node concept="1a0deV" id="1ZejHLm43XG" role="2H9Iav">
+            <ref role="1a0deR" node="1ZejHLlNQja" resolve="rangeVar" />
+          </node>
+        </node>
+      </node>
+      <node concept="19KjX3" id="1ZejHLm43Z4" role="1a0q5x">
+        <node concept="2xSS$N" id="1ZejHLm440j" role="19KjIs">
+          <node concept="2IPVmt" id="1ZejHLm440D" role="2H9Ial">
+            <property role="2IPVms" value="4" />
+          </node>
+          <node concept="1a0deV" id="1ZejHLm4409" role="2H9Iav">
+            <ref role="1a0deR" node="1ZejHLlOkv$" resolve="discreteValues" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1a0OAr" id="1ZejHLlNYN8" role="1a0O6w" />
   </node>

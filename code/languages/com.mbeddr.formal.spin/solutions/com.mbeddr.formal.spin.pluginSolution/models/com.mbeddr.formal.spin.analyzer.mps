@@ -1104,7 +1104,7 @@
             <property role="TrG5h" value="promelaModel" />
             <property role="3TUv4t" value="false" />
             <node concept="3Tqbb2" id="2lN4cj_NUlb" role="1tU5fm">
-              <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+              <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
             </node>
             <node concept="2OqwBi" id="71H03GAUIFD" role="33vP2m">
               <node concept="37vLTw" id="71H03GAUIid" role="2Oq$k0">
@@ -2417,7 +2417,7 @@
       <node concept="37vLTG" id="2lN4cj_O3sZ" role="3clF46">
         <property role="TrG5h" value="pm" />
         <node concept="3Tqbb2" id="2lN4cj_O3Hj" role="1tU5fm">
-          <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+          <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
         </node>
       </node>
       <node concept="NWlO9" id="2lN4cj_MCkg" role="lGtFl">
@@ -2958,7 +2958,7 @@
       <node concept="37vLTG" id="2lN4cj_O5l1" role="3clF46">
         <property role="TrG5h" value="pm" />
         <node concept="3Tqbb2" id="2lN4cj_O5wx" role="1tU5fm">
-          <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+          <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
         </node>
       </node>
       <node concept="NWlO9" id="2lN4cj_NBAi" role="lGtFl">
@@ -3040,7 +3040,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="5uY69zuYksZ" role="1B3o_S" />
       <node concept="3Tqbb2" id="3lXW7OZ7mNR" role="1tU5fm">
-        <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+        <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
       </node>
       <node concept="NWlO9" id="3lXW7OZ7n4p" role="lGtFl">
         <property role="NWlVz" value="Promela model to be analyzed" />

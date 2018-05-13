@@ -67,8 +67,8 @@
     <property role="34LRSv" value="promela model" />
     <property role="R4oN_" value="a Promela model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="407WgdX3PUa" role="PzmwI">
-      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    <node concept="PrWs8" id="1ZejHLm48SR" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLm44jU" resolve="IPromelaModelLike" />
     </node>
     <node concept="PrWs8" id="407WgdX3PnK" role="PzmwI">
       <ref role="PrY4T" to="b19z:407WgdWZ7F6" resolve="IKeywordsProvider" />
@@ -844,6 +844,13 @@
     </node>
     <node concept="PrWs8" id="1ZejHLlU$g$" role="PzmwI">
       <ref role="PrY4T" node="2DjQaub_wFg" resolve="IPromelaType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1ZejHLm44jU">
+    <property role="EcuMT" value="2291855968621839610" />
+    <property role="TrG5h" value="IPromelaModelLike" />
+    <node concept="PrWs8" id="1ZejHLm5WHL" role="PrDN$">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
   </node>
 </model>

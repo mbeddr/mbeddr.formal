@@ -367,8 +367,8 @@
               </node>
               <node concept="2Xjw5R" id="Rd$2EC5_KQ" role="2OqNvi">
                 <node concept="1xMEDy" id="Rd$2EC5_KS" role="1xVPHs">
-                  <node concept="chp4Y" id="4_pH3zvpInU" role="ri$Ld">
-                    <ref role="cht4Q" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+                  <node concept="chp4Y" id="1ZejHLm497_" role="ri$Ld">
+                    <ref role="cht4Q" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="Rd$2EC5_UJ" role="1xVPHs" />
@@ -418,8 +418,8 @@
               </node>
               <node concept="2Xjw5R" id="Rd$2EC5Bva" role="2OqNvi">
                 <node concept="1xMEDy" id="Rd$2EC5Bvc" role="1xVPHs">
-                  <node concept="chp4Y" id="4_pH3zvpIUQ" role="ri$Ld">
-                    <ref role="cht4Q" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+                  <node concept="chp4Y" id="1ZejHLm49ia" role="ri$Ld">
+                    <ref role="cht4Q" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="Rd$2EC5Bzu" role="1xVPHs" />

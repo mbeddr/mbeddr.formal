@@ -261,7 +261,7 @@
           <node concept="3cpWsn" id="4QGaVz5sUX6" role="3cpWs9">
             <property role="TrG5h" value="promelaModel" />
             <node concept="3Tqbb2" id="4QGaVz5sUWV" role="1tU5fm">
-              <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+              <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
             </node>
           </node>
         </node>
@@ -276,7 +276,7 @@
                         <ref role="3cqZAo" node="4QGaVz5sxQZ" resolve="m" />
                       </node>
                       <node concept="2RRcyG" id="4QGaVz5sUXa" role="2OqNvi">
-                        <ref role="2RRcyH" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+                        <ref role="2RRcyH" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
                       </node>
                     </node>
                     <node concept="1z4cxt" id="4QGaVz5sUXb" role="2OqNvi">

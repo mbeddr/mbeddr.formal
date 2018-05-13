@@ -18,6 +18,10 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -43,6 +47,7 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -147,6 +152,61 @@
               </node>
               <node concept="3n3YKJ" id="1ZejHLlSb4r" role="2OqNvi" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1ZejHLm2DP_">
+    <property role="3GE5qa" value="statements.if" />
+    <ref role="WuzLi" to="vshk:1ZejHLm2DL1" resolve="IfStatement" />
+    <node concept="11bSqf" id="1ZejHLm2DPA" role="11c4hB">
+      <node concept="3clFbS" id="1ZejHLm2DPB" role="2VODD2">
+        <node concept="lc7rE" id="1ZejHLm2DPU" role="3cqZAp">
+          <node concept="la8eA" id="1ZejHLm2DQk" role="lcghm">
+            <property role="lacIc" value="if (" />
+          </node>
+          <node concept="l9hG8" id="1ZejHLm2DRL" role="lcghm">
+            <node concept="2OqwBi" id="1ZejHLm2E0W" role="lb14g">
+              <node concept="117lpO" id="1ZejHLm2DSK" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1ZejHLm2Eg5" role="2OqNvi">
+                <ref role="3Tt5mk" to="vshk:1ZejHLm2DLv" resolve="cond" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1ZejHLm2Ep9" role="lcghm">
+            <property role="lacIc" value=") " />
+          </node>
+          <node concept="l9hG8" id="1ZejHLm2Ezc" role="lcghm">
+            <node concept="2OqwBi" id="1ZejHLm2EKT" role="lb14g">
+              <node concept="117lpO" id="1ZejHLm2ECu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1ZejHLm2ET7" role="2OqNvi">
+                <ref role="3Tt5mk" to="vshk:1ZejHLm2DLr" resolve="thenPart" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1ZejHLm2F4T" role="3cqZAp">
+          <node concept="3clFbS" id="1ZejHLm2F4V" role="3clFbx">
+            <node concept="lc7rE" id="1ZejHLm2G7X" role="3cqZAp">
+              <node concept="l9hG8" id="1ZejHLm2G8C" role="lcghm">
+                <node concept="2OqwBi" id="1ZejHLm2GhK" role="lb14g">
+                  <node concept="117lpO" id="1ZejHLm2G9$" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1ZejHLm2GwT" role="2OqNvi">
+                    <ref role="3Tt5mk" to="vshk:1ZejHLm2DNN" resolve="elsePart" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1ZejHLm2FOy" role="3clFbw">
+            <node concept="2OqwBi" id="1ZejHLm2Fk8" role="2Oq$k0">
+              <node concept="117lpO" id="1ZejHLm2Fcp" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1ZejHLm2FyI" role="2OqNvi">
+                <ref role="3Tt5mk" to="vshk:1ZejHLm2DNN" resolve="elsePart" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="1ZejHLm2G3L" role="2OqNvi" />
           </node>
         </node>
       </node>

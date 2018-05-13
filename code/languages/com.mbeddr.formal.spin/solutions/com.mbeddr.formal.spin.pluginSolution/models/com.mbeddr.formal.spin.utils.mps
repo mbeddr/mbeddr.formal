@@ -147,7 +147,7 @@
       <node concept="37vLTG" id="3tIDuP5tlTI" role="3clF46">
         <property role="TrG5h" value="pm" />
         <node concept="3Tqbb2" id="3tIDuP5tlTH" role="1tU5fm">
-          <ref role="ehGHo" to="o3hv:4_pH3zvds0_" resolve="PromelaModel" />
+          <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
         </node>
       </node>
     </node>
