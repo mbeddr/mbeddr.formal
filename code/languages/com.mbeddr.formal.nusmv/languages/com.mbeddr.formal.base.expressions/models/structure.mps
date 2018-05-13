@@ -350,7 +350,7 @@
     <property role="EcuMT" value="7320199582618415037" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="ArbitraryTextExpression" />
-    <property role="34LRSv" value="$arbitrary text$" />
+    <property role="34LRSv" value="#arbitrary text#" />
     <property role="R4oN_" value="arbitrary text expression" />
     <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyi" id="6mm$FLYVIZj" role="1TKVEl">

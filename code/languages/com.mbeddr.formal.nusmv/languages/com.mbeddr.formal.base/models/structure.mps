@@ -122,5 +122,14 @@
     <property role="EcuMT" value="2291855968615708859" />
     <property role="TrG5h" value="IEmptyLine" />
   </node>
+  <node concept="PlHQZ" id="1ZejHLlWBZ2">
+    <property role="EcuMT" value="2291855968619888578" />
+    <property role="TrG5h" value="IArbitraryText" />
+    <node concept="1TJgyi" id="1ZejHLlWBZ6" role="1TKVEl">
+      <property role="IQ2nx" value="2291855968619888582" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

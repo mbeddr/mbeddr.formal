@@ -828,12 +828,22 @@
   </node>
   <node concept="1TIwiD" id="1ZejHLlSia0">
     <property role="EcuMT" value="2291855968618750592" />
-    <property role="TrG5h" value="ArbitraryText" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1ZejHLlSibf" role="1TKVEl">
-      <property role="IQ2nx" value="2291855968618750671" />
-      <property role="TrG5h" value="text" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <property role="TrG5h" value="PromelaArbitraryText" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="# arbitrary text #" />
+    <property role="3GE5qa" value="arbitrary_text" />
+    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="PrWs8" id="1ZejHLlWGVr" role="PzmwI">
+      <ref role="PrY4T" to="b19z:1ZejHLlWBZ2" resolve="IArbitraryText" />
+    </node>
+    <node concept="PrWs8" id="1ZejHLlU$fJ" role="PzmwI">
+      <ref role="PrY4T" node="4_pH3zvds0D" resolve="IPromelaModelContent" />
+    </node>
+    <node concept="PrWs8" id="1ZejHLlU$fU" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNdmI" resolve="ISUVModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1ZejHLlU$g$" role="PzmwI">
+      <ref role="PrY4T" node="2DjQaub_wFg" resolve="IPromelaType" />
     </node>
   </node>
 </model>

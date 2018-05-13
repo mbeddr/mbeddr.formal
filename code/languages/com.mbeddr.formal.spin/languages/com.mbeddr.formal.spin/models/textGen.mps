@@ -10,6 +10,7 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1414,16 +1415,17 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="1ZejHLlSicC">
-    <ref role="WuzLi" to="o3hv:1ZejHLlSia0" resolve="ArbitraryText" />
-    <node concept="11bSqf" id="1ZejHLlSicD" role="11c4hB">
-      <node concept="3clFbS" id="1ZejHLlSicE" role="2VODD2">
-        <node concept="lc7rE" id="1ZejHLlSicX" role="3cqZAp">
-          <node concept="l9hG8" id="1ZejHLlSidn" role="lcghm">
-            <node concept="2OqwBi" id="1ZejHLlSilO" role="lb14g">
-              <node concept="117lpO" id="1ZejHLlSiej" role="2Oq$k0" />
-              <node concept="3TrcHB" id="1ZejHLlSiy_" role="2OqNvi">
-                <ref role="3TsBF5" to="o3hv:1ZejHLlSibf" resolve="text" />
+  <node concept="WtQ9Q" id="1ZejHLm0SuE">
+    <property role="3GE5qa" value="arbitrary_text" />
+    <ref role="WuzLi" to="o3hv:1ZejHLlSia0" resolve="PromelaArbitraryText" />
+    <node concept="11bSqf" id="1ZejHLm0SuF" role="11c4hB">
+      <node concept="3clFbS" id="1ZejHLm0SuG" role="2VODD2">
+        <node concept="lc7rE" id="1ZejHLm0SuQ" role="3cqZAp">
+          <node concept="l9hG8" id="1ZejHLm0Sv1" role="lcghm">
+            <node concept="2OqwBi" id="1ZejHLm0SDX" role="lb14g">
+              <node concept="117lpO" id="1ZejHLm0Sve" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1ZejHLm0SPz" role="2OqNvi">
+                <ref role="3TsBF5" to="b19z:1ZejHLlWBZ6" resolve="text" />
               </node>
             </node>
           </node>

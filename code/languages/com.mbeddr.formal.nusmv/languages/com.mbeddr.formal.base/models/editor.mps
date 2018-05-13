@@ -122,6 +122,9 @@
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
@@ -3051,6 +3054,27 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1ZejHLlWBZz">
+    <ref role="1XX52x" to="b19z:1ZejHLlWBZ2" resolve="IArbitraryText" />
+    <node concept="3EZMnI" id="1ZejHLlWBZI" role="2wV5jI">
+      <node concept="3F0ifn" id="1ZejHLlWBZJ" role="3EZMnx">
+        <property role="3F0ifm" value="#" />
+        <node concept="VechU" id="6mm$FLYVJ15" role="3F10Kt">
+          <property role="Vb096" value="magenta" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1ZejHLlWBZK" role="3EZMnx">
+        <ref role="1NtTu8" to="b19z:1ZejHLlWBZ6" resolve="text" />
+      </node>
+      <node concept="3F0ifn" id="1ZejHLlWBZL" role="3EZMnx">
+        <property role="3F0ifm" value="#" />
+        <node concept="VechU" id="1ZejHLm27du" role="3F10Kt">
+          <property role="Vb096" value="magenta" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1ZejHLlWBZM" role="2iSdaV" />
     </node>
   </node>
 </model>

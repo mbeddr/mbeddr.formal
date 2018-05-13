@@ -79,6 +79,7 @@
       </concept>
       <concept id="4613921340549749726" name="com.mbeddr.formal.spin.structure.Label" flags="ng" index="X22Ft" />
       <concept id="4613921340551317026" name="com.mbeddr.formal.spin.structure.GlobalVarRef" flags="ng" index="X83sx" />
+      <concept id="4613921340550954664" name="com.mbeddr.formal.spin.structure.ByteType" flags="ng" index="X9sYF" />
       <concept id="2291855968618360712" name="com.mbeddr.formal.spin.structure.CDecl" flags="ng" index="1a5m5k">
         <child id="2291855968618361216" name="decls" index="1a5nXs" />
       </concept>
@@ -90,8 +91,12 @@
         <child id="2291855968617711767" name="low" index="1a7Kpb" />
         <child id="2291855968617711763" name="var" index="1a7Kpf" />
       </concept>
+      <concept id="2291855968618750592" name="com.mbeddr.formal.spin.structure.PromelaArbitraryText" flags="ng" index="1abQLs" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
+        <property id="7320199582618415059" name="value" index="ru7PJ" />
+      </concept>
       <concept id="7842584090744245770" name="com.mbeddr.formal.base.expressions.structure.PlusExpression" flags="ng" index="2H9FEB" />
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
@@ -107,6 +112,11 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="2291855968619888578" name="com.mbeddr.formal.base.structure.IArbitraryText" flags="ng" index="1af34u">
+        <property id="2291855968619888582" name="text" index="1af34q" />
       </concept>
     </language>
   </registry>
@@ -633,6 +643,45 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mr7gt" id="1ZejHLlWA1b">
+    <property role="TrG5h" value="_000_arbitrary_text_top_level" />
+    <node concept="1abQLs" id="1ZejHLlWIKx" role="2mr7gi">
+      <property role="1af34q" value="active proctype only_text() {" />
+    </node>
+    <node concept="1abQLs" id="1ZejHLlWIK_" role="2mr7gi">
+      <property role="1af34q" value="  byte b;" />
+    </node>
+    <node concept="1abQLs" id="1ZejHLlWIKG" role="2mr7gi">
+      <property role="1af34q" value="  select(b : 1 .. 10);" />
+    </node>
+    <node concept="1abQLs" id="1ZejHLlWILj" role="2mr7gi">
+      <property role="1af34q" value="  assert(b != 2);" />
+    </node>
+    <node concept="1abQLs" id="1ZejHLlWIKQ" role="2mr7gi">
+      <property role="1af34q" value="}" />
+    </node>
+  </node>
+  <node concept="2mr7gt" id="1ZejHLm0Xho">
+    <property role="TrG5h" value="_000_arbitrary_text_statements" />
+    <node concept="2mpP7Z" id="1ZejHLm0XsH" role="2mr7gi">
+      <property role="TrG5h" value="arbitrary_text_statements" />
+      <property role="2mpCJw" value="true" />
+      <node concept="2mpP4x" id="1ZejHLm0XsJ" role="2mpP4J">
+        <node concept="2m6DXv" id="1ZejHLm0Xt_" role="2mpP4z">
+          <property role="TrG5h" value="b" />
+          <node concept="X9sYF" id="1ZejHLm0Xtz" role="2m6DZC" />
+        </node>
+        <node concept="1abQLs" id="1ZejHLm26Sp" role="2mpP4z">
+          <property role="1af34q" value="select(b : 1 .. 12);" />
+        </node>
+        <node concept="2xKSXg" id="1ZejHLm0Xv5" role="2mpP4z">
+          <node concept="ru7O1" id="1ZejHLm27db" role="2xKS2k">
+            <property role="ru7PJ" value="b != 2" />
           </node>
         </node>
       </node>

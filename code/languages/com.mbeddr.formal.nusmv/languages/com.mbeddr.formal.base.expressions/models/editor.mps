@@ -591,7 +591,7 @@
     <ref role="1XX52x" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
     <node concept="3EZMnI" id="6mm$FLYVJ0c" role="2wV5jI">
       <node concept="3F0ifn" id="6mm$FLYVJ0e" role="3EZMnx">
-        <property role="3F0ifm" value="$" />
+        <property role="3F0ifm" value="#" />
         <node concept="VechU" id="6mm$FLYVJ15" role="3F10Kt">
           <property role="Vb096" value="magenta" />
         </node>
@@ -600,7 +600,7 @@
         <ref role="1NtTu8" to="ehqg:6mm$FLYVIZj" resolve="value" />
       </node>
       <node concept="3F0ifn" id="6mm$FLYVJ0U" role="3EZMnx">
-        <property role="3F0ifm" value="$" />
+        <property role="3F0ifm" value="#" />
         <node concept="VechU" id="6mm$FLYVJ19" role="3F10Kt">
           <property role="Vb096" value="magenta" />
         </node>

@@ -39,9 +39,7 @@
       </concept>
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
-      <concept id="2291855968618750592" name="com.mbeddr.formal.spin.structure.ArbitraryText" flags="ng" index="1abQLs">
-        <property id="2291855968618750671" name="text" index="1abQKj" />
-      </concept>
+      <concept id="2291855968618750592" name="com.mbeddr.formal.spin.structure.PromelaArbitraryText" flags="ng" index="1abQLs" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
@@ -93,19 +91,24 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="2291855968619888578" name="com.mbeddr.formal.base.structure.IArbitraryText" flags="ng" index="1af34u">
+        <property id="2291855968619888582" name="text" index="1af34q" />
+      </concept>
+    </language>
   </registry>
   <node concept="bUwia" id="4_pH3zvdrKD">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="1ZejHLlSgrp" role="3acgRq">
       <ref role="30HIoZ" to="o3hv:2DjQaub$5vR" resolve="AssertStatement" />
       <node concept="gft3U" id="1ZejHLlSi0v" role="1lVwrX">
-        <node concept="1abQLs" id="1ZejHLlThn4" role="gfFT$">
-          <property role="1abQKj" value="if (!cond) uerror(assertion failed: cond);" />
-          <node concept="17Uvod" id="1ZejHLlThn8" role="lGtFl">
-            <property role="P4ACc" value="ad8d48af-022b-40dc-8979-2b76074fb438/2291855968618750592/2291855968618750671" />
+        <node concept="1abQLs" id="1ZejHLm0RrF" role="gfFT$">
+          <property role="1af34q" value="if (!cond) { uerror(&quot;msg&quot;); }" />
+          <node concept="17Uvod" id="1ZejHLm0RrJ" role="lGtFl">
+            <property role="P4ACc" value="83ed2dfe-f724-46cc-852a-dce086daee3f/2291855968619888578/2291855968619888582" />
             <property role="2qtEX9" value="text" />
-            <node concept="3zFVjK" id="1ZejHLlThn9" role="3zH0cK">
-              <node concept="3clFbS" id="1ZejHLlThna" role="2VODD2">
+            <node concept="3zFVjK" id="1ZejHLm0RrK" role="3zH0cK">
+              <node concept="3clFbS" id="1ZejHLm0RrL" role="2VODD2">
                 <node concept="3clFbF" id="1ZejHLlThvE" role="3cqZAp">
                   <node concept="3cpWs3" id="1ZejHLlTsLB" role="3clFbG">
                     <node concept="Xl_RD" id="1ZejHLlTt65" role="3uHU7w">

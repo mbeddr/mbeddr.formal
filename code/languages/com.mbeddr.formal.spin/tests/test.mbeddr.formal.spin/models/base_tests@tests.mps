@@ -612,5 +612,137 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="1ZejHLm0W9F">
+    <property role="TrG5h" value="_000_arbitrary_text" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="1ZejHLm0W9G" role="1SL9yI">
+      <property role="TrG5h" value="test_000_arbitrary_text_top_level" />
+      <node concept="3cqZAl" id="1ZejHLm0W9H" role="3clF45" />
+      <node concept="3clFbS" id="1ZejHLm0W9I" role="3clF47">
+        <node concept="3cpWs8" id="1ZejHLm0W9J" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLm0W9K" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="1ZejHLm0W9L" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="1ZejHLm0W9M" role="33vP2m">
+              <node concept="1jxXqW" id="1ZejHLm0W9N" role="2Oq$k0" />
+              <node concept="liA8E" id="1ZejHLm0W9O" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1ZejHLm0W9P" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLm0W9Q" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1ZejHLm0W9R" role="1tU5fm" />
+            <node concept="BaHAS" id="1ZejHLm0W9S" role="33vP2m">
+              <property role="BaHAW" value="test.mbeddr.formal.spin.base_testcode" />
+              <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="1ZejHLm0W9T" role="up2gk">
+                <ref role="3cqZAo" node="1ZejHLm0W9K" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1ZejHLm0W9U" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLm0W9V" role="3cpWs9">
+            <property role="TrG5h" value="lr" />
+            <node concept="3uibUv" id="1ZejHLm0W9W" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="1ZejHLm0W9X" role="33vP2m">
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="37vLTw" id="1ZejHLm0W9Y" role="37wK5m">
+                <ref role="3cqZAo" node="1ZejHLm0W9Q" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1ZejHLm0W9Z" role="37wK5m">
+                <property role="Xl_RC" value="_000_arbitrary_text_top_level" />
+              </node>
+              <node concept="37vLTw" id="1ZejHLm0Wa0" role="37wK5m">
+                <ref role="3cqZAo" node="1ZejHLm0W9K" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1ZejHLm0Wa1" role="3cqZAp">
+          <node concept="2OqwBi" id="1ZejHLm0Wa2" role="3vwVQn">
+            <node concept="37vLTw" id="1ZejHLm0Wa3" role="2Oq$k0">
+              <ref role="3cqZAo" node="1ZejHLm0W9V" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="1ZejHLm0Wa4" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1ZejHLm26TA" role="1SL9yI">
+      <property role="TrG5h" value="test_000_arbitrary_text_statements" />
+      <node concept="3cqZAl" id="1ZejHLm26TB" role="3clF45" />
+      <node concept="3clFbS" id="1ZejHLm26TC" role="3clF47">
+        <node concept="3cpWs8" id="1ZejHLm26TD" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLm26TE" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="1ZejHLm26TF" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="1ZejHLm26TG" role="33vP2m">
+              <node concept="1jxXqW" id="1ZejHLm26TH" role="2Oq$k0" />
+              <node concept="liA8E" id="1ZejHLm26TI" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1ZejHLm26TJ" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLm26TK" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1ZejHLm26TL" role="1tU5fm" />
+            <node concept="BaHAS" id="1ZejHLm26TM" role="33vP2m">
+              <property role="BaHAW" value="test.mbeddr.formal.spin.base_testcode" />
+              <property role="BaGAP" value="" />
+              <node concept="37vLTw" id="1ZejHLm26TN" role="up2gk">
+                <ref role="3cqZAo" node="1ZejHLm26TE" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1ZejHLm26TO" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLm26TP" role="3cpWs9">
+            <property role="TrG5h" value="lr" />
+            <node concept="3uibUv" id="1ZejHLm26TQ" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="1ZejHLm26TR" role="33vP2m">
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="37vLTw" id="1ZejHLm26TS" role="37wK5m">
+                <ref role="3cqZAo" node="1ZejHLm26TK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1ZejHLm26TT" role="37wK5m">
+                <property role="Xl_RC" value="_000_arbitrary_text_statements" />
+              </node>
+              <node concept="37vLTw" id="1ZejHLm26TU" role="37wK5m">
+                <ref role="3cqZAo" node="1ZejHLm26TE" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1ZejHLm26TV" role="3cqZAp">
+          <node concept="2OqwBi" id="1ZejHLm26TW" role="3vwVQn">
+            <node concept="37vLTw" id="1ZejHLm26TX" role="2Oq$k0">
+              <ref role="3cqZAo" node="1ZejHLm26TP" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="1ZejHLm26TY" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
