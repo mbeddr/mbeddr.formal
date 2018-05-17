@@ -68,7 +68,7 @@
   </registry>
   <node concept="13h7C7" id="1ZejHLlT_ls">
     <property role="3GE5qa" value="variables" />
-    <ref role="13h7C2" to="vshk:1ZejHLlNDPB" resolve="GlobalVariableReference" />
+    <ref role="13h7C2" to="vshk:1ZejHLlNDPB" resolve="CGlobalVariableReference" />
     <node concept="13hLZK" id="1ZejHLlT_lt" role="13h7CW">
       <node concept="3clFbS" id="1ZejHLlT_lu" role="2VODD2" />
     </node>
@@ -83,11 +83,11 @@
           <node concept="2OqwBi" id="1ZejHLlTAhj" role="3clFbG">
             <node concept="2OqwBi" id="1ZejHLlT_Gk" role="2Oq$k0">
               <node concept="13iPFW" id="1ZejHLlT_yN" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1ZejHLlT_RM" role="2OqNvi">
+              <node concept="3TrEf2" id="6fYDdj_d5$Q" role="2OqNvi">
                 <ref role="3Tt5mk" to="vshk:1ZejHLlNDPF" resolve="var" />
               </node>
             </node>
-            <node concept="3TrcHB" id="1ZejHLlTAU1" role="2OqNvi">
+            <node concept="3TrcHB" id="6fYDdj_d62q" role="2OqNvi">
               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>

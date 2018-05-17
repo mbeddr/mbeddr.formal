@@ -9,6 +9,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
+    <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -183,8 +184,9 @@
   <node concept="1TIwiD" id="4_pH3zvgMHB">
     <property role="EcuMT" value="5285453794052877159" />
     <property role="3GE5qa" value="statements" />
-    <property role="TrG5h" value="LocalVariableDeclaration" />
+    <property role="TrG5h" value="PromelaLocalVariableDeclaration" />
     <property role="34LRSv" value="variable declaration" />
+    <property role="R4oN_" value="local variable declaration in Promela" />
     <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
     <node concept="1TJgyj" id="4_pH3zvgMIY" role="1TKVEi">
       <property role="IQ2ns" value="5285453794052877246" />
@@ -233,15 +235,11 @@
     <property role="EcuMT" value="5285453794052877263" />
     <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="IVariableDeclaration" />
-    <node concept="1TJgyj" id="4_pH3zvgMJg" role="1TKVEi">
-      <property role="IQ2ns" value="5285453794052877264" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tpe" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
-    </node>
     <node concept="PrWs8" id="4_pH3zvhF8Z" role="PrDN$">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6fYDdj_beke" role="PrDN$">
+      <ref role="PrY4T" node="1ZejHLlNdnf" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="4_pH3zvgMKD">
@@ -381,9 +379,9 @@
   <node concept="1TIwiD" id="2DjQaubB4Ka">
     <property role="EcuMT" value="3050019586773371914" />
     <property role="3GE5qa" value="top_level" />
-    <property role="TrG5h" value="GlobalVariableDeclaration" />
+    <property role="TrG5h" value="PromelaGlobalVariableDeclaration" />
     <property role="34LRSv" value="global variable" />
-    <property role="R4oN_" value="global variable declaration" />
+    <property role="R4oN_" value="global variable declaration in Promela" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2DjQaubB4Ks" role="PzmwI">
       <ref role="PrY4T" node="4_pH3zvds0D" resolve="IPromelaModelContent" />
@@ -851,6 +849,18 @@
     <property role="TrG5h" value="IPromelaModelLike" />
     <node concept="PrWs8" id="1ZejHLm5WHL" role="PrDN$">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1ZejHLlNdnf">
+    <property role="EcuMT" value="2291855968617420239" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ITyped" />
+    <node concept="1TJgyj" id="1ZejHLlNdng" role="1TKVEi">
+      <property role="IQ2ns" value="2291855968617420240" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tpe" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     </node>
   </node>
 </model>

@@ -58,15 +58,12 @@
         <child id="2291855968621468767" name="cond" index="19Lda3" />
         <child id="2291855968621468763" name="thenPart" index="19Lda7" />
       </concept>
-      <concept id="2291855968617528455" name="com.mbeddr.formal.spin.c.core.structure.GlobalVariableDeclaration" flags="ng" index="1a039r" />
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.c.core.structure.ITyped" flags="ng" index="1a0DGj">
-        <child id="2291855968617420240" name="tpe" index="1a0DGc" />
-      </concept>
-      <concept id="2291855968617420229" name="com.mbeddr.formal.spin.c.core.structure.Int" flags="ng" index="1a0DGp" />
+      <concept id="2291855968617528455" name="com.mbeddr.formal.spin.c.core.structure.CGlobalVariableDeclaration" flags="ng" index="1a039r" />
+      <concept id="2291855968617420229" name="com.mbeddr.formal.spin.c.core.structure.IntType" flags="ng" index="1a0DGp" />
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
-      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.LocalVariableDeclaration" flags="ng" index="2m6DXv" />
+      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv" />
       <concept id="5285453794052877259" name="com.mbeddr.formal.spin.structure.AssignmentStatement" flags="ng" index="2m6DZN">
         <child id="5285453794052877280" name="lhs" index="2m6DZo" />
         <child id="5285453794052877282" name="rhs" index="2m6DZq" />
@@ -74,10 +71,6 @@
       <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
-      <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ng" index="2m6DZR">
-        <child id="5285453794052877264" name="tpe" index="2m6DZC" />
-      </concept>
-      <concept id="5285453794052993580" name="com.mbeddr.formal.spin.structure.IntType" flags="ng" index="2m7kok" />
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
         <child id="5285453794052597019" name="statements" index="2mpP4z" />
       </concept>
@@ -91,12 +84,15 @@
         <child id="5285453794051997738" name="content" index="2mr7gi" />
       </concept>
       <concept id="3050019586772961884" name="com.mbeddr.formal.spin.structure.EmptyModelContent" flags="ng" index="2xLtbV" />
-      <concept id="3050019586773371914" name="com.mbeddr.formal.spin.structure.GlobalVariableDeclaration" flags="ng" index="2xNTiH" />
+      <concept id="3050019586773371914" name="com.mbeddr.formal.spin.structure.PromelaGlobalVariableDeclaration" flags="ng" index="2xNTiH" />
       <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
       <concept id="6377880871154154898" name="com.mbeddr.formal.spin.structure.CCode" flags="ng" index="Sp3le">
         <child id="6377880871154154899" name="body" index="Sp3lf" />
       </concept>
       <concept id="4613921340550954664" name="com.mbeddr.formal.spin.structure.ByteType" flags="ng" index="X9sYF" />
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
+        <child id="2291855968617420240" name="tpe" index="1a0DGc" />
+      </concept>
       <concept id="2291855968618360712" name="com.mbeddr.formal.spin.structure.CDecl" flags="ng" index="1a5m5k">
         <child id="2291855968618361216" name="decls" index="1a5nXs" />
       </concept>
@@ -287,7 +283,6 @@
           <node concept="2mpP4x" id="1ZejHLlPu7B" role="2mpP4J">
             <node concept="2m6DXv" id="1ZejHLlPu7Z" role="2mpP4z">
               <property role="TrG5h" value="var" />
-              <node concept="2m7kok" id="1ZejHLlPu7X" role="2m6DZC" />
               <node concept="raruj" id="1ZejHLlPwE_" role="lGtFl" />
               <node concept="17Uvod" id="1ZejHLlPwED" role="lGtFl">
                 <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -305,6 +300,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="1a0DGp" id="6fYDdj_cS$h" role="1a0DGc" />
             </node>
             <node concept="1a7Kpe" id="1ZejHLlPu8P" role="2mpP4z">
               <node concept="2m6Dwh" id="1ZejHLlPu9h" role="1a7Kpf">
@@ -504,11 +500,10 @@
           <node concept="2mpP4x" id="1ZejHLm3cV_" role="2mpP4J">
             <node concept="2m6DXv" id="1ZejHLm3kEw" role="2mpP4z">
               <property role="TrG5h" value="variableToAssign" />
-              <node concept="2m7kok" id="1ZejHLm3kEu" role="2m6DZC" />
+              <node concept="1a0DGp" id="6fYDdj_cSeG" role="1a0DGc" />
             </node>
             <node concept="2m6DXv" id="1ZejHLm3cVA" role="2mpP4z">
               <property role="TrG5h" value="var" />
-              <node concept="2m7kok" id="1ZejHLm3cVB" role="2m6DZC" />
               <node concept="raruj" id="1ZejHLm3cVC" role="lGtFl" />
               <node concept="17Uvod" id="1ZejHLm3cVD" role="lGtFl">
                 <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -526,6 +521,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="1a0DGp" id="6fYDdj_cSoI" role="1a0DGc" />
             </node>
             <node concept="1a7Kpe" id="1ZejHLm3cVK" role="2mpP4z">
               <node concept="2m6Dwh" id="1ZejHLm3cVL" role="1a7Kpf">
@@ -814,7 +810,6 @@
     <property role="TrG5h" value="harnessModuleToPromelaModel" />
     <node concept="2xNTiH" id="1ZejHLlQKph" role="2mr7gi">
       <property role="TrG5h" value="content" />
-      <node concept="2m7kok" id="1ZejHLlQKpf" role="2m6DZC" />
       <node concept="2b32R4" id="1ZejHLlQKzU" role="lGtFl">
         <node concept="3JmXsc" id="1ZejHLlQKzX" role="2P8S$">
           <node concept="3clFbS" id="1ZejHLlQKzY" role="2VODD2">
@@ -829,6 +824,7 @@
           </node>
         </node>
       </node>
+      <node concept="X9sYF" id="6fYDdj_ejmc" role="1a0DGc" />
     </node>
     <node concept="n94m4" id="1ZejHLlQGjl" role="lGtFl">
       <ref role="n9lRv" to="y6ji:1ZejHLlNgt5" resolve="HarnessModule" />
@@ -863,7 +859,6 @@
         <node concept="1a5m5k" id="1ZejHLm2nzy" role="gfFT$">
           <node concept="1a039r" id="1ZejHLm2nzI" role="1a5nXs">
             <property role="TrG5h" value="a" />
-            <node concept="1a0DGp" id="1ZejHLm2nCi" role="1a0DGc" />
             <node concept="2b32R4" id="1ZejHLm3svU" role="lGtFl">
               <node concept="3JmXsc" id="1ZejHLm3svW" role="2P8S$">
                 <node concept="3clFbS" id="1ZejHLm3svX" role="2VODD2">
@@ -878,6 +873,7 @@
                 </node>
               </node>
             </node>
+            <node concept="1a0DGp" id="1ZejHLm2nCi" role="1a0DGc" />
           </node>
         </node>
       </node>
@@ -892,7 +888,6 @@
           <node concept="2mpP4x" id="1ZejHLm2q$a" role="2mpP4J">
             <node concept="2m6DXv" id="1ZejHLm2rBs" role="2mpP4z">
               <property role="TrG5h" value="dummy" />
-              <node concept="X9sYF" id="1ZejHLm2rBq" role="2m6DZC" />
               <node concept="2b32R4" id="1ZejHLm2rIi" role="lGtFl">
                 <node concept="3JmXsc" id="1ZejHLm2rIl" role="2P8S$">
                   <node concept="3clFbS" id="1ZejHLm2rIm" role="2VODD2">
@@ -907,6 +902,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="X9sYF" id="6fYDdj_eiYp" role="1a0DGc" />
             </node>
           </node>
           <node concept="17Uvod" id="1ZejHLm2q$i" role="lGtFl">

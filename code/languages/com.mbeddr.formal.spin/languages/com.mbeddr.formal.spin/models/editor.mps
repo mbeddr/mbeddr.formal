@@ -351,7 +351,7 @@
     <node concept="3EZMnI" id="4_pH3zvfOfh" role="2wV5jI">
       <node concept="1kIj98" id="4_pH3zvfOfr" role="3EZMnx">
         <node concept="3F1sOY" id="4_pH3zvfOf$" role="1kIj9b">
-          <ref role="1NtTu8" to="o3hv:4_pH3zvgMJg" resolve="tpe" />
+          <ref role="1NtTu8" to="o3hv:1ZejHLlNdng" resolve="tpe" />
         </node>
       </node>
       <node concept="3F0A7n" id="4_pH3zvfOfK" role="3EZMnx">
@@ -371,11 +371,11 @@
   </node>
   <node concept="24kQdi" id="4_pH3zvgMHG">
     <property role="3GE5qa" value="statements" />
-    <ref role="1XX52x" to="o3hv:4_pH3zvgMHB" resolve="LocalVariableDeclaration" />
+    <ref role="1XX52x" to="o3hv:4_pH3zvgMHB" resolve="PromelaLocalVariableDeclaration" />
     <node concept="3EZMnI" id="4_pH3zvgMHI" role="2wV5jI">
       <node concept="1kIj98" id="4_pH3zvgMHS" role="3EZMnx">
         <node concept="3F1sOY" id="4_pH3zvgMI1" role="1kIj9b">
-          <ref role="1NtTu8" to="o3hv:4_pH3zvgMJg" resolve="tpe" />
+          <ref role="1NtTu8" to="o3hv:1ZejHLlNdng" resolve="tpe" />
         </node>
       </node>
       <node concept="3F0A7n" id="4_pH3zvgMI8" role="3EZMnx">
@@ -621,11 +621,11 @@
   </node>
   <node concept="24kQdi" id="2DjQaubB4KS">
     <property role="3GE5qa" value="top_level" />
-    <ref role="1XX52x" to="o3hv:2DjQaubB4Ka" resolve="GlobalVariableDeclaration" />
+    <ref role="1XX52x" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
     <node concept="3EZMnI" id="2DjQaubB4L3" role="2wV5jI">
       <node concept="1kIj98" id="2DjQaubB4L4" role="3EZMnx">
         <node concept="3F1sOY" id="2DjQaubB4L5" role="1kIj9b">
-          <ref role="1NtTu8" to="o3hv:4_pH3zvgMJg" resolve="tpe" />
+          <ref role="1NtTu8" to="o3hv:1ZejHLlNdng" resolve="tpe" />
         </node>
       </node>
       <node concept="3F0A7n" id="2DjQaubB4L6" role="3EZMnx">

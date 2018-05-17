@@ -131,7 +131,7 @@
                 <node concept="2Rf3mk" id="2DjQaubG3lV" role="2OqNvi">
                   <node concept="1xMEDy" id="2DjQaubG3lX" role="1xVPHs">
                     <node concept="chp4Y" id="2DjQaubG3se" role="ri$Ld">
-                      <ref role="cht4Q" to="o3hv:4_pH3zvgMHB" resolve="LocalVariableDeclaration" />
+                      <ref role="cht4Q" to="o3hv:4_pH3zvgMHB" resolve="PromelaLocalVariableDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -161,7 +161,7 @@
                 <node concept="2Rf3mk" id="407WgdX9X$i" role="2OqNvi">
                   <node concept="1xMEDy" id="407WgdX9X$k" role="1xVPHs">
                     <node concept="chp4Y" id="407WgdX9XEr" role="ri$Ld">
-                      <ref role="cht4Q" to="o3hv:2DjQaubB4Ka" resolve="GlobalVariableDeclaration" />
+                      <ref role="cht4Q" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
                     </node>
                   </node>
                 </node>

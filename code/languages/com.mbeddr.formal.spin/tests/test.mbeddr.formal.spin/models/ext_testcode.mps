@@ -8,7 +8,7 @@
   <registry>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
-      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.LocalVariableDeclaration" flags="ng" index="2m6DXv">
+      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv">
         <child id="5285453794052877246" name="init" index="2m6DY6" />
       </concept>
       <concept id="5285453794052877259" name="com.mbeddr.formal.spin.structure.AssignmentStatement" flags="ng" index="2m6DZN">
@@ -18,10 +18,6 @@
       <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
-      <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ng" index="2m6DZR">
-        <child id="5285453794052877264" name="tpe" index="2m6DZC" />
-      </concept>
-      <concept id="5285453794052993580" name="com.mbeddr.formal.spin.structure.IntType" flags="ng" index="2m7kok" />
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
         <child id="5285453794052597019" name="statements" index="2mpP4z" />
       </concept>
@@ -50,6 +46,10 @@
         <child id="5430620409969180566" name="exp" index="PrSZF" />
       </concept>
       <concept id="4613921340547887375" name="com.mbeddr.formal.spin.structure.TrueLiteral" flags="ng" index="WX80c" />
+      <concept id="4613921340550954664" name="com.mbeddr.formal.spin.structure.ByteType" flags="ng" index="X9sYF" />
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
+        <child id="2291855968617420240" name="tpe" index="1a0DGc" />
+      </concept>
     </language>
     <language id="bd54ef69-17ec-411b-8f49-485702e74565" name="com.mbeddr.formal.spin.ext">
       <concept id="6377880871154153670" name="com.mbeddr.formal.spin.ext.structure.LogWitnessStatement" flags="ng" index="Sp30q">
@@ -82,10 +82,10 @@
       <node concept="2mpP4x" id="1ZejHLlNaPr" role="2mpP4J">
         <node concept="2m6DXv" id="1ZejHLlNaPs" role="2mpP4z">
           <property role="TrG5h" value="aa" />
-          <node concept="2m7kok" id="1ZejHLlNaPv" role="2m6DZC" />
           <node concept="2IPVmt" id="1ZejHLlNaPw" role="2m6DY6">
             <property role="2IPVms" value="2" />
           </node>
+          <node concept="X9sYF" id="6fYDdj_dhmw" role="1a0DGc" />
         </node>
         <node concept="Sp30q" id="1ZejHLlNaPt" role="2mpP4z">
           <node concept="2m6Dwh" id="1ZejHLlNaPx" role="Sp3na">
@@ -113,10 +113,10 @@
       <node concept="2mpP4x" id="1ZejHLlNaPB" role="2mpP4J">
         <node concept="2m6DXv" id="1ZejHLlNaPC" role="2mpP4z">
           <property role="TrG5h" value="aa" />
-          <node concept="2m7kok" id="1ZejHLlNaPG" role="2m6DZC" />
           <node concept="2IPVmt" id="1ZejHLlNaPH" role="2m6DY6">
             <property role="2IPVms" value="0" />
           </node>
+          <node concept="X9sYF" id="6fYDdj_dhmW" role="1a0DGc" />
         </node>
         <node concept="2xZCSx" id="1ZejHLlNaPD" role="2mpP4z">
           <node concept="2xXWtg" id="1ZejHLlNaPI" role="2xZCTC">

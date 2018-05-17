@@ -21,7 +21,6 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -35,6 +34,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -77,28 +77,25 @@
       <ref role="PrY4T" to="o3hv:1ZejHLlNdmI" resolve="ISUVModuleContent" />
     </node>
     <node concept="PrWs8" id="1ZejHLlNdsk" role="PzmwI">
-      <ref role="PrY4T" node="1ZejHLlNdnf" resolve="ITyped" />
+      <ref role="PrY4T" to="o3hv:1ZejHLlNdnf" resolve="ITyped" />
     </node>
     <node concept="1TJgyj" id="1ZejHLlNdyO" role="1TKVEi">
       <property role="IQ2ns" value="2291855968617420980" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="params" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1ZejHLlNdmN" resolve="Parameter" />
+      <ref role="20lvS9" node="1ZejHLlNdmN" resolve="CParameterDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNdmN">
     <property role="EcuMT" value="2291855968617420211" />
-    <property role="TrG5h" value="Parameter" />
+    <property role="TrG5h" value="CParameterDeclaration" />
     <property role="34LRSv" value="param" />
-    <property role="R4oN_" value="parameter of a function" />
+    <property role="R4oN_" value="parameter of a function in C" />
     <property role="3GE5qa" value="functions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1ZejHLlNdnj" role="PzmwI">
-      <ref role="PrY4T" node="1ZejHLlNdnf" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="1ZejHLlNdnr" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="6fYDdj_bekw" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:4_pH3zvgMJf" resolve="IVariableDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNdmO">
@@ -107,15 +104,12 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1ZejHLlNdmY" role="PzmwI">
-      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
-    </node>
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="1ZejHLlNdmS">
     <property role="EcuMT" value="2291855968617420216" />
     <property role="3GE5qa" value="types.primitives" />
-    <property role="TrG5h" value="Char" />
+    <property role="TrG5h" value="CharType" />
     <property role="34LRSv" value="char" />
     <property role="R4oN_" value="char type" />
     <ref role="1TJDcQ" node="1ZejHLlNdmO" resolve="TypeBase" />
@@ -123,7 +117,7 @@
   <node concept="1TIwiD" id="1ZejHLlNdn4">
     <property role="EcuMT" value="2291855968617420228" />
     <property role="3GE5qa" value="types.primitives" />
-    <property role="TrG5h" value="Short" />
+    <property role="TrG5h" value="ShortType" />
     <property role="34LRSv" value="short" />
     <property role="R4oN_" value="short type" />
     <ref role="1TJDcQ" node="1ZejHLlNdmO" resolve="TypeBase" />
@@ -131,7 +125,7 @@
   <node concept="1TIwiD" id="1ZejHLlNdn5">
     <property role="EcuMT" value="2291855968617420229" />
     <property role="3GE5qa" value="types.primitives" />
-    <property role="TrG5h" value="Int" />
+    <property role="TrG5h" value="IntType" />
     <property role="34LRSv" value="int" />
     <property role="R4oN_" value="int type" />
     <ref role="1TJDcQ" node="1ZejHLlNdmO" resolve="TypeBase" />
@@ -139,27 +133,15 @@
   <node concept="1TIwiD" id="1ZejHLlNdn6">
     <property role="EcuMT" value="2291855968617420230" />
     <property role="3GE5qa" value="types.primitives" />
-    <property role="TrG5h" value="Double" />
+    <property role="TrG5h" value="DoubleType" />
     <property role="34LRSv" value="double" />
     <property role="R4oN_" value="double type" />
     <ref role="1TJDcQ" node="1ZejHLlNdmO" resolve="TypeBase" />
   </node>
-  <node concept="PlHQZ" id="1ZejHLlNdnf">
-    <property role="EcuMT" value="2291855968617420239" />
-    <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="ITyped" />
-    <node concept="1TJgyj" id="1ZejHLlNdng" role="1TKVEi">
-      <property role="IQ2ns" value="2291855968617420240" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tpe" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1ZejHLlNdmO" resolve="TypeBase" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1ZejHLlNdnx">
     <property role="EcuMT" value="2291855968617420257" />
     <property role="3GE5qa" value="types.primitives" />
-    <property role="TrG5h" value="Long" />
+    <property role="TrG5h" value="LongType" />
     <property role="34LRSv" value="long" />
     <property role="R4oN_" value="long type" />
     <ref role="1TJDcQ" node="1ZejHLlNdmO" resolve="TypeBase" />
@@ -187,7 +169,7 @@
   <node concept="1TIwiD" id="1ZejHLlNdyR">
     <property role="EcuMT" value="2291855968617420983" />
     <property role="3GE5qa" value="types.primitives" />
-    <property role="TrG5h" value="Void" />
+    <property role="TrG5h" value="VoidType" />
     <property role="34LRSv" value="void" />
     <property role="R4oN_" value="void type" />
     <ref role="1TJDcQ" node="1ZejHLlNdmO" resolve="TypeBase" />
@@ -202,31 +184,32 @@
   </node>
   <node concept="1TIwiD" id="1ZejHLlNBM7">
     <property role="EcuMT" value="2291855968617528455" />
-    <property role="TrG5h" value="GlobalVariableDeclaration" />
+    <property role="TrG5h" value="CGlobalVariableDeclaration" />
     <property role="34LRSv" value="global variable" />
     <property role="3GE5qa" value="variables" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1ZejHLlNBM8" role="PzmwI">
       <ref role="PrY4T" to="o3hv:1ZejHLlNdmI" resolve="ISUVModuleContent" />
     </node>
-    <node concept="PrWs8" id="1ZejHLlNBMg" role="PzmwI">
-      <ref role="PrY4T" node="1ZejHLlNdnf" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="1ZejHLlNBMt" role="PzmwI">
-      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    <node concept="PrWs8" id="6fYDdj_bekk" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:4_pH3zvgMJf" resolve="IVariableDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNDPB">
     <property role="EcuMT" value="2291855968617536871" />
     <property role="3GE5qa" value="variables" />
-    <property role="TrG5h" value="GlobalVariableReference" />
+    <property role="TrG5h" value="CGlobalVariableReference" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="1ZejHLlNDPF" role="1TKVEi">
       <property role="IQ2ns" value="2291855968617536875" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1ZejHLlNBM7" resolve="GlobalVariableDeclaration" />
+      <ref role="20lvS9" node="1ZejHLlNBM7" resolve="CGlobalVariableDeclaration" />
+      <ref role="20ksaX" to="o3hv:4_pH3zvgMJd" resolve="var" />
+    </node>
+    <node concept="PrWs8" id="6fYDdj_cUJi" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:4_pH3zvgMJc" resolve="IVariableReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlS03K">

@@ -6,6 +6,7 @@
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
+    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -63,7 +64,7 @@
   </registry>
   <node concept="WtQ9Q" id="1ZejHLlNBSR">
     <property role="3GE5qa" value="variables" />
-    <ref role="WuzLi" to="vshk:1ZejHLlNBM7" resolve="GlobalVariableDeclaration" />
+    <ref role="WuzLi" to="vshk:1ZejHLlNBM7" resolve="CGlobalVariableDeclaration" />
     <node concept="11bSqf" id="1ZejHLlNBSS" role="11c4hB">
       <node concept="3clFbS" id="1ZejHLlNBST" role="2VODD2">
         <node concept="lc7rE" id="1ZejHLlNBTc" role="3cqZAp">
@@ -71,7 +72,7 @@
             <node concept="2OqwBi" id="1ZejHLlNC5F" role="lb14g">
               <node concept="117lpO" id="1ZejHLlNBUu" role="2Oq$k0" />
               <node concept="3TrEf2" id="1ZejHLlNCuf" role="2OqNvi">
-                <ref role="3Tt5mk" to="vshk:1ZejHLlNdng" resolve="tpe" />
+                <ref role="3Tt5mk" to="o3hv:1ZejHLlNdng" resolve="tpe" />
               </node>
             </node>
           </node>
@@ -95,7 +96,7 @@
   </node>
   <node concept="WtQ9Q" id="1ZejHLlNDQP">
     <property role="3GE5qa" value="variables" />
-    <ref role="WuzLi" to="vshk:1ZejHLlNDPB" resolve="GlobalVariableReference" />
+    <ref role="WuzLi" to="vshk:1ZejHLlNDPB" resolve="CGlobalVariableReference" />
     <node concept="11bSqf" id="1ZejHLlNDQQ" role="11c4hB">
       <node concept="3clFbS" id="1ZejHLlNDQR" role="2VODD2">
         <node concept="lc7rE" id="1ZejHLlNDRd" role="3cqZAp">
@@ -103,7 +104,7 @@
             <node concept="2OqwBi" id="1ZejHLlNEVA" role="lb14g">
               <node concept="2OqwBi" id="1ZejHLlNE0F" role="2Oq$k0">
                 <node concept="117lpO" id="1ZejHLlNDSv" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1ZejHLlNEfJ" role="2OqNvi">
+                <node concept="3TrEf2" id="6fYDdj_d7Nv" role="2OqNvi">
                   <ref role="3Tt5mk" to="vshk:1ZejHLlNDPF" resolve="var" />
                 </node>
               </node>

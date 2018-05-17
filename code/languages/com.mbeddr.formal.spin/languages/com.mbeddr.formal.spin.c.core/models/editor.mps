@@ -11,6 +11,7 @@
   </languages>
   <imports>
     <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" />
+    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -116,7 +117,7 @@
     <ref role="1XX52x" to="vshk:1ZejHLlNdmJ" resolve="FunctionDeclaration" />
     <node concept="3EZMnI" id="1ZejHLlNdsP" role="2wV5jI">
       <node concept="3F1sOY" id="1ZejHLlNdsZ" role="3EZMnx">
-        <ref role="1NtTu8" to="vshk:1ZejHLlNdng" resolve="tpe" />
+        <ref role="1NtTu8" to="o3hv:1ZejHLlNdng" resolve="tpe" />
       </node>
       <node concept="3F0A7n" id="1ZejHLlNdy1" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -225,13 +226,13 @@
   </node>
   <node concept="24kQdi" id="1ZejHLlNBM_">
     <property role="3GE5qa" value="variables" />
-    <ref role="1XX52x" to="vshk:1ZejHLlNBM7" resolve="GlobalVariableDeclaration" />
+    <ref role="1XX52x" to="vshk:1ZejHLlNBM7" resolve="CGlobalVariableDeclaration" />
     <node concept="1WcQYu" id="1ZejHLlNBRb" role="2wV5jI">
       <node concept="2ElW$n" id="1ZejHLlNBRd" role="2El2Yn" />
       <node concept="3EZMnI" id="1ZejHLlNBRq" role="1LiK7o">
         <node concept="1kIj98" id="1ZejHLlNBRC" role="3EZMnx">
           <node concept="3F1sOY" id="1ZejHLlNBRK" role="1kIj9b">
-            <ref role="1NtTu8" to="vshk:1ZejHLlNdng" resolve="tpe" />
+            <ref role="1NtTu8" to="o3hv:1ZejHLlNdng" resolve="tpe" />
           </node>
         </node>
         <node concept="3F0A7n" id="1ZejHLlNBS3" role="3EZMnx">
@@ -249,11 +250,11 @@
   </node>
   <node concept="24kQdi" id="1ZejHLlNDQ7">
     <property role="3GE5qa" value="variables" />
-    <ref role="1XX52x" to="vshk:1ZejHLlNDPB" resolve="GlobalVariableReference" />
-    <node concept="1iCGBv" id="1ZejHLlNDQc" role="2wV5jI">
+    <ref role="1XX52x" to="vshk:1ZejHLlNDPB" resolve="CGlobalVariableReference" />
+    <node concept="1iCGBv" id="6fYDdj_cVqt" role="2wV5jI">
       <ref role="1NtTu8" to="vshk:1ZejHLlNDPF" resolve="var" />
-      <node concept="1sVBvm" id="1ZejHLlNDQe" role="1sWHZn">
-        <node concept="3F0A7n" id="1ZejHLlNDQo" role="2wV5jI">
+      <node concept="1sVBvm" id="6fYDdj_cVqv" role="1sWHZn">
+        <node concept="3F0A7n" id="6fYDdj_cVqH" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>

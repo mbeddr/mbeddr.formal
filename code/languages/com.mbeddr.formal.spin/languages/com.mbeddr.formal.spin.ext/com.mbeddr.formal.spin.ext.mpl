@@ -17,6 +17,7 @@
       <dependencies>
         <dependency reexport="false">b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</dependency>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+        <dependency reexport="false">ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
@@ -64,6 +65,7 @@
         <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
         <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
         <module reference="ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)" version="0" />
+        <module reference="ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)" version="0" />
         <module reference="bd54ef69-17ec-411b-8f49-485702e74565(com.mbeddr.formal.spin.ext)" version="0" />
         <module reference="034592fe-b0ce-4c85-aec0-3c11338f49ab(com.mbeddr.formal.spin.ext#3050019586772960524)" version="0" />
         <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
