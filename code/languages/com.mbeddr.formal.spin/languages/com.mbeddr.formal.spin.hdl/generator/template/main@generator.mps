@@ -118,6 +118,7 @@
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -134,9 +135,14 @@
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="1200911316486" name="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" flags="lg" index="2rT7sh">
+        <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
+        <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
+      </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
+        <reference id="1200917515464" name="labelDeclaration" index="2sgKRv" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
@@ -174,11 +180,12 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1217884725453" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetCopiedOutputByInput" flags="nn" index="2f_y7m">
-        <child id="1217884725459" name="inputNode" index="2f_y78" />
-      </concept>
       <concept id="2721957369897614808" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef" flags="nn" index="1bhEwm">
         <reference id="2721957369897614810" name="varmacro" index="1bhEwk" />
+      </concept>
+      <concept id="1216860049627" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" flags="nn" index="1iwH70">
+        <reference id="1216860049628" name="label" index="1iwH77" />
+        <child id="1216860049632" name="inputNode" index="1iwH7V" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
@@ -421,13 +428,19 @@
                       <property role="2qtEX8" value="proc" />
                       <node concept="3$xsQk" id="1ZejHLlQDKh" role="3$ytzL">
                         <node concept="3clFbS" id="1ZejHLlQDKi" role="2VODD2">
-                          <node concept="3clFbF" id="1ZejHLlQDL2" role="3cqZAp">
-                            <node concept="2OqwBi" id="1ZejHLlQEyX" role="3clFbG">
-                              <node concept="30H73N" id="1ZejHLlQEn6" role="2Oq$k0" />
-                              <node concept="2Xjw5R" id="1ZejHLlQEOv" role="2OqNvi">
-                                <node concept="1xMEDy" id="1ZejHLlQEOx" role="1xVPHs">
-                                  <node concept="chp4Y" id="1ZejHLlQEPS" role="ri$Ld">
-                                    <ref role="cht4Q" to="o3hv:4_pH3zvfIn7" resolve="ProcType" />
+                          <node concept="3clFbF" id="6fYDdj_8zZ4" role="3cqZAp">
+                            <node concept="2OqwBi" id="6fYDdj_8zZ5" role="3clFbG">
+                              <node concept="1iwH7S" id="6fYDdj_8zZ6" role="2Oq$k0" />
+                              <node concept="1iwH70" id="6fYDdj_8zZ7" role="2OqNvi">
+                                <ref role="1iwH77" node="6fYDdj_8ybc" resolve="harnessDefinition2ProcType" />
+                                <node concept="2OqwBi" id="6fYDdj_8zZ8" role="1iwH7V">
+                                  <node concept="30H73N" id="6fYDdj_8zZ9" role="2Oq$k0" />
+                                  <node concept="2Xjw5R" id="6fYDdj_8zZa" role="2OqNvi">
+                                    <node concept="1xMEDy" id="6fYDdj_8zZb" role="1xVPHs">
+                                      <node concept="chp4Y" id="6fYDdj_8zZc" role="ri$Ld">
+                                        <ref role="cht4Q" to="y6ji:1ZejHLlNYNl" resolve="HarnessDefinition" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -646,21 +659,22 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="1ZhdrF" id="1ZejHLm7gf3" role="lGtFl">
+                      <node concept="1ZhdrF" id="6fYDdj_8wxZ" role="lGtFl">
                         <property role="P3scX" value="ad8d48af-022b-40dc-8979-2b76074fb438/2291855968618030330/2291855968618030351" />
                         <property role="2qtEX8" value="proc" />
-                        <node concept="3$xsQk" id="1ZejHLm7gf4" role="3$ytzL">
-                          <node concept="3clFbS" id="1ZejHLm7gf5" role="2VODD2">
-                            <node concept="3clFbF" id="1ZejHLm7ihL" role="3cqZAp">
-                              <node concept="2OqwBi" id="1ZejHLm7is6" role="3clFbG">
-                                <node concept="1iwH7S" id="1ZejHLm7ihE" role="2Oq$k0" />
-                                <node concept="2f_y7m" id="1ZejHLm7ixy" role="2OqNvi">
-                                  <node concept="2OqwBi" id="1ZejHLm7gsB" role="2f_y78">
-                                    <node concept="30H73N" id="1ZejHLm7gh6" role="2Oq$k0" />
-                                    <node concept="2Xjw5R" id="1ZejHLm7gRw" role="2OqNvi">
-                                      <node concept="1xMEDy" id="1ZejHLm7gRy" role="1xVPHs">
-                                        <node concept="chp4Y" id="1ZejHLm7gTN" role="ri$Ld">
-                                          <ref role="cht4Q" to="o3hv:4_pH3zvfIn7" resolve="ProcType" />
+                        <node concept="3$xsQk" id="6fYDdj_8wy0" role="3$ytzL">
+                          <node concept="3clFbS" id="6fYDdj_8wy1" role="2VODD2">
+                            <node concept="3clFbF" id="6fYDdj_8wz3" role="3cqZAp">
+                              <node concept="2OqwBi" id="6fYDdj_8wSc" role="3clFbG">
+                                <node concept="1iwH7S" id="6fYDdj_8wz2" role="2Oq$k0" />
+                                <node concept="1iwH70" id="6fYDdj_8zd$" role="2OqNvi">
+                                  <ref role="1iwH77" node="6fYDdj_8ybc" resolve="harnessDefinition2ProcType" />
+                                  <node concept="2OqwBi" id="6fYDdj_8zyf" role="1iwH7V">
+                                    <node concept="30H73N" id="6fYDdj_8zoa" role="2Oq$k0" />
+                                    <node concept="2Xjw5R" id="6fYDdj_8zLp" role="2OqNvi">
+                                      <node concept="1xMEDy" id="6fYDdj_8zLr" role="1xVPHs">
+                                        <node concept="chp4Y" id="6fYDdj_8zNC" role="ri$Ld">
+                                          <ref role="cht4Q" to="y6ji:1ZejHLlNYNl" resolve="HarnessDefinition" />
                                         </node>
                                       </node>
                                     </node>
@@ -838,6 +852,11 @@
   </node>
   <node concept="bUwia" id="1ZejHLlQKRE">
     <property role="TrG5h" value="_010_topLevelModuleContent" />
+    <node concept="2rT7sh" id="6fYDdj_8ybc" role="2rTMjI">
+      <property role="TrG5h" value="harnessDefinition2ProcType" />
+      <ref role="2rTdP9" to="y6ji:1ZejHLlNYNl" resolve="HarnessDefinition" />
+      <ref role="2rZz_L" to="o3hv:4_pH3zvfIn7" resolve="ProcType" />
+    </node>
     <node concept="3aamgX" id="1ZejHLlQM_d" role="3acgRq">
       <ref role="30HIoZ" to="y6ji:1ZejHLlNguy" resolve="DeclSection" />
       <node concept="gft3U" id="1ZejHLlQMXY" role="1lVwrX">
@@ -865,6 +884,7 @@
     </node>
     <node concept="3aamgX" id="1ZejHLm2qzc" role="3acgRq">
       <ref role="30HIoZ" to="y6ji:1ZejHLlNYNl" resolve="HarnessDefinition" />
+      <ref role="2sgKRv" node="6fYDdj_8ybc" resolve="harnessDefinition2ProcType" />
       <node concept="gft3U" id="1ZejHLm2qzS" role="1lVwrX">
         <node concept="2mpP7Z" id="1ZejHLm2q$2" role="gfFT$">
           <property role="2mpCJw" value="true" />
