@@ -754,7 +754,7 @@
           </node>
           <node concept="l9S2W" id="2DjQaubCrMc" role="lcghm">
             <property role="XA4eZ" value="true" />
-            <property role="lbP0B" value="," />
+            <property role="lbP0B" value=", " />
             <node concept="2OqwBi" id="2DjQaubCrMd" role="lbANJ">
               <node concept="117lpO" id="2DjQaubCrMe" role="2Oq$k0" />
               <node concept="3Tsc0h" id="2DjQaubCrMf" role="2OqNvi">
