@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0c9c83f9-1381-4b59-8953-0675f95fbeac(main@generator)">
+<model ref="r:0c9c83f9-1381-4b59-8953-0675f95fbeac(spin_main@generator)">
   <persistence version="9" />
   <languages>
     <use id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base" version="0" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dab6a141-de92-48cd-8f26-7c440995c1ab(main@generator)">
+<model ref="r:dab6a141-de92-48cd-8f26-7c440995c1ab(spin_hdl_main@generator)">
   <persistence version="9" />
   <languages>
     <use id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base" version="0" />
@@ -300,7 +300,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="1a0DGp" id="6fYDdj_cS$h" role="1a0DGc" />
+              <node concept="X9sYF" id="5mKzygLV_dM" role="1a0DGc" />
             </node>
             <node concept="1a7Kpe" id="1ZejHLlPu8P" role="2mpP4z">
               <node concept="2m6Dwh" id="1ZejHLlPu9h" role="1a7Kpf">
@@ -500,7 +500,7 @@
           <node concept="2mpP4x" id="1ZejHLm3cV_" role="2mpP4J">
             <node concept="2m6DXv" id="1ZejHLm3kEw" role="2mpP4z">
               <property role="TrG5h" value="variableToAssign" />
-              <node concept="1a0DGp" id="6fYDdj_cSeG" role="1a0DGc" />
+              <node concept="X9sYF" id="5mKzygLV_Fd" role="1a0DGc" />
             </node>
             <node concept="2m6DXv" id="1ZejHLm3cVA" role="2mpP4z">
               <property role="TrG5h" value="var" />
@@ -521,7 +521,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="1a0DGp" id="6fYDdj_cSoI" role="1a0DGc" />
+              <node concept="X9sYF" id="5mKzygLV_vG" role="1a0DGc" />
             </node>
             <node concept="1a7Kpe" id="1ZejHLm3cVK" role="2mpP4z">
               <node concept="2m6Dwh" id="1ZejHLm3cVL" role="1a7Kpf">

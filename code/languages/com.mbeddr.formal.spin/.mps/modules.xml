@@ -8,6 +8,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.spin.ext/com.mbeddr.formal.spin.ext.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.spin.hdl/com.mbeddr.formal.spin.hdl.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.spin/com.mbeddr.formal.spin.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.spin.genplan/com.mbeddr.formal.spin.genplan.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.spin.pluginSolution/com.mbeddr.formal.spin.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.spin.sandbox/com.mbeddr.formal.spin.sandbox.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.spin/test.mbeddr.formal.spin.msd" folder="tests" />

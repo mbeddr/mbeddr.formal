@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e34309f0-322f-4819-8554-fa7a880535fa(main@generator)">
+<model ref="r:e34309f0-322f-4819-8554-fa7a880535fa(spin_analyses_main@generator)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
