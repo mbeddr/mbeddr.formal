@@ -635,5 +635,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5mKzygLVYoj">
+    <ref role="1XX52x" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="PMmxH" id="5mKzygLVYol" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="6NmtaR1SVrw" resolve="KeywordStyle" />
+    </node>
+  </node>
 </model>
 

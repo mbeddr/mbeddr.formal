@@ -540,14 +540,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="6NmtaR1SVkm">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="gioj:6NmtaR1SVkl" resolve="BooleanType" />
-    <node concept="3F0ifn" id="6NmtaR1SVqs" role="2wV5jI">
-      <property role="3F0ifm" value="boolean" />
-      <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6NmtaR1SWgn">
     <property role="3GE5qa" value="types" />
     <ref role="1XX52x" to="gioj:6NmtaR1SWfQ" resolve="EnumerationType" />
@@ -1162,14 +1154,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="7mSH3Wn5Ovv">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="gioj:7mSH3Wn5Ovu" resolve="IntegerType" />
-    <node concept="3F0ifn" id="7mSH3Wn5Ovx" role="2wV5jI">
-      <property role="3F0ifm" value="integer" />
-      <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7mSH3Wn9yWW">
     <property role="3GE5qa" value="spec" />
     <ref role="1XX52x" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
@@ -1526,6 +1510,7 @@
         <node concept="l2Vlx" id="7mSH3WnE5jz" role="2iSdaV" />
         <node concept="3F0ifn" id="7mSH3WnE6g6" role="3EZMnx">
           <property role="3F0ifm" value="signed" />
+          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
           <node concept="pkWqt" id="7mSH3WnE6ge" role="pqm2j">
             <node concept="3clFbS" id="7mSH3WnE6gf" role="2VODD2">
               <node concept="3clFbF" id="7mSH3WnE6ns" role="3cqZAp">
@@ -1541,6 +1526,7 @@
         </node>
         <node concept="3F0ifn" id="7mSH3WnE7zR" role="3EZMnx">
           <property role="3F0ifm" value="unsigned" />
+          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
           <node concept="pkWqt" id="7mSH3WnE7H$" role="pqm2j">
             <node concept="3clFbS" id="7mSH3WnE7H_" role="2VODD2">
               <node concept="3clFbF" id="7mSH3WnE7ON" role="3cqZAp">
@@ -1558,6 +1544,7 @@
         </node>
         <node concept="3F0ifn" id="7mSH3WnE9nm" role="3EZMnx">
           <property role="3F0ifm" value="word" />
+          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0ifn" id="7mSH3WnE9GO" role="3EZMnx">
           <property role="3F0ifm" value="[" />
