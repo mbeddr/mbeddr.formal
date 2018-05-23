@@ -8,7 +8,6 @@
   <imports>
     <import index="y6ji" ref="r:8ddb424f-ead9-4d6e-9e90-7a7d026ff9c2(com.mbeddr.formal.spin.hdl.structure)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
-    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="3fe0" ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -128,6 +127,7 @@
         </node>
         <node concept="3F0ifn" id="1ZejHLlNgvW" role="3EZMnx">
           <property role="3F0ifm" value="decl" />
+          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0ifn" id="1ZejHLlNgw5" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -219,6 +219,7 @@
         </node>
         <node concept="3F0ifn" id="1ZejHLlNYZs" role="3EZMnx">
           <property role="3F0ifm" value="harness" />
+          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0A7n" id="1ZejHLlNYZF" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -285,6 +286,7 @@
     <node concept="3EZMnI" id="1ZejHLlO7$p" role="2wV5jI">
       <node concept="3F0ifn" id="1ZejHLlO7$z" role="3EZMnx">
         <property role="3F0ifm" value="nondet_assign" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="1ZejHLlO7$G" role="3EZMnx">
         <property role="3F0ifm" value="(" />

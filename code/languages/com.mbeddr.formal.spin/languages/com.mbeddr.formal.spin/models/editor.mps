@@ -467,14 +467,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="4_pH3zvhf8H">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="o3hv:4_pH3zvhf8G" resolve="IntType" />
-    <node concept="3F0ifn" id="4_pH3zvhf8J" role="2wV5jI">
-      <property role="3F0ifm" value="int" />
-      <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4_pH3zvi8Kg">
     <property role="3GE5qa" value="expressions.literals" />
     <ref role="1XX52x" to="o3hv:4_pH3zvi8Kd" resolve="StringLiteral" />
@@ -667,13 +659,6 @@
       <node concept="l2Vlx" id="2DjQaubB4Lf" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="2DjQaubBFMn">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="o3hv:2DjQaubBFMj" resolve="MtypeType" />
-    <node concept="3F0ifn" id="2DjQaubBFMp" role="2wV5jI">
-      <property role="3F0ifm" value="mtype" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2DjQaubCrKK">
     <property role="3GE5qa" value="c.statements" />
     <ref role="1XX52x" to="o3hv:2DjQaubCrKG" resolve="PrintfCStatement" />
@@ -760,6 +745,7 @@
       </node>
       <node concept="3F0ifn" id="2DjQaubD47X" role="3EZMnx">
         <property role="3F0ifm" value="else" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="2DjQaubD48l" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
@@ -776,6 +762,7 @@
     <node concept="3EZMnI" id="2DjQaubEBx9" role="2wV5jI">
       <node concept="3F0ifn" id="2DjQaubEBxj" role="3EZMnx">
         <property role="3F0ifm" value="do" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3EZMnI" id="2DjQaubEBxs" role="3EZMnx">
         <node concept="VPM3Z" id="2DjQaubEBxu" role="3F10Kt">
@@ -794,6 +781,7 @@
       <node concept="2iRkQZ" id="2DjQaubEBxc" role="2iSdaV" />
       <node concept="3F0ifn" id="2DjQaubEBy8" role="3EZMnx">
         <property role="3F0ifm" value="od;" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
     </node>
   </node>
@@ -862,6 +850,7 @@
     <node concept="3EZMnI" id="407WgdX3YF$" role="2wV5jI">
       <node concept="3F0ifn" id="407WgdX3YFF" role="3EZMnx">
         <property role="3F0ifm" value="goto" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="1iCGBv" id="407WgdX3YFL" role="3EZMnx">
         <ref role="1NtTu8" to="o3hv:407WgdX3YAf" resolve="label" />
@@ -879,13 +868,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="407WgdX8zUG">
-    <property role="3GE5qa" value="types" />
-    <ref role="1XX52x" to="o3hv:407WgdX8zUC" resolve="ByteType" />
-    <node concept="3F0ifn" id="407WgdX8zUI" role="2wV5jI">
-      <property role="3F0ifm" value="byte" />
     </node>
   </node>
   <node concept="24kQdi" id="407WgdX9WoD">
@@ -1088,6 +1070,7 @@
     <node concept="3EZMnI" id="5y2MdLwTJQ_" role="2wV5jI">
       <node concept="3F0ifn" id="5y2MdLwTJQJ" role="3EZMnx">
         <property role="3F0ifm" value="c_code" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F1sOY" id="5y2MdLwTJQS" role="3EZMnx">
         <ref role="1NtTu8" to="o3hv:5y2MdLwTJQj" resolve="body" />
@@ -1100,6 +1083,7 @@
     <ref role="1XX52x" to="o3hv:1ZejHLlJMGA" resolve="SkipStatement" />
     <node concept="3F0ifn" id="1ZejHLlJMHg" role="2wV5jI">
       <property role="3F0ifm" value="skip;" />
+      <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
   <node concept="24kQdi" id="1ZejHLlKNJo">
@@ -1124,6 +1108,7 @@
     <node concept="3EZMnI" id="1ZejHLlOkyE" role="2wV5jI">
       <node concept="3F0ifn" id="1ZejHLlOkyR" role="3EZMnx">
         <property role="3F0ifm" value="select" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="1ZejHLlOkz3" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1218,6 +1203,7 @@
         </node>
         <node concept="3F0ifn" id="1ZejHLlQMYJ" role="3EZMnx">
           <property role="3F0ifm" value="c_decl" />
+          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0ifn" id="1ZejHLlQMYV" role="3EZMnx">
           <property role="3F0ifm" value="{" />
