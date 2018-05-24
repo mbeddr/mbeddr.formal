@@ -41,5 +41,12 @@
       <node concept="3clFbS" id="1ZejHLm3r5K" role="2VODD2" />
     </node>
   </node>
+  <node concept="WtQ9Q" id="5mKzygM6Mk7">
+    <property role="3GE5qa" value="decl" />
+    <ref role="WuzLi" to="y6ji:1ZejHLlNgu$" resolve="EmptyDeclaration" />
+    <node concept="11bSqf" id="5mKzygM6Mk8" role="11c4hB">
+      <node concept="3clFbS" id="5mKzygM6Mk9" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

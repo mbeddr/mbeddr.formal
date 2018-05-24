@@ -60,6 +60,9 @@
       </concept>
       <concept id="2291855968617528455" name="com.mbeddr.formal.spin.c.core.structure.CGlobalVariableDeclaration" flags="ng" index="1a039r" />
       <concept id="2291855968617420229" name="com.mbeddr.formal.spin.c.core.structure.IntType" flags="ng" index="1a0DGp" />
+      <concept id="6174591375235044138" name="com.mbeddr.formal.spin.c.core.structure.ExpressionStatement" flags="ng" index="1BCXOe">
+        <child id="6174591375235044142" name="expression" index="1BCXOa" />
+      </concept>
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
@@ -189,6 +192,9 @@
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
+        <property id="7320199582618415059" name="value" index="ru7PJ" />
+      </concept>
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
@@ -999,6 +1005,67 @@
                 </node>
               </node>
               <node concept="raruj" id="1ZejHLm3Rng" role="lGtFl" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="bUwia" id="5mKzygM5PC7">
+    <property role="TrG5h" value="_050_statements" />
+    <node concept="3aamgX" id="5mKzygM5PC8" role="3acgRq">
+      <ref role="30HIoZ" to="y6ji:5mKzygM5Pee" resolve="StatementContent" />
+      <node concept="gft3U" id="5mKzygM5PCe" role="1lVwrX">
+        <node concept="Sp3le" id="5mKzygM6TQg" role="gfFT$">
+          <node concept="2mpP4x" id="5mKzygM6TQh" role="Sp3lf">
+            <node concept="1BCXOe" id="5mKzygM6TQy" role="2mpP4z">
+              <node concept="2IPVmt" id="5mKzygM6TQI" role="1BCXOa">
+                <property role="2IPVms" value="0" />
+              </node>
+              <node concept="29HgVG" id="5mKzygM6TQM" role="lGtFl">
+                <node concept="3NFfHV" id="5mKzygM6TQN" role="3NFExx">
+                  <node concept="3clFbS" id="5mKzygM6TQO" role="2VODD2">
+                    <node concept="3clFbF" id="5mKzygM6TQU" role="3cqZAp">
+                      <node concept="2OqwBi" id="5mKzygM6TQP" role="3clFbG">
+                        <node concept="3TrEf2" id="5mKzygM6TQS" role="2OqNvi">
+                          <ref role="3Tt5mk" to="y6ji:5mKzygM5Pel" resolve="stmt" />
+                        </node>
+                        <node concept="30H73N" id="5mKzygM6TQT" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5mKzygM6uGc" role="3acgRq">
+      <ref role="30HIoZ" to="y6ji:5mKzygM6uiu" resolve="ArbitraryContentLine" />
+      <node concept="gft3U" id="5mKzygM6uGA" role="1lVwrX">
+        <node concept="Sp3le" id="5mKzygM6uGI" role="gfFT$">
+          <node concept="2mpP4x" id="5mKzygM6uGJ" role="Sp3lf">
+            <node concept="1BCXOe" id="5mKzygM6uH$" role="2mpP4z">
+              <node concept="ru7O1" id="5mKzygM6uHx" role="1BCXOa">
+                <property role="ru7PJ" value="some text" />
+                <node concept="17Uvod" id="5mKzygM6uHD" role="lGtFl">
+                  <property role="P4ACc" value="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f/7320199582618415037/7320199582618415059" />
+                  <property role="2qtEX9" value="value" />
+                  <node concept="3zFVjK" id="5mKzygM6uHE" role="3zH0cK">
+                    <node concept="3clFbS" id="5mKzygM6uHF" role="2VODD2">
+                      <node concept="3clFbF" id="5mKzygM6uQ8" role="3cqZAp">
+                        <node concept="2OqwBi" id="5mKzygM6v3J" role="3clFbG">
+                          <node concept="30H73N" id="5mKzygM6uQ7" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="5mKzygM6vq1" role="2OqNvi">
+                            <ref role="3TsBF5" to="y6ji:5mKzygM6uiR" resolve="text" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

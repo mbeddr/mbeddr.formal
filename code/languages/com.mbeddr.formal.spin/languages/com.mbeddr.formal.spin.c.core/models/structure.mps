@@ -161,7 +161,7 @@
     <property role="EcuMT" value="2291855968617420258" />
     <property role="TrG5h" value="FunctionCall" />
     <property role="3GE5qa" value="expressions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="1ZejHLlNdnA" role="1TKVEi">
       <property role="IQ2ns" value="2291855968617420262" />
       <property role="20lmBu" value="aggregation" />
