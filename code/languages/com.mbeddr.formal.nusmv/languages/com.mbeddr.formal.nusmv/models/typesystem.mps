@@ -472,5 +472,62 @@
       <ref role="1YaFvo" to="gioj:7mSH3WnacGx" resolve="VarRef" />
     </node>
   </node>
+  <node concept="1YbPZF" id="2QnUwHmQXx5">
+    <property role="TrG5h" value="typeof_IDefinitionLike" />
+    <property role="3GE5qa" value="define" />
+    <node concept="3clFbS" id="2QnUwHmQXx6" role="18ibNy">
+      <node concept="1Z5TYs" id="2QnUwHmQXNf" role="3cqZAp">
+        <node concept="mw_s8" id="2QnUwHmSKtW" role="1ZfhKB">
+          <node concept="2pJPEk" id="2QnUwHmSKtM" role="mwGJk">
+            <node concept="2pJPED" id="2QnUwHmSKu7" role="2pJPEn">
+              <ref role="2pJxaS" to="gioj:2QnUwHmQXNv" resolve="TopType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2QnUwHmQXNi" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2QnUwHmQXxc" role="mwGJk">
+            <node concept="1YBJjd" id="2QnUwHmQXyW" role="1Z2MuG">
+              <ref role="1YBMHb" node="2QnUwHmQXx8" resolve="iDefinitionLike" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2QnUwHmQXx8" role="1YuTPh">
+      <property role="TrG5h" value="iDefinitionLike" />
+      <ref role="1YaFvo" to="gioj:2mjHtwTGt9x" resolve="IDefinitionLike" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2QnUwHmSLQK">
+    <property role="TrG5h" value="typeof_IDefinitionLikeRef" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <node concept="3clFbS" id="2QnUwHmSLQL" role="18ibNy">
+      <node concept="1Z5TYs" id="2QnUwHmSM7n" role="3cqZAp">
+        <node concept="mw_s8" id="2QnUwHmSM7F" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2QnUwHmSM7B" role="mwGJk">
+            <node concept="2OqwBi" id="2QnUwHmSMfF" role="1Z2MuG">
+              <node concept="1YBJjd" id="2QnUwHmSM7W" role="2Oq$k0">
+                <ref role="1YBMHb" node="2QnUwHmSLQN" resolve="iDefinitionLikeRef" />
+              </node>
+              <node concept="3TrEf2" id="2QnUwHmSMmN" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:2mjHtwTKxtS" resolve="definitionLike" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2QnUwHmSM7q" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2QnUwHmSLQR" role="mwGJk">
+            <node concept="1YBJjd" id="2QnUwHmSLSB" role="1Z2MuG">
+              <ref role="1YBMHb" node="2QnUwHmSLQN" resolve="iDefinitionLikeRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2QnUwHmSLQN" role="1YuTPh">
+      <property role="TrG5h" value="iDefinitionLikeRef" />
+      <ref role="1YaFvo" to="gioj:2mjHtwTKxtR" resolve="IDefinitionLikeRef" />
+    </node>
+  </node>
 </model>
 
