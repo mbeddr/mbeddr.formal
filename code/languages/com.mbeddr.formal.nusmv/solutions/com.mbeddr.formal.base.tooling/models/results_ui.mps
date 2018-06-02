@@ -23,9 +23,9 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="v4mk" ref="692c2a6d-09c5-40f7-98f0-1f4b59860c1b/java:org.jdesktop.swingx(com.mbeddr.formal.nusmv.pluginSolution/)" />
-    <import index="7tm6" ref="692c2a6d-09c5-40f7-98f0-1f4b59860c1b/java:org.jdesktop.swingx.treetable(com.mbeddr.formal.nusmv.pluginSolution/)" />
-    <import index="iqf9" ref="692c2a6d-09c5-40f7-98f0-1f4b59860c1b/java:org.jdesktop.swingx.renderer(com.mbeddr.formal.nusmv.pluginSolution/)" />
+    <import index="iqf9" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx.renderer(com.mbeddr.formal.base.tooling/)" />
+    <import index="v4mk" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx(com.mbeddr.formal.base.tooling/)" />
+    <import index="7tm6" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx.treetable(com.mbeddr.formal.base.tooling/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -927,7 +927,7 @@
     <property role="TrG5h" value="AnalysesResultsCellRenderer" />
     <property role="3GE5qa" value="analyses_results" />
     <node concept="3Tm1VV" id="12KLbTgpYCk" role="1B3o_S" />
-    <node concept="3uibUv" id="6_AAcCLjilY" role="1zkMxy">
+    <node concept="3uibUv" id="7rbrGoUWcpU" role="1zkMxy">
       <ref role="3uigEE" to="iqf9:~AbstractRenderer" resolve="AbstractRenderer" />
     </node>
     <node concept="2tJIrI" id="12GRGX_9Qag" role="jymVt" />
@@ -955,7 +955,7 @@
         <node concept="3cpWs8" id="7Bf6Ux7TKiN" role="3cqZAp">
           <node concept="3cpWsn" id="7Bf6Ux7TKiO" role="3cpWs9">
             <property role="TrG5h" value="cellContext" />
-            <node concept="3uibUv" id="6_AAcCLjF_I" role="1tU5fm">
+            <node concept="3uibUv" id="7rbrGoUWmMn" role="1tU5fm">
               <ref role="3uigEE" to="iqf9:~TableCellContext" resolve="TableCellContext" />
             </node>
             <node concept="2ShNRf" id="7Bf6Ux7TLTt" role="33vP2m">
@@ -1007,7 +1007,7 @@
               <ref role="3uigEE" to="z60i:~Component" resolve="Component" />
             </node>
             <node concept="2OqwBi" id="7Bf6Ux7TFi9" role="33vP2m">
-              <node concept="37vLTw" id="6_AAcCLk7I6" role="2Oq$k0">
+              <node concept="37vLTw" id="7rbrGoUWo1s" role="2Oq$k0">
                 <ref role="3cqZAo" to="iqf9:~AbstractRenderer.componentController" resolve="componentController" />
               </node>
               <node concept="liA8E" id="7LklpYzRSMC" role="2OqNvi">
@@ -1991,10 +1991,10 @@
       <node concept="3cqZAl" id="4wNvmgrbe79" role="3clF45" />
       <node concept="3Tm1VV" id="4wNvmgrbe7a" role="1B3o_S" />
       <node concept="3clFbS" id="4wNvmgrbe7b" role="3clF47">
-        <node concept="XkiVB" id="7LklpYzS7Tr" role="3cqZAp">
+        <node concept="XkiVB" id="7rbrGoV9Tke" role="3cqZAp">
           <ref role="37wK5l" to="v4mk:~JXTreeTable.&lt;init&gt;(org.jdesktop.swingx.treetable.TreeTableModel)" resolve="JXTreeTable" />
-          <node concept="2ShNRf" id="7LklpYzS9EX" role="37wK5m">
-            <node concept="1pGfFk" id="7LklpYzScM4" role="2ShVmc">
+          <node concept="2ShNRf" id="7rbrGoV9UAW" role="37wK5m">
+            <node concept="1pGfFk" id="7rbrGoV9UAX" role="2ShVmc">
               <ref role="37wK5l" node="4wNvmgrdVsF" resolve="AnalysesResultsTreeTableModel" />
             </node>
           </node>
@@ -2612,7 +2612,7 @@
     </node>
     <node concept="2tJIrI" id="5PkarIFVzpW" role="jymVt" />
     <node concept="3Tm1VV" id="4wNvmgr9OM7" role="1B3o_S" />
-    <node concept="3uibUv" id="6_AAcCLd4td" role="1zkMxy">
+    <node concept="3uibUv" id="7rbrGoUWulK" role="1zkMxy">
       <ref role="3uigEE" to="v4mk:~JXTreeTable" resolve="JXTreeTable" />
     </node>
     <node concept="16euLQ" id="TJrbIN5lMq" role="16eVyc">
@@ -2853,10 +2853,10 @@
       <node concept="3cqZAl" id="4wNvmgrdVsH" role="3clF45" />
       <node concept="3Tm1VV" id="4wNvmgrdVsI" role="1B3o_S" />
       <node concept="3clFbS" id="4wNvmgrdVsJ" role="3clF47">
-        <node concept="XkiVB" id="7LklpYzSUjM" role="3cqZAp">
+        <node concept="XkiVB" id="7rbrGoVa0JA" role="3cqZAp">
           <ref role="37wK5l" to="7tm6:~AbstractTreeTableModel.&lt;init&gt;(java.lang.Object)" resolve="AbstractTreeTableModel" />
-          <node concept="2ShNRf" id="7LklpYzSURN" role="37wK5m">
-            <node concept="1pGfFk" id="7LklpYzSVWH" role="2ShVmc">
+          <node concept="2ShNRf" id="7rbrGoVa1iP" role="37wK5m">
+            <node concept="1pGfFk" id="7rbrGoVa3vS" role="2ShVmc">
               <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
             </node>
           </node>
@@ -4758,7 +4758,7 @@
         </node>
       </node>
     </node>
-    <node concept="3uibUv" id="6_AAcCLdaUQ" role="1zkMxy">
+    <node concept="3uibUv" id="7rbrGoUWATu" role="1zkMxy">
       <ref role="3uigEE" to="7tm6:~AbstractTreeTableModel" resolve="AbstractTreeTableModel" />
     </node>
     <node concept="16euLQ" id="TJrbIN5tPs" role="16eVyc">
