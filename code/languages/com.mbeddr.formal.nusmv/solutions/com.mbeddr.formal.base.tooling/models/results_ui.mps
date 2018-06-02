@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
@@ -19,13 +19,13 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c9r8" ref="r:7a0d71dd-b922-4116-87c2-af6c95c3f7c3(com.mbeddr.formal.base.tooling.results_model)" />
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" />
-    <import index="iqf9" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx.renderer(com.mbeddr.formal.base.tooling/)" />
-    <import index="v4mk" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx(com.mbeddr.formal.base.tooling/)" />
-    <import index="7tm6" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx.treetable(com.mbeddr.formal.base.tooling/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="v4mk" ref="692c2a6d-09c5-40f7-98f0-1f4b59860c1b/java:org.jdesktop.swingx(com.mbeddr.formal.nusmv.pluginSolution/)" />
+    <import index="7tm6" ref="692c2a6d-09c5-40f7-98f0-1f4b59860c1b/java:org.jdesktop.swingx.treetable(com.mbeddr.formal.nusmv.pluginSolution/)" />
+    <import index="iqf9" ref="692c2a6d-09c5-40f7-98f0-1f4b59860c1b/java:org.jdesktop.swingx.renderer(com.mbeddr.formal.nusmv.pluginSolution/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -927,7 +927,7 @@
     <property role="TrG5h" value="AnalysesResultsCellRenderer" />
     <property role="3GE5qa" value="analyses_results" />
     <node concept="3Tm1VV" id="12KLbTgpYCk" role="1B3o_S" />
-    <node concept="3uibUv" id="7LklpYzPrJJ" role="1zkMxy">
+    <node concept="3uibUv" id="6_AAcCLjilY" role="1zkMxy">
       <ref role="3uigEE" to="iqf9:~AbstractRenderer" resolve="AbstractRenderer" />
     </node>
     <node concept="2tJIrI" id="12GRGX_9Qag" role="jymVt" />
@@ -938,8 +938,8 @@
         <node concept="XkiVB" id="7LklpYzRVC_" role="3cqZAp">
           <ref role="37wK5l" to="iqf9:~AbstractRenderer.&lt;init&gt;(org.jdesktop.swingx.renderer.ComponentProvider)" resolve="AbstractRenderer" />
           <node concept="2ShNRf" id="7LklpYzRVY3" role="37wK5m">
-            <node concept="1pGfFk" id="7LklpYzRX9_" role="2ShVmc">
-              <ref role="37wK5l" to="iqf9:~LabelProvider.&lt;init&gt;()" resolve="LabelProvider" />
+            <node concept="HV5vD" id="6_AAcCLjiq7" role="2ShVmc">
+              <ref role="HV5vE" to="iqf9:~LabelProvider" resolve="LabelProvider" />
             </node>
           </node>
         </node>
@@ -955,12 +955,12 @@
         <node concept="3cpWs8" id="7Bf6Ux7TKiN" role="3cqZAp">
           <node concept="3cpWsn" id="7Bf6Ux7TKiO" role="3cpWs9">
             <property role="TrG5h" value="cellContext" />
-            <node concept="3uibUv" id="7LklpYzPtoQ" role="1tU5fm">
+            <node concept="3uibUv" id="6_AAcCLjF_I" role="1tU5fm">
               <ref role="3uigEE" to="iqf9:~TableCellContext" resolve="TableCellContext" />
             </node>
             <node concept="2ShNRf" id="7Bf6Ux7TLTt" role="33vP2m">
-              <node concept="1pGfFk" id="7LklpYzPwzM" role="2ShVmc">
-                <ref role="37wK5l" to="iqf9:~TableCellContext.&lt;init&gt;()" resolve="TableCellContext" />
+              <node concept="HV5vD" id="6_AAcCLjiq3" role="2ShVmc">
+                <ref role="HV5vE" to="iqf9:~TableCellContext" resolve="TableCellContext" />
               </node>
             </node>
           </node>
@@ -1007,7 +1007,7 @@
               <ref role="3uigEE" to="z60i:~Component" resolve="Component" />
             </node>
             <node concept="2OqwBi" id="7Bf6Ux7TFi9" role="33vP2m">
-              <node concept="37vLTw" id="7LklpYzR_IE" role="2Oq$k0">
+              <node concept="37vLTw" id="6_AAcCLk7I6" role="2Oq$k0">
                 <ref role="3cqZAo" to="iqf9:~AbstractRenderer.componentController" resolve="componentController" />
               </node>
               <node concept="liA8E" id="7LklpYzRSMC" role="2OqNvi">
@@ -1543,8 +1543,8 @@
       <node concept="3clFbS" id="7Bf6Ux7Tz9n" role="3clF47">
         <node concept="3clFbF" id="7Bf6Ux7T$Jq" role="3cqZAp">
           <node concept="2ShNRf" id="7Bf6Ux7T$Jo" role="3clFbG">
-            <node concept="1pGfFk" id="7LklpYzRKRW" role="2ShVmc">
-              <ref role="37wK5l" to="iqf9:~LabelProvider.&lt;init&gt;()" resolve="LabelProvider" />
+            <node concept="HV5vD" id="6_AAcCLjiq5" role="2ShVmc">
+              <ref role="HV5vE" to="iqf9:~LabelProvider" resolve="LabelProvider" />
             </node>
           </node>
         </node>
@@ -2612,7 +2612,7 @@
     </node>
     <node concept="2tJIrI" id="5PkarIFVzpW" role="jymVt" />
     <node concept="3Tm1VV" id="4wNvmgr9OM7" role="1B3o_S" />
-    <node concept="3uibUv" id="7LklpYzS1bL" role="1zkMxy">
+    <node concept="3uibUv" id="6_AAcCLd4td" role="1zkMxy">
       <ref role="3uigEE" to="v4mk:~JXTreeTable" resolve="JXTreeTable" />
     </node>
     <node concept="16euLQ" id="TJrbIN5lMq" role="16eVyc">
@@ -4758,7 +4758,7 @@
         </node>
       </node>
     </node>
-    <node concept="3uibUv" id="7LklpYzSR3S" role="1zkMxy">
+    <node concept="3uibUv" id="6_AAcCLdaUQ" role="1zkMxy">
       <ref role="3uigEE" to="7tm6:~AbstractTreeTableModel" resolve="AbstractTreeTableModel" />
     </node>
     <node concept="16euLQ" id="TJrbIN5tPs" role="16eVyc">

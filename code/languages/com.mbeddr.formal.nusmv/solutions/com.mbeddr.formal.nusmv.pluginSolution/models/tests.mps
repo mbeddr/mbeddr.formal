@@ -2,8 +2,8 @@
 <model ref="r:c81d99d9-842f-4ea8-b4f3-8f7f171b410f(com.mbeddr.formal.nusmv.pluginSolution.tests)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
   </languages>
   <imports>
@@ -157,7 +157,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="3UuTDIOHsRx" role="1B3o_S" />
       <node concept="3Tqbb2" id="3UuTDIOHsRy" role="1tU5fm">
-        <ref role="ehGHo" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
+        <ref role="ehGHo" to="gioj:2mjHtwTGt9x" resolve="IDefinitionLike" />
       </node>
     </node>
     <node concept="312cEg" id="3UuTDIOHuoo" role="jymVt">
@@ -247,7 +247,7 @@
       <node concept="37vLTG" id="3UuTDIOHsn0" role="3clF46">
         <property role="TrG5h" value="def" />
         <node concept="3Tqbb2" id="3UuTDIOHsmZ" role="1tU5fm">
-          <ref role="ehGHo" to="gioj:2mjHtwTGt9x" resolve="IDefineLike" />
+          <ref role="ehGHo" to="gioj:2mjHtwTGt9x" resolve="IDefinitionLike" />
         </node>
       </node>
       <node concept="37vLTG" id="3UuTDIOHso1" role="3clF46">
