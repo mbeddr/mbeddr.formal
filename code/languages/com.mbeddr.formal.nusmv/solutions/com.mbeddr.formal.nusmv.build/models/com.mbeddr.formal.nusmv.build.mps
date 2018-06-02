@@ -337,7 +337,7 @@
     <node concept="2kB4xC" id="42jqVeFkUte" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="42jqVeFkUtf" role="aVJcv">
-        <property role="hHN3Y" value="20180406" />
+        <property role="hHN3Y" value="20180602" />
       </node>
     </node>
     <node concept="2kB4xC" id="42jqVeFkUtg" role="1l3spd">
@@ -408,7 +408,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2018-04-06" />
+            <property role="3MwjfP" value="2018-06-02" />
           </node>
         </node>
       </node>
@@ -619,6 +619,18 @@
           </node>
           <node concept="3LWZYq" id="407WgdX61le" role="1juEy9">
             <property role="3LWZYl" value="**/de.itemis.mps.editor.diagram/lib/libavoid/linux64/**" />
+          </node>
+          <node concept="3LWZYq" id="2QnUwHmUCTT" role="1juEy9">
+            <property role="3LWZYl" value="**/lib/emma/**" />
+          </node>
+          <node concept="3LWZYq" id="2QnUwHmUF9P" role="1juEy9">
+            <property role="3LWZYl" value="**/lib/jung/**" />
+          </node>
+          <node concept="3LWZYq" id="2QnUwHmUFF9" role="1juEy9">
+            <property role="3LWZYl" value="**/lib/jfreechart/**" />
+          </node>
+          <node concept="3LWZYq" id="2QnUwHmUGHE" role="1juEy9">
+            <property role="3LWZYl" value="**/lib/plantuml/**" />
           </node>
         </node>
         <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">

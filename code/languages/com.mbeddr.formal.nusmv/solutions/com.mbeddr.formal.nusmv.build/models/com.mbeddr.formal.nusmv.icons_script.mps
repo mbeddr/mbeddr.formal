@@ -970,15 +970,52 @@
                                 </node>
                                 <node concept="3clFbJ" id="17WoWxlCGfg" role="3cqZAp">
                                   <node concept="3clFbS" id="17WoWxlCGfi" role="3clFbx">
-                                    <node concept="3clFbF" id="2ShgyhegGyg" role="3cqZAp">
-                                      <node concept="2OqwBi" id="2ShgyhegGyh" role="3clFbG">
-                                        <node concept="37vLTw" id="2ShgyhegGyi" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2ShgyhegGxY" resolve="prefix" />
+                                    <node concept="3clFbJ" id="2QnUwHmVg7S" role="3cqZAp">
+                                      <node concept="3clFbS" id="2QnUwHmVg7U" role="3clFbx">
+                                        <node concept="3SKdUt" id="2QnUwHmVpkO" role="3cqZAp">
+                                          <node concept="3SKdUq" id="2QnUwHmVpkQ" role="3SKWNk">
+                                            <property role="3SKdUp" value="the icons for the simulation bar should go in the editor folder for class files ..." />
+                                          </node>
                                         </node>
-                                        <node concept="liA8E" id="2ShgyhegGyj" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
-                                          <node concept="Xl_RD" id="2ShgyhegGyk" role="37wK5m">
-                                            <property role="Xl_RC" value="structure" />
+                                        <node concept="3clFbF" id="2QnUwHmVlIt" role="3cqZAp">
+                                          <node concept="2OqwBi" id="2QnUwHmVlNo" role="3clFbG">
+                                            <node concept="37vLTw" id="2QnUwHmVlIr" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="2ShgyhegGxY" resolve="prefix" />
+                                            </node>
+                                            <node concept="liA8E" id="2QnUwHmVmcE" role="2OqNvi">
+                                              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                                              <node concept="Xl_RD" id="2QnUwHmVmww" role="37wK5m">
+                                                <property role="Xl_RC" value="editor" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="2OqwBi" id="2QnUwHmVgVT" role="3clFbw">
+                                        <node concept="37vLTw" id="2QnUwHmVgvY" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="2ShgyhegGwQ" resolve="path_language" />
+                                        </node>
+                                        <node concept="liA8E" id="2QnUwHmVhih" role="2OqNvi">
+                                          <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                          <node concept="Xl_RD" id="2QnUwHmViN8" role="37wK5m">
+                                            <property role="Xl_RC" value="com.mbeddr.formal.base" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="9aQIb" id="2QnUwHmVo7I" role="9aQIa">
+                                        <node concept="3clFbS" id="2QnUwHmVo7J" role="9aQI4">
+                                          <node concept="3clFbF" id="2ShgyhegGyg" role="3cqZAp">
+                                            <node concept="2OqwBi" id="2ShgyhegGyh" role="3clFbG">
+                                              <node concept="37vLTw" id="2ShgyhegGyi" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2ShgyhegGxY" resolve="prefix" />
+                                              </node>
+                                              <node concept="liA8E" id="2ShgyhegGyj" role="2OqNvi">
+                                                <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                                                <node concept="Xl_RD" id="2ShgyhegGyk" role="37wK5m">
+                                                  <property role="Xl_RC" value="structure" />
+                                                </node>
+                                              </node>
+                                            </node>
                                           </node>
                                         </node>
                                       </node>
