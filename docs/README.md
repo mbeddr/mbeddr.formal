@@ -1,9 +1,11 @@
-#### FASTEN: Formal Specification Environment
+## FASTEN: Formal Specification Environment
 
 [Overview](#overview)  
+
 [Download](#download) 
+
 [NuSMV Integration](#nusmv_integration)
-- [Base Language](#nusmv_base_language)
+* [Base Language](#nusmv_base_language)
 
 
 <a name="overview"/>
