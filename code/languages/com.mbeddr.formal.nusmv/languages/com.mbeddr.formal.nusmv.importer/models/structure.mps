@@ -55,8 +55,8 @@
       <property role="IQ2ns" value="6764709544689916248" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fileToImport" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="68mc:1jw2PJJHS3i" resolve="FileSystemFilePicker" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
     </node>
     <node concept="1TJgyi" id="6MHhKT2WJTB" role="1TKVEl">
       <property role="IQ2nx" value="7830993453645495911" />

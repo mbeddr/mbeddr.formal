@@ -22,7 +22,7 @@
   </registry>
   <node concept="Q3Guq" id="5uReZOjIVyE">
     <node concept="3VlSI9" id="5uReZOjIXfY" role="Q3GC_">
-      <property role="3N1Lgt" value="C:/Users/z003s2zy.AD001/Desktop/pci3p.smv" />
+      <property role="3N1Lgt" value="d:/tmp/pci3p.smv" />
     </node>
   </node>
 </model>

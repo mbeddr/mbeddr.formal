@@ -2,8 +2,8 @@
 <model ref="r:05f86b9b-63c3-4ff9-a22b-af6fdd8e5519(com.mbeddr.formal.nusmv.importer.rt.importer)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -279,6 +279,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -314,6 +315,7 @@
   </registry>
   <node concept="312cEu" id="63Mqfg9ORDV">
     <property role="TrG5h" value="NuSMVParser" />
+    <property role="3GE5qa" value="parser" />
     <node concept="2tJIrI" id="5Yu7EhkmFEC" role="jymVt" />
     <node concept="3clFb_" id="63Mqfg9Pg7i" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -440,151 +442,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="MGgg6ODzXu" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6ODB19" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Str" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6ODB1c" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6ODCzs" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OG9IP" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-            <node concept="1rXfSq" id="MGgg6OGbbw" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-            </node>
-            <node concept="1rXfSq" id="MGgg6ODDTE" role="37wK5m">
-              <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-              <node concept="37vLTw" id="MGgg6OE6UD" role="37wK5m">
-                <ref role="3cqZAo" node="MGgg6ODTfN" resolve="string" />
-              </node>
-            </node>
-            <node concept="1rXfSq" id="MGgg6OGgN6" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OD_vZ" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6ODHY0" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressNode" resolve="SuppressNode" />
-      </node>
-      <node concept="37vLTG" id="MGgg6ODTfN" role="3clF46">
-        <property role="TrG5h" value="string" />
-        <node concept="17QB3L" id="MGgg6OE9Jd" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="1uMmOZFQ0Sk" role="jymVt" />
-    <node concept="3clFb_" id="1WSRfTw9zIZ" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="CommentLines" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="1WSRfTw9zJ2" role="3clF47">
-        <node concept="3cpWs8" id="1uMmOZFK0tF" role="3cqZAp">
-          <node concept="3cpWsn" id="1uMmOZFK0tG" role="3cpWs9">
-            <property role="TrG5h" value="string" />
-            <node concept="3uibUv" id="1uMmOZFK0tH" role="1tU5fm">
-              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-            </node>
-            <node concept="2OqwBi" id="1uMmOZFK2TB" role="33vP2m">
-              <node concept="2OqwBi" id="1uMmOZFHU1U" role="2Oq$k0">
-                <node concept="1rXfSq" id="1uMmOZFFOs_" role="2Oq$k0">
-                  <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="ZeroOrMore" />
-                  <node concept="1rXfSq" id="1uMmOZFHfv3" role="37wK5m">
-                    <ref role="37wK5l" to="6rs6:~BaseParser.TestNot(java.lang.Object):org.parboiled.Rule" resolve="TestNot" />
-                    <node concept="1rXfSq" id="1uMmOZFLKxl" role="37wK5m">
-                      <ref role="37wK5l" to="6rs6:~BaseParser.AnyOf(java.lang.String):org.parboiled.Rule" resolve="AnyOf" />
-                      <node concept="Xl_RD" id="1uMmOZFHi9A" role="37wK5m">
-                        <property role="Xl_RC" value="\n\r\f" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="1uMmOZFIBdG" role="37wK5m">
-                    <node concept="37vLTw" id="1uMmOZFK2_J" role="2Oq$k0">
-                      <ref role="3cqZAo" to="6rs6:~BaseParser.ANY" resolve="ANY" />
-                    </node>
-                    <node concept="liA8E" id="1uMmOZFICOd" role="2OqNvi">
-                      <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="1uMmOZFJC5F" role="2OqNvi">
-                  <ref role="37wK5l" to="6rs6:~Rule.suppressSubnodes():org.parboiled.Rule" resolve="suppressSubnodes" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1uMmOZG3k8S" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-                <node concept="Xl_RD" id="1uMmOZG3lFn" role="37wK5m">
-                  <property role="Xl_RC" value="Comment" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1uMmOZFJ4lU" role="3cqZAp">
-          <node concept="3cpWsn" id="1uMmOZFJ4lV" role="3cpWs9">
-            <property role="TrG5h" value="line" />
-            <node concept="3uibUv" id="1uMmOZFJ4lW" role="1tU5fm">
-              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-            </node>
-            <node concept="2OqwBi" id="1uMmOZFKwOq" role="33vP2m">
-              <node concept="1rXfSq" id="1WSRfTw9B9e" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-                <node concept="1rXfSq" id="1uMmOZFFi$b" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
-                </node>
-                <node concept="2OqwBi" id="1uMmOZFKtPq" role="37wK5m">
-                  <node concept="1rXfSq" id="1WSRfTw9EkI" role="2Oq$k0">
-                    <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-                    <node concept="Xl_RD" id="1WSRfTw9FCN" role="37wK5m">
-                      <property role="Xl_RC" value="--" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1uMmOZFKvh2" role="2OqNvi">
-                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="1uMmOZFK9q7" role="37wK5m">
-                  <ref role="3cqZAo" node="1uMmOZFK0tG" resolve="string" />
-                </node>
-                <node concept="1rXfSq" id="1uMmOZFH_t9" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1uMmOZG3ozI" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="1WSRfTw9_zS" role="3cqZAp">
-          <node concept="1rXfSq" id="1uMmOZFPgXL" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.Optional(java.lang.Object):org.parboiled.Rule" resolve="Optional" />
-            <node concept="2OqwBi" id="1uMmOZFPpbZ" role="37wK5m">
-              <node concept="1rXfSq" id="1uMmOZFFZgv" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
-                <node concept="37vLTw" id="1uMmOZFNGgZ" role="37wK5m">
-                  <ref role="3cqZAo" node="1uMmOZFJ4lV" resolve="line" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1uMmOZFPqCS" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="1WSRfTw9xYs" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="1uMmOZFQ2CI" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SkipNode" resolve="SkipNode" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="MGgg6ODnlT" role="jymVt" />
     <node concept="2tJIrI" id="1uMmOZG6LVh" role="jymVt" />
     <node concept="3clFb_" id="MGgg6OvOIb" role="jymVt">
@@ -1385,1210 +1242,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2Fb$OripD9C" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OyMdm" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Expression" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OyMdp" role="3clF47">
-        <node concept="3cpWs8" id="2djiQ_FnJUY" role="3cqZAp">
-          <node concept="3cpWsn" id="2djiQ_FnJUZ" role="3cpWs9">
-            <property role="TrG5h" value="seq4" />
-            <node concept="3uibUv" id="2djiQ_FnJV0" role="1tU5fm">
-              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-            </node>
-            <node concept="2OqwBi" id="2djiQ_FnJV1" role="33vP2m">
-              <node concept="1rXfSq" id="2djiQ_FnJV2" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-                <node concept="1rXfSq" id="2djiQ_FnJV3" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FnJV4" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="2OqwBi" id="2djiQ_FnJV5" role="37wK5m">
-                  <node concept="1rXfSq" id="2djiQ_FnJV6" role="2Oq$k0">
-                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
-                  </node>
-                  <node concept="liA8E" id="2djiQ_FnJV7" role="2OqNvi">
-                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                  </node>
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FnJV8" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FnOFM" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
-                </node>
-              </node>
-              <node concept="liA8E" id="2djiQ_FnJVa" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1n$7zJGVUjL" role="3cqZAp">
-          <node concept="3cpWsn" id="1n$7zJGVUjM" role="3cpWs9">
-            <property role="TrG5h" value="seq1" />
-            <node concept="3uibUv" id="1n$7zJGVUjN" role="1tU5fm">
-              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-            </node>
-            <node concept="2OqwBi" id="1n$7zJGVWqy" role="33vP2m">
-              <node concept="1rXfSq" id="MGgg6OyNyB" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-                <node concept="1rXfSq" id="2Fb$OripSuU" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
-                </node>
-                <node concept="1rXfSq" id="2Fb$Oripkg4" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="2OqwBi" id="4ru2JyEq6Rc" role="37wK5m">
-                  <node concept="1rXfSq" id="MGgg6OyXVh" role="2Oq$k0">
-                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
-                  </node>
-                  <node concept="liA8E" id="4ru2JyEq8b9" role="2OqNvi">
-                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                  </node>
-                </node>
-                <node concept="1rXfSq" id="2Fb$Oripm3I" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="1rXfSq" id="2Fb$OriqzYD" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1n$7zJGVWJR" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1n$7zJGVYEY" role="3cqZAp">
-          <node concept="3cpWsn" id="1n$7zJGVYEZ" role="3cpWs9">
-            <property role="TrG5h" value="seq2" />
-            <node concept="3uibUv" id="1n$7zJGVYF0" role="1tU5fm">
-              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-            </node>
-            <node concept="2OqwBi" id="1n$7zJGW0Bg" role="33vP2m">
-              <node concept="1rXfSq" id="2Fb$OriqmZj" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-                <node concept="1rXfSq" id="2Fb$Oriq_FK" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
-                </node>
-                <node concept="1rXfSq" id="2Fb$OriqmZl" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="2OqwBi" id="4ru2JyEq9BI" role="37wK5m">
-                  <node concept="1rXfSq" id="2Fb$OriqmZm" role="2Oq$k0">
-                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
-                  </node>
-                  <node concept="liA8E" id="4ru2JyEqb37" role="2OqNvi">
-                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                  </node>
-                </node>
-                <node concept="1rXfSq" id="2Fb$OriqmZn" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="1rXfSq" id="2Fb$OriqmZo" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1n$7zJGW0W_" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2djiQ_FnLnM" role="3cqZAp">
-          <node concept="3cpWsn" id="2djiQ_FnLnN" role="3cpWs9">
-            <property role="TrG5h" value="seq5" />
-            <node concept="3uibUv" id="2djiQ_FnLnO" role="1tU5fm">
-              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-            </node>
-            <node concept="2OqwBi" id="2djiQ_FnLnP" role="33vP2m">
-              <node concept="1rXfSq" id="2djiQ_FnLnQ" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-                <node concept="1rXfSq" id="2djiQ_FnLnR" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FnLnS" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="2OqwBi" id="2djiQ_FnLnT" role="37wK5m">
-                  <node concept="1rXfSq" id="2djiQ_FnLnU" role="2Oq$k0">
-                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
-                  </node>
-                  <node concept="liA8E" id="2djiQ_FnLnV" role="2OqNvi">
-                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                  </node>
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FnLnW" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FnLnX" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
-                </node>
-              </node>
-              <node concept="liA8E" id="2djiQ_FnLnY" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="2djiQ_FOk3f" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="2djiQ_FkWB_" role="8Wnug">
-            <node concept="3cpWsn" id="2djiQ_FkWBA" role="3cpWs9">
-              <property role="TrG5h" value="seq3" />
-              <node concept="3uibUv" id="2djiQ_FkWBB" role="1tU5fm">
-                <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-              </node>
-              <node concept="1rXfSq" id="2djiQ_FkY7a" role="33vP2m">
-                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-                <node concept="1rXfSq" id="2djiQ_FkYwN" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FkYVs" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FkZaZ" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FkZoB" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
-                </node>
-                <node concept="1rXfSq" id="2djiQ_FkZFL" role="37wK5m">
-                  <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="MGgg6OyMT9" role="3cqZAp">
-          <node concept="1rXfSq" id="2Fb$OripLC3" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
-            <node concept="1rXfSq" id="3D1D54i3FRD" role="37wK5m">
-              <ref role="37wK5l" node="7mFAowR3TM1" resolve="Case" />
-            </node>
-            <node concept="37vLTw" id="2djiQ_FnVY$" role="37wK5m">
-              <ref role="3cqZAo" node="2djiQ_FnJUZ" resolve="seq4" />
-            </node>
-            <node concept="37vLTw" id="1n$7zJGW29V" role="37wK5m">
-              <ref role="3cqZAo" node="1n$7zJGVUjM" resolve="seq1" />
-            </node>
-            <node concept="37vLTw" id="1n$7zJGW4N0" role="37wK5m">
-              <ref role="3cqZAo" node="1n$7zJGVYEZ" resolve="seq2" />
-            </node>
-            <node concept="37vLTw" id="2djiQ_FnYGw" role="37wK5m">
-              <ref role="3cqZAo" node="2djiQ_FnLnN" resolve="seq5" />
-            </node>
-            <node concept="1rXfSq" id="2Fb$OripQOE" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
-            </node>
-            <node concept="1rXfSq" id="2Fb$OripMAV" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OyL$p" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7mFAowR3QEa" role="jymVt" />
-    <node concept="3clFb_" id="7mFAowR3TM1" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Case" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="7mFAowR3TM4" role="3clF47">
-        <node concept="3cpWs6" id="14FHJmVp3_d" role="3cqZAp">
-          <node concept="1rXfSq" id="3D1D54i3Jqa" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-            <node concept="1rXfSq" id="14FHJmVp4Gu" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
-              <node concept="Xl_RD" id="14FHJmVp5Qo" role="37wK5m">
-                <property role="Xl_RC" value="case" />
-              </node>
-            </node>
-            <node concept="1rXfSq" id="3D1D54i45gz" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
-            </node>
-            <node concept="1rXfSq" id="1uMmOZG9ocD" role="37wK5m">
-              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
-            </node>
-            <node concept="2OqwBi" id="3D1D54i51tJ" role="37wK5m">
-              <node concept="1rXfSq" id="3D1D54i4YXv" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
-                <node concept="2OqwBi" id="1uMmOZGgaOm" role="37wK5m">
-                  <node concept="1rXfSq" id="1uMmOZGe0fL" role="2Oq$k0">
-                    <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
-                    <node concept="1rXfSq" id="3D1D54i4V5I" role="37wK5m">
-                      <ref role="37wK5l" node="3D1D54i4nWi" resolve="CaseBasicExp" />
-                    </node>
-                    <node concept="1rXfSq" id="1uMmOZGdVV8" role="37wK5m">
-                      <ref role="37wK5l" node="7mFAowR3TM1" resolve="Case" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1uMmOZGgcpR" role="2OqNvi">
-                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="3D1D54i52Uf" role="2OqNvi">
-                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-              </node>
-            </node>
-            <node concept="1rXfSq" id="3D1D54i47Mr" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
-              <node concept="Xl_RD" id="3D1D54i491B" role="37wK5m">
-                <property role="Xl_RC" value="esac" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="7mFAowR3SwX" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3D1D54i4iJ3" role="jymVt" />
-    <node concept="3clFb_" id="3D1D54i4nWi" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="CaseBasicExp" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3D1D54i4nWl" role="3clF47">
-        <node concept="3cpWs6" id="3D1D54i54kb" role="3cqZAp">
-          <node concept="1rXfSq" id="3D1D54i55Bs" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-            <node concept="1rXfSq" id="1uMmOZG9tMU" role="37wK5m">
-              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
-            </node>
-            <node concept="1rXfSq" id="3D1D54i58ez" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
-            </node>
-            <node concept="1rXfSq" id="3D1D54i5gW4" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
-              <node concept="Xl_RD" id="3D1D54i5ifu" role="37wK5m">
-                <property role="Xl_RC" value=":" />
-              </node>
-            </node>
-            <node concept="1rXfSq" id="1uMmOZG9r0o" role="37wK5m">
-              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
-            </node>
-            <node concept="1rXfSq" id="3D1D54i5m4S" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
-            </node>
-            <node concept="1rXfSq" id="3D1D54i5oJk" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
-              <node concept="Xl_RD" id="3D1D54i5q1p" role="37wK5m">
-                <property role="Xl_RC" value=";" />
-              </node>
-            </node>
-            <node concept="1rXfSq" id="3D1D54i5xAb" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="3D1D54i4lZV" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="40E4l6GDeuW" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OyU4B" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Operation" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OyU4E" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6OyUSv" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OyVyW" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
-            <node concept="37vLTw" id="2Fb$Oris95N" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$Oris6Ey" resolve="EQUAL" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OriseXm" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OriscjN" resolve="DIFF" />
-            </node>
-            <node concept="37vLTw" id="3D1D54i7mCF" role="37wK5m">
-              <ref role="3cqZAo" node="3D1D54i7f5Q" resolve="AND" />
-            </node>
-            <node concept="37vLTw" id="2Fb$Oris2iL" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OrirZDH" resolve="STAR" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OrirTy7" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OrirRV2" resolve="PLUS" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OrirViJ" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OrirObK" resolve="MINUS" />
-            </node>
-            <node concept="37vLTw" id="3D1D54i6Ve1" role="37wK5m">
-              <ref role="3cqZAo" node="3D1D54i4xYV" resolve="MINOR_EQ" />
-            </node>
-            <node concept="37vLTw" id="3D1D54i4JsD" role="37wK5m">
-              <ref role="3cqZAo" node="3D1D54i4tjR" resolve="LESS" />
-            </node>
-            <node concept="37vLTw" id="3D1D54i4R9U" role="37wK5m">
-              <ref role="3cqZAo" node="3D1D54i4G3u" resolve="MAJOR_EQ" />
-            </node>
-            <node concept="37vLTw" id="3D1D54i6Rlx" role="37wK5m">
-              <ref role="3cqZAo" node="3D1D54i4_LC" resolve="MAJOR" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OyToD" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2Fb$OriqNqa" role="jymVt" />
-    <node concept="3clFb_" id="2Fb$OriqPDK" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="UnaryCTLExpression" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="2Fb$OriqPDN" role="3clF47">
-        <node concept="3cpWs6" id="2Fb$OriqQI3" role="3cqZAp">
-          <node concept="1rXfSq" id="2Fb$OriqR_s" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
-            <node concept="37vLTw" id="2Fb$OrirCez" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$Orirv$Z" resolve="AX" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OrirD9M" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OrirsN1" resolve="AG" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OrirEYS" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OrirnJF" resolve="AF" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OrirGEt" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$Orirx$P" resolve="EF" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OrirIm0" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OrirxZX" resolve="EG" />
-            </node>
-            <node concept="37vLTw" id="2Fb$OrirKbL" role="37wK5m">
-              <ref role="3cqZAo" node="2Fb$OrirzjU" resolve="EX" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="2Fb$OriqO_i" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="h2BqpQOskW" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6O_kvG" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="VariableName" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6O_kvJ" role="3clF47">
-        <node concept="3SKdUt" id="1uMmOZGi3xf" role="3cqZAp">
-          <node concept="3SKdUq" id="1uMmOZGi3xh" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: take out the . from the list when we are parsing also the attributes of objects" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="MGgg6O_uge" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6O_tSK" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
-            <node concept="1rXfSq" id="MGgg6O_x8e" role="37wK5m">
-              <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
-              <node concept="Xl_RD" id="MGgg6O_xSd" role="37wK5m">
-                <property role="Xl_RC" value="_" />
-              </node>
-              <node concept="Xl_RD" id="MGgg6O_$6f" role="37wK5m">
-                <property role="Xl_RC" value="-" />
-              </node>
-              <node concept="Xl_RD" id="1uMmOZGhDZr" role="37wK5m">
-                <property role="Xl_RC" value="." />
-              </node>
-              <node concept="1rXfSq" id="MGgg6OAuXA" role="37wK5m">
-                <ref role="37wK5l" node="MGgg6OuX3k" resolve="CapitalLetter" />
-              </node>
-              <node concept="1rXfSq" id="MGgg6OAy2P" role="37wK5m">
-                <ref role="37wK5l" node="MGgg6Ov6h5" resolve="SmallLetter" />
-              </node>
-              <node concept="1rXfSq" id="MGgg6OAH3T" role="37wK5m">
-                <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6O_jIX" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6OEk2D" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6ODb62" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OuwzN" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Name" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OuwzQ" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6Oux7_" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OuzJh" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
-            <node concept="1rXfSq" id="MGgg6Ovguj" role="37wK5m">
-              <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
-              <node concept="1rXfSq" id="MGgg6OvhtC" role="37wK5m">
-                <ref role="37wK5l" node="MGgg6OuX3k" resolve="CapitalLetter" />
-              </node>
-              <node concept="1rXfSq" id="MGgg6Ovipm" role="37wK5m">
-                <ref role="37wK5l" node="MGgg6Ov6h5" resolve="SmallLetter" />
-              </node>
-              <node concept="1rXfSq" id="MGgg6OCRQI" role="37wK5m">
-                <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OuvYQ" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6ODc_a" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6OwsWU" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OuX3k" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="CapitalLetter" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OuX3n" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6OuX$0" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6Ou$lP" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.CharRange(char,char):org.parboiled.Rule" resolve="CharRange" />
-            <node concept="1Xhbcc" id="MGgg6Ou$PL" role="37wK5m">
-              <property role="1XhdNS" value="A" />
-            </node>
-            <node concept="1Xhbcc" id="MGgg6OuAeH" role="37wK5m">
-              <property role="1XhdNS" value="Z" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OuVE3" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6OChk$" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6Ov3cZ" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6Ov6h5" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="SmallLetter" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6Ov6h8" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6Ov6ML" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6Ov7aV" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.CharRange(char,char):org.parboiled.Rule" resolve="CharRange" />
-            <node concept="1Xhbcc" id="MGgg6Ov7aW" role="37wK5m">
-              <property role="1XhdNS" value="a" />
-            </node>
-            <node concept="1Xhbcc" id="MGgg6Ov7aX" role="37wK5m">
-              <property role="1XhdNS" value="z" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6Ov44l" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6OCk4A" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6Ozp2f" role="jymVt" />
-    <node concept="2tJIrI" id="MGgg6OErTy" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OzreO" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Number" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OzreR" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6Ozu$q" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OzvoZ" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
-            <node concept="1rXfSq" id="MGgg6Ozw7h" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6Ozqsw" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6OEtsx" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6OzrXV" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OztxX" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Digit" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6Ozty0" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6OzwM6" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6Ozxv9" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.CharRange(char,char):org.parboiled.Rule" resolve="CharRange" />
-            <node concept="1Xhbcc" id="MGgg6OzEkQ" role="37wK5m">
-              <property role="1XhdNS" value="0" />
-            </node>
-            <node concept="1Xhbcc" id="MGgg6OzCMi" role="37wK5m">
-              <property role="1XhdNS" value="9" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OzsMR" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6OCewb" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6OA3d6" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OA4RZ" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="True" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OA4S2" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6OA5IL" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OA7yI" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-            <node concept="Xl_RD" id="MGgg6OA8iK" role="37wK5m">
-              <property role="Xl_RC" value="TRUE" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OA442" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6OA9Re" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OAbyy" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="False" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OAby_" role="3clF47">
-        <node concept="3cpWs6" id="MGgg6OAcqK" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OAdi3" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-            <node concept="Xl_RD" id="MGgg6OAhns" role="37wK5m">
-              <property role="Xl_RC" value="FALSE" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OAaIP" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6Owp6N" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OwJpE" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="Space" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OwJpH" role="3clF47">
-        <node concept="3clFbF" id="MGgg6OwKd5" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OwKd4" role="3clFbG">
-            <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
-            <node concept="1rXfSq" id="MGgg6OwKVE" role="37wK5m">
-              <ref role="37wK5l" to="6rs6:~BaseParser.AnyOf(java.lang.String):org.parboiled.Rule" resolve="AnyOf" />
-              <node concept="Xl_RD" id="MGgg6OwLaf" role="37wK5m">
-                <property role="Xl_RC" value=" \t" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OwINH" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6OC75H" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressNode" resolve="SuppressNode" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="MGgg6OwIe7" role="jymVt" />
-    <node concept="3clFb_" id="MGgg6OvI52" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="NewLine" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OvI55" role="3clF47">
-        <node concept="3clFbF" id="MGgg6OvIM$" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OvIMz" role="3clFbG">
-            <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
-            <node concept="1rXfSq" id="MGgg6OynDJ" role="37wK5m">
-              <ref role="37wK5l" to="6rs6:~BaseParser.AnyOf(java.lang.String):org.parboiled.Rule" resolve="AnyOf" />
-              <node concept="Xl_RD" id="MGgg6OynN4" role="37wK5m">
-                <property role="Xl_RC" value=" \t\n\r\f" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3uibUv" id="MGgg6OvHxt" role="3clF45">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2AHcQZ" id="MGgg6OC4iU" role="2AJF6D">
-        <ref role="2AI5Lk" to="igrg:~SuppressNode" resolve="SuppressNode" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2Fb$Orirlq8" role="jymVt" />
-    <node concept="312cEg" id="2Fb$OrirnJF" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="AF" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$OrirmBN" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OrirnEL" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="1rXfSq" id="2Fb$Orirpj$" role="33vP2m">
-        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-        <node concept="Xl_RD" id="2Fb$Orirpt3" role="37wK5m">
-          <property role="Xl_RC" value="AF" />
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$OrirsN1" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="AG" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$OrirrFu" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OrirsHf" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="1rXfSq" id="2Fb$Orirvax" role="33vP2m">
-        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-        <node concept="Xl_RD" id="2Fb$Orirvfg" role="37wK5m">
-          <property role="Xl_RC" value="AG" />
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$Orirv$Z" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="AX" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$Orirv_0" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$Orirv_1" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="1rXfSq" id="2Fb$Orirv_2" role="33vP2m">
-        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-        <node concept="Xl_RD" id="2Fb$Orirv_3" role="37wK5m">
-          <property role="Xl_RC" value="AX" />
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$Orirx$P" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="EF" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$Orirx$Q" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$Orirx$R" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="1rXfSq" id="2Fb$Orirx$S" role="33vP2m">
-        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-        <node concept="Xl_RD" id="2Fb$Orirx$T" role="37wK5m">
-          <property role="Xl_RC" value="EF" />
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$OrirxZX" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="EG" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$OrirxZY" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OrirxZZ" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="1rXfSq" id="2Fb$Oriry00" role="33vP2m">
-        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-        <node concept="Xl_RD" id="2Fb$Oriry01" role="37wK5m">
-          <property role="Xl_RC" value="EG" />
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$OrirzjU" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="EX" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$OrirzjV" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OrirzjW" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="1rXfSq" id="2Fb$OrirzjX" role="33vP2m">
-        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-        <node concept="Xl_RD" id="2Fb$OrirzjY" role="37wK5m">
-          <property role="Xl_RC" value="EX" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2Fb$Orirz6b" role="jymVt" />
-    <node concept="312cEg" id="2Fb$Oris6Ey" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="EQUAL" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$Oris5s4" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$Oris6yO" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="1n$7zJGXh$t" role="33vP2m">
-        <node concept="1rXfSq" id="2Fb$Oris7SW" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="2Fb$Oris81X" role="37wK5m">
-            <property role="Xl_RC" value="=" />
-          </node>
-        </node>
-        <node concept="liA8E" id="1n$7zJGXiz4" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="1n$7zJGXjtL" role="37wK5m">
-            <property role="Xl_RC" value="EQUAL" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$OriscjN" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="DIFF" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$Orisb63" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OriscdJ" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="1n$7zJGX1F3" role="33vP2m">
-        <node concept="1rXfSq" id="2Fb$OrisdI_" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="2Fb$OrisdNk" role="37wK5m">
-            <property role="Xl_RC" value="!=" />
-          </node>
-        </node>
-        <node concept="liA8E" id="1n$7zJGX2Ed" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="1n$7zJGX3$B" role="37wK5m">
-            <property role="Xl_RC" value="DIFF" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="3D1D54i4tjR" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="LESS" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="3D1D54i4rw9" role="1B3o_S" />
-      <node concept="3uibUv" id="3D1D54i4tbn" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="3D1D54i4vN5" role="33vP2m">
-        <node concept="1rXfSq" id="3D1D54i4vk6" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="3D1D54i4vqw" role="37wK5m">
-            <property role="Xl_RC" value="&lt;" />
-          </node>
-        </node>
-        <node concept="liA8E" id="3D1D54i4w13" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="3D1D54i4wa8" role="37wK5m">
-            <property role="Xl_RC" value="LESS" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="3D1D54i4xYV" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="MINOR_EQ" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="3D1D54i4xYW" role="1B3o_S" />
-      <node concept="3uibUv" id="3D1D54i4xYX" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="3D1D54i4xYY" role="33vP2m">
-        <node concept="1rXfSq" id="3D1D54i4xYZ" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="3D1D54i4xZ0" role="37wK5m">
-            <property role="Xl_RC" value="&lt;=" />
-          </node>
-        </node>
-        <node concept="liA8E" id="3D1D54i4xZ1" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="3D1D54i4xZ2" role="37wK5m">
-            <property role="Xl_RC" value="LESS_EQ" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="3D1D54i4_LC" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="MAJOR" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="3D1D54i4_LD" role="1B3o_S" />
-      <node concept="3uibUv" id="3D1D54i4_LE" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="3D1D54i4_LF" role="33vP2m">
-        <node concept="1rXfSq" id="3D1D54i4_LG" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="3D1D54i4_LH" role="37wK5m">
-            <property role="Xl_RC" value="&gt;" />
-          </node>
-        </node>
-        <node concept="liA8E" id="3D1D54i4_LI" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="3D1D54i4_LJ" role="37wK5m">
-            <property role="Xl_RC" value="GREATER" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="3D1D54i4G3u" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="MAJOR_EQ" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="3D1D54i4G3v" role="1B3o_S" />
-      <node concept="3uibUv" id="3D1D54i4G3w" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="3D1D54i4G3x" role="33vP2m">
-        <node concept="1rXfSq" id="3D1D54i4G3y" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="3D1D54i4G3z" role="37wK5m">
-            <property role="Xl_RC" value="&gt;=" />
-          </node>
-        </node>
-        <node concept="liA8E" id="3D1D54i4G3$" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="3D1D54i4G3_" role="37wK5m">
-            <property role="Xl_RC" value="GREATER_EQ" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="3D1D54i7f5Q" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="AND" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="3D1D54i7dc_" role="1B3o_S" />
-      <node concept="3uibUv" id="3D1D54i7eZC" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="3D1D54i7hin" role="33vP2m">
-        <node concept="1rXfSq" id="3D1D54i7h0L" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="3D1D54i7h6g" role="37wK5m">
-            <property role="Xl_RC" value="&amp;" />
-          </node>
-        </node>
-        <node concept="liA8E" id="3D1D54i7huR" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="3D1D54i7hBs" role="37wK5m">
-            <property role="Xl_RC" value="AND" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3D1D54i4wmd" role="jymVt" />
-    <node concept="312cEg" id="1n$7zJGWOFx" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="ASSIGN" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="1n$7zJGWNsQ" role="1B3o_S" />
-      <node concept="3uibUv" id="1n$7zJGWOA5" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="1n$7zJGWRH0" role="33vP2m">
-        <node concept="1rXfSq" id="1n$7zJGWQ3L" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="1n$7zJGWQhS" role="37wK5m">
-            <property role="Xl_RC" value=":=" />
-          </node>
-        </node>
-        <node concept="liA8E" id="1n$7zJGWRXp" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="1n$7zJGWS4T" role="37wK5m">
-            <property role="Xl_RC" value="ASSIGN" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2Fb$Oris4kz" role="jymVt" />
-    <node concept="312cEg" id="2Fb$OrirObK" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="MINUS" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$OrirN20" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OrirO7w" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="1n$7zJGXm6h" role="33vP2m">
-        <node concept="1rXfSq" id="2Fb$OrirP$a" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="2Fb$OrirPFx" role="37wK5m">
-            <property role="Xl_RC" value="-" />
-          </node>
-        </node>
-        <node concept="liA8E" id="1n$7zJGXn5W" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="1n$7zJGXo1f" role="37wK5m">
-            <property role="Xl_RC" value="MINUS" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$OrirRV2" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="PLUS" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$OrirQNj" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OrirRMD" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="1n$7zJGXp5f" role="33vP2m">
-        <node concept="1rXfSq" id="2Fb$OrirT8c" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="2Fb$OrirThd" role="37wK5m">
-            <property role="Xl_RC" value="+" />
-          </node>
-        </node>
-        <node concept="liA8E" id="1n$7zJGXq4i" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="1n$7zJGXqZS" role="37wK5m">
-            <property role="Xl_RC" value="PLUS" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="2Fb$OrirZDH" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="STAR" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2Fb$OrirYsW" role="1B3o_S" />
-      <node concept="3uibUv" id="2Fb$OrirZ$z" role="1tU5fm">
-        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
-      </node>
-      <node concept="2OqwBi" id="1n$7zJGXt$Q" role="33vP2m">
-        <node concept="1rXfSq" id="2Fb$Oris0Rw" role="2Oq$k0">
-          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-          <node concept="Xl_RD" id="2Fb$Oris11P" role="37wK5m">
-            <property role="Xl_RC" value="*" />
-          </node>
-        </node>
-        <node concept="liA8E" id="1n$7zJGXuze" role="2OqNvi">
-          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
-          <node concept="Xl_RD" id="1n$7zJGXvtY" role="37wK5m">
-            <property role="Xl_RC" value="STAR" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2Fb$OrirwCT" role="jymVt" />
-    <node concept="2tJIrI" id="2djiQ_FMWaH" role="jymVt" />
-    <node concept="2tJIrI" id="MGgg6OC_tz" role="jymVt" />
-    <node concept="2YIFZL" id="MGgg6OKxo8" role="jymVt">
-      <property role="TrG5h" value="importNuSMVFile" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="MGgg6OKxob" role="3clF47">
-        <node concept="3cpWs8" id="MGgg6OKG6r" role="3cqZAp">
-          <node concept="3cpWsn" id="MGgg6OKG6u" role="3cpWs9">
-            <property role="TrG5h" value="input" />
-            <node concept="17QB3L" id="MGgg6OKG6v" role="1tU5fm" />
-            <node concept="Xl_RD" id="MGgg6OKQDV" role="33vP2m">
-              <property role="Xl_RC" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="MGgg6OKFc9" role="3cqZAp" />
-        <node concept="SfApY" id="MGgg6OKBqH" role="3cqZAp">
-          <node concept="3clFbS" id="MGgg6OKBqI" role="SfCbr">
-            <node concept="3clFbF" id="MGgg6OKJAr" role="3cqZAp">
-              <node concept="37vLTI" id="MGgg6OKKA4" role="3clFbG">
-                <node concept="37vLTw" id="MGgg6OKJAq" role="37vLTJ">
-                  <ref role="3cqZAo" node="MGgg6OKG6u" resolve="input" />
-                </node>
-                <node concept="2YIFZM" id="MGgg6OKz3z" role="37vLTx">
-                  <ref role="37wK5l" to="8oaq:~FileUtils.readFileToString(java.io.File,java.nio.charset.Charset):java.lang.String" resolve="readFileToString" />
-                  <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                  <node concept="37vLTw" id="21Qj5c0IyGX" role="37wK5m">
-                    <ref role="3cqZAo" node="MGgg6OKySG" resolve="file" />
-                  </node>
-                  <node concept="2YIFZM" id="MGgg6OKz3B" role="37wK5m">
-                    <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
-                    <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
-                    <node concept="Xl_RD" id="MGgg6OKz3C" role="37wK5m">
-                      <property role="Xl_RC" value="UTF8" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="MGgg6OKBqD" role="TEbGg">
-            <node concept="3clFbS" id="MGgg6OKBqE" role="TDEfX">
-              <node concept="3clFbF" id="MGgg6OKCv8" role="3cqZAp">
-                <node concept="2OqwBi" id="MGgg6OKCDg" role="3clFbG">
-                  <node concept="37vLTw" id="MGgg6OKCv7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="MGgg6OKBqF" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="MGgg6OKD6j" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="MGgg6OKBqF" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="MGgg6OKBqG" role="1tU5fm">
-                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="MGgg6OKz4W" role="3cqZAp">
-          <node concept="3cpWsn" id="MGgg6OKz4X" role="3cpWs9">
-            <property role="TrG5h" value="parser" />
-            <node concept="3uibUv" id="5uReZOjGm4P" role="1tU5fm">
-              <ref role="3uigEE" node="63Mqfg9ORDV" resolve="NuSMVParser" />
-            </node>
-            <node concept="2YIFZM" id="5uReZOjFDGe" role="33vP2m">
-              <ref role="37wK5l" to="6rs6:~Parboiled.createParser(java.lang.Class,java.lang.Object...):org.parboiled.BaseParser" resolve="createParser" />
-              <ref role="1Pybhc" to="6rs6:~Parboiled" resolve="Parboiled" />
-              <node concept="3VsKOn" id="5uReZOjFDGf" role="37wK5m">
-                <ref role="3VsUkX" node="63Mqfg9ORDV" resolve="NuSMVParser" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2djiQ_FprkT" role="3cqZAp">
-          <node concept="3cpWsn" id="2djiQ_FprkU" role="3cpWs9">
-            <property role="TrG5h" value="test" />
-            <node concept="3uibUv" id="2djiQ_FprkV" role="1tU5fm">
-              <ref role="3uigEE" to="q96v:~ParsingResult" resolve="ParsingResult" />
-              <node concept="3qTvmN" id="2djiQ_FprIe" role="11_B2D" />
-            </node>
-            <node concept="2OqwBi" id="2djiQ_FpzCx" role="33vP2m">
-              <node concept="2ShNRf" id="2djiQ_FprUh" role="2Oq$k0">
-                <node concept="1pGfFk" id="2djiQ_FpyUl" role="2ShVmc">
-                  <ref role="37wK5l" to="4um0:~RecoveringParseRunner.&lt;init&gt;(org.parboiled.Rule)" resolve="RecoveringParseRunner" />
-                  <node concept="2OqwBi" id="2djiQ_Fpz2_" role="37wK5m">
-                    <node concept="37vLTw" id="2djiQ_Fpz2A" role="2Oq$k0">
-                      <ref role="3cqZAo" node="MGgg6OKz4X" resolve="parser" />
-                    </node>
-                    <node concept="liA8E" id="2djiQ_Fpz2B" role="2OqNvi">
-                      <ref role="37wK5l" node="63Mqfg9Pg7i" resolve="NuSMV" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="2djiQ_Fp$ys" role="2OqNvi">
-                <ref role="37wK5l" to="4um0:~AbstractParseRunner.run(java.lang.String):org.parboiled.support.ParsingResult" resolve="run" />
-                <node concept="37vLTw" id="2djiQ_Fp_0o" role="37wK5m">
-                  <ref role="3cqZAo" node="MGgg6OKG6u" resolve="input" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="MGgg6OKz51" role="3cqZAp">
-          <node concept="3cpWsn" id="MGgg6OKz52" role="3cpWs9">
-            <property role="TrG5h" value="result" />
-            <node concept="3uibUv" id="MGgg6OKz53" role="1tU5fm">
-              <ref role="3uigEE" to="q96v:~ParsingResult" resolve="ParsingResult" />
-              <node concept="3qTvmN" id="MGgg6OKz54" role="11_B2D" />
-            </node>
-            <node concept="2OqwBi" id="MGgg6OKz55" role="33vP2m">
-              <node concept="2ShNRf" id="MGgg6OKz56" role="2Oq$k0">
-                <node concept="1pGfFk" id="MGgg6OKz57" role="2ShVmc">
-                  <ref role="37wK5l" to="4um0:~BasicParseRunner.&lt;init&gt;(org.parboiled.Rule)" resolve="BasicParseRunner" />
-                  <node concept="2OqwBi" id="MGgg6OKz58" role="37wK5m">
-                    <node concept="37vLTw" id="MGgg6OKz59" role="2Oq$k0">
-                      <ref role="3cqZAo" node="MGgg6OKz4X" resolve="parser" />
-                    </node>
-                    <node concept="liA8E" id="MGgg6OKz5a" role="2OqNvi">
-                      <ref role="37wK5l" node="63Mqfg9Pg7i" resolve="NuSMV" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="MGgg6OKz5b" role="2OqNvi">
-                <ref role="37wK5l" to="4um0:~AbstractParseRunner.run(java.lang.String):org.parboiled.support.ParsingResult" resolve="run" />
-                <node concept="37vLTw" id="MGgg6OKz5c" role="37wK5m">
-                  <ref role="3cqZAo" node="MGgg6OKG6u" resolve="input" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="MGgg6OKz89" role="3cqZAp" />
-        <node concept="3cpWs6" id="41lSmsEqYYq" role="3cqZAp">
-          <node concept="37vLTw" id="2djiQ_FN0Ar" role="3cqZAk">
-            <ref role="3cqZAo" node="2djiQ_FprkU" resolve="test" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="MGgg6OKvF5" role="1B3o_S" />
-      <node concept="37vLTG" id="MGgg6OKySG" role="3clF46">
-        <property role="TrG5h" value="file" />
-        <node concept="3uibUv" id="21Qj5c0Iyxg" role="1tU5fm">
-          <ref role="3uigEE" to="guwi:~File" resolve="File" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="KeJktp3ig3" role="3clF45">
-        <ref role="3uigEE" to="q96v:~ParsingResult" resolve="ParsingResult" />
-        <node concept="3qTvmN" id="KeJktp3ig4" role="11_B2D" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6MHhKT2TPGn" role="jymVt" />
     <node concept="2YIFZL" id="KeJktp3DtK" role="jymVt">
       <property role="TrG5h" value="main" />
       <node concept="37vLTG" id="KeJktp3DtL" role="3clF46">
@@ -2701,10 +1354,7 @@
     </node>
     <node concept="3Tm1VV" id="63Mqfg9ORDW" role="1B3o_S" />
     <node concept="3uibUv" id="63Mqfg9OSWz" role="1zkMxy">
-      <ref role="3uigEE" to="6rs6:~BaseParser" resolve="BaseParser" />
-      <node concept="3uibUv" id="63Mqfg9OSYU" role="11_B2D">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
+      <ref role="3uigEE" node="4C19r4_PZRr" resolve="NuSMVExpressionParser" />
     </node>
     <node concept="2AHcQZ" id="5Yu7Ehkn0YF" role="2AJF6D">
       <ref role="2AI5Lk" to="igrg:~BuildParseTree" resolve="BuildParseTree" />
@@ -6990,6 +5640,1377 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="MGgg6OKdCC" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4C19r4_PZRr">
+    <property role="TrG5h" value="NuSMVExpressionParser" />
+    <property role="3GE5qa" value="parser" />
+    <node concept="3Tm1VV" id="4C19r4_PZRs" role="1B3o_S" />
+    <node concept="2tJIrI" id="4C19r4_PZSd" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OyMdm" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Expression" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OyMdp" role="3clF47">
+        <node concept="3cpWs8" id="2djiQ_FnJUY" role="3cqZAp">
+          <node concept="3cpWsn" id="2djiQ_FnJUZ" role="3cpWs9">
+            <property role="TrG5h" value="seq4" />
+            <node concept="3uibUv" id="2djiQ_FnJV0" role="1tU5fm">
+              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+            </node>
+            <node concept="2OqwBi" id="2djiQ_FnJV1" role="33vP2m">
+              <node concept="1rXfSq" id="2djiQ_FnJV2" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                <node concept="1rXfSq" id="2djiQ_FnJV3" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FnJV4" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="2OqwBi" id="2djiQ_FnJV5" role="37wK5m">
+                  <node concept="1rXfSq" id="2djiQ_FnJV6" role="2Oq$k0">
+                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
+                  </node>
+                  <node concept="liA8E" id="2djiQ_FnJV7" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FnJV8" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FnOFM" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2djiQ_FnJVa" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1n$7zJGVUjL" role="3cqZAp">
+          <node concept="3cpWsn" id="1n$7zJGVUjM" role="3cpWs9">
+            <property role="TrG5h" value="seq1" />
+            <node concept="3uibUv" id="1n$7zJGVUjN" role="1tU5fm">
+              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+            </node>
+            <node concept="2OqwBi" id="1n$7zJGVWqy" role="33vP2m">
+              <node concept="1rXfSq" id="MGgg6OyNyB" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                <node concept="1rXfSq" id="2Fb$OripSuU" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
+                </node>
+                <node concept="1rXfSq" id="2Fb$Oripkg4" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="2OqwBi" id="4ru2JyEq6Rc" role="37wK5m">
+                  <node concept="1rXfSq" id="MGgg6OyXVh" role="2Oq$k0">
+                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
+                  </node>
+                  <node concept="liA8E" id="4ru2JyEq8b9" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
+                </node>
+                <node concept="1rXfSq" id="2Fb$Oripm3I" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="1rXfSq" id="2Fb$OriqzYD" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1n$7zJGVWJR" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1n$7zJGVYEY" role="3cqZAp">
+          <node concept="3cpWsn" id="1n$7zJGVYEZ" role="3cpWs9">
+            <property role="TrG5h" value="seq2" />
+            <node concept="3uibUv" id="1n$7zJGVYF0" role="1tU5fm">
+              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+            </node>
+            <node concept="2OqwBi" id="1n$7zJGW0Bg" role="33vP2m">
+              <node concept="1rXfSq" id="2Fb$OriqmZj" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                <node concept="1rXfSq" id="2Fb$Oriq_FK" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
+                </node>
+                <node concept="1rXfSq" id="2Fb$OriqmZl" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="2OqwBi" id="4ru2JyEq9BI" role="37wK5m">
+                  <node concept="1rXfSq" id="2Fb$OriqmZm" role="2Oq$k0">
+                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
+                  </node>
+                  <node concept="liA8E" id="4ru2JyEqb37" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
+                </node>
+                <node concept="1rXfSq" id="2Fb$OriqmZn" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="1rXfSq" id="2Fb$OriqmZo" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1n$7zJGW0W_" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2djiQ_FnLnM" role="3cqZAp">
+          <node concept="3cpWsn" id="2djiQ_FnLnN" role="3cpWs9">
+            <property role="TrG5h" value="seq5" />
+            <node concept="3uibUv" id="2djiQ_FnLnO" role="1tU5fm">
+              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+            </node>
+            <node concept="2OqwBi" id="2djiQ_FnLnP" role="33vP2m">
+              <node concept="1rXfSq" id="2djiQ_FnLnQ" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                <node concept="1rXfSq" id="2djiQ_FnLnR" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FnLnS" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="2OqwBi" id="2djiQ_FnLnT" role="37wK5m">
+                  <node concept="1rXfSq" id="2djiQ_FnLnU" role="2Oq$k0">
+                    <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
+                  </node>
+                  <node concept="liA8E" id="2djiQ_FnLnV" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FnLnW" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FnLnX" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2djiQ_FnLnY" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="2djiQ_FOk3f" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2djiQ_FkWB_" role="8Wnug">
+            <node concept="3cpWsn" id="2djiQ_FkWBA" role="3cpWs9">
+              <property role="TrG5h" value="seq3" />
+              <node concept="3uibUv" id="2djiQ_FkWBB" role="1tU5fm">
+                <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+              </node>
+              <node concept="1rXfSq" id="2djiQ_FkY7a" role="33vP2m">
+                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                <node concept="1rXfSq" id="2djiQ_FkYwN" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FkYVs" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FkZaZ" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OyU4B" resolve="Operation" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FkZoB" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+                </node>
+                <node concept="1rXfSq" id="2djiQ_FkZFL" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="MGgg6OyMT9" role="3cqZAp">
+          <node concept="1rXfSq" id="2Fb$OripLC3" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
+            <node concept="1rXfSq" id="3D1D54i3FRD" role="37wK5m">
+              <ref role="37wK5l" node="7mFAowR3TM1" resolve="Case" />
+            </node>
+            <node concept="37vLTw" id="2djiQ_FnVY$" role="37wK5m">
+              <ref role="3cqZAo" node="2djiQ_FnJUZ" resolve="seq4" />
+            </node>
+            <node concept="37vLTw" id="1n$7zJGW29V" role="37wK5m">
+              <ref role="3cqZAo" node="1n$7zJGVUjM" resolve="seq1" />
+            </node>
+            <node concept="37vLTw" id="1n$7zJGW4N0" role="37wK5m">
+              <ref role="3cqZAo" node="1n$7zJGVYEZ" resolve="seq2" />
+            </node>
+            <node concept="37vLTw" id="2djiQ_FnYGw" role="37wK5m">
+              <ref role="3cqZAo" node="2djiQ_FnLnN" resolve="seq5" />
+            </node>
+            <node concept="1rXfSq" id="2Fb$OripQOE" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OzreO" resolve="Number" />
+            </node>
+            <node concept="1rXfSq" id="2Fb$OripMAV" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6O_kvG" resolve="VariableName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OyL$p" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7mFAowR3QEa" role="jymVt" />
+    <node concept="3clFb_" id="7mFAowR3TM1" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Case" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7mFAowR3TM4" role="3clF47">
+        <node concept="3cpWs6" id="14FHJmVp3_d" role="3cqZAp">
+          <node concept="1rXfSq" id="3D1D54i3Jqa" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+            <node concept="1rXfSq" id="14FHJmVp4Gu" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
+              <node concept="Xl_RD" id="14FHJmVp5Qo" role="37wK5m">
+                <property role="Xl_RC" value="case" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="3D1D54i45gz" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
+            </node>
+            <node concept="1rXfSq" id="1uMmOZG9ocD" role="37wK5m">
+              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
+            </node>
+            <node concept="2OqwBi" id="3D1D54i51tJ" role="37wK5m">
+              <node concept="1rXfSq" id="3D1D54i4YXv" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
+                <node concept="2OqwBi" id="1uMmOZGgaOm" role="37wK5m">
+                  <node concept="1rXfSq" id="1uMmOZGe0fL" role="2Oq$k0">
+                    <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
+                    <node concept="1rXfSq" id="3D1D54i4V5I" role="37wK5m">
+                      <ref role="37wK5l" node="3D1D54i4nWi" resolve="CaseBasicExp" />
+                    </node>
+                    <node concept="1rXfSq" id="1uMmOZGdVV8" role="37wK5m">
+                      <ref role="37wK5l" node="7mFAowR3TM1" resolve="Case" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1uMmOZGgcpR" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3D1D54i52Uf" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="3D1D54i47Mr" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
+              <node concept="Xl_RD" id="3D1D54i491B" role="37wK5m">
+                <property role="Xl_RC" value="esac" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="7mFAowR3SwX" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3D1D54i4iJ3" role="jymVt" />
+    <node concept="3clFb_" id="3D1D54i4nWi" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="CaseBasicExp" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="3D1D54i4nWl" role="3clF47">
+        <node concept="3cpWs6" id="3D1D54i54kb" role="3cqZAp">
+          <node concept="1rXfSq" id="3D1D54i55Bs" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+            <node concept="1rXfSq" id="1uMmOZG9tMU" role="37wK5m">
+              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
+            </node>
+            <node concept="1rXfSq" id="3D1D54i58ez" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
+            </node>
+            <node concept="1rXfSq" id="3D1D54i5gW4" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
+              <node concept="Xl_RD" id="3D1D54i5ifu" role="37wK5m">
+                <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="1uMmOZG9r0o" role="37wK5m">
+              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
+            </node>
+            <node concept="1rXfSq" id="3D1D54i5m4S" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
+            </node>
+            <node concept="1rXfSq" id="3D1D54i5oJk" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
+              <node concept="Xl_RD" id="3D1D54i5q1p" role="37wK5m">
+                <property role="Xl_RC" value=";" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="3D1D54i5xAb" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="3D1D54i4lZV" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="40E4l6GDeuW" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OyU4B" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Operation" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OyU4E" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6OyUSv" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OyVyW" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
+            <node concept="37vLTw" id="2Fb$Oris95N" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$Oris6Ey" resolve="EQUAL" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OriseXm" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OriscjN" resolve="DIFF" />
+            </node>
+            <node concept="37vLTw" id="3D1D54i7mCF" role="37wK5m">
+              <ref role="3cqZAo" node="3D1D54i7f5Q" resolve="AND" />
+            </node>
+            <node concept="37vLTw" id="2Fb$Oris2iL" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OrirZDH" resolve="STAR" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OrirTy7" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OrirRV2" resolve="PLUS" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OrirViJ" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OrirObK" resolve="MINUS" />
+            </node>
+            <node concept="37vLTw" id="3D1D54i6Ve1" role="37wK5m">
+              <ref role="3cqZAo" node="3D1D54i4xYV" resolve="MINOR_EQ" />
+            </node>
+            <node concept="37vLTw" id="3D1D54i4JsD" role="37wK5m">
+              <ref role="3cqZAo" node="3D1D54i4tjR" resolve="LESS" />
+            </node>
+            <node concept="37vLTw" id="3D1D54i4R9U" role="37wK5m">
+              <ref role="3cqZAo" node="3D1D54i4G3u" resolve="MAJOR_EQ" />
+            </node>
+            <node concept="37vLTw" id="3D1D54i6Rlx" role="37wK5m">
+              <ref role="3cqZAo" node="3D1D54i4_LC" resolve="MAJOR" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OyToD" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2Fb$OriqNqa" role="jymVt" />
+    <node concept="3clFb_" id="2Fb$OriqPDK" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="UnaryCTLExpression" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2Fb$OriqPDN" role="3clF47">
+        <node concept="3cpWs6" id="2Fb$OriqQI3" role="3cqZAp">
+          <node concept="1rXfSq" id="2Fb$OriqR_s" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
+            <node concept="37vLTw" id="2Fb$OrirCez" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$Orirv$Z" resolve="AX" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OrirD9M" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OrirsN1" resolve="AG" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OrirEYS" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OrirnJF" resolve="AF" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OrirGEt" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$Orirx$P" resolve="EF" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OrirIm0" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OrirxZX" resolve="EG" />
+            </node>
+            <node concept="37vLTw" id="2Fb$OrirKbL" role="37wK5m">
+              <ref role="3cqZAo" node="2Fb$OrirzjU" resolve="EX" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2Fb$OriqO_i" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="h2BqpQOskW" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6O_kvG" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="VariableName" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6O_kvJ" role="3clF47">
+        <node concept="3SKdUt" id="1uMmOZGi3xf" role="3cqZAp">
+          <node concept="3SKdUq" id="1uMmOZGi3xh" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: take out the . from the list when we are parsing also the attributes of objects" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="MGgg6O_uge" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6O_tSK" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
+            <node concept="1rXfSq" id="MGgg6O_x8e" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
+              <node concept="Xl_RD" id="MGgg6O_xSd" role="37wK5m">
+                <property role="Xl_RC" value="_" />
+              </node>
+              <node concept="Xl_RD" id="MGgg6O_$6f" role="37wK5m">
+                <property role="Xl_RC" value="-" />
+              </node>
+              <node concept="Xl_RD" id="1uMmOZGhDZr" role="37wK5m">
+                <property role="Xl_RC" value="." />
+              </node>
+              <node concept="1rXfSq" id="MGgg6OAuXA" role="37wK5m">
+                <ref role="37wK5l" node="MGgg6OuX3k" resolve="CapitalLetter" />
+              </node>
+              <node concept="1rXfSq" id="MGgg6OAy2P" role="37wK5m">
+                <ref role="37wK5l" node="MGgg6Ov6h5" resolve="SmallLetter" />
+              </node>
+              <node concept="1rXfSq" id="MGgg6OAH3T" role="37wK5m">
+                <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6O_jIX" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6OEk2D" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6ODb62" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OuwzN" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Name" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OuwzQ" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6Oux7_" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OuzJh" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
+            <node concept="1rXfSq" id="MGgg6Ovguj" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
+              <node concept="1rXfSq" id="MGgg6OvhtC" role="37wK5m">
+                <ref role="37wK5l" node="MGgg6OuX3k" resolve="CapitalLetter" />
+              </node>
+              <node concept="1rXfSq" id="MGgg6Ovipm" role="37wK5m">
+                <ref role="37wK5l" node="MGgg6Ov6h5" resolve="SmallLetter" />
+              </node>
+              <node concept="1rXfSq" id="MGgg6OCRQI" role="37wK5m">
+                <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OuvYQ" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6ODc_a" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6OwsWU" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OuX3k" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="CapitalLetter" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OuX3n" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6OuX$0" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6Ou$lP" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.CharRange(char,char):org.parboiled.Rule" resolve="CharRange" />
+            <node concept="1Xhbcc" id="MGgg6Ou$PL" role="37wK5m">
+              <property role="1XhdNS" value="A" />
+            </node>
+            <node concept="1Xhbcc" id="MGgg6OuAeH" role="37wK5m">
+              <property role="1XhdNS" value="Z" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OuVE3" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6OChk$" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6Ov3cZ" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6Ov6h5" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="SmallLetter" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6Ov6h8" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6Ov6ML" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6Ov7aV" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.CharRange(char,char):org.parboiled.Rule" resolve="CharRange" />
+            <node concept="1Xhbcc" id="MGgg6Ov7aW" role="37wK5m">
+              <property role="1XhdNS" value="a" />
+            </node>
+            <node concept="1Xhbcc" id="MGgg6Ov7aX" role="37wK5m">
+              <property role="1XhdNS" value="z" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6Ov44l" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6OCk4A" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6Ozp2f" role="jymVt" />
+    <node concept="2tJIrI" id="MGgg6OErTy" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OzreO" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Number" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OzreR" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6Ozu$q" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OzvoZ" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
+            <node concept="1rXfSq" id="MGgg6Ozw7h" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6Ozqsw" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6OEtsx" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6OzrXV" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OztxX" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Digit" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6Ozty0" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6OzwM6" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6Ozxv9" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.CharRange(char,char):org.parboiled.Rule" resolve="CharRange" />
+            <node concept="1Xhbcc" id="MGgg6OzEkQ" role="37wK5m">
+              <property role="1XhdNS" value="0" />
+            </node>
+            <node concept="1Xhbcc" id="MGgg6OzCMi" role="37wK5m">
+              <property role="1XhdNS" value="9" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OzsMR" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6OCewb" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressSubnodes" resolve="SuppressSubnodes" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6OA3d6" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OA4RZ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="True" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OA4S2" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6OA5IL" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OA7yI" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+            <node concept="Xl_RD" id="MGgg6OA8iK" role="37wK5m">
+              <property role="Xl_RC" value="TRUE" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OA442" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6OA9Re" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OAbyy" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="False" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OAby_" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6OAcqK" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OAdi3" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+            <node concept="Xl_RD" id="MGgg6OAhns" role="37wK5m">
+              <property role="Xl_RC" value="FALSE" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OAaIP" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6Owp6N" role="jymVt" />
+    <node concept="2tJIrI" id="2Fb$Orirlq8" role="jymVt" />
+    <node concept="312cEg" id="2Fb$OrirnJF" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="AF" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$OrirmBN" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OrirnEL" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="1rXfSq" id="2Fb$Orirpj$" role="33vP2m">
+        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+        <node concept="Xl_RD" id="2Fb$Orirpt3" role="37wK5m">
+          <property role="Xl_RC" value="AF" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$OrirsN1" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="AG" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$OrirrFu" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OrirsHf" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="1rXfSq" id="2Fb$Orirvax" role="33vP2m">
+        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+        <node concept="Xl_RD" id="2Fb$Orirvfg" role="37wK5m">
+          <property role="Xl_RC" value="AG" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$Orirv$Z" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="AX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$Orirv_0" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$Orirv_1" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="1rXfSq" id="2Fb$Orirv_2" role="33vP2m">
+        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+        <node concept="Xl_RD" id="2Fb$Orirv_3" role="37wK5m">
+          <property role="Xl_RC" value="AX" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$Orirx$P" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="EF" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$Orirx$Q" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$Orirx$R" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="1rXfSq" id="2Fb$Orirx$S" role="33vP2m">
+        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+        <node concept="Xl_RD" id="2Fb$Orirx$T" role="37wK5m">
+          <property role="Xl_RC" value="EF" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$OrirxZX" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="EG" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$OrirxZY" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OrirxZZ" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="1rXfSq" id="2Fb$Oriry00" role="33vP2m">
+        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+        <node concept="Xl_RD" id="2Fb$Oriry01" role="37wK5m">
+          <property role="Xl_RC" value="EG" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$OrirzjU" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="EX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$OrirzjV" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OrirzjW" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="1rXfSq" id="2Fb$OrirzjX" role="33vP2m">
+        <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+        <node concept="Xl_RD" id="2Fb$OrirzjY" role="37wK5m">
+          <property role="Xl_RC" value="EX" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2Fb$Orirz6b" role="jymVt" />
+    <node concept="312cEg" id="2Fb$Oris6Ey" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="EQUAL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$Oris5s4" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$Oris6yO" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="1n$7zJGXh$t" role="33vP2m">
+        <node concept="1rXfSq" id="2Fb$Oris7SW" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="2Fb$Oris81X" role="37wK5m">
+            <property role="Xl_RC" value="=" />
+          </node>
+        </node>
+        <node concept="liA8E" id="1n$7zJGXiz4" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="1n$7zJGXjtL" role="37wK5m">
+            <property role="Xl_RC" value="EQUAL" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$OriscjN" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="DIFF" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$Orisb63" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OriscdJ" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="1n$7zJGX1F3" role="33vP2m">
+        <node concept="1rXfSq" id="2Fb$OrisdI_" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="2Fb$OrisdNk" role="37wK5m">
+            <property role="Xl_RC" value="!=" />
+          </node>
+        </node>
+        <node concept="liA8E" id="1n$7zJGX2Ed" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="1n$7zJGX3$B" role="37wK5m">
+            <property role="Xl_RC" value="DIFF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3D1D54i4tjR" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="LESS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3D1D54i4rw9" role="1B3o_S" />
+      <node concept="3uibUv" id="3D1D54i4tbn" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="3D1D54i4vN5" role="33vP2m">
+        <node concept="1rXfSq" id="3D1D54i4vk6" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="3D1D54i4vqw" role="37wK5m">
+            <property role="Xl_RC" value="&lt;" />
+          </node>
+        </node>
+        <node concept="liA8E" id="3D1D54i4w13" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="3D1D54i4wa8" role="37wK5m">
+            <property role="Xl_RC" value="LESS" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3D1D54i4xYV" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="MINOR_EQ" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3D1D54i4xYW" role="1B3o_S" />
+      <node concept="3uibUv" id="3D1D54i4xYX" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="3D1D54i4xYY" role="33vP2m">
+        <node concept="1rXfSq" id="3D1D54i4xYZ" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="3D1D54i4xZ0" role="37wK5m">
+            <property role="Xl_RC" value="&lt;=" />
+          </node>
+        </node>
+        <node concept="liA8E" id="3D1D54i4xZ1" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="3D1D54i4xZ2" role="37wK5m">
+            <property role="Xl_RC" value="LESS_EQ" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3D1D54i4_LC" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="MAJOR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3D1D54i4_LD" role="1B3o_S" />
+      <node concept="3uibUv" id="3D1D54i4_LE" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="3D1D54i4_LF" role="33vP2m">
+        <node concept="1rXfSq" id="3D1D54i4_LG" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="3D1D54i4_LH" role="37wK5m">
+            <property role="Xl_RC" value="&gt;" />
+          </node>
+        </node>
+        <node concept="liA8E" id="3D1D54i4_LI" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="3D1D54i4_LJ" role="37wK5m">
+            <property role="Xl_RC" value="GREATER" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3D1D54i4G3u" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="MAJOR_EQ" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3D1D54i4G3v" role="1B3o_S" />
+      <node concept="3uibUv" id="3D1D54i4G3w" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="3D1D54i4G3x" role="33vP2m">
+        <node concept="1rXfSq" id="3D1D54i4G3y" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="3D1D54i4G3z" role="37wK5m">
+            <property role="Xl_RC" value="&gt;=" />
+          </node>
+        </node>
+        <node concept="liA8E" id="3D1D54i4G3$" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="3D1D54i4G3_" role="37wK5m">
+            <property role="Xl_RC" value="GREATER_EQ" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="3D1D54i7f5Q" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="AND" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3D1D54i7dc_" role="1B3o_S" />
+      <node concept="3uibUv" id="3D1D54i7eZC" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="3D1D54i7hin" role="33vP2m">
+        <node concept="1rXfSq" id="3D1D54i7h0L" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="3D1D54i7h6g" role="37wK5m">
+            <property role="Xl_RC" value="&amp;" />
+          </node>
+        </node>
+        <node concept="liA8E" id="3D1D54i7huR" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="3D1D54i7hBs" role="37wK5m">
+            <property role="Xl_RC" value="AND" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3D1D54i4wmd" role="jymVt" />
+    <node concept="312cEg" id="1n$7zJGWOFx" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="ASSIGN" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1n$7zJGWNsQ" role="1B3o_S" />
+      <node concept="3uibUv" id="1n$7zJGWOA5" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="1n$7zJGWRH0" role="33vP2m">
+        <node concept="1rXfSq" id="1n$7zJGWQ3L" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="1n$7zJGWQhS" role="37wK5m">
+            <property role="Xl_RC" value=":=" />
+          </node>
+        </node>
+        <node concept="liA8E" id="1n$7zJGWRXp" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="1n$7zJGWS4T" role="37wK5m">
+            <property role="Xl_RC" value="ASSIGN" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2Fb$Oris4kz" role="jymVt" />
+    <node concept="312cEg" id="2Fb$OrirObK" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="MINUS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$OrirN20" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OrirO7w" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="1n$7zJGXm6h" role="33vP2m">
+        <node concept="1rXfSq" id="2Fb$OrirP$a" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="2Fb$OrirPFx" role="37wK5m">
+            <property role="Xl_RC" value="-" />
+          </node>
+        </node>
+        <node concept="liA8E" id="1n$7zJGXn5W" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="1n$7zJGXo1f" role="37wK5m">
+            <property role="Xl_RC" value="MINUS" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$OrirRV2" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="PLUS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$OrirQNj" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OrirRMD" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="1n$7zJGXp5f" role="33vP2m">
+        <node concept="1rXfSq" id="2Fb$OrirT8c" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="2Fb$OrirThd" role="37wK5m">
+            <property role="Xl_RC" value="+" />
+          </node>
+        </node>
+        <node concept="liA8E" id="1n$7zJGXq4i" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="1n$7zJGXqZS" role="37wK5m">
+            <property role="Xl_RC" value="PLUS" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="2Fb$OrirZDH" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="STAR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2Fb$OrirYsW" role="1B3o_S" />
+      <node concept="3uibUv" id="2Fb$OrirZ$z" role="1tU5fm">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2OqwBi" id="1n$7zJGXt$Q" role="33vP2m">
+        <node concept="1rXfSq" id="2Fb$Oris0Rw" role="2Oq$k0">
+          <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+          <node concept="Xl_RD" id="2Fb$Oris11P" role="37wK5m">
+            <property role="Xl_RC" value="*" />
+          </node>
+        </node>
+        <node concept="liA8E" id="1n$7zJGXuze" role="2OqNvi">
+          <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+          <node concept="Xl_RD" id="1n$7zJGXvtY" role="37wK5m">
+            <property role="Xl_RC" value="STAR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2Fb$OrirwCT" role="jymVt" />
+    <node concept="2tJIrI" id="2djiQ_FMWaH" role="jymVt" />
+    <node concept="2tJIrI" id="MGgg6OC_tz" role="jymVt" />
+    <node concept="2YIFZL" id="MGgg6OKxo8" role="jymVt">
+      <property role="TrG5h" value="importNuSMVFile" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OKxob" role="3clF47">
+        <node concept="3cpWs8" id="MGgg6OKG6r" role="3cqZAp">
+          <node concept="3cpWsn" id="MGgg6OKG6u" role="3cpWs9">
+            <property role="TrG5h" value="input" />
+            <node concept="17QB3L" id="MGgg6OKG6v" role="1tU5fm" />
+            <node concept="Xl_RD" id="MGgg6OKQDV" role="33vP2m">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="MGgg6OKFc9" role="3cqZAp" />
+        <node concept="SfApY" id="MGgg6OKBqH" role="3cqZAp">
+          <node concept="3clFbS" id="MGgg6OKBqI" role="SfCbr">
+            <node concept="3clFbF" id="MGgg6OKJAr" role="3cqZAp">
+              <node concept="37vLTI" id="MGgg6OKKA4" role="3clFbG">
+                <node concept="37vLTw" id="MGgg6OKJAq" role="37vLTJ">
+                  <ref role="3cqZAo" node="MGgg6OKG6u" resolve="input" />
+                </node>
+                <node concept="2YIFZM" id="MGgg6OKz3z" role="37vLTx">
+                  <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+                  <ref role="37wK5l" to="8oaq:~FileUtils.readFileToString(java.io.File,java.nio.charset.Charset):java.lang.String" resolve="readFileToString" />
+                  <node concept="37vLTw" id="21Qj5c0IyGX" role="37wK5m">
+                    <ref role="3cqZAo" node="MGgg6OKySG" resolve="file" />
+                  </node>
+                  <node concept="2YIFZM" id="MGgg6OKz3B" role="37wK5m">
+                    <ref role="1Pybhc" to="7x5y:~Charset" resolve="Charset" />
+                    <ref role="37wK5l" to="7x5y:~Charset.forName(java.lang.String):java.nio.charset.Charset" resolve="forName" />
+                    <node concept="Xl_RD" id="MGgg6OKz3C" role="37wK5m">
+                      <property role="Xl_RC" value="UTF8" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="MGgg6OKBqD" role="TEbGg">
+            <node concept="3clFbS" id="MGgg6OKBqE" role="TDEfX">
+              <node concept="3clFbF" id="MGgg6OKCv8" role="3cqZAp">
+                <node concept="2OqwBi" id="MGgg6OKCDg" role="3clFbG">
+                  <node concept="37vLTw" id="MGgg6OKCv7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="MGgg6OKBqF" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="MGgg6OKD6j" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWsn" id="MGgg6OKBqF" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="MGgg6OKBqG" role="1tU5fm">
+                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="MGgg6OKz4W" role="3cqZAp">
+          <node concept="3cpWsn" id="MGgg6OKz4X" role="3cpWs9">
+            <property role="TrG5h" value="parser" />
+            <node concept="3uibUv" id="5uReZOjGm4P" role="1tU5fm">
+              <ref role="3uigEE" node="63Mqfg9ORDV" resolve="NuSMVParser" />
+            </node>
+            <node concept="2YIFZM" id="5uReZOjFDGe" role="33vP2m">
+              <ref role="1Pybhc" to="6rs6:~Parboiled" resolve="Parboiled" />
+              <ref role="37wK5l" to="6rs6:~Parboiled.createParser(java.lang.Class,java.lang.Object...):org.parboiled.BaseParser" resolve="createParser" />
+              <node concept="3VsKOn" id="5uReZOjFDGf" role="37wK5m">
+                <ref role="3VsUkX" node="63Mqfg9ORDV" resolve="NuSMVParser" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2djiQ_FprkT" role="3cqZAp">
+          <node concept="3cpWsn" id="2djiQ_FprkU" role="3cpWs9">
+            <property role="TrG5h" value="test" />
+            <node concept="3uibUv" id="2djiQ_FprkV" role="1tU5fm">
+              <ref role="3uigEE" to="q96v:~ParsingResult" resolve="ParsingResult" />
+              <node concept="3qTvmN" id="2djiQ_FprIe" role="11_B2D" />
+            </node>
+            <node concept="2OqwBi" id="2djiQ_FpzCx" role="33vP2m">
+              <node concept="2ShNRf" id="2djiQ_FprUh" role="2Oq$k0">
+                <node concept="1pGfFk" id="2djiQ_FpyUl" role="2ShVmc">
+                  <ref role="37wK5l" to="4um0:~RecoveringParseRunner.&lt;init&gt;(org.parboiled.Rule)" resolve="RecoveringParseRunner" />
+                  <node concept="2OqwBi" id="2djiQ_Fpz2_" role="37wK5m">
+                    <node concept="37vLTw" id="2djiQ_Fpz2A" role="2Oq$k0">
+                      <ref role="3cqZAo" node="MGgg6OKz4X" resolve="parser" />
+                    </node>
+                    <node concept="liA8E" id="2djiQ_Fpz2B" role="2OqNvi">
+                      <ref role="37wK5l" node="63Mqfg9Pg7i" resolve="NuSMV" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2djiQ_Fp$ys" role="2OqNvi">
+                <ref role="37wK5l" to="4um0:~AbstractParseRunner.run(java.lang.String):org.parboiled.support.ParsingResult" resolve="run" />
+                <node concept="37vLTw" id="2djiQ_Fp_0o" role="37wK5m">
+                  <ref role="3cqZAo" node="MGgg6OKG6u" resolve="input" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="MGgg6OKz51" role="3cqZAp">
+          <node concept="3cpWsn" id="MGgg6OKz52" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="MGgg6OKz53" role="1tU5fm">
+              <ref role="3uigEE" to="q96v:~ParsingResult" resolve="ParsingResult" />
+              <node concept="3qTvmN" id="MGgg6OKz54" role="11_B2D" />
+            </node>
+            <node concept="2OqwBi" id="MGgg6OKz55" role="33vP2m">
+              <node concept="2ShNRf" id="MGgg6OKz56" role="2Oq$k0">
+                <node concept="1pGfFk" id="MGgg6OKz57" role="2ShVmc">
+                  <ref role="37wK5l" to="4um0:~BasicParseRunner.&lt;init&gt;(org.parboiled.Rule)" resolve="BasicParseRunner" />
+                  <node concept="2OqwBi" id="MGgg6OKz58" role="37wK5m">
+                    <node concept="37vLTw" id="MGgg6OKz59" role="2Oq$k0">
+                      <ref role="3cqZAo" node="MGgg6OKz4X" resolve="parser" />
+                    </node>
+                    <node concept="liA8E" id="MGgg6OKz5a" role="2OqNvi">
+                      <ref role="37wK5l" node="63Mqfg9Pg7i" resolve="NuSMV" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="MGgg6OKz5b" role="2OqNvi">
+                <ref role="37wK5l" to="4um0:~AbstractParseRunner.run(java.lang.String):org.parboiled.support.ParsingResult" resolve="run" />
+                <node concept="37vLTw" id="MGgg6OKz5c" role="37wK5m">
+                  <ref role="3cqZAo" node="MGgg6OKG6u" resolve="input" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="MGgg6OKz89" role="3cqZAp" />
+        <node concept="3cpWs6" id="41lSmsEqYYq" role="3cqZAp">
+          <node concept="37vLTw" id="2djiQ_FN0Ar" role="3cqZAk">
+            <ref role="3cqZAo" node="2djiQ_FprkU" resolve="test" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="MGgg6OKvF5" role="1B3o_S" />
+      <node concept="37vLTG" id="MGgg6OKySG" role="3clF46">
+        <property role="TrG5h" value="file" />
+        <node concept="3uibUv" id="21Qj5c0Iyxg" role="1tU5fm">
+          <ref role="3uigEE" to="guwi:~File" resolve="File" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="KeJktp3ig3" role="3clF45">
+        <ref role="3uigEE" to="q96v:~ParsingResult" resolve="ParsingResult" />
+        <node concept="3qTvmN" id="KeJktp3ig4" role="11_B2D" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6MHhKT2TPGn" role="jymVt" />
+    <node concept="2tJIrI" id="4C19r4_PZSo" role="jymVt" />
+    <node concept="2tJIrI" id="4C19r4_PZSf" role="jymVt" />
+    <node concept="3uibUv" id="4C19r4_QnhH" role="1zkMxy">
+      <ref role="3uigEE" node="4C19r4_Qje_" resolve="NuSMVBaseParser" />
+    </node>
+  </node>
+  <node concept="312cEu" id="4C19r4_Qje_">
+    <property role="3GE5qa" value="parser" />
+    <property role="TrG5h" value="NuSMVBaseParser" />
+    <node concept="2tJIrI" id="4C19r4_Qk0d" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6ODB19" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Str" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6ODB1c" role="3clF47">
+        <node concept="3cpWs6" id="MGgg6ODCzs" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OG9IP" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+            <node concept="1rXfSq" id="MGgg6OGbbw" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+            </node>
+            <node concept="1rXfSq" id="MGgg6ODDTE" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+              <node concept="37vLTw" id="MGgg6OE6UD" role="37wK5m">
+                <ref role="3cqZAo" node="MGgg6ODTfN" resolve="string" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="MGgg6OGgN6" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OwJpE" resolve="Space" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OD_vZ" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6ODHY0" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressNode" resolve="SuppressNode" />
+      </node>
+      <node concept="37vLTG" id="MGgg6ODTfN" role="3clF46">
+        <property role="TrG5h" value="string" />
+        <node concept="17QB3L" id="MGgg6OE9Jd" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1uMmOZFQ0Sk" role="jymVt" />
+    <node concept="3clFb_" id="1WSRfTw9zIZ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="CommentLines" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1WSRfTw9zJ2" role="3clF47">
+        <node concept="3cpWs8" id="1uMmOZFK0tF" role="3cqZAp">
+          <node concept="3cpWsn" id="1uMmOZFK0tG" role="3cpWs9">
+            <property role="TrG5h" value="string" />
+            <node concept="3uibUv" id="1uMmOZFK0tH" role="1tU5fm">
+              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+            </node>
+            <node concept="2OqwBi" id="1uMmOZFK2TB" role="33vP2m">
+              <node concept="2OqwBi" id="1uMmOZFHU1U" role="2Oq$k0">
+                <node concept="1rXfSq" id="1uMmOZFFOs_" role="2Oq$k0">
+                  <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="ZeroOrMore" />
+                  <node concept="1rXfSq" id="1uMmOZFHfv3" role="37wK5m">
+                    <ref role="37wK5l" to="6rs6:~BaseParser.TestNot(java.lang.Object):org.parboiled.Rule" resolve="TestNot" />
+                    <node concept="1rXfSq" id="1uMmOZFLKxl" role="37wK5m">
+                      <ref role="37wK5l" to="6rs6:~BaseParser.AnyOf(java.lang.String):org.parboiled.Rule" resolve="AnyOf" />
+                      <node concept="Xl_RD" id="1uMmOZFHi9A" role="37wK5m">
+                        <property role="Xl_RC" value="\n\r\f" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1uMmOZFIBdG" role="37wK5m">
+                    <node concept="37vLTw" id="4C19r4_QlC$" role="2Oq$k0">
+                      <ref role="3cqZAo" to="6rs6:~BaseParser.ANY" resolve="ANY" />
+                    </node>
+                    <node concept="liA8E" id="1uMmOZFICOd" role="2OqNvi">
+                      <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="1uMmOZFJC5F" role="2OqNvi">
+                  <ref role="37wK5l" to="6rs6:~Rule.suppressSubnodes():org.parboiled.Rule" resolve="suppressSubnodes" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1uMmOZG3k8S" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.label(java.lang.String):org.parboiled.Rule" resolve="label" />
+                <node concept="Xl_RD" id="1uMmOZG3lFn" role="37wK5m">
+                  <property role="Xl_RC" value="Comment" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1uMmOZFJ4lU" role="3cqZAp">
+          <node concept="3cpWsn" id="1uMmOZFJ4lV" role="3cpWs9">
+            <property role="TrG5h" value="line" />
+            <node concept="3uibUv" id="1uMmOZFJ4lW" role="1tU5fm">
+              <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+            </node>
+            <node concept="2OqwBi" id="1uMmOZFKwOq" role="33vP2m">
+              <node concept="1rXfSq" id="1WSRfTw9B9e" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                <node concept="1rXfSq" id="1uMmOZFFi$b" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
+                </node>
+                <node concept="2OqwBi" id="1uMmOZFKtPq" role="37wK5m">
+                  <node concept="1rXfSq" id="1WSRfTw9EkI" role="2Oq$k0">
+                    <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+                    <node concept="Xl_RD" id="1WSRfTw9FCN" role="37wK5m">
+                      <property role="Xl_RC" value="--" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1uMmOZFKvh2" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1uMmOZFK9q7" role="37wK5m">
+                  <ref role="3cqZAo" node="1uMmOZFK0tG" resolve="string" />
+                </node>
+                <node concept="1rXfSq" id="1uMmOZFH_t9" role="37wK5m">
+                  <ref role="37wK5l" node="MGgg6OvI52" resolve="NewLine" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1uMmOZG3ozI" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1WSRfTw9_zS" role="3cqZAp">
+          <node concept="1rXfSq" id="1uMmOZFPgXL" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Optional(java.lang.Object):org.parboiled.Rule" resolve="Optional" />
+            <node concept="2OqwBi" id="1uMmOZFPpbZ" role="37wK5m">
+              <node concept="1rXfSq" id="1uMmOZFFZgv" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
+                <node concept="37vLTw" id="1uMmOZFNGgZ" role="37wK5m">
+                  <ref role="3cqZAo" node="1uMmOZFJ4lV" resolve="line" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1uMmOZFPqCS" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="1WSRfTw9xYs" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="1uMmOZFQ2CI" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SkipNode" resolve="SkipNode" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4C19r4_Qk0C" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OwJpE" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="Space" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OwJpH" role="3clF47">
+        <node concept="3clFbF" id="MGgg6OwKd5" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OwKd4" role="3clFbG">
+            <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
+            <node concept="1rXfSq" id="MGgg6OwKVE" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.AnyOf(java.lang.String):org.parboiled.Rule" resolve="AnyOf" />
+              <node concept="Xl_RD" id="MGgg6OwLaf" role="37wK5m">
+                <property role="Xl_RC" value=" \t" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OwINH" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6OC75H" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressNode" resolve="SuppressNode" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="MGgg6OwIe7" role="jymVt" />
+    <node concept="3clFb_" id="MGgg6OvI52" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="NewLine" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="MGgg6OvI55" role="3clF47">
+        <node concept="3clFbF" id="MGgg6OvIM$" role="3cqZAp">
+          <node concept="1rXfSq" id="MGgg6OvIMz" role="3clFbG">
+            <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
+            <node concept="1rXfSq" id="MGgg6OynDJ" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.AnyOf(java.lang.String):org.parboiled.Rule" resolve="AnyOf" />
+              <node concept="Xl_RD" id="MGgg6OynN4" role="37wK5m">
+                <property role="Xl_RC" value=" \t\n\r\f" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="MGgg6OvHxt" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+      <node concept="2AHcQZ" id="MGgg6OC4iU" role="2AJF6D">
+        <ref role="2AI5Lk" to="igrg:~SuppressNode" resolve="SuppressNode" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4C19r4_QrUX" role="jymVt" />
+    <node concept="3Tm1VV" id="4C19r4_QjeA" role="1B3o_S" />
+    <node concept="3uibUv" id="4C19r4_QjZv" role="1zkMxy">
+      <ref role="3uigEE" to="6rs6:~BaseParser" resolve="BaseParser" />
+    </node>
   </node>
 </model>
 
