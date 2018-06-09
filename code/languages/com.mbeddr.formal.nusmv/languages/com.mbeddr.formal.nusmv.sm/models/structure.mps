@@ -126,7 +126,7 @@
     <property role="EcuMT" value="5536191589039455159" />
     <property role="TrG5h" value="TransitionsAssignment" />
     <property role="34LRSv" value="transitions assignment" />
-    <property role="R4oN_" value="next assignment specialized for transitions" />
+    <property role="R4oN_" value="transition assignment for state variable" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1VSYF" resolve="NextAssignment" />
     <node concept="1TJgyj" id="4NkweGhcVQg" role="1TKVEi">
       <property role="IQ2ns" value="5536191589039455632" />
@@ -202,6 +202,7 @@
     <property role="EcuMT" value="1810266507803548366" />
     <property role="TrG5h" value="TransitionsAssignmentForInternalVars" />
     <property role="34LRSv" value="transitions assignment for internal variables" />
+    <property role="R4oN_" value="transitions assignment for internal variables" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1VSYF" resolve="NextAssignment" />
     <node concept="1TJgyj" id="1$vmWKMqHFg" role="1TKVEi">
       <property role="IQ2ns" value="1810266507803548368" />

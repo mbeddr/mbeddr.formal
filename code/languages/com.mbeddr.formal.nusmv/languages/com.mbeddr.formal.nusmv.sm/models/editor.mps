@@ -1233,6 +1233,12 @@
   <node concept="24kQdi" id="3UuTDIOPiS8">
     <ref role="1XX52x" to="ahnd:3UuTDIOPiRI" resolve="StateVariableDeclaration" />
     <node concept="3EZMnI" id="3UuTDIOPiSa" role="2wV5jI">
+      <node concept="3F0ifn" id="7rbrGoVdIfy" role="3EZMnx">
+        <property role="3F0ifm" value="state variable" />
+        <node concept="VechU" id="7rbrGoVdIfK" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
       <node concept="3F0A7n" id="4NkweGhemQB" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>

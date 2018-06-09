@@ -132,6 +132,7 @@
     <property role="TrG5h" value="VariableDeclaration" />
     <property role="3GE5qa" value="vars" />
     <property role="34LRSv" value="variable declaration" />
+    <property role="R4oN_" value="variable declaration" />
     <ref role="1TJDcQ" node="7mSH3WmVxaO" resolve="VariableDeclarationBase" />
     <node concept="1TJgyj" id="6NmtaR1SVeb" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743387019" />
@@ -180,6 +181,7 @@
     <property role="TrG5h" value="AssignmentsSection" />
     <property role="3GE5qa" value="assign" />
     <property role="34LRSv" value="ASSIGN" />
+    <property role="R4oN_" value="assign section" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6NmtaR1UNOe" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
@@ -201,6 +203,7 @@
     <property role="3GE5qa" value="vars" />
     <property role="TrG5h" value="VariablesSection" />
     <property role="34LRSv" value="VAR" />
+    <property role="R4oN_" value="var section" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6NmtaR1UNN$" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743880932" />
@@ -218,6 +221,7 @@
     <property role="3GE5qa" value="assign" />
     <property role="TrG5h" value="InitAssignment" />
     <property role="34LRSv" value="init" />
+    <property role="R4oN_" value="init assignment" />
     <ref role="1TJDcQ" node="6NmtaR1UNOn" resolve="AbstractAssignment" />
     <node concept="1TJgyj" id="3YQnHt3vU0" role="1TKVEi">
       <property role="IQ2ns" value="71733767949909632" />
@@ -303,6 +307,7 @@
     <property role="3GE5qa" value="assign" />
     <property role="TrG5h" value="NextAssignment" />
     <property role="34LRSv" value="next" />
+    <property role="R4oN_" value="next assignment" />
     <ref role="1TJDcQ" node="6NmtaR1UNOn" resolve="AbstractAssignment" />
     <node concept="1TJgyj" id="3YQnHt3VFQ" role="1TKVEi">
       <property role="IQ2ns" value="71733767950023414" />
@@ -390,6 +395,7 @@
     <property role="TrG5h" value="DefineSection" />
     <property role="34LRSv" value="DEFINE" />
     <property role="3GE5qa" value="define" />
+    <property role="R4oN_" value="define section" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1IrBcRpiVFi" role="1TKVEi">
       <property role="IQ2ns" value="1989356068342053586" />
@@ -566,6 +572,7 @@
     <property role="TrG5h" value="FairnessSection" />
     <property role="34LRSv" value="FAIRNESS" />
     <property role="3GE5qa" value="fairness" />
+    <property role="R4oN_" value="fairness section" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mSH3Wnduvy" role="1TKVEi">
       <property role="IQ2ns" value="8482728081217677282" />
@@ -625,6 +632,7 @@
     <property role="TrG5h" value="InitSection" />
     <property role="3GE5qa" value="init" />
     <property role="34LRSv" value="INIT" />
+    <property role="R4oN_" value="init section" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7mSH3WnuJC_" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
@@ -693,6 +701,7 @@
     <property role="TrG5h" value="TransSection" />
     <property role="34LRSv" value="TRANS" />
     <property role="3GE5qa" value="trans" />
+    <property role="R4oN_" value="trans section" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7mSH3WnvMF7" role="1TKVEi">
       <property role="IQ2ns" value="8482728081222478535" />
@@ -1024,6 +1033,7 @@
     <property role="EcuMT" value="2707707741261635555" />
     <property role="TrG5h" value="DocumentationLine" />
     <property role="34LRSv" value="--" />
+    <property role="R4oN_" value="documentation line" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2mjHtwTuqz_" role="1TKVEl">
       <property role="IQ2nx" value="2707707741261637861" />
