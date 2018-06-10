@@ -1,0 +1,13 @@
+-- test for arithmetic expressions
+-------------------------------------------------------------------------
+
+MODULE m1(p, q)
+DEFINE
+  p_plus_q := p + q;
+  p_plus_q_plus_1 := p + q + 1;
+  -- TODO: p_minus_2_plus_q_plus_1 := p - 2 + q + 1;
+  p_plus_q_minus_1 := p + q - 1;
+  p_multiply_q := p * q;
+  p_multiply_q_plus_1 := p * q + 1;
+  p_plus_2_multiply_3 := (p + 2) * 3;
+  -- TODO: p_minus_2_multiply_q := p - 2 * q;	

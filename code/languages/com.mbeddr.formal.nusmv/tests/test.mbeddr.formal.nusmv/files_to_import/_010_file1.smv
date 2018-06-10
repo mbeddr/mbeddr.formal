@@ -1,0 +1,19 @@
+-- first some commment lines
+--
+-------------------------------------------------------------------------
+
+MODULE m1(par1, par2)
+-- comment line
+VAR last: {zero, one};
+DEFINE
+  out := last;
+-- another comment line
+
+ASSIGN
+  init(last) := 0;
+-- some inner comment
+  next(last) := case
+                  !par1: last;
+                  TRUE: par2;
+                esac;
+

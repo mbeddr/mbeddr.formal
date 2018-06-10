@@ -1,0 +1,12 @@
+-- test for comparison expressions
+-------------------------------------------------------------------------
+
+MODULE comparison_exps_tests(p, q)
+DEFINE
+  p_equals1_q := p = q;
+  p_notEquals_q := p != q;
+  p_smaller_q := p < q;
+  p_smaller_equal_q := p <= q;
+  p_greater_42 := p > 42;
+  p_greater_equal_42 := p >= 42;
+  

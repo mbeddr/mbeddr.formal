@@ -1,0 +1,10 @@
+-- var section
+-------------------------------
+
+MODULE module_with_many_vars()
+VAR
+  flag_var : boolean;
+  -- first comment line
+  enum_var : {idle, start, run};
+  range_var : 0..3;
+  -- second comment line

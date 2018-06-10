@@ -29,6 +29,11 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -352,6 +357,39 @@
         <node concept="l2Vlx" id="4C19r4_YqJA" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="4C19r4_Yqnq" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="41yfEs6hm3_">
+    <ref role="1XX52x" to="l8i4:41yfEs6hm3y" resolve="ImporterWarning" />
+    <node concept="3EZMnI" id="41yfEs6i0rV" role="2wV5jI">
+      <node concept="2iRkQZ" id="41yfEs6i0rW" role="2iSdaV" />
+      <node concept="3EZMnI" id="41yfEs6hm3B" role="3EZMnx">
+        <node concept="3F0ifn" id="41yfEs6hm3I" role="3EZMnx">
+          <property role="3F0ifm" value="-- WARNING: the NuSMV importer is EXPERIMENTAL. " />
+          <node concept="VechU" id="41yfEs6ht9x" role="3F10Kt">
+            <property role="Vb096" value="red" />
+          </node>
+          <node concept="Veino" id="41yfEs6htaU" role="3F10Kt">
+            <property role="Vb096" value="yellow" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="41yfEs6hm3E" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="41yfEs6i0sg" role="3EZMnx">
+        <node concept="VPM3Z" id="41yfEs6i0si" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="41yfEs6i0sk" role="3EZMnx">
+          <property role="3F0ifm" value="   Imported model can be only used as a baseline and must be manually checked!" />
+          <node concept="VechU" id="41yfEs6i0sw" role="3F10Kt">
+            <property role="Vb096" value="red" />
+          </node>
+          <node concept="Veino" id="41yfEs6i0sx" role="3F10Kt">
+            <property role="Vb096" value="yellow" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="41yfEs6i0sl" role="2iSdaV" />
+      </node>
     </node>
   </node>
 </model>
