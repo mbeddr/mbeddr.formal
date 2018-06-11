@@ -23,7 +23,13 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -49,6 +55,16 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781866635522" name="com.mbeddr.formal.nusmv.structure.ConditionalExpression" flags="ng" index="d4bQV">
+        <child id="2295987781866647186" name="thenExpr" index="d498F" />
+        <child id="2295987781866647191" name="elseExpr" index="d498I" />
+        <child id="2295987781866647183" name="cond" index="d498Q" />
+      </concept>
+      <concept id="2295987781863305066" name="com.mbeddr.formal.nusmv.structure.IntervalType" flags="ng" index="dhpfj">
+        <child id="2295987781863305067" name="left" index="dhpfi" />
+        <child id="2295987781863305070" name="right" index="dhpfn" />
+      </concept>
+      <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
         <child id="7842584090744231298" name="guard" index="2H9I4J" />
@@ -129,17 +145,65 @@
       <concept id="2707707741270310075" name="com.mbeddr.formal.base.operatorspanel.structure.HorizontalCollection" flags="ng" index="sr$_z">
         <child id="2707707741270310145" name="elements" index="sr$zp" />
       </concept>
+      <concept id="3659044908399975531" name="com.mbeddr.formal.base.operatorspanel.structure.GaugeDisplay" flags="ng" index="sD_mu">
+        <property id="3659044908399975537" name="percentFirstLayer" index="sD_m4" />
+        <property id="3659044908399975536" name="defaultVal" index="sD_m5" />
+        <property id="3659044908399975538" name="percentSecondLayer" index="sD_m7" />
+        <property id="3659044908399975535" name="maxVal" index="sD_mq" />
+        <property id="3659044908399975534" name="minVal" index="sD_mr" />
+        <property id="8896547661045687572" name="smallTicksBetweenIncrement" index="1cwKvy" />
+        <property id="8896547661045653549" name="tickIncrement" index="1cwSbr" />
+        <property id="8896547661045871668" name="height" index="1cz_r2" />
+        <property id="8896547661045198849" name="gaugeTitle" index="1cA9bR" />
+        <child id="3659044908399975533" name="colorThird" index="sD_mo" />
+        <child id="3659044908399975532" name="colorSecond" index="sD_mp" />
+        <child id="2545461130542856218" name="colorFirst" index="18KndN" />
+        <child id="8896547661045181500" name="actualVal" index="1cAcVa" />
+      </concept>
       <concept id="2511949984575733396" name="com.mbeddr.formal.base.operatorspanel.structure.ConstantStringValueProvider" flags="ng" index="2uWKeB">
         <property id="2511949984575733401" name="text" index="2uWKeE" />
       </concept>
+      <concept id="2545461130543926247" name="com.mbeddr.formal.base.operatorspanel.structure.XYChart" flags="ng" index="18Ws2e">
+        <property id="8896547661042649094" name="seriesName" index="1cGmFK" />
+        <property id="8896547661042978940" name="height" index="1cIBaa" />
+        <property id="8896547661042979215" name="width" index="1cIBdT" />
+        <property id="8896547661043060224" name="yTitle" index="1cIMNQ" />
+        <property id="8896547661043060503" name="xTitle" index="1cIMRx" />
+        <child id="8896547661042497234" name="list" index="1cGXg$" />
+      </concept>
+      <concept id="8896547661042488063" name="com.mbeddr.formal.base.operatorspanel.structure.XYElement" flags="ng" index="1cGZ09">
+        <property id="8896547661042488483" name="y" index="1cGZpl" />
+        <property id="8896547661042488372" name="x" index="1cGZr2" />
+      </concept>
+      <concept id="306981062898279371" name="com.mbeddr.formal.base.operatorspanel.structure.TankLevelDisplay" flags="ng" index="1M$7TH">
+        <property id="5406388886941949082" name="title" index="CN0qm" />
+        <property id="8896547661041134882" name="numberOfLines" index="1cLCZk" />
+        <property id="306981062898279374" name="width" index="1M$7TC" />
+        <property id="306981062898279375" name="height" index="1M$7TD" />
+        <property id="306981062900381015" name="defaultLevel" index="1MG6zL" />
+        <property id="306981062900380786" name="maxLevel" index="1MG6Bk" />
+        <property id="306981062900380559" name="minLevel" index="1MG6SD" />
+        <child id="5406388886941969966" name="actualLevel" index="CNfgy" />
+      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744245770" name="com.mbeddr.formal.base.expressions.structure.PlusExpression" flags="ng" index="2H9FEB" />
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
+      <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
+        <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
+      <concept id="1989356068341840849" name="com.mbeddr.formal.base.expressions.structure.ParensExpression" flags="ng" index="32OYss" />
+      <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
+        <child id="1989356068341840820" name="exp" index="32OYtT" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -168,9 +232,14 @@
         <child id="4678075609353201562" name="testCases" index="1J0nHx" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="71733767949060574" name="com.mbeddr.formal.base.structure.CurrentSimulationValueAnnotation" flags="ng" index="1tZX2_">
+        <property id="71733767949060581" name="value" index="1tZX2u" />
+      </concept>
+    </language>
   </registry>
   <node concept="shuUa" id="2mjHtwTPP$O">
-    <property role="TrG5h" value="traffic_lights" />
+    <property role="TrG5h" value="_010_traffic_lights_panel" />
     <node concept="sr$_z" id="2mjHtwU00_a" role="shf50">
       <node concept="sr$_z" id="3G$pWQNtnoQ" role="sr$zp">
         <node concept="shuHB" id="2mjHtwTPWmu" role="sr$zp">
@@ -472,7 +541,7 @@
     </node>
   </node>
   <node concept="2HdtXS" id="2mjHtwTRpHQ">
-    <property role="TrG5h" value="tlc" />
+    <property role="TrG5h" value="_010_tlc" />
     <node concept="2Hdtz0" id="2mjHtwTRpHS" role="2HcuB8">
       <property role="TrG5h" value="simple_traffic_lights_controller" />
       <node concept="32O2o0" id="2mjHtwTRpI3" role="2HcbjO">
@@ -583,7 +652,7 @@
     </node>
   </node>
   <node concept="1J0nZ8" id="2mjHtwTRpUY">
-    <property role="TrG5h" value="tlc_tests" />
+    <property role="TrG5h" value="_010_tlc_tests" />
     <node concept="1J0nI2" id="2mjHtwTRq0J" role="1J0nHx">
       <property role="TrG5h" value="test_case1" />
       <ref role="1J0niy" node="2mjHtwTRpHS" resolve="simple_traffic_lights_controller" />
@@ -642,6 +711,218 @@
           <ref role="2HeeqO" node="2mjHtwTRpJO" resolve="Red" />
         </node>
         <node concept="1yCjRe" id="2bsfjeWdK8D" role="1J0m7K" />
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="7HQSJoRVqoh">
+    <property role="TrG5h" value="_020_speedometer" />
+    <node concept="2Hdtz0" id="7HQSJoRVqoi" role="2HcuB8">
+      <property role="TrG5h" value="acceleration_controller" />
+      <node concept="32O2o0" id="7HQSJoRVqoj" role="2HcbjO">
+        <node concept="1zoerA" id="7HQSJoRVqom" role="32O2ov">
+          <property role="TrG5h" value="speed" />
+          <node concept="2He$iJ" id="7HQSJoRVrvh" role="1zoetD">
+            <ref role="2He$iI" node="7HQSJoRVqRu" resolve="current_speed" />
+          </node>
+          <node concept="1tZX2_" id="6EX6UkDPqSi" role="lGtFl">
+            <property role="1tZX2u" value="50" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="7HQSJoRVqoq" role="2HcbjO">
+        <node concept="2Hdskp" id="7HQSJoRVqRu" role="2Hfkx9">
+          <property role="TrG5h" value="current_speed" />
+          <node concept="dhpfj" id="7HQSJoRVqVw" role="2HdssA">
+            <node concept="2IPVmt" id="7HQSJoRVqVv" role="dhpfi">
+              <property role="2IPVms" value="0" />
+            </node>
+            <node concept="2IPVmt" id="7HQSJoRVqWL" role="dhpfn">
+              <property role="2IPVms" value="200" />
+            </node>
+          </node>
+          <node concept="1tZX2_" id="6EX6UkDPqSf" role="lGtFl">
+            <property role="1tZX2u" value="50" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="7HQSJoRVqow" role="2HcbjO">
+        <node concept="2HfkAV" id="7HQSJoRVr6f" role="2HfkAP">
+          <node concept="2He$iJ" id="7HQSJoRVr7h" role="2He$ia">
+            <ref role="2He$iI" node="7HQSJoRVqRu" resolve="current_speed" />
+          </node>
+          <node concept="2IPVmt" id="7HQSJoRVr8n" role="2He$i0">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+        <node concept="2HevG6" id="7HQSJoRVrai" role="2HfkAP">
+          <node concept="2He$iJ" id="7HQSJoRVrbq" role="2He$ia">
+            <ref role="2He$iI" node="7HQSJoRVqRu" resolve="current_speed" />
+          </node>
+          <node concept="2H9I2B" id="7HQSJoRVrdk" role="2He$i0">
+            <node concept="2H9I2A" id="7HQSJoRVrfX" role="2H9I2x">
+              <node concept="32Ogvo" id="7HQSJoRVrh0" role="2H9I4J">
+                <ref role="32Ogvr" node="7HQSJoRVqoV" resolve="accelerate" />
+                <node concept="1tZX2_" id="6EX6UkDPqSl" role="lGtFl">
+                  <property role="1tZX2u" value="FALSE" />
+                </node>
+              </node>
+              <node concept="d4bQV" id="4G7mwLzM6qG" role="2H9I4_">
+                <node concept="2IPVmt" id="4G7mwLzM6wI" role="d498I">
+                  <property role="2IPVms" value="200" />
+                </node>
+                <node concept="32OYss" id="4G7mwLzM6n8" role="d498Q">
+                  <node concept="nE0YL" id="4G7mwLzM6n9" role="32OYtT">
+                    <node concept="2He$iJ" id="4G7mwLzM69_" role="2H9Iav">
+                      <ref role="2He$iI" node="7HQSJoRVqRu" resolve="current_speed" />
+                    </node>
+                    <node concept="2IPVmt" id="4G7mwLzM6na" role="2H9Ial">
+                      <property role="2IPVms" value="175" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2H9FEB" id="7HQSJoRVrmq" role="d498F">
+                  <node concept="2IPVmt" id="7HQSJoRVroa" role="2H9Ial">
+                    <property role="2IPVms" value="25" />
+                  </node>
+                  <node concept="2He$iJ" id="7HQSJoRVrlm" role="2H9Iav">
+                    <ref role="2He$iI" node="7HQSJoRVqRu" resolve="current_speed" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2H9I2A" id="4G7mwLzM6Ey" role="2H9I2x">
+              <node concept="1yCjRe" id="4G7mwLzM6G2" role="2H9I4J" />
+              <node concept="2He$iJ" id="4G7mwLzM6H3" role="2H9I4_">
+                <ref role="2He$iI" node="7HQSJoRVqRu" resolve="current_speed" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="7HQSJoRVqoV" role="2Hdtzq">
+        <property role="TrG5h" value="accelerate" />
+        <node concept="1tZX2_" id="6EX6UkDPqSo" role="lGtFl">
+          <property role="1tZX2u" value="FALSE" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1J0nZ8" id="7HQSJoRVrzH">
+    <property role="TrG5h" value="_020_speedometer_tests" />
+    <node concept="1J0nI2" id="7HQSJoRVrzI" role="1J0nHx">
+      <property role="TrG5h" value="acceleration_test_case1" />
+      <ref role="1J0niy" node="7HQSJoRVqoi" resolve="acceleration_controller" />
+      <node concept="1J0m7Y" id="7HQSJoRVrY3" role="1J0m7J">
+        <node concept="1yCjRe" id="7HQSJoRVs5T" role="1J0m7X" />
+        <node concept="2IPVmt" id="7HQSJoRVs6T" role="1J0m7K">
+          <property role="2IPVms" value="20" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="7HQSJoRVs9C" role="1J0m7J">
+        <node concept="1yCjRe" id="7HQSJoRVsaK" role="1J0m7X" />
+        <node concept="2IPVmt" id="7HQSJoRVsbK" role="1J0m7K">
+          <property role="2IPVms" value="70" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4G7mwLzM1mK" role="1J0m7J">
+        <node concept="1yCjT0" id="4G7mwLzM1qG" role="1J0m7X" />
+        <node concept="2IPVmt" id="4G7mwLzM1mM" role="1J0m7K">
+          <property role="2IPVms" value="20" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="shuUa" id="7HQSJoRVsER">
+    <property role="TrG5h" value="_020_speedometer" />
+    <node concept="18Ws2e" id="6EX6UkDPjaQ" role="shf50">
+      <property role="1cIMRx" value="X" />
+      <property role="1cIMNQ" value="Y" />
+      <property role="1cIBdT" value="800" />
+      <property role="1cIBaa" value="300" />
+      <property role="1cGmFK" value="this is a serie" />
+      <node concept="1cGZ09" id="6EX6UkDPjaR" role="1cGXg$">
+        <property role="1cGZr2" value="12" />
+        <property role="1cGZpl" value="25" />
+      </node>
+      <node concept="1cGZ09" id="6EX6UkDPjaS" role="1cGXg$">
+        <property role="1cGZr2" value="15" />
+        <property role="1cGZpl" value="31" />
+      </node>
+      <node concept="1cGZ09" id="6EX6UkDPjaT" role="1cGXg$">
+        <property role="1cGZr2" value="25" />
+        <property role="1cGZpl" value="14" />
+      </node>
+      <node concept="1cGZ09" id="6EX6UkDPjaU" role="1cGXg$">
+        <property role="1cGZr2" value="31" />
+        <property role="1cGZpl" value="18" />
+      </node>
+      <node concept="28kP9e" id="6EX6UkDPjaW" role="28kP63" />
+    </node>
+    <node concept="sr$_z" id="4G7mwLzMeZ5" role="shf50">
+      <node concept="sD_mu" id="7HQSJoS04B3" role="sr$zp">
+        <property role="1cz_r2" value="300" />
+        <property role="1cA9bR" value="Speedometer" />
+        <property role="sD_mr" value="0" />
+        <property role="sD_m5" value="45" />
+        <property role="1cwKvy" value="4" />
+        <property role="1cwSbr" value="20" />
+        <property role="sD_m4" value="35" />
+        <property role="sD_m7" value="35" />
+        <property role="sD_mq" value="200" />
+        <node concept="28kP9e" id="7HQSJoS04B5" role="18KndN">
+          <property role="28kP99" value="50" />
+          <property role="28kP95" value="255" />
+          <property role="28kP92" value="50" />
+        </node>
+        <node concept="28kP9e" id="7HQSJoS04B6" role="sD_mp">
+          <property role="28kP99" value="255" />
+          <property role="28kP95" value="165" />
+          <property role="28kP92" value="0" />
+        </node>
+        <node concept="28kP9e" id="7HQSJoS04B7" role="sD_mo">
+          <property role="28kP99" value="255" />
+          <property role="28kP95" value="50" />
+          <property role="28kP92" value="0" />
+        </node>
+        <node concept="28kP9e" id="7HQSJoS04B9" role="28kP63" />
+        <node concept="sjWqJ" id="4G7mwLzLNsq" role="1cAcVa">
+          <ref role="sjWCb" node="7HQSJoRVqom" resolve="speed" />
+          <node concept="sjofy" id="4G7mwLzM7H_" role="sjsS3">
+            <node concept="3clFbS" id="4G7mwLzM7HA" role="2VODD2">
+              <node concept="3clFbF" id="4G7mwLzM89I" role="3cqZAp">
+                <node concept="2YIFZM" id="4G7mwLzM8HK" role="3clFbG">
+                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="sjv21" id="4G7mwLzM9cM" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1M$7TH" id="4G7mwLzMfnc" role="sr$zp">
+        <property role="1M$7TD" value="300" />
+        <property role="1M$7TC" value="120" />
+        <property role="1MG6SD" value="0" />
+        <property role="1MG6Bk" value="200" />
+        <property role="CN0qm" value="Speedometer" />
+        <property role="1MG6zL" value="50" />
+        <property role="1cLCZk" value="8" />
+        <node concept="28kP9e" id="4G7mwLzMfne" role="28kP63" />
+        <node concept="sjWqJ" id="4G7mwLzOsI7" role="CNfgy">
+          <ref role="sjWCb" node="7HQSJoRVqom" resolve="speed" />
+          <node concept="sjofy" id="4G7mwLzOMPX" role="sjsS3">
+            <node concept="3clFbS" id="4G7mwLzOMPY" role="2VODD2">
+              <node concept="3clFbF" id="4G7mwLzON8M" role="3cqZAp">
+                <node concept="2YIFZM" id="4G7mwLzOOgs" role="3clFbG">
+                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="sjv21" id="4G7mwLzOO$d" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

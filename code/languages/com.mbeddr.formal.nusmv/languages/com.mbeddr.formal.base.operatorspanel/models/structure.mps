@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -246,6 +247,262 @@
     </node>
     <node concept="PrWs8" id="2bsfjeWbNUl" role="PzmwI">
       <ref role="PrY4T" node="2bsfjeWbeM2" resolve="IStringValueProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="h2BqpQOIfb">
+    <property role="EcuMT" value="306981062898279371" />
+    <property role="TrG5h" value="TankLevelDisplay" />
+    <property role="3GE5qa" value="shapes" />
+    <property role="34LRSv" value="tank level display" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4G7mwLzMPMq" role="1TKVEl">
+      <property role="IQ2nx" value="5406388886941949082" />
+      <property role="TrG5h" value="title" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="h2BqpQOIfe" role="1TKVEl">
+      <property role="IQ2nx" value="306981062898279374" />
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="h2BqpQOIff" role="1TKVEl">
+      <property role="IQ2nx" value="306981062898279375" />
+      <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="h2BqpQOIfg" role="1TKVEl">
+      <property role="IQ2nx" value="306981062898279376" />
+      <property role="TrG5h" value="fontSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="h2BqpQWJef" role="1TKVEl">
+      <property role="IQ2nx" value="306981062900380559" />
+      <property role="TrG5h" value="minLevel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="h2BqpQWJhM" role="1TKVEl">
+      <property role="IQ2nx" value="306981062900380786" />
+      <property role="TrG5h" value="maxLevel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="h2BqpQWJln" role="1TKVEl">
+      <property role="IQ2nx" value="306981062900381015" />
+      <property role="TrG5h" value="defaultLevel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRG6Oy" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661041134882" />
+      <property role="TrG5h" value="numberOfLines" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="h2BqpQOIfh" role="PzmwI">
+      <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    </node>
+    <node concept="PrWs8" id="h2BqpQOIfi" role="PzmwI">
+      <ref role="PrY4T" node="3G$pWQNtNpd" resolve="IColoredShape" />
+    </node>
+    <node concept="1TJgyj" id="4G7mwLzMUSI" role="1TKVEi">
+      <property role="IQ2ns" value="5406388886941969966" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actualLevel" />
+      <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3b7yvkIotLF">
+    <property role="EcuMT" value="3659044908399975531" />
+    <property role="TrG5h" value="GaugeDisplay" />
+    <property role="3GE5qa" value="shapes" />
+    <property role="34LRSv" value="gauge display" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7HQSJoRYbgO" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661045871668" />
+      <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRVB01" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661045198849" />
+      <property role="TrG5h" value="gaugeTitle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7HQSJoRVyKW" role="1TKVEi">
+      <property role="IQ2ns" value="8896547661045181500" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actualVal" />
+      <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
+    </node>
+    <node concept="1TJgyj" id="2djiQ_F$zwq" role="1TKVEi">
+      <property role="IQ2ns" value="2545461130542856218" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="colorFirst" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
+    </node>
+    <node concept="1TJgyj" id="3b7yvkIotLG" role="1TKVEi">
+      <property role="IQ2ns" value="3659044908399975532" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="colorSecond" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
+    </node>
+    <node concept="1TJgyj" id="3b7yvkIotLH" role="1TKVEi">
+      <property role="IQ2ns" value="3659044908399975533" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="colorThird" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
+    </node>
+    <node concept="1TJgyi" id="3b7yvkIotLI" role="1TKVEl">
+      <property role="IQ2nx" value="3659044908399975534" />
+      <property role="TrG5h" value="minVal" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3b7yvkIotLJ" role="1TKVEl">
+      <property role="IQ2nx" value="3659044908399975535" />
+      <property role="TrG5h" value="maxVal" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3b7yvkIotLK" role="1TKVEl">
+      <property role="IQ2nx" value="3659044908399975536" />
+      <property role="TrG5h" value="defaultVal" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3b7yvkIotLL" role="1TKVEl">
+      <property role="IQ2nx" value="3659044908399975537" />
+      <property role="TrG5h" value="percentFirstLayer" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3b7yvkIotLM" role="1TKVEl">
+      <property role="IQ2nx" value="3659044908399975538" />
+      <property role="TrG5h" value="percentSecondLayer" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRXm0H" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661045653549" />
+      <property role="TrG5h" value="tickIncrement" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRXukk" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661045687572" />
+      <property role="TrG5h" value="smallTicksBetweenIncrement" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="3b7yvkIotLO" role="PzmwI">
+      <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    </node>
+    <node concept="PrWs8" id="3b7yvkIotLP" role="PzmwI">
+      <ref role="PrY4T" node="3G$pWQNtNpd" resolve="IColoredShape" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3b7yvkI_kEZ">
+    <property role="EcuMT" value="3659044908403346111" />
+    <property role="3GE5qa" value="shapes" />
+    <property role="TrG5h" value="BarChart" />
+    <property role="34LRSv" value="bar chart" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3b7yvkIA2RF" role="PzmwI">
+      <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    </node>
+    <node concept="PrWs8" id="3b7yvkIA2O8" role="PzmwI">
+      <ref role="PrY4T" node="3G$pWQNtNpd" resolve="IColoredShape" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRQvID" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661043858345" />
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRQvKo" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661043858456" />
+      <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRQvNP" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661043858677" />
+      <property role="TrG5h" value="serieTitle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRQvTQ" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661043859062" />
+      <property role="TrG5h" value="xTitle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRQvXn" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661043859287" />
+      <property role="TrG5h" value="yTitle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7HQSJoRQxJo" role="1TKVEi">
+      <property role="IQ2ns" value="8896547661043866584" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7HQSJoRLhbZ" resolve="XYElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2djiQ_FCCJB">
+    <property role="EcuMT" value="2545461130543926247" />
+    <property role="3GE5qa" value="shapes" />
+    <property role="TrG5h" value="XYChart" />
+    <property role="34LRSv" value="xy chart" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7HQSJoRN91W" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661042978940" />
+      <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRN96f" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661042979215" />
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRNsWn" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661043060503" />
+      <property role="TrG5h" value="xTitle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRNsS0" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661043060224" />
+      <property role="TrG5h" value="yTitle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2djiQ_FCFfd" role="PzmwI">
+      <ref role="PrY4T" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
+    </node>
+    <node concept="PrWs8" id="2djiQ_FCFiH" role="PzmwI">
+      <ref role="PrY4T" node="3G$pWQNtNpd" resolve="IColoredShape" />
+    </node>
+    <node concept="1TJgyj" id="7HQSJoRLjri" role="1TKVEi">
+      <property role="IQ2ns" value="8896547661042497234" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7HQSJoRLhbZ" resolve="XYElement" />
+    </node>
+    <node concept="1TJgyj" id="4G7mwLzY2dg" role="1TKVEi">
+      <property role="IQ2ns" value="5406388886944883536" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="provider" />
+      <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRLSw6" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661042649094" />
+      <property role="TrG5h" value="seriesName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7HQSJoRLhbZ">
+    <property role="EcuMT" value="8896547661042488063" />
+    <property role="3GE5qa" value="shapes" />
+    <property role="TrG5h" value="XYElement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7HQSJoRLhgO" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661042488372" />
+      <property role="TrG5h" value="x" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7HQSJoRLhiz" role="1TKVEl">
+      <property role="IQ2nx" value="8896547661042488483" />
+      <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
