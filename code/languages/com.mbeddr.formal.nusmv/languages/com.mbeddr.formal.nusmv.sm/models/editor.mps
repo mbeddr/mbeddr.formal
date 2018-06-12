@@ -2182,6 +2182,9 @@
                     <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
+                <node concept="VechU" id="40lCrc7U8ia" role="3F10Kt">
+                  <property role="Vb096" value="gray" />
+                </node>
               </node>
               <node concept="3F0ifn" id="3cHtG5tTDhB" role="3EZMnx">
                 <property role="3F0ifm" value=")" />
@@ -2236,7 +2239,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="7mSH3Wne5mN" role="3EZMnx">
-          <property role="3F0ifm" value="ASSIGN" />
+          <property role="3F0ifm" value="STATE-MACHINE" />
         </node>
         <node concept="3F0ifn" id="7mSH3Wne5mV" role="3EZMnx">
           <property role="3F0ifm" value="{" />
