@@ -815,19 +815,139 @@
       <node concept="1J0m7Y" id="7HQSJoRVrY3" role="1J0m7J">
         <node concept="1yCjRe" id="7HQSJoRVs5T" role="1J0m7X" />
         <node concept="2IPVmt" id="7HQSJoRVs6T" role="1J0m7K">
-          <property role="2IPVms" value="20" />
+          <property role="2IPVms" value="5" />
         </node>
       </node>
       <node concept="1J0m7Y" id="7HQSJoRVs9C" role="1J0m7J">
         <node concept="1yCjRe" id="7HQSJoRVsaK" role="1J0m7X" />
         <node concept="2IPVmt" id="7HQSJoRVsbK" role="1J0m7K">
+          <property role="2IPVms" value="10" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJMa" role="1J0m7J">
+        <node concept="1yCjT0" id="6adXBxxNJMb" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJMc" role="1J0m7K">
+          <property role="2IPVms" value="10" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJMs" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJMK" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJMT" role="1J0m7K">
+          <property role="2IPVms" value="15" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJN6" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJNt" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJNA" role="1J0m7K">
+          <property role="2IPVms" value="20" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJNF" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJO5" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJOe" role="1J0m7K">
+          <property role="2IPVms" value="25" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJOj" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJOK" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJOT" role="1J0m7K">
+          <property role="2IPVms" value="30" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJLS" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJQl" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJLU" role="1J0m7K">
+          <property role="2IPVms" value="35" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJQu" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJQv" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJQw" role="1J0m7K">
+          <property role="2IPVms" value="40" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJR2" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJR3" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJR4" role="1J0m7K">
+          <property role="2IPVms" value="45" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJRD" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJRE" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJRF" role="1J0m7K">
+          <property role="2IPVms" value="50" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJSy" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJSz" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJS$" role="1J0m7K">
+          <property role="2IPVms" value="55" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJTf" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJTg" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJTh" role="1J0m7K">
+          <property role="2IPVms" value="60" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJTT" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJTU" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJTV" role="1J0m7K">
+          <property role="2IPVms" value="65" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJUA" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJUB" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJUC" role="1J0m7K">
           <property role="2IPVms" value="70" />
         </node>
       </node>
-      <node concept="1J0m7Y" id="4G7mwLzM1mK" role="1J0m7J">
-        <node concept="1yCjT0" id="4G7mwLzM1qG" role="1J0m7X" />
-        <node concept="2IPVmt" id="4G7mwLzM1mM" role="1J0m7K">
-          <property role="2IPVms" value="20" />
+      <node concept="1J0m7Y" id="6adXBxxNJVm" role="1J0m7J">
+        <node concept="1yCjT0" id="6adXBxxNK4_" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJVo" role="1J0m7K">
+          <property role="2IPVms" value="70" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJW9" role="1J0m7J">
+        <node concept="1yCjT0" id="6adXBxxNK4R" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJWb" role="1J0m7K">
+          <property role="2IPVms" value="70" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJWZ" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJX0" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJX1" role="1J0m7K">
+          <property role="2IPVms" value="75" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJXS" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJXT" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJXU" role="1J0m7K">
+          <property role="2IPVms" value="80" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJYO" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJYP" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJYQ" role="1J0m7K">
+          <property role="2IPVms" value="85" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNJZN" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNJZO" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNJZP" role="1J0m7K">
+          <property role="2IPVms" value="90" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNK0P" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNK0Q" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNK0R" role="1J0m7K">
+          <property role="2IPVms" value="95" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="6adXBxxNK1U" role="1J0m7J">
+        <node concept="1yCjRe" id="6adXBxxNK1V" role="1J0m7X" />
+        <node concept="2IPVmt" id="6adXBxxNK1W" role="1J0m7K">
+          <property role="2IPVms" value="100" />
         </node>
       </node>
     </node>
@@ -861,9 +981,9 @@
     <node concept="sr$_z" id="4G7mwLzMeZ5" role="shf50">
       <node concept="sD_mu" id="7HQSJoS04B3" role="sr$zp">
         <property role="1cz_r2" value="300" />
-        <property role="1cA9bR" value="Speedometer" />
+        <property role="1cA9bR" value="Speed (km/h)" />
         <property role="sD_mr" value="0" />
-        <property role="sD_m5" value="45" />
+        <property role="sD_m5" value="0" />
         <property role="1cwKvy" value="4" />
         <property role="1cwSbr" value="20" />
         <property role="sD_m4" value="35" />

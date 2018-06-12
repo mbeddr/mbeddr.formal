@@ -2610,42 +2610,74 @@
           </node>
           <node concept="9aQIb" id="3fsZMFM0_vC" role="9aQIa">
             <node concept="3clFbS" id="3fsZMFM0_vD" role="9aQI4">
+              <node concept="3cpWs8" id="6adXBxxNOLs" role="3cqZAp">
+                <node concept="3cpWsn" id="6adXBxxNOLt" role="3cpWs9">
+                  <property role="TrG5h" value="crtStep" />
+                  <node concept="17QB3L" id="6adXBxxNRaa" role="1tU5fm" />
+                  <node concept="2YIFZM" id="6adXBxxNRC4" role="33vP2m">
+                    <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="Xl_RD" id="6adXBxxNRO6" role="37wK5m">
+                      <property role="Xl_RC" value="%2d" />
+                    </node>
+                    <node concept="1eOMI4" id="6adXBxxNOLu" role="37wK5m">
+                      <node concept="3cpWs3" id="6adXBxxNOLv" role="1eOMHV">
+                        <node concept="3cmrfG" id="6adXBxxNOLw" role="3uHU7w">
+                          <property role="3cmrfH" value="1" />
+                        </node>
+                        <node concept="2OqwBi" id="6adXBxxNOLx" role="3uHU7B">
+                          <node concept="37vLTw" id="6adXBxxNOLy" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3fsZMFLU_Vo" resolve="sspb" />
+                          </node>
+                          <node concept="liA8E" id="6adXBxxNOLz" role="2OqNvi">
+                            <ref role="37wK5l" to="mc3u:3fsZMFLUBML" resolve="getCurrentStepIndex" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6adXBxxNPPd" role="3cqZAp">
+                <node concept="3cpWsn" id="6adXBxxNPPe" role="3cpWs9">
+                  <property role="TrG5h" value="totalNumberOfSteps" />
+                  <node concept="17QB3L" id="6adXBxxNSYN" role="1tU5fm" />
+                  <node concept="2YIFZM" id="6adXBxxNTuK" role="33vP2m">
+                    <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="Xl_RD" id="6adXBxxNTEM" role="37wK5m">
+                      <property role="Xl_RC" value="%2d" />
+                    </node>
+                    <node concept="2OqwBi" id="6adXBxxNPPf" role="37wK5m">
+                      <node concept="37vLTw" id="6adXBxxNPPg" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3fsZMFLU_Vo" resolve="sspb" />
+                      </node>
+                      <node concept="liA8E" id="6adXBxxNPPh" role="2OqNvi">
+                        <ref role="37wK5l" to="mc3u:3fsZMFLUIEc" resolve="getNumberOfSteps" />
+                        <node concept="37vLTw" id="6adXBxxNPPi" role="37wK5m">
+                          <ref role="3cqZAo" node="3fsZMFLU_Uq" resolve="node" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="3fsZMFM0A4y" role="3cqZAp">
                 <node concept="37vLTI" id="3fsZMFM0Az8" role="3clFbG">
                   <node concept="37vLTw" id="3fsZMFM0A4x" role="37vLTJ">
                     <ref role="3cqZAo" node="3fsZMFM0xQ3" resolve="label" />
                   </node>
                   <node concept="3cpWs3" id="3fsZMFLUH5E" role="37vLTx">
-                    <node concept="2OqwBi" id="3fsZMFLUMY9" role="3uHU7w">
-                      <node concept="37vLTw" id="3fsZMFLUMvH" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3fsZMFLU_Vo" resolve="sspb" />
-                      </node>
-                      <node concept="liA8E" id="3fsZMFLUNrW" role="2OqNvi">
-                        <ref role="37wK5l" to="mc3u:3fsZMFLUIEc" resolve="getNumberOfSteps" />
-                        <node concept="37vLTw" id="3fsZMFLUO8X" role="37wK5m">
-                          <ref role="3cqZAo" node="3fsZMFLU_Uq" resolve="node" />
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="6adXBxxNPPj" role="3uHU7w">
+                      <ref role="3cqZAo" node="6adXBxxNPPe" resolve="totalNumberOfSteps" />
                     </node>
                     <node concept="3cpWs3" id="3fsZMFLUEkw" role="3uHU7B">
                       <node concept="3cpWs3" id="6nXvqv5pPHN" role="3uHU7B">
                         <node concept="Xl_RD" id="6nXvqv5pQmU" role="3uHU7B">
                           <property role="Xl_RC" value=" step " />
                         </node>
-                        <node concept="1eOMI4" id="Kom1UAvMrk" role="3uHU7w">
-                          <node concept="3cpWs3" id="Kom1UAvNLm" role="1eOMHV">
-                            <node concept="3cmrfG" id="Kom1UAvNQK" role="3uHU7w">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="2OqwBi" id="3fsZMFLU_VJ" role="3uHU7B">
-                              <node concept="37vLTw" id="3fsZMFLU_VK" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3fsZMFLU_Vo" resolve="sspb" />
-                              </node>
-                              <node concept="liA8E" id="3fsZMFLUDj2" role="2OqNvi">
-                                <ref role="37wK5l" to="mc3u:3fsZMFLUBML" resolve="getCurrentStepIndex" />
-                              </node>
-                            </node>
-                          </node>
+                        <node concept="37vLTw" id="6adXBxxNOL$" role="3uHU7w">
+                          <ref role="3cqZAo" node="6adXBxxNOLt" resolve="crtStep" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="3fsZMFLUFiE" role="3uHU7w">
@@ -2713,7 +2745,7 @@
                 <node concept="1pGfFk" id="6nXvqv5qMrN" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
                   <node concept="3cmrfG" id="6nXvqv5qNb6" role="37wK5m">
-                    <property role="3cmrfH" value="65" />
+                    <property role="3cmrfH" value="85" />
                   </node>
                   <node concept="3cmrfG" id="6nXvqv5qMrP" role="37wK5m">
                     <property role="3cmrfH" value="15" />
