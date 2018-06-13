@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="8b9w" ref="r:76e92037-38d8-4be4-999f-3a851f86ac42(com.mbeddr.formal.base.operatorspanel.structure)" />
+    <import index="6m3u" ref="r:67761219-191d-44af-aaf0-3da2d685817e(com.mbeddr.formal.base.operatorspanel.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -45,6 +46,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -71,6 +75,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -106,6 +111,7 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
@@ -375,6 +381,35 @@
                 <ref role="cht4Q" to="8b9w:3G$pWQNu3hp" resolve="VerticalCollection" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6adXBxxQe1Y">
+    <property role="3GE5qa" value="shapes" />
+    <property role="TrG5h" value="clearHistory" />
+    <ref role="2ZfgGC" to="8b9w:2djiQ_FCCJB" resolve="XYChart" />
+    <node concept="2S6ZIM" id="6adXBxxQe1Z" role="2ZfVej">
+      <node concept="3clFbS" id="6adXBxxQe20" role="2VODD2">
+        <node concept="3clFbF" id="6adXBxxQeb3" role="3cqZAp">
+          <node concept="Xl_RD" id="6adXBxxQeb2" role="3clFbG">
+            <property role="Xl_RC" value="Clear History" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6adXBxxQe21" role="2ZfgGD">
+      <node concept="3clFbS" id="6adXBxxQe22" role="2VODD2">
+        <node concept="3clFbF" id="6adXBxxQf7Y" role="3cqZAp">
+          <node concept="2OqwBi" id="6adXBxxQg$j" role="3clFbG">
+            <node concept="2OqwBi" id="6adXBxxQfkP" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6adXBxxQf7X" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6adXBxxQfP7" role="2OqNvi">
+                <ref role="37wK5l" to="6m3u:4G7mwLzZNL3" resolve="getValHistory" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="6adXBxxQj_K" role="2OqNvi" />
           </node>
         </node>
       </node>

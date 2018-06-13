@@ -176,7 +176,6 @@
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
-      <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
       <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -556,31 +555,22 @@
       <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="3fsZMFLIcrh" role="3clF47">
-        <node concept="1QHqEO" id="3fsZMFLIcri" role="3cqZAp">
-          <node concept="1QHqEC" id="3fsZMFLIcrj" role="1QHqEI">
-            <node concept="3clFbS" id="3fsZMFLIcrk" role="1bW5cS">
-              <node concept="3clFbF" id="3fsZMFLIcrl" role="3cqZAp">
-                <node concept="3uNrnE" id="3fsZMFLIcrm" role="3clFbG">
-                  <node concept="37vLTw" id="3fsZMFLIcrn" role="2$L3a6">
-                    <ref role="3cqZAo" node="3fsZMFLIa5R" resolve="idx" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="3fsZMFLIcro" role="3cqZAp">
-                <node concept="1rXfSq" id="3fsZMFLIcrp" role="3clFbG">
-                  <ref role="37wK5l" node="3fsZMFLI9tB" resolve="doPerformStep" />
-                  <node concept="37vLTw" id="3fsZMFLIcrq" role="37wK5m">
-                    <ref role="3cqZAo" node="3fsZMFLIcrt" resolve="simulationEntryNode" />
-                  </node>
-                  <node concept="37vLTw" id="7V1Bqz76X1J" role="37wK5m">
-                    <ref role="3cqZAo" node="7V1Bqz76R8$" resolve="repo" />
-                  </node>
-                </node>
-              </node>
+        <node concept="3clFbF" id="3fsZMFLIcrl" role="3cqZAp">
+          <node concept="3uNrnE" id="3fsZMFLIcrm" role="3clFbG">
+            <node concept="37vLTw" id="3fsZMFLIcrn" role="2$L3a6">
+              <ref role="3cqZAo" node="3fsZMFLIa5R" resolve="idx" />
             </node>
           </node>
-          <node concept="37vLTw" id="7V1Bqz76R$T" role="ukAjM">
-            <ref role="3cqZAo" node="7V1Bqz76R8$" resolve="repo" />
+        </node>
+        <node concept="3clFbF" id="3fsZMFLIcro" role="3cqZAp">
+          <node concept="1rXfSq" id="3fsZMFLIcrp" role="3clFbG">
+            <ref role="37wK5l" node="3fsZMFLI9tB" resolve="doPerformStep" />
+            <node concept="37vLTw" id="3fsZMFLIcrq" role="37wK5m">
+              <ref role="3cqZAo" node="3fsZMFLIcrt" resolve="simulationEntryNode" />
+            </node>
+            <node concept="37vLTw" id="7V1Bqz76X1J" role="37wK5m">
+              <ref role="3cqZAo" node="7V1Bqz76R8$" resolve="repo" />
+            </node>
           </node>
         </node>
       </node>
@@ -604,34 +594,25 @@
       <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="3fsZMFLId_z" role="3clF47">
-        <node concept="1QHqEO" id="3fsZMFLId_$" role="3cqZAp">
-          <node concept="1QHqEC" id="3fsZMFLId__" role="1QHqEI">
-            <node concept="3clFbS" id="3fsZMFLId_A" role="1bW5cS">
-              <node concept="3clFbF" id="3fsZMFLId_B" role="3cqZAp">
-                <node concept="d5anL" id="3fsZMFLId_C" role="3clFbG">
-                  <node concept="3cmrfG" id="3fsZMFLId_D" role="37vLTx">
-                    <property role="3cmrfH" value="1" />
-                  </node>
-                  <node concept="37vLTw" id="3fsZMFLId_E" role="37vLTJ">
-                    <ref role="3cqZAo" node="3fsZMFLIa5R" resolve="idx" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="3fsZMFLId_I" role="3cqZAp">
-                <node concept="1rXfSq" id="3fsZMFLId_J" role="3clFbG">
-                  <ref role="37wK5l" node="3fsZMFLI9tB" resolve="doPerformStep" />
-                  <node concept="37vLTw" id="3fsZMFLId_K" role="37wK5m">
-                    <ref role="3cqZAo" node="3fsZMFLId_N" resolve="simulationEntryNode" />
-                  </node>
-                  <node concept="37vLTw" id="7V1Bqz76Xr2" role="37wK5m">
-                    <ref role="3cqZAo" node="7V1Bqz76RJQ" resolve="repo" />
-                  </node>
-                </node>
-              </node>
+        <node concept="3clFbF" id="3fsZMFLId_B" role="3cqZAp">
+          <node concept="d5anL" id="3fsZMFLId_C" role="3clFbG">
+            <node concept="3cmrfG" id="3fsZMFLId_D" role="37vLTx">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="37vLTw" id="3fsZMFLId_E" role="37vLTJ">
+              <ref role="3cqZAo" node="3fsZMFLIa5R" resolve="idx" />
             </node>
           </node>
-          <node concept="37vLTw" id="7V1Bqz76Scb" role="ukAjM">
-            <ref role="3cqZAo" node="7V1Bqz76RJQ" resolve="repo" />
+        </node>
+        <node concept="3clFbF" id="3fsZMFLId_I" role="3cqZAp">
+          <node concept="1rXfSq" id="3fsZMFLId_J" role="3clFbG">
+            <ref role="37wK5l" node="3fsZMFLI9tB" resolve="doPerformStep" />
+            <node concept="37vLTw" id="3fsZMFLId_K" role="37wK5m">
+              <ref role="3cqZAo" node="3fsZMFLId_N" resolve="simulationEntryNode" />
+            </node>
+            <node concept="37vLTw" id="7V1Bqz76Xr2" role="37wK5m">
+              <ref role="3cqZAo" node="7V1Bqz76RJQ" resolve="repo" />
+            </node>
           </node>
         </node>
       </node>
@@ -659,6 +640,38 @@
           <node concept="3clFbS" id="3fsZMFLI7qZ" role="3clFbx">
             <node concept="3clFbJ" id="3fsZMFLI7r0" role="3cqZAp">
               <node concept="3clFbS" id="3fsZMFLI7r1" role="3clFbx">
+                <node concept="3SKdUt" id="6adXBxxTv5B" role="3cqZAp">
+                  <node concept="3SKdUq" id="6adXBxxTv5D" role="3SKWNk">
+                    <property role="3SKdUp" value="TODO: setting 0 and then the value is a HACK to cause refresh of editors in case when the value does NOT change between two steps" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6adXBxxTmsZ" role="3cqZAp">
+                  <node concept="37vLTI" id="6adXBxxTmYw" role="3clFbG">
+                    <node concept="Xl_RD" id="6adXBxxTn1G" role="37vLTx">
+                      <property role="Xl_RC" value="0" />
+                    </node>
+                    <node concept="2OqwBi" id="6adXBxxTmt1" role="37vLTJ">
+                      <node concept="2OqwBi" id="6adXBxxTmt2" role="2Oq$k0">
+                        <node concept="37vLTw" id="6adXBxxTmt3" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3fsZMFLI7qV" resolve="node" />
+                        </node>
+                        <node concept="3CFZ6_" id="6adXBxxTmt4" role="2OqNvi">
+                          <node concept="3CFYIy" id="6adXBxxTmt5" role="3CFYIz">
+                            <ref role="3CFYIx" to="b19z:3YQnHt0gBu" resolve="CurrentSimulationValueAnnotation" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="6adXBxxTmt6" role="2OqNvi">
+                        <ref role="3TsBF5" to="b19z:3YQnHt0gB_" resolve="value" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6adXBxxTvG3" role="3cqZAp">
+                  <node concept="3SKdUq" id="6adXBxxTvG5" role="3SKWNk">
+                    <property role="3SKdUp" value="the proper setting of the new value ..." />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="3fsZMFLI7r2" role="3cqZAp">
                   <node concept="37vLTI" id="3fsZMFLI7r3" role="3clFbG">
                     <node concept="2OqwBi" id="3fsZMFLI7r4" role="37vLTx">
@@ -1120,18 +1133,27 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3fsZMFLIeNq" role="3cqZAp">
-              <node concept="1rXfSq" id="3fsZMFLIeNo" role="3clFbG">
-                <ref role="37wK5l" node="3fsZMFLI7_$" resolve="displayValues" />
-                <node concept="37vLTw" id="3fsZMFLIeVu" role="37wK5m">
-                  <ref role="3cqZAo" node="3fsZMFLI9uQ" resolve="val" />
+            <node concept="1QHqEF" id="6adXBxxNAVX" role="3cqZAp">
+              <node concept="1QHqEC" id="6adXBxxNAVZ" role="1QHqEI">
+                <node concept="3clFbS" id="6adXBxxNAW1" role="1bW5cS">
+                  <node concept="3clFbF" id="3fsZMFLIeNq" role="3cqZAp">
+                    <node concept="1rXfSq" id="3fsZMFLIeNo" role="3clFbG">
+                      <ref role="37wK5l" node="3fsZMFLI7_$" resolve="displayValues" />
+                      <node concept="37vLTw" id="3fsZMFLIeVu" role="37wK5m">
+                        <ref role="3cqZAo" node="3fsZMFLI9uQ" resolve="val" />
+                      </node>
+                      <node concept="37vLTw" id="3fsZMFLIf0G" role="37wK5m">
+                        <ref role="3cqZAo" node="3fsZMFLI9uK" resolve="node" />
+                      </node>
+                      <node concept="37vLTw" id="7V1Bqz76WHc" role="37wK5m">
+                        <ref role="3cqZAo" node="7V1Bqz76VPL" resolve="repo" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="37vLTw" id="3fsZMFLIf0G" role="37wK5m">
-                  <ref role="3cqZAo" node="3fsZMFLI9uK" resolve="node" />
-                </node>
-                <node concept="37vLTw" id="7V1Bqz76WHc" role="37wK5m">
-                  <ref role="3cqZAo" node="7V1Bqz76VPL" resolve="repo" />
-                </node>
+              </node>
+              <node concept="37vLTw" id="6adXBxxNB3O" role="ukAjM">
+                <ref role="3cqZAo" node="7V1Bqz76VPL" resolve="repo" />
               </node>
             </node>
           </node>
