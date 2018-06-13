@@ -640,6 +640,38 @@
           <node concept="3clFbS" id="3fsZMFLI7qZ" role="3clFbx">
             <node concept="3clFbJ" id="3fsZMFLI7r0" role="3cqZAp">
               <node concept="3clFbS" id="3fsZMFLI7r1" role="3clFbx">
+                <node concept="3SKdUt" id="6adXBxxTv5B" role="3cqZAp">
+                  <node concept="3SKdUq" id="6adXBxxTv5D" role="3SKWNk">
+                    <property role="3SKdUp" value="TODO: setting 0 and then the value is a HACK to cause refresh of editors in case when the value does NOT change between two steps" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6adXBxxTmsZ" role="3cqZAp">
+                  <node concept="37vLTI" id="6adXBxxTmYw" role="3clFbG">
+                    <node concept="Xl_RD" id="6adXBxxTn1G" role="37vLTx">
+                      <property role="Xl_RC" value="0" />
+                    </node>
+                    <node concept="2OqwBi" id="6adXBxxTmt1" role="37vLTJ">
+                      <node concept="2OqwBi" id="6adXBxxTmt2" role="2Oq$k0">
+                        <node concept="37vLTw" id="6adXBxxTmt3" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3fsZMFLI7qV" resolve="node" />
+                        </node>
+                        <node concept="3CFZ6_" id="6adXBxxTmt4" role="2OqNvi">
+                          <node concept="3CFYIy" id="6adXBxxTmt5" role="3CFYIz">
+                            <ref role="3CFYIx" to="b19z:3YQnHt0gBu" resolve="CurrentSimulationValueAnnotation" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="6adXBxxTmt6" role="2OqNvi">
+                        <ref role="3TsBF5" to="b19z:3YQnHt0gB_" resolve="value" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6adXBxxTvG3" role="3cqZAp">
+                  <node concept="3SKdUq" id="6adXBxxTvG5" role="3SKWNk">
+                    <property role="3SKdUp" value="the proper setting of the new value ..." />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="3fsZMFLI7r2" role="3cqZAp">
                   <node concept="37vLTI" id="3fsZMFLI7r3" role="3clFbG">
                     <node concept="2OqwBi" id="3fsZMFLI7r4" role="37vLTx">
