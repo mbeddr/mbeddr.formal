@@ -8,9 +8,10 @@
   <registry>
     <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
       <concept id="4599377533215110828" name="com.mbeddr.formal.nusmv.arch.structure.ModulesWiringSection" flags="ng" index="18TFfj" />
+      <concept id="5424857460111392425" name="com.mbeddr.formal.nusmv.arch.structure.OutputFunctionValueContentRef" flags="ng" index="1wmsAR" />
+      <concept id="5424857460111392086" name="com.mbeddr.formal.nusmv.arch.structure.OutputFunctionValueContent" flags="ng" index="1wmsD8" />
     </language>
     <language id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular">
-      <concept id="2707707741265921313" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueContentRef" flags="ng" index="sab3T" />
       <concept id="3038640987157452671" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
       <concept id="3038640987157452302" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
         <child id="3038640987157837161" name="table" index="3PlPU9" />
@@ -96,7 +97,7 @@
       </concept>
     </language>
     <language id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.base.tabular">
-      <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.Output" flags="ng" index="2HuVrR">
+      <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.OutputValue" flags="ng" index="2HuVrR">
         <child id="5453576532413735747" name="exp" index="agTQP" />
       </concept>
       <concept id="3038640987154488121" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable" flags="ng" index="3PoB3p">
@@ -544,10 +545,10 @@
               </node>
             </node>
           </node>
-          <node concept="3PnjMv" id="2mjHtwTGp5Z" role="3Pv8s4">
+          <node concept="1wmsD8" id="4H8XLSF6Ck8" role="3Pv8s4">
             <property role="TrG5h" value="q" />
           </node>
-          <node concept="3PnjMv" id="2mjHtwTGp60" role="3Pv8s4">
+          <node concept="1wmsD8" id="4H8XLSF5JK4" role="3Pv8s4">
             <property role="TrG5h" value="not_q" />
           </node>
         </node>
@@ -702,8 +703,8 @@
         <node concept="1zoerA" id="2mjHtwTPoTE" role="32O2ov">
           <property role="TrG5h" value="q2" />
           <node concept="1ziNjN" id="2mjHtwTPoV0" role="1zoetD">
-            <node concept="sab3T" id="2mjHtwTPoWL" role="1ziNjJ">
-              <ref role="skqaw" node="2mjHtwTGp5Z" resolve="q" />
+            <node concept="1wmsAR" id="4H8XLSF6Ck9" role="1ziNjJ">
+              <ref role="skqaw" node="4H8XLSF6Ck8" resolve="q" />
             </node>
             <node concept="2He$iJ" id="2mjHtwTPoUs" role="1ziNjM">
               <ref role="2He$iI" node="2mjHtwTIrox" resolve="l2" />
@@ -713,8 +714,8 @@
         <node concept="1zoerA" id="2mjHtwTPoU3" role="32O2ov">
           <property role="TrG5h" value="not_q2" />
           <node concept="1ziNjN" id="2mjHtwTPoXu" role="1zoetD">
-            <node concept="sab3T" id="2mjHtwTPoZF" role="1ziNjJ">
-              <ref role="skqaw" node="2mjHtwTGp60" resolve="not_q" />
+            <node concept="1wmsAR" id="4H8XLSF5JK5" role="1ziNjJ">
+              <ref role="skqaw" node="4H8XLSF5JK4" resolve="not_q" />
             </node>
             <node concept="2He$iJ" id="2mjHtwTPoWU" role="1ziNjM">
               <ref role="2He$iI" node="2mjHtwTIrox" resolve="l2" />
@@ -740,16 +741,16 @@
           <node concept="1zigX2" id="2mjHtwTIrp0" role="2HdssA">
             <ref role="1zigX1" node="2mjHtwTGp4$" resolve="sr_latch" />
             <node concept="1ziNjN" id="2mjHtwTIrpV" role="1zigYY">
-              <node concept="sab3T" id="2mjHtwTPo$E" role="1ziNjJ">
-                <ref role="skqaw" node="2mjHtwTGp5Z" resolve="q" />
+              <node concept="1wmsAR" id="4H8XLSF6Cka" role="1ziNjJ">
+                <ref role="skqaw" node="4H8XLSF6Ck8" resolve="q" />
               </node>
               <node concept="2He$iJ" id="2mjHtwTIrpv" role="1ziNjM">
                 <ref role="2He$iI" node="2mjHtwTIrm8" resolve="l1" />
               </node>
             </node>
             <node concept="1ziNjN" id="2mjHtwTKv0M" role="1zigYY">
-              <node concept="sab3T" id="2mjHtwTPo_J" role="1ziNjJ">
-                <ref role="skqaw" node="2mjHtwTGp60" resolve="not_q" />
+              <node concept="1wmsAR" id="4H8XLSF5JK6" role="1ziNjJ">
+                <ref role="skqaw" node="4H8XLSF5JK4" resolve="not_q" />
               </node>
               <node concept="2He$iJ" id="2mjHtwTKv0u" role="1ziNjM">
                 <ref role="2He$iI" node="2mjHtwTIrm8" resolve="l1" />

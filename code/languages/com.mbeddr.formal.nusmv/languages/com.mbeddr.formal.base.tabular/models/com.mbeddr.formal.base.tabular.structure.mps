@@ -86,12 +86,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="output" />
-      <ref role="20lvS9" node="6vhjLzaEJBJ" resolve="Output" />
+      <ref role="20lvS9" node="6vhjLzaEJBJ" resolve="OutputValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="6vhjLzaEJBJ">
     <property role="EcuMT" value="7480847423937116655" />
-    <property role="TrG5h" value="Output" />
+    <property role="TrG5h" value="OutputValue" />
     <property role="3GE5qa" value="horizontal_condition_table" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="4IIZJp1Vmd3" role="1TKVEi">

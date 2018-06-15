@@ -63,7 +63,8 @@
     <property role="EcuMT" value="3038640987157452671" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="FunctionValueContent" />
-    <property role="34LRSv" value="output definition" />
+    <property role="34LRSv" value="function value definition" />
+    <property role="R4oN_" value="function definition" />
     <ref role="1TJDcQ" to="gioj:7mSH3WmVxaO" resolve="VariableDeclarationBase" />
     <node concept="PrWs8" id="3JhRrgbktEt" role="PzmwI">
       <ref role="PrY4T" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
