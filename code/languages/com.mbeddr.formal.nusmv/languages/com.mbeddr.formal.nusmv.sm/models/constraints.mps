@@ -136,6 +136,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -483,6 +484,25 @@
   </node>
   <node concept="1M2fIO" id="2wmv3YIQdJB">
     <ref role="1M2myG" to="ahnd:4NkweGhcVzM" resolve="Transition" />
+    <node concept="9S07l" id="7Z6$Wo5NTsG" role="9Vyp8">
+      <node concept="3clFbS" id="7Z6$Wo5NTsH" role="2VODD2">
+        <node concept="3clFbF" id="7Z6$Wo5NT$2" role="3cqZAp">
+          <node concept="2OqwBi" id="7Z6$Wo5NUBl" role="3clFbG">
+            <node concept="2OqwBi" id="7Z6$Wo5NTNs" role="2Oq$k0">
+              <node concept="nLn13" id="7Z6$Wo5NT$1" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7Z6$Wo5NU5e" role="2OqNvi">
+                <node concept="1xMEDy" id="7Z6$Wo5NU5g" role="1xVPHs">
+                  <node concept="chp4Y" id="7Z6$Wo5NUg3" role="ri$Ld">
+                    <ref role="cht4Q" to="ahnd:4NkweGhcVIR" resolve="TransitionsAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7Z6$Wo5NVcz" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="1$vmWKMqOWZ">
     <ref role="1M2myG" to="ahnd:4NkweGhcVIR" resolve="TransitionsAssignment" />
@@ -580,6 +600,25 @@
         <node concept="3clFbF" id="1$vmWKMr3IP" role="3cqZAp">
           <node concept="3clFbT" id="1$vmWKMr3IO" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="7Z6$Wo5NY7V" role="9Vyp8">
+      <node concept="3clFbS" id="7Z6$Wo5NY7W" role="2VODD2">
+        <node concept="3clFbF" id="7Z6$Wo5NYjl" role="3cqZAp">
+          <node concept="2OqwBi" id="7Z6$Wo5NZmC" role="3clFbG">
+            <node concept="2OqwBi" id="7Z6$Wo5NYyJ" role="2Oq$k0">
+              <node concept="nLn13" id="7Z6$Wo5NYjk" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7Z6$Wo5NYOx" role="2OqNvi">
+                <node concept="1xMEDy" id="7Z6$Wo5NYOz" role="1xVPHs">
+                  <node concept="chp4Y" id="7Z6$Wo5NYZm" role="ri$Ld">
+                    <ref role="cht4Q" to="ahnd:1$vmWKMqHFe" resolve="TransitionsAssignmentForInternalVars" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7Z6$Wo5NZVQ" role="2OqNvi" />
           </node>
         </node>
       </node>
