@@ -339,7 +339,7 @@
                   <node concept="2DD5aU" id="3ZkhnXRmZer" role="2Oq$k0" />
                   <node concept="2Zo12i" id="3ZkhnXRmZW7" role="2OqNvi">
                     <node concept="chp4Y" id="4H8XLSF4ix7" role="2Zo12j">
-                      <ref role="cht4Q" to="rvcq:4H8XLSF4ddZ" resolve="IOutputLikeRef" />
+                      <ref role="cht4Q" to="rvcq:4H8XLSF4ddZ" resolve="IOutputPortLikeRef" />
                     </node>
                   </node>
                 </node>

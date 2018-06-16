@@ -1328,8 +1328,8 @@
             </node>
             <node concept="2Rf3mk" id="5sbrvaLfHD9" role="2OqNvi">
               <node concept="1xMEDy" id="5sbrvaLfHDa" role="1xVPHs">
-                <node concept="chp4Y" id="2mjHtwTLA4f" role="ri$Ld">
-                  <ref role="cht4Q" to="gioj:2mjHtwTGt9x" resolve="IDefinitionLike" />
+                <node concept="chp4Y" id="7Z6$Wo5Lz8h" role="ri$Ld">
+                  <ref role="cht4Q" to="rvcq:7Z6$Wo5LyDF" resolve="IOutputPortLike" />
                 </node>
               </node>
             </node>

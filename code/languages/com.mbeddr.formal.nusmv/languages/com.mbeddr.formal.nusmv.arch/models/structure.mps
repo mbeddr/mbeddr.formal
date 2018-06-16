@@ -62,6 +62,9 @@
     <property role="34LRSv" value="output" />
     <property role="3GE5qa" value="smv_base" />
     <ref role="1TJDcQ" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
+    <node concept="PrWs8" id="7Z6$Wo5LyDG" role="PzmwI">
+      <ref role="PrY4T" node="7Z6$Wo5LyDF" resolve="IOutputPortLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5HwHP1OeZxz">
     <property role="EcuMT" value="6584464211391019107" />
@@ -80,12 +83,12 @@
       <ref role="PrY4T" to="gioj:2mjHtwTKxtR" resolve="IDefinitionLikeRef" />
     </node>
     <node concept="PrWs8" id="4H8XLSF4de8" role="PzmwI">
-      <ref role="PrY4T" node="4H8XLSF4ddZ" resolve="IOutputLikeRef" />
+      <ref role="PrY4T" node="4H8XLSF4ddZ" resolve="IOutputPortLikeRef" />
     </node>
   </node>
   <node concept="PlHQZ" id="4H8XLSF4ddZ">
     <property role="EcuMT" value="5424857460111364991" />
-    <property role="TrG5h" value="IOutputLikeRef" />
+    <property role="TrG5h" value="IOutputPortLikeRef" />
   </node>
   <node concept="1TIwiD" id="4H8XLSF4jPm">
     <property role="EcuMT" value="5424857460111392086" />
@@ -94,6 +97,9 @@
     <property role="R4oN_" value="function value acting as an output port" />
     <property role="3GE5qa" value="tables" />
     <ref role="1TJDcQ" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+    <node concept="PrWs8" id="7Z6$Wo5LyPg" role="PzmwI">
+      <ref role="PrY4T" node="7Z6$Wo5LyDF" resolve="IOutputPortLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4H8XLSF4jUD">
     <property role="EcuMT" value="5424857460111392425" />
@@ -108,8 +114,12 @@
       <ref role="20lvS9" node="4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
     </node>
     <node concept="PrWs8" id="4H8XLSF5JSn" role="PzmwI">
-      <ref role="PrY4T" node="4H8XLSF4ddZ" resolve="IOutputLikeRef" />
+      <ref role="PrY4T" node="4H8XLSF4ddZ" resolve="IOutputPortLikeRef" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="7Z6$Wo5LyDF">
+    <property role="EcuMT" value="9207208966915238507" />
+    <property role="TrG5h" value="IOutputPortLike" />
   </node>
 </model>
 
