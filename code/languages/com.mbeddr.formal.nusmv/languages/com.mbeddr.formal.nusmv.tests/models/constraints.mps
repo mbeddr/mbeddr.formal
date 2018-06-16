@@ -163,5 +163,25 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7Z6$Wo5UoBk">
+    <property role="3GE5qa" value="generic" />
+    <ref role="1M2myG" to="fnq2:4IuDkoKJ7d1" resolve="DontCare" />
+    <node concept="9S07l" id="7Z6$Wo5UoBl" role="9Vyp8">
+      <node concept="3clFbS" id="7Z6$Wo5UoBm" role="2VODD2">
+        <node concept="3clFbF" id="7Z6$Wo5Uqkg" role="3cqZAp">
+          <node concept="2OqwBi" id="7Z6$Wo5Uqkh" role="3clFbG">
+            <node concept="2DA6wF" id="7Z6$Wo5Uqki" role="2Oq$k0" />
+            <node concept="liA8E" id="7Z6$Wo5Uqkj" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="359W_D" id="7Z6$Wo5Uqkk" role="37wK5m">
+                <ref role="359W_E" to="fnq2:43FRfGJUFO5" resolve="TestStep" />
+                <ref role="359W_F" to="fnq2:43FRfGJUFOb" resolve="expectedValues" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
