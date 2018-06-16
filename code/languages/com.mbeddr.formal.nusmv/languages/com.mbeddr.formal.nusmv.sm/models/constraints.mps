@@ -740,6 +740,22 @@
         </node>
       </node>
     </node>
+    <node concept="9S07l" id="7Z6$Wo5VwN4" role="9Vyp8">
+      <node concept="3clFbS" id="7Z6$Wo5VwN5" role="2VODD2">
+        <node concept="3clFbF" id="7Z6$Wo5Vx1I" role="3cqZAp">
+          <node concept="2OqwBi" id="7Z6$Wo5Vxm9" role="3clFbG">
+            <node concept="2DA6wF" id="7Z6$Wo5Vx1H" role="2Oq$k0" />
+            <node concept="liA8E" id="7Z6$Wo5Vy5n" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="359W_D" id="7Z6$Wo5VxtZ" role="37wK5m">
+                <ref role="359W_E" to="ahnd:1$vmWKMr0SG" resolve="TransitionForInternalVariable" />
+                <ref role="359W_F" to="ahnd:1$vmWKMr0SH" resolve="guard" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="1gJVC85NHTM">
     <ref role="1M2myG" to="ahnd:4NkweGhcVQz" resolve="Transitions" />
@@ -877,6 +893,23 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7Z6$Wo5U7Cx">
+    <ref role="1M2myG" to="ahnd:4NkweGhcbEX" resolve="StateMachineType" />
+    <node concept="9S07l" id="7Z6$Wo5U7Cy" role="9Vyp8">
+      <node concept="3clFbS" id="7Z6$Wo5U7Cz" role="2VODD2">
+        <node concept="3clFbF" id="7Z6$Wo5U7JS" role="3cqZAp">
+          <node concept="2OqwBi" id="7Z6$Wo5U7Zi" role="3clFbG">
+            <node concept="nLn13" id="7Z6$Wo5U7JR" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="7Z6$Wo5U8h4" role="2OqNvi">
+              <node concept="chp4Y" id="7Z6$Wo5U8tN" role="cj9EA">
+                <ref role="cht4Q" to="ahnd:3UuTDIOPiRI" resolve="StateVariableDeclaration" />
               </node>
             </node>
           </node>

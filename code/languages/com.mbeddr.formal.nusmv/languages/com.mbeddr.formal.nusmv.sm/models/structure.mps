@@ -121,6 +121,9 @@
     <node concept="PrWs8" id="36cijvuueBX" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="7Z6$Wo5V$Ah" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4NkweGhcVIR">
     <property role="EcuMT" value="5536191589039455159" />
@@ -161,18 +164,6 @@
     <property role="EcuMT" value="5536191589039455651" />
     <property role="TrG5h" value="Transitions" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1W9ga" resolve="CaseExpression" />
-  </node>
-  <node concept="1TIwiD" id="4NkweGhd0G5">
-    <property role="EcuMT" value="5536191589039475461" />
-    <property role="TrG5h" value="FromState" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    <node concept="1TJgyj" id="4NkweGhd0Hd" role="1TKVEi">
-      <property role="IQ2ns" value="5536191589039475533" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="state" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4NkweGhd0Hi" resolve="StateRef" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4NkweGhd0Hi">
     <property role="EcuMT" value="5536191589039475538" />

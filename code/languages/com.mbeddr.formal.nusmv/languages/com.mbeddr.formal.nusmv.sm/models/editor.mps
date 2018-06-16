@@ -1422,21 +1422,6 @@
       <node concept="l2Vlx" id="6NmtaR1VSYL" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4NkweGhd0IX">
-    <ref role="1XX52x" to="ahnd:4NkweGhd0G5" resolve="FromState" />
-    <node concept="3EZMnI" id="4NkweGhd0K6" role="2wV5jI">
-      <node concept="3F0ifn" id="4NkweGhd0Km" role="3EZMnx">
-        <property role="3F0ifm" value="__state" />
-      </node>
-      <node concept="3F0ifn" id="4NkweGhd0K_" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-      </node>
-      <node concept="3F1sOY" id="4NkweGhd0KW" role="3EZMnx">
-        <ref role="1NtTu8" to="ahnd:4NkweGhd0Hd" resolve="state" />
-      </node>
-      <node concept="l2Vlx" id="4NkweGhd0K9" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4NkweGhdufw">
     <ref role="1XX52x" to="ahnd:4NkweGhcVzM" resolve="Transition" />
     <node concept="3EZMnI" id="6NmtaR1W9mI" role="2wV5jI">
