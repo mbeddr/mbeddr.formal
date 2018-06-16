@@ -9,9 +9,12 @@
   <imports>
     <import index="jx4r" ref="r:20b428fb-5ad4-48f7-a0e1-326c84a8081b(com.mbeddr.formal.nusmv.tabular.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="zzf2" ref="r:d9a13335-48ea-412b-9ef7-e8781c842768(com.mbeddr.formal.base.tabular.editor)" />
+    <import index="vlrt" ref="r:3ddaee68-0b72-48af-bc28-bb60d8c7c95e(com.mbeddr.formal.base.tabular.structure)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -22,6 +25,15 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -29,6 +41,9 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -49,6 +64,24 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+    </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
       <concept id="1397920687864997143" name="de.slisson.mps.tables.structure.TableCell" flags="ng" index="2reCLy">
         <child id="1397920687865064647" name="editorCell" index="2reSmM" />
@@ -60,6 +93,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -125,16 +161,61 @@
     <ref role="1XX52x" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
     <node concept="3F0A7n" id="2CFqY3vtAwK" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <ref role="1ERwB7" node="7Z6$Wo5Nw04" resolve="deleteOutputColumn" />
     </node>
   </node>
   <node concept="24kQdi" id="2mjHtwTIKky">
-    <ref role="1XX52x" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentRef" />
+    <ref role="1XX52x" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
     <node concept="1iCGBv" id="2mjHtwTIKkD" role="2wV5jI">
       <ref role="1NtTu8" to="jx4r:2mjHtwTIKk$" resolve="functionValueContent" />
       <node concept="1sVBvm" id="2mjHtwTIKkF" role="1sWHZn">
         <node concept="3F0A7n" id="2mjHtwTIKkV" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Z6$Wo5MK_4">
+    <ref role="1XX52x" to="jx4r:7Z6$Wo5MK$S" resolve="FunctionValueRef" />
+    <node concept="1iCGBv" id="7Z6$Wo5MK_6" role="2wV5jI">
+      <ref role="1NtTu8" to="jx4r:7Z6$Wo5MK$T" resolve="functionValue" />
+      <node concept="1sVBvm" id="7Z6$Wo5MK_8" role="1sWHZn">
+        <node concept="3F0A7n" id="7Z6$Wo5MK_m" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="7Z6$Wo5Nw04">
+    <property role="TrG5h" value="deleteOutputColumn" />
+    <ref role="1h_SK9" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+    <node concept="1hA7zw" id="7Z6$Wo5Nw05" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="7Z6$Wo5Nw06" role="1hA7z_">
+        <node concept="3clFbS" id="7Z6$Wo5Nw07" role="2VODD2">
+          <node concept="3clFbF" id="7Z6$Wo5MBaH" role="3cqZAp">
+            <node concept="2YIFZM" id="7Z6$Wo5MBAO" role="3clFbG">
+              <ref role="1Pybhc" to="zzf2:7Z6$Wo5M$dV" resolve="TableEditorUtils" />
+              <ref role="37wK5l" to="zzf2:7Z6$Wo5M$fD" resolve="removeColumn" />
+              <node concept="0IXxy" id="7Z6$Wo5NwH1" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="7Z6$Wo5NwJ7" role="1h_SK8">
+      <property role="1hAc7j" value="backspace_action_id" />
+      <node concept="1hAIg9" id="7Z6$Wo5NwJ8" role="1hA7z_">
+        <node concept="3clFbS" id="7Z6$Wo5NwJ9" role="2VODD2">
+          <node concept="3clFbF" id="7Z6$Wo5NwLv" role="3cqZAp">
+            <node concept="2YIFZM" id="7Z6$Wo5NwLw" role="3clFbG">
+              <ref role="1Pybhc" to="zzf2:7Z6$Wo5M$dV" resolve="TableEditorUtils" />
+              <ref role="37wK5l" to="zzf2:7Z6$Wo5M$fD" resolve="removeColumn" />
+              <node concept="0IXxy" id="7Z6$Wo5NwLx" role="37wK5m" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

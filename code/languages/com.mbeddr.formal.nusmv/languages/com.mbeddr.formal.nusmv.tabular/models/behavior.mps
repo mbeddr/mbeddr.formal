@@ -91,7 +91,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="2mjHtwTIMha">
-    <ref role="13h7C2" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentRef" />
+    <ref role="13h7C2" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
     <node concept="13hLZK" id="2mjHtwTIMhb" role="13h7CW">
       <node concept="3clFbS" id="2mjHtwTIMhc" role="2VODD2" />
     </node>
@@ -136,7 +136,7 @@
         <node concept="3clFbF" id="2mjHtwTL1Dz" role="3cqZAp">
           <node concept="2pJPEk" id="2mjHtwTL1Dx" role="3clFbG">
             <node concept="2pJPED" id="2mjHtwTL1GW" role="2pJPEn">
-              <ref role="2pJxaS" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentRef" />
+              <ref role="2pJxaS" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
               <node concept="2pIpSj" id="2mjHtwTL1JK" role="2pJxcM">
                 <ref role="2pIpSl" to="jx4r:2mjHtwTIKk$" resolve="functionValueContent" />
                 <node concept="36biLy" id="2mjHtwTL1Mf" role="2pJxcZ">

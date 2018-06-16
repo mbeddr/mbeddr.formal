@@ -167,7 +167,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2mjHtwTIKlq">
-    <ref role="1M2myG" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentRef" />
+    <ref role="1M2myG" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
     <node concept="1N5Pfh" id="2mjHtwTIKtW" role="1Mr941">
       <ref role="1N5Vy1" to="jx4r:2mjHtwTIKk$" resolve="functionValueContent" />
       <node concept="3dgokm" id="2mjHtwTIKu6" role="1N6uqs">
@@ -209,6 +209,42 @@
                 <node concept="2Rf3mk" id="2zzTeYj2j2o" role="2OqNvi">
                   <node concept="1xMEDy" id="2zzTeYj2j2q" role="1xVPHs">
                     <node concept="chp4Y" id="2mjHtwTILY0" role="ri$Ld">
+                      <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7Z6$Wo5MK_q">
+    <ref role="1M2myG" to="jx4r:7Z6$Wo5MK$S" resolve="FunctionValueRef" />
+    <node concept="1N5Pfh" id="7Z6$Wo5MK_r" role="1Mr941">
+      <ref role="1N5Vy1" to="jx4r:7Z6$Wo5MK$T" resolve="functionValue" />
+      <node concept="3dgokm" id="7Z6$Wo5MK_u" role="1N6uqs">
+        <node concept="3clFbS" id="7Z6$Wo5MK_v" role="2VODD2">
+          <node concept="3clFbF" id="7Z6$Wo5MKCu" role="3cqZAp">
+            <node concept="2YIFZM" id="7Z6$Wo5MKHt" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="7Z6$Wo5MMC4" role="37wK5m">
+                <node concept="2OqwBi" id="7Z6$Wo5MKYj" role="2Oq$k0">
+                  <node concept="2rP1CM" id="7Z6$Wo5MKLO" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="7Z6$Wo5MLf$" role="2OqNvi">
+                    <node concept="1xMEDy" id="7Z6$Wo5MLfA" role="1xVPHs">
+                      <node concept="chp4Y" id="7Z6$Wo5MLnS" role="ri$Ld">
+                        <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="7Z6$Wo5MLAN" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="7Z6$Wo5MNoF" role="2OqNvi">
+                  <node concept="1xMEDy" id="7Z6$Wo5MNoH" role="1xVPHs">
+                    <node concept="chp4Y" id="7Z6$Wo5MNwk" role="ri$Ld">
                       <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
                     </node>
                   </node>
