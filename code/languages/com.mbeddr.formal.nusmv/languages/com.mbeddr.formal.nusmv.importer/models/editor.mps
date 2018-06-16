@@ -38,9 +38,13 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -391,6 +395,12 @@
         <node concept="l2Vlx" id="41yfEs6i0sl" role="2iSdaV" />
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="7Z6$Wo5OTP8">
+    <ref role="aqKnT" to="l8i4:5Rx4RPFVY8u" resolve="NotReifiedVarRef" />
+  </node>
+  <node concept="3p36aQ" id="7Z6$Wo5U5o5">
+    <ref role="aqKnT" to="l8i4:1WSRfTw4Sme" resolve="NotReifed" />
   </node>
 </model>
 
