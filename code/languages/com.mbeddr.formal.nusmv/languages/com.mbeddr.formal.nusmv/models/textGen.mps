@@ -628,7 +628,7 @@
   </node>
   <node concept="WtQ9Q" id="6NmtaR23ANF">
     <property role="3GE5qa" value="expressions" />
-    <ref role="WuzLi" to="gioj:6NmtaR22D35" resolve="ChoiceExpression" />
+    <ref role="WuzLi" to="gioj:6NmtaR22D35" resolve="SetExpression" />
     <node concept="11bSqf" id="6NmtaR23ANG" role="11c4hB">
       <node concept="3clFbS" id="6NmtaR23ANH" role="2VODD2">
         <node concept="lc7rE" id="6NmtaR23AO1" role="3cqZAp">

@@ -118,6 +118,9 @@
     <node concept="PrWs8" id="6Kf5KB77MHn" role="PzmwI">
       <ref role="PrY4T" node="6Kf5KB77LXR" resolve="IMayActAsMainModule" />
     </node>
+    <node concept="PrWs8" id="7Z6$Wo5UedG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SULQ">
     <property role="EcuMT" value="7842584090743385206" />
@@ -125,6 +128,9 @@
     <ref role="1TJDcQ" node="7mSH3WmVxaO" resolve="VariableDeclarationBase" />
     <node concept="PrWs8" id="5_V$TJxB7Iw" role="PzmwI">
       <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
+    </node>
+    <node concept="PrWs8" id="7Z6$Wo5TKsN" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SV6O">
@@ -144,12 +150,16 @@
     <node concept="PrWs8" id="4NkweGh54Sa" role="PzmwI">
       <ref role="PrY4T" node="4NkweGh54S6" resolve="IVariableDeclarationSectionContent" />
     </node>
+    <node concept="PrWs8" id="7Z6$Wo5TZNy" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SVkl">
     <property role="EcuMT" value="7842584090743387413" />
     <property role="TrG5h" value="BooleanType" />
     <property role="3GE5qa" value="types" />
     <property role="34LRSv" value="boolean" />
+    <property role="R4oN_" value="boolean type" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1SWfQ">
@@ -174,6 +184,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3cHtG5tUeGE" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7Z6$Wo5TxFi" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNLO">
@@ -323,6 +336,7 @@
     <property role="3GE5qa" value="expressions.case" />
     <property role="TrG5h" value="CaseExpression" />
     <property role="34LRSv" value="case" />
+    <property role="R4oN_" value="case expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="6NmtaR1W9gc" role="1TKVEi">
       <property role="IQ2ns" value="7842584090744230924" />
@@ -359,8 +373,9 @@
   <node concept="1TIwiD" id="6NmtaR22D35">
     <property role="EcuMT" value="7842584090745934021" />
     <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="ChoiceExpression" />
+    <property role="TrG5h" value="SetExpression" />
     <property role="34LRSv" value="{" />
+    <property role="R4oN_" value="set expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="6NmtaR22D36" role="1TKVEi">
       <property role="IQ2ns" value="7842584090745934022" />
@@ -375,6 +390,7 @@
     <property role="3GE5qa" value="expressions.arithmetic" />
     <property role="TrG5h" value="ModExpression" />
     <property role="34LRSv" value="mod" />
+    <property role="R4oN_" value="mod expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
   </node>
   <node concept="1TIwiD" id="1IrBcRpiDGl">
@@ -443,6 +459,9 @@
     <node concept="PrWs8" id="5_V$TJxBddM" role="PzmwI">
       <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
     </node>
+    <node concept="PrWs8" id="7Z6$Wo5TUfw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WmVxaO">
     <property role="EcuMT" value="8482728081212969652" />
@@ -504,6 +523,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="integer" />
+    <property role="R4oN_" value="integer type" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="7mSH3Wn9yWs">
@@ -511,6 +531,7 @@
     <property role="TrG5h" value="SpecSection" />
     <property role="34LRSv" value="SPEC" />
     <property role="3GE5qa" value="spec" />
+    <property role="R4oN_" value="SPEC section" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
     <node concept="PrWs8" id="1ZejHLlHO3M" role="PzmwI">
       <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
@@ -590,6 +611,7 @@
     <property role="3GE5qa" value="fairness" />
     <property role="TrG5h" value="Running" />
     <property role="34LRSv" value="running" />
+    <property role="R4oN_" value="running expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1YmTk">
@@ -597,6 +619,7 @@
     <property role="3GE5qa" value="expressions.comparison" />
     <property role="TrG5h" value="EqualsExpression" />
     <property role="34LRSv" value="=" />
+    <property role="R4oN_" value="equals" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnsxBK" resolve="EqualsExpressionBase" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1YlpX">
@@ -604,6 +627,7 @@
     <property role="3GE5qa" value="expressions.logical" />
     <property role="TrG5h" value="AndExpression" />
     <property role="34LRSv" value="&amp;" />
+    <property role="R4oN_" value="and" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnsxDR" resolve="AndExpressionBase" />
   </node>
   <node concept="1TIwiD" id="7mSH3WncPcK">
@@ -611,6 +635,7 @@
     <property role="3GE5qa" value="expressions.logical" />
     <property role="TrG5h" value="ImpliesExpression" />
     <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="implies" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnsxEd" resolve="ImpliesExpressionBase" />
   </node>
   <node concept="1TIwiD" id="7mSH3Wn8bMM">
@@ -618,6 +643,7 @@
     <property role="3GE5qa" value="expressions.logical" />
     <property role="TrG5h" value="NotExpression" />
     <property role="34LRSv" value="!" />
+    <property role="R4oN_" value="not" />
     <ref role="1TJDcQ" to="ehqg:7mSH3Wnsy0f" resolve="NotExpressionBase" />
   </node>
   <node concept="1TIwiD" id="6NmtaR1YlVK">
@@ -625,6 +651,7 @@
     <property role="3GE5qa" value="expressions.logical" />
     <property role="TrG5h" value="OrExpression" />
     <property role="34LRSv" value="|" />
+    <property role="R4oN_" value="or" />
     <ref role="1TJDcQ" to="ehqg:7mSH3Wnte8z" resolve="OrExpressionBase" />
   </node>
   <node concept="1TIwiD" id="7mSH3WnuJC$">
@@ -687,6 +714,7 @@
     <property role="3GE5qa" value="expressions.literals.boolean" />
     <property role="TrG5h" value="FalseLiteral" />
     <property role="34LRSv" value="FALSE" />
+    <property role="R4oN_" value="false literal" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnvIDy" resolve="FalseLiteralBase" />
   </node>
   <node concept="1TIwiD" id="7mSH3Wn6oBL">
@@ -694,6 +722,7 @@
     <property role="3GE5qa" value="expressions.literals.boolean" />
     <property role="TrG5h" value="TrueLiteral" />
     <property role="34LRSv" value="TRUE" />
+    <property role="R4oN_" value="true literal" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnvJTP" resolve="TrueLiteralBase" />
   </node>
   <node concept="1TIwiD" id="7mSH3WnvMF1">
@@ -755,6 +784,7 @@
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="NextExpression" />
     <property role="34LRSv" value="next" />
+    <property role="R4oN_" value="next expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="7mSH3WnwK$v" role="1TKVEi">
       <property role="IQ2ns" value="8482728081222732063" />
@@ -769,6 +799,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="WordType" />
     <property role="34LRSv" value="word" />
+    <property role="R4oN_" value="word type" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     <node concept="1TJgyj" id="7mSH3WnE5iF" role="1TKVEi">
       <property role="IQ2ns" value="8482728081225176235" />
@@ -788,6 +819,7 @@
     <property role="3GE5qa" value="expressions.logical" />
     <property role="TrG5h" value="XorExpression" />
     <property role="34LRSv" value="xor" />
+    <property role="R4oN_" value="xor" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnHVWN" resolve="XorExpressionBase" />
   </node>
   <node concept="1TIwiD" id="43FRfGJVcU2">
@@ -828,6 +860,7 @@
     <property role="3GE5qa" value="expressions.comparison" />
     <property role="TrG5h" value="LessExpression" />
     <property role="34LRSv" value="&lt;" />
+    <property role="R4oN_" value="less" />
     <ref role="1TJDcQ" to="ehqg:2uEbjWK0fi0" resolve="LessExpressionBase" />
   </node>
   <node concept="1TIwiD" id="2uEbjWK0yaf">
@@ -835,6 +868,7 @@
     <property role="3GE5qa" value="expressions.comparison" />
     <property role="TrG5h" value="LessEqualsExpression" />
     <property role="34LRSv" value="&lt;=" />
+    <property role="R4oN_" value="less equals" />
     <ref role="1TJDcQ" to="ehqg:2uEbjWK0yac" resolve="LessEqualsExpressionBase" />
   </node>
   <node concept="1TIwiD" id="2uEbjWK0yag">
@@ -842,6 +876,7 @@
     <property role="3GE5qa" value="expressions.comparison" />
     <property role="TrG5h" value="GreaterExpression" />
     <property role="34LRSv" value="&gt;" />
+    <property role="R4oN_" value="greater" />
     <ref role="1TJDcQ" to="ehqg:2uEbjWK0yab" resolve="GreaterExpressionBase" />
   </node>
   <node concept="1TIwiD" id="2uEbjWK0yah">
@@ -849,6 +884,7 @@
     <property role="3GE5qa" value="expressions.comparison" />
     <property role="TrG5h" value="GreaterEqualsExpression" />
     <property role="34LRSv" value="&gt;=" />
+    <property role="R4oN_" value="greater equals" />
     <ref role="1TJDcQ" to="ehqg:2uEbjWK0yad" resolve="GreaterEqualsExpressionBase" />
   </node>
   <node concept="PlHQZ" id="5_V$TJxCJMd">
@@ -871,6 +907,7 @@
     <property role="3GE5qa" value="expressions.comparison" />
     <property role="TrG5h" value="NotEqualsExpression" />
     <property role="34LRSv" value="!=" />
+    <property role="R4oN_" value="not equals" />
     <ref role="1TJDcQ" to="ehqg:1ZsZb$iA1dK" resolve="NotEqualsExpressionBase" />
   </node>
   <node concept="1TIwiD" id="1ZsZb$iAmXE">
@@ -900,6 +937,7 @@
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="ConditionalExpression" />
     <property role="34LRSv" value="?" />
+    <property role="R4oN_" value="conditional" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="1ZsZb$iN6Uf" role="1TKVEi">
       <property role="IQ2ns" value="2295987781866647183" />
@@ -950,6 +988,7 @@
     <property role="3GE5qa" value="expressions.conversion" />
     <property role="TrG5h" value="SWConst" />
     <property role="34LRSv" value="swconst" />
+    <property role="R4oN_" value="swconst expression" />
     <ref role="1TJDcQ" node="6mm$FLYYmm$" resolve="Word2ConstBase" />
   </node>
   <node concept="1TIwiD" id="6mm$FLYYpoB">
@@ -957,6 +996,7 @@
     <property role="3GE5qa" value="expressions.conversion" />
     <property role="TrG5h" value="UWConst" />
     <property role="34LRSv" value="uwconst" />
+    <property role="R4oN_" value="uwconst expression" />
     <ref role="1TJDcQ" node="6mm$FLYYmm$" resolve="Word2ConstBase" />
   </node>
   <node concept="1TIwiD" id="6mm$FLYZR9W">
@@ -991,6 +1031,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="ArrayType" />
     <property role="34LRSv" value="array" />
+    <property role="R4oN_" value="array type" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     <node concept="1TJgyj" id="2mjHtwTraHA" role="1TKVEi">
       <property role="IQ2ns" value="2707707741260786534" />
@@ -1130,6 +1171,7 @@
     <property role="3GE5qa" value="spec" />
     <property role="TrG5h" value="CTLSpecSection" />
     <property role="34LRSv" value="CTLSPEC" />
+    <property role="R4oN_" value="CTLSPEC section" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
   </node>
   <node concept="1TIwiD" id="6WmpcHMQvoC">
@@ -1231,6 +1273,7 @@
     <property role="3GE5qa" value="expressions.arithmetic" />
     <property role="TrG5h" value="AbsExpression" />
     <property role="34LRSv" value="abs" />
+    <property role="R4oN_" value="abs expression" />
     <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
   <node concept="1TIwiD" id="Kom1UAKxQg">
@@ -1238,6 +1281,7 @@
     <property role="3GE5qa" value="expressions.arithmetic" />
     <property role="TrG5h" value="MaxExpression" />
     <property role="34LRSv" value="max" />
+    <property role="R4oN_" value="max expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
   </node>
   <node concept="1TIwiD" id="Kom1UAKzux">
@@ -1245,6 +1289,7 @@
     <property role="3GE5qa" value="expressions.arithmetic" />
     <property role="TrG5h" value="MinExpression" />
     <property role="34LRSv" value="min" />
+    <property role="R4oN_" value="min expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
   </node>
   <node concept="1TIwiD" id="59AZjhfZW2w">
@@ -1252,6 +1297,7 @@
     <property role="3GE5qa" value="spec" />
     <property role="TrG5h" value="INVARSpecSection" />
     <property role="34LRSv" value="INVARSPEC" />
+    <property role="R4oN_" value="INVARSPEC section" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Uhgr">
@@ -1289,6 +1335,7 @@
     <property role="3GE5qa" value="spec" />
     <property role="TrG5h" value="LTLSpecSection" />
     <property role="34LRSv" value="LTLSPEC" />
+    <property role="R4oN_" value="LTLSPEC section" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
   </node>
   <node concept="PlHQZ" id="7V1Bqz6Uid_">

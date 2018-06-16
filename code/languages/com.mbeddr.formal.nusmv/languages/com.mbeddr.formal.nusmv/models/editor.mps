@@ -1039,7 +1039,7 @@
   </node>
   <node concept="24kQdi" id="6NmtaR22D3_">
     <property role="3GE5qa" value="expressions" />
-    <ref role="1XX52x" to="gioj:6NmtaR22D35" resolve="ChoiceExpression" />
+    <ref role="1XX52x" to="gioj:6NmtaR22D35" resolve="SetExpression" />
     <node concept="3EZMnI" id="6NmtaR22D3B" role="2wV5jI">
       <node concept="3F0ifn" id="6NmtaR22D3U" role="3EZMnx">
         <property role="3F0ifm" value="{" />
