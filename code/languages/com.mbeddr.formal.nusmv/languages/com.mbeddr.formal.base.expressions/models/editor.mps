@@ -642,5 +642,17 @@
       <ref role="1k5W1q" node="6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
+  <node concept="3p36aQ" id="7Z6$Wo5UqVC">
+    <property role="3GE5qa" value="expressions.arithmetic" />
+    <ref role="aqKnT" to="ehqg:6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
+  </node>
+  <node concept="3p36aQ" id="7Z6$Wo5UXFb">
+    <property role="3GE5qa" value="expressions.comparison" />
+    <ref role="aqKnT" to="ehqg:6NmtaR1YmTj" resolve="BinaryComparisonExpression" />
+  </node>
+  <node concept="3p36aQ" id="7Z6$Wo5UXF_">
+    <property role="3GE5qa" value="expressions.logical" />
+    <ref role="aqKnT" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 
