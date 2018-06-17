@@ -64,6 +64,10 @@
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242773" name="modifiers" index="pLAjc" />
+        <property id="1207318242774" name="keycode" index="pLAjf" />
+      </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
@@ -97,6 +101,15 @@
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
         <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
+      </concept>
+      <concept id="1562714432501166198" name="jetbrains.mps.lang.plugin.structure.SimpleShortcutChange" flags="lg" index="Zd509">
+        <child id="1562714432501166206" name="keystroke" index="Zd501" />
+      </concept>
+      <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
+        <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
+      </concept>
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
+        <reference id="6193305307616734326" name="action" index="1bYAoF" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
@@ -2359,6 +2372,58 @@
     </node>
     <node concept="1QGGSu" id="6glUKoNPNO0" role="3Uehp1">
       <property role="1iqoE4" value="${module}/icons/verify.png" />
+    </node>
+  </node>
+  <node concept="Zd50a" id="2QUcAU1UF8l">
+    <property role="TrG5h" value="NuSMV_Keymap" />
+    <node concept="Zd509" id="2QUcAU1UF8m" role="Zd508">
+      <ref role="1bYAoF" node="1ZsZb$iM_jl" resolve="RunNUSMVOnTestCase" />
+      <node concept="pLAjd" id="2QUcAU1UF8n" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_T" />
+      </node>
+    </node>
+    <node concept="Zd509" id="2QUcAU1ULeF" role="Zd508">
+      <ref role="1bYAoF" node="6mm$FLZ2PnF" resolve="RunNUSMVOnTestCollection" />
+      <node concept="pLAjd" id="2QUcAU1ULeG" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_T" />
+      </node>
+    </node>
+    <node concept="Zd509" id="2QUcAU1ULeO" role="Zd508">
+      <ref role="1bYAoF" node="2xeYpNCfAJz" resolve="RunNUSMVSimulatorOnTestCase" />
+      <node concept="pLAjd" id="2QUcAU1ULeP" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_S" />
+      </node>
+    </node>
+    <node concept="Zd509" id="2QUcAU1ULf5" role="Zd508">
+      <ref role="1bYAoF" node="2xeYpNCfAJz" resolve="RunNUSMVSimulatorOnTestCase" />
+      <node concept="pLAjd" id="2QUcAU1ULf6" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_S" />
+      </node>
+    </node>
+    <node concept="Zd509" id="2QUcAU1ULfi" role="Zd508">
+      <ref role="1bYAoF" node="3fsZMFM0inr" resolve="RunNUSMVOnMainModule" />
+      <node concept="pLAjd" id="2QUcAU1ULfj" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_N" />
+      </node>
+    </node>
+    <node concept="Zd509" id="2QUcAU1ULfB" role="Zd508">
+      <ref role="1bYAoF" node="6NmtaR23THu" resolve="RunNUSMVOnSystem" />
+      <node concept="pLAjd" id="2QUcAU1ULfC" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_N" />
+      </node>
+    </node>
+    <node concept="Zd509" id="2QUcAU1ULfS" role="Zd508">
+      <ref role="1bYAoF" node="6glUKoNPNN0" resolve="RunNUSMVOnSource" />
+      <node concept="pLAjd" id="2QUcAU1ULfT" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_N" />
+      </node>
     </node>
   </node>
 </model>
