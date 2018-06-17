@@ -617,8 +617,16 @@
                 </node>
               </node>
               <node concept="19SUe$" id="2mjHtwTD$nj" role="19SJt6">
-                <property role="19SUeA" value=" are definitions of the module" />
+                <property role="19SUeA" value=" are definitions of the module which are marked with " />
               </node>
+              <node concept="28N2ik" id="7Z6$Wo5LtFe" role="19SJt6">
+                <node concept="19SGf9" id="7Z6$Wo5LtFf" role="$DsGW">
+                  <node concept="19SUe$" id="7Z6$Wo5LtFg" role="19SJt6">
+                    <property role="19SUeA" value="output" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="7Z6$Wo5LtFh" role="19SJt6" />
             </node>
           </node>
         </node>
@@ -686,7 +694,7 @@
             </node>
           </node>
           <node concept="19SUe$" id="2mjHtwTDAiZ" role="19SJt6">
-            <property role="19SUeA" value=" - actual parameters can be either constants, parameters of the containing module or definitions contained in peer module instances." />
+            <property role="19SUeA" value=" - actual parameters can be either constants, parameters of the containing module or definitions contained in peer module instances. Certain definitions of a module can be declared to be &quot;outputs&quot; by using the &quot;output&quot; concept." />
           </node>
         </node>
       </node>
@@ -794,6 +802,39 @@
           </node>
         </node>
         <node concept="2bctqb" id="2mjHtwTDARA" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="7Z6$Wo5MmNz" role="1_0VJ0">
+        <node concept="19SGf9" id="7Z6$Wo5MmN$" role="1_0LWR">
+          <node concept="19SUe$" id="7Z6$Wo5MmN_" role="19SJt6">
+            <property role="19SUeA" value="In the case when a module is specified via a function-table, then the function values must be marked as " />
+          </node>
+          <node concept="28N2ik" id="7Z6$Wo5MmQX" role="19SJt6">
+            <node concept="19SGf9" id="7Z6$Wo5MmQY" role="$DsGW">
+              <node concept="19SUe$" id="7Z6$Wo5MmQZ" role="19SJt6">
+                <property role="19SUeA" value="output" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="7Z6$Wo5MmR0" role="19SJt6">
+            <property role="19SUeA" value=" to be considered as ports." />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="7Z6$Wo5MmUs" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_arch_from_tabular_modules" />
+        <ref role="1wz7Nk" to="l9d9:2mjHtwTGSST" resolve="_030_architecture_with_tables" />
+        <node concept="2Sb_l4" id="7Z6$Wo5MmY0" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_arch_from_modules_with_tabular_spec.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="7Z6$Wo5MmUw" role="2SaI5j">
+          <node concept="19SGf9" id="7Z6$Wo5MmUx" role="OjmMu">
+            <node concept="19SUe$" id="7Z6$Wo5MmUy" role="19SJt6">
+              <property role="19SUeA" value="Example of an architecture with components being modules with specified as tables. The function outputs marked as 'output' are seen as ports." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="7Z6$Wo5MmU$" role="3SHJ_F" />
       </node>
     </node>
   </node>
