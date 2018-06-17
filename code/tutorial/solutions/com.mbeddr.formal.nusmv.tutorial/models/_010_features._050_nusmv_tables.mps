@@ -679,7 +679,7 @@
   <node concept="1J0nZ8" id="2mjHtwTGpLV">
     <property role="TrG5h" value="_020_statefull_function_tables_tests" />
     <node concept="1J0nI2" id="2mjHtwTGDFL" role="1J0nHx">
-      <property role="TrG5h" value="testFlipflop" />
+      <property role="TrG5h" value="testFlipFlop_PASS" />
       <ref role="1J0niy" node="2mjHtwTGp4$" resolve="sr_latch" />
       <node concept="1J0m7Y" id="2mjHtwTGDFM" role="1J0m7J">
         <node concept="2IPVmt" id="2mjHtwTGDFZ" role="1J0m7X">
