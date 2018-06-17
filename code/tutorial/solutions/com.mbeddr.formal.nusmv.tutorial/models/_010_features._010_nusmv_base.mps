@@ -60,7 +60,7 @@
         <child id="7842584090743943207" name="lhs" index="2He$ia" />
       </concept>
       <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
-      <concept id="7842584090745934021" name="com.mbeddr.formal.nusmv.structure.ChoiceExpression" flags="ng" index="2IRehC">
+      <concept id="7842584090745934021" name="com.mbeddr.formal.nusmv.structure.SetExpression" flags="ng" index="2IRehC">
         <child id="7842584090745934022" name="choices" index="2IRehF" />
       </concept>
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
@@ -183,10 +183,10 @@
       </node>
       <node concept="2Hfkzp" id="1IrBcRpi7F8" role="2HcbjO">
         <node concept="2HfkAV" id="1IrBcRpi7Fq" role="2HfkAP">
+          <node concept="1yCjT0" id="7mSH3WnHVVU" role="2He$i0" />
           <node concept="2He$iJ" id="1IrBcRpi7FJ" role="2He$ia">
             <ref role="2He$iI" node="1IrBcRpi7EF" resolve="value" />
           </node>
-          <node concept="1yCjT0" id="7mSH3WnHVVU" role="2He$i0" />
         </node>
         <node concept="2HevG6" id="1IrBcRpi7G9" role="2HfkAP">
           <node concept="2He$iJ" id="1IrBcRpi7GB" role="2He$ia">
