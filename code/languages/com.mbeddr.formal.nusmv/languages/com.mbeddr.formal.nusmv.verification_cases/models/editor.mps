@@ -41,6 +41,9 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -52,6 +55,7 @@
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -141,6 +145,7 @@
         <node concept="2iRfu4" id="43FRfGK0XUL" role="2iSdaV" />
         <node concept="3F0ifn" id="43FRfGK0U$E" role="3EZMnx">
           <property role="3F0ifm" value="verification case:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="43FRfGK0YHl" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -199,6 +204,37 @@
       </node>
       <node concept="3F0ifn" id="43FRfGK10nU" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="3EZMnI" id="2QUcAU1VM$U" role="AHCbl">
+        <node concept="2iRfu4" id="2QUcAU1VM$V" role="2iSdaV" />
+        <node concept="3F0ifn" id="2QUcAU1VM$W" role="3EZMnx">
+          <property role="3F0ifm" value="verification case:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="2QUcAU1VM$X" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1VM$Y" role="3EZMnx">
+          <property role="3F0ifm" value="for module:" />
+        </node>
+        <node concept="1iCGBv" id="2QUcAU1VM$Z" role="3EZMnx">
+          <ref role="1NtTu8" to="fnq2:43FRfGJUExp" resolve="module" />
+          <node concept="1sVBvm" id="2QUcAU1VM_0" role="1sWHZn">
+            <node concept="3F0A7n" id="2QUcAU1VM_1" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1VM_2" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1VMLn" role="3EZMnx">
+          <property role="3F0ifm" value="..." />
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1VMLF" role="3EZMnx">
+          <property role="3F0ifm" value="}" />
+        </node>
       </node>
     </node>
     <node concept="3EZMnI" id="4Hts7PYM7uD" role="6VMZX">

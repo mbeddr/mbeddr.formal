@@ -80,6 +80,7 @@
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -362,6 +363,36 @@
       </node>
       <node concept="3F0ifn" id="43FRfGK10nU" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="3EZMnI" id="2QUcAU1VhjW" role="AHCbl">
+        <node concept="2iRfu4" id="2QUcAU1VhjX" role="2iSdaV" />
+        <node concept="3F0ifn" id="2QUcAU1VhjY" role="3EZMnx">
+          <property role="3F0ifm" value="test case:" />
+        </node>
+        <node concept="3F0A7n" id="2QUcAU1VhjZ" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1Vhk0" role="3EZMnx">
+          <property role="3F0ifm" value="for module:" />
+        </node>
+        <node concept="1iCGBv" id="2QUcAU1Vhk1" role="3EZMnx">
+          <ref role="1NtTu8" to="fnq2:43FRfGJUExp" resolve="module" />
+          <node concept="1sVBvm" id="2QUcAU1Vhk2" role="1sWHZn">
+            <node concept="3F0A7n" id="2QUcAU1Vhk3" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1Vhk4" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1Vhsb" role="3EZMnx">
+          <property role="3F0ifm" value="..." />
+        </node>
+        <node concept="3F0ifn" id="2QUcAU1Vhsv" role="3EZMnx">
+          <property role="3F0ifm" value="}" />
+        </node>
       </node>
     </node>
     <node concept="3EZMnI" id="4Hts7PYx34L" role="6VMZX">

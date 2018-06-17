@@ -2225,6 +2225,7 @@
         </node>
         <node concept="3F0ifn" id="7mSH3Wne5mN" role="3EZMnx">
           <property role="3F0ifm" value="STATE-MACHINE" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="7mSH3Wne5mV" role="3EZMnx">
           <property role="3F0ifm" value="{" />
