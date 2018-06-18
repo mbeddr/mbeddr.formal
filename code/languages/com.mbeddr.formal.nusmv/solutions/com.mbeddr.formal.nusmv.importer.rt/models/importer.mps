@@ -20,11 +20,7 @@
     <import index="q96v" ref="18cd78f6-e870-412b-81e1-d3955c4ecc88/java:org.parboiled.support(com.mbeddr.formal.nusmv.importer.rt/)" />
     <import index="4um0" ref="18cd78f6-e870-412b-81e1-d3955c4ecc88/java:org.parboiled.parserunners(com.mbeddr.formal.nusmv.importer.rt/)" />
     <import index="igrg" ref="18cd78f6-e870-412b-81e1-d3955c4ecc88/java:org.parboiled.annotations(com.mbeddr.formal.nusmv.importer.rt/)" />
-    <import index="2ypk" ref="18cd78f6-e870-412b-81e1-d3955c4ecc88/java:org.objectweb.asm(com.mbeddr.formal.nusmv.importer.rt/)" />
     <import index="l8i4" ref="r:a6cacef4-4d68-4996-ad57-e96d59919943(com.mbeddr.formal.nusmv.importer.structure)" />
-    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
-    <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
-    <import index="8j77" ref="18cd78f6-e870-412b-81e1-d3955c4ecc88/java:org.parboiled.errors(com.mbeddr.formal.nusmv.importer.rt/)" />
     <import index="v3yl" ref="18cd78f6-e870-412b-81e1-d3955c4ecc88/java:org.parboiled.trees(com.mbeddr.formal.nusmv.importer.rt/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
