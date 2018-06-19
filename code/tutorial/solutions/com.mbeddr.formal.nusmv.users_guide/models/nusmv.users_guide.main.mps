@@ -231,10 +231,17 @@
             </node>
           </node>
         </node>
+        <node concept="3X6T9g" id="2QUcAU24TtV" role="3Xp5NH">
+          <node concept="OjmMv" id="2QUcAU24TtW" role="3X6T9h">
+            <node concept="19SGf9" id="2QUcAU24TtX" role="OjmMu">
+              <node concept="19SUe$" id="2QUcAU24TtY" role="19SJt6">
+                <property role="19SUeA" value="com.mbeddr.formal.nusmv.verification_cases - an extension of the testing language with the possibility to create tests to be run from a certain state of the system" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="1_1sxE" id="2mjHtwTu9lT" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
+      <node concept="3X6WG5" id="2QUcAU24Ts1" role="1_0VJ0" />
     </node>
   </node>
   <node concept="2SbYGP" id="2mjHtwTu9dY">
