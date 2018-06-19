@@ -30,9 +30,6 @@
         <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -70,7 +67,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -287,42 +283,6 @@
         <node concept="17QB3L" id="2mjHtwTSW9S" role="1tU5fm" />
       </node>
     </node>
-  </node>
-  <node concept="312cEu" id="2mjHtwTSH06">
-    <property role="TrG5h" value="NamingUtils" />
-    <node concept="2tJIrI" id="2mjHtwTSH19" role="jymVt" />
-    <node concept="2YIFZL" id="2mjHtwTSH2e" role="jymVt">
-      <property role="TrG5h" value="nameOfGeneratedAdapterClass" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="2mjHtwTSH2h" role="3clF47">
-        <node concept="3clFbF" id="2mjHtwTS_$6" role="3cqZAp">
-          <node concept="3cpWs3" id="2mjHtwTSB1_" role="3clFbG">
-            <node concept="2OqwBi" id="2mjHtwTSEX2" role="3uHU7w">
-              <node concept="2JrnkZ" id="2mjHtwTSEGH" role="2Oq$k0">
-                <node concept="37vLTw" id="2mjHtwTSDUc" role="2JrQYb">
-                  <ref role="3cqZAo" node="2mjHtwTSH2U" resolve="n" />
-                </node>
-              </node>
-              <node concept="liA8E" id="2mjHtwTSFlA" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="2mjHtwTS_$5" role="3uHU7B">
-              <property role="Xl_RC" value="ValueAdapter_nodeId_" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="2mjHtwTSH1A" role="1B3o_S" />
-      <node concept="17QB3L" id="2mjHtwTSH23" role="3clF45" />
-      <node concept="37vLTG" id="2mjHtwTSH2U" role="3clF46">
-        <property role="TrG5h" value="n" />
-        <node concept="3Tqbb2" id="2mjHtwTSH2T" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="2mjHtwTSH07" role="1B3o_S" />
   </node>
 </model>
 

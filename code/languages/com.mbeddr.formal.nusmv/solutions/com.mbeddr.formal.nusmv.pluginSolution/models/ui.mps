@@ -1047,6 +1047,16 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="6Kf5KB718M3" role="3clFbx">
+                            <node concept="3clFbF" id="2QUcAU243Fa" role="3cqZAp">
+                              <node concept="2YIFZM" id="2QUcAU244dM" role="3clFbG">
+                                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                <node concept="10Nm6u" id="2QUcAU244Cq" role="37wK5m" />
+                                <node concept="Xl_RD" id="2QUcAU24557" role="37wK5m">
+                                  <property role="Xl_RC" value="No trace available to simulate!\nPlease select a result with a trace attached." />
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3cpWs6" id="6Kf5KB71bwS" role="3cqZAp" />
                           </node>
                         </node>

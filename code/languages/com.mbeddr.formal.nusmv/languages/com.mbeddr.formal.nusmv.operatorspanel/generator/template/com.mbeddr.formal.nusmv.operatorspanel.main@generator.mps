@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:763582ac-ee66-4477-adc8-407b42060982(main@generator)">
+<model ref="r:763582ac-ee66-4477-adc8-407b42060982(com.mbeddr.formal.nusmv.operatorspanel.main@generator)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
@@ -7,6 +7,7 @@
   <imports>
     <import index="ula4" ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)" />
     <import index="2mtz" ref="r:50270b39-1844-4141-88fe-c7afa14cdcc0(com.mbeddr.formal.nusmv.operatorspanel.util)" />
+    <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -384,9 +385,9 @@
       <node concept="3zFVjK" id="2mjHtwTS_db" role="3zH0cK">
         <node concept="3clFbS" id="2mjHtwTS_dc" role="2VODD2">
           <node concept="3clFbF" id="2mjHtwTSK7h" role="3cqZAp">
-            <node concept="2YIFZM" id="Kom1UANDzQ" role="3clFbG">
-              <ref role="37wK5l" to="2mtz:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
-              <ref role="1Pybhc" to="2mtz:2mjHtwTSH06" resolve="NamingUtils" />
+            <node concept="2YIFZM" id="2QUcAU27WGq" role="3clFbG">
+              <ref role="37wK5l" to="mc3u:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
+              <ref role="1Pybhc" to="mc3u:2QUcAU27U4b" resolve="AdapterClassesUtils" />
               <node concept="2OqwBi" id="2mjHtwTSYCT" role="37wK5m">
                 <node concept="1iwH7S" id="2mjHtwTSYnQ" role="2Oq$k0" />
                 <node concept="12$id9" id="2mjHtwTSYUA" role="2OqNvi">
@@ -512,9 +513,9 @@
       <node concept="3zFVjK" id="2bsfjeWbkbu" role="3zH0cK">
         <node concept="3clFbS" id="2bsfjeWbkbv" role="2VODD2">
           <node concept="3clFbF" id="2bsfjeWbkbw" role="3cqZAp">
-            <node concept="2YIFZM" id="2bsfjeWbkbx" role="3clFbG">
-              <ref role="37wK5l" to="2mtz:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
-              <ref role="1Pybhc" to="2mtz:2mjHtwTSH06" resolve="NamingUtils" />
+            <node concept="2YIFZM" id="2QUcAU27WGn" role="3clFbG">
+              <ref role="37wK5l" to="mc3u:2mjHtwTSH2e" resolve="nameOfGeneratedAdapterClass" />
+              <ref role="1Pybhc" to="mc3u:2QUcAU27U4b" resolve="AdapterClassesUtils" />
               <node concept="2OqwBi" id="2bsfjeWbkby" role="37wK5m">
                 <node concept="1iwH7S" id="2bsfjeWbkbz" role="2Oq$k0" />
                 <node concept="12$id9" id="2bsfjeWbkb$" role="2OqNvi">

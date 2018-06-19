@@ -40,6 +40,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="rcfd" ref="r:aa6c5e05-6972-4980-b759-3c51783a587d(com.mbeddr.formal.nusmv.source.structure)" />
     <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
+    <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" implicit="true" />
     <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" implicit="true" />
@@ -443,6 +444,24 @@
               <node concept="liA8E" id="7mSH3WncNkj" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2QUcAU24DL3" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24DL4" role="3clFbG">
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <node concept="2OqwBi" id="2QUcAU24DL5" role="37wK5m">
+              <node concept="2OqwBi" id="2QUcAU24DL6" role="2Oq$k0">
+                <node concept="2WthIp" id="2QUcAU24DL7" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QUcAU24ECa" role="2OqNvi">
+                  <ref role="2WH_rO" node="6NmtaR244nK" resolve="system" />
+                </node>
+              </node>
+              <node concept="I4A8Y" id="2QUcAU24DL9" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2QUcAU24DLa" role="37wK5m">
+              <ref role="3cqZAo" node="7mSH3WncNkg" resolve="repo" />
             </node>
           </node>
         </node>
@@ -1132,6 +1151,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2QUcAU24F8J" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24F8K" role="3clFbG">
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <node concept="2OqwBi" id="2QUcAU24F8L" role="37wK5m">
+              <node concept="2OqwBi" id="2QUcAU24F8M" role="2Oq$k0">
+                <node concept="2WthIp" id="2QUcAU24F8N" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QUcAU24G0O" role="2OqNvi">
+                  <ref role="2WH_rO" node="1ZsZb$iM_ki" resolve="tc" />
+                </node>
+              </node>
+              <node concept="I4A8Y" id="2QUcAU24F8P" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2QUcAU24F8Q" role="37wK5m">
+              <ref role="3cqZAo" node="1ZsZb$iM_jN" resolve="repo" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1ZsZb$iM_jS" role="3cqZAp">
           <node concept="3cpWsn" id="1ZsZb$iM_jT" role="3cpWs9">
             <property role="TrG5h" value="toolAdapter" />
@@ -1428,6 +1465,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2QUcAU24Giv" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24Giw" role="3clFbG">
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <node concept="2OqwBi" id="2QUcAU24Gix" role="37wK5m">
+              <node concept="2OqwBi" id="2QUcAU24Giy" role="2Oq$k0">
+                <node concept="2WthIp" id="2QUcAU24Giz" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QUcAU24GS4" role="2OqNvi">
+                  <ref role="2WH_rO" node="6mm$FLZ2PoB" resolve="tc" />
+                </node>
+              </node>
+              <node concept="I4A8Y" id="2QUcAU24Gi_" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2QUcAU24GiA" role="37wK5m">
+              <ref role="3cqZAo" node="6mm$FLZ2Po9" resolve="repo" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6mm$FLZ2Poe" role="3cqZAp">
           <node concept="3cpWsn" id="6mm$FLZ2Pof" role="3cpWs9">
             <property role="TrG5h" value="toolAdapter" />
@@ -1584,6 +1639,21 @@
               <node concept="liA8E" id="2xeYpNCdzDL" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2QUcAU24GWk" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24GWl" role="3clFbG">
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <node concept="2OqwBi" id="2QUcAU24HuZ" role="37wK5m">
+              <node concept="2WthIp" id="2QUcAU24Hdg" role="2Oq$k0" />
+              <node concept="3gHZIF" id="2QUcAU24I53" role="2OqNvi">
+                <ref role="2WH_rO" node="2xeYpNCdzEb" resolve="analyzedModel" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2QUcAU24GWr" role="37wK5m">
+              <ref role="3cqZAo" node="2xeYpNCdzDH" resolve="repo" />
             </node>
           </node>
         </node>
@@ -1766,6 +1836,24 @@
               <node concept="liA8E" id="2xeYpNCfAK5" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2QUcAU24Ik5" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24Ik6" role="3clFbG">
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <node concept="2OqwBi" id="2QUcAU24Ik7" role="37wK5m">
+              <node concept="2OqwBi" id="2QUcAU24Ik8" role="2Oq$k0">
+                <node concept="2WthIp" id="2QUcAU24Ik9" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QUcAU24ISY" role="2OqNvi">
+                  <ref role="2WH_rO" node="2xeYpNCfAKv" resolve="tc" />
+                </node>
+              </node>
+              <node concept="I4A8Y" id="2QUcAU24Ikb" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2QUcAU24Ikc" role="37wK5m">
+              <ref role="3cqZAo" node="2xeYpNCfAK1" resolve="repo" />
             </node>
           </node>
         </node>
@@ -2108,6 +2196,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2QUcAU24uH9" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24uIe" role="3clFbG">
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <node concept="2OqwBi" id="2QUcAU24AV3" role="37wK5m">
+              <node concept="2OqwBi" id="2QUcAU24A4M" role="2Oq$k0">
+                <node concept="2WthIp" id="2QUcAU24_Ne" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QUcAU24AnJ" role="2OqNvi">
+                  <ref role="2WH_rO" node="3fsZMFM0ion" resolve="module" />
+                </node>
+              </node>
+              <node concept="I4A8Y" id="2QUcAU24BpU" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2QUcAU24ByV" role="37wK5m">
+              <ref role="3cqZAo" node="3fsZMFM0inT" resolve="repo" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3fsZMFM0inY" role="3cqZAp">
           <node concept="3cpWsn" id="3fsZMFM0inZ" role="3cpWs9">
             <property role="TrG5h" value="toolAdapter" />
@@ -2293,6 +2399,24 @@
               <node concept="liA8E" id="6glUKoNPNNy" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2QUcAU24Cfp" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24Cfq" role="3clFbG">
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <node concept="2OqwBi" id="2QUcAU24Cfr" role="37wK5m">
+              <node concept="2OqwBi" id="2QUcAU24Cfs" role="2Oq$k0">
+                <node concept="2WthIp" id="2QUcAU24Cft" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2QUcAU24D6n" role="2OqNvi">
+                  <ref role="2WH_rO" node="6glUKoNPNNW" resolve="source" />
+                </node>
+              </node>
+              <node concept="I4A8Y" id="2QUcAU24Cfv" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2QUcAU24Cfw" role="37wK5m">
+              <ref role="3cqZAo" node="6glUKoNPNNu" resolve="repo" />
             </node>
           </node>
         </node>

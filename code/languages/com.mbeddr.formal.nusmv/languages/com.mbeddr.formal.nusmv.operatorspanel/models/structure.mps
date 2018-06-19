@@ -119,6 +119,9 @@
     <property role="3GE5qa" value="adapter" />
     <property role="TrG5h" value="DefinitionValueAdapterBase" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <node concept="PrWs8" id="2QUcAU27Yu5" role="PzmwI">
+      <ref role="PrY4T" to="8b9w:2QUcAU27Yu4" resolve="IValueAdapter" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2bsfjeWbjTw">
     <property role="EcuMT" value="2511949984575602272" />
