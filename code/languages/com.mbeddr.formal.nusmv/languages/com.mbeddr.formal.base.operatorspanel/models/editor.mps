@@ -31,6 +31,9 @@
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="bq1s" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.data.category(com.mbeddr.mpsutil.jfreechart.runtime/)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="8b9w" ref="r:76e92037-38d8-4be4-999f-3a851f86ac42(com.mbeddr.formal.base.operatorspanel.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6m3u" ref="r:67761219-191d-44af-aaf0-3da2d685817e(com.mbeddr.formal.base.operatorspanel.behavior)" implicit="true" />
@@ -56,6 +59,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -603,13 +609,152 @@
         <node concept="VPM3Z" id="2mjHtwTQKh2" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3F0ifn" id="2mjHtwTQKh4" role="3EZMnx">
-          <property role="3F0ifm" value="panel:" />
-        </node>
-        <node concept="3F0A7n" id="2mjHtwTQKhC" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="PMmxH" id="4xJapKM67gV" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:4xJapKM66o$" resolve="iconAndNameCell" />
         </node>
         <node concept="l2Vlx" id="2mjHtwTQKh5" role="2iSdaV" />
+        <node concept="3gTLQM" id="2QUcAU27w5g" role="3EZMnx">
+          <node concept="3Fmcul" id="2QUcAU27w5i" role="3FoqZy">
+            <node concept="3clFbS" id="2QUcAU27w5k" role="2VODD2">
+              <node concept="3cpWs8" id="2QUcAU27KCY" role="3cqZAp">
+                <node concept="3cpWsn" id="2QUcAU27KCZ" role="3cpWs9">
+                  <property role="TrG5h" value="reloadButton" />
+                  <node concept="3uibUv" id="2QUcAU27KCX" role="1tU5fm">
+                    <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+                  </node>
+                  <node concept="2ShNRf" id="2QUcAU27KD0" role="33vP2m">
+                    <node concept="1pGfFk" id="2QUcAU27M$H" role="2ShVmc">
+                      <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                      <node concept="Xl_RD" id="2QUcAU27KD4" role="37wK5m">
+                        <property role="Xl_RC" value="Re-load adapters" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2QUcAU27NsP" role="3cqZAp">
+                <node concept="2OqwBi" id="2QUcAU27O8O" role="3clFbG">
+                  <node concept="37vLTw" id="2QUcAU27NsN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
+                  </node>
+                  <node concept="liA8E" id="2QUcAU27RcO" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <node concept="2ShNRf" id="2QUcAU27Rs7" role="37wK5m">
+                      <node concept="YeOm9" id="2QUcAU27THv" role="2ShVmc">
+                        <node concept="1Y3b0j" id="2QUcAU27THy" role="YeSDq">
+                          <property role="2bfB8j" value="true" />
+                          <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
+                          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                          <node concept="3Tm1VV" id="2QUcAU27THz" role="1B3o_S" />
+                          <node concept="3clFb_" id="2QUcAU27TH$" role="jymVt">
+                            <property role="1EzhhJ" value="false" />
+                            <property role="TrG5h" value="actionPerformed" />
+                            <property role="DiZV1" value="false" />
+                            <property role="od$2w" value="false" />
+                            <node concept="3Tm1VV" id="2QUcAU27TH_" role="1B3o_S" />
+                            <node concept="3cqZAl" id="2QUcAU27THB" role="3clF45" />
+                            <node concept="37vLTG" id="2QUcAU27THC" role="3clF46">
+                              <property role="TrG5h" value="p0" />
+                              <node concept="3uibUv" id="2QUcAU27THD" role="1tU5fm">
+                                <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="2QUcAU27THE" role="3clF47">
+                              <node concept="3clFbF" id="2QUcAU2806H" role="3cqZAp">
+                                <node concept="2YIFZM" id="2QUcAU280LK" role="3clFbG">
+                                  <ref role="37wK5l" to="mc3u:2QUcAU27U8Y" resolve="reloadAdapterClasses" />
+                                  <ref role="1Pybhc" to="mc3u:2QUcAU27U4b" resolve="AdapterClassesUtils" />
+                                  <node concept="pncrf" id="2QUcAU2817z" role="37wK5m" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2QUcAU29oZG" role="3cqZAp">
+                <node concept="2OqwBi" id="2QUcAU29pPh" role="3clFbG">
+                  <node concept="37vLTw" id="2QUcAU29oZE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
+                  </node>
+                  <node concept="liA8E" id="2QUcAU29svk" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
+                    <node concept="2ShNRf" id="2QUcAU29sM8" role="37wK5m">
+                      <node concept="1pGfFk" id="2QUcAU29tXp" role="2ShVmc">
+                        <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
+                        <node concept="Xl_RD" id="2QUcAU29ufd" role="37wK5m">
+                          <property role="Xl_RC" value="Sans" />
+                        </node>
+                        <node concept="3cmrfG" id="2QUcAU2azkB" role="37wK5m">
+                          <property role="3cmrfH" value="2" />
+                        </node>
+                        <node concept="3cmrfG" id="2QUcAU29vXm" role="37wK5m">
+                          <property role="3cmrfH" value="10" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2QUcAU28ynE" role="3cqZAp">
+                <node concept="2OqwBi" id="2QUcAU28zcs" role="3clFbG">
+                  <node concept="37vLTw" id="2QUcAU28ynC" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
+                  </node>
+                  <node concept="liA8E" id="2QUcAU28$Rr" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+                    <node concept="2ShNRf" id="2QUcAU28_9H" role="37wK5m">
+                      <node concept="1pGfFk" id="2QUcAU28AjX" role="2ShVmc">
+                        <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                        <node concept="3cmrfG" id="2QUcAU28AQ9" role="37wK5m">
+                          <property role="3cmrfH" value="130" />
+                        </node>
+                        <node concept="3cmrfG" id="2QUcAU28B7z" role="37wK5m">
+                          <property role="3cmrfH" value="25" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2QUcAU2blDM" role="3cqZAp">
+                <node concept="2OqwBi" id="2QUcAU2bmw8" role="3clFbG">
+                  <node concept="37vLTw" id="2QUcAU2blDK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
+                  </node>
+                  <node concept="liA8E" id="2QUcAU2bpcU" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets):void" resolve="setMargin" />
+                    <node concept="2ShNRf" id="2QUcAU2bpwm" role="37wK5m">
+                      <node concept="1pGfFk" id="2QUcAU2bqB$" role="2ShVmc">
+                        <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />
+                        <node concept="3cmrfG" id="2QUcAU2bqTZ" role="37wK5m">
+                          <property role="3cmrfH" value="1" />
+                        </node>
+                        <node concept="3cmrfG" id="2QUcAU2braW" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="3cmrfG" id="2QUcAU2brbd" role="37wK5m">
+                          <property role="3cmrfH" value="1" />
+                        </node>
+                        <node concept="3cmrfG" id="2QUcAU2bru1" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2QUcAU27zcQ" role="3cqZAp">
+                <node concept="37vLTw" id="2QUcAU27KD5" role="3clFbG">
+                  <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="gc7cB" id="3Dgh5aYj2Ho" role="3EZMnx">
         <node concept="3VJUX4" id="3Dgh5aYj2Hp" role="3YsKMw">

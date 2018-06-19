@@ -37,6 +37,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
         <module reference="3fb92f6f-450c-4e41-8129-97a4b9978951(com.mbeddr.formal.base.operatorspanel)" version="0" />
         <module reference="abc947ce-d44f-4195-a0d6-757312b643e4(com.mbeddr.formal.base.operatorspanel#2707707741267708102)" version="0" />
         <module reference="7fe13e34-8620-4d5d-92c7-df091b0ed628(com.mbeddr.mpsutil.jfreechart.runtime)" version="0" />
@@ -51,6 +52,8 @@
     <dependency reexport="false">848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="true">7fe13e34-8620-4d5d-92c7-df091b0ed628(com.mbeddr.mpsutil.jfreechart.runtime)</dependency>
+    <dependency reexport="false">e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)</dependency>
+    <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -98,7 +101,9 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="3fb92f6f-450c-4e41-8129-97a4b9978951(com.mbeddr.formal.base.operatorspanel)" version="0" />
+    <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="7fe13e34-8620-4d5d-92c7-df091b0ed628(com.mbeddr.mpsutil.jfreechart.runtime)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
@@ -106,6 +111,8 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
