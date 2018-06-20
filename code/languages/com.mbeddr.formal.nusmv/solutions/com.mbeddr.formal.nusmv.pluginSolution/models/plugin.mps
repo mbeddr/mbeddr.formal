@@ -2514,18 +2514,11 @@
         <property role="pLAjf" value="VK_T" />
       </node>
     </node>
-    <node concept="Zd509" id="2QUcAU1ULeO" role="Zd508">
-      <ref role="1bYAoF" node="2xeYpNCfAJz" resolve="RunNUSMVSimulatorOnTestCase" />
-      <node concept="pLAjd" id="2QUcAU1ULeP" role="Zd501">
-        <property role="pLAjc" value="ctrl+alt" />
-        <property role="pLAjf" value="VK_S" />
-      </node>
-    </node>
     <node concept="Zd509" id="2QUcAU1ULf5" role="Zd508">
       <ref role="1bYAoF" node="2xeYpNCfAJz" resolve="RunNUSMVSimulatorOnTestCase" />
       <node concept="pLAjd" id="2QUcAU1ULf6" role="Zd501">
         <property role="pLAjc" value="ctrl+alt" />
-        <property role="pLAjf" value="VK_S" />
+        <property role="pLAjf" value="VK_ENTER" />
       </node>
     </node>
     <node concept="Zd509" id="2QUcAU1ULfi" role="Zd508">
