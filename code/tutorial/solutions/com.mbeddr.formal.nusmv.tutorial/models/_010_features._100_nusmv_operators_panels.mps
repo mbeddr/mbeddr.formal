@@ -207,7 +207,7 @@
     </language>
   </registry>
   <node concept="shuUa" id="2mjHtwTPP$O">
-    <property role="TrG5h" value="traffic_lights" />
+    <property role="TrG5h" value="traffic_lights_panel" />
     <node concept="sr$_z" id="2mjHtwU00_a" role="shf50">
       <node concept="sr$_z" id="3G$pWQNtnoQ" role="sr$zp">
         <node concept="shuHB" id="2mjHtwTPWmu" role="sr$zp">
@@ -509,7 +509,7 @@
         </node>
       </node>
       <node concept="sr$zt" id="70Z3iwfif0Z" role="sr$zp">
-        <property role="srrR1" value="100" />
+        <property role="srrR1" value="85" />
         <property role="srrR5" value="30" />
         <property role="2uXBks" value="10" />
         <node concept="2uWKeB" id="70Z3iwfif1m" role="2uWA36">
@@ -520,6 +520,32 @@
           <property role="28kP95" value="255" />
           <property role="28kP92" value="255" />
         </node>
+      </node>
+      <node concept="sr$zt" id="2H74AM1yykf" role="sr$zp">
+        <property role="srrR1" value="90" />
+        <property role="srrR5" value="30" />
+        <property role="2uXBks" value="15" />
+        <node concept="2uWKeB" id="2H74AM1yykY" role="2uWA36">
+          <property role="2uWKeE" value="Pedestrian" />
+        </node>
+        <node concept="28kP9e" id="2H74AM1yyki" role="28kP63">
+          <property role="28kP99" value="255" />
+          <property role="28kP95" value="255" />
+          <property role="28kP92" value="249" />
+        </node>
+      </node>
+    </node>
+    <node concept="sr$zt" id="2H74AM1yyfl" role="shf50">
+      <property role="srrR1" value="70" />
+      <property role="srrR5" value="50" />
+      <property role="2uXBks" value="15" />
+      <node concept="2uWKeB" id="2H74AM1yyj$" role="2uWA36">
+        <property role="2uWKeE" value="Cars   " />
+      </node>
+      <node concept="28kP9e" id="2H74AM1yyfo" role="28kP63">
+        <property role="28kP99" value="255" />
+        <property role="28kP95" value="255" />
+        <property role="28kP92" value="249" />
       </node>
     </node>
   </node>
