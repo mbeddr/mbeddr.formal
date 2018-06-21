@@ -470,41 +470,56 @@
         </node>
       </node>
     </node>
-    <node concept="shuHB" id="2mjHtwTZpCn" role="shf50">
-      <property role="shuGt" value="15" />
-      <property role="TrG5h" value=" " />
-      <node concept="sjWqJ" id="2mjHtwTZrnG" role="siokC">
-        <ref role="sjWCb" node="o$TLCsR0Lz" resolve="trafficSignal" />
-        <node concept="sjofy" id="2mjHtwTZrnK" role="sjsS3">
-          <node concept="3clFbS" id="2mjHtwTZrnL" role="2VODD2">
-            <node concept="3clFbJ" id="2mjHtwTZpWK" role="3cqZAp">
-              <node concept="3clFbS" id="2mjHtwTZpWL" role="3clFbx">
-                <node concept="3cpWs6" id="2mjHtwTZpWM" role="3cqZAp">
-                  <node concept="3cmrfG" id="2mjHtwTZpWN" role="3cqZAk">
-                    <property role="3cmrfH" value="65280" />
+    <node concept="sr$_z" id="70Z3iwfidx2" role="shf50">
+      <node concept="shuHB" id="2mjHtwTZpCn" role="sr$zp">
+        <property role="shuGt" value="15" />
+        <property role="TrG5h" value=" " />
+        <node concept="sjWqJ" id="2mjHtwTZrnG" role="siokC">
+          <ref role="sjWCb" node="o$TLCsR0Lz" resolve="trafficSignal" />
+          <node concept="sjofy" id="2mjHtwTZrnK" role="sjsS3">
+            <node concept="3clFbS" id="2mjHtwTZrnL" role="2VODD2">
+              <node concept="3clFbJ" id="2mjHtwTZpWK" role="3cqZAp">
+                <node concept="3clFbS" id="2mjHtwTZpWL" role="3clFbx">
+                  <node concept="3cpWs6" id="2mjHtwTZpWM" role="3cqZAp">
+                    <node concept="3cmrfG" id="2mjHtwTZpWN" role="3cqZAk">
+                      <property role="3cmrfH" value="65280" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="2mjHtwTZpWO" role="3clFbw">
+                  <node concept="sjv21" id="2mjHtwTZpWP" role="2Oq$k0" />
+                  <node concept="liA8E" id="2mjHtwTZpWQ" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="Xl_RD" id="2mjHtwTZpWR" role="37wK5m">
+                      <property role="Xl_RC" value="Green" />
+                    </node>
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="2mjHtwTZpWO" role="3clFbw">
-                <node concept="sjv21" id="2mjHtwTZpWP" role="2Oq$k0" />
-                <node concept="liA8E" id="2mjHtwTZpWQ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="Xl_RD" id="2mjHtwTZpWR" role="37wK5m">
-                    <property role="Xl_RC" value="Green" />
-                  </node>
-                </node>
+              <node concept="3cpWs6" id="2mjHtwTZsip" role="3cqZAp">
+                <node concept="10Nm6u" id="2mjHtwTZsj3" role="3cqZAk" />
               </node>
-            </node>
-            <node concept="3cpWs6" id="2mjHtwTZsip" role="3cqZAp">
-              <node concept="10Nm6u" id="2mjHtwTZsj3" role="3cqZAk" />
             </node>
           </node>
         </node>
+        <node concept="28kP9e" id="3G$pWQNu2Er" role="28kP63">
+          <property role="28kP99" value="120" />
+          <property role="28kP95" value="120" />
+          <property role="28kP92" value="120" />
+        </node>
       </node>
-      <node concept="28kP9e" id="3G$pWQNu2Er" role="28kP63">
-        <property role="28kP99" value="120" />
-        <property role="28kP95" value="120" />
-        <property role="28kP92" value="120" />
+      <node concept="sr$zt" id="70Z3iwfif0Z" role="sr$zp">
+        <property role="srrR1" value="100" />
+        <property role="srrR5" value="30" />
+        <property role="2uXBks" value="10" />
+        <node concept="2uWKeB" id="70Z3iwfif1m" role="2uWA36">
+          <property role="2uWKeE" value=" " />
+        </node>
+        <node concept="28kP9e" id="70Z3iwfif12" role="28kP63">
+          <property role="28kP99" value="255" />
+          <property role="28kP95" value="255" />
+          <property role="28kP92" value="255" />
+        </node>
       </node>
     </node>
   </node>
