@@ -45,6 +45,9 @@
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
         <child id="8624890525767908695" name="sizeSpec" index="3SHJ_F" />
       </concept>
+      <concept id="6386504476136420159" name="com.mbeddr.doc.structure.ImgRefWord" flags="ng" index="2Sbdz4">
+        <reference id="6386504476136420174" name="image" index="2SbdyP" />
+      </concept>
       <concept id="6386504476136521407" name="com.mbeddr.doc.structure.Resource" flags="ng" index="2Sb_l4">
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
@@ -63,6 +66,9 @@
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922836" name="language" index="3z_lpW" />
+      </concept>
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -236,6 +242,24 @@
             <node concept="19SGf9" id="2QUcAU24TtX" role="OjmMu">
               <node concept="19SUe$" id="2QUcAU24TtY" role="19SJt6">
                 <property role="19SUeA" value="com.mbeddr.formal.nusmv.verification_cases - an extension of the testing language with the possibility to create tests to be run from a certain state of the system" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="70Z3iwfi4vo" role="3Xp5NH">
+          <node concept="OjmMv" id="70Z3iwfi4vp" role="3X6T9h">
+            <node concept="19SGf9" id="70Z3iwfi4vq" role="OjmMu">
+              <node concept="19SUe$" id="70Z3iwfi4vr" role="19SJt6">
+                <property role="19SUeA" value="com.mbeddr.formal.operatorspanel - provides language constructs for defining UIs and linking them to formal models" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="70Z3iwfi4wg" role="3Xp5NH">
+          <node concept="OjmMv" id="70Z3iwfi4wh" role="3X6T9h">
+            <node concept="19SGf9" id="70Z3iwfi4wi" role="OjmMu">
+              <node concept="19SUe$" id="70Z3iwfi4wj" role="19SJt6">
+                <property role="19SUeA" value="com.mbeddr.formal.importer - (experimental) support for importing existing SMV models" />
               </node>
             </node>
           </node>
@@ -439,7 +463,7 @@
       <node concept="2SaynC" id="4Hts7PY_LDK" role="1_0VJ0">
         <property role="TrG5h" value="nusmv_checking_tests" />
         <property role="2Sbq$t" value="true" />
-        <ref role="1wz7Nk" to="9pd:o$TLCsQZ$i" resolve="_010_traffic_lights_controller_baseLang_tests" />
+        <ref role="1wz7Nk" to="9pd:o$TLCsQZ$i" resolve="_011_traffic_lights_controller_baseLang_tests" />
         <node concept="2Sb_l4" id="4Hts7PY_LDL" role="2SbwM5">
           <property role="2Sb_kV" value="nusmv_tests_checking.png" />
           <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
@@ -1128,6 +1152,74 @@
     </node>
     <node concept="1_0j5j" id="67icRu62XMH" role="1DXQ57">
       <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
+    </node>
+  </node>
+  <node concept="1_1swa" id="70Z3iwfi4xA">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_100_operator_panels" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0VNX" id="70Z3iwfi4xB" role="1_0VJ0">
+      <property role="TrG5h" value="nusmv_operator_panels" />
+      <property role="1_0VJr" value="Operator Panels" />
+      <node concept="1_1sxE" id="70Z3iwfi4xC" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="70Z3iwfi4xD" role="1_0VJ0">
+        <node concept="19SGf9" id="70Z3iwfi4xE" role="1_0LWR">
+          <node concept="19SUe$" id="70Z3iwfi4xF" role="19SJt6">
+            <property role="19SUeA" value="FASTEN provides a DSL for describing operator panels by placing graphical elements on a canvas.    &#10;In " />
+          </node>
+          <node concept="2Sbdz4" id="2H74AM1yzYV" role="19SJt6">
+            <ref role="2SbdyP" node="70Z3iwfi4xG" resolve="nusmv_operator_panels" />
+          </node>
+          <node concept="19SUe$" id="2H74AM1yzYW" role="19SJt6">
+            <property role="19SUeA" value=" is an example of an operator-panel (left), the model to which it is attached (right) and the glue code which links the simulation values to the dynamic properties of the graphical elements " />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="70Z3iwfi4xG" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_operator_panels" />
+        <ref role="1wz7Nk" to="9pd:2mjHtwTPP$O" resolve="_012_traffic_lights_panel" />
+        <node concept="2Sb_l4" id="70Z3iwfi4xH" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_operator_panels.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="70Z3iwfi4xI" role="2SaI5j">
+          <node concept="19SGf9" id="70Z3iwfi4xJ" role="OjmMu">
+            <node concept="19SUe$" id="70Z3iwfi4xK" role="19SJt6">
+              <property role="19SUeA" value="An operator panel contains graphical widgets which can have &quot;static&quot; properties or properties which can be changed according to the simulation value of a model element. An adapter makes the link between the current simulation value and the desired value of the property." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="70Z3iwfi4xL" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="2H74AM1y$1O" role="1_0VJ0">
+        <node concept="19SGf9" id="2H74AM1y$1P" role="1_0LWR">
+          <node concept="19SUe$" id="2H74AM1y$1Q" role="19SJt6">
+            <property role="19SUeA" value="The widgets can be organized in lines." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="2H74AM1BK4B" role="1_0VJ0">
+        <node concept="19SGf9" id="2H74AM1BK4C" role="1_0LWR">
+          <node concept="19SUe$" id="2H74AM1BK4D" role="19SJt6">
+            <property role="19SUeA" value="Example " />
+          </node>
+          <node concept="3z_lpY" id="2H74AM1BK5h" role="19SJt6">
+            <node concept="2NCZwO" id="2H74AM1BK5i" role="3z_lpZ">
+              <node concept="2NCMab" id="2H74AM1BK5s" role="2NCMaf">
+                <ref role="2NCMaa" to="9pd:7HQSJoRVsER" resolve="_022_instrument_cluster_controller_panel" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2H74AM1BK5j" role="19SJt6">
+            <property role="19SUeA" value=" presents illustrates how to build a simple instrument cluster." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2H74AM1BK44" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
     </node>
   </node>
 </model>
