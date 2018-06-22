@@ -212,6 +212,7 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
       <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
@@ -226,6 +227,7 @@
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
+        <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
@@ -239,6 +241,7 @@
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
       </concept>
+      <concept id="6349233906483558394" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_wrappedConcept" flags="ng" index="1ZN7lz" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
@@ -273,6 +276,9 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -1721,6 +1727,20 @@
       <node concept="1kIj98" id="1ZsZb$iAmYo" role="3EZMnx">
         <node concept="3F1sOY" id="1ZsZb$iAmYw" role="1kIj9b">
           <ref role="1NtTu8" to="gioj:1ZsZb$iAmXF" resolve="left" />
+        </node>
+        <node concept="7duGs" id="6s7FQCLEUX$" role="7deOD">
+          <node concept="3clFbS" id="6s7FQCLEUX_" role="2VODD2">
+            <node concept="3clFbF" id="6s7FQCLCXp6" role="3cqZAp">
+              <node concept="2OqwBi" id="6s7FQCLCXDb" role="3clFbG">
+                <node concept="1ZN7lz" id="6s7FQCLEVm2" role="2Oq$k0" />
+                <node concept="3O6GUB" id="6s7FQCLEWiU" role="2OqNvi">
+                  <node concept="chp4Y" id="6s7FQCLEW$0" role="3QVz_e">
+                    <ref role="cht4Q" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="1ZsZb$iAmYF" role="3EZMnx">
