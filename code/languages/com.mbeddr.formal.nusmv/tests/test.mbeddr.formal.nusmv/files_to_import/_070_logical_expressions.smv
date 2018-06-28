@@ -5,5 +5,5 @@ MODULE logic_exps_tests(p, q)
 DEFINE
   p_and_q := p & q;
   p_or_q := p | q;
+  p_xor_q := p xor q;
   not_p_or_q := !(p | q);
-  

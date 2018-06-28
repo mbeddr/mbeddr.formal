@@ -67,6 +67,13 @@
         <property role="3N1Lgt" value="files_to_import/_070_logical_expressions.smv" />
       </node>
     </node>
+    <node concept="1JYbFF" id="3slobAdxG89" role="Q3GC_">
+      <node concept="3NXOOs" id="3slobAdxG8a" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/_080_module_types.smv" />
+      </node>
+    </node>
   </node>
   <node concept="Q3Guq" id="4C19r4_Ypi5">
     <property role="TrG5h" value="realExamples" />

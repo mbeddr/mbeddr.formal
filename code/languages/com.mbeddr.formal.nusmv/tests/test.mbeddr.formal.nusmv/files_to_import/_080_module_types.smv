@@ -1,0 +1,15 @@
+-- test for modules
+-------------------------------------------------------------------------
+
+MODULE inner_module(v)
+VAR
+  v1 : boolean;
+  v2 : 0 .. 100;
+DEFINE
+  o1 = v1;
+  
+MODULE outer_module
+VAR
+  m1 : inner_module(TRUE);
+  m2 : inner_module(m1.v1);
+  m3 : inner_module(m1.o1);

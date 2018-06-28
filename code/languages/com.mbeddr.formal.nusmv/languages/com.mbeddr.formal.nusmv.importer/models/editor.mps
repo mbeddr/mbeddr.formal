@@ -285,12 +285,21 @@
     <node concept="3EZMnI" id="5Rx4RPFVY_k" role="2wV5jI">
       <node concept="3F0ifn" id="5Rx4RPFVYAk" role="3EZMnx">
         <property role="3F0ifm" value="$" />
+        <node concept="Veino" id="2H74AM1Cb5T" role="3F10Kt">
+          <property role="Vb096" value="orange" />
+        </node>
       </node>
       <node concept="3F0A7n" id="5Rx4RPFVYCZ" role="3EZMnx">
         <ref role="1NtTu8" to="l8i4:5Rx4RPFVYqh" resolve="referencedVarName" />
+        <node concept="Veino" id="2H74AM1Cb5W" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5Rx4RPFVYE2" role="3EZMnx">
         <property role="3F0ifm" value="$" />
+        <node concept="Veino" id="2H74AM1CeQT" role="3F10Kt">
+          <property role="Vb096" value="orange" />
+        </node>
       </node>
       <node concept="l2Vlx" id="5Rx4RPFVY_n" role="2iSdaV" />
     </node>
@@ -404,6 +413,33 @@
   </node>
   <node concept="3p36aQ" id="70Z3iwfl66g">
     <ref role="aqKnT" to="l8i4:41yfEs6hm3y" resolve="ImporterWarning" />
+  </node>
+  <node concept="3p36aQ" id="2H74AM1EmIF">
+    <ref role="aqKnT" to="l8i4:2H74AM1EmIe" resolve="NotReifiedModuleType" />
+  </node>
+  <node concept="24kQdi" id="2H74AM1EmJ5">
+    <ref role="1XX52x" to="l8i4:2H74AM1EmIe" resolve="NotReifiedModuleType" />
+    <node concept="3EZMnI" id="2H74AM1EmJ7" role="2wV5jI">
+      <node concept="3F0ifn" id="2H74AM1EmJ8" role="3EZMnx">
+        <property role="3F0ifm" value="$" />
+        <node concept="Veino" id="2H74AM1EmJ9" role="3F10Kt">
+          <property role="Vb096" value="orange" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2H74AM1EmJa" role="3EZMnx">
+        <ref role="1NtTu8" to="l8i4:2H74AM1EmIf" resolve="referencedModuleName" />
+        <node concept="Veino" id="2H74AM1EmJb" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2H74AM1EmJc" role="3EZMnx">
+        <property role="3F0ifm" value="$" />
+        <node concept="Veino" id="2H74AM1EmJd" role="3F10Kt">
+          <property role="Vb096" value="orange" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2H74AM1EmJe" role="2iSdaV" />
+    </node>
   </node>
 </model>
 
