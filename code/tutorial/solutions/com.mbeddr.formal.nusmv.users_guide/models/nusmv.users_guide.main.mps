@@ -10,6 +10,7 @@
     <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" />
     <import index="9pd" ref="r:272c7e50-c3af-4365-bda8-43f746c4aee3(_010_features._100_nusmv_operators_panels)" />
     <import index="s0k6" ref="r:7c8a192c-7615-4a1b-a608-a18a83365e6b(_010_features._070_nusmv_verification_cases)" />
+    <import index="gma2" ref="r:9373994a-6064-48c9-8736-0c6a946eaa23(_010_features._500_nusmv_importer)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -1196,9 +1197,25 @@
       <node concept="1_0LV8" id="2H74AM1y$1O" role="1_0VJ0">
         <node concept="19SGf9" id="2H74AM1y$1P" role="1_0LWR">
           <node concept="19SUe$" id="2H74AM1y$1Q" role="19SJt6">
-            <property role="19SUeA" value="The widgets can be organized in lines." />
+            <property role="19SUeA" value="The widgets can be organized in lines. Adding left or right siblings of a certain widget in a line can be done by clicking on the widget and opening the intention (Alt+Enter)." />
           </node>
         </node>
+      </node>
+      <node concept="2SaynC" id="2H74AM1BLVj" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_operator_panels_adding_new_widget" />
+        <ref role="1wz7Nk" to="9pd:7HQSJoRVsER" resolve="_022_instrument_cluster_controller_panel" />
+        <node concept="2Sb_l4" id="2H74AM1BLVk" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_operator_panels_adding_new_widget.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2H74AM1BLVl" role="2SaI5j">
+          <node concept="19SGf9" id="2H74AM1BLVm" role="OjmMu">
+            <node concept="19SUe$" id="2H74AM1BLVn" role="19SJt6">
+              <property role="19SUeA" value="New widgets can be added via intentions." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2H74AM1BLVo" role="3SHJ_F" />
       </node>
       <node concept="1_0LV8" id="2H74AM1BK4B" role="1_0VJ0">
         <node concept="19SGf9" id="2H74AM1BK4C" role="1_0LWR">
@@ -1213,11 +1230,43 @@
             </node>
           </node>
           <node concept="19SUe$" id="2H74AM1BK5j" role="19SJt6">
-            <property role="19SUeA" value=" presents illustrates how to build a simple instrument cluster." />
+            <property role="19SUeA" value=" illustrates how to build a simple instrument cluster." />
           </node>
         </node>
       </node>
       <node concept="1_1sxE" id="2H74AM1BK44" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="2H74AM1F3Q4">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_500_importer" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0VNX" id="2H74AM1F3Q5" role="1_0VJ0">
+      <property role="TrG5h" value="nusmv_importer" />
+      <property role="1_0VJr" value="NuSMV Importer (Experimental)" />
+      <node concept="1_1sxE" id="2H74AM1F3Q6" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="2H74AM1F3Q7" role="1_0VJ0">
+        <node concept="19SGf9" id="2H74AM1F3Q8" role="1_0LWR">
+          <node concept="19SUe$" id="2H74AM1F3Q9" role="19SJt6">
+            <property role="19SUeA" value="FASTEN provides an importer for importing existing files as models as shown in the " />
+          </node>
+          <node concept="3z_lpY" id="2H74AM1F3Q_" role="19SJt6">
+            <node concept="2NCZwO" id="2H74AM1F3QA" role="3z_lpZ">
+              <node concept="2NCMab" id="2H74AM1F3QK" role="2NCMaf">
+                <ref role="2NCMaa" to="gma2:2H74AM1BMir" resolve="_010_simple_files_to_import" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2H74AM1F3QB" role="19SJt6">
+            <property role="19SUeA" value="." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2H74AM1F3Qy" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
     </node>
