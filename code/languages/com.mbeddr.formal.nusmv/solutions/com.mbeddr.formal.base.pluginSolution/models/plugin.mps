@@ -23,6 +23,7 @@
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
       <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
+        <reference id="1204992316090" name="point" index="2f8Tey" />
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
       <concept id="1203680534665" name="jetbrains.mps.lang.plugin.structure.GroupAnchor" flags="ng" index="10WQ6h" />
@@ -63,10 +64,10 @@
       <node concept="10WQ6h" id="53G_t0FcvgX" role="ftvYc">
         <property role="TrG5h" value="fastenPlatformEditorPopupExtensions" />
       </node>
-      <node concept="2a7GMi" id="39c7fuKwbnb" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="53G_t0Fcvh1" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
+      <ref role="2f8Tey" to="ekwn:1xsN4xJX8VK" resolve="new" />
     </node>
   </node>
 </model>
