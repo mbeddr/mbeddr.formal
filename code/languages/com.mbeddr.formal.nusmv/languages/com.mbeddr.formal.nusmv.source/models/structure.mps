@@ -72,6 +72,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="BuildModel" />
     <property role="34LRSv" value="build_model" />
+    <property role="R4oN_" value="compiles the flattened hierarchy into BDD" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNLOKd">
@@ -79,6 +80,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="EncodeVariables" />
     <property role="34LRSv" value="encode_variables" />
+    <property role="R4oN_" value="builds the BDD variables" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNLOzD">
@@ -86,6 +88,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="FlattenHierarchy" />
     <property role="34LRSv" value="flatten_hierarchy" />
+    <property role="R4oN_" value="flattens the hierarchy of modules" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNLOVv">
@@ -93,6 +96,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="Go" />
     <property role="34LRSv" value="go" />
+    <property role="R4oN_" value="initialize the system for verification" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNLOrk">
@@ -100,6 +104,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="ReadModel" />
     <property role="34LRSv" value="read_model" />
+    <property role="R4oN_" value="reads a SMV file into NuSMV" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
     <node concept="1TJgyj" id="6glUKoNLOst" role="1TKVEi">
       <property role="IQ2ns" value="7211928790174746397" />
@@ -119,7 +124,7 @@
     <property role="3GE5qa" value="source" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="source definition" />
-    <property role="R4oN_" value="definition of the source file for running NuSMV" />
+    <property role="R4oN_" value="execute NuSMV commands from file" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6glUKoNLInE" role="1TKVEi">
       <property role="IQ2ns" value="7211928790174721514" />
@@ -140,6 +145,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="ConeOfInfluence" />
     <property role="34LRSv" value="cone_of_influence" />
+    <property role="R4oN_" value="only relevant parts of the model for a property" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNPiOk">
@@ -147,6 +153,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="GoBMC" />
     <property role="34LRSv" value="go_bmc" />
+    <property role="R4oN_" value="initialize the system for BMC verification" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNPksA">
@@ -154,6 +161,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="CheckLTLSpecBMC" />
     <property role="34LRSv" value="check_ltlspec_bmc" />
+    <property role="R4oN_" value="checks the given LTL spec with BMC" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
     <node concept="1TJgyi" id="6glUKoNPktF" role="1TKVEl">
       <property role="IQ2nx" value="7211928790175663979" />
@@ -166,6 +174,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="Quit" />
     <property role="34LRSv" value="quit" />
+    <property role="R4oN_" value="exits NuSMV" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNQPWm">
@@ -173,6 +182,7 @@
     <property role="3GE5qa" value="source.commands" />
     <property role="TrG5h" value="CheckLTLSpec" />
     <property role="34LRSv" value="check_ltlspec" />
+    <property role="R4oN_" value="performs LTL model checking" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
     <node concept="1TJgyi" id="6glUKoNQPWn" role="1TKVEl">
       <property role="IQ2nx" value="7211928790176063255" />
