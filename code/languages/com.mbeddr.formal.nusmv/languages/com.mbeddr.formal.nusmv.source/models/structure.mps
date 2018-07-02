@@ -146,7 +146,6 @@
     <property role="TrG5h" value="ConeOfInfluence" />
     <property role="34LRSv" value="cone_of_influence" />
     <property role="R4oN_" value="only relevant parts of the model for a property" />
-    <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
   <node concept="1TIwiD" id="6glUKoNPiOk">
     <property role="EcuMT" value="7211928790175657236" />
