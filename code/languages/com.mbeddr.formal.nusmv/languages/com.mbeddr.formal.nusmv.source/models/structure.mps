@@ -189,5 +189,18 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="Du607kIH3S">
+    <property role="EcuMT" value="747060984333127928" />
+    <property role="3GE5qa" value="source.commands" />
+    <property role="TrG5h" value="CheckCTLSpec" />
+    <property role="34LRSv" value="check_ctlspec" />
+    <property role="R4oN_" value="performs fair CTL model checking" />
+    <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
+    <node concept="1TJgyi" id="Du607kIH3T" role="1TKVEl">
+      <property role="IQ2nx" value="747060984333127929" />
+      <property role="TrG5h" value="max_length" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

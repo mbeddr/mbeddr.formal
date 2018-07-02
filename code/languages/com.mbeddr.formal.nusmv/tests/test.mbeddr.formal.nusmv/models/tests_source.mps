@@ -18,6 +18,7 @@
       <concept id="7211928790174713950" name="com.mbeddr.formal.nusmv.source.structure.Source" flags="ng" index="1nOMdo">
         <child id="7211928790174721514" name="content" index="1nOKVG" />
       </concept>
+      <concept id="747060984333127928" name="com.mbeddr.formal.nusmv.source.structure.CheckCTLSpec" flags="ng" index="3uTczT" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2295987781866635522" name="com.mbeddr.formal.nusmv.structure.ConditionalExpression" flags="ng" index="d4bQV">
@@ -60,6 +61,8 @@
       <concept id="9133754867501306922" name="com.mbeddr.formal.nusmv.structure.LTLSpecSection" flags="ng" index="2Sa8A2" />
       <concept id="9133754867501326618" name="com.mbeddr.formal.nusmv.structure.Globally" flags="ng" index="2SafMM" />
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="8482728081216649443" name="com.mbeddr.formal.nusmv.structure.AG" flags="ng" index="1yBCNs" />
+      <concept id="8482728081216646940" name="com.mbeddr.formal.nusmv.structure.SpecSection" flags="ng" index="1yBDGz" />
       <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
         <child id="8482728081216657211" name="exp" index="1yBIc4" />
       </concept>
@@ -159,6 +162,18 @@
           </node>
         </node>
       </node>
+      <node concept="1yBDGz" id="Du607kIIRt" role="2HcbjO">
+        <node concept="1yBCNs" id="Du607kIIS$" role="1yBDGv">
+          <node concept="nE0YL" id="Du607kIISW" role="1yBIc4">
+            <node concept="2IPVmt" id="Du607kIIUh" role="2H9Ial">
+              <property role="2IPVms" value="11" />
+            </node>
+            <node concept="2He$iJ" id="Du607kIISH" role="2H9Iav">
+              <ref role="2He$iI" node="6glUKoNPiGa" resolve="v1" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2SQmWS" id="6glUKoNPnYZ" role="2HcuB8" />
     <node concept="2Hdtz0" id="6glUKoNPo2a" role="2HcuB8">
@@ -183,6 +198,17 @@
     <node concept="1nOEpK" id="6glUKoNPrfv" role="1nOKVG" />
     <node concept="1nNFgg" id="6glUKoNQRDE" role="1nOKVG" />
     <node concept="1nK5Td" id="6glUKoNPt0$" role="1nOKVG" />
+  </node>
+  <node concept="1nOMdo" id="Du607kIILS">
+    <property role="TrG5h" value="_010_system_check_ctl_spec" />
+    <node concept="1nOERi" id="Du607kIILT" role="1nOKVG">
+      <ref role="1nOEKr" node="6glUKoNPiEE" resolve="_010_system" />
+    </node>
+    <node concept="1nOEfJ" id="Du607kIILU" role="1nOKVG" />
+    <node concept="1nOEsb" id="Du607kIILV" role="1nOKVG" />
+    <node concept="1nOEpK" id="Du607kIILW" role="1nOKVG" />
+    <node concept="3uTczT" id="Du607kIIQh" role="1nOKVG" />
+    <node concept="1nK5Td" id="Du607kIILY" role="1nOKVG" />
   </node>
 </model>
 

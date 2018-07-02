@@ -6,6 +6,19 @@
   </languages>
   <imports />
   <registry>
+    <language id="bf72618c-958a-47f5-9aac-3eff98d79ffd" name="com.mbeddr.formal.nusmv.source">
+      <concept id="7211928790175692107" name="com.mbeddr.formal.nusmv.source.structure.Quit" flags="ng" index="1nK5Td" />
+      <concept id="7211928790174746857" name="com.mbeddr.formal.nusmv.source.structure.FlattenHierarchy" flags="ng" index="1nOEfJ" />
+      <concept id="7211928790174748022" name="com.mbeddr.formal.nusmv.source.structure.BuildModel" flags="ng" index="1nOEpK" />
+      <concept id="7211928790174747661" name="com.mbeddr.formal.nusmv.source.structure.EncodeVariables" flags="ng" index="1nOEsb" />
+      <concept id="7211928790174746324" name="com.mbeddr.formal.nusmv.source.structure.ReadModel" flags="ng" index="1nOERi">
+        <reference id="7211928790174746397" name="system" index="1nOEKr" />
+      </concept>
+      <concept id="7211928790174713950" name="com.mbeddr.formal.nusmv.source.structure.Source" flags="ng" index="1nOMdo">
+        <child id="7211928790174721514" name="content" index="1nOKVG" />
+      </concept>
+      <concept id="747060984333127928" name="com.mbeddr.formal.nusmv.source.structure.CheckCTLSpec" flags="ng" index="3uTczT" />
+    </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
@@ -803,12 +816,17 @@
                   <ref role="2HeeqO" node="7mSH3Wn89D5" resolve="critical" />
                 </node>
               </node>
-              <node concept="1ziNjN" id="KwKRgpPmz2" role="2H9Ial">
-                <node concept="2He$iJ" id="KwKRgpPmzU" role="1ziNjM">
-                  <ref role="2He$iI" node="7mSH3Wn9uBX" resolve="proc2" />
+              <node concept="2HbLFT" id="Du607kI9TV" role="2H9Ial">
+                <node concept="2HeeqP" id="Du607kI9UQ" role="2H9Ial">
+                  <ref role="2HeeqO" node="7mSH3Wn89D5" resolve="critical" />
                 </node>
-                <node concept="1y$7Wu" id="KwKRgpPmz4" role="1ziNjJ">
-                  <ref role="1y$7Wt" node="7mSH3Wn89AN" resolve="state" />
+                <node concept="1ziNjN" id="KwKRgpPmz2" role="2H9Iav">
+                  <node concept="2He$iJ" id="KwKRgpPmzU" role="1ziNjM">
+                    <ref role="2He$iI" node="7mSH3Wn9uBX" resolve="proc2" />
+                  </node>
+                  <node concept="1y$7Wu" id="KwKRgpPmz4" role="1ziNjJ">
+                    <ref role="1y$7Wt" node="7mSH3Wn89AN" resolve="state" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -850,6 +868,17 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1nOMdo" id="Du607kHB23">
+    <property role="TrG5h" value="_040_semaphore_source" />
+    <node concept="1nOERi" id="Du607kHB24" role="1nOKVG">
+      <ref role="1nOEKr" node="7mSH3Wn89$V" resolve="_040_semaphore" />
+    </node>
+    <node concept="1nOEfJ" id="Du607kI9J5" role="1nOKVG" />
+    <node concept="1nOEsb" id="Du607kIa4V" role="1nOKVG" />
+    <node concept="1nOEpK" id="Du607kHB2c" role="1nOKVG" />
+    <node concept="3uTczT" id="Du607kIHLe" role="1nOKVG" />
+    <node concept="1nK5Td" id="Du607kIGNy" role="1nOKVG" />
   </node>
 </model>
 
