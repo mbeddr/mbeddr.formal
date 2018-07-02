@@ -161,6 +161,7 @@
         <child id="4678075609353207046" name="inputs" index="1J0m7X" />
       </concept>
       <concept id="4678075609353201529" name="com.mbeddr.formal.nusmv.tests.structure.TestCase" flags="ng" index="1J0nI2">
+        <property id="5430620409974473382" name="checkWithBMC" index="PRFbr" />
         <reference id="4678075609353201753" name="module" index="1J0niy" />
         <child id="4678075609353207060" name="steps" index="1J0m7J" />
       </concept>
@@ -473,6 +474,7 @@
     <property role="TrG5h" value="_010_binary_counter_tests" />
     <node concept="1J0nI2" id="2mjHtwTuaP0" role="1J0nHx">
       <property role="TrG5h" value="test1" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="2mjHtwTuajw" resolve="counter_cell" />
       <node concept="1J0m7Y" id="2mjHtwTuaP1" role="1J0m7J">
         <node concept="1yCjRe" id="2mjHtwTuaPc" role="1J0m7X" />
@@ -491,6 +493,7 @@
     <node concept="1s0Jup" id="2mjHtwTubhv" role="1J0nHx" />
     <node concept="1J0nI2" id="2mjHtwTub5t" role="1J0nHx">
       <property role="TrG5h" value="test2" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="2mjHtwTuajw" resolve="counter_cell" />
       <node concept="1J0m7Y" id="2mjHtwTub5u" role="1J0m7J">
         <node concept="1yCjT0" id="2mjHtwTub6V" role="1J0m7X" />
@@ -508,6 +511,7 @@
     <node concept="1s0Jup" id="2mjHtwT_Mz_" role="1J0nHx" />
     <node concept="1J0nI2" id="2mjHtwT_MxD" role="1J0nHx">
       <property role="TrG5h" value="test3" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="2mjHtwTuajw" resolve="counter_cell" />
       <node concept="1J0m7Y" id="2mjHtwT_MxE" role="1J0m7J">
         <node concept="1yCjRe" id="2mjHtwT_MCo" role="1J0m7X" />
@@ -939,6 +943,7 @@
     <property role="TrG5h" value="_020_emergency_stop_tests" />
     <node concept="1J0nI2" id="407WgdX8xWJ" role="1J0nHx">
       <property role="TrG5h" value="test1_counter_PASS" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="407WgdX8rDt" resolve="counter" />
       <node concept="1J0m7Y" id="407WgdX8xWK" role="1J0m7J">
         <node concept="1yCjT0" id="407WgdX8xYr" role="1J0m7X" />
@@ -1015,11 +1020,10 @@
     <node concept="1s0Jup" id="407WgdX8xWT" role="1J0nHx" />
     <node concept="1J0nI2" id="407WgdX8ysi" role="1J0nHx">
       <property role="TrG5h" value="test2_counter_FAIL" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="407WgdX8rDt" resolve="counter" />
       <node concept="1J0m7Y" id="407WgdX8ysj" role="1J0m7J">
-        <node concept="3EVhuc" id="407WgdX8yv_" role="1J0m7X">
-          <node concept="2Hds6S" id="407WgdX8yvR" role="1V8LiM" />
-        </node>
+        <node concept="1yCjT0" id="Du607kKje5" role="1J0m7X" />
         <node concept="2IPVmt" id="407WgdX8ysl" role="1J0m7X">
           <property role="2IPVms" value="1" />
         </node>
@@ -1069,7 +1073,7 @@
             </node>
           </node>
         </node>
-        <node concept="1yCjT0" id="407WgdX8ysG" role="1J0m7K" />
+        <node concept="1yCjRe" id="Du607kKjeh" role="1J0m7K" />
         <node concept="1V8Ho7" id="407WgdX8ysH" role="1J0m7K" />
       </node>
       <node concept="1J0m7Y" id="407WgdX8ysI" role="1J0m7J">

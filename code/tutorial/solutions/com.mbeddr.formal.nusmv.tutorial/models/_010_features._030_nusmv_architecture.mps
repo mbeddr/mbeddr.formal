@@ -109,6 +109,7 @@
         <child id="4678075609353207046" name="inputs" index="1J0m7X" />
       </concept>
       <concept id="4678075609353201529" name="com.mbeddr.formal.nusmv.tests.structure.TestCase" flags="ng" index="1J0nI2">
+        <property id="5430620409974473382" name="checkWithBMC" index="PRFbr" />
         <reference id="4678075609353201753" name="module" index="1J0niy" />
         <child id="4678075609353207060" name="steps" index="1J0m7J" />
       </concept>
@@ -701,6 +702,7 @@
     <property role="TrG5h" value="test_sender_receiver" />
     <node concept="1J0nI2" id="2mjHtwU0cdO" role="1J0nHx">
       <property role="TrG5h" value="tc1_sr" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="2mjHtwTD_2a" resolve="system" />
       <node concept="1J0m7Y" id="2mjHtwU0cdP" role="1J0m7J">
         <node concept="2IPVmt" id="2mjHtwU0ceQ" role="1J0m7X">

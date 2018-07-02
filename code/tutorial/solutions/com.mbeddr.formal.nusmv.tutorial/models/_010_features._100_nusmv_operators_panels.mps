@@ -173,7 +173,6 @@
         <property id="4261645280576222600" name="g" index="28kP95" />
         <property id="4261645280576222596" name="r" index="28kP99" />
       </concept>
-      <concept id="2707707741267772567" name="com.mbeddr.formal.base.operatorspanel.structure.IOperatorsPanelContent" flags="ng" index="shf5f" />
       <concept id="2707707741267713727" name="com.mbeddr.formal.base.operatorspanel.structure.ColoredCircle" flags="ng" index="shuHB">
         <property id="2707707741267713733" name="defaultRadius" index="shuGt" />
         <child id="2707707741267964144" name="colorProvider" index="siokC" />
@@ -665,6 +664,7 @@
     <property role="TrG5h" value="_011_traffic_lights_controller_baseLang_tests" />
     <node concept="1J0nI2" id="o$TLCsQZYX" role="1J0nHx">
       <property role="TrG5h" value="tlc_test_01" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="3R2p3fiGCz2" resolve="traffic_lights_controller" />
       <node concept="1J0m7Y" id="o$TLCsQZYY" role="1J0m7J">
         <node concept="2HeeqP" id="o$TLCsR0tp" role="1J0m7K">
@@ -1606,7 +1606,6 @@
           <property role="28kP92" value="255" />
         </node>
       </node>
-      <node concept="shf5f" id="2H74AM1BLT9" role="sr$zp" />
       <node concept="1M$7TH" id="4G7mwLzMfnc" role="sr$zp">
         <property role="1M$7TD" value="300" />
         <property role="1M$7TC" value="90" />
