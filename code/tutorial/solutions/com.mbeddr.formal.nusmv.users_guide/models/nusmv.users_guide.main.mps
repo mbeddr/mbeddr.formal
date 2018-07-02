@@ -25,6 +25,10 @@
       <concept id="4400783559374052800" name="com.mbeddr.doc.structure.EmphFormattedText" flags="ng" index="28N2ik" />
       <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
       <concept id="620304030119138923" name="com.mbeddr.doc.structure.BoldFormattedText" flags="ng" index="2vpllh" />
+      <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
+        <property id="324047639344492301" name="referenceOnly" index="1P4p2h" />
+        <child id="6165313375056012515" name="ref" index="$CzcU" />
+      </concept>
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
@@ -62,6 +66,7 @@
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="988357225295489881" name="com.mbeddr.doc.structure.TableOfContents" flags="ng" index="3xmJbL" />
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
@@ -133,7 +138,7 @@
           <node concept="2vpllh" id="2mjHtwTu9kw" role="19SJt6">
             <node concept="19SGf9" id="2mjHtwTu9kx" role="$DsGW">
               <node concept="19SUe$" id="2mjHtwTu9ky" role="19SJt6">
-                <property role="19SUeA" value="mbeddr.formal.nusmv" />
+                <property role="19SUeA" value="FASTEN" />
               </node>
             </node>
           </node>
@@ -266,7 +271,94 @@
           </node>
         </node>
       </node>
-      <node concept="3X6WG5" id="2QUcAU24Ts1" role="1_0VJ0" />
+    </node>
+    <node concept="1_1sxE" id="3slobAdyWmU" role="1_0VJ0">
+      <property role="TrG5h" value="empty_-1" />
+    </node>
+    <node concept="3xmJbL" id="3slobAdyVWQ" role="1_0VJ0" />
+    <node concept="$CzcT" id="3slobAdyWdQ" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWrb" role="$CzcU">
+        <ref role="1_0j5g" node="2mjHtwTDzN4" resolve="_010_nusmv_base_language" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWAw" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWCQ" role="$CzcU">
+        <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWHW" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWPm" role="$CzcU">
+        <ref role="1_0j5g" node="2mjHtwTD$1m" resolve="_030_architecture" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWKm" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWPq" role="$CzcU">
+        <ref role="1_0j5g" node="2mjHtwTDQ$8" resolve="_040_state_machines" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWMO" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWPu" role="$CzcU">
+        <ref role="1_0j5g" node="2mjHtwTG722" resolve="_050_tables" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWPy" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWPz" role="$CzcU">
+        <ref role="1_0j5g" node="2mjHtwTG722" resolve="_050_tables" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWS8" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWXw" role="$CzcU">
+        <ref role="1_0j5g" node="67icRu62XMj" resolve="_070_verification_cases" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWUM" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyWX$" role="$CzcU">
+        <ref role="1_0j5g" node="70Z3iwfi4xA" resolve="_100_operator_panels" />
+      </node>
+    </node>
+    <node concept="$CzcT" id="3slobAdyWXC" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="3slobAdyX0q" role="$CzcU">
+        <ref role="1_0j5g" node="2H74AM1F3Q4" resolve="_500_importer" />
+      </node>
+    </node>
+    <node concept="1_1sxE" id="3slobAdyWFB" role="1_0VJ0">
+      <property role="TrG5h" value="empty_-1" />
+    </node>
+    <node concept="1_1sxE" id="3slobAdyWrf" role="1_0VJ0">
+      <property role="TrG5h" value="empty_-1" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWg6" role="1DXQ57">
+      <ref role="1_0j5g" node="2mjHtwTDzN4" resolve="_010_nusmv_base_language" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWge" role="1DXQ57">
+      <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWgr" role="1DXQ57">
+      <ref role="1_0j5g" node="2mjHtwTD$1m" resolve="_030_architecture" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWgG" role="1DXQ57">
+      <ref role="1_0j5g" node="2mjHtwTDQ$8" resolve="_040_state_machines" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWh1" role="1DXQ57">
+      <ref role="1_0j5g" node="2mjHtwTG722" resolve="_050_tables" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWhq" role="1DXQ57">
+      <ref role="1_0j5g" node="67icRu62XMj" resolve="_070_verification_cases" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWhR" role="1DXQ57">
+      <ref role="1_0j5g" node="70Z3iwfi4xA" resolve="_100_operator_panels" />
+    </node>
+    <node concept="1_0j5j" id="3slobAdyWio" role="1DXQ57">
+      <ref role="1_0j5g" node="2H74AM1F3Q4" resolve="_500_importer" />
     </node>
   </node>
   <node concept="2SbYGP" id="2mjHtwTu9dY">

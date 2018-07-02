@@ -347,7 +347,7 @@
     <node concept="2kB4xC" id="42jqVeFkUte" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="42jqVeFkUtf" role="aVJcv">
-        <property role="hHN3Y" value="20180613" />
+        <property role="hHN3Y" value="20180702" />
       </node>
     </node>
     <node concept="2kB4xC" id="42jqVeFkUtg" role="1l3spd">
@@ -418,7 +418,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2018-06-13" />
+            <property role="3MwjfP" value="2018-07-02" />
           </node>
         </node>
       </node>
@@ -601,13 +601,27 @@
         </node>
       </node>
       <node concept="398223" id="6oUHYlAgucX" role="39821P">
+        <node concept="2HvfSZ" id="3slobAdyYc9" role="39821P">
+          <node concept="398BVA" id="3slobAdyYca" role="2HvfZ0">
+            <ref role="398BVh" node="2ShgyheeCX6" resolve="rcp_resources" />
+            <node concept="2Ry0Ak" id="4ixjtM3ydo0" role="iGT6I">
+              <property role="2Ry0Am" value="tutorial" />
+            </node>
+          </node>
+        </node>
         <node concept="3_J27D" id="6oUHYlAgucZ" role="Nbhlr">
           <node concept="3Mxwew" id="6oUHYlAguoL" role="3MwsjC">
             <property role="3MwjfP" value="tutorial" />
           </node>
         </node>
-        <node concept="2HvfSZ" id="6oUHYlAguoN" role="39821P">
-          <node concept="398BVA" id="6oUHYlAguzg" role="2HvfZ0">
+        <node concept="2HvfSZ" id="3slobAdyTaA" role="39821P">
+          <node concept="3LWZYq" id="3slobAdyVb9" role="2HvfZ1">
+            <property role="3LWZYl" value=".mps/workspace.xml" />
+          </node>
+          <node concept="3LWZYq" id="3slobAdyTB9" role="2HvfZ1">
+            <property role="3LWZYl" value=".mps/vcs.xml" />
+          </node>
+          <node concept="398BVA" id="3slobAdyTPn" role="2HvfZ0">
             <ref role="398BVh" node="6oUHYlAgti$" resolve="tutorial" />
           </node>
         </node>
@@ -2098,11 +2112,6 @@
           <node concept="3bR9La" id="1V$lRyiOJc5" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1V$lRyiOJc6" role="3bR37C">
-          <node concept="1Busua" id="1V$lRyiOJc7" role="1SiIV1">
-            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>

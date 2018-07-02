@@ -5,8 +5,8 @@
 *.class
 
 .idea
-workspace.xml
-
+code\languages\com.mbeddr.formal.nusmv\.mps\workspace.xml
+code\languages\com.mbeddr.formal.spin\.mps\workspace.xml
 
 junitvmwatcher*.properties
 build.properties

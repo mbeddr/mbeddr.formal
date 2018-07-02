@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+td {
+	white-space: nowrap;
+    min-width: 30px;
+}
+td.main, th.main {
+    border: 1px solid black;
+}
+table.main { 
+	width: 100%;
+	empty-cells: show; 
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	$.getJSON("https://api.github.com/repos/mbeddr/mbeddr.formal/releases",function(rel) {         
+	    var allTimeDownloads = 0;
+		$.each(rel.reverse(), function(relIdx,relVal) {
+	    	var row = "<tr class='main'>";
+			var date = new Date(relVal["published_at"]);
+			row += "<td class='main'>"+ date.toISOString().slice(0,10).replace(/-/g,"/")+"</td>";
+			row += "<td class='main'><a href='"+relVal["html_url"]+"'>"+relVal["name"]+"</a></td>";
+			var total = 0;
+			$.each(relVal["assets"],function(ai, av) {
+				total += av["download_count"];
+			});
+
+			row += "<td class='main'>"+total+"</td>"
+
+			row += "<td class='main'><table>"
+			$.each(relVal["assets"],function(ai, av) {
+				row += "<tr>"
+				row += "<td>" + av["download_count"] + "</td>";
+				row += "<td>" + av["name"] + "</td>";
+				row += "</tr>"
+			});         
+			row +="</table></td>";
+			allTimeDownloads+=total
+			$("#releases tr:first").after(row);
+	    }); 
+		$("#releases").after("<p>All time total: "+ allTimeDownloads);
+	});
+});
+</script>
+<table id="releases" class="main">
+	<tr>
+      <th>Date</th>
+	  <th>Name</th>
+  	  <th>Total</th>
+   	  <th>Assets</th>
+	</tr>
+</table>
+
+</body>
+</html>

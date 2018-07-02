@@ -61,8 +61,8 @@ IF NOT "%JDK%" == "" GOTO check
 IF EXIST "%JAVA_HOME%" SET JDK=%JAVA_HOME%
 
 :check
-SET JAVA_EXE=%JDK%\bin\java.exe
-IF NOT EXIST "%JAVA_EXE%" SET JAVA_EXE=%JDK%\jre\bin\java.exe
+SET JAVA_EXE=%JDK%\bin\javaw.exe
+IF NOT EXIST "%JAVA_EXE%" SET JAVA_EXE=%JDK%\jre\bin\javaw.exe
 IF NOT EXIST "%JAVA_EXE%" (
   ECHO ERROR: cannot start JetBrains MPS.
   ECHO No JDK found. Please validate either MPS_JDK, JDK_HOME or JAVA_HOME points to valid JDK installation.
@@ -126,3 +126,4 @@ start "" "%JAVA_EXE%" %ALL_JVM_ARGS% -Didea.main.class.name=%MAIN_CLASS% -cp "%C
 
 SET PATH=%OLD_PATH%
 
+exit
