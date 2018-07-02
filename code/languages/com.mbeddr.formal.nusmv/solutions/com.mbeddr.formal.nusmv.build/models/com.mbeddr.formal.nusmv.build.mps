@@ -1320,6 +1320,17 @@
             <ref role="3bR37D" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
           </node>
         </node>
+        <node concept="1SiIV0" id="Du607kJHOB" role="3bR37C">
+          <node concept="3bR9La" id="Du607kJHOC" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Du607kJHOD" role="3bR37C">
+          <node concept="1Busua" id="Du607kJHOE" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1gJVC85JQA9" role="2G$12L">
         <property role="BnDLt" value="true" />
