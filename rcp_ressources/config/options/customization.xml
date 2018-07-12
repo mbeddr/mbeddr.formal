@@ -60,6 +60,11 @@
       <path value="Editor Popup Menu" />
       <option name="myInitialPosition" value="-1" />
     </group>
+    <group value="EditorPopup_ActionGroupdebug" is_group="true" action_type="-1" position="15">
+      <path value="root" />
+      <path value="MPS Editor Popup Menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
     <group value="GoToCodeGroup" is_group="true" action_type="-1" position="14">
       <path value="root" />
       <path value="Main menu" />
@@ -70,6 +75,11 @@
       <path value="root" />
       <path value="Main menu" />
       <path value="View" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="EditorPopup_ActionGroupgentrace" is_group="true" action_type="-1" position="13">
+      <path value="root" />
+      <path value="MPS Editor Popup Menu" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group value="com.mbeddr.mpsutil.print.pluginSolution.plugin.PrintGroup_ActionGroup" is_group="true" action_type="-1" position="12">
@@ -99,6 +109,11 @@
       <path value="SubversionGroup" />
       <option name="myInitialPosition" value="-1" />
     </group>
+    <group value="ToolsMenu" is_group="true" action_type="-1" position="10">
+      <path value="root" />
+      <path value="Main menu" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
     <group value="UIToggleActions" is_group="true" action_type="-1" position="10">
       <path value="root" />
       <path value="Main menu" />
@@ -114,7 +129,7 @@
       <path value="SubversionGroup" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="ToolsMenu" is_group="true" action_type="-1" position="9">
+    <group value="RunMenu" is_group="true" action_type="-1" position="9">
       <path value="root" />
       <path value="Main menu" />
       <option name="myInitialPosition" value="-1" />
@@ -129,11 +144,6 @@
       <path value="root" />
       <path value="Main menu" />
       <path value="View" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="RunMenu" is_group="true" action_type="-1" position="8">
-      <path value="root" />
-      <path value="Main menu" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group value="ToggleReadOnlyAttribute" is_action="true" action_type="-1" position="8">
@@ -154,7 +164,7 @@
       <path value="Window" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="BuildMenu" is_group="true" action_type="-1" position="7">
+    <group value="AnalyzeMenu" is_group="true" action_type="-1" position="7">
       <path value="root" />
       <path value="Main menu" />
       <option name="myInitialPosition" value="-1" />
@@ -187,7 +197,7 @@
       <path value="SubversionGroup" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="AnalyzeMenu" is_group="true" action_type="-1" position="6">
+    <group value="CodeMenu" is_group="true" action_type="-1" position="6">
       <path value="root" />
       <path value="Main menu" />
       <option name="myInitialPosition" value="-1" />
@@ -212,11 +222,6 @@
       <path value="VCS Group" />
       <path value="Subversion" />
       <path value="SubversionGroup" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="CodeMenu" is_group="true" action_type="-1" position="5">
-      <path value="root" />
-      <path value="Main menu" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group seperator="true" action_type="-1" position="5">
@@ -273,12 +278,6 @@
       <path value="root" />
       <path value="Main menu" />
       <path value="View" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group value="com.mbeddr.core.base.pluginSolution.plugin.EditorButtonGroup_ActionGroup" is_group="true" action_type="-1" position="3">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Projection" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group value="jetbrains.mps.ide.actions.GoToFile_Action#!" is_action="true" action_type="-1" position="3">
@@ -427,20 +426,6 @@
       <path value="Main menu" />
       <path value="View" />
       <path value="View Recent Actions Group" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group seperator="true" action_type="-1" position="0">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Projection" />
-      <path value="GroupStateMachineDiagramSwitcher" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
-    <group seperator="true" action_type="-1" position="0">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="Projection" />
-      <path value="GroupArchitectureDiagramSwitcher" />
       <option name="myInitialPosition" value="-1" />
     </group>
     <group seperator="true" action_type="-1" position="0">
