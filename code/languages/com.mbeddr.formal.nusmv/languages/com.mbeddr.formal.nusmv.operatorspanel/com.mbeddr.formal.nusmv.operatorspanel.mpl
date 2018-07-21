@@ -45,6 +45,7 @@
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+        <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
         <module reference="3fb92f6f-450c-4e41-8129-97a4b9978951(com.mbeddr.formal.base.operatorspanel)" version="0" />
         <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
         <module reference="2dd5dace-06d5-4283-a878-7272f2df6d4b(com.mbeddr.formal.nusmv.operatorspanel)" version="0" />

@@ -62,6 +62,7 @@
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)" version="0" />
     <module reference="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="b0f97242-b2a5-4637-95d3-c63ed6f55701(test.mbeddr.formal.nusmv)" version="0" />
   </dependencyVersions>

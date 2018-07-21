@@ -114,9 +114,6 @@
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
-      <concept id="1208528650020" name="jetbrains.mps.lang.plugin.structure.ToolType" flags="in" index="1xUVSX">
-        <reference id="1208529537963" name="tool" index="1xYkEM" />
-      </concept>
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
         <reference id="1217252646389" name="key" index="1DUlNI" />
       </concept>
@@ -681,26 +678,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7mSH3Wn3WB2" role="jymVt" />
-    <node concept="312cEg" id="2UdJgvD7uBU" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="nusmvRawResultsTool" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2UdJgvD7unt" role="1B3o_S" />
-      <node concept="1xUVSX" id="2UdJgvD7uBQ" role="1tU5fm">
-        <ref role="1xYkEM" node="6izRX53qGZb" resolve="NuSMVRawResultTool" />
-      </node>
-    </node>
-    <node concept="312cEg" id="1ZsZb$iUoHC" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="nusmvLiftedResultsTool" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="1ZsZb$iUoHD" role="1B3o_S" />
-      <node concept="1xUVSX" id="1ZsZb$iUoHE" role="1tU5fm">
-        <ref role="1xYkEM" node="1ZsZb$iUoX6" resolve="NuSMVLiftedResultTool" />
-      </node>
-    </node>
     <node concept="312cEg" id="2xeYpNCwYqF" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -716,36 +693,6 @@
       <node concept="3cqZAl" id="7mSH3Wn5pNR" role="3clF45" />
       <node concept="3Tm1VV" id="7mSH3Wn5pNS" role="1B3o_S" />
       <node concept="3clFbS" id="7mSH3Wn5pNT" role="3clF47">
-        <node concept="3clFbF" id="7mSH3Wn5qpR" role="3cqZAp">
-          <node concept="37vLTI" id="7mSH3Wn5qEU" role="3clFbG">
-            <node concept="37vLTw" id="7mSH3Wn5qpQ" role="37vLTJ">
-              <ref role="3cqZAo" node="2UdJgvD7uBU" resolve="nusmvRawResultsTool" />
-            </node>
-            <node concept="2OqwBi" id="4arT0cn$_EP" role="37vLTx">
-              <node concept="37vLTw" id="7mSH3Wn5vBl" role="2Oq$k0">
-                <ref role="3cqZAo" node="4arT0cn$zry" resolve="proj" />
-              </node>
-              <node concept="LR4U6" id="4arT0cn$AcA" role="2OqNvi">
-                <ref role="LR4U5" node="6izRX53qGZb" resolve="NuSMVRawResultTool" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1ZsZb$iUxey" role="3cqZAp">
-          <node concept="37vLTI" id="1ZsZb$iUxwq" role="3clFbG">
-            <node concept="2OqwBi" id="1ZsZb$iUxVe" role="37vLTx">
-              <node concept="37vLTw" id="1ZsZb$iUxD0" role="2Oq$k0">
-                <ref role="3cqZAo" node="4arT0cn$zry" resolve="proj" />
-              </node>
-              <node concept="LR4U6" id="1ZsZb$iUyfJ" role="2OqNvi">
-                <ref role="LR4U5" node="1ZsZb$iUoX6" resolve="NuSMVLiftedResultTool" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="1ZsZb$iUxew" role="37vLTJ">
-              <ref role="3cqZAo" node="1ZsZb$iUoHC" resolve="nusmvLiftedResultsTool" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2xeYpNCwZfz" role="3cqZAp">
           <node concept="37vLTI" id="2xeYpNCx0oC" role="3clFbG">
             <node concept="37vLTw" id="2xeYpNCx0xv" role="37vLTx">

@@ -6,28 +6,6 @@
     </modelRoot>
   </models>
   <accessoryModels />
-  <generators>
-    <generator alias="main" namespace="com.mbeddr.formal.base.tabular#3038640987154488023" uuid="52af87be-cc32-4f3c-b430-eb1c8eb8a984">
-      <models>
-        <modelRoot contentPath="${module}/generator/template" type="default">
-          <sourceRoot location="." />
-        </modelRoot>
-      </models>
-      <external-templates />
-      <languageVersions />
-      <dependencyVersions>
-        <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-        <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
-        <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
-        <module reference="b3b9fe18-f0c4-4cea-83c5-45faa74e0911(com.mbeddr.formal.base.tabular)" version="0" />
-        <module reference="52af87be-cc32-4f3c-b430-eb1c8eb8a984(com.mbeddr.formal.base.tabular#3038640987154488023)" version="0" />
-        <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-      </dependencyVersions>
-      <mapping-priorities />
-    </generator>
-  </generators>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

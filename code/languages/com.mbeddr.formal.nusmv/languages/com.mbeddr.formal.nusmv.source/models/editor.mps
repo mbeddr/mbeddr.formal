@@ -12,6 +12,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="3fe0" ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -73,6 +74,7 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -83,9 +85,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -95,7 +94,6 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -180,15 +178,21 @@
           <node concept="1HfYo3" id="3r83Ks0gb4g" role="1HlULh">
             <node concept="3TQlhw" id="3r83Ks0gb4h" role="1Hhtcw">
               <node concept="3clFbS" id="3r83Ks0gb4i" role="2VODD2">
-                <node concept="3clFbF" id="3r83Ks0gb4E" role="3cqZAp">
-                  <node concept="2YIFZM" id="5Hxjapwed33" role="3clFbG">
-                    <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                    <ref role="37wK5l" to="unno:7WvVJ3rORmu" resolve="getModelLongName" />
-                    <node concept="2JrnkZ" id="5Hxjapwed34" role="37wK5m">
-                      <node concept="2OqwBi" id="5Hxjapwed35" role="2JrQYb">
-                        <node concept="pncrf" id="5Hxjapwed36" role="2Oq$k0" />
-                        <node concept="I4A8Y" id="5Hxjapwed37" role="2OqNvi" />
+                <node concept="3clFbF" id="4nnk$70ub7i" role="3cqZAp">
+                  <node concept="2OqwBi" id="4nnk$70ub7k" role="3clFbG">
+                    <node concept="2OqwBi" id="4nnk$70ub7l" role="2Oq$k0">
+                      <node concept="2JrnkZ" id="4nnk$70ub7m" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4nnk$70ub7n" role="2JrQYb">
+                          <node concept="pncrf" id="4nnk$70ub7o" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="4nnk$70ub7p" role="2OqNvi" />
+                        </node>
                       </node>
+                      <node concept="liA8E" id="4nnk$70ub7q" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4nnk$70ub7r" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
                     </node>
                   </node>
                 </node>
