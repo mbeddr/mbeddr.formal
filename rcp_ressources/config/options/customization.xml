@@ -409,12 +409,6 @@
       <path value="MainToolBarSettings" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="FileOpenGroup" is_group="true" action_type="-1" position="0">
-      <path value="root" />
-      <path value="Main menu" />
-      <path value="File" />
-      <option name="myInitialPosition" value="-1" />
-    </group>
     <group value="ToolWindowsGroup" is_group="true" action_type="-1" position="0">
       <path value="root" />
       <path value="Main menu" />
