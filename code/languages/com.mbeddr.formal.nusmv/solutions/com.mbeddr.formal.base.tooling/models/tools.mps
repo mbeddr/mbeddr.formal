@@ -250,13 +250,9 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
-      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -3082,18 +3078,6 @@
       <property role="NWlVz" value="Interface to check the availability of external tools and their proper configuration." />
     </node>
     <node concept="2tJIrI" id="7GloF9XTpff" role="jymVt" />
-    <node concept="3UR2Jj" id="yLGIkBg4r_" role="lGtFl">
-      <node concept="TZ5HI" id="yLGIkBg4rA" role="3nqlJM">
-        <node concept="TZ5HA" id="yLGIkBg4rB" role="3HnX3l">
-          <node concept="1dT_AC" id="yLGIkBg4sJ" role="1dT_Ay">
-            <property role="1dT_AB" value=" use com.mbeddr.mpsutil.toolrunner.ToolsAvailabilityChecker" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2AHcQZ" id="yLGIkBg4rC" role="2AJF6D">
-      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-    </node>
   </node>
   <node concept="312cEu" id="7GloF9XTmYK">
     <property role="TrG5h" value="ToolsInstallationSanityChecker" />
