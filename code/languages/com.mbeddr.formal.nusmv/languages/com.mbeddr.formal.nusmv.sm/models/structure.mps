@@ -45,6 +45,7 @@
     <property role="EcuMT" value="4512297433099947043" />
     <property role="TrG5h" value="StateMachineSection" />
     <property role="34LRSv" value="STATE-MACHINE" />
+    <property role="R4oN_" value="state machine section" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1UNLO" resolve="AssignmentsSection" />
   </node>
   <node concept="1TIwiD" id="3UuTDIOPiRI">

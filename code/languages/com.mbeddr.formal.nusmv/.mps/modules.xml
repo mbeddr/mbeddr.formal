@@ -8,6 +8,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.operatorspanel/com.mbeddr.formal.base.operatorspanel.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.tabular/com.mbeddr.formal.base.tabular.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base/com.mbeddr.formal.base.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.ag/com.mbeddr.formal.nusmv.ag.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.arch/com.mbeddr.formal.nusmv.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.ext/com.mbeddr.formal.nusmv.ext.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.importer/com.mbeddr.formal.nusmv.importer.mpl" folder="lang" />
