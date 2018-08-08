@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:41c7bc00-ecdc-4dc0-a3b6-e0e554dbe3a6(com.mbeddr.formal.nusmv.ag.constraints)">
+<model ref="r:e20f1552-c1a5-49e5-b553-9b0474f1ac53(com.mbeddr.formal.base.arch.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />

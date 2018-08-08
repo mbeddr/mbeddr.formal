@@ -9,6 +9,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="jx4r" ref="r:20b428fb-5ad4-48f7-a0e1-326c84a8081b(com.mbeddr.formal.nusmv.tabular.structure)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -64,6 +65,9 @@
     <property role="34LRSv" value="WIRING" />
     <property role="R4oN_" value="modules wiring section" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1UNLR" resolve="VariablesSection" />
+    <node concept="PrWs8" id="7RhjhI7HXf3" role="PzmwI">
+      <ref role="PrY4T" to="3whv:7RhjhI7HWfF" resolve="IArchitectureAsDiagram" />
+    </node>
   </node>
   <node concept="1TIwiD" id="43FRfGJQZfY">
     <property role="EcuMT" value="4678075609352238078" />

@@ -33,6 +33,8 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="x4mf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus(MPS.Editor/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="wfnd" ref="r:5f5edb09-c9b1-47da-a374-00a0a908694a(com.mbeddr.formal.base.arch.editor)" />
+    <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
     <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
@@ -56,13 +58,6 @@
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
-        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -3033,15 +3028,6 @@
       </node>
     </node>
   </node>
-  <node concept="2ABfQD" id="7mSH3WnI4q7">
-    <property role="TrG5h" value="Architecture_Graphical" />
-    <property role="3GE5qa" value="graphical" />
-    <node concept="2BsEeg" id="7mSH3WnI4Ep" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="ARCH_GRAPHICAL" />
-      <property role="2BUmq6" value="ARCH_GRAPHICAL" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7mSH3WnI5Lo">
     <property role="3GE5qa" value="graphical" />
     <ref role="1XX52x" to="rvcq:3ZkhnXRcJqG" resolve="ModulesWiringSection" />
@@ -3949,7 +3935,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="7mSH3WnI5Lq" role="CpUAK">
-      <ref role="2$4xQ3" node="7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
+      <ref role="2$4xQ3" to="wfnd:7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
     </node>
   </node>
   <node concept="312cEu" id="43FRfGJOwCK">
