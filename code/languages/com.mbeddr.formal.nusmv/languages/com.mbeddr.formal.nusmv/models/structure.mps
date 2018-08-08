@@ -103,6 +103,7 @@
     <property role="EcuMT" value="7842584090743385197" />
     <property role="TrG5h" value="ModuleDeclaration" />
     <property role="34LRSv" value="module" />
+    <property role="R4oN_" value="an SMV module" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6NmtaR1SULR" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743385207" />
@@ -1260,6 +1261,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6WmpcHMKsPU" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1NcemxVy$WO" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="7mSH3Wn9yWw" role="1TKVEi">
       <property role="IQ2ns" value="8482728081216646944" />
