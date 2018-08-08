@@ -68,6 +68,7 @@
     <property role="3GE5qa" value="tl_patterns.property" />
     <property role="TrG5h" value="Absence" />
     <property role="34LRSv" value="P is false ..." />
+    <property role="R4oN_" value="absence property" />
     <ref role="1TJDcQ" node="6WmpcHMKsaj" resolve="AbstractProperty" />
     <node concept="1TJgyj" id="6WmpcHMKsaD" role="1TKVEi">
       <property role="IQ2ns" value="8004696212664074921" />

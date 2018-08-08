@@ -6,7 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="6z8w" ref="r:d4c22a7f-7332-4377-bba1-18afaeea0257(com.mbeddr.formal.nusmv.ext.structure)" implicit="true" />
+    <import index="6z8w" ref="r:d4c22a7f-7332-4377-bba1-18afaeea0257(com.mbeddr.formal.nusmv.ext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -193,6 +193,40 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1gJVC85KmQl" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7RhjhI7gqQ0">
+    <property role="3GE5qa" value="nary" />
+    <ref role="1XX52x" to="6z8w:7RhjhI7gqPW" resolve="NaryAndExpression" />
+    <node concept="3EZMnI" id="7RhjhI7gqQ2" role="2wV5jI">
+      <node concept="3F0ifn" id="7RhjhI7gqQc" role="3EZMnx">
+        <property role="3F0ifm" value="[&amp;" />
+      </node>
+      <node concept="3F2HdR" id="7RhjhI7gqQl" role="3EZMnx">
+        <ref role="1NtTu8" to="6z8w:7RhjhI7gqPX" resolve="expressions" />
+        <node concept="l2Vlx" id="7RhjhI7gqQn" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="7RhjhI7gqQ5" role="2iSdaV" />
+      <node concept="3F0ifn" id="7RhjhI7gqQB" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7RhjhI7zPqc">
+    <property role="3GE5qa" value="nary" />
+    <ref role="1XX52x" to="6z8w:7RhjhI7zPq0" resolve="NaryOrExpression" />
+    <node concept="3EZMnI" id="7RhjhI7zPqe" role="2wV5jI">
+      <node concept="3F0ifn" id="7RhjhI7zPqf" role="3EZMnx">
+        <property role="3F0ifm" value="[|" />
+      </node>
+      <node concept="3F2HdR" id="7RhjhI7zPqg" role="3EZMnx">
+        <ref role="1NtTu8" to="6z8w:7RhjhI7zPq1" resolve="expressions" />
+        <node concept="l2Vlx" id="7RhjhI7zPqh" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="7RhjhI7zPqi" role="2iSdaV" />
+      <node concept="3F0ifn" id="7RhjhI7zPqj" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
     </node>
   </node>
 </model>

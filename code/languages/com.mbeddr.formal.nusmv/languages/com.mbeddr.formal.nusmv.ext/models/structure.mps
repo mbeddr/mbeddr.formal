@@ -180,5 +180,35 @@
       <ref role="20lvS9" node="1gJVC85KmLe" resolve="FunctionMacroDefinition" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7RhjhI7gqPW">
+    <property role="EcuMT" value="9066112305502203260" />
+    <property role="TrG5h" value="NaryAndExpression" />
+    <property role="34LRSv" value="[&amp;" />
+    <property role="3GE5qa" value="nary" />
+    <property role="R4oN_" value="N-ary AND" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="7RhjhI7gqPX" role="1TKVEi">
+      <property role="IQ2ns" value="9066112305502203261" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7RhjhI7zPq0">
+    <property role="EcuMT" value="9066112305507292800" />
+    <property role="3GE5qa" value="nary" />
+    <property role="TrG5h" value="NaryOrExpression" />
+    <property role="34LRSv" value="[|" />
+    <property role="R4oN_" value="N-ary OR" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="7RhjhI7zPq1" role="1TKVEi">
+      <property role="IQ2ns" value="9066112305507292801" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

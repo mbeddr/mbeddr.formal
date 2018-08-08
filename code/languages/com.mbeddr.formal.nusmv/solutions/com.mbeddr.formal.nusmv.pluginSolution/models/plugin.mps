@@ -41,9 +41,10 @@
     <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="8js5" ref="r:896eeadf-a850-400e-b516-f92dfb5b5cd9(com.mbeddr.formal.base.pluginSolution.plugin)" />
+    <import index="wfnd" ref="r:5f5edb09-c9b1-47da-a374-00a0a908694a(com.mbeddr.formal.base.arch.editor)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" implicit="true" />
-    <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" implicit="true" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" implicit="true" />
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" implicit="true" />
     <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" implicit="true" />
   </imports>
@@ -973,15 +974,16 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3Tm1VV" id="7RhjhI7ssWy" role="1B3o_S" />
   </node>
   <node concept="33ghlw" id="3onExzPnGul">
     <property role="3GE5qa" value="diagrams" />
     <property role="TrG5h" value="ArchitectureDiagramSwitcher" />
-    <ref role="2hhq6$" to="rvcq:3ZkhnXRcJqG" resolve="ModulesWiringSection" />
+    <ref role="2hhq6$" to="3whv:7RhjhI7HWfF" resolve="IArchitectureAsDiagram" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="Architecture Diagram View" />
-      <ref role="33glcW" to="70es:7mSH3WnI4q7" resolve="Architecture_Graphical" />
-      <ref role="33glcY" to="70es:7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
+      <ref role="33glcW" to="wfnd:7mSH3WnI4q7" resolve="Architecture_Graphical" />
+      <ref role="33glcY" to="wfnd:7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
     </node>
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="tU$_T" to="8js5:goNQ8fnbtb" resolve="fastenPlatformNotationGroup" />
