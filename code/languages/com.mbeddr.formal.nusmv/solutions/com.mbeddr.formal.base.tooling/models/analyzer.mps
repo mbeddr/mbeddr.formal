@@ -26,6 +26,7 @@
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="kle0" ref="r:e64c059a-e646-49b9-a694-43206fe0e74b(com.mbeddr.formal.base.tooling.nodes)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1168,6 +1169,12 @@
       <node concept="3cqZAl" id="505H3_WY3P3" role="3clF45" />
       <node concept="3Tm1VV" id="505H3_WY3P4" role="1B3o_S" />
       <node concept="3clFbS" id="505H3_WY3P5" role="3clF47">
+        <node concept="3clFbF" id="1NcemxVLwM7" role="3cqZAp">
+          <node concept="2YIFZM" id="1NcemxVLxsa" role="3clFbG">
+            <ref role="37wK5l" to="kle0:49yFphTYenL" resolve="clearCache" />
+            <ref role="1Pybhc" to="kle0:49yFphTYenD" resolve="NodesTracingFacade" />
+          </node>
+        </node>
         <node concept="3clFbF" id="2mjHtwTFnNM" role="3cqZAp">
           <node concept="1rXfSq" id="2mjHtwTFnNK" role="3clFbG">
             <ref role="37wK5l" node="2mjHtwTF4Mi" resolve="saveRunInfos" />
