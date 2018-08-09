@@ -8,6 +8,7 @@
   <imports>
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -94,6 +95,9 @@
     </node>
     <node concept="PrWs8" id="407WgdWZgUB" role="PzmwI">
       <ref role="PrY4T" to="b19z:407WgdWZ7F6" resolve="IKeywordsProvider" />
+    </node>
+    <node concept="PrWs8" id="1NcemxVNVKT" role="PzmwI">
+      <ref role="PrY4T" to="356a:4pl5GY7LKm$" resolve="UnitConcept" />
     </node>
     <node concept="1QGGSu" id="14CuINs5VhI" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/system.png" />
@@ -258,6 +262,9 @@
   <node concept="PlHQZ" id="6NmtaR1UNLQ">
     <property role="EcuMT" value="7842584090743880822" />
     <property role="TrG5h" value="IModuleContent" />
+    <node concept="PrWs8" id="2e0QUSk2X0w" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNLR">
     <property role="EcuMT" value="7842584090743880823" />
@@ -988,6 +995,9 @@
     <node concept="PrWs8" id="1ZejHLlHX1e" role="PrDN$">
       <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
     </node>
+    <node concept="PrWs8" id="2e0QUSk2TFf" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5_V$TJxCJMz">
     <property role="EcuMT" value="6447909589225766051" />
@@ -1580,6 +1590,9 @@
     <property role="TrG5h" value="ICommentableNuSMVElement" />
     <node concept="PrWs8" id="1ZejHLlHO2g" role="PrDN$">
       <ref role="PrY4T" to="b19z:1ZejHLlGC0C" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="2e0QUSk2OF8" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QnUwHmQXNv">

@@ -16,9 +16,11 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
     <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
+    <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -500,6 +502,21 @@
         <node concept="17QB3L" id="407WgdWZhcj" role="1tU5fm" />
       </node>
       <node concept="10P_77" id="407WgdWZhck" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1NcemxVNWcy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="getUnitName" />
+      <property role="13i0it" value="false" />
+      <ref role="13i0hy" to="if8w:4pl5GY7LKmR" resolve="getUnitName" />
+      <node concept="3Tm1VV" id="1NcemxVNWcz" role="1B3o_S" />
+      <node concept="3clFbS" id="1NcemxVNWcA" role="3clF47">
+        <node concept="3clFbF" id="1NcemxVNWo7" role="3cqZAp">
+          <node concept="BsUDl" id="1NcemxVNWo6" role="3clFbG">
+            <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1NcemxVNWcB" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1ZsZb$iN7CN">
