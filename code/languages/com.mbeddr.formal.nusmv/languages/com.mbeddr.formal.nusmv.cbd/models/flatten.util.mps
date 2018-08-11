@@ -13,6 +13,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="6z8w" ref="r:d4c22a7f-7332-4377-bba1-18afaeea0257(com.mbeddr.formal.nusmv.ext.structure)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
+    <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -80,6 +81,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -175,6 +179,7 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1195,6 +1200,9 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="2I9FWS" id="1NcemxUMb6V" role="3clF45">
+        <ref role="2I9WkF" to="ehqg:6NmtaR1V301" resolve="Expression" />
+      </node>
       <node concept="3clFbS" id="1NcemxUMb6T" role="3clF47">
         <node concept="3cpWs8" id="1NcemxUMb7g" role="3cqZAp">
           <node concept="3cpWsn" id="1NcemxUMb7N" role="3cpWs9">
@@ -1260,9 +1268,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="1NcemxUMb6U" role="1B3o_S" />
-      <node concept="2I9FWS" id="1NcemxUMb6V" role="3clF45">
-        <ref role="2I9WkF" to="ehqg:6NmtaR1V301" resolve="Expression" />
-      </node>
       <node concept="37vLTG" id="1NcemxUMb6W" role="3clF46">
         <property role="TrG5h" value="ca" />
         <node concept="3Tqbb2" id="1NcemxUMb7k" role="1tU5fm">
@@ -1585,32 +1590,67 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="1NcemxVIaPk" role="3cqZAp">
+                  <node concept="3cpWsn" id="1NcemxVIaPl" role="3cpWs9">
+                    <property role="TrG5h" value="verifCond" />
+                    <node concept="3Tqbb2" id="1NcemxVIaNt" role="1tU5fm">
+                      <ref role="ehGHo" to="gioj:7mSH3WncPcK" resolve="ImpliesExpression" />
+                    </node>
+                    <node concept="2pJPEk" id="1NcemxVIaPm" role="33vP2m">
+                      <node concept="2pJPED" id="1NcemxVIaPn" role="2pJPEn">
+                        <ref role="2pJxaS" to="gioj:7mSH3WncPcK" resolve="ImpliesExpression" />
+                        <node concept="2pIpSj" id="1NcemxVIaPo" role="2pJxcM">
+                          <ref role="2pIpSl" to="ehqg:6NmtaR1W9oM" resolve="left" />
+                          <node concept="36biLy" id="1NcemxVIaPp" role="2pJxcZ">
+                            <node concept="37vLTw" id="1NcemxVIaPq" role="36biLW">
+                              <ref role="3cqZAo" node="1NcemxUMbaY" resolve="implicantsConjunction" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2pIpSj" id="1NcemxVIaPr" role="2pJxcM">
+                          <ref role="2pIpSl" to="ehqg:6NmtaR1W9oS" resolve="right" />
+                          <node concept="36biLy" id="1NcemxVIaPs" role="2pJxcZ">
+                            <node concept="37vLTw" id="1NcemxVIaPt" role="36biLW">
+                              <ref role="3cqZAo" node="1NcemxUMbaX" resolve="rewrittenPrecondition" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1NcemxVIfTk" role="3cqZAp">
+                  <node concept="2YIFZM" id="1NcemxVIgrF" role="3clFbG">
+                    <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+                    <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                    <node concept="2OqwBi" id="1NcemxVIgA7" role="37wK5m">
+                      <node concept="2GrUjf" id="1NcemxVIguC" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="1NcemxUMb9n" resolve="prec" />
+                      </node>
+                      <node concept="2Xjw5R" id="1NcemxVIhcW" role="2OqNvi">
+                        <node concept="1xMEDy" id="1NcemxVIhcY" role="1xVPHs">
+                          <node concept="chp4Y" id="1NcemxVIh__" role="ri$Ld">
+                            <ref role="cht4Q" to="vzqj:7RhjhI7cKjw" resolve="Precondition" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="1NcemxVIiuq" role="37wK5m">
+                      <ref role="3cqZAo" node="1NcemxVIaPl" resolve="verifCond" />
+                    </node>
+                    <node concept="3clFbT" id="1NcemxVIjiF" role="37wK5m">
+                      <property role="3clFbU" value="false" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="1NcemxUMba7" role="3cqZAp">
                   <node concept="2OqwBi" id="1NcemxUMbb0" role="3clFbG">
                     <node concept="37vLTw" id="1NcemxUMbbE" role="2Oq$k0">
                       <ref role="3cqZAo" node="1NcemxUMb73" resolve="computedPreconditionsChecks" />
                     </node>
                     <node concept="TSZUe" id="1NcemxUMbbF" role="2OqNvi">
-                      <node concept="2pJPEk" id="1NcemxUMbcf" role="25WWJ7">
-                        <node concept="2pJPED" id="1NcemxUMbcB" role="2pJPEn">
-                          <ref role="2pJxaS" to="gioj:7mSH3WncPcK" resolve="ImpliesExpression" />
-                          <node concept="2pIpSj" id="1NcemxUMbcU" role="2pJxcM">
-                            <ref role="2pIpSl" to="ehqg:6NmtaR1W9oM" resolve="left" />
-                            <node concept="36biLy" id="1NcemxUMbdb" role="2pJxcZ">
-                              <node concept="37vLTw" id="1NcemxUMbdp" role="36biLW">
-                                <ref role="3cqZAo" node="1NcemxUMbaY" resolve="implicantsConjunction" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="2pIpSj" id="1NcemxUMbcV" role="2pJxcM">
-                            <ref role="2pIpSl" to="ehqg:6NmtaR1W9oS" resolve="right" />
-                            <node concept="36biLy" id="1NcemxUMbdc" role="2pJxcZ">
-                              <node concept="37vLTw" id="1NcemxUMbdq" role="36biLW">
-                                <ref role="3cqZAo" node="1NcemxUMbaX" resolve="rewrittenPrecondition" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                      <node concept="37vLTw" id="1NcemxVIaPu" role="25WWJ7">
+                        <ref role="3cqZAo" node="1NcemxVIaPl" resolve="verifCond" />
                       </node>
                     </node>
                   </node>
@@ -1988,32 +2028,67 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="1NcemxVIk1Z" role="3cqZAp">
+              <node concept="3cpWsn" id="1NcemxVIk20" role="3cpWs9">
+                <property role="TrG5h" value="verifCond" />
+                <node concept="3Tqbb2" id="1NcemxVIk1X" role="1tU5fm">
+                  <ref role="ehGHo" to="gioj:7mSH3WncPcK" resolve="ImpliesExpression" />
+                </node>
+                <node concept="2pJPEk" id="1NcemxVIk21" role="33vP2m">
+                  <node concept="2pJPED" id="1NcemxVIk22" role="2pJPEn">
+                    <ref role="2pJxaS" to="gioj:7mSH3WncPcK" resolve="ImpliesExpression" />
+                    <node concept="2pIpSj" id="1NcemxVIk23" role="2pJxcM">
+                      <ref role="2pIpSl" to="ehqg:6NmtaR1W9oM" resolve="left" />
+                      <node concept="36biLy" id="1NcemxVIk24" role="2pJxcZ">
+                        <node concept="37vLTw" id="1NcemxVIk25" role="36biLW">
+                          <ref role="3cqZAo" node="1NcemxUMb9z" resolve="implicantsConjunction" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pIpSj" id="1NcemxVIk26" role="2pJxcM">
+                      <ref role="2pIpSl" to="ehqg:6NmtaR1W9oS" resolve="right" />
+                      <node concept="36biLy" id="1NcemxVIk27" role="2pJxcZ">
+                        <node concept="37vLTw" id="1NcemxVIk28" role="36biLW">
+                          <ref role="3cqZAo" node="1NcemxUMb9y" resolve="rewrittenPostcondition" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1NcemxVImaQ" role="3cqZAp">
+              <node concept="2YIFZM" id="1NcemxVImaR" role="3clFbG">
+                <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+                <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                <node concept="2OqwBi" id="1NcemxVImaS" role="37wK5m">
+                  <node concept="2GrUjf" id="1NcemxVIm$b" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="1NcemxUMb84" resolve="post" />
+                  </node>
+                  <node concept="2Xjw5R" id="1NcemxVImaU" role="2OqNvi">
+                    <node concept="1xMEDy" id="1NcemxVImaV" role="1xVPHs">
+                      <node concept="chp4Y" id="1NcemxVL9uH" role="ri$Ld">
+                        <ref role="cht4Q" to="vzqj:7RhjhI7d5N_" resolve="Postcondition" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1NcemxVImaX" role="37wK5m">
+                  <ref role="3cqZAo" node="1NcemxVIk20" resolve="verifCond" />
+                </node>
+                <node concept="3clFbT" id="1NcemxVImaY" role="37wK5m">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="1NcemxUMb8V" role="3cqZAp">
               <node concept="2OqwBi" id="1NcemxUMb9_" role="3clFbG">
                 <node concept="37vLTw" id="1NcemxUMbar" role="2Oq$k0">
                   <ref role="3cqZAo" node="1NcemxUMb7a" resolve="computedPostconditionsChecks" />
                 </node>
                 <node concept="TSZUe" id="1NcemxUMbas" role="2OqNvi">
-                  <node concept="2pJPEk" id="1NcemxUMbbc" role="25WWJ7">
-                    <node concept="2pJPED" id="1NcemxUMbbU" role="2pJPEn">
-                      <ref role="2pJxaS" to="gioj:7mSH3WncPcK" resolve="ImpliesExpression" />
-                      <node concept="2pIpSj" id="1NcemxUMbcm" role="2pJxcM">
-                        <ref role="2pIpSl" to="ehqg:6NmtaR1W9oM" resolve="left" />
-                        <node concept="36biLy" id="1NcemxUMbcH" role="2pJxcZ">
-                          <node concept="37vLTw" id="1NcemxUMbd0" role="36biLW">
-                            <ref role="3cqZAo" node="1NcemxUMb9z" resolve="implicantsConjunction" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2pIpSj" id="1NcemxUMbcn" role="2pJxcM">
-                        <ref role="2pIpSl" to="ehqg:6NmtaR1W9oS" resolve="right" />
-                        <node concept="36biLy" id="1NcemxUMbcI" role="2pJxcZ">
-                          <node concept="37vLTw" id="1NcemxUMbd1" role="36biLW">
-                            <ref role="3cqZAo" node="1NcemxUMb9y" resolve="rewrittenPostcondition" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="37vLTw" id="1NcemxVIk29" role="25WWJ7">
+                    <ref role="3cqZAo" node="1NcemxVIk20" resolve="verifCond" />
                   </node>
                 </node>
               </node>

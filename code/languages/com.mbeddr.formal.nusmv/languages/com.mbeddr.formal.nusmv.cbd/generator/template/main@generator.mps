@@ -105,6 +105,9 @@
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
+      <concept id="3118009927543452571" name="jetbrains.mps.lang.generator.structure.TraceMacro" flags="ln" index="1M6Lop">
+        <child id="3118009927543452625" name="sourceNodeQuery" index="1M6Lpj" />
+      </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
@@ -565,6 +568,15 @@
                   <ref role="37wK5l" to="2w9c:1NcemxUMb6K" resolve="collectVerificationConditions" />
                   <node concept="30H73N" id="1NcemxVnIP3" role="37wK5m" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1M6Lop" id="1NcemxVLj68" role="lGtFl">
+          <node concept="3NFfHV" id="1NcemxVLj6a" role="1M6Lpj">
+            <node concept="3clFbS" id="1NcemxVLj6c" role="2VODD2">
+              <node concept="3clFbF" id="1NcemxVLjgq" role="3cqZAp">
+                <node concept="30H73N" id="1NcemxVLjgp" role="3clFbG" />
               </node>
             </node>
           </node>
