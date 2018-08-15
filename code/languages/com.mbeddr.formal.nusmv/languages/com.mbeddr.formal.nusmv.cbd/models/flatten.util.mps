@@ -1350,9 +1350,19 @@
                     </node>
                     <node concept="NRdvd" id="1NcemxVu2m5" role="33vP2m">
                       <ref role="1Pybhc" node="1NcemxUMbdR" resolve="ConditionsUtils" />
-                      <ref role="37wK5l" node="1NcemxUMbdW" resolve="postconditionsOfModule" />
-                      <node concept="37vLTw" id="1NcemxVu2m6" role="37wK5m">
-                        <ref role="3cqZAo" node="1NcemxUMb9e" resolve="crtInt" />
+                      <ref role="37wK5l" node="1NcemxUMbdW" resolve="postconditionsOfInterface" />
+                      <node concept="2OqwBi" id="6EFcW_ABZ_8" role="37wK5m">
+                        <node concept="2OqwBi" id="6EFcW_ABW2L" role="2Oq$k0">
+                          <node concept="2GrUjf" id="6EFcW_ABURv" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="1NcemxUMb9g" resolve="siblingInst" />
+                          </node>
+                          <node concept="3TrEf2" id="6EFcW_ABXfa" role="2OqNvi">
+                            <ref role="3Tt5mk" to="vzqj:7RhjhI7$liY" resolve="interfaceRef" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="6EFcW_AC1dk" role="2OqNvi">
+                          <ref role="3Tt5mk" to="vzqj:7RhjhI7$li_" resolve="interface" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1452,17 +1462,9 @@
                   <ref role="3cqZAo" node="1NcemxUMb9j" resolve="allRelevantImplicants" />
                 </node>
                 <node concept="TSZUe" id="1NcemxUMb9Y" role="2OqNvi">
-                  <node concept="2pJPEk" id="1NcemxUMbaU" role="25WWJ7">
-                    <node concept="2pJPED" id="1NcemxUMbby" role="2pJPEn">
-                      <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
-                      <node concept="2pJxcG" id="1NcemxUMbca" role="2pJxcM">
-                        <ref role="2pJxcJ" to="ehqg:6mm$FLYVIZj" resolve="value" />
-                        <node concept="10M0yZ" id="1NcemxUMbcx" role="2pJxcZ">
-                          <ref role="3cqZAo" node="1NcemxUMb0_" resolve="ARCH_WIRING" />
-                          <ref role="1PxDUh" node="1NcemxUMb0z" resolve="AGArchitectureFlatteningNamingUtils" />
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="NRdvd" id="GZcvICZZEp" role="25WWJ7">
+                    <ref role="1Pybhc" node="1NcemxUMb6I" resolve="AGArchitectureVerificationConditionsUtils" />
+                    <ref role="37wK5l" node="GZcvICZZ5C" resolve="archWiringExpression" />
                   </node>
                 </node>
               </node>
@@ -1834,7 +1836,7 @@
                 </node>
                 <node concept="NRdvd" id="1NcemxUMbaf" role="33vP2m">
                   <ref role="1Pybhc" node="1NcemxUMbdR" resolve="ConditionsUtils" />
-                  <ref role="37wK5l" node="1NcemxUMbdW" resolve="postconditionsOfModule" />
+                  <ref role="37wK5l" node="1NcemxUMbdW" resolve="postconditionsOfInterface" />
                   <node concept="2OqwBi" id="1NcemxVul_5" role="37wK5m">
                     <node concept="2OqwBi" id="1NcemxUMbci" role="2Oq$k0">
                       <node concept="2GrUjf" id="1NcemxUMbcC" role="2Oq$k0">
@@ -1932,17 +1934,9 @@
               <ref role="3cqZAo" node="1NcemxUMb82" resolve="allRelevantImplicants" />
             </node>
             <node concept="TSZUe" id="1NcemxUMb8Q" role="2OqNvi">
-              <node concept="2pJPEk" id="1NcemxUMb9x" role="25WWJ7">
-                <node concept="2pJPED" id="1NcemxUMbak" role="2pJPEn">
-                  <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
-                  <node concept="2pJxcG" id="1NcemxUMbb7" role="2pJxcM">
-                    <ref role="2pJxcJ" to="ehqg:6mm$FLYVIZj" resolve="value" />
-                    <node concept="10M0yZ" id="1NcemxUMbbQ" role="2pJxcZ">
-                      <ref role="1PxDUh" node="1NcemxUMb0z" resolve="AGArchitectureFlatteningNamingUtils" />
-                      <ref role="3cqZAo" node="1NcemxUMb0_" resolve="ARCH_WIRING" />
-                    </node>
-                  </node>
-                </node>
+              <node concept="NRdvd" id="GZcvICZZRg" role="25WWJ7">
+                <ref role="1Pybhc" node="1NcemxUMb6I" resolve="AGArchitectureVerificationConditionsUtils" />
+                <ref role="37wK5l" node="GZcvICZZ5C" resolve="archWiringExpression" />
               </node>
             </node>
           </node>
@@ -1953,7 +1947,7 @@
           </node>
           <node concept="NRdvd" id="1NcemxUMb85" role="2GsD0m">
             <ref role="1Pybhc" node="1NcemxUMbdR" resolve="ConditionsUtils" />
-            <ref role="37wK5l" node="1NcemxUMbdW" resolve="postconditionsOfModule" />
+            <ref role="37wK5l" node="1NcemxUMbdW" resolve="postconditionsOfInterface" />
             <node concept="37vLTw" id="1NcemxUMb8R" role="37wK5m">
               <ref role="3cqZAo" node="1NcemxUMb78" resolve="parentBlock" />
             </node>
@@ -2234,6 +2228,41 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="GZcvICZZ5C" role="jymVt">
+      <property role="TrG5h" value="archWiringExpression" />
+      <node concept="3Tm6S6" id="GZcvICZZ5D" role="1B3o_S" />
+      <node concept="3Tqbb2" id="GZcvICZZ5E" role="3clF45">
+        <ref role="ehGHo" to="ehqg:6NmtaR1V301" resolve="Expression" />
+      </node>
+      <node concept="3clFbS" id="GZcvICZZ53" role="3clF47">
+        <node concept="3cpWs6" id="GZcvID00q0" role="3cqZAp">
+          <node concept="2pJPEk" id="GZcvID015S" role="3cqZAk">
+            <node concept="2pJPED" id="GZcvID01s0" role="2pJPEn">
+              <ref role="2pJxaS" to="gioj:7V1Bqz6Um4q" resolve="Globally" />
+              <node concept="2pIpSj" id="GZcvID02y3" role="2pJxcM">
+                <ref role="2pIpSl" to="gioj:7mSH3Wn9_sV" resolve="exp" />
+                <node concept="2pJPED" id="6EFcW_AClbP" role="2pJxcZ">
+                  <ref role="2pJxaS" to="ehqg:1IrBcRpi7Jh" resolve="ParensExpression" />
+                  <node concept="2pIpSj" id="6EFcW_AClc5" role="2pJxcM">
+                    <ref role="2pIpSl" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+                    <node concept="2pJPED" id="GZcvID02T8" role="2pJxcZ">
+                      <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
+                      <node concept="2pJxcG" id="GZcvID02T9" role="2pJxcM">
+                        <ref role="2pJxcJ" to="ehqg:6mm$FLYVIZj" resolve="value" />
+                        <node concept="10M0yZ" id="GZcvID02Ta" role="2pJxcZ">
+                          <ref role="1PxDUh" node="1NcemxUMb0z" resolve="AGArchitectureFlatteningNamingUtils" />
+                          <ref role="3cqZAo" node="1NcemxUMb0_" resolve="ARCH_WIRING" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="1NcemxUMb6Q" role="jymVt" />
     <node concept="2YIFZL" id="1NcemxUMb6R" role="jymVt">
       <property role="TrG5h" value="rewriteConditionAccordingToPath" />
@@ -2334,6 +2363,55 @@
             </node>
           </node>
         </node>
+        <node concept="2Gpval" id="GZcvICZH1y" role="3cqZAp">
+          <node concept="2GrKxI" id="GZcvICZH1z" role="2Gsz3X">
+            <property role="TrG5h" value="er" />
+          </node>
+          <node concept="3clFbS" id="GZcvICZH1$" role="2LFqv$">
+            <node concept="3clFbF" id="GZcvICZH1_" role="3cqZAp">
+              <node concept="2OqwBi" id="GZcvICZH1A" role="3clFbG">
+                <node concept="2GrUjf" id="GZcvICZH1B" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="GZcvICZH1z" resolve="er" />
+                </node>
+                <node concept="1P9Npp" id="GZcvICZH1C" role="2OqNvi">
+                  <node concept="2pJPEk" id="GZcvICZH1D" role="1P9ThW">
+                    <node concept="2pJPED" id="GZcvICZH1E" role="2pJPEn">
+                      <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
+                      <node concept="2pJxcG" id="GZcvICZH1F" role="2pJxcM">
+                        <ref role="2pJxcJ" to="ehqg:6mm$FLYVIZj" resolve="value" />
+                        <node concept="2OqwBi" id="GZcvICZH1H" role="2pJxcZ">
+                          <node concept="2OqwBi" id="GZcvICZH1I" role="2Oq$k0">
+                            <node concept="2GrUjf" id="GZcvICZH1J" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="GZcvICZH1z" resolve="er" />
+                            </node>
+                            <node concept="3TrEf2" id="GZcvICZHFy" role="2OqNvi">
+                              <ref role="3Tt5mk" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="GZcvICZH1L" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="GZcvICZH1N" role="2GsD0m">
+            <node concept="37vLTw" id="GZcvICZH1O" role="2Oq$k0">
+              <ref role="3cqZAo" node="1NcemxUMb8b" resolve="result" />
+            </node>
+            <node concept="2Rf3mk" id="GZcvICZH1P" role="2OqNvi">
+              <node concept="1xMEDy" id="GZcvICZH1Q" role="1xVPHs">
+                <node concept="chp4Y" id="GZcvICZHna" role="ri$Ld">
+                  <ref role="cht4Q" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1NcemxUMb7K" role="3cqZAp">
           <node concept="37vLTw" id="1NcemxUMb8i" role="3clFbG">
             <ref role="3cqZAo" node="1NcemxUMb8b" resolve="result" />
@@ -2424,7 +2502,7 @@
     </node>
     <node concept="2tJIrI" id="1NcemxUMbdV" role="jymVt" />
     <node concept="2YIFZL" id="1NcemxUMbdW" role="jymVt">
-      <property role="TrG5h" value="postconditionsOfModule" />
+      <property role="TrG5h" value="postconditionsOfInterface" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
