@@ -57,6 +57,7 @@
         <module reference="0da073b7-14da-42e6-8db1-df42c803e079(com.mbeddr.formal.nusmv.verification_cases)" version="0" />
         <module reference="dabaa3bd-fd29-4ced-b5fd-73579df439c8(com.mbeddr.formal.nusmv.verification_cases#5430620409976632138)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -123,6 +124,7 @@
     <module reference="0da073b7-14da-42e6-8db1-df42c803e079(com.mbeddr.formal.nusmv.verification_cases)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
+    <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)</extendedLanguage>
