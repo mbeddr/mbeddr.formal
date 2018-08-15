@@ -109,6 +109,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
@@ -473,6 +474,32 @@
   <node concept="1M2fIO" id="1gJVC85NBbs">
     <property role="3GE5qa" value="expressions" />
     <ref role="1M2myG" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+    <node concept="1N5Pfh" id="GZcvICZ$no" role="1Mr941">
+      <ref role="1N5Vy1" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
+      <node concept="3dgokm" id="GZcvICZ$ns" role="1N6uqs">
+        <node concept="3clFbS" id="GZcvICZ$nu" role="2VODD2">
+          <node concept="3clFbF" id="GZcvICZAK4" role="3cqZAp">
+            <node concept="2YIFZM" id="GZcvICZAPi" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="GZcvICZATJ" role="37wK5m">
+                <node concept="2OqwBi" id="GZcvICZATK" role="2Oq$k0">
+                  <node concept="2rP1CM" id="GZcvICZATL" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="GZcvICZATM" role="2OqNvi" />
+                </node>
+                <node concept="2Rf3mk" id="GZcvICZATN" role="2OqNvi">
+                  <node concept="1xMEDy" id="GZcvICZATO" role="1xVPHs">
+                    <node concept="chp4Y" id="GZcvICZATP" role="ri$Ld">
+                      <ref role="cht4Q" to="gioj:6NmtaR1SWfR" resolve="EnumerationMember" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="59AZjhfZY6m">
     <property role="3GE5qa" value="spec" />
