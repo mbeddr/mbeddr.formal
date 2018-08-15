@@ -15,14 +15,18 @@
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
     <dependency reexport="false">bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)</dependency>
+    <dependency reexport="false">58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)</dependency>
+    <dependency reexport="false">0785c32a-102f-45a9-9367-99fd48b107eb(com.mbeddr.formal.nusmv.cbd.pluginSolution)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
+    <language slang="l:71797868-de95-425c-8470-36aa52c8ebc4:com.mbeddr.formal.base.arch" version="0" />
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
     <language slang="l:3fb92f6f-450c-4e41-8129-97a4b9978951:com.mbeddr.formal.base.operatorspanel" version="0" />
     <language slang="l:b3b9fe18-f0c4-4cea-83c5-45faa74e0911:com.mbeddr.formal.base.tabular" version="0" />
     <language slang="l:001b2375-3bd5-4d5e-9958-6b3f62dc8548:com.mbeddr.formal.nusmv" version="-1" />
     <language slang="l:22a84bd5-d947-48ae-b9f6-8288eea41dce:com.mbeddr.formal.nusmv.arch" version="0" />
+    <language slang="l:58bd9c99-ba42-4205-b3c9-ce445fd870e6:com.mbeddr.formal.nusmv.cbd" version="0" />
     <language slang="l:c0e6afd4-e20f-4e33-9970-004cf26b9bf6:com.mbeddr.formal.nusmv.ext" version="0" />
     <language slang="l:85d37fe5-2c7e-4ea1-ae78-08007614c543:com.mbeddr.formal.nusmv.importer" version="0" />
     <language slang="l:2dd5dace-06d5-4283-a878-7272f2df6d4b:com.mbeddr.formal.nusmv.operatorspanel" version="0" />
@@ -56,14 +60,18 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
+    <module reference="71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)" version="0" />
     <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
     <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
+    <module reference="58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)" version="0" />
+    <module reference="0785c32a-102f-45a9-9367-99fd48b107eb(com.mbeddr.formal.nusmv.cbd.pluginSolution)" version="0" />
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)" version="0" />
     <module reference="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" version="0" />
     <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="b0f97242-b2a5-4637-95d3-c63ed6f55701(test.mbeddr.formal.nusmv)" version="0" />
   </dependencyVersions>
 </solution>

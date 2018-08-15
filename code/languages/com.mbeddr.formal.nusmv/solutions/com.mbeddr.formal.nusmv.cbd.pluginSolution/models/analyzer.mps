@@ -761,13 +761,13 @@
               <node concept="3cpWsn" id="1NcemxVKUPv" role="3cpWs9">
                 <property role="TrG5h" value="originalNode" />
                 <node concept="3Tqbb2" id="1NcemxVKUOL" role="1tU5fm" />
-                <node concept="2YIFZM" id="1NcemxVKUPw" role="33vP2m">
-                  <ref role="37wK5l" to="kle0:49yFphTYenN" resolve="findOriginalNode" />
+                <node concept="NRdvd" id="6EFcW_ADWap" role="33vP2m">
                   <ref role="1Pybhc" to="kle0:49yFphTYenD" resolve="NodesTracingFacade" />
-                  <node concept="1rXfSq" id="1NcemxVKUPx" role="37wK5m">
+                  <ref role="37wK5l" to="kle0:49yFphTYenN" resolve="findOriginalNode" />
+                  <node concept="1rXfSq" id="6EFcW_ADWaq" role="37wK5m">
                     <ref role="37wK5l" node="1NcemxVKMH8" resolve="fullyQualifiedSMVFileName" />
                   </node>
-                  <node concept="37vLTw" id="1NcemxVKUPy" role="37wK5m">
+                  <node concept="37vLTw" id="6EFcW_ADWar" role="37wK5m">
                     <ref role="3cqZAo" node="1NcemxVJaqt" resolve="lineNumberOfCurrentResult" />
                   </node>
                 </node>
