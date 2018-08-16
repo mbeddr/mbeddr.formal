@@ -160,9 +160,13 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
@@ -267,6 +271,7 @@
             <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
             <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
           </node>
+          <node concept="15s5l7" id="67ygqsM58Av" role="lGtFl" />
         </node>
         <node concept="3clFbH" id="7VkE0BpwcPf" role="3cqZAp" />
         <node concept="3clFbJ" id="7VkE0BpuGuC" role="3cqZAp">
@@ -378,6 +383,7 @@
             <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
             <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_UNIX" resolve="IS_OS_UNIX" />
           </node>
+          <node concept="15s5l7" id="67ygqsM58QR" role="lGtFl" />
         </node>
         <node concept="3clFbH" id="7VkE0BpwfkO" role="3cqZAp" />
         <node concept="3kxDZ6" id="7VkE0Bpwgpg" role="3cqZAp">
@@ -617,6 +623,7 @@
             <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
             <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_UNIX" resolve="IS_OS_UNIX" />
           </node>
+          <node concept="15s5l7" id="67ygqsM595s" role="lGtFl" />
         </node>
         <node concept="3clFbH" id="HmUOIG_5ap" role="3cqZAp" />
         <node concept="3cpWs8" id="HmUOIG_5b4" role="3cqZAp">

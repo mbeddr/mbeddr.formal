@@ -54,7 +54,6 @@
         <property id="1207318242774" name="keycode" index="pLAjf" />
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
-        <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -353,7 +352,6 @@
   <node concept="sE7Ow" id="EVDykUC7Si">
     <property role="TrG5h" value="SpinCheckAction" />
     <property role="2uzpH1" value="Verify Model (Run Pan)" />
-    <property role="fJN8o" value="true" />
     <node concept="2ScWuX" id="Rd$2EC5$hT" role="tmbBb">
       <node concept="3clFbS" id="Rd$2EC5$hU" role="2VODD2">
         <node concept="3clFbF" id="Rd$2EC5$y$" role="3cqZAp">
