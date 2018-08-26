@@ -41,6 +41,7 @@
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="6046489571270834038" name="foldedCellModel" index="3EmGlc" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -682,6 +683,10 @@
           <node concept="3vyZuw" id="7RhjhI7AboO" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
+          <node concept="3F0ifn" id="67ygqsM8Nzi" role="2czzBI">
+            <property role="3F0ifm" value="no input" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
+          </node>
         </node>
         <node concept="l2Vlx" id="7RhjhI7AbnM" role="2iSdaV" />
         <node concept="3F0ifn" id="7RhjhI7APvO" role="3EZMnx">
@@ -695,6 +700,10 @@
           </node>
           <node concept="3vyZuw" id="7RhjhI7AbpU" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="67ygqsMaaq$" role="2czzBI">
+            <property role="3F0ifm" value="no output" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
           </node>
         </node>
       </node>
@@ -720,6 +729,10 @@
           </node>
           <node concept="3vyZuw" id="7RhjhI7Bajz" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="67ygqsMaaqB" role="2czzBI">
+            <property role="3F0ifm" value="no contract" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
           </node>
         </node>
         <node concept="l2Vlx" id="7RhjhI7Baj$" role="2iSdaV" />
@@ -873,6 +886,10 @@
           <node concept="3vyZuw" id="7RhjhI7BVm7" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
+          <node concept="3F0ifn" id="67ygqsMa$yG" role="2czzBI">
+            <property role="3F0ifm" value="no input" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
+          </node>
         </node>
         <node concept="l2Vlx" id="7RhjhI7BVm8" role="2iSdaV" />
         <node concept="3F0ifn" id="7RhjhI7BVm9" role="3EZMnx">
@@ -886,6 +903,10 @@
           </node>
           <node concept="3vyZuw" id="7RhjhI7BVmd" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="67ygqsMa$yJ" role="2czzBI">
+            <property role="3F0ifm" value="no output" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
           </node>
         </node>
       </node>
@@ -911,6 +932,10 @@
           </node>
           <node concept="3vyZuw" id="7RhjhI7BVmo" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="67ygqsMa$yM" role="2czzBI">
+            <property role="3F0ifm" value="no contract" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
           </node>
         </node>
         <node concept="l2Vlx" id="7RhjhI7BVmp" role="2iSdaV" />
@@ -973,6 +998,10 @@
           <node concept="3vyZuw" id="7RhjhI7C1vF" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
+          <node concept="3F0ifn" id="67ygqsMboYk" role="2czzBI">
+            <property role="3F0ifm" value="no input" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
+          </node>
         </node>
         <node concept="l2Vlx" id="7RhjhI7C1vG" role="2iSdaV" />
         <node concept="3F0ifn" id="7RhjhI7C1vH" role="3EZMnx">
@@ -986,6 +1015,10 @@
           </node>
           <node concept="3vyZuw" id="7RhjhI7C1vL" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="67ygqsMbp1n" role="2czzBI">
+            <property role="3F0ifm" value="no output" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
           </node>
         </node>
       </node>
@@ -1011,6 +1044,10 @@
           </node>
           <node concept="3vyZuw" id="7RhjhI7C1vW" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="67ygqsMbp4q" role="2czzBI">
+            <property role="3F0ifm" value="no contract" />
+            <ref role="1k5W1q" to="3fe0:67ygqsM9cDK" resolve="EditingHintStyle" />
           </node>
         </node>
         <node concept="l2Vlx" id="7RhjhI7C1vX" role="2iSdaV" />
