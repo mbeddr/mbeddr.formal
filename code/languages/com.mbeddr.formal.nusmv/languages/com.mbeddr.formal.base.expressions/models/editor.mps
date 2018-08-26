@@ -215,6 +215,16 @@
         <property role="Vb096" value="darkGray" />
       </node>
     </node>
+    <node concept="14StLt" id="67ygqsM9cDK" role="V601i">
+      <property role="TrG5h" value="EditingHintStyle" />
+      <node concept="VPxyj" id="67ygqsM9cDL" role="3F10Kt" />
+      <node concept="Vb9p2" id="67ygqsM9cDM" role="3F10Kt">
+        <property role="Vbekb" value="ITALIC" />
+      </node>
+      <node concept="VechU" id="67ygqsM9cDN" role="3F10Kt">
+        <property role="Vb096" value="lightGray" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="6NmtaR1W9ps">
     <property role="3GE5qa" value="expressions" />
