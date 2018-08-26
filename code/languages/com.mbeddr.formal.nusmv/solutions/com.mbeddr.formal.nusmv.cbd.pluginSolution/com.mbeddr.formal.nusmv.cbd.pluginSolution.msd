@@ -17,6 +17,7 @@
     <dependency reexport="false">945808cb-09a0-4d70-9f2a-186b7f5c6219(com.mbeddr.formal.base.pluginSolution)</dependency>
     <dependency reexport="false">58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:56e5a668-082e-4be5-801a-e7bae425ee68:com.mbeddr.formal.nusmv.ag.flatten" version="0" />
