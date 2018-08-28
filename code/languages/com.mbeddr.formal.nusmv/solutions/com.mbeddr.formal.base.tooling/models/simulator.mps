@@ -338,6 +338,18 @@
         <property role="NWlVz" value="Nodes-to-values map for the current step." />
       </node>
     </node>
+    <node concept="2tJIrI" id="1EKbsQR7u2Z" role="jymVt" />
+    <node concept="3clFb_" id="1EKbsQR7vyO" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getSimulationEntryNode" />
+      <node concept="3clFbS" id="1EKbsQR7vyR" role="3clF47" />
+      <node concept="3Tm1VV" id="1EKbsQR7vyS" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1EKbsQR7vxR" role="3clF45" />
+      <node concept="NWlO9" id="1EKbsQR7v$j" role="lGtFl">
+        <property role="NWlVz" value="Returns the node which represents the entry in the simulation. Simulation bar will be attached to this node." />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="3fsZMFLDils" role="1B3o_S" />
     <node concept="2tJIrI" id="3fsZMFLDuAG" role="jymVt" />
     <node concept="NWlO9" id="3fsZMFLDuBE" role="lGtFl">
@@ -373,6 +385,20 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2xeYpNCxAKk" role="3clF47">
+        <node concept="3cpWs8" id="1EKbsQR7wG7" role="3cqZAp">
+          <node concept="3cpWsn" id="1EKbsQR7wGa" role="3cpWs9">
+            <property role="TrG5h" value="simulationEntry" />
+            <node concept="3Tqbb2" id="1EKbsQR7wG5" role="1tU5fm" />
+            <node concept="2OqwBi" id="1EKbsQR7wUV" role="33vP2m">
+              <node concept="37vLTw" id="1EKbsQR7wMN" role="2Oq$k0">
+                <ref role="3cqZAo" node="2xeYpNCxBdp" resolve="res" />
+              </node>
+              <node concept="liA8E" id="1EKbsQR7x2b" role="2OqNvi">
+                <ref role="37wK5l" node="1EKbsQR7vyO" resolve="getSimulationEntryNode" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6PRHFscQBW1" role="3cqZAp">
           <node concept="2OqwBi" id="6PRHFscQCeC" role="3clFbG">
             <node concept="37vLTw" id="6PRHFscQN9A" role="2Oq$k0">
@@ -412,7 +438,7 @@
                         <node concept="liA8E" id="6PRHFscQP7z" role="2OqNvi">
                           <ref role="37wK5l" node="3fsZMFLMFZc" resolve="canSimulateNode" />
                           <node concept="37vLTw" id="6PRHFscQPA1" role="37wK5m">
-                            <ref role="3cqZAo" node="2xeYpNCxAQJ" resolve="simulationEntry" />
+                            <ref role="3cqZAo" node="1EKbsQR7wGa" resolve="simulationEntry" />
                           </node>
                         </node>
                       </node>
@@ -436,7 +462,7 @@
                       <node concept="liA8E" id="6PRHFscQR1J" role="2OqNvi">
                         <ref role="37wK5l" node="3fsZMFLIaEc" resolve="reset" />
                         <node concept="37vLTw" id="6PRHFscQRqZ" role="37wK5m">
-                          <ref role="3cqZAo" node="2xeYpNCxAQJ" resolve="simulationEntry" />
+                          <ref role="3cqZAo" node="1EKbsQR7wGa" resolve="simulationEntry" />
                         </node>
                         <node concept="37vLTw" id="7V1Bqz797Ta" role="37wK5m">
                           <ref role="3cqZAo" node="7V1Bqz797Br" resolve="repo" />
@@ -470,7 +496,7 @@
             </node>
             <node concept="3EllGN" id="2xeYpNCxD2X" role="37vLTJ">
               <node concept="37vLTw" id="2xeYpNCxD4i" role="3ElVtu">
-                <ref role="3cqZAo" node="2xeYpNCxAQJ" resolve="simulationEntry" />
+                <ref role="3cqZAo" node="1EKbsQR7wGa" resolve="simulationEntry" />
               </node>
               <node concept="37vLTw" id="2xeYpNCxCMT" role="3ElQJh">
                 <ref role="3cqZAo" node="2xeYpNCxBLn" resolve="entryNode2SimTrace" />
@@ -481,10 +507,6 @@
       </node>
       <node concept="3Tm1VV" id="2xeYpNCxADP" role="1B3o_S" />
       <node concept="3cqZAl" id="2xeYpNCxAK8" role="3clF45" />
-      <node concept="37vLTG" id="2xeYpNCxAQJ" role="3clF46">
-        <property role="TrG5h" value="simulationEntry" />
-        <node concept="3Tqbb2" id="2xeYpNCxAQI" role="1tU5fm" />
-      </node>
       <node concept="37vLTG" id="2xeYpNCxBdp" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="3uibUv" id="3fsZMFLDyvt" role="1tU5fm">
