@@ -264,6 +264,7 @@
       </concept>
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
+        <child id="2044706694575458564" name="labelCell" index="3kqczz" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
       </concept>
@@ -496,8 +497,8 @@
               </node>
               <node concept="3clFbF" id="7RhjhI7cVSf" role="3cqZAp">
                 <node concept="2YIFZM" id="7RhjhI7cWCJ" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
                   <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
                   <node concept="3cpWs3" id="7RhjhI7cUx8" role="37wK5m">
                     <node concept="3cmrfG" id="7RhjhI7cUxe" role="3uHU7w">
                       <property role="3cmrfH" value="1" />
@@ -596,8 +597,8 @@
               </node>
               <node concept="3clFbF" id="7RhjhI7d5O7" role="3cqZAp">
                 <node concept="2YIFZM" id="7RhjhI7d5O8" role="3clFbG">
-                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                   <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                   <node concept="3cpWs3" id="7RhjhI7d5O9" role="37wK5m">
                     <node concept="3cmrfG" id="7RhjhI7d5Oa" role="3uHU7w">
                       <property role="3cmrfH" value="1" />
@@ -886,8 +887,8 @@
               <node concept="3y3z36" id="6Kf5KB6UkQ2" role="3clFbG">
                 <node concept="10Nm6u" id="6Kf5KB6UkYL" role="3uHU7w" />
                 <node concept="2YIFZM" id="3fsZMFLDOYO" role="3uHU7B">
-                  <ref role="1Pybhc" to="mc3u:2xeYpNCxAqa" resolve="SimulationRegistry" />
                   <ref role="37wK5l" to="mc3u:2xeYpNCxElA" resolve="getSimulationTrace" />
+                  <ref role="1Pybhc" to="mc3u:2xeYpNCxAqa" resolve="SimulationRegistry" />
                   <node concept="pncrf" id="6Kf5KB6UjmK" role="37wK5m" />
                 </node>
               </node>
@@ -1007,6 +1008,29 @@
     <ref role="1XX52x" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
     <node concept="3EZMnI" id="7Je984P99QK" role="2wV5jI">
       <property role="S$Qs1" value="true" />
+      <node concept="3EZMnI" id="1EKbsQRcdNd" role="3EZMnx">
+        <node concept="VPM3Z" id="1EKbsQRcdNe" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="PMmxH" id="1EKbsQRcdNf" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:6Kf5KB6TZVE" resolve="SimulationEntryPoint" />
+        </node>
+        <node concept="2iRfu4" id="1EKbsQRcdNg" role="2iSdaV" />
+        <node concept="pkWqt" id="1EKbsQRcdNh" role="pqm2j">
+          <node concept="3clFbS" id="1EKbsQRcdNi" role="2VODD2">
+            <node concept="3clFbF" id="1EKbsQRcdNj" role="3cqZAp">
+              <node concept="3y3z36" id="1EKbsQRcdNk" role="3clFbG">
+                <node concept="10Nm6u" id="1EKbsQRcdNl" role="3uHU7w" />
+                <node concept="2YIFZM" id="1EKbsQRcdNm" role="3uHU7B">
+                  <ref role="37wK5l" to="mc3u:2xeYpNCxElA" resolve="getSimulationTrace" />
+                  <ref role="1Pybhc" to="mc3u:2xeYpNCxAqa" resolve="SimulationRegistry" />
+                  <node concept="pncrf" id="1EKbsQRcdNn" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3EZMnI" id="7RhjhI7C1vx" role="3EZMnx">
         <node concept="3F0ifn" id="7RhjhI7C1vy" role="3EZMnx">
           <property role="3F0ifm" value="assembly" />
@@ -1471,6 +1495,11 @@
                 <ref role="37wK5l" node="7RhjhI7EJNo" resolve="computeEdgeTargetPortId" />
                 <node concept="37u81S" id="1NcemxUKR$t" role="37wK5m" />
               </node>
+            </node>
+          </node>
+          <node concept="238au4" id="1EKbsQRarKk" role="3kqczz">
+            <node concept="PMmxH" id="1EKbsQRarTD" role="2wV5jI">
+              <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
             </node>
           </node>
         </node>

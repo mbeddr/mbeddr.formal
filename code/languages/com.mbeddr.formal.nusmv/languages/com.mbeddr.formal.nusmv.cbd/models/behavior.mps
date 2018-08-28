@@ -6,6 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" implicit="true" />
   </imports>
   <registry>
@@ -16,7 +18,11 @@
         <child id="1225194240801" name="constructor" index="13h7CW" />
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
-      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz" />
+      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <property id="1225194472834" name="isAbstract" index="13i0iv" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
+      </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -64,6 +70,16 @@
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
+      <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
+        <reference id="1240170836027" name="enum" index="2ZWj4r" />
+      </concept>
+      <concept id="1240930118027" name="jetbrains.mps.lang.smodel.structure.SEnumOperationInvocation" flags="nn" index="3HcIyF">
+        <reference id="1240930118028" name="enumDeclaration" index="3HcIyG" />
+        <child id="1240930317927" name="operation" index="3Hdvt7" />
+      </concept>
+      <concept id="1240930444945" name="jetbrains.mps.lang.smodel.structure.SEnum_MemberOperation" flags="ng" index="3HdYuL">
+        <reference id="1240930444946" name="member" index="3HdYuM" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -148,6 +164,60 @@
     </node>
     <node concept="13hLZK" id="7RhjhI7_2bG" role="13h7CW">
       <node concept="3clFbS" id="7RhjhI7_2bH" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1EKbsQRcWU6">
+    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <ref role="13h7C2" to="vzqj:7RhjhI7$lgV" resolve="Connection" />
+    <node concept="13hLZK" id="1EKbsQRcWU7" role="13h7CW">
+      <node concept="3clFbS" id="1EKbsQRcWU8" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1EKbsQRcWUh" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSimulationValuePosition" />
+      <ref role="13i0hy" to="w873:5_V$TJxAHB$" resolve="getSimulationValuePosition" />
+      <node concept="3Tm1VV" id="1EKbsQRcWUi" role="1B3o_S" />
+      <node concept="3clFbS" id="1EKbsQRcWUl" role="3clF47">
+        <node concept="3clFbF" id="1EKbsQRcWUD" role="3cqZAp">
+          <node concept="3HcIyF" id="1EKbsQRcWUB" role="3clFbG">
+            <ref role="3HcIyG" to="b19z:5_V$TJxAHB2" resolve="SIMULATION_VALUE_POSITION" />
+            <node concept="3HdYuL" id="1EKbsQRcWVd" role="3Hdvt7">
+              <ref role="3HdYuM" to="b19z:5_V$TJxAHB9" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ZThk1" id="1EKbsQRcWUm" role="3clF45">
+        <ref role="2ZWj4r" to="b19z:5_V$TJxAHB2" resolve="SIMULATION_VALUE_POSITION" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1EKbsQRpiyP">
+    <property role="3GE5qa" value="cbd.interface" />
+    <ref role="13h7C2" to="vzqj:7RhjhI7zUWm" resolve="Port" />
+    <node concept="13hLZK" id="1EKbsQRpiyQ" role="13h7CW">
+      <node concept="3clFbS" id="1EKbsQRpiyR" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1EKbsQRpiz0" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSimulationValuePosition" />
+      <ref role="13i0hy" to="w873:5_V$TJxAHB$" resolve="getSimulationValuePosition" />
+      <node concept="3Tm1VV" id="1EKbsQRpiz1" role="1B3o_S" />
+      <node concept="3clFbS" id="1EKbsQRpiz4" role="3clF47">
+        <node concept="3clFbF" id="1EKbsQRpizo" role="3cqZAp">
+          <node concept="3HcIyF" id="1EKbsQRpizm" role="3clFbG">
+            <ref role="3HcIyG" to="b19z:5_V$TJxAHB2" resolve="SIMULATION_VALUE_POSITION" />
+            <node concept="3HdYuL" id="1EKbsQRpizW" role="3Hdvt7">
+              <ref role="3HdYuM" to="b19z:5_V$TJxAHB9" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ZThk1" id="1EKbsQRpiz5" role="3clF45">
+        <ref role="2ZWj4r" to="b19z:5_V$TJxAHB2" resolve="SIMULATION_VALUE_POSITION" />
+      </node>
     </node>
   </node>
 </model>

@@ -23,6 +23,7 @@
     <import index="9gw6" ref="r:e99b8864-6746-4403-b01e-3099fee48338(com.mbeddr.formal.nusmv.cbd.pluginSolution.analyzer)" />
     <import index="8js5" ref="r:896eeadf-a850-400e-b516-f92dfb5b5cd9(com.mbeddr.formal.base.pluginSolution.plugin)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
+    <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -236,6 +237,24 @@
               <node concept="liA8E" id="7mSH3WncNkj" role="2OqNvi">
                 <ref role="37wK5l" to="z1c4:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2QUcAU24uH9" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24uIe" role="3clFbG">
+            <ref role="37wK5l" to="mc3u:2QUcAU24h32" resolve="cleanCurrentValuesAnnotation" />
+            <ref role="1Pybhc" to="mc3u:2QUcAU24gYt" resolve="SimulationUtils" />
+            <node concept="2OqwBi" id="2QUcAU24AV3" role="37wK5m">
+              <node concept="2OqwBi" id="1EKbsQRd04N" role="2Oq$k0">
+                <node concept="2WthIp" id="2QUcAU24_Ne" role="2Oq$k0" />
+                <node concept="3gHZIF" id="1EKbsQRd0kS" role="2OqNvi">
+                  <ref role="2WH_rO" node="6NmtaR244nK" resolve="ca" />
+                </node>
+              </node>
+              <node concept="I4A8Y" id="2QUcAU24BpU" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="2QUcAU24ByV" role="37wK5m">
+              <ref role="3cqZAo" node="7mSH3WncNkg" resolve="repo" />
             </node>
           </node>
         </node>

@@ -183,6 +183,9 @@
     <node concept="PrWs8" id="7RhjhI7zUWn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="1EKbsQRpiyJ" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
+    </node>
     <node concept="1TJgyj" id="7RhjhI7zUWr" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507315483" />
       <property role="20lmBu" value="aggregation" />
@@ -223,7 +226,7 @@
     <node concept="PrWs8" id="7RhjhI7I09T" role="PzmwI">
       <ref role="PrY4T" to="3whv:7RhjhI7HWfF" resolve="IArchitectureLike" />
     </node>
-    <node concept="PrWs8" id="1EKbsQR4MVb" role="PzmwI">
+    <node concept="PrWs8" id="1EKbsQRcbiw" role="PzmwI">
       <ref role="PrY4T" to="b19z:6Kf5KB6TZVg" resolve="ISimulationEntryPoint" />
     </node>
   </node>
@@ -248,6 +251,9 @@
     </node>
     <node concept="PrWs8" id="7RhjhI7$E8j" role="PzmwI">
       <ref role="PrY4T" node="7RhjhI7$E7w" resolve="IComponentAssemblyBodyContent" />
+    </node>
+    <node concept="PrWs8" id="1EKbsQRcWU0" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
     </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7$lgW">
