@@ -603,27 +603,37 @@
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                   <node concept="3cpWs3" id="49yFphTYerM" role="37wK5m">
                     <node concept="3cpWs3" id="49yFphTYerY" role="3uHU7B">
-                      <node concept="3cpWs3" id="49yFphTYes7" role="3uHU7B">
-                        <node concept="3cpWs3" id="49yFphTYesd" role="3uHU7B">
-                          <node concept="3cpWs3" id="49yFphTYesi" role="3uHU7B">
-                            <node concept="3cpWs3" id="49yFphTYesm" role="3uHU7B">
-                              <node concept="Xl_RD" id="49yFphTYesq" role="3uHU7B">
-                                <property role="Xl_RC" value="NodesFinderFacade - all nodes: " />
-                              </node>
-                              <node concept="37vLTw" id="1NcemxVJSW9" role="3uHU7w">
-                                <ref role="3cqZAo" node="49yFphTYeok" resolve="fullyQualifiedFileName" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="49yFphTYesn" role="3uHU7w">
-                              <property role="Xl_RC" value=" " />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="1NcemxVLVzY" role="3uHU7w">
-                            <ref role="3cqZAo" node="1NcemxVKw_x" resolve="unitName" />
-                          </node>
-                        </node>
+                      <node concept="3cpWs3" id="7gOJ_oRrzAs" role="3uHU7B">
                         <node concept="Xl_RD" id="49yFphTYese" role="3uHU7w">
-                          <property role="Xl_RC" value=" " />
+                          <property role="Xl_RC" value="' &gt;&gt;&gt; line: '" />
+                        </node>
+                        <node concept="3cpWs3" id="7gOJ_oRr_HT" role="3uHU7B">
+                          <node concept="37vLTw" id="7gOJ_oRr_WA" role="3uHU7w">
+                            <ref role="3cqZAo" node="1NcemxVLQnO" resolve="fileName" />
+                          </node>
+                          <node concept="3cpWs3" id="49yFphTYes7" role="3uHU7B">
+                            <node concept="3cpWs3" id="49yFphTYesd" role="3uHU7B">
+                              <node concept="3cpWs3" id="49yFphTYesi" role="3uHU7B">
+                                <node concept="3cpWs3" id="49yFphTYesm" role="3uHU7B">
+                                  <node concept="Xl_RD" id="49yFphTYesq" role="3uHU7B">
+                                    <property role="Xl_RC" value="NodesFinderFacade - all nodes -- fullyQualifiedName: '" />
+                                  </node>
+                                  <node concept="37vLTw" id="1NcemxVJSW9" role="3uHU7w">
+                                    <ref role="3cqZAo" node="49yFphTYeok" resolve="fullyQualifiedFileName" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="49yFphTYesn" role="3uHU7w">
+                                  <property role="Xl_RC" value="' &gt;&gt;&gt; unit name: '" />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="1NcemxVLVzY" role="3uHU7w">
+                                <ref role="3cqZAo" node="1NcemxVKw_x" resolve="unitName" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="7gOJ_oRrzOT" role="3uHU7w">
+                              <property role="Xl_RC" value="' &gt;&gt;&gt; fileName: '" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                       <node concept="37vLTw" id="49yFphTYes8" role="3uHU7w">
@@ -631,7 +641,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="49yFphTYerZ" role="3uHU7w">
-                      <property role="Xl_RC" value="\n\t\t " />
+                      <property role="Xl_RC" value="'\n\t\t " />
                     </node>
                   </node>
                 </node>
