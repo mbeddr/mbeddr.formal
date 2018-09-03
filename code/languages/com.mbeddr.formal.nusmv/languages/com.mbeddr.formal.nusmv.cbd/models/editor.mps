@@ -453,6 +453,9 @@
     <property role="3GE5qa" value="contracts" />
     <ref role="1XX52x" to="vzqj:7RhjhI7cKjw" resolve="Precondition" />
     <node concept="3EZMnI" id="7RhjhI7cKjH" role="2wV5jI">
+      <node concept="PMmxH" id="5a54bO_HNeW" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:5a54bO_HoQt" resolve="AnalysisResultBar" />
+      </node>
       <node concept="3F0ifn" id="7RhjhI7cKjR" role="3EZMnx">
         <property role="3F0ifm" value="pre" />
         <node concept="VechU" id="7RhjhI7dvJZ" role="3F10Kt">
@@ -553,6 +556,9 @@
     <property role="3GE5qa" value="contracts" />
     <ref role="1XX52x" to="vzqj:7RhjhI7d5N_" resolve="Postcondition" />
     <node concept="3EZMnI" id="7RhjhI7d5NO" role="2wV5jI">
+      <node concept="PMmxH" id="5a54bO_HLUQ" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:5a54bO_HoQt" resolve="AnalysisResultBar" />
+      </node>
       <node concept="3F0ifn" id="7RhjhI7d5NP" role="3EZMnx">
         <property role="3F0ifm" value="post" />
         <node concept="VechU" id="7RhjhI7dwLg" role="3F10Kt">

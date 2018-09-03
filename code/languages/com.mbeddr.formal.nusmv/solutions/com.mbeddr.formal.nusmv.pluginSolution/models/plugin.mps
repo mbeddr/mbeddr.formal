@@ -788,6 +788,15 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5a54bO_IyKn" role="3cqZAp">
+          <node concept="2YIFZM" id="5a54bO_IyPD" role="3clFbG">
+            <ref role="37wK5l" to="c9r8:5a54bO_Hemt" resolve="addResult" />
+            <ref role="1Pybhc" to="c9r8:5a54bO_HcYB" resolve="AnalysesResultsCache" />
+            <node concept="37vLTw" id="5a54bO_IyZX" role="37wK5m">
+              <ref role="3cqZAo" node="7mSH3Wn3WqU" resolve="result" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="7mSH3Wn3WqY" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -969,6 +978,12 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5a54bO_Izno" role="3cqZAp">
+          <node concept="2YIFZM" id="5a54bO_IzrU" role="3clFbG">
+            <ref role="37wK5l" to="c9r8:5a54bO_HmVY" resolve="clearCache" />
+            <ref role="1Pybhc" to="c9r8:5a54bO_HcYB" resolve="AnalysesResultsCache" />
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="7mSH3Wn3Wra" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -979,7 +994,7 @@
   <node concept="33ghlw" id="3onExzPnGul">
     <property role="3GE5qa" value="diagrams" />
     <property role="TrG5h" value="ArchitectureDiagramSwitcher" />
-    <ref role="2hhq6$" to="3whv:7RhjhI7HWfF" resolve="IArchitectureAsDiagram" />
+    <ref role="2hhq6$" to="3whv:7RhjhI7HWfF" resolve="IArchitectureLike" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="Architecture Diagram View" />
       <ref role="33glcW" to="wfnd:7mSH3WnI4q7" resolve="Architecture_Graphical" />
