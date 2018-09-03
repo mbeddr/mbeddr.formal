@@ -99,6 +99,10 @@
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -170,6 +174,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
@@ -709,8 +714,20 @@
           </node>
         </node>
         <node concept="3clFbF" id="7mSH3Wn4O3B" role="3cqZAp">
-          <node concept="37vLTw" id="7mSH3Wn4O3_" role="3clFbG">
-            <ref role="3cqZAo" node="7mSH3Wn4Ed$" resolve="res" />
+          <node concept="10QFUN" id="5a54bO_K6RJ" role="3clFbG">
+            <node concept="10QFUN" id="5a54bO_K6RF" role="10QFUP">
+              <node concept="37vLTw" id="5a54bO_K6RG" role="10QFUP">
+                <ref role="3cqZAo" node="1NcemxVHCUu" resolve="liftedRes" />
+              </node>
+              <node concept="_YKpA" id="5a54bO_K6RH" role="10QFUM">
+                <node concept="3qTvmN" id="5a54bO_K6RI" role="_ZDj9" />
+              </node>
+            </node>
+            <node concept="_YKpA" id="5a54bO_K78l" role="10QFUM">
+              <node concept="3uibUv" id="5a54bO_K7tg" role="_ZDj9">
+                <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
