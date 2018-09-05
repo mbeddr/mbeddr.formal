@@ -1112,6 +1112,10 @@
     <node concept="13hLZK" id="2RmPJMxuQ5c" role="13h7CW">
       <node concept="3clFbS" id="2RmPJMxuQ5d" role="2VODD2" />
     </node>
+  </node>
+  <node concept="13h7C7" id="2RmPJMxBubP">
+    <property role="3GE5qa" value="expressions.temporal" />
+    <ref role="13h7C2" to="gioj:6WmpcHMQ_RC" resolve="BinaryTemporalExpression" />
     <node concept="13i0hz" id="2RmPJMxuQ5m" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
@@ -1166,6 +1170,9 @@
         </node>
       </node>
       <node concept="17QB3L" id="2RmPJMxuQ5z" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="2RmPJMxBubQ" role="13h7CW">
+      <node concept="3clFbS" id="2RmPJMxBubR" role="2VODD2" />
     </node>
   </node>
 </model>
