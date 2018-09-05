@@ -1273,6 +1273,9 @@
     <property role="3GE5qa" value="spec" />
     <ref role="1XX52x" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
     <node concept="3EZMnI" id="7mSH3Wn9yWY" role="2wV5jI">
+      <node concept="PMmxH" id="2RmPJMxwRmt" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:5a54bO_HoQt" resolve="AnalysisResultBar" />
+      </node>
       <node concept="PMmxH" id="7V1Bqz6Uhgx" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
