@@ -15,5 +15,6 @@
   <exported-language name="0da073b7-14da-42e6-8db1-df42c803e079(com.mbeddr.formal.nusmv.verification_cases)" />
   <exported-language name="85d37fe5-2c7e-4ea1-ae78-08007614c543(com.mbeddr.formal.nusmv.importer)" />
   <exported-language name="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" />
+  <exported-language name="58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)" />
 </dev-kit>
 
