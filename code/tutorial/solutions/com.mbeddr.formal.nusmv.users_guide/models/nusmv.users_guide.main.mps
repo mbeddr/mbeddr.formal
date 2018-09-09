@@ -11,6 +11,7 @@
     <import index="9pd" ref="r:272c7e50-c3af-4365-bda8-43f746c4aee3(_010_features._100_nusmv_operators_panels)" />
     <import index="s0k6" ref="r:7c8a192c-7615-4a1b-a608-a18a83365e6b(_010_features._070_nusmv_verification_cases)" />
     <import index="gma2" ref="r:9373994a-6064-48c9-8736-0c6a946eaa23(_010_features._500_nusmv_importer)" />
+    <import index="2ufg" ref="r:d37bd9b7-40a1-410a-8148-61e2d84bead3(_010_features._300_nusmv_cbd)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -1355,6 +1356,117 @@
       <node concept="1_1sxE" id="2H74AM1F3Qy" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="2RmPJMxI18G">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_300_component_based_design" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0VNX" id="2RmPJMxI18H" role="1_0VJ0">
+      <property role="TrG5h" value="cbd" />
+      <property role="1_0VJr" value="Components-based Design" />
+      <node concept="1_0LV8" id="2RmPJMxI18K" role="1_0VJ0">
+        <node concept="19SGf9" id="2RmPJMxI18L" role="1_0LWR">
+          <node concept="19SUe$" id="2RmPJMxI18M" role="19SJt6">
+            <property role="19SUeA" value="FASTEN supports the components-based design methodology by allowing to define " />
+          </node>
+          <node concept="28N2ik" id="2RmPJMxI18U" role="19SJt6">
+            <node concept="19SGf9" id="2RmPJMxI18V" role="$DsGW">
+              <node concept="19SUe$" id="2RmPJMxI18W" role="19SJt6">
+                <property role="19SUeA" value="component interfaces" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2RmPJMxI18X" role="19SJt6">
+            <property role="19SUeA" value=" and " />
+          </node>
+          <node concept="28N2ik" id="2RmPJMxI198" role="19SJt6">
+            <node concept="19SGf9" id="2RmPJMxI199" role="$DsGW">
+              <node concept="19SUe$" id="2RmPJMxI19a" role="19SJt6">
+                <property role="19SUeA" value="component assemblies" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="2RmPJMxI19b" role="19SJt6">
+            <property role="19SUeA" value=". Component assemblies (aka. composite components) are special kinds of interfaces which contain wired children - a child can be an interface or an assembly. The behavior of a component is specified with the help of contracts (pre- and postconditions) expressed using LTL.   " />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="2RmPJMxI2N0" role="1_0VJ0">
+        <property role="TrG5h" value="cbd_diagrammatic_notation" />
+        <ref role="1wz7Nk" to="2ufg:GZcvICZm9$" resolve="TLCSystem" />
+        <node concept="2Sb_l4" id="2RmPJMxI2NQ" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_cbd_diagramatic_notation.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2RmPJMxI2N4" role="2SaI5j">
+          <node concept="19SGf9" id="2RmPJMxI2N5" role="OjmMu">
+            <node concept="19SUe$" id="2RmPJMxI2N6" role="19SJt6">
+              <property role="19SUeA" value="Example of an architecture defined by interfaces and assemblies. Contracts are annotated and can be checked." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2RmPJMxI2N8" role="3SHJ_F" />
+      </node>
+      <node concept="1_0LV8" id="2RmPJMxI2QW" role="1_0VJ0">
+        <node concept="19SGf9" id="2RmPJMxI2QX" role="1_0LWR">
+          <node concept="19SUe$" id="2RmPJMxI2QY" role="19SJt6">
+            <property role="19SUeA" value="Once contracts are defined, FASTEN can perform the following compatibility checks:" />
+          </node>
+        </node>
+      </node>
+      <node concept="3X6WG5" id="2RmPJMxI1cO" role="1_0VJ0">
+        <node concept="3X6T9g" id="2RmPJMxI2PL" role="3Xp5NH">
+          <node concept="OjmMv" id="2RmPJMxI2PM" role="3X6T9h">
+            <node concept="19SGf9" id="2RmPJMxI2PN" role="OjmMu">
+              <node concept="19SUe$" id="2RmPJMxI2PO" role="19SJt6">
+                <property role="19SUeA" value="Inside a level of the architecture, check that siblings are compatible - i.e. that the preconditions of a component A are fulfilled by the sum of the postconditions of components connected to A and which provide inputs to A." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2RmPJMxI1cP" role="3Xp5NH">
+          <node concept="OjmMv" id="2RmPJMxI1cQ" role="3X6T9h">
+            <node concept="19SGf9" id="2RmPJMxI1cR" role="OjmMu">
+              <node concept="19SUe$" id="2RmPJMxI1cS" role="19SJt6">
+                <property role="19SUeA" value="In a parent-child decomposition, when the child component receives data from the parent, check that the preconditions of parent fulfill the ones of the child." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="2RmPJMxI2RU" role="3Xp5NH">
+          <node concept="OjmMv" id="2RmPJMxI2RV" role="3X6T9h">
+            <node concept="19SGf9" id="2RmPJMxI2RW" role="OjmMu">
+              <node concept="19SUe$" id="2RmPJMxI2RX" role="19SJt6">
+                <property role="19SUeA" value="In a parent-child decomposition, when the parent component receives data from the child, check that the postconditions of child fulfill the ones of the parent" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2RmPJMxI2Sn" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="2SaynC" id="2RmPJMxI2VL" role="1_0VJ0">
+        <property role="TrG5h" value="cbd_simulation" />
+        <property role="2Sbq$t" value="true" />
+        <ref role="1wz7Nk" to="2ufg:GZcvICZm9$" resolve="TLCSystem" />
+        <node concept="2Sb_l4" id="2RmPJMxI2VM" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_cbd_ag_analysis_run_and_simulation.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="2RmPJMxI2VN" role="2SaI5j">
+          <node concept="19SGf9" id="2RmPJMxI2VO" role="OjmMu">
+            <node concept="19SUe$" id="2RmPJMxI2VP" role="19SJt6">
+              <property role="19SUeA" value="Example of the verification of compatibility of contracts - the Assume/Guarantee (AG) analysis. Analyses results are shown and the counterexamples can be simulated." />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2RmPJMxI2VQ" role="3SHJ_F" />
+      </node>
+    </node>
+    <node concept="1_1sxE" id="2RmPJMxI19w" role="1_0VJ0">
+      <property role="TrG5h" value="empty_-1" />
     </node>
   </node>
 </model>
