@@ -616,8 +616,8 @@
             <node concept="3clFbF" id="5uqRFp8YJDu" role="3cqZAp">
               <node concept="2OqwBi" id="5uqRFp8YLou" role="3clFbG">
                 <node concept="2YIFZM" id="5uqRFp8YLeF" role="2Oq$k0">
-                  <ref role="1Pybhc" node="505H3_WY3P0" resolve="AnalyzerMPSRunner" />
                   <ref role="37wK5l" node="5uqRFp8YK2K" resolve="getProgressMonitor" />
+                  <ref role="1Pybhc" node="505H3_WY3P0" resolve="AnalyzerMPSRunner" />
                   <node concept="37vLTw" id="5uqRFp8YLhs" role="37wK5m">
                     <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                   </node>
