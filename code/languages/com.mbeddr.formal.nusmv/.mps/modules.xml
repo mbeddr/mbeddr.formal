@@ -27,6 +27,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.cbd.pluginSolution/com.mbeddr.formal.nusmv.cbd.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.importer.rt/com.mbeddr.formal.nusmv.importer.rt.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.pluginSolution/com.mbeddr.formal.rcp.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.formal.nusmv.sandbox/com.mbeddr.formal.nusmv.sandbox.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nusmv/test.mbeddr.formal.nusmv.msd" folder="tests" />
     </projectModules>
