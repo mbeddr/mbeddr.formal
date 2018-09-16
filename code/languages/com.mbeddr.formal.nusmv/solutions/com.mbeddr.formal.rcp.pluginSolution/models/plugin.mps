@@ -24,7 +24,7 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -57,6 +57,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="1204991940915" name="caption" index="2f7twF" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -380,14 +381,15 @@
   </node>
   <node concept="tC5Ba" id="5uW1px6ni3m">
     <property role="TrG5h" value="SolutionActionsGroup" />
+    <property role="2f7twF" value="New" />
     <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
       <node concept="tCFHf" id="5tRIc6mlLia" role="ftvYc">
         <ref role="tCJdB" node="5tRIc6mkOfA" resolve="NewFASTENModel" />
       </node>
     </node>
-    <node concept="tT9cl" id="5uW1px6ni3q" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4Jd1" resolve="SolutionActions" />
-      <ref role="2f8Tey" to="tprs:hyalGNA" resolve="solutionNew" />
+    <node concept="tT9cl" id="7Wl2irMPeJi" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4Jpv" resolve="SolutionNewActions" />
+      <ref role="2f8Tey" to="tprs:1bRM4HyGTmR" resolve="newModel" />
     </node>
   </node>
 </model>
