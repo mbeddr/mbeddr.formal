@@ -1008,6 +1008,19 @@
             </node>
           </node>
         </node>
+        <node concept="3vlDli" id="57ROGn8RV5H" role="3cqZAp">
+          <node concept="Xl_RD" id="57ROGn8RV7h" role="3tpDZB">
+            <property role="Xl_RC" value="tests_running_tests__fail_in_second_step_001" />
+          </node>
+          <node concept="2OqwBi" id="57ROGn8RVec" role="3tpDZA">
+            <node concept="37vLTw" id="57ROGn8RV7Q" role="2Oq$k0">
+              <ref role="3cqZAo" node="1gJVC85Lt93" resolve="res" />
+            </node>
+            <node concept="liA8E" id="57ROGn8RV$5" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1LZb2c" id="4IuDkoKGIYz" role="1SL9yI">
@@ -1039,6 +1052,19 @@
             </node>
             <node concept="liA8E" id="4IuDkoKGIYJ" role="2OqNvi">
               <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="57ROGn8RV_X" role="3cqZAp">
+          <node concept="Xl_RD" id="57ROGn8RV_Y" role="3tpDZB">
+            <property role="Xl_RC" value="tests_running_tests_with_nondeterminism_001" />
+          </node>
+          <node concept="2OqwBi" id="57ROGn8RV_Z" role="3tpDZA">
+            <node concept="37vLTw" id="57ROGn8RVA0" role="2Oq$k0">
+              <ref role="3cqZAo" node="4IuDkoKGIYB" resolve="res" />
+            </node>
+            <node concept="liA8E" id="57ROGn8RVA1" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
             </node>
           </node>
         </node>
