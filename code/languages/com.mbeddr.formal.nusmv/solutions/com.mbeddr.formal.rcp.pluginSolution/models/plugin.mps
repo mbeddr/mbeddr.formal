@@ -7,21 +7,12 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
-    <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="1" />
-    <use id="a4007360-b8a6-4b5b-a648-1c43f0a1cf5d" name="com.mbeddr.mpsutil.resources" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="fyhk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps(MPS.Platform/)" />
-    <import index="9ti4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.extensions(MPS.IDEA/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="w88" ref="r:90fa2771-55a5-4174-b12a-f5413c5a876c(jetbrains.mps.ide.devkit.actions)" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
@@ -193,7 +184,7 @@
   </registry>
   <node concept="2DaZZR" id="6iM0fX1N45m" />
   <node concept="sE7Ow" id="5tRIc6mkOfA">
-    <property role="TrG5h" value="NewFASTENModel" />
+    <property role="TrG5h" value="FASTENNewModel" />
     <property role="2uzpH1" value="New NuSMV Model" />
     <node concept="1DS2jV" id="5tRIc6mmlHg" role="1NuT2Z">
       <property role="TrG5h" value="module" />
@@ -380,11 +371,11 @@
     </node>
   </node>
   <node concept="tC5Ba" id="5uW1px6ni3m">
-    <property role="TrG5h" value="SolutionActionsGroup" />
+    <property role="TrG5h" value="FASTENSolutionActionsGroup" />
     <property role="2f7twF" value="New" />
     <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
       <node concept="tCFHf" id="5tRIc6mlLia" role="ftvYc">
-        <ref role="tCJdB" node="5tRIc6mkOfA" resolve="NewFASTENModel" />
+        <ref role="tCJdB" node="5tRIc6mkOfA" resolve="FASTENNewModel" />
       </node>
     </node>
     <node concept="tT9cl" id="7Wl2irMPeJi" role="2f5YQi">

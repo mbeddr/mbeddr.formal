@@ -3122,12 +3122,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="Vtw49fIEqA" role="3bR37C">
-          <node concept="3bR9La" id="Vtw49fIEqB" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:5sovPIfS$nd" resolve="jetbrains.mps.ide.mpsdevkit" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="Vtw49fIEqC" role="3bR37C">
           <node concept="3bR9La" id="Vtw49fIEqD" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -3150,6 +3144,25 @@
           <node concept="3bR9La" id="Vtw49fIEqJ" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="57ROGn8QshC" role="3bR31x">
+          <node concept="3LXTmp" id="57ROGn8QshD" role="3rtmxm">
+            <node concept="3qWCbU" id="57ROGn8QshE" role="3LXTna">
+              <property role="3qWCbO" value="com/mbeddr/formal/rcp/pluginSolution/plugin/*.png" />
+            </node>
+            <node concept="398BVA" id="57ROGn8QshF" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="code" />
+              <node concept="2Ry0Ak" id="57ROGn8QshG" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="57ROGn8QshH" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.rcp.pluginSolution" />
+                  <node concept="2Ry0Ak" id="57ROGn8QshI" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
