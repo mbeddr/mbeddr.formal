@@ -404,5 +404,13 @@
     <property role="R4oN_" value="unary minus" />
     <ref role="1TJDcQ" node="1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
+  <node concept="1TIwiD" id="57ROGn90yFJ">
+    <property role="EcuMT" value="5906421183242447599" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="IffExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 

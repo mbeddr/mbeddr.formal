@@ -1603,5 +1603,13 @@
     <property role="R4oN_" value="type place-holder for untyped elements" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
   </node>
+  <node concept="1TIwiD" id="57ROGn90rl0">
+    <property role="EcuMT" value="5906421183242417472" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="IffExpression" />
+    <property role="34LRSv" value="&lt;-&gt;" />
+    <property role="R4oN_" value="if and only if" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 
