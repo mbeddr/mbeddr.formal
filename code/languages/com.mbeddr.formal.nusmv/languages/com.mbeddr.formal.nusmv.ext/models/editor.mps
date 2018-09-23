@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="6z8w" ref="r:d4c22a7f-7332-4377-bba1-18afaeea0257(com.mbeddr.formal.nusmv.ext.structure)" />
+    <import index="3fe0" ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -19,6 +20,9 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="7667276221847570194" name="jetbrains.mps.lang.editor.structure.ParametersInformationStyleClassItem" flags="ln" index="2$oqgb">
+        <reference id="8863456892852949148" name="parametersInformation" index="Bvoe9" />
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -163,6 +167,9 @@
     <property role="3GE5qa" value="function_macro" />
     <ref role="1XX52x" to="6z8w:1gJVC85KmPN" resolve="FunctionMacroCall" />
     <node concept="3EZMnI" id="1gJVC85KmQi" role="2wV5jI">
+      <node concept="2$oqgb" id="5bMrXoEyj3y" role="3F10Kt">
+        <ref role="Bvoe9" to="3fe0:5bMrXoEyj8A" resolve="ICallLikeParameterHint" />
+      </node>
       <node concept="1iCGBv" id="1gJVC85KmQx" role="3EZMnx">
         <ref role="1NtTu8" to="6z8w:1gJVC85KmPO" resolve="func" />
         <node concept="1sVBvm" id="1gJVC85KmQz" role="1sWHZn">
