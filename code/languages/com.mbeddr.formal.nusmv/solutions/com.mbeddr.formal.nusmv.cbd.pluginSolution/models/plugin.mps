@@ -350,7 +350,7 @@
     </node>
   </node>
   <node concept="tC5Ba" id="6NmtaR24728">
-    <property role="TrG5h" value="NuSMVGroup" />
+    <property role="TrG5h" value="NuSMVCBDGroup" />
     <node concept="ftmFs" id="6NmtaR2472a" role="ftER_">
       <node concept="tCFHf" id="7RhjhI7y0KX" role="ftvYc">
         <ref role="tCJdB" node="6NmtaR23THu" resolve="CheckAGWithNUSMV" />

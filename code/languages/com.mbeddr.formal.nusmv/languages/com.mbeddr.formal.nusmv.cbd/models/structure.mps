@@ -71,12 +71,8 @@
         <ref role="trN6q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
       </node>
     </node>
-    <node concept="1TJgyj" id="7RhjhI7co8Z" role="1TKVEi">
-      <property role="IQ2ns" value="9066112305501143615" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contracts" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7RhjhI7co2N" resolve="IContract" />
+    <node concept="PrWs8" id="15PPQjZhmdP" role="PzmwI">
+      <ref role="PrY4T" node="15PPQjZhlYF" resolve="IContractsContainer" />
     </node>
   </node>
   <node concept="PlHQZ" id="7RhjhI7co2N">
@@ -159,13 +155,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7RhjhI7zUXc" resolve="OutputPort" />
     </node>
-    <node concept="1TJgyj" id="7RhjhI7zUZY" role="1TKVEi">
-      <property role="IQ2ns" value="9066112305507315710" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contracts" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7RhjhI7co2N" resolve="IContract" />
-    </node>
     <node concept="PrWs8" id="7RhjhI7$9Bv" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
     </node>
@@ -174,6 +163,9 @@
     </node>
     <node concept="PrWs8" id="2RmPJMxEcD9" role="PzmwI">
       <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="15PPQjZhlYG" role="PzmwI">
+      <ref role="PrY4T" node="15PPQjZhlYF" resolve="IContractsContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7zUWm">
@@ -219,12 +211,29 @@
     <property role="TrG5h" value="ComponentAssembly" />
     <property role="34LRSv" value="assembly" />
     <ref role="1TJDcQ" node="7RhjhI7zUWi" resolve="ComponentInterface" />
+    <node concept="1TJgyi" id="15PPQjZe9gT" role="1TKVEl">
+      <property role="IQ2nx" value="1258148499698521145" />
+      <property role="TrG5h" value="useBMC" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="15PPQjZe9gW" role="1TKVEl">
+      <property role="IQ2nx" value="1258148499698521148" />
+      <property role="TrG5h" value="bmcLen" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="7RhjhI7$E7F" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507508715" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7RhjhI7$E7w" resolve="IComponentAssemblyBodyContent" />
+    </node>
+    <node concept="1TJgyj" id="57ROGn8SsaT" role="1TKVEi">
+      <property role="IQ2ns" value="5906421183240323769" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="interfaceRef" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="7RhjhI7$li$" resolve="ComponentInterfaceRef" />
     </node>
     <node concept="PrWs8" id="7RhjhI7I09T" role="PzmwI">
       <ref role="PrY4T" to="3whv:7RhjhI7HWfF" resolve="IArchitectureLike" />
@@ -359,6 +368,18 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7RhjhI7$E7y" role="PzmwI">
       <ref role="PrY4T" node="7RhjhI7$E7w" resolve="IComponentAssemblyBodyContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="15PPQjZhlYF">
+    <property role="EcuMT" value="1258148499699359659" />
+    <property role="3GE5qa" value="contracts" />
+    <property role="TrG5h" value="IContractsContainer" />
+    <node concept="1TJgyj" id="7RhjhI7zUZY" role="1TKVEi">
+      <property role="IQ2ns" value="9066112305507315710" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contracts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7RhjhI7co2N" resolve="IContract" />
     </node>
   </node>
 </model>
