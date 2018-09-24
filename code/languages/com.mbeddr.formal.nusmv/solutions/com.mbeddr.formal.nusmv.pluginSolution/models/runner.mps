@@ -1813,25 +1813,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2RmPJMxDJsR" role="3cqZAp">
-          <node concept="2OqwBi" id="2RmPJMxDJsO" role="3clFbG">
-            <node concept="10M0yZ" id="2RmPJMxDJsP" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-            </node>
-            <node concept="liA8E" id="2RmPJMxDJsQ" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="2RmPJMxDKra" role="37wK5m">
-                <node concept="37vLTw" id="2RmPJMxDKGJ" role="3uHU7w">
-                  <ref role="3cqZAo" to="2ocj:7F8$WoW5PEY" resolve="stepsNumber" />
-                </node>
-                <node concept="Xl_RD" id="2RmPJMxDJRc" role="3uHU7B">
-                  <property role="Xl_RC" value="-- stepsNum=" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="1ZsZb$iMFcY" role="3cqZAp">
           <node concept="3cpWsn" id="1ZsZb$iMFcZ" role="3cpWs9">
             <property role="TrG5h" value="smvFileName" />
@@ -6051,6 +6032,35 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="15PPQjZcVxi" role="jymVt" />
+    <node concept="3clFbW" id="15PPQjZcUQR" role="jymVt">
+      <node concept="37vLTG" id="15PPQjZcUQS" role="3clF46">
+        <property role="TrG5h" value="analyzedModel" />
+        <node concept="3Tqbb2" id="15PPQjZcUQT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="15PPQjZcUQW" role="3clF46">
+        <property role="TrG5h" value="tr" />
+        <node concept="3uibUv" id="15PPQjZcUQX" role="1tU5fm">
+          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="15PPQjZcUQY" role="3clF45" />
+      <node concept="3Tm1VV" id="15PPQjZcUQZ" role="1B3o_S" />
+      <node concept="3clFbS" id="15PPQjZcUR0" role="3clF47">
+        <node concept="XkiVB" id="15PPQjZcUR1" role="3cqZAp">
+          <ref role="37wK5l" node="6mm$FLYPy7H" resolve="NuSMVLiftedResult" />
+          <node concept="37vLTw" id="15PPQjZcUR2" role="37wK5m">
+            <ref role="3cqZAo" node="15PPQjZcUQS" resolve="analyzedModel" />
+          </node>
+          <node concept="37vLTw" id="15PPQjZcUR3" role="37wK5m">
+            <ref role="3cqZAo" node="15PPQjZcUQW" resolve="tr" />
+          </node>
+        </node>
+      </node>
+      <node concept="NWlO9" id="15PPQjZdbu4" role="lGtFl">
+        <property role="NWlVz" value="Runtime-error." />
       </node>
     </node>
     <node concept="2tJIrI" id="1EKbsQR8Mjc" role="jymVt" />

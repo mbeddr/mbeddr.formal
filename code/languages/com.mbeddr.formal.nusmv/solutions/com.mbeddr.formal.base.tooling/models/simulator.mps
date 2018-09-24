@@ -200,7 +200,6 @@
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
-      <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
       <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -1262,15 +1261,15 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2QUcAU24h35" role="3clF47">
-        <node concept="1QHqEO" id="6Kf5KB6Xq8Q" role="3cqZAp">
-          <node concept="1QHqEC" id="6Kf5KB6Xq8R" role="1QHqEI">
-            <node concept="3clFbS" id="6Kf5KB6Xq8S" role="1bW5cS">
-              <node concept="3clFbF" id="2QUcAU24Pxk" role="3cqZAp">
-                <node concept="2YIFZM" id="2QUcAU24PyJ" role="3clFbG">
-                  <ref role="37wK5l" node="2QUcAU24O0y" resolve="clearAllSimulationTraces" />
-                  <ref role="1Pybhc" node="2xeYpNCxAqa" resolve="SimulationRegistry" />
-                </node>
-              </node>
+        <node concept="3clFbF" id="2QUcAU24Pxk" role="3cqZAp">
+          <node concept="2YIFZM" id="2QUcAU24PyJ" role="3clFbG">
+            <ref role="37wK5l" node="2QUcAU24O0y" resolve="clearAllSimulationTraces" />
+            <ref role="1Pybhc" node="2xeYpNCxAqa" resolve="SimulationRegistry" />
+          </node>
+        </node>
+        <node concept="1QHqEF" id="15PPQjZiIEI" role="3cqZAp">
+          <node concept="1QHqEC" id="15PPQjZiIEK" role="1QHqEI">
+            <node concept="3clFbS" id="15PPQjZiIEM" role="1bW5cS">
               <node concept="3clFbF" id="6Kf5KB74eoZ" role="3cqZAp">
                 <node concept="2OqwBi" id="2xeYpNCzYSE" role="3clFbG">
                   <node concept="2OqwBi" id="2xeYpNCzYSF" role="2Oq$k0">
@@ -1303,7 +1302,7 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="7V1Bqz796gr" role="ukAjM">
+          <node concept="37vLTw" id="15PPQjZiIIU" role="ukAjM">
             <ref role="3cqZAo" node="2QUcAU24hio" resolve="repo" />
           </node>
         </node>
