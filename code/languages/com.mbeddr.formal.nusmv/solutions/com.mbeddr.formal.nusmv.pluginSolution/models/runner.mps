@@ -3593,6 +3593,18 @@
         <property role="Xl_RC" value="-&gt; State:" />
       </node>
     </node>
+    <node concept="2tJIrI" id="6xNJt7lBA0k" role="jymVt" />
+    <node concept="Wx3nA" id="6xNJt7lBBjw" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="BMC_SUCCESS_MESSAGE_PREFIX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6xNJt7lBALu" role="1B3o_S" />
+      <node concept="17QB3L" id="6xNJt7lBBiG" role="1tU5fm" />
+      <node concept="Xl_RD" id="6xNJt7lBBBM" role="33vP2m">
+        <property role="Xl_RC" value="all specs are true up to bound: " />
+      </node>
+    </node>
     <node concept="2tJIrI" id="1ZsZb$iRrJk" role="jymVt" />
     <node concept="2YIFZL" id="1ZsZb$iRrZ$" role="jymVt">
       <property role="TrG5h" value="liftResults" />
@@ -3951,8 +3963,8 @@
                         <node concept="37vLTw" id="4Hts7PYv9_g" role="3uHU7w">
                           <ref role="3cqZAo" node="4Hts7PYuGj9" resolve="reachedBound" />
                         </node>
-                        <node concept="Xl_RD" id="4Hts7PYuXDY" role="3uHU7B">
-                          <property role="Xl_RC" value="all specs are true up to bound: " />
+                        <node concept="37vLTw" id="6xNJt7lBBOp" role="3uHU7B">
+                          <ref role="3cqZAo" node="6xNJt7lBBjw" resolve="BMC_SUCCESS_MESSAGE_PREFIX" />
                         </node>
                       </node>
                       <node concept="3clFbT" id="4Hts7PYuYQC" role="37wK5m">
