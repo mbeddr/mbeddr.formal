@@ -202,5 +202,21 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6xNJt7lEB_E">
+    <property role="EcuMT" value="7526568111196764522" />
+    <property role="3GE5qa" value="source.commands" />
+    <property role="TrG5h" value="BuildBooleanModel" />
+    <property role="34LRSv" value="build_boolean_model" />
+    <property role="R4oN_" value="compiles the flattened hierarchy into boolean scalar FSM" />
+    <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
+  </node>
+  <node concept="1TIwiD" id="6xNJt7lEGGq">
+    <property role="EcuMT" value="7526568111196785434" />
+    <property role="3GE5qa" value="source.commands" />
+    <property role="TrG5h" value="BMCSetup" />
+    <property role="34LRSv" value="bmc_setup" />
+    <property role="R4oN_" value="builds the model in a boolean expression format" />
+    <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
+  </node>
 </model>
 
