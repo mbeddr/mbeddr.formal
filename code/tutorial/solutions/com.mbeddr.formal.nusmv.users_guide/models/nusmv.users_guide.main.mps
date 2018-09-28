@@ -1465,8 +1465,29 @@
         <node concept="2bctqb" id="2RmPJMxI2VQ" role="3SHJ_F" />
       </node>
     </node>
-    <node concept="1_1sxE" id="2RmPJMxI19w" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
+    <node concept="1_0LV8" id="6xNJt7lLwYH" role="1_0VJ0">
+      <node concept="19SGf9" id="6xNJt7lLwYI" role="1_0LWR">
+        <node concept="19SUe$" id="6xNJt7lLwYJ" role="19SJt6">
+          <property role="19SUeA" value="Checking the contracts can be performed by NuSMV either using the BDDs-based engine (by default) or by using &quot;Bounded Model Checking&quot; verification engine. The figure below illustrates the setting for performing the BMC verification. " />
+        </node>
+      </node>
+    </node>
+    <node concept="2SaynC" id="6xNJt7lLx1$" role="1_0VJ0">
+      <property role="TrG5h" value="cbd_bmc_verification" />
+      <property role="2Sbq$t" value="true" />
+      <ref role="1wz7Nk" to="2ufg:57ROGn93a3R" resolve="system" />
+      <node concept="2Sb_l4" id="6xNJt7lLx3i" role="2SbwM5">
+        <property role="2Sb_kV" value="nusmv_cbd_bmc_verification.png" />
+        <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+      </node>
+      <node concept="OjmMv" id="6xNJt7lLx1C" role="2SaI5j">
+        <node concept="19SGf9" id="6xNJt7lLx1D" role="OjmMu">
+          <node concept="19SUe$" id="6xNJt7lLx1E" role="19SJt6">
+            <property role="19SUeA" value="To perform verification using the BMC engine, please check &quot;Use BMC&quot; checkbox in the &quot;Inspector&quot; window associated to the verified &quot;Component Assembly&quot; and specify the depth of the verification (aka. number of steps, bmc length)." />
+          </node>
+        </node>
+      </node>
+      <node concept="2bctqb" id="6xNJt7lLx1G" role="3SHJ_F" />
     </node>
   </node>
 </model>
