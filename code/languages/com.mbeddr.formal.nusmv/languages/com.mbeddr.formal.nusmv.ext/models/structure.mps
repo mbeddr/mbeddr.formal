@@ -218,6 +218,7 @@
     <property role="TrG5h" value="DocumentationMultiline" />
     <property role="34LRSv" value="/*" />
     <property role="R4oN_" value="documentation multiline" />
+    <property role="3GE5qa" value="documentation" />
     <ref role="1TJDcQ" to="gioj:2mjHtwTupZz" resolve="DocumentationLine" />
   </node>
 </model>
