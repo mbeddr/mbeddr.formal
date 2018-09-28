@@ -801,7 +801,7 @@
   </node>
   <node concept="24kQdi" id="6NmtaR1VD8S">
     <property role="3GE5qa" value="expressions" />
-    <ref role="1XX52x" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+    <ref role="1XX52x" to="gioj:6NmtaR1VD8o" resolve="EnumerationMemberRef" />
     <node concept="1iCGBv" id="6NmtaR1VD8U" role="2wV5jI">
       <ref role="1NtTu8" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
       <node concept="1sVBvm" id="6NmtaR1VD8W" role="1sWHZn">

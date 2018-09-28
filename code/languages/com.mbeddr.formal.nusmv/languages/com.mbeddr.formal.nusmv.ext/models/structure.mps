@@ -9,6 +9,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -220,6 +221,49 @@
     <property role="R4oN_" value="documentation multiline" />
     <property role="3GE5qa" value="documentation" />
     <ref role="1TJDcQ" to="gioj:2mjHtwTupZz" resolve="DocumentationLine" />
+  </node>
+  <node concept="1TIwiD" id="6xNJt7lN6Tk">
+    <property role="EcuMT" value="7526568111198989908" />
+    <property role="TrG5h" value="EnumDeclaration" />
+    <property role="34LRSv" value="enum" />
+    <property role="R4oN_" value="enumeration declaration" />
+    <property role="3GE5qa" value="udt.enum" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6xNJt7lN6UH" role="1TKVEi">
+      <property role="IQ2ns" value="7526568111198989997" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SWfR" resolve="EnumerationMember" />
+    </node>
+    <node concept="PrWs8" id="6xNJt7lN6Ul" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6xNJt7lN6Ut" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="1irR5M" id="6xNJt7lPy_7" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irPie" id="6xNJt7lPy_e" role="1irR9h">
+        <property role="1irPi9" value="E" />
+        <node concept="3PKj8D" id="6xNJt7lPy_l" role="3PKjny">
+          <property role="3PKj8l" value="778899" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6xNJt7lN6UK">
+    <property role="EcuMT" value="7526568111198990000" />
+    <property role="3GE5qa" value="udt.enum" />
+    <property role="TrG5h" value="EnumType" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="6xNJt7lN6UL" role="1TKVEi">
+      <property role="IQ2ns" value="7526568111198990001" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="enumDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6xNJt7lN6Tk" resolve="EnumDeclaration" />
+    </node>
   </node>
 </model>
 

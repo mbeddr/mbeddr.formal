@@ -489,7 +489,7 @@
   </node>
   <node concept="WtQ9Q" id="6NmtaR23xxm">
     <property role="3GE5qa" value="expressions" />
-    <ref role="WuzLi" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+    <ref role="WuzLi" to="gioj:6NmtaR1VD8o" resolve="EnumerationMemberRef" />
     <node concept="11bSqf" id="6NmtaR23xxn" role="11c4hB">
       <node concept="3clFbS" id="6NmtaR23xxo" role="2VODD2">
         <node concept="lc7rE" id="6NmtaR23xxG" role="3cqZAp">

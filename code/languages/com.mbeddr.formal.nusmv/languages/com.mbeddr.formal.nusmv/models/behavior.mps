@@ -925,7 +925,7 @@
   </node>
   <node concept="13h7C7" id="7Z6$Wo5RGFW">
     <property role="3GE5qa" value="expressions" />
-    <ref role="13h7C2" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+    <ref role="13h7C2" to="gioj:6NmtaR1VD8o" resolve="EnumerationMemberRef" />
     <node concept="13hLZK" id="7Z6$Wo5RGFX" role="13h7CW">
       <node concept="3clFbS" id="7Z6$Wo5RGFY" role="2VODD2" />
     </node>

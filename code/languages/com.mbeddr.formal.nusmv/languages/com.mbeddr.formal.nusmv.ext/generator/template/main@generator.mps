@@ -88,6 +88,9 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
+      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
+        <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
+      </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
@@ -121,6 +124,10 @@
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
         <property id="2707707741261637861" name="documentation" index="sUxOX" />
+      </concept>
+      <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
+      <concept id="7842584090743391222" name="com.mbeddr.formal.nusmv.structure.EnumerationType" flags="ng" index="2Hdrtr">
+        <child id="7842584090743391224" name="members" index="2Hdrtl" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -534,6 +541,39 @@
             </node>
           </node>
           <node concept="29HgVG" id="15PPQjZm36y" role="lGtFl" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="6xNJt7lPjGZ" role="3acgRq">
+      <ref role="30HIoZ" to="6z8w:6xNJt7lN6Tk" resolve="EnumDeclaration" />
+      <node concept="b5Tf3" id="6xNJt7lPkCJ" role="1lVwrX" />
+    </node>
+    <node concept="3aamgX" id="6xNJt7lPaks" role="3acgRq">
+      <ref role="30HIoZ" to="6z8w:6xNJt7lN6UK" resolve="EnumType" />
+      <node concept="gft3U" id="6xNJt7lPaHO" role="1lVwrX">
+        <node concept="2Hdrtr" id="6xNJt7lPaI2" role="gfFT$">
+          <node concept="2Hdrtq" id="6xNJt7lPaI8" role="2Hdrtl">
+            <property role="TrG5h" value="member" />
+            <node concept="2b32R4" id="6xNJt7lQh8P" role="lGtFl">
+              <node concept="3JmXsc" id="6xNJt7lQh8Q" role="2P8S$">
+                <node concept="3clFbS" id="6xNJt7lQh8R" role="2VODD2">
+                  <node concept="3clFbF" id="6xNJt7lQheh" role="3cqZAp">
+                    <node concept="2OqwBi" id="6xNJt7lQiYp" role="3clFbG">
+                      <node concept="2OqwBi" id="6xNJt7lQhs6" role="2Oq$k0">
+                        <node concept="30H73N" id="6xNJt7lQheg" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="6xNJt7lQitW" role="2OqNvi">
+                          <ref role="3Tt5mk" to="6z8w:6xNJt7lN6UL" resolve="enumDeclaration" />
+                        </node>
+                      </node>
+                      <node concept="3Tsc0h" id="6xNJt7lQjzQ" role="2OqNvi">
+                        <ref role="3TtcxE" to="6z8w:6xNJt7lN6UH" resolve="members" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
