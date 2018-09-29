@@ -122,6 +122,10 @@
       </concept>
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781863305066" name="com.mbeddr.formal.nusmv.structure.IntervalType" flags="ng" index="dhpfj">
+        <child id="2295987781863305067" name="left" index="dhpfi" />
+        <child id="2295987781863305070" name="right" index="dhpfn" />
+      </concept>
       <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
         <property id="2707707741261637861" name="documentation" index="sUxOX" />
       </concept>
@@ -567,6 +571,61 @@
                       </node>
                       <node concept="3Tsc0h" id="6xNJt7lQjzQ" role="2OqNvi">
                         <ref role="3TtcxE" to="6z8w:6xNJt7lN6UH" resolve="members" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="6xNJt7lQJ3p" role="3acgRq">
+      <ref role="30HIoZ" to="6z8w:6xNJt7lQHRO" resolve="DomainDeclaration" />
+      <node concept="b5Tf3" id="6xNJt7lQJtf" role="1lVwrX" />
+    </node>
+    <node concept="3aamgX" id="6xNJt7lQJtj" role="3acgRq">
+      <ref role="30HIoZ" to="6z8w:6xNJt7lQHS3" resolve="DomainType" />
+      <node concept="gft3U" id="6xNJt7lQJRd" role="1lVwrX">
+        <node concept="dhpfj" id="6xNJt7lQKYC" role="gfFT$">
+          <node concept="2IPVmt" id="6xNJt7lQKYM" role="dhpfi">
+            <property role="2IPVms" value="42" />
+            <node concept="29HgVG" id="6xNJt7lQKZl" role="lGtFl">
+              <node concept="3NFfHV" id="6xNJt7lQKZm" role="3NFExx">
+                <node concept="3clFbS" id="6xNJt7lQKZn" role="2VODD2">
+                  <node concept="3clFbF" id="6xNJt7lQKZt" role="3cqZAp">
+                    <node concept="2OqwBi" id="6xNJt7lQMmD" role="3clFbG">
+                      <node concept="2OqwBi" id="6xNJt7lQKZo" role="2Oq$k0">
+                        <node concept="3TrEf2" id="6xNJt7lQKZr" role="2OqNvi">
+                          <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="domainDeclaration" />
+                        </node>
+                        <node concept="30H73N" id="6xNJt7lQKZs" role="2Oq$k0" />
+                      </node>
+                      <node concept="3TrEf2" id="6xNJt7lQN8G" role="2OqNvi">
+                        <ref role="3Tt5mk" to="6z8w:6xNJt7lQHSO" resolve="lower" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2IPVmt" id="6xNJt7lQKZ3" role="dhpfn">
+            <property role="2IPVms" value="42" />
+            <node concept="29HgVG" id="6xNJt7lQNwT" role="lGtFl">
+              <node concept="3NFfHV" id="6xNJt7lQNwU" role="3NFExx">
+                <node concept="3clFbS" id="6xNJt7lQNwV" role="2VODD2">
+                  <node concept="3clFbF" id="6xNJt7lQNx1" role="3cqZAp">
+                    <node concept="2OqwBi" id="6xNJt7lQO4t" role="3clFbG">
+                      <node concept="2OqwBi" id="6xNJt7lQNwW" role="2Oq$k0">
+                        <node concept="3TrEf2" id="6xNJt7lQNwZ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="domainDeclaration" />
+                        </node>
+                        <node concept="30H73N" id="6xNJt7lQNx0" role="2Oq$k0" />
+                      </node>
+                      <node concept="3TrEf2" id="6xNJt7lQOZl" role="2OqNvi">
+                        <ref role="3Tt5mk" to="6z8w:6xNJt7lQHSR" resolve="upper" />
                       </node>
                     </node>
                   </node>

@@ -265,5 +265,46 @@
       <ref role="20lvS9" node="6xNJt7lN6Tk" resolve="EnumDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6xNJt7lQHRO">
+    <property role="EcuMT" value="7526568111199935988" />
+    <property role="3GE5qa" value="udt.domain" />
+    <property role="TrG5h" value="IntervalDeclaration" />
+    <property role="34LRSv" value="interval" />
+    <property role="R4oN_" value="declaration of an interval" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6xNJt7lQHRP" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6xNJt7lQHRX" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="1TJgyj" id="6xNJt7lQHSO" role="1TKVEi">
+      <property role="IQ2ns" value="7526568111199936052" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lower" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+    <node concept="1TJgyj" id="6xNJt7lQHSR" role="1TKVEi">
+      <property role="IQ2ns" value="7526568111199936055" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="upper" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6xNJt7lQHS3">
+    <property role="EcuMT" value="7526568111199936003" />
+    <property role="3GE5qa" value="udt.domain" />
+    <property role="TrG5h" value="IntervalType" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="6xNJt7lQHS4" role="1TKVEi">
+      <property role="IQ2ns" value="7526568111199936004" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="intervalDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6xNJt7lQHRO" resolve="IntervalDeclaration" />
+    </node>
+  </node>
 </model>
 

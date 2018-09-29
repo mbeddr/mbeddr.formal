@@ -8,10 +8,13 @@
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2295987781863215983" name="com.mbeddr.formal.nusmv.structure.NotEqualsExpression" flags="ng" index="dheZm" />
+      <concept id="2858146662931636881" name="com.mbeddr.formal.nusmv.structure.GreaterEqualsExpression" flags="ng" index="nE0YI" />
+      <concept id="2858146662931636879" name="com.mbeddr.formal.nusmv.structure.LessEqualsExpression" flags="ng" index="nE0YK" />
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
         <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
+      <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
       <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
@@ -53,12 +56,22 @@
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
+      <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
+        <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
       <concept id="1989356068341840849" name="com.mbeddr.formal.base.expressions.structure.ParensExpression" flags="ng" index="32OYss" />
       <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
         <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
     </language>
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="7526568111199935988" name="com.mbeddr.formal.nusmv.ext.structure.IntervalDeclaration" flags="ng" index="2XEm0_">
+        <child id="7526568111199936052" name="lower" index="2XEmf_" />
+        <child id="7526568111199936055" name="upper" index="2XEmfA" />
+      </concept>
+      <concept id="7526568111199936003" name="com.mbeddr.formal.nusmv.ext.structure.IntervalType" flags="ng" index="2XEmfi">
+        <reference id="7526568111199936004" name="intervalDeclaration" index="2XEmfl" />
+      </concept>
       <concept id="7526568111198990000" name="com.mbeddr.formal.nusmv.ext.structure.EnumType" flags="ng" index="2XJXdx">
         <reference id="7526568111198990001" name="enumDeclaration" index="2XJXdw" />
       </concept>
@@ -166,6 +179,103 @@
             </node>
             <node concept="2He$iJ" id="6xNJt7lQnuA" role="1zigYY">
               <ref role="2He$iI" node="6xNJt7lQns7" resolve="v2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="6xNJt7lQPus">
+    <property role="TrG5h" value="_010_udt_interval" />
+    <node concept="2XEm0_" id="6xNJt7lQZwd" role="2HcuB8">
+      <property role="TrG5h" value="int1" />
+      <node concept="2IPVmt" id="6xNJt7lQZwf" role="2XEmf_">
+        <property role="2IPVms" value="0" />
+      </node>
+      <node concept="2IPVmt" id="6xNJt7lQZwh" role="2XEmfA">
+        <property role="2IPVms" value="10" />
+      </node>
+    </node>
+    <node concept="2XEm0_" id="6xNJt7lQZz2" role="2HcuB8">
+      <property role="TrG5h" value="int2" />
+      <node concept="2IPVmt" id="6xNJt7lQZz4" role="2XEmf_">
+        <property role="2IPVms" value="-10" />
+      </node>
+      <node concept="2IPVmt" id="6xNJt7lQZz6" role="2XEmfA">
+        <property role="2IPVms" value="10" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6xNJt7lQPu$" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6xNJt7lQPu_" role="2HcuB8">
+      <property role="TrG5h" value="_010_udt_interval_module" />
+      <node concept="2Sa8A2" id="6xNJt7lQPuA" role="2HcbjO">
+        <node concept="2SafMM" id="6xNJt7lQPuB" role="1yBDGv">
+          <node concept="dheZm" id="6xNJt7lQPuC" role="1yBIc4">
+            <node concept="2IPVmt" id="6xNJt7lR6OZ" role="2H9Ial">
+              <property role="2IPVms" value="1" />
+            </node>
+            <node concept="32Ogvo" id="6xNJt7lQPuE" role="2H9Iav">
+              <ref role="32Ogvr" node="6xNJt7lQPuP" resolve="par1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Sa8A2" id="6xNJt7lQPuF" role="2HcbjO">
+        <node concept="2SafMM" id="6xNJt7lQPuG" role="1yBDGv">
+          <node concept="32OYss" id="6xNJt7lQPuH" role="1yBIc4">
+            <node concept="2HbMbg" id="6xNJt7lR6PC" role="32OYtT">
+              <node concept="nE0YI" id="6xNJt7lR6Pa" role="2H9Iav">
+                <node concept="32Ogvo" id="6xNJt7lQPuK" role="2H9Iav">
+                  <ref role="32Ogvr" node="6xNJt7lQPuQ" resolve="par2" />
+                </node>
+                <node concept="2IPVmt" id="6xNJt7lR6Py" role="2H9Ial">
+                  <property role="2IPVms" value="-10" />
+                </node>
+              </node>
+              <node concept="nE0YK" id="6xNJt7lR6Qk" role="2H9Ial">
+                <node concept="32Ogvo" id="6xNJt7lQPuN" role="2H9Iav">
+                  <ref role="32Ogvr" node="6xNJt7lQPuQ" resolve="par2" />
+                </node>
+                <node concept="2IPVmt" id="6xNJt7lR6QV" role="2H9Ial">
+                  <property role="2IPVms" value="10" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="6xNJt7lQPuP" role="2Hdtzq">
+        <property role="TrG5h" value="par1" />
+      </node>
+      <node concept="2Hdtzr" id="6xNJt7lQPuQ" role="2Hdtzq">
+        <property role="TrG5h" value="par2" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6xNJt7lQPuR" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6xNJt7lQPuS" role="2HcuB8">
+      <property role="TrG5h" value="main" />
+      <node concept="2Hfkzq" id="6xNJt7lQPuT" role="2HcbjO">
+        <node concept="2Hdskp" id="6xNJt7lQPuU" role="2Hfkx9">
+          <property role="TrG5h" value="v1" />
+          <node concept="2XEmfi" id="6xNJt7lR6R8" role="2HdssA">
+            <ref role="2XEmfl" node="6xNJt7lQZwd" resolve="int1" />
+          </node>
+        </node>
+        <node concept="2Hdskp" id="6xNJt7lQPuW" role="2Hfkx9">
+          <property role="TrG5h" value="v2" />
+          <node concept="2XEmfi" id="6xNJt7lR6RH" role="2HdssA">
+            <ref role="2XEmfl" node="6xNJt7lQZz2" resolve="int2" />
+          </node>
+        </node>
+        <node concept="2Hdskp" id="6xNJt7lQPuY" role="2Hfkx9">
+          <property role="TrG5h" value="m" />
+          <node concept="1zigX2" id="6xNJt7lQPuZ" role="2HdssA">
+            <ref role="1zigX1" node="6xNJt7lQPu_" resolve="_010_udt_interval_module" />
+            <node concept="2He$iJ" id="6xNJt7lQPv0" role="1zigYY">
+              <ref role="2He$iI" node="6xNJt7lQPuU" resolve="v1" />
+            </node>
+            <node concept="2He$iJ" id="6xNJt7lQPv1" role="1zigYY">
+              <ref role="2He$iI" node="6xNJt7lQPuW" resolve="v2" />
             </node>
           </node>
         </node>
