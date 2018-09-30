@@ -283,14 +283,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="lower" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="6xNJt7lQHSR" role="1TKVEi">
       <property role="IQ2ns" value="7526568111199936055" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="upper" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6xNJt7lQHS3">
@@ -304,6 +304,15 @@
       <property role="20kJfa" value="intervalDeclaration" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6xNJt7lQHRO" resolve="IntervalDeclaration" />
+    </node>
+    <node concept="1irR5M" id="6xNJt7lRiE9" role="rwd14">
+      <property role="2$rrk2" value="4" />
+      <node concept="1irPie" id="6xNJt7lRiEg" role="1irR9h">
+        <property role="1irPi9" value="I" />
+        <node concept="3PKj8D" id="6xNJt7lRiEn" role="3PKjny">
+          <property role="3PKj8l" value="999999" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
