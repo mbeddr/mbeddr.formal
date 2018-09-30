@@ -68,7 +68,7 @@
       <property role="IQ2ns" value="1454643446872239975" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
-      <ref role="20lvS9" to="ehqg:6NmtaR20s4J" resolve="Literal" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="1gJVC85F5Bk" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
