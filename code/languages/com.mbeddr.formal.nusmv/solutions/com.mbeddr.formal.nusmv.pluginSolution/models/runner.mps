@@ -3546,7 +3546,16 @@
   <node concept="312cEu" id="1ZsZb$iRrIC">
     <property role="TrG5h" value="NuSMVResultLifter" />
     <property role="3GE5qa" value="lifted_result" />
-    <node concept="2tJIrI" id="1ZsZb$iRyck" role="jymVt" />
+    <node concept="2tJIrI" id="Mk4_OnYCJj" role="jymVt" />
+    <node concept="Wx3nA" id="Mk4_OnYDjJ" role="jymVt">
+      <property role="TrG5h" value="NO_VERIFICATION_CONDITION_MESSAGE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="Mk4_OnYByF" role="1tU5fm" />
+      <node concept="3Tm1VV" id="Mk4_OnYByE" role="1B3o_S" />
+      <node concept="Xl_RD" id="Mk4_OnYByG" role="33vP2m">
+        <property role="Xl_RC" value="No Verification Condition Found!" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="1ZsZb$iRyj6" role="jymVt">
       <property role="TrG5h" value="specificationMarker" />
       <property role="3TUv4t" value="true" />
@@ -3967,6 +3976,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="Mk4_OnYB3p" role="3cqZAp" />
         <node concept="3clFbJ" id="4Hts7PYuL51" role="3cqZAp">
           <node concept="3clFbS" id="4Hts7PYuL53" role="3clFbx">
             <node concept="3SKdUt" id="4Hts7PYuURu" role="3cqZAp">
@@ -4024,6 +4034,52 @@
               </node>
               <node concept="3cmrfG" id="4Hts7PYuQde" role="3uHU7w">
                 <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="Mk4_OnXBKI" role="3eNLev">
+            <node concept="3clFbC" id="Mk4_OnXGTj" role="3eO9$A">
+              <node concept="3cmrfG" id="Mk4_OnXHhb" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="Mk4_OnXDlq" role="3uHU7B">
+                <node concept="37vLTw" id="Mk4_OnXCvq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ZsZb$iRu2f" resolve="results" />
+                </node>
+                <node concept="34oBXx" id="Mk4_OnXFaT" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="Mk4_OnXBKK" role="3eOfB_">
+              <node concept="3SKdUt" id="Mk4_OnXHTE" role="3cqZAp">
+                <node concept="3SKdUq" id="Mk4_OnXHTG" role="3SKWNk">
+                  <property role="3SKdUp" value="no results were found - maybe missing verification conditions?" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="Mk4_OnXHA1" role="3cqZAp">
+                <node concept="2OqwBi" id="Mk4_OnXHA2" role="3clFbG">
+                  <node concept="37vLTw" id="Mk4_OnXHA3" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1ZsZb$iRu2f" resolve="results" />
+                  </node>
+                  <node concept="TSZUe" id="Mk4_OnXHA4" role="2OqNvi">
+                    <node concept="2ShNRf" id="Mk4_OnXHA5" role="25WWJ7">
+                      <node concept="1pGfFk" id="Mk4_OnXHA6" role="2ShVmc">
+                        <ref role="37wK5l" node="7mSH3Wn4J5_" resolve="NuSMVLiftedResult" />
+                        <node concept="37vLTw" id="Mk4_OnXHA7" role="37wK5m">
+                          <ref role="3cqZAo" node="1ZsZb$iU32y" resolve="analyzedNode" />
+                        </node>
+                        <node concept="37vLTw" id="Mk4_OnXHA8" role="37wK5m">
+                          <ref role="3cqZAo" node="1ZsZb$iSBkE" resolve="res" />
+                        </node>
+                        <node concept="37vLTw" id="Mk4_OnYDLX" role="37wK5m">
+                          <ref role="3cqZAo" node="Mk4_OnYDjJ" resolve="NO_VERIFICATION_CONDITION_MESSAGE" />
+                        </node>
+                        <node concept="3clFbT" id="Mk4_OnXHAb" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

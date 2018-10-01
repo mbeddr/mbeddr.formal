@@ -7,7 +7,7 @@
   <imports />
   <registry>
     <language id="bf72618c-958a-47f5-9aac-3eff98d79ffd" name="com.mbeddr.formal.nusmv.source">
-      <concept id="7526568111196785434" name="com.mbeddr.formal.nusmv.source.structure.BmcSetup" flags="ng" index="2XQnrb" />
+      <concept id="7526568111196785434" name="com.mbeddr.formal.nusmv.source.structure.BMCSetup" flags="ng" index="2XQnrb" />
       <concept id="7526568111196764522" name="com.mbeddr.formal.nusmv.source.structure.BuildBooleanModel" flags="ng" index="2XQsiV" />
       <concept id="7211928790175692107" name="com.mbeddr.formal.nusmv.source.structure.Quit" flags="ng" index="1nK5Td" />
       <concept id="7211928790175663910" name="com.mbeddr.formal.nusmv.source.structure.CheckLTLSpecBMC" flags="ng" index="1nKaKw">
@@ -38,6 +38,7 @@
       </concept>
       <concept id="2858146662931636881" name="com.mbeddr.formal.nusmv.structure.GreaterEqualsExpression" flags="ng" index="nE0YI" />
       <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
+      <concept id="2707707741262126533" name="com.mbeddr.formal.nusmv.structure.EmptyModuleContent" flags="ng" index="s4Ewt" />
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
         <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
@@ -406,6 +407,42 @@
     </node>
     <node concept="1nKcoi" id="6xNJt7lEIf7" role="1nOKVG" />
     <node concept="1nK5Td" id="6xNJt7lEIf8" role="1nOKVG" />
+  </node>
+  <node concept="2HdtXS" id="Mk4_OnYDQO">
+    <property role="TrG5h" value="_000_no_verification_condition" />
+    <node concept="2Hdtz0" id="Mk4_OnYDQQ" role="2HcuB8">
+      <property role="TrG5h" value="m" />
+      <node concept="s4Ewt" id="Mk4_OnYDQR" role="2HcbjO" />
+      <node concept="2Hdtzr" id="Mk4_OnYDR0" role="2Hdtzq">
+        <property role="TrG5h" value="v" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="Mk4_OnYDR3" role="2HcuB8" />
+    <node concept="2Hdtz0" id="Mk4_OnYDRn" role="2HcuB8">
+      <property role="TrG5h" value="main" />
+      <node concept="2Hfkzq" id="Mk4_OnYDRA" role="2HcbjO">
+        <node concept="2Hdskp" id="Mk4_OnYDRL" role="2Hfkx9">
+          <property role="TrG5h" value="a" />
+          <node concept="1zigX2" id="Mk4_OnYDS5" role="2HdssA">
+            <ref role="1zigX1" node="Mk4_OnYDQQ" resolve="m" />
+            <node concept="2IPVmt" id="Mk4_OnYDSj" role="1zigYY">
+              <property role="2IPVms" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1nOMdo" id="Mk4_OnYDS_">
+    <property role="TrG5h" value="_000_no_verification_condition_check_ctl_spec" />
+    <node concept="1nOERi" id="Mk4_OnYDSA" role="1nOKVG">
+      <ref role="1nOEKr" node="Mk4_OnYDQO" resolve="_000_no_verification_condition" />
+    </node>
+    <node concept="1nOEfJ" id="Mk4_OnYDSB" role="1nOKVG" />
+    <node concept="1nOEsb" id="Mk4_OnYDSC" role="1nOKVG" />
+    <node concept="1nOEpK" id="Mk4_OnYDSD" role="1nOKVG" />
+    <node concept="3uTczT" id="Mk4_OnYDSE" role="1nOKVG" />
+    <node concept="1nK5Td" id="Mk4_OnYDSF" role="1nOKVG" />
   </node>
 </model>
 
