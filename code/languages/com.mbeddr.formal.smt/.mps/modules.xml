@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.smtlib.synthesis/com.mbeddr.formal.smtlib.synthesis.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.smtlib/com.mbeddr.formal.smtlib.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.smtlib.z3.lib/com.mbeddr.formal.smtlib.z3.lib.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.smtlib.z3.rt/com.mbeddr.formal.smtlib.z3.rt.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.formal.smtlib.synthesis/test.com.mbeddr.formal.smtlib.synthesis.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.formal.smtlib/test.com.mbeddr.formal.smtlib.msd" folder="test" />
+    </projectModules>
+  </component>
+</project>
