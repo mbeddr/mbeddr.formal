@@ -382,5 +382,62 @@
       <ref role="20lvS9" node="7RhjhI7co2N" resolve="IContract" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2l5A0OF7cwg">
+    <property role="EcuMT" value="2685719935121672208" />
+    <property role="TrG5h" value="Refine" />
+    <property role="34LRSv" value="refine" />
+    <property role="R4oN_" value="links a component interface to the implementing module" />
+    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2l5A0OFb1Hl" role="1TKVEl">
+      <property role="IQ2nx" value="2685719935122676565" />
+      <property role="TrG5h" value="useBMC" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="2l5A0OFb1Hm" role="1TKVEl">
+      <property role="IQ2nx" value="2685719935122676566" />
+      <property role="TrG5h" value="bmcLen" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="2l5A0OF7cx9" role="1TKVEi">
+      <property role="IQ2ns" value="2685719935121672265" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="interfaceRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7RhjhI7$li$" resolve="ComponentInterfaceRef" />
+    </node>
+    <node concept="1TJgyj" id="2l5A0OF7cxe" role="1TKVEi">
+      <property role="IQ2ns" value="2685719935121672270" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="moduleRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2l5A0OF7cxn" resolve="ModuleRef" />
+    </node>
+    <node concept="PrWs8" id="2l5A0OF7cwZ" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="PrWs8" id="2l5A0OFb5vW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2_LXzlprWCc" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6Kf5KB6TZVg" resolve="ISimulationEntryPoint" />
+    </node>
+    <node concept="PrWs8" id="2_LXzlpomCT" role="PzmwI">
+      <ref role="PrY4T" to="gioj:2_LXzlpoj8Y" resolve="IReducedToMainModule" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2l5A0OF7cxn">
+    <property role="EcuMT" value="2685719935121672279" />
+    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <property role="TrG5h" value="ModuleRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2l5A0OF7cxo" role="1TKVEi">
+      <property role="IQ2ns" value="2685719935121672280" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
+  </node>
 </model>
 
