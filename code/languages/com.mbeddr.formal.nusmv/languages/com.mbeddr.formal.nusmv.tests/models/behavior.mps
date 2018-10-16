@@ -13,6 +13,8 @@
     <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" />
     <import index="4c75" ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)" />
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
+    <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" />
+    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -143,7 +145,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -250,6 +254,26 @@
             <node concept="34oBXx" id="4Hts7PYLUQr" role="2OqNvi" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2_LXzlpokgK" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="moduleCalledFromMain" />
+      <ref role="13i0hy" to="23hk:2_LXzlpoj9z" resolve="moduleCalledFromMain" />
+      <node concept="3Tm1VV" id="2_LXzlpokgL" role="1B3o_S" />
+      <node concept="3clFbS" id="2_LXzlpokgO" role="3clF47">
+        <node concept="3clFbF" id="2_LXzlpol9L" role="3cqZAp">
+          <node concept="2OqwBi" id="2_LXzlpoll2" role="3clFbG">
+            <node concept="13iPFW" id="2_LXzlpol9K" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2_LXzlpolVJ" role="2OqNvi">
+              <ref role="3Tt5mk" to="fnq2:43FRfGJUExp" resolve="module" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2_LXzlpokgP" role="3clF45">
+        <ref role="ehGHo" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
       </node>
     </node>
   </node>

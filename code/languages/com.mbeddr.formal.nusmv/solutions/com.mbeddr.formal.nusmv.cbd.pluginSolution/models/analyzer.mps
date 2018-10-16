@@ -325,6 +325,7 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1205753243362" name="jetbrains.mps.baseLanguage.collections.structure.ChunkOperation" flags="nn" index="2WvAvU">
@@ -3377,10 +3378,30 @@
             <ref role="37wK5l" to="2ocj:2UdJgvCLu_j" resolve="stopProgress" />
           </node>
         </node>
+        <node concept="3clFbF" id="2_LXzlpuGmC" role="3cqZAp">
+          <node concept="2OqwBi" id="2_LXzlpuHhf" role="3clFbG">
+            <node concept="37vLTw" id="2_LXzlpuGmA" role="2Oq$k0">
+              <ref role="3cqZAo" node="2l5A0OFaLwq" resolve="res" />
+            </node>
+            <node concept="2Kehj3" id="2_LXzlpuIDb" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2_LXzlpuKoQ" role="3cqZAp">
+          <node concept="2OqwBi" id="2_LXzlpuLG$" role="3clFbG">
+            <node concept="37vLTw" id="2_LXzlpuKoO" role="2Oq$k0">
+              <ref role="3cqZAo" node="2l5A0OFaLwq" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="2_LXzlpuNmR" role="2OqNvi">
+              <node concept="37vLTw" id="2_LXzlpuNEN" role="25WWJ7">
+                <ref role="3cqZAo" node="2l5A0OFdzkJ" resolve="refinementRes" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2l5A0OFaLwK" role="3cqZAp">
           <node concept="10QFUN" id="2l5A0OFaLwL" role="3clFbG">
             <node concept="10QFUN" id="2l5A0OFaLwM" role="10QFUP">
-              <node concept="37vLTw" id="2l5A0OFb1yR" role="10QFUP">
+              <node concept="37vLTw" id="2_LXzlpuFhB" role="10QFUP">
                 <ref role="3cqZAo" node="2l5A0OFaLwq" resolve="res" />
               </node>
               <node concept="_YKpA" id="2l5A0OFaLwO" role="10QFUM">
