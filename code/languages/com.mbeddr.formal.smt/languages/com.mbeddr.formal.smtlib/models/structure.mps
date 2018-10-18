@@ -655,7 +655,7 @@
   <node concept="1TIwiD" id="6MrCApUm_ir">
     <property role="EcuMT" value="7826027338509472923" />
     <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="DeclaredType" />
+    <property role="TrG5h" value="DatatypeDecRefType" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     <node concept="1TJgyj" id="6MrCApUm_km" role="1TKVEi">
       <property role="IQ2ns" value="7826027338509473046" />
@@ -700,10 +700,17 @@
     <node concept="1TJgyj" id="6MrCApUqOlm" role="1TKVEi">
       <property role="IQ2ns" value="7826027338510583126" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="prams" />
+      <property role="20kJfa" value="params" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1MFSGJpf7bD">
+    <property role="EcuMT" value="2065994219230360297" />
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="GetModel" />
+    <property role="34LRSv" value="get-model" />
+    <ref role="1TJDcQ" node="104dc5Eg2v$" resolve="Command" />
   </node>
 </model>
 

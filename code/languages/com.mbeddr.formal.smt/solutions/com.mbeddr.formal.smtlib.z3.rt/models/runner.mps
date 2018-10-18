@@ -109,6 +109,7 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -273,6 +274,17 @@
                   <node concept="liA8E" id="104dc5E59RO" role="2OqNvi">
                     <ref role="37wK5l" to="f7eu:~Solver.check(com.microsoft.z3.Expr...):com.microsoft.z3.Status" resolve="check" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="RRSsy" id="1MFSGJparh0" role="3cqZAp">
+              <property role="RRSoG" value="info" />
+              <node concept="3cpWs3" id="1MFSGJparHK" role="RRSoy">
+                <node concept="37vLTw" id="1MFSGJparJy" role="3uHU7w">
+                  <ref role="3cqZAo" node="104dc5E59RL" resolve="status" />
+                </node>
+                <node concept="Xl_RD" id="1MFSGJparh2" role="3uHU7B">
+                  <property role="Xl_RC" value="status: " />
                 </node>
               </node>
             </node>
@@ -502,6 +514,29 @@
       </node>
       <node concept="3Tm1VV" id="104dc5E6d5S" role="1B3o_S" />
       <node concept="10P_77" id="104dc5E6djF" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1MFSGJpcqKy" role="jymVt" />
+    <node concept="3clFb_" id="1MFSGJpcqjW" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isUnsat" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1MFSGJpcqjX" role="3clF47">
+        <node concept="3clFbF" id="1MFSGJpcqjY" role="3cqZAp">
+          <node concept="3clFbC" id="1MFSGJpcqjZ" role="3clFbG">
+            <node concept="Rm8GO" id="1MFSGJpcqBD" role="3uHU7w">
+              <ref role="Rm8GQ" to="f7eu:~Status.UNSATISFIABLE" resolve="UNSATISFIABLE" />
+              <ref role="1Px2BO" to="f7eu:~Status" resolve="Status" />
+            </node>
+            <node concept="37vLTw" id="1MFSGJpcqk1" role="3uHU7B">
+              <ref role="3cqZAo" node="104dc5E4NiS" resolve="status" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1MFSGJpcqk2" role="1B3o_S" />
+      <node concept="10P_77" id="1MFSGJpcqk3" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="6cjunGyv8Wa" role="jymVt" />
     <node concept="3clFb_" id="6cjunGyv8E6" role="jymVt">
