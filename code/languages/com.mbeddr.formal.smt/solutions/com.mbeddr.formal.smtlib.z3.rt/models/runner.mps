@@ -32,6 +32,9 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -165,6 +168,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
+    </language>
   </registry>
   <node concept="312cEu" id="104dc5E4Mfj">
     <property role="TrG5h" value="Z3Checker" />
@@ -260,7 +273,44 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="104dc5E5met" role="3cqZAp" />
+            <node concept="RRSsy" id="1MFSGJpkelv" role="3cqZAp">
+              <property role="RRSoG" value="trace" />
+              <node concept="Xl_RD" id="1MFSGJpkelx" role="RRSoy">
+                <property role="Xl_RC" value="checking script: " />
+              </node>
+            </node>
+            <node concept="2Gpval" id="1MFSGJpkznX" role="3cqZAp">
+              <node concept="2GrKxI" id="1MFSGJpkznY" role="2Gsz3X">
+                <property role="TrG5h" value="a" />
+              </node>
+              <node concept="3clFbS" id="1MFSGJpkznZ" role="2LFqv$">
+                <node concept="RRSsy" id="1MFSGJpkzo0" role="3cqZAp">
+                  <property role="RRSoG" value="trace" />
+                  <node concept="3cpWs3" id="1MFSGJpkzo1" role="RRSoy">
+                    <node concept="2OqwBi" id="1MFSGJpkzo2" role="3uHU7w">
+                      <node concept="2GrUjf" id="1MFSGJpkzo3" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="1MFSGJpkznY" resolve="a" />
+                      </node>
+                      <node concept="liA8E" id="1MFSGJpkzo4" role="2OqNvi">
+                        <ref role="37wK5l" to="f7eu:~Expr.toString():java.lang.String" resolve="toString" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="1MFSGJpkzo5" role="3uHU7B">
+                      <property role="Xl_RC" value="\t" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1MFSGJpkzo6" role="2GsD0m">
+                <node concept="37vLTw" id="1MFSGJpkzo7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="104dc5E4Oym" resolve="solver" />
+                </node>
+                <node concept="liA8E" id="1MFSGJpkzo8" role="2OqNvi">
+                  <ref role="37wK5l" to="f7eu:~Solver.getAssertions():com.microsoft.z3.BoolExpr[]" resolve="getAssertions" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1MFSGJpkuZp" role="3cqZAp" />
             <node concept="3cpWs8" id="104dc5E59RK" role="3cqZAp">
               <node concept="3cpWsn" id="104dc5E59RL" role="3cpWs9">
                 <property role="TrG5h" value="status" />

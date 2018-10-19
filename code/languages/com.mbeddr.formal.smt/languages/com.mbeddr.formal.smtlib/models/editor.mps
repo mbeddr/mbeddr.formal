@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -164,6 +165,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline">
+      <concept id="8006371471054135775" name="de.slisson.mps.editor.multiline.structure.CellModel_Multiline" flags="sg" stub="8664183491941389655" index="2v7bAL" />
     </language>
   </registry>
   <node concept="24kQdi" id="104dc5E3HE9">
@@ -548,15 +552,15 @@
     <ref role="1XX52x" to="d9cz:104dc5E5R2r" resolve="WitnessAnnotation" />
     <node concept="3EZMnI" id="104dc5E5R2$" role="2wV5jI">
       <node concept="2SsqMj" id="104dc5E5R2F" role="3EZMnx" />
-      <node concept="3F0A7n" id="104dc5E5R2L" role="3EZMnx">
+      <node concept="2v7bAL" id="1MFSGJpkLjg" role="3EZMnx">
         <ref role="1NtTu8" to="d9cz:104dc5E5R2w" resolve="value" />
-        <node concept="VechU" id="104dc5E5R2P" role="3F10Kt">
+        <node concept="VechU" id="1MFSGJpkLju" role="3F10Kt">
           <property role="Vb096" value="red" />
         </node>
-        <node concept="Veino" id="104dc5E5R2U" role="3F10Kt">
+        <node concept="Veino" id="1MFSGJpkLjv" role="3F10Kt">
           <property role="Vb096" value="yellow" />
         </node>
-        <node concept="Vb9p2" id="104dc5E6wrK" role="3F10Kt">
+        <node concept="Vb9p2" id="1MFSGJpkLjw" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
         </node>
       </node>
