@@ -617,6 +617,7 @@
         </node>
         <node concept="3F0ifn" id="6cjunGyy0nn" role="3EZMnx">
           <property role="3F0ifm" value="forall" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6cjunGyy0o2" role="3EZMnx">
           <property role="3F0ifm" value="(" />
@@ -1064,6 +1065,32 @@
         <property role="3F0ifm" value=")" />
       </node>
       <node concept="l2Vlx" id="1MFSGJpf7bJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1MFSGJprTRx">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1XX52x" to="d9cz:1MFSGJprTRe" resolve="IfThenElseExpression" />
+    <node concept="3EZMnI" id="1MFSGJprTRz" role="2wV5jI">
+      <node concept="3F0ifn" id="1MFSGJprTRH" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F0ifn" id="1MFSGJprTRQ" role="3EZMnx">
+        <property role="3F0ifm" value="ite" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="1MFSGJprTS3" role="3EZMnx">
+        <ref role="1NtTu8" to="d9cz:1MFSGJprTRi" resolve="cond" />
+      </node>
+      <node concept="3F1sOY" id="1MFSGJprTSu" role="3EZMnx">
+        <ref role="1NtTu8" to="d9cz:1MFSGJprTRl" resolve="then" />
+      </node>
+      <node concept="3F1sOY" id="1MFSGJprTSZ" role="3EZMnx">
+        <ref role="1NtTu8" to="d9cz:1MFSGJprTRq" resolve="else" />
+      </node>
+      <node concept="3F0ifn" id="1MFSGJprTTo" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="1MFSGJprTRA" role="2iSdaV" />
     </node>
   </node>
 </model>
