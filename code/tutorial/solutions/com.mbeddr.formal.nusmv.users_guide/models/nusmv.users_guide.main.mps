@@ -1443,6 +1443,15 @@
             </node>
           </node>
         </node>
+        <node concept="3X6T9g" id="1EUSzWtKPdM" role="3Xp5NH">
+          <node concept="OjmMv" id="1EUSzWtKPdN" role="3X6T9h">
+            <node concept="19SGf9" id="1EUSzWtKPdO" role="OjmMu">
+              <node concept="19SUe$" id="1EUSzWtKPdP" role="19SJt6">
+                <property role="19SUeA" value="Given an interface and a NuSMV module, FASTEN can check whether this module faithfully implements the interface (i.e. if the postconditions of the interface hold whenever the preconditions hold)." />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1_1sxE" id="2RmPJMxI2Sn" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
@@ -1488,6 +1497,50 @@
         </node>
       </node>
       <node concept="2bctqb" id="6xNJt7lLx1G" role="3SHJ_F" />
+    </node>
+    <node concept="1_0LV8" id="1EUSzWtKPhc" role="1_0VJ0">
+      <node concept="19SGf9" id="1EUSzWtKPhd" role="1_0LWR">
+        <node concept="19SUe$" id="1EUSzWtKPhe" role="19SJt6">
+          <property role="19SUeA" value="For specifying the refinement relation between an interface and a NuSMV module, we can use the " />
+        </node>
+        <node concept="1jUjqm" id="1EUSzWtKPq3" role="19SJt6">
+          <node concept="19SGf9" id="1EUSzWtKPq4" role="$DsGW">
+            <node concept="19SUe$" id="1EUSzWtKPq5" role="19SJt6">
+              <property role="19SUeA" value="refinement" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="1EUSzWtKPq6" role="19SJt6">
+          <property role="19SUeA" value=" construct. Currently, all inputs of the interface and all its outputs shall be among the inputs and outputs (defines) of the module. The same names shall be used since matching ports is based on their names. By right-clicking on a " />
+        </node>
+        <node concept="1jUjqm" id="1EUSzWtKPpK" role="19SJt6">
+          <node concept="19SGf9" id="1EUSzWtKPpL" role="$DsGW">
+            <node concept="19SUe$" id="1EUSzWtKPpM" role="19SJt6">
+              <property role="19SUeA" value="refinement" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="1EUSzWtKPpN" role="19SJt6">
+          <property role="19SUeA" value=" node, a menu will pop-up and the analysis canbe started.  " />
+        </node>
+      </node>
+    </node>
+    <node concept="2SaynC" id="1EUSzWtKPtD" role="1_0VJ0">
+      <property role="TrG5h" value="cbd_refinement_check" />
+      <property role="2Sbq$t" value="true" />
+      <ref role="1wz7Nk" to="2ufg:3908G2fyyPu" resolve="_100_traffic_lights_controller_refinement" />
+      <node concept="2Sb_l4" id="1EUSzWtKPx8" role="2SbwM5">
+        <property role="2Sb_kV" value="nusmv_cbd_refinement_check.png" />
+        <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+      </node>
+      <node concept="OjmMv" id="1EUSzWtKPtH" role="2SaI5j">
+        <node concept="19SGf9" id="1EUSzWtKPtI" role="OjmMu">
+          <node concept="19SUe$" id="1EUSzWtKPtJ" role="19SJt6">
+            <property role="19SUeA" value="Example of a refinement declaration and check." />
+          </node>
+        </node>
+      </node>
+      <node concept="2bctqb" id="1EUSzWtKPtL" role="3SHJ_F" />
     </node>
   </node>
 </model>
