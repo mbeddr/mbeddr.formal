@@ -1344,7 +1344,7 @@
             </node>
           </node>
           <node concept="Xl_RD" id="2_LXzlpuvZB" role="3tpDZB">
-            <property role="Xl_RC" value="refinement: sender_refinement_1_FAIL" />
+            <property role="Xl_RC" value="refinement: sender_refinement_1_FAIL contract: out_gt_9" />
           </node>
         </node>
       </node>
@@ -1411,7 +1411,7 @@
             </node>
           </node>
           <node concept="Xl_RD" id="2_LXzlpuvkr" role="3tpDZB">
-            <property role="Xl_RC" value="refinement: sender_refinement_2_PASS" />
+            <property role="Xl_RC" value="refinement: sender_refinement_2_PASS contract: out_gt_9" />
           </node>
         </node>
       </node>
