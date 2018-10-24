@@ -7954,7 +7954,7 @@
         </node>
       </node>
       <node concept="2Hdtzr" id="2mjHtwTDQAe" role="2Hdtzq">
-        <property role="TrG5h" value="pedestrial_request" />
+        <property role="TrG5h" value="pedestrian_request" />
       </node>
       <node concept="2Hfkzq" id="2mjHtwTDQY0" role="2HcbjO">
         <node concept="2aiWHP" id="2mjHtwTDQYx" role="2Hfkx9">
@@ -8017,7 +8017,7 @@
                 <ref role="1tS8HL" node="2mjHtwTDQYz" resolve="Green" />
               </node>
               <node concept="32Ogvo" id="2mjHtwTE9VW" role="2H9I4J">
-                <ref role="32Ogvr" node="2mjHtwTDQAe" resolve="pedestrial_request" />
+                <ref role="32Ogvr" node="2mjHtwTDQAe" resolve="pedestrian_request" />
               </node>
               <node concept="1tS8IT" id="2mjHtwTDR19" role="2H9I4_">
                 <ref role="1tS8HL" node="2mjHtwTDQY$" resolve="Yellow" />
