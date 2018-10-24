@@ -1,7 +1,7 @@
 # mbeddr.formal
 
 ## Homepage
-- FASTEN Home - #[https://sites.google.com/site/fastenroot/]#
+- FASTEN Home - https://sites.google.com/site/fastenroot/
 
 ## Building
 
