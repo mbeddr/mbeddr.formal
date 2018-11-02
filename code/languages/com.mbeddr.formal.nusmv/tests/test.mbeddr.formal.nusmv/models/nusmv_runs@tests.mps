@@ -1758,5 +1758,77 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="1uIpCUujSXh">
+    <property role="TrG5h" value="_150_table_tests" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="1uIpCUujSXi" role="1SL9yI">
+      <property role="TrG5h" value="test_tables_PASS" />
+      <node concept="3cqZAl" id="1uIpCUujSXj" role="3clF45" />
+      <node concept="3clFbS" id="1uIpCUujSXk" role="3clF47">
+        <node concept="3cpWs8" id="1uIpCUujSXl" role="3cqZAp">
+          <node concept="3cpWsn" id="1uIpCUujSXm" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="1uIpCUujSXn" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="1uIpCUujSXo" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="1uIpCUujSXp" role="37wK5m">
+                <property role="Xl_RC" value="_150_tables_tests" />
+              </node>
+              <node concept="Xl_RD" id="1uIpCUujSXq" role="37wK5m">
+                <property role="Xl_RC" value="table_test_PASS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1uIpCUujSXr" role="3cqZAp">
+          <node concept="2OqwBi" id="1uIpCUujSXs" role="3vwVQn">
+            <node concept="37vLTw" id="1uIpCUujSXt" role="2Oq$k0">
+              <ref role="3cqZAo" node="1uIpCUujSXm" resolve="res" />
+            </node>
+            <node concept="liA8E" id="1uIpCUujSXu" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1uIpCUujSXv" role="1SL9yI">
+      <property role="TrG5h" value="test_tables_FAIL" />
+      <node concept="3cqZAl" id="1uIpCUujSXw" role="3clF45" />
+      <node concept="3clFbS" id="1uIpCUujSXx" role="3clF47">
+        <node concept="3cpWs8" id="1uIpCUujTi5" role="3cqZAp">
+          <node concept="3cpWsn" id="1uIpCUujTi6" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="1uIpCUujTi7" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="1uIpCUujTi8" role="33vP2m">
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <node concept="Xl_RD" id="1uIpCUujTi9" role="37wK5m">
+                <property role="Xl_RC" value="_150_tables_tests" />
+              </node>
+              <node concept="Xl_RD" id="1uIpCUujTia" role="37wK5m">
+                <property role="Xl_RC" value="table_test_FAIL" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1uIpCUujSXC" role="3cqZAp">
+          <node concept="2OqwBi" id="1uIpCUujSXD" role="3vwVQn">
+            <node concept="37vLTw" id="1uIpCUujTlx" role="2Oq$k0">
+              <ref role="3cqZAo" node="1uIpCUujTi6" resolve="res" />
+            </node>
+            <node concept="liA8E" id="1uIpCUujSXF" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

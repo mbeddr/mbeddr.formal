@@ -37,6 +37,12 @@
       <concept id="6584464211391019107" name="com.mbeddr.formal.nusmv.arch.structure.OutputRef" flags="ng" index="JmOWN" />
       <concept id="4599377533215110828" name="com.mbeddr.formal.nusmv.arch.structure.ModulesWiringSection" flags="ng" index="18TFfj" />
     </language>
+    <language id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular">
+      <concept id="3038640987157452671" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
+      <concept id="3038640987157452302" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
+        <child id="3038640987157837161" name="table" index="3PlPU9" />
+      </concept>
+    </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2295987781866635522" name="com.mbeddr.formal.nusmv.structure.ConditionalExpression" flags="ng" index="d4bQV">
         <child id="2295987781866647186" name="thenExpr" index="d498F" />
@@ -94,7 +100,7 @@
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
-      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumMemberRef" flags="ng" index="2HeeqP">
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
         <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
       </concept>
       <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
@@ -208,6 +214,20 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.base.tabular">
+      <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.OutputValue" flags="ng" index="2HuVrR">
+        <child id="5453576532413735747" name="exp" index="agTQP" />
+      </concept>
+      <concept id="3038640987154488121" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable" flags="ng" index="3PoB3p">
+        <child id="3038640987155459296" name="conditions" index="3Pv8s0" />
+        <child id="3038640987155459300" name="outputVariables" index="3Pv8s4" />
+      </concept>
+      <concept id="3038640987155459340" name="com.mbeddr.formal.base.tabular.structure.SubconditionResult" flags="ng" index="3Pv8rG">
+        <child id="3038640987155465385" name="cond" index="3PsQX9" />
+        <child id="3038640987155465389" name="subCond" index="3PsQXd" />
+        <child id="3038640987155465396" name="output" index="3PsQXk" />
       </concept>
     </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
@@ -2822,6 +2842,165 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2HdtXS" id="1uIpCUujSuh">
+    <property role="TrG5h" value="_150_tables_sut" />
+    <node concept="2Hdtz0" id="1uIpCUujSui" role="2HcuB8">
+      <property role="TrG5h" value="xor_" />
+      <node concept="2Hdtzr" id="1uIpCUujSuj" role="2Hdtzq">
+        <property role="TrG5h" value="in1" />
+      </node>
+      <node concept="2Hdtzr" id="1uIpCUujSC5" role="2Hdtzq">
+        <property role="TrG5h" value="in2" />
+      </node>
+      <node concept="3PnjRI" id="1uIpCUujSCc" role="2HcbjO">
+        <node concept="3PoB3p" id="1uIpCUujSCd" role="3PlPU9">
+          <node concept="3Pv8rG" id="1uIpCUujSCe" role="3Pv8s0">
+            <node concept="3Pv8rG" id="1uIpCUujSDU" role="3PsQXd">
+              <node concept="2HuVrR" id="1uIpCUujSCh" role="3PsQXk">
+                <node concept="2IPVmt" id="1uIpCUujSG8" role="agTQP">
+                  <property role="2IPVms" value="1" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="1uIpCUujSEq" role="3PsQX9">
+                <node concept="2IPVmt" id="1uIpCUujSEH" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+                <node concept="32Ogvo" id="1uIpCUujSEj" role="2H9Iav">
+                  <ref role="32Ogvr" node="1uIpCUujSC5" resolve="in2" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Pv8rG" id="1uIpCUujSEO" role="3PsQXd">
+              <node concept="2HbLFT" id="1uIpCUujSFv" role="3PsQX9">
+                <node concept="2IPVmt" id="1uIpCUujSFM" role="2H9Ial">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="32Ogvo" id="1uIpCUujSFo" role="2H9Iav">
+                  <ref role="32Ogvr" node="1uIpCUujSC5" resolve="in2" />
+                </node>
+              </node>
+              <node concept="2HuVrR" id="1uIpCUujSEQ" role="3PsQXk">
+                <node concept="2IPVmt" id="1uIpCUujSFX" role="agTQP">
+                  <property role="2IPVms" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="2HbLFT" id="1uIpCUujSD2" role="3PsQX9">
+              <node concept="2IPVmt" id="1uIpCUujSDl" role="2H9Ial">
+                <property role="2IPVms" value="1" />
+              </node>
+              <node concept="32Ogvo" id="1uIpCUujSCV" role="2H9Iav">
+                <ref role="32Ogvr" node="1uIpCUujSuj" resolve="in1" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Pv8rG" id="1uIpCUujSGf" role="3Pv8s0">
+            <node concept="3Pv8rG" id="1uIpCUujSGg" role="3PsQXd">
+              <node concept="2HuVrR" id="1uIpCUujSGh" role="3PsQXk">
+                <node concept="2IPVmt" id="1uIpCUujSGi" role="agTQP">
+                  <property role="2IPVms" value="0" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="1uIpCUujSGj" role="3PsQX9">
+                <node concept="2IPVmt" id="1uIpCUujSGk" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+                <node concept="32Ogvo" id="1uIpCUujSGl" role="2H9Iav">
+                  <ref role="32Ogvr" node="1uIpCUujSC5" resolve="in2" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Pv8rG" id="1uIpCUujSGm" role="3PsQXd">
+              <node concept="2HbLFT" id="1uIpCUujSGn" role="3PsQX9">
+                <node concept="2IPVmt" id="1uIpCUujSGo" role="2H9Ial">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="32Ogvo" id="1uIpCUujSGp" role="2H9Iav">
+                  <ref role="32Ogvr" node="1uIpCUujSC5" resolve="in2" />
+                </node>
+              </node>
+              <node concept="2HuVrR" id="1uIpCUujSGq" role="3PsQXk">
+                <node concept="2IPVmt" id="1uIpCUujSGr" role="agTQP">
+                  <property role="2IPVms" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="2HbLFT" id="1uIpCUujSGs" role="3PsQX9">
+              <node concept="2IPVmt" id="1uIpCUujSGt" role="2H9Ial">
+                <property role="2IPVms" value="0" />
+              </node>
+              <node concept="32Ogvo" id="1uIpCUujSGu" role="2H9Iav">
+                <ref role="32Ogvr" node="1uIpCUujSuj" resolve="in1" />
+              </node>
+            </node>
+          </node>
+          <node concept="3PnjMv" id="1uIpCUujSCB" role="3Pv8s4">
+            <property role="TrG5h" value="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="1uIpCUujSup" role="2HcuB8" />
+    <node concept="2SQmWS" id="1uIpCUujSuH" role="2HcuB8" />
+    <node concept="2SQmWS" id="1uIpCUujSw8" role="2HcuB8" />
+  </node>
+  <node concept="1J0nZ8" id="1uIpCUujSMY">
+    <property role="TrG5h" value="_150_tables_tests" />
+    <node concept="1J0nI2" id="1uIpCUujSR2" role="1J0nHx">
+      <property role="TrG5h" value="table_test_PASS" />
+      <ref role="1J0niy" node="1uIpCUujSui" resolve="xor_" />
+      <node concept="1J0m7Y" id="1uIpCUujSR3" role="1J0m7J">
+        <node concept="2IPVmt" id="1uIpCUujSRi" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujSR$" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujSS2" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="1uIpCUujSSj" role="1J0m7J">
+        <node concept="2IPVmt" id="1uIpCUujSSB" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujSST" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujST7" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="1uIpCUujSUy" role="1J0nHx" />
+    <node concept="1J0nI2" id="1uIpCUujSTe" role="1J0nHx">
+      <property role="TrG5h" value="table_test_FAIL" />
+      <ref role="1J0niy" node="1uIpCUujSui" resolve="xor_" />
+      <node concept="1J0m7Y" id="1uIpCUujSTf" role="1J0m7J">
+        <node concept="2IPVmt" id="1uIpCUujSTg" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujSTh" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujSTi" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="1uIpCUujSTj" role="1J0m7J">
+        <node concept="2IPVmt" id="1uIpCUujSTk" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujSTl" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="1uIpCUujSTm" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="1uIpCUujSNX" role="1J0nHx" />
   </node>
 </model>
 
