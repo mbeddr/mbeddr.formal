@@ -69,10 +69,15 @@
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -97,6 +102,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -107,6 +115,7 @@
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
   <node concept="312cEu" id="mJkiyMCeSe">
@@ -183,19 +192,38 @@
           </node>
           <node concept="3clFbS" id="mJkiyMCqmZ" role="2LFqv$">
             <node concept="3clFbJ" id="mJkiyMCeUR" role="3cqZAp">
-              <node concept="3fqX7Q" id="mJkiyMCeUS" role="3clFbw">
-                <node concept="2OqwBi" id="mJkiyMCf4t" role="3fr31v">
-                  <node concept="37vLTw" id="mJkiyMCf4s" role="2Oq$k0">
-                    <ref role="3cqZAo" node="mJkiyMCeUo" resolve="visitedModules" />
-                  </node>
-                  <node concept="liA8E" id="mJkiyMCf4u" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
-                    <node concept="2OqwBi" id="mJkiyMCfHZ" role="37wK5m">
-                      <node concept="2GrUjf" id="mJkiyMCtsE" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="mJkiyMCqmV" resolve="tpe" />
+              <node concept="1Wc70l" id="1uIpCUujfmw" role="3clFbw">
+                <node concept="3fqX7Q" id="1uIpCUujjnW" role="3uHU7w">
+                  <node concept="2OqwBi" id="1uIpCUujjnY" role="3fr31v">
+                    <node concept="37vLTw" id="1uIpCUujjnZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="mJkiyMCeUq" resolve="modulesToVisit" />
+                    </node>
+                    <node concept="3JPx81" id="1uIpCUujjo0" role="2OqNvi">
+                      <node concept="2OqwBi" id="1uIpCUujjuA" role="25WWJ7">
+                        <node concept="2GrUjf" id="1uIpCUujjuB" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="mJkiyMCqmV" resolve="tpe" />
+                        </node>
+                        <node concept="3TrEf2" id="1uIpCUujjuC" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gioj:7mSH3WmWrHY" resolve="module" />
+                        </node>
                       </node>
-                      <node concept="3TrEf2" id="mJkiyMCtN5" role="2OqNvi">
-                        <ref role="3Tt5mk" to="gioj:7mSH3WmWrHY" resolve="module" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="mJkiyMCeUS" role="3uHU7B">
+                  <node concept="2OqwBi" id="mJkiyMCf4t" role="3fr31v">
+                    <node concept="37vLTw" id="mJkiyMCf4s" role="2Oq$k0">
+                      <ref role="3cqZAo" node="mJkiyMCeUo" resolve="visitedModules" />
+                    </node>
+                    <node concept="liA8E" id="mJkiyMCf4u" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
+                      <node concept="2OqwBi" id="mJkiyMCfHZ" role="37wK5m">
+                        <node concept="2GrUjf" id="mJkiyMCtsE" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="mJkiyMCqmV" resolve="tpe" />
+                        </node>
+                        <node concept="3TrEf2" id="mJkiyMCtN5" role="2OqNvi">
+                          <ref role="3Tt5mk" to="gioj:7mSH3WmWrHY" resolve="module" />
+                        </node>
                       </node>
                     </node>
                   </node>
