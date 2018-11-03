@@ -3336,11 +3336,18 @@
             <node concept="3uibUv" id="1gJVC85LPAi" role="1tU5fm">
               <ref role="3uigEE" node="7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
             </node>
-            <node concept="2OqwBi" id="1SYPeSCpDbi" role="33vP2m">
-              <node concept="37vLTw" id="1SYPeSCpzq6" role="2Oq$k0">
-                <ref role="3cqZAo" node="2xeYpNCcGjn" resolve="res" />
+            <node concept="2YIFZM" id="1uIpCUumYQM" role="33vP2m">
+              <ref role="37wK5l" node="1uIpCUulQg3" resolve="liftTestResult" />
+              <ref role="1Pybhc" node="1uIpCUulOXG" resolve="NuSMVTestResultLifter" />
+              <node concept="2OqwBi" id="1SYPeSCpDbi" role="37wK5m">
+                <node concept="37vLTw" id="1SYPeSCpzq6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2xeYpNCcGjn" resolve="res" />
+                </node>
+                <node concept="1yVyf7" id="1SYPeSCpJpQ" role="2OqNvi" />
               </node>
-              <node concept="1yVyf7" id="1SYPeSCpJpQ" role="2OqNvi" />
+              <node concept="37vLTw" id="1uIpCUumZhO" role="37wK5m">
+                <ref role="3cqZAo" node="2xeYpNCcGja" resolve="tc" />
+              </node>
             </node>
           </node>
         </node>
@@ -8947,6 +8954,146 @@
     <node concept="3Tm1VV" id="6bK0Ak3D8jB" role="1B3o_S" />
     <node concept="NWlO9" id="6bK0Ak3GOM8" role="lGtFl">
       <property role="NWlVz" value="Finder for the node which represents the specification." />
+    </node>
+  </node>
+  <node concept="312cEu" id="1uIpCUulOXG">
+    <property role="3GE5qa" value="tests" />
+    <property role="TrG5h" value="NuSMVTestResultLifter" />
+    <node concept="3Tm1VV" id="1uIpCUulOXH" role="1B3o_S" />
+    <node concept="2tJIrI" id="1uIpCUulOZ2" role="jymVt" />
+    <node concept="2YIFZL" id="1uIpCUulQg3" role="jymVt">
+      <property role="TrG5h" value="liftTestResult" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1uIpCUulQg6" role="3clF47">
+        <node concept="3clFbJ" id="1uIpCUulR13" role="3cqZAp">
+          <node concept="3fqX7Q" id="1uIpCUulSBv" role="3clFbw">
+            <node concept="2OqwBi" id="1uIpCUulSBx" role="3fr31v">
+              <node concept="37vLTw" id="1uIpCUulSBy" role="2Oq$k0">
+                <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+              </node>
+              <node concept="1mIQ4w" id="1uIpCUulSBz" role="2OqNvi">
+                <node concept="chp4Y" id="1uIpCUulSB$" role="cj9EA">
+                  <ref role="cht4Q" to="fnq2:1uIpCUulsJ5" resolve="AllowedScenario" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1uIpCUulR15" role="3clFbx">
+            <node concept="3cpWs6" id="1uIpCUulSPZ" role="3cqZAp">
+              <node concept="37vLTw" id="1uIpCUulSUr" role="3cqZAk">
+                <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1uIpCUulSUQ" role="3cqZAp" />
+        <node concept="3SKdUt" id="1uIpCUulTkk" role="3cqZAp">
+          <node concept="3SKdUq" id="1uIpCUulTkm" role="3SKWNk">
+            <property role="3SKdUp" value="we are lifting the result originating from an &quot;allowed scenario analysis&quot;" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1uIpCUulTvV" role="3cqZAp" />
+        <node concept="3clFbJ" id="1uIpCUulV0m" role="3cqZAp">
+          <node concept="3clFbS" id="1uIpCUulV0o" role="3clFbx">
+            <node concept="3cpWs6" id="1uIpCUulWx1" role="3cqZAp">
+              <node concept="2ShNRf" id="1uIpCUulW_c" role="3cqZAk">
+                <node concept="1pGfFk" id="1uIpCUulZpg" role="2ShVmc">
+                  <ref role="37wK5l" node="6mm$FLYPy7H" resolve="NuSMVLiftedResult" />
+                  <node concept="37vLTw" id="1uIpCUulZtW" role="37wK5m">
+                    <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+                  </node>
+                  <node concept="2OqwBi" id="1uIpCUulZQ7" role="37wK5m">
+                    <node concept="37vLTw" id="1uIpCUulZC6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+                    </node>
+                    <node concept="liA8E" id="1uIpCUum03l" role="2OqNvi">
+                      <ref role="37wK5l" node="6Kf5KB71hLk" resolve="getRawResult" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1uIpCUulVnt" role="3clFbw">
+            <node concept="37vLTw" id="1uIpCUulV9r" role="2Oq$k0">
+              <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+            </node>
+            <node concept="liA8E" id="1uIpCUulVFT" role="2OqNvi">
+              <ref role="37wK5l" node="7mSH3Wn4cNo" resolve="isRuntimeError" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1uIpCUum3FA" role="3cqZAp" />
+        <node concept="3SKdUt" id="1uIpCUulTuP" role="3cqZAp">
+          <node concept="3SKdUq" id="1uIpCUulTuR" role="3SKWNk">
+            <property role="3SKdUp" value="if NuSMV finds a scenario (cex) then the result is PASS else it is FAIL" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1uIpCUum3Xi" role="3cqZAp">
+          <node concept="3cpWsn" id="1uIpCUum3Xl" role="3cpWs9">
+            <property role="TrG5h" value="scenarioIsAllowed" />
+            <node concept="10P_77" id="1uIpCUum3Xg" role="1tU5fm" />
+            <node concept="2OqwBi" id="1uIpCUum4mR" role="33vP2m">
+              <node concept="37vLTw" id="1uIpCUum48G" role="2Oq$k0">
+                <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+              </node>
+              <node concept="liA8E" id="1uIpCUum4Fo" role="2OqNvi">
+                <ref role="37wK5l" node="7mSH3Wn4cN6" resolve="isFail" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1uIpCUum0dS" role="3cqZAp">
+          <node concept="2ShNRf" id="1uIpCUum0n4" role="3cqZAk">
+            <node concept="1pGfFk" id="1uIpCUum0T2" role="2ShVmc">
+              <ref role="37wK5l" node="7mSH3Wn4J5_" resolve="NuSMVLiftedResult" />
+              <node concept="37vLTw" id="1uIpCUum0Z5" role="37wK5m">
+                <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+              </node>
+              <node concept="2OqwBi" id="1uIpCUum1td" role="37wK5m">
+                <node concept="37vLTw" id="1uIpCUum1e8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+                </node>
+                <node concept="liA8E" id="1uIpCUum1Oy" role="2OqNvi">
+                  <ref role="37wK5l" node="6Kf5KB71hLk" resolve="getRawResult" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1uIpCUum2gj" role="37wK5m">
+                <node concept="37vLTw" id="1uIpCUum21X" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+                </node>
+                <node concept="liA8E" id="1uIpCUum2tn" role="2OqNvi">
+                  <ref role="37wK5l" node="7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="1uIpCUum4RM" role="37wK5m">
+                <ref role="3cqZAo" node="1uIpCUum3Xl" resolve="scenarioIsAllowed" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1uIpCUulQ3d" role="1B3o_S" />
+      <node concept="3uibUv" id="1uIpCUulQfT" role="3clF45">
+        <ref role="3uigEE" node="7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+      </node>
+      <node concept="37vLTG" id="1uIpCUulQ_I" role="3clF46">
+        <property role="TrG5h" value="initial" />
+        <node concept="3uibUv" id="1uIpCUulQ_H" role="1tU5fm">
+          <ref role="3uigEE" node="7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1uIpCUulQAJ" role="3clF46">
+        <property role="TrG5h" value="tc" />
+        <node concept="3Tqbb2" id="1uIpCUulQJq" role="1tU5fm">
+          <ref role="ehGHo" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+        </node>
+      </node>
+    </node>
+    <node concept="NWlO9" id="1uIpCUum4W6" role="lGtFl">
+      <property role="NWlVz" value="Lifter for test results considering the allowed scenarios." />
     </node>
   </node>
 </model>

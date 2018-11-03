@@ -214,5 +214,11 @@
       <ref role="PrY4T" node="3YQnHsZ2Vx" resolve="ITestsCollectionContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1uIpCUulsJ5">
+    <property role="EcuMT" value="1706414071547808709" />
+    <property role="TrG5h" value="AllowedScenario" />
+    <property role="34LRSv" value="allowed scenario" />
+    <ref role="1TJDcQ" node="43FRfGJUEtT" resolve="TestCase" />
+  </node>
 </model>
 
