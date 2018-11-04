@@ -289,6 +289,12 @@
         <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
       </node>
     </node>
+    <node concept="$CzcT" id="1uIpCUuqi1q" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1uIpCUuqi6_" role="$CzcU">
+        <ref role="1_0j5g" node="1uIpCUuqeRD" resolve="_021_scenarios_realizability" />
+      </node>
+    </node>
     <node concept="$CzcT" id="3slobAdyWHW" role="1_0VJ0">
       <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="3slobAdyWPm" role="$CzcU">
@@ -319,6 +325,12 @@
         <ref role="1_0j5g" node="70Z3iwfi4xA" resolve="_100_operator_panels" />
       </node>
     </node>
+    <node concept="$CzcT" id="1uIpCUuqeMY" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="1uIpCUuqeRa" role="$CzcU">
+        <ref role="1_0j5g" node="2mjHtwTD$1m" resolve="_030_architecture" />
+      </node>
+    </node>
     <node concept="$CzcT" id="3slobAdyWXC" role="1_0VJ0">
       <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="3slobAdyX0q" role="$CzcU">
@@ -336,6 +348,9 @@
     </node>
     <node concept="1_0j5j" id="3slobAdyWge" role="1DXQ57">
       <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
+    </node>
+    <node concept="1_0j5j" id="1uIpCUuqi68" role="1DXQ57">
+      <ref role="1_0j5g" node="1uIpCUuqeRD" resolve="_021_scenarios_realizability" />
     </node>
     <node concept="1_0j5j" id="3slobAdyWgr" role="1DXQ57">
       <ref role="1_0j5g" node="2mjHtwTD$1m" resolve="_030_architecture" />
@@ -516,7 +531,6 @@
       </node>
       <node concept="2SaynC" id="4Hts7PY_LlK" role="1_0VJ0">
         <property role="TrG5h" value="nusmv_generalized_tests" />
-        <property role="2Sbq$t" value="true" />
         <ref role="1wz7Nk" to="qmbe:407WgdX8xWI" resolve="_020_emergency_stop_tests" />
         <node concept="2Sb_l4" id="4Hts7PY_LlL" role="2SbwM5">
           <property role="2Sb_kV" value="nusmv_generalized_tests.png" />
@@ -941,7 +955,6 @@
       </node>
       <node concept="2SaynC" id="7Z6$Wo5MmUs" role="1_0VJ0">
         <property role="TrG5h" value="nusmv_arch_from_tabular_modules" />
-        <ref role="1wz7Nk" to="l9d9:2mjHtwTGSST" resolve="_030_architecture_with_tables" />
         <node concept="2Sb_l4" id="7Z6$Wo5MmY0" role="2SbwM5">
           <property role="2Sb_kV" value="nusmv_arch_from_modules_with_tabular_spec.png" />
           <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
@@ -1541,6 +1554,52 @@
         </node>
       </node>
       <node concept="2bctqb" id="1EUSzWtKPtL" role="3SHJ_F" />
+    </node>
+  </node>
+  <node concept="1_1swa" id="1uIpCUuqeRD">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_021_scenarios_realizability" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1mvXsy" id="1uIpCUuqeRE" role="1_0VJ0">
+      <property role="TrG5h" value="scenario_realizability" />
+      <property role="1_0VJr" value="Realizability of Scenarios" />
+      <node concept="1_1sxE" id="1uIpCUuqeRI" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0LV8" id="1uIpCUuqeRT" role="1_0VJ0">
+        <node concept="19SGf9" id="1uIpCUuqeRU" role="1_0LWR">
+          <node concept="19SUe$" id="1uIpCUuqeRV" role="19SJt6">
+            <property role="19SUeA" value="Unit tests check that given a set of values for the inputs, the system produces as outputs exactly the desired values (if they are not specified as &quot;don't care&quot;). The unit tests assumes that the system is deterministic.&#10;&#10;If the specified system contains non-determinism, then multiple outputs are possible for the same input values. In this case, unit tests do not help - we provide a similar construct " />
+          </node>
+          <node concept="1jUjqm" id="1uIpCUuqeS9" role="19SJt6">
+            <node concept="19SGf9" id="1uIpCUuqeSa" role="$DsGW">
+              <node concept="19SUe$" id="1uIpCUuqeSb" role="19SJt6">
+                <property role="19SUeA" value="available scenario" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1uIpCUuqeSc" role="19SJt6">
+            <property role="19SUeA" value=" which specifies a scenario (values for inputs and outputs) and we can check if this scenario is realizable in the system." />
+          </node>
+        </node>
+      </node>
+      <node concept="2SaynC" id="1uIpCUuqhNb" role="1_0VJ0">
+        <property role="TrG5h" value="allowed_scenarios" />
+        <property role="2Sbq$t" value="true" />
+        <ref role="1wz7Nk" to="qmbe:1uIpCUuq9wS" resolve="_030_pedestrian_lights_control_scenarios" />
+        <node concept="2Sb_l4" id="1uIpCUuqhNZ" role="2SbwM5">
+          <property role="2Sb_kV" value="nusmv_tests_allowed_scenarios.png" />
+          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+        </node>
+        <node concept="OjmMv" id="1uIpCUuqhNf" role="2SaI5j">
+          <node concept="19SGf9" id="1uIpCUuqhNg" role="OjmMu">
+            <node concept="19SUe$" id="1uIpCUuqhNh" role="19SJt6">
+              <property role="19SUeA" value="Example of two allowed scenarios for a system containing nondeterminism. " />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="1uIpCUuqhNj" role="3SHJ_F" />
+      </node>
     </node>
   </node>
 </model>
