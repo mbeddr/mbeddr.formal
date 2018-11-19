@@ -8,6 +8,13 @@
   <imports />
   <registry>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="2685719935121672208" name="com.mbeddr.formal.nusmv.cbd.structure.Refine" flags="ng" index="eml0t">
+        <child id="2685719935121672270" name="moduleRef" index="eml13" />
+        <child id="2685719935121672265" name="interfaceRef" index="eml14" />
+      </concept>
+      <concept id="2685719935121672279" name="com.mbeddr.formal.nusmv.cbd.structure.ModuleRef" flags="ng" index="eml1q">
+        <reference id="2685719935121672280" name="module" index="eml1l" />
+      </concept>
       <concept id="1258148499699359659" name="com.mbeddr.formal.nusmv.cbd.structure.IContractsContainer" flags="ng" index="3Ic8zf">
         <child id="9066112305507315710" name="contracts" index="3UnIb_" />
       </concept>
@@ -65,14 +72,32 @@
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
       <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
+      </concept>
+      <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
+        <child id="7842584090743586905" name="content" index="2HcbjO" />
+      </concept>
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
+      <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
+        <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
       <concept id="9133754867501326618" name="com.mbeddr.formal.nusmv.structure.Globally" flags="ng" index="2SafMM" />
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
+        <child id="1989356068342053586" name="definitions" index="32O2ov" />
+      </concept>
       <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
       <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
         <child id="8482728081216657211" name="exp" index="1yBIc4" />
+      </concept>
+      <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
+        <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -154,7 +179,7 @@
         </node>
       </node>
       <node concept="3UTh7Y" id="GZcvICZlKj" role="3UnIb_">
-        <property role="TrG5h" value="out_gt_0" />
+        <property role="TrG5h" value="out_gt_9" />
         <node concept="2SafMM" id="GZcvICZlKu" role="1yBDGv">
           <node concept="nE0YI" id="GZcvICZlKX" role="1yBIc4">
             <node concept="3Ug1Ap" id="GZcvICZlKC" role="2H9Iav">
@@ -1608,6 +1633,64 @@
       </node>
     </node>
     <node concept="2SQmWS" id="6xNJt7lFkt4" role="2HcuB8" />
+  </node>
+  <node concept="2HdtXS" id="2l5A0OFaq6S">
+    <property role="TrG5h" value="_300_refinement_interface2module" />
+    <node concept="2Hdtz0" id="2l5A0OFaqa8" role="2HcuB8">
+      <property role="TrG5h" value="SenderImpl_1" />
+      <node concept="32O2o0" id="2l5A0OFaqaj" role="2HcbjO">
+        <node concept="1zoerA" id="2l5A0OFaqaL" role="32O2ov">
+          <property role="TrG5h" value="out" />
+          <node concept="2IPVmt" id="2l5A0OFaqbL" role="1zoetD">
+            <property role="2IPVms" value="-19" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="2_LXzlptNsU" role="2HcuB8" />
+    <node concept="2Hdtz0" id="2_LXzlptNsx" role="2HcuB8">
+      <property role="TrG5h" value="SenderImpl_2" />
+      <node concept="32O2o0" id="2_LXzlptNsy" role="2HcbjO">
+        <node concept="1zoerA" id="2_LXzlptNsz" role="32O2ov">
+          <property role="TrG5h" value="out" />
+          <node concept="2He$iJ" id="2_LXzlpulDw" role="1zoetD">
+            <ref role="2He$iI" node="2_LXzlptNul" resolve="v" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="2_LXzlptNu6" role="2HcbjO">
+        <node concept="2Hdskp" id="2_LXzlptNul" role="2Hfkx9">
+          <property role="TrG5h" value="v" />
+          <node concept="dhpfj" id="2_LXzlptNuz" role="2HdssA">
+            <node concept="2IPVmt" id="2_LXzlptNuy" role="dhpfi">
+              <property role="2IPVms" value="9" />
+            </node>
+            <node concept="2IPVmt" id="2_LXzlptNuT" role="dhpfn">
+              <property role="2IPVms" value="42" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="2l5A0OFaqbW" role="2HcuB8" />
+    <node concept="eml0t" id="2l5A0OFaqcE" role="2HcuB8">
+      <property role="TrG5h" value="sender_refinement_1_FAIL" />
+      <node concept="3Ug1AZ" id="2l5A0OFaqdg" role="eml14">
+        <ref role="3Ug1AY" node="GZcvICZlJe" resolve="Sender" />
+      </node>
+      <node concept="eml1q" id="2l5A0OFaqdm" role="eml13">
+        <ref role="eml1l" node="2l5A0OFaqa8" resolve="SenderImpl_1" />
+      </node>
+    </node>
+    <node concept="eml0t" id="2_LXzlptNsj" role="2HcuB8">
+      <property role="TrG5h" value="sender_refinement_2_PASS" />
+      <node concept="3Ug1AZ" id="2_LXzlptNsk" role="eml14">
+        <ref role="3Ug1AY" node="GZcvICZlJe" resolve="Sender" />
+      </node>
+      <node concept="eml1q" id="2_LXzlptNvh" role="eml13">
+        <ref role="eml1l" node="2_LXzlptNsx" resolve="SenderImpl_2" />
+      </node>
+    </node>
   </node>
 </model>
 

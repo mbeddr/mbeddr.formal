@@ -369,7 +369,7 @@
   <node concept="1TIwiD" id="6NmtaR1VD8o">
     <property role="EcuMT" value="7842584090744099352" />
     <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="EnumMemberRef" />
+    <property role="TrG5h" value="EnumerationMemberRef" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="6NmtaR1VD8p" role="1TKVEi">
       <property role="IQ2ns" value="7842584090744099353" />
@@ -1613,6 +1613,10 @@
     <property role="34LRSv" value="&lt;-&gt;" />
     <property role="R4oN_" value="if and only if" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
+  <node concept="PlHQZ" id="2_LXzlpoj8Y">
+    <property role="EcuMT" value="2986438736916591166" />
+    <property role="TrG5h" value="IReducedToMainModule" />
   </node>
 </model>
 

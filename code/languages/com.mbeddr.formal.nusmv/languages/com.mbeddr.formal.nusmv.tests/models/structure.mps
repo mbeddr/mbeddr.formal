@@ -98,6 +98,9 @@
     <node concept="PrWs8" id="6Kf5KB75yDC" role="PzmwI">
       <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
     </node>
+    <node concept="PrWs8" id="2_LXzlpojMi" role="PzmwI">
+      <ref role="PrY4T" to="gioj:2_LXzlpoj8Y" resolve="IReducedToMainModule" />
+    </node>
     <node concept="1TJgyj" id="43FRfGJUExp" role="1TKVEi">
       <property role="IQ2ns" value="4678075609353201753" />
       <property role="20lmBu" value="reference" />
@@ -210,6 +213,12 @@
     <node concept="PrWs8" id="67icRu60OOG" role="PzmwI">
       <ref role="PrY4T" node="3YQnHsZ2Vx" resolve="ITestsCollectionContent" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1uIpCUulsJ5">
+    <property role="EcuMT" value="1706414071547808709" />
+    <property role="TrG5h" value="AllowedScenario" />
+    <property role="34LRSv" value="allowed scenario" />
+    <ref role="1TJDcQ" node="43FRfGJUEtT" resolve="TestCase" />
   </node>
 </model>
 

@@ -925,7 +925,7 @@
   </node>
   <node concept="13h7C7" id="7Z6$Wo5RGFW">
     <property role="3GE5qa" value="expressions" />
-    <ref role="13h7C2" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+    <ref role="13h7C2" to="gioj:6NmtaR1VD8o" resolve="EnumerationMemberRef" />
     <node concept="13hLZK" id="7Z6$Wo5RGFX" role="13h7CW">
       <node concept="3clFbS" id="7Z6$Wo5RGFY" role="2VODD2" />
     </node>
@@ -1231,6 +1231,22 @@
       <node concept="2I9FWS" id="1txDGjXgQS0" role="3clF45">
         <ref role="2I9WkF" to="tpck:h0TrEE$" resolve="INamedConcept" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2_LXzlpoj9o">
+    <ref role="13h7C2" to="gioj:2_LXzlpoj8Y" resolve="IReducedToMainModule" />
+    <node concept="13i0hz" id="2_LXzlpoj9z" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="moduleCalledFromMain" />
+      <node concept="3Tm1VV" id="2_LXzlpoj9$" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2_LXzlpoj9N" role="3clF45">
+        <ref role="ehGHo" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+      </node>
+      <node concept="3clFbS" id="2_LXzlpoj9A" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="2_LXzlpoj9p" role="13h7CW">
+      <node concept="3clFbS" id="2_LXzlpoj9q" role="2VODD2" />
     </node>
   </node>
 </model>
