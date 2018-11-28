@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="6z8w" ref="r:d4c22a7f-7332-4377-bba1-18afaeea0257(com.mbeddr.formal.nusmv.ext.structure)" implicit="true" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -32,6 +33,9 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -53,6 +57,13 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -144,6 +155,59 @@
     <node concept="1YaCAy" id="1txDGjXgq1p" role="1YuTPh">
       <property role="TrG5h" value="functionMacroCall" />
       <ref role="1YaFvo" to="6z8w:1gJVC85KmPN" resolve="FunctionMacroCall" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="26dfgZmiLJj">
+    <property role="TrG5h" value="check_ConstantDefinition" />
+    <property role="3GE5qa" value="constants" />
+    <node concept="3clFbS" id="26dfgZmiLJk" role="18ibNy">
+      <node concept="3clFbJ" id="26dfgZmiLJF" role="3cqZAp">
+        <node concept="2OqwBi" id="26dfgZmiM_4" role="3clFbw">
+          <node concept="2OqwBi" id="26dfgZmiLWF" role="2Oq$k0">
+            <node concept="1YBJjd" id="26dfgZmiLJU" role="2Oq$k0">
+              <ref role="1YBMHb" node="26dfgZmiLJm" resolve="constantDefinition" />
+            </node>
+            <node concept="3TrEf2" id="26dfgZmiMbw" role="2OqNvi">
+              <ref role="3Tt5mk" to="6z8w:1gJVC85EQXB" resolve="value" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="26dfgZmiMSf" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="26dfgZmiLJH" role="3clFbx">
+          <node concept="2Mj0R9" id="26dfgZmiMUa" role="3cqZAp">
+            <node concept="Xl_RD" id="26dfgZmiNIr" role="2MkJ7o">
+              <property role="Xl_RC" value="value must be statically evaluatable" />
+            </node>
+            <node concept="2OqwBi" id="26dfgZmiO6O" role="2OEOjV">
+              <node concept="1YBJjd" id="26dfgZmiNOF" role="2Oq$k0">
+                <ref role="1YBMHb" node="26dfgZmiLJm" resolve="constantDefinition" />
+              </node>
+              <node concept="3TrEf2" id="26dfgZmiODq" role="2OqNvi">
+                <ref role="3Tt5mk" to="6z8w:1gJVC85EQXB" resolve="value" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="26dfgZmiNko" role="2MkoU_">
+              <node concept="2OqwBi" id="26dfgZmiMUy" role="2Oq$k0">
+                <node concept="1YBJjd" id="26dfgZmiMUz" role="2Oq$k0">
+                  <ref role="1YBMHb" node="26dfgZmiLJm" resolve="constantDefinition" />
+                </node>
+                <node concept="3TrEf2" id="26dfgZmiMU$" role="2OqNvi">
+                  <ref role="3Tt5mk" to="6z8w:1gJVC85EQXB" resolve="value" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="26dfgZmiNDz" role="2OqNvi">
+                <node concept="chp4Y" id="26dfgZmiNFD" role="cj9EA">
+                  <ref role="cht4Q" to="ehqg:1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="26dfgZmiLJm" role="1YuTPh">
+      <property role="TrG5h" value="constantDefinition" />
+      <ref role="1YaFvo" to="6z8w:1gJVC85EQiq" resolve="ConstantDefinition" />
     </node>
   </node>
 </model>

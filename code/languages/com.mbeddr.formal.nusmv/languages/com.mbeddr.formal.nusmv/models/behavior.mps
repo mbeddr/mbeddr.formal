@@ -87,6 +87,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -1247,6 +1250,33 @@
     </node>
     <node concept="13hLZK" id="2_LXzlpoj9p" role="13h7CW">
       <node concept="3clFbS" id="2_LXzlpoj9q" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="26dfgZmiJSb">
+    <property role="3GE5qa" value="expressions.literals" />
+    <ref role="13h7C2" to="gioj:6mm$FLYZR9W" resolve="WordConstant" />
+    <node concept="13hLZK" id="26dfgZmiJSc" role="13h7CW">
+      <node concept="3clFbS" id="26dfgZmiJSd" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="26dfgZmiJSB" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="evaluateStatically" />
+      <ref role="13i0hy" to="ox2v:26dfgZmiDpi" resolve="evaluateStatically" />
+      <node concept="3Tm1VV" id="26dfgZmiJSC" role="1B3o_S" />
+      <node concept="3clFbS" id="26dfgZmiJSF" role="3clF47">
+        <node concept="3clFbF" id="26dfgZmiJTY" role="3cqZAp">
+          <node concept="2OqwBi" id="26dfgZmiK4t" role="3clFbG">
+            <node concept="13iPFW" id="26dfgZmiJTV" role="2Oq$k0" />
+            <node concept="3TrEf2" id="26dfgZmiKkt" role="2OqNvi">
+              <ref role="3Tt5mk" to="gioj:6mm$FLYZRIW" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="26dfgZmiJSG" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
     </node>
   </node>
 </model>
