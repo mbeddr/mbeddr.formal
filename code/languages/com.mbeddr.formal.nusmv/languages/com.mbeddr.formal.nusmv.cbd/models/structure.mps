@@ -2,7 +2,7 @@
 <model ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -175,6 +175,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3w9GqVcFVUy" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
+    </node>
     <node concept="PrWs8" id="7RhjhI7zUWn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -382,6 +385,19 @@
       <ref role="20lvS9" node="7RhjhI7co2N" resolve="IContract" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2l5A0OF7cxn">
+    <property role="EcuMT" value="2685719935121672279" />
+    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <property role="TrG5h" value="ModuleRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2l5A0OF7cxo" role="1TKVEi">
+      <property role="IQ2ns" value="2685719935121672280" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
+  </node>
   <node concept="1TIwiD" id="2l5A0OF7cwg">
     <property role="EcuMT" value="2685719935121672208" />
     <property role="TrG5h" value="Refine" />
@@ -424,19 +440,6 @@
     </node>
     <node concept="PrWs8" id="2_LXzlpomCT" role="PzmwI">
       <ref role="PrY4T" to="gioj:2_LXzlpoj8Y" resolve="IReducedToMainModule" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2l5A0OF7cxn">
-    <property role="EcuMT" value="2685719935121672279" />
-    <property role="3GE5qa" value="cbd.nusmv_refinement" />
-    <property role="TrG5h" value="ModuleRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2l5A0OF7cxo" role="1TKVEi">
-      <property role="IQ2ns" value="2685719935121672280" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
     </node>
   </node>
 </model>
