@@ -71,6 +71,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1ZejHLlNgt6" resolve="IHarnessModuleContent" />
     </node>
+    <node concept="1TJgyj" id="26dfgZlSsOM" role="1TKVEi">
+      <property role="IQ2ns" value="2417655713189973298" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="suvRef" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="vshk:26dfgZlSsOR" resolve="SUVRef" />
+    </node>
     <node concept="1QGGSu" id="1ZejHLlNjFG" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/spin_harness.png" />
     </node>

@@ -10,7 +10,7 @@
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -240,6 +240,13 @@
     </node>
     <node concept="PrWs8" id="6fYDdj_beke" role="PrDN$">
       <ref role="PrY4T" node="1ZejHLlNdnf" resolve="ITyped" />
+    </node>
+    <node concept="1TJgyj" id="26dfgZm48FZ" role="1TKVEi">
+      <property role="IQ2ns" value="2417655713193036543" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="postfixTypeQualifier" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="26dfgZm48G2" resolve="TypeQualifierBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="4_pH3zvgMKD">
@@ -873,6 +880,67 @@
     <property role="EcuMT" value="7205377688125462608" />
     <property role="3GE5qa" value="c" />
     <property role="TrG5h" value="ICCodeContext" />
+  </node>
+  <node concept="1TIwiD" id="26dfgZm48G2">
+    <property role="EcuMT" value="2417655713193036546" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="TypeQualifierBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="26dfgZm48GA" role="1TKVEi">
+      <property role="IQ2ns" value="2417655713193036582" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="qualifier" />
+      <ref role="20lvS9" node="26dfgZm48G2" resolve="TypeQualifierBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="26dfgZm48Gk">
+    <property role="EcuMT" value="2417655713193036564" />
+    <property role="3GE5qa" value="types.variables" />
+    <property role="TrG5h" value="ArrayQualifier" />
+    <property role="34LRSv" value="[" />
+    <ref role="1TJDcQ" node="26dfgZm48G2" resolve="TypeQualifierBase" />
+    <node concept="1TJgyj" id="26dfgZm48I0" role="1TKVEi">
+      <property role="IQ2ns" value="2417655713193036672" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5mKzygM3tM3">
+    <property role="EcuMT" value="6174591375234686083" />
+    <property role="3GE5qa" value="types.array" />
+    <property role="TrG5h" value="ArrayType" />
+    <ref role="1TJDcQ" to="vshk:1ZejHLlNdmO" resolve="TypeBase" />
+    <node concept="1TJgyj" id="5mKzygM3tM7" role="1TKVEi">
+      <property role="IQ2ns" value="6174591375234686087" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="inner" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vshk:1ZejHLlNdmO" resolve="TypeBase" />
+    </node>
+    <node concept="1TJgyj" id="5mKzygM3tND" role="1TKVEi">
+      <property role="IQ2ns" value="6174591375234686185" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="26dfgZmfD1n">
+    <property role="EcuMT" value="2417655713196052567" />
+    <property role="3GE5qa" value="expressions.unary" />
+    <property role="TrG5h" value="ArrayAccessExpression" />
+    <property role="34LRSv" value="[" />
+    <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
+    <node concept="1TJgyj" id="26dfgZmfD1D" role="1TKVEi">
+      <property role="IQ2ns" value="2417655713196052585" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="idx" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
   </node>
 </model>
 

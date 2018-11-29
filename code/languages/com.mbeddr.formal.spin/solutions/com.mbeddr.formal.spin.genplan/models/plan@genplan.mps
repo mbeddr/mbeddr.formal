@@ -4,8 +4,11 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
+    <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="7qe3" ref="r:65dc22a9-884e-4aad-aa27-16060900ad59(_010_spin_hdl_high_prio@generator)" />
+  </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
@@ -15,6 +18,15 @@
         <child id="2944629966652439181" name="languages" index="1t_9vn" />
       </concept>
       <concept id="6257322641293267918" name="jetbrains.mps.lang.generator.plan.structure.CheckpointDeclaration" flags="ng" index="19BiC4" />
+    </language>
+    <language id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen">
+      <concept id="961590472824346305" name="de.slisson.mps.hacks.xmodelgen.structure.MappingConfigStep" flags="ng" index="2Pg1uL">
+        <child id="7786846688815598697" name="mappingConfigurations" index="3VlUeB" />
+      </concept>
+      <concept id="961590472824361214" name="de.slisson.mps.hacks.xmodelgen.structure.MCListLanguageIdentity" flags="ng" index="2Pgd6e" />
+      <concept id="7786846688815408482" name="de.slisson.mps.hacks.xmodelgen.structure.MappingConfigurationReference" flags="ng" index="3Vl8EG">
+        <reference id="7786846688815408483" name="mc" index="3Vl8EH" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
@@ -30,6 +42,12 @@
   </registry>
   <node concept="2VgMpV" id="4sMKqP$UuE8">
     <property role="TrG5h" value="Spin and MDCC generator plan" />
+    <node concept="2Pg1uL" id="2yuIwRzaMZ1" role="2VgMA7">
+      <node concept="2Pgd6e" id="2yuIwRzaMZ2" role="1t_9vn" />
+      <node concept="3Vl8EG" id="2yuIwRzaMZ4" role="3VlUeB">
+        <ref role="3Vl8EH" to="7qe3:26dfgZmjKRk" resolve="_050_nondets_arrays" />
+      </node>
+    </node>
     <node concept="2VgMA2" id="4sMKqP$UuEd" role="2VgMA7">
       <node concept="2V$Bhx" id="4sMKqP$UuEk" role="1t_9vn">
         <property role="2V$B1T" value="628c1bba-6b54-4c71-927c-3cff044349e4" />

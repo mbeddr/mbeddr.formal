@@ -26,8 +26,9 @@
     <import index="2ocj" ref="r:0af55dc0-14f5-45c8-bf12-3c673ca075ac(com.mbeddr.formal.base.tooling.analyzer)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="pr99" ref="r:d360eb14-6c2a-48bb-8591-1dfcadaf9f6e(com.mbeddr.formal.spin.utils)" />
-    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
-    <import index="9yqz" ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)" implicit="true" />
+    <import index="9yqz" ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)" />
+    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" implicit="true" />
   </imports>
@@ -296,14 +297,8 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
-      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
-        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -390,45 +385,41 @@
     </node>
     <node concept="tnohg" id="EVDykUC7Sj" role="tncku">
       <node concept="3clFbS" id="EVDykUC7Sk" role="2VODD2">
+        <node concept="3cpWs8" id="2yuIwRzi_eq" role="3cqZAp">
+          <node concept="3cpWsn" id="2yuIwRzi_er" role="3cpWs9">
+            <property role="TrG5h" value="environment" />
+            <node concept="3Tqbb2" id="2yuIwRzi_em" role="1tU5fm">
+              <ref role="ehGHo" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
+            </node>
+            <node concept="2OqwBi" id="2yuIwRzi_es" role="33vP2m">
+              <node concept="2OqwBi" id="2yuIwRzi_et" role="2Oq$k0">
+                <node concept="2WthIp" id="2yuIwRzi_eu" role="2Oq$k0" />
+                <node concept="3gHZIF" id="2yuIwRzi_ev" role="2OqNvi">
+                  <ref role="2WH_rO" node="EVDykUCksa" resolve="nodeFromModel" />
+                </node>
+              </node>
+              <node concept="2Xjw5R" id="2yuIwRzi_ew" role="2OqNvi">
+                <node concept="1xMEDy" id="2yuIwRzi_ex" role="1xVPHs">
+                  <node concept="chp4Y" id="2yuIwRzi_ey" role="ri$Ld">
+                    <ref role="cht4Q" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="2yuIwRzi_ez" role="1xVPHs" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3lXW7OZ6VXk" role="3cqZAp">
           <node concept="3cpWsn" id="3lXW7OZ6VXn" role="3cpWs9">
             <property role="TrG5h" value="aa" />
             <node concept="3Tqbb2" id="3lXW7OZ6VXi" role="1tU5fm">
               <ref role="ehGHo" to="9yqz:4_pH3zvoE5u" resolve="AssertionsSpinAnalysis" />
             </node>
-            <node concept="2ShNRf" id="3lXW7OZ6W2T" role="33vP2m">
-              <node concept="3zrR0B" id="3lXW7OZ6Wfj" role="2ShVmc">
-                <node concept="3Tqbb2" id="3lXW7OZ6Wfl" role="3zrR0E">
-                  <ref role="ehGHo" to="9yqz:4_pH3zvoE5u" resolve="AssertionsSpinAnalysis" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3lXW7OZ6WoC" role="3cqZAp">
-          <node concept="37vLTI" id="3lXW7OZ6X1D" role="3clFbG">
-            <node concept="2OqwBi" id="Rd$2EC5BoX" role="37vLTx">
-              <node concept="2OqwBi" id="3lXW7OZ6X9Z" role="2Oq$k0">
-                <node concept="2WthIp" id="3lXW7OZ6X7$" role="2Oq$k0" />
-                <node concept="3gHZIF" id="3lXW7OZ6Xle" role="2OqNvi">
-                  <ref role="2WH_rO" node="EVDykUCksa" resolve="nodeFromModel" />
-                </node>
-              </node>
-              <node concept="2Xjw5R" id="Rd$2EC5Bva" role="2OqNvi">
-                <node concept="1xMEDy" id="Rd$2EC5Bvc" role="1xVPHs">
-                  <node concept="chp4Y" id="1ZejHLm49ia" role="ri$Ld">
-                    <ref role="cht4Q" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="Rd$2EC5Bzu" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3lXW7OZ6WvW" role="37vLTJ">
-              <node concept="37vLTw" id="3lXW7OZ6WoA" role="2Oq$k0">
-                <ref role="3cqZAo" node="3lXW7OZ6VXn" resolve="aa" />
-              </node>
-              <node concept="3TrEf2" id="4_pH3zvpIUI" role="2OqNvi">
-                <ref role="3Tt5mk" to="9yqz:4_pH3zvo$xG" resolve="env" />
+            <node concept="2YIFZM" id="2yuIwRzjf7x" role="33vP2m">
+              <ref role="1Pybhc" to="5do7:2yuIwRzjd20" resolve="SpinAssertionsAnalysesUtils" />
+              <ref role="37wK5l" to="5do7:2yuIwRzjd3n" resolve="getAssertionsAnalysis" />
+              <node concept="37vLTw" id="2yuIwRzjf7V" role="37wK5m">
+                <ref role="3cqZAo" node="2yuIwRzi_er" resolve="environment" />
               </node>
             </node>
           </node>
