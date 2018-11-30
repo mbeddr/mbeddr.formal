@@ -72,6 +72,7 @@
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>810b1f0c-97b8-4211-8a3c-55a39bac8bee(com.mbeddr.formal.base.analyses)</extendedLanguage>
+    <extendedLanguage>83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</extendedLanguage>
   </extendedLanguages>
 </language>
 

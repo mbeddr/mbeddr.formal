@@ -175,6 +175,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -255,6 +256,17 @@
             </node>
           </node>
         </node>
+        <node concept="1gVbGN" id="2yuIwRzqEG6" role="3cqZAp">
+          <node concept="3y3z36" id="2yuIwRzqF1a" role="1gVkn0">
+            <node concept="10Nm6u" id="2yuIwRzqF87" role="3uHU7w" />
+            <node concept="37vLTw" id="2yuIwRzqENE" role="3uHU7B">
+              <ref role="3cqZAo" node="4QGaVz5sxQZ" resolve="m" />
+            </node>
+          </node>
+          <node concept="Xl_RD" id="2yuIwRzqFgD" role="1gVpfI">
+            <property role="Xl_RC" value="model can not be null" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="4QGaVz5sUX5" role="3cqZAp">
           <node concept="3cpWsn" id="4QGaVz5sUX6" role="3cpWs9">
             <property role="TrG5h" value="promelaModel" />
@@ -316,6 +328,40 @@
                   </node>
                   <node concept="37vLTw" id="7Kg2SeZeqMC" role="37vLTJ">
                     <ref role="3cqZAo" node="4QGaVz5sUX6" resolve="promelaModel" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1gVbGN" id="2yuIwRzqFxq" role="3cqZAp">
+                <node concept="3y3z36" id="2yuIwRzqFQa" role="1gVkn0">
+                  <node concept="10Nm6u" id="2yuIwRzqFUi" role="3uHU7w" />
+                  <node concept="37vLTw" id="2yuIwRzqFDj" role="3uHU7B">
+                    <ref role="3cqZAo" node="4QGaVz5sUX6" resolve="promelaModel" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="2yuIwRzqImO" role="1gVpfI">
+                  <node concept="Xl_RD" id="2yuIwRzqIwn" role="3uHU7w">
+                    <property role="Xl_RC" value="'" />
+                  </node>
+                  <node concept="3cpWs3" id="2yuIwRzqHA_" role="3uHU7B">
+                    <node concept="3cpWs3" id="2yuIwRzqGJH" role="3uHU7B">
+                      <node concept="3cpWs3" id="2yuIwRzqGiC" role="3uHU7B">
+                        <node concept="Xl_RD" id="2yuIwRzqG25" role="3uHU7B">
+                          <property role="Xl_RC" value="Promela model named '" />
+                        </node>
+                        <node concept="37vLTw" id="2yuIwRzqGq3" role="3uHU7w">
+                          <ref role="3cqZAo" node="6BM8NjXd_zq" resolve="spinModuleName" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="2yuIwRzqGSD" role="3uHU7w">
+                        <property role="Xl_RC" value="' could not be found in model '" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2yuIwRzqHTP" role="3uHU7w">
+                      <node concept="37vLTw" id="2yuIwRzqHJJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4QGaVz5sxQZ" resolve="m" />
+                      </node>
+                      <node concept="LkI2h" id="2yuIwRzqI4K" role="2OqNvi" />
+                    </node>
                   </node>
                 </node>
               </node>

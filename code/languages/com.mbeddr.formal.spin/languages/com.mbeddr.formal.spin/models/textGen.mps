@@ -297,6 +297,9 @@
         <node concept="3clFbJ" id="4_pH3zvmobZ" role="3cqZAp">
           <node concept="3clFbS" id="4_pH3zvmoc1" role="3clFbx">
             <node concept="lc7rE" id="4_pH3zvmpkU" role="3cqZAp">
+              <node concept="la8eA" id="1vcsY82Cise" role="lcghm">
+                <property role="lacIc" value="[" />
+              </node>
               <node concept="l9hG8" id="4_pH3zvmplm" role="lcghm">
                 <node concept="2OqwBi" id="4_pH3zvmpvV" role="lb14g">
                   <node concept="117lpO" id="4_pH3zvmpmi" role="2Oq$k0" />
@@ -304,6 +307,9 @@
                     <ref role="3Tt5mk" to="o3hv:4_pH3zvfIna" resolve="instancesNumber" />
                   </node>
                 </node>
+              </node>
+              <node concept="la8eA" id="1vcsY82Ci_O" role="lcghm">
+                <property role="lacIc" value="] " />
               </node>
             </node>
           </node>

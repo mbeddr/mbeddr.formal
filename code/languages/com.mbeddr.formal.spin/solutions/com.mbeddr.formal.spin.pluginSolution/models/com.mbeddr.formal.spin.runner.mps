@@ -15,6 +15,7 @@
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
     <import index="eats" ref="r:3654a487-2c9f-407a-a51c-9aa5b4da2208(com.mbeddr.formal.spin.plugin)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="9yqz" ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)" implicit="true" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
   </imports>
@@ -124,19 +125,8 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
-      </concept>
-    </language>
-    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
-      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
-      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
-        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
-      </concept>
-      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
-    </language>
-    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
-      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
-        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -568,9 +558,9 @@
           </node>
         </node>
         <node concept="3clFbH" id="HmUOIG_5ab" role="3cqZAp" />
-        <node concept="1QHqEK" id="HmUOIG_5ac" role="3cqZAp">
-          <node concept="1QHqEC" id="HmUOIG_5ad" role="1QHqEI">
-            <node concept="3clFbS" id="HmUOIG_5ae" role="1bW5cS">
+        <node concept="3kxDZ6" id="1vcsY82wieA" role="3cqZAp">
+          <node concept="9aQIb" id="1vcsY82with" role="3kxCCa">
+            <node concept="3clFbS" id="1vcsY82witj" role="9aQI4">
               <node concept="3clFbF" id="HmUOIG_5af" role="3cqZAp">
                 <node concept="37vLTI" id="HmUOIG_5ag" role="3clFbG">
                   <node concept="3cpWs3" id="HmUOIG_5ah" role="37vLTx">
@@ -597,7 +587,11 @@
               </node>
             </node>
           </node>
+          <node concept="37vLTw" id="1vcsY82wiyK" role="ukAjM">
+            <ref role="3cqZAo" node="1vcsY82whLa" resolve="modelRepo" />
+          </node>
         </node>
+        <node concept="3clFbH" id="1vcsY82wjh6" role="3cqZAp" />
         <node concept="3clFbJ" id="5wKAmZ3RNO$" role="3cqZAp">
           <node concept="3clFbS" id="5wKAmZ3RNO_" role="3clFbx">
             <node concept="3clFbF" id="5wKAmZ3RNOA" role="3cqZAp">
@@ -807,6 +801,12 @@
       <node concept="37vLTG" id="71H03GAUOM6" role="3clF46">
         <property role="TrG5h" value="trailFileName" />
         <node concept="17QB3L" id="71H03GAVURX" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1vcsY82whLa" role="3clF46">
+        <property role="TrG5h" value="modelRepo" />
+        <node concept="3uibUv" id="1vcsY82whZ2" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="HmUOIG_52U" role="jymVt" />

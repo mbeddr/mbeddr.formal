@@ -6,9 +6,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="ef89f137-f966-4966-a202-ab9ea26e79fe" name="com.mbeddr.formal.spin.c.core">
-      <concept id="2291855968617420229" name="com.mbeddr.formal.spin.c.core.structure.IntType" flags="ng" index="1a0DGp" />
-    </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="5285453794053229578" name="com.mbeddr.formal.spin.structure.PrintfStatement" flags="ng" index="2m4jwM">
         <child id="5285453794053229616" name="arguments" index="2m4jw8" />
@@ -29,6 +26,7 @@
       <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
+      <concept id="5285453794052993580" name="com.mbeddr.formal.spin.structure.IntType" flags="ng" index="2m7kok" />
       <concept id="5285453794052621232" name="com.mbeddr.formal.spin.structure.ArgumentDeclaration" flags="ng" index="2mpJu8" />
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
         <child id="5285453794052597019" name="statements" index="2mpP4z" />
@@ -71,6 +69,7 @@
         <child id="5430620409969180566" name="exp" index="PrSZF" />
       </concept>
       <concept id="5430620409968767889" name="com.mbeddr.formal.spin.structure.NrPr" flags="ng" index="PssfG" />
+      <concept id="4613921340547887375" name="com.mbeddr.formal.spin.structure.TrueLiteral" flags="ng" index="WX80c" />
       <concept id="4613921340547705769" name="com.mbeddr.formal.spin.structure.EmptyStatement" flags="ng" index="WXPEE" />
       <concept id="4613921340551317026" name="com.mbeddr.formal.spin.structure.GlobalVarRef" flags="ng" index="X83sx" />
       <concept id="4613921340550954664" name="com.mbeddr.formal.spin.structure.ByteType" flags="ng" index="X9sYF" />
@@ -133,11 +132,11 @@
           <node concept="2IPVmt" id="4_pH3zvhFBR" role="2m6DY6">
             <property role="2IPVms" value="123" />
           </node>
-          <node concept="1a0DGp" id="6fYDdj_dOFF" role="1a0DGc" />
+          <node concept="2m7kok" id="1vcsY82uSKN" role="1a0DGc" />
         </node>
         <node concept="2m6DXv" id="4_pH3zvi7dr" role="2mpP4z">
           <property role="TrG5h" value="reversed" />
-          <node concept="1a0DGp" id="6fYDdj_dOFW" role="1a0DGc" />
+          <node concept="2m7kok" id="1vcsY82uSL5" role="1a0DGc" />
         </node>
         <node concept="2m6DZN" id="4_pH3zvi7eg" role="2mpP4z">
           <node concept="2m6Dwh" id="407WgdX8zTV" role="2m6DZo">
@@ -227,7 +226,7 @@
       <node concept="2IPVmt" id="2DjQaubCqMc" role="2xNTi5">
         <property role="2IPVms" value="0" />
       </node>
-      <node concept="1a0DGp" id="6fYDdj_dOHz" role="1a0DGc" />
+      <node concept="2m7kok" id="1vcsY82uSLv" role="1a0DGc" />
     </node>
     <node concept="2xNTiH" id="2DjQaubCrJ0" role="2mr7gi">
       <property role="TrG5h" value="turn" />
@@ -235,6 +234,14 @@
         <ref role="2xMpmb" node="2DjQaubA$Om" resolve="first" />
       </node>
       <node concept="2xNmgO" id="6fYDdj_dOHG" role="1a0DGc" />
+    </node>
+    <node concept="2xLtbV" id="1vcsY82Cibd" role="2mr7gi" />
+    <node concept="2mr7gl" id="1vcsY82CibX" role="2mr7gi">
+      <node concept="2mpP4x" id="1vcsY82CibZ" role="2mpP4J">
+        <node concept="2xKSXg" id="1vcsY82Cid5" role="2mpP4z">
+          <node concept="WX80c" id="1vcsY82Cidl" role="2xKS2k" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2mr7gt" id="407WgdX8zUA">
@@ -314,7 +321,7 @@
           <node concept="2IPVmt" id="4Hts7PYrz_4" role="2m6DY6">
             <property role="2IPVms" value="0" />
           </node>
-          <node concept="1a0DGp" id="6fYDdj_dOKF" role="1a0DGc" />
+          <node concept="2m7kok" id="1vcsY82uSMj" role="1a0DGc" />
         </node>
         <node concept="2m6DZN" id="407WgdXcfXe" role="2mpP4z">
           <node concept="2m6Dwh" id="407WgdXcfXc" role="2m6DZo">

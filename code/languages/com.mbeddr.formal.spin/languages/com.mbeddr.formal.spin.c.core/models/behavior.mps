@@ -177,7 +177,7 @@
           <node concept="3cpWsn" id="26dfgZm634a" role="3cpWs9">
             <property role="TrG5h" value="tpe" />
             <node concept="3Tqbb2" id="26dfgZm634b" role="1tU5fm">
-              <ref role="ehGHo" to="vshk:1ZejHLlNdmO" resolve="TypeBase" />
+              <ref role="ehGHo" to="ehqg:6NmtaR1SV7a" resolve="Type" />
             </node>
             <node concept="2pJPEk" id="26dfgZm634c" role="33vP2m">
               <node concept="2pJPED" id="26dfgZm634d" role="2pJPEn">
@@ -232,11 +232,11 @@
       <node concept="37vLTG" id="26dfgZm62WZ" role="3clF46">
         <property role="TrG5h" value="baseType" />
         <node concept="3Tqbb2" id="26dfgZm62X0" role="1tU5fm">
-          <ref role="ehGHo" to="vshk:1ZejHLlNdmO" resolve="TypeBase" />
+          <ref role="ehGHo" to="ehqg:6NmtaR1SV7a" resolve="Type" />
         </node>
       </node>
       <node concept="3Tqbb2" id="26dfgZm62X1" role="3clF45">
-        <ref role="ehGHo" to="vshk:1ZejHLlNdmO" resolve="TypeBase" />
+        <ref role="ehGHo" to="ehqg:6NmtaR1SV7a" resolve="Type" />
       </node>
     </node>
   </node>

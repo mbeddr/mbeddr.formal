@@ -357,7 +357,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inner" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1ZejHLlNdmO" resolve="TypeBase" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mKzygM4PcE">

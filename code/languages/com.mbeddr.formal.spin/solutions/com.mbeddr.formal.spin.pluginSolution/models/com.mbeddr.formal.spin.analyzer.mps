@@ -618,6 +618,9 @@
                     <node concept="37vLTw" id="2lN4cj_NQW3" role="37wK5m">
                       <ref role="3cqZAo" node="1wu5Hv6fvDm" resolve="config" />
                     </node>
+                    <node concept="37vLTw" id="1vcsY82wcUb" role="37wK5m">
+                      <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
+                    </node>
                   </node>
                   <node concept="37vLTw" id="2lN4cj_Oq5v" role="37vLTJ">
                     <ref role="3cqZAo" node="7XCY$_rafOC" resolve="slr" />
@@ -625,6 +628,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="1vcsY82wcok" role="ukAjM">
+            <ref role="3cqZAo" node="5etR5IKp21T" resolve="modelRepository" />
           </node>
         </node>
         <node concept="3clFbF" id="1wu5Hv6k6Eo" role="3cqZAp">
@@ -1729,6 +1735,9 @@
                                 <node concept="37vLTw" id="71H03GAWaqz" role="37wK5m">
                                   <ref role="3cqZAo" node="71H03GAVZwp" resolve="trailFileName" />
                                 </node>
+                                <node concept="37vLTw" id="1vcsY82whpS" role="37wK5m">
+                                  <ref role="3cqZAo" node="1vcsY82wee4" resolve="modelRepo" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -2163,6 +2172,12 @@
         <property role="TrG5h" value="config" />
         <node concept="3Tqbb2" id="71H03GAUAPS" role="1tU5fm">
           <ref role="ehGHo" to="9yqz:4_pH3zvozx3" resolve="SpinBasedAnalysis" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1vcsY82wee4" role="3clF46">
+        <property role="TrG5h" value="modelRepo" />
+        <node concept="3uibUv" id="1vcsY82wftk" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
       <node concept="NWlO9" id="6jYTukVVCz6" role="lGtFl">
