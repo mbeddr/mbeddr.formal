@@ -34,7 +34,6 @@
       <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
       <concept id="6584464211391019107" name="com.mbeddr.formal.nusmv.arch.structure.OutputRef" flags="ng" index="JmOWN" />
       <concept id="4599377533215110828" name="com.mbeddr.formal.nusmv.arch.structure.ModulesWiringSection" flags="ng" index="18TFfj" />
-      <concept id="4678075609352238078" name="com.mbeddr.formal.nusmv.arch.structure.UnboundPortExpression" flags="ng" index="1Jc2W5" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
@@ -2357,7 +2356,9 @@
                 <ref role="2He$iI" node="2zzTeYiRar2" resolve="sub1_instance1" />
               </node>
             </node>
-            <node concept="1Jc2W5" id="5HwHP1Odxt6" role="1zigYY" />
+            <node concept="32Ogvo" id="1vcsY83cnha" role="1zigYY">
+              <ref role="32Ogvr" node="2zzTeYj0j_j" resolve="in1" />
+            </node>
             <node concept="32Ogvo" id="4NkweGh4ZI_" role="1zigYY">
               <ref role="32Ogvr" node="2zzTeYj0jPO" resolve="in2" />
             </node>
