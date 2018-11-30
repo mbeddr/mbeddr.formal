@@ -694,11 +694,16 @@
                   <ref role="2Oxat5" node="DubiFB6mE3" resolve="icon" />
                 </node>
               </node>
-              <node concept="2YIFZM" id="DubiFB4P3k" role="37vLTx">
-                <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-                <ref role="37wK5l" to="sn11:277Nzj6qTFM" resolve="getIconFor" />
-                <node concept="37vLTw" id="1dVWdop03dQ" role="37wK5m">
-                  <ref role="3cqZAo" node="1dVWdooZXc8" resolve="node" />
+              <node concept="2OqwBi" id="1vcsY82Hn7h" role="37vLTx">
+                <node concept="liA8E" id="1vcsY82HoX$" role="2OqNvi">
+                  <ref role="37wK5l" to="sn11:192HKKPOd3m" resolve="getIconFor" />
+                  <node concept="37vLTw" id="1vcsY82HpvB" role="37wK5m">
+                    <ref role="3cqZAo" node="1dVWdooZXc8" resolve="node" />
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="1vcsY82Hovy" role="2Oq$k0">
+                  <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                  <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
                 </node>
               </node>
             </node>
@@ -2956,11 +2961,16 @@
             <node concept="3uibUv" id="6Kf5KB7dT97" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
             </node>
-            <node concept="2YIFZM" id="6Kf5KB7dT9d" role="33vP2m">
-              <ref role="1Pybhc" to="sn11:277Nzj6qTEj" resolve="IconManager" />
-              <ref role="37wK5l" to="sn11:Z6TQiSQgL4" resolve="getIconForResource" />
-              <node concept="37vLTw" id="6Kf5KB7dXVq" role="37wK5m">
-                <ref role="3cqZAo" node="6Kf5KB7dXWL" resolve="iconResource" />
+            <node concept="2OqwBi" id="1vcsY82Hsf3" role="33vP2m">
+              <node concept="2YIFZM" id="1vcsY82HrWV" role="2Oq$k0">
+                <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="1vcsY82Ht85" role="2OqNvi">
+                <ref role="37wK5l" to="sn11:192HKKPP2rb" resolve="getIconForResource" />
+                <node concept="37vLTw" id="1vcsY82HtkA" role="37wK5m">
+                  <ref role="3cqZAo" node="6Kf5KB7dXWL" resolve="iconResource" />
+                </node>
               </node>
             </node>
           </node>

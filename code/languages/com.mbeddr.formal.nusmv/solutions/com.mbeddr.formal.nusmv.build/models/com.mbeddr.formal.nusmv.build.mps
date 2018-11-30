@@ -1816,12 +1816,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6oUHYlAqE46" role="3bR37C">
-          <node concept="3bR9La" id="6oUHYlAqE47" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6oUHYlAqE48" role="3bR37C">
           <node concept="1Busua" id="6oUHYlAqE49" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
@@ -1842,6 +1836,11 @@
           <node concept="3bR9La" id="5yQpAUIgRHs" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1vcsY82N7BP" role="3bR37C">
+          <node concept="1Busua" id="1vcsY82N7BQ" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
           </node>
         </node>
       </node>
