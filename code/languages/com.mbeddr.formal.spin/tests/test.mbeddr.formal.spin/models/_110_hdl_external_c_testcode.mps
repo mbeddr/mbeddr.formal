@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d1a0d523-448b-4fdf-b318-fe0185165b9d(test.mbeddr.formal.spin.hdl_external_c_testcode)">
+<model ref="r:d1a0d523-448b-4fdf-b318-fe0185165b9d(test.mbeddr.formal.spin._110_hdl_external_c_testcode)">
   <persistence version="9" />
   <languages>
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />

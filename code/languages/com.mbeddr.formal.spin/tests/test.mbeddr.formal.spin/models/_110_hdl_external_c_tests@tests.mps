@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:602f18a5-e13e-483f-978a-28688b9cf6b1(test.mbeddr.formal.spin.hdl_external_c_tests@tests)">
+<model ref="r:602f18a5-e13e-483f-978a-28688b9cf6b1(test.mbeddr.formal.spin._110_hdl_external_c_tests@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -142,10 +142,10 @@
             <node concept="2OqwBi" id="2yuIwRzihfZ" role="33vP2m">
               <node concept="2JrnkZ" id="2yuIwRzihgk" role="2Oq$k0">
                 <node concept="1Xw6AR" id="2yuIwRzihgt" role="2JrQYb">
-                  <node concept="1dCxOl" id="2yuIwRzjbW$" role="1XwpL7">
+                  <node concept="1dCxOl" id="1vcsY82lQhs" role="1XwpL7">
                     <property role="1XweGQ" value="r:d1a0d523-448b-4fdf-b318-fe0185165b9d" />
-                    <node concept="1j_P7g" id="2yuIwRzjbW_" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.hdl_external_c_testcode" />
+                    <node concept="1j_P7g" id="1vcsY82lQht" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._110_hdl_external_c_testcode" />
                     </node>
                   </node>
                 </node>

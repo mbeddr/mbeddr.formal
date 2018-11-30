@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:49f5b4dd-e065-4abf-8a5e-ad60f9a74b41(test.mbeddr.formal.spin.base_tests@tests)">
+<model ref="r:49f5b4dd-e065-4abf-8a5e-ad60f9a74b41(test.mbeddr.formal.spin._010_promela_tests@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -128,10 +128,10 @@
             <node concept="2OqwBi" id="6_AAcCLCVrG" role="33vP2m">
               <node concept="2JrnkZ" id="6_AAcCLCVHm" role="2Oq$k0">
                 <node concept="1Xw6AR" id="6_AAcCLCVHj" role="2JrQYb">
-                  <node concept="1dCxOl" id="6_AAcCLCVHk" role="1XwpL7">
+                  <node concept="1dCxOl" id="2yuIwRzq_Q_" role="1XwpL7">
                     <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
-                    <node concept="1j_P7g" id="6_AAcCLCVHl" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                    <node concept="1j_P7g" id="2yuIwRzq_QA" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_010_statements_testcode" />
                     </node>
                   </node>
                 </node>
@@ -206,7 +206,7 @@
                   <node concept="1dCxOl" id="6_AAcCLCVIc" role="1XwpL7">
                     <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
                     <node concept="1j_P7g" id="6_AAcCLCVId" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_010_statements_testcode" />
                     </node>
                   </node>
                 </node>
@@ -281,7 +281,7 @@
                   <node concept="1dCxOl" id="6_AAcCLCVHY" role="1XwpL7">
                     <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
                     <node concept="1j_P7g" id="6_AAcCLCVHZ" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_010_statements_testcode" />
                     </node>
                   </node>
                 </node>
@@ -356,7 +356,7 @@
                   <node concept="1dCxOl" id="6_AAcCLCVIx" role="1XwpL7">
                     <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
                     <node concept="1j_P7g" id="6_AAcCLCVIy" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_010_statements_testcode" />
                     </node>
                   </node>
                 </node>
@@ -431,7 +431,7 @@
                   <node concept="1dCxOl" id="6_AAcCLCVHy" role="1XwpL7">
                     <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
                     <node concept="1j_P7g" id="6_AAcCLCVHz" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_010_statements_testcode" />
                     </node>
                   </node>
                 </node>
@@ -510,10 +510,10 @@
             <node concept="2OqwBi" id="6_AAcCLCVrL" role="33vP2m">
               <node concept="2JrnkZ" id="6_AAcCLCVHT" role="2Oq$k0">
                 <node concept="1Xw6AR" id="6_AAcCLCVHQ" role="2JrQYb">
-                  <node concept="1dCxOl" id="6_AAcCLCVHR" role="1XwpL7">
-                    <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
-                    <node concept="1j_P7g" id="6_AAcCLCVHS" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                  <node concept="1dCxOl" id="2yuIwRzqNQQ" role="1XwpL7">
+                    <property role="1XweGQ" value="r:23be1ea1-716d-4439-93ab-61ecc51ef097" />
+                    <node concept="1j_P7g" id="2yuIwRzqNQR" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_100_c_code_testcode" />
                     </node>
                   </node>
                 </node>
@@ -585,10 +585,10 @@
             <node concept="2OqwBi" id="6_AAcCLCVr9" role="33vP2m">
               <node concept="2JrnkZ" id="6_AAcCLCVIs" role="2Oq$k0">
                 <node concept="1Xw6AR" id="6_AAcCLCVIp" role="2JrQYb">
-                  <node concept="1dCxOl" id="6_AAcCLCVIq" role="1XwpL7">
-                    <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
-                    <node concept="1j_P7g" id="6_AAcCLCVIr" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                  <node concept="1dCxOl" id="2yuIwRzqNI8" role="1XwpL7">
+                    <property role="1XweGQ" value="r:23be1ea1-716d-4439-93ab-61ecc51ef097" />
+                    <node concept="1j_P7g" id="2yuIwRzqNI9" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_100_c_code_testcode" />
                     </node>
                   </node>
                 </node>
@@ -660,10 +660,10 @@
             <node concept="2OqwBi" id="6_AAcCLCVrt" role="33vP2m">
               <node concept="2JrnkZ" id="6_AAcCLCVHM" role="2Oq$k0">
                 <node concept="1Xw6AR" id="6_AAcCLCVHJ" role="2JrQYb">
-                  <node concept="1dCxOl" id="6_AAcCLCVHK" role="1XwpL7">
-                    <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
-                    <node concept="1j_P7g" id="6_AAcCLCVHL" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                  <node concept="1dCxOl" id="2yuIwRzqNSJ" role="1XwpL7">
+                    <property role="1XweGQ" value="r:23be1ea1-716d-4439-93ab-61ecc51ef097" />
+                    <node concept="1j_P7g" id="2yuIwRzqNSK" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_100_c_code_testcode" />
                     </node>
                   </node>
                 </node>
@@ -739,10 +739,10 @@
             <node concept="2OqwBi" id="6_AAcCLCVrV" role="33vP2m">
               <node concept="2JrnkZ" id="6_AAcCLCVIl" role="2Oq$k0">
                 <node concept="1Xw6AR" id="6_AAcCLCVIi" role="2JrQYb">
-                  <node concept="1dCxOl" id="6_AAcCLCVIj" role="1XwpL7">
-                    <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
-                    <node concept="1j_P7g" id="6_AAcCLCVIk" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                  <node concept="1dCxOl" id="2yuIwRzq$Wd" role="1XwpL7">
+                    <property role="1XweGQ" value="r:1b8687e4-8d20-4018-a0f5-a667d509d335" />
+                    <node concept="1j_P7g" id="2yuIwRzq$We" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_000_arbitrary_text_testcode" />
                     </node>
                   </node>
                 </node>
@@ -814,10 +814,10 @@
             <node concept="2OqwBi" id="6_AAcCLCVr4" role="33vP2m">
               <node concept="2JrnkZ" id="6_AAcCLCVHF" role="2Oq$k0">
                 <node concept="1Xw6AR" id="6_AAcCLCVHC" role="2JrQYb">
-                  <node concept="1dCxOl" id="6_AAcCLCVHD" role="1XwpL7">
-                    <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
-                    <node concept="1j_P7g" id="6_AAcCLCVHE" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.base_testcode" />
+                  <node concept="1dCxOl" id="2yuIwRzqODk" role="1XwpL7">
+                    <property role="1XweGQ" value="r:1b8687e4-8d20-4018-a0f5-a667d509d335" />
+                    <node concept="1j_P7g" id="2yuIwRzqODl" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_000_arbitrary_text_testcode" />
                     </node>
                   </node>
                 </node>

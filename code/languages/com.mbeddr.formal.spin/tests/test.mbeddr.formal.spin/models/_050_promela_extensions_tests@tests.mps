@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:afdd5558-e764-40e2-926e-13140c4a50f0(test.mbeddr.formal.spin.ext_tests@tests)">
+<model ref="r:afdd5558-e764-40e2-926e-13140c4a50f0(test.mbeddr.formal.spin._050_promela_extensions_tests@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -142,10 +142,10 @@
             <node concept="2OqwBi" id="6_AAcCLCVrB" role="33vP2m">
               <node concept="2JrnkZ" id="6_AAcCLCVI7" role="2Oq$k0">
                 <node concept="1Xw6AR" id="6_AAcCLCVI4" role="2JrQYb">
-                  <node concept="1dCxOl" id="6_AAcCLCVI5" role="1XwpL7">
+                  <node concept="1dCxOl" id="1vcsY82lP9d" role="1XwpL7">
                     <property role="1XweGQ" value="r:a388245c-19a6-4efb-b5b7-fa76c06da7ed" />
-                    <node concept="1j_P7g" id="6_AAcCLCVI6" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.ext_testcode" />
+                    <node concept="1j_P7g" id="1vcsY82lP9e" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._050_promela_ext_010_statements_testcode" />
                     </node>
                   </node>
                 </node>
@@ -234,7 +234,7 @@
                   <node concept="1dCxOl" id="6_AAcCLCVHr" role="1XwpL7">
                     <property role="1XweGQ" value="r:a388245c-19a6-4efb-b5b7-fa76c06da7ed" />
                     <node concept="1j_P7g" id="6_AAcCLCVHs" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin.ext_testcode" />
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._050_promela_ext_010_statements_testcode" />
                     </node>
                   </node>
                 </node>
