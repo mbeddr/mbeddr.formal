@@ -35,6 +35,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -296,6 +297,9 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="1ZejHLm2DP7" resolve="ElsePart" />
     </node>
+    <node concept="PrWs8" id="1vcsY83fkZ_" role="PzmwI">
+      <ref role="PrY4T" node="1vcsY83fkZr" resolve="ICLevelStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLm2DP7">
     <property role="EcuMT" value="2291855968621468999" />
@@ -372,6 +376,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="1vcsY83fkZs" role="PzmwI">
+      <ref role="PrY4T" node="1vcsY83fkZr" resolve="ICLevelStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="26dfgZlSsOR">
     <property role="EcuMT" value="2417655713189973303" />
@@ -434,6 +441,9 @@
     <node concept="PrWs8" id="2yuIwRzd_Ne" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="PrWs8" id="1vcsY83fkZx" role="PzmwI">
+      <ref role="PrY4T" node="1vcsY83fkZr" resolve="ICLevelStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2yuIwRzeUUC">
     <property role="EcuMT" value="2926981376647081640" />
@@ -475,6 +485,11 @@
     <property role="TrG5h" value="PreDecrementExpression" />
     <property role="34LRSv" value="--" />
     <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
+  </node>
+  <node concept="PlHQZ" id="1vcsY83fkZr">
+    <property role="EcuMT" value="1714872972675469275" />
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="ICLevelStatement" />
   </node>
 </model>
 
