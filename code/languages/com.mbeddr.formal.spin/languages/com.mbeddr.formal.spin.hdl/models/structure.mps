@@ -233,7 +233,7 @@
     <property role="TrG5h" value="Assert" />
     <property role="34LRSv" value="assert" />
     <property role="R4oN_" value="assert statement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
     <node concept="1TJgyj" id="1ZejHLm3Rl0" role="1TKVEi">
       <property role="IQ2ns" value="2291855968621786432" />
       <property role="20lmBu" value="aggregation" />
@@ -243,6 +243,9 @@
     </node>
     <node concept="PrWs8" id="1ZejHLm3RkW" role="PzmwI">
       <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+    <node concept="PrWs8" id="1vcsY83gWJz" role="PzmwI">
+      <ref role="PrY4T" to="vshk:1vcsY83fkZr" resolve="ICLevelStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mKzygM5Pee">

@@ -36,6 +36,9 @@
         <child id="2926981376646733180" name="init" index="3bEetL" />
       </concept>
       <concept id="2926981376647371843" name="com.mbeddr.formal.spin.c.core.structure.PostIncrementExpression" flags="ng" index="3bREpe" />
+      <concept id="6174591375235044138" name="com.mbeddr.formal.spin.c.core.structure.ExpressionStatement" flags="ng" index="1BCXOe">
+        <child id="6174591375235044142" name="expression" index="1BCXOa" />
+      </concept>
       <concept id="6174591375234541971" name="com.mbeddr.formal.spin.c.core.structure.Define" flags="ng" index="1BIMuR">
         <child id="6174591375234542020" name="exp" index="1BIMvw" />
       </concept>
@@ -50,6 +53,9 @@
       </concept>
     </language>
     <language id="628c1bba-6b54-4c71-927c-3cff044349e4" name="com.mbeddr.formal.spin.hdl">
+      <concept id="2291855968621785503" name="com.mbeddr.formal.spin.hdl.structure.Assert" flags="ng" index="19KjX3">
+        <child id="2291855968621786432" name="cond" index="19KjIs" />
+      </concept>
       <concept id="2291855968617622741" name="com.mbeddr.formal.spin.hdl.structure.HarnessDefinition" flags="ng" index="1a0q89">
         <child id="2291855968617623485" name="content" index="1a0q5x" />
       </concept>
@@ -84,13 +90,7 @@
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
         <child id="5285453794052597019" name="statements" index="2mpP4z" />
       </concept>
-      <concept id="3050019586772588535" name="com.mbeddr.formal.spin.structure.AssertStatement" flags="ng" index="2xKSXg">
-        <child id="3050019586772588595" name="exp" index="2xKS2k" />
-      </concept>
       <concept id="3050019586774684052" name="com.mbeddr.formal.spin.structure.LessExpression" flags="ng" index="2xSS$N" />
-      <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
-        <child id="4613921340551921928" name="exp" index="XdJ0b" />
-      </concept>
       <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
@@ -184,14 +184,14 @@
           </node>
         </node>
       </node>
-      <node concept="1BDXQE" id="2yuIwRzbZ5R" role="1a0q5x">
-        <node concept="XdJ7S" id="2yuIwRzbZ5Q" role="1BDXQL">
-          <node concept="1a0DGY" id="2yuIwRzbZ5O" role="XdJ0b">
+      <node concept="1BDXQE" id="1vcsY83fyDf" role="1a0q5x">
+        <node concept="1BCXOe" id="1vcsY83fyDe" role="1BDXQL">
+          <node concept="1a0DGY" id="1vcsY83fyDc" role="1BCXOa">
             <ref role="1a0DGZ" node="5mKzygM3Qmi" resolve="quick_sort" />
-            <node concept="1a0deV" id="2yuIwRzbZ6E" role="1a0DGU">
+            <node concept="1a0deV" id="1vcsY83fyDN" role="1a0DGU">
               <ref role="2m6DZP" node="26dfgZm3_ty" resolve="array_to_sort" />
             </node>
-            <node concept="1BJfSN" id="2yuIwRzbZ70" role="1a0DGU">
+            <node concept="1BJfSN" id="1vcsY83fyDO" role="1a0DGU">
               <ref role="1BJfSZ" node="5mKzygM3jiv" resolve="ARRAY_SIZE" />
             </node>
           </node>
@@ -205,26 +205,26 @@
             <property role="2IPVms" value="0" />
           </node>
           <node concept="2mpP4x" id="2yuIwRzeUU7" role="3bEerk">
-            <node concept="2xKSXg" id="2yuIwRzi1I5" role="2mpP4z">
-              <node concept="2xSS$N" id="2yuIwRzi1JB" role="2xKS2k">
-                <node concept="3RGUPo" id="2yuIwRzi1Lj" role="2H9Ial">
-                  <node concept="2H9FEB" id="2yuIwRzi1Oa" role="3RGUPA">
-                    <node concept="2IPVmt" id="2yuIwRzi1Og" role="2H9Ial">
+            <node concept="19KjX3" id="1vcsY83gYSt" role="2mpP4z">
+              <node concept="2xSS$N" id="1vcsY83gZ93" role="19KjIs">
+                <node concept="3RGUPo" id="1vcsY83gZbn" role="2H9Ial">
+                  <node concept="2H9FEB" id="1vcsY83gZfO" role="3RGUPA">
+                    <node concept="2IPVmt" id="1vcsY83gZfU" role="2H9Ial">
                       <property role="2IPVms" value="1" />
                     </node>
-                    <node concept="3bDhi_" id="2yuIwRzi1ML" role="2H9Iav">
+                    <node concept="3bDhi_" id="1vcsY83gZdB" role="2H9Iav">
                       <ref role="3bDhiR" node="2yuIwRzeUU1" resolve="i" />
                     </node>
                   </node>
-                  <node concept="1a0deV" id="2yuIwRzi1L5" role="32OYtT">
+                  <node concept="1a0deV" id="1vcsY83gZba" role="32OYtT">
                     <ref role="2m6DZP" node="26dfgZm3_ty" resolve="array_to_sort" />
                   </node>
                 </node>
-                <node concept="3RGUPo" id="2yuIwRzi1It" role="2H9Iav">
-                  <node concept="3bDhi_" id="2yuIwRzi1IE" role="3RGUPA">
+                <node concept="3RGUPo" id="1vcsY83gYSH" role="2H9Iav">
+                  <node concept="3bDhi_" id="1vcsY83gYSI" role="3RGUPA">
                     <ref role="3bDhiR" node="2yuIwRzeUU1" resolve="i" />
                   </node>
-                  <node concept="1a0deV" id="2yuIwRzi1If" role="32OYtT">
+                  <node concept="1a0deV" id="1vcsY83gYSJ" role="32OYtT">
                     <ref role="2m6DZP" node="26dfgZm3_ty" resolve="array_to_sort" />
                   </node>
                 </node>
