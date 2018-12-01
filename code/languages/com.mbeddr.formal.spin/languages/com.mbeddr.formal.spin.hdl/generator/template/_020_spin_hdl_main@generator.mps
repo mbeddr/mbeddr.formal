@@ -19,6 +19,7 @@
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="dinh" ref="r:053017f6-a9b2-4735-890d-9c4181609d2f(com.mbeddr.formal.spin.ext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -77,6 +78,7 @@
       </concept>
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
+      <concept id="1714872972675012653" name="com.mbeddr.formal.spin.structure.CExpr" flags="ng" index="kYyJf" />
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
       <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv" />
       <concept id="5285453794052877259" name="com.mbeddr.formal.spin.structure.AssignmentStatement" flags="ng" index="2m6DZN">
@@ -104,6 +106,7 @@
       <concept id="6377880871154154898" name="com.mbeddr.formal.spin.structure.CCode" flags="ng" index="Sp3le">
         <child id="6377880871154154899" name="body" index="Sp3lf" />
       </concept>
+      <concept id="4613921340547887375" name="com.mbeddr.formal.spin.structure.TrueLiteral" flags="ng" index="WX80c" />
       <concept id="4613921340550954664" name="com.mbeddr.formal.spin.structure.ByteType" flags="ng" index="X9sYF" />
       <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
@@ -188,6 +191,9 @@
     <language id="bd54ef69-17ec-411b-8f49-485702e74565" name="com.mbeddr.formal.spin.ext">
       <concept id="6377880871154153670" name="com.mbeddr.formal.spin.ext.structure.LogWitnessStatement" flags="ng" index="Sp30q">
         <child id="6377880871154154774" name="exp" index="Sp3na" />
+      </concept>
+      <concept id="2291855968616517742" name="com.mbeddr.formal.spin.ext.structure.AssumeStatement" flags="ng" index="1aslUM">
+        <child id="2291855968616517770" name="cond" index="1aslTm" />
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
@@ -1125,6 +1131,31 @@
                             <ref role="3TsBF5" to="y6ji:5mKzygM6uiR" resolve="text" />
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="1vcsY83d_rb" role="3acgRq">
+      <ref role="30HIoZ" to="y6ji:1vcsY83dxc3" resolve="AssumeStatementHDL" />
+      <node concept="gft3U" id="1vcsY83d_rD" role="1lVwrX">
+        <node concept="1aslUM" id="1vcsY83d_rJ" role="gfFT$">
+          <node concept="kYyJf" id="1vcsY83gHlQ" role="1aslTm">
+            <node concept="WX80c" id="1vcsY83d_rT" role="32OYtT">
+              <node concept="29HgVG" id="1vcsY83gGRm" role="lGtFl">
+                <node concept="3NFfHV" id="1vcsY83gGRn" role="3NFExx">
+                  <node concept="3clFbS" id="1vcsY83gGRo" role="2VODD2">
+                    <node concept="3clFbF" id="1vcsY83gGRu" role="3cqZAp">
+                      <node concept="2OqwBi" id="1vcsY83gGRp" role="3clFbG">
+                        <node concept="3TrEf2" id="1vcsY83gGRs" role="2OqNvi">
+                          <ref role="3Tt5mk" to="dinh:1ZejHLlJL2a" resolve="cond" />
+                        </node>
+                        <node concept="30H73N" id="1vcsY83gGRt" role="2Oq$k0" />
                       </node>
                     </node>
                   </node>

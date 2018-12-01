@@ -10,6 +10,7 @@
     <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
+    <import index="dinh" ref="r:053017f6-a9b2-4735-890d-9c4181609d2f(com.mbeddr.formal.spin.ext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -257,7 +258,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="stmt" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
+      <ref role="20lvS9" to="vshk:1vcsY83fkZr" resolve="ICLevelStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mKzygM6uiu">
@@ -274,6 +275,16 @@
       <property role="IQ2nx" value="6174591375235474615" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vcsY83dxc3">
+    <property role="EcuMT" value="1714872972674994947" />
+    <property role="3GE5qa" value="harness.content.assume" />
+    <property role="TrG5h" value="AssumeStatementHDL" />
+    <property role="34LRSv" value="assume" />
+    <ref role="1TJDcQ" to="dinh:1ZejHLlJL1I" resolve="AssumeStatement" />
+    <node concept="PrWs8" id="1vcsY83dyre" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
     </node>
   </node>
 </model>
