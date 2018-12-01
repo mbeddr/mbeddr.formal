@@ -974,5 +974,28 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1vcsY83d_wH">
+    <property role="EcuMT" value="1714872972675012653" />
+    <property role="3GE5qa" value="c.expressions" />
+    <property role="TrG5h" value="CExpr" />
+    <property role="34LRSv" value="c_expr" />
+    <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="1vcsY83gDwv">
+    <property role="EcuMT" value="1714872972675815455" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="AndExpression" />
+    <property role="34LRSv" value="&amp;&amp;" />
+    <property role="R4oN_" value="and" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
+  <node concept="1TIwiD" id="1vcsY83gDww">
+    <property role="EcuMT" value="1714872972675815456" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="OrExpression" />
+    <property role="34LRSv" value="||" />
+    <property role="R4oN_" value="or" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+  </node>
 </model>
 
