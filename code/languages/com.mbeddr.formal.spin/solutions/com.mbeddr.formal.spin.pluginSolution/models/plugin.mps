@@ -718,12 +718,15 @@
             </node>
             <node concept="2XshWL" id="7F8$WoVMoW9" role="2OqNvi">
               <ref role="2WH_rO" node="3Ymokd9FeZe" resolve="setOutput" />
-              <node concept="2OqwBi" id="1wu5Hv6fGyv" role="2XxRq1">
-                <node concept="37vLTw" id="7XCY$_raV9k" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7XCY$_raV9g" resolve="rr" />
+              <node concept="2OqwBi" id="1vcsY83_ToP" role="2XxRq1">
+                <node concept="2OqwBi" id="1vcsY83_Qjh" role="2Oq$k0">
+                  <node concept="37vLTw" id="1vcsY83_Plz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7F8$WoVMoqj" resolve="res" />
+                  </node>
+                  <node concept="1uHKPH" id="1vcsY83_Shl" role="2OqNvi" />
                 </node>
-                <node concept="2OwXpG" id="1wu5Hv6fGLu" role="2OqNvi">
-                  <ref role="2Oxat5" to="imq8:1wu5Hv6fz25" resolve="rawCommand" />
+                <node concept="liA8E" id="1vcsY83_UuX" role="2OqNvi">
+                  <ref role="37wK5l" to="imq8:1vcsY83_zIN" resolve="rawPanAndTrailCommand" />
                 </node>
               </node>
               <node concept="2OqwBi" id="7Rf0$0HT4id" role="2XxRq1">

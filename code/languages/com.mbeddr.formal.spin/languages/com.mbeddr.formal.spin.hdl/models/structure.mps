@@ -171,7 +171,7 @@
     <property role="34LRSv" value="nondet_assig" />
     <property role="R4oN_" value="nondeterministic assignment" />
     <property role="3GE5qa" value="harness.content.nondet" />
-    <ref role="1TJDcQ" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1ZejHLlO7vF" role="1TKVEi">
       <property role="IQ2ns" value="2291855968617658347" />
       <property role="20lmBu" value="aggregation" />
@@ -288,6 +288,64 @@
     <ref role="1TJDcQ" to="dinh:1ZejHLlJL1I" resolve="AssumeStatement" />
     <node concept="PrWs8" id="1vcsY83dyre" role="PzmwI">
       <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vcsY83hfrh">
+    <property role="EcuMT" value="1714872972675970769" />
+    <property role="3GE5qa" value="harness.content.loops" />
+    <property role="TrG5h" value="MultiStep" />
+    <property role="34LRSv" value="multistep" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1vcsY83hfrk" role="1TKVEi">
+      <property role="IQ2ns" value="1714872972675970772" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="count" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1vcsY83hfro" role="1TKVEi">
+      <property role="IQ2ns" value="1714872972675970776" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+    <node concept="PrWs8" id="1vcsY83hfri" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vcsY83oDkS">
+    <property role="EcuMT" value="1714872972677911864" />
+    <property role="3GE5qa" value="harness.content" />
+    <property role="TrG5h" value="LogWitnessHDL" />
+    <property role="34LRSv" value="log_witness" />
+    <property role="R4oN_" value="logs into the witness" />
+    <ref role="1TJDcQ" to="dinh:5y2MdLwTJz6" resolve="LogWitnessStatement" />
+    <node concept="PrWs8" id="1vcsY83oDkT" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vcsY83oDYV">
+    <property role="EcuMT" value="1714872972677914555" />
+    <property role="TrG5h" value="TrackState" />
+    <property role="34LRSv" value="track_state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1vcsY83oDYY" role="1TKVEi">
+      <property role="IQ2ns" value="1714872972677914558" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1vcsY83xsZn" role="1TKVEi">
+      <property role="IQ2ns" value="1714872972680220631" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1vcsY83oDYW" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNgt6" resolve="IHarnessModuleContent" />
     </node>
   </node>
 </model>

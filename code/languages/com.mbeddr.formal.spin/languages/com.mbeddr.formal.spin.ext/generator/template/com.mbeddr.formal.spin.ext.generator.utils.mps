@@ -119,6 +119,16 @@
   </registry>
   <node concept="312cEu" id="5y2MdLwXaP6">
     <property role="TrG5h" value="WitnessLoggerUtils" />
+    <node concept="2tJIrI" id="1vcsY83hoZH" role="jymVt" />
+    <node concept="Wx3nA" id="1vcsY83hoRb" role="jymVt">
+      <property role="TrG5h" value="PROMELA_LOGGER_MESSAGE_PREFIX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="1vcsY83hoG0" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1vcsY83hoFZ" role="1B3o_S" />
+      <node concept="Xl_RD" id="1vcsY83hoG1" role="33vP2m">
+        <property role="Xl_RC" value="*** " />
+      </node>
+    </node>
     <node concept="2tJIrI" id="5y2MdLwXaPP" role="jymVt" />
     <node concept="2YIFZL" id="5y2MdLwXaQv" role="jymVt">
       <property role="TrG5h" value="computeString" />
@@ -180,8 +190,8 @@
                 <node concept="3cpWs3" id="6fYDdj_8FJG" role="3uHU7B">
                   <node concept="3cpWs3" id="5y2MdLwX0S5" role="3uHU7B">
                     <node concept="3cpWs3" id="5y2MdLwWXEn" role="3uHU7B">
-                      <node concept="Xl_RD" id="5y2MdLwWWZS" role="3uHU7B">
-                        <property role="Xl_RC" value="*** " />
+                      <node concept="37vLTw" id="1vcsY83hp9N" role="3uHU7B">
+                        <ref role="3cqZAo" node="1vcsY83hoRb" resolve="PROMELA_LOGGER_MESSAGE_PREFIX" />
                       </node>
                       <node concept="2OqwBi" id="5y2MdLwWZ0Q" role="3uHU7w">
                         <node concept="2OqwBi" id="5y2MdLwWY3d" role="2Oq$k0">

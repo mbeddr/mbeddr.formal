@@ -77,6 +77,21 @@
     <ref role="WuzLi" to="vshk:1ZejHLlNBM7" resolve="CGlobalVariableDeclaration" />
     <node concept="11bSqf" id="1ZejHLlNBSS" role="11c4hB">
       <node concept="3clFbS" id="1ZejHLlNBST" role="2VODD2">
+        <node concept="3clFbJ" id="1vcsY83zdsP" role="3cqZAp">
+          <node concept="3clFbS" id="1vcsY83zdsR" role="3clFbx">
+            <node concept="lc7rE" id="1vcsY83zeji" role="3cqZAp">
+              <node concept="la8eA" id="1vcsY83zejE" role="lcghm">
+                <property role="lacIc" value="extern " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1vcsY83zdLW" role="3clFbw">
+            <node concept="117lpO" id="1vcsY83zdAN" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1vcsY83zegk" role="2OqNvi">
+              <ref role="3TsBF5" to="vshk:1vcsY83xQnZ" resolve="extern" />
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="1ZejHLlNBTc" role="3cqZAp">
           <node concept="l9hG8" id="1ZejHLlNBT$" role="lcghm">
             <node concept="2OqwBi" id="1ZejHLlNC5F" role="lb14g">
@@ -498,7 +513,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2yuIwRzg1MH">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.arith" />
     <ref role="WuzLi" to="vshk:2yuIwRzg1L3" resolve="PostIncrementExpression" />
     <node concept="11bSqf" id="2yuIwRzg1MI" role="11c4hB">
       <node concept="3clFbS" id="2yuIwRzg1MJ" role="2VODD2">
@@ -519,7 +534,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2yuIwRzg2BQ">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.arith" />
     <ref role="WuzLi" to="vshk:2yuIwRzg2xk" resolve="PostDecrementExpression" />
     <node concept="11bSqf" id="2yuIwRzg2BR" role="11c4hB">
       <node concept="3clFbS" id="2yuIwRzg2BS" role="2VODD2">
@@ -540,7 +555,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2yuIwRzg2Mb">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.arith" />
     <ref role="WuzLi" to="vshk:2yuIwRzg2If" resolve="PreIncrementExpression" />
     <node concept="11bSqf" id="2yuIwRzg2Mc" role="11c4hB">
       <node concept="3clFbS" id="2yuIwRzg2Md" role="2VODD2">
@@ -561,7 +576,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2yuIwRzg3ga">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.arith" />
     <ref role="WuzLi" to="vshk:2yuIwRzg3e8" resolve="PreDecrementExpression" />
     <node concept="11bSqf" id="2yuIwRzg3gb" role="11c4hB">
       <node concept="3clFbS" id="2yuIwRzg3gc" role="2VODD2">
@@ -573,6 +588,62 @@
             <node concept="2OqwBi" id="2yuIwRzg3sC" role="lb14g">
               <node concept="117lpO" id="2yuIwRzg3j0" role="2Oq$k0" />
               <node concept="3TrEf2" id="2yuIwRzg3B3" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1vcsY83jJbV">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="WuzLi" to="vshk:1vcsY83jJa$" resolve="AssignmentExpression" />
+    <node concept="11bSqf" id="1vcsY83jJbW" role="11c4hB">
+      <node concept="3clFbS" id="1vcsY83jJbX" role="2VODD2">
+        <node concept="lc7rE" id="1vcsY83jJcg" role="3cqZAp">
+          <node concept="l9hG8" id="1vcsY83jJcA" role="lcghm">
+            <node concept="2OqwBi" id="1vcsY83jJnq" role="lb14g">
+              <node concept="117lpO" id="1vcsY83jJdu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1vcsY83jJC7" role="2OqNvi">
+                <ref role="3Tt5mk" to="vshk:1vcsY83jJa_" resolve="lhs" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1vcsY83jJKG" role="lcghm">
+            <property role="lacIc" value="=" />
+          </node>
+          <node concept="l9hG8" id="1vcsY83jJT_" role="lcghm">
+            <node concept="2OqwBi" id="1vcsY83jK6E" role="lb14g">
+              <node concept="117lpO" id="1vcsY83jJYu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1vcsY83jKnn" role="2OqNvi">
+                <ref role="3Tt5mk" to="vshk:1vcsY83jJaB" resolve="rhs" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1vcsY83saX7">
+    <property role="3GE5qa" value="expressions.pointer" />
+    <ref role="WuzLi" to="vshk:1vcsY83saWd" resolve="PointerExpr" />
+    <node concept="11bSqf" id="1vcsY83saX8" role="11c4hB">
+      <node concept="3clFbS" id="1vcsY83saX9" role="2VODD2">
+        <node concept="lc7rE" id="1vcsY83saXs" role="3cqZAp">
+          <node concept="l9hG8" id="1vcsY83sbLR" role="lcghm">
+            <node concept="2OqwBi" id="1vcsY83scHU" role="lb14g">
+              <node concept="2OqwBi" id="1vcsY83sc1_" role="2Oq$k0">
+                <node concept="117lpO" id="1vcsY83sbQR" role="2Oq$k0" />
+                <node concept="2yIwOk" id="1vcsY83scl8" role="2OqNvi" />
+              </node>
+              <node concept="3n3YKJ" id="1vcsY83sdaK" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="l9hG8" id="1vcsY83saYF" role="lcghm">
+            <node concept="2OqwBi" id="1vcsY83sb94" role="lb14g">
+              <node concept="117lpO" id="1vcsY83saZ$" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1vcsY83sbvt" role="2OqNvi">
                 <ref role="3Tt5mk" to="ehqg:1IrBcRpi7IO" resolve="exp" />
               </node>
             </node>

@@ -1281,12 +1281,12 @@
                             </node>
                             <node concept="liA8E" id="71H03GAYGkE" role="2OqNvi">
                               <ref role="37wK5l" node="6izRX53qxjr" resolve="updateResult" />
-                              <node concept="2OqwBi" id="71H03GAYY9l" role="37wK5m">
-                                <node concept="37vLTw" id="71H03GAYSRQ" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="71H03GAYQhQ" resolve="rawResult" />
+                              <node concept="2OqwBi" id="1vcsY83_W$H" role="37wK5m">
+                                <node concept="37vLTw" id="1vcsY83_Wlo" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2k2dPZH4h8$" resolve="result" />
                                 </node>
-                                <node concept="2OwXpG" id="hgayPfdj03" role="2OqNvi">
-                                  <ref role="2Oxat5" to="imq8:1wu5Hv6fz25" resolve="rawCommand" />
+                                <node concept="liA8E" id="1vcsY83_XmK" role="2OqNvi">
+                                  <ref role="37wK5l" to="imq8:1vcsY83_zIN" resolve="rawPanAndTrailCommand" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="71H03GAZ0LD" role="37wK5m">

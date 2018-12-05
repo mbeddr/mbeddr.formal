@@ -90,7 +90,7 @@
     <property role="TrG5h" value="SpinHDLNamingUtils" />
     <node concept="2tJIrI" id="1ZejHLlPubo" role="jymVt" />
     <node concept="2YIFZL" id="1ZejHLlPuc9" role="jymVt">
-      <property role="TrG5h" value="tempPromelaVarName" />
+      <property role="TrG5h" value="tempPromelaNondetAssignVarName" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -134,6 +134,51 @@
       </node>
     </node>
     <node concept="2tJIrI" id="26dfgZlX4S0" role="jymVt" />
+    <node concept="2YIFZL" id="1vcsY83himP" role="jymVt">
+      <property role="TrG5h" value="tempPromelaMultistepVarName" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1vcsY83himQ" role="3clF47">
+        <node concept="3clFbF" id="1vcsY83himR" role="3cqZAp">
+          <node concept="3cpWs3" id="1vcsY83himS" role="3clFbG">
+            <node concept="Xl_RD" id="1vcsY83himT" role="3uHU7B">
+              <property role="Xl_RC" value="tmpVar_multistep_idx_" />
+            </node>
+            <node concept="2OqwBi" id="1vcsY83himU" role="3uHU7w">
+              <node concept="2JrnkZ" id="1vcsY83himV" role="2Oq$k0">
+                <node concept="2OqwBi" id="1vcsY83himW" role="2JrQYb">
+                  <node concept="37vLTw" id="1vcsY83himX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1vcsY83hin5" resolve="gc" />
+                  </node>
+                  <node concept="12$id9" id="1vcsY83himY" role="2OqNvi">
+                    <node concept="37vLTw" id="1vcsY83himZ" role="12$y8L">
+                      <ref role="3cqZAo" node="1vcsY83hin3" resolve="m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="1vcsY83hin0" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1vcsY83hin1" role="1B3o_S" />
+      <node concept="17QB3L" id="1vcsY83hin2" role="3clF45" />
+      <node concept="37vLTG" id="1vcsY83hin3" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <node concept="3Tqbb2" id="1vcsY83hin4" role="1tU5fm">
+          <ref role="ehGHo" to="y6ji:1vcsY83hfrh" resolve="MultiStep" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1vcsY83hin5" role="3clF46">
+        <property role="TrG5h" value="gc" />
+        <node concept="1iwH7U" id="1vcsY83hin6" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1vcsY83himb" role="jymVt" />
     <node concept="2YIFZL" id="26dfgZlX4Uw" role="jymVt">
       <property role="TrG5h" value="fileName" />
       <property role="od$2w" value="false" />
