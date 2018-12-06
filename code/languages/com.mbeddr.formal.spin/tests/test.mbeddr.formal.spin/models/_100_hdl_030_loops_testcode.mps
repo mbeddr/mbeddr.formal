@@ -30,7 +30,6 @@
       <concept id="2291855968617420207" name="com.mbeddr.formal.spin.c.core.structure.FunctionDeclaration" flags="ng" index="1a0DHN">
         <child id="2291855968617420980" name="params" index="1a0DpC" />
       </concept>
-      <concept id="2291855968618676464" name="com.mbeddr.formal.spin.c.core.structure.Includes" flags="ng" index="1ab$SG" />
       <concept id="6174591375235044138" name="com.mbeddr.formal.spin.c.core.structure.ExpressionStatement" flags="ng" index="1BCXOe">
         <child id="6174591375235044142" name="expression" index="1BCXOa" />
       </concept>
@@ -108,9 +107,6 @@
   <node concept="1a0OAp" id="1vcsY83hflf">
     <property role="TrG5h" value="_010_multistep_smoke" />
     <node concept="1a0O_Y" id="1vcsY83hflg" role="1a0O6w">
-      <node concept="1ab$SG" id="7M$OvLQdi2s" role="1a0O$p">
-        <property role="TrG5h" value="&quot;D:/x/mbeddr.formal/code/languages/com.mbeddr.formal.spin/tests/test.mbeddr.formal.spin/external_c_files/simple_sm.h&quot;" />
-      </node>
       <node concept="1a039r" id="1vcsY83hflk" role="1a0O$p">
         <property role="TrG5h" value="my_event" />
         <node concept="1a0DGp" id="1vcsY83hflr" role="1a0DGc" />

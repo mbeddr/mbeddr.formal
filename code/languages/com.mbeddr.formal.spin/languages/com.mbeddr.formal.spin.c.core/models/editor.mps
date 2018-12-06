@@ -245,6 +245,32 @@
           </node>
         </node>
       </node>
+      <node concept="3EZMnI" id="7M$OvLQgzC7" role="3EZMnx">
+        <node concept="3EZMnI" id="7M$OvLQgzC8" role="3EZMnx">
+          <node concept="VPM3Z" id="7M$OvLQgzC9" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="7M$OvLQgzCa" role="3EZMnx">
+            <property role="3F0ifm" value="include directories:" />
+          </node>
+          <node concept="l2Vlx" id="7M$OvLQgzCb" role="2iSdaV" />
+        </node>
+        <node concept="2iRkQZ" id="7M$OvLQgzCc" role="2iSdaV" />
+        <node concept="3EZMnI" id="7M$OvLQgzCd" role="3EZMnx">
+          <node concept="2iRfu4" id="7M$OvLQgzCe" role="2iSdaV" />
+          <node concept="3XFhqQ" id="7M$OvLQgzCf" role="3EZMnx" />
+          <node concept="3F2HdR" id="7M$OvLQgzCg" role="3EZMnx">
+            <ref role="1NtTu8" to="vshk:7M$OvLQgz$d" resolve="includeDirs" />
+            <node concept="2iRkQZ" id="7M$OvLQgzCh" role="2czzBx" />
+            <node concept="3F0ifn" id="7M$OvLQgzCi" role="2czzBI">
+              <property role="3F0ifm" value="press enter to add externals ..." />
+              <node concept="VechU" id="7M$OvLQgzCj" role="3F10Kt">
+                <property role="Vb096" value="gray" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1ZejHLlNdAr">

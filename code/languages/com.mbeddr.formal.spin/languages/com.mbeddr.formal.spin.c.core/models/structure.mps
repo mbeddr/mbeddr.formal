@@ -85,7 +85,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="externalPaths" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="68mc:5lKnBeAtNw8" resolve="AbstractPicker" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+    </node>
+    <node concept="1TJgyj" id="7M$OvLQgz$d" role="1TKVEi">
+      <property role="IQ2ns" value="8981534439129626893" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="includeDirs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
     </node>
     <node concept="PrWs8" id="1ZejHLlNd$5" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
