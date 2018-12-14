@@ -11,6 +11,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="dinh" ref="r:053017f6-a9b2-4735-890d-9c4181609d2f(com.mbeddr.formal.spin.ext.structure)" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -27,7 +28,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -92,6 +95,9 @@
   <node concept="PlHQZ" id="1ZejHLlNgt6">
     <property role="EcuMT" value="2291855968617432902" />
     <property role="TrG5h" value="IHarnessModuleContent" />
+    <node concept="PrWs8" id="6kOHW5f_EMC" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNgt7">
     <property role="EcuMT" value="2291855968617432903" />
@@ -155,6 +161,9 @@
     <property role="EcuMT" value="2291855968617623488" />
     <property role="TrG5h" value="IHarnessDefinitionContent" />
     <property role="3GE5qa" value="harness" />
+    <node concept="PrWs8" id="7BdTghQ6wIw" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNZ1Q">
     <property role="EcuMT" value="2291855968617623670" />

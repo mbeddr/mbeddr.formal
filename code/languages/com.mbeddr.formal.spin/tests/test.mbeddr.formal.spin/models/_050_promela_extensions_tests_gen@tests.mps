@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a246d6cc-4991-4d6d-845d-a5e5d5e30e43(test.mbeddr.formal.spin._100_hdl_tests_gen@tests)">
+<model ref="r:99613a02-d083-424b-ad8b-996a211282c0(test.mbeddr.formal.spin._050_promela_extensions_tests_gen@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
@@ -72,14 +72,9 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
-      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
-        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
-        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
-      </concept>
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
         <property id="1863527487546097494" name="modelId" index="1XweGQ" />
         <child id="679099339649067980" name="name" index="1j$8Uc" />
-        <child id="1863527487546123100" name="moduleRef" index="1Xw7sW" />
       </concept>
       <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
         <property id="679099339649053841" name="value" index="1j_P7h" />
@@ -102,141 +97,37 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="6kOHW5f$a7x">
+  <node concept="2XOHcx" id="6kOHW5f_LLk">
     <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.spin/" />
   </node>
-  <node concept="1lH9Xt" id="5mQCqLmwNs0">
-    <property role="TrG5h" value="_010_nondets" />
-    <node concept="1LZb2c" id="5mQCqLmAXMD" role="1SL9yI">
+  <node concept="1lH9Xt" id="6kOHW5f_LLl">
+    <property role="TrG5h" value="_010_statements" />
+    <node concept="1LZb2c" id="6kOHW5f_LLm" role="1SL9yI">
       <property role="TrG5h" value="test_nondets_gen" />
-      <node concept="3cqZAl" id="5mQCqLmAXME" role="3clF45" />
-      <node concept="3clFbS" id="5mQCqLmAXMI" role="3clF47">
-        <node concept="3cpWs8" id="6kOHW5f_O1D" role="3cqZAp">
-          <node concept="3cpWsn" id="6kOHW5f_O1E" role="3cpWs9">
+      <node concept="3cqZAl" id="6kOHW5f_LLn" role="3clF45" />
+      <node concept="3clFbS" id="6kOHW5f_LLo" role="3clF47">
+        <node concept="3cpWs8" id="6kOHW5f_NA8" role="3cqZAp">
+          <node concept="3cpWsn" id="6kOHW5f_NA9" role="3cpWs9">
             <property role="TrG5h" value="mPtr" />
-            <node concept="1XwpNF" id="6kOHW5f_O1C" role="1tU5fm" />
-            <node concept="1Xw6AR" id="6kOHW5f_O1F" role="33vP2m">
-              <node concept="1dCxOl" id="6kOHW5f_O1G" role="1XwpL7">
-                <property role="1XweGQ" value="r:7119012a-0b17-481d-9a5b-c29504d070b7" />
-                <node concept="1j_P7g" id="6kOHW5f_O1H" role="1j$8Uc">
-                  <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_010_nondet_assign_testcode" />
+            <node concept="1XwpNF" id="6kOHW5f_NA7" role="1tU5fm" />
+            <node concept="1Xw6AR" id="6kOHW5f_NAa" role="33vP2m">
+              <node concept="1dCxOl" id="6kOHW5f_NAb" role="1XwpL7">
+                <property role="1XweGQ" value="r:a388245c-19a6-4efb-b5b7-fa76c06da7ed" />
+                <node concept="1j_P7g" id="6kOHW5f_NAc" role="1j$8Uc">
+                  <property role="1j_P7h" value="test.mbeddr.formal.spin._050_promela_ext_010_statements_testcode" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="6kOHW5f_NWY" role="3cqZAp">
-          <node concept="3cpWsn" id="6kOHW5f_NWZ" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="model" />
-            <node concept="H_c77" id="6kOHW5f_NX0" role="1tU5fm" />
-            <node concept="2OqwBi" id="6kOHW5f_NX1" role="33vP2m">
-              <node concept="37vLTw" id="6kOHW5f_O1I" role="2Oq$k0">
-                <ref role="3cqZAo" node="6kOHW5f_O1E" resolve="mPtr" />
-              </node>
-              <node concept="2yCiCJ" id="6kOHW5f_NX6" role="2OqNvi">
-                <node concept="2OqwBi" id="6kOHW5f_NX7" role="Vysub">
-                  <node concept="1jxXqW" id="6kOHW5f_NX8" role="2Oq$k0" />
-                  <node concept="liA8E" id="6kOHW5f_NX9" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5mQCqLmAXN4" role="3cqZAp">
-          <node concept="NRdvd" id="6kOHW5f_O85" role="3clFbG">
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <node concept="1jxXqW" id="6kOHW5f_O86" role="37wK5m" />
-            <node concept="37vLTw" id="6kOHW5f_O9g" role="37wK5m">
-              <ref role="3cqZAo" node="6kOHW5f_NWZ" resolve="model" />
-            </node>
-            <node concept="Xl_RD" id="6kOHW5f_O88" role="37wK5m">
-              <property role="Xl_RC" value="\\baseline\\_100_hdl_010_nondet_assign_testcode" />
-            </node>
-            <node concept="Xl_RD" id="6kOHW5f_O89" role="37wK5m">
-              <property role="Xl_RC" value="pml" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1lH9Xt" id="6kOHW5f_Lml">
-    <property role="TrG5h" value="_020_assume" />
-    <node concept="1LZb2c" id="6kOHW5f_Lmm" role="1SL9yI">
-      <property role="TrG5h" value="test_assume_gen" />
-      <node concept="3cqZAl" id="6kOHW5f_Lmn" role="3clF45" />
-      <node concept="3clFbS" id="6kOHW5f_Lmo" role="3clF47">
-        <node concept="3cpWs8" id="6kOHW5f_NdA" role="3cqZAp">
-          <node concept="3cpWsn" id="6kOHW5f_NdB" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="model" />
-            <node concept="H_c77" id="6kOHW5f_NdC" role="1tU5fm" />
-            <node concept="2OqwBi" id="6kOHW5f_NdD" role="33vP2m">
-              <node concept="1Xw6AR" id="6kOHW5f_NdE" role="2Oq$k0">
-                <node concept="1dCxOl" id="6kOHW5f_NgE" role="1XwpL7">
-                  <property role="1XweGQ" value="r:1f046e12-e1a9-4322-a134-775f994be2ea" />
-                  <node concept="1j_P7g" id="6kOHW5f_NgF" role="1j$8Uc">
-                    <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_020_assume_testcode" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2yCiCJ" id="6kOHW5f_NdI" role="2OqNvi">
-                <node concept="2OqwBi" id="6kOHW5f_NdJ" role="Vysub">
-                  <node concept="1jxXqW" id="6kOHW5f_NdK" role="2Oq$k0" />
-                  <node concept="liA8E" id="6kOHW5f_NdL" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6kOHW5f_Lmt" role="3cqZAp">
-          <node concept="NRdvd" id="6kOHW5f_Noe" role="3clFbG">
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <node concept="1jxXqW" id="6kOHW5f_Nof" role="37wK5m" />
-            <node concept="37vLTw" id="6kOHW5f_Nog" role="37wK5m">
-              <ref role="3cqZAo" node="6kOHW5f_NdB" resolve="model" />
-            </node>
-            <node concept="Xl_RD" id="6kOHW5f_Noh" role="37wK5m">
-              <property role="Xl_RC" value="\\baseline\\_100_hdl_020_assume_testcode" />
-            </node>
-            <node concept="Xl_RD" id="6kOHW5f_Noi" role="37wK5m">
-              <property role="Xl_RC" value="pml" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1lH9Xt" id="6kOHW5f_Ls8">
-    <property role="TrG5h" value="_030_multistep" />
-    <node concept="1LZb2c" id="6kOHW5f_Ls9" role="1SL9yI">
-      <property role="TrG5h" value="test_multistep_gen" />
-      <node concept="3cqZAl" id="6kOHW5f_Lsa" role="3clF45" />
-      <node concept="3clFbS" id="6kOHW5f_Lsb" role="3clF47">
         <node concept="3cpWs8" id="6kOHW5f_Lsc" role="3cqZAp">
           <node concept="3cpWsn" id="6kOHW5f_Lsd" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="model" />
             <node concept="H_c77" id="6kOHW5f_Lse" role="1tU5fm" />
             <node concept="2OqwBi" id="6kOHW5f_N7C" role="33vP2m">
-              <node concept="1Xw6AR" id="6kOHW5f_N7D" role="2Oq$k0">
-                <node concept="1dCxOl" id="6kOHW5f_N7E" role="1XwpL7">
-                  <property role="1XweGQ" value="java:EDU.oswego.cs.dl.util.concurrent.misc" />
-                  <node concept="1j_P7g" id="6kOHW5f_N7F" role="1j$8Uc">
-                    <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_030_loops_testcode" />
-                  </node>
-                  <node concept="1dCxOk" id="6kOHW5f_N7G" role="1Xw7sW">
-                    <property role="1XweGW" value="1338ba73-5059-479b-a929-de86597a62b8" />
-                    <property role="1XxBO9" value="com.mbeddr.mpsutil.jung.pluginSolution" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="6kOHW5f_NAd" role="2Oq$k0">
+                <ref role="3cqZAo" node="6kOHW5f_NA9" resolve="mPtr" />
               </node>
               <node concept="2yCiCJ" id="6kOHW5f_N7H" role="2OqNvi">
                 <node concept="2OqwBi" id="6kOHW5f_N7I" role="Vysub">
@@ -249,18 +140,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6kOHW5f_Lsg" role="3cqZAp">
-          <node concept="NRdvd" id="6kOHW5f_NrV" role="3clFbG">
+        <node concept="3clFbF" id="6kOHW5f_LLq" role="3cqZAp">
+          <node concept="NRdvd" id="6kOHW5f_NHA" role="3clFbG">
             <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
             <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <node concept="1jxXqW" id="6kOHW5f_NrW" role="37wK5m" />
-            <node concept="37vLTw" id="6kOHW5f_NrX" role="37wK5m">
+            <node concept="1jxXqW" id="6kOHW5f_NHB" role="37wK5m" />
+            <node concept="37vLTw" id="6kOHW5f_NHC" role="37wK5m">
               <ref role="3cqZAo" node="6kOHW5f_Lsd" resolve="model" />
             </node>
-            <node concept="Xl_RD" id="6kOHW5f_NrY" role="37wK5m">
-              <property role="Xl_RC" value="\\baseline\\_100_hdl_030_loops_testcode" />
+            <node concept="Xl_RD" id="6kOHW5f_NHD" role="37wK5m">
+              <property role="Xl_RC" value="\\baseline\\_050_promela_ext_010_statements_testcode" />
             </node>
-            <node concept="Xl_RD" id="6kOHW5f_NrZ" role="37wK5m">
+            <node concept="Xl_RD" id="6kOHW5f_NHE" role="37wK5m">
               <property role="Xl_RC" value="pml" />
             </node>
           </node>

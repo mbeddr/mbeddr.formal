@@ -10,6 +10,7 @@
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -19,6 +20,7 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -102,6 +104,9 @@
   <node concept="PlHQZ" id="4_pH3zvds0D">
     <property role="EcuMT" value="5285453794051997737" />
     <property role="TrG5h" value="IPromelaModelContent" />
+    <node concept="PrWs8" id="6kOHW5f_ELR" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4_pH3zvds0H">
     <property role="EcuMT" value="5285453794051997741" />
@@ -148,6 +153,9 @@
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="Statement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6kOHW5f_C6b" role="PzmwI">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4_pH3zvfIn7">
     <property role="EcuMT" value="5285453794052597191" />
@@ -247,6 +255,9 @@
     </node>
     <node concept="PrWs8" id="6fYDdj_beke" role="PrDN$">
       <ref role="PrY4T" node="1ZejHLlNdnf" resolve="ITyped" />
+    </node>
+    <node concept="PrWs8" id="6kOHW5f_EMM" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
     </node>
     <node concept="1TJgyj" id="26dfgZm48FZ" role="1TKVEi">
       <property role="IQ2ns" value="2417655713193036543" />
@@ -870,6 +881,9 @@
     <node concept="PrWs8" id="1ZejHLm5WHL" role="PrDN$">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="PrWs8" id="6kOHW5f_Iia" role="PrDN$">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1ZejHLlNdnf">
     <property role="EcuMT" value="2291855968617420239" />
@@ -1046,6 +1060,7 @@
   <node concept="AxPO7" id="1vcsY83oEml">
     <property role="3GE5qa" value="c.top_level" />
     <property role="TrG5h" value="ETrackMatching" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="1vcsY83oEmm" role="M5hS2">
       <property role="1uS6qv" value="Matched" />

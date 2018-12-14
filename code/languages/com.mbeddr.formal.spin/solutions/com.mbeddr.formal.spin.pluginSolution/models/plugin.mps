@@ -1248,7 +1248,7 @@
             <ref role="37wK5l" to="f9gx:4ou0h$errEs" resolve="registerHighlightingStrategy" />
             <ref role="1Pybhc" to="f9gx:37J4MLLAhgO" resolve="HighlightingStrategyManager" />
             <node concept="Xl_RD" id="4ou0h$erw72" role="37wK5m">
-              <property role="Xl_RC" value=".*\\.pr" />
+              <property role="Xl_RC" value=".*\\.pml" />
             </node>
             <node concept="2ShNRf" id="4ou0h$erw73" role="37wK5m">
               <node concept="HV5vD" id="4ou0h$erw74" role="2ShVmc">
