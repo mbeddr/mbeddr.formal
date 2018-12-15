@@ -1764,6 +1764,45 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="7YSFuvpkAjy" role="3cqZAp">
+                <node concept="2OqwBi" id="7YSFuvpkDnq" role="3clFbG">
+                  <node concept="2OqwBi" id="7YSFuvpkBns" role="2Oq$k0">
+                    <node concept="37vLTw" id="7YSFuvpkAjw" role="2Oq$k0">
+                      <ref role="3cqZAo" node="69N9a9ZRexu" resolve="result" />
+                    </node>
+                    <node concept="2OwXpG" id="7YSFuvpkBUX" role="2OqNvi">
+                      <ref role="2Oxat5" node="4CtHBqNlszo" resolve="errorResult" />
+                    </node>
+                  </node>
+                  <node concept="TSZUe" id="7YSFuvpkE$J" role="2OqNvi">
+                    <node concept="Xl_RD" id="7YSFuvpkOk1" role="25WWJ7">
+                      <property role="Xl_RC" value="Exception while running external tool:" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7YSFuvpkLnT" role="3cqZAp">
+                <node concept="2OqwBi" id="7YSFuvpkLnU" role="3clFbG">
+                  <node concept="2OqwBi" id="7YSFuvpkLnV" role="2Oq$k0">
+                    <node concept="37vLTw" id="7YSFuvpkLnW" role="2Oq$k0">
+                      <ref role="3cqZAo" node="69N9a9ZRexu" resolve="result" />
+                    </node>
+                    <node concept="2OwXpG" id="7YSFuvpkLnX" role="2OqNvi">
+                      <ref role="2Oxat5" node="4CtHBqNlszo" resolve="errorResult" />
+                    </node>
+                  </node>
+                  <node concept="TSZUe" id="7YSFuvpkLnY" role="2OqNvi">
+                    <node concept="2OqwBi" id="7YSFuvpkLnZ" role="25WWJ7">
+                      <node concept="37vLTw" id="7YSFuvpkLo0" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1Gh$g1vO07A" resolve="e" />
+                      </node>
+                      <node concept="liA8E" id="7YSFuvpkLo1" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="1Gh$g1vPcld" role="3cqZAp">
                 <node concept="37vLTw" id="69N9a9ZRexx" role="3cqZAk">
                   <ref role="3cqZAo" node="69N9a9ZRexu" resolve="result" />
