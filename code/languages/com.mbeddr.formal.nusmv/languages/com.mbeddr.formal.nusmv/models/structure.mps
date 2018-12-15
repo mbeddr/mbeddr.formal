@@ -96,8 +96,14 @@
     <node concept="PrWs8" id="407WgdWZgUB" role="PzmwI">
       <ref role="PrY4T" to="b19z:407WgdWZ7F6" resolve="IKeywordsProvider" />
     </node>
+    <node concept="PrWs8" id="7rdMSLlHcLX" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
+    </node>
     <node concept="PrWs8" id="1NcemxVNVKT" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKm$" resolve="UnitConcept" />
+    </node>
+    <node concept="PrWs8" id="3L1$CQuXB8r" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
     </node>
     <node concept="1QGGSu" id="14CuINs5VhI" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/system.png" />
