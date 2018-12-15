@@ -1,5 +1,5 @@
-## FASTEN: Formal Specification Environment
-Homepage: **[FASTEN](https://sites.google.com/site/fastenroot/)**
+## FASTEN: Formal Specification Environment (H
+* Detailed Infos on the **[FASTEN Homepage] (https://sites.google.com/site/fastenroot/)**
 
 * [Overview](#overview)  
 * [Download](#download) 
