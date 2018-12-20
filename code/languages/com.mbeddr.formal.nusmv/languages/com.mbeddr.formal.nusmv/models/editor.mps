@@ -1513,6 +1513,7 @@
     <node concept="3EZMnI" id="7mSH3WnwK$$" role="2wV5jI">
       <node concept="3F0ifn" id="7mSH3WnwK$I" role="3EZMnx">
         <property role="3F0ifm" value="next" />
+        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="7mSH3WnwK$R" role="3EZMnx">
         <property role="3F0ifm" value="(" />
