@@ -1,0 +1,14 @@
+-- test for temporal expressions
+-------------------------------------------------------------------------
+
+MODULE next_exps_tests(p1)
+
+VAR
+ v1 : boolean;
+
+ASSIGN
+  next(v1) :=
+   case
+	next(p1) = 1 : FALSE;
+	TRUE : TRUE;
+   esac;

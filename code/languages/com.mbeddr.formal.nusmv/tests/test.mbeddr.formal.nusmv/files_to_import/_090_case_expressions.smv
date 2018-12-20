@@ -1,0 +1,16 @@
+-- test for case expressions
+-------------------------------------------------------------------------
+
+MODULE case_exps_tests(p1, p2)
+
+VAR
+ v1 : boolean;
+
+ASSIGN
+  next(v1) :=
+   case
+	(p2 = 3) : !p1;
+	TRUE : p1;
+   esac;
+
+  init(v1) := FALSE;

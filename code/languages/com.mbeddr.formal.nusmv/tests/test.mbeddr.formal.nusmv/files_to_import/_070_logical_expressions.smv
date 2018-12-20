@@ -7,3 +7,4 @@ DEFINE
   p_or_q := p | q;
   p_xor_q := p xor q;
   not_p_or_q := !(p | q);
+  p_or_q_and_q := (p | q) & q;

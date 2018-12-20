@@ -14,6 +14,7 @@
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
       <concept id="1504214765033455826" name="com.mbeddr.mpsutil.filepicker.structure.FileSystemFilePicker" flags="ng" index="3VlSI9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -37,6 +38,16 @@
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="d:/tmp/pci3p.smv" />
+      </node>
+    </node>
+  </node>
+  <node concept="Q3Guq" id="4C19r4_Ypi5">
+    <property role="TrG5h" value="realExamples" />
+    <node concept="1JYbFF" id="4C19r4_Yx7d" role="Q3GC_">
+      <node concept="3NXOOs" id="4C19r4_Yx7g" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/big_examples/pci3p.smv" />
       </node>
     </node>
   </node>
