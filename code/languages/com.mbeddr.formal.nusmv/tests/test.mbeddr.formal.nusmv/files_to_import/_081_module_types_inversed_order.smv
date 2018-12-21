@@ -1,0 +1,18 @@
+-- test for modules whereby the top module comes first in the file
+-------------------------------------------------------------------------
+
+MODULE outer_module
+VAR
+  m1 : inner_module_1(TRUE); -- first comment
+  m2 : inner_module_2(); -- another comment
+  m3 : inner_module_1(im2_out);
+DEFINE
+  im2_out := m2.o2;  
+  
+MODULE inner_module_1(p)
+DEFINE
+  o1 = p;
+  
+MODULE inner_module_2()
+DEFINE
+  o2 = 42;

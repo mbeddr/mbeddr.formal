@@ -1,0 +1,14 @@
+-- test for specifications
+-------------------------------------------------------------------------
+
+MODULE module_with_specifications(p1)
+
+VAR
+ v1 : boolean;
+
+DEFINE
+ o := TRUE;
+
+SPEC EF o;
+SPEC !EF o;
+SPEC AG o & v1;

@@ -191,7 +191,7 @@
     </language>
   </registry>
   <node concept="1lH9Xt" id="L6k24q5o6j">
-    <property role="TrG5h" value="_010_to_090_cases" />
+    <property role="TrG5h" value="_010_basic_cases" />
     <property role="3OwPAg" value="true" />
     <node concept="1LZb2c" id="L6k24q5o6k" role="1SL9yI">
       <property role="TrG5h" value="test_010_file1" />
@@ -385,6 +385,38 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="L6k24qerp2" role="1SL9yI">
+      <property role="TrG5h" value="test_081_module_types_inversed_order" />
+      <node concept="3cqZAl" id="L6k24qerp3" role="3clF45" />
+      <node concept="3clFbS" id="L6k24qerp4" role="3clF47">
+        <node concept="3cpWs8" id="L6k24qerp5" role="3cqZAp">
+          <node concept="3cpWsn" id="L6k24qerp6" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="L6k24qerp7" role="1tU5fm">
+              <ref role="3uigEE" to="mqum:494SuRWLRaN" resolve="MPSNodeComparisonResult" />
+            </node>
+            <node concept="2YIFZM" id="L6k24qerp8" role="33vP2m">
+              <ref role="37wK5l" node="L6k24q5o73" resolve="importAndCheckSystem" />
+              <ref role="1Pybhc" node="L6k24q5o71" resolve="Utils" />
+              <node concept="Xl_RD" id="L6k24qerp9" role="37wK5m">
+                <property role="Xl_RC" value="_081_module_types_inversed_order.smv" />
+              </node>
+              <node concept="1jxXqW" id="L6k24qerpa" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="L6k24qerpb" role="3cqZAp">
+          <node concept="2OqwBi" id="L6k24qerpc" role="3vwVQn">
+            <node concept="37vLTw" id="L6k24qerpd" role="2Oq$k0">
+              <ref role="3cqZAo" node="L6k24qerp6" resolve="res" />
+            </node>
+            <node concept="liA8E" id="L6k24qerpe" role="2OqNvi">
+              <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="L6k24q9WSV" role="1SL9yI">
       <property role="TrG5h" value="test_090_case_expressions" />
       <node concept="3cqZAl" id="L6k24q9WSW" role="3clF45" />
@@ -411,6 +443,38 @@
               <ref role="3cqZAo" node="L6k24q9WSZ" resolve="res" />
             </node>
             <node concept="liA8E" id="L6k24q9WT7" role="2OqNvi">
+              <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="L6k24q9Xb4" role="1SL9yI">
+      <property role="TrG5h" value="test_100_temporal_expressions" />
+      <node concept="3cqZAl" id="L6k24q9Xb5" role="3clF45" />
+      <node concept="3clFbS" id="L6k24q9Xb6" role="3clF47">
+        <node concept="3cpWs8" id="L6k24q9Xb7" role="3cqZAp">
+          <node concept="3cpWsn" id="L6k24q9Xb8" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="L6k24q9Xb9" role="1tU5fm">
+              <ref role="3uigEE" to="mqum:494SuRWLRaN" resolve="MPSNodeComparisonResult" />
+            </node>
+            <node concept="2YIFZM" id="L6k24q9Xba" role="33vP2m">
+              <ref role="1Pybhc" node="L6k24q5o71" resolve="Utils" />
+              <ref role="37wK5l" node="L6k24q5o73" resolve="importAndCheckSystem" />
+              <node concept="Xl_RD" id="L6k24q9Xbb" role="37wK5m">
+                <property role="Xl_RC" value="_100_temporal_expressions.smv" />
+              </node>
+              <node concept="1jxXqW" id="L6k24q9Xbc" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="L6k24q9Xbd" role="3cqZAp">
+          <node concept="2OqwBi" id="L6k24q9Xbe" role="3vwVQn">
+            <node concept="37vLTw" id="L6k24q9Xbf" role="2Oq$k0">
+              <ref role="3cqZAo" node="L6k24q9Xb8" resolve="res" />
+            </node>
+            <node concept="liA8E" id="L6k24q9Xbg" role="2OqNvi">
               <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
             </node>
           </node>
@@ -695,35 +759,35 @@
     <node concept="2tJIrI" id="L6k24q5o74" role="jymVt" />
     <node concept="3Tm1VV" id="L6k24q5o75" role="1B3o_S" />
   </node>
-  <node concept="1lH9Xt" id="L6k24q9Xb3">
-    <property role="TrG5h" value="_0100_to_500_cases" />
+  <node concept="1lH9Xt" id="L6k24qeqLA">
+    <property role="TrG5h" value="_020_spec" />
     <property role="3OwPAg" value="true" />
-    <node concept="1LZb2c" id="L6k24q9Xb4" role="1SL9yI">
-      <property role="TrG5h" value="test_100_temporal_expressions" />
-      <node concept="3cqZAl" id="L6k24q9Xb5" role="3clF45" />
-      <node concept="3clFbS" id="L6k24q9Xb6" role="3clF47">
-        <node concept="3cpWs8" id="L6k24q9Xb7" role="3cqZAp">
-          <node concept="3cpWsn" id="L6k24q9Xb8" role="3cpWs9">
+    <node concept="1LZb2c" id="L6k24qeqLB" role="1SL9yI">
+      <property role="TrG5h" value="test_110_specifications" />
+      <node concept="3cqZAl" id="L6k24qeqLC" role="3clF45" />
+      <node concept="3clFbS" id="L6k24qeqLD" role="3clF47">
+        <node concept="3cpWs8" id="L6k24qeqLE" role="3cqZAp">
+          <node concept="3cpWsn" id="L6k24qeqLF" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="3uibUv" id="L6k24q9Xb9" role="1tU5fm">
+            <node concept="3uibUv" id="L6k24qeqLG" role="1tU5fm">
               <ref role="3uigEE" to="mqum:494SuRWLRaN" resolve="MPSNodeComparisonResult" />
             </node>
-            <node concept="2YIFZM" id="L6k24q9Xba" role="33vP2m">
-              <ref role="37wK5l" node="L6k24q5o73" resolve="importAndCheckSystem" />
+            <node concept="2YIFZM" id="L6k24qeqLH" role="33vP2m">
               <ref role="1Pybhc" node="L6k24q5o71" resolve="Utils" />
-              <node concept="Xl_RD" id="L6k24q9Xbb" role="37wK5m">
-                <property role="Xl_RC" value="_100_temporal_expressions.smv" />
+              <ref role="37wK5l" node="L6k24q5o73" resolve="importAndCheckSystem" />
+              <node concept="Xl_RD" id="L6k24qeqLI" role="37wK5m">
+                <property role="Xl_RC" value="_110_specifications.smv" />
               </node>
-              <node concept="1jxXqW" id="L6k24q9Xbc" role="37wK5m" />
+              <node concept="1jxXqW" id="L6k24qeqLJ" role="37wK5m" />
             </node>
           </node>
         </node>
-        <node concept="3vwNmj" id="L6k24q9Xbd" role="3cqZAp">
-          <node concept="2OqwBi" id="L6k24q9Xbe" role="3vwVQn">
-            <node concept="37vLTw" id="L6k24q9Xbf" role="2Oq$k0">
-              <ref role="3cqZAo" node="L6k24q9Xb8" resolve="res" />
+        <node concept="3vwNmj" id="L6k24qeqLK" role="3cqZAp">
+          <node concept="2OqwBi" id="L6k24qeqLL" role="3vwVQn">
+            <node concept="37vLTw" id="L6k24qeqLM" role="2Oq$k0">
+              <ref role="3cqZAo" node="L6k24qeqLF" resolve="res" />
             </node>
-            <node concept="liA8E" id="L6k24q9Xbg" role="2OqNvi">
+            <node concept="liA8E" id="L6k24qeqLN" role="2OqNvi">
               <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
             </node>
           </node>
