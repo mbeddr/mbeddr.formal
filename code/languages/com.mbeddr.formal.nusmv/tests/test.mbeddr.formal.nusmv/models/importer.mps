@@ -78,9 +78,19 @@
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
       <concept id="4643937035595555211" name="com.mbeddr.formal.nusmv.structure.SimpleAssignment" flags="ng" index="1lxFmE" />
+      <concept id="4643937035597378501" name="com.mbeddr.formal.nusmv.structure.CompassionSection" flags="ng" index="1mvmv$">
+        <child id="4643937035598221837" name="q" index="1mr$oG" />
+        <child id="4643937035597378502" name="p" index="1mvmvB" />
+      </concept>
+      <concept id="4643937035597377124" name="com.mbeddr.formal.nusmv.structure.JusticeSection" flags="ng" index="1mvnD5">
+        <child id="4643937035597377125" name="condition" index="1mvnD4" />
+      </concept>
       <concept id="8482728081226188044" name="com.mbeddr.formal.nusmv.structure.XorExpression" flags="ng" index="1y3R4N" />
       <concept id="8482728081222732062" name="com.mbeddr.formal.nusmv.structure.NextExpression" flags="ng" index="1yeVOx">
         <child id="8482728081222732063" name="var" index="1yeVOw" />
+      </concept>
+      <concept id="8482728081217677278" name="com.mbeddr.formal.nusmv.structure.FairnessSection" flags="ng" index="1yzlfx">
+        <child id="8482728081217677282" name="condition" index="1yzlft" />
       </concept>
       <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VarRef" flags="ng" index="1y$7Wu">
         <reference id="8482728081216817954" name="var" index="1y$7Wt" />
@@ -239,6 +249,13 @@
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="files_to_import/_110_specifications.smv" />
+      </node>
+    </node>
+    <node concept="1JYbFF" id="41M_24ma4M4" role="Q3GC_">
+      <node concept="3NXOOs" id="41M_24ma4M5" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/_120_fairness.smv" />
       </node>
     </node>
   </node>
@@ -1186,6 +1203,44 @@
               <ref role="2He$iI" node="41M_24lZTjm" resolve="v1" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="41M_24ma4My">
+    <property role="TrG5h" value="_120_fairness_baseline" />
+    <node concept="2SQmWS" id="41M_24ma4Mz" role="2HcuB8" />
+    <node concept="169PT5" id="41M_24ma4M$" role="2HcuB8" />
+    <node concept="sUyCV" id="41M_24ma4M_" role="2HcuB8">
+      <property role="sUxOX" value=" test for fairness, justice" />
+    </node>
+    <node concept="sUyCV" id="41M_24ma4MA" role="2HcuB8">
+      <property role="sUxOX" value="-----------------------------------------------------------------------" />
+    </node>
+    <node concept="2Hdtz0" id="41M_24ma4MB" role="2HcuB8">
+      <property role="TrG5h" value="module_with_fairness" />
+      <node concept="2Hdtzr" id="41M_24ma4MC" role="2Hdtzq">
+        <property role="TrG5h" value="p1" />
+      </node>
+      <node concept="2Hdtzr" id="41M_24ma4MD" role="2Hdtzq">
+        <property role="TrG5h" value="p2" />
+      </node>
+      <node concept="1yzlfx" id="41M_24ma4MF" role="2HcbjO">
+        <node concept="32Ogvo" id="41M_24ma4ML" role="1yzlft">
+          <ref role="32Ogvr" node="41M_24ma4MC" resolve="p1" />
+        </node>
+      </node>
+      <node concept="1mvnD5" id="41M_24ma4MH" role="2HcbjO">
+        <node concept="32Ogvo" id="41M_24ma4MM" role="1mvnD4">
+          <ref role="32Ogvr" node="41M_24ma4MC" resolve="p1" />
+        </node>
+      </node>
+      <node concept="1mvmv$" id="41M_24ma4MK" role="2HcbjO">
+        <node concept="32Ogvo" id="41M_24ma4MN" role="1mvmvB">
+          <ref role="32Ogvr" node="41M_24ma4MC" resolve="p1" />
+        </node>
+        <node concept="32Ogvo" id="41M_24ma4MO" role="1mr$oG">
+          <ref role="32Ogvr" node="41M_24ma4MD" resolve="p2" />
         </node>
       </node>
     </node>

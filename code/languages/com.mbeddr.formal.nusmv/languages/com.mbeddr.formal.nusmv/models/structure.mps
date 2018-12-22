@@ -1675,8 +1675,15 @@
     <node concept="1TJgyj" id="41M_24m3Zf6" role="1TKVEi">
       <property role="IQ2ns" value="4643937035597378502" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="conditions" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="p" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="41M_24m7d8d" role="1TKVEi">
+      <property role="IQ2ns" value="4643937035598221837" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="q" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>

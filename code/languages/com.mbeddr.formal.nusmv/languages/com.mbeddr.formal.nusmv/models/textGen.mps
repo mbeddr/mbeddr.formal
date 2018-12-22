@@ -1997,13 +1997,22 @@
           <node concept="la8eA" id="41M_24m3ZsQ" role="lcghm">
             <property role="lacIc" value="COMPASSION (" />
           </node>
-          <node concept="l9S2W" id="41M_24m3ZzH" role="lcghm">
-            <property role="XA4eZ" value="true" />
-            <property role="lbP0B" value="," />
-            <node concept="2OqwBi" id="41M_24m3ZGy" role="lbANJ">
-              <node concept="117lpO" id="41M_24m3Z$e" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="41M_24m408_" role="2OqNvi">
-                <ref role="3TtcxE" to="gioj:41M_24m3Zf6" resolve="conditions" />
+          <node concept="l9hG8" id="41M_24mcxHG" role="lcghm">
+            <node concept="2OqwBi" id="41M_24mcxUl" role="lb14g">
+              <node concept="117lpO" id="41M_24mcxIB" role="2Oq$k0" />
+              <node concept="3TrEf2" id="41M_24mcymW" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:41M_24m3Zf6" resolve="p" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="41M_24mcyym" role="lcghm">
+            <property role="lacIc" value="," />
+          </node>
+          <node concept="l9hG8" id="41M_24mcyI7" role="lcghm">
+            <node concept="2OqwBi" id="41M_24mcz0a" role="lb14g">
+              <node concept="117lpO" id="41M_24mcyOs" role="2Oq$k0" />
+              <node concept="3TrEf2" id="41M_24mczf2" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:41M_24m7d8d" resolve="q" />
               </node>
             </node>
           </node>

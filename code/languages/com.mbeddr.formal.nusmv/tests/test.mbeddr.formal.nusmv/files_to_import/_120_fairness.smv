@@ -1,0 +1,8 @@
+-- test for fairness, justice
+-------------------------------------------------------------------------
+
+MODULE module_with_fairness(p1, p2)
+
+FAIRNESS p1;
+JUSTICE p1;
+COMPASSION (p1, p2);
