@@ -7,7 +7,11 @@ DEFINE
 
 -- another comment line
 
-MODULE m2(p1, p2)
+MODULE m2(
+          -- first param
+          p1, 
+		  -- second param
+		  p2)
 DEFINE
   out := p1 + p2;
   
