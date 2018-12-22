@@ -11,8 +11,8 @@ DEFINE
   
 MODULE inner_module_1(p)
 DEFINE
-  o1 = p;
+  o1 := p;
   
 MODULE inner_module_2()
 DEFINE
-  o2 = 42;
+  o2 := 42;
