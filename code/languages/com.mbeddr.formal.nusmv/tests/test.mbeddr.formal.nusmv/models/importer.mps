@@ -152,6 +152,20 @@
       <node concept="3NXOOs" id="4C19r4_Yx52" role="1JYbDs">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/_000_smoke_000_only_comments.smv" />
+      </node>
+    </node>
+    <node concept="1JYbFF" id="ItRw1SxebI" role="Q3GC_">
+      <node concept="3NXOOs" id="ItRw1SxebJ" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/_000_smoke_010_basic_modules.smv" />
+      </node>
+    </node>
+    <node concept="1JYbFF" id="ItRw1Sxe5e" role="Q3GC_">
+      <node concept="3NXOOs" id="ItRw1Sxe5f" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="files_to_import/_010_file1.smv" />
       </node>
     </node>
@@ -984,6 +998,82 @@
         </node>
         <node concept="sUyCV" id="L6k24qewlP" role="2Hfkx9">
           <property role="sUxOX" value=" second comment line" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="ItRw1S$VwB">
+    <property role="TrG5h" value="_000_smoke_000_only_comments_baseline" />
+    <node concept="2SQmWS" id="ItRw1S$VwC" role="2HcuB8" />
+    <node concept="169PT5" id="ItRw1S$VwD" role="2HcuB8" />
+    <node concept="sUyCV" id="ItRw1S$VwE" role="2HcuB8">
+      <property role="sUxOX" value=" comments line 1" />
+    </node>
+    <node concept="sUyCV" id="ItRw1S$VwF" role="2HcuB8">
+      <property role="sUxOX" value=" " />
+    </node>
+    <node concept="sUyCV" id="ItRw1S$VwG" role="2HcuB8">
+      <property role="sUxOX" value=" comment line 2" />
+    </node>
+    <node concept="sUyCV" id="ItRw1S$VwH" role="2HcuB8">
+      <property role="sUxOX" value="-------------" />
+    </node>
+    <node concept="sUyCV" id="ItRw1S$VwI" role="2HcuB8">
+      <property role="sUxOX" value=" comment preceeded by spaces" />
+    </node>
+    <node concept="sUyCV" id="ItRw1S$VwJ" role="2HcuB8">
+      <property role="sUxOX" value=" final comment" />
+    </node>
+  </node>
+  <node concept="2HdtXS" id="ItRw1SHpls">
+    <property role="TrG5h" value="_000_smoke_010_basic_modules_baseline" />
+    <node concept="2SQmWS" id="ItRw1SHplt" role="2HcuB8" />
+    <node concept="169PT5" id="ItRw1SHplu" role="2HcuB8" />
+    <node concept="sUyCV" id="ItRw1SHplv" role="2HcuB8">
+      <property role="sUxOX" value=" comments and modules" />
+    </node>
+    <node concept="sUyCV" id="ItRw1SHplw" role="2HcuB8">
+      <property role="sUxOX" value="-----------------------------------------------------------------------" />
+    </node>
+    <node concept="2Hdtz0" id="ItRw1SHplx" role="2HcuB8">
+      <property role="TrG5h" value="m1" />
+      <node concept="2Hdtzr" id="ItRw1SHply" role="2Hdtzq">
+        <property role="TrG5h" value="par1" />
+      </node>
+      <node concept="32O2o0" id="ItRw1SHplz" role="2HcbjO">
+        <node concept="1zoerA" id="ItRw1SHpl_" role="32O2ov">
+          <property role="TrG5h" value="out" />
+          <node concept="32Ogvo" id="ItRw1SHplK" role="1zoetD">
+            <ref role="32Ogvr" node="ItRw1SHply" resolve="par1" />
+          </node>
+        </node>
+        <node concept="sUyCV" id="ItRw1SHplA" role="32O2ov">
+          <property role="sUxOX" value=" another comment line" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Hdtz0" id="ItRw1SHplB" role="2HcuB8">
+      <property role="TrG5h" value="m2" />
+      <node concept="2Hdtzr" id="ItRw1SHplC" role="2Hdtzq">
+        <property role="TrG5h" value="p1" />
+      </node>
+      <node concept="2Hdtzr" id="ItRw1SHplD" role="2Hdtzq">
+        <property role="TrG5h" value="p2" />
+      </node>
+      <node concept="32O2o0" id="ItRw1SHplE" role="2HcbjO">
+        <node concept="1zoerA" id="ItRw1SHplI" role="32O2ov">
+          <property role="TrG5h" value="out" />
+          <node concept="2H9FEB" id="ItRw1SHplH" role="1zoetD">
+            <node concept="32Ogvo" id="ItRw1SHplL" role="2H9Iav">
+              <ref role="32Ogvr" node="ItRw1SHplC" resolve="p1" />
+            </node>
+            <node concept="32Ogvo" id="ItRw1SHplM" role="2H9Ial">
+              <ref role="32Ogvr" node="ItRw1SHplD" resolve="p2" />
+            </node>
+          </node>
+        </node>
+        <node concept="sUyCV" id="ItRw1SHplJ" role="32O2ov">
+          <property role="sUxOX" value=" comment line at end" />
         </node>
       </node>
     </node>

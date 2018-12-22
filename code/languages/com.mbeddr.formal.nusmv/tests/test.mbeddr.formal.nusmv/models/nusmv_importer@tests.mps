@@ -795,5 +795,73 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="ItRw1S$VwK">
+    <property role="TrG5h" value="_000_smoke" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="ItRw1S$VwL" role="1SL9yI">
+      <property role="TrG5h" value="test_000_only_comments" />
+      <node concept="3cqZAl" id="ItRw1S$VwM" role="3clF45" />
+      <node concept="3clFbS" id="ItRw1S$VwN" role="3clF47">
+        <node concept="3cpWs8" id="ItRw1S$VwO" role="3cqZAp">
+          <node concept="3cpWsn" id="ItRw1S$VwP" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="ItRw1S$VwQ" role="1tU5fm">
+              <ref role="3uigEE" to="mqum:494SuRWLRaN" resolve="MPSNodeComparisonResult" />
+            </node>
+            <node concept="2YIFZM" id="ItRw1S$VwR" role="33vP2m">
+              <ref role="37wK5l" node="L6k24q5o73" resolve="importAndCheckSystem" />
+              <ref role="1Pybhc" node="L6k24q5o71" resolve="Utils" />
+              <node concept="Xl_RD" id="ItRw1S$VwS" role="37wK5m">
+                <property role="Xl_RC" value="_000_smoke_000_only_comments.smv" />
+              </node>
+              <node concept="1jxXqW" id="ItRw1S$VwT" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="ItRw1S$VwU" role="3cqZAp">
+          <node concept="2OqwBi" id="ItRw1S$VwV" role="3vwVQn">
+            <node concept="37vLTw" id="ItRw1S$VwW" role="2Oq$k0">
+              <ref role="3cqZAo" node="ItRw1S$VwP" resolve="res" />
+            </node>
+            <node concept="liA8E" id="ItRw1S$VwX" role="2OqNvi">
+              <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="ItRw1SHpmO" role="1SL9yI">
+      <property role="TrG5h" value="test_010_basic_modules" />
+      <node concept="3cqZAl" id="ItRw1SHpmP" role="3clF45" />
+      <node concept="3clFbS" id="ItRw1SHpmQ" role="3clF47">
+        <node concept="3cpWs8" id="ItRw1SHpmR" role="3cqZAp">
+          <node concept="3cpWsn" id="ItRw1SHpmS" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="ItRw1SHpmT" role="1tU5fm">
+              <ref role="3uigEE" to="mqum:494SuRWLRaN" resolve="MPSNodeComparisonResult" />
+            </node>
+            <node concept="2YIFZM" id="ItRw1SHpmU" role="33vP2m">
+              <ref role="37wK5l" node="L6k24q5o73" resolve="importAndCheckSystem" />
+              <ref role="1Pybhc" node="L6k24q5o71" resolve="Utils" />
+              <node concept="Xl_RD" id="ItRw1SHpmV" role="37wK5m">
+                <property role="Xl_RC" value="_000_smoke_010_basic_modules.smv" />
+              </node>
+              <node concept="1jxXqW" id="ItRw1SHpmW" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="ItRw1SHpmX" role="3cqZAp">
+          <node concept="2OqwBi" id="ItRw1SHpmY" role="3vwVQn">
+            <node concept="37vLTw" id="ItRw1SHpmZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="ItRw1SHpmS" resolve="res" />
+            </node>
+            <node concept="liA8E" id="ItRw1SHpn0" role="2OqNvi">
+              <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
