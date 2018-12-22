@@ -114,6 +114,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -3296,28 +3297,14 @@
                 <property role="Xl_RC" value="case" />
               </node>
             </node>
-            <node concept="1rXfSq" id="3D1D54i45gz" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OvI52" resolve="Spacing" />
-            </node>
             <node concept="1rXfSq" id="1uMmOZG9ocD" role="37wK5m">
               <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
             </node>
             <node concept="2OqwBi" id="3D1D54i51tJ" role="37wK5m">
               <node concept="1rXfSq" id="3D1D54i4YXv" role="2Oq$k0">
-                <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
-                <node concept="2OqwBi" id="1uMmOZGgaOm" role="37wK5m">
-                  <node concept="1rXfSq" id="1uMmOZGe0fL" role="2Oq$k0">
-                    <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
-                    <node concept="1rXfSq" id="3D1D54i4V5I" role="37wK5m">
-                      <ref role="37wK5l" node="3D1D54i4nWi" resolve="CaseBasicExp" />
-                    </node>
-                    <node concept="1rXfSq" id="1uMmOZGdVV8" role="37wK5m">
-                      <ref role="37wK5l" node="7mFAowR3TM1" resolve="Case" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1uMmOZGgcpR" role="2OqNvi">
-                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
-                  </node>
+                <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
+                <node concept="1rXfSq" id="41M_24m0B$2" role="37wK5m">
+                  <ref role="37wK5l" node="3D1D54i4nWi" resolve="CaseBasicExp" />
                 </node>
               </node>
               <node concept="liA8E" id="3D1D54i52Uf" role="2OqNvi">
@@ -3371,9 +3358,6 @@
               <node concept="Xl_RD" id="3D1D54i5q1p" role="37wK5m">
                 <property role="Xl_RC" value=";" />
               </node>
-            </node>
-            <node concept="1rXfSq" id="3D1D54i5xAb" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OvI52" resolve="Spacing" />
             </node>
           </node>
         </node>
@@ -4278,10 +4262,16 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="MGgg6OzreR" role="3clF47">
         <node concept="3cpWs6" id="MGgg6Ozu$q" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OzvoZ" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
-            <node concept="1rXfSq" id="MGgg6Ozw7h" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
+          <node concept="1rXfSq" id="41M_24m2k6z" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+            <node concept="1rXfSq" id="MGgg6OzvoZ" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
+              <node concept="1rXfSq" id="MGgg6Ozw7h" role="37wK5m">
+                <ref role="37wK5l" node="MGgg6OztxX" resolve="Digit" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="41M_24m2nh8" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OvI52" resolve="Spacing" />
             </node>
           </node>
         </node>
@@ -4329,10 +4319,16 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="MGgg6OA4S2" role="3clF47">
         <node concept="3cpWs6" id="MGgg6OA5IL" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OA7yI" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-            <node concept="Xl_RD" id="MGgg6OA8iK" role="37wK5m">
-              <property role="Xl_RC" value="TRUE" />
+          <node concept="1rXfSq" id="41M_24m2QpB" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+            <node concept="1rXfSq" id="MGgg6OA7yI" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+              <node concept="Xl_RD" id="MGgg6OA8iK" role="37wK5m">
+                <property role="Xl_RC" value="TRUE" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="41M_24m2TAv" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OvI52" resolve="Spacing" />
             </node>
           </node>
         </node>
@@ -4350,10 +4346,16 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="MGgg6OAby_" role="3clF47">
         <node concept="3cpWs6" id="MGgg6OAcqK" role="3cqZAp">
-          <node concept="1rXfSq" id="MGgg6OAdi3" role="3cqZAk">
-            <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
-            <node concept="Xl_RD" id="MGgg6OAhns" role="37wK5m">
-              <property role="Xl_RC" value="FALSE" />
+          <node concept="1rXfSq" id="41M_24m2Uen" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+            <node concept="1rXfSq" id="41M_24m2Ueo" role="37wK5m">
+              <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
+              <node concept="Xl_RD" id="41M_24m2Uep" role="37wK5m">
+                <property role="Xl_RC" value="FALSE" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="41M_24m2Ueq" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OvI52" resolve="Spacing" />
             </node>
           </node>
         </node>
@@ -5799,34 +5801,37 @@
                             <node concept="3cpWsn" id="2Fb$OrinasP" role="3cpWs9">
                               <property role="TrG5h" value="lhs" />
                               <node concept="17QB3L" id="2Fb$OrinIoG" role="1tU5fm" />
-                              <node concept="2YIFZM" id="2Fb$Orin8C3" role="33vP2m">
-                                <ref role="1Pybhc" to="q96v:~ParseTreeUtils" resolve="ParseTreeUtils" />
-                                <ref role="37wK5l" to="q96v:~ParseTreeUtils.getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer):java.lang.String" resolve="getNodeText" />
-                                <node concept="2OqwBi" id="5uReZOjI4oV" role="37wK5m">
-                                  <node concept="2OqwBi" id="5uReZOjI24Z" role="2Oq$k0">
-                                    <node concept="37vLTw" id="2Fb$Orin8TC" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="7P8kyPLJznK" resolve="typeSpecifierNode" />
+                              <node concept="2OqwBi" id="41M_24m3mcL" role="33vP2m">
+                                <node concept="2YIFZM" id="2Fb$Orin8C3" role="2Oq$k0">
+                                  <ref role="1Pybhc" to="q96v:~ParseTreeUtils" resolve="ParseTreeUtils" />
+                                  <ref role="37wK5l" to="q96v:~ParseTreeUtils.getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer):java.lang.String" resolve="getNodeText" />
+                                  <node concept="2OqwBi" id="5uReZOjI4oV" role="37wK5m">
+                                    <node concept="2OqwBi" id="5uReZOjI24Z" role="2Oq$k0">
+                                      <node concept="37vLTw" id="2Fb$Orin8TC" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="7P8kyPLJznK" resolve="typeSpecifierNode" />
+                                      </node>
+                                      <node concept="liA8E" id="5uReZOjI3$M" role="2OqNvi">
+                                        <ref role="37wK5l" to="v3yl:~GraphNode.getChildren():java.util.List" resolve="getChildren" />
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="5uReZOjI3$M" role="2OqNvi">
-                                      <ref role="37wK5l" to="v3yl:~GraphNode.getChildren():java.util.List" resolve="getChildren" />
+                                    <node concept="liA8E" id="5uReZOjI6kj" role="2OqNvi">
+                                      <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                                      <node concept="3cmrfG" id="5uReZOjI6WT" role="37wK5m">
+                                        <property role="3cmrfH" value="0" />
+                                      </node>
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="5uReZOjI6kj" role="2OqNvi">
-                                    <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
-                                    <node concept="3cmrfG" id="5uReZOjI6WT" role="37wK5m">
-                                      <property role="3cmrfH" value="0" />
+                                  <node concept="2OqwBi" id="2Fb$Orin8C5" role="37wK5m">
+                                    <node concept="10M0yZ" id="4C19r4_TZu2" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="KeJktp4ave" resolve="parsingResult" />
+                                      <ref role="1PxDUh" node="MGgg6OKdCB" resolve="NuSMVModelBuilder" />
+                                    </node>
+                                    <node concept="2OwXpG" id="2Fb$Orin8C6" role="2OqNvi">
+                                      <ref role="2Oxat5" to="q96v:~ParsingResult.inputBuffer" resolve="inputBuffer" />
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="2OqwBi" id="2Fb$Orin8C5" role="37wK5m">
-                                  <node concept="10M0yZ" id="4C19r4_TZu2" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="KeJktp4ave" resolve="parsingResult" />
-                                    <ref role="1PxDUh" node="MGgg6OKdCB" resolve="NuSMVModelBuilder" />
-                                  </node>
-                                  <node concept="2OwXpG" id="2Fb$Orin8C6" role="2OqNvi">
-                                    <ref role="2Oxat5" to="q96v:~ParsingResult.inputBuffer" resolve="inputBuffer" />
-                                  </node>
-                                </node>
+                                <node concept="17S1cR" id="41M_24m3nHv" role="2OqNvi" />
                               </node>
                             </node>
                           </node>
@@ -5865,21 +5870,24 @@
                             <node concept="3clFbS" id="1uMmOZFQJti" role="3clFbx">
                               <node concept="3clFbF" id="1uMmOZFQJ2w" role="3cqZAp">
                                 <node concept="37vLTI" id="1uMmOZFQJ2y" role="3clFbG">
-                                  <node concept="2YIFZM" id="5uReZOjI8z_" role="37vLTx">
-                                    <ref role="1Pybhc" to="q96v:~ParseTreeUtils" resolve="ParseTreeUtils" />
-                                    <ref role="37wK5l" to="q96v:~ParseTreeUtils.getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer):java.lang.String" resolve="getNodeText" />
-                                    <node concept="37vLTw" id="1uMmOZFQDPO" role="37wK5m">
-                                      <ref role="3cqZAo" node="1uMmOZFQDPH" resolve="n" />
-                                    </node>
-                                    <node concept="2OqwBi" id="5uReZOjI8zG" role="37wK5m">
-                                      <node concept="10M0yZ" id="4C19r4_TZu3" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="KeJktp4ave" resolve="parsingResult" />
-                                        <ref role="1PxDUh" node="MGgg6OKdCB" resolve="NuSMVModelBuilder" />
+                                  <node concept="2OqwBi" id="41M_24m3o8y" role="37vLTx">
+                                    <node concept="2YIFZM" id="5uReZOjI8z_" role="2Oq$k0">
+                                      <ref role="1Pybhc" to="q96v:~ParseTreeUtils" resolve="ParseTreeUtils" />
+                                      <ref role="37wK5l" to="q96v:~ParseTreeUtils.getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer):java.lang.String" resolve="getNodeText" />
+                                      <node concept="37vLTw" id="1uMmOZFQDPO" role="37wK5m">
+                                        <ref role="3cqZAo" node="1uMmOZFQDPH" resolve="n" />
                                       </node>
-                                      <node concept="2OwXpG" id="5uReZOjI8zH" role="2OqNvi">
-                                        <ref role="2Oxat5" to="q96v:~ParsingResult.inputBuffer" resolve="inputBuffer" />
+                                      <node concept="2OqwBi" id="5uReZOjI8zG" role="37wK5m">
+                                        <node concept="10M0yZ" id="4C19r4_TZu3" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="KeJktp4ave" resolve="parsingResult" />
+                                          <ref role="1PxDUh" node="MGgg6OKdCB" resolve="NuSMVModelBuilder" />
+                                        </node>
+                                        <node concept="2OwXpG" id="5uReZOjI8zH" role="2OqNvi">
+                                          <ref role="2Oxat5" to="q96v:~ParsingResult.inputBuffer" resolve="inputBuffer" />
+                                        </node>
                                       </node>
                                     </node>
+                                    <node concept="17S1cR" id="41M_24m3oO8" role="2OqNvi" />
                                   </node>
                                   <node concept="37vLTw" id="1uMmOZFQJ2A" role="37vLTJ">
                                     <ref role="3cqZAo" node="2Fb$OrinpRb" resolve="rhs" />
@@ -7170,21 +7178,24 @@
                     <ref role="2pJxaS" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
                     <node concept="2pJxcG" id="4ru2JyEl3nH" role="2pJxcM">
                       <ref role="2pJxcJ" to="ehqg:6NmtaR20s4L" resolve="value" />
-                      <node concept="2YIFZM" id="4ru2JyEl3CU" role="2pJxcZ">
-                        <ref role="1Pybhc" to="q96v:~ParseTreeUtils" resolve="ParseTreeUtils" />
-                        <ref role="37wK5l" to="q96v:~ParseTreeUtils.getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer):java.lang.String" resolve="getNodeText" />
-                        <node concept="37vLTw" id="4C19r4Af5lK" role="37wK5m">
-                          <ref role="3cqZAo" node="2Ywp2lEHaEF" resolve="expNode" />
-                        </node>
-                        <node concept="2OqwBi" id="4ru2JyEl3CW" role="37wK5m">
-                          <node concept="10M0yZ" id="4C19r4_Uqnb" role="2Oq$k0">
-                            <ref role="1PxDUh" node="MGgg6OKdCB" resolve="NuSMVModelBuilder" />
-                            <ref role="3cqZAo" node="KeJktp4ave" resolve="parsingResult" />
+                      <node concept="2OqwBi" id="41M_24m2CjH" role="2pJxcZ">
+                        <node concept="2YIFZM" id="4ru2JyEl3CU" role="2Oq$k0">
+                          <ref role="1Pybhc" to="q96v:~ParseTreeUtils" resolve="ParseTreeUtils" />
+                          <ref role="37wK5l" to="q96v:~ParseTreeUtils.getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer):java.lang.String" resolve="getNodeText" />
+                          <node concept="37vLTw" id="4C19r4Af5lK" role="37wK5m">
+                            <ref role="3cqZAo" node="2Ywp2lEHaEF" resolve="expNode" />
                           </node>
-                          <node concept="2OwXpG" id="4ru2JyEl3CX" role="2OqNvi">
-                            <ref role="2Oxat5" to="q96v:~ParsingResult.inputBuffer" resolve="inputBuffer" />
+                          <node concept="2OqwBi" id="4ru2JyEl3CW" role="37wK5m">
+                            <node concept="10M0yZ" id="4C19r4_Uqnb" role="2Oq$k0">
+                              <ref role="1PxDUh" node="MGgg6OKdCB" resolve="NuSMVModelBuilder" />
+                              <ref role="3cqZAo" node="KeJktp4ave" resolve="parsingResult" />
+                            </node>
+                            <node concept="2OwXpG" id="4ru2JyEl3CX" role="2OqNvi">
+                              <ref role="2Oxat5" to="q96v:~ParsingResult.inputBuffer" resolve="inputBuffer" />
+                            </node>
                           </node>
                         </node>
+                        <node concept="17S1cR" id="41M_24m2CV1" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -8003,6 +8014,17 @@
           </node>
         </node>
         <node concept="3clFbH" id="4ru2JyEoAdb" role="3cqZAp" />
+        <node concept="RRSsy" id="41M_24m16pk" role="3cqZAp">
+          <property role="RRSoG" value="error" />
+          <node concept="3cpWs3" id="41M_24m1ggL" role="RRSoy">
+            <node concept="37vLTw" id="41M_24m1i1G" role="3uHU7w">
+              <ref role="3cqZAo" node="4C19r4_ViPo" resolve="label" />
+            </node>
+            <node concept="Xl_RD" id="41M_24m16pm" role="3uHU7B">
+              <property role="Xl_RC" value="no expression builder available for label: " />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="2Ywp2lEHbV6" role="3cqZAp">
           <node concept="2pJPEk" id="2Ywp2lEHeBD" role="3cqZAk">
             <node concept="2pJPED" id="2Ywp2lEHeBE" role="2pJPEn">
