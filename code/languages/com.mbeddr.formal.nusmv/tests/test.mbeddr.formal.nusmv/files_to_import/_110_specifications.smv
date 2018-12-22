@@ -8,7 +8,9 @@ VAR
 
 DEFINE
  o := TRUE;
-
+ 
 SPEC EF o;
 SPEC !EF o;
 SPEC AG o & v1;
+SPEC EG EF o; 
+SPEC o & AG v1;
