@@ -1946,5 +1946,37 @@
       <node concept="3clFbS" id="3cHtG5tVuKi" role="2VODD2" />
     </node>
   </node>
+  <node concept="WtQ9Q" id="41M_24lX3WF">
+    <property role="3GE5qa" value="assign" />
+    <ref role="WuzLi" to="gioj:41M_24lX26b" resolve="SimpleAssignment" />
+    <node concept="11bSqf" id="41M_24lX3WG" role="11c4hB">
+      <node concept="3clFbS" id="41M_24lX3WH" role="2VODD2">
+        <node concept="lc7rE" id="41M_24lX3X0" role="3cqZAp">
+          <node concept="l9hG8" id="41M_24lX3X2" role="lcghm">
+            <node concept="2OqwBi" id="41M_24lX3X3" role="lb14g">
+              <node concept="117lpO" id="41M_24lX3X4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="41M_24lX3X5" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:41M_24lX26c" resolve="lhs" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="41M_24lX3X6" role="lcghm">
+            <property role="lacIc" value=" := " />
+          </node>
+          <node concept="l9hG8" id="41M_24lX3X7" role="lcghm">
+            <node concept="2OqwBi" id="41M_24lX3X8" role="lb14g">
+              <node concept="117lpO" id="41M_24lX3X9" role="2Oq$k0" />
+              <node concept="3TrEf2" id="41M_24lX3Xa" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:6NmtaR1V30H" resolve="rhs" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="41M_24lX3Xb" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

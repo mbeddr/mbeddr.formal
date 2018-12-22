@@ -1,0 +1,14 @@
+-- comments and modules
+-------------------------------------------------------------------------
+
+MODULE m1(par1)
+DEFINE
+  out := par1;
+
+-- another comment line
+
+MODULE m2(p1, p2)
+DEFINE
+  out := p1 + p2;
+  
+-- comment line at end

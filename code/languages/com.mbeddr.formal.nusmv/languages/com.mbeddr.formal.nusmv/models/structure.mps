@@ -1624,5 +1624,21 @@
     <property role="EcuMT" value="2986438736916591166" />
     <property role="TrG5h" value="IReducedToMainModule" />
   </node>
+  <node concept="1TIwiD" id="41M_24lX26b">
+    <property role="EcuMT" value="4643937035595555211" />
+    <property role="3GE5qa" value="assign" />
+    <property role="TrG5h" value="SimpleAssignment" />
+    <property role="34LRSv" value="simple assignment" />
+    <property role="R4oN_" value="simple assignment" />
+    <ref role="1TJDcQ" node="6NmtaR1UNOn" resolve="AbstractAssignment" />
+    <node concept="1TJgyj" id="41M_24lX26c" role="1TKVEi">
+      <property role="IQ2ns" value="4643937035595555212" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lhs" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6oUHYl_Xm5W" resolve="AbstractVariableRef" />
+      <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
+    </node>
+  </node>
 </model>
 

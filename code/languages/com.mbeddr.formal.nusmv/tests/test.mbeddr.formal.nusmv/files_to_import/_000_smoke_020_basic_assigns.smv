@@ -1,0 +1,14 @@
+-- different assigns
+-------------------------------------------------------------------------
+
+MODULE m1
+VAR
+  v1 : boolean;
+ASSIGN
+  -- comment describing the init
+  init(v1) := TRUE;
+  
+  -- comment describing the next
+  next(v1) := FALSE;
+  
+  v1 := !v1;
