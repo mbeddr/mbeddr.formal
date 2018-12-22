@@ -4492,9 +4492,6 @@
         <node concept="3cpWs6" id="MGgg6ODCzs" role="3cqZAp">
           <node concept="1rXfSq" id="MGgg6OG9IP" role="3cqZAk">
             <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-            <node concept="1rXfSq" id="MGgg6OGbbw" role="37wK5m">
-              <ref role="37wK5l" node="MGgg6OvI52" resolve="Spacing" />
-            </node>
             <node concept="1rXfSq" id="MGgg6ODDTE" role="37wK5m">
               <ref role="37wK5l" to="6rs6:~BaseParser.String(java.lang.String):org.parboiled.Rule" resolve="String" />
               <node concept="37vLTw" id="MGgg6OE6UD" role="37wK5m">
