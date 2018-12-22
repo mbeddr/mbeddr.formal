@@ -1033,35 +1033,20 @@
       <node concept="3clFbS" id="7mSH3WnduE7" role="2VODD2">
         <node concept="lc7rE" id="7mSH3WnduEr" role="3cqZAp">
           <node concept="la8eA" id="7mSH3WnduEs" role="lcghm">
-            <property role="lacIc" value="FAIRNESS" />
+            <property role="lacIc" value="FAIRNESS " />
           </node>
-          <node concept="l8MVK" id="7mSH3WnduEt" role="lcghm" />
-        </node>
-        <node concept="3izx1p" id="7mSH3WnduEu" role="3cqZAp">
-          <node concept="3clFbS" id="7mSH3WnduEv" role="3izTki">
-            <node concept="1bpajm" id="7mSH3WnduEw" role="3cqZAp" />
-            <node concept="2Gpval" id="7mSH3WnduEx" role="3cqZAp">
-              <node concept="2GrKxI" id="7mSH3WnduEy" role="2Gsz3X">
-                <property role="TrG5h" value="c" />
-              </node>
-              <node concept="2OqwBi" id="7mSH3WnduEz" role="2GsD0m">
-                <node concept="117lpO" id="7mSH3WnduE$" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="7mSH3WnduZu" role="2OqNvi">
-                  <ref role="3TtcxE" to="gioj:7mSH3Wnduvy" resolve="conditions" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="7mSH3WnduEA" role="2LFqv$">
-                <node concept="lc7rE" id="7mSH3WnduEB" role="3cqZAp">
-                  <node concept="l9hG8" id="7mSH3WnduEC" role="lcghm">
-                    <node concept="2GrUjf" id="7mSH3WnduED" role="lb14g">
-                      <ref role="2Gs0qQ" node="7mSH3WnduEy" resolve="c" />
-                    </node>
-                  </node>
-                  <node concept="l8MVK" id="7mSH3WnduEE" role="lcghm" />
-                </node>
+          <node concept="l9hG8" id="41M_24m3XRA" role="lcghm">
+            <node concept="2OqwBi" id="41M_24m3Y4t" role="lb14g">
+              <node concept="117lpO" id="41M_24m3XSw" role="2Oq$k0" />
+              <node concept="3TrEf2" id="41M_24m3YxA" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:7mSH3Wnduvy" resolve="condition" />
               </node>
             </node>
           </node>
+          <node concept="la8eA" id="41M_24m3YHs" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="7mSH3WnduEt" role="lcghm" />
         </node>
       </node>
     </node>
@@ -1974,6 +1959,58 @@
           <node concept="la8eA" id="41M_24lX3Xb" role="lcghm">
             <property role="lacIc" value=";" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="41M_24m3Z80">
+    <property role="3GE5qa" value="fairness" />
+    <ref role="WuzLi" to="gioj:41M_24m3YT$" resolve="JusticeSection" />
+    <node concept="11bSqf" id="41M_24m3Z81" role="11c4hB">
+      <node concept="3clFbS" id="41M_24m3Z82" role="2VODD2">
+        <node concept="lc7rE" id="41M_24m3Z8l" role="3cqZAp">
+          <node concept="la8eA" id="41M_24m3Z8m" role="lcghm">
+            <property role="lacIc" value="JUSTICE " />
+          </node>
+          <node concept="l9hG8" id="41M_24m3Z8n" role="lcghm">
+            <node concept="2OqwBi" id="41M_24m3Z8o" role="lb14g">
+              <node concept="117lpO" id="41M_24m3Z8p" role="2Oq$k0" />
+              <node concept="3TrEf2" id="41M_24m3Z8q" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:41M_24m3YT_" resolve="condition" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="41M_24m3Z8r" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+          <node concept="l8MVK" id="41M_24m3Z8s" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="41M_24m3Zgx">
+    <property role="3GE5qa" value="fairness" />
+    <ref role="WuzLi" to="gioj:41M_24m3Zf5" resolve="CompassionSection" />
+    <node concept="11bSqf" id="41M_24m3Zgy" role="11c4hB">
+      <node concept="3clFbS" id="41M_24m3Zgz" role="2VODD2">
+        <node concept="lc7rE" id="41M_24m3ZsP" role="3cqZAp">
+          <node concept="la8eA" id="41M_24m3ZsQ" role="lcghm">
+            <property role="lacIc" value="COMPASSION (" />
+          </node>
+          <node concept="l9S2W" id="41M_24m3ZzH" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value="," />
+            <node concept="2OqwBi" id="41M_24m3ZGy" role="lbANJ">
+              <node concept="117lpO" id="41M_24m3Z$e" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="41M_24m408_" role="2OqNvi">
+                <ref role="3TtcxE" to="gioj:41M_24m3Zf6" resolve="conditions" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="41M_24m3ZsV" role="lcghm">
+            <property role="lacIc" value=");" />
+          </node>
+          <node concept="l8MVK" id="41M_24m3ZsW" role="lcghm" />
         </node>
       </node>
     </node>

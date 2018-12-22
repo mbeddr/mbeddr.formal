@@ -705,12 +705,12 @@
     <property role="34LRSv" value="FAIRNESS" />
     <property role="3GE5qa" value="fairness" />
     <property role="R4oN_" value="fairness section" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="41M_24m3X$o" resolve="AbstractFairnessSection" />
     <node concept="1TJgyj" id="7mSH3Wnduvy" role="1TKVEi">
       <property role="IQ2ns" value="8482728081217677282" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="conditions" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="7mSH3Wnduvv" role="PzmwI">
@@ -1638,6 +1638,46 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6oUHYl_Xm5W" resolve="AbstractVariableRef" />
       <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="41M_24m3X$o">
+    <property role="EcuMT" value="4643937035597371672" />
+    <property role="3GE5qa" value="fairness" />
+    <property role="TrG5h" value="AbstractFairnessSection" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="41M_24m3X$p" role="PzmwI">
+      <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="41M_24m3X$u" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlHO2f" resolve="ICommentableNuSMVElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="41M_24m3YT$">
+    <property role="EcuMT" value="4643937035597377124" />
+    <property role="3GE5qa" value="fairness" />
+    <property role="TrG5h" value="JusticeSection" />
+    <property role="34LRSv" value="JUSTICE" />
+    <ref role="1TJDcQ" node="41M_24m3X$o" resolve="AbstractFairnessSection" />
+    <node concept="1TJgyj" id="41M_24m3YT_" role="1TKVEi">
+      <property role="IQ2ns" value="4643937035597377125" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="41M_24m3Zf5">
+    <property role="EcuMT" value="4643937035597378501" />
+    <property role="3GE5qa" value="fairness" />
+    <property role="TrG5h" value="CompassionSection" />
+    <property role="34LRSv" value="COMPASSION" />
+    <ref role="1TJDcQ" node="41M_24m3X$o" resolve="AbstractFairnessSection" />
+    <node concept="1TJgyj" id="41M_24m3Zf6" role="1TKVEi">
+      <property role="IQ2ns" value="4643937035597378502" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conditions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
 </model>
