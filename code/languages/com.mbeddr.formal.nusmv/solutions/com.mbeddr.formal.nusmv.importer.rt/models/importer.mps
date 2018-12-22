@@ -3599,6 +3599,9 @@
             <node concept="1rXfSq" id="4C19r4Aa2lN" role="37wK5m">
               <ref role="37wK5l" node="4C19r4AbDWM" resolve="VarAndSpace" />
             </node>
+            <node concept="1rXfSq" id="41M_24mdu54" role="37wK5m">
+              <ref role="37wK5l" node="41M_24md5Qk" resolve="SetExpression" />
+            </node>
           </node>
         </node>
       </node>
@@ -4492,6 +4495,64 @@
         </node>
       </node>
       <node concept="3uibUv" id="MGgg6OAaIP" role="3clF45">
+        <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="41M_24md7SR" role="jymVt" />
+    <node concept="3clFb_" id="41M_24md5Qk" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="SetExpression" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="41M_24md5Ql" role="3clF47">
+        <node concept="3cpWs6" id="41M_24md5Qm" role="3cqZAp">
+          <node concept="1rXfSq" id="41M_24md5Qn" role="3cqZAk">
+            <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+            <node concept="1rXfSq" id="41M_24mdd5N" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
+              <node concept="Xl_RD" id="41M_24mddMm" role="37wK5m">
+                <property role="Xl_RC" value="{" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="41M_24mdkYQ" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="41M_24mdGtp" role="37wK5m">
+              <node concept="1rXfSq" id="41M_24mdmpe" role="2Oq$k0">
+                <ref role="37wK5l" to="6rs6:~BaseParser.ZeroOrMore(java.lang.Object):org.parboiled.Rule" resolve="ZeroOrMore" />
+                <node concept="2OqwBi" id="41M_24mdEwD" role="37wK5m">
+                  <node concept="1rXfSq" id="41M_24mdn9Y" role="2Oq$k0">
+                    <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                    <node concept="1rXfSq" id="41M_24mdo$7" role="37wK5m">
+                      <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
+                      <node concept="Xl_RD" id="41M_24mdphy" role="37wK5m">
+                        <property role="Xl_RC" value="," />
+                      </node>
+                    </node>
+                    <node concept="1rXfSq" id="41M_24mdtjN" role="37wK5m">
+                      <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="41M_24mdFGj" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="41M_24mdHq_" role="2OqNvi">
+                <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="41M_24mdgZc" role="37wK5m">
+              <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
+              <node concept="Xl_RD" id="41M_24mdgZd" role="37wK5m">
+                <property role="Xl_RC" value="}" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="41M_24md5Qr" role="3clF45">
         <ref role="3uigEE" to="6rs6:~Rule" resolve="Rule" />
       </node>
     </node>
@@ -7421,6 +7482,29 @@
               </node>
             </node>
           </node>
+          <node concept="3eNFk2" id="41M_24me8IA" role="3eNLev">
+            <node concept="2OqwBi" id="41M_24mebun" role="3eO9$A">
+              <node concept="37vLTw" id="41M_24meazS" role="2Oq$k0">
+                <ref role="3cqZAo" node="4C19r4_ViPo" resolve="label" />
+              </node>
+              <node concept="liA8E" id="41M_24mecGE" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="41M_24medwO" role="37wK5m">
+                  <property role="Xl_RC" value="SetExpression" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="41M_24me8IC" role="3eOfB_">
+              <node concept="3cpWs6" id="41M_24mevTm" role="3cqZAp">
+                <node concept="1rXfSq" id="41M_24meyfe" role="3cqZAk">
+                  <ref role="37wK5l" node="41M_24mehbo" resolve="buildSetExpression" />
+                  <node concept="37vLTw" id="41M_24me$il" role="37wK5m">
+                    <ref role="3cqZAo" node="2Ywp2lEHaEF" resolve="expNode" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3eNFk2" id="L6k24q37G9" role="3eNLev">
             <node concept="2OqwBi" id="L6k24q3ab_" role="3eO9$A">
               <node concept="37vLTw" id="L6k24q39jV" role="2Oq$k0">
@@ -8817,6 +8901,114 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4C19r4_Uqzs" role="jymVt" />
+    <node concept="2YIFZL" id="41M_24mehbo" role="jymVt">
+      <property role="TrG5h" value="buildSetExpression" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="41M_24mehbp" role="3clF47">
+        <node concept="RRSsy" id="41M_24mehbq" role="3cqZAp">
+          <property role="RRSoG" value="trace" />
+          <node concept="Xl_RD" id="41M_24mehbr" role="RRSoy">
+            <property role="Xl_RC" value="entering buildSetExpression" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="41M_24mehbs" role="3cqZAp">
+          <node concept="3clFbS" id="41M_24mehbt" role="3clFbx">
+            <node concept="3cpWs6" id="41M_24mehbu" role="3cqZAp">
+              <node concept="2pJPEk" id="41M_24mehbv" role="3cqZAk">
+                <node concept="2pJPED" id="41M_24mehbw" role="2pJPEn">
+                  <ref role="2pJxaS" to="gioj:6NmtaR22D35" resolve="SetExpression" />
+                  <node concept="2pIpSj" id="41M_24mehbx" role="2pJxcM">
+                    <ref role="2pIpSl" to="gioj:6NmtaR22D36" resolve="choices" />
+                    <node concept="36be1Y" id="41M_24mehby" role="2pJxcZ" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="41M_24mehbz" role="3clFbw">
+            <node concept="10Nm6u" id="41M_24mehb$" role="3uHU7w" />
+            <node concept="37vLTw" id="41M_24mehb_" role="3uHU7B">
+              <ref role="3cqZAo" node="41M_24mehdl" resolve="caseNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="41M_24mehbA" role="3cqZAp">
+          <node concept="3cpWsn" id="41M_24mehbB" role="3cpWs9">
+            <property role="TrG5h" value="expression" />
+            <node concept="3Tqbb2" id="41M_24mehbC" role="1tU5fm">
+              <ref role="ehGHo" to="gioj:6NmtaR22D35" resolve="SetExpression" />
+            </node>
+            <node concept="2pJPEk" id="41M_24mehbD" role="33vP2m">
+              <node concept="2pJPED" id="41M_24mehbE" role="2pJPEn">
+                <ref role="2pJxaS" to="gioj:6NmtaR22D35" resolve="SetExpression" />
+                <node concept="2pIpSj" id="41M_24mehbF" role="2pJxcM">
+                  <ref role="2pIpSl" to="gioj:6NmtaR22D36" resolve="choices" />
+                  <node concept="36be1Y" id="41M_24mehbG" role="2pJxcZ" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="41M_24mehbI" role="3cqZAp">
+          <node concept="3clFbS" id="41M_24mehbJ" role="2LFqv$">
+            <node concept="3clFbF" id="41M_24mehcX" role="3cqZAp">
+              <node concept="2OqwBi" id="41M_24mehcY" role="3clFbG">
+                <node concept="2OqwBi" id="41M_24mehcZ" role="2Oq$k0">
+                  <node concept="37vLTw" id="41M_24mehd0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="41M_24mehbB" resolve="expression" />
+                  </node>
+                  <node concept="3Tsc0h" id="41M_24meuaZ" role="2OqNvi">
+                    <ref role="3TtcxE" to="gioj:6NmtaR22D36" resolve="choices" />
+                  </node>
+                </node>
+                <node concept="TSZUe" id="41M_24mehd2" role="2OqNvi">
+                  <node concept="1rXfSq" id="41M_24meuH$" role="25WWJ7">
+                    <ref role="37wK5l" node="2Ywp2lEHaff" resolve="buildExpression" />
+                    <node concept="37vLTw" id="41M_24meuXI" role="37wK5m">
+                      <ref role="3cqZAo" node="41M_24mehdb" resolve="choiceNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="41M_24mehdb" role="1Duv9x">
+            <property role="TrG5h" value="choiceNode" />
+            <node concept="3uibUv" id="41M_24mehdc" role="1tU5fm">
+              <ref role="3uigEE" to="6rs6:~Node" resolve="Node" />
+              <node concept="3qTvmN" id="41M_24mehdd" role="11_B2D" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="41M_24mehde" role="1DdaDG">
+            <node concept="37vLTw" id="41M_24mehdf" role="2Oq$k0">
+              <ref role="3cqZAo" node="41M_24mehdl" resolve="caseNode" />
+            </node>
+            <node concept="liA8E" id="41M_24mehdg" role="2OqNvi">
+              <ref role="37wK5l" to="v3yl:~GraphNode.getChildren():java.util.List" resolve="getChildren" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="41M_24mehdh" role="3cqZAp">
+          <node concept="37vLTw" id="41M_24mehdi" role="3cqZAk">
+            <ref role="3cqZAo" node="41M_24mehbB" resolve="expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="41M_24mehdj" role="1B3o_S" />
+      <node concept="3Tqbb2" id="41M_24mehdk" role="3clF45">
+        <ref role="ehGHo" to="ehqg:6NmtaR1V301" resolve="Expression" />
+      </node>
+      <node concept="37vLTG" id="41M_24mehdl" role="3clF46">
+        <property role="TrG5h" value="caseNode" />
+        <node concept="3uibUv" id="41M_24mehdm" role="1tU5fm">
+          <ref role="3uigEE" to="6rs6:~Node" resolve="Node" />
+          <node concept="3qTvmN" id="41M_24mehdn" role="11_B2D" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="41M_24megZ_" role="jymVt" />
     <node concept="2YIFZL" id="2Ywp2lEGna_" role="jymVt">
       <property role="TrG5h" value="buildUnaryCTLExpression" />
       <property role="od$2w" value="false" />

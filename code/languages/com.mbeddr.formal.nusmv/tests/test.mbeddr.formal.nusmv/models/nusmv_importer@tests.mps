@@ -926,6 +926,38 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="41M_24meMbn" role="1SL9yI">
+      <property role="TrG5h" value="test_030_basic_expressions" />
+      <node concept="3cqZAl" id="41M_24meMbo" role="3clF45" />
+      <node concept="3clFbS" id="41M_24meMbp" role="3clF47">
+        <node concept="3cpWs8" id="41M_24meMbq" role="3cqZAp">
+          <node concept="3cpWsn" id="41M_24meMbr" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="41M_24meMbs" role="1tU5fm">
+              <ref role="3uigEE" to="mqum:494SuRWLRaN" resolve="MPSNodeComparisonResult" />
+            </node>
+            <node concept="2YIFZM" id="41M_24meMbt" role="33vP2m">
+              <ref role="37wK5l" node="L6k24q5o73" resolve="importAndCheckSystem" />
+              <ref role="1Pybhc" node="L6k24q5o71" resolve="Utils" />
+              <node concept="Xl_RD" id="41M_24meMbu" role="37wK5m">
+                <property role="Xl_RC" value="_000_smoke_030_basic_expressions.smv" />
+              </node>
+              <node concept="1jxXqW" id="41M_24meMbv" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="41M_24meMbw" role="3cqZAp">
+          <node concept="2OqwBi" id="41M_24meMbx" role="3vwVQn">
+            <node concept="37vLTw" id="41M_24meMby" role="2Oq$k0">
+              <ref role="3cqZAo" node="41M_24meMbr" resolve="res" />
+            </node>
+            <node concept="liA8E" id="41M_24meMbz" role="2OqNvi">
+              <ref role="37wK5l" to="mqum:DYlgnAAwiA" resolve="areEquals" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
