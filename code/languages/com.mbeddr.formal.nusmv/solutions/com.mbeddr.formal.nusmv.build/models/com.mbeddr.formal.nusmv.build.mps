@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -133,10 +133,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -162,13 +164,13 @@
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
+        <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
-        <child id="6108265972537229340" name="icon32opaque" index="2EteIl" />
-        <child id="6108265972537372847" name="shortName" index="2EtHGA" />
+        <child id="6108265972537372847" name="product" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="781140262677914381" name="company" index="IuKBz" />
@@ -324,17 +326,6 @@
           </node>
         </node>
       </node>
-      <node concept="55IIr" id="6mm$FLYQd6T" role="2EteIl">
-        <node concept="2Ry0Ak" id="6mm$FLYQd6X" role="iGT6I">
-          <property role="2Ry0Am" value="resources" />
-          <node concept="2Ry0Ak" id="6mm$FLYQd6Y" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="1uIpCUugTH_" role="2Ry0An">
-              <property role="2Ry0Am" value="fasten32.png" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="55IIr" id="6mm$FLYQdcq" role="3vi$VU">
         <node concept="2Ry0Ak" id="6mm$FLYQdcu" role="iGT6I">
           <property role="2Ry0Am" value="resources" />
@@ -344,6 +335,11 @@
               <property role="2Ry0Am" value="logo.png" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3_J27D" id="3JuzDYm90B6" role="2gvbiD">
+        <node concept="3Mxwew" id="3JuzDYm90B7" role="3MwsjC">
+          <property role="3MwjfP" value="fasten" />
         </node>
       </node>
     </node>
@@ -829,6 +825,7 @@
         </node>
         <node concept="m$_wl" id="42jqVeFkUvK" role="39821P">
           <ref role="m_rDy" node="42jqVeFkUv3" resolve="com.mbeddr.formal.nusmv" />
+          <node concept="pUk6x" id="3JuzDYm90B4" role="pUk7w" />
         </node>
         <node concept="3981dx" id="1uIpCUuf_ZX" role="39821P">
           <node concept="Saw0i" id="1uIpCUufAtA" role="39821P">

@@ -2,8 +2,8 @@
 <model ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
@@ -173,9 +173,6 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -619,7 +616,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createEditorCell" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="DubiFB4e5u" role="1B3o_S" />
       <node concept="3uibUv" id="DubiFB4e5v" role="3clF45">
         <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
@@ -1261,7 +1257,6 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createEditorCell" />
       <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
       <node concept="3Tm1VV" id="1LnB5xduXIB" role="1B3o_S" />
       <node concept="3uibUv" id="1LnB5xduXIC" role="3clF45">
         <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
@@ -1470,7 +1465,6 @@
                     <property role="1EzhhJ" value="false" />
                     <property role="TrG5h" value="isSelectable" />
                     <property role="DiZV1" value="false" />
-                    <property role="IEkAT" value="false" />
                     <node concept="3Tm1VV" id="1LnB5xduXJV" role="1B3o_S" />
                     <node concept="10P_77" id="1LnB5xduXJW" role="3clF45" />
                     <node concept="3clFbS" id="1LnB5xduXJX" role="3clF47">

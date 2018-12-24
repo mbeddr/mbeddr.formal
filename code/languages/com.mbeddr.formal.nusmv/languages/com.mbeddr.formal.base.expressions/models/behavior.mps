@@ -2,7 +2,7 @@
 <model ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -23,7 +23,6 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -164,7 +163,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="true" />
-      <property role="13i0is" value="false" />
       <node concept="3Tm1VV" id="5HxjapwgqKv" role="1B3o_S" />
       <node concept="10Oyi0" id="5HxjapwgqKr" role="3clF45" />
       <node concept="3clFbS" id="5HxjapwgqKw" role="3clF47">
@@ -228,7 +226,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="6NmtaR1WcSK" role="1B3o_S" />
@@ -252,7 +249,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="6NmtaR1Wdt8" role="1B3o_S" />
@@ -276,7 +272,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="6NmtaR1WdYe" role="1B3o_S" />
@@ -300,7 +295,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="6NmtaR1WecH" role="1B3o_S" />
@@ -335,7 +329,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="1ZsZb$ivaZO" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -439,7 +432,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="6NmtaR1YlA6" role="1B3o_S" />
@@ -463,7 +455,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="6NmtaR1YlWm" role="1B3o_S" />
@@ -487,7 +478,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="6NmtaR1Yn2R" role="1B3o_S" />
@@ -511,7 +501,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="1IrBcRpiBJl" role="1B3o_S" />
@@ -563,7 +552,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="7mSH3Wn8c78" role="1B3o_S" />
@@ -619,7 +607,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="7mSH3WnbkdR" role="1B3o_S" />
@@ -633,7 +620,6 @@
       <node concept="10Oyi0" id="7mSH3WnbkdX" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5_V$TJxFWhL" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -726,7 +712,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="7mSH3WnsxFc" role="1B3o_S" />
@@ -750,7 +735,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="7mSH3WnHVXp" role="1B3o_S" />
@@ -1017,7 +1001,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="1ZsZb$ivdbI" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
@@ -1064,7 +1047,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="2uEbjWK0x13" role="1B3o_S" />
@@ -1085,7 +1067,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="1ZsZb$iA1dX" role="1B3o_S" />
@@ -1112,7 +1093,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="Kom1UAIuaY" role="1B3o_S" />
@@ -1193,7 +1173,6 @@
       <property role="TrG5h" value="getPriolevel" />
       <property role="2Ki8OM" value="true" />
       <property role="13i0it" value="false" />
-      <property role="13i0is" value="false" />
       <property role="13i0iv" value="false" />
       <ref role="13i0hy" node="5HxjapwgqKu" resolve="getPriolevel" />
       <node concept="3Tm1VV" id="57ROGn90yGE" role="1B3o_S" />

@@ -2,9 +2,9 @@
 <model ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -300,7 +300,6 @@
     <property role="TrG5h" value="ISimulationTrace" />
     <node concept="2tJIrI" id="3fsZMFLDilT" role="jymVt" />
     <node concept="3clFb_" id="3fsZMFLDimu" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getNumberOfSteps" />
       <node concept="3clFbS" id="3fsZMFLDimx" role="3clF47" />
@@ -312,7 +311,6 @@
     </node>
     <node concept="2tJIrI" id="3fsZMFLDin2" role="jymVt" />
     <node concept="3clFb_" id="3fsZMFLDuxG" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getNode2Values" />
       <node concept="3clFbS" id="3fsZMFLDuxJ" role="3clF47" />
@@ -333,7 +331,6 @@
     </node>
     <node concept="2tJIrI" id="1EKbsQR7u2Z" role="jymVt" />
     <node concept="3clFb_" id="1EKbsQR7vyO" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getSimulationEntryNode" />
       <node concept="3clFbS" id="1EKbsQR7vyR" role="3clF47" />

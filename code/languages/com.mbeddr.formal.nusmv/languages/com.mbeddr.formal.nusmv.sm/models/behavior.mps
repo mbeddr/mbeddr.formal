@@ -2,7 +2,7 @@
 <model ref="r:cde44992-ee7c-42ec-9844-123dc63448f9(com.mbeddr.formal.nusmv.sm.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -17,7 +17,6 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -25,8 +24,6 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
-        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
-        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -79,9 +76,6 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -140,8 +134,8 @@
       <node concept="3clFbS" id="4NkweGh6lM$" role="2VODD2">
         <node concept="3clFbF" id="4NkweGh6lMI" role="3cqZAp">
           <node concept="37vLTI" id="4NkweGh6m$r" role="3clFbG">
-            <node concept="BsUDl" id="1ZsZb$irNLn" role="37vLTx">
-              <ref role="37wK5l" node="1ZsZb$irBUF" resolve="stateVariableDefaultName" />
+            <node concept="Xl_RD" id="3JuzDYmnSOP" role="37vLTx">
+              <property role="Xl_RC" value="_state_" />
             </node>
             <node concept="2OqwBi" id="4NkweGh6lXA" role="37vLTJ">
               <node concept="13iPFW" id="4NkweGh6lMH" role="2Oq$k0" />
@@ -171,7 +165,6 @@
       </node>
     </node>
     <node concept="13i0hz" id="1ZsZb$irBUF" role="13h7CS">
-      <property role="2Ki8OM" value="true" />
       <property role="TrG5h" value="stateVariableDefaultName" />
       <node concept="3Tm1VV" id="1ZsZb$irBUG" role="1B3o_S" />
       <node concept="17QB3L" id="1ZsZb$irBYn" role="3clF45" />
@@ -370,7 +363,6 @@
       <node concept="3clFbS" id="1ZsZb$iv48$" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="1ZsZb$iveq1" role="13h7CS">
-      <property role="13i0is" value="false" />
       <property role="TrG5h" value="getPresentation" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

@@ -2,10 +2,10 @@
 <model ref="r:088add12-8a36-47c2-b0d2-7180a8a2a891(com.mbeddr.formal.nusmv.pluginSolution.runner)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
@@ -5173,7 +5173,6 @@
     <property role="3GE5qa" value="lifted_result" />
     <property role="TrG5h" value="INuSMVWitnessEntry" />
     <node concept="3clFb_" id="1ZsZb$iUgJf" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getNode" />
       <node concept="3clFbS" id="1ZsZb$iUgJi" role="3clF47" />
@@ -5185,7 +5184,6 @@
       <ref role="3uigEE" to="c9r8:1EZfgaQmLrT" resolve="IWhitnessEntry" />
     </node>
     <node concept="3clFb_" id="1ZsZb$iUhjy" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getLhsString" />
       <node concept="3clFbS" id="1ZsZb$iUhj_" role="3clF47" />
@@ -5193,7 +5191,6 @@
       <node concept="17QB3L" id="1ZsZb$iUhj3" role="3clF45" />
     </node>
     <node concept="3clFb_" id="1ZsZb$iUhpD" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getRhsString" />
       <node concept="3clFbS" id="1ZsZb$iUhpG" role="3clF47" />
