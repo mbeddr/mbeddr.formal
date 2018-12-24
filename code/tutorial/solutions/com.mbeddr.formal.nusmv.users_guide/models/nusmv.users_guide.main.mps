@@ -33,7 +33,6 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6617418817008633079" name="com.mbeddr.doc.structure.DefaultImagePath" flags="ng" index="A7cYH" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -374,9 +373,9 @@
   <node concept="2SbYGP" id="2mjHtwTu9dY">
     <property role="TrG5h" value="conf" />
     <property role="3GE5qa" value="config" />
-    <node concept="A7cYH" id="2mjHtwTu9dZ" role="A10yx">
+    <node concept="2SbYGw" id="9TY4XGZias" role="A10yx">
       <property role="TrG5h" value="img" />
-      <node concept="9PVaO" id="2mjHtwTu9e0" role="9PVG_">
+      <node concept="9PVaO" id="9TY4XGZiar" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="figures" />
