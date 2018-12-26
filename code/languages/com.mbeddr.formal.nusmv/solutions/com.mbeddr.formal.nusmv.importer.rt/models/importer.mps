@@ -3815,19 +3815,30 @@
                 <property role="Xl_RC" value="case" />
               </node>
             </node>
-            <node concept="1rXfSq" id="1uMmOZG9ocD" role="37wK5m">
-              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
-            </node>
             <node concept="2OqwBi" id="3D1D54i51tJ" role="37wK5m">
               <node concept="1rXfSq" id="3D1D54i4YXv" role="2Oq$k0">
                 <ref role="37wK5l" to="6rs6:~BaseParser.OneOrMore(java.lang.Object):org.parboiled.Rule" resolve="OneOrMore" />
-                <node concept="1rXfSq" id="41M_24m0B$2" role="37wK5m">
-                  <ref role="37wK5l" node="3D1D54i4nWi" resolve="CaseBasicExp" />
+                <node concept="2OqwBi" id="3l_dB1Ymybc" role="37wK5m">
+                  <node concept="1rXfSq" id="3l_dB1Ymg9g" role="2Oq$k0">
+                    <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
+                    <node concept="1rXfSq" id="3l_dB1YnHNT" role="37wK5m">
+                      <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
+                    </node>
+                    <node concept="1rXfSq" id="41M_24m0B$2" role="37wK5m">
+                      <ref role="37wK5l" node="3D1D54i4nWi" resolve="CaseBasicExp" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3l_dB1YmCKt" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
+                  </node>
                 </node>
               </node>
               <node concept="liA8E" id="3D1D54i52Uf" role="2OqNvi">
                 <ref role="37wK5l" to="6rs6:~Rule.skipNode():org.parboiled.Rule" resolve="skipNode" />
               </node>
+            </node>
+            <node concept="1rXfSq" id="3l_dB1Ylo2C" role="37wK5m">
+              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
             </node>
             <node concept="1rXfSq" id="3D1D54i47Mr" role="37wK5m">
               <ref role="37wK5l" node="MGgg6ODB19" resolve="Str" />
@@ -3853,9 +3864,6 @@
         <node concept="3cpWs6" id="3D1D54i54kb" role="3cqZAp">
           <node concept="1rXfSq" id="3D1D54i55Bs" role="3cqZAk">
             <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
-            <node concept="1rXfSq" id="1uMmOZG9tMU" role="37wK5m">
-              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
-            </node>
             <node concept="1rXfSq" id="3D1D54i58ez" role="37wK5m">
               <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
             </node>
@@ -3864,9 +3872,6 @@
               <node concept="Xl_RD" id="3D1D54i5ifu" role="37wK5m">
                 <property role="Xl_RC" value=":" />
               </node>
-            </node>
-            <node concept="1rXfSq" id="1uMmOZG9r0o" role="37wK5m">
-              <ref role="37wK5l" node="1WSRfTw9zIZ" resolve="CommentLines" />
             </node>
             <node concept="1rXfSq" id="3D1D54i5m4S" role="37wK5m">
               <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
@@ -9044,6 +9049,48 @@
         <node concept="3clFbH" id="3D1D54ia3yO" role="3cqZAp" />
         <node concept="1DcWWT" id="3D1D54i9T0l" role="3cqZAp">
           <node concept="3clFbS" id="3D1D54i9T0n" role="2LFqv$">
+            <node concept="3clFbJ" id="3l_dB1Yo131" role="3cqZAp">
+              <node concept="3clFbS" id="3l_dB1Yo133" role="3clFbx">
+                <node concept="3clFbF" id="3l_dB1Yo67v" role="3cqZAp">
+                  <node concept="2OqwBi" id="3l_dB1Yo9Qe" role="3clFbG">
+                    <node concept="2OqwBi" id="3l_dB1Yo6eN" role="2Oq$k0">
+                      <node concept="37vLTw" id="3l_dB1Yo67t" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3D1D54ia5er" resolve="expression" />
+                      </node>
+                      <node concept="3Tsc0h" id="3l_dB1Yo7H3" role="2OqNvi">
+                        <ref role="3TtcxE" to="gioj:6NmtaR1W9gc" resolve="cases" />
+                      </node>
+                    </node>
+                    <node concept="TSZUe" id="3l_dB1YoeoA" role="2OqNvi">
+                      <node concept="2YIFZM" id="3l_dB1You$g" role="25WWJ7">
+                        <ref role="1Pybhc" node="MGgg6OKdCB" resolve="NuSMVModelBuilder" />
+                        <ref role="37wK5l" node="1uMmOZG5$pX" resolve="buildDocumentationLine" />
+                        <node concept="37vLTw" id="3l_dB1YouOP" role="37wK5m">
+                          <ref role="3cqZAo" node="3D1D54i9T0o" resolve="caseExpNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3N13vt" id="3l_dB1Yog1a" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="3l_dB1Yo3dq" role="3clFbw">
+                <node concept="2OqwBi" id="3l_dB1Yo1Gs" role="2Oq$k0">
+                  <node concept="37vLTw" id="3l_dB1Yo1hU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3D1D54i9T0o" resolve="caseExpNode" />
+                  </node>
+                  <node concept="liA8E" id="3l_dB1Yo2VS" role="2OqNvi">
+                    <ref role="37wK5l" to="6rs6:~Node.getLabel():java.lang.String" resolve="getLabel" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="3l_dB1Yo5NY" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="Xl_RD" id="3l_dB1Yo5Sx" role="37wK5m">
+                    <property role="Xl_RC" value="Comment" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="1WSRfTw7rsu" role="3cqZAp">
               <node concept="3cpWsn" id="1WSRfTw7rs$" role="3cpWs9">
                 <property role="TrG5h" value="guardNode" />

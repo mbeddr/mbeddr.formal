@@ -9,12 +9,15 @@ VAR
 ASSIGN
   next(v1) :=
    case
-	(p2 = 3) : !p1;
+    -- first comment
+	(p2 = 3) : !p1; -- second comment
 	p2 = 2 : case
 	           p1 = 1 : 2;
 	           p1 = 2 : 3;
 	         esac;
+    -- third comment			 
 	TRUE : p1;
+	-- final comment
    esac;
 
   init(v1) := FALSE;
