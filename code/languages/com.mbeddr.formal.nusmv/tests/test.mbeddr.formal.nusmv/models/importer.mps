@@ -92,6 +92,7 @@
       <concept id="8482728081222732062" name="com.mbeddr.formal.nusmv.structure.NextExpression" flags="ng" index="1yeVOx">
         <child id="8482728081222732063" name="var" index="1yeVOw" />
       </concept>
+      <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
       <concept id="8482728081217677278" name="com.mbeddr.formal.nusmv.structure.FairnessSection" flags="ng" index="1yzlfx">
         <child id="8482728081217677282" name="condition" index="1yzlft" />
       </concept>
@@ -1277,65 +1278,86 @@
     <node concept="sUyCV" id="41M_24meM4I" role="2HcuB8">
       <property role="sUxOX" value="-----------------------------------------------------------------------" />
     </node>
-    <node concept="2Hdtz0" id="41M_24meM4J" role="2HcuB8">
+    <node concept="2Hdtz0" id="TFRUGaK$Fz" role="2HcuB8">
       <property role="TrG5h" value="m1" />
-      <node concept="2Hdtzr" id="41M_24meM4K" role="2Hdtzq">
+      <node concept="2Hdtzr" id="TFRUGaK$F$" role="2Hdtzq">
         <property role="TrG5h" value="p1" />
       </node>
-      <node concept="2Hdtzr" id="41M_24meM4L" role="2Hdtzq">
+      <node concept="2Hdtzr" id="TFRUGaK$F_" role="2Hdtzq">
         <property role="TrG5h" value="p2" />
       </node>
-      <node concept="2Hfkzq" id="41M_24meM4M" role="2HcbjO">
-        <node concept="2Hdskp" id="41M_24meM4N" role="2Hfkx9">
+      <node concept="2Hfkzq" id="TFRUGaK$FA" role="2HcbjO">
+        <node concept="2Hdskp" id="TFRUGaK$FB" role="2Hfkx9">
           <property role="TrG5h" value="v1" />
-          <node concept="dhpfj" id="41M_24meM4O" role="2HdssA">
-            <node concept="2IPVmt" id="41M_24meM4P" role="dhpfi">
+          <node concept="dhpfj" id="TFRUGaK$FC" role="2HdssA">
+            <node concept="2IPVmt" id="TFRUGaK$FD" role="dhpfi">
               <property role="2IPVms" value="1" />
             </node>
-            <node concept="2IPVmt" id="41M_24meM4Q" role="dhpfn">
+            <node concept="2IPVmt" id="TFRUGaK$FE" role="dhpfn">
               <property role="2IPVms" value="10" />
             </node>
           </node>
         </node>
-        <node concept="2Hdskp" id="41M_24meM4R" role="2Hfkx9">
+        <node concept="2Hdskp" id="TFRUGaK$FF" role="2Hfkx9">
           <property role="TrG5h" value="v2" />
-          <node concept="dhpfj" id="41M_24meM4S" role="2HdssA">
-            <node concept="2IPVmt" id="41M_24meM4T" role="dhpfi">
+          <node concept="dhpfj" id="TFRUGaK$FG" role="2HdssA">
+            <node concept="2IPVmt" id="TFRUGaK$FH" role="dhpfi">
               <property role="2IPVms" value="1" />
             </node>
-            <node concept="2IPVmt" id="41M_24meM4U" role="dhpfn">
+            <node concept="2IPVmt" id="TFRUGaK$FI" role="dhpfn">
               <property role="2IPVms" value="22" />
             </node>
           </node>
         </node>
+        <node concept="2Hdskp" id="TFRUGaK$FJ" role="2Hfkx9">
+          <property role="TrG5h" value="b1" />
+          <node concept="2Hds6S" id="TFRUGaK$FK" role="2HdssA" />
+        </node>
+        <node concept="2Hdskp" id="TFRUGaK$FL" role="2Hfkx9">
+          <property role="TrG5h" value="b2" />
+          <node concept="2Hds6S" id="TFRUGaK$FM" role="2HdssA" />
+        </node>
       </node>
-      <node concept="2Hfkzp" id="41M_24meM4V" role="2HcbjO">
-        <node concept="1lxFmE" id="41M_24meM50" role="2HfkAP">
-          <node concept="2He$iJ" id="41M_24meM57" role="2He$ia">
-            <ref role="2He$iI" node="41M_24meM4N" resolve="v1" />
+      <node concept="2Hfkzp" id="TFRUGaK$FN" role="2HcbjO">
+        <node concept="1lxFmE" id="TFRUGaK$FS" role="2HfkAP">
+          <node concept="2He$iJ" id="TFRUGaK$G4" role="2He$ia">
+            <ref role="2He$iI" node="TFRUGaK$FB" resolve="v1" />
           </node>
-          <node concept="2IRehC" id="41M_24meM4W" role="2He$i0">
-            <node concept="2IPVmt" id="41M_24meM4X" role="2IRehF">
+          <node concept="2IRehC" id="TFRUGaK$FO" role="2He$i0">
+            <node concept="2IPVmt" id="TFRUGaK$FP" role="2IRehF">
               <property role="2IPVms" value="1" />
             </node>
-            <node concept="2IPVmt" id="41M_24meM4Y" role="2IRehF">
+            <node concept="2IPVmt" id="TFRUGaK$FQ" role="2IRehF">
               <property role="2IPVms" value="2" />
             </node>
-            <node concept="2IPVmt" id="41M_24meM4Z" role="2IRehF">
+            <node concept="2IPVmt" id="TFRUGaK$FR" role="2IRehF">
               <property role="2IPVms" value="3" />
             </node>
           </node>
         </node>
-        <node concept="1lxFmE" id="41M_24meM55" role="2HfkAP">
-          <node concept="2He$iJ" id="41M_24meM5a" role="2He$ia">
-            <ref role="2He$iI" node="41M_24meM4R" resolve="v2" />
+        <node concept="1lxFmE" id="TFRUGaK$FX" role="2HfkAP">
+          <node concept="2He$iJ" id="TFRUGaK$G7" role="2He$ia">
+            <ref role="2He$iI" node="TFRUGaK$FF" resolve="v2" />
           </node>
-          <node concept="2IRehC" id="41M_24meM52" role="2He$i0">
-            <node concept="32Ogvo" id="41M_24meM58" role="2IRehF">
-              <ref role="32Ogvr" node="41M_24meM4K" resolve="p1" />
+          <node concept="2IRehC" id="TFRUGaK$FU" role="2He$i0">
+            <node concept="32Ogvo" id="TFRUGaK$G5" role="2IRehF">
+              <ref role="32Ogvr" node="TFRUGaK$F$" resolve="p1" />
             </node>
-            <node concept="32Ogvo" id="41M_24meM59" role="2IRehF">
-              <ref role="32Ogvr" node="41M_24meM4L" resolve="p2" />
+            <node concept="32Ogvo" id="TFRUGaK$G6" role="2IRehF">
+              <ref role="32Ogvr" node="TFRUGaK$F_" resolve="p2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1lxFmE" id="TFRUGaK$G2" role="2HfkAP">
+          <node concept="2He$iJ" id="TFRUGaK$Ga" role="2He$ia">
+            <ref role="2He$iI" node="TFRUGaK$FJ" resolve="b1" />
+          </node>
+          <node concept="1yyYsf" id="TFRUGaK$G1" role="2He$i0">
+            <node concept="2He$iJ" id="TFRUGaK$G8" role="2H9Iav">
+              <ref role="2He$iI" node="TFRUGaK$FJ" resolve="b1" />
+            </node>
+            <node concept="2He$iJ" id="TFRUGaK$G9" role="2H9Ial">
+              <ref role="2He$iI" node="TFRUGaK$FL" resolve="b2" />
             </node>
           </node>
         </node>

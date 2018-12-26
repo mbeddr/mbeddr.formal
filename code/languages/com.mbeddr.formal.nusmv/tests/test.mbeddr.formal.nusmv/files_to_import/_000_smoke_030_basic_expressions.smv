@@ -5,6 +5,9 @@ MODULE m1(p1,p2)
 VAR
   v1 : 1..10;
   v2 : 1..22;
+  b1 : boolean;
+  b2 : boolean;
 ASSIGN
   v1 := {1,2,3};
   v2 := {p1, p2};
+  b1 := b1 -> b2;
