@@ -24,8 +24,14 @@
       <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
         <property id="2707707741261637861" name="documentation" index="sUxOX" />
       </concept>
+      <concept id="8004696212665694022" name="com.mbeddr.formal.nusmv.structure.AU" flags="ng" index="tN1ed" />
+      <concept id="8004696212665687528" name="com.mbeddr.formal.nusmv.structure.BinaryTemporalExpression" flags="ng" index="tN3$z">
+        <child id="8004696212665687530" name="exp2" index="tN3$x" />
+        <child id="8004696212665687529" name="exp1" index="tN3$y" />
+      </concept>
       <concept id="8004696212665687523" name="com.mbeddr.formal.nusmv.structure.EF" flags="ng" index="tN3$C" />
       <concept id="8004696212665687521" name="com.mbeddr.formal.nusmv.structure.EG" flags="ng" index="tN3$E" />
+      <concept id="8004696212665687538" name="com.mbeddr.formal.nusmv.structure.EU" flags="ng" index="tN3$T" />
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
         <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
@@ -965,6 +971,33 @@
           <node concept="1yBCNs" id="ItRw1SNDJc" role="2H9Ial">
             <node concept="2He$iJ" id="ItRw1SNDJd" role="1yBIc4">
               <ref role="2He$iI" node="L6k24qeqzN" resolve="v1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1yBDGz" id="TFRUGaTJC8" role="2HcbjO">
+        <node concept="tN1ed" id="TFRUGaTJC9" role="1yBDGv">
+          <node concept="2He$iJ" id="TFRUGaTJCa" role="tN3$y">
+            <ref role="2He$iI" node="L6k24qeqzN" resolve="v1" />
+          </node>
+          <node concept="1yA0yd" id="TFRUGaTJCb" role="tN3$x">
+            <node concept="32Ogvo" id="TFRUGaTJCc" role="32OYtT">
+              <ref role="32Ogvr" node="L6k24qeqzL" resolve="p1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1yBDGz" id="TFRUGaTJCd" role="2HcbjO">
+        <node concept="tN3$T" id="TFRUGaTJCe" role="1yBDGv">
+          <node concept="2He$iJ" id="TFRUGaTJCf" role="tN3$y">
+            <ref role="2He$iI" node="L6k24qeqzN" resolve="v1" />
+          </node>
+          <node concept="2HbLFT" id="TFRUGaTJCg" role="tN3$x">
+            <node concept="32Ogvo" id="TFRUGaTJCh" role="2H9Iav">
+              <ref role="32Ogvr" node="L6k24qeqzL" resolve="p1" />
+            </node>
+            <node concept="2IPVmt" id="TFRUGaTJCi" role="2H9Ial">
+              <property role="2IPVms" value="42" />
             </node>
           </node>
         </node>

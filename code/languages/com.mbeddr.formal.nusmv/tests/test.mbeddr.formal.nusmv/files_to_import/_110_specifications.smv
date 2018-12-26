@@ -14,3 +14,5 @@ SPEC !EF o;
 SPEC AG o & v1;
 SPEC EG EF o; 
 SPEC o & AG v1;
+SPEC A[v1 U !p1];
+SPEC E[v1 U p1 = 42];
