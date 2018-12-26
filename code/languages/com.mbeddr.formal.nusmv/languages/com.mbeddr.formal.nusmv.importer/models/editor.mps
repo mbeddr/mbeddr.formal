@@ -11,6 +11,7 @@
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="x05w" ref="r:05f86b9b-63c3-4ff9-a22b-af6fdd8e5519(com.mbeddr.formal.nusmv.importer.rt.importer)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="l8i4" ref="r:a6cacef4-4d68-4996-ad57-e96d59919943(com.mbeddr.formal.nusmv.importer.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
@@ -89,6 +90,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -115,6 +117,9 @@
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -199,6 +204,65 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="9TY4XH0KN7" role="3cqZAp">
+              <node concept="3cpWsn" id="9TY4XH0KN8" role="3cpWs9">
+                <property role="TrG5h" value="fontMetrics" />
+                <node concept="3uibUv" id="9TY4XH0KN5" role="1tU5fm">
+                  <ref role="3uigEE" to="z60i:~FontMetrics" resolve="FontMetrics" />
+                </node>
+                <node concept="2OqwBi" id="9TY4XH0KN9" role="33vP2m">
+                  <node concept="37vLTw" id="9TY4XH0KNa" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3D1D54hOhl$" resolve="button" />
+                  </node>
+                  <node concept="liA8E" id="9TY4XH0KNb" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JComponent.getFontMetrics(java.awt.Font):java.awt.FontMetrics" resolve="getFontMetrics" />
+                    <node concept="2OqwBi" id="9TY4XH0KNc" role="37wK5m">
+                      <node concept="37vLTw" id="9TY4XH0KNd" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3D1D54hOhl$" resolve="button" />
+                      </node>
+                      <node concept="liA8E" id="9TY4XH0KNe" role="2OqNvi">
+                        <ref role="37wK5l" to="z60i:~Component.getFont():java.awt.Font" resolve="getFont" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="9TY4XH0M7P" role="3cqZAp">
+              <node concept="3cpWsn" id="9TY4XH0M7S" role="3cpWs9">
+                <property role="TrG5h" value="height" />
+                <node concept="10Oyi0" id="9TY4XH0M7M" role="1tU5fm" />
+                <node concept="2OqwBi" id="9TY4XH0OCD" role="33vP2m">
+                  <node concept="37vLTw" id="9TY4XH0O5B" role="2Oq$k0">
+                    <ref role="3cqZAo" node="9TY4XH0KN8" resolve="fontMetrics" />
+                  </node>
+                  <node concept="liA8E" id="9TY4XH0T0G" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~FontMetrics.getHeight():int" resolve="getHeight" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="9TY4XGZNnm" role="3cqZAp">
+              <node concept="2OqwBi" id="9TY4XGZOsS" role="3clFbG">
+                <node concept="37vLTw" id="9TY4XGZNnk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3D1D54hOhl$" resolve="button" />
+                </node>
+                <node concept="liA8E" id="9TY4XGZRZT" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+                  <node concept="2ShNRf" id="9TY4XGZTzv" role="37wK5m">
+                    <node concept="1pGfFk" id="9TY4XH02rf" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                      <node concept="3cmrfG" id="9TY4XH03at" role="37wK5m">
+                        <property role="3cmrfH" value="60" />
+                      </node>
+                      <node concept="37vLTw" id="9TY4XH0TOd" role="37wK5m">
+                        <ref role="3cqZAo" node="9TY4XH0M7S" resolve="height" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="3D1D54hOk1g" role="3cqZAp">
               <node concept="2OqwBi" id="3D1D54hOkMV" role="3clFbG">
                 <node concept="37vLTw" id="3D1D54hOk1e" role="2Oq$k0">
@@ -276,6 +340,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="9TY4XH106t" role="3EZMnx">
+        <property role="3F0ifm" value="⏎" />
+        <node concept="VechU" id="9TY4XH10xw" role="3F10Kt">
+          <property role="Vb096" value="gray" />
         </node>
       </node>
     </node>
