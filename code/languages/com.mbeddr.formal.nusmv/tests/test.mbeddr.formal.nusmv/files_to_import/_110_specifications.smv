@@ -19,3 +19,4 @@ SPEC E[v1 U p1 = 42];
 SPEC AG v1
 -- SPEC commented out
 SPEC AG !v1
+SPEC AG(v1 -> (A[v1 U p1 = 0] | AX !v1))

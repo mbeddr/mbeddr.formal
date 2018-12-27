@@ -70,6 +70,12 @@
       <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
         <child id="8482728081216657211" name="exp" index="1yBIc4" />
       </concept>
+      <concept id="8482728081222203940" name="com.mbeddr.formal.nusmv.structure.InitSection" flags="ng" index="1yK$Sr">
+        <child id="8482728081222203948" name="content" index="1yK$Sj" />
+      </concept>
+      <concept id="8482728081222204059" name="com.mbeddr.formal.nusmv.structure.InitFormula" flags="ng" index="1yK$U$">
+        <child id="8482728081222204060" name="exp" index="1yK$Uz" />
+      </concept>
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
@@ -402,6 +408,37 @@
             </node>
             <node concept="32Ogvo" id="6Kf5KB6$VfA" role="2H9Iav">
               <ref role="32Ogvr" node="6Kf5KB6$VeY" resolve="a" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="4dil9RubkoF">
+    <property role="TrG5h" value="_040_direct_specification" />
+    <node concept="2Hdtz0" id="4dil9RubkoH" role="2HcuB8">
+      <property role="TrG5h" value="main" />
+      <node concept="2Hfkzq" id="4dil9RubkoM" role="2HcbjO">
+        <node concept="2Hdskp" id="4dil9Rubkp1" role="2Hfkx9">
+          <property role="TrG5h" value="v1" />
+          <node concept="dhpfj" id="4dil9Rubkpf" role="2HdssA">
+            <node concept="2IPVmt" id="4dil9Rubkpe" role="dhpfi">
+              <property role="2IPVms" value="1" />
+            </node>
+            <node concept="2IPVmt" id="4dil9RubkpC" role="dhpfn">
+              <property role="2IPVms" value="20" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1yK$Sr" id="4dil9Rubkq7" role="2HcbjO">
+        <node concept="1yK$U$" id="4dil9RubkuQ" role="1yK$Sj">
+          <node concept="2HbLFT" id="4dil9Rubkvf" role="1yK$Uz">
+            <node concept="2IPVmt" id="4dil9RubkvP" role="2H9Ial">
+              <property role="2IPVms" value="9" />
+            </node>
+            <node concept="2He$iJ" id="4dil9Rubkv2" role="2H9Iav">
+              <ref role="2He$iI" node="4dil9Rubkp1" resolve="v1" />
             </node>
           </node>
         </node>

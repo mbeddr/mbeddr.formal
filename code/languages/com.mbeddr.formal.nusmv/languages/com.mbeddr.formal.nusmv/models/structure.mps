@@ -1687,5 +1687,15 @@
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1trCN7lf1tL">
+    <property role="EcuMT" value="1683118320179222385" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <property role="TrG5h" value="UnboundDotTarget" />
+    <property role="34LRSv" value="unbound" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+    <node concept="PrWs8" id="1trCN7lf1tM" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

@@ -7,6 +7,7 @@
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
     <use id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch" version="0" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports />
   <registry>
@@ -197,30 +198,34 @@
       </concept>
     </language>
   </registry>
-  <node concept="Q3Guq" id="4C19r4Ab4ld">
-    <property role="TrG5h" value="_020_ real_examples_reactor" />
-    <node concept="1JYbFF" id="4C19r4Ab4le" role="Q3GC_">
-      <node concept="3NXOOs" id="L6k24qa_xv" role="1JYbDs">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="files_to_import/big_examples/reactor/base.smv" />
-      </node>
-    </node>
-    <node concept="1JYbFF" id="41M_24mtfXq" role="Q3GC_">
-      <node concept="3NXOOs" id="41M_24mtfXr" role="1JYbDs">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="files_to_import/big_examples/reactor/idle.smv" />
-      </node>
-    </node>
-  </node>
   <node concept="Q3Guq" id="4C19r4_Ypi5">
-    <property role="TrG5h" value="_010_real_example_pci3p" />
+    <property role="TrG5h" value="_010_real_example_standard_examples_from_nusmv_repo" />
     <node concept="1JYbFF" id="4C19r4_Yx7d" role="Q3GC_">
       <node concept="3NXOOs" id="4C19r4_Yx7g" role="1JYbDs">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="files_to_import/big_examples/pci3p.smv" />
+      </node>
+    </node>
+    <node concept="1JYbFF" id="9TY4XGZMoM" role="Q3GC_">
+      <node concept="3NXOOs" id="9TY4XGZMoN" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/big_examples/reactor/base.smv" />
+      </node>
+    </node>
+    <node concept="1JYbFF" id="9TY4XGZMoO" role="Q3GC_">
+      <node concept="3NXOOs" id="9TY4XGZMoP" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/big_examples/reactor/idle.smv" />
+      </node>
+    </node>
+    <node concept="1JYbFF" id="TFRUGaZ2vJ" role="Q3GC_">
+      <node concept="3NXOOs" id="TFRUGaZ2vK" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/big_examples/production-cell/production-cell.smv" />
       </node>
     </node>
   </node>

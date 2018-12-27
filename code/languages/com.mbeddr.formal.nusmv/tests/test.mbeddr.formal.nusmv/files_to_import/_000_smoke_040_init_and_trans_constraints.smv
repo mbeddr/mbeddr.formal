@@ -1,0 +1,19 @@
+-- direct specification with INIT and TRANS constraints
+-------------------------------------------------------------------------
+
+MODULE m1
+VAR
+  v1 : 1..10;
+  v2 : 1..22;
+  b1 : boolean;
+  b2 : boolean;
+INIT
+  -- first comment
+  v1 = 2;
+  -- second comment
+  v2=2 & b1 | !b2;
+  -- third comment
+TRANS
+  -- fourth comment
+  b1 -> next(v1) = 4;
+  b2 -> next(v2) = 3; -- fifth and last comment

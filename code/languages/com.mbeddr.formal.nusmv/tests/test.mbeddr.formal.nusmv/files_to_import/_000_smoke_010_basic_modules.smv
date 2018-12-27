@@ -16,3 +16,11 @@ DEFINE
   out := p1 + p2;
   
 -- comment line at end
+
+MODULE module_without_params_1()
+DEFINE
+  out := 42;
+  
+MODULE module_without_params_2
+DEFINE
+  out := 43;

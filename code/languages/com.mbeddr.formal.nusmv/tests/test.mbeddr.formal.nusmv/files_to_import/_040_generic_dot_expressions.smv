@@ -1,0 +1,26 @@
+-- test for generic-dot-expressions
+-------------------------------------------------------------------------
+
+MODULE m1
+VAR
+  aVar : boolean;
+  anotherVar : boolean;
+DEFINE
+  aDefine := 42;
+  anotherDefine := 43;	
+
+MODULE m2
+VAR
+  m1Instance : m1();
+DEFINE
+  out1 := m1Instance.aVar;
+  out2 := m1Instance.anotherVar;
+  out3 := m1Instance.aDefine;
+  out4 := m1Instance.anotherDefine;
+  
+MODULE m3(m1Inst)
+DEFINE
+  out1 := m1Inst.aVar;
+  out2 := m1Inst.anotherVar;
+  out3 := m1Inst.aDefine;
+  out4 := m1Inst.anotherDefine;  
