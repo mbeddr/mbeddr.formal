@@ -18,6 +18,8 @@
         <dependency reexport="false">22a84bd5-d947-48ae-b9f6-8288eea41dce(com.mbeddr.formal.nusmv.arch)</dependency>
         <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">f1457ec8-c780-4f6f-89b4-c79af7789be1(jetbrains.mps.lang.generator#1167163152317)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
@@ -61,6 +63,7 @@
         <module reference="1caff2e8-9e73-431d-8a8f-ba34a80c305f(com.mbeddr.formal.nusmv.cbd#01)" version="0" />
         <module reference="450c81f1-1811-41ac-a9c8-8fda59f778ca(com.mbeddr.formal.nusmv.tabular)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="f1457ec8-c780-4f6f-89b4-c79af7789be1(jetbrains.mps.lang.generator#1167163152317)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
