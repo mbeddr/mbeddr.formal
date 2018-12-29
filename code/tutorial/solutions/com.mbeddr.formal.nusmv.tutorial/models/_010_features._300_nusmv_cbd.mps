@@ -76,6 +76,7 @@
         <child id="9066112305507315483" name="type" index="3UnI80" />
       </concept>
       <concept id="9066112305507315532" name="com.mbeddr.formal.nusmv.cbd.structure.OutputPort" flags="ng" index="3UnI9n" />
+      <concept id="9066112305501141496" name="com.mbeddr.formal.nusmv.cbd.structure.ContractsSpec" flags="ng" index="3US3jz" />
       <concept id="9066112305501242558" name="com.mbeddr.formal.nusmv.cbd.structure.CommentContract" flags="ng" index="3US$A_">
         <property id="9066112305501242562" name="text" index="3US$Bp" />
       </concept>
@@ -174,6 +175,9 @@
       </concept>
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
+      </concept>
+      <concept id="4678075609353342594" name="com.mbeddr.formal.nusmv.structure.DefineRef" flags="ng" index="1J1L9T">
+        <reference id="4678075609353342595" name="def" index="1J1L9S" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -7954,7 +7958,7 @@
         </node>
       </node>
       <node concept="2Hdtzr" id="2mjHtwTDQAe" role="2Hdtzq">
-        <property role="TrG5h" value="pedestrian_request" />
+        <property role="TrG5h" value="pedestrians_request" />
       </node>
       <node concept="2Hfkzq" id="2mjHtwTDQY0" role="2HcbjO">
         <node concept="2aiWHP" id="2mjHtwTDQYx" role="2Hfkx9">
@@ -8017,7 +8021,7 @@
                 <ref role="1tS8HL" node="2mjHtwTDQYz" resolve="Green" />
               </node>
               <node concept="32Ogvo" id="2mjHtwTE9VW" role="2H9I4J">
-                <ref role="32Ogvr" node="2mjHtwTDQAe" resolve="pedestrian_request" />
+                <ref role="32Ogvr" node="2mjHtwTDQAe" resolve="pedestrians_request" />
               </node>
               <node concept="1tS8IT" id="2mjHtwTDR19" role="2H9I4_">
                 <ref role="1tS8HL" node="2mjHtwTDQY$" resolve="Yellow" />
@@ -8495,6 +8499,35 @@
                   <node concept="2VclrF" id="2mjHtwTEeip" role="3wpmZP">
                     <property role="2Vclpx" value="89.99991758594805" />
                     <property role="2Vclpz" value="77.51471862576143" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3US3jz" id="9TY4XGZj6j" role="lGtFl">
+        <node concept="3UTh7Y" id="9TY4XGZjk6" role="3UnIb_">
+          <property role="TrG5h" value="accident_avoidance" />
+          <node concept="2SafMM" id="9TY4XGZjkf" role="1yBDGv">
+            <node concept="1yA0yd" id="9TY4XGZjl2" role="1yBIc4">
+              <node concept="32OYss" id="9TY4XGZjl3" role="32OYtT">
+                <node concept="2HbMbg" id="9TY4XGZjl4" role="32OYtT">
+                  <node concept="2HbLFT" id="9TY4XGZjl5" role="2H9Iav">
+                    <node concept="1J1L9T" id="9TY4XGZjk$" role="2H9Iav">
+                      <ref role="1J1L9S" node="3908G2fyyOl" resolve="pedestrian_lights" />
+                    </node>
+                    <node concept="2HeeqP" id="9TY4XGZjkP" role="2H9Ial">
+                      <ref role="2HeeqO" node="2mjHtwTEanx" resolve="Walk" />
+                    </node>
+                  </node>
+                  <node concept="2HbLFT" id="9TY4XGZjlm" role="2H9Ial">
+                    <node concept="1tS8IT" id="9TY4XGZjlJ" role="2H9Ial">
+                      <ref role="1tS8HL" node="2mjHtwTDQYz" resolve="Green" />
+                    </node>
+                    <node concept="1J1L9T" id="9TY4XGZjlh" role="2H9Iav">
+                      <ref role="1J1L9S" node="3908G2fyyN7" resolve="traffic_lights" />
+                    </node>
                   </node>
                 </node>
               </node>
