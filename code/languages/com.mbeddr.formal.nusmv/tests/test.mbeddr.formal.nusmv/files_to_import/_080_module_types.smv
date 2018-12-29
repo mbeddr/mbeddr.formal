@@ -8,8 +8,14 @@ VAR
 DEFINE
   o1 := v1;
   
+MODULE module_without_params
+DEFINE
+  o2 := 41 + 1;
+  
 MODULE outer_module
 VAR
   m1 : inner_module(TRUE);
   m2 : inner_module(m1.v1);
   m3 : inner_module(m1.o1);
+  m4 : module_without_params;
+  m5 : inner_module(m4.o2);
