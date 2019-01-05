@@ -165,6 +165,8 @@
   <node concept="1TIwiD" id="6NmtaR1SULQ">
     <property role="EcuMT" value="7842584090743385206" />
     <property role="TrG5h" value="ParameterDeclaration" />
+    <property role="34LRSv" value="parameter" />
+    <property role="R4oN_" value="parameter of module" />
     <ref role="1TJDcQ" node="7mSH3WmVxaO" resolve="VariableDeclarationBase" />
     <node concept="PrWs8" id="5_V$TJxB7Iw" role="PzmwI">
       <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
