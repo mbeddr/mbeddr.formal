@@ -276,6 +276,7 @@
     </language>
     <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
       <concept id="1706414071547808709" name="com.mbeddr.formal.nusmv.tests.structure.AllowedScenario" flags="ng" index="29YUPb" />
+      <concept id="8148471961753233648" name="com.mbeddr.formal.nusmv.tests.structure.DisallowedScenario" flags="ng" index="3nBhzz" />
       <concept id="71733767948742370" name="com.mbeddr.formal.nusmv.tests.structure.EmptyTestsCollectionContent" flags="ng" index="1s0Jup" />
       <concept id="7048752955230735659" name="com.mbeddr.formal.nusmv.tests.structure.DocumentationLineTestsCollectionContent" flags="ng" index="3BOnTs">
         <property id="7048752955230735663" name="text" index="3BOnTo" />
@@ -1973,6 +1974,48 @@
         </node>
         <node concept="2IPVmt" id="1uIpCUuneKN" role="1J0m7K">
           <property role="2IPVms" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="74lc1eAyAI9" role="1J0nHx" />
+    <node concept="3nBhzz" id="74lc1eAyAMs" role="1J0nHx">
+      <property role="TrG5h" value="disallowed_scenario_PASS" />
+      <ref role="1J0niy" node="1gJVC85NvNu" resolve="module_with_nondeterminism" />
+      <node concept="1J0m7Y" id="74lc1eAyAMt" role="1J0m7J">
+        <node concept="2IPVmt" id="74lc1eAyAOK" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="74lc1eAyAOV" role="1J0m7K">
+          <property role="2IPVms" value="1" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="74lc1eAyAPc" role="1J0m7J">
+        <node concept="2IPVmt" id="74lc1eAyAPt" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="74lc1eAyAPC" role="1J0m7K">
+          <property role="2IPVms" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="74lc1eAyFYt" role="1J0nHx" />
+    <node concept="3nBhzz" id="74lc1eAyFVp" role="1J0nHx">
+      <property role="TrG5h" value="disallowed_scenario_FAIL" />
+      <ref role="1J0niy" node="1gJVC85NvNu" resolve="module_with_nondeterminism" />
+      <node concept="1J0m7Y" id="74lc1eAyFVq" role="1J0m7J">
+        <node concept="2IPVmt" id="74lc1eAyFVr" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="74lc1eAyFVs" role="1J0m7K">
+          <property role="2IPVms" value="1" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="74lc1eAyFVt" role="1J0m7J">
+        <node concept="2IPVmt" id="74lc1eAyFVu" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="74lc1eAyFVv" role="1J0m7K">
+          <property role="2IPVms" value="2" />
         </node>
       </node>
     </node>

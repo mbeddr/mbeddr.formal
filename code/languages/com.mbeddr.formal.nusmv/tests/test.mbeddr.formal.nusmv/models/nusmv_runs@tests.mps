@@ -1307,6 +1307,102 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="74lc1eAyLvF" role="1SL9yI">
+      <property role="TrG5h" value="test_disallowed_scenario_PASS" />
+      <node concept="3cqZAl" id="74lc1eAyLvG" role="3clF45" />
+      <node concept="3clFbS" id="74lc1eAyLvH" role="3clF47">
+        <node concept="3cpWs8" id="74lc1eAyLvI" role="3cqZAp">
+          <node concept="3cpWsn" id="74lc1eAyLvJ" role="3cpWs9">
+            <property role="TrG5h" value="res1" />
+            <node concept="3uibUv" id="74lc1eAyLvK" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="74lc1eAyLvL" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="74lc1eAyLvM" role="37wK5m">
+                <property role="Xl_RC" value="_000_tests_running_tests" />
+              </node>
+              <node concept="Xl_RD" id="74lc1eAyLvN" role="37wK5m">
+                <property role="Xl_RC" value="disallowed_scenario_PASS" />
+              </node>
+              <node concept="1jxXqW" id="74lc1eAyLvO" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="74lc1eAyLvP" role="3cqZAp">
+          <node concept="2OqwBi" id="74lc1eAyLvQ" role="3vwVQn">
+            <node concept="37vLTw" id="74lc1eAyLvR" role="2Oq$k0">
+              <ref role="3cqZAo" node="74lc1eAyLvJ" resolve="res1" />
+            </node>
+            <node concept="liA8E" id="74lc1eAyLvS" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="74lc1eAyLvT" role="3cqZAp">
+          <node concept="Xl_RD" id="74lc1eAyLvU" role="3tpDZB">
+            <property role="Xl_RC" value="disallowed_scenario_PASS" />
+          </node>
+          <node concept="2OqwBi" id="74lc1eAyLvV" role="3tpDZA">
+            <node concept="37vLTw" id="74lc1eAyLvW" role="2Oq$k0">
+              <ref role="3cqZAo" node="74lc1eAyLvJ" resolve="res1" />
+            </node>
+            <node concept="liA8E" id="74lc1eAyLvX" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="74lc1eAyLVV" role="1SL9yI">
+      <property role="TrG5h" value="test_disallowed_scenario_FAIL" />
+      <node concept="3cqZAl" id="74lc1eAyLVW" role="3clF45" />
+      <node concept="3clFbS" id="74lc1eAyLVX" role="3clF47">
+        <node concept="3cpWs8" id="74lc1eAyLVY" role="3cqZAp">
+          <node concept="3cpWsn" id="74lc1eAyLVZ" role="3cpWs9">
+            <property role="TrG5h" value="res1" />
+            <node concept="3uibUv" id="74lc1eAyLW0" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="74lc1eAyLW1" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="74lc1eAyLW2" role="37wK5m">
+                <property role="Xl_RC" value="_000_tests_running_tests" />
+              </node>
+              <node concept="Xl_RD" id="74lc1eAyLW3" role="37wK5m">
+                <property role="Xl_RC" value="disallowed_scenario_FAIL" />
+              </node>
+              <node concept="1jxXqW" id="74lc1eAyLW4" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="74lc1eAyLW5" role="3cqZAp">
+          <node concept="2OqwBi" id="74lc1eAyLW6" role="3vwVQn">
+            <node concept="37vLTw" id="74lc1eAyLW7" role="2Oq$k0">
+              <ref role="3cqZAo" node="74lc1eAyLVZ" resolve="res1" />
+            </node>
+            <node concept="liA8E" id="74lc1eAyLW8" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="74lc1eAyLW9" role="3cqZAp">
+          <node concept="Xl_RD" id="74lc1eAyLWa" role="3tpDZB">
+            <property role="Xl_RC" value="disallowed_scenario_FAIL" />
+          </node>
+          <node concept="2OqwBi" id="74lc1eAyLWb" role="3tpDZA">
+            <node concept="37vLTw" id="74lc1eAyLWc" role="2Oq$k0">
+              <ref role="3cqZAo" node="74lc1eAyLVZ" resolve="res1" />
+            </node>
+            <node concept="liA8E" id="74lc1eAyLWd" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2XOHcx" id="6Kf5KB75Mz6">
     <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv/" />

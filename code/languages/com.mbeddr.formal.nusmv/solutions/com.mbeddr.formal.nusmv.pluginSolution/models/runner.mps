@@ -202,6 +202,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -5498,20 +5501,30 @@
                 <node concept="3clFbS" id="4Hts7PYGiGc" role="3clFbx">
                   <node concept="3cpWs6" id="4Hts7PYGr$j" role="3cqZAp" />
                 </node>
-                <node concept="2d3UOw" id="4Hts7PYGria" role="3clFbw">
-                  <node concept="37vLTw" id="4Hts7PYGj24" role="3uHU7B">
-                    <ref role="3cqZAo" node="2xeYpNCbGHt" resolve="numberOfStates" />
-                  </node>
-                  <node concept="2OqwBi" id="4Hts7PYGnlV" role="3uHU7w">
-                    <node concept="2OqwBi" id="4Hts7PYGktb" role="2Oq$k0">
-                      <node concept="37vLTw" id="4Hts7PYGjWP" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2xeYpNCbd_G" resolve="tc" />
-                      </node>
-                      <node concept="3Tsc0h" id="4Hts7PYGl0_" role="2OqNvi">
-                        <ref role="3TtcxE" to="fnq2:43FRfGJUFOk" resolve="steps" />
-                      </node>
+                <node concept="22lmx$" id="74lc1eAzpjH" role="3clFbw">
+                  <node concept="3eOVzh" id="74lc1eAzq$d" role="3uHU7w">
+                    <node concept="3cmrfG" id="74lc1eAzrck" role="3uHU7w">
+                      <property role="3cmrfH" value="0" />
                     </node>
-                    <node concept="34oBXx" id="4Hts7PYGr8r" role="2OqNvi" />
+                    <node concept="37vLTw" id="74lc1eAzp$C" role="3uHU7B">
+                      <ref role="3cqZAo" node="2xeYpNCbGHt" resolve="numberOfStates" />
+                    </node>
+                  </node>
+                  <node concept="2d3UOw" id="4Hts7PYGria" role="3uHU7B">
+                    <node concept="37vLTw" id="4Hts7PYGj24" role="3uHU7B">
+                      <ref role="3cqZAo" node="2xeYpNCbGHt" resolve="numberOfStates" />
+                    </node>
+                    <node concept="2OqwBi" id="4Hts7PYGnlV" role="3uHU7w">
+                      <node concept="2OqwBi" id="4Hts7PYGktb" role="2Oq$k0">
+                        <node concept="37vLTw" id="4Hts7PYGjWP" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2xeYpNCbd_G" resolve="tc" />
+                        </node>
+                        <node concept="3Tsc0h" id="4Hts7PYGl0_" role="2OqNvi">
+                          <ref role="3TtcxE" to="fnq2:43FRfGJUFOk" resolve="steps" />
+                        </node>
+                      </node>
+                      <node concept="34oBXx" id="4Hts7PYGr8r" role="2OqNvi" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -9441,8 +9454,8 @@
                 <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
               </node>
               <node concept="1mIQ4w" id="1uIpCUulSBz" role="2OqNvi">
-                <node concept="chp4Y" id="1uIpCUulSB$" role="cj9EA">
-                  <ref role="cht4Q" to="fnq2:1uIpCUulsJ5" resolve="AllowedScenario" />
+                <node concept="chp4Y" id="74lc1eAxWta" role="cj9EA">
+                  <ref role="cht4Q" to="fnq2:74lc1eAxTuI" resolve="Scenario" />
                 </node>
               </node>
             </node>
@@ -9496,11 +9509,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1uIpCUum3FA" role="3cqZAp" />
-        <node concept="3SKdUt" id="1uIpCUulTuP" role="3cqZAp">
-          <node concept="3SKdUq" id="1uIpCUulTuR" role="3SKWNk">
-            <property role="3SKdUp" value="if NuSMV finds a scenario (cex) then the result is PASS else it is FAIL" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="1uIpCUum3Xi" role="3cqZAp">
           <node concept="3cpWsn" id="1uIpCUum3Xl" role="3cpWs9">
             <property role="TrG5h" value="scenarioIsAllowed" />
@@ -9515,34 +9523,126 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="1uIpCUum0dS" role="3cqZAp">
-          <node concept="2ShNRf" id="1uIpCUum0n4" role="3cqZAk">
-            <node concept="1pGfFk" id="1uIpCUum0T2" role="2ShVmc">
-              <ref role="37wK5l" node="7mSH3Wn4J5_" resolve="NuSMVLiftedResult" />
-              <node concept="37vLTw" id="1uIpCUusFjB" role="37wK5m">
-                <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+        <node concept="3clFbJ" id="74lc1eAxYeu" role="3cqZAp">
+          <node concept="3clFbS" id="74lc1eAxYew" role="3clFbx">
+            <node concept="3SKdUt" id="1uIpCUulTuP" role="3cqZAp">
+              <node concept="3SKdUq" id="1uIpCUulTuR" role="3SKWNk">
+                <property role="3SKdUp" value="if NuSMV could find a CEX =&gt; scenario is feasible and thereby the result is PASS, else it is FAIL" />
               </node>
-              <node concept="37vLTw" id="1uIpCUum0Z5" role="37wK5m">
-                <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
-              </node>
-              <node concept="2OqwBi" id="1uIpCUum1td" role="37wK5m">
-                <node concept="37vLTw" id="1uIpCUum1e8" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
-                </node>
-                <node concept="liA8E" id="1uIpCUum1Oy" role="2OqNvi">
-                  <ref role="37wK5l" node="6Kf5KB71hLk" resolve="getRawResult" />
+            </node>
+            <node concept="3cpWs8" id="74lc1eAy92O" role="3cqZAp">
+              <node concept="3cpWsn" id="74lc1eAy92P" role="3cpWs9">
+                <property role="TrG5h" value="success" />
+                <node concept="10P_77" id="74lc1eAy92L" role="1tU5fm" />
+                <node concept="37vLTw" id="74lc1eAy92Q" role="33vP2m">
+                  <ref role="3cqZAo" node="1uIpCUum3Xl" resolve="scenarioIsAllowed" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="1uIpCUum2gj" role="37wK5m">
-                <node concept="37vLTw" id="1uIpCUum21X" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
-                </node>
-                <node concept="liA8E" id="1uIpCUum2tn" role="2OqNvi">
-                  <ref role="37wK5l" node="7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
+            </node>
+            <node concept="3cpWs6" id="1uIpCUum0dS" role="3cqZAp">
+              <node concept="2ShNRf" id="1uIpCUum0n4" role="3cqZAk">
+                <node concept="1pGfFk" id="1uIpCUum0T2" role="2ShVmc">
+                  <ref role="37wK5l" node="7mSH3Wn4J5_" resolve="NuSMVLiftedResult" />
+                  <node concept="37vLTw" id="1uIpCUusFjB" role="37wK5m">
+                    <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+                  </node>
+                  <node concept="37vLTw" id="1uIpCUum0Z5" role="37wK5m">
+                    <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+                  </node>
+                  <node concept="2OqwBi" id="1uIpCUum1td" role="37wK5m">
+                    <node concept="37vLTw" id="1uIpCUum1e8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+                    </node>
+                    <node concept="liA8E" id="1uIpCUum1Oy" role="2OqNvi">
+                      <ref role="37wK5l" node="6Kf5KB71hLk" resolve="getRawResult" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1uIpCUum2gj" role="37wK5m">
+                    <node concept="37vLTw" id="1uIpCUum21X" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+                    </node>
+                    <node concept="liA8E" id="1uIpCUum2tn" role="2OqNvi">
+                      <ref role="37wK5l" node="7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="74lc1eAy92R" role="37wK5m">
+                    <ref role="3cqZAo" node="74lc1eAy92P" resolve="success" />
+                  </node>
                 </node>
               </node>
-              <node concept="37vLTw" id="1uIpCUum4RM" role="37wK5m">
-                <ref role="3cqZAo" node="1uIpCUum3Xl" resolve="scenarioIsAllowed" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="74lc1eAxYHZ" role="3clFbw">
+            <node concept="37vLTw" id="74lc1eAxYog" role="2Oq$k0">
+              <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+            </node>
+            <node concept="1mIQ4w" id="74lc1eAxZLD" role="2OqNvi">
+              <node concept="chp4Y" id="74lc1eAxZPn" role="cj9EA">
+                <ref role="cht4Q" to="fnq2:1uIpCUulsJ5" resolve="AllowedScenario" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="74lc1eAy0CG" role="9aQIa">
+            <node concept="3clFbS" id="74lc1eAy0CH" role="9aQI4">
+              <node concept="1gVbGN" id="74lc1eAy19z" role="3cqZAp">
+                <node concept="2OqwBi" id="74lc1eAy1w9" role="1gVkn0">
+                  <node concept="37vLTw" id="74lc1eAy1dR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+                  </node>
+                  <node concept="1mIQ4w" id="74lc1eAy2w2" role="2OqNvi">
+                    <node concept="chp4Y" id="74lc1eAy6Fg" role="cj9EA">
+                      <ref role="cht4Q" to="fnq2:74lc1eAy2zK" resolve="DisallowedScenario" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3SKdUt" id="74lc1eAy8HQ" role="3cqZAp">
+                <node concept="3SKdUq" id="74lc1eAy8HS" role="3SKWNk">
+                  <property role="3SKdUp" value="if NuSMV could not find a CEX =&gt; scenario is NOT feasible and thereby the result is PASS, else it is FAIL" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="74lc1eAy9p2" role="3cqZAp">
+                <node concept="3cpWsn" id="74lc1eAy9p3" role="3cpWs9">
+                  <property role="TrG5h" value="success" />
+                  <node concept="10P_77" id="74lc1eAy9oZ" role="1tU5fm" />
+                  <node concept="3fqX7Q" id="74lc1eAy9p4" role="33vP2m">
+                    <node concept="37vLTw" id="74lc1eAy9p5" role="3fr31v">
+                      <ref role="3cqZAo" node="1uIpCUum3Xl" resolve="scenarioIsAllowed" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="74lc1eAy8IO" role="3cqZAp">
+                <node concept="2ShNRf" id="74lc1eAy8IP" role="3cqZAk">
+                  <node concept="1pGfFk" id="74lc1eAy8IQ" role="2ShVmc">
+                    <ref role="37wK5l" node="7mSH3Wn4J5_" resolve="NuSMVLiftedResult" />
+                    <node concept="37vLTw" id="74lc1eAy8IR" role="37wK5m">
+                      <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+                    </node>
+                    <node concept="37vLTw" id="74lc1eAy8IS" role="37wK5m">
+                      <ref role="3cqZAo" node="1uIpCUulQAJ" resolve="tc" />
+                    </node>
+                    <node concept="2OqwBi" id="74lc1eAy8IT" role="37wK5m">
+                      <node concept="37vLTw" id="74lc1eAy8IU" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+                      </node>
+                      <node concept="liA8E" id="74lc1eAy8IV" role="2OqNvi">
+                        <ref role="37wK5l" node="6Kf5KB71hLk" resolve="getRawResult" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="74lc1eAy8IW" role="37wK5m">
+                      <node concept="37vLTw" id="74lc1eAy8IX" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1uIpCUulQ_I" resolve="initial" />
+                      </node>
+                      <node concept="liA8E" id="74lc1eAy8IY" role="2OqNvi">
+                        <ref role="37wK5l" node="7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="74lc1eAy9p6" role="37wK5m">
+                      <ref role="3cqZAo" node="74lc1eAy9p3" resolve="success" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -9566,7 +9666,7 @@
       </node>
     </node>
     <node concept="NWlO9" id="1uIpCUum4W6" role="lGtFl">
-      <property role="NWlVz" value="Lifter for test results considering the allowed scenarios." />
+      <property role="NWlVz" value="Lifter for test results considering the (dis-)allowed scenarios." />
     </node>
   </node>
 </model>

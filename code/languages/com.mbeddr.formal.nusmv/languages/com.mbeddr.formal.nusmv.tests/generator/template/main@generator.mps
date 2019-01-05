@@ -25,7 +25,6 @@
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -747,21 +746,11 @@
       <node concept="30G5F_" id="1uIpCUunwzB" role="30HLyM">
         <node concept="3clFbS" id="1uIpCUunwzC" role="2VODD2">
           <node concept="3clFbF" id="1uIpCUunxpL" role="3cqZAp">
-            <node concept="22lmx$" id="1uIpCUunyU0" role="3clFbG">
-              <node concept="2OqwBi" id="1uIpCUunzmb" role="3uHU7w">
-                <node concept="30H73N" id="1uIpCUunz57" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="1uIpCUunzXi" role="2OqNvi">
-                  <node concept="chp4Y" id="1uIpCUun$8e" role="cj9EA">
-                    <ref role="cht4Q" to="fnq2:1uIpCUulsJ5" resolve="AllowedScenario" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="1uIpCUunxGn" role="3uHU7B">
-                <node concept="30H73N" id="1uIpCUunxpK" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="1uIpCUunygn" role="2OqNvi">
-                  <node concept="chp4Y" id="1uIpCUunyqy" role="cj9EA">
-                    <ref role="cht4Q" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
-                  </node>
+            <node concept="2OqwBi" id="1uIpCUunxGn" role="3clFbG">
+              <node concept="30H73N" id="1uIpCUunxpK" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1uIpCUunygn" role="2OqNvi">
+                <node concept="chp4Y" id="1uIpCUunyqy" role="cj9EA">
+                  <ref role="cht4Q" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
                 </node>
               </node>
             </node>

@@ -21,6 +21,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -218,7 +219,22 @@
     <property role="EcuMT" value="1706414071547808709" />
     <property role="TrG5h" value="AllowedScenario" />
     <property role="34LRSv" value="allowed scenario" />
+    <property role="3GE5qa" value="scenario" />
+    <ref role="1TJDcQ" node="74lc1eAxTuI" resolve="Scenario" />
+  </node>
+  <node concept="1TIwiD" id="74lc1eAxTuI">
+    <property role="EcuMT" value="8148471961753196462" />
+    <property role="TrG5h" value="Scenario" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="scenario" />
     <ref role="1TJDcQ" node="43FRfGJUEtT" resolve="TestCase" />
+  </node>
+  <node concept="1TIwiD" id="74lc1eAy2zK">
+    <property role="EcuMT" value="8148471961753233648" />
+    <property role="TrG5h" value="DisallowedScenario" />
+    <property role="34LRSv" value="disallowed scenario" />
+    <property role="3GE5qa" value="scenario" />
+    <ref role="1TJDcQ" node="74lc1eAxTuI" resolve="Scenario" />
   </node>
 </model>
 
