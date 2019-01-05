@@ -172,6 +172,7 @@
     </language>
     <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
       <concept id="1706414071547808709" name="com.mbeddr.formal.nusmv.tests.structure.AllowedScenario" flags="ng" index="29YUPb" />
+      <concept id="8148471961753233648" name="com.mbeddr.formal.nusmv.tests.structure.DisallowedScenario" flags="ng" index="3nBhzz" />
       <concept id="71733767948742370" name="com.mbeddr.formal.nusmv.tests.structure.EmptyTestsCollectionContent" flags="ng" index="1s0Jup" />
       <concept id="9018859973236783824" name="com.mbeddr.formal.nusmv.tests.structure.AnyValue" flags="ng" index="3EVhuc">
         <child id="5448974320048910836" name="tpe" index="1V8LiM" />
@@ -1483,18 +1484,6 @@
           <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
         </node>
       </node>
-      <node concept="1J0m7Y" id="1uIpCUuqhCL" role="1J0m7J">
-        <node concept="1yCjT0" id="1uIpCUuqhCM" role="1J0m7X" />
-        <node concept="2HeeqP" id="1uIpCUuqhCN" role="1J0m7K">
-          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
-        </node>
-      </node>
-      <node concept="1J0m7Y" id="1uIpCUuqhCO" role="1J0m7J">
-        <node concept="1yCjT0" id="1uIpCUuqhCP" role="1J0m7X" />
-        <node concept="2HeeqP" id="1uIpCUuqhLJ" role="1J0m7K">
-          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
-        </node>
-      </node>
     </node>
     <node concept="1s0Jup" id="1uIpCUuqc03" role="1J0nHx" />
     <node concept="29YUPb" id="1uIpCUuqbXk" role="1J0nHx">
@@ -1551,6 +1540,124 @@
       <node concept="1J0m7Y" id="1uIpCUuqbXB" role="1J0m7J">
         <node concept="1yCjT0" id="1uIpCUuqbXC" role="1J0m7X" />
         <node concept="2HeeqP" id="1uIpCUuqbXD" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$f" resolve="Walk" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="4Wa4Mc7esy8" role="1J0nHx" />
+    <node concept="3nBhzz" id="4Wa4Mc7esBS" role="1J0nHx">
+      <property role="TrG5h" value="pedestrian_disalowed_after_7_ticks_PASS" />
+      <ref role="1J0niy" node="1uIpCUuoyfm" resolve="pedestrian_lights_controller" />
+      <node concept="1J0m7Y" id="4Wa4Mc7esEP" role="1J0m7J">
+        <node concept="1yCjRe" id="4Wa4Mc7esEQ" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esER" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esES" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esET" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esEU" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esEV" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esEW" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esEX" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esEY" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esEZ" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esF0" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esF1" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esF2" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esF3" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esF4" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esF5" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esF6" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esF7" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esF8" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esF9" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esH8" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esH9" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esHa" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7esIY" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7esIZ" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7esK0" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$f" resolve="Walk" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="4Wa4Mc7etSD" role="1J0nHx" />
+    <node concept="3nBhzz" id="4Wa4Mc7etNc" role="1J0nHx">
+      <property role="TrG5h" value="pedestrian_disalowed_after_3_ticks_FAIL" />
+      <ref role="1J0niy" node="1uIpCUuoyfm" resolve="pedestrian_lights_controller" />
+      <node concept="1J0m7Y" id="4Wa4Mc7etNg" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNh" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7etNi" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etNd" role="1J0m7J">
+        <node concept="1yCjRe" id="4Wa4Mc7etNe" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7etNf" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etNj" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNk" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7etNl" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etNm" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNn" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7etNo" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etNp" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNq" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7etNr" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etNs" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNt" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7etNu" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$J" resolve="DontWalk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etN_" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNA" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7etNB" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$f" resolve="Walk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etNv" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNw" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7eAsk" role="1J0m7K">
+          <ref role="2HeeqO" node="1uIpCUuoy$f" resolve="Walk" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4Wa4Mc7etNy" role="1J0m7J">
+        <node concept="1yCjT0" id="4Wa4Mc7etNz" role="1J0m7X" />
+        <node concept="2HeeqP" id="4Wa4Mc7eAsp" role="1J0m7K">
           <ref role="2HeeqO" node="1uIpCUuoy$f" resolve="Walk" />
         </node>
       </node>
