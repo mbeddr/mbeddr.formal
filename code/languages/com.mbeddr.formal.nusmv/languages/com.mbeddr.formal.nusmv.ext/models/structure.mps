@@ -315,5 +315,19 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="4Jpgh6IGrD8">
+    <property role="EcuMT" value="5465471166991940168" />
+    <property role="TrG5h" value="TypedParameterDeclaration" />
+    <property role="R4oN_" value="typed parameter of module" />
+    <property role="34LRSv" value="typed parameter " />
+    <ref role="1TJDcQ" to="gioj:6NmtaR1SULQ" resolve="ParameterDeclaration" />
+    <node concept="1TJgyj" id="6NmtaR1SVeb" role="1TKVEi">
+      <property role="IQ2ns" value="7842584090743387019" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    </node>
+  </node>
 </model>
 

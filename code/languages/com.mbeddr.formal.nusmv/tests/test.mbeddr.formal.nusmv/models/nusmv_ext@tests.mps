@@ -11,6 +11,8 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
+    <use id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext" version="0" />
   </languages>
   <imports>
     <import index="82db" ref="r:d9e70cd7-5bba-4146-b9d2-6eab353213c5(test.mbeddr.formal.nusmv.tests)" />
@@ -31,14 +33,30 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
+        <child id="1215604436604" name="nodeOperations" index="7EUXB" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
+        <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
+      <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
+        <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
+      </concept>
+      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
+        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
+      </concept>
+      <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
+      <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
+        <reference id="1210674534086" name="declaration" index="3xOPvv" />
+      </concept>
+      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -150,6 +168,50 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
+      </concept>
+      <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
+        <child id="7842584090743586905" name="content" index="2HcbjO" />
+        <child id="7842584090743385207" name="params" index="2Hdtzq" />
+      </concept>
+      <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
+      <concept id="7842584090743880820" name="com.mbeddr.formal.nusmv.structure.AssignmentsSection" flags="ng" index="2Hfkzp">
+        <child id="7842584090743880984" name="assignments" index="2HfkAP" />
+      </concept>
+      <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
+        <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="7842584090743880983" name="com.mbeddr.formal.nusmv.structure.AbstractAssignment" flags="ng" index="2HfkAU">
+        <child id="7842584090743943213" name="rhs" index="2He$i0" />
+        <child id="7842584090743943207" name="lhs" index="2He$ia" />
+      </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
+        <reference id="1989356068341979926" name="param" index="32Ogvr" />
+      </concept>
+      <concept id="4643937035595555211" name="com.mbeddr.formal.nusmv.structure.SimpleAssignment" flags="ng" index="1lxFmE" />
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="7526568111198990000" name="com.mbeddr.formal.nusmv.ext.structure.EnumType" flags="ng" index="2XJXdx">
+        <reference id="7526568111198990001" name="enumDeclaration" index="2XJXdw" />
+      </concept>
+      <concept id="7526568111198989908" name="com.mbeddr.formal.nusmv.ext.structure.EnumDeclaration" flags="ng" index="2XJXe5">
+        <child id="7526568111198989997" name="members" index="2XJXdW" />
+      </concept>
+      <concept id="5465471166991940168" name="com.mbeddr.formal.nusmv.ext.structure.TypedParameterDeclaration" flags="ng" index="3_qfHp">
+        <child id="7842584090743387019" name="type" index="2HdssB" />
+      </concept>
+    </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
         <property id="1863527487546097494" name="modelId" index="1XweGQ" />
@@ -188,6 +250,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -660,6 +725,87 @@
               <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="4Jpgh6INhbk">
+    <property role="TrG5h" value="_500_typed_params" />
+    <node concept="1LZb2c" id="4Jpgh6INhiS" role="1SL9yI">
+      <property role="TrG5h" value="testTypedParams" />
+      <node concept="3cqZAl" id="4Jpgh6INhiT" role="3clF45" />
+      <node concept="3clFbS" id="4Jpgh6INhiX" role="3clF47">
+        <node concept="3Ca1qy" id="4Jpgh6INhkA" role="3cqZAp">
+          <node concept="3xONca" id="4Jpgh6INhkQ" role="3qv8fS">
+            <ref role="3xOPvv" node="4Jpgh6INhiw" resolve="stronger_type" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="4Jpgh6INhbl" role="1SKRRt">
+      <node concept="2HdtXS" id="4Jpgh6INhbp" role="1qenE9">
+        <property role="TrG5h" value="dummy" />
+        <node concept="2XJXe5" id="4Jpgh6IKOXx" role="2HcuB8">
+          <property role="TrG5h" value="CARS_COLOR" />
+          <node concept="2Hdrtq" id="4Jpgh6IKOYd" role="2XJXdW">
+            <property role="TrG5h" value="GREEN" />
+          </node>
+          <node concept="2Hdrtq" id="4Jpgh6IKOYh" role="2XJXdW">
+            <property role="TrG5h" value="YELLOW" />
+          </node>
+          <node concept="2Hdrtq" id="4Jpgh6IKOYo" role="2XJXdW">
+            <property role="TrG5h" value="RED" />
+          </node>
+        </node>
+        <node concept="2SQmWS" id="4Jpgh6IKHDu" role="2HcuB8" />
+        <node concept="2Hdtz0" id="4Jpgh6IGI2_" role="2HcuB8">
+          <property role="TrG5h" value="traffic_lights_controller" />
+          <node concept="2Hfkzq" id="4Jpgh6IKOYy" role="2HcbjO">
+            <node concept="2Hdskp" id="4Jpgh6IKOYJ" role="2Hfkx9">
+              <property role="TrG5h" value="carsSignal" />
+              <node concept="2XJXdx" id="4Jpgh6IKOZ5" role="2HdssA">
+                <ref role="2XJXdw" node="4Jpgh6IKOXx" resolve="CARS_COLOR" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Hfkzp" id="4Jpgh6IKP23" role="2HcbjO">
+            <node concept="1lxFmE" id="4Jpgh6IKP2n" role="2HfkAP">
+              <node concept="2He$iJ" id="4Jpgh6IKP2l" role="2He$ia">
+                <ref role="2He$iI" node="4Jpgh6IKOYJ" resolve="carsSignal" />
+              </node>
+              <node concept="32Ogvo" id="4Jpgh6IN5i5" role="2He$i0">
+                <ref role="32Ogvr" node="4Jpgh6IKHBa" resolve="btnPressed" />
+              </node>
+              <node concept="7CXmI" id="4Jpgh6INhda" role="lGtFl">
+                <node concept="1TM$A" id="4Jpgh6INhdb" role="7EUXB" />
+              </node>
+            </node>
+            <node concept="1lxFmE" id="4Jpgh6INhgU" role="2HfkAP">
+              <node concept="2He$iJ" id="4Jpgh6INhgS" role="2He$ia">
+                <ref role="2He$iI" node="4Jpgh6IKOYJ" resolve="carsSignal" />
+              </node>
+              <node concept="32Ogvo" id="4Jpgh6INhhq" role="2He$i0">
+                <ref role="32Ogvr" node="4Jpgh6INheh" resolve="signal" />
+              </node>
+            </node>
+          </node>
+          <node concept="3_qfHp" id="4Jpgh6IKHBa" role="2Hdtzq">
+            <property role="TrG5h" value="btnPressed" />
+            <node concept="2Hds6S" id="4Jpgh6IKHBy" role="2HdssB" />
+          </node>
+          <node concept="2Hdtzr" id="4Jpgh6IKOWA" role="2Hdtzq">
+            <property role="TrG5h" value="delay" />
+          </node>
+          <node concept="3_qfHp" id="4Jpgh6INheh" role="2Hdtzq">
+            <property role="TrG5h" value="signal" />
+            <node concept="2XJXdx" id="4Jpgh6INheE" role="2HdssB">
+              <ref role="2XJXdw" node="4Jpgh6IKOXx" resolve="CARS_COLOR" />
+            </node>
+          </node>
+        </node>
+        <node concept="2SQmWS" id="4Jpgh6INhbq" role="2HcuB8" />
+        <node concept="3xLA65" id="4Jpgh6INhiw" role="lGtFl">
+          <property role="TrG5h" value="stronger_type" />
         </node>
       </node>
     </node>
