@@ -33,10 +33,13 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215526290564" name="jetbrains.mps.lang.test.structure.NodeTypeCheckOperation" flags="ng" index="30Omv">
+        <child id="1215526393912" name="type" index="31d$z" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -775,9 +778,14 @@
               </node>
               <node concept="32Ogvo" id="4Jpgh6IN5i5" role="2He$i0">
                 <ref role="32Ogvr" node="4Jpgh6IKHBa" resolve="btnPressed" />
+                <node concept="7CXmI" id="4Wa4Mc7fibz" role="lGtFl">
+                  <node concept="30Omv" id="4Wa4Mc7fibP" role="7EUXB">
+                    <node concept="2Hds6S" id="4Wa4Mc7fic0" role="31d$z" />
+                  </node>
+                </node>
               </node>
               <node concept="7CXmI" id="4Jpgh6INhda" role="lGtFl">
-                <node concept="1TM$A" id="4Jpgh6INhdb" role="7EUXB" />
+                <node concept="2DdRWr" id="4Wa4Mc7fic8" role="7EUXB" />
               </node>
             </node>
             <node concept="1lxFmE" id="4Jpgh6INhgU" role="2HfkAP">
@@ -791,7 +799,7 @@
           </node>
           <node concept="3_qfHp" id="4Jpgh6IKHBa" role="2Hdtzq">
             <property role="TrG5h" value="btnPressed" />
-            <node concept="2Hds6S" id="4Jpgh6IKHBy" role="2HdssB" />
+            <node concept="2Hds6S" id="4Wa4Mc7flaa" role="2HdssB" />
           </node>
           <node concept="2Hdtzr" id="4Jpgh6IKOWA" role="2Hdtzq">
             <property role="TrG5h" value="delay" />
