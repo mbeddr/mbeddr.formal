@@ -400,7 +400,7 @@
       <property role="20kJfa" value="lhs" />
       <property role="20lbJX" value="1" />
       <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
-      <ref role="20lvS9" node="6oUHYl_Xm5W" resolve="AbstractVariableRef" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1W9ga">
@@ -1697,6 +1697,9 @@
     <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
     <node concept="PrWs8" id="1trCN7lf1tM" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="44HlJomdnL6" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:44HlJomdkbK" resolve="IUntypedDotTarget" />
     </node>
   </node>
 </model>
