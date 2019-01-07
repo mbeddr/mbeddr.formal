@@ -61,6 +61,7 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -71,8 +72,10 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -98,6 +101,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -128,8 +132,12 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
+      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
+        <property id="6451706574539345425" name="text" index="NWlVz" />
+      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
@@ -177,6 +185,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -519,6 +530,17 @@
   </node>
   <node concept="312cEu" id="L6k24q5o71">
     <property role="TrG5h" value="Utils" />
+    <node concept="2tJIrI" id="44HlJomh0JK" role="jymVt" />
+    <node concept="Wx3nA" id="44HlJomh0rK" role="jymVt">
+      <property role="TrG5h" value="ENABLE_ERROR_RECOVERY_DURING_PARSING" />
+      <property role="3TUv4t" value="true" />
+      <node concept="10P_77" id="44HlJomgZJa" role="1tU5fm" />
+      <node concept="3Tm6S6" id="44HlJomgZJ9" role="1B3o_S" />
+      <node concept="3clFbT" id="44HlJomgZJb" role="33vP2m" />
+      <node concept="NWlO9" id="44HlJomh2L8" role="lGtFl">
+        <property role="NWlVz" value="This should be normally FALSE since the grammar should be good enough to parse our tests." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="L6k24q5o72" role="jymVt" />
     <node concept="2YIFZL" id="L6k24q5o73" role="jymVt">
       <property role="TrG5h" value="importAndCheckSystem" />
@@ -646,6 +668,9 @@
               <ref role="1Pybhc" to="x05w:MGgg6OKdCB" resolve="NuSMVModelBuilder" />
               <node concept="37vLTw" id="L6k24q6Yww" role="37wK5m">
                 <ref role="3cqZAo" node="L6k24q6Ywb" resolve="path" />
+              </node>
+              <node concept="37vLTw" id="44HlJomh1Og" role="37wK5m">
+                <ref role="3cqZAo" node="44HlJomh0rK" resolve="ENABLE_ERROR_RECOVERY_DURING_PARSING" />
               </node>
             </node>
           </node>
