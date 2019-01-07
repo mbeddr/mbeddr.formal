@@ -417,5 +417,10 @@
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="ICallLike" />
   </node>
+  <node concept="PlHQZ" id="44HlJomdkbK">
+    <property role="EcuMT" value="4696505601351828208" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <property role="TrG5h" value="IUntypedDotTarget" />
+  </node>
 </model>
 
