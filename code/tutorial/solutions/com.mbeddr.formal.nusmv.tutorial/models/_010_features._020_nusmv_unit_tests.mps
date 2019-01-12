@@ -554,14 +554,14 @@
     <node concept="2Hdtz0" id="407WgdX8rDt" role="2HcuB8">
       <property role="TrG5h" value="counter" />
       <node concept="2Hdtzr" id="407WgdX8rKD" role="2Hdtzq">
-        <property role="TrG5h" value="stop_command" />
+        <property role="TrG5h" value="stop_cmd" />
       </node>
       <node concept="2Hdtzr" id="407WgdX8rDu" role="2Hdtzq">
         <property role="TrG5h" value="step" />
       </node>
       <node concept="32O2o0" id="407WgdX8rR$" role="2HcbjO">
         <node concept="1zoerA" id="407WgdX8rUy" role="32O2ov">
-          <property role="TrG5h" value="output_valid" />
+          <property role="TrG5h" value="out_valid" />
           <node concept="1yA0yd" id="407WgdX8rUF" role="1zoetD">
             <node concept="2He$iJ" id="407WgdX8rUM" role="32OYtT">
               <ref role="2He$iI" node="407WgdX8rOB" resolve="stopped_state" />
@@ -569,7 +569,7 @@
           </node>
         </node>
         <node concept="1zoerA" id="407WgdX8sca" role="32O2ov">
-          <property role="TrG5h" value="output_value" />
+          <property role="TrG5h" value="out_value" />
           <node concept="2He$iJ" id="407WgdX8scu" role="1zoetD">
             <ref role="2He$iI" node="407WgdX8rDw" resolve="current_value" />
           </node>
@@ -654,7 +654,7 @@
           </node>
           <node concept="2HbMDt" id="407WgdX8spP" role="2He$i0">
             <node concept="32Ogvo" id="407WgdX8sqr" role="2H9Ial">
-              <ref role="32Ogvr" node="407WgdX8rKD" resolve="stop_command" />
+              <ref role="32Ogvr" node="407WgdX8rKD" resolve="stop_cmd" />
             </node>
             <node concept="2He$iJ" id="407WgdX8spI" role="2H9Iav">
               <ref role="2He$iI" node="407WgdX8rOB" resolve="stopped_state" />
@@ -713,7 +713,7 @@
                         <ref role="2He$iI" node="407WgdX8rDM" resolve="c" />
                       </node>
                       <node concept="1zjgSo" id="407WgdX8swz" role="1ziNjJ">
-                        <ref role="skqaw" node="407WgdX8rUy" resolve="output_valid" />
+                        <ref role="skqaw" node="407WgdX8rUy" resolve="out_valid" />
                       </node>
                     </node>
                   </node>
@@ -736,7 +736,7 @@
                     <node concept="1yeVOx" id="407WgdX8xal" role="2H9Ial">
                       <node concept="1ziNjN" id="407WgdX8xay" role="1yeVOw">
                         <node concept="1zjgSo" id="407WgdX8xaL" role="1ziNjJ">
-                          <ref role="skqaw" node="407WgdX8sca" resolve="output_value" />
+                          <ref role="skqaw" node="407WgdX8sca" resolve="out_value" />
                         </node>
                         <node concept="2He$iJ" id="407WgdX8xav" role="1ziNjM">
                           <ref role="2He$iI" node="407WgdX8rDM" resolve="c" />
@@ -745,7 +745,7 @@
                     </node>
                     <node concept="1ziNjN" id="407WgdX8x90" role="2H9Iav">
                       <node concept="1zjgSo" id="407WgdX8x9f" role="1ziNjJ">
-                        <ref role="skqaw" node="407WgdX8sca" resolve="output_value" />
+                        <ref role="skqaw" node="407WgdX8sca" resolve="out_value" />
                       </node>
                       <node concept="2He$iJ" id="407WgdX8x8Y" role="1ziNjM">
                         <ref role="2He$iI" node="407WgdX8rDM" resolve="c" />
