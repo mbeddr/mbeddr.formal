@@ -43,6 +43,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -96,7 +97,6 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -186,7 +186,9 @@
                     <node concept="2GrUjf" id="4IuDkoKK0tI" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="4IuDkoKJSLb" resolve="step" />
                     </node>
-                    <node concept="32TBzR" id="4IuDkoKK0Sn" role="2OqNvi" />
+                    <node concept="3Tsc0h" id="4s2qLhX3kxm" role="2OqNvi">
+                      <ref role="3TtcxE" to="fnq2:43FRfGJUFO6" resolve="inputs" />
+                    </node>
                   </node>
                   <node concept="34oBXx" id="4IuDkoKK3Fv" role="2OqNvi" />
                 </node>
@@ -197,7 +199,9 @@
                     <node concept="2GrUjf" id="4IuDkoKJSRs" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="4IuDkoKJSLb" resolve="step" />
                     </node>
-                    <node concept="32TBzR" id="4IuDkoKJTgy" role="2OqNvi" />
+                    <node concept="3Tsc0h" id="4s2qLhX3XSg" role="2OqNvi">
+                      <ref role="3TtcxE" to="fnq2:43FRfGJUFO6" resolve="inputs" />
+                    </node>
                   </node>
                   <node concept="34jXtK" id="4IuDkoKK02M" role="2OqNvi">
                     <node concept="37vLTw" id="4IuDkoKK046" role="25WWJ7">
@@ -229,7 +233,9 @@
                           <node concept="2GrUjf" id="4IuDkoKKaFF" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="4IuDkoKJSLb" resolve="step" />
                           </node>
-                          <node concept="32TBzR" id="4IuDkoKKaFG" role="2OqNvi" />
+                          <node concept="3Tsc0h" id="4s2qLhX4G4G" role="2OqNvi">
+                            <ref role="3TtcxE" to="fnq2:43FRfGJUFO6" resolve="inputs" />
+                          </node>
                         </node>
                         <node concept="34jXtK" id="4IuDkoKKaFH" role="2OqNvi">
                           <node concept="37vLTw" id="4IuDkoKKaFI" role="25WWJ7">
@@ -248,8 +254,33 @@
                 <node concept="3cpWsn" id="4IuDkoKKn0R" role="3cpWs9">
                   <property role="TrG5h" value="msg" />
                   <node concept="17QB3L" id="4IuDkoKKn0P" role="1tU5fm" />
-                  <node concept="Xl_RD" id="4IuDkoKKn0S" role="33vP2m">
-                    <property role="Xl_RC" value="same type is expected for all any-values of an input inside a test-case" />
+                  <node concept="3cpWs3" id="4s2qLhX2$Hw" role="33vP2m">
+                    <node concept="2OqwBi" id="4s2qLhX2_bt" role="3uHU7w">
+                      <node concept="37vLTw" id="4s2qLhX2$Te" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4IuDkoKKaF_" resolve="otherType" />
+                      </node>
+                      <node concept="2qgKlT" id="4s2qLhX3fMq" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs3" id="4s2qLhX2zE0" role="3uHU7B">
+                      <node concept="3cpWs3" id="4s2qLhX2y5E" role="3uHU7B">
+                        <node concept="Xl_RD" id="4IuDkoKKn0S" role="3uHU7B">
+                          <property role="Xl_RC" value="same type is expected for all any-values of an input inside a test-case - found " />
+                        </node>
+                        <node concept="2OqwBi" id="4s2qLhX2yl9" role="3uHU7w">
+                          <node concept="37vLTw" id="4s2qLhX2y7b" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4IuDkoKK6CH" resolve="myType" />
+                          </node>
+                          <node concept="2qgKlT" id="4s2qLhX2zdX" role="2OqNvi">
+                            <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="4s2qLhX2zPu" role="3uHU7w">
+                        <property role="Xl_RC" value=" and " />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -300,7 +331,9 @@
                     <node concept="2GrUjf" id="4IuDkoKKev1" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="4IuDkoKJSLb" resolve="step" />
                     </node>
-                    <node concept="32TBzR" id="4IuDkoKKev2" role="2OqNvi" />
+                    <node concept="3Tsc0h" id="4s2qLhX5qoT" role="2OqNvi">
+                      <ref role="3TtcxE" to="fnq2:43FRfGJUFO6" resolve="inputs" />
+                    </node>
                   </node>
                   <node concept="34jXtK" id="4IuDkoKKev3" role="2OqNvi">
                     <node concept="37vLTw" id="4IuDkoKKev4" role="25WWJ7">
