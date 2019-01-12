@@ -8,6 +8,10 @@
   <imports />
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2707707741262126533" name="com.mbeddr.formal.nusmv.structure.EmptyModuleContent" flags="ng" index="s4Ewt" />
+      <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
+        <property id="2707707741261637861" name="documentation" index="sUxOX" />
+      </concept>
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
@@ -78,6 +82,10 @@
   </registry>
   <node concept="2HdtXS" id="4Jpgh6IGI2z">
     <property role="TrG5h" value="_010_simple_extensions_showcase" />
+    <node concept="sUyCV" id="4s2qLhX5Rod" role="2HcuB8">
+      <property role="sUxOX" value="in this model we showcase several simple extensions of the SMV language" />
+    </node>
+    <node concept="2SQmWS" id="4s2qLhX5Rn8" role="2HcuB8" />
     <node concept="hx8Co" id="4Jpgh6IKHEv" role="2HcuB8">
       <property role="TrG5h" value="MAX_COUNT" />
       <node concept="2IPVmt" id="4Jpgh6IKHFl" role="hx87_">
@@ -118,7 +126,9 @@
       </node>
       <node concept="2Hfkzp" id="4Jpgh6IKP23" role="2HcbjO">
         <node concept="2HeLW8" id="4Jpgh6INh5_" role="2HfkAP" />
-        <node concept="2HeLW8" id="4Jpgh6INh5M" role="2HfkAP" />
+        <node concept="sUyCV" id="4s2qLhX5RVa" role="2HfkAP">
+          <property role="sUxOX" value="this error is expected for DEMO purposes" />
+        </node>
         <node concept="1lxFmE" id="4Jpgh6IKP2n" role="2HfkAP">
           <node concept="2He$iJ" id="4Jpgh6IKP2l" role="2He$ia">
             <ref role="2He$iI" node="4Jpgh6IKOYJ" resolve="carsSignal" />
@@ -141,6 +151,11 @@
       <node concept="2Hdtzr" id="4Jpgh6IKOWA" role="2Hdtzq">
         <property role="TrG5h" value="delay" />
       </node>
+    </node>
+    <node concept="2SQmWS" id="4s2qLhX2tvY" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4s2qLhX2tzi" role="2HcuB8">
+      <property role="TrG5h" value="main" />
+      <node concept="s4Ewt" id="4s2qLhX2tzj" role="2HcbjO" />
     </node>
     <node concept="2SQmWS" id="4Jpgh6INh34" role="2HcuB8" />
     <node concept="2SQmWS" id="4Jpgh6INh4j" role="2HcuB8" />
