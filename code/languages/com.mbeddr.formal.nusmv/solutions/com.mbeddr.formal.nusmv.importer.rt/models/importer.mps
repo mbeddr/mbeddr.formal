@@ -88,6 +88,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -2064,6 +2068,30 @@
           </node>
           <node concept="9aQIb" id="44HlJomfsHm" role="9aQIa">
             <node concept="3clFbS" id="44HlJomfsHn" role="9aQI4">
+              <node concept="1X3_iC" id="68EZXWFrUbD" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="68EZXWFoLfM" role="8Wnug">
+                  <node concept="37vLTI" id="68EZXWFoLBH" role="3clFbG">
+                    <node concept="2ShNRf" id="68EZXWFoLG5" role="37vLTx">
+                      <node concept="1pGfFk" id="68EZXWFoN5d" role="2ShVmc">
+                        <ref role="37wK5l" to="4um0:~ProfilingParseRunner.&lt;init&gt;(org.parboiled.Rule)" resolve="ProfilingParseRunner" />
+                        <node concept="2OqwBi" id="68EZXWFoN7n" role="37wK5m">
+                          <node concept="37vLTw" id="68EZXWFoN7o" role="2Oq$k0">
+                            <ref role="3cqZAo" node="MGgg6OKz4X" resolve="parser" />
+                          </node>
+                          <node concept="liA8E" id="68EZXWFoN7p" role="2OqNvi">
+                            <ref role="37wK5l" node="63Mqfg9Pg7i" resolve="NuSMV" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="68EZXWFoLfK" role="37vLTJ">
+                      <ref role="3cqZAo" node="44HlJome2Pp" resolve="parserRunner" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="44HlJomfygo" role="3cqZAp">
                 <node concept="37vLTI" id="44HlJomfy_y" role="3clFbG">
                   <node concept="2ShNRf" id="44HlJomfyDV" role="37vLTx">
@@ -2152,6 +2180,77 @@
                   <ref role="3cqZAo" node="41M_24mguxf" resolve="printNodeTree" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="68EZXWFpt1S" role="3cqZAp">
+          <node concept="3clFbS" id="68EZXWFpt1U" role="3clFbx">
+            <node concept="3clFbF" id="68EZXWFpDmK" role="3cqZAp">
+              <node concept="2OqwBi" id="68EZXWFpDmH" role="3clFbG">
+                <node concept="10M0yZ" id="68EZXWFpDmI" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="68EZXWFpDmJ" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="68EZXWFpE5L" role="37wK5m">
+                    <property role="Xl_RC" value="---------------- PROFILLING REPORT ---------------------------" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="68EZXWFpFCP" role="3cqZAp">
+              <node concept="2OqwBi" id="68EZXWFpFCM" role="3clFbG">
+                <node concept="10M0yZ" id="68EZXWFpFCN" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="68EZXWFpFCO" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="2OqwBi" id="68EZXWFqooB" role="37wK5m">
+                    <node concept="2OqwBi" id="68EZXWFpCo9" role="2Oq$k0">
+                      <node concept="1eOMI4" id="68EZXWFpCKD" role="2Oq$k0">
+                        <node concept="10QFUN" id="68EZXWFpCKC" role="1eOMHV">
+                          <node concept="37vLTw" id="68EZXWFpCKB" role="10QFUP">
+                            <ref role="3cqZAo" node="44HlJome2Pp" resolve="parserRunner" />
+                          </node>
+                          <node concept="3uibUv" id="68EZXWFpCT4" role="10QFUM">
+                            <ref role="3uigEE" to="4um0:~ProfilingParseRunner" resolve="ProfilingParseRunner" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="68EZXWFpDeu" role="2OqNvi">
+                        <ref role="37wK5l" to="4um0:~ProfilingParseRunner.getReport():org.parboiled.parserunners.ProfilingParseRunner$Report" resolve="getReport" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="68EZXWFqpyZ" role="2OqNvi">
+                      <ref role="37wK5l" to="4um0:~ProfilingParseRunner$Report.print():java.lang.String" resolve="print" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="68EZXWFpHvU" role="3cqZAp">
+              <node concept="2OqwBi" id="68EZXWFpHvR" role="3clFbG">
+                <node concept="10M0yZ" id="68EZXWFpHvS" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="68EZXWFpHvT" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="68EZXWFpIi3" role="37wK5m">
+                    <property role="Xl_RC" value="&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZW3vV" id="68EZXWFp_QH" role="3clFbw">
+            <node concept="3uibUv" id="68EZXWFpBV$" role="2ZW6by">
+              <ref role="3uigEE" to="4um0:~ProfilingParseRunner" resolve="ProfilingParseRunner" />
+            </node>
+            <node concept="37vLTw" id="68EZXWFpvjj" role="2ZW6bz">
+              <ref role="3cqZAo" node="44HlJome2Pp" resolve="parserRunner" />
             </node>
           </node>
         </node>
@@ -4467,12 +4566,6 @@
             <node concept="1rXfSq" id="4C19r4Aa2lI" role="37wK5m">
               <ref role="37wK5l" node="4C19r4A03z7" resolve="UnaryExpression" />
             </node>
-            <node concept="1rXfSq" id="TFRUGaYBRV" role="37wK5m">
-              <ref role="37wK5l" node="TFRUGaLjyT" resolve="BinaryCTLExpression" />
-            </node>
-            <node concept="1rXfSq" id="5ZNvf4VIYHI" role="37wK5m">
-              <ref role="37wK5l" node="4s2qLhXl2jC" resolve="BinaryLTLExpression" />
-            </node>
             <node concept="1rXfSq" id="4C19r4Aa2lK" role="37wK5m">
               <ref role="37wK5l" node="MGgg6OA4RZ" resolve="True" />
             </node>
@@ -4487,6 +4580,12 @@
             </node>
             <node concept="1rXfSq" id="41M_24mdu54" role="37wK5m">
               <ref role="37wK5l" node="41M_24md5Qk" resolve="SetExpression" />
+            </node>
+            <node concept="1rXfSq" id="TFRUGaYBRV" role="37wK5m">
+              <ref role="37wK5l" node="TFRUGaLjyT" resolve="BinaryCTLExpression" />
+            </node>
+            <node concept="1rXfSq" id="5ZNvf4VIYHI" role="37wK5m">
+              <ref role="37wK5l" node="4s2qLhXl2jC" resolve="BinaryLTLExpression" />
             </node>
           </node>
         </node>

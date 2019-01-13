@@ -9,6 +9,11 @@
   <imports />
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781866635522" name="com.mbeddr.formal.nusmv.structure.ConditionalExpression" flags="ng" index="d4bQV">
+        <child id="2295987781866647186" name="thenExpr" index="d498F" />
+        <child id="2295987781866647191" name="elseExpr" index="d498I" />
+        <child id="2295987781866647183" name="cond" index="d498Q" />
+      </concept>
       <concept id="2295987781863215983" name="com.mbeddr.formal.nusmv.structure.NotEqualsExpression" flags="ng" index="dheZm" />
       <concept id="2295987781863305066" name="com.mbeddr.formal.nusmv.structure.IntervalType" flags="ng" index="dhpfj">
         <child id="2295987781863305067" name="left" index="dhpfi" />
@@ -303,6 +308,13 @@
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="files_to_import/_110_specifications.smv" />
+      </node>
+    </node>
+    <node concept="1JYbFF" id="1IgYN_NA0o9" role="Q3GC_">
+      <node concept="3NXOOs" id="1IgYN_NA0oa" role="1JYbDs">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="files_to_import/_110_specifications_temp.smv" />
       </node>
     </node>
     <node concept="1JYbFF" id="41M_24ma4M4" role="Q3GC_">
@@ -1427,6 +1439,29 @@
             </node>
             <node concept="2IPVmt" id="TFRUGaXL2F" role="2H9Ial">
               <property role="2IPVms" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="1lxFmE" id="68EZXWFsjzQ" role="2HfkAP">
+          <node concept="2He$iJ" id="68EZXWFsj$g" role="2He$ia">
+            <ref role="2He$iI" node="TFRUGaK$FB" resolve="v1" />
+          </node>
+          <node concept="d4bQV" id="68EZXWFsjzP" role="2He$i0">
+            <node concept="2He$iJ" id="68EZXWFsj$e" role="d498Q">
+              <ref role="2He$iI" node="TFRUGaK$FJ" resolve="b1" />
+            </node>
+            <node concept="32OYss" id="68EZXWFsjzN" role="d498F">
+              <node concept="2H9FEB" id="68EZXWFsjzM" role="32OYtT">
+                <node concept="2He$iJ" id="68EZXWFsj$f" role="2H9Iav">
+                  <ref role="2He$iI" node="TFRUGaK$FB" resolve="v1" />
+                </node>
+                <node concept="2IPVmt" id="68EZXWFsjzL" role="2H9Ial">
+                  <property role="2IPVms" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="2IPVmt" id="68EZXWFsjzO" role="d498I">
+              <property role="2IPVms" value="3" />
             </node>
           </node>
         </node>
