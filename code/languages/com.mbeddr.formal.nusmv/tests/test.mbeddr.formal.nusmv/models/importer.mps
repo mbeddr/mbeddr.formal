@@ -18,6 +18,7 @@
       <concept id="2858146662931636880" name="com.mbeddr.formal.nusmv.structure.GreaterExpression" flags="ng" index="nE0YJ" />
       <concept id="2858146662931636879" name="com.mbeddr.formal.nusmv.structure.LessEqualsExpression" flags="ng" index="nE0YK" />
       <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
+      <concept id="5906421183242417472" name="com.mbeddr.formal.nusmv.structure.IffExpression" flags="ng" index="2oXAu5" />
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
@@ -1399,6 +1400,19 @@
               <ref role="2He$iI" node="TFRUGaK$FJ" resolve="b1" />
             </node>
             <node concept="2He$iJ" id="TFRUGaK$G9" role="2H9Ial">
+              <ref role="2He$iI" node="TFRUGaK$FL" resolve="b2" />
+            </node>
+          </node>
+        </node>
+        <node concept="1lxFmE" id="5ZNvf4VOs3q" role="2HfkAP">
+          <node concept="2He$iJ" id="5ZNvf4VOs3r" role="2He$ia">
+            <ref role="2He$iI" node="TFRUGaK$FL" resolve="b2" />
+          </node>
+          <node concept="2oXAu5" id="5ZNvf4VOs3s" role="2He$i0">
+            <node concept="2He$iJ" id="5ZNvf4VOs3t" role="2H9Iav">
+              <ref role="2He$iI" node="TFRUGaK$FJ" resolve="b1" />
+            </node>
+            <node concept="2He$iJ" id="5ZNvf4VOs3u" role="2H9Ial">
               <ref role="2He$iI" node="TFRUGaK$FL" resolve="b2" />
             </node>
           </node>
