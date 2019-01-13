@@ -20,7 +20,7 @@ SPEC AG v1
 -- SPEC commented out
 SPEC AG !v1
 SPEC AG(v1 -> (A[v1 U p1 = 0] | AX !v1))
-SPEC specification_name := AG TRUE;
+SPEC NAME specification_name := AG TRUE;
 -- ---------------
 -- LTLSPEC 
 LTLSPEC X o;
@@ -29,7 +29,7 @@ LTLSPEC F o;
 LTLSPEC Y o;
 LTLSPEC Z o;
 LTLSPEC H o;
-LTLSPEC once_ltl_spec := O o;
+LTLSPEC NAME once_ltl_spec := O o;
 -- ---------------
 -- TODO: import binary LTL expressions
 -- ---------------

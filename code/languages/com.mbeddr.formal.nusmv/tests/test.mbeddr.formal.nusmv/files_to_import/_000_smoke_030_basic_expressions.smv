@@ -13,6 +13,7 @@ ASSIGN
   b1 := b1 -> b2;
   b2 := b1 <-> b2;
   v1 := v1 - 1;
+  v1 := b1 ? (v1 + 2) : 3;
 DEFINE
   out := b1 & -- comment inside an expression
          b2 | (v1 = 1);  
