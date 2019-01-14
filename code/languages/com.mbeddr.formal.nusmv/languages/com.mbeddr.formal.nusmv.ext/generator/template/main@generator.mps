@@ -11,6 +11,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="yrt9" ref="r:2f85448a-6ae7-46b9-a1ce-27bf2bfb5fc1(com.mbeddr.formal.nusmv.ext.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -133,6 +134,7 @@
       <concept id="7842584090743391222" name="com.mbeddr.formal.nusmv.structure.EnumerationType" flags="ng" index="2Hdrtr">
         <child id="7842584090743391224" name="members" index="2Hdrtl" />
       </concept>
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
@@ -161,6 +163,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -581,12 +584,42 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="25Ap4XXl_iU" role="3acgRq">
+      <ref role="30HIoZ" to="6z8w:25Ap4XXjSpU" resolve="TypedefDeclaration" />
+      <node concept="b5Tf3" id="25Ap4XXl_iV" role="1lVwrX" />
+    </node>
+    <node concept="3aamgX" id="25Ap4XXl_iH" role="3acgRq">
+      <ref role="30HIoZ" to="6z8w:25Ap4XXjTXM" resolve="TypedefType" />
+      <node concept="gft3U" id="25Ap4XXl_iI" role="1lVwrX">
+        <node concept="2Hds6S" id="25Ap4XXlAcn" role="gfFT$">
+          <node concept="29HgVG" id="25Ap4XXlAct" role="lGtFl">
+            <node concept="3NFfHV" id="25Ap4XXlAcu" role="3NFExx">
+              <node concept="3clFbS" id="25Ap4XXlAcv" role="2VODD2">
+                <node concept="3clFbF" id="25Ap4XXlAc_" role="3cqZAp">
+                  <node concept="2OqwBi" id="25Ap4XXlAPP" role="3clFbG">
+                    <node concept="2OqwBi" id="25Ap4XXlAcw" role="2Oq$k0">
+                      <node concept="3TrEf2" id="25Ap4XXlAcz" role="2OqNvi">
+                        <ref role="3Tt5mk" to="6z8w:25Ap4XXjTXN" resolve="typedef" />
+                      </node>
+                      <node concept="30H73N" id="25Ap4XXlAc$" role="2Oq$k0" />
+                    </node>
+                    <node concept="2qgKlT" id="25Ap4XXlCQT" role="2OqNvi">
+                      <ref role="37wK5l" to="yrt9:25Ap4XXjSrc" resolve="getCoreType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="6xNJt7lQJ3p" role="3acgRq">
-      <ref role="30HIoZ" to="6z8w:6xNJt7lQHRO" resolve="DomainDeclaration" />
+      <ref role="30HIoZ" to="6z8w:6xNJt7lQHRO" resolve="IntervalDeclaration" />
       <node concept="b5Tf3" id="6xNJt7lQJtf" role="1lVwrX" />
     </node>
     <node concept="3aamgX" id="6xNJt7lQJtj" role="3acgRq">
-      <ref role="30HIoZ" to="6z8w:6xNJt7lQHS3" resolve="DomainType" />
+      <ref role="30HIoZ" to="6z8w:6xNJt7lQHS3" resolve="IntervalType" />
       <node concept="gft3U" id="6xNJt7lQJRd" role="1lVwrX">
         <node concept="dhpfj" id="6xNJt7lQKYC" role="gfFT$">
           <node concept="2IPVmt" id="6xNJt7lQKYM" role="dhpfi">
@@ -598,7 +631,7 @@
                     <node concept="2OqwBi" id="6xNJt7lQMmD" role="3clFbG">
                       <node concept="2OqwBi" id="6xNJt7lQKZo" role="2Oq$k0">
                         <node concept="3TrEf2" id="6xNJt7lQKZr" role="2OqNvi">
-                          <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="domainDeclaration" />
+                          <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="intervalDeclaration" />
                         </node>
                         <node concept="30H73N" id="6xNJt7lQKZs" role="2Oq$k0" />
                       </node>
@@ -620,7 +653,7 @@
                     <node concept="2OqwBi" id="6xNJt7lQO4t" role="3clFbG">
                       <node concept="2OqwBi" id="6xNJt7lQNwW" role="2Oq$k0">
                         <node concept="3TrEf2" id="6xNJt7lQNwZ" role="2OqNvi">
-                          <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="domainDeclaration" />
+                          <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="intervalDeclaration" />
                         </node>
                         <node concept="30H73N" id="6xNJt7lQNx0" role="2Oq$k0" />
                       </node>

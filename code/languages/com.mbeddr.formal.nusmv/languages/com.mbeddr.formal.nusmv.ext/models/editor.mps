@@ -587,6 +587,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4Jpgh6IGrDk">
+    <property role="3GE5qa" value="typed_parameter" />
     <ref role="1XX52x" to="6z8w:4Jpgh6IGrD8" resolve="TypedParameterDeclaration" />
     <node concept="3EZMnI" id="4Jpgh6IGrDm" role="2wV5jI">
       <node concept="3F0A7n" id="4Jpgh6IJq8f" role="3EZMnx">
@@ -605,6 +606,7 @@
   </node>
   <node concept="1h_SRR" id="4Jpgh6IJ_Zu">
     <property role="TrG5h" value="transformTypedParameterDeclaration2ParameterDeclaration" />
+    <property role="3GE5qa" value="typed_parameter" />
     <ref role="1h_SK9" to="6z8w:4Jpgh6IGrD8" resolve="TypedParameterDeclaration" />
     <node concept="1hA7zw" id="4Jpgh6IJ_Zv" role="1h_SK8">
       <property role="1hAc7j" value="backspace_action_id" />
@@ -684,6 +686,46 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="25Ap4XXjSq1">
+    <property role="3GE5qa" value="udt.typedef" />
+    <ref role="1XX52x" to="6z8w:25Ap4XXjSpU" resolve="TypedefDeclaration" />
+    <node concept="3EZMnI" id="25Ap4XXjSq3" role="2wV5jI">
+      <node concept="3F0ifn" id="25Ap4XXjSqa" role="3EZMnx">
+        <property role="3F0ifm" value="typedef" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="25Ap4XXjSqk" role="3EZMnx">
+        <property role="1cu_pB" value="2" />
+        <ref role="1NtTu8" to="6z8w:25Ap4XXjSpZ" resolve="originalType" />
+      </node>
+      <node concept="3F0ifn" id="25Ap4XXjSqs" role="3EZMnx">
+        <property role="3F0ifm" value="as" />
+      </node>
+      <node concept="3F0A7n" id="25Ap4XXjSqG" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="25Ap4XXjSqS" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11LMrY" id="25Ap4XXjSqZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="25Ap4XXjSq6" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="25Ap4XXjTXP">
+    <property role="3GE5qa" value="udt.typedef" />
+    <ref role="1XX52x" to="6z8w:25Ap4XXjTXM" resolve="TypedefType" />
+    <node concept="1iCGBv" id="25Ap4XXjTXR" role="2wV5jI">
+      <ref role="1NtTu8" to="6z8w:25Ap4XXjTXN" resolve="typedef" />
+      <node concept="1sVBvm" id="25Ap4XXjTXT" role="1sWHZn">
+        <node concept="3F0A7n" id="25Ap4XXjTY3" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>

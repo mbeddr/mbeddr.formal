@@ -23,6 +23,9 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -44,6 +47,10 @@
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
+      <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
+        <child id="1175147624276" name="body" index="2sgrp5" />
+      </concept>
+      <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -285,6 +292,31 @@
     <node concept="1YaCAy" id="4Jpgh6IKP2G" role="1YuTPh">
       <property role="TrG5h" value="parameterRef" />
       <ref role="1YaFvo" to="gioj:1IrBcRpiDGl" resolve="ParameterRef" />
+    </node>
+  </node>
+  <node concept="2sgARr" id="25Ap4XXm8rx">
+    <property role="3GE5qa" value="udt.typedef" />
+    <property role="TrG5h" value="typedefIsSubtypeOfCoreType" />
+    <node concept="3clFbS" id="25Ap4XXm8ry" role="2sgrp5">
+      <node concept="3clFbF" id="25Ap4XXm8t9" role="3cqZAp">
+        <node concept="2OqwBi" id="25Ap4XXm9F4" role="3clFbG">
+          <node concept="2OqwBi" id="25Ap4XXm8M3" role="2Oq$k0">
+            <node concept="1YBJjd" id="25Ap4XXm8t8" role="2Oq$k0">
+              <ref role="1YBMHb" node="25Ap4XXm8r$" resolve="typedefType" />
+            </node>
+            <node concept="3TrEf2" id="25Ap4XXm8ZB" role="2OqNvi">
+              <ref role="3Tt5mk" to="6z8w:25Ap4XXjTXN" resolve="typedef" />
+            </node>
+          </node>
+          <node concept="3TrEf2" id="25Ap4XXma80" role="2OqNvi">
+            <ref role="3Tt5mk" to="6z8w:25Ap4XXjSpZ" resolve="originalType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="25Ap4XXm8r$" role="1YuTPh">
+      <property role="TrG5h" value="typedefType" />
+      <ref role="1YaFvo" to="6z8w:25Ap4XXjTXM" resolve="TypedefType" />
     </node>
   </node>
 </model>

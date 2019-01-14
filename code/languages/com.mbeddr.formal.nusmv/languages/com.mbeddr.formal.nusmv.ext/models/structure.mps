@@ -320,6 +320,7 @@
     <property role="TrG5h" value="TypedParameterDeclaration" />
     <property role="R4oN_" value="typed parameter of module" />
     <property role="34LRSv" value="typed parameter " />
+    <property role="3GE5qa" value="typed_parameter" />
     <ref role="1TJDcQ" to="gioj:6NmtaR1SULQ" resolve="ParameterDeclaration" />
     <node concept="1TJgyj" id="6NmtaR1SVeb" role="1TKVEi">
       <property role="IQ2ns" value="7842584090743387019" />
@@ -327,6 +328,39 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="25Ap4XXjSpU">
+    <property role="EcuMT" value="2406721343443666554" />
+    <property role="TrG5h" value="TypedefDeclaration" />
+    <property role="3GE5qa" value="udt.typedef" />
+    <property role="34LRSv" value="typedef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="25Ap4XXjSpV" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="25Ap4XXjSpW" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="1TJgyj" id="25Ap4XXjSpZ" role="1TKVEi">
+      <property role="IQ2ns" value="2406721343443666559" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="originalType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="25Ap4XXjTXM">
+    <property role="EcuMT" value="2406721343443672946" />
+    <property role="3GE5qa" value="udt.typedef" />
+    <property role="TrG5h" value="TypedefType" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="25Ap4XXjTXN" role="1TKVEi">
+      <property role="IQ2ns" value="2406721343443672947" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="typedef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="25Ap4XXjSpU" resolve="TypedefDeclaration" />
     </node>
   </node>
 </model>
