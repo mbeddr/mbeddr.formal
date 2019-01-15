@@ -319,5 +319,39 @@
       <ref role="1YaFvo" to="6z8w:25Ap4XXjTXM" resolve="TypedefType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="25Ap4XXr75U">
+    <property role="TrG5h" value="typeof_StructMemberRef" />
+    <property role="3GE5qa" value="udt.struct" />
+    <node concept="3clFbS" id="25Ap4XXr75V" role="18ibNy">
+      <node concept="1Z5TYs" id="25Ap4XXrarh" role="3cqZAp">
+        <node concept="mw_s8" id="25Ap4XXrayO" role="1ZfhKB">
+          <node concept="2OqwBi" id="25Ap4XXrbFp" role="mwGJk">
+            <node concept="2OqwBi" id="25Ap4XXraGk" role="2Oq$k0">
+              <node concept="1YBJjd" id="25Ap4XXrayM" role="2Oq$k0">
+                <ref role="1YBMHb" node="25Ap4XXr75X" resolve="structMemberRef" />
+              </node>
+              <node concept="3TrEf2" id="25Ap4XXrbl4" role="2OqNvi">
+                <ref role="3Tt5mk" to="6z8w:25Ap4XXqQPm" resolve="structMember" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="25Ap4XXrcFd" role="2OqNvi">
+              <ref role="3Tt5mk" to="6z8w:25Ap4XXqBHV" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="25Ap4XXrark" role="1ZfhK$">
+          <node concept="1Z2H0r" id="25Ap4XXra7I" role="mwGJk">
+            <node concept="1YBJjd" id="25Ap4XXra9B" role="1Z2MuG">
+              <ref role="1YBMHb" node="25Ap4XXr75X" resolve="structMemberRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="25Ap4XXr75X" role="1YuTPh">
+      <property role="TrG5h" value="structMemberRef" />
+      <ref role="1YaFvo" to="6z8w:25Ap4XXqQLW" resolve="StructMemberRef" />
+    </node>
+  </node>
 </model>
 

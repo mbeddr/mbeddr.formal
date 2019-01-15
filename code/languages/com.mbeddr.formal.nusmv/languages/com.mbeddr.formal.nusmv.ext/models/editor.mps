@@ -117,6 +117,7 @@
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -724,6 +725,115 @@
       <ref role="1NtTu8" to="6z8w:25Ap4XXjTXN" resolve="typedef" />
       <node concept="1sVBvm" id="25Ap4XXjTXT" role="1sWHZn">
         <node concept="3F0A7n" id="25Ap4XXjTY3" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="25Ap4XXqBHY">
+    <property role="3GE5qa" value="udt.struct" />
+    <ref role="1XX52x" to="6z8w:25Ap4XXqBHR" resolve="StructMemberDeclaration" />
+    <node concept="3EZMnI" id="25Ap4XXqBI0" role="2wV5jI">
+      <node concept="3F0A7n" id="25Ap4XXqBIe" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="25Ap4XXqBIn" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="25Ap4XXqBIG" role="3EZMnx">
+        <ref role="1NtTu8" to="6z8w:25Ap4XXqBHV" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="25Ap4XXqBIX" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="25Ap4XXqBJ7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="25Ap4XXqBI3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="25Ap4XXqBJa">
+    <property role="3GE5qa" value="udt.struct" />
+    <ref role="1XX52x" to="6z8w:25Ap4XXqBEq" resolve="StructDeclaration" />
+    <node concept="3EZMnI" id="25Ap4XXqBJc" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <node concept="3EZMnI" id="25Ap4XXqBJm" role="3EZMnx">
+        <node concept="VPM3Z" id="25Ap4XXqBJo" role="3F10Kt" />
+        <node concept="3F0ifn" id="25Ap4XXqBJ_" role="3EZMnx">
+          <property role="3F0ifm" value="struct" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="25Ap4XXqBJO" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="25Ap4XXqBK1" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="l2Vlx" id="25Ap4XXqBJr" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="25Ap4XXqBKo" role="3EZMnx">
+        <node concept="VPM3Z" id="25Ap4XXqBKq" role="3F10Kt" />
+        <node concept="3XFhqQ" id="25Ap4XXqBKN" role="3EZMnx" />
+        <node concept="3F2HdR" id="25Ap4XXqBKW" role="3EZMnx">
+          <ref role="1NtTu8" to="6z8w:25Ap4XXqBL9" resolve="members" />
+          <node concept="2iRkQZ" id="25Ap4XXqBKZ" role="2czzBx" />
+          <node concept="VPM3Z" id="25Ap4XXqBL0" role="3F10Kt" />
+        </node>
+        <node concept="l2Vlx" id="25Ap4XXqBKt" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="25Ap4XXqBM3" role="3EZMnx">
+        <node concept="VPM3Z" id="25Ap4XXqBM5" role="3F10Kt" />
+        <node concept="3F0ifn" id="25Ap4XXqBM7" role="3EZMnx">
+          <property role="3F0ifm" value="}" />
+        </node>
+        <node concept="l2Vlx" id="25Ap4XXqBM8" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="25Ap4XXqBJf" role="2iSdaV" />
+      <node concept="3EZMnI" id="25Ap4XXqBMG" role="AHCbl">
+        <node concept="VPM3Z" id="25Ap4XXqBMH" role="3F10Kt" />
+        <node concept="3F0ifn" id="25Ap4XXqBMI" role="3EZMnx">
+          <property role="3F0ifm" value="struct" />
+        </node>
+        <node concept="3F0A7n" id="25Ap4XXqBMJ" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="25Ap4XXqBMK" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="3F0ifn" id="25Ap4XXqBN7" role="3EZMnx">
+          <property role="3F0ifm" value="..." />
+          <node concept="VechU" id="25Ap4XXqBNC" role="3F10Kt">
+            <property role="Vb096" value="darkGray" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="25Ap4XXqBNs" role="3EZMnx">
+          <property role="3F0ifm" value="}" />
+        </node>
+        <node concept="l2Vlx" id="25Ap4XXqBML" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="25Ap4XXqBLg">
+    <property role="3GE5qa" value="udt.struct" />
+    <ref role="1XX52x" to="6z8w:25Ap4XXqBLc" resolve="StructType" />
+    <node concept="1iCGBv" id="25Ap4XXqBLi" role="2wV5jI">
+      <ref role="1NtTu8" to="6z8w:25Ap4XXqBLd" resolve="structDeclaration" />
+      <node concept="1sVBvm" id="25Ap4XXqBLk" role="1sWHZn">
+        <node concept="3F0A7n" id="25Ap4XXqBLy" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="25Ap4XXqQPp">
+    <property role="3GE5qa" value="udt.struct" />
+    <ref role="1XX52x" to="6z8w:25Ap4XXqQLW" resolve="StructMemberRef" />
+    <node concept="1iCGBv" id="25Ap4XXqQPr" role="2wV5jI">
+      <ref role="1NtTu8" to="6z8w:25Ap4XXqQPm" resolve="structMember" />
+      <node concept="1sVBvm" id="25Ap4XXqQPt" role="1sWHZn">
+        <node concept="3F0A7n" id="25Ap4XXqQPF" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>

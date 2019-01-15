@@ -363,5 +363,68 @@
       <ref role="20lvS9" node="25Ap4XXjSpU" resolve="TypedefDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="25Ap4XXqBEq">
+    <property role="EcuMT" value="2406721343445432986" />
+    <property role="3GE5qa" value="udt.struct" />
+    <property role="TrG5h" value="StructDeclaration" />
+    <property role="34LRSv" value="struct" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="25Ap4XXqBL9" role="1TKVEi">
+      <property role="IQ2ns" value="2406721343445433417" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="25Ap4XXqBHR" resolve="StructMemberDeclaration" />
+    </node>
+    <node concept="PrWs8" id="25Ap4XXqBHL" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="25Ap4XXqBHM" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="25Ap4XXqBHR">
+    <property role="EcuMT" value="2406721343445433207" />
+    <property role="3GE5qa" value="udt.struct" />
+    <property role="TrG5h" value="StructMemberDeclaration" />
+    <property role="34LRSv" value="member" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="25Ap4XXqBHV" role="1TKVEi">
+      <property role="IQ2ns" value="2406721343445433211" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="25Ap4XXqBHS" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="25Ap4XXqBLc">
+    <property role="EcuMT" value="2406721343445433420" />
+    <property role="3GE5qa" value="udt.struct" />
+    <property role="TrG5h" value="StructType" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="25Ap4XXqBLd" role="1TKVEi">
+      <property role="IQ2ns" value="2406721343445433421" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="structDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="25Ap4XXqBEq" resolve="StructDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="25Ap4XXqQLW">
+    <property role="EcuMT" value="2406721343445494908" />
+    <property role="3GE5qa" value="udt.struct" />
+    <property role="TrG5h" value="StructMemberRef" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+    <node concept="1TJgyj" id="25Ap4XXqQPm" role="1TKVEi">
+      <property role="IQ2ns" value="2406721343445495126" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="structMember" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="25Ap4XXqBHR" resolve="StructMemberDeclaration" />
+    </node>
+  </node>
 </model>
 
