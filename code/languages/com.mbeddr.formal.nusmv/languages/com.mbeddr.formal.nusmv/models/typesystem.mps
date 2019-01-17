@@ -563,7 +563,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="4Jpgh6IN5ik">
-    <property role="TrG5h" value="typeof_SimpleAssignment" />
+    <property role="TrG5h" value="typeof_AbstractAssignment" />
     <property role="3GE5qa" value="assign" />
     <node concept="3clFbS" id="4Jpgh6IN5il" role="18ibNy">
       <node concept="3cpWs8" id="4Jpgh6IN6ai" role="3cqZAp">
@@ -573,10 +573,10 @@
           <node concept="1Z2H0r" id="4Jpgh6IN6ak" role="33vP2m">
             <node concept="2OqwBi" id="4Jpgh6IN6al" role="1Z2MuG">
               <node concept="1YBJjd" id="4Jpgh6IN6am" role="2Oq$k0">
-                <ref role="1YBMHb" node="4Jpgh6IN5in" resolve="simpleAssignment" />
+                <ref role="1YBMHb" node="4Jpgh6IN5in" resolve="abstractAssignment" />
               </node>
-              <node concept="3TrEf2" id="4Jpgh6IN6MO" role="2OqNvi">
-                <ref role="3Tt5mk" to="gioj:41M_24lX26c" resolve="lhs" />
+              <node concept="3TrEf2" id="25Ap4XXtOnz" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:6NmtaR1V30B" resolve="lhs" />
               </node>
             </node>
           </node>
@@ -589,7 +589,7 @@
           <node concept="1Z2H0r" id="4Jpgh6IN6fB" role="33vP2m">
             <node concept="2OqwBi" id="4Jpgh6IN6fC" role="1Z2MuG">
               <node concept="1YBJjd" id="4Jpgh6IN6fD" role="2Oq$k0">
-                <ref role="1YBMHb" node="4Jpgh6IN5in" resolve="simpleAssignment" />
+                <ref role="1YBMHb" node="4Jpgh6IN5in" resolve="abstractAssignment" />
               </node>
               <node concept="3TrEf2" id="4Jpgh6IN6fE" role="2OqNvi">
                 <ref role="3Tt5mk" to="gioj:6NmtaR1V30H" resolve="rhs" />
@@ -631,8 +631,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="4Jpgh6IN5in" role="1YuTPh">
-      <property role="TrG5h" value="simpleAssignment" />
-      <ref role="1YaFvo" to="gioj:41M_24lX26b" resolve="SimpleAssignment" />
+      <property role="TrG5h" value="abstractAssignment" />
+      <ref role="1YaFvo" to="gioj:6NmtaR1UNOn" resolve="AbstractAssignment" />
     </node>
   </node>
   <node concept="35pCF_" id="25Ap4XXpIx6">
