@@ -66,6 +66,7 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -492,6 +493,9 @@
           <property role="3F0ifm" value="}" />
         </node>
         <node concept="l2Vlx" id="6NmtaR1UkLK" role="2iSdaV" />
+      </node>
+      <node concept="18a60v" id="25Ap4XXEh9a" role="3EZMnx">
+        <node concept="VPM3Z" id="25Ap4XXEh9c" role="3F10Kt" />
       </node>
       <node concept="3EZMnI" id="7mSH3Wnf9eC" role="AHCbl">
         <node concept="VPM3Z" id="7mSH3Wnf9eD" role="3F10Kt">
