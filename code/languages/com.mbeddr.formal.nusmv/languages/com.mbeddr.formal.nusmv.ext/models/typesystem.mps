@@ -353,5 +353,37 @@
       <ref role="1YaFvo" to="6z8w:25Ap4XXqQLW" resolve="StructMemberRef" />
     </node>
   </node>
+  <node concept="1YbPZF" id="25Ap4XXJVDN">
+    <property role="TrG5h" value="typeof_TypedParameterDeclaration" />
+    <property role="3GE5qa" value="typed_parameter" />
+    <node concept="3clFbS" id="25Ap4XXJVDO" role="18ibNy">
+      <node concept="1Z5TYs" id="25Ap4XXJVUh" role="3cqZAp">
+        <node concept="mw_s8" id="25Ap4XXJVUF" role="1ZfhKB">
+          <node concept="2OqwBi" id="25Ap4XXJXin" role="mwGJk">
+            <node concept="2OqwBi" id="25Ap4XXJW9l" role="2Oq$k0">
+              <node concept="1YBJjd" id="25Ap4XXJVUD" role="2Oq$k0">
+                <ref role="1YBMHb" node="25Ap4XXJVDQ" resolve="typedParameterDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="25Ap4XXJWyX" role="2OqNvi">
+                <ref role="3Tt5mk" to="6z8w:6NmtaR1SVeb" resolve="type" />
+              </node>
+            </node>
+            <node concept="1$rogu" id="25Ap4XXJXSz" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="25Ap4XXJVUk" role="1ZfhK$">
+          <node concept="1Z2H0r" id="25Ap4XXJVDU" role="mwGJk">
+            <node concept="1YBJjd" id="25Ap4XXJVFN" role="1Z2MuG">
+              <ref role="1YBMHb" node="25Ap4XXJVDQ" resolve="typedParameterDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="25Ap4XXJVDQ" role="1YuTPh">
+      <property role="TrG5h" value="typedParameterDeclaration" />
+      <ref role="1YaFvo" to="6z8w:4Jpgh6IGrD8" resolve="TypedParameterDeclaration" />
+    </node>
+  </node>
 </model>
 
