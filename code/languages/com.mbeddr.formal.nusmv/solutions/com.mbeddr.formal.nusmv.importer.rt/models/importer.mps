@@ -26,6 +26,7 @@
     <import index="v3yl" ref="18cd78f6-e870-412b-81e1-d3955c4ecc88/java:org.parboiled.trees(com.mbeddr.formal.nusmv.importer.rt/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
+    <import index="b76z" ref="f:diff_old#r:05f86b9b-63c3-4ff9-a22b-af6fdd8e5519(com.mbeddr.formal.nusmv.importer.rt.importer@old)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4566,6 +4567,12 @@
             <node concept="1rXfSq" id="4C19r4Aa2lI" role="37wK5m">
               <ref role="37wK5l" node="4C19r4A03z7" resolve="UnaryExpression" />
             </node>
+            <node concept="1rXfSq" id="TFRUGaYBRV" role="37wK5m">
+              <ref role="37wK5l" node="TFRUGaLjyT" resolve="BinaryCTLExpression" />
+            </node>
+            <node concept="1rXfSq" id="5ZNvf4VIYHI" role="37wK5m">
+              <ref role="37wK5l" node="4s2qLhXl2jC" resolve="BinaryLTLExpression" />
+            </node>
             <node concept="1rXfSq" id="4C19r4Aa2lK" role="37wK5m">
               <ref role="37wK5l" node="MGgg6OA4RZ" resolve="True" />
             </node>
@@ -4580,12 +4587,6 @@
             </node>
             <node concept="1rXfSq" id="41M_24mdu54" role="37wK5m">
               <ref role="37wK5l" node="41M_24md5Qk" resolve="SetExpression" />
-            </node>
-            <node concept="1rXfSq" id="TFRUGaYBRV" role="37wK5m">
-              <ref role="37wK5l" node="TFRUGaLjyT" resolve="BinaryCTLExpression" />
-            </node>
-            <node concept="1rXfSq" id="5ZNvf4VIYHI" role="37wK5m">
-              <ref role="37wK5l" node="4s2qLhXl2jC" resolve="BinaryLTLExpression" />
             </node>
           </node>
         </node>
@@ -5333,10 +5334,10 @@
             <node concept="1rXfSq" id="4s2qLhXsStk" role="3cqZAk">
               <ref role="37wK5l" to="6rs6:~BaseParser.Sequence(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="Sequence" />
               <node concept="1rXfSq" id="4s2qLhXsStl" role="37wK5m">
-                <ref role="37wK5l" node="4C19r4Aa2lE" resolve="Factor" />
+                <ref role="37wK5l" to="b76z:4C19r4Aa2lE" resolve="Factor" />
               </node>
               <node concept="1rXfSq" id="4s2qLhXsStm" role="37wK5m">
-                <ref role="37wK5l" node="3HDIapBsJXn" resolve="IgnoredCommentLines" />
+                <ref role="37wK5l" to="b76z:3HDIapBsJXn" resolve="IgnoredCommentLines" />
               </node>
               <node concept="2OqwBi" id="4s2qLhXsStn" role="37wK5m">
                 <node concept="liA8E" id="4s2qLhXsStz" role="2OqNvi">
@@ -5345,24 +5346,24 @@
                 <node concept="1rXfSq" id="4s2qLhXsYqY" role="2Oq$k0">
                   <ref role="37wK5l" to="6rs6:~BaseParser.FirstOf(java.lang.Object,java.lang.Object,java.lang.Object...):org.parboiled.Rule" resolve="FirstOf" />
                   <node concept="1rXfSq" id="4s2qLhXsYqZ" role="37wK5m">
-                    <ref role="37wK5l" node="4s2qLhXl2jl" resolve="U" />
+                    <ref role="37wK5l" to="b76z:4s2qLhXl2jl" resolve="U" />
                   </node>
                   <node concept="1rXfSq" id="4s2qLhXsYr0" role="37wK5m">
-                    <ref role="37wK5l" node="4s2qLhXl2j2" resolve="V" />
+                    <ref role="37wK5l" to="b76z:4s2qLhXl2j2" resolve="V" />
                   </node>
                   <node concept="1rXfSq" id="4s2qLhXsYr1" role="37wK5m">
-                    <ref role="37wK5l" node="4s2qLhXlReE" resolve="S" />
+                    <ref role="37wK5l" to="b76z:4s2qLhXlReE" resolve="S" />
                   </node>
                   <node concept="1rXfSq" id="4s2qLhXsYr2" role="37wK5m">
-                    <ref role="37wK5l" node="4s2qLhXmdpD" resolve="T" />
+                    <ref role="37wK5l" to="b76z:4s2qLhXmdpD" resolve="T" />
                   </node>
                 </node>
               </node>
               <node concept="1rXfSq" id="4s2qLhXsSt$" role="37wK5m">
-                <ref role="37wK5l" node="3HDIapBsJXn" resolve="IgnoredCommentLines" />
+                <ref role="37wK5l" to="b76z:3HDIapBsJXn" resolve="IgnoredCommentLines" />
               </node>
               <node concept="1rXfSq" id="4s2qLhXsSt_" role="37wK5m">
-                <ref role="37wK5l" node="MGgg6OyMdm" resolve="Expression" />
+                <ref role="37wK5l" to="b76z:MGgg6OyMdm" resolve="Expression" />
               </node>
             </node>
           </node>
