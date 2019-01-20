@@ -68,6 +68,9 @@
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
+        <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
+      </concept>
       <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
       <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
         <reference id="7842584090743943171" name="var" index="2He$iI" />
@@ -375,8 +378,8 @@
           <node concept="2He$iJ" id="L6k24q6Rxa" role="2He$ia">
             <ref role="2He$iI" node="L6k24q6RwM" resolve="last" />
           </node>
-          <node concept="2IPVmt" id="L6k24q6RwV" role="2He$i0">
-            <property role="2IPVms" value="0" />
+          <node concept="2HeeqP" id="3MfS0vPBM4G" role="2He$i0">
+            <ref role="2HeeqO" node="L6k24q6RwO" resolve="zero" />
           </node>
         </node>
         <node concept="sUyCV" id="L6k24q6RwY" role="2HfkAP">

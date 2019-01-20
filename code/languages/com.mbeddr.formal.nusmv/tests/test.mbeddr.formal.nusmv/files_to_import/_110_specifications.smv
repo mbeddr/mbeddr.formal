@@ -30,10 +30,7 @@ LTLSPEC Y o;
 LTLSPEC Z o;
 LTLSPEC H o;
 LTLSPEC NAME once_ltl_spec := O o;
--- ---------------
--- TODO: import binary LTL expressions
--- ---------------
---LTLSPEC v1 U o;
---LTLSPEC v1 V o;
---LTLSPEC v1 S o;
---LTLSPEC v1 T o;
+LTLSPEC v1 U o;
+LTLSPEC v1 V o;
+LTLSPEC v1 S o;
+LTLSPEC v1 T o;

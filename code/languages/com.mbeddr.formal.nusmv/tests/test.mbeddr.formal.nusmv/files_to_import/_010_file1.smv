@@ -10,7 +10,7 @@ DEFINE
 -- another comment line
 
 ASSIGN
-  init(last) := 0;
+  init(last) := zero;
 -- some inner comment
   next(last) := case
                   !par1: last;
