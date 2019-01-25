@@ -314,7 +314,7 @@
       <property role="20kJfa" value="lhs" />
       <property role="20lbJX" value="1" />
       <ref role="20ksaX" node="6NmtaR1V30B" resolve="lhs" />
-      <ref role="20lvS9" node="6oUHYl_Xm5W" resolve="AbstractVariableRef" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNOn">
