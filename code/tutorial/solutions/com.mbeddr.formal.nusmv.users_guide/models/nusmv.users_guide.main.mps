@@ -12,6 +12,7 @@
     <import index="s0k6" ref="r:7c8a192c-7615-4a1b-a608-a18a83365e6b(_010_features._070_nusmv_verification_cases)" />
     <import index="gma2" ref="r:9373994a-6064-48c9-8736-0c6a946eaa23(_010_features._500_nusmv_importer)" />
     <import index="2ufg" ref="r:d37bd9b7-40a1-410a-8148-61e2d84bead3(_010_features._300_nusmv_cbd)" />
+    <import index="w2ht" ref="r:7a8f5dbf-f084-4c9f-bfbe-b41ce5171f9d(_010_features._015_nusmv_ext)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -175,6 +176,23 @@
             </node>
           </node>
         </node>
+        <node concept="3X6T9g" id="25dEoZdod6f" role="3Xp5NH">
+          <node concept="OjmMv" id="25dEoZdod6g" role="3X6T9h">
+            <node concept="19SGf9" id="25dEoZdod6h" role="OjmMu">
+              <node concept="19SUe$" id="25dEoZdod6i" role="19SJt6" />
+              <node concept="1jUjqm" id="25dEoZdod6j" role="19SJt6">
+                <node concept="19SGf9" id="25dEoZdod6k" role="$DsGW">
+                  <node concept="19SUe$" id="25dEoZdod6l" role="19SJt6">
+                    <property role="19SUeA" value="com.mbeddr.formal.nusmv.ext" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="25dEoZdod6m" role="19SJt6">
+                <property role="19SUeA" value=" - provides extensions at the abstraction level of SMV to remove redundancy, increase the productivity and enable better IDE support " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3X6T9g" id="2mjHtwTu9nN" role="3Xp5NH">
           <node concept="OjmMv" id="2mjHtwTu9nO" role="3X6T9h">
             <node concept="19SGf9" id="2mjHtwTu9nP" role="OjmMu">
@@ -282,6 +300,12 @@
         <ref role="1_0j5g" node="2mjHtwTDzN4" resolve="_010_nusmv_base_language" />
       </node>
     </node>
+    <node concept="$CzcT" id="25dEoZdod3f" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
+      <node concept="1_0j5j" id="25dEoZdod6b" role="$CzcU">
+        <ref role="1_0j5g" node="25dEoZdocsX" resolve="_015_nusmv_ext_language" />
+      </node>
+    </node>
     <node concept="$CzcT" id="3slobAdyWAw" role="1_0VJ0">
       <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="3slobAdyWCQ" role="$CzcU">
@@ -344,6 +368,9 @@
     </node>
     <node concept="1_0j5j" id="3slobAdyWg6" role="1DXQ57">
       <ref role="1_0j5g" node="2mjHtwTDzN4" resolve="_010_nusmv_base_language" />
+    </node>
+    <node concept="1_0j5j" id="25dEoZdod02" role="1DXQ57">
+      <ref role="1_0j5g" node="25dEoZdocsX" resolve="_015_nusmv_ext_language" />
     </node>
     <node concept="1_0j5j" id="3slobAdyWge" role="1DXQ57">
       <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
@@ -1598,6 +1625,135 @@
           </node>
         </node>
         <node concept="2bctqb" id="1uIpCUuqhNj" role="3SHJ_F" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="25dEoZdocsX">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_015_nusmv_ext_language" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1mvXsy" id="25dEoZdocsY" role="1_0VJ0">
+      <property role="TrG5h" value="nusmv_ext" />
+      <property role="1_0VJr" value="NuSMV Extensions Language" />
+      <node concept="1_0LV8" id="25dEoZdocsZ" role="1_0VJ0">
+        <node concept="19SGf9" id="25dEoZdoct0" role="1_0LWR">
+          <node concept="19SUe$" id="25dEoZdoct1" role="19SJt6">
+            <property role="19SUeA" value="The language " />
+          </node>
+          <node concept="1jUjqm" id="25dEoZdoctz" role="19SJt6">
+            <node concept="19SGf9" id="25dEoZdoct$" role="$DsGW">
+              <node concept="19SUe$" id="25dEoZdoct_" role="19SJt6">
+                <property role="19SUeA" value="com.mbeddr.formal.nusmv.ext" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="25dEoZdoctA" role="19SJt6">
+            <property role="19SUeA" value=" provides several basic extensions of the SMV language with the following purposes: 1) reduce the redundancy of models; 2) allow richer type checks and IDE support " />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="25dEoZdocth" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_0VNX" id="25dEoZdocti" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_ext_typed_parameters" />
+        <property role="1_0VJr" value="Optional Types for Module Parameters" />
+        <node concept="1_0LV8" id="25dEoZdoctj" role="1_0VJ0">
+          <node concept="19SGf9" id="25dEoZdoctk" role="1_0LWR">
+            <node concept="19SUe$" id="25dEoZdoctl" role="19SJt6">
+              <property role="19SUeA" value="We provide the option to define typed to module parameters. Whenever types are defined, corresponding type checks are available.&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="25dEoZdocte" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="25dEoZdoctf" role="3z_lpI">
+            <node concept="2NCMab" id="25dEoZdocy1" role="2NCMaf">
+              <ref role="2NCMaa" to="w2ht:25dEoZdoc1T" resolve="_010_typed_parameters" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="25dEoZdocy5" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_ext_udt_typedefs" />
+        <property role="1_0VJr" value="Type Aliases" />
+        <node concept="1_0LV8" id="25dEoZdocy6" role="1_0VJ0">
+          <node concept="19SGf9" id="25dEoZdocy7" role="1_0LWR">
+            <node concept="19SUe$" id="25dEoZdocy8" role="19SJt6">
+              <property role="19SUeA" value="In order to capture explicitly the intent of a certain type, FASTEN allows the definition of aliases for it using a " />
+            </node>
+            <node concept="1jUjqm" id="25dEoZdoczU" role="19SJt6">
+              <node concept="19SGf9" id="25dEoZdoczV" role="$DsGW">
+                <node concept="19SUe$" id="25dEoZdoczW" role="19SJt6">
+                  <property role="19SUeA" value="typedef" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="25dEoZdoczX" role="19SJt6">
+              <property role="19SUeA" value=". An alias works effectively as a subtype - thereby, two variables with types defined by two typedefs cannot be assigned to each other. For example, in the figure below, one cannot assign " />
+            </node>
+            <node concept="1jUjqm" id="25dEoZdoc$c" role="19SJt6">
+              <node concept="19SGf9" id="25dEoZdoc$d" role="$DsGW">
+                <node concept="19SUe$" id="25dEoZdoc$e" role="19SJt6">
+                  <property role="19SUeA" value="time" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="25dEoZdoc$f" role="19SJt6">
+              <property role="19SUeA" value=" to " />
+            </node>
+            <node concept="1jUjqm" id="25dEoZdoc$y" role="19SJt6">
+              <node concept="19SGf9" id="25dEoZdoc$z" role="$DsGW">
+                <node concept="19SUe$" id="25dEoZdoc$$" role="19SJt6">
+                  <property role="19SUeA" value="my_dist" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="25dEoZdoc$_" role="19SJt6">
+              <property role="19SUeA" value=".&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="25dEoZdocy9" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="25dEoZdocya" role="3z_lpI">
+            <node concept="2NCMab" id="25dEoZdoc$8" role="2NCMaf">
+              <ref role="2NCMaa" to="w2ht:25dEoZdobXZ" resolve="_020_udt_typedef" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="25dEoZdocyT" role="1_0VJ0">
+        <property role="TrG5h" value="nusmv_ext_udt_structs" />
+        <property role="1_0VJr" value="Structured Types" />
+        <node concept="1_0LV8" id="25dEoZdocyU" role="1_0VJ0">
+          <node concept="19SGf9" id="25dEoZdocyV" role="1_0LWR">
+            <node concept="19SUe$" id="25dEoZdocyW" role="19SJt6">
+              <property role="19SUeA" value="FASTEN allows the definition of user defined structured types which are reduced into SMV as modules. The structure members are reduced as variables of the modules. Using " />
+            </node>
+            <node concept="1jUjqm" id="25dEoZdoc_0" role="19SJt6">
+              <node concept="19SGf9" id="25dEoZdoc_1" role="$DsGW">
+                <node concept="19SUe$" id="25dEoZdoc_2" role="19SJt6">
+                  <property role="19SUeA" value="struct" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="25dEoZdoc_3" role="19SJt6">
+              <property role="19SUeA" value=" types drastically shorten the number of parameters of modules. " />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="25dEoZdocYN" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="25dEoZdocyX" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="25dEoZdocyY" role="3z_lpI">
+            <node concept="2NCMab" id="25dEoZdocYJ" role="2NCMaf">
+              <ref role="2NCMaa" to="w2ht:25dEoZdoc_e" resolve="_020_udt_structs" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
