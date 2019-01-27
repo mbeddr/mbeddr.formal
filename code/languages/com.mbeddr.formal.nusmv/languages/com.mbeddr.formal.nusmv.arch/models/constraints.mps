@@ -533,7 +533,7 @@
                 <node concept="2Rf3mk" id="4H8XLSF4k7_" role="2OqNvi">
                   <node concept="1xMEDy" id="4H8XLSF4k7A" role="1xVPHs">
                     <node concept="chp4Y" id="4H8XLSF4kvA" role="ri$Ld">
-                      <ref role="cht4Q" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
+                      <ref role="cht4Q" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
                     </node>
                   </node>
                 </node>

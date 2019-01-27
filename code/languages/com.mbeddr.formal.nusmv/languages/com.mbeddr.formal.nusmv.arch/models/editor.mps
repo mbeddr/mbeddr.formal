@@ -5525,7 +5525,7 @@
   </node>
   <node concept="24kQdi" id="4H8XLSF4jU5">
     <property role="3GE5qa" value="tables" />
-    <ref role="1XX52x" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
+    <ref role="1XX52x" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
     <node concept="3EZMnI" id="4H8XLSF4jU7" role="2wV5jI">
       <node concept="3F0ifn" id="4H8XLSF4jUh" role="3EZMnx">
         <property role="3F0ifm" value="output" />

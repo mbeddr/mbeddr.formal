@@ -62,7 +62,7 @@
   <node concept="1TIwiD" id="2CFqY3vt_tZ">
     <property role="EcuMT" value="3038640987157452671" />
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="FunctionValueContent" />
+    <property role="TrG5h" value="FunctionValueDeclaration" />
     <property role="34LRSv" value="function value definition" />
     <property role="R4oN_" value="function definition" />
     <ref role="1TJDcQ" to="gioj:7mSH3WmVxaO" resolve="VariableDeclarationBase" />
@@ -82,7 +82,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="functionValueContent" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueContent" />
+      <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
       <ref role="20ksaX" to="gioj:2mjHtwTKxtS" resolve="definitionLike" />
     </node>
     <node concept="PrWs8" id="2mjHtwTKxWE" role="PzmwI">
@@ -98,7 +98,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="functionValue" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueContent" />
+      <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
     </node>
   </node>
 </model>

@@ -120,11 +120,11 @@
   </node>
   <node concept="1TIwiD" id="4H8XLSF4jPm">
     <property role="EcuMT" value="5424857460111392086" />
-    <property role="TrG5h" value="OutputFunctionValueContent" />
+    <property role="TrG5h" value="OutputFunctionValueDeclaration" />
     <property role="34LRSv" value="output" />
     <property role="R4oN_" value="function value acting as an output port" />
     <property role="3GE5qa" value="tables" />
-    <ref role="1TJDcQ" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+    <ref role="1TJDcQ" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
     <node concept="PrWs8" id="7Z6$Wo5LyPg" role="PzmwI">
       <ref role="PrY4T" node="7Z6$Wo5LyDF" resolve="IOutputPortLike" />
     </node>
@@ -139,7 +139,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="output" />
       <ref role="20ksaX" to="jx4r:2mjHtwTIKk$" resolve="functionValueContent" />
-      <ref role="20lvS9" node="4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
+      <ref role="20lvS9" node="4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
     </node>
     <node concept="PrWs8" id="4H8XLSF5JSn" role="PzmwI">
       <ref role="PrY4T" node="4H8XLSF4ddZ" resolve="IOutputPortLikeRef" />

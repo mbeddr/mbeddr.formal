@@ -144,7 +144,7 @@
   </node>
   <node concept="1M2fIO" id="2mjHtwTGpMQ">
     <property role="3GE5qa" value="" />
-    <ref role="1M2myG" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+    <ref role="1M2myG" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
     <node concept="9S07l" id="2mjHtwTGpMR" role="9Vyp8">
       <node concept="3clFbS" id="2mjHtwTGpMS" role="2VODD2">
         <node concept="3clFbF" id="2mjHtwTGpU7" role="3cqZAp">
@@ -209,7 +209,7 @@
                 <node concept="2Rf3mk" id="2zzTeYj2j2o" role="2OqNvi">
                   <node concept="1xMEDy" id="2zzTeYj2j2q" role="1xVPHs">
                     <node concept="chp4Y" id="2mjHtwTILY0" role="ri$Ld">
-                      <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+                      <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -245,7 +245,7 @@
                 <node concept="2Rf3mk" id="7Z6$Wo5MNoF" role="2OqNvi">
                   <node concept="1xMEDy" id="7Z6$Wo5MNoH" role="1xVPHs">
                     <node concept="chp4Y" id="7Z6$Wo5MNwk" role="ri$Ld">
-                      <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+                      <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
                     </node>
                   </node>
                 </node>

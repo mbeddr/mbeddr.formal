@@ -518,7 +518,7 @@
   <node concept="2S6QgY" id="4H8XLSF5fT2">
     <property role="TrG5h" value="convertFunctionValueContentToOutput" />
     <property role="3GE5qa" value="tables" />
-    <ref role="2ZfgGC" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+    <ref role="2ZfgGC" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
     <node concept="2S6ZIM" id="4H8XLSF5fT3" role="2ZfVej">
       <node concept="3clFbS" id="4H8XLSF5fT4" role="2VODD2">
         <node concept="3clFbF" id="4H8XLSF5fT5" role="3cqZAp">
@@ -535,7 +535,7 @@
             <property role="TrG5h" value="myRefs" />
             <node concept="A3Dl8" id="4H8XLSF5fTb" role="1tU5fm">
               <node concept="3Tqbb2" id="4H8XLSF5fTc" role="A3Ik2">
-                <ref role="ehGHo" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentRef" />
+                <ref role="ehGHo" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
               </node>
             </node>
             <node concept="2OqwBi" id="4H8XLSF5fTd" role="33vP2m">
@@ -546,7 +546,7 @@
                 </node>
                 <node concept="2SmgA7" id="4H8XLSF5fTi" role="2OqNvi">
                   <node concept="chp4Y" id="4H8XLSF5i9X" role="1dBWTz">
-                    <ref role="cht4Q" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentRef" />
+                    <ref role="cht4Q" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
                   </node>
                 </node>
               </node>
@@ -580,11 +580,11 @@
           <node concept="3cpWsn" id="4H8XLSF5fTQ" role="3cpWs9">
             <property role="TrG5h" value="out" />
             <node concept="3Tqbb2" id="4H8XLSF5fTR" role="1tU5fm">
-              <ref role="ehGHo" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
+              <ref role="ehGHo" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
             </node>
             <node concept="2pJPEk" id="4H8XLSF5fTS" role="33vP2m">
               <node concept="2pJPED" id="4H8XLSF5fTT" role="2pJPEn">
-                <ref role="2pJxaS" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
+                <ref role="2pJxaS" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
                 <node concept="2pJxcG" id="4H8XLSF5fTU" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                   <node concept="2OqwBi" id="4H8XLSF5fTV" role="2pJxcZ">
@@ -652,7 +652,7 @@
             </node>
             <node concept="3O6GUB" id="4H8XLSF5fUA" role="2OqNvi">
               <node concept="chp4Y" id="4H8XLSF5hyA" role="3QVz_e">
-                <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+                <ref role="cht4Q" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
               </node>
             </node>
           </node>
@@ -663,7 +663,7 @@
   <node concept="2S6QgY" id="4H8XLSF5LD8">
     <property role="TrG5h" value="convertOutputFunctionValueContentToFunctionValueContent" />
     <property role="3GE5qa" value="tables" />
-    <ref role="2ZfgGC" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
+    <ref role="2ZfgGC" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
     <node concept="2S6ZIM" id="4H8XLSF5LD9" role="2ZfVej">
       <node concept="3clFbS" id="4H8XLSF5LDa" role="2VODD2">
         <node concept="3clFbF" id="4H8XLSF5LDb" role="3cqZAp">
@@ -725,11 +725,11 @@
           <node concept="3cpWsn" id="4H8XLSF5LDA" role="3cpWs9">
             <property role="TrG5h" value="fvc" />
             <node concept="3Tqbb2" id="4H8XLSF5LDB" role="1tU5fm">
-              <ref role="ehGHo" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+              <ref role="ehGHo" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
             </node>
             <node concept="2pJPEk" id="4H8XLSF5RqA" role="33vP2m">
               <node concept="2pJPED" id="4H8XLSF5Rxu" role="2pJPEn">
-                <ref role="2pJxaS" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+                <ref role="2pJxaS" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
                 <node concept="2pJxcG" id="4H8XLSF5RG8" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                   <node concept="2OqwBi" id="4H8XLSF5Sjq" role="2pJxcZ">
@@ -759,7 +759,7 @@
                 <node concept="1P9Npp" id="4H8XLSF5LDU" role="2OqNvi">
                   <node concept="2pJPEk" id="4H8XLSF5LDV" role="1P9ThW">
                     <node concept="2pJPED" id="4H8XLSF5LDW" role="2pJPEn">
-                      <ref role="2pJxaS" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentRef" />
+                      <ref role="2pJxaS" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
                       <node concept="2pIpSj" id="4H8XLSF5LDX" role="2pJxcM">
                         <ref role="2pIpSl" to="jx4r:2mjHtwTIKk$" resolve="functionValueContent" />
                         <node concept="36biLy" id="4H8XLSF5LDY" role="2pJxcZ">
