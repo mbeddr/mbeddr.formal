@@ -97,6 +97,9 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="expressions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="25dEoZdxzMW" role="PzmwI">
+      <ref role="PrY4T" node="1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1W9oL">
     <property role="EcuMT" value="7842584090744231473" />
@@ -191,9 +194,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
-    <node concept="PrWs8" id="1gJVC85JI6$" role="PzmwI">
-      <ref role="PrY4T" node="1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR20s4K">
     <property role="EcuMT" value="7842584090745356592" />

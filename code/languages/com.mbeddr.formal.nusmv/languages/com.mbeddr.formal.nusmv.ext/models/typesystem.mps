@@ -18,6 +18,10 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -29,6 +33,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -36,6 +41,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -268,6 +274,45 @@
           <node concept="3x8VRR" id="26dfgZmiMSf" role="2OqNvi" />
         </node>
         <node concept="3clFbS" id="26dfgZmiLJH" role="3clFbx">
+          <node concept="3cpWs8" id="25dEoZdxy3w" role="3cqZAp">
+            <node concept="3cpWsn" id="25dEoZdxy3z" role="3cpWs9">
+              <property role="TrG5h" value="staticallyEvaluatable" />
+              <node concept="10P_77" id="25dEoZdxy3u" role="1tU5fm" />
+              <node concept="3clFbT" id="25dEoZdxy4I" role="33vP2m" />
+            </node>
+          </node>
+          <node concept="Jncv_" id="25dEoZdxxLG" role="3cqZAp">
+            <ref role="JncvD" to="ehqg:1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
+            <node concept="3clFbS" id="25dEoZdxxLK" role="Jncv$">
+              <node concept="3clFbF" id="25dEoZdxy4T" role="3cqZAp">
+                <node concept="37vLTI" id="25dEoZdxymy" role="3clFbG">
+                  <node concept="2OqwBi" id="25dEoZdxywc" role="37vLTx">
+                    <node concept="Jnkvi" id="25dEoZdxymQ" role="2Oq$k0">
+                      <ref role="1M0zk5" node="25dEoZdxxLM" resolve="se" />
+                    </node>
+                    <node concept="2qgKlT" id="25dEoZdxIuW" role="2OqNvi">
+                      <ref role="37wK5l" to="ox2v:25dEoZdxyU1" resolve="isStaticallyEvaluatable" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="25dEoZdxy4S" role="37vLTJ">
+                    <ref role="3cqZAo" node="25dEoZdxy3z" resolve="staticallyEvaluatable" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="25dEoZdxxLM" role="JncvA">
+              <property role="TrG5h" value="se" />
+              <node concept="2jxLKc" id="25dEoZdxxLN" role="1tU5fm" />
+            </node>
+            <node concept="2OqwBi" id="25dEoZdxxMw" role="JncvB">
+              <node concept="1YBJjd" id="25dEoZdxxMx" role="2Oq$k0">
+                <ref role="1YBMHb" node="26dfgZmiLJm" resolve="constantDefinition" />
+              </node>
+              <node concept="3TrEf2" id="25dEoZdxxMy" role="2OqNvi">
+                <ref role="3Tt5mk" to="6z8w:1gJVC85EQXB" resolve="value" />
+              </node>
+            </node>
+          </node>
           <node concept="2Mj0R9" id="26dfgZmiMUa" role="3cqZAp">
             <node concept="Xl_RD" id="26dfgZmiNIr" role="2MkJ7o">
               <property role="Xl_RC" value="value must be statically evaluatable" />
@@ -280,20 +325,8 @@
                 <ref role="3Tt5mk" to="6z8w:1gJVC85EQXB" resolve="value" />
               </node>
             </node>
-            <node concept="2OqwBi" id="26dfgZmiNko" role="2MkoU_">
-              <node concept="2OqwBi" id="26dfgZmiMUy" role="2Oq$k0">
-                <node concept="1YBJjd" id="26dfgZmiMUz" role="2Oq$k0">
-                  <ref role="1YBMHb" node="26dfgZmiLJm" resolve="constantDefinition" />
-                </node>
-                <node concept="3TrEf2" id="26dfgZmiMU$" role="2OqNvi">
-                  <ref role="3Tt5mk" to="6z8w:1gJVC85EQXB" resolve="value" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="26dfgZmiNDz" role="2OqNvi">
-                <node concept="chp4Y" id="26dfgZmiNFD" role="cj9EA">
-                  <ref role="cht4Q" to="ehqg:1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="25dEoZdxIJ$" role="2MkoU_">
+              <ref role="3cqZAo" node="25dEoZdxy3z" resolve="staticallyEvaluatable" />
             </node>
           </node>
         </node>

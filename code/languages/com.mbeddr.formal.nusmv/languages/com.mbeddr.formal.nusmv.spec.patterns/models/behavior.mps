@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="aoh3" ref="r:f2f03ae8-d8d7-4909-bf68-6c512b1415d7(com.mbeddr.formal.nusmv.spec.patterns.structure)" implicit="true" />
   </imports>
   <registry>
@@ -35,6 +36,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -49,6 +51,9 @@
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -227,6 +232,26 @@
         </node>
       </node>
       <node concept="17QB3L" id="6xNJt7lIOiS" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="25dEoZdLqXc">
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <ref role="13h7C2" to="aoh3:6WmpcHMKsaj" resolve="AbstractProperty" />
+    <node concept="13hLZK" id="25dEoZdLqXd" role="13h7CW">
+      <node concept="3clFbS" id="25dEoZdLqXe" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="25dEoZdLqXn" role="13h7CS">
+      <property role="TrG5h" value="evaluateStatically" />
+      <ref role="13i0hy" to="ox2v:26dfgZmiDpi" resolve="evaluateStatically" />
+      <node concept="3Tm1VV" id="25dEoZdLqXo" role="1B3o_S" />
+      <node concept="3clFbS" id="25dEoZdLqXr" role="3clF47">
+        <node concept="3clFbF" id="25dEoZdLqXu" role="3cqZAp">
+          <node concept="10Nm6u" id="25dEoZdLqXt" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="25dEoZdLqXs" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
     </node>
   </node>
 </model>

@@ -463,7 +463,7 @@
     <property role="TrG5h" value="ModExpression" />
     <property role="34LRSv" value="mod" />
     <property role="R4oN_" value="mod expression" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="1IrBcRpiDGl">
     <property role="EcuMT" value="1989356068341979925" />
@@ -1410,7 +1410,7 @@
     <property role="TrG5h" value="MaxExpression" />
     <property role="34LRSv" value="max" />
     <property role="R4oN_" value="max expression" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="Kom1UAKzux">
     <property role="EcuMT" value="871543416566200225" />
@@ -1418,7 +1418,7 @@
     <property role="TrG5h" value="MinExpression" />
     <property role="34LRSv" value="min" />
     <property role="R4oN_" value="min expression" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
   </node>
   <node concept="1TIwiD" id="59AZjhfZW2w">
     <property role="EcuMT" value="5937711559856865440" />
@@ -1620,7 +1620,7 @@
     <property role="TrG5h" value="IffExpression" />
     <property role="34LRSv" value="&lt;-&gt;" />
     <property role="R4oN_" value="if and only if" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+    <ref role="1TJDcQ" to="ehqg:57ROGn90yFJ" resolve="IffExpressionBase" />
   </node>
   <node concept="PlHQZ" id="2_LXzlpoj8Y">
     <property role="EcuMT" value="2986438736916591166" />

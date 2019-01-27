@@ -116,11 +116,8 @@
   </node>
   <node concept="1TIwiD" id="1WSRfTw4Sme">
     <property role="EcuMT" value="2249790998963258766" />
-    <property role="TrG5h" value="NotReifed" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1uMmOZFQPHS" role="PzmwI">
-      <ref role="PrY4T" to="ehqg:1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
-    </node>
+    <property role="TrG5h" value="NotReified" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyi" id="1uMmOZFQRMq" role="1TKVEl">
       <property role="IQ2nx" value="1707527607544413338" />
       <property role="TrG5h" value="text" />

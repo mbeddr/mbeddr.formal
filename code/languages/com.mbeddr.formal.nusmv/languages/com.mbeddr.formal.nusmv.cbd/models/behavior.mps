@@ -12,6 +12,7 @@
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
     <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -43,6 +44,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -80,6 +82,9 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -741,6 +746,26 @@
       </node>
       <node concept="3Tqbb2" id="2_LXzlpomDr" role="3clF45">
         <ref role="ehGHo" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="25dEoZdLnRc">
+    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <ref role="13h7C2" to="vzqj:7RhjhI7$lgW" resolve="ConnectionPart" />
+    <node concept="13hLZK" id="25dEoZdLnRd" role="13h7CW">
+      <node concept="3clFbS" id="25dEoZdLnRe" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="25dEoZdLnRn" role="13h7CS">
+      <property role="TrG5h" value="evaluateStatically" />
+      <ref role="13i0hy" to="ox2v:26dfgZmiDpi" resolve="evaluateStatically" />
+      <node concept="3Tm1VV" id="25dEoZdLnRo" role="1B3o_S" />
+      <node concept="3clFbS" id="25dEoZdLnRr" role="3clF47">
+        <node concept="3clFbF" id="25dEoZdLnRu" role="3cqZAp">
+          <node concept="10Nm6u" id="25dEoZdLnRt" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="25dEoZdLnRs" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
     </node>
   </node>

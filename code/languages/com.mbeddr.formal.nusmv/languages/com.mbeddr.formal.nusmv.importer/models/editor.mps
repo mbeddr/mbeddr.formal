@@ -381,7 +381,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1uMmOZFQU8r">
-    <ref role="1XX52x" to="l8i4:1WSRfTw4Sme" resolve="NotReifed" />
+    <ref role="1XX52x" to="l8i4:1WSRfTw4Sme" resolve="NotReified" />
     <node concept="3EZMnI" id="1uMmOZFQUcB" role="2wV5jI">
       <node concept="3F0ifn" id="1uMmOZFQUet" role="3EZMnx">
         <property role="3F0ifm" value="$" />
@@ -485,7 +485,7 @@
     <ref role="aqKnT" to="l8i4:5Rx4RPFVY8u" resolve="NotReifiedVarRef" />
   </node>
   <node concept="3p36aQ" id="7Z6$Wo5U5o5">
-    <ref role="aqKnT" to="l8i4:1WSRfTw4Sme" resolve="NotReifed" />
+    <ref role="aqKnT" to="l8i4:1WSRfTw4Sme" resolve="NotReified" />
   </node>
   <node concept="3p36aQ" id="70Z3iwfl66g">
     <ref role="aqKnT" to="l8i4:41yfEs6hm3y" resolve="ImporterWarning" />

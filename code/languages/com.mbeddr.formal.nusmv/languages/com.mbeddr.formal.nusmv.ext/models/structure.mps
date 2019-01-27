@@ -98,9 +98,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1gJVC85EQiq" resolve="ConstantDefinition" />
     </node>
-    <node concept="PrWs8" id="1gJVC85JI6E" role="PzmwI">
-      <ref role="PrY4T" to="ehqg:1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1gJVC85KmLe">
     <property role="EcuMT" value="1454643446873680974" />
