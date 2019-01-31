@@ -706,7 +706,7 @@
     <property role="TrG5h" value="FairnessSection" />
     <property role="34LRSv" value="FAIRNESS" />
     <property role="3GE5qa" value="fairness" />
-    <property role="R4oN_" value="fairness section" />
+    <property role="R4oN_" value="fairness constraints" />
     <ref role="1TJDcQ" node="41M_24m3X$o" resolve="AbstractFairnessSection" />
     <node concept="1TJgyj" id="7mSH3Wnduvy" role="1TKVEi">
       <property role="IQ2ns" value="8482728081217677282" />
@@ -717,6 +717,15 @@
     </node>
     <node concept="PrWs8" id="7mSH3Wnduvv" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
+    </node>
+    <node concept="1irR5M" id="4RNGGOMKqQB" role="rwd14">
+      <property role="2$rrk2" value="12" />
+      <node concept="1irPie" id="4RNGGOMKqQI" role="1irR9h">
+        <property role="1irPi9" value="F" />
+        <node concept="3PKj8D" id="4RNGGOMKqQJ" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3Wndu_4">
@@ -783,6 +792,15 @@
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7mSH3WnuJCF" resolve="IInitContent" />
+    </node>
+    <node concept="1irR5M" id="4RNGGOMKqQO" role="rwd14">
+      <property role="2$rrk2" value="13" />
+      <node concept="1irPie" id="4RNGGOMKqQU" role="1irR9h">
+        <property role="1irPi9" value="I" />
+        <node concept="3PKj8D" id="4RNGGOMKqQV" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="7mSH3WnuJCF">
@@ -854,6 +872,15 @@
     </node>
     <node concept="PrWs8" id="7mSH3WnvMF2" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
+    </node>
+    <node concept="1irR5M" id="4RNGGOMKuvc" role="rwd14">
+      <property role="2$rrk2" value="15" />
+      <node concept="1irPie" id="4RNGGOMKuvi" role="1irR9h">
+        <property role="1irPi9" value="T" />
+        <node concept="3PKj8D" id="4RNGGOMKuvj" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WnvMF5">
@@ -1299,8 +1326,17 @@
     <property role="3GE5qa" value="spec" />
     <property role="TrG5h" value="CTLSpecSection" />
     <property role="34LRSv" value="CTLSPEC" />
-    <property role="R4oN_" value="CTLSPEC section" />
+    <property role="R4oN_" value="CTL specification" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
+    <node concept="1irR5M" id="4RNGGOMKnfb" role="rwd14">
+      <property role="2$rrk2" value="11" />
+      <node concept="1irPie" id="4RNGGOMKnfi" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="4RNGGOMKnfj" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="6WmpcHMQvoC">
     <property role="EcuMT" value="8004696212665660968" />
@@ -1427,6 +1463,15 @@
     <property role="34LRSv" value="INVARSPEC" />
     <property role="R4oN_" value="INVARSPEC section" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
+    <node concept="1irR5M" id="4RNGGOMKqR3" role="rwd14">
+      <property role="2$rrk2" value="14" />
+      <node concept="1irPie" id="4RNGGOMKqR9" role="1irR9h">
+        <property role="1irPi9" value="I" />
+        <node concept="3PKj8D" id="4RNGGOMKqRa" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Uhgr">
     <property role="EcuMT" value="9133754867501306907" />
@@ -1463,8 +1508,17 @@
     <property role="3GE5qa" value="spec" />
     <property role="TrG5h" value="LTLSpecSection" />
     <property role="34LRSv" value="LTLSPEC" />
-    <property role="R4oN_" value="LTLSPEC section" />
+    <property role="R4oN_" value="LTL specification" />
     <ref role="1TJDcQ" node="6WmpcHMKsPT" resolve="AbstractSpecSection" />
+    <node concept="1irR5M" id="4RNGGOMKuv$" role="rwd14">
+      <property role="2$rrk2" value="17" />
+      <node concept="1irPie" id="4RNGGOMKuvE" role="1irR9h">
+        <property role="1irPi9" value="L" />
+        <node concept="3PKj8D" id="4RNGGOMKuvF" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="PlHQZ" id="7V1Bqz6Uid_">
     <property role="EcuMT" value="9133754867501310821" />
@@ -1646,6 +1700,7 @@
     <property role="EcuMT" value="4643937035597371672" />
     <property role="3GE5qa" value="fairness" />
     <property role="TrG5h" value="AbstractFairnessSection" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="41M_24m3X$p" role="PzmwI">
       <ref role="PrY4T" node="6NmtaR1UNLQ" resolve="IModuleContent" />
@@ -1659,6 +1714,7 @@
     <property role="3GE5qa" value="fairness" />
     <property role="TrG5h" value="JusticeSection" />
     <property role="34LRSv" value="JUSTICE" />
+    <property role="R4oN_" value="justice constraints" />
     <ref role="1TJDcQ" node="41M_24m3X$o" resolve="AbstractFairnessSection" />
     <node concept="1TJgyj" id="41M_24m3YT_" role="1TKVEi">
       <property role="IQ2ns" value="4643937035597377125" />
@@ -1667,12 +1723,22 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
+    <node concept="1irR5M" id="4RNGGOMKuvo" role="rwd14">
+      <property role="2$rrk2" value="16" />
+      <node concept="1irPie" id="4RNGGOMKuvu" role="1irR9h">
+        <property role="1irPi9" value="J" />
+        <node concept="3PKj8D" id="4RNGGOMKuvv" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="41M_24m3Zf5">
     <property role="EcuMT" value="4643937035597378501" />
     <property role="3GE5qa" value="fairness" />
     <property role="TrG5h" value="CompassionSection" />
     <property role="34LRSv" value="COMPASSION" />
+    <property role="R4oN_" value="compassion constraints" />
     <ref role="1TJDcQ" node="41M_24m3X$o" resolve="AbstractFairnessSection" />
     <node concept="1TJgyj" id="41M_24m3Zf6" role="1TKVEi">
       <property role="IQ2ns" value="4643937035597378502" />
@@ -1687,6 +1753,15 @@
       <property role="20kJfa" value="q" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1irR5M" id="4RNGGOMKnem" role="rwd14">
+      <property role="2$rrk2" value="10" />
+      <node concept="1irPie" id="4RNGGOMKnf2" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="4RNGGOMKnf3" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1trCN7lf1tL">

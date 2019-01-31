@@ -68,6 +68,15 @@
     <node concept="PrWs8" id="7RhjhI7HXf3" role="PzmwI">
       <ref role="PrY4T" to="3whv:7RhjhI7HWfF" resolve="IArchitectureLike" />
     </node>
+    <node concept="1irR5M" id="4RNGGOMK_jX" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="4RNGGOMKqQI" role="1irR9h">
+        <property role="1irPi9" value="W" />
+        <node concept="3PKj8D" id="4RNGGOMKqQJ" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="43FRfGJQZfY">
     <property role="EcuMT" value="4678075609352238078" />
