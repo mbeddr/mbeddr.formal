@@ -9,6 +9,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" implicit="true" />
     <import index="jtif" ref="r:f2229be8-ee62-4a08-97c9-cec128495d06(com.mbeddr.formal.nusmv.cbd.behavior)" implicit="true" />
+    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -38,6 +39,9 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -274,6 +278,26 @@
                   <node concept="chp4Y" id="57ROGn938yB" role="v3oSu">
                     <ref role="cht4Q" to="vzqj:7RhjhI7$liw" resolve="Instance" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4RNGGOMKy95">
+    <property role="3GE5qa" value="contracts" />
+    <ref role="1M2myG" to="vzqj:7RhjhI7cKj$" resolve="ContractBase" />
+    <node concept="9S07l" id="4RNGGOMKy96" role="9Vyp8">
+      <node concept="3clFbS" id="4RNGGOMKy97" role="2VODD2">
+        <node concept="3clFbF" id="4RNGGOMKygu" role="3cqZAp">
+          <node concept="3fqX7Q" id="4RNGGOMK$km" role="3clFbG">
+            <node concept="2OqwBi" id="4RNGGOMK$ko" role="3fr31v">
+              <node concept="nLn13" id="4RNGGOMK$kp" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="4RNGGOMK$kq" role="2OqNvi">
+                <node concept="chp4Y" id="4RNGGOMK$kr" role="cj9EA">
+                  <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
                 </node>
               </node>
             </node>
