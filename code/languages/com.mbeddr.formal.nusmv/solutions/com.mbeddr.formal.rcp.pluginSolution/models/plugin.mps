@@ -19,10 +19,6 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
-        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
-        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
-      </concept>
       <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
         <property id="2756621024541681854" name="text" index="1irPi9" />
         <child id="1860120738943552534" name="color" index="3PKjny" />
@@ -31,7 +27,6 @@
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
-      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
@@ -185,7 +180,7 @@
   <node concept="2DaZZR" id="6iM0fX1N45m" />
   <node concept="sE7Ow" id="5tRIc6mkOfA">
     <property role="TrG5h" value="FASTENNewModel" />
-    <property role="2uzpH1" value="New NuSMV Model" />
+    <property role="2uzpH1" value="New SMV Model" />
     <node concept="1DS2jV" id="5tRIc6mmlHg" role="1NuT2Z">
       <property role="TrG5h" value="module" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
@@ -354,14 +349,6 @@
     </node>
     <node concept="1irR5M" id="Vtw49fIz9l" role="3Uehp1">
       <property role="2$rrk2" value="1" />
-      <node concept="1irR9n" id="Vtw49fIzj8" role="1irR9h">
-        <node concept="3PKj8D" id="Vtw49fIzjn" role="3PKjn_">
-          <property role="3PKj8l" value="778899" />
-        </node>
-        <node concept="3PKj8D" id="Vtw49fIC1C" role="3PKjnB">
-          <property role="3PKj8l" value="FF0000" />
-        </node>
-      </node>
       <node concept="1irPie" id="Vtw49fIzjE" role="1irR9h">
         <property role="1irPi9" value="ℕ" />
         <node concept="3PKj8D" id="Vtw49fIzjX" role="3PKjny">
