@@ -424,6 +424,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="4RNGGOMRcKA" role="3cqZAp">
+          <node concept="3clFbS" id="4RNGGOMRcKB" role="3clFbx">
+            <node concept="3cpWs6" id="4RNGGOMRcKC" role="3cqZAp">
+              <node concept="3clFbT" id="4RNGGOMRcKD" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4RNGGOMRcKE" role="3clFbw">
+            <node concept="37vLTw" id="4RNGGOMRcKF" role="2Oq$k0">
+              <ref role="3cqZAo" node="3ZkhnXRnVlT" resolve="qualifiedConceptName" />
+            </node>
+            <node concept="liA8E" id="4RNGGOMRcKG" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <node concept="Xl_RD" id="4RNGGOMRcKH" role="37wK5m">
+                <property role="Xl_RC" value="jetbrains.mps.lang.test" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="3ZkhnXRnI6F" role="3cqZAp" />
         <node concept="3cpWs6" id="3ZkhnXRn2qW" role="3cqZAp">
           <node concept="3clFbT" id="3ZkhnXRn2te" role="3cqZAk">
