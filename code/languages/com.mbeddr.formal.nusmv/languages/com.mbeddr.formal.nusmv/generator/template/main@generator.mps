@@ -89,6 +89,9 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -140,6 +143,7 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+      <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
   <node concept="bUwia" id="6NmtaR1SUCX">
@@ -316,8 +320,18 @@
               <node concept="2GrKxI" id="2xeYpNCinyY" role="2Gsz3X">
                 <property role="TrG5h" value="dm" />
               </node>
-              <node concept="37vLTw" id="2xeYpNCin_i" role="2GsD0m">
-                <ref role="3cqZAo" node="2xeYpNCiiE9" resolve="allDependentModules" />
+              <node concept="2OqwBi" id="4RNGGOMQRpA" role="2GsD0m">
+                <node concept="2OqwBi" id="4RNGGOMQJC6" role="2Oq$k0">
+                  <node concept="37vLTw" id="2xeYpNCin_i" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2xeYpNCiiE9" resolve="allDependentModules" />
+                  </node>
+                  <node concept="1VAtEI" id="4RNGGOMQNjL" role="2OqNvi" />
+                </node>
+                <node concept="v3k3i" id="4RNGGOMQTIY" role="2OqNvi">
+                  <node concept="chp4Y" id="4RNGGOMQTJ_" role="v3oSu">
+                    <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+                  </node>
+                </node>
               </node>
               <node concept="3clFbS" id="2xeYpNCinz2" role="2LFqv$">
                 <node concept="3clFbJ" id="Kom1UAD8g$" role="3cqZAp">
