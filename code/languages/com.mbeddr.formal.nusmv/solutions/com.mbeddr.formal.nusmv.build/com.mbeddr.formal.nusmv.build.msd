@@ -12,6 +12,7 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)</dependency>
+    <dependency reexport="false">d599fae5-4709-4828-943d-5c57296d1034(com.mbeddr.formal.rcp.tips_and_tricks)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" version="0" />
@@ -25,6 +26,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="cbbb9e79-84e5-4c2e-b1a2-11a381c7baf9(com.mbeddr.allInOne)" version="0" />
     <module reference="7125ed76-a460-4b0f-b95b-a899f99488d6(com.mbeddr.formal.nusmv.build)" version="0" />
+    <module reference="d599fae5-4709-4828-943d-5c57296d1034(com.mbeddr.formal.rcp.tips_and_tricks)" version="0" />
     <module reference="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
