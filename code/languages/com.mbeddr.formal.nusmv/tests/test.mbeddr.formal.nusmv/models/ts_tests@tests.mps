@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
   <imports>
@@ -405,8 +403,8 @@
               <node concept="32Ogvo" id="25Ap4XXm8iz" role="2He$i0">
                 <ref role="32Ogvr" node="25Ap4XXm8d2" resolve="interv" />
               </node>
-              <node concept="7CXmI" id="25Ap4XXm8mx" role="lGtFl">
-                <node concept="2DdRWr" id="25Ap4XXm8nC" role="7EUXB" />
+              <node concept="7CXmI" id="4RNGGOMQgbf" role="lGtFl">
+                <node concept="1TM$A" id="4RNGGOMQgbg" role="7EUXB" />
               </node>
             </node>
             <node concept="2HeLW8" id="25Ap4XXm8nS" role="2HfkAP" />
@@ -426,7 +424,7 @@
                 <ref role="2He$iI" node="25Ap4XXm8ov" resolve="my_untyped_len" />
               </node>
               <node concept="7CXmI" id="25Ap4XXmc5O" role="lGtFl">
-                <node concept="2DdRWr" id="25Ap4XXmc73" role="7EUXB" />
+                <node concept="1TM$A" id="4RNGGOMQhMK" role="7EUXB" />
               </node>
             </node>
             <node concept="2HeLW8" id="25Ap4XXmd19" role="2HfkAP" />
@@ -446,7 +444,7 @@
                 <ref role="2He$iI" node="25Ap4XXm8dS" resolve="my_interv_1" />
               </node>
               <node concept="7CXmI" id="25Ap4XXqy2L" role="lGtFl">
-                <node concept="2DdRWr" id="25Ap4XXqy5l" role="7EUXB" />
+                <node concept="1TM$A" id="4RNGGOMQhN9" role="7EUXB" />
               </node>
             </node>
             <node concept="2HeLW8" id="25Ap4XXK3wn" role="2HfkAP" />
@@ -462,10 +460,9 @@
               <node concept="2He$iJ" id="25Ap4XXTro2" role="2He$ia">
                 <ref role="2He$iI" node="25Ap4XXm84J" resolve="my_len" />
               </node>
-              <node concept="1yCjRe" id="25Ap4XXTrq0" role="2He$i0">
-                <node concept="7CXmI" id="25Ap4XXTr_G" role="lGtFl">
-                  <node concept="2DdRWr" id="25Ap4XXTrEW" role="7EUXB" />
-                </node>
+              <node concept="1yCjRe" id="25Ap4XXTrq0" role="2He$i0" />
+              <node concept="7CXmI" id="4RNGGOMPTqP" role="lGtFl">
+                <node concept="2DdRWr" id="4RNGGOMPTrP" role="7EUXB" />
               </node>
             </node>
             <node concept="1lxFmE" id="25Ap4XXK9fW" role="2HfkAP">
