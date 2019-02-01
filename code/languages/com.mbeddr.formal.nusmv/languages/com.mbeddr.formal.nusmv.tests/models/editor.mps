@@ -37,6 +37,9 @@
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
+        <child id="1176795024817" name="cellProvider" index="3YsKMw" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -69,9 +72,6 @@
       </concept>
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
-      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
-        <property id="1139746504291" name="imageFile" index="1ubRXE" />
-      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -101,6 +101,7 @@
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
+      <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -426,8 +427,22 @@
         <node concept="VPM3Z" id="43FRfGJUEvc" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="1u4HXA" id="5_V$TJxC_wJ" role="3EZMnx">
-          <property role="1ubRXE" value="${module}/icons/tests.png" />
+        <node concept="gc7cB" id="14CuINs5Us6" role="3EZMnx">
+          <node concept="3VJUX4" id="14CuINs5Us8" role="3YsKMw">
+            <node concept="3clFbS" id="14CuINs5Usa" role="2VODD2">
+              <node concept="3clFbF" id="14CuINs5Uvr" role="3cqZAp">
+                <node concept="2ShNRf" id="14CuINs5Uvp" role="3clFbG">
+                  <node concept="1pGfFk" id="14CuINs5UTp" role="2ShVmc">
+                    <ref role="37wK5l" to="xnej:DubiFB4e4X" resolve="IconCell" />
+                    <node concept="pncrf" id="14CuINs5UXj" role="37wK5m" />
+                    <node concept="3cmrfG" id="14CuINs5Vdl" role="37wK5m">
+                      <property role="3cmrfH" value="3" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0ifn" id="5_V$TJxCEzz" role="3EZMnx" />
         <node concept="3F0ifn" id="43FRfGJUEvx" role="3EZMnx">
