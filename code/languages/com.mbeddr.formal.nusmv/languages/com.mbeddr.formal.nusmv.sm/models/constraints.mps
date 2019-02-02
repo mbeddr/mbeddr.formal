@@ -272,6 +272,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="2obHvWSblXe" role="3cqZAp">
+          <node concept="3clFbS" id="2obHvWSblXf" role="3clFbx">
+            <node concept="3cpWs6" id="2obHvWSblXg" role="3cqZAp">
+              <node concept="3clFbT" id="2obHvWSblXh" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2obHvWSblXi" role="3clFbw">
+            <node concept="37vLTw" id="2obHvWSblXj" role="2Oq$k0">
+              <ref role="3cqZAo" node="3ZkhnXRnVlT" resolve="qualifiedConceptName" />
+            </node>
+            <node concept="liA8E" id="2obHvWSblXk" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <node concept="Xl_RD" id="2obHvWSblXl" role="37wK5m">
+                <property role="Xl_RC" value="jetbrains.mps.lang.test" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="1$vmWKMrvzN" role="3cqZAp" />
         <node concept="3clFbF" id="1$vmWKMqIfY" role="3cqZAp">
           <node concept="22lmx$" id="1gJVC85EFcl" role="3clFbG">

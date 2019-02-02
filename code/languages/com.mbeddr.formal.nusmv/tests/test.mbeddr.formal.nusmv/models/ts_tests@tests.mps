@@ -52,6 +52,24 @@
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
+    <language id="c1b1e23f-b677-40b8-a490-e192dd8d78e5" name="com.mbeddr.formal.nusmv.sm">
+      <concept id="4512297433099947043" name="com.mbeddr.formal.nusmv.sm.structure.StateMachineSection" flags="ng" index="2aiEES" />
+      <concept id="4512297433100004846" name="com.mbeddr.formal.nusmv.sm.structure.StateVariableDeclaration" flags="ng" index="2aiWHP" />
+      <concept id="5536191589039475538" name="com.mbeddr.formal.nusmv.sm.structure.StateRef" flags="ng" index="1tS8IT">
+        <reference id="5536191589039475610" name="state" index="1tS8HL" />
+      </concept>
+      <concept id="5536191589039258301" name="com.mbeddr.formal.nusmv.sm.structure.StateMachineType" flags="ng" index="1tT3Dm" />
+      <concept id="5536191589039454450" name="com.mbeddr.formal.nusmv.sm.structure.Transition" flags="ng" index="1tTNwp">
+        <child id="3570309108902455711" name="stateVarRef" index="3JXa2C" />
+        <child id="3570309108902117744" name="fromState" index="3JZSx7" />
+      </concept>
+      <concept id="5536191589039455159" name="com.mbeddr.formal.nusmv.sm.structure.TransitionsAssignment" flags="ng" index="1tTNHs" />
+      <concept id="5536191589039455651" name="com.mbeddr.formal.nusmv.sm.structure.Transitions" flags="ng" index="1tTNP8" />
+      <concept id="5536191589039455550" name="com.mbeddr.formal.nusmv.sm.structure.StateVariableRef" flags="ng" index="1tTNRl">
+        <reference id="5536191589039455622" name="var" index="1tTNPH" />
+      </concept>
+      <concept id="5536191589039199144" name="com.mbeddr.formal.nusmv.sm.structure.State" flags="ng" index="1tYPd3" />
+    </language>
     <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
       <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
       <concept id="4599377533215110828" name="com.mbeddr.formal.nusmv.arch.structure.ModulesWiringSection" flags="ng" index="18TFfj" />
@@ -65,7 +83,17 @@
       <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
         <property id="2707707741261637861" name="documentation" index="sUxOX" />
       </concept>
+      <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
+        <child id="7842584090744231304" name="value" index="2H9I4_" />
+        <child id="7842584090744231298" name="guard" index="2H9I4J" />
+      </concept>
+      <concept id="7842584090744230922" name="com.mbeddr.formal.nusmv.structure.CaseExpression" flags="ng" index="2H9I2B">
+        <child id="7842584090744230924" name="cases" index="2H9I2x" />
+      </concept>
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
+      <concept id="7842584090743391222" name="com.mbeddr.formal.nusmv.structure.EnumerationType" flags="ng" index="2Hdrtr">
+        <child id="7842584090743391224" name="members" index="2Hdrtl" />
+      </concept>
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
         <child id="7842584090743387019" name="type" index="2HdssA" />
@@ -1039,6 +1067,124 @@
           </node>
         </node>
         <node concept="2SQmWS" id="25dEoZdlpJf" role="2HcuB8" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="2obHvWSbfms">
+    <property role="TrG5h" value="_100_tests_sm_init_variables" />
+    <node concept="1LZb2c" id="2obHvWSbjYc" role="1SL9yI">
+      <property role="TrG5h" value="test_sm_variable_initialization" />
+      <node concept="3cqZAl" id="2obHvWSbjYd" role="3clF45" />
+      <node concept="3clFbS" id="2obHvWSbjYh" role="3clF47">
+        <node concept="3Ca1qy" id="2obHvWSbk2A" role="3cqZAp">
+          <node concept="3xONca" id="2obHvWSbk2G" role="3qv8fS">
+            <ref role="3xOPvv" node="2obHvWSbjU5" resolve="state_machines" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2obHvWSbfmt" role="1SKRRt">
+      <node concept="2HdtXS" id="2obHvWSbfmu" role="1qenE9">
+        <property role="TrG5h" value="dummy" />
+        <node concept="2Hdtz0" id="2obHvWSbfmv" role="2HcuB8">
+          <property role="TrG5h" value="tic_tac_1" />
+          <node concept="2Hfkzq" id="2obHvWSbftk" role="2HcbjO">
+            <node concept="2aiWHP" id="2obHvWSbfth" role="2Hfkx9">
+              <property role="TrG5h" value="my_state" />
+              <node concept="1tT3Dm" id="2obHvWSbfti" role="2HdssA">
+                <node concept="1tYPd3" id="2obHvWSbftg" role="2Hdrtl">
+                  <property role="TrG5h" value="Tic" />
+                </node>
+                <node concept="1tYPd3" id="2obHvWSbftj" role="2Hdrtl">
+                  <property role="TrG5h" value="Tac" />
+                </node>
+              </node>
+            </node>
+            <node concept="2Hdskp" id="2obHvWSbjtW" role="2Hfkx9">
+              <property role="TrG5h" value="v1" />
+              <node concept="dhpfj" id="2obHvWSbjuk" role="2HdssA">
+                <node concept="2IPVmt" id="2obHvWSbjuj" role="dhpfi">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="2IPVmt" id="2obHvWSbjuO" role="dhpfn">
+                  <property role="2IPVms" value="10" />
+                </node>
+              </node>
+            </node>
+            <node concept="sUyCV" id="2obHvWSbjDq" role="2Hfkx9">
+              <property role="sUxOX" value="v2 is not initialized =&gt; error" />
+            </node>
+            <node concept="2Hdskp" id="2obHvWSbjvM" role="2Hfkx9">
+              <property role="TrG5h" value="v2" />
+              <node concept="dhpfj" id="2obHvWSbjwi" role="2HdssA">
+                <node concept="2IPVmt" id="2obHvWSbjwh" role="dhpfi">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="2IPVmt" id="2obHvWSbjwM" role="dhpfn">
+                  <property role="2IPVms" value="100" />
+                </node>
+              </node>
+              <node concept="7CXmI" id="2obHvWSbjCr" role="lGtFl">
+                <node concept="1TM$A" id="2obHvWSbjCs" role="7EUXB" />
+              </node>
+            </node>
+          </node>
+          <node concept="2aiEES" id="2obHvWSbftl" role="2HcbjO">
+            <node concept="2HfkAV" id="2obHvWSbftm" role="2HfkAP">
+              <node concept="1tTNRl" id="2obHvWSbftn" role="2He$ia">
+                <ref role="1tTNPH" node="2obHvWSbfth" resolve="my_state" />
+              </node>
+              <node concept="1tS8IT" id="2obHvWSbfto" role="2He$i0">
+                <ref role="1tS8HL" node="2obHvWSbftg" resolve="Tic" />
+              </node>
+            </node>
+            <node concept="1tTNHs" id="2obHvWSbftp" role="2HfkAP">
+              <node concept="1tTNRl" id="2obHvWSbftq" role="2He$ia">
+                <ref role="1tTNPH" node="2obHvWSbfth" resolve="my_state" />
+              </node>
+              <node concept="1tTNP8" id="2obHvWSbftr" role="2He$i0">
+                <node concept="1tTNwp" id="2obHvWSbjnl" role="2H9I2x">
+                  <property role="TrG5h" value="tic2tac" />
+                  <node concept="1tTNRl" id="2obHvWSbjnn" role="3JXa2C">
+                    <ref role="1tTNPH" node="2obHvWSbfth" resolve="my_state" />
+                  </node>
+                  <node concept="1tS8IT" id="2obHvWSbjrf" role="3JZSx7">
+                    <ref role="1tS8HL" node="2obHvWSbftg" resolve="Tic" />
+                  </node>
+                  <node concept="1yCjRe" id="2obHvWSbjrr" role="2H9I4J" />
+                  <node concept="1tS8IT" id="2obHvWSbjry" role="2H9I4_">
+                    <ref role="1tS8HL" node="2obHvWSbftj" resolve="Tac" />
+                  </node>
+                </node>
+                <node concept="1tTNwp" id="2obHvWSbjrA" role="2H9I2x">
+                  <property role="TrG5h" value="tic2tac" />
+                  <node concept="1tTNRl" id="2obHvWSbjrB" role="3JXa2C">
+                    <ref role="1tTNPH" node="2obHvWSbfth" resolve="my_state" />
+                  </node>
+                  <node concept="1tS8IT" id="2obHvWSbjs4" role="3JZSx7">
+                    <ref role="1tS8HL" node="2obHvWSbftj" resolve="Tac" />
+                  </node>
+                  <node concept="1yCjRe" id="2obHvWSbjrD" role="2H9I4J" />
+                  <node concept="1tS8IT" id="2obHvWSbjs8" role="2H9I4_">
+                    <ref role="1tS8HL" node="2obHvWSbftg" resolve="Tic" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2HfkAV" id="2obHvWSbjzL" role="2HfkAP">
+              <node concept="2He$iJ" id="2obHvWSbj$_" role="2He$ia">
+                <ref role="2He$iI" node="2obHvWSbjtW" resolve="v1" />
+              </node>
+              <node concept="2IPVmt" id="2obHvWSbj$R" role="2He$i0">
+                <property role="2IPVms" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2SQmWS" id="2obHvWSbfmW" role="2HcuB8" />
+        <node concept="3xLA65" id="2obHvWSbjU5" role="lGtFl">
+          <property role="TrG5h" value="state_machines" />
+        </node>
       </node>
     </node>
   </node>
