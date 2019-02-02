@@ -428,14 +428,14 @@
       <property role="IQ2ns" value="7842584090744231298" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="guard" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="6NmtaR1W9m8" role="1TKVEi">
       <property role="IQ2ns" value="7842584090744231304" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="3cHtG5tVuHA" role="PzmwI">
@@ -1644,7 +1644,8 @@
     <property role="EcuMT" value="3687734242762943338" />
     <property role="3GE5qa" value="expressions.case" />
     <property role="TrG5h" value="EmptySingleCase" />
-    <property role="34LRSv" value="empty" />
+    <property role="34LRSv" value="empty line" />
+    <property role="R4oN_" value="empty line" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3cHtG5tVuIf" role="PzmwI">
       <ref role="PrY4T" node="3cHtG5tVuGX" resolve="ISingleCaseLike" />

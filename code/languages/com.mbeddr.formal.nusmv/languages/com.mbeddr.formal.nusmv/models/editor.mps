@@ -2384,5 +2384,9 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="2obHvWScaYM">
+    <property role="3GE5qa" value="expressions.case" />
+    <ref role="aqKnT" to="gioj:3cHtG5tVuHE" resolve="EmptySingleCase" />
+  </node>
 </model>
 

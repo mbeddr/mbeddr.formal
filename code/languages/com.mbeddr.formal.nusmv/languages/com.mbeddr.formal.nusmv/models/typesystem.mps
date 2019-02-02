@@ -130,11 +130,18 @@
       <concept id="1175147569072" name="jetbrains.mps.lang.typesystem.structure.AbstractSubtypingRule" flags="ig" index="2sgdUx">
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
@@ -1268,6 +1275,60 @@
     <node concept="1YaCAy" id="25Ap4XXIZBm" role="1YuTPh">
       <property role="TrG5h" value="moduleType" />
       <ref role="1YaFvo" to="gioj:7mSH3WmWrHX" resolve="ModuleType" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2obHvWSeLmG">
+    <property role="TrG5h" value="check_SingleCase" />
+    <property role="3GE5qa" value="expressions.case" />
+    <node concept="3clFbS" id="2obHvWSeLmH" role="18ibNy">
+      <node concept="2Mj0R9" id="2obHvWSeLmN" role="3cqZAp">
+        <node concept="2OqwBi" id="2obHvWSeMqe" role="2MkoU_">
+          <node concept="2OqwBi" id="2obHvWSeLxF" role="2Oq$k0">
+            <node concept="1YBJjd" id="2obHvWSeLnb" role="2Oq$k0">
+              <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
+            </node>
+            <node concept="3TrEf2" id="2obHvWSeM2t" role="2OqNvi">
+              <ref role="3Tt5mk" to="gioj:6NmtaR1W9m2" resolve="guard" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="2obHvWSeNaI" role="2OqNvi" />
+        </node>
+        <node concept="Xl_RD" id="2obHvWSeNd7" role="2MkJ7o">
+          <property role="Xl_RC" value="guard must not be empty" />
+        </node>
+        <node concept="1YBJjd" id="2obHvWSeNjp" role="2OEOjV">
+          <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
+        </node>
+        <node concept="2OE7Q9" id="2obHvWSf9lJ" role="2OEWyd">
+          <ref role="2OEe5H" to="gioj:6NmtaR1W9m2" resolve="guard" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="2obHvWSeNpe" role="3cqZAp">
+        <node concept="2OqwBi" id="2obHvWSeNpf" role="2MkoU_">
+          <node concept="2OqwBi" id="2obHvWSeNpg" role="2Oq$k0">
+            <node concept="1YBJjd" id="2obHvWSeNph" role="2Oq$k0">
+              <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
+            </node>
+            <node concept="3TrEf2" id="2obHvWSeNPz" role="2OqNvi">
+              <ref role="3Tt5mk" to="gioj:6NmtaR1W9m8" resolve="value" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="2obHvWSeNpj" role="2OqNvi" />
+        </node>
+        <node concept="Xl_RD" id="2obHvWSeNpk" role="2MkJ7o">
+          <property role="Xl_RC" value="value must not be empty" />
+        </node>
+        <node concept="1YBJjd" id="2obHvWSeNpl" role="2OEOjV">
+          <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
+        </node>
+        <node concept="2OE7Q9" id="2obHvWSf9xY" role="2OEWyd">
+          <ref role="2OEe5H" to="gioj:6NmtaR1W9m8" resolve="value" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2obHvWSeLmJ" role="1YuTPh">
+      <property role="TrG5h" value="singleCase" />
+      <ref role="1YaFvo" to="gioj:6NmtaR1W9gb" resolve="SingleCase" />
     </node>
   </node>
 </model>
