@@ -22,6 +22,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tc27" ref="r:92d28f3c-6acc-431a-94ba-30cd184d2da4(de.itemis.mps.editor.diagram.runtime.substitute)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -210,6 +211,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -242,6 +244,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -326,6 +329,11 @@
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
       </concept>
+      <concept id="7464726264122071752" name="de.itemis.mps.editor.diagram.structure.Function_GetShape" flags="ig" index="2x7_8O" />
+      <concept id="7464726264117247548" name="de.itemis.mps.editor.diagram.structure.ShapeDefinition" flags="ng" index="2xDbr0">
+        <child id="7464726264122072737" name="getShape" index="2x7_pt" />
+      </concept>
+      <concept id="7464726264117281947" name="de.itemis.mps.editor.diagram.structure.Parameter_Bounds" flags="ng" index="2xDkLB" />
       <concept id="7464726264117677937" name="de.itemis.mps.editor.diagram.structure.ShapeReference" flags="ng" index="2xQOud">
         <reference id="7464726264117677938" name="shape" index="2xQOue" />
         <child id="3454709602159778495" name="parameterValues" index="1xbcaF" />
@@ -590,8 +598,8 @@
                 </node>
               </node>
             </node>
-            <node concept="2xQOud" id="3UuTDIOQ5Mr" role="3Uta5s">
-              <ref role="2xQOue" to="wo6c:4Te4zGtlJMP" resolve="Ellipsis" />
+            <node concept="2xQOud" id="2obHvWSlb12" role="3Uta5s">
+              <ref role="2xQOue" node="4Te4zGtlJMP" resolve="RoundedRectangle" />
             </node>
           </node>
           <node concept="2M4Efz" id="4NkweGhcUBU" role="aCds2">
@@ -2585,6 +2593,51 @@
             <node concept="3cpWs6" id="25Ap4XXG6IL" role="3cqZAp">
               <node concept="3clFbT" id="25Ap4XXG722" role="3cqZAk">
                 <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2xDbr0" id="4Te4zGtlJMP">
+    <property role="TrG5h" value="RoundedRectangle" />
+    <node concept="2x7_8O" id="4Te4zGtlJMQ" role="2x7_pt">
+      <node concept="3clFbS" id="4Te4zGtlJMR" role="2VODD2">
+        <node concept="3clFbH" id="2obHvWSl1Y_" role="3cqZAp" />
+        <node concept="3clFbF" id="2obHvWSl26s" role="3cqZAp">
+          <node concept="2ShNRf" id="2obHvWSl2eZ" role="3clFbG">
+            <node concept="1pGfFk" id="2obHvWSl2fg" role="2ShVmc">
+              <ref role="37wK5l" to="fbzs:~RoundRectangle2D$Double.&lt;init&gt;(double,double,double,double,double,double)" resolve="RoundRectangle2D.Double" />
+              <node concept="2OqwBi" id="2obHvWSl2s$" role="37wK5m">
+                <node concept="2xDkLB" id="2obHvWSl2s_" role="2Oq$k0" />
+                <node concept="liA8E" id="2obHvWSl2sA" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getX():double" resolve="getX" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2obHvWSl2Ea" role="37wK5m">
+                <node concept="2xDkLB" id="2obHvWSl2Eb" role="2Oq$k0" />
+                <node concept="liA8E" id="2obHvWSl2Ec" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getY():double" resolve="getY" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2obHvWSl4v9" role="37wK5m">
+                <node concept="2xDkLB" id="2obHvWSl3QB" role="2Oq$k0" />
+                <node concept="liA8E" id="2obHvWSl5L6" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth():double" resolve="getWidth" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2obHvWSl87j" role="37wK5m">
+                <node concept="2xDkLB" id="2obHvWSl7r6" role="2Oq$k0" />
+                <node concept="liA8E" id="2obHvWSl9bz" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight():double" resolve="getHeight" />
+                </node>
+              </node>
+              <node concept="3cmrfG" id="2obHvWSl2fl" role="37wK5m">
+                <property role="3cmrfH" value="20" />
+              </node>
+              <node concept="3cmrfG" id="2obHvWSl2fm" role="37wK5m">
+                <property role="3cmrfH" value="20" />
               </node>
             </node>
           </node>
