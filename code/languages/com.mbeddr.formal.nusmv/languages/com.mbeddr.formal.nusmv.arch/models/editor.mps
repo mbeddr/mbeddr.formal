@@ -56,7 +56,6 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
-      <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -112,7 +111,7 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -549,7 +548,6 @@
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
-      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="2xDbr0" id="7z30MUmeewT">
@@ -3156,6 +3154,7 @@
               <node concept="3EZMnI" id="7YSFuvpnG5e" role="2wV5jI">
                 <node concept="2iRkQZ" id="7YSFuvpnG5f" role="2iSdaV" />
                 <node concept="3EZMnI" id="7YSFuvpoYUN" role="3EZMnx">
+                  <property role="1cu_pB" value="2" />
                   <node concept="l2Vlx" id="7YSFuvpoYUO" role="2iSdaV" />
                   <node concept="3F0A7n" id="7YSFuvpnJfi" role="3EZMnx">
                     <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -3878,25 +3877,6 @@
             <node concept="238au4" id="1$vmWKMmbBS" role="3kqczz">
               <node concept="PMmxH" id="1$vmWKMmbLR" role="2wV5jI">
                 <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
-              </node>
-            </node>
-          </node>
-          <node concept="pkWqt" id="5sbrvaL3g4q" role="pqm2j">
-            <node concept="3clFbS" id="5sbrvaL3g4r" role="2VODD2">
-              <node concept="3clFbF" id="5sbrvaL3hft" role="3cqZAp">
-                <node concept="2OqwBi" id="5sbrvaL3mcW" role="3clFbG">
-                  <node concept="2OqwBi" id="5sbrvaL3htY" role="2Oq$k0">
-                    <node concept="pncrf" id="5sbrvaL3hfs" role="2Oq$k0" />
-                    <node concept="2Rf3mk" id="5sbrvaL3jmN" role="2OqNvi">
-                      <node concept="1xMEDy" id="5sbrvaL3jmP" role="1xVPHs">
-                        <node concept="chp4Y" id="5sbrvaL3jYk" role="ri$Ld">
-                          <ref role="cht4Q" to="gioj:7mSH3WmWrHX" resolve="ModuleType" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3GX2aA" id="5sbrvaL3qMl" role="2OqNvi" />
-                </node>
               </node>
             </node>
           </node>
