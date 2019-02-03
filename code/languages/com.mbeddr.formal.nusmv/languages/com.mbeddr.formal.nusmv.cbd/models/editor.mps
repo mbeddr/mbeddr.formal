@@ -3359,7 +3359,7 @@
                 <ref role="1Y3XeK" to="nkm5:5BPceOJSo9l" resolve="SNodeConnectionType" />
                 <node concept="3Tm1VV" id="43FRfGJOAWr" role="1B3o_S" />
                 <node concept="Xl_RD" id="43FRfGJOAWs" role="37wK5m">
-                  <property role="Xl_RC" value="" />
+                  <property role="Xl_RC" value="Channel" />
                 </node>
                 <node concept="3clFb_" id="43FRfGJOAWt" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -3634,7 +3634,7 @@
                 <ref role="1Y3XeK" to="nkm5:5BPceOJSo9l" resolve="SNodeConnectionType" />
                 <node concept="3Tm1VV" id="43FRfGJPDUR" role="1B3o_S" />
                 <node concept="Xl_RD" id="43FRfGJPDUS" role="37wK5m">
-                  <property role="Xl_RC" value="" />
+                  <property role="Xl_RC" value="Channel" />
                 </node>
                 <node concept="3clFb_" id="43FRfGJPDUT" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -3920,7 +3920,7 @@
                 <ref role="1Y3XeK" to="nkm5:5BPceOJSo9l" resolve="SNodeConnectionType" />
                 <node concept="3Tm1VV" id="43FRfGJS36g" role="1B3o_S" />
                 <node concept="Xl_RD" id="43FRfGJS36h" role="37wK5m">
-                  <property role="Xl_RC" value="" />
+                  <property role="Xl_RC" value="Channel" />
                 </node>
                 <node concept="3clFb_" id="43FRfGJS36i" role="jymVt">
                   <property role="1EzhhJ" value="false" />
