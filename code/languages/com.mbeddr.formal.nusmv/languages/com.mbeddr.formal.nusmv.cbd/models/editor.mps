@@ -384,6 +384,7 @@
         <child id="6554619383004026644" name="editorComponent" index="23bJyd" />
         <child id="2863449916465291411" name="allowConnections" index="SH2gk" />
         <child id="5468226901223577682" name="ports" index="15ipcR" />
+        <child id="1760333149558790282" name="buttonConfig" index="1pDyOA" />
         <child id="5126420796713997777" name="shape" index="3Uta5s" />
       </concept>
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
@@ -412,6 +413,11 @@
       <concept id="5468226901223973329" name="de.itemis.mps.editor.diagram.structure.PortObject" flags="ng" index="15kUEO" />
       <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
       <concept id="8963411245958754161" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_ParameterObject" flags="ng" index="37u81S" />
+      <concept id="1760333149558779929" name="de.itemis.mps.editor.diagram.structure.BoxButtonConfig" flags="ng" index="1pD$mP">
+        <property id="4920147624470412449" name="hasReorderPortsButton" index="3jpMj" />
+        <property id="4920147624470412454" name="hasOpenNodeButtons" index="3jpMk" />
+        <property id="4920147624470412460" name="hasRelayoutEdgesButton" index="3jpMu" />
+      </concept>
       <concept id="8637411062076624999" name="de.itemis.mps.editor.diagram.structure.Function_ConnectionTypes" flags="ig" index="1xLmZY" />
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
         <child id="9064581101900868073" name="target" index="ljJml" />
@@ -1265,12 +1271,6 @@
                   <property role="3clFbU" value="false" />
                 </node>
               </node>
-              <node concept="NRdvd" id="1NcemxUKphW" role="2316E6">
-                <ref role="37wK5l" node="5sbrvaLs5_8" resolve="positionOfInputPort" />
-                <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
-                <node concept="37u81S" id="1NcemxUKphX" role="37wK5m" />
-                <node concept="15kUEO" id="1NcemxUKphY" role="37wK5m" />
-              </node>
             </node>
             <node concept="2OqwBi" id="1NcemxUKphZ" role="230Hdr">
               <node concept="2OqwBi" id="1NcemxUKpi0" role="2Oq$k0">
@@ -1308,12 +1308,6 @@
                 <node concept="3clFbT" id="1NcemxUKpie" role="1xbcaF">
                   <property role="3clFbU" value="true" />
                 </node>
-              </node>
-              <node concept="NRdvd" id="1NcemxUKpif" role="2316E6">
-                <ref role="37wK5l" node="7RhjhI7Dfng" resolve="positionOfOutputPort" />
-                <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
-                <node concept="37u81S" id="1NcemxUKpig" role="37wK5m" />
-                <node concept="15kUEO" id="1NcemxUKpih" role="37wK5m" />
               </node>
             </node>
             <node concept="2OqwBi" id="1NcemxUKpii" role="230Hdr">
@@ -1385,6 +1379,11 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="1pD$mP" id="3iZarOHOFSg" role="1pDyOA">
+            <property role="3jpMj" value="true" />
+            <property role="3jpMk" value="true" />
+            <property role="3jpMu" value="true" />
           </node>
         </node>
         <node concept="ahg9e" id="1NcemxUKRyP" role="aCds2">
