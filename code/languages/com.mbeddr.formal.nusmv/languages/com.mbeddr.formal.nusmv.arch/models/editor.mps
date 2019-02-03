@@ -263,9 +263,6 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -380,6 +377,7 @@
         <child id="6554619383004026644" name="editorComponent" index="23bJyd" />
         <child id="2863449916465291411" name="allowConnections" index="SH2gk" />
         <child id="5468226901223577682" name="ports" index="15ipcR" />
+        <child id="1760333149558790282" name="buttonConfig" index="1pDyOA" />
         <child id="5126420796713997777" name="shape" index="3Uta5s" />
       </concept>
       <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
@@ -417,6 +415,12 @@
       <concept id="5468226901223973329" name="de.itemis.mps.editor.diagram.structure.PortObject" flags="ng" index="15kUEO" />
       <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
       <concept id="8963411245958754161" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_ParameterObject" flags="ng" index="37u81S" />
+      <concept id="1760333149558779929" name="de.itemis.mps.editor.diagram.structure.BoxButtonConfig" flags="ng" index="1pD$mP">
+        <property id="4920147624470412449" name="hasReorderPortsButton" index="3jpMj" />
+        <property id="4920147624470412454" name="hasOpenNodeButtons" index="3jpMk" />
+        <property id="4920147624470412460" name="hasRelayoutEdgesButton" index="3jpMu" />
+        <property id="4920147624470412440" name="align" index="3jpME" />
+      </concept>
       <concept id="3454709602156468860" name="de.itemis.mps.editor.diagram.structure.ShapeParameterDeclaration" flags="ng" index="1xmO9C">
         <child id="3454709602156468949" name="type" index="1xmOb1" />
       </concept>
@@ -1443,59 +1447,6 @@
       <node concept="37vLTG" id="5sbrvaLEVI0" role="3clF46">
         <property role="TrG5h" value="op" />
         <node concept="3Tqbb2" id="5sbrvaLEVHZ" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5sbrvaLEVKh" role="jymVt" />
-    <node concept="2YIFZL" id="5sbrvaLs5_8" role="jymVt">
-      <property role="TrG5h" value="positionOfPort" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="5sbrvaLs5_b" role="3clF47">
-        <node concept="3clFbF" id="5sbrvaLs6Qc" role="3cqZAp">
-          <node concept="FJ1c_" id="5sbrvaLtFfP" role="3clFbG">
-            <node concept="1eOMI4" id="5sbrvaLtFfQ" role="3uHU7w">
-              <node concept="3cpWs3" id="5sbrvaLtFfR" role="1eOMHV">
-                <node concept="2OqwBi" id="5sbrvaLtFfS" role="3uHU7B">
-                  <node concept="37vLTw" id="5sbrvaLtFfT" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5sbrvaLs6_y" resolve="ports" />
-                  </node>
-                  <node concept="34oBXx" id="5sbrvaLtFfU" role="2OqNvi" />
-                </node>
-                <node concept="3b6qkQ" id="5sbrvaLwhE_" role="3uHU7w">
-                  <property role="$nhwW" value="1.0" />
-                </node>
-              </node>
-            </node>
-            <node concept="1eOMI4" id="5sbrvaLtFfW" role="3uHU7B">
-              <node concept="3cpWs3" id="5sbrvaLtFfX" role="1eOMHV">
-                <node concept="2OqwBi" id="5sbrvaLtFfY" role="3uHU7B">
-                  <node concept="37vLTw" id="5sbrvaLtFfZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5sbrvaLs6_y" resolve="ports" />
-                  </node>
-                  <node concept="2WmjW8" id="5sbrvaLtFg0" role="2OqNvi">
-                    <node concept="37vLTw" id="5sbrvaLtFg1" role="25WWJ7">
-                      <ref role="3cqZAo" node="5sbrvaLs6Ak" resolve="myPort" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3b6qkQ" id="5sbrvaLwiM7" role="3uHU7w">
-                  <property role="$nhwW" value="1.0" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5sbrvaLs57z" role="1B3o_S" />
-      <node concept="10P55v" id="5sbrvaLs5zp" role="3clF45" />
-      <node concept="37vLTG" id="5sbrvaLs6_y" role="3clF46">
-        <property role="TrG5h" value="ports" />
-        <node concept="2I9FWS" id="5sbrvaLs6L7" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="5sbrvaLs6Ak" role="3clF46">
-        <property role="TrG5h" value="myPort" />
-        <node concept="3Tqbb2" id="5sbrvaLs6MJ" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="5sbrvaLs608" role="jymVt" />
@@ -3097,16 +3048,6 @@
                     <property role="3clFbU" value="false" />
                   </node>
                 </node>
-                <node concept="NRdvd" id="2zzTeYihovG" role="2316E6">
-                  <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
-                  <ref role="37wK5l" node="5sbrvaLs5_8" resolve="positionOfPort" />
-                  <node concept="NRdvd" id="2zzTeYihoBT" role="37wK5m">
-                    <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
-                    <ref role="37wK5l" node="5sbrvaL9PJ$" resolve="computeInputPorts" />
-                    <node concept="37u81S" id="2zzTeYihoBU" role="37wK5m" />
-                  </node>
-                  <node concept="15kUEO" id="2zzTeYihovJ" role="37wK5m" />
-                </node>
               </node>
               <node concept="2YIFZM" id="5sbrvaL9TL6" role="230Hdr">
                 <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
@@ -3128,16 +3069,6 @@
                 </node>
                 <node concept="3cmrfG" id="5sbrvaLh244" role="2316E7">
                   <property role="3cmrfH" value="1" />
-                </node>
-                <node concept="NRdvd" id="2zzTeYihoPC" role="2316E6">
-                  <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
-                  <ref role="37wK5l" node="5sbrvaLs5_8" resolve="positionOfPort" />
-                  <node concept="NRdvd" id="2zzTeYihoPD" role="37wK5m">
-                    <ref role="1Pybhc" node="5sbrvaL9BWy" resolve="GraphicalEditorModelQueryUtils" />
-                    <ref role="37wK5l" node="5sbrvaLfFIb" resolve="computeOutputPorts" />
-                    <node concept="37u81S" id="2zzTeYihoPE" role="37wK5m" />
-                  </node>
-                  <node concept="15kUEO" id="2zzTeYihoPF" role="37wK5m" />
                 </node>
                 <node concept="2xQOud" id="5sbrvaLqL9J" role="2316E4">
                   <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
@@ -3238,6 +3169,12 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="1pD$mP" id="2obHvWSo0$5" role="1pDyOA">
+              <property role="3jpMj" value="true" />
+              <property role="3jpMk" value="true" />
+              <property role="3jpMu" value="true" />
+              <property role="3jpME" value="LEFT" />
             </node>
           </node>
           <node concept="ahg9e" id="5sbrvaMhQtY" role="aCds2">
