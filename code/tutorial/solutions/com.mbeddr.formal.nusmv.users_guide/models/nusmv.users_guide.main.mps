@@ -7,12 +7,12 @@
   <imports>
     <import index="m6f0" ref="r:0eb0cd32-f456-4fb2-b2bf-88e1b019b19d(_010_features._010_nusmv_base)" />
     <import index="qmbe" ref="r:dc2f2276-db8a-4c75-a8c5-c04c514cae35(_010_features._020_nusmv_unit_tests)" />
-    <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" />
     <import index="9pd" ref="r:272c7e50-c3af-4365-bda8-43f746c4aee3(_010_features._100_nusmv_operators_panels)" />
     <import index="s0k6" ref="r:7c8a192c-7615-4a1b-a608-a18a83365e6b(_010_features._070_nusmv_verification_cases)" />
     <import index="gma2" ref="r:9373994a-6064-48c9-8736-0c6a946eaa23(_010_features._500_nusmv_importer)" />
     <import index="2ufg" ref="r:d37bd9b7-40a1-410a-8148-61e2d84bead3(_010_features._300_nusmv_cbd)" />
     <import index="w2ht" ref="r:7a8f5dbf-f084-4c9f-bfbe-b41ce5171f9d(_010_features._015_nusmv_ext)" />
+    <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" implicit="true" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
