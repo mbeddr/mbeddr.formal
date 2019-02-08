@@ -652,5 +652,26 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="48uT1AITlbm">
+    <property role="3GE5qa" value="statements" />
+    <ref role="WuzLi" to="vshk:48uT1AITlav" resolve="CommentLine" />
+    <node concept="11bSqf" id="48uT1AITlbn" role="11c4hB">
+      <node concept="3clFbS" id="48uT1AITlbo" role="2VODD2">
+        <node concept="lc7rE" id="48uT1AITlqp" role="3cqZAp">
+          <node concept="la8eA" id="48uT1AITlqL" role="lcghm">
+            <property role="lacIc" value="//" />
+          </node>
+          <node concept="l9hG8" id="48uT1AITlrH" role="lcghm">
+            <node concept="2OqwBi" id="48uT1AITlBf" role="lb14g">
+              <node concept="117lpO" id="48uT1AITlsD" role="2Oq$k0" />
+              <node concept="3TrcHB" id="48uT1AITm7A" role="2OqNvi">
+                <ref role="3TsBF5" to="vshk:48uT1AITlaw" resolve="comment" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

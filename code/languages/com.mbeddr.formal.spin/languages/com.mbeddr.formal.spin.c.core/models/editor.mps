@@ -263,7 +263,7 @@
             <ref role="1NtTu8" to="vshk:7M$OvLQgz$d" resolve="includeDirs" />
             <node concept="2iRkQZ" id="7M$OvLQgzCh" role="2czzBx" />
             <node concept="3F0ifn" id="7M$OvLQgzCi" role="2czzBI">
-              <property role="3F0ifm" value="press enter to add externals ..." />
+              <property role="3F0ifm" value="press enter to add directories ..." />
               <node concept="VechU" id="7M$OvLQgzCj" role="3F10Kt">
                 <property role="Vb096" value="gray" />
               </node>
@@ -762,6 +762,25 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1vcsY83sb$4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="48uT1AITlaz">
+    <property role="3GE5qa" value="statements" />
+    <ref role="1XX52x" to="vshk:48uT1AITlav" resolve="CommentLine" />
+    <node concept="3EZMnI" id="48uT1AITla_" role="2wV5jI">
+      <node concept="3F0ifn" id="48uT1AITlaJ" role="3EZMnx">
+        <property role="3F0ifm" value="//" />
+      </node>
+      <node concept="3F0A7n" id="48uT1AITlaY" role="3EZMnx">
+        <ref role="1NtTu8" to="vshk:48uT1AITlaw" resolve="comment" />
+      </node>
+      <node concept="3F0ifn" id="48uT1AITlbb" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="VechU" id="48uT1AITlbj" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="48uT1AITlaC" role="2iSdaV" />
     </node>
   </node>
 </model>
