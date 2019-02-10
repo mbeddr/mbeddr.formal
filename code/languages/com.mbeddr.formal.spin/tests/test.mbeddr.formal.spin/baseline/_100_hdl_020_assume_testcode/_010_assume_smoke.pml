@@ -7,7 +7,7 @@ active proctype h1(){
   select(tmpVar_nondet_assignment_1714872972674934135 : 1 .. 42);
   c_code {
     intVar = Ph1->tmpVar_nondet_assignment_1714872972674934135;
-    Printf("*** intVar = %d ; 8981534439128938860\n", intVar);
+    Printf("*** intVar = %d ; 1714872972674934135\n", intVar);
   }
   
   end_assumption_failed_0: c_expr { intVar < 41 };

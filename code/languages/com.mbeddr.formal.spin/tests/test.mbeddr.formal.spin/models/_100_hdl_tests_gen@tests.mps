@@ -27,6 +27,10 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -45,6 +49,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -72,14 +77,9 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
-      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
-        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
-        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
-      </concept>
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
         <property id="1863527487546097494" name="modelId" index="1XweGQ" />
         <child id="679099339649067980" name="name" index="1j$8Uc" />
-        <child id="1863527487546123100" name="moduleRef" index="1Xw7sW" />
       </concept>
       <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
         <property id="679099339649053841" name="value" index="1j_P7h" />
@@ -224,17 +224,20 @@
           <node concept="3cpWsn" id="48uT1AIRNTM" role="3cpWs9">
             <property role="TrG5h" value="mPtr" />
             <node concept="1XwpNF" id="48uT1AIRNTK" role="1tU5fm" />
-            <node concept="1Xw6AR" id="48uT1AIRNTN" role="33vP2m">
-              <node concept="1dCxOl" id="48uT1AIRNTO" role="1XwpL7">
-                <property role="1XweGQ" value="java:EDU.oswego.cs.dl.util.concurrent.misc" />
-                <node concept="1j_P7g" id="48uT1AIRNTP" role="1j$8Uc">
+          </node>
+        </node>
+        <node concept="3clFbF" id="1DyT9OiI_UA" role="3cqZAp">
+          <node concept="37vLTI" id="1DyT9OiIA1M" role="3clFbG">
+            <node concept="1Xw6AR" id="1DyT9OiIA36" role="37vLTx">
+              <node concept="1dCxOl" id="1DyT9OiIA56" role="1XwpL7">
+                <property role="1XweGQ" value="r:2d318347-4a29-412c-9f58-9b6c4b83f388" />
+                <node concept="1j_P7g" id="1DyT9OiIA57" role="1j$8Uc">
                   <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_030_loops_testcode" />
                 </node>
-                <node concept="1dCxOk" id="48uT1AIRNTQ" role="1Xw7sW">
-                  <property role="1XweGW" value="1338ba73-5059-479b-a929-de86597a62b8" />
-                  <property role="1XxBO9" value="com.mbeddr.mpsutil.jung.pluginSolution" />
-                </node>
               </node>
+            </node>
+            <node concept="37vLTw" id="1DyT9OiI_U$" role="37vLTJ">
+              <ref role="3cqZAo" node="48uT1AIRNTM" resolve="mPtr" />
             </node>
           </node>
         </node>
