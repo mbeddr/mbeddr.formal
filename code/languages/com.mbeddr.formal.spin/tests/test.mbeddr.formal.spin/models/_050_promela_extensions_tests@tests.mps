@@ -117,95 +117,6 @@
   <node concept="1lH9Xt" id="1ZejHLlNaRC">
     <property role="TrG5h" value="_100_ext_statements" />
     <property role="3OwPAg" value="true" />
-    <node concept="1LZb2c" id="1ZejHLlNaRD" role="1SL9yI">
-      <property role="TrG5h" value="test_100_assumption" />
-      <node concept="3cqZAl" id="1ZejHLlNaRF" role="3clF45" />
-      <node concept="3clFbS" id="1ZejHLlNaRG" role="3clF47">
-        <node concept="3cpWs8" id="1ZejHLlNaRJ" role="3cqZAp">
-          <node concept="3cpWsn" id="1ZejHLlNaRX" role="3cpWs9">
-            <property role="TrG5h" value="repo" />
-            <node concept="3uibUv" id="1ZejHLlNaSe" role="1tU5fm">
-              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-            </node>
-            <node concept="2OqwBi" id="1ZejHLlNaSf" role="33vP2m">
-              <node concept="1jxXqW" id="1ZejHLlNaSC" role="2Oq$k0" />
-              <node concept="liA8E" id="1ZejHLlNaSD" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1ZejHLlNaRK" role="3cqZAp">
-          <node concept="3cpWsn" id="1ZejHLlNaRY" role="3cpWs9">
-            <property role="TrG5h" value="m" />
-            <node concept="H_c77" id="1ZejHLlNaSg" role="1tU5fm" />
-            <node concept="2OqwBi" id="6_AAcCLCVrB" role="33vP2m">
-              <node concept="2JrnkZ" id="6_AAcCLCVI7" role="2Oq$k0">
-                <node concept="1Xw6AR" id="6_AAcCLCVI4" role="2JrQYb">
-                  <node concept="1dCxOl" id="1vcsY82lP9d" role="1XwpL7">
-                    <property role="1XweGQ" value="r:a388245c-19a6-4efb-b5b7-fa76c06da7ed" />
-                    <node concept="1j_P7g" id="1vcsY82lP9e" role="1j$8Uc">
-                      <property role="1j_P7h" value="test.mbeddr.formal.spin._050_promela_ext_010_statements_testcode" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="6_AAcCLCVrA" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
-                <node concept="37vLTw" id="1ZejHLlNaSE" role="37wK5m">
-                  <ref role="3cqZAo" node="1ZejHLlNaRX" resolve="repo" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1ZejHLlNaRL" role="3cqZAp">
-          <node concept="3cpWsn" id="1ZejHLlNaRZ" role="3cpWs9">
-            <property role="TrG5h" value="lr" />
-            <node concept="3uibUv" id="1ZejHLlNaSi" role="1tU5fm">
-              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
-            </node>
-            <node concept="2YIFZM" id="1ZejHLlNaSj" role="33vP2m">
-              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
-              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
-              <node concept="37vLTw" id="1ZejHLlNaSF" role="37wK5m">
-                <ref role="3cqZAo" node="1ZejHLlNaRY" resolve="m" />
-              </node>
-              <node concept="Xl_RD" id="1ZejHLlNaSG" role="37wK5m">
-                <property role="Xl_RC" value="_100_assumption" />
-              </node>
-              <node concept="37vLTw" id="1ZejHLlNaSH" role="37wK5m">
-                <ref role="3cqZAo" node="1ZejHLlNaRX" resolve="repo" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3vwNmj" id="1ZejHLlNaRM" role="3cqZAp">
-          <node concept="2OqwBi" id="1ZejHLlNaS0" role="3vwVQn">
-            <node concept="37vLTw" id="1ZejHLlNaSk" role="2Oq$k0">
-              <ref role="3cqZAo" node="1ZejHLlNaRZ" resolve="lr" />
-            </node>
-            <node concept="liA8E" id="1ZejHLlNaSl" role="2OqNvi">
-              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
-            </node>
-          </node>
-        </node>
-        <node concept="3vlDli" id="1ZejHLlNaRN" role="3cqZAp">
-          <node concept="Xl_RD" id="1ZejHLlNaS1" role="3tpDZB">
-            <property role="Xl_RC" value="assertions" />
-          </node>
-          <node concept="2OqwBi" id="1ZejHLlNaS2" role="3tpDZA">
-            <node concept="37vLTw" id="1ZejHLlNaSm" role="2Oq$k0">
-              <ref role="3cqZAo" node="1ZejHLlNaRZ" resolve="lr" />
-            </node>
-            <node concept="liA8E" id="1ZejHLlNaSn" role="2OqNvi">
-              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1ZejHLlNcwD" role="3cqZAp" />
-      </node>
-    </node>
     <node concept="1LZb2c" id="1ZejHLlNaRE" role="1SL9yI">
       <property role="TrG5h" value="test_010_witness_log" />
       <node concept="3cqZAl" id="1ZejHLlNaRH" role="3clF45" />
@@ -342,6 +253,220 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2kmJJKRTMBH" role="1SL9yI">
+      <property role="TrG5h" value="test_010_witness_log_string_literal" />
+      <node concept="3cqZAl" id="2kmJJKRTMBI" role="3clF45" />
+      <node concept="3clFbS" id="2kmJJKRTMBJ" role="3clF47">
+        <node concept="3cpWs8" id="2kmJJKRTMBK" role="3cqZAp">
+          <node concept="3cpWsn" id="2kmJJKRTMBL" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="2kmJJKRTMBM" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="2kmJJKRTMBN" role="33vP2m">
+              <node concept="1jxXqW" id="2kmJJKRTMBO" role="2Oq$k0" />
+              <node concept="liA8E" id="2kmJJKRTMBP" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2kmJJKRTMBQ" role="3cqZAp">
+          <node concept="3cpWsn" id="2kmJJKRTMBR" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="2kmJJKRTMBS" role="1tU5fm" />
+            <node concept="2OqwBi" id="2kmJJKRTMBT" role="33vP2m">
+              <node concept="2JrnkZ" id="2kmJJKRTMBU" role="2Oq$k0">
+                <node concept="1Xw6AR" id="2kmJJKRTMBV" role="2JrQYb">
+                  <node concept="1dCxOl" id="2kmJJKRTMBW" role="1XwpL7">
+                    <property role="1XweGQ" value="r:a388245c-19a6-4efb-b5b7-fa76c06da7ed" />
+                    <node concept="1j_P7g" id="2kmJJKRTMBX" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._050_promela_ext_010_statements_testcode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2kmJJKRTMBY" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
+                <node concept="37vLTw" id="2kmJJKRTMBZ" role="37wK5m">
+                  <ref role="3cqZAo" node="2kmJJKRTMBL" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2kmJJKRTMC0" role="3cqZAp">
+          <node concept="3cpWsn" id="2kmJJKRTMC1" role="3cpWs9">
+            <property role="TrG5h" value="lr" />
+            <node concept="3uibUv" id="2kmJJKRTMC2" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="2kmJJKRTMC3" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="2kmJJKRTMC4" role="37wK5m">
+                <ref role="3cqZAo" node="2kmJJKRTMBR" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="2kmJJKRTMC5" role="37wK5m">
+                <property role="Xl_RC" value="_010_witness_log_string_literal" />
+              </node>
+              <node concept="37vLTw" id="2kmJJKRTMC6" role="37wK5m">
+                <ref role="3cqZAo" node="2kmJJKRTMBL" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2kmJJKRTMC7" role="3cqZAp">
+          <node concept="2OqwBi" id="2kmJJKRTMC8" role="3vwVQn">
+            <node concept="37vLTw" id="2kmJJKRTMC9" role="2Oq$k0">
+              <ref role="3cqZAo" node="2kmJJKRTMC1" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="2kmJJKRTMCa" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="2kmJJKRTMCb" role="3cqZAp">
+          <node concept="Xl_RD" id="2kmJJKRTMCc" role="3tpDZB">
+            <property role="Xl_RC" value="Assert: aa!=2" />
+          </node>
+          <node concept="2OqwBi" id="2kmJJKRTMCd" role="3tpDZA">
+            <node concept="37vLTw" id="2kmJJKRTMCe" role="2Oq$k0">
+              <ref role="3cqZAo" node="2kmJJKRTMC1" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="2kmJJKRTMCf" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2kmJJKRTMCg" role="3cqZAp" />
+        <node concept="3cpWs8" id="2kmJJKRTMCh" role="3cqZAp">
+          <node concept="3cpWsn" id="2kmJJKRTMCi" role="3cpWs9">
+            <property role="TrG5h" value="e0" />
+            <node concept="3uibUv" id="2kmJJKRTMCj" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
+            </node>
+            <node concept="2OqwBi" id="2kmJJKRTMCk" role="33vP2m">
+              <node concept="2OqwBi" id="2kmJJKRTMCl" role="2Oq$k0">
+                <node concept="37vLTw" id="2kmJJKRTMCm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2kmJJKRTMC1" resolve="lr" />
+                </node>
+                <node concept="liA8E" id="2kmJJKRTMCn" role="2OqNvi">
+                  <ref role="37wK5l" to="imq8:2lN4cj_PIQx" resolve="getWhitness" />
+                </node>
+              </node>
+              <node concept="34jXtK" id="2kmJJKRTMCo" role="2OqNvi">
+                <node concept="3cmrfG" id="2kmJJKRTMCp" role="25WWJ7">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="2kmJJKRTMCq" role="3cqZAp">
+          <node concept="Xl_RD" id="2kmJJKRTMCr" role="3tpDZB">
+            <property role="Xl_RC" value="string logged in witness" />
+          </node>
+          <node concept="2OqwBi" id="2kmJJKRTMCs" role="3tpDZA">
+            <node concept="37vLTw" id="2kmJJKRTMCt" role="2Oq$k0">
+              <ref role="3cqZAo" node="2kmJJKRTMCi" resolve="e0" />
+            </node>
+            <node concept="liA8E" id="2kmJJKRTMCu" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:2lN4cj_MGzo" resolve="getLhsString" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1ZejHLlNaRD" role="1SL9yI">
+      <property role="TrG5h" value="test_100_assumption" />
+      <node concept="3cqZAl" id="1ZejHLlNaRF" role="3clF45" />
+      <node concept="3clFbS" id="1ZejHLlNaRG" role="3clF47">
+        <node concept="3cpWs8" id="1ZejHLlNaRJ" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLlNaRX" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="1ZejHLlNaSe" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="1ZejHLlNaSf" role="33vP2m">
+              <node concept="1jxXqW" id="1ZejHLlNaSC" role="2Oq$k0" />
+              <node concept="liA8E" id="1ZejHLlNaSD" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1ZejHLlNaRK" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLlNaRY" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="1ZejHLlNaSg" role="1tU5fm" />
+            <node concept="2OqwBi" id="6_AAcCLCVrB" role="33vP2m">
+              <node concept="2JrnkZ" id="6_AAcCLCVI7" role="2Oq$k0">
+                <node concept="1Xw6AR" id="6_AAcCLCVI4" role="2JrQYb">
+                  <node concept="1dCxOl" id="1vcsY82lP9d" role="1XwpL7">
+                    <property role="1XweGQ" value="r:a388245c-19a6-4efb-b5b7-fa76c06da7ed" />
+                    <node concept="1j_P7g" id="1vcsY82lP9e" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._050_promela_ext_010_statements_testcode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="6_AAcCLCVrA" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
+                <node concept="37vLTw" id="1ZejHLlNaSE" role="37wK5m">
+                  <ref role="3cqZAo" node="1ZejHLlNaRX" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1ZejHLlNaRL" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZejHLlNaRZ" role="3cpWs9">
+            <property role="TrG5h" value="lr" />
+            <node concept="3uibUv" id="1ZejHLlNaSi" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="1ZejHLlNaSj" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="1ZejHLlNaSF" role="37wK5m">
+                <ref role="3cqZAo" node="1ZejHLlNaRY" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1ZejHLlNaSG" role="37wK5m">
+                <property role="Xl_RC" value="_100_assumption" />
+              </node>
+              <node concept="37vLTw" id="1ZejHLlNaSH" role="37wK5m">
+                <ref role="3cqZAo" node="1ZejHLlNaRX" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="1ZejHLlNaRM" role="3cqZAp">
+          <node concept="2OqwBi" id="1ZejHLlNaS0" role="3vwVQn">
+            <node concept="37vLTw" id="1ZejHLlNaSk" role="2Oq$k0">
+              <ref role="3cqZAo" node="1ZejHLlNaRZ" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="1ZejHLlNaSl" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="1ZejHLlNaRN" role="3cqZAp">
+          <node concept="Xl_RD" id="1ZejHLlNaS1" role="3tpDZB">
+            <property role="Xl_RC" value="assertions" />
+          </node>
+          <node concept="2OqwBi" id="1ZejHLlNaS2" role="3tpDZA">
+            <node concept="37vLTw" id="1ZejHLlNaSm" role="2Oq$k0">
+              <ref role="3cqZAo" node="1ZejHLlNaRZ" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="1ZejHLlNaSn" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaAL" resolve="getUserFriendlyMessage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1ZejHLlNcwD" role="3cqZAp" />
       </node>
     </node>
   </node>

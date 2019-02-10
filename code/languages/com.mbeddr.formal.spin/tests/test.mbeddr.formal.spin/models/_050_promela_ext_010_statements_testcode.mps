@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
+      <concept id="5285453794053229581" name="com.mbeddr.formal.spin.structure.StringLiteral" flags="ng" index="2m4jwP">
+        <property id="5285453794053229582" name="value" index="2m4jwQ" />
+      </concept>
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
       <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv">
         <child id="5285453794052877246" name="init" index="2m6DY6" />
@@ -167,6 +170,37 @@
             </node>
             <node concept="2m6Dwh" id="1ZejHLlNaPR" role="2H9Iav">
               <ref role="2m6DZP" node="1ZejHLlNaPC" resolve="aa" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mr7gt" id="2kmJJKRTpre">
+    <property role="TrG5h" value="_010_witness_log_string_literal" />
+    <node concept="2mpP7Z" id="2kmJJKRTprf" role="2mr7gi">
+      <property role="2mpCJw" value="true" />
+      <property role="TrG5h" value="witness_log_string_literal" />
+      <node concept="2mpP4x" id="2kmJJKRTprg" role="2mpP4J">
+        <node concept="2m6DXv" id="2kmJJKRTprh" role="2mpP4z">
+          <property role="TrG5h" value="aa" />
+          <node concept="2IPVmt" id="2kmJJKRTpri" role="2m6DY6">
+            <property role="2IPVms" value="2" />
+          </node>
+          <node concept="X9sYF" id="2kmJJKRTprj" role="1a0DGc" />
+        </node>
+        <node concept="Sp30q" id="2kmJJKRTprk" role="2mpP4z">
+          <node concept="2m4jwP" id="2kmJJKRTprA" role="Sp3na">
+            <property role="2m4jwQ" value="string logged in witness" />
+          </node>
+        </node>
+        <node concept="2xKSXg" id="2kmJJKRTprm" role="2mpP4z">
+          <node concept="2xSVM6" id="2kmJJKRTprn" role="2xKS2k">
+            <node concept="2IPVmt" id="2kmJJKRTpro" role="2H9Ial">
+              <property role="2IPVms" value="2" />
+            </node>
+            <node concept="2m6Dwh" id="2kmJJKRTprp" role="2H9Iav">
+              <ref role="2m6DZP" node="2kmJJKRTprh" resolve="aa" />
             </node>
           </node>
         </node>
