@@ -44,7 +44,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -82,9 +81,6 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
-        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -754,19 +750,6 @@
     <ref role="13h7C2" to="vzqj:7RhjhI7$lgW" resolve="ConnectionPart" />
     <node concept="13hLZK" id="25dEoZdLnRd" role="13h7CW">
       <node concept="3clFbS" id="25dEoZdLnRe" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="25dEoZdLnRn" role="13h7CS">
-      <property role="TrG5h" value="evaluateStatically" />
-      <ref role="13i0hy" to="ox2v:26dfgZmiDpi" resolve="evaluateStatically" />
-      <node concept="3Tm1VV" id="25dEoZdLnRo" role="1B3o_S" />
-      <node concept="3clFbS" id="25dEoZdLnRr" role="3clF47">
-        <node concept="3clFbF" id="25dEoZdLnRu" role="3cqZAp">
-          <node concept="10Nm6u" id="25dEoZdLnRt" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="25dEoZdLnRs" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
     </node>
   </node>
 </model>
