@@ -357,5 +357,15 @@
       <ref role="PrY4T" node="1ZejHLlNgt6" resolve="IHarnessModuleContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="48uT1AIROMN">
+    <property role="EcuMT" value="4764496254763748531" />
+    <property role="3GE5qa" value="harness.content" />
+    <property role="TrG5h" value="HDLCommentLine" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" to="o3hv:4Hts7PYpqpR" resolve="CommentLine" />
+    <node concept="PrWs8" id="48uT1AIROMO" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+  </node>
 </model>
 

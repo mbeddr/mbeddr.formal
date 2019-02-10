@@ -220,23 +220,32 @@
       <property role="TrG5h" value="test_multistep_gen" />
       <node concept="3cqZAl" id="6kOHW5f_Lsa" role="3clF45" />
       <node concept="3clFbS" id="6kOHW5f_Lsb" role="3clF47">
+        <node concept="3cpWs8" id="48uT1AIRNTL" role="3cqZAp">
+          <node concept="3cpWsn" id="48uT1AIRNTM" role="3cpWs9">
+            <property role="TrG5h" value="mPtr" />
+            <node concept="1XwpNF" id="48uT1AIRNTK" role="1tU5fm" />
+            <node concept="1Xw6AR" id="48uT1AIRNTN" role="33vP2m">
+              <node concept="1dCxOl" id="48uT1AIRNTO" role="1XwpL7">
+                <property role="1XweGQ" value="java:EDU.oswego.cs.dl.util.concurrent.misc" />
+                <node concept="1j_P7g" id="48uT1AIRNTP" role="1j$8Uc">
+                  <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_030_loops_testcode" />
+                </node>
+                <node concept="1dCxOk" id="48uT1AIRNTQ" role="1Xw7sW">
+                  <property role="1XweGW" value="1338ba73-5059-479b-a929-de86597a62b8" />
+                  <property role="1XxBO9" value="com.mbeddr.mpsutil.jung.pluginSolution" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6kOHW5f_Lsc" role="3cqZAp">
           <node concept="3cpWsn" id="6kOHW5f_Lsd" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="model" />
             <node concept="H_c77" id="6kOHW5f_Lse" role="1tU5fm" />
             <node concept="2OqwBi" id="6kOHW5f_N7C" role="33vP2m">
-              <node concept="1Xw6AR" id="6kOHW5f_N7D" role="2Oq$k0">
-                <node concept="1dCxOl" id="6kOHW5f_N7E" role="1XwpL7">
-                  <property role="1XweGQ" value="java:EDU.oswego.cs.dl.util.concurrent.misc" />
-                  <node concept="1j_P7g" id="6kOHW5f_N7F" role="1j$8Uc">
-                    <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_030_loops_testcode" />
-                  </node>
-                  <node concept="1dCxOk" id="6kOHW5f_N7G" role="1Xw7sW">
-                    <property role="1XweGW" value="1338ba73-5059-479b-a929-de86597a62b8" />
-                    <property role="1XxBO9" value="com.mbeddr.mpsutil.jung.pluginSolution" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="48uT1AIRNYX" role="2Oq$k0">
+                <ref role="3cqZAo" node="48uT1AIRNTM" resolve="mPtr" />
               </node>
               <node concept="2yCiCJ" id="6kOHW5f_N7H" role="2OqNvi">
                 <node concept="2OqwBi" id="6kOHW5f_N7I" role="Vysub">

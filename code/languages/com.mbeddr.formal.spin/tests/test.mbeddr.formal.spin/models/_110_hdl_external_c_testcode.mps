@@ -48,6 +48,9 @@
       <concept id="6174591375234693062" name="com.mbeddr.formal.spin.c.core.structure.PointerType" flags="ng" index="1BJnBy">
         <child id="6174591375234693177" name="inner" index="1BJnot" />
       </concept>
+      <concept id="4764496254764143263" name="com.mbeddr.formal.spin.c.core.structure.CommentLine" flags="ng" index="3GYVq6">
+        <property id="4764496254764143264" name="comment" index="3GYVqT" />
+      </concept>
       <concept id="2417655713189973303" name="com.mbeddr.formal.spin.c.core.structure.SUVRef" flags="ng" index="3Orf0S">
         <reference id="2417655713189973321" name="suv" index="3Orf16" />
       </concept>
@@ -79,6 +82,7 @@
       <concept id="6174591375235306382" name="com.mbeddr.formal.spin.hdl.structure.StatementContent" flags="ng" index="1BDXQE">
         <child id="6174591375235306389" name="stmt" index="1BDXQL" />
       </concept>
+      <concept id="4764496254763748531" name="com.mbeddr.formal.spin.hdl.structure.HDLCommentLine" flags="ng" index="3GKqyE" />
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
@@ -91,6 +95,9 @@
         <child id="5285453794052597019" name="statements" index="2mpP4z" />
       </concept>
       <concept id="3050019586774684052" name="com.mbeddr.formal.spin.structure.LessExpression" flags="ng" index="2xSS$N" />
+      <concept id="5430620409972500087" name="com.mbeddr.formal.spin.structure.CommentLine" flags="ng" index="Pedoa">
+        <property id="5430620409972500140" name="text" index="Pedrh" />
+      </concept>
       <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
@@ -171,6 +178,9 @@
     <node concept="1a0OAr" id="5mKzygM2U_z" role="1a0O6w" />
     <node concept="1a0q89" id="5mKzygM2U_$" role="1a0O6w">
       <property role="TrG5h" value="h1" />
+      <node concept="3GKqyE" id="48uT1AITl9p" role="1a0q5x">
+        <property role="Pedrh" value="nondeterministic assignment to the array" />
+      </node>
       <node concept="1a7z$V" id="5mKzygM2U_C" role="1a0q5x">
         <node concept="1a0deV" id="26dfgZm5UWQ" role="1a7z$R">
           <ref role="2m6DZP" node="26dfgZm3_ty" resolve="array_to_sort" />
@@ -205,6 +215,9 @@
             <property role="2IPVms" value="0" />
           </node>
           <node concept="2mpP4x" id="2yuIwRzeUU7" role="3bEerk">
+            <node concept="3GYVq6" id="48uT1AIUKnB" role="2mpP4z">
+              <property role="3GYVqT" value="should fail due to arrays containing duplicated entries (innequality below is strict)" />
+            </node>
             <node concept="19KjX3" id="1vcsY83gYSt" role="2mpP4z">
               <node concept="2xSS$N" id="1vcsY83gZ93" role="19KjIs">
                 <node concept="3RGUPo" id="1vcsY83gZbn" role="2H9Ial">
