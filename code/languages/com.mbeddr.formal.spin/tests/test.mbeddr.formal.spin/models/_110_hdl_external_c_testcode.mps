@@ -9,6 +9,12 @@
   <imports />
   <registry>
     <language id="ef89f137-f966-4966-a202-ab9ea26e79fe" name="com.mbeddr.formal.spin.c.core">
+      <concept id="4401234839834603310" name="com.mbeddr.formal.spin.c.core.structure.TypeBaseRefExpression" flags="ng" index="2svBNE">
+        <reference id="4401234839834603311" name="tpe" index="2svBNF" />
+      </concept>
+      <concept id="4401234839834603306" name="com.mbeddr.formal.spin.c.core.structure.SizeOf" flags="ng" index="2svBNI">
+        <child id="4401234839834603307" name="exp" index="2svBNJ" />
+      </concept>
       <concept id="2291855968617528455" name="com.mbeddr.formal.spin.c.core.structure.CGlobalVariableDeclaration" flags="ng" index="1a039r" />
       <concept id="2291855968617536871" name="com.mbeddr.formal.spin.c.core.structure.CGlobalVariableReference" flags="ng" index="1a0deV" />
       <concept id="2291855968617420983" name="com.mbeddr.formal.spin.c.core.structure.VoidType" flags="ng" index="1a0DpF" />
@@ -56,6 +62,10 @@
       </concept>
     </language>
     <language id="628c1bba-6b54-4c71-927c-3cff044349e4" name="com.mbeddr.formal.spin.hdl">
+      <concept id="1714872972677914555" name="com.mbeddr.formal.spin.hdl.structure.TrackState" flags="ng" index="kFILp">
+        <child id="1714872972680220631" name="size" index="kirKP" />
+        <child id="1714872972677914558" name="var" index="kFILs" />
+      </concept>
       <concept id="2291855968621785503" name="com.mbeddr.formal.spin.hdl.structure.Assert" flags="ng" index="19KjX3">
         <child id="2291855968621786432" name="cond" index="19KjIs" />
       </concept>
@@ -117,6 +127,7 @@
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744248098" name="com.mbeddr.formal.base.expressions.structure.MinusExpression" flags="ng" index="2H9Eef" />
+      <concept id="7842584090744249522" name="com.mbeddr.formal.base.expressions.structure.MultiplyExpression" flags="ng" index="2H9Ewv" />
       <concept id="7842584090744245770" name="com.mbeddr.formal.base.expressions.structure.PlusExpression" flags="ng" index="2H9FEB" />
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
@@ -176,6 +187,22 @@
       </node>
     </node>
     <node concept="1a0OAr" id="5mKzygM2U_z" role="1a0O6w" />
+    <node concept="kFILp" id="3OkkWixqySC" role="1a0O6w">
+      <node concept="1a0deV" id="3OkkWixqyUn" role="kFILs">
+        <ref role="2m6DZP" node="26dfgZm3_ty" resolve="array_to_sort" />
+      </node>
+      <node concept="2H9Ewv" id="3OkkWixqyUD" role="kirKP">
+        <node concept="2svBNI" id="3OkkWixrFTw" role="2H9Ial">
+          <node concept="2svBNE" id="3OkkWixsPxJ" role="2svBNJ">
+            <ref role="2svBNF" node="26dfgZm3_tw" />
+          </node>
+        </node>
+        <node concept="1BJfSN" id="3OkkWixqyUz" role="2H9Iav">
+          <ref role="1BJfSZ" node="5mKzygM3jiv" resolve="ARRAY_SIZE" />
+        </node>
+      </node>
+    </node>
+    <node concept="1a0OAr" id="3OkkWixqyUU" role="1a0O6w" />
     <node concept="1a0q89" id="5mKzygM2U_$" role="1a0O6w">
       <property role="TrG5h" value="h1" />
       <node concept="3GKqyE" id="48uT1AITl9p" role="1a0q5x">

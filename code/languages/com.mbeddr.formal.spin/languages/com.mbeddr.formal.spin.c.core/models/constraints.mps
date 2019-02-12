@@ -427,5 +427,29 @@
     </node>
     <node concept="3Tm1VV" id="1vcsY83jq5K" role="1B3o_S" />
   </node>
+  <node concept="1M2fIO" id="3OkkWixsL2Z">
+    <property role="3GE5qa" value="expressions.sizeof" />
+    <ref role="1M2myG" to="vshk:3OkkWixqyWI" resolve="TypeBaseRefExpression" />
+    <node concept="9S07l" id="3OkkWixsL30" role="9Vyp8">
+      <node concept="3clFbS" id="3OkkWixsL31" role="2VODD2">
+        <node concept="3clFbF" id="3OkkWixsLkZ" role="3cqZAp">
+          <node concept="2OqwBi" id="3OkkWixsMOY" role="3clFbG">
+            <node concept="2OqwBi" id="3OkkWixsLAu" role="2Oq$k0">
+              <node concept="nLn13" id="3OkkWixsLkY" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="3OkkWixsM1m" role="2OqNvi">
+                <node concept="1xMEDy" id="3OkkWixsM1o" role="1xVPHs">
+                  <node concept="chp4Y" id="3OkkWixsMcl" role="ri$Ld">
+                    <ref role="cht4Q" to="vshk:3OkkWixqyWE" resolve="SizeOf" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="3OkkWixsMxY" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="3OkkWixsO6K" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

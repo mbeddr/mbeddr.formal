@@ -568,5 +568,33 @@
       <ref role="PrY4T" node="1vcsY83fkZr" resolve="ICLevelStatement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3OkkWixqyWE">
+    <property role="EcuMT" value="4401234839834603306" />
+    <property role="3GE5qa" value="expressions.sizeof" />
+    <property role="TrG5h" value="SizeOf" />
+    <property role="34LRSv" value="sizeof" />
+    <property role="R4oN_" value="the sizeof operator from C" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="3OkkWixqyWF" role="1TKVEi">
+      <property role="IQ2ns" value="4401234839834603307" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3OkkWixqyWI">
+    <property role="EcuMT" value="4401234839834603310" />
+    <property role="3GE5qa" value="expressions.sizeof" />
+    <property role="TrG5h" value="TypeBaseRefExpression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="3OkkWixqyWJ" role="1TKVEi">
+      <property role="IQ2ns" value="4401234839834603311" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="tpe" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1ZejHLlNdmO" resolve="TypeBase" />
+    </node>
+  </node>
 </model>
 

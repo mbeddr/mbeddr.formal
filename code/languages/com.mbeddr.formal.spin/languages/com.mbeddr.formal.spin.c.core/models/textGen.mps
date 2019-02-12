@@ -673,5 +673,47 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="3OkkWixqyX7">
+    <property role="3GE5qa" value="expressions.sizeof" />
+    <ref role="WuzLi" to="vshk:3OkkWixqyWI" resolve="TypeBaseRefExpression" />
+    <node concept="11bSqf" id="3OkkWixqyX8" role="11c4hB">
+      <node concept="3clFbS" id="3OkkWixqyX9" role="2VODD2">
+        <node concept="lc7rE" id="3OkkWixqyXv" role="3cqZAp">
+          <node concept="l9hG8" id="3OkkWixqyXR" role="lcghm">
+            <node concept="2OqwBi" id="3OkkWixqz8$" role="lb14g">
+              <node concept="117lpO" id="3OkkWixqyYL" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3OkkWixqzCV" role="2OqNvi">
+                <ref role="3Tt5mk" to="vshk:3OkkWixqyWJ" resolve="tpe" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3OkkWixqzHV">
+    <property role="3GE5qa" value="expressions.sizeof" />
+    <ref role="WuzLi" to="vshk:3OkkWixqyWE" resolve="SizeOf" />
+    <node concept="11bSqf" id="3OkkWixqzHW" role="11c4hB">
+      <node concept="3clFbS" id="3OkkWixqzHX" role="2VODD2">
+        <node concept="lc7rE" id="3OkkWixqzIg" role="3cqZAp">
+          <node concept="la8eA" id="3OkkWixqzIC" role="lcghm">
+            <property role="lacIc" value="sizeof(" />
+          </node>
+          <node concept="l9hG8" id="3OkkWixqzKh" role="lcghm">
+            <node concept="2OqwBi" id="3OkkWixqzV0" role="lb14g">
+              <node concept="117lpO" id="3OkkWixqzLd" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3OkkWixq$8_" role="2OqNvi">
+                <ref role="3Tt5mk" to="vshk:3OkkWixqyWF" resolve="exp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="3OkkWixq$is" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
