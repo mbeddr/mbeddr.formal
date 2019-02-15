@@ -1075,5 +1075,12 @@
       <property role="1uS6qo" value="StackOnly" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5SGsxw7KzwR">
+    <property role="EcuMT" value="6785924186075445303" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="AssignmentExpression" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1W9oL" resolve="BinaryExpression" />
+  </node>
 </model>
 
