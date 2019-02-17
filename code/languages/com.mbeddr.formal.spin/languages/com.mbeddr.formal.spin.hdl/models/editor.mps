@@ -8,6 +8,7 @@
     <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -20,7 +21,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
@@ -137,6 +140,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
       </concept>
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -427,6 +433,15 @@
       </node>
       <node concept="l2Vlx" id="1ZejHLlO7$s" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="5SGsxw7Q95z" role="6VMZX">
+      <node concept="l2Vlx" id="5SGsxw7Q95$" role="2iSdaV" />
+      <node concept="3F0ifn" id="5SGsxw7Q95D" role="3EZMnx">
+        <property role="3F0ifm" value="ignore witness:" />
+      </node>
+      <node concept="27S6Sx" id="5SGsxw7Q9a1" role="3EZMnx">
+        <ref role="1NtTu8" to="y6ji:5SGsxw7Q95w" resolve="ignoreWitness" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="1ZejHLlOaf2">
     <property role="3GE5qa" value="harness.expressions" />
@@ -706,6 +721,15 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5SGsxw7BADa" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="5SGsxw7QYVU" role="6VMZX">
+      <node concept="l2Vlx" id="5SGsxw7QYVV" role="2iSdaV" />
+      <node concept="3F0ifn" id="5SGsxw7QYVW" role="3EZMnx">
+        <property role="3F0ifm" value="ignore witness:" />
+      </node>
+      <node concept="27S6Sx" id="5SGsxw7QYVX" role="3EZMnx">
+        <ref role="1NtTu8" to="y6ji:5SGsxw7Q95w" resolve="ignoreWitness" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5SGsxw7L3_r">

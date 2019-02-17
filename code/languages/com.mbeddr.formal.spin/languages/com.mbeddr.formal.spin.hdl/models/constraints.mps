@@ -9,6 +9,7 @@
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="y6ji" ref="r:8ddb424f-ead9-4d6e-9e90-7a7d026ff9c2(com.mbeddr.formal.spin.hdl.structure)" implicit="true" />
     <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -94,6 +95,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -235,19 +237,27 @@
     <node concept="9S07l" id="48uT1AIRPsh" role="9Vyp8">
       <node concept="3clFbS" id="48uT1AIRPsi" role="2VODD2">
         <node concept="3clFbF" id="48uT1AIRPzD" role="3cqZAp">
-          <node concept="2OqwBi" id="48uT1AIRQYx" role="3clFbG">
-            <node concept="2OqwBi" id="48uT1AIRPP8" role="2Oq$k0">
-              <node concept="nLn13" id="48uT1AIRPzC" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="48uT1AIRQ3c" role="2OqNvi">
-                <node concept="1xMEDy" id="48uT1AIRQ3e" role="1xVPHs">
-                  <node concept="chp4Y" id="48uT1AIRQeb" role="ri$Ld">
-                    <ref role="cht4Q" to="y6ji:1ZejHLlNYNl" resolve="HarnessDefinition" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="48uT1AIRQ_Y" role="1xVPHs" />
+          <node concept="22lmx$" id="5SGsxw7MH$S" role="3clFbG">
+            <node concept="2OqwBi" id="5SGsxw7MI4d" role="3uHU7B">
+              <node concept="nLn13" id="5SGsxw7MHLf" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5SGsxw7MI_O" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
               </node>
             </node>
-            <node concept="3x8VRR" id="48uT1AIRU5_" role="2OqNvi" />
+            <node concept="2OqwBi" id="48uT1AIRQYx" role="3uHU7w">
+              <node concept="2OqwBi" id="48uT1AIRPP8" role="2Oq$k0">
+                <node concept="nLn13" id="48uT1AIRPzC" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="48uT1AIRQ3c" role="2OqNvi">
+                  <node concept="1xMEDy" id="48uT1AIRQ3e" role="1xVPHs">
+                    <node concept="chp4Y" id="48uT1AIRQeb" role="ri$Ld">
+                      <ref role="cht4Q" to="y6ji:1ZejHLlNYNl" resolve="HarnessDefinition" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="48uT1AIRQ_Y" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="48uT1AIRU5_" role="2OqNvi" />
+            </node>
           </node>
         </node>
       </node>
