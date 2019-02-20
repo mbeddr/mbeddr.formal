@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="7qe3" ref="r:65dc22a9-884e-4aad-aa27-16060900ad59(_010_spin_hdl_high_prio@generator)" />
+    <import index="bq77" ref="r:dab6a141-de92-48cd-8f26-7c440995c1ab(_020_spin_hdl_main@generator)" />
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
@@ -46,6 +47,9 @@
       <node concept="2Pgd6e" id="2yuIwRzaMZ2" role="1t_9vn" />
       <node concept="3Vl8EG" id="2yuIwRzaMZ4" role="3VlUeB">
         <ref role="3Vl8EH" to="7qe3:26dfgZmjKRk" resolve="_050_nondets_arrays" />
+      </node>
+      <node concept="3Vl8EG" id="5SGsxw7VnlU" role="3VlUeB">
+        <ref role="3Vl8EH" to="bq77:5SGsxw7SukF" resolve="_100_combinatorial" />
       </node>
     </node>
     <node concept="2VgMA2" id="4sMKqP$UuEd" role="2VgMA7">

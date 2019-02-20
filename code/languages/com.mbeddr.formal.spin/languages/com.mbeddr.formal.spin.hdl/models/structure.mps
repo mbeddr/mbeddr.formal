@@ -440,5 +440,72 @@
       <ref role="20lvS9" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5SGsxw7S9fa">
+    <property role="EcuMT" value="6785924186077434826" />
+    <property role="3GE5qa" value="harness.content.combinatorial" />
+    <property role="TrG5h" value="Combinatorial" />
+    <property role="34LRSv" value="combinatorial" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5SGsxw7S9fb" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+    <node concept="1TJgyj" id="5SGsxw7S9fe" role="1TKVEi">
+      <property role="IQ2ns" value="6785924186077434830" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="m" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5SGsxw7S9fh" role="1TKVEi">
+      <property role="IQ2ns" value="6785924186077434833" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entries" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5SGsxw7S9fm" resolve="CombinatorialEntry" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5SGsxw7S9fm">
+    <property role="EcuMT" value="6785924186077434838" />
+    <property role="3GE5qa" value="harness.content.combinatorial" />
+    <property role="TrG5h" value="CombinatorialEntry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5SGsxw7S9fn" role="1TKVEi">
+      <property role="IQ2ns" value="6785924186077434839" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5SGsxw7S9fq" role="1TKVEi">
+      <property role="IQ2ns" value="6785924186077434842" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="vals" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1ZejHLlObMY" resolve="EnumerationExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5SGsxw7S$Qm">
+    <property role="EcuMT" value="6785924186077547926" />
+    <property role="3GE5qa" value="harness.content" />
+    <property role="TrG5h" value="WhenDo" />
+    <property role="34LRSv" value="when-do expression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5SGsxw7S$Qq" role="1TKVEi">
+      <property role="IQ2ns" value="6785924186077547930" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="guard" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5SGsxw7S$Qy" role="1TKVEi">
+      <property role="IQ2ns" value="6785924186077547938" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+    <node concept="PrWs8" id="5SGsxw7S$Qn" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+  </node>
 </model>
 

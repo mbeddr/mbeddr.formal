@@ -39,7 +39,7 @@ active proctype h1(){
     }
   }
   c_code {
-    Printf("*** doubleDiscrete = %lf ; 6785924186077235402\n", doubleDiscrete);
+    Printf("*** doubleDiscrete = %lf ; 6785924186077235000\n", doubleDiscrete);
   }
   
   c_code {

@@ -39,7 +39,7 @@ active proctype h1(){
     }
   }
   c_code {
-    Printf("*** charDiscrete = %d ; 6785924186077235364\n", charDiscrete);
+    Printf("*** charDiscrete = %d ; 6785924186075994954\n", charDiscrete);
   }
   
   c_code {

@@ -4,33 +4,33 @@ c_decl {
 }
 
 active proctype h1(){
-  byte tmpVar_nondet_assignment_2291855968617711606;
-  byte tmpVar_nondet_assignment_2291855968617664198;
-  select(tmpVar_nondet_assignment_2291855968617664198 : 0 .. 2);
+  byte tmpVar_nondet_assignment_1;
+  byte tmpVar_nondet_assignment_0;
+  select(tmpVar_nondet_assignment_0 : 0 .. 2);
   c_code {
-    if (Ph1->tmpVar_nondet_assignment_2291855968617664198 == 0) {
+    if (Ph1->tmpVar_nondet_assignment_0 == 0) {
       discreteValues_charType = '1';
     }
-    if (Ph1->tmpVar_nondet_assignment_2291855968617664198 == 1) {
+    if (Ph1->tmpVar_nondet_assignment_0 == 1) {
       discreteValues_charType = 'a';
     }
-    if (Ph1->tmpVar_nondet_assignment_2291855968617664198 == 2) {
+    if (Ph1->tmpVar_nondet_assignment_0 == 2) {
       discreteValues_charType = '\\';
     }
     Printf("*** discreteValues_charType = %d ; 2291855968617664198\n", discreteValues_charType);
   }
-  select(tmpVar_nondet_assignment_2291855968617711606 : 0 .. 3);
+  select(tmpVar_nondet_assignment_1 : 0 .. 3);
   c_code {
-    if (Ph1->tmpVar_nondet_assignment_2291855968617711606 == 0) {
+    if (Ph1->tmpVar_nondet_assignment_1 == 0) {
       discreteValues_doubleType = 1.1;
     }
-    if (Ph1->tmpVar_nondet_assignment_2291855968617711606 == 1) {
+    if (Ph1->tmpVar_nondet_assignment_1 == 1) {
       discreteValues_doubleType = 2.2;
     }
-    if (Ph1->tmpVar_nondet_assignment_2291855968617711606 == 2) {
+    if (Ph1->tmpVar_nondet_assignment_1 == 2) {
       discreteValues_doubleType = 3.3;
     }
-    if (Ph1->tmpVar_nondet_assignment_2291855968617711606 == 3) {
+    if (Ph1->tmpVar_nondet_assignment_1 == 3) {
       discreteValues_doubleType = 4.4;
     }
     Printf("*** discreteValues_doubleType = %lf ; 2291855968617711606\n", discreteValues_doubleType);

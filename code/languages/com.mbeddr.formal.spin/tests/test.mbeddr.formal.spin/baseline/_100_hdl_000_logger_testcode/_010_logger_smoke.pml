@@ -4,16 +4,16 @@ c_decl {
 }
 
 active proctype harness_logger_smoke(){
-  byte tmpVar_nondet_assignment_2672533419369675455;
-  select(tmpVar_nondet_assignment_2672533419369675455 : 0 .. 2);
+  byte tmpVar_nondet_assignment_0;
+  select(tmpVar_nondet_assignment_0 : 0 .. 2);
   c_code {
-    if (Pharness_logger_smoke->tmpVar_nondet_assignment_2672533419369675455 == 0) {
+    if (Pharness_logger_smoke->tmpVar_nondet_assignment_0 == 0) {
       discreteValues_charType = '1';
     }
-    if (Pharness_logger_smoke->tmpVar_nondet_assignment_2672533419369675455 == 1) {
+    if (Pharness_logger_smoke->tmpVar_nondet_assignment_0 == 1) {
       discreteValues_charType = 'a';
     }
-    if (Pharness_logger_smoke->tmpVar_nondet_assignment_2672533419369675455 == 2) {
+    if (Pharness_logger_smoke->tmpVar_nondet_assignment_0 == 2) {
       discreteValues_charType = '\\';
     }
     Printf("*** discreteValues_charType = %d ; 2672533419369675455\n", discreteValues_charType);
@@ -23,13 +23,13 @@ active proctype harness_logger_smoke(){
   }
   
   c_code {
-    Printf("*** a string ; 2672533419369933624\n");
+    Printf("*** a string ; 2672533419369675600\n");
   }
   c_code {
-    Printf("*** discreteValues_charType = %d ; 2672533419369933627\n", discreteValues_charType);
+    Printf("*** discreteValues_charType = %d ; 2672533419369675644\n", discreteValues_charType);
   }
   c_code {
-    Printf("*** discreteValues_doubleType = %lf ; 2672533419369933630\n", discreteValues_doubleType);
+    Printf("*** discreteValues_doubleType = %lf ; 2672533419369675917\n", discreteValues_doubleType);
   }
   
   c_code {

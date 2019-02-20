@@ -107,9 +107,9 @@
         <child id="2291855968617669565" name="right" index="1a7IPx" />
         <child id="2291855968617669562" name="left" index="1a7IPA" />
       </concept>
-      <concept id="6785924186072810141" name="" flags="ng" index="1pHB25">
-        <child id="2291855968617658642" name="" index="1a7zve" />
-        <child id="2291855968617658347" name="" index="1a7z$R" />
+      <concept id="6785924186072810141" name="com.mbeddr.formal.spin.hdl.structure.AbstractAssignment" flags="ng" index="1pHB25">
+        <child id="2291855968617658642" name="range" index="1a7zve" />
+        <child id="2291855968617658347" name="var" index="1a7z$R" />
       </concept>
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
@@ -154,6 +154,9 @@
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
+      </concept>
+      <concept id="3118009927543452571" name="jetbrains.mps.lang.generator.structure.TraceMacro" flags="ln" index="1M6Lop">
+        <child id="3118009927543452625" name="sourceNodeQuery" index="1M6Lpj" />
       </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
@@ -485,6 +488,20 @@
                           <node concept="3TrEf2" id="26dfgZmjKW6" role="2OqNvi">
                             <ref role="3Tt5mk" to="y6ji:1ZejHLlO7$i" resolve="range" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1M6Lop" id="5SGsxw7WvZv" role="lGtFl">
+                <node concept="3NFfHV" id="5SGsxw7WvZw" role="1M6Lpj">
+                  <node concept="3clFbS" id="5SGsxw7WvZx" role="2VODD2">
+                    <node concept="3clFbF" id="5SGsxw7WwIy" role="3cqZAp">
+                      <node concept="2OqwBi" id="5SGsxw7WwSr" role="3clFbG">
+                        <node concept="1iwH7S" id="5SGsxw7WwIx" role="2Oq$k0" />
+                        <node concept="1bhEwm" id="5SGsxw7WxBT" role="2OqNvi">
+                          <ref role="1bhEwk" node="26dfgZmjKW8" resolve="assign" />
                         </node>
                       </node>
                     </node>

@@ -12,9 +12,7 @@ active proctype h1(){
   }
   int rndAssign_loopIndex_0 = 0;
   do
-     :: rndAssign_loopIndex_0 < 5 -> c_code {
-      Ph1->rndAssign_loopIndex_0 = Ph1->rndAssign_loopIndex_0 + 1;
-    }
+     :: rndAssign_loopIndex_0 < 5 -> rndAssign_loopIndex_0 = rndAssign_loopIndex_0 + 1;
      :: break
     od;
   c_code {

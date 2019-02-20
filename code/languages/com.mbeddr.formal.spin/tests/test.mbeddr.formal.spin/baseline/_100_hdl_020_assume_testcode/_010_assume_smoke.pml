@@ -3,10 +3,10 @@ c_decl {
 }
 
 active proctype h1(){
-  byte tmpVar_nondet_assignment_1714872972674934135;
-  select(tmpVar_nondet_assignment_1714872972674934135 : 1 .. 42);
+  byte tmpVar_nondet_assignment_0;
+  select(tmpVar_nondet_assignment_0 : 1 .. 42);
   c_code {
-    intVar = Ph1->tmpVar_nondet_assignment_1714872972674934135;
+    intVar = Ph1->tmpVar_nondet_assignment_0;
     Printf("*** intVar = %d ; 1714872972674934135\n", intVar);
   }
   

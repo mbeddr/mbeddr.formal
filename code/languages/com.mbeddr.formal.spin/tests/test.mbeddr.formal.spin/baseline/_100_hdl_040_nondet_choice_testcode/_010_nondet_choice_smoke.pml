@@ -32,14 +32,14 @@ active proctype h1(){
     }
     :: else -> {
       c_code {
-        Printf("*** default: no choice could be taken due to false guards ; 6785924186075896943\n");
+        Printf("*** default: no choice could be taken due to false guards ; 6785924186075851682\n");
       }
     }
   fi
   
   
   c_code {
-    Printf("*** charVar = %d ; 6785924186075896947\n", charVar);
+    Printf("*** charVar = %d ; 6785924186075852457\n", charVar);
   }
   c_code {
     if (!((charVar != 'd'))) {

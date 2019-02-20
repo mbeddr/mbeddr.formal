@@ -464,5 +464,137 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="5SGsxw7TnsB">
+    <property role="TrG5h" value="_050_when_do" />
+    <node concept="1LZb2c" id="5SGsxw7TnsC" role="1SL9yI">
+      <property role="TrG5h" value="test_when_do" />
+      <node concept="3cqZAl" id="5SGsxw7TnsD" role="3clF45" />
+      <node concept="3clFbS" id="5SGsxw7TnsE" role="3clF47">
+        <node concept="3cpWs8" id="5SGsxw7TnsF" role="3cqZAp">
+          <node concept="3cpWsn" id="5SGsxw7TnsG" role="3cpWs9">
+            <property role="TrG5h" value="mPtr" />
+            <node concept="1XwpNF" id="5SGsxw7TnsH" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5SGsxw7TnsI" role="3cqZAp">
+          <node concept="37vLTI" id="5SGsxw7TnsJ" role="3clFbG">
+            <node concept="1Xw6AR" id="5SGsxw7TnsK" role="37vLTx">
+              <node concept="1dCxOl" id="5SGsxw7Tn_N" role="1XwpL7">
+                <property role="1XweGQ" value="r:f715516d-3f6a-45f4-bb39-8a75a986e256" />
+                <node concept="1j_P7g" id="5SGsxw7Tn_O" role="1j$8Uc">
+                  <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_050_when_do_testcode" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="5SGsxw7TnsN" role="37vLTJ">
+              <ref role="3cqZAo" node="5SGsxw7TnsG" resolve="mPtr" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5SGsxw7TnsO" role="3cqZAp">
+          <node concept="3cpWsn" id="5SGsxw7TnsP" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="model" />
+            <node concept="H_c77" id="5SGsxw7TnsQ" role="1tU5fm" />
+            <node concept="2OqwBi" id="5SGsxw7TnsR" role="33vP2m">
+              <node concept="37vLTw" id="5SGsxw7TnsS" role="2Oq$k0">
+                <ref role="3cqZAo" node="5SGsxw7TnsG" resolve="mPtr" />
+              </node>
+              <node concept="2yCiCJ" id="5SGsxw7TnsT" role="2OqNvi">
+                <node concept="2OqwBi" id="5SGsxw7TnsU" role="Vysub">
+                  <node concept="1jxXqW" id="5SGsxw7TnsV" role="2Oq$k0" />
+                  <node concept="liA8E" id="5SGsxw7TnsW" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5SGsxw7TnsX" role="3cqZAp">
+          <node concept="NRdvd" id="5SGsxw7TnsY" role="3clFbG">
+            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
+            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <node concept="1jxXqW" id="5SGsxw7TnsZ" role="37wK5m" />
+            <node concept="37vLTw" id="5SGsxw7Tnt0" role="37wK5m">
+              <ref role="3cqZAo" node="5SGsxw7TnsP" resolve="model" />
+            </node>
+            <node concept="Xl_RD" id="5SGsxw7Tnt1" role="37wK5m">
+              <property role="Xl_RC" value="\\baseline\\_100_hdl_050_when_do_testcode" />
+            </node>
+            <node concept="Xl_RD" id="5SGsxw7Tnt2" role="37wK5m">
+              <property role="Xl_RC" value="pml" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5SGsxw7VYOS">
+    <property role="TrG5h" value="_100_combinatorial" />
+    <node concept="1LZb2c" id="5SGsxw7VYOT" role="1SL9yI">
+      <property role="TrG5h" value="test_combinatorial" />
+      <node concept="3cqZAl" id="5SGsxw7VYOU" role="3clF45" />
+      <node concept="3clFbS" id="5SGsxw7VYOV" role="3clF47">
+        <node concept="3cpWs8" id="5SGsxw7VYOW" role="3cqZAp">
+          <node concept="3cpWsn" id="5SGsxw7VYOX" role="3cpWs9">
+            <property role="TrG5h" value="mPtr" />
+            <node concept="1XwpNF" id="5SGsxw7VYOY" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5SGsxw7VYOZ" role="3cqZAp">
+          <node concept="37vLTI" id="5SGsxw7VYP0" role="3clFbG">
+            <node concept="1Xw6AR" id="5SGsxw7VYP1" role="37vLTx">
+              <node concept="1dCxOl" id="5SGsxw7VZlr" role="1XwpL7">
+                <property role="1XweGQ" value="r:3c5d52e6-c0ec-4e1b-9e16-2b08160cf616" />
+                <node concept="1j_P7g" id="5SGsxw7VZls" role="1j$8Uc">
+                  <property role="1j_P7h" value="test.mbeddr.formal.spin._100_hdl_100_combinatorial_testcode" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="5SGsxw7VYP4" role="37vLTJ">
+              <ref role="3cqZAo" node="5SGsxw7VYOX" resolve="mPtr" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5SGsxw7VYP5" role="3cqZAp">
+          <node concept="3cpWsn" id="5SGsxw7VYP6" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="model" />
+            <node concept="H_c77" id="5SGsxw7VYP7" role="1tU5fm" />
+            <node concept="2OqwBi" id="5SGsxw7VYP8" role="33vP2m">
+              <node concept="37vLTw" id="5SGsxw7VYP9" role="2Oq$k0">
+                <ref role="3cqZAo" node="5SGsxw7VYOX" resolve="mPtr" />
+              </node>
+              <node concept="2yCiCJ" id="5SGsxw7VYPa" role="2OqNvi">
+                <node concept="2OqwBi" id="5SGsxw7VYPb" role="Vysub">
+                  <node concept="1jxXqW" id="5SGsxw7VYPc" role="2Oq$k0" />
+                  <node concept="liA8E" id="5SGsxw7VYPd" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5SGsxw7VYPe" role="3cqZAp">
+          <node concept="NRdvd" id="5SGsxw7VYPf" role="3clFbG">
+            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
+            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <node concept="1jxXqW" id="5SGsxw7VYPg" role="37wK5m" />
+            <node concept="37vLTw" id="5SGsxw7VYPh" role="37wK5m">
+              <ref role="3cqZAo" node="5SGsxw7VYP6" resolve="model" />
+            </node>
+            <node concept="Xl_RD" id="5SGsxw7VYPi" role="37wK5m">
+              <property role="Xl_RC" value="\\baseline\\_100_hdl_100_combinatorial_testcode" />
+            </node>
+            <node concept="Xl_RD" id="5SGsxw7VYPj" role="37wK5m">
+              <property role="Xl_RC" value="pml" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

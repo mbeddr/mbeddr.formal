@@ -3,61 +3,61 @@ c_decl {
 }
 
 active proctype h1(){
-  byte tmpVar_nondet_assignment_2672533419372182795;
-  byte tmpVar_nondet_assignment_2672533419372182792;
-  byte tmpVar_nondet_assignment_2672533419372182789;
-  byte tmpVar_nondet_assignment_2672533419372182786;
-  select(tmpVar_nondet_assignment_2672533419372182786 : 0 .. 2);
+  byte tmpVar_nondet_assignment_3;
+  byte tmpVar_nondet_assignment_2;
+  byte tmpVar_nondet_assignment_1;
+  byte tmpVar_nondet_assignment_0;
+  select(tmpVar_nondet_assignment_0 : 0 .. 2);
   c_code {
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182786 == 0) {
+    if (Ph1->tmpVar_nondet_assignment_0 == 0) {
       array[0] = 1;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182786 == 1) {
+    if (Ph1->tmpVar_nondet_assignment_0 == 1) {
       array[0] = 2;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182786 == 2) {
+    if (Ph1->tmpVar_nondet_assignment_0 == 2) {
       array[0] = 3;
     }
-    Printf("*** array[0] = %d ; 2672533419372183438\n", array[0]);
+    Printf("*** array[0] = %d ; 2672533419372160921\n", array[0]);
   }
-  select(tmpVar_nondet_assignment_2672533419372182789 : 0 .. 2);
+  select(tmpVar_nondet_assignment_1 : 0 .. 2);
   c_code {
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182789 == 0) {
+    if (Ph1->tmpVar_nondet_assignment_1 == 0) {
       array[1] = 1;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182789 == 1) {
+    if (Ph1->tmpVar_nondet_assignment_1 == 1) {
       array[1] = 2;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182789 == 2) {
+    if (Ph1->tmpVar_nondet_assignment_1 == 2) {
       array[1] = 3;
     }
-    Printf("*** array[1] = %d ; 2672533419372183550\n", array[1]);
+    Printf("*** array[1] = %d ; 2672533419372160921\n", array[1]);
   }
-  select(tmpVar_nondet_assignment_2672533419372182792 : 0 .. 2);
+  select(tmpVar_nondet_assignment_2 : 0 .. 2);
   c_code {
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182792 == 0) {
+    if (Ph1->tmpVar_nondet_assignment_2 == 0) {
       array[2] = 1;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182792 == 1) {
+    if (Ph1->tmpVar_nondet_assignment_2 == 1) {
       array[2] = 2;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182792 == 2) {
+    if (Ph1->tmpVar_nondet_assignment_2 == 2) {
       array[2] = 3;
     }
-    Printf("*** array[2] = %d ; 2672533419372183662\n", array[2]);
+    Printf("*** array[2] = %d ; 2672533419372160921\n", array[2]);
   }
-  select(tmpVar_nondet_assignment_2672533419372182795 : 0 .. 2);
+  select(tmpVar_nondet_assignment_3 : 0 .. 2);
   c_code {
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182795 == 0) {
+    if (Ph1->tmpVar_nondet_assignment_3 == 0) {
       array[3] = 1;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182795 == 1) {
+    if (Ph1->tmpVar_nondet_assignment_3 == 1) {
       array[3] = 2;
     }
-    if (Ph1->tmpVar_nondet_assignment_2672533419372182795 == 2) {
+    if (Ph1->tmpVar_nondet_assignment_3 == 2) {
       array[3] = 3;
     }
-    Printf("*** array[3] = %d ; 2672533419372183774\n", array[3]);
+    Printf("*** array[3] = %d ; 2672533419372160921\n", array[3]);
   }
   
   c_code {
