@@ -1,4 +1,6 @@
 c_decl {
+  \#include "D:/x/mbeddr.formal/code/languages/com.mbeddr.formal.spin/tests/test.mbeddr.formal.spin/external_c_files/simple_sm.h"
+
   int my_event;
   int res;
 }

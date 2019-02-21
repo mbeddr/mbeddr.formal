@@ -1385,6 +1385,18 @@
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
           <node concept="3zFVjK" id="78yKT8PO0pI" role="3zH0cK">
             <node concept="3clFbS" id="78yKT8PO0pJ" role="2VODD2">
+              <node concept="3cpWs8" id="78yKT8PPiih" role="3cqZAp">
+                <node concept="3cpWsn" id="78yKT8PPiii" role="3cpWs9">
+                  <property role="TrG5h" value="orig" />
+                  <node concept="3Tqbb2" id="78yKT8PPihV" role="1tU5fm" />
+                  <node concept="2OqwBi" id="78yKT8PPiij" role="33vP2m">
+                    <node concept="1iwH7S" id="78yKT8PPiik" role="2Oq$k0" />
+                    <node concept="12$id9" id="78yKT8PPiil" role="2OqNvi">
+                      <node concept="30H73N" id="78yKT8PPiim" role="12$y8L" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="78yKT8PO0V0" role="3cqZAp">
                 <node concept="3cpWs3" id="78yKT8PObaR" role="3clFbG">
                   <node concept="Xl_RD" id="78yKT8PObu6" role="3uHU7w">
@@ -1395,8 +1407,15 @@
                       <property role="Xl_RC" value="\&quot;" />
                     </node>
                     <node concept="2OqwBi" id="78yKT8PO1af" role="3uHU7w">
-                      <node concept="30H73N" id="78yKT8PO0UZ" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="78yKT8PO21f" role="2OqNvi">
+                      <node concept="1PxgMI" id="78yKT8PPkTy" role="2Oq$k0">
+                        <node concept="chp4Y" id="78yKT8PPl7N" role="3oSUPX">
+                          <ref role="cht4Q" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+                        </node>
+                        <node concept="37vLTw" id="78yKT8PPk1X" role="1m5AlR">
+                          <ref role="3cqZAo" node="78yKT8PPiii" resolve="orig" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="78yKT8PPlyb" role="2OqNvi">
                         <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
