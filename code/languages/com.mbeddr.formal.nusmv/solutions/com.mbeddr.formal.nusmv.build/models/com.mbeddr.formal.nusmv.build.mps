@@ -230,18 +230,6 @@
         <ref role="398BVh" node="42jqVeFkUtk" resolve="mps_home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="3ZV5FZJulKr" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
-      <node concept="398BVA" id="3ZV5FZJulQf" role="2JcizS">
-        <ref role="398BVh" node="42jqVeFkUtk" resolve="mps_home" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="3ZV5FZJum18" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:5mc7nVumjii" resolve="mpsDebuggerPlugin" />
-      <node concept="398BVA" id="3ZV5FZJum72" role="2JcizS">
-        <ref role="398BVh" node="42jqVeFkUtk" resolve="mps_home" />
-      </node>
-    </node>
     <node concept="10PD9b" id="42jqVeFkUtc" role="10PD9s" />
     <node concept="3b7kt6" id="42jqVeFkUtd" role="10PD9s" />
     <node concept="3jsGME" id="4RNGGOMK53K" role="3989C9">
@@ -518,15 +506,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="42jqVeFkZBA" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:6pse5qHNfTX" resolve="mpsHttpSupportPlugin" />
-      <node concept="398BVA" id="42jqVeFkZEF" role="2JcizS">
-        <ref role="398BVh" node="42jqVeFkUtk" resolve="mps_home" />
-        <node concept="2Ry0Ak" id="42jqVeFkZHx" role="iGT6I">
-          <property role="2Ry0Am" value="plugins" />
-        </node>
-      </node>
-    </node>
     <node concept="1l3spV" id="42jqVeFkUvc" role="1l3spN">
       <node concept="3_I8Xc" id="42jqVeFkUvk" role="39821P">
         <ref role="3_I8Xa" to="ffeo:1diLdO26H79" resolve="languages" />
@@ -776,9 +755,6 @@
         </node>
         <node concept="3_I8Xc" id="4aeOpjl$dt2" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5xhjlkpPhA8" resolve="http-support" />
-        </node>
-        <node concept="3_I8Xc" id="4aeOpjlAaGY" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
         </node>
         <node concept="3_I8Xc" id="4aeOpjlAb01" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
