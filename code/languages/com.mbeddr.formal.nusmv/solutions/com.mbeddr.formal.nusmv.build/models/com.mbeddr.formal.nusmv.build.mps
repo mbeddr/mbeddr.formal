@@ -728,6 +728,18 @@
           <node concept="3LWZYq" id="2QnUwHmUGHE" role="1juEy9">
             <property role="3LWZYl" value="**/com.mbeddr.mpsutil.plantuml/lib/**" />
           </node>
+          <node concept="3LWZYq" id="1vA$0pD5U28" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.blutil.test.waitfor/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD6vPB" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.blutil.test.waitfor/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD6vRW" role="1juEy9">
+            <property role="3LWZYl" value="**/codereview/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD6w7e" role="1juEy9">
+            <property role="3LWZYl" value="**/org.mockito/**" />
+          </node>
         </node>
         <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">
           <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
