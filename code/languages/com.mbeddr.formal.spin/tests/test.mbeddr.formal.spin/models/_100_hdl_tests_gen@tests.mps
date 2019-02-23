@@ -10,10 +10,7 @@
   </languages>
   <imports>
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.formal.spin.testing_utils)" />
-    <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.formal.spin.analyzer.model)" />
-    <import index="ecpe" ref="r:f42bbcc9-5fb1-4f38-8396-ef1ff595c33c(com.mbeddr.formal.base.tooling.testing)" />
+    <import index="fd8w" ref="r:16c8ea64-b7a6-4f9e-8081-861be8940c31(com.mbeddr.formal.base.testing.utils.baseline)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -147,8 +144,8 @@
         </node>
         <node concept="3clFbF" id="5mQCqLmAXN4" role="3cqZAp">
           <node concept="NRdvd" id="6kOHW5f_O85" role="3clFbG">
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="6kOHW5f_O86" role="37wK5m" />
             <node concept="37vLTw" id="6kOHW5f_O9g" role="37wK5m">
               <ref role="3cqZAo" node="6kOHW5f_NWZ" resolve="model" />
@@ -197,8 +194,8 @@
         </node>
         <node concept="3clFbF" id="6kOHW5f_Lmt" role="3cqZAp">
           <node concept="NRdvd" id="6kOHW5f_Noe" role="3clFbG">
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="6kOHW5f_Nof" role="37wK5m" />
             <node concept="37vLTw" id="6kOHW5f_Nog" role="37wK5m">
               <ref role="3cqZAo" node="6kOHW5f_NdB" resolve="model" />
@@ -263,8 +260,8 @@
         </node>
         <node concept="3clFbF" id="6kOHW5f_Lsg" role="3cqZAp">
           <node concept="NRdvd" id="6kOHW5f_NrV" role="3clFbG">
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="6kOHW5f_NrW" role="37wK5m" />
             <node concept="37vLTw" id="6kOHW5f_NrX" role="37wK5m">
               <ref role="3cqZAo" node="6kOHW5f_Lsd" resolve="model" />
@@ -322,8 +319,8 @@
         </node>
         <node concept="3clFbF" id="2kmJJKS2pyO" role="3cqZAp">
           <node concept="NRdvd" id="2kmJJKS2pyP" role="3clFbG">
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="2kmJJKS2pyQ" role="37wK5m" />
             <node concept="37vLTw" id="2kmJJKS2pyR" role="37wK5m">
               <ref role="3cqZAo" node="2kmJJKS2pyG" resolve="model" />
@@ -381,8 +378,8 @@
         </node>
         <node concept="3clFbF" id="5SGsxw7KVLA" role="3cqZAp">
           <node concept="NRdvd" id="5SGsxw7KVLB" role="3clFbG">
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="5SGsxw7KVLC" role="37wK5m" />
             <node concept="37vLTw" id="5SGsxw7KVLD" role="37wK5m">
               <ref role="3cqZAo" node="5SGsxw7KVLu" resolve="model" />
@@ -447,8 +444,8 @@
         </node>
         <node concept="3clFbF" id="5SGsxw7MCI6" role="3cqZAp">
           <node concept="NRdvd" id="5SGsxw7MCI7" role="3clFbG">
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="5SGsxw7MCI8" role="37wK5m" />
             <node concept="37vLTw" id="5SGsxw7MCI9" role="37wK5m">
               <ref role="3cqZAo" node="5SGsxw7MCHY" resolve="model" />
@@ -513,8 +510,8 @@
         </node>
         <node concept="3clFbF" id="5SGsxw7TnsX" role="3cqZAp">
           <node concept="NRdvd" id="5SGsxw7TnsY" role="3clFbG">
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="5SGsxw7TnsZ" role="37wK5m" />
             <node concept="37vLTw" id="5SGsxw7Tnt0" role="37wK5m">
               <ref role="3cqZAo" node="5SGsxw7TnsP" resolve="model" />
@@ -579,8 +576,8 @@
         </node>
         <node concept="3clFbF" id="5SGsxw7VYPe" role="3cqZAp">
           <node concept="NRdvd" id="5SGsxw7VYPf" role="3clFbG">
-            <ref role="37wK5l" to="ecpe:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <ref role="1Pybhc" to="ecpe:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
             <node concept="1jxXqW" id="5SGsxw7VYPg" role="37wK5m" />
             <node concept="37vLTw" id="5SGsxw7VYPh" role="37wK5m">
               <ref role="3cqZAo" node="5SGsxw7VYP6" resolve="model" />

@@ -758,9 +758,6 @@
           <node concept="3LWZYq" id="1vA$0pD76c7" role="1juEy9">
             <property role="3LWZYl" value="**/com.mbeddr.mpsutil.processwizard/**" />
           </node>
-          <node concept="3LWZYq" id="1vA$0pD7aDn" role="1juEy9">
-            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.smodule/**" />
-          </node>
           <node concept="3LWZYq" id="1vA$0pD76Cm" role="1juEy9">
             <property role="3LWZYl" value="**/com.mbeddr.mpsutil.vcs/**" />
           </node>
@@ -1088,9 +1085,6 @@
       </node>
       <node concept="m$_yC" id="42jqVeFkUv9" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
-      </node>
-      <node concept="m$_yC" id="2Shgyhe67JK" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
       <node concept="m$_yC" id="4aeOpjl$egK" role="m$_yJ">
         <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
