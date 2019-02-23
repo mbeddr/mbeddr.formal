@@ -726,26 +726,74 @@
             <property role="3LWZYl" value="**/lib/jung/**" />
           </node>
           <node concept="3LWZYq" id="2QnUwHmUGHE" role="1juEy9">
-            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.plantuml/lib/**" />
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.actionsfilter/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD79gf" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.actionsfilter.lang/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD79rm" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.asynccell/**" />
           </node>
           <node concept="3LWZYq" id="1vA$0pD5U28" role="1juEy9">
             <property role="3LWZYl" value="**/com.mbeddr.mpsutil.blutil.test.waitfor/**" />
           </node>
-          <node concept="3LWZYq" id="1vA$0pD6vPB" role="1juEy9">
-            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.blutil.test.waitfor/**" />
+          <node concept="3LWZYq" id="1vA$0pD79GW" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.buildassistent/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7a0H" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.dataflow/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7anI" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.modellisteners/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD78Wx" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.parametrizedMenu/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7MpS" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.placeholderTextList/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7LZz" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.plantuml/lib/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD76c7" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.processwizard/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7aDn" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.smodule/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD76Cm" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.vcs/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD76RE" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.xmlImport/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7b6_" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.platform.build/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7799" role="1juEy9">
+            <property role="3LWZYl" value="**/de.itemis.mps.build.gradlesupport/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD7LsB" role="1juEy9">
+            <property role="3LWZYl" value="**/de.slisson.mps.all/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD78eE" role="1juEy9">
+            <property role="3LWZYl" value="**/de.q60.shadowmodels/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD78Ji" role="1juEy9">
+            <property role="3LWZYl" value="**/de.q60.shadowmodels.examples/**" />
           </node>
           <node concept="3LWZYq" id="1vA$0pD6vRW" role="1juEy9">
             <property role="3LWZYl" value="**/codereview/**" />
           </node>
-          <node concept="3LWZYq" id="1vA$0pD6w7e" role="1juEy9">
+          <node concept="3LWZYq" id="1vA$0pD7MZv" role="1juEy9">
             <property role="3LWZYl" value="**/org.mockito/**" />
+          </node>
+          <node concept="3LWZYq" id="1vA$0pD77Kd" role="1juEy9">
+            <property role="3LWZYl" value="**/mps-math-editor/**" />
           </node>
         </node>
         <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">
           <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
-        </node>
-        <node concept="3_I8Xc" id="42jqVeFkUvG" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1diLdO26H7T" resolve="cvsIntegration" />
         </node>
         <node concept="3_I8Xc" id="42jqVeFkUvH" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="svn4idea" />
