@@ -75,6 +75,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -113,6 +119,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -130,6 +139,35 @@
   <node concept="1M2fIO" id="1ZejHLm3NZk">
     <property role="3GE5qa" value="harness" />
     <ref role="1M2myG" to="y6ji:1ZejHLlNYNl" resolve="HarnessDefinition" />
+    <node concept="9SQb8" id="3ktd_7QX7tj" role="9SGkC">
+      <node concept="3clFbS" id="3ktd_7QX7tk" role="2VODD2">
+        <node concept="3SKdUt" id="cQ6ZodorOS" role="3cqZAp">
+          <node concept="3SKdUq" id="cQ6ZodorOU" role="3SKWNk">
+            <property role="3SKdUp" value="we allow only HDLCommentLine nodes" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="cQ6Zodop_8" role="3cqZAp">
+          <node concept="3clFbS" id="cQ6Zodop_a" role="3clFbx">
+            <node concept="3cpWs6" id="cQ6ZodoqUn" role="3cqZAp">
+              <node concept="3clFbT" id="cQ6ZodoqUp" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="cQ6Zodoq1P" role="3clFbw">
+            <node concept="2DD5aU" id="cQ6ZodopGK" role="2Oq$k0" />
+            <node concept="3O6GUB" id="cQ6Zodoq_2" role="2OqNvi">
+              <node concept="chp4Y" id="cQ6ZodoqJl" role="3QVz_e">
+                <ref role="cht4Q" to="vshk:48uT1AITlav" resolve="CommentLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="cQ6Zodor$A" role="3cqZAp">
+          <node concept="3clFbT" id="cQ6Zodor$_" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="1vcsY83jtBd">
     <property role="3GE5qa" value="harness.content.loops" />

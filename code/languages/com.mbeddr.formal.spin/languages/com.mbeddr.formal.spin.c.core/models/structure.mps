@@ -220,6 +220,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1ZejHLlNdmJ" resolve="FunctionDeclaration" />
     </node>
+    <node concept="PrWs8" id="cQ6Zodo_sr" role="PzmwI">
+      <ref role="PrY4T" node="5SGsxw7KsPP" resolve="ICLevelExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNdyR">
     <property role="EcuMT" value="2291855968617420983" />
@@ -254,6 +257,14 @@
       <property role="TrG5h" value="extern" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyj" id="3ktd_7QXtfL" role="1TKVEi">
+      <property role="IQ2ns" value="3827274983998346225" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tpe" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1ZejHLlNdmO" resolve="TypeBase" />
+      <ref role="20ksaX" to="o3hv:1ZejHLlNdng" resolve="tpe" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNDPB">
     <property role="EcuMT" value="2291855968617536871" />
@@ -270,6 +281,9 @@
     </node>
     <node concept="PrWs8" id="6fYDdj_cUJi" role="PzmwI">
       <ref role="PrY4T" to="o3hv:4_pH3zvgMJc" resolve="IVariableReference" />
+    </node>
+    <node concept="PrWs8" id="3ktd_7QXc31" role="PzmwI">
+      <ref role="PrY4T" node="5SGsxw7KsPP" resolve="ICLevelExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlS03K">
@@ -347,6 +361,9 @@
     </node>
     <node concept="PrWs8" id="5mKzygM2UAk" role="PzmwI">
       <ref role="PrY4T" to="o3hv:1ZejHLlNdmI" resolve="ISUVModuleContent" />
+    </node>
+    <node concept="PrWs8" id="cQ6Zodq59k" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:4_pH3zvds0D" resolve="IPromelaModelContent" />
     </node>
     <node concept="PrWs8" id="5mKzygM2UAs" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />

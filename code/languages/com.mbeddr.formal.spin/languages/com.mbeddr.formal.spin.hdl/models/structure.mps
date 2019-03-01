@@ -125,6 +125,9 @@
     <node concept="PrWs8" id="1ZejHLlNqem" role="PzmwI">
       <ref role="PrY4T" node="1ZejHLlNgt6" resolve="IHarnessModuleContent" />
     </node>
+    <node concept="PrWs8" id="cQ6ZodrxUH" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:6fYDdj_f_xg" resolve="ICCodeContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlNgu$">
     <property role="EcuMT" value="2291855968617432996" />
@@ -352,6 +355,12 @@
     </node>
     <node concept="PrWs8" id="1vA$0pD2Gal" role="PzmwI">
       <ref role="PrY4T" node="1ZejHLlNgt6" resolve="IHarnessModuleContent" />
+    </node>
+    <node concept="PrWs8" id="cQ6Zodomr0" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:1ZejHLlNdmI" resolve="ISUVModuleContent" />
+    </node>
+    <node concept="PrWs8" id="cQ6ZodoAPR" role="PzmwI">
+      <ref role="PrY4T" to="vshk:1vcsY83fkZr" resolve="ICLevelStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5SGsxw7Awat">

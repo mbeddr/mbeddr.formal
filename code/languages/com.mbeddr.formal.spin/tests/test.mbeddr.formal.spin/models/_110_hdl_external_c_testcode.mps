@@ -54,9 +54,6 @@
       <concept id="6174591375234693062" name="com.mbeddr.formal.spin.c.core.structure.PointerType" flags="ng" index="1BJnBy">
         <child id="6174591375234693177" name="inner" index="1BJnot" />
       </concept>
-      <concept id="4764496254764143263" name="com.mbeddr.formal.spin.c.core.structure.CommentLine" flags="ng" index="3GYVq6">
-        <property id="4764496254764143264" name="comment" index="3GYVqT" />
-      </concept>
       <concept id="2417655713189973303" name="com.mbeddr.formal.spin.c.core.structure.SUVRef" flags="ng" index="3Orf0S">
         <reference id="2417655713189973321" name="suv" index="3Orf16" />
       </concept>
@@ -86,9 +83,9 @@
         <child id="2291855968617669565" name="right" index="1a7IPx" />
         <child id="2291855968617669562" name="left" index="1a7IPA" />
       </concept>
-      <concept id="6785924186072810141" name="" flags="ng" index="1pHB25">
-        <child id="2291855968617658642" name="" index="1a7zve" />
-        <child id="2291855968617658347" name="" index="1a7z$R" />
+      <concept id="6785924186072810141" name="com.mbeddr.formal.spin.hdl.structure.AbstractAssignment" flags="ng" index="1pHB25">
+        <child id="2291855968617658642" name="range" index="1a7zve" />
+        <child id="2291855968617658347" name="var" index="1a7z$R" />
       </concept>
       <concept id="6174591375235306382" name="com.mbeddr.formal.spin.hdl.structure.StatementContent" flags="ng" index="1BDXQE">
         <child id="6174591375235306389" name="stmt" index="1BDXQL" />
@@ -198,8 +195,8 @@
             <ref role="2svBNF" node="26dfgZm3_tw" />
           </node>
         </node>
-        <node concept="1BJfSN" id="3OkkWixqyUz" role="2H9Iav">
-          <ref role="1BJfSZ" node="5mKzygM3jiv" resolve="ARRAY_SIZE" />
+        <node concept="2IPVmt" id="cQ6ZodreV9" role="2H9Iav">
+          <property role="2IPVms" value="5" />
         </node>
       </node>
     </node>
@@ -243,8 +240,8 @@
             <property role="2IPVms" value="0" />
           </node>
           <node concept="2mpP4x" id="2yuIwRzeUU7" role="3bEerk">
-            <node concept="3GYVq6" id="48uT1AIUKnB" role="2mpP4z">
-              <property role="3GYVqT" value="should fail due to arrays containing duplicated entries (innequality below is strict)" />
+            <node concept="3GKqyE" id="cQ6ZodoBRw" role="2mpP4z">
+              <property role="Pedrh" value="should fail due to arrays containing duplicated entries (innequality below is strict)" />
             </node>
             <node concept="19KjX3" id="1vcsY83gYSt" role="2mpP4z">
               <node concept="2xSS$N" id="1vcsY83gZ93" role="19KjIs">
@@ -318,6 +315,11 @@
       <property role="1RwFax" value="true" />
       <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="external_c_files/quicksort.c" />
+    </node>
+    <node concept="3NXOOs" id="cQ6ZodoEED" role="3OpL_s">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="external_c_files/quicksort.h" />
     </node>
   </node>
   <node concept="2meLlA" id="2yuIwRziuQD">
