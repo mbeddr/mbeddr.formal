@@ -403,14 +403,14 @@
       <property role="IQ2ns" value="6785924186073098795" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="seed" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="5SGsxw7BACI" role="1TKVEi">
       <property role="IQ2ns" value="6785924186073098798" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="times" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>

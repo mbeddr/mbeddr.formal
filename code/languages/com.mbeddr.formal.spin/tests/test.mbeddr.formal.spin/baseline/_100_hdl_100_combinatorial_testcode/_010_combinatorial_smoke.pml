@@ -139,14 +139,14 @@ active proctype h1(){
     :: else
   fi
   
-  //should pass
+  // should pass
   c_code {
     if (!((!((charVar == 'b' && doubleVar == 2.2 && intVar == 2))))) {
       uerror("assertion violated: (!(charVar=='b'&&doubleVar==2.2&&intVar==2))");;
     }
   }
   
-  //should fail
+  // should fail
   c_code {
     if (!((!((charVar == 'b' && doubleVar == 2.2))))) {
       uerror("assertion violated: (!(charVar=='b'&&doubleVar==2.2))");;

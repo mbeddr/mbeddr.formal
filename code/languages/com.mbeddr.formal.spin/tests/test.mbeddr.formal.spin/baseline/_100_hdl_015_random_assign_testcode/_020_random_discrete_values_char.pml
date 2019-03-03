@@ -6,7 +6,7 @@ c_decl {
 }
 
 active proctype h1(){
-  //generate 15 random values
+  // generate 15 random values
   c_code {
     srand(11);
   }
