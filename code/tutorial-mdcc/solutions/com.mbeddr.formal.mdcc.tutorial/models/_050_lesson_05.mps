@@ -105,9 +105,6 @@
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
-      <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
-        <property id="7320199582618415059" name="value" index="ru7PJ" />
-      </concept>
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
@@ -160,8 +157,8 @@
     </node>
     <node concept="1a0OAr" id="cQ6Zod$W3G" role="1a0O6w" />
     <node concept="kFILp" id="cQ6Zod$W7r" role="1a0O6w">
-      <node concept="ru7O1" id="cQ6Zod$W9v" role="kFILs">
-        <property role="ru7PJ" value="crt_state" />
+      <node concept="1a0deV" id="cQ6Zod$XeR" role="kFILs">
+        <ref role="2m6DZP" node="cQ6Zod$Xe7" resolve="crt_state" />
       </node>
       <node concept="2svBNI" id="cQ6Zod$W9M" role="kirKP">
         <node concept="2svBNE" id="cQ6Zod$Wa3" role="2svBNJ">
@@ -243,6 +240,10 @@
         <node concept="1a0DH$" id="cQ6Zod$Vi$" role="1a0DGc" />
       </node>
       <node concept="1a0DGp" id="cQ6Zod$Vhq" role="1a0DGc" />
+    </node>
+    <node concept="1a039r" id="cQ6Zod$Xe7" role="1a0Dvu">
+      <property role="TrG5h" value="crt_state" />
+      <node concept="1a0DGp" id="cQ6Zod$Xe5" role="1a0DGc" />
     </node>
     <node concept="3NXOOs" id="cQ6Zod$Vaj" role="3OpL_s">
       <property role="1RwFax" value="true" />
