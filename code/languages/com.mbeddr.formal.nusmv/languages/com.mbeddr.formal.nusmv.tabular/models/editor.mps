@@ -40,6 +40,7 @@
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
       </concept>
+      <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -264,9 +265,15 @@
   <node concept="24kQdi" id="2CFqY3vtAwI">
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
-    <node concept="3F0A7n" id="2CFqY3vtAwK" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      <ref role="1ERwB7" node="7Z6$Wo5Nw04" resolve="deleteOutputColumn" />
+    <node concept="3EZMnI" id="l_5LCBS3TK" role="2wV5jI">
+      <node concept="18a60v" id="l_5LCBS3Ub" role="3EZMnx">
+        <node concept="VPM3Z" id="l_5LCBS3Ud" role="3F10Kt" />
+      </node>
+      <node concept="2iRkQZ" id="l_5LCBS3TL" role="2iSdaV" />
+      <node concept="3F0A7n" id="2CFqY3vtAwK" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1ERwB7" node="7Z6$Wo5Nw04" resolve="deleteOutputColumn" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2mjHtwTIKky">

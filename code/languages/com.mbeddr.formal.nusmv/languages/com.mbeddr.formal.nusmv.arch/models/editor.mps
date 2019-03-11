@@ -94,6 +94,7 @@
       <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
         <property id="1235999920262" name="align" index="37lx6p" />
       </concept>
+      <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -4136,7 +4137,7 @@
                                     <ref role="3cqZAo" node="43FRfGJOAX7" resolve="fromDef" />
                                   </node>
                                   <node concept="2qgKlT" id="2mjHtwTLsnS" role="2OqNvi">
-                                    <ref role="37wK5l" to="irze:2mjHtwTKZMe" resolve="createDotTarget" />
+                                    <ref role="37wK5l" to="irze:2mjHtwTKZMe" resolve="createOutputPortRefDotTarget" />
                                   </node>
                                 </node>
                               </node>
@@ -4957,7 +4958,7 @@
                                       <ref role="3cqZAo" node="43FRfGJS8NC" resolve="sourcePort" />
                                     </node>
                                     <node concept="2qgKlT" id="3iZarOHZSBy" role="2OqNvi">
-                                      <ref role="37wK5l" to="irze:2mjHtwTKZMe" resolve="createDotTarget" />
+                                      <ref role="37wK5l" to="irze:2mjHtwTKZMe" resolve="createOutputPortRefDotTarget" />
                                     </node>
                                   </node>
                                 </node>
@@ -5558,17 +5559,23 @@
   <node concept="24kQdi" id="4H8XLSF4jU5">
     <property role="3GE5qa" value="tables" />
     <ref role="1XX52x" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
-    <node concept="3EZMnI" id="4H8XLSF4jU7" role="2wV5jI">
-      <node concept="3F0ifn" id="4H8XLSF4jUh" role="3EZMnx">
-        <property role="3F0ifm" value="output" />
-        <node concept="VechU" id="4H8XLSF6ceA" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+    <node concept="3EZMnI" id="l_5LCBSF$d" role="2wV5jI">
+      <node concept="18a60v" id="l_5LCBSFCN" role="3EZMnx">
+        <node concept="VPM3Z" id="l_5LCBSFCP" role="3F10Kt" />
+      </node>
+      <node concept="2iRkQZ" id="l_5LCBSF$e" role="2iSdaV" />
+      <node concept="3EZMnI" id="4H8XLSF4jU7" role="3EZMnx">
+        <node concept="3F0ifn" id="4H8XLSF4jUh" role="3EZMnx">
+          <property role="3F0ifm" value="output" />
+          <node concept="VechU" id="4H8XLSF6ceA" role="3F10Kt">
+            <property role="Vb096" value="lightGray" />
+          </node>
         </node>
+        <node concept="3F0A7n" id="4H8XLSF4jUw" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="4H8XLSF4jUa" role="2iSdaV" />
       </node>
-      <node concept="3F0A7n" id="4H8XLSF4jUw" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="l2Vlx" id="4H8XLSF4jUa" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4H8XLSF4jV9">
