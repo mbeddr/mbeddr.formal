@@ -137,6 +137,7 @@
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -763,13 +764,29 @@
     <node concept="9S07l" id="7Z6$Wo5VwN4" role="9Vyp8">
       <node concept="3clFbS" id="7Z6$Wo5VwN5" role="2VODD2">
         <node concept="3clFbF" id="7Z6$Wo5Vx1I" role="3cqZAp">
-          <node concept="2OqwBi" id="7Z6$Wo5Vxm9" role="3clFbG">
-            <node concept="2DA6wF" id="7Z6$Wo5Vx1H" role="2Oq$k0" />
-            <node concept="liA8E" id="7Z6$Wo5Vy5n" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-              <node concept="359W_D" id="7Z6$Wo5VxtZ" role="37wK5m">
-                <ref role="359W_E" to="ahnd:1$vmWKMr0SG" resolve="TransitionForInternalVariable" />
-                <ref role="359W_F" to="ahnd:1$vmWKMr0SH" resolve="guard" />
+          <node concept="1Wc70l" id="3epRGh6Gxjc" role="3clFbG">
+            <node concept="2OqwBi" id="3epRGh6Gz67" role="3uHU7B">
+              <node concept="2OqwBi" id="3epRGh6GxGz" role="2Oq$k0">
+                <node concept="nLn13" id="3epRGh6Gxs8" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="3epRGh6Gybz" role="2OqNvi">
+                  <node concept="1xMEDy" id="3epRGh6Gyb_" role="1xVPHs">
+                    <node concept="chp4Y" id="3epRGh6Gyp0" role="ri$Ld">
+                      <ref role="cht4Q" to="ahnd:3UuTDIOP4Kz" resolve="StateMachineSection" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="3epRGh6GyLz" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="3epRGh6G$wd" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="7Z6$Wo5Vxm9" role="3uHU7w">
+              <node concept="2DA6wF" id="7Z6$Wo5Vx1H" role="2Oq$k0" />
+              <node concept="liA8E" id="7Z6$Wo5Vy5n" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="359W_D" id="7Z6$Wo5VxtZ" role="37wK5m">
+                  <ref role="359W_E" to="ahnd:1$vmWKMr0SG" resolve="TransitionForInternalVariable" />
+                  <ref role="359W_F" to="ahnd:1$vmWKMr0SH" resolve="guard" />
+                </node>
               </node>
             </node>
           </node>
