@@ -9,6 +9,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="vlrt" ref="r:3ddaee68-0b72-48af-bc28-bb60d8c7c95e(com.mbeddr.formal.base.tabular.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -62,6 +63,7 @@
     <property role="TrG5h" value="FunctionTableSection" />
     <property role="34LRSv" value="FUNCTION-TABLE" />
     <property role="R4oN_" value="function table" />
+    <property role="3GE5qa" value="function_table" />
     <node concept="PrWs8" id="2CFqY3vuOM7" role="PzmwI">
       <ref role="PrY4T" to="gioj:6NmtaR1UNLQ" resolve="IModuleContent" />
     </node>
@@ -84,7 +86,7 @@
   </node>
   <node concept="1TIwiD" id="2CFqY3vt_tZ">
     <property role="EcuMT" value="3038640987157452671" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function_table" />
     <property role="TrG5h" value="FunctionValueDeclaration" />
     <property role="34LRSv" value="function value definition" />
     <property role="R4oN_" value="function definition" />
@@ -99,6 +101,7 @@
   <node concept="1TIwiD" id="2mjHtwTIKkx">
     <property role="EcuMT" value="2707707741265921313" />
     <property role="TrG5h" value="FunctionValueContentDotTarget" />
+    <property role="3GE5qa" value="function_table" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
     <node concept="1TJgyj" id="2mjHtwTIKk$" role="1TKVEi">
       <property role="IQ2ns" value="2707707741265921316" />
@@ -115,6 +118,7 @@
   <node concept="1TIwiD" id="7Z6$Wo5MK$S">
     <property role="EcuMT" value="9207208966915557688" />
     <property role="TrG5h" value="FunctionValueRef" />
+    <property role="3GE5qa" value="function_table" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="7Z6$Wo5MK$T" role="1TKVEi">
       <property role="IQ2ns" value="9207208966915557689" />
@@ -122,6 +126,76 @@
       <property role="20kJfa" value="functionValue" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="l_5LCC9e3n">
+    <property role="EcuMT" value="388742343947509975" />
+    <property role="TrG5h" value="SingleOutputTabularExpression" />
+    <property role="34LRSv" value="tabular conditional expression" />
+    <property role="3GE5qa" value="tabular_expressions" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="l_5LCC9e3o" role="1TKVEi">
+      <property role="IQ2ns" value="388742343947509976" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="table" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vlrt:l_5LCC8U3k" resolve="SingleOutputConditionTable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="l_5LCCvaPg">
+    <property role="EcuMT" value="388742343953263952" />
+    <property role="TrG5h" value="ActionsTableSection" />
+    <property role="34LRSv" value="ACTIONS-TABLE" />
+    <property role="3GE5qa" value="actions_table" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="l_5LCCvaPh" role="PzmwI">
+      <ref role="PrY4T" to="gioj:6NmtaR1UNLQ" resolve="IModuleContent" />
+    </node>
+    <node concept="1TJgyj" id="l_5LCCvaPj" role="1TKVEi">
+      <property role="IQ2ns" value="388742343953263955" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="table" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vlrt:l_5LCCuAtv" resolve="MultipleActionsConditionTable" />
+    </node>
+    <node concept="1TJgyj" id="l_5LCC$8Fe" role="1TKVEi">
+      <property role="IQ2ns" value="388742343954565838" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="l_5LCC$8F4" resolve="ActionDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="l_5LCC$8F4">
+    <property role="EcuMT" value="388742343954565828" />
+    <property role="3GE5qa" value="actions_table" />
+    <property role="TrG5h" value="ActionDeclaration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7DjHWdyg6ga" role="1TKVEi">
+      <property role="IQ2ns" value="8814590945489085450" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="l_5LCC$8F5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="l_5LCC$8Fa" role="PzmwI">
+      <ref role="PrY4T" to="vlrt:l_5LCCuAuF" resolve="IAbstractAction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3epRGh6AlhT">
+    <property role="EcuMT" value="3718247901950465145" />
+    <property role="TrG5h" value="DecisionTableExpression" />
+    <property role="3GE5qa" value="tabular_expressions" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="3epRGh6AlhU" role="1TKVEi">
+      <property role="IQ2ns" value="3718247901950465146" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="decTab" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="vlrt:3epRGh6uEEB" resolve="DecisionTable" />
     </node>
   </node>
 </model>

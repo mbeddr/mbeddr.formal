@@ -103,6 +103,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="2CFqY3vuOMc">
+    <property role="3GE5qa" value="function_table" />
     <ref role="1M2myG" to="jx4r:2CFqY3vt_oe" resolve="FunctionTableSection" />
     <node concept="9S07l" id="2CFqY3vuOMB" role="9Vyp8">
       <node concept="3clFbS" id="2CFqY3vuOMC" role="2VODD2">
@@ -143,7 +144,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2mjHtwTGpMQ">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function_table" />
     <ref role="1M2myG" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
     <node concept="9S07l" id="2mjHtwTGpMR" role="9Vyp8">
       <node concept="3clFbS" id="2mjHtwTGpMS" role="2VODD2">
@@ -167,6 +168,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2mjHtwTIKlq">
+    <property role="3GE5qa" value="function_table" />
     <ref role="1M2myG" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
     <node concept="1N5Pfh" id="2mjHtwTIKtW" role="1Mr941">
       <ref role="1N5Vy1" to="jx4r:2mjHtwTIKk$" resolve="functionValueContent" />
@@ -221,6 +223,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7Z6$Wo5MK_q">
+    <property role="3GE5qa" value="function_table" />
     <ref role="1M2myG" to="jx4r:7Z6$Wo5MK$S" resolve="FunctionValueRef" />
     <node concept="1N5Pfh" id="7Z6$Wo5MK_r" role="1Mr941">
       <ref role="1N5Vy1" to="jx4r:7Z6$Wo5MK$T" resolve="functionValue" />

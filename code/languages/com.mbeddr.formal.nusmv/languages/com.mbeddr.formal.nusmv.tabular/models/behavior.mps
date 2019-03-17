@@ -90,6 +90,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="2mjHtwTIMha">
+    <property role="3GE5qa" value="function_table" />
     <ref role="13h7C2" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
     <node concept="13hLZK" id="2mjHtwTIMhb" role="13h7CW">
       <node concept="3clFbS" id="2mjHtwTIMhc" role="2VODD2" />
@@ -119,7 +120,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2mjHtwTL0a2">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="function_table" />
     <ref role="13h7C2" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
     <node concept="13hLZK" id="2mjHtwTL0a3" role="13h7CW">
       <node concept="3clFbS" id="2mjHtwTL0a4" role="2VODD2" />
