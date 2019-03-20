@@ -11,11 +11,13 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -276,15 +278,19 @@
   <node concept="AxPO7" id="l_5LCCuMnG">
     <property role="3GE5qa" value="new_condition_table.multiple_actions" />
     <property role="TrG5h" value="EConditionValue" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="l_5LCCuMnL" role="M5hS2">
       <property role="1uS6qo" value="-" />
+      <property role="1uS6qv" value="-" />
     </node>
     <node concept="M4N5e" id="l_5LCCuMnH" role="M5hS2">
       <property role="1uS6qo" value="T" />
+      <property role="1uS6qv" value="T" />
     </node>
     <node concept="M4N5e" id="l_5LCCuMnI" role="M5hS2">
       <property role="1uS6qo" value="F" />
+      <property role="1uS6qv" value="F" />
     </node>
   </node>
   <node concept="1TIwiD" id="3epRGh6uEEB">

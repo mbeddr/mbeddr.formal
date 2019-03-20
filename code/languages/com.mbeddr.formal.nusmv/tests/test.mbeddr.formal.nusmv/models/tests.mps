@@ -38,7 +38,26 @@
       <concept id="4599377533215110828" name="com.mbeddr.formal.nusmv.arch.structure.ModulesWiringSection" flags="ng" index="18TFfj" />
     </language>
     <language id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular">
-      <concept id="3038640987157452671" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
+      <concept id="388742343953263952" name="com.mbeddr.formal.nusmv.tabular.structure.ActionsTableSection" flags="ng" index="H6rDa">
+        <child id="388742343953263955" name="table" index="H6rD9" />
+        <child id="388742343954565838" name="actionsDeclarations" index="HXpRk" />
+      </concept>
+      <concept id="388742343947509975" name="com.mbeddr.formal.nusmv.tabular.structure.SingleOutputTabularExpression" flags="ng" index="Hgvvd">
+        <child id="388742343947509976" name="table" index="Hgvv2" />
+        <child id="5067862415172554332" name="default" index="1kJmho" />
+      </concept>
+      <concept id="388742343954565828" name="com.mbeddr.formal.nusmv.tabular.structure.ActionDeclaration" flags="ng" index="HXpRu">
+        <child id="8814590945489085450" name="actions" index="o4Xf9" />
+      </concept>
+      <concept id="5067862415174101972" name="com.mbeddr.formal.nusmv.tabular.structure.ActionEntry" flags="ng" index="1lls7g">
+        <child id="5067862415174101973" name="lhs" index="1lls7h" />
+        <child id="5067862415174101975" name="rhs" index="1lls7j" />
+      </concept>
+      <concept id="3718247901950465145" name="com.mbeddr.formal.nusmv.tabular.structure.DecisionTableExpression" flags="ng" index="1P08EX">
+        <child id="5067862415172545043" name="default" index="1kJg0n" />
+        <child id="3718247901950465146" name="decTab" index="1P08EY" />
+      </concept>
+      <concept id="3038640987157452671" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueDeclaration" flags="ng" index="3PnjMv" />
       <concept id="3038640987157452302" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
         <child id="3038640987157837161" name="table" index="3PlPU9" />
       </concept>
@@ -224,6 +243,32 @@
       </concept>
     </language>
     <language id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.base.tabular">
+      <concept id="388742343953163755" name="com.mbeddr.formal.base.tabular.structure.ConditionValue" flags="ng" index="H7zbL">
+        <property id="388742343953163771" name="value" index="H7zbx" />
+      </concept>
+      <concept id="388742343953114975" name="com.mbeddr.formal.base.tabular.structure.MultipleActionsConditionTable" flags="ng" index="H7R15">
+        <child id="388742343953115068" name="actions" index="H7R2A" />
+      </concept>
+      <concept id="388742343953114976" name="com.mbeddr.formal.base.tabular.structure.MultipleActionsSubcondition" flags="ng" index="H7R1U">
+        <child id="388742343953163843" name="conditionValues" index="H7z5p" />
+      </concept>
+      <concept id="388742343953115048" name="com.mbeddr.formal.base.tabular.structure.ActionRefOutput" flags="ng" index="H7R2M">
+        <reference id="388742343953115052" name="action" index="H7R2Q" />
+      </concept>
+      <concept id="388742343947428716" name="com.mbeddr.formal.base.tabular.structure.NewOutputValue" flags="ng" index="HhFhQ">
+        <child id="388742343947428717" name="exp" index="HhFhR" />
+      </concept>
+      <concept id="388742343947428052" name="com.mbeddr.formal.base.tabular.structure.SingleOutputConditionTable" flags="ng" index="HhFve" />
+      <concept id="388742343947428053" name="com.mbeddr.formal.base.tabular.structure.SingleOutputSubcondition" flags="ng" index="HhFvf">
+        <child id="388742343947428054" name="output" index="HhFvc" />
+      </concept>
+      <concept id="388742343947335184" name="com.mbeddr.formal.base.tabular.structure.AbstractSubcondition" flags="ng" index="HhM4a">
+        <child id="388742343947335190" name="subCond" index="HhM4c" />
+        <child id="388742343947335189" name="cond" index="HhM4f" />
+      </concept>
+      <concept id="388742343947335183" name="com.mbeddr.formal.base.tabular.structure.AbstractConditionTable" flags="ng" index="HhM4l">
+        <child id="388742343947335193" name="conditions" index="HhM43" />
+      </concept>
       <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.OutputValue" flags="ng" index="2HuVrR">
         <child id="5453576532413735747" name="exp" index="agTQP" />
       </concept>
@@ -235,6 +280,12 @@
         <child id="3038640987155465385" name="cond" index="3PsQX9" />
         <child id="3038640987155465389" name="subCond" index="3PsQXd" />
         <child id="3038640987155465396" name="output" index="3PsQXk" />
+      </concept>
+      <concept id="3718247901948455591" name="com.mbeddr.formal.base.tabular.structure.DecisionTable" flags="ng" index="1PSRhz">
+        <child id="505253832596893719" name="default" index="albmS" />
+        <child id="3718247901948455597" name="results" index="1PSRhD" />
+        <child id="3718247901948455592" name="xExpr" index="1PSRhG" />
+        <child id="3718247901948455594" name="yExpr" index="1PSRhI" />
       </concept>
     </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
@@ -3356,6 +3407,513 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2HdtXS" id="4pkEwgiTtv4">
+    <property role="TrG5h" value="_151_tables_dectab_sut" />
+    <node concept="2Hdtz0" id="4pkEwgiTtv5" role="2HcuB8">
+      <property role="TrG5h" value="xor_dectab" />
+      <node concept="2Hdtzr" id="4pkEwgiTtv6" role="2Hdtzq">
+        <property role="TrG5h" value="in1" />
+      </node>
+      <node concept="2Hdtzr" id="4pkEwgiTtv7" role="2Hdtzq">
+        <property role="TrG5h" value="in2" />
+      </node>
+      <node concept="32O2o0" id="4pkEwgiTtvK" role="2HcbjO">
+        <node concept="1zoerA" id="4pkEwgiTtwr" role="32O2ov">
+          <property role="TrG5h" value="res" />
+          <node concept="1P08EX" id="4pkEwgiTtw_" role="1zoetD">
+            <node concept="1PSRhz" id="4pkEwgiTtwB" role="1P08EY">
+              <node concept="2HbLFT" id="4pkEwgiTtxa" role="1PSRhG">
+                <node concept="2IPVmt" id="4pkEwgiTtxm" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+                <node concept="32Ogvo" id="4pkEwgiTtx4" role="2H9Iav">
+                  <ref role="32Ogvr" node="4pkEwgiTtv6" resolve="in1" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="4pkEwgiTtxA" role="1PSRhG">
+                <node concept="2IPVmt" id="4pkEwgiTtxO" role="2H9Ial">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="32Ogvo" id="4pkEwgiTtxu" role="2H9Iav">
+                  <ref role="32Ogvr" node="4pkEwgiTtv6" resolve="in1" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="4pkEwgiTty2" role="1PSRhI">
+                <node concept="2IPVmt" id="4pkEwgiTtye" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+                <node concept="32Ogvo" id="4pkEwgiTtxW" role="2H9Iav">
+                  <ref role="32Ogvr" node="4pkEwgiTtv7" resolve="in2" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="4pkEwgiTtyu" role="1PSRhI">
+                <node concept="2IPVmt" id="4pkEwgiTtyG" role="2H9Ial">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="32Ogvo" id="4pkEwgiTtym" role="2H9Iav">
+                  <ref role="32Ogvr" node="4pkEwgiTtv7" resolve="in2" />
+                </node>
+              </node>
+              <node concept="2IPVmt" id="4pkEwgiTtyM" role="1PSRhD">
+                <property role="2IPVms" value="0" />
+              </node>
+              <node concept="2IPVmt" id="4pkEwgiTtzd" role="1PSRhD">
+                <property role="2IPVms" value="1" />
+              </node>
+              <node concept="2IPVmt" id="4pkEwgiTtyV" role="1PSRhD">
+                <property role="2IPVms" value="1" />
+              </node>
+              <node concept="2IPVmt" id="4pkEwgiTtz4" role="1PSRhD">
+                <property role="2IPVms" value="0" />
+              </node>
+              <node concept="2IPVmt" id="4pkEwgiTtzm" role="albmS">
+                <property role="2IPVms" value="0" />
+              </node>
+            </node>
+            <node concept="2IPVmt" id="4pkEwgiYxJT" role="1kJg0n">
+              <property role="2IPVms" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4pkEwgiTtvF" role="2HcuB8" />
+    <node concept="2SQmWS" id="4pkEwgiTtvG" role="2HcuB8" />
+    <node concept="2SQmWS" id="4pkEwgiTtvH" role="2HcuB8" />
+  </node>
+  <node concept="1J0nZ8" id="4pkEwgiTtzo">
+    <property role="TrG5h" value="_151_tables_dectab_tests" />
+    <node concept="1J0nI2" id="4pkEwgiTtzp" role="1J0nHx">
+      <property role="TrG5h" value="table_dectab_test_PASS" />
+      <ref role="1J0niy" node="4pkEwgiTtv5" resolve="xor_dectab" />
+      <node concept="1J0m7Y" id="4pkEwgiTtzq" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiTtzr" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzs" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzt" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4pkEwgiTtzu" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiTtzv" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzw" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzx" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="4pkEwgiTtzy" role="1J0nHx" />
+    <node concept="1J0nI2" id="4pkEwgiTtzz" role="1J0nHx">
+      <property role="TrG5h" value="table_dectab_test_FAIL" />
+      <ref role="1J0niy" node="4pkEwgiTtv5" resolve="xor_dectab" />
+      <node concept="1J0m7Y" id="4pkEwgiTtz$" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiTtz_" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzA" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzB" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4pkEwgiTtzC" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiTtzD" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzE" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiTtzF" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="4pkEwgiTtzG" role="1J0nHx" />
+  </node>
+  <node concept="2HdtXS" id="4pkEwgiYxJV">
+    <property role="TrG5h" value="_152_tables_single_output_condition_table_sut" />
+    <node concept="2Hdtz0" id="4pkEwgiYxJW" role="2HcuB8">
+      <property role="TrG5h" value="xor_single_output_condition_table" />
+      <node concept="2Hdtzr" id="4pkEwgiYxJX" role="2Hdtzq">
+        <property role="TrG5h" value="in1" />
+      </node>
+      <node concept="2Hdtzr" id="4pkEwgiYxJY" role="2Hdtzq">
+        <property role="TrG5h" value="in2" />
+      </node>
+      <node concept="32O2o0" id="4pkEwgiYxJZ" role="2HcbjO">
+        <node concept="1zoerA" id="4pkEwgiYxK0" role="32O2ov">
+          <property role="TrG5h" value="res" />
+          <node concept="Hgvvd" id="4pkEwgiYxK$" role="1zoetD">
+            <node concept="HhFve" id="4pkEwgiYxKT" role="Hgvv2">
+              <node concept="HhFvf" id="4pkEwgiYxKU" role="HhM43">
+                <node concept="HhFvf" id="4pkEwgiYxM1" role="HhM4c">
+                  <node concept="HhFhQ" id="4pkEwgiYxM2" role="HhFvc">
+                    <node concept="2IPVmt" id="4pkEwgiYxOJ" role="HhFhR">
+                      <property role="2IPVms" value="0" />
+                    </node>
+                  </node>
+                  <node concept="2HbLFT" id="4pkEwgiYxMf" role="HhM4f">
+                    <node concept="2IPVmt" id="4pkEwgiYxMq" role="2H9Ial">
+                      <property role="2IPVms" value="0" />
+                    </node>
+                    <node concept="32Ogvo" id="4pkEwgiYxMb" role="2H9Iav">
+                      <ref role="32Ogvr" node="4pkEwgiYxJY" resolve="in2" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="HhFvf" id="4pkEwgiYxMs" role="HhM4c">
+                  <node concept="HhFhQ" id="4pkEwgiYxMt" role="HhFvc">
+                    <node concept="2IPVmt" id="4pkEwgiYxOP" role="HhFhR">
+                      <property role="2IPVms" value="1" />
+                    </node>
+                  </node>
+                  <node concept="2HbLFT" id="4pkEwgiYxMM" role="HhM4f">
+                    <node concept="2IPVmt" id="4pkEwgiYxMX" role="2H9Ial">
+                      <property role="2IPVms" value="1" />
+                    </node>
+                    <node concept="32Ogvo" id="4pkEwgiYxMI" role="2H9Iav">
+                      <ref role="32Ogvr" node="4pkEwgiYxJY" resolve="in2" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2HbLFT" id="4pkEwgiYxLO" role="HhM4f">
+                  <node concept="2IPVmt" id="4pkEwgiYxLZ" role="2H9Ial">
+                    <property role="2IPVms" value="0" />
+                  </node>
+                  <node concept="32Ogvo" id="4pkEwgiYxLK" role="2H9Iav">
+                    <ref role="32Ogvr" node="4pkEwgiYxJX" resolve="in1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="HhFvf" id="4pkEwgiYxMZ" role="HhM43">
+                <node concept="HhFvf" id="4pkEwgiYxNC" role="HhM4c">
+                  <node concept="HhFhQ" id="4pkEwgiYxND" role="HhFvc">
+                    <node concept="2IPVmt" id="4pkEwgiYxOV" role="HhFhR">
+                      <property role="2IPVms" value="1" />
+                    </node>
+                  </node>
+                  <node concept="2HbLFT" id="4pkEwgiYxNQ" role="HhM4f">
+                    <node concept="2IPVmt" id="4pkEwgiYxO1" role="2H9Ial">
+                      <property role="2IPVms" value="0" />
+                    </node>
+                    <node concept="32Ogvo" id="4pkEwgiYxNM" role="2H9Iav">
+                      <ref role="32Ogvr" node="4pkEwgiYxJY" resolve="in2" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="HhFvf" id="4pkEwgiYxO3" role="HhM4c">
+                  <node concept="HhFhQ" id="4pkEwgiYxO4" role="HhFvc">
+                    <node concept="2IPVmt" id="4pkEwgiYxP1" role="HhFhR">
+                      <property role="2IPVms" value="0" />
+                    </node>
+                  </node>
+                  <node concept="2HbLFT" id="4pkEwgiYxOu" role="HhM4f">
+                    <node concept="2IPVmt" id="4pkEwgiYxOD" role="2H9Ial">
+                      <property role="2IPVms" value="1" />
+                    </node>
+                    <node concept="32Ogvo" id="4pkEwgiYxOq" role="2H9Iav">
+                      <ref role="32Ogvr" node="4pkEwgiYxJY" resolve="in2" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2HbLFT" id="4pkEwgiYxNr" role="HhM4f">
+                  <node concept="2IPVmt" id="4pkEwgiYxNA" role="2H9Ial">
+                    <property role="2IPVms" value="1" />
+                  </node>
+                  <node concept="32Ogvo" id="4pkEwgiYxNn" role="2H9Iav">
+                    <ref role="32Ogvr" node="4pkEwgiYxJX" resolve="in1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2IPVmt" id="4pkEwgiYxP7" role="1kJmho">
+              <property role="2IPVms" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4pkEwgiYxKl" role="2HcuB8" />
+    <node concept="2SQmWS" id="4pkEwgiYxKm" role="2HcuB8" />
+    <node concept="2SQmWS" id="4pkEwgiYxKn" role="2HcuB8" />
+  </node>
+  <node concept="1J0nZ8" id="4pkEwgiYxP9">
+    <property role="TrG5h" value="_152_tables_single_output_condition_table_tests" />
+    <node concept="1J0nI2" id="4pkEwgiYxPa" role="1J0nHx">
+      <property role="TrG5h" value="table_single_output_condition_table_test_PASS" />
+      <ref role="1J0niy" node="4pkEwgiYxJW" resolve="xor_single_output_condition_table" />
+      <node concept="1J0m7Y" id="4pkEwgiYxPb" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiYxPc" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPd" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPe" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4pkEwgiYxPf" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiYxPg" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPh" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPi" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4pkEwgiYxPu" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiYxPG" role="1J0m7X">
+          <property role="2IPVms" value="2" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPP" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPW" role="1J0m7K">
+          <property role="2IPVms" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="4pkEwgiYxPj" role="1J0nHx" />
+    <node concept="1J0nI2" id="4pkEwgiYxPk" role="1J0nHx">
+      <property role="TrG5h" value="table_single_output_condition_table_test_FAIL" />
+      <ref role="1J0niy" node="4pkEwgiYxJW" resolve="xor_single_output_condition_table" />
+      <node concept="1J0m7Y" id="4pkEwgiYxPl" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiYxPm" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPn" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPo" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="4pkEwgiYxPp" role="1J0m7J">
+        <node concept="2IPVmt" id="4pkEwgiYxPq" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPr" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="4pkEwgiYxPs" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="4pkEwgiYxPt" role="1J0nHx" />
+  </node>
+  <node concept="2HdtXS" id="5$Mxnm$oPpw">
+    <property role="TrG5h" value="_153_tables_actions_table_sut" />
+    <node concept="2Hdtz0" id="5$Mxnm$oPpx" role="2HcuB8">
+      <property role="TrG5h" value="xor_actions_table" />
+      <node concept="2Hdtzr" id="5$Mxnm$oPpy" role="2Hdtzq">
+        <property role="TrG5h" value="in1" />
+      </node>
+      <node concept="2Hdtzr" id="5$Mxnm$oPpz" role="2Hdtzq">
+        <property role="TrG5h" value="in2" />
+      </node>
+      <node concept="32O2o0" id="5$Mxnm$oPp$" role="2HcbjO">
+        <node concept="1zoerA" id="5$Mxnm$oPp_" role="32O2ov">
+          <property role="TrG5h" value="res" />
+          <node concept="2He$iJ" id="5$Mxnm$oPB3" role="1zoetD">
+            <ref role="2He$iI" node="5$Mxnm$oP_I" resolve="resVar" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="5$Mxnm$oP$Q" role="2HcbjO">
+        <node concept="2Hdskp" id="5$Mxnm$oP_I" role="2Hfkx9">
+          <property role="TrG5h" value="resVar" />
+          <node concept="dhpfj" id="5$Mxnm$oPA1" role="2HdssA">
+            <node concept="2IPVmt" id="5$Mxnm$oPA0" role="dhpfi">
+              <property role="2IPVms" value="0" />
+            </node>
+            <node concept="2IPVmt" id="5$Mxnm$oPAv" role="dhpfn">
+              <property role="2IPVms" value="1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="H6rDa" id="5$Mxnm$oPtf" role="2HcbjO">
+        <node concept="HXpRu" id="5$Mxnm$oPvs" role="HXpRk">
+          <property role="TrG5h" value="resZero" />
+          <node concept="1lls7g" id="5$Mxnm$oPy$" role="o4Xf9">
+            <node concept="2He$iJ" id="5$Mxnm$oPE4" role="1lls7h">
+              <ref role="2He$iI" node="5$Mxnm$oP_I" resolve="resVar" />
+            </node>
+            <node concept="2IPVmt" id="5$Mxnm$oPyZ" role="1lls7j">
+              <property role="2IPVms" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="HXpRu" id="5$Mxnm$oPzc" role="HXpRk">
+          <property role="TrG5h" value="resOne" />
+          <node concept="1lls7g" id="5$Mxnm$oPzd" role="o4Xf9">
+            <node concept="2He$iJ" id="5$Mxnm$oPEW" role="1lls7h">
+              <ref role="2He$iI" node="5$Mxnm$oP_I" resolve="resVar" />
+            </node>
+            <node concept="2IPVmt" id="5$Mxnm$oPzf" role="1lls7j">
+              <property role="2IPVms" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="H7R15" id="5$Mxnm$oPth" role="H6rD9">
+          <node concept="H7R1U" id="5$Mxnm$oPti" role="HhM43">
+            <node concept="H7R1U" id="5$Mxnm$oPu7" role="HhM4c">
+              <node concept="H7zbL" id="5$Mxnm$oPtj" role="H7z5p">
+                <property role="H7zbx" value="T" />
+              </node>
+              <node concept="H7zbL" id="5$Mxnm$oPzR" role="H7z5p" />
+              <node concept="2HbLFT" id="5$Mxnm$oPuk" role="HhM4f">
+                <node concept="2IPVmt" id="5$Mxnm$oPuv" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+                <node concept="32Ogvo" id="5$Mxnm$oPug" role="2H9Iav">
+                  <ref role="32Ogvr" node="5$Mxnm$oPpz" resolve="in2" />
+                </node>
+              </node>
+            </node>
+            <node concept="H7R1U" id="5$Mxnm$oPuI" role="HhM4c">
+              <node concept="H7zbL" id="5$Mxnm$oPuJ" role="H7z5p" />
+              <node concept="H7zbL" id="5$Mxnm$oPzS" role="H7z5p">
+                <property role="H7zbx" value="T" />
+              </node>
+              <node concept="2HbLFT" id="5$Mxnm$oPv2" role="HhM4f">
+                <node concept="2IPVmt" id="5$Mxnm$oPvd" role="2H9Ial">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="32Ogvo" id="5$Mxnm$oPuY" role="2H9Iav">
+                  <ref role="32Ogvr" node="5$Mxnm$oPpz" resolve="in2" />
+                </node>
+              </node>
+            </node>
+            <node concept="2HbLFT" id="5$Mxnm$oPtD" role="HhM4f">
+              <node concept="2IPVmt" id="5$Mxnm$oPtS" role="2H9Ial">
+                <property role="2IPVms" value="0" />
+              </node>
+              <node concept="32Ogvo" id="5$Mxnm$oPt_" role="2H9Iav">
+                <ref role="32Ogvr" node="5$Mxnm$oPpy" resolve="in1" />
+              </node>
+            </node>
+          </node>
+          <node concept="H7R1U" id="5$Mxnm$oPvy" role="HhM43">
+            <node concept="H7R1U" id="5$Mxnm$oPxf" role="HhM4c">
+              <node concept="H7zbL" id="5$Mxnm$oPvz" role="H7z5p" />
+              <node concept="H7zbL" id="5$Mxnm$oPzT" role="H7z5p">
+                <property role="H7zbx" value="T" />
+              </node>
+              <node concept="2HbLFT" id="5$Mxnm$oPxs" role="HhM4f">
+                <node concept="2IPVmt" id="5$Mxnm$oPxB" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+                <node concept="32Ogvo" id="5$Mxnm$oPxo" role="2H9Iav">
+                  <ref role="32Ogvr" node="5$Mxnm$oPpz" resolve="in2" />
+                </node>
+              </node>
+            </node>
+            <node concept="H7R1U" id="5$Mxnm$oPxQ" role="HhM4c">
+              <node concept="H7zbL" id="5$Mxnm$oPxR" role="H7z5p">
+                <property role="H7zbx" value="T" />
+              </node>
+              <node concept="H7zbL" id="5$Mxnm$oPzU" role="H7z5p" />
+              <node concept="2HbLFT" id="5$Mxnm$oPya" role="HhM4f">
+                <node concept="2IPVmt" id="5$Mxnm$oPyl" role="2H9Ial">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="32Ogvo" id="5$Mxnm$oPy6" role="2H9Iav">
+                  <ref role="32Ogvr" node="5$Mxnm$oPpz" resolve="in2" />
+                </node>
+              </node>
+            </node>
+            <node concept="2HbLFT" id="5$Mxnm$oPwP" role="HhM4f">
+              <node concept="2IPVmt" id="5$Mxnm$oPx0" role="2H9Ial">
+                <property role="2IPVms" value="1" />
+              </node>
+              <node concept="32Ogvo" id="5$Mxnm$oPwL" role="2H9Iav">
+                <ref role="32Ogvr" node="5$Mxnm$oPpy" resolve="in1" />
+              </node>
+            </node>
+          </node>
+          <node concept="H7R2M" id="5$Mxnm$oPtl" role="H7R2A">
+            <ref role="H7R2Q" node="5$Mxnm$oPvs" resolve="resZero" />
+          </node>
+          <node concept="H7R2M" id="5$Mxnm$oPzQ" role="H7R2A">
+            <ref role="H7R2Q" node="5$Mxnm$oPzc" resolve="resOne" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="5$Mxnm$oPq9" role="2HcuB8" />
+    <node concept="2SQmWS" id="5$Mxnm$oPqa" role="2HcuB8" />
+    <node concept="2SQmWS" id="5$Mxnm$oPqb" role="2HcuB8" />
+  </node>
+  <node concept="1J0nZ8" id="5$Mxnm$oPqc">
+    <property role="TrG5h" value="_153_tables_actions_table_tests" />
+    <node concept="1J0nI2" id="5$Mxnm$oPqd" role="1J0nHx">
+      <property role="TrG5h" value="table_actions_table_test_PASS" />
+      <ref role="1J0niy" node="5$Mxnm$oPpx" resolve="xor_actions_table" />
+      <node concept="1J0m7Y" id="5$Mxnm$oPqe" role="1J0m7J">
+        <node concept="2IPVmt" id="5$Mxnm$oPqf" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPqg" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPqh" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="5$Mxnm$oPqi" role="1J0m7J">
+        <node concept="2IPVmt" id="5$Mxnm$oPqj" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPqk" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPql" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="5$Mxnm$oPqq" role="1J0nHx" />
+    <node concept="1J0nI2" id="5$Mxnm$oPqr" role="1J0nHx">
+      <property role="TrG5h" value="table_actions_table_test_FAIL" />
+      <ref role="1J0niy" node="5$Mxnm$oPpx" resolve="xor_actions_table" />
+      <node concept="1J0m7Y" id="5$Mxnm$oPqs" role="1J0m7J">
+        <node concept="2IPVmt" id="5$Mxnm$oPqt" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPqu" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPqv" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="5$Mxnm$oPqw" role="1J0m7J">
+        <node concept="2IPVmt" id="5$Mxnm$oPqx" role="1J0m7X">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPqy" role="1J0m7X">
+          <property role="2IPVms" value="1" />
+        </node>
+        <node concept="2IPVmt" id="5$Mxnm$oPqz" role="1J0m7K">
+          <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="5$Mxnm$oPq$" role="1J0nHx" />
   </node>
 </model>
 
