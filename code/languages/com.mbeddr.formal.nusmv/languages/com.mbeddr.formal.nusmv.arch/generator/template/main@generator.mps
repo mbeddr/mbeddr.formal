@@ -67,13 +67,14 @@
       </concept>
     </language>
     <language id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular">
-      <concept id="3038640987157452671" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueContent" flags="ng" index="3PnjMv" />
+      <concept id="3038640987157452671" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueDeclaration" flags="ng" index="3PnjMv" />
       <concept id="3038640987157452302" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
-        <child id="3038640987157837161" name="table" index="3PlPU9" />
+        <child id="6427346358527614907" name="table_new" index="3XgHFe" />
       </concept>
       <concept id="9207208966915557688" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueRef" flags="ng" index="1U3pFY">
         <reference id="9207208966915557689" name="functionValue" index="1U3pFZ" />
       </concept>
+      <concept id="6427346358527586462" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableTable" flags="ng" index="3XnnnF" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
@@ -135,11 +136,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -147,16 +148,20 @@
       </concept>
     </language>
     <language id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.base.tabular">
-      <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.OutputValue" flags="ng" index="2HuVrR">
-        <child id="5453576532413735747" name="exp" index="agTQP" />
+      <concept id="388742343947428716" name="com.mbeddr.formal.base.tabular.structure.NewOutputValue" flags="ng" index="HhFhQ">
+        <child id="388742343947428717" name="exp" index="HhFhR" />
       </concept>
-      <concept id="3038640987154488121" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable" flags="ng" index="3PoB3p">
-        <child id="3038640987155459296" name="conditions" index="3Pv8s0" />
-        <child id="3038640987155459300" name="outputVariables" index="3Pv8s4" />
+      <concept id="388742343947335184" name="com.mbeddr.formal.base.tabular.structure.AbstractSubcondition" flags="ng" index="HhM4a">
+        <child id="388742343947335189" name="cond" index="HhM4f" />
       </concept>
-      <concept id="3038640987155459340" name="com.mbeddr.formal.base.tabular.structure.SubconditionResult" flags="ng" index="3Pv8rG">
-        <child id="3038640987155465385" name="cond" index="3PsQX9" />
-        <child id="3038640987155465396" name="output" index="3PsQXk" />
+      <concept id="388742343947335183" name="com.mbeddr.formal.base.tabular.structure.AbstractConditionTable" flags="ng" index="HhM4l">
+        <child id="388742343947335193" name="conditions" index="HhM43" />
+      </concept>
+      <concept id="6427346358527249971" name="com.mbeddr.formal.base.tabular.structure.SubconditionResult_new" flags="ng" index="3Xm4H6">
+        <child id="6427346358527249976" name="output" index="3Xm4Hd" />
+      </concept>
+      <concept id="6427346358527249970" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable_new" flags="ng" index="3Xm4H7">
+        <child id="6427346358527268253" name="outputVariables" index="3Xmp3C" />
       </concept>
     </language>
   </registry>
@@ -264,34 +269,26 @@
       </node>
     </node>
     <node concept="3aamgX" id="7Z6$Wo5Wiiq" role="3acgRq">
-      <ref role="30HIoZ" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
+      <ref role="30HIoZ" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
       <node concept="1Koe21" id="7Z6$Wo5WimL" role="1lVwrX">
         <node concept="2Hdtz0" id="7Z6$Wo5WimT" role="1Koe22">
           <property role="TrG5h" value="m" />
           <node concept="3PnjRI" id="7Z6$Wo5WiCc" role="2HcbjO">
-            <node concept="3PoB3p" id="7Z6$Wo5WiCe" role="3PlPU9">
-              <node concept="3Pv8rG" id="7Z6$Wo5WiCg" role="3Pv8s0">
-                <node concept="1yCjRe" id="7Z6$Wo5WiD0" role="3PsQX9" />
-                <node concept="2HuVrR" id="7Z6$Wo5WiCl" role="3PsQXk">
-                  <node concept="2IPVmt" id="7Z6$Wo5WiCM" role="agTQP">
-                    <property role="2IPVms" value="42" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3PnjMv" id="7Z6$Wo5WiC$" role="3Pv8s4">
+            <node concept="3XnnnF" id="7U4LEptdJsq" role="3XgHFe">
+              <node concept="3PnjMv" id="7U4LEptdJsu" role="3Xmp3C">
                 <property role="TrG5h" value="a" />
-                <node concept="raruj" id="7Z6$Wo5WiD7" role="lGtFl">
+                <node concept="raruj" id="7U4LEptdJsv" role="lGtFl">
                   <ref role="2sdACS" node="7Z6$Wo5Wktl" resolve="outputFunctionValue2FunctionValue" />
                 </node>
-                <node concept="17Uvod" id="7Z6$Wo5WiD8" role="lGtFl">
+                <node concept="17Uvod" id="7U4LEptdJsw" role="lGtFl">
                   <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
                   <property role="2qtEX9" value="name" />
-                  <node concept="3zFVjK" id="7Z6$Wo5WiD9" role="3zH0cK">
-                    <node concept="3clFbS" id="7Z6$Wo5WiDa" role="2VODD2">
-                      <node concept="3clFbF" id="7Z6$Wo5WiLS" role="3cqZAp">
-                        <node concept="2OqwBi" id="7Z6$Wo5Wj8z" role="3clFbG">
-                          <node concept="30H73N" id="7Z6$Wo5WiLR" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="7Z6$Wo5Wk8g" role="2OqNvi">
+                  <node concept="3zFVjK" id="7U4LEptdJsx" role="3zH0cK">
+                    <node concept="3clFbS" id="7U4LEptdJsy" role="2VODD2">
+                      <node concept="3clFbF" id="7U4LEptdJsz" role="3cqZAp">
+                        <node concept="2OqwBi" id="7U4LEptdJs$" role="3clFbG">
+                          <node concept="30H73N" id="7U4LEptdJs_" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="7U4LEptdJsA" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
@@ -299,6 +296,14 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="3Xm4H6" id="7U4LEptdJsB" role="HhM43">
+                <node concept="HhFhQ" id="7U4LEptdJsD" role="3Xm4Hd">
+                  <node concept="2IPVmt" id="7U4LEptdJsC" role="HhFhR">
+                    <property role="2IPVms" value="42" />
+                  </node>
+                </node>
+                <node concept="1yCjRe" id="7U4LEptdJsE" role="HhM4f" />
               </node>
             </node>
           </node>
@@ -313,26 +318,28 @@
           <node concept="2Hdtz0" id="7Z6$Wo5Wmhv" role="2HcuB8">
             <property role="TrG5h" value="m" />
             <node concept="3PnjRI" id="7Z6$Wo5WmhA" role="2HcbjO">
-              <node concept="3PoB3p" id="7Z6$Wo5WmhC" role="3PlPU9">
-                <node concept="3Pv8rG" id="7Z6$Wo5WmhE" role="3Pv8s0">
-                  <node concept="1yCjRe" id="7Z6$Wo5Wmih" role="3PsQX9" />
-                  <node concept="2HuVrR" id="7Z6$Wo5WmhJ" role="3PsQXk">
-                    <node concept="1U3pFY" id="7Z6$Wo5Wmir" role="agTQP">
-                      <ref role="1U3pFZ" node="7Z6$Wo5WmhY" resolve="a" />
-                      <node concept="raruj" id="7Z6$Wo5Wmiu" role="lGtFl" />
-                      <node concept="1ZhdrF" id="7Z6$Wo5Wmiv" role="lGtFl">
+              <node concept="3XnnnF" id="7U4LEptdJEv" role="3XgHFe">
+                <node concept="3PnjMv" id="7U4LEptdJEz" role="3Xmp3C">
+                  <property role="TrG5h" value="a" />
+                </node>
+                <node concept="3Xm4H6" id="7U4LEptdJE$" role="HhM43">
+                  <node concept="HhFhQ" id="7U4LEptdJEL" role="3Xm4Hd">
+                    <node concept="1U3pFY" id="7U4LEptdJE_" role="HhFhR">
+                      <ref role="1U3pFZ" node="7U4LEptdJEz" resolve="a" />
+                      <node concept="raruj" id="7U4LEptdJEA" role="lGtFl" />
+                      <node concept="1ZhdrF" id="7U4LEptdJEB" role="lGtFl">
                         <property role="P3scX" value="450c81f1-1811-41ac-a9c8-8fda59f778ca/9207208966915557688/9207208966915557689" />
                         <property role="2qtEX8" value="functionValue" />
-                        <node concept="3$xsQk" id="7Z6$Wo5Wmiw" role="3$ytzL">
-                          <node concept="3clFbS" id="7Z6$Wo5Wmix" role="2VODD2">
-                            <node concept="3clFbF" id="7Z6$Wo5Wmjo" role="3cqZAp">
-                              <node concept="2OqwBi" id="7Z6$Wo5Wmvy" role="3clFbG">
-                                <node concept="1iwH7S" id="7Z6$Wo5Wmjn" role="2Oq$k0" />
-                                <node concept="1iwH70" id="7Z6$Wo5Wm_k" role="2OqNvi">
+                        <node concept="3$xsQk" id="7U4LEptdJEC" role="3$ytzL">
+                          <node concept="3clFbS" id="7U4LEptdJED" role="2VODD2">
+                            <node concept="3clFbF" id="7U4LEptdJEE" role="3cqZAp">
+                              <node concept="2OqwBi" id="7U4LEptdJEF" role="3clFbG">
+                                <node concept="1iwH7S" id="7U4LEptdJEG" role="2Oq$k0" />
+                                <node concept="1iwH70" id="7U4LEptdJEH" role="2OqNvi">
                                   <ref role="1iwH77" node="7Z6$Wo5Wktl" resolve="outputFunctionValue2FunctionValue" />
-                                  <node concept="2OqwBi" id="7Z6$Wo5Wn1c" role="1iwH7V">
-                                    <node concept="30H73N" id="7Z6$Wo5WmNH" role="2Oq$k0" />
-                                    <node concept="3TrEf2" id="7Z6$Wo5Wngo" role="2OqNvi">
+                                  <node concept="2OqwBi" id="7U4LEptdJEI" role="1iwH7V">
+                                    <node concept="30H73N" id="7U4LEptdJEJ" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="7U4LEptdJEK" role="2OqNvi">
                                       <ref role="3Tt5mk" to="rvcq:4H8XLSF4jUE" resolve="output" />
                                     </node>
                                   </node>
@@ -344,9 +351,7 @@
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="3PnjMv" id="7Z6$Wo5WmhY" role="3Pv8s4">
-                  <property role="TrG5h" value="a" />
+                  <node concept="1yCjRe" id="7U4LEptdJEM" role="HhM4f" />
                 </node>
               </node>
             </node>
@@ -361,8 +366,8 @@
     </node>
     <node concept="2rT7sh" id="7Z6$Wo5Wktl" role="2rTMjI">
       <property role="TrG5h" value="outputFunctionValue2FunctionValue" />
-      <ref role="2rTdP9" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueContent" />
-      <ref role="2rZz_L" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueContent" />
+      <ref role="2rTdP9" to="rvcq:4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />
+      <ref role="2rZz_L" to="jx4r:2CFqY3vt_tZ" resolve="FunctionValueDeclaration" />
     </node>
   </node>
 </model>
