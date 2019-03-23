@@ -70,9 +70,16 @@
     <node concept="1TJgyj" id="2CFqY3vv3lD" role="1TKVEi">
       <property role="IQ2ns" value="3038640987157837161" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="table" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+      <property role="20kJfa" value="table_old" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
+    </node>
+    <node concept="1TJgyj" id="5$Mxnm$s5YV" role="1TKVEi">
+      <property role="IQ2ns" value="6427346358527614907" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="table_new" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5$Mxnm$rZ2u" resolve="FunctionTableTable" />
     </node>
     <node concept="1irR5M" id="4RNGGOMK_Hc" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -233,6 +240,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5$Mxnm$rZ2u">
+    <property role="EcuMT" value="6427346358527586462" />
+    <property role="3GE5qa" value="function_table" />
+    <property role="TrG5h" value="FunctionTableTable" />
+    <ref role="1TJDcQ" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
   </node>
 </model>
 

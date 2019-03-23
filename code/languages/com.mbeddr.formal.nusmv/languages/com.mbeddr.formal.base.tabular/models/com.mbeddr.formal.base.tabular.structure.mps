@@ -59,7 +59,7 @@
   </registry>
   <node concept="1TIwiD" id="2CFqY3vihGT">
     <property role="EcuMT" value="3038640987154488121" />
-    <property role="TrG5h" value="HorizontalConditionTable" />
+    <property role="TrG5h" value="HorizontalConditionTable_old" />
     <property role="3GE5qa" value="horizontal_condition_table" />
     <property role="34LRSv" value="horizontal condition table" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -68,7 +68,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="conditions" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2CFqY3vlYOc" resolve="SubconditionResult" />
+      <ref role="20lvS9" node="2CFqY3vlYOc" resolve="SubconditionResult_old" />
     </node>
     <node concept="1TJgyj" id="2CFqY3vlYN$" role="1TKVEi">
       <property role="IQ2ns" value="3038640987155459300" />
@@ -81,7 +81,7 @@
   <node concept="1TIwiD" id="2CFqY3vlYOc">
     <property role="EcuMT" value="3038640987155459340" />
     <property role="3GE5qa" value="horizontal_condition_table" />
-    <property role="TrG5h" value="SubconditionResult" />
+    <property role="TrG5h" value="SubconditionResult_old" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2CFqY3vm0iD" role="1TKVEi">
       <property role="IQ2ns" value="3038640987155465385" />
@@ -95,7 +95,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="subCond" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2CFqY3vlYOc" resolve="SubconditionResult" />
+      <ref role="20lvS9" node="2CFqY3vlYOc" resolve="SubconditionResult_old" />
     </node>
     <node concept="1TJgyj" id="2CFqY3vm0iO" role="1TKVEi">
       <property role="IQ2ns" value="3038640987155465396" />
@@ -325,6 +325,49 @@
       <property role="20kJfa" value="default" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5$Mxnm$qGSM">
+    <property role="EcuMT" value="6427346358527249970" />
+    <property role="3GE5qa" value="horizontal_condition_table" />
+    <property role="TrG5h" value="HorizontalConditionTable_new" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="l_5LCC8zof" resolve="AbstractConditionTable" />
+    <node concept="1TJgyj" id="5$Mxnm$qLms" role="1TKVEi">
+      <property role="IQ2ns" value="6427346358527268252" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conditions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5$Mxnm$qGSN" resolve="SubconditionResult_new" />
+      <ref role="20ksaX" node="l_5LCC8zop" resolve="conditions" />
+    </node>
+    <node concept="1TJgyj" id="5$Mxnm$qLmt" role="1TKVEi">
+      <property role="IQ2ns" value="6427346358527268253" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outputVariables" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3JhRrgbktEe" resolve="IFunctionValueContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5$Mxnm$qGSN">
+    <property role="EcuMT" value="6427346358527249971" />
+    <property role="3GE5qa" value="horizontal_condition_table" />
+    <property role="TrG5h" value="SubconditionResult_new" />
+    <ref role="1TJDcQ" node="l_5LCC8zog" resolve="AbstractSubcondition" />
+    <node concept="1TJgyj" id="5$Mxnm$qGSO" role="1TKVEi">
+      <property role="IQ2ns" value="6427346358527249972" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="subCond" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5$Mxnm$qGSN" resolve="SubconditionResult_new" />
+      <ref role="20ksaX" node="l_5LCC8zom" resolve="subCond" />
+    </node>
+    <node concept="1TJgyj" id="5$Mxnm$qGSS" role="1TKVEi">
+      <property role="IQ2ns" value="6427346358527249976" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="output" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="l_5LCC8UdG" resolve="NewOutputValue" />
     </node>
   </node>
 </model>

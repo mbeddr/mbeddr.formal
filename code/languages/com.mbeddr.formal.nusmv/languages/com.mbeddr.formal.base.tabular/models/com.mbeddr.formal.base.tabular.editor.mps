@@ -82,6 +82,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="7985135009827365938" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Placeholder" flags="ng" index="1IAO7e" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
@@ -409,7 +410,7 @@
   </registry>
   <node concept="24kQdi" id="2CFqY3vlYO$">
     <property role="3GE5qa" value="horizontal_condition_table" />
-    <ref role="1XX52x" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+    <ref role="1XX52x" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
     <node concept="2r0Tta" id="2CFqY3vvG8k" role="2wV5jI">
       <node concept="2reSaE" id="2CFqY3vm0i3" role="2r0Tv6">
         <ref role="2reCK$" to="vlrt:2CFqY3vlYNw" resolve="conditions" />
@@ -418,7 +419,7 @@
   </node>
   <node concept="24kQdi" id="2CFqY3vlZg6">
     <property role="3GE5qa" value="horizontal_condition_table" />
-    <ref role="1XX52x" to="vlrt:2CFqY3vlYOc" resolve="SubconditionResult" />
+    <ref role="1XX52x" to="vlrt:2CFqY3vlYOc" resolve="SubconditionResult_old" />
     <node concept="2r0Tta" id="2CFqY3vm05k" role="2wV5jI">
       <node concept="2reCLk" id="2CFqY3vm05p" role="2r0Tv6">
         <node concept="2reCLy" id="2CFqY3vm05t" role="2reCL6">
@@ -437,14 +438,14 @@
                 <node concept="3cpWsn" id="2CFqY3vm7rc" role="3cpWs9">
                   <property role="TrG5h" value="t" />
                   <node concept="3Tqbb2" id="2CFqY3vm7r7" role="1tU5fm">
-                    <ref role="ehGHo" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+                    <ref role="ehGHo" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
                   </node>
                   <node concept="2OqwBi" id="2CFqY3vm8TS" role="33vP2m">
                     <node concept="2r2w_c" id="2CFqY3vm8AX" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="2CFqY3vm9z0" role="2OqNvi">
                       <node concept="1xMEDy" id="2CFqY3vm9z2" role="1xVPHs">
                         <node concept="chp4Y" id="2CFqY3vm9Qo" role="ri$Ld">
-                          <ref role="cht4Q" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+                          <ref role="cht4Q" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
                         </node>
                       </node>
                     </node>
@@ -553,14 +554,14 @@
                 <node concept="3cpWsn" id="2CFqY3vmKiz" role="3cpWs9">
                   <property role="TrG5h" value="t" />
                   <node concept="3Tqbb2" id="2CFqY3vmKiv" role="1tU5fm">
-                    <ref role="ehGHo" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+                    <ref role="ehGHo" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
                   </node>
                   <node concept="2OqwBi" id="2CFqY3vmKuZ" role="33vP2m">
                     <node concept="2r2w_c" id="2CFqY3vmKlR" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="2CFqY3vmKQ2" role="2OqNvi">
                       <node concept="1xMEDy" id="2CFqY3vmKQ4" role="1xVPHs">
                         <node concept="chp4Y" id="2CFqY3vmKRl" role="ri$Ld">
-                          <ref role="cht4Q" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+                          <ref role="cht4Q" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
                         </node>
                       </node>
                     </node>
@@ -583,7 +584,7 @@
                                 <node concept="3clFbF" id="7Z6$Wo5MBaH" role="3cqZAp">
                                   <node concept="2YIFZM" id="7Z6$Wo5MBAO" role="3clFbG">
                                     <ref role="37wK5l" node="7Z6$Wo5M$fD" resolve="removeColumn" />
-                                    <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils" />
+                                    <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils_old" />
                                     <node concept="1PxgMI" id="7Z6$Wo5Ndi0" role="37wK5m">
                                       <node concept="chp4Y" id="7Z6$Wo5Ndj8" role="3oSUPX">
                                         <ref role="cht4Q" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
@@ -601,7 +602,7 @@
                               <node concept="3clFbS" id="7Z6$Wo5MCj2" role="2VODD2">
                                 <node concept="3clFbF" id="7Z6$Wo5MCK_" role="3cqZAp">
                                   <node concept="2YIFZM" id="7Z6$Wo5MCKA" role="3clFbG">
-                                    <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils" />
+                                    <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils_old" />
                                     <ref role="37wK5l" node="7Z6$Wo5M$fD" resolve="removeColumn" />
                                     <node concept="1PxgMI" id="7Z6$Wo5NdsX" role="37wK5m">
                                       <node concept="chp4Y" id="7Z6$Wo5Ndu5" role="3oSUPX">
@@ -692,7 +693,7 @@
   </node>
   <node concept="312cEu" id="7Z6$Wo5M$dV">
     <property role="3GE5qa" value="horizontal_condition_table" />
-    <property role="TrG5h" value="TableEditorUtils" />
+    <property role="TrG5h" value="TableEditorUtils_old" />
     <node concept="3Tm1VV" id="7Z6$Wo5M$dW" role="1B3o_S" />
     <node concept="2tJIrI" id="7Z6$Wo5M$eZ" role="jymVt" />
     <node concept="2YIFZL" id="7Z6$Wo5M$fD" role="jymVt">
@@ -705,7 +706,7 @@
           <node concept="3cpWsn" id="7Z6$Wo5M_sv" role="3cpWs9">
             <property role="TrG5h" value="table" />
             <node concept="3Tqbb2" id="7Z6$Wo5M_sw" role="1tU5fm">
-              <ref role="ehGHo" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+              <ref role="ehGHo" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
             </node>
             <node concept="2OqwBi" id="7Z6$Wo5M_sx" role="33vP2m">
               <node concept="37vLTw" id="7Z6$Wo5MAA7" role="2Oq$k0">
@@ -714,7 +715,7 @@
               <node concept="2Xjw5R" id="7Z6$Wo5M_sz" role="2OqNvi">
                 <node concept="1xMEDy" id="7Z6$Wo5M_s$" role="1xVPHs">
                   <node concept="chp4Y" id="7Z6$Wo5M_s_" role="ri$Ld">
-                    <ref role="cht4Q" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable" />
+                    <ref role="cht4Q" to="vlrt:2CFqY3vihGT" resolve="HorizontalConditionTable_old" />
                   </node>
                 </node>
               </node>
@@ -798,7 +799,7 @@
             <node concept="2Rf3mk" id="7Z6$Wo5M_t6" role="2OqNvi">
               <node concept="1xMEDy" id="7Z6$Wo5M_t7" role="1xVPHs">
                 <node concept="chp4Y" id="7Z6$Wo5M_t8" role="ri$Ld">
-                  <ref role="cht4Q" to="vlrt:2CFqY3vlYOc" resolve="SubconditionResult" />
+                  <ref role="cht4Q" to="vlrt:2CFqY3vlYOc" resolve="SubconditionResult_old" />
                 </node>
               </node>
             </node>
@@ -840,16 +841,89 @@
         </node>
         <node concept="IWg2L" id="l_5LCBRK3u" role="IWgqQ">
           <node concept="3clFbS" id="l_5LCBRK3v" role="2VODD2">
-            <node concept="3clFbF" id="l_5LCBRL0W" role="3cqZAp">
-              <node concept="2YIFZM" id="l_5LCBRL1r" role="3clFbG">
-                <ref role="37wK5l" node="7Z6$Wo5M$fD" resolve="removeColumn" />
-                <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils" />
-                <node concept="7Obwk" id="l_5LCBRL1K" role="37wK5m" />
+            <node concept="3clFbJ" id="2hJzQOWIPnS" role="3cqZAp">
+              <node concept="3clFbS" id="2hJzQOWIPnU" role="3clFbx">
+                <node concept="3clFbF" id="2hJzQOWITDg" role="3cqZAp">
+                  <node concept="2YIFZM" id="2hJzQOWITE3" role="3clFbG">
+                    <ref role="37wK5l" node="5$Mxnm$sHxN" resolve="removeColumn" />
+                    <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+                    <node concept="7Obwk" id="2hJzQOWITEE" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2hJzQOWIQE9" role="3clFbw">
+                <node concept="2OqwBi" id="2hJzQOWIPyV" role="2Oq$k0">
+                  <node concept="7Obwk" id="2hJzQOWIPov" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="2hJzQOWIQbJ" role="2OqNvi">
+                    <node concept="1xMEDy" id="2hJzQOWIQbL" role="1xVPHs">
+                      <node concept="chp4Y" id="2hJzQOWIQdV" role="ri$Ld">
+                        <ref role="cht4Q" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="2hJzQOWITAJ" role="2OqNvi" />
+              </node>
+              <node concept="9aQIb" id="2hJzQOWITFi" role="9aQIa">
+                <node concept="3clFbS" id="2hJzQOWITFj" role="9aQI4">
+                  <node concept="3clFbF" id="l_5LCBRL0W" role="3cqZAp">
+                    <node concept="2YIFZM" id="l_5LCBRL1r" role="3clFbG">
+                      <ref role="37wK5l" node="7Z6$Wo5M$fD" resolve="removeColumn" />
+                      <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils_old" />
+                      <node concept="7Obwk" id="l_5LCBRL1K" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
+      <node concept="IWgqT" id="5$Mxnm$sEw0" role="1Qtc8A">
+        <node concept="1hCUdq" id="5$Mxnm$sEw1" role="1hCUd6">
+          <node concept="3clFbS" id="5$Mxnm$sEw2" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEw3" role="3cqZAp">
+              <node concept="Xl_RD" id="5$Mxnm$sEw4" role="3clFbG">
+                <property role="Xl_RC" value="Add Left Column" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="5$Mxnm$sEw5" role="IWgqQ">
+          <node concept="3clFbS" id="5$Mxnm$sEw6" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEw7" role="3cqZAp">
+              <node concept="2YIFZM" id="5$Mxnm$sEw8" role="3clFbG">
+                <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+                <ref role="37wK5l" node="5$Mxnm$sHyD" resolve="addLeftColumn" />
+                <node concept="7Obwk" id="5$Mxnm$sEw9" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="IWgqT" id="5$Mxnm$sEwa" role="1Qtc8A">
+        <node concept="1hCUdq" id="5$Mxnm$sEwb" role="1hCUd6">
+          <node concept="3clFbS" id="5$Mxnm$sEwc" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEwd" role="3cqZAp">
+              <node concept="Xl_RD" id="5$Mxnm$sEwe" role="3clFbG">
+                <property role="Xl_RC" value="Add Right Column" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="5$Mxnm$sEwf" role="IWgqQ">
+          <node concept="3clFbS" id="5$Mxnm$sEwg" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEwh" role="3cqZAp">
+              <node concept="2YIFZM" id="5$Mxnm$sEwi" role="3clFbG">
+                <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+                <ref role="37wK5l" node="5$Mxnm$sHz8" resolve="addRightColumn" />
+                <node concept="7Obwk" id="5$Mxnm$sEwj" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IAO7e" id="5$Mxnm$sEvs" role="1Qtc8A" />
     </node>
   </node>
   <node concept="24kQdi" id="l_5LCC8zoh">
@@ -2204,6 +2278,404 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="5$Mxnm$sHxK">
+    <property role="3GE5qa" value="horizontal_condition_table" />
+    <property role="TrG5h" value="TableEditorUtils_new" />
+    <node concept="3Tm1VV" id="5$Mxnm$sHxL" role="1B3o_S" />
+    <node concept="2tJIrI" id="5$Mxnm$sHxM" role="jymVt" />
+    <node concept="2YIFZL" id="5$Mxnm$sHxN" role="jymVt">
+      <property role="TrG5h" value="removeColumn" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5$Mxnm$sHxO" role="3clF47">
+        <node concept="3cpWs8" id="5$Mxnm$sHxP" role="3cqZAp">
+          <node concept="3cpWsn" id="5$Mxnm$sHxQ" role="3cpWs9">
+            <property role="TrG5h" value="table" />
+            <node concept="3Tqbb2" id="5$Mxnm$sHxR" role="1tU5fm">
+              <ref role="ehGHo" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+            </node>
+            <node concept="2OqwBi" id="5$Mxnm$sHxS" role="33vP2m">
+              <node concept="37vLTw" id="5$Mxnm$sHxT" role="2Oq$k0">
+                <ref role="3cqZAo" node="5$Mxnm$sHyA" resolve="fvc" />
+              </node>
+              <node concept="2Xjw5R" id="5$Mxnm$sHxU" role="2OqNvi">
+                <node concept="1xMEDy" id="5$Mxnm$sHxV" role="1xVPHs">
+                  <node concept="chp4Y" id="5$Mxnm$sJPn" role="ri$Ld">
+                    <ref role="cht4Q" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5$Mxnm$sHxX" role="3cqZAp">
+          <node concept="3cpWsn" id="5$Mxnm$sHxY" role="3cpWs9">
+            <property role="TrG5h" value="index" />
+            <node concept="10Oyi0" id="5$Mxnm$sHxZ" role="1tU5fm" />
+            <node concept="2OqwBi" id="5$Mxnm$sHy0" role="33vP2m">
+              <node concept="2OqwBi" id="5$Mxnm$sHy1" role="2Oq$k0">
+                <node concept="37vLTw" id="5$Mxnm$sHy2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5$Mxnm$sHxQ" resolve="table" />
+                </node>
+                <node concept="3Tsc0h" id="5$Mxnm$sKyY" role="2OqNvi">
+                  <ref role="3TtcxE" to="vlrt:5$Mxnm$qLmt" resolve="outputVariables" />
+                </node>
+              </node>
+              <node concept="2WmjW8" id="5$Mxnm$sHy4" role="2OqNvi">
+                <node concept="1PxgMI" id="5$Mxnm$sHy5" role="25WWJ7">
+                  <node concept="chp4Y" id="5$Mxnm$sHy6" role="3oSUPX">
+                    <ref role="cht4Q" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
+                  </node>
+                  <node concept="37vLTw" id="5$Mxnm$sHy7" role="1m5AlR">
+                    <ref role="3cqZAo" node="5$Mxnm$sHyA" resolve="fvc" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="5$Mxnm$sHy8" role="3cqZAp">
+          <node concept="2GrKxI" id="5$Mxnm$sHy9" role="2Gsz3X">
+            <property role="TrG5h" value="s" />
+          </node>
+          <node concept="3clFbS" id="5$Mxnm$sHya" role="2LFqv$">
+            <node concept="3clFbJ" id="5$Mxnm$sHyb" role="3cqZAp">
+              <node concept="3clFbC" id="5$Mxnm$sHyc" role="3clFbw">
+                <node concept="3cmrfG" id="5$Mxnm$sHyd" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="5$Mxnm$sHye" role="3uHU7B">
+                  <node concept="2OqwBi" id="5$Mxnm$sHyf" role="2Oq$k0">
+                    <node concept="2GrUjf" id="5$Mxnm$sHyg" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5$Mxnm$sHy9" resolve="s" />
+                    </node>
+                    <node concept="3Tsc0h" id="5$Mxnm$sLmG" role="2OqNvi">
+                      <ref role="3TtcxE" to="vlrt:5$Mxnm$qGSO" resolve="subCond" />
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="5$Mxnm$sHyi" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="5$Mxnm$sHyj" role="3clFbx">
+                <node concept="3clFbF" id="5$Mxnm$sHyk" role="3cqZAp">
+                  <node concept="2OqwBi" id="5$Mxnm$sHyl" role="3clFbG">
+                    <node concept="2OqwBi" id="5$Mxnm$sHym" role="2Oq$k0">
+                      <node concept="2GrUjf" id="5$Mxnm$sHyn" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="5$Mxnm$sHy9" resolve="s" />
+                      </node>
+                      <node concept="3Tsc0h" id="5$Mxnm$sLWB" role="2OqNvi">
+                        <ref role="3TtcxE" to="vlrt:5$Mxnm$qGSS" resolve="output" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5$Mxnm$sHyp" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.remove(int):java.lang.Object" resolve="remove" />
+                      <node concept="37vLTw" id="5$Mxnm$sHyq" role="37wK5m">
+                        <ref role="3cqZAo" node="5$Mxnm$sHxY" resolve="index" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5$Mxnm$sHyr" role="2GsD0m">
+            <node concept="37vLTw" id="5$Mxnm$sHys" role="2Oq$k0">
+              <ref role="3cqZAo" node="5$Mxnm$sHxQ" resolve="table" />
+            </node>
+            <node concept="2Rf3mk" id="5$Mxnm$sHyt" role="2OqNvi">
+              <node concept="1xMEDy" id="5$Mxnm$sHyu" role="1xVPHs">
+                <node concept="chp4Y" id="5$Mxnm$sKFW" role="ri$Ld">
+                  <ref role="cht4Q" to="vlrt:5$Mxnm$qGSN" resolve="SubconditionResult_new" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5$Mxnm$sHyw" role="3cqZAp">
+          <node concept="2OqwBi" id="5$Mxnm$sHyx" role="3clFbG">
+            <node concept="37vLTw" id="5$Mxnm$sHyy" role="2Oq$k0">
+              <ref role="3cqZAo" node="5$Mxnm$sHyA" resolve="fvc" />
+            </node>
+            <node concept="3YRAZt" id="5$Mxnm$sHyz" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5$Mxnm$sHy$" role="1B3o_S" />
+      <node concept="3cqZAl" id="5$Mxnm$sHy_" role="3clF45" />
+      <node concept="37vLTG" id="5$Mxnm$sHyA" role="3clF46">
+        <property role="TrG5h" value="fvc" />
+        <node concept="3Tqbb2" id="5$Mxnm$sHyB" role="1tU5fm">
+          <ref role="ehGHo" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5$Mxnm$sHyC" role="jymVt" />
+    <node concept="2YIFZL" id="5$Mxnm$sHyD" role="jymVt">
+      <property role="TrG5h" value="addLeftColumn" />
+      <node concept="3clFbS" id="5$Mxnm$sHyE" role="3clF47">
+        <node concept="3cpWs8" id="5$Mxnm$sHyF" role="3cqZAp">
+          <node concept="3cpWsn" id="5$Mxnm$sHyG" role="3cpWs9">
+            <property role="TrG5h" value="hct" />
+            <node concept="3Tqbb2" id="5$Mxnm$sHyH" role="1tU5fm">
+              <ref role="ehGHo" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5$Mxnm$sHyI" role="3cqZAp">
+          <node concept="37vLTI" id="5$Mxnm$sHyJ" role="3clFbG">
+            <node concept="2OqwBi" id="5$Mxnm$sHyK" role="37vLTx">
+              <node concept="37vLTw" id="5$Mxnm$sHyL" role="2Oq$k0">
+                <ref role="3cqZAo" node="5$Mxnm$sHz5" resolve="fvc" />
+              </node>
+              <node concept="2Xjw5R" id="5$Mxnm$sHyM" role="2OqNvi">
+                <node concept="1xMEDy" id="5$Mxnm$sHyN" role="1xVPHs">
+                  <node concept="chp4Y" id="5$Mxnm$sMth" role="ri$Ld">
+                    <ref role="cht4Q" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="5$Mxnm$sHyP" role="37vLTJ">
+              <ref role="3cqZAo" node="5$Mxnm$sHyG" resolve="hct" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5$Mxnm$sHyQ" role="3cqZAp">
+          <node concept="3cpWsn" id="5$Mxnm$sHyR" role="3cpWs9">
+            <property role="TrG5h" value="myIdx" />
+            <node concept="10Oyi0" id="5$Mxnm$sHyS" role="1tU5fm" />
+            <node concept="2OqwBi" id="5$Mxnm$sHyT" role="33vP2m">
+              <node concept="2OqwBi" id="5$Mxnm$sHyU" role="2Oq$k0">
+                <node concept="37vLTw" id="5$Mxnm$sHyV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5$Mxnm$sHyG" resolve="hct" />
+                </node>
+                <node concept="3Tsc0h" id="5$Mxnm$sNbI" role="2OqNvi">
+                  <ref role="3TtcxE" to="vlrt:5$Mxnm$qLmt" resolve="outputVariables" />
+                </node>
+              </node>
+              <node concept="2WmjW8" id="5$Mxnm$sHyX" role="2OqNvi">
+                <node concept="37vLTw" id="5$Mxnm$sHyY" role="25WWJ7">
+                  <ref role="3cqZAo" node="5$Mxnm$sHz5" resolve="fvc" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5$Mxnm$sHyZ" role="3cqZAp">
+          <node concept="2YIFZM" id="5$Mxnm$sNJd" role="3clFbG">
+            <ref role="37wK5l" node="5$Mxnm$sHzD" resolve="doAddColumnAtIndex" />
+            <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+            <node concept="37vLTw" id="5$Mxnm$sNJe" role="37wK5m">
+              <ref role="3cqZAo" node="5$Mxnm$sHyG" resolve="hct" />
+            </node>
+            <node concept="37vLTw" id="5$Mxnm$sNJf" role="37wK5m">
+              <ref role="3cqZAo" node="5$Mxnm$sHyR" resolve="myIdx" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5$Mxnm$sHz3" role="1B3o_S" />
+      <node concept="3cqZAl" id="5$Mxnm$sHz4" role="3clF45" />
+      <node concept="37vLTG" id="5$Mxnm$sHz5" role="3clF46">
+        <property role="TrG5h" value="fvc" />
+        <node concept="3Tqbb2" id="5$Mxnm$sHz6" role="1tU5fm">
+          <ref role="ehGHo" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5$Mxnm$sHz7" role="jymVt" />
+    <node concept="2YIFZL" id="5$Mxnm$sHz8" role="jymVt">
+      <property role="TrG5h" value="addRightColumn" />
+      <node concept="3clFbS" id="5$Mxnm$sHz9" role="3clF47">
+        <node concept="3cpWs8" id="5$Mxnm$sHza" role="3cqZAp">
+          <node concept="3cpWsn" id="5$Mxnm$sHzb" role="3cpWs9">
+            <property role="TrG5h" value="hct" />
+            <node concept="3Tqbb2" id="5$Mxnm$sHzc" role="1tU5fm">
+              <ref role="ehGHo" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5$Mxnm$sHzd" role="3cqZAp">
+          <node concept="37vLTI" id="5$Mxnm$sHze" role="3clFbG">
+            <node concept="2OqwBi" id="5$Mxnm$sHzf" role="37vLTx">
+              <node concept="37vLTw" id="5$Mxnm$sHzg" role="2Oq$k0">
+                <ref role="3cqZAo" node="5$Mxnm$sHzA" resolve="fvc" />
+              </node>
+              <node concept="2Xjw5R" id="5$Mxnm$sHzh" role="2OqNvi">
+                <node concept="1xMEDy" id="5$Mxnm$sHzi" role="1xVPHs">
+                  <node concept="chp4Y" id="5$Mxnm$sPW_" role="ri$Ld">
+                    <ref role="cht4Q" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="5$Mxnm$sHzk" role="37vLTJ">
+              <ref role="3cqZAo" node="5$Mxnm$sHzb" resolve="hct" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5$Mxnm$sHzl" role="3cqZAp">
+          <node concept="3cpWsn" id="5$Mxnm$sHzm" role="3cpWs9">
+            <property role="TrG5h" value="myIdx" />
+            <node concept="10Oyi0" id="5$Mxnm$sHzn" role="1tU5fm" />
+            <node concept="2OqwBi" id="5$Mxnm$sHzo" role="33vP2m">
+              <node concept="2OqwBi" id="5$Mxnm$sHzp" role="2Oq$k0">
+                <node concept="37vLTw" id="5$Mxnm$sHzq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5$Mxnm$sHzb" resolve="hct" />
+                </node>
+                <node concept="3Tsc0h" id="5$Mxnm$sQgH" role="2OqNvi">
+                  <ref role="3TtcxE" to="vlrt:5$Mxnm$qLmt" resolve="outputVariables" />
+                </node>
+              </node>
+              <node concept="2WmjW8" id="5$Mxnm$sHzs" role="2OqNvi">
+                <node concept="37vLTw" id="5$Mxnm$sHzt" role="25WWJ7">
+                  <ref role="3cqZAo" node="5$Mxnm$sHzA" resolve="fvc" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5$Mxnm$sHzu" role="3cqZAp">
+          <node concept="2YIFZM" id="5$Mxnm$sHzv" role="3clFbG">
+            <ref role="37wK5l" node="5$Mxnm$sHzD" resolve="doAddColumnAtIndex" />
+            <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+            <node concept="37vLTw" id="5$Mxnm$sHzw" role="37wK5m">
+              <ref role="3cqZAo" node="5$Mxnm$sHzb" resolve="hct" />
+            </node>
+            <node concept="3cpWs3" id="5$Mxnm$sHzx" role="37wK5m">
+              <node concept="3cmrfG" id="5$Mxnm$sHzy" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="37vLTw" id="5$Mxnm$sHzz" role="3uHU7B">
+                <ref role="3cqZAo" node="5$Mxnm$sHzm" resolve="myIdx" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5$Mxnm$sHz$" role="1B3o_S" />
+      <node concept="3cqZAl" id="5$Mxnm$sHz_" role="3clF45" />
+      <node concept="37vLTG" id="5$Mxnm$sHzA" role="3clF46">
+        <property role="TrG5h" value="fvc" />
+        <node concept="3Tqbb2" id="5$Mxnm$sHzB" role="1tU5fm">
+          <ref role="ehGHo" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5$Mxnm$sHzC" role="jymVt" />
+    <node concept="2YIFZL" id="5$Mxnm$sHzD" role="jymVt">
+      <property role="TrG5h" value="doAddColumnAtIndex" />
+      <node concept="3Tm6S6" id="5$Mxnm$sHzE" role="1B3o_S" />
+      <node concept="3cqZAl" id="5$Mxnm$sHzF" role="3clF45" />
+      <node concept="37vLTG" id="5$Mxnm$sHzG" role="3clF46">
+        <property role="TrG5h" value="hct" />
+        <node concept="3Tqbb2" id="5$Mxnm$sHzH" role="1tU5fm">
+          <ref role="ehGHo" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5$Mxnm$sHzI" role="3clF46">
+        <property role="TrG5h" value="myIdx" />
+        <node concept="10Oyi0" id="5$Mxnm$sHzJ" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5$Mxnm$sHzK" role="3clF47">
+        <node concept="3clFbF" id="5$Mxnm$sHzL" role="3cqZAp">
+          <node concept="2OqwBi" id="5$Mxnm$sTk6" role="3clFbG">
+            <node concept="37vLTw" id="5$Mxnm$sT29" role="2Oq$k0">
+              <ref role="3cqZAo" node="5$Mxnm$sHzG" resolve="hct" />
+            </node>
+            <node concept="2qgKlT" id="5$Mxnm$t6rf" role="2OqNvi">
+              <ref role="37wK5l" to="lj33:l_5LCC95pQ" resolve="addOutputVariable" />
+              <node concept="37vLTw" id="5$Mxnm$t6Da" role="37wK5m">
+                <ref role="3cqZAo" node="5$Mxnm$sHzI" resolve="myIdx" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5$Mxnm$sHzV" role="3cqZAp">
+          <node concept="3cpWsn" id="5$Mxnm$sHzW" role="3cpWs9">
+            <property role="TrG5h" value="sr" />
+            <node concept="2I9FWS" id="5$Mxnm$sHzX" role="1tU5fm">
+              <ref role="2I9WkF" to="vlrt:5$Mxnm$qGSN" resolve="SubconditionResult_new" />
+            </node>
+            <node concept="2OqwBi" id="5$Mxnm$sHzY" role="33vP2m">
+              <node concept="37vLTw" id="5$Mxnm$sHzZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="5$Mxnm$sHzG" resolve="hct" />
+              </node>
+              <node concept="2Rf3mk" id="5$Mxnm$sH$0" role="2OqNvi">
+                <node concept="1xMEDy" id="5$Mxnm$sH$1" role="1xVPHs">
+                  <node concept="chp4Y" id="5$Mxnm$sUY2" role="ri$Ld">
+                    <ref role="cht4Q" to="vlrt:5$Mxnm$qGSN" resolve="SubconditionResult_new" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="5$Mxnm$sH$3" role="3cqZAp">
+          <node concept="2GrKxI" id="5$Mxnm$sH$4" role="2Gsz3X">
+            <property role="TrG5h" value="subcWithValues" />
+          </node>
+          <node concept="3clFbS" id="5$Mxnm$sH$5" role="2LFqv$">
+            <node concept="3clFbF" id="5$Mxnm$sH$6" role="3cqZAp">
+              <node concept="2OqwBi" id="5$Mxnm$sH$7" role="3clFbG">
+                <node concept="2OqwBi" id="5$Mxnm$trGm" role="2Oq$k0">
+                  <node concept="2GrUjf" id="5$Mxnm$sH$9" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="5$Mxnm$sH$4" resolve="subcWithValues" />
+                  </node>
+                  <node concept="3Tsc0h" id="5$Mxnm$tsqV" role="2OqNvi">
+                    <ref role="3TtcxE" to="vlrt:5$Mxnm$qGSS" resolve="output" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5$Mxnm$sH$b" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object):void" resolve="add" />
+                  <node concept="37vLTw" id="5$Mxnm$sH$c" role="37wK5m">
+                    <ref role="3cqZAo" node="5$Mxnm$sHzI" resolve="myIdx" />
+                  </node>
+                  <node concept="2ShNRf" id="5$Mxnm$sH$d" role="37wK5m">
+                    <node concept="3zrR0B" id="5$Mxnm$sH$e" role="2ShVmc">
+                      <node concept="3Tqbb2" id="5$Mxnm$sH$f" role="3zrR0E">
+                        <ref role="ehGHo" to="vlrt:l_5LCC8UdG" resolve="NewOutputValue" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5$Mxnm$sH$g" role="2GsD0m">
+            <node concept="37vLTw" id="5$Mxnm$sH$h" role="2Oq$k0">
+              <ref role="3cqZAo" node="5$Mxnm$sHzW" resolve="sr" />
+            </node>
+            <node concept="3zZkjj" id="5$Mxnm$sH$i" role="2OqNvi">
+              <node concept="1bVj0M" id="5$Mxnm$sH$j" role="23t8la">
+                <node concept="3clFbS" id="5$Mxnm$sH$k" role="1bW5cS">
+                  <node concept="3clFbF" id="5$Mxnm$sH$l" role="3cqZAp">
+                    <node concept="2OqwBi" id="5$Mxnm$sH$m" role="3clFbG">
+                      <node concept="2OqwBi" id="5$Mxnm$sH$n" role="2Oq$k0">
+                        <node concept="37vLTw" id="5$Mxnm$sH$o" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5$Mxnm$sH$r" resolve="it" />
+                        </node>
+                        <node concept="3Tsc0h" id="5$Mxnm$sVv5" role="2OqNvi">
+                          <ref role="3TtcxE" to="vlrt:5$Mxnm$qGSS" resolve="output" />
+                        </node>
+                      </node>
+                      <node concept="3GX2aA" id="5$Mxnm$sH$q" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="5$Mxnm$sH$r" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="5$Mxnm$sH$s" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5$Mxnm$sH$t" role="jymVt" />
   </node>
 </model>
 
