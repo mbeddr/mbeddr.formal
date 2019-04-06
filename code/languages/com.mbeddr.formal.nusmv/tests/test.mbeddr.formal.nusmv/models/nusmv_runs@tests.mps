@@ -2245,6 +2245,76 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="7omKp2QUJDK" role="1SL9yI">
+      <property role="TrG5h" value="table_dectab_speed_regulator_PASS" />
+      <node concept="3cqZAl" id="7omKp2QUJDL" role="3clF45" />
+      <node concept="3clFbS" id="7omKp2QUJDM" role="3clF47">
+        <node concept="3cpWs8" id="7omKp2QUJDN" role="3cqZAp">
+          <node concept="3cpWsn" id="7omKp2QUJDO" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="7omKp2QUJDP" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="7omKp2QUJDQ" role="33vP2m">
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <node concept="Xl_RD" id="7omKp2QUJDR" role="37wK5m">
+                <property role="Xl_RC" value="_151_tables_dectab_tests" />
+              </node>
+              <node concept="Xl_RD" id="7omKp2QUJDS" role="37wK5m">
+                <property role="Xl_RC" value="table_dectab_speed_regulator_PASS" />
+              </node>
+              <node concept="1jxXqW" id="7omKp2QUJDT" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="7omKp2QUJDU" role="3cqZAp">
+          <node concept="2OqwBi" id="7omKp2QUJDV" role="3vwVQn">
+            <node concept="37vLTw" id="7omKp2QUJDW" role="2Oq$k0">
+              <ref role="3cqZAo" node="7omKp2QUJDO" resolve="res" />
+            </node>
+            <node concept="liA8E" id="7omKp2QUJDX" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7omKp2QUJDy" role="1SL9yI">
+      <property role="TrG5h" value="table_dectab_speed_regulator_FAIL" />
+      <node concept="3cqZAl" id="7omKp2QUJDz" role="3clF45" />
+      <node concept="3clFbS" id="7omKp2QUJD$" role="3clF47">
+        <node concept="3cpWs8" id="7omKp2QUJD_" role="3cqZAp">
+          <node concept="3cpWsn" id="7omKp2QUJDA" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="7omKp2QUJDB" role="1tU5fm">
+              <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+            </node>
+            <node concept="NRdvd" id="7omKp2QUJDC" role="33vP2m">
+              <ref role="37wK5l" node="6mm$FLYRvux" resolve="runNuSMVOnTest" />
+              <ref role="1Pybhc" node="6mm$FLYRuDI" resolve="Utils" />
+              <node concept="Xl_RD" id="7omKp2QUJDD" role="37wK5m">
+                <property role="Xl_RC" value="_151_tables_dectab_tests" />
+              </node>
+              <node concept="Xl_RD" id="7omKp2QUJDE" role="37wK5m">
+                <property role="Xl_RC" value="table_dectab_speed_regulator_FAIL" />
+              </node>
+              <node concept="1jxXqW" id="7omKp2QUJDF" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="7omKp2QUJDG" role="3cqZAp">
+          <node concept="2OqwBi" id="7omKp2QUJDH" role="3vwVQn">
+            <node concept="37vLTw" id="7omKp2QUJDI" role="2Oq$k0">
+              <ref role="3cqZAo" node="7omKp2QUJDA" resolve="res" />
+            </node>
+            <node concept="liA8E" id="7omKp2QUJDJ" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="4pkEwgj0iQH" role="1SL9yI">
       <property role="TrG5h" value="test_table_single_output_condition_table_test_PASS" />
       <node concept="3cqZAl" id="4pkEwgj0iQI" role="3clF45" />

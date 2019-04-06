@@ -75,6 +75,7 @@
         <child id="2295987781863305070" name="right" index="dhpfn" />
       </concept>
       <concept id="2858146662931636880" name="com.mbeddr.formal.nusmv.structure.GreaterExpression" flags="ng" index="nE0YJ" />
+      <concept id="2858146662931636879" name="com.mbeddr.formal.nusmv.structure.LessEqualsExpression" flags="ng" index="nE0YK" />
       <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
       <concept id="7320199582619497084" name="com.mbeddr.formal.nusmv.structure.WordConstant" flags="ng" index="rqu30">
         <child id="7320199582619499452" name="value" index="rqu$0" />
@@ -3470,7 +3471,131 @@
       </node>
     </node>
     <node concept="2SQmWS" id="4pkEwgiTtvF" role="2HcuB8" />
-    <node concept="2SQmWS" id="4pkEwgiTtvG" role="2HcuB8" />
+    <node concept="hx8Co" id="7omKp2QTzRd" role="2HcuB8">
+      <property role="TrG5h" value="MODE_LOW_BATTERY" />
+      <node concept="2IPVmt" id="7omKp2QTzUr" role="hx87_">
+        <property role="2IPVms" value="0" />
+      </node>
+    </node>
+    <node concept="hx8Co" id="7omKp2QTzX0" role="2HcuB8">
+      <property role="TrG5h" value="MODE_ECO" />
+      <node concept="2IPVmt" id="7omKp2QTzX1" role="hx87_">
+        <property role="2IPVms" value="1" />
+      </node>
+    </node>
+    <node concept="hx8Co" id="7omKp2QTzYA" role="2HcuB8">
+      <property role="TrG5h" value="MODE_SPORT" />
+      <node concept="2IPVmt" id="7omKp2QTzYB" role="hx87_">
+        <property role="2IPVms" value="2" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="7omKp2QTzV4" role="2HcuB8" />
+    <node concept="2Hdtz0" id="7omKp2QT9GP" role="2HcuB8">
+      <property role="TrG5h" value="speed_regulator" />
+      <node concept="32O2o0" id="7omKp2QT9L3" role="2HcbjO">
+        <node concept="JlCpM" id="7omKp2QT9LM" role="32O2ov">
+          <property role="TrG5h" value="regulated_speed" />
+          <node concept="1P08EX" id="7omKp2QT9Nz" role="1zoetD">
+            <node concept="1PSRhz" id="7omKp2QT9N_" role="1P08EY">
+              <node concept="nE0YL" id="7omKp2QThb7" role="1PSRhG">
+                <node concept="2IPVmt" id="7omKp2QThb8" role="2H9Ial">
+                  <property role="2IPVms" value="50" />
+                </node>
+                <node concept="32Ogvo" id="7omKp2QThb9" role="2H9Iav">
+                  <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+                </node>
+              </node>
+              <node concept="2HbMbg" id="7omKp2QThjv" role="1PSRhG">
+                <node concept="nE0YK" id="7omKp2QThjw" role="2H9Iav">
+                  <node concept="2IPVmt" id="7omKp2QThjx" role="2H9Iav">
+                    <property role="2IPVms" value="50" />
+                  </node>
+                  <node concept="32Ogvo" id="7omKp2QThjy" role="2H9Ial">
+                    <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+                  </node>
+                </node>
+                <node concept="nE0YL" id="7omKp2QThjz" role="2H9Ial">
+                  <node concept="2IPVmt" id="7omKp2QThj$" role="2H9Ial">
+                    <property role="2IPVms" value="100" />
+                  </node>
+                  <node concept="32Ogvo" id="7omKp2QThj_" role="2H9Iav">
+                    <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+                  </node>
+                </node>
+              </node>
+              <node concept="nE0YK" id="7omKp2QThn2" role="1PSRhG">
+                <node concept="2IPVmt" id="7omKp2QThn3" role="2H9Iav">
+                  <property role="2IPVms" value="100" />
+                </node>
+                <node concept="32Ogvo" id="7omKp2QThn4" role="2H9Ial">
+                  <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="7omKp2QTh3f" role="1PSRhI">
+                <node concept="hx854" id="7omKp2QT$5P" role="2H9Ial">
+                  <ref role="hx9HS" node="7omKp2QTzRd" resolve="MODE_LOW_BATTERY" />
+                </node>
+                <node concept="32Ogvo" id="7omKp2QTh3h" role="2H9Iav">
+                  <ref role="32Ogvr" node="7omKp2QT9K8" resolve="mode" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="7omKp2QTh2n" role="1PSRhI">
+                <node concept="hx854" id="7omKp2QT$8_" role="2H9Ial">
+                  <ref role="hx9HS" node="7omKp2QTzX0" resolve="MODE_ECO" />
+                </node>
+                <node concept="32Ogvo" id="7omKp2QTh2p" role="2H9Iav">
+                  <ref role="32Ogvr" node="7omKp2QT9K8" resolve="mode" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="7omKp2QTh4f" role="1PSRhI">
+                <node concept="hx854" id="7omKp2QT$99" role="2H9Ial">
+                  <ref role="hx9HS" node="7omKp2QTzYA" resolve="MODE_SPORT" />
+                </node>
+                <node concept="32Ogvo" id="7omKp2QTh4h" role="2H9Iav">
+                  <ref role="32Ogvr" node="7omKp2QT9K8" resolve="mode" />
+                </node>
+              </node>
+              <node concept="32Ogvo" id="7omKp2QThoY" role="1PSRhD">
+                <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+              </node>
+              <node concept="2IPVmt" id="7omKp2QThpL" role="1PSRhD">
+                <property role="2IPVms" value="50" />
+              </node>
+              <node concept="2IPVmt" id="7omKp2QThqI" role="1PSRhD">
+                <property role="2IPVms" value="50" />
+              </node>
+              <node concept="32Ogvo" id="7omKp2QThrI" role="1PSRhD">
+                <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+              </node>
+              <node concept="32Ogvo" id="7omKp2QThs$" role="1PSRhD">
+                <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+              </node>
+              <node concept="2IPVmt" id="7omKp2QThtn" role="1PSRhD">
+                <property role="2IPVms" value="100" />
+              </node>
+              <node concept="32Ogvo" id="7omKp2QThun" role="1PSRhD">
+                <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+              </node>
+              <node concept="32Ogvo" id="7omKp2QThvd" role="1PSRhD">
+                <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+              </node>
+              <node concept="32Ogvo" id="7omKp2QThw3" role="1PSRhD">
+                <ref role="32Ogvr" node="7omKp2QT9HN" resolve="crtSpeed" />
+              </node>
+            </node>
+            <node concept="2IPVmt" id="7omKp2QTho9" role="1kJg0n">
+              <property role="2IPVms" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="7omKp2QT9HN" role="2Hdtzq">
+        <property role="TrG5h" value="crtSpeed" />
+      </node>
+      <node concept="2Hdtzr" id="7omKp2QT9K8" role="2Hdtzq">
+        <property role="TrG5h" value="mode" />
+      </node>
+    </node>
     <node concept="2SQmWS" id="4pkEwgiTtvH" role="2HcuB8" />
   </node>
   <node concept="1J0nZ8" id="4pkEwgiTtzo">
@@ -3525,6 +3650,71 @@
         </node>
         <node concept="2IPVmt" id="4pkEwgiTtzF" role="1J0m7K">
           <property role="2IPVms" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="7omKp2QU5Z4" role="1J0nHx" />
+    <node concept="1J0nI2" id="7omKp2QU60s" role="1J0nHx">
+      <property role="TrG5h" value="table_dectab_speed_regulator_PASS" />
+      <ref role="1J0niy" node="7omKp2QT9GP" resolve="speed_regulator" />
+      <node concept="1J0m7Y" id="7omKp2QU62c" role="1J0m7J">
+        <node concept="2IPVmt" id="7omKp2QU62r" role="1J0m7X">
+          <property role="2IPVms" value="10" />
+        </node>
+        <node concept="hx854" id="7omKp2QU62M" role="1J0m7X">
+          <ref role="hx9HS" node="7omKp2QTzRd" resolve="MODE_LOW_BATTERY" />
+        </node>
+        <node concept="2IPVmt" id="7omKp2QU62W" role="1J0m7K">
+          <property role="2IPVms" value="10" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="7omKp2QU60t" role="1J0m7J">
+        <node concept="2IPVmt" id="7omKp2QU61k" role="1J0m7X">
+          <property role="2IPVms" value="51" />
+        </node>
+        <node concept="hx854" id="7omKp2QU61D" role="1J0m7X">
+          <ref role="hx9HS" node="7omKp2QTzRd" resolve="MODE_LOW_BATTERY" />
+        </node>
+        <node concept="2IPVmt" id="7omKp2QU61Y" role="1J0m7K">
+          <property role="2IPVms" value="50" />
+        </node>
+      </node>
+    </node>
+    <node concept="1s0Jup" id="7omKp2QUC0U" role="1J0nHx" />
+    <node concept="1J0nI2" id="7omKp2QUBYR" role="1J0nHx">
+      <property role="TrG5h" value="table_dectab_speed_regulator_FAIL" />
+      <ref role="1J0niy" node="7omKp2QT9GP" resolve="speed_regulator" />
+      <node concept="1J0m7Y" id="7omKp2QUBYS" role="1J0m7J">
+        <node concept="2IPVmt" id="7omKp2QUBYT" role="1J0m7X">
+          <property role="2IPVms" value="10" />
+        </node>
+        <node concept="hx854" id="7omKp2QUC2h" role="1J0m7X">
+          <ref role="hx9HS" node="7omKp2QTzYA" resolve="MODE_SPORT" />
+        </node>
+        <node concept="2IPVmt" id="7omKp2QUBYV" role="1J0m7K">
+          <property role="2IPVms" value="10" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="7omKp2QUBYW" role="1J0m7J">
+        <node concept="2IPVmt" id="7omKp2QUBYX" role="1J0m7X">
+          <property role="2IPVms" value="51" />
+        </node>
+        <node concept="hx854" id="7omKp2QUC2t" role="1J0m7X">
+          <ref role="hx9HS" node="7omKp2QTzYA" resolve="MODE_SPORT" />
+        </node>
+        <node concept="2IPVmt" id="7omKp2QUBYZ" role="1J0m7K">
+          <property role="2IPVms" value="51" />
+        </node>
+      </node>
+      <node concept="1J0m7Y" id="7omKp2QUC2I" role="1J0m7J">
+        <node concept="2IPVmt" id="7omKp2QUC35" role="1J0m7X">
+          <property role="2IPVms" value="120" />
+        </node>
+        <node concept="hx854" id="7omKp2QUC3s" role="1J0m7X">
+          <ref role="hx9HS" node="7omKp2QTzYA" resolve="MODE_SPORT" />
+        </node>
+        <node concept="2IPVmt" id="7omKp2QUC3A" role="1J0m7K">
+          <property role="2IPVms" value="100" />
         </node>
       </node>
     </node>
