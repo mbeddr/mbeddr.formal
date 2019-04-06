@@ -319,13 +319,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
-    <node concept="1TJgyj" id="s31qWdlV0n" role="1TKVEi">
-      <property role="IQ2ns" value="505253832596893719" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="default" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5$Mxnm$qGSM">
     <property role="EcuMT" value="6427346358527249970" />

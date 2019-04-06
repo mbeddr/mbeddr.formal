@@ -134,7 +134,6 @@
         <child id="388742343947335193" name="conditions" index="HhM43" />
       </concept>
       <concept id="3718247901948455591" name="com.mbeddr.formal.base.tabular.structure.DecisionTable" flags="ng" index="1PSRhz">
-        <child id="505253832596893719" name="default" index="albmS" />
         <child id="3718247901948455597" name="results" index="1PSRhD" />
         <child id="3718247901948455592" name="xExpr" index="1PSRhG" />
         <child id="3718247901948455594" name="yExpr" index="1PSRhI" />
@@ -1185,9 +1184,6 @@
               <node concept="32Ogvo" id="7DjHWdyf3mS" role="1PSRhD">
                 <ref role="32Ogvr" node="3epRGh6AMj3" resolve="carry_in" />
               </node>
-              <node concept="2IPVmt" id="7DjHWdyfzgI" role="albmS">
-                <property role="2IPVms" value="0" />
-              </node>
             </node>
             <node concept="2IPVmt" id="5$Mxnm$oCo4" role="1kJg0n">
               <property role="2IPVms" value="42" />
@@ -1241,9 +1237,6 @@
               </node>
               <node concept="32Ogvo" id="7DjHWdyf3te" role="1PSRhD">
                 <ref role="32Ogvr" node="3epRGh6AMj3" resolve="carry_in" />
-              </node>
-              <node concept="2IPVmt" id="7DjHWdyfzgZ" role="albmS">
-                <property role="2IPVms" value="0" />
               </node>
             </node>
             <node concept="2IPVmt" id="5$Mxnm$oCoq" role="1kJg0n">

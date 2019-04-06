@@ -204,6 +204,8 @@
     <property role="EcuMT" value="3718247901950465145" />
     <property role="TrG5h" value="DecisionTableExpression" />
     <property role="3GE5qa" value="tabular_expressions" />
+    <property role="34LRSv" value="dectab" />
+    <property role="R4oN_" value="decision table" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="3epRGh6AlhU" role="1TKVEi">
       <property role="IQ2ns" value="3718247901950465146" />

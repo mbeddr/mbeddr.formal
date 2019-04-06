@@ -271,7 +271,6 @@
         <child id="388742343947335193" name="conditions" index="HhM43" />
       </concept>
       <concept id="3718247901948455591" name="com.mbeddr.formal.base.tabular.structure.DecisionTable" flags="ng" index="1PSRhz">
-        <child id="505253832596893719" name="default" index="albmS" />
         <child id="3718247901948455597" name="results" index="1PSRhD" />
         <child id="3718247901948455592" name="xExpr" index="1PSRhG" />
         <child id="3718247901948455594" name="yExpr" index="1PSRhI" />
@@ -3460,9 +3459,6 @@
                 <property role="2IPVms" value="1" />
               </node>
               <node concept="2IPVmt" id="4pkEwgiTtz4" role="1PSRhD">
-                <property role="2IPVms" value="0" />
-              </node>
-              <node concept="2IPVmt" id="4pkEwgiTtzm" role="albmS">
                 <property role="2IPVms" value="0" />
               </node>
             </node>
