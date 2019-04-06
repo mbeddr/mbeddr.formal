@@ -39,7 +39,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -61,9 +60,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -242,19 +238,6 @@
       <node concept="3uibUv" id="26dfgZmiKrd" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
-    </node>
-    <node concept="13i0hz" id="25dEoZdDeGu" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <ref role="13i0hy" to="ox2v:25dEoZdxyU1" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="25dEoZdDeGv" role="1B3o_S" />
-      <node concept="3clFbS" id="25dEoZdDeGy" role="3clF47">
-        <node concept="3clFbF" id="25dEoZdDeHp" role="3cqZAp">
-          <node concept="3clFbT" id="25dEoZdDeHo" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="25dEoZdDeGz" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="25Ap4XXjSr1">
