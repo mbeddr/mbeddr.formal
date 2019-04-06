@@ -136,6 +136,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -1708,19 +1714,6 @@
     <node concept="13hLZK" id="25dEoZdDeul" role="13h7CW">
       <node concept="3clFbS" id="25dEoZdDeum" role="2VODD2" />
     </node>
-    <node concept="13i0hz" id="25dEoZdDeuv" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <ref role="13i0hy" node="25dEoZdxyU1" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="25dEoZdDeuw" role="1B3o_S" />
-      <node concept="3clFbS" id="25dEoZdDeuz" role="3clF47">
-        <node concept="3clFbF" id="25dEoZdDev0" role="3cqZAp">
-          <node concept="3clFbT" id="25dEoZdDeuZ" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="25dEoZdDeu$" role="3clF45" />
-    </node>
   </node>
   <node concept="13h7C7" id="25dEoZdDsX6">
     <property role="3GE5qa" value="expressions.arithmetic" />
@@ -2048,6 +2041,32 @@
         </node>
       </node>
       <node concept="10P_77" id="25dEoZdKMOS" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7omKp2QTCfA">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="13h7C2" to="ehqg:7omKp2QTCdQ" resolve="IConstantLike" />
+    <node concept="13hLZK" id="7omKp2QTCfB" role="13h7CW">
+      <node concept="3clFbS" id="7omKp2QTCfC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7omKp2QTCgc" role="13h7CS">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="13i0it" value="true" />
+      <ref role="13i0hy" node="25dEoZdxyU1" resolve="isStaticallyEvaluatable" />
+      <node concept="3Tm1VV" id="7omKp2QTCgd" role="1B3o_S" />
+      <node concept="3clFbS" id="7omKp2QTCgi" role="3clF47">
+        <node concept="3SKdUt" id="7omKp2QTCMz" role="3cqZAp">
+          <node concept="3SKdUq" id="7omKp2QTCM_" role="3SKWNk">
+            <property role="3SKdUp" value="should NOT be overriden" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7omKp2QTCB8" role="3cqZAp">
+          <node concept="3clFbT" id="7omKp2QTCB7" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7omKp2QTCgj" role="3clF45" />
     </node>
   </node>
 </model>

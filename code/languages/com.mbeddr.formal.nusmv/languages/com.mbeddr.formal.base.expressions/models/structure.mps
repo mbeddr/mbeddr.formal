@@ -27,6 +27,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -36,7 +39,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -60,6 +65,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -194,6 +200,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="6NmtaR1V301" resolve="Expression" />
+    <node concept="PrWs8" id="7omKp2QTFGW" role="PzmwI">
+      <ref role="PrY4T" node="7omKp2QTCdQ" resolve="IConstantLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR20s4K">
     <property role="EcuMT" value="7842584090745356592" />
@@ -421,6 +430,17 @@
     <property role="EcuMT" value="4696505601351828208" />
     <property role="3GE5qa" value="expressions.dot" />
     <property role="TrG5h" value="IUntypedDotTarget" />
+  </node>
+  <node concept="PlHQZ" id="7omKp2QTCdQ">
+    <property role="EcuMT" value="8509201373251142518" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="IConstantLike" />
+    <node concept="PrWs8" id="7omKp2QTCeH" role="PrDN$">
+      <ref role="PrY4T" node="1gJVC85JI6z" resolve="IStaticallyEvaluatable" />
+    </node>
+    <node concept="t5JxF" id="7omKp2QTNVE" role="lGtFl">
+      <property role="t5JxN" value="an IStaticallyEvaluatable for which we know for sure that isStaticallyEvaluatable returns TRUE" />
+    </node>
   </node>
 </model>
 
