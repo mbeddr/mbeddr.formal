@@ -232,6 +232,8 @@
     <property role="EcuMT" value="7842584090743391223" />
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="EnumerationMember" />
+    <property role="34LRSv" value="enum member" />
+    <property role="R4oN_" value="enumeration member" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3cHtG5tUeGE" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
@@ -385,6 +387,9 @@
       <property role="20kJfa" value="enumMember" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6NmtaR1SWfR" resolve="EnumerationMember" />
+    </node>
+    <node concept="PrWs8" id="7omKp2QTOWm" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:7omKp2QTCdQ" resolve="IStaticallyEvaluatableStrong" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1VSYF">
