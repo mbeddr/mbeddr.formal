@@ -174,6 +174,15 @@
     <node concept="PrWs8" id="7Z6$Wo5TKsN" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
+    <node concept="1irR5M" id="7omKp2QVMH0" role="rwd14">
+      <property role="2$rrk2" value="19" />
+      <node concept="1irPie" id="7omKp2QVMH7" role="1irR9h">
+        <property role="1irPi9" value="ⓟ" />
+        <node concept="3PKj8D" id="7omKp2QVMH8" role="3PKjny">
+          <property role="3PKj8l" value="122334" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1SV6O">
     <property role="EcuMT" value="7842584090743386548" />
@@ -240,6 +249,15 @@
     </node>
     <node concept="PrWs8" id="7Z6$Wo5TxFi" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="1irR5M" id="7omKp2QVEtS" role="rwd14">
+      <property role="2$rrk2" value="18" />
+      <node concept="1irPie" id="7omKp2QVAJc" role="1irR9h">
+        <property role="1irPi9" value="ε" />
+        <node concept="3PKj8D" id="7omKp2QVAJd" role="3PKjny">
+          <property role="3PKj8l" value="122334" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1UNLO">
@@ -389,7 +407,7 @@
       <ref role="20lvS9" node="6NmtaR1SWfR" resolve="EnumerationMember" />
     </node>
     <node concept="PrWs8" id="7omKp2QTOWm" role="PzmwI">
-      <ref role="PrY4T" to="ehqg:7omKp2QTCdQ" resolve="IStaticallyEvaluatableStrong" />
+      <ref role="PrY4T" to="ehqg:7omKp2QTCdQ" resolve="IConstantLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="6NmtaR1VSYF">

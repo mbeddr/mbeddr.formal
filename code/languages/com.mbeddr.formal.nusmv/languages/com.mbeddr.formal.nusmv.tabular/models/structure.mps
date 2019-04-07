@@ -179,6 +179,15 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="l_5LCC$8F4" resolve="ActionDeclaration" />
     </node>
+    <node concept="1irR5M" id="7omKp2QVk5o" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="7RhjhI7c73N" role="1irR9h">
+        <property role="1irPi9" value="A" />
+        <node concept="3PKj8D" id="7RhjhI7c73O" role="3PKjny">
+          <property role="3PKj8l" value="123456" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="l_5LCC$8F4">
     <property role="EcuMT" value="388742343954565828" />
