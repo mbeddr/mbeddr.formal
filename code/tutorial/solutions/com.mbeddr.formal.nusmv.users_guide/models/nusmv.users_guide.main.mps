@@ -12,7 +12,7 @@
     <import index="gma2" ref="r:9373994a-6064-48c9-8736-0c6a946eaa23(_010_features._500_nusmv_importer)" />
     <import index="2ufg" ref="r:d37bd9b7-40a1-410a-8148-61e2d84bead3(_010_features._300_nusmv_cbd)" />
     <import index="w2ht" ref="r:7a8f5dbf-f084-4c9f-bfbe-b41ce5171f9d(_010_features._015_nusmv_ext)" />
-    <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" implicit="true" />
+    <import index="l9d9" ref="r:0b49ab2d-45c1-47fe-8808-b4208a25675e(_010_features._050_nusmv_tables)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -1184,61 +1184,173 @@
     <node concept="1_0VNX" id="2mjHtwTG723" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_tables" />
       <property role="1_0VJr" value="Specification Using Tables" />
-      <node concept="1_1sxE" id="2mjHtwTG724" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="1_0LV8" id="2mjHtwTG725" role="1_0VJ0">
-        <node concept="19SGf9" id="2mjHtwTG726" role="1_0LWR">
-          <node concept="19SUe$" id="2mjHtwTG727" role="19SJt6">
-            <property role="19SUeA" value="We created a DSL which implements function-tables. A " />
+      <node concept="1_0VNX" id="7omKp2QVZxa" role="1_0VJ0">
+        <property role="1_0VJr" value="Function Tables" />
+        <property role="TrG5h" value="function_tables" />
+        <node concept="1_0LV8" id="2mjHtwTG725" role="1_0VJ0">
+          <node concept="19SGf9" id="2mjHtwTG726" role="1_0LWR">
+            <node concept="19SUe$" id="2mjHtwTG727" role="19SJt6">
+              <property role="19SUeA" value="We created a DSL which implements function-tables. A " />
+            </node>
+            <node concept="1jUjqm" id="2mjHtwTGo90" role="19SJt6">
+              <node concept="19SGf9" id="2mjHtwTGo91" role="$DsGW">
+                <node concept="19SUe$" id="2mjHtwTGo92" role="19SJt6">
+                  <property role="19SUeA" value="FUNCTION-TABLE" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="2mjHtwTGo93" role="19SJt6">
+              <property role="19SUeA" value=" section is a specialization of the " />
+            </node>
+            <node concept="1jUjqm" id="2mjHtwTGo9o" role="19SJt6">
+              <node concept="19SGf9" id="2mjHtwTGo9p" role="$DsGW">
+                <node concept="19SUe$" id="2mjHtwTGo9q" role="19SJt6">
+                  <property role="19SUeA" value="DEFINE" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="2mjHtwTGo9r" role="19SJt6">
+              <property role="19SUeA" value=" section. In the figure below we illustrate the definition of a " />
+            </node>
+            <node concept="1jUjqm" id="2mjHtwTGoa1" role="19SJt6">
+              <node concept="19SGf9" id="2mjHtwTGoa2" role="$DsGW">
+                <node concept="19SUe$" id="2mjHtwTGoa3" role="19SJt6">
+                  <property role="19SUeA" value="FUNCTION-TABLE" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="2mjHtwTGoa0" role="19SJt6">
+              <property role="19SUeA" value=" for computing a one bit full adder. " />
+            </node>
           </node>
-          <node concept="1jUjqm" id="2mjHtwTGo90" role="19SJt6">
-            <node concept="19SGf9" id="2mjHtwTGo91" role="$DsGW">
-              <node concept="19SUe$" id="2mjHtwTGo92" role="19SJt6">
-                <property role="19SUeA" value="FUNCTION-TABLE" />
+        </node>
+        <node concept="2SaynC" id="2mjHtwTG72Q" role="1_0VJ0">
+          <property role="TrG5h" value="nusmv_function_table" />
+          <ref role="1wz7Nk" to="l9d9:2mjHtwTG75u" resolve="one_bit_full_adder" />
+          <node concept="2Sb_l4" id="2mjHtwTG72R" role="2SbwM5">
+            <property role="2Sb_kV" value="nusmv_function_table.png" />
+            <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+          </node>
+          <node concept="OjmMv" id="2mjHtwTG72S" role="2SaI5j">
+            <node concept="19SGf9" id="2mjHtwTG72T" role="OjmMu">
+              <node concept="19SUe$" id="2mjHtwTG72U" role="19SJt6">
+                <property role="19SUeA" value="A function table which implements a one-bit full adder." />
               </node>
             </node>
           </node>
-          <node concept="19SUe$" id="2mjHtwTGo93" role="19SJt6">
-            <property role="19SUeA" value=" section is a specialization of the " />
-          </node>
-          <node concept="1jUjqm" id="2mjHtwTGo9o" role="19SJt6">
-            <node concept="19SGf9" id="2mjHtwTGo9p" role="$DsGW">
-              <node concept="19SUe$" id="2mjHtwTGo9q" role="19SJt6">
-                <property role="19SUeA" value="DEFINE" />
-              </node>
-            </node>
-          </node>
-          <node concept="19SUe$" id="2mjHtwTGo9r" role="19SJt6">
-            <property role="19SUeA" value=" section. In the figure below we illustrate the definition of a " />
-          </node>
-          <node concept="1jUjqm" id="2mjHtwTGoa1" role="19SJt6">
-            <node concept="19SGf9" id="2mjHtwTGoa2" role="$DsGW">
-              <node concept="19SUe$" id="2mjHtwTGoa3" role="19SJt6">
-                <property role="19SUeA" value="FUNCTION-TABLE" />
-              </node>
-            </node>
-          </node>
-          <node concept="19SUe$" id="2mjHtwTGoa0" role="19SJt6">
-            <property role="19SUeA" value=" for computing a one bit full adder. " />
-          </node>
+          <node concept="2bctqb" id="2mjHtwTG72V" role="3SHJ_F" />
         </node>
       </node>
-      <node concept="2SaynC" id="2mjHtwTG72Q" role="1_0VJ0">
-        <property role="TrG5h" value="nusmv_function_table" />
-        <ref role="1wz7Nk" to="l9d9:2mjHtwTG75u" resolve="one_bit_full_adder" />
-        <node concept="2Sb_l4" id="2mjHtwTG72R" role="2SbwM5">
-          <property role="2Sb_kV" value="nusmv_function_table.png" />
-          <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
-        </node>
-        <node concept="OjmMv" id="2mjHtwTG72S" role="2SaI5j">
-          <node concept="19SGf9" id="2mjHtwTG72T" role="OjmMu">
-            <node concept="19SUe$" id="2mjHtwTG72U" role="19SJt6">
-              <property role="19SUeA" value="A function table which implements a one-bit full adder." />
+      <node concept="1_0VNX" id="7omKp2QVZF5" role="1_0VJ0">
+        <property role="TrG5h" value="decision_tables" />
+        <property role="1_0VJr" value="Decision Tables Expressions" />
+        <node concept="1_0LV8" id="7omKp2QVZFP" role="1_0VJ0">
+          <node concept="19SGf9" id="7omKp2QVZFQ" role="1_0LWR">
+            <node concept="19SUe$" id="7omKp2QVZFR" role="19SJt6">
+              <property role="19SUeA" value="Many expressions depend on two complex conditions which are orthogonal. For these cases we provide a DSL which implements a " />
+            </node>
+            <node concept="1jUjqm" id="7omKp2QVZG$" role="19SJt6">
+              <node concept="19SGf9" id="7omKp2QVZG_" role="$DsGW">
+                <node concept="19SUe$" id="7omKp2QVZGA" role="19SJt6">
+                  <property role="19SUeA" value="decision table expression" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="7omKp2QVZGB" role="19SJt6">
+              <property role="19SUeA" value=". A decision table expression is reduced to a complex conditional expression. " />
             </node>
           </node>
         </node>
-        <node concept="2bctqb" id="2mjHtwTG72V" role="3SHJ_F" />
+        <node concept="2SaynC" id="7omKp2QVZG8" role="1_0VJ0">
+          <property role="TrG5h" value="decision_table" />
+          <ref role="1wz7Nk" to="l9d9:7omKp2QT9DQ" resolve="_050_speed_regulator_decision_table" />
+          <node concept="2Sb_l4" id="7omKp2QVZGM" role="2SbwM5">
+            <property role="2Sb_kV" value="nusmv_tabular_decision_table.PNG" />
+            <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+          </node>
+          <node concept="OjmMv" id="7omKp2QVZGc" role="2SaI5j">
+            <node concept="19SGf9" id="7omKp2QVZGd" role="OjmMu">
+              <node concept="19SUe$" id="7omKp2QVZN_" role="19SJt6">
+                <property role="19SUeA" value="A decision table expression." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="7omKp2QVZTx" role="3SHJ_F" />
+        </node>
+      </node>
+      <node concept="1_0VNX" id="7omKp2QVZZO" role="1_0VJ0">
+        <property role="TrG5h" value="single_output_tabular_expression" />
+        <property role="1_0VJr" value="Tabular Expressions" />
+        <node concept="1_0LV8" id="7omKp2QW013" role="1_0VJ0">
+          <node concept="19SGf9" id="7omKp2QW014" role="1_0LWR">
+            <node concept="19SUe$" id="7omKp2QW015" role="19SJt6">
+              <property role="19SUeA" value="The value of an expression depends sometimes on complex imbricated conditions. For these situations, we have defined tabular expressions." />
+            </node>
+          </node>
+        </node>
+        <node concept="2SaynC" id="7omKp2QW01x" role="1_0VJ0">
+          <property role="TrG5h" value="tabular_expression" />
+          <ref role="1wz7Nk" to="l9d9:7omKp2QVbUK" resolve="_060_mode_watcher_single_output_condition_table" />
+          <node concept="2Sb_l4" id="7omKp2QW01Z" role="2SbwM5">
+            <property role="2Sb_kV" value="nusmv_tabular_tabular_expression.PNG" />
+            <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+          </node>
+          <node concept="OjmMv" id="7omKp2QW01_" role="2SaI5j">
+            <node concept="19SGf9" id="7omKp2QW01A" role="OjmMu">
+              <node concept="19SUe$" id="7omKp2QW01B" role="19SJt6">
+                <property role="19SUeA" value="Tabular expression can be used for any number of levels of imbrication of conditions." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="7omKp2QW07T" role="3SHJ_F" />
+        </node>
+      </node>
+      <node concept="1_0VNX" id="7omKp2QW08f" role="1_0VJ0">
+        <property role="TrG5h" value="actions_table" />
+        <property role="1_0VJr" value="Actions Table" />
+        <node concept="1_0LV8" id="7omKp2QW08g" role="1_0VJ0">
+          <node concept="19SGf9" id="7omKp2QW08h" role="1_0LWR">
+            <node concept="19SUe$" id="7omKp2QW08i" role="19SJt6">
+              <property role="19SUeA" value="Complex changes in the internal state of a module depending on complex conditions can be modeled with " />
+            </node>
+            <node concept="1jUjqm" id="7omKp2QW4bK" role="19SJt6">
+              <node concept="19SGf9" id="7omKp2QW4bL" role="$DsGW">
+                <node concept="19SUe$" id="7omKp2QW4bM" role="19SJt6">
+                  <property role="19SUeA" value="ACTIONS-TABLE" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="7omKp2QW4bN" role="19SJt6">
+              <property role="19SUeA" value=" sections." />
+            </node>
+          </node>
+        </node>
+        <node concept="2SaynC" id="7omKp2QW08j" role="1_0VJ0">
+          <property role="TrG5h" value="tabular_expression" />
+          <ref role="1wz7Nk" to="l9d9:7omKp2QVjRW" resolve="_070_emergency_stop_actions_table" />
+          <node concept="2Sb_l4" id="7omKp2QW08k" role="2SbwM5">
+            <property role="2Sb_kV" value="nusmv_tabular_action_table.PNG" />
+            <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
+          </node>
+          <node concept="OjmMv" id="7omKp2QW08l" role="2SaI5j">
+            <node concept="19SGf9" id="7omKp2QW08m" role="OjmMu">
+              <node concept="19SUe$" id="7omKp2QW08n" role="19SJt6">
+                <property role="19SUeA" value="Actions tables model complex changes of states of a " />
+              </node>
+              <node concept="1jUjqm" id="7omKp2QW4bY" role="19SJt6">
+                <node concept="19SGf9" id="7omKp2QW4bZ" role="$DsGW">
+                  <node concept="19SUe$" id="7omKp2QW4c0" role="19SJt6">
+                    <property role="19SUeA" value="MODULE" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="7omKp2QW4c1" role="19SJt6">
+                <property role="19SUeA" value=" depending on cascades of complex conditions." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="7omKp2QW08o" role="3SHJ_F" />
+        </node>
       </node>
     </node>
   </node>
