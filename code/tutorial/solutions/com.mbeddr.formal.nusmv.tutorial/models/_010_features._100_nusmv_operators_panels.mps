@@ -56,13 +56,14 @@
     </language>
     <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
       <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
-      <concept id="5424857460111392086" name="com.mbeddr.formal.nusmv.arch.structure.OutputFunctionValueContent" flags="ng" index="1wmsD8" />
+      <concept id="5424857460111392086" name="com.mbeddr.formal.nusmv.arch.structure.OutputFunctionValueDeclaration" flags="ng" index="1wmsD8" />
     </language>
     <language id="450c81f1-1811-41ac-a9c8-8fda59f778ca" name="com.mbeddr.formal.nusmv.tabular">
       <concept id="2707707741265921313" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionValueContentDotTarget" flags="ng" index="sab3T" />
       <concept id="3038640987157452302" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableSection" flags="ng" index="3PnjRI">
-        <child id="3038640987157837161" name="table" index="3PlPU9" />
+        <child id="6427346358527614907" name="table_new" index="3XgHFe" />
       </concept>
+      <concept id="6427346358527586462" name="com.mbeddr.formal.nusmv.tabular.structure.FunctionTableTable" flags="ng" index="3XnnnF" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2295987781866635522" name="com.mbeddr.formal.nusmv.structure.ConditionalExpression" flags="ng" index="d4bQV">
@@ -112,7 +113,7 @@
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
-      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumMemberRef" flags="ng" index="2HeeqP">
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
         <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
       </concept>
       <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
@@ -277,17 +278,21 @@
       </concept>
     </language>
     <language id="b3b9fe18-f0c4-4cea-83c5-45faa74e0911" name="com.mbeddr.formal.base.tabular">
-      <concept id="7480847423937116655" name="com.mbeddr.formal.base.tabular.structure.OutputValue" flags="ng" index="2HuVrR">
-        <child id="5453576532413735747" name="exp" index="agTQP" />
+      <concept id="388742343947428716" name="com.mbeddr.formal.base.tabular.structure.NewOutputValue" flags="ng" index="HhFhQ">
+        <child id="388742343947428717" name="exp" index="HhFhR" />
       </concept>
-      <concept id="3038640987154488121" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable" flags="ng" index="3PoB3p">
-        <child id="3038640987155459296" name="conditions" index="3Pv8s0" />
-        <child id="3038640987155459300" name="outputVariables" index="3Pv8s4" />
+      <concept id="388742343947335184" name="com.mbeddr.formal.base.tabular.structure.AbstractSubcondition" flags="ng" index="HhM4a">
+        <child id="388742343947335190" name="subCond" index="HhM4c" />
+        <child id="388742343947335189" name="cond" index="HhM4f" />
       </concept>
-      <concept id="3038640987155459340" name="com.mbeddr.formal.base.tabular.structure.SubconditionResult" flags="ng" index="3Pv8rG">
-        <child id="3038640987155465385" name="cond" index="3PsQX9" />
-        <child id="3038640987155465389" name="subCond" index="3PsQXd" />
-        <child id="3038640987155465396" name="output" index="3PsQXk" />
+      <concept id="388742343947335183" name="com.mbeddr.formal.base.tabular.structure.AbstractConditionTable" flags="ng" index="HhM4l">
+        <child id="388742343947335193" name="conditions" index="HhM43" />
+      </concept>
+      <concept id="6427346358527249971" name="com.mbeddr.formal.base.tabular.structure.SubconditionResult_new" flags="ng" index="3Xm4H6">
+        <child id="6427346358527249976" name="output" index="3Xm4Hd" />
+      </concept>
+      <concept id="6427346358527249970" name="com.mbeddr.formal.base.tabular.structure.HorizontalConditionTable_new" flags="ng" index="3Xm4H7">
+        <child id="6427346358527268253" name="outputVariables" index="3Xmp3C" />
       </concept>
     </language>
     <language id="2dd5dace-06d5-4283-a878-7272f2df6d4b" name="com.mbeddr.formal.nusmv.operatorspanel">
@@ -1233,8 +1238,8 @@
         <node concept="JlCpM" id="2H74AM1yI_r" role="32O2ov">
           <property role="TrG5h" value="overspeed_warning" />
           <node concept="1ziNjN" id="2H74AM1yJI3" role="1zoetD">
-            <node concept="sab3T" id="2H74AM1yJIB" role="1ziNjJ">
-              <ref role="skqaw" node="2H74AM1yINL" resolve="overspeed_warning" />
+            <node concept="sab3T" id="sSLfC98hpi" role="1ziNjJ">
+              <ref role="skqaw" node="sSLfC98hnS" resolve="overspeed_warning" />
             </node>
             <node concept="2He$iJ" id="2H74AM1yJHN" role="1ziNjM">
               <ref role="2He$iI" node="2H74AM1yJEQ" resolve="warning" />
@@ -1426,74 +1431,74 @@
     <node concept="2Hdtz0" id="2H74AM1yILk" role="2HcuB8">
       <property role="TrG5h" value="over_speed_warning" />
       <node concept="3PnjRI" id="2H74AM1yINp" role="2HcbjO">
-        <node concept="3PoB3p" id="2H74AM1yINr" role="3PlPU9">
-          <node concept="3Pv8rG" id="2H74AM1yINt" role="3Pv8s0">
-            <node concept="nE0YI" id="2H74AM1yJa1" role="3PsQX9">
-              <node concept="32Ogvo" id="2H74AM1yIOs" role="2H9Iav">
+        <node concept="3XnnnF" id="sSLfC98hnO" role="3XgHFe">
+          <node concept="1wmsD8" id="sSLfC98hnS" role="3Xmp3C">
+            <property role="TrG5h" value="overspeed_warning" />
+          </node>
+          <node concept="3Xm4H6" id="sSLfC98hnT" role="HhM43">
+            <node concept="nE0YI" id="sSLfC98hnU" role="HhM4f">
+              <node concept="32Ogvo" id="sSLfC98hnV" role="2H9Iav">
                 <ref role="32Ogvr" node="2H74AM1yIOn" resolve="current_speed" />
               </node>
-              <node concept="2H9Eef" id="2H74AM1yIOX" role="2H9Ial">
-                <node concept="hx854" id="2H74AM1yIUl" role="2H9Ial">
+              <node concept="2H9Eef" id="sSLfC98hnW" role="2H9Ial">
+                <node concept="hx854" id="sSLfC98hnX" role="2H9Ial">
                   <ref role="hx9HS" node="2H74AM1yIRE" resolve="WARNING_TRESHOLD" />
                 </node>
-                <node concept="hx854" id="2H74AM1yIOP" role="2H9Iav">
+                <node concept="hx854" id="sSLfC98hnY" role="2H9Iav">
                   <ref role="hx9HS" node="2H74AM1y$RV" resolve="MAX_ALLOWED_SPEED" />
                 </node>
               </node>
             </node>
-            <node concept="3Pv8rG" id="2H74AM1yIUq" role="3PsQXd">
-              <node concept="2HuVrR" id="2H74AM1yINy" role="3PsQXk">
-                <node concept="2HeeqP" id="2H74AM1yJEu" role="agTQP">
+            <node concept="3Xm4H6" id="sSLfC98hnZ" role="HhM4c">
+              <node concept="HhFhQ" id="sSLfC98ho1" role="3Xm4Hd">
+                <node concept="2HeeqP" id="sSLfC98ho0" role="HhFhR">
                   <ref role="2HeeqO" node="2H74AM1yJs1" resolve="WARNING_YELLOW" />
                 </node>
               </node>
-              <node concept="nE0YL" id="2H74AM1yIUH" role="3PsQX9">
-                <node concept="hx854" id="2H74AM1yIV1" role="2H9Ial">
+              <node concept="nE0YL" id="sSLfC98ho2" role="HhM4f">
+                <node concept="hx854" id="sSLfC98ho3" role="2H9Ial">
                   <ref role="hx9HS" node="2H74AM1y$RV" resolve="MAX_ALLOWED_SPEED" />
                 </node>
-                <node concept="32Ogvo" id="2H74AM1yIU_" role="2H9Iav">
+                <node concept="32Ogvo" id="sSLfC98ho4" role="2H9Iav">
                   <ref role="32Ogvr" node="2H74AM1yIOn" resolve="current_speed" />
                 </node>
               </node>
             </node>
-            <node concept="3Pv8rG" id="2H74AM1yIV6" role="3PsQXd">
-              <node concept="nE0YJ" id="2H74AM1yIVC" role="3PsQX9">
-                <node concept="hx854" id="2H74AM1yIVW" role="2H9Ial">
-                  <ref role="hx9HS" node="2H74AM1y$RV" resolve="MAX_ALLOWED_SPEED" />
-                </node>
-                <node concept="32Ogvo" id="2H74AM1yIVw" role="2H9Iav">
-                  <ref role="32Ogvr" node="2H74AM1yIOn" resolve="current_speed" />
-                </node>
-              </node>
-              <node concept="2HuVrR" id="2H74AM1yIV8" role="3PsQXk">
-                <node concept="2HeeqP" id="2H74AM1yJEz" role="agTQP">
+            <node concept="3Xm4H6" id="sSLfC98ho5" role="HhM4c">
+              <node concept="HhFhQ" id="sSLfC98ho7" role="3Xm4Hd">
+                <node concept="2HeeqP" id="sSLfC98ho6" role="HhFhR">
                   <ref role="2HeeqO" node="2H74AM1yJtS" resolve="WARNING_RED" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="3Pv8rG" id="2H74AM1yJ8d" role="3Pv8s0">
-            <node concept="nE0YL" id="2H74AM1yJ99" role="3PsQX9">
-              <node concept="2H9Eef" id="2H74AM1yJ9D" role="2H9Ial">
-                <node concept="hx854" id="2H74AM1yJ9X" role="2H9Ial">
-                  <ref role="hx9HS" node="2H74AM1yIRE" resolve="WARNING_TRESHOLD" />
-                </node>
-                <node concept="hx854" id="2H74AM1yJ9x" role="2H9Iav">
+              <node concept="nE0YJ" id="sSLfC98ho8" role="HhM4f">
+                <node concept="hx854" id="sSLfC98ho9" role="2H9Ial">
                   <ref role="hx9HS" node="2H74AM1y$RV" resolve="MAX_ALLOWED_SPEED" />
                 </node>
-              </node>
-              <node concept="32Ogvo" id="2H74AM1yJ91" role="2H9Iav">
-                <ref role="32Ogvr" node="2H74AM1yIOn" resolve="current_speed" />
+                <node concept="32Ogvo" id="sSLfC98hoa" role="2H9Iav">
+                  <ref role="32Ogvr" node="2H74AM1yIOn" resolve="current_speed" />
+                </node>
               </node>
             </node>
-            <node concept="2HuVrR" id="2H74AM1yJ8f" role="3PsQXk">
-              <node concept="2HeeqP" id="2H74AM1yJEI" role="agTQP">
+          </node>
+          <node concept="3Xm4H6" id="sSLfC98hob" role="HhM43">
+            <node concept="HhFhQ" id="sSLfC98hod" role="3Xm4Hd">
+              <node concept="2HeeqP" id="sSLfC98hoc" role="HhFhR">
                 <ref role="2HeeqO" node="2H74AM1yJqN" resolve="NO_WARNING" />
               </node>
             </node>
-          </node>
-          <node concept="1wmsD8" id="2H74AM1yINL" role="3Pv8s4">
-            <property role="TrG5h" value="overspeed_warning" />
+            <node concept="nE0YL" id="sSLfC98hoe" role="HhM4f">
+              <node concept="2H9Eef" id="sSLfC98hof" role="2H9Ial">
+                <node concept="hx854" id="sSLfC98hog" role="2H9Ial">
+                  <ref role="hx9HS" node="2H74AM1yIRE" resolve="WARNING_TRESHOLD" />
+                </node>
+                <node concept="hx854" id="sSLfC98hoh" role="2H9Iav">
+                  <ref role="hx9HS" node="2H74AM1y$RV" resolve="MAX_ALLOWED_SPEED" />
+                </node>
+              </node>
+              <node concept="32Ogvo" id="sSLfC98hoi" role="2H9Iav">
+                <ref role="32Ogvr" node="2H74AM1yIOn" resolve="current_speed" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
