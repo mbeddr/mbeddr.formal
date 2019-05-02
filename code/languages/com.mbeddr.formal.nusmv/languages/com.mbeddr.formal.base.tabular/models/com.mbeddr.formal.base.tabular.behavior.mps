@@ -8,7 +8,7 @@
   <imports>
     <import index="vlrt" ref="r:3ddaee68-0b72-48af-bc28-bb60d8c7c95e(com.mbeddr.formal.base.tabular.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -200,6 +200,7 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
@@ -318,6 +319,14 @@
       <node concept="3Tm1VV" id="l_5LCC8DSR" role="1B3o_S" />
       <node concept="3cqZAl" id="l_5LCC8DTc" role="3clF45" />
       <node concept="3clFbS" id="l_5LCC8DST" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="4gtLUSM$IVT" role="13h7CS">
+      <property role="TrG5h" value="clearOutputValues" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="4gtLUSM$IVU" role="1B3o_S" />
+      <node concept="3cqZAl" id="4gtLUSM$IVV" role="3clF45" />
+      <node concept="3clFbS" id="4gtLUSM$IVW" role="3clF47" />
     </node>
     <node concept="13i0hz" id="l_5LCC8KiZ" role="13h7CS">
       <property role="TrG5h" value="addOutputValuesColumn" />
@@ -598,6 +607,25 @@
         </node>
       </node>
       <node concept="3cqZAl" id="l_5LCC8YJg" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4gtLUSM$JeN" role="13h7CS">
+      <property role="TrG5h" value="clearOutputValues" />
+      <ref role="13i0hy" node="4gtLUSM$IVT" resolve="clearOutputValues" />
+      <node concept="3Tm1VV" id="4gtLUSM$JeO" role="1B3o_S" />
+      <node concept="3clFbS" id="4gtLUSM$JeR" role="3clF47">
+        <node concept="3clFbF" id="4gtLUSM$JpZ" role="3cqZAp">
+          <node concept="2OqwBi" id="4gtLUSM$Kp_" role="3clFbG">
+            <node concept="2OqwBi" id="4gtLUSM$Jyx" role="2Oq$k0">
+              <node concept="13iPFW" id="4gtLUSM$JpY" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4gtLUSM$K84" role="2OqNvi">
+                <ref role="3Tt5mk" to="vlrt:l_5LCC8U3m" resolve="output" />
+              </node>
+            </node>
+            <node concept="3YRAZt" id="4gtLUSM$Lb2" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4gtLUSM$JeS" role="3clF45" />
     </node>
     <node concept="13i0hz" id="l_5LCC8YJh" role="13h7CS">
       <property role="TrG5h" value="addOutputValuesColumn" />
@@ -1063,6 +1091,25 @@
       </node>
       <node concept="3cqZAl" id="l_5LCCuMoo" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4gtLUSM$WjJ" role="13h7CS">
+      <property role="TrG5h" value="clearOutputValues" />
+      <ref role="13i0hy" node="4gtLUSM$IVT" resolve="clearOutputValues" />
+      <node concept="3Tm1VV" id="4gtLUSM$WjK" role="1B3o_S" />
+      <node concept="3clFbS" id="4gtLUSM$WjN" role="3clF47">
+        <node concept="3clFbF" id="4gtLUSM$X6o" role="3cqZAp">
+          <node concept="2OqwBi" id="4gtLUSM$Zuv" role="3clFbG">
+            <node concept="2OqwBi" id="4gtLUSM$Xr9" role="2Oq$k0">
+              <node concept="13iPFW" id="4gtLUSM$X6n" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4gtLUSM$Y0G" role="2OqNvi">
+                <ref role="3TtcxE" to="vlrt:l_5LCCuMp3" resolve="conditionValues" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="4gtLUSM_3ye" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4gtLUSM$WjO" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="l_5LCCuMop" role="13h7CS">
       <property role="TrG5h" value="addOutputValuesColumn" />
       <ref role="13i0hy" node="l_5LCC8KiZ" resolve="addOutputValuesColumn" />
@@ -1488,6 +1535,25 @@
         </node>
       </node>
       <node concept="3cqZAl" id="5$Mxnm$qH3E" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4gtLUSM$M7w" role="13h7CS">
+      <property role="TrG5h" value="clearOutputValues" />
+      <ref role="13i0hy" node="4gtLUSM$IVT" resolve="clearOutputValues" />
+      <node concept="3Tm1VV" id="4gtLUSM$M7x" role="1B3o_S" />
+      <node concept="3clFbS" id="4gtLUSM$M7$" role="3clF47">
+        <node concept="3clFbF" id="4gtLUSM$MKH" role="3cqZAp">
+          <node concept="2OqwBi" id="4gtLUSM$PcV" role="3clFbG">
+            <node concept="2OqwBi" id="4gtLUSM$MTf" role="2Oq$k0">
+              <node concept="13iPFW" id="4gtLUSM$MKG" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4gtLUSM$NuM" role="2OqNvi">
+                <ref role="3TtcxE" to="vlrt:5$Mxnm$qGSS" resolve="output" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="4gtLUSM$TfA" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4gtLUSM$M7_" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5$Mxnm$qH3F" role="13h7CS">
       <property role="TrG5h" value="addOutputValuesColumn" />
