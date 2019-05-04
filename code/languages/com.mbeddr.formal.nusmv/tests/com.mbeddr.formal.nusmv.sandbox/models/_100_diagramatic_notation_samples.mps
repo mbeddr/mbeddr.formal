@@ -36,6 +36,10 @@
       <concept id="4599377533215110828" name="com.mbeddr.formal.nusmv.arch.structure.ModulesWiringSection" flags="ng" index="18TFfj" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781863305066" name="com.mbeddr.formal.nusmv.structure.IntervalType" flags="ng" index="dhpfj">
+        <child id="2295987781863305067" name="left" index="dhpfi" />
+        <child id="2295987781863305070" name="right" index="dhpfn" />
+      </concept>
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
@@ -85,7 +89,6 @@
       </concept>
       <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
-      <concept id="8482728081215670238" name="com.mbeddr.formal.nusmv.structure.IntegerType" flags="ng" index="1yFZfx" />
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
@@ -5396,7 +5399,14 @@
         </node>
         <node concept="2Hdskp" id="36cijvutc_s" role="2Hfkx9">
           <property role="TrG5h" value="v1" />
-          <node concept="1yFZfx" id="1$vmWKMrz8h" role="2HdssA" />
+          <node concept="dhpfj" id="7omKp2QVInD" role="2HdssA">
+            <node concept="2IPVmt" id="7omKp2QVInC" role="dhpfi">
+              <property role="2IPVms" value="0" />
+            </node>
+            <node concept="2IPVmt" id="7omKp2QVIoC" role="dhpfn">
+              <property role="2IPVms" value="100" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2aiEES" id="4NkweGh8PkD" role="2HcbjO">
@@ -5997,7 +6007,9 @@
           <node concept="2He$iJ" id="36cijvutcC9" role="2He$ia">
             <ref role="2He$iI" node="36cijvutc_s" resolve="v1" />
           </node>
-          <node concept="1yCjT0" id="36cijvutcCn" role="2He$i0" />
+          <node concept="2IPVmt" id="7omKp2QVIlm" role="2He$i0">
+            <property role="2IPVms" value="2" />
+          </node>
         </node>
         <node concept="Fto42" id="1$vmWKMr0Qn" role="2HfkAP">
           <node concept="2He$iJ" id="1$vmWKMr0S9" role="2He$ia">

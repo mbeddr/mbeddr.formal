@@ -174,6 +174,7 @@
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
     </language>
@@ -198,7 +199,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="2423417345669755629" name="whichError" index="1eyWvh" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
@@ -331,6 +334,12 @@
       <property role="TrG5h" value="findOriginalNode" />
       <node concept="3Tm1VV" id="49yFphTYeob" role="1B3o_S" />
       <node concept="3Tqbb2" id="49yFphTYeoc" role="3clF45" />
+      <node concept="37vLTG" id="4gtLUSMHGaW" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="4gtLUSMHGgE" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="49yFphTYeod" role="3clF46">
         <property role="TrG5h" value="fullyQualifiedFileName" />
         <node concept="17QB3L" id="49yFphTYeo_" role="1tU5fm" />
@@ -344,6 +353,9 @@
           <node concept="2OqwBi" id="49yFphTYep4" role="3cqZAk">
             <node concept="1rXfSq" id="49yFphTYepr" role="2Oq$k0">
               <ref role="37wK5l" node="49yFphTYenP" resolve="doFindAllPossibleOriginalNodes" />
+              <node concept="37vLTw" id="4gtLUSMHGuF" role="37wK5m">
+                <ref role="3cqZAo" node="4gtLUSMHGaW" resolve="repo" />
+              </node>
               <node concept="37vLTw" id="1NcemxVLUwS" role="37wK5m">
                 <ref role="3cqZAo" node="49yFphTYeod" resolve="fullyQualifiedFileName" />
               </node>
@@ -367,6 +379,12 @@
       <property role="TrG5h" value="doFindAllPossibleOriginalNodes" />
       <node concept="3Tm6S6" id="1NcemxVL_uI" role="1B3o_S" />
       <node concept="2I9FWS" id="49yFphTYeoj" role="3clF45" />
+      <node concept="37vLTG" id="4gtLUSMHGDJ" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="4gtLUSMHHvN" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="49yFphTYeok" role="3clF46">
         <property role="TrG5h" value="fullyQualifiedFileName" />
         <node concept="17QB3L" id="49yFphTYeoC" role="1tU5fm" />
@@ -450,24 +468,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="49yFphTYeqm" role="3cqZAp">
-          <node concept="3SKdUq" id="49yFphTYeqD" role="3SKWNk">
-            <property role="3SKdUp" value="FIXME need context repository to access models with debug info" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="49yFphTYeqn" role="3cqZAp">
-          <node concept="3cpWsn" id="49yFphTYeqE" role="3cpWs9">
-            <property role="TrG5h" value="contextRepository" />
-            <property role="3TUv4t" value="true" />
-            <node concept="3uibUv" id="49yFphTYeqY" role="1tU5fm">
-              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-            </node>
-            <node concept="2YIFZM" id="49yFphTYeqZ" role="33vP2m">
-              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="1NcemxVKw_u" role="3cqZAp">
           <node concept="3cpWsn" id="1NcemxVKw_x" role="3cpWs9">
             <property role="TrG5h" value="unitName" />
@@ -522,8 +522,8 @@
                             </node>
                             <node concept="liA8E" id="49yFphTYes5" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
-                              <node concept="37vLTw" id="49yFphTYesa" role="37wK5m">
-                                <ref role="3cqZAo" node="49yFphTYeqE" resolve="contextRepository" />
+                              <node concept="37vLTw" id="4gtLUSMHNUv" role="37wK5m">
+                                <ref role="3cqZAo" node="4gtLUSMHGDJ" resolve="repo" />
                               </node>
                             </node>
                           </node>
@@ -576,12 +576,18 @@
                 </node>
                 <node concept="1rXfSq" id="49yFphTYeqH" role="2GsD0m">
                   <ref role="37wK5l" node="49yFphTYenS" resolve="getDebugInfos" />
+                  <node concept="37vLTw" id="4gtLUSMHIQ$" role="37wK5m">
+                    <ref role="3cqZAo" node="4gtLUSMHGDJ" resolve="repo" />
+                  </node>
                   <node concept="37vLTw" id="1NcemxVLUtu" role="37wK5m">
                     <ref role="3cqZAo" node="1NcemxVKw_x" resolve="unitName" />
                   </node>
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="4gtLUSMHHFN" role="ukAjM">
+            <ref role="3cqZAo" node="4gtLUSMHGDJ" resolve="repo" />
           </node>
         </node>
         <node concept="3clFbH" id="4yl5rmQRHVt" role="3cqZAp" />
@@ -696,7 +702,9 @@
               </node>
             </node>
           </node>
-          <node concept="15s5l7" id="2RmPJMxHYu2" role="lGtFl" />
+          <node concept="15s5l7" id="4gtLUSMHMU$" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+          </node>
         </node>
         <node concept="3clFbH" id="49yFphTYeoM" role="3cqZAp" />
         <node concept="3clFbF" id="49yFphTYeoN" role="3cqZAp">
@@ -788,32 +796,14 @@
                 </node>
               </node>
             </node>
-            <node concept="3SKdUt" id="49yFphTYepO" role="3cqZAp">
-              <node concept="3SKdUq" id="49yFphTYeqe" role="3SKWNk">
-                <property role="3SKdUp" value="FIXME need context repository to access models with debug info" />
-              </node>
-            </node>
-            <node concept="3cpWs8" id="49yFphTYepP" role="3cqZAp">
-              <node concept="3cpWsn" id="49yFphTYeqf" role="3cpWs9">
-                <property role="TrG5h" value="contextRepository" />
-                <property role="3TUv4t" value="true" />
-                <node concept="3uibUv" id="49yFphTYeqw" role="1tU5fm">
-                  <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                </node>
-                <node concept="2YIFZM" id="49yFphTYeqx" role="33vP2m">
-                  <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                  <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="49yFphTYepQ" role="3cqZAp">
               <node concept="2OqwBi" id="49yFphTYeqg" role="3clFbG">
                 <node concept="2OqwBi" id="49yFphTYeqy" role="2Oq$k0">
                   <node concept="2ShNRf" id="49yFphTYeqP" role="2Oq$k0">
                     <node concept="1pGfFk" id="49yFphTYerb" role="2ShVmc">
                       <ref role="37wK5l" to="fwk:~DefaultTraceInfoProvider.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="DefaultTraceInfoProvider" />
-                      <node concept="37vLTw" id="49yFphTYerr" role="37wK5m">
-                        <ref role="3cqZAo" node="49yFphTYeqf" resolve="contextRepository" />
+                      <node concept="37vLTw" id="4gtLUSMHJoD" role="37wK5m">
+                        <ref role="3cqZAo" node="4gtLUSMHIWO" resolve="repo" />
                       </node>
                     </node>
                   </node>
@@ -895,6 +885,12 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="49yFphTYeoq" role="1B3o_S" />
+      <node concept="37vLTG" id="4gtLUSMHIWO" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="4gtLUSMHJea" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="49yFphTYeor" role="3clF46">
         <property role="TrG5h" value="unitName" />
         <node concept="17QB3L" id="49yFphTYeoV" role="1tU5fm" />
