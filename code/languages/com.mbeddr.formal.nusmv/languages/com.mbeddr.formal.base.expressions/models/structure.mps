@@ -442,5 +442,9 @@
       <property role="t5JxN" value="an IStaticallyEvaluatable for which we know for sure that isStaticallyEvaluatable returns TRUE" />
     </node>
   </node>
+  <node concept="PlHQZ" id="2N7iSwGBOWF">
+    <property role="EcuMT" value="3226630706270523179" />
+    <property role="TrG5h" value="IUserDefinedTypeDeclaration" />
+  </node>
 </model>
 

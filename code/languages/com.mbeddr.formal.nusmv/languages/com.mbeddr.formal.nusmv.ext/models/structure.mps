@@ -99,7 +99,7 @@
       <ref role="20lvS9" node="1gJVC85EQiq" resolve="ConstantDefinition" />
     </node>
     <node concept="PrWs8" id="7omKp2QTCUY" role="PzmwI">
-      <ref role="PrY4T" to="ehqg:7omKp2QTCdQ" resolve="IStaticallyEvaluatableStrong" />
+      <ref role="PrY4T" to="ehqg:7omKp2QTCdQ" resolve="IConstantLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="1gJVC85KmLe">
@@ -242,6 +242,9 @@
     <node concept="PrWs8" id="6xNJt7lN6Ut" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
     </node>
+    <node concept="PrWs8" id="2N7iSwGBOZ9" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:2N7iSwGBOWF" resolve="IUserDefinedTypeDeclaration" />
+    </node>
     <node concept="1irR5M" id="6xNJt7lPy_7" role="rwd14">
       <property role="2$rrk2" value="3" />
       <node concept="1irPie" id="6xNJt7lPy_e" role="1irR9h">
@@ -277,6 +280,9 @@
     </node>
     <node concept="PrWs8" id="6xNJt7lQHRX" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="PrWs8" id="2N7iSwGBOYU" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:2N7iSwGBOWF" resolve="IUserDefinedTypeDeclaration" />
     </node>
     <node concept="1TJgyj" id="6xNJt7lQHSO" role="1TKVEi">
       <property role="IQ2ns" value="7526568111199936052" />
@@ -342,6 +348,9 @@
     <node concept="PrWs8" id="25Ap4XXjSpW" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
     </node>
+    <node concept="PrWs8" id="2N7iSwGBOZB" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:2N7iSwGBOWF" resolve="IUserDefinedTypeDeclaration" />
+    </node>
     <node concept="1TJgyj" id="25Ap4XXjSpZ" role="1TKVEi">
       <property role="IQ2ns" value="2406721343443666559" />
       <property role="20lmBu" value="aggregation" />
@@ -381,6 +390,9 @@
     </node>
     <node concept="PrWs8" id="25Ap4XXqBHM" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="PrWs8" id="2N7iSwGBOZo" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:2N7iSwGBOWF" resolve="IUserDefinedTypeDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="25Ap4XXqBHR">
