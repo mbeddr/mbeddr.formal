@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.base/com.mbeddr.formal.req.base.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.nusmv/com.mbeddr.formal.req.nusmv.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.sandbox/com.mbeddr.formal.req.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
