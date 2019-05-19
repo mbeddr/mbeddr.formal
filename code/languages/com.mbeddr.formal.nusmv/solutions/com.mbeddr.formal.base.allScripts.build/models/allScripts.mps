@@ -161,9 +161,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="3GDqItDlqpC" role="1l3spa">
-      <ref role="1l3spb" to="mtv2:42jqVeFkUtb" resolve="com.mbeddr.formal.nusmv" />
-    </node>
     <node concept="2G$12M" id="3GDqItDloK2" role="3989C9">
       <property role="TrG5h" value="mbeddr.formal.allScripts" />
       <node concept="1E1JtA" id="3GDqItDloK4" role="2G$12L">
@@ -244,11 +241,6 @@
         <node concept="1SiIV0" id="3GDqItDlqht" role="3bR37C">
           <node concept="3bR9La" id="3GDqItDlqhu" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3GDqItDnOmX" role="3bR37C">
-          <node concept="3bR9La" id="3GDqItDnOmY" role="1SiIV1">
-            <ref role="3bR37D" to="mtv2:4RNGGOMKbYY" resolve="com.mbeddr.formal.rcp.tips_and_tricks" />
           </node>
         </node>
       </node>
