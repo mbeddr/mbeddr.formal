@@ -37,6 +37,7 @@
       </concept>
       <concept id="5617550519002745364" name="jetbrains.mps.build.structure.BuildLayout" flags="ng" index="1l3spV" />
       <concept id="5617550519002745363" name="jetbrains.mps.build.structure.BuildProject" flags="ng" index="1l3spW">
+        <property id="4915877860348071612" name="fileName" index="turDy" />
         <property id="5204048710541015587" name="internalBaseDirectory" index="2DA0ip" />
         <child id="4796668409958418110" name="scriptsDir" index="auvoZ" />
         <child id="6647099934206700656" name="plugins" index="10PD9s" />
@@ -97,6 +98,7 @@
   <node concept="1l3spW" id="3GDqItDlhW7">
     <property role="2DA0ip" value="./../../../../../scripts" />
     <property role="TrG5h" value="com.mbeddr.formal.base.allScripts" />
+    <property role="turDy" value="build_all_scripts.xml" />
     <node concept="398rNT" id="3GDqItDlo_0" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="3GDqItDlo_3" role="398pKh">
