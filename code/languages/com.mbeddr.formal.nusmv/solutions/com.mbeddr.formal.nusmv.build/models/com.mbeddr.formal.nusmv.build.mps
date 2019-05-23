@@ -252,7 +252,7 @@
   </registry>
   <node concept="1l3spW" id="42jqVeFkUtb">
     <property role="TrG5h" value="com.mbeddr.formal.nusmv" />
-    <property role="2DA0ip" value="../../../../.." />
+    <property role="2DA0ip" value="../../../../../build" />
     <property role="turDy" value="build-nusmv-languages.xml" />
     <node concept="2sgV4H" id="678OVF4brRl" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
@@ -352,11 +352,14 @@
       </node>
       <node concept="55IIr" id="42jqVeFkUtN" role="2EqU2t">
         <node concept="2Ry0Ak" id="6mm$FLYQc2Q" role="iGT6I">
-          <property role="2Ry0Am" value="resources" />
-          <node concept="2Ry0Ak" id="6mm$FLYQchT" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="6mm$FLYQchS" role="2Ry0An">
-              <property role="2Ry0Am" value="splash.png" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_AN" role="2Ry0An">
+            <property role="2Ry0Am" value="resources" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_AL" role="2Ry0An">
+              <property role="2Ry0Am" value="icons" />
+              <node concept="2Ry0Ak" id="3j_RwiJw_AM" role="2Ry0An">
+                <property role="2Ry0Am" value="splash.png" />
+              </node>
             </node>
           </node>
         </node>
@@ -380,44 +383,56 @@
       </node>
       <node concept="55IIr" id="6mm$FLYQcxi" role="2EqU2s">
         <node concept="2Ry0Ak" id="6mm$FLYQcxm" role="iGT6I">
-          <property role="2Ry0Am" value="resources" />
-          <node concept="2Ry0Ak" id="6mm$FLYQcxn" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="6mm$FLYQcxo" role="2Ry0An">
-              <property role="2Ry0Am" value="about.png" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_GI" role="2Ry0An">
+            <property role="2Ry0Am" value="resources" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_GG" role="2Ry0An">
+              <property role="2Ry0Am" value="icons" />
+              <node concept="2Ry0Ak" id="3j_RwiJw_GH" role="2Ry0An">
+                <property role="2Ry0Am" value="about.png" />
+              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="55IIr" id="6mm$FLYQcVd" role="2EteIi">
         <node concept="2Ry0Ak" id="6mm$FLYQcVh" role="iGT6I">
-          <property role="2Ry0Am" value="resources" />
-          <node concept="2Ry0Ak" id="6mm$FLYQcVi" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="6mm$FLYQcVj" role="2Ry0An">
-              <property role="2Ry0Am" value="fasten16.png" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_Mt" role="2Ry0An">
+            <property role="2Ry0Am" value="resources" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_Mr" role="2Ry0An">
+              <property role="2Ry0Am" value="icons" />
+              <node concept="2Ry0Ak" id="3j_RwiJw_Ms" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten16.png" />
+              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="55IIr" id="6mm$FLYQd1o" role="2EteIj">
         <node concept="2Ry0Ak" id="6mm$FLYQd1s" role="iGT6I">
-          <property role="2Ry0Am" value="resources" />
-          <node concept="2Ry0Ak" id="6mm$FLYQd1t" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="1uIpCUugTvY" role="2Ry0An">
-              <property role="2Ry0Am" value="fasten32.png" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_Sc" role="2Ry0An">
+            <property role="2Ry0Am" value="resources" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_Sa" role="2Ry0An">
+              <property role="2Ry0Am" value="icons" />
+              <node concept="2Ry0Ak" id="3j_RwiJw_Sb" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten32.png" />
+              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="55IIr" id="6mm$FLYQdcq" role="3vi$VU">
         <node concept="2Ry0Ak" id="6mm$FLYQdcu" role="iGT6I">
-          <property role="2Ry0Am" value="resources" />
-          <node concept="2Ry0Ak" id="6mm$FLYQdcv" role="2Ry0An">
-            <property role="2Ry0Am" value="icons" />
-            <node concept="2Ry0Ak" id="6mm$FLYQdcw" role="2Ry0An">
-              <property role="2Ry0Am" value="logo.png" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_XV" role="2Ry0An">
+            <property role="2Ry0Am" value="resources" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_XT" role="2Ry0An">
+              <property role="2Ry0Am" value="icons" />
+              <node concept="2Ry0Ak" id="3j_RwiJw_XU" role="2Ry0An">
+                <property role="2Ry0Am" value="logo.png" />
+              </node>
             </node>
           </node>
         </node>
@@ -451,6 +466,9 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="2ShgyhdZ8eX" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="3j_RwiJw_lo" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+            </node>
           </node>
         </node>
       </node>
@@ -467,8 +485,11 @@
     <node concept="398rNT" id="2ShgyheeCX6" role="1l3spd">
       <property role="TrG5h" value="rcp_resources" />
       <node concept="55IIr" id="2ShgyheeEmG" role="398pKh">
-        <node concept="2Ry0Ak" id="3GDqItDr248" role="iGT6I">
-          <property role="2Ry0Am" value="rcp_ressources" />
+        <node concept="2Ry0Ak" id="3j_RwiJw_lw" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_l_" role="2Ry0An">
+            <property role="2Ry0Am" value="rcp_ressources" />
+          </node>
         </node>
       </node>
     </node>
@@ -476,11 +497,14 @@
       <property role="TrG5h" value="code" />
       <node concept="55IIr" id="6mm$FLYQyZk" role="398pKh">
         <node concept="2Ry0Ak" id="3GDqItDr24d" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="3GDqItDr24b" role="2Ry0An">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="3GDqItDr24c" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.formal.nusmv" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_mQ" role="2Ry0An">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_mO" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="3j_RwiJw_mP" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.nusmv" />
+              </node>
             </node>
           </node>
         </node>
@@ -490,9 +514,12 @@
       <property role="TrG5h" value="tutorial" />
       <node concept="55IIr" id="6oUHYlAgti_" role="398pKh">
         <node concept="2Ry0Ak" id="3GDqItDr28x" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="3GDqItDr28w" role="2Ry0An">
-            <property role="2Ry0Am" value="tutorial" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_pK" role="2Ry0An">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_pJ" role="2Ry0An">
+              <property role="2Ry0Am" value="tutorial" />
+            </node>
           </node>
         </node>
       </node>
@@ -526,11 +553,14 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="55IIr" id="4aeOpjlBV0p" role="2JcizS">
         <node concept="2Ry0Ak" id="3GDqItDr2er" role="iGT6I">
-          <property role="2Ry0Am" value="artifacts" />
-          <node concept="2Ry0Ak" id="3GDqItDr2ep" role="2Ry0An">
-            <property role="2Ry0Am" value="platform_2018_3_5" />
-            <node concept="2Ry0Ak" id="3GDqItDr2eq" role="2Ry0An">
-              <property role="2Ry0Am" value="plugins" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJw_vE" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="3j_RwiJw_vC" role="2Ry0An">
+              <property role="2Ry0Am" value="platform_2018_3_5" />
+              <node concept="2Ry0Ak" id="3j_RwiJw_vD" role="2Ry0An">
+                <property role="2Ry0Am" value="plugins" />
+              </node>
             </node>
           </node>
         </node>
@@ -974,11 +1004,14 @@
           <node concept="28jJK3" id="1uIpCUufJ0_" role="39821P">
             <node concept="55IIr" id="1uIpCUufJ0B" role="28jJRO">
               <node concept="2Ry0Ak" id="1uIpCUufJer" role="iGT6I">
-                <property role="2Ry0Am" value="resources" />
-                <node concept="2Ry0Ak" id="1uIpCUufJe$" role="2Ry0An">
-                  <property role="2Ry0Am" value="icons" />
-                  <node concept="2Ry0Ak" id="1uIpCUufJBD" role="2Ry0An">
-                    <property role="2Ry0Am" value="fasten16.png" />
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="3j_RwiJwA3E" role="2Ry0An">
+                  <property role="2Ry0Am" value="resources" />
+                  <node concept="2Ry0Ak" id="3j_RwiJwA3C" role="2Ry0An">
+                    <property role="2Ry0Am" value="icons" />
+                    <node concept="2Ry0Ak" id="3j_RwiJwA3D" role="2Ry0An">
+                      <property role="2Ry0Am" value="fasten16.png" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -3352,7 +3385,7 @@
   <node concept="1l3spW" id="42jqVeFkUwB">
     <property role="TrG5h" value="com.mbeddr.formal.nusmvDistribution" />
     <property role="turDy" value="build-fasten-distribution.xml" />
-    <property role="2DA0ip" value="../../../../.." />
+    <property role="2DA0ip" value="../../../../../build" />
     <node concept="2sgV4H" id="42jqVeFkUwC" role="1l3spa">
       <ref role="1l3spb" node="42jqVeFkUtb" resolve="com.mbeddr.formal.nusmv" />
     </node>
@@ -3388,7 +3421,7 @@
   <node concept="1l3spW" id="1IhJc2tzBMH">
     <property role="TrG5h" value="com.mbeddr.formal.nusmvTests" />
     <property role="turDy" value="build-nusmv-tests.xml" />
-    <property role="2DA0ip" value="../../../../.." />
+    <property role="2DA0ip" value="../../../../../build" />
     <node concept="2_Ic$z" id="1IhJc2t_Fu_" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="TZNOO" value="1.8" />
@@ -3404,6 +3437,9 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="1IhJc2tzDc9" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="3j_RwiJwA7X" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+            </node>
           </node>
         </node>
       </node>
@@ -3425,11 +3461,14 @@
       <property role="TrG5h" value="code" />
       <node concept="55IIr" id="1IhJc2tzBXu" role="398pKh">
         <node concept="2Ry0Ak" id="1IhJc2tzBXv" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="1IhJc2tzBXw" role="2Ry0An">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="1IhJc2tzBXx" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.formal.nusmv" />
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="3j_RwiJwA82" role="2Ry0An">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="3j_RwiJwA80" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="3j_RwiJwA81" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.nusmv" />
+              </node>
             </node>
           </node>
         </node>
