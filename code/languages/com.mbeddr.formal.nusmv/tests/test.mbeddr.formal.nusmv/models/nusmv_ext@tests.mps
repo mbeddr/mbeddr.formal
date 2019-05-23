@@ -398,7 +398,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="6xNJt7lQnA7">
-    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv/" />
+    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv" />
   </node>
   <node concept="312cEu" id="6xNJt7lQskB">
     <property role="TrG5h" value="Utils" />

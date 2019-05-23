@@ -173,13 +173,10 @@ ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAb
 ext.artifacts_dir = '-Dartifacts.root=' + artifactsDir
 ext.pluginVersion = "-DversionNumber=" + version
 ext.buildDate = "-DbuildDate=" + new Date().toString()
-ext.extensions_home = '-Dextensions.home=' + rootDir
+ext.mbeddr_formal_home = '-Dmbeddr.formal.home=' + rootDir
 ext.skipUnmodifiedModels = "-Dmps.generator.skipUnmodifiedModels=true" //incremental build support
 
 // ___________________ utilities ___________________
-File scriptFile(String relativePath) {
-    new File("$rootDir/build/generated/$relativePath")
-}
 
 def defaultScriptArgs = [mps_home, build_dir, artifacts_dir, ext.buildDate, ext.pluginVersion, ext.skipUnmodifiedModels]
 
@@ -189,16 +186,21 @@ ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
 
 
 task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps]) {
-    script "$rootDir/scripts/build.xml"
+    script "$rootDir/scripts/build_all_scripts.xml"
 }
 
-task build_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script scriptFile('languages/build.xml')
+task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    script new File("build-nusmv-languages.xml")
 }
 
-task run_tests(type: TestLanguages, dependsOn: build_languages) {
+task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages]) {
+    script new File("build-fasten-distribution.xml")
+}
+
+// TODO: uncomment dependencies below
+task run_smv_tests(type: TestLanguages){ //, dependsOn: build_smv_languages) { 
     description "Will execute all tests from command line"
-    script scriptFile('tests/build.xml')
+    script new File("build-nusmv-tests.xml")
 }
 
 //
@@ -221,16 +223,16 @@ dependencies {
 }
 
 task cleanMps(type: Delete) {
-    delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**", "artifacts/**"])
+    delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
 }
 
-clean.dependsOn cleanMps
+//clean.dependsOn cleanMps
 
 
-defaultTasks 'build_languages'
-task test(dependsOn: run_tests)
+defaultTasks 'build_smv_languages'
+task test(dependsOn: run_smv_tests)
 
-build_languages.mustRunAfter clean
+//build_smv_languages.mustRunAfter clean
 
-task rebuild(dependsOn:[clean, build_languages])
+task rebuild(dependsOn:[clean, build_smv_languages])
 

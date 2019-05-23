@@ -8,10 +8,8 @@
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsCore" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${basedir}/../artifacts/platform_2018_3_5/plugins" />
-  <property name="artifacts.com.mbeddr.formal.nusmv" location="../build/build/artifacts/com.mbeddr.formal.nusmv" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
-  <property file="${artifacts.com.mbeddr.formal.nusmv}/build.properties" prefix="import.com.mbeddr.formal.nusmv" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
@@ -24,9 +22,6 @@
   <property name="com.mbeddr.platform.build" value="${import.com.mbeddr.platform.com.mbeddr.platform.build}" />
   <property name="com.mbeddr.platform.mbeddr.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.mbeddr.version}" />
   <property name="de.itemis.mps.extensions.versionNumber" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.versionNumber}" />
-  <property name="com.mbeddr.formal.nusmv.date" value="${import.com.mbeddr.formal.nusmv.com.mbeddr.formal.nusmv.date}" />
-  <property name="com.mbeddr.formal.nusmv.build.number" value="${import.com.mbeddr.formal.nusmv.com.mbeddr.formal.nusmv.build.number}" />
-  <property name="com.mbeddr.formal.nusmv.version" value="${import.com.mbeddr.formal.nusmv.com.mbeddr.formal.nusmv.version}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -75,12 +70,10 @@
       <zipfileset file="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv/solutions/com.mbeddr.formal.nusmv.build/com.mbeddr.formal.nusmv.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-com.mbeddr.formal.nusmv-solutions-com.mbeddr.formal.nusmv.build-models" prefix="module/models" />
     </jar>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}com.mbeddr.formal.nusmv.date=${com.mbeddr.formal.nusmv.date}${line.separator}com.mbeddr.formal.nusmv.build.number=${com.mbeddr.formal.nusmv.build.number}${line.separator}com.mbeddr.formal.nusmv.version=${com.mbeddr.formal.nusmv.version}</echo>
+    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
   </target>
   
-  <target name="buildDependents">
-    <ant antfile="../build/build.xml" inheritAll="false" useNativeBasedir="true" />
-  </target>
+  <target name="buildDependents" />
   
   <target name="fetchDependencies" />
   
@@ -104,17 +97,11 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
-      <plugin path="${artifacts.com.mbeddr.formal.nusmv}/plugins/com.mbeddr.formal.nusmv" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.all" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
-      <plugin path="${artifacts.com.mbeddr.platform}/mps-tables" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
-      <library file="${artifacts.com.mbeddr.formal.nusmv}/plugins/com.mbeddr.formal.nusmv/languages/com.mbeddr.formal.rcp.tips_and_tricks.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons-math/org.apache.commons.jar" />
@@ -195,12 +182,7 @@
     <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
   </target>
   
-  <target name="makeDependents">
-    <ant antfile="../build/build.xml" inheritAll="false" useNativeBasedir="true">
-      <target name="generate" />
-      <target name="assemble" />
-    </ant>
-  </target>
+  <target name="makeDependents" />
   
   <target name="java.compile.com.mbeddr.formal.nusmv.build" depends="fetchDependencies">
     <mkdir dir="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv/solutions/com.mbeddr.formal.nusmv.build/source_gen" />
@@ -228,7 +210,6 @@
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
-        <fileset file="${artifacts.com.mbeddr.formal.nusmv}/plugins/com.mbeddr.formal.nusmv/languages/com.mbeddr.formal.rcp.tips_and_tricks.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons-math/org.apache.commons.jar" />

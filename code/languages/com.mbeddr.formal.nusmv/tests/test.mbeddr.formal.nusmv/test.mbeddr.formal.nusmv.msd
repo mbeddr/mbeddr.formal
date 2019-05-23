@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.mbeddr.formal.nusmv" uuid="b0f97242-b2a5-4637-95d3-c63ed6f55701" moduleVersion="0" compileInMPS="true">
+<solution name="test.mbeddr.formal.nusmv" uuid="b0f97242-b2a5-4637-95d3-c63ed6f55701" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

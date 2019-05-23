@@ -236,7 +236,7 @@
     </language>
   </registry>
   <node concept="2XOHcx" id="6Kf5KB75Mz6">
-    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv/" />
+    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv" />
   </node>
   <node concept="312cEu" id="6mm$FLYRuDI">
     <property role="TrG5h" value="Utils" />

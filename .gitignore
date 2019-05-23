@@ -32,3 +32,5 @@ artifacts/*
 build/*
 build.xml
 buildDistribution.xml
+/build-nusmv-languages.xml
+/build-fasten-distribution.xml
