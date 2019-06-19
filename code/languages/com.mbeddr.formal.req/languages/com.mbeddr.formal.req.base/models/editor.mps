@@ -2304,5 +2304,12 @@
       <property role="3F0ifm" value="functional" />
     </node>
   </node>
+  <node concept="24kQdi" id="7$QIgKU4ccS">
+    <property role="3GE5qa" value="req_kind" />
+    <ref role="1XX52x" to="z27p:7$QIgKU4ccR" resolve="DataReqKind" />
+    <node concept="3F0ifn" id="7$QIgKU4ccU" role="2wV5jI">
+      <property role="3F0ifm" value="data" />
+    </node>
+  </node>
 </model>
 

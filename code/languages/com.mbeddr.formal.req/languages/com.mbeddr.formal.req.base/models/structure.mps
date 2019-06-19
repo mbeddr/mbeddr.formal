@@ -114,7 +114,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="kind" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4gtLUSMLiPT" resolve="ReqKind" />
+      <ref role="20lvS9" node="4gtLUSMLiPT" resolve="ReqKindBase" />
     </node>
     <node concept="1TJgyj" id="4gtLUSMLiMB" role="1TKVEi">
       <property role="IQ2ns" value="4908298719893728423" />
@@ -151,7 +151,7 @@
   </node>
   <node concept="1TIwiD" id="4gtLUSMLiPT">
     <property role="EcuMT" value="4908298719893728633" />
-    <property role="TrG5h" value="ReqKind" />
+    <property role="TrG5h" value="ReqKindBase" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="req_kind" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -161,7 +161,7 @@
     <property role="TrG5h" value="Functional" />
     <property role="34LRSv" value="functional" />
     <property role="3GE5qa" value="req_kind" />
-    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKind" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
   <node concept="1TIwiD" id="4gtLUSMLiSg">
     <property role="EcuMT" value="4908298719893728784" />
@@ -247,6 +247,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7$QIgKU4ccR">
+    <property role="EcuMT" value="8734371989496578871" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="DataReqKind" />
+    <property role="34LRSv" value="data" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
 </model>
 
