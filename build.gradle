@@ -190,17 +190,17 @@ task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps]) {
 }
 
 task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script new File("build-nusmv-languages.xml")
+    script new File("$rootDir/build/build-nusmv-languages.xml")
 }
 
 task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages]) {
-    script new File("build-fasten-distribution.xml")
+    script new File("$rootDir/build/build-fasten-distribution.xml")
 }
 
-// TODO: uncomment dependencies below
-task run_smv_tests(type: TestLanguages){ //, dependsOn: build_smv_languages) { 
+task run_smv_tests(type: TestLanguages) { //, dependsOn: build_smv_languages) { 
     description "Will execute all tests from command line"
-    script new File("build-nusmv-tests.xml")
+    print "mbeddr.formal.home = " + rootDir;
+	script new File("$rootDir/build/build-nusmv-tests.xml")
 }
 
 //
