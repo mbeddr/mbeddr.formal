@@ -555,7 +555,7 @@
         <node concept="2Ry0Ak" id="3GDqItDr2er" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3j_RwiJw_vE" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
+            <property role="2Ry0Am" value="mps-plugins" />
             <node concept="2Ry0Ak" id="3j_RwiJw_vC" role="2Ry0An">
               <property role="2Ry0Am" value="platform_2018_3_5" />
               <node concept="2Ry0Ak" id="3j_RwiJw_vD" role="2Ry0An">
