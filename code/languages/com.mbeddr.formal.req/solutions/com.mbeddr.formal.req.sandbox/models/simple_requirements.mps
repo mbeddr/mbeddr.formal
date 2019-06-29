@@ -28,6 +28,7 @@
       <concept id="3226630706270076330" name="com.mbeddr.formal.req.base.structure.ListItem" flags="ng" index="0nNoy">
         <child id="3226630706270076331" name="text" index="0nNoz" />
       </concept>
+      <concept id="8734371989496578871" name="com.mbeddr.formal.req.base.structure.DataReqKind" flags="ng" index="139BCV" />
       <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
         <child id="4908298719893728789" name="spec" index="1QQeAV" />
@@ -149,11 +150,6 @@
     <node concept="0lhDl" id="2N7iSwGBn_l" role="1QQeBF">
       <property role="0lsPA" value="ID_11" />
       <property role="0ke_I" value="dan" />
-      <node concept="19SGf9" id="2N7iSwGBn_m" role="1QQeG9">
-        <node concept="19SUe$" id="2N7iSwGBn_n" role="19SJt6">
-          <property role="19SUeA" value="Structure requirement" />
-        </node>
-      </node>
       <node concept="1QQeFk" id="2N7iSwGBn_o" role="0nOlf" />
       <node concept="1QQeAY" id="2N7iSwGBn_p" role="1QQeAC">
         <node concept="0nzK2" id="2N7iSwGBn_q" role="1QQeAV">
@@ -259,8 +255,9 @@
           <property role="19SUeA" value="Semaphore colors" />
         </node>
       </node>
-      <node concept="1QQeFk" id="2N7iSwGBn_H" role="0nOlf" />
+      <node concept="139BCV" id="7$QIgKU4odq" role="0nOlf" />
     </node>
+    <node concept="0lH3_" id="3WxyBBNDAQe" role="1QQeBF" />
     <node concept="0lH3_" id="2N7iSwGBn_I" role="1QQeBF" />
   </node>
 </model>
