@@ -193,11 +193,11 @@ task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
     script new File("$rootDir/build/build-nusmv-languages.xml")
 }
 
-task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages]) {
+task build_fasten_distribution(type: RunAntScript, dependsOn: [build_smv_languages]) {
     script new File("$rootDir/build/build-fasten-distribution.xml")
 }
 
-task run_smv_tests(type: TestLanguages) { //, dependsOn: build_smv_languages) { 
+task run_smv_tests(type: TestLanguages, dependsOn: build_smv_languages) { 
     description "Will execute all tests from command line"
     print "mbeddr.formal.home = " + rootDir;
 	script new File("$rootDir/build/build-nusmv-tests.xml")
@@ -229,10 +229,8 @@ task cleanMps(type: Delete) {
 //clean.dependsOn cleanMps
 
 
-defaultTasks 'build_smv_languages'
+defaultTasks 'build_fasten_distribution'
 task test(dependsOn: run_smv_tests)
-
-//build_smv_languages.mustRunAfter clean
 
 task rebuild(dependsOn:[clean, build_smv_languages])
 

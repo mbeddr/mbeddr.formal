@@ -245,6 +245,9 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
+      <concept id="322010710376037449" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnDevKit" flags="ng" index="3LFrX1">
+        <reference id="322010710376037450" name="devkit" index="3LFrX2" />
+      </concept>
       <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
@@ -1400,11 +1403,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="42jqVeFkZHI" role="3bR37C">
-          <node concept="3bR9La" id="42jqVeFkZHJ" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
-          </node>
-        </node>
         <node concept="3rtmxn" id="1hUQF5WmqIp" role="3bR31x">
           <node concept="3LXTmp" id="1hUQF5WmqIq" role="3rtmxm">
             <node concept="3qWCbU" id="1hUQF5WmqIr" role="3LXTna">
@@ -2186,6 +2184,11 @@
         <node concept="1SiIV0" id="5yQpAUIgNSh" role="3bR37C">
           <node concept="1Busua" id="5yQpAUIgNSi" role="1SiIV1">
             <ref role="1Busuk" node="5yQpAUIgMcT" resolve="com.mbeddr.formal.base.arch" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6K6DWA5Eo6o" role="3bR37C">
+          <node concept="3bR9La" id="6K6DWA5Eo6p" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
           </node>
         </node>
       </node>
@@ -3295,6 +3298,9 @@
           <node concept="3bR9La" id="Vtw49fIEqJ" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
+        </node>
+        <node concept="3LFrX1" id="6K6DWA5Gvtf" role="3bR37C">
+          <ref role="3LFrX2" node="2Shgyhef8Xo" resolve="mbeddr.formal.nusmv" />
         </node>
         <node concept="3rtmxn" id="57ROGn8QshC" role="3bR31x">
           <node concept="3LXTmp" id="57ROGn8QshD" role="3rtmxm">

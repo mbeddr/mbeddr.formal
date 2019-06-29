@@ -7,7 +7,7 @@
   <property name="mbeddr.formal.home" location="${basedir}/.." />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.mpsCore" location="${mps.home}" />
-  <property name="artifacts.com.mbeddr.platform" location="${basedir}/../artifacts/platform_2018_3_5/plugins" />
+  <property name="artifacts.com.mbeddr.platform" location="${basedir}/../mps-plugins/platform_2018_3_5/plugins" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />

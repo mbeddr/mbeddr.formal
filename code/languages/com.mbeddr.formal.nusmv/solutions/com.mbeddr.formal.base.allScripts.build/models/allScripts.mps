@@ -150,7 +150,7 @@
         <node concept="2Ry0Ak" id="4aeOpjlBV61" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3GDqItDlq5g" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
+            <property role="2Ry0Am" value="mps-plugins" />
             <node concept="2Ry0Ak" id="3GDqItDlq5e" role="2Ry0An">
               <property role="2Ry0Am" value="platform_2018_3_5" />
               <node concept="2Ry0Ak" id="3GDqItDlq5f" role="2Ry0An">
