@@ -1,0 +1,4 @@
+[submodule "mps-plugins"]
+	path = mps-plugins
+	url = https://github.com/danielratiu/mbeddr.formal.mps-plugins.git
+	branch = master
