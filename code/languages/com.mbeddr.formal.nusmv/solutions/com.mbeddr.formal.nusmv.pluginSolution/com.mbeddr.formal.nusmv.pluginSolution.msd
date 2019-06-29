@@ -14,7 +14,6 @@
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-    <dependency reexport="false">22a84bd5-d947-48ae-b9f6-8288eea41dce(com.mbeddr.formal.nusmv.arch)</dependency>
     <dependency reexport="false">c1b1e23f-b677-40b8-a490-e192dd8d78e5(com.mbeddr.formal.nusmv.sm)</dependency>
     <dependency reexport="false">cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
@@ -59,14 +58,11 @@
     <module reference="71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)" version="0" />
     <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
     <module reference="945808cb-09a0-4d70-9f2a-186b7f5c6219(com.mbeddr.formal.base.pluginSolution)" version="0" />
-    <module reference="b3b9fe18-f0c4-4cea-83c5-45faa74e0911(com.mbeddr.formal.base.tabular)" version="0" />
     <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
-    <module reference="22a84bd5-d947-48ae-b9f6-8288eea41dce(com.mbeddr.formal.nusmv.arch)" version="0" />
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="c1b1e23f-b677-40b8-a490-e192dd8d78e5(com.mbeddr.formal.nusmv.sm)" version="0" />
     <module reference="bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)" version="0" />
-    <module reference="450c81f1-1811-41ac-a9c8-8fda59f778ca(com.mbeddr.formal.nusmv.tabular)" version="0" />
     <module reference="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" version="0" />
     <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
