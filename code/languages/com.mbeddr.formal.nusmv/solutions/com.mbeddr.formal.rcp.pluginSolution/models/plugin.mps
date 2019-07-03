@@ -245,7 +245,7 @@
                     <ref role="3cqZAo" node="5tRIc6mlsRK" resolve="sol" />
                   </node>
                   <node concept="liA8E" id="5tRIc6mlvGc" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModelRoots():java.lang.Iterable" resolve="getModelRoots" />
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModelRoots()" resolve="getModelRoots" />
                   </node>
                 </node>
               </node>
@@ -283,7 +283,7 @@
             <node concept="17QB3L" id="5tRIc6mm0vv" role="1tU5fm" />
             <node concept="2YIFZM" id="5tRIc6mlHkG" role="33vP2m">
               <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-              <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object):java.lang.String" resolve="showInputDialog" />
+              <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object)" resolve="showInputDialog" />
               <node concept="10Nm6u" id="5tRIc6mlHkH" role="37wK5m" />
               <node concept="Xl_RD" id="5tRIc6mlHkI" role="37wK5m">
                 <property role="Xl_RC" value="Model name:" />
@@ -298,7 +298,7 @@
               <ref role="3uigEE" to="mhbf:~EditableSModel" resolve="EditableSModel" />
             </node>
             <node concept="2YIFZM" id="5tRIc6mm0Qm" role="33vP2m">
-              <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot):org.jetbrains.mps.openapi.model.EditableSModel" resolve="createModelWithAdjustments" />
+              <ref role="37wK5l" to="z1c3:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
               <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
               <node concept="37vLTw" id="5tRIc6mm0Qn" role="37wK5m">
                 <ref role="3cqZAo" node="5tRIc6mlHkF" resolve="modelName" />
@@ -313,7 +313,7 @@
           <node concept="3clFbS" id="5tRIc6mm2CG" role="3clFbx">
             <node concept="3clFbF" id="5tRIc6mm3uy" role="3cqZAp">
               <node concept="2YIFZM" id="5tRIc6mm3v6" role="3clFbG">
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
                 <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                 <node concept="10Nm6u" id="5tRIc6mm3x0" role="37wK5m" />
                 <node concept="Xl_RD" id="5tRIc6mm3Ag" role="37wK5m">

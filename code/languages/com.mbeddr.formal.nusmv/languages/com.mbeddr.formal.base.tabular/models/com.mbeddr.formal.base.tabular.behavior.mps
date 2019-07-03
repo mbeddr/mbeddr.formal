@@ -1208,7 +1208,7 @@
               </node>
             </node>
             <node concept="liA8E" id="l_5LCCz$9p" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection):boolean" resolve="addAll" />
+              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
               <node concept="2OqwBi" id="l_5LCCz$s$" role="37wK5m">
                 <node concept="13iPFW" id="l_5LCCz$dX" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="l_5LCCz_9T" role="2OqNvi">

@@ -224,6 +224,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -515,7 +518,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="15PPQjZlx69" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                         <node concept="Xl_RD" id="15PPQjZlx6a" role="37wK5m">
                           <property role="Xl_RC" value="\n" />
                         </node>
@@ -827,7 +830,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="25dEoZdxc2w" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                   </node>
                 </node>
               </node>
@@ -952,7 +955,9 @@
                     </node>
                     <node concept="2pIpSj" id="25dEoZduzqm" role="2pJxcM">
                       <ref role="2pIpSl" to="6z8w:6NmtaR1SVeb" resolve="type" />
-                      <node concept="10Nm6u" id="25dEoZduzqn" role="2pJxcZ" />
+                      <node concept="36biLy" id="48qyILDWkSz" role="2pJxcZ">
+                        <node concept="10Nm6u" id="48qyILDWkS$" role="36biLW" />
+                      </node>
                     </node>
                   </node>
                 </node>

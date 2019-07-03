@@ -211,7 +211,7 @@
               <ref role="3cqZAo" node="104dc5E4Oy5" resolve="cfg" />
             </node>
             <node concept="liA8E" id="104dc5E4OC$" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="104dc5E4OC_" role="37wK5m">
                 <property role="Xl_RC" value="model" />
               </node>
@@ -250,7 +250,7 @@
                 <ref role="3cqZAo" node="104dc5E4Oyh" resolve="ctx" />
               </node>
               <node concept="liA8E" id="104dc5E4OBm" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkSolver():com.microsoft.z3.Solver" resolve="mkSolver" />
+                <ref role="37wK5l" to="f7eu:~Context.mkSolver()" resolve="mkSolver" />
               </node>
             </node>
           </node>
@@ -292,7 +292,7 @@
                         <ref role="2Gs0qQ" node="1MFSGJpkznY" resolve="a" />
                       </node>
                       <node concept="liA8E" id="1MFSGJpkzo4" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~Expr.toString():java.lang.String" resolve="toString" />
+                        <ref role="37wK5l" to="f7eu:~Expr.toString()" resolve="toString" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1MFSGJpkzo5" role="3uHU7B">
@@ -306,7 +306,7 @@
                   <ref role="3cqZAo" node="104dc5E4Oym" resolve="solver" />
                 </node>
                 <node concept="liA8E" id="1MFSGJpkzo8" role="2OqNvi">
-                  <ref role="37wK5l" to="f7eu:~Solver.getAssertions():com.microsoft.z3.BoolExpr[]" resolve="getAssertions" />
+                  <ref role="37wK5l" to="f7eu:~Solver.getAssertions()" resolve="getAssertions" />
                 </node>
               </node>
             </node>
@@ -322,7 +322,7 @@
                     <ref role="3cqZAo" node="104dc5E4Oym" resolve="solver" />
                   </node>
                   <node concept="liA8E" id="104dc5E59RO" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Solver.check(com.microsoft.z3.Expr...):com.microsoft.z3.Status" resolve="check" />
+                    <ref role="37wK5l" to="f7eu:~Solver.check(com.microsoft.z3.Expr...)" resolve="check" />
                   </node>
                 </node>
               </node>
@@ -352,7 +352,7 @@
                           <ref role="3cqZAo" node="104dc5E4Oym" resolve="solver" />
                         </node>
                         <node concept="liA8E" id="104dc5E5epC" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Solver.getModel():com.microsoft.z3.Model" resolve="getModel" />
+                          <ref role="37wK5l" to="f7eu:~Solver.getModel()" resolve="getModel" />
                         </node>
                       </node>
                     </node>

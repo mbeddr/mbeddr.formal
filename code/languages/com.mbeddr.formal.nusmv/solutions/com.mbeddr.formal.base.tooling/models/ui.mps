@@ -213,14 +213,14 @@
       <node concept="3clFbS" id="3kLBXRrt364" role="3clF47">
         <node concept="3clFbF" id="7LK0SHSpnb" role="3cqZAp">
           <node concept="2YIFZM" id="7LK0SHSpqr" role="3clFbG">
-            <ref role="37wK5l" to="wyt6:~Thread.dumpStack():void" resolve="dumpStack" />
+            <ref role="37wK5l" to="wyt6:~Thread.dumpStack()" resolve="dumpStack" />
             <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
           </node>
         </node>
         <node concept="3clFbF" id="3kLBXRrt367" role="3cqZAp">
           <node concept="2YIFZM" id="3kLBXRrt368" role="3clFbG">
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
             <node concept="10Nm6u" id="3kLBXRrt369" role="37wK5m" />
             <node concept="37vLTw" id="3kLBXRrt36a" role="37wK5m">
               <ref role="3cqZAo" node="3kLBXRrt36d" resolve="message" />
@@ -256,7 +256,7 @@
           <node concept="3clFbF" id="6BowXlDxMWT" role="8Wnug">
             <node concept="2YIFZM" id="6BowXlDxMWU" role="3clFbG">
               <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-              <ref role="37wK5l" to="wyt6:~Thread.dumpStack():void" resolve="dumpStack" />
+              <ref role="37wK5l" to="wyt6:~Thread.dumpStack()" resolve="dumpStack" />
             </node>
           </node>
         </node>
@@ -280,7 +280,7 @@
               <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
             </node>
             <node concept="liA8E" id="6BowXlDCbbv" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setContentType(java.lang.String):void" resolve="setContentType" />
+              <ref role="37wK5l" to="dxuu:~JEditorPane.setContentType(java.lang.String)" resolve="setContentType" />
               <node concept="Xl_RD" id="6BowXlDCbi3" role="37wK5m">
                 <property role="Xl_RC" value="text/html" />
               </node>
@@ -293,7 +293,7 @@
               <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
             </node>
             <node concept="liA8E" id="6BowXlDC9n4" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="dxuu:~JEditorPane.setText(java.lang.String)" resolve="setText" />
               <node concept="37vLTw" id="6BowXlDC9zS" role="37wK5m">
                 <ref role="3cqZAo" node="6BowXlDxMX3" resolve="message" />
               </node>
@@ -306,7 +306,7 @@
               <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
             </node>
             <node concept="liA8E" id="6BowXlD$JMW" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setEditable(boolean)" resolve="setEditable" />
               <node concept="3clFbT" id="6BowXlD$JTv" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -319,7 +319,7 @@
               <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
             </node>
             <node concept="liA8E" id="6BowXlDxQda" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~JTextComponent.setMargin(java.awt.Insets):void" resolve="setMargin" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setMargin(java.awt.Insets)" resolve="setMargin" />
               <node concept="2ShNRf" id="6BowXlDxQdb" role="37wK5m">
                 <node concept="1pGfFk" id="6BowXlDxQdc" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />
@@ -362,7 +362,7 @@
               <ref role="3cqZAo" node="6BowXlDxO9E" resolve="scrollPane" />
             </node>
             <node concept="liA8E" id="6BowXlDySD_" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
               <node concept="2ShNRf" id="6BowXlDySDA" role="37wK5m">
                 <node concept="1pGfFk" id="6BowXlDySDB" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -380,7 +380,7 @@
         <node concept="3clFbF" id="6BowXlDxMWV" role="3cqZAp">
           <node concept="2YIFZM" id="6BowXlDxMWW" role="3clFbG">
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
             <node concept="10Nm6u" id="6BowXlDxMWX" role="37wK5m" />
             <node concept="37vLTw" id="6BowXlD$I$b" role="37wK5m">
               <ref role="3cqZAo" node="6BowXlDxO9E" resolve="scrollPane" />
@@ -425,7 +425,7 @@
             <node concept="17QB3L" id="7Quig7_QEsd" role="1tU5fm" />
             <node concept="2YIFZM" id="7Quig7_QDn_" role="33vP2m">
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,char):java.lang.String" resolve="join" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,char)" resolve="join" />
               <node concept="37vLTw" id="7Quig7_QDnA" role="37wK5m">
                 <ref role="3cqZAo" node="7Quig7_QtUW" resolve="messages" />
               </node>
@@ -437,7 +437,7 @@
         </node>
         <node concept="3clFbF" id="7Quig7_QtUO" role="3cqZAp">
           <node concept="2YIFZM" id="7Quig7_QtUP" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="7Quig7_QtUQ" role="37wK5m" />
             <node concept="37vLTw" id="7Quig7_QEpc" role="37wK5m">
@@ -476,7 +476,7 @@
             <node concept="17QB3L" id="615cGN$MG9o" role="1tU5fm" />
             <node concept="2YIFZM" id="615cGN$MG9p" role="33vP2m">
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
               <node concept="37vLTw" id="615cGN$MG9q" role="37wK5m">
                 <ref role="3cqZAo" node="615cGN$MG9$" resolve="messages" />
               </node>
@@ -489,7 +489,7 @@
         <node concept="3clFbF" id="615cGN$MG9s" role="3cqZAp">
           <node concept="2YIFZM" id="615cGN$MG9t" role="3clFbG">
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
             <node concept="10Nm6u" id="615cGN$MG9u" role="37wK5m" />
             <node concept="37vLTw" id="615cGN$MG9v" role="37wK5m">
               <ref role="3cqZAo" node="615cGN$MG9n" resolve="msg" />
@@ -526,7 +526,7 @@
             <property role="TrG5h" value="msg" />
             <node concept="17QB3L" id="7Quig7_QJQJ" role="1tU5fm" />
             <node concept="2YIFZM" id="7Quig7_QJQK" role="33vP2m">
-              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,char):java.lang.String" resolve="join" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,char)" resolve="join" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="37vLTw" id="7Quig7_QJQL" role="37wK5m">
                 <ref role="3cqZAo" node="7Quig7_QJQV" resolve="messages" />
@@ -539,7 +539,7 @@
         </node>
         <node concept="3clFbF" id="7Quig7_QJQN" role="3cqZAp">
           <node concept="2YIFZM" id="7Quig7_QJQO" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="7Quig7_QJQP" role="37wK5m" />
             <node concept="37vLTw" id="7Quig7_QJQQ" role="37wK5m">
@@ -577,7 +577,7 @@
             <property role="TrG5h" value="msg" />
             <node concept="17QB3L" id="615cGN$MQRm" role="1tU5fm" />
             <node concept="2YIFZM" id="615cGN$MQRn" role="33vP2m">
-              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
               <node concept="37vLTw" id="615cGN$MQRo" role="37wK5m">
                 <ref role="3cqZAo" node="615cGN$MQRy" resolve="messages" />
@@ -590,7 +590,7 @@
         </node>
         <node concept="3clFbF" id="615cGN$MQRq" role="3cqZAp">
           <node concept="2YIFZM" id="615cGN$MQRr" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             <node concept="10Nm6u" id="615cGN$MQRs" role="37wK5m" />
             <node concept="37vLTw" id="615cGN$MQRt" role="37wK5m">
@@ -782,7 +782,7 @@
               <ref role="3cqZAo" to="lg3m:~AbstractSearchPanel.myText" resolve="myText" />
             </node>
             <node concept="liA8E" id="3Hm$$iWiHNO" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String)" resolve="setText" />
               <node concept="Xl_RD" id="3Hm$$iWiI2w" role="37wK5m">
                 <property role="Xl_RC" value="" />
               </node>
@@ -914,11 +914,11 @@
                     <ref role="3cqZAo" node="1agNx8KBUUK" resolve="textComponent" />
                   </node>
                   <node concept="liA8E" id="3Hm$$iWjJDM" role="2OqNvi">
-                    <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter():javax.swing.text.Highlighter" resolve="getHighlighter" />
+                    <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter()" resolve="getHighlighter" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3Hm$$iWjJDN" role="2OqNvi">
-                  <ref role="37wK5l" to="r791:~Highlighter.removeAllHighlights():void" resolve="removeAllHighlights" />
+                  <ref role="37wK5l" to="r791:~Highlighter.removeAllHighlights()" resolve="removeAllHighlights" />
                 </node>
               </node>
             </node>
@@ -930,7 +930,7 @@
                 <ref role="3cqZAo" to="lg3m:~AbstractSearchPanel.myText" resolve="myText" />
               </node>
               <node concept="liA8E" id="3Hm$$iWjCDh" role="2OqNvi">
-                <ref role="37wK5l" to="r791:~JTextComponent.getText():java.lang.String" resolve="getText" />
+                <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
               </node>
             </node>
             <node concept="17RlXB" id="3Hm$$iWjCZ8" role="2OqNvi" />
@@ -950,7 +950,7 @@
                 <ref role="3cqZAo" node="1agNx8KBUUK" resolve="textComponent" />
               </node>
               <node concept="liA8E" id="1agNx8KLIVe" role="2OqNvi">
-                <ref role="37wK5l" to="r791:~JTextComponent.getText():java.lang.String" resolve="getText" />
+                <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
               </node>
             </node>
           </node>
@@ -962,7 +962,7 @@
               <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
             </node>
             <node concept="1rXfSq" id="1agNx8KDr5r" role="33vP2m">
-              <ref role="37wK5l" to="lg3m:~AbstractSearchPanel.getPattern():java.util.regex.Pattern" resolve="getPattern" />
+              <ref role="37wK5l" to="lg3m:~AbstractSearchPanel.getPattern()" resolve="getPattern" />
             </node>
           </node>
         </node>
@@ -977,7 +977,7 @@
                 <ref role="3cqZAo" node="1agNx8KDr5q" resolve="pattern" />
               </node>
               <node concept="liA8E" id="1agNx8KDrVx" role="2OqNvi">
-                <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
+                <ref role="37wK5l" to="ni5j:~Pattern.matcher(java.lang.CharSequence)" resolve="matcher" />
                 <node concept="37vLTw" id="1agNx8KDrVy" role="37wK5m">
                   <ref role="3cqZAo" node="1agNx8KDm9K" resolve="textToSearchIn" />
                 </node>
@@ -991,7 +991,7 @@
               <ref role="3cqZAo" node="1agNx8KDrVu" resolve="matcher" />
             </node>
             <node concept="liA8E" id="1agNx8KDseH" role="2OqNvi">
-              <ref role="37wK5l" to="ni5j:~Matcher.find():boolean" resolve="find" />
+              <ref role="37wK5l" to="ni5j:~Matcher.find()" resolve="find" />
             </node>
           </node>
           <node concept="3clFbS" id="1agNx8KDse9" role="2LFqv$">
@@ -1001,13 +1001,13 @@
                   <ref role="3cqZAo" node="1agNx8KDsvr" resolve="myResultsStarts" />
                 </node>
                 <node concept="liA8E" id="1agNx8KDsOF" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2OqwBi" id="1agNx8KDWj3" role="37wK5m">
                     <node concept="37vLTw" id="1agNx8KDWj4" role="2Oq$k0">
                       <ref role="3cqZAo" node="1agNx8KDrVu" resolve="matcher" />
                     </node>
                     <node concept="liA8E" id="1agNx8KDWj5" role="2OqNvi">
-                      <ref role="37wK5l" to="ni5j:~Matcher.start():int" resolve="start" />
+                      <ref role="37wK5l" to="ni5j:~Matcher.start()" resolve="start" />
                     </node>
                   </node>
                 </node>
@@ -1019,13 +1019,13 @@
                   <ref role="3cqZAo" node="1agNx8KDVLT" resolve="myResultsEnds" />
                 </node>
                 <node concept="liA8E" id="1agNx8KDYwv" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2OqwBi" id="1agNx8KDZgO" role="37wK5m">
                     <node concept="37vLTw" id="1agNx8KDYZd" role="2Oq$k0">
                       <ref role="3cqZAo" node="1agNx8KDrVu" resolve="matcher" />
                     </node>
                     <node concept="liA8E" id="1agNx8KDZoj" role="2OqNvi">
-                      <ref role="37wK5l" to="ni5j:~Matcher.end():int" resolve="end" />
+                      <ref role="37wK5l" to="ni5j:~Matcher.end()" resolve="end" />
                     </node>
                   </node>
                 </node>
@@ -1042,7 +1042,7 @@
         </node>
         <node concept="3clFbF" id="1agNx8KD$gv" role="3cqZAp">
           <node concept="1rXfSq" id="1agNx8KD$gt" role="3clFbG">
-            <ref role="37wK5l" to="lg3m:~AbstractSearchPanel.updateSearchReport(int):void" resolve="updateSearchReport" />
+            <ref role="37wK5l" to="lg3m:~AbstractSearchPanel.updateSearchReport(int)" resolve="updateSearchReport" />
             <node concept="37vLTw" id="1agNx8KD$U_" role="37wK5m">
               <ref role="3cqZAo" node="1agNx8KDyDF" resolve="myCountResult" />
             </node>
@@ -1110,7 +1110,7 @@
               <ref role="3cqZAo" node="1agNx8KDsvr" resolve="myResultsStarts" />
             </node>
             <node concept="liA8E" id="1agNx8KKA5i" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.clear():void" resolve="clear" />
+              <ref role="37wK5l" to="33ny:~List.clear()" resolve="clear" />
             </node>
           </node>
         </node>
@@ -1120,7 +1120,7 @@
               <ref role="3cqZAo" node="1agNx8KDVLT" resolve="myResultsEnds" />
             </node>
             <node concept="liA8E" id="1agNx8KKA5m" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.clear():void" resolve="clear" />
+              <ref role="37wK5l" to="33ny:~List.clear()" resolve="clear" />
             </node>
           </node>
         </node>
@@ -1142,17 +1142,17 @@
                 <ref role="3cqZAo" node="1agNx8KBUUK" resolve="textComponent" />
               </node>
               <node concept="liA8E" id="3Hm$$iWjjbz" role="2OqNvi">
-                <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter():javax.swing.text.Highlighter" resolve="getHighlighter" />
+                <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter()" resolve="getHighlighter" />
               </node>
             </node>
             <node concept="liA8E" id="3Hm$$iWjjiI" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~Highlighter.removeAllHighlights():void" resolve="removeAllHighlights" />
+              <ref role="37wK5l" to="r791:~Highlighter.removeAllHighlights()" resolve="removeAllHighlights" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="1agNx8KEUbB" role="3cqZAp">
           <node concept="1rXfSq" id="1agNx8KEUbA" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean):void" resolve="setVisible" />
+            <ref role="37wK5l" to="dxuu:~JComponent.setVisible(boolean)" resolve="setVisible" />
             <node concept="3clFbT" id="1agNx8KEUpD" role="37wK5m">
               <property role="3clFbU" value="false" />
             </node>
@@ -1210,7 +1210,7 @@
                         <ref role="3cqZAo" node="1agNx8KDsvr" resolve="myResultsStarts" />
                       </node>
                       <node concept="liA8E" id="1agNx8KIfW7" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                        <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                         <node concept="37vLTw" id="1agNx8KIgEf" role="37wK5m">
                           <ref role="3cqZAo" node="1agNx8KHW8N" resolve="previousPosition" />
                         </node>
@@ -1227,7 +1227,7 @@
                         <ref role="3cqZAo" node="1agNx8KDVLT" resolve="myResultsEnds" />
                       </node>
                       <node concept="liA8E" id="1agNx8KIfWe" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                        <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                         <node concept="37vLTw" id="1agNx8KIhhv" role="37wK5m">
                           <ref role="3cqZAo" node="1agNx8KHW8N" resolve="previousPosition" />
                         </node>
@@ -1242,11 +1242,11 @@
                         <ref role="3cqZAo" node="1agNx8KBUUK" resolve="textComponent" />
                       </node>
                       <node concept="liA8E" id="3Hm$$iWjlYN" role="2OqNvi">
-                        <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter():javax.swing.text.Highlighter" resolve="getHighlighter" />
+                        <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter()" resolve="getHighlighter" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3Hm$$iWjmd8" role="2OqNvi">
-                      <ref role="37wK5l" to="r791:~Highlighter.removeHighlight(java.lang.Object):void" resolve="removeHighlight" />
+                      <ref role="37wK5l" to="r791:~Highlighter.removeHighlight(java.lang.Object)" resolve="removeHighlight" />
                       <node concept="2OqwBi" id="3Hm$$iWjmi3" role="37wK5m">
                         <node concept="37vLTw" id="3Hm$$iWjmi4" role="2Oq$k0">
                           <ref role="3cqZAo" node="1agNx8KF9NA" resolve="lastHighlights" />
@@ -1324,7 +1324,7 @@
                     <ref role="3cqZAo" node="1agNx8KDsvr" resolve="myResultsStarts" />
                   </node>
                   <node concept="liA8E" id="1agNx8KH4T6" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                     <node concept="37vLTw" id="1agNx8KH6js" role="37wK5m">
                       <ref role="3cqZAo" node="1agNx8KEuAQ" resolve="idx" />
                     </node>
@@ -1341,7 +1341,7 @@
                     <ref role="3cqZAo" node="1agNx8KDVLT" resolve="myResultsEnds" />
                   </node>
                   <node concept="liA8E" id="1agNx8KH4Td" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                     <node concept="37vLTw" id="1agNx8KH6BP" role="37wK5m">
                       <ref role="3cqZAo" node="1agNx8KEuAQ" resolve="idx" />
                     </node>
@@ -1356,11 +1356,11 @@
                     <ref role="3cqZAo" node="1agNx8KBUUK" resolve="textComponent" />
                   </node>
                   <node concept="liA8E" id="3Hm$$iWjn7k" role="2OqNvi">
-                    <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter():javax.swing.text.Highlighter" resolve="getHighlighter" />
+                    <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter()" resolve="getHighlighter" />
                   </node>
                 </node>
                 <node concept="liA8E" id="3Hm$$iWjn7l" role="2OqNvi">
-                  <ref role="37wK5l" to="r791:~Highlighter.removeHighlight(java.lang.Object):void" resolve="removeHighlight" />
+                  <ref role="37wK5l" to="r791:~Highlighter.removeHighlight(java.lang.Object)" resolve="removeHighlight" />
                   <node concept="2OqwBi" id="3Hm$$iWjn7m" role="37wK5m">
                     <node concept="37vLTw" id="3Hm$$iWjn7n" role="2Oq$k0">
                       <ref role="3cqZAo" node="1agNx8KF9NA" resolve="lastHighlights" />
@@ -1434,7 +1434,7 @@
                     <ref role="3cqZAo" node="1agNx8KE8qD" resolve="e" />
                   </node>
                   <node concept="liA8E" id="1agNx8KEyKD" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1478,11 +1478,11 @@
                 <ref role="3cqZAo" node="1agNx8KBUUK" resolve="textComponent" />
               </node>
               <node concept="liA8E" id="3Hm$$iWjozB" role="2OqNvi">
-                <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter():javax.swing.text.Highlighter" resolve="getHighlighter" />
+                <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter()" resolve="getHighlighter" />
               </node>
             </node>
             <node concept="liA8E" id="3Hm$$iWjp55" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~Highlighter.removeAllHighlights():void" resolve="removeAllHighlights" />
+              <ref role="37wK5l" to="r791:~Highlighter.removeAllHighlights()" resolve="removeAllHighlights" />
             </node>
           </node>
         </node>
@@ -1499,7 +1499,7 @@
                         <ref role="3cqZAo" node="1agNx8KDsvr" resolve="myResultsStarts" />
                       </node>
                       <node concept="liA8E" id="1agNx8KHBYp" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                        <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                         <node concept="37vLTw" id="1agNx8KHBYq" role="37wK5m">
                           <ref role="3cqZAo" node="1agNx8KFqA8" resolve="idx" />
                         </node>
@@ -1516,7 +1516,7 @@
                         <ref role="3cqZAo" node="1agNx8KDVLT" resolve="myResultsEnds" />
                       </node>
                       <node concept="liA8E" id="1agNx8KHBYw" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                        <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                         <node concept="37vLTw" id="1agNx8KHBYx" role="37wK5m">
                           <ref role="3cqZAo" node="1agNx8KFqA8" resolve="idx" />
                         </node>
@@ -1582,7 +1582,7 @@
                     <ref role="3cqZAo" node="1agNx8KFlTc" resolve="e" />
                   </node>
                   <node concept="liA8E" id="1agNx8KFlTi" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1625,11 +1625,11 @@
                 <ref role="3cqZAo" node="1agNx8KBUUK" resolve="textComponent" />
               </node>
               <node concept="liA8E" id="3Hm$$iWjrO_" role="2OqNvi">
-                <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter():javax.swing.text.Highlighter" resolve="getHighlighter" />
+                <ref role="37wK5l" to="r791:~JTextComponent.getHighlighter()" resolve="getHighlighter" />
               </node>
             </node>
             <node concept="liA8E" id="3Hm$$iWiS6p" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~Highlighter.addHighlight(int,int,javax.swing.text.Highlighter$HighlightPainter):java.lang.Object" resolve="addHighlight" />
+              <ref role="37wK5l" to="r791:~Highlighter.addHighlight(int,int,javax.swing.text.Highlighter$HighlightPainter)" resolve="addHighlight" />
               <node concept="37vLTw" id="3Hm$$iWiS6q" role="37wK5m">
                 <ref role="3cqZAo" node="1agNx8KI0nm" resolve="start" />
               </node>

@@ -258,7 +258,7 @@
                 <ref role="3cqZAo" node="1vcsY833XiA" resolve="proj" />
               </node>
               <node concept="liA8E" id="1ZejHLm0W9O" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -279,7 +279,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="6_AAcCLCVrU" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
+                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="37vLTw" id="1ZejHLm0W9T" role="37wK5m">
                   <ref role="3cqZAo" node="1ZejHLm0W9K" resolve="repo" />
                 </node>
@@ -327,7 +327,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="6mm$FLYRCNd" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="6mm$FLYRCNe" role="37wK5m">
                                   <ref role="3cqZAo" node="6mm$FLYRv_D" resolve="systemName" />
                                 </node>
@@ -394,7 +394,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="6mm$FLYRO$U" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="6mm$FLYRO$V" role="37wK5m">
                                   <ref role="3cqZAo" node="6mm$FLYRvG$" resolve="componentAssemblyName" />
                                 </node>
@@ -467,7 +467,7 @@
                   <ref role="3cqZAo" node="6mm$FLYRQM9" resolve="an" />
                 </node>
                 <node concept="liA8E" id="6mm$FLYTl8Z" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute():void" resolve="execute" />
+                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute()" resolve="execute" />
                 </node>
               </node>
             </node>
@@ -478,7 +478,7 @@
                     <ref role="3cqZAo" node="6mm$FLYRQM9" resolve="an" />
                   </node>
                   <node concept="liA8E" id="6mm$FLYSlVD" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
                     <node concept="3cmrfG" id="6mm$FLYSlVE" role="37wK5m">
                       <property role="3cmrfH" value="30" />
                     </node>
@@ -507,7 +507,7 @@
                     <ref role="3cqZAo" node="6mm$FLYShBn" resolve="e" />
                   </node>
                   <node concept="liA8E" id="6mm$FLYSl6M" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -569,7 +569,7 @@
                 <ref role="3cqZAo" node="1vcsY833Wcr" resolve="proj" />
               </node>
               <node concept="liA8E" id="1vcsY82HFOP" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -590,7 +590,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="1vcsY82HFOY" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
+                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="37vLTw" id="1vcsY82HFOZ" role="37wK5m">
                   <ref role="3cqZAo" node="1vcsY82HFOL" resolve="repo" />
                 </node>
@@ -638,7 +638,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="2_LXzlpunyl" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="2_LXzlpunym" role="37wK5m">
                                   <ref role="3cqZAo" node="2_LXzlpunz_" resolve="systemName" />
                                 </node>
@@ -705,7 +705,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="2_LXzlpunyM" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="2_LXzlpunyN" role="37wK5m">
                                   <ref role="3cqZAo" node="2_LXzlpunzB" resolve="refinementName" />
                                 </node>
@@ -773,7 +773,7 @@
                   <ref role="3cqZAo" node="2_LXzlpunyS" resolve="an" />
                 </node>
                 <node concept="liA8E" id="2_LXzlpunzb" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute():void" resolve="execute" />
+                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute()" resolve="execute" />
                 </node>
               </node>
             </node>
@@ -784,7 +784,7 @@
                     <ref role="3cqZAo" node="2_LXzlpunyS" resolve="an" />
                   </node>
                   <node concept="liA8E" id="2_LXzlpunzg" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
                     <node concept="3cmrfG" id="2_LXzlpunzh" role="37wK5m">
                       <property role="3cmrfH" value="30" />
                     </node>
@@ -813,7 +813,7 @@
                     <ref role="3cqZAo" node="2_LXzlpunzs" resolve="e" />
                   </node>
                   <node concept="liA8E" id="2_LXzlpunzr" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

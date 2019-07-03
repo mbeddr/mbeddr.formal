@@ -434,7 +434,7 @@
                         <node concept="17QB3L" id="6KI2Y3YZT5k" role="1tU5fm" />
                         <node concept="2YIFZM" id="6KI2Y3YZT5t" role="33vP2m">
                           <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                          <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getOutputPathFor" />
+                          <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputPathFor" />
                           <node concept="37vLTw" id="26dfgZlWHdy" role="37wK5m">
                             <ref role="3cqZAo" node="26dfgZlWH2i" resolve="m" />
                           </node>
@@ -624,7 +624,7 @@
                     <node concept="X8dFx" id="4_pH3zvs2IP" role="2OqNvi">
                       <node concept="2YIFZM" id="4_pH3zvs39q" role="25WWJ7">
                         <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                        <ref role="37wK5l" to="8oaq:~FileUtils.listFiles(java.io.File,java.lang.String[],boolean):java.util.Collection" resolve="listFiles" />
+                        <ref role="37wK5l" to="8oaq:~FileUtils.listFiles(java.io.File,java.lang.String[],boolean)" resolve="listFiles" />
                         <node concept="2ShNRf" id="4_pH3zvs39r" role="37wK5m">
                           <node concept="1pGfFk" id="4_pH3zvs39s" role="2ShVmc">
                             <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -705,7 +705,7 @@
                             <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="promelaFile" />
                           </node>
                           <node concept="liA8E" id="4_pH3zvsmHe" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -743,7 +743,7 @@
                                 <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="5y2MdLwJT_y" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.lastModified():long" resolve="lastModified" />
+                                <ref role="37wK5l" to="guwi:~File.lastModified()" resolve="lastModified" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5y2MdLwJH7L" role="3uHU7B">
@@ -751,7 +751,7 @@
                                 <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                               </node>
                               <node concept="liA8E" id="5y2MdLwJHR9" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.lastModified():long" resolve="lastModified" />
+                                <ref role="37wK5l" to="guwi:~File.lastModified()" resolve="lastModified" />
                               </node>
                             </node>
                           </node>
@@ -762,7 +762,7 @@
                           <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                         </node>
                         <node concept="liA8E" id="5y2MdLwH8Nq" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                          <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                         </node>
                       </node>
                       <node concept="9aQIb" id="5y2MdLwN2vR" role="9aQIa">
@@ -775,11 +775,11 @@
                                     <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                                   </node>
                                   <node concept="liA8E" id="5y2MdLwNg6w" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~File.getParentFile():java.io.File" resolve="getParentFile" />
+                                    <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="5y2MdLwNg6x" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                                  <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                                 </node>
                               </node>
                             </node>
@@ -791,11 +791,11 @@
                                       <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                                     </node>
                                     <node concept="liA8E" id="5y2MdLwNkbe" role="2OqNvi">
-                                      <ref role="37wK5l" to="guwi:~File.getParentFile():java.io.File" resolve="getParentFile" />
+                                      <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="5y2MdLwNtmz" role="2OqNvi">
-                                    <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+                                    <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
                                   </node>
                                 </node>
                               </node>
@@ -825,7 +825,7 @@
                                 <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="26dfgZlY1gF" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -845,7 +845,7 @@
                                 <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="26dfgZlY1h1" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -988,7 +988,7 @@
                                 <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="26dfgZlY1hL" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -1028,7 +1028,7 @@
                                 <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                               </node>
                               <node concept="liA8E" id="5y2MdLwLlIz" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                                <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="1Ia_hLZs_6M" role="HW$Y0">
@@ -1179,7 +1179,7 @@
                                 <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="1Ia_hLZpHpX" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -1222,7 +1222,7 @@
                               <ref role="3cqZAo" node="5zgShfbCz6Y" resolve="ex" />
                             </node>
                             <node concept="liA8E" id="3cN5OOfBeX6" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                             </node>
                           </node>
                         </node>
@@ -1377,7 +1377,7 @@
                 <ref role="3cqZAo" node="3NVVczzdGxt" resolve="makeOutput" />
               </node>
               <node concept="liA8E" id="3NVVczzeh2m" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                 <node concept="Xl_RD" id="3NVVczzeh2n" role="37wK5m">
                   <property role="Xl_RC" value=":" />
                 </node>
@@ -1401,7 +1401,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="3NVVczzfahT" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                    <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                   </node>
                 </node>
               </node>
@@ -1420,7 +1420,7 @@
                   <ref role="3cqZAo" node="3NVVczzfahO" resolve="msgKind" />
                 </node>
                 <node concept="liA8E" id="3NVVczzf9Jg" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="3NVVczzf9L$" role="37wK5m">
                     <property role="Xl_RC" value="warning" />
                   </node>
@@ -1440,7 +1440,7 @@
                     <ref role="3cqZAo" node="3NVVczzfahO" resolve="msgKind" />
                   </node>
                   <node concept="liA8E" id="3NVVczzfc7G" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                     <node concept="Xl_RD" id="3NVVczzfc7H" role="37wK5m">
                       <property role="Xl_RC" value="error" />
                     </node>
@@ -1614,7 +1614,7 @@
                     <ref role="3cqZAo" node="3NVVczxBKex" resolve="reader" />
                   </node>
                   <node concept="liA8E" id="3NVVczxSRcF" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                    <ref role="37wK5l" to="guwi:~BufferedReader.readLine()" resolve="readLine" />
                   </node>
                 </node>
               </node>
@@ -1639,7 +1639,7 @@
                         <ref role="3cqZAo" node="3NVVczxBKex" resolve="reader" />
                       </node>
                       <node concept="liA8E" id="3NVVczxSRd0" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~BufferedReader.readLine():java.lang.String" resolve="readLine" />
+                        <ref role="37wK5l" to="guwi:~BufferedReader.readLine()" resolve="readLine" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="3NVVczxSRd1" role="37vLTJ">
@@ -1670,7 +1670,7 @@
                     <ref role="3cqZAo" node="3NVVczxSRd6" resolve="e" />
                   </node>
                   <node concept="liA8E" id="4OhLxls5KET" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1685,7 +1685,7 @@
                       <ref role="3cqZAo" node="3NVVczxBKex" resolve="reader" />
                     </node>
                     <node concept="liA8E" id="4OhLxlrRsmj" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~BufferedReader.close():void" resolve="close" />
+                      <ref role="37wK5l" to="guwi:~BufferedReader.close()" resolve="close" />
                     </node>
                   </node>
                 </node>
@@ -1743,7 +1743,7 @@
               <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
             </node>
             <node concept="liA8E" id="5zgShfbCz4P" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File):java.lang.ProcessBuilder" resolve="directory" />
+              <ref role="37wK5l" to="wyt6:~ProcessBuilder.directory(java.io.File)" resolve="directory" />
               <node concept="2ShNRf" id="5zgShfbCz4Q" role="37wK5m">
                 <node concept="1pGfFk" id="5zgShfbCz4R" role="2ShVmc">
                   <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -1752,7 +1752,7 @@
                       <ref role="3cqZAo" node="1Ia_hLZoJ64" resolve="promelaFile" />
                     </node>
                     <node concept="liA8E" id="4_pH3zvsSnm" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.getParent():java.lang.String" resolve="getParent" />
+                      <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
                     </node>
                   </node>
                 </node>
@@ -1766,7 +1766,7 @@
               <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
             </node>
             <node concept="liA8E" id="5zgShfbCz4Y" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~ProcessBuilder.redirectErrorStream(boolean):java.lang.ProcessBuilder" resolve="redirectErrorStream" />
+              <ref role="37wK5l" to="wyt6:~ProcessBuilder.redirectErrorStream(boolean)" resolve="redirectErrorStream" />
               <node concept="3clFbT" id="5zgShfbCz4Z" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -1785,7 +1785,7 @@
                 <ref role="3cqZAo" node="3dZgFhDBrjd" resolve="processBuilder" />
               </node>
               <node concept="liA8E" id="5zgShfbCz55" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~ProcessBuilder.start():java.lang.Process" resolve="start" />
+                <ref role="37wK5l" to="wyt6:~ProcessBuilder.start()" resolve="start" />
               </node>
             </node>
           </node>
@@ -1803,7 +1803,7 @@
               <ref role="3uigEE" to="5zyv:~ExecutorService" resolve="ExecutorService" />
             </node>
             <node concept="2YIFZM" id="3NVVczyswTU" role="33vP2m">
-              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int):java.util.concurrent.ExecutorService" resolve="newFixedThreadPool" />
+              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int)" resolve="newFixedThreadPool" />
               <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
               <node concept="3cmrfG" id="3NVVczyswTZ" role="37wK5m">
                 <property role="3cmrfH" value="2" />
@@ -1825,7 +1825,7 @@
                     <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
                   </node>
                   <node concept="liA8E" id="3NVVczxG8je" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Process.getInputStream():java.io.InputStream" resolve="getInputStream" />
+                    <ref role="37wK5l" to="wyt6:~Process.getInputStream()" resolve="getInputStream" />
                   </node>
                 </node>
               </node>
@@ -1846,7 +1846,7 @@
                     <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
                   </node>
                   <node concept="liA8E" id="3NVVczxG9X8" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Process.getErrorStream():java.io.InputStream" resolve="getErrorStream" />
+                    <ref role="37wK5l" to="wyt6:~Process.getErrorStream()" resolve="getErrorStream" />
                   </node>
                 </node>
               </node>
@@ -1874,14 +1874,14 @@
                     <ref role="3cqZAo" node="3NVVczysmaT" resolve="executor" />
                   </node>
                   <node concept="liA8E" id="4OhLxls2DXX" role="2OqNvi">
-                    <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable):java.util.concurrent.Future" resolve="submit" />
+                    <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable)" resolve="submit" />
                     <node concept="37vLTw" id="4OhLxls2DXY" role="37wK5m">
                       <ref role="3cqZAo" node="3NVVczxG3d_" resolve="standardInputWriter" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="4OhLxls2DXZ" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="5zyv:~Future.get()" resolve="get" />
                 </node>
               </node>
             </node>
@@ -1907,14 +1907,14 @@
                     <ref role="3cqZAo" node="3NVVczysmaT" resolve="executor" />
                   </node>
                   <node concept="liA8E" id="4OhLxls2GGZ" role="2OqNvi">
-                    <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable):java.util.concurrent.Future" resolve="submit" />
+                    <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.util.concurrent.Callable)" resolve="submit" />
                     <node concept="37vLTw" id="4OhLxls2J_$" role="37wK5m">
                       <ref role="3cqZAo" node="3NVVczxG9X2" resolve="standardErrorWriter" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="4OhLxls2GH1" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="5zyv:~Future.get()" resolve="get" />
                 </node>
               </node>
             </node>
@@ -1929,7 +1929,7 @@
                 <ref role="3cqZAo" node="5zgShfbCz51" resolve="process" />
               </node>
               <node concept="liA8E" id="4OhLxlrFtrM" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Process.waitFor():int" resolve="waitFor" />
+                <ref role="37wK5l" to="wyt6:~Process.waitFor()" resolve="waitFor" />
               </node>
             </node>
           </node>
@@ -1954,7 +1954,7 @@
                             <ref role="3cqZAo" node="6fYDdj_7sBE" resolve="it" />
                           </node>
                           <node concept="liA8E" id="6fYDdj_7wQG" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -1988,7 +1988,7 @@
                             <ref role="3cqZAo" node="6fYDdj_7y0z" resolve="it" />
                           </node>
                           <node concept="liA8E" id="6fYDdj_7y0y" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                           </node>
                         </node>
                       </node>
@@ -2080,11 +2080,11 @@
                     <ref role="3cqZAo" node="5y2MdLwKYby" resolve="promelaFile" />
                   </node>
                   <node concept="liA8E" id="5y2MdLwKZjb" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5y2MdLwKZjc" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                  <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                   <node concept="3cmrfG" id="5y2MdLwKZjd" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
@@ -2094,11 +2094,11 @@
                         <ref role="3cqZAo" node="5y2MdLwKYby" resolve="promelaFile" />
                       </node>
                       <node concept="liA8E" id="5y2MdLwKZjh" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5y2MdLwKZji" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String):int" resolve="indexOf" />
+                      <ref role="37wK5l" to="wyt6:~String.indexOf(java.lang.String)" resolve="indexOf" />
                       <node concept="Xl_RD" id="5y2MdLwKZjj" role="37wK5m">
                         <property role="Xl_RC" value="." />
                       </node>
@@ -2119,11 +2119,11 @@
                     <ref role="3cqZAo" node="5y2MdLwKYby" resolve="promelaFile" />
                   </node>
                   <node concept="liA8E" id="5y2MdLwLeF0" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getParent():java.lang.String" resolve="getParent" />
+                    <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5y2MdLwLeF1" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                   <node concept="Xl_RD" id="5y2MdLwLeF2" role="37wK5m">
                     <property role="Xl_RC" value="source_gen" />
                   </node>
@@ -2168,7 +2168,7 @@
               <ref role="3cqZAo" node="5y2MdLwLqAh" resolve="pathToSourcePromela" />
             </node>
             <node concept="liA8E" id="5y2MdLwLyyi" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
               <node concept="Xl_RD" id="5y2MdLwLyyj" role="37wK5m">
                 <property role="Xl_RC" value="source_gen" />
               </node>

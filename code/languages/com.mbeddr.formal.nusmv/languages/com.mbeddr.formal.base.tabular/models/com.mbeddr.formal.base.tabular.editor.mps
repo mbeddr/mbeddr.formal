@@ -783,7 +783,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="7Z6$Wo5M_t2" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.remove(int):java.lang.Object" resolve="remove" />
+                      <ref role="37wK5l" to="33ny:~List.remove(int)" resolve="remove" />
                       <node concept="37vLTw" id="7Z6$Wo5M_t3" role="37wK5m">
                         <ref role="3cqZAo" node="7Z6$Wo5M_sB" resolve="index" />
                       </node>
@@ -1516,7 +1516,7 @@
               </node>
             </node>
             <node concept="liA8E" id="l_5LCC_xBl" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object):void" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="l_5LCC_xC1" role="37wK5m">
                 <ref role="3cqZAo" node="l_5LCC_xBY" resolve="myIdx" />
               </node>
@@ -1566,7 +1566,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="l_5LCC_xBE" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object):void" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="l_5LCC_xC0" role="37wK5m">
                     <ref role="3cqZAo" node="l_5LCC_xBY" resolve="myIdx" />
                   </node>
@@ -1731,19 +1731,19 @@
                             <node concept="2OqwBi" id="3epRGh6EVed" role="2Oq$k0">
                               <node concept="1frAZD" id="3epRGh6EVee" role="2Oq$k0" />
                               <node concept="liA8E" id="3epRGh6EVef" role="2OqNvi">
-                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                               </node>
                             </node>
                             <node concept="liA8E" id="3epRGh6EVeg" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater()" resolve="getUpdater" />
                             </node>
                           </node>
                           <node concept="liA8E" id="3epRGh6EVeh" role="2OqNvi">
-                            <ref role="37wK5l" to="22ra:~Updater.getCurrentUpdateSession():jetbrains.mps.openapi.editor.update.UpdateSession" resolve="getCurrentUpdateSession" />
+                            <ref role="37wK5l" to="22ra:~Updater.getCurrentUpdateSession()" resolve="getCurrentUpdateSession" />
                           </node>
                         </node>
                         <node concept="liA8E" id="3epRGh6EVei" role="2OqNvi">
-                          <ref role="37wK5l" to="22ra:~UpdateSession.updateChildNodeCell(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="updateChildNodeCell" />
+                          <ref role="37wK5l" to="22ra:~UpdateSession.updateChildNodeCell(org.jetbrains.mps.openapi.model.SNode)" resolve="updateChildNodeCell" />
                           <node concept="37vLTw" id="3epRGh6EVej" role="37wK5m">
                             <ref role="3cqZAo" node="3epRGh6EVdX" resolve="res" />
                           </node>
@@ -1757,7 +1757,7 @@
                         <ref role="3cqZAo" node="3epRGh6EVe8" resolve="cell" />
                       </node>
                       <node concept="liA8E" id="3epRGh6EVen" role="2OqNvi">
-                        <ref role="37wK5l" to="f4zo:~EditorCell.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction):void" resolve="setAction" />
+                        <ref role="37wK5l" to="f4zo:~EditorCell.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction)" resolve="setAction" />
                         <node concept="Rm8GO" id="3epRGh6EVeo" role="37wK5m">
                           <ref role="Rm8GQ" to="f4zo:~CellActionType.DELETE" resolve="DELETE" />
                           <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
@@ -1804,7 +1804,7 @@
                         <ref role="3cqZAo" node="3epRGh6EVe8" resolve="cell" />
                       </node>
                       <node concept="liA8E" id="3epRGh6EVeE" role="2OqNvi">
-                        <ref role="37wK5l" to="f4zo:~EditorCell.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction):void" resolve="setAction" />
+                        <ref role="37wK5l" to="f4zo:~EditorCell.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction)" resolve="setAction" />
                         <node concept="Rm8GO" id="3epRGh6EVeF" role="37wK5m">
                           <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
                           <ref role="Rm8GQ" to="f4zo:~CellActionType.BACKSPACE" resolve="BACKSPACE" />
@@ -1814,7 +1814,7 @@
                             <ref role="3cqZAo" node="3epRGh6EVe8" resolve="cell" />
                           </node>
                           <node concept="liA8E" id="3epRGh6EVeI" role="2OqNvi">
-                            <ref role="37wK5l" to="f4zo:~EditorCell.getAction(jetbrains.mps.openapi.editor.cells.CellActionType):jetbrains.mps.openapi.editor.cells.CellAction" resolve="getAction" />
+                            <ref role="37wK5l" to="f4zo:~EditorCell.getAction(jetbrains.mps.openapi.editor.cells.CellActionType)" resolve="getAction" />
                             <node concept="Rm8GO" id="3epRGh6EVeJ" role="37wK5m">
                               <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
                               <ref role="Rm8GQ" to="f4zo:~CellActionType.DELETE" resolve="DELETE" />
@@ -2379,7 +2379,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5$Mxnm$sHyp" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.remove(int):java.lang.Object" resolve="remove" />
+                      <ref role="37wK5l" to="33ny:~List.remove(int)" resolve="remove" />
                       <node concept="37vLTw" id="5$Mxnm$sHyq" role="37wK5m">
                         <ref role="3cqZAo" node="5$Mxnm$sHxY" resolve="index" />
                       </node>
@@ -2638,7 +2638,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5$Mxnm$sH$b" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object):void" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="5$Mxnm$sH$c" role="37wK5m">
                     <ref role="3cqZAo" node="5$Mxnm$sHzI" resolve="myIdx" />
                   </node>

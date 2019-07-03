@@ -166,7 +166,7 @@
           </node>
           <node concept="l9hG8" id="6glUKoNPk$4" role="lcghm">
             <node concept="2YIFZM" id="6glUKoNPnDc" role="lb14g">
-              <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
               <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="2OqwBi" id="6glUKoNPkHS" role="37wK5m">
                 <node concept="117lpO" id="6glUKoNPk_3" role="2Oq$k0" />

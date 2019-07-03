@@ -199,7 +199,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5$Mxnm$t2dv" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object):void" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(int,java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5$Mxnm$t2jx" role="37wK5m">
                 <ref role="3cqZAo" node="5$Mxnm$sXxE" resolve="idx" />
               </node>

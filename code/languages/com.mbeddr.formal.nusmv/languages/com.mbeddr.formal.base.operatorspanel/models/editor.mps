@@ -418,7 +418,7 @@
                       <node concept="3clFbS" id="2mjHtwTPBM4" role="3clF47">
                         <node concept="3clFbF" id="2mjHtwTPBM8" role="3cqZAp">
                           <node concept="3nyPlj" id="2mjHtwTPBM7" role="3clFbG">
-                            <ref role="37wK5l" to="dxuu:~JComponent.paintComponent(java.awt.Graphics):void" resolve="paintComponent" />
+                            <ref role="37wK5l" to="dxuu:~JComponent.paintComponent(java.awt.Graphics)" resolve="paintComponent" />
                             <node concept="37vLTw" id="2mjHtwTPBM6" role="37wK5m">
                               <ref role="3cqZAo" node="2mjHtwTPBM1" resolve="g" />
                             </node>
@@ -474,7 +474,7 @@
                               <ref role="3cqZAo" node="2mjHtwTPBM1" resolve="g" />
                             </node>
                             <node concept="liA8E" id="2mjHtwTPCcj" role="2OqNvi">
-                              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                               <node concept="2ShNRf" id="2mjHtwTPEtf" role="37wK5m">
                                 <node concept="1pGfFk" id="2mjHtwTPE19" role="2ShVmc">
                                   <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int)" resolve="Color" />
@@ -492,7 +492,7 @@
                               <ref role="3cqZAo" node="2mjHtwTPBM1" resolve="g" />
                             </node>
                             <node concept="liA8E" id="2mjHtwTPC9P" role="2OqNvi">
-                              <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int):void" resolve="fillOval" />
+                              <ref role="37wK5l" to="z60i:~Graphics.fillOval(int,int,int,int)" resolve="fillOval" />
                               <node concept="3cmrfG" id="2mjHtwTPKxP" role="37wK5m">
                                 <property role="3cmrfH" value="0" />
                               </node>
@@ -622,7 +622,7 @@
                     <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
                   </node>
                   <node concept="liA8E" id="2QUcAU27RcO" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2QUcAU27Rs7" role="37wK5m">
                       <node concept="YeOm9" id="2QUcAU27THv" role="2ShVmc">
                         <node concept="1Y3b0j" id="2QUcAU27THy" role="YeSDq">
@@ -665,7 +665,7 @@
                     <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
                   </node>
                   <node concept="liA8E" id="2QUcAU29svk" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
+                    <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
                     <node concept="2ShNRf" id="2QUcAU29sM8" role="37wK5m">
                       <node concept="1pGfFk" id="2QUcAU29tXp" role="2ShVmc">
                         <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
@@ -689,7 +689,7 @@
                     <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
                   </node>
                   <node concept="liA8E" id="2QUcAU28$Rr" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+                    <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
                     <node concept="2ShNRf" id="2QUcAU28_9H" role="37wK5m">
                       <node concept="1pGfFk" id="2QUcAU28AjX" role="2ShVmc">
                         <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -710,7 +710,7 @@
                     <ref role="3cqZAo" node="2QUcAU27KCZ" resolve="reloadButton" />
                   </node>
                   <node concept="liA8E" id="2QUcAU2bpcU" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets):void" resolve="setMargin" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets)" resolve="setMargin" />
                     <node concept="2ShNRf" id="2QUcAU2bpwm" role="37wK5m">
                       <node concept="1pGfFk" id="2QUcAU2bqB$" role="2ShVmc">
                         <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />
@@ -1081,7 +1081,7 @@
                       <node concept="3clFbS" id="2mjHtwTZvZY" role="3clF47">
                         <node concept="3clFbF" id="2mjHtwTZvZZ" role="3cqZAp">
                           <node concept="3nyPlj" id="2mjHtwTZw00" role="3clFbG">
-                            <ref role="37wK5l" to="dxuu:~JComponent.paintComponent(java.awt.Graphics):void" resolve="paintComponent" />
+                            <ref role="37wK5l" to="dxuu:~JComponent.paintComponent(java.awt.Graphics)" resolve="paintComponent" />
                             <node concept="37vLTw" id="2mjHtwTZw01" role="37wK5m">
                               <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                             </node>
@@ -1271,7 +1271,7 @@
                               <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                             </node>
                             <node concept="liA8E" id="2mjHtwTZw0q" role="2OqNvi">
-                              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                               <node concept="2ShNRf" id="2mjHtwTZw0r" role="37wK5m">
                                 <node concept="1pGfFk" id="2mjHtwTZw0s" role="2ShVmc">
                                   <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int)" resolve="Color" />
@@ -1289,7 +1289,7 @@
                               <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                             </node>
                             <node concept="liA8E" id="2mjHtwTZw0x" role="2OqNvi">
-                              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+                              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
                               <node concept="3cmrfG" id="2mjHtwTZw0y" role="37wK5m">
                                 <property role="3cmrfH" value="0" />
                               </node>
@@ -1318,7 +1318,7 @@
                                     <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                                   </node>
                                   <node concept="liA8E" id="2bsfjeWaZ5i" role="2OqNvi">
-                                    <ref role="37wK5l" to="z60i:~Graphics.getFont():java.awt.Font" resolve="getFont" />
+                                    <ref role="37wK5l" to="z60i:~Graphics.getFont()" resolve="getFont" />
                                   </node>
                                 </node>
                               </node>
@@ -1329,7 +1329,7 @@
                                   <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                                 </node>
                                 <node concept="liA8E" id="2bsfjeWaFP9" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Graphics.setFont(java.awt.Font):void" resolve="setFont" />
+                                  <ref role="37wK5l" to="z60i:~Graphics.setFont(java.awt.Font)" resolve="setFont" />
                                   <node concept="2ShNRf" id="2bsfjeWb1aH" role="37wK5m">
                                     <node concept="1pGfFk" id="2bsfjeWb2Dy" role="2ShVmc">
                                       <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
@@ -1338,7 +1338,7 @@
                                           <ref role="3cqZAo" node="2bsfjeWaZ5f" resolve="existing" />
                                         </node>
                                         <node concept="liA8E" id="2bsfjeWb4oY" role="2OqNvi">
-                                          <ref role="37wK5l" to="z60i:~Font.getName():java.lang.String" resolve="getName" />
+                                          <ref role="37wK5l" to="z60i:~Font.getName()" resolve="getName" />
                                         </node>
                                       </node>
                                       <node concept="2OqwBi" id="2bsfjeWb7Pq" role="37wK5m">
@@ -1346,7 +1346,7 @@
                                           <ref role="3cqZAo" node="2bsfjeWaZ5f" resolve="existing" />
                                         </node>
                                         <node concept="liA8E" id="2bsfjeWb84U" role="2OqNvi">
-                                          <ref role="37wK5l" to="z60i:~Font.getStyle():int" resolve="getStyle" />
+                                          <ref role="37wK5l" to="z60i:~Font.getStyle()" resolve="getStyle" />
                                         </node>
                                       </node>
                                       <node concept="37vLTw" id="2bsfjeWb9r4" role="37wK5m">
@@ -1367,11 +1367,11 @@
                                       <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                                     </node>
                                     <node concept="liA8E" id="2bsfjeWad_4" role="2OqNvi">
-                                      <ref role="37wK5l" to="z60i:~Graphics.getFontMetrics():java.awt.FontMetrics" resolve="getFontMetrics" />
+                                      <ref role="37wK5l" to="z60i:~Graphics.getFontMetrics()" resolve="getFontMetrics" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2bsfjeWad_5" role="2OqNvi">
-                                    <ref role="37wK5l" to="z60i:~FontMetrics.getHeight():int" resolve="getHeight" />
+                                    <ref role="37wK5l" to="z60i:~FontMetrics.getHeight()" resolve="getHeight" />
                                   </node>
                                 </node>
                               </node>
@@ -1386,11 +1386,11 @@
                                       <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                                     </node>
                                     <node concept="liA8E" id="2bsfjeWargV" role="2OqNvi">
-                                      <ref role="37wK5l" to="z60i:~Graphics.getFontMetrics():java.awt.FontMetrics" resolve="getFontMetrics" />
+                                      <ref role="37wK5l" to="z60i:~Graphics.getFontMetrics()" resolve="getFontMetrics" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2bsfjeWasd7" role="2OqNvi">
-                                    <ref role="37wK5l" to="z60i:~FontMetrics.stringWidth(java.lang.String):int" resolve="stringWidth" />
+                                    <ref role="37wK5l" to="z60i:~FontMetrics.stringWidth(java.lang.String)" resolve="stringWidth" />
                                     <node concept="37vLTw" id="2bsfjeWat8F" role="37wK5m">
                                       <ref role="3cqZAo" node="2bsfjeW9Fef" resolve="myText" />
                                     </node>
@@ -1404,7 +1404,7 @@
                                   <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                                 </node>
                                 <node concept="liA8E" id="2bsfjeWa6ht" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+                                  <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                                   <node concept="10M0yZ" id="2bsfjeWddtJ" role="37wK5m">
                                     <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
                                     <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -1418,7 +1418,7 @@
                                   <ref role="3cqZAo" node="2mjHtwTZvZW" resolve="g" />
                                 </node>
                                 <node concept="liA8E" id="2bsfjeW9EtV" role="2OqNvi">
-                                  <ref role="37wK5l" to="z60i:~Graphics.drawString(java.lang.String,int,int):void" resolve="drawString" />
+                                  <ref role="37wK5l" to="z60i:~Graphics.drawString(java.lang.String,int,int)" resolve="drawString" />
                                   <node concept="37vLTw" id="2bsfjeW9JwK" role="37wK5m">
                                     <ref role="3cqZAo" node="2bsfjeW9Fef" resolve="myText" />
                                   </node>
@@ -2527,7 +2527,7 @@
               </node>
             </node>
             <node concept="liA8E" id="3b7yvkI$AJZ" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
               <node concept="2ShNRf" id="3b7yvkI$Bzd" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkI$DHL" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -2549,7 +2549,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrUve" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.setDialFrame(org.jfree.chart.plot.dial.DialFrame):void" resolve="setDialFrame" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.setDialFrame(org.jfree.chart.plot.dial.DialFrame)" resolve="setDialFrame" />
               <node concept="2ShNRf" id="3b7yvkIrUvf" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIrUvg" role="2ShVmc">
                   <ref role="37wK5l" to="jxd7:~StandardDialFrame.&lt;init&gt;()" resolve="StandardDialFrame" />
@@ -2564,7 +2564,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrU44" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.setBackground(org.jfree.chart.plot.dial.DialLayer):void" resolve="setBackground" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.setBackground(org.jfree.chart.plot.dial.DialLayer)" resolve="setBackground" />
               <node concept="2ShNRf" id="3b7yvkIrZGz" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIrZGB" role="2ShVmc">
                   <ref role="37wK5l" to="jxd7:~DialBackground.&lt;init&gt;()" resolve="DialBackground" />
@@ -2597,7 +2597,7 @@
               <ref role="3cqZAo" node="3b7yvkIrTsG" resolve="dialtextannotation" />
             </node>
             <node concept="liA8E" id="3b7yvkIrU1h" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialTextAnnotation.setFont(java.awt.Font):void" resolve="setFont" />
+              <ref role="37wK5l" to="jxd7:~DialTextAnnotation.setFont(java.awt.Font)" resolve="setFont" />
               <node concept="2ShNRf" id="3b7yvkIrYh0" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIrYhg" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
@@ -2621,7 +2621,7 @@
               <ref role="3cqZAo" node="3b7yvkIrTsG" resolve="dialtextannotation" />
             </node>
             <node concept="liA8E" id="3b7yvkIrUnI" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialTextAnnotation.setRadius(double):void" resolve="setRadius" />
+              <ref role="37wK5l" to="jxd7:~DialTextAnnotation.setRadius(double)" resolve="setRadius" />
               <node concept="3b6qkQ" id="3b7yvkIrUnJ" role="37wK5m">
                 <property role="$nhwW" value="0.69999999999999996D" />
               </node>
@@ -2634,7 +2634,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrV8F" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer):void" resolve="addLayer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer)" resolve="addLayer" />
               <node concept="37vLTw" id="3b7yvkIrV8G" role="37wK5m">
                 <ref role="3cqZAo" node="3b7yvkIrTsG" resolve="dialtextannotation" />
               </node>
@@ -2684,7 +2684,7 @@
               <ref role="3cqZAo" node="3b7yvkIrTt5" resolve="standarddialscale" />
             </node>
             <node concept="liA8E" id="3b7yvkIrVJH" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialScale.setMajorTickIncrement(double):void" resolve="setMajorTickIncrement" />
+              <ref role="37wK5l" to="jxd7:~StandardDialScale.setMajorTickIncrement(double)" resolve="setMajorTickIncrement" />
               <node concept="37vLTw" id="7HQSJoRXu6b" role="37wK5m">
                 <ref role="3cqZAo" node="7HQSJoRXtcD" resolve="tickIncrement" />
               </node>
@@ -2697,7 +2697,7 @@
               <ref role="3cqZAo" node="3b7yvkIrTt5" resolve="standarddialscale" />
             </node>
             <node concept="liA8E" id="3b7yvkIrU7E" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialScale.setMinorTickCount(int):void" resolve="setMinorTickCount" />
+              <ref role="37wK5l" to="jxd7:~StandardDialScale.setMinorTickCount(int)" resolve="setMinorTickCount" />
               <node concept="37vLTw" id="7HQSJoRXIe6" role="37wK5m">
                 <ref role="3cqZAo" node="7HQSJoRXFNZ" resolve="smallTicksBetweenIncrement" />
               </node>
@@ -2710,7 +2710,7 @@
               <ref role="3cqZAo" node="3b7yvkIrTt5" resolve="standarddialscale" />
             </node>
             <node concept="liA8E" id="3b7yvkIrUhx" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialScale.setTickRadius(double):void" resolve="setTickRadius" />
+              <ref role="37wK5l" to="jxd7:~StandardDialScale.setTickRadius(double)" resolve="setTickRadius" />
               <node concept="3b6qkQ" id="3b7yvkIrUhy" role="37wK5m">
                 <property role="$nhwW" value="0.88D" />
               </node>
@@ -2729,7 +2729,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrVWf" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer):void" resolve="addLayer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer)" resolve="addLayer" />
               <node concept="2ShNRf" id="3b7yvkIrVlx" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIrVlI" role="2ShVmc">
                   <ref role="37wK5l" to="jxd7:~DialValueIndicator.&lt;init&gt;(int)" resolve="DialValueIndicator" />
@@ -2753,7 +2753,7 @@
               <ref role="3cqZAo" node="3b7yvkIrTt5" resolve="standarddialscale" />
             </node>
             <node concept="liA8E" id="3b7yvkIrW9K" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialScale.setTickLabelOffset(double):void" resolve="setTickLabelOffset" />
+              <ref role="37wK5l" to="jxd7:~StandardDialScale.setTickLabelOffset(double)" resolve="setTickLabelOffset" />
               <node concept="3b6qkQ" id="3b7yvkIrW9L" role="37wK5m">
                 <property role="$nhwW" value="0.18D" />
               </node>
@@ -2766,7 +2766,7 @@
               <ref role="3cqZAo" node="3b7yvkIrTt5" resolve="standarddialscale" />
             </node>
             <node concept="liA8E" id="3b7yvkIrUXK" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialScale.setTickLabelFont(java.awt.Font):void" resolve="setTickLabelFont" />
+              <ref role="37wK5l" to="jxd7:~StandardDialScale.setTickLabelFont(java.awt.Font)" resolve="setTickLabelFont" />
               <node concept="2ShNRf" id="3b7yvkIrY6Q" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIrY7O" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
@@ -2790,7 +2790,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrUc4" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addScale(int,org.jfree.chart.plot.dial.DialScale):void" resolve="addScale" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addScale(int,org.jfree.chart.plot.dial.DialScale)" resolve="addScale" />
               <node concept="3cmrfG" id="3b7yvkIrUc5" role="37wK5m">
                 <property role="3cmrfH" value="0" />
               </node>
@@ -2807,7 +2807,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrUNL" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addPointer(org.jfree.chart.plot.dial.DialPointer):void" resolve="addPointer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addPointer(org.jfree.chart.plot.dial.DialPointer)" resolve="addPointer" />
               <node concept="2ShNRf" id="3b7yvkIrUNM" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIrUNN" role="2ShVmc">
                   <ref role="37wK5l" to="jxd7:~DialPointer$Pin.&lt;init&gt;()" resolve="DialPointer.Pin" />
@@ -2836,7 +2836,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrUEM" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.setCap(org.jfree.chart.plot.dial.DialLayer):void" resolve="setCap" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.setCap(org.jfree.chart.plot.dial.DialLayer)" resolve="setCap" />
               <node concept="37vLTw" id="3b7yvkIrUEN" role="37wK5m">
                 <ref role="3cqZAo" node="3b7yvkIrTtE" resolve="dialcap" />
               </node>
@@ -2919,7 +2919,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdVO" resolve="dialbackground" />
             </node>
             <node concept="liA8E" id="3b7yvkIsh4i" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialBackground.setGradientPaintTransformer(org.jfree.ui.GradientPaintTransformer):void" resolve="setGradientPaintTransformer" />
+              <ref role="37wK5l" to="jxd7:~DialBackground.setGradientPaintTransformer(org.jfree.ui.GradientPaintTransformer)" resolve="setGradientPaintTransformer" />
               <node concept="2ShNRf" id="3b7yvkIsQ_T" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIsQ_X" role="2ShVmc">
                   <ref role="37wK5l" to="b4vq:~StandardGradientPaintTransformer.&lt;init&gt;(org.jfree.ui.GradientPaintTransformType)" resolve="StandardGradientPaintTransformer" />
@@ -2938,7 +2938,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIsfQ8" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.setBackground(org.jfree.chart.plot.dial.DialLayer):void" resolve="setBackground" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.setBackground(org.jfree.chart.plot.dial.DialLayer)" resolve="setBackground" />
               <node concept="37vLTw" id="3b7yvkIsfQ9" role="37wK5m">
                 <ref role="3cqZAo" node="3b7yvkIsdVO" resolve="dialbackground" />
               </node>
@@ -2951,7 +2951,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIsfI5" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.removePointer(int):void" resolve="removePointer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.removePointer(int)" resolve="removePointer" />
               <node concept="3cmrfG" id="3b7yvkIsfI6" role="37wK5m">
                 <property role="3cmrfH" value="0" />
               </node>
@@ -2979,7 +2979,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdW3" resolve="pointer" />
             </node>
             <node concept="liA8E" id="3b7yvkIsgfC" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPointer$Pointer.setFillPaint(java.awt.Paint):void" resolve="setFillPaint" />
+              <ref role="37wK5l" to="jxd7:~DialPointer$Pointer.setFillPaint(java.awt.Paint)" resolve="setFillPaint" />
               <node concept="10M0yZ" id="3b7yvkI_4bI" role="37wK5m">
                 <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                 <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
@@ -2993,7 +2993,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIsfNC" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addPointer(org.jfree.chart.plot.dial.DialPointer):void" resolve="addPointer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addPointer(org.jfree.chart.plot.dial.DialPointer)" resolve="addPointer" />
               <node concept="37vLTw" id="3b7yvkIsfND" role="37wK5m">
                 <ref role="3cqZAo" node="3b7yvkIsdW3" resolve="pointer" />
               </node>
@@ -3062,7 +3062,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIrTZu" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.setDataset(org.jfree.data.general.ValueDataset):void" resolve="setDataset" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.setDataset(org.jfree.data.general.ValueDataset)" resolve="setDataset" />
               <node concept="2ShNRf" id="3b7yvkIs1X2" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIs1Xh" role="2ShVmc">
                   <ref role="37wK5l" to="zhty:~DefaultValueDataset.&lt;init&gt;(double)" resolve="DefaultValueDataset" />
@@ -3151,7 +3151,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdUL" resolve="standarddialrange" />
             </node>
             <node concept="liA8E" id="3b7yvkIsgr8" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialRange.setInnerRadius(double):void" resolve="setInnerRadius" />
+              <ref role="37wK5l" to="jxd7:~StandardDialRange.setInnerRadius(double)" resolve="setInnerRadius" />
               <node concept="3b6qkQ" id="3b7yvkIsgr9" role="37wK5m">
                 <property role="$nhwW" value="0.52000000000000002D" />
               </node>
@@ -3164,7 +3164,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdUL" resolve="standarddialrange" />
             </node>
             <node concept="liA8E" id="3b7yvkIshe9" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialRange.setOuterRadius(double):void" resolve="setOuterRadius" />
+              <ref role="37wK5l" to="jxd7:~StandardDialRange.setOuterRadius(double)" resolve="setOuterRadius" />
               <node concept="3b6qkQ" id="3b7yvkIshea" role="37wK5m">
                 <property role="$nhwW" value="0.55000000000000004D" />
               </node>
@@ -3177,7 +3177,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIsgEb" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer):void" resolve="addLayer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer)" resolve="addLayer" />
               <node concept="37vLTw" id="3b7yvkIsgEc" role="37wK5m">
                 <ref role="3cqZAo" node="3b7yvkIsdUL" resolve="standarddialrange" />
               </node>
@@ -3250,7 +3250,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdV2" resolve="standarddialrange1" />
             </node>
             <node concept="liA8E" id="3b7yvkIshv$" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialRange.setInnerRadius(double):void" resolve="setInnerRadius" />
+              <ref role="37wK5l" to="jxd7:~StandardDialRange.setInnerRadius(double)" resolve="setInnerRadius" />
               <node concept="3b6qkQ" id="3b7yvkIshv_" role="37wK5m">
                 <property role="$nhwW" value="0.52000000000000002D" />
               </node>
@@ -3263,7 +3263,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdV2" resolve="standarddialrange1" />
             </node>
             <node concept="liA8E" id="3b7yvkIsgLM" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialRange.setOuterRadius(double):void" resolve="setOuterRadius" />
+              <ref role="37wK5l" to="jxd7:~StandardDialRange.setOuterRadius(double)" resolve="setOuterRadius" />
               <node concept="3b6qkQ" id="3b7yvkIsgLN" role="37wK5m">
                 <property role="$nhwW" value="0.55000000000000004D" />
               </node>
@@ -3276,7 +3276,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIsg06" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer):void" resolve="addLayer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer)" resolve="addLayer" />
               <node concept="37vLTw" id="3b7yvkIsg07" role="37wK5m">
                 <ref role="3cqZAo" node="3b7yvkIsdV2" resolve="standarddialrange1" />
               </node>
@@ -3313,7 +3313,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdVk" resolve="standarddialrange2" />
             </node>
             <node concept="liA8E" id="3b7yvkIsg3T" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialRange.setInnerRadius(double):void" resolve="setInnerRadius" />
+              <ref role="37wK5l" to="jxd7:~StandardDialRange.setInnerRadius(double)" resolve="setInnerRadius" />
               <node concept="3b6qkQ" id="3b7yvkIsg3U" role="37wK5m">
                 <property role="$nhwW" value="0.52000000000000002D" />
               </node>
@@ -3326,7 +3326,7 @@
               <ref role="3cqZAo" node="3b7yvkIsdVk" resolve="standarddialrange2" />
             </node>
             <node concept="liA8E" id="3b7yvkIsfKI" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~StandardDialRange.setOuterRadius(double):void" resolve="setOuterRadius" />
+              <ref role="37wK5l" to="jxd7:~StandardDialRange.setOuterRadius(double)" resolve="setOuterRadius" />
               <node concept="3b6qkQ" id="3b7yvkIsfKJ" role="37wK5m">
                 <property role="$nhwW" value="0.55000000000000004D" />
               </node>
@@ -3339,7 +3339,7 @@
               <ref role="3cqZAo" node="2djiQ_FtzjA" resolve="dialPlot" />
             </node>
             <node concept="liA8E" id="3b7yvkIsibv" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer):void" resolve="addLayer" />
+              <ref role="37wK5l" to="jxd7:~DialPlot.addLayer(org.jfree.chart.plot.dial.DialLayer)" resolve="addLayer" />
               <node concept="37vLTw" id="3b7yvkIsibw" role="37wK5m">
                 <ref role="3cqZAo" node="3b7yvkIsdVk" resolve="standarddialrange2" />
               </node>
@@ -3673,7 +3673,7 @@
       <node concept="3clFbS" id="h2BqpQOME4" role="3clF47">
         <node concept="3clFbF" id="h2BqpQOME5" role="3cqZAp">
           <node concept="3nyPlj" id="h2BqpQOME6" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JComponent.paintComponent(java.awt.Graphics):void" resolve="paintComponent" />
+            <ref role="37wK5l" to="dxuu:~JComponent.paintComponent(java.awt.Graphics)" resolve="paintComponent" />
             <node concept="37vLTw" id="1uMmOZGaVaK" role="37wK5m">
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
@@ -3813,7 +3813,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="h2BqpQOMFw" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
               <node concept="10M0yZ" id="2djiQ_FBYcS" role="37wK5m">
                 <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
                 <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -3827,7 +3827,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="h2BqpQOMFB" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
               <node concept="3cmrfG" id="h2BqpQOMFC" role="37wK5m">
                 <property role="3cmrfH" value="0" />
               </node>
@@ -3855,7 +3855,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="h2BqpQR0zn" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
               <node concept="2ShNRf" id="h2BqpQR2bU" role="37wK5m">
                 <node concept="1pGfFk" id="h2BqpQR2bV" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
@@ -3879,7 +3879,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="h2BqpQR0zu" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
               <node concept="37vLTw" id="1uMmOZGb307" role="37wK5m">
                 <ref role="3cqZAo" node="h2BqpQUSd7" resolve="margin" />
               </node>
@@ -3907,7 +3907,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="h2BqpQPMkm" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
               <node concept="2ShNRf" id="h2BqpQPMZD" role="37wK5m">
                 <node concept="1pGfFk" id="h2BqpQQ1PT" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
@@ -3931,7 +3931,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="h2BqpQQ8pb" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int):void" resolve="fillRect" />
+              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
               <node concept="37vLTw" id="1uMmOZGb72k" role="37wK5m">
                 <ref role="3cqZAo" node="h2BqpQUSd7" resolve="margin" />
               </node>
@@ -4002,7 +4002,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="7HQSJoRGl3D" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
               <node concept="10M0yZ" id="7HQSJoRGl3E" role="37wK5m">
                 <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                 <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
@@ -4053,7 +4053,7 @@
                   <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
                 </node>
                 <node concept="liA8E" id="7HQSJoRE9vF" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int):void" resolve="drawLine" />
+                  <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
                   <node concept="37vLTw" id="7HQSJoRE$Jw" role="37wK5m">
                     <ref role="3cqZAo" node="h2BqpQUSd7" resolve="margin" />
                   </node>
@@ -4080,7 +4080,7 @@
                   <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
                 </node>
                 <node concept="liA8E" id="7HQSJoRHLJw" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Graphics.drawString(java.lang.String,int,int):void" resolve="drawString" />
+                  <ref role="37wK5l" to="z60i:~Graphics.drawString(java.lang.String,int,int)" resolve="drawString" />
                   <node concept="3cpWs3" id="7HQSJoRHVrz" role="37wK5m">
                     <node concept="Xl_RD" id="7HQSJoRHUwQ" role="3uHU7B">
                       <property role="Xl_RC" value="" />
@@ -4164,7 +4164,7 @@
               <ref role="3cqZAo" node="h2BqpQOME2" resolve="g" />
             </node>
             <node concept="liA8E" id="4G7mwLzMJdp" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.drawString(java.lang.String,int,int):void" resolve="drawString" />
+              <ref role="37wK5l" to="z60i:~Graphics.drawString(java.lang.String,int,int)" resolve="drawString" />
               <node concept="37vLTw" id="4G7mwLzMOxI" role="37wK5m">
                 <ref role="3cqZAo" node="4G7mwLzM__e" resolve="title" />
               </node>
@@ -4266,7 +4266,7 @@
             </node>
             <node concept="2YIFZM" id="7HQSJoROSvb" role="33vP2m">
               <ref role="1Pybhc" to="k6nw:~ChartFactory" resolve="ChartFactory" />
-              <ref role="37wK5l" to="k6nw:~ChartFactory.createBarChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.category.CategoryDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean):org.jfree.chart.JFreeChart" resolve="createBarChart" />
+              <ref role="37wK5l" to="k6nw:~ChartFactory.createBarChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.category.CategoryDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean)" resolve="createBarChart" />
               <node concept="Xl_RD" id="7HQSJoROSvc" role="37wK5m">
                 <property role="Xl_RC" value="title" />
               </node>
@@ -4307,7 +4307,7 @@
               <ref role="3cqZAo" node="3b7yvkI_xxi" resolve="chart" />
             </node>
             <node concept="liA8E" id="3b7yvkI_Kge" role="2OqNvi">
-              <ref role="37wK5l" to="k6nw:~JFreeChart.setBackgroundPaint(java.awt.Paint):void" resolve="setBackgroundPaint" />
+              <ref role="37wK5l" to="k6nw:~JFreeChart.setBackgroundPaint(java.awt.Paint)" resolve="setBackgroundPaint" />
               <node concept="2ShNRf" id="3b7yvkI_Kgf" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkI_Kgg" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~GradientPaint.&lt;init&gt;(float,float,java.awt.Color,float,float,java.awt.Color)" resolve="GradientPaint" />
@@ -4363,7 +4363,7 @@
               <ref role="3cqZAo" node="2djiQ_FIFQm" resolve="chartPanel" />
             </node>
             <node concept="liA8E" id="3b7yvkI_JSU" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
               <node concept="2ShNRf" id="3b7yvkI_JSV" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkI_JSW" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -4415,7 +4415,7 @@
               <ref role="3cqZAo" node="7HQSJoRPV1r" resolve="dataset" />
             </node>
             <node concept="liA8E" id="7HQSJoRQ9oa" role="2OqNvi">
-              <ref role="37wK5l" to="bq1s:~DefaultCategoryDataset.addValue(double,java.lang.Comparable,java.lang.Comparable):void" resolve="addValue" />
+              <ref role="37wK5l" to="bq1s:~DefaultCategoryDataset.addValue(double,java.lang.Comparable,java.lang.Comparable)" resolve="addValue" />
               <node concept="37vLTw" id="7HQSJoRQhWj" role="37wK5m">
                 <ref role="3cqZAo" node="7HQSJoRQgux" resolve="y" />
               </node>
@@ -4560,7 +4560,7 @@
             </node>
             <node concept="2YIFZM" id="2djiQ_FCnP5" role="33vP2m">
               <ref role="1Pybhc" to="k6nw:~ChartFactory" resolve="ChartFactory" />
-              <ref role="37wK5l" to="k6nw:~ChartFactory.createXYLineChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean):org.jfree.chart.JFreeChart" resolve="createXYLineChart" />
+              <ref role="37wK5l" to="k6nw:~ChartFactory.createXYLineChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean)" resolve="createXYLineChart" />
               <node concept="37vLTw" id="2djiQ_FCnP6" role="37wK5m">
                 <ref role="3cqZAo" node="2djiQ_FCl9j" resolve="title" />
               </node>
@@ -4602,7 +4602,7 @@
                   <ref role="3cqZAo" node="2djiQ_FCl9q" resolve="chart" />
                 </node>
                 <node concept="liA8E" id="2djiQ_FCmRr" role="2OqNvi">
-                  <ref role="37wK5l" to="k6nw:~JFreeChart.getPlot():org.jfree.chart.plot.Plot" resolve="getPlot" />
+                  <ref role="37wK5l" to="k6nw:~JFreeChart.getPlot()" resolve="getPlot" />
                 </node>
               </node>
               <node concept="3uibUv" id="2djiQ_FCl9F" role="10QFUM">
@@ -4629,7 +4629,7 @@
               <ref role="3cqZAo" node="2djiQ_FCl9A" resolve="plot" />
             </node>
             <node concept="liA8E" id="2djiQ_FCmzv" role="2OqNvi">
-              <ref role="37wK5l" to="gu6r:~XYPlot.setRenderer(org.jfree.chart.renderer.xy.XYItemRenderer):void" resolve="setRenderer" />
+              <ref role="37wK5l" to="gu6r:~XYPlot.setRenderer(org.jfree.chart.renderer.xy.XYItemRenderer)" resolve="setRenderer" />
               <node concept="37vLTw" id="2djiQ_FCmzw" role="37wK5m">
                 <ref role="3cqZAo" node="2djiQ_FGFFQ" resolve="renderer" />
               </node>
@@ -4659,7 +4659,7 @@
               <ref role="3cqZAo" node="2djiQ_FCla3" resolve="chartPanel" />
             </node>
             <node concept="liA8E" id="2djiQ_FCo2q" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
               <node concept="2ShNRf" id="2djiQ_FCo2r" role="37wK5m">
                 <node concept="1pGfFk" id="2djiQ_FCo2s" role="2ShVmc">
                   <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -4753,7 +4753,7 @@
               <ref role="3cqZAo" node="2djiQ_FGFFQ" resolve="renderer" />
             </node>
             <node concept="liA8E" id="2djiQ_FGNBY" role="2OqNvi">
-              <ref role="37wK5l" to="teca:~XYLineAndShapeRenderer.setSeriesShapesVisible(int,boolean):void" resolve="setSeriesShapesVisible" />
+              <ref role="37wK5l" to="teca:~XYLineAndShapeRenderer.setSeriesShapesVisible(int,boolean)" resolve="setSeriesShapesVisible" />
               <node concept="2OqwBi" id="2djiQ_FGZ0n" role="37wK5m">
                 <node concept="2OqwBi" id="2djiQ_FGWhR" role="2Oq$k0">
                   <node concept="Xjq3P" id="2djiQ_FGVZh" role="2Oq$k0" />
@@ -4762,7 +4762,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2djiQ_FH1m8" role="2OqNvi">
-                  <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeriesCount():int" resolve="getSeriesCount" />
+                  <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeriesCount()" resolve="getSeriesCount" />
                 </node>
               </node>
               <node concept="3clFbT" id="2djiQ_FGPo5" role="37wK5m">
@@ -4777,7 +4777,7 @@
               <ref role="3cqZAo" node="2djiQ_FGFFQ" resolve="renderer" />
             </node>
             <node concept="liA8E" id="2djiQ_FGT9s" role="2OqNvi">
-              <ref role="37wK5l" to="teca:~XYLineAndShapeRenderer.setSeriesLinesVisible(int,boolean):void" resolve="setSeriesLinesVisible" />
+              <ref role="37wK5l" to="teca:~XYLineAndShapeRenderer.setSeriesLinesVisible(int,boolean)" resolve="setSeriesLinesVisible" />
               <node concept="2OqwBi" id="2djiQ_FH23X" role="37wK5m">
                 <node concept="2OqwBi" id="2djiQ_FH23Y" role="2Oq$k0">
                   <node concept="Xjq3P" id="2djiQ_FH23Z" role="2Oq$k0" />
@@ -4786,7 +4786,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2djiQ_FH241" role="2OqNvi">
-                  <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeriesCount():int" resolve="getSeriesCount" />
+                  <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeriesCount()" resolve="getSeriesCount" />
                 </node>
               </node>
               <node concept="3clFbT" id="2djiQ_FGUMD" role="37wK5m">
@@ -4804,7 +4804,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2djiQ_FFfFC" role="2OqNvi">
-              <ref role="37wK5l" to="8en7:~XYSeriesCollection.addSeries(org.jfree.data.xy.XYSeries):void" resolve="addSeries" />
+              <ref role="37wK5l" to="8en7:~XYSeriesCollection.addSeries(org.jfree.data.xy.XYSeries)" resolve="addSeries" />
               <node concept="37vLTw" id="2djiQ_FFgr5" role="37wK5m">
                 <ref role="3cqZAo" node="2djiQ_FClam" resolve="series" />
               </node>
@@ -4837,14 +4837,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="2djiQ_FFJfB" role="2OqNvi">
-                <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeries(int):org.jfree.data.xy.XYSeries" resolve="getSeries" />
+                <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeries(int)" resolve="getSeries" />
                 <node concept="37vLTw" id="2djiQ_FFNyq" role="37wK5m">
                   <ref role="3cqZAo" node="2djiQ_FFLaS" resolve="series" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="2djiQ_FFQ$F" role="2OqNvi">
-              <ref role="37wK5l" to="8en7:~XYSeries.add(double,double):void" resolve="add" />
+              <ref role="37wK5l" to="8en7:~XYSeries.add(double,double)" resolve="add" />
               <node concept="37vLTw" id="2djiQ_FFRmk" role="37wK5m">
                 <ref role="3cqZAo" node="2djiQ_FFLCP" resolve="xVal" />
               </node>
@@ -4888,14 +4888,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="4G7mwLzZvhz" role="2OqNvi">
-                <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeries(int):org.jfree.data.xy.XYSeries" resolve="getSeries" />
+                <ref role="37wK5l" to="8en7:~XYSeriesCollection.getSeries(int)" resolve="getSeries" />
                 <node concept="37vLTw" id="4G7mwLzZvh$" role="37wK5m">
                   <ref role="3cqZAo" node="4G7mwLzZvhE" resolve="series" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="4G7mwLzZvh_" role="2OqNvi">
-              <ref role="37wK5l" to="8en7:~XYSeries.add(double,double):void" resolve="add" />
+              <ref role="37wK5l" to="8en7:~XYSeries.add(double,double)" resolve="add" />
               <node concept="3uNrnE" id="4G7mwLzZ$ta" role="37wK5m">
                 <node concept="37vLTw" id="4G7mwLzZ$tc" role="2$L3a6">
                   <ref role="3cqZAo" node="4G7mwLzZrgC" resolve="currStepNumber" />
@@ -4999,7 +4999,7 @@
                   <ref role="3cqZAo" node="2H74AM1_5NU" resolve="reloadButton" />
                 </node>
                 <node concept="liA8E" id="2H74AM1_5O2" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                   <node concept="2ShNRf" id="2H74AM1_5O3" role="37wK5m">
                     <node concept="YeOm9" id="2H74AM1_5O4" role="2ShVmc">
                       <node concept="1Y3b0j" id="2H74AM1_5O5" role="YeSDq">
@@ -5048,7 +5048,7 @@
                   <ref role="3cqZAo" node="2H74AM1_5NU" resolve="reloadButton" />
                 </node>
                 <node concept="liA8E" id="2H74AM1_5Om" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font):void" resolve="setFont" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
                   <node concept="2ShNRf" id="2H74AM1_5On" role="37wK5m">
                     <node concept="1pGfFk" id="2H74AM1_5Oo" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
@@ -5072,7 +5072,7 @@
                   <ref role="3cqZAo" node="2H74AM1_5NU" resolve="reloadButton" />
                 </node>
                 <node concept="liA8E" id="2H74AM1_5Ov" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
                   <node concept="2ShNRf" id="2H74AM1_5Ow" role="37wK5m">
                     <node concept="1pGfFk" id="2H74AM1_5Ox" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -5093,7 +5093,7 @@
                   <ref role="3cqZAo" node="2H74AM1_5NU" resolve="reloadButton" />
                 </node>
                 <node concept="liA8E" id="2H74AM1_5OB" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets):void" resolve="setMargin" />
+                  <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets)" resolve="setMargin" />
                   <node concept="2ShNRf" id="2H74AM1_5OC" role="37wK5m">
                     <node concept="1pGfFk" id="2H74AM1_5OD" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />

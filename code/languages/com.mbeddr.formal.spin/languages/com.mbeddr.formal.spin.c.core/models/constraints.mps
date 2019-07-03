@@ -212,7 +212,7 @@
           <node concept="2OqwBi" id="5mKzygM3X59" role="3clFbw">
             <node concept="2DA6wF" id="5mKzygM3TDQ" role="2Oq$k0" />
             <node concept="liA8E" id="5mKzygM3XBk" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
               <node concept="359W_D" id="5mKzygM3UOt" role="37wK5m">
                 <ref role="359W_E" to="vshk:1ZejHLlNdmJ" resolve="FunctionDeclaration" />
                 <ref role="359W_F" to="vshk:5mKzygM3QmX" resolve="tpe" />
@@ -249,7 +249,7 @@
           <node concept="2OqwBi" id="5mKzygM4LAC" role="3clFbw">
             <node concept="2DA6wF" id="5mKzygM4LeX" role="2Oq$k0" />
             <node concept="liA8E" id="5mKzygM4M6l" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
               <node concept="359W_D" id="5mKzygM4Me3" role="37wK5m">
                 <ref role="359W_E" to="vshk:1ZejHLlNdmN" resolve="CParameterDeclaration" />
                 <ref role="359W_F" to="o3hv:1ZejHLlNdng" resolve="tpe" />

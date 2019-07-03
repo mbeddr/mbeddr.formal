@@ -606,7 +606,7 @@
                     </node>
                   </node>
                   <node concept="2YIFZM" id="15PPQjZmYlp" role="2GsD0m">
-                    <ref role="37wK5l" to="btm1:~StringUtils.split(java.lang.String,java.lang.String):java.lang.String[]" resolve="split" />
+                    <ref role="37wK5l" to="btm1:~StringUtils.split(java.lang.String,java.lang.String)" resolve="split" />
                     <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                     <node concept="2OqwBi" id="15PPQjZmYlq" role="37wK5m">
                       <node concept="30H73N" id="15PPQjZmYlr" role="2Oq$k0" />

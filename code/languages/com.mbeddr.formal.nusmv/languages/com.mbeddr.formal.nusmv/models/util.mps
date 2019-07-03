@@ -166,7 +166,7 @@
               <ref role="3cqZAo" node="mJkiyMCeUq" resolve="modulesToVisit" />
             </node>
             <node concept="liA8E" id="mJkiyMCf24" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.remove(java.lang.Object):boolean" resolve="remove" />
+              <ref role="37wK5l" to="33ny:~List.remove(java.lang.Object)" resolve="remove" />
               <node concept="37vLTw" id="mJkiyMCf25" role="37wK5m">
                 <ref role="3cqZAo" node="mJkiyMCeUy" resolve="crtModule" />
               </node>
@@ -179,7 +179,7 @@
               <ref role="3cqZAo" node="mJkiyMCeUo" resolve="visitedModules" />
             </node>
             <node concept="liA8E" id="mJkiyMCf0M" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="mJkiyMCf0N" role="37wK5m">
                 <ref role="3cqZAo" node="mJkiyMCeUy" resolve="crtModule" />
               </node>
@@ -216,7 +216,7 @@
                       <ref role="3cqZAo" node="mJkiyMCeUo" resolve="visitedModules" />
                     </node>
                     <node concept="liA8E" id="mJkiyMCf4u" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
+                      <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object)" resolve="contains" />
                       <node concept="2OqwBi" id="mJkiyMCfHZ" role="37wK5m">
                         <node concept="2GrUjf" id="mJkiyMCtsE" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="mJkiyMCqmV" resolve="tpe" />
@@ -236,7 +236,7 @@
                       <ref role="3cqZAo" node="mJkiyMCeUq" resolve="modulesToVisit" />
                     </node>
                     <node concept="liA8E" id="mJkiyMCf5W" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                       <node concept="2OqwBi" id="mJkiyMCfJl" role="37wK5m">
                         <node concept="2GrUjf" id="mJkiyMCtUt" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="mJkiyMCqmV" resolve="tpe" />

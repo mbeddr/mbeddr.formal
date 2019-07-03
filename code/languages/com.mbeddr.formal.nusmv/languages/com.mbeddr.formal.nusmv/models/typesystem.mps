@@ -831,7 +831,7 @@
                   <ref role="3cqZAo" node="25Ap4XXq3uf" resolve="subRight" />
                 </node>
                 <node concept="liA8E" id="25Ap4XXqgmM" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Number.doubleValue():double" resolve="doubleValue" />
+                  <ref role="37wK5l" to="wyt6:~Number.doubleValue()" resolve="doubleValue" />
                 </node>
               </node>
               <node concept="2OqwBi" id="25Ap4XXqgmN" role="3uHU7w">
@@ -839,7 +839,7 @@
                   <ref role="3cqZAo" node="25Ap4XXq3uz" resolve="superRight" />
                 </node>
                 <node concept="liA8E" id="25Ap4XXqgmP" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Number.doubleValue():double" resolve="doubleValue" />
+                  <ref role="37wK5l" to="wyt6:~Number.doubleValue()" resolve="doubleValue" />
                 </node>
               </node>
             </node>
@@ -849,7 +849,7 @@
                   <ref role="3cqZAo" node="25Ap4XXq3up" resolve="superLeft" />
                 </node>
                 <node concept="liA8E" id="25Ap4XXqgmT" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Number.doubleValue():double" resolve="doubleValue" />
+                  <ref role="37wK5l" to="wyt6:~Number.doubleValue()" resolve="doubleValue" />
                 </node>
               </node>
               <node concept="2OqwBi" id="25Ap4XXqgmU" role="3uHU7w">
@@ -857,7 +857,7 @@
                   <ref role="3cqZAo" node="25Ap4XXq3u5" resolve="subLeft" />
                 </node>
                 <node concept="liA8E" id="25Ap4XXqgmW" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Number.doubleValue():double" resolve="doubleValue" />
+                  <ref role="37wK5l" to="wyt6:~Number.doubleValue()" resolve="doubleValue" />
                 </node>
               </node>
             </node>
@@ -908,7 +908,7 @@
             <node concept="2OqwBi" id="25Ap4XXql4l" role="2OEOjV">
               <node concept="3622Ei" id="25Ap4XXqkSb" role="2Oq$k0" />
               <node concept="liA8E" id="25Ap4XXqlqJ" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError():org.jetbrains.mps.openapi.model.SNode" resolve="getNodeWithError" />
+                <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError()" resolve="getNodeWithError" />
               </node>
             </node>
           </node>

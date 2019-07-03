@@ -269,7 +269,7 @@
                     <ref role="3cqZAo" node="25dEoZdDRvp" resolve="right" />
                   </node>
                   <node concept="liA8E" id="25dEoZdDUS6" role="2OqNvi">
-                    <ref role="37wK5l" to="xlxw:~BigDecimal.longValue():long" resolve="longValue" />
+                    <ref role="37wK5l" to="xlxw:~BigDecimal.longValue()" resolve="longValue" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="25dEoZdDRLq" role="3uHU7B">
@@ -277,7 +277,7 @@
                     <ref role="3cqZAo" node="25dEoZdDRvn" resolve="left" />
                   </node>
                   <node concept="liA8E" id="25dEoZdDSJb" role="2OqNvi">
-                    <ref role="37wK5l" to="xlxw:~BigDecimal.longValue():long" resolve="longValue" />
+                    <ref role="37wK5l" to="xlxw:~BigDecimal.longValue()" resolve="longValue" />
                   </node>
                 </node>
               </node>
@@ -1022,7 +1022,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6Kf5KB77PiC" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="6Kf5KB77Pnk" role="37wK5m">
                 <property role="Xl_RC" value="main" />
               </node>
@@ -1586,7 +1586,7 @@
               <ref role="3cqZAo" node="25dEoZdDPL$" resolve="left" />
             </node>
             <node concept="liA8E" id="25dEoZdDQtE" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigDecimal.max(java.math.BigDecimal):java.math.BigDecimal" resolve="max" />
+              <ref role="37wK5l" to="xlxw:~BigDecimal.max(java.math.BigDecimal)" resolve="max" />
               <node concept="37vLTw" id="25dEoZdDQu7" role="37wK5m">
                 <ref role="3cqZAo" node="25dEoZdDPLA" resolve="right" />
               </node>
@@ -1628,7 +1628,7 @@
               <ref role="3cqZAo" node="25dEoZdDQz2" resolve="left" />
             </node>
             <node concept="liA8E" id="25dEoZdDRoM" role="2OqNvi">
-              <ref role="37wK5l" to="xlxw:~BigDecimal.min(java.math.BigDecimal):java.math.BigDecimal" resolve="min" />
+              <ref role="37wK5l" to="xlxw:~BigDecimal.min(java.math.BigDecimal)" resolve="min" />
               <node concept="37vLTw" id="25dEoZdDRpf" role="37wK5m">
                 <ref role="3cqZAo" node="25dEoZdDQz4" resolve="right" />
               </node>

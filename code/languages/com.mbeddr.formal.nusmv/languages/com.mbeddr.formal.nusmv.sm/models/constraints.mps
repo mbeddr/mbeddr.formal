@@ -244,11 +244,11 @@
               <node concept="2OqwBi" id="3ZkhnXRnVlV" role="2Oq$k0">
                 <node concept="2DD5aU" id="3ZkhnXRnVlW" role="2Oq$k0" />
                 <node concept="liA8E" id="3ZkhnXRnVlX" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage()" resolve="getLanguage" />
                 </node>
               </node>
               <node concept="liA8E" id="3ZkhnXRnVlY" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName()" resolve="getQualifiedName" />
               </node>
             </node>
           </node>
@@ -266,7 +266,7 @@
               <ref role="3cqZAo" node="3ZkhnXRnVlT" resolve="qualifiedConceptName" />
             </node>
             <node concept="liA8E" id="3ZkhnXRnNEr" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="3ZkhnXRnNV4" role="37wK5m">
                 <property role="Xl_RC" value="de.itemis.mps.editor.diagram.layout" />
               </node>
@@ -286,7 +286,7 @@
               <ref role="3cqZAo" node="3ZkhnXRnVlT" resolve="qualifiedConceptName" />
             </node>
             <node concept="liA8E" id="2obHvWSblXk" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="2obHvWSblXl" role="37wK5m">
                 <property role="Xl_RC" value="jetbrains.mps.lang.test" />
               </node>
@@ -598,7 +598,7 @@
           <node concept="2OqwBi" id="1$vmWKMr1v4" role="3clFbw">
             <node concept="2DA6wF" id="1$vmWKMr17u" role="2Oq$k0" />
             <node concept="liA8E" id="1$vmWKMr1MK" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
               <node concept="359W_D" id="1$vmWKMr1UJ" role="37wK5m">
                 <ref role="359W_E" to="ahnd:1$vmWKMr0SG" resolve="TransitionForInternalVariable" />
                 <ref role="359W_F" to="ahnd:1$vmWKMr0SH" resolve="guard" />
@@ -782,7 +782,7 @@
             <node concept="2OqwBi" id="7Z6$Wo5Vxm9" role="3uHU7w">
               <node concept="2DA6wF" id="7Z6$Wo5Vx1H" role="2Oq$k0" />
               <node concept="liA8E" id="7Z6$Wo5Vy5n" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                 <node concept="359W_D" id="7Z6$Wo5VxtZ" role="37wK5m">
                   <ref role="359W_E" to="ahnd:1$vmWKMr0SG" resolve="TransitionForInternalVariable" />
                   <ref role="359W_F" to="ahnd:1$vmWKMr0SH" resolve="guard" />

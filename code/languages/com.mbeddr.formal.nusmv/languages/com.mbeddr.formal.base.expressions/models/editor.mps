@@ -701,7 +701,7 @@
         <node concept="3clFbF" id="5bMrXoEywO6" role="3cqZAp">
           <node concept="2YIFZM" id="5bMrXoEywZp" role="3clFbG">
             <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-            <ref role="37wK5l" to="33ny:~Collections.singleton(java.lang.Object):java.util.Set" resolve="singleton" />
+            <ref role="37wK5l" to="33ny:~Collections.singleton(java.lang.Object)" resolve="singleton" />
             <node concept="jzRn0" id="5bMrXoEyx5t" role="37wK5m" />
           </node>
         </node>
@@ -716,7 +716,7 @@
             <node concept="2OqwBi" id="5bMrXoEBsjv" role="33vP2m">
               <node concept="1Q80Hx" id="5bMrXoEBsjw" role="2Oq$k0" />
               <node concept="liA8E" id="5bMrXoEBsjx" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode()" resolve="getSelectedNode" />
               </node>
             </node>
           </node>

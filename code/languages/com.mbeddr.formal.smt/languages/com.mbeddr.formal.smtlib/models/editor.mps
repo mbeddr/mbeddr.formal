@@ -219,13 +219,13 @@
         <node concept="l2Vlx" id="3r83Ks0gb4d" role="2iSdaV" />
         <node concept="3F0ifn" id="3r83Ks0gb4e" role="3EZMnx">
           <property role="3F0ifm" value="model  " />
-          <ref role="1k5W1q" to="3fe0:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="VPM3Z" id="3r83Ks0gyrX" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
         </node>
         <node concept="1HlG4h" id="3r83Ks0gb4f" role="3EZMnx">
-          <ref role="1k5W1q" to="3fe0:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="1HfYo3" id="3r83Ks0gb4g" role="1HlULh">
             <node concept="3TQlhw" id="3r83Ks0gb4h" role="1Hhtcw">
               <node concept="3clFbS" id="3r83Ks0gb4i" role="2VODD2">
@@ -239,11 +239,11 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7RhjhI6ZuQR" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                        <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="7RhjhI6ZvXf" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModelName.getLongName():java.lang.String" resolve="getLongName" />
+                      <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
                     </node>
                   </node>
                 </node>
@@ -265,13 +265,13 @@
         <node concept="l2Vlx" id="3r83Ks0g7Sl" role="2iSdaV" />
         <node concept="3F0ifn" id="3r83Ks0gb4b" role="3EZMnx">
           <property role="3F0ifm" value="package" />
-          <ref role="1k5W1q" to="3fe0:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="VPM3Z" id="3r83Ks0gyrW" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
         </node>
         <node concept="1HlG4h" id="6GZLGDRsw6C" role="3EZMnx">
-          <ref role="1k5W1q" to="3fe0:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="1HfYo3" id="6GZLGDRsw6D" role="1HlULh">
             <node concept="3TQlhw" id="6GZLGDRsw6E" role="1Hhtcw">
               <node concept="3clFbS" id="6GZLGDRsw6F" role="2VODD2">

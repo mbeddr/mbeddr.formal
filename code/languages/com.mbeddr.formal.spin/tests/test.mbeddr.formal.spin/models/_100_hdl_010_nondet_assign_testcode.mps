@@ -36,9 +36,9 @@
       <concept id="2291855968617675966" name="com.mbeddr.formal.spin.hdl.structure.EnumerationExpression" flags="ng" index="1a7J9y">
         <child id="2291855968617675967" name="members" index="1a7J9z" />
       </concept>
-      <concept id="6785924186072810141" name="" flags="ng" index="1pHB25">
-        <child id="2291855968617658642" name="" index="1a7zve" />
-        <child id="2291855968617658347" name="" index="1a7z$R" />
+      <concept id="6785924186072810141" name="com.mbeddr.formal.spin.hdl.structure.AbstractAssignment" flags="ng" index="1pHB25">
+        <child id="2291855968617658642" name="range" index="1a7zve" />
+        <child id="2291855968617658347" name="var" index="1a7z$R" />
       </concept>
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">

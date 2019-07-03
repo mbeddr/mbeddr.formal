@@ -236,7 +236,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5y2MdLwXax6" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
             </node>
@@ -292,7 +292,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="2kmJJKRTJkI" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                      <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                       <node concept="Xl_RD" id="2kmJJKRTJvD" role="37wK5m">
                         <property role="Xl_RC" value="\&quot;" />
                       </node>
@@ -315,7 +315,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2kmJJKRTzCS" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
             </node>

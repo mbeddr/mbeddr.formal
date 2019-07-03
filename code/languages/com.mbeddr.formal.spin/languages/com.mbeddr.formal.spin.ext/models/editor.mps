@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="dinh" ref="r:053017f6-a9b2-4735-890d-9c4181609d2f(com.mbeddr.formal.spin.ext.structure)" implicit="true" />
-    <import index="3fe0" ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)" implicit="true" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -48,7 +48,7 @@
     <node concept="3EZMnI" id="5y2MdLwTJOr" role="2wV5jI">
       <node concept="3F0ifn" id="5y2MdLwTJO_" role="3EZMnx">
         <property role="3F0ifm" value="log witness" />
-        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="5y2MdLwTJOI" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -82,7 +82,7 @@
     <node concept="3EZMnI" id="1ZejHLlJL2d" role="2wV5jI">
       <node concept="3F0ifn" id="1ZejHLlJL2n" role="3EZMnx">
         <property role="3F0ifm" value="assume" />
-        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="1ZejHLlJL2w" role="3EZMnx">
         <property role="3F0ifm" value="(" />

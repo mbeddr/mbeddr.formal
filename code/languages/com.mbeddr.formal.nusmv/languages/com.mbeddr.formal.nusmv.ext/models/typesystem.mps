@@ -631,7 +631,7 @@
               <ref role="3cqZAo" node="25Ap4XXq3uf" resolve="subRight" />
             </node>
             <node concept="liA8E" id="4RNGGOMPMWV" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Number.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
             </node>
           </node>
           <node concept="2OqwBi" id="4RNGGOMPKqS" role="3uHU7B">
@@ -639,7 +639,7 @@
               <ref role="3cqZAo" node="25Ap4XXq3u5" resolve="subLeft" />
             </node>
             <node concept="liA8E" id="4RNGGOMPLAZ" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Number.intValue():int" resolve="intValue" />
+              <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
             </node>
           </node>
         </node>
@@ -778,7 +778,7 @@
                                 <ref role="3cqZAo" node="4RNGGOMPosD" resolve="right" />
                               </node>
                               <node concept="liA8E" id="4RNGGOMPR9R" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Number.intValue():int" resolve="intValue" />
+                                <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4RNGGOMPR9S" role="3uHU7B">
@@ -786,7 +786,7 @@
                                 <ref role="3cqZAo" node="25Ap4XXq3u5" resolve="subLeft" />
                               </node>
                               <node concept="liA8E" id="4RNGGOMPR9U" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Number.intValue():int" resolve="intValue" />
+                                <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
                               </node>
                             </node>
                           </node>
@@ -796,7 +796,7 @@
                                 <ref role="3cqZAo" node="4RNGGOMPnOf" resolve="left" />
                               </node>
                               <node concept="liA8E" id="4RNGGOMPR9Y" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Number.intValue():int" resolve="intValue" />
+                                <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4RNGGOMPR9Z" role="3uHU7w">
@@ -804,7 +804,7 @@
                                 <ref role="3cqZAo" node="25Ap4XXq3u5" resolve="subLeft" />
                               </node>
                               <node concept="liA8E" id="4RNGGOMPRa1" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Number.intValue():int" resolve="intValue" />
+                                <ref role="37wK5l" to="wyt6:~Number.intValue()" resolve="intValue" />
                               </node>
                             </node>
                           </node>
@@ -862,7 +862,7 @@
             <node concept="2OqwBi" id="25Ap4XXql4l" role="2OEOjV">
               <node concept="3622Ei" id="25Ap4XXqkSb" role="2Oq$k0" />
               <node concept="liA8E" id="25Ap4XXqlqJ" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError():org.jetbrains.mps.openapi.model.SNode" resolve="getNodeWithError" />
+                <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError()" resolve="getNodeWithError" />
               </node>
             </node>
           </node>

@@ -218,13 +218,13 @@
                     <ref role="3cqZAo" node="3D1D54hOhl$" resolve="button" />
                   </node>
                   <node concept="liA8E" id="9TY4XH0KNb" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JComponent.getFontMetrics(java.awt.Font):java.awt.FontMetrics" resolve="getFontMetrics" />
+                    <ref role="37wK5l" to="dxuu:~JComponent.getFontMetrics(java.awt.Font)" resolve="getFontMetrics" />
                     <node concept="2OqwBi" id="9TY4XH0KNc" role="37wK5m">
                       <node concept="37vLTw" id="9TY4XH0KNd" role="2Oq$k0">
                         <ref role="3cqZAo" node="3D1D54hOhl$" resolve="button" />
                       </node>
                       <node concept="liA8E" id="9TY4XH0KNe" role="2OqNvi">
-                        <ref role="37wK5l" to="z60i:~Component.getFont():java.awt.Font" resolve="getFont" />
+                        <ref role="37wK5l" to="z60i:~Component.getFont()" resolve="getFont" />
                       </node>
                     </node>
                   </node>
@@ -240,7 +240,7 @@
                     <ref role="3cqZAo" node="9TY4XH0KN8" resolve="fontMetrics" />
                   </node>
                   <node concept="liA8E" id="9TY4XH0T0G" role="2OqNvi">
-                    <ref role="37wK5l" to="z60i:~FontMetrics.getHeight():int" resolve="getHeight" />
+                    <ref role="37wK5l" to="z60i:~FontMetrics.getHeight()" resolve="getHeight" />
                   </node>
                 </node>
               </node>
@@ -251,7 +251,7 @@
                   <ref role="3cqZAo" node="3D1D54hOhl$" resolve="button" />
                 </node>
                 <node concept="liA8E" id="9TY4XGZRZT" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
                   <node concept="2ShNRf" id="9TY4XGZTzv" role="37wK5m">
                     <node concept="1pGfFk" id="9TY4XH02rf" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -272,7 +272,7 @@
                   <ref role="3cqZAo" node="3D1D54hOhl$" resolve="button" />
                 </node>
                 <node concept="liA8E" id="3D1D54hOnlv" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                   <node concept="2ShNRf" id="3D1D54hOnBz" role="37wK5m">
                     <node concept="YeOm9" id="3D1D54hOqhL" role="2ShVmc">
                       <node concept="1Y3b0j" id="3D1D54hOqhO" role="YeSDq">
@@ -326,7 +326,7 @@
                               <node concept="2OqwBi" id="3D1D54hXLqv" role="ukAjM">
                                 <node concept="1Q80Hx" id="3D1D54hXL6j" role="2Oq$k0" />
                                 <node concept="liA8E" id="3D1D54hXM1g" role="2OqNvi">
-                                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                                 </node>
                               </node>
                             </node>

@@ -198,7 +198,7 @@
         </node>
         <node concept="3F0ifn" id="1ZejHLlNgvW" role="3EZMnx">
           <property role="3F0ifm" value="decl" />
-          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0ifn" id="1ZejHLlNgw5" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -326,7 +326,7 @@
         </node>
         <node concept="3F0ifn" id="1ZejHLlNYZs" role="3EZMnx">
           <property role="3F0ifm" value="harness" />
-          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0A7n" id="1ZejHLlNYZF" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -396,7 +396,7 @@
     <node concept="3EZMnI" id="1ZejHLlO7$p" role="2wV5jI">
       <node concept="PMmxH" id="5SGsxw7Awg9" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="1ZejHLlO7$G" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -507,7 +507,7 @@
     <node concept="3EZMnI" id="2DjQaub$5wj" role="2wV5jI">
       <node concept="3F0ifn" id="2DjQaub$5wt" role="3EZMnx">
         <property role="3F0ifm" value="assert" />
-        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="2DjQaub$5wA" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -670,7 +670,7 @@
     <node concept="3EZMnI" id="5SGsxw7BACX" role="2wV5jI">
       <node concept="PMmxH" id="5SGsxw7BACY" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="5SGsxw7BACZ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -740,7 +740,7 @@
       <node concept="3EZMnI" id="5SGsxw7L3_t" role="3EZMnx">
         <node concept="3F0ifn" id="5SGsxw7L3_B" role="3EZMnx">
           <property role="3F0ifm" value="choice" />
-          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="1HlG4h" id="5SGsxw7L3_K" role="3EZMnx">
           <node concept="1HfYo3" id="5SGsxw7L3_M" role="1HlULh">
@@ -748,7 +748,7 @@
               <node concept="3clFbS" id="5SGsxw7L3_Q" role="2VODD2">
                 <node concept="3clFbF" id="5SGsxw7L3IB" role="3cqZAp">
                   <node concept="2YIFZM" id="5SGsxw7L5nu" role="3clFbG">
-                    <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                    <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                     <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                     <node concept="2OqwBi" id="5SGsxw7L3Wn" role="37wK5m">
                       <node concept="pncrf" id="5SGsxw7L3IA" role="2Oq$k0" />
@@ -764,7 +764,7 @@
           <node concept="3EZMnI" id="5SGsxw7L6Gg" role="_tjki">
             <node concept="3F0ifn" id="5SGsxw7L6Gi" role="3EZMnx">
               <property role="3F0ifm" value="if" />
-              <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+              <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
             </node>
             <node concept="3F1sOY" id="5SGsxw7L6Gy" role="3EZMnx">
               <ref role="1NtTu8" to="y6ji:5SGsxw7L3_o" resolve="guard" />
@@ -808,7 +808,7 @@
         <node concept="VPM3Z" id="5SGsxw7L81o" role="3F10Kt" />
         <node concept="3F0ifn" id="5SGsxw7L81_" role="3EZMnx">
           <property role="3F0ifm" value="nondet_choice" />
-          <ref role="1k5W1q" to="3fe0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0ifn" id="5SGsxw7L81I" role="3EZMnx">
           <property role="3F0ifm" value="{" />

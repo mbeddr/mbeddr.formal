@@ -395,11 +395,11 @@
               <node concept="2OqwBi" id="3ZkhnXRnVlV" role="2Oq$k0">
                 <node concept="2DD5aU" id="3ZkhnXRnVlW" role="2Oq$k0" />
                 <node concept="liA8E" id="3ZkhnXRnVlX" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage():org.jetbrains.mps.openapi.language.SLanguage" resolve="getLanguage" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage()" resolve="getLanguage" />
                 </node>
               </node>
               <node concept="liA8E" id="3ZkhnXRnVlY" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName()" resolve="getQualifiedName" />
               </node>
             </node>
           </node>
@@ -417,7 +417,7 @@
               <ref role="3cqZAo" node="3ZkhnXRnVlT" resolve="qualifiedConceptName" />
             </node>
             <node concept="liA8E" id="3ZkhnXRnNEr" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="3ZkhnXRnNV4" role="37wK5m">
                 <property role="Xl_RC" value="de.itemis.mps.editor.diagram.layout" />
               </node>
@@ -437,7 +437,7 @@
               <ref role="3cqZAo" node="3ZkhnXRnVlT" resolve="qualifiedConceptName" />
             </node>
             <node concept="liA8E" id="4RNGGOMRcKG" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="4RNGGOMRcKH" role="37wK5m">
                 <property role="Xl_RC" value="jetbrains.mps.lang.test" />
               </node>

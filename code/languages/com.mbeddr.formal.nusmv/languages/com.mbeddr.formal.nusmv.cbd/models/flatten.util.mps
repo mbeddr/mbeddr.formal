@@ -1870,7 +1870,7 @@
                 </node>
                 <node concept="3clFbF" id="1NcemxVIfTk" role="3cqZAp">
                   <node concept="2YIFZM" id="1NcemxVIgrF" role="3clFbG">
-                    <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+                    <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="fillOriginalNode" />
                     <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
                     <node concept="2OqwBi" id="1NcemxVIgA7" role="37wK5m">
                       <node concept="2GrUjf" id="1NcemxVIguC" role="2Oq$k0">
@@ -2343,7 +2343,7 @@
             </node>
             <node concept="3clFbF" id="1NcemxVImaQ" role="3cqZAp">
               <node concept="2YIFZM" id="1NcemxVImaR" role="3clFbG">
-                <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):void" resolve="fillOriginalNode" />
+                <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="fillOriginalNode" />
                 <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
                 <node concept="2OqwBi" id="1NcemxVImaS" role="37wK5m">
                   <node concept="2GrUjf" id="1NcemxVIm$b" role="2Oq$k0">

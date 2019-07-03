@@ -319,7 +319,7 @@
                 <ref role="3cqZAo" node="1vcsY83clvi" resolve="project" />
               </node>
               <node concept="liA8E" id="1ZejHLm0W9O" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -340,7 +340,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="6_AAcCLCVrU" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
+                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
                 <node concept="37vLTw" id="1ZejHLm0W9T" role="37wK5m">
                   <ref role="3cqZAo" node="1ZejHLm0W9K" resolve="repo" />
                 </node>
@@ -384,7 +384,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="59AZjhg27Fl" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                 <node concept="37vLTw" id="59AZjhg27Fm" role="37wK5m">
                                   <ref role="3cqZAo" node="59AZjhg27Gr" resolve="sourceName" />
                                 </node>
@@ -452,7 +452,7 @@
                   <ref role="3cqZAo" node="59AZjhg27FJ" resolve="an" />
                 </node>
                 <node concept="liA8E" id="59AZjhg27G2" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute():void" resolve="execute" />
+                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute()" resolve="execute" />
                 </node>
               </node>
             </node>
@@ -463,7 +463,7 @@
                     <ref role="3cqZAo" node="59AZjhg27FJ" resolve="an" />
                   </node>
                   <node concept="liA8E" id="59AZjhg27G7" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit):java.lang.Object" resolve="get" />
+                    <ref role="37wK5l" to="dxuu:~SwingWorker.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
                     <node concept="3cmrfG" id="59AZjhg27G8" role="37wK5m">
                       <property role="3cmrfH" value="30" />
                     </node>
@@ -492,7 +492,7 @@
                     <ref role="3cqZAo" node="59AZjhg27Gl" resolve="e" />
                   </node>
                   <node concept="liA8E" id="59AZjhg27Gk" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>

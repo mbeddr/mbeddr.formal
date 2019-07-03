@@ -165,7 +165,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="6cjunGyDMQK" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="37vLTw" id="6cjunGyDMQL" role="37wK5m">
                             <ref role="3cqZAo" node="6cjunGyDEyd" resolve="scriptName" />
                           </node>
@@ -237,7 +237,7 @@
               <ref role="3cqZAo" node="6cjunGyE7ZA" resolve="m" />
             </node>
             <node concept="liA8E" id="6cjunGyEbIY" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Model.getConstDecls():com.microsoft.z3.FuncDecl[]" resolve="getConstDecls" />
+              <ref role="37wK5l" to="f7eu:~Model.getConstDecls()" resolve="getConstDecls" />
             </node>
           </node>
           <node concept="3clFbS" id="6cjunGyEb4d" role="2LFqv$">
@@ -253,15 +253,15 @@
                         <ref role="2Gs0qQ" node="6cjunGyEb49" resolve="cd" />
                       </node>
                       <node concept="liA8E" id="6cjunGyEdgD" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~FuncDecl.getName():com.microsoft.z3.Symbol" resolve="getName" />
+                        <ref role="37wK5l" to="f7eu:~FuncDecl.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="6cjunGyEevq" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Symbol.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="f7eu:~Symbol.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6cjunGyEgL_" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="37vLTw" id="6cjunGyEgYh" role="37wK5m">
                       <ref role="3cqZAo" node="6cjunGyE7FU" resolve="varName" />
                     </node>
@@ -276,14 +276,14 @@
                     <ref role="3cqZAo" node="6cjunGyE7ZA" resolve="m" />
                   </node>
                   <node concept="liA8E" id="6cjunGyEhrW" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl):com.microsoft.z3.Expr" resolve="getConstInterp" />
+                    <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl)" resolve="getConstInterp" />
                     <node concept="2GrUjf" id="6cjunGyEhrX" role="37wK5m">
                       <ref role="2Gs0qQ" node="6cjunGyEb49" resolve="cd" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="6cjunGyEizs" role="2OqNvi">
-                  <ref role="37wK5l" to="f7eu:~Expr.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="f7eu:~Expr.toString()" resolve="toString" />
                 </node>
               </node>
             </node>
@@ -298,7 +298,7 @@
               <ref role="3cqZAo" node="6cjunGyE7ZA" resolve="m" />
             </node>
             <node concept="liA8E" id="6cjunGyEiTh" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Model.getFuncDecls():com.microsoft.z3.FuncDecl[]" resolve="getFuncDecls" />
+              <ref role="37wK5l" to="f7eu:~Model.getFuncDecls()" resolve="getFuncDecls" />
             </node>
           </node>
           <node concept="3clFbS" id="6cjunGyEiTi" role="2LFqv$">
@@ -314,15 +314,15 @@
                         <ref role="2Gs0qQ" node="6cjunGyEiTe" resolve="fd" />
                       </node>
                       <node concept="liA8E" id="6cjunGyEiTr" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~FuncDecl.getName():com.microsoft.z3.Symbol" resolve="getName" />
+                        <ref role="37wK5l" to="f7eu:~FuncDecl.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="6cjunGyEiTs" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Symbol.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="f7eu:~Symbol.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6cjunGyEiTt" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="37vLTw" id="6cjunGyEiTu" role="37wK5m">
                       <ref role="3cqZAo" node="6cjunGyE7FU" resolve="varName" />
                     </node>
@@ -337,14 +337,14 @@
                     <ref role="3cqZAo" node="6cjunGyE7ZA" resolve="m" />
                   </node>
                   <node concept="liA8E" id="6cjunGyEiTz" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Model.getFuncInterp(com.microsoft.z3.FuncDecl):com.microsoft.z3.FuncInterp" resolve="getFuncInterp" />
+                    <ref role="37wK5l" to="f7eu:~Model.getFuncInterp(com.microsoft.z3.FuncDecl)" resolve="getFuncInterp" />
                     <node concept="2GrUjf" id="6cjunGyEiT$" role="37wK5m">
                       <ref role="2Gs0qQ" node="6cjunGyEiTe" resolve="fd" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="6cjunGyEiT_" role="2OqNvi">
-                  <ref role="37wK5l" to="f7eu:~FuncInterp.toString():java.lang.String" resolve="toString" />
+                  <ref role="37wK5l" to="f7eu:~FuncInterp.toString()" resolve="toString" />
                 </node>
               </node>
             </node>

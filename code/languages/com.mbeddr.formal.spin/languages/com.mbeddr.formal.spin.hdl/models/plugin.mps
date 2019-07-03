@@ -410,7 +410,7 @@
                         <ref role="3cqZAo" node="26dfgZlWPVP" resolve="dir" />
                       </node>
                       <node concept="liA8E" id="26dfgZlWSuF" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                        <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                       </node>
                     </node>
                   </node>
@@ -555,7 +555,7 @@
                         <ref role="3cqZAo" node="26dfgZlXlfS" resolve="promelaFile" />
                       </node>
                       <node concept="liA8E" id="4_pH3zvsmHe" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                       </node>
                     </node>
                   </node>
@@ -584,11 +584,11 @@
                           <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                         </node>
                         <node concept="liA8E" id="5y2MdLwNg6w" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~File.getParentFile():java.io.File" resolve="getParentFile" />
+                          <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
                         </node>
                       </node>
                       <node concept="liA8E" id="5y2MdLwNg6x" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                        <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
                       </node>
                     </node>
                   </node>
@@ -600,11 +600,11 @@
                             <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                           </node>
                           <node concept="liA8E" id="5y2MdLwNkbe" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~File.getParentFile():java.io.File" resolve="getParentFile" />
+                            <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
                           </node>
                         </node>
                         <node concept="liA8E" id="5y2MdLwNtmz" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+                          <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
                         </node>
                       </node>
                     </node>
@@ -622,7 +622,7 @@
                                 <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                               </node>
                               <node concept="liA8E" id="5y2MdLwJHR9" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.lastModified():long" resolve="lastModified" />
+                                <ref role="37wK5l" to="guwi:~File.lastModified()" resolve="lastModified" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5y2MdLwJSeb" role="3uHU7w">
@@ -630,7 +630,7 @@
                                 <ref role="3cqZAo" node="26dfgZlXlfS" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="5y2MdLwJT_y" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.lastModified():long" resolve="lastModified" />
+                                <ref role="37wK5l" to="guwi:~File.lastModified()" resolve="lastModified" />
                               </node>
                             </node>
                           </node>
@@ -674,7 +674,7 @@
                                 <ref role="3cqZAo" node="26dfgZlXlfS" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="26dfgZm0K0D" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -694,7 +694,7 @@
                                 <ref role="3cqZAo" node="26dfgZlXlfS" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="26dfgZm0K0K" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -837,7 +837,7 @@
                                 <ref role="3cqZAo" node="26dfgZlXlfS" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="26dfgZm0K0W" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -891,7 +891,7 @@
                                 <ref role="3cqZAo" node="5y2MdLwH6pN" resolve="verifierFile" />
                               </node>
                               <node concept="liA8E" id="5y2MdLwLlIz" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                                <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="1Ia_hLZs_6M" role="HW$Y0">
@@ -927,7 +927,7 @@
                       <property role="1daRAr" value="INFO" />
                       <node concept="2YIFZM" id="26dfgZm3uEw" role="1daK9t">
                         <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                        <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                        <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
                         <node concept="37vLTw" id="26dfgZm3uJI" role="37wK5m">
                           <ref role="3cqZAo" node="1Ia_hLZqDZK" resolve="compilerCmd" />
                         </node>
@@ -1066,7 +1066,7 @@
                                 <ref role="3cqZAo" node="26dfgZlXlfS" resolve="promelaFile" />
                               </node>
                               <node concept="liA8E" id="1Ia_hLZpHpX" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                                <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                               </node>
                             </node>
                           </node>
@@ -1096,7 +1096,7 @@
                               <ref role="3cqZAo" node="26dfgZlYoIN" resolve="e" />
                             </node>
                             <node concept="liA8E" id="26dfgZlYqRg" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                              <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="26dfgZlYpVh" role="3uHU7B">
@@ -1110,7 +1110,7 @@
                             <ref role="3cqZAo" node="26dfgZlYoIN" resolve="e" />
                           </node>
                           <node concept="liA8E" id="26dfgZlYpF5" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                           </node>
                         </node>
                       </node>
@@ -1460,7 +1460,7 @@
                             </node>
                           </node>
                           <node concept="2YIFZM" id="6kOHW5frVmV" role="33vP2m">
-                            <ref role="37wK5l" to="8oaq:~FileUtils.listFiles(java.io.File,java.lang.String[],boolean):java.util.Collection" resolve="listFiles" />
+                            <ref role="37wK5l" to="8oaq:~FileUtils.listFiles(java.io.File,java.lang.String[],boolean)" resolve="listFiles" />
                             <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
                             <node concept="37vLTw" id="6kOHW5frVmW" role="37wK5m">
                               <ref role="3cqZAo" node="6kOHW5frMMo" resolve="includedDir" />
@@ -1507,7 +1507,7 @@
                           <ref role="3cqZAo" node="6kOHW5frCue" resolve="binaryVerifier" />
                         </node>
                         <node concept="liA8E" id="6kOHW5ftKVl" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~File.lastModified():long" resolve="lastModified" />
+                          <ref role="37wK5l" to="guwi:~File.lastModified()" resolve="lastModified" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="6kOHW5ftKVm" role="3uHU7B">
@@ -1515,7 +1515,7 @@
                           <ref role="3cqZAo" node="6kOHW5ftKQj" resolve="it" />
                         </node>
                         <node concept="liA8E" id="6kOHW5ftKVo" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~File.lastModified():long" resolve="lastModified" />
+                          <ref role="37wK5l" to="guwi:~File.lastModified()" resolve="lastModified" />
                         </node>
                       </node>
                     </node>

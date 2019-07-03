@@ -342,7 +342,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7VkE0BpuIQJ" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
           </node>
@@ -361,7 +361,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5wKAmZ3RNiC" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.setExecutable(boolean):boolean" resolve="setExecutable" />
+                  <ref role="37wK5l" to="guwi:~File.setExecutable(boolean)" resolve="setExecutable" />
                   <node concept="3clFbT" id="5wKAmZ3RNy0" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -605,7 +605,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5wKAmZ3RNOF" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.setExecutable(boolean):boolean" resolve="setExecutable" />
+                  <ref role="37wK5l" to="guwi:~File.setExecutable(boolean)" resolve="setExecutable" />
                   <node concept="3clFbT" id="5wKAmZ3RNOG" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>

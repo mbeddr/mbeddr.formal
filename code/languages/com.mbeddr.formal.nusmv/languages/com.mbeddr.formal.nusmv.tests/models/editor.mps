@@ -528,11 +528,11 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="3UuTDIOJfRS" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="3UuTDIOJhVQ" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                                  <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                                 </node>
                               </node>
                               <node concept="3cpWs3" id="3UuTDIOJcBB" role="3uHU7B">
@@ -602,11 +602,11 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="3UuTDIOJlIn" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                            <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                           </node>
                         </node>
                         <node concept="liA8E" id="3UuTDIOJlIo" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
                         </node>
                       </node>
                     </node>
@@ -650,7 +650,7 @@
                   <node concept="3clFbF" id="6PRHFscNrxv" role="3cqZAp">
                     <node concept="2YIFZM" id="6PRHFscNrxw" role="3clFbG">
                       <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                      <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                       <node concept="3cpWs3" id="6adXBxxTPuB" role="37wK5m">
                         <node concept="3cmrfG" id="6adXBxxTPEb" role="3uHU7w">
                           <property role="3cmrfH" value="1" />

@@ -133,7 +133,7 @@
                 <node concept="2OqwBi" id="6kOHW5f_N7I" role="Vysub">
                   <node concept="1jxXqW" id="6kOHW5f_N7J" role="2Oq$k0" />
                   <node concept="liA8E" id="6kOHW5f_N7K" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
               </node>

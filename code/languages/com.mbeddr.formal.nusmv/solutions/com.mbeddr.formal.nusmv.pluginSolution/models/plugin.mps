@@ -389,7 +389,7 @@
             </node>
             <node concept="2YIFZM" id="5KBiyqyvp0b" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2OqwBi" id="7mSH3Wn3TNl" role="37wK5m">
                 <node concept="2WthIp" id="7mSH3Wn3TuA" role="2Oq$k0" />
                 <node concept="1DTwFV" id="7mSH3Wn3UsE" role="2OqNvi">
@@ -476,7 +476,7 @@
                 <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
               </node>
               <node concept="liA8E" id="7mSH3WncNkj" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -917,7 +917,7 @@
             <node concept="3clFbF" id="7mSH3Wn4rjS" role="3cqZAp">
               <node concept="2OqwBi" id="7mSH3Wn4rvV" role="3clFbG">
                 <node concept="liA8E" id="7mSH3Wn4rJc" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="7mSH3Wn4rRG" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -991,7 +991,7 @@
             <node concept="3clFbF" id="1ZsZb$iUE34" role="3cqZAp">
               <node concept="2OqwBi" id="1ZsZb$iUEmc" role="3clFbG">
                 <node concept="liA8E" id="1ZsZb$iUERZ" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean):void" resolve="openToolLater" />
+                  <ref role="37wK5l" to="71xd:~BaseTool.openToolLater(boolean)" resolve="openToolLater" />
                   <node concept="3clFbT" id="1ZsZb$iUF4l" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>
@@ -1010,7 +1010,7 @@
           <node concept="3fqX7Q" id="7mSH3Wn4t3J" role="3clFbw">
             <node concept="2OqwBi" id="7mSH3Wn4tlb" role="3fr31v">
               <node concept="liA8E" id="7mSH3Wn4tJO" role="2OqNvi">
-                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened():boolean" resolve="toolIsOpened" />
+                <ref role="37wK5l" to="71xd:~BaseTool.toolIsOpened()" resolve="toolIsOpened" />
               </node>
               <node concept="2OqwBi" id="7ODrlMnMn0N" role="2Oq$k0">
                 <node concept="37vLTw" id="7ODrlMnMn0O" role="2Oq$k0">
@@ -1146,7 +1146,7 @@
               <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="2YIFZM" id="1ZsZb$iM_jr" role="33vP2m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="2OqwBi" id="1ZsZb$iM_js" role="37wK5m">
                 <node concept="2WthIp" id="1ZsZb$iM_jt" role="2Oq$k0" />
@@ -1213,7 +1213,7 @@
                 <ref role="3cqZAo" node="1ZsZb$iM_jp" resolve="mpsProject" />
               </node>
               <node concept="liA8E" id="1ZsZb$iM_jR" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -1461,7 +1461,7 @@
             </node>
             <node concept="2YIFZM" id="6mm$FLZ2PnL" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2OqwBi" id="6mm$FLZ2PnM" role="37wK5m">
                 <node concept="2WthIp" id="6mm$FLZ2PnN" role="2Oq$k0" />
                 <node concept="1DTwFV" id="6mm$FLZ2PnO" role="2OqNvi">
@@ -1527,7 +1527,7 @@
                 <ref role="3cqZAo" node="6mm$FLZ2PnJ" resolve="mpsProject" />
               </node>
               <node concept="liA8E" id="6mm$FLZ2Pod" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -1641,7 +1641,7 @@
             </node>
             <node concept="2YIFZM" id="2xeYpNCdzDl" role="33vP2m">
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2OqwBi" id="2xeYpNCdzDm" role="37wK5m">
                 <node concept="2WthIp" id="2xeYpNCdzDn" role="2Oq$k0" />
                 <node concept="1DTwFV" id="2xeYpNCdzDo" role="2OqNvi">
@@ -1704,7 +1704,7 @@
                 <ref role="3cqZAo" node="2xeYpNCdzDj" resolve="mpsProject" />
               </node>
               <node concept="liA8E" id="2xeYpNCdzDL" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -1834,7 +1834,7 @@
               <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="2YIFZM" id="2xeYpNCfAJD" role="33vP2m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="2OqwBi" id="2xeYpNCfAJE" role="37wK5m">
                 <node concept="2WthIp" id="2xeYpNCfAJF" role="2Oq$k0" />
@@ -1901,7 +1901,7 @@
                 <ref role="3cqZAo" node="2xeYpNCfAJB" resolve="mpsProject" />
               </node>
               <node concept="liA8E" id="2xeYpNCfAK5" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -2191,7 +2191,7 @@
               <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
             </node>
             <node concept="2YIFZM" id="6glUKoNPNN6" role="33vP2m">
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project):jetbrains.mps.project.MPSProject" resolve="fromIdeaProject" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
               <node concept="2OqwBi" id="6glUKoNPNN7" role="37wK5m">
                 <node concept="2WthIp" id="6glUKoNPNN8" role="2Oq$k0" />
@@ -2279,7 +2279,7 @@
                 <ref role="3cqZAo" node="6glUKoNPNN4" resolve="mpsProject" />
               </node>
               <node concept="liA8E" id="6glUKoNPNNy" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>

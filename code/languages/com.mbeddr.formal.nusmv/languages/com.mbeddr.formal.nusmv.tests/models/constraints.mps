@@ -124,7 +124,7 @@
             <node concept="2OqwBi" id="4IuDkoKJ1tu" role="3uHU7w">
               <node concept="2DA6wF" id="4IuDkoKJ15A" role="2Oq$k0" />
               <node concept="liA8E" id="4IuDkoKJ1L1" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                 <node concept="359W_D" id="4IuDkoKJ1SL" role="37wK5m">
                   <ref role="359W_E" to="fnq2:43FRfGJUFO5" resolve="TestStep" />
                   <ref role="359W_F" to="fnq2:43FRfGJUFO6" resolve="inputs" />
@@ -152,7 +152,7 @@
                 <node concept="2DD5aU" id="7omKp2QTOeL" role="2Oq$k0" />
                 <node concept="2Zo12i" id="7omKp2QTOeM" role="2OqNvi">
                   <node concept="chp4Y" id="7omKp2QTOeN" role="2Zo12j">
-                    <ref role="cht4Q" to="ehqg:7omKp2QTCdQ" resolve="IStaticallyEvaluatableStrong" />
+                    <ref role="cht4Q" to="ehqg:7omKp2QTCdQ" resolve="IConstantLike" />
                   </node>
                 </node>
               </node>
@@ -202,7 +202,7 @@
             <node concept="2OqwBi" id="7Z6$Wo5Uqkh" role="3uHU7w">
               <node concept="2DA6wF" id="7Z6$Wo5Uqki" role="2Oq$k0" />
               <node concept="liA8E" id="7Z6$Wo5Uqkj" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                 <node concept="359W_D" id="7Z6$Wo5Uqkk" role="37wK5m">
                   <ref role="359W_E" to="fnq2:43FRfGJUFO5" resolve="TestStep" />
                   <ref role="359W_F" to="fnq2:43FRfGJUFOb" resolve="expectedValues" />

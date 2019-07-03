@@ -111,7 +111,7 @@
               <node concept="3clFbF" id="3LhOsKAEnCN" role="3cqZAp">
                 <node concept="2YIFZM" id="3LhOsKAEnCO" role="3clFbG">
                   <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                   <node concept="Xl_RD" id="3LhOsKAEnCP" role="37wK5m">
                     <property role="Xl_RC" value="%02d" />
                   </node>

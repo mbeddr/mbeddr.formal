@@ -428,11 +428,11 @@
                       <node concept="2OqwBi" id="4CtTexwCnN0" role="2Oq$k0">
                         <node concept="Xjq3P" id="4CtTexwCmF_" role="2Oq$k0" />
                         <node concept="liA8E" id="4CtTexwCo_O" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                         </node>
                       </node>
                       <node concept="liA8E" id="3GkK2EES8rS" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName():java.lang.String" resolve="getSimpleName" />
+                        <ref role="37wK5l" to="wyt6:~Class.getSimpleName()" resolve="getSimpleName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="3GkK2EERZtf" role="3uHU7B">
@@ -449,7 +449,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="2Ra3lN_4Bot" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="3cpWs3" id="2Ra3lN_4Box" role="37wK5m">
                     <node concept="37vLTw" id="2Ra3lN_4Boy" role="3uHU7w">
                       <ref role="3cqZAo" node="2Ra3lN_4BoC" resolve="s" />
@@ -618,13 +618,13 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5uqRFp8YLDg" role="2OqNvi">
-                  <ref role="37wK5l" to="mk90:~ProgressMonitorBase.advance(int):void" resolve="advance" />
+                  <ref role="37wK5l" to="mk90:~ProgressMonitorBase.advance(int)" resolve="advance" />
                   <node concept="2OqwBi" id="41thbhv7Z9G" role="37wK5m">
                     <node concept="37vLTw" id="41thbhv7YOV" role="2Oq$k0">
                       <ref role="3cqZAo" node="7F8$WoQFrst" resolve="chunks" />
                     </node>
                     <node concept="liA8E" id="41thbhv80GR" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                      <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                     </node>
                   </node>
                 </node>
@@ -645,7 +645,7 @@
                     <ref role="3cqZAo" node="4CtHBqMJ_pS" resolve="e" />
                   </node>
                   <node concept="liA8E" id="4CtHBqMJA4n" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -729,7 +729,7 @@
                   <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                 </node>
                 <node concept="liA8E" id="21F0XZSdxYX" role="2OqNvi">
-                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isRunning():boolean" resolve="isRunning" />
+                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isRunning()" resolve="isRunning" />
                 </node>
               </node>
               <node concept="Xl_RD" id="21F0XZSdxct" role="3uHU7B">
@@ -761,7 +761,7 @@
                   <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                 </node>
                 <node concept="liA8E" id="4GD8rS0FkX0" role="2OqNvi">
-                  <ref role="37wK5l" to="xygl:~ProgressIndicator.start():void" resolve="start" />
+                  <ref role="37wK5l" to="xygl:~ProgressIndicator.start()" resolve="start" />
                 </node>
               </node>
             </node>
@@ -773,7 +773,7 @@
                   <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                 </node>
                 <node concept="liA8E" id="4w$m_z_0Oem" role="2OqNvi">
-                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isCanceled():boolean" resolve="isCanceled" />
+                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isCanceled()" resolve="isCanceled" />
                 </node>
               </node>
             </node>
@@ -783,7 +783,7 @@
                   <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                 </node>
                 <node concept="liA8E" id="4GD8rS0FkLG" role="2OqNvi">
-                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isRunning():boolean" resolve="isRunning" />
+                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isRunning()" resolve="isRunning" />
                 </node>
               </node>
             </node>
@@ -811,7 +811,7 @@
                       <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                     </node>
                     <node concept="liA8E" id="5KUuPYAfgB3" role="2OqNvi">
-                      <ref role="37wK5l" to="xygl:~ProgressIndicator.stop():void" resolve="stop" />
+                      <ref role="37wK5l" to="xygl:~ProgressIndicator.stop()" resolve="stop" />
                     </node>
                   </node>
                 </node>
@@ -821,7 +821,7 @@
                   <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                 </node>
                 <node concept="liA8E" id="5KUuPYAfgqO" role="2OqNvi">
-                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isRunning():boolean" resolve="isRunning" />
+                  <ref role="37wK5l" to="xygl:~ProgressIndicator.isRunning()" resolve="isRunning" />
                 </node>
               </node>
             </node>
@@ -839,7 +839,7 @@
               <node concept="3clFbF" id="6fVeF5snC5p" role="3cqZAp">
                 <node concept="2OqwBi" id="6fVeF5snKdh" role="3clFbG">
                   <node concept="liA8E" id="6fVeF5snZTd" role="2OqNvi">
-                    <ref role="37wK5l" to="mk90:~ProgressMonitorBase.start(java.lang.String,int):void" resolve="start" />
+                    <ref role="37wK5l" to="mk90:~ProgressMonitorBase.start(java.lang.String,int)" resolve="start" />
                     <node concept="37vLTw" id="6fVeF5so6k8" role="37wK5m">
                       <ref role="3cqZAo" node="6fVeF5smqIv" resolve="msg" />
                     </node>
@@ -941,7 +941,7 @@
                           <node concept="3clFbF" id="3Ao_H4QZNEg" role="3cqZAp">
                             <node concept="2OqwBi" id="3Ao_H4QZNF6" role="3clFbG">
                               <node concept="liA8E" id="3Ao_H4QZNTA" role="2OqNvi">
-                                <ref role="37wK5l" to="mk90:~ProgressMonitorBase.done():void" resolve="done" />
+                                <ref role="37wK5l" to="mk90:~ProgressMonitorBase.done()" resolve="done" />
                               </node>
                               <node concept="2YIFZM" id="5uqRFp8YMCG" role="2Oq$k0">
                                 <ref role="1Pybhc" node="505H3_WY3P0" resolve="AnalyzerMPSRunner" />
@@ -960,7 +960,7 @@
                                     <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                                   </node>
                                   <node concept="liA8E" id="2UdJgvCLINr" role="2OqNvi">
-                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop():void" resolve="stop" />
+                                    <ref role="37wK5l" to="xygl:~ProgressIndicator.stop()" resolve="stop" />
                                   </node>
                                 </node>
                               </node>
@@ -970,7 +970,7 @@
                                 <ref role="3cqZAo" node="7F8$WoW31Ww" resolve="pi" />
                               </node>
                               <node concept="liA8E" id="3gM8ConltQ4" role="2OqNvi">
-                                <ref role="37wK5l" to="xygl:~ProgressIndicator.isShowing():boolean" resolve="isShowing" />
+                                <ref role="37wK5l" to="xygl:~ProgressIndicator.isShowing()" resolve="isShowing" />
                               </node>
                             </node>
                           </node>
@@ -982,7 +982,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6PQie$CQ87e" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Thread.start():void" resolve="start" />
+              <ref role="37wK5l" to="wyt6:~Thread.start()" resolve="start" />
             </node>
           </node>
         </node>
@@ -1213,11 +1213,11 @@
         <node concept="3clFbF" id="505H3_WY3P6" role="3cqZAp">
           <node concept="2OqwBi" id="505H3_WY3P7" role="3clFbG">
             <node concept="2YIFZM" id="505H3_WY3P8" role="2Oq$k0">
-              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
             </node>
             <node concept="liA8E" id="505H3_WY3P9" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
               <node concept="2ShNRf" id="505H3_WY3Pa" role="37wK5m">
                 <node concept="YeOm9" id="505H3_WY3Pb" role="2ShVmc">
                   <node concept="1Y3b0j" id="505H3_WY3Pc" role="YeSDq">
@@ -1253,7 +1253,7 @@
                                     <ref role="3cqZAo" node="505H3_WY3Q8" resolve="make" />
                                   </node>
                                   <node concept="liA8E" id="5pNvrID2$HK" role="2OqNvi">
-                                    <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                                    <ref role="37wK5l" to="5zyv:~Future.get()" resolve="get" />
                                   </node>
                                 </node>
                               </node>
@@ -1288,7 +1288,7 @@
                                       <ref role="3cqZAo" node="1Qk2BLgCE8m" resolve="latch" />
                                     </node>
                                     <node concept="liA8E" id="1Qk2BLgCLFO" role="2OqNvi">
-                                      <ref role="37wK5l" to="5zyv:~CountDownLatch.countDown():void" resolve="countDown" />
+                                      <ref role="37wK5l" to="5zyv:~CountDownLatch.countDown()" resolve="countDown" />
                                     </node>
                                   </node>
                                 </node>
@@ -1328,7 +1328,7 @@
                                     <ref role="3cqZAo" node="505H3_WY3PQ" resolve="e" />
                                   </node>
                                   <node concept="liA8E" id="505H3_WY3PW" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                                   </node>
                                 </node>
                               </node>
@@ -1351,7 +1351,7 @@
                                   <ref role="3cqZAo" node="1Qk2BLgCE8m" resolve="latch" />
                                 </node>
                                 <node concept="liA8E" id="7zHn0fLIAbO" role="2OqNvi">
-                                  <ref role="37wK5l" to="5zyv:~CountDownLatch.countDown():void" resolve="countDown" />
+                                  <ref role="37wK5l" to="5zyv:~CountDownLatch.countDown()" resolve="countDown" />
                                 </node>
                               </node>
                             </node>
@@ -1365,7 +1365,7 @@
                         <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
                       </node>
                       <node concept="liA8E" id="2YRLzYFGh8S" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c4:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                        <ref role="37wK5l" to="z1c4:~MPSProject.getProject()" resolve="getProject" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="505H3_WY3Q2" role="37wK5m">
@@ -1384,11 +1384,11 @@
         <node concept="3clFbF" id="1PA$4Yzx9HP" role="3cqZAp">
           <node concept="2OqwBi" id="1PA$4Yzx9HQ" role="3clFbG">
             <node concept="2YIFZM" id="1PA$4Yzx9HR" role="2Oq$k0">
-              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance():com.intellij.openapi.progress.ProgressManager" resolve="getInstance" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
             </node>
             <node concept="liA8E" id="1PA$4Yzx9HS" role="2OqNvi">
-              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
+              <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
               <node concept="2ShNRf" id="1PA$4Yzx9HT" role="37wK5m">
                 <node concept="YeOm9" id="1PA$4Yzx9HU" role="2ShVmc">
                   <node concept="1Y3b0j" id="1PA$4Yzx9HV" role="YeSDq">
@@ -1419,7 +1419,7 @@
                                   <ref role="3cqZAo" node="1Qk2BLgCE8m" resolve="latch" />
                                 </node>
                                 <node concept="liA8E" id="1Qk2BLgCMCf" role="2OqNvi">
-                                  <ref role="37wK5l" to="5zyv:~CountDownLatch.await():void" resolve="await" />
+                                  <ref role="37wK5l" to="5zyv:~CountDownLatch.await()" resolve="await" />
                                 </node>
                               </node>
                             </node>
@@ -1456,7 +1456,7 @@
                                   <ref role="3cqZAo" node="1PA$4Yzx9In" resolve="analyzer" />
                                 </node>
                                 <node concept="liA8E" id="1PA$4Yzx9Iw" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute():void" resolve="execute" />
+                                  <ref role="37wK5l" to="dxuu:~SwingWorker.execute()" resolve="execute" />
                                 </node>
                               </node>
                             </node>
@@ -1466,7 +1466,7 @@
                                   <ref role="3cqZAo" node="1PA$4Yzx9In" resolve="analyzer" />
                                 </node>
                                 <node concept="liA8E" id="1PA$4Yzx9I$" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~SwingWorker.get():java.lang.Object" resolve="get" />
+                                  <ref role="37wK5l" to="dxuu:~SwingWorker.get()" resolve="get" />
                                 </node>
                               </node>
                             </node>
@@ -1485,7 +1485,7 @@
                                     <ref role="3cqZAo" node="1PA$4Yzx9IO" resolve="e" />
                                   </node>
                                   <node concept="liA8E" id="1PA$4Yzx9IU" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                                   </node>
                                 </node>
                               </node>
@@ -1500,7 +1500,7 @@
                         <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
                       </node>
                       <node concept="liA8E" id="2YRLzYFGhLo" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c4:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                        <ref role="37wK5l" to="z1c4:~MPSProject.getProject()" resolve="getProject" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1PA$4Yzx9IY" role="37wK5m">
@@ -1817,7 +1817,7 @@
                     <ref role="3cqZAo" node="57eVTvnGhlr" resolve="e" />
                   </node>
                   <node concept="liA8E" id="57eVTvnGia2" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -1954,7 +1954,7 @@
           <node concept="37vLTI" id="7iCG_8W_0gj" role="3clFbG">
             <node concept="2YIFZM" id="7iCG_8W_0o_" role="37vLTx">
               <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
-              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int):java.util.concurrent.ExecutorService" resolve="newFixedThreadPool" />
+              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int)" resolve="newFixedThreadPool" />
               <node concept="37vLTw" id="7iCG_8W_0Xp" role="37wK5m">
                 <ref role="3cqZAo" node="7iCG_8W_0Cy" resolve="numberOfThreads" />
               </node>
@@ -1988,7 +1988,7 @@
                 <ref role="3cqZAo" node="7iCG_8W$R$X" resolve="analysesExecutor" />
               </node>
               <node concept="liA8E" id="7MMcIPlo6At" role="2OqNvi">
-                <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.lang.Runnable):java.util.concurrent.Future" resolve="submit" />
+                <ref role="37wK5l" to="5zyv:~ExecutorService.submit(java.lang.Runnable)" resolve="submit" />
                 <node concept="37vLTw" id="7MMcIPlo6Au" role="37wK5m">
                   <ref role="3cqZAo" node="7iCG_8WDYnS" resolve="job" />
                 </node>
@@ -2011,7 +2011,7 @@
                       <ref role="3cqZAo" node="7MMcIPlo6Aq" resolve="jobFuture" />
                     </node>
                     <node concept="liA8E" id="6UnenVLWMVC" role="2OqNvi">
-                      <ref role="37wK5l" to="5zyv:~Future.get():java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="5zyv:~Future.get()" resolve="get" />
                     </node>
                   </node>
                 </node>
@@ -2024,7 +2024,7 @@
                         <ref role="3cqZAo" node="7MMcIPlo7R4" resolve="e" />
                       </node>
                       <node concept="liA8E" id="7MMcIPlo8Dy" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                       </node>
                     </node>
                   </node>
@@ -2083,7 +2083,7 @@
                   <ref role="3cqZAo" node="7iCG_8W$R$X" resolve="analysesExecutor" />
                 </node>
                 <node concept="liA8E" id="1ubgnfDfPzy" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~ExecutorService.shutdown():void" resolve="shutdown" />
+                  <ref role="37wK5l" to="5zyv:~ExecutorService.shutdown()" resolve="shutdown" />
                 </node>
               </node>
             </node>
@@ -2093,7 +2093,7 @@
                   <ref role="3cqZAo" node="7iCG_8W$R$X" resolve="analysesExecutor" />
                 </node>
                 <node concept="liA8E" id="7iCG_8XdQy0" role="2OqNvi">
-                  <ref role="37wK5l" to="5zyv:~ExecutorService.awaitTermination(long,java.util.concurrent.TimeUnit):boolean" resolve="awaitTermination" />
+                  <ref role="37wK5l" to="5zyv:~ExecutorService.awaitTermination(long,java.util.concurrent.TimeUnit)" resolve="awaitTermination" />
                   <node concept="37vLTw" id="7iCG_8XdQGx" role="37wK5m">
                     <ref role="3cqZAo" node="7iCG_8XdPj_" resolve="millis" />
                   </node>
@@ -2119,7 +2119,7 @@
                     <ref role="3cqZAo" node="7iCG_8XdRhO" resolve="ie" />
                   </node>
                   <node concept="liA8E" id="7iCG_8XdSTg" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -2133,7 +2133,7 @@
                 </node>
                 <node concept="2YIFZM" id="1ubgnfDfY$d" role="37vLTx">
                   <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
-                  <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int):java.util.concurrent.ExecutorService" resolve="newFixedThreadPool" />
+                  <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int)" resolve="newFixedThreadPool" />
                   <node concept="37vLTw" id="1ubgnfDfY$e" role="37wK5m">
                     <ref role="3cqZAo" node="7iCG_8W_0Cy" resolve="numberOfThreads" />
                   </node>
@@ -2170,7 +2170,7 @@
               <ref role="3cqZAo" node="7iCG_8W$R$X" resolve="analysesExecutor" />
             </node>
             <node concept="2YIFZM" id="6mJYm3jKr4A" role="37vLTx">
-              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int):java.util.concurrent.ExecutorService" resolve="newFixedThreadPool" />
+              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int)" resolve="newFixedThreadPool" />
               <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
               <node concept="37vLTw" id="6mJYm3jKr4B" role="37wK5m">
                 <ref role="3cqZAo" node="7iCG_8W_0Cy" resolve="numberOfThreads" />
@@ -2212,7 +2212,7 @@
               <ref role="3cqZAo" node="7iCG_8W$R$X" resolve="analysesExecutor" />
             </node>
             <node concept="2YIFZM" id="6mJYm3jKstq" role="37vLTx">
-              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int):java.util.concurrent.ExecutorService" resolve="newFixedThreadPool" />
+              <ref role="37wK5l" to="5zyv:~Executors.newFixedThreadPool(int)" resolve="newFixedThreadPool" />
               <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
               <node concept="37vLTw" id="6mJYm3jKstr" role="37wK5m">
                 <ref role="3cqZAo" node="7iCG_8W_0Cy" resolve="numberOfThreads" />

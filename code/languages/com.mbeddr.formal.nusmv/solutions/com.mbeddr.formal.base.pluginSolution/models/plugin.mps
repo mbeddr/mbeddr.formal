@@ -154,10 +154,10 @@
               <ref role="3cqZAo" node="6bK0Ak3Catu" resolve="instance" />
             </node>
             <node concept="liA8E" id="6bK0Ak3Cayf" role="2OqNvi">
-              <ref role="37wK5l" to="8fb:~CustomActionsSchema.copyFrom(com.intellij.ide.ui.customization.CustomActionsSchema):void" resolve="copyFrom" />
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.copyFrom(com.intellij.ide.ui.customization.CustomActionsSchema)" resolve="copyFrom" />
               <node concept="2YIFZM" id="6bK0Ak3CbSW" role="37wK5m">
                 <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
-                <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance():com.intellij.ide.ui.customization.CustomActionsSchema" resolve="getInstance" />
+                <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance()" resolve="getInstance" />
               </node>
             </node>
           </node>
@@ -166,10 +166,10 @@
           <node concept="2OqwBi" id="6bK0Ak3CatA" role="3clFbG">
             <node concept="2YIFZM" id="6bK0Ak3Caz5" role="2Oq$k0">
               <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
-              <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance():com.intellij.ide.ui.customization.CustomActionsSchema" resolve="getInstance" />
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance()" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="6bK0Ak3CatC" role="2OqNvi">
-              <ref role="37wK5l" to="8fb:~CustomActionsSchema.copyFrom(com.intellij.ide.ui.customization.CustomActionsSchema):void" resolve="copyFrom" />
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.copyFrom(com.intellij.ide.ui.customization.CustomActionsSchema)" resolve="copyFrom" />
               <node concept="37vLTw" id="6bK0Ak3CatD" role="37wK5m">
                 <ref role="3cqZAo" node="6bK0Ak3Catu" resolve="instance" />
               </node>
@@ -179,7 +179,7 @@
         <node concept="3clFbF" id="6bK0Ak3CatE" role="3cqZAp">
           <node concept="2YIFZM" id="6bK0Ak3CbKc" role="3clFbG">
             <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
-            <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects():void" resolve="setCustomizationSchemaForCurrentProjects" />
+            <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
           </node>
         </node>
       </node>

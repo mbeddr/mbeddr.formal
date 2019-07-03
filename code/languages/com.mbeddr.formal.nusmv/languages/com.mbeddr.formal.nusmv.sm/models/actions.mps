@@ -372,7 +372,7 @@
                     <node concept="2pIpSj" id="40lCrc7Tm3C" role="2pJxcM">
                       <ref role="2pIpSl" to="gioj:6NmtaR1V30H" resolve="rhs" />
                       <node concept="2pJPED" id="40lCrc7Tm3D" role="2pJxcZ">
-                        <ref role="2pJxaS" to="gioj:6NmtaR1VD8o" resolve="EnumMemberRef" />
+                        <ref role="2pJxaS" to="gioj:6NmtaR1VD8o" resolve="EnumerationMemberRef" />
                         <node concept="2pIpSj" id="40lCrc7Tm3E" role="2pJxcM">
                           <ref role="2pIpSl" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
                           <node concept="36biLy" id="40lCrc7Tm3F" role="2pJxcZ">

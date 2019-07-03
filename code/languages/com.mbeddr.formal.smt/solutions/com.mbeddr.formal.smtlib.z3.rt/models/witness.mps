@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
@@ -316,18 +316,18 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="104dc5E680x" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="104dc5E680y" role="37wK5m">
                                 <node concept="2OqwBi" id="104dc5E680z" role="2Oq$k0">
                                   <node concept="2GrUjf" id="104dc5E680$" role="2Oq$k0">
                                     <ref role="2Gs0qQ" node="104dc5E5YmO" resolve="d" />
                                   </node>
                                   <node concept="liA8E" id="104dc5E680_" role="2OqNvi">
-                                    <ref role="37wK5l" to="f7eu:~FuncDecl.getName():com.microsoft.z3.Symbol" resolve="getName" />
+                                    <ref role="37wK5l" to="f7eu:~FuncDecl.getName()" resolve="getName" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="104dc5E680A" role="2OqNvi">
-                                  <ref role="37wK5l" to="f7eu:~Symbol.toString():java.lang.String" resolve="toString" />
+                                  <ref role="37wK5l" to="f7eu:~Symbol.toString()" resolve="toString" />
                                 </node>
                               </node>
                             </node>
@@ -356,7 +356,7 @@
                         <ref role="3cqZAo" node="104dc5E5XVP" resolve="m" />
                       </node>
                       <node concept="liA8E" id="2l5A0OF3cxL" role="2OqNvi">
-                        <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl):com.microsoft.z3.Expr" resolve="getConstInterp" />
+                        <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl)" resolve="getConstInterp" />
                         <node concept="2GrUjf" id="2l5A0OF3cxM" role="37wK5m">
                           <ref role="2Gs0qQ" node="104dc5E5YmO" resolve="d" />
                         </node>
@@ -376,7 +376,7 @@
                               <ref role="3cqZAo" node="104dc5E5YPe" resolve="interp" />
                             </node>
                             <node concept="liA8E" id="104dc5E6aIg" role="2OqNvi">
-                              <ref role="37wK5l" to="f7eu:~Expr.toString():java.lang.String" resolve="toString" />
+                              <ref role="37wK5l" to="f7eu:~Expr.toString()" resolve="toString" />
                             </node>
                           </node>
                         </node>
@@ -404,7 +404,7 @@
                     <ref role="2Gs0qQ" node="104dc5E5YmO" resolve="d" />
                   </node>
                   <node concept="liA8E" id="2l5A0OF2TdC" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~FuncDecl.getArity():int" resolve="getArity" />
+                    <ref role="37wK5l" to="f7eu:~FuncDecl.getArity()" resolve="getArity" />
                   </node>
                 </node>
               </node>
@@ -421,7 +421,7 @@
                           <ref role="3cqZAo" node="104dc5E5XVP" resolve="m" />
                         </node>
                         <node concept="liA8E" id="2l5A0OF3dKb" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~Model.getFuncInterp(com.microsoft.z3.FuncDecl):com.microsoft.z3.FuncInterp" resolve="getFuncInterp" />
+                          <ref role="37wK5l" to="f7eu:~Model.getFuncInterp(com.microsoft.z3.FuncDecl)" resolve="getFuncInterp" />
                           <node concept="2GrUjf" id="2l5A0OF3dKc" role="37wK5m">
                             <ref role="2Gs0qQ" node="104dc5E5YmO" resolve="d" />
                           </node>
@@ -442,7 +442,7 @@
                           <ref role="3cqZAo" node="2l5A0OF3dK8" resolve="funcInterp" />
                         </node>
                         <node concept="liA8E" id="2l5A0OF3DKE" role="2OqNvi">
-                          <ref role="37wK5l" to="f7eu:~FuncInterp.getEntries():com.microsoft.z3.FuncInterp$Entry[]" resolve="getEntries" />
+                          <ref role="37wK5l" to="f7eu:~FuncInterp.getEntries()" resolve="getEntries" />
                         </node>
                       </node>
                     </node>
@@ -497,7 +497,7 @@
                                     <ref role="2Gs0qQ" node="2l5A0OF5_d2" resolve="arg" />
                                   </node>
                                   <node concept="liA8E" id="2l5A0OF5E4E" role="2OqNvi">
-                                    <ref role="37wK5l" to="f7eu:~Expr.toString():java.lang.String" resolve="toString" />
+                                    <ref role="37wK5l" to="f7eu:~Expr.toString()" resolve="toString" />
                                   </node>
                                 </node>
                               </node>
@@ -509,7 +509,7 @@
                             <ref role="2Gs0qQ" node="2l5A0OF3FYi" resolve="entry" />
                           </node>
                           <node concept="liA8E" id="2l5A0OF5_x$" role="2OqNvi">
-                            <ref role="37wK5l" to="f7eu:~FuncInterp$Entry.getArgs():com.microsoft.z3.Expr[]" resolve="getArgs" />
+                            <ref role="37wK5l" to="f7eu:~FuncInterp$Entry.getArgs()" resolve="getArgs" />
                           </node>
                         </node>
                       </node>
@@ -532,7 +532,7 @@
                                   </node>
                                   <node concept="2YIFZM" id="2l5A0OF5GxG" role="3uHU7w">
                                     <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                                    <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                                    <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
                                     <node concept="37vLTw" id="2l5A0OF5GDD" role="37wK5m">
                                       <ref role="3cqZAo" node="2l5A0OF5$Od" resolve="argsStrings" />
                                     </node>
@@ -547,7 +547,7 @@
                                   <ref role="2Gs0qQ" node="2l5A0OF3FYi" resolve="entry" />
                                 </node>
                                 <node concept="liA8E" id="2l5A0OF5dbd" role="2OqNvi">
-                                  <ref role="37wK5l" to="f7eu:~FuncInterp$Entry.getValue():com.microsoft.z3.Expr" resolve="getValue" />
+                                  <ref role="37wK5l" to="f7eu:~FuncInterp$Entry.getValue()" resolve="getValue" />
                                 </node>
                               </node>
                             </node>
@@ -581,11 +581,11 @@
                                 <ref role="3cqZAo" node="2l5A0OF3dK8" resolve="funcInterp" />
                               </node>
                               <node concept="liA8E" id="1MFSGJpi8E$" role="2OqNvi">
-                                <ref role="37wK5l" to="f7eu:~FuncInterp.getElse():com.microsoft.z3.Expr" resolve="getElse" />
+                                <ref role="37wK5l" to="f7eu:~FuncInterp.getElse()" resolve="getElse" />
                               </node>
                             </node>
                             <node concept="liA8E" id="1MFSGJpij1Q" role="2OqNvi">
-                              <ref role="37wK5l" to="f7eu:~Expr.toString():java.lang.String" resolve="toString" />
+                              <ref role="37wK5l" to="f7eu:~Expr.toString()" resolve="toString" />
                             </node>
                           </node>
                           <node concept="Xl_RD" id="1MFSGJpi7ql" role="3uHU7B">
@@ -604,7 +604,7 @@
                             <ref role="2pJxcJ" to="d9cz:104dc5E5R2w" resolve="value" />
                             <node concept="2YIFZM" id="2l5A0OF5ugt" role="2pJxcZ">
                               <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
-                              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String):java.lang.String" resolve="join" />
+                              <ref role="37wK5l" to="btm1:~StringUtils.join(java.lang.Iterable,java.lang.String)" resolve="join" />
                               <node concept="37vLTw" id="2l5A0OF5ulr" role="37wK5m">
                                 <ref role="3cqZAo" node="2l5A0OF3I_c" resolve="entryStrings" />
                               </node>
@@ -636,7 +636,7 @@
               <ref role="3cqZAo" node="104dc5E5XVP" resolve="m" />
             </node>
             <node concept="liA8E" id="104dc5E5Yf$" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Model.getDecls():com.microsoft.z3.FuncDecl[]" resolve="getDecls" />
+              <ref role="37wK5l" to="f7eu:~Model.getDecls()" resolve="getDecls" />
             </node>
           </node>
         </node>
@@ -652,7 +652,7 @@
                       <ref role="3cqZAo" node="104dc5E5XVP" resolve="m" />
                     </node>
                     <node concept="liA8E" id="1MFSGJpipjz" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Model.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="f7eu:~Model.toString()" resolve="toString" />
                     </node>
                   </node>
                 </node>
