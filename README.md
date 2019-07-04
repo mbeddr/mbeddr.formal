@@ -5,7 +5,7 @@
 
 ## Building
 
-- currently, we need MPS 2018.3.5 - [https://www.jetbrains.com/mps/download/]
+- currently, we need MPS 2019.1.4 - [https://www.jetbrains.com/mps/download/]
 - the required mps-plugins are integrated via a git summodule from https://github.com/danielratiu/mbeddr.formal.mps-plugins
 - make sure that the submodule is updated by running "git submodule update"
 - rename gradle.properties.example into gradle.properties and set mpsHomeDir to point to your MPS installation
