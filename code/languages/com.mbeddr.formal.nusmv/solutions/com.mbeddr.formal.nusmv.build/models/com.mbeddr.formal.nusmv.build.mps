@@ -273,6 +273,12 @@
         <ref role="398BVh" node="42jqVeFkUtk" resolve="mps.home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="wUJmWCvCWY" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
+      <node concept="398BVA" id="wUJmWCvEbg" role="2JcizS">
+        <ref role="398BVh" node="42jqVeFkUtk" resolve="mps.home" />
+      </node>
+    </node>
     <node concept="10PD9b" id="42jqVeFkUtc" role="10PD9s" />
     <node concept="3b7kt6" id="42jqVeFkUtd" role="10PD9s" />
     <node concept="3jsGME" id="4RNGGOMK53K" role="3989C9">
@@ -550,6 +556,9 @@
       </node>
     </node>
     <node concept="1l3spV" id="42jqVeFkUvc" role="1l3spN">
+      <node concept="L2wRC" id="wUJmWCwVZN" role="39821P">
+        <ref role="L2wRA" node="5jdn85oHU1h" resolve="com.mbeddr.formal.nusmv.build" />
+      </node>
       <node concept="3_I8Xc" id="42jqVeFkUvk" role="39821P">
         <ref role="3_I8Xa" to="ffeo:1diLdO26H79" resolve="languages" />
       </node>
@@ -3358,6 +3367,48 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E1JtA" id="5jdn85oHU1h" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="com.mbeddr.formal.nusmv.build" />
+      <property role="3LESm3" value="7125ed76-a460-4b0f-b95b-a899f99488d6" />
+      <node concept="398BVA" id="5jdn85oHUxc" role="3LF7KH">
+        <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+        <node concept="2Ry0Ak" id="5jdn85oHUCm" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="5jdn85oHUI5" role="2Ry0An">
+            <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.build" />
+            <node concept="2Ry0Ak" id="5jdn85oHUNO" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.build.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5jdn85oHUTv" role="3bR37C">
+        <node concept="3bR9La" id="5jdn85oHUTw" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5jdn85oHUTx" role="3bR37C">
+        <node concept="3bR9La" id="5jdn85oHUTy" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5jdn85oHUTz" role="3bR37C">
+        <node concept="3bR9La" id="5jdn85oHUT$" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5jdn85oHUT_" role="3bR37C">
+        <node concept="3bR9La" id="5jdn85oHUTA" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5jdn85oHUTB" role="3bR37C">
+        <node concept="3bR9La" id="5jdn85oHUTC" role="1SiIV1">
+          <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
         </node>
       </node>
     </node>
