@@ -157,16 +157,15 @@ def dependenciesDir = new File(buildDir, 'dependencies')
 
 
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
+ext.mbeddr_formal_home = '-Dmbeddr.formal.home=' + rootDir
 ext.build_dir = '-Dbuild.dir=' + buildDir.path
-ext.artifacts_dir = '-Dartifacts.root=' + dependenciesDir.path
 ext.pluginVersion = "-DversionNumber=" + version
 ext.buildDate = "-DbuildDate=" + new Date().toString()
-ext.mbeddr_formal_home = '-Dmbeddr.formal.home=' + rootDir
 ext.skipUnmodifiedModels = "-Dmps.generator.skipUnmodifiedModels=true" //incremental build support
 
 // ___________________ utilities ___________________
 
-def defaultScriptArgs = [mps_home, build_dir, artifacts_dir, ext.buildDate, ext.pluginVersion, ext.skipUnmodifiedModels]
+def defaultScriptArgs = [mps_home, build_dir, ext.buildDate, ext.pluginVersion, ext.skipUnmodifiedModels]
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs
@@ -192,22 +191,22 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps]) {
-    script "$rootDir/scripts/build_all_scripts.xml"
+task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
+    script "$buildDir/scripts/build_all_scripts.xml"
 }
 
-task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts, resolveLanguageLibs]) {
-    script new File("$rootDir/build/build-nusmv-languages.xml")
+task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    script new File("$buildDir/scripts/build-nusmv-languages.xml")
 }
 
 task build_fasten_distribution(type: RunAntScript, dependsOn: [build_smv_languages]) {
-    script new File("$rootDir/build/build-fasten-distribution.xml")
+    script new File("$buildDir/scripts/build-fasten-distribution.xml")
 }
 
 task run_smv_tests(type: TestLanguages, dependsOn: build_smv_languages) { 
     description "Will execute all tests from command line"
     print "mbeddr.formal.home = " + rootDir;
-	script new File("$rootDir/build/build-nusmv-tests.xml")
+	script new File("$buildDir/scripts/build-nusmv-tests.xml")
 }
 
 //

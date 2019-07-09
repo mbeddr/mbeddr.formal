@@ -96,7 +96,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="3GDqItDlhW7">
-    <property role="2DA0ip" value="./../../../../../scripts" />
+    <property role="2DA0ip" value="./../../../../../build/scripts" />
     <property role="TrG5h" value="com.mbeddr.formal.base.allScripts" />
     <property role="turDy" value="build_all_scripts.xml" />
     <node concept="398rNT" id="3GDqItDlo_0" role="1l3spd">
@@ -121,6 +121,30 @@
       <node concept="55IIr" id="3GDqItDloJ2" role="398pKh">
         <node concept="2Ry0Ak" id="3GDqItDloJ5" role="iGT6I">
           <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="4MDOjos3hT4" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4MDOjos013m" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="4MDOjos0k5U" role="398pKh">
+        <ref role="398BVh" node="3GDqItDloIT" resolve="mbeddr.formal.home" />
+        <node concept="2Ry0Ak" id="4MDOjos0w$X" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="4MDOjos0x6e" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4MDOjos0yOT" role="1l3spd">
+      <property role="TrG5h" value="dependencies.mbeddr.platform" />
+      <node concept="398BVA" id="4MDOjos0_nL" role="398pKh">
+        <ref role="398BVh" node="4MDOjos013m" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="4MDOjos0_DE" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
@@ -136,29 +160,6 @@
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="3GDqItDloJd" role="2JcizS">
         <ref role="398BVh" node="3GDqItDlo_0" resolve="mps.home" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="3GDqItDmMjr" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:5D1dJ7xWer5" resolve="mpsCore" />
-      <node concept="398BVA" id="3GDqItDmMkW" role="2JcizS">
-        <ref role="398BVh" node="3GDqItDlo_0" resolve="mps.home" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4aeOpjlBUUu" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="55IIr" id="4aeOpjlBV0p" role="2JcizS">
-        <node concept="2Ry0Ak" id="4aeOpjlBV61" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3GDqItDlq5g" role="2Ry0An">
-            <property role="2Ry0Am" value="mps-plugins" />
-            <node concept="2Ry0Ak" id="3GDqItDlq5e" role="2Ry0An">
-              <property role="2Ry0Am" value="platform_2018_3_5" />
-              <node concept="2Ry0Ak" id="3GDqItDlq5f" role="2Ry0An">
-                <property role="2Ry0Am" value="plugins" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3GDqItDloK2" role="3989C9">
@@ -247,6 +248,12 @@
     </node>
     <node concept="2igEWh" id="3GDqItDloKJ" role="1hWBAP">
       <property role="3UIfUI" value="1024" />
+    </node>
+    <node concept="2sgV4H" id="4aeOpjlBUUu" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="2DcSMg43Ebc" role="2JcizS">
+        <ref role="398BVh" node="4MDOjos0yOT" resolve="dependencies.mbeddr.platform" />
+      </node>
     </node>
   </node>
 </model>
