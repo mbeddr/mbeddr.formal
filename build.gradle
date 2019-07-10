@@ -21,12 +21,8 @@ plugins {
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
 } else {
-    //on teamcity we are in a CI build
-    if (project.hasProperty("teamcity") && !project.hasProperty('mpsHomeDir')) {
-        ext.ciBuild = true
-    } else {
-        ext.ciBuild = false
-    }
+    // on teamcity we are in a CI build
+    ext.ciBuild = project.hasProperty("teamcity")
 }
 
 // comprehensible error message if not running java 8
@@ -55,11 +51,14 @@ ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
 ]
-// Dependency versions
 
+// Dependency versions
 ext.mpsVersion =  '2019.1.4'
 ext.mbeddrVersion =  '1.3.21722.0d19fb0'
 
+// Project versions
+ext.major = '1'
+ext.minor = '0'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
@@ -74,7 +73,7 @@ if (ciBuild) {
     println "##teamcity[buildNumber '${version}']"
 } else {
     println "Local build detected, version will be SNAPSHOT"
-    version = "1.0-SNAPSHOT"
+    version = "$major.$minor-SNAPSHOT"
 }
 
 /*
@@ -93,9 +92,7 @@ if (project.hasProperty("MPS_PATHS_SELECTOR")) {
 }
 */
 
-ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
-ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
+ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
 
 configurations {
@@ -159,8 +156,8 @@ def dependenciesDir = new File(buildDir, 'dependencies')
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
 ext.mbeddr_formal_home = '-Dmbeddr.formal.home=' + rootDir
 ext.build_dir = '-Dbuild.dir=' + buildDir.path
-ext.pluginVersion = "-DversionNumber=" + version
-ext.buildDate = "-DbuildDate=" + new Date().toString()
+ext.pluginVersion = "-Dversion=" + version
+ext.buildDate = "-Dbuild.date=" + new Date().toString()
 ext.skipUnmodifiedModels = "-Dmps.generator.skipUnmodifiedModels=true" //incremental build support
 
 // ___________________ utilities ___________________
@@ -209,7 +206,13 @@ task run_smv_tests(type: TestLanguages, dependsOn: build_smv_languages) {
 	script new File("$buildDir/scripts/build-nusmv-tests.xml")
 }
 
-//
+task packageNuSMV(type: Zip, dependsOn: build_smv_languages) {
+    baseName 'com.mbeddr.formal.nusmv'
+    from artifactsDir
+    include 'com.mbeddr.formal.nusmv/**'
+}
+
+assemble.dependsOn packageNuSMV
 
 // Ant <junit> task support
 repositories {
@@ -225,6 +228,45 @@ dependencies {
     }
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            url project.publishingRepository
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+    publications {
+        NuSMVLanguages(MavenPublication) {
+            groupId 'com.mbeddr.formal'
+            artifactId 'nusmv'
+            artifact packageNuSMV
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
+        }
     }
 }
 

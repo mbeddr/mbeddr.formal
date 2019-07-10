@@ -13,6 +13,7 @@ junitvmwatcher*.properties
 build.properties
 TEST-*.xml
 junit*.properties
+/gradle.properties
 
 classes_gen
 source_gen
