@@ -98,11 +98,14 @@ ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositorie
 configurations {
     mps
     languageLibs
+    // includes also junit tasks support
+    antLib
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
+    antLib "org.apache.ant:ant-junit:1.10.6"
 }
 
 repositories {
@@ -112,6 +115,7 @@ repositories {
             url repoUrl
         }
     }
+    mavenCentral()
 }
 
 ext.skipResolveMps = project.hasProperty('mpsHomeDir')
@@ -134,38 +138,28 @@ if (project.skipResolveMps) {
     }
 }
 
-// Ant support
-configurations {
-    ant_lib
-}
+// tools needed for compiler support in ant calls
+ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true } +
+        project.files("$project.jdk_home/lib/tools.jar")
 
-dependencies {
-    ant_lib "org.apache.ant:ant-junit:1.10.1"
-}
+def artifactsDir = file("$buildDir/artifacts")
+def dependenciesDir = file("$buildDir/dependencies")
 
-// tools might be needed later for running test scripts
-ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({
-    true
-}) + project.files("$project.jdk_home/lib/tools.jar")
-
-buildDir = file('build')
-def artifactsDir = new File(buildDir, 'artifacts')
-def dependenciesDir = new File(buildDir, 'dependencies')
-
-
-ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
-ext.mbeddr_formal_home = '-Dmbeddr.formal.home=' + rootDir
-ext.build_dir = '-Dbuild.dir=' + buildDir.path
-ext.pluginVersion = "-Dversion=" + version
-ext.buildDate = "-Dbuild.date=" + new Date().toString()
-ext.skipUnmodifiedModels = "-Dmps.generator.skipUnmodifiedModels=true" //incremental build support
 
 // ___________________ utilities ___________________
 
-def defaultScriptArgs = [mps_home, build_dir, ext.buildDate, ext.pluginVersion, ext.skipUnmodifiedModels]
+def defaultScriptArgs = [
+        'mps.home'                          : mpsHomeDir,
+        'mbeddr.formal.home'                : rootDir,
+        'build.dir'                         : buildDir,
+        'version'                           : version,
+        'build.date'                        : new Date(),
+        //incremental build support
+        'mps.generator.skipUnmodifiedModels': true
+]
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value" }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
 
 task resolveLanguageLibs(type: Copy) {
@@ -206,30 +200,15 @@ task run_smv_tests(type: TestLanguages, dependsOn: build_smv_languages) {
 	script new File("$buildDir/scripts/build-nusmv-tests.xml")
 }
 
+check.dependsOn run_smv_tests
+
 task packageNuSMV(type: Zip, dependsOn: build_smv_languages) {
-    baseName 'com.mbeddr.formal.nusmv'
+    archiveBaseName = 'com.mbeddr.formal.nusmv'
     from artifactsDir
     include 'com.mbeddr.formal.nusmv/**'
 }
 
 assemble.dependsOn packageNuSMV
-
-// Ant <junit> task support
-repositories {
-    mavenCentral()
-}
-configurations {
-    junitAnt
-}
-dependencies {
-    junitAnt 'junit:junit:4.12'
-    junitAnt('org.apache.ant:ant-junit:1.9.7') {
-        transitive = false
-    }
-    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
-        transitive = false
-    }
-}
 
 publishing {
     repositories {
@@ -278,7 +257,6 @@ task cleanMps(type: Delete) {
 
 
 defaultTasks 'build_fasten_distribution'
-task test(dependsOn: run_smv_tests)
 
 task rebuild(dependsOn:[clean, build_smv_languages])
 
