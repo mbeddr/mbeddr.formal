@@ -1,12 +1,10 @@
-# mbeddr.formal
+# FASTEN
 
 ## Homepage
 - FASTEN Home - https://sites.google.com/site/fastenroot/
 
 ## Building
 
-- currently, we need MPS 2019.1.4 - [https://www.jetbrains.com/mps/download/]
-- the required mps-plugins are integrated via a git summodule from https://github.com/danielratiu/mbeddr.formal.mps-plugins
-- make sure that the submodule is updated by running "git submodule update"
-- rename gradle.properties.example into gradle.properties and set mpsHomeDir to point to your MPS installation
-- run "gradle.bat build_smv_languages"
+- to build all languages, run `gradlew.bat build_smv_languages`
+- to build and execute all unit tests, run `gradlew.bat run_smv_tests` (includes also building all languages)
+- for packaging FASTEN distribution, run `gradlew.bat build_fasten_distribution`
