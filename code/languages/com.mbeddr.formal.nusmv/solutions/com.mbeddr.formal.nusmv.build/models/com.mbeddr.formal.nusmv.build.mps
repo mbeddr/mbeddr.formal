@@ -299,7 +299,10 @@
         <node concept="2Ry0Ak" id="6adXBxxVRT2" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="2DcSMg46M8_" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2018_3_5_mbeddr_formal" />
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="2Ttn9EOyTQv" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS_2019_1_4_mbeddr_formal" />
+            </node>
           </node>
         </node>
       </node>
@@ -345,7 +348,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2019-05-04" />
+            <property role="3MwjfP" value="2019-08-01" />
           </node>
         </node>
       </node>
@@ -2665,7 +2668,10 @@
         <node concept="2Ry0Ak" id="wUJmWCxY0m" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="wUJmWCxY0n" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2018_3_5_mbeddr_formal" />
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="2Ttn9EOyTRM" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS_2019_1_4_mbeddr_formal" />
+            </node>
           </node>
         </node>
       </node>
@@ -2738,7 +2744,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2019-05-04" />
+            <property role="3MwjfP" value="2019-08-01" />
           </node>
         </node>
       </node>
@@ -3151,10 +3157,7 @@
           <node concept="398223" id="6oUHYlAgucX" role="39821P">
             <node concept="2HvfSZ" id="3slobAdyYc9" role="39821P">
               <node concept="398BVA" id="3slobAdyYca" role="2HvfZ0">
-                <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
-                <node concept="2Ry0Ak" id="4ixjtM3ydo0" role="iGT6I">
-                  <property role="2Ry0Am" value="tutorial" />
-                </node>
+                <ref role="398BVh" node="wUJmWCxY0y" resolve="mbeddr.formal.tutorial" />
               </node>
             </node>
             <node concept="3_J27D" id="6oUHYlAgucZ" role="Nbhlr">
