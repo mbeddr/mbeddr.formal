@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.formal.allScripts" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.formal.allScripts" />
-  <property name="mps.home" location="${basedir}/../../../MPS_2018_3_5_mbeddr_formal" />
+  <property name="mps.home" location="${basedir}/../../../../../MPS_2019_1_4_mbeddr_formal" />
   <property name="mbeddr.formal.home" location="${basedir}/../.." />
   <property name="mbeddr.formal.nusmv.code" location="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv" />
   <property name="dependencies.root" location="${mbeddr.formal.home}/build/dependencies" />
