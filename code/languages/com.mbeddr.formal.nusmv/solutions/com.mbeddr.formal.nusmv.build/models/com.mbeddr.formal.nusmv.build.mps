@@ -338,7 +338,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2019-08-01" />
+            <property role="3MwjfP" value="2019-08-04" />
           </node>
         </node>
       </node>
@@ -2627,7 +2627,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20190504" />
+        <property role="hHN3Y" value="20190804" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -2734,7 +2734,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2019-08-01" />
+            <property role="3MwjfP" value="2019-08-04" />
           </node>
         </node>
       </node>
@@ -3251,14 +3251,14 @@
               <node concept="3LWZYq" id="1vA$0pD76RE" role="1juEy9">
                 <property role="3LWZYl" value="**/com.mbeddr.mpsutil.xmlImport/**" />
               </node>
+              <node concept="3LWZYq" id="3GRi4m$kb3E" role="1juEy9">
+                <property role="3LWZYl" value="**/com.mbeddr.mpsutil/lib/datepicker/**" />
+              </node>
               <node concept="3LWZYq" id="1vA$0pD7b6_" role="1juEy9">
                 <property role="3LWZYl" value="**/com.mbeddr.platform.build/**" />
               </node>
               <node concept="3LWZYq" id="1vA$0pD7799" role="1juEy9">
                 <property role="3LWZYl" value="**/de.itemis.mps.build.gradlesupport/**" />
-              </node>
-              <node concept="3LWZYq" id="3GRi4m$ipYd" role="1juEy9">
-                <property role="3LWZYl" value="**/mbeddr.doc/lib/*poi*" />
               </node>
               <node concept="3LWZYq" id="1vA$0pD7LsB" role="1juEy9">
                 <property role="3LWZYl" value="**/de.slisson.mps.all/**" />
@@ -3272,11 +3272,23 @@
               <node concept="3LWZYq" id="1vA$0pD6vRW" role="1juEy9">
                 <property role="3LWZYl" value="**/codereview/**" />
               </node>
-              <node concept="3LWZYq" id="1vA$0pD7MZv" role="1juEy9">
-                <property role="3LWZYl" value="**/org.mockito/**" />
+              <node concept="3LWZYq" id="3GRi4m$ipYd" role="1juEy9">
+                <property role="3LWZYl" value="**/mbeddr.doc/lib/*poi*" />
+              </node>
+              <node concept="3LWZYq" id="3GRi4m$jAQY" role="1juEy9">
+                <property role="3LWZYl" value="**/mbeddr.doc/lib/xmlbeans-*" />
+              </node>
+              <node concept="3LWZYq" id="3GRi4m$knOg" role="1juEy9">
+                <property role="3LWZYl" value="**/mbeddr.doc/lib/commons-codec-*" />
+              </node>
+              <node concept="3LWZYq" id="3GRi4m$knT4" role="1juEy9">
+                <property role="3LWZYl" value="**/mbeddr.doc/lib/curvesapi-*" />
               </node>
               <node concept="3LWZYq" id="1vA$0pD77Kd" role="1juEy9">
                 <property role="3LWZYl" value="**/mps-math-editor/**" />
+              </node>
+              <node concept="3LWZYq" id="1vA$0pD7MZv" role="1juEy9">
+                <property role="3LWZYl" value="**/org.mockito/**" />
               </node>
             </node>
             <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">
