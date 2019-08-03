@@ -32,6 +32,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -1199,12 +1200,22 @@
                 </node>
                 <node concept="3N13vt" id="15PPQjZdw_i" role="3cqZAp" />
               </node>
-              <node concept="2OqwBi" id="15PPQjZcMif" role="3clFbw">
-                <node concept="37vLTw" id="15PPQjZcM5u" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1NcemxVJ0_h" resolve="rawResult" />
+              <node concept="22lmx$" id="3GRi4m$fIjy" role="3clFbw">
+                <node concept="2OqwBi" id="3GRi4m$fIQd" role="3uHU7w">
+                  <node concept="37vLTw" id="3GRi4m$fI$S" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1NcemxVJ0_h" resolve="rawResult" />
+                  </node>
+                  <node concept="liA8E" id="3GRi4m$fLFw" role="2OqNvi">
+                    <ref role="37wK5l" to="4c75:7mSH3Wn4cNx" resolve="isCancel" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="15PPQjZcMz5" role="2OqNvi">
-                  <ref role="37wK5l" to="4c75:7mSH3Wn4cNo" resolve="isRuntimeError" />
+                <node concept="2OqwBi" id="15PPQjZcMif" role="3uHU7B">
+                  <node concept="37vLTw" id="15PPQjZcM5u" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1NcemxVJ0_h" resolve="rawResult" />
+                  </node>
+                  <node concept="liA8E" id="15PPQjZcMz5" role="2OqNvi">
+                    <ref role="37wK5l" to="4c75:7mSH3Wn4cNo" resolve="isRuntimeError" />
+                  </node>
                 </node>
               </node>
             </node>
