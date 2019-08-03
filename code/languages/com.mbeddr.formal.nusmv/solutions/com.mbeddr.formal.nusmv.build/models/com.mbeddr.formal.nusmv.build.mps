@@ -3145,11 +3145,6 @@
             </node>
           </node>
           <node concept="398223" id="6oUHYlAgucX" role="39821P">
-            <node concept="2HvfSZ" id="3slobAdyYc9" role="39821P">
-              <node concept="398BVA" id="3slobAdyYca" role="2HvfZ0">
-                <ref role="398BVh" node="wUJmWCxY0y" resolve="mbeddr.formal.tutorial" />
-              </node>
-            </node>
             <node concept="3_J27D" id="6oUHYlAgucZ" role="Nbhlr">
               <node concept="3Mxwew" id="6oUHYlAguoL" role="3MwsjC">
                 <property role="3MwjfP" value="tutorial" />
