@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/languages/com.mbeddr.formal.safety.gsn/com.mbeddr.formal.safety.gsn.mpl" folder="" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/solutions/com.mbeddr.formal.safety.gsn.sandbox/com.mbeddr.formal.safety.gsn.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
