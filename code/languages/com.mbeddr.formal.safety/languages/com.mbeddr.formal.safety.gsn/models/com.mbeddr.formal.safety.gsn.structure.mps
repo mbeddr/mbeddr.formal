@@ -31,10 +31,14 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -59,7 +63,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="connections" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3GRi4m$sIaU" resolve="Connection" />
+      <ref role="20lvS9" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
     </node>
     <node concept="PrWs8" id="3GRi4m$qPY1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -75,6 +79,7 @@
     <property role="EcuMT" value="4266958635905286484" />
     <property role="TrG5h" value="GoalStructureElementBase" />
     <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3GRi4m$qYoV" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905312315" />
@@ -106,20 +111,46 @@
   </node>
   <node concept="1TIwiD" id="3GRi4m$sIaU">
     <property role="EcuMT" value="4266958635905770170" />
-    <property role="TrG5h" value="Connection" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="InContextOfConnection" />
+    <ref role="1TJDcQ" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
     <node concept="1TJgyj" id="3GRi4m$sIbL" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770225" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
-      <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      <ref role="20lvS9" node="3GRi4m$qNtH" resolve="Goal" />
+      <ref role="20ksaX" node="2ccN23odOzl" resolve="source" />
     </node>
     <node concept="1TJgyj" id="3GRi4m$sId6" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770310" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="3GRi4m$rlpN" resolve="Context" />
+      <ref role="20ksaX" node="2ccN23odOzm" resolve="target" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2ccN23odOxd">
+    <property role="EcuMT" value="2525617932486527053" />
+    <property role="TrG5h" value="GoalStructureConnectionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2ccN23odOzl" role="1TKVEi">
+      <property role="IQ2ns" value="2525617932486527189" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="source" />
       <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
+    <node concept="1TJgyj" id="2ccN23odOzm" role="1TKVEi">
+      <property role="IQ2ns" value="2525617932486527190" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2ccN23odQ9b">
+    <property role="EcuMT" value="2525617932486533707" />
+    <property role="TrG5h" value="SupportedByConnection" />
+    <ref role="1TJDcQ" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
   </node>
 </model>
 
