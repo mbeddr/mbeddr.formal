@@ -53,8 +53,10 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2019.1.4'
-ext.mbeddrVersion =  '1.3.21722.0d19fb0'
+// ext.mpsVersion =  '2019.1.4'
+// ext.mbeddrVersion =  '1.3.21722.0d19fb0'
+ext.mpsVersion =  '2019.1.5'
+ext.mbeddrVersion =  '1.3.21784.eeb7ee0'
 
 // Project versions
 ext.major = '1'
