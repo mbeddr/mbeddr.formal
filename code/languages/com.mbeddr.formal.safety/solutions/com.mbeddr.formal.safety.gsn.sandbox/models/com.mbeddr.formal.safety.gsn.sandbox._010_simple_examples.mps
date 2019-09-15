@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:58eb1cbe-e115-40a5-bc25-c735f86ac5d2(com.mbeddr.formal.safety.gsn.sandbox.simple_examples)">
+<model ref="r:58eb1cbe-e115-40a5-bc25-c735f86ac5d2(com.mbeddr.formal.safety.gsn.sandbox._010_simple_examples)">
   <persistence version="9" />
   <languages>
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
@@ -83,7 +83,7 @@
       <property role="TrG5h" value="G1" />
       <node concept="19SGf9" id="3GRi4m$r9rA" role="2vnaTY">
         <node concept="19SUe$" id="3GRi4m$r9rB" role="19SJt6">
-          <property role="19SUeA" value="All risks hahe been&#10;mitigated and addressed" />
+          <property role="19SUeA" value="All risks have been&#10;mitigated and addressed" />
         </node>
       </node>
     </node>
