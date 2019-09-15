@@ -14,8 +14,9 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -294,15 +295,8 @@
   <node concept="24kQdi" id="3GRi4m$qQ4X">
     <ref role="1XX52x" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="3EZMnI" id="3GRi4m$qQ5q" role="2wV5jI">
-      <node concept="3EZMnI" id="3GRi4m$qQ62" role="3EZMnx">
-        <node concept="VPM3Z" id="3GRi4m$qQ64" role="3F10Kt" />
-        <node concept="3F0ifn" id="3GRi4m$qQ6K" role="3EZMnx">
-          <property role="3F0ifm" value="goal structure:" />
-        </node>
-        <node concept="3F0A7n" id="3GRi4m$qQa1" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="l2Vlx" id="3GRi4m$qQ67" role="2iSdaV" />
+      <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="3GRi4m$qQa$" role="3EZMnx" />
       <node concept="27vDVx" id="3GRi4m$qQbC" role="3EZMnx">
@@ -1160,9 +1154,9 @@
                         <node concept="TSZUe" id="21W53vlXZg4" role="2OqNvi">
                           <node concept="2pJPEk" id="21W53vlXZrf" role="25WWJ7">
                             <node concept="2pJPED" id="21W53vlXZ__" role="2pJPEn">
-                              <ref role="2pJxaS" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+                              <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
                               <node concept="2pIpSj" id="21W53vlXZK_" role="2pJxcM">
-                                <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
+                                <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
                                 <node concept="36biLy" id="3GRi4m$taUD" role="2pJxcZ">
                                   <node concept="37vLTw" id="3GRi4m$tb9r" role="36biLW">
                                     <ref role="3cqZAo" node="43FRfGJOAX1" resolve="source" />
@@ -1170,7 +1164,7 @@
                                 </node>
                               </node>
                               <node concept="2pIpSj" id="3XpENP21asB" role="2pJxcM">
-                                <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
+                                <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
                                 <node concept="36biLy" id="3GRi4m$tbbY" role="2pJxcZ">
                                   <node concept="37vLTw" id="3GRi4m$tbrq" role="36biLW">
                                     <ref role="3cqZAo" node="43FRfGJOAXy" resolve="target" />
@@ -1546,9 +1540,9 @@
                         <node concept="TSZUe" id="3GRi4m$tLmx" role="2OqNvi">
                           <node concept="2pJPEk" id="3GRi4m$tLmy" role="25WWJ7">
                             <node concept="2pJPED" id="3GRi4m$tLmz" role="2pJPEn">
-                              <ref role="2pJxaS" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+                              <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
                               <node concept="2pIpSj" id="3GRi4m$tLm$" role="2pJxcM">
-                                <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
+                                <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
                                 <node concept="36biLy" id="3GRi4m$tLm_" role="2pJxcZ">
                                   <node concept="37vLTw" id="3GRi4m$tLmA" role="36biLW">
                                     <ref role="3cqZAo" node="3GRi4m$tLmc" resolve="source" />
@@ -1556,7 +1550,7 @@
                                 </node>
                               </node>
                               <node concept="2pIpSj" id="3GRi4m$tLmB" role="2pJxcM">
-                                <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
+                                <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
                                 <node concept="36biLy" id="3GRi4m$tLmC" role="2pJxcZ">
                                   <node concept="37vLTw" id="3GRi4m$tLmD" role="36biLW">
                                     <ref role="3cqZAo" node="3GRi4m$tLmi" resolve="target" />
