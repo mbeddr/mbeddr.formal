@@ -104,8 +104,17 @@
   <node concept="1TIwiD" id="3GRi4m$qNtH">
     <property role="EcuMT" value="4266958635905267565" />
     <property role="TrG5h" value="Goal" />
-    <property role="34LRSv" value="goal" />
+    <property role="34LRSv" value="Goal" />
     <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1irR5M" id="71RA3dHz6MU" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="71RA3dHz6N3" role="1irR9h">
+        <property role="1irPi9" value="G" />
+        <node concept="3PKj8D" id="71RA3dHz6Nc" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$qS5k">
     <property role="EcuMT" value="4266958635905286484" />
@@ -127,20 +136,47 @@
   <node concept="1TIwiD" id="3GRi4m$rlnF">
     <property role="EcuMT" value="4266958635905406443" />
     <property role="TrG5h" value="Strategy" />
-    <property role="34LRSv" value="strategy" />
+    <property role="34LRSv" value="Strategy" />
     <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1irR5M" id="71RA3dHz7bl" role="rwd14">
+      <property role="2$rrk2" value="5" />
+      <node concept="1irPie" id="71RA3dHz7bu" role="1irR9h">
+        <property role="1irPi9" value="T" />
+        <node concept="3PKj8D" id="71RA3dHz7bv" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$rlpN">
     <property role="EcuMT" value="4266958635905406579" />
     <property role="TrG5h" value="Context" />
-    <property role="34LRSv" value="context" />
+    <property role="34LRSv" value="Context" />
     <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1irR5M" id="71RA3dHz7aF" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irPie" id="71RA3dHz7aO" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="71RA3dHz7aP" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$r_RC">
     <property role="EcuMT" value="4266958635905474024" />
     <property role="TrG5h" value="Solution" />
-    <property role="34LRSv" value="solution" />
+    <property role="34LRSv" value="Solution" />
     <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1irR5M" id="71RA3dHz7b0" role="rwd14">
+      <property role="2$rrk2" value="4" />
+      <node concept="1irPie" id="71RA3dHz7b9" role="1irR9h">
+        <property role="1irPi9" value="O" />
+        <node concept="3PKj8D" id="71RA3dHz7ba" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$sIaU">
     <property role="EcuMT" value="4266958635905770170" />
