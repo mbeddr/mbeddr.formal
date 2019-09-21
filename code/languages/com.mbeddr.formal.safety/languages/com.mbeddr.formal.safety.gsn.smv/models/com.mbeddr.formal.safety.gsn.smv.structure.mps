@@ -31,6 +31,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -39,6 +40,10 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -49,6 +54,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -91,6 +99,7 @@
     <property role="TrG5h" value="SmvSpecGoal" />
     <property role="34LRSv" value="SMV Spec Goal" />
     <property role="R4oN_" value="formal spec in SMV" />
+    <property role="3GE5qa" value="gsn.dsl" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
     <node concept="1TJgyj" id="71RA3dH$OQ6" role="1TKVEi">
       <property role="IQ2ns" value="8104113401125621126" />
@@ -109,6 +118,56 @@
       <node concept="1irPie" id="71RA3dHz7LO" role="1irR9h">
         <property role="1irPi9" value="Γ" />
         <node concept="3PKj8D" id="71RA3dHz7LX" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4qaoH_DQhh">
+    <property role="EcuMT" value="79421622115066961" />
+    <property role="3GE5qa" value="gsn.dsl" />
+    <property role="TrG5h" value="SmvSpecContext" />
+    <property role="34LRSv" value="SMV Spec Context" />
+    <property role="R4oN_" value="formal context spec in SMV" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$rlpN" resolve="Context" />
+    <node concept="1TJgyj" id="4qaoH_DQhi" role="1TKVEi">
+      <property role="IQ2ns" value="79421622115066962" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
+    <node concept="1irR5M" id="4qaoH_DYnV" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="4qaoH_DYo0" role="1irR9h">
+        <property role="1irPi9" value="ʘ" />
+        <node concept="3PKj8D" id="4qaoH_DYo5" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4qaoH_E0cQ">
+    <property role="EcuMT" value="79421622115107638" />
+    <property role="3GE5qa" value="gsn.dsl" />
+    <property role="TrG5h" value="SmvSpecSolution" />
+    <property role="34LRSv" value="SMV Spec Solution" />
+    <property role="R4oN_" value="solution based on a nusmv verification" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$r_RC" resolve="Solution" />
+    <node concept="1TJgyi" id="4qaoH_E0cR" role="1TKVEl">
+      <property role="IQ2nx" value="79421622115107639" />
+      <property role="TrG5h" value="date" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4qaoH_E0cT" role="1TKVEl">
+      <property role="IQ2nx" value="79421622115107641" />
+      <property role="TrG5h" value="hash" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1irR5M" id="4qaoH_EiRU" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irPie" id="4qaoH_EiRZ" role="1irR9h">
+        <property role="1irPi9" value="Ω" />
+        <node concept="3PKj8D" id="4qaoH_EiS4" role="3PKjny">
           <property role="3PKj8l" value="987654" />
         </node>
       </node>

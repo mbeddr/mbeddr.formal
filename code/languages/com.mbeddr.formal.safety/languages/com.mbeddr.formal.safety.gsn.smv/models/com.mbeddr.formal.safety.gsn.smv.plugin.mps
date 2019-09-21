@@ -245,7 +245,7 @@
             <node concept="TSZUe" id="7kF4CZH_dx2" role="2OqNvi">
               <node concept="2ShNRf" id="7kF4CZHA7nu" role="25WWJ7">
                 <node concept="HV5vD" id="7kF4CZHAGVp" role="2ShVmc">
-                  <ref role="HV5vE" node="7kF4CZHAEsS" resolve="ConnectionFromSmvGoalToContext" />
+                  <ref role="HV5vE" node="7kF4CZHAEsS" resolve="ConnectionFromSmvGoalToSmvContext" />
                 </node>
               </node>
             </node>
@@ -370,7 +370,7 @@
     </node>
   </node>
   <node concept="312cEu" id="7kF4CZHAEsS">
-    <property role="TrG5h" value="ConnectionFromSmvGoalToContext" />
+    <property role="TrG5h" value="ConnectionFromSmvGoalToSmvContext" />
     <property role="3GE5qa" value="connections" />
     <node concept="2tJIrI" id="7kF4CZHAEsT" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZHAEsU" role="jymVt">
@@ -405,8 +405,8 @@
                 <node concept="2yIwOk" id="7kF4CZHBc9a" role="2OqNvi" />
               </node>
               <node concept="3O6GUB" id="7kF4CZHBdvV" role="2OqNvi">
-                <node concept="chp4Y" id="7kF4CZHBdL2" role="3QVz_e">
-                  <ref role="cht4Q" to="py52:3GRi4m$rlpN" resolve="Context" />
+                <node concept="chp4Y" id="4qaoH_DZ8x" role="3QVz_e">
+                  <ref role="cht4Q" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
                 </node>
               </node>
             </node>
@@ -509,8 +509,8 @@
                 <node concept="2yIwOk" id="7kF4CZHBfd8" role="2OqNvi" />
               </node>
               <node concept="3O6GUB" id="7kF4CZHBgzT" role="2OqNvi">
-                <node concept="chp4Y" id="7kF4CZHBgP0" role="3QVz_e">
-                  <ref role="cht4Q" to="py52:3GRi4m$r_RC" resolve="Solution" />
+                <node concept="chp4Y" id="4qaoH_E9nB" role="3QVz_e">
+                  <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
                 </node>
               </node>
             </node>
