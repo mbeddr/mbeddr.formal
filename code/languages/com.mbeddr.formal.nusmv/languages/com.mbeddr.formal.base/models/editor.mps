@@ -3559,5 +3559,26 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="4qaoH_GDoF">
+    <property role="TrG5h" value="iconCell_" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="gc7cB" id="4qaoH_GDHg" role="2wV5jI">
+      <node concept="3VJUX4" id="4qaoH_GDHk" role="3YsKMw">
+        <node concept="3clFbS" id="4qaoH_GDHo" role="2VODD2">
+          <node concept="3clFbF" id="4qaoH_GE4a" role="3cqZAp">
+            <node concept="2ShNRf" id="4qaoH_GE48" role="3clFbG">
+              <node concept="1pGfFk" id="4qaoH_GSV1" role="2ShVmc">
+                <ref role="37wK5l" node="DubiFB4e4X" resolve="IconCell" />
+                <node concept="pncrf" id="4qaoH_GSZ0" role="37wK5m" />
+                <node concept="3cmrfG" id="4qaoH_GTjS" role="37wK5m">
+                  <property role="3cmrfH" value="3" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
