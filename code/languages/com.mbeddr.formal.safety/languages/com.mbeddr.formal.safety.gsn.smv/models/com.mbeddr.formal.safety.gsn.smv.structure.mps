@@ -173,5 +173,17 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="4qaoH_EJ_i">
+    <property role="EcuMT" value="79421622115301714" />
+    <property role="3GE5qa" value="gsn.dsl.connections" />
+    <property role="TrG5h" value="InContextOfSmvModule" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+  </node>
+  <node concept="1TIwiD" id="4qaoH_EJ_j">
+    <property role="EcuMT" value="79421622115301715" />
+    <property role="3GE5qa" value="gsn.dsl.connections" />
+    <property role="TrG5h" value="SupportedBySmvVerificationResults" />
+    <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+  </node>
 </model>
 
