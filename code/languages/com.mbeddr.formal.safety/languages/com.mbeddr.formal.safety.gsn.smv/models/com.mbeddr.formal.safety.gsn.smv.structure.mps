@@ -155,13 +155,18 @@
     <ref role="1TJDcQ" to="py52:3GRi4m$r_RC" resolve="Solution" />
     <node concept="1TJgyi" id="4qaoH_E0cR" role="1TKVEl">
       <property role="IQ2nx" value="79421622115107639" />
-      <property role="TrG5h" value="date" />
+      <property role="TrG5h" value="dateLong" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4qaoH_PEf3" role="1TKVEl">
+      <property role="IQ2nx" value="79421622118163395" />
+      <property role="TrG5h" value="dateShort" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="4qaoH_E0cT" role="1TKVEl">
       <property role="IQ2nx" value="79421622115107641" />
-      <property role="TrG5h" value="hash" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <property role="TrG5h" value="success" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1irR5M" id="4qaoH_EiRU" role="rwd14">
       <property role="2$rrk2" value="3" />
