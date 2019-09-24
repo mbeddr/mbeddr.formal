@@ -66,6 +66,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -287,6 +288,50 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4qaoH_QWEg" role="3cqZAp" />
+        <node concept="3clFbF" id="4qaoH_QWLv" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_QXpx" role="3clFbG">
+            <node concept="37vLTw" id="4qaoH_QWLt" role="2Oq$k0">
+              <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="4qaoH_R1R4" role="2OqNvi">
+              <node concept="2ShNRf" id="4qaoH_R1VH" role="25WWJ7">
+                <node concept="HV5vD" id="4qaoH_R2oW" role="2ShVmc">
+                  <ref role="HV5vE" node="4qaoH_QNoN" resolve="ConnectionFromSmvTestingGoalToContext" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4qaoH_R2u5" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_R2u6" role="3clFbG">
+            <node concept="37vLTw" id="4qaoH_R2u7" role="2Oq$k0">
+              <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="4qaoH_R2u8" role="2OqNvi">
+              <node concept="2ShNRf" id="4qaoH_R2u9" role="25WWJ7">
+                <node concept="HV5vD" id="4qaoH_R2ua" role="2ShVmc">
+                  <ref role="HV5vE" node="4qaoH_QQ5Y" resolve="ConnectionFromSmvTestingGoalToSmvTestingSolution" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4qaoH_R9X3" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_R9X4" role="3clFbG">
+            <node concept="37vLTw" id="4qaoH_R9X5" role="2Oq$k0">
+              <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="4qaoH_R9X6" role="2OqNvi">
+              <node concept="2ShNRf" id="4qaoH_R9X7" role="25WWJ7">
+                <node concept="HV5vD" id="4qaoH_R9X8" role="2ShVmc">
+                  <ref role="HV5vE" node="4qaoH_R6kD" resolve="ConnectionFromSmvTestingGoalToStrategy" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4qaoH_R2zV" role="3cqZAp" />
         <node concept="3clFbF" id="7kF4CZH_0i2" role="3cqZAp">
           <node concept="37vLTw" id="7kF4CZH_0i0" role="3clFbG">
             <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
@@ -304,7 +349,7 @@
   </node>
   <node concept="312cEu" id="7kF4CZH_Edr">
     <property role="TrG5h" value="ConnectionFromSmvGoalToStrategy" />
-    <property role="3GE5qa" value="connections" />
+    <property role="3GE5qa" value="connections.verification" />
     <node concept="2tJIrI" id="7kF4CZH_G6p" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZH_HYS" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -407,7 +452,7 @@
   </node>
   <node concept="312cEu" id="7kF4CZHAEsS">
     <property role="TrG5h" value="ConnectionFromSmvGoalToSmvContext" />
-    <property role="3GE5qa" value="connections" />
+    <property role="3GE5qa" value="connections.verification" />
     <node concept="2tJIrI" id="7kF4CZHAEsT" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZHAEsU" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -604,7 +649,7 @@
   </node>
   <node concept="312cEu" id="7kF4CZHAFs4">
     <property role="TrG5h" value="ConnectionFromSmvGoalToSmvSolution" />
-    <property role="3GE5qa" value="connections" />
+    <property role="3GE5qa" value="connections.verification" />
     <node concept="2tJIrI" id="7kF4CZHAFs5" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZHAFs6" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -797,6 +842,503 @@
     <node concept="3Tm1VV" id="7kF4CZHAFst" role="1B3o_S" />
     <node concept="3uibUv" id="7kF4CZHAG2Q" role="1zkMxy">
       <ref role="3uigEE" to="p9qi:7kF4CZHAaC7" resolve="ConnectionFromGoalToSolution" />
+    </node>
+  </node>
+  <node concept="312cEu" id="4qaoH_QNoN">
+    <property role="TrG5h" value="ConnectionFromSmvTestingGoalToContext" />
+    <property role="3GE5qa" value="connections.testing" />
+    <node concept="2tJIrI" id="4qaoH_QNoO" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_QNoP" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canCreate" />
+      <node concept="37vLTG" id="4qaoH_QNoQ" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="4qaoH_QNoR" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QNoS" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="4qaoH_QNoT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QNoU" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="4qaoH_QNoV" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QNoW" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="4qaoH_QNoX" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="4qaoH_QNoY" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_QNoZ" role="1B3o_S" />
+      <node concept="3clFbS" id="4qaoH_QNp0" role="3clF47">
+        <node concept="3clFbF" id="4qaoH_QNp1" role="3cqZAp">
+          <node concept="1Wc70l" id="4qaoH_QNp2" role="3clFbG">
+            <node concept="2OqwBi" id="4qaoH_QNp3" role="3uHU7w">
+              <node concept="2OqwBi" id="4qaoH_QNp4" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_QNp5" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_QNoU" resolve="toNode" />
+                </node>
+                <node concept="2yIwOk" id="4qaoH_QNp6" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="4qaoH_QNp7" role="2OqNvi">
+                <node concept="chp4Y" id="4qaoH_QPjp" role="3QVz_e">
+                  <ref role="cht4Q" to="py52:3GRi4m$rlpN" resolve="Context" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4qaoH_QNp9" role="3uHU7B">
+              <node concept="2OqwBi" id="4qaoH_QNpa" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_QNpb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_QNoQ" resolve="fromNode" />
+                </node>
+                <node concept="2yIwOk" id="4qaoH_QNpc" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="4qaoH_QNpd" role="2OqNvi">
+                <node concept="chp4Y" id="4qaoH_QP93" role="3QVz_e">
+                  <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_QNpf" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4qaoH_QNpg" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_QNph" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="create" />
+      <node concept="37vLTG" id="4qaoH_QNpi" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="4qaoH_QNpj" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QNpk" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="4qaoH_QNpl" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QNpm" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="4qaoH_QNpn" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QNpo" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="4qaoH_QNpp" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="4qaoH_QNpq" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_QNpr" role="1B3o_S" />
+      <node concept="3clFbS" id="4qaoH_QNps" role="3clF47">
+        <node concept="3cpWs8" id="4qaoH_QNpt" role="3cqZAp">
+          <node concept="3cpWsn" id="4qaoH_QNpu" role="3cpWs9">
+            <property role="TrG5h" value="gs" />
+            <node concept="3Tqbb2" id="4qaoH_QNpv" role="1tU5fm">
+              <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+            </node>
+            <node concept="2OqwBi" id="4qaoH_QNpw" role="33vP2m">
+              <node concept="37vLTw" id="4qaoH_QNpx" role="2Oq$k0">
+                <ref role="3cqZAo" node="4qaoH_QNpi" resolve="fromNode" />
+              </node>
+              <node concept="2Xjw5R" id="4qaoH_QNpy" role="2OqNvi">
+                <node concept="1xMEDy" id="4qaoH_QNpz" role="1xVPHs">
+                  <node concept="chp4Y" id="4qaoH_QNp$" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4qaoH_QNp_" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_QNpA" role="3clFbG">
+            <node concept="TSZUe" id="4qaoH_QNpB" role="2OqNvi">
+              <node concept="2pJPEk" id="4qaoH_QNpC" role="25WWJ7">
+                <node concept="2pJPED" id="4qaoH_QNpD" role="2pJPEn">
+                  <ref role="2pJxaS" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+                  <node concept="2pIpSj" id="4qaoH_QNpE" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
+                    <node concept="36biLy" id="4qaoH_QNpF" role="2pJxcZ">
+                      <node concept="1PxgMI" id="4qaoH_QNpG" role="36biLW">
+                        <node concept="chp4Y" id="4qaoH_QPM7" role="3oSUPX">
+                          <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+                        </node>
+                        <node concept="37vLTw" id="4qaoH_QNpI" role="1m5AlR">
+                          <ref role="3cqZAo" node="4qaoH_QNpi" resolve="fromNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="4qaoH_QNpJ" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
+                    <node concept="36biLy" id="4qaoH_QNpK" role="2pJxcZ">
+                      <node concept="1PxgMI" id="4qaoH_QNpL" role="36biLW">
+                        <node concept="chp4Y" id="4qaoH_QPO7" role="3oSUPX">
+                          <ref role="cht4Q" to="py52:3GRi4m$rlpN" resolve="Context" />
+                        </node>
+                        <node concept="37vLTw" id="4qaoH_QNpN" role="1m5AlR">
+                          <ref role="3cqZAo" node="4qaoH_QNpm" resolve="toNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4qaoH_QNpO" role="2Oq$k0">
+              <node concept="37vLTw" id="4qaoH_QNpP" role="2Oq$k0">
+                <ref role="3cqZAo" node="4qaoH_QNpu" resolve="gs" />
+              </node>
+              <node concept="3Tsc0h" id="4qaoH_QNpQ" role="2OqNvi">
+                <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_QNpR" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4qaoH_QNpS" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_QNpT" role="jymVt">
+      <property role="TrG5h" value="isValidStart" />
+      <node concept="10P_77" id="4qaoH_QNpU" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_QNpV" role="1B3o_S" />
+      <node concept="37vLTG" id="4qaoH_QNpW" role="3clF46">
+        <property role="TrG5h" value="endpoint" />
+        <node concept="3uibUv" id="4qaoH_QNpX" role="1tU5fm">
+          <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_QNpY" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="4qaoH_QNpZ" role="3clF47">
+        <node concept="3clFbF" id="4qaoH_QNq0" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_QNq1" role="3clFbG">
+            <node concept="2OqwBi" id="4qaoH_QNq2" role="2Oq$k0">
+              <node concept="2OqwBi" id="4qaoH_QNq3" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_QNq4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_QNpW" resolve="endpoint" />
+                </node>
+                <node concept="liA8E" id="4qaoH_QNq5" role="2OqNvi">
+                  <ref role="37wK5l" to="nkm5:6clvLV1Yg6Z" resolve="getSNode" />
+                </node>
+              </node>
+              <node concept="2yIwOk" id="4qaoH_QNq6" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="4qaoH_QNq7" role="2OqNvi">
+              <node concept="chp4Y" id="4qaoH_QQ0E" role="3QVz_e">
+                <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4qaoH_QNq9" role="jymVt" />
+    <node concept="3Tm1VV" id="4qaoH_QNqa" role="1B3o_S" />
+    <node concept="3uibUv" id="4qaoH_QNqb" role="1zkMxy">
+      <ref role="3uigEE" to="p9qi:7kF4CZHA0BC" resolve="ConnectionFromGoalToContext" />
+    </node>
+  </node>
+  <node concept="312cEu" id="4qaoH_QQ5Y">
+    <property role="TrG5h" value="ConnectionFromSmvTestingGoalToSmvTestingSolution" />
+    <property role="3GE5qa" value="connections.testing" />
+    <node concept="2tJIrI" id="4qaoH_QQ5Z" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_QQ60" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canCreate" />
+      <node concept="37vLTG" id="4qaoH_QQ61" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="4qaoH_QQ62" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QQ63" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="4qaoH_QQ64" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QQ65" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="4qaoH_QQ66" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QQ67" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="4qaoH_QQ68" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="4qaoH_QQ69" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_QQ6a" role="1B3o_S" />
+      <node concept="3clFbS" id="4qaoH_QQ6b" role="3clF47">
+        <node concept="3clFbF" id="4qaoH_QQ6c" role="3cqZAp">
+          <node concept="1Wc70l" id="4qaoH_QQ6d" role="3clFbG">
+            <node concept="2OqwBi" id="4qaoH_QQ6e" role="3uHU7w">
+              <node concept="2OqwBi" id="4qaoH_QQ6f" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_QQ6g" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_QQ65" resolve="toNode" />
+                </node>
+                <node concept="2yIwOk" id="4qaoH_QQ6h" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="4qaoH_QQ6i" role="2OqNvi">
+                <node concept="chp4Y" id="4qaoH_QSLY" role="3QVz_e">
+                  <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4qaoH_QQ6k" role="3uHU7B">
+              <node concept="2OqwBi" id="4qaoH_QQ6l" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_QQ6m" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_QQ61" resolve="fromNode" />
+                </node>
+                <node concept="2yIwOk" id="4qaoH_QQ6n" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="4qaoH_QQ6o" role="2OqNvi">
+                <node concept="chp4Y" id="4qaoH_QSF8" role="3QVz_e">
+                  <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_QQ6q" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4qaoH_QQ6r" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_QQ6s" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="create" />
+      <node concept="37vLTG" id="4qaoH_QQ6t" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="4qaoH_QQ6u" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QQ6v" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="4qaoH_QQ6w" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QQ6x" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="4qaoH_QQ6y" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_QQ6z" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="4qaoH_QQ6$" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="4qaoH_QQ6_" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_QQ6A" role="1B3o_S" />
+      <node concept="3clFbS" id="4qaoH_QQ6B" role="3clF47">
+        <node concept="3cpWs8" id="4qaoH_QQ6C" role="3cqZAp">
+          <node concept="3cpWsn" id="4qaoH_QQ6D" role="3cpWs9">
+            <property role="TrG5h" value="gs" />
+            <node concept="3Tqbb2" id="4qaoH_QQ6E" role="1tU5fm">
+              <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+            </node>
+            <node concept="2OqwBi" id="4qaoH_QQ6F" role="33vP2m">
+              <node concept="37vLTw" id="4qaoH_QQ6G" role="2Oq$k0">
+                <ref role="3cqZAo" node="4qaoH_QQ6t" resolve="fromNode" />
+              </node>
+              <node concept="2Xjw5R" id="4qaoH_QQ6H" role="2OqNvi">
+                <node concept="1xMEDy" id="4qaoH_QQ6I" role="1xVPHs">
+                  <node concept="chp4Y" id="4qaoH_QQ6J" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4qaoH_QQ6K" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_QQ6L" role="3clFbG">
+            <node concept="TSZUe" id="4qaoH_QQ6M" role="2OqNvi">
+              <node concept="2pJPEk" id="4qaoH_QQ6N" role="25WWJ7">
+                <node concept="2pJPED" id="4qaoH_QQ6O" role="2pJPEn">
+                  <ref role="2pJxaS" to="bsp8:4qaoH_QSU$" resolve="SupportedBySmvTestingResults" />
+                  <node concept="2pIpSj" id="4qaoH_QQ6P" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
+                    <node concept="36biLy" id="4qaoH_QQ6Q" role="2pJxcZ">
+                      <node concept="1PxgMI" id="4qaoH_QQ6R" role="36biLW">
+                        <node concept="chp4Y" id="4qaoH_QTcQ" role="3oSUPX">
+                          <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+                        </node>
+                        <node concept="37vLTw" id="4qaoH_QQ6T" role="1m5AlR">
+                          <ref role="3cqZAo" node="4qaoH_QQ6t" resolve="fromNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="4qaoH_QQ6U" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
+                    <node concept="36biLy" id="4qaoH_QQ6V" role="2pJxcZ">
+                      <node concept="1PxgMI" id="4qaoH_QQ6W" role="36biLW">
+                        <node concept="chp4Y" id="4qaoH_QQ6X" role="3oSUPX">
+                          <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                        </node>
+                        <node concept="37vLTw" id="4qaoH_QQ6Y" role="1m5AlR">
+                          <ref role="3cqZAo" node="4qaoH_QQ6x" resolve="toNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4qaoH_QQ6Z" role="2Oq$k0">
+              <node concept="37vLTw" id="4qaoH_QQ70" role="2Oq$k0">
+                <ref role="3cqZAo" node="4qaoH_QQ6D" resolve="gs" />
+              </node>
+              <node concept="3Tsc0h" id="4qaoH_QQ71" role="2OqNvi">
+                <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_QQ72" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4qaoH_QQ73" role="jymVt" />
+    <node concept="2tJIrI" id="4qaoH_QQ74" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_QQ75" role="jymVt">
+      <property role="TrG5h" value="isValidStart" />
+      <node concept="10P_77" id="4qaoH_QQ76" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_QQ77" role="1B3o_S" />
+      <node concept="37vLTG" id="4qaoH_QQ78" role="3clF46">
+        <property role="TrG5h" value="endpoint" />
+        <node concept="3uibUv" id="4qaoH_QQ79" role="1tU5fm">
+          <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_QQ7a" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="4qaoH_QQ7b" role="3clF47">
+        <node concept="3clFbF" id="4qaoH_QQ7c" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_QQ7d" role="3clFbG">
+            <node concept="2OqwBi" id="4qaoH_QQ7e" role="2Oq$k0">
+              <node concept="2OqwBi" id="4qaoH_QQ7f" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_QQ7g" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_QQ78" resolve="endpoint" />
+                </node>
+                <node concept="liA8E" id="4qaoH_QQ7h" role="2OqNvi">
+                  <ref role="37wK5l" to="nkm5:6clvLV1Yg6Z" resolve="getSNode" />
+                </node>
+              </node>
+              <node concept="2yIwOk" id="4qaoH_QQ7i" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="4qaoH_QQ7j" role="2OqNvi">
+              <node concept="chp4Y" id="4qaoH_QTj9" role="3QVz_e">
+                <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4qaoH_QQ7l" role="1B3o_S" />
+    <node concept="3uibUv" id="4qaoH_QQ7m" role="1zkMxy">
+      <ref role="3uigEE" to="p9qi:7kF4CZHAaC7" resolve="ConnectionFromGoalToSolution" />
+    </node>
+  </node>
+  <node concept="312cEu" id="4qaoH_R6kD">
+    <property role="TrG5h" value="ConnectionFromSmvTestingGoalToStrategy" />
+    <property role="3GE5qa" value="connections.testing" />
+    <node concept="2tJIrI" id="4qaoH_R6kE" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_R6kF" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canCreate" />
+      <node concept="37vLTG" id="4qaoH_R6kG" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="4qaoH_R6kH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_R6kI" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="4qaoH_R6kJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_R6kK" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="4qaoH_R6kL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4qaoH_R6kM" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="4qaoH_R6kN" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="4qaoH_R6kO" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_R6kP" role="1B3o_S" />
+      <node concept="3clFbS" id="4qaoH_R6kQ" role="3clF47">
+        <node concept="3clFbF" id="4qaoH_R6kR" role="3cqZAp">
+          <node concept="1Wc70l" id="4qaoH_R6kS" role="3clFbG">
+            <node concept="2OqwBi" id="4qaoH_R6kT" role="3uHU7w">
+              <node concept="2OqwBi" id="4qaoH_R6kU" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_R6kV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_R6kK" resolve="toNode" />
+                </node>
+                <node concept="2yIwOk" id="4qaoH_R6kW" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="4qaoH_R6kX" role="2OqNvi">
+                <node concept="chp4Y" id="4qaoH_R6kY" role="3QVz_e">
+                  <ref role="cht4Q" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4qaoH_R6kZ" role="3uHU7B">
+              <node concept="2OqwBi" id="4qaoH_R6l0" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_R6l1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_R6kG" resolve="fromNode" />
+                </node>
+                <node concept="2yIwOk" id="4qaoH_R6l2" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="4qaoH_R6l3" role="2OqNvi">
+                <node concept="chp4Y" id="4qaoH_R70G" role="3QVz_e">
+                  <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_R6l5" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4qaoH_R6l6" role="jymVt" />
+    <node concept="3clFb_" id="4qaoH_R6l7" role="jymVt">
+      <property role="TrG5h" value="isValidStart" />
+      <node concept="10P_77" id="4qaoH_R6l8" role="3clF45" />
+      <node concept="3Tm1VV" id="4qaoH_R6l9" role="1B3o_S" />
+      <node concept="37vLTG" id="4qaoH_R6la" role="3clF46">
+        <property role="TrG5h" value="endpoint" />
+        <node concept="3uibUv" id="4qaoH_R6lb" role="1tU5fm">
+          <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4qaoH_R6lc" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="4qaoH_R6ld" role="3clF47">
+        <node concept="3clFbF" id="4qaoH_R6le" role="3cqZAp">
+          <node concept="2OqwBi" id="4qaoH_R6lf" role="3clFbG">
+            <node concept="2OqwBi" id="4qaoH_R6lg" role="2Oq$k0">
+              <node concept="2OqwBi" id="4qaoH_R6lh" role="2Oq$k0">
+                <node concept="37vLTw" id="4qaoH_R6li" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4qaoH_R6la" resolve="endpoint" />
+                </node>
+                <node concept="liA8E" id="4qaoH_R6lj" role="2OqNvi">
+                  <ref role="37wK5l" to="nkm5:6clvLV1Yg6Z" resolve="getSNode" />
+                </node>
+              </node>
+              <node concept="2yIwOk" id="4qaoH_R6lk" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="4qaoH_R6ll" role="2OqNvi">
+              <node concept="chp4Y" id="4qaoH_R7b2" role="3QVz_e">
+                <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4qaoH_R6ln" role="1B3o_S" />
+    <node concept="3uibUv" id="4qaoH_R6lo" role="1zkMxy">
+      <ref role="3uigEE" to="p9qi:7kF4CZH_Edr" resolve="ConnectionFromGoalToStrategy" />
     </node>
   </node>
 </model>

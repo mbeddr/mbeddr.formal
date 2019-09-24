@@ -9,6 +9,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -29,6 +30,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -99,8 +101,8 @@
     <property role="TrG5h" value="SmvSpecGoal" />
     <property role="34LRSv" value="SMV Spec Goal" />
     <property role="R4oN_" value="formal spec in SMV" />
-    <property role="3GE5qa" value="gsn.dsl" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <ref role="1TJDcQ" node="4qaoH_Q49c" resolve="SmvGoalBase" />
     <node concept="1TJgyj" id="71RA3dH$OQ6" role="1TKVEi">
       <property role="IQ2ns" value="8104113401125621126" />
       <property role="20lmBu" value="reference" />
@@ -125,7 +127,7 @@
   </node>
   <node concept="1TIwiD" id="4qaoH_DQhh">
     <property role="EcuMT" value="79421622115066961" />
-    <property role="3GE5qa" value="gsn.dsl" />
+    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
     <property role="TrG5h" value="SmvSpecContext" />
     <property role="34LRSv" value="SMV Spec Context" />
     <property role="R4oN_" value="formal context spec in SMV" />
@@ -148,7 +150,7 @@
   </node>
   <node concept="1TIwiD" id="4qaoH_E0cQ">
     <property role="EcuMT" value="79421622115107638" />
-    <property role="3GE5qa" value="gsn.dsl" />
+    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
     <property role="TrG5h" value="SmvSpecSolution" />
     <property role="34LRSv" value="SMV Spec Solution" />
     <property role="R4oN_" value="solution based on a nusmv verification" />
@@ -188,6 +190,55 @@
     <property role="EcuMT" value="79421622115301715" />
     <property role="3GE5qa" value="gsn.dsl.connections" />
     <property role="TrG5h" value="SupportedBySmvVerificationResults" />
+    <ref role="1TJDcQ" node="4qaoH_SPh8" resolve="SupportedBySmvResultsBase" />
+  </node>
+  <node concept="1TIwiD" id="4qaoH_PPfz">
+    <property role="EcuMT" value="79421622118208483" />
+    <property role="3GE5qa" value="gsn.dsl.smv.tests" />
+    <property role="TrG5h" value="SmvTestsGoal" />
+    <property role="34LRSv" value="SMV Tests Goal" />
+    <property role="R4oN_" value="tests collection on SMV model" />
+    <ref role="1TJDcQ" node="4qaoH_Q49c" resolve="SmvGoalBase" />
+    <node concept="1TJgyj" id="4qaoH_PPf$" role="1TKVEi">
+      <property role="IQ2ns" value="79421622118208484" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="4qaoH_PPf_" role="1TKVEi">
+      <property role="IQ2ns" value="79421622118208485" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="tests" />
+      <ref role="20lvS9" to="fnq2:43FRfGJUEcN" resolve="TestsCollection" />
+    </node>
+    <node concept="1irR5M" id="4qaoH_Q3Lf" role="rwd14">
+      <property role="2$rrk2" value="4" />
+      <node concept="1irPie" id="4qaoH_Q3Lk" role="1irR9h">
+        <property role="1irPi9" value="T" />
+        <node concept="3PKj8D" id="4qaoH_Q3Lp" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4qaoH_Q49c">
+    <property role="EcuMT" value="79421622118269516" />
+    <property role="3GE5qa" value="gsn.dsl" />
+    <property role="TrG5h" value="SmvGoalBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+  </node>
+  <node concept="1TIwiD" id="4qaoH_QSU$">
+    <property role="EcuMT" value="79421622118485668" />
+    <property role="3GE5qa" value="gsn.dsl.connections" />
+    <property role="TrG5h" value="SupportedBySmvTestingResults" />
+    <ref role="1TJDcQ" node="4qaoH_SPh8" resolve="SupportedBySmvResultsBase" />
+  </node>
+  <node concept="1TIwiD" id="4qaoH_SPh8">
+    <property role="EcuMT" value="79421622118995016" />
+    <property role="3GE5qa" value="gsn.dsl.connections" />
+    <property role="TrG5h" value="SupportedBySmvResultsBase" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
   </node>
 </model>
