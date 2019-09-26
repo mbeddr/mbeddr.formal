@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2fb6d071-2040-4ace-9308-7a826b43c930(com.mbeddr.formal.req.sandbox.simple_requirements)">
+<model ref="r:2fb6d071-2040-4ace-9308-7a826b43c930(com.mbeddr.formal.req.sandbox._010_requirements)">
   <persistence version="9" />
   <languages>
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
@@ -49,7 +49,9 @@
       <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
         <child id="7842584090743586905" name="content" index="2HcbjO" />
         <child id="7842584090743385207" name="params" index="2Hdtzq" />
@@ -63,6 +65,12 @@
       </concept>
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
+      </concept>
+    </language>
+    <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
+        <child id="7842584090744231480" name="right" index="2H9Ial" />
+        <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
     </language>
     <language id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv">
@@ -79,6 +87,9 @@
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
       <concept id="7526568111198989908" name="com.mbeddr.formal.nusmv.ext.structure.EnumDeclaration" flags="ng" index="2XJXe5">
         <child id="7526568111198989997" name="members" index="2XJXdW" />
+      </concept>
+      <concept id="5465471166991940168" name="com.mbeddr.formal.nusmv.ext.structure.TypedParameterDeclaration" flags="ng" index="3_qfHp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -130,7 +141,6 @@
           </node>
         </node>
       </node>
-      <node concept="1QQeAL" id="2N7iSwGBlGI" role="1QQeAC" />
     </node>
     <node concept="0lH3_" id="2N7iSwG$_7j" role="1QQeBF" />
     <node concept="0lhDl" id="2N7iSwG_YJv" role="1QQeBF">
@@ -258,7 +268,52 @@
       <node concept="139BCV" id="7$QIgKU4odq" role="0nOlf" />
     </node>
     <node concept="0lH3_" id="3WxyBBNDAQe" role="1QQeBF" />
-    <node concept="0lH3_" id="2N7iSwGBn_I" role="1QQeBF" />
+    <node concept="0lhDl" id="71RA3dHzBIE" role="1QQeBF">
+      <property role="0lsPA" value="ID_03" />
+      <property role="0ke_I" value="dan" />
+      <node concept="1QQeFk" id="71RA3dHzBIF" role="0nOlf" />
+      <node concept="19SGf9" id="71RA3dHzBIG" role="1QQeG9">
+        <node concept="19SUe$" id="71RA3dHzBIH" role="19SJt6">
+          <property role="19SUeA" value="Structure of merger" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="71RA3dHzBMD" role="1QQeAC">
+        <node concept="0nzK2" id="71RA3dHzBME" role="1QQeAV">
+          <node concept="19SGf9" id="71RA3dHzBMF" role="0nzdz">
+            <node concept="19SUe$" id="71RA3dHzBMG" role="19SJt6">
+              <property role="19SUeA" value="The merger has two inputs: left and right and one output which is true if one of the inputs is true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0mxsP" id="71RA3dHzBNr" role="1QQeAC">
+        <node concept="2Hdtz0" id="71RA3dHzBNQ" role="0my_6">
+          <property role="TrG5h" value="merger" />
+          <node concept="32O2o0" id="71RA3dHzBP_" role="2HcbjO">
+            <node concept="JlCpM" id="71RA3dHzBQ5" role="32O2ov">
+              <property role="TrG5h" value="out" />
+              <node concept="2HbMDt" id="71RA3dHzBQO" role="1zoetD">
+                <node concept="32Ogvo" id="71RA3dHzBRq" role="2H9Ial">
+                  <ref role="32Ogvr" node="71RA3dHzBOU" resolve="right" />
+                </node>
+                <node concept="32Ogvo" id="71RA3dHzBQ_" role="2H9Iav">
+                  <ref role="32Ogvr" node="71RA3dHzBOb" resolve="left" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3_qfHp" id="71RA3dHzBOb" role="2Hdtzq">
+            <property role="TrG5h" value="left" />
+            <node concept="2Hds6S" id="71RA3dHzBOs" role="2HdssA" />
+          </node>
+          <node concept="3_qfHp" id="71RA3dHzBOU" role="2Hdtzq">
+            <property role="TrG5h" value="right" />
+            <node concept="2Hds6S" id="71RA3dHzBPp" role="2HdssA" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAL" id="71RA3dHzBRG" role="1QQeAC" />
+    </node>
   </node>
 </model>
 

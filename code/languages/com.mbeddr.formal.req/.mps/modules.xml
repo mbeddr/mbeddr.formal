@@ -2,9 +2,12 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.base/com.mbeddr.formal.req.base.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.nusmv/com.mbeddr.formal.req.nusmv.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.sandbox/com.mbeddr.formal.req.sandbox.msd" folder="" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req/languages/com.mbeddr.formal.req.base/com.mbeddr.formal.req.base.mpl" folder="lang" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req/languages/com.mbeddr.formal.req.nusmv/com.mbeddr.formal.req.nusmv.mpl" folder="lang" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req/languages/com.mbeddr.formal.req.tl_patterns.nusmv/com.mbeddr.formal.req.tl_patterns.nusmv.mpl" folder="lang" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req/languages/com.mbeddr.formal.req.tl_patterns/com.mbeddr.formal.req.tl_patterns.mpl" folder="lang" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req/solutions/com.mbeddr.formal.req.sandbox/com.mbeddr.formal.req.sandbox.msd" folder="lang" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req/tests/test.com.mbeddr.formal.req.tl_patterns/test.com.mbeddr.formal.req.tl_patterns.msd" folder="test" />
     </projectModules>
   </component>
 </project>
