@@ -13,12 +13,29 @@
   <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
+        <child id="1215604436604" name="nodeOperations" index="7EUXB" />
+      </concept>
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
+        <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
+      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
+        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
+      </concept>
+      <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
+      <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
+        <reference id="1210674534086" name="declaration" index="3xOPvv" />
+      </concept>
+      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
+      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns">
       <concept id="7240923401194677068" name="com.mbeddr.formal.req.tl_patterns.structure.GloballyScope" flags="ng" index="12ukSO" />
@@ -29,6 +46,16 @@
       <concept id="7240923401194766845" name="com.mbeddr.formal.req.tl_patterns.structure.UniversalityPattern" flags="ng" index="12uYM5">
         <child id="7240923401194766846" name="p" index="12uYM6" />
       </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -100,6 +127,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -248,6 +278,17 @@
   </node>
   <node concept="1lH9Xt" id="6hWVnwAcskU">
     <property role="TrG5h" value="_010_TestScopingOfSMVWithinTLPatterns" />
+    <node concept="1LZb2c" id="6hWVnwAcJFO" role="1SL9yI">
+      <property role="TrG5h" value="test_tl_nusmv_scoping" />
+      <node concept="3cqZAl" id="6hWVnwAcJFP" role="3clF45" />
+      <node concept="3clFbS" id="6hWVnwAcJFT" role="3clF47">
+        <node concept="3Ca1qy" id="6hWVnwAcJHj" role="3cqZAp">
+          <node concept="3xONca" id="6hWVnwAcJHt" role="3qv8fS">
+            <ref role="3xOPvv" node="6hWVnwAcJFw" resolve="tests" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="6hWVnwAcskV" role="1SKRRt">
       <node concept="1QQeGf" id="6hWVnwAcsl0" role="1qenE9">
         <property role="TrG5h" value="rd" />
@@ -362,8 +403,98 @@
             </node>
           </node>
         </node>
+        <node concept="0lhDl" id="6hWVnwAcKcB" role="1QQeBF">
+          <property role="0lsPA" value="id3" />
+          <property role="0ke_I" value="dan" />
+          <node concept="12noo2" id="6hWVnwAcKcC" role="1QQeAC">
+            <ref role="12no6r" node="6hWVnwAcro7" resolve="top_level" />
+            <node concept="12utKC" id="6hWVnwAcKcD" role="12no06">
+              <node concept="12ukSO" id="6hWVnwAcKcE" role="12ut_$" />
+              <node concept="12uYM5" id="6hWVnwAcKcF" role="12ut_r">
+                <node concept="12qyU8" id="6hWVnwAcKla" role="12uYM6">
+                  <ref role="12qyFn" node="6hWVnwAcrvD" resolve="comp_first_level_1_in1" />
+                  <node concept="7CXmI" id="6hWVnwAcKn7" role="lGtFl">
+                    <node concept="1TM$A" id="6hWVnwAcKn8" role="7EUXB" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="12utKC" id="6hWVnwAcKcJ" role="12no06">
+              <node concept="12ukSO" id="6hWVnwAcKcK" role="12ut_$" />
+              <node concept="12uYM5" id="6hWVnwAcKcL" role="12ut_r">
+                <node concept="12qLwa" id="6hWVnwAcKnl" role="12uYM6">
+                  <ref role="12qLwd" node="6hWVnwAcrv_" resolve="comp_first_level_1_out1" />
+                  <node concept="7CXmI" id="6hWVnwAcKp3" role="lGtFl">
+                    <node concept="1TM$A" id="6hWVnwAcKp4" role="7EUXB" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="12utKC" id="6hWVnwAcKwH" role="12no06">
+              <node concept="12ukSO" id="6hWVnwAcKwI" role="12ut_$" />
+              <node concept="12uYM5" id="6hWVnwAcKwJ" role="12ut_r">
+                <node concept="1ziNjN" id="6hWVnwAcKzs" role="12uYM6">
+                  <node concept="12kJBe" id="6hWVnwAcKzY" role="1ziNjJ">
+                    <ref role="12kJB1" node="6hWVnwAcrry" resolve="top_level_in1" />
+                    <node concept="7CXmI" id="6hWVnwAcMdX" role="lGtFl">
+                      <node concept="1TM$A" id="6hWVnwAcMdY" role="7EUXB" />
+                    </node>
+                  </node>
+                  <node concept="12mZVw" id="6hWVnwAcKza" role="1ziNjM">
+                    <ref role="12mZVz" node="6hWVnwAcrzi" resolve="top_level_inst_1_comp_first_level_1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="12utKC" id="6hWVnwAcKcP" role="12no06">
+              <node concept="12ukSO" id="6hWVnwAcKcQ" role="12ut_$" />
+              <node concept="12uYM5" id="6hWVnwAcKcR" role="12ut_r">
+                <node concept="12mZVw" id="6hWVnwAcKuI" role="12uYM6">
+                  <ref role="12mZVz" node="6hWVnwAcsby" resolve="comp_first_level_1_inst_component_second_level_1" />
+                  <node concept="7CXmI" id="6hWVnwAcKwk" role="lGtFl">
+                    <node concept="1TM$A" id="6hWVnwAcKwl" role="7EUXB" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="12utKC" id="6hWVnwAcKsK" role="12no06">
+              <node concept="12ukSO" id="6hWVnwAcKsL" role="12ut_$" />
+              <node concept="12uYM5" id="6hWVnwAcKsM" role="12ut_r">
+                <node concept="12qyU8" id="6hWVnwAcKsN" role="12uYM6">
+                  <ref role="12qyFn" node="6hWVnwAcrTi" resolve="comp_first_level_2_in1" />
+                  <node concept="7CXmI" id="6hWVnwAcKsO" role="lGtFl">
+                    <node concept="1TM$A" id="6hWVnwAcKsP" role="7EUXB" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="12utKC" id="6hWVnwAcKcV" role="12no06">
+              <node concept="12ukSO" id="6hWVnwAcKcW" role="12ut_$" />
+              <node concept="12uYM5" id="6hWVnwAcKcX" role="12ut_r">
+                <node concept="12qLwa" id="6hWVnwAcKri" role="12uYM6">
+                  <ref role="12qLwd" node="6hWVnwAcrTe" resolve="comp_first_level_2_out1" />
+                  <node concept="7CXmI" id="6hWVnwAcKsy" role="lGtFl">
+                    <node concept="1TM$A" id="6hWVnwAcKsz" role="7EUXB" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1QQeFk" id="6hWVnwAcKd1" role="0nOlf" />
+          <node concept="19SGf9" id="6hWVnwAcKd2" role="1QQeG9">
+            <node concept="19SUe$" id="6hWVnwAcKd3" role="19SJt6">
+              <property role="19SUeA" value="Negative test for scoping " />
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="6hWVnwAcJFw" role="lGtFl">
+          <property role="TrG5h" value="tests" />
+        </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="6Kf5KB75Mz6">
+    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req" />
   </node>
 </model>
 
