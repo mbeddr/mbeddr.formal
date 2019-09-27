@@ -167,5 +167,10 @@
       <ref role="20lvS9" to="rvcq:5HwHP1Odz4y" resolve="Output" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6hWVnwAeh58">
+    <property role="EcuMT" value="7240923401198047560" />
+    <property role="TrG5h" value="GeneratorOnly" />
+    <ref role="1TJDcQ" node="6hWVnwA8mHU" resolve="SystemScope" />
+  </node>
 </model>
 

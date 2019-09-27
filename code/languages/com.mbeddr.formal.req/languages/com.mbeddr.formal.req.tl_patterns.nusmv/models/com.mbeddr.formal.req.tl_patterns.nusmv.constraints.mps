@@ -46,6 +46,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -508,6 +509,16 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6hWVnwAeh5$">
+    <ref role="1M2myG" to="uu78:6hWVnwAeh58" resolve="GeneratorOnly" />
+    <node concept="9S07l" id="6hWVnwAeh5_" role="9Vyp8">
+      <node concept="3clFbS" id="6hWVnwAeh5A" role="2VODD2">
+        <node concept="3clFbF" id="6hWVnwAehcV" role="3cqZAp">
+          <node concept="3clFbT" id="6hWVnwAehcU" role="3clFbG" />
         </node>
       </node>
     </node>
