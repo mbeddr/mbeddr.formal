@@ -130,5 +130,81 @@
       <node concept="l2Vlx" id="6WmpcHMQBtf" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6hWVnwAhZux">
+    <property role="3GE5qa" value="tl_patterns.scope" />
+    <ref role="1XX52x" to="aoh3:6hWVnwAhZui" resolve="BetweenScope" />
+    <node concept="3EZMnI" id="6hWVnwAhZuz" role="2wV5jI">
+      <node concept="3F0ifn" id="6hWVnwAhZu$" role="3EZMnx">
+        <property role="3F0ifm" value="between" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAhZu_" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAhZuj" resolve="q" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAhZv4" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAhZvz" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAhZuo" resolve="r" />
+      </node>
+      <node concept="l2Vlx" id="6hWVnwAhZuA" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6hWVnwAk$Tu">
+    <property role="3GE5qa" value="tl_patterns.scope" />
+    <ref role="1XX52x" to="aoh3:6hWVnwAk$xd" resolve="AfterUntilScope" />
+    <node concept="3EZMnI" id="6hWVnwAk$Tw" role="2wV5jI">
+      <node concept="3F0ifn" id="6hWVnwAk$Tx" role="3EZMnx">
+        <property role="3F0ifm" value="after" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAk$Ty" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAk$TY" resolve="q" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAk$Tz" role="3EZMnx">
+        <property role="3F0ifm" value="until" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAk$T$" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAk$TZ" resolve="r" />
+      </node>
+      <node concept="l2Vlx" id="6hWVnwAk$T_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6hWVnwAljdN">
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <ref role="1XX52x" to="aoh3:6hWVnwAljdo" resolve="Universality" />
+    <node concept="3EZMnI" id="6hWVnwAljdP" role="2wV5jI">
+      <node concept="3F1sOY" id="6hWVnwAljdQ" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAljdp" resolve="p" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAljdR" role="3EZMnx">
+        <property role="3F0ifm" value="is true" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAljdS" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
+      </node>
+      <node concept="l2Vlx" id="6hWVnwAljdT" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6hWVnwAlJAx">
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <ref role="1XX52x" to="aoh3:6hWVnwAlJAv" resolve="Existence" />
+    <node concept="3EZMnI" id="6hWVnwAlJAz" role="2wV5jI">
+      <node concept="3F1sOY" id="6hWVnwAlJA$" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAlJAw" resolve="p" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAlJA_" role="3EZMnx">
+        <property role="3F0ifm" value="becomes true" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAlJAA" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
+      </node>
+      <node concept="l2Vlx" id="6hWVnwAlJAB" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

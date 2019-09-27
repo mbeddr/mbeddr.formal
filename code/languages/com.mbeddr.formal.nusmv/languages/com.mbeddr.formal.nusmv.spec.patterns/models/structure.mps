@@ -103,6 +103,7 @@
     <property role="3GE5qa" value="tl_patterns.scope" />
     <property role="TrG5h" value="BeforeScope" />
     <property role="34LRSv" value="before R" />
+    <property role="R4oN_" value="before R" />
     <ref role="1TJDcQ" node="6WmpcHMKsao" resolve="AbstractScope" />
     <node concept="1TJgyj" id="6WmpcHMKwut" role="1TKVEi">
       <property role="IQ2ns" value="8004696212664092573" />
@@ -119,6 +120,74 @@
     <property role="R4oN_" value="forall weak until" />
     <property role="3GE5qa" value="tl_extensions.ctl" />
     <ref role="1TJDcQ" to="gioj:6WmpcHMQ_RL" resolve="BinaryCTLExpression" />
+  </node>
+  <node concept="1TIwiD" id="6hWVnwAhZui">
+    <property role="EcuMT" value="7240923401199024018" />
+    <property role="3GE5qa" value="tl_patterns.scope" />
+    <property role="TrG5h" value="BetweenScope" />
+    <property role="34LRSv" value="between Q and R" />
+    <property role="R4oN_" value="between Q and R" />
+    <ref role="1TJDcQ" node="6WmpcHMKsao" resolve="AbstractScope" />
+    <node concept="1TJgyj" id="6hWVnwAhZuj" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401199024019" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="q" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6hWVnwAhZuo" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401199024024" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="r" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6hWVnwAk$xd">
+    <property role="EcuMT" value="7240923401199700045" />
+    <property role="3GE5qa" value="tl_patterns.scope" />
+    <property role="TrG5h" value="AfterUntilScope" />
+    <property role="34LRSv" value="after Q until R" />
+    <property role="R4oN_" value="after Q until R" />
+    <ref role="1TJDcQ" node="6WmpcHMKsao" resolve="AbstractScope" />
+    <node concept="1TJgyj" id="6hWVnwAk$TY" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401199701630" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="q" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6hWVnwAk$TZ" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401199701631" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="r" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6hWVnwAljdo">
+    <property role="EcuMT" value="7240923401199891288" />
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <property role="TrG5h" value="Universality" />
+    <property role="34LRSv" value="P is true ..." />
+    <property role="R4oN_" value="universality property" />
+    <ref role="1TJDcQ" node="6WmpcHMKsaj" resolve="AbstractProperty" />
+    <node concept="1TJgyj" id="6hWVnwAljdp" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401199891289" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6hWVnwAlJAv">
+    <property role="EcuMT" value="7240923401200007583" />
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <property role="TrG5h" value="Existence" />
+    <property role="34LRSv" value="P becomes true ..." />
+    <property role="R4oN_" value="existence property" />
+    <ref role="1TJDcQ" node="6WmpcHMKsaj" resolve="AbstractProperty" />
+    <node concept="1TJgyj" id="6hWVnwAlJAw" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401200007584" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
   </node>
 </model>
 

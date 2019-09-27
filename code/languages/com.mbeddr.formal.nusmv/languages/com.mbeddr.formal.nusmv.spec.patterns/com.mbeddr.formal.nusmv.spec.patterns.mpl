@@ -55,7 +55,36 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401199934097" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401199919967" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
