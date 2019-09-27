@@ -206,5 +206,45 @@
       <node concept="l2Vlx" id="6hWVnwAlJAB" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6hWVnwAoCkv">
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <ref role="1XX52x" to="aoh3:6hWVnwAoCku" resolve="Precedence" />
+    <node concept="3EZMnI" id="6hWVnwAoCkx" role="2wV5jI">
+      <node concept="3F1sOY" id="6hWVnwAoCky" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAoCkU" resolve="s" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAoCkz" role="3EZMnx">
+        <property role="3F0ifm" value="precedes" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAoClp" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwAoCkZ" resolve="p" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAoCk$" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
+      </node>
+      <node concept="l2Vlx" id="6hWVnwAoCk_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6hWVnwApz6H">
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <ref role="1XX52x" to="aoh3:6hWVnwApz6y" resolve="Response" />
+    <node concept="3EZMnI" id="6hWVnwApz6J" role="2wV5jI">
+      <node concept="3F1sOY" id="6hWVnwApz6K" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwApz6z" resolve="s" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwApz6L" role="3EZMnx">
+        <property role="3F0ifm" value="responds" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwApz6M" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6hWVnwApz6$" resolve="p" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwApz6N" role="3EZMnx">
+        <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
+      </node>
+      <node concept="l2Vlx" id="6hWVnwApz6O" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

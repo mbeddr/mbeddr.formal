@@ -189,5 +189,44 @@
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6hWVnwAoCku">
+    <property role="EcuMT" value="7240923401200764190" />
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <property role="TrG5h" value="Precedence" />
+    <property role="34LRSv" value="S precedes P" />
+    <ref role="1TJDcQ" node="6WmpcHMKsaj" resolve="AbstractProperty" />
+    <node concept="1TJgyj" id="6hWVnwAoCkU" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401200764218" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="s" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6hWVnwAoCkZ" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401200764223" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6hWVnwApz6y">
+    <property role="EcuMT" value="7240923401201004962" />
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <property role="TrG5h" value="Response" />
+    <property role="34LRSv" value="S responds to P" />
+    <property role="R4oN_" value="response" />
+    <ref role="1TJDcQ" node="6WmpcHMKsaj" resolve="AbstractProperty" />
+    <node concept="1TJgyj" id="6hWVnwApz6z" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401201004963" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="s" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6hWVnwApz6$" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401201004964" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

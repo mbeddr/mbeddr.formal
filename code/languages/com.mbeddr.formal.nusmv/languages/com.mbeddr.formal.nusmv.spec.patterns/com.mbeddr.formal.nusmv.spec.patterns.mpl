@@ -84,6 +84,48 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401200015152" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401200796298" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
+            <external-mapping>
+              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401200989016" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
