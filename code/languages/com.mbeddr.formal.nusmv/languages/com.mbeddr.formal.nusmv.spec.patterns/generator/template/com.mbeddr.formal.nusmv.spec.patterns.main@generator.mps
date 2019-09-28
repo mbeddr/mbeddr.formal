@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)">
+<model ref="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />

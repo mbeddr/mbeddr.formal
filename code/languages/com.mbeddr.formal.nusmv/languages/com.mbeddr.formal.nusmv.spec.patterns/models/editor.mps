@@ -234,7 +234,7 @@
         <ref role="1NtTu8" to="aoh3:6hWVnwApz6z" resolve="s" />
       </node>
       <node concept="3F0ifn" id="6hWVnwApz6L" role="3EZMnx">
-        <property role="3F0ifm" value="responds" />
+        <property role="3F0ifm" value="responds to" />
         <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwApz6M" role="3EZMnx">
