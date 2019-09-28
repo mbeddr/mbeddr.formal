@@ -425,7 +425,7 @@
         <node concept="3clFbF" id="2mjHtwTL1ST" role="3cqZAp">
           <node concept="2pJPEk" id="2mjHtwTL1SR" role="3clFbG">
             <node concept="2pJPED" id="2mjHtwTL1Wi" role="2pJPEn">
-              <ref role="2pJxaS" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
+              <ref role="2pJxaS" to="gioj:7mSH3WmXrCB" resolve="DefinitionRefDotTarget" />
               <node concept="2pIpSj" id="2mjHtwTL20Y" role="2pJxcM">
                 <ref role="2pIpSl" to="gioj:7mSH3WmXrCC" resolve="definition" />
                 <node concept="36biLy" id="2mjHtwTL23t" role="2pJxcZ">
@@ -535,7 +535,7 @@
   </node>
   <node concept="13h7C7" id="5_V$TJxG2rJ">
     <property role="3GE5qa" value="expressions.dot" />
-    <ref role="13h7C2" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
+    <ref role="13h7C2" to="gioj:7mSH3WmXrCB" resolve="DefinitionRefDotTarget" />
     <node concept="13hLZK" id="5_V$TJxG2rK" role="13h7CW">
       <node concept="3clFbS" id="5_V$TJxG2rL" role="2VODD2" />
     </node>

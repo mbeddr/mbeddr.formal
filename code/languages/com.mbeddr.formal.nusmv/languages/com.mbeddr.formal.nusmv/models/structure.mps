@@ -630,7 +630,7 @@
   </node>
   <node concept="1TIwiD" id="7mSH3WmXrCB">
     <property role="EcuMT" value="8482728081213471271" />
-    <property role="TrG5h" value="DefinitionRef" />
+    <property role="TrG5h" value="DefinitionRefDotTarget" />
     <property role="3GE5qa" value="expressions.dot" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
     <node concept="1TJgyj" id="7mSH3WmXrCC" role="1TKVEi">
@@ -706,7 +706,7 @@
   <node concept="1TIwiD" id="7mSH3WnacGx">
     <property role="EcuMT" value="8482728081216817953" />
     <property role="3GE5qa" value="expressions.dot" />
-    <property role="TrG5h" value="VarRef" />
+    <property role="TrG5h" value="VariableRefDotTarget" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
     <node concept="1TJgyj" id="7mSH3WnacGy" role="1TKVEi">
       <property role="IQ2ns" value="8482728081216817954" />
@@ -1799,6 +1799,19 @@
     </node>
     <node concept="PrWs8" id="44HlJomdnL6" role="PzmwI">
       <ref role="PrY4T" to="ehqg:44HlJomdkbK" resolve="IUntypedDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6hWVnwA_fap">
+    <property role="EcuMT" value="7240923401204069017" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <property role="TrG5h" value="ParameterRefDotTarget" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+    <node concept="1TJgyj" id="6hWVnwA_faq" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401204069018" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6NmtaR1SULQ" resolve="ParameterDeclaration" />
     </node>
   </node>
 </model>

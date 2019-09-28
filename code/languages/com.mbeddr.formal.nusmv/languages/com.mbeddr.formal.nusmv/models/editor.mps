@@ -1076,7 +1076,7 @@
   </node>
   <node concept="24kQdi" id="7mSH3WmXrD4">
     <property role="3GE5qa" value="expressions.dot" />
-    <ref role="1XX52x" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
+    <ref role="1XX52x" to="gioj:7mSH3WmXrCB" resolve="DefinitionRefDotTarget" />
     <node concept="1iCGBv" id="7mSH3WmXrD6" role="2wV5jI">
       <ref role="1NtTu8" to="gioj:7mSH3WmXrCC" resolve="definition" />
       <node concept="1sVBvm" id="7mSH3WmXrD8" role="1sWHZn">
@@ -1130,7 +1130,7 @@
   </node>
   <node concept="24kQdi" id="7mSH3WnacGY">
     <property role="3GE5qa" value="expressions.dot" />
-    <ref role="1XX52x" to="gioj:7mSH3WnacGx" resolve="VarRef" />
+    <ref role="1XX52x" to="gioj:7mSH3WnacGx" resolve="VariableRefDotTarget" />
     <node concept="1iCGBv" id="7mSH3WnacH0" role="2wV5jI">
       <ref role="1NtTu8" to="gioj:7mSH3WnacGy" resolve="var" />
       <node concept="1sVBvm" id="7mSH3WnacH2" role="1sWHZn">
@@ -2264,6 +2264,19 @@
   <node concept="3p36aQ" id="2obHvWScaYM">
     <property role="3GE5qa" value="expressions.case" />
     <ref role="aqKnT" to="gioj:3cHtG5tVuHE" resolve="EmptySingleCase" />
+  </node>
+  <node concept="24kQdi" id="6hWVnwA_fav">
+    <property role="3GE5qa" value="expressions.dot" />
+    <ref role="1XX52x" to="gioj:6hWVnwA_fap" resolve="ParameterRefDotTarget" />
+    <node concept="1iCGBv" id="6hWVnwA_faB" role="2wV5jI">
+      <ref role="1NtTu8" to="gioj:6hWVnwA_faq" resolve="param" />
+      <node concept="1sVBvm" id="6hWVnwA_faD" role="1sWHZn">
+        <node concept="3F0A7n" id="6hWVnwA_faT" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

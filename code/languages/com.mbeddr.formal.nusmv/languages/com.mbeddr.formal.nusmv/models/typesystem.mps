@@ -575,7 +575,7 @@
     </node>
     <node concept="1YaCAy" id="4Hts7PYJtwG" role="1YuTPh">
       <property role="TrG5h" value="varRef" />
-      <ref role="1YaFvo" to="gioj:7mSH3WnacGx" resolve="VarRef" />
+      <ref role="1YaFvo" to="gioj:7mSH3WnacGx" resolve="VariableRefDotTarget" />
     </node>
   </node>
   <node concept="1YbPZF" id="2QnUwHmQXx5">
@@ -1329,6 +1329,37 @@
     <node concept="1YaCAy" id="2obHvWSeLmJ" role="1YuTPh">
       <property role="TrG5h" value="singleCase" />
       <ref role="1YaFvo" to="gioj:6NmtaR1W9gb" resolve="SingleCase" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6hWVnwA_m4v">
+    <property role="TrG5h" value="typeof_ParameterRefDotTarget" />
+    <property role="3GE5qa" value="expressions.dot" />
+    <node concept="3clFbS" id="6hWVnwA_m4w" role="18ibNy">
+      <node concept="1Z5TYs" id="6hWVnwA_m8J" role="3cqZAp">
+        <node concept="mw_s8" id="6hWVnwA_m8K" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6hWVnwA_m8L" role="mwGJk">
+            <node concept="2OqwBi" id="6hWVnwA_m8M" role="1Z2MuG">
+              <node concept="1YBJjd" id="6hWVnwA_mhQ" role="2Oq$k0">
+                <ref role="1YBMHb" node="6hWVnwA_m4y" resolve="parameterRefDotTarget" />
+              </node>
+              <node concept="3TrEf2" id="6hWVnwA_mur" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:6hWVnwA_faq" resolve="param" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6hWVnwA_m8P" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6hWVnwA_m8Q" role="mwGJk">
+            <node concept="1YBJjd" id="6hWVnwA_mdE" role="1Z2MuG">
+              <ref role="1YBMHb" node="6hWVnwA_m4y" resolve="parameterRefDotTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6hWVnwA_m4y" role="1YuTPh">
+      <property role="TrG5h" value="parameterRefDotTarget" />
+      <ref role="1YaFvo" to="gioj:6hWVnwA_fap" resolve="ParameterRefDotTarget" />
     </node>
   </node>
 </model>
