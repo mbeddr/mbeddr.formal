@@ -396,5 +396,26 @@
       <node concept="l2Vlx" id="6hWVnwA2hYN" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6hWVnwAsTMP">
+    <property role="3GE5qa" value="scope" />
+    <ref role="1XX52x" to="yyq9:6hWVnwA1K7l" resolve="AfterUntilScope" />
+    <node concept="3EZMnI" id="6hWVnwAsTMR" role="2wV5jI">
+      <node concept="3F0ifn" id="6hWVnwAsTMS" role="3EZMnx">
+        <property role="3F0ifm" value="After" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAsTMT" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6hWVnwA1K7m" resolve="q" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAsTMU" role="3EZMnx">
+        <property role="3F0ifm" value="until" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6hWVnwAsTMV" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6hWVnwA1K7o" resolve="r" />
+      </node>
+      <node concept="l2Vlx" id="6hWVnwAsTMW" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

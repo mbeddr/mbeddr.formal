@@ -127,7 +127,7 @@
     <property role="EcuMT" value="7240923401194766760" />
     <property role="3GE5qa" value="scope" />
     <property role="TrG5h" value="BetweenScope" />
-    <property role="34LRSv" value="Between Q and R" />
+    <property role="34LRSv" value="between Q and R" />
     <property role="R4oN_" value="between scope" />
     <ref role="1TJDcQ" node="6hWVnwA1jgx" resolve="TLScopeBase" />
     <node concept="1TJgyj" id="6hWVnwA1K6D" role="1TKVEi">
