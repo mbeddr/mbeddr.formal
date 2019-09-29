@@ -2048,13 +2048,9 @@
                 <ref role="3uigEE" node="7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
               </node>
             </node>
-            <node concept="2YIFZM" id="1ZsZb$iSIBr" role="33vP2m">
-              <ref role="1Pybhc" node="1ZsZb$iRrIC" resolve="NuSMVResultLifter" />
-              <ref role="37wK5l" node="1ZsZb$iRrZ$" resolve="liftResults" />
-              <node concept="37vLTw" id="1ZsZb$iU2jJ" role="37wK5m">
-                <ref role="3cqZAo" node="7mSH3Wn4Al6" resolve="analyzedSystem" />
-              </node>
-              <node concept="37vLTw" id="1ZsZb$iSR0G" role="37wK5m">
+            <node concept="1rXfSq" id="6hWVnwAObt9" role="33vP2m">
+              <ref role="37wK5l" node="6hWVnwAO2_F" resolve="lift" />
+              <node concept="37vLTw" id="6hWVnwAObQf" role="37wK5m">
                 <ref role="3cqZAo" node="7mSH3Wn4$zf" resolve="result" />
               </node>
             </node>
@@ -2094,6 +2090,35 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1ZsZb$iSKc9" role="jymVt" />
+    <node concept="3clFb_" id="6hWVnwAO2_F" role="jymVt">
+      <property role="TrG5h" value="lift" />
+      <node concept="3clFbS" id="6hWVnwAO2_I" role="3clF47">
+        <node concept="3clFbF" id="6hWVnwAO9Xs" role="3cqZAp">
+          <node concept="2YIFZM" id="6hWVnwAO9Xu" role="3clFbG">
+            <ref role="37wK5l" node="1ZsZb$iRrZ$" resolve="liftResults" />
+            <ref role="1Pybhc" node="1ZsZb$iRrIC" resolve="NuSMVResultLifter" />
+            <node concept="37vLTw" id="6hWVnwAO9Xv" role="37wK5m">
+              <ref role="3cqZAo" node="7mSH3Wn4Al6" resolve="analyzedSystem" />
+            </node>
+            <node concept="37vLTw" id="6hWVnwAOaO2" role="37wK5m">
+              <ref role="3cqZAo" node="6hWVnwAO3mF" resolve="result" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="6hWVnwAO1w5" role="1B3o_S" />
+      <node concept="37vLTG" id="6hWVnwAO3mF" role="3clF46">
+        <property role="TrG5h" value="result" />
+        <node concept="3uibUv" id="6hWVnwAO9Iw" role="1tU5fm">
+          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
+        </node>
+      </node>
+      <node concept="_YKpA" id="6hWVnwAO6SQ" role="3clF45">
+        <node concept="3uibUv" id="6hWVnwAO6SR" role="_ZDj9">
+          <ref role="3uigEE" node="7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
+        </node>
+      </node>
+    </node>
     <node concept="NWlO9" id="7mSH3Wn4pYv" role="lGtFl">
       <property role="NWlVz" value="Analyzer for running NuSMV." />
     </node>
@@ -2117,6 +2142,7 @@
       <node concept="3uibUv" id="7mSH3Wn4K2$" role="1tU5fm">
         <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
+      <node concept="3Tmbuc" id="6hWVnwAOguA" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="7mSH3Wn4Ks5" role="jymVt" />
     <node concept="312cEg" id="1ZsZb$iRAMj" role="jymVt">
@@ -2125,6 +2151,7 @@
       <property role="TrG5h" value="spec" />
       <property role="3TUv4t" value="false" />
       <node concept="17QB3L" id="1ZsZb$iRA7i" role="1tU5fm" />
+      <node concept="3Tmbuc" id="6hWVnwAOez6" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="1ZsZb$iRSZw" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -2132,6 +2159,7 @@
       <property role="TrG5h" value="successful" />
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="1ZsZb$iRSnU" role="1tU5fm" />
+      <node concept="3Tmbuc" id="6hWVnwAOeTw" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="6mm$FLYP$gq" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -2142,6 +2170,7 @@
       <node concept="3clFbT" id="2l5A0OFd1DE" role="33vP2m">
         <property role="3clFbU" value="false" />
       </node>
+      <node concept="3Tmbuc" id="6hWVnwAOf6O" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="1ZsZb$iS6jo" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -2160,6 +2189,7 @@
           </node>
         </node>
       </node>
+      <node concept="3Tmbuc" id="6hWVnwAOfjX" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1uIpCUurEk3" role="jymVt" />
     <node concept="2tJIrI" id="1uIpCUurFip" role="jymVt" />
@@ -2172,6 +2202,7 @@
       <node concept="NWlO9" id="1uIpCUurGwp" role="lGtFl">
         <property role="NWlVz" value="The node for which the analysis result is created (e.g. a Spec, TestCase, etc)" />
       </node>
+      <node concept="3Tmbuc" id="6hWVnwAOgZj" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1uIpCUurLLD" role="jymVt" />
     <node concept="312cEg" id="1uIpCUurCQs" role="jymVt">
@@ -2183,6 +2214,7 @@
       <node concept="NWlO9" id="1uIpCUurMRi" role="lGtFl">
         <property role="NWlVz" value="The node on which analysis was started (e.g. main-mod, TestCase). The simulation bar will be attached to it." />
       </node>
+      <node concept="3Tmbuc" id="6hWVnwAOhlX" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1ZsZb$iTWzV" role="jymVt" />
     <node concept="3clFbW" id="7mSH3Wn4J5_" role="jymVt">
@@ -6427,7 +6459,7 @@
               <node concept="3cpWsn" id="3fsZMFLIlb1" role="3cpWs9">
                 <property role="TrG5h" value="allDefRefs" />
                 <node concept="2I9FWS" id="3fsZMFLIlb2" role="1tU5fm">
-                  <ref role="2I9WkF" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
+                  <ref role="2I9WkF" to="gioj:7mSH3WmXrCB" resolve="DefinitionRefDotTarget" />
                 </node>
                 <node concept="2OqwBi" id="3fsZMFLIlb3" role="33vP2m">
                   <node concept="2OqwBi" id="3fsZMFLIlb4" role="2Oq$k0">
@@ -6439,7 +6471,7 @@
                   <node concept="2Rf3mk" id="3fsZMFLIlb7" role="2OqNvi">
                     <node concept="1xMEDy" id="3fsZMFLIlb8" role="1xVPHs">
                       <node concept="chp4Y" id="3fsZMFLIlb9" role="ri$Ld">
-                        <ref role="cht4Q" to="gioj:7mSH3WmXrCB" resolve="DefinitionRef" />
+                        <ref role="cht4Q" to="gioj:7mSH3WmXrCB" resolve="DefinitionRefDotTarget" />
                       </node>
                     </node>
                   </node>
