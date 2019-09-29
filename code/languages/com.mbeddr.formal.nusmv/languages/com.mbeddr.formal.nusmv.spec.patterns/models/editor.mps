@@ -12,10 +12,17 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -24,6 +31,9 @@
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
+      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
+        <property id="1139746504291" name="imageFile" index="1ubRXE" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -46,6 +56,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -73,6 +86,9 @@
       <property role="3F0ifm" value="globally" />
       <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
     </node>
+    <node concept="PMmxH" id="6hWVnwAIDG6" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="ScopesImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6WmpcHMKwtT">
     <property role="3GE5qa" value="tl_patterns.scope" />
@@ -87,6 +103,9 @@
       </node>
       <node concept="l2Vlx" id="6WmpcHMKwtY" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="6hWVnwAIDFM" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="ScopesImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6WmpcHMKwuU">
     <property role="3GE5qa" value="tl_patterns.scope" />
@@ -100,6 +119,9 @@
         <ref role="1NtTu8" to="aoh3:6WmpcHMKwut" resolve="r" />
       </node>
       <node concept="l2Vlx" id="6WmpcHMKwuZ" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="6hWVnwAIDFW" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="ScopesImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6WmpcHMQB$z">
@@ -150,6 +172,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwAhZuA" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="6hWVnwAIDG1" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="ScopesImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwAk$Tu">
     <property role="3GE5qa" value="tl_patterns.scope" />
@@ -170,6 +195,9 @@
         <ref role="1NtTu8" to="aoh3:6hWVnwAk$TZ" resolve="r" />
       </node>
       <node concept="l2Vlx" id="6hWVnwAk$T_" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="6hWVnwAIDFR" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="ScopesImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwAljdN">
@@ -244,6 +272,21 @@
         <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
       </node>
       <node concept="l2Vlx" id="6hWVnwApz6O" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6hWVnwAIDw3">
+    <property role="3GE5qa" value="tl_patterns.scope" />
+    <property role="TrG5h" value="ScopesImage" />
+    <ref role="1XX52x" to="aoh3:6WmpcHMKsao" resolve="AbstractScope" />
+    <node concept="3EZMnI" id="6hWVnwAIHDU" role="2wV5jI">
+      <node concept="3F0ifn" id="6hWVnwAIHEc" role="3EZMnx">
+        <property role="3F0ifm" value="Scope visual description:" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAIHEl" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6hWVnwAIHDV" role="2iSdaV" />
+      <node concept="1u4HXA" id="6hWVnwAIDFG" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/images/scopes.gif" />
+      </node>
     </node>
   </node>
 </model>
