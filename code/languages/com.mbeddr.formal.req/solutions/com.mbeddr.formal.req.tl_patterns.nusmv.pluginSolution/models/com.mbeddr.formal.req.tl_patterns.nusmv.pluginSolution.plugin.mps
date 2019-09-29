@@ -31,6 +31,7 @@
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="2ocj" ref="r:0af55dc0-14f5-45c8-bf12-3c673ca075ac(com.mbeddr.formal.base.tooling.analyzer)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="7gut" ref="r:a2a23a30-67b2-48a3-878f-fb5cb8f590da(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution.analyzer)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -469,7 +470,7 @@
             </node>
             <node concept="2ShNRf" id="6hWVnwAwrfz" role="33vP2m">
               <node concept="1pGfFk" id="6hWVnwAwrf$" role="2ShVmc">
-                <ref role="37wK5l" to="4c75:7mSH3Wn4kz0" resolve="NuSMVAnalyzerFactory" />
+                <ref role="37wK5l" to="7gut:6hWVnwAOk2Z" resolve="NuSMVReqAnalyzerFactory" />
                 <node concept="37vLTw" id="6hWVnwAwrf_" role="37wK5m">
                   <ref role="3cqZAo" node="4qaoH_S7ID" resolve="toolAdapter" />
                 </node>
@@ -605,8 +606,8 @@
             <node concept="37vLTw" id="6hWVnwAISbf" role="2Oq$k0">
               <ref role="3cqZAo" node="4qaoH_IXky" resolve="result" />
             </node>
-            <node concept="liA8E" id="6hWVnwAISQD" role="2OqNvi">
-              <ref role="37wK5l" to="4c75:7mSH3Wn4cN6" resolve="isFail" />
+            <node concept="liA8E" id="6hWVnwAOCUX" role="2OqNvi">
+              <ref role="37wK5l" to="4c75:7mSH3Wn4cMX" resolve="isSuccess" />
             </node>
           </node>
           <node concept="9aQIb" id="6hWVnwAIUnH" role="9aQIa">
