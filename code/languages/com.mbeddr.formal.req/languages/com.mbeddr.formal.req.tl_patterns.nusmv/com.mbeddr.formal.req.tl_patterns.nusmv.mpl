@@ -111,6 +111,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="6a1e073e-b3f7-4c06-a877-d7fa0ece9863(com.mbeddr.formal.req.tl_patterns.nusmv#01)" />
+            <external-mapping>
+              <mapping-node modelUID="r:61f96dc7-e4e9-4b4e-8b92-37facbfa4974(com.mbeddr.formal.req.tl_patterns.nusmv.main@generator)" nodeID="7240923401205376804" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="6a1e073e-b3f7-4c06-a877-d7fa0ece9863(com.mbeddr.formal.req.tl_patterns.nusmv#01)" />
+            <external-mapping>
+              <mapping-node modelUID="r:61f96dc7-e4e9-4b4e-8b92-37facbfa4974(com.mbeddr.formal.req.tl_patterns.nusmv.main@generator)" nodeID="7240923401195799521" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>

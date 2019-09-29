@@ -93,6 +93,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -102,6 +103,9 @@
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -519,6 +523,33 @@
       <node concept="3clFbS" id="6hWVnwAeh5A" role="2VODD2">
         <node concept="3clFbF" id="6hWVnwAehcV" role="3cqZAp">
           <node concept="3clFbT" id="6hWVnwAehcU" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6hWVnwADhL7">
+    <ref role="1M2myG" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+    <node concept="1N5Pfh" id="6hWVnwADhL8" role="1Mr941">
+      <ref role="1N5Vy1" to="uu78:6hWVnwA8mNz" resolve="module" />
+      <node concept="3dgokm" id="6hWVnwADhLa" role="1N6uqs">
+        <node concept="3clFbS" id="6hWVnwADhLb" role="2VODD2">
+          <node concept="3clFbF" id="6hWVnwADhO8" role="3cqZAp">
+            <node concept="2YIFZM" id="6hWVnwADlqV" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="6hWVnwADjgT" role="37wK5m">
+                <node concept="2OqwBi" id="6hWVnwADhZA" role="2Oq$k0">
+                  <node concept="2rP1CM" id="6hWVnwADhO7" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="6hWVnwADifF" role="2OqNvi" />
+                </node>
+                <node concept="2SmgA7" id="6hWVnwADm7n" role="2OqNvi">
+                  <node concept="chp4Y" id="6hWVnwADmi3" role="1dBWTz">
+                    <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

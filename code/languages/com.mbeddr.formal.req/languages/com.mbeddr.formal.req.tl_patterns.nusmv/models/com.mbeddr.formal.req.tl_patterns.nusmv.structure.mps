@@ -170,7 +170,14 @@
   <node concept="1TIwiD" id="6hWVnwAeh58">
     <property role="EcuMT" value="7240923401198047560" />
     <property role="TrG5h" value="GeneratorOnly" />
-    <ref role="1TJDcQ" node="6hWVnwA8mHU" resolve="SystemScope" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="6hWVnwAIk9V" role="1TKVEi">
+      <property role="IQ2ns" value="7240923401206448763" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="properties" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="yyq9:6hWVnwA1j5g" resolve="TLProperty" />
+    </node>
   </node>
 </model>
 
