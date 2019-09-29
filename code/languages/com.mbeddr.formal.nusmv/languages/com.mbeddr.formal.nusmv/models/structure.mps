@@ -1814,5 +1814,21 @@
       <ref role="20lvS9" node="6NmtaR1SULQ" resolve="ParameterDeclaration" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6hWVnwAJ4lN">
+    <property role="EcuMT" value="7240923401206646131" />
+    <property role="3GE5qa" value="ivars" />
+    <property role="TrG5h" value="InputVariablesSection" />
+    <property role="34LRSv" value="IVAR" />
+    <property role="R4oN_" value="ivar section" />
+    <ref role="1TJDcQ" node="6NmtaR1UNLR" resolve="VariablesSection" />
+  </node>
+  <node concept="1TIwiD" id="6hWVnwAJ7uO">
+    <property role="EcuMT" value="7240923401206658996" />
+    <property role="3GE5qa" value="ivars" />
+    <property role="TrG5h" value="InputVariableDeclaration" />
+    <property role="34LRSv" value="input variable" />
+    <property role="R4oN_" value="an ivar declaration" />
+    <ref role="1TJDcQ" node="6NmtaR1SV6O" resolve="VariableDeclaration" />
+  </node>
 </model>
 

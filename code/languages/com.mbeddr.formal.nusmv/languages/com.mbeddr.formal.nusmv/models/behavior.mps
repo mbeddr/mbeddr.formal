@@ -1653,5 +1653,31 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="6hWVnwAJ7vD">
+    <property role="3GE5qa" value="ivars" />
+    <ref role="13h7C2" to="gioj:6hWVnwAJ7uO" resolve="InputVariableDeclaration" />
+    <node concept="13i0hz" id="6hWVnwAJ7vO" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getDescriptionText" />
+      <ref role="13i0hy" to="tpcu:69Qfsw3IqwE" resolve="getDescriptionText" />
+      <node concept="3Tm1VV" id="6hWVnwAJ7vP" role="1B3o_S" />
+      <node concept="3clFbS" id="6hWVnwAJ7vQ" role="3clF47">
+        <node concept="3clFbF" id="6hWVnwAJ7vR" role="3cqZAp">
+          <node concept="Xl_RD" id="6hWVnwAJ7vS" role="3clFbG">
+            <property role="Xl_RC" value="(input variable)" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6hWVnwAJ7vT" role="3clF46">
+        <property role="TrG5h" value="reference" />
+        <node concept="3Tqbb2" id="6hWVnwAJ7vU" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="6hWVnwAJ7vV" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6hWVnwAJ7vE" role="13h7CW">
+      <node concept="3clFbS" id="6hWVnwAJ7vF" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

@@ -2278,5 +2278,33 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6hWVnwAJFHq">
+    <property role="3GE5qa" value="ivars" />
+    <ref role="1XX52x" to="gioj:6hWVnwAJ7uO" resolve="InputVariableDeclaration" />
+    <node concept="1WcQYu" id="6hWVnwAJFHs" role="2wV5jI">
+      <node concept="2ElW$n" id="6hWVnwAJFHt" role="2El2Yn" />
+      <node concept="3EZMnI" id="6hWVnwAJFHu" role="1LiK7o">
+        <node concept="1kIj98" id="6hWVnwAJFHv" role="3EZMnx">
+          <property role="3g2DhO" value="true" />
+          <node concept="3F0A7n" id="6hWVnwAJFHw" role="1kIj9b">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="6hWVnwAJFHx" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="6hWVnwAJFHy" role="3EZMnx">
+          <ref role="1NtTu8" to="gioj:6NmtaR1SVeb" resolve="type" />
+        </node>
+        <node concept="l2Vlx" id="6hWVnwAJFHz" role="2iSdaV" />
+        <node concept="3F0ifn" id="6hWVnwAJFH$" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+          <node concept="11L4FC" id="6hWVnwAJFH_" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

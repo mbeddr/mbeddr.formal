@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -74,6 +75,7 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -176,8 +178,21 @@
       <concept id="1174663314467" name="jetbrains.mps.lang.typesystem.structure.CreateComparableEquationStatement" flags="nn" index="1ZoVOM" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -1360,6 +1375,139 @@
     <node concept="1YaCAy" id="6hWVnwA_m4y" role="1YuTPh">
       <property role="TrG5h" value="parameterRefDotTarget" />
       <ref role="1YaFvo" to="gioj:6hWVnwA_fap" resolve="ParameterRefDotTarget" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6hWVnwAJzqz">
+    <property role="TrG5h" value="check_VariableRef" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="6hWVnwAJzq$" role="18ibNy">
+      <node concept="3clFbJ" id="6hWVnwAJzqE" role="3cqZAp">
+        <node concept="3fqX7Q" id="6hWVnwAJAxR" role="3clFbw">
+          <node concept="2OqwBi" id="6hWVnwAJAxT" role="3fr31v">
+            <node concept="2OqwBi" id="6hWVnwAJAxU" role="2Oq$k0">
+              <node concept="1YBJjd" id="6hWVnwAJAxV" role="2Oq$k0">
+                <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+              </node>
+              <node concept="3TrEf2" id="6hWVnwAJAxW" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:6NmtaR1V303" resolve="var" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="6hWVnwAJAxX" role="2OqNvi">
+              <node concept="chp4Y" id="6hWVnwAJAxY" role="cj9EA">
+                <ref role="cht4Q" to="gioj:6hWVnwAJ7uO" resolve="InputVariableDeclaration" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6hWVnwAJzqG" role="3clFbx">
+          <node concept="3cpWs6" id="6hWVnwAJAHs" role="3cqZAp" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="6hWVnwAJAHx" role="3cqZAp" />
+      <node concept="3clFbJ" id="6hWVnwANh9m" role="3cqZAp">
+        <node concept="3clFbS" id="6hWVnwANh9n" role="3clFbx">
+          <node concept="2MkqsV" id="6hWVnwANh9o" role="3cqZAp">
+            <node concept="Xl_RD" id="6hWVnwANh9p" role="2MkJ7o">
+              <property role="Xl_RC" value="input variable cannot be part of the left side of an assignment" />
+            </node>
+            <node concept="1YBJjd" id="6hWVnwANh9q" role="2OEOjV">
+              <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="22lmx$" id="6hWVnwANq4R" role="3clFbw">
+          <node concept="2OqwBi" id="6hWVnwANh9r" role="3uHU7w">
+            <node concept="2OqwBi" id="6hWVnwANh9s" role="2Oq$k0">
+              <node concept="1YBJjd" id="6hWVnwANh9t" role="2Oq$k0">
+                <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+              </node>
+              <node concept="2Xjw5R" id="6hWVnwANh9u" role="2OqNvi">
+                <node concept="1xMEDy" id="6hWVnwANh9v" role="1xVPHs">
+                  <node concept="chp4Y" id="6hWVnwANhiw" role="ri$Ld">
+                    <ref role="cht4Q" to="gioj:6NmtaR1UNOm" resolve="InitAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6hWVnwANh9x" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="6hWVnwANqqY" role="3uHU7B">
+            <node concept="2OqwBi" id="6hWVnwANqqZ" role="2Oq$k0">
+              <node concept="1YBJjd" id="6hWVnwANqr0" role="2Oq$k0">
+                <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+              </node>
+              <node concept="2Xjw5R" id="6hWVnwANqr1" role="2OqNvi">
+                <node concept="1xMEDy" id="6hWVnwANqr2" role="1xVPHs">
+                  <node concept="chp4Y" id="6hWVnwANqr3" role="ri$Ld">
+                    <ref role="cht4Q" to="gioj:6NmtaR1VSYF" resolve="NextAssignment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6hWVnwANqr4" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6hWVnwANpRN" role="3cqZAp" />
+      <node concept="3clFbJ" id="6hWVnwANpK6" role="3cqZAp">
+        <node concept="3clFbS" id="6hWVnwANpK7" role="3clFbx">
+          <node concept="2MkqsV" id="6hWVnwANpK8" role="3cqZAp">
+            <node concept="Xl_RD" id="6hWVnwANpK9" role="2MkJ7o">
+              <property role="Xl_RC" value="input variable cannot be part of an init section" />
+            </node>
+            <node concept="1YBJjd" id="6hWVnwANpKa" role="2OEOjV">
+              <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6hWVnwANpKb" role="3clFbw">
+          <node concept="2OqwBi" id="6hWVnwANpKc" role="2Oq$k0">
+            <node concept="1YBJjd" id="6hWVnwANpKd" role="2Oq$k0">
+              <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+            </node>
+            <node concept="2Xjw5R" id="6hWVnwANpKe" role="2OqNvi">
+              <node concept="1xMEDy" id="6hWVnwANpKf" role="1xVPHs">
+                <node concept="chp4Y" id="6hWVnwANpUS" role="ri$Ld">
+                  <ref role="cht4Q" to="gioj:7mSH3WnuJC$" resolve="InitSection" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3x8VRR" id="6hWVnwANpKh" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="6hWVnwANr6N" role="3cqZAp" />
+      <node concept="3clFbJ" id="6hWVnwANqYP" role="3cqZAp">
+        <node concept="3clFbS" id="6hWVnwANqYQ" role="3clFbx">
+          <node concept="2MkqsV" id="6hWVnwANqYR" role="3cqZAp">
+            <node concept="Xl_RD" id="6hWVnwANqYS" role="2MkJ7o">
+              <property role="Xl_RC" value="input variable cannot be in the scope of a 'next' expression" />
+            </node>
+            <node concept="1YBJjd" id="6hWVnwANqYT" role="2OEOjV">
+              <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6hWVnwANqYU" role="3clFbw">
+          <node concept="2OqwBi" id="6hWVnwANqYV" role="2Oq$k0">
+            <node concept="1YBJjd" id="6hWVnwANqYW" role="2Oq$k0">
+              <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+            </node>
+            <node concept="2Xjw5R" id="6hWVnwANqYX" role="2OqNvi">
+              <node concept="1xMEDy" id="6hWVnwANqYY" role="1xVPHs">
+                <node concept="chp4Y" id="6hWVnwANraw" role="ri$Ld">
+                  <ref role="cht4Q" to="gioj:7mSH3WnwK$u" resolve="NextExpression" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3x8VRR" id="6hWVnwANqZ0" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6hWVnwAJzqA" role="1YuTPh">
+      <property role="TrG5h" value="variableRef" />
+      <ref role="1YaFvo" to="gioj:6NmtaR1V302" resolve="VariableRef" />
     </node>
   </node>
 </model>
