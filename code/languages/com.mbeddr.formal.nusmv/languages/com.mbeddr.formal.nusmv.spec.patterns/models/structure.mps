@@ -228,5 +228,13 @@
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="69v0vu5GmBv">
+    <property role="EcuMT" value="7088386501115996639" />
+    <property role="3GE5qa" value="tl_extensions.ltl" />
+    <property role="TrG5h" value="W" />
+    <property role="34LRSv" value="W" />
+    <property role="R4oN_" value="weak unti operator" />
+    <ref role="1TJDcQ" to="gioj:7V1Bqz6Uhgs" resolve="BinaryLTLExpression" />
+  </node>
 </model>
 

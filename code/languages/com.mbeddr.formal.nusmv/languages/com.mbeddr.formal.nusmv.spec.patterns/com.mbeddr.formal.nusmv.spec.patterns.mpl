@@ -60,69 +60,81 @@
           <greater-priority-mapping>
             <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
             <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="8004696212664073532" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401199919967" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401199934097" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401200015152" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401200796298" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401200989016" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501116010220" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117240460" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117338946" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117535049" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117840173" />
+                </mapping-set-element>
+              </mapping-set>
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
             <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401199934097" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401199919967" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401200015152" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401200796298" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="8004696212664073532" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="2e7766f0-dd2d-4eaf-9235-771c0ae9f3c2(com.mbeddr.formal.nusmv.spec.patterns#8004696212664073531)" />
-            <external-mapping>
-              <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(main@generator)" nodeID="7240923401200989016" />
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="8004696212664073532" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401199919967" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401199934097" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401200015152" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401200796298" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7240923401200989016" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501116010220" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117240460" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117338946" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117535049" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:a6f5b11a-322c-4f20-9cd2-ab99b4e07705(com.mbeddr.formal.nusmv.spec.patterns.main@generator)" nodeID="7088386501117840173" />
+                </mapping-set-element>
+              </mapping-set>
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
@@ -136,6 +148,8 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
+    <language slang="l:b4f35ed8-45af-4efa-abe4-00ac26956e69:com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
