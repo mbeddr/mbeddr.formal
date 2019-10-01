@@ -274,7 +274,9 @@
               <node concept="2He$iJ" id="6hWVnwANpuk" role="2He$ia">
                 <ref role="2He$iI" node="6hWVnwANhtb" resolve="aStateVar" />
               </node>
-              <node concept="1yCjRe" id="6hWVnwANuJC" role="2He$i0" />
+              <node concept="2He$iJ" id="69v0vu5P46P" role="2He$i0">
+                <ref role="2He$iI" node="6hWVnwAJFhj" resolve="anInput" />
+              </node>
             </node>
           </node>
           <node concept="s4Ewt" id="6hWVnwANpvx" role="2HcbjO" />

@@ -54,6 +54,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -80,6 +81,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -185,7 +189,12 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7504436213544206332" name="jetbrains.mps.lang.smodel.structure.Node_ContainingLinkOperation" flags="nn" index="2NL2c5" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1415,36 +1424,52 @@
             </node>
           </node>
         </node>
-        <node concept="22lmx$" id="6hWVnwANq4R" role="3clFbw">
-          <node concept="2OqwBi" id="6hWVnwANh9r" role="3uHU7w">
-            <node concept="2OqwBi" id="6hWVnwANh9s" role="2Oq$k0">
-              <node concept="1YBJjd" id="6hWVnwANh9t" role="2Oq$k0">
+        <node concept="1Wc70l" id="69v0vu5PgJV" role="3clFbw">
+          <node concept="17R0WA" id="69v0vu5Pm6I" role="3uHU7w">
+            <node concept="359W_D" id="69v0vu5Pmvh" role="3uHU7w">
+              <ref role="359W_E" to="gioj:6NmtaR1UNOn" resolve="AbstractAssignment" />
+              <ref role="359W_F" to="gioj:6NmtaR1V30B" resolve="lhs" />
+            </node>
+            <node concept="2OqwBi" id="69v0vu5PhKJ" role="3uHU7B">
+              <node concept="1YBJjd" id="69v0vu5Phbs" role="2Oq$k0">
                 <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
               </node>
-              <node concept="2Xjw5R" id="6hWVnwANh9u" role="2OqNvi">
-                <node concept="1xMEDy" id="6hWVnwANh9v" role="1xVPHs">
-                  <node concept="chp4Y" id="6hWVnwANhiw" role="ri$Ld">
-                    <ref role="cht4Q" to="gioj:6NmtaR1UNOm" resolve="InitAssignment" />
-                  </node>
-                </node>
-              </node>
+              <node concept="2NL2c5" id="69v0vu5Pj2X" role="2OqNvi" />
             </node>
-            <node concept="3x8VRR" id="6hWVnwANh9x" role="2OqNvi" />
           </node>
-          <node concept="2OqwBi" id="6hWVnwANqqY" role="3uHU7B">
-            <node concept="2OqwBi" id="6hWVnwANqqZ" role="2Oq$k0">
-              <node concept="1YBJjd" id="6hWVnwANqr0" role="2Oq$k0">
-                <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
-              </node>
-              <node concept="2Xjw5R" id="6hWVnwANqr1" role="2OqNvi">
-                <node concept="1xMEDy" id="6hWVnwANqr2" role="1xVPHs">
-                  <node concept="chp4Y" id="6hWVnwANqr3" role="ri$Ld">
-                    <ref role="cht4Q" to="gioj:6NmtaR1VSYF" resolve="NextAssignment" />
+          <node concept="1eOMI4" id="69v0vu5PeuA" role="3uHU7B">
+            <node concept="22lmx$" id="6hWVnwANq4R" role="1eOMHV">
+              <node concept="2OqwBi" id="6hWVnwANh9r" role="3uHU7w">
+                <node concept="2OqwBi" id="6hWVnwANh9s" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6hWVnwANh9t" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+                  </node>
+                  <node concept="2Xjw5R" id="6hWVnwANh9u" role="2OqNvi">
+                    <node concept="1xMEDy" id="6hWVnwANh9v" role="1xVPHs">
+                      <node concept="chp4Y" id="6hWVnwANhiw" role="ri$Ld">
+                        <ref role="cht4Q" to="gioj:6NmtaR1UNOm" resolve="InitAssignment" />
+                      </node>
+                    </node>
                   </node>
                 </node>
+                <node concept="3x8VRR" id="6hWVnwANh9x" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="6hWVnwANqqY" role="3uHU7B">
+                <node concept="2OqwBi" id="6hWVnwANqqZ" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6hWVnwANqr0" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
+                  </node>
+                  <node concept="2Xjw5R" id="6hWVnwANqr1" role="2OqNvi">
+                    <node concept="1xMEDy" id="6hWVnwANqr2" role="1xVPHs">
+                      <node concept="chp4Y" id="6hWVnwANqr3" role="ri$Ld">
+                        <ref role="cht4Q" to="gioj:6NmtaR1VSYF" resolve="NextAssignment" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="6hWVnwANqr4" role="2OqNvi" />
               </node>
             </node>
-            <node concept="3x8VRR" id="6hWVnwANqr4" role="2OqNvi" />
           </node>
         </node>
       </node>
