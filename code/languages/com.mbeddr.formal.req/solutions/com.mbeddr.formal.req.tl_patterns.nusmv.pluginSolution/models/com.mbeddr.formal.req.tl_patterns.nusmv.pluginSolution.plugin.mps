@@ -244,7 +244,7 @@
   </registry>
   <node concept="sE7Ow" id="6NmtaR23THu">
     <property role="TrG5h" value="RunNUSMVOnRequirementsDocument" />
-    <property role="2uzpH1" value="Check Requirements with NuSMV" />
+    <property role="2uzpH1" value="Check Requirements Consistency with NuSMV" />
     <node concept="tnohg" id="6NmtaR23THv" role="tncku">
       <node concept="3clFbS" id="6NmtaR23THw" role="2VODD2">
         <node concept="3cpWs8" id="6hWVnwAvmv$" role="3cqZAp">
