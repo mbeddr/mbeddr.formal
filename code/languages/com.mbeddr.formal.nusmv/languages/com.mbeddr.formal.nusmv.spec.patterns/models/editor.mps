@@ -69,6 +69,9 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
@@ -255,8 +258,10 @@
     <property role="3GE5qa" value="tl_patterns.property" />
     <ref role="1XX52x" to="aoh3:6hWVnwAlJAv" resolve="Existence" />
     <node concept="3EZMnI" id="6hWVnwAlJAz" role="2wV5jI">
-      <node concept="3F1sOY" id="6hWVnwAlJA$" role="3EZMnx">
-        <ref role="1NtTu8" to="aoh3:6hWVnwAlJAw" resolve="p" />
+      <node concept="1kIj98" id="69v0vu5Rh0Y" role="3EZMnx">
+        <node concept="3F1sOY" id="6hWVnwAlJA$" role="1kIj9b">
+          <ref role="1NtTu8" to="aoh3:6hWVnwAlJAw" resolve="p" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6hWVnwAlJA_" role="3EZMnx">
         <property role="3F0ifm" value="becomes true" />
