@@ -300,6 +300,9 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1733,12 +1736,19 @@
                       <node concept="1bVj0M" id="6hWVnwAETTb" role="23t8la">
                         <node concept="3clFbS" id="6hWVnwAETTc" role="1bW5cS">
                           <node concept="3clFbF" id="6hWVnwAETTd" role="3cqZAp">
-                            <node concept="2OqwBi" id="6hWVnwAETTe" role="3clFbG">
-                              <node concept="37vLTw" id="6hWVnwAETTf" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6hWVnwAETTh" resolve="it" />
+                            <node concept="2OqwBi" id="5uTeY1FmZei" role="3clFbG">
+                              <node concept="2OqwBi" id="6hWVnwAETTe" role="2Oq$k0">
+                                <node concept="37vLTw" id="6hWVnwAETTf" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6hWVnwAETTh" resolve="it" />
+                                </node>
+                                <node concept="3Tsc0h" id="6hWVnwAETTg" role="2OqNvi">
+                                  <ref role="3TtcxE" to="uu78:6hWVnwA8mPY" resolve="properties" />
+                                </node>
                               </node>
-                              <node concept="3Tsc0h" id="6hWVnwAETTg" role="2OqNvi">
-                                <ref role="3TtcxE" to="uu78:6hWVnwA8mPY" resolve="properties" />
+                              <node concept="v3k3i" id="5uTeY1FnVfE" role="2OqNvi">
+                                <node concept="chp4Y" id="5uTeY1FnVJr" role="v3oSu">
+                                  <ref role="cht4Q" to="yyq9:6hWVnwA1j5g" resolve="TLProperty" />
+                                </node>
                               </node>
                             </node>
                           </node>
