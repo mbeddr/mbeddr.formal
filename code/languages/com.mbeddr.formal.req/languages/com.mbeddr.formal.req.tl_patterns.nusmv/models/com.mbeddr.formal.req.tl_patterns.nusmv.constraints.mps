@@ -17,6 +17,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -70,11 +71,14 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
+      <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
@@ -107,6 +111,9 @@
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -546,6 +553,30 @@
                   <node concept="chp4Y" id="6hWVnwADmi3" role="1dBWTz">
                     <ref role="cht4Q" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9SLcT" id="5uTeY1Fl$bC" role="9SGkU">
+      <node concept="3clFbS" id="5uTeY1Fl$bD" role="2VODD2">
+        <node concept="3clFbF" id="5uTeY1Fl$j2" role="3cqZAp">
+          <node concept="22lmx$" id="5uTeY1Fl_TI" role="3clFbG">
+            <node concept="2OqwBi" id="5uTeY1FlAtC" role="3uHU7w">
+              <node concept="2DD5aU" id="5uTeY1FlA5z" role="2Oq$k0" />
+              <node concept="2Zo12i" id="5uTeY1FlB7m" role="2OqNvi">
+                <node concept="chp4Y" id="5uTeY1FlBl$" role="2Zo12j">
+                  <ref role="cht4Q" to="uu78:5uTeY1FluaK" resolve="CommentSpec" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5uTeY1Fl$Ch" role="3uHU7B">
+              <node concept="2DD5aU" id="5uTeY1Fl$j1" role="2Oq$k0" />
+              <node concept="2Zo12i" id="5uTeY1Fl_bv" role="2OqNvi">
+                <node concept="chp4Y" id="5uTeY1Fl_ps" role="2Zo12j">
+                  <ref role="cht4Q" to="yyq9:6hWVnwA1j5g" resolve="TLProperty" />
                 </node>
               </node>
             </node>

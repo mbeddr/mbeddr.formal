@@ -10,7 +10,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="yyq9" ref="r:221f6636-9d4b-4cff-b27b-80f65c39076e(com.mbeddr.formal.req.tl_patterns.structure)" implicit="true" />
   </imports>
   <registry>
@@ -20,6 +20,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -28,6 +29,10 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -103,7 +108,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="properties" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="yyq9:6hWVnwA1j5g" resolve="TLProperty" />
+      <ref role="20lvS9" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
     </node>
   </node>
   <node concept="1TIwiD" id="6hWVnwA9Leo">
@@ -177,6 +182,21 @@
       <property role="20kJfa" value="properties" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="yyq9:6hWVnwA1j5g" resolve="TLProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5uTeY1FluaK">
+    <property role="EcuMT" value="6321149387050705584" />
+    <property role="3GE5qa" value="spec" />
+    <property role="TrG5h" value="CommentSpec" />
+    <property role="34LRSv" value="--" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5uTeY1FluaL" role="PzmwI">
+      <ref role="PrY4T" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
+    </node>
+    <node concept="1TJgyi" id="5uTeY1FluaP" role="1TKVEl">
+      <property role="IQ2nx" value="6321149387050705589" />
+      <property role="TrG5h" value="val" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
