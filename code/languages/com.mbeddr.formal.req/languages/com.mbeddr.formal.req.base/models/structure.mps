@@ -202,6 +202,9 @@
     <property role="EcuMT" value="3226630706269671901" />
     <property role="TrG5h" value="Requirement" />
     <ref role="1TJDcQ" node="4gtLUSMLiMA" resolve="AbstractRequirement" />
+    <node concept="PrWs8" id="2fmnPVfexQa" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2N7iSwGA5xU">
     <property role="EcuMT" value="3226630706270066810" />
