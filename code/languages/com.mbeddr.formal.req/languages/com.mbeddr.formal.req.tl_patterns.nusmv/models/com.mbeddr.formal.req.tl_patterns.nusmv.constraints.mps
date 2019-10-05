@@ -14,6 +14,7 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="bt4r" ref="r:897df8e8-7afa-4f4d-a512-b0899c079517(com.mbeddr.formal.req.tl_patterns.nusmv.utils)" />
     <import index="rvcq" ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -563,20 +564,30 @@
     <node concept="9SLcT" id="5uTeY1Fl$bC" role="9SGkU">
       <node concept="3clFbS" id="5uTeY1Fl$bD" role="2VODD2">
         <node concept="3clFbF" id="5uTeY1Fl$j2" role="3cqZAp">
-          <node concept="22lmx$" id="5uTeY1Fl_TI" role="3clFbG">
-            <node concept="2OqwBi" id="5uTeY1FlAtC" role="3uHU7w">
-              <node concept="2DD5aU" id="5uTeY1FlA5z" role="2Oq$k0" />
-              <node concept="2Zo12i" id="5uTeY1FlB7m" role="2OqNvi">
-                <node concept="chp4Y" id="5uTeY1FlBl$" role="2Zo12j">
-                  <ref role="cht4Q" to="uu78:5uTeY1FluaK" resolve="CommentSpec" />
+          <node concept="22lmx$" id="2fmnPVfeCQF" role="3clFbG">
+            <node concept="22lmx$" id="5uTeY1Fl_TI" role="3uHU7B">
+              <node concept="2OqwBi" id="5uTeY1Fl$Ch" role="3uHU7B">
+                <node concept="2DD5aU" id="5uTeY1Fl$j1" role="2Oq$k0" />
+                <node concept="2Zo12i" id="5uTeY1Fl_bv" role="2OqNvi">
+                  <node concept="chp4Y" id="5uTeY1Fl_ps" role="2Zo12j">
+                    <ref role="cht4Q" to="yyq9:6hWVnwA1j5g" resolve="TLProperty" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5uTeY1FlAtC" role="3uHU7w">
+                <node concept="2DD5aU" id="5uTeY1FlA5z" role="2Oq$k0" />
+                <node concept="2Zo12i" id="5uTeY1FlB7m" role="2OqNvi">
+                  <node concept="chp4Y" id="5uTeY1FlBl$" role="2Zo12j">
+                    <ref role="cht4Q" to="uu78:5uTeY1FluaK" resolve="CommentSpec" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="5uTeY1Fl$Ch" role="3uHU7B">
-              <node concept="2DD5aU" id="5uTeY1Fl$j1" role="2Oq$k0" />
-              <node concept="2Zo12i" id="5uTeY1Fl_bv" role="2OqNvi">
-                <node concept="chp4Y" id="5uTeY1Fl_ps" role="2Zo12j">
-                  <ref role="cht4Q" to="yyq9:6hWVnwA1j5g" resolve="TLProperty" />
+            <node concept="2OqwBi" id="2fmnPVfeD4k" role="3uHU7w">
+              <node concept="2DD5aU" id="2fmnPVfeD4l" role="2Oq$k0" />
+              <node concept="2Zo12i" id="2fmnPVfeD4m" role="2OqNvi">
+                <node concept="chp4Y" id="2fmnPVfeDj$" role="2Zo12j">
+                  <ref role="cht4Q" to="tpck:3Rc6kd0K$RF" resolve="BaseCommentAttribute" />
                 </node>
               </node>
             </node>
