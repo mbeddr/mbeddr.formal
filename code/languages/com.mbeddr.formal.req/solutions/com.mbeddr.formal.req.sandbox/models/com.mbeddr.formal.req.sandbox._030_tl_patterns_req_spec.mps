@@ -5,6 +5,7 @@
     <use id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns" version="-1" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
     <use id="b9f682be-3e03-4c97-ba0a-ac14cf89f12a" name="com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
+    <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
   <imports />
@@ -44,6 +45,9 @@
       </concept>
       <concept id="3226630706270076330" name="com.mbeddr.formal.req.base.structure.ListItem" flags="ng" index="0nNoy">
         <child id="3226630706270076331" name="text" index="0nNoz" />
+      </concept>
+      <concept id="7094415537350220692" name="com.mbeddr.formal.req.base.structure.ReqRefWord" flags="ng" index="2aGvr3">
+        <reference id="7094415537350220726" name="req" index="2aGvrx" />
       </concept>
       <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
@@ -135,11 +139,24 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="b9f682be-3e03-4c97-ba0a-ac14cf89f12a" name="com.mbeddr.formal.req.tl_patterns.nusmv">
+      <concept id="6321149387050705584" name="com.mbeddr.formal.req.tl_patterns.nusmv.structure.CommentSpec" flags="ng" index="WVd_g">
+        <property id="6321149387050705589" name="val" index="WVd_l" />
+      </concept>
       <concept id="7240923401197327542" name="com.mbeddr.formal.req.tl_patterns.nusmv.structure.InputParamRefDotTarget" flags="ng" index="12kJBe">
         <reference id="7240923401197327545" name="param" index="12kJB1" />
       </concept>
@@ -415,6 +432,67 @@
         </node>
       </node>
       <node concept="1QQeAL" id="6hWVnwAfVSn" role="1QQeAC" />
+    </node>
+    <node concept="0lH3_" id="2fmnPVfepsF" role="1QQeBF" />
+    <node concept="0lhDl" id="2fmnPVfepBs" role="1QQeBF">
+      <property role="0lsPA" value="R_030" />
+      <property role="0ke_I" value="dan" />
+      <node concept="1QQeFk" id="2fmnPVfepBt" role="0nOlf" />
+      <node concept="19SGf9" id="2fmnPVfepBu" role="1QQeG9">
+        <node concept="19SUe$" id="2fmnPVfepBv" role="19SJt6">
+          <property role="19SUeA" value="Additional assumptions" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="2fmnPVfepH3" role="1QQeAC">
+        <node concept="0nzK2" id="2fmnPVfepH4" role="1QQeAV">
+          <node concept="19SGf9" id="2fmnPVfepH5" role="0nzdz">
+            <node concept="19SUe$" id="2fmnPVfepH6" role="19SJt6">
+              <property role="19SUeA" value="The following additional assumptions, w.r.t " />
+            </node>
+            <node concept="2aGvr3" id="2fmnPVfepYB" role="19SJt6">
+              <ref role="2aGvrx" node="6hWVnwA1qj9" />
+            </node>
+            <node concept="19SUe$" id="2fmnPVfepYC" role="19SJt6">
+              <property role="19SUeA" value=" hold:&#10;" />
+            </node>
+            <node concept="0nLfM" id="2fmnPVfepHj" role="19SJt6">
+              <node concept="0nNoy" id="2fmnPVfepHk" role="0nLfN">
+                <node concept="0nzK2" id="2fmnPVfepHy" role="0nNoz">
+                  <node concept="19SGf9" id="2fmnPVfepHz" role="0nzdz">
+                    <node concept="19SUe$" id="2fmnPVfepH$" role="19SJt6">
+                      <property role="19SUeA" value="distance is smaller than 100" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="2fmnPVfepHl" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="12noo2" id="2fmnPVfepIg" role="1QQeAC">
+        <ref role="12no6r" node="6hWVnwA2uEu" resolve="ACC" />
+        <node concept="WVd_g" id="2fmnPVfeB0x" role="12no06">
+          <property role="WVd_l" value="the following spec leads to inconsistency" />
+        </node>
+        <node concept="1X3_iC" id="2fmnPVfeBRk" role="lGtFl">
+          <property role="3V$3am" value="properties" />
+          <property role="3V$3ak" value="b9f682be-3e03-4c97-ba0a-ac14cf89f12a/7240923401196497786/7240923401196498302" />
+          <node concept="12utKC" id="2fmnPVfepIN" role="8Wnug">
+            <node concept="12ukSO" id="2fmnPVfepIR" role="12ut_$" />
+            <node concept="12uYM5" id="2fmnPVfepIV" role="12ut_r">
+              <node concept="nE0YJ" id="2fmnPVfepJd" role="12uYM6">
+                <node concept="2IPVmt" id="2fmnPVfepJj" role="2H9Ial">
+                  <property role="2IPVms" value="100" />
+                </node>
+                <node concept="12qyU8" id="2fmnPVfepJ4" role="2H9Iav">
+                  <ref role="12qyFn" node="6hWVnwAu$Vz" resolve="distance_camera" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="0lH3_" id="6hWVnwAfVRy" role="1QQeBF" />
     <node concept="0lH3_" id="6hWVnwA1ql4" role="1QQeBF" />
