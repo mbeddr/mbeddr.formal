@@ -9,6 +9,7 @@
   <imports>
     <import index="eaz0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.bind(JDK/)" />
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -109,6 +110,12 @@
       <node concept="37vLTG" id="6fO82$FqF95" role="3clF46">
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="6fO82$FqF9s" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="38aFq1iYsVF" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="38aFq1iYt2y" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
       </node>
       <node concept="3clFbS" id="6fO82$FqF8I" role="3clF47" />
       <node concept="3Tm1VV" id="6fO82$FqF8J" role="1B3o_S" />

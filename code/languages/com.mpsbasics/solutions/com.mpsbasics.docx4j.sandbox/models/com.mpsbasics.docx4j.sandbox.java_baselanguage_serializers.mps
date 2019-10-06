@@ -12,6 +12,7 @@
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -139,6 +140,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="2w5Gq4UsCcO" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="38aFq1iYtuM" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="38aFq1iYtMx" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="2w5Gq4UsCcQ" role="1B3o_S" />
       <node concept="3cqZAl" id="2w5Gq4UsCcR" role="3clF45" />
       <node concept="3uibUv" id="2w5Gq4UsD$B" role="Sfmx6">
@@ -233,6 +240,9 @@
                 </node>
                 <node concept="37vLTw" id="38aFq1iXszZ" role="37wK5m">
                   <ref role="3cqZAo" node="38aFq1iXqNq" resolve="className" />
+                </node>
+                <node concept="37vLTw" id="38aFq1iYw5v" role="37wK5m">
+                  <ref role="3cqZAo" node="38aFq1iYtuM" resolve="repo" />
                 </node>
               </node>
             </node>
