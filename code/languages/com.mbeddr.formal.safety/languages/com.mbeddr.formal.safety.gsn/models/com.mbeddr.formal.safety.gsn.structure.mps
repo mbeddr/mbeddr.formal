@@ -2,7 +2,7 @@
 <model ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -71,16 +71,16 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3GRi4m$qPV0" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905277632" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20kJfa" value="content" />
       <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
     <node concept="1TJgyj" id="3GRi4m$sIHx" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905772385" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="connections" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
     </node>
     <node concept="PrWs8" id="3GRi4m$qPY1" role="PzmwI">
@@ -124,9 +124,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3GRi4m$qYoV" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905312315" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
     <node concept="PrWs8" id="3GRi4m$rb5M" role="PzmwI">
@@ -184,14 +184,12 @@
     <ref role="1TJDcQ" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
     <node concept="1TJgyj" id="3GRi4m$sIbL" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770225" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <ref role="20lvS9" node="3GRi4m$qNtH" resolve="Goal" />
       <ref role="20ksaX" node="2ccN23odOzl" resolve="source" />
     </node>
     <node concept="1TJgyj" id="3GRi4m$sId6" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770310" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="3GRi4m$rlpN" resolve="Context" />
       <ref role="20ksaX" node="2ccN23odOzm" resolve="target" />
@@ -205,13 +203,11 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2ccN23odOzl" role="1TKVEi">
       <property role="IQ2ns" value="2525617932486527189" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
     <node concept="1TJgyj" id="2ccN23odOzm" role="1TKVEi">
       <property role="IQ2ns" value="2525617932486527190" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>

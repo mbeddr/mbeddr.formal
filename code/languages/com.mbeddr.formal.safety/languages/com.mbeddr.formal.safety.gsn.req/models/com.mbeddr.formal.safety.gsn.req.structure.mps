@@ -2,7 +2,7 @@
 <model ref="r:aad73197-747b-433c-8a5f-d5014ecadf43(com.mbeddr.formal.safety.gsn.req.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -26,7 +26,6 @@
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
-        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -44,9 +43,8 @@
     <property role="R4oN_" value="reference a requirement" />
     <node concept="1TJgyj" id="2LDKh2uE4RN" role="1TKVEi">
       <property role="IQ2ns" value="3200301287348915699" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="req" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="z27p:4gtLUSMLiMA" resolve="AbstractRequirement" />
     </node>
     <node concept="PrWs8" id="2LDKh2uEyZr" role="PzmwI">

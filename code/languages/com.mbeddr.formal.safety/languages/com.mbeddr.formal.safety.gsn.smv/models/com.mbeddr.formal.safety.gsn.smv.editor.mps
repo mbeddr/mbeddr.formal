@@ -2,7 +2,7 @@
 <model ref="r:567e1c67-1d9d-4f86-8abc-2a5f326bb4ba(com.mbeddr.formal.safety.gsn.smv.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -455,7 +455,7 @@
           <node concept="3F0ifn" id="71RA3dH$OVv" role="3EZMnx">
             <property role="3F0ifm" value="smv-based spec" />
             <node concept="VechU" id="71RA3dH$OXq" role="3F10Kt">
-              <property role="Vb096" value="DARK_BLUE" />
+              <property role="Vb096" value="g1_eI4o/darkBlue" />
             </node>
           </node>
           <node concept="l2Vlx" id="71RA3dH$OVw" role="2iSdaV" />
@@ -583,7 +583,7 @@
           <node concept="3F0ifn" id="4qaoH_DQpy" role="3EZMnx">
             <property role="3F0ifm" value="smv-based spec" />
             <node concept="VechU" id="4qaoH_DQpz" role="3F10Kt">
-              <property role="Vb096" value="DARK_BLUE" />
+              <property role="Vb096" value="g1_eI4o/darkBlue" />
             </node>
           </node>
           <node concept="l2Vlx" id="4qaoH_DQp$" role="2iSdaV" />
@@ -682,7 +682,7 @@
           <node concept="3F0ifn" id="4qaoH_E0dy" role="3EZMnx">
             <property role="3F0ifm" value="smv-based solution" />
             <node concept="VechU" id="4qaoH_E0dz" role="3F10Kt">
-              <property role="Vb096" value="DARK_BLUE" />
+              <property role="Vb096" value="g1_eI4o/darkBlue" />
             </node>
           </node>
           <node concept="l2Vlx" id="4qaoH_E0d$" role="2iSdaV" />
@@ -713,10 +713,10 @@
           <node concept="3F0ifn" id="4qaoH_Pa09" role="3EZMnx">
             <property role="3F0ifm" value="SUCCESS" />
             <node concept="VechU" id="4qaoH_PbSh" role="3F10Kt">
-              <property role="Vb096" value="DARK_GREEN" />
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
             </node>
             <node concept="Vb9p2" id="4qaoH_PbSm" role="3F10Kt">
-              <property role="Vbekb" value="BOLD" />
+              <property role="Vbekb" value="g1_k_vY/BOLD" />
             </node>
             <node concept="pkWqt" id="4qaoH_Pumb" role="pqm2j">
               <node concept="3clFbS" id="4qaoH_Pumc" role="2VODD2">
@@ -748,10 +748,10 @@
               </node>
             </node>
             <node concept="VechU" id="4qaoH_Pbqz" role="3F10Kt">
-              <property role="Vb096" value="red" />
+              <property role="Vb096" value="fLwANPn/red" />
             </node>
             <node concept="Vb9p2" id="4qaoH_PbIm" role="3F10Kt">
-              <property role="Vbekb" value="BOLD" />
+              <property role="Vbekb" value="g1_k_vY/BOLD" />
             </node>
           </node>
           <node concept="l2Vlx" id="4qaoH_Pa0a" role="2iSdaV" />
@@ -806,7 +806,7 @@
           <node concept="3F0ifn" id="4qaoH_PQtA" role="3EZMnx">
             <property role="3F0ifm" value="smv-based tests" />
             <node concept="VechU" id="4qaoH_PQtB" role="3F10Kt">
-              <property role="Vb096" value="DARK_BLUE" />
+              <property role="Vb096" value="g1_eI4o/darkBlue" />
             </node>
           </node>
           <node concept="l2Vlx" id="4qaoH_PQtC" role="2iSdaV" />

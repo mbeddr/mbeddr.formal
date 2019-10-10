@@ -116,9 +116,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -562,7 +560,7 @@
                   <ref role="2pJxaS" to="bsp8:4qaoH_EJ_i" resolve="InContextOfSmvModule" />
                   <node concept="2pIpSj" id="4qaoH_EWHE" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
-                    <node concept="36biLy" id="4qaoH_EWHF" role="2pJxcZ">
+                    <node concept="36biLy" id="4qaoH_EWHF" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_EWHG" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EWHH" role="3oSUPX">
                           <ref role="cht4Q" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
@@ -575,7 +573,7 @@
                   </node>
                   <node concept="2pIpSj" id="4qaoH_EWHJ" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
-                    <node concept="36biLy" id="4qaoH_EWHK" role="2pJxcZ">
+                    <node concept="36biLy" id="4qaoH_EWHK" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_EWHL" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EY8F" role="3oSUPX">
                           <ref role="cht4Q" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
@@ -759,7 +757,7 @@
                   <ref role="2pJxaS" to="bsp8:4qaoH_EJ_j" resolve="SupportedBySmvVerificationResults" />
                   <node concept="2pIpSj" id="7kF4CZHAemv" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                    <node concept="36biLy" id="7kF4CZHAemw" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZHAemw" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_ERtH" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EWc0" role="3oSUPX">
                           <ref role="cht4Q" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
@@ -772,7 +770,7 @@
                   </node>
                   <node concept="2pIpSj" id="7kF4CZHAemy" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                    <node concept="36biLy" id="7kF4CZHAemz" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZHAemz" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_ERN_" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EWkO" role="3oSUPX">
                           <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
@@ -956,7 +954,7 @@
                   <ref role="2pJxaS" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
                   <node concept="2pIpSj" id="4qaoH_QNpE" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
-                    <node concept="36biLy" id="4qaoH_QNpF" role="2pJxcZ">
+                    <node concept="36biLy" id="4qaoH_QNpF" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_QNpG" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_QPM7" role="3oSUPX">
                           <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
@@ -969,7 +967,7 @@
                   </node>
                   <node concept="2pIpSj" id="4qaoH_QNpJ" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
-                    <node concept="36biLy" id="4qaoH_QNpK" role="2pJxcZ">
+                    <node concept="36biLy" id="4qaoH_QNpK" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_QNpL" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_QPO7" role="3oSUPX">
                           <ref role="cht4Q" to="py52:3GRi4m$rlpN" resolve="Context" />
@@ -1153,7 +1151,7 @@
                   <ref role="2pJxaS" to="bsp8:4qaoH_QSU$" resolve="SupportedBySmvTestingResults" />
                   <node concept="2pIpSj" id="4qaoH_QQ6P" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                    <node concept="36biLy" id="4qaoH_QQ6Q" role="2pJxcZ">
+                    <node concept="36biLy" id="4qaoH_QQ6Q" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_QQ6R" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_QTcQ" role="3oSUPX">
                           <ref role="cht4Q" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
@@ -1166,7 +1164,7 @@
                   </node>
                   <node concept="2pIpSj" id="4qaoH_QQ6U" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                    <node concept="36biLy" id="4qaoH_QQ6V" role="2pJxcZ">
+                    <node concept="36biLy" id="4qaoH_QQ6V" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_QQ6W" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_QQ6X" role="3oSUPX">
                           <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />

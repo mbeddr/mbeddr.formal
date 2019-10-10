@@ -152,9 +152,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -485,7 +483,7 @@
                   <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
                   <node concept="2pIpSj" id="7kF4CZH_HZO" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                    <node concept="36biLy" id="7kF4CZH_HZP" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZH_HZP" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_EOOj" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EOOk" role="3oSUPX">
                           <ref role="cht4Q" to="py52:3GRi4m$qNtH" resolve="Goal" />
@@ -498,7 +496,7 @@
                   </node>
                   <node concept="2pIpSj" id="7kF4CZH_HZR" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                    <node concept="36biLy" id="7kF4CZH_HZS" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZH_HZS" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_EPab" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EPac" role="3oSUPX">
                           <ref role="cht4Q" to="py52:3GRi4m$rlnF" resolve="Strategy" />
@@ -1060,7 +1058,7 @@
                   <ref role="2pJxaS" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
                   <node concept="2pIpSj" id="7kF4CZHA3yV" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
-                    <node concept="36biLy" id="7kF4CZHA3yW" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZHA3yW" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_EKZX" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EKZY" role="3oSUPX">
                           <ref role="cht4Q" to="py52:3GRi4m$qNtH" resolve="Goal" />
@@ -1073,7 +1071,7 @@
                   </node>
                   <node concept="2pIpSj" id="7kF4CZHA3yY" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
-                    <node concept="36biLy" id="7kF4CZHA3yZ" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZHA3yZ" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_ELlt" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_ELlu" role="3oSUPX">
                           <ref role="cht4Q" to="py52:3GRi4m$rlpN" resolve="Context" />
@@ -1307,7 +1305,7 @@
                   <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
                   <node concept="2pIpSj" id="7kF4CZHAemv" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                    <node concept="36biLy" id="7kF4CZHAemw" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZHAemw" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_ERtH" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_ERtI" role="3oSUPX">
                           <ref role="cht4Q" to="py52:3GRi4m$qNtH" resolve="Goal" />
@@ -1320,7 +1318,7 @@
                   </node>
                   <node concept="2pIpSj" id="7kF4CZHAemy" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                    <node concept="36biLy" id="7kF4CZHAemz" role="2pJxcZ">
+                    <node concept="36biLy" id="7kF4CZHAemz" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_ERN_" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_ERNA" role="3oSUPX">
                           <ref role="cht4Q" to="py52:3GRi4m$r_RC" resolve="Solution" />

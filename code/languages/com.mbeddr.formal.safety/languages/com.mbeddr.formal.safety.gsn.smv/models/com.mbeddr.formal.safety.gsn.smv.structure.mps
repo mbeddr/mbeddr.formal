@@ -2,7 +2,7 @@
 <model ref="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -50,7 +50,6 @@
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
-        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -72,9 +71,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4dCoQOftCrt" role="1TKVEi">
       <property role="IQ2ns" value="4857241518181091037" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
     </node>
     <node concept="PrWs8" id="4dCoQOftCfi" role="PzmwI">
@@ -90,9 +88,8 @@
     </node>
     <node concept="1TJgyj" id="5r2fDr4oT61" role="1TKVEi">
       <property role="IQ2ns" value="6251628050004545921" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="specRef" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="gioj:7mSH3Wn9yWs" resolve="SpecSection" />
     </node>
   </node>
@@ -105,13 +102,11 @@
     <ref role="1TJDcQ" node="4qaoH_Q49c" resolve="SmvGoalBase" />
     <node concept="1TJgyj" id="71RA3dH$OQ6" role="1TKVEi">
       <property role="IQ2ns" value="8104113401125621126" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
       <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
     </node>
     <node concept="1TJgyj" id="71RA3dH$OQm" role="1TKVEi">
       <property role="IQ2ns" value="8104113401125621142" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="spec" />
       <ref role="20lvS9" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
     </node>
@@ -134,7 +129,6 @@
     <ref role="1TJDcQ" to="py52:3GRi4m$rlpN" resolve="Context" />
     <node concept="1TJgyj" id="4qaoH_DQhi" role="1TKVEi">
       <property role="IQ2ns" value="79421622115066962" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
       <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
     </node>
@@ -201,13 +195,11 @@
     <ref role="1TJDcQ" node="4qaoH_Q49c" resolve="SmvGoalBase" />
     <node concept="1TJgyj" id="4qaoH_PPf$" role="1TKVEi">
       <property role="IQ2ns" value="79421622118208484" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
       <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
     </node>
     <node concept="1TJgyj" id="4qaoH_PPf_" role="1TKVEi">
       <property role="IQ2ns" value="79421622118208485" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="tests" />
       <ref role="20lvS9" to="fnq2:43FRfGJUEcN" resolve="TestsCollection" />
     </node>
