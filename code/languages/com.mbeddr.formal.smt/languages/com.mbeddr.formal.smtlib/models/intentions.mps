@@ -2,7 +2,7 @@
 <model ref="r:d2e6ff20-19bb-452d-85f8-04140a13975d(com.mbeddr.formal.smtlib.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -126,7 +126,7 @@
           </node>
         </node>
         <node concept="2xdQw9" id="104dc5E5o$J" role="3cqZAp">
-          <property role="2xdLsb" value="info" />
+          <property role="2xdLsb" value="h1akgim/info" />
           <node concept="3cpWs3" id="104dc5E5oVy" role="9lYJi">
             <node concept="2OqwBi" id="104dc5E5p6S" role="3uHU7w">
               <node concept="37vLTw" id="104dc5E5oWC" role="2Oq$k0">

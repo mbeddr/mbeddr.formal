@@ -2,7 +2,7 @@
 <model ref="r:876438c6-7b47-46e0-b6c5-d6952f61978a(com.mbeddr.formal.smtlib.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -555,13 +555,13 @@
       <node concept="2v7bAL" id="1MFSGJpkLjg" role="3EZMnx">
         <ref role="1NtTu8" to="d9cz:104dc5E5R2w" resolve="value" />
         <node concept="VechU" id="1MFSGJpkLju" role="3F10Kt">
-          <property role="Vb096" value="red" />
+          <property role="Vb096" value="fLwANPn/red" />
         </node>
         <node concept="Veino" id="1MFSGJpkLjv" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
         <node concept="Vb9p2" id="1MFSGJpkLjw" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
         </node>
       </node>
       <node concept="l2Vlx" id="104dc5E5R2B" role="2iSdaV" />
