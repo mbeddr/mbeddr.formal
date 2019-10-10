@@ -5,6 +5,7 @@
     <use id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base" version="0" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
     <use id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -50,11 +51,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
@@ -162,6 +160,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
@@ -324,8 +330,40 @@
       <node concept="30G5F_" id="4sMKqP$Udrr" role="30HLyM">
         <node concept="3clFbS" id="4sMKqP$Udrs" role="2VODD2">
           <node concept="3SKdUt" id="4sMKqP$UiD6" role="3cqZAp">
-            <node concept="3SKdUq" id="4sMKqP$UiD8" role="3SKWNk">
-              <property role="3SKdUp" value="we are in CCodeContext and not yet wrapped inside a ProcRef" />
+            <node concept="1PaTwC" id="5MWJzF9ulFm" role="3ndbpf">
+              <node concept="3oM_SD" id="5MWJzF9ulFn" role="1PaTwD">
+                <property role="3oM_SC" value="we" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFo" role="1PaTwD">
+                <property role="3oM_SC" value="are" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFp" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFq" role="1PaTwD">
+                <property role="3oM_SC" value="CCodeContext" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFr" role="1PaTwD">
+                <property role="3oM_SC" value="and" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFs" role="1PaTwD">
+                <property role="3oM_SC" value="not" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFt" role="1PaTwD">
+                <property role="3oM_SC" value="yet" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFu" role="1PaTwD">
+                <property role="3oM_SC" value="wrapped" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFv" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFw" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="5MWJzF9ulFx" role="1PaTwD">
+                <property role="3oM_SC" value="ProcRef" />
+              </node>
             </node>
           </node>
           <node concept="3clFbJ" id="4sMKqP$Uf00" role="3cqZAp">

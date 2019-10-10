@@ -4,7 +4,7 @@
   <languages>
     <use id="ef89f137-f966-4966-a202-ab9ea26e79fe" name="com.mbeddr.formal.spin.c.core" version="0" />
     <use id="628c1bba-6b54-4c71-927c-3cff044349e4" name="com.mbeddr.formal.spin.hdl" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
     <use id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
@@ -183,9 +183,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -384,7 +382,7 @@
                                   <ref role="2pJxaS" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
                                   <node concept="2pJxcG" id="26dfgZmjKWY" role="2pJxcM">
                                     <ref role="2pJxcJ" to="ehqg:6NmtaR20s4L" resolve="value" />
-                                    <node concept="2YIFZM" id="26dfgZmjKWZ" role="2pJxcZ">
+                                    <node concept="2YIFZM" id="26dfgZmjKWZ" role="28ntcv">
                                       <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                                       <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                                       <node concept="37vLTw" id="26dfgZmjKX0" role="37wK5m">

@@ -2,7 +2,7 @@
 <model ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -85,14 +85,13 @@
     </node>
     <node concept="1TJgyj" id="4_pH3zvo$xG" role="1TKVEi">
       <property role="IQ2ns" value="5285453794054916204" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="env" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
     </node>
     <node concept="1TJgyj" id="4_pH3zvoJ0x" role="1TKVEi">
       <property role="IQ2ns" value="5285453794054959137" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="searchDepth" />
       <ref role="20lvS9" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
     </node>

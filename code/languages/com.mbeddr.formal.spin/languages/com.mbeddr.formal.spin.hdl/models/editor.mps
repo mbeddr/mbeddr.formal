@@ -2,7 +2,7 @@
 <model ref="r:cb9ab930-524d-4336-9a55-e8be4ab6255b(com.mbeddr.formal.spin.hdl.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
@@ -56,9 +56,7 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
-      <concept id="5266818545798688928" name="jetbrains.mps.lang.editor.structure.ShowBoundariesInStyleClassItem" flags="lg" index="1fO$WK">
-        <property id="5266818545798701312" name="value" index="1fOxUg" />
-      </concept>
+      <concept id="5266818545798688928" name="jetbrains.mps.lang.editor.structure.ShowBoundariesInStyleClassItem" flags="lg" index="1fO$WK" />
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -212,7 +210,7 @@
         </node>
         <node concept="3XFhqQ" id="1ZejHLlNgxI" role="3EZMnx" />
         <node concept="3F2HdR" id="1ZejHLlNgxR" role="3EZMnx">
-          <property role="1cu_pB" value="3" />
+          <property role="1cu_pB" value="hQNNVxO/attractsRecursively" />
           <ref role="1NtTu8" to="y6ji:1ZejHLlNgv5" resolve="decls" />
           <node concept="2iRkQZ" id="1ZejHLlNgxU" role="2czzBx" />
           <node concept="VPM3Z" id="1ZejHLlNgxV" role="3F10Kt">
@@ -371,9 +369,7 @@
         <node concept="l2Vlx" id="1ZejHLlNZ0_" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="1ZejHLlNYZ6" role="2iSdaV" />
-      <node concept="1fO$WK" id="5mKzygM7Pgl" role="3F10Kt">
-        <property role="1fOxUg" value="GUTTER" />
-      </node>
+      <node concept="1fO$WK" id="5mKzygM7Pgl" role="3F10Kt" />
     </node>
   </node>
   <node concept="24kQdi" id="1ZejHLlNZ2j">
@@ -552,7 +548,7 @@
       <node concept="3F0ifn" id="5mKzygM6uiI" role="3EZMnx">
         <property role="3F0ifm" value="$" />
         <node concept="VechU" id="5mKzygM6uji" role="3F10Kt">
-          <property role="Vb096" value="magenta" />
+          <property role="Vb096" value="fLwANPs/magenta" />
         </node>
       </node>
       <node concept="2v7bAL" id="5mKzygM6E4G" role="3EZMnx">
@@ -565,7 +561,7 @@
       <node concept="3F0ifn" id="5mKzygM6uj7" role="3EZMnx">
         <property role="3F0ifm" value="$" />
         <node concept="VechU" id="5mKzygM6ujf" role="3F10Kt">
-          <property role="Vb096" value="magenta" />
+          <property role="Vb096" value="fLwANPs/magenta" />
         </node>
       </node>
       <node concept="l2Vlx" id="5mKzygM6uiB" role="2iSdaV" />

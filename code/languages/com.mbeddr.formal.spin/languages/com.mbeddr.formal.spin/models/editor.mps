@@ -2,7 +2,7 @@
 <model ref="r:11ff7a6d-fe8d-47a6-bc13-8c22fd155793(com.mbeddr.formal.spin.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
@@ -184,7 +184,7 @@
           <node concept="3F0ifn" id="4Hts7PYos$g" role="2czzBI">
             <property role="3F0ifm" value="none" />
             <node concept="VechU" id="4Hts7PYosCx" role="3F10Kt">
-              <property role="Vb096" value="lightGray" />
+              <property role="Vb096" value="fLJRk5A/lightGray" />
             </node>
             <node concept="VPxyj" id="4Hts7PYosCG" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -273,7 +273,7 @@
         <node concept="3F0ifn" id="2yuIwRzlBZQ" role="3EZMnx">
           <property role="3F0ifm" value="..." />
           <node concept="VechU" id="2yuIwRzlBZV" role="3F10Kt">
-            <property role="Vb096" value="gray" />
+            <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
         <node concept="3F0ifn" id="2yuIwRzlBZI" role="3EZMnx">
@@ -1021,7 +1021,7 @@
         <node concept="l2Vlx" id="4Hts7PYcJZ8" role="2iSdaV" />
         <node concept="1kIj98" id="4Hts7PYcJYX" role="3EZMnx">
           <node concept="3F1sOY" id="4Hts7PYcJZr" role="1kIj9b">
-            <property role="1cu_pB" value="2" />
+            <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
             <ref role="1NtTu8" to="o3hv:4Hts7PYcJYm" resolve="exp" />
           </node>
           <node concept="2ee1ZP" id="4Hts7PYiuBs" role="2ee62g">
@@ -1074,7 +1074,7 @@
       <node concept="3F0ifn" id="48uT1AIUMu7" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <node concept="VechU" id="48uT1AIUMuf" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
       <node concept="l2Vlx" id="4Hts7PYpqqm" role="2iSdaV" />
@@ -1489,7 +1489,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="1vcsY83qmea" role="3EZMnx">
-        <ref role="1NtTu8" to="o3hv:1vcsY83oEmu" resolve="matchingStrategy" />
+        <ref role="1NtTu8" to="o3hv:5MWJzF9ulGr" resolve="matchingStrategy" />
       </node>
       <node concept="l2Vlx" id="1vcsY83oEkx" role="2iSdaV" />
     </node>
