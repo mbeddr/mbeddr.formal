@@ -2,8 +2,8 @@
 <model ref="r:62d702fd-8dbf-48ee-8db2-f1a6a94cc884(com.mpsbasics.docx4j.sandbox.java_baselanguage_serializers)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="3g0o" ref="r:a6263c3c-f5c8-43aa-8a86-c420dd6b206e(com.mpsbasics.docx4j.core.registry)" />
@@ -13,6 +13,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="eaz1" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -148,8 +149,8 @@
       </node>
       <node concept="3Tm1VV" id="2w5Gq4UsCcQ" role="1B3o_S" />
       <node concept="3cqZAl" id="2w5Gq4UsCcR" role="3clF45" />
-      <node concept="3uibUv" id="2w5Gq4UsD$B" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+      <node concept="3uibUv" id="52LJyEZg5R8" role="Sfmx6">
+        <ref role="3uigEE" to="eaz1:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="2w5Gq4UsCcT" role="3clF47">
         <node concept="3cpWs8" id="38aFq1iXqNp" role="3cqZAp">
@@ -185,7 +186,7 @@
         </node>
         <node concept="3clFbF" id="2w5Gq4Uua$o" role="3cqZAp">
           <node concept="2YIFZM" id="2w5Gq4UuaXq" role="3clFbG">
-            <ref role="37wK5l" to="s3z8:2w5Gq4UtAda" resolve="addText" />
+            <ref role="37wK5l" to="s3z8:2w5Gq4UtAda" resolve="addTextParagraph" />
             <ref role="1Pybhc" to="s3z8:2w5Gq4Ut$Yz" resolve="WordFacade" />
             <node concept="37vLTw" id="2w5Gq4UuaXr" role="37wK5m">
               <ref role="3cqZAo" node="2w5Gq4UsCcL" resolve="doc" />

@@ -2,14 +2,14 @@
 <model ref="r:a6263c3c-f5c8-43aa-8a86-c420dd6b206e(com.mpsbasics.docx4j.core.registry)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
   </languages>
   <imports>
-    <import index="eaz0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.bind(JDK/)" />
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="eaz0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -120,7 +120,7 @@
       <node concept="3clFbS" id="6fO82$FqF8I" role="3clF47" />
       <node concept="3Tm1VV" id="6fO82$FqF8J" role="1B3o_S" />
       <node concept="3cqZAl" id="6fO82$FqF8A" role="3clF45" />
-      <node concept="3uibUv" id="6fO82$FrgkN" role="Sfmx6">
+      <node concept="3uibUv" id="7TJK71y6Q0B" role="Sfmx6">
         <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
       </node>
     </node>
