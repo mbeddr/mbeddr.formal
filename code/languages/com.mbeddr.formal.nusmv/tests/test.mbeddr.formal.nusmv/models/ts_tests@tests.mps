@@ -2,11 +2,11 @@
 <model ref="r:2acd3778-7f35-4108-8d06-76b28dd1d4e9(test.mbeddr.formal.nusmv.ts_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
   <imports>
-    <import index="pido" ref="r:09dcb7c7-5e18-448c-88a2-735928a4765e(com.mbeddr.formal.nusmv.arch.typesystem)" implicit="true" />
+    <import index="pido" ref="r:09dcb7c7-5e18-448c-88a2-735928a4765e(com.mbeddr.formal.nusmv.arch.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -27,30 +27,11 @@
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
-        <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
-      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
-        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
-      </concept>
       <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
-      <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
-        <reference id="1210674534086" name="declaration" index="3xOPvv" />
-      </concept>
-      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
-      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
-    </language>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
-        <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="c1b1e23f-b677-40b8-a490-e192dd8d78e5" name="com.mbeddr.formal.nusmv.sm">
       <concept id="4512297433099947043" name="com.mbeddr.formal.nusmv.sm.structure.StateMachineSection" flags="ng" index="2aiEES" />
@@ -305,17 +286,6 @@
   </node>
   <node concept="1lH9Xt" id="25Ap4XXlWlM">
     <property role="TrG5h" value="_020_ext_udt" />
-    <node concept="1LZb2c" id="25Ap4XXm8bw" role="1SL9yI">
-      <property role="TrG5h" value="test" />
-      <node concept="3cqZAl" id="25Ap4XXm8bx" role="3clF45" />
-      <node concept="3clFbS" id="25Ap4XXm8b_" role="3clF47">
-        <node concept="3Ca1qy" id="25Ap4XXm8cK" role="3cqZAp">
-          <node concept="3xONca" id="25Ap4XXm8cO" role="3qv8fS">
-            <ref role="3xOPvv" node="25Ap4XXm8bo" resolve="udts" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="25Ap4XXlWlN" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXlWlP" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -550,22 +520,16 @@
         <node concept="3xLA65" id="25Ap4XXm8bo" role="lGtFl">
           <property role="TrG5h" value="udts" />
         </node>
+        <node concept="7CXmI" id="52LJyEZhcMU" role="lGtFl">
+          <node concept="7OXhh" id="52LJyEZhcMV" role="7EUXB">
+            <property role="TrG5h" value="test_migrated" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="25Ap4XX$Pnm">
     <property role="TrG5h" value="_010_base_equality_expressions" />
-    <node concept="1LZb2c" id="25Ap4XX$Pnn" role="1SL9yI">
-      <property role="TrG5h" value="test" />
-      <node concept="3cqZAl" id="25Ap4XX$Pno" role="3clF45" />
-      <node concept="3clFbS" id="25Ap4XX$Pnp" role="3clF47">
-        <node concept="3Ca1qy" id="25Ap4XX$Pnq" role="3cqZAp">
-          <node concept="3xONca" id="25Ap4XX$Pnr" role="3qv8fS">
-            <ref role="3xOPvv" node="25Ap4XX$PoB" resolve="equality_expression" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="25Ap4XX$Pns" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XX$Pnt" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -695,22 +659,16 @@
         <node concept="3xLA65" id="25Ap4XX$PoB" role="lGtFl">
           <property role="TrG5h" value="equality_expression" />
         </node>
+        <node concept="7CXmI" id="52LJyEZhcNc" role="lGtFl">
+          <node concept="7OXhh" id="52LJyEZhcNd" role="7EUXB">
+            <property role="TrG5h" value="test_migrated" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="25Ap4XXBk5p">
     <property role="TrG5h" value="_020_ext_udt_structs" />
-    <node concept="1LZb2c" id="25Ap4XXBk5q" role="1SL9yI">
-      <property role="TrG5h" value="test" />
-      <node concept="3cqZAl" id="25Ap4XXBk5r" role="3clF45" />
-      <node concept="3clFbS" id="25Ap4XXBk5s" role="3clF47">
-        <node concept="3Ca1qy" id="25Ap4XXBk5t" role="3cqZAp">
-          <node concept="3xONca" id="25Ap4XXBk5u" role="3qv8fS">
-            <ref role="3xOPvv" node="25Ap4XXBk6E" resolve="udts" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="25Ap4XXBk5v" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXBk5w" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -809,22 +767,16 @@
         <node concept="3xLA65" id="25Ap4XXBk6E" role="lGtFl">
           <property role="TrG5h" value="udts" />
         </node>
+        <node concept="7CXmI" id="52LJyEZhcNu" role="lGtFl">
+          <node concept="7OXhh" id="52LJyEZhcNv" role="7EUXB">
+            <property role="TrG5h" value="test_migrated" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="25Ap4XXCh5R">
     <property role="TrG5h" value="_010_base_defines_type" />
-    <node concept="1LZb2c" id="25Ap4XXCh5S" role="1SL9yI">
-      <property role="TrG5h" value="test" />
-      <node concept="3cqZAl" id="25Ap4XXCh5T" role="3clF45" />
-      <node concept="3clFbS" id="25Ap4XXCh5U" role="3clF47">
-        <node concept="3Ca1qy" id="25Ap4XXCh5V" role="3cqZAp">
-          <node concept="3xONca" id="25Ap4XXCh5W" role="3qv8fS">
-            <ref role="3xOPvv" node="25Ap4XXCh6B" resolve="define" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="25Ap4XXCh5X" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXCh5Y" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -907,22 +859,16 @@
         <node concept="3xLA65" id="25Ap4XXCh6B" role="lGtFl">
           <property role="TrG5h" value="define" />
         </node>
+        <node concept="7CXmI" id="52LJyEZhcNK" role="lGtFl">
+          <node concept="7OXhh" id="52LJyEZhcNL" role="7EUXB">
+            <property role="TrG5h" value="test_migrated" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="25Ap4XXJOFi">
     <property role="TrG5h" value="_010_base_module_actual_formal_params" />
-    <node concept="1LZb2c" id="25Ap4XXJOFj" role="1SL9yI">
-      <property role="TrG5h" value="test" />
-      <node concept="3cqZAl" id="25Ap4XXJOFk" role="3clF45" />
-      <node concept="3clFbS" id="25Ap4XXJOFl" role="3clF47">
-        <node concept="3Ca1qy" id="25Ap4XXJOFm" role="3cqZAp">
-          <node concept="3xONca" id="25Ap4XXJOFn" role="3qv8fS">
-            <ref role="3xOPvv" node="25Ap4XXJOFW" resolve="define" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="25Ap4XXJOFo" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXJOFp" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -986,6 +932,11 @@
         </node>
         <node concept="3xLA65" id="25Ap4XXJOFW" role="lGtFl">
           <property role="TrG5h" value="define" />
+        </node>
+        <node concept="7CXmI" id="52LJyEZhcO2" role="lGtFl">
+          <node concept="7OXhh" id="52LJyEZhcO3" role="7EUXB">
+            <property role="TrG5h" value="test_migrated" />
+          </node>
         </node>
       </node>
     </node>
@@ -1072,17 +1023,6 @@
   </node>
   <node concept="1lH9Xt" id="2obHvWSbfms">
     <property role="TrG5h" value="_100_tests_sm_init_variables" />
-    <node concept="1LZb2c" id="2obHvWSbjYc" role="1SL9yI">
-      <property role="TrG5h" value="test_sm_variable_initialization" />
-      <node concept="3cqZAl" id="2obHvWSbjYd" role="3clF45" />
-      <node concept="3clFbS" id="2obHvWSbjYh" role="3clF47">
-        <node concept="3Ca1qy" id="2obHvWSbk2A" role="3cqZAp">
-          <node concept="3xONca" id="2obHvWSbk2G" role="3qv8fS">
-            <ref role="3xOPvv" node="2obHvWSbjU5" resolve="state_machines" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="2obHvWSbfmt" role="1SKRRt">
       <node concept="2HdtXS" id="2obHvWSbfmu" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -1184,6 +1124,11 @@
         <node concept="2SQmWS" id="2obHvWSbfmW" role="2HcuB8" />
         <node concept="3xLA65" id="2obHvWSbjU5" role="lGtFl">
           <property role="TrG5h" value="state_machines" />
+        </node>
+        <node concept="7CXmI" id="52LJyEZhcOk" role="lGtFl">
+          <node concept="7OXhh" id="52LJyEZhcOl" role="7EUXB">
+            <property role="TrG5h" value="test_sm_variable_initialization_migrated" />
+          </node>
         </node>
       </node>
     </node>

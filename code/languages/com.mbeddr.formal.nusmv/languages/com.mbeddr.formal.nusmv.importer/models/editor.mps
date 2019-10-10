@@ -2,7 +2,7 @@
 <model ref="r:3a502f67-5b5c-4b44-b2ee-59469141accb(com.mbeddr.formal.nusmv.importer.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -351,7 +351,7 @@
       <node concept="3F0ifn" id="9TY4XH106t" role="3EZMnx">
         <property role="3F0ifm" value="⏎" />
         <node concept="VechU" id="9TY4XH10xw" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
     </node>
@@ -362,19 +362,19 @@
       <node concept="3F0ifn" id="5Rx4RPFVYAk" role="3EZMnx">
         <property role="3F0ifm" value="$" />
         <node concept="Veino" id="2H74AM1Cb5T" role="3F10Kt">
-          <property role="Vb096" value="orange" />
+          <property role="Vb096" value="fLwANPp/orange" />
         </node>
       </node>
       <node concept="3F0A7n" id="5Rx4RPFVYCZ" role="3EZMnx">
         <ref role="1NtTu8" to="l8i4:5Rx4RPFVYqh" resolve="referencedVarName" />
         <node concept="Veino" id="2H74AM1Cb5W" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="5Rx4RPFVYE2" role="3EZMnx">
         <property role="3F0ifm" value="$" />
         <node concept="Veino" id="2H74AM1CeQT" role="3F10Kt">
-          <property role="Vb096" value="orange" />
+          <property role="Vb096" value="fLwANPp/orange" />
         </node>
       </node>
       <node concept="l2Vlx" id="5Rx4RPFVY_n" role="2iSdaV" />
@@ -456,10 +456,10 @@
         <node concept="3F0ifn" id="41yfEs6hm3I" role="3EZMnx">
           <property role="3F0ifm" value="-- WARNING: the NuSMV importer is EXPERIMENTAL. " />
           <node concept="VechU" id="41yfEs6ht9x" role="3F10Kt">
-            <property role="Vb096" value="red" />
+            <property role="Vb096" value="fLwANPn/red" />
           </node>
           <node concept="Veino" id="41yfEs6htaU" role="3F10Kt">
-            <property role="Vb096" value="yellow" />
+            <property role="Vb096" value="fLwANPq/yellow" />
           </node>
         </node>
         <node concept="l2Vlx" id="41yfEs6hm3E" role="2iSdaV" />
@@ -471,10 +471,10 @@
         <node concept="3F0ifn" id="41yfEs6i0sk" role="3EZMnx">
           <property role="3F0ifm" value="   Imported model can be only used as a baseline and must be manually checked!" />
           <node concept="VechU" id="41yfEs6i0sw" role="3F10Kt">
-            <property role="Vb096" value="red" />
+            <property role="Vb096" value="fLwANPn/red" />
           </node>
           <node concept="Veino" id="41yfEs6i0sx" role="3F10Kt">
-            <property role="Vb096" value="yellow" />
+            <property role="Vb096" value="fLwANPq/yellow" />
           </node>
         </node>
         <node concept="l2Vlx" id="41yfEs6i0sl" role="2iSdaV" />
@@ -499,19 +499,19 @@
       <node concept="3F0ifn" id="2H74AM1EmJ8" role="3EZMnx">
         <property role="3F0ifm" value="$" />
         <node concept="Veino" id="2H74AM1EmJ9" role="3F10Kt">
-          <property role="Vb096" value="orange" />
+          <property role="Vb096" value="fLwANPp/orange" />
         </node>
       </node>
       <node concept="3F0A7n" id="2H74AM1EmJa" role="3EZMnx">
         <ref role="1NtTu8" to="l8i4:2H74AM1EmIf" resolve="referencedModuleName" />
         <node concept="Veino" id="2H74AM1EmJb" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="2H74AM1EmJc" role="3EZMnx">
         <property role="3F0ifm" value="$" />
         <node concept="Veino" id="2H74AM1EmJd" role="3F10Kt">
-          <property role="Vb096" value="orange" />
+          <property role="Vb096" value="fLwANPp/orange" />
         </node>
       </node>
       <node concept="l2Vlx" id="2H74AM1EmJe" role="2iSdaV" />

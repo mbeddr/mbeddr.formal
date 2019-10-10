@@ -8,9 +8,6 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="o5m" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#f1fb7b1c-ce0d-423c-9369-4a661d600029(jetbrains.mps.lang.project.modules/module.de.itemis.mps.extensions.build@project_stub)" />
-    <import index="yy6n" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#7125ed76-a460-4b0f-b95b-a899f99488d6(jetbrains.mps.lang.project.modules/module.com.mbeddr.formal.nusmv.build@project_stub)" />
-    <import index="w0cd" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#d599fae5-4709-4828-943d-5c57296d1034(jetbrains.mps.lang.project.modules/module.com.mbeddr.formal.rcp.tips_and_tricks@project_stub)" />
     <import index="mtv2" ref="r:2d13f07c-e044-4d01-a023-6d493e350f9a(com.mbeddr.formal.nusmv.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
   </imports>

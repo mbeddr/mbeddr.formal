@@ -4,8 +4,8 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
@@ -402,7 +402,7 @@
         <node concept="3clFbJ" id="7mSH3WncJhN" role="3cqZAp">
           <node concept="3clFbS" id="7mSH3WncJhP" role="3clFbx">
             <node concept="2xdQw9" id="7mSH3WncKE9" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="7mSH3WncKEb" role="9lYJi">
                 <property role="Xl_RC" value="Error: project variable is null" />
               </node>
@@ -1160,7 +1160,7 @@
         <node concept="3clFbJ" id="6mm$FLZ2qO$" role="3cqZAp">
           <node concept="3clFbS" id="6mm$FLZ2qO_" role="3clFbx">
             <node concept="2xdQw9" id="6mm$FLZ2qOA" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="6mm$FLZ2qOB" role="9lYJi">
                 <property role="Xl_RC" value="Error: project variable is null" />
               </node>
@@ -1317,7 +1317,7 @@
   <node concept="sEfby" id="1ZsZb$iUoX6">
     <property role="TrG5h" value="NuSMVLiftedResultTool" />
     <property role="2XNbzY" value="NuSMV Lifted Verification Result" />
-    <property role="2bmUCM" value="RIGHT" />
+    <property role="2bmUCM" value="2aGS$UDXOxV/RIGHT" />
     <node concept="2XrIbr" id="2UdJgvD7_zC" role="2XNbBy">
       <property role="TrG5h" value="appendResult" />
       <node concept="3cqZAl" id="2UdJgvD7_zD" role="3clF45" />
@@ -1474,7 +1474,7 @@
         <node concept="3clFbJ" id="6mm$FLZ2PnP" role="3cqZAp">
           <node concept="3clFbS" id="6mm$FLZ2PnQ" role="3clFbx">
             <node concept="2xdQw9" id="6mm$FLZ2PnR" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="6mm$FLZ2PnS" role="9lYJi">
                 <property role="Xl_RC" value="Error: project variable is null" />
               </node>
@@ -1654,7 +1654,7 @@
         <node concept="3clFbJ" id="2xeYpNCdzDp" role="3cqZAp">
           <node concept="3clFbS" id="2xeYpNCdzDq" role="3clFbx">
             <node concept="2xdQw9" id="2xeYpNCdzDr" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="2xeYpNCdzDs" role="9lYJi">
                 <property role="Xl_RC" value="Error: project variable is null" />
               </node>
@@ -1848,7 +1848,7 @@
         <node concept="3clFbJ" id="2xeYpNCfAJH" role="3cqZAp">
           <node concept="3clFbS" id="2xeYpNCfAJI" role="3clFbx">
             <node concept="2xdQw9" id="2xeYpNCfAJJ" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="2xeYpNCfAJK" role="9lYJi">
                 <property role="Xl_RC" value="Error: project variable is null" />
               </node>
@@ -2205,7 +2205,7 @@
         <node concept="3clFbJ" id="6glUKoNPNNa" role="3cqZAp">
           <node concept="3clFbS" id="6glUKoNPNNb" role="3clFbx">
             <node concept="2xdQw9" id="6glUKoNPNNc" role="3cqZAp">
-              <property role="2xdLsb" value="error" />
+              <property role="2xdLsb" value="gZ5fh_4/error" />
               <node concept="Xl_RD" id="6glUKoNPNNd" role="9lYJi">
                 <property role="Xl_RC" value="Error: project variable is null" />
               </node>

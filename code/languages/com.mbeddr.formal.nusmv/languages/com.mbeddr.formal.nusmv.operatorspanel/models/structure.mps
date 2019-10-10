@@ -2,7 +2,7 @@
 <model ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -53,7 +53,7 @@
     <ref role="1TJDcQ" node="2bsfjeWbjC9" resolve="DefinitionValueProviderBase" />
     <node concept="1TJgyj" id="2bsfjeWbxO6" role="1TKVEi">
       <property role="IQ2ns" value="2511949984575659270" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="adapter" />
       <ref role="20lvS9" node="2mjHtwTRzoU" resolve="DefinitionIntegerValueAdapter" />
       <ref role="20ksaX" node="2mjHtwTRBJr" resolve="adapter" />
@@ -84,7 +84,7 @@
     <ref role="1TJDcQ" node="2bsfjeWbjC9" resolve="DefinitionValueProviderBase" />
     <node concept="1TJgyj" id="2bsfjeWbxOe" role="1TKVEi">
       <property role="IQ2ns" value="2511949984575659278" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="adapter" />
       <ref role="20ksaX" node="2mjHtwTRBJr" resolve="adapter" />
       <ref role="20lvS9" node="2bsfjeWbjTw" resolve="DefinitionStringValueAdapter" />
@@ -102,14 +102,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2mjHtwTR7Zj" role="1TKVEi">
       <property role="IQ2ns" value="2707707741268115411" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="define" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
     </node>
     <node concept="1TJgyj" id="2mjHtwTRBJr" role="1TKVEi">
       <property role="IQ2ns" value="2707707741268245467" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="adapter" />
       <ref role="20lvS9" node="2bsfjeWbjD3" resolve="DefinitionValueAdapterBase" />
     </node>

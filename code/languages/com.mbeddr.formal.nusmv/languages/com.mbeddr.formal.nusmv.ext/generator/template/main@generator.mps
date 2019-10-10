@@ -180,7 +180,7 @@
       </concept>
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
       <concept id="4643937035595555211" name="com.mbeddr.formal.nusmv.structure.SimpleAssignment" flags="ng" index="1lxFmE" />
-      <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VarRef" flags="ng" index="1y$7Wu">
+      <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VariableRefDotTarget" flags="ng" index="1y$7Wu">
         <reference id="8482728081216817954" name="var" index="1y$7Wt" />
       </concept>
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
@@ -206,9 +206,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -595,7 +593,7 @@
                               <ref role="2pJxaS" to="gioj:2mjHtwTupZz" resolve="DocumentationLine" />
                               <node concept="2pJxcG" id="15PPQjZlQXO" role="2pJxcM">
                                 <ref role="2pJxcJ" to="gioj:2mjHtwTuqz_" resolve="documentation" />
-                                <node concept="2GrUjf" id="15PPQjZlRrd" role="2pJxcZ">
+                                <node concept="2GrUjf" id="15PPQjZlRrd" role="28ntcv">
                                   <ref role="2Gs0qQ" node="15PPQjZl$Ws" resolve="line" />
                                 </node>
                               </node>

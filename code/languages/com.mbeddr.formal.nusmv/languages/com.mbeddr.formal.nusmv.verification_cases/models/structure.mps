@@ -2,7 +2,7 @@
 <model ref="r:8f9f0538-4283-4374-bebd-61c014979052(com.mbeddr.formal.nusmv.verification_cases.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -55,16 +55,16 @@
     </node>
     <node concept="1TJgyj" id="4Hts7PYE9uh" role="1TKVEi">
       <property role="IQ2ns" value="5430620409976887185" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="initialState" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="4Hts7PYEzy3" role="1TKVEi">
       <property role="IQ2ns" value="5430620409976993923" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="suvInputsTypes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     </node>
   </node>

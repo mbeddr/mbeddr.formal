@@ -2,7 +2,7 @@
 <model ref="r:68c6e537-dce3-44cd-b9b5-faab233d843b(com.mbeddr.formal.nusmv.tests.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -642,7 +642,7 @@
         <node concept="2reCLy" id="6PRHFscNqGl" role="2reCL6">
           <node concept="1HlG4h" id="6PRHFscNrxq" role="2reSmM">
             <node concept="VechU" id="6PRHFscNrxr" role="3F10Kt">
-              <property role="Vb096" value="LIGHT_BLUE" />
+              <property role="Vb096" value="hGRnIZc/lightBlue" />
             </node>
             <node concept="1HfYo3" id="6PRHFscNrxs" role="1HlULh">
               <node concept="3TQlhw" id="6PRHFscNrxt" role="1Hhtcw">
@@ -694,7 +694,7 @@
               <property role="2rfbtB" value="Inputs" />
               <node concept="1g0IQG" id="43FRfGK5Qhb" role="1geGt4">
                 <node concept="Qq2$L" id="43FRfGK5Qhh" role="3F10Kt">
-                  <property role="Qq2$K" value="CENTER" />
+                  <property role="Qq2$K" value="3NocqOaFOpk/CENTER" />
                 </node>
               </node>
             </node>
@@ -758,7 +758,7 @@
               <property role="2rfbtB" value="Outputs" />
               <node concept="1g0IQG" id="43FRfGK5Qhn" role="1geGt4">
                 <node concept="Qq2$L" id="43FRfGKdRQ4" role="3F10Kt">
-                  <property role="Qq2$K" value="CENTER" />
+                  <property role="Qq2$K" value="3NocqOaFOpk/CENTER" />
                 </node>
               </node>
             </node>
@@ -820,10 +820,10 @@
           </node>
           <node concept="1g0IQG" id="1ERZrWj3lAI" role="1geGt4">
             <node concept="QtRvh" id="4ncOM41viDG" role="3F10Kt">
-              <property role="QtXtZ" value="CENTER" />
+              <property role="QtXtZ" value="3NocqOaFOoT/CENTER" />
             </node>
             <node concept="Qq2$L" id="4ncOM41viDH" role="3F10Kt">
-              <property role="Qq2$K" value="CENTER" />
+              <property role="Qq2$K" value="3NocqOaFOpk/CENTER" />
             </node>
             <node concept="3hShR6" id="3UuTDIONNkK" role="3hTmz4">
               <property role="3hSBKY" value="3" />
@@ -942,10 +942,10 @@
     <node concept="3F0ifn" id="7ODrlMnL7Fj" role="2wV5jI">
       <property role="3F0ifm" value="*" />
       <node concept="VechU" id="7ODrlMnL7Fo" role="3F10Kt">
-        <property role="Vb096" value="magenta" />
+        <property role="Vb096" value="fLwANPs/magenta" />
       </node>
       <node concept="Vb9p2" id="7ODrlMnLMyR" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
     <node concept="3EZMnI" id="4IuDkoKJr7V" role="6VMZX">
@@ -964,10 +964,10 @@
     <node concept="3F0ifn" id="4IuDkoKJ7d4" role="2wV5jI">
       <property role="3F0ifm" value="#" />
       <node concept="VechU" id="4IuDkoKJ7d7" role="3F10Kt">
-        <property role="Vb096" value="cyan" />
+        <property role="Vb096" value="fLwANPt/cyan" />
       </node>
       <node concept="Vb9p2" id="4IuDkoKJ7dc" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
   </node>
@@ -977,7 +977,7 @@
       <node concept="3F0ifn" id="67icRu60OUt" role="3EZMnx">
         <property role="3F0ifm" value="--" />
         <node concept="VechU" id="67icRu60T53" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
       <node concept="3F0A7n" id="67icRu60OUA" role="3EZMnx">
@@ -986,7 +986,7 @@
       <node concept="3F0ifn" id="67icRu60OUN" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <node concept="VechU" id="67icRu60T59" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
       <node concept="l2Vlx" id="67icRu60OUm" role="2iSdaV" />

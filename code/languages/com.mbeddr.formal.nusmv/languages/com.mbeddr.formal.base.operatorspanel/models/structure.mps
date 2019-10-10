@@ -2,7 +2,7 @@
 <model ref="r:76e92037-38d8-4be4-999f-3a851f86ac42(com.mbeddr.formal.base.operatorspanel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -66,9 +66,9 @@
     </node>
     <node concept="1TJgyj" id="2mjHtwTPOio" role="1TKVEi">
       <property role="IQ2ns" value="2707707741267772568" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     </node>
     <node concept="1QGGSu" id="2QUcAU2cnio" role="rwd14">
@@ -83,13 +83,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2mjHtwTQz3K" role="1TKVEi">
       <property role="IQ2ns" value="2707707741267964144" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="colorProvider" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>
     <node concept="1TJgyj" id="2mjHtwTQz3P" role="1TKVEi">
       <property role="IQ2ns" value="2707707741267964149" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="radiusProvider" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>
@@ -137,9 +137,9 @@
     </node>
     <node concept="1TJgyj" id="2mjHtwTZvO1" role="1TKVEi">
       <property role="IQ2ns" value="2707707741270310145" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     </node>
   </node>
@@ -151,14 +151,14 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2bsfjeWb_RP" role="1TKVEi">
       <property role="IQ2ns" value="2511949984575675893" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="textProvider" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2bsfjeWbeM2" resolve="IStringValueProvider" />
     </node>
     <node concept="1TJgyj" id="2bsfjeWcfRp" role="1TKVEi">
       <property role="IQ2ns" value="2511949984575847897" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="colorProvider" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>
@@ -212,9 +212,9 @@
     <property role="3GE5qa" value="base" />
     <node concept="1TJgyj" id="3G$pWQNtNpe" role="1TKVEi">
       <property role="IQ2ns" value="4261645280576222798" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="color" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
     </node>
   </node>
@@ -229,9 +229,9 @@
     </node>
     <node concept="1TJgyj" id="3G$pWQNu3hr" role="1TKVEi">
       <property role="IQ2ns" value="4261645280576287835" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2mjHtwTPOin" resolve="IOperatorsPanelContent" />
     </node>
   </node>
@@ -312,7 +312,7 @@
     </node>
     <node concept="1TJgyj" id="4G7mwLzMUSI" role="1TKVEi">
       <property role="IQ2ns" value="5406388886941969966" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="actualLevel" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>
@@ -335,29 +335,26 @@
     </node>
     <node concept="1TJgyj" id="7HQSJoRVyKW" role="1TKVEi">
       <property role="IQ2ns" value="8896547661045181500" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="actualVal" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>
     <node concept="1TJgyj" id="2djiQ_F$zwq" role="1TKVEi">
       <property role="IQ2ns" value="2545461130542856218" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="colorFirst" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
     </node>
     <node concept="1TJgyj" id="3b7yvkIotLG" role="1TKVEi">
       <property role="IQ2ns" value="3659044908399975532" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="colorSecond" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
     </node>
     <node concept="1TJgyj" id="3b7yvkIotLH" role="1TKVEi">
       <property role="IQ2ns" value="3659044908399975533" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="colorThird" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="3G$pWQNtNm3" resolve="ColorDefinition" />
     </node>
     <node concept="1TJgyi" id="3b7yvkIotLI" role="1TKVEl">
@@ -441,9 +438,9 @@
     </node>
     <node concept="1TJgyj" id="7HQSJoRQxJo" role="1TKVEi">
       <property role="IQ2ns" value="8896547661043866584" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7HQSJoRLhbZ" resolve="XYElement" />
     </node>
   </node>
@@ -481,14 +478,14 @@
     </node>
     <node concept="1TJgyj" id="7HQSJoRLjri" role="1TKVEi">
       <property role="IQ2ns" value="8896547661042497234" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7HQSJoRLhbZ" resolve="XYElement" />
     </node>
     <node concept="1TJgyj" id="4G7mwLzY2dg" role="1TKVEi">
       <property role="IQ2ns" value="5406388886944883536" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="provider" />
       <ref role="20lvS9" node="2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>

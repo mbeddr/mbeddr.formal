@@ -157,7 +157,7 @@
       <concept id="8482728081222732062" name="com.mbeddr.formal.nusmv.structure.NextExpression" flags="ng" index="1yeVOx">
         <child id="8482728081222732063" name="var" index="1yeVOw" />
       </concept>
-      <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VarRef" flags="ng" index="1y$7Wu">
+      <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VariableRefDotTarget" flags="ng" index="1y$7Wu">
         <reference id="8482728081216817954" name="var" index="1y$7Wt" />
       </concept>
       <concept id="8482728081216649443" name="com.mbeddr.formal.nusmv.structure.AG" flags="ng" index="1yBCNs" />
@@ -183,7 +183,7 @@
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo" />
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRefDotTarget" flags="ng" index="1zjgSo" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
@@ -3953,7 +3953,7 @@
           <node concept="H7R1U" id="5$Mxnm$oPti" role="HhM43">
             <node concept="H7R1U" id="5$Mxnm$oPu7" role="HhM4c">
               <node concept="H7zbL" id="5$Mxnm$oPtj" role="H7z5p">
-                <property role="H7zbx" value="T" />
+                <property role="H7zbx" value="l_5LCCuMnH/T" />
               </node>
               <node concept="H7zbL" id="5$Mxnm$oPzR" role="H7z5p" />
               <node concept="2HbLFT" id="5$Mxnm$oPuk" role="HhM4f">
@@ -3968,7 +3968,7 @@
             <node concept="H7R1U" id="5$Mxnm$oPuI" role="HhM4c">
               <node concept="H7zbL" id="5$Mxnm$oPuJ" role="H7z5p" />
               <node concept="H7zbL" id="5$Mxnm$oPzS" role="H7z5p">
-                <property role="H7zbx" value="T" />
+                <property role="H7zbx" value="l_5LCCuMnH/T" />
               </node>
               <node concept="2HbLFT" id="5$Mxnm$oPv2" role="HhM4f">
                 <node concept="2IPVmt" id="5$Mxnm$oPvd" role="2H9Ial">
@@ -3992,7 +3992,7 @@
             <node concept="H7R1U" id="5$Mxnm$oPxf" role="HhM4c">
               <node concept="H7zbL" id="5$Mxnm$oPvz" role="H7z5p" />
               <node concept="H7zbL" id="5$Mxnm$oPzT" role="H7z5p">
-                <property role="H7zbx" value="T" />
+                <property role="H7zbx" value="l_5LCCuMnH/T" />
               </node>
               <node concept="2HbLFT" id="5$Mxnm$oPxs" role="HhM4f">
                 <node concept="2IPVmt" id="5$Mxnm$oPxB" role="2H9Ial">
@@ -4005,7 +4005,7 @@
             </node>
             <node concept="H7R1U" id="5$Mxnm$oPxQ" role="HhM4c">
               <node concept="H7zbL" id="5$Mxnm$oPxR" role="H7z5p">
-                <property role="H7zbx" value="T" />
+                <property role="H7zbx" value="l_5LCCuMnH/T" />
               </node>
               <node concept="H7zbL" id="5$Mxnm$oPzU" role="H7z5p" />
               <node concept="2HbLFT" id="5$Mxnm$oPya" role="HhM4f">

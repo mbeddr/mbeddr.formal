@@ -2,7 +2,8 @@
 <model ref="r:61873712-2639-4bbd-8c38-f3499e4a93f9(com.mbeddr.formal.base.expressions.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -39,11 +40,8 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -100,6 +98,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -173,8 +179,52 @@
       </node>
       <node concept="3clFbH" id="3j_RwiJyIML" role="3cqZAp" />
       <node concept="3SKdUt" id="3j_RwiJyIQw" role="3cqZAp">
-        <node concept="3SKdUq" id="3j_RwiJyIQy" role="3SKWNk">
-          <property role="3SKdUp" value="we need this to avoid warnings WHEN_CONCRETE is never concrete when the target is untyped" />
+        <node concept="1PaTwC" id="52LJyEZhc_1" role="3ndbpf">
+          <node concept="3oM_SD" id="52LJyEZhc_2" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_3" role="1PaTwD">
+            <property role="3oM_SC" value="need" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_4" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_5" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_6" role="1PaTwD">
+            <property role="3oM_SC" value="avoid" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_7" role="1PaTwD">
+            <property role="3oM_SC" value="warnings" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_8" role="1PaTwD">
+            <property role="3oM_SC" value="WHEN_CONCRETE" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_9" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_a" role="1PaTwD">
+            <property role="3oM_SC" value="never" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_b" role="1PaTwD">
+            <property role="3oM_SC" value="concrete" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_c" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_d" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_e" role="1PaTwD">
+            <property role="3oM_SC" value="target" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_f" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="52LJyEZhc_g" role="1PaTwD">
+            <property role="3oM_SC" value="untyped" />
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="3j_RwiJy$ps" role="3cqZAp">

@@ -2,7 +2,7 @@
 <model ref="r:0d569a30-9ffd-467e-a43f-2469c1747ae5(com.mbeddr.formal.nusmv.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -113,9 +113,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -154,14 +152,15 @@
       </concept>
       <concept id="1201618299781" name="jetbrains.mps.lang.typesystem.structure.ErrorInfoExpression" flags="nn" index="3622Ei" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
-        <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
-      <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF" />
+      <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF">
+        <child id="422148324487088858" name="overridesFun" index="ujSXK" />
+      </concept>
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
       </concept>
@@ -334,7 +333,7 @@
               <ref role="2pJxaS" to="gioj:1ZsZb$iAmXE" resolve="IntervalType" />
               <node concept="2pIpSj" id="25Ap4XXCWAi" role="2pJxcM">
                 <ref role="2pIpSl" to="gioj:1ZsZb$iAmXF" resolve="left" />
-                <node concept="36biLy" id="25Ap4XXCWBt" role="2pJxcZ">
+                <node concept="36biLy" id="25Ap4XXCWBt" role="28nt2d">
                   <node concept="2OqwBi" id="25Ap4XXCWNW" role="36biLW">
                     <node concept="1YBJjd" id="25Ap4XXCWBE" role="2Oq$k0">
                       <ref role="1YBMHb" node="6mm$FLYUW9Y" resolve="numberLiteral" />
@@ -345,7 +344,7 @@
               </node>
               <node concept="2pIpSj" id="25Ap4XXCXkm" role="2pJxcM">
                 <ref role="2pIpSl" to="gioj:1ZsZb$iAmXI" resolve="right" />
-                <node concept="36biLy" id="25Ap4XXCXlJ" role="2pJxcZ">
+                <node concept="36biLy" id="25Ap4XXCXlJ" role="28nt2d">
                   <node concept="2OqwBi" id="25Ap4XXCXlK" role="36biLW">
                     <node concept="1YBJjd" id="25Ap4XXCXlL" role="2Oq$k0">
                       <ref role="1YBMHb" node="6mm$FLYUW9Y" resolve="numberLiteral" />
@@ -1074,7 +1073,7 @@
       <property role="TrG5h" value="definition" />
       <ref role="1YaFvo" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
     </node>
-    <node concept="bXqS6" id="25Ap4XXCAa5" role="bX4a1">
+    <node concept="bXqS6" id="25Ap4XXCAa5" role="ujSXK">
       <node concept="3clFbS" id="25Ap4XXCAa6" role="2VODD2">
         <node concept="3clFbF" id="25Ap4XXCAhq" role="3cqZAp">
           <node concept="3clFbT" id="25Ap4XXCAhp" role="3clFbG">

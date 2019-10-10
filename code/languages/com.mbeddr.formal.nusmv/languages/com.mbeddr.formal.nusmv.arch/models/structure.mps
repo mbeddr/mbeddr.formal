@@ -2,7 +2,7 @@
 <model ref="r:777f3caf-3907-41cd-9826-6ba1c5a1e8b9(com.mbeddr.formal.nusmv.arch.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -47,7 +47,6 @@
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
-        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -113,9 +112,8 @@
     <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
     <node concept="1TJgyj" id="5HwHP1OeZy5" role="1TKVEi">
       <property role="IQ2ns" value="6584464211391019141" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="output" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5HwHP1Odz4y" resolve="Output" />
       <ref role="20ksaX" to="gioj:2mjHtwTKxtS" resolve="definitionLike" />
     </node>
@@ -148,7 +146,6 @@
     <ref role="1TJDcQ" to="jx4r:2mjHtwTIKkx" resolve="FunctionValueContentDotTarget" />
     <node concept="1TJgyj" id="4H8XLSF4jUE" role="1TKVEi">
       <property role="IQ2ns" value="5424857460111392426" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="output" />
       <ref role="20ksaX" to="jx4r:2mjHtwTIKk$" resolve="functionValueContent" />
       <ref role="20lvS9" node="4H8XLSF4jPm" resolve="OutputFunctionValueDeclaration" />

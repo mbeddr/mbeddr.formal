@@ -2,11 +2,12 @@
 <model ref="r:6e82d8d0-32f5-4302-ba79-fcd365c09c01(com.mbeddr.formal.base.operatorspanel.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -261,11 +262,8 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -302,6 +300,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2719,8 +2725,46 @@
         </node>
         <node concept="3clFbH" id="3b7yvkIxQJ1" role="3cqZAp" />
         <node concept="3SKdUt" id="2djiQ_FyIlU" role="3cqZAp">
-          <node concept="3SKdUq" id="2djiQ_FyIlW" role="3SKWNk">
-            <property role="3SKdUp" value="setting which value in the dataset to make appear in the central indicator" />
+          <node concept="1PaTwC" id="52LJyEZhc_h" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_i" role="1PaTwD">
+              <property role="3oM_SC" value="setting" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_j" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_k" role="1PaTwD">
+              <property role="3oM_SC" value="value" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_l" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_m" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_n" role="1PaTwD">
+              <property role="3oM_SC" value="dataset" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_o" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_p" role="1PaTwD">
+              <property role="3oM_SC" value="make" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_q" role="1PaTwD">
+              <property role="3oM_SC" value="appear" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_r" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_s" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_t" role="1PaTwD">
+              <property role="3oM_SC" value="central" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_u" role="1PaTwD">
+              <property role="3oM_SC" value="indicator" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2djiQ_FyG8N" role="3cqZAp">
@@ -2743,8 +2787,22 @@
         </node>
         <node concept="3clFbH" id="2djiQ_FyFwV" role="3cqZAp" />
         <node concept="3SKdUt" id="3b7yvkIxJ_O" role="3cqZAp">
-          <node concept="3SKdUq" id="3b7yvkIxJ_Q" role="3SKWNk">
-            <property role="3SKdUp" value="distance of labels from border" />
+          <node concept="1PaTwC" id="52LJyEZhc_v" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_w" role="1PaTwD">
+              <property role="3oM_SC" value="distance" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_x" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_y" role="1PaTwD">
+              <property role="3oM_SC" value="labels" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_z" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_$" role="1PaTwD">
+              <property role="3oM_SC" value="border" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3b7yvkIrTtq" role="3cqZAp">
@@ -3778,8 +3836,16 @@
           </node>
         </node>
         <node concept="3SKdUt" id="7HQSJoRE22$" role="3cqZAp">
-          <node concept="3SKdUq" id="7HQSJoRE22A" role="3SKWNk">
-            <property role="3SKdUp" value="fill of liquid" />
+          <node concept="1PaTwC" id="52LJyEZhc__" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_A" role="1PaTwD">
+              <property role="3oM_SC" value="fill" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_B" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_C" role="1PaTwD">
+              <property role="3oM_SC" value="liquid" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="h2BqpQX5kK" role="3cqZAp">
@@ -3803,8 +3869,13 @@
         </node>
         <node concept="3clFbH" id="h2BqpQX7wy" role="3cqZAp" />
         <node concept="3SKdUt" id="7HQSJoRDDWQ" role="3cqZAp">
-          <node concept="3SKdUq" id="7HQSJoRDDWS" role="3SKWNk">
-            <property role="3SKdUp" value="gray area" />
+          <node concept="1PaTwC" id="52LJyEZhc_D" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_E" role="1PaTwD">
+              <property role="3oM_SC" value="gray" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_F" role="1PaTwD">
+              <property role="3oM_SC" value="area" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="h2BqpQOMFt" role="3cqZAp">
@@ -3845,8 +3916,13 @@
         </node>
         <node concept="3clFbH" id="h2BqpQPGJS" role="3cqZAp" />
         <node concept="3SKdUt" id="7HQSJoRDGMi" role="3cqZAp">
-          <node concept="3SKdUq" id="7HQSJoRDGMk" role="3SKWNk">
-            <property role="3SKdUp" value="white area" />
+          <node concept="1PaTwC" id="52LJyEZhc_G" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_H" role="1PaTwD">
+              <property role="3oM_SC" value="white" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_I" role="1PaTwD">
+              <property role="3oM_SC" value="area" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="h2BqpQR0zk" role="3cqZAp">
@@ -3897,8 +3973,13 @@
         </node>
         <node concept="3clFbH" id="h2BqpQU8gl" role="3cqZAp" />
         <node concept="3SKdUt" id="7HQSJoRDJx6" role="3cqZAp">
-          <node concept="3SKdUq" id="7HQSJoRDJx8" role="3SKWNk">
-            <property role="3SKdUp" value="blu filling" />
+          <node concept="1PaTwC" id="52LJyEZhc_J" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_K" role="1PaTwD">
+              <property role="3oM_SC" value="blu" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_L" role="1PaTwD">
+              <property role="3oM_SC" value="filling" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="h2BqpQPKgO" role="3cqZAp">
@@ -3992,8 +4073,16 @@
         </node>
         <node concept="3clFbH" id="7HQSJoRGLa$" role="3cqZAp" />
         <node concept="3SKdUt" id="4G7mwLzVw7Q" role="3cqZAp">
-          <node concept="3SKdUq" id="4G7mwLzVw7S" role="3SKWNk">
-            <property role="3SKdUp" value="drawing the ticks" />
+          <node concept="1PaTwC" id="52LJyEZhc_M" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_N" role="1PaTwD">
+              <property role="3oM_SC" value="drawing" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_O" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_P" role="1PaTwD">
+              <property role="3oM_SC" value="ticks" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="7HQSJoRGl3A" role="3cqZAp">
@@ -4154,8 +4243,16 @@
           </node>
         </node>
         <node concept="3SKdUt" id="4G7mwLzVBF3" role="3cqZAp">
-          <node concept="3SKdUq" id="4G7mwLzVBF5" role="3SKWNk">
-            <property role="3SKdUp" value="writing the tile" />
+          <node concept="1PaTwC" id="52LJyEZhc_Q" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_R" role="1PaTwD">
+              <property role="3oM_SC" value="writing" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_S" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_T" role="1PaTwD">
+              <property role="3oM_SC" value="tile" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4G7mwLzMHkv" role="3cqZAp">
@@ -4297,8 +4394,22 @@
         </node>
         <node concept="3clFbH" id="3b7yvkI_s2X" role="3cqZAp" />
         <node concept="3SKdUt" id="3b7yvkI_ISv" role="3cqZAp">
-          <node concept="3SKdUq" id="3b7yvkI_ISu" role="3SKWNk">
-            <property role="3SKdUp" value="then customise it a little..." />
+          <node concept="1PaTwC" id="52LJyEZhc_U" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhc_V" role="1PaTwD">
+              <property role="3oM_SC" value="then" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_W" role="1PaTwD">
+              <property role="3oM_SC" value="customise" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_X" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_Y" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhc_Z" role="1PaTwD">
+              <property role="3oM_SC" value="little..." />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3b7yvkI_IRD" role="3cqZAp">
@@ -4338,8 +4449,25 @@
         </node>
         <node concept="3clFbH" id="3b7yvkI_Yit" role="3cqZAp" />
         <node concept="3SKdUt" id="3b7yvkI_ISx" role="3cqZAp">
-          <node concept="3SKdUq" id="3b7yvkI_ISw" role="3SKWNk">
-            <property role="3SKdUp" value="add the chart to a panel..." />
+          <node concept="1PaTwC" id="52LJyEZhcA0" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhcA1" role="1PaTwD">
+              <property role="3oM_SC" value="add" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcA2" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcA3" role="1PaTwD">
+              <property role="3oM_SC" value="chart" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcA4" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcA5" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcA6" role="1PaTwD">
+              <property role="3oM_SC" value="panel..." />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2djiQ_FIGS3" role="3cqZAp">

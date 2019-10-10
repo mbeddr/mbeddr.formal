@@ -226,12 +226,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -507,7 +506,7 @@
                       <ref role="2pJxaS" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
                       <node concept="2pJxcG" id="1NcemxUMDrb" role="2pJxcM">
                         <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                        <node concept="2OqwBi" id="1NcemxUMDLP" role="2pJxcZ">
+                        <node concept="2OqwBi" id="1NcemxUMDLP" role="28ntcv">
                           <node concept="30H73N" id="1NcemxUMD$$" role="2Oq$k0" />
                           <node concept="3TrcHB" id="1NcemxUME8a" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -516,7 +515,7 @@
                       </node>
                       <node concept="2pIpSj" id="1NcemxUMErj" role="2pJxcM">
                         <ref role="2pIpSl" to="gioj:6NmtaR1SVeb" resolve="type" />
-                        <node concept="36biLy" id="1NcemxUMEyp" role="2pJxcZ">
+                        <node concept="36biLy" id="1NcemxUMEyp" role="28nt2d">
                           <node concept="2OqwBi" id="1NcemxUMGoy" role="36biLW">
                             <node concept="2OqwBi" id="1NcemxUMERr" role="2Oq$k0">
                               <node concept="30H73N" id="1NcemxUMEDr" role="2Oq$k0" />
@@ -611,7 +610,7 @@
                     <ref role="2pJxaS" to="gioj:6NmtaR1SULQ" resolve="ParameterDeclaration" />
                     <node concept="2pJxcG" id="1NcemxUM_O0" role="2pJxcM">
                       <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                      <node concept="2OqwBi" id="1NcemxUMAaC" role="2pJxcZ">
+                      <node concept="2OqwBi" id="1NcemxUMAaC" role="28ntcv">
                         <node concept="30H73N" id="1NcemxUM_Xo" role="2Oq$k0" />
                         <node concept="3TrcHB" id="1NcemxUMAwW" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1163,7 +1162,7 @@
                         <ref role="2pJxaS" to="gioj:7V1Bqz6UhgE" resolve="LTLSpecSection" />
                         <node concept="2pIpSj" id="74lc1eArZCz" role="2pJxcM">
                           <ref role="2pIpSl" to="gioj:7mSH3Wn9yWw" resolve="expr" />
-                          <node concept="36biLy" id="74lc1eArZC$" role="2pJxcZ">
+                          <node concept="36biLy" id="74lc1eArZC$" role="28nt2d">
                             <node concept="2OqwBi" id="74lc1eArZC_" role="36biLW">
                               <node concept="2OqwBi" id="74lc1eArZCA" role="2Oq$k0">
                                 <node concept="2GrUjf" id="74lc1eArZCB" role="2Oq$k0">

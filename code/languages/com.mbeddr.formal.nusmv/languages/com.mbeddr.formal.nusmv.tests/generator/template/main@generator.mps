@@ -7,8 +7,8 @@
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
     <use id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
@@ -264,12 +264,11 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
         <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -772,7 +771,7 @@
   </node>
   <node concept="1pmfR0" id="1ZsZb$iIWjA">
     <property role="TrG5h" value="createExecutableTests" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="1ZsZb$iIWjB" role="1pqMTA">
       <node concept="3clFbS" id="1ZsZb$iIWjC" role="2VODD2">
@@ -864,7 +863,7 @@
                     <ref role="2pJxaS" to="fnq2:1ZsZb$iIWjt" resolve="ExecutableTestCase" />
                     <node concept="2pJxcG" id="1ZsZb$iK59V" role="2pJxcM">
                       <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                      <node concept="2OqwBi" id="1ZsZb$iK5mR" role="2pJxcZ">
+                      <node concept="2OqwBi" id="1ZsZb$iK5mR" role="28ntcv">
                         <node concept="2GrUjf" id="1ZsZb$iK5bP" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="1ZsZb$iIX3k" resolve="tc" />
                         </node>
@@ -875,7 +874,7 @@
                     </node>
                     <node concept="2pIpSj" id="1ZsZb$iIXVh" role="2pJxcM">
                       <ref role="2pIpSl" to="fnq2:6NmtaR1TTP_" resolve="content" />
-                      <node concept="36be1Y" id="1ZsZb$iIXWS" role="2pJxcZ">
+                      <node concept="36be1Y" id="1ZsZb$iIXWS" role="28nt2d">
                         <node concept="36biLy" id="1ZsZb$iK1ok" role="36be1Z">
                           <node concept="2GrUjf" id="1ZsZb$iK1ta" role="36biLW">
                             <ref role="2Gs0qQ" node="1ZsZb$iIX3k" resolve="tc" />
@@ -1276,7 +1275,7 @@
                         <ref role="2pJxaS" to="gioj:6NmtaR1SV6O" resolve="VariableDeclaration" />
                         <node concept="2pJxcG" id="4IuDkoKIham" role="2pJxcM">
                           <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                          <node concept="3cpWs3" id="4IuDkoKIP0Q" role="2pJxcZ">
+                          <node concept="3cpWs3" id="4IuDkoKIP0Q" role="28ntcv">
                             <node concept="Xl_RD" id="4IuDkoKIP59" role="3uHU7w">
                               <property role="Xl_RC" value="_nondet" />
                             </node>
@@ -1292,7 +1291,7 @@
                         </node>
                         <node concept="2pIpSj" id="4IuDkoKIhaq" role="2pJxcM">
                           <ref role="2pIpSl" to="gioj:6NmtaR1SVeb" resolve="type" />
-                          <node concept="36biLy" id="4IuDkoKJBcL" role="2pJxcZ">
+                          <node concept="36biLy" id="4IuDkoKJBcL" role="28nt2d">
                             <node concept="2OqwBi" id="4IuDkoKJGci" role="36biLW">
                               <node concept="2OqwBi" id="4IuDkoKJFKQ" role="2Oq$k0">
                                 <node concept="2OqwBi" id="4IuDkoKJD1k" role="2Oq$k0">
@@ -1343,10 +1342,10 @@
                         <node concept="1P9Npp" id="4IuDkoKI0gE" role="2OqNvi">
                           <node concept="2pJPEk" id="4IuDkoKI0hd" role="1P9ThW">
                             <node concept="2pJPED" id="4IuDkoKI0jg" role="2pJPEn">
-                              <ref role="2pJxaS" to="gioj:7mSH3WnacGx" resolve="VarRef" />
+                              <ref role="2pJxaS" to="gioj:7mSH3WnacGx" resolve="VariableRefDotTarget" />
                               <node concept="2pIpSj" id="4IuDkoKI0lK" role="2pJxcM">
                                 <ref role="2pIpSl" to="gioj:7mSH3WnacGy" resolve="var" />
-                                <node concept="36biLy" id="4IuDkoKI0m$" role="2pJxcZ">
+                                <node concept="36biLy" id="4IuDkoKI0m$" role="28nt2d">
                                   <node concept="37vLTw" id="4IuDkoKI0mR" role="36biLW">
                                     <ref role="3cqZAo" node="4IuDkoKHZ8x" resolve="vd" />
                                   </node>

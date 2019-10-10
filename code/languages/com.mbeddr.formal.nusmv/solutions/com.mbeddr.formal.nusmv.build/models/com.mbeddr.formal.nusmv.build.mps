@@ -3299,13 +3299,13 @@
               <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" resolve="mps-core" />
             </node>
             <node concept="3_I8Xc" id="3ZV5FZJCmVR" role="39821P">
-              <ref role="3_I8Xa" to="ffeo:5xhjlkpPhA8" resolve="http-support" />
+              <ref role="3_I8Xa" to="ffeo:5xhjlkpPhA8" resolve="mps-httpsupport" />
             </node>
             <node concept="3_I8Xc" id="3ZV5FZJFBbM" role="39821P">
               <ref role="3_I8Xa" to="ffeo:6b4RkXS7XdG" resolve="mps-build" />
             </node>
             <node concept="3_I8Xc" id="4aeOpjl$dt2" role="39821P">
-              <ref role="3_I8Xa" to="ffeo:5xhjlkpPhA8" resolve="http-support" />
+              <ref role="3_I8Xa" to="ffeo:5xhjlkpPhA8" resolve="mps-httpsupport" />
             </node>
             <node concept="3_I8Xc" id="4aeOpjlAb01" role="39821P">
               <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
@@ -3626,7 +3626,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.mbeddr.formal.nusmv" />
         <property role="3LESm3" value="b0f97242-b2a5-4637-95d3-c63ed6f55701" />
-        <property role="aoJFB" value="sources and tests" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="1IhJc2tzBXG" role="3LF7KH">
           <ref role="398BVh" node="1IhJc2tzBXt" resolve="mbeddr.formal.nusmv.code" />
           <node concept="2Ry0Ak" id="1IhJc2tzBXO" role="iGT6I">

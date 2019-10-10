@@ -2,7 +2,7 @@
 <model ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -10,15 +10,32 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
+        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
+        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
+        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
@@ -73,27 +90,6 @@
     <property role="EcuMT" value="6447909589225232833" />
     <property role="TrG5h" value="ISimulationValueAnnotatable" />
   </node>
-  <node concept="AxPO7" id="5_V$TJxAHB2">
-    <property role="TrG5h" value="SIMULATION_VALUE_POSITION" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="5_V$TJxAHB3" role="M5hS2">
-      <property role="1uS6qo" value="NORTH" />
-      <property role="1uS6qv" value="1" />
-    </node>
-    <node concept="M4N5e" id="5_V$TJxAHB4" role="M5hS2">
-      <property role="1uS6qo" value="SOUTH" />
-      <property role="1uS6qv" value="2" />
-    </node>
-    <node concept="M4N5e" id="5_V$TJxAHB9" role="M5hS2">
-      <property role="1uS6qo" value="EAST" />
-      <property role="1uS6qv" value="3" />
-    </node>
-    <node concept="M4N5e" id="5_V$TJxAHBg" role="M5hS2">
-      <property role="1uS6qo" value="WEST" />
-      <property role="1uS6qv" value="4" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="6Kf5KB6TZVg">
     <property role="EcuMT" value="7786467611506114256" />
     <property role="TrG5h" value="ISimulationEntryPoint" />
@@ -131,6 +127,61 @@
       <property role="IQ2nx" value="2291855968619888582" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="25R3W" id="52LJyEZhcJw">
+    <property role="TrG5h" value="SIMULATION_VALUE_POSITION" />
+    <property role="3F6X1D" value="6447909589225232834" />
+    <ref role="1H5jkz" node="52LJyEZhcJy" resolve="_1" />
+    <node concept="2JgGob" id="52LJyEZhcJx" role="lGtFl">
+      <property role="3scbB" value="5CkWgdpp3fo/by_custom_methods" />
+      <property role="3sfsH" value="5CkWgdpp0p5/by_custom_methods" />
+      <node concept="AxPO7" id="5_V$TJxAHB2" role="3lCyv">
+        <property role="TrG5h" value="SIMULATION_VALUE_POSITION" />
+        <property role="3lZH7k" value="hrlZj6Q/derive_from_internal_value" />
+        <property role="3F6X1D" value="6447909589225232834" />
+        <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+        <node concept="M4N5e" id="5_V$TJxAHB3" role="M5hS2">
+          <property role="1uS6qo" value="NORTH" />
+          <property role="1uS6qv" value="1" />
+        </node>
+        <node concept="M4N5e" id="5_V$TJxAHB4" role="M5hS2">
+          <property role="1uS6qo" value="SOUTH" />
+          <property role="1uS6qv" value="2" />
+        </node>
+        <node concept="M4N5e" id="5_V$TJxAHB9" role="M5hS2">
+          <property role="1uS6qo" value="EAST" />
+          <property role="1uS6qv" value="3" />
+        </node>
+        <node concept="M4N5e" id="5_V$TJxAHBg" role="M5hS2">
+          <property role="1uS6qo" value="WEST" />
+          <property role="1uS6qv" value="4" />
+        </node>
+      </node>
+    </node>
+    <node concept="25R33" id="52LJyEZhcJy" role="25R1y">
+      <property role="TrG5h" value="_1" />
+      <property role="1L1pqM" value="NORTH" />
+      <property role="3tVfz5" value="6447909589225232835" />
+      <ref role="2wpffI" node="5_V$TJxAHB3" />
+    </node>
+    <node concept="25R33" id="52LJyEZhcJz" role="25R1y">
+      <property role="TrG5h" value="_2" />
+      <property role="1L1pqM" value="SOUTH" />
+      <property role="3tVfz5" value="6447909589225232836" />
+      <ref role="2wpffI" node="5_V$TJxAHB4" />
+    </node>
+    <node concept="25R33" id="52LJyEZhcJ$" role="25R1y">
+      <property role="TrG5h" value="_3" />
+      <property role="1L1pqM" value="EAST" />
+      <property role="3tVfz5" value="6447909589225232841" />
+      <ref role="2wpffI" node="5_V$TJxAHB9" />
+    </node>
+    <node concept="25R33" id="52LJyEZhcJ_" role="25R1y">
+      <property role="TrG5h" value="_4" />
+      <property role="1L1pqM" value="WEST" />
+      <property role="3tVfz5" value="6447909589225232848" />
+      <ref role="2wpffI" node="5_V$TJxAHBg" />
     </node>
   </node>
 </model>

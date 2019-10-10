@@ -2,7 +2,7 @@
 <model ref="r:a6cacef4-4d68-4996-ad57-e96d59919943(com.mbeddr.formal.nusmv.importer.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -73,9 +73,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5Rx4RPFVX_o" role="1TKVEi">
       <property role="IQ2ns" value="6764709544689916248" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fileImporters" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="4C19r4_YpXq" resolve="SingleFileImporterConfiguration" />
     </node>
     <node concept="1TJgyi" id="6MHhKT2WJTB" role="1TKVEl">
@@ -145,9 +145,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4C19r4_YpZH" role="1TKVEi">
       <property role="IQ2ns" value="5332584876559933421" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fileToImport" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
     </node>
   </node>

@@ -97,7 +97,7 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
+      <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
@@ -133,7 +133,7 @@
       <property role="TrG5h" value="getSimulationValuePosition" />
       <node concept="3Tm1VV" id="5_V$TJxAHB_" role="1B3o_S" />
       <node concept="2ZThk1" id="5_V$TJxAJ1F" role="3clF45">
-        <ref role="2ZWj4r" to="b19z:5_V$TJxAHB2" resolve="SIMULATION_VALUE_POSITION" />
+        <ref role="2ZWj4r" to="b19z:52LJyEZhcJw" resolve="SIMULATION_VALUE_POSITION" />
       </node>
       <node concept="3clFbS" id="5_V$TJxAHBB" role="3clF47" />
     </node>

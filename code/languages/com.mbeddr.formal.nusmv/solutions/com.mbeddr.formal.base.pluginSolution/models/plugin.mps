@@ -5,6 +5,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -79,11 +80,8 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions">
@@ -94,6 +92,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -130,8 +136,25 @@
     <node concept="2uRRBT" id="6bK0Ak3Ca9r" role="2uRRB$">
       <node concept="3clFbS" id="6bK0Ak3Ca9s" role="2VODD2">
         <node concept="3SKdUt" id="6bK0Ak3CarH" role="3cqZAp">
-          <node concept="3SKdUq" id="6bK0Ak3CarI" role="3SKWNk">
-            <property role="3SKdUp" value="a temporary fix according to https://youtrack.jetbrains.com/issue/MPS-28468" />
+          <node concept="1PaTwC" id="52LJyEZhcBe" role="3ndbpf">
+            <node concept="3oM_SD" id="52LJyEZhcBf" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcBg" role="1PaTwD">
+              <property role="3oM_SC" value="temporary" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcBh" role="1PaTwD">
+              <property role="3oM_SC" value="fix" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcBi" role="1PaTwD">
+              <property role="3oM_SC" value="according" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcBj" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="52LJyEZhcBk" role="1PaTwD">
+              <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-28468" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="6bK0Ak3Catv" role="3cqZAp">

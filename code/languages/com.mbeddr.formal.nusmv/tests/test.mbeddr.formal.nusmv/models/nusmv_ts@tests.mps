@@ -2,9 +2,10 @@
 <model ref="r:a2aa58cb-2f8d-49e5-b43f-ed19006d33c4(test.mbeddr.formal.nusmv.nusmv_ts@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports />
   <registry>
@@ -16,36 +17,18 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
       <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
-        <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
-      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
-        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
-      </concept>
       <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
-      <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
-        <reference id="1210674534086" name="declaration" index="3xOPvv" />
-      </concept>
-      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
-      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
-    </language>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
-        <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2707707741262126533" name="com.mbeddr.formal.nusmv.structure.EmptyModuleContent" flags="ng" index="s4Ewt" />
@@ -125,17 +108,6 @@
   </registry>
   <node concept="1lH9Xt" id="4Jpgh6INhbk">
     <property role="TrG5h" value="_100_types" />
-    <node concept="1LZb2c" id="4Jpgh6INhiS" role="1SL9yI">
-      <property role="TrG5h" value="testTypedParams" />
-      <node concept="3cqZAl" id="4Jpgh6INhiT" role="3clF45" />
-      <node concept="3clFbS" id="4Jpgh6INhiX" role="3clF47">
-        <node concept="3Ca1qy" id="4Jpgh6INhkA" role="3cqZAp">
-          <node concept="3xONca" id="4Jpgh6INhkQ" role="3qv8fS">
-            <ref role="3xOPvv" node="4Jpgh6INhiw" resolve="stronger_type" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="4Jpgh6INhbl" role="1SKRRt">
       <node concept="2HdtXS" id="4Jpgh6INhbp" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -224,6 +196,11 @@
         <node concept="2SQmWS" id="4Jpgh6INhbq" role="2HcuB8" />
         <node concept="3xLA65" id="4Jpgh6INhiw" role="lGtFl">
           <property role="TrG5h" value="stronger_type" />
+        </node>
+        <node concept="7CXmI" id="52LJyEZhcMC" role="lGtFl">
+          <node concept="7OXhh" id="52LJyEZhcMD" role="7EUXB">
+            <property role="TrG5h" value="testTypedParams_migrated" />
+          </node>
         </node>
       </node>
     </node>

@@ -2,7 +2,7 @@
 <model ref="r:0afb84b9-23b5-436c-af26-53b9b7f39fbc(com.mbeddr.formal.nusmv.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -842,7 +842,7 @@
           </node>
         </node>
         <node concept="VechU" id="6Kf5KB6YIID" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
     </node>
@@ -1871,7 +1871,7 @@
       <node concept="3F0ifn" id="2mjHtwTuTyZ" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <node concept="VechU" id="59AZjhg3DlL" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
       </node>
       <node concept="l2Vlx" id="2mjHtwTuqzf" role="2iSdaV" />
