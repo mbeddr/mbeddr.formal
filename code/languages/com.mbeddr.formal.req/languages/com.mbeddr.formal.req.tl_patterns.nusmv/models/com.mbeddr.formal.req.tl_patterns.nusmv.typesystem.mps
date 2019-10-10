@@ -2,7 +2,8 @@
 <model ref="r:306de6ce-552e-4f8b-ad94-416a92db1658(com.mbeddr.formal.req.tl_patterns.nusmv.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -36,11 +37,8 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -102,6 +100,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -176,8 +182,55 @@
     <property role="TrG5h" value="check_TLPropertiesNotCoveredByTheTranslation2SMV" />
     <node concept="3clFbS" id="6hWVnwAugKR" role="18ibNy">
       <node concept="3SKdUt" id="6hWVnwAuiAX" role="3cqZAp">
-        <node concept="3SKdUq" id="6hWVnwAuiAZ" role="3SKWNk">
-          <property role="3SKdUp" value="we exclude the cases which were covered in the generator - they can be dealt with" />
+        <node concept="1PaTwC" id="5MWJzF9_U0M" role="3ndbpf">
+          <node concept="3oM_SD" id="5MWJzF9_U0N" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0O" role="1PaTwD">
+            <property role="3oM_SC" value="exclude" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0P" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0Q" role="1PaTwD">
+            <property role="3oM_SC" value="cases" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0R" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0S" role="1PaTwD">
+            <property role="3oM_SC" value="were" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0T" role="1PaTwD">
+            <property role="3oM_SC" value="covered" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0U" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0V" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0W" role="1PaTwD">
+            <property role="3oM_SC" value="generator" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0X" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0Y" role="1PaTwD">
+            <property role="3oM_SC" value="they" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U0Z" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U10" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U11" role="1PaTwD">
+            <property role="3oM_SC" value="dealt" />
+          </node>
+          <node concept="3oM_SD" id="5MWJzF9_U12" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
         </node>
       </node>
       <node concept="3clFbJ" id="6hWVnwAugL8" role="3cqZAp">

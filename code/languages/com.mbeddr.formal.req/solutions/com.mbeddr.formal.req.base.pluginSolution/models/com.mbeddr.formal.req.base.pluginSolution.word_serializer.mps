@@ -2,16 +2,16 @@
 <model ref="r:4cca71e3-d4be-493f-8220-299b21e82da7(com.mbeddr.formal.req.base.pluginSolution.word_serializer)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="3g0o" ref="r:a6263c3c-f5c8-43aa-8a86-c420dd6b206e(com.mpsbasics.docx4j.core.registry)" />
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="eaz0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.bind(JDK/)" />
     <import index="s3z8" ref="r:5b29d604-14e1-4547-b308-d116f5568071(com.mpsbasics.docx4j.core.word)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
+    <import index="eaz0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
@@ -412,7 +412,7 @@
       </node>
       <node concept="3Tm1VV" id="38aFq1j4TgO" role="1B3o_S" />
       <node concept="3cqZAl" id="38aFq1j4TgP" role="3clF45" />
-      <node concept="3uibUv" id="38aFq1j4TgQ" role="Sfmx6">
+      <node concept="3uibUv" id="5MWJzF9_RnH" role="Sfmx6">
         <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="38aFq1j4TgR" role="3clF47">
@@ -487,7 +487,7 @@
       </node>
       <node concept="3Tm1VV" id="38aFq1j4WHy" role="1B3o_S" />
       <node concept="3cqZAl" id="38aFq1j4WHz" role="3clF45" />
-      <node concept="3uibUv" id="38aFq1j4WH$" role="Sfmx6">
+      <node concept="3uibUv" id="5MWJzF9_RzL" role="Sfmx6">
         <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="38aFq1j4WH_" role="3clF47">

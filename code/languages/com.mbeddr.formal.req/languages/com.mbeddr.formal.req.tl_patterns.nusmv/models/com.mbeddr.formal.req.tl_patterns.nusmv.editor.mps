@@ -2,7 +2,7 @@
 <model ref="r:2edcb44c-7147-4222-8fdb-7d228bde3715(com.mbeddr.formal.req.tl_patterns.nusmv.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -200,7 +200,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="5uTeY1Flucl" role="3F10Kt">
-          <property role="Vb096" value="darkGray" />
+          <property role="Vb096" value="fLJRk5B/darkGray" />
         </node>
       </node>
       <node concept="l2Vlx" id="5uTeY1Flubs" role="2iSdaV" />

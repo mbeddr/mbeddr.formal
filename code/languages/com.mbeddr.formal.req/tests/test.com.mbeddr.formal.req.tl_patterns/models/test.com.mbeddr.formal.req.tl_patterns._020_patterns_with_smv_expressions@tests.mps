@@ -2,7 +2,7 @@
 <model ref="r:a565429e-916d-4749-9139-a70091b317c9(test.com.mbeddr.formal.req.tl_patterns._020_patterns_with_smv_expressions@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns" version="0" />
     <use id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch" version="0" />
@@ -18,25 +18,17 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
-        <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
-      <concept id="1214846310980" name="jetbrains.mps.lang.test.structure.AbstractNodeAssert" flags="nn" index="3quTHu">
-        <child id="1214846370530" name="nodeToCheck" index="3qv8fS" />
-      </concept>
       <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
-      <concept id="1210674524691" name="jetbrains.mps.lang.test.structure.TestNodeReference" flags="nn" index="3xONca">
-        <reference id="1210674534086" name="declaration" index="3xOPvv" />
-      </concept>
-      <concept id="1215075719096" name="jetbrains.mps.lang.test.structure.CheckNodeForErrors" flags="nn" index="3Ca1qy" />
-      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns">
       <concept id="7240923401194677068" name="com.mbeddr.formal.req.tl_patterns.structure.GloballyScope" flags="ng" index="12ukSO" />
@@ -77,16 +69,6 @@
       <concept id="7240923401194766860" name="com.mbeddr.formal.req.tl_patterns.structure.ExistencePattern" flags="ng" index="12uYXO">
         <child id="7240923401194766873" name="p" index="12uYXx" />
       </concept>
-    </language>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
-        <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -309,17 +291,6 @@
   </node>
   <node concept="1lH9Xt" id="6hWVnwAcskU">
     <property role="TrG5h" value="_100_TestScopingOfSMVWithinTLPatterns" />
-    <node concept="1LZb2c" id="6hWVnwAcJFO" role="1SL9yI">
-      <property role="TrG5h" value="test_tl_nusmv_scoping" />
-      <node concept="3cqZAl" id="6hWVnwAcJFP" role="3clF45" />
-      <node concept="3clFbS" id="6hWVnwAcJFT" role="3clF47">
-        <node concept="3Ca1qy" id="6hWVnwAcJHj" role="3cqZAp">
-          <node concept="3xONca" id="6hWVnwAcJHt" role="3qv8fS">
-            <ref role="3xOPvv" node="6hWVnwAcJFw" resolve="tests" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="6hWVnwAcskV" role="1SKRRt">
       <node concept="1QQeGf" id="6hWVnwAcsl0" role="1qenE9">
         <property role="TrG5h" value="rd" />
@@ -521,6 +492,11 @@
         <node concept="3xLA65" id="6hWVnwAcJFw" role="lGtFl">
           <property role="TrG5h" value="tests" />
         </node>
+        <node concept="7CXmI" id="5MWJzF9_U1b" role="lGtFl">
+          <node concept="7OXhh" id="5MWJzF9_U1c" role="7EUXB">
+            <property role="TrG5h" value="test_tl_nusmv_scoping_migrated" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -529,17 +505,6 @@
   </node>
   <node concept="1lH9Xt" id="6hWVnwAsT$w">
     <property role="TrG5h" value="_010_TestDifferentPatterns_020_OrderCategory" />
-    <node concept="1LZb2c" id="6hWVnwAsT$x" role="1SL9yI">
-      <property role="TrG5h" value="test_tl_nusmv_scoping" />
-      <node concept="3cqZAl" id="6hWVnwAsT$y" role="3clF45" />
-      <node concept="3clFbS" id="6hWVnwAsT$z" role="3clF47">
-        <node concept="3Ca1qy" id="6hWVnwAsT$$" role="3cqZAp">
-          <node concept="3xONca" id="6hWVnwAsT$_" role="3qv8fS">
-            <ref role="3xOPvv" node="6hWVnwAsTA6" resolve="tests" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="6hWVnwAsT$A" role="1SKRRt">
       <node concept="1QQeGf" id="6hWVnwAsT$B" role="1qenE9">
         <property role="TrG5h" value="rd" />
@@ -887,22 +852,16 @@
         <node concept="3xLA65" id="6hWVnwAsTA6" role="lGtFl">
           <property role="TrG5h" value="tests" />
         </node>
+        <node concept="7CXmI" id="5MWJzF9_U1t" role="lGtFl">
+          <node concept="7OXhh" id="5MWJzF9_U1u" role="7EUXB">
+            <property role="TrG5h" value="test_tl_nusmv_scoping_migrated" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="1lH9Xt" id="6hWVnwAtkzp">
     <property role="TrG5h" value="_010_TestDifferentPatterns_010_OccurrenceCategory" />
-    <node concept="1LZb2c" id="6hWVnwAtkzq" role="1SL9yI">
-      <property role="TrG5h" value="test_tl_nusmv_scoping" />
-      <node concept="3cqZAl" id="6hWVnwAtkzr" role="3clF45" />
-      <node concept="3clFbS" id="6hWVnwAtkzs" role="3clF47">
-        <node concept="3Ca1qy" id="6hWVnwAtkzt" role="3cqZAp">
-          <node concept="3xONca" id="6hWVnwAtkzu" role="3qv8fS">
-            <ref role="3xOPvv" node="6hWVnwAtk_u" resolve="tests" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="6hWVnwAtkzv" role="1SKRRt">
       <node concept="1QQeGf" id="6hWVnwAtkzw" role="1qenE9">
         <property role="TrG5h" value="rd" />
@@ -1224,6 +1183,11 @@
         </node>
         <node concept="3xLA65" id="6hWVnwAtk_u" role="lGtFl">
           <property role="TrG5h" value="tests" />
+        </node>
+        <node concept="7CXmI" id="5MWJzF9_U1J" role="lGtFl">
+          <node concept="7OXhh" id="5MWJzF9_U1K" role="7EUXB">
+            <property role="TrG5h" value="test_tl_nusmv_scoping_migrated" />
+          </node>
         </node>
       </node>
     </node>
