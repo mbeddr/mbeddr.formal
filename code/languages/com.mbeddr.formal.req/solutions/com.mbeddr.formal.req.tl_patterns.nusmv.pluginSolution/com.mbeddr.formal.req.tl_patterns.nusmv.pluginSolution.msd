@@ -16,6 +16,11 @@
     <dependency reexport="false">0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)</dependency>
     <dependency reexport="false">b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)</dependency>
     <dependency reexport="false">e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)</dependency>
+    <dependency reexport="false">fdd69818-de3d-4ebf-9ec6-17ea152db151(com.mpsbasics.docx4j.core)</dependency>
+    <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
+    <dependency reexport="false">7ef3bfd1-5c44-48e1-9906-6b55babec257(com.mbeddr.formal.req.base.pluginSolution)</dependency>
+    <dependency reexport="false">71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)</dependency>
+    <dependency reexport="false">5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -49,9 +54,13 @@
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
+    <module reference="7ef3bfd1-5c44-48e1-9906-6b55babec257(com.mbeddr.formal.req.base.pluginSolution)" version="0" />
+    <module reference="5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)" version="0" />
     <module reference="b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)" version="0" />
     <module reference="1164b831-8cda-44ed-89c4-3c28e36c6eea(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution)" version="0" />
     <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
+    <module reference="fdd69818-de3d-4ebf-9ec6-17ea152db151(com.mpsbasics.docx4j.core)" version="0" />
+    <module reference="71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

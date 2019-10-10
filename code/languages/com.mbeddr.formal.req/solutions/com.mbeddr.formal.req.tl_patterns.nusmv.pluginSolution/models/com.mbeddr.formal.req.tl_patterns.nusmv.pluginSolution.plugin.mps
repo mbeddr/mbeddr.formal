@@ -32,6 +32,10 @@
     <import index="2ocj" ref="r:0af55dc0-14f5-45c8-bf12-3c673ca075ac(com.mbeddr.formal.base.tooling.analyzer)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="7gut" ref="r:a2a23a30-67b2-48a3-878f-fb5cb8f590da(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution.analyzer)" />
+    <import index="3g0o" ref="r:a6263c3c-f5c8-43aa-8a86-c420dd6b206e(com.mpsbasics.docx4j.core.registry)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="ogdc" ref="r:4cca71e3-d4be-493f-8220-299b21e82da7(com.mbeddr.formal.req.base.pluginSolution.word_serializer)" />
+    <import index="amee" ref="r:9a030108-0369-40ca-a181-b4e3b6ebc9c7(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution.word_serializer)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -75,6 +79,10 @@
       </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
+      <concept id="481983775135178840" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDeclaration" flags="ng" index="2uRRBC">
+        <child id="481983775135178842" name="initBlock" index="2uRRBE" />
+      </concept>
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -89,6 +97,9 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -215,6 +226,9 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -637,6 +651,27 @@
     <node concept="3Tm1VV" id="4qaoH_IWSK" role="1B3o_S" />
     <node concept="3uibUv" id="4qaoH_IWVb" role="1zkMxy">
       <ref role="3uigEE" to="reb8:7mSH3Wn3WlO" resolve="NuSMVToolAdapter" />
+    </node>
+  </node>
+  <node concept="2uRRBC" id="2w5Gq4UspMH">
+    <property role="TrG5h" value="registerWordSerializers" />
+    <node concept="2uRRBj" id="2w5Gq4UspMI" role="2uRRBE">
+      <node concept="3clFbS" id="2w5Gq4UspMJ" role="2VODD2">
+        <node concept="3clFbF" id="2w5Gq4UspWx" role="3cqZAp">
+          <node concept="2YIFZM" id="2w5Gq4UsqRx" role="3clFbG">
+            <ref role="1Pybhc" to="3g0o:6fO82$FqF2U" resolve="Concepts2WordSerializerRegistry" />
+            <ref role="37wK5l" to="3g0o:6fO82$FqF4M" resolve="registerConcept2WordTranslator" />
+            <node concept="35c_gC" id="2w5Gq4UsqS0" role="37wK5m">
+              <ref role="35c_gD" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+            </node>
+            <node concept="2ShNRf" id="2w5Gq4UsyQC" role="37wK5m">
+              <node concept="HV5vD" id="2w5Gq4Uty24" role="2ShVmc">
+                <ref role="HV5vE" to="amee:38aFq1jjIsR" resolve="SystemScope2WordSerializer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
