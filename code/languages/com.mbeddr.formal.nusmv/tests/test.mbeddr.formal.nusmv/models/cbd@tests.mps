@@ -435,8 +435,8 @@
                   </node>
                 </node>
                 <node concept="2ShNRf" id="6mm$FLYS4wq" role="37wK5m">
-                  <node concept="HV5vD" id="6mm$FLYS5h6" role="2ShVmc">
-                    <ref role="HV5vE" to="xygl:~EmptyProgressIndicator" resolve="EmptyProgressIndicator" />
+                  <node concept="1pGfFk" id="5MWJzF9EMnm" role="2ShVmc">
+                    <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="4gtLUSMHxh2" role="37wK5m">
@@ -743,8 +743,8 @@
                   </node>
                 </node>
                 <node concept="2ShNRf" id="2_LXzlpunyY" role="37wK5m">
-                  <node concept="HV5vD" id="2_LXzlpunyZ" role="2ShVmc">
-                    <ref role="HV5vE" to="xygl:~EmptyProgressIndicator" resolve="EmptyProgressIndicator" />
+                  <node concept="1pGfFk" id="5MWJzF9EMno" role="2ShVmc">
+                    <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
                 <node concept="10Nm6u" id="2_LXzlpunz0" role="37wK5m" />
