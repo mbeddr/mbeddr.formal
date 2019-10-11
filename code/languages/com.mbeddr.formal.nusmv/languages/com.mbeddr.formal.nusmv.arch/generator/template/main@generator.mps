@@ -35,6 +35,9 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
+      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
+        <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
+      </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
@@ -58,6 +61,7 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
@@ -102,7 +106,7 @@
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
         <reference id="8482728081213209470" name="module" index="1zigX1" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo" />
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRefDotTarget" flags="ng" index="1zjgSo" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
@@ -129,6 +133,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -264,6 +271,37 @@
                 <ref role="1zigX1" node="7Z6$Wo5WeBx" resolve="m" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4mkOaIyMClo" role="3acgRq">
+      <ref role="30HIoZ" to="rvcq:3ZkhnXRcJqG" resolve="ModulesWiringSection" />
+      <node concept="1Koe21" id="4mkOaIyMClp" role="1lVwrX">
+        <node concept="2Hdtz0" id="4mkOaIyMClq" role="1Koe22">
+          <property role="TrG5h" value="m" />
+          <node concept="2Hfkzq" id="4mkOaIyMClF" role="2HcbjO">
+            <node concept="2Hdskp" id="4mkOaIyMClG" role="2Hfkx9">
+              <property role="TrG5h" value="m1" />
+              <node concept="1zigX2" id="4mkOaIyMClH" role="2HdssA">
+                <ref role="1zigX1" node="7Z6$Wo5WeBx" resolve="m" />
+              </node>
+              <node concept="2b32R4" id="4mkOaIyMCvr" role="lGtFl">
+                <node concept="3JmXsc" id="4mkOaIyMCvu" role="2P8S$">
+                  <node concept="3clFbS" id="4mkOaIyMCvv" role="2VODD2">
+                    <node concept="3clFbF" id="4mkOaIyMCv_" role="3cqZAp">
+                      <node concept="2OqwBi" id="4mkOaIyMCvw" role="3clFbG">
+                        <node concept="3Tsc0h" id="4mkOaIyMCvz" role="2OqNvi">
+                          <ref role="3TtcxE" to="gioj:6NmtaR1UNN$" resolve="vars" />
+                        </node>
+                        <node concept="30H73N" id="4mkOaIyMCv$" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="4mkOaIyMCvk" role="lGtFl" />
           </node>
         </node>
       </node>
