@@ -57,6 +57,10 @@
         <child id="7842584090743385207" name="params" index="2Hdtzq" />
       </concept>
       <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
       <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
         <child id="1989356068342053586" name="definitions" index="32O2ov" />
       </concept>
@@ -80,8 +84,8 @@
       <concept id="3226630706270535349" name="com.mbeddr.formal.req.nusmv.structure.EnumMemberRefWord" flags="ng" index="0m3kX">
         <reference id="3226630706270535485" name="enum" index="0m3iP" />
       </concept>
-      <concept id="3226630706270395581" name="com.mbeddr.formal.req.nusmv.structure.ModuleReqSpec" flags="ng" index="0mxsP">
-        <child id="3226630706270397134" name="module" index="0my_6" />
+      <concept id="3226630706270395581" name="com.mbeddr.formal.req.nusmv.structure.ModuleRefReqSpec" flags="ng" index="0mxsP">
+        <reference id="5900935767007048038" name="mod" index="2rfAiQ" />
       </concept>
     </language>
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
@@ -194,26 +198,7 @@
         </node>
       </node>
       <node concept="0mxsP" id="2N7iSwGBo2l" role="1QQeAC">
-        <node concept="2Hdtz0" id="2N7iSwGBp68" role="0my_6">
-          <property role="TrG5h" value="traffic_lights_controller" />
-          <node concept="32O2o0" id="2N7iSwGCJvw" role="2HcbjO">
-            <node concept="JlCpM" id="2N7iSwGCLav" role="32O2ov">
-              <property role="TrG5h" value="cars_light" />
-              <node concept="32Ogvo" id="2N7iSwGCLaM" role="1zoetD">
-                <ref role="32Ogvr" node="2N7iSwGBp6d" resolve="pedestrian_req" />
-              </node>
-            </node>
-            <node concept="JlCpM" id="2N7iSwGCLbs" role="32O2ov">
-              <property role="TrG5h" value="pedestrians_light" />
-              <node concept="32Ogvo" id="2N7iSwGCLbt" role="1zoetD">
-                <ref role="32Ogvr" node="2N7iSwGBp6d" resolve="pedestrian_req" />
-              </node>
-            </node>
-          </node>
-          <node concept="2Hdtzr" id="2N7iSwGBp6d" role="2Hdtzq">
-            <property role="TrG5h" value="pedestrian_req" />
-          </node>
-        </node>
+        <ref role="2rfAiQ" node="57$lt3aQGuy" resolve="traffic_lights_controller" />
       </node>
       <node concept="19SGf9" id="2fmnPVfeppB" role="1QQeG9">
         <node concept="19SUe$" id="2fmnPVfeppC" role="19SJt6">
@@ -292,33 +277,60 @@
         </node>
       </node>
       <node concept="0mxsP" id="71RA3dHzBNr" role="1QQeAC">
-        <node concept="2Hdtz0" id="71RA3dHzBNQ" role="0my_6">
-          <property role="TrG5h" value="merger" />
-          <node concept="32O2o0" id="71RA3dHzBP_" role="2HcbjO">
-            <node concept="JlCpM" id="71RA3dHzBQ5" role="32O2ov">
-              <property role="TrG5h" value="out" />
-              <node concept="2HbMDt" id="71RA3dHzBQO" role="1zoetD">
-                <node concept="32Ogvo" id="71RA3dHzBRq" role="2H9Ial">
-                  <ref role="32Ogvr" node="71RA3dHzBOU" resolve="right" />
-                </node>
-                <node concept="32Ogvo" id="71RA3dHzBQ_" role="2H9Iav">
-                  <ref role="32Ogvr" node="71RA3dHzBOb" resolve="left" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3_qfHp" id="71RA3dHzBOb" role="2Hdtzq">
-            <property role="TrG5h" value="left" />
-            <node concept="2Hds6S" id="71RA3dHzBOs" role="2HdssA" />
-          </node>
-          <node concept="3_qfHp" id="71RA3dHzBOU" role="2Hdtzq">
-            <property role="TrG5h" value="right" />
-            <node concept="2Hds6S" id="71RA3dHzBPp" role="2HdssA" />
-          </node>
-        </node>
+        <ref role="2rfAiQ" node="57$lt3aQGvg" resolve="merger" />
       </node>
       <node concept="1QQeAL" id="71RA3dHzBRG" role="1QQeAC" />
     </node>
+  </node>
+  <node concept="2HdtXS" id="57$lt3aQGuw">
+    <property role="TrG5h" value="_020_nusmv_models_def" />
+    <node concept="2Hdtz0" id="57$lt3aQGuy" role="2HcuB8">
+      <property role="TrG5h" value="traffic_lights_controller" />
+      <node concept="32O2o0" id="57$lt3aQGuz" role="2HcbjO">
+        <node concept="JlCpM" id="57$lt3aQGu$" role="32O2ov">
+          <property role="TrG5h" value="cars_light" />
+          <node concept="32Ogvo" id="57$lt3aQGu_" role="1zoetD">
+            <ref role="32Ogvr" node="57$lt3aQGuC" resolve="pedestrian_req" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="57$lt3aQGuA" role="32O2ov">
+          <property role="TrG5h" value="pedestrians_light" />
+          <node concept="32Ogvo" id="57$lt3aQGuB" role="1zoetD">
+            <ref role="32Ogvr" node="57$lt3aQGuC" resolve="pedestrian_req" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="57$lt3aQGuC" role="2Hdtzq">
+        <property role="TrG5h" value="pedestrian_req" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="57$lt3aQGuV" role="2HcuB8" />
+    <node concept="2Hdtz0" id="57$lt3aQGvg" role="2HcuB8">
+      <property role="TrG5h" value="merger" />
+      <node concept="32O2o0" id="57$lt3aQGvh" role="2HcbjO">
+        <node concept="JlCpM" id="57$lt3aQGvi" role="32O2ov">
+          <property role="TrG5h" value="out" />
+          <node concept="2HbMDt" id="57$lt3aQGvj" role="1zoetD">
+            <node concept="32Ogvo" id="57$lt3aQGvk" role="2H9Ial">
+              <ref role="32Ogvr" node="57$lt3aQGvo" resolve="right" />
+            </node>
+            <node concept="32Ogvo" id="57$lt3aQGvl" role="2H9Iav">
+              <ref role="32Ogvr" node="57$lt3aQGvm" resolve="left" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3_qfHp" id="57$lt3aQGvm" role="2Hdtzq">
+        <property role="TrG5h" value="left" />
+        <node concept="2Hds6S" id="57$lt3aQGvn" role="2HdssA" />
+      </node>
+      <node concept="3_qfHp" id="57$lt3aQGvo" role="2Hdtzq">
+        <property role="TrG5h" value="right" />
+        <node concept="2Hds6S" id="57$lt3aQGvp" role="2HdssA" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="57$lt3aQGv5" role="2HcuB8" />
+    <node concept="2SQmWS" id="57$lt3aQGux" role="2HcuB8" />
   </node>
 </model>
 

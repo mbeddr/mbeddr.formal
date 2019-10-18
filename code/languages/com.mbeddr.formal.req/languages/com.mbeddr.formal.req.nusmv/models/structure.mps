@@ -43,18 +43,18 @@
   </registry>
   <node concept="1TIwiD" id="2N7iSwGBlMX">
     <property role="EcuMT" value="3226630706270395581" />
-    <property role="TrG5h" value="ModuleReqSpec" />
+    <property role="TrG5h" value="ModuleRefReqSpec" />
     <property role="34LRSv" value="module (SMV)" />
     <property role="R4oN_" value="spec as SMV module" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2N7iSwGBmbe" role="1TKVEi">
-      <property role="IQ2ns" value="3226630706270397134" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="module" />
-      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
-    </node>
     <node concept="PrWs8" id="2N7iSwGBlMY" role="PzmwI">
       <ref role="PrY4T" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
+    </node>
+    <node concept="1TJgyj" id="57$lt3aQz5A" role="1TKVEi">
+      <property role="IQ2ns" value="5900935767007048038" />
+      <property role="20kJfa" value="mod" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="2N7iSwGBOW_">
