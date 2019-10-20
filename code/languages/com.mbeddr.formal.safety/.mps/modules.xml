@@ -2,12 +2,14 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/languages/com.mbeddr.formal.safety.gsn.req/com.mbeddr.formal.safety.gsn.req.mpl" folder="" />
-      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/languages/com.mbeddr.formal.safety.gsn.smv/com.mbeddr.formal.safety.gsn.smv.mpl" folder="" />
-      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/languages/com.mbeddr.formal.safety.gsn/com.mbeddr.formal.safety.gsn.mpl" folder="" />
-      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="" />
-      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/solutions/com.mbeddr.formal.safety.gsn.sandbox/com.mbeddr.formal.safety.gsn.sandbox.msd" folder="" />
-      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/solutions/com.mbeddr.formal.safety.gsn.smv.pluginSolution/com.mbeddr.formal.safety.gsn.smv.pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.req/com.mbeddr.formal.safety.gsn.req.mpl" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.smv/com.mbeddr.formal.safety.gsn.smv.mpl" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn/com.mbeddr.formal.safety.gsn.mpl" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="req" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="stamp" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.sandbox/com.mbeddr.formal.safety.gsn.sandbox.msd" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.smv.pluginSolution/com.mbeddr.formal.safety.gsn.smv.pluginSolution.msd" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.stamp.sandbox/com.mbeddr.formal.safety.stamp.sandbox.msd" folder="stamp" />
     </projectModules>
   </component>
 </project>
