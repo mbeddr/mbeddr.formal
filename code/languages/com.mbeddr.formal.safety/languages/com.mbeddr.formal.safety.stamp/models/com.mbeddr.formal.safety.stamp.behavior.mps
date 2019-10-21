@@ -84,7 +84,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3HVC1H6WxuI">
-    <property role="3GE5qa" value="baseLanguage" />
+    <property role="3GE5qa" value="baseLanguage.control_structure" />
     <ref role="13h7C2" to="bewr:3HVC1H6Wlax" resolve="Controller" />
     <node concept="13hLZK" id="3HVC1H6WxuJ" role="13h7CW">
       <node concept="3clFbS" id="3HVC1H6WxuK" role="2VODD2" />

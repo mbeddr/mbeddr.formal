@@ -10,6 +10,33 @@
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
+      <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
+        <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
+      </concept>
+      <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
+        <reference id="2004523000582373921" name="controller" index="1E0nOH" />
+        <child id="2004523000582373924" name="unsafeActions" index="1E0nOC" />
+      </concept>
+      <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
+        <reference id="2004523000582375039" name="action" index="1E0n_N" />
+        <child id="2004523000582414398" name="providing" index="1E0tWM" />
+        <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
+        <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
+      </concept>
+      <concept id="2004523000582413322" name="com.mbeddr.formal.safety.stamp.structure.TextualActionDescription" flags="ng" index="1E0uc6">
+        <child id="2004523000582413323" name="text" index="1E0uc7" />
+      </concept>
+      <concept id="2004523000582631964" name="com.mbeddr.formal.safety.stamp.structure.TextualContext" flags="ng" index="1E0COg">
+        <child id="2004523000582631965" name="text" index="1E0COh" />
+      </concept>
+      <concept id="2004523000582631956" name="com.mbeddr.formal.safety.stamp.structure.Pattern" flags="ng" index="1E0COo">
+        <child id="2004523000582631960" name="consequence" index="1E0COk" />
+        <child id="2004523000582631957" name="context" index="1E0COp" />
+      </concept>
+      <concept id="2004523000582631975" name="com.mbeddr.formal.safety.stamp.structure.TextualConsequence" flags="ng" index="1E0COF">
+        <child id="2004523000582631976" name="text" index="1E0CO$" />
+      </concept>
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
       <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU" />
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
@@ -17,9 +44,17 @@
         <reference id="4185693763139125829" name="source" index="SrP08" />
         <child id="4185693763139328937" name="actions" index="Sq$B$" />
       </concept>
-      <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructure" flags="ng" index="1X_0jQ">
+      <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.FunctionalControlStructure" flags="ng" index="1X_0jQ">
         <child id="4286195509387832126" name="connections" index="1X_0G_" />
         <child id="4286195509387832124" name="content" index="1X_0GB" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1294,6 +1329,46 @@
       </node>
       <node concept="Sqzvu" id="3Cm$$O2vVlJ" role="Sq$B$">
         <property role="TrG5h" value="Voltages" />
+      </node>
+    </node>
+  </node>
+  <node concept="1E0nO6" id="1JhvKLLOibR">
+    <property role="TrG5h" value="_010_unsafe_control_analysis" />
+    <ref role="1E05RL" node="3HVC1H6WpyK" resolve="_010_control" />
+    <node concept="1E0nOG" id="1JhvKLLOibS" role="1E0n_e">
+      <ref role="1E0nOH" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+      <node concept="1E0nOJ" id="1JhvKLLOibU" role="1E0nOC">
+        <ref role="1E0n_N" node="3Cm$$O2vAwE" resolve="Arm" />
+        <node concept="1E0uc6" id="1JhvKLLOFYy" role="1E0ucd">
+          <node concept="19SGf9" id="1JhvKLLOOt_" role="1E0uc7">
+            <node concept="19SUe$" id="1JhvKLLOOtA" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1E0uc6" id="1JhvKLLOOtH" role="1E0tWM">
+          <node concept="19SGf9" id="1JhvKLLOOtJ" role="1E0uc7">
+            <node concept="19SUe$" id="1JhvKLLOOtK" role="19SJt6">
+              <property role="19SUeA" value="Arm command provided unintentionally." />
+            </node>
+          </node>
+        </node>
+        <node concept="1E0COo" id="1JhvKLLPvln" role="1E0tXe">
+          <node concept="1E0COg" id="1JhvKLLPvlt" role="1E0COp">
+            <node concept="19SGf9" id="1JhvKLLPvlv" role="1E0COh">
+              <node concept="19SUe$" id="1JhvKLLPvlw" role="19SJt6">
+                <property role="19SUeA" value="when arm is expected" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="1JhvKLLPvl_" role="1E0COk">
+            <node concept="19SGf9" id="1JhvKLLPvlB" role="1E0CO$">
+              <node concept="19SUe$" id="1JhvKLLPvlC" role="19SJt6">
+                <property role="19SUeA" value="leads to accidental launch" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

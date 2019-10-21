@@ -6,6 +6,7 @@
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
+    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -40,11 +41,17 @@
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -58,6 +65,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -231,6 +239,29 @@
         <reference id="1981294357059564497" name="linkDeclaration" index="1RuSHD" />
       </concept>
     </language>
+    <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
+      <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
+        <child id="1397920687865593523" name="cells" index="2r0Tv6" />
+      </concept>
+      <concept id="1397920687864997170" name="de.slisson.mps.tables.structure.TableNodeCollection" flags="ng" index="2reCL7">
+        <child id="1397920687864997171" name="childTableNodes" index="2reCL6" />
+      </concept>
+      <concept id="1397920687864997153" name="de.slisson.mps.tables.structure.StaticHorizontal" flags="ng" index="2reCLk" />
+      <concept id="1397920687864997143" name="de.slisson.mps.tables.structure.TableCell" flags="ng" index="2reCLy">
+        <child id="1397920687865111420" name="columnHeader" index="2recC9" />
+        <child id="1397920687865064647" name="editorCell" index="2reSmM" />
+      </concept>
+      <concept id="1397920687865064415" name="de.slisson.mps.tables.structure.ChildsVertical" flags="ng" index="2reSaE" />
+      <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
+        <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
+      </concept>
+      <concept id="1397920687864864270" name="de.slisson.mps.tables.structure.StaticHeader" flags="ng" index="2rfbtV">
+        <property id="1397920687864864274" name="text" index="2rfbtB" />
+      </concept>
+      <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
+        <child id="1397920687864865354" name="cells" index="2rf8GZ" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -292,7 +323,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="3HVC1H6VUjK">
-    <ref role="1XX52x" to="bewr:3HVC1H6VUjH" resolve="SafetyControlStructure" />
+    <ref role="1XX52x" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
     <node concept="3EZMnI" id="3GRi4m$qQ5q" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
         <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
@@ -470,7 +501,7 @@
     <node concept="3Tm1VV" id="7kF4CZH$k2R" role="1B3o_S" />
   </node>
   <node concept="24kQdi" id="3HVC1H6WlaC">
-    <property role="3GE5qa" value="baseLanguage" />
+    <property role="3GE5qa" value="baseLanguage.control_structure" />
     <ref role="1XX52x" to="bewr:3HVC1H6Wlax" resolve="Controller" />
     <node concept="2ZK4vF" id="2ccN23o9ouu" role="2wV5jI">
       <node concept="3EZMnI" id="2ccN23o9tph" role="1ytjkN">
@@ -828,12 +859,166 @@
     </node>
   </node>
   <node concept="24kQdi" id="3Cm$$O2vamm">
-    <property role="3GE5qa" value="baseLanguage" />
+    <property role="3GE5qa" value="baseLanguage.control_structure" />
     <ref role="1XX52x" to="bewr:3Cm$$O2vamj" resolve="Action" />
     <node concept="3F0A7n" id="3Cm$$O2vyW1" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       <node concept="VSNWy" id="3Cm$$O2vyW4" role="3F10Kt">
         <property role="1lJzqX" value="9" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1JhvKLLO08D">
+    <ref role="1XX52x" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+    <node concept="3EZMnI" id="1JhvKLLO08I" role="2wV5jI">
+      <node concept="PMmxH" id="1JhvKLLO08P" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+      </node>
+      <node concept="3F0ifn" id="1JhvKLLO08R" role="3EZMnx" />
+      <node concept="3EZMnI" id="1JhvKLLOic6" role="3EZMnx">
+        <node concept="VPM3Z" id="1JhvKLLOic8" role="3F10Kt" />
+        <node concept="3F0ifn" id="1JhvKLLOica" role="3EZMnx">
+          <property role="3F0ifm" value="for control structure:" />
+        </node>
+        <node concept="1iCGBv" id="1JhvKLLOico" role="3EZMnx">
+          <ref role="1NtTu8" to="bewr:1JhvKLLOibX" resolve="functionalControlStructure" />
+          <node concept="1sVBvm" id="1JhvKLLOicq" role="1sWHZn">
+            <node concept="3F0A7n" id="1JhvKLLOicy" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="1JhvKLLOicb" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1JhvKLLOic_" role="3EZMnx" />
+      <node concept="2rfBfz" id="1JhvKLLO0oS" role="3EZMnx">
+        <node concept="2reSaE" id="1JhvKLLO0oZ" role="2rf8GZ">
+          <ref role="2reCK$" to="bewr:1JhvKLLO0p2" resolve="unsafeController" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="1JhvKLLO08L" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1JhvKLLO0p4">
+    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <ref role="1XX52x" to="bewr:1JhvKLLO08w" resolve="UnsafeController" />
+    <node concept="2r0Tta" id="1JhvKLLO0p6" role="2wV5jI">
+      <node concept="2reCLk" id="1JhvKLLO0pu" role="2r0Tv6">
+        <node concept="2reCLy" id="1JhvKLLO0p9" role="2reCL6">
+          <node concept="1iCGBv" id="1JhvKLLO0pd" role="2reSmM">
+            <ref role="1NtTu8" to="bewr:1JhvKLLO08x" resolve="controller" />
+            <node concept="1sVBvm" id="1JhvKLLO0pf" role="1sWHZn">
+              <node concept="3F0A7n" id="1JhvKLLO0pp" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="1JhvKLLO0ps" role="2recC9">
+            <property role="2rfbtB" value="Source Controller" />
+          </node>
+        </node>
+        <node concept="2reSaE" id="1JhvKLLO0pG" role="2reCL6">
+          <ref role="2reCK$" to="bewr:1JhvKLLO08$" resolve="unsafeActions" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1JhvKLLO0pO">
+    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <ref role="1XX52x" to="bewr:1JhvKLLO08z" resolve="UnsafeControllerAction" />
+    <node concept="2r0Tta" id="1JhvKLLO0pQ" role="2wV5jI">
+      <node concept="2reCLk" id="1JhvKLLO0pT" role="2r0Tv6">
+        <node concept="2reCLy" id="1JhvKLLO0pV" role="2reCL6">
+          <node concept="1iCGBv" id="1JhvKLLO0q4" role="2reSmM">
+            <ref role="1NtTu8" to="bewr:1JhvKLLO0pZ" resolve="action" />
+            <node concept="1sVBvm" id="1JhvKLLO0q6" role="1sWHZn">
+              <node concept="3F0A7n" id="1JhvKLLO0qd" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="1JhvKLLO0qg" role="2recC9">
+            <property role="2rfbtB" value="Action" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="1JhvKLLOa1k" role="2reCL6">
+          <node concept="3F1sOY" id="1JhvKLLOa1v" role="2reSmM">
+            <ref role="1NtTu8" to="bewr:1JhvKLLO9K1" resolve="notProviding" />
+          </node>
+          <node concept="2rfbtV" id="1JhvKLLOa1y" role="2recC9">
+            <property role="2rfbtB" value="Not Providing Causes Hazard" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="1JhvKLLOa1I" role="2reCL6">
+          <node concept="3F1sOY" id="1JhvKLLOa1W" role="2reSmM">
+            <ref role="1NtTu8" to="bewr:1JhvKLLOa0Y" resolve="providing" />
+          </node>
+          <node concept="2rfbtV" id="1JhvKLLOa1Z" role="2recC9">
+            <property role="2rfbtB" value="Providing Causes Hazard" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="1JhvKLLOa2e" role="2reCL6">
+          <node concept="3F1sOY" id="1JhvKLLOa2v" role="2reSmM">
+            <ref role="1NtTu8" to="bewr:1JhvKLLOa12" resolve="soonLateOutOfSequence" />
+          </node>
+          <node concept="2rfbtV" id="1JhvKLLOa2y" role="2recC9">
+            <property role="2rfbtB" value="Too Soon/Late, Out of Sequence" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="1JhvKLLOa2O" role="2reCL6">
+          <node concept="3F1sOY" id="1JhvKLLOa38" role="2reSmM">
+            <ref role="1NtTu8" to="bewr:1JhvKLLOa17" resolve="stoppedTooSoonAppliedTooLong" />
+          </node>
+          <node concept="2rfbtV" id="1JhvKLLOa3b" role="2recC9">
+            <property role="2rfbtB" value="Stopped too Soon, Applied too Long" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1JhvKLLOFY$">
+    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <ref role="1XX52x" to="bewr:1JhvKLLO9Ka" resolve="TextualActionDescription" />
+    <node concept="3F1sOY" id="1JhvKLLOFYA" role="2wV5jI">
+      <ref role="1NtTu8" to="bewr:1JhvKLLO9Kb" resolve="text" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1JhvKLLOZ8v">
+    <property role="3GE5qa" value="baseLanguage.analysis.context" />
+    <ref role="1XX52x" to="bewr:1JhvKLLOZ8s" resolve="TextualContext" />
+    <node concept="3F1sOY" id="1JhvKLLOZ8$" role="2wV5jI">
+      <ref role="1NtTu8" to="bewr:1JhvKLLOZ8t" resolve="text" />
+      <node concept="VechU" id="1JhvKLLPmpp" role="3F10Kt">
+        <property role="Vb096" value="fLwANPu/blue" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1JhvKLLPb1c">
+    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <ref role="1XX52x" to="bewr:1JhvKLLOZ8k" resolve="Pattern" />
+    <node concept="3EZMnI" id="1JhvKLLPb1e" role="2wV5jI">
+      <node concept="3F1sOY" id="1JhvKLLPb1l" role="3EZMnx">
+        <ref role="1NtTu8" to="bewr:1JhvKLLOZ8l" resolve="context" />
+      </node>
+      <node concept="3F0ifn" id="1JhvKLLPb1r" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="1JhvKLLPb1C" role="3EZMnx">
+        <ref role="1NtTu8" to="bewr:1JhvKLLOZ8o" resolve="consequence" />
+      </node>
+      <node concept="l2Vlx" id="1JhvKLLPb1h" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1JhvKLLPb1J">
+    <property role="3GE5qa" value="baseLanguage.analysis.consequence" />
+    <ref role="1XX52x" to="bewr:1JhvKLLOZ8B" resolve="TextualConsequence" />
+    <node concept="3F1sOY" id="1JhvKLLPb1L" role="2wV5jI">
+      <ref role="1NtTu8" to="bewr:1JhvKLLOZ8C" resolve="text" />
+      <node concept="VechU" id="1JhvKLLPb1O" role="3F10Kt">
+        <property role="Vb096" value="fLwANPn/red" />
       </node>
     </node>
   </node>
