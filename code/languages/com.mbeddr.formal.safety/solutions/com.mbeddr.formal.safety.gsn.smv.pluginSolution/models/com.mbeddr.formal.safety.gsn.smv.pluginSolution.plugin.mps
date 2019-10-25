@@ -33,6 +33,7 @@
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="tiyw" ref="r:79c46c2e-9224-40de-87d4-7f9a52478722(com.mbeddr.formal.safety.gsn.smv.behavior)" />
+    <import index="qt06" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.builder(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -653,6 +654,29 @@
                   </node>
                   <node concept="37vLTw" id="4qaoH_Pgj5" role="37vLTx">
                     <ref role="3cqZAo" node="4qaoH_PcYo" resolve="success" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="62$$j6uRSdj" role="3cqZAp">
+                <node concept="37vLTI" id="62$$j6uRTUD" role="3clFbG">
+                  <node concept="2OqwBi" id="62$$j6uTawe" role="37vLTx">
+                    <node concept="37vLTw" id="62$$j6uTad1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
+                    </node>
+                    <node concept="2qgKlT" id="62$$j6uTaGA" role="2OqNvi">
+                      <ref role="37wK5l" to="tiyw:62$$j6uT0Us" resolve="computeHashCode" />
+                      <node concept="37vLTw" id="62$$j6uUWc8" role="37wK5m">
+                        <ref role="3cqZAo" node="4qaoH_LWON" resolve="repo" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="62$$j6uRSqO" role="37vLTJ">
+                    <node concept="37vLTw" id="62$$j6uRSdh" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
+                    </node>
+                    <node concept="3TrcHB" id="62$$j6uRTd8" role="2OqNvi">
+                      <ref role="3TsBF5" to="bsp8:62$$j6uRHj9" resolve="hashCode" />
+                    </node>
                   </node>
                 </node>
               </node>

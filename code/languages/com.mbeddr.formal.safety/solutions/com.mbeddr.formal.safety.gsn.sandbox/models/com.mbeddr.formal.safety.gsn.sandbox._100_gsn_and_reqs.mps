@@ -207,6 +207,7 @@
         <property id="79421622115107641" name="success" index="1$GyEM" />
         <property id="79421622115107639" name="dateLong" index="1$GyEW" />
         <property id="79421622118163395" name="dateShort" index="1$N8D8" />
+        <property id="6963850566126458057" name="hashCode" index="3Yu$nS" />
       </concept>
       <concept id="79421622115066961" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvSpecContext" flags="ng" index="1$JkRq">
         <reference id="79421622115066962" name="module" index="1$JkRp" />
@@ -732,10 +733,10 @@
       <node concept="37mRIm" id="4qaoH_EjbE" role="37mRID">
         <property role="37mO49" value="79421622115185355" />
         <node concept="gqqVs" id="4qaoH_EjbD" role="37mO4d">
-          <property role="gqqTZ" value="112.0" />
+          <property role="gqqTZ" value="60.0" />
           <property role="gqqTW" value="593.0" />
-          <property role="gqqTX" value="351.0" />
-          <property role="gqqTy" value="143.0" />
+          <property role="gqqTX" value="452.0" />
+          <property role="gqqTy" value="174.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -868,7 +869,7 @@
       <property role="TrG5h" value="St.01" />
       <node concept="19SGf9" id="2LDKh2uErj5" role="2vnaTY">
         <node concept="19SUe$" id="2LDKh2uErj6" role="19SJt6">
-          <property role="19SUeA" value="Use formal methods" />
+          <property role="19SUeA" value="Use formal methods." />
         </node>
       </node>
     </node>
@@ -901,12 +902,13 @@
     </node>
     <node concept="1$GyEX" id="4qaoH_Ejbb" role="2vn1q5">
       <property role="TrG5h" value="S.01" />
-      <property role="1$GyEW" value="Fri Oct 18 10:02:42 CEST 2019" />
+      <property role="1$GyEW" value="Fri Oct 25 10:25:28 CEST 2019" />
       <property role="1$GyEM" value="true" />
-      <property role="1$N8D8" value="18-10-2019 10:02:42" />
+      <property role="1$N8D8" value="25-10-2019 10:25:28" />
+      <property role="3Yu$nS" value="35873668" />
       <node concept="19SGf9" id="4qaoH_Ejbc" role="2vnaTY">
         <node concept="19SUe$" id="4qaoH_Ejbd" role="19SJt6">
-          <property role="19SUeA" value="Verification results." />
+          <property role="19SUeA" value="Verification results. " />
         </node>
       </node>
     </node>
