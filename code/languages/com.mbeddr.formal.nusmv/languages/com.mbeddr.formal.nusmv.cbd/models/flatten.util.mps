@@ -52,6 +52,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -1378,6 +1379,14 @@
             <node concept="37vLTw" id="1NcemxUMb8o" role="37wK5m">
               <ref role="3cqZAo" node="1NcemxUMb7N" resolve="allVerificationConditions" />
             </node>
+            <node concept="2OqwBi" id="7bxPmtpaxsm" role="37wK5m">
+              <node concept="37vLTw" id="7bxPmtpax9c" role="2Oq$k0">
+                <ref role="3cqZAo" node="1NcemxUMb6W" resolve="ca" />
+              </node>
+              <node concept="3TrcHB" id="7bxPmtpayNM" role="2OqNvi">
+                <ref role="3TsBF5" to="vzqj:7bxPmtpaok2" resolve="checkVacuity" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1NcemxUMb7i" role="3cqZAp">
@@ -1398,6 +1407,14 @@
             </node>
             <node concept="37vLTw" id="1NcemxUMb8s" role="37wK5m">
               <ref role="3cqZAo" node="1NcemxUMb7N" resolve="allVerificationConditions" />
+            </node>
+            <node concept="2OqwBi" id="7bxPmtpaz96" role="37wK5m">
+              <node concept="37vLTw" id="7bxPmtpaz97" role="2Oq$k0">
+                <ref role="3cqZAo" node="1NcemxUMb6W" resolve="ca" />
+              </node>
+              <node concept="3TrcHB" id="7bxPmtpaz98" role="2OqNvi">
+                <ref role="3TsBF5" to="vzqj:7bxPmtpaok2" resolve="checkVacuity" />
+              </node>
             </node>
           </node>
         </node>
@@ -1903,6 +1920,75 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="7bxPmtpaDDt" role="3cqZAp" />
+                <node concept="3clFbJ" id="7bxPmtpaBCv" role="3cqZAp">
+                  <node concept="3clFbS" id="7bxPmtpaBCx" role="3clFbx">
+                    <node concept="3cpWs8" id="7bxPmtp8p$t" role="3cqZAp">
+                      <node concept="3cpWsn" id="7bxPmtp8p$w" role="3cpWs9">
+                        <property role="TrG5h" value="vacuityCheck" />
+                        <node concept="3Tqbb2" id="7bxPmtp8p$r" role="1tU5fm">
+                          <ref role="ehGHo" to="ehqg:6NmtaR1V301" resolve="Expression" />
+                        </node>
+                        <node concept="2pJPEk" id="7bxPmtp8q0y" role="33vP2m">
+                          <node concept="2pJPED" id="7bxPmtp8q37" role="2pJPEn">
+                            <ref role="2pJxaS" to="gioj:7mSH3Wn8bMM" resolve="NotExpression" />
+                            <node concept="2pIpSj" id="7bxPmtp8q5V" role="2pJxcM">
+                              <ref role="2pIpSl" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+                              <node concept="36biLy" id="7bxPmtp8q8T" role="28nt2d">
+                                <node concept="2OqwBi" id="7bxPmtp8qr_" role="36biLW">
+                                  <node concept="37vLTw" id="7bxPmtp8qdv" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1NcemxUMbaY" resolve="implicantsConjunction" />
+                                  </node>
+                                  <node concept="1$rogu" id="7bxPmtp8qEx" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="7bxPmtp8qHv" role="3cqZAp">
+                      <node concept="2YIFZM" id="7bxPmtp8qHw" role="3clFbG">
+                        <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="fillOriginalNode" />
+                        <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                        <node concept="2OqwBi" id="7bxPmtp8qHx" role="37wK5m">
+                          <node concept="2GrUjf" id="7bxPmtp8qHy" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="1NcemxUMb9n" resolve="precExp" />
+                          </node>
+                          <node concept="2Xjw5R" id="7bxPmtp8qHz" role="2OqNvi">
+                            <node concept="1xMEDy" id="7bxPmtp8qH$" role="1xVPHs">
+                              <node concept="chp4Y" id="7bxPmtp8qH_" role="ri$Ld">
+                                <ref role="cht4Q" to="vzqj:7RhjhI7cKjw" resolve="Precondition" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="7bxPmtp8rU_" role="37wK5m">
+                          <ref role="3cqZAo" node="7bxPmtp8p$w" resolve="vacuityCheck" />
+                        </node>
+                        <node concept="3clFbT" id="7bxPmtp8qHB" role="37wK5m">
+                          <property role="3clFbU" value="false" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="7bxPmtp8qHC" role="3cqZAp">
+                      <node concept="2OqwBi" id="7bxPmtp8qHD" role="3clFbG">
+                        <node concept="37vLTw" id="7bxPmtp8qHE" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1NcemxUMb73" resolve="computedPreconditionsChecks" />
+                        </node>
+                        <node concept="TSZUe" id="7bxPmtp8qHF" role="2OqNvi">
+                          <node concept="37vLTw" id="7bxPmtp8s13" role="25WWJ7">
+                            <ref role="3cqZAo" node="7bxPmtp8p$w" resolve="vacuityCheck" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7bxPmtpaBYB" role="3clFbw">
+                    <ref role="3cqZAo" node="7bxPmtpazA8" resolve="checkVacuity" />
+                  </node>
+                </node>
+                <node concept="3clFbH" id="7bxPmtp8pgf" role="3cqZAp" />
                 <node concept="3clFbF" id="1NcemxUMba8" role="3cqZAp">
                   <node concept="2OqwBi" id="1NcemxUMbb1" role="3clFbG">
                     <node concept="37vLTw" id="1NcemxUMbbG" role="2Oq$k0">
@@ -1938,6 +2024,9 @@
                     </node>
                     <node concept="37vLTw" id="1NcemxUMbac" role="37wK5m">
                       <ref role="3cqZAo" node="1NcemxUMb73" resolve="computedPreconditionsChecks" />
+                    </node>
+                    <node concept="37vLTw" id="7bxPmtpaE32" role="37wK5m">
+                      <ref role="3cqZAo" node="7bxPmtpazA8" resolve="checkVacuity" />
                     </node>
                   </node>
                 </node>
@@ -1989,9 +2078,12 @@
           <ref role="2I9WkF" to="ehqg:6NmtaR1V301" resolve="Expression" />
         </node>
       </node>
+      <node concept="37vLTG" id="7bxPmtpazA8" role="3clF46">
+        <property role="TrG5h" value="checkVacuity" />
+        <node concept="10P_77" id="7bxPmtpa_pB" role="1tU5fm" />
+      </node>
     </node>
     <node concept="2tJIrI" id="1NcemxUMb6N" role="jymVt" />
-    <node concept="2tJIrI" id="1NcemxUMb6O" role="jymVt" />
     <node concept="2YIFZL" id="1NcemxUMb6P" role="jymVt">
       <property role="TrG5h" value="checkPostconditionsOfParentBlock" />
       <property role="od$2w" value="false" />
@@ -2376,6 +2468,71 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="7bxPmtp91bz" role="3cqZAp" />
+            <node concept="3clFbJ" id="7bxPmtpawF5" role="3cqZAp">
+              <node concept="3clFbS" id="7bxPmtpawF7" role="3clFbx">
+                <node concept="3cpWs8" id="7bxPmtp91zq" role="3cqZAp">
+                  <node concept="3cpWsn" id="7bxPmtp91zr" role="3cpWs9">
+                    <property role="TrG5h" value="vacuityCheck" />
+                    <node concept="3Tqbb2" id="7bxPmtp91zs" role="1tU5fm">
+                      <ref role="ehGHo" to="ehqg:6NmtaR1V301" resolve="Expression" />
+                    </node>
+                    <node concept="2pJPEk" id="7bxPmtp91zt" role="33vP2m">
+                      <node concept="2pJPED" id="7bxPmtp91zu" role="2pJPEn">
+                        <ref role="2pJxaS" to="gioj:7mSH3Wn8bMM" resolve="NotExpression" />
+                        <node concept="2pIpSj" id="7bxPmtp91zv" role="2pJxcM">
+                          <ref role="2pIpSl" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+                          <node concept="36biLy" id="7bxPmtp91zw" role="28nt2d">
+                            <node concept="37vLTw" id="7bxPmtp91zx" role="36biLW">
+                              <ref role="3cqZAo" node="1NcemxUMb9z" resolve="implicantsConjunction" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7bxPmtp91z_" role="3cqZAp">
+                  <node concept="2YIFZM" id="7bxPmtp91zA" role="3clFbG">
+                    <ref role="37wK5l" to="fwk:~TracingUtil.fillOriginalNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="fillOriginalNode" />
+                    <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                    <node concept="2OqwBi" id="7bxPmtp91zB" role="37wK5m">
+                      <node concept="2GrUjf" id="7bxPmtp91zC" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="1NcemxUMb84" resolve="post" />
+                      </node>
+                      <node concept="2Xjw5R" id="7bxPmtp91zD" role="2OqNvi">
+                        <node concept="1xMEDy" id="7bxPmtp91zE" role="1xVPHs">
+                          <node concept="chp4Y" id="7bxPmtp91zF" role="ri$Ld">
+                            <ref role="cht4Q" to="vzqj:7RhjhI7d5N_" resolve="Postcondition" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="7bxPmtp91zG" role="37wK5m">
+                      <ref role="3cqZAo" node="7bxPmtp91zr" resolve="vacuityCheck" />
+                    </node>
+                    <node concept="3clFbT" id="7bxPmtp91zH" role="37wK5m">
+                      <property role="3clFbU" value="false" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7bxPmtp91zI" role="3cqZAp">
+                  <node concept="2OqwBi" id="7bxPmtp91zJ" role="3clFbG">
+                    <node concept="37vLTw" id="7bxPmtp91zK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1NcemxUMb7a" resolve="computedPostconditionsChecks" />
+                    </node>
+                    <node concept="TSZUe" id="7bxPmtp91zL" role="2OqNvi">
+                      <node concept="37vLTw" id="7bxPmtp91zM" role="25WWJ7">
+                        <ref role="3cqZAo" node="7bxPmtp91zr" resolve="vacuityCheck" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="7bxPmtpaHzi" role="3clFbw">
+                <ref role="3cqZAo" node="7bxPmtpaEwN" resolve="checkVacuity" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="1NcemxUMb7A" role="3cqZAp" />
@@ -2529,6 +2686,9 @@
                     <node concept="37vLTw" id="1NcemxUMbaA" role="37wK5m">
                       <ref role="3cqZAo" node="1NcemxUMb7a" resolve="computedPostconditionsChecks" />
                     </node>
+                    <node concept="37vLTw" id="7bxPmtpaJ5x" role="37wK5m">
+                      <ref role="3cqZAo" node="7bxPmtpaEwN" resolve="checkVacuity" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2564,7 +2724,12 @@
           <ref role="2I9WkF" to="ehqg:6NmtaR1V301" resolve="Expression" />
         </node>
       </node>
+      <node concept="37vLTG" id="7bxPmtpaEwN" role="3clF46">
+        <property role="TrG5h" value="checkVacuity" />
+        <node concept="10P_77" id="7bxPmtpaFAf" role="1tU5fm" />
+      </node>
     </node>
+    <node concept="2tJIrI" id="7bxPmtp8mcK" role="jymVt" />
     <node concept="2YIFZL" id="GZcvICZZ5C" role="jymVt">
       <property role="TrG5h" value="archWiringExpression" />
       <node concept="3Tm6S6" id="GZcvICZZ5D" role="1B3o_S" />

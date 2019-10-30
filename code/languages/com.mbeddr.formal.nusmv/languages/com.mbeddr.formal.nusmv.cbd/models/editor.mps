@@ -1165,12 +1165,24 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="15PPQjZe9K2" role="3EZMnx">
-          <property role="3F0ifm" value="use bmc:" />
+          <property role="3F0ifm" value="check vacuity:" />
         </node>
         <node concept="27S6Sx" id="15PPQjZea1B" role="3EZMnx">
-          <ref role="1NtTu8" to="vzqj:15PPQjZe9gT" resolve="useBMC" />
+          <ref role="1NtTu8" to="vzqj:7bxPmtpaok2" resolve="checkVacuity" />
         </node>
         <node concept="l2Vlx" id="15PPQjZe9JS" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7bxPmtpaosD" role="3EZMnx">
+        <node concept="VPM3Z" id="7bxPmtpaosE" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="7bxPmtpaosF" role="3EZMnx">
+          <property role="3F0ifm" value="use bmc:" />
+        </node>
+        <node concept="27S6Sx" id="7bxPmtpaosG" role="3EZMnx">
+          <ref role="1NtTu8" to="vzqj:15PPQjZe9gT" resolve="useBMC" />
+        </node>
+        <node concept="l2Vlx" id="7bxPmtpaosH" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="15PPQjZea1T" role="3EZMnx">
         <node concept="VPM3Z" id="15PPQjZea1U" role="3F10Kt">
