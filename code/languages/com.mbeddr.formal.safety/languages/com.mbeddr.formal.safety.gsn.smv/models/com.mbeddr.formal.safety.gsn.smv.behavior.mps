@@ -139,62 +139,9 @@
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
-  <node concept="13h7C7" id="71RA3dHxPVZ">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
-    <ref role="13h7C2" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
-    <node concept="13hLZK" id="71RA3dHxPW0" role="13h7CW">
-      <node concept="3clFbS" id="71RA3dHxPW1" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="71RA3dHxXIX" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="71RA3dHxXIY" role="1B3o_S" />
-      <node concept="3clFbS" id="71RA3dHxXJ3" role="3clF47">
-        <node concept="3clFbF" id="71RA3dHxXS_" role="3cqZAp">
-          <node concept="Xl_RD" id="71RA3dHxXS$" role="3clFbG">
-            <property role="Xl_RC" value="SMV-based Semantics" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="71RA3dHxXJ4" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="4qaoH_DYDr">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
-    <ref role="13h7C2" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
-    <node concept="13i0hz" id="4qaoH_DYDA" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="4qaoH_DYDB" role="1B3o_S" />
-      <node concept="3clFbS" id="4qaoH_DYDC" role="3clF47">
-        <node concept="3clFbF" id="4qaoH_DYDD" role="3cqZAp">
-          <node concept="Xl_RD" id="4qaoH_DYDE" role="3clFbG">
-            <property role="Xl_RC" value="SMV-based Semantics" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="4qaoH_DYDF" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="4qaoH_DYDs" role="13h7CW">
-      <node concept="3clFbS" id="4qaoH_DYDt" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="4qaoH_Ei_S">
     <property role="3GE5qa" value="gsn.dsl.smv.formal" />
     <ref role="13h7C2" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
-    <node concept="13i0hz" id="4qaoH_EiA3" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="4qaoH_EiA4" role="1B3o_S" />
-      <node concept="3clFbS" id="4qaoH_EiA5" role="3clF47">
-        <node concept="3clFbF" id="4qaoH_EiA6" role="3cqZAp">
-          <node concept="Xl_RD" id="4qaoH_EiA7" role="3clFbG">
-            <property role="Xl_RC" value="SMV-based Semantics" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="4qaoH_EiA8" role="3clF45" />
-    </node>
     <node concept="13i0hz" id="62$$j6uT0Us" role="13h7CS">
       <property role="TrG5h" value="computeHashCode" />
       <node concept="3Tm1VV" id="62$$j6uT0Ut" role="1B3o_S" />
@@ -304,26 +251,6 @@
       <node concept="3clFbS" id="4qaoH_Ei_U" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="4qaoH_Q3Xf">
-    <property role="3GE5qa" value="gsn.dsl.smv.tests" />
-    <ref role="13h7C2" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
-    <node concept="13i0hz" id="4qaoH_Q3Xq" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="4qaoH_Q3Xr" role="1B3o_S" />
-      <node concept="3clFbS" id="4qaoH_Q3Xs" role="3clF47">
-        <node concept="3clFbF" id="4qaoH_Q3Xt" role="3cqZAp">
-          <node concept="Xl_RD" id="4qaoH_Q3Xu" role="3clFbG">
-            <property role="Xl_RC" value="SMV-based Semantics.Tests" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="4qaoH_Q3Xv" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="4qaoH_Q3Xg" role="13h7CW">
-      <node concept="3clFbS" id="4qaoH_Q3Xh" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="4qaoH_QkkC">
     <property role="3GE5qa" value="gsn.dsl" />
     <ref role="13h7C2" to="bsp8:4qaoH_Q49c" resolve="SmvGoalBase" />
@@ -413,6 +340,19 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="71RA3dHxXIX" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="71RA3dHxXIY" role="1B3o_S" />
+      <node concept="3clFbS" id="71RA3dHxXJ3" role="3clF47">
+        <node concept="3clFbF" id="71RA3dHxXS_" role="3cqZAp">
+          <node concept="Xl_RD" id="71RA3dHxXS$" role="3clFbG">
+            <property role="Xl_RC" value="SMV-based Semantics (Patterns)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="71RA3dHxXJ4" role="3clF45" />
     </node>
     <node concept="13hLZK" id="4qaoH_QkkD" role="13h7CW">
       <node concept="3clFbS" id="4qaoH_QkkE" role="2VODD2" />

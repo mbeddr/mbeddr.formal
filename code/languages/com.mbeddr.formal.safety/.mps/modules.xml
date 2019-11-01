@@ -2,9 +2,11 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.patterns/com.mbeddr.formal.safety.gsn.patterns.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.req/com.mbeddr.formal.safety.gsn.req.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.smv/com.mbeddr.formal.safety.gsn.smv.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn/com.mbeddr.formal.safety.gsn.mpl" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.hara/com.mbeddr.formal.safety.hara.mpl" folder="hara" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="stamp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.sandbox/com.mbeddr.formal.safety.gsn.sandbox.msd" folder="gsn" />

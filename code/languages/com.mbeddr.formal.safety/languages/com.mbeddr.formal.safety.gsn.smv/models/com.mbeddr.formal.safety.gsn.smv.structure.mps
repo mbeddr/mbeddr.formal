@@ -141,6 +141,9 @@
         </node>
       </node>
     </node>
+    <node concept="PrWs8" id="7bxPmtp5Vwg" role="PzmwI">
+      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4qaoH_E0cQ">
     <property role="EcuMT" value="79421622115107638" />
@@ -177,6 +180,9 @@
           <property role="3PKj8l" value="987654" />
         </node>
       </node>
+    </node>
+    <node concept="PrWs8" id="7bxPmtp5Vwi" role="PzmwI">
+      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4qaoH_EJ_i">
