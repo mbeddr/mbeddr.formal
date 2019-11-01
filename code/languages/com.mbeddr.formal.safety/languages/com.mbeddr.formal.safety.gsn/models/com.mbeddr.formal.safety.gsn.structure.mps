@@ -28,6 +28,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -35,6 +38,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -56,6 +60,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -126,7 +131,6 @@
       <property role="IQ2ns" value="4266958635905312315" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
     <node concept="PrWs8" id="3GRi4m$rb5M" role="PzmwI">
@@ -181,6 +185,7 @@
   <node concept="1TIwiD" id="3GRi4m$sIaU">
     <property role="EcuMT" value="4266958635905770170" />
     <property role="TrG5h" value="InContextOfConnection" />
+    <property role="3GE5qa" value="connections" />
     <ref role="1TJDcQ" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
     <node concept="1TJgyj" id="3GRi4m$sIbL" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770225" />
@@ -215,7 +220,16 @@
   <node concept="1TIwiD" id="2ccN23odQ9b">
     <property role="EcuMT" value="2525617932486533707" />
     <property role="TrG5h" value="SupportedByConnection" />
+    <property role="3GE5qa" value="connections" />
     <ref role="1TJDcQ" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+  </node>
+  <node concept="PlHQZ" id="7bxPmtp5I2v">
+    <property role="EcuMT" value="8278132229936701599" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IHiddenGoalStructureElement" />
+    <node concept="t5JxF" id="7bxPmtp5I2w" role="lGtFl">
+      <property role="t5JxN" value="Elements which are instantiated via a pattern" />
+    </node>
   </node>
 </model>
 
