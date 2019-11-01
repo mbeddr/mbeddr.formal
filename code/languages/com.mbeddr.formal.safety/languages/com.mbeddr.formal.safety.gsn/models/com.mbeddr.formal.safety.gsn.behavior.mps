@@ -27,6 +27,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -38,6 +39,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -65,6 +67,28 @@
           <node concept="Xl_RD" id="71RA3dHxPTm" role="3clFbG">
             <property role="Xl_RC" value="GSN base" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7TjUbLQ7DYX" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isTargetOfSpecialConnections" />
+      <node concept="3Tm1VV" id="7TjUbLQ7DYY" role="1B3o_S" />
+      <node concept="10P_77" id="7TjUbLQ7DZj" role="3clF45" />
+      <node concept="3clFbS" id="7TjUbLQ7DZ0" role="3clF47">
+        <node concept="3clFbF" id="7TjUbLQ7E1v" role="3cqZAp">
+          <node concept="3clFbT" id="7TjUbLQ7E1u" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7TjUbLQ7E1K" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isSourceOfSpecialConnections" />
+      <node concept="3Tm1VV" id="7TjUbLQ7E1L" role="1B3o_S" />
+      <node concept="10P_77" id="7TjUbLQ7E1M" role="3clF45" />
+      <node concept="3clFbS" id="7TjUbLQ7E1N" role="3clF47">
+        <node concept="3clFbF" id="7TjUbLQ7E1O" role="3cqZAp">
+          <node concept="3clFbT" id="7TjUbLQ7E1P" role="3clFbG" />
         </node>
       </node>
     </node>
