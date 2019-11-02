@@ -37,6 +37,7 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -47,6 +48,10 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -111,6 +116,11 @@
     <property role="TrG5h" value="Goal" />
     <property role="34LRSv" value="Goal" />
     <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1TJgyi" id="7TjUbLQa$TR" role="1TKVEl">
+      <property role="IQ2nx" value="9102875167979884151" />
+      <property role="TrG5h" value="undeveloped" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1irR5M" id="71RA3dHz6MU" role="rwd14">
       <property role="2$rrk2" value="2" />
       <node concept="1irPie" id="71RA3dHz6N3" role="1irR9h">
@@ -142,6 +152,11 @@
     <property role="TrG5h" value="Strategy" />
     <property role="34LRSv" value="Strategy" />
     <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1TJgyi" id="7TjUbLQa$TT" role="1TKVEl">
+      <property role="IQ2nx" value="9102875167979884153" />
+      <property role="TrG5h" value="undeveloped" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1irR5M" id="71RA3dHz7bl" role="rwd14">
       <property role="2$rrk2" value="5" />
       <node concept="1irPie" id="71RA3dHz7bu" role="1irR9h">

@@ -58,9 +58,13 @@
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
-      <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
+      <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI">
+        <property id="9102875167979884153" name="undeveloped" index="8uqr5" />
+      </concept>
       <concept id="4266958635905406579" name="com.mbeddr.formal.safety.gsn.structure.Context" flags="ng" index="2vmxSQ" />
-      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC">
+        <property id="9102875167979884151" name="undeveloped" index="8uqrb" />
+      </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
@@ -76,7 +80,7 @@
     </language>
   </registry>
   <node concept="2vn7XN" id="3GRi4m$r5TO">
-    <property role="TrG5h" value="simple_pattern" />
+    <property role="TrG5h" value="_010_simple_pattern_baselang" />
     <node concept="2vn7WC" id="3GRi4m$r9r_" role="2vn1q5">
       <property role="TrG5h" value="G1" />
       <node concept="19SGf9" id="3GRi4m$r9rA" role="2vnaTY">
@@ -504,6 +508,49 @@
     <node concept="3VeUTF" id="2ccN23oeoRG" role="2vhqc$">
       <ref role="3VeSjP" node="3GRi4m$u6uD" resolve="G2.2" />
       <ref role="3VeSjQ" node="3GRi4m$u6Dz" resolve="S2" />
+    </node>
+  </node>
+  <node concept="2vn7XN" id="7TjUbLQa$K1">
+    <property role="TrG5h" value="_020_undeveloped" />
+    <node concept="2vn7WC" id="7TjUbLQaQR2" role="2vn1q5">
+      <property role="TrG5h" value="G1" />
+      <property role="8uqrb" value="true" />
+      <node concept="19SGf9" id="7TjUbLQbsZZ" role="2vnaTY">
+        <node concept="19SUe$" id="7TjUbLQbt00" role="19SJt6">
+          <property role="19SUeA" value="Example of undeveloped goal." />
+        </node>
+      </node>
+    </node>
+    <node concept="37mRI7" id="7TjUbLQaQR9" role="lGtFl">
+      <node concept="37mRIm" id="7TjUbLQaQRa" role="37mRID">
+        <property role="37mO49" value="9102875167979957698" />
+        <node concept="gqqVs" id="7TjUbLQaQR8" role="37mO4d">
+          <property role="gqqTZ" value="56.0" />
+          <property role="gqqTW" value="26.0" />
+          <property role="gqqTX" value="212.0" />
+          <property role="gqqTy" value="67.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7TjUbLQaQZA" role="37mRID">
+        <property role="37mO49" value="9102875167979958238" />
+        <node concept="gqqVs" id="7TjUbLQaQZ_" role="37mO4d">
+          <property role="gqqTZ" value="181.0" />
+          <property role="gqqTW" value="141.0" />
+          <property role="gqqTX" value="250.0" />
+          <property role="gqqTy" value="101.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmxQI" id="7TjUbLQaQZu" role="2vn1q5">
+      <property role="8uqr5" value="true" />
+      <property role="TrG5h" value="S1" />
+      <node concept="19SGf9" id="7TjUbLQbt0f" role="2vnaTY">
+        <node concept="19SUe$" id="7TjUbLQbt0n" role="19SJt6">
+          <property role="19SUeA" value="Example of undeveloped &#10;strategy. " />
+        </node>
+      </node>
     </node>
   </node>
 </model>
