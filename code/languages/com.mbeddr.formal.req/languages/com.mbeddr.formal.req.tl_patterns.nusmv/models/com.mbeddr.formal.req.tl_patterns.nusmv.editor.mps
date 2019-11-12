@@ -93,7 +93,7 @@
       <node concept="3EZMnI" id="6hWVnwA8mNI" role="3EZMnx">
         <node concept="VPM3Z" id="6hWVnwA8mNK" role="3F10Kt" />
         <node concept="3F0ifn" id="6hWVnwA8mNT" role="3EZMnx">
-          <property role="3F0ifm" value="in scope:" />
+          <property role="3F0ifm" value="in scope" />
         </node>
         <node concept="1iCGBv" id="6hWVnwA8mNZ" role="3EZMnx">
           <ref role="1NtTu8" to="uu78:6hWVnwA8mNz" resolve="module" />

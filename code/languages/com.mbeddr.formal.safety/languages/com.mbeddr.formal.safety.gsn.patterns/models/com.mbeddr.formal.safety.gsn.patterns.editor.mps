@@ -88,11 +88,13 @@
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
       <concept id="7464726264117677937" name="de.itemis.mps.editor.diagram.structure.ShapeReference" flags="ng" index="2xQOud">
         <reference id="7464726264117677938" name="shape" index="2xQOue" />
+        <child id="3454709602159778495" name="parameterValues" index="1xbcaF" />
       </concept>
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
       </concept>
+      <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -170,8 +172,9 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="2xQOud" id="2ccN23oa2Lr" role="2xQQDV">
-        <ref role="2xQOue" to="g35p:3GRi4m$rF1V" resolve="StrategyPolygon" />
+      <node concept="2xQOud" id="6wqyW4uJqun" role="2xQQDV">
+        <ref role="2xQOue" to="g35p:7TjUbLQ9xzM" resolve="StrategyPolygon" />
+        <node concept="1Pxb5l" id="6wqyW4uJqvk" role="1xbcaF" />
       </node>
     </node>
     <node concept="3EZMnI" id="7TjUbLQ5hVL" role="6VMZX">
