@@ -570,17 +570,6 @@
         </node>
         <node concept="2iRfu4" id="71RA3dHzWmI" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="71RA3dHzWm5" role="3EZMnx" />
-      <node concept="3EZMnI" id="62$$j6uRHjH" role="3EZMnx">
-        <node concept="VPM3Z" id="62$$j6uRHjJ" role="3F10Kt" />
-        <node concept="3F0ifn" id="62$$j6uRHjL" role="3EZMnx">
-          <property role="3F0ifm" value="SMV module hashcode:" />
-        </node>
-        <node concept="3F0A7n" id="62$$j6uRHkl" role="3EZMnx">
-          <ref role="1NtTu8" to="bsp8:62$$j6uRHj9" resolve="hashCode" />
-        </node>
-        <node concept="l2Vlx" id="62$$j6uRHjM" role="2iSdaV" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4qaoH_DQpo">
