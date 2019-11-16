@@ -16,6 +16,7 @@
     <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
     <import index="eats" ref="r:3654a487-2c9f-407a-a51c-9aa5b4da2208(com.mbeddr.formal.spin.plugin)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="oqu9" ref="r:55c09d3a-85de-4c18-ab69-cda997480b6a(com.mbeddr.formal.spin.behavior)" implicit="true" />
     <import index="9yqz" ref="r:d1eb74f9-9d34-407a-a9ad-563871bceb90(com.mbeddr.formal.spin.analyses.structure)" implicit="true" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
   </imports>
@@ -219,19 +220,20 @@
               <node concept="3clFbF" id="1wu5Hv6hIV8" role="3cqZAp">
                 <node concept="37vLTI" id="1wu5Hv6hIVa" role="3clFbG">
                   <node concept="3cpWs3" id="4kcU3YrkvV2" role="37vLTx">
-                    <node concept="2YIFZM" id="3tIDuP5tqLS" role="3uHU7w">
-                      <ref role="37wK5l" to="pr99:3tIDuP5tlTl" resolve="panExecutableName" />
-                      <ref role="1Pybhc" to="pr99:3tIDuP5tlRy" resolve="SpinNamingUtils" />
-                      <node concept="37vLTw" id="3tIDuP5tqYD" role="37wK5m">
-                        <ref role="3cqZAo" node="4kcU3Yrkd$2" resolve="pm" />
-                      </node>
-                    </node>
                     <node concept="3cpWs3" id="4kcU3YrkvcY" role="3uHU7B">
                       <node concept="37vLTw" id="4kcU3Yrkv6X" role="3uHU7B">
                         <ref role="3cqZAo" node="4XbM$YH6pfB" resolve="verificationDirectory" />
                       </node>
                       <node concept="Xl_RD" id="2jb6dmWZbIN" role="3uHU7w">
                         <property role="Xl_RC" value="/" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6HIPWY0dwkz" role="3uHU7w">
+                      <node concept="37vLTw" id="3tIDuP5tqYD" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4kcU3Yrkd$2" resolve="pm" />
+                      </node>
+                      <node concept="2qgKlT" id="6HIPWY0dwDx" role="2OqNvi">
+                        <ref role="37wK5l" to="oqu9:6HIPWY0dvz1" resolve="getPanExecutableName" />
                       </node>
                     </node>
                   </node>
@@ -564,19 +566,20 @@
               <node concept="3clFbF" id="HmUOIG_5af" role="3cqZAp">
                 <node concept="37vLTI" id="HmUOIG_5ag" role="3clFbG">
                   <node concept="3cpWs3" id="HmUOIG_5ah" role="37vLTx">
-                    <node concept="2YIFZM" id="71901EGEdWv" role="3uHU7w">
-                      <ref role="37wK5l" to="pr99:3tIDuP5tlTl" resolve="panExecutableName" />
-                      <ref role="1Pybhc" to="pr99:3tIDuP5tlRy" resolve="SpinNamingUtils" />
-                      <node concept="37vLTw" id="71901EGEdWw" role="37wK5m">
-                        <ref role="3cqZAo" node="HmUOIG_5bB" resolve="pm" />
-                      </node>
-                    </node>
                     <node concept="3cpWs3" id="HmUOIG_5ai" role="3uHU7B">
                       <node concept="37vLTw" id="HmUOIG_5aj" role="3uHU7B">
                         <ref role="3cqZAo" node="HmUOIG_5a4" resolve="verificationDirectory" />
                       </node>
                       <node concept="Xl_RD" id="HmUOIG_5ak" role="3uHU7w">
                         <property role="Xl_RC" value="/" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6HIPWY0dwXb" role="3uHU7w">
+                      <node concept="37vLTw" id="6HIPWY0dwXc" role="2Oq$k0">
+                        <ref role="3cqZAo" node="HmUOIG_5bB" resolve="pm" />
+                      </node>
+                      <node concept="2qgKlT" id="6HIPWY0dwXd" role="2OqNvi">
+                        <ref role="37wK5l" to="oqu9:6HIPWY0dvz1" resolve="getPanExecutableName" />
                       </node>
                     </node>
                   </node>

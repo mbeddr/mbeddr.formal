@@ -619,5 +619,32 @@
       <node concept="17QB3L" id="1vcsY82q4W_" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="6HIPWY0dvyQ">
+    <ref role="13h7C2" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
+    <node concept="13i0hz" id="6HIPWY0dvz1" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getPanExecutableName" />
+      <node concept="3Tm1VV" id="6HIPWY0dvz2" role="1B3o_S" />
+      <node concept="17QB3L" id="6HIPWY0dvzh" role="3clF45" />
+      <node concept="3clFbS" id="6HIPWY0dvz4" role="3clF47">
+        <node concept="3clFbF" id="3tIDuP5tlUD" role="3cqZAp">
+          <node concept="3cpWs3" id="3tIDuP5tm46" role="3clFbG">
+            <node concept="2OqwBi" id="3tIDuP5tmjI" role="3uHU7w">
+              <node concept="13iPFW" id="6HIPWY0dvOx" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4_pH3zvo_as" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="3tIDuP5tlUC" role="3uHU7B">
+              <property role="Xl_RC" value="pan_" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="6HIPWY0dvyR" role="13h7CW">
+      <node concept="3clFbS" id="6HIPWY0dvyS" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
