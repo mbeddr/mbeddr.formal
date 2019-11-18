@@ -161,7 +161,7 @@ def defaultScriptArgs = [
 ]
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value" }
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
 
 task resolveLanguageLibs(type: Copy) {
