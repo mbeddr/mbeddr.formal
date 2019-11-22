@@ -1371,6 +1371,44 @@
         </node>
       </node>
     </node>
+    <node concept="1E0nOG" id="6knLqZ8Kr2v" role="1E0n_e">
+      <ref role="1E0nOH" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
+      <node concept="1E0nOJ" id="6knLqZ8Kr2K" role="1E0nOC">
+        <ref role="1E0n_N" node="3Cm$$O2vpuv" resolve="Training" />
+        <node concept="1E0COo" id="6knLqZ8Kr2M" role="1E0ucd">
+          <node concept="1E0COg" id="6knLqZ8Kr2S" role="1E0COp">
+            <node concept="19SGf9" id="6knLqZ8Kr2U" role="1E0COh">
+              <node concept="19SUe$" id="6knLqZ8Kr2V" role="19SJt6">
+                <property role="19SUeA" value="when attack happens" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="6knLqZ8Kr30" role="1E0COk">
+            <node concept="19SGf9" id="6knLqZ8Kr32" role="1E0CO$">
+              <node concept="19SUe$" id="6knLqZ8Kr33" role="19SJt6">
+                <property role="19SUeA" value="missed defence" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1E0COo" id="CmOUmc2ZzQ" role="1E0tXe">
+          <node concept="1E0COg" id="CmOUmc2ZzW" role="1E0COp">
+            <node concept="19SGf9" id="CmOUmc2ZzY" role="1E0COh">
+              <node concept="19SUe$" id="CmOUmc2ZzZ" role="19SJt6">
+                <property role="19SUeA" value="too late training" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="CmOUmc2Z$4" role="1E0COk">
+            <node concept="19SGf9" id="CmOUmc2Z$6" role="1E0CO$">
+              <node concept="19SUe$" id="CmOUmc2Z$7" role="19SJt6">
+                <property role="19SUeA" value="innefficient defence" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1X_0jQ" id="1JhvKLLP$9l">
     <property role="TrG5h" value="_020_atc" />
