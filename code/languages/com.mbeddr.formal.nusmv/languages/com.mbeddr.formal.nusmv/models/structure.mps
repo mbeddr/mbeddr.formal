@@ -204,6 +204,9 @@
     <node concept="PrWs8" id="7Z6$Wo5TZNy" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
+    <node concept="PrWs8" id="4b60pu4xEt$" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:4b60pu4xEcw" resolve="ITypedEntity" />
+    </node>
     <node concept="1irR5M" id="6s7FQCLJnrF" role="rwd14">
       <property role="2$rrk2" value="4" />
       <node concept="1irPie" id="6s7FQCLJnrM" role="1irR9h">

@@ -330,6 +330,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="4b60pu4xGBp" role="PzmwI">
+      <ref role="PrY4T" to="ehqg:4b60pu4xEcw" resolve="ITypedEntity" />
+    </node>
   </node>
   <node concept="1TIwiD" id="25Ap4XXjSpU">
     <property role="EcuMT" value="2406721343443666554" />

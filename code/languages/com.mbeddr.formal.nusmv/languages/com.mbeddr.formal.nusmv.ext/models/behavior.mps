@@ -390,5 +390,30 @@
       <node concept="3clFbS" id="25Ap4XXjSr3" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="4b60pu4xHik">
+    <property role="3GE5qa" value="typed_parameter" />
+    <ref role="13h7C2" to="6z8w:4Jpgh6IGrD8" resolve="TypedParameterDeclaration" />
+    <node concept="13hLZK" id="4b60pu4xHil" role="13h7CW">
+      <node concept="3clFbS" id="4b60pu4xHim" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4b60pu4xHiv" role="13h7CS">
+      <property role="TrG5h" value="getType" />
+      <ref role="13i0hy" to="ox2v:4b60pu4xEd7" resolve="getType" />
+      <node concept="3Tm1VV" id="4b60pu4xHiw" role="1B3o_S" />
+      <node concept="3clFbS" id="4b60pu4xHiz" role="3clF47">
+        <node concept="3clFbF" id="4b60pu4xHiM" role="3cqZAp">
+          <node concept="2OqwBi" id="4b60pu4xHB4" role="3clFbG">
+            <node concept="13iPFW" id="4b60pu4xHiL" role="2Oq$k0" />
+            <node concept="3TrEf2" id="4b60pu4xIrS" role="2OqNvi">
+              <ref role="3Tt5mk" to="6z8w:6NmtaR1SVeb" resolve="type" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4b60pu4xHi$" role="3clF45">
+        <ref role="ehGHo" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+      </node>
+    </node>
+  </node>
 </model>
 
