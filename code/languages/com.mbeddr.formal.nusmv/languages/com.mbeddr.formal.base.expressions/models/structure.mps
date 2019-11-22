@@ -446,5 +446,9 @@
     <property role="EcuMT" value="3226630706270523179" />
     <property role="TrG5h" value="IUserDefinedTypeDeclaration" />
   </node>
+  <node concept="PlHQZ" id="4b60pu4xEcw">
+    <property role="EcuMT" value="4811535002167059232" />
+    <property role="TrG5h" value="ITypedEntity" />
+  </node>
 </model>
 

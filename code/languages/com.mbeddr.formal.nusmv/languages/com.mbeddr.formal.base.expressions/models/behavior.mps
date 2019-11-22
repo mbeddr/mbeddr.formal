@@ -164,7 +164,9 @@
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -2084,6 +2086,22 @@
         </node>
       </node>
       <node concept="10P_77" id="7omKp2QTCgj" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4b60pu4xEcW">
+    <ref role="13h7C2" to="ehqg:4b60pu4xEcw" resolve="ITypedEntity" />
+    <node concept="13i0hz" id="4b60pu4xEd7" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getType" />
+      <node concept="3Tm1VV" id="4b60pu4xEd8" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4b60pu4xEt1" role="3clF45">
+        <ref role="ehGHo" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+      </node>
+      <node concept="3clFbS" id="4b60pu4xEda" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="4b60pu4xEcX" role="13h7CW">
+      <node concept="3clFbS" id="4b60pu4xEcY" role="2VODD2" />
     </node>
   </node>
 </model>
