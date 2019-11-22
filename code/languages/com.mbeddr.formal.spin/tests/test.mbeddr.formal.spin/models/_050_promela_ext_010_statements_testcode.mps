@@ -11,15 +11,16 @@
         <property id="5285453794053229582" name="value" index="2m4jwQ" />
       </concept>
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
-      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv">
-        <child id="5285453794052877246" name="init" index="2m6DY6" />
-      </concept>
+      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv" />
       <concept id="5285453794052877259" name="com.mbeddr.formal.spin.structure.AssignmentStatement" flags="ng" index="2m6DZN">
         <child id="5285453794052877280" name="lhs" index="2m6DZo" />
         <child id="5285453794052877282" name="rhs" index="2m6DZq" />
       </concept>
       <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
+      </concept>
+      <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ng" index="2m6DZR">
+        <child id="7611646782271350980" name="init" index="3WDmyJ" />
       </concept>
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
         <child id="5285453794052597019" name="statements" index="2mpP4z" />
@@ -85,10 +86,10 @@
       <node concept="2mpP4x" id="1ZejHLlNaPr" role="2mpP4J">
         <node concept="2m6DXv" id="1ZejHLlNaPs" role="2mpP4z">
           <property role="TrG5h" value="aa" />
-          <node concept="2IPVmt" id="1ZejHLlNaPw" role="2m6DY6">
+          <node concept="X9sYF" id="6fYDdj_dhmw" role="1a0DGc" />
+          <node concept="2IPVmt" id="CmOUmc8ejw" role="3WDmyJ">
             <property role="2IPVms" value="2" />
           </node>
-          <node concept="X9sYF" id="6fYDdj_dhmw" role="1a0DGc" />
         </node>
         <node concept="Sp30q" id="1ZejHLlNaPt" role="2mpP4z">
           <node concept="2m6Dwh" id="1ZejHLlNaPx" role="Sp3na">
@@ -116,10 +117,10 @@
       <node concept="2mpP4x" id="1ZejHLlNaPB" role="2mpP4J">
         <node concept="2m6DXv" id="1ZejHLlNaPC" role="2mpP4z">
           <property role="TrG5h" value="aa" />
-          <node concept="2IPVmt" id="1ZejHLlNaPH" role="2m6DY6">
+          <node concept="X9sYF" id="6fYDdj_dhmW" role="1a0DGc" />
+          <node concept="2IPVmt" id="CmOUmc8ek4" role="3WDmyJ">
             <property role="2IPVms" value="0" />
           </node>
-          <node concept="X9sYF" id="6fYDdj_dhmW" role="1a0DGc" />
         </node>
         <node concept="2xZCSx" id="1ZejHLlNaPD" role="2mpP4z">
           <node concept="2xXWtg" id="1ZejHLlNaPI" role="2xZCTC">
@@ -184,10 +185,10 @@
       <node concept="2mpP4x" id="2kmJJKRTprg" role="2mpP4J">
         <node concept="2m6DXv" id="2kmJJKRTprh" role="2mpP4z">
           <property role="TrG5h" value="aa" />
-          <node concept="2IPVmt" id="2kmJJKRTpri" role="2m6DY6">
+          <node concept="X9sYF" id="2kmJJKRTprj" role="1a0DGc" />
+          <node concept="2IPVmt" id="CmOUmc8ejT" role="3WDmyJ">
             <property role="2IPVms" value="2" />
           </node>
-          <node concept="X9sYF" id="2kmJJKRTprj" role="1a0DGc" />
         </node>
         <node concept="Sp30q" id="2kmJJKRTprk" role="2mpP4z">
           <node concept="2m4jwP" id="2kmJJKRTprA" role="Sp3na">

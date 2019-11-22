@@ -206,9 +206,7 @@
       </concept>
       <concept id="5285453794053223381" name="com.mbeddr.formal.spin.structure.ModuloExpression" flags="ng" index="2m4svH" />
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
-      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv">
-        <child id="5285453794052877246" name="init" index="2m6DY6" />
-      </concept>
+      <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv" />
       <concept id="5285453794052877259" name="com.mbeddr.formal.spin.structure.AssignmentStatement" flags="ng" index="2m6DZN">
         <child id="5285453794052877280" name="lhs" index="2m6DZo" />
         <child id="5285453794052877282" name="rhs" index="2m6DZq" />
@@ -218,6 +216,7 @@
       </concept>
       <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ng" index="2m6DZR">
         <child id="2417655713193036543" name="postfixTypeQualifier" index="3RBrvK" />
+        <child id="7611646782271350980" name="init" index="3WDmyJ" />
       </concept>
       <concept id="5285453794052993580" name="com.mbeddr.formal.spin.structure.IntType" flags="ng" index="2m7kok" />
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
@@ -2694,9 +2693,6 @@
               <node concept="2m6DXv" id="5SGsxw7BAIN" role="2mpP4z">
                 <property role="TrG5h" value="cnt" />
                 <node concept="2m7kok" id="5SGsxw7BK05" role="1a0DGc" />
-                <node concept="2IPVmt" id="5SGsxw7BOdx" role="2m6DY6">
-                  <property role="2IPVms" value="0" />
-                </node>
                 <node concept="raruj" id="5SGsxw7BP79" role="lGtFl">
                   <ref role="2sdACS" node="5SGsxw7C4vI" resolve="RandomAssignment2LoopVar" />
                 </node>
@@ -2749,6 +2745,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="2IPVmt" id="CmOUmc8duQ" role="3WDmyJ">
+                  <property role="2IPVms" value="0" />
                 </node>
               </node>
               <node concept="2xXWt4" id="5SGsxw7BNuZ" role="2mpP4z">

@@ -15,6 +15,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -424,7 +425,7 @@
             <property role="3F0ifm" value="=" />
           </node>
           <node concept="3F1sOY" id="4_pH3zvgMJ5" role="3EZMnx">
-            <ref role="1NtTu8" to="o3hv:4_pH3zvgMIY" resolve="init" />
+            <ref role="1NtTu8" to="o3hv:6Ay06Il1Qz4" resolve="init" />
           </node>
           <node concept="l2Vlx" id="4_pH3zvgMIM" role="2iSdaV" />
           <node concept="VPM3Z" id="4_pH3zvgMIN" role="3F10Kt">
@@ -666,7 +667,7 @@
             <property role="3F0ifm" value="=" />
           </node>
           <node concept="3F1sOY" id="2DjQaubB4La" role="3EZMnx">
-            <ref role="1NtTu8" to="o3hv:2DjQaubB4Ky" resolve="init" />
+            <ref role="1NtTu8" to="o3hv:6Ay06Il1Qz4" resolve="init" />
           </node>
           <node concept="l2Vlx" id="2DjQaubB4Lb" role="2iSdaV" />
           <node concept="VPM3Z" id="2DjQaubB4Lc" role="3F10Kt">
@@ -1422,24 +1423,16 @@
     <node concept="3EZMnI" id="1vcsY83d_wK" role="2wV5jI">
       <node concept="3F0ifn" id="1vcsY83d_wR" role="3EZMnx">
         <property role="3F0ifm" value="c_expr" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="1vcsY83d_wX" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11LMrY" id="1vcsY83d_xn" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11L4FC" id="1vcsY83d_xs" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <property role="3F0ifm" value="{" />
       </node>
       <node concept="3F1sOY" id="1vcsY83d_x5" role="3EZMnx">
         <ref role="1NtTu8" to="ehqg:1IrBcRpi7IO" resolve="exp" />
       </node>
       <node concept="3F0ifn" id="1vcsY83d_xf" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="1vcsY83d_xl" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <property role="3F0ifm" value="}" />
       </node>
       <node concept="l2Vlx" id="1vcsY83d_wN" role="2iSdaV" />
     </node>
@@ -1492,6 +1485,41 @@
         <ref role="1NtTu8" to="o3hv:5MWJzF9ulGr" resolve="matchingStrategy" />
       </node>
       <node concept="l2Vlx" id="1vcsY83oEkx" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="_aATtEctFL">
+    <property role="3GE5qa" value="spec" />
+    <ref role="1XX52x" to="o3hv:_aATtEctEX" resolve="SpecBase" />
+    <node concept="3EZMnI" id="_aATtEctFN" role="2wV5jI">
+      <node concept="PMmxH" id="_aATtEctFX" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="_aATtEctG5" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="_aATtEctGz" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F1sOY" id="_aATtEctGi" role="3EZMnx">
+        <ref role="1NtTu8" to="o3hv:_aATtEctFj" resolve="exp" />
+      </node>
+      <node concept="3F0ifn" id="_aATtEctGS" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="l2Vlx" id="_aATtEctFQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="_aATtEeK2L">
+    <property role="3GE5qa" value="spec.ltl" />
+    <ref role="1XX52x" to="o3hv:_aATtEeK2H" resolve="LTLUnaryExpression" />
+    <node concept="3EZMnI" id="_aATtEeK2N" role="2wV5jI">
+      <node concept="PMmxH" id="_aATtEeK2X" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F1sOY" id="_aATtEeK35" role="3EZMnx">
+        <ref role="1NtTu8" to="o3hv:_aATtEeK2I" resolve="exp" />
+      </node>
+      <node concept="l2Vlx" id="_aATtEeK2Q" role="2iSdaV" />
     </node>
   </node>
 </model>
