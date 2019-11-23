@@ -8,6 +8,7 @@
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -21,6 +22,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -49,6 +51,22 @@
     </node>
     <node concept="PrWs8" id="2LDKh2uEyZr" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$M4_qbIbBZ">
+    <property role="EcuMT" value="1815533762704357887" />
+    <property role="TrG5h" value="ReqModuleRef" />
+    <property role="34LRSv" value="@req-module" />
+    <property role="R4oN_" value="reference to a requirement module" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1$M4_qbIbC0" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="1$M4_qbIbC4" role="1TKVEi">
+      <property role="IQ2ns" value="1815533762704357892" />
+      <property role="20kJfa" value="reqModule" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
     </node>
   </node>
 </model>
