@@ -80,7 +80,7 @@
     <node concept="1TJgyj" id="71RA3dH$OQm" role="1TKVEi">
       <property role="IQ2ns" value="8104113401125621142" />
       <property role="20kJfa" value="spec" />
-      <ref role="20lvS9" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
+      <ref role="20lvS9" to="gioj:7V1Bqz6UhgE" resolve="LTLSpecSection" />
     </node>
     <node concept="1irR5M" id="71RA3dHz7LF" role="rwd14">
       <property role="2$rrk2" value="1" />
