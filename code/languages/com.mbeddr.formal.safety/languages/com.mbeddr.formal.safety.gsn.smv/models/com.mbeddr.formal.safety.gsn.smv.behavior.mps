@@ -144,7 +144,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4qaoH_Ei_S">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv" />
     <ref role="13h7C2" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
     <node concept="13i0hz" id="62$$j6uT0Us" role="13h7CS">
       <property role="TrG5h" value="computeHashCode" />
@@ -389,7 +389,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7TjUbLQ8ejF">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <ref role="13h7C2" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
     <node concept="13hLZK" id="7TjUbLQ8ejG" role="13h7CW">
       <node concept="3clFbS" id="7TjUbLQ8ejH" role="2VODD2" />

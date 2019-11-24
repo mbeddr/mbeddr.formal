@@ -98,7 +98,7 @@
     <property role="TrG5h" value="SmvSpecGoal" />
     <property role="34LRSv" value="SMV Spec Goal" />
     <property role="R4oN_" value="formal spec in SMV" />
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <ref role="1TJDcQ" node="4qaoH_Q49c" resolve="SmvGoalBase" />
     <node concept="1TJgyj" id="71RA3dH$OQm" role="1TKVEi">
       <property role="IQ2ns" value="8104113401125621142" />
@@ -117,7 +117,7 @@
   </node>
   <node concept="1TIwiD" id="4qaoH_DQhh">
     <property role="EcuMT" value="79421622115066961" />
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <property role="TrG5h" value="SmvSpecContext" />
     <property role="34LRSv" value="SMV Spec Context" />
     <property role="R4oN_" value="formal context spec in SMV" />
@@ -142,7 +142,7 @@
   </node>
   <node concept="1TIwiD" id="4qaoH_E0cQ">
     <property role="EcuMT" value="79421622115107638" />
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv" />
     <property role="TrG5h" value="SmvSpecSolution" />
     <property role="34LRSv" value="SMV Spec Solution" />
     <property role="R4oN_" value="solution based on a nusmv verification" />

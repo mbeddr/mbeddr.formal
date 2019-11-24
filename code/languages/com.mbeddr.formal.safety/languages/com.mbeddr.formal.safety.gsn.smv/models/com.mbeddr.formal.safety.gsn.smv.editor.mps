@@ -446,7 +446,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2_iMKAX4lXX">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <ref role="1XX52x" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
     <node concept="2ZK4vF" id="71RA3dHzLhl" role="2wV5jI">
       <node concept="3EZMnI" id="2ccN23o9tph" role="1ytjkN">
@@ -573,7 +573,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4qaoH_DQpo">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <ref role="1XX52x" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
     <node concept="2ZK4vF" id="4qaoH_DQpp" role="2wV5jI">
       <node concept="3EZMnI" id="4qaoH_DQpq" role="1ytjkN">
@@ -672,7 +672,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2ccN23oa2gD">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv" />
     <ref role="1XX52x" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
     <node concept="2ZK4vF" id="2ccN23oa2h6" role="2wV5jI">
       <node concept="3EZMnI" id="2ccN23oa2i$" role="1ytjkN">
