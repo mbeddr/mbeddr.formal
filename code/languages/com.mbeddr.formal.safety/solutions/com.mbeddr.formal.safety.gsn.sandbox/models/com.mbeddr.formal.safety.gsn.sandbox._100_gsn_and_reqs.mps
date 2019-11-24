@@ -12,9 +12,7 @@
     <use id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
-  <imports>
-    <import index="5sik" ref="f:diff_old#r:447a941a-2ec9-4b75-8db1-316b8cb606d6(com.mbeddr.formal.safety.gsn.sandbox._100_gsn_and_reqs@old)" implicit="true" />
-  </imports>
+  <imports />
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -199,7 +197,6 @@
     <language id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv">
       <concept id="2977665546332495685" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvSpecGoal" flags="ng" index="2kgThc">
         <reference id="8104113401125621142" name="spec" index="tTdm_" />
-        <reference id="8104113401125621126" name="module" index="tTdmP" />
       </concept>
       <concept id="79421622115301715" name="com.mbeddr.formal.safety.gsn.smv.structure.SupportedBySmvVerificationResults" flags="ng" index="1$Gd3o" />
       <concept id="79421622115301714" name="com.mbeddr.formal.safety.gsn.smv.structure.InContextOfSmvModule" flags="ng" index="1$Gd3p" />
@@ -213,9 +210,11 @@
         <reference id="79421622115066962" name="module" index="1$JkRp" />
       </concept>
       <concept id="79421622118485668" name="com.mbeddr.formal.safety.gsn.smv.structure.SupportedBySmvTestingResults" flags="ng" index="1$KqsJ" />
+      <concept id="79421622118269516" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvGoalBase" flags="ng" index="1$KAJ7">
+        <reference id="79421622118208484" name="module" index="1$NnDJ" />
+      </concept>
       <concept id="79421622118208483" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvTestsGoal" flags="ng" index="1$NnDC">
         <reference id="79421622118208485" name="tests" index="1$NnDI" />
-        <reference id="79421622118208484" name="module" index="1$NnDJ" />
       </concept>
     </language>
     <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
@@ -224,6 +223,7 @@
         <child id="4678075609353207046" name="inputs" index="1J0m7X" />
       </concept>
       <concept id="4678075609353201529" name="com.mbeddr.formal.nusmv.tests.structure.TestCase" flags="ng" index="1J0nI2">
+        <property id="5430620409974473382" name="checkWithBMC" index="PRFbr" />
         <reference id="4678075609353201753" name="module" index="1J0niy" />
         <child id="4678075609353207060" name="steps" index="1J0m7J" />
       </concept>
@@ -293,10 +293,10 @@
       <node concept="37mRIm" id="2LDKh2uEqRX" role="37mRID">
         <property role="37mO49" value="3200301287349005801" />
         <node concept="gqqVs" id="2LDKh2uEqRV" role="37mO4d">
-          <property role="gqqTZ" value="150.0" />
-          <property role="gqqTW" value="19.0" />
-          <property role="gqqTX" value="258.0" />
-          <property role="gqqTy" value="108.0" />
+          <property role="gqqTZ" value="176.0" />
+          <property role="gqqTW" value="21.0" />
+          <property role="gqqTX" value="199.0" />
+          <property role="gqqTy" value="100.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -497,10 +497,10 @@
       <node concept="37mRIm" id="71RA3dH$Xq$" role="37mRID">
         <property role="37mO49" value="8104113401125656114" />
         <node concept="gqqVs" id="71RA3dH$Xqz" role="37mO4d">
-          <property role="gqqTZ" value="123.0" />
-          <property role="gqqTW" value="346.0" />
-          <property role="gqqTX" value="324.0" />
-          <property role="gqqTy" value="174.0" />
+          <property role="gqqTZ" value="139.5" />
+          <property role="gqqTW" value="370.0" />
+          <property role="gqqTX" value="293.0" />
+          <property role="gqqTy" value="165.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -705,10 +705,10 @@
       <node concept="37mRIm" id="4qaoH_DYS9" role="37mRID">
         <property role="37mO49" value="79421622115102184" />
         <node concept="gqqVs" id="4qaoH_DYS8" role="37mO4d">
-          <property role="gqqTZ" value="576.0" />
-          <property role="gqqTW" value="355.0" />
-          <property role="gqqTX" value="276.0" />
-          <property role="gqqTy" value="138.0" />
+          <property role="gqqTZ" value="563.0" />
+          <property role="gqqTW" value="383.5" />
+          <property role="gqqTX" value="248.0" />
+          <property role="gqqTy" value="131.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -733,10 +733,10 @@
       <node concept="37mRIm" id="4qaoH_EjbE" role="37mRID">
         <property role="37mO49" value="79421622115185355" />
         <node concept="gqqVs" id="4qaoH_EjbD" role="37mO4d">
-          <property role="gqqTZ" value="60.0" />
-          <property role="gqqTW" value="593.0" />
-          <property role="gqqTX" value="452.0" />
-          <property role="gqqTy" value="174.0" />
+          <property role="gqqTZ" value="115.5" />
+          <property role="gqqTW" value="607.0" />
+          <property role="gqqTX" value="341.0" />
+          <property role="gqqTy" value="149.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -879,8 +879,8 @@
     </node>
     <node concept="2kgThc" id="71RA3dH$XoM" role="2vn1q5">
       <property role="TrG5h" value="G.11" />
-      <ref role="tTdmP" node="3R2p3fiGCz2" resolve="traffic_lights_controller" />
       <ref role="tTdm_" node="3R2p3fiGCA1" resolve="avoid_accident" />
+      <ref role="1$NnDJ" node="3R2p3fiGCz2" resolve="traffic_lights_controller" />
       <node concept="19SGf9" id="71RA3dH$XoN" role="2vnaTY">
         <node concept="19SUe$" id="71RA3dH$XoO" role="19SJt6">
           <property role="19SUeA" value="Controller logic is formally modelled &#10;and the requirement formally specified.&#10;" />
@@ -1972,8 +1972,8 @@
         <node concept="gqqVs" id="4qaoH_QMkN" role="37mO4d">
           <property role="gqqTZ" value="145.0" />
           <property role="gqqTW" value="598.0" />
-          <property role="gqqTX" value="362.0" />
-          <property role="gqqTy" value="138.0" />
+          <property role="gqqTX" value="321.0" />
+          <property role="gqqTy" value="165.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -2124,8 +2124,8 @@
         <node concept="gqqVs" id="4qaoH_RBPV" role="37mO4d">
           <property role="gqqTZ" value="156.0" />
           <property role="gqqTW" value="387.0" />
-          <property role="gqqTX" value="340.0" />
-          <property role="gqqTy" value="156.0" />
+          <property role="gqqTX" value="293.0" />
+          <property role="gqqTy" value="148.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -2268,8 +2268,8 @@
     </node>
     <node concept="1$NnDC" id="4qaoH_RBPf" role="2vn1q5">
       <property role="TrG5h" value="G.02" />
-      <ref role="1$NnDJ" node="3R2p3fiGCz2" resolve="traffic_lights_controller" />
       <ref role="1$NnDI" node="4qaoH_QMvN" resolve="_010_TLC_tests" />
+      <ref role="1$NnDJ" node="3R2p3fiGCz2" resolve="traffic_lights_controller" />
       <node concept="19SGf9" id="4qaoH_RBPg" role="2vnaTY">
         <node concept="19SUe$" id="4qaoH_RBPh" role="19SJt6">
           <property role="19SUeA" value="The basic working scenarios is covered &#10;by a suite of tests." />
@@ -2290,6 +2290,7 @@
     <property role="3GE5qa" value="_030_tests" />
     <node concept="1J0nI2" id="4qaoH_QMvP" role="1J0nHx">
       <property role="TrG5h" value="_010_test1" />
+      <property role="PRFbr" value="true" />
       <ref role="1J0niy" node="3R2p3fiGCz2" resolve="traffic_lights_controller" />
       <node concept="1J0m7Y" id="4qaoH_QMvQ" role="1J0m7J">
         <node concept="1yCjRe" id="4qaoH_QMLE" role="1J0m7X" />
@@ -2302,8 +2303,8 @@
       </node>
       <node concept="1J0m7Y" id="4qaoH_QMM0" role="1J0m7J">
         <node concept="1yCjT0" id="4qaoH_QMNX" role="1J0m7X" />
-        <node concept="2HeeqP" id="4qaoH_QMP6" role="1J0m7K">
-          <ref role="2HeeqO" to="5sik:3R2p3fiGCYk" resolve="Yellow" />
+        <node concept="2HeeqP" id="3$s2S5z7b2F" role="1J0m7K">
+          <ref role="2HeeqO" node="3R2p3fiGCYk" resolve="Yellow" />
         </node>
         <node concept="2HeeqP" id="4qaoH_QMM3" role="1J0m7K">
           <ref role="2HeeqO" node="3R2p3fiGCzd" resolve="DontWalk" />

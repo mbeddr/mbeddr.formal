@@ -92,8 +92,8 @@
                       <node concept="1xIGOp" id="71RA3dH_JiO" role="1xVPHs" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="71RA3dH_MfT" role="2OqNvi">
-                    <ref role="3Tt5mk" to="bsp8:71RA3dH$OQ6" resolve="module" />
+                  <node concept="3TrEf2" id="CmOUmcc8Ht" role="2OqNvi">
+                    <ref role="3Tt5mk" to="bsp8:4qaoH_PPf$" resolve="module" />
                   </node>
                 </node>
                 <node concept="2Rf3mk" id="71RA3dH_PCy" role="2OqNvi">

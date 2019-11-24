@@ -100,11 +100,6 @@
     <property role="R4oN_" value="formal spec in SMV" />
     <property role="3GE5qa" value="gsn.dsl.smv.formal" />
     <ref role="1TJDcQ" node="4qaoH_Q49c" resolve="SmvGoalBase" />
-    <node concept="1TJgyj" id="71RA3dH$OQ6" role="1TKVEi">
-      <property role="IQ2ns" value="8104113401125621126" />
-      <property role="20kJfa" value="module" />
-      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
-    </node>
     <node concept="1TJgyj" id="71RA3dH$OQm" role="1TKVEi">
       <property role="IQ2ns" value="8104113401125621142" />
       <property role="20kJfa" value="spec" />
@@ -204,11 +199,6 @@
     <property role="34LRSv" value="SMV Tests Goal" />
     <property role="R4oN_" value="tests collection on SMV model" />
     <ref role="1TJDcQ" node="4qaoH_Q49c" resolve="SmvGoalBase" />
-    <node concept="1TJgyj" id="4qaoH_PPf$" role="1TKVEi">
-      <property role="IQ2ns" value="79421622118208484" />
-      <property role="20kJfa" value="module" />
-      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
-    </node>
     <node concept="1TJgyj" id="4qaoH_PPf_" role="1TKVEi">
       <property role="IQ2ns" value="79421622118208485" />
       <property role="20kJfa" value="tests" />
@@ -230,6 +220,11 @@
     <property role="TrG5h" value="SmvGoalBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="1TJgyj" id="4qaoH_PPf$" role="1TKVEi">
+      <property role="IQ2ns" value="79421622118208484" />
+      <property role="20kJfa" value="module" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4qaoH_QSU$">
     <property role="EcuMT" value="79421622118485668" />

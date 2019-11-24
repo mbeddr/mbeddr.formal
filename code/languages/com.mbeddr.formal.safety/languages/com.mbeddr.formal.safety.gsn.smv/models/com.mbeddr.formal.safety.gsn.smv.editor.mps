@@ -483,7 +483,7 @@
             <property role="3F0ifm" value="module:" />
           </node>
           <node concept="1iCGBv" id="71RA3dH$ORb" role="3EZMnx">
-            <ref role="1NtTu8" to="bsp8:71RA3dH$OQ6" resolve="module" />
+            <ref role="1NtTu8" to="bsp8:4qaoH_PPf$" resolve="module" />
             <node concept="1sVBvm" id="71RA3dH$ORd" role="1sWHZn">
               <node concept="3F0A7n" id="71RA3dH$OR_" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -544,7 +544,7 @@
           <property role="3F0ifm" value="SMV Module:" />
         </node>
         <node concept="1iCGBv" id="71RA3dH$OSo" role="3EZMnx">
-          <ref role="1NtTu8" to="bsp8:71RA3dH$OQ6" resolve="module" />
+          <ref role="1NtTu8" to="bsp8:4qaoH_PPf$" resolve="module" />
           <node concept="1sVBvm" id="71RA3dH$OSq" role="1sWHZn">
             <node concept="3F0A7n" id="71RA3dH$OSM" role="2wV5jI">
               <property role="1Intyy" value="true" />
