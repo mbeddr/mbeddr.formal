@@ -707,6 +707,15 @@
             </node>
           </node>
         </node>
+        <node concept="2xQOud" id="6XKrTzkwvIZ" role="1PNbKK">
+          <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
+          <node concept="3b6qkQ" id="6XKrTzkwvJ0" role="1xbcaF">
+            <property role="$nhwW" value="0.5" />
+          </node>
+          <node concept="3clFbT" id="6XKrTzkwvJ1" role="1xbcaF">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
       </node>
       <node concept="KXoZh" id="2ccN23oaUMV" role="KYgL9">
         <node concept="3clFbS" id="2ccN23oaUMW" role="2VODD2">
