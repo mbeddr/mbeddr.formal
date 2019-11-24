@@ -3190,7 +3190,6 @@
                 <ref role="3uigEE" node="7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
               </node>
             </node>
-            <node concept="10Nm6u" id="6mm$FLZ2z66" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbJ" id="2xeYpNCcSpP" role="3cqZAp">
@@ -3779,7 +3778,7 @@
         </node>
         <node concept="3clFbF" id="2xeYpNCcGj3" role="3cqZAp">
           <node concept="1rXfSq" id="2xeYpNCcGj4" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...)" resolve="publish" />
+            <ref role="37wK5l" to="2ocj:6XKrTzktqLC" resolve="myPublish" />
             <node concept="37vLTw" id="1gJVC85LX51" role="37wK5m">
               <ref role="3cqZAo" node="1gJVC85LPAn" resolve="testResult" />
             </node>

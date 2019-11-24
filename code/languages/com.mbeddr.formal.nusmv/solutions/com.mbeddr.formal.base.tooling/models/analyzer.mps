@@ -541,6 +541,16 @@
       </node>
     </node>
     <node concept="2tJIrI" id="Lg9kEapHW8" role="jymVt" />
+    <node concept="312cEg" id="6XKrTzkt6oi" role="jymVt">
+      <property role="TrG5h" value="doNotPublishResults" />
+      <node concept="3Tmbuc" id="6XKrTzkt4RV" role="1B3o_S" />
+      <node concept="10P_77" id="6XKrTzkt6g8" role="1tU5fm" />
+      <node concept="3clFbT" id="6XKrTzkt8P_" role="33vP2m" />
+      <node concept="NWlO9" id="6XKrTzkt8YJ" role="lGtFl">
+        <property role="NWlVz" value="When set to true, publish() will not be called (when this analyzer is part of a higher-level one)." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6XKrTzkt7I9" role="jymVt" />
     <node concept="3clFbW" id="6DyMuFe0W9j" role="jymVt">
       <node concept="3cqZAl" id="6DyMuFe0W9k" role="3clF45" />
       <node concept="3clFbS" id="6DyMuFe0W9m" role="3clF47">
@@ -1234,6 +1244,37 @@
         <property role="TrG5h" value="job" />
         <node concept="3uibUv" id="7iCG_8X8_I2" role="1tU5fm">
           <ref role="3uigEE" node="7iCG_8WDYdE" resolve="AtomicAnalysisJob" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6XKrTzktngF" role="jymVt" />
+    <node concept="3clFb_" id="6XKrTzktqLC" role="jymVt">
+      <property role="TrG5h" value="myPublish" />
+      <node concept="3clFbS" id="6XKrTzktqLF" role="3clF47">
+        <node concept="3clFbJ" id="6XKrTzktsgs" role="3cqZAp">
+          <node concept="3fqX7Q" id="6XKrTzktsD6" role="3clFbw">
+            <node concept="37vLTw" id="6XKrTzktsD8" role="3fr31v">
+              <ref role="3cqZAo" node="6XKrTzkt6oi" resolve="doNotPublishResults" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6XKrTzktsgu" role="3clFbx">
+            <node concept="3clFbF" id="6XKrTzktt1z" role="3cqZAp">
+              <node concept="1rXfSq" id="6XKrTzktt1y" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...)" resolve="publish" />
+                <node concept="37vLTw" id="6XKrTzktuLl" role="37wK5m">
+                  <ref role="3cqZAo" node="6XKrTzkttdI" resolve="res" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="6XKrTzktpe2" role="1B3o_S" />
+      <node concept="3cqZAl" id="6XKrTzktqAm" role="3clF45" />
+      <node concept="37vLTG" id="6XKrTzkttdI" role="3clF46">
+        <property role="TrG5h" value="res" />
+        <node concept="16syzq" id="6XKrTzktuYp" role="1tU5fm">
+          <ref role="16sUi3" node="6DyMuFe0SCO" resolve="S" />
         </node>
       </node>
     </node>
