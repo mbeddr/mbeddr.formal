@@ -217,5 +217,12 @@
     <property role="R4oN_" value="builds the model in a boolean expression format" />
     <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
+  <node concept="1TIwiD" id="6XKrTzkyRwi">
+    <property role="EcuMT" value="8030040837793216530" />
+    <property role="3GE5qa" value="source.commands" />
+    <property role="TrG5h" value="ShowProperty" />
+    <property role="34LRSv" value="show_property" />
+    <ref role="1TJDcQ" node="6glUKoNLO$M" resolve="NuSMVCommand" />
+  </node>
 </model>
 

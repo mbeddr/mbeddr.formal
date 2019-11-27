@@ -648,7 +648,7 @@
         </node>
         <node concept="3clFbF" id="1wu5Hv6k6Eo" role="3cqZAp">
           <node concept="1rXfSq" id="1wu5Hv6k6Em" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...)" resolve="publish" />
+            <ref role="37wK5l" to="2ocj:6XKrTzktqLC" resolve="myPublish" />
             <node concept="37vLTw" id="7XCY$_rajuV" role="37wK5m">
               <ref role="3cqZAo" node="7XCY$_rafOC" resolve="slr" />
             </node>

@@ -538,7 +538,14 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="59AZjhg27FR" role="37wK5m" />
+                <node concept="2OqwBi" id="6XKrTzkLocZ" role="37wK5m">
+                  <node concept="37vLTw" id="6XKrTzkLnD4" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1vcsY82VxVn" resolve="project" />
+                  </node>
+                  <node concept="liA8E" id="6XKrTzkLoVM" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="59AZjhg2imD" role="37wK5m">
                   <ref role="3cqZAo" node="59AZjhg27F7" resolve="sys" />
                 </node>
@@ -813,7 +820,9 @@
                     <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="6mm$FLYS5IN" role="37wK5m" />
+                <node concept="37vLTw" id="6XKrTzkLJuo" role="37wK5m">
+                  <ref role="3cqZAo" node="25Ap4XXthvY" resolve="repo" />
+                </node>
                 <node concept="37vLTw" id="6mm$FLYS66m" role="37wK5m">
                   <ref role="3cqZAo" node="6mm$FLYRO$F" resolve="testCase" />
                 </node>

@@ -821,7 +821,7 @@
           <node concept="3clFbS" id="2xeYpNC7aBM" role="2LFqv$">
             <node concept="3clFbF" id="7mSH3Wn5kvm" role="3cqZAp">
               <node concept="1rXfSq" id="7mSH3Wn5kvk" role="3clFbG">
-                <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...)" resolve="publish" />
+                <ref role="37wK5l" to="2ocj:6XKrTzktqLC" resolve="myPublish" />
                 <node concept="2GrUjf" id="2xeYpNC7coe" role="37wK5m">
                   <ref role="2Gs0qQ" node="2xeYpNC7aBI" resolve="r" />
                 </node>
@@ -3974,7 +3974,7 @@
             </node>
             <node concept="3clFbF" id="2l5A0OFdnkw" role="3cqZAp">
               <node concept="1rXfSq" id="2l5A0OFdnku" role="3clFbG">
-                <ref role="37wK5l" to="dxuu:~SwingWorker.publish(java.lang.Object...)" resolve="publish" />
+                <ref role="37wK5l" to="2ocj:6XKrTzktqLC" resolve="myPublish" />
                 <node concept="37vLTw" id="2l5A0OFdzkU" role="37wK5m">
                   <ref role="3cqZAo" node="2l5A0OFdzkJ" resolve="refinementRes" />
                 </node>

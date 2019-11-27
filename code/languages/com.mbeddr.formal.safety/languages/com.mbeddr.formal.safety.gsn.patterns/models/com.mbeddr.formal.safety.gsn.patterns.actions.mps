@@ -10,6 +10,7 @@
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -60,6 +61,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
+        <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -128,8 +132,22 @@
                   </node>
                   <node concept="2pIpSj" id="7TjUbLQ4kZo" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="36biLy" id="7TjUbLQ5mbG" role="28nt2d">
-                      <node concept="10Nm6u" id="7TjUbLQ5mbE" role="36biLW" />
+                    <node concept="2pJPED" id="7bxPmtp6P4x" role="28nt2d">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                      <node concept="2pIpSj" id="7bxPmtp6P4y" role="2pJxcM">
+                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                        <node concept="36be1Y" id="7bxPmtp6P4z" role="28nt2d">
+                          <node concept="2pJPED" id="7bxPmtp6P4$" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="7bxPmtp6P4_" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="Xl_RD" id="7bxPmtp6P4A" role="28ntcv">
+                                <property role="Xl_RC" value="ToDo" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="7TjUbLQ4lIs" role="2pJxcM">
@@ -174,15 +192,15 @@
                   <node concept="2pIpSj" id="7TjUbLQ4PIY" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
                     <node concept="36biLy" id="7TjUbLQ4PJk" role="28nt2d">
-                      <node concept="37vLTw" id="7TjUbLQ4PJB" role="36biLW">
-                        <ref role="3cqZAo" node="7TjUbLQ4kZj" resolve="hmg1" />
-                      </node>
+                      <node concept="1r4Lsj" id="6XKrTzkxj5q" role="36biLW" />
                     </node>
                   </node>
                   <node concept="2pIpSj" id="7TjUbLQ4PLl" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
                     <node concept="36biLy" id="7TjUbLQ4PLK" role="28nt2d">
-                      <node concept="1r4Lsj" id="7TjUbLQ4PM3" role="36biLW" />
+                      <node concept="37vLTw" id="6XKrTzkxj7B" role="36biLW">
+                        <ref role="3cqZAo" node="7TjUbLQ4kZj" resolve="hmg1" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -227,8 +245,22 @@
                   </node>
                   <node concept="2pIpSj" id="7TjUbLQ4lWS" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="36biLy" id="7TjUbLQ4lWT" role="28nt2d">
-                      <node concept="10Nm6u" id="7TjUbLQ4lWU" role="36biLW" />
+                    <node concept="2pJPED" id="6XKrTzkxj4q" role="28nt2d">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                      <node concept="2pIpSj" id="6XKrTzkxj4r" role="2pJxcM">
+                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                        <node concept="36be1Y" id="6XKrTzkxj4s" role="28nt2d">
+                          <node concept="2pJPED" id="6XKrTzkxj4t" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="6XKrTzkxj4u" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="Xl_RD" id="6XKrTzkxj4v" role="28ntcv">
+                                <property role="Xl_RC" value="ToDo" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="2pIpSj" id="7TjUbLQ4lWV" role="2pJxcM">
@@ -273,15 +305,15 @@
                   <node concept="2pIpSj" id="7TjUbLQ4QTZ" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
                     <node concept="36biLy" id="7TjUbLQ4QU0" role="28nt2d">
-                      <node concept="37vLTw" id="7TjUbLQ4RDJ" role="36biLW">
-                        <ref role="3cqZAo" node="7TjUbLQ4lWM" resolve="hmg2" />
-                      </node>
+                      <node concept="1r4Lsj" id="6XKrTzkxj9j" role="36biLW" />
                     </node>
                   </node>
                   <node concept="2pIpSj" id="7TjUbLQ4QU2" role="2pJxcM">
                     <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
                     <node concept="36biLy" id="7TjUbLQ4QU3" role="28nt2d">
-                      <node concept="1r4Lsj" id="7TjUbLQ4QU4" role="36biLW" />
+                      <node concept="37vLTw" id="6XKrTzkxj91" role="36biLW">
+                        <ref role="3cqZAo" node="7TjUbLQ4lWM" resolve="hmg2" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -114,7 +114,7 @@
   </registry>
   <node concept="18kY7G" id="4qaoH_Fr7h">
     <property role="TrG5h" value="check_SmvSpecGoal" />
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <node concept="3clFbS" id="4qaoH_Fr7i" role="18ibNy">
       <node concept="3cpWs8" id="4qaoH_Fs2m" role="3cqZAp">
         <node concept="3cpWsn" id="4qaoH_Fs2n" role="3cpWs9">

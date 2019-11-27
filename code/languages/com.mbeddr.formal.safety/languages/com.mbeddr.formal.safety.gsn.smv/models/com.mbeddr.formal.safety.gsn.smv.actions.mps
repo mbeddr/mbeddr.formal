@@ -111,7 +111,7 @@
     </language>
   </registry>
   <node concept="37WguZ" id="7bxPmtp68KA">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <property role="TrG5h" value="buildSmvSpecialGoals" />
     <node concept="37WvkG" id="7bxPmtp68KB" role="37WGs$">
       <ref role="37XkoT" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
@@ -317,45 +317,6 @@
       <ref role="37XkoT" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
       <node concept="37Y9Zx" id="7bxPmtp6P49" role="37ZfLb">
         <node concept="3clFbS" id="7bxPmtp6P4a" role="2VODD2">
-          <node concept="3cpWs8" id="7bxPmtp6P4b" role="3cqZAp">
-            <node concept="3cpWsn" id="7bxPmtp6P4c" role="3cpWs9">
-              <property role="TrG5h" value="ssc" />
-              <node concept="3Tqbb2" id="7bxPmtp6P4d" role="1tU5fm">
-                <ref role="ehGHo" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
-              </node>
-              <node concept="2pJPEk" id="7bxPmtp6P4e" role="33vP2m">
-                <node concept="2pJPED" id="7bxPmtp6P4f" role="2pJPEn">
-                  <ref role="2pJxaS" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
-                  <node concept="2pJxcG" id="7bxPmtp6P4g" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="7bxPmtp6P4h" role="28ntcv">
-                      <property role="Xl_RC" value="NoName" />
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="7bxPmtp6P4i" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="7bxPmtp6P4j" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="7bxPmtp6P4k" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="7bxPmtp6P4l" role="28nt2d">
-                          <node concept="2pJPED" id="7bxPmtp6P4m" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="7bxPmtp6P4n" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="Xl_RD" id="7bxPmtp6P4o" role="28ntcv">
-                                <property role="Xl_RC" value="ToDo" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="7bxPmtp6P4p" role="3cqZAp">
             <node concept="3cpWsn" id="7bxPmtp6P4q" role="3cpWs9">
               <property role="TrG5h" value="sss" />
@@ -410,23 +371,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="7bxPmtp6P4I" role="3cqZAp">
-            <node concept="2OqwBi" id="7bxPmtp6P4J" role="3clFbG">
-              <node concept="2OqwBi" id="7bxPmtp6P4K" role="2Oq$k0">
-                <node concept="37vLTw" id="7bxPmtp6P4L" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7bxPmtp6P4D" resolve="gs" />
-                </node>
-                <node concept="3Tsc0h" id="7bxPmtp6P4M" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="7bxPmtp6P4N" role="2OqNvi">
-                <node concept="37vLTw" id="7bxPmtp6P4O" role="25WWJ7">
-                  <ref role="3cqZAo" node="7bxPmtp6P4c" resolve="ssc" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="7bxPmtp6P4P" role="3cqZAp">
             <node concept="2OqwBi" id="7bxPmtp6P4Q" role="3clFbG">
               <node concept="2OqwBi" id="7bxPmtp6P4R" role="2Oq$k0">
@@ -469,39 +413,6 @@
                       <node concept="36biLy" id="7bxPmtp6P58" role="28nt2d">
                         <node concept="37vLTw" id="7bxPmtp6P59" role="36biLW">
                           <ref role="3cqZAo" node="7bxPmtp6P4q" resolve="sss" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="7bxPmtp6P5a" role="3cqZAp">
-            <node concept="2OqwBi" id="7bxPmtp6P5b" role="3clFbG">
-              <node concept="2OqwBi" id="7bxPmtp6P5c" role="2Oq$k0">
-                <node concept="37vLTw" id="7bxPmtp6P5d" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7bxPmtp6P4D" resolve="gs" />
-                </node>
-                <node concept="3Tsc0h" id="7bxPmtp6P5e" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="7bxPmtp6P5f" role="2OqNvi">
-                <node concept="2pJPEk" id="7bxPmtp6P5g" role="25WWJ7">
-                  <node concept="2pJPED" id="7bxPmtp6P5h" role="2pJPEn">
-                    <ref role="2pJxaS" to="bsp8:4qaoH_EJ_i" resolve="InContextOfSmvModule" />
-                    <node concept="2pIpSj" id="7bxPmtp6P5i" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
-                      <node concept="36biLy" id="7bxPmtp6P5j" role="28nt2d">
-                        <node concept="1r4Lsj" id="7bxPmtp6P5k" role="36biLW" />
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="7bxPmtp6P5l" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
-                      <node concept="36biLy" id="7bxPmtp6P5m" role="28nt2d">
-                        <node concept="37vLTw" id="7bxPmtp6P5n" role="36biLW">
-                          <ref role="3cqZAo" node="7bxPmtp6P4c" resolve="ssc" />
                         </node>
                       </node>
                     </node>

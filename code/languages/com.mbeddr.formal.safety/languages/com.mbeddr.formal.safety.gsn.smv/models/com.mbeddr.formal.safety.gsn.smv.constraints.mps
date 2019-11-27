@@ -69,7 +69,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="71RA3dH_I3X">
-    <property role="3GE5qa" value="gsn.dsl.smv.formal" />
+    <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <ref role="1M2myG" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
     <node concept="1N5Pfh" id="71RA3dH_I3Y" role="1Mr941">
       <ref role="1N5Vy1" to="bsp8:71RA3dH$OQm" resolve="spec" />
@@ -92,8 +92,8 @@
                       <node concept="1xIGOp" id="71RA3dH_JiO" role="1xVPHs" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="71RA3dH_MfT" role="2OqNvi">
-                    <ref role="3Tt5mk" to="bsp8:71RA3dH$OQ6" resolve="module" />
+                  <node concept="3TrEf2" id="CmOUmcc8Ht" role="2OqNvi">
+                    <ref role="3Tt5mk" to="bsp8:4qaoH_PPf$" resolve="module" />
                   </node>
                 </node>
                 <node concept="2Rf3mk" id="71RA3dH_PCy" role="2OqNvi">
