@@ -26,6 +26,7 @@
         <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)</dependency>
+        <dependency reexport="false">1caff2e8-9e73-431d-8a8f-ba34a80c305f(com.mbeddr.formal.nusmv.cbd#01)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
@@ -60,6 +61,7 @@
         <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
         <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
         <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
+        <module reference="1caff2e8-9e73-431d-8a8f-ba34a80c305f(com.mbeddr.formal.nusmv.cbd#01)" version="0" />
         <module reference="c0e6afd4-e20f-4e33-9970-004cf26b9bf6(com.mbeddr.formal.nusmv.ext)" version="0" />
         <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
         <module reference="8c301636-fbda-4009-bce8-7e00c3c1bac5(com.mbeddr.formal.safety.gsn.odd)" version="0" />
@@ -82,7 +84,22 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="0cd4968b-4ddc-4835-aa0f-2a9e87b43fae(com.mbeddr.formal.safety.gsn.odd#01)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="1caff2e8-9e73-431d-8a8f-ba34a80c305f(com.mbeddr.formal.nusmv.cbd#01)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
