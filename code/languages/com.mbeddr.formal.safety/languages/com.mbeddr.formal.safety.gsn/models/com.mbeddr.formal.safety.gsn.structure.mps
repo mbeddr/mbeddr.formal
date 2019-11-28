@@ -205,8 +205,8 @@
     <node concept="1TJgyj" id="3GRi4m$sIbL" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770225" />
       <property role="20kJfa" value="source" />
-      <ref role="20lvS9" node="3GRi4m$qNtH" resolve="Goal" />
       <ref role="20ksaX" node="2ccN23odOzl" resolve="source" />
+      <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
     <node concept="1TJgyj" id="3GRi4m$sId6" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770310" />
