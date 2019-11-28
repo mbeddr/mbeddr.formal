@@ -8,9 +8,5 @@
   <exported-language name="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" />
   <exported-language name="ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)" />
   <exported-language name="628c1bba-6b54-4c71-927c-3cff044349e4(com.mbeddr.formal.spin.hdl)" />
-  <exported-solutions>
-    <exported-solution>8fa6837b-ded6-4b1e-a190-ce0b2256e987(com.mbeddr.formal.spin.genplan)</exported-solution>
-  </exported-solutions>
-  <generation-plan model="r:db8e028d-8ace-4b1a-9847-598115a9fa50(com.mbeddr.formal.spin.genplan.plan@genplan)" />
 </dev-kit>
 
