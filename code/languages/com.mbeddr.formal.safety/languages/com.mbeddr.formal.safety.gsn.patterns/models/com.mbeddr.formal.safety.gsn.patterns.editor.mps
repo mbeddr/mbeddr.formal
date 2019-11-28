@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -96,6 +97,9 @@
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
       </concept>
       <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -464,6 +468,10 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="2xQOud" id="7TjUbLQaERb" role="2xQQDV">
+        <ref role="2xQOue" to="g35p:7TjUbLQ8uDG" resolve="GoalRectangle" />
+        <node concept="1Pxb5l" id="7TjUbLQaERj" role="1xbcaF" />
+      </node>
     </node>
     <node concept="3EZMnI" id="1$M4_qbWmbV" role="6VMZX">
       <node concept="2iRkQZ" id="1$M4_qbWmbW" role="2iSdaV" />
@@ -487,6 +495,16 @@
         </node>
         <node concept="2iRfu4" id="1$M4_qbWmc5" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="7TjUbLQaL3h" role="3EZMnx">
+        <node concept="l2Vlx" id="7TjUbLQaL3i" role="2iSdaV" />
+        <node concept="3F0ifn" id="7TjUbLQaL3j" role="3EZMnx">
+          <property role="3F0ifm" value="undeveloped:" />
+        </node>
+        <node concept="27S6Sx" id="7TjUbLQaL3k" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6rlO$dpDKkL" role="3EZMnx" />
     </node>
   </node>
 </model>
