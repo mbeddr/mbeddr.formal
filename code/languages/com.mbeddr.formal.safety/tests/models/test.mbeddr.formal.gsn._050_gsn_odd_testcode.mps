@@ -167,18 +167,18 @@
     </node>
   </node>
   <node concept="2vn7XN" id="6XKrTzkxMgl">
-    <property role="TrG5h" value="_020_odd_simple" />
+    <property role="TrG5h" value="_020_odd_simple_pass" />
     <node concept="2kgThc" id="6XKrTzkxMgr" role="2vn1q5">
-      <property role="TrG5h" value="G01" />
+      <property role="TrG5h" value="Context_pass" />
       <ref role="tTdmP" node="6XKrTzkxFV1" resolve="_010_airbag_controller" />
       <ref role="tTdm_" node="6XKrTzkxFVT" resolve="crash_detected_does_not_change" />
       <node concept="3NXOOs" id="6XKrTzkxQcO" role="1TpTPr">
         <property role="1RwFax" value="true" />
-        <property role="3N1Lgt" value="odd_logs/airbag_odd_log_1.csv" />
+        <property role="3N1Lgt" value="odd_logs/airbag_odd_log_pass.csv" />
       </node>
       <node concept="19SGf9" id="6XKrTzkyPGA" role="2vnaTY">
         <node concept="19SUe$" id="6XKrTzkyPGB" role="19SJt6">
-          <property role="19SUeA" value="Ied" />
+          <property role="19SUeA" value="Ie" />
         </node>
       </node>
     </node>
@@ -204,6 +204,45 @@
         <node concept="2m6DXv" id="guJe75HhT4" role="2mpP4z">
           <property role="TrG5h" value="a" />
           <node concept="2m7kok" id="guJe75HhT2" role="1a0DGc" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2vn7XN" id="4Q$F1bo1AQr">
+    <property role="TrG5h" value="_020_odd_simple_fail" />
+    <node concept="2kgThc" id="4Q$F1bo1AQs" role="2vn1q5">
+      <property role="TrG5h" value="Context_fail" />
+      <ref role="tTdm_" node="6XKrTzkxFVT" resolve="crash_detected_does_not_change" />
+      <ref role="tTdmP" node="6XKrTzkxFV1" resolve="_010_airbag_controller" />
+      <node concept="3NXOOs" id="4Q$F1bo1AQt" role="1TpTPr">
+        <property role="1RwFax" value="true" />
+        <property role="3N1Lgt" value="odd_logs/airbag_odd_log_fail.csv" />
+      </node>
+      <node concept="19SGf9" id="4Q$F1bo1AQu" role="2vnaTY">
+        <node concept="19SUe$" id="4Q$F1bo1AQv" role="19SJt6">
+          <property role="19SUeA" value="Ied" />
+        </node>
+      </node>
+    </node>
+    <node concept="37mRI7" id="4Q$F1bo1AQw" role="lGtFl">
+      <node concept="37mRIm" id="4Q$F1bo1AQx" role="37mRID">
+        <property role="37mO49" value="8030040837792932891" />
+        <node concept="gqqVs" id="4Q$F1bo1AQy" role="37mO4d">
+          <property role="gqqTZ" value="75.0" />
+          <property role="gqqTW" value="27.0" />
+          <property role="gqqTX" value="282.0" />
+          <property role="gqqTy" value="148.0" />
+          <property role="TgtnS" value="0.0;1.0;-1.0;-0.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4Q$F1bo1AQS" role="37mRID">
+        <property role="37mO49" value="5594785834034687388" />
+        <node concept="gqqVs" id="4Q$F1bo1AQR" role="37mO4d">
+          <property role="gqqTZ" value="60.0" />
+          <property role="gqqTW" value="23.0" />
+          <property role="gqqTX" value="271.0" />
+          <property role="gqqTy" value="148.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
     </node>
