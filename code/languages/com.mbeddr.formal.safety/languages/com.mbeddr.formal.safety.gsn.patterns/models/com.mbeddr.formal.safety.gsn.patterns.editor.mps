@@ -121,7 +121,7 @@
         <node concept="3EZMnI" id="2ccN23oa2Kn" role="3EZMnx">
           <node concept="VPM3Z" id="2ccN23oa2Ko" role="3F10Kt" />
           <node concept="3F0ifn" id="2ccN23oa2Kp" role="3EZMnx">
-            <property role="3F0ifm" value="Strategy:" />
+            <property role="3F0ifm" value="Argument over Hazards Strategy:" />
             <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
           </node>
           <node concept="3F0A7n" id="2ccN23oa2Kq" role="3EZMnx">
@@ -129,10 +129,6 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
           <node concept="l2Vlx" id="2ccN23oa2Kr" role="2iSdaV" />
-          <node concept="3F0ifn" id="7TjUbLQ4gGa" role="3EZMnx">
-            <property role="3F0ifm" value="(Argument over Hazards)" />
-            <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
-          </node>
         </node>
         <node concept="3F0ifn" id="7TjUbLQ4gFJ" role="3EZMnx" />
         <node concept="3EZMnI" id="7TjUbLQ4gF0" role="3EZMnx">
@@ -311,7 +307,7 @@
         <node concept="3EZMnI" id="1$M4_qbWcCM" role="3EZMnx">
           <node concept="VPM3Z" id="1$M4_qbWcCN" role="3F10Kt" />
           <node concept="3F0ifn" id="1$M4_qbWcCO" role="3EZMnx">
-            <property role="3F0ifm" value="Strategy:" />
+            <property role="3F0ifm" value="Argument over Requirements Strategy:" />
             <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
           </node>
           <node concept="3F0A7n" id="1$M4_qbWcCP" role="3EZMnx">
@@ -319,10 +315,6 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
           <node concept="l2Vlx" id="1$M4_qbWcCQ" role="2iSdaV" />
-          <node concept="3F0ifn" id="1$M4_qbWcCR" role="3EZMnx">
-            <property role="3F0ifm" value="(Argument over Requirements)" />
-            <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
-          </node>
         </node>
         <node concept="3F0ifn" id="1$M4_qbWcCS" role="3EZMnx" />
         <node concept="3EZMnI" id="1$M4_qbWcCT" role="3EZMnx">
