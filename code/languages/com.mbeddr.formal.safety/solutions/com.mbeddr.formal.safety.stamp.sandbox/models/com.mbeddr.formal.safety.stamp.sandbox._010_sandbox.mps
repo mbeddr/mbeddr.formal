@@ -1409,6 +1409,28 @@
         </node>
       </node>
     </node>
+    <node concept="1E0nOG" id="6XKrTzkz8yF" role="1E0n_e">
+      <ref role="1E0nOH" node="3Cm$$O2vpqe" resolve="Early Warning System" />
+      <node concept="1E0nOJ" id="6XKrTzkz8zc" role="1E0nOC">
+        <ref role="1E0n_N" node="3Cm$$O2vUZb" resolve="Heartbeat" />
+        <node concept="1E0COo" id="6XKrTzkz8ze" role="1E0ucd">
+          <node concept="1E0COg" id="6XKrTzkz8zk" role="1E0COp">
+            <node concept="19SGf9" id="6XKrTzkz8zm" role="1E0COh">
+              <node concept="19SUe$" id="6XKrTzkz8zn" role="19SJt6">
+                <property role="19SUeA" value="when attack" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="6XKrTzkz8zs" role="1E0COk">
+            <node concept="19SGf9" id="6XKrTzkz8zu" role="1E0CO$">
+              <node concept="19SUe$" id="6XKrTzkz8zv" role="19SJt6">
+                <property role="19SUeA" value="missed response" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1X_0jQ" id="1JhvKLLP$9l">
     <property role="TrG5h" value="_020_atc" />

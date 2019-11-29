@@ -15,6 +15,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -238,23 +239,40 @@
                   <property role="TrG5h" value="msg" />
                   <node concept="17QB3L" id="4b60pu4yreF" role="1tU5fm" />
                   <node concept="Xl_RD" id="4b60pu4yrkf" role="33vP2m">
-                    <property role="Xl_RC" value="only variables with integer types can be monitored - variable " />
+                    <property role="Xl_RC" value="only variables with integer and enumeration types can be monitored - variable " />
                   </node>
                 </node>
               </node>
               <node concept="2Mj0R9" id="4b60pu4ypAy" role="3cqZAp">
-                <node concept="2OqwBi" id="4b60pu4yqkK" role="2MkoU_">
-                  <node concept="2OqwBi" id="4b60pu4ypN0" role="2Oq$k0">
-                    <node concept="Jnkvi" id="4b60pu4ypAQ" role="2Oq$k0">
-                      <ref role="1M0zk5" node="4b60pu4ypzg" resolve="te" />
+                <node concept="22lmx$" id="4Q$F1bo1s_a" role="2MkoU_">
+                  <node concept="2OqwBi" id="4b60pu4yqkK" role="3uHU7B">
+                    <node concept="2OqwBi" id="4b60pu4ypN0" role="2Oq$k0">
+                      <node concept="Jnkvi" id="4b60pu4ypAQ" role="2Oq$k0">
+                        <ref role="1M0zk5" node="4b60pu4ypzg" resolve="te" />
+                      </node>
+                      <node concept="2qgKlT" id="4b60pu4yq2f" role="2OqNvi">
+                        <ref role="37wK5l" to="ox2v:4b60pu4xEd7" resolve="getType" />
+                      </node>
                     </node>
-                    <node concept="2qgKlT" id="4b60pu4yq2f" role="2OqNvi">
-                      <ref role="37wK5l" to="ox2v:4b60pu4xEd7" resolve="getType" />
+                    <node concept="1mIQ4w" id="4b60pu4yqBb" role="2OqNvi">
+                      <node concept="chp4Y" id="4b60pu4yqH2" role="cj9EA">
+                        <ref role="cht4Q" to="gioj:7mSH3Wn5Ovu" resolve="IntegerType" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="1mIQ4w" id="4b60pu4yqBb" role="2OqNvi">
-                    <node concept="chp4Y" id="4b60pu4yqH2" role="cj9EA">
-                      <ref role="cht4Q" to="gioj:7mSH3Wn5Ovu" resolve="IntegerType" />
+                  <node concept="2OqwBi" id="4Q$F1bo1sYv" role="3uHU7w">
+                    <node concept="2OqwBi" id="4Q$F1bo1sYw" role="2Oq$k0">
+                      <node concept="Jnkvi" id="4Q$F1bo1sYx" role="2Oq$k0">
+                        <ref role="1M0zk5" node="4b60pu4ypzg" resolve="te" />
+                      </node>
+                      <node concept="2qgKlT" id="4Q$F1bo1sYy" role="2OqNvi">
+                        <ref role="37wK5l" to="ox2v:4b60pu4xEd7" resolve="getType" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="4Q$F1bo1sYz" role="2OqNvi">
+                      <node concept="chp4Y" id="4Q$F1bo1sZN" role="cj9EA">
+                        <ref role="cht4Q" to="gioj:6NmtaR1SWfQ" resolve="EnumerationType" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -218,6 +218,9 @@
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
     </language>
   </registry>
   <node concept="1QQeGf" id="6DdnOgjbDNI">
@@ -683,14 +686,19 @@
         <property role="1RwFax" value="true" />
         <property role="3N1Lgt" value="log/tlc_log.csv" />
       </node>
+      <node concept="19SGf9" id="4Q$F1bo100O" role="2vnaTY">
+        <node concept="19SUe$" id="4Q$F1bo100P" role="19SJt6">
+          <property role="19SUeA" value="I" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="6DdnOgjbF5l" role="lGtFl">
       <node concept="37mRIm" id="6DdnOgjbF5m" role="37mRID">
         <property role="37mO49" value="7659883287211319533" />
         <node concept="gqqVs" id="6DdnOgjbF5k" role="37mO4d">
-          <property role="gqqTZ" value="79.0" />
+          <property role="gqqTZ" value="61.0" />
           <property role="gqqTW" value="30.0" />
-          <property role="gqqTX" value="249.0" />
+          <property role="gqqTX" value="267.0" />
           <property role="gqqTy" value="148.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>

@@ -488,6 +488,16 @@
           </node>
         </node>
       </node>
+      <node concept="37mRIm" id="4Q$F1bo0oF0" role="37mRID">
+        <property role="37mO49" value="5594785834034367140" />
+        <node concept="gqqVs" id="4Q$F1bo0oEZ" role="37mO4d">
+          <property role="gqqTZ" value="576.0" />
+          <property role="gqqTW" value="60.0" />
+          <property role="gqqTX" value="149.0" />
+          <property role="gqqTy" value="63.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
     </node>
     <node concept="2vmxSQ" id="3GRi4m$rEQ0" role="2vn1q5">
       <property role="TrG5h" value="C1" />
