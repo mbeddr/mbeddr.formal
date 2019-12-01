@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.ext/com.mbeddr.formal.safety.gsn.ext.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.odd/com.mbeddr.formal.safety.gsn.odd.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.patterns/com.mbeddr.formal.safety.gsn.patterns.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.req/com.mbeddr.formal.safety.gsn.req.mpl" folder="gsn" />
@@ -14,7 +15,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.smv.pluginSolution/com.mbeddr.formal.safety.gsn.smv.pluginSolution.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.spin.pluginSolution/com.mbeddr.formal.safety.gsn.spin.pluginSolution.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.stamp.sandbox/com.mbeddr.formal.safety.stamp.sandbox.msd" folder="stamp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.msd" folder="tests" />
     </projectModules>
   </component>
 </project>

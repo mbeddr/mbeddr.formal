@@ -73,6 +73,7 @@
         <child id="4266958635905312315" name="text" index="2vnaTY" />
       </concept>
       <concept id="1629165016566665058" name="com.mbeddr.formal.safety.gsn.structure.AwayGoal" flags="ng" index="1UqfIh">
+        <property id="1629165016566689161" name="expanded" index="1Uq9_U" />
         <reference id="1629165016566665059" name="goalDefinition" index="1UqfIg" />
       </concept>
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
@@ -792,10 +793,10 @@
       <node concept="37mRIm" id="1qrXfdH0Wva" role="37mRID">
         <property role="37mO49" value="1629165016567760831" />
         <node concept="gqqVs" id="1qrXfdH0Wv9" role="37mO4d">
-          <property role="gqqTZ" value="241.5" />
-          <property role="gqqTW" value="272.0004967285156" />
-          <property role="gqqTX" value="162.0" />
-          <property role="gqqTy" value="96.0" />
+          <property role="gqqTZ" value="116.5" />
+          <property role="gqqTW" value="273.0004967285156" />
+          <property role="gqqTX" value="471.0" />
+          <property role="gqqTy" value="424.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -837,6 +838,7 @@
     </node>
     <node concept="1UqfIh" id="1qrXfdH0WuZ" role="2vn1q5">
       <property role="TrG5h" value="G.010.010" />
+      <property role="1Uq9_U" value="true" />
       <ref role="1UqfIg" node="1qrXfdH0LFw" resolve="G.010.010" />
     </node>
     <node concept="3VeUTF" id="1qrXfdH0Ww1" role="2vhqc$">

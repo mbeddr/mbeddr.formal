@@ -242,7 +242,7 @@
   <node concept="1lYeZD" id="58S6eLQJ3ha">
     <property role="2bfB8j" value="true" />
     <property role="TrG5h" value="GsnBaseLanConnectionsFactoryProvider_extension" />
-    <property role="3GE5qa" value="baselang" />
+    <property role="3GE5qa" value="connections.baselang" />
     <ref role="1lYe$Y" node="58S6eLQM0$n" resolve="GsnConnectionsFactoryProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2e" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX2f" role="jymVt" />
@@ -277,12 +277,14 @@
   </node>
   <node concept="vrV6u" id="58S6eLQM0$n">
     <property role="TrG5h" value="GsnConnectionsFactoryProvider" />
+    <property role="3GE5qa" value="connections" />
     <node concept="3uibUv" id="7kF4CZH$EI1" role="luc8K">
       <ref role="3uigEE" node="7kF4CZH$qjm" resolve="IGsnConnectionFactory" />
     </node>
   </node>
   <node concept="3HP615" id="7kF4CZH$qjm">
     <property role="TrG5h" value="IGsnConnectionFactory" />
+    <property role="3GE5qa" value="connections" />
     <node concept="2tJIrI" id="7kF4CZH$qkS" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZH$vUh" role="jymVt">
       <property role="TrG5h" value="createConnectionTypes" />
@@ -298,7 +300,7 @@
   </node>
   <node concept="312cEu" id="3GRi4m$sKhy">
     <property role="TrG5h" value="GsnBaseLanConnectionsFactory" />
-    <property role="3GE5qa" value="baselang" />
+    <property role="3GE5qa" value="connections.baselang" />
     <node concept="2tJIrI" id="3GRi4m$sKlS" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZH$RPD" role="jymVt">
       <property role="TrG5h" value="createConnectionTypes" />
@@ -414,7 +416,7 @@
   </node>
   <node concept="312cEu" id="7kF4CZH_Edr">
     <property role="TrG5h" value="ConnectionFromGoalToStrategy" />
-    <property role="3GE5qa" value="baselang.connections" />
+    <property role="3GE5qa" value="connections.baselang.connections" />
     <node concept="2tJIrI" id="7kF4CZH_G6p" role="jymVt" />
     <node concept="3clFbW" id="7kF4CZH_Gha" role="jymVt">
       <node concept="3cqZAl" id="7kF4CZH_Ghc" role="3clF45" />
@@ -677,7 +679,7 @@
     </node>
   </node>
   <node concept="312cEu" id="7kF4CZH_Khs">
-    <property role="3GE5qa" value="baselang.connections" />
+    <property role="3GE5qa" value="connections.baselang.connections" />
     <property role="TrG5h" value="GsnSNodeConnectionBase" />
     <property role="1sVAO0" value="true" />
     <node concept="2tJIrI" id="7kF4CZH_KlX" role="jymVt" />
@@ -1058,7 +1060,7 @@
   </node>
   <node concept="312cEu" id="7kF4CZHA0BC">
     <property role="TrG5h" value="ConnectionFromGoalToContext" />
-    <property role="3GE5qa" value="baselang.connections" />
+    <property role="3GE5qa" value="connections.baselang.connections" />
     <node concept="2tJIrI" id="7kF4CZHA0BD" role="jymVt" />
     <node concept="3clFbW" id="7kF4CZHA0BE" role="jymVt">
       <node concept="3cqZAl" id="7kF4CZHA0BF" role="3clF45" />
@@ -1323,7 +1325,7 @@
   </node>
   <node concept="312cEu" id="7kF4CZHAaC7">
     <property role="TrG5h" value="ConnectionFromGoalToSolution" />
-    <property role="3GE5qa" value="baselang.connections" />
+    <property role="3GE5qa" value="connections.baselang.connections" />
     <node concept="2tJIrI" id="7kF4CZHAaC8" role="jymVt" />
     <node concept="3clFbW" id="7kF4CZHAaC9" role="jymVt">
       <node concept="3cqZAl" id="7kF4CZHAaCa" role="3clF45" />
@@ -1587,7 +1589,7 @@
   </node>
   <node concept="312cEu" id="6XKrTzkxrNv">
     <property role="TrG5h" value="ConnectionFromStrategyToGoal" />
-    <property role="3GE5qa" value="baselang.connections" />
+    <property role="3GE5qa" value="connections.baselang.connections" />
     <node concept="2tJIrI" id="6XKrTzkxrNw" role="jymVt" />
     <node concept="3clFbW" id="6XKrTzkxrNx" role="jymVt">
       <node concept="3cqZAl" id="6XKrTzkxrNy" role="3clF45" />
@@ -1851,7 +1853,7 @@
   </node>
   <node concept="312cEu" id="3kEBMNbY1wT">
     <property role="TrG5h" value="ConnectionFromStrategyToContext" />
-    <property role="3GE5qa" value="baselang.connections" />
+    <property role="3GE5qa" value="connections.baselang.connections" />
     <node concept="2tJIrI" id="3kEBMNbY1wU" role="jymVt" />
     <node concept="3clFbW" id="3kEBMNbY1wV" role="jymVt">
       <node concept="3cqZAl" id="3kEBMNbY1wW" role="3clF45" />
@@ -2113,6 +2115,35 @@
     <node concept="3uibUv" id="3kEBMNbY1yJ" role="1zkMxy">
       <ref role="3uigEE" node="7kF4CZH_Khs" resolve="GsnSNodeConnectionBase" />
     </node>
+  </node>
+  <node concept="vrV6u" id="1qrXfdH2vMg">
+    <property role="TrG5h" value="GsnPaletteEntryFactoryProvider" />
+    <property role="3GE5qa" value="palette" />
+    <node concept="3uibUv" id="1qrXfdH2w0G" role="luc8K">
+      <ref role="3uigEE" node="1qrXfdH2vPg" resolve="IGsnPalleteEntryFactory" />
+    </node>
+  </node>
+  <node concept="3HP615" id="1qrXfdH2vPg">
+    <property role="TrG5h" value="IGsnPalleteEntryFactory" />
+    <property role="3GE5qa" value="palette" />
+    <node concept="2tJIrI" id="1qrXfdH2AlH" role="jymVt" />
+    <node concept="3clFb_" id="1qrXfdH2C2u" role="jymVt">
+      <property role="TrG5h" value="createPaletteEntries" />
+      <node concept="3clFbS" id="1qrXfdH2C2x" role="3clF47" />
+      <node concept="3Tm1VV" id="1qrXfdH2C2y" role="1B3o_S" />
+      <node concept="_YKpA" id="1qrXfdH2BTf" role="3clF45">
+        <node concept="3uibUv" id="1qrXfdH2C1i" role="_ZDj9">
+          <ref role="3uigEE" to="nkm5:KILMQGnt6a" resolve="IPaletteEntry" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1qrXfdH2XGT" role="3clF46">
+        <property role="TrG5h" value="container" />
+        <node concept="3Tqbb2" id="1qrXfdH2XGS" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1qrXfdH2vPh" role="1B3o_S" />
   </node>
 </model>
 
