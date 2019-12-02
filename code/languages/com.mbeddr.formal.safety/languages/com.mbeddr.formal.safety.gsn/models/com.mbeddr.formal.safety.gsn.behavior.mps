@@ -18,6 +18,7 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
@@ -55,7 +56,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -260,6 +263,26 @@
     </node>
     <node concept="13hLZK" id="71RA3dHxNdT" role="13h7CW">
       <node concept="3clFbS" id="71RA3dHxNdU" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1qrXfdH0IVU">
+    <property role="3GE5qa" value="away" />
+    <ref role="13h7C2" to="py52:1qrXfdGWKXy" resolve="AwayGoal" />
+    <node concept="13hLZK" id="1qrXfdH0IVV" role="13h7CW">
+      <node concept="3clFbS" id="1qrXfdH0IVW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1qrXfdH0IW5" role="13h7CS">
+      <property role="TrG5h" value="isSourceOfSpecialConnections" />
+      <ref role="13i0hy" node="7TjUbLQ7E1K" resolve="isSourceOfSpecialConnections" />
+      <node concept="3Tm1VV" id="1qrXfdH0IW6" role="1B3o_S" />
+      <node concept="3clFbS" id="1qrXfdH0IWb" role="3clF47">
+        <node concept="3clFbF" id="1qrXfdH0J4v" role="3cqZAp">
+          <node concept="3clFbT" id="1qrXfdH0J4u" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1qrXfdH0IWc" role="3clF45" />
     </node>
   </node>
 </model>
