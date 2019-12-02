@@ -10,6 +10,8 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
+    <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
+    <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -238,6 +240,53 @@
     <property role="TrG5h" value="SupportedBySmvResultsBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpE8ke">
+    <property role="EcuMT" value="7410059948616877326" />
+    <property role="TrG5h" value="ArgumentBasedOnSMVStrategy" />
+    <property role="34LRSv" value="Argument Based on SMV Results Strategy" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpFa4O">
+    <property role="EcuMT" value="7410059948617146676" />
+    <property role="TrG5h" value="ArgumentBasedOnSMVTestsStrategy" />
+    <property role="34LRSv" value="Argument Based on SMV Test Results Strategy" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpPU0s">
+    <property role="EcuMT" value="7410059948619964444" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="ComponentAssemblyRef" />
+    <ref role="1TJDcQ" to="2qxf:6rlO$dpPTOC" resolve="AbstractComponentRef" />
+    <node concept="1TJgyj" id="6rlO$dpPU0t" role="1TKVEi">
+      <property role="IQ2ns" value="7410059948619964445" />
+      <property role="20kJfa" value="assembly" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpKGs6">
+    <property role="EcuMT" value="7410059948618598150" />
+    <property role="TrG5h" value="CorrectContractRefinementGoal" />
+    <property role="34LRSv" value="Correct Contract Refinement Goal" />
+    <property role="3GE5qa" value="cbd" />
+    <ref role="1TJDcQ" to="2qxf:6rlO$dpSw6o" resolve="AbstractCorrectContractRefinementGoal" />
+    <node concept="1TJgyj" id="6rlO$dpKGsa" role="1TKVEi">
+      <property role="IQ2ns" value="7410059948618598154" />
+      <property role="20kJfa" value="component" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpMa_b">
+    <property role="EcuMT" value="7410059948618983755" />
+    <property role="TrG5h" value="SubcompCorrectnessGoal" />
+    <property role="3GE5qa" value="cbd" />
+    <ref role="1TJDcQ" to="2qxf:6rlO$dpSw7b" resolve="AbstractSubcompCorrectnessGoal" />
+    <node concept="1TJgyj" id="6rlO$dpMa_c" role="1TKVEi">
+      <property role="IQ2ns" value="7410059948618983756" />
+      <property role="20kJfa" value="subcomponent" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
   </node>
 </model>
 

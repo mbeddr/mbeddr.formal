@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -406,6 +407,84 @@
         </node>
       </node>
       <node concept="10P_77" id="7TjUbLQ8ejX" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6rlO$dpEOks">
+    <ref role="13h7C2" to="bsp8:6rlO$dpE8ke" resolve="ArgumentBasedOnSMVStrategy" />
+    <node concept="13i0hz" id="6rlO$dpEOxJ" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="6rlO$dpEOxK" role="1B3o_S" />
+      <node concept="3clFbS" id="6rlO$dpEOxL" role="3clF47">
+        <node concept="3clFbF" id="6rlO$dpEOxM" role="3cqZAp">
+          <node concept="Xl_RD" id="6rlO$dpEOxN" role="3clFbG">
+            <property role="Xl_RC" value="SMV-based Semantics (Patterns)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6rlO$dpEOxO" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6rlO$dpEOkt" role="13h7CW">
+      <node concept="3clFbS" id="6rlO$dpEOku" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6rlO$dpGwmt">
+    <ref role="13h7C2" to="bsp8:6rlO$dpFa4O" resolve="ArgumentBasedOnSMVTestsStrategy" />
+    <node concept="13i0hz" id="6rlO$dpGwmC" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="6rlO$dpGwmD" role="1B3o_S" />
+      <node concept="3clFbS" id="6rlO$dpGwmE" role="3clF47">
+        <node concept="3clFbF" id="6rlO$dpGwmF" role="3cqZAp">
+          <node concept="Xl_RD" id="6rlO$dpGwmG" role="3clFbG">
+            <property role="Xl_RC" value="SMV-based Semantics (Patterns)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6rlO$dpGwmH" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6rlO$dpGwmu" role="13h7CW">
+      <node concept="3clFbS" id="6rlO$dpGwmv" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6rlO$dpKLr1">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="13h7C2" to="bsp8:6rlO$dpKGs6" resolve="CorrectContractRefinementGoal" />
+    <node concept="13i0hz" id="6rlO$dpR4YQ" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="6rlO$dpR4YR" role="1B3o_S" />
+      <node concept="3clFbS" id="6rlO$dpR4YS" role="3clF47">
+        <node concept="3clFbF" id="6rlO$dpR4YT" role="3cqZAp">
+          <node concept="Xl_RD" id="6rlO$dpR4YU" role="3clFbG">
+            <property role="Xl_RC" value="Contract-based design (Patterns)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6rlO$dpR4YV" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6rlO$dpKLr2" role="13h7CW">
+      <node concept="3clFbS" id="6rlO$dpKLr3" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6rlO$dpMa_e">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="13h7C2" to="bsp8:6rlO$dpMa_b" resolve="SubcompCorrectnessGoal" />
+    <node concept="13i0hz" id="6rlO$dpMa_I" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="6rlO$dpMa_J" role="1B3o_S" />
+      <node concept="3clFbS" id="6rlO$dpMa_K" role="3clF47">
+        <node concept="3clFbF" id="6rlO$dpMa_L" role="3cqZAp">
+          <node concept="Xl_RD" id="6rlO$dpMa_M" role="3clFbG">
+            <property role="Xl_RC" value="Contract-based design (Patterns)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6rlO$dpMa_N" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="6rlO$dpMa_f" role="13h7CW">
+      <node concept="3clFbS" id="6rlO$dpMa_g" role="2VODD2" />
     </node>
   </node>
 </model>

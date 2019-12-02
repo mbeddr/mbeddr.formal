@@ -69,6 +69,7 @@
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)</dependency>
+    <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f89904fb-9486-43a1-865e-5ad0375a8a88:de.itemis.mps.editor.bool" version="0" />
@@ -121,6 +122,8 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
+    <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
+    <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
     <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
     <module reference="f465db4c-63d4-40ef-afda-acd713dc19a1(com.mbeddr.formal.safety.gsn.patterns)" version="0" />

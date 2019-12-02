@@ -9,6 +9,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -23,6 +24,7 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -95,6 +97,57 @@
       <property role="20kJfa" value="requirement" />
       <ref role="20lvS9" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpKLnX">
+    <property role="EcuMT" value="7410059948618618365" />
+    <property role="TrG5h" value="SafeSystemGoal" />
+    <property role="34LRSv" value="Safe System Goal" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="1TJgyj" id="6rlO$dpKMA6" role="1TKVEi">
+      <property role="IQ2ns" value="7410059948618623366" />
+      <property role="20kJfa" value="functionalRequirements" />
+      <ref role="20lvS9" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpJSTC">
+    <property role="EcuMT" value="7410059948618387048" />
+    <property role="TrG5h" value="ContractBasedDesignStrategy" />
+    <property role="34LRSv" value="Contract-Based Design Strategy" />
+    <property role="3GE5qa" value="cbd" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+    <node concept="1TJgyj" id="6rlO$dpPTOD" role="1TKVEi">
+      <property role="IQ2ns" value="7410059948619963689" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="component" />
+      <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpMaAs">
+    <property role="EcuMT" value="7410059948618983836" />
+    <property role="TrG5h" value="CompatibilityCheckGoal" />
+    <property role="3GE5qa" value="cbd" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpPTOC">
+    <property role="EcuMT" value="7410059948619963688" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="AbstractComponentRef" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpSw6o">
+    <property role="EcuMT" value="7410059948620644760" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="AbstractCorrectContractRefinementGoal" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+  </node>
+  <node concept="1TIwiD" id="6rlO$dpSw7b">
+    <property role="EcuMT" value="7410059948620644811" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="AbstractSubcompCorrectnessGoal" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
   </node>
 </model>
 
