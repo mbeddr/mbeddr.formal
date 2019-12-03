@@ -21,9 +21,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -51,19 +48,12 @@
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
         <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
-      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
-        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-        <child id="1595412875168045201" name="initValue" index="28ntcv" />
-      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
-      </concept>
-      <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
-        <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -111,6 +101,99 @@
   </registry>
   <node concept="37WguZ" id="7bxPmtp5qqQ">
     <property role="TrG5h" value="patternsInstantiation" />
+    <node concept="37WvkG" id="6rlO$dpFLPR" role="37WGs$">
+      <ref role="37XkoT" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+      <node concept="37Y9Zx" id="6rlO$dpFLPS" role="37ZfLb">
+        <node concept="3clFbS" id="6rlO$dpFLPT" role="2VODD2">
+          <node concept="3cpWs8" id="6rlO$dpFLRA" role="3cqZAp">
+            <node concept="3cpWsn" id="6rlO$dpFLRD" role="3cpWs9">
+              <property role="TrG5h" value="rsg" />
+              <node concept="3Tqbb2" id="6rlO$dpFLR_" role="1tU5fm">
+                <ref role="ehGHo" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
+              </node>
+              <node concept="2pJPEk" id="6rlO$dpFLSy" role="33vP2m">
+                <node concept="2pJPED" id="6rlO$dpFLUt" role="2pJPEn">
+                  <ref role="2pJxaS" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
+                  <node concept="2pIpSj" id="6rlO$dpFLXR" role="2pJxcM">
+                    <ref role="2pIpSl" to="2qxf:1$M4_qbWlC1" resolve="requirement" />
+                    <node concept="36biLy" id="6rlO$dpFLYo" role="28nt2d">
+                      <node concept="10Nm6u" id="6rlO$dpFLYF" role="36biLW" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6rlO$dpFLZr" role="3cqZAp">
+            <node concept="2OqwBi" id="6rlO$dpFOzg" role="3clFbG">
+              <node concept="2OqwBi" id="6rlO$dpFMgY" role="2Oq$k0">
+                <node concept="1PxgMI" id="6rlO$dpFMbD" role="2Oq$k0">
+                  <node concept="chp4Y" id="6rlO$dpFMce" role="3oSUPX">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                  <node concept="1r4N1M" id="6rlO$dpFLZp" role="1m5AlR" />
+                </node>
+                <node concept="3Tsc0h" id="6rlO$dpFMt$" role="2OqNvi">
+                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                </node>
+              </node>
+              <node concept="TSZUe" id="6rlO$dpFRJw" role="2OqNvi">
+                <node concept="37vLTw" id="6rlO$dpFRXs" role="25WWJ7">
+                  <ref role="3cqZAo" node="6rlO$dpFLRD" resolve="rsg" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6rlO$dpFSdE" role="3cqZAp">
+            <node concept="3cpWsn" id="6rlO$dpFSdH" role="3cpWs9">
+              <property role="TrG5h" value="conn" />
+              <node concept="3Tqbb2" id="6rlO$dpFSdC" role="1tU5fm">
+                <ref role="ehGHo" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+              </node>
+              <node concept="2pJPEk" id="6rlO$dpFSkJ" role="33vP2m">
+                <node concept="2pJPED" id="6rlO$dpFSmE" role="2pJPEn">
+                  <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+                  <node concept="2pIpSj" id="6rlO$dpFSmW" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
+                    <node concept="36biLy" id="6rlO$dpFSni" role="28nt2d">
+                      <node concept="1r4Lsj" id="6rlO$dpFSn_" role="36biLW" />
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="6rlO$dpFSqo" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
+                    <node concept="36biLy" id="6rlO$dpFSsZ" role="28nt2d">
+                      <node concept="37vLTw" id="6rlO$dpFSti" role="36biLW">
+                        <ref role="3cqZAo" node="6rlO$dpFLRD" resolve="rsg" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6rlO$dpFU8T" role="3cqZAp">
+            <node concept="2OqwBi" id="6rlO$dpFWP4" role="3clFbG">
+              <node concept="2OqwBi" id="6rlO$dpFUqQ" role="2Oq$k0">
+                <node concept="1PxgMI" id="6rlO$dpFUlx" role="2Oq$k0">
+                  <node concept="chp4Y" id="6rlO$dpFUm6" role="3oSUPX">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                  <node concept="1r4N1M" id="6rlO$dpFU8R" role="1m5AlR" />
+                </node>
+                <node concept="3Tsc0h" id="6rlO$dpFUCH" role="2OqNvi">
+                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
+                </node>
+              </node>
+              <node concept="TSZUe" id="6rlO$dpFZvA" role="2OqNvi">
+                <node concept="37vLTw" id="6rlO$dpFZFT" role="25WWJ7">
+                  <ref role="3cqZAo" node="6rlO$dpFSdH" resolve="conn" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="37WvkG" id="7bxPmtp5qqR" role="37WGs$">
       <ref role="37XkoT" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
       <node concept="37Y9Zx" id="7bxPmtp5qqS" role="37ZfLb">
@@ -124,32 +207,6 @@
               <node concept="2pJPEk" id="7TjUbLQ4kZk" role="33vP2m">
                 <node concept="2pJPED" id="7TjUbLQ4kZl" role="2pJPEn">
                   <ref role="2pJxaS" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
-                  <node concept="2pJxcG" id="7TjUbLQ4kZm" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="7TjUbLQ4kZn" role="28ntcv">
-                      <property role="Xl_RC" value="NoName" />
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="7TjUbLQ4kZo" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="7bxPmtp6P4x" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="7bxPmtp6P4y" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="7bxPmtp6P4z" role="28nt2d">
-                          <node concept="2pJPED" id="7bxPmtp6P4$" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="7bxPmtp6P4_" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="Xl_RD" id="7bxPmtp6P4A" role="28ntcv">
-                                <property role="Xl_RC" value="ToDo" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2pIpSj" id="7TjUbLQ4lIs" role="2pJxcM">
                     <ref role="2pIpSl" to="2qxf:7TjUbLQ4kD4" resolve="hazard" />
                     <node concept="36biLy" id="7TjUbLQ4lWb" role="28nt2d">
@@ -237,32 +294,6 @@
               <node concept="2pJPEk" id="7TjUbLQ4lWO" role="33vP2m">
                 <node concept="2pJPED" id="7TjUbLQ4lWP" role="2pJPEn">
                   <ref role="2pJxaS" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
-                  <node concept="2pJxcG" id="7TjUbLQ4lWQ" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="7TjUbLQ4lWR" role="28ntcv">
-                      <property role="Xl_RC" value="NoName" />
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="7TjUbLQ4lWS" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="6XKrTzkxj4q" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="6XKrTzkxj4r" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="6XKrTzkxj4s" role="28nt2d">
-                          <node concept="2pJPED" id="6XKrTzkxj4t" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="6XKrTzkxj4u" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="Xl_RD" id="6XKrTzkxj4v" role="28ntcv">
-                                <property role="Xl_RC" value="ToDo" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2pIpSj" id="7TjUbLQ4lWV" role="2pJxcM">
                     <ref role="2pIpSl" to="2qxf:7TjUbLQ4kD4" resolve="hazard" />
                     <node concept="36biLy" id="7TjUbLQ4lWW" role="28nt2d">

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:aad73197-747b-433c-8a5f-d5014ecadf43(com.mbeddr.formal.safety.gsn.req.structure)">
+<model ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -22,12 +19,14 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -38,35 +37,27 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="2LDKh2uE4sZ">
-    <property role="EcuMT" value="3200301287348913983" />
-    <property role="TrG5h" value="ReqRef" />
-    <property role="34LRSv" value="@req" />
-    <property role="R4oN_" value="reference a requirement" />
-    <node concept="1TJgyj" id="2LDKh2uE4RN" role="1TKVEi">
-      <property role="IQ2ns" value="3200301287348915699" />
-      <property role="20kJfa" value="req" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="z27p:4gtLUSMLiMA" resolve="AbstractRequirement" />
-    </node>
-    <node concept="PrWs8" id="2LDKh2uEyZr" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
+  <node concept="1TIwiD" id="1qrXfdH1Uhb">
+    <property role="EcuMT" value="1629165016568013899" />
+    <property role="TrG5h" value="PatternDefinition" />
+    <property role="34LRSv" value="pattern definition" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
   </node>
-  <node concept="1TIwiD" id="1$M4_qbIbBZ">
-    <property role="EcuMT" value="1815533762704357887" />
-    <property role="TrG5h" value="ReqModuleRef" />
-    <property role="34LRSv" value="@req-module" />
-    <property role="R4oN_" value="reference to a requirement module" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1$M4_qbIbC0" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="1$M4_qbIbC4" role="1TKVEi">
-      <property role="IQ2ns" value="1815533762704357892" />
-      <property role="20kJfa" value="reqModule" />
+  <node concept="1TIwiD" id="1qrXfdH1Uhl">
+    <property role="EcuMT" value="1629165016568013909" />
+    <property role="TrG5h" value="PatternInstance" />
+    <property role="34LRSv" value="pattern instance" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1TJgyj" id="1qrXfdH1UrR" role="1TKVEi">
+      <property role="IQ2ns" value="1629165016568014583" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="patternDefinition" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
+      <ref role="20lvS9" node="1qrXfdH1Uhb" resolve="PatternDefinition" />
+    </node>
+    <node concept="PrWs8" id="1qrXfdH3Wo9" role="PzmwI">
+      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
     </node>
   </node>
 </model>

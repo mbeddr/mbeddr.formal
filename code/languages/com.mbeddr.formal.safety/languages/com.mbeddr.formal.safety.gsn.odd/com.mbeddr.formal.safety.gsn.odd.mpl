@@ -74,7 +74,6 @@
         <module reference="ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)" version="0" />
         <module reference="c8e6f2e2-b259-48b5-b060-c6f2b36ed359(com.mbeddr.formal.spin#5285453794051996712)" version="0" />
         <module reference="ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)" version="0" />
-        <module reference="8fa6837b-ded6-4b1e-a190-ce0b2256e987(com.mbeddr.formal.spin.genplan)" version="0" />
         <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
         <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
         <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />

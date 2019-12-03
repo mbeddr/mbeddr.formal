@@ -20,9 +20,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -49,19 +46,12 @@
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
         <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
-      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
-        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-        <child id="1595412875168045201" name="initValue" index="28ntcv" />
-      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
-      </concept>
-      <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
-        <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -126,32 +116,6 @@
               <node concept="2pJPEk" id="7bxPmtp6aSp" role="33vP2m">
                 <node concept="2pJPED" id="7bxPmtp6aSq" role="2pJPEn">
                   <ref role="2pJxaS" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
-                  <node concept="2pJxcG" id="7bxPmtp6aSr" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="7bxPmtp6aSs" role="28ntcv">
-                      <property role="Xl_RC" value="NoName" />
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="7bxPmtp6aSt" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="7bxPmtp6aSu" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="7bxPmtp6aSv" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="7bxPmtp6aSw" role="28nt2d">
-                          <node concept="2pJPED" id="7bxPmtp6aSx" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="7bxPmtp6aSy" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="Xl_RD" id="7bxPmtp6aSz" role="28ntcv">
-                                <property role="Xl_RC" value="ToDo" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
@@ -165,32 +129,6 @@
               <node concept="2pJPEk" id="7bxPmtp6b_y" role="33vP2m">
                 <node concept="2pJPED" id="7bxPmtp6b_z" role="2pJPEn">
                   <ref role="2pJxaS" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
-                  <node concept="2pJxcG" id="7bxPmtp6b_$" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="7bxPmtp6b__" role="28ntcv">
-                      <property role="Xl_RC" value="NoName" />
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="7bxPmtp6b_A" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="7bxPmtp6b_B" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="7bxPmtp6b_C" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="7bxPmtp6b_D" role="28nt2d">
-                          <node concept="2pJPED" id="7bxPmtp6b_E" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="7bxPmtp6b_F" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="Xl_RD" id="7bxPmtp6b_G" role="28ntcv">
-                                <property role="Xl_RC" value="ToDo" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
@@ -326,32 +264,6 @@
               <node concept="2pJPEk" id="7bxPmtp6P4s" role="33vP2m">
                 <node concept="2pJPED" id="7bxPmtp6P4t" role="2pJPEn">
                   <ref role="2pJxaS" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
-                  <node concept="2pJxcG" id="7bxPmtp6P4u" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="7bxPmtp6P4v" role="28ntcv">
-                      <property role="Xl_RC" value="NoName" />
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="7bxPmtp6P4w" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="7bxPmtp6P4x" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="7bxPmtp6P4y" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="7bxPmtp6P4z" role="28nt2d">
-                          <node concept="2pJPED" id="7bxPmtp6P4$" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="7bxPmtp6P4_" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="Xl_RD" id="7bxPmtp6P4A" role="28ntcv">
-                                <property role="Xl_RC" value="ToDo" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>

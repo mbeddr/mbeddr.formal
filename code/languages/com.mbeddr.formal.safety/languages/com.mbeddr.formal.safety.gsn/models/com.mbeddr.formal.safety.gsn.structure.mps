@@ -246,5 +246,23 @@
       <property role="t5JxN" value="Elements which are instantiated via a pattern" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1qrXfdGWKXy">
+    <property role="EcuMT" value="1629165016566665058" />
+    <property role="TrG5h" value="AwayGoal" />
+    <property role="34LRSv" value="Away Goal" />
+    <property role="R4oN_" value="goal defined in a different module" />
+    <property role="3GE5qa" value="away" />
+    <ref role="1TJDcQ" node="3GRi4m$qNtH" resolve="Goal" />
+    <node concept="1TJgyj" id="1qrXfdGWKXz" role="1TKVEi">
+      <property role="IQ2ns" value="1629165016566665059" />
+      <property role="20kJfa" value="goalDefinition" />
+      <ref role="20lvS9" node="3GRi4m$qNtH" resolve="Goal" />
+    </node>
+    <node concept="1TJgyi" id="1qrXfdGWQQ9" role="1TKVEl">
+      <property role="IQ2nx" value="1629165016566689161" />
+      <property role="TrG5h" value="expanded" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 
