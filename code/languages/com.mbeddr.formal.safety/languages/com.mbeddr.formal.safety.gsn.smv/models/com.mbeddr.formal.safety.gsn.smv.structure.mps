@@ -241,18 +241,6 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
   </node>
-  <node concept="1TIwiD" id="6rlO$dpE8ke">
-    <property role="EcuMT" value="7410059948616877326" />
-    <property role="TrG5h" value="ArgumentBasedOnSMVStrategy" />
-    <property role="34LRSv" value="Argument Based on SMV Results Strategy" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$rlnF" resolve="Strategy" />
-  </node>
-  <node concept="1TIwiD" id="6rlO$dpFa4O">
-    <property role="EcuMT" value="7410059948617146676" />
-    <property role="TrG5h" value="ArgumentBasedOnSMVTestsStrategy" />
-    <property role="34LRSv" value="Argument Based on SMV Test Results Strategy" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$rlnF" resolve="Strategy" />
-  </node>
   <node concept="1TIwiD" id="6rlO$dpPU0s">
     <property role="EcuMT" value="7410059948619964444" />
     <property role="3GE5qa" value="cbd" />

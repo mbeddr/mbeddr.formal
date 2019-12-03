@@ -366,7 +366,7 @@
       <node concept="3clFbS" id="71RA3dHxXJ3" role="3clF47">
         <node concept="3clFbF" id="71RA3dHxXS_" role="3cqZAp">
           <node concept="Xl_RD" id="71RA3dHxXS$" role="3clFbG">
-            <property role="Xl_RC" value="SMV-based Semantics (Patterns)" />
+            <property role="Xl_RC" value="03 DSL Patterns/Formal/SMV-based Pattern" />
           </node>
         </node>
       </node>
@@ -409,44 +409,6 @@
       <node concept="10P_77" id="7TjUbLQ8ejX" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="6rlO$dpEOks">
-    <ref role="13h7C2" to="bsp8:6rlO$dpE8ke" resolve="ArgumentBasedOnSMVStrategy" />
-    <node concept="13i0hz" id="6rlO$dpEOxJ" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="6rlO$dpEOxK" role="1B3o_S" />
-      <node concept="3clFbS" id="6rlO$dpEOxL" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpEOxM" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpEOxN" role="3clFbG">
-            <property role="Xl_RC" value="SMV-based Semantics (Patterns)" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="6rlO$dpEOxO" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="6rlO$dpEOkt" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpEOku" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="6rlO$dpGwmt">
-    <ref role="13h7C2" to="bsp8:6rlO$dpFa4O" resolve="ArgumentBasedOnSMVTestsStrategy" />
-    <node concept="13i0hz" id="6rlO$dpGwmC" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="6rlO$dpGwmD" role="1B3o_S" />
-      <node concept="3clFbS" id="6rlO$dpGwmE" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpGwmF" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpGwmG" role="3clFbG">
-            <property role="Xl_RC" value="SMV-based Semantics (Patterns)" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="6rlO$dpGwmH" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="6rlO$dpGwmu" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpGwmv" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6rlO$dpKLr1">
     <property role="3GE5qa" value="cbd" />
     <ref role="13h7C2" to="bsp8:6rlO$dpKGs6" resolve="CorrectContractRefinementGoal" />
@@ -457,7 +419,7 @@
       <node concept="3clFbS" id="6rlO$dpR4YS" role="3clF47">
         <node concept="3clFbF" id="6rlO$dpR4YT" role="3cqZAp">
           <node concept="Xl_RD" id="6rlO$dpR4YU" role="3clFbG">
-            <property role="Xl_RC" value="Contract-based design (Patterns)" />
+            <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
           </node>
         </node>
       </node>
@@ -477,7 +439,7 @@
       <node concept="3clFbS" id="6rlO$dpMa_K" role="3clF47">
         <node concept="3clFbF" id="6rlO$dpMa_L" role="3cqZAp">
           <node concept="Xl_RD" id="6rlO$dpMa_M" role="3clFbG">
-            <property role="Xl_RC" value="Contract-based design (Patterns)" />
+            <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
           </node>
         </node>
       </node>

@@ -134,7 +134,7 @@
       <node concept="3clFbS" id="71RA3dHxNe6" role="3clF47">
         <node concept="3clFbF" id="71RA3dHxPTn" role="3cqZAp">
           <node concept="Xl_RD" id="71RA3dHxPTm" role="3clFbG">
-            <property role="Xl_RC" value="GSN base" />
+            <property role="Xl_RC" value="01 GSN Base Language" />
           </node>
         </node>
       </node>

@@ -107,19 +107,6 @@
       <ref role="37XkoT" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
       <node concept="37Y9Zx" id="7bxPmtp68KC" role="37ZfLb">
         <node concept="3clFbS" id="7bxPmtp68KD" role="2VODD2">
-          <node concept="3cpWs8" id="6rlO$dpESz4" role="3cqZAp">
-            <node concept="3cpWsn" id="6rlO$dpESz7" role="3cpWs9">
-              <property role="TrG5h" value="str" />
-              <node concept="3Tqbb2" id="6rlO$dpESz2" role="1tU5fm">
-                <ref role="ehGHo" to="bsp8:6rlO$dpE8ke" resolve="ArgumentBasedOnSMVStrategy" />
-              </node>
-              <node concept="2pJPEk" id="6rlO$dpESCT" role="33vP2m">
-                <node concept="2pJPED" id="6rlO$dpESEO" role="2pJPEn">
-                  <ref role="2pJxaS" to="bsp8:6rlO$dpE8ke" resolve="ArgumentBasedOnSMVStrategy" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="7bxPmtp6aSn" role="3cqZAp">
             <node concept="3cpWsn" id="7bxPmtp6aSo" role="3cpWs9">
               <property role="TrG5h" value="ssc" />
@@ -161,23 +148,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="6rlO$dpESNq" role="3cqZAp">
-            <node concept="2OqwBi" id="6rlO$dpEVzE" role="3clFbG">
-              <node concept="2OqwBi" id="6rlO$dpESZI" role="2Oq$k0">
-                <node concept="37vLTw" id="6rlO$dpESNo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7bxPmtp6cw$" resolve="gs" />
-                </node>
-                <node concept="3Tsc0h" id="6rlO$dpETms" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="6rlO$dpF0yy" role="2OqNvi">
-                <node concept="37vLTw" id="6rlO$dpF0Km" role="25WWJ7">
-                  <ref role="3cqZAo" node="6rlO$dpESz7" resolve="str" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="7bxPmtp5qr5" role="3cqZAp">
             <node concept="2OqwBi" id="7bxPmtp5sQv" role="3clFbG">
               <node concept="2OqwBi" id="7bxPmtp5qI3" role="2Oq$k0">
@@ -208,39 +178,6 @@
               <node concept="TSZUe" id="7bxPmtp6ad0" role="2OqNvi">
                 <node concept="37vLTw" id="7bxPmtp6b_H" role="25WWJ7">
                   <ref role="3cqZAo" node="7bxPmtp6b_x" resolve="sss" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="6rlO$dpF15u" role="3cqZAp">
-            <node concept="2OqwBi" id="6rlO$dpF3sg" role="3clFbG">
-              <node concept="2OqwBi" id="6rlO$dpF1j9" role="2Oq$k0">
-                <node concept="37vLTw" id="6rlO$dpF15s" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7bxPmtp6cw$" resolve="gs" />
-                </node>
-                <node concept="3Tsc0h" id="6rlO$dpF1CG" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="6rlO$dpF6bB" role="2OqNvi">
-                <node concept="2pJPEk" id="6rlO$dpF6nU" role="25WWJ7">
-                  <node concept="2pJPED" id="6rlO$dpF6AI" role="2pJPEn">
-                    <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-                    <node concept="2pIpSj" id="6rlO$dpF6R5" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                      <node concept="36biLy" id="6rlO$dpF72c" role="28nt2d">
-                        <node concept="37vLTw" id="6rlO$dpF74h" role="36biLW">
-                          <ref role="3cqZAo" node="6rlO$dpESz7" resolve="str" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="6rlO$dpF7kQ" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                      <node concept="36biLy" id="6rlO$dpF7xi" role="28nt2d">
-                        <node concept="1r4Lsj" id="6rlO$dpF7zn" role="36biLW" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
@@ -318,19 +255,6 @@
       <ref role="37XkoT" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
       <node concept="37Y9Zx" id="7bxPmtp6P49" role="37ZfLb">
         <node concept="3clFbS" id="7bxPmtp6P4a" role="2VODD2">
-          <node concept="3cpWs8" id="6rlO$dpFcxC" role="3cqZAp">
-            <node concept="3cpWsn" id="6rlO$dpFcxF" role="3cpWs9">
-              <property role="TrG5h" value="teststr" />
-              <node concept="3Tqbb2" id="6rlO$dpFcxA" role="1tU5fm">
-                <ref role="ehGHo" to="bsp8:6rlO$dpFa4O" resolve="ArgumentBasedOnSMVTestsStrategy" />
-              </node>
-              <node concept="2pJPEk" id="6rlO$dpFc_p" role="33vP2m">
-                <node concept="2pJPED" id="6rlO$dpFcBk" role="2pJPEn">
-                  <ref role="2pJxaS" to="bsp8:6rlO$dpFa4O" resolve="ArgumentBasedOnSMVTestsStrategy" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="7bxPmtp6P4p" role="3cqZAp">
             <node concept="3cpWsn" id="7bxPmtp6P4q" role="3cpWs9">
               <property role="TrG5h" value="sss" />
@@ -359,23 +283,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="6rlO$dpFcI0" role="3cqZAp">
-            <node concept="2OqwBi" id="6rlO$dpFfkv" role="3clFbG">
-              <node concept="2OqwBi" id="6rlO$dpFcTF" role="2Oq$k0">
-                <node concept="37vLTw" id="6rlO$dpFcHY" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7bxPmtp6P4D" resolve="gs" />
-                </node>
-                <node concept="3Tsc0h" id="6rlO$dpFdfe" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="6rlO$dpFivO" role="2OqNvi">
-                <node concept="37vLTw" id="6rlO$dpFiHK" role="25WWJ7">
-                  <ref role="3cqZAo" node="6rlO$dpFcxF" resolve="teststr" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="7bxPmtp6P4P" role="3cqZAp">
             <node concept="2OqwBi" id="7bxPmtp6P4Q" role="3clFbG">
               <node concept="2OqwBi" id="7bxPmtp6P4R" role="2Oq$k0">
@@ -389,39 +296,6 @@
               <node concept="TSZUe" id="7bxPmtp6P4U" role="2OqNvi">
                 <node concept="37vLTw" id="7bxPmtp6P4V" role="25WWJ7">
                   <ref role="3cqZAo" node="7bxPmtp6P4q" resolve="sss" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="6rlO$dpFj2V" role="3cqZAp">
-            <node concept="2OqwBi" id="6rlO$dpFl5Y" role="3clFbG">
-              <node concept="2OqwBi" id="6rlO$dpFj69" role="2Oq$k0">
-                <node concept="37vLTw" id="6rlO$dpFj2T" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7bxPmtp6P4D" resolve="gs" />
-                </node>
-                <node concept="3Tsc0h" id="6rlO$dpFjiq" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="6rlO$dpFnS1" role="2OqNvi">
-                <node concept="2pJPEk" id="6rlO$dpFo4c" role="25WWJ7">
-                  <node concept="2pJPED" id="6rlO$dpFokg" role="2pJPEn">
-                    <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-                    <node concept="2pIpSj" id="6rlO$dpFoxj" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                      <node concept="36biLy" id="6rlO$dpFoGi" role="28nt2d">
-                        <node concept="37vLTw" id="6rlO$dpFoIn" role="36biLW">
-                          <ref role="3cqZAo" node="6rlO$dpFcxF" resolve="teststr" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="6rlO$dpFpki" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                      <node concept="36biLy" id="6rlO$dpFpvm" role="28nt2d">
-                        <node concept="1r4Lsj" id="6rlO$dpFpxr" role="36biLW" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>

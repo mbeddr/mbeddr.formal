@@ -95,7 +95,7 @@
       <node concept="3clFbS" id="7bxPmtp7D_p" role="3clF47">
         <node concept="3clFbF" id="7bxPmtp7DIB" role="3cqZAp">
           <node concept="Xl_RD" id="7bxPmtp7DIA" role="3clFbG">
-            <property role="Xl_RC" value="Top-Level Patterns/Argument Over Hazards" />
+            <property role="Xl_RC" value="03 DSL Patterns/Top-Level/Argument Over Hazards Pattern" />
           </node>
         </node>
       </node>
@@ -149,7 +149,7 @@
       <node concept="3clFbS" id="7TjUbLQ5OzC" role="3clF47">
         <node concept="3clFbF" id="7TjUbLQ5OzD" role="3cqZAp">
           <node concept="Xl_RD" id="7TjUbLQ5OzE" role="3clFbG">
-            <property role="Xl_RC" value="Top-Level Patterns/Argument Over Hazards" />
+            <property role="Xl_RC" value="03 DSL Patterns/Top-Level/Argument Over Hazards Pattern" />
           </node>
         </node>
       </node>
@@ -169,7 +169,7 @@
       <node concept="3clFbS" id="1$M4_qbWkLk" role="3clF47">
         <node concept="3clFbF" id="1$M4_qbWkLl" role="3cqZAp">
           <node concept="Xl_RD" id="1$M4_qbWkLm" role="3clFbG">
-            <property role="Xl_RC" value="Top-Level Patterns/Argument Over Requirements" />
+            <property role="Xl_RC" value="03 DSL Patterns/Top-Level/Argument Over Requirements Pattern" />
           </node>
         </node>
       </node>
@@ -189,7 +189,7 @@
       <node concept="3clFbS" id="1$M4_qbWA98" role="3clF47">
         <node concept="3clFbF" id="1$M4_qbWA99" role="3cqZAp">
           <node concept="Xl_RD" id="1$M4_qbWA9a" role="3clFbG">
-            <property role="Xl_RC" value="Top-Level Patterns/Argument Over Requirements" />
+            <property role="Xl_RC" value="03 DSL Patterns/Top-Level/Argument Over Requirements Pattern" />
           </node>
         </node>
       </node>
@@ -208,7 +208,7 @@
       <node concept="3clFbS" id="6rlO$dpKLrz" role="3clF47">
         <node concept="3clFbF" id="6rlO$dpKLr$" role="3cqZAp">
           <node concept="Xl_RD" id="6rlO$dpKLr_" role="3clFbG">
-            <property role="Xl_RC" value="Top-Level (Patterns)" />
+            <property role="Xl_RC" value="03 DSL Patterns/Top-Level" />
           </node>
         </node>
       </node>
@@ -228,7 +228,7 @@
       <node concept="3clFbS" id="6rlO$dpJUOx" role="3clF47">
         <node concept="3clFbF" id="6rlO$dpJUOy" role="3cqZAp">
           <node concept="Xl_RD" id="6rlO$dpJUOz" role="3clFbG">
-            <property role="Xl_RC" value="Contract-based design (Patterns)" />
+            <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
           </node>
         </node>
       </node>
@@ -248,7 +248,7 @@
       <node concept="3clFbS" id="6rlO$dpMaBP" role="3clF47">
         <node concept="3clFbF" id="6rlO$dpMaBQ" role="3cqZAp">
           <node concept="Xl_RD" id="6rlO$dpMaBR" role="3clFbG">
-            <property role="Xl_RC" value="Contract-based design (Patterns)" />
+            <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
           </node>
         </node>
       </node>
