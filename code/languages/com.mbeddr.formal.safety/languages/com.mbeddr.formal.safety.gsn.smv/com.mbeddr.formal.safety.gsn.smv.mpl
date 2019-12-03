@@ -42,6 +42,7 @@
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
         <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
+        <module reference="f465db4c-63d4-40ef-afda-acd713dc19a1(com.mbeddr.formal.safety.gsn.patterns)" version="0" />
         <module reference="7f3eac5a-7f9a-4fbe-8264-f69c70ece985(com.mbeddr.formal.safety.gsn.smv)" version="0" />
         <module reference="0281c698-7f76-4575-85b2-63ede6a1e805(com.mbeddr.formal.safety.gsn.smv#01)" version="0" />
         <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />

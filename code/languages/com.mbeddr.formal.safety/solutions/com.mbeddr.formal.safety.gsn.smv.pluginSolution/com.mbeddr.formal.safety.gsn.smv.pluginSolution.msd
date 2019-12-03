@@ -55,6 +55,7 @@
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" version="0" />
     <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
+    <module reference="f465db4c-63d4-40ef-afda-acd713dc19a1(com.mbeddr.formal.safety.gsn.patterns)" version="0" />
     <module reference="7f3eac5a-7f9a-4fbe-8264-f69c70ece985(com.mbeddr.formal.safety.gsn.smv)" version="0" />
     <module reference="7deddb2c-6152-400d-b886-3520afdc89b1(com.mbeddr.formal.safety.gsn.smv.pluginSolution)" version="0" />
     <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
