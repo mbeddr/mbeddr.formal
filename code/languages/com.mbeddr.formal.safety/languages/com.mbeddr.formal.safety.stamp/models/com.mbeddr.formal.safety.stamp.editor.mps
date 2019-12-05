@@ -1028,5 +1028,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4q9fsxm3oN6">
+    <property role="3GE5qa" value="baseLanguage.analysis.consequence" />
+    <ref role="1XX52x" to="bewr:4q9fsxm3ow8" resolve="HazardRef" />
+    <node concept="1iCGBv" id="4q9fsxm3oNp" role="2wV5jI">
+      <ref role="1NtTu8" to="bewr:4q9fsxm3owq" resolve="hazard" />
+      <node concept="1sVBvm" id="4q9fsxm3oNr" role="1sWHZn">
+        <node concept="3F0A7n" id="4q9fsxm3oN_" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="VechU" id="4q9fsxm3pZH" role="3F10Kt">
+            <property role="Vb096" value="fLwANPn/red" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

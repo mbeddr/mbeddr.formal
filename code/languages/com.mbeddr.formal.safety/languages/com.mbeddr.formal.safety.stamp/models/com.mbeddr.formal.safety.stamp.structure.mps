@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -291,6 +292,18 @@
       <property role="20kJfa" value="text" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4q9fsxm3ow8">
+    <property role="EcuMT" value="5082661585110796296" />
+    <property role="3GE5qa" value="baseLanguage.analysis.consequence" />
+    <property role="TrG5h" value="HazardRef" />
+    <ref role="1TJDcQ" node="1JhvKLLOZ8r" resolve="ConsequenceBase" />
+    <node concept="1TJgyj" id="4q9fsxm3owq" role="1TKVEi">
+      <property role="IQ2ns" value="5082661585110796314" />
+      <property role="20kJfa" value="hazard" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
     </node>
   </node>
 </model>
