@@ -75,7 +75,6 @@
         <child id="1714872972676625063" name="rhs" index="kwC55" />
         <child id="1714872972676625061" name="lhs" index="kwC57" />
       </concept>
-      <concept id="1714872972678835980" name="com.mbeddr.formal.spin.c.core.structure.ReferenceExpression" flags="ng" index="kJdNI" />
       <concept id="2291855968621468737" name="com.mbeddr.formal.spin.c.core.structure.IfStatement" flags="ng" index="19Ldat">
         <child id="2291855968621468767" name="cond" index="19Lda3" />
         <child id="2291855968621468763" name="thenPart" index="19Lda7" />
@@ -130,10 +129,6 @@
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="1714872972675815456" name="com.mbeddr.formal.spin.structure.OrExpression" flags="ng" index="kzIJ2" />
-      <concept id="1714872972677915924" name="com.mbeddr.formal.spin.structure.CTrack" flags="ng" index="kFHrQ">
-        <child id="1714872972677915927" name="memoryLocation" index="kFHrP" />
-        <child id="1714872972677915929" name="size" index="kFHrV" />
-      </concept>
       <concept id="1714872972675012653" name="com.mbeddr.formal.spin.structure.CExpr" flags="ng" index="kYyJf" />
       <concept id="5285453794053229581" name="com.mbeddr.formal.spin.structure.StringLiteral" flags="ng" index="2m4jwP">
         <property id="5285453794053229582" name="value" index="2m4jwQ" />
@@ -652,50 +647,8 @@
         <property role="TrG5h" value="number_of_lines_in_file" />
         <node concept="1a0DGp" id="6DdnOgjaFUI" role="1a0DGc" />
       </node>
-      <node concept="1a039r" id="6DdnOgjaG1Q" role="1a5nXs">
-        <property role="TrG5h" value="crt_index" />
-        <node concept="1a0DGp" id="6DdnOgjaG1O" role="1a0DGc" />
-        <node concept="17Uvod" id="4b60pu4wc7h" role="lGtFl">
-          <property role="2qtEX9" value="name" />
-          <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-          <node concept="3zFVjK" id="4b60pu4wc7i" role="3zH0cK">
-            <node concept="3clFbS" id="4b60pu4wc7j" role="2VODD2">
-              <node concept="3clFbF" id="4b60pu4wc7O" role="3cqZAp">
-                <node concept="2YIFZM" id="4b60pu4wcoi" role="3clFbG">
-                  <ref role="37wK5l" to="m8ix:4b60pu4wclq" resolve="nameOfIndexVariable" />
-                  <ref role="1Pybhc" to="m8ix:6DdnOgjbPEP" resolve="PromelaBasedMonitorNamingUtils" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2xLtbV" id="6DdnOgjaFpK" role="2mr7gi" />
-    <node concept="kFHrQ" id="4Q$F1bo0feq" role="2mr7gi">
-      <node concept="kJdNI" id="4Q$F1bo0fAL" role="kFHrP">
-        <node concept="ru7O1" id="4Q$F1bo0fB6" role="32OYtT">
-          <property role="ru7PJ" value="crt_index" />
-          <node concept="17Uvod" id="4Q$F1bo0fBd" role="lGtFl">
-            <property role="2qtEX9" value="value" />
-            <property role="P4ACc" value="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f/7320199582618415037/7320199582618415059" />
-            <node concept="3zFVjK" id="4Q$F1bo0fBe" role="3zH0cK">
-              <node concept="3clFbS" id="4Q$F1bo0fBf" role="2VODD2">
-                <node concept="3clFbF" id="4Q$F1bo0fKb" role="3cqZAp">
-                  <node concept="2YIFZM" id="4Q$F1bo0fKc" role="3clFbG">
-                    <ref role="37wK5l" to="m8ix:4b60pu4wclq" resolve="nameOfIndexVariable" />
-                    <ref role="1Pybhc" to="m8ix:6DdnOgjbPEP" resolve="PromelaBasedMonitorNamingUtils" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="ru7O1" id="4Q$F1bo0fBa" role="kFHrV">
-        <property role="ru7PJ" value="sizeof(int)" />
-      </node>
-    </node>
     <node concept="2xNTiH" id="6XKrTzky$XH" role="2mr7gi">
       <property role="TrG5h" value="port_value" />
       <node concept="2m7kok" id="6XKrTzky$XF" role="1a0DGc" />
@@ -828,7 +781,7 @@
                   <node concept="1a0DGY" id="4b60pu4uWv0" role="1BCXOa">
                     <ref role="1a0DGZ" to="bl1s:4b60pu4uWi5" resolve="printf" />
                     <node concept="2m4jwP" id="4b60pu4uWva" role="1a0DGU">
-                      <property role="2m4jwQ" value="Could not open file %s" />
+                      <property role="2m4jwQ" value="Could not open file %s\n" />
                     </node>
                     <node concept="3XkMEJ" id="4b60pu4uWvv" role="1a0DGU">
                       <ref role="2m6DZP" node="6Ay06Il1Qyk" resolve="filename" />
@@ -1482,8 +1435,8 @@
                     <property role="2IPVms" value="42" />
                   </node>
                   <node concept="3uJC8e" id="_aATtEigIO" role="2H9Iav">
-                    <node concept="1a0deV" id="_aATtEigJo" role="3uJC8f">
-                      <ref role="2m6DZP" node="6DdnOgjaG1Q" resolve="crt_index" />
+                    <node concept="2IPVmt" id="3kEBMNbZOS$" role="3uJC8f">
+                      <property role="2IPVms" value="42" />
                     </node>
                     <node concept="1a0deV" id="_aATtEigIA" role="32OYtT">
                       <ref role="2m6DZP" node="6DdnOgjaFGO" resolve="my_port_value" />

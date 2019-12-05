@@ -162,19 +162,6 @@
   </registry>
   <node concept="312cEu" id="6DdnOgjbPEP">
     <property role="TrG5h" value="PromelaBasedMonitorNamingUtils" />
-    <node concept="2tJIrI" id="6DdnOgjbPFl" role="jymVt" />
-    <node concept="2YIFZL" id="4b60pu4wclq" role="jymVt">
-      <property role="TrG5h" value="nameOfIndexVariable" />
-      <node concept="3clFbS" id="4b60pu4wclt" role="3clF47">
-        <node concept="3clFbF" id="4b60pu4wcmD" role="3cqZAp">
-          <node concept="Xl_RD" id="4b60pu4wcmC" role="3clFbG">
-            <property role="Xl_RC" value="crt_index" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="4b60pu4wcke" role="1B3o_S" />
-      <node concept="17QB3L" id="4b60pu4wcle" role="3clF45" />
-    </node>
     <node concept="2tJIrI" id="4b60pu4wciD" role="jymVt" />
     <node concept="2YIFZL" id="6DdnOgjbPH4" role="jymVt">
       <property role="TrG5h" value="nameOfPromelaFile" />
