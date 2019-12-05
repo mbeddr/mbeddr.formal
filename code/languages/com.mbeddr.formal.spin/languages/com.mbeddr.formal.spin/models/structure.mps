@@ -1161,7 +1161,7 @@
   </node>
   <node concept="1TIwiD" id="_aATtEeK2H">
     <property role="EcuMT" value="669518569242558637" />
-    <property role="3GE5qa" value="spec.ltl" />
+    <property role="3GE5qa" value="spec.ltl.unary" />
     <property role="TrG5h" value="LTLUnaryExpression" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="_aATtEeK2E" resolve="LTLExpression" />
@@ -1175,7 +1175,7 @@
   </node>
   <node concept="1TIwiD" id="_aATtEeM9Z">
     <property role="EcuMT" value="669518569242567295" />
-    <property role="3GE5qa" value="spec.ltl" />
+    <property role="3GE5qa" value="spec.ltl.unary" />
     <property role="TrG5h" value="GloballyExpression" />
     <property role="34LRSv" value="[]" />
     <property role="R4oN_" value="globally" />
@@ -1183,11 +1183,56 @@
   </node>
   <node concept="1TIwiD" id="_aATtEeMa0">
     <property role="EcuMT" value="669518569242567296" />
-    <property role="3GE5qa" value="spec.ltl" />
+    <property role="3GE5qa" value="spec.ltl.unary" />
     <property role="TrG5h" value="EventuallyExpression" />
     <property role="34LRSv" value="&lt;&gt;" />
     <property role="R4oN_" value="eventually" />
     <ref role="1TJDcQ" node="_aATtEeK2H" resolve="LTLUnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="3kEBMNbZDCc">
+    <property role="EcuMT" value="3831049447781865996" />
+    <property role="3GE5qa" value="spec.ltl.unary" />
+    <property role="TrG5h" value="NextExpression" />
+    <property role="34LRSv" value="X" />
+    <property role="R4oN_" value="next" />
+    <ref role="1TJDcQ" node="_aATtEeK2H" resolve="LTLUnaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="3kEBMNbZK0Q">
+    <property role="EcuMT" value="3831049447781892150" />
+    <property role="3GE5qa" value="expressions.logical" />
+    <property role="TrG5h" value="ImpliesExpression" />
+    <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="implies" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WnsxEd" resolve="ImpliesExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="3kEBMNbZUo8">
+    <property role="EcuMT" value="3831049447781934600" />
+    <property role="3GE5qa" value="spec.ltl.binary" />
+    <property role="TrG5h" value="LTLBinaryExpression" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="_aATtEeK2E" resolve="LTLExpression" />
+    <node concept="1TJgyj" id="3kEBMNbZUoc" role="1TKVEi">
+      <property role="IQ2ns" value="3831049447781934604" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3kEBMNbZUoe" role="1TKVEi">
+      <property role="IQ2ns" value="3831049447781934606" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3kEBMNc1FxD">
+    <property role="EcuMT" value="3831049447782398057" />
+    <property role="3GE5qa" value="spec.ltl.binary" />
+    <property role="TrG5h" value="LTLUntilExpression" />
+    <property role="34LRSv" value="U" />
+    <property role="R4oN_" value="until" />
+    <ref role="1TJDcQ" node="3kEBMNbZUo8" resolve="LTLBinaryExpression" />
   </node>
 </model>
 

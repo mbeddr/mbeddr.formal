@@ -83,7 +83,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -644,6 +646,30 @@
     </node>
     <node concept="13hLZK" id="6HIPWY0dvyR" role="13h7CW">
       <node concept="3clFbS" id="6HIPWY0dvyS" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3kEBMNbZWV_">
+    <property role="3GE5qa" value="spec.ltl.binary" />
+    <ref role="13h7C2" to="o3hv:3kEBMNbZUo8" resolve="LTLBinaryExpression" />
+    <node concept="13i0hz" id="3_qrK00j4rM" role="13h7CS">
+      <property role="TrG5h" value="requiresParensAroundArgument" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="3_qrK00j4rN" role="1B3o_S" />
+      <node concept="3clFbS" id="3_qrK00j4rP" role="3clF47">
+        <node concept="3cpWs6" id="3_qrK00j4rT" role="3cqZAp">
+          <node concept="3clFbT" id="3_qrK00j4rV" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3_qrK00j4rQ" role="3clF45" />
+      <node concept="37vLTG" id="3_qrK00j4rR" role="3clF46">
+        <property role="TrG5h" value="argument" />
+        <node concept="3Tqbb2" id="3_qrK00j4rS" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="3kEBMNbZWVA" role="13h7CW">
+      <node concept="3clFbS" id="3kEBMNbZWVB" role="2VODD2" />
     </node>
   </node>
 </model>

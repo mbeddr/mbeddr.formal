@@ -20,7 +20,6 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="8fa6837b-ded6-4b1e-a190-ce0b2256e987(com.mbeddr.formal.spin.genplan)" version="0" />
     <module reference="65ecbe01-69b9-478b-969c-8c3c97f27e81(com.mbeddr.formal.spin.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
