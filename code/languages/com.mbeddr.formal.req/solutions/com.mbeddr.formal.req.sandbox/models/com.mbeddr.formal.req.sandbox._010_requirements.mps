@@ -117,30 +117,7 @@
         <node concept="0nzK2" id="2N7iSwGBlB8" role="1QQeAV">
           <node concept="19SGf9" id="2N7iSwGBlB9" role="0nzdz">
             <node concept="19SUe$" id="2N7iSwGBlBa" role="19SJt6">
-              <property role="19SUeA" value="some text " />
-            </node>
-            <node concept="0nLfM" id="2N7iSwGBlBf" role="19SJt6">
-              <node concept="0nNoy" id="2N7iSwGBlBg" role="0nLfN">
-                <node concept="0nzK2" id="2N7iSwGBlGw" role="0nNoz">
-                  <node concept="19SGf9" id="2N7iSwGBlGx" role="0nzdz">
-                    <node concept="19SUe$" id="2N7iSwGBlGy" role="19SJt6">
-                      <property role="19SUeA" value="dd" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="0nNoy" id="2N7iSwGBlBm" role="0nLfN">
-                <node concept="0nzK2" id="2N7iSwGBlBn" role="0nNoz">
-                  <node concept="19SGf9" id="2N7iSwGBlBo" role="0nzdz">
-                    <node concept="19SUe$" id="2N7iSwGBlBp" role="19SJt6">
-                      <property role="19SUeA" value="l2" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2N7iSwGBlBh" role="19SJt6">
-              <property role="19SUeA" value="&#10;eee&#10;eee" />
+              <property role="19SUeA" value="plain natural language text  &#10;&#10;BORINGGGG..." />
             </node>
           </node>
         </node>
