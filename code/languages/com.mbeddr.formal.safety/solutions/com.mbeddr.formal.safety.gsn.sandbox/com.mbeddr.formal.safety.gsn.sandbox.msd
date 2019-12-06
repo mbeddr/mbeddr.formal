@@ -25,7 +25,7 @@
     <language slang="l:8c301636-fbda-4009-bce8-7e00c3c1bac5:com.mbeddr.formal.safety.gsn.odd" version="0" />
     <language slang="l:f465db4c-63d4-40ef-afda-acd713dc19a1:com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <language slang="l:2ec00dc3-d0e8-497d-8fe3-82d556eb83ba:com.mbeddr.formal.safety.gsn.req" version="0" />
-    <language slang="l:7f3eac5a-7f9a-4fbe-8264-f69c70ece985:com.mbeddr.formal.safety.gsn.smv" version="0" />
+    <language slang="l:7f3eac5a-7f9a-4fbe-8264-f69c70ece985:com.mbeddr.formal.safety.gsn.smv" version="4" />
     <language slang="l:17da266c-02d9-4bbd-b69b-8a656b49f45c:com.mbeddr.formal.safety.hara" version="0" />
     <language slang="l:ad8d48af-022b-40dc-8979-2b76074fb438:com.mbeddr.formal.spin" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />

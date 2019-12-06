@@ -682,7 +682,7 @@
               </node>
               <node concept="3O6GUB" id="7kF4CZHBgzT" role="2OqNvi">
                 <node concept="chp4Y" id="4qaoH_E9nB" role="3QVz_e">
-                  <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                  <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
                 </node>
               </node>
             </node>
@@ -773,7 +773,7 @@
                     <node concept="36biLy" id="7kF4CZHAemz" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_ERN_" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_EWkO" role="3oSUPX">
-                          <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                          <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
                         </node>
                         <node concept="37vLTw" id="4qaoH_ERNB" role="1m5AlR">
                           <ref role="3cqZAo" node="7kF4CZHAelZ" resolve="toNode" />
@@ -1076,7 +1076,7 @@
               </node>
               <node concept="3O6GUB" id="4qaoH_QQ6i" role="2OqNvi">
                 <node concept="chp4Y" id="4qaoH_QSLY" role="3QVz_e">
-                  <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                  <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
                 </node>
               </node>
             </node>
@@ -1167,7 +1167,7 @@
                     <node concept="36biLy" id="4qaoH_QQ6V" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_QQ6W" role="36biLW">
                         <node concept="chp4Y" id="4qaoH_QQ6X" role="3oSUPX">
-                          <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                          <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
                         </node>
                         <node concept="37vLTw" id="4qaoH_QQ6Y" role="1m5AlR">
                           <ref role="3cqZAo" node="4qaoH_QQ6x" resolve="toNode" />

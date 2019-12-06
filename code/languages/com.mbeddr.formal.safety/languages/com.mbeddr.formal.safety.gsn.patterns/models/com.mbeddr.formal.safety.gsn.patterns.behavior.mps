@@ -175,6 +175,30 @@
       </node>
       <node concept="17QB3L" id="1$M4_qbWkLn" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4i__4Gxoi9$" role="13h7CS">
+      <property role="TrG5h" value="getRequirementSatisfiedGoals" />
+      <node concept="3Tm1VV" id="4i__4Gxoi9_" role="1B3o_S" />
+      <node concept="2I9FWS" id="4i__4Gxoi9A" role="3clF45">
+        <ref role="2I9WkF" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
+      </node>
+      <node concept="3clFbS" id="4i__4Gxoi9B" role="3clF47">
+        <node concept="3clFbF" id="4i__4Gxoi9C" role="3cqZAp">
+          <node concept="2OqwBi" id="4i__4Gxoi9D" role="3clFbG">
+            <node concept="2OqwBi" id="4i__4Gxoi9E" role="2Oq$k0">
+              <node concept="BsUDl" id="4i__4Gxoi9F" role="2Oq$k0">
+                <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
+              </node>
+              <node concept="v3k3i" id="4i__4Gxoi9G" role="2OqNvi">
+                <node concept="chp4Y" id="4i__4GxoiQY" role="v3oSu">
+                  <ref role="cht4Q" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="4i__4Gxoi9I" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="1$M4_qbWkGT" role="13h7CW">
       <node concept="3clFbS" id="1$M4_qbWkGU" role="2VODD2" />
     </node>
@@ -238,24 +262,24 @@
       <node concept="3clFbS" id="6rlO$dpJUO1" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6rlO$dpMaAt">
+  <node concept="13h7C7" id="6rlO$dpKLr1">
     <property role="3GE5qa" value="cbd" />
-    <ref role="13h7C2" to="2qxf:6rlO$dpMaAs" resolve="CompatibilityCheckGoal" />
-    <node concept="13i0hz" id="6rlO$dpMaBN" role="13h7CS">
+    <ref role="13h7C2" to="2qxf:6rlO$dpKGs6" resolve="CBDCheckGoal" />
+    <node concept="13i0hz" id="6rlO$dpR4YQ" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="6rlO$dpMaBO" role="1B3o_S" />
-      <node concept="3clFbS" id="6rlO$dpMaBP" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpMaBQ" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpMaBR" role="3clFbG">
+      <node concept="3Tm1VV" id="6rlO$dpR4YR" role="1B3o_S" />
+      <node concept="3clFbS" id="6rlO$dpR4YS" role="3clF47">
+        <node concept="3clFbF" id="6rlO$dpR4YT" role="3cqZAp">
+          <node concept="Xl_RD" id="6rlO$dpR4YU" role="3clFbG">
             <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="6rlO$dpMaBS" role="3clF45" />
+      <node concept="17QB3L" id="6rlO$dpR4YV" role="3clF45" />
     </node>
-    <node concept="13hLZK" id="6rlO$dpMaAu" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpMaAv" role="2VODD2" />
+    <node concept="13hLZK" id="6rlO$dpKLr2" role="13h7CW">
+      <node concept="3clFbS" id="6rlO$dpKLr3" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -124,11 +124,11 @@
             <node concept="3cpWsn" id="7bxPmtp6b_x" role="3cpWs9">
               <property role="TrG5h" value="sss" />
               <node concept="3Tqbb2" id="7bxPmtp6aH8" role="1tU5fm">
-                <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
               </node>
               <node concept="2pJPEk" id="7bxPmtp6b_y" role="33vP2m">
                 <node concept="2pJPED" id="7bxPmtp6b_z" role="2pJPEn">
-                  <ref role="2pJxaS" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                  <ref role="2pJxaS" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
                 </node>
               </node>
             </node>
@@ -259,11 +259,11 @@
             <node concept="3cpWsn" id="7bxPmtp6P4q" role="3cpWs9">
               <property role="TrG5h" value="sss" />
               <node concept="3Tqbb2" id="7bxPmtp6P4r" role="1tU5fm">
-                <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
               </node>
               <node concept="2pJPEk" id="7bxPmtp6P4s" role="33vP2m">
                 <node concept="2pJPED" id="7bxPmtp6P4t" role="2pJPEn">
-                  <ref role="2pJxaS" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+                  <ref role="2pJxaS" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
                 </node>
               </node>
             </node>

@@ -9,6 +9,7 @@
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="g8ih" ref="r:d04ada13-9d56-43be-9fbe-16c353913377(com.mbeddr.formal.safety.gsn.patterns.behavior)" />
+    <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -242,6 +243,126 @@
     <node concept="1YaCAy" id="6FysnQMU7oj" role="1YuTPh">
       <property role="TrG5h" value="sp" />
       <ref role="1YaFvo" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4i__4Gxo8uH">
+    <property role="TrG5h" value="check_ArgumentOverRequirementsStrategyPattern" />
+    <property role="3GE5qa" value="requirements" />
+    <node concept="3clFbS" id="4i__4Gxo8uI" role="18ibNy">
+      <node concept="3cpWs8" id="4i__4Gxo8xf" role="3cqZAp">
+        <node concept="3cpWsn" id="4i__4Gxo8xi" role="3cpWs9">
+          <property role="TrG5h" value="requirementsClaimedToBeSatisfied" />
+          <node concept="2I9FWS" id="4i__4Gxo8xe" role="1tU5fm">
+            <ref role="2I9WkF" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
+          </node>
+          <node concept="2OqwBi" id="4i__4GxohzN" role="33vP2m">
+            <node concept="2OqwBi" id="4i__4Gxof2w" role="2Oq$k0">
+              <node concept="2OqwBi" id="4i__4Gxo9vP" role="2Oq$k0">
+                <node concept="2OqwBi" id="4i__4Gxo8Kd" role="2Oq$k0">
+                  <node concept="1YBJjd" id="4i__4Gxo8y_" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4i__4Gxo8uK" resolve="aorsp" />
+                  </node>
+                  <node concept="3TrEf2" id="4i__4Gxo90w" role="2OqNvi">
+                    <ref role="3Tt5mk" to="2qxf:1$M4_qbW4nT" resolve="requirementsList" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="4i__4Gxo9G5" role="2OqNvi">
+                  <ref role="3TtcxE" to="z27p:4gtLUSMLiT5" resolve="requirements" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="4i__4Gxohke" role="2OqNvi">
+                <node concept="chp4Y" id="4i__4Gxohl7" role="v3oSu">
+                  <ref role="cht4Q" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="4i__4GxohPh" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="4i__4GxoqNq" role="3cqZAp">
+        <node concept="3cpWsn" id="4i__4GxoqNr" role="3cpWs9">
+          <property role="TrG5h" value="satisfiedRequirements" />
+          <node concept="A3Dl8" id="4i__4GxoqzQ" role="1tU5fm">
+            <node concept="3Tqbb2" id="4i__4GxoqzT" role="A3Ik2">
+              <ref role="ehGHo" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4i__4GxoqNs" role="33vP2m">
+            <node concept="2OqwBi" id="4i__4GxoqNt" role="2Oq$k0">
+              <node concept="1YBJjd" id="4i__4GxoqNu" role="2Oq$k0">
+                <ref role="1YBMHb" node="4i__4Gxo8uK" resolve="aorsp" />
+              </node>
+              <node concept="2qgKlT" id="4i__4GxoqNv" role="2OqNvi">
+                <ref role="37wK5l" to="g8ih:4i__4Gxoi9$" resolve="getRequirementSatisfiedGoals" />
+              </node>
+            </node>
+            <node concept="3$u5V9" id="4i__4GxoqNw" role="2OqNvi">
+              <node concept="1bVj0M" id="4i__4GxoqNx" role="23t8la">
+                <node concept="3clFbS" id="4i__4GxoqNy" role="1bW5cS">
+                  <node concept="3clFbF" id="4i__4GxoqNz" role="3cqZAp">
+                    <node concept="2OqwBi" id="4i__4GxoqN$" role="3clFbG">
+                      <node concept="37vLTw" id="4i__4GxoqN_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4i__4GxoqNB" resolve="it" />
+                      </node>
+                      <node concept="3TrEf2" id="4i__4GxoqNA" role="2OqNvi">
+                        <ref role="3Tt5mk" to="2qxf:1$M4_qbWlC1" resolve="requirement" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="4i__4GxoqNB" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="4i__4GxoqNC" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="4i__4GxoxSR" role="3cqZAp">
+        <node concept="3cpWsn" id="4i__4GxoxSS" role="3cpWs9">
+          <property role="TrG5h" value="notSatisfiedRequirements" />
+          <node concept="A3Dl8" id="4i__4GxoxQN" role="1tU5fm">
+            <node concept="3Tqbb2" id="4i__4GxoxQQ" role="A3Ik2">
+              <ref role="ehGHo" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4i__4GxoxST" role="33vP2m">
+            <node concept="37vLTw" id="4i__4GxoxSU" role="2Oq$k0">
+              <ref role="3cqZAo" node="4i__4Gxo8xi" resolve="requirementsClaimedToBeSatisfied" />
+            </node>
+            <node concept="66VNe" id="4i__4GxoxSV" role="2OqNvi">
+              <node concept="37vLTw" id="4i__4GxoxSW" role="576Qk">
+                <ref role="3cqZAo" node="4i__4GxoqNr" resolve="satisfiedRequirements" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="4i__4Gxoyqg" role="3cqZAp">
+        <node concept="2OqwBi" id="4i__4GxoyPy" role="2MkoU_">
+          <node concept="37vLTw" id="4i__4GxoyBM" role="2Oq$k0">
+            <ref role="3cqZAo" node="4i__4GxoxSS" resolve="notSatisfiedRequirements" />
+          </node>
+          <node concept="1v1jN8" id="4i__4Gxoz0s" role="2OqNvi" />
+        </node>
+        <node concept="3cpWs3" id="4i__4GxozZa" role="2MkJ7o">
+          <node concept="37vLTw" id="4i__4Gxo$fR" role="3uHU7w">
+            <ref role="3cqZAo" node="4i__4GxoxSS" resolve="notSatisfiedRequirements" />
+          </node>
+          <node concept="Xl_RD" id="4i__4Gxoz0E" role="3uHU7B">
+            <property role="Xl_RC" value="not all requirements have been argued to be satisfied " />
+          </node>
+        </node>
+        <node concept="1YBJjd" id="4i__4Gxozra" role="2OEOjV">
+          <ref role="1YBMHb" node="4i__4Gxo8uK" resolve="aorsp" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4i__4Gxo8uK" role="1YuTPh">
+      <property role="TrG5h" value="aorsp" />
+      <ref role="1YaFvo" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
     </node>
   </node>
 </model>
