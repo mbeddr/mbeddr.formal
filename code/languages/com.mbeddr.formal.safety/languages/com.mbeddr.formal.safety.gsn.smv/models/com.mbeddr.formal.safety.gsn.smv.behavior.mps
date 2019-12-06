@@ -43,6 +43,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -66,11 +67,21 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -87,6 +98,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -146,7 +158,7 @@
   </registry>
   <node concept="13h7C7" id="4qaoH_Ei_S">
     <property role="3GE5qa" value="gsn.dsl.smv" />
-    <ref role="13h7C2" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+    <ref role="13h7C2" to="bsp8:4i__4Gxsq_o" resolve="SmvResultsSolutionBase" />
     <node concept="13i0hz" id="62$$j6uT0Us" role="13h7CS">
       <property role="TrG5h" value="computeHashCode" />
       <node concept="3Tm1VV" id="62$$j6uT0Ut" role="1B3o_S" />
@@ -232,16 +244,31 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="62$$j6uUgnE" role="3cqZAp">
-          <node concept="2YIFZM" id="62$$j6uUhO6" role="3clFbG">
-            <ref role="37wK5l" to="u35n:62$$j6uTScA" resolve="computeHashCode" />
-            <ref role="1Pybhc" to="u35n:62$$j6uTSaU" resolve="SNodeHashcodeBuilder" />
-            <node concept="37vLTw" id="62$$j6uUhOv" role="37wK5m">
+        <node concept="3clFbJ" id="4TT5pURV6pK" role="3cqZAp">
+          <node concept="3clFbS" id="4TT5pURV6pM" role="3clFbx">
+            <node concept="3cpWs6" id="4TT5pURV9_X" role="3cqZAp">
+              <node concept="2YIFZM" id="62$$j6uUhO6" role="3cqZAk">
+                <ref role="37wK5l" to="u35n:62$$j6uTScA" resolve="computeHashCode" />
+                <ref role="1Pybhc" to="u35n:62$$j6uTSaU" resolve="SNodeHashcodeBuilder" />
+                <node concept="37vLTw" id="62$$j6uUhOv" role="37wK5m">
+                  <ref role="3cqZAo" node="62$$j6uT8Vd" resolve="goal" />
+                </node>
+                <node concept="37vLTw" id="62$$j6uUziC" role="37wK5m">
+                  <ref role="3cqZAo" node="62$$j6uUyL7" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4TT5pURV6OH" role="3clFbw">
+            <node concept="10Nm6u" id="4TT5pURV6YY" role="3uHU7w" />
+            <node concept="37vLTw" id="4TT5pURV6vg" role="3uHU7B">
               <ref role="3cqZAo" node="62$$j6uT8Vd" resolve="goal" />
             </node>
-            <node concept="37vLTw" id="62$$j6uUziC" role="37wK5m">
-              <ref role="3cqZAo" node="62$$j6uUyL7" resolve="repo" />
-            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4TT5pURV9x2" role="3cqZAp">
+          <node concept="3cmrfG" id="4TT5pURV8xK" role="3cqZAk">
+            <property role="3cmrfH" value="0" />
           </node>
         </node>
       </node>
@@ -276,7 +303,7 @@
       <property role="TrG5h" value="getCorrespondingSolution" />
       <node concept="3Tm1VV" id="4qaoH_NgWO" role="1B3o_S" />
       <node concept="3Tqbb2" id="4qaoH_NgXj" role="3clF45">
-        <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+        <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
       </node>
       <node concept="3clFbS" id="4qaoH_NgWQ" role="3clF47">
         <node concept="3cpWs8" id="4qaoH_Nfbb" role="3cqZAp">
@@ -320,7 +347,7 @@
         <node concept="3clFbF" id="4qaoH_Npdn" role="3cqZAp">
           <node concept="1PxgMI" id="4qaoH_NB15" role="3clFbG">
             <node concept="chp4Y" id="4qaoH_NBaU" role="3oSUPX">
-              <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+              <ref role="cht4Q" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
             </node>
             <node concept="2OqwBi" id="4qaoH_Nq3D" role="1m5AlR">
               <node concept="2OqwBi" id="4qaoH_Npdp" role="2Oq$k0">
@@ -409,44 +436,24 @@
       <node concept="10P_77" id="7TjUbLQ8ejX" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="6rlO$dpKLr1">
-    <property role="3GE5qa" value="cbd" />
-    <ref role="13h7C2" to="bsp8:6rlO$dpKGs6" resolve="CorrectContractRefinementGoal" />
-    <node concept="13i0hz" id="6rlO$dpR4YQ" role="13h7CS">
+  <node concept="13h7C7" id="4i__4GxsoSV">
+    <property role="3GE5qa" value="gsn.dsl.smv" />
+    <ref role="13h7C2" to="bsp8:4i__4GxsoSU" resolve="SmvResults4CBDSolution" />
+    <node concept="13hLZK" id="4i__4GxsoSW" role="13h7CW">
+      <node concept="3clFbS" id="4i__4GxsoSX" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4i__4GxsoT6" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="6rlO$dpR4YR" role="1B3o_S" />
-      <node concept="3clFbS" id="6rlO$dpR4YS" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpR4YT" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpR4YU" role="3clFbG">
+      <node concept="3Tm1VV" id="4i__4GxsoT7" role="1B3o_S" />
+      <node concept="3clFbS" id="4i__4GxsoTc" role="3clF47">
+        <node concept="3clFbF" id="6rlO$dpJUOy" role="3cqZAp">
+          <node concept="Xl_RD" id="6rlO$dpJUOz" role="3clFbG">
             <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="6rlO$dpR4YV" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="6rlO$dpKLr2" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpKLr3" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="6rlO$dpMa_e">
-    <property role="3GE5qa" value="cbd" />
-    <ref role="13h7C2" to="bsp8:6rlO$dpMa_b" resolve="SubcompCorrectnessGoal" />
-    <node concept="13i0hz" id="6rlO$dpMa_I" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="6rlO$dpMa_J" role="1B3o_S" />
-      <node concept="3clFbS" id="6rlO$dpMa_K" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpMa_L" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpMa_M" role="3clFbG">
-            <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="6rlO$dpMa_N" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="6rlO$dpMa_f" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpMa_g" role="2VODD2" />
+      <node concept="17QB3L" id="4i__4GxsoTd" role="3clF45" />
     </node>
   </node>
 </model>

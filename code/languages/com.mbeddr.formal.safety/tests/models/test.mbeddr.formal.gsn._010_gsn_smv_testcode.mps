@@ -2,7 +2,7 @@
 <model ref="r:629afd9c-b7b8-4eb6-998b-0f26e8e5ef6a(test.mbeddr.formal.gsn._010_gsn_smv_testcode)">
   <persistence version="9" />
   <languages>
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="0" />
+    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="4" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
   </languages>
@@ -165,12 +165,7 @@
       </concept>
       <concept id="79421622115301715" name="com.mbeddr.formal.safety.gsn.smv.structure.SupportedBySmvVerificationResults" flags="ng" index="1$Gd3o" />
       <concept id="79421622115301714" name="com.mbeddr.formal.safety.gsn.smv.structure.InContextOfSmvModule" flags="ng" index="1$Gd3p" />
-      <concept id="79421622115107638" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvSpecSolution" flags="ng" index="1$GyEX">
-        <property id="79421622115107641" name="success" index="1$GyEM" />
-        <property id="79421622115107639" name="dateLong" index="1$GyEW" />
-        <property id="79421622118163395" name="dateShort" index="1$N8D8" />
-        <property id="6963850566126458057" name="hashCode" index="3Yu$nS" />
-      </concept>
+      <concept id="79421622115107638" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolution" flags="ng" index="1$GyEX" />
       <concept id="79421622115066961" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvSpecContext" flags="ng" index="1$JkRq">
         <reference id="79421622115066962" name="module" index="1$JkRp" />
       </concept>
@@ -179,6 +174,12 @@
       </concept>
       <concept id="79421622118208483" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvTestsGoal" flags="ng" index="1$NnDC">
         <reference id="79421622118208485" name="tests" index="1$NnDI" />
+      </concept>
+      <concept id="4946522816140912984" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase" flags="ng" index="1_P3Oj">
+        <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
+        <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
+        <property id="4946522816140921857" name="success" index="1_P5xa" />
+        <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
       </concept>
     </language>
     <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
@@ -430,10 +431,10 @@
     </node>
     <node concept="1$GyEX" id="CmOUmca2j4" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <property role="1$GyEW" value="Tue Nov 26 21:11:10 CET 2019" />
-      <property role="1$N8D8" value="26-11-2019 21:11:10" />
-      <property role="3Yu$nS" value="355830459" />
-      <property role="1$GyEM" value="true" />
+      <property role="1_P2tN" value="355830459" />
+      <property role="1_P5xa" value="true" />
+      <property role="1_P5wC" value="26-11-2019 21:11:10" />
+      <property role="1_P5yc" value="Tue Nov 26 21:11:10 CET 2019" />
       <node concept="19SGf9" id="CmOUmca2j5" role="2vnaTY">
         <node concept="19SUe$" id="CmOUmca2j6" role="19SJt6">
           <property role="19SUeA" value="ToDo" />
@@ -540,9 +541,9 @@
     </node>
     <node concept="1$GyEX" id="6XKrTzkqohm" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <property role="1$GyEW" value="Tue Nov 26 21:11:09 CET 2019" />
-      <property role="1$N8D8" value="26-11-2019 21:11:09" />
-      <property role="3Yu$nS" value="-1204136256" />
+      <property role="1_P2tN" value="-1204136256" />
+      <property role="1_P5wC" value="26-11-2019 21:11:09" />
+      <property role="1_P5yc" value="Tue Nov 26 21:11:09 CET 2019" />
       <node concept="19SGf9" id="6XKrTzkqohn" role="2vnaTY">
         <node concept="19SUe$" id="6XKrTzkqoho" role="19SJt6">
           <property role="19SUeA" value="ToDo" />
@@ -755,10 +756,10 @@
     <property role="TrG5h" value="_020_GSN_Test_goal_pass" />
     <node concept="1$GyEX" id="6XKrTzkrTmX" role="2vn1q5">
       <property role="TrG5h" value="NoName" />
-      <property role="1$GyEW" value="Tue Nov 26 21:11:10 CET 2019" />
-      <property role="1$N8D8" value="26-11-2019 21:11:10" />
-      <property role="1$GyEM" value="true" />
-      <property role="3Yu$nS" value="1986290898" />
+      <property role="1_P2tN" value="1986290898" />
+      <property role="1_P5xa" value="true" />
+      <property role="1_P5wC" value="26-11-2019 21:11:10" />
+      <property role="1_P5yc" value="Tue Nov 26 21:11:10 CET 2019" />
       <node concept="19SGf9" id="6XKrTzkrTmY" role="2vnaTY">
         <node concept="19SUe$" id="6XKrTzkrTmZ" role="19SJt6">
           <property role="19SUeA" value="ToDo" />
@@ -896,9 +897,9 @@
     <property role="TrG5h" value="_020_GSN_Test_goal_fail" />
     <node concept="1$GyEX" id="6XKrTzkrZFr" role="2vn1q5">
       <property role="TrG5h" value="NoName" />
-      <property role="1$GyEW" value="Tue Nov 26 21:11:10 CET 2019" />
-      <property role="1$N8D8" value="26-11-2019 21:11:10" />
-      <property role="3Yu$nS" value="2070972678" />
+      <property role="1_P2tN" value="2070972678" />
+      <property role="1_P5wC" value="26-11-2019 21:11:10" />
+      <property role="1_P5yc" value="Tue Nov 26 21:11:10 CET 2019" />
       <node concept="19SGf9" id="6XKrTzkrZFs" role="2vnaTY">
         <node concept="19SUe$" id="6XKrTzkrZFt" role="19SJt6">
           <property role="19SUeA" value="ToDo" />

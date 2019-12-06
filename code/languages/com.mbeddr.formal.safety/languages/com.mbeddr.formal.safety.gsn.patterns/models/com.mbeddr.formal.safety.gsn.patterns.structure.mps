@@ -122,12 +122,6 @@
       <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6rlO$dpMaAs">
-    <property role="EcuMT" value="7410059948618983836" />
-    <property role="TrG5h" value="CompatibilityCheckGoal" />
-    <property role="3GE5qa" value="cbd" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
-  </node>
   <node concept="1TIwiD" id="6rlO$dpPTOC">
     <property role="EcuMT" value="7410059948619963688" />
     <property role="3GE5qa" value="cbd" />
@@ -135,18 +129,11 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="6rlO$dpSw6o">
-    <property role="EcuMT" value="7410059948620644760" />
+  <node concept="1TIwiD" id="6rlO$dpKGs6">
+    <property role="EcuMT" value="7410059948618598150" />
+    <property role="TrG5h" value="CBDCheckGoal" />
+    <property role="34LRSv" value="CBD Check Goal" />
     <property role="3GE5qa" value="cbd" />
-    <property role="TrG5h" value="AbstractCorrectContractRefinementGoal" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
-  </node>
-  <node concept="1TIwiD" id="6rlO$dpSw7b">
-    <property role="EcuMT" value="7410059948620644811" />
-    <property role="3GE5qa" value="cbd" />
-    <property role="TrG5h" value="AbstractSubcompCorrectnessGoal" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
   </node>
 </model>

@@ -262,24 +262,24 @@
       <node concept="3clFbS" id="6rlO$dpJUO1" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6rlO$dpMaAt">
+  <node concept="13h7C7" id="6rlO$dpKLr1">
     <property role="3GE5qa" value="cbd" />
-    <ref role="13h7C2" to="2qxf:6rlO$dpMaAs" resolve="CompatibilityCheckGoal" />
-    <node concept="13i0hz" id="6rlO$dpMaBN" role="13h7CS">
+    <ref role="13h7C2" to="2qxf:6rlO$dpKGs6" resolve="CBDCheckGoal" />
+    <node concept="13i0hz" id="6rlO$dpR4YQ" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="6rlO$dpMaBO" role="1B3o_S" />
-      <node concept="3clFbS" id="6rlO$dpMaBP" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpMaBQ" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpMaBR" role="3clFbG">
+      <node concept="3Tm1VV" id="6rlO$dpR4YR" role="1B3o_S" />
+      <node concept="3clFbS" id="6rlO$dpR4YS" role="3clF47">
+        <node concept="3clFbF" id="6rlO$dpR4YT" role="3cqZAp">
+          <node concept="Xl_RD" id="6rlO$dpR4YU" role="3clFbG">
             <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="6rlO$dpMaBS" role="3clF45" />
+      <node concept="17QB3L" id="6rlO$dpR4YV" role="3clF45" />
     </node>
-    <node concept="13hLZK" id="6rlO$dpMaAu" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpMaAv" role="2VODD2" />
+    <node concept="13hLZK" id="6rlO$dpKLr2" role="13h7CW">
+      <node concept="3clFbS" id="6rlO$dpKLr3" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -12,7 +12,7 @@
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -29,6 +29,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -59,6 +62,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -145,29 +149,41 @@
   <node concept="1TIwiD" id="4qaoH_E0cQ">
     <property role="EcuMT" value="79421622115107638" />
     <property role="3GE5qa" value="gsn.dsl.smv" />
-    <property role="TrG5h" value="SmvSpecSolution" />
+    <property role="TrG5h" value="SmvResultsSolution" />
     <property role="34LRSv" value="SMV Spec Solution" />
     <property role="R4oN_" value="solution based on a nusmv verification" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$r_RC" resolve="Solution" />
+    <ref role="1TJDcQ" node="4i__4Gxsq_o" resolve="SmvResultsSolutionBase" />
     <node concept="1TJgyi" id="4qaoH_E0cR" role="1TKVEl">
       <property role="IQ2nx" value="79421622115107639" />
-      <property role="TrG5h" value="dateLong" />
+      <property role="TrG5h" value="dateLong_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="4i__4GxssNi" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4qaoH_PEf3" role="1TKVEl">
       <property role="IQ2nx" value="79421622118163395" />
-      <property role="TrG5h" value="dateShort" />
+      <property role="TrG5h" value="dateShort_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="4i__4GxssLI" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4qaoH_E0cT" role="1TKVEl">
       <property role="IQ2nx" value="79421622115107641" />
-      <property role="TrG5h" value="success" />
+      <property role="TrG5h" value="success_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="4i__4GxssKc" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="62$$j6uRHj9" role="1TKVEl">
       <property role="IQ2nx" value="6963850566126458057" />
-      <property role="TrG5h" value="hashCode" />
+      <property role="TrG5h" value="hashCode_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="4i__4Gxsrd3" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
+      </node>
     </node>
     <node concept="1irR5M" id="4qaoH_EiRU" role="rwd14">
       <property role="2$rrk2" value="3" />
@@ -241,39 +257,49 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
   </node>
-  <node concept="1TIwiD" id="6rlO$dpPU0s">
-    <property role="EcuMT" value="7410059948619964444" />
-    <property role="3GE5qa" value="cbd" />
+  <node concept="1TIwiD" id="4i__4Gxs2uL">
+    <property role="EcuMT" value="4946522816140814257" />
     <property role="TrG5h" value="ComponentAssemblyRef" />
     <ref role="1TJDcQ" to="2qxf:6rlO$dpPTOC" resolve="AbstractComponentRef" />
-    <node concept="1TJgyj" id="6rlO$dpPU0t" role="1TKVEi">
-      <property role="IQ2ns" value="7410059948619964445" />
-      <property role="20kJfa" value="assembly" />
+    <node concept="1TJgyj" id="4i__4Gxs2vk" role="1TKVEi">
+      <property role="IQ2ns" value="4946522816140814292" />
+      <property role="20kJfa" value="componentAssembly" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6rlO$dpKGs6">
-    <property role="EcuMT" value="7410059948618598150" />
-    <property role="TrG5h" value="CorrectContractRefinementGoal" />
-    <property role="34LRSv" value="Correct Contract Refinement Goal" />
-    <property role="3GE5qa" value="cbd" />
-    <ref role="1TJDcQ" to="2qxf:6rlO$dpSw6o" resolve="AbstractCorrectContractRefinementGoal" />
-    <node concept="1TJgyj" id="6rlO$dpKGsa" role="1TKVEi">
-      <property role="IQ2ns" value="7410059948618598154" />
-      <property role="20kJfa" value="component" />
-      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
-    </node>
+  <node concept="1TIwiD" id="4i__4GxsoSU">
+    <property role="EcuMT" value="4946522816140906042" />
+    <property role="3GE5qa" value="gsn.dsl.smv" />
+    <property role="TrG5h" value="SmvResults4CBDSolution" />
+    <property role="34LRSv" value="CBD SMV Results" />
+    <ref role="1TJDcQ" node="4i__4Gxsq_o" resolve="SmvResultsSolutionBase" />
   </node>
-  <node concept="1TIwiD" id="6rlO$dpMa_b">
-    <property role="EcuMT" value="7410059948618983755" />
-    <property role="TrG5h" value="SubcompCorrectnessGoal" />
-    <property role="3GE5qa" value="cbd" />
-    <ref role="1TJDcQ" to="2qxf:6rlO$dpSw7b" resolve="AbstractSubcompCorrectnessGoal" />
-    <node concept="1TJgyj" id="6rlO$dpMa_c" role="1TKVEi">
-      <property role="IQ2ns" value="7410059948618983756" />
-      <property role="20kJfa" value="subcomponent" />
-      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+  <node concept="1TIwiD" id="4i__4Gxsq_o">
+    <property role="EcuMT" value="4946522816140912984" />
+    <property role="3GE5qa" value="gsn.dsl.smv" />
+    <property role="TrG5h" value="SmvResultsSolutionBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$r_RC" resolve="Solution" />
+    <node concept="1TJgyi" id="4i__4GxsrcS" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140915512" />
+      <property role="TrG5h" value="hashCode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4i__4GxssK1" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140921857" />
+      <property role="TrG5h" value="success" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4i__4GxssLz" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140921955" />
+      <property role="TrG5h" value="dateShort" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4i__4GxssN7" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140922055" />
+      <property role="TrG5h" value="dateLong" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

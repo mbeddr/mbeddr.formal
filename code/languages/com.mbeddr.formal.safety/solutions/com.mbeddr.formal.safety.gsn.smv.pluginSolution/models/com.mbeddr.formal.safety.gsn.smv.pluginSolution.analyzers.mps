@@ -744,7 +744,7 @@
           <node concept="3cpWsn" id="4qaoH_SCGD" role="3cpWs9">
             <property role="TrG5h" value="sol" />
             <node concept="3Tqbb2" id="4qaoH_SCGB" role="1tU5fm">
-              <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvSpecSolution" />
+              <ref role="ehGHo" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
             </node>
             <node concept="2OqwBi" id="4qaoH_SCGE" role="33vP2m">
               <node concept="37vLTw" id="CmOUmcbrWR" role="2Oq$k0">
@@ -771,7 +771,7 @@
                 <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
               </node>
               <node concept="3TrcHB" id="4qaoH_NVMi" role="2OqNvi">
-                <ref role="3TsBF5" to="bsp8:4qaoH_E0cR" resolve="dateLong" />
+                <ref role="3TsBF5" to="bsp8:4i__4GxssN7" resolve="dateLong" />
               </node>
             </node>
           </node>
@@ -811,7 +811,7 @@
                 <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
               </node>
               <node concept="3TrcHB" id="4qaoH_TaPu" role="2OqNvi">
-                <ref role="3TsBF5" to="bsp8:4qaoH_PEf3" resolve="dateShort" />
+                <ref role="3TsBF5" to="bsp8:4i__4GxssLz" resolve="dateShort" />
               </node>
             </node>
           </node>
@@ -823,7 +823,7 @@
                 <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
               </node>
               <node concept="3TrcHB" id="4qaoH_Otg6" role="2OqNvi">
-                <ref role="3TsBF5" to="bsp8:4qaoH_E0cT" resolve="success" />
+                <ref role="3TsBF5" to="bsp8:4i__4GxssK1" resolve="success" />
               </node>
             </node>
             <node concept="37vLTw" id="CmOUmcbOj0" role="37vLTx">
@@ -849,7 +849,7 @@
                 <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
               </node>
               <node concept="3TrcHB" id="62$$j6uRTd8" role="2OqNvi">
-                <ref role="3TsBF5" to="bsp8:62$$j6uRHj9" resolve="hashCode" />
+                <ref role="3TsBF5" to="bsp8:4i__4GxsrcS" resolve="hashCode" />
               </node>
             </node>
           </node>
