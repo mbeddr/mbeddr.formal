@@ -1800,5 +1800,40 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3xpT6K6zvMD">
+    <property role="3GE5qa" value="c.statements" />
+    <ref role="1XX52x" to="o3hv:3xpT6K6zvMb" resolve="AssertCStatement" />
+    <node concept="3EZMnI" id="3xpT6K6zvMF" role="2wV5jI">
+      <node concept="3F0ifn" id="3xpT6K6zvMG" role="3EZMnx">
+        <property role="3F0ifm" value="assert" />
+        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="3xpT6K6zvMH" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="3xpT6K6zvMI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3xpT6K6zvMJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3xpT6K6zvMK" role="3EZMnx">
+        <ref role="1NtTu8" to="o3hv:3xpT6K6zvN1" resolve="exp" />
+      </node>
+      <node concept="3F0ifn" id="3xpT6K6zvML" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="3xpT6K6zvMM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3xpT6K6zvMN" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="3xpT6K6zvMO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3xpT6K6zvMP" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

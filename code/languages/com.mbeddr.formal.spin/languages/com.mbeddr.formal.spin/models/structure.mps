@@ -11,6 +11,7 @@
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1233,6 +1234,23 @@
     <property role="34LRSv" value="U" />
     <property role="R4oN_" value="until" />
     <ref role="1TJDcQ" node="3kEBMNbZUo8" resolve="LTLBinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="3xpT6K6zvMb">
+    <property role="EcuMT" value="4060527691668782219" />
+    <property role="3GE5qa" value="c.statements" />
+    <property role="TrG5h" value="AssertCStatement" />
+    <property role="34LRSv" value="assert" />
+    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="PrWs8" id="3xpT6K6zvMc" role="PzmwI">
+      <ref role="PrY4T" to="vshk:1vcsY83fkZr" resolve="ICLevelStatement" />
+    </node>
+    <node concept="1TJgyj" id="3xpT6K6zvN1" role="1TKVEi">
+      <property role="IQ2ns" value="4060527691668782273" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
   </node>
 </model>
 

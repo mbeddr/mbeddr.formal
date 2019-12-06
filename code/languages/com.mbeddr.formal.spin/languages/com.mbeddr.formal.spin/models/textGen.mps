@@ -1788,5 +1788,29 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="3xpT6K6zwuf">
+    <property role="3GE5qa" value="c.statements" />
+    <ref role="WuzLi" to="o3hv:3xpT6K6zvMb" resolve="AssertCStatement" />
+    <node concept="11bSqf" id="3xpT6K6zwug" role="11c4hB">
+      <node concept="3clFbS" id="3xpT6K6zwuh" role="2VODD2">
+        <node concept="lc7rE" id="3xpT6K6zwu$" role="3cqZAp">
+          <node concept="la8eA" id="3xpT6K6zwu_" role="lcghm">
+            <property role="lacIc" value="assert(" />
+          </node>
+          <node concept="l9hG8" id="3xpT6K6zwuA" role="lcghm">
+            <node concept="2OqwBi" id="3xpT6K6zwuB" role="lb14g">
+              <node concept="117lpO" id="3xpT6K6zwuC" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3xpT6K6zwuD" role="2OqNvi">
+                <ref role="3Tt5mk" to="o3hv:3xpT6K6zvN1" resolve="exp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="3xpT6K6zwuE" role="lcghm">
+            <property role="lacIc" value=");" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
