@@ -4,10 +4,14 @@
   <languages>
     <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
+      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardRef" flags="ng" index="gxbn0">
+        <reference id="5082661585110796314" name="hazard" index="gxbni" />
+      </concept>
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
       <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
@@ -21,6 +25,7 @@
       <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
         <reference id="2004523000582375039" name="action" index="1E0n_N" />
         <child id="2004523000582414398" name="providing" index="1E0tWM" />
+        <child id="2004523000582414407" name="stoppedTooSoonAppliedTooLong" index="1E0tXb" />
         <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
         <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
       </concept>
@@ -56,6 +61,13 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
+        <child id="9102875167978228305" name="hazards" index="8gIbH" />
+      </concept>
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
+      <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2160,6 +2172,380 @@
       <node concept="Sqzvu" id="1JhvKLLPHW2" role="Sq$B$">
         <property role="TrG5h" value="Confirm guidance/instructions" />
       </node>
+    </node>
+  </node>
+  <node concept="1X_0jQ" id="4q9fsxm3ohE">
+    <property role="TrG5h" value="_100_car_smart_charger_connector" />
+    <node concept="1XyJaU" id="4q9fsxm3ohX" role="1X_0GB">
+      <property role="TrG5h" value="ChargerController" />
+    </node>
+    <node concept="37mRI7" id="4q9fsxm3oi1" role="lGtFl">
+      <node concept="37mRIm" id="4q9fsxm3oi2" role="37mRID">
+        <property role="37mO49" value="5082661585110795389" />
+        <node concept="gqqVs" id="4q9fsxm3oi0" role="37mO4d">
+          <property role="gqqTZ" value="229.0" />
+          <property role="gqqTW" value="110.0" />
+          <property role="gqqTX" value="155.0" />
+          <property role="gqqTy" value="66.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3oig" role="37mRID">
+        <property role="37mO49" value="5082661585110795403" />
+        <node concept="gqqVs" id="4q9fsxm3oif" role="37mO4d">
+          <property role="gqqTZ" value="238.5" />
+          <property role="gqqTW" value="-10.0" />
+          <property role="gqqTX" value="136.0" />
+          <property role="gqqTy" value="53.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3ois" role="37mRID">
+        <property role="37mO49" value="5082661585110795409" />
+        <node concept="gqqVs" id="4q9fsxm3oir" role="37mO4d">
+          <property role="gqqTZ" value="229.0" />
+          <property role="gqqTW" value="307.0" />
+          <property role="gqqTX" value="144.0" />
+          <property role="gqqTy" value="60.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3oiI" role="37mRID">
+        <property role="37mO49" value="5082661585110795431" />
+        <node concept="gqqVs" id="4q9fsxm3oiH" role="37mO4d">
+          <property role="gqqTZ" value="9.0" />
+          <property role="gqqTW" value="103.0" />
+          <property role="gqqTX" value="80.0" />
+          <property role="gqqTy" value="80.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3oj2" role="37mRID">
+        <property role="37mO49" value="5082661585110795452" />
+        <node concept="2VclpC" id="4q9fsxm3oj1" role="37mO4d">
+          <node concept="3ul5H1" id="4q9fsxm3oj3" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q9fsxm3oj4" role="3ul5Gz">
+              <node concept="2VclrF" id="4q9fsxm3oj5" role="3wpmZR">
+                <property role="2Vclpx" value="131.0" />
+                <property role="2Vclpz" value="83.0" />
+              </node>
+              <node concept="2VclrF" id="4q9fsxm3oj6" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="4q9fsxm3okw" role="2Vcluh">
+            <property role="2Vclpx" value="161.0" />
+            <property role="2Vclpz" value="124.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3ojJ" role="37mRID">
+        <property role="37mO49" value="5082661585110795495" />
+        <node concept="2VclpC" id="4q9fsxm3ojI" role="37mO4d">
+          <node concept="3ul5H1" id="4q9fsxm3ojK" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q9fsxm3ojL" role="3ul5Gz">
+              <node concept="2VclrF" id="4q9fsxm3ojM" role="3wpmZR">
+                <property role="2Vclpx" value="133.0" />
+                <property role="2Vclpz" value="197.0" />
+              </node>
+              <node concept="2VclrF" id="4q9fsxm3ojN" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="4q9fsxm3okn" role="2Vcluh">
+            <property role="2Vclpx" value="156.0" />
+            <property role="2Vclpz" value="168.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3okT" role="37mRID">
+        <property role="37mO49" value="5082661585110795567" />
+        <node concept="2VclpC" id="4q9fsxm3okS" role="37mO4d">
+          <node concept="3ul5H1" id="4q9fsxm3okU" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q9fsxm3okV" role="3ul5Gz">
+              <node concept="2VclrF" id="4q9fsxm3okW" role="3wpmZR">
+                <property role="2Vclpx" value="233.0" />
+                <property role="2Vclpz" value="188.0" />
+              </node>
+              <node concept="2VclrF" id="4q9fsxm3okX" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3om9" role="37mRID">
+        <property role="37mO49" value="5082661585110795647" />
+        <node concept="2VclpC" id="4q9fsxm3om8" role="37mO4d">
+          <node concept="3ul5H1" id="4q9fsxm3oma" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q9fsxm3omb" role="3ul5Gz">
+              <node concept="2VclrF" id="4q9fsxm3omc" role="3wpmZR">
+                <property role="2Vclpx" value="376.0" />
+                <property role="2Vclpz" value="244.0" />
+              </node>
+              <node concept="2VclrF" id="4q9fsxm3omd" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="4q9fsxm3omZ" role="2Vcluh">
+            <property role="2Vclpx" value="348.7152223729782" />
+            <property role="2Vclpz" value="236.7847776270218" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3ons" role="37mRID">
+        <property role="37mO49" value="5082661585110795728" />
+        <node concept="2VclpC" id="4q9fsxm3onr" role="37mO4d">
+          <node concept="3ul5H1" id="4q9fsxm3ont" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q9fsxm3onu" role="3ul5Gz">
+              <node concept="2VclrF" id="4q9fsxm3onv" role="3wpmZR">
+                <property role="2Vclpx" value="131.0" />
+                <property role="2Vclpz" value="245.0" />
+              </node>
+              <node concept="2VclrF" id="4q9fsxm3onw" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="4q9fsxm3ooJ" role="2Vcluh">
+            <property role="2Vclpx" value="264.0" />
+            <property role="2Vclpz" value="240.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3op0" role="37mRID">
+        <property role="37mO49" value="5082661585110795832" />
+        <node concept="gqqVs" id="4q9fsxm3ooZ" role="37mO4d">
+          <property role="gqqTZ" value="522.0" />
+          <property role="gqqTW" value="104.0" />
+          <property role="gqqTX" value="142.0" />
+          <property role="gqqTy" value="100.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3oq3" role="37mRID">
+        <property role="37mO49" value="5082661585110795892" />
+        <node concept="2VclpC" id="4q9fsxm3oq2" role="37mO4d">
+          <node concept="3ul5H1" id="4q9fsxm3oq4" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q9fsxm3oq5" role="3ul5Gz">
+              <node concept="2VclrF" id="4q9fsxm3oq6" role="3wpmZR">
+                <property role="2Vclpx" value="422.0" />
+                <property role="2Vclpz" value="94.0" />
+              </node>
+              <node concept="2VclrF" id="4q9fsxm3oq7" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="4q9fsxm3osS" role="2Vcluh">
+            <property role="2Vclpx" value="457.0" />
+            <property role="2Vclpz" value="123.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q9fsxm3ory" role="37mRID">
+        <property role="37mO49" value="5082661585110795984" />
+        <node concept="2VclpC" id="4q9fsxm3orx" role="37mO4d">
+          <node concept="3ul5H1" id="4q9fsxm3orz" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q9fsxm3or$" role="3ul5Gz">
+              <node concept="2VclrF" id="4q9fsxm3or_" role="3wpmZR">
+                <property role="2Vclpx" value="414.0" />
+                <property role="2Vclpz" value="193.0" />
+              </node>
+              <node concept="2VclrF" id="4q9fsxm3orA" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1XyJaU" id="4q9fsxm3oib" role="1X_0GB">
+      <property role="TrG5h" value="PowerSupply" />
+    </node>
+    <node concept="1XyJaU" id="4q9fsxm3oih" role="1X_0GB">
+      <property role="TrG5h" value="Car" />
+    </node>
+    <node concept="1XyJaU" id="4q9fsxm3oiB" role="1X_0GB">
+      <property role="TrG5h" value="Operator" />
+    </node>
+    <node concept="1XypPU" id="4q9fsxm3oiW" role="1X_0G_">
+      <ref role="SrP08" node="4q9fsxm3oiB" resolve="Operator" />
+      <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <node concept="Sqzvu" id="4q9fsxm3oiX" role="Sq$B$">
+        <property role="TrG5h" value="Start Charging" />
+      </node>
+      <node concept="Sqzvu" id="4q9fsxm3ooB" role="Sq$B$">
+        <property role="TrG5h" value="Stop Charging" />
+      </node>
+    </node>
+    <node concept="Sq$B_" id="4q9fsxm3ojB" role="1X_0G_">
+      <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <ref role="SrP07" node="4q9fsxm3oiB" resolve="Operator" />
+      <node concept="Sqzvu" id="4q9fsxm3ojC" role="Sq$B$">
+        <property role="TrG5h" value="Charging Active" />
+      </node>
+    </node>
+    <node concept="1XypPU" id="4q9fsxm3olZ" role="1X_0G_">
+      <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <ref role="SrP07" node="4q9fsxm3oih" resolve="Car" />
+      <node concept="Sqzvu" id="4q9fsxm3ooF" role="Sq$B$">
+        <property role="TrG5h" value="Check Status" />
+      </node>
+    </node>
+    <node concept="Sq$B_" id="4q9fsxm3ong" role="1X_0G_">
+      <ref role="SrP08" node="4q9fsxm3oih" resolve="Car" />
+      <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <node concept="Sqzvu" id="4q9fsxm3onh" role="Sq$B$">
+        <property role="TrG5h" value="Charging Allowed" />
+      </node>
+      <node concept="Sqzvu" id="4q9fsxm3Bzk" role="Sq$B$">
+        <property role="TrG5h" value="Charging Not Allowed" />
+      </node>
+    </node>
+    <node concept="1XyJaU" id="4q9fsxm3ooS" role="1X_0GB">
+      <property role="TrG5h" value="Circuit Switch" />
+    </node>
+    <node concept="1XypPU" id="4q9fsxm3opO" role="1X_0G_">
+      <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <ref role="SrP07" node="4q9fsxm3ooS" resolve="Circuit Switch" />
+      <node concept="Sqzvu" id="4q9fsxm3opP" role="Sq$B$">
+        <property role="TrG5h" value="Close Switch" />
+      </node>
+      <node concept="Sqzvu" id="4q9fsxm3or9" role="Sq$B$">
+        <property role="TrG5h" value="Open Switch" />
+      </node>
+    </node>
+    <node concept="Sq$B_" id="4q9fsxm3org" role="1X_0G_">
+      <ref role="SrP08" node="4q9fsxm3ooS" resolve="Circuit Switch" />
+      <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <node concept="Sqzvu" id="4q9fsxm3orh" role="Sq$B$">
+        <property role="TrG5h" value="Switch Closed" />
+      </node>
+      <node concept="Sqzvu" id="4q9fsxm3osI" role="Sq$B$">
+        <property role="TrG5h" value="Switch Open" />
+      </node>
+    </node>
+  </node>
+  <node concept="1E0nO6" id="4q9fsxm3otn">
+    <property role="TrG5h" value="_100_car_smart_charger_unsafe_control" />
+    <ref role="1E05RL" node="4q9fsxm3ohE" resolve="_100_car_smart_charger_connector" />
+    <node concept="1E0nOG" id="4q9fsxm3otD" role="1E0n_e">
+      <ref role="1E0nOH" node="4q9fsxm3oiB" resolve="Operator" />
+      <node concept="1E0nOJ" id="4q9fsxm3otF" role="1E0nOC">
+        <ref role="1E0n_N" node="4q9fsxm3oiX" resolve="Start Charging" />
+        <node concept="1E0COo" id="4q9fsxm3otH" role="1E0tWM">
+          <node concept="1E0COg" id="4q9fsxm3otN" role="1E0COp">
+            <node concept="19SGf9" id="4q9fsxm3otP" role="1E0COh">
+              <node concept="19SUe$" id="4q9fsxm3otQ" role="19SJt6">
+                <property role="19SUeA" value="when battery full" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="4q9fsxm3otV" role="1E0COk">
+            <node concept="19SGf9" id="4q9fsxm3otX" role="1E0CO$">
+              <node concept="19SUe$" id="4q9fsxm3otY" role="19SJt6">
+                <property role="19SUeA" value="overheating battery" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="4q9fsxm3ou9" role="1E0n_e">
+      <ref role="1E0nOH" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <node concept="1E0nOJ" id="4q9fsxm3ouk" role="1E0nOC">
+        <ref role="1E0n_N" node="4q9fsxm3opP" resolve="Close Switch" />
+        <node concept="1E0COo" id="4q9fsxm3oum" role="1E0tWM">
+          <node concept="1E0COg" id="4q9fsxm3ous" role="1E0COp">
+            <node concept="19SGf9" id="4q9fsxm3ouu" role="1E0COh">
+              <node concept="19SUe$" id="4q9fsxm3ouv" role="19SJt6">
+                <property role="19SUeA" value="when charging not allowed" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="4q9fsxm3ouH" role="1E0COk">
+            <node concept="19SGf9" id="4q9fsxm3ouJ" role="1E0CO$">
+              <node concept="19SUe$" id="4q9fsxm3ouK" role="19SJt6">
+                <property role="19SUeA" value="overheating battery" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1E0COo" id="4q9fsxm3ov6" role="1E0tXe">
+          <node concept="1E0COg" id="4q9fsxm3ovc" role="1E0COp">
+            <node concept="19SGf9" id="4q9fsxm3ove" role="1E0COh">
+              <node concept="19SUe$" id="4q9fsxm3ovf" role="19SJt6">
+                <property role="19SUeA" value="when carging not allowed" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="4q9fsxm3ovk" role="1E0COk">
+            <node concept="19SGf9" id="4q9fsxm3ovm" role="1E0CO$">
+              <node concept="19SUe$" id="4q9fsxm3ovn" role="19SJt6">
+                <property role="19SUeA" value="overheating battery" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1E0COo" id="4q9fsxm3ovs" role="1E0tXb">
+          <node concept="1E0COg" id="4q9fsxm3ovy" role="1E0COp">
+            <node concept="19SGf9" id="4q9fsxm3ov$" role="1E0COh">
+              <node concept="19SUe$" id="4q9fsxm3ov_" role="19SJt6">
+                <property role="19SUeA" value="when applied too long" />
+              </node>
+            </node>
+          </node>
+          <node concept="1E0COF" id="4q9fsxm3ovE" role="1E0COk">
+            <node concept="19SGf9" id="4q9fsxm3ovG" role="1E0CO$">
+              <node concept="19SUe$" id="4q9fsxm3ovM" role="19SJt6">
+                <property role="19SUeA" value="overheating battery" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E0nOJ" id="4q9fsxm3ou$" role="1E0nOC">
+        <ref role="1E0n_N" node="4q9fsxm3opP" resolve="Close Switch" />
+        <node concept="1E0COo" id="4q9fsxm3ByZ" role="1E0tWM">
+          <node concept="1E0COg" id="4q9fsxm3Bzb" role="1E0COp">
+            <node concept="19SGf9" id="4q9fsxm3Bzd" role="1E0COh">
+              <node concept="19SUe$" id="4q9fsxm3Bze" role="19SJt6">
+                <property role="19SUeA" value="when charging not allowed" />
+              </node>
+            </node>
+          </node>
+          <node concept="gxbn0" id="4q9fsxm3Bz5" role="1E0COk">
+            <ref role="gxbni" node="4q9fsxm3ow6" resolve="battery overheating" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="8gVzP" id="4q9fsxm3ovO">
+    <property role="TrG5h" value="_100_car_smart_charger_hazards" />
+    <node concept="8gVzc" id="4q9fsxm3ow6" role="8gIbH">
+      <property role="TrG5h" value="battery overheating" />
+    </node>
+    <node concept="8gVzc" id="4q9fsxm3Bz8" role="8gIbH">
+      <property role="TrG5h" value="electrical hazard" />
     </node>
   </node>
 </model>
