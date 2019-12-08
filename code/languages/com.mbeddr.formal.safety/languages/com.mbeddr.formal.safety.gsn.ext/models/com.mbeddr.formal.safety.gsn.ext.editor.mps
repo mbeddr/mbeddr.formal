@@ -322,5 +322,105 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="35$gPpxbZZo">
+    <property role="3GE5qa" value="patterns" />
+    <ref role="1XX52x" to="lbo2:35$gPpxbZQ_" resolve="InContextOfConnectionPattern" />
+    <node concept="2ZMJ7s" id="35$gPpxbZZq" role="2wV5jI">
+      <node concept="1PNbMa" id="35$gPpxbZZr" role="1PN8q7">
+        <node concept="23hSZX" id="35$gPpxbZZs" role="ljJml">
+          <node concept="2OqwBi" id="35$gPpxbZZt" role="23hSWE">
+            <node concept="1Pxb5l" id="35$gPpxbZZu" role="2Oq$k0" />
+            <node concept="3TrEf2" id="35$gPpxbZZv" role="2OqNvi">
+              <ref role="3Tt5mk" to="py52:3GRi4m$sIbL" resolve="source" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1PNbMa" id="35$gPpxbZZw" role="1PN8qh">
+        <node concept="23hSZX" id="35$gPpxbZZx" role="ljJml">
+          <node concept="2OqwBi" id="35$gPpxbZZy" role="23hSWE">
+            <node concept="1Pxb5l" id="35$gPpxbZZz" role="2Oq$k0" />
+            <node concept="3TrEf2" id="35$gPpxbZZ$" role="2OqNvi">
+              <ref role="3Tt5mk" to="py52:3GRi4m$sId6" resolve="target" />
+            </node>
+          </node>
+        </node>
+        <node concept="2xQOud" id="35$gPpxbZZ_" role="1PNbKK">
+          <ref role="2xQOue" to="g35p:7z30MUmeewT" resolve="ArrowHead" />
+          <node concept="3b6qkQ" id="35$gPpxbZZA" role="1xbcaF">
+            <property role="$nhwW" value="0.5" />
+          </node>
+          <node concept="3clFbT" id="35$gPpxbZZB" role="1xbcaF">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="KXoZh" id="35$gPpxbZZC" role="KYgL9">
+        <node concept="3clFbS" id="35$gPpxbZZD" role="2VODD2">
+          <node concept="3clFbF" id="35$gPpxbZZE" role="3cqZAp">
+            <node concept="3clFbT" id="35$gPpxbZZF" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="238au4" id="35$gPpxbZZG" role="3kqczz">
+        <node concept="3EZMnI" id="35$gPpxbZZH" role="2wV5jI">
+          <node concept="2iRkQZ" id="35$gPpxbZZI" role="2iSdaV" />
+          <node concept="3F0ifn" id="35$gPpxbZZJ" role="3EZMnx">
+            <property role="3F0ifm" value="inContextOf" />
+            <node concept="VSNWy" id="35$gPpxbZZK" role="3F10Kt">
+              <property role="1lJzqX" value="10" />
+            </node>
+            <node concept="VPxyj" id="35$gPpxbZZL" role="3F10Kt" />
+          </node>
+          <node concept="3EZMnI" id="35$gPpxbZZM" role="3EZMnx">
+            <node concept="VPM3Z" id="35$gPpxbZZN" role="3F10Kt" />
+            <node concept="3F0A7n" id="35$gPpxbZZO" role="3EZMnx">
+              <ref role="1NtTu8" to="lbo2:24PsEXF9ypL" resolve="min" />
+            </node>
+            <node concept="3F0ifn" id="35$gPpxbZZP" role="3EZMnx">
+              <property role="3F0ifm" value=".." />
+              <node concept="11L4FC" id="35$gPpxbZZQ" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+              <node concept="11LMrY" id="35$gPpxbZZR" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="3F0A7n" id="35$gPpxbZZS" role="3EZMnx">
+              <ref role="1NtTu8" to="lbo2:24PsEXF9ypN" resolve="max" />
+            </node>
+            <node concept="l2Vlx" id="35$gPpxbZZT" role="2iSdaV" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="35$gPpxc0eB" role="6VMZX">
+      <node concept="2iRkQZ" id="35$gPpxc0eC" role="2iSdaV" />
+      <node concept="3EZMnI" id="35$gPpxc0eD" role="3EZMnx">
+        <node concept="3F0ifn" id="35$gPpxc0eE" role="3EZMnx">
+          <property role="3F0ifm" value="cardinality:" />
+        </node>
+        <node concept="VPM3Z" id="35$gPpxc0eF" role="3F10Kt" />
+        <node concept="3F0A7n" id="35$gPpxc0eG" role="3EZMnx">
+          <ref role="1NtTu8" to="lbo2:24PsEXF9ypL" resolve="min" />
+        </node>
+        <node concept="3F0ifn" id="35$gPpxc0eH" role="3EZMnx">
+          <property role="3F0ifm" value=".." />
+          <node concept="11L4FC" id="35$gPpxc0eI" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="35$gPpxc0eJ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="35$gPpxc0eK" role="3EZMnx">
+          <ref role="1NtTu8" to="lbo2:24PsEXF9ypN" resolve="max" />
+        </node>
+        <node concept="l2Vlx" id="35$gPpxc0eL" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -128,5 +128,14 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="35$gPpxbZQ_">
+    <property role="EcuMT" value="3559043643806317989" />
+    <property role="3GE5qa" value="patterns" />
+    <property role="TrG5h" value="InContextOfConnectionPattern" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+    <node concept="PrWs8" id="35$gPpxbZQA" role="PzmwI">
+      <ref role="PrY4T" node="24PsEXFaEm2" resolve="IGsnConnectionPattern" />
+    </node>
+  </node>
 </model>
 
