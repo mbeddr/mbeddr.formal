@@ -523,7 +523,7 @@
                           <node concept="3clFbS" id="5HwHP1Oes_y" role="3clF47">
                             <node concept="3clFbF" id="5HwHP1Oet8z" role="3cqZAp">
                               <node concept="Xl_RD" id="5HwHP1Oet8y" role="3clFbG">
-                                <property role="Xl_RC" value="02 GSN Base Language Patterns" />
+                                <property role="Xl_RC" value="02 GSN Patterns" />
                               </node>
                             </node>
                           </node>

@@ -393,7 +393,7 @@
       <node concept="3clFbS" id="71RA3dHxXJ3" role="3clF47">
         <node concept="3clFbF" id="71RA3dHxXS_" role="3cqZAp">
           <node concept="Xl_RD" id="71RA3dHxXS$" role="3clFbG">
-            <property role="Xl_RC" value="03 DSL Patterns/Formal/SMV-based Pattern" />
+            <property role="Xl_RC" value="03 Checkable Patterns/FM-based Patterns/SMV-based Pattern" />
           </node>
         </node>
       </node>
@@ -449,7 +449,7 @@
       <node concept="3clFbS" id="4i__4GxsoTc" role="3clF47">
         <node concept="3clFbF" id="6rlO$dpJUOy" role="3cqZAp">
           <node concept="Xl_RD" id="6rlO$dpJUOz" role="3clFbG">
-            <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
+            <property role="Xl_RC" value="03 Checkable Patterns/FM-based Patterns/SMV-based Pattern" />
           </node>
         </node>
       </node>
