@@ -47,6 +47,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
@@ -730,6 +731,7 @@
           <node concept="VSNWy" id="2ccN23odQqa" role="3F10Kt">
             <property role="1lJzqX" value="10" />
           </node>
+          <node concept="VPxyj" id="3xpT6K6EdNF" role="3F10Kt" />
         </node>
       </node>
     </node>
