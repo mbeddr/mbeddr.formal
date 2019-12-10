@@ -795,6 +795,9 @@
                     </node>
                     <node concept="liA8E" id="7kF4CZH$F49" role="2OqNvi">
                       <ref role="37wK5l" to="p9qi:7kF4CZH$vUh" resolve="createConnectionTypes" />
+                      <node concept="37vLTw" id="24PsEXFbTAa" role="37wK5m">
+                        <ref role="3cqZAo" node="24PsEXFbTze" resolve="gs" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -819,6 +822,12 @@
       <node concept="_YKpA" id="7kF4CZH$k6H" role="3clF45">
         <node concept="3uibUv" id="7kF4CZH$kuA" role="_ZDj9">
           <ref role="3uigEE" to="nkm5:7vufT$m5fkU" resolve="IConnectionType" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="24PsEXFbTze" role="3clF46">
+        <property role="TrG5h" value="gs" />
+        <node concept="3Tqbb2" id="24PsEXFbTzd" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
         </node>
       </node>
     </node>
@@ -2400,6 +2409,7 @@
             <node concept="2YIFZM" id="1qrXfdH1YCT" role="3clFbG">
               <ref role="1Pybhc" node="7kF4CZH$k2Q" resolve="GSNConnectionsFactory" />
               <ref role="37wK5l" node="7kF4CZH$kuH" resolve="createConnections" />
+              <node concept="2ZN8Hh" id="24PsEXFbTvl" role="37wK5m" />
             </node>
           </node>
         </node>

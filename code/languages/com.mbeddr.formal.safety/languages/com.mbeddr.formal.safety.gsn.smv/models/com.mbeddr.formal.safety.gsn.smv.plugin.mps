@@ -220,6 +220,12 @@
     <node concept="2tJIrI" id="3GRi4m$sKlS" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZH$RPD" role="jymVt">
       <property role="TrG5h" value="createConnectionTypes" />
+      <node concept="37vLTG" id="24PsEXFbUKT" role="3clF46">
+        <property role="TrG5h" value="gs" />
+        <node concept="3Tqbb2" id="24PsEXFbUKS" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="7kF4CZH$RPF" role="1B3o_S" />
       <node concept="_YKpA" id="7kF4CZH$RPG" role="3clF45">
         <node concept="3uibUv" id="7kF4CZH$RPH" role="_ZDj9">

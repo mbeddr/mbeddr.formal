@@ -295,6 +295,12 @@
           <ref role="3uigEE" to="nkm5:7vufT$m5fkU" resolve="IConnectionType" />
         </node>
       </node>
+      <node concept="37vLTG" id="24PsEXFbUgT" role="3clF46">
+        <property role="TrG5h" value="gs" />
+        <node concept="3Tqbb2" id="24PsEXFbUgS" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="7kF4CZH$qjn" role="1B3o_S" />
   </node>
@@ -407,6 +413,12 @@
       </node>
       <node concept="2AHcQZ" id="7kF4CZH$RPJ" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="24PsEXFbUKT" role="3clF46">
+        <property role="TrG5h" value="gs" />
+        <node concept="3Tqbb2" id="24PsEXFbUKS" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3GRi4m$sKhz" role="1B3o_S" />

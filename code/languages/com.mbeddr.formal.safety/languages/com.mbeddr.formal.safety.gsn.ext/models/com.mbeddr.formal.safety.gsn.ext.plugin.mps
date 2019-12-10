@@ -22,8 +22,8 @@
     <import index="lbo2" ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -216,6 +216,13 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
@@ -1408,6 +1415,12 @@
     <node concept="2tJIrI" id="24PsEXF9R4f" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZH$RPD" role="jymVt">
       <property role="TrG5h" value="createConnectionTypes" />
+      <node concept="37vLTG" id="24PsEXFbUKT" role="3clF46">
+        <property role="TrG5h" value="gs" />
+        <node concept="3Tqbb2" id="24PsEXFbUKS" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="7kF4CZH$RPF" role="1B3o_S" />
       <node concept="_YKpA" id="7kF4CZH$RPG" role="3clF45">
         <node concept="3uibUv" id="7kF4CZH$RPH" role="_ZDj9">
@@ -1432,18 +1445,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7kF4CZH_dv8" role="3cqZAp">
-          <node concept="2OqwBi" id="7kF4CZH_dv9" role="3clFbG">
-            <node concept="37vLTw" id="7kF4CZH_dva" role="2Oq$k0">
-              <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
-            </node>
-            <node concept="TSZUe" id="7kF4CZH_dvb" role="2OqNvi">
-              <node concept="2ShNRf" id="7kF4CZHAfhN" role="25WWJ7">
-                <node concept="HV5vD" id="7kF4CZHAGKK" role="2ShVmc">
-                  <ref role="HV5vE" node="7kF4CZHAFs4" resolve="ConnectionPatternSupportedBy" />
+        <node concept="Jncv_" id="24PsEXFcc7z" role="3cqZAp">
+          <ref role="JncvD" to="lbo2:1qrXfdH1Uhb" resolve="PatternDefinition" />
+          <node concept="37vLTw" id="24PsEXFccbt" role="JncvB">
+            <ref role="3cqZAo" node="24PsEXFbUKT" resolve="gs" />
+          </node>
+          <node concept="3clFbS" id="24PsEXFcc7B" role="Jncv$">
+            <node concept="3clFbF" id="7kF4CZH_dv8" role="3cqZAp">
+              <node concept="2OqwBi" id="7kF4CZH_dv9" role="3clFbG">
+                <node concept="37vLTw" id="7kF4CZH_dva" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
+                </node>
+                <node concept="TSZUe" id="7kF4CZH_dvb" role="2OqNvi">
+                  <node concept="2ShNRf" id="7kF4CZHAfhN" role="25WWJ7">
+                    <node concept="1pGfFk" id="24PsEXFbRGP" role="2ShVmc">
+                      <ref role="37wK5l" node="24PsEXFa9eU" resolve="ConnectionPatternSupportedBy" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="JncvC" id="24PsEXFcc7D" role="JncvA">
+            <property role="TrG5h" value="pd" />
+            <node concept="2jxLKc" id="24PsEXFcc7E" role="1tU5fm" />
           </node>
         </node>
         <node concept="3clFbF" id="7kF4CZH_0i2" role="3cqZAp">
