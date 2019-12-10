@@ -976,17 +976,118 @@
         <property role="TrG5h" value="fault_deletion" />
       </node>
       <node concept="2HbMDt" id="57ROGn92YH4" role="hVC8a">
-        <node concept="ru7O1" id="57ROGn92YHh" role="2H9Ial">
-          <property role="ru7PJ" value="fault_deletion" />
+        <node concept="hVCbv" id="24PsEXFfqtP" role="2H9Ial">
+          <ref role="hVCbs" node="57ROGn92YGu" resolve="fault_deletion" />
         </node>
-        <node concept="ru7O1" id="57ROGn92YGZ" role="2H9Iav">
-          <property role="ru7PJ" value="fault_corruption" />
+        <node concept="hVCbv" id="24PsEXFfqtG" role="2H9Iav">
+          <ref role="hVCbs" node="57ROGn92YGr" resolve="fault_corruption" />
         </node>
       </node>
     </node>
     <node concept="2SQmWS" id="57ROGn92Xao" role="2HcuB8" />
     <node concept="3UnI89" id="57ROGn8Ssam" role="2HcuB8">
       <property role="TrG5h" value="Sensor_withE2E" />
+      <node concept="3UTh7Y" id="24PsEXFbyV2" role="3UnIb_">
+        <property role="TrG5h" value="message" />
+        <node concept="2HbMbg" id="24PsEXFbz4H" role="1yBDGv">
+          <node concept="2HbLFT" id="24PsEXFbz4I" role="2H9Iav">
+            <node concept="3Ug1Ap" id="24PsEXFbyVx" role="2H9Iav">
+              <ref role="3Ug1Ao" node="57ROGn8TjNz" resolve="message" />
+            </node>
+            <node concept="2HeeqP" id="24PsEXFbyVy" role="2H9Ial">
+              <ref role="2HeeqO" node="57ROGn90rcQ" resolve="no_message" />
+            </node>
+          </node>
+          <node concept="2SafMM" id="24PsEXFbz4U" role="2H9Ial">
+            <node concept="32OYss" id="24PsEXFbz50" role="1yBIc4">
+              <node concept="2oXAu5" id="24PsEXFbz5h" role="32OYtT">
+                <node concept="2HbLFT" id="24PsEXFbz5W" role="2H9Ial">
+                  <node concept="2HeeqP" id="24PsEXFbz6H" role="2H9Ial">
+                    <ref role="2HeeqO" node="57ROGn8TjOw" resolve="explode" />
+                  </node>
+                  <node concept="1yeVOx" id="24PsEXFbz5I" role="2H9Iav">
+                    <node concept="3Ug1Ap" id="24PsEXFbz5S" role="1yeVOw">
+                      <ref role="3Ug1Ao" node="57ROGn8TjNz" resolve="message" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Ug1Ap" id="24PsEXFbz5c" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="57ROGn8TjNd" resolve="collision" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="24PsEXFbyUS" role="3UnIb_">
+        <property role="TrG5h" value="protect" />
+        <node concept="2HbMbg" id="24PsEXFb$10" role="1yBDGv">
+          <node concept="32OYss" id="24PsEXFb$11" role="2H9Iav">
+            <node concept="2SafMM" id="24PsEXFb$12" role="32OYtT">
+              <node concept="32OYss" id="24PsEXFb$13" role="1yBIc4">
+                <node concept="1yyYsf" id="24PsEXFb$14" role="32OYtT">
+                  <node concept="dheZm" id="24PsEXFb$15" role="2H9Iav">
+                    <node concept="3Ug1Ap" id="24PsEXFbz7g" role="2H9Iav">
+                      <ref role="3Ug1Ao" node="57ROGn8TjNz" resolve="message" />
+                    </node>
+                    <node concept="2HeeqP" id="24PsEXFbz7G" role="2H9Ial">
+                      <ref role="2HeeqO" node="57ROGn8TjNK" resolve="no_message" />
+                    </node>
+                  </node>
+                  <node concept="2HbLFT" id="24PsEXFb$16" role="2H9Ial">
+                    <node concept="1yeVOx" id="24PsEXFbz8K" role="2H9Iav">
+                      <node concept="3Ug1Ap" id="24PsEXFbz8W" role="1yeVOw">
+                        <ref role="3Ug1Ao" node="57ROGn8TjQQ" resolve="counter" />
+                      </node>
+                    </node>
+                    <node concept="32OhRp" id="24PsEXFb$17" role="2H9Ial">
+                      <node concept="32OYss" id="24PsEXFb$18" role="2H9Iav">
+                        <node concept="2H9FEB" id="24PsEXFb$19" role="32OYtT">
+                          <node concept="3Ug1Ap" id="24PsEXFbzaq" role="2H9Iav">
+                            <ref role="3Ug1Ao" node="57ROGn8TjQQ" resolve="counter" />
+                          </node>
+                          <node concept="2IPVmt" id="24PsEXFb$1a" role="2H9Ial">
+                            <property role="2IPVms" value="1" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2IPVmt" id="24PsEXFb$1b" role="2H9Ial">
+                        <property role="2IPVms" value="15" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="32OYss" id="24PsEXFb$1c" role="2H9Ial">
+            <node concept="2SafMM" id="24PsEXFb$1d" role="32OYtT">
+              <node concept="32OYss" id="24PsEXFb$1e" role="1yBIc4">
+                <node concept="1yyYsf" id="24PsEXFb$1f" role="32OYtT">
+                  <node concept="2HbLFT" id="24PsEXFb$1g" role="2H9Iav">
+                    <node concept="3Ug1Ap" id="24PsEXFbzA0" role="2H9Iav">
+                      <ref role="3Ug1Ao" node="57ROGn8TjNz" resolve="message" />
+                    </node>
+                    <node concept="2HeeqP" id="24PsEXFbzHw" role="2H9Ial">
+                      <ref role="2HeeqO" node="57ROGn8TjNK" resolve="no_message" />
+                    </node>
+                  </node>
+                  <node concept="2HbLFT" id="24PsEXFb$2w" role="2H9Ial">
+                    <node concept="3Ug1Ap" id="24PsEXFb$mG" role="2H9Ial">
+                      <ref role="3Ug1Ao" node="57ROGn8TjQQ" resolve="counter" />
+                    </node>
+                    <node concept="1yeVOx" id="24PsEXFb$2c" role="2H9Iav">
+                      <node concept="3Ug1Ap" id="24PsEXFb$2s" role="1yeVOw">
+                        <ref role="3Ug1Ao" node="57ROGn8TjQQ" resolve="counter" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3UnI9n" id="57ROGn8TjNz" role="3UnI90">
         <property role="TrG5h" value="message" />
         <node concept="2Hdrtr" id="57ROGn8TjNI" role="3UnI80">
