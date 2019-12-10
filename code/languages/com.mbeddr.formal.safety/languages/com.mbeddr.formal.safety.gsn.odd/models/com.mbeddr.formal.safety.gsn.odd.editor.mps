@@ -13,6 +13,7 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="g35p" ref="r:53f7c624-e35c-46e0-a6cd-4bcccc2b91f5(com.mbeddr.formal.safety.gsn.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -124,7 +125,11 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
+      <concept id="7464726264117677937" name="de.itemis.mps.editor.diagram.structure.ShapeReference" flags="ng" index="2xQOud">
+        <reference id="7464726264117677938" name="shape" index="2xQOue" />
+      </concept>
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
+        <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
       </concept>
     </language>
@@ -286,6 +291,9 @@
         <node concept="xShMh" id="71RA3dH_coR" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+      <node concept="2xQOud" id="24PsEXFfy6z" role="2xQQDV">
+        <ref role="2xQOue" to="g35p:4Te4zGtlJMP" resolve="ContextRoundedRectangle" />
       </node>
     </node>
     <node concept="3EZMnI" id="2ccN23oa1$r" role="6VMZX">

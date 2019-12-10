@@ -80,7 +80,7 @@
       <node concept="3clFbS" id="71RA3dHxXJ3" role="3clF47">
         <node concept="3clFbF" id="71RA3dHxXS_" role="3cqZAp">
           <node concept="Xl_RD" id="71RA3dHxXS$" role="3clFbG">
-            <property role="Xl_RC" value="ODD/Monitor-based Semantics (Spin)" />
+            <property role="Xl_RC" value="03 DSL Patterns/Formal/ODD/Offline Monitoring (Spin)" />
           </node>
         </node>
       </node>
