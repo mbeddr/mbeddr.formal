@@ -150,7 +150,7 @@
     <property role="EcuMT" value="79421622115107638" />
     <property role="3GE5qa" value="gsn.dsl.smv" />
     <property role="TrG5h" value="SmvResultsSolution" />
-    <property role="34LRSv" value="SMV Spec Solution" />
+    <property role="34LRSv" value="SMV Results Solution" />
     <property role="R4oN_" value="solution based on a nusmv verification" />
     <ref role="1TJDcQ" node="4i__4Gxsq_o" resolve="SmvResultsSolutionBase" />
     <node concept="1TJgyi" id="4qaoH_E0cR" role="1TKVEl">
@@ -193,9 +193,6 @@
           <property role="3PKj8l" value="987654" />
         </node>
       </node>
-    </node>
-    <node concept="PrWs8" id="7bxPmtp5Vwi" role="PzmwI">
-      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4qaoH_EJ_i">
@@ -267,13 +264,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="4i__4GxsoSU">
-    <property role="EcuMT" value="4946522816140906042" />
-    <property role="3GE5qa" value="gsn.dsl.smv" />
-    <property role="TrG5h" value="SmvResults4CBDSolution" />
-    <property role="34LRSv" value="CBD SMV Results" />
-    <ref role="1TJDcQ" node="4i__4Gxsq_o" resolve="SmvResultsSolutionBase" />
   </node>
   <node concept="1TIwiD" id="4i__4Gxsq_o">
     <property role="EcuMT" value="4946522816140912984" />
