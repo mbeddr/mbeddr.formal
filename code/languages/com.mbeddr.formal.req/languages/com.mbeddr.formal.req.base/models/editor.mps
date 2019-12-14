@@ -2396,5 +2396,12 @@
       <node concept="l2Vlx" id="69OrlvCLpJs" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5FhZjqTMRWf">
+    <property role="3GE5qa" value="req_kind" />
+    <ref role="1XX52x" to="z27p:5FhZjqTMRmk" resolve="Interface" />
+    <node concept="3F0ifn" id="5FhZjqTMRWh" role="2wV5jI">
+      <property role="3F0ifm" value="interface" />
+    </node>
+  </node>
 </model>
 

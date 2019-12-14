@@ -73,6 +73,7 @@
     <property role="TrG5h" value="RequirementDocument" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="requirement document" />
+    <property role="R4oN_" value="requirement document" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4gtLUSMLiT5" role="1TKVEi">
       <property role="IQ2ns" value="4908298719893728837" />
@@ -158,6 +159,7 @@
     <property role="TrG5h" value="Functional" />
     <property role="34LRSv" value="functional" />
     <property role="3GE5qa" value="req_kind" />
+    <property role="R4oN_" value="a functional requirement" />
     <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
   <node concept="1TIwiD" id="4gtLUSMLiSg">
@@ -197,6 +199,8 @@
   <node concept="1TIwiD" id="2N7iSwG$_7t">
     <property role="EcuMT" value="3226630706269671901" />
     <property role="TrG5h" value="Requirement" />
+    <property role="34LRSv" value="requirement" />
+    <property role="R4oN_" value="requirement" />
     <ref role="1TJDcQ" node="4gtLUSMLiMA" resolve="AbstractRequirement" />
     <node concept="PrWs8" id="2fmnPVfexQa" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
@@ -254,6 +258,7 @@
     <property role="3GE5qa" value="req_kind" />
     <property role="TrG5h" value="DataReqKind" />
     <property role="34LRSv" value="data" />
+    <property role="R4oN_" value="data processed by a system" />
     <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
   <node concept="1TIwiD" id="69OrlvCLpIk">
@@ -271,6 +276,14 @@
     <node concept="PrWs8" id="69OrlvCLpIL" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5FhZjqTMRmk">
+    <property role="EcuMT" value="6544290145033221524" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="Interface" />
+    <property role="34LRSv" value="interface" />
+    <property role="R4oN_" value="interface of the system" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
 </model>
 
