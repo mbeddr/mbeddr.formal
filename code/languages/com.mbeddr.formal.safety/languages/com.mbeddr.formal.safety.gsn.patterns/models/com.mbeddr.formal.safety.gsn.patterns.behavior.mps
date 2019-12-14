@@ -11,6 +11,7 @@
     <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -24,8 +25,13 @@
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
+      <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -37,6 +43,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -59,6 +66,23 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -68,6 +92,9 @@
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -244,7 +271,7 @@
   </node>
   <node concept="13h7C7" id="6rlO$dpJUNZ">
     <property role="3GE5qa" value="cbd" />
-    <ref role="13h7C2" to="2qxf:6rlO$dpJSTC" resolve="ContractBasedDesignStrategy" />
+    <ref role="13h7C2" to="2qxf:6rlO$dpJSTC" resolve="CBDStrategy" />
     <node concept="13i0hz" id="6rlO$dpJUOv" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
@@ -264,7 +291,7 @@
   </node>
   <node concept="13h7C7" id="6rlO$dpKLr1">
     <property role="3GE5qa" value="cbd" />
-    <ref role="13h7C2" to="2qxf:6rlO$dpKGs6" resolve="CBDCheckGoal" />
+    <ref role="13h7C2" to="2qxf:6rlO$dpKGs6" resolve="CBDRefinementCheckGoal" />
     <node concept="13i0hz" id="6rlO$dpR4YQ" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
@@ -279,7 +306,103 @@
       <node concept="17QB3L" id="6rlO$dpR4YV" role="3clF45" />
     </node>
     <node concept="13hLZK" id="6rlO$dpKLr2" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpKLr3" role="2VODD2" />
+      <node concept="3clFbS" id="6rlO$dpKLr3" role="2VODD2">
+        <node concept="3clFbF" id="2sg$KXfUc$e" role="3cqZAp">
+          <node concept="37vLTI" id="2sg$KXfUdIJ" role="3clFbG">
+            <node concept="2OqwBi" id="2sg$KXfUcJa" role="37vLTJ">
+              <node concept="13iPFW" id="2sg$KXfUc$d" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2sg$KXfUddc" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+            <node concept="2pJPEk" id="2sg$KXfUdSX" role="37vLTx">
+              <node concept="2pJPED" id="2sg$KXfUdWQ" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="2sg$KXfUe0S" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="2pJPED" id="2sg$KXfUe3d" role="28nt2d">
+                    <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                    <node concept="2pJxcG" id="2sg$KXfUe70" role="2pJxcM">
+                      <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                      <node concept="Xl_RD" id="2sg$KXfUe95" role="28ntcv">
+                        <property role="Xl_RC" value="The contracts of \n sub-components satisfy \n the contract of \n parent component" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2sg$KXfUUbY">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="13h7C2" to="2qxf:2sg$KXfUUbh" resolve="CBDAGCompatibilityGoal" />
+    <node concept="13i0hz" id="2sg$KXfV7C5" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="2sg$KXfV7C6" role="1B3o_S" />
+      <node concept="3clFbS" id="2sg$KXfV7C7" role="3clF47">
+        <node concept="3clFbF" id="2sg$KXfV7C8" role="3cqZAp">
+          <node concept="Xl_RD" id="2sg$KXfV7C9" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Contract-based Design Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2sg$KXfV7Ca" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="2sg$KXfUUbZ" role="13h7CW">
+      <node concept="3clFbS" id="2sg$KXfUUc0" role="2VODD2">
+        <node concept="3clFbF" id="2sg$KXfUUh1" role="3cqZAp">
+          <node concept="37vLTI" id="2sg$KXfUUh2" role="3clFbG">
+            <node concept="2OqwBi" id="2sg$KXfUUh3" role="37vLTJ">
+              <node concept="13iPFW" id="2sg$KXfUUh4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2sg$KXfUUh5" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+            <node concept="2pJPEk" id="2sg$KXfUUh6" role="37vLTx">
+              <node concept="2pJPED" id="2sg$KXfUUh7" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="2sg$KXfUUh8" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="2pJPED" id="2sg$KXfUUh9" role="28nt2d">
+                    <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                    <node concept="2pJxcG" id="2sg$KXfUUha" role="2pJxcM">
+                      <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                      <node concept="Xl_RD" id="2sg$KXfUUhb" role="28ntcv">
+                        <property role="Xl_RC" value="The preconditions \nof subcomponents \nare satisfied by \nthe postconditions of (TODO)" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2sg$KXfVbmP">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="13h7C2" to="2qxf:2sg$KXfV8Ya" resolve="CBDImplementationCorrectnessGoal" />
+    <node concept="13i0hz" id="2sg$KXfVbAF" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="2sg$KXfVbAG" role="1B3o_S" />
+      <node concept="3clFbS" id="2sg$KXfVbAH" role="3clF47">
+        <node concept="3clFbF" id="2sg$KXfVbAI" role="3cqZAp">
+          <node concept="Xl_RD" id="2sg$KXfVbAJ" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Contract-based Design Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2sg$KXfVbAK" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="2sg$KXfVbmQ" role="13h7CW">
+      <node concept="3clFbS" id="2sg$KXfVbmR" role="2VODD2" />
     </node>
   </node>
 </model>

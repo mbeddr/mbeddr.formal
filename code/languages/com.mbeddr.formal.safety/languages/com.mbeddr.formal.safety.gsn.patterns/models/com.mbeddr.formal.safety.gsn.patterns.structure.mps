@@ -111,8 +111,8 @@
   </node>
   <node concept="1TIwiD" id="6rlO$dpJSTC">
     <property role="EcuMT" value="7410059948618387048" />
-    <property role="TrG5h" value="ContractBasedDesignStrategy" />
-    <property role="34LRSv" value="Contract-Based Design Strategy" />
+    <property role="TrG5h" value="CBDStrategy" />
+    <property role="34LRSv" value="CBD Strategy" />
     <property role="3GE5qa" value="cbd" />
     <ref role="1TJDcQ" to="py52:3GRi4m$rlnF" resolve="Strategy" />
     <node concept="1TJgyj" id="6rlO$dpPTOD" role="1TKVEi">
@@ -131,10 +131,30 @@
   </node>
   <node concept="1TIwiD" id="6rlO$dpKGs6">
     <property role="EcuMT" value="7410059948618598150" />
-    <property role="TrG5h" value="CBDCheckGoal" />
-    <property role="34LRSv" value="CBD Check Goal" />
+    <property role="TrG5h" value="CBDRefinementCheckGoal" />
     <property role="3GE5qa" value="cbd" />
+    <property role="34LRSv" value="CBD Refinement Check Goal" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+  </node>
+  <node concept="1TIwiD" id="2sg$KXfUUbh">
+    <property role="EcuMT" value="2814911461081195217" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="CBDAGCompatibilityGoal" />
+    <property role="34LRSv" value="CBD AG Compatibility Goal" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+  </node>
+  <node concept="1TIwiD" id="2sg$KXfV8Ya">
+    <property role="EcuMT" value="2814911461081255818" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="CBDImplementationCorrectnessGoal" />
+    <property role="34LRSv" value="CBD Implementation Correctness Goal" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="1TJgyj" id="2sg$KXfVaWB" role="1TKVEi">
+      <property role="IQ2ns" value="2814911461081263911" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subcomponent" />
+      <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
+    </node>
   </node>
 </model>
 
