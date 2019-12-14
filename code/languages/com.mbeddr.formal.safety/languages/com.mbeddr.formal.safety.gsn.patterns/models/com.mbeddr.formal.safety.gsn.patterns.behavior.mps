@@ -292,19 +292,6 @@
   <node concept="13h7C7" id="6rlO$dpKLr1">
     <property role="3GE5qa" value="cbd" />
     <ref role="13h7C2" to="2qxf:6rlO$dpKGs6" resolve="CBDRefinementCheckGoal" />
-    <node concept="13i0hz" id="6rlO$dpR4YQ" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="6rlO$dpR4YR" role="1B3o_S" />
-      <node concept="3clFbS" id="6rlO$dpR4YS" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpR4YT" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpR4YU" role="3clFbG">
-            <property role="Xl_RC" value="03 Checkable Patterns/Contract-based Design Pattern" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="6rlO$dpR4YV" role="3clF45" />
-    </node>
     <node concept="13hLZK" id="6rlO$dpKLr2" role="13h7CW">
       <node concept="3clFbS" id="6rlO$dpKLr3" role="2VODD2">
         <node concept="3clFbF" id="2sg$KXfUc$e" role="3cqZAp">
@@ -340,19 +327,6 @@
   <node concept="13h7C7" id="2sg$KXfUUbY">
     <property role="3GE5qa" value="cbd" />
     <ref role="13h7C2" to="2qxf:2sg$KXfUUbh" resolve="CBDAGCompatibilityGoal" />
-    <node concept="13i0hz" id="2sg$KXfV7C5" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="2sg$KXfV7C6" role="1B3o_S" />
-      <node concept="3clFbS" id="2sg$KXfV7C7" role="3clF47">
-        <node concept="3clFbF" id="2sg$KXfV7C8" role="3cqZAp">
-          <node concept="Xl_RD" id="2sg$KXfV7C9" role="3clFbG">
-            <property role="Xl_RC" value="03 Checkable Patterns/Contract-based Design Pattern" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="2sg$KXfV7Ca" role="3clF45" />
-    </node>
     <node concept="13hLZK" id="2sg$KXfUUbZ" role="13h7CW">
       <node concept="3clFbS" id="2sg$KXfUUc0" role="2VODD2">
         <node concept="3clFbF" id="2sg$KXfUUh1" role="3cqZAp">
@@ -388,6 +362,13 @@
   <node concept="13h7C7" id="2sg$KXfVbmP">
     <property role="3GE5qa" value="cbd" />
     <ref role="13h7C2" to="2qxf:2sg$KXfV8Ya" resolve="CBDImplementationCorrectnessGoal" />
+    <node concept="13hLZK" id="2sg$KXfVbmQ" role="13h7CW">
+      <node concept="3clFbS" id="2sg$KXfVbmR" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5P9zxa4g$j0">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="13h7C2" to="2qxf:5P9zxa4g$iE" resolve="CBDGoalBase" />
     <node concept="13i0hz" id="2sg$KXfVbAF" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
@@ -401,8 +382,21 @@
       </node>
       <node concept="17QB3L" id="2sg$KXfVbAK" role="3clF45" />
     </node>
-    <node concept="13hLZK" id="2sg$KXfVbmQ" role="13h7CW">
-      <node concept="3clFbS" id="2sg$KXfVbmR" role="2VODD2" />
+    <node concept="13hLZK" id="5P9zxa4g$j1" role="13h7CW">
+      <node concept="3clFbS" id="5P9zxa4g$j2" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5P9zxa4hlXn" role="13h7CS">
+      <property role="TrG5h" value="isSourceOfSpecialConnections" />
+      <ref role="13i0hy" to="89jy:7TjUbLQ7E1K" resolve="isSourceOfSpecialConnections" />
+      <node concept="3Tm1VV" id="5P9zxa4hlXo" role="1B3o_S" />
+      <node concept="3clFbS" id="5P9zxa4hlXt" role="3clF47">
+        <node concept="3clFbF" id="5P9zxa4hmbz" role="3cqZAp">
+          <node concept="3clFbT" id="5P9zxa4hmby" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5P9zxa4hlXu" role="3clF45" />
     </node>
   </node>
 </model>

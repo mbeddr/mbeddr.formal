@@ -134,27 +134,34 @@
     <property role="TrG5h" value="CBDRefinementCheckGoal" />
     <property role="3GE5qa" value="cbd" />
     <property role="34LRSv" value="CBD Refinement Check Goal" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <ref role="1TJDcQ" node="5P9zxa4g$iE" resolve="CBDGoalBase" />
   </node>
   <node concept="1TIwiD" id="2sg$KXfUUbh">
     <property role="EcuMT" value="2814911461081195217" />
     <property role="3GE5qa" value="cbd" />
     <property role="TrG5h" value="CBDAGCompatibilityGoal" />
     <property role="34LRSv" value="CBD AG Compatibility Goal" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <ref role="1TJDcQ" node="5P9zxa4g$iE" resolve="CBDGoalBase" />
   </node>
   <node concept="1TIwiD" id="2sg$KXfV8Ya">
     <property role="EcuMT" value="2814911461081255818" />
     <property role="3GE5qa" value="cbd" />
     <property role="TrG5h" value="CBDImplementationCorrectnessGoal" />
     <property role="34LRSv" value="CBD Implementation Correctness Goal" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <ref role="1TJDcQ" node="5P9zxa4g$iE" resolve="CBDGoalBase" />
     <node concept="1TJgyj" id="2sg$KXfVaWB" role="1TKVEi">
       <property role="IQ2ns" value="2814911461081263911" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="subcomponent" />
       <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5P9zxa4g$iE">
+    <property role="EcuMT" value="6722060129006666922" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="CBDGoalBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
   </node>
 </model>
 
