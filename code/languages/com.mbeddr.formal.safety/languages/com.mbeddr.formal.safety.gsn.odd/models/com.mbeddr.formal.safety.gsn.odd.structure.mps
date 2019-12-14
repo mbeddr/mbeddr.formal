@@ -108,5 +108,32 @@
       <ref role="20lvS9" node="2_iMKAX4lX5" resolve="ODDFormalContext" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7eb_1beN3H8">
+    <property role="EcuMT" value="8325911144624307016" />
+    <property role="3GE5qa" value="gsn.dsl.monitor" />
+    <property role="TrG5h" value="ODDFormalAssumption" />
+    <property role="34LRSv" value="ODD Formal Assumption" />
+    <property role="R4oN_" value="formally defined assumption" />
+    <ref role="1TJDcQ" to="py52:7eb_1beKlGf" resolve="Assumption" />
+    <node concept="1TJgyj" id="7eb_1beN3Hd" role="1TKVEi">
+      <property role="IQ2ns" value="8325911144624307021" />
+      <property role="20kJfa" value="module" />
+      <ref role="20lvS9" to="gioj:6NmtaR1SULH" resolve="ModuleDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="7eb_1beN3Hk" role="1TKVEi">
+      <property role="IQ2ns" value="8325911144624307028" />
+      <property role="20kJfa" value="spec" />
+      <ref role="20lvS9" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
+    </node>
+    <node concept="1TJgyj" id="7eb_1beN3Hb" role="1TKVEi">
+      <property role="IQ2ns" value="8325911144624307019" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="logPath" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+    </node>
+    <node concept="PrWs8" id="7eb_1beN3H9" role="PzmwI">
+      <ref role="PrY4T" to="o3hv:1ZejHLm44jU" resolve="IPromelaModelLike" />
+    </node>
+  </node>
 </model>
 

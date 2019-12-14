@@ -80,7 +80,7 @@
       <node concept="3clFbS" id="71RA3dHxXJ3" role="3clF47">
         <node concept="3clFbF" id="71RA3dHxXS_" role="3cqZAp">
           <node concept="Xl_RD" id="71RA3dHxXS$" role="3clFbG">
-            <property role="Xl_RC" value="03 DSL Patterns/Formal/ODD/Offline Monitoring (Spin)" />
+            <property role="Xl_RC" value="03 Checkable Patterns/FM-based Patterns/ODD/Offline Monitoring (Spin)" />
           </node>
         </node>
       </node>
@@ -108,6 +108,26 @@
         </node>
       </node>
       <node concept="17QB3L" id="6HIPWY0dV2a" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7eb_1beN59$">
+    <property role="3GE5qa" value="gsn.dsl.monitor" />
+    <ref role="13h7C2" to="z4ol:7eb_1beN3H8" resolve="ODDFormalAssumption" />
+    <node concept="13i0hz" id="7eb_1beN59N" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="7eb_1beN59O" role="1B3o_S" />
+      <node concept="3clFbS" id="7eb_1beN59P" role="3clF47">
+        <node concept="3clFbF" id="7eb_1beN59Q" role="3cqZAp">
+          <node concept="Xl_RD" id="7eb_1beN59R" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/FM-based Patterns/ODD/Offline Monitoring (Spin)" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7eb_1beN59S" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7eb_1beN59_" role="13h7CW">
+      <node concept="3clFbS" id="7eb_1beN59A" role="2VODD2" />
     </node>
   </node>
 </model>
