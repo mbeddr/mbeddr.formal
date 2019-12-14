@@ -51,7 +51,7 @@
             <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
           </node>
           <node concept="2rfbtV" id="7eb_1beMnNq" role="2recC9">
-            <property role="2rfbtB" value="Hazard ID&quot;" />
+            <property role="2rfbtB" value="Hazard ID" />
           </node>
         </node>
         <node concept="2reCLy" id="24PsEXFbJNI" role="2reCL6">

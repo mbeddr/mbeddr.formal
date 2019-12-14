@@ -78,8 +78,8 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="hazards" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7TjUbLQ451K" resolve="Hazard" />
       <ref role="20ksaX" node="7TjUbLQ4gDh" resolve="hazards" />
+      <ref role="20lvS9" node="7TjUbLQ4gDb" resolve="IHazardLike" />
     </node>
     <node concept="PrWs8" id="7TjUbLQ4gD4" role="PzmwI">
       <ref role="PrY4T" node="7TjUbLQ4gD0" resolve="IHazardsContainer" />
@@ -107,11 +107,6 @@
     <property role="TrG5h" value="Hazard" />
     <property role="34LRSv" value="hazard" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="2N7iSwG$CrI" role="1TKVEl">
-      <property role="IQ2nx" value="3226630706269685486" />
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="7TjUbLQ4gDe" role="PzmwI">
       <ref role="PrY4T" node="7TjUbLQ4gDb" resolve="IHazardLike" />
     </node>
@@ -133,6 +128,11 @@
   <node concept="PlHQZ" id="7TjUbLQ4gDb">
     <property role="EcuMT" value="9102875167978228299" />
     <property role="TrG5h" value="IHazardLike" />
+    <node concept="1TJgyi" id="2N7iSwG$CrI" role="1TKVEl">
+      <property role="IQ2nx" value="3226630706269685486" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7TjUbLQ4gDc" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
