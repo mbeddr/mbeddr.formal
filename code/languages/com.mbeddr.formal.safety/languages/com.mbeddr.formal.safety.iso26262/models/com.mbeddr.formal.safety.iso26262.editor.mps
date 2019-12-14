@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="1w8j" ref="r:0631ef51-dd11-46fa-a4db-001e68da09c6(com.mbeddr.formal.safety.iso26262.structure)" implicit="true" />
+    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -45,6 +46,14 @@
     <ref role="1XX52x" to="1w8j:24PsEXFbC2f" resolve="ISO26262Hazard" />
     <node concept="2r0Tta" id="24PsEXFbJNF" role="2wV5jI">
       <node concept="2reCLk" id="24PsEXFbJO3" role="2r0Tv6">
+        <node concept="2reCLy" id="7eb_1beMnN5" role="2reCL6">
+          <node concept="3F0A7n" id="7eb_1beMnNn" role="2reSmM">
+            <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
+          </node>
+          <node concept="2rfbtV" id="7eb_1beMnNq" role="2recC9">
+            <property role="2rfbtB" value="Hazard ID&quot;" />
+          </node>
+        </node>
         <node concept="2reCLy" id="24PsEXFbJNI" role="2reCL6">
           <node concept="3F0A7n" id="24PsEXFbJNM" role="2reSmM">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
