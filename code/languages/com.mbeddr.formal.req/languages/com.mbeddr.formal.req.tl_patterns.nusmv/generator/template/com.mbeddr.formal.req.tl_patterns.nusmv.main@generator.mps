@@ -636,7 +636,7 @@
                         <node concept="2Rf3mk" id="6hWVnwACBJq" role="2OqNvi">
                           <node concept="1xMEDy" id="6hWVnwACBJr" role="1xVPHs">
                             <node concept="chp4Y" id="6hWVnwACBJs" role="ri$Ld">
-                              <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                              <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                             </node>
                           </node>
                         </node>
@@ -728,7 +728,7 @@
                       <node concept="2Rf3mk" id="6hWVnwAg_p7" role="2OqNvi">
                         <node concept="1xMEDy" id="6hWVnwAg_p9" role="1xVPHs">
                           <node concept="chp4Y" id="6hWVnwAg_OX" role="ri$Ld">
-                            <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                            <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                           </node>
                         </node>
                       </node>
@@ -834,14 +834,14 @@
                   <node concept="3cpWsn" id="6hWVnwA$rj7" role="3cpWs9">
                     <property role="TrG5h" value="scopes" />
                     <node concept="2I9FWS" id="6hWVnwA$rj8" role="1tU5fm">
-                      <ref role="2I9WkF" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                      <ref role="2I9WkF" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                     </node>
                     <node concept="2OqwBi" id="6hWVnwA$rj9" role="33vP2m">
                       <node concept="30H73N" id="6hWVnwA$rja" role="2Oq$k0" />
                       <node concept="2Rf3mk" id="6hWVnwA$rjb" role="2OqNvi">
                         <node concept="1xMEDy" id="6hWVnwA$rjc" role="1xVPHs">
                           <node concept="chp4Y" id="6hWVnwA$rjd" role="ri$Ld">
-                            <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                            <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                           </node>
                         </node>
                       </node>
@@ -1068,7 +1068,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="6hWVnwAfr9b" role="3acgRq">
-      <ref role="30HIoZ" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+      <ref role="30HIoZ" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
       <node concept="b5Tf3" id="6hWVnwAfsq4" role="1lVwrX" />
     </node>
   </node>
@@ -1629,13 +1629,13 @@
           <node concept="3cpWsn" id="6hWVnwAEsTi" role="3cpWs9">
             <property role="TrG5h" value="allSystemScopes" />
             <node concept="2I9FWS" id="6hWVnwAEsTf" role="1tU5fm">
-              <ref role="2I9WkF" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+              <ref role="2I9WkF" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
             </node>
             <node concept="2OqwBi" id="6hWVnwAEsTj" role="33vP2m">
               <node concept="1Q6Npb" id="6hWVnwAEsTk" role="2Oq$k0" />
               <node concept="2SmgA7" id="6hWVnwAEsTl" role="2OqNvi">
                 <node concept="chp4Y" id="6hWVnwAEsTm" role="1dBWTz">
-                  <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                  <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                 </node>
               </node>
             </node>
@@ -1739,8 +1739,8 @@
                                 <node concept="37vLTw" id="6hWVnwAETTf" role="2Oq$k0">
                                   <ref role="3cqZAo" node="6hWVnwAETTh" resolve="it" />
                                 </node>
-                                <node concept="3Tsc0h" id="6hWVnwAETTg" role="2OqNvi">
-                                  <ref role="3TtcxE" to="uu78:6hWVnwA8mPY" resolve="properties" />
+                                <node concept="3Tsc0h" id="5FhZjqTOKQQ" role="2OqNvi">
+                                  <ref role="3TtcxE" to="yyq9:5FhZjqTO19U" resolve="specs" />
                                 </node>
                               </node>
                               <node concept="v3k3i" id="5uTeY1FnVfE" role="2OqNvi">

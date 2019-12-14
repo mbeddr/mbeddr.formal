@@ -24,6 +24,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -57,6 +58,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="69OrlvCKnj2" role="PzmwI">
       <ref role="PrY4T" to="b19z:1ZejHLlGC0C" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="5FhZjqTOItM" role="PzmwI">
+      <ref role="PrY4T" node="5FhZjqTOItL" resolve="ITLProperty" />
     </node>
     <node concept="1TJgyj" id="6hWVnwA1jgs" role="1TKVEi">
       <property role="IQ2ns" value="7240923401194648604" />
@@ -416,16 +420,27 @@
     <property role="34LRSv" value="temporal logics specification" />
     <property role="R4oN_" value="requirements specifications with temporal logics boilerplates" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5FhZjqTNLRV" role="1TKVEi">
-      <property role="IQ2ns" value="6544290145033461243" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="specs" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6hWVnwA1j5g" resolve="TLProperty" />
-    </node>
     <node concept="PrWs8" id="5FhZjqTNLRa" role="PzmwI">
       <ref role="PrY4T" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
     </node>
+    <node concept="PrWs8" id="5FhZjqTO19Z" role="PzmwI">
+      <ref role="PrY4T" node="5FhZjqTO19T" resolve="ITLPropertyContainer" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5FhZjqTO19T">
+    <property role="EcuMT" value="6544290145033523833" />
+    <property role="TrG5h" value="ITLPropertyContainer" />
+    <node concept="1TJgyj" id="5FhZjqTO19U" role="1TKVEi">
+      <property role="IQ2ns" value="6544290145033523834" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="specs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5FhZjqTOItL" resolve="ITLProperty" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5FhZjqTOItL">
+    <property role="EcuMT" value="6544290145033709425" />
+    <property role="TrG5h" value="ITLProperty" />
   </node>
 </model>
 

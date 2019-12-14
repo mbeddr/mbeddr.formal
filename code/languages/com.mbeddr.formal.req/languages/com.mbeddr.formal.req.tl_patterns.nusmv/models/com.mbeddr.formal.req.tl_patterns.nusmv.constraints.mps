@@ -165,7 +165,7 @@
                 <node concept="2Xjw5R" id="6hWVnwA9_Pd" role="2OqNvi">
                   <node concept="1xMEDy" id="6hWVnwA9_Pe" role="1xVPHs">
                     <node concept="chp4Y" id="6hWVnwA9_Pf" role="ri$Ld">
-                      <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                      <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="6hWVnwA9_Pg" role="1xVPHs" />
@@ -196,7 +196,7 @@
                     <node concept="2Xjw5R" id="6hWVnwA9BtT" role="2OqNvi">
                       <node concept="1xMEDy" id="6hWVnwA9BtV" role="1xVPHs">
                         <node concept="chp4Y" id="6hWVnwA9BAe" role="ri$Ld">
-                          <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                          <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="6hWVnwA9BRr" role="1xVPHs" />
@@ -235,7 +235,7 @@
                   <node concept="2Xjw5R" id="6hWVnwA9NNg" role="2OqNvi">
                     <node concept="1xMEDy" id="6hWVnwA9NNh" role="1xVPHs">
                       <node concept="chp4Y" id="6hWVnwA9NNi" role="ri$Ld">
-                        <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                        <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                       </node>
                     </node>
                   </node>
@@ -501,7 +501,7 @@
                     <node concept="2Xjw5R" id="6hWVnwAcsN0" role="2OqNvi">
                       <node concept="1xMEDy" id="6hWVnwAcsN1" role="1xVPHs">
                         <node concept="chp4Y" id="6hWVnwAcsN2" role="ri$Ld">
-                          <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                          <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="6hWVnwAcsN3" role="1xVPHs" />
@@ -536,7 +536,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6hWVnwADhL7">
-    <ref role="1M2myG" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+    <ref role="1M2myG" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
     <node concept="1N5Pfh" id="6hWVnwADhL8" role="1Mr941">
       <ref role="1N5Vy1" to="uu78:6hWVnwA8mNz" resolve="module" />
       <node concept="3dgokm" id="6hWVnwADhLa" role="1N6uqs">

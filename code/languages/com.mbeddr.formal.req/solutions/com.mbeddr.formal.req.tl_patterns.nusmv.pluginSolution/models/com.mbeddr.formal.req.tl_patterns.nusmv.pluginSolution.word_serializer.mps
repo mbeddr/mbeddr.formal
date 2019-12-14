@@ -203,11 +203,11 @@
           <node concept="3cpWsn" id="38aFq1jjIt7" role="3cpWs9">
             <property role="TrG5h" value="ss" />
             <node concept="3Tqbb2" id="38aFq1jjIt8" role="1tU5fm">
-              <ref role="ehGHo" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+              <ref role="ehGHo" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
             </node>
             <node concept="1PxgMI" id="38aFq1jjIt9" role="33vP2m">
               <node concept="chp4Y" id="38aFq1jjTI$" role="3oSUPX">
-                <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
               </node>
               <node concept="37vLTw" id="38aFq1jjItb" role="1m5AlR">
                 <ref role="3cqZAo" node="38aFq1jjIsY" resolve="n" />
@@ -270,8 +270,8 @@
             <node concept="37vLTw" id="38aFq1jkaiI" role="2Oq$k0">
               <ref role="3cqZAo" node="38aFq1jjIt7" resolve="ss" />
             </node>
-            <node concept="3Tsc0h" id="38aFq1jkdXc" role="2OqNvi">
-              <ref role="3TtcxE" to="uu78:6hWVnwA8mPY" resolve="properties" />
+            <node concept="3Tsc0h" id="5FhZjqTOLVX" role="2OqNvi">
+              <ref role="3TtcxE" to="yyq9:5FhZjqTO19U" resolve="specs" />
             </node>
           </node>
           <node concept="3clFbS" id="38aFq1jk9Sz" role="2LFqv$">

@@ -87,9 +87,9 @@
   </node>
   <node concept="1TIwiD" id="6hWVnwA8mHU">
     <property role="EcuMT" value="7240923401196497786" />
-    <property role="TrG5h" value="SystemScope" />
-    <property role="34LRSv" value="scope definition" />
-    <property role="R4oN_" value="the scope in which the collection of patterns hold" />
+    <property role="TrG5h" value="FormalSMVModuleScope" />
+    <property role="34LRSv" value="properties hold for module scope" />
+    <property role="R4oN_" value="the SMV-module scope in which the collection of patterns hold" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6hWVnwA8mNz" role="1TKVEi">
       <property role="IQ2ns" value="7240923401196498147" />
@@ -100,12 +100,8 @@
     <node concept="PrWs8" id="6hWVnwA8mHV" role="PzmwI">
       <ref role="PrY4T" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
     </node>
-    <node concept="1TJgyj" id="6hWVnwA8mPY" role="1TKVEi">
-      <property role="IQ2ns" value="7240923401196498302" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="properties" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
+    <node concept="PrWs8" id="5FhZjqTO3wH" role="PzmwI">
+      <ref role="PrY4T" to="yyq9:5FhZjqTO19T" resolve="ITLPropertyContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="6hWVnwA9Leo">
@@ -183,8 +179,8 @@
     <property role="TrG5h" value="CommentSpec" />
     <property role="34LRSv" value="--" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5uTeY1FluaL" role="PzmwI">
-      <ref role="PrY4T" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
+    <node concept="PrWs8" id="5FhZjqTOItS" role="PzmwI">
+      <ref role="PrY4T" to="yyq9:5FhZjqTOItL" resolve="ITLProperty" />
     </node>
     <node concept="1TJgyi" id="5uTeY1FluaP" role="1TKVEl">
       <property role="IQ2nx" value="6321149387050705589" />

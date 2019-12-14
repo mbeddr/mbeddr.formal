@@ -9,6 +9,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="uu78" ref="r:baa6538f-2440-4773-b250-0be24637647a(com.mbeddr.formal.req.tl_patterns.nusmv.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="yyq9" ref="r:221f6636-9d4b-4cff-b27b-80f65c39076e(com.mbeddr.formal.req.tl_patterns.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -88,7 +89,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA8mN_">
-    <ref role="1XX52x" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+    <ref role="1XX52x" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
     <node concept="3EZMnI" id="6hWVnwA8mNB" role="2wV5jI">
       <node concept="3EZMnI" id="6hWVnwA8mNI" role="3EZMnx">
         <node concept="VPM3Z" id="6hWVnwA8mNK" role="3F10Kt" />
@@ -112,15 +113,15 @@
         </node>
         <node concept="l2Vlx" id="6hWVnwA8mNN" role="2iSdaV" />
       </node>
-      <node concept="3EZMnI" id="6hWVnwA8mPn" role="3EZMnx">
-        <node concept="VPM3Z" id="6hWVnwA8mPp" role="3F10Kt" />
-        <node concept="3XFhqQ" id="6hWVnwA8mPJ" role="3EZMnx" />
-        <node concept="3F2HdR" id="6hWVnwA8mPP" role="3EZMnx">
-          <ref role="1NtTu8" to="uu78:6hWVnwA8mPY" resolve="properties" />
-          <node concept="2iRkQZ" id="6hWVnwA8mPS" role="2czzBx" />
-          <node concept="VPM3Z" id="6hWVnwA8mPT" role="3F10Kt" />
+      <node concept="3EZMnI" id="5FhZjqTOj8v" role="3EZMnx">
+        <node concept="VPM3Z" id="5FhZjqTOj8w" role="3F10Kt" />
+        <node concept="3XFhqQ" id="5FhZjqTOj8x" role="3EZMnx" />
+        <node concept="3F2HdR" id="5FhZjqTOj8y" role="3EZMnx">
+          <ref role="1NtTu8" to="yyq9:5FhZjqTO19U" resolve="specs" />
+          <node concept="2iRkQZ" id="5FhZjqTOj8z" role="2czzBx" />
+          <node concept="VPM3Z" id="5FhZjqTOj8$" role="3F10Kt" />
         </node>
-        <node concept="l2Vlx" id="6hWVnwA8mPs" role="2iSdaV" />
+        <node concept="l2Vlx" id="5FhZjqTOj8_" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="6hWVnwA8mP2" role="3EZMnx">
         <node concept="VPM3Z" id="6hWVnwA8mP4" role="3F10Kt" />
