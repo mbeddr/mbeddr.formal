@@ -10,6 +10,7 @@
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -19,8 +20,12 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -149,12 +154,6 @@
     <property role="TrG5h" value="CBDImplementationCorrectnessGoal" />
     <property role="34LRSv" value="CBD Implementation Correctness Goal" />
     <ref role="1TJDcQ" node="5P9zxa4g$iE" resolve="CBDGoalBase" />
-    <node concept="1TJgyj" id="2sg$KXfVaWB" role="1TKVEi">
-      <property role="IQ2ns" value="2814911461081263911" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="subcomponent" />
-      <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5P9zxa4g$iE">
     <property role="EcuMT" value="6722060129006666922" />
@@ -162,6 +161,22 @@
     <property role="TrG5h" value="CBDGoalBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+  </node>
+  <node concept="1TIwiD" id="2RlaC$P5nCo">
+    <property role="EcuMT" value="3302592670535612952" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="AbstractComponentRefWord" />
+    <property role="34LRSv" value="@component" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2RlaC$P5nCp" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="2RlaC$P5nCr" role="1TKVEi">
+      <property role="IQ2ns" value="3302592670535612955" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="component" />
+      <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
+    </node>
   </node>
 </model>
 
