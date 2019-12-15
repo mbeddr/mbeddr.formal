@@ -393,7 +393,7 @@
       <node concept="3clFbS" id="71RA3dHxXJ3" role="3clF47">
         <node concept="3clFbF" id="71RA3dHxXS_" role="3cqZAp">
           <node concept="Xl_RD" id="71RA3dHxXS$" role="3clFbG">
-            <property role="Xl_RC" value="03 DSL Patterns/Formal/SMV-based Pattern" />
+            <property role="Xl_RC" value="03 Checkable Patterns/FM-based Patterns/SMV-based Pattern" />
           </node>
         </node>
       </node>
@@ -436,24 +436,24 @@
       <node concept="10P_77" id="7TjUbLQ8ejX" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="4i__4GxsoSV">
+  <node concept="13h7C7" id="5P9zxa4gbjJ">
     <property role="3GE5qa" value="gsn.dsl.smv" />
-    <ref role="13h7C2" to="bsp8:4i__4GxsoSU" resolve="SmvResults4CBDSolution" />
-    <node concept="13hLZK" id="4i__4GxsoSW" role="13h7CW">
-      <node concept="3clFbS" id="4i__4GxsoSX" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="4i__4GxsoT6" role="13h7CS">
+    <ref role="13h7C2" to="bsp8:4qaoH_E0cQ" resolve="SmvResultsSolution" />
+    <node concept="13i0hz" id="5P9zxa4gbAj" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="4i__4GxsoT7" role="1B3o_S" />
-      <node concept="3clFbS" id="4i__4GxsoTc" role="3clF47">
-        <node concept="3clFbF" id="6rlO$dpJUOy" role="3cqZAp">
-          <node concept="Xl_RD" id="6rlO$dpJUOz" role="3clFbG">
-            <property role="Xl_RC" value="03 DSL Patterns/Formal/Contract-based Design Pattern" />
+      <node concept="3Tm1VV" id="5P9zxa4gbAk" role="1B3o_S" />
+      <node concept="3clFbS" id="5P9zxa4gbAl" role="3clF47">
+        <node concept="3clFbF" id="5P9zxa4gbAm" role="3cqZAp">
+          <node concept="Xl_RD" id="5P9zxa4gbAn" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/FM-based Patterns/SMV-based Pattern" />
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="4i__4GxsoTd" role="3clF45" />
+      <node concept="17QB3L" id="5P9zxa4gbAo" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="5P9zxa4gbjK" role="13h7CW">
+      <node concept="3clFbS" id="5P9zxa4gbjL" role="2VODD2" />
     </node>
   </node>
 </model>

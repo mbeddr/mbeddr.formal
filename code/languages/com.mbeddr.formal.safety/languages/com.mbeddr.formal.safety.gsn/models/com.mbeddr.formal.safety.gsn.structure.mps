@@ -264,5 +264,20 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7eb_1beKlGf">
+    <property role="EcuMT" value="8325911144623594255" />
+    <property role="TrG5h" value="Assumption" />
+    <property role="34LRSv" value="Assumption" />
+    <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1irR5M" id="7eb_1beKZOj" role="rwd14">
+      <property role="2$rrk2" value="6" />
+      <node concept="1irPie" id="7eb_1beKZOn" role="1irR9h">
+        <property role="1irPi9" value="A" />
+        <node concept="3PKj8D" id="7eb_1beKZOo" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
