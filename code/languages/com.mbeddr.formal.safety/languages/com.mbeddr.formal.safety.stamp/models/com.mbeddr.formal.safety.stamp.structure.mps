@@ -11,6 +11,19 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -25,6 +38,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -66,6 +80,15 @@
     </node>
     <node concept="PrWs8" id="3Cm$$O2ux$k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1irR5M" id="1L4MZBxUA_Q" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="1L4MZBxUA_V" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="1L4MZBxUAA0" role="3PKjny">
+          <property role="3PKj8l" value="555555" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="3HVC1H6VUjI">
@@ -153,6 +176,15 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3HVC1H6VUjH" resolve="FunctionalControlStructure" />
     </node>
+    <node concept="1irR5M" id="1L4MZBxUz_Q" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irPie" id="1L4MZBxU$it" role="1irR9h">
+        <property role="1irPi9" value="U" />
+        <node concept="3PKj8D" id="1L4MZBxU$ix" role="3PKjny">
+          <property role="3PKj8l" value="555555" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="1JhvKLLO08w">
     <property role="EcuMT" value="2004523000582373920" />
@@ -213,14 +245,15 @@
     <property role="EcuMT" value="2004523000582413321" />
     <property role="TrG5h" value="ActionDescriptionBase" />
     <property role="R5$K7" value="true" />
-    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1JhvKLLO9Ka">
     <property role="EcuMT" value="2004523000582413322" />
     <property role="TrG5h" value="TextualActionDescription" />
     <property role="34LRSv" value="text" />
-    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
+    <property role="R4oN_" value="plain text" />
     <ref role="1TJDcQ" node="1JhvKLLO9K9" resolve="ActionDescriptionBase" />
     <node concept="1TJgyj" id="1JhvKLLO9Kb" role="1TKVEi">
       <property role="IQ2ns" value="2004523000582413323" />
@@ -231,9 +264,10 @@
   </node>
   <node concept="1TIwiD" id="1JhvKLLOZ8k">
     <property role="EcuMT" value="2004523000582631956" />
-    <property role="3GE5qa" value="baseLanguage.analysis" />
-    <property role="TrG5h" value="Pattern" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
+    <property role="TrG5h" value="PatternActionDescription" />
     <property role="34LRSv" value="pattern" />
+    <property role="R4oN_" value="context/consequence pattern" />
     <ref role="1TJDcQ" node="1JhvKLLO9K9" resolve="ActionDescriptionBase" />
     <node concept="1TJgyj" id="1JhvKLLOZ8l" role="1TKVEi">
       <property role="IQ2ns" value="2004523000582631957" />
@@ -305,6 +339,14 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1L4MZBxVnY0">
+    <property role="EcuMT" value="2036977205576040320" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
+    <property role="TrG5h" value="NotApplicableAction" />
+    <property role="34LRSv" value="N/A" />
+    <property role="R4oN_" value="not applicable" />
+    <ref role="1TJDcQ" node="1JhvKLLO9K9" resolve="ActionDescriptionBase" />
   </node>
 </model>
 
