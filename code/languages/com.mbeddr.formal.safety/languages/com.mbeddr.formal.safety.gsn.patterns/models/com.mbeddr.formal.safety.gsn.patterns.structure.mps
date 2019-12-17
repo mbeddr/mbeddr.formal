@@ -49,11 +49,6 @@
     <property role="34LRSv" value="Argument over Hazards Strategy" />
     <property role="3GE5qa" value="hazards" />
     <ref role="1TJDcQ" node="7bxPmtp7B44" resolve="PatternStrategyBase" />
-    <node concept="1TJgyj" id="7TjUbLQ4gCY" role="1TKVEi">
-      <property role="IQ2ns" value="9102875167978228286" />
-      <property role="20kJfa" value="hazardList" />
-      <ref role="20lvS9" to="cjwq:7TjUbLQ4gD0" resolve="IHazardsContainer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7bxPmtp7B44">
     <property role="EcuMT" value="8278132229937197316" />
@@ -67,11 +62,6 @@
     <property role="34LRSv" value="Hazard Mitigated Goal" />
     <property role="3GE5qa" value="hazards" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
-    <node concept="1TJgyj" id="7TjUbLQ4kD4" role="1TKVEi">
-      <property role="IQ2ns" value="9102875167978244676" />
-      <property role="20kJfa" value="hazard" />
-      <ref role="20lvS9" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7TjUbLQ4nfd">
     <property role="EcuMT" value="9102875167978255309" />
@@ -120,12 +110,6 @@
     <property role="34LRSv" value="CBD Strategy" />
     <property role="3GE5qa" value="cbd" />
     <ref role="1TJDcQ" to="py52:3GRi4m$rlnF" resolve="Strategy" />
-    <node concept="1TJgyj" id="6rlO$dpPTOD" role="1TKVEi">
-      <property role="IQ2ns" value="7410059948619963689" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="component" />
-      <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6rlO$dpPTOC">
     <property role="EcuMT" value="7410059948619963688" />
@@ -176,6 +160,36 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="component" />
       <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2RlaC$P86Ok">
+    <property role="EcuMT" value="3302592670536330516" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardsListRefWord" />
+    <property role="34LRSv" value="@hazardsList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2RlaC$P86Ol" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="2RlaC$Pcvh7" role="1TKVEi">
+      <property role="IQ2ns" value="3302592670537479239" />
+      <property role="20kJfa" value="hazardsList" />
+      <ref role="20lvS9" to="cjwq:7TjUbLQ4gD0" resolve="IHazardsContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2RlaC$PbkQu">
+    <property role="EcuMT" value="3302592670537174430" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardRefWord" />
+    <property role="34LRSv" value="@hazard" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2RlaC$PbkQx" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="2RlaC$PcChp" role="1TKVEi">
+      <property role="IQ2ns" value="3302592670537516121" />
+      <property role="20kJfa" value="hazard" />
+      <ref role="20lvS9" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
     </node>
   </node>
 </model>

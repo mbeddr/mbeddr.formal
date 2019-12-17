@@ -10,6 +10,8 @@
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="g8ih" ref="r:d04ada13-9d56-43be-9fbe-16c353913377(com.mbeddr.formal.safety.gsn.patterns.behavior)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -133,30 +135,30 @@
         <node concept="3cpWsn" id="6FysnQMU8dT" role="3cpWs9">
           <property role="TrG5h" value="hazardsClaimedToBeAddressed" />
           <node concept="2I9FWS" id="6FysnQMUyc5" role="1tU5fm">
-            <ref role="2I9WkF" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
+            <ref role="2I9WkF" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
           </node>
-          <node concept="2OqwBi" id="6FysnQMUEjj" role="33vP2m">
-            <node concept="2OqwBi" id="6FysnQMUzYo" role="2Oq$k0">
-              <node concept="2OqwBi" id="6FysnQMUxrM" role="2Oq$k0">
+          <node concept="2OqwBi" id="2RlaC$P9TNP" role="33vP2m">
+            <node concept="2OqwBi" id="2RlaC$P9O5V" role="2Oq$k0">
+              <node concept="2OqwBi" id="2RlaC$P9LIG" role="2Oq$k0">
                 <node concept="2OqwBi" id="6FysnQMU8dU" role="2Oq$k0">
                   <node concept="1YBJjd" id="6FysnQMU8dV" role="2Oq$k0">
                     <ref role="1YBMHb" node="6FysnQMU7oj" resolve="sp" />
                   </node>
-                  <node concept="3TrEf2" id="6FysnQMU8dW" role="2OqNvi">
-                    <ref role="3Tt5mk" to="2qxf:7TjUbLQ4gCY" resolve="hazardList" />
+                  <node concept="3TrEf2" id="2RlaC$P9Lfd" role="2OqNvi">
+                    <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="6FysnQMUxCb" role="2OqNvi">
-                  <ref role="3TtcxE" to="cjwq:7TjUbLQ4gDh" resolve="hazards" />
+                <node concept="3Tsc0h" id="2RlaC$P9Mpc" role="2OqNvi">
+                  <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
                 </node>
               </node>
-              <node concept="v3k3i" id="6FysnQMUAR4" role="2OqNvi">
-                <node concept="chp4Y" id="6FysnQMUASa" role="v3oSu">
-                  <ref role="cht4Q" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
+              <node concept="v3k3i" id="2RlaC$P9RFf" role="2OqNvi">
+                <node concept="chp4Y" id="2RlaC$P9RRa" role="v3oSu">
+                  <ref role="cht4Q" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
                 </node>
               </node>
             </node>
-            <node concept="ANE8D" id="6FysnQMUENY" role="2OqNvi" />
+            <node concept="ANE8D" id="2RlaC$P9U9W" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -185,8 +187,8 @@
                       <node concept="37vLTw" id="6FysnQMUwg5" role="2Oq$k0">
                         <ref role="3cqZAo" node="6FysnQMUwg7" resolve="it" />
                       </node>
-                      <node concept="3TrEf2" id="6FysnQMUwg6" role="2OqNvi">
-                        <ref role="3Tt5mk" to="2qxf:7TjUbLQ4kD4" resolve="hazard" />
+                      <node concept="2qgKlT" id="2RlaC$PcSTM" role="2OqNvi">
+                        <ref role="37wK5l" to="g8ih:2RlaC$Pblio" resolve="getHazard" />
                       </node>
                     </node>
                   </node>
