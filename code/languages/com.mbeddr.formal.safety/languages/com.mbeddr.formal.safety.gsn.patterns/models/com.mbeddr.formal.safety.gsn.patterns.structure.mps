@@ -75,11 +75,6 @@
     <property role="34LRSv" value="Argument over Requirements Strategy" />
     <property role="3GE5qa" value="requirements" />
     <ref role="1TJDcQ" node="7bxPmtp7B44" resolve="PatternStrategyBase" />
-    <node concept="1TJgyj" id="1$M4_qbW4nT" role="1TKVEi">
-      <property role="IQ2ns" value="1815533762707998201" />
-      <property role="20kJfa" value="requirementsList" />
-      <ref role="20lvS9" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1$M4_qbWlBU">
     <property role="EcuMT" value="1815533762708068858" />
@@ -87,22 +82,12 @@
     <property role="34LRSv" value="Requirement Satisfied Goal" />
     <property role="3GE5qa" value="requirements" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
-    <node concept="1TJgyj" id="1$M4_qbWlC1" role="1TKVEi">
-      <property role="IQ2ns" value="1815533762708068865" />
-      <property role="20kJfa" value="requirement" />
-      <ref role="20lvS9" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6rlO$dpKLnX">
     <property role="EcuMT" value="7410059948618618365" />
     <property role="TrG5h" value="SafeSystemGoal" />
     <property role="34LRSv" value="Safe System Goal" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
-    <node concept="1TJgyj" id="6rlO$dpKMA6" role="1TKVEi">
-      <property role="IQ2ns" value="7410059948618623366" />
-      <property role="20kJfa" value="functionalRequirements" />
-      <ref role="20lvS9" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6rlO$dpJSTC">
     <property role="EcuMT" value="7410059948618387048" />
@@ -129,7 +114,7 @@
     <property role="EcuMT" value="2814911461081195217" />
     <property role="3GE5qa" value="cbd" />
     <property role="TrG5h" value="CBDAGCompatibilityGoal" />
-    <property role="34LRSv" value="CBD AG Compatibility Goal" />
+    <property role="34LRSv" value="CBD A/G Compatibility Goal" />
     <ref role="1TJDcQ" node="5P9zxa4g$iE" resolve="CBDGoalBase" />
   </node>
   <node concept="1TIwiD" id="2sg$KXfV8Ya">
@@ -190,6 +175,36 @@
       <property role="IQ2ns" value="3302592670537516121" />
       <property role="20kJfa" value="hazard" />
       <ref role="20lvS9" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rzNEUxND_5">
+    <property role="EcuMT" value="2802310642588883269" />
+    <property role="3GE5qa" value="requirements" />
+    <property role="TrG5h" value="RequirementDocumentRefWord" />
+    <property role="34LRSv" value="@reqDocu" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2rzNEUxND_6" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="2rzNEUxND_8" role="1TKVEi">
+      <property role="IQ2ns" value="2802310642588883272" />
+      <property role="20kJfa" value="requirementDocument" />
+      <ref role="20lvS9" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="65LrkjiWSI2">
+    <property role="EcuMT" value="7021513436411693954" />
+    <property role="3GE5qa" value="requirements" />
+    <property role="TrG5h" value="RequirementRefWord" />
+    <property role="34LRSv" value="@requirement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="65LrkjiWSI3" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="65LrkjiWSI5" role="1TKVEi">
+      <property role="IQ2ns" value="7021513436411693957" />
+      <property role="20kJfa" value="requirement" />
+      <ref role="20lvS9" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
     </node>
   </node>
 </model>
