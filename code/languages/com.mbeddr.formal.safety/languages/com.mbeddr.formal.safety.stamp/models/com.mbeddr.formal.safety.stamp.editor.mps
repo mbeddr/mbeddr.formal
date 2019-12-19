@@ -986,7 +986,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1JhvKLLOFY$">
-    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
     <ref role="1XX52x" to="bewr:1JhvKLLO9Ka" resolve="TextualActionDescription" />
     <node concept="3F1sOY" id="1JhvKLLOFYA" role="2wV5jI">
       <ref role="1NtTu8" to="bewr:1JhvKLLO9Kb" resolve="text" />
@@ -1003,8 +1003,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="1JhvKLLPb1c">
-    <property role="3GE5qa" value="baseLanguage.analysis" />
-    <ref role="1XX52x" to="bewr:1JhvKLLOZ8k" resolve="Pattern" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
+    <ref role="1XX52x" to="bewr:1JhvKLLOZ8k" resolve="PatternActionDescription" />
     <node concept="3EZMnI" id="1JhvKLLPb1e" role="2wV5jI">
       <node concept="3F1sOY" id="1JhvKLLPb1l" role="3EZMnx">
         <ref role="1NtTu8" to="bewr:1JhvKLLOZ8l" resolve="context" />
@@ -1042,6 +1042,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1L4MZBxVnY1">
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
+    <ref role="1XX52x" to="bewr:1L4MZBxVnY0" resolve="NotApplicableAction" />
+    <node concept="3F0ifn" id="1L4MZBxVnY3" role="2wV5jI">
+      <property role="3F0ifm" value="N/A" />
     </node>
   </node>
 </model>

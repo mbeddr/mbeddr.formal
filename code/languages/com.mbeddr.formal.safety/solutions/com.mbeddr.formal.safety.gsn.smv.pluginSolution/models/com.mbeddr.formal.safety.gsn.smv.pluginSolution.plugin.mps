@@ -1102,8 +1102,8 @@
       </node>
       <node concept="37vLTG" id="4qaoH_S9Ja" role="3clF46">
         <property role="TrG5h" value="factory" />
-        <node concept="3uibUv" id="CmOUmcd9G3" role="1tU5fm">
-          <ref role="3uigEE" to="xy37:CmOUmcc4D1" resolve="NuSMVSMVGoalBaseAnalyzerFactory" />
+        <node concept="3uibUv" id="72xocJViLgK" role="1tU5fm">
+          <ref role="3uigEE" to="2ocj:5uqRFp8ViLO" resolve="AnalyzerFactory" />
         </node>
       </node>
       <node concept="37vLTG" id="4qaoH_S9pV" role="3clF46">

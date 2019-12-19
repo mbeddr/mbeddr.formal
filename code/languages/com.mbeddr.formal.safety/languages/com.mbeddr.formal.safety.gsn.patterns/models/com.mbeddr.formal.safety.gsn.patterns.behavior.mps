@@ -25,6 +25,8 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
@@ -92,6 +94,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -939,6 +942,49 @@
         </node>
       </node>
       <node concept="10P_77" id="5P9zxa4hlXu" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="ZaBFheHlsj">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="13h7C2" to="2qxf:2RlaC$P5nCo" resolve="AbstractComponentRefWord" />
+    <node concept="13i0hz" id="ZaBFheHlsu" role="13h7CS">
+      <property role="TrG5h" value="getComponent" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="ZaBFheHlsv" role="1B3o_S" />
+      <node concept="3Tqbb2" id="ZaBFheHlsI" role="3clF45" />
+      <node concept="3clFbS" id="ZaBFheHlsx" role="3clF47">
+        <node concept="3clFbF" id="ZaBFheHltM" role="3cqZAp">
+          <node concept="2OqwBi" id="ZaBFheHlW8" role="3clFbG">
+            <node concept="2OqwBi" id="ZaBFheHlAI" role="2Oq$k0">
+              <node concept="13iPFW" id="ZaBFheHltL" role="2Oq$k0" />
+              <node concept="3TrEf2" id="ZaBFheHlLs" role="2OqNvi">
+                <ref role="3Tt5mk" to="2qxf:2RlaC$P5nCr" resolve="component" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="ZaBFheHnzS" role="2OqNvi">
+              <ref role="37wK5l" node="ZaBFheHm9F" resolve="getComponent" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="ZaBFheHlsk" role="13h7CW">
+      <node concept="3clFbS" id="ZaBFheHlsl" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="ZaBFheHm9w">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="13h7C2" to="2qxf:6rlO$dpPTOC" resolve="AbstractComponentRef" />
+    <node concept="13i0hz" id="ZaBFheHm9F" role="13h7CS">
+      <property role="TrG5h" value="getComponent" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="ZaBFheHm9G" role="1B3o_S" />
+      <node concept="3Tqbb2" id="ZaBFheHm9V" role="3clF45" />
+      <node concept="3clFbS" id="ZaBFheHm9I" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="ZaBFheHm9x" role="13h7CW">
+      <node concept="3clFbS" id="ZaBFheHm9y" role="2VODD2" />
     </node>
   </node>
 </model>

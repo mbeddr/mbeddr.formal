@@ -7,13 +7,12 @@
   </languages>
   <imports>
     <import index="3g0o" ref="r:a6263c3c-f5c8-43aa-8a86-c420dd6b206e(com.mpsbasics.docx4j.core.registry)" />
-    <import index="eaz0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.bind(JDK/)" />
     <import index="s3z8" ref="r:5b29d604-14e1-4547-b308-d116f5568071(com.mpsbasics.docx4j.core.word)" />
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="eaz1" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
+    <import index="eaz0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -150,7 +149,7 @@
       <node concept="3Tm1VV" id="2w5Gq4UsCcQ" role="1B3o_S" />
       <node concept="3cqZAl" id="2w5Gq4UsCcR" role="3clF45" />
       <node concept="3uibUv" id="52LJyEZg5R8" role="Sfmx6">
-        <ref role="3uigEE" to="eaz1:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="2w5Gq4UsCcT" role="3clF47">
         <node concept="3cpWs8" id="38aFq1iXqNp" role="3cqZAp">

@@ -7,61 +7,79 @@
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="antlr-2.7.7.jar" />
       <sourceRoot location="antlr-runtime-3.5.2.jar" />
-      <sourceRoot location="avalon-framework-api-4.3.1.jar" />
-      <sourceRoot location="avalon-framework-impl-4.3.1.jar" />
-      <sourceRoot location="commons-codec-1.11.jar" />
-      <sourceRoot location="commons-compress-1.12.jar" />
-      <sourceRoot location="commons-io-2.5.jar" />
-      <sourceRoot location="commons-lang3-3.5.jar" />
-      <sourceRoot location="commons-logging-1.0.4.jar" />
-      <sourceRoot location="docx4j-6.0.1.jar" />
-      <sourceRoot location="guava-20.0.jar" />
-      <sourceRoot location="httpclient-4.5.6.jar" />
-      <sourceRoot location="httpcore-4.4.10.jar" />
-      <sourceRoot location="jackson-annotations-2.7.0.jar" />
-      <sourceRoot location="jackson-core-2.7.9.jar" />
-      <sourceRoot location="jackson-databind-2.7.9.4.jar" />
+      <sourceRoot location="checker-qual-2.5.2.jar" />
+      <sourceRoot location="commons-codec-1.12.jar" />
+      <sourceRoot location="commons-compress-1.18.jar" />
+      <sourceRoot location="commons-io-2.6.jar" />
+      <sourceRoot location="commons-lang3-3.9.jar" />
+      <sourceRoot location="docx4j-core-11.1.3.jar" />
+      <sourceRoot location="docx4j-openxml-objects-11.1.3.jar" />
+      <sourceRoot location="docx4j-openxml-objects-pml-11.1.3.jar" />
+      <sourceRoot location="docx4j-openxml-objects-sml-11.1.3.jar" />
+      <sourceRoot location="error_prone_annotations-2.2.0.jar" />
+      <sourceRoot location="hamcrest-core-1.3.jar" />
+      <sourceRoot location="httpclient-4.5.8.jar" />
+      <sourceRoot location="httpcore-4.4.11.jar" />
+      <sourceRoot location="jackson-annotations-2.9.0.jar" />
+      <sourceRoot location="jackson-core-2.9.9.jar" />
+      <sourceRoot location="jackson-databind-2.9.9.jar" />
+      <sourceRoot location="jakarta.activation-api-1.2.1.jar" />
+      <sourceRoot location="jakarta.xml.bind-api-2.3.2.jar" />
       <sourceRoot location="jaxb-svg11-1.0.2.jar" />
-      <sourceRoot location="lorem-2.1.jar" />
-      <sourceRoot location="mbassador-1.2.4.2.jar" />
-      <sourceRoot location="serializer-2.7.2.jar" />
-      <sourceRoot location="slf4j-api-1.7.25.jar" />
-      <sourceRoot location="slf4j-simple-1.7.25.jar" />
+      <sourceRoot location="jcl-over-slf4j-1.7.26.jar" />
+      <sourceRoot location="mbassador-1.3.2.jar" />
+      <sourceRoot location="slf4j-api-1.8.0-beta4.jar" />
+      <sourceRoot location="slf4j-simple-1.8.0-beta4.jar" />
       <sourceRoot location="stringtemplate-3.2.1.jar" />
       <sourceRoot location="wmf2svg-0.9.8.jar" />
-      <sourceRoot location="xalan-2.7.2.jar" />
+      <sourceRoot location="xalan-interpretive-11.0.0.jar" />
+      <sourceRoot location="xalan-serializer-11.0.0.jar" />
       <sourceRoot location="xmlgraphics-commons-2.3.jar" />
-      <sourceRoot location="jaxb-api-2.3.0.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib/moxy/dependencies" type="java_classes">
+      <sourceRoot location="org.eclipse.persistence.asm-2.7.4.jar" />
+      <sourceRoot location="org.eclipse.persistence.core-2.7.4.jar" />
+      <sourceRoot location="org.eclipse.persistence.moxy-2.7.4.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib/moxy" type="java_classes">
+      <sourceRoot location="docx4j-JAXB-MOXy-11.1.3.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
+    <stubModelEntry path="${module}/lib/moxy/dependencies/org.eclipse.persistence.asm-2.7.4.jar" />
+    <stubModelEntry path="${module}/lib/moxy/dependencies/org.eclipse.persistence.core-2.7.4.jar" />
+    <stubModelEntry path="${module}/lib/moxy/dependencies/org.eclipse.persistence.moxy-2.7.4.jar" />
+    <stubModelEntry path="${module}/lib/moxy/docx4j-JAXB-MOXy-11.1.3.jar" />
     <stubModelEntry path="${module}/lib/antlr-2.7.7.jar" />
     <stubModelEntry path="${module}/lib/antlr-runtime-3.5.2.jar" />
-    <stubModelEntry path="${module}/lib/avalon-framework-api-4.3.1.jar" />
-    <stubModelEntry path="${module}/lib/avalon-framework-impl-4.3.1.jar" />
-    <stubModelEntry path="${module}/lib/commons-codec-1.11.jar" />
-    <stubModelEntry path="${module}/lib/commons-compress-1.12.jar" />
-    <stubModelEntry path="${module}/lib/commons-io-2.5.jar" />
-    <stubModelEntry path="${module}/lib/commons-lang3-3.5.jar" />
-    <stubModelEntry path="${module}/lib/commons-logging-1.0.4.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-6.0.1.jar" />
-    <stubModelEntry path="${module}/lib/guava-20.0.jar" />
-    <stubModelEntry path="${module}/lib/httpclient-4.5.6.jar" />
-    <stubModelEntry path="${module}/lib/httpcore-4.4.10.jar" />
-    <stubModelEntry path="${module}/lib/jackson-annotations-2.7.0.jar" />
-    <stubModelEntry path="${module}/lib/jackson-core-2.7.9.jar" />
-    <stubModelEntry path="${module}/lib/jackson-databind-2.7.9.4.jar" />
+    <stubModelEntry path="${module}/lib/checker-qual-2.5.2.jar" />
+    <stubModelEntry path="${module}/lib/commons-codec-1.12.jar" />
+    <stubModelEntry path="${module}/lib/commons-compress-1.18.jar" />
+    <stubModelEntry path="${module}/lib/commons-io-2.6.jar" />
+    <stubModelEntry path="${module}/lib/commons-lang3-3.9.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-core-11.1.3.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-11.1.3.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-pml-11.1.3.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-sml-11.1.3.jar" />
+    <stubModelEntry path="${module}/lib/error_prone_annotations-2.2.0.jar" />
+    <stubModelEntry path="${module}/lib/hamcrest-core-1.3.jar" />
+    <stubModelEntry path="${module}/lib/httpclient-4.5.8.jar" />
+    <stubModelEntry path="${module}/lib/httpcore-4.4.11.jar" />
+    <stubModelEntry path="${module}/lib/jackson-annotations-2.9.0.jar" />
+    <stubModelEntry path="${module}/lib/jackson-core-2.9.9.jar" />
+    <stubModelEntry path="${module}/lib/jackson-databind-2.9.9.jar" />
+    <stubModelEntry path="${module}/lib/jakarta.activation-api-1.2.1.jar" />
+    <stubModelEntry path="${module}/lib/jakarta.xml.bind-api-2.3.2.jar" />
     <stubModelEntry path="${module}/lib/jaxb-svg11-1.0.2.jar" />
-    <stubModelEntry path="${module}/lib/lorem-2.1.jar" />
-    <stubModelEntry path="${module}/lib/mbassador-1.2.4.2.jar" />
-    <stubModelEntry path="${module}/lib/serializer-2.7.2.jar" />
-    <stubModelEntry path="${module}/lib/slf4j-api-1.7.25.jar" />
-    <stubModelEntry path="${module}/lib/slf4j-simple-1.7.25.jar" />
+    <stubModelEntry path="${module}/lib/jcl-over-slf4j-1.7.26.jar" />
+    <stubModelEntry path="${module}/lib/mbassador-1.3.2.jar" />
+    <stubModelEntry path="${module}/lib/slf4j-api-1.8.0-beta4.jar" />
+    <stubModelEntry path="${module}/lib/slf4j-simple-1.8.0-beta4.jar" />
     <stubModelEntry path="${module}/lib/stringtemplate-3.2.1.jar" />
     <stubModelEntry path="${module}/lib/wmf2svg-0.9.8.jar" />
-    <stubModelEntry path="${module}/lib/xalan-2.7.2.jar" />
+    <stubModelEntry path="${module}/lib/xalan-interpretive-11.0.0.jar" />
+    <stubModelEntry path="${module}/lib/xalan-serializer-11.0.0.jar" />
     <stubModelEntry path="${module}/lib/xmlgraphics-commons-2.3.jar" />
-    <stubModelEntry path="${module}/lib/jaxb-api-2.3.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

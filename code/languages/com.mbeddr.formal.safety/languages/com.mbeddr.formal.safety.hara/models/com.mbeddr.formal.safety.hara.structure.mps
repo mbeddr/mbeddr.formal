@@ -22,7 +22,9 @@
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
-      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n">
+        <property id="2756621024541681857" name="r" index="1irPjQ" />
+      </concept>
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
@@ -93,6 +95,7 @@
         </node>
       </node>
       <node concept="1irR9n" id="7TjUbLQ451v" role="1irR9h">
+        <property role="1irPjQ" value="1ng4Vf3UMuc/medium" />
         <node concept="3PKj8D" id="7TjUbLQ451A" role="3PKjn_">
           <property role="3PKj8l" value="FFFFFF" />
         </node>
