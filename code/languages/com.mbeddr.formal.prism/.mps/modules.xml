@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.prism/com.mbeddr.formal.prism.mpl" folder="lan" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.prism.pluginSolution/com.mbeddr.formal.prism.pluginSolution.msd" folder="lan" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.formal.prism/test.com.mbeddr.formal.prism.msd" folder="tests" />
+    </projectModules>
+  </component>
+</project>
