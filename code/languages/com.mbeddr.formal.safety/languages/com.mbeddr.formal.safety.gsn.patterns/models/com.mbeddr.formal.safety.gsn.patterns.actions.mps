@@ -24,7 +24,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -117,14 +116,10 @@
               <node concept="3Tqbb2" id="6rlO$dpFLR_" role="1tU5fm">
                 <ref role="ehGHo" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
               </node>
-              <node concept="2pJPEk" id="6rlO$dpFLSy" role="33vP2m">
-                <node concept="2pJPED" id="6rlO$dpFLUt" role="2pJPEn">
-                  <ref role="2pJxaS" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
-                  <node concept="2pIpSj" id="6rlO$dpFLXR" role="2pJxcM">
-                    <ref role="2pIpSl" to="2qxf:1$M4_qbWlC1" resolve="requirement" />
-                    <node concept="36biLy" id="6rlO$dpFLYo" role="28nt2d">
-                      <node concept="10Nm6u" id="6rlO$dpFLYF" role="36biLW" />
-                    </node>
+              <node concept="2ShNRf" id="65LrkjiWVYP" role="33vP2m">
+                <node concept="3zrR0B" id="65LrkjiWXl3" role="2ShVmc">
+                  <node concept="3Tqbb2" id="65LrkjiWXl5" role="3zrR0E">
+                    <ref role="ehGHo" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
                   </node>
                 </node>
               </node>

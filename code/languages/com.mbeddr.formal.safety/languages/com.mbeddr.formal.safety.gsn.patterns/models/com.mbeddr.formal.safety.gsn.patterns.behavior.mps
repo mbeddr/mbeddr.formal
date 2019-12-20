@@ -13,6 +13,7 @@
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
+    <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -369,6 +370,43 @@
       </node>
       <node concept="17QB3L" id="1$M4_qbWkLn" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2rzNEUxOX6d" role="13h7CS">
+      <property role="TrG5h" value="getRequirementDocument" />
+      <node concept="3Tm1VV" id="2rzNEUxOX6e" role="1B3o_S" />
+      <node concept="3clFbS" id="2rzNEUxOX6f" role="3clF47">
+        <node concept="3clFbF" id="2rzNEUxOX6g" role="3cqZAp">
+          <node concept="2OqwBi" id="2rzNEUxOX6h" role="3clFbG">
+            <node concept="2OqwBi" id="2rzNEUxOX6i" role="2Oq$k0">
+              <node concept="2OqwBi" id="2rzNEUxOX6j" role="2Oq$k0">
+                <node concept="2OqwBi" id="2rzNEUxOX6k" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2rzNEUxOX6l" role="2Oq$k0">
+                    <node concept="13iPFW" id="2rzNEUxOX6m" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2rzNEUxOX6n" role="2OqNvi">
+                      <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="2rzNEUxOX6o" role="2OqNvi">
+                    <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="2rzNEUxOX6p" role="2OqNvi">
+                  <node concept="chp4Y" id="2rzNEUxOX6q" role="v3oSu">
+                    <ref role="cht4Q" to="2qxf:2rzNEUxND_5" resolve="RequirementDocumentRefWord" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="2rzNEUxOX6r" role="2OqNvi" />
+            </node>
+            <node concept="3TrEf2" id="2rzNEUxOX6s" role="2OqNvi">
+              <ref role="3Tt5mk" to="2qxf:2rzNEUxND_8" resolve="requirementDocument" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2rzNEUxOX6t" role="3clF45">
+        <ref role="ehGHo" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
+      </node>
+    </node>
     <node concept="13i0hz" id="4i__4Gxoi9$" role="13h7CS">
       <property role="TrG5h" value="getRequirementSatisfiedGoals" />
       <node concept="3Tm1VV" id="4i__4Gxoi9_" role="1B3o_S" />
@@ -394,12 +432,91 @@
       </node>
     </node>
     <node concept="13hLZK" id="1$M4_qbWkGT" role="13h7CW">
-      <node concept="3clFbS" id="1$M4_qbWkGU" role="2VODD2" />
+      <node concept="3clFbS" id="1$M4_qbWkGU" role="2VODD2">
+        <node concept="3clFbF" id="2rzNEUxNBuz" role="3cqZAp">
+          <node concept="37vLTI" id="2rzNEUxNCCy" role="3clFbG">
+            <node concept="2pJPEk" id="2rzNEUxNCEX" role="37vLTx">
+              <node concept="2pJPED" id="2rzNEUxNCIQ" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="2rzNEUxNCNw" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="2rzNEUxNCTz" role="28nt2d">
+                    <node concept="2pJPED" id="2rzNEUxNCYs" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="2rzNEUxND6q" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="2rzNEUxND8Y" role="28ntcv">
+                          <property role="Xl_RC" value="All requirements from \n" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pJPED" id="2rzNEUxNDBs" role="36be1Z">
+                      <ref role="2pJxaS" to="2qxf:2rzNEUxND_5" resolve="RequirementDocumentRefWord" />
+                    </node>
+                    <node concept="2pJPED" id="2rzNEUxNDGO" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="2rzNEUxNDLm" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="2rzNEUxNDO6" role="28ntcv">
+                          <property role="Xl_RC" value="\n are satisfied" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2rzNEUxNBCR" role="37vLTJ">
+              <node concept="13iPFW" id="2rzNEUxNBuy" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2rzNEUxNC6T" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1$M4_qbWA8V">
     <property role="3GE5qa" value="requirements" />
     <ref role="13h7C2" to="2qxf:1$M4_qbWlBU" resolve="RequirementSatisfiedGoal" />
+    <node concept="13i0hz" id="65LrkjiWRoD" role="13h7CS">
+      <property role="TrG5h" value="getRequirement" />
+      <node concept="3Tm1VV" id="65LrkjiWRoE" role="1B3o_S" />
+      <node concept="3Tqbb2" id="65LrkjiWRoF" role="3clF45">
+        <ref role="ehGHo" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
+      </node>
+      <node concept="3clFbS" id="65LrkjiWRoG" role="3clF47">
+        <node concept="3clFbF" id="65LrkjiWRoH" role="3cqZAp">
+          <node concept="2OqwBi" id="65LrkjiWRoI" role="3clFbG">
+            <node concept="2OqwBi" id="65LrkjiWRoJ" role="2Oq$k0">
+              <node concept="2OqwBi" id="65LrkjiWRoK" role="2Oq$k0">
+                <node concept="2OqwBi" id="65LrkjiWRoL" role="2Oq$k0">
+                  <node concept="2OqwBi" id="65LrkjiWRoM" role="2Oq$k0">
+                    <node concept="13iPFW" id="65LrkjiWRoN" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="65LrkjiWRoO" role="2OqNvi">
+                      <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="65LrkjiWRoP" role="2OqNvi">
+                    <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="65LrkjiWRoQ" role="2OqNvi">
+                  <node concept="chp4Y" id="65LrkjiWTyz" role="v3oSu">
+                    <ref role="cht4Q" to="2qxf:65LrkjiWSI2" resolve="RequirementRefWord" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="65LrkjiWRoS" role="2OqNvi" />
+            </node>
+            <node concept="3TrEf2" id="65LrkjiWTVg" role="2OqNvi">
+              <ref role="3Tt5mk" to="2qxf:65LrkjiWSI5" resolve="requirement" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="1$M4_qbWA96" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
@@ -414,11 +531,81 @@
       <node concept="17QB3L" id="1$M4_qbWA9b" role="3clF45" />
     </node>
     <node concept="13hLZK" id="1$M4_qbWA8W" role="13h7CW">
-      <node concept="3clFbS" id="1$M4_qbWA8X" role="2VODD2" />
+      <node concept="3clFbS" id="1$M4_qbWA8X" role="2VODD2">
+        <node concept="3clFbF" id="65LrkjiWTjZ" role="3cqZAp">
+          <node concept="37vLTI" id="65LrkjiWTk0" role="3clFbG">
+            <node concept="2pJPEk" id="65LrkjiWTk1" role="37vLTx">
+              <node concept="2pJPED" id="65LrkjiWTk2" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="65LrkjiWTk3" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="65LrkjiWTk4" role="28nt2d">
+                    <node concept="2pJPED" id="65LrkjiWTrv" role="36be1Z">
+                      <ref role="2pJxaS" to="2qxf:65LrkjiWSI2" resolve="RequirementRefWord" />
+                    </node>
+                    <node concept="2pJPED" id="65LrkjiWTk9" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="65LrkjiWTka" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="65LrkjiWTkb" role="28ntcv">
+                          <property role="Xl_RC" value="\n is satisfied" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="65LrkjiWTkc" role="37vLTJ">
+              <node concept="13iPFW" id="65LrkjiWTkd" role="2Oq$k0" />
+              <node concept="3TrEf2" id="65LrkjiWTke" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="6rlO$dpKMLE">
     <ref role="13h7C2" to="2qxf:6rlO$dpKLnX" resolve="SafeSystemGoal" />
+    <node concept="13i0hz" id="2rzNEUxNE4A" role="13h7CS">
+      <property role="TrG5h" value="getRequirementDocument" />
+      <node concept="3Tm1VV" id="2rzNEUxNE4B" role="1B3o_S" />
+      <node concept="3clFbS" id="2rzNEUxNE4D" role="3clF47">
+        <node concept="3clFbF" id="2rzNEUxNFtP" role="3cqZAp">
+          <node concept="2OqwBi" id="2rzNEUxNMXm" role="3clFbG">
+            <node concept="2OqwBi" id="2rzNEUxNLeu" role="2Oq$k0">
+              <node concept="2OqwBi" id="2rzNEUxNIAC" role="2Oq$k0">
+                <node concept="2OqwBi" id="2rzNEUxNGAJ" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2rzNEUxNFGO" role="2Oq$k0">
+                    <node concept="13iPFW" id="2rzNEUxNFtO" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2rzNEUxNGaQ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="2rzNEUxNHlm" role="2OqNvi">
+                    <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="2rzNEUxNKU5" role="2OqNvi">
+                  <node concept="chp4Y" id="2rzNEUxNOhh" role="v3oSu">
+                    <ref role="cht4Q" to="2qxf:2rzNEUxND_5" resolve="RequirementDocumentRefWord" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="2rzNEUxNLy7" role="2OqNvi" />
+            </node>
+            <node concept="3TrEf2" id="2rzNEUxNOvh" role="2OqNvi">
+              <ref role="3Tt5mk" to="2qxf:2rzNEUxND_8" resolve="requirementDocument" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2rzNEUxNOMO" role="3clF45">
+        <ref role="ehGHo" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
+      </node>
+    </node>
     <node concept="13i0hz" id="6rlO$dpKLrx" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
@@ -433,7 +620,49 @@
       <node concept="17QB3L" id="6rlO$dpKLrA" role="3clF45" />
     </node>
     <node concept="13hLZK" id="6rlO$dpKMLF" role="13h7CW">
-      <node concept="3clFbS" id="6rlO$dpKMLG" role="2VODD2" />
+      <node concept="3clFbS" id="6rlO$dpKMLG" role="2VODD2">
+        <node concept="3clFbF" id="2rzNEUxOXjI" role="3cqZAp">
+          <node concept="37vLTI" id="2rzNEUxOXjJ" role="3clFbG">
+            <node concept="2pJPEk" id="2rzNEUxOXjK" role="37vLTx">
+              <node concept="2pJPED" id="2rzNEUxOXjL" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="2rzNEUxOXjM" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="2rzNEUxOXjN" role="28nt2d">
+                    <node concept="2pJPED" id="2rzNEUxOXjO" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="2rzNEUxOXjP" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="2rzNEUxOXjQ" role="28ntcv">
+                          <property role="Xl_RC" value="System defined in \n" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pJPED" id="2rzNEUxOXjR" role="36be1Z">
+                      <ref role="2pJxaS" to="2qxf:2rzNEUxND_5" resolve="RequirementDocumentRefWord" />
+                    </node>
+                    <node concept="2pJPED" id="2rzNEUxOXjS" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="2rzNEUxOXjT" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="2rzNEUxOXjU" role="28ntcv">
+                          <property role="Xl_RC" value="\n is sufficiently safe \n in the given operating context" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2rzNEUxOXjV" role="37vLTJ">
+              <node concept="13iPFW" id="2rzNEUxOXjW" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2rzNEUxOXjX" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="6rlO$dpJUNZ">
@@ -510,7 +739,7 @@
                       <node concept="2pJxcG" id="2RlaC$P7v3O" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
                         <node concept="Xl_RD" id="5P9zxa4ig8t" role="28ntcv">
-                          <property role="Xl_RC" value="Argumentation based \n on contract-based design \n applied to component " />
+                          <property role="Xl_RC" value="Argumentation based \n on contract-based design \n applied to \n" />
                         </node>
                       </node>
                     </node>
