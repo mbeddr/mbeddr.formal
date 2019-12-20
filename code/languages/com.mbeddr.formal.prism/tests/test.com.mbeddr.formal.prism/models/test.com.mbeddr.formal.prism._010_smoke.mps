@@ -7,11 +7,23 @@
   <imports />
   <registry>
     <language id="3c34ac43-22de-4ba4-9539-377c90eb9be6" name="com.mbeddr.formal.prism">
+      <concept id="1754704454241332172" name="com.mbeddr.formal.prism.structure.P" flags="ng" index="2ow5QF" />
+      <concept id="1754704454241332171" name="com.mbeddr.formal.prism.structure.PrismOperatorBase" flags="ng" index="2ow5QG">
+        <child id="1754704454241701490" name="bound" index="2oxFwl" />
+      </concept>
       <concept id="1754704454241225290" name="com.mbeddr.formal.prism.structure.IntType" flags="ng" index="2owvKH" />
+      <concept id="1754704454241574298" name="com.mbeddr.formal.prism.structure.QuestionMarkExpression" flags="ng" index="2oxaJX" />
+      <concept id="1754704454241570582" name="com.mbeddr.formal.prism.structure.EqualsBoundExpression" flags="ng" index="2oxb_L" />
+      <concept id="1754704454241702332" name="com.mbeddr.formal.prism.structure.F" flags="ng" index="2oxEvr" />
       <concept id="1754704454240878167" name="com.mbeddr.formal.prism.structure.PrismSpecification" flags="ng" index="2oyOwK">
+        <reference id="1754704454242499578" name="model" index="2oGCQt" />
         <child id="1754704454240878593" name="content" index="2oyNpA" />
       </concept>
       <concept id="1754704454241014460" name="com.mbeddr.formal.prism.structure.Constant" flags="ng" index="2ozijr" />
+      <concept id="1754704454242934974" name="com.mbeddr.formal.prism.structure.Property" flags="ng" index="2oEXrp">
+        <child id="1754704454242934977" name="pob" index="2oEXqA" />
+      </concept>
+      <concept id="1754704454242268293" name="com.mbeddr.formal.prism.structure.AndExpression" flags="ng" index="2oJwby" />
       <concept id="1137896353117565708" name="com.mbeddr.formal.prism.structure.EqualsExpression" flags="ng" index="110AQS" />
       <concept id="1137896353117140211" name="com.mbeddr.formal.prism.structure.IntervalType" flags="ng" index="112eD7">
         <child id="1137896353117140212" name="left" index="112eD0" />
@@ -64,6 +76,9 @@
       </concept>
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
+      <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
+        <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -461,12 +476,42 @@
   </node>
   <node concept="2oyOwK" id="1xpXAu0Q0D5">
     <property role="TrG5h" value="_010_die_spec" />
+    <ref role="2oGCQt" node="ZaBFheK9QZ" resolve="_010_die" />
     <node concept="2ozijr" id="1xpXAu0Q0D6" role="2oyNpA">
       <property role="TrG5h" value="x" />
       <node concept="2owvKH" id="1xpXAu0QqIZ" role="112KhV" />
+      <node concept="2IPVmt" id="1xpXAu0Y$At" role="112KhA">
+        <property role="2IPVms" value="2" />
+      </node>
     </node>
     <node concept="112GRp" id="1xpXAu0QqJ2" role="2oyNpA" />
-    <node concept="112GRp" id="1xpXAu0QqJ6" role="2oyNpA" />
+    <node concept="2oEXrp" id="1xpXAu0X$ce" role="2oyNpA">
+      <node concept="2ow5QF" id="1xpXAu0X$cw" role="2oEXqA">
+        <node concept="2oxEvr" id="1xpXAu0X$cx" role="32OYtT">
+          <node concept="2oJwby" id="1xpXAu0X$cy" role="32OYtT">
+            <node concept="110AQS" id="1xpXAu0X$cz" role="2H9Iav">
+              <node concept="112hFX" id="1xpXAu0X$c$" role="2H9Iav">
+                <ref role="112hCK" node="ZaBFheM00U" resolve="s" />
+              </node>
+              <node concept="2IPVmt" id="1xpXAu0X$c_" role="2H9Ial">
+                <property role="2IPVms" value="7" />
+              </node>
+            </node>
+            <node concept="110AQS" id="1xpXAu0X$cA" role="2H9Ial">
+              <node concept="112hFX" id="1xpXAu0X$cB" role="2H9Ial">
+                <ref role="112hCK" node="1xpXAu0Q0D6" resolve="x" />
+              </node>
+              <node concept="112hFX" id="1xpXAu0X$cC" role="2H9Iav">
+                <ref role="112hCK" node="ZaBFheMfar" resolve="d" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2oxb_L" id="1xpXAu0X$cD" role="2oxFwl">
+          <node concept="2oxaJX" id="1xpXAu0X$cE" role="32OYtT" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
