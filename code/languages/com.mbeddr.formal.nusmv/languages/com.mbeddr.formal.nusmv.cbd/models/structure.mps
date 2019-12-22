@@ -140,6 +140,7 @@
     <property role="TrG5h" value="ComponentInterface" />
     <property role="3GE5qa" value="cbd.interface" />
     <property role="34LRSv" value="interface" />
+    <property role="R4oN_" value="define an interface (CBD)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7zUXd" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507315533" />
