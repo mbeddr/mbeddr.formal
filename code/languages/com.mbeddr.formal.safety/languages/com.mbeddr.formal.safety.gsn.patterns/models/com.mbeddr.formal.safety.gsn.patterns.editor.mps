@@ -309,22 +309,24 @@
   <node concept="24kQdi" id="6rlO$dpLwN8">
     <ref role="1XX52x" to="2qxf:6rlO$dpKLnX" resolve="SafeSystemGoal" />
     <node concept="2ZK4vF" id="6rlO$dpLwNN" role="2wV5jI">
+      <ref role="1k5W1q" to="g35p:65LrkjiZjs5" resolve="GSNShapeStyle" />
       <node concept="3EZMnI" id="6rlO$dpLwNO" role="1ytjkN">
         <node concept="3EZMnI" id="6rlO$dpLwNP" role="3EZMnx">
           <node concept="VPM3Z" id="6rlO$dpLwNQ" role="3F10Kt" />
           <node concept="3F0ifn" id="6rlO$dpLwNR" role="3EZMnx">
-            <property role="3F0ifm" value="Safe System Goal:" />
+            <property role="3F0ifm" value="Safe System Goal: " />
             <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
           </node>
+          <node concept="3F0A7n" id="65Lrkjj1iuF" role="3EZMnx">
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
           <node concept="l2Vlx" id="6rlO$dpLwNT" role="2iSdaV" />
-        </node>
-        <node concept="3F0A7n" id="6rlO$dpLwNS" role="3EZMnx">
-          <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="3F0ifn" id="6rlO$dpLwO3" role="3EZMnx" />
         <node concept="3F1sOY" id="6rlO$dpLwO4" role="3EZMnx">
           <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
           <node concept="pkWqt" id="6rlO$dpLwO5" role="pqm2j">
             <node concept="3clFbS" id="6rlO$dpLwO6" role="2VODD2">
               <node concept="3clFbF" id="6rlO$dpLwO7" role="3cqZAp">
@@ -374,6 +376,7 @@
     <property role="3GE5qa" value="cbd" />
     <ref role="1XX52x" to="2qxf:6rlO$dpJSTC" resolve="CBDStrategy" />
     <node concept="2ZK4vF" id="6rlO$dpJT5w" role="2wV5jI">
+      <ref role="1k5W1q" to="g35p:65LrkjiZjs5" resolve="GSNShapeStyle" />
       <node concept="3EZMnI" id="6rlO$dpJT5x" role="1ytjkN">
         <node concept="3EZMnI" id="6rlO$dpJT5y" role="3EZMnx">
           <node concept="VPM3Z" id="6rlO$dpJT5z" role="3F10Kt" />
@@ -391,6 +394,7 @@
         <node concept="2iRkQZ" id="6rlO$dpJT5I" role="2iSdaV" />
         <node concept="3F1sOY" id="6rlO$dpJT5J" role="3EZMnx">
           <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="xShMh" id="6rlO$dpJT5V" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -581,7 +585,7 @@
     <ref role="1XX52x" to="2qxf:2RlaC$P86Ok" resolve="HazardsListRefWord" />
     <node concept="3EZMnI" id="2RlaC$P86OF" role="2wV5jI">
       <node concept="3F0ifn" id="2RlaC$P86OG" role="3EZMnx">
-        <property role="3F0ifm" value="@hazardsList" />
+        <property role="3F0ifm" value="@hazards" />
         <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="2RlaC$PcSiM" role="3EZMnx">
@@ -651,7 +655,7 @@
     <ref role="1XX52x" to="2qxf:2rzNEUxND_5" resolve="RequirementDocumentRefWord" />
     <node concept="3EZMnI" id="2rzNEUxND_k" role="2wV5jI">
       <node concept="3F0ifn" id="2rzNEUxND_l" role="3EZMnx">
-        <property role="3F0ifm" value="@requirementDocument" />
+        <property role="3F0ifm" value="@reqDocu" />
         <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="2rzNEUxND_m" role="3EZMnx">
@@ -686,7 +690,7 @@
     <ref role="1XX52x" to="2qxf:65LrkjiWSI2" resolve="RequirementRefWord" />
     <node concept="3EZMnI" id="65LrkjiWSIp" role="2wV5jI">
       <node concept="3F0ifn" id="65LrkjiWSIq" role="3EZMnx">
-        <property role="3F0ifm" value="@requirement" />
+        <property role="3F0ifm" value="@req" />
         <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="65LrkjiWSIr" role="3EZMnx">
