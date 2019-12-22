@@ -128,6 +128,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -571,51 +574,17 @@
   <node concept="24kQdi" id="2ccN23oa2IB">
     <ref role="1XX52x" to="py52:3GRi4m$rlnF" resolve="Strategy" />
     <node concept="2ZK4vF" id="2ccN23oa2J4" role="2wV5jI">
-      <node concept="3EZMnI" id="2ccN23oa2Km" role="1ytjkN">
-        <node concept="3EZMnI" id="2ccN23oa2Kn" role="3EZMnx">
-          <node concept="VPM3Z" id="2ccN23oa2Ko" role="3F10Kt" />
-          <node concept="3F0ifn" id="2ccN23oa2Kp" role="3EZMnx">
-            <property role="3F0ifm" value="Strategy:" />
-            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
-          </node>
-          <node concept="3F0A7n" id="2ccN23oa2Kq" role="3EZMnx">
-            <property role="1O74Pk" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="l2Vlx" id="2ccN23oa2Kr" role="2iSdaV" />
-        </node>
-        <node concept="3F0ifn" id="2ccN23oa2Ks" role="3EZMnx" />
-        <node concept="2iRkQZ" id="2ccN23oa2Kt" role="2iSdaV" />
-        <node concept="3EZMnI" id="1qrXfdH07Fg" role="3EZMnx">
-          <node concept="2iRfu4" id="1qrXfdH07Fh" role="2iSdaV" />
-          <node concept="3XFhqQ" id="1qrXfdH07Fv" role="3EZMnx" />
-          <node concept="3F1sOY" id="2ccN23oa2Ku" role="3EZMnx">
-            <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-          </node>
-        </node>
-        <node concept="xShMh" id="4qaoH_Ik_H" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
+      <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
       <node concept="2xQOud" id="7TjUbLQa$U1" role="2xQQDV">
         <ref role="2xQOue" node="7TjUbLQ9xzM" resolve="StrategyPolygon" />
         <node concept="1Pxb5l" id="7TjUbLQaEZn" role="1xbcaF" />
       </node>
+      <node concept="PMmxH" id="33qt4wr2MfV" role="1ytjkN">
+        <ref role="PMmxG" node="3Ngc4zVhb40" resolve="StrategyTextArea" />
+      </node>
     </node>
-    <node concept="3EZMnI" id="7TjUbLQaL2s" role="6VMZX">
-      <node concept="2iRkQZ" id="7TjUbLQaL2t" role="2iSdaV" />
-      <node concept="PMmxH" id="2ccN23oa2MB" role="3EZMnx">
-        <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
-      </node>
-      <node concept="3EZMnI" id="7TjUbLQaL2W" role="3EZMnx">
-        <node concept="l2Vlx" id="7TjUbLQaL2X" role="2iSdaV" />
-        <node concept="3F0ifn" id="7TjUbLQaL3a" role="3EZMnx">
-          <property role="3F0ifm" value="undeveloped:" />
-        </node>
-        <node concept="3F0A7n" id="7TjUbLQb5Kb" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:7TjUbLQa$TT" resolve="undeveloped" />
-        </node>
-      </node>
+    <node concept="PMmxH" id="33qt4wr2Mgh" role="6VMZX">
+      <ref role="PMmxG" node="3Ngc4zVhb5_" resolve="StrategyTextAreaInInspector" />
     </node>
   </node>
   <node concept="24kQdi" id="2ccN23oa9F3">
@@ -667,6 +636,9 @@
             <property role="1lJzqX" value="10" />
           </node>
         </node>
+      </node>
+      <node concept="3C0NmK" id="3Ngc4zVhU8c" role="3F10Kt">
+        <property role="Vb096" value="6cZGtrcKCoS/black" />
       </node>
     </node>
   </node>
@@ -720,6 +692,9 @@
           </node>
           <node concept="VPxyj" id="3xpT6K6EdNF" role="3F10Kt" />
         </node>
+      </node>
+      <node concept="3C0NmK" id="3Ngc4zViiBO" role="3F10Kt">
+        <property role="Vb096" value="6cZGtrcKCoS/black" />
       </node>
     </node>
   </node>
@@ -1006,7 +981,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3GatLR2TXFy" role="3cqZAp" />
+        <node concept="3clFbF" id="3Ngc4zVi5Nz" role="3cqZAp">
+          <node concept="2OqwBi" id="3Ngc4zVi658" role="3clFbG">
+            <node concept="2xDIQ0" id="3Ngc4zVi5Nx" role="2Oq$k0" />
+            <node concept="liA8E" id="3Ngc4zVi71$" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
+              <node concept="10M0yZ" id="3Ngc4zVi7$n" role="37wK5m">
+                <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="3GatLR2TZu4" role="3cqZAp">
           <node concept="3clFbS" id="3GatLR2TZu7" role="3clFbx">
             <node concept="3clFbF" id="3GatLR2TZW7" role="3cqZAp">
@@ -2645,6 +2631,56 @@
         </node>
         <node concept="27S6Sx" id="65Lrkjj1Riz" role="3EZMnx">
           <ref role="1NtTu8" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="3Ngc4zVhb40">
+    <property role="TrG5h" value="StrategyTextArea" />
+    <ref role="1XX52x" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+    <node concept="3EZMnI" id="3Ngc4zVhb4d" role="2wV5jI">
+      <node concept="3EZMnI" id="3Ngc4zVhb4e" role="3EZMnx">
+        <node concept="VPM3Z" id="3Ngc4zVhb4f" role="3F10Kt" />
+        <node concept="3F0ifn" id="3Ngc4zVhb4g" role="3EZMnx">
+          <property role="3F0ifm" value="Strategy:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="3Ngc4zVhb4h" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="3Ngc4zVhb4i" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3Ngc4zVhb4j" role="3EZMnx" />
+      <node concept="2iRkQZ" id="3Ngc4zVhb4k" role="2iSdaV" />
+      <node concept="3EZMnI" id="3Ngc4zVhb4l" role="3EZMnx">
+        <node concept="2iRfu4" id="3Ngc4zVhb4m" role="2iSdaV" />
+        <node concept="3XFhqQ" id="3Ngc4zVhb4n" role="3EZMnx" />
+        <node concept="3F1sOY" id="3Ngc4zVhb4o" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+          <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+        </node>
+      </node>
+      <node concept="xShMh" id="3Ngc4zVhb4p" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="3Ngc4zVhb5_">
+    <property role="TrG5h" value="StrategyTextAreaInInspector" />
+    <ref role="1XX52x" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+    <node concept="3EZMnI" id="3Ngc4zVhb5X" role="2wV5jI">
+      <node concept="2iRkQZ" id="3Ngc4zVhb5Y" role="2iSdaV" />
+      <node concept="PMmxH" id="3Ngc4zVhb5Z" role="3EZMnx">
+        <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
+      </node>
+      <node concept="3EZMnI" id="3Ngc4zVhb60" role="3EZMnx">
+        <node concept="l2Vlx" id="3Ngc4zVhb61" role="2iSdaV" />
+        <node concept="3F0ifn" id="3Ngc4zVhb62" role="3EZMnx">
+          <property role="3F0ifm" value="undeveloped:" />
+        </node>
+        <node concept="3F0A7n" id="3Ngc4zVhb63" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:7TjUbLQa$TT" resolve="undeveloped" />
         </node>
       </node>
     </node>

@@ -739,7 +739,7 @@
                       <node concept="2pJxcG" id="2RlaC$P7v3O" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
                         <node concept="Xl_RD" id="5P9zxa4ig8t" role="28ntcv">
-                          <property role="Xl_RC" value="Argumentation based \n on contract-based design \n applied to \n" />
+                          <property role="Xl_RC" value="Argumentation based \n on contract-based design \n applied to " />
                         </node>
                       </node>
                     </node>
