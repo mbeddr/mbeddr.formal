@@ -32,6 +32,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
+        <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
+      </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -68,6 +71,9 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
+        <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -114,6 +120,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -163,51 +172,6 @@
           <ref role="1NtTu8" to="py52:7TjUbLQa$TT" resolve="undeveloped" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="7TjUbLQ4kD2">
-    <property role="3GE5qa" value="hazards" />
-    <ref role="1XX52x" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
-    <node concept="2ZK4vF" id="71RA3dHzLhl" role="2wV5jI">
-      <node concept="3EZMnI" id="2ccN23o9tph" role="1ytjkN">
-        <node concept="3EZMnI" id="2ccN23o9tpi" role="3EZMnx">
-          <node concept="VPM3Z" id="2ccN23o9tpj" role="3F10Kt" />
-          <node concept="3F0ifn" id="2ccN23o9tpk" role="3EZMnx">
-            <property role="3F0ifm" value="Hazard Mitigation Goal:" />
-            <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
-          </node>
-          <node concept="l2Vlx" id="2ccN23o9tpm" role="2iSdaV" />
-        </node>
-        <node concept="3F0A7n" id="2ccN23o9tpl" role="3EZMnx">
-          <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="3F0ifn" id="7TjUbLQ5HiL" role="3EZMnx" />
-        <node concept="3F1sOY" id="71RA3dH_t97" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        </node>
-        <node concept="2iRkQZ" id="2ccN23o9tpo" role="2iSdaV" />
-        <node concept="xShMh" id="71RA3dH_coR" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-    <node concept="3EZMnI" id="7TjUbLQ5qMJ" role="6VMZX">
-      <node concept="2iRkQZ" id="7TjUbLQ5qMK" role="2iSdaV" />
-      <node concept="PMmxH" id="7TjUbLQ5qMN" role="3EZMnx">
-        <ref role="PMmxG" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
-      </node>
-      <node concept="3F0ifn" id="7TjUbLQ5qMP" role="3EZMnx" />
-      <node concept="3EZMnI" id="6rlO$dpMaEG" role="3EZMnx">
-        <node concept="l2Vlx" id="6rlO$dpMaEH" role="2iSdaV" />
-        <node concept="3F0ifn" id="6rlO$dpMaEI" role="3EZMnx">
-          <property role="3F0ifm" value="undeveloped:" />
-        </node>
-        <node concept="3F0A7n" id="6rlO$dpMaEJ" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="6rlO$dpMH2u" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="1$M4_qbWcqw">
@@ -718,6 +682,37 @@
         </node>
       </node>
       <node concept="l2Vlx" id="65LrkjiWSIz" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="65Lrkjj21w3">
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardMitigatedGoalTextArea" />
+    <ref role="1XX52x" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
+    <node concept="3EZMnI" id="65Lrkjj21wb" role="2wV5jI">
+      <node concept="3EZMnI" id="65Lrkjj21wc" role="3EZMnx">
+        <node concept="VPM3Z" id="65Lrkjj21wd" role="3F10Kt" />
+        <node concept="3F0ifn" id="65Lrkjj21we" role="3EZMnx">
+          <property role="3F0ifm" value="Hazard Mitigation Goal:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        </node>
+        <node concept="l2Vlx" id="65Lrkjj21wf" role="2iSdaV" />
+      </node>
+      <node concept="3F0A7n" id="65Lrkjj21wg" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="65Lrkjj21wh" role="3EZMnx" />
+      <node concept="3F1sOY" id="65Lrkjj21wi" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="2iRkQZ" id="65Lrkjj21wj" role="2iSdaV" />
+      <node concept="xShMh" id="65Lrkjj21wk" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="1PE4EZ" id="65Lrkjj21wJ" role="1PM95z">
+      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
     </node>
   </node>
 </model>

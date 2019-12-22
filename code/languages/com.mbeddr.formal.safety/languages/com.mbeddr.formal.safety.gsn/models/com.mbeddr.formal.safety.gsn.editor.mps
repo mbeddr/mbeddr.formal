@@ -469,51 +469,16 @@
     <ref role="1XX52x" to="py52:3GRi4m$qNtH" resolve="Goal" />
     <node concept="2ZK4vF" id="2ccN23o9ouu" role="2wV5jI">
       <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
-      <node concept="3EZMnI" id="2ccN23o9tph" role="1ytjkN">
-        <node concept="3EZMnI" id="2ccN23o9tpi" role="3EZMnx">
-          <node concept="PMmxH" id="4qaoH_FTg7" role="3EZMnx">
-            <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
-          </node>
-          <node concept="VPM3Z" id="2ccN23o9tpj" role="3F10Kt" />
-          <node concept="3F0ifn" id="2ccN23o9tpk" role="3EZMnx">
-            <property role="3F0ifm" value="Goal:" />
-            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
-          </node>
-          <node concept="3F0A7n" id="2ccN23o9tpl" role="3EZMnx">
-            <property role="1O74Pk" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="l2Vlx" id="2ccN23o9tpm" role="2iSdaV" />
-        </node>
-        <node concept="3F0ifn" id="2ccN23o9tpn" role="3EZMnx" />
-        <node concept="2iRkQZ" id="2ccN23o9tpo" role="2iSdaV" />
-        <node concept="3F1sOY" id="2ccN23o9tpp" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-          <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
-        </node>
-        <node concept="xShMh" id="1qrXfdGXAfZ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="2xQOud" id="7TjUbLQaERb" role="2xQQDV">
         <ref role="2xQOue" node="7TjUbLQ8uDG" resolve="GoalRectangle" />
         <node concept="1Pxb5l" id="7TjUbLQaERj" role="1xbcaF" />
       </node>
+      <node concept="PMmxH" id="65Lrkjj1Rhx" role="1ytjkN">
+        <ref role="PMmxG" node="65Lrkjj1Rgv" resolve="GoalTextArea" />
+      </node>
     </node>
-    <node concept="3EZMnI" id="7TjUbLQaL3e" role="6VMZX">
-      <node concept="2iRkQZ" id="7TjUbLQaL3f" role="2iSdaV" />
-      <node concept="PMmxH" id="7TjUbLQaL3g" role="3EZMnx">
-        <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
-      </node>
-      <node concept="3EZMnI" id="7TjUbLQaL3h" role="3EZMnx">
-        <node concept="l2Vlx" id="7TjUbLQaL3i" role="2iSdaV" />
-        <node concept="3F0ifn" id="7TjUbLQaL3j" role="3EZMnx">
-          <property role="3F0ifm" value="undeveloped:" />
-        </node>
-        <node concept="27S6Sx" id="7TjUbLQaL3k" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
-        </node>
-      </node>
+    <node concept="PMmxH" id="65Lrkjj1Rja" role="6VMZX">
+      <ref role="PMmxG" node="65Lrkjj1Rig" resolve="GoalTextAreaInInspector" />
     </node>
   </node>
   <node concept="24kQdi" id="2ccN23oa1nB">
@@ -2632,6 +2597,55 @@
       </node>
       <node concept="2biZxu" id="65LrkjiZl6h" role="3F10Kt">
         <property role="1rj3mz" value="Calibri" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="65Lrkjj1Rgv">
+    <property role="TrG5h" value="GoalTextArea" />
+    <ref role="1XX52x" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="3EZMnI" id="65Lrkjj1RgG" role="2wV5jI">
+      <node concept="3EZMnI" id="65Lrkjj1RgH" role="3EZMnx">
+        <node concept="PMmxH" id="65Lrkjj1RgI" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
+        </node>
+        <node concept="VPM3Z" id="65Lrkjj1RgJ" role="3F10Kt" />
+        <node concept="3F0ifn" id="65Lrkjj1RgK" role="3EZMnx">
+          <property role="3F0ifm" value="Goal:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="65Lrkjj1RgL" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="65Lrkjj1RgM" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="65Lrkjj1RgN" role="3EZMnx" />
+      <node concept="2iRkQZ" id="65Lrkjj1RgO" role="2iSdaV" />
+      <node concept="3F1sOY" id="65Lrkjj1RgP" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="xShMh" id="65Lrkjj1RgQ" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="65Lrkjj1Rig">
+    <property role="TrG5h" value="GoalTextAreaInInspector" />
+    <ref role="1XX52x" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="3EZMnI" id="65Lrkjj1Rit" role="2wV5jI">
+      <node concept="2iRkQZ" id="65Lrkjj1Riu" role="2iSdaV" />
+      <node concept="PMmxH" id="65Lrkjj1Riv" role="3EZMnx">
+        <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
+      </node>
+      <node concept="3EZMnI" id="65Lrkjj1Riw" role="3EZMnx">
+        <node concept="l2Vlx" id="65Lrkjj1Rix" role="2iSdaV" />
+        <node concept="3F0ifn" id="65Lrkjj1Riy" role="3EZMnx">
+          <property role="3F0ifm" value="undeveloped:" />
+        </node>
+        <node concept="27S6Sx" id="65Lrkjj1Riz" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+        </node>
       </node>
     </node>
   </node>
