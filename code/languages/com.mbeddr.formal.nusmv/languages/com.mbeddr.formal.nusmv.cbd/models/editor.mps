@@ -1416,9 +1416,7 @@
         </node>
         <node concept="ahg9e" id="1NcemxUKRyP" role="aCds2">
           <node concept="2316IU" id="1NcemxUKRyQ" role="15ipcR">
-            <node concept="Xl_RD" id="1NcemxUKRyR" role="2316E2">
-              <property role="Xl_RC" value="default" />
-            </node>
+            <node concept="Xl_RD" id="1NcemxUKRyR" role="2316E2" />
             <node concept="2xQOud" id="1NcemxUKRyS" role="2316E4">
               <ref role="2xQOue" to="wo6c:7z30MUmeewT" resolve="ArrowHead" />
               <node concept="3b6qkQ" id="1NcemxUKRyT" role="1xbcaF">
@@ -1574,9 +1572,6 @@
             <ref role="2xQOue" to="wo6c:5WYUu8Hc_F_" resolve="EmptyShape" />
           </node>
           <node concept="2316IU" id="1NcemxUKRzS" role="15ipcR">
-            <node concept="Xl_RD" id="1NcemxUKRzT" role="2316E2">
-              <property role="Xl_RC" value="default" />
-            </node>
             <node concept="2xQOud" id="1NcemxUKRzU" role="2316E4">
               <ref role="2xQOue" to="wo6c:7z30MUmeewT" resolve="ArrowHead" />
               <node concept="3b6qkQ" id="1NcemxUKRzV" role="1xbcaF">
@@ -1585,6 +1580,9 @@
               <node concept="3clFbT" id="1NcemxUKRzW" role="1xbcaF">
                 <property role="3clFbU" value="false" />
               </node>
+            </node>
+            <node concept="Xl_RD" id="1xpXAu172aU" role="2316E2">
+              <property role="Xl_RC" value="" />
             </node>
           </node>
           <node concept="2fs66k" id="1NcemxUKRzX" role="2fs69h">
@@ -2092,9 +2090,7 @@
           </node>
           <node concept="3clFbS" id="7RhjhI7EFo3" role="Jncv$">
             <node concept="3cpWs6" id="7RhjhI7EFo4" role="3cqZAp">
-              <node concept="Xl_RD" id="7RhjhI7EFo6" role="3cqZAk">
-                <property role="Xl_RC" value="default" />
-              </node>
+              <node concept="Xl_RD" id="7RhjhI7EFo6" role="3cqZAk" />
             </node>
           </node>
           <node concept="JncvC" id="7RhjhI7EFod" role="JncvA">
@@ -2271,9 +2267,7 @@
           </node>
           <node concept="3clFbS" id="7RhjhI7EJNu" role="Jncv$">
             <node concept="3cpWs6" id="7RhjhI7EJNv" role="3cqZAp">
-              <node concept="Xl_RD" id="7RhjhI7EJNw" role="3cqZAk">
-                <property role="Xl_RC" value="default" />
-              </node>
+              <node concept="Xl_RD" id="7RhjhI7EJNw" role="3cqZAk" />
             </node>
           </node>
           <node concept="JncvC" id="7RhjhI7EJNx" role="JncvA">
