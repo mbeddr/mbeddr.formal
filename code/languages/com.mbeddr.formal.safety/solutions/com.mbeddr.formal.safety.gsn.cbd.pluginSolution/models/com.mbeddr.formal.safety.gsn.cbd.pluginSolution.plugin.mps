@@ -287,6 +287,12 @@
                 <node concept="37vLTw" id="72xocJViG5f" role="37wK5m">
                   <ref role="3cqZAo" node="72xocJViFdo" resolve="analyzedComponent" />
                 </node>
+                <node concept="2OqwBi" id="33qt4wr4hN5" role="37wK5m">
+                  <node concept="2WthIp" id="33qt4wr4hvr" role="2Oq$k0" />
+                  <node concept="3gHZIF" id="33qt4wr4i9v" role="2OqNvi">
+                    <ref role="2WH_rO" node="72xocJVig2G" resolve="node" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
