@@ -52,6 +52,10 @@
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -99,6 +103,7 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+      <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -2516,10 +2521,52 @@
     <node concept="14StLt" id="65LrkjiZl64" role="V601i">
       <property role="TrG5h" value="GSNTextStyle" />
       <node concept="VSNWy" id="65LrkjiZl6c" role="3F10Kt">
-        <property role="1lJzqX" value="14" />
+        <property role="1lJzqX" value="10" />
       </node>
       <node concept="2biZxu" id="65LrkjiZl6h" role="3F10Kt">
         <property role="1rj3mz" value="Calibri" />
+      </node>
+    </node>
+    <node concept="14StLt" id="4HjFLZ$nN39" role="V601i">
+      <property role="TrG5h" value="GSNBaseLanguageKeyword" />
+      <node concept="VechU" id="KwKRgpE0AU" role="3F10Kt">
+        <node concept="3ZlJ5R" id="KwKRgpE0B0" role="VblUZ">
+          <node concept="3clFbS" id="KwKRgpE0B1" role="2VODD2">
+            <node concept="3clFbF" id="KwKRgpE0I2" role="3cqZAp">
+              <node concept="10M0yZ" id="KwKRgpE0Pg" role="3clFbG">
+                <ref role="1PxDUh" to="xnej:4tRpPVPUEa3" resolve="BasicColors" />
+                <ref role="3cqZAo" to="xnej:2CEi94emCnI" resolve="KEYWORD_BLUE" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Vb9p2" id="KwKRgpE0AM" role="3F10Kt">
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
+      </node>
+      <node concept="VSNWy" id="4HjFLZ$nO29" role="3F10Kt">
+        <property role="1lJzqX" value="10" />
+      </node>
+    </node>
+    <node concept="14StLt" id="4HjFLZ$nO38" role="V601i">
+      <property role="TrG5h" value="GSNExtendedLanguageKeyword" />
+      <node concept="VechU" id="KwKRgpJu1h" role="3F10Kt">
+        <node concept="3ZlJ5R" id="KwKRgpJu1i" role="VblUZ">
+          <node concept="3clFbS" id="KwKRgpJu1j" role="2VODD2">
+            <node concept="3clFbF" id="KwKRgpJu1k" role="3cqZAp">
+              <node concept="10M0yZ" id="KwKRgpJv8F" role="3clFbG">
+                <ref role="3cqZAo" to="xnej:KwKRgpJugV" resolve="KEYWORD_DARK_BLUE" />
+                <ref role="1PxDUh" to="xnej:4tRpPVPUEa3" resolve="BasicColors" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Vb9p2" id="KwKRgpJu1m" role="3F10Kt">
+        <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
+      </node>
+      <node concept="VSNWy" id="4HjFLZ$nO8O" role="3F10Kt">
+        <property role="1lJzqX" value="10" />
       </node>
     </node>
   </node>
