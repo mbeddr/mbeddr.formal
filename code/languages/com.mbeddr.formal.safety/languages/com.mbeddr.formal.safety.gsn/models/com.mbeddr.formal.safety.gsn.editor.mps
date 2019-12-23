@@ -487,31 +487,16 @@
   <node concept="24kQdi" id="2ccN23oa1nB">
     <ref role="1XX52x" to="py52:3GRi4m$rlpN" resolve="Context" />
     <node concept="2ZK4vF" id="2ccN23oa1o4" role="2wV5jI">
-      <node concept="3EZMnI" id="2ccN23oa1pI" role="1ytjkN">
-        <node concept="3EZMnI" id="2ccN23oa1pJ" role="3EZMnx">
-          <node concept="VPM3Z" id="2ccN23oa1pK" role="3F10Kt" />
-          <node concept="3F0ifn" id="2ccN23oa1pL" role="3EZMnx">
-            <property role="3F0ifm" value="Context:" />
-            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
-          </node>
-          <node concept="3F0A7n" id="2ccN23oa1pM" role="3EZMnx">
-            <property role="1O74Pk" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="l2Vlx" id="2ccN23oa1pN" role="2iSdaV" />
-        </node>
-        <node concept="3F0ifn" id="2ccN23oa1pO" role="3EZMnx" />
-        <node concept="2iRkQZ" id="2ccN23oa1pP" role="2iSdaV" />
-        <node concept="3F1sOY" id="2ccN23oa1pQ" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        </node>
-      </node>
+      <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
       <node concept="2xQOud" id="2ccN23oa1BQ" role="2xQQDV">
         <ref role="2xQOue" node="4Te4zGtlJMP" resolve="ContextRoundedRectangle" />
       </node>
+      <node concept="PMmxH" id="33qt4wr8ixh" role="1ytjkN">
+        <ref role="PMmxG" node="33qt4wr8iwl" resolve="ContextTextArea" />
+      </node>
     </node>
-    <node concept="PMmxH" id="2ccN23oa1Ao" role="6VMZX">
-      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
+    <node concept="PMmxH" id="33qt4wr8vo3" role="6VMZX">
+      <ref role="PMmxG" node="33qt4wr8vnQ" resolve="ContextTextAreaInInspector" />
     </node>
   </node>
   <node concept="PKFIW" id="2ccN23oa1rM">
@@ -536,39 +521,6 @@
       <node concept="3F1sOY" id="2ccN23oa1$z" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2ccN23oa2gD">
-    <ref role="1XX52x" to="py52:3GRi4m$r_RC" resolve="Solution" />
-    <node concept="2ZK4vF" id="2ccN23oa2h6" role="2wV5jI">
-      <node concept="3EZMnI" id="2ccN23oa2i$" role="1ytjkN">
-        <node concept="3EZMnI" id="2ccN23oa2i_" role="3EZMnx">
-          <node concept="PMmxH" id="4qaoH_Hp9Z" role="3EZMnx">
-            <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
-          </node>
-          <node concept="VPM3Z" id="2ccN23oa2iA" role="3F10Kt" />
-          <node concept="3F0ifn" id="2ccN23oa2iB" role="3EZMnx">
-            <property role="3F0ifm" value="Solution:" />
-            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
-          </node>
-          <node concept="3F0A7n" id="2ccN23oa2iC" role="3EZMnx">
-            <property role="1O74Pk" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="l2Vlx" id="2ccN23oa2iD" role="2iSdaV" />
-        </node>
-        <node concept="3F0ifn" id="2ccN23oa2iE" role="3EZMnx" />
-        <node concept="2iRkQZ" id="2ccN23oa2iF" role="2iSdaV" />
-        <node concept="3F1sOY" id="2ccN23oa2iG" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        </node>
-      </node>
-      <node concept="2xQOud" id="2ccN23oa2jD" role="2xQQDV">
-        <ref role="2xQOue" node="3GRi4m$roLc" resolve="SolutionCircle" />
-      </node>
-    </node>
-    <node concept="PMmxH" id="2ccN23oa2ke" role="6VMZX">
-      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
     </node>
   </node>
   <node concept="24kQdi" id="2ccN23oa2IB">
@@ -2145,6 +2097,7 @@
       <node concept="3EZMnI" id="1qrXfdGWSrO" role="3EZMnx">
         <node concept="VPM3Z" id="1qrXfdGWSrQ" role="3F10Kt" />
         <node concept="2ZK4vF" id="1qrXfdGWKXM" role="3EZMnx">
+          <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
           <node concept="3EZMnI" id="1qrXfdGWKXN" role="1ytjkN">
             <node concept="3EZMnI" id="1qrXfdGWKXO" role="3EZMnx">
               <node concept="PMmxH" id="1qrXfdGWKXP" role="3EZMnx">
@@ -2165,6 +2118,7 @@
             <node concept="3F0ifn" id="1qrXfdGWKXU" role="3EZMnx" />
             <node concept="3F1sOY" id="1qrXfdGWKXW" role="3EZMnx">
               <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+              <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
             </node>
             <node concept="3F0ifn" id="1qrXfdGWQQm" role="3EZMnx" />
             <node concept="3EZMnI" id="1qrXfdGWQQF" role="3EZMnx">
@@ -2227,6 +2181,7 @@
       <node concept="3EZMnI" id="1qrXfdGWSVD" role="3EZMnx">
         <node concept="VPM3Z" id="1qrXfdGWSVF" role="3F10Kt" />
         <node concept="2ZK4vF" id="1qrXfdGWT2D" role="3EZMnx">
+          <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
           <node concept="3EZMnI" id="1qrXfdGWT3m" role="1ytjkN">
             <node concept="2iRkQZ" id="1qrXfdGWT3n" role="2iSdaV" />
             <node concept="3EZMnI" id="1qrXfdGWT34" role="3EZMnx">
@@ -2529,35 +2484,17 @@
   </node>
   <node concept="24kQdi" id="7eb_1beKlGu">
     <ref role="1XX52x" to="py52:7eb_1beKlGf" resolve="Assumption" />
-    <node concept="PMmxH" id="7eb_1beKlGw" role="6VMZX">
-      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
-    </node>
     <node concept="2ZK4vF" id="7eb_1beKlGy" role="2wV5jI">
-      <node concept="3EZMnI" id="7eb_1beKlGz" role="1ytjkN">
-        <node concept="3EZMnI" id="7eb_1beKlG$" role="3EZMnx">
-          <node concept="PMmxH" id="7eb_1beKlG_" role="3EZMnx">
-            <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
-          </node>
-          <node concept="VPM3Z" id="7eb_1beKlGA" role="3F10Kt" />
-          <node concept="3F0ifn" id="7eb_1beKlGB" role="3EZMnx">
-            <property role="3F0ifm" value="Assumption:" />
-            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
-          </node>
-          <node concept="3F0A7n" id="7eb_1beKlGC" role="3EZMnx">
-            <property role="1O74Pk" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="l2Vlx" id="7eb_1beKlGD" role="2iSdaV" />
-        </node>
-        <node concept="3F0ifn" id="7eb_1beKlGE" role="3EZMnx" />
-        <node concept="2iRkQZ" id="7eb_1beKlGF" role="2iSdaV" />
-        <node concept="3F1sOY" id="7eb_1beKlGG" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        </node>
-      </node>
+      <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
       <node concept="2xQOud" id="7eb_1beKlGH" role="2xQQDV">
         <ref role="2xQOue" node="3GRi4m$roLc" resolve="SolutionCircle" />
       </node>
+      <node concept="PMmxH" id="33qt4wr7xfb" role="1ytjkN">
+        <ref role="PMmxG" node="33qt4wr7xeK" resolve="AssumptionTextArea" />
+      </node>
+    </node>
+    <node concept="PMmxH" id="33qt4wr7xgq" role="6VMZX">
+      <ref role="PMmxG" node="33qt4wr7xgf" resolve="AssumptionTextAreaInInspector" />
     </node>
   </node>
   <node concept="V5hpn" id="65LrkjiZjro">
@@ -2683,6 +2620,120 @@
           <ref role="1NtTu8" to="py52:7TjUbLQa$TT" resolve="undeveloped" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="33qt4wr6jMT">
+    <property role="TrG5h" value="SolutionTextArea" />
+    <ref role="1XX52x" to="py52:3GRi4m$r_RC" resolve="Solution" />
+    <node concept="3EZMnI" id="33qt4wr6jWS" role="2wV5jI">
+      <node concept="3EZMnI" id="33qt4wr6jWT" role="3EZMnx">
+        <node concept="PMmxH" id="33qt4wr6jWU" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
+        </node>
+        <node concept="VPM3Z" id="33qt4wr6jWV" role="3F10Kt" />
+        <node concept="3F0ifn" id="33qt4wr6jWW" role="3EZMnx">
+          <property role="3F0ifm" value="Solution:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="33qt4wr6jWX" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="33qt4wr6jWY" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="33qt4wr6jWZ" role="3EZMnx" />
+      <node concept="2iRkQZ" id="33qt4wr6jX0" role="2iSdaV" />
+      <node concept="3F1sOY" id="33qt4wr6jX1" role="3EZMnx">
+        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="33qt4wr6lZ3">
+    <property role="TrG5h" value="SolutionTextAreaInInspector" />
+    <ref role="1XX52x" to="py52:3GRi4m$r_RC" resolve="Solution" />
+    <node concept="PMmxH" id="2ccN23oa2ke" role="2wV5jI">
+      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2ccN23oa2gD">
+    <ref role="1XX52x" to="py52:3GRi4m$r_RC" resolve="Solution" />
+    <node concept="2ZK4vF" id="2ccN23oa2h6" role="2wV5jI">
+      <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
+      <node concept="2xQOud" id="2ccN23oa2jD" role="2xQQDV">
+        <ref role="2xQOue" node="3GRi4m$roLc" resolve="SolutionCircle" />
+      </node>
+      <node concept="PMmxH" id="33qt4wr6jXJ" role="1ytjkN">
+        <ref role="PMmxG" node="33qt4wr6jMT" resolve="SolutionTextArea" />
+      </node>
+    </node>
+    <node concept="PMmxH" id="33qt4wr6lZe" role="6VMZX">
+      <ref role="PMmxG" node="33qt4wr6lZ3" resolve="SolutionTextAreaInInspector" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="33qt4wr7xeK">
+    <property role="TrG5h" value="AssumptionTextArea" />
+    <ref role="1XX52x" to="py52:7eb_1beKlGf" resolve="Assumption" />
+    <node concept="3EZMnI" id="7eb_1beKlGz" role="2wV5jI">
+      <node concept="3EZMnI" id="7eb_1beKlG$" role="3EZMnx">
+        <node concept="PMmxH" id="7eb_1beKlG_" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
+        </node>
+        <node concept="VPM3Z" id="7eb_1beKlGA" role="3F10Kt" />
+        <node concept="3F0ifn" id="7eb_1beKlGB" role="3EZMnx">
+          <property role="3F0ifm" value="Assumption:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="7eb_1beKlGC" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="7eb_1beKlGD" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="7eb_1beKlGE" role="3EZMnx" />
+      <node concept="2iRkQZ" id="7eb_1beKlGF" role="2iSdaV" />
+      <node concept="3F1sOY" id="7eb_1beKlGG" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="33qt4wr7xgf">
+    <property role="TrG5h" value="AssumptionTextAreaInInspector" />
+    <ref role="1XX52x" to="py52:7eb_1beKlGf" resolve="Assumption" />
+    <node concept="PMmxH" id="7eb_1beKlGw" role="2wV5jI">
+      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="33qt4wr8iwl">
+    <property role="TrG5h" value="ContextTextArea" />
+    <ref role="1XX52x" to="py52:3GRi4m$rlpN" resolve="Context" />
+    <node concept="3EZMnI" id="33qt4wr8iwt" role="2wV5jI">
+      <node concept="3EZMnI" id="33qt4wr8iwu" role="3EZMnx">
+        <node concept="VPM3Z" id="33qt4wr8iwv" role="3F10Kt" />
+        <node concept="3F0ifn" id="33qt4wr8iww" role="3EZMnx">
+          <property role="3F0ifm" value="Context:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="33qt4wr8iwx" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="33qt4wr8iwy" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="33qt4wr8iwz" role="3EZMnx" />
+      <node concept="2iRkQZ" id="33qt4wr8iw$" role="2iSdaV" />
+      <node concept="3F1sOY" id="33qt4wr8iw_" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="33qt4wr8vnQ">
+    <property role="TrG5h" value="ContextTextAreaInInspector" />
+    <ref role="1XX52x" to="py52:3GRi4m$rlpN" resolve="Context" />
+    <node concept="PMmxH" id="2ccN23oa1Ao" role="2wV5jI">
+      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
     </node>
   </node>
 </model>

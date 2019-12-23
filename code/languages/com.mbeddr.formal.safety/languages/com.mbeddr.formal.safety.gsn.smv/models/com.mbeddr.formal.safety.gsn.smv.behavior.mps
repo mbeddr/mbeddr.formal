@@ -458,7 +458,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="ZaBFheHmaT">
-    <ref role="13h7C2" to="bsp8:4i__4Gxs2uL" resolve="ComponentAssemblyRef" />
+    <ref role="13h7C2" to="bsp8:4i__4Gxs2uL" resolve="ComponentInterfaceRef" />
     <node concept="13hLZK" id="ZaBFheHmaU" role="13h7CW">
       <node concept="3clFbS" id="ZaBFheHmaV" role="2VODD2" />
     </node>
@@ -471,7 +471,7 @@
           <node concept="2OqwBi" id="ZaBFheHn5N" role="3clFbG">
             <node concept="13iPFW" id="ZaBFheHmWR" role="2Oq$k0" />
             <node concept="3TrEf2" id="ZaBFheHngv" role="2OqNvi">
-              <ref role="3Tt5mk" to="bsp8:4i__4Gxs2vk" resolve="componentAssembly" />
+              <ref role="3Tt5mk" to="bsp8:4i__4Gxs2vk" resolve="componentInterface" />
             </node>
           </node>
         </node>

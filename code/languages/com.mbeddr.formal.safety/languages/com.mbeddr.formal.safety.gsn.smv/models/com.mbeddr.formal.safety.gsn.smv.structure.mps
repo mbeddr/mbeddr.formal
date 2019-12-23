@@ -256,13 +256,13 @@
   </node>
   <node concept="1TIwiD" id="4i__4Gxs2uL">
     <property role="EcuMT" value="4946522816140814257" />
-    <property role="TrG5h" value="ComponentAssemblyRef" />
+    <property role="TrG5h" value="ComponentInterfaceRef" />
     <ref role="1TJDcQ" to="2qxf:6rlO$dpPTOC" resolve="AbstractComponentRef" />
     <node concept="1TJgyj" id="4i__4Gxs2vk" role="1TKVEi">
       <property role="IQ2ns" value="4946522816140814292" />
-      <property role="20kJfa" value="componentAssembly" />
+      <property role="20kJfa" value="componentInterface" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+      <ref role="20lvS9" to="vzqj:7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
   </node>
   <node concept="1TIwiD" id="4i__4Gxsq_o">
