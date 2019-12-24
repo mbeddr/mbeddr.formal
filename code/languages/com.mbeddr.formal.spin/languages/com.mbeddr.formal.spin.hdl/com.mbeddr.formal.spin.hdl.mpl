@@ -142,7 +142,6 @@
     <dependency reexport="false">df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)</dependency>
     <dependency reexport="false">f8e20673-3f65-44e9-84c0-c4a4b6ede37e(jetbrains.mps.make.facets)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">8ffff4a3-5838-458b-8c6d-7143a3c423b7(com.mbeddr.formal.spin.hdl#2291855968617432607)</dependency>
     <dependency reexport="false">628c1bba-6b54-4c71-927c-3cff044349e4(com.mbeddr.formal.spin.hdl)</dependency>
   </dependencies>
   <languageVersions>
@@ -214,7 +213,6 @@
     <module reference="ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)" version="0" />
     <module reference="bd54ef69-17ec-411b-8f49-485702e74565(com.mbeddr.formal.spin.ext)" version="0" />
     <module reference="628c1bba-6b54-4c71-927c-3cff044349e4(com.mbeddr.formal.spin.hdl)" version="0" />
-    <module reference="8ffff4a3-5838-458b-8c6d-7143a3c423b7(com.mbeddr.formal.spin.hdl#2291855968617432607)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

@@ -14,7 +14,6 @@
   <imports>
     <import index="y6ji" ref="r:8ddb424f-ead9-4d6e-9e90-7a7d026ff9c2(com.mbeddr.formal.spin.hdl.structure)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
-    <import index="nx7s" ref="r:28ea8bb4-a91f-4d1c-a8ea-ef6d7a5d8f2d(com.mbeddr.formal.spin.hdl.generator.utils)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -24,6 +23,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="cse1" ref="r:7baa2fe4-b0d3-4d54-97d7-525f40bf0256(com.mbeddr.formal.spin.hdl.utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dinh" ref="r:053017f6-a9b2-4735-890d-9c4181609d2f(com.mbeddr.formal.spin.ext.structure)" implicit="true" />
   </imports>
@@ -1549,9 +1549,9 @@
       <node concept="3zFVjK" id="1ZejHLlQGjt" role="3zH0cK">
         <node concept="3clFbS" id="1ZejHLlQGju" role="2VODD2">
           <node concept="3clFbF" id="26dfgZlX5QB" role="3cqZAp">
-            <node concept="2YIFZM" id="26dfgZlX6dx" role="3clFbG">
-              <ref role="37wK5l" to="nx7s:26dfgZlX4Uw" resolve="fileName" />
-              <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
+            <node concept="2YIFZM" id="7he_lUup2Cd" role="3clFbG">
+              <ref role="37wK5l" to="cse1:26dfgZlX4Uw" resolve="fileName" />
+              <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
               <node concept="30H73N" id="26dfgZlX6p4" role="37wK5m" />
             </node>
           </node>
@@ -2306,9 +2306,9 @@
                 <node concept="3zFVjK" id="1vcsY83hhpJ" role="3zH0cK">
                   <node concept="3clFbS" id="1vcsY83hhpK" role="2VODD2">
                     <node concept="3clFbF" id="1vcsY83hhpL" role="3cqZAp">
-                      <node concept="2YIFZM" id="1vcsY83hk5z" role="3clFbG">
-                        <ref role="37wK5l" to="nx7s:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
-                        <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
+                      <node concept="2YIFZM" id="7he_lUup2C7" role="3clFbG">
+                        <ref role="37wK5l" to="cse1:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
+                        <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
                         <node concept="30H73N" id="1vcsY83hk5$" role="37wK5m" />
                         <node concept="1iwH7S" id="1vcsY83hk5_" role="37wK5m" />
                       </node>
@@ -2327,9 +2327,9 @@
                   <node concept="3$xsQk" id="1vcsY83hlP2" role="3$ytzL">
                     <node concept="3clFbS" id="1vcsY83hlP3" role="2VODD2">
                       <node concept="3clFbF" id="1vcsY83hm9j" role="3cqZAp">
-                        <node concept="2YIFZM" id="1vcsY83hm9k" role="3clFbG">
-                          <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
-                          <ref role="37wK5l" to="nx7s:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
+                        <node concept="2YIFZM" id="7he_lUup2C8" role="3clFbG">
+                          <ref role="37wK5l" to="cse1:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
+                          <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
                           <node concept="30H73N" id="1vcsY83hm9l" role="37wK5m" />
                           <node concept="1iwH7S" id="1vcsY83hm9m" role="37wK5m" />
                         </node>
@@ -2357,9 +2357,9 @@
                             <node concept="3$xsQk" id="7M$OvLQd3cH" role="3$ytzL">
                               <node concept="3clFbS" id="7M$OvLQd3cI" role="2VODD2">
                                 <node concept="3clFbF" id="7M$OvLQd3nQ" role="3cqZAp">
-                                  <node concept="2YIFZM" id="7M$OvLQd3nR" role="3clFbG">
-                                    <ref role="37wK5l" to="nx7s:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
-                                    <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
+                                  <node concept="2YIFZM" id="7he_lUup2C9" role="3clFbG">
+                                    <ref role="37wK5l" to="cse1:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
+                                    <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
                                     <node concept="30H73N" id="7M$OvLQd3nS" role="37wK5m" />
                                     <node concept="1iwH7S" id="7M$OvLQd3nT" role="37wK5m" />
                                   </node>
@@ -2420,9 +2420,9 @@
                                   <node concept="3$xsQk" id="7M$OvLQd3E7" role="3$ytzL">
                                     <node concept="3clFbS" id="7M$OvLQd3E8" role="2VODD2">
                                       <node concept="3clFbF" id="7M$OvLQd3Q_" role="3cqZAp">
-                                        <node concept="2YIFZM" id="7M$OvLQd3QA" role="3clFbG">
-                                          <ref role="37wK5l" to="nx7s:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
-                                          <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
+                                        <node concept="2YIFZM" id="7he_lUup2Ca" role="3clFbG">
+                                          <ref role="37wK5l" to="cse1:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
+                                          <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
                                           <node concept="30H73N" id="7M$OvLQd3QB" role="37wK5m" />
                                           <node concept="1iwH7S" id="7M$OvLQd3QC" role="37wK5m" />
                                         </node>
@@ -2444,9 +2444,9 @@
                                 <node concept="3$xsQk" id="7M$OvLQd5kE" role="3$ytzL">
                                   <node concept="3clFbS" id="7M$OvLQd5kF" role="2VODD2">
                                     <node concept="3clFbF" id="7M$OvLQd5yv" role="3cqZAp">
-                                      <node concept="2YIFZM" id="7M$OvLQd5yw" role="3clFbG">
-                                        <ref role="37wK5l" to="nx7s:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
-                                        <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
+                                      <node concept="2YIFZM" id="7he_lUup2Cb" role="3clFbG">
+                                        <ref role="37wK5l" to="cse1:1vcsY83himP" resolve="tempPromelaMultistepVarName" />
+                                        <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
                                         <node concept="30H73N" id="7M$OvLQd5yx" role="37wK5m" />
                                         <node concept="1iwH7S" id="7M$OvLQd5yy" role="37wK5m" />
                                       </node>
@@ -2511,9 +2511,9 @@
             <node concept="3zFVjK" id="1vcsY83nFmp" role="3zH0cK">
               <node concept="3clFbS" id="1vcsY83nFmq" role="2VODD2">
                 <node concept="3clFbF" id="1vcsY83nTob" role="3cqZAp">
-                  <node concept="2YIFZM" id="1vcsY83nToc" role="3clFbG">
-                    <ref role="37wK5l" to="nx7s:1ZejHLlPuc9" resolve="tempPromelaNondetAssignVarName" />
-                    <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
+                  <node concept="2YIFZM" id="7he_lUup2C6" role="3clFbG">
+                    <ref role="37wK5l" to="cse1:1ZejHLlPuc9" resolve="tempPromelaNondetAssignVarName" />
+                    <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
                     <node concept="30H73N" id="1vcsY83nTod" role="37wK5m" />
                     <node concept="1iwH7S" id="1vcsY83nToe" role="37wK5m" />
                   </node>
