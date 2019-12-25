@@ -312,24 +312,18 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="4MDOjos013m" role="1l3spd">
-      <property role="TrG5h" value="dependencies.root" />
-      <node concept="398BVA" id="4MDOjos0k5U" role="398pKh">
-        <ref role="398BVh" node="42jqVeFkUG2" resolve="mbeddr.formal.home" />
-        <node concept="2Ry0Ak" id="4MDOjos0w$X" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="4MDOjos0x6e" role="2Ry0An">
-            <property role="2Ry0Am" value="dependencies" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="4MDOjos0yOT" role="1l3spd">
       <property role="TrG5h" value="dependencies.mbeddr.platform" />
-      <node concept="398BVA" id="4MDOjos0_nL" role="398pKh">
-        <ref role="398BVh" node="4MDOjos013m" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="4MDOjos0_DE" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
+      <node concept="398BVA" id="3jaLROLwobq" role="398pKh">
+        <ref role="398BVh" node="42jqVeFkUG2" resolve="mbeddr.formal.home" />
+        <node concept="2Ry0Ak" id="3jaLROLwobr" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="3jaLROLwobs" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+            <node concept="2Ry0Ak" id="3jaLROLwoki" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.platform" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -389,9 +383,6 @@
           </node>
         </node>
       </node>
-      <node concept="L2wRC" id="wUJmWCwVZN" role="39821P">
-        <ref role="L2wRA" node="5jdn85oHU1h" resolve="com.mbeddr.formal.nusmv.build" />
-      </node>
     </node>
     <node concept="2_Ic$z" id="4N7LxkPJhG0" role="3989C9">
       <property role="2_GNG2" value="6096" />
@@ -420,7 +411,7 @@
         <ref role="m$f5T" node="42jqVeFkUv2" resolve="com.mbeddr.formal.nusmv" />
       </node>
       <node concept="m$f5U" id="2ShgyhefbhC" role="m$_yh">
-        <ref role="m$f5T" node="2Shgyhef7mw" resolve="com.mbeddr.formal.nusmv.devkit" />
+        <ref role="m$f5T" node="2Shgyhef7mw" resolve="fasten.nusmv.devkit" />
       </node>
       <node concept="m$_yC" id="42jqVeFkUv9" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -435,19 +426,19 @@
       </node>
     </node>
     <node concept="2G$12M" id="2Shgyhef7mw" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.formal.nusmv.devkit" />
+      <property role="TrG5h" value="fasten.nusmv.devkit" />
       <node concept="3LEwk6" id="2Shgyhef8Xo" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="mbeddr.formal.nusmv" />
+        <property role="TrG5h" value="fasten.nusmv" />
         <property role="3LESm3" value="edb51d2d-64eb-404a-818e-c1cabf1d58d5" />
         <node concept="398BVA" id="2Shgyhef94Q" role="3LF7KH">
           <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
           <node concept="2Ry0Ak" id="2Shgyhef9jG" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="2Shgyhef9yx" role="2Ry0An">
-              <property role="2Ry0Am" value="mbeddr.formal.nusmv" />
-              <node concept="2Ry0Ak" id="2Shgyhefamh" role="2Ry0An">
-                <property role="2Ry0Am" value="mbeddr.formal.nusmv.devkit" />
+              <property role="2Ry0Am" value="fasten.nusmv" />
+              <node concept="2Ry0Ak" id="7he_lUu$Zac" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.nusmv.devkit" />
               </node>
             </node>
           </node>
@@ -2554,7 +2545,7 @@
           </node>
         </node>
         <node concept="3LFrX1" id="6K6DWA5Gvtf" role="3bR37C">
-          <ref role="3LFrX2" node="2Shgyhef8Xo" resolve="mbeddr.formal.nusmv" />
+          <ref role="3LFrX2" node="2Shgyhef8Xo" resolve="fasten.nusmv" />
         </node>
         <node concept="3rtmxn" id="57ROGn8QshC" role="3bR31x">
           <node concept="3LXTmp" id="57ROGn8QshD" role="3rtmxm">
@@ -2574,48 +2565,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1E1JtA" id="5jdn85oHU1h" role="3989C9">
-      <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="com.mbeddr.formal.nusmv.build" />
-      <property role="3LESm3" value="7125ed76-a460-4b0f-b95b-a899f99488d6" />
-      <node concept="398BVA" id="5jdn85oHUxc" role="3LF7KH">
-        <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-        <node concept="2Ry0Ak" id="5jdn85oHUCm" role="iGT6I">
-          <property role="2Ry0Am" value="solutions" />
-          <node concept="2Ry0Ak" id="5jdn85oHUI5" role="2Ry0An">
-            <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.build" />
-            <node concept="2Ry0Ak" id="5jdn85oHUNO" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.build.msd" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1SiIV0" id="5jdn85oHUTv" role="3bR37C">
-        <node concept="3bR9La" id="5jdn85oHUTw" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="5jdn85oHUTx" role="3bR37C">
-        <node concept="3bR9La" id="5jdn85oHUTy" role="1SiIV1">
-          <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="5jdn85oHUTz" role="3bR37C">
-        <node concept="3bR9La" id="5jdn85oHUT$" role="1SiIV1">
-          <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="5jdn85oHUT_" role="3bR37C">
-        <node concept="3bR9La" id="5jdn85oHUTA" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="5jdn85oHUTB" role="3bR37C">
-        <node concept="3bR9La" id="5jdn85oHUTC" role="1SiIV1">
-          <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
         </node>
       </node>
     </node>

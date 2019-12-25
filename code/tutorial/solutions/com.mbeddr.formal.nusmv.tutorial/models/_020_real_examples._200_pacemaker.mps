@@ -2,7 +2,7 @@
 <model ref="r:32a220fb-1bca-446a-8530-fcdc502d73b1(_020_real_examples._200_pacemaker)">
   <persistence version="9" />
   <languages>
-    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
+    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
   <registry>
