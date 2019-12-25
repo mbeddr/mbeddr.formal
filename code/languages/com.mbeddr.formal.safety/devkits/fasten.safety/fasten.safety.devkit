@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.safety" uuid="ac9a2847-3512-4af0-8db9-c20abbe2720a">
+  <extendedDevKits>
+    <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
+    <extendedDevKit>3970a543-1808-4b9f-a378-71f15d96d819(fasten.safety.hara)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
