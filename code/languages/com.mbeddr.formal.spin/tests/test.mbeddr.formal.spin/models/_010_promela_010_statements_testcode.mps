@@ -2,7 +2,7 @@
 <model ref="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049(test.mbeddr.formal.spin._010_promela_010_statements_testcode)">
   <persistence version="9" />
   <languages>
-    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(mbeddr.formal.spin)" />
+    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(fasten.spin)" />
   </languages>
   <imports />
   <registry>

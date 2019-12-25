@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/devkits/mbeddr.formal.spin/mbeddr.formal.spin.devkit" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.spin/fasten.spin.devkit" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.spin.analyses/com.mbeddr.formal.spin.analyses.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.spin.c.core/com.mbeddr.formal.spin.c.core.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.spin.ext/com.mbeddr.formal.spin.ext.mpl" folder="lang" />
