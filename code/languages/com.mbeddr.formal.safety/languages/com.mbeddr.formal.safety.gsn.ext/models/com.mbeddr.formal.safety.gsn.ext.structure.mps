@@ -96,12 +96,18 @@
     <node concept="1TJgyj" id="1qrXfdH1UrR" role="1TKVEi">
       <property role="IQ2ns" value="1629165016568014583" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="patternDefinition" />
+      <property role="20kJfa" value="patternInstance" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1qrXfdH1Uhb" resolve="PatternDefinition" />
+      <ref role="20lvS9" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     </node>
     <node concept="PrWs8" id="1qrXfdH3Wo9" role="PzmwI">
       <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
+    </node>
+    <node concept="1TJgyj" id="WKGDODIrUZ" role="1TKVEi">
+      <property role="IQ2ns" value="1094571097530678975" />
+      <property role="20kJfa" value="originalDefinition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1qrXfdH1Uhb" resolve="PatternDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="24PsEXF9ypK">
