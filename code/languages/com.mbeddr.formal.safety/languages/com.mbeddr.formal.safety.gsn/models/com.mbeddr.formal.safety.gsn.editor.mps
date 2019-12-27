@@ -24,6 +24,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
     <import index="3it5" ref="r:663468b2-7f77-448a-afd3-b1669ce5b4a7(de.itemis.mps.editor.diagram.runtime.plugin)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2390,6 +2391,12 @@
               <ref role="37wK5l" node="1qrXfdH2wAl" resolve="collectAdditionalPaletteEntries" />
               <ref role="1Pybhc" node="1qrXfdH2wAj" resolve="GSNPaletteEntriesFactory" />
               <node concept="2ZN8Hh" id="1qrXfdH3pJ0" role="37wK5m" />
+              <node concept="2OqwBi" id="WKGDODSVxU" role="37wK5m">
+                <node concept="1Q80Hx" id="WKGDODSVnC" role="2Oq$k0" />
+                <node concept="liA8E" id="WKGDODSW8C" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2534,6 +2541,9 @@
                       <node concept="37vLTw" id="1qrXfdH2YmH" role="37wK5m">
                         <ref role="3cqZAo" node="1qrXfdH2XNw" resolve="container" />
                       </node>
+                      <node concept="37vLTw" id="WKGDODSWyL" role="37wK5m">
+                        <ref role="3cqZAo" node="WKGDODSWbH" resolve="repo" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2564,6 +2574,12 @@
         <property role="TrG5h" value="container" />
         <node concept="3Tqbb2" id="1qrXfdH2XNv" role="1tU5fm">
           <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="WKGDODSWbH" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="WKGDODSWh9" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
