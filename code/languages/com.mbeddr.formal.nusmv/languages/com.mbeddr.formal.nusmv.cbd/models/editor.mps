@@ -2939,8 +2939,10 @@
         </node>
       </node>
       <node concept="3clFbS" id="2mjHtwU8pdv" role="3clF47">
-        <node concept="3clFbF" id="2mjHtwU8pdy" role="3cqZAp">
-          <node concept="10Nm6u" id="2mjHtwU8pdx" role="3clFbG" />
+        <node concept="3clFbF" id="WKGDODQOop" role="3cqZAp">
+          <node concept="37vLTw" id="WKGDODQOoo" role="3clFbG">
+            <ref role="3cqZAo" node="2mjHtwU8yZs" resolve="componentInterface" />
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="2mjHtwU8pdw" role="2AJF6D">
