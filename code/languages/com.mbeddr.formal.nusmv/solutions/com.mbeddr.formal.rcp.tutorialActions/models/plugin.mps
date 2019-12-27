@@ -25,6 +25,12 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -47,6 +53,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -114,6 +121,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
@@ -191,238 +199,24 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1uIpCUufw_g" role="jymVt" />
-    <node concept="3clFbW" id="7836$RyWVq8" role="jymVt">
-      <node concept="3cqZAl" id="7836$RyWVq9" role="3clF45" />
-      <node concept="3clFbS" id="7836$RyWVqb" role="3clF47">
-        <node concept="3clFbF" id="7836$RyWV_Q" role="3cqZAp">
-          <node concept="2OqwBi" id="7836$RyWVAO" role="3clFbG">
-            <node concept="1rXfSq" id="7836$RyWV_P" role="2Oq$k0">
-              <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
-            </node>
-            <node concept="liA8E" id="7836$RyWVEg" role="2OqNvi">
-              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
-              <node concept="2YIFZM" id="2DqKt65mJ0O" role="37wK5m">
-                <ref role="37wK5l" to="zn9m:~IconLoader.getIcon(java.lang.String)" resolve="getIcon" />
-                <ref role="1Pybhc" to="zn9m:~IconLoader" resolve="IconLoader" />
-                <node concept="Xl_RD" id="2DqKt65mJ4l" role="37wK5m">
-                  <property role="Xl_RC" value="/fasten16.png" />
-                </node>
-              </node>
-            </node>
+    <node concept="3clFb_" id="7Y21hZBa6Af" role="jymVt">
+      <property role="TrG5h" value="getTutorialDirectory" />
+      <node concept="3Tmbuc" id="7Y21hZBa6Ah" role="1B3o_S" />
+      <node concept="17QB3L" id="7Y21hZBa6Ai" role="3clF45" />
+      <node concept="3clFbS" id="7Y21hZBa6Aj" role="3clF47">
+        <node concept="3clFbF" id="7Y21hZBa7e2" role="3cqZAp">
+          <node concept="37vLTw" id="7Y21hZBa7e1" role="3clFbG">
+            <ref role="3cqZAo" node="1uIpCUufwgr" resolve="TUTORIAL_HOME" />
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="7836$RyWVqc" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="7836$RyWXgw" role="jymVt" />
-    <node concept="3clFb_" id="7836$RyWXhH" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="actionPerformed" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="7836$RyWXhI" role="1B3o_S" />
-      <node concept="3cqZAl" id="7836$RyWXhK" role="3clF45" />
-      <node concept="37vLTG" id="7836$RyWXhL" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="7836$RyWXhM" role="1tU5fm">
-          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="7836$RyWXhN" role="3clF47">
-        <node concept="3cpWs8" id="7836$RyWXjB" role="3cqZAp">
-          <node concept="3cpWsn" id="7836$RyWXjA" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="projectFile" />
-            <node concept="17QB3L" id="2DqKt65mneT" role="1tU5fm" />
-            <node concept="3cpWs3" id="1uIpCUufzvF" role="33vP2m">
-              <node concept="3cpWs3" id="1uIpCUufzvG" role="3uHU7B">
-                <node concept="2YIFZM" id="1uIpCUuimny" role="3uHU7B">
-                  <ref role="37wK5l" to="bd8o:~PathManager.getHomePath()" resolve="getHomePath" />
-                  <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
-                </node>
-                <node concept="10M0yZ" id="1uIpCUufzvJ" role="3uHU7w">
-                  <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                  <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="1uIpCUufzvM" role="3uHU7w">
-                <ref role="3cqZAo" node="1uIpCUufwgr" resolve="TUTORIAL_HOME" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7836$RyWXjX" role="3cqZAp">
-          <node concept="3cpWsn" id="7836$RyWXjW" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="currentProject" />
-            <node concept="3uibUv" id="7836$RyX0W2" role="1tU5fm">
-              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-            </node>
-            <node concept="2OqwBi" id="7836$RyWXlu" role="33vP2m">
-              <node concept="10M0yZ" id="7836$RyWXx0" role="2Oq$k0">
-                <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-                <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
-              </node>
-              <node concept="liA8E" id="7836$RyWXlv" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext)" resolve="getData" />
-                <node concept="2OqwBi" id="7836$RyWXly" role="37wK5m">
-                  <node concept="37vLTw" id="7836$RyX20S" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7836$RyWXhL" resolve="event" />
-                  </node>
-                  <node concept="liA8E" id="7836$RyWXlz" role="2OqNvi">
-                    <ref role="37wK5l" to="qkt:~AnActionEvent.getDataContext()" resolve="getDataContext" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2DqKt65mrZI" role="3cqZAp">
-          <node concept="3cpWsn" id="2DqKt65mrZJ" role="3cpWs9">
-            <property role="TrG5h" value="tutorialDir" />
-            <node concept="3uibUv" id="2DqKt65mrZK" role="1tU5fm">
-              <ref role="3uigEE" to="jlff:~VirtualFile" resolve="VirtualFile" />
-            </node>
-            <node concept="2OqwBi" id="2DqKt65mrZL" role="33vP2m">
-              <node concept="2YIFZM" id="2DqKt65mrZM" role="2Oq$k0">
-                <ref role="1Pybhc" to="jlff:~LocalFileSystem" resolve="LocalFileSystem" />
-                <ref role="37wK5l" to="jlff:~LocalFileSystem.getInstance()" resolve="getInstance" />
-              </node>
-              <node concept="liA8E" id="2DqKt65mrZN" role="2OqNvi">
-                <ref role="37wK5l" to="jlff:~LocalFileSystem.findFileByIoFile(java.io.File)" resolve="findFileByIoFile" />
-                <node concept="2ShNRf" id="2DqKt65mrZO" role="37wK5m">
-                  <node concept="1pGfFk" id="2DqKt65mrZP" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                    <node concept="37vLTw" id="1uIpCUufzr7" role="37wK5m">
-                      <ref role="3cqZAo" node="7836$RyWXjA" resolve="projectFile" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2DqKt65msOW" role="3cqZAp">
-          <node concept="3clFbS" id="2DqKt65msOY" role="3clFbx">
-            <node concept="3cpWs8" id="7836$RyWXkP" role="3cqZAp">
-              <node concept="3cpWsn" id="7836$RyWXkO" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="filePath" />
-                <node concept="17QB3L" id="2DqKt65msnT" role="1tU5fm" />
-                <node concept="2OqwBi" id="7836$RyWXmb" role="33vP2m">
-                  <node concept="37vLTw" id="2DqKt65mskE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2DqKt65mrZJ" resolve="tutorialDir" />
-                  </node>
-                  <node concept="liA8E" id="7836$RyWXmc" role="2OqNvi">
-                    <ref role="37wK5l" to="jlff:~VirtualFile.getPath()" resolve="getPath" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="7836$RyWXkT" role="3cqZAp">
-              <node concept="3cpWsn" id="7836$RyWXkS" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="project" />
-                <node concept="3uibUv" id="7836$RyWXkU" role="1tU5fm">
-                  <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-                </node>
-                <node concept="2YIFZM" id="7836$RyX1S3" role="33vP2m">
-                  <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.lang.String,com.intellij.openapi.project.Project,boolean)" resolve="openProject" />
-                  <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                  <node concept="37vLTw" id="7836$RyWXkW" role="37wK5m">
-                    <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
-                  </node>
-                  <node concept="37vLTw" id="7836$RyWXkX" role="37wK5m">
-                    <ref role="3cqZAo" node="7836$RyWXjW" resolve="currentProject" />
-                  </node>
-                  <node concept="3clFbT" id="7836$RyWXkY" role="37wK5m">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="7836$RyWXkZ" role="3cqZAp">
-              <node concept="3y3z36" id="7836$RyWXl0" role="3clFbw">
-                <node concept="37vLTw" id="7836$RyWXl1" role="3uHU7B">
-                  <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                </node>
-                <node concept="10Nm6u" id="7836$RyWXl2" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="7836$RyWXl4" role="3clFbx">
-                <node concept="3clFbF" id="7836$RyWXl5" role="3cqZAp">
-                  <node concept="2OqwBi" id="7836$RyWXl6" role="3clFbG">
-                    <node concept="2YIFZM" id="7836$RyXbKo" role="2Oq$k0">
-                      <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
-                      <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
-                      <node concept="37vLTw" id="7836$RyWXl8" role="37wK5m">
-                        <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7836$RyWXl9" role="2OqNvi">
-                      <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.setBaseDir(com.intellij.openapi.vfs.VirtualFile)" resolve="setBaseDir" />
-                      <node concept="2OqwBi" id="7836$RyWXmh" role="37wK5m">
-                        <node concept="37vLTw" id="7836$RyWXmg" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                        </node>
-                        <node concept="liA8E" id="7836$RyWXmi" role="2OqNvi">
-                          <ref role="37wK5l" to="4nm9:~Project.getBaseDir()" resolve="getBaseDir" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1Wc70l" id="2DqKt65mtD4" role="3clFbw">
-            <node concept="3y3z36" id="2DqKt65mtQZ" role="3uHU7B">
-              <node concept="10Nm6u" id="2DqKt65mtU$" role="3uHU7w" />
-              <node concept="37vLTw" id="2DqKt65mtLR" role="3uHU7B">
-                <ref role="3cqZAo" node="2DqKt65mrZJ" resolve="tutorialDir" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="2DqKt65mt3n" role="3uHU7w">
-              <node concept="37vLTw" id="2DqKt65msYD" role="2Oq$k0">
-                <ref role="3cqZAo" node="2DqKt65mrZJ" resolve="tutorialDir" />
-              </node>
-              <node concept="liA8E" id="2DqKt65mteP" role="2OqNvi">
-                <ref role="37wK5l" to="jlff:~VirtualFile.exists()" resolve="exists" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="1uIpCUuhuI6" role="9aQIa">
-            <node concept="3clFbS" id="1uIpCUuhuI7" role="9aQI4">
-              <node concept="RRSsy" id="1uIpCUuhuWp" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
-                <node concept="3cpWs3" id="1uIpCUuhv78" role="RRSoy">
-                  <node concept="37vLTw" id="1uIpCUuhv7Y" role="3uHU7w">
-                    <ref role="3cqZAo" node="2DqKt65mrZJ" resolve="tutorialDir" />
-                  </node>
-                  <node concept="Xl_RD" id="1uIpCUuhuWr" role="3uHU7B">
-                    <property role="Xl_RC" value="tutorial dir not found: " />
-                  </node>
-                </node>
-              </node>
-              <node concept="RRSsy" id="1uIpCUuinWo" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
-                <node concept="3cpWs3" id="1uIpCUuinWp" role="RRSoy">
-                  <node concept="37vLTw" id="1uIpCUuioBh" role="3uHU7w">
-                    <ref role="3cqZAo" node="7836$RyWXjA" resolve="projectFile" />
-                  </node>
-                  <node concept="Xl_RD" id="1uIpCUuinWr" role="3uHU7B">
-                    <property role="Xl_RC" value="project file was: " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="2AHcQZ" id="7Y21hZBa6Ak" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1uIpCUufugm" role="jymVt" />
     <node concept="3Tm1VV" id="7836$RyWTGU" role="1B3o_S" />
-    <node concept="3uibUv" id="7836$RyWUVh" role="1zkMxy">
-      <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
+    <node concept="3uibUv" id="7Y21hZBa6op" role="1zkMxy">
+      <ref role="3uigEE" node="7Y21hZBa4tk" resolve="OpenTutorialProjectActionBase" />
     </node>
   </node>
   <node concept="2pMbU2" id="1o_$mJEhEgT">
@@ -490,6 +284,34 @@
                 </node>
               </node>
             </node>
+            <node concept="2pNNFK" id="7Y21hZBa7$_" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7Y21hZBa7$A" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="7Y21hZBa7$B" role="2pMdts">
+                  <property role="2pMdty" value="OpenFastenSafetyTutorialProject" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Y21hZBa7$C" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="7Y21hZBa7$D" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.OpenFastenSafetyTutorialProjectAction" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Y21hZBa7$E" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="7Y21hZBa7$F" role="2pMdts">
+                  <property role="2pMdty" value="Open FASTEN Safety-Tutorial" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Y21hZBa7$G" role="2pNNFR">
+                <property role="2pNUuO" value="description" />
+                <node concept="2pMdtt" id="7Y21hZBa7$H" role="2pMdts">
+                  <property role="2pMdty" value="Opens the FASTEN safety tutorial from the installation directory" />
+                </node>
+              </node>
+            </node>
             <node concept="2pNNFK" id="7836$RyXe12" role="3o6s8t">
               <property role="2pNNFO" value="add-to-group" />
               <property role="qg3DV" value="true" />
@@ -531,6 +353,290 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="7Y21hZBa4tk">
+    <property role="TrG5h" value="OpenTutorialProjectActionBase" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="7Y21hZBa4yn" role="jymVt" />
+    <node concept="3clFbW" id="7Y21hZBa4D9" role="jymVt">
+      <node concept="3cqZAl" id="7Y21hZBa4Da" role="3clF45" />
+      <node concept="3clFbS" id="7Y21hZBa4Db" role="3clF47">
+        <node concept="3clFbF" id="7Y21hZBa4Dc" role="3cqZAp">
+          <node concept="2OqwBi" id="7Y21hZBa4Dd" role="3clFbG">
+            <node concept="1rXfSq" id="7Y21hZBa4De" role="2Oq$k0">
+              <ref role="37wK5l" to="qkt:~AnAction.getTemplatePresentation()" resolve="getTemplatePresentation" />
+            </node>
+            <node concept="liA8E" id="7Y21hZBa4Df" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
+              <node concept="2YIFZM" id="7Y21hZBa4Dg" role="37wK5m">
+                <ref role="1Pybhc" to="zn9m:~IconLoader" resolve="IconLoader" />
+                <ref role="37wK5l" to="zn9m:~IconLoader.getIcon(java.lang.String)" resolve="getIcon" />
+                <node concept="Xl_RD" id="7Y21hZBa4Dh" role="37wK5m">
+                  <property role="Xl_RC" value="/fasten16.png" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7Y21hZBa4Di" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="7Y21hZBa4Dj" role="jymVt" />
+    <node concept="3clFb_" id="7Y21hZBa5ur" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getTutorialDirectory" />
+      <node concept="3clFbS" id="7Y21hZBa5uu" role="3clF47" />
+      <node concept="3Tmbuc" id="7Y21hZBa5og" role="1B3o_S" />
+      <node concept="17QB3L" id="7Y21hZBa5Dr" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="7Y21hZBa5H6" role="jymVt" />
+    <node concept="3clFb_" id="7Y21hZBa4Dk" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="actionPerformed" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3Tm1VV" id="7Y21hZBa4Dl" role="1B3o_S" />
+      <node concept="3cqZAl" id="7Y21hZBa4Dm" role="3clF45" />
+      <node concept="37vLTG" id="7Y21hZBa4Dn" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="7Y21hZBa4Do" role="1tU5fm">
+          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7Y21hZBa4Dp" role="3clF47">
+        <node concept="3cpWs8" id="7Y21hZBa4Dq" role="3cqZAp">
+          <node concept="3cpWsn" id="7Y21hZBa4Dr" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="projectFile" />
+            <node concept="17QB3L" id="7Y21hZBa4Ds" role="1tU5fm" />
+            <node concept="3cpWs3" id="7Y21hZBa4Dt" role="33vP2m">
+              <node concept="3cpWs3" id="7Y21hZBa4Du" role="3uHU7B">
+                <node concept="2YIFZM" id="7Y21hZBa4Dv" role="3uHU7B">
+                  <ref role="37wK5l" to="bd8o:~PathManager.getHomePath()" resolve="getHomePath" />
+                  <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
+                </node>
+                <node concept="10M0yZ" id="7Y21hZBa4Dw" role="3uHU7w">
+                  <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                  <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                </node>
+              </node>
+              <node concept="1rXfSq" id="7Y21hZBa67U" role="3uHU7w">
+                <ref role="37wK5l" node="7Y21hZBa5ur" resolve="getTutorialDirectory" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7Y21hZBa4Dy" role="3cqZAp">
+          <node concept="3cpWsn" id="7Y21hZBa4Dz" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="currentProject" />
+            <node concept="3uibUv" id="7Y21hZBa4D$" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="7Y21hZBa4D_" role="33vP2m">
+              <node concept="10M0yZ" id="7Y21hZBa4DA" role="2Oq$k0">
+                <ref role="3cqZAo" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+                <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
+              </node>
+              <node concept="liA8E" id="7Y21hZBa4DB" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext)" resolve="getData" />
+                <node concept="2OqwBi" id="7Y21hZBa4DC" role="37wK5m">
+                  <node concept="37vLTw" id="7Y21hZBa4DD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Y21hZBa4Dn" resolve="event" />
+                  </node>
+                  <node concept="liA8E" id="7Y21hZBa4DE" role="2OqNvi">
+                    <ref role="37wK5l" to="qkt:~AnActionEvent.getDataContext()" resolve="getDataContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7Y21hZBa4DF" role="3cqZAp">
+          <node concept="3cpWsn" id="7Y21hZBa4DG" role="3cpWs9">
+            <property role="TrG5h" value="tutorialDir" />
+            <node concept="3uibUv" id="7Y21hZBa4DH" role="1tU5fm">
+              <ref role="3uigEE" to="jlff:~VirtualFile" resolve="VirtualFile" />
+            </node>
+            <node concept="2OqwBi" id="7Y21hZBa4DI" role="33vP2m">
+              <node concept="2YIFZM" id="7Y21hZBa4DJ" role="2Oq$k0">
+                <ref role="1Pybhc" to="jlff:~LocalFileSystem" resolve="LocalFileSystem" />
+                <ref role="37wK5l" to="jlff:~LocalFileSystem.getInstance()" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="7Y21hZBa4DK" role="2OqNvi">
+                <ref role="37wK5l" to="jlff:~LocalFileSystem.findFileByIoFile(java.io.File)" resolve="findFileByIoFile" />
+                <node concept="2ShNRf" id="7Y21hZBa4DL" role="37wK5m">
+                  <node concept="1pGfFk" id="7Y21hZBa4DM" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="7Y21hZBa4DN" role="37wK5m">
+                      <ref role="3cqZAo" node="7Y21hZBa4Dr" resolve="projectFile" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7Y21hZBa4DO" role="3cqZAp">
+          <node concept="3clFbS" id="7Y21hZBa4DP" role="3clFbx">
+            <node concept="3cpWs8" id="7Y21hZBa4DQ" role="3cqZAp">
+              <node concept="3cpWsn" id="7Y21hZBa4DR" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="filePath" />
+                <node concept="17QB3L" id="7Y21hZBa4DS" role="1tU5fm" />
+                <node concept="2OqwBi" id="7Y21hZBa4DT" role="33vP2m">
+                  <node concept="37vLTw" id="7Y21hZBa4DU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7Y21hZBa4DG" resolve="tutorialDir" />
+                  </node>
+                  <node concept="liA8E" id="7Y21hZBa4DV" role="2OqNvi">
+                    <ref role="37wK5l" to="jlff:~VirtualFile.getPath()" resolve="getPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7Y21hZBa4DW" role="3cqZAp">
+              <node concept="3cpWsn" id="7Y21hZBa4DX" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="project" />
+                <node concept="3uibUv" id="7Y21hZBa4DY" role="1tU5fm">
+                  <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+                </node>
+                <node concept="2YIFZM" id="7Y21hZBa4DZ" role="33vP2m">
+                  <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.lang.String,com.intellij.openapi.project.Project,boolean)" resolve="openProject" />
+                  <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
+                  <node concept="37vLTw" id="7Y21hZBa4E0" role="37wK5m">
+                    <ref role="3cqZAo" node="7Y21hZBa4DR" resolve="filePath" />
+                  </node>
+                  <node concept="37vLTw" id="7Y21hZBa4E1" role="37wK5m">
+                    <ref role="3cqZAo" node="7Y21hZBa4Dz" resolve="currentProject" />
+                  </node>
+                  <node concept="3clFbT" id="7Y21hZBa4E2" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="7Y21hZBa4E3" role="3cqZAp">
+              <node concept="3y3z36" id="7Y21hZBa4E4" role="3clFbw">
+                <node concept="37vLTw" id="7Y21hZBa4E5" role="3uHU7B">
+                  <ref role="3cqZAo" node="7Y21hZBa4DX" resolve="project" />
+                </node>
+                <node concept="10Nm6u" id="7Y21hZBa4E6" role="3uHU7w" />
+              </node>
+              <node concept="3clFbS" id="7Y21hZBa4E7" role="3clFbx">
+                <node concept="3clFbF" id="7Y21hZBa4E8" role="3cqZAp">
+                  <node concept="2OqwBi" id="7Y21hZBa4E9" role="3clFbG">
+                    <node concept="2YIFZM" id="7Y21hZBa4Ea" role="2Oq$k0">
+                      <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
+                      <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
+                      <node concept="37vLTw" id="7Y21hZBa4Eb" role="37wK5m">
+                        <ref role="3cqZAo" node="7Y21hZBa4DX" resolve="project" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7Y21hZBa4Ec" role="2OqNvi">
+                      <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.setBaseDir(com.intellij.openapi.vfs.VirtualFile)" resolve="setBaseDir" />
+                      <node concept="2OqwBi" id="7Y21hZBa4Ed" role="37wK5m">
+                        <node concept="37vLTw" id="7Y21hZBa4Ee" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7Y21hZBa4DX" resolve="project" />
+                        </node>
+                        <node concept="liA8E" id="7Y21hZBa4Ef" role="2OqNvi">
+                          <ref role="37wK5l" to="4nm9:~Project.getBaseDir()" resolve="getBaseDir" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="7Y21hZBa4Eg" role="3clFbw">
+            <node concept="3y3z36" id="7Y21hZBa4Eh" role="3uHU7B">
+              <node concept="10Nm6u" id="7Y21hZBa4Ei" role="3uHU7w" />
+              <node concept="37vLTw" id="7Y21hZBa4Ej" role="3uHU7B">
+                <ref role="3cqZAo" node="7Y21hZBa4DG" resolve="tutorialDir" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7Y21hZBa4Ek" role="3uHU7w">
+              <node concept="37vLTw" id="7Y21hZBa4El" role="2Oq$k0">
+                <ref role="3cqZAo" node="7Y21hZBa4DG" resolve="tutorialDir" />
+              </node>
+              <node concept="liA8E" id="7Y21hZBa4Em" role="2OqNvi">
+                <ref role="37wK5l" to="jlff:~VirtualFile.exists()" resolve="exists" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="7Y21hZBa4En" role="9aQIa">
+            <node concept="3clFbS" id="7Y21hZBa4Eo" role="9aQI4">
+              <node concept="RRSsy" id="7Y21hZBa4Ep" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="3cpWs3" id="7Y21hZBa4Eq" role="RRSoy">
+                  <node concept="37vLTw" id="7Y21hZBa4Er" role="3uHU7w">
+                    <ref role="3cqZAo" node="7Y21hZBa4DG" resolve="tutorialDir" />
+                  </node>
+                  <node concept="Xl_RD" id="7Y21hZBa4Es" role="3uHU7B">
+                    <property role="Xl_RC" value="tutorial dir not found: " />
+                  </node>
+                </node>
+              </node>
+              <node concept="RRSsy" id="7Y21hZBa4Et" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="3cpWs3" id="7Y21hZBa4Eu" role="RRSoy">
+                  <node concept="37vLTw" id="7Y21hZBa4Ev" role="3uHU7w">
+                    <ref role="3cqZAo" node="7Y21hZBa4Dr" resolve="projectFile" />
+                  </node>
+                  <node concept="Xl_RD" id="7Y21hZBa4Ew" role="3uHU7B">
+                    <property role="Xl_RC" value="project file was: " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Y21hZBa4D0" role="jymVt" />
+    <node concept="3Tm1VV" id="7Y21hZBa4tl" role="1B3o_S" />
+    <node concept="3uibUv" id="7Y21hZBa4Bn" role="1zkMxy">
+      <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
+    </node>
+  </node>
+  <node concept="312cEu" id="7Y21hZBa7gy">
+    <property role="TrG5h" value="OpenFastenSafetyTutorialProjectAction" />
+    <node concept="2tJIrI" id="7Y21hZBa7gz" role="jymVt" />
+    <node concept="Wx3nA" id="7Y21hZBa7g$" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="TUTORIAL_HOME" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="7Y21hZBa7g_" role="1B3o_S" />
+      <node concept="17QB3L" id="7Y21hZBa7gA" role="1tU5fm" />
+      <node concept="Xl_RD" id="7Y21hZBa7gB" role="33vP2m">
+        <property role="Xl_RC" value="tutorial-safety" />
+      </node>
+      <node concept="NWlO9" id="7Y21hZBa7gC" role="lGtFl">
+        <property role="NWlVz" value="The directory in the FASTEN installation where the safety-tutorial is located." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Y21hZBa7gD" role="jymVt" />
+    <node concept="3clFb_" id="7Y21hZBa7gE" role="jymVt">
+      <property role="TrG5h" value="getTutorialDirectory" />
+      <node concept="3Tmbuc" id="7Y21hZBa7gF" role="1B3o_S" />
+      <node concept="17QB3L" id="7Y21hZBa7gG" role="3clF45" />
+      <node concept="3clFbS" id="7Y21hZBa7gH" role="3clF47">
+        <node concept="3clFbF" id="7Y21hZBa7gI" role="3cqZAp">
+          <node concept="37vLTw" id="7Y21hZBa7gJ" role="3clFbG">
+            <ref role="3cqZAo" node="7Y21hZBa7g$" resolve="TUTORIAL_HOME" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Y21hZBa7gK" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="7Y21hZBa7gL" role="1B3o_S" />
+    <node concept="3uibUv" id="7Y21hZBa7gM" role="1zkMxy">
+      <ref role="3uigEE" node="7Y21hZBa4tk" resolve="OpenTutorialProjectActionBase" />
     </node>
   </node>
 </model>
