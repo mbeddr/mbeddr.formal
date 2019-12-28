@@ -3274,6 +3274,11 @@
             <ref role="3bR37D" to="90a9:7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7Y21hZBaabC" role="3bR37C">
+          <node concept="3bR9La" id="7Y21hZBaabD" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6Kf5KB6_1El" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4550,6 +4555,11 @@
         <node concept="1SiIV0" id="7he_lUur_M8" role="3bR37C">
           <node concept="3bR9La" id="7he_lUur_M9" role="1SiIV1">
             <ref role="3bR37D" node="7he_lUurzLh" resolve="com.mbeddr.formal.safety.gsn.ext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Y21hZBaacS" role="3bR37C">
+          <node concept="3bR9La" id="7Y21hZBaacT" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
           </node>
         </node>
       </node>
