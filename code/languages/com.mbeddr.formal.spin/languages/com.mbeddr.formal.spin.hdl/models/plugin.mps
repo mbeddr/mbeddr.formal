@@ -22,11 +22,11 @@
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="eats" ref="r:3654a487-2c9f-407a-a51c-9aa5b4da2208(com.mbeddr.formal.spin.plugin)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
-    <import index="nx7s" ref="r:28ea8bb4-a91f-4d1c-a8ea-ef6d7a5d8f2d(com.mbeddr.formal.spin.hdl.generator.utils)" />
     <import index="y6ji" ref="r:8ddb424f-ead9-4d6e-9e90-7a7d026ff9c2(com.mbeddr.formal.spin.hdl.structure)" />
     <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="cse1" ref="r:7baa2fe4-b0d3-4d54-97d7-525f40bf0256(com.mbeddr.formal.spin.hdl.utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
@@ -491,9 +491,9 @@
                             <node concept="Xl_RD" id="26dfgZlXh0O" role="3uHU7w">
                               <property role="Xl_RC" value=".pml" />
                             </node>
-                            <node concept="2YIFZM" id="26dfgZlXh0P" role="3uHU7B">
-                              <ref role="1Pybhc" to="nx7s:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
-                              <ref role="37wK5l" to="nx7s:26dfgZlX4Uw" resolve="fileName" />
+                            <node concept="2YIFZM" id="7he_lUup2Cc" role="3uHU7B">
+                              <ref role="37wK5l" to="cse1:26dfgZlX4Uw" resolve="fileName" />
+                              <ref role="1Pybhc" to="cse1:1ZejHLlPuaA" resolve="SpinHDLNamingUtils" />
                               <node concept="37vLTw" id="26dfgZlXkiU" role="37wK5m">
                                 <ref role="3cqZAo" node="26dfgZlXkiQ" resolve="hm" />
                               </node>

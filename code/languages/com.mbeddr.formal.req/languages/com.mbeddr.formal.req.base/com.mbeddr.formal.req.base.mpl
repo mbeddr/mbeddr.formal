@@ -54,7 +54,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1919c723-b60b-4592-9318-9ce96d91da44(de.itemis.mps.editor.celllayout)</dependency>
-    <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:1919c723-b60b-4592-9318-9ce96d91da44:de.itemis.mps.editor.celllayout" version="0" />

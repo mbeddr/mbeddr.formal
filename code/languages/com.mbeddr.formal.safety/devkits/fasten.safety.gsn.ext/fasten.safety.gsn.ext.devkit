@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="com.mbeddr.formal.safety.gsn.base.devkit" uuid="b64463ba-ae31-4cf7-be7b-afc13cab4daa">
-  <exported-language name="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" />
+<dev-kit name="fasten.safety.gsn.ext" uuid="7466bc49-e775-4df7-a9f3-e383173b2eee">
   <exported-language name="6464626a-ab04-4051-908e-5e8dc75acd78(com.mbeddr.formal.safety.gsn.ext)" />
   <exported-language name="f465db4c-63d4-40ef-afda-acd713dc19a1(com.mbeddr.formal.safety.gsn.patterns)" />
   <exported-language name="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba(com.mbeddr.formal.safety.gsn.req)" />
-  <exported-language name="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" />
+  <extendedDevKits>
+    <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
+  </extendedDevKits>
 </dev-kit>
 

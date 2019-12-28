@@ -2,7 +2,7 @@
 <model ref="r:29b11bdf-9484-4bfd-9769-910b3dd25e7f(com.mbeddr.formal.spin.sandbox.smoke)">
   <persistence version="9" />
   <languages>
-    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(mbeddr.formal.spin)" />
+    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(fasten.spin)" />
   </languages>
   <imports />
   <registry>

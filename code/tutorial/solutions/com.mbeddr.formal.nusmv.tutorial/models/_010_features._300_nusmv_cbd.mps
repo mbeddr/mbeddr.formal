@@ -2,7 +2,7 @@
 <model ref="r:d37bd9b7-40a1-410a-8148-61e2d84bead3(_010_features._300_nusmv_cbd)">
   <persistence version="9" />
   <languages>
-    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
+    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
   <registry>
@@ -3088,13 +3088,13 @@
         </node>
       </node>
       <node concept="3Ug1AV" id="57ROGn93a$0" role="3UgYNK">
-        <property role="TrG5h" value="link" />
+        <property role="TrG5h" value="communication_bus" />
         <node concept="3Ug1AZ" id="57ROGn93azY" role="3Ug1A_">
           <ref role="3Ug1AY" node="57ROGn92W1w" resolve="Communication_Link" />
         </node>
       </node>
       <node concept="3Ug1AV" id="57ROGn93a$m" role="3UgYNK">
-        <property role="TrG5h" value="device" />
+        <property role="TrG5h" value="airbag_device" />
         <node concept="3Ug1AZ" id="57ROGn93a$k" role="3Ug1A_">
           <ref role="3Ug1AY" node="57ROGn930qr" resolve="Device" />
         </node>
@@ -3120,7 +3120,7 @@
         <node concept="3Ug1GC" id="57ROGn93aA1" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn92W4o" resolve="in_message" />
           <node concept="3Ug1GJ" id="57ROGn93aA0" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
       </node>
@@ -3134,7 +3134,7 @@
         <node concept="3Ug1GC" id="57ROGn93aBg" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn92W4W" resolve="in_Counter" />
           <node concept="3Ug1GJ" id="57ROGn93aBf" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
       </node>
@@ -3145,7 +3145,7 @@
         <node concept="3Ug1GC" id="57ROGn93aBo" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn92W66" resolve="fault_corruption" />
           <node concept="3Ug1GJ" id="57ROGn93aBp" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
       </node>
@@ -3156,7 +3156,7 @@
         <node concept="3Ug1GC" id="57ROGn93aCm" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn92W6Q" resolve="fault_deletion" />
           <node concept="3Ug1GJ" id="57ROGn93aCn" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
       </node>
@@ -3164,13 +3164,13 @@
         <node concept="3Ug1GC" id="57ROGn93aFc" role="3Ug1$A">
           <ref role="3Ug1Ha" node="57ROGn92W7E" resolve="NewDataAvailable" />
           <node concept="3Ug1GJ" id="57ROGn93aFb" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
         <node concept="3Ug1GC" id="57ROGn93aFi" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn930$H" resolve="NewDataAvailable" />
           <node concept="3Ug1GJ" id="57ROGn93aFh" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="device" />
+            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="airbag_device" />
           </node>
         </node>
       </node>
@@ -3178,13 +3178,13 @@
         <node concept="3Ug1GC" id="57ROGn93aHz" role="3Ug1$A">
           <ref role="3Ug1Ha" node="57ROGn92W88" resolve="ValidCRC" />
           <node concept="3Ug1GJ" id="57ROGn93aHy" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
         <node concept="3Ug1GC" id="57ROGn93aHD" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn930$N" resolve="ValidCRC" />
           <node concept="3Ug1GJ" id="57ROGn93aHC" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="device" />
+            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="airbag_device" />
           </node>
         </node>
       </node>
@@ -3192,13 +3192,13 @@
         <node concept="3Ug1GC" id="57ROGn93aKe" role="3Ug1$A">
           <ref role="3Ug1Ha" node="57ROGn92W8E" resolve="out_message" />
           <node concept="3Ug1GJ" id="57ROGn93aKd" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
         <node concept="3Ug1GC" id="57ROGn93aKk" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn930_s" resolve="message" />
           <node concept="3Ug1GJ" id="57ROGn93aKj" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="device" />
+            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="airbag_device" />
           </node>
         </node>
       </node>
@@ -3206,13 +3206,13 @@
         <node concept="3Ug1GC" id="57ROGn93aKq" role="3Ug1$A">
           <ref role="3Ug1Ha" node="57ROGn92W9m" resolve="out_Counter" />
           <node concept="3Ug1GJ" id="57ROGn93aKr" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="link" />
+            <ref role="3Ug1GI" node="57ROGn93a$0" resolve="communication_bus" />
           </node>
         </node>
         <node concept="3Ug1GC" id="57ROGn93aKs" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn930$J" resolve="ReceivedCounter" />
           <node concept="3Ug1GJ" id="57ROGn93aKt" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="device" />
+            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="airbag_device" />
           </node>
         </node>
       </node>
@@ -3223,7 +3223,7 @@
         <node concept="3Ug1GC" id="57ROGn93aM1" role="3Ug1_r">
           <ref role="3Ug1Ha" node="57ROGn930Cg" resolve="MaxDeltaCounterInit" />
           <node concept="3Ug1GJ" id="57ROGn93aM2" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="device" />
+            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="airbag_device" />
           </node>
         </node>
       </node>
@@ -3231,7 +3231,7 @@
         <node concept="3Ug1GC" id="57ROGn93aPF" role="3Ug1$A">
           <ref role="3Ug1Ha" node="57ROGn930Ds" resolve="exploded" />
           <node concept="3Ug1GJ" id="57ROGn93aPD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="device" />
+            <ref role="3Ug1GI" node="57ROGn93a$m" resolve="airbag_device" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="57ROGn93aPN" role="3Ug1_r">
@@ -3345,10 +3345,6 @@
             <property role="gqqTX" value="87.0" />
             <property role="gqqTy" value="30.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-            <node concept="1pa3jb" id="57ROGn93aQo" role="1pap1a">
-              <property role="1pa3iD" value="default" />
-              <property role="2gRgW$" value="1610612734" />
-            </node>
           </node>
         </node>
         <node concept="37mRIm" id="57ROGn93aQq" role="37mRID">
@@ -3359,38 +3355,26 @@
             <property role="gqqTX" value="143.0" />
             <property role="gqqTy" value="30.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-            <node concept="1pa3jb" id="57ROGn93aQr" role="1pap1a">
-              <property role="1pa3iD" value="default" />
-              <property role="2gRgW$" value="1610612734" />
-            </node>
           </node>
         </node>
         <node concept="37mRIm" id="57ROGn93aQt" role="37mRID">
           <property role="37mO49" value="box_5906421183243134455" />
           <node concept="gqqVs" id="57ROGn93aQs" role="37mO4d">
-            <property role="gqqTZ" value="171.0" />
+            <property role="gqqTZ" value="167.1666717529297" />
             <property role="gqqTW" value="201.55673828125" />
             <property role="gqqTX" value="127.0" />
             <property role="gqqTy" value="30.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-            <node concept="1pa3jb" id="57ROGn93aQu" role="1pap1a">
-              <property role="1pa3iD" value="default" />
-              <property role="2gRgW$" value="1610612734" />
-            </node>
           </node>
         </node>
         <node concept="37mRIm" id="57ROGn93aQw" role="37mRID">
           <property role="37mO49" value="box_5906421183243134500" />
           <node concept="gqqVs" id="57ROGn93aQv" role="37mO4d">
-            <property role="gqqTZ" value="407.0" />
+            <property role="gqqTZ" value="361.0" />
             <property role="gqqTW" value="288.1025592494756" />
             <property role="gqqTX" value="167.0" />
             <property role="gqqTy" value="30.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-            <node concept="1pa3jb" id="57ROGn93aQx" role="1pap1a">
-              <property role="1pa3iD" value="default" />
-              <property role="2gRgW$" value="1610612734" />
-            </node>
           </node>
         </node>
         <node concept="37mRIm" id="57ROGn93aQz" role="37mRID">
@@ -3401,10 +3385,6 @@
             <property role="gqqTX" value="79.0" />
             <property role="gqqTy" value="30.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-            <node concept="1pa3jb" id="57ROGn93aQ$" role="1pap1a">
-              <property role="1pa3iD" value="default" />
-              <property role="2gRgW$" value="536870911" />
-            </node>
           </node>
         </node>
         <node concept="37mRIm" id="57ROGn93aQA" role="37mRID">

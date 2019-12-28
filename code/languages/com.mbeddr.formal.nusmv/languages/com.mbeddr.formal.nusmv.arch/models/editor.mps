@@ -34,6 +34,8 @@
     <import index="x4mf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus(MPS.Editor/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="wfnd" ref="r:5f5edb09-c9b1-47da-a374-00a0a908694a(com.mbeddr.formal.base.arch.editor)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="sn11" ref="r:836426ab-a6f4-4fa3-9a9c-34c02ed6ab5d(jetbrains.mps.ide.icons)" />
     <import index="irze" ref="r:afe10199-b53f-473f-86e1-bb9b9bb07417(com.mbeddr.formal.nusmv.arch.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
@@ -2569,6 +2571,35 @@
                         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
+                    <node concept="3clFb_" id="WKGDODRgeY" role="jymVt">
+                      <property role="TrG5h" value="getIcon" />
+                      <node concept="3uibUv" id="WKGDODRgeZ" role="3clF45">
+                        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+                      </node>
+                      <node concept="3Tm1VV" id="WKGDODRgf0" role="1B3o_S" />
+                      <node concept="2AHcQZ" id="WKGDODRgf1" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+                      </node>
+                      <node concept="3clFbS" id="WKGDODRgf9" role="3clF47">
+                        <node concept="3clFbF" id="WKGDODRkKe" role="3cqZAp">
+                          <node concept="2OqwBi" id="7eHFHBMn8$$" role="3clFbG">
+                            <node concept="2YIFZM" id="7eHFHBMn8$_" role="2Oq$k0">
+                              <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                              <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                            </node>
+                            <node concept="liA8E" id="7eHFHBMn8$A" role="2OqNvi">
+                              <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
+                              <node concept="35c_gC" id="WKGDODRn$f" role="37wK5m">
+                                <ref role="35c_gD" to="rvcq:5HwHP1Odz4y" resolve="Output" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2AHcQZ" id="WKGDODRgfa" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
+                    </node>
                     <node concept="3clFb_" id="5HwHP1OdM45" role="jymVt">
                       <property role="1EzhhJ" value="false" />
                       <property role="TrG5h" value="execute" />
@@ -2782,6 +2813,35 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="5HwHP1OeJAx" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
+                    </node>
+                    <node concept="3clFb_" id="WKGDODRo1$" role="jymVt">
+                      <property role="TrG5h" value="getIcon" />
+                      <node concept="3uibUv" id="WKGDODRo1_" role="3clF45">
+                        <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+                      </node>
+                      <node concept="3Tm1VV" id="WKGDODRo1A" role="1B3o_S" />
+                      <node concept="2AHcQZ" id="WKGDODRo1B" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+                      </node>
+                      <node concept="3clFbS" id="WKGDODRo1C" role="3clF47">
+                        <node concept="3clFbF" id="WKGDODRo1D" role="3cqZAp">
+                          <node concept="2OqwBi" id="WKGDODRo1E" role="3clFbG">
+                            <node concept="2YIFZM" id="WKGDODRo1F" role="2Oq$k0">
+                              <ref role="1Pybhc" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
+                              <ref role="37wK5l" to="sn11:5UC$YgehaLf" resolve="getInstance" />
+                            </node>
+                            <node concept="liA8E" id="WKGDODRo1G" role="2OqNvi">
+                              <ref role="37wK5l" to="sn11:192HKKPOcza" resolve="getIconFor" />
+                              <node concept="35c_gC" id="WKGDODRo1H" role="37wK5m">
+                                <ref role="35c_gD" to="gioj:6NmtaR1SULQ" resolve="ParameterDeclaration" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2AHcQZ" id="WKGDODRo1I" role="2AJF6D">
                         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
@@ -5137,8 +5197,10 @@
         </node>
       </node>
       <node concept="3clFbS" id="2mjHtwU8pdv" role="3clF47">
-        <node concept="3clFbF" id="2mjHtwU8pdy" role="3cqZAp">
-          <node concept="10Nm6u" id="2mjHtwU8pdx" role="3clFbG" />
+        <node concept="3clFbF" id="WKGDODQPHe" role="3cqZAp">
+          <node concept="37vLTw" id="WKGDODQPHd" role="3clFbG">
+            <ref role="3cqZAo" node="2mjHtwU8yZs" resolve="module" />
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="2mjHtwU8pdw" role="2AJF6D">

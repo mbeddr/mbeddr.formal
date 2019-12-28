@@ -2,7 +2,7 @@
 <model ref="r:86fc907d-b18e-4f0a-86ca-73ab0682c7a0(test.mbeddr.formal.spin._100_hdl_040_nondet_choice_testcode)">
   <persistence version="9" />
   <languages>
-    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(mbeddr.formal.spin)" />
+    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(fasten.spin)" />
   </languages>
   <imports />
   <registry>

@@ -2,7 +2,7 @@
 <model ref="r:a273873f-12da-4ae8-b569-17801a33641b(test.mbeddr.formal.nusmv.tests_ext)">
   <persistence version="9" />
   <languages>
-    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(mbeddr.formal.nusmv)" />
+    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
   <registry>

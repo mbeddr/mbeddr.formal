@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="mbeddr.formal.spin" uuid="5a232fd9-bc69-417b-bce9-56292eaa62a5">
+<dev-kit name="fasten.spin" uuid="5a232fd9-bc69-417b-bce9-56292eaa62a5">
   <exported-language name="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" />
   <exported-language name="ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)" />
   <exported-language name="80ea7e60-3c36-4583-be96-3e7d3ad3504e(com.mbeddr.formal.spin.analyses)" />
