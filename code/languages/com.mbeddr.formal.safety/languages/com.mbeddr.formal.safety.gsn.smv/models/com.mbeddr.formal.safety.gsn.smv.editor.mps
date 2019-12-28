@@ -50,6 +50,9 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
+        <property id="1221209241505" name="value" index="1lJzqX" />
+      </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
@@ -93,7 +96,6 @@
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="4307758654696938365" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_RefPresentation" flags="ig" index="1WAQ3h" />
       <concept id="4307758654696952957" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_ReferencedNode" flags="ng" index="1WAUZh" />
-      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="8428109087107030357" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_ReferenceScope" flags="ng" index="3XHNnq">
         <reference id="8428109087107339113" name="reference" index="3XGfJA" />
         <child id="1154858122099170744" name="visibleMatchingTextFunction" index="3PHfNJ" />
@@ -470,13 +472,14 @@
         <node concept="VPM3Z" id="3Ngc4zVfXEt" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVfXEu" role="3EZMnx">
           <property role="3F0ifm" value="SMV-based Spec Goal:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="3Ngc4zVfXEw" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVfXEv" role="2iSdaV" />
-      </node>
-      <node concept="3F0A7n" id="3Ngc4zVfXEw" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="3Ngc4zVfXEx" role="3EZMnx" />
       <node concept="3EZMnI" id="3Ngc4zVfXEy" role="3EZMnx">
@@ -517,6 +520,7 @@
       <node concept="3F0ifn" id="3Ngc4zVfXEL" role="3EZMnx" />
       <node concept="3F1sOY" id="3Ngc4zVfXEM" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
       </node>
       <node concept="3F0ifn" id="3Ngc4zVfXEN" role="3EZMnx" />
       <node concept="2iRkQZ" id="3Ngc4zVfXEO" role="2iSdaV" />
@@ -598,15 +602,17 @@
         <node concept="VPM3Z" id="33qt4wr6k_j" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr6k_k" role="3EZMnx">
           <property role="3F0ifm" value="NuSMV Results:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="33qt4wr6k_n" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="33qt4wr6k_l" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="33qt4wr6k_m" role="2iSdaV" />
-      <node concept="3F0A7n" id="33qt4wr6k_n" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
+      <node concept="3F0ifn" id="2iCnExZIcNi" role="3EZMnx" />
       <node concept="3F1sOY" id="33qt4wr6k_p" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
@@ -630,24 +636,25 @@
         <node concept="VPM3Z" id="33qt4wr6k_s" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr6k_t" role="3EZMnx">
           <property role="3F0ifm" value="checked date:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
         </node>
-        <node concept="l2Vlx" id="33qt4wr6k_w" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="3jaLROLuUXM" role="3EZMnx">
-        <node concept="VPM3Z" id="3jaLROLuUXO" role="3F10Kt" />
-        <node concept="3XFhqQ" id="3jaLROLv8wD" role="3EZMnx" />
         <node concept="3F0A7n" id="33qt4wr6k_u" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <property role="1$x2rV" value="unknown" />
           <ref role="1NtTu8" to="bsp8:4i__4GxssLz" resolve="dateShort" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
           <node concept="xShMh" id="33qt4wr6k_v" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="l2Vlx" id="3jaLROLuUXR" role="2iSdaV" />
+        <node concept="l2Vlx" id="33qt4wr6k_w" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="33qt4wr6k_x" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr6k_y" role="3F10Kt" />
+        <node concept="3F0ifn" id="2iCnExZISJ4" role="3EZMnx">
+          <property role="3F0ifm" value="                    " />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+        </node>
         <node concept="3F0ifn" id="33qt4wr6k_z" role="3EZMnx">
           <property role="3F0ifm" value="SUCCESS" />
           <node concept="VechU" id="33qt4wr6k_$" role="3F10Kt">
@@ -655,6 +662,9 @@
           </node>
           <node concept="Vb9p2" id="33qt4wr6k__" role="3F10Kt">
             <property role="Vbekb" value="g1_k_vY/BOLD" />
+          </node>
+          <node concept="VSNWy" id="2iCnExZId18" role="3F10Kt">
+            <property role="1lJzqX" value="14" />
           </node>
           <node concept="pkWqt" id="33qt4wr6k_A" role="pqm2j">
             <node concept="3clFbS" id="33qt4wr6k_B" role="2VODD2">
@@ -691,6 +701,9 @@
           <node concept="Vb9p2" id="33qt4wr6k_P" role="3F10Kt">
             <property role="Vbekb" value="g1_k_vY/BOLD" />
           </node>
+          <node concept="VSNWy" id="2iCnExZId8s" role="3F10Kt">
+            <property role="1lJzqX" value="14" />
+          </node>
         </node>
         <node concept="l2Vlx" id="33qt4wr6k_Q" role="2iSdaV" />
         <node concept="3F0ifn" id="33qt4wr6k_R" role="3EZMnx">
@@ -720,6 +733,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="VSNWy" id="2iCnExZId9j" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
           </node>
         </node>
       </node>
@@ -787,24 +803,25 @@
         <node concept="VPM3Z" id="33qt4wr8Tfh" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr8Tfi" role="3EZMnx">
           <property role="3F0ifm" value="SMV-based Tests Goal:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="33qt4wr8Tfk" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="33qt4wr8Tfj" role="2iSdaV" />
-      </node>
-      <node concept="3F0A7n" id="33qt4wr8Tfk" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="33qt4wr8Tfl" role="3EZMnx" />
       <node concept="3F1sOY" id="33qt4wr8Tfm" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
       </node>
-      <node concept="3F0ifn" id="33qt4wr8Tfn" role="3EZMnx" />
       <node concept="3EZMnI" id="33qt4wr8Tfo" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr8Tfp" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr8Tfq" role="3EZMnx">
           <property role="3F0ifm" value="module:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
         </node>
         <node concept="1iCGBv" id="33qt4wr8Tfr" role="3EZMnx">
           <ref role="1NtTu8" to="bsp8:4qaoH_PPf$" resolve="module" />
@@ -812,6 +829,7 @@
             <node concept="3F0A7n" id="33qt4wr8Tft" role="2wV5jI">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
             </node>
           </node>
         </node>
@@ -821,6 +839,7 @@
         <node concept="VPM3Z" id="33qt4wr8Tfw" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr8Tfx" role="3EZMnx">
           <property role="3F0ifm" value="tests:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
         </node>
         <node concept="1iCGBv" id="33qt4wr8Tfy" role="3EZMnx">
           <ref role="1NtTu8" to="bsp8:4qaoH_PPf_" resolve="tests" />
@@ -828,6 +847,7 @@
             <node concept="3F0A7n" id="33qt4wr8Tf$" role="2wV5jI">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
             </node>
           </node>
         </node>
@@ -917,7 +937,7 @@
         <node concept="VPM3Z" id="33qt4wr9tcB" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr9tcC" role="3EZMnx">
           <property role="3F0ifm" value="SMV-based Spec Context:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
         <node concept="l2Vlx" id="33qt4wr9tcD" role="2iSdaV" />
       </node>
@@ -932,6 +952,9 @@
           <node concept="VechU" id="71RA3dH$OXq" role="3F10Kt">
             <property role="Vb096" value="g1_eI4o/darkBlue" />
           </node>
+          <node concept="VSNWy" id="2iCnExZIdAV" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
         </node>
         <node concept="l2Vlx" id="71RA3dH$OVw" role="2iSdaV" />
       </node>
@@ -940,12 +963,12 @@
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
       </node>
-      <node concept="3F0ifn" id="33qt4wr9tcF" role="3EZMnx" />
-      <node concept="3F0ifn" id="33qt4wr9L4a" role="3EZMnx" />
+      <node concept="3F0ifn" id="2iCnExZIdBG" role="3EZMnx" />
       <node concept="3EZMnI" id="33qt4wr9tcG" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr9tcH" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr9tcI" role="3EZMnx">
           <property role="3F0ifm" value="SMV module:" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="1iCGBv" id="33qt4wr9tcJ" role="3EZMnx">
           <ref role="1NtTu8" to="bsp8:4qaoH_DQhi" resolve="module" />
@@ -953,6 +976,7 @@
             <node concept="3F0A7n" id="33qt4wr9tcL" role="2wV5jI">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
             </node>
           </node>
         </node>

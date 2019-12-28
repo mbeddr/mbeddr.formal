@@ -258,7 +258,9 @@
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="11dqoQ_FpSp" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="65Lrkjj21wf" role="2iSdaV" />
       </node>
@@ -287,7 +289,9 @@
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="11dqoQ_FwUr" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="65Lrkjj2ymL" role="2iSdaV" />
       </node>
@@ -317,13 +321,14 @@
         <node concept="VPM3Z" id="3Ngc4zVgJSI" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVgJSJ" role="3EZMnx">
           <property role="3F0ifm" value="A/G Refinement Check:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="3Ngc4zVgJSL" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVgJSK" role="2iSdaV" />
-      </node>
-      <node concept="3F0A7n" id="3Ngc4zVgJSL" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="3Ngc4zVgJSM" role="3EZMnx" />
       <node concept="3F1sOY" id="3Ngc4zVgJSN" role="3EZMnx">
@@ -348,13 +353,14 @@
         <node concept="VPM3Z" id="3Ngc4zVgTcp" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVgTcq" role="3EZMnx">
           <property role="3F0ifm" value="A/G Implementation Check:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="3Ngc4zVgTcs" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVgTcr" role="2iSdaV" />
-      </node>
-      <node concept="3F0A7n" id="3Ngc4zVgTcs" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="3Ngc4zVgTct" role="3EZMnx" />
       <node concept="3F1sOY" id="3Ngc4zVgTcu" role="3EZMnx">
@@ -379,13 +385,14 @@
         <node concept="VPM3Z" id="3Ngc4zVgTdz" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVgTd$" role="3EZMnx">
           <property role="3F0ifm" value="A/G Compatibility Check:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="3Ngc4zVgTdA" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVgTd_" role="2iSdaV" />
-      </node>
-      <node concept="3F0A7n" id="3Ngc4zVgTdA" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="3Ngc4zVgTdB" role="3EZMnx" />
       <node concept="3F1sOY" id="3Ngc4zVgTdC" role="3EZMnx">
@@ -410,13 +417,14 @@
         <node concept="VPM3Z" id="3Ngc4zVhb9t" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVhb9u" role="3EZMnx">
           <property role="3F0ifm" value="CBD Strategy:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="3Ngc4zVhb9w" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVhb9v" role="2iSdaV" />
-      </node>
-      <node concept="3F0A7n" id="3Ngc4zVhb9w" role="3EZMnx">
-        <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="3Ngc4zVhb9x" role="3EZMnx" />
       <node concept="2iRkQZ" id="3Ngc4zVhb9y" role="2iSdaV" />
@@ -445,11 +453,13 @@
         </node>
         <node concept="l2Vlx" id="3Ngc4zVhAzp" role="2iSdaV" />
         <node concept="3F0A7n" id="6TqMBRM7GOh" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
       </node>
       <node concept="2iRkQZ" id="3Ngc4zVhAzr" role="2iSdaV" />
+      <node concept="3F0ifn" id="2iCnExZH0xe" role="3EZMnx" />
       <node concept="3F1sOY" id="3Ngc4zVhAzt" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
@@ -474,7 +484,9 @@
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="11dqoQ_FwTz" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVhACx" role="2iSdaV" />
       </node>
@@ -505,6 +517,7 @@
         <node concept="3F0A7n" id="3Ngc4zVhIhp" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVhIhq" role="2iSdaV" />
       </node>
