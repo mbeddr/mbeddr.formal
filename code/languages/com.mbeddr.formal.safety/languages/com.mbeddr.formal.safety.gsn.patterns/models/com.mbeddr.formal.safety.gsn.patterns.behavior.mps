@@ -778,7 +778,7 @@
                     <node concept="2pJxcG" id="2sg$KXfUe70" role="2pJxcM">
                       <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
                       <node concept="Xl_RD" id="2sg$KXfUe95" role="28ntcv">
-                        <property role="Xl_RC" value="The contracts of \n sub-components satisfy \n the contract of \n parent component" />
+                        <property role="Xl_RC" value="The contracts of subcomponents refine \n the contract of \n parent component" />
                       </node>
                     </node>
                   </node>
@@ -807,7 +807,7 @@
                     <node concept="2pJxcG" id="2RlaC$P7xmI" role="2pJxcM">
                       <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
                       <node concept="Xl_RD" id="2RlaC$P7xmJ" role="28ntcv">
-                        <property role="Xl_RC" value="The preconditions \n of subcomponents \n are satisfied by \n the postconditions of \n" />
+                        <property role="Xl_RC" value="The compatibility of contract \n of subcomponents is checked" />
                       </node>
                     </node>
                   </node>
