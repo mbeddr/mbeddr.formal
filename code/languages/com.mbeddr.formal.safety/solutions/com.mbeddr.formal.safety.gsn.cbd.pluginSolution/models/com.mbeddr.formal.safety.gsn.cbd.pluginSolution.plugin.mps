@@ -217,6 +217,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3Qp9MhnlL6l" role="3cqZAp">
+          <node concept="2OqwBi" id="3Qp9MhnlLxn" role="3clFbG">
+            <node concept="37vLTw" id="3Qp9MhnlL6j" role="2Oq$k0">
+              <ref role="3cqZAo" node="CmOUmcdfCI" resolve="adapter" />
+            </node>
+            <node concept="liA8E" id="3Qp9MhnlLTj" role="2OqNvi">
+              <ref role="37wK5l" to="reb8:7mSH3Wn3Wr5" resolve="clearResults" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="72xocJViFdn" role="3cqZAp">
           <node concept="3cpWsn" id="72xocJViFdo" role="3cpWs9">
             <property role="TrG5h" value="analyzedComponent" />
