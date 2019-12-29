@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="0" />
-    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(com.mbeddr.formal.req.devkit)" />
+    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
   </languages>
   <imports>
     <import index="xtgl" ref="r:f55b42c2-771a-4828-bc62-5b64fd2520eb(_010_features._020_hazards_and_risk_analysis)" />

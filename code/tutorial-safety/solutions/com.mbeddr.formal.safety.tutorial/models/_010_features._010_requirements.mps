@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
-    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(com.mbeddr.formal.req.devkit)" />
+    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
   </languages>
   <imports />
   <registry>
