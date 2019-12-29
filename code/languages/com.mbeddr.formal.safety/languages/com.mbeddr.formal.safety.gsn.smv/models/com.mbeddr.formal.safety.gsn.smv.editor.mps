@@ -96,6 +96,7 @@
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="4307758654696938365" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_RefPresentation" flags="ig" index="1WAQ3h" />
       <concept id="4307758654696952957" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_ReferencedNode" flags="ng" index="1WAUZh" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="8428109087107030357" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_ReferenceScope" flags="ng" index="3XHNnq">
         <reference id="8428109087107339113" name="reference" index="3XGfJA" />
         <child id="1154858122099170744" name="visibleMatchingTextFunction" index="3PHfNJ" />
@@ -638,6 +639,11 @@
           <property role="3F0ifm" value="checked date:" />
           <ref role="1k5W1q" to="g35p:4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
         </node>
+        <node concept="l2Vlx" id="33qt4wr6k_w" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2iCnExZMOBu" role="3EZMnx">
+        <node concept="3XFhqQ" id="2iCnExZMOFV" role="3EZMnx" />
+        <node concept="2iRfu4" id="2iCnExZMOBv" role="2iSdaV" />
         <node concept="3F0A7n" id="33qt4wr6k_u" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <property role="1$x2rV" value="unknown" />
@@ -647,7 +653,6 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="l2Vlx" id="33qt4wr6k_w" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="33qt4wr6k_x" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr6k_y" role="3F10Kt" />

@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="30zx" ref="r:c74e2282-8641-453d-b9cc-e065e14a0117(com.mbeddr.formal.safety.req.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -56,7 +56,7 @@
         <node concept="1sVBvm" id="7L33HENdt2b" role="1sWHZn">
           <node concept="3F0A7n" id="7L33HENdt2r" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
           </node>
         </node>
       </node>
