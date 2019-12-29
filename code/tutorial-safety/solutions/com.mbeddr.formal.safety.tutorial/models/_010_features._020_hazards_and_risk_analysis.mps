@@ -107,7 +107,11 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w" />
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <property id="2392944874760387687" name="controlability" index="1a6$V8" />
+        <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
+        <property id="2392944874760387682" name="severity" index="1a6$Vd" />
+      </concept>
     </language>
   </registry>
   <node concept="1X_0jQ" id="1L4MZBxVgwF">
@@ -463,14 +467,23 @@
     <node concept="1a6Z8w" id="7L33HENb9vA" role="8gIbH">
       <property role="0lsPA" value="H01" />
       <property role="TrG5h" value="airbag does not deploy" />
+      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
     </node>
     <node concept="1a6Z8w" id="7L33HENb9vN" role="8gIbH">
       <property role="0lsPA" value="H02" />
       <property role="TrG5h" value="airbag deploys unintentionally" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
     </node>
     <node concept="1a6Z8w" id="7L33HENb9wH" role="8gIbH">
       <property role="0lsPA" value="H03" />
       <property role="TrG5h" value="airbag deploys too soon or late" />
+      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
+      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
     </node>
   </node>
 </model>
