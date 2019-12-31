@@ -5,6 +5,12 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+    <facet type="tests" />
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1164b831-8cda-44ed-89c4-3c28e36c6eea(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution)</dependency>

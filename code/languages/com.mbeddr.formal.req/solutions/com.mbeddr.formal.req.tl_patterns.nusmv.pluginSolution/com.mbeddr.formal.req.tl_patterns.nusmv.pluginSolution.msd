@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
@@ -61,7 +66,11 @@
     <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
     <module reference="fdd69818-de3d-4ebf-9ec6-17ea152db151(com.mpsbasics.docx4j.core)" version="0" />
     <module reference="71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)" version="0" />
+    <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
+    <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
+    <module reference="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" version="0" />
+    <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
