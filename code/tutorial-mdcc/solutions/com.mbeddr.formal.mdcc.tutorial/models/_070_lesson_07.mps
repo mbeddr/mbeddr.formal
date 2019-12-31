@@ -2,7 +2,7 @@
 <model ref="r:cf75c5de-e2f0-49d3-9905-7da0bfd80779(com.mbeddr.formal.mdcc.tutorial._070_lesson_07)">
   <persistence version="9" />
   <languages>
-    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(mbeddr.formal.spin)" />
+    <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(fasten.spin)" />
   </languages>
   <imports />
   <registry>
