@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">fdd69818-de3d-4ebf-9ec6-17ea152db151(com.mpsbasics.docx4j.core)</dependency>
