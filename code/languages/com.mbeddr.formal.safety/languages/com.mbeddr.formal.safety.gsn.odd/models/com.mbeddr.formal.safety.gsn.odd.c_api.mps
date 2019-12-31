@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c4255d6a-5e54-4d68-b4c9-c8d34b4aa181(com.mbeddr.formal.safety.gsn.odd.c_api)">
+<model ref="r:c4255d6a-5e54-4d68-b4c9-c8d34b4aa181(com.mbeddr.formal.safety.gsn.odd.c_api)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="ef89f137-f966-4966-a202-ab9ea26e79fe" name="com.mbeddr.formal.spin.c.core" version="0" />
