@@ -45,12 +45,6 @@
         <child id="1173175577737" name="index" index="AHEQo" />
         <child id="1173175590490" name="array" index="AHHXb" />
       </concept>
-      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
-        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
-      </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
-        <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
       <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
         <child id="1153952416686" name="body" index="2GV8ay" />
         <child id="1153952429843" name="finallyBody" index="2GVbov" />
@@ -931,31 +925,23 @@
                   </node>
                   <node concept="2OqwBi" id="5psiJWPxItJ" role="33vP2m">
                     <node concept="2OqwBi" id="7kEiJU7tLvG" role="2Oq$k0">
-                      <node concept="2OqwBi" id="ETuBV6jxSd" role="2Oq$k0">
-                        <node concept="2OqwBi" id="ETuBV6lGwa" role="2Oq$k0">
-                          <node concept="37vLTw" id="5pNvrID27Vg" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5pNvrID27Ve" resolve="builder" />
-                          </node>
-                          <node concept="liA8E" id="ETuBV6lH7s" role="2OqNvi">
-                            <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.reporting(boolean,boolean,boolean,int)" resolve="reporting" />
-                            <node concept="3clFbT" id="ETuBV6lHD9" role="37wK5m">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                            <node concept="3clFbT" id="ETuBV6lI8s" role="37wK5m">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                            <node concept="3clFbT" id="ETuBV6lJ7S" role="37wK5m">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                            <node concept="3cmrfG" id="ETuBV6lLcJ" role="37wK5m">
-                              <property role="3cmrfH" value="-1" />
-                            </node>
-                          </node>
+                      <node concept="2OqwBi" id="ETuBV6lGwa" role="2Oq$k0">
+                        <node concept="37vLTw" id="5pNvrID27Vg" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5pNvrID27Ve" resolve="builder" />
                         </node>
-                        <node concept="liA8E" id="ETuBV6jzbp" role="2OqNvi">
-                          <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.rebuildAll(boolean)" resolve="rebuildAll" />
-                          <node concept="3clFbT" id="ETuBV6jAB6" role="37wK5m">
+                        <node concept="liA8E" id="ETuBV6lH7s" role="2OqNvi">
+                          <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.reporting(boolean,boolean,boolean,int)" resolve="reporting" />
+                          <node concept="3clFbT" id="ETuBV6lHD9" role="37wK5m">
                             <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="3clFbT" id="ETuBV6lI8s" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="3clFbT" id="ETuBV6lJ7S" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="3cmrfG" id="ETuBV6lLcJ" role="37wK5m">
+                            <property role="3cmrfH" value="-1" />
                           </node>
                         </node>
                       </node>
@@ -966,7 +952,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="liA8E" id="48qyILDWhuA" role="2OqNvi">
+                    <node concept="liA8E" id="5zdbc9K_C0U" role="2OqNvi">
                       <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.create()" resolve="create" />
                     </node>
                   </node>
@@ -1188,15 +1174,38 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="5zdbc9K_LU9" role="3cqZAp">
+            <node concept="3cpWsn" id="5zdbc9K_LUa" role="3cpWs9">
+              <property role="TrG5h" value="makeServiceComponent" />
+              <node concept="3uibUv" id="5zdbc9K_LTk" role="1tU5fm">
+                <ref role="3uigEE" to="hfuk:4QUA3Sqts3M" resolve="MakeServiceComponent" />
+              </node>
+              <node concept="2OqwBi" id="5zdbc9K_LUb" role="33vP2m">
+                <node concept="37vLTw" id="5zdbc9K_LUc" role="2Oq$k0">
+                  <ref role="3cqZAo" node="47xghtTLhAO" resolve="proj" />
+                </node>
+                <node concept="liA8E" id="5zdbc9K_LUd" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getComponent(java.lang.Class)" resolve="getComponent" />
+                  <node concept="3VsKOn" id="5zdbc9K_LUe" role="37wK5m">
+                    <ref role="3VsUkX" to="hfuk:4QUA3Sqts3M" resolve="MakeServiceComponent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs8" id="1Fm2OOqLLNX" role="3cqZAp">
             <node concept="3cpWsn" id="1Fm2OOqLLNY" role="3cpWs9">
               <property role="TrG5h" value="makeService" />
               <node concept="3uibUv" id="1Fm2OOqLLNW" role="1tU5fm">
                 <ref role="3uigEE" to="hfuk:1NAY6bPd4nM" resolve="IMakeService" />
               </node>
-              <node concept="2YIFZM" id="1Fm2OOqLLNZ" role="33vP2m">
-                <ref role="1Pybhc" to="hfuk:7yGn3z4MRqM" resolve="IMakeService.INSTANCE" />
-                <ref role="37wK5l" to="hfuk:7yGn3z4MRr2" resolve="get" />
+              <node concept="2OqwBi" id="5zdbc9K_PLy" role="33vP2m">
+                <node concept="37vLTw" id="5zdbc9K_PdG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5zdbc9K_LUa" resolve="makeServiceComponent" />
+                </node>
+                <node concept="liA8E" id="5zdbc9K_QFh" role="2OqNvi">
+                  <ref role="37wK5l" to="hfuk:4QUA3SqtLoe" resolve="get" />
+                </node>
               </node>
             </node>
           </node>
@@ -1350,9 +1359,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="2AHcQZ" id="7Z4mKjkrXtc" role="2AJF6D">
-            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
           </node>
         </node>
         <node concept="NWlO9" id="7kEiJU7BUQG" role="lGtFl">
