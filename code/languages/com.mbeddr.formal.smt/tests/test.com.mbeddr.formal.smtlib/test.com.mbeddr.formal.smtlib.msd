@@ -5,6 +5,12 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+    <facet type="tests" />
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">03458680-b827-4dcd-a8ca-ad82e7bdf60e(com.mbeddr.formal.smtlib.z3.rt)</dependency>
