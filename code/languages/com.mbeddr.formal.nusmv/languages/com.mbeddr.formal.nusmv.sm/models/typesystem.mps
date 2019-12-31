@@ -2,7 +2,7 @@
 <model ref="r:65ea8972-6ed6-4a02-a60e-921519bf2e7f(com.mbeddr.formal.nusmv.sm.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -83,10 +83,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
@@ -98,6 +94,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
       </concept>
@@ -222,9 +222,6 @@
         </node>
       </node>
       <node concept="2Mj0R9" id="3UuTDIOPjZa" role="3cqZAp">
-        <node concept="3Cnw8n" id="6Kf5KB6ALPv" role="2OEOjU">
-          <ref role="QpYPw" node="6Kf5KB6A$AG" resolve="addStateVariable" />
-        </node>
         <node concept="3clFbC" id="3UuTDIOPxHp" role="2MkoU_">
           <node concept="3cmrfG" id="3UuTDIOPxJh" role="3uHU7w">
             <property role="3cmrfH" value="1" />
@@ -239,8 +236,11 @@
         <node concept="Xl_RD" id="3UuTDIOPyiD" role="2MkJ7o">
           <property role="Xl_RC" value="exactly one state declaration must be present in the VAR section" />
         </node>
-        <node concept="1YBJjd" id="3UuTDIOPyDr" role="2OEOjV">
+        <node concept="1YBJjd" id="3UuTDIOPyDr" role="1urrMF">
           <ref role="1YBMHb" node="3UuTDIOPjZ3" resolve="sms" />
+        </node>
+        <node concept="3Cnw8n" id="6Kf5KB6ALPv" role="1urrFz">
+          <ref role="QpYPw" node="6Kf5KB6A$AG" resolve="addStateVariable" />
         </node>
       </node>
       <node concept="3clFbH" id="6Kf5KB6FWc0" role="3cqZAp" />
@@ -384,7 +384,7 @@
             <node concept="Xl_RD" id="6Kf5KB6Git5" role="2MkJ7o">
               <property role="Xl_RC" value="variable must be explicitly initialized" />
             </node>
-            <node concept="2GrUjf" id="6Kf5KB6GiuX" role="2OEOjV">
+            <node concept="2GrUjf" id="6Kf5KB6GiuX" role="1urrMF">
               <ref role="2Gs0qQ" node="6Kf5KB6FYHZ" resolve="v" />
             </node>
           </node>

@@ -2,7 +2,7 @@
 <model ref="r:0d569a30-9ffd-467e-a43f-2469c1747ae5(com.mbeddr.formal.nusmv.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -143,10 +143,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
       </concept>
@@ -155,6 +151,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -488,7 +488,7 @@
             <node concept="Xl_RD" id="Kom1UADBjO" role="2MkJ7o">
               <property role="Xl_RC" value="too few actual parameters" />
             </node>
-            <node concept="1YBJjd" id="Kom1UADBkJ" role="2OEOjV">
+            <node concept="1YBJjd" id="Kom1UADBkJ" role="1urrMF">
               <ref role="1YBMHb" node="Kom1UACvwP" resolve="moduleType" />
             </node>
           </node>
@@ -529,7 +529,7 @@
             <node concept="Xl_RD" id="Kom1UADBln" role="2MkJ7o">
               <property role="Xl_RC" value="too many actual parameters" />
             </node>
-            <node concept="1YBJjd" id="Kom1UADBlo" role="2OEOjV">
+            <node concept="1YBJjd" id="Kom1UADBlo" role="1urrMF">
               <ref role="1YBMHb" node="Kom1UACvwP" resolve="moduleType" />
             </node>
           </node>
@@ -928,7 +928,7 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="25Ap4XXql4l" role="2OEOjV">
+            <node concept="2OqwBi" id="25Ap4XXql4l" role="1urrMF">
               <node concept="3622Ei" id="25Ap4XXqkSb" role="2Oq$k0" />
               <node concept="liA8E" id="25Ap4XXqlqJ" role="2OqNvi">
                 <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError()" resolve="getNodeWithError" />
@@ -1319,11 +1319,11 @@
         <node concept="Xl_RD" id="2obHvWSeNd7" role="2MkJ7o">
           <property role="Xl_RC" value="guard must not be empty" />
         </node>
-        <node concept="1YBJjd" id="2obHvWSeNjp" role="2OEOjV">
-          <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
-        </node>
-        <node concept="2OE7Q9" id="2obHvWSf9lJ" role="2OEWyd">
+        <node concept="2OE7Q9" id="2obHvWSf9lJ" role="1urrC5">
           <ref role="2OEe5H" to="gioj:6NmtaR1W9m2" resolve="guard" />
+        </node>
+        <node concept="1YBJjd" id="2obHvWSeNjp" role="1urrMF">
+          <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
         </node>
       </node>
       <node concept="2Mj0R9" id="2obHvWSeNpe" role="3cqZAp">
@@ -1341,11 +1341,11 @@
         <node concept="Xl_RD" id="2obHvWSeNpk" role="2MkJ7o">
           <property role="Xl_RC" value="value must not be empty" />
         </node>
-        <node concept="1YBJjd" id="2obHvWSeNpl" role="2OEOjV">
-          <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
-        </node>
-        <node concept="2OE7Q9" id="2obHvWSf9xY" role="2OEWyd">
+        <node concept="2OE7Q9" id="2obHvWSf9xY" role="1urrC5">
           <ref role="2OEe5H" to="gioj:6NmtaR1W9m8" resolve="value" />
+        </node>
+        <node concept="1YBJjd" id="2obHvWSeNpl" role="1urrMF">
+          <ref role="1YBMHb" node="2obHvWSeLmJ" resolve="singleCase" />
         </node>
       </node>
     </node>
@@ -1418,7 +1418,7 @@
             <node concept="Xl_RD" id="6hWVnwANh9p" role="2MkJ7o">
               <property role="Xl_RC" value="input variable cannot be part of the left side of an assignment" />
             </node>
-            <node concept="1YBJjd" id="6hWVnwANh9q" role="2OEOjV">
+            <node concept="1YBJjd" id="6hWVnwANh9q" role="1urrMF">
               <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
             </node>
           </node>
@@ -1479,7 +1479,7 @@
             <node concept="Xl_RD" id="6hWVnwANpK9" role="2MkJ7o">
               <property role="Xl_RC" value="input variable cannot be part of an init section" />
             </node>
-            <node concept="1YBJjd" id="6hWVnwANpKa" role="2OEOjV">
+            <node concept="1YBJjd" id="6hWVnwANpKa" role="1urrMF">
               <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
             </node>
           </node>
@@ -1507,7 +1507,7 @@
             <node concept="Xl_RD" id="6hWVnwANqYS" role="2MkJ7o">
               <property role="Xl_RC" value="input variable cannot be in the scope of a 'next' expression" />
             </node>
-            <node concept="1YBJjd" id="6hWVnwANqYT" role="2OEOjV">
+            <node concept="1YBJjd" id="6hWVnwANqYT" role="1urrMF">
               <ref role="1YBMHb" node="6hWVnwAJzqA" resolve="variableRef" />
             </node>
           </node>

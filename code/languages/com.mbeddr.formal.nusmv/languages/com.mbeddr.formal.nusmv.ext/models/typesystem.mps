@@ -2,7 +2,7 @@
 <model ref="r:368c6143-e13c-4d54-a3da-15c780419fe9(com.mbeddr.formal.nusmv.ext.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -109,9 +109,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
       </concept>
@@ -122,6 +119,9 @@
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1188811367543" name="jetbrains.mps.lang.typesystem.structure.ComparisonRule" flags="ig" index="3aFulz">
         <child id="1188820750135" name="anotherNode" index="3bfgSz" />
+      </concept>
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -253,7 +253,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1YBJjd" id="1txDGjXgBtj" role="2OEOjV">
+            <node concept="1YBJjd" id="1txDGjXgBtj" role="1urrMF">
               <ref role="1YBMHb" node="1txDGjXgq1p" resolve="functionMacroCall" />
             </node>
           </node>
@@ -325,16 +325,16 @@
             <node concept="Xl_RD" id="26dfgZmiNIr" role="2MkJ7o">
               <property role="Xl_RC" value="value must be statically evaluatable" />
             </node>
-            <node concept="2OqwBi" id="26dfgZmiO6O" role="2OEOjV">
+            <node concept="37vLTw" id="25dEoZdxIJ$" role="2MkoU_">
+              <ref role="3cqZAo" node="25dEoZdxy3z" resolve="staticallyEvaluatable" />
+            </node>
+            <node concept="2OqwBi" id="26dfgZmiO6O" role="1urrMF">
               <node concept="1YBJjd" id="26dfgZmiNOF" role="2Oq$k0">
                 <ref role="1YBMHb" node="26dfgZmiLJm" resolve="constantDefinition" />
               </node>
               <node concept="3TrEf2" id="26dfgZmiODq" role="2OqNvi">
                 <ref role="3Tt5mk" to="6z8w:1gJVC85EQXB" resolve="value" />
               </node>
-            </node>
-            <node concept="37vLTw" id="25dEoZdxIJ$" role="2MkoU_">
-              <ref role="3cqZAo" node="25dEoZdxy3z" resolve="staticallyEvaluatable" />
             </node>
           </node>
         </node>
@@ -859,7 +859,7 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="25Ap4XXql4l" role="2OEOjV">
+            <node concept="2OqwBi" id="25Ap4XXql4l" role="1urrMF">
               <node concept="3622Ei" id="25Ap4XXqkSb" role="2Oq$k0" />
               <node concept="liA8E" id="25Ap4XXqlqJ" role="2OqNvi">
                 <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError()" resolve="getNodeWithError" />

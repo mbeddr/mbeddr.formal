@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2dd5dace-06d5-4283-a878-7272f2df6d4b(com.mbeddr.formal.nusmv.operatorspanel)</dependency>
