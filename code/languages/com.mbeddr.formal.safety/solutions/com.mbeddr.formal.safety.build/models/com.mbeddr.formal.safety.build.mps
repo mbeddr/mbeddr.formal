@@ -1752,16 +1752,16 @@
       <property role="TrG5h" value="com.mbeddr.formal.req.devkit" />
       <node concept="3LEwk6" id="7he_lUuveoQ" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.formal.req.devkit" />
+        <property role="TrG5h" value="fasten.requirements" />
         <property role="3LESm3" value="b0ef168f-6f92-4bd0-82f3-cf0521463683" />
         <node concept="398BVA" id="7he_lUuvexg" role="3LF7KH">
           <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
           <node concept="2Ry0Ak" id="7he_lUuveUo" role="iGT6I">
             <property role="2Ry0Am" value="devkits" />
             <node concept="2Ry0Ak" id="7he_lUuvfb9" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.formal.req.devkit" />
-              <node concept="2Ry0Ak" id="7he_lUuvfrU" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.formal.req.devkit.devkit" />
+              <property role="2Ry0Am" value="fasten.requirements" />
+              <node concept="2Ry0Ak" id="4U3OABz822x" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.requirements.devkit" />
               </node>
             </node>
           </node>
