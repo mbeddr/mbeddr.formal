@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">8ffff4a3-5838-458b-8c6d-7143a3c423b7(com.mbeddr.formal.spin.hdl#2291855968617432607)</dependency>
