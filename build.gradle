@@ -68,8 +68,8 @@ ext.dependencyRepositories = [
 // Dependency versions
 // ext.mpsVersion =  '2019.1.4'
 // ext.mbeddrVersion =  '1.3.21722.0d19fb0'
-ext.mpsVersion =  '2019.2.3'
-ext.mbeddrVersion =  '[1.3,1.4]'
+ext.mpsVersion =  '2019.2.4'
+ext.mbeddrVersion =  '[2019.2,2019.3]'
 
 // Project versions
 ext.major = '1'
@@ -206,7 +206,7 @@ task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
     script new File("$buildDir/scripts/build-nusmv-languages.xml")
 }
 
-task build_fasten_distribution(type: RunAntScript, dependsOn: [build_smv_languages]) {
+task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages]) {
     script new File("$buildDir/scripts/build-fasten-distribution.xml")
 }
 

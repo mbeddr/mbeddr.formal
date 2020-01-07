@@ -419,6 +419,24 @@
       <node concept="m$_yC" id="4aeOpjl$egK" role="m$_yJ">
         <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
       </node>
+      <node concept="m$_yC" id="1Vqf1yeCDLi" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
+      <node concept="m$_yC" id="1Vqf1yeCDNS" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:1Rj3F434M3n" resolve="com.mbeddr.mpsutil.jfreechart" />
+      </node>
+      <node concept="m$_yC" id="1Vqf1yeCDQw" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
+      </node>
+      <node concept="m$_yC" id="1Vqf1yeCDTa" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
+      </node>
+      <node concept="m$_yC" id="1Vqf1yeCDVQ" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
+      </node>
+      <node concept="m$_yC" id="1Vqf1yeCDY$" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
+      </node>
       <node concept="3_J27D" id="42jqVeFkUva" role="m_cZH">
         <node concept="3Mxwew" id="42jqVeFkUvb" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.nusmv" />
@@ -1439,6 +1457,11 @@
         <node concept="1SiIV0" id="6K6DWA5Eo6o" role="3bR37C">
           <node concept="3bR9La" id="6K6DWA5Eo6p" role="1SiIV1">
             <ref role="3bR37D" to="90a9:7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Vqf1yeCDH2" role="3bR37C">
+          <node concept="3bR9La" id="1Vqf1yeCDH3" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
           </node>
         </node>
       </node>

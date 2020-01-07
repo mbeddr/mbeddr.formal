@@ -113,12 +113,12 @@
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.all" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
-      <library file="${artifacts.com.mbeddr.platform}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
+      <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons-math/org.apache.commons.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
@@ -261,7 +261,7 @@
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.all/languages/de.slisson.mps.all/de.itemis.mps.extensions.build.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons-math/org.apache.commons.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-math3-3.3/commons-math3-3.3.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-csv-1.0/commons-csv-1.0.jar" />
