@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectLibraryManager">
-    <option name="libraries">
+<project version='4'>
+  <component name='ProjectLibraryManager'>
+    <option name='libraries'>
       <map>
-        <entry key="mpsbasics">
+        <entry key='mbeddr.plattform'>
           <value>
             <Library>
-              <option name="name" value="mpsbasics" />
-              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mpsbasics" />
+              <option name='name' value='mbeddr.plattform' />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform' />
             </Library>
           </value>
         </entry>
