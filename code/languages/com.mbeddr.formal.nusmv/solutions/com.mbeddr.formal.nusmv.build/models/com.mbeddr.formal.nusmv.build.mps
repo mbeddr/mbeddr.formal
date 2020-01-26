@@ -338,7 +338,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2019-10-11" />
+            <property role="3MwjfP" value="2020-01-26" />
           </node>
         </node>
       </node>
@@ -3390,7 +3390,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20191011" />
+        <property role="hHN3Y" value="20200126" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -3398,7 +3398,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="com.mbeddr.formal.nusmv-192.SNAPSHOT" />
+            <property role="3MwjfP" value="com.mbeddr.formal.nusmv-193.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -3497,7 +3497,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2019-10-11" />
+            <property role="3MwjfP" value="2020-01-26" />
           </node>
         </node>
       </node>
