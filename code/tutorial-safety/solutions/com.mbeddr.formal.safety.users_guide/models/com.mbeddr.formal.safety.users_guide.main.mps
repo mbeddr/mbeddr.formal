@@ -5,6 +5,7 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
+    <devkit ref="053020df-6ec1-4889-9f23-34fad076140d(com.mbeddr.commenting)" />
   </languages>
   <imports>
     <import index="c3og" ref="r:03da4936-751b-48d2-80dc-ab1f2a2cdd5b(_010_features._010_requirements)" />
@@ -189,7 +190,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="2mjHtwTu9pL" role="19SJt6">
-                <property role="19SUeA" value=" - allows specification of requirements as plain natural language, using sentence templates, temporal logics templates, or SMV models" />
+                <property role="19SUeA" value=" - supports the specification of requirements as plain natural language, using sentence templates, temporal logics templates, or SMV models" />
               </node>
             </node>
           </node>
@@ -223,7 +224,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="2mjHtwTu9se" role="19SJt6">
-                <property role="19SUeA" value=" - allows the creation of plain GSN models" />
+                <property role="19SUeA" value=" - supports the creation of plain GSN models" />
               </node>
             </node>
           </node>
@@ -252,7 +253,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="4U3OABz7KRD" role="19SJt6">
-                <property role="19SUeA" value=" and allows the creation of GSN patterns, provides a set of DSL extensions of GSN which capture commonly used patterns." />
+                <property role="19SUeA" value=" and supports the creation and instantiation of GSN patterns" />
               </node>
             </node>
           </node>
@@ -281,11 +282,14 @@
                 </node>
               </node>
               <node concept="19SUe$" id="4U3OABz7KSl" role="19SJt6">
-                <property role="19SUeA" value=" and allows the integration of GSN assurance cases with formal models expressed in the stack of DSLs over SMV." />
+                <property role="19SUeA" value=" and supports the integration of GSN-based assurance cases with formal system models expressed in the stack of DSLs over SMV." />
               </node>
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1_1sxE" id="2VIqKfEJe17" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
       </node>
     </node>
     <node concept="1_1sxE" id="3slobAdyWmU" role="1_0VJ0">
@@ -343,7 +347,7 @@
         <node concept="1_0LV8" id="4U3OABz7LgN" role="1_0VJ0">
           <node concept="19SGf9" id="4U3OABz7LgO" role="1_0LWR">
             <node concept="19SUe$" id="4U3OABz7LgP" role="19SJt6">
-              <property role="19SUeA" value="Instead of writing pure text, one can use pre-defined sentence templates which capture rigorously the requirements using higher level language constructs. Inside a template (i.e. to fill in the dots), plain natural language text can be used. " />
+              <property role="19SUeA" value="Instead of writing pure text, one can use pre-defined sentence templates that capture rigorously the system requirements using higher level language constructs. Inside a template (i.e. to fill in the dots), plain natural language text can be used. " />
             </node>
           </node>
         </node>
@@ -362,7 +366,7 @@
         <node concept="1_0LV8" id="4U3OABz7Lh1" role="1_0VJ0">
           <node concept="19SGf9" id="4U3OABz7Lh2" role="1_0LWR">
             <node concept="19SUe$" id="4U3OABz7Lh3" role="19SJt6">
-              <property role="19SUeA" value="Temporal logics patterns can contain expressions which reference inputs/outputs of components. " />
+              <property role="19SUeA" value="Temporal logics patterns can contain expressions that reference inputs/outputs of components. " />
             </node>
           </node>
         </node>
@@ -429,7 +433,7 @@
       <node concept="1_0LV8" id="4U3OABz7QoW" role="1_0VJ0">
         <node concept="19SGf9" id="4U3OABz7QoX" role="1_0LWR">
           <node concept="19SUe$" id="4U3OABz7QoY" role="19SJt6">
-            <property role="19SUeA" value="FASTEN offers the possibility perform hazards analysis using STAMP and represent the list of hazards as a list." />
+            <property role="19SUeA" value="FASTEN offers the possibility to perform hazards analysis using STAMP and to model lists of hazards." />
           </node>
         </node>
       </node>
@@ -524,7 +528,7 @@
         <node concept="1_0LV8" id="4U3OABz7YAa" role="1_0VJ0">
           <node concept="19SGf9" id="4U3OABz7YAb" role="1_0LWR">
             <node concept="19SUe$" id="4U3OABz7YAc" role="19SJt6">
-              <property role="19SUeA" value="Assurance patterns are defined in catalogues and can be subsequently instantiated in assurance cases." />
+              <property role="19SUeA" value="Assurance case patterns are defined in catalogues and can be subsequently instantiated in assurance cases." />
             </node>
           </node>
         </node>
@@ -554,7 +558,7 @@
         <node concept="1_0LV8" id="4U3OABz7YAh" role="1_0VJ0">
           <node concept="19SGf9" id="4U3OABz7YAi" role="1_0LWR">
             <node concept="19SUe$" id="4U3OABz7YAj" role="19SJt6">
-              <property role="19SUeA" value="In order to enable advanced consistency checks both intrinsicly on assurance models structure themselves and between the assurance models and the system models, we capture common assurance patterns as higher-level DSL constructs. They contain specialized GSN entities (i.e. specialized goals, strategies, solutions, ...) which extend the standard ones with additional information." />
+              <property role="19SUeA" value="In order to enable advanced consistency checks both intrinsicly on assurance models structure themselves and between the assurance models and the system models, we capture common assurance patterns as higher-level DSL constructs. They contain specialized GSN entities (i.e. specialized goals, strategies, solutions, ...) that extend the standard ones with additional metadata." />
             </node>
           </node>
         </node>
