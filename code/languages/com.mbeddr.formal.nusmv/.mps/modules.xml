@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/fasten.nusmv/fasten.nusmv.devkit" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.msc/com.fasten.base.msc.mpl" folder="lang.msc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.analyses/com.mbeddr.formal.base.analyses.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.arch/com.mbeddr.formal.base.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.expressions/com.mbeddr.formal.base.expressions.mpl" folder="lang" />
@@ -21,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.tests/com.mbeddr.formal.nusmv.tests.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.verification_cases/com.mbeddr.formal.nusmv.verification_cases.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv/com.mbeddr.formal.nusmv.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.msc.sandbox/com.fasten.base.msc.sandbox.msd" folder="lang.msc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.allScripts.build/com.mbeddr.formal.allScripts.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.pluginSolution/com.mbeddr.formal.base.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.testing.utils/com.mbeddr.formal.base.testing.utils.msd" folder="lang" />
