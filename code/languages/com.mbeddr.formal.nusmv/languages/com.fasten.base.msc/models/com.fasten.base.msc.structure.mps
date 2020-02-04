@@ -13,9 +13,11 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -33,6 +35,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -40,9 +45,10 @@
   </registry>
   <node concept="1TIwiD" id="4CA5ZMJ3trC">
     <property role="EcuMT" value="5342984381957789416" />
-    <property role="TrG5h" value="MessageSequenceChart2" />
+    <property role="TrG5h" value="MessageSequenceChart" />
     <property role="34LRSv" value="MSC" />
     <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="message sequence chart" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4CA5ZMJ3trD" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -52,19 +58,22 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="objects" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4CA5ZMJ3trF" resolve="MSCObject2" />
+      <ref role="20lvS9" node="4CA5ZMJ3trF" resolve="MSCObject" />
     </node>
     <node concept="1TJgyj" id="4CA5ZMJ3tsp" role="1TKVEi">
       <property role="IQ2ns" value="5342984381957789465" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="messages" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4CA5ZMJ3trU" resolve="MSCMessage2" />
+      <ref role="20lvS9" node="5PdLXX5$HCt" resolve="ITimelineEntity" />
     </node>
   </node>
   <node concept="1TIwiD" id="4CA5ZMJ3trF">
     <property role="EcuMT" value="5342984381957789419" />
-    <property role="TrG5h" value="MSCObject2" />
+    <property role="TrG5h" value="MSCObject" />
+    <property role="34LRSv" value="MSC object" />
+    <property role="R4oN_" value="an MSC object" />
+    <property role="3GE5qa" value="objects" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4CA5ZMJ3trG" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -72,24 +81,93 @@
   </node>
   <node concept="1TIwiD" id="4CA5ZMJ3trU">
     <property role="EcuMT" value="5342984381957789434" />
-    <property role="TrG5h" value="MSCMessage2" />
-    <property role="34LRSv" value="message2" />
+    <property role="TrG5h" value="Message" />
+    <property role="34LRSv" value="message" />
+    <property role="R4oN_" value="a MSC message" />
+    <property role="3GE5qa" value="timeline" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4CA5ZMJ3wcd" role="1TKVEi">
-      <property role="IQ2ns" value="5342984381957800717" />
-      <property role="20kJfa" value="source" />
-      <ref role="20lvS9" node="4CA5ZMJ3trF" resolve="MSCObject2" />
-    </node>
-    <node concept="1TJgyj" id="4CA5ZMJ3wce" role="1TKVEi">
-      <property role="IQ2ns" value="5342984381957800718" />
-      <property role="20kJfa" value="target" />
-      <ref role="20lvS9" node="4CA5ZMJ3trF" resolve="MSCObject2" />
-    </node>
     <node concept="1TJgyj" id="4CA5ZMJ6q72" role="1TKVEi">
       <property role="IQ2ns" value="5342984381958562242" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="exp" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5PdLXX5GZty" role="1TKVEi">
+      <property role="IQ2ns" value="6723249580495075170" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="source" />
+      <ref role="20lvS9" node="5PdLXX5GZtn" resolve="IMessageEnd" />
+    </node>
+    <node concept="1TJgyj" id="5PdLXX5GZtB" role="1TKVEi">
+      <property role="IQ2ns" value="6723249580495075175" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="5PdLXX5GZtn" resolve="IMessageEnd" />
+    </node>
+    <node concept="PrWs8" id="5PdLXX5$HCu" role="PzmwI">
+      <ref role="PrY4T" node="5PdLXX5$HCt" resolve="ITimelineEntity" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5PdLXX5$HCt">
+    <property role="EcuMT" value="6723249580492904989" />
+    <property role="TrG5h" value="ITimelineEntity" />
+    <property role="3GE5qa" value="timeline" />
+  </node>
+  <node concept="1TIwiD" id="5PdLXX5$HCw">
+    <property role="EcuMT" value="6723249580492904992" />
+    <property role="TrG5h" value="EmptyTimelineEntity" />
+    <property role="34LRSv" value="empty" />
+    <property role="3GE5qa" value="timeline" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5PdLXX5$HCx" role="PzmwI">
+      <ref role="PrY4T" node="5PdLXX5$HCt" resolve="ITimelineEntity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5PdLXX5BojC">
+    <property role="EcuMT" value="6723249580493604072" />
+    <property role="TrG5h" value="State" />
+    <property role="34LRSv" value="state" />
+    <property role="3GE5qa" value="timeline" />
+    <property role="R4oN_" value="state of the system" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5PdLXX5CqRj" role="1TKVEi">
+      <property role="IQ2ns" value="6723249580493876691" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5PdLXX5BojD" role="PzmwI">
+      <ref role="PrY4T" node="5PdLXX5$HCt" resolve="ITimelineEntity" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5PdLXX5GZtn">
+    <property role="EcuMT" value="6723249580495075159" />
+    <property role="TrG5h" value="IMessageEnd" />
+    <property role="3GE5qa" value="objects" />
+  </node>
+  <node concept="1TIwiD" id="5PdLXX5GZto">
+    <property role="EcuMT" value="6723249580495075160" />
+    <property role="3GE5qa" value="objects" />
+    <property role="TrG5h" value="Environment" />
+    <property role="34LRSv" value="environment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5PdLXX5GZtp" role="PzmwI">
+      <ref role="PrY4T" node="5PdLXX5GZtn" resolve="IMessageEnd" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5PdLXX5HGha">
+    <property role="EcuMT" value="6723249580495258698" />
+    <property role="3GE5qa" value="objects" />
+    <property role="TrG5h" value="MSCObjectRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5PdLXX5HGhb" role="PzmwI">
+      <ref role="PrY4T" node="5PdLXX5GZtn" resolve="IMessageEnd" />
+    </node>
+    <node concept="1TJgyj" id="5PdLXX5HGhd" role="1TKVEi">
+      <property role="IQ2ns" value="6723249580495258701" />
+      <property role="20kJfa" value="mscObject" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4CA5ZMJ3trF" resolve="MSCObject" />
     </node>
   </node>
 </model>

@@ -9,7 +9,10 @@
     <facet type="java" />
   </facets>
   <sourcePath />
-  <languageVersions />
+  <languageVersions>
+    <language slang="l:81f6a079-965e-4523-87c3-8e6194f66585:com.fasten.base.msc" version="0" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+  </languageVersions>
   <dependencyVersions>
     <module reference="b8c41a4e-0df8-4bb0-82d1-18397b189c6c(com.fasten.base.msc.sandbox)" version="0" />
   </dependencyVersions>
