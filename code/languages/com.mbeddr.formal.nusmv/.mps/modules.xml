@@ -2,40 +2,44 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/devkits/fasten.nusmv/fasten.nusmv.devkit" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.msc/com.fasten.base.msc.mpl" folder="lang.msc" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.analyses/com.mbeddr.formal.base.analyses.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.arch/com.mbeddr.formal.base.arch.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.expressions/com.mbeddr.formal.base.expressions.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.operatorspanel/com.mbeddr.formal.base.operatorspanel.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.tabular/com.mbeddr.formal.base.tabular.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base/com.mbeddr.formal.base.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.arch/com.mbeddr.formal.nusmv.arch.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.cbd/com.mbeddr.formal.nusmv.cbd.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.ext/com.mbeddr.formal.nusmv.ext.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.importer/com.mbeddr.formal.nusmv.importer.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.operatorspanel/com.mbeddr.formal.nusmv.operatorspanel.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.sm/com.mbeddr.formal.nusmv.sm.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.source/com.mbeddr.formal.nusmv.source.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.spec.patterns/com.mbeddr.formal.nusmv.spec.patterns.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.tabular/com.mbeddr.formal.nusmv.tabular.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.tests/com.mbeddr.formal.nusmv.tests.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.verification_cases/com.mbeddr.formal.nusmv.verification_cases.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv/com.mbeddr.formal.nusmv.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.msc.sandbox/com.fasten.base.msc.sandbox.msd" folder="lang.msc" />
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.nusmv/fasten.nusmv.devkit" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.msc/com.fasten.base.msc.mpl" folder="lang.base.msc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.analyses/com.mbeddr.formal.base.analyses.mpl" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.arch/com.mbeddr.formal.base.arch.mpl" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.expressions/com.mbeddr.formal.base.expressions.mpl" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.operatorspanel/com.mbeddr.formal.base.operatorspanel.mpl" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.tabular/com.mbeddr.formal.base.tabular.mpl" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base/com.mbeddr.formal.base.mpl" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.arch/com.mbeddr.formal.nusmv.arch.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.cbd/com.mbeddr.formal.nusmv.cbd.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.ext/com.mbeddr.formal.nusmv.ext.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.importer/com.mbeddr.formal.nusmv.importer.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.operatorspanel/com.mbeddr.formal.nusmv.operatorspanel.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.sm/com.mbeddr.formal.nusmv.sm.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.source/com.mbeddr.formal.nusmv.source.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.spec.patterns/com.mbeddr.formal.nusmv.spec.patterns.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.tabular/com.mbeddr.formal.nusmv.tabular.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.tests/com.mbeddr.formal.nusmv.tests.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv.verification_cases/com.mbeddr.formal.nusmv.verification_cases.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv/com.mbeddr.formal.nusmv.mpl" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nuxmv.source/com.mbeddr.formal.nuxmv.source.mpl" folder="lang.nuxmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nuxmv/com.mbeddr.formal.nuxmv.mpl" folder="lang.nuxmv" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.msc.sandbox/com.fasten.base.msc.sandbox.msd" folder="lang.base.msc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.allScripts.build/com.mbeddr.formal.allScripts.build.msd" folder="build" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.pluginSolution/com.mbeddr.formal.base.pluginSolution.msd" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.testing.utils/com.mbeddr.formal.base.testing.utils.msd" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.tooling/com.mbeddr.formal.base.tooling.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.pluginSolution/com.mbeddr.formal.base.pluginSolution.msd" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.testing.utils/com.mbeddr.formal.base.testing.utils.msd" folder="lang.base" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.tooling/com.mbeddr.formal.base.tooling.msd" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.build/com.mbeddr.formal.nusmv.build.msd" folder="build" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.cbd.pluginSolution/com.mbeddr.formal.nusmv.cbd.pluginSolution.msd" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.importer.rt/com.mbeddr.formal.nusmv.importer.rt.msd" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.cbd.pluginSolution/com.mbeddr.formal.nusmv.cbd.pluginSolution.msd" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.importer.rt/com.mbeddr.formal.nusmv.importer.rt.msd" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nuxmv.pluginSolution/com.mbeddr.formal.nuxmv.pluginSolution.msd" folder="lang.nuxmv" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.pluginSolution/com.mbeddr.formal.rcp.pluginSolution.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.tips_and_tricks/com.mbeddr.formal.rcp.tips_and_tricks.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.tutorialActions/com.mbeddr.formal.rcp.tutorialActions.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.formal.nusmv.sandbox/com.mbeddr.formal.nusmv.sandbox.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nusmv/test.mbeddr.formal.nusmv.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nuxmv/test.mbeddr.formal.nuxmv.msd" folder="tests" />
     </projectModules>
   </component>
 </project>
