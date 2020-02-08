@@ -706,6 +706,9 @@
           <node concept="2YIFZM" id="4Hts7PYtZ_C" role="3cqZAk">
             <ref role="1Pybhc" node="4kcU3YrkdpN" resolve="NuSMVRunner" />
             <ref role="37wK5l" node="2xeYpNCeHo3" resolve="doRunNuSMV" />
+            <node concept="Xl_RD" id="5PdLXX5Qx48" role="37wK5m">
+              <property role="Xl_RC" value="nusmv" />
+            </node>
             <node concept="37vLTw" id="4Hts7PYtZ_D" role="37wK5m">
               <ref role="3cqZAo" node="4Hts7PYtZ_M" resolve="pi" />
             </node>
@@ -896,6 +899,9 @@
               <node concept="2YIFZM" id="2xeYpNCeKej" role="3cqZAk">
                 <ref role="1Pybhc" node="4kcU3YrkdpN" resolve="NuSMVRunner" />
                 <ref role="37wK5l" node="2xeYpNCeHo3" resolve="doRunNuSMV" />
+                <node concept="Xl_RD" id="5PdLXX5Qvp2" role="37wK5m">
+                  <property role="Xl_RC" value="nusmv" />
+                </node>
                 <node concept="37vLTw" id="2xeYpNCeKek" role="37wK5m">
                   <ref role="3cqZAo" node="2xeYpNCeuG$" resolve="pi" />
                 </node>
@@ -1094,6 +1100,19 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="5PdLXX5QAJe" role="3cqZAp">
+              <node concept="2OqwBi" id="5PdLXX5QBC8" role="3clFbG">
+                <node concept="37vLTw" id="5PdLXX5QAJc" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6glUKoNPED2" resolve="arguments" />
+                </node>
+                <node concept="X8dFx" id="5PdLXX5QCP7" role="2OqNvi">
+                  <node concept="10M0yZ" id="5PdLXX5QE3F" role="25WWJ7">
+                    <ref role="3cqZAo" node="5PdLXX5Q8nd" resolve="additionalArguments" />
+                    <ref role="1PxDUh" node="5PdLXX5Q6p$" resolve="NuSMVVersionSpecifics" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="6glUKoNPED8" role="3cqZAp">
               <node concept="2OqwBi" id="6glUKoNPED9" role="3clFbG">
                 <node concept="37vLTw" id="6glUKoNPEDa" role="2Oq$k0">
@@ -1129,10 +1148,23 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="5PdLXX5Qy8b" role="3cqZAp">
+              <node concept="3cpWsn" id="5PdLXX5Qy8c" role="3cpWs9">
+                <property role="TrG5h" value="executableName" />
+                <node concept="17QB3L" id="5PdLXX5QulN" role="1tU5fm" />
+                <node concept="10M0yZ" id="5PdLXX5Qy8d" role="33vP2m">
+                  <ref role="3cqZAo" node="5PdLXX5Q805" resolve="currentExecutable" />
+                  <ref role="1PxDUh" node="5PdLXX5Q6p$" resolve="NuSMVVersionSpecifics" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs6" id="6glUKoNPEDq" role="3cqZAp">
               <node concept="2YIFZM" id="6glUKoNPEDr" role="3cqZAk">
                 <ref role="1Pybhc" node="4kcU3YrkdpN" resolve="NuSMVRunner" />
                 <ref role="37wK5l" node="2xeYpNCeHo3" resolve="doRunNuSMV" />
+                <node concept="37vLTw" id="5PdLXX5Qy8e" role="37wK5m">
+                  <ref role="3cqZAo" node="5PdLXX5Qy8c" resolve="executableName" />
+                </node>
                 <node concept="37vLTw" id="6glUKoNPEDs" role="37wK5m">
                   <ref role="3cqZAo" node="6glUKoNPEDL" resolve="pi" />
                 </node>
@@ -1475,6 +1507,10 @@
       <node concept="3uibUv" id="2xeYpNCeHo5" role="3clF45">
         <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
+      <node concept="37vLTG" id="5PdLXX5Qmkp" role="3clF46">
+        <property role="TrG5h" value="nusmvExecutableName" />
+        <node concept="17QB3L" id="5PdLXX5QnDu" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="2xeYpNCeHnR" role="3clF46">
         <property role="TrG5h" value="pi" />
         <node concept="3uibUv" id="2xeYpNCeHnS" role="1tU5fm">
@@ -1492,21 +1528,12 @@
         <node concept="17QB3L" id="2xeYpNCeHnX" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="2xeYpNCeHnl" role="3clF47">
-        <node concept="3cpWs8" id="2xeYpNCeHnm" role="3cqZAp">
-          <node concept="3cpWsn" id="2xeYpNCeHnn" role="3cpWs9">
-            <property role="TrG5h" value="nusmvExecutableName" />
-            <node concept="17QB3L" id="2xeYpNCeHno" role="1tU5fm" />
-            <node concept="Xl_RD" id="2xeYpNCeHnp" role="33vP2m">
-              <property role="Xl_RC" value="nusmv" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="2xeYpNCeHnq" role="3cqZAp">
           <node concept="3clFbS" id="2xeYpNCeHnr" role="3clFbx">
             <node concept="3clFbF" id="2xeYpNCeHns" role="3cqZAp">
               <node concept="d57v9" id="2xeYpNCeHnt" role="3clFbG">
                 <node concept="37vLTw" id="2xeYpNCeHnu" role="37vLTJ">
-                  <ref role="3cqZAo" node="2xeYpNCeHnn" resolve="nusmvExecutableName" />
+                  <ref role="3cqZAo" node="5PdLXX5Qmkp" resolve="nusmvExecutableName" />
                 </node>
                 <node concept="Xl_RD" id="2xeYpNCeHnv" role="37vLTx">
                   <property role="Xl_RC" value=".exe" />
@@ -1559,7 +1586,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="2xeYpNCeHnM" role="37wK5m">
-                <ref role="3cqZAo" node="2xeYpNCeHnn" resolve="nusmvExecutableName" />
+                <ref role="3cqZAo" node="5PdLXX5Qmkp" resolve="nusmvExecutableName" />
               </node>
               <node concept="37vLTw" id="2xeYpNCeHnZ" role="37wK5m">
                 <ref role="3cqZAo" node="2xeYpNCeHnT" resolve="args" />
@@ -4135,7 +4162,7 @@
       </node>
     </node>
     <node concept="Wx3nA" id="1ZsZb$iRyj6" role="jymVt">
-      <property role="TrG5h" value="specificationMarker" />
+      <property role="TrG5h" value="specificationPrefixMarker" />
       <property role="3TUv4t" value="true" />
       <node concept="17QB3L" id="1ZsZb$iRxpf" role="1tU5fm" />
       <node concept="3Tm6S6" id="1ZsZb$iRxpe" role="1B3o_S" />
@@ -4144,7 +4171,7 @@
       </node>
     </node>
     <node concept="Wx3nA" id="59AZjhg2LU1" role="jymVt">
-      <property role="TrG5h" value="invariantMarker" />
+      <property role="TrG5h" value="invariantPrefixMarker" />
       <property role="3TUv4t" value="true" />
       <node concept="17QB3L" id="59AZjhg2LU2" role="1tU5fm" />
       <node concept="3Tm6S6" id="59AZjhg2LU3" role="1B3o_S" />
@@ -4153,7 +4180,7 @@
       </node>
     </node>
     <node concept="Wx3nA" id="4Hts7PYuFnu" role="jymVt">
-      <property role="TrG5h" value="currentBoundMarker" />
+      <property role="TrG5h" value="currentBoundPrefixMarker" />
       <property role="3TUv4t" value="true" />
       <node concept="17QB3L" id="4Hts7PYuFnv" role="1tU5fm" />
       <node concept="3Tm6S6" id="4Hts7PYuFnw" role="1B3o_S" />
@@ -4163,7 +4190,7 @@
     </node>
     <node concept="2tJIrI" id="59AZjhg2LG_" role="jymVt" />
     <node concept="Wx3nA" id="4Hts7PYsRLz" role="jymVt">
-      <property role="TrG5h" value="loopStartMarker" />
+      <property role="TrG5h" value="loopStartPrefixMarker" />
       <property role="3TUv4t" value="true" />
       <node concept="17QB3L" id="4Hts7PYsRL$" role="1tU5fm" />
       <node concept="3Tm6S6" id="4Hts7PYsRL_" role="1B3o_S" />
@@ -4193,6 +4220,19 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1ZsZb$iRrJk" role="jymVt" />
+    <node concept="Wx3nA" id="5PdLXX5Rq90" role="jymVt">
+      <property role="TrG5h" value="nuxmvLtlSpecificationPrefixMarker" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="5PdLXX5Rq91" role="1tU5fm" />
+      <node concept="3Tm6S6" id="5PdLXX5Rq92" role="1B3o_S" />
+      <node concept="Xl_RD" id="5PdLXX5Rq93" role="33vP2m">
+        <property role="Xl_RC" value="-- LTL specification" />
+      </node>
+      <node concept="NWlO9" id="5PdLXX5Rura" role="lGtFl">
+        <property role="NWlVz" value="NuXMV specifications." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5PdLXX5Ru4A" role="jymVt" />
     <node concept="2YIFZL" id="1ZsZb$iRrZ$" role="jymVt">
       <property role="TrG5h" value="liftResults" />
       <property role="od$2w" value="false" />
@@ -4398,7 +4438,7 @@
                 <node concept="liA8E" id="1ZsZb$iRwDD" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                   <node concept="37vLTw" id="1ZsZb$iRyQt" role="37wK5m">
-                    <ref role="3cqZAo" node="1ZsZb$iRyj6" resolve="specificationMarker" />
+                    <ref role="3cqZAo" node="1ZsZb$iRyj6" resolve="specificationPrefixMarker" />
                   </node>
                 </node>
               </node>
@@ -4409,7 +4449,7 @@
                       <ref role="1Pybhc" node="1ZsZb$iRrIC" resolve="NuSMVResultLifter" />
                       <ref role="37wK5l" node="59AZjhg2Pye" resolve="doCreateResult" />
                       <node concept="37vLTw" id="59AZjhg2QMk" role="37wK5m">
-                        <ref role="3cqZAo" node="1ZsZb$iRyj6" resolve="specificationMarker" />
+                        <ref role="3cqZAo" node="1ZsZb$iRyj6" resolve="specificationPrefixMarker" />
                       </node>
                       <node concept="37vLTw" id="59AZjhg2Pyn" role="37wK5m">
                         <ref role="3cqZAo" node="1ZsZb$iSlJT" resolve="line" />
@@ -4480,6 +4520,47 @@
                   </node>
                 </node>
               </node>
+              <node concept="3eNFk2" id="5PdLXX5RpWt" role="3eNLev">
+                <node concept="3clFbS" id="5PdLXX5RpWv" role="3eOfB_">
+                  <node concept="3clFbF" id="5PdLXX5RwTU" role="3cqZAp">
+                    <node concept="37vLTI" id="5PdLXX5RwTV" role="3clFbG">
+                      <node concept="2YIFZM" id="5PdLXX5RwTW" role="37vLTx">
+                        <ref role="37wK5l" node="59AZjhg2Pye" resolve="doCreateResult" />
+                        <ref role="1Pybhc" node="1ZsZb$iRrIC" resolve="NuSMVResultLifter" />
+                        <node concept="37vLTw" id="5PdLXX5RxgF" role="37wK5m">
+                          <ref role="3cqZAo" node="5PdLXX5Rq90" resolve="nuxmvLtlSpecificationPrefixMarker" />
+                        </node>
+                        <node concept="37vLTw" id="5PdLXX5RwTX" role="37wK5m">
+                          <ref role="3cqZAo" node="1ZsZb$iSlJT" resolve="line" />
+                        </node>
+                        <node concept="37vLTw" id="5PdLXX5RwTY" role="37wK5m">
+                          <ref role="3cqZAo" node="1ZsZb$iU32y" resolve="analysisStartingPoint" />
+                        </node>
+                        <node concept="37vLTw" id="5PdLXX5RwTZ" role="37wK5m">
+                          <ref role="3cqZAo" node="1ZsZb$iSBkE" resolve="res" />
+                        </node>
+                        <node concept="37vLTw" id="5PdLXX5RwU0" role="37wK5m">
+                          <ref role="3cqZAo" node="1ZsZb$iRu2f" resolve="results" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="5PdLXX5RwU1" role="37vLTJ">
+                        <ref role="3cqZAo" node="1ZsZb$iRzoH" resolve="crtRes" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5PdLXX5RwjI" role="3eO9$A">
+                  <node concept="37vLTw" id="5PdLXX5RwjJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1ZsZb$iSlJT" resolve="line" />
+                  </node>
+                  <node concept="liA8E" id="5PdLXX5RwjK" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                    <node concept="37vLTw" id="5PdLXX5RwGc" role="37wK5m">
+                      <ref role="3cqZAo" node="5PdLXX5Rq90" resolve="nuxmvLtlSpecificationPrefixMarker" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3eNFk2" id="59AZjhg2SCh" role="3eNLev">
                 <node concept="3clFbS" id="59AZjhg2SCj" role="3eOfB_">
                   <node concept="3clFbF" id="59AZjhg2XH$" role="3cqZAp">
@@ -4488,7 +4569,7 @@
                         <ref role="1Pybhc" node="1ZsZb$iRrIC" resolve="NuSMVResultLifter" />
                         <ref role="37wK5l" node="59AZjhg2Pye" resolve="doCreateResult" />
                         <node concept="37vLTw" id="59AZjhg2XWi" role="37wK5m">
-                          <ref role="3cqZAo" node="59AZjhg2LU1" resolve="invariantMarker" />
+                          <ref role="3cqZAo" node="59AZjhg2LU1" resolve="invariantPrefixMarker" />
                         </node>
                         <node concept="37vLTw" id="59AZjhg2XHB" role="37wK5m">
                           <ref role="3cqZAo" node="1ZsZb$iSlJT" resolve="line" />
@@ -4516,7 +4597,7 @@
                   <node concept="liA8E" id="59AZjhg2SKF" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                     <node concept="37vLTw" id="59AZjhg2VL6" role="37wK5m">
-                      <ref role="3cqZAo" node="59AZjhg2LU1" resolve="invariantMarker" />
+                      <ref role="3cqZAo" node="59AZjhg2LU1" resolve="invariantPrefixMarker" />
                     </node>
                   </node>
                 </node>
@@ -4545,7 +4626,7 @@
                         <property role="Xl_RC" value=" 0" />
                       </node>
                       <node concept="37vLTw" id="4Hts7PYuGWv" role="3uHU7B">
-                        <ref role="3cqZAo" node="4Hts7PYuFnu" resolve="currentBoundMarker" />
+                        <ref role="3cqZAo" node="4Hts7PYuFnu" resolve="currentBoundPrefixMarker" />
                       </node>
                     </node>
                   </node>
@@ -4568,7 +4649,7 @@
                   <node concept="liA8E" id="6xNJt7lEWqG" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                     <node concept="37vLTw" id="6xNJt7lEWrb" role="37wK5m">
-                      <ref role="3cqZAo" node="4Hts7PYuFnu" resolve="currentBoundMarker" />
+                      <ref role="3cqZAo" node="4Hts7PYuFnu" resolve="currentBoundPrefixMarker" />
                     </node>
                   </node>
                 </node>
@@ -4883,6 +4964,9 @@
             <node concept="2YIFZM" id="6bK0Ak3GRzU" role="33vP2m">
               <ref role="37wK5l" node="6bK0Ak3D59X" resolve="findOriginalNode" />
               <ref role="1Pybhc" node="6bK0Ak3D8jA" resolve="NuSMVSpecificationFinder" />
+              <node concept="37vLTw" id="5PdLXX5S2wQ" role="37wK5m">
+                <ref role="3cqZAo" node="59AZjhg2QVP" resolve="marker" />
+              </node>
               <node concept="37vLTw" id="6bK0Ak3GRzV" role="37wK5m">
                 <ref role="3cqZAo" node="59AZjhg2PxZ" resolve="analyzedSystem" />
               </node>
@@ -5297,7 +5381,7 @@
               <node concept="liA8E" id="4Hts7PYsV99" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                 <node concept="37vLTw" id="4Hts7PYsVnP" role="37wK5m">
-                  <ref role="3cqZAo" node="4Hts7PYsRLz" resolve="loopStartMarker" />
+                  <ref role="3cqZAo" node="4Hts7PYsRLz" resolve="loopStartPrefixMarker" />
                 </node>
               </node>
             </node>
@@ -9211,6 +9295,9 @@
             <node concept="NRdvd" id="6XKrTzk_15z" role="37vLTx">
               <ref role="1Pybhc" node="6XKrTzkzJpR" resolve="NuSMVSpecificationFinderWhenShowProperty" />
               <ref role="37wK5l" node="6XKrTzkzJwZ" resolve="tryToFindNodeBasedOnUserNames" />
+              <node concept="37vLTw" id="5PdLXX5SMgy" role="37wK5m">
+                <ref role="3cqZAo" node="5PdLXX5S3EJ" resolve="marker" />
+              </node>
               <node concept="37vLTw" id="6XKrTzk_15$" role="37wK5m">
                 <ref role="3cqZAo" node="6bK0Ak3Eqog" resolve="moduleContainingResult" />
               </node>
@@ -9293,6 +9380,9 @@
               <node concept="37vLTI" id="6XKrTzk$Ub6" role="3clFbG">
                 <node concept="1rXfSq" id="6XKrTzk$Ub7" role="37vLTx">
                   <ref role="37wK5l" node="6bK0Ak3Er4_" resolve="findSpec" />
+                  <node concept="37vLTw" id="5PdLXX5S5vq" role="37wK5m">
+                    <ref role="3cqZAo" node="5PdLXX5S3EJ" resolve="marker" />
+                  </node>
                   <node concept="37vLTw" id="6XKrTzk$Ub8" role="37wK5m">
                     <ref role="3cqZAo" node="6bK0Ak3Eqog" resolve="moduleContainingResult" />
                   </node>
@@ -9352,6 +9442,10 @@
       </node>
       <node concept="3Tm1VV" id="6bK0Ak3GOgP" role="1B3o_S" />
       <node concept="3Tqbb2" id="6bK0Ak3D59c" role="3clF45" />
+      <node concept="37vLTG" id="5PdLXX5S3EJ" role="3clF46">
+        <property role="TrG5h" value="marker" />
+        <node concept="17QB3L" id="5PdLXX5S4yB" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="6bK0Ak3D5q4" role="3clF46">
         <property role="TrG5h" value="analyzedSystem" />
         <node concept="3Tqbb2" id="6bK0Ak3D5q3" role="1tU5fm" />
@@ -9772,6 +9866,9 @@
             <node concept="17QB3L" id="6bK0Ak3FRfU" role="1tU5fm" />
             <node concept="1rXfSq" id="6XKrTzk_hTV" role="33vP2m">
               <ref role="37wK5l" node="6XKrTzk_h8a" resolve="extractExpressionString" />
+              <node concept="37vLTw" id="5PdLXX5S773" role="37wK5m">
+                <ref role="3cqZAo" node="5PdLXX5S5K_" resolve="marker" />
+              </node>
               <node concept="37vLTw" id="6XKrTzk_ijK" role="37wK5m">
                 <ref role="3cqZAo" node="6bK0Ak3Er5F" resolve="resultLine" />
               </node>
@@ -9983,6 +10080,10 @@
       <node concept="3Tqbb2" id="6bK0Ak3Er5C" role="3clF45">
         <ref role="ehGHo" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
       </node>
+      <node concept="37vLTG" id="5PdLXX5S5K_" role="3clF46">
+        <property role="TrG5h" value="marker" />
+        <node concept="17QB3L" id="5PdLXX5S6mb" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="6bK0Ak3Er5D" role="3clF46">
         <property role="TrG5h" value="md" />
         <node concept="3Tqbb2" id="6bK0Ak3Er5E" role="1tU5fm">
@@ -10116,6 +10217,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="5PdLXX5Tjks" role="3cqZAp">
+          <node concept="3clFbS" id="5PdLXX5Tjku" role="3clFbx">
+            <node concept="3cpWs6" id="5PdLXX5TkKh" role="3cqZAp">
+              <node concept="10Nm6u" id="5PdLXX5TlRd" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="5PdLXX5Tkb5" role="3clFbw">
+            <node concept="10Nm6u" id="5PdLXX5TkBA" role="3uHU7w" />
+            <node concept="37vLTw" id="5PdLXX5TjHq" role="3uHU7B">
+              <ref role="3cqZAo" node="6XKrTzk_dPJ" resolve="exp" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6XKrTzk_dPV" role="3cqZAp">
           <node concept="3cpWsn" id="6XKrTzk_dPW" role="3cpWs9">
             <property role="TrG5h" value="normalizedExp" />
@@ -10166,6 +10280,10 @@
             <node concept="17S1cR" id="6XKrTzkFnlN" role="2OqNvi" />
           </node>
         </node>
+      </node>
+      <node concept="37vLTG" id="5PdLXX5S7lF" role="3clF46">
+        <property role="TrG5h" value="marker" />
+        <node concept="17QB3L" id="5PdLXX5S7Oo" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="6XKrTzk_d5k" role="3clF46">
         <property role="TrG5h" value="resultLine" />
@@ -10700,6 +10818,9 @@
             <node concept="2YIFZM" id="6XKrTzk_n8H" role="33vP2m">
               <ref role="1Pybhc" node="6bK0Ak3D8jA" resolve="NuSMVSpecificationFinder" />
               <ref role="37wK5l" node="6XKrTzk_h8a" resolve="extractExpressionString" />
+              <node concept="37vLTw" id="5PdLXX5SNyI" role="37wK5m">
+                <ref role="3cqZAo" node="5PdLXX5SMF7" resolve="marker" />
+              </node>
               <node concept="37vLTw" id="6XKrTzk_n8I" role="37wK5m">
                 <ref role="3cqZAo" node="6XKrTzk$LpF" resolve="resultLine" />
               </node>
@@ -11186,6 +11307,10 @@
       <node concept="3Tqbb2" id="6XKrTzk$DYF" role="3clF45">
         <ref role="ehGHo" to="gioj:6WmpcHMKsPT" resolve="AbstractSpecSection" />
       </node>
+      <node concept="37vLTG" id="5PdLXX5SMF7" role="3clF46">
+        <property role="TrG5h" value="marker" />
+        <node concept="17QB3L" id="5PdLXX5SNcW" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="6XKrTzk_33R" role="3clF46">
         <property role="TrG5h" value="moduleOfProperty" />
         <node concept="3Tqbb2" id="6XKrTzk_38e" role="1tU5fm">
@@ -11206,6 +11331,35 @@
     <node concept="3Tm1VV" id="6XKrTzkzJpS" role="1B3o_S" />
     <node concept="NWlO9" id="6XKrTzkNk7H" role="lGtFl">
       <property role="NWlVz" value="Use the information from show_property and the given name of the spec to find the property." />
+    </node>
+  </node>
+  <node concept="312cEu" id="5PdLXX5Q6p$">
+    <property role="TrG5h" value="NuSMVVersionSpecifics" />
+    <node concept="2tJIrI" id="5PdLXX5Q6rM" role="jymVt" />
+    <node concept="Wx3nA" id="5PdLXX5Q805" role="jymVt">
+      <property role="TrG5h" value="currentExecutable" />
+      <node concept="3Tm1VV" id="5PdLXX5Q6y2" role="1B3o_S" />
+      <node concept="17QB3L" id="5PdLXX5Q7ZU" role="1tU5fm" />
+      <node concept="Xl_RD" id="5PdLXX5Q84a" role="33vP2m">
+        <property role="Xl_RC" value="nusmv" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5PdLXX5Q84W" role="jymVt" />
+    <node concept="Wx3nA" id="5PdLXX5Q8nd" role="jymVt">
+      <property role="TrG5h" value="additionalArguments" />
+      <node concept="3Tm1VV" id="5PdLXX5Q89J" role="1B3o_S" />
+      <node concept="_YKpA" id="5PdLXX5Q8iH" role="1tU5fm">
+        <node concept="17QB3L" id="5PdLXX5Q8na" role="_ZDj9" />
+      </node>
+      <node concept="2ShNRf" id="5PdLXX5Q8rw" role="33vP2m">
+        <node concept="2Jqq0_" id="5PdLXX5QbWc" role="2ShVmc">
+          <node concept="17QB3L" id="5PdLXX5QceI" role="HW$YZ" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5PdLXX5Q6p_" role="1B3o_S" />
+    <node concept="NWlO9" id="5PdLXX5Q6sC" role="lGtFl">
+      <property role="NWlVz" value="Chooses between NuSMV and nuXmv and adds nuXmv specific arguments." />
     </node>
   </node>
 </model>
