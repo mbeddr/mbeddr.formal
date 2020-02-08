@@ -33,6 +33,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
@@ -443,8 +444,30 @@
               </node>
             </node>
           </node>
+          <node concept="3F0ifn" id="6bDIMKp9bgW" role="2czzBI">
+            <property role="3F0ifm" value="press enter to add specification" />
+            <node concept="VechU" id="6bDIMKp9bgY" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5A/lightGray" />
+            </node>
+          </node>
         </node>
         <node concept="l2Vlx" id="2N7iSwG$Jbe" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6bDIMKp8I8k" role="3EZMnx">
+        <node concept="VPM3Z" id="6bDIMKp8I8m" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6bDIMKp8Ico" role="3EZMnx" />
+        <node concept="3XFhqQ" id="6bDIMKp8Ick" role="3EZMnx" />
+        <node concept="3F2HdR" id="6bDIMKp8Icw" role="3EZMnx">
+          <ref role="1NtTu8" to="z27p:6bDIMKp8BfP" resolve="subRequirements" />
+          <node concept="2iRkQZ" id="6bDIMKp8Icz" role="2czzBx" />
+          <node concept="3F0ifn" id="6bDIMKp97oq" role="2czzBI">
+            <property role="3F0ifm" value="press enter to add sub-requirement" />
+            <node concept="VechU" id="6bDIMKp9bgO" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5A/lightGray" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="6bDIMKp8I8p" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="2N7iSwG_2oI" role="3EZMnx">
         <property role="3F0ifm" value="⏎" />

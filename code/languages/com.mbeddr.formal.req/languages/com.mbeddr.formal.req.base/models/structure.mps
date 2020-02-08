@@ -213,6 +213,13 @@
     <node concept="PrWs8" id="2fmnPVfexQa" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
+    <node concept="1TJgyj" id="6bDIMKp8BfP" role="1TKVEi">
+      <property role="IQ2ns" value="7127433683365164021" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subRequirements" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2N7iSwG$_7t" resolve="Requirement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2N7iSwGA5xU">
     <property role="EcuMT" value="3226630706270066810" />
