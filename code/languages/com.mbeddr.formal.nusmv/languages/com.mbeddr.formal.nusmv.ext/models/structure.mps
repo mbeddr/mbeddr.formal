@@ -298,7 +298,7 @@
   <node concept="1TIwiD" id="6xNJt7lQHS3">
     <property role="EcuMT" value="7526568111199936003" />
     <property role="3GE5qa" value="udt.domain" />
-    <property role="TrG5h" value="IntervalType" />
+    <property role="TrG5h" value="IntervalTypeExtended" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     <node concept="1TJgyj" id="6xNJt7lQHS4" role="1TKVEi">
       <property role="IQ2ns" value="7526568111199936004" />

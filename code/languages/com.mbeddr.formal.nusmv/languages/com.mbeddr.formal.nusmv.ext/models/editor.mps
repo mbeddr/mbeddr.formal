@@ -638,7 +638,7 @@
   </node>
   <node concept="24kQdi" id="6xNJt7lQHTL">
     <property role="3GE5qa" value="udt.domain" />
-    <ref role="1XX52x" to="6z8w:6xNJt7lQHS3" resolve="IntervalType" />
+    <ref role="1XX52x" to="6z8w:6xNJt7lQHS3" resolve="IntervalTypeExtended" />
     <node concept="1iCGBv" id="6xNJt7lQHTN" role="2wV5jI">
       <ref role="1NtTu8" to="6z8w:6xNJt7lQHS4" resolve="intervalDeclaration" />
       <node concept="1sVBvm" id="6xNJt7lQHTP" role="1sWHZn">
