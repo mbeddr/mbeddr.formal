@@ -95,6 +95,22 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
+      </concept>
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
@@ -119,6 +135,9 @@
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1188811367543" name="jetbrains.mps.lang.typesystem.structure.ComparisonRule" flags="ig" index="3aFulz">
         <child id="1188820750135" name="anotherNode" index="3bfgSz" />
+      </concept>
+      <concept id="6405009306797516074" name="jetbrains.mps.lang.typesystem.structure.SubstituteTypeRule" flags="ig" index="3qnSWH">
+        <child id="7323318266641100480" name="body" index="3hT0BD" />
       </concept>
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
@@ -878,6 +897,65 @@
     <node concept="1YaCAy" id="25Ap4XXpIxa" role="1YuTPh">
       <property role="TrG5h" value="subInterval" />
       <ref role="1YaFvo" to="gioj:1ZsZb$iAmXE" resolve="IntervalType" />
+    </node>
+  </node>
+  <node concept="3qnSWH" id="5PdLXX5V3Al">
+    <property role="TrG5h" value="substituteType_IntervalType" />
+    <property role="3GE5qa" value="udt.domain" />
+    <node concept="3clFbS" id="5PdLXX5V3Am" role="3hT0BD">
+      <node concept="3cpWs6" id="5PdLXX5V3BP" role="3cqZAp">
+        <node concept="2pJPEk" id="5PdLXX5V3OF" role="3cqZAk">
+          <node concept="2pJPED" id="5PdLXX5V3OG" role="2pJPEn">
+            <ref role="2pJxaS" to="gioj:1ZsZb$iAmXE" resolve="IntervalType" />
+            <node concept="2pIpSj" id="5PdLXX5V3OH" role="2pJxcM">
+              <ref role="2pIpSl" to="gioj:1ZsZb$iAmXF" resolve="left" />
+              <node concept="36biLy" id="5PdLXX5V3OI" role="28nt2d">
+                <node concept="2OqwBi" id="5PdLXX5V3OJ" role="36biLW">
+                  <node concept="2OqwBi" id="5PdLXX5V3OK" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5PdLXX5V3OL" role="2Oq$k0">
+                      <node concept="1YBJjd" id="5PdLXX5V3OM" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5PdLXX5V3Ao" resolve="intervalType" />
+                      </node>
+                      <node concept="3TrEf2" id="5PdLXX5V3ON" role="2OqNvi">
+                        <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="intervalDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5PdLXX5V3OO" role="2OqNvi">
+                      <ref role="3Tt5mk" to="6z8w:6xNJt7lQHSO" resolve="lower" />
+                    </node>
+                  </node>
+                  <node concept="1$rogu" id="5PdLXX5V3OP" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pIpSj" id="5PdLXX5V3OQ" role="2pJxcM">
+              <ref role="2pIpSl" to="gioj:1ZsZb$iAmXI" resolve="right" />
+              <node concept="36biLy" id="5PdLXX5V3OR" role="28nt2d">
+                <node concept="2OqwBi" id="5PdLXX5V3OS" role="36biLW">
+                  <node concept="2OqwBi" id="5PdLXX5V3OT" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5PdLXX5V3OU" role="2Oq$k0">
+                      <node concept="1YBJjd" id="5PdLXX5V3OV" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5PdLXX5V3Ao" resolve="intervalType" />
+                      </node>
+                      <node concept="3TrEf2" id="5PdLXX5V3OW" role="2OqNvi">
+                        <ref role="3Tt5mk" to="6z8w:6xNJt7lQHS4" resolve="intervalDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5PdLXX5V3OX" role="2OqNvi">
+                      <ref role="3Tt5mk" to="6z8w:6xNJt7lQHSR" resolve="upper" />
+                    </node>
+                  </node>
+                  <node concept="1$rogu" id="5PdLXX5V3OY" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5PdLXX5V3Ao" role="1YuTPh">
+      <property role="TrG5h" value="intervalType" />
+      <ref role="1YaFvo" to="6z8w:6xNJt7lQHS3" resolve="IntervalTypeExtended" />
     </node>
   </node>
 </model>
