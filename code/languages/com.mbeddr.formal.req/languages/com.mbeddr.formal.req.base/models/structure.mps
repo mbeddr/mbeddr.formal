@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -315,6 +316,30 @@
       <property role="IQ2ns" value="467505803006179847" />
       <property role="20kJfa" value="req" />
       <ref role="20lvS9" node="2N7iSwG$_7t" resolve="Requirement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="HiEhrZcjOS">
+    <property role="EcuMT" value="815900398743272760" />
+    <property role="3GE5qa" value="words" />
+    <property role="TrG5h" value="Image" />
+    <property role="34LRSv" value="@image" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="HiEhrZdbTU" role="1TKVEl">
+      <property role="IQ2nx" value="815900398743502458" />
+      <property role="TrG5h" value="scale" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="HiEhrZcjOT" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="PrWs8" id="HiEhrZcYdR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="HiEhrZcmAK" role="1TKVEi">
+      <property role="IQ2ns" value="815900398743284144" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="imageFile" />
+      <ref role="20lvS9" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
     </node>
   </node>
 </model>

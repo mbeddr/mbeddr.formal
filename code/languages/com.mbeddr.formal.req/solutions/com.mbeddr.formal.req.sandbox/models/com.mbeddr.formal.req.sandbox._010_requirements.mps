@@ -29,6 +29,10 @@
         <child id="3226630706270076331" name="text" index="0nNoz" />
       </concept>
       <concept id="8734371989496578871" name="com.mbeddr.formal.req.base.structure.DataReqKind" flags="ng" index="139BCV" />
+      <concept id="815900398743272760" name="com.mbeddr.formal.req.base.structure.Image" flags="ng" index="3OoTgI">
+        <property id="815900398743502458" name="scale" index="3OpxtG" />
+        <child id="815900398743284144" name="imageFile" index="3OoW2A" />
+      </concept>
       <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
         <child id="4908298719893728789" name="spec" index="1QQeAV" />
@@ -96,6 +100,13 @@
         <child id="7842584090743387019" name="type" index="2HdssA" />
       </concept>
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -127,7 +138,6 @@
     <node concept="0lhDl" id="2N7iSwG_YJv" role="1QQeBF">
       <property role="0lsPA" value="ID_02" />
       <property role="0ke_I" value="dan" />
-      <node concept="1QQeAL" id="2N7iSwG_YJH" role="1QQeAC" />
       <node concept="19SGf9" id="2N7iSwG_YJw" role="1QQeG9">
         <node concept="19SUe$" id="2N7iSwG_YJx" role="19SJt6">
           <property role="19SUeA" value="Second requirement" />
@@ -137,7 +147,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="2N7iSwGBn_k">
-    <property role="TrG5h" value="_020_nusmv_models" />
+    <property role="TrG5h" value="_030_nusmv_models" />
     <node concept="0lhDl" id="2N7iSwGBn_l" role="1QQeBF">
       <property role="0lsPA" value="ID_11" />
       <property role="0ke_I" value="dan" />
@@ -260,7 +270,7 @@
     </node>
   </node>
   <node concept="2HdtXS" id="57$lt3aQGuw">
-    <property role="TrG5h" value="_020_nusmv_models_def" />
+    <property role="TrG5h" value="_030_nusmv_models_def" />
     <node concept="2Hdtz0" id="57$lt3aQGuy" role="2HcuB8">
       <property role="TrG5h" value="traffic_lights_controller" />
       <node concept="32O2o0" id="57$lt3aQGuz" role="2HcbjO">
@@ -308,6 +318,38 @@
     </node>
     <node concept="2SQmWS" id="57$lt3aQGv5" role="2HcuB8" />
     <node concept="2SQmWS" id="57$lt3aQGux" role="2HcuB8" />
+  </node>
+  <node concept="1QQeGf" id="HiEhrZeCXw">
+    <property role="TrG5h" value="_020_rich_text" />
+    <node concept="0lhDl" id="HiEhrZeCXE" role="1QQeBF">
+      <property role="0lsPA" value="ID_02.01" />
+      <property role="0ke_I" value="dan" />
+      <node concept="1QQeAY" id="HiEhrZeCXF" role="1QQeAC">
+        <node concept="0nzK2" id="HiEhrZeCXG" role="1QQeAV">
+          <node concept="19SGf9" id="HiEhrZeCXH" role="0nzdz">
+            <node concept="19SUe$" id="HiEhrZeCXI" role="19SJt6">
+              <property role="19SUeA" value="In plain text we can imbricate also images like e.g. the braking system of an airplane.&#10;&#10;" />
+            </node>
+            <node concept="3OoTgI" id="HiEhrZeCXJ" role="19SJt6">
+              <property role="3OpxtG" value="100" />
+              <node concept="3NXOOs" id="HiEhrZeCXK" role="3OoW2A">
+                <property role="1RwFax" value="true" />
+                <property role="3N1Lgt" value="images/landing_gear_overview.jpg" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="HiEhrZeCXL" role="19SJt6">
+              <property role="19SUeA" value="&#10;&#10;Further explanations based on the image entered." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="HiEhrZeCXM" role="1QQeG9">
+        <node concept="19SUe$" id="HiEhrZeCXN" role="19SJt6">
+          <property role="19SUeA" value="Requirement with images inside text" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="HiEhrZeCXO" role="0nOlf" />
+    </node>
   </node>
 </model>
 
