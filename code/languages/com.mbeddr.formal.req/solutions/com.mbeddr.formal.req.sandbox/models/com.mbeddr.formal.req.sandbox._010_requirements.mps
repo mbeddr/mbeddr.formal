@@ -331,14 +331,14 @@
               <property role="19SUeA" value="In plain text we can imbricate also images like e.g. the braking system of an airplane.&#10;&#10;" />
             </node>
             <node concept="3OoTgI" id="HiEhrZeCXJ" role="19SJt6">
-              <property role="3OpxtG" value="100" />
+              <property role="3OpxtG" value="70" />
               <node concept="3NXOOs" id="HiEhrZeCXK" role="3OoW2A">
                 <property role="1RwFax" value="true" />
                 <property role="3N1Lgt" value="images/landing_gear_overview.jpg" />
               </node>
             </node>
             <node concept="19SUe$" id="HiEhrZeCXL" role="19SJt6">
-              <property role="19SUeA" value="&#10;&#10;Further explanations based on the image entered." />
+              <property role="19SUeA" value="&#10;&#10;Further explanations can follow the image." />
             </node>
           </node>
         </node>
