@@ -37,38 +37,78 @@
     </language>
   </registry>
   <node concept="3_aW4k" id="4CA5ZMJ3CVI">
-    <property role="TrG5h" value="eee" />
+    <property role="TrG5h" value="_010_allowed_scenario" />
     <node concept="oRLRZ" id="5PdLXX5_Wp0" role="3_aW3_" />
-    <node concept="3_aW46" id="5PdLXX5K6Ti" role="3_aW3_">
-      <node concept="oYKel" id="5PdLXX5K6Tx" role="oZz2X">
-        <ref role="oYKei" node="4CA5ZMJ3CVO" resolve="Third2" />
-      </node>
-      <node concept="oYKel" id="5PdLXX5K6Tz" role="oZz2S">
-        <ref role="oYKei" node="4CA5ZMJ3CVJ" resolve="First2" />
-      </node>
-      <node concept="ru7O1" id="5PdLXX5K6T_" role="3_fVoY">
-        <property role="ru7PJ" value="dddddddd" />
+    <node concept="oO4cR" id="5PdLXX5UVit" role="3_aW3_">
+      <node concept="ru7O1" id="5PdLXX5UViQ" role="oV6Cc">
+        <property role="ru7PJ" value="initial" />
       </node>
     </node>
-    <node concept="oRLRZ" id="5PdLXX5K6T4" role="3_aW3_" />
-    <node concept="3_aW46" id="5PdLXX5JPq3" role="3_aW3_">
-      <node concept="oYKel" id="5PdLXX5JPqf" role="oZz2X">
+    <node concept="oRLRZ" id="5PdLXX5UVi5" role="3_aW3_" />
+    <node concept="3_aW46" id="5PdLXX5K6Ti" role="3_aW3_">
+      <node concept="oYKel" id="5PdLXX5UViS" role="oZz2X">
         <ref role="oYKei" node="4CA5ZMJ3CVJ" resolve="First2" />
       </node>
-      <node concept="oYKel" id="5PdLXX5JPqh" role="oZz2S">
+      <node concept="oYKel" id="5PdLXX5UVjo" role="oZz2S">
         <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
       </node>
+      <node concept="ru7O1" id="5PdLXX5K6T_" role="3_fVoY">
+        <property role="ru7PJ" value="start()" />
+      </node>
     </node>
-    <node concept="3_aW46" id="4CA5ZMJ6b6y" role="3_aW3_" />
+    <node concept="oRLRZ" id="5PdLXX5UVg0" role="3_aW3_" />
+    <node concept="3_aW46" id="5PdLXX5UViY" role="3_aW3_">
+      <node concept="oYKel" id="5PdLXX5UVjr" role="oZz2X">
+        <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+      </node>
+      <node concept="oYKel" id="5PdLXX5UVjt" role="oZz2S">
+        <ref role="oYKei" node="4CA5ZMJ3CVO" resolve="Third2" />
+      </node>
+      <node concept="ru7O1" id="5PdLXX5UVjv" role="3_fVoY">
+        <property role="ru7PJ" value="check_third_ok()" />
+      </node>
+    </node>
+    <node concept="3_aW46" id="4CA5ZMJ6b6y" role="3_aW3_">
+      <node concept="oYKel" id="5PdLXX5UVjx" role="oZz2X">
+        <ref role="oYKei" node="4CA5ZMJ3CVO" resolve="Third2" />
+      </node>
+      <node concept="oYKel" id="5PdLXX5UVjz" role="oZz2S">
+        <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+      </node>
+      <node concept="ru7O1" id="5PdLXX5UVj_" role="3_fVoY">
+        <property role="ru7PJ" value="third_ok" />
+      </node>
+    </node>
     <node concept="oRLRZ" id="5PdLXX5Kj1i" role="3_aW3_" />
+    <node concept="3_aW46" id="5PdLXX5UVla" role="3_aW3_">
+      <node concept="oYKel" id="5PdLXX5UVlH" role="oZz2X">
+        <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+      </node>
+      <node concept="oYKel" id="5PdLXX5UVlJ" role="oZz2S">
+        <ref role="oYKei" node="5PdLXX5zZlC" resolve="Fourth" />
+      </node>
+      <node concept="ru7O1" id="5PdLXX5UVlL" role="3_fVoY">
+        <property role="ru7PJ" value="check_forth_ready()" />
+      </node>
+    </node>
+    <node concept="3_aW46" id="5PdLXX5UVlN" role="3_aW3_">
+      <node concept="oYKel" id="5PdLXX5UVmp" role="oZz2X">
+        <ref role="oYKei" node="5PdLXX5zZlC" resolve="Fourth" />
+      </node>
+      <node concept="oYKel" id="5PdLXX5UVmr" role="oZz2S">
+        <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+      </node>
+      <node concept="ru7O1" id="5PdLXX5UVmt" role="3_fVoY">
+        <property role="ru7PJ" value="foth_check_ok()" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="5PdLXX5UVkC" role="3_aW3_" />
     <node concept="oO4cR" id="5PdLXX5BKqH" role="3_aW3_">
       <node concept="ru7O1" id="5PdLXX5CRGB" role="oV6Cc">
-        <property role="ru7PJ" value="predicate representing a condition" />
+        <property role="ru7PJ" value="second_started" />
       </node>
     </node>
     <node concept="oRLRZ" id="5PdLXX5ENvx" role="3_aW3_" />
-    <node concept="oRLRZ" id="5PdLXX5_GLv" role="3_aW3_" />
-    <node concept="3_aW46" id="5PdLXX5$HC8" role="3_aW3_" />
     <node concept="3_aW46" id="5PdLXX5$HCi" role="3_aW3_" />
     <node concept="3_aW4n" id="4CA5ZMJ3CVJ" role="3_aW3F">
       <property role="TrG5h" value="First2" />
@@ -80,6 +120,59 @@
       <property role="TrG5h" value="Third2" />
     </node>
     <node concept="3_aW4n" id="5PdLXX5zZlC" role="3_aW3F">
+      <property role="TrG5h" value="Fourth" />
+    </node>
+  </node>
+  <node concept="3_aW4k" id="5PdLXX5UVmY">
+    <property role="TrG5h" value="_020_forbidden_scenario" />
+    <node concept="oRLRZ" id="5PdLXX5UVmZ" role="3_aW3_" />
+    <node concept="oO4cR" id="5PdLXX5UVn0" role="3_aW3_">
+      <node concept="ru7O1" id="5PdLXX5UVn1" role="oV6Cc">
+        <property role="ru7PJ" value="initial" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="5PdLXX5UVn2" role="3_aW3_" />
+    <node concept="3_aW46" id="5PdLXX5UVn3" role="3_aW3_">
+      <node concept="oYKel" id="5PdLXX5UVn4" role="oZz2X">
+        <ref role="oYKei" node="5PdLXX5UVnu" resolve="First2" />
+      </node>
+      <node concept="oYKel" id="5PdLXX5UVn5" role="oZz2S">
+        <ref role="oYKei" node="5PdLXX5UVnv" resolve="Second2" />
+      </node>
+      <node concept="ru7O1" id="5PdLXX5UVn6" role="3_fVoY">
+        <property role="ru7PJ" value="start()" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="5PdLXX5UVn7" role="3_aW3_" />
+    <node concept="3_aW46" id="5PdLXX5UVnl" role="3_aW3_">
+      <node concept="oYKel" id="5PdLXX5UVnm" role="oZz2X">
+        <ref role="oYKei" node="5PdLXX5UVnx" resolve="Fourth" />
+      </node>
+      <node concept="oYKel" id="5PdLXX5UVnn" role="oZz2S">
+        <ref role="oYKei" node="5PdLXX5UVnv" resolve="Second2" />
+      </node>
+      <node concept="ru7O1" id="5PdLXX5UVno" role="3_fVoY">
+        <property role="ru7PJ" value="foth_check_fail()" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="5PdLXX5UVnp" role="3_aW3_" />
+    <node concept="oO4cR" id="5PdLXX5UVnq" role="3_aW3_">
+      <node concept="ru7O1" id="5PdLXX5UVnr" role="oV6Cc">
+        <property role="ru7PJ" value="second_started" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="5PdLXX5UVns" role="3_aW3_" />
+    <node concept="3_aW46" id="5PdLXX5UVnt" role="3_aW3_" />
+    <node concept="3_aW4n" id="5PdLXX5UVnu" role="3_aW3F">
+      <property role="TrG5h" value="First2" />
+    </node>
+    <node concept="3_aW4n" id="5PdLXX5UVnv" role="3_aW3F">
+      <property role="TrG5h" value="Second2" />
+    </node>
+    <node concept="3_aW4n" id="5PdLXX5UVnw" role="3_aW3F">
+      <property role="TrG5h" value="Third2" />
+    </node>
+    <node concept="3_aW4n" id="5PdLXX5UVnx" role="3_aW3F">
       <property role="TrG5h" value="Fourth" />
     </node>
   </node>
