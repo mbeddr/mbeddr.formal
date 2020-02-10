@@ -342,5 +342,21 @@
       <ref role="20lvS9" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
     </node>
   </node>
+  <node concept="1TIwiD" id="34jvijxwTy$">
+    <property role="EcuMT" value="3536307729771763876" />
+    <property role="3GE5qa" value="spec" />
+    <property role="TrG5h" value="TracedNodeSpec" />
+    <property role="34LRSv" value="traced node" />
+    <property role="R4oN_" value="a spec node which is traced to this requitement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="34jvijxwTyB" role="1TKVEi">
+      <property role="IQ2ns" value="3536307729771763879" />
+      <property role="20kJfa" value="trace" />
+      <ref role="20lvS9" node="pWUwO6BvC4" resolve="RequirementTrace" />
+    </node>
+    <node concept="PrWs8" id="34jvijxwTy_" role="PzmwI">
+      <ref role="PrY4T" node="4gtLUSMLiPR" resolve="IRequirementSpecification" />
+    </node>
+  </node>
 </model>
 
