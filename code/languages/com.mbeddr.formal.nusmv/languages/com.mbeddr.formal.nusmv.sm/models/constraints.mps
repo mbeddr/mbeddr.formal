@@ -12,7 +12,6 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -365,9 +364,9 @@
           <node concept="22lmx$" id="2mjHtwTozAI" role="3clFbG">
             <node concept="2OqwBi" id="2mjHtwTo$5s" role="3uHU7w">
               <node concept="2DD5aU" id="2mjHtwTozLI" role="2Oq$k0" />
-              <node concept="3O6GUB" id="2mjHtwTo$yh" role="2OqNvi">
-                <node concept="chp4Y" id="2mjHtwTo$JC" role="3QVz_e">
-                  <ref role="cht4Q" to="b19z:3YQnHt0gBu" resolve="CurrentSimulationValueAnnotation" />
+              <node concept="2Zo12i" id="34jvijxxUNe" role="2OqNvi">
+                <node concept="chp4Y" id="34jvijxxUYj" role="2Zo12j">
+                  <ref role="cht4Q" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
                 </node>
               </node>
             </node>
