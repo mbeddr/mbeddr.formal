@@ -170,5 +170,47 @@
       <ref role="20lvS9" node="4CA5ZMJ3trF" resolve="MSCObject" />
     </node>
   </node>
+  <node concept="1TIwiD" id="HiEhrZeLlj">
+    <property role="EcuMT" value="815900398743917907" />
+    <property role="3GE5qa" value="timeline" />
+    <property role="TrG5h" value="StateDistributed" />
+    <property role="34LRSv" value="state distributed" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="HiEhrZeLrA" role="1TKVEi">
+      <property role="IQ2ns" value="815900398743918310" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="instances" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="HiEhrZeLox" resolve="StateInstance" />
+    </node>
+    <node concept="PrWs8" id="HiEhrZeLni" role="PzmwI">
+      <ref role="PrY4T" node="5PdLXX5$HCt" resolve="ITimelineEntity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="HiEhrZeLox">
+    <property role="EcuMT" value="815900398743918113" />
+    <property role="3GE5qa" value="timeline" />
+    <property role="TrG5h" value="StateInstance" />
+    <property role="34LRSv" value="state instance" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="HiEhrZeNaj" role="1TKVEi">
+      <property role="IQ2ns" value="815900398743925395" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="source" />
+      <ref role="20lvS9" node="5PdLXX5HGha" resolve="MSCObjectRef" />
+    </node>
+    <node concept="1TJgyj" id="HiEhrZeNak" role="1TKVEi">
+      <property role="IQ2ns" value="815900398743925396" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="5PdLXX5HGha" resolve="MSCObjectRef" />
+    </node>
+    <node concept="1TJgyj" id="HiEhrZgdjG" role="1TKVEi">
+      <property role="IQ2ns" value="815900398744294636" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
 </model>
 
