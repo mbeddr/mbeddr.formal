@@ -24,6 +24,14 @@
         <child id="5342984381957789463" name="objects" index="3_aW3F" />
       </concept>
       <concept id="5342984381957789419" name="com.fasten.base.msc.structure.MSCObject" flags="ng" index="3_aW4n" />
+      <concept id="815900398743917907" name="com.fasten.base.msc.structure.StateDistributed" flags="ng" index="3OqrL5">
+        <child id="815900398743918310" name="instances" index="3OqrZK" />
+      </concept>
+      <concept id="815900398743918113" name="com.fasten.base.msc.structure.StateInstance" flags="ng" index="3OqrWR">
+        <child id="815900398744294636" name="exp" index="3O4BRU" />
+        <child id="815900398743925396" name="target" index="3OqpI2" />
+        <child id="815900398743925395" name="source" index="3OqpI5" />
+      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
@@ -109,7 +117,32 @@
       </node>
     </node>
     <node concept="oRLRZ" id="5PdLXX5ENvx" role="3_aW3_" />
-    <node concept="3_aW46" id="5PdLXX5$HCi" role="3_aW3_" />
+    <node concept="oRLRZ" id="HiEhrZh3Tn" role="3_aW3_" />
+    <node concept="3OqrL5" id="HiEhrZgPAm" role="3_aW3_">
+      <node concept="3OqrWR" id="HiEhrZgPB5" role="3OqrZK">
+        <node concept="oYKel" id="HiEhrZh3Sp" role="3OqpI5">
+          <ref role="oYKei" node="4CA5ZMJ3CVJ" resolve="First2" />
+        </node>
+        <node concept="oYKel" id="HiEhrZh3Wa" role="3OqpI2">
+          <ref role="oYKei" node="4CA5ZMJ3CVJ" resolve="First2" />
+        </node>
+        <node concept="ru7O1" id="HiEhrZh3WR" role="3O4BRU">
+          <property role="ru7PJ" value="shutdown()" />
+        </node>
+      </node>
+      <node concept="3OqrWR" id="HiEhrZh400" role="3OqrZK">
+        <node concept="oYKel" id="HiEhrZh40$" role="3OqpI5">
+          <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+        </node>
+        <node concept="oYKel" id="HiEhrZh40W" role="3OqpI2">
+          <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+        </node>
+        <node concept="ru7O1" id="HiEhrZh403" role="3O4BRU">
+          <property role="ru7PJ" value="crt_state = safe_state" />
+        </node>
+      </node>
+    </node>
+    <node concept="oRLRZ" id="HiEhrZh3U2" role="3_aW3_" />
     <node concept="3_aW4n" id="4CA5ZMJ3CVJ" role="3_aW3F">
       <property role="TrG5h" value="First2" />
     </node>
@@ -162,7 +195,17 @@
       </node>
     </node>
     <node concept="oRLRZ" id="5PdLXX5UVns" role="3_aW3_" />
-    <node concept="3_aW46" id="5PdLXX5UVnt" role="3_aW3_" />
+    <node concept="3_aW46" id="5PdLXX5UVnt" role="3_aW3_">
+      <node concept="oYKel" id="34jvijxzhup" role="oZz2X">
+        <ref role="oYKei" node="5PdLXX5UVnv" resolve="Second2" />
+      </node>
+      <node concept="oYKel" id="34jvijxzhur" role="oZz2S">
+        <ref role="oYKei" node="5PdLXX5UVnw" resolve="Third2" />
+      </node>
+      <node concept="ru7O1" id="34jvijxzhut" role="3_fVoY">
+        <property role="ru7PJ" value="open" />
+      </node>
+    </node>
     <node concept="3_aW4n" id="5PdLXX5UVnu" role="3_aW3F">
       <property role="TrG5h" value="First2" />
     </node>
