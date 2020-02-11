@@ -24,6 +24,7 @@
     <import index="8js5" ref="r:896eeadf-a850-400e-b516-f92dfb5b5cd9(com.mbeddr.formal.base.pluginSolution.plugin)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -357,7 +358,7 @@
       <node concept="3Tm6S6" id="6NmtaR244nL" role="1B3o_S" />
       <node concept="1oajcY" id="6NmtaR244nM" role="1oa70y" />
       <node concept="3Tqbb2" id="6NmtaR23THN" role="1tU5fm">
-        <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+        <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
       </node>
     </node>
     <node concept="1QGGSu" id="6NmtaR26kcd" role="3Uehp1">
