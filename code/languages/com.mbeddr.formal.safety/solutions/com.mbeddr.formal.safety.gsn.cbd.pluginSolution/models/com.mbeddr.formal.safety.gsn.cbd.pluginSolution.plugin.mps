@@ -20,6 +20,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="t248" ref="r:2f83b5ad-2ce0-4f90-b7aa-45fc12b36f39(com.mbeddr.formal.safety.gsn.smv.pluginSolution.plugin)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="g8ih" ref="r:d04ada13-9d56-43be-9fbe-16c353913377(com.mbeddr.formal.safety.gsn.patterns.behavior)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -231,11 +232,11 @@
           <node concept="3cpWsn" id="72xocJViFdo" role="3cpWs9">
             <property role="TrG5h" value="analyzedComponent" />
             <node concept="3Tqbb2" id="72xocJViF6u" role="1tU5fm">
-              <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+              <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
             </node>
             <node concept="1PxgMI" id="ZaBFheHvY_" role="33vP2m">
               <node concept="chp4Y" id="ZaBFheHwgR" role="3oSUPX">
-                <ref role="cht4Q" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+                <ref role="cht4Q" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
               </node>
               <node concept="2OqwBi" id="72xocJViFdp" role="1m5AlR">
                 <node concept="2OqwBi" id="72xocJViFdq" role="2Oq$k0">
@@ -384,7 +385,7 @@
               </node>
               <node concept="1mIQ4w" id="ZaBFheHuFT" role="2OqNvi">
                 <node concept="chp4Y" id="ZaBFheHvrT" role="cj9EA">
-                  <ref role="cht4Q" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+                  <ref role="cht4Q" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
                 </node>
               </node>
             </node>

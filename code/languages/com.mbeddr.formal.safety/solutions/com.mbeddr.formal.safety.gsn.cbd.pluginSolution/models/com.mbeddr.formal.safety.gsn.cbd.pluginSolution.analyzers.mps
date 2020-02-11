@@ -20,6 +20,7 @@
     <import index="g8ih" ref="r:d04ada13-9d56-43be-9fbe-16c353913377(com.mbeddr.formal.safety.gsn.patterns.behavior)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="xy37" ref="r:186b413f-9752-4da9-a476-351651745753(com.mbeddr.formal.safety.gsn.smv.pluginSolution.analyzers)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="bsp8" ref="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" implicit="true" />
   </imports>
@@ -239,7 +240,7 @@
     <node concept="312cEg" id="ZaBFheGwUr" role="jymVt">
       <property role="TrG5h" value="analyzedComponent" />
       <node concept="3Tqbb2" id="ZaBFheGwGY" role="1tU5fm">
-        <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+        <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
       </node>
     </node>
     <node concept="312cEg" id="33qt4wr42cT" role="jymVt">
@@ -271,7 +272,7 @@
       <node concept="37vLTG" id="ZaBFheGwme" role="3clF46">
         <property role="TrG5h" value="ca" />
         <node concept="3Tqbb2" id="ZaBFheGwsm" role="1tU5fm">
-          <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+          <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
         </node>
       </node>
       <node concept="37vLTG" id="33qt4wr3ZVF" role="3clF46">
@@ -755,7 +756,7 @@
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="33qt4wr57EW" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="vzqj:7RhjhI7$li_" resolve="interface" />
+                                      <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
                                     </node>
                                   </node>
                                 </node>
@@ -1023,7 +1024,7 @@
       <node concept="37vLTG" id="7mSH3Wn5bmb" role="3clF46">
         <property role="TrG5h" value="ca" />
         <node concept="3Tqbb2" id="7mSH3Wn5bxx" role="1tU5fm">
-          <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+          <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
         </node>
       </node>
       <node concept="37vLTG" id="33qt4wr47S3" role="3clF46">

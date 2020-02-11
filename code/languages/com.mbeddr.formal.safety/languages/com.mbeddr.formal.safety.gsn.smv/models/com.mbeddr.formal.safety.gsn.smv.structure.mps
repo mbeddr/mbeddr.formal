@@ -13,6 +13,7 @@
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -262,7 +263,7 @@
       <property role="IQ2ns" value="4946522816140814292" />
       <property role="20kJfa" value="componentInterface" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="vzqj:7RhjhI7zUWi" resolve="ComponentInterface" />
+      <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
   </node>
   <node concept="1TIwiD" id="4i__4Gxsq_o">

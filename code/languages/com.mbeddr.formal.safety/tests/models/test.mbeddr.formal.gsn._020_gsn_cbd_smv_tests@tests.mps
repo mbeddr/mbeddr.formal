@@ -22,6 +22,7 @@
     <import index="50mr" ref="r:af038500-12da-40fb-9885-21380faabbb0(com.mbeddr.formal.safety.gsn.cbd.pluginSolution.analyzers)" />
     <import index="g8ih" ref="r:d04ada13-9d56-43be-9fbe-16c353913377(com.mbeddr.formal.safety.gsn.patterns.behavior)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" implicit="true" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
@@ -376,7 +377,7 @@
           <node concept="3cpWsn" id="1xpXAu11Re_" role="3cpWs9">
             <property role="TrG5h" value="component" />
             <node concept="3Tqbb2" id="1xpXAu11R9h" role="1tU5fm">
-              <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+              <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
             </node>
           </node>
         </node>
@@ -507,7 +508,7 @@
                         </node>
                       </node>
                       <node concept="3Tqbb2" id="1xpXAu11UxJ" role="10QFUM">
-                        <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+                        <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
                       </node>
                     </node>
                   </node>
