@@ -4,12 +4,15 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/asm-6.1.1.jar" />
-      <sourceRoot location="lib/asm-analysis-6.1.1.jar" />
-      <sourceRoot location="lib/asm-tree-6.1.1.jar" />
-      <sourceRoot location="lib/parboiled-core-1.1.8.jar" />
-      <sourceRoot location="lib/parboiled-java-1.1.8.jar" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="asm-tree-7.0.jar" />
+      <sourceRoot location="parboiled-java-1.3.0.jar" />
+      <sourceRoot location="asm-7.0.jar" />
+      <sourceRoot location="asm-analysis-7.0.jar" />
+      <sourceRoot location="asm-util-7.0.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="parboiled-core-1.3.0.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -18,11 +21,12 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/asm-6.1.1.jar" />
-    <stubModelEntry path="${module}/lib/asm-analysis-6.1.1.jar" />
-    <stubModelEntry path="${module}/lib/asm-tree-6.1.1.jar" />
-    <stubModelEntry path="${module}/lib/parboiled-core-1.1.8.jar" />
-    <stubModelEntry path="${module}/lib/parboiled-java-1.1.8.jar" />
+    <stubModelEntry path="${module}/lib/asm-tree-7.0.jar" />
+    <stubModelEntry path="${module}/lib/parboiled-java-1.3.0.jar" />
+    <stubModelEntry path="${module}/lib/asm-7.0.jar" />
+    <stubModelEntry path="${module}/lib/asm-analysis-7.0.jar" />
+    <stubModelEntry path="${module}/lib/asm-util-7.0.jar" />
+    <stubModelEntry path="${module}/lib/parboiled-core-1.3.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
