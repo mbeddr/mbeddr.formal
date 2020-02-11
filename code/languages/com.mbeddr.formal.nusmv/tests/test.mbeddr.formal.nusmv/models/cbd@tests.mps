@@ -26,6 +26,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -291,7 +292,7 @@
           <node concept="3cpWsn" id="6mm$FLYRO$F" role="3cpWs9">
             <property role="TrG5h" value="ca" />
             <node concept="3Tqbb2" id="6mm$FLYRO$$" role="1tU5fm">
-              <ref role="ehGHo" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+              <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
             </node>
           </node>
         </node>
@@ -375,7 +376,7 @@
                       <node concept="2Rf3mk" id="6mm$FLYRO$J" role="2OqNvi">
                         <node concept="1xMEDy" id="6mm$FLYRO$K" role="1xVPHs">
                           <node concept="chp4Y" id="6EFcW_ACOQQ" role="ri$Ld">
-                            <ref role="cht4Q" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly" />
+                            <ref role="cht4Q" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
                           </node>
                         </node>
                       </node>
