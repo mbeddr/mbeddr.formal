@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
@@ -23,9 +22,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -64,7 +61,7 @@
     <property role="TrG5h" value="Port" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7zUWm" resolve="Port_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3w9GqVcFVUy" role="PzmwI">
       <ref role="PrY4T" to="tpck:hqLv6T6" resolve="IResolveInfo" />
     </node>
@@ -88,13 +85,13 @@
     <property role="TrG5h" value="InputPort" />
     <property role="34LRSv" value="input port" />
     <property role="R4oN_" value="input port" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7zUWq" resolve="InputPort_old" />
+    <ref role="1TJDcQ" node="7RhjhI7zUWm" resolve="Port" />
   </node>
   <node concept="1TIwiD" id="7RhjhI7$E7x">
     <property role="EcuMT" value="9066112305507508705" />
     <property role="3GE5qa" value="cbd.assembly" />
     <property role="TrG5h" value="EmptyComponentAssemblyBodyContent" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$E7x" resolve="EmptyComponentAssemblyBodyContent_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7RhjhI7$E7y" role="PzmwI">
       <ref role="PrY4T" node="7RhjhI7$E7w" resolve="IComponentAssemblyBodyContent" />
     </node>
@@ -105,7 +102,7 @@
     <property role="3GE5qa" value="cbd.interface" />
     <property role="34LRSv" value="interface" />
     <property role="R4oN_" value="define an interface (CBD)" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7zUWi" resolve="ComponentInterface_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7zUXd" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507315533" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -137,7 +134,7 @@
     <property role="EcuMT" value="9066112305507423796" />
     <property role="3GE5qa" value="cbd.assembly" />
     <property role="TrG5h" value="InstanceRef" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$loO" resolve="InstanceRef_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$loP" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423797" />
       <property role="20kJfa" value="instance" />
@@ -151,13 +148,13 @@
     <property role="TrG5h" value="ConnectionPart" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$lgW" resolve="ConnectionPart_old" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="7RhjhI7$li$">
     <property role="EcuMT" value="9066112305507423396" />
     <property role="3GE5qa" value="cbd.interface" />
     <property role="TrG5h" value="ComponentInterfaceRef" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$li$" resolve="ComponentInterfaceRef_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$li_" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423397" />
       <property role="20kJfa" value="interface" />
@@ -170,7 +167,7 @@
     <property role="3GE5qa" value="cbd.assembly" />
     <property role="TrG5h" value="ComponentAssembly" />
     <property role="34LRSv" value="assembly" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly_old" />
+    <ref role="1TJDcQ" node="7RhjhI7zUWi" resolve="ComponentInterface" />
     <node concept="1TJgyi" id="15PPQjZe9gT" role="1TKVEl">
       <property role="IQ2nx" value="1258148499698521145" />
       <property role="TrG5h" value="useBMC" />
@@ -211,7 +208,7 @@
     <property role="3GE5qa" value="cbd.assembly.connections" />
     <property role="TrG5h" value="Connection" />
     <property role="34LRSv" value="connection" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$lgV" resolve="Connection_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$lgX" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423293" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -235,7 +232,7 @@
     <property role="EcuMT" value="9066112305507423362" />
     <property role="3GE5qa" value="cbd.assembly.connections" />
     <property role="TrG5h" value="PortRef" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$li2" resolve="PortRef_old" />
+    <ref role="1TJDcQ" node="7RhjhI7$lgW" resolve="ConnectionPart" />
     <node concept="1TJgyj" id="7RhjhI7$li3" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423363" />
       <property role="20kJfa" value="port" />
@@ -247,9 +244,6 @@
     <property role="EcuMT" value="9066112305507508704" />
     <property role="3GE5qa" value="cbd.assembly" />
     <property role="TrG5h" value="IComponentAssemblyBodyContent" />
-    <node concept="PrWs8" id="3RylqDNx0Fn" role="PrDN$">
-      <ref role="PrY4T" to="vzqj:7RhjhI7$E7w" resolve="IComponentAssemblyBodyContent_old" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7zUXc">
     <property role="EcuMT" value="9066112305507315532" />
@@ -257,14 +251,14 @@
     <property role="TrG5h" value="OutputPort" />
     <property role="34LRSv" value="output" />
     <property role="R4oN_" value="output port" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7zUXc" resolve="OutputPort_old" />
+    <ref role="1TJDcQ" node="7RhjhI7zUWm" resolve="Port" />
   </node>
   <node concept="1TIwiD" id="7RhjhI7$liw">
     <property role="EcuMT" value="9066112305507423392" />
     <property role="3GE5qa" value="cbd.assembly" />
     <property role="TrG5h" value="Instance" />
     <property role="34LRSv" value="instance" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$liw" resolve="Instance_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$liY" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423422" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -284,7 +278,7 @@
     <property role="3GE5qa" value="cbd.assembly.connections" />
     <property role="TrG5h" value="CompositePart" />
     <property role="34LRSv" value="composite part" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7$loN" resolve="CompositePart_old" />
+    <ref role="1TJDcQ" node="7RhjhI7$lgW" resolve="ConnectionPart" />
     <node concept="1TJgyj" id="7RhjhI7$lph" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423825" />
       <property role="20kJfa" value="port" />
@@ -303,9 +297,6 @@
     <property role="EcuMT" value="9066112305501143219" />
     <property role="TrG5h" value="IContract" />
     <property role="3GE5qa" value="contracts" />
-    <node concept="PrWs8" id="3RylqDNx0G4" role="PrDN$">
-      <ref role="PrY4T" to="vzqj:7RhjhI7co2N" resolve="IContract_old" />
-    </node>
   </node>
   <node concept="PlHQZ" id="15PPQjZhlYF">
     <property role="EcuMT" value="1258148499699359659" />
@@ -318,15 +309,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7RhjhI7co2N" resolve="IContract" />
     </node>
-    <node concept="PrWs8" id="3RylqDNx0Gg" role="PrDN$">
-      <ref role="PrY4T" to="vzqj:15PPQjZhlYF" resolve="IContractsContainer_old" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7co8m">
     <property role="EcuMT" value="9066112305501143574" />
     <property role="TrG5h" value="EmptyContract" />
     <property role="3GE5qa" value="contracts" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7co8m" resolve="EmptyContract_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7RhjhI7dkaV" role="PzmwI">
       <ref role="PrY4T" node="7RhjhI7co2N" resolve="IContract" />
     </node>
@@ -337,7 +325,7 @@
     <property role="34LRSv" value="--" />
     <property role="R4oN_" value="comment line" />
     <property role="3GE5qa" value="contracts" />
-    <ref role="1TJDcQ" to="vzqj:7RhjhI7cKiY" resolve="CommentContract_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7RhjhI7cKiZ" role="PzmwI">
       <ref role="PrY4T" node="7RhjhI7co2N" resolve="IContract" />
     </node>
