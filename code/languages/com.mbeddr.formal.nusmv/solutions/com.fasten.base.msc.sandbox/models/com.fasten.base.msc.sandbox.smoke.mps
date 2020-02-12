@@ -117,6 +117,17 @@
       </node>
     </node>
     <node concept="oRLRZ" id="5PdLXX5ENvx" role="3_aW3_" />
+    <node concept="3_aW46" id="6Tlbvyu3zTT" role="3_aW3_">
+      <node concept="oYKel" id="6Tlbvyu3zU_" role="oZz2X">
+        <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+      </node>
+      <node concept="oYKel" id="6Tlbvyu3zUB" role="oZz2S">
+        <ref role="oYKei" node="4CA5ZMJ3CVO" resolve="Third2" />
+      </node>
+      <node concept="ru7O1" id="6Tlbvyu3zUD" role="3_fVoY">
+        <property role="ru7PJ" value="mes1" />
+      </node>
+    </node>
     <node concept="oRLRZ" id="HiEhrZh3Tn" role="3_aW3_" />
     <node concept="3OqrL5" id="HiEhrZgPAm" role="3_aW3_">
       <node concept="3OqrWR" id="HiEhrZgPB5" role="3OqrZK">
@@ -217,6 +228,54 @@
     </node>
     <node concept="3_aW4n" id="5PdLXX5UVnx" role="3_aW3F">
       <property role="TrG5h" value="Fourth" />
+    </node>
+  </node>
+  <node concept="3_aW4k" id="3QO5pQQtLJV">
+    <property role="TrG5h" value="_030_only_messages" />
+    <node concept="3_aW4n" id="3QO5pQQtNDp" role="3_aW3F">
+      <property role="TrG5h" value="Sender" />
+    </node>
+    <node concept="3_aW4n" id="3QO5pQQtNDr" role="3_aW3F">
+      <property role="TrG5h" value="Receiver_1" />
+    </node>
+    <node concept="3_aW4n" id="3QO5pQQtNDu" role="3_aW3F">
+      <property role="TrG5h" value="Receiver_2" />
+    </node>
+    <node concept="oRLRZ" id="3QO5pQQtNDF" role="3_aW3_" />
+    <node concept="3_aW46" id="3QO5pQQtNDB" role="3_aW3_">
+      <node concept="oYKel" id="3QO5pQQtNDL" role="oZz2X">
+        <ref role="oYKei" node="3QO5pQQtNDp" resolve="Sender" />
+      </node>
+      <node concept="oYKel" id="3QO5pQQtNDN" role="oZz2S">
+        <ref role="oYKei" node="3QO5pQQtNDr" resolve="Receiver_1" />
+      </node>
+      <node concept="ru7O1" id="3QO5pQQtNDP" role="3_fVoY">
+        <property role="ru7PJ" value="message()" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="3QO5pQQtNE4" role="3_aW3_" />
+    <node concept="3_aW46" id="3QO5pQQtNEl" role="3_aW3_">
+      <node concept="oYKel" id="3QO5pQQtNEv" role="oZz2X">
+        <ref role="oYKei" node="3QO5pQQtNDp" resolve="Sender" />
+      </node>
+      <node concept="oYKel" id="3QO5pQQtNEx" role="oZz2S">
+        <ref role="oYKei" node="3QO5pQQtNDu" resolve="Receiver_2" />
+      </node>
+      <node concept="ru7O1" id="3QO5pQQtNEz" role="3_fVoY">
+        <property role="ru7PJ" value="another_message" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="3QO5pQQtNDR" role="3_aW3_" />
+    <node concept="3_aW46" id="3QO5pQQtNEM" role="3_aW3_">
+      <node concept="oYKel" id="3QO5pQQtNF0" role="oZz2X">
+        <ref role="oYKei" node="3QO5pQQtNDu" resolve="Receiver_2" />
+      </node>
+      <node concept="oYKel" id="3QO5pQQtNF2" role="oZz2S">
+        <ref role="oYKei" node="3QO5pQQtNDr" resolve="Receiver_1" />
+      </node>
+      <node concept="ru7O1" id="3QO5pQQtNF4" role="3_fVoY">
+        <property role="ru7PJ" value="third_message" />
+      </node>
     </node>
   </node>
 </model>

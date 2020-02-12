@@ -1792,7 +1792,7 @@
             <property role="TrG5h" value="offset" />
             <node concept="10Oyi0" id="5PdLXX5$JtI" role="1tU5fm" />
             <node concept="3cmrfG" id="5PdLXX5E$8E" role="33vP2m">
-              <property role="3cmrfH" value="18" />
+              <property role="3cmrfH" value="24" />
             </node>
           </node>
         </node>
@@ -4424,6 +4424,47 @@
                               <node concept="37vLTw" id="HiEhrZeOEi" role="3uHU7B">
                                 <ref role="3cqZAo" node="HiEhrZeODf" resolve="height" />
                               </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="3QO5pQQtrRw" role="3cqZAp">
+                        <node concept="2OqwBi" id="3QO5pQQtsqe" role="3clFbG">
+                          <node concept="37vLTw" id="3QO5pQQtrRu" role="2Oq$k0">
+                            <ref role="3cqZAo" node="HiEhrZeOCG" resolve="g" />
+                          </node>
+                          <node concept="liA8E" id="3QO5pQQtt3l" role="2OqNvi">
+                            <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
+                            <node concept="10M0yZ" id="3QO5pQQtuLb" role="37wK5m">
+                              <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
+                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="3QO5pQQteMe" role="3cqZAp">
+                        <node concept="2OqwBi" id="3QO5pQQtf_e" role="3clFbG">
+                          <node concept="37vLTw" id="3QO5pQQteMc" role="2Oq$k0">
+                            <ref role="3cqZAo" node="HiEhrZeOCG" resolve="g" />
+                          </node>
+                          <node concept="liA8E" id="3QO5pQQtgvN" role="2OqNvi">
+                            <ref role="37wK5l" to="z60i:~Graphics.fillPolygon(java.awt.Polygon)" resolve="fillPolygon" />
+                            <node concept="37vLTw" id="3QO5pQQthQ6" role="37wK5m">
+                              <ref role="3cqZAo" node="HiEhrZeODj" resolve="statePolygon" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="3QO5pQQtvzk" role="3cqZAp">
+                        <node concept="2OqwBi" id="3QO5pQQtvzl" role="3clFbG">
+                          <node concept="37vLTw" id="3QO5pQQtvzm" role="2Oq$k0">
+                            <ref role="3cqZAo" node="HiEhrZeOCG" resolve="g" />
+                          </node>
+                          <node concept="liA8E" id="3QO5pQQtvzn" role="2OqNvi">
+                            <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
+                            <node concept="10M0yZ" id="3QO5pQQtwA7" role="37wK5m">
+                              <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+                              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
                             </node>
                           </node>
                         </node>
