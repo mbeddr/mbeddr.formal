@@ -10,7 +10,6 @@
   <imports>
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
     <import index="7wf3" ref="r:c49134f0-ff6f-4ef4-ad9f-10c1a3f47c1a(com.mbeddr.formal.base.arch.behavior)" />
   </imports>
   <registry>
@@ -158,8 +157,8 @@
                 <node concept="nLn13" id="1NcemxUMcSy" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="1NcemxUMdAk" role="2OqNvi">
                   <node concept="1xMEDy" id="1NcemxUMdAm" role="1xVPHs">
-                    <node concept="chp4Y" id="1NcemxUMdRC" role="ri$Ld">
-                      <ref role="cht4Q" to="vzqj:7RhjhI7cKj$" resolve="ContractBase" />
+                    <node concept="chp4Y" id="3QO5pQQDCm8" role="ri$Ld">
+                      <ref role="cht4Q" to="3whv:7RhjhI7co2N" resolve="IContract" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="24PsEXFb_1J" role="1xVPHs" />
