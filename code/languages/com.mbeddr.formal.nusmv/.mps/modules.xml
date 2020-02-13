@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/fasten.nusmv/fasten.nusmv.devkit" folder="lang.nusmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.arch.msc/com.fasten.base.arch.msc.mpl" folder="lang.base.msc" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.msc/com.fasten.base.msc.mpl" folder="lang.base.msc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.analyses/com.mbeddr.formal.base.analyses.mpl" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.arch/com.mbeddr.formal.base.arch.mpl" folder="lang.base" />
