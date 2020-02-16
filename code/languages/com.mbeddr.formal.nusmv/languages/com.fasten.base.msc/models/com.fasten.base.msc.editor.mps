@@ -4721,12 +4721,10 @@
         <node concept="3F0ifn" id="3QO5pQQIAjc" role="3EZMnx" />
         <node concept="3F0ifn" id="3QO5pQQIAjd" role="3EZMnx" />
         <node concept="3F0ifn" id="3QO5pQQIAje" role="3EZMnx" />
-        <node concept="3F2HdR" id="3QO5pQQIAjf" role="3EZMnx">
+        <node concept="3F2HdR" id="3QO5pQQMFyM" role="3EZMnx">
           <ref role="1NtTu8" to="6jj4:4CA5ZMJ3tsn" resolve="objects" />
-          <node concept="l2Vlx" id="3QO5pQQIAjg" role="2czzBx" />
-          <node concept="15ARfc" id="3QO5pQQIAjh" role="3F10Kt">
-            <property role="3$6WeP" value="0" />
-          </node>
+          <node concept="2iRfu4" id="3QO5pQQMFyP" role="2czzBx" />
+          <node concept="VPM3Z" id="3QO5pQQMFyQ" role="3F10Kt" />
         </node>
         <node concept="pkWqt" id="3QO5pQQIAji" role="pqm2j">
           <node concept="3clFbS" id="3QO5pQQIAjj" role="2VODD2">

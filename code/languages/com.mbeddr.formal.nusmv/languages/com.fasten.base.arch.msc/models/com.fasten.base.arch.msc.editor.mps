@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +14,10 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -48,11 +53,23 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
+      <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
+        <child id="8207263695490916687" name="rules" index="2El2Yn" />
+        <child id="2862331529394260612" name="projection" index="1LiK7o" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -110,6 +127,40 @@
     </node>
     <node concept="1PE4EZ" id="3QO5pQQIUiW" role="1PM95z">
       <ref role="1PE7su" to="gsml:3QO5pQQITYB" resolve="IMSCObjectEditorComponent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3QO5pQQLprI">
+    <ref role="1XX52x" to="kn8g:3QO5pQQKS_z" resolve="SendMessage" />
+    <node concept="1WcQYu" id="3QO5pQQLprK" role="2wV5jI">
+      <node concept="2ElW$n" id="3QO5pQQLprM" role="2El2Yn" />
+      <node concept="3EZMnI" id="3QO5pQQLprW" role="1LiK7o">
+        <node concept="1kIj98" id="3QO5pQQLUlY" role="3EZMnx">
+          <node concept="1iCGBv" id="3QO5pQQLpst" role="1kIj9b">
+            <ref role="1NtTu8" to="kn8g:3QO5pQQLprz" resolve="port" />
+            <node concept="1sVBvm" id="3QO5pQQLpsv" role="1sWHZn">
+              <node concept="3F0A7n" id="3QO5pQQLpsG" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="3QO5pQQLpsR" role="3EZMnx">
+          <property role="3F0ifm" value="=" />
+        </node>
+        <node concept="3F1sOY" id="3QO5pQQLptr" role="3EZMnx">
+          <ref role="1NtTu8" to="kn8g:3QO5pQQLpt9" resolve="messageValue" />
+        </node>
+        <node concept="l2Vlx" id="3QO5pQQLprZ" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3QO5pQQM4tM">
+    <ref role="1XX52x" to="kn8g:3QO5pQQLUlL" resolve="SendMessagesExpression" />
+    <node concept="3F2HdR" id="3QO5pQQM4tO" role="2wV5jI">
+      <property role="2czwfO" value=";" />
+      <ref role="1NtTu8" to="kn8g:3QO5pQQLUlM" resolve="sendMessages" />
+      <node concept="l2Vlx" id="3QO5pQQM4tQ" role="2czzBx" />
     </node>
   </node>
 </model>

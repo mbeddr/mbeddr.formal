@@ -202,6 +202,9 @@
     <node concept="PrWs8" id="1EKbsQRcbiw" role="PzmwI">
       <ref role="PrY4T" to="b19z:6Kf5KB6TZVg" resolve="ISimulationEntryPoint" />
     </node>
+    <node concept="PrWs8" id="3QO5pQQKV34" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7$lgV">
     <property role="EcuMT" value="9066112305507423291" />

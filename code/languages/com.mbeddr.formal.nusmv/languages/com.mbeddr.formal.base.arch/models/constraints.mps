@@ -56,6 +56,9 @@
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
@@ -74,9 +77,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
-        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
-      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -95,9 +95,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -110,38 +107,8 @@
     <ref role="1M2myG" to="3whv:7RhjhI7$loO" resolve="InstanceRef" />
     <node concept="1N5Pfh" id="57ROGn9323K" role="1Mr941">
       <ref role="1N5Vy1" to="3whv:7RhjhI7$loP" resolve="instance" />
-      <node concept="3dgokm" id="57ROGn9323N" role="1N6uqs">
-        <node concept="3clFbS" id="57ROGn9323O" role="2VODD2">
-          <node concept="3clFbF" id="57ROGn932mM" role="3cqZAp">
-            <node concept="2YIFZM" id="57ROGn932mN" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="57ROGn935hK" role="37wK5m">
-                <node concept="2OqwBi" id="57ROGn932mO" role="2Oq$k0">
-                  <node concept="2OqwBi" id="57ROGn932mP" role="2Oq$k0">
-                    <node concept="2rP1CM" id="57ROGn932mQ" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="57ROGn932mR" role="2OqNvi">
-                      <node concept="1xMEDy" id="57ROGn932mS" role="1xVPHs">
-                        <node concept="chp4Y" id="57ROGn932Dh" role="ri$Ld">
-                          <ref role="cht4Q" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
-                        </node>
-                      </node>
-                      <node concept="1xIGOp" id="57ROGn932mU" role="1xVPHs" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="57ROGn933Hl" role="2OqNvi">
-                    <ref role="3TtcxE" to="3whv:7RhjhI7$E7F" resolve="content" />
-                  </node>
-                </node>
-                <node concept="v3k3i" id="57ROGn938oi" role="2OqNvi">
-                  <node concept="chp4Y" id="57ROGn938yB" role="v3oSu">
-                    <ref role="cht4Q" to="3whv:7RhjhI7$liw" resolve="Instance" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="1dDu$B" id="3QO5pQQKUMD" role="1N6uqs">
+        <ref role="1dDu$A" to="3whv:7RhjhI7$liw" resolve="Instance" />
       </node>
     </node>
   </node>
