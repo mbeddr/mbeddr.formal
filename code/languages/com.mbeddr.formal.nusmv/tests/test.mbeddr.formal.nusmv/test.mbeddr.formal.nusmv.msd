@@ -38,7 +38,7 @@
     <language slang="l:b3b9fe18-f0c4-4cea-83c5-45faa74e0911:com.mbeddr.formal.base.tabular" version="0" />
     <language slang="l:001b2375-3bd5-4d5e-9958-6b3f62dc8548:com.mbeddr.formal.nusmv" version="0" />
     <language slang="l:22a84bd5-d947-48ae-b9f6-8288eea41dce:com.mbeddr.formal.nusmv.arch" version="0" />
-    <language slang="l:58bd9c99-ba42-4205-b3c9-ce445fd870e6:com.mbeddr.formal.nusmv.cbd" version="0" />
+    <language slang="l:58bd9c99-ba42-4205-b3c9-ce445fd870e6:com.mbeddr.formal.nusmv.cbd" version="1" />
     <language slang="l:c0e6afd4-e20f-4e33-9970-004cf26b9bf6:com.mbeddr.formal.nusmv.ext" version="0" />
     <language slang="l:85d37fe5-2c7e-4ea1-ae78-08007614c543:com.mbeddr.formal.nusmv.importer" version="0" />
     <language slang="l:2dd5dace-06d5-4283-a878-7272f2df6d4b:com.mbeddr.formal.nusmv.operatorspanel" version="0" />
@@ -80,7 +80,7 @@
     <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="22a84bd5-d947-48ae-b9f6-8288eea41dce(com.mbeddr.formal.nusmv.arch)" version="0" />
-    <module reference="58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)" version="0" />
+    <module reference="58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)" version="1" />
     <module reference="0785c32a-102f-45a9-9367-99fd48b107eb(com.mbeddr.formal.nusmv.cbd.pluginSolution)" version="0" />
     <module reference="18cd78f6-e870-412b-81e1-d3955c4ecc88(com.mbeddr.formal.nusmv.importer.rt)" version="0" />
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />

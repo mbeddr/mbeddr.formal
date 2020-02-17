@@ -10,6 +10,8 @@
     <import index="jtif" ref="r:f2229be8-ee62-4a08-97c9-cec128495d06(com.mbeddr.formal.nusmv.cbd.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
+    <import index="7wf3" ref="r:c49134f0-ff6f-4ef4-ad9f-10c1a3f47c1a(com.mbeddr.formal.base.arch.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -149,11 +151,11 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="4jVGnaqoMd2" role="2OqNvi">
-                  <ref role="3Tt5mk" to="vzqj:7RhjhI7$li_" resolve="interface" />
+                  <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
                 </node>
               </node>
               <node concept="2qgKlT" id="4jVGnaqoOZN" role="2OqNvi">
-                <ref role="37wK5l" to="jtif:57ROGn8X5WU" resolve="allInputs" />
+                <ref role="37wK5l" to="7wf3:57ROGn8X5WU" resolve="allInputs" />
               </node>
             </node>
             <node concept="3$u5V9" id="4jVGnaqoMd4" role="2OqNvi">
@@ -284,11 +286,11 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="4jVGnaqp6Fm" role="2OqNvi">
-                  <ref role="3Tt5mk" to="vzqj:7RhjhI7$li_" resolve="interface" />
+                  <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
                 </node>
               </node>
               <node concept="2qgKlT" id="4jVGnaqp7Kh" role="2OqNvi">
-                <ref role="37wK5l" to="jtif:57ROGn8X9ou" resolve="allOutputs" />
+                <ref role="37wK5l" to="7wf3:57ROGn8X9ou" resolve="allOutputs" />
               </node>
             </node>
             <node concept="3$u5V9" id="4jVGnaqp6Fo" role="2OqNvi">

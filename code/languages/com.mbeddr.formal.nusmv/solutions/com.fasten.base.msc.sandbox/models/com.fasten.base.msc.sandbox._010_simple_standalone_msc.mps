@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f6ccdd5f-598c-4245-b1b4-e63219ac281f(com.fasten.base.msc.sandbox.smoke)">
+<model ref="r:f6ccdd5f-598c-4245-b1b4-e63219ac281f(com.fasten.base.msc.sandbox._010_simple_standalone_msc)">
   <persistence version="9" />
   <languages>
     <use id="81f6a079-965e-4523-87c3-8e6194f66585" name="com.fasten.base.msc" version="-1" />
@@ -7,6 +7,10 @@
   <imports />
   <registry>
     <language id="81f6a079-965e-4523-87c3-8e6194f66585" name="com.fasten.base.msc">
+      <concept id="4446202499241241782" name="com.fasten.base.msc.structure.MessageSequenceChartBase" flags="ng" index="2b3B$F">
+        <child id="5342984381957789465" name="messages" index="3_aW3_" />
+        <child id="5342984381957789463" name="objects" index="3_aW3F" />
+      </concept>
       <concept id="6723249580493604072" name="com.fasten.base.msc.structure.State" flags="ng" index="oO4cR">
         <child id="6723249580493876691" name="exp" index="oV6Cc" />
       </concept>
@@ -19,10 +23,7 @@
         <child id="6723249580495075170" name="source" index="oZz2X" />
         <child id="5342984381958562242" name="exp" index="3_fVoY" />
       </concept>
-      <concept id="5342984381957789416" name="com.fasten.base.msc.structure.MessageSequenceChart" flags="ng" index="3_aW4k">
-        <child id="5342984381957789465" name="messages" index="3_aW3_" />
-        <child id="5342984381957789463" name="objects" index="3_aW3F" />
-      </concept>
+      <concept id="5342984381957789416" name="com.fasten.base.msc.structure.MessageSequenceChart" flags="ng" index="3_aW4k" />
       <concept id="5342984381957789419" name="com.fasten.base.msc.structure.MSCObject" flags="ng" index="3_aW4n" />
       <concept id="815900398743917907" name="com.fasten.base.msc.structure.StateDistributed" flags="ng" index="3OqrL5">
         <child id="815900398743918310" name="instances" index="3OqrZK" />
@@ -46,6 +47,18 @@
   </registry>
   <node concept="3_aW4k" id="4CA5ZMJ3CVI">
     <property role="TrG5h" value="_010_allowed_scenario" />
+    <node concept="3_aW4n" id="4CA5ZMJ3CVJ" role="3_aW3F">
+      <property role="TrG5h" value="First2" />
+    </node>
+    <node concept="3_aW4n" id="4CA5ZMJ3CVL" role="3_aW3F">
+      <property role="TrG5h" value="Second2" />
+    </node>
+    <node concept="3_aW4n" id="4CA5ZMJ3CVO" role="3_aW3F">
+      <property role="TrG5h" value="Third2" />
+    </node>
+    <node concept="3_aW4n" id="5PdLXX5zZlC" role="3_aW3F">
+      <property role="TrG5h" value="Fourth" />
+    </node>
     <node concept="oRLRZ" id="5PdLXX5_Wp0" role="3_aW3_" />
     <node concept="oO4cR" id="5PdLXX5UVit" role="3_aW3_">
       <node concept="ru7O1" id="5PdLXX5UViQ" role="oV6Cc">
@@ -117,6 +130,17 @@
       </node>
     </node>
     <node concept="oRLRZ" id="5PdLXX5ENvx" role="3_aW3_" />
+    <node concept="3_aW46" id="6Tlbvyu3zTT" role="3_aW3_">
+      <node concept="oYKel" id="6Tlbvyu3zU_" role="oZz2X">
+        <ref role="oYKei" node="4CA5ZMJ3CVL" resolve="Second2" />
+      </node>
+      <node concept="oYKel" id="6Tlbvyu3zUB" role="oZz2S">
+        <ref role="oYKei" node="4CA5ZMJ3CVO" resolve="Third2" />
+      </node>
+      <node concept="ru7O1" id="6Tlbvyu3zUD" role="3_fVoY">
+        <property role="ru7PJ" value="mes1" />
+      </node>
+    </node>
     <node concept="oRLRZ" id="HiEhrZh3Tn" role="3_aW3_" />
     <node concept="3OqrL5" id="HiEhrZgPAm" role="3_aW3_">
       <node concept="3OqrWR" id="HiEhrZgPB5" role="3OqrZK">
@@ -143,21 +167,21 @@
       </node>
     </node>
     <node concept="oRLRZ" id="HiEhrZh3U2" role="3_aW3_" />
-    <node concept="3_aW4n" id="4CA5ZMJ3CVJ" role="3_aW3F">
-      <property role="TrG5h" value="First2" />
-    </node>
-    <node concept="3_aW4n" id="4CA5ZMJ3CVL" role="3_aW3F">
-      <property role="TrG5h" value="Second2" />
-    </node>
-    <node concept="3_aW4n" id="4CA5ZMJ3CVO" role="3_aW3F">
-      <property role="TrG5h" value="Third2" />
-    </node>
-    <node concept="3_aW4n" id="5PdLXX5zZlC" role="3_aW3F">
-      <property role="TrG5h" value="Fourth" />
-    </node>
   </node>
   <node concept="3_aW4k" id="5PdLXX5UVmY">
     <property role="TrG5h" value="_020_forbidden_scenario" />
+    <node concept="3_aW4n" id="5PdLXX5UVnu" role="3_aW3F">
+      <property role="TrG5h" value="First2" />
+    </node>
+    <node concept="3_aW4n" id="5PdLXX5UVnv" role="3_aW3F">
+      <property role="TrG5h" value="Second2" />
+    </node>
+    <node concept="3_aW4n" id="5PdLXX5UVnw" role="3_aW3F">
+      <property role="TrG5h" value="Third2" />
+    </node>
+    <node concept="3_aW4n" id="5PdLXX5UVnx" role="3_aW3F">
+      <property role="TrG5h" value="Fourth" />
+    </node>
     <node concept="oRLRZ" id="5PdLXX5UVmZ" role="3_aW3_" />
     <node concept="oO4cR" id="5PdLXX5UVn0" role="3_aW3_">
       <node concept="ru7O1" id="5PdLXX5UVn1" role="oV6Cc">
@@ -206,17 +230,53 @@
         <property role="ru7PJ" value="open" />
       </node>
     </node>
-    <node concept="3_aW4n" id="5PdLXX5UVnu" role="3_aW3F">
-      <property role="TrG5h" value="First2" />
+  </node>
+  <node concept="3_aW4k" id="3QO5pQQtLJV">
+    <property role="TrG5h" value="_030_only_messages" />
+    <node concept="3_aW4n" id="3QO5pQQtNDp" role="3_aW3F">
+      <property role="TrG5h" value="Sender" />
     </node>
-    <node concept="3_aW4n" id="5PdLXX5UVnv" role="3_aW3F">
-      <property role="TrG5h" value="Second2" />
+    <node concept="3_aW4n" id="3QO5pQQtNDr" role="3_aW3F">
+      <property role="TrG5h" value="Receiver_1" />
     </node>
-    <node concept="3_aW4n" id="5PdLXX5UVnw" role="3_aW3F">
-      <property role="TrG5h" value="Third2" />
+    <node concept="3_aW4n" id="3QO5pQQtNDu" role="3_aW3F">
+      <property role="TrG5h" value="Receiver_2" />
     </node>
-    <node concept="3_aW4n" id="5PdLXX5UVnx" role="3_aW3F">
-      <property role="TrG5h" value="Fourth" />
+    <node concept="oRLRZ" id="3QO5pQQtNDF" role="3_aW3_" />
+    <node concept="3_aW46" id="3QO5pQQtNDB" role="3_aW3_">
+      <node concept="oYKel" id="3QO5pQQtNDL" role="oZz2X">
+        <ref role="oYKei" node="3QO5pQQtNDp" resolve="Sender" />
+      </node>
+      <node concept="oYKel" id="3QO5pQQtNDN" role="oZz2S">
+        <ref role="oYKei" node="3QO5pQQtNDr" resolve="Receiver_1" />
+      </node>
+      <node concept="ru7O1" id="3QO5pQQtNDP" role="3_fVoY">
+        <property role="ru7PJ" value="message()" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="3QO5pQQtNE4" role="3_aW3_" />
+    <node concept="3_aW46" id="3QO5pQQtNEl" role="3_aW3_">
+      <node concept="oYKel" id="3QO5pQQtNEv" role="oZz2X">
+        <ref role="oYKei" node="3QO5pQQtNDp" resolve="Sender" />
+      </node>
+      <node concept="oYKel" id="3QO5pQQtNEx" role="oZz2S">
+        <ref role="oYKei" node="3QO5pQQtNDu" resolve="Receiver_2" />
+      </node>
+      <node concept="ru7O1" id="3QO5pQQtNEz" role="3_fVoY">
+        <property role="ru7PJ" value="another_message" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="3QO5pQQtNDR" role="3_aW3_" />
+    <node concept="3_aW46" id="3QO5pQQtNEM" role="3_aW3_">
+      <node concept="oYKel" id="3QO5pQQtNF0" role="oZz2X">
+        <ref role="oYKei" node="3QO5pQQtNDu" resolve="Receiver_2" />
+      </node>
+      <node concept="oYKel" id="3QO5pQQtNF2" role="oZz2S">
+        <ref role="oYKei" node="3QO5pQQtNDr" resolve="Receiver_1" />
+      </node>
+      <node concept="ru7O1" id="3QO5pQQtNF4" role="3_fVoY">
+        <property role="ru7PJ" value="third_message" />
+      </node>
     </node>
   </node>
 </model>

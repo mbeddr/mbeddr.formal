@@ -4,6 +4,7 @@
   <languages>
     <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="4" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
+    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
@@ -16,41 +17,6 @@
       <concept id="2685719935121672279" name="com.mbeddr.formal.nusmv.cbd.structure.ModuleRef" flags="ng" index="eml1q">
         <reference id="2685719935121672280" name="module" index="eml1l" />
       </concept>
-      <concept id="1258148499699359659" name="com.mbeddr.formal.nusmv.cbd.structure.IContractsContainer" flags="ng" index="3Ic8zf">
-        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
-      </concept>
-      <concept id="9066112305507423291" name="com.mbeddr.formal.nusmv.cbd.structure.Connection" flags="ng" index="3Ug1$w">
-        <child id="9066112305507423293" name="source" index="3Ug1$A" />
-        <child id="9066112305507423296" name="target" index="3Ug1_r" />
-      </concept>
-      <concept id="9066112305507423290" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
-        <child id="9066112305507508715" name="content" index="3UgYNK" />
-      </concept>
-      <concept id="9066112305507423362" name="com.mbeddr.formal.nusmv.cbd.structure.PortRef" flags="ng" index="3Ug1Ap">
-        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
-      </concept>
-      <concept id="9066112305507423392" name="com.mbeddr.formal.nusmv.cbd.structure.Instance" flags="ng" index="3Ug1AV">
-        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
-      </concept>
-      <concept id="9066112305507423396" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
-        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
-      </concept>
-      <concept id="9066112305507423795" name="com.mbeddr.formal.nusmv.cbd.structure.CompositePart" flags="ng" index="3Ug1GC">
-        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
-        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
-      </concept>
-      <concept id="9066112305507423796" name="com.mbeddr.formal.nusmv.cbd.structure.InstanceRef" flags="ng" index="3Ug1GJ">
-        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
-      </concept>
-      <concept id="9066112305507315482" name="com.mbeddr.formal.nusmv.cbd.structure.InputPort" flags="ng" index="3UnI81" />
-      <concept id="9066112305507315474" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterface" flags="ng" index="3UnI89">
-        <child id="9066112305507315547" name="outputs" index="3UnI90" />
-        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
-      </concept>
-      <concept id="9066112305507315478" name="com.mbeddr.formal.nusmv.cbd.structure.Port" flags="ng" index="3UnI8d">
-        <child id="9066112305507315483" name="type" index="3UnI80" />
-      </concept>
-      <concept id="9066112305507315532" name="com.mbeddr.formal.nusmv.cbd.structure.OutputPort" flags="ng" index="3UnI9n" />
       <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
     </language>
@@ -199,6 +165,43 @@
         <reference id="4946522816140814292" name="componentInterface" index="1_Prev" />
       </concept>
     </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="1258148499699359659" name="com.mbeddr.formal.base.arch.structure.IContractsContainer" flags="ng" index="3Ic8zf">
+        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
+      </concept>
+      <concept id="9066112305507423291" name="com.mbeddr.formal.base.arch.structure.Connection" flags="ng" index="3Ug1$w">
+        <child id="9066112305507423293" name="source" index="3Ug1$A" />
+        <child id="9066112305507423296" name="target" index="3Ug1_r" />
+      </concept>
+      <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
+        <child id="9066112305507508715" name="content" index="3UgYNK" />
+      </concept>
+      <concept id="9066112305507423362" name="com.mbeddr.formal.base.arch.structure.PortRef" flags="ng" index="3Ug1Ap">
+        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
+      </concept>
+      <concept id="9066112305507423392" name="com.mbeddr.formal.base.arch.structure.Instance" flags="ng" index="3Ug1AV">
+        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
+      </concept>
+      <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
+        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+      <concept id="9066112305507423795" name="com.mbeddr.formal.base.arch.structure.CompositePart" flags="ng" index="3Ug1GC">
+        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
+        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
+      </concept>
+      <concept id="9066112305507423796" name="com.mbeddr.formal.base.arch.structure.InstanceRef" flags="ng" index="3Ug1GJ">
+        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
+      </concept>
+      <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
+      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
@@ -230,6 +233,22 @@
     <node concept="2SQmWS" id="1xpXAu0YL6B" role="2HcuB8" />
     <node concept="3UnI89" id="1xpXAu0YL7V" role="2HcuB8">
       <property role="TrG5h" value="Int1_PASS" />
+      <node concept="3UnI81" id="1xpXAu0ZPLv" role="3UnI9m">
+        <property role="TrG5h" value="in1_1" />
+        <node concept="1savGX" id="1xpXAu0ZPLA" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="1xpXAu0ZPKR" role="3UnI90">
+        <property role="TrG5h" value="out1_1" />
+        <node concept="1savGX" id="1xpXAu0ZPL4" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="1xpXAu0ZPLa" role="3UnI90">
+        <property role="TrG5h" value="out1_2" />
+        <node concept="2Hds6S" id="1xpXAu0ZPMq" role="3UnI80" />
+      </node>
       <node concept="3US$BV" id="1xpXAu10LUO" role="3UnIb_">
         <property role="TrG5h" value="in_1_1_ne0" />
         <node concept="dheZm" id="1xpXAu10LVa" role="1yBDGv">
@@ -259,26 +278,26 @@
           </node>
         </node>
       </node>
-      <node concept="3UnI81" id="1xpXAu0ZPLv" role="3UnI9m">
-        <property role="TrG5h" value="in1_1" />
-        <node concept="1savGX" id="1xpXAu0ZPLA" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="1xpXAu0ZPKR" role="3UnI90">
-        <property role="TrG5h" value="out1_1" />
-        <node concept="1savGX" id="1xpXAu0ZPL4" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="1xpXAu0ZPLa" role="3UnI90">
-        <property role="TrG5h" value="out1_2" />
-        <node concept="2Hds6S" id="1xpXAu0ZPMq" role="3UnI80" />
-      </node>
     </node>
     <node concept="2SQmWS" id="1xpXAu0ZPKk" role="2HcuB8" />
     <node concept="3UnI89" id="1xpXAu0YDJj" role="2HcuB8">
       <property role="TrG5h" value="Int2_PASS" />
+      <node concept="3UnI81" id="1xpXAu0YL45" role="3UnI9m">
+        <property role="TrG5h" value="in2_1" />
+        <node concept="1savGX" id="1xpXAu0YL6Z" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="1xpXAu0ZPLG" role="3UnI9m">
+        <property role="TrG5h" value="in2_2" />
+        <node concept="2Hds6S" id="1xpXAu0ZPM6" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="1xpXAu0YL3Y" role="3UnI90">
+        <property role="TrG5h" value="out2_1" />
+        <node concept="1savGX" id="1xpXAu0YL7d" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
+        </node>
+      </node>
       <node concept="3US$BV" id="1xpXAu10LX4" role="3UnIb_">
         <property role="TrG5h" value="in2_2_is_false_implies_in2_1_ne_3" />
         <node concept="1yyYsf" id="1xpXAu10LXw" role="1yBDGv">
@@ -308,60 +327,10 @@
           </node>
         </node>
       </node>
-      <node concept="3UnI81" id="1xpXAu0YL45" role="3UnI9m">
-        <property role="TrG5h" value="in2_1" />
-        <node concept="1savGX" id="1xpXAu0YL6Z" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="1xpXAu0ZPLG" role="3UnI9m">
-        <property role="TrG5h" value="in2_2" />
-        <node concept="2Hds6S" id="1xpXAu0ZPM6" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="1xpXAu0YL3Y" role="3UnI90">
-        <property role="TrG5h" value="out2_1" />
-        <node concept="1savGX" id="1xpXAu0YL7d" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
-        </node>
-      </node>
     </node>
     <node concept="2SQmWS" id="1xpXAu0ZPK_" role="2HcuB8" />
     <node concept="3Ug1$x" id="1xpXAu0ZPMw" role="2HcuB8">
       <property role="TrG5h" value="Assembly1_PASS" />
-      <node concept="3US$BV" id="1xpXAu10LYA" role="3UnIb_">
-        <property role="TrG5h" value="in1_gt_4" />
-        <node concept="nE0YJ" id="1xpXAu10LYS" role="1yBDGv">
-          <node concept="2IPVmt" id="1xpXAu10LYY" role="2H9Ial">
-            <property role="2IPVms" value="4" />
-          </node>
-          <node concept="3Ug1Ap" id="1xpXAu10LYM" role="2H9Iav">
-            <ref role="3Ug1Ao" node="1xpXAu0ZPNI" resolve="in1" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UTh7Y" id="1xpXAu10LZl" role="3UnIb_">
-        <property role="TrG5h" value="out1_ne_0" />
-        <node concept="dheZm" id="1xpXAu10M0n" role="1yBDGv">
-          <node concept="2IPVmt" id="1xpXAu10M0y" role="2H9Ial">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="3Ug1Ap" id="1xpXAu10M0h" role="2H9Iav">
-            <ref role="3Ug1Ao" node="1xpXAu0ZPO1" resolve="out1" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI9n" id="1xpXAu0ZPO1" role="3UnI90">
-        <property role="TrG5h" value="out1" />
-        <node concept="1savGX" id="1xpXAu0ZPOe" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="1xpXAu0ZPNI" role="3UnI9m">
-        <property role="TrG5h" value="in1" />
-        <node concept="1savGX" id="1xpXAu0ZPNV" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
-        </node>
-      </node>
       <node concept="37mRI7" id="1xpXAu0ZPOl" role="lGtFl">
         <node concept="37mRIm" id="1xpXAu0ZPOm" role="37mRID">
           <property role="37mO49" value="box_1754704454243802350" />
@@ -402,6 +371,18 @@
             <property role="gqqTy" value="65.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="1xpXAu0ZPNI" role="3UnI9m">
+        <property role="TrG5h" value="in1" />
+        <node concept="1savGX" id="1xpXAu0ZPNV" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="1xpXAu0ZPO1" role="3UnI90">
+        <property role="TrG5h" value="out1" />
+        <node concept="1savGX" id="1xpXAu0ZPOe" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu0YL5x" resolve="values_interval" />
         </node>
       </node>
       <node concept="3Ug1AV" id="1xpXAu10LRL" role="3UgYNK">
@@ -463,6 +444,28 @@
           <ref role="3Ug1Ha" node="1xpXAu0ZPLG" resolve="in2_2" />
           <node concept="3Ug1GJ" id="1xpXAu10LTZ" role="3Ug1Hl">
             <ref role="3Ug1GI" node="1xpXAu10LS2" resolve="C2" />
+          </node>
+        </node>
+      </node>
+      <node concept="3US$BV" id="1xpXAu10LYA" role="3UnIb_">
+        <property role="TrG5h" value="in1_gt_4" />
+        <node concept="nE0YJ" id="1xpXAu10LYS" role="1yBDGv">
+          <node concept="2IPVmt" id="1xpXAu10LYY" role="2H9Ial">
+            <property role="2IPVms" value="4" />
+          </node>
+          <node concept="3Ug1Ap" id="1xpXAu10LYM" role="2H9Iav">
+            <ref role="3Ug1Ao" node="1xpXAu0ZPNI" resolve="in1" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="1xpXAu10LZl" role="3UnIb_">
+        <property role="TrG5h" value="out1_ne_0" />
+        <node concept="dheZm" id="1xpXAu10M0n" role="1yBDGv">
+          <node concept="2IPVmt" id="1xpXAu10M0y" role="2H9Ial">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="3Ug1Ap" id="1xpXAu10M0h" role="2H9Iav">
+            <ref role="3Ug1Ao" node="1xpXAu0ZPO1" resolve="out1" />
           </node>
         </node>
       </node>
@@ -1064,6 +1067,22 @@
     <node concept="2SQmWS" id="1xpXAu1227X" role="2HcuB8" />
     <node concept="3UnI89" id="1xpXAu1227Y" role="2HcuB8">
       <property role="TrG5h" value="Int1_FAIL" />
+      <node concept="3UnI81" id="1xpXAu1228a" role="3UnI9m">
+        <property role="TrG5h" value="in1_1" />
+        <node concept="1savGX" id="1xpXAu1228b" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="1xpXAu1228c" role="3UnI90">
+        <property role="TrG5h" value="out1_1" />
+        <node concept="1savGX" id="1xpXAu1228d" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="1xpXAu1228e" role="3UnI90">
+        <property role="TrG5h" value="out1_2" />
+        <node concept="2Hds6S" id="1xpXAu1228f" role="3UnI80" />
+      </node>
       <node concept="3US$BV" id="1xpXAu1227Z" role="3UnIb_">
         <property role="TrG5h" value="in_1_1_ne_5" />
         <node concept="dheZm" id="1xpXAu12280" role="1yBDGv">
@@ -1093,26 +1112,26 @@
           </node>
         </node>
       </node>
-      <node concept="3UnI81" id="1xpXAu1228a" role="3UnI9m">
-        <property role="TrG5h" value="in1_1" />
-        <node concept="1savGX" id="1xpXAu1228b" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="1xpXAu1228c" role="3UnI90">
-        <property role="TrG5h" value="out1_1" />
-        <node concept="1savGX" id="1xpXAu1228d" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="1xpXAu1228e" role="3UnI90">
-        <property role="TrG5h" value="out1_2" />
-        <node concept="2Hds6S" id="1xpXAu1228f" role="3UnI80" />
-      </node>
     </node>
     <node concept="2SQmWS" id="1xpXAu1228g" role="2HcuB8" />
     <node concept="3UnI89" id="1xpXAu1228h" role="2HcuB8">
       <property role="TrG5h" value="Int2_FAIL" />
+      <node concept="3UnI81" id="1xpXAu1228t" role="3UnI9m">
+        <property role="TrG5h" value="in2_1" />
+        <node concept="1savGX" id="1xpXAu1228u" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="1xpXAu1228v" role="3UnI9m">
+        <property role="TrG5h" value="in2_2" />
+        <node concept="2Hds6S" id="1xpXAu1228w" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="1xpXAu1228x" role="3UnI90">
+        <property role="TrG5h" value="out2_1" />
+        <node concept="1savGX" id="1xpXAu1228y" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
+        </node>
+      </node>
       <node concept="3US$BV" id="1xpXAu1228i" role="3UnIb_">
         <property role="TrG5h" value="in2_2_is_false_implies_in2_1_ne_3" />
         <node concept="1yyYsf" id="1xpXAu1228j" role="1yBDGv">
@@ -1142,60 +1161,10 @@
           </node>
         </node>
       </node>
-      <node concept="3UnI81" id="1xpXAu1228t" role="3UnI9m">
-        <property role="TrG5h" value="in2_1" />
-        <node concept="1savGX" id="1xpXAu1228u" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="1xpXAu1228v" role="3UnI9m">
-        <property role="TrG5h" value="in2_2" />
-        <node concept="2Hds6S" id="1xpXAu1228w" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="1xpXAu1228x" role="3UnI90">
-        <property role="TrG5h" value="out2_1" />
-        <node concept="1savGX" id="1xpXAu1228y" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
-        </node>
-      </node>
     </node>
     <node concept="2SQmWS" id="1xpXAu1228z" role="2HcuB8" />
     <node concept="3Ug1$x" id="1xpXAu1228$" role="2HcuB8">
       <property role="TrG5h" value="Assembly1_FAIL" />
-      <node concept="3US$BV" id="1xpXAu1228_" role="3UnIb_">
-        <property role="TrG5h" value="in1_gt_4" />
-        <node concept="nE0YJ" id="1xpXAu1228A" role="1yBDGv">
-          <node concept="2IPVmt" id="1xpXAu1228B" role="2H9Ial">
-            <property role="2IPVms" value="4" />
-          </node>
-          <node concept="3Ug1Ap" id="1xpXAu1228C" role="2H9Iav">
-            <ref role="3Ug1Ao" node="1xpXAu1228J" resolve="in1" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UTh7Y" id="1xpXAu1228D" role="3UnIb_">
-        <property role="TrG5h" value="out1_ne_0" />
-        <node concept="dheZm" id="1xpXAu1228E" role="1yBDGv">
-          <node concept="2IPVmt" id="1xpXAu1228F" role="2H9Ial">
-            <property role="2IPVms" value="10" />
-          </node>
-          <node concept="3Ug1Ap" id="1xpXAu1228G" role="2H9Iav">
-            <ref role="3Ug1Ao" node="1xpXAu1228H" resolve="out1" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI9n" id="1xpXAu1228H" role="3UnI90">
-        <property role="TrG5h" value="out1" />
-        <node concept="1savGX" id="1xpXAu1228I" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="1xpXAu1228J" role="3UnI9m">
-        <property role="TrG5h" value="in1" />
-        <node concept="1savGX" id="1xpXAu1228K" role="3UnI80">
-          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
-        </node>
-      </node>
       <node concept="37mRI7" id="1xpXAu1228L" role="lGtFl">
         <node concept="37mRIm" id="1xpXAu1228M" role="37mRID">
           <property role="37mO49" value="box_1754704454243802350" />
@@ -1310,6 +1279,18 @@
           </node>
         </node>
       </node>
+      <node concept="3UnI81" id="1xpXAu1228J" role="3UnI9m">
+        <property role="TrG5h" value="in1" />
+        <node concept="1savGX" id="1xpXAu1228K" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="1xpXAu1228H" role="3UnI90">
+        <property role="TrG5h" value="out1" />
+        <node concept="1savGX" id="1xpXAu1228I" role="3UnI80">
+          <ref role="1savGW" node="1xpXAu1227T" resolve="values_interval" />
+        </node>
+      </node>
       <node concept="3Ug1AV" id="1xpXAu1228U" role="3UgYNK">
         <property role="TrG5h" value="C1" />
         <node concept="3Ug1AZ" id="1xpXAu1228V" role="3Ug1A_">
@@ -1369,6 +1350,28 @@
           <ref role="3Ug1Ha" node="1xpXAu1228v" resolve="in2_2" />
           <node concept="3Ug1GJ" id="1xpXAu1229f" role="3Ug1Hl">
             <ref role="3Ug1GI" node="1xpXAu1228W" resolve="C2" />
+          </node>
+        </node>
+      </node>
+      <node concept="3US$BV" id="1xpXAu1228_" role="3UnIb_">
+        <property role="TrG5h" value="in1_gt_4" />
+        <node concept="nE0YJ" id="1xpXAu1228A" role="1yBDGv">
+          <node concept="2IPVmt" id="1xpXAu1228B" role="2H9Ial">
+            <property role="2IPVms" value="4" />
+          </node>
+          <node concept="3Ug1Ap" id="1xpXAu1228C" role="2H9Iav">
+            <ref role="3Ug1Ao" node="1xpXAu1228J" resolve="in1" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="1xpXAu1228D" role="3UnIb_">
+        <property role="TrG5h" value="out1_ne_0" />
+        <node concept="dheZm" id="1xpXAu1228E" role="1yBDGv">
+          <node concept="2IPVmt" id="1xpXAu1228F" role="2H9Ial">
+            <property role="2IPVms" value="10" />
+          </node>
+          <node concept="3Ug1Ap" id="1xpXAu1228G" role="2H9Iav">
+            <ref role="3Ug1Ao" node="1xpXAu1228H" resolve="out1" />
           </node>
         </node>
       </node>

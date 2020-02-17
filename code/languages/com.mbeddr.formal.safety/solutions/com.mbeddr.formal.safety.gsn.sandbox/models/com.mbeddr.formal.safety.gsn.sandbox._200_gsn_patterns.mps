@@ -13,48 +13,14 @@
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
-    <use id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd" version="0" />
+    <use id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd" version="1" />
     <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="0" />
+    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
   </languages>
   <imports />
   <registry>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
-      <concept id="1258148499699359659" name="com.mbeddr.formal.nusmv.cbd.structure.IContractsContainer" flags="ng" index="3Ic8zf">
-        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
-      </concept>
-      <concept id="9066112305507423291" name="com.mbeddr.formal.nusmv.cbd.structure.Connection" flags="ng" index="3Ug1$w">
-        <child id="9066112305507423293" name="source" index="3Ug1$A" />
-        <child id="9066112305507423296" name="target" index="3Ug1_r" />
-      </concept>
-      <concept id="9066112305507423290" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
-        <child id="9066112305507508715" name="content" index="3UgYNK" />
-      </concept>
-      <concept id="9066112305507423362" name="com.mbeddr.formal.nusmv.cbd.structure.PortRef" flags="ng" index="3Ug1Ap">
-        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
-      </concept>
-      <concept id="9066112305507423392" name="com.mbeddr.formal.nusmv.cbd.structure.Instance" flags="ng" index="3Ug1AV">
-        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
-      </concept>
-      <concept id="9066112305507423396" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
-        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
-      </concept>
-      <concept id="9066112305507423795" name="com.mbeddr.formal.nusmv.cbd.structure.CompositePart" flags="ng" index="3Ug1GC">
-        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
-        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
-      </concept>
-      <concept id="9066112305507423796" name="com.mbeddr.formal.nusmv.cbd.structure.InstanceRef" flags="ng" index="3Ug1GJ">
-        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
-      </concept>
-      <concept id="9066112305507315482" name="com.mbeddr.formal.nusmv.cbd.structure.InputPort" flags="ng" index="3UnI81" />
-      <concept id="9066112305507315474" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterface" flags="ng" index="3UnI89">
-        <child id="9066112305507315547" name="outputs" index="3UnI90" />
-        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
-      </concept>
-      <concept id="9066112305507315478" name="com.mbeddr.formal.nusmv.cbd.structure.Port" flags="ng" index="3UnI8d">
-        <child id="9066112305507315483" name="type" index="3UnI80" />
-      </concept>
-      <concept id="9066112305507315532" name="com.mbeddr.formal.nusmv.cbd.structure.OutputPort" flags="ng" index="3UnI9n" />
       <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
     </language>
@@ -190,6 +156,43 @@
       <concept id="4946522816140814257" name="com.mbeddr.formal.safety.gsn.smv.structure.ComponentInterfaceRef" flags="ng" index="1_PrfU">
         <reference id="4946522816140814292" name="componentInterface" index="1_Prev" />
       </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="1258148499699359659" name="com.mbeddr.formal.base.arch.structure.IContractsContainer" flags="ng" index="3Ic8zf">
+        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
+      </concept>
+      <concept id="9066112305507423291" name="com.mbeddr.formal.base.arch.structure.Connection" flags="ng" index="3Ug1$w">
+        <child id="9066112305507423293" name="source" index="3Ug1$A" />
+        <child id="9066112305507423296" name="target" index="3Ug1_r" />
+      </concept>
+      <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
+        <child id="9066112305507508715" name="content" index="3UgYNK" />
+      </concept>
+      <concept id="9066112305507423362" name="com.mbeddr.formal.base.arch.structure.PortRef" flags="ng" index="3Ug1Ap">
+        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
+      </concept>
+      <concept id="9066112305507423392" name="com.mbeddr.formal.base.arch.structure.Instance" flags="ng" index="3Ug1AV">
+        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
+      </concept>
+      <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
+        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+      <concept id="9066112305507423795" name="com.mbeddr.formal.base.arch.structure.CompositePart" flags="ng" index="3Ug1GC">
+        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
+        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
+      </concept>
+      <concept id="9066112305507423796" name="com.mbeddr.formal.base.arch.structure.InstanceRef" flags="ng" index="3Ug1GJ">
+        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
+      </concept>
+      <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
+      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
@@ -2249,32 +2252,6 @@
     <node concept="2SQmWS" id="72xocJViZdN" role="2HcuB8" />
     <node concept="3Ug1$x" id="72xocJViZiB" role="2HcuB8">
       <property role="TrG5h" value="Arch" />
-      <node concept="3Ug1AV" id="72xocJViZjt" role="3UgYNK">
-        <property role="TrG5h" value="sender" />
-        <node concept="3Ug1AZ" id="72xocJViZjx" role="3Ug1A_">
-          <ref role="3Ug1AY" node="72xocJViZcv" resolve="Sender" />
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="72xocJViZjC" role="3UgYNK">
-        <property role="TrG5h" value="receiver" />
-        <node concept="3Ug1AZ" id="72xocJViZjN" role="3Ug1A_">
-          <ref role="3Ug1AY" node="72xocJViZex" resolve="Receiver" />
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="72xocJViZjW" role="3UgYNK">
-        <node concept="3Ug1GC" id="72xocJViZk3" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="72xocJViZcy" resolve="out" />
-          <node concept="3Ug1GJ" id="72xocJViZk7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="72xocJViZjt" resolve="sender" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="72xocJViZka" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="72xocJViZfY" resolve="in" />
-          <node concept="3Ug1GJ" id="72xocJViZke" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="72xocJViZjC" resolve="receiver" />
-          </node>
-        </node>
-      </node>
       <node concept="37mRI7" id="72xocJViZkE" role="lGtFl">
         <node concept="37mRIm" id="72xocJViZkF" role="37mRID">
           <property role="37mO49" value="box_8115874432709031133" />
@@ -2302,6 +2279,32 @@
               <property role="1pa3iD" value="in" />
               <property role="2gRgW$" value="1073741823" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="72xocJViZjt" role="3UgYNK">
+        <property role="TrG5h" value="sender" />
+        <node concept="3Ug1AZ" id="72xocJViZjx" role="3Ug1A_">
+          <ref role="3Ug1AY" node="72xocJViZcv" resolve="Sender" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="72xocJViZjC" role="3UgYNK">
+        <property role="TrG5h" value="receiver" />
+        <node concept="3Ug1AZ" id="72xocJViZjN" role="3Ug1A_">
+          <ref role="3Ug1AY" node="72xocJViZex" resolve="Receiver" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="72xocJViZjW" role="3UgYNK">
+        <node concept="3Ug1GC" id="72xocJViZk3" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="72xocJViZcy" resolve="out" />
+          <node concept="3Ug1GJ" id="72xocJViZk7" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="72xocJViZjt" resolve="sender" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="72xocJViZka" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="72xocJViZfY" resolve="in" />
+          <node concept="3Ug1GJ" id="72xocJViZke" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="72xocJViZjC" resolve="receiver" />
           </node>
         </node>
       </node>

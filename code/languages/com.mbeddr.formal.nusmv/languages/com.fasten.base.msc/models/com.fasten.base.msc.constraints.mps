@@ -15,7 +15,7 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="6jj4" ref="r:77d7f4e3-953a-49ab-a2c5-934fc706bf67(com.fasten.base.msc.structure)" implicit="true" />
+    <import index="6jj4" ref="r:77d7f4e3-953a-49ab-a2c5-934fc706bf67(com.fasten.base.msc.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -90,8 +90,8 @@
                   <node concept="2rP1CM" id="HiEhrZgZ$q" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="HiEhrZgZYX" role="2OqNvi">
                     <node concept="1xMEDy" id="HiEhrZgZYZ" role="1xVPHs">
-                      <node concept="chp4Y" id="HiEhrZh093" role="ri$Ld">
-                        <ref role="cht4Q" to="6jj4:4CA5ZMJ3trC" resolve="MessageSequenceChart" />
+                      <node concept="chp4Y" id="3QO5pQQKy3n" role="ri$Ld">
+                        <ref role="cht4Q" to="6jj4:3QO5pQQIAMQ" resolve="MessageSequenceChartBase" />
                       </node>
                     </node>
                     <node concept="1xIGOp" id="HiEhrZh0il" role="1xVPHs" />
