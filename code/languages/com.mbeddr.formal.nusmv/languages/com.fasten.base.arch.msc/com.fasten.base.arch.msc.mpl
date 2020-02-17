@@ -6,7 +6,9 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" />
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
   </facets>
   <accessoryModels />
   <generators>
@@ -45,6 +47,8 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="3b22dedc-d6cf-4626-9445-6e9909b3e04a(com.fasten.base.arch.msc)" version="0" />
         <module reference="8886258d-73f3-4bd0-a22a-768b22719c28(com.fasten.base.arch.msc#01)" version="0" />
+        <module reference="81f6a079-965e-4523-87c3-8e6194f66585(com.fasten.base.msc)" version="0" />
+        <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
       </dependencyVersions>
@@ -57,7 +61,6 @@
     <dependency reexport="false">71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />

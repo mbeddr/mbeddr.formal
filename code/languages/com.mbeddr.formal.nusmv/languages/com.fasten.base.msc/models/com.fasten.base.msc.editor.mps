@@ -3824,14 +3824,14 @@
               <node concept="3cpWsn" id="HiEhrZeMdQ" role="3cpWs9">
                 <property role="TrG5h" value="myMSC" />
                 <node concept="3Tqbb2" id="HiEhrZeMdR" role="1tU5fm">
-                  <ref role="ehGHo" to="6jj4:4CA5ZMJ3trC" resolve="MessageSequenceChart" />
+                  <ref role="ehGHo" to="6jj4:3QO5pQQIAMQ" resolve="MessageSequenceChartBase" />
                 </node>
                 <node concept="2OqwBi" id="HiEhrZeMdS" role="33vP2m">
                   <node concept="pncrf" id="HiEhrZeMdT" role="2Oq$k0" />
                   <node concept="2Xjw5R" id="HiEhrZeMdU" role="2OqNvi">
                     <node concept="1xMEDy" id="HiEhrZeMdV" role="1xVPHs">
-                      <node concept="chp4Y" id="HiEhrZeMdW" role="ri$Ld">
-                        <ref role="cht4Q" to="6jj4:4CA5ZMJ3trC" resolve="MessageSequenceChart" />
+                      <node concept="chp4Y" id="3QO5pQQSi7T" role="ri$Ld">
+                        <ref role="cht4Q" to="6jj4:3QO5pQQIAMQ" resolve="MessageSequenceChartBase" />
                       </node>
                     </node>
                     <node concept="1xIGOp" id="HiEhrZeMdX" role="1xVPHs" />
@@ -3957,7 +3957,7 @@
       <node concept="37vLTG" id="HiEhrZeOCw" role="3clF46">
         <property role="TrG5h" value="msc" />
         <node concept="3Tqbb2" id="HiEhrZeOCx" role="1tU5fm">
-          <ref role="ehGHo" to="6jj4:4CA5ZMJ3trC" resolve="MessageSequenceChart" />
+          <ref role="ehGHo" to="6jj4:3QO5pQQIAMQ" resolve="MessageSequenceChartBase" />
         </node>
       </node>
       <node concept="37vLTG" id="HiEhrZeOCy" role="3clF46">

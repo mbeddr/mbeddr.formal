@@ -164,6 +164,7 @@
     <property role="3GE5qa" value="timeline" />
     <property role="TrG5h" value="StateDistributed" />
     <property role="34LRSv" value="state distributed" />
+    <property role="R4oN_" value="state of each object" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="HiEhrZeLrA" role="1TKVEi">
       <property role="IQ2ns" value="815900398743918310" />
