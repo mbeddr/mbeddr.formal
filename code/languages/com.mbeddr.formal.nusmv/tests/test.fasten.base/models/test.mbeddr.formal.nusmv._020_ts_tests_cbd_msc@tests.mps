@@ -36,6 +36,9 @@
         <child id="5342984381957789465" name="messages" index="3_aW3_" />
         <child id="5342984381957789463" name="objects" index="3_aW3F" />
       </concept>
+      <concept id="6723249580493604072" name="com.fasten.base.msc.structure.State" flags="ng" index="oO4cR">
+        <child id="6723249580493876691" name="exp" index="oV6Cc" />
+      </concept>
       <concept id="6723249580492904992" name="com.fasten.base.msc.structure.EmptyTimelineEntity" flags="ng" index="oRLRZ" />
       <concept id="6723249580495258698" name="com.fasten.base.msc.structure.MSCObjectRef" flags="ng" index="oYKel">
         <reference id="6723249580495258701" name="mscObject" index="oYKei" />
@@ -50,6 +53,9 @@
       <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
+        <property id="7320199582618415059" name="value" index="ru7PJ" />
+      </concept>
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -157,6 +163,12 @@
                 <node concept="1TM$A" id="3QO5pQQMUhW" role="7EUXB" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="oRLRZ" id="3QO5pQQNR0Q" role="3_aW3_" />
+        <node concept="oO4cR" id="3QO5pQQNR21" role="3_aW3_">
+          <node concept="ru7O1" id="3QO5pQQNR2C" role="oV6Cc">
+            <property role="ru7PJ" value="dd" />
           </node>
         </node>
         <node concept="2b3SXi" id="3QO5pQQMPQn" role="3_aW3F">
