@@ -13,6 +13,7 @@
     <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
+    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
@@ -43,42 +44,6 @@
       </concept>
     </language>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
-      <concept id="1258148499699359659" name="com.mbeddr.formal.nusmv.cbd.structure.IContractsContainer" flags="ng" index="3Ic8zf">
-        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
-      </concept>
-      <concept id="9066112305507423291" name="com.mbeddr.formal.nusmv.cbd.structure.Connection" flags="ng" index="3Ug1$w">
-        <child id="9066112305507423293" name="source" index="3Ug1$A" />
-        <child id="9066112305507423296" name="target" index="3Ug1_r" />
-      </concept>
-      <concept id="9066112305507423290" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
-        <child id="5906421183240323769" name="interfaceRef" index="2p5x1W" />
-        <child id="9066112305507508715" name="content" index="3UgYNK" />
-      </concept>
-      <concept id="9066112305507423362" name="com.mbeddr.formal.nusmv.cbd.structure.PortRef" flags="ng" index="3Ug1Ap">
-        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
-      </concept>
-      <concept id="9066112305507423392" name="com.mbeddr.formal.nusmv.cbd.structure.Instance" flags="ng" index="3Ug1AV">
-        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
-      </concept>
-      <concept id="9066112305507423396" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
-        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
-      </concept>
-      <concept id="9066112305507423795" name="com.mbeddr.formal.nusmv.cbd.structure.CompositePart" flags="ng" index="3Ug1GC">
-        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
-        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
-      </concept>
-      <concept id="9066112305507423796" name="com.mbeddr.formal.nusmv.cbd.structure.InstanceRef" flags="ng" index="3Ug1GJ">
-        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
-      </concept>
-      <concept id="9066112305507315482" name="com.mbeddr.formal.nusmv.cbd.structure.InputPort" flags="ng" index="3UnI81" />
-      <concept id="9066112305507315474" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterface" flags="ng" index="3UnI89">
-        <child id="9066112305507315547" name="outputs" index="3UnI90" />
-        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
-      </concept>
-      <concept id="9066112305507315478" name="com.mbeddr.formal.nusmv.cbd.structure.Port" flags="ng" index="3UnI8d">
-        <child id="9066112305507315483" name="type" index="3UnI80" />
-      </concept>
-      <concept id="9066112305507315532" name="com.mbeddr.formal.nusmv.cbd.structure.OutputPort" flags="ng" index="3UnI9n" />
       <concept id="9066112305501141496" name="com.mbeddr.formal.nusmv.cbd.structure.ContractsSpec" flags="ng" index="3US3jz" />
       <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
@@ -298,6 +263,44 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="1258148499699359659" name="com.mbeddr.formal.base.arch.structure.IContractsContainer" flags="ng" index="3Ic8zf">
+        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
+      </concept>
+      <concept id="9066112305507423291" name="com.mbeddr.formal.base.arch.structure.Connection" flags="ng" index="3Ug1$w">
+        <child id="9066112305507423293" name="source" index="3Ug1$A" />
+        <child id="9066112305507423296" name="target" index="3Ug1_r" />
+      </concept>
+      <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
+        <child id="5906421183240323769" name="interfaceRef" index="2p5x1W" />
+        <child id="9066112305507508715" name="content" index="3UgYNK" />
+      </concept>
+      <concept id="9066112305507423362" name="com.mbeddr.formal.base.arch.structure.PortRef" flags="ng" index="3Ug1Ap">
+        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
+      </concept>
+      <concept id="9066112305507423392" name="com.mbeddr.formal.base.arch.structure.Instance" flags="ng" index="3Ug1AV">
+        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
+      </concept>
+      <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
+        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+      <concept id="9066112305507423795" name="com.mbeddr.formal.base.arch.structure.CompositePart" flags="ng" index="3Ug1GC">
+        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
+        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
+      </concept>
+      <concept id="9066112305507423796" name="com.mbeddr.formal.base.arch.structure.InstanceRef" flags="ng" index="3Ug1GJ">
+        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
+      </concept>
+      <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
+      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
@@ -440,6 +443,81 @@
     <node concept="2SQmWS" id="pWUwO6CU6h" role="2HcuB8" />
     <node concept="3UnI89" id="5kaUUWfwhNS" role="2HcuB8">
       <property role="TrG5h" value="ControlBox" />
+      <node concept="3UnI81" id="5kaUUWfwhOj" role="3UnI9m">
+        <property role="TrG5h" value="l" />
+        <node concept="2XEmfi" id="pWUwO6CUdc" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhOK" role="3UnI9m">
+        <property role="TrG5h" value="n" />
+        <node concept="2XEmfi" id="pWUwO6CUdq" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhR2" role="3UnI9m">
+        <property role="TrG5h" value="pe" />
+        <node concept="2XEmfi" id="pWUwO6CUe9" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhUn" role="3UnI9m">
+        <property role="TrG5h" value="ev_connected" />
+        <node concept="2Hds6S" id="5kaUUWfwhUS" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhWX" role="3UnI9m">
+        <property role="TrG5h" value="socket_connected" />
+        <node concept="2Hds6S" id="5kaUUWfwhXw" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="1ef6u74hTR4" role="3UnI9m">
+        <property role="TrG5h" value="voltage" />
+        <node concept="dhpfj" id="1ef6u74hTS2" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hTS1" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hTSr" role="dhpfn">
+            <property role="2IPVms" value="300" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="1ef6u74hTRl" role="3UnI9m">
+        <property role="TrG5h" value="intensity" />
+        <node concept="dhpfj" id="1ef6u74hTSS" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hTSR" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hTTh" role="dhpfn">
+            <property role="2IPVms" value="20" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="1ef6u74hTRC" role="3UnI9m">
+        <property role="TrG5h" value="temperature" />
+        <node concept="dhpfj" id="1ef6u74hTUR" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hTXp" role="dhpfi">
+            <property role="2IPVms" value="-50" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hTUY" role="dhpfn">
+            <property role="2IPVms" value="100" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="6ll6Fcue342" role="3UnI9m">
+        <property role="TrG5h" value="shutdown" />
+        <node concept="2Hds6S" id="6ll6Fcue34D" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="5kaUUWfwhTv" role="3UnI90">
+        <property role="TrG5h" value="open_circuit" />
+        <node concept="2Hds6S" id="5kaUUWfwhTO" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="5kaUUWfwhTU" role="3UnI90">
+        <property role="TrG5h" value="charge" />
+        <node concept="2Hds6S" id="5kaUUWfwhUh" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="6ll6Fcue2YM" role="3UnI90">
+        <property role="TrG5h" value="disconnect_led" />
+        <node concept="2Hds6S" id="6ll6Fcue2Z1" role="3UnI80" />
+      </node>
       <node concept="3UTh7Y" id="5kaUUWfwigy" role="3UnIb_">
         <property role="TrG5h" value="rcd_emergency_shutdown" />
         <node concept="2SafMM" id="5kaUUWfwitG" role="1yBDGv">
@@ -619,84 +697,88 @@
           <ref role="0Sh0a" node="4bSVeFVFBb7" />
         </node>
       </node>
-      <node concept="3UnI9n" id="5kaUUWfwhTv" role="3UnI90">
-        <property role="TrG5h" value="open_circuit" />
-        <node concept="2Hds6S" id="5kaUUWfwhTO" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="5kaUUWfwhTU" role="3UnI90">
-        <property role="TrG5h" value="charge" />
-        <node concept="2Hds6S" id="5kaUUWfwhUh" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="6ll6Fcue2YM" role="3UnI90">
-        <property role="TrG5h" value="disconnect_led" />
-        <node concept="2Hds6S" id="6ll6Fcue2Z1" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="5kaUUWfwhOj" role="3UnI9m">
+    </node>
+    <node concept="3UnI89" id="4bSVeFVFBM5" role="2HcuB8">
+      <property role="TrG5h" value="ChargingCableController" />
+      <node concept="3UnI81" id="4bSVeFVFBMF" role="3UnI9m">
         <property role="TrG5h" value="l" />
-        <node concept="2XEmfi" id="pWUwO6CUdc" role="3UnI80">
+        <node concept="2XEmfi" id="4bSVeFVFBMG" role="3UnI80">
           <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
         </node>
       </node>
-      <node concept="3UnI81" id="5kaUUWfwhOK" role="3UnI9m">
+      <node concept="3UnI81" id="4bSVeFVFBMH" role="3UnI9m">
         <property role="TrG5h" value="n" />
-        <node concept="2XEmfi" id="pWUwO6CUdq" role="3UnI80">
+        <node concept="2XEmfi" id="4bSVeFVFBMI" role="3UnI80">
           <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
         </node>
       </node>
-      <node concept="3UnI81" id="5kaUUWfwhR2" role="3UnI9m">
+      <node concept="3UnI81" id="4bSVeFVFBMJ" role="3UnI9m">
         <property role="TrG5h" value="pe" />
-        <node concept="2XEmfi" id="pWUwO6CUe9" role="3UnI80">
+        <node concept="2XEmfi" id="4bSVeFVFBMK" role="3UnI80">
           <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
         </node>
       </node>
-      <node concept="3UnI81" id="5kaUUWfwhUn" role="3UnI9m">
+      <node concept="3UnI81" id="4bSVeFVFBML" role="3UnI9m">
         <property role="TrG5h" value="ev_connected" />
-        <node concept="2Hds6S" id="5kaUUWfwhUS" role="3UnI80" />
+        <node concept="2Hds6S" id="4bSVeFVFBMM" role="3UnI80" />
       </node>
-      <node concept="3UnI81" id="5kaUUWfwhWX" role="3UnI9m">
+      <node concept="3UnI81" id="4bSVeFVFBMN" role="3UnI9m">
         <property role="TrG5h" value="socket_connected" />
-        <node concept="2Hds6S" id="5kaUUWfwhXw" role="3UnI80" />
+        <node concept="2Hds6S" id="4bSVeFVFBMO" role="3UnI80" />
       </node>
-      <node concept="3UnI81" id="1ef6u74hTR4" role="3UnI9m">
+      <node concept="3UnI81" id="4bSVeFVFBWC" role="3UnI9m">
+        <property role="TrG5h" value="reset" />
+        <node concept="2Hds6S" id="4bSVeFVFBX5" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="1ef6u74hUlN" role="3UnI9m">
         <property role="TrG5h" value="voltage" />
-        <node concept="dhpfj" id="1ef6u74hTS2" role="3UnI80">
-          <node concept="2IPVmt" id="1ef6u74hTS1" role="dhpfi">
+        <node concept="dhpfj" id="1ef6u74hUlO" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hUlP" role="dhpfi">
             <property role="2IPVms" value="0" />
           </node>
-          <node concept="2IPVmt" id="1ef6u74hTSr" role="dhpfn">
+          <node concept="2IPVmt" id="1ef6u74hUlQ" role="dhpfn">
             <property role="2IPVms" value="300" />
           </node>
         </node>
       </node>
-      <node concept="3UnI81" id="1ef6u74hTRl" role="3UnI9m">
+      <node concept="3UnI81" id="1ef6u74hUmE" role="3UnI9m">
         <property role="TrG5h" value="intensity" />
-        <node concept="dhpfj" id="1ef6u74hTSS" role="3UnI80">
-          <node concept="2IPVmt" id="1ef6u74hTSR" role="dhpfi">
+        <node concept="dhpfj" id="1ef6u74hUmF" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hUmG" role="dhpfi">
             <property role="2IPVms" value="0" />
           </node>
-          <node concept="2IPVmt" id="1ef6u74hTTh" role="dhpfn">
+          <node concept="2IPVmt" id="1ef6u74hUmH" role="dhpfn">
             <property role="2IPVms" value="20" />
           </node>
         </node>
       </node>
-      <node concept="3UnI81" id="1ef6u74hTRC" role="3UnI9m">
+      <node concept="3UnI81" id="1ef6u74hUn_" role="3UnI9m">
         <property role="TrG5h" value="temperature" />
-        <node concept="dhpfj" id="1ef6u74hTUR" role="3UnI80">
-          <node concept="2IPVmt" id="1ef6u74hTXp" role="dhpfi">
+        <node concept="dhpfj" id="1ef6u74hUnA" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hUnB" role="dhpfi">
             <property role="2IPVms" value="-50" />
           </node>
-          <node concept="2IPVmt" id="1ef6u74hTUY" role="dhpfn">
+          <node concept="2IPVmt" id="1ef6u74hUnC" role="dhpfn">
             <property role="2IPVms" value="100" />
           </node>
         </node>
       </node>
-      <node concept="3UnI81" id="6ll6Fcue342" role="3UnI9m">
-        <property role="TrG5h" value="shutdown" />
-        <node concept="2Hds6S" id="6ll6Fcue34D" role="3UnI80" />
+      <node concept="3UnI9n" id="4bSVeFVFBMB" role="3UnI90">
+        <property role="TrG5h" value="open_circuit" />
+        <node concept="2Hds6S" id="4bSVeFVFBMC" role="3UnI80" />
       </node>
-    </node>
-    <node concept="3UnI89" id="4bSVeFVFBM5" role="2HcuB8">
-      <property role="TrG5h" value="ChargingCableController" />
+      <node concept="3UnI9n" id="4bSVeFVFBMD" role="3UnI90">
+        <property role="TrG5h" value="charge" />
+        <node concept="2Hds6S" id="4bSVeFVFBME" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4bSVeFVFBVu" role="3UnI90">
+        <property role="TrG5h" value="pingWatchDog" />
+        <node concept="1yFZfx" id="4bSVeFVFBVQ" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="6ll6Fcue2NT" role="3UnI90">
+        <property role="TrG5h" value="disconnect_led" />
+        <node concept="2Hds6S" id="6ll6Fcue2Oc" role="3UnI80" />
+      </node>
       <node concept="3UTh7Y" id="4bSVeFVFBM6" role="3UnIb_">
         <property role="TrG5h" value="rcd_emergency_shutdown" />
         <node concept="2SafMM" id="4bSVeFVFBM7" role="1yBDGv">
@@ -856,88 +938,17 @@
           <ref role="0Sh0a" node="4bSVeFVFBb7" />
         </node>
       </node>
-      <node concept="3UnI9n" id="4bSVeFVFBMB" role="3UnI90">
-        <property role="TrG5h" value="open_circuit" />
-        <node concept="2Hds6S" id="4bSVeFVFBMC" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="4bSVeFVFBMD" role="3UnI90">
-        <property role="TrG5h" value="charge" />
-        <node concept="2Hds6S" id="4bSVeFVFBME" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="4bSVeFVFBVu" role="3UnI90">
-        <property role="TrG5h" value="pingWatchDog" />
-        <node concept="1yFZfx" id="4bSVeFVFBVQ" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="6ll6Fcue2NT" role="3UnI90">
-        <property role="TrG5h" value="disconnect_led" />
-        <node concept="2Hds6S" id="6ll6Fcue2Oc" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBMF" role="3UnI9m">
-        <property role="TrG5h" value="l" />
-        <node concept="2XEmfi" id="4bSVeFVFBMG" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBMH" role="3UnI9m">
-        <property role="TrG5h" value="n" />
-        <node concept="2XEmfi" id="4bSVeFVFBMI" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBMJ" role="3UnI9m">
-        <property role="TrG5h" value="pe" />
-        <node concept="2XEmfi" id="4bSVeFVFBMK" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBML" role="3UnI9m">
-        <property role="TrG5h" value="ev_connected" />
-        <node concept="2Hds6S" id="4bSVeFVFBMM" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBMN" role="3UnI9m">
-        <property role="TrG5h" value="socket_connected" />
-        <node concept="2Hds6S" id="4bSVeFVFBMO" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBWC" role="3UnI9m">
-        <property role="TrG5h" value="reset" />
-        <node concept="2Hds6S" id="4bSVeFVFBX5" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="1ef6u74hUlN" role="3UnI9m">
-        <property role="TrG5h" value="voltage" />
-        <node concept="dhpfj" id="1ef6u74hUlO" role="3UnI80">
-          <node concept="2IPVmt" id="1ef6u74hUlP" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="1ef6u74hUlQ" role="dhpfn">
-            <property role="2IPVms" value="300" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI81" id="1ef6u74hUmE" role="3UnI9m">
-        <property role="TrG5h" value="intensity" />
-        <node concept="dhpfj" id="1ef6u74hUmF" role="3UnI80">
-          <node concept="2IPVmt" id="1ef6u74hUmG" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="1ef6u74hUmH" role="dhpfn">
-            <property role="2IPVms" value="20" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI81" id="1ef6u74hUn_" role="3UnI9m">
-        <property role="TrG5h" value="temperature" />
-        <node concept="dhpfj" id="1ef6u74hUnA" role="3UnI80">
-          <node concept="2IPVmt" id="1ef6u74hUnB" role="dhpfi">
-            <property role="2IPVms" value="-50" />
-          </node>
-          <node concept="2IPVmt" id="1ef6u74hUnC" role="dhpfn">
-            <property role="2IPVms" value="100" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="3UnI89" id="4bSVeFVFBRG" role="2HcuB8">
       <property role="TrG5h" value="WatchDog" />
+      <node concept="3UnI81" id="4bSVeFVFBVW" role="3UnI9m">
+        <property role="TrG5h" value="ping" />
+        <node concept="1yFZfx" id="4bSVeFVFBWd" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4bSVeFVFBWj" role="3UnI90">
+        <property role="TrG5h" value="reset" />
+        <node concept="2Hds6S" id="4bSVeFVFBWy" role="3UnI80" />
+      </node>
       <node concept="3UTh7Y" id="1ef6u74hUpm" role="3UnIb_">
         <property role="TrG5h" value="always_reset_if_not_ping" />
         <node concept="2SafMM" id="1ef6u74hUsI" role="1yBDGv">
@@ -957,14 +968,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3UnI9n" id="4bSVeFVFBWj" role="3UnI90">
-        <property role="TrG5h" value="reset" />
-        <node concept="2Hds6S" id="4bSVeFVFBWy" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBVW" role="3UnI9m">
-        <property role="TrG5h" value="ping" />
-        <node concept="1yFZfx" id="4bSVeFVFBWd" role="3UnI80" />
       </node>
     </node>
     <node concept="2SQmWS" id="5kaUUWfwhNO" role="2HcuB8" />
@@ -986,6 +989,57 @@
     <node concept="2SQmWS" id="pWUwO6CO7O" role="2HcuB8" />
     <node concept="3UnI89" id="pWUwO6COjZ" role="2HcuB8">
       <property role="TrG5h" value="CableSensors" />
+      <node concept="3UnI9n" id="pWUwO6COmc" role="3UnI90">
+        <property role="TrG5h" value="n" />
+        <node concept="2XEmfi" id="pWUwO6CUeS" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="pWUwO6COmg" role="3UnI90">
+        <property role="TrG5h" value="pe" />
+        <node concept="2XEmfi" id="pWUwO6CUlh" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="pWUwO6COmk" role="3UnI90">
+        <property role="TrG5h" value="l" />
+        <node concept="2XEmfi" id="pWUwO6CUlI" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="6bDIMKp8hai" role="3UnI90">
+        <property role="TrG5h" value="voltage" />
+        <node concept="dhpfj" id="6bDIMKp8ha$" role="3UnI80">
+          <node concept="2IPVmt" id="6bDIMKp8haz" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="6bDIMKp8hb0" role="dhpfn">
+            <property role="2IPVms" value="300" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI9n" id="6bDIMKp8hd6" role="3UnI90">
+        <property role="TrG5h" value="intensity" />
+        <node concept="dhpfj" id="6bDIMKp8hha" role="3UnI80">
+          <node concept="2IPVmt" id="6bDIMKp8hh9" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="6bDIMKp8hhz" role="dhpfn">
+            <property role="2IPVms" value="20" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI9n" id="6bDIMKp8hki" role="3UnI90">
+        <property role="TrG5h" value="temperature" />
+        <node concept="dhpfj" id="6bDIMKp8hpM" role="3UnI80">
+          <node concept="2IPVmt" id="6bDIMKp8hpL" role="dhpfi">
+            <property role="2IPVms" value="-50" />
+          </node>
+          <node concept="2IPVmt" id="6bDIMKp8hpT" role="dhpfn">
+            <property role="2IPVms" value="100" />
+          </node>
+        </node>
+      </node>
       <node concept="3UTh7Y" id="6bDIMKp8hdp" role="3UnIb_">
         <property role="TrG5h" value="expected_voltage_range" />
         <node concept="2HbMbg" id="6bDIMKp8i9C" role="1yBDGv">
@@ -1058,76 +1112,10 @@
           <ref role="0Sh0a" node="4bSVeFVFBb7" />
         </node>
       </node>
-      <node concept="3UnI9n" id="pWUwO6COmc" role="3UnI90">
-        <property role="TrG5h" value="n" />
-        <node concept="2XEmfi" id="pWUwO6CUeS" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="pWUwO6COmg" role="3UnI90">
-        <property role="TrG5h" value="pe" />
-        <node concept="2XEmfi" id="pWUwO6CUlh" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="pWUwO6COmk" role="3UnI90">
-        <property role="TrG5h" value="l" />
-        <node concept="2XEmfi" id="pWUwO6CUlI" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="6bDIMKp8hai" role="3UnI90">
-        <property role="TrG5h" value="voltage" />
-        <node concept="dhpfj" id="6bDIMKp8ha$" role="3UnI80">
-          <node concept="2IPVmt" id="6bDIMKp8haz" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="6bDIMKp8hb0" role="dhpfn">
-            <property role="2IPVms" value="300" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI9n" id="6bDIMKp8hd6" role="3UnI90">
-        <property role="TrG5h" value="intensity" />
-        <node concept="dhpfj" id="6bDIMKp8hha" role="3UnI80">
-          <node concept="2IPVmt" id="6bDIMKp8hh9" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="6bDIMKp8hhz" role="dhpfn">
-            <property role="2IPVms" value="20" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI9n" id="6bDIMKp8hki" role="3UnI90">
-        <property role="TrG5h" value="temperature" />
-        <node concept="dhpfj" id="6bDIMKp8hpM" role="3UnI80">
-          <node concept="2IPVmt" id="6bDIMKp8hpL" role="dhpfi">
-            <property role="2IPVms" value="-50" />
-          </node>
-          <node concept="2IPVmt" id="6bDIMKp8hpT" role="dhpfn">
-            <property role="2IPVms" value="100" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2SQmWS" id="pWUwO6COhN" role="2HcuB8" />
     <node concept="3Ug1$x" id="6TziiKuhwaK" role="2HcuB8">
       <property role="TrG5h" value="controlBox_impl" />
-      <node concept="3Ug1AZ" id="6TziiKuhweK" role="2p5x1W">
-        <ref role="3Ug1AY" node="5kaUUWfwhNS" resolve="ControlBox" />
-      </node>
-      <node concept="3Ug1AV" id="6TziiKuhweO" role="3UgYNK">
-        <property role="TrG5h" value="controller" />
-        <node concept="3Ug1AZ" id="6TziiKuhweN" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4bSVeFVFBM5" resolve="ChargingCableController" />
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="6TziiKuhweX" role="3UgYNK">
-        <property role="TrG5h" value="watchDog" />
-        <node concept="3Ug1AZ" id="6TziiKuhweV" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4bSVeFVFBRG" resolve="WatchDog" />
-        </node>
-      </node>
       <node concept="37mRI7" id="6TziiKuhwfy" role="lGtFl">
         <node concept="37mRIm" id="6TziiKuhwfz" role="37mRID">
           <property role="37mO49" value="box_7954281820701721524" />
@@ -1449,6 +1437,18 @@
           </node>
         </node>
       </node>
+      <node concept="3Ug1AV" id="6TziiKuhweO" role="3UgYNK">
+        <property role="TrG5h" value="controller" />
+        <node concept="3Ug1AZ" id="6TziiKuhweN" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4bSVeFVFBM5" resolve="ChargingCableController" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="6TziiKuhweX" role="3UgYNK">
+        <property role="TrG5h" value="watchDog" />
+        <node concept="3Ug1AZ" id="6TziiKuhweV" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4bSVeFVFBRG" resolve="WatchDog" />
+        </node>
+      </node>
       <node concept="3Ug1$w" id="6TziiKuhwiN" role="3UgYNK">
         <node concept="3Ug1GC" id="6TziiKuhwiO" role="3Ug1$A">
           <ref role="3Ug1Ha" node="4bSVeFVFBVu" resolve="pingWatchDog" />
@@ -1554,84 +1554,13 @@
           </node>
         </node>
       </node>
+      <node concept="3Ug1AZ" id="6TziiKuhweK" role="2p5x1W">
+        <ref role="3Ug1AY" node="5kaUUWfwhNS" resolve="ControlBox" />
+      </node>
     </node>
     <node concept="2SQmWS" id="6TziiKuhw6P" role="2HcuB8" />
     <node concept="3Ug1$x" id="5kaUUWfwhNI" role="2HcuB8">
       <property role="TrG5h" value="top_system" />
-      <node concept="3Ug1AV" id="5kaUUWfwhZs" role="3UgYNK">
-        <property role="TrG5h" value="controlBox" />
-        <node concept="3Ug1AZ" id="6TziiKuhwf2" role="3Ug1A_">
-          <ref role="3Ug1AY" node="6TziiKuhwaK" resolve="controlBox_impl" />
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="5kaUUWfwi0D" role="3UgYNK">
-        <property role="TrG5h" value="evSensors" />
-        <node concept="3Ug1AZ" id="5kaUUWfwi5r" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5kaUUWfwhW9" resolve="EVSensors" />
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="pWUwO6CTVe" role="3UgYNK">
-        <property role="TrG5h" value="cableSensors" />
-        <node concept="3Ug1AZ" id="pWUwO6CTVc" role="3Ug1A_">
-          <ref role="3Ug1AY" node="pWUwO6COjZ" resolve="CableSensors" />
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi5F" role="3UgYNK">
-        <node concept="3Ug1GC" id="5kaUUWfwi5Y" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhOj" resolve="l" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi5X" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="pWUwO6CO2X" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmk" resolve="l" />
-          <node concept="3Ug1GJ" id="pWUwO6CTVK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi6j" role="3UgYNK">
-        <node concept="3Ug1GC" id="5kaUUWfwi6B" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5kaUUWfwhWy" resolve="ev_connected" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi6A" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwi0D" resolve="evSensors" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="5kaUUWfwi6F" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhUn" resolve="ev_connected" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi6E" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi75" role="3UgYNK">
-        <node concept="3Ug1GC" id="5kaUUWfwi7u" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmc" resolve="n" />
-          <node concept="3Ug1GJ" id="pWUwO6CTVN" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="5kaUUWfwi7y" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhOK" resolve="n" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi7x" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi81" role="3UgYNK">
-        <node concept="3Ug1GC" id="5kaUUWfwi8v" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmg" resolve="pe" />
-          <node concept="3Ug1GJ" id="pWUwO6CTVQ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="5kaUUWfwi8z" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhR2" resolve="pe" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi8y" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
-          </node>
-        </node>
-      </node>
       <node concept="37mRI7" id="5kaUUWfwi8B" role="lGtFl">
         <node concept="37mRIm" id="5kaUUWfwi8C" role="37mRID">
           <property role="37mO49" value="box_6127969380102905820" />
@@ -1811,6 +1740,80 @@
               <property role="2Vclpx" value="208.76826430174395" />
               <property role="2Vclpz" value="87.51820404813625" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="5kaUUWfwhZs" role="3UgYNK">
+        <property role="TrG5h" value="controlBox" />
+        <node concept="3Ug1AZ" id="6TziiKuhwf2" role="3Ug1A_">
+          <ref role="3Ug1AY" node="6TziiKuhwaK" resolve="controlBox_impl" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="5kaUUWfwi0D" role="3UgYNK">
+        <property role="TrG5h" value="evSensors" />
+        <node concept="3Ug1AZ" id="5kaUUWfwi5r" role="3Ug1A_">
+          <ref role="3Ug1AY" node="5kaUUWfwhW9" resolve="EVSensors" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="pWUwO6CTVe" role="3UgYNK">
+        <property role="TrG5h" value="cableSensors" />
+        <node concept="3Ug1AZ" id="pWUwO6CTVc" role="3Ug1A_">
+          <ref role="3Ug1AY" node="pWUwO6COjZ" resolve="CableSensors" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi5F" role="3UgYNK">
+        <node concept="3Ug1GC" id="pWUwO6CO2X" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="pWUwO6COmk" resolve="l" />
+          <node concept="3Ug1GJ" id="pWUwO6CTVK" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="5kaUUWfwi5Y" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhOj" resolve="l" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi5X" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi6j" role="3UgYNK">
+        <node concept="3Ug1GC" id="5kaUUWfwi6B" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="5kaUUWfwhWy" resolve="ev_connected" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi6A" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwi0D" resolve="evSensors" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="5kaUUWfwi6F" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhUn" resolve="ev_connected" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi6E" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi75" role="3UgYNK">
+        <node concept="3Ug1GC" id="5kaUUWfwi7u" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="pWUwO6COmc" resolve="n" />
+          <node concept="3Ug1GJ" id="pWUwO6CTVN" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="5kaUUWfwi7y" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhOK" resolve="n" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi7x" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi81" role="3UgYNK">
+        <node concept="3Ug1GC" id="5kaUUWfwi8v" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="pWUwO6COmg" resolve="pe" />
+          <node concept="3Ug1GJ" id="pWUwO6CTVQ" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="5kaUUWfwi8z" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhR2" resolve="pe" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi8y" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
           </node>
         </node>
       </node>
