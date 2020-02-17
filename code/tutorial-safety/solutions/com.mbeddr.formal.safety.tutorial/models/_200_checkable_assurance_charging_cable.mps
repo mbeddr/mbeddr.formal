@@ -13,7 +13,6 @@
     <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
-    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
@@ -44,6 +43,42 @@
       </concept>
     </language>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="1258148499699359659" name="com.mbeddr.formal.nusmv.cbd.structure.IContractsContainer" flags="ng" index="3Ic8zf">
+        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
+      </concept>
+      <concept id="9066112305507423291" name="com.mbeddr.formal.nusmv.cbd.structure.Connection" flags="ng" index="3Ug1$w">
+        <child id="9066112305507423293" name="source" index="3Ug1$A" />
+        <child id="9066112305507423296" name="target" index="3Ug1_r" />
+      </concept>
+      <concept id="9066112305507423290" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
+        <child id="5906421183240323769" name="interfaceRef" index="2p5x1W" />
+        <child id="9066112305507508715" name="content" index="3UgYNK" />
+      </concept>
+      <concept id="9066112305507423362" name="com.mbeddr.formal.nusmv.cbd.structure.PortRef" flags="ng" index="3Ug1Ap">
+        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
+      </concept>
+      <concept id="9066112305507423392" name="com.mbeddr.formal.nusmv.cbd.structure.Instance" flags="ng" index="3Ug1AV">
+        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
+      </concept>
+      <concept id="9066112305507423396" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
+        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+      <concept id="9066112305507423795" name="com.mbeddr.formal.nusmv.cbd.structure.CompositePart" flags="ng" index="3Ug1GC">
+        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
+        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
+      </concept>
+      <concept id="9066112305507423796" name="com.mbeddr.formal.nusmv.cbd.structure.InstanceRef" flags="ng" index="3Ug1GJ">
+        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
+      </concept>
+      <concept id="9066112305507315482" name="com.mbeddr.formal.nusmv.cbd.structure.InputPort" flags="ng" index="3UnI81" />
+      <concept id="9066112305507315474" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.nusmv.cbd.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.nusmv.cbd.structure.OutputPort" flags="ng" index="3UnI9n" />
       <concept id="9066112305501141496" name="com.mbeddr.formal.nusmv.cbd.structure.ContractsSpec" flags="ng" index="3US3jz" />
       <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
@@ -120,6 +155,7 @@
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
         <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
+      <concept id="871543416565863071" name="com.mbeddr.formal.nusmv.structure.AbsExpression" flags="ng" index="2EDkE1" />
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
         <child id="7842584090744231304" name="value" index="2H9I4_" />
         <child id="7842584090744231298" name="guard" index="2H9I4J" />
@@ -129,6 +165,7 @@
       </concept>
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
       <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
+      <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
       <concept id="7842584090743391222" name="com.mbeddr.formal.nusmv.structure.EnumerationType" flags="ng" index="2Hdrtr">
         <child id="7842584090743391224" name="members" index="2Hdrtl" />
@@ -260,44 +297,6 @@
         <child id="3253043142928125557" name="referencePoint" index="3wpmZP" />
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
-    </language>
-    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
-      <concept id="1258148499699359659" name="com.mbeddr.formal.base.arch.structure.IContractsContainer" flags="ng" index="3Ic8zf">
-        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
-      </concept>
-      <concept id="9066112305507423291" name="com.mbeddr.formal.base.arch.structure.Connection" flags="ng" index="3Ug1$w">
-        <child id="9066112305507423293" name="source" index="3Ug1$A" />
-        <child id="9066112305507423296" name="target" index="3Ug1_r" />
-      </concept>
-      <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
-        <child id="5906421183240323769" name="interfaceRef" index="2p5x1W" />
-        <child id="9066112305507508715" name="content" index="3UgYNK" />
-      </concept>
-      <concept id="9066112305507423362" name="com.mbeddr.formal.base.arch.structure.PortRef" flags="ng" index="3Ug1Ap">
-        <reference id="9066112305507423363" name="port" index="3Ug1Ao" />
-      </concept>
-      <concept id="9066112305507423392" name="com.mbeddr.formal.base.arch.structure.Instance" flags="ng" index="3Ug1AV">
-        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
-      </concept>
-      <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
-        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
-      </concept>
-      <concept id="9066112305507423795" name="com.mbeddr.formal.base.arch.structure.CompositePart" flags="ng" index="3Ug1GC">
-        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
-        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
-      </concept>
-      <concept id="9066112305507423796" name="com.mbeddr.formal.base.arch.structure.InstanceRef" flags="ng" index="3Ug1GJ">
-        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
-      </concept>
-      <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
-      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
-        <child id="9066112305507315547" name="outputs" index="3UnI90" />
-        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
-      </concept>
-      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
-        <child id="9066112305507315483" name="type" index="3UnI80" />
-      </concept>
-      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
@@ -441,40 +440,6 @@
     <node concept="2SQmWS" id="pWUwO6CU6h" role="2HcuB8" />
     <node concept="3UnI89" id="5kaUUWfwhNS" role="2HcuB8">
       <property role="TrG5h" value="ControlBox" />
-      <node concept="3UnI81" id="5kaUUWfwhOj" role="3UnI9m">
-        <property role="TrG5h" value="l" />
-        <node concept="2XEmfi" id="pWUwO6CUdc" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="5kaUUWfwhOK" role="3UnI9m">
-        <property role="TrG5h" value="n" />
-        <node concept="2XEmfi" id="pWUwO6CUdq" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="5kaUUWfwhR2" role="3UnI9m">
-        <property role="TrG5h" value="pe" />
-        <node concept="2XEmfi" id="pWUwO6CUe9" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="5kaUUWfwhUn" role="3UnI9m">
-        <property role="TrG5h" value="ev_connected" />
-        <node concept="2Hds6S" id="5kaUUWfwhUS" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="5kaUUWfwhWX" role="3UnI9m">
-        <property role="TrG5h" value="socket_connected" />
-        <node concept="2Hds6S" id="5kaUUWfwhXw" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="5kaUUWfwhTv" role="3UnI90">
-        <property role="TrG5h" value="open_circuit" />
-        <node concept="2Hds6S" id="5kaUUWfwhTO" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="5kaUUWfwhTU" role="3UnI90">
-        <property role="TrG5h" value="charge" />
-        <node concept="2Hds6S" id="5kaUUWfwhUh" role="3UnI80" />
-      </node>
       <node concept="3UTh7Y" id="5kaUUWfwigy" role="3UnIb_">
         <property role="TrG5h" value="rcd_emergency_shutdown" />
         <node concept="2SafMM" id="5kaUUWfwitG" role="1yBDGv">
@@ -495,14 +460,39 @@
                   </node>
                 </node>
               </node>
-              <node concept="3Ug1Ap" id="5kaUUWfwijL" role="2H9Ial">
-                <ref role="3Ug1Ao" node="5kaUUWfwhTv" resolve="open_circuit" />
+              <node concept="2HbMbg" id="6ll6Fcue2Zc" role="2H9Ial">
+                <node concept="3Ug1Ap" id="6ll6Fcue33Z" role="2H9Ial">
+                  <ref role="3Ug1Ao" node="6ll6Fcue2YM" resolve="disconnect_led" />
+                </node>
+                <node concept="3Ug1Ap" id="5kaUUWfwijL" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="5kaUUWfwhTv" resolve="open_circuit" />
+                </node>
               </node>
             </node>
           </node>
         </node>
         <node concept="0Sh09" id="pWUwO6CeNy" role="lGtFl">
           <ref role="0Sh0a" node="2VIqKfEJeDi" />
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="6ll6Fcue35J" role="3UnIb_">
+        <property role="TrG5h" value="shutdown" />
+        <node concept="2SafMM" id="6ll6Fcue39F" role="1yBDGv">
+          <node concept="32OYss" id="6ll6Fcue39G" role="1yBIc4">
+            <node concept="1yyYsf" id="6ll6Fcue39H" role="32OYtT">
+              <node concept="3Ug1Ap" id="6ll6Fcue37Q" role="2H9Iav">
+                <ref role="3Ug1Ao" node="6ll6Fcue342" resolve="shutdown" />
+              </node>
+              <node concept="2HbMbg" id="6ll6Fcue39I" role="2H9Ial">
+                <node concept="3Ug1Ap" id="6ll6Fcue38b" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="5kaUUWfwhTv" resolve="open_circuit" />
+                </node>
+                <node concept="3Ug1Ap" id="6ll6Fcue38v" role="2H9Ial">
+                  <ref role="3Ug1Ao" node="6ll6Fcue2YM" resolve="disconnect_led" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3US$BV" id="pWUwO6COpf" role="3UnIb_">
@@ -557,51 +547,156 @@
           <ref role="0Sh0a" node="4bSVeFVFBhN" />
         </node>
       </node>
+      <node concept="3US$BV" id="1ef6u74hTZ7" role="3UnIb_">
+        <property role="TrG5h" value="expected_voltage_range" />
+        <node concept="2HbMbg" id="1ef6u74hUem" role="1yBDGv">
+          <node concept="nE0YJ" id="1ef6u74hUen" role="2H9Iav">
+            <node concept="3Ug1Ap" id="1ef6u74hU9B" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hTR4" resolve="voltage" />
+            </node>
+            <node concept="2IPVmt" id="1ef6u74hUeo" role="2H9Ial">
+              <property role="2IPVms" value="225" />
+            </node>
+          </node>
+          <node concept="nE0YL" id="1ef6u74hUeP" role="2H9Ial">
+            <node concept="2IPVmt" id="1ef6u74hUf8" role="2H9Ial">
+              <property role="2IPVms" value="235" />
+            </node>
+            <node concept="3Ug1Ap" id="1ef6u74hUeJ" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hTR4" resolve="voltage" />
+            </node>
+          </node>
+        </node>
+        <node concept="0Sh09" id="1ef6u74hUfw" role="lGtFl">
+          <ref role="0Sh0a" node="4bSVeFVFB7Z" />
+        </node>
+      </node>
+      <node concept="3US$BV" id="1ef6u74hU0j" role="3UnIb_">
+        <property role="TrG5h" value="expected_intensity_range" />
+        <node concept="2HbMbg" id="1ef6u74hUd1" role="1yBDGv">
+          <node concept="nE0YJ" id="1ef6u74hUd2" role="2H9Iav">
+            <node concept="3Ug1Ap" id="1ef6u74hUaj" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hTRl" resolve="intensity" />
+            </node>
+            <node concept="2IPVmt" id="1ef6u74hUd3" role="2H9Ial">
+              <property role="2IPVms" value="14" />
+            </node>
+          </node>
+          <node concept="nE0YL" id="1ef6u74hUdu" role="2H9Ial">
+            <node concept="2IPVmt" id="1ef6u74hUdL" role="2H9Ial">
+              <property role="2IPVms" value="16" />
+            </node>
+            <node concept="3Ug1Ap" id="1ef6u74hUdo" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hTRl" resolve="intensity" />
+            </node>
+          </node>
+        </node>
+        <node concept="0Sh09" id="1ef6u74hUfy" role="lGtFl">
+          <ref role="0Sh0a" node="4bSVeFVFB8p" />
+        </node>
+      </node>
+      <node concept="3US$BV" id="1ef6u74hU8Q" role="3UnIb_">
+        <property role="TrG5h" value="expected_temperature_range" />
+        <node concept="2HbMbg" id="1ef6u74hUbH" role="1yBDGv">
+          <node concept="nE0YJ" id="1ef6u74hUbI" role="2H9Iav">
+            <node concept="3Ug1Ap" id="1ef6u74hUaZ" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hTRC" resolve="temperature" />
+            </node>
+            <node concept="2IPVmt" id="1ef6u74hUbJ" role="2H9Ial">
+              <property role="2IPVms" value="-20" />
+            </node>
+          </node>
+          <node concept="nE0YL" id="1ef6u74hUck" role="2H9Ial">
+            <node concept="2IPVmt" id="1ef6u74hUcB" role="2H9Ial">
+              <property role="2IPVms" value="60" />
+            </node>
+            <node concept="3Ug1Ap" id="1ef6u74hUcc" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hTRC" resolve="temperature" />
+            </node>
+          </node>
+        </node>
+        <node concept="0Sh09" id="1ef6u74hUf$" role="lGtFl">
+          <ref role="0Sh0a" node="4bSVeFVFBb7" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="5kaUUWfwhTv" role="3UnI90">
+        <property role="TrG5h" value="open_circuit" />
+        <node concept="2Hds6S" id="5kaUUWfwhTO" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="5kaUUWfwhTU" role="3UnI90">
+        <property role="TrG5h" value="charge" />
+        <node concept="2Hds6S" id="5kaUUWfwhUh" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="6ll6Fcue2YM" role="3UnI90">
+        <property role="TrG5h" value="disconnect_led" />
+        <node concept="2Hds6S" id="6ll6Fcue2Z1" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhOj" role="3UnI9m">
+        <property role="TrG5h" value="l" />
+        <node concept="2XEmfi" id="pWUwO6CUdc" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhOK" role="3UnI9m">
+        <property role="TrG5h" value="n" />
+        <node concept="2XEmfi" id="pWUwO6CUdq" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhR2" role="3UnI9m">
+        <property role="TrG5h" value="pe" />
+        <node concept="2XEmfi" id="pWUwO6CUe9" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhUn" role="3UnI9m">
+        <property role="TrG5h" value="ev_connected" />
+        <node concept="2Hds6S" id="5kaUUWfwhUS" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="5kaUUWfwhWX" role="3UnI9m">
+        <property role="TrG5h" value="socket_connected" />
+        <node concept="2Hds6S" id="5kaUUWfwhXw" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="1ef6u74hTR4" role="3UnI9m">
+        <property role="TrG5h" value="voltage" />
+        <node concept="dhpfj" id="1ef6u74hTS2" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hTS1" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hTSr" role="dhpfn">
+            <property role="2IPVms" value="300" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="1ef6u74hTRl" role="3UnI9m">
+        <property role="TrG5h" value="intensity" />
+        <node concept="dhpfj" id="1ef6u74hTSS" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hTSR" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hTTh" role="dhpfn">
+            <property role="2IPVms" value="20" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="1ef6u74hTRC" role="3UnI9m">
+        <property role="TrG5h" value="temperature" />
+        <node concept="dhpfj" id="1ef6u74hTUR" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hTXp" role="dhpfi">
+            <property role="2IPVms" value="-50" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hTUY" role="dhpfn">
+            <property role="2IPVms" value="100" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="6ll6Fcue342" role="3UnI9m">
+        <property role="TrG5h" value="shutdown" />
+        <node concept="2Hds6S" id="6ll6Fcue34D" role="3UnI80" />
+      </node>
     </node>
     <node concept="3UnI89" id="4bSVeFVFBM5" role="2HcuB8">
       <property role="TrG5h" value="ChargingCableController" />
-      <node concept="3UnI81" id="4bSVeFVFBMF" role="3UnI9m">
-        <property role="TrG5h" value="l" />
-        <node concept="2XEmfi" id="4bSVeFVFBMG" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBMH" role="3UnI9m">
-        <property role="TrG5h" value="n" />
-        <node concept="2XEmfi" id="4bSVeFVFBMI" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBMJ" role="3UnI9m">
-        <property role="TrG5h" value="pe" />
-        <node concept="2XEmfi" id="4bSVeFVFBMK" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBML" role="3UnI9m">
-        <property role="TrG5h" value="ev_connected" />
-        <node concept="2Hds6S" id="4bSVeFVFBMM" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBMN" role="3UnI9m">
-        <property role="TrG5h" value="socket_connected" />
-        <node concept="2Hds6S" id="4bSVeFVFBMO" role="3UnI80" />
-      </node>
-      <node concept="3UnI81" id="4bSVeFVFBWC" role="3UnI9m">
-        <property role="TrG5h" value="reset" />
-        <node concept="2Hds6S" id="4bSVeFVFBX5" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="4bSVeFVFBMB" role="3UnI90">
-        <property role="TrG5h" value="open_circuit" />
-        <node concept="2Hds6S" id="4bSVeFVFBMC" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="4bSVeFVFBMD" role="3UnI90">
-        <property role="TrG5h" value="charge" />
-        <node concept="2Hds6S" id="4bSVeFVFBME" role="3UnI80" />
-      </node>
-      <node concept="3UnI9n" id="4bSVeFVFBVu" role="3UnI90">
-        <property role="TrG5h" value="pingWatchDog" />
-        <node concept="1yFZfx" id="4bSVeFVFBVQ" role="3UnI80" />
-      </node>
       <node concept="3UTh7Y" id="4bSVeFVFBM6" role="3UnIb_">
         <property role="TrG5h" value="rcd_emergency_shutdown" />
         <node concept="2SafMM" id="4bSVeFVFBM7" role="1yBDGv">
@@ -622,8 +717,13 @@
                   </node>
                 </node>
               </node>
-              <node concept="3Ug1Ap" id="4bSVeFVFBMg" role="2H9Ial">
-                <ref role="3Ug1Ao" node="4bSVeFVFBMB" resolve="open_circuit" />
+              <node concept="2HbMbg" id="6ll6Fcue2U0" role="2H9Ial">
+                <node concept="3Ug1Ap" id="6ll6Fcue2YJ" role="2H9Ial">
+                  <ref role="3Ug1Ao" node="6ll6Fcue2NT" resolve="disconnect_led" />
+                </node>
+                <node concept="3Ug1Ap" id="4bSVeFVFBMg" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4bSVeFVFBMB" resolve="open_circuit" />
+                </node>
               </node>
             </node>
           </node>
@@ -684,16 +784,187 @@
           <ref role="0Sh0a" node="4bSVeFVFBhN" />
         </node>
       </node>
+      <node concept="3US$BV" id="1ef6u74hUgs" role="3UnIb_">
+        <property role="TrG5h" value="expected_voltage_range" />
+        <node concept="2HbMbg" id="1ef6u74hUgt" role="1yBDGv">
+          <node concept="nE0YJ" id="1ef6u74hUgu" role="2H9Iav">
+            <node concept="3Ug1Ap" id="1ef6u74hUoX" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hUlN" resolve="voltage" />
+            </node>
+            <node concept="2IPVmt" id="1ef6u74hUgw" role="2H9Ial">
+              <property role="2IPVms" value="225" />
+            </node>
+          </node>
+          <node concept="nE0YL" id="1ef6u74hUgx" role="2H9Ial">
+            <node concept="2IPVmt" id="1ef6u74hUgy" role="2H9Ial">
+              <property role="2IPVms" value="235" />
+            </node>
+            <node concept="3Ug1Ap" id="1ef6u74hUp9" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hUlN" resolve="voltage" />
+            </node>
+          </node>
+        </node>
+        <node concept="0Sh09" id="1ef6u74hUg$" role="lGtFl">
+          <ref role="0Sh0a" node="4bSVeFVFB7Z" />
+        </node>
+      </node>
+      <node concept="3US$BV" id="1ef6u74hUih" role="3UnIb_">
+        <property role="TrG5h" value="expected_intensity_range" />
+        <node concept="2HbMbg" id="1ef6u74hUii" role="1yBDGv">
+          <node concept="nE0YJ" id="1ef6u74hUij" role="2H9Iav">
+            <node concept="3Ug1Ap" id="1ef6u74hUp1" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hUmE" resolve="intensity" />
+            </node>
+            <node concept="2IPVmt" id="1ef6u74hUil" role="2H9Ial">
+              <property role="2IPVms" value="14" />
+            </node>
+          </node>
+          <node concept="nE0YL" id="1ef6u74hUim" role="2H9Ial">
+            <node concept="2IPVmt" id="1ef6u74hUin" role="2H9Ial">
+              <property role="2IPVms" value="16" />
+            </node>
+            <node concept="3Ug1Ap" id="1ef6u74hUpd" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hUmE" resolve="intensity" />
+            </node>
+          </node>
+        </node>
+        <node concept="0Sh09" id="1ef6u74hUip" role="lGtFl">
+          <ref role="0Sh0a" node="4bSVeFVFB8p" />
+        </node>
+      </node>
+      <node concept="3US$BV" id="1ef6u74hUko" role="3UnIb_">
+        <property role="TrG5h" value="expected_temperature_range" />
+        <node concept="2HbMbg" id="1ef6u74hUkp" role="1yBDGv">
+          <node concept="nE0YJ" id="1ef6u74hUkq" role="2H9Iav">
+            <node concept="3Ug1Ap" id="1ef6u74hUp5" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hUn_" resolve="temperature" />
+            </node>
+            <node concept="2IPVmt" id="1ef6u74hUks" role="2H9Ial">
+              <property role="2IPVms" value="-20" />
+            </node>
+          </node>
+          <node concept="nE0YL" id="1ef6u74hUkt" role="2H9Ial">
+            <node concept="2IPVmt" id="1ef6u74hUku" role="2H9Ial">
+              <property role="2IPVms" value="60" />
+            </node>
+            <node concept="3Ug1Ap" id="1ef6u74hUph" role="2H9Iav">
+              <ref role="3Ug1Ao" node="1ef6u74hUn_" resolve="temperature" />
+            </node>
+          </node>
+        </node>
+        <node concept="0Sh09" id="1ef6u74hUkw" role="lGtFl">
+          <ref role="0Sh0a" node="4bSVeFVFBb7" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4bSVeFVFBMB" role="3UnI90">
+        <property role="TrG5h" value="open_circuit" />
+        <node concept="2Hds6S" id="4bSVeFVFBMC" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4bSVeFVFBMD" role="3UnI90">
+        <property role="TrG5h" value="charge" />
+        <node concept="2Hds6S" id="4bSVeFVFBME" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4bSVeFVFBVu" role="3UnI90">
+        <property role="TrG5h" value="pingWatchDog" />
+        <node concept="1yFZfx" id="4bSVeFVFBVQ" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="6ll6Fcue2NT" role="3UnI90">
+        <property role="TrG5h" value="disconnect_led" />
+        <node concept="2Hds6S" id="6ll6Fcue2Oc" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4bSVeFVFBMF" role="3UnI9m">
+        <property role="TrG5h" value="l" />
+        <node concept="2XEmfi" id="4bSVeFVFBMG" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4bSVeFVFBMH" role="3UnI9m">
+        <property role="TrG5h" value="n" />
+        <node concept="2XEmfi" id="4bSVeFVFBMI" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4bSVeFVFBMJ" role="3UnI9m">
+        <property role="TrG5h" value="pe" />
+        <node concept="2XEmfi" id="4bSVeFVFBMK" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4bSVeFVFBML" role="3UnI9m">
+        <property role="TrG5h" value="ev_connected" />
+        <node concept="2Hds6S" id="4bSVeFVFBMM" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4bSVeFVFBMN" role="3UnI9m">
+        <property role="TrG5h" value="socket_connected" />
+        <node concept="2Hds6S" id="4bSVeFVFBMO" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4bSVeFVFBWC" role="3UnI9m">
+        <property role="TrG5h" value="reset" />
+        <node concept="2Hds6S" id="4bSVeFVFBX5" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="1ef6u74hUlN" role="3UnI9m">
+        <property role="TrG5h" value="voltage" />
+        <node concept="dhpfj" id="1ef6u74hUlO" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hUlP" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hUlQ" role="dhpfn">
+            <property role="2IPVms" value="300" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="1ef6u74hUmE" role="3UnI9m">
+        <property role="TrG5h" value="intensity" />
+        <node concept="dhpfj" id="1ef6u74hUmF" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hUmG" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hUmH" role="dhpfn">
+            <property role="2IPVms" value="20" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="1ef6u74hUn_" role="3UnI9m">
+        <property role="TrG5h" value="temperature" />
+        <node concept="dhpfj" id="1ef6u74hUnA" role="3UnI80">
+          <node concept="2IPVmt" id="1ef6u74hUnB" role="dhpfi">
+            <property role="2IPVms" value="-50" />
+          </node>
+          <node concept="2IPVmt" id="1ef6u74hUnC" role="dhpfn">
+            <property role="2IPVms" value="100" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3UnI89" id="4bSVeFVFBRG" role="2HcuB8">
       <property role="TrG5h" value="WatchDog" />
-      <node concept="3UnI81" id="4bSVeFVFBVW" role="3UnI9m">
-        <property role="TrG5h" value="ping" />
-        <node concept="1yFZfx" id="4bSVeFVFBWd" role="3UnI80" />
+      <node concept="3UTh7Y" id="1ef6u74hUpm" role="3UnIb_">
+        <property role="TrG5h" value="always_reset_if_not_ping" />
+        <node concept="2SafMM" id="1ef6u74hUsI" role="1yBDGv">
+          <node concept="32OYss" id="1ef6u74hUsJ" role="1yBIc4">
+            <node concept="1yyYsf" id="1ef6u74hUsK" role="32OYtT">
+              <node concept="2HbLFT" id="1ef6u74hUsL" role="2H9Iav">
+                <node concept="3Ug1Ap" id="1ef6u74hUpH" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4bSVeFVFBVW" resolve="ping" />
+                </node>
+                <node concept="2IPVmt" id="1ef6u74hUsM" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+              </node>
+              <node concept="3Ug1Ap" id="1ef6u74hUr2" role="2H9Ial">
+                <ref role="3Ug1Ao" node="4bSVeFVFBWj" resolve="reset" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3UnI9n" id="4bSVeFVFBWj" role="3UnI90">
         <property role="TrG5h" value="reset" />
         <node concept="2Hds6S" id="4bSVeFVFBWy" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4bSVeFVFBVW" role="3UnI9m">
+        <property role="TrG5h" value="ping" />
+        <node concept="1yFZfx" id="4bSVeFVFBWd" role="3UnI80" />
       </node>
     </node>
     <node concept="2SQmWS" id="5kaUUWfwhNO" role="2HcuB8" />
@@ -715,57 +986,6 @@
     <node concept="2SQmWS" id="pWUwO6CO7O" role="2HcuB8" />
     <node concept="3UnI89" id="pWUwO6COjZ" role="2HcuB8">
       <property role="TrG5h" value="CableSensors" />
-      <node concept="3UnI9n" id="pWUwO6COmc" role="3UnI90">
-        <property role="TrG5h" value="n" />
-        <node concept="2XEmfi" id="pWUwO6CUeS" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="pWUwO6COmg" role="3UnI90">
-        <property role="TrG5h" value="pe" />
-        <node concept="2XEmfi" id="pWUwO6CUlh" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="pWUwO6COmk" role="3UnI90">
-        <property role="TrG5h" value="l" />
-        <node concept="2XEmfi" id="pWUwO6CUlI" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="6bDIMKp8hai" role="3UnI90">
-        <property role="TrG5h" value="voltage" />
-        <node concept="dhpfj" id="6bDIMKp8ha$" role="3UnI80">
-          <node concept="2IPVmt" id="6bDIMKp8haz" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="6bDIMKp8hb0" role="dhpfn">
-            <property role="2IPVms" value="300" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI9n" id="6bDIMKp8hd6" role="3UnI90">
-        <property role="TrG5h" value="intensity" />
-        <node concept="dhpfj" id="6bDIMKp8hha" role="3UnI80">
-          <node concept="2IPVmt" id="6bDIMKp8hh9" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="6bDIMKp8hhz" role="dhpfn">
-            <property role="2IPVms" value="20" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UnI9n" id="6bDIMKp8hki" role="3UnI90">
-        <property role="TrG5h" value="temperature" />
-        <node concept="dhpfj" id="6bDIMKp8hpM" role="3UnI80">
-          <node concept="2IPVmt" id="6bDIMKp8hpL" role="dhpfi">
-            <property role="2IPVms" value="-50" />
-          </node>
-          <node concept="2IPVmt" id="6bDIMKp8hpT" role="dhpfn">
-            <property role="2IPVms" value="100" />
-          </node>
-        </node>
-      </node>
       <node concept="3UTh7Y" id="6bDIMKp8hdp" role="3UnIb_">
         <property role="TrG5h" value="expected_voltage_range" />
         <node concept="2HbMbg" id="6bDIMKp8i9C" role="1yBDGv">
@@ -838,34 +1058,100 @@
           <ref role="0Sh0a" node="4bSVeFVFBb7" />
         </node>
       </node>
+      <node concept="3UnI9n" id="pWUwO6COmc" role="3UnI90">
+        <property role="TrG5h" value="n" />
+        <node concept="2XEmfi" id="pWUwO6CUeS" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="pWUwO6COmg" role="3UnI90">
+        <property role="TrG5h" value="pe" />
+        <node concept="2XEmfi" id="pWUwO6CUlh" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="pWUwO6COmk" role="3UnI90">
+        <property role="TrG5h" value="l" />
+        <node concept="2XEmfi" id="pWUwO6CUlI" role="3UnI80">
+          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="6bDIMKp8hai" role="3UnI90">
+        <property role="TrG5h" value="voltage" />
+        <node concept="dhpfj" id="6bDIMKp8ha$" role="3UnI80">
+          <node concept="2IPVmt" id="6bDIMKp8haz" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="6bDIMKp8hb0" role="dhpfn">
+            <property role="2IPVms" value="300" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI9n" id="6bDIMKp8hd6" role="3UnI90">
+        <property role="TrG5h" value="intensity" />
+        <node concept="dhpfj" id="6bDIMKp8hha" role="3UnI80">
+          <node concept="2IPVmt" id="6bDIMKp8hh9" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="6bDIMKp8hhz" role="dhpfn">
+            <property role="2IPVms" value="20" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI9n" id="6bDIMKp8hki" role="3UnI90">
+        <property role="TrG5h" value="temperature" />
+        <node concept="dhpfj" id="6bDIMKp8hpM" role="3UnI80">
+          <node concept="2IPVmt" id="6bDIMKp8hpL" role="dhpfi">
+            <property role="2IPVms" value="-50" />
+          </node>
+          <node concept="2IPVmt" id="6bDIMKp8hpT" role="dhpfn">
+            <property role="2IPVms" value="100" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2SQmWS" id="pWUwO6COhN" role="2HcuB8" />
     <node concept="3Ug1$x" id="6TziiKuhwaK" role="2HcuB8">
       <property role="TrG5h" value="controlBox_impl" />
+      <node concept="3Ug1AZ" id="6TziiKuhweK" role="2p5x1W">
+        <ref role="3Ug1AY" node="5kaUUWfwhNS" resolve="ControlBox" />
+      </node>
+      <node concept="3Ug1AV" id="6TziiKuhweO" role="3UgYNK">
+        <property role="TrG5h" value="controller" />
+        <node concept="3Ug1AZ" id="6TziiKuhweN" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4bSVeFVFBM5" resolve="ChargingCableController" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="6TziiKuhweX" role="3UgYNK">
+        <property role="TrG5h" value="watchDog" />
+        <node concept="3Ug1AZ" id="6TziiKuhweV" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4bSVeFVFBRG" resolve="WatchDog" />
+        </node>
+      </node>
       <node concept="37mRI7" id="6TziiKuhwfy" role="lGtFl">
         <node concept="37mRIm" id="6TziiKuhwfz" role="37mRID">
           <property role="37mO49" value="box_7954281820701721524" />
           <node concept="gqqVs" id="6TziiKuhwfx" role="37mO4d">
-            <property role="gqqTZ" value="297.0" />
-            <property role="gqqTW" value="100.29999999986319" />
-            <property role="gqqTX" value="90.0" />
-            <property role="gqqTy" value="124.55152682947215" />
+            <property role="gqqTZ" value="286.0" />
+            <property role="gqqTW" value="154.51594233958164" />
+            <property role="gqqTX" value="85.0" />
+            <property role="gqqTy" value="179.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwf$" role="1pap1a">
               <property role="1pa3iD" value="l" />
-              <property role="2gRgW$" value="589677886" />
+              <property role="2gRgW$" value="214748364" />
             </node>
             <node concept="1pa3jb" id="6TziiKuhwf_" role="1pap1a">
               <property role="1pa3iD" value="n" />
-              <property role="2gRgW$" value="871315085" />
+              <property role="2gRgW$" value="411089726" />
             </node>
             <node concept="1pa3jb" id="6TziiKuhwfA" role="1pap1a">
               <property role="1pa3iD" value="pe" />
-              <property role="2gRgW$" value="1073741823" />
+              <property role="2gRgW$" value="803772450" />
             </node>
             <node concept="1pa3jb" id="6TziiKuhwfB" role="1pap1a">
               <property role="1pa3iD" value="ev_connected" />
-              <property role="2gRgW$" value="1073741823" />
+              <property role="2gRgW$" value="1000113812" />
             </node>
             <node concept="1pa3jb" id="6TziiKuhwfC" role="1pap1a">
               <property role="1pa3iD" value="socket_connected" />
@@ -873,11 +1159,11 @@
             </node>
             <node concept="1pa3jb" id="6TziiKuhwfD" role="1pap1a">
               <property role="1pa3iD" value="reset" />
-              <property role="2gRgW$" value="308040686" />
+              <property role="2gRgW$" value="607431088" />
             </node>
             <node concept="1pa3jb" id="6TziiKuhwfE" role="1pap1a">
               <property role="1pa3iD" value="open_circuit" />
-              <property role="2gRgW$" value="2085875508" />
+              <property role="2gRgW$" value="2073855635" />
             </node>
             <node concept="1pa3jb" id="6TziiKuhwfF" role="1pap1a">
               <property role="1pa3iD" value="charge" />
@@ -885,17 +1171,29 @@
             </node>
             <node concept="1pa3jb" id="6TziiKuhwo7" role="1pap1a">
               <property role="1pa3iD" value="pingWatchDog" />
-              <property role="2gRgW$" value="1593010409" />
+              <property role="2gRgW$" value="1583002230" />
+            </node>
+            <node concept="1pa3jb" id="1ef6u74hUt7" role="1pap1a">
+              <property role="1pa3iD" value="voltage" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="1ef6u74hUt8" role="1pap1a">
+              <property role="1pa3iD" value="intensity" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="1ef6u74hUt9" role="1pap1a">
+              <property role="1pa3iD" value="temperature" />
+              <property role="2gRgW$" value="1073741823" />
             </node>
           </node>
         </node>
         <node concept="37mRIm" id="6TziiKuhwfI" role="37mRID">
           <property role="37mO49" value="box_7954281820701721533" />
           <node concept="gqqVs" id="6TziiKuhwfH" role="37mO4d">
-            <property role="gqqTZ" value="119.0" />
-            <property role="gqqTW" value="32.0" />
-            <property role="gqqTX" value="74.0" />
-            <property role="gqqTy" value="32.25" />
+            <property role="gqqTZ" value="113.0" />
+            <property role="gqqTW" value="187.375" />
+            <property role="gqqTX" value="71.0" />
+            <property role="gqqTy" value="32.0625" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwfJ" role="1pap1a">
               <property role="1pa3iD" value="ping" />
@@ -910,10 +1208,10 @@
         <node concept="37mRIm" id="6TziiKuhwfM" role="37mRID">
           <property role="37mO49" value="box_6127969380102905107" />
           <node concept="gqqVs" id="6TziiKuhwfL" role="37mO4d">
-            <property role="gqqTZ" value="172.0" />
-            <property role="gqqTW" value="84.25" />
-            <property role="gqqTX" value="21.0" />
-            <property role="gqqTy" value="31.75" />
+            <property role="gqqTZ" value="162.0" />
+            <property role="gqqTW" value="83.5" />
+            <property role="gqqTX" value="22.0" />
+            <property role="gqqTy" value="31.9375" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwfN" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -924,10 +1222,10 @@
         <node concept="37mRIm" id="6TziiKuhwfP" role="37mRID">
           <property role="37mO49" value="box_6127969380102905136" />
           <node concept="gqqVs" id="6TziiKuhwfO" role="37mO4d">
-            <property role="gqqTZ" value="172.0" />
-            <property role="gqqTW" value="136.0" />
-            <property role="gqqTX" value="21.0" />
-            <property role="gqqTy" value="31.75" />
+            <property role="gqqTZ" value="162.0" />
+            <property role="gqqTW" value="135.4375" />
+            <property role="gqqTX" value="22.0" />
+            <property role="gqqTy" value="31.9375" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwfQ" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -938,10 +1236,10 @@
         <node concept="37mRIm" id="6TziiKuhwfS" role="37mRID">
           <property role="37mO49" value="box_6127969380102905282" />
           <node concept="gqqVs" id="6TziiKuhwfR" role="37mO4d">
-            <property role="gqqTZ" value="164.0" />
-            <property role="gqqTW" value="187.75" />
-            <property role="gqqTX" value="29.0" />
-            <property role="gqqTy" value="31.75" />
+            <property role="gqqTZ" value="154.0" />
+            <property role="gqqTW" value="239.4375" />
+            <property role="gqqTX" value="30.0" />
+            <property role="gqqTy" value="31.9375" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwfT" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -952,10 +1250,10 @@
         <node concept="37mRIm" id="6TziiKuhwfV" role="37mRID">
           <property role="37mO49" value="box_6127969380102905495" />
           <node concept="gqqVs" id="6TziiKuhwfU" role="37mO4d">
-            <property role="gqqTZ" value="84.0" />
-            <property role="gqqTW" value="239.5" />
-            <property role="gqqTX" value="109.0" />
-            <property role="gqqTy" value="31.75" />
+            <property role="gqqTZ" value="81.0" />
+            <property role="gqqTW" value="291.375" />
+            <property role="gqqTX" value="103.0" />
+            <property role="gqqTy" value="31.9375" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwfW" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -967,9 +1265,9 @@
           <property role="37mO49" value="box_6127969380102905661" />
           <node concept="gqqVs" id="6TziiKuhwfX" role="37mO4d">
             <property role="gqqTZ" value="52.0" />
-            <property role="gqqTW" value="291.25" />
-            <property role="gqqTX" value="141.0" />
-            <property role="gqqTy" value="31.75" />
+            <property role="gqqTW" value="343.3125" />
+            <property role="gqqTX" value="132.0" />
+            <property role="gqqTy" value="31.9375" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwfZ" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -980,10 +1278,10 @@
         <node concept="37mRIm" id="6TziiKuhwg1" role="37mRID">
           <property role="37mO49" value="box_6127969380102905439" />
           <node concept="gqqVs" id="6TziiKuhwg0" role="37mO4d">
-            <property role="gqqTZ" value="451.0" />
-            <property role="gqqTW" value="145.5686523436132" />
-            <property role="gqqTX" value="109.0" />
-            <property role="gqqTy" value="31.75" />
+            <property role="gqqTZ" value="433.0" />
+            <property role="gqqTW" value="226.09709468333165" />
+            <property role="gqqTX" value="103.0" />
+            <property role="gqqTy" value="31.9375" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwg2" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -994,10 +1292,10 @@
         <node concept="37mRIm" id="6TziiKuhwg4" role="37mRID">
           <property role="37mO49" value="box_6127969380102905466" />
           <node concept="gqqVs" id="6TziiKuhwg3" role="37mO4d">
-            <property role="gqqTZ" value="451.0" />
-            <property role="gqqTW" value="197.3186523436132" />
-            <property role="gqqTX" value="61.0" />
-            <property role="gqqTy" value="31.75" />
+            <property role="gqqTZ" value="433.0" />
+            <property role="gqqTW" value="278.03459468333165" />
+            <property role="gqqTX" value="59.0" />
+            <property role="gqqTy" value="31.9375" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="6TziiKuhwg5" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -1007,35 +1305,26 @@
         </node>
         <node concept="37mRIm" id="6TziiKuhwm_" role="37mRID">
           <property role="37mO49" value="edge_7954281820701721897" />
-          <node concept="2VclpC" id="6TziiKuhwm$" role="37mO4d">
-            <node concept="2VclrF" id="34jvijxCrd7" role="2Vcluh">
-              <property role="2Vclpx" value="245.0" />
-              <property role="2Vclpz" value="48.25" />
-            </node>
-            <node concept="2VclrF" id="34jvijxCrd8" role="2Vcluh">
-              <property role="2Vclpx" value="245.0" />
-              <property role="2Vclpz" value="113.74847316984386" />
-            </node>
-          </node>
+          <node concept="2VclpC" id="6TziiKuhwm$" role="37mO4d" />
         </node>
         <node concept="37mRIm" id="6TziiKuhwo9" role="37mRID">
           <property role="37mO49" value="edge_7954281820701721779" />
           <node concept="2VclpC" id="6TziiKuhwo8" role="37mO4d">
             <node concept="2VclrF" id="6TziiKuhwoa" role="2Vcluh">
-              <property role="2Vclpx" value="419.0" />
-              <property role="2Vclpz" value="142.2186523436132" />
+              <property role="2Vclpx" value="401.0" />
+              <property role="2Vclpz" value="222.93459468333162" />
             </node>
             <node concept="2VclrF" id="6TziiKuhwob" role="2Vcluh">
-              <property role="2Vclpx" value="419.0" />
-              <property role="2Vclpz" value="12.0" />
+              <property role="2Vclpx" value="401.0" />
+              <property role="2Vclpz" value="63.5" />
             </node>
             <node concept="2VclrF" id="6TziiKuhwoc" role="2Vcluh">
               <property role="2Vclpx" value="12.0" />
-              <property role="2Vclpz" value="12.0" />
+              <property role="2Vclpz" value="63.5" />
             </node>
             <node concept="2VclrF" id="6TziiKuhwod" role="2Vcluh">
               <property role="2Vclpx" value="12.0" />
-              <property role="2Vclpz" value="48.25" />
+              <property role="2Vclpz" value="203.4375" />
             </node>
           </node>
         </node>
@@ -1043,12 +1332,12 @@
           <property role="37mO49" value="edge_7954281820701722377" />
           <node concept="2VclpC" id="34jvijxCrd9" role="37mO4d">
             <node concept="2VclrF" id="34jvijxCrdb" role="2Vcluh">
-              <property role="2Vclpx" value="419.0" />
-              <property role="2Vclpz" value="180.3626953123632" />
+              <property role="2Vclpx" value="401.0" />
+              <property role="2Vclpz" value="261.0786376520816" />
             </node>
             <node concept="2VclrF" id="34jvijxCrdc" role="2Vcluh">
-              <property role="2Vclpx" value="419.0" />
-              <property role="2Vclpz" value="213.0686523436132" />
+              <property role="2Vclpx" value="401.0" />
+              <property role="2Vclpz" value="293.97209468333165" />
             </node>
           </node>
         </node>
@@ -1056,12 +1345,12 @@
           <property role="37mO49" value="edge_3536307729773729691" />
           <node concept="2VclpC" id="34jvijxCrdd" role="37mO4d">
             <node concept="2VclrF" id="34jvijxCrdf" role="2Vcluh">
-              <property role="2Vclpx" value="225.0" />
-              <property role="2Vclpz" value="100.0" />
+              <property role="2Vclpx" value="234.0" />
+              <property role="2Vclpz" value="99.4375" />
             </node>
             <node concept="2VclrF" id="34jvijxCrdg" role="2Vcluh">
-              <property role="2Vclpx" value="225.0" />
-              <property role="2Vclpz" value="132.7492365851271" />
+              <property role="2Vclpx" value="234.0" />
+              <property role="2Vclpz" value="165.3942031112727" />
             </node>
           </node>
         </node>
@@ -1069,12 +1358,12 @@
           <property role="37mO49" value="edge_3536307729773730548" />
           <node concept="2VclpC" id="34jvijxCrdh" role="37mO4d">
             <node concept="2VclrF" id="34jvijxCrdj" role="2Vcluh">
-              <property role="2Vclpx" value="225.0" />
-              <property role="2Vclpz" value="203.5" />
+              <property role="2Vclpx" value="214.0" />
+              <property role="2Vclpz" value="255.375" />
             </node>
             <node concept="2VclrF" id="34jvijxCrdk" role="2Vcluh">
-              <property role="2Vclpx" value="225.0" />
-              <property role="2Vclpz" value="170.85" />
+              <property role="2Vclpx" value="214.0" />
+              <property role="2Vclpz" value="222.4569293624508" />
             </node>
           </node>
         </node>
@@ -1082,12 +1371,12 @@
           <property role="37mO49" value="edge_3536307729773730586" />
           <node concept="2VclpC" id="34jvijxCrdl" role="37mO4d">
             <node concept="2VclrF" id="34jvijxCrdn" role="2Vcluh">
-              <property role="2Vclpx" value="245.0" />
-              <property role="2Vclpz" value="255.25" />
+              <property role="2Vclpx" value="234.0" />
+              <property role="2Vclpz" value="307.3125" />
             </node>
             <node concept="2VclrF" id="34jvijxCrdo" role="2Vcluh">
-              <property role="2Vclpx" value="245.0" />
-              <property role="2Vclpz" value="189.85076341487286" />
+              <property role="2Vclpx" value="234.0" />
+              <property role="2Vclpz" value="241.47326790691903" />
             </node>
           </node>
         </node>
@@ -1095,26 +1384,69 @@
           <property role="37mO49" value="edge_3536307729773731891" />
           <node concept="2VclpC" id="34jvijxCrdp" role="37mO4d">
             <node concept="2VclrF" id="34jvijxCrdr" role="2Vcluh">
-              <property role="2Vclpx" value="265.0" />
-              <property role="2Vclpz" value="307.0" />
+              <property role="2Vclpx" value="254.0" />
+              <property role="2Vclpz" value="359.25" />
             </node>
             <node concept="2VclrF" id="34jvijxCrds" role="2Vcluh">
-              <property role="2Vclpx" value="265.0" />
-              <property role="2Vclpz" value="208.85152682933534" />
+              <property role="2Vclpx" value="254.0" />
+              <property role="2Vclpz" value="260.48638513098814" />
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3Ug1AV" id="6TziiKuhweO" role="3UgYNK">
-        <property role="TrG5h" value="controller" />
-        <node concept="3Ug1AZ" id="6TziiKuhweN" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4bSVeFVFBM5" resolve="ChargingCableController" />
+        <node concept="37mRIm" id="1ef6u74hUtb" role="37mRID">
+          <property role="37mO49" value="box_1409373665841618372" />
+          <node concept="gqqVs" id="1ef6u74hUta" role="37mO4d">
+            <property role="gqqTZ" value="12.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="66.0" />
+            <property role="gqqTy" value="31.5" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="1ef6u74hUtc" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
         </node>
-      </node>
-      <node concept="3Ug1AV" id="6TziiKuhweX" role="3UgYNK">
-        <property role="TrG5h" value="watchDog" />
-        <node concept="3Ug1AZ" id="6TziiKuhweV" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4bSVeFVFBRG" resolve="WatchDog" />
+        <node concept="37mRIm" id="1ef6u74hUte" role="37mRID">
+          <property role="37mO49" value="box_1409373665841618389" />
+          <node concept="gqqVs" id="1ef6u74hUtd" role="37mO4d">
+            <property role="gqqTZ" value="108.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="81.0" />
+            <property role="gqqTy" value="31.5" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="1ef6u74hUtf" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="1ef6u74hUth" role="37mRID">
+          <property role="37mO49" value="box_1409373665841618408" />
+          <node concept="gqqVs" id="1ef6u74hUtg" role="37mO4d">
+            <property role="gqqTZ" value="219.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="96.0" />
+            <property role="gqqTy" value="31.5" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="1ef6u74hUti" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="1ef6u74hUtk" role="37mRID">
+          <property role="37mO49" value="edge_3536307729773730514" />
+          <node concept="2VclpC" id="1ef6u74hUtj" role="37mO4d">
+            <node concept="2VclrF" id="1ef6u74hUtl" role="2Vcluh">
+              <property role="2Vclpx" value="214.0" />
+              <property role="2Vclpz" value="151.375" />
+            </node>
+            <node concept="2VclrF" id="1ef6u74hUtm" role="2Vcluh">
+              <property role="2Vclpx" value="214.0" />
+              <property role="2Vclpz" value="184.41610096049612" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6TziiKuhwiN" role="3UgYNK">
@@ -1222,13 +1554,84 @@
           </node>
         </node>
       </node>
-      <node concept="3Ug1AZ" id="6TziiKuhweK" role="2p5x1W">
-        <ref role="3Ug1AY" node="5kaUUWfwhNS" resolve="ControlBox" />
-      </node>
     </node>
     <node concept="2SQmWS" id="6TziiKuhw6P" role="2HcuB8" />
     <node concept="3Ug1$x" id="5kaUUWfwhNI" role="2HcuB8">
       <property role="TrG5h" value="top_system" />
+      <node concept="3Ug1AV" id="5kaUUWfwhZs" role="3UgYNK">
+        <property role="TrG5h" value="controlBox" />
+        <node concept="3Ug1AZ" id="6TziiKuhwf2" role="3Ug1A_">
+          <ref role="3Ug1AY" node="6TziiKuhwaK" resolve="controlBox_impl" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="5kaUUWfwi0D" role="3UgYNK">
+        <property role="TrG5h" value="evSensors" />
+        <node concept="3Ug1AZ" id="5kaUUWfwi5r" role="3Ug1A_">
+          <ref role="3Ug1AY" node="5kaUUWfwhW9" resolve="EVSensors" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="pWUwO6CTVe" role="3UgYNK">
+        <property role="TrG5h" value="cableSensors" />
+        <node concept="3Ug1AZ" id="pWUwO6CTVc" role="3Ug1A_">
+          <ref role="3Ug1AY" node="pWUwO6COjZ" resolve="CableSensors" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi5F" role="3UgYNK">
+        <node concept="3Ug1GC" id="5kaUUWfwi5Y" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhOj" resolve="l" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi5X" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="pWUwO6CO2X" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="pWUwO6COmk" resolve="l" />
+          <node concept="3Ug1GJ" id="pWUwO6CTVK" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi6j" role="3UgYNK">
+        <node concept="3Ug1GC" id="5kaUUWfwi6B" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="5kaUUWfwhWy" resolve="ev_connected" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi6A" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwi0D" resolve="evSensors" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="5kaUUWfwi6F" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhUn" resolve="ev_connected" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi6E" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi75" role="3UgYNK">
+        <node concept="3Ug1GC" id="5kaUUWfwi7u" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="pWUwO6COmc" resolve="n" />
+          <node concept="3Ug1GJ" id="pWUwO6CTVN" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="5kaUUWfwi7y" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhOK" resolve="n" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi7x" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="5kaUUWfwi81" role="3UgYNK">
+        <node concept="3Ug1GC" id="5kaUUWfwi8v" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="pWUwO6COmg" resolve="pe" />
+          <node concept="3Ug1GJ" id="pWUwO6CTVQ" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="5kaUUWfwi8z" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5kaUUWfwhR2" resolve="pe" />
+          <node concept="3Ug1GJ" id="5kaUUWfwi8y" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+      </node>
       <node concept="37mRI7" id="5kaUUWfwi8B" role="lGtFl">
         <node concept="37mRIm" id="5kaUUWfwi8C" role="37mRID">
           <property role="37mO49" value="box_6127969380102905820" />
@@ -1408,80 +1811,6 @@
               <property role="2Vclpx" value="208.76826430174395" />
               <property role="2Vclpz" value="87.51820404813625" />
             </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="5kaUUWfwhZs" role="3UgYNK">
-        <property role="TrG5h" value="controlBox" />
-        <node concept="3Ug1AZ" id="6TziiKuhwf2" role="3Ug1A_">
-          <ref role="3Ug1AY" node="6TziiKuhwaK" resolve="controlBox_impl" />
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="5kaUUWfwi0D" role="3UgYNK">
-        <property role="TrG5h" value="evSensors" />
-        <node concept="3Ug1AZ" id="5kaUUWfwi5r" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5kaUUWfwhW9" resolve="EVSensors" />
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="pWUwO6CTVe" role="3UgYNK">
-        <property role="TrG5h" value="cableSensors" />
-        <node concept="3Ug1AZ" id="pWUwO6CTVc" role="3Ug1A_">
-          <ref role="3Ug1AY" node="pWUwO6COjZ" resolve="CableSensors" />
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi5F" role="3UgYNK">
-        <node concept="3Ug1GC" id="pWUwO6CO2X" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmk" resolve="l" />
-          <node concept="3Ug1GJ" id="pWUwO6CTVK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="5kaUUWfwi5Y" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhOj" resolve="l" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi5X" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi6j" role="3UgYNK">
-        <node concept="3Ug1GC" id="5kaUUWfwi6B" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5kaUUWfwhWy" resolve="ev_connected" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi6A" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwi0D" resolve="evSensors" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="5kaUUWfwi6F" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhUn" resolve="ev_connected" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi6E" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi75" role="3UgYNK">
-        <node concept="3Ug1GC" id="5kaUUWfwi7u" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmc" resolve="n" />
-          <node concept="3Ug1GJ" id="pWUwO6CTVN" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="5kaUUWfwi7y" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhOK" resolve="n" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi7x" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="5kaUUWfwi81" role="3UgYNK">
-        <node concept="3Ug1GC" id="5kaUUWfwi8v" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmg" resolve="pe" />
-          <node concept="3Ug1GJ" id="pWUwO6CTVQ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="5kaUUWfwi8z" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhR2" resolve="pe" />
-          <node concept="3Ug1GJ" id="5kaUUWfwi8y" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
           </node>
         </node>
       </node>
@@ -1997,21 +2326,23 @@
               <node concept="1tS8IT" id="6bDIMKp8hI7" role="3JZSx7">
                 <ref role="1tS8HL" node="6bDIMKp8huW" resolve="initial" />
               </node>
-              <node concept="2HbMbg" id="4bSVeFVFBnb" role="2H9I4J">
+              <node concept="2HbMbg" id="6ll6Fcue2fS" role="2H9I4J">
                 <node concept="32Ogvo" id="6bDIMKp8hIj" role="2H9Iav">
                   <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
                 </node>
-                <node concept="nE0YJ" id="4bSVeFVFBnc" role="2H9Ial">
-                  <node concept="2H9Eef" id="4bSVeFVFBnd" role="2H9Iav">
-                    <node concept="2He$iJ" id="4bSVeFVFBmt" role="2H9Iav">
-                      <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
-                    </node>
-                    <node concept="2He$iJ" id="4bSVeFVFBmD" role="2H9Ial">
-                      <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
-                    </node>
+                <node concept="nE0YL" id="6ll6Fcue2yd" role="2H9Ial">
+                  <node concept="2IPVmt" id="6ll6Fcue2$y" role="2H9Ial">
+                    <property role="2IPVms" value="10" />
                   </node>
-                  <node concept="2IPVmt" id="4bSVeFVFBnG" role="2H9Ial">
-                    <property role="2IPVms" value="0" />
+                  <node concept="2EDkE1" id="6ll6Fcue2ih" role="2H9Iav">
+                    <node concept="2H9Eef" id="6ll6Fcue2mv" role="32OYtT">
+                      <node concept="2He$iJ" id="6ll6Fcue2nz" role="2H9Ial">
+                        <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+                      </node>
+                      <node concept="2He$iJ" id="6ll6Fcue2jb" role="2H9Iav">
+                        <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2020,6 +2351,38 @@
               </node>
               <node concept="0Sh09" id="4bSVeFVFBmd" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBjW" />
+              </node>
+            </node>
+            <node concept="1tTNwp" id="6ll6Fcue2pO" role="2H9I2x">
+              <property role="TrG5h" value="init2safe" />
+              <node concept="1tTNRl" id="6ll6Fcue2pQ" role="3JXa2C">
+                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+              </node>
+              <node concept="1tS8IT" id="6ll6Fcue2qZ" role="3JZSx7">
+                <ref role="1tS8HL" node="6bDIMKp8huW" resolve="initial" />
+              </node>
+              <node concept="2HbMbg" id="6ll6Fcue2xD" role="2H9I4J">
+                <node concept="32Ogvo" id="6ll6Fcue2r9" role="2H9Iav">
+                  <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                </node>
+                <node concept="nE0YJ" id="6ll6Fcue2xE" role="2H9Ial">
+                  <node concept="2EDkE1" id="6ll6Fcue2rC" role="2H9Iav">
+                    <node concept="2H9Eef" id="6ll6Fcue2rY" role="32OYtT">
+                      <node concept="2He$iJ" id="6ll6Fcue2ta" role="2H9Ial">
+                        <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+                      </node>
+                      <node concept="2He$iJ" id="6ll6Fcue2rK" role="2H9Iav">
+                        <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2IPVmt" id="6ll6Fcue2xG" role="2H9Ial">
+                    <property role="2IPVms" value="10" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1tS8IT" id="6ll6Fcue2$J" role="2H9I4_">
+                <ref role="1tS8HL" node="6bDIMKp8h_9" resolve="safe" />
               </node>
             </node>
             <node concept="1tTNwp" id="6bDIMKp8hXV" role="2H9I2x">
@@ -2052,12 +2415,14 @@
                 <ref role="1tS8HL" node="6bDIMKp8h_9" resolve="safe" />
               </node>
               <node concept="nE0YJ" id="6bDIMKp8xd3" role="2H9I4J">
-                <node concept="2H9Eef" id="6bDIMKp8xd4" role="2H9Iav">
-                  <node concept="2He$iJ" id="6bDIMKp8xbO" role="2H9Iav">
-                    <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
-                  </node>
-                  <node concept="2He$iJ" id="6bDIMKp8xcm" role="2H9Ial">
-                    <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+                <node concept="2EDkE1" id="6ll6Fcue2Sh" role="2H9Iav">
+                  <node concept="2H9Eef" id="6ll6Fcue2SB" role="32OYtT">
+                    <node concept="2He$iJ" id="6ll6Fcue2TN" role="2H9Ial">
+                      <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+                    </node>
+                    <node concept="2He$iJ" id="6ll6Fcue2Sp" role="2H9Iav">
+                      <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2IPVmt" id="6bDIMKp8xdv" role="2H9Ial">
@@ -2082,6 +2447,16 @@
               <node concept="0Sh09" id="4bSVeFVFBlV" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
               </node>
+              <node concept="2HbMDt" id="6ll6Fcue28u" role="2H9I4J">
+                <node concept="1yA0yd" id="6ll6Fcue28K" role="2H9Ial">
+                  <node concept="32Ogvo" id="6ll6Fcue28B" role="32OYtT">
+                    <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                  </node>
+                </node>
+                <node concept="1tS8IT" id="1ef6u74hU_3" role="2H9Iav">
+                  <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                </node>
+              </node>
             </node>
             <node concept="1tTNwp" id="6bDIMKp8xf3" role="2H9I2x">
               <property role="TrG5h" value="start2shutdown" />
@@ -2091,11 +2466,21 @@
               <node concept="1tS8IT" id="6bDIMKp8xf$" role="3JZSx7">
                 <ref role="1tS8HL" node="6bDIMKp8huZ" resolve="startup" />
               </node>
-              <node concept="1tS8IT" id="6bDIMKp8xfB" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+              <node concept="2HbMDt" id="6ll6Fcue28U" role="2H9I4_">
+                <node concept="1tS8IT" id="6bDIMKp8xfB" role="2H9Iav">
+                  <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                </node>
+                <node concept="1yA0yd" id="6ll6Fcue291" role="2H9Ial">
+                  <node concept="32Ogvo" id="6ll6Fcue292" role="32OYtT">
+                    <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                  </node>
+                </node>
               </node>
               <node concept="0Sh09" id="4bSVeFVFBlX" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
+              </node>
+              <node concept="1tS8IT" id="1ef6u74hU_7" role="2H9I4J">
+                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
               </node>
             </node>
             <node concept="1tTNwp" id="6bDIMKp8xg8" role="2H9I2x">
@@ -2106,11 +2491,21 @@
               <node concept="1tS8IT" id="6bDIMKp8xgH" role="3JZSx7">
                 <ref role="1tS8HL" node="6bDIMKp8hz3" resolve="operate" />
               </node>
-              <node concept="1tS8IT" id="6bDIMKp8xgK" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+              <node concept="2HbMDt" id="6ll6Fcue29c" role="2H9I4_">
+                <node concept="1tS8IT" id="6bDIMKp8xgK" role="2H9Iav">
+                  <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                </node>
+                <node concept="1yA0yd" id="6ll6Fcue29j" role="2H9Ial">
+                  <node concept="32Ogvo" id="6ll6Fcue29k" role="32OYtT">
+                    <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                  </node>
+                </node>
               </node>
               <node concept="0Sh09" id="4bSVeFVFBlZ" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
+              </node>
+              <node concept="1tS8IT" id="1ef6u74hU_c" role="2H9I4J">
+                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
               </node>
             </node>
             <node concept="1tTNwp" id="6bDIMKp8xhl" role="2H9I2x">
@@ -2121,11 +2516,21 @@
               <node concept="1tS8IT" id="6bDIMKp8xhY" role="3JZSx7">
                 <ref role="1tS8HL" node="6bDIMKp8h_9" resolve="safe" />
               </node>
-              <node concept="1tS8IT" id="6bDIMKp8xi1" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+              <node concept="2HbMDt" id="6ll6Fcue29s" role="2H9I4_">
+                <node concept="1tS8IT" id="6bDIMKp8xi1" role="2H9Iav">
+                  <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                </node>
+                <node concept="1yA0yd" id="6ll6Fcue29z" role="2H9Ial">
+                  <node concept="32Ogvo" id="6ll6Fcue29$" role="32OYtT">
+                    <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                  </node>
+                </node>
               </node>
               <node concept="0Sh09" id="4bSVeFVFBm1" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
+              </node>
+              <node concept="1tS8IT" id="1ef6u74hU_o" role="2H9I4J">
+                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
               </node>
             </node>
           </node>
@@ -2235,7 +2640,7 @@
               <node concept="3JXjYv" id="4bSVeFVFBGV" role="2H9I4J">
                 <ref role="3JXjYu" node="6bDIMKp8xe6" resolve="init2shutdown" />
               </node>
-              <node concept="1yCjT0" id="4bSVeFVFBH0" role="2H9I4_" />
+              <node concept="1yCjRe" id="1ef6u74hUzN" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIl" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
               </node>
@@ -2244,7 +2649,7 @@
               <node concept="3JXjYv" id="4bSVeFVFBHg" role="2H9I4J">
                 <ref role="3JXjYu" node="6bDIMKp8xf3" resolve="start2shutdown" />
               </node>
-              <node concept="1yCjT0" id="4bSVeFVFBHl" role="2H9I4_" />
+              <node concept="1yCjRe" id="1ef6u74hUzZ" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIj" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
               </node>
@@ -2253,7 +2658,7 @@
               <node concept="3JXjYv" id="4bSVeFVFBHC" role="2H9I4J">
                 <ref role="3JXjYu" node="6bDIMKp8xg8" resolve="operate2shutdown" />
               </node>
-              <node concept="1yCjT0" id="4bSVeFVFBHI" role="2H9I4_" />
+              <node concept="1yCjRe" id="1ef6u74hU$b" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIh" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
               </node>
@@ -2262,7 +2667,7 @@
               <node concept="3JXjYv" id="4bSVeFVFBI5" role="2H9I4J">
                 <ref role="3JXjYu" node="6bDIMKp8xhl" resolve="safe2shutdown" />
               </node>
-              <node concept="1yCjT0" id="4bSVeFVFBIa" role="2H9I4_" />
+              <node concept="1yCjRe" id="1ef6u74hU$n" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIf" role="lGtFl">
                 <ref role="0Sh0a" node="4bSVeFVFBkS" />
               </node>
@@ -2566,6 +2971,10 @@
       <node concept="3_qfHp" id="6bDIMKp8hGO" role="2Hdtzq">
         <property role="TrG5h" value="socket_connected" />
         <node concept="2Hds6S" id="6bDIMKp8hHl" role="2HdssB" />
+      </node>
+      <node concept="3_qfHp" id="1ef6u74hU$_" role="2Hdtzq">
+        <property role="TrG5h" value="shutdown" />
+        <node concept="2Hds6S" id="1ef6u74hU$M" role="2HdssB" />
       </node>
       <node concept="3US3jz" id="6bDIMKp9iYW" role="lGtFl">
         <node concept="3US$BV" id="6bDIMKp9iYY" role="3UnIb_">
