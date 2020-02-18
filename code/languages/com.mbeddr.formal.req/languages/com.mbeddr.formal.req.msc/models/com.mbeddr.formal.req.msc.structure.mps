@@ -8,6 +8,7 @@
   <imports>
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="kn8g" ref="r:26765d35-0c65-473d-aa02-a659c1aafef1(com.fasten.base.arch.msc.structure)" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -38,6 +39,9 @@
     <ref role="1TJDcQ" to="kn8g:3QO5pQQIzC5" resolve="ScenarioSpec" />
     <node concept="PrWs8" id="3QO5pQQQwMr" role="PzmwI">
       <ref role="PrY4T" to="z27p:4gtLUSMLiPR" resolve="IRequirementSpecification" />
+    </node>
+    <node concept="PrWs8" id="4OZFeReOeon" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
     </node>
   </node>
 </model>

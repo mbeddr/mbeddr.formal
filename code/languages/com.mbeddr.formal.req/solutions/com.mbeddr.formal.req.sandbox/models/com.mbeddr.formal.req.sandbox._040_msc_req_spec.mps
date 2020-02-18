@@ -20,6 +20,11 @@
       <concept id="6723249580495258698" name="com.fasten.base.msc.structure.MSCObjectRef" flags="ng" index="oYKel">
         <reference id="6723249580495258701" name="mscObject" index="oYKei" />
       </concept>
+      <concept id="5342984381957789434" name="com.fasten.base.msc.structure.Message" flags="ng" index="3_aW46">
+        <child id="6723249580495075175" name="target" index="oZz2S" />
+        <child id="6723249580495075170" name="source" index="oZz2X" />
+        <child id="5342984381958562242" name="exp" index="3_fVoY" />
+      </concept>
       <concept id="815900398743917907" name="com.fasten.base.msc.structure.StateDistributed" flags="ng" index="3OqrL5">
         <child id="815900398743918310" name="instances" index="3OqrZK" />
       </concept>
@@ -60,13 +65,18 @@
       </concept>
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2858146662931636881" name="com.mbeddr.formal.nusmv.structure.GreaterEqualsExpression" flags="ng" index="nE0YI" />
       <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
+        <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
+      </concept>
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
@@ -82,6 +92,12 @@
       </concept>
     </language>
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="1454643446872240070" name="com.mbeddr.formal.nusmv.ext.structure.ConstantRef" flags="ng" index="hx854">
+        <reference id="1454643446872241658" name="constant" index="hx9HS" />
+      </concept>
+      <concept id="1454643446872237210" name="com.mbeddr.formal.nusmv.ext.structure.ConstantDefinition" flags="ng" index="hx8Co">
+        <child id="1454643446872239975" name="value" index="hx87_" />
+      </concept>
       <concept id="7526568111199935988" name="com.mbeddr.formal.nusmv.ext.structure.IntervalDeclaration" flags="ng" index="2XEm0_">
         <child id="7526568111199936052" name="lower" index="2XEmf_" />
         <child id="7526568111199936055" name="upper" index="2XEmfA" />
@@ -110,6 +126,13 @@
       </concept>
       <concept id="4446202499241319119" name="com.fasten.base.arch.msc.structure.InstanceObject" flags="ng" index="2b3SXi">
         <reference id="4446202499241319122" name="inst" index="2b3SXf" />
+      </concept>
+      <concept id="4446202499242108273" name="com.fasten.base.arch.msc.structure.SendMessagesExpression" flags="ng" index="2bsV3G">
+        <child id="4446202499242108274" name="sendMessages" index="2bsV3J" />
+      </concept>
+      <concept id="4446202499241838947" name="com.fasten.base.arch.msc.structure.SendMessage" flags="ng" index="2btTNY">
+        <reference id="4446202499241973475" name="port" index="2bsodY" />
+        <child id="4446202499241973577" name="messageValue" index="2bsobk" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -159,7 +182,7 @@
         <node concept="0nzK2" id="3QO5pQQQwes" role="1QQeAV">
           <node concept="19SGf9" id="3QO5pQQQweD" role="0nzdz">
             <node concept="19SUe$" id="3QO5pQQQweT" role="19SJt6">
-              <property role="19SUeA" value="If the watter tank has at least 10% of capacity available, and the operator will start the pump, the water tank will fill at a rate of 1.3 m3/s&#10; " />
+              <property role="19SUeA" value="If the watter tank has at least 10% of capacity available and the operator starts the pump, &#10;the water tank will fill at a rate of 1.3 m3/s&#10; " />
             </node>
           </node>
         </node>
@@ -178,8 +201,8 @@
             </node>
             <node concept="nE0YL" id="3QO5pQQSpDU" role="3O4BRU">
               <node concept="2H9Ewv" id="3QO5pQQSpEH" role="2H9Ial">
-                <node concept="ru7O1" id="3QO5pQQSpF7" role="2H9Ial">
-                  <property role="ru7PJ" value="MAX_CAPACITY" />
+                <node concept="hx854" id="4OZFeReOkUO" role="2H9Ial">
+                  <ref role="hx9HS" node="4OZFeReOkT2" resolve="MAX_CAPACITY" />
                 </node>
                 <node concept="2IPVmt" id="3QO5pQQSpE8" role="2H9Iav">
                   <property role="2IPVms" value="0.9" />
@@ -192,7 +215,96 @@
           </node>
         </node>
         <node concept="oRLRZ" id="3QO5pQQQYtG" role="3_aW3_" />
-        <node concept="oRLRZ" id="3QO5pQQQYtK" role="3_aW3_" />
+        <node concept="3_aW46" id="4OZFeReOdW$" role="3_aW3_">
+          <node concept="oYKel" id="4OZFeReOdWP" role="oZz2X">
+            <ref role="oYKei" node="3QO5pQQQYtv" resolve="operator" />
+          </node>
+          <node concept="oYKel" id="4OZFeReOdWR" role="oZz2S">
+            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+          </node>
+          <node concept="2bsV3G" id="4OZFeReOe76" role="3_fVoY">
+            <node concept="2btTNY" id="4OZFeReOe78" role="2bsV3J">
+              <ref role="2bsodY" node="3QO5pQQQB9L" resolve="start" />
+              <node concept="1yCjRe" id="4OZFeReOe7I" role="2bsobk" />
+            </node>
+          </node>
+        </node>
+        <node concept="oRLRZ" id="4OZFeReOdVR" role="3_aW3_" />
+        <node concept="3_aW46" id="4OZFeReOdX$" role="3_aW3_">
+          <node concept="oYKel" id="4OZFeReOdXU" role="oZz2X">
+            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+          </node>
+          <node concept="oYKel" id="4OZFeReOdXW" role="oZz2S">
+            <ref role="oYKei" node="3QO5pQQQYtx" resolve="pump" />
+          </node>
+          <node concept="2bsV3G" id="4OZFeReOe7Q" role="3_fVoY">
+            <node concept="2btTNY" id="4OZFeReOe7S" role="2bsV3J">
+              <ref role="2bsodY" node="3QO5pQQQBcn" resolve="cmd" />
+              <node concept="2HeeqP" id="4OZFeReOkPU" role="2bsobk">
+                <ref role="2HeeqO" node="3QO5pQQQBcc" resolve="start" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="oRLRZ" id="4OZFeReOdXf" role="3_aW3_" />
+        <node concept="3_aW46" id="4OZFeReOdY0" role="3_aW3_">
+          <node concept="oYKel" id="4OZFeReOdYp" role="oZz2X">
+            <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+          </node>
+          <node concept="oYKel" id="4OZFeReOdYr" role="oZz2S">
+            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+          </node>
+          <node concept="2bsV3G" id="4OZFeReOkQ3" role="3_fVoY">
+            <node concept="2btTNY" id="4OZFeReOkQ5" role="2bsV3J">
+              <ref role="2bsodY" node="4OZFeReOe3U" resolve="capacity" />
+              <node concept="2IPVmt" id="4OZFeReOkQk" role="2bsobk">
+                <property role="2IPVms" value="95" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="oRLRZ" id="4OZFeReOdWk" role="3_aW3_" />
+        <node concept="3_aW46" id="4OZFeReOe0l" role="3_aW3_">
+          <node concept="oYKel" id="4OZFeReOe0P" role="oZz2X">
+            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+          </node>
+          <node concept="oYKel" id="4OZFeReOe0R" role="oZz2S">
+            <ref role="oYKei" node="3QO5pQQQYtx" resolve="pump" />
+          </node>
+          <node concept="2bsV3G" id="4OZFeReOkRg" role="3_fVoY">
+            <node concept="2btTNY" id="4OZFeReOkRi" role="2bsV3J">
+              <ref role="2bsodY" node="3QO5pQQQBcn" resolve="cmd" />
+              <node concept="2HeeqP" id="4OZFeReOkRq" role="2bsobk">
+                <ref role="2HeeqO" node="3QO5pQQQBce" resolve="stop" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="oRLRZ" id="4OZFeReOdYV" role="3_aW3_" />
+        <node concept="3OqrL5" id="4OZFeReOe0V" role="3_aW3_">
+          <node concept="3OqrWR" id="4OZFeReOe1u" role="3OqrZK">
+            <node concept="oYKel" id="4OZFeReOe1w" role="3OqpI5">
+              <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+            </node>
+            <node concept="oYKel" id="4OZFeReOe1y" role="3OqpI2">
+              <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+            </node>
+            <node concept="nE0YI" id="4OZFeReOkRv" role="3O4BRU">
+              <node concept="ru7O1" id="4OZFeReOe1$" role="2H9Iav">
+                <property role="ru7PJ" value="capacity" />
+              </node>
+              <node concept="2H9Ewv" id="4OZFeReOe2t" role="2H9Ial">
+                <node concept="hx854" id="4OZFeReOkUF" role="2H9Ial">
+                  <ref role="hx9HS" node="4OZFeReOkT2" resolve="MAX_CAPACITY" />
+                </node>
+                <node concept="2IPVmt" id="4OZFeReOe1Q" role="2H9Iav">
+                  <property role="2IPVms" value="0.95" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="oRLRZ" id="4OZFeReOdZQ" role="3_aW3_" />
         <node concept="2b3SXi" id="3QO5pQQQYtv" role="3_aW3F">
           <property role="TrG5h" value="operator" />
           <ref role="2b3SXf" node="3QO5pQQQBgb" resolve="operator" />
@@ -203,11 +315,11 @@
         </node>
         <node concept="2b3SXi" id="3QO5pQQQYtx" role="3_aW3F">
           <property role="TrG5h" value="pump" />
-          <ref role="2b3SXf" node="3QO5pQQQBgx" resolve="pump" />
+          <ref role="2b3SXf" node="3QO5pQQQBgx" resolve="pumpActuators" />
         </node>
         <node concept="2b3SXi" id="3QO5pQQQYty" role="3_aW3F">
           <property role="TrG5h" value="tank" />
-          <ref role="2b3SXf" node="3QO5pQQQYqV" resolve="tank" />
+          <ref role="2b3SXf" node="3QO5pQQQYqV" resolve="tankSensors" />
         </node>
       </node>
       <node concept="1QQeAL" id="3QO5pQQQHTy" role="1QQeAC" />
@@ -242,6 +354,21 @@
       </node>
       <node concept="2IPVmt" id="3QO5pQQQYp1" role="2XEmfA">
         <property role="2IPVms" value="100" />
+      </node>
+    </node>
+    <node concept="2XEm0_" id="4OZFeReOe5d" role="2HcuB8">
+      <property role="TrG5h" value="tank_fill_percentage_t" />
+      <node concept="2IPVmt" id="4OZFeReOe5e" role="2XEmf_">
+        <property role="2IPVms" value="0" />
+      </node>
+      <node concept="2IPVmt" id="4OZFeReOe5f" role="2XEmfA">
+        <property role="2IPVms" value="100" />
+      </node>
+    </node>
+    <node concept="hx8Co" id="4OZFeReOkT2" role="2HcuB8">
+      <property role="TrG5h" value="MAX_CAPACITY" />
+      <node concept="2IPVmt" id="4OZFeReOkUf" role="hx87_">
+        <property role="2IPVms" value="500" />
       </node>
     </node>
     <node concept="2SQmWS" id="3QO5pQQQYmL" role="2HcuB8" />
@@ -285,11 +412,17 @@
     </node>
     <node concept="2SQmWS" id="3QO5pQQQBew" role="2HcuB8" />
     <node concept="3UnI89" id="3QO5pQQQYlM" role="2HcuB8">
-      <property role="TrG5h" value="Tank" />
+      <property role="TrG5h" value="TankSensors" />
       <node concept="3UnI81" id="3QO5pQQQYmE" role="3UnI9m">
         <property role="TrG5h" value="rate" />
         <node concept="2XEmfi" id="3QO5pQQQYqe" role="3UnI80">
           <ref role="2XEmfl" node="3QO5pQQQYnF" resolve="rate_t" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4OZFeReOe3U" role="3UnI90">
+        <property role="TrG5h" value="capacity" />
+        <node concept="2XEmfi" id="4OZFeReOe6R" role="3UnI80">
+          <ref role="2XEmfl" node="4OZFeReOe5d" resolve="tank_fill_percentage_t" />
         </node>
       </node>
     </node>
@@ -309,15 +442,15 @@
         </node>
       </node>
       <node concept="3Ug1AV" id="3QO5pQQQBgx" role="3UgYNK">
-        <property role="TrG5h" value="pump" />
+        <property role="TrG5h" value="pumpActuators" />
         <node concept="3Ug1AZ" id="3QO5pQQQBgv" role="3Ug1A_">
           <ref role="3Ug1AY" node="3QO5pQQQBbp" resolve="PumpActuators" />
         </node>
       </node>
       <node concept="3Ug1AV" id="3QO5pQQQYqV" role="3UgYNK">
-        <property role="TrG5h" value="tank" />
+        <property role="TrG5h" value="tankSensors" />
         <node concept="3Ug1AZ" id="3QO5pQQQYqT" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3QO5pQQQYlM" resolve="Tank" />
+          <ref role="3Ug1AY" node="3QO5pQQQYlM" resolve="TankSensors" />
         </node>
       </node>
       <node concept="3Ug1$w" id="3QO5pQQQBhi" role="3UgYNK">
@@ -344,7 +477,7 @@
         <node concept="3Ug1GC" id="3QO5pQQQBhA" role="3Ug1_r">
           <ref role="3Ug1Ha" node="3QO5pQQQBcC" resolve="cmd" />
           <node concept="3Ug1GJ" id="3QO5pQQQBiT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgx" resolve="pump" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgx" resolve="pumpActuators" />
           </node>
         </node>
       </node>
@@ -380,13 +513,13 @@
         <node concept="3Ug1GC" id="3QO5pQQQYsm" role="3Ug1$A">
           <ref role="3Ug1Ha" node="3QO5pQQQBde" resolve="rate" />
           <node concept="3Ug1GJ" id="3QO5pQQQYsl" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgx" resolve="pump" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgx" resolve="pumpActuators" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3QO5pQQQYsq" role="3Ug1_r">
           <ref role="3Ug1Ha" node="3QO5pQQQYmE" resolve="rate" />
           <node concept="3Ug1GJ" id="3QO5pQQQYsp" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQYqV" resolve="tank" />
+            <ref role="3Ug1GI" node="3QO5pQQQYqV" resolve="tankSensors" />
           </node>
         </node>
       </node>
