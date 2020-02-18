@@ -78,6 +78,12 @@
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
+      <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
+        <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
+        <property id="8137134783396676838" name="extracted" index="1HemKv" />
+        <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
+        <child id="8137134783396676835" name="location" index="1HemKq" />
+      </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
@@ -228,11 +234,6 @@
           <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
         </node>
       </node>
-      <node concept="1SiIV0" id="3GDqItDlq07" role="3bR37C">
-        <node concept="3bR9La" id="3GDqItDlq08" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-        </node>
-      </node>
       <node concept="1SiIV0" id="3GDqItDlq5o" role="3bR37C">
         <node concept="3bR9La" id="3GDqItDlq5p" role="1SiIV1">
           <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
@@ -246,6 +247,28 @@
       <node concept="1SiIV0" id="3GDqItDlqht" role="3bR37C">
         <node concept="3bR9La" id="3GDqItDlqhu" role="1SiIV1">
           <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+        </node>
+      </node>
+      <node concept="1BupzO" id="IiE7lRnL44" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="IiE7lRnL45" role="1HemKq">
+          <node concept="398BVA" id="IiE7lRnL3T" role="3LXTmr">
+            <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+            <node concept="2Ry0Ak" id="IiE7lRnL3U" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="IiE7lRnL3V" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.build" />
+                <node concept="2Ry0Ak" id="IiE7lRnL3W" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="IiE7lRnL46" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
         </node>
       </node>
     </node>

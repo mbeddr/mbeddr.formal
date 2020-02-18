@@ -425,6 +425,18 @@
       <node concept="m$_yC" id="4aeOpjl$egK" role="m$_yJ">
         <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
       </node>
+      <node concept="m$_yC" id="IiE7lRp2zq" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
+      </node>
+      <node concept="m$_yC" id="IiE7lRp2As" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:1Rj3F434M3n" resolve="com.mbeddr.mpsutil.jfreechart" />
+      </node>
+      <node concept="m$_yC" id="IiE7lRp2GA" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
+      </node>
+      <node concept="m$_yC" id="IiE7lRp2JI" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
+      </node>
       <node concept="3_J27D" id="42jqVeFkUva" role="m_cZH">
         <node concept="3Mxwew" id="42jqVeFkUvb" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.nusmv" />
@@ -803,6 +815,41 @@
             <node concept="3qWCbU" id="5TezZ1Vdfvf" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYeo" role="3bR37C">
+          <node concept="3bR9La" id="IiE7lRnYep" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYeq" role="3bR37C">
+          <node concept="3bR9La" id="IiE7lRnYer" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYes" role="3bR37C">
+          <node concept="3bR9La" id="IiE7lRnYet" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6wEeo$QJAsB" resolve="de.itemis.mps.editor.diagram.shapes" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYeu" role="3bR37C">
+          <node concept="3bR9La" id="IiE7lRnYev" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYew" role="3bR37C">
+          <node concept="3bR9La" id="IiE7lRnYex" role="1SiIV1">
+            <ref role="3bR37D" node="5yQpAUIgOcH" resolve="com.mbeddr.formal.nusmv.cbd" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYeH" role="3bR37C">
+          <node concept="1Busua" id="IiE7lRnYeI" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYeJ" role="3bR37C">
+          <node concept="1Busua" id="IiE7lRnYeK" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
           </node>
         </node>
       </node>
@@ -2698,101 +2745,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6adXBxxUxwa" role="3bR37C">
-          <node concept="1BurEX" id="6adXBxxUxwb" role="1SiIV1">
-            <node concept="398BVA" id="6adXBxxUxvN" role="1BurEY">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-              <node concept="2Ry0Ak" id="6adXBxxUxvO" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6adXBxxUxvP" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
-                  <node concept="2Ry0Ak" id="6adXBxxUxvQ" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6adXBxxUxvR" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-6.1.1.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6adXBxxUxwz" role="3bR37C">
-          <node concept="1BurEX" id="6adXBxxUxw$" role="1SiIV1">
-            <node concept="398BVA" id="6adXBxxUxwc" role="1BurEY">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-              <node concept="2Ry0Ak" id="6adXBxxUxwd" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6adXBxxUxwe" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
-                  <node concept="2Ry0Ak" id="6adXBxxUxwf" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6adXBxxUxwg" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-analysis-6.1.1.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6adXBxxUxwW" role="3bR37C">
-          <node concept="1BurEX" id="6adXBxxUxwX" role="1SiIV1">
-            <node concept="398BVA" id="6adXBxxUxw_" role="1BurEY">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-              <node concept="2Ry0Ak" id="6adXBxxUxwA" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6adXBxxUxwB" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
-                  <node concept="2Ry0Ak" id="6adXBxxUxwC" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6adXBxxUxwD" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-tree-6.1.1.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6adXBxxUxxl" role="3bR37C">
-          <node concept="1BurEX" id="6adXBxxUxxm" role="1SiIV1">
-            <node concept="398BVA" id="6adXBxxUxwY" role="1BurEY">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-              <node concept="2Ry0Ak" id="6adXBxxUxwZ" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6adXBxxUxx0" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
-                  <node concept="2Ry0Ak" id="6adXBxxUxx1" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6adXBxxUxx2" role="2Ry0An">
-                      <property role="2Ry0Am" value="parboiled-core-1.1.8.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6adXBxxUxxI" role="3bR37C">
-          <node concept="1BurEX" id="6adXBxxUxxJ" role="1SiIV1">
-            <node concept="398BVA" id="6adXBxxUxxn" role="1BurEY">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-              <node concept="2Ry0Ak" id="6adXBxxUxxo" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6adXBxxUxxp" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
-                  <node concept="2Ry0Ak" id="6adXBxxUxxq" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6adXBxxUxxr" role="2Ry0An">
-                      <property role="2Ry0Am" value="parboiled-java-1.1.8.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="2QUcAU2cCzC" role="3bR37C">
           <node concept="3bR9La" id="2QUcAU2cCzD" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
@@ -2827,6 +2779,120 @@
             </node>
             <node concept="3qWCbU" id="5TezZ1VdfAk" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYjB" role="3bR37C">
+          <node concept="1BurEX" id="IiE7lRnYjC" role="1SiIV1">
+            <node concept="398BVA" id="IiE7lRnYjq" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="IiE7lRnYjr" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IiE7lRnYjs" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
+                  <node concept="2Ry0Ak" id="IiE7lRnYjt" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="IiE7lRnYju" role="2Ry0An">
+                      <property role="2Ry0Am" value="asm-tree-7.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYjQ" role="3bR37C">
+          <node concept="1BurEX" id="IiE7lRnYjR" role="1SiIV1">
+            <node concept="398BVA" id="IiE7lRnYjD" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="IiE7lRnYjE" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IiE7lRnYjF" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
+                  <node concept="2Ry0Ak" id="IiE7lRnYjG" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="IiE7lRnYjH" role="2Ry0An">
+                      <property role="2Ry0Am" value="parboiled-java-1.3.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYk5" role="3bR37C">
+          <node concept="1BurEX" id="IiE7lRnYk6" role="1SiIV1">
+            <node concept="398BVA" id="IiE7lRnYjS" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="IiE7lRnYjT" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IiE7lRnYjU" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
+                  <node concept="2Ry0Ak" id="IiE7lRnYjV" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="IiE7lRnYjW" role="2Ry0An">
+                      <property role="2Ry0Am" value="asm-7.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYkk" role="3bR37C">
+          <node concept="1BurEX" id="IiE7lRnYkl" role="1SiIV1">
+            <node concept="398BVA" id="IiE7lRnYk7" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="IiE7lRnYk8" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IiE7lRnYk9" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
+                  <node concept="2Ry0Ak" id="IiE7lRnYka" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="IiE7lRnYkb" role="2Ry0An">
+                      <property role="2Ry0Am" value="asm-analysis-7.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYkz" role="3bR37C">
+          <node concept="1BurEX" id="IiE7lRnYk$" role="1SiIV1">
+            <node concept="398BVA" id="IiE7lRnYkm" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="IiE7lRnYkn" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IiE7lRnYko" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
+                  <node concept="2Ry0Ak" id="IiE7lRnYkp" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="IiE7lRnYkq" role="2Ry0An">
+                      <property role="2Ry0Am" value="asm-util-7.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="IiE7lRnYkM" role="3bR37C">
+          <node concept="1BurEX" id="IiE7lRnYkN" role="1SiIV1">
+            <node concept="398BVA" id="IiE7lRnYk_" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="IiE7lRnYkA" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IiE7lRnYkB" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
+                  <node concept="2Ry0Ak" id="IiE7lRnYkC" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="IiE7lRnYkD" role="2Ry0An">
+                      <property role="2Ry0Am" value="parboiled-core-1.3.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
