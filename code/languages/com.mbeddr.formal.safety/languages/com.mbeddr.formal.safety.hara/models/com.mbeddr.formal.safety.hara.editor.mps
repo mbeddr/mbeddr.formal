@@ -21,7 +21,12 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -92,6 +97,18 @@
           <node concept="2rfbtV" id="7TjUbLQ452h" role="2recC9">
             <property role="2rfbtB" value="Hazard Name" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6W1kQP6AMYC">
+    <ref role="1XX52x" to="cjwq:6W1kQP6AMY_" resolve="HazardRef" />
+    <node concept="1iCGBv" id="6W1kQP6AMYE" role="2wV5jI">
+      <ref role="1NtTu8" to="cjwq:6W1kQP6AMYA" resolve="hazard" />
+      <node concept="1sVBvm" id="6W1kQP6AMYG" role="1sWHZn">
+        <node concept="3F0A7n" id="6W1kQP6AMYQ" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
         </node>
       </node>
     </node>
