@@ -3181,6 +3181,9 @@
           </node>
           <node concept="30gYXW" id="4OZFeReNT$2" role="3F10Kt">
             <property role="Vb096" value="fLwANPq/yellow" />
+            <node concept="1iSF2X" id="6W1kQP6Au5p" role="VblUZ">
+              <property role="1iTho6" value="FFFFE0" />
+            </node>
           </node>
         </node>
       </node>
@@ -3284,6 +3287,9 @@
           </node>
           <node concept="30gYXW" id="4OZFeReO6Fo" role="3F10Kt">
             <property role="Vb096" value="fLwANPq/yellow" />
+            <node concept="1iSF2X" id="6W1kQP6Au5r" role="VblUZ">
+              <property role="1iTho6" value="FFFFE0" />
+            </node>
           </node>
         </node>
       </node>
