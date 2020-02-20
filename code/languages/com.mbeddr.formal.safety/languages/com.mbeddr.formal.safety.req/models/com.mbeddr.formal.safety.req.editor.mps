@@ -39,10 +39,10 @@
     </language>
   </registry>
   <node concept="24kQdi" id="5r2fDr4p_0u">
-    <ref role="1XX52x" to="30zx:5r2fDr4pukE" resolve="SafetyKind" />
+    <ref role="1XX52x" to="30zx:5r2fDr4pukE" resolve="FunctionalSafetyReqKind" />
     <node concept="3EZMnI" id="5r2fDr4p_0w" role="2wV5jI">
       <node concept="3F0ifn" id="5r2fDr4p_0K" role="3EZMnx">
-        <property role="3F0ifm" value="safety" />
+        <property role="3F0ifm" value="functional safety" />
       </node>
       <node concept="3F0ifn" id="7L33HENdt1I" role="3EZMnx">
         <property role="3F0ifm" value="-" />
@@ -60,6 +60,15 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6W1kQP6ALIx">
+    <ref role="1XX52x" to="30zx:6W1kQP6ALIo" resolve="TechnicalSafetyReqKind" />
+    <node concept="3EZMnI" id="6W1kQP6ALIz" role="2wV5jI">
+      <node concept="3F0ifn" id="6W1kQP6ALI$" role="3EZMnx">
+        <property role="3F0ifm" value="technical safety" />
+      </node>
+      <node concept="l2Vlx" id="6W1kQP6ALIB" role="2iSdaV" />
     </node>
   </node>
 </model>

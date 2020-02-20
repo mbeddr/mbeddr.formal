@@ -34,15 +34,22 @@
   </registry>
   <node concept="1TIwiD" id="5r2fDr4pukE">
     <property role="EcuMT" value="6251628050004698410" />
-    <property role="TrG5h" value="SafetyKind" />
-    <property role="34LRSv" value="safety" />
-    <property role="R4oN_" value="safety requirement" />
+    <property role="TrG5h" value="FunctionalSafetyReqKind" />
+    <property role="34LRSv" value="functional safety" />
+    <property role="R4oN_" value="functional safety requirement" />
     <ref role="1TJDcQ" to="z27p:4gtLUSMLiPT" resolve="ReqKindBase" />
     <node concept="1TJgyj" id="7L33HENbhhH" role="1TKVEi">
       <property role="IQ2ns" value="8954016816614413421" />
       <property role="20kJfa" value="hazard" />
       <ref role="20lvS9" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6W1kQP6ALIo">
+    <property role="EcuMT" value="7998766141987822488" />
+    <property role="TrG5h" value="TechnicalSafetyReqKind" />
+    <property role="34LRSv" value="technical safety" />
+    <property role="R4oN_" value="technical safety requirement" />
+    <ref role="1TJDcQ" to="z27p:4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
 </model>
 
