@@ -86,6 +86,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -115,7 +116,19 @@
   <node concept="13h7C7" id="3QO5pQQMwkw">
     <ref role="13h7C2" to="kn8g:3QO5pQQLUlL" resolve="SendMessagesExpression" />
     <node concept="13hLZK" id="3QO5pQQMwkx" role="13h7CW">
-      <node concept="3clFbS" id="3QO5pQQMwky" role="2VODD2" />
+      <node concept="3clFbS" id="3QO5pQQMwky" role="2VODD2">
+        <node concept="3clFbF" id="4OZFeReP9y2" role="3cqZAp">
+          <node concept="2OqwBi" id="4OZFeRePbgo" role="3clFbG">
+            <node concept="2OqwBi" id="4OZFeReP9Fw" role="2Oq$k0">
+              <node concept="13iPFW" id="4OZFeReP9y1" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4OZFeReP9Sb" role="2OqNvi">
+                <ref role="3TtcxE" to="kn8g:3QO5pQQLUlM" resolve="sendMessages" />
+              </node>
+            </node>
+            <node concept="WFELt" id="4OZFeRePcTg" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="3QO5pQQMwkF" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
