@@ -8,7 +8,7 @@
     <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="4" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
-    <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="0" />
+    <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="1" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
@@ -43,7 +43,9 @@
       </concept>
     </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
-      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
+        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
+      </concept>
       <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
       <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
         <child id="3226630706270140651" name="text" index="0nzdz" />
@@ -195,8 +197,8 @@
       </concept>
     </language>
     <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
-      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.SafetyKind" flags="ng" index="2iDXIW">
-        <reference id="8954016816614413421" name="hazard" index="3frxER" />
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -222,6 +224,9 @@
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
     </language>
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
       <concept id="1454643446873680974" name="com.mbeddr.formal.nusmv.ext.structure.FunctionMacroDefinition" flags="ng" index="hVCbc">
@@ -4412,13 +4417,19 @@
       <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
     </node>
+    <node concept="1a6Z8w" id="GpIy9pLLNl" role="8gIbH" />
   </node>
   <node concept="1QQeGf" id="1$M4_qbIbay">
     <property role="TrG5h" value="_010_airbag_functional_requirements" />
     <node concept="0lhDl" id="1$M4_qbIbaz" role="1QQeBF">
       <property role="0lsPA" value="FR01" />
       <property role="0ke_I" value="Carmen" />
-      <node concept="1QQeFk" id="1$M4_qbIba$" role="0nOlf" />
+      <node concept="0lhDl" id="GpIy9pLLN7" role="1VMWzp">
+        <node concept="1QQeFk" id="GpIy9pLLN8" role="0nOlf" />
+        <node concept="19SGf9" id="GpIy9pLLN9" role="1QQeG9">
+          <node concept="19SUe$" id="GpIy9pLLNa" role="19SJt6" />
+        </node>
+      </node>
       <node concept="19SGf9" id="1$M4_qbIba_" role="1QQeG9">
         <node concept="19SUe$" id="1$M4_qbIbaA" role="19SJt6">
           <property role="19SUeA" value="Airbag function" />
@@ -4454,6 +4465,7 @@
           </node>
         </node>
       </node>
+      <node concept="1QQeFk" id="GpIy9pLLN4" role="0nOlf" />
     </node>
     <node concept="0lH3_" id="35$gPpxdmsI" role="1QQeBF" />
   </node>
@@ -4468,7 +4480,9 @@
         </node>
       </node>
       <node concept="2iDXIW" id="1$M4_qbIbb6" role="0nOlf">
-        <ref role="3frxER" node="5P9zxa4g3I2" resolve="The airbag is not deployed when needed" />
+        <node concept="DABN8" id="6W1kQP6Bq6j" role="DABNk">
+          <ref role="DABNb" node="5P9zxa4g3I2" resolve="The airbag is not deployed when needed" />
+        </node>
       </node>
       <node concept="1QQeAY" id="35$gPpxdmt2" role="1QQeAC">
         <node concept="0nzK2" id="35$gPpxdmt3" role="1QQeAV">
@@ -7027,7 +7041,7 @@
         <node concept="gqqVs" id="2iCnExZKymA" role="37mO4d">
           <property role="gqqTZ" value="605.9307021620647" />
           <property role="gqqTW" value="399.7386353173868" />
-          <property role="gqqTX" value="177.0" />
+          <property role="gqqTX" value="189.0" />
           <property role="gqqTy" value="119.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7037,7 +7051,7 @@
         <node concept="gqqVs" id="2iCnExZKy$Q" role="37mO4d">
           <property role="gqqTZ" value="827.9307021620647" />
           <property role="gqqTW" value="399.7386353173868" />
-          <property role="gqqTX" value="187.0" />
+          <property role="gqqTX" value="189.0" />
           <property role="gqqTy" value="118.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7142,6 +7156,16 @@
           </node>
         </node>
       </node>
+      <node concept="37mRIm" id="GpIy9pLMqc" role="37mRID">
+        <property role="37mO49" value="799875065532851766" />
+        <node concept="gqqVs" id="GpIy9pLMqb" role="37mO4d">
+          <property role="gqqTZ" value="517.0" />
+          <property role="gqqTW" value="399.7386353173868" />
+          <property role="gqqTX" value="149.0" />
+          <property role="gqqTy" value="96.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
     </node>
     <node concept="Z5Ll5" id="65LrkjiXUrs" role="2vn1q5">
       <property role="TrG5h" value="G22" />
@@ -7194,7 +7218,7 @@
           <property role="19SUeA" value="Argumentation based &#10; on contract-based design &#10; applied to &#10;" />
         </node>
         <node concept="oK52h" id="65LrkjiXUrr" role="19SJt6">
-          <node concept="1_PrfU" id="65LrkjiXUPz" role="oK52i">
+          <node concept="1_PrfU" id="1JJRV36yyOR" role="oK52i">
             <ref role="1_Prev" node="57ROGn93a3R" resolve="airbag_system" />
           </node>
         </node>
@@ -7222,31 +7246,31 @@
       <ref role="3VeSjQ" node="65LrkjiXUS0" resolve="G24" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKxUB" role="2vn1q5">
-      <property role="1_P5yc" value="Sun Dec 29 15:34:03 CET 2019" />
-      <property role="1_P5wC" value="29-12-2019 15:34:03" />
+      <property role="1_P5yc" value="Wed Feb 19 10:53:13 CET 2020" />
+      <property role="1_P5wC" value="19-02-2020 10:53:13" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="-2108609196" />
       <property role="TrG5h" value="Sn1" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKy7Y" role="2vn1q5">
-      <property role="1_P5yc" value="Sun Dec 29 15:34:02 CET 2019" />
-      <property role="1_P5wC" value="29-12-2019 15:34:02" />
+      <property role="1_P5yc" value="Wed Feb 19 10:53:12 CET 2020" />
+      <property role="1_P5wC" value="19-02-2020 10:53:12" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="-1264614616" />
       <property role="TrG5h" value="Sn2" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKylo" role="2vn1q5">
-      <property role="1_P5yc" value="Sun Dec 29 15:34:03 CET 2019" />
-      <property role="1_P5wC" value="29-12-2019 15:34:03" />
+      <property role="1_P5yc" value="Wed Feb 19 10:53:13 CET 2020" />
+      <property role="1_P5wC" value="19-02-2020 10:53:13" />
       <property role="1_P5xa" value="true" />
-      <property role="1_P2tN" value="-1590676926" />
+      <property role="1_P2tN" value="1765429298" />
       <property role="TrG5h" value="Sn3" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKyzB" role="2vn1q5">
-      <property role="1_P5yc" value="Sun Dec 29 15:34:03 CET 2019" />
-      <property role="1_P5wC" value="29-12-2019 15:34:03" />
+      <property role="1_P5yc" value="Wed Feb 19 10:53:13 CET 2020" />
+      <property role="1_P5wC" value="19-02-2020 10:53:13" />
       <property role="1_P5xa" value="true" />
-      <property role="1_P2tN" value="1981372363" />
+      <property role="1_P2tN" value="1299781067" />
       <property role="TrG5h" value="Sn4" />
     </node>
     <node concept="1$Gd3o" id="2iCnExZKyP1" role="2vhqc$">
@@ -8901,7 +8925,9 @@
         </node>
       </node>
       <node concept="2iDXIW" id="35$gPpxdqeP" role="0nOlf">
-        <ref role="3frxER" node="5P9zxa4g3HE" resolve="The airbag is deployed when not nedeed" />
+        <node concept="DABN8" id="6W1kQP6Bq6k" role="DABNk">
+          <ref role="DABNb" node="5P9zxa4g3IF" resolve="The airbag is deployed too early" />
+        </node>
       </node>
       <node concept="1QQeAY" id="35$gPpxdqeQ" role="1QQeAC">
         <node concept="0nzK2" id="35$gPpxdqeR" role="1QQeAV">
@@ -8932,7 +8958,9 @@
         </node>
       </node>
       <node concept="2iDXIW" id="2sg$KXfW3G$" role="0nOlf">
-        <ref role="3frxER" node="5P9zxa4g3HE" resolve="The airbag is deployed when not nedeed" />
+        <node concept="DABN8" id="6W1kQP6Bq6l" role="DABNk">
+          <ref role="DABNb" node="5P9zxa4g3HE" resolve="The airbag is deployed when not nedeed" />
+        </node>
       </node>
     </node>
   </node>

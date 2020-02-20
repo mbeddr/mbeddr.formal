@@ -2,7 +2,7 @@
 <model ref="r:b1ac19a3-e0be-4765-ba90-5ef079e1c2ff(_010_features._030_safety_requirements)">
   <persistence version="9" />
   <languages>
-    <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="0" />
+    <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="1" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
   </languages>
   <imports>
@@ -31,8 +31,13 @@
       </concept>
     </language>
     <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
-      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.SafetyKind" flags="ng" index="2iDXIW">
-        <reference id="8954016816614413421" name="hazard" index="3frxER" />
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -47,7 +52,9 @@
       <property role="0lsPA" value="SR.01" />
       <property role="0ke_I" value="mike" />
       <node concept="2iDXIW" id="7L33HENb9x8" role="0nOlf">
-        <ref role="3frxER" to="xtgl:7L33HENb9vN" resolve="airbag deploys unintentionally" />
+        <node concept="DABN8" id="6W1kQP6Bq6h" role="DABNk">
+          <ref role="DABNb" to="xtgl:7L33HENb9vN" resolve="airbag deploys unintentionally" />
+        </node>
       </node>
       <node concept="19SGf9" id="7L33HENb9x2" role="1QQeG9">
         <node concept="19SUe$" id="7L33HENb9x3" role="19SJt6">
@@ -60,7 +67,9 @@
       <property role="0lsPA" value="SR.02" />
       <property role="0ke_I" value="john" />
       <node concept="2iDXIW" id="7L33HENduwv" role="0nOlf">
-        <ref role="3frxER" to="xtgl:7L33HENb9vA" resolve="airbag does not deploy" />
+        <node concept="DABN8" id="6W1kQP6Bq6i" role="DABNk">
+          <ref role="DABNb" to="xtgl:7L33HENb9vA" resolve="airbag does not deploy" />
+        </node>
       </node>
       <node concept="19SGf9" id="7L33HENduwj" role="1QQeG9">
         <node concept="19SUe$" id="7L33HENduwk" role="19SJt6">
