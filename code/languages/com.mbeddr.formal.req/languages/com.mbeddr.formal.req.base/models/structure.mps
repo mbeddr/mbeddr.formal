@@ -306,6 +306,11 @@
     <property role="TrG5h" value="RequirementTrace" />
     <property role="3GE5qa" value="trace" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="4MR8i$47Fuw" role="1TKVEl">
+      <property role="IQ2nx" value="5527923527667070880" />
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="M6xJ_" id="pWUwO6BvC5" role="lGtFl">
       <property role="Hh88m" value="trace" />
       <node concept="trNpa" id="pWUwO6BMXK" role="EQaZv">
