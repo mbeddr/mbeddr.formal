@@ -1043,5 +1043,8 @@
       <node concept="3F0ifn" id="33qt4wr9te4" role="3EZMnx" />
     </node>
   </node>
+  <node concept="3p36aQ" id="4MR8i$4iWiq">
+    <ref role="aqKnT" to="bsp8:4i__4Gxs2uL" resolve="ComponentInterfaceRef" />
+  </node>
 </model>
 

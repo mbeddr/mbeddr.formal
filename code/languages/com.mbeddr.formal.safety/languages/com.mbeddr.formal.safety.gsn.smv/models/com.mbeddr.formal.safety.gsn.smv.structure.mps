@@ -265,6 +265,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
+    <node concept="asaX9" id="4MR8i$4iWhX" role="lGtFl">
+      <property role="YLQ7P" value="to remove from FASTEN in releases after March 2020" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4i__4Gxsq_o">
     <property role="EcuMT" value="4946522816140912984" />
