@@ -11,6 +11,7 @@
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -29,6 +30,7 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -205,6 +207,18 @@
       <property role="IQ2ns" value="7021513436411693957" />
       <property role="20kJfa" value="requirement" />
       <ref role="20lvS9" to="z27p:2N7iSwG$_7t" resolve="Requirement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4MR8i$4iWir">
+    <property role="EcuMT" value="5527923527670023323" />
+    <property role="3GE5qa" value="cbd" />
+    <property role="TrG5h" value="ComponentInterfaceRef" />
+    <ref role="1TJDcQ" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
+    <node concept="1TJgyj" id="4MR8i$4iWis" role="1TKVEi">
+      <property role="IQ2ns" value="5527923527670023324" />
+      <property role="20kJfa" value="componentInterface" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
   </node>
 </model>

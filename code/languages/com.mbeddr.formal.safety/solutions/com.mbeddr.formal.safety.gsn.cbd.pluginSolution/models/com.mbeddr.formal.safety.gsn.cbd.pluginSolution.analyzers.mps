@@ -690,7 +690,7 @@
                     <node concept="3cpWsn" id="33qt4wr4DsL" role="3cpWs9">
                       <property role="TrG5h" value="currentComponent" />
                       <node concept="3Tqbb2" id="33qt4wr4DhQ" role="1tU5fm">
-                        <ref role="ehGHo" to="2qxf:6rlO$dpPTOC" resolve="AbstractComponentRef" />
+                        <ref role="ehGHo" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
                       </node>
                       <node concept="2OqwBi" id="33qt4wr4DsM" role="33vP2m">
                         <node concept="2GrUjf" id="33qt4wr4DsN" role="2Oq$k0">
@@ -738,13 +738,8 @@
                             <node concept="3clFbS" id="33qt4wr57EM" role="1bW5cS">
                               <node concept="3clFbF" id="33qt4wr57EN" role="3cqZAp">
                                 <node concept="3clFbC" id="33qt4wr57EO" role="3clFbG">
-                                  <node concept="2OqwBi" id="33qt4wr57EP" role="3uHU7w">
-                                    <node concept="37vLTw" id="33qt4wr57EQ" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="33qt4wr4DsL" resolve="currentComponent" />
-                                    </node>
-                                    <node concept="2qgKlT" id="33qt4wr57ER" role="2OqNvi">
-                                      <ref role="37wK5l" to="g8ih:ZaBFheHm9F" resolve="getComponent" />
-                                    </node>
+                                  <node concept="37vLTw" id="33qt4wr57EQ" role="3uHU7w">
+                                    <ref role="3cqZAo" node="33qt4wr4DsL" resolve="currentComponent" />
                                   </node>
                                   <node concept="2OqwBi" id="33qt4wr57ES" role="3uHU7B">
                                     <node concept="2OqwBi" id="33qt4wr57ET" role="2Oq$k0">

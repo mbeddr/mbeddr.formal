@@ -10,12 +10,22 @@
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="g8ih" ref="r:d04ada13-9d56-43be-9fbe-16c353913377(com.mbeddr.formal.safety.gsn.patterns.behavior)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
+    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
+    <import index="7wf3" ref="r:c49134f0-ff6f-4ef4-ad9f-10c1a3f47c1a(com.mbeddr.formal.base.arch.behavior)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -29,11 +39,18 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -49,6 +66,9 @@
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -92,11 +112,26 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -125,10 +160,20 @@
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
   <node concept="18kY7G" id="6FysnQMU7og">
@@ -379,6 +424,337 @@
     <node concept="1YaCAy" id="4i__4Gxo8uK" role="1YuTPh">
       <property role="TrG5h" value="aorsp" />
       <ref role="1YaFvo" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4MR8i$4gH98">
+    <property role="TrG5h" value="check_CBDStrategy" />
+    <property role="3GE5qa" value="cbd" />
+    <node concept="3clFbS" id="4MR8i$4gH99" role="18ibNy">
+      <node concept="3clFbJ" id="4MR8i$4gK$Q" role="3cqZAp">
+        <node concept="3clFbS" id="4MR8i$4gK$S" role="3clFbx">
+          <node concept="3cpWs8" id="4MR8i$4gULO" role="3cqZAp">
+            <node concept="3cpWsn" id="4MR8i$4gULP" role="3cpWs9">
+              <property role="TrG5h" value="comp" />
+              <node concept="3Tqbb2" id="4MR8i$4gUIf" role="1tU5fm" />
+              <node concept="2OqwBi" id="4MR8i$4gULQ" role="33vP2m">
+                <node concept="2OqwBi" id="4MR8i$4gULR" role="2Oq$k0">
+                  <node concept="1YBJjd" id="4MR8i$4gULS" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4MR8i$4gH9b" resolve="cbdStrategy" />
+                  </node>
+                  <node concept="2qgKlT" id="4MR8i$4gULT" role="2OqNvi">
+                    <ref role="37wK5l" to="g8ih:4MR8i$4gIVS" resolve="getComponentRef" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="4MR8i$4gULU" role="2OqNvi">
+                  <ref role="37wK5l" to="g8ih:ZaBFheHm9F" resolve="getComponent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2Mj0R9" id="4MR8i$4gKpW" role="3cqZAp">
+            <node concept="2OqwBi" id="4MR8i$4gKpX" role="2MkoU_">
+              <node concept="37vLTw" id="4MR8i$4gULV" role="2Oq$k0">
+                <ref role="3cqZAo" node="4MR8i$4gULP" resolve="comp" />
+              </node>
+              <node concept="1mIQ4w" id="4MR8i$4gNdp" role="2OqNvi">
+                <node concept="chp4Y" id="4MR8i$4gNdY" role="cj9EA">
+                  <ref role="cht4Q" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4MR8i$4gKq2" role="2MkJ7o">
+              <property role="Xl_RC" value="a component assembly must be referenced" />
+            </node>
+            <node concept="1YBJjd" id="4MR8i$4gKq3" role="1urrMF">
+              <ref role="1YBMHb" node="4MR8i$4gH9b" resolve="cbdStrategy" />
+            </node>
+          </node>
+          <node concept="Jncv_" id="4MR8i$4gVDj" role="3cqZAp">
+            <ref role="JncvD" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+            <node concept="37vLTw" id="4MR8i$4gVRY" role="JncvB">
+              <ref role="3cqZAo" node="4MR8i$4gULP" resolve="comp" />
+            </node>
+            <node concept="3clFbS" id="4MR8i$4gVDn" role="Jncv$">
+              <node concept="3cpWs8" id="4MR8i$4h2y_" role="3cqZAp">
+                <node concept="3cpWsn" id="4MR8i$4h2yA" role="3cpWs9">
+                  <property role="TrG5h" value="icgs" />
+                  <node concept="2I9FWS" id="4MR8i$4h2mf" role="1tU5fm">
+                    <ref role="2I9WkF" to="2qxf:2sg$KXfV8Ya" resolve="CBDImplementationCorrectnessGoal" />
+                  </node>
+                  <node concept="2OqwBi" id="4MR8i$4h2yB" role="33vP2m">
+                    <node concept="1YBJjd" id="4MR8i$4h2yC" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4MR8i$4gH9b" resolve="cbdStrategy" />
+                    </node>
+                    <node concept="2qgKlT" id="4MR8i$4h2yD" role="2OqNvi">
+                      <ref role="37wK5l" to="g8ih:4MR8i$4gWOQ" resolve="getSubsequentImplementationCorrectnessGoals" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="4MR8i$4hfBY" role="3cqZAp">
+                <node concept="3cpWsn" id="4MR8i$4hfBZ" role="3cpWs9">
+                  <property role="TrG5h" value="interfacesReferencedByImplementationGoals" />
+                  <node concept="2I9FWS" id="4MR8i$4hfNG" role="1tU5fm">
+                    <ref role="2I9WkF" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4MR8i$4hSdC" role="3cqZAp">
+                <node concept="37vLTI" id="4MR8i$4hSdE" role="3clFbG">
+                  <node concept="2OqwBi" id="4MR8i$4hg3V" role="37vLTx">
+                    <node concept="2OqwBi" id="4MR8i$4hfC0" role="2Oq$k0">
+                      <node concept="37vLTw" id="4MR8i$4hfC1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4MR8i$4h2yA" resolve="icgs" />
+                      </node>
+                      <node concept="3$u5V9" id="4MR8i$4hfC2" role="2OqNvi">
+                        <node concept="1bVj0M" id="4MR8i$4hfC3" role="23t8la">
+                          <node concept="3clFbS" id="4MR8i$4hfC4" role="1bW5cS">
+                            <node concept="3clFbF" id="4MR8i$4hfC5" role="3cqZAp">
+                              <node concept="2OqwBi" id="4MR8i$4hfC6" role="3clFbG">
+                                <node concept="37vLTw" id="4MR8i$4hfC7" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4MR8i$4hfC9" resolve="it" />
+                                </node>
+                                <node concept="2qgKlT" id="4MR8i$4hfC8" role="2OqNvi">
+                                  <ref role="37wK5l" to="g8ih:2RlaC$P6pDt" resolve="getComponent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Rh6nW" id="4MR8i$4hfC9" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="4MR8i$4hfCa" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="ANE8D" id="4MR8i$4hgrU" role="2OqNvi" />
+                  </node>
+                  <node concept="37vLTw" id="4MR8i$4hSdI" role="37vLTJ">
+                    <ref role="3cqZAo" node="4MR8i$4hfBZ" resolve="interfacesReferencedByImplementationGoals" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="4MR8i$4hgO7" role="3cqZAp" />
+              <node concept="3cpWs8" id="4MR8i$4hOLj" role="3cqZAp">
+                <node concept="3cpWsn" id="4MR8i$4hOLk" role="3cpWs9">
+                  <property role="TrG5h" value="interfaceContainedInAssembly" />
+                  <node concept="2I9FWS" id="4MR8i$4hQ2S" role="1tU5fm">
+                    <ref role="2I9WkF" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4MR8i$4hSGH" role="3cqZAp">
+                <node concept="37vLTI" id="4MR8i$4hSGJ" role="3clFbG">
+                  <node concept="2OqwBi" id="4MR8i$4hOLl" role="37vLTx">
+                    <node concept="2OqwBi" id="4MR8i$4hOLm" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4MR8i$4hOLn" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4MR8i$4hOLo" role="2Oq$k0">
+                          <node concept="Jnkvi" id="4MR8i$4hOLp" role="2Oq$k0">
+                            <ref role="1M0zk5" node="4MR8i$4gVDp" resolve="ca" />
+                          </node>
+                          <node concept="2qgKlT" id="4MR8i$4hOLq" role="2OqNvi">
+                            <ref role="37wK5l" to="7wf3:4MR8i$4hr6T" resolve="getDirectInstances" />
+                          </node>
+                        </node>
+                        <node concept="3$u5V9" id="4MR8i$4hOLr" role="2OqNvi">
+                          <node concept="1bVj0M" id="4MR8i$4hOLs" role="23t8la">
+                            <node concept="3clFbS" id="4MR8i$4hOLt" role="1bW5cS">
+                              <node concept="3clFbF" id="4MR8i$4hOLu" role="3cqZAp">
+                                <node concept="2OqwBi" id="4MR8i$4hOLv" role="3clFbG">
+                                  <node concept="2OqwBi" id="4MR8i$4hOLw" role="2Oq$k0">
+                                    <node concept="37vLTw" id="4MR8i$4hOLx" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4MR8i$4hOL$" resolve="it" />
+                                    </node>
+                                    <node concept="3TrEf2" id="4MR8i$4hOLy" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="3whv:7RhjhI7$liY" resolve="interfaceRef" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="4MR8i$4hOLz" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="4MR8i$4hOL$" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="4MR8i$4hOL_" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1VAtEI" id="4MR8i$4hOLA" role="2OqNvi" />
+                    </node>
+                    <node concept="ANE8D" id="4MR8i$4hOLB" role="2OqNvi" />
+                  </node>
+                  <node concept="37vLTw" id="4MR8i$4hSGN" role="37vLTJ">
+                    <ref role="3cqZAo" node="4MR8i$4hOLk" resolve="interfaceContainedInAssembly" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="4MR8i$4hTre" role="3cqZAp" />
+              <node concept="2Gpval" id="4MR8i$4ib55" role="3cqZAp">
+                <node concept="2GrKxI" id="4MR8i$4ib57" role="2Gsz3X">
+                  <property role="TrG5h" value="ci" />
+                </node>
+                <node concept="3clFbS" id="4MR8i$4ib5b" role="2LFqv$">
+                  <node concept="3cpWs8" id="4MR8i$4ihAg" role="3cqZAp">
+                    <node concept="3cpWsn" id="4MR8i$4ihAh" role="3cpWs9">
+                      <property role="TrG5h" value="spuriousGoal" />
+                      <node concept="3Tqbb2" id="4MR8i$4ihqs" role="1tU5fm">
+                        <ref role="ehGHo" to="2qxf:2sg$KXfV8Ya" resolve="CBDImplementationCorrectnessGoal" />
+                      </node>
+                      <node concept="2OqwBi" id="4MR8i$4ihAi" role="33vP2m">
+                        <node concept="37vLTw" id="4MR8i$4ihAj" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4MR8i$4h2yA" resolve="icgs" />
+                        </node>
+                        <node concept="1z4cxt" id="4MR8i$4ihAk" role="2OqNvi">
+                          <node concept="1bVj0M" id="4MR8i$4ihAl" role="23t8la">
+                            <node concept="3clFbS" id="4MR8i$4ihAm" role="1bW5cS">
+                              <node concept="3clFbF" id="4MR8i$4ihAn" role="3cqZAp">
+                                <node concept="17R0WA" id="4MR8i$4ihAo" role="3clFbG">
+                                  <node concept="2GrUjf" id="4MR8i$4ihAp" role="3uHU7w">
+                                    <ref role="2Gs0qQ" node="4MR8i$4ib57" resolve="ci" />
+                                  </node>
+                                  <node concept="2OqwBi" id="4MR8i$4ihAq" role="3uHU7B">
+                                    <node concept="37vLTw" id="4MR8i$4ihAr" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4MR8i$4ihAt" resolve="it" />
+                                    </node>
+                                    <node concept="2qgKlT" id="4MR8i$4ihAs" role="2OqNvi">
+                                      <ref role="37wK5l" to="g8ih:2RlaC$P6pDt" resolve="getComponent" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Rh6nW" id="4MR8i$4ihAt" role="1bW2Oz">
+                              <property role="TrG5h" value="it" />
+                              <node concept="2jxLKc" id="4MR8i$4ihAu" role="1tU5fm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2MkqsV" id="4MR8i$4icbB" role="3cqZAp">
+                    <node concept="3cpWs3" id="4MR8i$4ilJ2" role="2MkJ7o">
+                      <node concept="Xl_RD" id="4MR8i$4imzu" role="3uHU7w">
+                        <property role="Xl_RC" value=" referenced in the CBD strategy" />
+                      </node>
+                      <node concept="3cpWs3" id="4MR8i$4ik4P" role="3uHU7B">
+                        <node concept="3cpWs3" id="4MR8i$4iicP" role="3uHU7B">
+                          <node concept="3cpWs3" id="4MR8i$4ii7F" role="3uHU7B">
+                            <node concept="Xl_RD" id="4MR8i$4ihHz" role="3uHU7B">
+                              <property role="Xl_RC" value="goal is not needed since it references an interface " />
+                            </node>
+                            <node concept="2OqwBi" id="4MR8i$4iixA" role="3uHU7w">
+                              <node concept="2GrUjf" id="4MR8i$4iidp" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="4MR8i$4ib57" resolve="ci" />
+                              </node>
+                              <node concept="3TrcHB" id="4MR8i$4ij9U" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="4MR8i$4ii7Z" role="3uHU7w">
+                            <property role="Xl_RC" value="  NOT contained in assembly " />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="4MR8i$4ikma" role="3uHU7w">
+                          <node concept="Jnkvi" id="4MR8i$4ikac" role="2Oq$k0">
+                            <ref role="1M0zk5" node="4MR8i$4gVDp" resolve="ca" />
+                          </node>
+                          <node concept="3TrcHB" id="4MR8i$4il5V" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="4MR8i$4ihGY" role="1urrMF">
+                      <ref role="3cqZAo" node="4MR8i$4ihAh" resolve="spuriousGoal" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4MR8i$4ibhR" role="2GsD0m">
+                  <node concept="37vLTw" id="4MR8i$4ibhS" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4MR8i$4hfBZ" resolve="interfacesReferencedByImplementationGoals" />
+                  </node>
+                  <node concept="66VNe" id="4MR8i$4ibhT" role="2OqNvi">
+                    <node concept="37vLTw" id="4MR8i$4ibhU" role="576Qk">
+                      <ref role="3cqZAo" node="4MR8i$4hOLk" resolve="interfaceContainedInAssembly" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="4MR8i$4irYL" role="3cqZAp" />
+              <node concept="3cpWs8" id="4MR8i$4iu78" role="3cqZAp">
+                <node concept="3cpWsn" id="4MR8i$4iu79" role="3cpWs9">
+                  <property role="TrG5h" value="undealtComponentInterfaces" />
+                  <node concept="A3Dl8" id="4MR8i$4it_3" role="1tU5fm">
+                    <node concept="3Tqbb2" id="4MR8i$4it_6" role="A3Ik2">
+                      <ref role="ehGHo" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4MR8i$4izws" role="3cqZAp">
+                <node concept="37vLTI" id="4MR8i$4izwu" role="3clFbG">
+                  <node concept="2OqwBi" id="4MR8i$4iu7a" role="37vLTx">
+                    <node concept="37vLTw" id="4MR8i$4iu7b" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4MR8i$4hOLk" resolve="interfaceContainedInAssembly" />
+                    </node>
+                    <node concept="66VNe" id="4MR8i$4iu7c" role="2OqNvi">
+                      <node concept="37vLTw" id="4MR8i$4iu7d" role="576Qk">
+                        <ref role="3cqZAo" node="4MR8i$4hfBZ" resolve="interfacesReferencedByImplementationGoals" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="4MR8i$4izwy" role="37vLTJ">
+                    <ref role="3cqZAo" node="4MR8i$4iu79" resolve="undealtComponentInterfaces" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2Mj0R9" id="4MR8i$4iw02" role="3cqZAp">
+                <node concept="2OqwBi" id="4MR8i$4ix3w" role="2MkoU_">
+                  <node concept="37vLTw" id="4MR8i$4iwPL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4MR8i$4iu79" resolve="undealtComponentInterfaces" />
+                  </node>
+                  <node concept="1v1jN8" id="4MR8i$4ixiH" role="2OqNvi" />
+                </node>
+                <node concept="3cpWs3" id="4MR8i$4i$aQ" role="2MkJ7o">
+                  <node concept="37vLTw" id="4MR8i$4i_59" role="3uHU7w">
+                    <ref role="3cqZAo" node="4MR8i$4iu79" resolve="undealtComponentInterfaces" />
+                  </node>
+                  <node concept="Xl_RD" id="4MR8i$4ixj$" role="3uHU7B">
+                    <property role="Xl_RC" value="following interfaces referenced in assembly need to be considered in implementation goals " />
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="4MR8i$4ixiU" role="1urrMF">
+                  <ref role="1YBMHb" node="4MR8i$4gH9b" resolve="cbdStrategy" />
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="4MR8i$4gVDp" role="JncvA">
+              <property role="TrG5h" value="ca" />
+              <node concept="2jxLKc" id="4MR8i$4gVDq" role="1tU5fm" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4MR8i$4gLoj" role="3clFbw">
+          <node concept="2OqwBi" id="4MR8i$4gKLW" role="2Oq$k0">
+            <node concept="1YBJjd" id="4MR8i$4gKA5" role="2Oq$k0">
+              <ref role="1YBMHb" node="4MR8i$4gH9b" resolve="cbdStrategy" />
+            </node>
+            <node concept="2qgKlT" id="4MR8i$4gUd$" role="2OqNvi">
+              <ref role="37wK5l" to="g8ih:4MR8i$4gIVS" resolve="getComponentRef" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="4MR8i$4gMzE" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4MR8i$4gH9b" role="1YuTPh">
+      <property role="TrG5h" value="cbdStrategy" />
+      <ref role="1YaFvo" to="2qxf:6rlO$dpJSTC" resolve="CBDStrategy" />
     </node>
   </node>
 </model>
