@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="4" />
+    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="5" />
     <use id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd" version="1" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
@@ -47,6 +47,9 @@
       </concept>
       <concept id="7410059948618598150" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDRefinementCheckGoal" flags="ng" index="Z5Ll5" />
       <concept id="7410059948618387048" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDStrategy" flags="ng" index="Zq_KF" />
+      <concept id="5527923527670023323" name="com.mbeddr.formal.safety.gsn.patterns.structure.ComponentInterfaceRef" flags="ng" index="18ZemM">
+        <reference id="5527923527670023324" name="componentInterface" index="18ZemP" />
+      </concept>
       <concept id="2814911461081195217" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDAGCompatibilityGoal" flags="ng" index="1CYN7u" />
       <concept id="2814911461081255818" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDImplementationCorrectnessGoal" flags="ng" index="1CZ1M5" />
     </language>
@@ -90,11 +93,6 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
-    <language id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv">
-      <concept id="4946522816140814257" name="com.mbeddr.formal.safety.gsn.smv.structure.ComponentInterfaceRef" flags="ng" index="1_PrfU">
-        <reference id="4946522816140814292" name="componentInterface" index="1_Prev" />
-      </concept>
-    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
@@ -134,8 +132,8 @@
               <property role="19SUeA" value="The implementation of &#10;" />
             </node>
             <node concept="oK52h" id="4MR8i$4iSuw" role="19SJt6">
-              <node concept="1_PrfU" id="4MR8i$4iSJT" role="oK52i">
-                <ref role="1_Prev" to="br2r:4MR8i$4iSqK" resolve="Sender" />
+              <node concept="18ZemM" id="3mI4G9o5P_9" role="oK52i">
+                <ref role="18ZemP" to="br2r:4MR8i$4iSqK" resolve="Sender" />
               </node>
             </node>
             <node concept="19SUe$" id="4MR8i$4iSux" role="19SJt6">
@@ -162,8 +160,8 @@
               <property role="19SUeA" value="Argumentation based &#10; on contract-based design &#10; applied to " />
             </node>
             <node concept="oK52h" id="4MR8i$4iSum" role="19SJt6">
-              <node concept="1_PrfU" id="4MR8i$4iSH5" role="oK52i">
-                <ref role="1_Prev" to="br2r:4MR8i$4iSsa" resolve="CA" />
+              <node concept="18ZemM" id="3mI4G9o5P_a" role="oK52i">
+                <ref role="18ZemP" to="br2r:4MR8i$4iSsa" resolve="CA" />
               </node>
             </node>
             <node concept="19SUe$" id="4MR8i$4iSuR" role="19SJt6" />

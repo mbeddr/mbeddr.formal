@@ -5,7 +5,7 @@
     <use id="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba" name="com.mbeddr.formal.safety.gsn.req" version="0" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="4" />
+    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="5" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
     <use id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests" version="0" />
@@ -69,6 +69,9 @@
       </concept>
       <concept id="7410059948618598150" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDRefinementCheckGoal" flags="ng" index="Z5Ll5" />
       <concept id="7410059948618387048" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDStrategy" flags="ng" index="Zq_KF" />
+      <concept id="5527923527670023323" name="com.mbeddr.formal.safety.gsn.patterns.structure.ComponentInterfaceRef" flags="ng" index="18ZemM">
+        <reference id="5527923527670023324" name="componentInterface" index="18ZemP" />
+      </concept>
       <concept id="2814911461081195217" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDAGCompatibilityGoal" flags="ng" index="1CYN7u" />
       <concept id="2814911461081255818" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDImplementationCorrectnessGoal" flags="ng" index="1CZ1M5" />
     </language>
@@ -150,11 +153,6 @@
       <concept id="3253043142928125505" name="de.itemis.mps.editor.diagram.layout.structure.RelativePosition" flags="ng" index="3wpmZ1">
         <child id="3253043142928125557" name="referencePoint" index="3wpmZP" />
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
-      </concept>
-    </language>
-    <language id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv">
-      <concept id="4946522816140814257" name="com.mbeddr.formal.safety.gsn.smv.structure.ComponentInterfaceRef" flags="ng" index="1_PrfU">
-        <reference id="4946522816140814292" name="componentInterface" index="1_Prev" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -2033,7 +2031,7 @@
         <node concept="gqqVs" id="ZaBFheG1E_" role="37mO4d">
           <property role="gqqTZ" value="240.0" />
           <property role="gqqTW" value="182.0" />
-          <property role="gqqTX" value="166.0" />
+          <property role="gqqTX" value="170.0" />
           <property role="gqqTy" value="140.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -2109,8 +2107,8 @@
             <property role="3ul5GH" value="label" />
             <node concept="3wpmZ1" id="ZaBFheG1EU" role="3ul5Gz">
               <node concept="2VclrF" id="ZaBFheG1EV" role="3wpmZR">
-                <property role="2Vclpx" value="510.25" />
-                <property role="2Vclpz" value="111.0" />
+                <property role="2Vclpx" value="441.25" />
+                <property role="2Vclpz" value="141.0" />
               </node>
               <node concept="2VclrF" id="ZaBFheG1EW" role="3wpmZP">
                 <property role="2Vclpx" value="0.0" />
@@ -2119,12 +2117,48 @@
             </node>
           </node>
           <node concept="2VclrF" id="ZaBFheJjdT" role="2Vcluh">
-            <property role="2Vclpx" value="389.0" />
-            <property role="2Vclpz" value="122.0" />
+            <property role="2Vclpx" value="349.5000531085772" />
+            <property role="2Vclpz" value="138.5" />
           </node>
           <node concept="2VclrF" id="5lLYyEltnRQ" role="2Vcluh">
             <property role="2Vclpx" value="556.2340713998432" />
             <property role="2Vclpz" value="138.5" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="3mI4G9o63mX" role="37mRID">
+        <property role="37mO49" value="3868049755868771696" />
+        <node concept="gqqVs" id="3mI4G9o63mW" role="37mO4d">
+          <property role="gqqTZ" value="708.0" />
+          <property role="gqqTW" value="182.0" />
+          <property role="gqqTX" value="208.0" />
+          <property role="gqqTy" value="83.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="3mI4G9o63qj" role="37mRID">
+        <property role="37mO49" value="3868049755868771933" />
+        <node concept="2VclpC" id="3mI4G9o63qi" role="37mO4d">
+          <node concept="3ul5H1" id="3mI4G9o63qk" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="3mI4G9o63ql" role="3ul5Gz">
+              <node concept="2VclrF" id="3mI4G9o63qm" role="3wpmZR">
+                <property role="2Vclpx" value="571.5" />
+                <property role="2Vclpz" value="87.25" />
+              </node>
+              <node concept="2VclrF" id="3mI4G9o63qn" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="3mI4G9o63sq" role="2Vcluh">
+            <property role="2Vclpx" value="409.9667036216271" />
+            <property role="2Vclpz" value="112.0332963783729" />
+          </node>
+          <node concept="2VclrF" id="3mI4G9o63ti" role="2Vcluh">
+            <property role="2Vclpx" value="814.0" />
+            <property role="2Vclpz" value="112.0332963783729" />
           </node>
         </node>
       </node>
@@ -2151,7 +2185,11 @@
         <node concept="19SUe$" id="ZaBFheG1Dy" role="19SJt6">
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
-        <node concept="oK52h" id="ZaBFheG1Dz" role="19SJt6" />
+        <node concept="oK52h" id="ZaBFheG1Dz" role="19SJt6">
+          <node concept="18ZemM" id="3mI4G9o63ke" role="oK52i">
+            <ref role="18ZemP" node="72xocJViZcv" resolve="Sender" />
+          </node>
+        </node>
         <node concept="19SUe$" id="ZaBFheG1D$" role="19SJt6">
           <property role="19SUeA" value="&#10; complies with its contract" />
         </node>
@@ -2176,12 +2214,28 @@
           <property role="19SUeA" value="Argumentation based &#10; on contract-based design &#10; applied to " />
         </node>
         <node concept="oK52h" id="ZaBFheG1Dp" role="19SJt6">
-          <node concept="1_PrfU" id="ZaBFheG1Py" role="oK52i">
-            <ref role="1_Prev" node="72xocJViZiB" resolve="Arch" />
+          <node concept="18ZemM" id="3mI4G9o5P$E" role="oK52i">
+            <ref role="18ZemP" node="72xocJViZiB" resolve="Arch" />
           </node>
         </node>
         <node concept="19SUe$" id="ZaBFheG1DU" role="19SJt6" />
       </node>
+    </node>
+    <node concept="1CZ1M5" id="3mI4G9o63lK" role="2vn1q5">
+      <property role="TrG5h" value="G04" />
+      <node concept="19SGf9" id="3mI4G9o63lL" role="2vnaTY">
+        <node concept="19SUe$" id="3mI4G9o63lM" role="19SJt6">
+          <property role="19SUeA" value="The implementation of &#10;" />
+        </node>
+        <node concept="oK52h" id="3mI4G9o63lN" role="19SJt6" />
+        <node concept="19SUe$" id="3mI4G9o63lO" role="19SJt6">
+          <property role="19SUeA" value="&#10; complies with its contract" />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="3mI4G9o63pt" role="2vhqc$">
+      <ref role="3VeSjP" node="ZaBFheG1Dm" resolve="S01" />
+      <ref role="3VeSjQ" node="3mI4G9o63lK" resolve="G04" />
     </node>
   </node>
   <node concept="2HdtXS" id="72xocJViZct">
