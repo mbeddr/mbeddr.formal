@@ -320,7 +320,7 @@
       <node concept="3EZMnI" id="3Ngc4zVgJSH" role="3EZMnx">
         <node concept="VPM3Z" id="3Ngc4zVgJSI" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVgJSJ" role="3EZMnx">
-          <property role="3F0ifm" value="A/G Refinement Check:" />
+          <property role="3F0ifm" value="Refinement Check:" />
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="3Ngc4zVgJSL" role="3EZMnx">
@@ -352,7 +352,7 @@
       <node concept="3EZMnI" id="3Ngc4zVgTco" role="3EZMnx">
         <node concept="VPM3Z" id="3Ngc4zVgTcp" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVgTcq" role="3EZMnx">
-          <property role="3F0ifm" value="A/G Implementation Check:" />
+          <property role="3F0ifm" value="Implementation Check:" />
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="3Ngc4zVgTcs" role="3EZMnx">
@@ -384,7 +384,7 @@
       <node concept="3EZMnI" id="3Ngc4zVgTdy" role="3EZMnx">
         <node concept="VPM3Z" id="3Ngc4zVgTdz" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVgTd$" role="3EZMnx">
-          <property role="3F0ifm" value="A/G Compatibility Check:" />
+          <property role="3F0ifm" value="Compatibility Check:" />
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="3Ngc4zVgTdA" role="3EZMnx">
