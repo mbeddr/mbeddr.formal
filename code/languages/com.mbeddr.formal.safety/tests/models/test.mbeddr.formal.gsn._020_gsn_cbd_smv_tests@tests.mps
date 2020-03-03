@@ -492,24 +492,12 @@
               </node>
               <node concept="3clFbF" id="1xpXAu11SIY" role="3cqZAp">
                 <node concept="37vLTI" id="1xpXAu11SJ0" role="3clFbG">
-                  <node concept="1eOMI4" id="1xpXAu11UxQ" role="37vLTx">
-                    <node concept="10QFUN" id="1xpXAu11UxP" role="1eOMHV">
-                      <node concept="2OqwBi" id="1xpXAu11UxK" role="10QFUP">
-                        <node concept="2OqwBi" id="1xpXAu11UxL" role="2Oq$k0">
-                          <node concept="37vLTw" id="1xpXAu11UxM" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1xpXAu11Hcb" resolve="strategy" />
-                          </node>
-                          <node concept="2qgKlT" id="1xpXAu11UxN" role="2OqNvi">
-                            <ref role="37wK5l" to="g8ih:2RlaC$P80C1" resolve="getComponent" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="1xpXAu11UxO" role="2OqNvi">
-                          <ref role="37wK5l" to="g8ih:ZaBFheHm9F" resolve="getComponent" />
-                        </node>
-                      </node>
-                      <node concept="3Tqbb2" id="1xpXAu11UxJ" role="10QFUM">
-                        <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
-                      </node>
+                  <node concept="2OqwBi" id="1xpXAu11UxL" role="37vLTx">
+                    <node concept="37vLTw" id="1xpXAu11UxM" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1xpXAu11Hcb" resolve="strategy" />
+                    </node>
+                    <node concept="2qgKlT" id="1xpXAu11UxN" role="2OqNvi">
+                      <ref role="37wK5l" to="g8ih:2RlaC$P80C1" resolve="getComponent" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="1xpXAu11SJ4" role="37vLTJ">

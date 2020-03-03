@@ -2,7 +2,7 @@
 <model ref="r:e0d2b629-2b97-4cdf-b8dc-48cfee6ec4cc(test.mbeddr.formal.gsn._020_gsn_cbd_smv_testcode)">
   <persistence version="9" />
   <languages>
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="4" />
+    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="5" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
@@ -34,6 +34,9 @@
       </concept>
       <concept id="7410059948618598150" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDRefinementCheckGoal" flags="ng" index="Z5Ll5" />
       <concept id="7410059948618387048" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDStrategy" flags="ng" index="Zq_KF" />
+      <concept id="5527923527670023323" name="com.mbeddr.formal.safety.gsn.patterns.structure.ComponentInterfaceRef" flags="ng" index="18ZemM">
+        <reference id="5527923527670023324" name="componentInterface" index="18ZemP" />
+      </concept>
       <concept id="2814911461081195217" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDAGCompatibilityGoal" flags="ng" index="1CYN7u" />
       <concept id="2814911461081255818" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDImplementationCorrectnessGoal" flags="ng" index="1CZ1M5" />
     </language>
@@ -160,9 +163,6 @@
         <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
         <property id="4946522816140921857" name="success" index="1_P5xa" />
         <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
-      </concept>
-      <concept id="4946522816140814257" name="com.mbeddr.formal.safety.gsn.smv.structure.ComponentInterfaceRef" flags="ng" index="1_PrfU">
-        <reference id="4946522816140814292" name="componentInterface" index="1_Prev" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -866,8 +866,8 @@
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
         <node concept="oK52h" id="1xpXAu11Hun" role="19SJt6">
-          <node concept="1_PrfU" id="3jaLROLx9Fb" role="oK52i">
-            <ref role="1_Prev" node="1xpXAu1227Y" resolve="Int1_FAIL" />
+          <node concept="18ZemM" id="3mI4G9o5P_3" role="oK52i">
+            <ref role="18ZemP" node="1xpXAu1227Y" resolve="Int1_FAIL" />
           </node>
         </node>
         <node concept="19SUe$" id="1xpXAu11Huo" role="19SJt6">
@@ -894,8 +894,8 @@
           <property role="19SUeA" value="Argumentation based &#10; on contract-based design &#10; applied to &#10;" />
         </node>
         <node concept="oK52h" id="1xpXAu11Hud" role="19SJt6">
-          <node concept="1_PrfU" id="1xpXAu122N9" role="oK52i">
-            <ref role="1_Prev" node="1xpXAu1228$" resolve="Assembly1_FAIL" />
+          <node concept="18ZemM" id="3mI4G9o5P_4" role="oK52i">
+            <ref role="18ZemP" node="1xpXAu1228$" resolve="Assembly1_FAIL" />
           </node>
         </node>
         <node concept="19SUe$" id="1xpXAu11Hvu" role="19SJt6" />
@@ -942,8 +942,8 @@
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
         <node concept="oK52h" id="3jaLROLx9l_" role="19SJt6">
-          <node concept="1_PrfU" id="3jaLROLx9FY" role="oK52i">
-            <ref role="1_Prev" node="1xpXAu1228h" resolve="Int2_FAIL" />
+          <node concept="18ZemM" id="3mI4G9o5P_5" role="oK52i">
+            <ref role="18ZemP" node="1xpXAu1228h" resolve="Int2_FAIL" />
           </node>
         </node>
         <node concept="19SUe$" id="3jaLROLx9lA" role="19SJt6">
@@ -1862,8 +1862,8 @@
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
         <node concept="oK52h" id="1xpXAu122D_" role="19SJt6">
-          <node concept="1_PrfU" id="33qt4wrb_Z_" role="oK52i">
-            <ref role="1_Prev" node="1xpXAu0YL7V" resolve="Int1_PASS" />
+          <node concept="18ZemM" id="3mI4G9o5P_6" role="oK52i">
+            <ref role="18ZemP" node="1xpXAu0YL7V" resolve="Int1_PASS" />
           </node>
         </node>
         <node concept="19SUe$" id="1xpXAu122DB" role="19SJt6">
@@ -1890,8 +1890,8 @@
           <property role="19SUeA" value="Argumentation based &#10; on contract-based design &#10; applied to &#10; " />
         </node>
         <node concept="oK52h" id="1xpXAu122DI" role="19SJt6">
-          <node concept="1_PrfU" id="1xpXAu122DJ" role="oK52i">
-            <ref role="1_Prev" node="1xpXAu0ZPMw" resolve="Assembly1_PASS" />
+          <node concept="18ZemM" id="3mI4G9o5P_7" role="oK52i">
+            <ref role="18ZemP" node="1xpXAu0ZPMw" resolve="Assembly1_PASS" />
           </node>
         </node>
         <node concept="19SUe$" id="1xpXAu122DK" role="19SJt6" />
@@ -1903,8 +1903,8 @@
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
         <node concept="oK52h" id="33qt4wrbA1a" role="19SJt6">
-          <node concept="1_PrfU" id="33qt4wrbA7L" role="oK52i">
-            <ref role="1_Prev" node="1xpXAu0YDJj" resolve="Int2_PASS" />
+          <node concept="18ZemM" id="3mI4G9o5P_8" role="oK52i">
+            <ref role="18ZemP" node="1xpXAu0YDJj" resolve="Int2_PASS" />
           </node>
         </node>
         <node concept="19SUe$" id="33qt4wrbA1b" role="19SJt6">

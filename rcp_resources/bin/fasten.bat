@@ -135,7 +135,8 @@ IF NOT "%IDEA_CLASS_PATH%" == "" SET CLASS_PATH=%CLASS_PATH%;%IDEA_CLASS_PATH%
 :: Run the IDE.
 :: ---------------------------------------------------------------------
 SET OLD_PATH=%PATH%
-SET PATH=%IDE_BIN_DIR%;%PATH%
+SET PATH=%IDE_BIN_DIR%;%PATH%;%IDE_HOME%\external_tools\
+
 
 SET JAVA_HOME=..\jbr\
 

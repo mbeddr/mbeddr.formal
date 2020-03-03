@@ -532,5 +532,18 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4MR8i$4iWiA">
+    <property role="3GE5qa" value="cbd" />
+    <ref role="1XX52x" to="2qxf:4MR8i$4iWir" resolve="ComponentInterfaceRef" />
+    <node concept="1iCGBv" id="4i__4Gxs2vp" role="2wV5jI">
+      <ref role="1NtTu8" to="2qxf:4MR8i$4iWis" resolve="componentInterface" />
+      <node concept="1sVBvm" id="4i__4Gxs2vr" role="1sWHZn">
+        <node concept="3F0A7n" id="4i__4Gxs2v_" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
