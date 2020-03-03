@@ -5,7 +5,7 @@
     <use id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns" version="0" />
     <use id="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba" name="com.mbeddr.formal.safety.gsn.req" version="0" />
     <use id="b9f682be-3e03-4c97-ba0a-ac14cf89f12a" name="com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="4" />
+    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="5" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="1" />
@@ -95,6 +95,9 @@
       <concept id="7410059948618618365" name="com.mbeddr.formal.safety.gsn.patterns.structure.SafeSystemGoal" flags="ng" index="Z5GuY" />
       <concept id="7410059948618598150" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDRefinementCheckGoal" flags="ng" index="Z5Ll5" />
       <concept id="7410059948618387048" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDStrategy" flags="ng" index="Zq_KF" />
+      <concept id="5527923527670023323" name="com.mbeddr.formal.safety.gsn.patterns.structure.ComponentInterfaceRef" flags="ng" index="18ZemM">
+        <reference id="5527923527670023324" name="componentInterface" index="18ZemP" />
+      </concept>
       <concept id="2814911461081195217" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDAGCompatibilityGoal" flags="ng" index="1CYN7u" />
       <concept id="2814911461081255818" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDImplementationCorrectnessGoal" flags="ng" index="1CZ1M5" />
     </language>
@@ -305,9 +308,6 @@
         <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
         <property id="4946522816140921857" name="success" index="1_P5xa" />
         <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
-      </concept>
-      <concept id="4946522816140814257" name="com.mbeddr.formal.safety.gsn.smv.structure.ComponentInterfaceRef" flags="ng" index="1_PrfU">
-        <reference id="4946522816140814292" name="componentInterface" index="1_Prev" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -7254,8 +7254,8 @@
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
         <node concept="oK52h" id="65LrkjiXUr_" role="19SJt6">
-          <node concept="1_PrfU" id="7Y21hZBdTZ5" role="oK52i">
-            <ref role="1_Prev" node="7Y21hZBdSXb" resolve="Device" />
+          <node concept="18ZemM" id="13268isTt_5" role="oK52i">
+            <ref role="18ZemP" node="7Y21hZBdSXb" resolve="Device" />
           </node>
         </node>
         <node concept="19SUe$" id="65LrkjiXUrA" role="19SJt6">
@@ -7282,8 +7282,8 @@
           <property role="19SUeA" value="Argumentation based &#10; on contract-based design &#10; applied to &#10;" />
         </node>
         <node concept="oK52h" id="65LrkjiXUrr" role="19SJt6">
-          <node concept="1_PrfU" id="1JJRV36yyOR" role="oK52i">
-            <ref role="1_Prev" node="57ROGn93a3R" resolve="airbag_system" />
+          <node concept="18ZemM" id="13268isTt_6" role="oK52i">
+            <ref role="18ZemP" node="57ROGn93a3R" resolve="airbag_system" />
           </node>
         </node>
         <node concept="19SUe$" id="65LrkjiXUrW" role="19SJt6" />
@@ -7296,8 +7296,8 @@
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
         <node concept="oK52h" id="65LrkjiXUS3" role="19SJt6">
-          <node concept="1_PrfU" id="2iCnExZKxT0" role="oK52i">
-            <ref role="1_Prev" node="57ROGn8Ssam" resolve="Sensor" />
+          <node concept="18ZemM" id="13268isTt_7" role="oK52i">
+            <ref role="18ZemP" node="57ROGn8Ssam" resolve="Sensor" />
           </node>
         </node>
         <node concept="19SUe$" id="65LrkjiXUS4" role="19SJt6">
@@ -7376,8 +7376,8 @@
           <property role="19SUeA" value="The implementation of &#10;" />
         </node>
         <node concept="oK52h" id="6cuY1N1xYpr" role="19SJt6">
-          <node concept="1_PrfU" id="6cuY1N1xYBE" role="oK52i">
-            <ref role="1_Prev" node="57ROGn92W1w" resolve="Link" />
+          <node concept="18ZemM" id="13268isTt_8" role="oK52i">
+            <ref role="18ZemP" node="57ROGn92W1w" resolve="Link" />
           </node>
         </node>
         <node concept="19SUe$" id="6cuY1N1xYps" role="19SJt6">
