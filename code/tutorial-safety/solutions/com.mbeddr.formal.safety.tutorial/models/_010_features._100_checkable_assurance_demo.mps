@@ -2,22 +2,13 @@
 <model ref="r:c5a55244-77a5-42ce-8f29-e1a72cf99b7f(_010_features._100_checkable_assurance_demo)">
   <persistence version="9" />
   <languages>
-    <use id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns" version="0" />
-    <use id="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba" name="com.mbeddr.formal.safety.gsn.req" version="0" />
-    <use id="b9f682be-3e03-4c97-ba0a-ac14cf89f12a" name="com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="5" />
-    <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
-    <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
-    <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="1" />
-    <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
-    <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
-    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
-    <use id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext" version="0" />
-    <use id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262" version="-1" />
-    <use id="8c301636-fbda-4009-bce8-7e00c3c1bac5" name="com.mbeddr.formal.safety.gsn.odd" version="0" />
-    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
+    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
+    <devkit ref="3970a543-1808-4b9f-a378-71f15d96d819(fasten.safety.hara)" />
+    <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+    <devkit ref="5a50cadb-4d6e-4722-b5f5-c6b9efb22ffe(fasten.safety.gsn.formal)" />
+    <devkit ref="7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)" />
   </languages>
   <imports>
     <import index="88nu" ref="r:d4dedad3-46ad-41a8-810f-c3bbd821571a(_010_features._065_patterns_catalogue)" />
@@ -33,7 +24,6 @@
       <concept id="2685719935121672279" name="com.mbeddr.formal.nusmv.cbd.structure.ModuleRef" flags="ng" index="eml1q">
         <reference id="2685719935121672280" name="module" index="eml1l" />
       </concept>
-      <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -43,6 +33,9 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
+    </language>
+    <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
+      <concept id="3831049447781892150" name="com.mbeddr.formal.spin.structure.ImpliesExpression" flags="ng" index="3YPpWq" />
     </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
       <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
@@ -172,7 +165,6 @@
       <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
       <concept id="9133754867501343024" name="com.mbeddr.formal.nusmv.structure.Finally" flags="ng" index="2Sa3Mo" />
       <concept id="9133754867501356755" name="com.mbeddr.formal.nusmv.structure.Previous" flags="ng" index="2Sa4HV" />
-      <concept id="9133754867501356757" name="com.mbeddr.formal.nusmv.structure.Historically" flags="ng" index="2Sa4HX" />
       <concept id="9133754867501356758" name="com.mbeddr.formal.nusmv.structure.Once" flags="ng" index="2Sa4HY" />
       <concept id="9133754867501306909" name="com.mbeddr.formal.nusmv.structure.Next" flags="ng" index="2Sa8AP" />
       <concept id="9133754867501326618" name="com.mbeddr.formal.nusmv.structure.Globally" flags="ng" index="2SafMM" />
@@ -8916,75 +8908,78 @@
           <ref role="3Ug1Ao" node="57ROGn93apy" resolve="exploded" />
         </node>
       </node>
-      <node concept="3US$BV" id="57ROGn93arw" role="3UnIb_">
-        <property role="TrG5h" value="collision_pre" />
-        <node concept="2HbMbg" id="57ROGn93asJ" role="1yBDGv">
-          <node concept="nE0YI" id="57ROGn93asK" role="2H9Iav">
-            <node concept="3Ug1Ap" id="57ROGn93ast" role="2H9Iav">
-              <ref role="3Ug1Ao" node="57ROGn93ao$" resolve="MaxDeltaCounterInit" />
-            </node>
-            <node concept="2IPVmt" id="57ROGn93asL" role="2H9Ial">
-              <property role="2IPVms" value="2" />
-            </node>
-          </node>
-          <node concept="2SafMM" id="57ROGn93at1" role="2H9Ial">
-            <node concept="32OYss" id="57ROGn93at8" role="1yBIc4">
-              <node concept="2HbMbg" id="57ROGn93aub" role="32OYtT">
-                <node concept="32OYss" id="57ROGn93auM" role="2H9Ial">
-                  <node concept="1yyYsf" id="57ROGn93avt" role="32OYtT">
-                    <node concept="2Sa8AP" id="57ROGn93awi" role="2H9Ial">
-                      <node concept="1yA0yd" id="57ROGn93awo" role="1yBIc4">
-                        <node concept="hVCfL" id="57ROGn93awu" role="32OYtT">
+      <node concept="3UTh7Y" id="57ROGn93aq5" role="3UnIb_">
+        <property role="TrG5h" value="collision" />
+        <node concept="3YPpWq" id="1wencriJ5Ke" role="1yBDGv">
+          <node concept="32OYss" id="1wencriJ5Lb" role="2H9Iav">
+            <node concept="2HbMbg" id="1wencriJ5Lh" role="32OYtT">
+              <node concept="nE0YI" id="1wencriJ5Li" role="2H9Iav">
+                <node concept="3Ug1Ap" id="1wencriJ5Lj" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="57ROGn93ao$" resolve="MaxDeltaCounterInit" />
+                </node>
+                <node concept="2IPVmt" id="1wencriJ5Lk" role="2H9Ial">
+                  <property role="2IPVms" value="2" />
+                </node>
+              </node>
+              <node concept="2SafMM" id="1wencriJ5Ll" role="2H9Ial">
+                <node concept="32OYss" id="1wencriJ5Lm" role="1yBIc4">
+                  <node concept="2HbMbg" id="1wencriJ5Ln" role="32OYtT">
+                    <node concept="32OYss" id="1wencriJ5Lo" role="2H9Ial">
+                      <node concept="1yyYsf" id="1wencriJ5Lp" role="32OYtT">
+                        <node concept="2Sa8AP" id="1wencriJ5Lq" role="2H9Ial">
+                          <node concept="1yA0yd" id="1wencriJ5Lr" role="1yBIc4">
+                            <node concept="hVCfL" id="1wencriJ5Ls" role="32OYtT">
+                              <ref role="hVCfQ" node="57ROGn92Yzz" resolve="fault" />
+                              <node concept="3Ug1Ap" id="1wencriJ5Lt" role="hVCcu">
+                                <ref role="3Ug1Ao" node="57ROGn93anr" resolve="fault_corruption" />
+                              </node>
+                              <node concept="3Ug1Ap" id="1wencriJ5Lu" role="hVCcu">
+                                <ref role="3Ug1Ao" node="57ROGn93anR" resolve="fault_deletion" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="hVCfL" id="1wencriJ5Lv" role="2H9Iav">
                           <ref role="hVCfQ" node="57ROGn92Yzz" resolve="fault" />
-                          <node concept="3Ug1Ap" id="57ROGn93awv" role="hVCcu">
+                          <node concept="3Ug1Ap" id="1wencriJ5Lw" role="hVCcu">
                             <ref role="3Ug1Ao" node="57ROGn93anr" resolve="fault_corruption" />
                           </node>
-                          <node concept="3Ug1Ap" id="57ROGn93aww" role="hVCcu">
+                          <node concept="3Ug1Ap" id="1wencriJ5Lx" role="hVCcu">
                             <ref role="3Ug1Ao" node="57ROGn93anR" resolve="fault_deletion" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="hVCfL" id="57ROGn93av0" role="2H9Iav">
-                      <ref role="hVCfQ" node="57ROGn92Yzz" resolve="fault" />
-                      <node concept="3Ug1Ap" id="57ROGn93av8" role="hVCcu">
-                        <ref role="3Ug1Ao" node="57ROGn93anr" resolve="fault_corruption" />
+                    <node concept="32OYss" id="1wencriJ5Ly" role="2H9Iav">
+                      <node concept="1yyYsf" id="1wencriJ5Lz" role="32OYtT">
+                        <node concept="2SafMM" id="1wencriJ5L$" role="2H9Ial">
+                          <node concept="3Ug1Ap" id="1wencriJ5L_" role="1yBIc4">
+                            <ref role="3Ug1Ao" node="57ROGn93an5" resolve="collision" />
+                          </node>
+                        </node>
+                        <node concept="3Ug1Ap" id="1wencriJ5LA" role="2H9Iav">
+                          <ref role="3Ug1Ao" node="57ROGn93an5" resolve="collision" />
+                        </node>
                       </node>
-                      <node concept="3Ug1Ap" id="57ROGn93avk" role="hVCcu">
-                        <ref role="3Ug1Ao" node="57ROGn93anR" resolve="fault_deletion" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="32OYss" id="57ROGn93atg" role="2H9Iav">
-                  <node concept="1yyYsf" id="57ROGn93atC" role="32OYtT">
-                    <node concept="2SafMM" id="57ROGn93atS" role="2H9Ial">
-                      <node concept="3Ug1Ap" id="57ROGn93au5" role="1yBIc4">
-                        <ref role="3Ug1Ao" node="57ROGn93an5" resolve="collision" />
-                      </node>
-                    </node>
-                    <node concept="3Ug1Ap" id="57ROGn93atw" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="57ROGn93an5" resolve="collision" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="3UTh7Y" id="57ROGn93aq5" role="3UnIb_">
-        <property role="TrG5h" value="collision_post" />
-        <node concept="2SafMM" id="57ROGn93aqf" role="1yBDGv">
-          <node concept="32OYss" id="57ROGn93aqo" role="1yBIc4">
-            <node concept="1yyYsf" id="57ROGn93aqK" role="32OYtT">
-              <node concept="2Sa3Mo" id="57ROGn93aqZ" role="2H9Ial">
-                <node concept="3Ug1Ap" id="57ROGn93arc" role="1yBIc4">
-                  <ref role="3Ug1Ao" node="57ROGn93apy" resolve="exploded" />
+          <node concept="32OYss" id="1wencriJ5K0" role="2H9Ial">
+            <node concept="2SafMM" id="1wencriJ5K1" role="32OYtT">
+              <node concept="32OYss" id="1wencriJ5K2" role="1yBIc4">
+                <node concept="1yyYsf" id="1wencriJ5K3" role="32OYtT">
+                  <node concept="3Ug1Ap" id="57ROGn93aqC" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="57ROGn93an5" resolve="collision" />
+                  </node>
+                  <node concept="2Sa3Mo" id="1wencriJ5K4" role="2H9Ial">
+                    <node concept="3Ug1Ap" id="57ROGn93arc" role="1yBIc4">
+                      <ref role="3Ug1Ao" node="57ROGn93apy" resolve="exploded" />
+                    </node>
+                  </node>
                 </node>
-              </node>
-              <node concept="3Ug1Ap" id="57ROGn93aqC" role="2H9Iav">
-                <ref role="3Ug1Ao" node="57ROGn93an5" resolve="collision" />
               </node>
             </node>
           </node>
@@ -8995,8 +8990,8 @@
         <node concept="2SafMM" id="57ROGn93ayG" role="1yBDGv">
           <node concept="32OYss" id="57ROGn93ayN" role="1yBIc4">
             <node concept="1yyYsf" id="57ROGn93az9" role="32OYtT">
-              <node concept="2Sa4HX" id="57ROGn93azn" role="2H9Ial">
-                <node concept="3Ug1Ap" id="57ROGn93az$" role="1yBIc4">
+              <node concept="2Sa4HY" id="1wencriJ541" role="2H9Ial">
+                <node concept="3Ug1Ap" id="1wencriJ54e" role="1yBIc4">
                   <ref role="3Ug1Ao" node="57ROGn93an5" resolve="collision" />
                 </node>
               </node>
