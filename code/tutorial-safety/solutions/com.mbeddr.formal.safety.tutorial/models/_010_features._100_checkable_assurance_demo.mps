@@ -25,6 +25,8 @@
   <registry>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
       <concept id="2685719935121672208" name="com.mbeddr.formal.nusmv.cbd.structure.Refine" flags="ng" index="eml0t">
+        <property id="2685719935122676565" name="useBMC" index="eqodo" />
+        <property id="2685719935122676566" name="bmcLen" index="eqodr" />
         <child id="2685719935121672270" name="moduleRef" index="eml13" />
         <child id="2685719935121672265" name="interfaceRef" index="eml14" />
       </concept>
@@ -6565,7 +6567,7 @@
         <node concept="gqqVs" id="65LrkjiXUsP" role="37mO4d">
           <property role="gqqTZ" value="74.0" />
           <property role="gqqTW" value="262.0" />
-          <property role="gqqTX" value="168.0" />
+          <property role="gqqTX" value="170.0" />
           <property role="gqqTy" value="83.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -6573,9 +6575,9 @@
       <node concept="37mRIm" id="65LrkjiXUsS" role="37mRID">
         <property role="37mO49" value="7021513436411963106" />
         <node concept="gqqVs" id="65LrkjiXUsR" role="37mO4d">
-          <property role="gqqTZ" value="437.0" />
+          <property role="gqqTZ" value="422.0" />
           <property role="gqqTW" value="262.0" />
-          <property role="gqqTX" value="163.0" />
+          <property role="gqqTX" value="176.0" />
           <property role="gqqTy" value="83.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -6671,9 +6673,9 @@
       <node concept="37mRIm" id="65LrkjiXUTg" role="37mRID">
         <property role="37mO49" value="7021513436411964928" />
         <node concept="gqqVs" id="65LrkjiXUTf" role="37mO4d">
-          <property role="gqqTZ" value="614.0" />
+          <property role="gqqTZ" value="606.0" />
           <property role="gqqTW" value="261.0" />
-          <property role="gqqTX" value="163.0" />
+          <property role="gqqTX" value="176.0" />
           <property role="gqqTy" value="84.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7171,7 +7173,7 @@
         <node concept="gqqVs" id="6cuY1N1xYqP" role="37mO4d">
           <property role="gqqTZ" value="793.0" />
           <property role="gqqTW" value="261.0" />
-          <property role="gqqTX" value="163.0" />
+          <property role="gqqTX" value="176.0" />
           <property role="gqqTy" value="84.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7310,29 +7312,29 @@
       <ref role="3VeSjQ" node="65LrkjiXUS0" resolve="G24" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKxUB" role="2vn1q5">
-      <property role="1_P5yc" value="Sun Mar 01 22:11:10 CET 2020" />
-      <property role="1_P5wC" value="01-03-2020 22:11:10" />
+      <property role="1_P5yc" value="Fri Mar 06 07:53:01 CET 2020" />
+      <property role="1_P5wC" value="06-03-2020 07:53:01" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="-2108609196" />
       <property role="TrG5h" value="Sn1" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKy7Y" role="2vn1q5">
-      <property role="1_P5yc" value="Sun Mar 01 22:11:10 CET 2020" />
-      <property role="1_P5wC" value="01-03-2020 22:11:10" />
+      <property role="1_P5yc" value="Fri Mar 06 07:53:01 CET 2020" />
+      <property role="1_P5wC" value="06-03-2020 07:53:01" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="1815499518" />
       <property role="TrG5h" value="Sn2" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKylo" role="2vn1q5">
-      <property role="1_P5yc" value="Wed Feb 19 10:53:13 CET 2020" />
-      <property role="1_P5wC" value="19-02-2020 10:53:13" />
+      <property role="1_P5yc" value="Fri Mar 06 07:53:01 CET 2020" />
+      <property role="1_P5wC" value="06-03-2020 07:53:01" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="1765429298" />
       <property role="TrG5h" value="Sn3" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKyzB" role="2vn1q5">
-      <property role="1_P5yc" value="Wed Feb 19 10:53:13 CET 2020" />
-      <property role="1_P5wC" value="19-02-2020 10:53:13" />
+      <property role="1_P5yc" value="Fri Mar 06 07:53:01 CET 2020" />
+      <property role="1_P5wC" value="06-03-2020 07:53:01" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="1299781067" />
       <property role="TrG5h" value="Sn4" />
@@ -7387,6 +7389,9 @@
     </node>
     <node concept="1$GyEX" id="6cuY1N1xYNd" role="2vn1q5">
       <property role="TrG5h" value="Sn5" />
+      <property role="1_P5yc" value="Fri Mar 06 07:53:01 CET 2020" />
+      <property role="1_P5wC" value="06-03-2020 07:53:01" />
+      <property role="1_P2tN" value="-649880565" />
     </node>
     <node concept="3VeUTF" id="6cuY1N1xZ0H" role="2vhqc$">
       <ref role="3VeSjP" node="65LrkjiXUro" resolve="Str01" />
@@ -9384,6 +9389,85 @@
       </node>
     </node>
     <node concept="2SQmWS" id="2iCnExZGrZA" role="2HcuB8" />
+  </node>
+  <node concept="2HdtXS" id="1wencriDZsk">
+    <property role="TrG5h" value="_040_airbag_implementation_link" />
+    <node concept="2Hdtz0" id="1wencriDZsl" role="2HcuB8">
+      <property role="TrG5h" value="link_impl" />
+      <node concept="32O2o0" id="1wencriDZsm" role="2HcbjO">
+        <node concept="JlCpM" id="1wencriDZsn" role="32O2ov">
+          <property role="TrG5h" value="NewDataAvailable" />
+          <node concept="1yCjT0" id="1wencriDZUj" role="1zoetD" />
+        </node>
+        <node concept="JlCpM" id="1wencriDZsp" role="32O2ov">
+          <property role="TrG5h" value="ValidCRC" />
+          <node concept="1yCjRe" id="1wencriE00K" role="1zoetD" />
+        </node>
+        <node concept="JlCpM" id="1wencriE020" role="32O2ov">
+          <property role="TrG5h" value="out_message" />
+          <node concept="2HeeqP" id="1wencriE02L" role="1zoetD">
+            <ref role="2HeeqO" node="1wencriDZsu" resolve="no_message" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="1wencriE02T" role="32O2ov">
+          <property role="TrG5h" value="out_Counter" />
+          <node concept="2IPVmt" id="1wencriE03D" role="1zoetD">
+            <property role="2IPVms" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="1wencriDZsr" role="2HcbjO">
+        <node concept="2Hdskp" id="1wencriDZss" role="2Hfkx9">
+          <property role="TrG5h" value="my_message" />
+          <node concept="2Hdrtr" id="1wencriDZst" role="2HdssA">
+            <node concept="2Hdrtq" id="1wencriDZsu" role="2Hdrtl">
+              <property role="TrG5h" value="no_message" />
+            </node>
+            <node concept="2Hdrtq" id="1wencriDZsv" role="2Hdrtl">
+              <property role="TrG5h" value="explode" />
+            </node>
+            <node concept="2Hdrtq" id="1wencriDZsw" role="2Hdrtl">
+              <property role="TrG5h" value="other_message" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Hdskp" id="1wencriDZsx" role="2Hfkx9">
+          <property role="TrG5h" value="my_counter" />
+          <node concept="dhpfj" id="1wencriDZsy" role="2HdssA">
+            <node concept="2IPVmt" id="1wencriDZsz" role="dhpfi">
+              <property role="2IPVms" value="0" />
+            </node>
+            <node concept="2IPVmt" id="1wencriDZs$" role="dhpfn">
+              <property role="2IPVms" value="14" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="1wencriDZDN" role="2Hdtzq">
+        <property role="TrG5h" value="in_message" />
+      </node>
+      <node concept="2Hdtzr" id="1wencriDZDY" role="2Hdtzq">
+        <property role="TrG5h" value="in_Counter" />
+      </node>
+      <node concept="2Hdtzr" id="1wencriDZE1" role="2Hdtzq">
+        <property role="TrG5h" value="fault_corruption" />
+      </node>
+      <node concept="2Hdtzr" id="1wencriDZE5" role="2Hdtzq">
+        <property role="TrG5h" value="fault_deletion" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="1wencriEnFv" role="2HcuB8" />
+    <node concept="eml0t" id="1wencriDZt8" role="2HcuB8">
+      <property role="TrG5h" value="link_2_impl" />
+      <property role="eqodo" value="true" />
+      <property role="eqodr" value="10" />
+      <node concept="3Ug1AZ" id="1wencriDZyP" role="eml14">
+        <ref role="3Ug1AY" node="57ROGn92W1w" resolve="Link" />
+      </node>
+      <node concept="eml1q" id="1wencriDZta" role="eml13">
+        <ref role="eml1l" node="1wencriDZsl" resolve="link_impl" />
+      </node>
+    </node>
   </node>
 </model>
 
