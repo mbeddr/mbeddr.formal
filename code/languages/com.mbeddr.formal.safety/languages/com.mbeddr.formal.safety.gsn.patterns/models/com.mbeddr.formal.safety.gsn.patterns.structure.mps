@@ -85,12 +85,6 @@
     <property role="3GE5qa" value="requirements" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
   </node>
-  <node concept="1TIwiD" id="6rlO$dpKLnX">
-    <property role="EcuMT" value="7410059948618618365" />
-    <property role="TrG5h" value="SafeSystemGoal" />
-    <property role="34LRSv" value="Safe System Goal" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
-  </node>
   <node concept="1TIwiD" id="6rlO$dpJSTC">
     <property role="EcuMT" value="7410059948618387048" />
     <property role="TrG5h" value="CBDStrategy" />

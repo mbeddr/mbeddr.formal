@@ -501,37 +501,6 @@
       </node>
     </node>
   </node>
-  <node concept="PKFIW" id="3Ngc4zVhI6G">
-    <property role="TrG5h" value="SafeSystemGoalTextArea" />
-    <ref role="1XX52x" to="2qxf:6rlO$dpKLnX" resolve="SafeSystemGoal" />
-    <node concept="1PE4EZ" id="3Ngc4zVhI6I" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
-    </node>
-    <node concept="3EZMnI" id="3Ngc4zVhIhl" role="2wV5jI">
-      <node concept="3EZMnI" id="3Ngc4zVhIhm" role="3EZMnx">
-        <node concept="VPM3Z" id="3Ngc4zVhIhn" role="3F10Kt" />
-        <node concept="3F0ifn" id="3Ngc4zVhIho" role="3EZMnx">
-          <property role="3F0ifm" value="Safe System Goal: " />
-          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
-        </node>
-        <node concept="3F0A7n" id="3Ngc4zVhIhp" role="3EZMnx">
-          <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
-        </node>
-        <node concept="l2Vlx" id="3Ngc4zVhIhq" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="11dqoQ_FpRZ" role="3EZMnx" />
-      <node concept="3F1sOY" id="3Ngc4zVhIhs" role="3EZMnx">
-        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
-      </node>
-      <node concept="2iRkQZ" id="3Ngc4zVhIhB" role="2iSdaV" />
-      <node concept="xShMh" id="3Ngc4zVhIhC" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="4MR8i$4iWiA">
     <property role="3GE5qa" value="cbd" />
     <ref role="1XX52x" to="2qxf:4MR8i$4iWir" resolve="ComponentInterfaceRef" />
