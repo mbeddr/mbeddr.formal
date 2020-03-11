@@ -976,6 +976,11 @@
                       <node concept="3clFbS" id="2k2dPZH6$t9" role="3clF47">
                         <node concept="SfApY" id="2k2dPZH6$ta" role="3cqZAp">
                           <node concept="3clFbS" id="2k2dPZH6$tb" role="SfCbr">
+                            <node concept="3clFbF" id="52c094m81vL" role="3cqZAp">
+                              <node concept="1rXfSq" id="52c094m81vJ" role="3clFbG">
+                                <ref role="37wK5l" to="vxn5:7yT88Oq7qMA" resolve="clearResults" />
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="2mjHtwTFixQ" role="3cqZAp">
                               <node concept="2YIFZM" id="2mjHtwTFiZ5" role="3clFbG">
                                 <ref role="37wK5l" to="2ocj:2mjHtwTFcTW" resolve="reRunLastAnalysis" />
