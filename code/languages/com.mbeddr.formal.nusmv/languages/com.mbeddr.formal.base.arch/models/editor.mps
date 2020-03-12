@@ -383,9 +383,6 @@
         <child id="6202678563380433923" name="query" index="sbcd9" />
       </concept>
     </language>
-    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -724,56 +721,8 @@
         <node concept="l2Vlx" id="57ROGn90EEZ" role="2iSdaV" />
       </node>
     </node>
-    <node concept="3EZMnI" id="15PPQjZe9JD" role="6VMZX">
-      <node concept="3EZMnI" id="15PPQjZe9JN" role="3EZMnx">
-        <node concept="VPM3Z" id="15PPQjZe9JP" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="15PPQjZe9K2" role="3EZMnx">
-          <property role="3F0ifm" value="check vacuity:" />
-        </node>
-        <node concept="27S6Sx" id="15PPQjZea1B" role="3EZMnx">
-          <ref role="1NtTu8" to="3whv:7bxPmtpaok2" resolve="checkVacuity" />
-        </node>
-        <node concept="l2Vlx" id="15PPQjZe9JS" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="7bxPmtpaosD" role="3EZMnx">
-        <node concept="VPM3Z" id="7bxPmtpaosE" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="7bxPmtpaosF" role="3EZMnx">
-          <property role="3F0ifm" value="use bmc:" />
-        </node>
-        <node concept="27S6Sx" id="7bxPmtpaosG" role="3EZMnx">
-          <ref role="1NtTu8" to="3whv:15PPQjZe9gT" resolve="useBMC" />
-        </node>
-        <node concept="l2Vlx" id="7bxPmtpaosH" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="15PPQjZea1T" role="3EZMnx">
-        <node concept="VPM3Z" id="15PPQjZea1U" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="15PPQjZea1V" role="3EZMnx">
-          <property role="3F0ifm" value="bmc length:" />
-        </node>
-        <node concept="3F0A7n" id="15PPQjZea2v" role="3EZMnx">
-          <ref role="1NtTu8" to="3whv:15PPQjZe9gW" resolve="bmcLen" />
-        </node>
-        <node concept="l2Vlx" id="15PPQjZea1X" role="2iSdaV" />
-        <node concept="pkWqt" id="15PPQjZgpGe" role="pqm2j">
-          <node concept="3clFbS" id="15PPQjZgpGf" role="2VODD2">
-            <node concept="3clFbF" id="15PPQjZfuMj" role="3cqZAp">
-              <node concept="2OqwBi" id="15PPQjZfv7s" role="3clFbG">
-                <node concept="pncrf" id="15PPQjZfuMi" role="2Oq$k0" />
-                <node concept="3TrcHB" id="15PPQjZfwfL" role="2OqNvi">
-                  <ref role="3TsBF5" to="3whv:15PPQjZe9gT" resolve="useBMC" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2iRkQZ" id="15PPQjZe9JG" role="2iSdaV" />
+    <node concept="PMmxH" id="uQLpUkWXaA" role="6VMZX">
+      <ref role="PMmxG" node="uQLpUkWWMv" resolve="AbstractComponentAssemblyInspectorEditorComponent" />
     </node>
   </node>
   <node concept="24kQdi" id="7mSH3WnI5Lo">
@@ -1268,44 +1217,8 @@
     <node concept="2aJ2om" id="7mSH3WnI5Lq" role="CpUAK">
       <ref role="2$4xQ3" node="7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
     </node>
-    <node concept="3EZMnI" id="15PPQjZe$jN" role="6VMZX">
-      <node concept="3EZMnI" id="15PPQjZe$jO" role="3EZMnx">
-        <node concept="VPM3Z" id="15PPQjZe$jP" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="15PPQjZe$jQ" role="3EZMnx">
-          <property role="3F0ifm" value="use bmc:" />
-        </node>
-        <node concept="27S6Sx" id="15PPQjZe$jR" role="3EZMnx">
-          <ref role="1NtTu8" to="3whv:15PPQjZe9gT" resolve="useBMC" />
-        </node>
-        <node concept="l2Vlx" id="15PPQjZe$jS" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="15PPQjZe$jT" role="3EZMnx">
-        <node concept="VPM3Z" id="15PPQjZe$jU" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="15PPQjZe$jV" role="3EZMnx">
-          <property role="3F0ifm" value="bmc length:" />
-        </node>
-        <node concept="3F0A7n" id="15PPQjZe$jW" role="3EZMnx">
-          <ref role="1NtTu8" to="3whv:15PPQjZe9gW" resolve="bmcLen" />
-        </node>
-        <node concept="l2Vlx" id="15PPQjZe$jX" role="2iSdaV" />
-        <node concept="pkWqt" id="15PPQjZfsA1" role="pqm2j">
-          <node concept="3clFbS" id="15PPQjZfsA2" role="2VODD2">
-            <node concept="3clFbF" id="15PPQjZfsHo" role="3cqZAp">
-              <node concept="2OqwBi" id="15PPQjZft5y" role="3clFbG">
-                <node concept="pncrf" id="15PPQjZfsHn" role="2Oq$k0" />
-                <node concept="3TrcHB" id="15PPQjZfuwe" role="2OqNvi">
-                  <ref role="3TsBF5" to="3whv:15PPQjZe9gT" resolve="useBMC" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2iRkQZ" id="15PPQjZe$jY" role="2iSdaV" />
+    <node concept="PMmxH" id="uQLpUkWYNx" role="6VMZX">
+      <ref role="PMmxG" node="uQLpUkWWMv" resolve="AbstractComponentAssemblyInspectorEditorComponent" />
     </node>
   </node>
   <node concept="PKFIW" id="57ROGn8Sto1">
@@ -4278,6 +4191,14 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="uQLpUkWWMv">
+    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="TrG5h" value="AbstractComponentAssemblyInspectorEditorComponent" />
+    <ref role="1XX52x" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+    <node concept="3F0ifn" id="uQLpUkWWMx" role="2wV5jI">
+      <property role="3F0ifm" value="&lt;please override&gt;" />
     </node>
   </node>
 </model>
