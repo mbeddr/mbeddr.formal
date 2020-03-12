@@ -26,6 +26,7 @@
     <import index="23hk" ref="r:82408ecc-789d-46ca-9843-0b79143d7c57(com.mbeddr.formal.nusmv.behavior)" />
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="yvhq" ref="r:b8dfa86d-6fa5-4013-9800-ef25be8121b5(com.mbeddr.formal.nusmv.pluginSolution.msc)" />
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="v4mk" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx(com.mbeddr.formal.base.tooling/)" implicit="true" />
@@ -215,6 +216,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -682,7 +684,20 @@
         <property role="NWlVz" value="Simulate current trace." />
       </node>
     </node>
-    <node concept="2tJIrI" id="6Kf5KB70uVD" role="jymVt" />
+    <node concept="2tJIrI" id="1wencriOrwh" role="jymVt" />
+    <node concept="312cEg" id="1wencriOo8A" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="showMSC" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1wencriOo8B" role="1B3o_S" />
+      <node concept="3uibUv" id="1wencriOo8C" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+      </node>
+      <node concept="NWlO9" id="1wencriOo8D" role="lGtFl">
+        <property role="NWlVz" value="Shows MSC on the current trace." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="71H03GAXFEP" role="jymVt" />
     <node concept="312cEg" id="71H03GAY2Dn" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -820,6 +835,57 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1wencriOl4v" role="3cqZAp" />
+        <node concept="3clFbF" id="1wencriOl_v" role="3cqZAp">
+          <node concept="37vLTI" id="1wencriOl_w" role="3clFbG">
+            <node concept="2ShNRf" id="1wencriOl_x" role="37vLTx">
+              <node concept="1pGfFk" id="1wencriOl_y" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                <node concept="Xl_RD" id="1wencriOl_z" role="37wK5m">
+                  <property role="Xl_RC" value="Show MSC" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1wencriOl_$" role="37vLTJ">
+              <node concept="Xjq3P" id="1wencriOl__" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1wencriOxpm" role="2OqNvi">
+                <ref role="2Oxat5" node="1wencriOo8A" resolve="showMSC" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1wencriOl_O" role="3cqZAp">
+          <node concept="2OqwBi" id="1wencriOl_P" role="3clFbG">
+            <node concept="2OqwBi" id="1wencriOl_Q" role="2Oq$k0">
+              <node concept="Xjq3P" id="1wencriOl_R" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1wencriOyyJ" role="2OqNvi">
+                <ref role="2Oxat5" node="1wencriOo8A" resolve="showMSC" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1wencriOl_T" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="1wencriOl_U" role="37wK5m">
+                <ref role="3cqZAo" to="vxn5:1GgrF83etM0" resolve="MY_FONT" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1wencriOlA8" role="3cqZAp">
+          <node concept="2OqwBi" id="1wencriOlA9" role="3clFbG">
+            <node concept="2OqwBi" id="1wencriOlAa" role="2Oq$k0">
+              <node concept="Xjq3P" id="1wencriOlAb" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1wencriOz7N" role="2OqNvi">
+                <ref role="2Oxat5" node="1wencriOo8A" resolve="showMSC" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1wencriOlAd" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String)" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="1wencriOlAe" role="37wK5m">
+                <property role="Xl_RC" value="Starts the simulator on the current trace." />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="2k2dPZH6kvp" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -910,6 +976,11 @@
                       <node concept="3clFbS" id="2k2dPZH6$t9" role="3clF47">
                         <node concept="SfApY" id="2k2dPZH6$ta" role="3cqZAp">
                           <node concept="3clFbS" id="2k2dPZH6$tb" role="SfCbr">
+                            <node concept="3clFbF" id="52c094m81vL" role="3cqZAp">
+                              <node concept="1rXfSq" id="52c094m81vJ" role="3clFbG">
+                                <ref role="37wK5l" to="vxn5:7yT88Oq7qMA" resolve="clearResults" />
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="2mjHtwTFixQ" role="3cqZAp">
                               <node concept="2YIFZM" id="2mjHtwTFiZ5" role="3clFbG">
                                 <ref role="37wK5l" to="2ocj:2mjHtwTFcTW" resolve="reRunLastAnalysis" />
@@ -1109,6 +1180,160 @@
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
               <node concept="37vLTw" id="6Kf5KB70KjD" role="37wK5m">
                 <ref role="3cqZAo" node="6Kf5KB70wXn" resolve="simulateCurrentTrace" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1wencriOAe0" role="3cqZAp" />
+        <node concept="3clFbF" id="1wencriOzsc" role="3cqZAp">
+          <node concept="2OqwBi" id="1wencriOzsd" role="3clFbG">
+            <node concept="37vLTw" id="1wencriOC5n" role="2Oq$k0">
+              <ref role="3cqZAo" node="1wencriOo8A" resolve="showMSC" />
+            </node>
+            <node concept="liA8E" id="1wencriOzsf" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
+              <node concept="2ShNRf" id="1wencriOzsg" role="37wK5m">
+                <node concept="YeOm9" id="1wencriOzsh" role="2ShVmc">
+                  <node concept="1Y3b0j" id="1wencriOzsi" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3Tm1VV" id="1wencriOzsj" role="1B3o_S" />
+                    <node concept="3clFb_" id="1wencriOzsk" role="jymVt">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="actionPerformed" />
+                      <property role="DiZV1" value="false" />
+                      <node concept="3Tm1VV" id="1wencriOzsl" role="1B3o_S" />
+                      <node concept="3cqZAl" id="1wencriOzsm" role="3clF45" />
+                      <node concept="37vLTG" id="1wencriOzsn" role="3clF46">
+                        <property role="TrG5h" value="p0" />
+                        <node concept="3uibUv" id="1wencriOzso" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="1wencriOzsp" role="3clF47">
+                        <node concept="3clFbJ" id="1wencriOzsq" role="3cqZAp">
+                          <node concept="3clFbC" id="1wencriOzsr" role="3clFbw">
+                            <node concept="10Nm6u" id="1wencriOzss" role="3uHU7w" />
+                            <node concept="37vLTw" id="1wencriOzst" role="3uHU7B">
+                              <ref role="3cqZAo" node="6Kf5KB70Pul" resolve="currentlySelectedResult" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="1wencriOzsu" role="3clFbx">
+                            <node concept="3clFbF" id="1wencriOzsv" role="3cqZAp">
+                              <node concept="2YIFZM" id="1wencriOzsw" role="3clFbG">
+                                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
+                                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                <node concept="10Nm6u" id="1wencriOzsx" role="37wK5m" />
+                                <node concept="Xl_RD" id="1wencriOzsy" role="37wK5m">
+                                  <property role="Xl_RC" value="No trace available to show MSC on!\nPlease select a result with a trace attached." />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3cpWs6" id="1wencriOzsz" role="3cqZAp" />
+                          </node>
+                        </node>
+                        <node concept="3cpWs8" id="1wencriOzs$" role="3cqZAp">
+                          <node concept="3cpWsn" id="1wencriOzs_" role="3cpWs9">
+                            <property role="TrG5h" value="res" />
+                            <node concept="3uibUv" id="1wencriOzsA" role="1tU5fm">
+                              <ref role="3uigEE" to="mc3u:3fsZMFLDilr" resolve="ISimulationTrace" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="1wencriOzsB" role="3cqZAp">
+                          <node concept="3clFbS" id="1wencriOzsC" role="3clFbx">
+                            <node concept="3clFbF" id="1wencriOzsD" role="3cqZAp">
+                              <node concept="37vLTI" id="1wencriOzsE" role="3clFbG">
+                                <node concept="1eOMI4" id="1wencriOzsF" role="37vLTx">
+                                  <node concept="10QFUN" id="1wencriOzsG" role="1eOMHV">
+                                    <node concept="3uibUv" id="1wencriOzsH" role="10QFUM">
+                                      <ref role="3uigEE" to="mc3u:3fsZMFLDilr" resolve="ISimulationTrace" />
+                                    </node>
+                                    <node concept="37vLTw" id="1wencriOzsI" role="10QFUP">
+                                      <ref role="3cqZAo" node="6Kf5KB70Pul" resolve="currentlySelectedResult" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="37vLTw" id="1wencriOzsJ" role="37vLTJ">
+                                  <ref role="3cqZAo" node="1wencriOzs_" resolve="res" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2ZW3vV" id="1wencriOzsK" role="3clFbw">
+                            <node concept="3uibUv" id="1wencriOzsL" role="2ZW6by">
+                              <ref role="3uigEE" to="mc3u:3fsZMFLDilr" resolve="ISimulationTrace" />
+                            </node>
+                            <node concept="37vLTw" id="1wencriOzsM" role="2ZW6bz">
+                              <ref role="3cqZAo" node="6Kf5KB70Pul" resolve="currentlySelectedResult" />
+                            </node>
+                          </node>
+                          <node concept="9aQIb" id="1wencriOzsN" role="9aQIa">
+                            <node concept="3clFbS" id="1wencriOzsO" role="9aQI4">
+                              <node concept="3clFbF" id="1wencriOzsP" role="3cqZAp">
+                                <node concept="37vLTI" id="1wencriOzsQ" role="3clFbG">
+                                  <node concept="37vLTw" id="1wencriOzsR" role="37vLTJ">
+                                    <ref role="3cqZAo" node="1wencriOzs_" resolve="res" />
+                                  </node>
+                                  <node concept="2YIFZM" id="1wencriOzsS" role="37vLTx">
+                                    <ref role="37wK5l" to="4c75:1EKbsQR79T_" resolve="buildSimulationTrace" />
+                                    <ref role="1Pybhc" to="4c75:1EKbsQR79AF" resolve="NuSMVLiftedResult2NuSMVSimulationTrace" />
+                                    <node concept="37vLTw" id="1wencriOzsT" role="37wK5m">
+                                      <ref role="3cqZAo" node="6Kf5KB70Pul" resolve="currentlySelectedResult" />
+                                    </node>
+                                    <node concept="37vLTw" id="1wencriOzsU" role="37wK5m">
+                                      <ref role="3cqZAo" to="vxn5:7V1Bqz75Sac" resolve="repo" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="1wencriOzsV" role="3cqZAp">
+                          <node concept="2YIFZM" id="1wencriOQhA" role="3clFbG">
+                            <ref role="37wK5l" to="yvhq:1wencriOLnF" resolve="saveMsc" />
+                            <ref role="1Pybhc" to="yvhq:1wencriOLlF" resolve="MSCSaver" />
+                            <node concept="2OqwBi" id="1wencriOSyv" role="37wK5m">
+                              <node concept="2OqwBi" id="1wencriOS1f" role="2Oq$k0">
+                                <node concept="37vLTw" id="1wencriORmp" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6Kf5KB70Pul" resolve="currentlySelectedResult" />
+                                </node>
+                                <node concept="liA8E" id="1wencriOSoh" role="2OqNvi">
+                                  <ref role="37wK5l" to="4c75:2lN4cj_PSFc" resolve="getAnalyzedNode" />
+                                </node>
+                              </node>
+                              <node concept="I4A8Y" id="1wencriOSTa" role="2OqNvi" />
+                            </node>
+                            <node concept="37vLTw" id="1wencriOQhB" role="37wK5m">
+                              <ref role="3cqZAo" node="1wencriOzs_" resolve="res" />
+                            </node>
+                            <node concept="37vLTw" id="1wencriOQhC" role="37wK5m">
+                              <ref role="3cqZAo" to="vxn5:7V1Bqz75Sac" resolve="repo" />
+                            </node>
+                            <node concept="37vLTw" id="1wencriW4YX" role="37wK5m">
+                              <ref role="3cqZAo" to="vxn5:JsaLOcqBeI" resolve="project" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1wencriOzs7" role="3cqZAp">
+          <node concept="2OqwBi" id="1wencriOzs8" role="3clFbG">
+            <node concept="37vLTw" id="1wencriOzs9" role="2Oq$k0">
+              <ref role="3cqZAo" node="6PRHFscOWES" resolve="widgetsPanel" />
+            </node>
+            <node concept="liA8E" id="1wencriOzsa" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
+              <node concept="37vLTw" id="1wencriODqo" role="37wK5m">
+                <ref role="3cqZAo" node="1wencriOo8A" resolve="showMSC" />
               </node>
             </node>
           </node>
