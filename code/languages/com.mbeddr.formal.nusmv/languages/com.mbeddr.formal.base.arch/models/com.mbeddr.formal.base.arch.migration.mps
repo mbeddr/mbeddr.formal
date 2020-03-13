@@ -485,6 +485,38 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbF" id="uQLpUl2pLA" role="3cqZAp">
+                      <node concept="2OqwBi" id="uQLpUl2s5T" role="3clFbG">
+                        <node concept="2OqwBi" id="uQLpUl2pLC" role="2Oq$k0">
+                          <node concept="1PxgMI" id="uQLpUl2pLD" role="2Oq$k0">
+                            <node concept="chp4Y" id="uQLpUl2pLE" role="3oSUPX">
+                              <ref role="cht4Q" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
+                            </node>
+                            <node concept="37vLTw" id="uQLpUl2pLF" role="1m5AlR">
+                              <ref role="3cqZAo" node="3Cd5_MREWBX" resolve="newComponentInterface" />
+                            </node>
+                          </node>
+                          <node concept="3Tsc0h" id="uQLpUl2qTT" role="2OqNvi">
+                            <ref role="3TtcxE" to="3whv:7RhjhI7$E7F" resolve="content" />
+                          </node>
+                        </node>
+                        <node concept="X8dFx" id="uQLpUl2tUp" role="2OqNvi">
+                          <node concept="2OqwBi" id="uQLpUl2vZC" role="25WWJ7">
+                            <node concept="1PxgMI" id="uQLpUl2vZD" role="2Oq$k0">
+                              <node concept="chp4Y" id="uQLpUl2vZE" role="3oSUPX">
+                                <ref role="cht4Q" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+                              </node>
+                              <node concept="2GrUjf" id="uQLpUl2vZF" role="1m5AlR">
+                                <ref role="2Gs0qQ" node="3Cd5_MREVlw" resolve="oldComponentInterface" />
+                              </node>
+                            </node>
+                            <node concept="3Tsc0h" id="uQLpUl2zzi" role="2OqNvi">
+                              <ref role="3TtcxE" to="3whv:7RhjhI7$E7F" resolve="content" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="9aQIb" id="3Cd5_MREWpV" role="9aQIa">
                     <node concept="3clFbS" id="3Cd5_MREWpW" role="9aQI4">
