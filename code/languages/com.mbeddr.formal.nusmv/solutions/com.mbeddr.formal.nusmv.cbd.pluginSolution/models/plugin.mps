@@ -358,7 +358,7 @@
       <node concept="3Tm6S6" id="6NmtaR244nL" role="1B3o_S" />
       <node concept="1oajcY" id="6NmtaR244nM" role="1oa70y" />
       <node concept="3Tqbb2" id="6NmtaR23THN" role="1tU5fm">
-        <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+        <ref role="ehGHo" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
       </node>
     </node>
     <node concept="1QGGSu" id="6NmtaR26kcd" role="3Uehp1">
