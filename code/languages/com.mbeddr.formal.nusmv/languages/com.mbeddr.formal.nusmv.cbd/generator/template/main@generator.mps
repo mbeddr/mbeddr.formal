@@ -387,7 +387,7 @@
     </node>
     <node concept="3lhOvk" id="7RhjhI7hJ_9" role="3lj3bC">
       <ref role="3lhOvi" node="7RhjhI7iPN7" resolve="flattened_system" />
-      <ref role="30HIoZ" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+      <ref role="30HIoZ" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
       <node concept="30G5F_" id="1NcemxVvsoT" role="30HLyM">
         <node concept="3clFbS" id="1NcemxVvsoU" role="2VODD2">
           <node concept="3clFbJ" id="1NcemxVvu6X" role="3cqZAp">
@@ -778,7 +778,7 @@
     </node>
     <node concept="2SQmWS" id="7RhjhI7iPN8" role="2HcuB8" />
     <node concept="n94m4" id="7RhjhI7iPN9" role="lGtFl">
-      <ref role="n9lRv" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+      <ref role="n9lRv" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
     </node>
     <node concept="17Uvod" id="7RhjhI7iRET" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
