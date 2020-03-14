@@ -169,6 +169,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -484,6 +487,36 @@
                           </node>
                           <node concept="3TrcHB" id="3Cd5_MRGzSW" role="2OqNvi">
                             <ref role="3TsBF5" to="3whv:7bxPmtpaok2" resolve="checkVacuity" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="VJbr0WYdmh" role="3cqZAp">
+                      <node concept="37vLTI" id="VJbr0WYdmi" role="3clFbG">
+                        <node concept="2OqwBi" id="VJbr0WYdmj" role="37vLTx">
+                          <node concept="1PxgMI" id="VJbr0WYdmk" role="2Oq$k0">
+                            <node concept="chp4Y" id="VJbr0WYdml" role="3oSUPX">
+                              <ref role="cht4Q" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+                            </node>
+                            <node concept="2GrUjf" id="VJbr0WYdmm" role="1m5AlR">
+                              <ref role="2Gs0qQ" node="3Cd5_MREVlw" resolve="oldComponentInterface" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="VJbr0WYfko" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3whv:57ROGn8SsaT" resolve="interfaceRef" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="VJbr0WYdmo" role="37vLTJ">
+                          <node concept="1PxgMI" id="VJbr0WYdmp" role="2Oq$k0">
+                            <node concept="chp4Y" id="VJbr0WYdmq" role="3oSUPX">
+                              <ref role="cht4Q" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
+                            </node>
+                            <node concept="37vLTw" id="VJbr0WYdmr" role="1m5AlR">
+                              <ref role="3cqZAo" node="3Cd5_MREWBX" resolve="newComponentInterface" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="VJbr0WYeuC" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3whv:57ROGn8SsaT" resolve="interfaceRef" />
                           </node>
                         </node>
                       </node>
