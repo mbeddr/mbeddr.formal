@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3b22dedc-d6cf-4626-9445-6e9909b3e04a" name="com.fasten.base.arch.msc" version="0" />
-    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
+    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
     <use id="81f6a079-965e-4523-87c3-8e6194f66585" name="com.fasten.base.msc" version="0" />
   </languages>
   <imports>
@@ -30,9 +30,7 @@
       </concept>
     </language>
     <language id="3b22dedc-d6cf-4626-9445-6e9909b3e04a" name="com.fasten.base.arch.msc">
-      <concept id="4446202499241228805" name="com.fasten.base.arch.msc.structure.ScenarioSpec" flags="ng" index="2b3yYo">
-        <reference id="4446202499241229898" name="arch" index="2b3yJn" />
-      </concept>
+      <concept id="4446202499241228805" name="com.fasten.base.arch.msc.structure.ScenarioSpec" flags="ng" index="2b3yYo" />
       <concept id="4446202499241319119" name="com.fasten.base.arch.msc.structure.InstanceObject" flags="ng" index="2b3SXi">
         <reference id="4446202499241319122" name="inst" index="2b3SXf" />
       </concept>
@@ -40,7 +38,6 @@
   </registry>
   <node concept="2b3yYo" id="3QO5pQQJ$sD">
     <property role="TrG5h" value="_010_tlc_scenario" />
-    <ref role="2b3yJn" to="2hrk:57ROGn930qr" resolve="Device" />
     <node concept="2b3SXi" id="3QO5pQQKAYJ" role="3_aW3F">
       <property role="TrG5h" value="e2e" />
       <ref role="2b3SXf" to="2hrk:57ROGn931VS" resolve="e2e" />
