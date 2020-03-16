@@ -4440,19 +4440,12 @@
       <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
     </node>
-    <node concept="1a6Z8w" id="GpIy9pLLNl" role="8gIbH" />
   </node>
   <node concept="1QQeGf" id="1$M4_qbIbay">
     <property role="TrG5h" value="_010_airbag_functional_requirements" />
     <node concept="0lhDl" id="1$M4_qbIbaz" role="1QQeBF">
       <property role="0lsPA" value="FR01" />
       <property role="0ke_I" value="Carmen" />
-      <node concept="0lhDl" id="GpIy9pLLN7" role="1VMWzp">
-        <node concept="1QQeFk" id="GpIy9pLLN8" role="0nOlf" />
-        <node concept="19SGf9" id="GpIy9pLLN9" role="1QQeG9">
-          <node concept="19SUe$" id="GpIy9pLLNa" role="19SJt6" />
-        </node>
-      </node>
       <node concept="19SGf9" id="1$M4_qbIba_" role="1QQeG9">
         <node concept="19SUe$" id="1$M4_qbIbaA" role="19SJt6">
           <property role="19SUeA" value="Airbag function" />
