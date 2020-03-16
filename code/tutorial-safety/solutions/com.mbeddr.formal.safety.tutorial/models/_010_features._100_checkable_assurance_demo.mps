@@ -14,18 +14,6 @@
     <import index="88nu" ref="r:d4dedad3-46ad-41a8-810f-c3bbd821571a(_010_features._065_patterns_catalogue)" />
   </imports>
   <registry>
-    <language id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns">
-      <concept id="7240923401194648620" name="com.mbeddr.formal.req.tl_patterns.structure.BeforeScope" flags="ng" index="12ut_k">
-        <child id="7240923401194648621" name="r" index="12ut_l" />
-      </concept>
-      <concept id="7240923401194647888" name="com.mbeddr.formal.req.tl_patterns.structure.TLProperty" flags="ng" index="12utKC">
-        <child id="7240923401194648604" name="scope" index="12ut_$" />
-      </concept>
-      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
-        <child id="6544290145033523834" name="specs" index="3z0uXc" />
-      </concept>
-      <concept id="6544290145033461193" name="com.mbeddr.formal.req.tl_patterns.structure.TLRequirementSpecification" flags="ng" index="3z7I3Z" />
-    </language>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
       <concept id="2685719935121672208" name="com.mbeddr.formal.nusmv.cbd.structure.Refine" flags="ng" index="eml0t">
         <property id="2685719935122676565" name="useBMC" index="eqodo" />
@@ -50,9 +38,7 @@
       <concept id="3831049447781892150" name="com.mbeddr.formal.spin.structure.ImpliesExpression" flags="ng" index="3YPpWq" />
     </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
-      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
-        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
-      </concept>
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
       <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
       <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
         <child id="3226630706270140651" name="text" index="0nzdz" />
@@ -205,7 +191,6 @@
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
-      <concept id="7842584090743943169" name="com.mbeddr.formal.base.expressions.structure.Expression" flags="ng" index="2He$iG" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -8659,19 +8644,6 @@
     <node concept="0lhDl" id="35$gPpxdqeM" role="1QQeBF">
       <property role="0lsPA" value="SR_01" />
       <property role="0ke_I" value="Carmen" />
-      <node concept="0lhDl" id="7BYuSCF$ej3" role="1VMWzp">
-        <node concept="3z7I3Z" id="7BYuSCF$ejd" role="1QQeAC">
-          <node concept="12utKC" id="7BYuSCF$eji" role="3z0uXc">
-            <node concept="12ut_k" id="7BYuSCF$ejg" role="12ut_$">
-              <node concept="2He$iG" id="7BYuSCF$ejh" role="12ut_l" />
-            </node>
-          </node>
-        </node>
-        <node concept="1QQeFk" id="7BYuSCF$ej4" role="0nOlf" />
-        <node concept="19SGf9" id="7BYuSCF$ej5" role="1QQeG9">
-          <node concept="19SUe$" id="7BYuSCF$ej6" role="19SJt6" />
-        </node>
-      </node>
       <node concept="19SGf9" id="35$gPpxdqeN" role="1QQeG9">
         <node concept="19SUe$" id="35$gPpxdqeO" role="19SJt6">
           <property role="19SUeA" value="Avoid unintended airbag inflation" />
