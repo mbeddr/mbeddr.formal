@@ -14,6 +14,18 @@
     <import index="88nu" ref="r:d4dedad3-46ad-41a8-810f-c3bbd821571a(_010_features._065_patterns_catalogue)" />
   </imports>
   <registry>
+    <language id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns">
+      <concept id="7240923401194648620" name="com.mbeddr.formal.req.tl_patterns.structure.BeforeScope" flags="ng" index="12ut_k">
+        <child id="7240923401194648621" name="r" index="12ut_l" />
+      </concept>
+      <concept id="7240923401194647888" name="com.mbeddr.formal.req.tl_patterns.structure.TLProperty" flags="ng" index="12utKC">
+        <child id="7240923401194648604" name="scope" index="12ut_$" />
+      </concept>
+      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
+        <child id="6544290145033523834" name="specs" index="3z0uXc" />
+      </concept>
+      <concept id="6544290145033461193" name="com.mbeddr.formal.req.tl_patterns.structure.TLRequirementSpecification" flags="ng" index="3z7I3Z" />
+    </language>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
       <concept id="2685719935121672208" name="com.mbeddr.formal.nusmv.cbd.structure.Refine" flags="ng" index="eml0t">
         <property id="2685719935122676565" name="useBMC" index="eqodo" />
@@ -193,6 +205,7 @@
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
+      <concept id="7842584090743943169" name="com.mbeddr.formal.base.expressions.structure.Expression" flags="ng" index="2He$iG" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -4256,6 +4269,24 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
+      <node concept="37mRIm" id="7BYuSCF$e0T" role="37mRID">
+        <property role="37mO49" value="7542362404087571118" />
+        <node concept="2VclpC" id="7BYuSCF$e0S" role="37mO4d">
+          <node concept="3ul5H1" id="7BYuSCF$e0U" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="7BYuSCF$e0V" role="3ul5Gz">
+              <node concept="2VclrF" id="7BYuSCF$e0W" role="3wpmZR">
+                <property role="2Vclpx" value="258.37651721742884" />
+                <property role="2Vclpz" value="99.93115942028984" />
+              </node>
+              <node concept="2VclrF" id="7BYuSCF$e0X" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="8gVzV" id="2iCnExZHXGe" role="2vn1q5">
       <property role="TrG5h" value="G03" />
@@ -7013,7 +7044,7 @@
         <node concept="gqqVs" id="2iCnExZKxVN" role="37mO4d">
           <property role="gqqTZ" value="53.0" />
           <property role="gqqTW" value="371.0" />
-          <property role="gqqTX" value="168.0" />
+          <property role="gqqTX" value="189.0" />
           <property role="gqqTy" value="117.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7235,7 +7266,7 @@
       <property role="TrG5h" value="G21" />
       <node concept="19SGf9" id="65LrkjiXUrw" role="2vnaTY">
         <node concept="19SUe$" id="65LrkjiXUrx" role="19SJt6">
-          <property role="19SUeA" value="The compatibility of contracts &#10;of subcomponents is checked &#10;" />
+          <property role="19SUeA" value="The compatibility of contracts&#10;of subcomponents is checked &#10;" />
         </node>
       </node>
     </node>
@@ -8635,6 +8666,19 @@
     <node concept="0lhDl" id="35$gPpxdqeM" role="1QQeBF">
       <property role="0lsPA" value="SR_01" />
       <property role="0ke_I" value="Carmen" />
+      <node concept="0lhDl" id="7BYuSCF$ej3" role="1VMWzp">
+        <node concept="3z7I3Z" id="7BYuSCF$ejd" role="1QQeAC">
+          <node concept="12utKC" id="7BYuSCF$eji" role="3z0uXc">
+            <node concept="12ut_k" id="7BYuSCF$ejg" role="12ut_$">
+              <node concept="2He$iG" id="7BYuSCF$ejh" role="12ut_l" />
+            </node>
+          </node>
+        </node>
+        <node concept="1QQeFk" id="7BYuSCF$ej4" role="0nOlf" />
+        <node concept="19SGf9" id="7BYuSCF$ej5" role="1QQeG9">
+          <node concept="19SUe$" id="7BYuSCF$ej6" role="19SJt6" />
+        </node>
+      </node>
       <node concept="19SGf9" id="35$gPpxdqeN" role="1QQeG9">
         <node concept="19SUe$" id="35$gPpxdqeO" role="19SJt6">
           <property role="19SUeA" value="Avoid unintended airbag inflation" />
