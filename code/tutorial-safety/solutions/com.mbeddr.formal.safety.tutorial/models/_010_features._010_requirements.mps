@@ -50,8 +50,14 @@
       <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
         <child id="3226630706270140651" name="text" index="0nzdz" />
       </concept>
+      <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
+        <reference id="467505803006179847" name="req" index="0Sh0a" />
+      </concept>
       <concept id="7094415537350220692" name="com.mbeddr.formal.req.base.structure.ReqRefWord" flags="ng" index="2aGvr3">
         <reference id="7094415537350220726" name="req" index="2aGvrx" />
+      </concept>
+      <concept id="3536307729771763876" name="com.mbeddr.formal.req.base.structure.TracedNodeSpec" flags="ng" index="3g$em0">
+        <reference id="3536307729771763879" name="trace" index="3g$em3" />
       </concept>
       <concept id="6544290145033221524" name="com.mbeddr.formal.req.base.structure.Interface" flags="ng" index="3z6Cyy" />
       <concept id="815900398743272760" name="com.mbeddr.formal.req.base.structure.Image" flags="ng" index="3OoTgI">
@@ -149,6 +155,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -177,17 +184,17 @@
       <node concept="1QQeFk" id="5FhZjqTMQMN" role="0nOlf" />
       <node concept="19SGf9" id="5FhZjqTMMrG" role="1QQeG9">
         <node concept="19SUe$" id="5FhZjqTMMrH" role="19SJt6">
-          <property role="19SUeA" value="Airbag textual requirement example " />
+          <property role="19SUeA" value="Textual requirement example " />
         </node>
       </node>
       <node concept="1QQeAY" id="5FhZjqTMRVs" role="1QQeAC">
         <node concept="0nzK2" id="5FhZjqTMRVt" role="1QQeAV">
           <node concept="19SGf9" id="5FhZjqTMRVu" role="0nzdz">
             <node concept="19SUe$" id="5FhZjqTMRVv" role="19SJt6">
-              <property role="19SUeA" value="Textual specification of the system can include informal artifacts such as pictures.&#10;" />
+              <property role="19SUeA" value="Textual specification of the system can include informal artifacts such as pictures.&#10;&#10;&#10;" />
             </node>
             <node concept="3OoTgI" id="VJbr0XaaEe" role="19SJt6">
-              <property role="3OpxtG" value="10" />
+              <property role="3OpxtG" value="60" />
               <node concept="3NXOOs" id="VJbr0XaaEj" role="3OoW2A">
                 <property role="3N1Lgt" value="images/airbag_sketch.png" />
               </node>
@@ -276,7 +283,7 @@
               <node concept="3z7eFS" id="5FhZjqTN_Fm" role="12uYYF">
                 <node concept="19SGf9" id="5FhZjqTN_Fn" role="3z7eFT">
                   <node concept="19SUe$" id="5FhZjqTN_Fo" role="19SJt6">
-                    <property role="19SUeA" value="the vehicle drives immediately to a safe region" />
+                    <property role="19SUeA" value="ego vehicle drives immediately to a safe region" />
                   </node>
                 </node>
               </node>
@@ -511,6 +518,9 @@
       <node concept="2Hdtzr" id="1L4MZBxTanj" role="2Hdtzq">
         <property role="TrG5h" value="collision_detected" />
       </node>
+      <node concept="0Sh09" id="65VbbGlqZgk" role="lGtFl">
+        <ref role="0Sh0a" node="VJbr0XaaMn" />
+      </node>
     </node>
     <node concept="2SQmWS" id="1L4MZBxTank" role="2HcuB8" />
     <node concept="2Hdtz0" id="1L4MZBxTanl" role="2HcuB8">
@@ -561,6 +571,31 @@
       </node>
       <node concept="0mxsP" id="1L4MZBxTaBG" role="1QQeAC">
         <ref role="2rfAiQ" node="1L4MZBxTanb" resolve="airbag" />
+      </node>
+    </node>
+  </node>
+  <node concept="1QQeGf" id="VJbr0XaaMm">
+    <property role="TrG5h" value="_050_trace_other_models" />
+    <node concept="0lhDl" id="VJbr0XaaMn" role="1QQeBF">
+      <property role="0lsPA" value="050.01" />
+      <property role="0ke_I" value="dan" />
+      <node concept="3z6Cyy" id="VJbr0XaaMo" role="0nOlf" />
+      <node concept="19SGf9" id="VJbr0XaaMp" role="1QQeG9">
+        <node concept="19SUe$" id="VJbr0XaaMq" role="19SJt6">
+          <property role="19SUeA" value="Airbag basic function" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="VJbr0XaaMr" role="1QQeAC">
+        <node concept="0nzK2" id="VJbr0XaaMs" role="1QQeAV">
+          <node concept="19SGf9" id="VJbr0XaaMt" role="0nzdz">
+            <node concept="19SUe$" id="VJbr0XaaMu" role="19SJt6">
+              <property role="19SUeA" value="If not in a deactive state, the airbag shall explode whenever a collision is detected - as formalized in the following." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3g$em0" id="65VbbGlqZi5" role="1QQeAC">
+        <ref role="3g$em3" node="65VbbGlqZgk" />
       </node>
     </node>
   </node>
