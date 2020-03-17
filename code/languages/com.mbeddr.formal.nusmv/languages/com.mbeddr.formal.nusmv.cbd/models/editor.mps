@@ -50,6 +50,9 @@
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="6516520003787916624" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Condition" flags="ig" index="27VH4U" />
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
@@ -75,7 +78,10 @@
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
-      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
+        <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
+        <child id="7348800710862477686" name="contextHints" index="3XTboT" />
+      </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -148,6 +154,9 @@
       </concept>
       <concept id="5624877018228264944" name="jetbrains.mps.lang.editor.structure.TransformationMenuContribution" flags="ng" index="3INDKC">
         <child id="6718020819489956031" name="menuReference" index="AmTjC" />
+      </concept>
+      <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
+        <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
@@ -637,7 +646,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7zUWu">
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <ref role="1XX52x" to="vzqj:7RhjhI7zUWm" resolve="Port_old" />
     <node concept="3EZMnI" id="7RhjhI7zUWw" role="2wV5jI">
       <node concept="3F0A7n" id="7RhjhI7zUWI" role="3EZMnx">
@@ -653,7 +662,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7zUXC">
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <ref role="1XX52x" to="vzqj:7RhjhI7zUWi" resolve="ComponentInterface_old" />
     <node concept="3EZMnI" id="1xpXAu0YNwU" role="2wV5jI">
       <node concept="l2Vlx" id="1xpXAu0YNwV" role="2iSdaV" />
@@ -768,7 +777,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$lh5">
-    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <property role="3GE5qa" value="cbd_old.assembly.connections" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$lgV" resolve="Connection_old" />
     <node concept="3EZMnI" id="7RhjhI7$lh7" role="2wV5jI">
       <node concept="3F0ifn" id="7RhjhI7$lhh" role="3EZMnx">
@@ -793,7 +802,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$li6">
-    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <property role="3GE5qa" value="cbd_old.assembly.connections" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$li2" resolve="PortRef_old" />
     <node concept="1iCGBv" id="7RhjhI7$lic" role="2wV5jI">
       <ref role="1NtTu8" to="vzqj:7RhjhI7$li3" resolve="port_old" />
@@ -806,7 +815,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$liC">
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$li$" resolve="ComponentInterfaceRef_old" />
     <node concept="1iCGBv" id="7RhjhI7$liI" role="2wV5jI">
       <ref role="1NtTu8" to="vzqj:7RhjhI7$li_" resolve="interface_old" />
@@ -819,7 +828,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$lj9">
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$liw" resolve="Instance_old" />
     <node concept="3EZMnI" id="7RhjhI7$ljb" role="2wV5jI">
       <node concept="1kIj98" id="7RhjhI7$lo5" role="3EZMnx">
@@ -840,7 +849,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$loS">
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$loO" resolve="InstanceRef_old" />
     <node concept="1iCGBv" id="7RhjhI7$loU" role="2wV5jI">
       <ref role="1NtTu8" to="vzqj:7RhjhI7$loP" resolve="instance_old" />
@@ -853,7 +862,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$lpm">
-    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <property role="3GE5qa" value="cbd_old.assembly.connections" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$loN" resolve="CompositePart_old" />
     <node concept="3EZMnI" id="7RhjhI7$lpo" role="2wV5jI">
       <node concept="1kIj98" id="7RhjhI7$lpA" role="3EZMnx">
@@ -883,7 +892,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$E4J">
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly_old" />
     <node concept="3EZMnI" id="7RhjhI7$E4L" role="2wV5jI">
       <property role="S$Qs1" value="true" />
@@ -994,14 +1003,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$E7_">
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$E7x" resolve="EmptyComponentAssemblyBodyContent_old" />
     <node concept="3F0ifn" id="7RhjhI7$E7B" role="2wV5jI">
       <property role="3F0ifm" value="" />
     </node>
   </node>
   <node concept="PKFIW" id="57ROGn8Sto1">
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <property role="TrG5h" value="ComponentAssemblyInterface" />
     <ref role="1XX52x" to="vzqj:7RhjhI7$lgU" resolve="ComponentAssembly_old" />
     <node concept="3EZMnI" id="57ROGn8StvP" role="2wV5jI">
@@ -1357,7 +1366,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2l5A0OF7cxt">
-    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <property role="3GE5qa" value="cbd_old.nusmv_refinement" />
     <ref role="1XX52x" to="vzqj:2l5A0OF7cxn" resolve="ModuleRef" />
     <node concept="1iCGBv" id="2l5A0OF7cxv" role="2wV5jI">
       <ref role="1NtTu8" to="vzqj:2l5A0OF7cxo" resolve="module" />
@@ -1370,7 +1379,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2l5A0OF7cxX">
-    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <property role="3GE5qa" value="cbd_old.nusmv_refinement" />
     <ref role="1XX52x" to="vzqj:2l5A0OF7cwg" resolve="Refine" />
     <node concept="3EZMnI" id="2_LXzlppHp_" role="2wV5jI">
       <node concept="3EZMnI" id="2_LXzlppH$l" role="3EZMnx">
@@ -1652,6 +1661,127 @@
   <node concept="3p36aQ" id="3RylqDNx0G$">
     <ref role="aqKnT" to="vzqj:7RhjhI7cKiY" resolve="CommentContract_old" />
     <node concept="2VfDsV" id="3RylqDNx0G_" role="3ft7WO" />
+  </node>
+  <node concept="PKFIW" id="uQLpUkWWLO">
+    <property role="3GE5qa" value="cbd_new" />
+    <property role="TrG5h" value="ComponentAssemblySMVEditorComponent" />
+    <ref role="1XX52x" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
+    <node concept="1PE4EZ" id="uQLpUkWWWC" role="1PM95z">
+      <ref role="1PE7su" to="wfnd:uQLpUkWWMv" resolve="AbstractComponentAssemblyInspectorEditorComponent" />
+    </node>
+    <node concept="3EZMnI" id="uQLpUkWWWE" role="2wV5jI">
+      <node concept="3EZMnI" id="uQLpUkWWWF" role="3EZMnx">
+        <node concept="VPM3Z" id="uQLpUkWWWG" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="uQLpUkWWWH" role="3EZMnx">
+          <property role="3F0ifm" value="check vacuity:" />
+        </node>
+        <node concept="27S6Sx" id="uQLpUkWWWI" role="3EZMnx">
+          <ref role="1NtTu8" to="3whv:7bxPmtpaok2" resolve="checkVacuity" />
+        </node>
+        <node concept="l2Vlx" id="uQLpUkWWWJ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="uQLpUkWWWK" role="3EZMnx">
+        <node concept="VPM3Z" id="uQLpUkWWWL" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="uQLpUkWWWM" role="3EZMnx">
+          <property role="3F0ifm" value="use bmc:" />
+        </node>
+        <node concept="27S6Sx" id="uQLpUkWWWN" role="3EZMnx">
+          <ref role="1NtTu8" to="3whv:15PPQjZe9gT" resolve="useBMC" />
+        </node>
+        <node concept="l2Vlx" id="uQLpUkWWWO" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="uQLpUkWWWP" role="3EZMnx">
+        <node concept="VPM3Z" id="uQLpUkWWWQ" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="uQLpUkWWWR" role="3EZMnx">
+          <property role="3F0ifm" value="bmc length:" />
+        </node>
+        <node concept="3F0A7n" id="uQLpUkWWWS" role="3EZMnx">
+          <ref role="1NtTu8" to="3whv:15PPQjZe9gW" resolve="bmcLen" />
+        </node>
+        <node concept="l2Vlx" id="uQLpUkWWWT" role="2iSdaV" />
+        <node concept="pkWqt" id="uQLpUkWWWU" role="pqm2j">
+          <node concept="3clFbS" id="uQLpUkWWWV" role="2VODD2">
+            <node concept="3clFbF" id="uQLpUkWWWW" role="3cqZAp">
+              <node concept="2OqwBi" id="uQLpUkWWWX" role="3clFbG">
+                <node concept="pncrf" id="uQLpUkWWWY" role="2Oq$k0" />
+                <node concept="3TrcHB" id="uQLpUkWWWZ" role="2OqNvi">
+                  <ref role="3TsBF5" to="3whv:15PPQjZe9gT" resolve="useBMC" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="uQLpUkWWX0" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="uQLpUl0qek">
+    <property role="3GE5qa" value="cbd_new" />
+    <property role="TrG5h" value="ComponentAssemblySMVEditorComponent_ARCH_GRAPHICAL" />
+    <ref role="1XX52x" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
+    <node concept="1PE4EZ" id="uQLpUl0qel" role="1PM95z">
+      <ref role="1PE7su" to="wfnd:uQLpUkWWMv" resolve="AbstractComponentAssemblyInspectorEditorComponent" />
+    </node>
+    <node concept="3EZMnI" id="uQLpUl0qem" role="2wV5jI">
+      <node concept="3EZMnI" id="uQLpUl0qen" role="3EZMnx">
+        <node concept="VPM3Z" id="uQLpUl0qeo" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="uQLpUl0qep" role="3EZMnx">
+          <property role="3F0ifm" value="check vacuity:" />
+        </node>
+        <node concept="27S6Sx" id="uQLpUl0qeq" role="3EZMnx">
+          <ref role="1NtTu8" to="3whv:7bxPmtpaok2" resolve="checkVacuity" />
+        </node>
+        <node concept="l2Vlx" id="uQLpUl0qer" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="uQLpUl0qes" role="3EZMnx">
+        <node concept="VPM3Z" id="uQLpUl0qet" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="uQLpUl0qeu" role="3EZMnx">
+          <property role="3F0ifm" value="use bmc:" />
+        </node>
+        <node concept="27S6Sx" id="uQLpUl0qev" role="3EZMnx">
+          <ref role="1NtTu8" to="3whv:15PPQjZe9gT" resolve="useBMC" />
+        </node>
+        <node concept="l2Vlx" id="uQLpUl0qew" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="uQLpUl0qex" role="3EZMnx">
+        <node concept="VPM3Z" id="uQLpUl0qey" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="uQLpUl0qez" role="3EZMnx">
+          <property role="3F0ifm" value="bmc length:" />
+        </node>
+        <node concept="3F0A7n" id="uQLpUl0qe$" role="3EZMnx">
+          <ref role="1NtTu8" to="3whv:15PPQjZe9gW" resolve="bmcLen" />
+        </node>
+        <node concept="l2Vlx" id="uQLpUl0qe_" role="2iSdaV" />
+        <node concept="pkWqt" id="uQLpUl0qeA" role="pqm2j">
+          <node concept="3clFbS" id="uQLpUl0qeB" role="2VODD2">
+            <node concept="3clFbF" id="uQLpUl0qeC" role="3cqZAp">
+              <node concept="2OqwBi" id="uQLpUl0qeD" role="3clFbG">
+                <node concept="pncrf" id="uQLpUl0qeE" role="2Oq$k0" />
+                <node concept="3TrcHB" id="uQLpUl0qeF" role="2OqNvi">
+                  <ref role="3TsBF5" to="3whv:15PPQjZe9gT" resolve="useBMC" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="uQLpUl0qeG" role="2iSdaV" />
+    </node>
+    <node concept="2aJ2om" id="uQLpUl0qnX" role="3XTboT">
+      <ref role="2$4xQ3" to="wfnd:7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
+    </node>
   </node>
 </model>
 

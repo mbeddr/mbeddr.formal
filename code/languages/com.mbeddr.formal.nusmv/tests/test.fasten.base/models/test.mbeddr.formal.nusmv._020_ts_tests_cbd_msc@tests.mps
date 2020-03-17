@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
-    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
+    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
     <use id="3b22dedc-d6cf-4626-9445-6e9909b3e04a" name="com.fasten.base.arch.msc" version="0" />
   </languages>
   <imports>
@@ -69,9 +69,7 @@
       </concept>
     </language>
     <language id="3b22dedc-d6cf-4626-9445-6e9909b3e04a" name="com.fasten.base.arch.msc">
-      <concept id="4446202499241228805" name="com.fasten.base.arch.msc.structure.ScenarioSpec" flags="ng" index="2b3yYo">
-        <reference id="4446202499241229898" name="arch" index="2b3yJn" />
-      </concept>
+      <concept id="4446202499241228805" name="com.fasten.base.arch.msc.structure.ScenarioSpec" flags="ng" index="2b3yYo" />
       <concept id="4446202499241319119" name="com.fasten.base.arch.msc.structure.InstanceObject" flags="ng" index="2b3SXi">
         <reference id="4446202499241319122" name="inst" index="2b3SXf" />
       </concept>
@@ -92,7 +90,6 @@
     <node concept="1qefOq" id="25Ap4XXCh5X" role="1SKRRt">
       <node concept="2b3yYo" id="3QO5pQQMPQl" role="1qenE9">
         <property role="TrG5h" value="_010_scenario" />
-        <ref role="2b3yJn" to="3mdc:3QO5pQQMPPf" resolve="_010_System" />
         <node concept="oRLRZ" id="3QO5pQQMPQr" role="3_aW3_" />
         <node concept="oRLRZ" id="3QO5pQQMPQt" role="3_aW3_" />
         <node concept="3_aW46" id="3QO5pQQMPQD" role="3_aW3_">

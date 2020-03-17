@@ -131,7 +131,7 @@
   </registry>
   <node concept="18kY7G" id="4jVGnaqoEbh">
     <property role="TrG5h" value="check_Refine" />
-    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <property role="3GE5qa" value="cbd_old.nusmv_refinement" />
     <node concept="3clFbS" id="4jVGnaqoEbi" role="18ibNy">
       <node concept="3cpWs8" id="4jVGnaqoMcU" role="3cqZAp">
         <node concept="3cpWsn" id="4jVGnaqoMcV" role="3cpWs9">

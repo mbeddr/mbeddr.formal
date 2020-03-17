@@ -141,12 +141,6 @@
       <node concept="3clFbS" id="5_V$TJxAHBr" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6Kf5KB6U07p">
-    <ref role="13h7C2" to="b19z:6Kf5KB6TZVg" resolve="ISimulationEntryPoint" />
-    <node concept="13hLZK" id="6Kf5KB6U07q" role="13h7CW">
-      <node concept="3clFbS" id="6Kf5KB6U07r" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6Kf5KB75w8S">
     <ref role="13h7C2" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
     <node concept="13i0hz" id="6Kf5KB75w93" role="13h7CS">

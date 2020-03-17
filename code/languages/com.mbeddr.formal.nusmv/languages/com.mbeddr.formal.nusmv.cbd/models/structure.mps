@@ -153,7 +153,7 @@
   <node concept="1TIwiD" id="7RhjhI7zUWi">
     <property role="EcuMT" value="9066112305507315474" />
     <property role="TrG5h" value="ComponentInterface_old" />
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <property role="34LRSv" value="interface" />
     <property role="R4oN_" value="define an interface (CBD)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -195,7 +195,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7zUWm">
     <property role="EcuMT" value="9066112305507315478" />
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <property role="TrG5h" value="Port_old" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -224,7 +224,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7zUWq">
     <property role="EcuMT" value="9066112305507315482" />
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <property role="TrG5h" value="InputPort_old" />
     <property role="34LRSv" value="input port" />
     <property role="R4oN_" value="input port" />
@@ -235,7 +235,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7zUXc">
     <property role="EcuMT" value="9066112305507315532" />
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <property role="TrG5h" value="OutputPort_old" />
     <property role="34LRSv" value="output" />
     <property role="R4oN_" value="output port" />
@@ -246,7 +246,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$lgU">
     <property role="EcuMT" value="9066112305507423290" />
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <property role="TrG5h" value="ComponentAssembly_old" />
     <property role="34LRSv" value="assembly" />
     <ref role="1TJDcQ" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
@@ -305,7 +305,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$lgV">
     <property role="EcuMT" value="9066112305507423291" />
-    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <property role="3GE5qa" value="cbd_old.assembly.connections" />
     <property role="TrG5h" value="Connection_old" />
     <property role="34LRSv" value="connection" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -339,7 +339,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$lgW">
     <property role="EcuMT" value="9066112305507423292" />
-    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <property role="3GE5qa" value="cbd_old.assembly.connections" />
     <property role="TrG5h" value="ConnectionPart_old" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -350,7 +350,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$li2">
     <property role="EcuMT" value="9066112305507423362" />
-    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <property role="3GE5qa" value="cbd_old.assembly.connections" />
     <property role="TrG5h" value="PortRef_old" />
     <ref role="1TJDcQ" to="3whv:7RhjhI7$lgW" resolve="ConnectionPart" />
     <node concept="1TJgyj" id="7RhjhI7$li3" role="1TKVEi">
@@ -367,7 +367,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$liw">
     <property role="EcuMT" value="9066112305507423392" />
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <property role="TrG5h" value="Instance_old" />
     <property role="34LRSv" value="instance" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -392,7 +392,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$li$">
     <property role="EcuMT" value="9066112305507423396" />
-    <property role="3GE5qa" value="cbd.interface" />
+    <property role="3GE5qa" value="cbd_old.interface" />
     <property role="TrG5h" value="ComponentInterfaceRef_old" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$li_" role="1TKVEi">
@@ -409,7 +409,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$loN">
     <property role="EcuMT" value="9066112305507423795" />
-    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <property role="3GE5qa" value="cbd_old.assembly.connections" />
     <property role="TrG5h" value="CompositePart_old" />
     <property role="34LRSv" value="composite part" />
     <ref role="1TJDcQ" to="3whv:7RhjhI7$lgW" resolve="ConnectionPart" />
@@ -436,7 +436,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$loO">
     <property role="EcuMT" value="9066112305507423796" />
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <property role="TrG5h" value="InstanceRef_old" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$loP" role="1TKVEi">
@@ -453,7 +453,7 @@
   </node>
   <node concept="PlHQZ" id="7RhjhI7$E7w">
     <property role="EcuMT" value="9066112305507508704" />
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <property role="TrG5h" value="IComponentAssemblyBodyContent_old" />
     <node concept="asaX9" id="3RylqDNx0Fk" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.formal.base.arch&quot;" />
@@ -461,7 +461,7 @@
   </node>
   <node concept="1TIwiD" id="7RhjhI7$E7x">
     <property role="EcuMT" value="9066112305507508705" />
-    <property role="3GE5qa" value="cbd.assembly" />
+    <property role="3GE5qa" value="cbd_old.assembly" />
     <property role="TrG5h" value="EmptyComponentAssemblyBodyContent_old" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7RhjhI7$E7y" role="PzmwI">
@@ -491,7 +491,7 @@
   </node>
   <node concept="1TIwiD" id="2l5A0OF7cxn">
     <property role="EcuMT" value="2685719935121672279" />
-    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <property role="3GE5qa" value="cbd_old.nusmv_refinement" />
     <property role="TrG5h" value="ModuleRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2l5A0OF7cxo" role="1TKVEi">
@@ -506,7 +506,7 @@
     <property role="TrG5h" value="Refine" />
     <property role="34LRSv" value="refine" />
     <property role="R4oN_" value="links a component interface to the implementing module" />
-    <property role="3GE5qa" value="cbd.nusmv_refinement" />
+    <property role="3GE5qa" value="cbd_old.nusmv_refinement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2l5A0OFb1Hl" role="1TKVEl">
       <property role="IQ2nx" value="2685719935122676565" />
@@ -544,6 +544,35 @@
     <node concept="PrWs8" id="2_LXzlpomCT" role="PzmwI">
       <ref role="PrY4T" to="gioj:2_LXzlpoj8Y" resolve="IReducedToMainModule" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3Cd5_MRERym">
+    <property role="EcuMT" value="4183024216371329174" />
+    <property role="TrG5h" value="ComponentInterfaceSMV" />
+    <property role="3GE5qa" value="cbd_new" />
+    <ref role="1TJDcQ" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
+    <node concept="PrWs8" id="3Cd5_MRERyn" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="PrWs8" id="3Cd5_MRERyF" role="PzmwI">
+      <ref role="PrY4T" node="3Cd5_MRERyB" resolve="INuSMVRelatedArchitectureElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Cd5_MRERys">
+    <property role="EcuMT" value="4183024216371329180" />
+    <property role="TrG5h" value="ComponentAssemblySMV" />
+    <property role="3GE5qa" value="cbd_new" />
+    <ref role="1TJDcQ" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+    <node concept="PrWs8" id="3Cd5_MRERyt" role="PzmwI">
+      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
+    </node>
+    <node concept="PrWs8" id="3Cd5_MRERyM" role="PzmwI">
+      <ref role="PrY4T" node="3Cd5_MRERyB" resolve="INuSMVRelatedArchitectureElement" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3Cd5_MRERyB">
+    <property role="EcuMT" value="4183024216371329191" />
+    <property role="TrG5h" value="INuSMVRelatedArchitectureElement" />
+    <property role="3GE5qa" value="cbd_new" />
   </node>
 </model>
 

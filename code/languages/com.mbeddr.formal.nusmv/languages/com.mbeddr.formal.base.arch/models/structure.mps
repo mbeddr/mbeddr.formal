@@ -9,7 +9,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
-    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -116,9 +115,6 @@
       <property role="20kJfa" value="outputs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7RhjhI7zUXc" resolve="OutputPort" />
-    </node>
-    <node concept="PrWs8" id="7RhjhI7$9Bv" role="PzmwI">
-      <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
     </node>
     <node concept="PrWs8" id="7RhjhI7$9Bh" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
