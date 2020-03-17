@@ -348,5 +348,37 @@
     <property role="R4oN_" value="not applicable" />
     <ref role="1TJDcQ" node="1JhvKLLO9K9" resolve="ActionDescriptionBase" />
   </node>
+  <node concept="1TIwiD" id="7BYuSCF$mCF">
+    <property role="EcuMT" value="8790599356040440363" />
+    <property role="TrG5h" value="ControllerWord" />
+    <property role="34LRSv" value="@controller" />
+    <property role="R4oN_" value="referencing a controller" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7BYuSCF$mCG" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="7BYuSCF$mDy" role="1TKVEi">
+      <property role="IQ2ns" value="8790599356040440418" />
+      <property role="20kJfa" value="controller" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3HVC1H6Wlax" resolve="Controller" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7BYuSCF_1Vf">
+    <property role="EcuMT" value="8790599356040617679" />
+    <property role="TrG5h" value="ControlActionWord" />
+    <property role="34LRSv" value="@controlAction" />
+    <property role="R4oN_" value="referencing a control action" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7BYuSCF_1Vg" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="7BYuSCF_1Vr" role="1TKVEi">
+      <property role="IQ2ns" value="8790599356040617691" />
+      <property role="20kJfa" value="controlAction" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+    </node>
+  </node>
 </model>
 
