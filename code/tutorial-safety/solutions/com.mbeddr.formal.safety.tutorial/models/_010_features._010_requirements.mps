@@ -50,7 +50,14 @@
       <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
         <child id="3226630706270140651" name="text" index="0nzdz" />
       </concept>
+      <concept id="7094415537350220692" name="com.mbeddr.formal.req.base.structure.ReqRefWord" flags="ng" index="2aGvr3">
+        <reference id="7094415537350220726" name="req" index="2aGvrx" />
+      </concept>
       <concept id="6544290145033221524" name="com.mbeddr.formal.req.base.structure.Interface" flags="ng" index="3z6Cyy" />
+      <concept id="815900398743272760" name="com.mbeddr.formal.req.base.structure.Image" flags="ng" index="3OoTgI">
+        <property id="815900398743502458" name="scale" index="3OpxtG" />
+        <child id="815900398743284144" name="imageFile" index="3OoW2A" />
+      </concept>
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
         <child id="4908298719893728789" name="spec" index="1QQeAV" />
       </concept>
@@ -133,6 +140,12 @@
         <reference id="5900935767007048038" name="mod" index="2rfAiQ" />
       </concept>
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -164,15 +177,22 @@
       <node concept="1QQeFk" id="5FhZjqTMQMN" role="0nOlf" />
       <node concept="19SGf9" id="5FhZjqTMMrG" role="1QQeG9">
         <node concept="19SUe$" id="5FhZjqTMMrH" role="19SJt6">
-          <property role="19SUeA" value="Functional requirement example " />
+          <property role="19SUeA" value="Airbag textual requirement example " />
         </node>
       </node>
       <node concept="1QQeAY" id="5FhZjqTMRVs" role="1QQeAC">
         <node concept="0nzK2" id="5FhZjqTMRVt" role="1QQeAV">
           <node concept="19SGf9" id="5FhZjqTMRVu" role="0nzdz">
             <node concept="19SUe$" id="5FhZjqTMRVv" role="19SJt6">
-              <property role="19SUeA" value="Textual specification of the behavior of the system." />
+              <property role="19SUeA" value="Textual specification of the system can include informal artifacts such as pictures.&#10;" />
             </node>
+            <node concept="3OoTgI" id="VJbr0XaaEe" role="19SJt6">
+              <property role="3OpxtG" value="10" />
+              <node concept="3NXOOs" id="VJbr0XaaEj" role="3OoW2A">
+                <property role="3N1Lgt" value="images/airbag_sketch.png" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="VJbr0XaaEf" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -183,15 +203,19 @@
       <node concept="3z6Cyy" id="5FhZjqTMRWc" role="0nOlf" />
       <node concept="19SGf9" id="5FhZjqTMRVQ" role="1QQeG9">
         <node concept="19SUe$" id="5FhZjqTMRVR" role="19SJt6">
-          <property role="19SUeA" value="Interface requirement example " />
+          <property role="19SUeA" value="Sensor specification " />
         </node>
       </node>
       <node concept="1QQeAY" id="5FhZjqTMRVS" role="1QQeAC">
         <node concept="0nzK2" id="5FhZjqTMRVT" role="1QQeAV">
           <node concept="19SGf9" id="5FhZjqTMRVU" role="0nzdz">
             <node concept="19SUe$" id="5FhZjqTMRVV" role="19SJt6">
-              <property role="19SUeA" value="Textual specification for the interface of the system with its environment." />
+              <property role="19SUeA" value="Textual specification for the sensing modules.&#10;Other requirements can be referenced in text - see " />
             </node>
+            <node concept="2aGvr3" id="VJbr0XaaIj" role="19SJt6">
+              <ref role="2aGvrx" node="5FhZjqTMMrE" />
+            </node>
+            <node concept="19SUe$" id="VJbr0XaaIk" role="19SJt6" />
           </node>
         </node>
       </node>
