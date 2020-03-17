@@ -35,7 +35,7 @@
       <concept id="2004523000582631964" name="com.mbeddr.formal.safety.stamp.structure.TextualContext" flags="ng" index="1E0COg">
         <child id="2004523000582631965" name="text" index="1E0COh" />
       </concept>
-      <concept id="2004523000582631956" name="com.mbeddr.formal.safety.stamp.structure.Pattern" flags="ng" index="1E0COo">
+      <concept id="2004523000582631956" name="com.mbeddr.formal.safety.stamp.structure.PatternActionDescription" flags="ng" index="1E0COo">
         <child id="2004523000582631960" name="consequence" index="1E0COk" />
         <child id="2004523000582631957" name="context" index="1E0COp" />
       </concept>
@@ -63,6 +63,9 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+      </concept>
       <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
@@ -2543,9 +2546,11 @@
     <property role="TrG5h" value="_100_car_smart_charger_hazards" />
     <node concept="8gVzc" id="4q9fsxm3ow6" role="8gIbH">
       <property role="TrG5h" value="battery overheating" />
+      <property role="0lsPA" value="H01" />
     </node>
     <node concept="8gVzc" id="4q9fsxm3Bz8" role="8gIbH">
       <property role="TrG5h" value="electrical hazard" />
+      <property role="0lsPA" value="H02" />
     </node>
   </node>
 </model>
