@@ -3,10 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
-    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
+    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
+    <use id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd" version="1" />
   </languages>
   <imports />
   <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="4183024216371329180" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssemblySMV" flags="ng" index="2dDAV0" />
+      <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
+    </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
@@ -21,6 +26,7 @@
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
       <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
+        <property id="1258148499698521148" name="bmcLen" index="3Ijkdo" />
         <child id="9066112305507508715" name="content" index="3UgYNK" />
       </concept>
       <concept id="9066112305507423392" name="com.mbeddr.formal.base.arch.structure.Instance" flags="ng" index="3Ug1AV">
@@ -42,7 +48,7 @@
   </registry>
   <node concept="2HdtXS" id="4MR8i$4iSqI">
     <property role="TrG5h" value="_010_system" />
-    <node concept="3UnI89" id="4MR8i$4iSqK" role="2HcuB8">
+    <node concept="2dDAVa" id="65VbbGlCq4b" role="2HcuB8">
       <property role="TrG5h" value="Sender" />
       <node concept="3UnI9n" id="4MR8i$4iSqN" role="3UnI90">
         <property role="TrG5h" value="o" />
@@ -50,7 +56,7 @@
       </node>
     </node>
     <node concept="2SQmWS" id="4MR8i$4iSrk" role="2HcuB8" />
-    <node concept="3UnI89" id="4MR8i$4iSr8" role="2HcuB8">
+    <node concept="2dDAVa" id="65VbbGlCq4c" role="2HcuB8">
       <property role="TrG5h" value="Receiver" />
       <node concept="3UnI81" id="4MR8i$4iSrs" role="3UnI9m">
         <property role="TrG5h" value="i" />
@@ -58,18 +64,19 @@
       </node>
     </node>
     <node concept="2SQmWS" id="4MR8i$4iSrR" role="2HcuB8" />
-    <node concept="3Ug1$x" id="4MR8i$4iSsa" role="2HcuB8">
+    <node concept="2dDAV0" id="65VbbGlCq4d" role="2HcuB8">
+      <property role="3Ijkdo" value="0" />
       <property role="TrG5h" value="CA" />
       <node concept="3Ug1AV" id="4MR8i$4iSsm" role="3UgYNK">
         <property role="TrG5h" value="s" />
         <node concept="3Ug1AZ" id="4MR8i$4iSsl" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4MR8i$4iSqK" resolve="Sender" />
+          <ref role="3Ug1AY" node="65VbbGlCq4b" resolve="Sender" />
         </node>
       </node>
       <node concept="3Ug1AV" id="4MR8i$4iUWN" role="3UgYNK">
         <property role="TrG5h" value="r" />
         <node concept="3Ug1AZ" id="4MR8i$4iUWL" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4MR8i$4iSr8" resolve="Receiver" />
+          <ref role="3Ug1AY" node="65VbbGlCq4c" resolve="Receiver" />
         </node>
       </node>
     </node>

@@ -5,7 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
-    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="0" />
+    <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
     <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="5" />
     <use id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd" version="1" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
@@ -132,8 +132,8 @@
               <property role="19SUeA" value="The implementation of &#10;" />
             </node>
             <node concept="oK52h" id="4MR8i$4iSuw" role="19SJt6">
-              <node concept="18ZemM" id="3mI4G9o5P_9" role="oK52i">
-                <ref role="18ZemP" to="br2r:4MR8i$4iSqK" resolve="Sender" />
+              <node concept="18ZemM" id="65VbbGlC$eH" role="oK52i">
+                <ref role="18ZemP" to="br2r:65VbbGlCq4c" resolve="Receiver" />
               </node>
             </node>
             <node concept="19SUe$" id="4MR8i$4iSux" role="19SJt6">
@@ -160,8 +160,8 @@
               <property role="19SUeA" value="Argumentation based &#10; on contract-based design &#10; applied to " />
             </node>
             <node concept="oK52h" id="4MR8i$4iSum" role="19SJt6">
-              <node concept="18ZemM" id="3mI4G9o5P_a" role="oK52i">
-                <ref role="18ZemP" to="br2r:4MR8i$4iSsa" resolve="CA" />
+              <node concept="18ZemM" id="65VbbGlC$fr" role="oK52i">
+                <ref role="18ZemP" to="br2r:65VbbGlCq4d" resolve="CA" />
               </node>
             </node>
             <node concept="19SUe$" id="4MR8i$4iSuR" role="19SJt6" />
