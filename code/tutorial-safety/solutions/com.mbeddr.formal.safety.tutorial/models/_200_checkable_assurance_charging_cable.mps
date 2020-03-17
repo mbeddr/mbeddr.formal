@@ -53,6 +53,9 @@
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
+      <concept id="8790599356040440363" name="com.mbeddr.formal.safety.stamp.structure.ControllerWord" flags="ng" index="1irL6x">
+        <reference id="8790599356040440418" name="controller" index="1irL7C" />
+      </concept>
       <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
         <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
         <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
@@ -6719,7 +6722,7 @@
             </node>
           </node>
           <node concept="2VclrF" id="7BYuSCF$fC1" role="2Vcluh">
-            <property role="2Vclpx" value="265.0" />
+            <property role="2Vclpx" value="304.0" />
             <property role="2Vclpz" value="171.0" />
           </node>
         </node>
@@ -7209,6 +7212,12 @@
       <node concept="Sqzvu" id="7BYuSCF$fkX" role="Sq$B$">
         <property role="TrG5h" value="L" />
       </node>
+      <node concept="Sqzvu" id="7BYuSCF_43U" role="Sq$B$">
+        <property role="TrG5h" value="N" />
+      </node>
+      <node concept="Sqzvu" id="7BYuSCF_43Y" role="Sq$B$">
+        <property role="TrG5h" value="PE" />
+      </node>
     </node>
     <node concept="Sq$B_" id="7BYuSCF$fqO" role="1X_0G_">
       <ref role="SrP08" node="6yFQEkQU9sG" resolve="Socket" />
@@ -7361,12 +7370,17 @@
       <ref role="1E0nOH" node="6yFQEkQU9rl" resolve="CableSensors" />
       <node concept="1E0nOJ" id="6yFQEkQUeRI" role="1E0nOC">
         <ref role="1E0n_N" node="7BYuSCF$gO1" resolve="Voltage" />
-        <node concept="3XErhT" id="6yFQEkQUeRT" role="1E0ucd" />
         <node concept="3XErhT" id="6yFQEkQUeRW" role="1E0tXe" />
         <node concept="1E0uc6" id="6yFQEkQUeRZ" role="1E0tWM">
           <node concept="19SGf9" id="6yFQEkQUeS2" role="1E0uc7">
             <node concept="19SUe$" id="6yFQEkQUeS3" role="19SJt6">
-              <property role="19SUeA" value="The CableSensors provide a voltage outside the expected range while the ControlBox is powered on " />
+              <property role="19SUeA" value="The " />
+            </node>
+            <node concept="1irL6x" id="7BYuSCF_1V8" role="19SJt6">
+              <ref role="1irL7C" node="6yFQEkQU9rl" resolve="CableSensors" />
+            </node>
+            <node concept="19SUe$" id="7BYuSCF_1V9" role="19SJt6">
+              <property role="19SUeA" value=" provide a voltage outside the expected range while the ControlBox is powered on " />
             </node>
             <node concept="oY6sn" id="6yFQEkQUf62" role="19SJt6">
               <ref role="oTUVg" node="2VIqKfEJeEs" resolve="Electrical hazard" />
@@ -7374,6 +7388,7 @@
             <node concept="19SUe$" id="6yFQEkQUf63" role="19SJt6" />
           </node>
         </node>
+        <node concept="3XErhT" id="7BYuSCF_mbJ" role="1E0ucd" />
       </node>
     </node>
     <node concept="1E0nOG" id="6yFQEkQUeS8" role="1E0n_e">
