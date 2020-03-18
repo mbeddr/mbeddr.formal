@@ -437,6 +437,19 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1QoXEbdByu7" role="13h7CS">
+      <property role="TrG5h" value="isSourceOfSpecialConnections" />
+      <ref role="13i0hy" to="89jy:7TjUbLQ7E1K" resolve="isSourceOfSpecialConnections" />
+      <node concept="3Tm1VV" id="1QoXEbdByu8" role="1B3o_S" />
+      <node concept="3clFbS" id="1QoXEbdByu9" role="3clF47">
+        <node concept="3clFbF" id="1QoXEbdByua" role="3cqZAp">
+          <node concept="3clFbT" id="1QoXEbdByub" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1QoXEbdByuc" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="1$M4_qbWkGT" role="13h7CW">
       <node concept="3clFbS" id="1$M4_qbWkGU" role="2VODD2">
         <node concept="3clFbF" id="2rzNEUxNBuz" role="3cqZAp">

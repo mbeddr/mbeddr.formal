@@ -215,5 +215,11 @@
       <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1QoXEbdBzW1">
+    <property role="EcuMT" value="2132725602654764801" />
+    <property role="3GE5qa" value="requirements" />
+    <property role="TrG5h" value="SupportedByRequirementSatisfiedGoal" />
+    <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+  </node>
 </model>
 
