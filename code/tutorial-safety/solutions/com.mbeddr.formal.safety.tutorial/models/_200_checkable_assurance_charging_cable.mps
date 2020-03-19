@@ -285,6 +285,7 @@
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
         <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <child id="738815095926774816" name="portLayouts" index="1pap1a" />
       </concept>
       <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
         <child id="2319506556913311101" name="anchors" index="2Vcluh" />
@@ -300,6 +301,10 @@
       <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
         <property id="8963411245960998400" name="key" index="37mO49" />
         <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+      <concept id="738815095926749345" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Port" flags="ng" index="1pa3jb">
+        <property id="7964702570467115501" name="ordinal" index="2gRgW$" />
+        <property id="738815095926749379" name="portName" index="1pa3iD" />
       </concept>
       <concept id="4767615435799372731" name="de.itemis.mps.editor.diagram.layout.structure.Layout_EdgeLabel" flags="ng" index="3ul5H1">
         <property id="4767615435799372759" name="type" index="3ul5GH" />
@@ -378,7 +383,26 @@
     <property role="TrG5h" value="_010_ladekabel_functional_requirements" />
     <node concept="0lhDl" id="66sW2d$FcNx" role="1QQeBF">
       <property role="0lsPA" value="FR01" />
-      <property role="0ke_I" value="Carmen" />
+      <property role="0ke_I" value="IEC 61581" />
+      <node concept="0lhDl" id="4cUeGolY8xJ" role="1VMWzp">
+        <property role="0lsPA" value="FR01.1" />
+        <property role="0ke_I" value="IEC 61581" />
+        <node concept="1QQeAY" id="4cUeGolY8xT" role="1QQeAC">
+          <node concept="0nzK2" id="4cUeGolY8xV" role="1QQeAV">
+            <node concept="19SGf9" id="4cUeGolY8xX" role="0nzdz">
+              <node concept="19SUe$" id="4cUeGolY8xY" role="19SJt6">
+                <property role="19SUeA" value="Transmit power from interface mains to interface EV  " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1QQeFk" id="4cUeGolY8xK" role="0nOlf" />
+        <node concept="19SGf9" id="4cUeGolY8xL" role="1QQeG9">
+          <node concept="19SUe$" id="4cUeGolY8xM" role="19SJt6">
+            <property role="19SUeA" value="Conductive Charging Function (In-cable Control Box)" />
+          </node>
+        </node>
+      </node>
       <node concept="1QQeAY" id="66sW2d$FcO7" role="1QQeAC">
         <node concept="0nzK2" id="66sW2d$FcO9" role="1QQeAV">
           <node concept="19SGf9" id="66sW2d$FcOb" role="0nzdz">
@@ -399,6 +423,25 @@
     <node concept="0lhDl" id="2VIqKfEJeB_" role="1QQeBF">
       <property role="0lsPA" value="FR02" />
       <property role="0ke_I" value="IEC 61581" />
+      <node concept="0lhDl" id="4cUeGolY8y5" role="1VMWzp">
+        <property role="0lsPA" value="FR02.1" />
+        <property role="0ke_I" value="IEC 61581" />
+        <node concept="1QQeAY" id="4cUeGolY8yf" role="1QQeAC">
+          <node concept="0nzK2" id="4cUeGolY8yh" role="1QQeAV">
+            <node concept="19SGf9" id="4cUeGolY8yj" role="0nzdz">
+              <node concept="19SUe$" id="4cUeGolY8yk" role="19SJt6">
+                <property role="19SUeA" value="Utilizing the power and protective earth conductors from interface mains to interface EV together with a control pilot function [...] in-cable control box" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1QQeFk" id="4cUeGolY8y6" role="0nOlf" />
+        <node concept="19SGf9" id="4cUeGolY8y7" role="1QQeG9">
+          <node concept="19SUe$" id="4cUeGolY8y8" role="19SJt6">
+            <property role="19SUeA" value="Mode 2 Charging (In-cable Control Box)" />
+          </node>
+        </node>
+      </node>
       <node concept="1QQeFk" id="2VIqKfEJeBA" role="0nOlf" />
       <node concept="19SGf9" id="2VIqKfEJeBB" role="1QQeG9">
         <node concept="19SUe$" id="2VIqKfEJeBC" role="19SJt6">
@@ -409,7 +452,7 @@
         <node concept="0nzK2" id="2VIqKfEJeCj" role="1QQeAV">
           <node concept="19SGf9" id="2VIqKfEJeCk" role="0nzdz">
             <node concept="19SUe$" id="2VIqKfEJeCl" role="19SJt6">
-              <property role="19SUeA" value="The connection of the EV to the a.c. supply network utilizing standardized socket-outlets, single-phase [...], and utilizing the power and protective earth conductors together with a control pilot function [...] in-cable control box." />
+              <property role="19SUeA" value="The connection of the EV to the a.c. supply network utilizing standardized socket-outlets, single-phase [...], and utilizing the power and protective earth conductors from  together with a control pilot function [...] in-cable control box." />
             </node>
           </node>
         </node>
@@ -544,32 +587,6 @@
             <ref role="DABNb" node="7n39yospbcX" resolve="Cable temperature too high" />
           </node>
           <node concept="DABN8" id="66sW2d$Fg2v" role="DABNk">
-            <ref role="DABNb" node="7n39yospbdj" resolve="Smoke comes out of the cable" />
-          </node>
-        </node>
-      </node>
-      <node concept="0lhDl" id="7n39yospbeD" role="1VMWzp">
-        <property role="0lsPA" value="FSR03.02" />
-        <property role="0ke_I" value="Hannes" />
-        <node concept="1QQeAY" id="6W1kQP6__n6" role="1QQeAC">
-          <node concept="0nzK2" id="6W1kQP6__n8" role="1QQeAV">
-            <node concept="19SGf9" id="6W1kQP6__na" role="0nzdz">
-              <node concept="19SUe$" id="6W1kQP6__nb" role="19SJt6">
-                <property role="19SUeA" value="The temperature at cable ends shall not exceed 60 degrees Celsius." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="19SGf9" id="7n39yospbeF" role="1QQeG9">
-          <node concept="19SUe$" id="7n39yospbeG" role="19SJt6">
-            <property role="19SUeA" value="Cable ends temperature" />
-          </node>
-        </node>
-        <node concept="2iDXIW" id="7n39yospbf1" role="0nOlf">
-          <node concept="DABN8" id="6W1kQP6Bq6p" role="DABNk">
-            <ref role="DABNb" node="7n39yospbcX" resolve="Cable temperature too high" />
-          </node>
-          <node concept="DABN8" id="66sW2d$Fg2A" role="DABNk">
             <ref role="DABNb" node="7n39yospbdj" resolve="Smoke comes out of the cable" />
           </node>
         </node>
@@ -1660,6 +1677,486 @@
           </node>
         </node>
       </node>
+      <node concept="37mRI7" id="3JuqBheLOKf" role="lGtFl">
+        <node concept="37mRIm" id="3JuqBheLOKg" role="37mRID">
+          <property role="37mO49" value="box_7954281820701721524" />
+          <node concept="gqqVs" id="3JuqBheLOKe" role="37mO4d">
+            <property role="gqqTZ" value="498.0" />
+            <property role="gqqTW" value="20.120546805694374" />
+            <property role="gqqTX" value="83.0" />
+            <property role="gqqTy" value="232.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKh" role="1pap1a">
+              <property role="1pa3iD" value="l" />
+              <property role="2gRgW$" value="315529395" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKi" role="1pap1a">
+              <property role="1pa3iD" value="n" />
+              <property role="2gRgW$" value="466230002" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKj" role="1pap1a">
+              <property role="1pa3iD" value="pe" />
+              <property role="2gRgW$" value="616930608" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKk" role="1pap1a">
+              <property role="1pa3iD" value="ev_connected" />
+              <property role="2gRgW$" value="767631215" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKl" role="1pap1a">
+              <property role="1pa3iD" value="socket_connected" />
+              <property role="2gRgW$" value="918331822" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKm" role="1pap1a">
+              <property role="1pa3iD" value="shutdown_button_pressed" />
+              <property role="2gRgW$" value="1069032429" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKn" role="1pap1a">
+              <property role="1pa3iD" value="reset" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKo" role="1pap1a">
+              <property role="1pa3iD" value="voltage" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKp" role="1pap1a">
+              <property role="1pa3iD" value="intensity" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKq" role="1pap1a">
+              <property role="1pa3iD" value="ev_end_temperature" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKr" role="1pap1a">
+              <property role="1pa3iD" value="socket_end_temperature" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKs" role="1pap1a">
+              <property role="1pa3iD" value="controlBox_temperature" />
+              <property role="2gRgW$" value="164828788" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKt" role="1pap1a">
+              <property role="1pa3iD" value="open_circuit" />
+              <property role="2gRgW$" value="1479691582" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKu" role="1pap1a">
+              <property role="1pa3iD" value="pingWatchDog" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKv" role="1pap1a">
+              <property role="1pa3iD" value="disconnect_led" />
+              <property role="2gRgW$" value="1871513159" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOKw" role="1pap1a">
+              <property role="1pa3iD" value="powered_led" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKy" role="37mRID">
+          <property role="37mO49" value="box_7954281820701721533" />
+          <node concept="gqqVs" id="3JuqBheLOKx" role="37mO4d">
+            <property role="gqqTZ" value="165.0" />
+            <property role="gqqTW" value="369.0" />
+            <property role="gqqTX" value="69.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKz" role="1pap1a">
+              <property role="1pa3iD" value="ping" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOK$" role="1pap1a">
+              <property role="1pa3iD" value="reset" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKA" role="37mRID">
+          <property role="37mO49" value="box_7998766141987508580" />
+          <node concept="gqqVs" id="3JuqBheLOK_" role="37mO4d">
+            <property role="gqqTZ" value="665.0" />
+            <property role="gqqTW" value="58.57054680569438" />
+            <property role="gqqTX" value="113.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKB" role="1pap1a">
+              <property role="1pa3iD" value="open_cmd" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKD" role="37mRID">
+          <property role="37mO49" value="box_7998766141987512134" />
+          <node concept="gqqVs" id="3JuqBheLOKC" role="37mO4d">
+            <property role="gqqTZ" value="151.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="83.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKE" role="1pap1a">
+              <property role="1pa3iD" value="temperature" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKG" role="37mRID">
+          <property role="37mO49" value="box_6127969380102905107" />
+          <node concept="gqqVs" id="3JuqBheLOKF" role="37mO4d">
+            <property role="gqqTZ" value="214.0" />
+            <property role="gqqTW" value="63.0" />
+            <property role="gqqTX" value="20.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKH" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2004318069" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKJ" role="37mRID">
+          <property role="37mO49" value="box_6127969380102905136" />
+          <node concept="gqqVs" id="3JuqBheLOKI" role="37mO4d">
+            <property role="gqqTZ" value="214.0" />
+            <property role="gqqTW" value="114.0" />
+            <property role="gqqTX" value="20.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKK" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2004318069" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKM" role="37mRID">
+          <property role="37mO49" value="box_6127969380102905282" />
+          <node concept="gqqVs" id="3JuqBheLOKL" role="37mO4d">
+            <property role="gqqTZ" value="206.0" />
+            <property role="gqqTW" value="165.0" />
+            <property role="gqqTX" value="28.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKN" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKP" role="37mRID">
+          <property role="37mO49" value="box_6127969380102905495" />
+          <node concept="gqqVs" id="3JuqBheLOKO" role="37mO4d">
+            <property role="gqqTZ" value="133.0" />
+            <property role="gqqTW" value="216.0" />
+            <property role="gqqTX" value="101.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKQ" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKS" role="37mRID">
+          <property role="37mO49" value="box_6127969380102905661" />
+          <node concept="gqqVs" id="3JuqBheLOKR" role="37mO4d">
+            <property role="gqqTZ" value="104.0" />
+            <property role="gqqTW" value="267.0" />
+            <property role="gqqTX" value="130.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKT" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKV" role="37mRID">
+          <property role="37mO49" value="box_1409373665841618372" />
+          <node concept="gqqVs" id="3JuqBheLOKU" role="37mO4d">
+            <property role="gqqTZ" value="170.0" />
+            <property role="gqqTW" value="420.0" />
+            <property role="gqqTX" value="64.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKW" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOKY" role="37mRID">
+          <property role="37mO49" value="box_1409373665841618389" />
+          <node concept="gqqVs" id="3JuqBheLOKX" role="37mO4d">
+            <property role="gqqTZ" value="155.0" />
+            <property role="gqqTW" value="471.0" />
+            <property role="gqqTX" value="79.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOKZ" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOL1" role="37mRID">
+          <property role="37mO49" value="box_7301771727459594498" />
+          <node concept="gqqVs" id="3JuqBheLOL0" role="37mO4d">
+            <property role="gqqTZ" value="52.0" />
+            <property role="gqqTW" value="318.0" />
+            <property role="gqqTX" value="182.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOL2" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOL4" role="37mRID">
+          <property role="37mO49" value="box_7998766141987510139" />
+          <node concept="gqqVs" id="3JuqBheLOL3" role="37mO4d">
+            <property role="gqqTZ" value="89.0" />
+            <property role="gqqTW" value="522.0" />
+            <property role="gqqTX" value="145.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOL5" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOL7" role="37mRID">
+          <property role="37mO49" value="box_7998766141987510665" />
+          <node concept="gqqVs" id="3JuqBheLOL6" role="37mO4d">
+            <property role="gqqTZ" value="60.0" />
+            <property role="gqqTW" value="572.9999999999999" />
+            <property role="gqqTX" value="174.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOL8" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLa" role="37mRID">
+          <property role="37mO49" value="box_7301771727459594162" />
+          <node concept="gqqVs" id="3JuqBheLOL9" role="37mO4d">
+            <property role="gqqTZ" value="665.0" />
+            <property role="gqqTW" value="109.57054680569438" />
+            <property role="gqqTX" value="116.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOLb" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLd" role="37mRID">
+          <property role="37mO49" value="box_2013073508797003881" />
+          <node concept="gqqVs" id="3JuqBheLOLc" role="37mO4d">
+            <property role="gqqTZ" value="665.0" />
+            <property role="gqqTW" value="160.5705468056944" />
+            <property role="gqqTX" value="94.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOLe" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLg" role="37mRID">
+          <property role="37mO49" value="edge_7954281820701721779" />
+          <node concept="2VclpC" id="3JuqBheLOLf" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLh" role="2Vcluh">
+              <property role="2Vclpx" value="613.0" />
+              <property role="2Vclpz" value="143.67054680569436" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLi" role="2Vcluh">
+              <property role="2Vclpx" value="613.0" />
+              <property role="2Vclpz" value="623.9999999999999" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLj" role="2Vcluh">
+              <property role="2Vclpx" value="12.0" />
+              <property role="2Vclpz" value="623.9999999999999" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLk" role="2Vcluh">
+              <property role="2Vclpx" value="12.0" />
+              <property role="2Vclpz" value="384.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLm" role="37mRID">
+          <property role="37mO49" value="edge_7954281820701721897" />
+          <node concept="2VclpC" id="3JuqBheLOLl" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLn" role="2Vcluh">
+              <property role="2Vclpx" value="386.0" />
+              <property role="2Vclpz" value="384.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLo" role="2Vcluh">
+              <property role="2Vclpx" value="386.0" />
+              <property role="2Vclpz" value="160.1006696861144" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLq" role="37mRID">
+          <property role="37mO49" value="edge_3536307729773729691" />
+          <node concept="2VclpC" id="3JuqBheLOLp" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLr" role="2Vcluh">
+              <property role="2Vclpx" value="266.0" />
+              <property role="2Vclpz" value="78.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLs" role="2Vcluh">
+              <property role="2Vclpx" value="266.0" />
+              <property role="2Vclpz" value="46.01683013040819" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLu" role="37mRID">
+          <property role="37mO49" value="edge_3536307729773730514" />
+          <node concept="2VclpC" id="3JuqBheLOLt" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLv" role="2Vcluh">
+              <property role="2Vclpx" value="286.0" />
+              <property role="2Vclpz" value="129.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLw" role="2Vcluh">
+              <property role="2Vclpx" value="286.0" />
+              <property role="2Vclpz" value="65.03364579578417" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLy" role="37mRID">
+          <property role="37mO49" value="edge_3536307729773730548" />
+          <node concept="2VclpC" id="3JuqBheLOLx" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLz" role="2Vcluh">
+              <property role="2Vclpx" value="306.0" />
+              <property role="2Vclpz" value="180.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOL$" role="2Vcluh">
+              <property role="2Vclpx" value="306.0" />
+              <property role="2Vclpz" value="84.05027277576968" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLA" role="37mRID">
+          <property role="37mO49" value="edge_3536307729773730586" />
+          <node concept="2VclpC" id="3JuqBheLOL_" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLB" role="2Vcluh">
+              <property role="2Vclpx" value="326.0" />
+              <property role="2Vclpz" value="231.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLC" role="2Vcluh">
+              <property role="2Vclpx" value="326.0" />
+              <property role="2Vclpz" value="103.06602621099529" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLE" role="37mRID">
+          <property role="37mO49" value="edge_3536307729773731891" />
+          <node concept="2VclpC" id="3JuqBheLOLD" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLF" role="2Vcluh">
+              <property role="2Vclpx" value="346.0" />
+              <property role="2Vclpz" value="282.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLG" role="2Vcluh">
+              <property role="2Vclpx" value="346.0" />
+              <property role="2Vclpz" value="122.08004460947355" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLI" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987508893" />
+          <node concept="2VclpC" id="3JuqBheLOLH" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLJ" role="2Vcluh">
+              <property role="2Vclpx" value="613.0" />
+              <property role="2Vclpz" value="105.56380852444437" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLK" role="2Vcluh">
+              <property role="2Vclpx" value="613.0" />
+              <property role="2Vclpz" value="73.57054680569438" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLM" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987514076" />
+          <node concept="2VclpC" id="3JuqBheLOLL" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLN" role="2Vcluh">
+              <property role="2Vclpx" value="446.0" />
+              <property role="2Vclpz" value="537.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLO" role="2Vcluh">
+              <property role="2Vclpx" value="446.0" />
+              <property role="2Vclpz" value="217.11642263933658" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLQ" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987514193" />
+          <node concept="2VclpC" id="3JuqBheLOLP" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLR" role="2Vcluh">
+              <property role="2Vclpx" value="466.0" />
+              <property role="2Vclpz" value="587.9999999999999" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLS" role="2Vcluh">
+              <property role="2Vclpx" value="466.0" />
+              <property role="2Vclpz" value="236.1205468056944" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLU" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987514583" />
+          <node concept="2VclpC" id="3JuqBheLOLT" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLV" role="2Vcluh">
+              <property role="2Vclpx" value="366.0" />
+              <property role="2Vclpz" value="333.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOLW" role="2Vcluh">
+              <property role="2Vclpx" value="366.0" />
+              <property role="2Vclpz" value="141.0916656839784" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOLY" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987514716" />
+          <node concept="2VclpC" id="3JuqBheLOLX" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOLZ" role="2Vcluh">
+              <property role="2Vclpx" value="633.0" />
+              <property role="2Vclpz" value="162.67728508694438" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOM0" role="2Vcluh">
+              <property role="2Vclpx" value="633.0" />
+              <property role="2Vclpz" value="175.5705468056944" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOM2" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987515212" />
+          <node concept="2VclpC" id="3JuqBheLOM1" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOM3" role="2Vcluh">
+              <property role="2Vclpx" value="406.0" />
+              <property role="2Vclpz" value="435.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOM4" role="2Vcluh">
+              <property role="2Vclpx" value="406.0" />
+              <property role="2Vclpz" value="179.10732919308379" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOM6" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987515369" />
+          <node concept="2VclpC" id="3JuqBheLOM5" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOM7" role="2Vcluh">
+              <property role="2Vclpx" value="426.0" />
+              <property role="2Vclpz" value="486.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOM8" role="2Vcluh">
+              <property role="2Vclpx" value="426.0" />
+              <property role="2Vclpz" value="198.1122984729788" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2SQmWS" id="6TziiKuhw6P" role="2HcuB8" />
     <node concept="2dDAV0" id="65VbbGlC$MJ" role="2HcuB8">
@@ -1832,6 +2329,263 @@
           <ref role="3Ug1Ha" node="6ll6Fcue342" resolve="shutdown_button_pressed" />
           <node concept="3Ug1GJ" id="66sW2d$FicW" role="3Ug1Hl">
             <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRI7" id="3JuqBheLOFz" role="lGtFl">
+        <node concept="37mRIm" id="3JuqBheLOF$" role="37mRID">
+          <property role="37mO49" value="box_6127969380102905820" />
+          <node concept="gqqVs" id="3JuqBheLOFy" role="37mO4d">
+            <property role="gqqTZ" value="269.0" />
+            <property role="gqqTW" value="44.03871103224465" />
+            <property role="gqqTX" value="83.0" />
+            <property role="gqqTy" value="194.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOF_" role="1pap1a">
+              <property role="1pa3iD" value="l" />
+              <property role="2gRgW$" value="559476002" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFA" role="1pap1a">
+              <property role="1pa3iD" value="n" />
+              <property role="2gRgW$" value="740316730" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFB" role="1pap1a">
+              <property role="1pa3iD" value="pe" />
+              <property role="2gRgW$" value="921157458" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFC" role="1pap1a">
+              <property role="1pa3iD" value="ev_connected" />
+              <property role="2gRgW$" value="197794546" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFD" role="1pap1a">
+              <property role="1pa3iD" value="socket_connected" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFE" role="1pap1a">
+              <property role="1pa3iD" value="voltage" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFF" role="1pap1a">
+              <property role="1pa3iD" value="intensity" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFG" role="1pap1a">
+              <property role="1pa3iD" value="shutdown_button_pressed" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFH" role="1pap1a">
+              <property role="1pa3iD" value="ev_end_temperature" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFI" role="1pap1a">
+              <property role="1pa3iD" value="socket_end_temperature" />
+              <property role="2gRgW$" value="378635274" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFJ" role="1pap1a">
+              <property role="1pa3iD" value="disconnect_led" />
+              <property role="2gRgW$" value="1753778310" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFK" role="1pap1a">
+              <property role="1pa3iD" value="powered_led" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOFM" role="37mRID">
+          <property role="37mO49" value="box_6127969380102905897" />
+          <node concept="gqqVs" id="3JuqBheLOFL" role="37mO4d">
+            <property role="gqqTZ" value="49.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="76.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOFN" role="1pap1a">
+              <property role="1pa3iD" value="ev_connected" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOFP" role="37mRID">
+          <property role="37mO49" value="box_467505803006549710" />
+          <node concept="gqqVs" id="3JuqBheLOFO" role="37mO4d">
+            <property role="gqqTZ" value="27.0" />
+            <property role="gqqTW" value="63.0" />
+            <property role="gqqTX" value="98.0" />
+            <property role="gqqTy" value="137.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOFQ" role="1pap1a">
+              <property role="1pa3iD" value="n" />
+              <property role="2gRgW$" value="1872993255" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFR" role="1pap1a">
+              <property role="1pa3iD" value="pe" />
+              <property role="2gRgW$" value="2131337152" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFS" role="1pap1a">
+              <property role="1pa3iD" value="l" />
+              <property role="2gRgW$" value="1614649357" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFT" role="1pap1a">
+              <property role="1pa3iD" value="voltage" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFU" role="1pap1a">
+              <property role="1pa3iD" value="intensity" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFV" role="1pap1a">
+              <property role="1pa3iD" value="ev_end_temperature" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="3JuqBheLOFW" role="1pap1a">
+              <property role="1pa3iD" value="socket_end_temperature" />
+              <property role="2gRgW$" value="1356305460" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOFY" role="37mRID">
+          <property role="37mO49" value="box_467505803006526222" />
+          <node concept="gqqVs" id="3JuqBheLOFX" role="37mO4d">
+            <property role="gqqTZ" value="20.0" />
+            <property role="gqqTW" value="220.0" />
+            <property role="gqqTX" value="105.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOFZ" role="1pap1a">
+              <property role="1pa3iD" value="socket_connected" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOG1" role="37mRID">
+          <property role="37mO49" value="box_7033760752849461841" />
+          <node concept="gqqVs" id="3JuqBheLOG0" role="37mO4d">
+            <property role="gqqTZ" value="12.0" />
+            <property role="gqqTW" value="271.0" />
+            <property role="gqqTX" value="113.0" />
+            <property role="gqqTy" value="31.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="3JuqBheLOG2" role="1pap1a">
+              <property role="1pa3iD" value="pressed" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOG4" role="37mRID">
+          <property role="37mO49" value="edge_6127969380102906219" />
+          <node concept="2VclpC" id="3JuqBheLOG3" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOG5" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="88.92892594041021" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOG6" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="88.92584257524533" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOG8" role="37mRID">
+          <property role="37mO49" value="edge_6127969380102906259" />
+          <node concept="2VclpC" id="3JuqBheLOG7" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOG9" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="27.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGa" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="50.89220807069952" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOGc" role="37mRID">
+          <property role="37mO49" value="edge_6127969380102906309" />
+          <node concept="2VclpC" id="3JuqBheLOGb" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOGd" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="107.94716031479932" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGe" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="107.94249542988483" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOGg" role="37mRID">
+          <property role="37mO49" value="edge_6127969380102906369" />
+          <node concept="2VclpC" id="3JuqBheLOGf" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOGh" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="126.96268982696762" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGi" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="126.95904190547739" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOGk" role="37mRID">
+          <property role="37mO49" value="edge_467505803006526316" />
+          <node concept="2VclpC" id="3JuqBheLOGj" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOGl" role="2Vcluh">
+              <property role="2Vclpx" value="217.0" />
+              <property role="2Vclpz" value="235.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGm" role="2Vcluh">
+              <property role="2Vclpx" value="217.0" />
+              <property role="2Vclpz" value="145.97535948822735" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOGo" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987515841" />
+          <node concept="2VclpC" id="3JuqBheLOGn" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOGp" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="184.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGq" role="2Vcluh">
+              <property role="2Vclpx" value="157.0" />
+              <property role="2Vclpz" value="222.03871103224463" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOGs" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987516019" />
+          <node concept="2VclpC" id="3JuqBheLOGr" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOGt" role="2Vcluh">
+              <property role="2Vclpx" value="177.0" />
+              <property role="2Vclpz" value="164.9879498741339" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGu" role="2Vcluh">
+              <property role="2Vclpx" value="177.0" />
+              <property role="2Vclpz" value="184.00724649700345" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOGw" role="37mRID">
+          <property role="37mO49" value="edge_7998766141987516123" />
+          <node concept="2VclpC" id="3JuqBheLOGv" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOGx" role="2Vcluh">
+              <property role="2Vclpx" value="197.0" />
+              <property role="2Vclpz" value="145.9758997482678" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGy" role="2Vcluh">
+              <property role="2Vclpx" value="197.0" />
+              <property role="2Vclpz" value="164.99140861099914" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="3JuqBheLOG$" role="37mRID">
+          <property role="37mO49" value="edge_7033760752849462014" />
+          <node concept="2VclpC" id="3JuqBheLOGz" role="37mO4d">
+            <node concept="2VclrF" id="3JuqBheLOG_" role="2Vcluh">
+              <property role="2Vclpx" value="237.0" />
+              <property role="2Vclpz" value="286.0" />
+            </node>
+            <node concept="2VclrF" id="3JuqBheLOGA" role="2Vcluh">
+              <property role="2Vclpx" value="237.0" />
+              <property role="2Vclpz" value="203.02297876462404" />
+            </node>
           </node>
         </node>
       </node>
@@ -4710,11 +5464,111 @@
       </node>
     </node>
     <node concept="0lH3_" id="4bSVeFVFB9G" role="1QQeBF" />
+    <node concept="0lhDl" id="4cUeGolY8Bl" role="1QQeBF">
+      <property role="0lsPA" value="IR01" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOpq" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOps" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOpu" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOpv" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall receive current from mains" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4cUeGolY8Bn" role="1QQeG9">
+        <node concept="19SUe$" id="4cUeGolY8Bo" role="19SJt6">
+          <property role="19SUeA" value="Interface to mains" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="4cUeGolY8Ln" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="4cUeGolY8DP" role="1QQeBF" />
+    <node concept="0lhDl" id="4cUeGolY8IK" role="1QQeBF">
+      <property role="0lsPA" value="IR02" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOpC" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOpE" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOpG" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOpH" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall send current from mains" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4cUeGolY8IM" role="1QQeG9">
+        <node concept="19SUe$" id="4cUeGolY8IN" role="19SJt6">
+          <property role="19SUeA" value="Interface to EV" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="4cUeGolY8Ls" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="4cUeGolY8Lv" role="1QQeBF" />
+    <node concept="0lhDl" id="3JuqBheLNV1" role="1QQeBF">
+      <property role="0lsPA" value="IR07" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOte" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOtg" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOti" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOtj" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box receive information about the temperature at the ends of the cable, the voltage and the current intensity " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="3JuqBheLNV2" role="0nOlf" />
+      <node concept="19SGf9" id="3JuqBheLNV3" role="1QQeG9">
+        <node concept="19SUe$" id="3JuqBheLNV4" role="19SJt6">
+          <property role="19SUeA" value="Cable Sensors" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="3JuqBheLNXJ" role="1QQeBF" />
+    <node concept="0lhDl" id="3JuqBheLO36" role="1QQeBF">
+      <property role="0lsPA" value="IR05" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOpP" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOpR" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOpT" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOpU" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall dislay its status on LEDs" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="3JuqBheLO37" role="0nOlf" />
+      <node concept="19SGf9" id="3JuqBheLO38" role="1QQeG9">
+        <node concept="19SUe$" id="3JuqBheLO39" role="19SJt6">
+          <property role="19SUeA" value="LEDs" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="3JuqBheLO5T" role="1QQeBF" />
+    <node concept="0lhDl" id="3JuqBheLObq" role="1QQeBF">
+      <property role="0lsPA" value="IR06" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOq2" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOq4" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOq6" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOq7" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall disconnect from mains via a relay" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="3JuqBheLObr" role="0nOlf" />
+      <node concept="19SGf9" id="3JuqBheLObs" role="1QQeG9">
+        <node concept="19SUe$" id="3JuqBheLObt" role="19SJt6">
+          <property role="19SUeA" value="Relay" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="4cUeGolY8$W" role="1QQeBF" />
     <node concept="0lhDl" id="4bSVeFVFB7d" role="1QQeBF">
       <property role="0ke_I" value="Hannes" />
-      <property role="0lsPA" value="IR01" />
+      <property role="0lsPA" value="IR07" />
       <node concept="0lhDl" id="4bSVeFVFB7Z" role="1VMWzp">
-        <property role="0lsPA" value="IR01.1" />
+        <property role="0lsPA" value="IR07.1" />
         <property role="0ke_I" value="DIN VDE 0100" />
         <node concept="1QQeAY" id="4bSVeFVFB8e" role="1QQeAC">
           <node concept="0nzK2" id="4bSVeFVFB8g" role="1QQeAV">
@@ -4736,7 +5590,7 @@
         <node concept="3z6Cyy" id="4bSVeFVFB89" role="0nOlf" />
       </node>
       <node concept="0lhDl" id="4bSVeFVFB8p" role="1VMWzp">
-        <property role="0lsPA" value="IR01.2" />
+        <property role="0lsPA" value="IR07.2" />
         <property role="0ke_I" value="DIN VDE 0100" />
         <node concept="1QQeAY" id="4bSVeFVFB8F" role="1QQeAC">
           <node concept="0nzK2" id="4bSVeFVFB8H" role="1QQeAV">
@@ -4761,14 +5615,14 @@
         <node concept="0nzK2" id="4bSVeFVFB7Q" role="1QQeAV">
           <node concept="19SGf9" id="4bSVeFVFB7S" role="0nzdz">
             <node concept="19SUe$" id="4bSVeFVFB7T" role="19SJt6">
-              <property role="19SUeA" value="The cable is alyways connected to a Niederspannung Mains" />
+              <property role="19SUeA" value="When the in-cable control box is connected to mains, it shall be connected to a low voltage mains" />
             </node>
           </node>
         </node>
       </node>
       <node concept="19SGf9" id="4bSVeFVFB7f" role="1QQeG9">
         <node concept="19SUe$" id="4bSVeFVFB7g" role="19SJt6">
-          <property role="19SUeA" value="Connection to Niederspannung Mains" />
+          <property role="19SUeA" value="Connection to Low Voltage Mains" />
         </node>
       </node>
       <node concept="3z6Cyy" id="4bSVeFVFB7J" role="0nOlf" />
@@ -6654,7 +7508,7 @@
     <property role="TrG5h" value="_000_case_study_description" />
     <node concept="2SQmWS" id="7BYuSCF$ivu" role="2HcuB8" />
     <node concept="3I9x2T" id="7BYuSCF$ivy" role="2HcuB8">
-      <property role="sUxOX" value="CASE STUDY&#10;&#10;Electric mobility becomes trending issue than ever in transportation sector. The essential part of electric mobility is the use of electric vehicles. Electric Vehicle (EV) is type of vehicle which primarily powered by an electric motor drawing power from a rechargeable energy storage device. EV receives electricity by plugging into the grid and store it in batteries.  &#10;&#10;EV Charger is an electrical device that converts alternating current energy to regulated direct current for replenishing the energy of an energy storage device (i.e. battery) and may also provide energy for operating other vehicle electrical systems.&#10;&#10;There are 3 functions that must be performed to allow charging of the EV battery from an electric supply network. The two of them is electrical functions and other one is mechanical function. First electrical function is rectification process and second one is controlling and regulation of supply voltage according to battery charge acceptance characteristics. The mechanical function is the connecting of the EV to the EVSE and this process is performed by the user [1].&#10;&#10;Main parts of this system are charger control unit, charging cable and vehicle control unit.&#10;&#10;There are three main ways of charging: conductive charging, inductive charging and by changing the battery. Using the conductive method the battery is connected by a cable and plugged directly into an electricity provider.&#10;&#10;Currently, both the automotive industry and operators of charging stations prefer conductive charging because it is much cheaper and more efficient.&#10;&#10;Conductive charging system use direct contact between the EV connector and charge inlet. The cable can be fed from a standard electrical outlet or a charging station. The main drawback of this solution is that the driver needs to plug in the cable, but of course this is only a connection issue.&#10;&#10;Mode 2 Charging (Domestic socket and cable with a protection device) : The vehicle is connected to the main power grid via household socket-outlets. Recharging is done via a single-phase or three-phase network and installation of an earthing cable. A protection device is built into the cable. This solution is particularly expensive due to the specification of the cable.&#10;&#10;Mode 2 Charging is home charging from a standard power outlet, but with a special in-cable EVSE (EV Supply Equipment), also known as &quot;occasional use cable&quot;, usually supplied with an EV from the manufacturer. This cable provides:&#10;- In-cable RCD&#10;- Over-current protection&#10;- Over-temperature protection&#10;- Protective Earth detection (from wall socket)&#10;&#10;Power will only follow to the vehicle if the EVSE has detected:&#10;- Protective Earth is valid&#10;- No error condition exists (over-current, over-temperature, etc.)&#10;- Vehicle has been plugged in (detected via pilot data line)&#10;- Vehicle has requested power (detected via pilot data line)&#10;&#10;Mode 2 charging cables provide a moderate level of safety and are the minimum standard today for charging an EV.&#10;&#10;Mode 2 charging connection of the EV to the AC supply network (mains) not exceeding 32 A and not exceeding 250V AC single-phase or 480V AC. Three-phase utilizing standardized single-phase or three-phase socket-outlets, and utilizing the power and protective earth conductors together with a control pilot function and system of personnel protection against electric shock (RCD) between the EV and the plug or as a part of the in-cable control box. The inline control box shall be located within 0,3 m of the plug or the EVSE or in the plug.&#10;&#10;---- Citation:&#10;&#10;@article{2018_dericioglu_ev_charging_technologies_review,&#10;  title={A Review of Charging Technologies For Commercial Electric Vehicles},&#10;  author={Dericioglu, C and Yirik, E and Unal, E and Cuma, MU and Onur, B and Tumay, M},&#10;  journal={International Journal of Advances on Automotive and Technology},&#10;  volume={2},&#10;  number={1},&#10;  pages={61--70},&#10;  year={2018}&#10;}&#10;---------------------------------------------------&#10;SCENARIO 1: Changing the charging mode&#10;&#10;The cable is connected to a standard power outlet, instead of a standard power outlet.&#10;&#10;-----------&#10;SCENARIO 2: Changing the cable temperature sensor&#10;&#10;A new version of the cable temperature sensor is used when constructing the cable. &#10;&#10;---------------------------------------------------&#10;ITEM DEFINITION&#10;&#10;- The boundary of the item and the item's interfaces, as well as assumptions concerning other items and elements&#10;&#10;System elements: ev cable (socket connector, ev connector, in-cable control box (controller, circuit breaker, whatchdog))&#10;&#10;---- System under Consideration: in-cable control box&#10;&#10;---- Context systems: &#10;&#10;-------- cable temperature sensor&#10;-------- cable sensors&#10;-------- leds&#10;&#10;- Functional requirements (for the whole cable): FR01-FR04&#10;&#10;???????? what is the difference between FR03 and FSR01?&#10;&#10;???????? functional requirements for the in-cable control box. We &quot;only&quot; defined functional requirements for the entire cable system&#10;&#10;- Non-functional requirements if available, e.g. operational and environmental requirements and constraints (for the whole cable)&#10;&#10;---- System interface requirements: IR01 &#10;&#10;???????? Does IR01 (interface requirement) come from FR02?&#10;&#10;- System modes and states (SR01, SR02)&#10;&#10;- Already known safety requirements: FSR01-FSR03&#10;&#10;???????? where do they come from?&#10;&#10;---------------------------------------------------&#10;LOSSES&#10;&#10;L1: Loss of life or serious injury to people&#10;L2: Car damage (economic loss)" />
+      <property role="sUxOX" value="CASE STUDY&#10;&#10;Electric mobility becomes trending issue than ever in transportation sector. The essential part of electric mobility is the use of electric vehicles. Electric Vehicle (EV) is type of vehicle which primarily powered by an electric motor drawing power from a rechargeable energy storage device. EV receives electricity by plugging into the grid and store it in batteries.  &#10;&#10;EV Charger is an electrical device that converts alternating current energy to regulated direct current for replenishing the energy of an energy storage device (i.e. battery) and may also provide energy for operating other vehicle electrical systems.&#10;&#10;There are 3 functions that must be performed to allow charging of the EV battery from an electric supply network. The two of them is electrical functions and other one is mechanical function. First electrical function is rectification process and second one is controlling and regulation of supply voltage according to battery charge acceptance characteristics. The mechanical function is the connecting of the EV to the EVSE and this process is performed by the user.&#10;&#10;Main parts of this system are charger control unit, charging cable and vehicle control unit.&#10;&#10;There are three main ways of charging: conductive charging, inductive charging and by changing the battery. Using the conductive method the battery is connected by a cable and plugged directly into an electricity provider.&#10;&#10;Currently, both the automotive industry and operators of charging stations prefer conductive charging because it is much cheaper and more efficient.&#10;&#10;Conductive charging system use direct contact between the EV connector and charge inlet. The cable can be fed from a standard electrical outlet or a charging station. The main drawback of this solution is that the driver needs to plug in the cable, but of course this is only a connection issue.&#10;&#10;Mode 2 Charging (Domestic socket and cable with a protection device) : The vehicle is connected to the main power grid via household socket-outlets. Recharging is done via a single-phase or three-phase network and installation of an earthing cable. A protection device is built into the cable. This solution is particularly expensive due to the specification of the cable.&#10;&#10;Mode 2 Charging is home charging from a standard power outlet, but with a special in-cable EVSE (EV Supply Equipment), also known as &quot;occasional use cable&quot;, usually supplied with an EV from the manufacturer. This cable provides:&#10;- In-cable RCD&#10;- Over-current protection&#10;- Over-temperature protection&#10;- Protective Earth detection (from wall socket)&#10;&#10;Power will only follow to the vehicle if the EVSE has detected:&#10;- Protective Earth is valid&#10;- No error condition exists (over-current, over-temperature, etc.)&#10;- Vehicle has been plugged in (detected via pilot data line)&#10;- Vehicle has requested power (detected via pilot data line)&#10;&#10;Mode 2 charging cables provide a moderate level of safety and are the minimum standard today for charging an EV.&#10;&#10;Mode 2 charging connection of the EV to the AC supply network (mains) not exceeding 32 A and not exceeding 250V AC single-phase or 480V AC. Three-phase utilizing standardized single-phase or three-phase socket-outlets, and utilizing the power and protective earth conductors together with a control pilot function and system of personnel protection against electric shock (RCD) between the EV and the plug or as a part of the in-cable control box. The inline control box shall be located within 0,3 m of the plug or the EVSE or in the plug.&#10;&#10;---- Citation:&#10;&#10;@article{2018_dericioglu_ev_charging_technologies_review,&#10;  title={A Review of Charging Technologies For Commercial Electric Vehicles},&#10;  author={Dericioglu, C and Yirik, E and Unal, E and Cuma, MU and Onur, B and Tumay, M},&#10;  journal={International Journal of Advances on Automotive and Technology},&#10;  volume={2},&#10;  number={1},&#10;  pages={61--70},&#10;  year={2018}&#10;}&#10;---------------------------------------------------&#10;SCENARIO 1: Changing the cable temperature sensor&#10;&#10;A new version of the cable temperature sensor is used when constructing the cable. &#10;&#10;---------------------------------------------------&#10;ITEM DEFINITION&#10;&#10;- The boundary of the item and the item's interfaces, as well as assumptions concerning other items and elements&#10;&#10;---- System under Consideration: in-cable control box&#10;&#10;Interfaces&#10;&#10;---- interface to mains&#10;---- interface to EV&#10;&#10;---- Context systems: &#10;&#10;Sensors&#10;-------- cable temperature sensor&#10;-------- cable sensors&#10;&#10;Actuators&#10;-------- leds&#10;-------- relay&#10;&#10;- Functional requirements (for the whole cable): FR01-FR04&#10;&#10;- Non-functional requirements if available, e.g. operational and environmental requirements and constraints (for the whole cable)&#10;&#10;---- System interface requirements: IR01 - IR 04&#10;&#10;- System modes and states (SR01, SR02)&#10;&#10;- Already known safety requirements: FSR01-FSR03&#10;&#10;---------------------------------------------------&#10;LOSSES&#10;&#10;L1: Loss of life or serious injury to people&#10;L2: Electrical damage (economic loss)" />
     </node>
     <node concept="2SQmWS" id="7BYuSCF$jzV" role="2HcuB8" />
     <node concept="2SQmWS" id="7BYuSCF$j$2" role="2HcuB8" />
