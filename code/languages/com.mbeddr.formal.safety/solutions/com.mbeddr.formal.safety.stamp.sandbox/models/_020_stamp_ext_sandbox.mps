@@ -21,11 +21,15 @@
         <child id="8790599356040900065" name="context" index="1ipxpF" />
         <child id="8790599356040778219" name="hazopKeyword" index="1iqeDx" />
       </concept>
+      <concept id="8790599356040790867" name="com.mbeddr.formal.safety.stamp.ext.structure.NotProvidingHazopKeyword" flags="ng" index="1iqbzp" />
       <concept id="8790599356040778178" name="com.mbeddr.formal.safety.stamp.ext.structure.HazopKeywordBase" flags="ng" index="1iqeD8">
         <reference id="8790599356040772937" name="action" index="1iq0r3" />
       </concept>
       <concept id="8790599356040778210" name="com.mbeddr.formal.safety.stamp.ext.structure.ProvidingHazopKeyword" flags="ng" index="1iqeDC" />
-      <concept id="8790599356040829290" name="com.mbeddr.formal.safety.stamp.ext.structure.TooSoonHazopKeyword" flags="ng" index="1iqibw" />
+      <concept id="8790599356040829290" name="com.mbeddr.formal.safety.stamp.ext.structure.ProvidingTooSoonHazopKeyword" flags="ng" index="1iqibw" />
+      <concept id="8790599356040829292" name="com.mbeddr.formal.safety.stamp.ext.structure.ProvidingTooLateHazopKeyword" flags="ng" index="1iqibA" />
+      <concept id="5282133897419677734" name="com.mbeddr.formal.safety.stamp.ext.structure.AppliedTooLongHazopKeyword" flags="ng" index="1UWwzH" />
+      <concept id="5282133897419677690" name="com.mbeddr.formal.safety.stamp.ext.structure.StoppedTooSoonHazopKeyword" flags="ng" index="1UWzsL" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -50,6 +54,41 @@
       </node>
       <node concept="1ipxol" id="7BYuSCFAmbB" role="1ipxpF">
         <ref role="1ipxoE" to="v0ty:3Cm$$O2vV6X" resolve="Acknowledgements" />
+      </node>
+    </node>
+    <node concept="1iq0qn" id="4_dUcGNKC2t" role="1iq0qk">
+      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
+      <node concept="1iqibA" id="4_dUcGNKC2$" role="1iqeDx">
+        <ref role="1iq0r3" to="v0ty:1JhvKLLPHfA" resolve="Change altitude" />
+      </node>
+    </node>
+    <node concept="1iq0qn" id="4_dUcGNKC2A" role="1iq0qk">
+      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
+      <node concept="1iqbzp" id="4_dUcGNKC2J" role="1iqeDx">
+        <ref role="1iq0r3" to="v0ty:1JhvKLLPHfA" resolve="Change altitude" />
+      </node>
+    </node>
+    <node concept="1iq0qn" id="4_dUcGNKC2L" role="1iq0qk">
+      <ref role="1iq0qE" to="v0ty:4q9fsxm3ooS" resolve="Circuit Switch" />
+      <ref role="1iq0r6" to="v0ty:4q9fsxm3ow6" resolve="battery overheating" />
+      <node concept="1UWwzH" id="4_dUcGNKC2W" role="1iqeDx">
+        <ref role="1iq0r3" to="v0ty:4q9fsxm3osI" resolve="Switch Open" />
+      </node>
+    </node>
+    <node concept="1iq0qn" id="4_dUcGNKC2Y" role="1iq0qk">
+      <ref role="1iq0qE" to="v0ty:4q9fsxm3ooS" resolve="Circuit Switch" />
+      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
+      <node concept="1iqibw" id="4_dUcGNKC3b" role="1iqeDx">
+        <ref role="1iq0r3" to="v0ty:4q9fsxm3osI" resolve="Switch Open" />
+      </node>
+    </node>
+    <node concept="1iq0qn" id="4_dUcGNKC3d" role="1iq0qk">
+      <ref role="1iq0qE" to="v0ty:3Cm$$O2vprc" resolve="Fire Control" />
+      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
+      <node concept="1UWzsL" id="4_dUcGNKC3s" role="1iqeDx">
+        <ref role="1iq0r3" to="v0ty:3Cm$$O2vAoh" resolve="Interceptor Tasking" />
       </node>
     </node>
   </node>

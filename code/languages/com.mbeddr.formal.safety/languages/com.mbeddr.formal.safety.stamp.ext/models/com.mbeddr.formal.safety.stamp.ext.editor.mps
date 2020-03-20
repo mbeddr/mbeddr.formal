@@ -234,7 +234,7 @@
   </node>
   <node concept="24kQdi" id="7BYuSCFA3gq">
     <property role="3GE5qa" value="hazopKeywords" />
-    <ref role="1XX52x" to="8war:7BYuSCF_P_E" resolve="TooSoonHazopKeyword" />
+    <ref role="1XX52x" to="8war:7BYuSCF_P_E" resolve="ProvidingTooSoonHazopKeyword" />
     <node concept="3EZMnI" id="7BYuSCFA3gs" role="2wV5jI">
       <node concept="3F0ifn" id="7BYuSCFA3gz" role="3EZMnx">
         <property role="3F0ifm" value="provides" />
@@ -274,6 +274,78 @@
         </node>
       </node>
       <node concept="2iRfu4" id="7BYuSCFA6R2" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4_dUcGNJUST">
+    <property role="3GE5qa" value="hazopKeywords" />
+    <ref role="1XX52x" to="8war:7BYuSCF_P_G" resolve="ProvidingTooLateHazopKeyword" />
+    <node concept="3EZMnI" id="4_dUcGNJUSV" role="2wV5jI">
+      <node concept="3F0ifn" id="4_dUcGNJUSW" role="3EZMnx">
+        <property role="3F0ifm" value="provides" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="1iCGBv" id="4_dUcGNJUSX" role="3EZMnx">
+        <ref role="1NtTu8" to="8war:7BYuSCF_BP9" resolve="action" />
+        <node concept="1sVBvm" id="4_dUcGNJUSY" role="1sWHZn">
+          <node concept="3F0A7n" id="4_dUcGNJUSZ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4_dUcGNJUT0" role="3EZMnx">
+        <property role="3F0ifm" value="too late" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="2iRfu4" id="4_dUcGNJUT1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4_dUcGNJY0m">
+    <property role="3GE5qa" value="hazopKeywords" />
+    <ref role="1XX52x" to="8war:4_dUcGNJXZU" resolve="StoppedTooSoonHazopKeyword" />
+    <node concept="3EZMnI" id="4_dUcGNJY0o" role="2wV5jI">
+      <node concept="3F0ifn" id="4_dUcGNJY0p" role="3EZMnx">
+        <property role="3F0ifm" value="stops providing" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="1iCGBv" id="4_dUcGNJY0q" role="3EZMnx">
+        <ref role="1NtTu8" to="8war:7BYuSCF_BP9" resolve="action" />
+        <node concept="1sVBvm" id="4_dUcGNJY0r" role="1sWHZn">
+          <node concept="3F0A7n" id="4_dUcGNJY0s" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4_dUcGNJY0t" role="3EZMnx">
+        <property role="3F0ifm" value="too soon" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="2iRfu4" id="4_dUcGNJY0u" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4_dUcGNJY12">
+    <property role="3GE5qa" value="hazopKeywords" />
+    <ref role="1XX52x" to="8war:4_dUcGNJY0A" resolve="AppliedTooLongHazopKeyword" />
+    <node concept="3EZMnI" id="4_dUcGNJY14" role="2wV5jI">
+      <node concept="3F0ifn" id="4_dUcGNJY15" role="3EZMnx">
+        <property role="3F0ifm" value="provides" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="1iCGBv" id="4_dUcGNJY16" role="3EZMnx">
+        <ref role="1NtTu8" to="8war:7BYuSCF_BP9" resolve="action" />
+        <node concept="1sVBvm" id="4_dUcGNJY17" role="1sWHZn">
+          <node concept="3F0A7n" id="4_dUcGNJY18" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4_dUcGNJY19" role="3EZMnx">
+        <property role="3F0ifm" value="too long" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="2iRfu4" id="4_dUcGNJY1a" role="2iSdaV" />
     </node>
   </node>
 </model>

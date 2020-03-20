@@ -117,14 +117,14 @@
   </node>
   <node concept="1TIwiD" id="7BYuSCF_P_E">
     <property role="EcuMT" value="8790599356040829290" />
-    <property role="TrG5h" value="TooSoonHazopKeyword" />
+    <property role="TrG5h" value="ProvidingTooSoonHazopKeyword" />
     <property role="34LRSv" value="provides too soon" />
     <property role="3GE5qa" value="hazopKeywords" />
     <ref role="1TJDcQ" node="7BYuSCF_D72" resolve="HazopKeywordBase" />
   </node>
   <node concept="1TIwiD" id="7BYuSCF_P_G">
     <property role="EcuMT" value="8790599356040829292" />
-    <property role="TrG5h" value="TooLateHazopKeyword" />
+    <property role="TrG5h" value="ProvidingTooLateHazopKeyword" />
     <property role="34LRSv" value="provides too late" />
     <property role="3GE5qa" value="hazopKeywords" />
     <ref role="1TJDcQ" node="7BYuSCF_D72" resolve="HazopKeywordBase" />
@@ -148,6 +148,20 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="bewr:3Cm$$O2vamj" resolve="Action" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4_dUcGNJXZU">
+    <property role="EcuMT" value="5282133897419677690" />
+    <property role="3GE5qa" value="hazopKeywords" />
+    <property role="TrG5h" value="StoppedTooSoonHazopKeyword" />
+    <property role="34LRSv" value="stops providing too soon" />
+    <ref role="1TJDcQ" node="7BYuSCF_D72" resolve="HazopKeywordBase" />
+  </node>
+  <node concept="1TIwiD" id="4_dUcGNJY0A">
+    <property role="EcuMT" value="5282133897419677734" />
+    <property role="3GE5qa" value="hazopKeywords" />
+    <property role="TrG5h" value="AppliedTooLongHazopKeyword" />
+    <property role="34LRSv" value="provides too long" />
+    <ref role="1TJDcQ" node="7BYuSCF_D72" resolve="HazopKeywordBase" />
   </node>
 </model>
 
