@@ -91,7 +91,6 @@
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
       </concept>
-      <concept id="7842584090743386570" name="com.mbeddr.formal.base.expressions.structure.Type" flags="ng" index="2HdslB" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -445,9 +444,6 @@
       <node concept="2IPVmt" id="XLqv_rqY6c" role="3WDmyJ">
         <property role="2IPVms" value="0" />
       </node>
-    </node>
-    <node concept="2xNTiH" id="XLqv_ruwcq" role="2mr7gi">
-      <node concept="2HdslB" id="XLqv_ruwcs" role="1a0DGc" />
     </node>
     <node concept="2mpP7Z" id="70QLBAKuska" role="2mr7gi">
       <property role="TrG5h" value="Hello" />
