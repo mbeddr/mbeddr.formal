@@ -51,7 +51,7 @@ active proctype h1(){
         Printf("*** default: no choice could be taken due to false guards ; 231403174460221834\n");
       }
     }
-  fi
+  fi;
   
   c_code {
     Printf("*** charVar = %d ; 231403174460221855\n", charVar);

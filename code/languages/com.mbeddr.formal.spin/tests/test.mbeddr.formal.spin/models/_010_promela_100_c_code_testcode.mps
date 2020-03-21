@@ -86,15 +86,14 @@
       <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
       <concept id="3050019586774688801" name="com.mbeddr.formal.spin.structure.NotEqualsExpression" flags="ng" index="2xSVM6" />
       <concept id="3050019586773893583" name="com.mbeddr.formal.spin.structure.Else" flags="ng" index="2xXT_C" />
+      <concept id="3050019586773884909" name="com.mbeddr.formal.spin.structure.ChoiceLike" flags="ng" index="2xXWta">
+        <child id="3050019586773884916" name="stmts" index="2xXWtj" />
+      </concept>
       <concept id="3050019586773884919" name="com.mbeddr.formal.spin.structure.Choice" flags="ng" index="2xXWtg">
         <child id="3050019586773884937" name="guard" index="2xXZyI" />
       </concept>
       <concept id="3050019586774488710" name="com.mbeddr.formal.spin.structure.IfStatement" flags="ng" index="2xZCSx">
         <child id="3050019586774488783" name="members" index="2xZCTC" />
-      </concept>
-      <concept id="5430620409969180562" name="com.mbeddr.formal.spin.structure.ArrowExpression" flags="ng" index="PrSZJ">
-        <child id="5430620409969180570" name="body" index="PrSZB" />
-        <child id="5430620409969180566" name="exp" index="PrSZF" />
       </concept>
       <concept id="6377880871154154898" name="com.mbeddr.formal.spin.structure.CCode" flags="ng" index="Sp3le">
         <child id="6377880871154154899" name="body" index="Sp3lf" />
@@ -579,27 +578,25 @@
         <node concept="Xfmx0" id="6Fe3QRJU7eI" role="2mpP4z">
           <node concept="2mpP4x" id="6Fe3QRJU7eK" role="Xfmxj">
             <node concept="2xZCSx" id="6Fe3QRJU7og" role="2mpP4z">
-              <node concept="2xXWtg" id="6Fe3QRJU7oj" role="2xZCTC">
-                <node concept="PrSZJ" id="6Fe3QRJU7p5" role="2xXZyI">
-                  <node concept="2xSS$E" id="6Fe3QRJU7p6" role="PrSZF">
-                    <node concept="2m6Dwh" id="6Fe3QRJU7oo" role="2H9Iav">
-                      <ref role="2m6DZP" node="6DdnOgjaFSw" resolve="crt_state_idx" />
-                    </node>
-                    <node concept="kYyJf" id="6Fe3QRJU7op" role="2H9Ial">
-                      <node concept="2H9Eef" id="6Fe3QRJU7oq" role="32OYtT">
-                        <node concept="2IPVmt" id="6Fe3QRJU7or" role="2H9Ial">
-                          <property role="2IPVms" value="1" />
-                        </node>
-                        <node concept="1a0deV" id="6Fe3QRJU7os" role="2H9Iav">
-                          <ref role="2m6DZP" node="6DdnOgjaFUK" resolve="number_of_lines_in_file" />
-                        </node>
+              <node concept="2xXWtg" id="XLqv_rysEi" role="2xZCTC">
+                <node concept="2xSS$E" id="XLqv_rysEk" role="2xXZyI">
+                  <node concept="2m6Dwh" id="XLqv_rysEl" role="2H9Iav">
+                    <ref role="2m6DZP" node="6DdnOgjaFSw" resolve="crt_state_idx" />
+                  </node>
+                  <node concept="kYyJf" id="XLqv_rysEm" role="2H9Ial">
+                    <node concept="2H9Eef" id="XLqv_rysEn" role="32OYtT">
+                      <node concept="2IPVmt" id="XLqv_rysEo" role="2H9Ial">
+                        <property role="2IPVms" value="1" />
+                      </node>
+                      <node concept="1a0deV" id="XLqv_rysEp" role="2H9Iav">
+                        <ref role="2m6DZP" node="6DdnOgjaFUK" resolve="number_of_lines_in_file" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2mpP4x" id="6Fe3QRJU7p2" role="PrSZB">
-                    <node concept="X21_l" id="6Fe3QRJU7pD" role="2mpP4z">
-                      <ref role="X21yc" node="6Fe3QRJU7j_" resolve="loop_end" />
-                    </node>
+                </node>
+                <node concept="2mpP4x" id="XLqv_rysF1" role="2xXWtj">
+                  <node concept="X21_l" id="XLqv_rysFe" role="2mpP4z">
+                    <ref role="X21yc" node="6Fe3QRJU7j_" resolve="loop_end" />
                   </node>
                 </node>
               </node>

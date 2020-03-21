@@ -71,7 +71,7 @@ active proctype h1(){
       }
     }
     :: else
-  fi
+  fi;
   if
      :: c_expr { choose_par_1 } -> {
       select(tmpVar_nondet_assignment_4 : 0 .. 6);
@@ -101,7 +101,7 @@ active proctype h1(){
       }
     }
     :: else
-  fi
+  fi;
   if
      :: c_expr { choose_par_2 } -> {
       select(tmpVar_nondet_assignment_5 : 0 .. 8);
@@ -137,7 +137,7 @@ active proctype h1(){
       }
     }
     :: else
-  fi
+  fi;
   
   // should pass
   c_code {

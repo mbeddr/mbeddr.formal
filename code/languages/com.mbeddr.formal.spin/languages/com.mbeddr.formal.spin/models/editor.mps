@@ -1835,5 +1835,18 @@
     <property role="3GE5qa" value="top_level" />
     <ref role="aqKnT" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
   </node>
+  <node concept="24kQdi" id="XLqv_rwmGo">
+    <property role="3GE5qa" value="statements.if_do" />
+    <ref role="1XX52x" to="o3hv:XLqv_rwmGn" resolve="ChoiceStatement" />
+    <node concept="3EZMnI" id="XLqv_rwmGq" role="2wV5jI">
+      <node concept="3F0ifn" id="XLqv_rwmGx" role="3EZMnx">
+        <property role="3F0ifm" value="::" />
+      </node>
+      <node concept="3F1sOY" id="XLqv_rwmGB" role="3EZMnx">
+        <ref role="1NtTu8" to="o3hv:2DjQaubD1ZO" resolve="stmts" />
+      </node>
+      <node concept="l2Vlx" id="XLqv_rwmGt" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

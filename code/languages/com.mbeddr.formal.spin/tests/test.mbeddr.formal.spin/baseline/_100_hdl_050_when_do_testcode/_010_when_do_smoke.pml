@@ -21,7 +21,7 @@ active proctype h1(){
       }
     }
     :: else
-  fi
+  fi;
   
   c_code {
     if (!((!((guardVar != 3 && other == 3))))) {
