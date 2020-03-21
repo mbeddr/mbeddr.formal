@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -119,6 +119,7 @@
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
@@ -257,6 +258,89 @@
               </node>
             </node>
             <node concept="ANE8D" id="6FysnQMUojo" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4_dUcGNLfgE" role="13h7CS">
+      <property role="TrG5h" value="getNeighbouringInboundElement" />
+      <node concept="3Tm1VV" id="4_dUcGNLfgF" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4_dUcGNLfrL" role="3clF45">
+        <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+      <node concept="3clFbS" id="4_dUcGNLfgH" role="3clF47">
+        <node concept="3cpWs8" id="4_dUcGNLfus" role="3cqZAp">
+          <node concept="3cpWsn" id="4_dUcGNLfut" role="3cpWs9">
+            <property role="TrG5h" value="allConnections" />
+            <node concept="2I9FWS" id="4_dUcGNLfuu" role="1tU5fm">
+              <ref role="2I9WkF" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+            </node>
+            <node concept="2OqwBi" id="4_dUcGNLfuv" role="33vP2m">
+              <node concept="2OqwBi" id="4_dUcGNLfuw" role="2Oq$k0">
+                <node concept="13iPFW" id="4_dUcGNLfux" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="4_dUcGNLfuy" role="2OqNvi">
+                  <node concept="1xMEDy" id="4_dUcGNLfuz" role="1xVPHs">
+                    <node concept="chp4Y" id="4_dUcGNLfu$" role="ri$Ld">
+                      <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="4_dUcGNLfu_" role="2OqNvi">
+                <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4_dUcGNLknl" role="3cqZAp">
+          <node concept="3cpWsn" id="4_dUcGNLknm" role="3cpWs9">
+            <property role="TrG5h" value="myInboundConnections" />
+            <node concept="A3Dl8" id="4_dUcGNLkd7" role="1tU5fm">
+              <node concept="3Tqbb2" id="4_dUcGNLkda" role="A3Ik2">
+                <ref role="ehGHo" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4_dUcGNLknn" role="33vP2m">
+              <node concept="37vLTw" id="4_dUcGNLkno" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_dUcGNLfut" resolve="allConnections" />
+              </node>
+              <node concept="3zZkjj" id="4_dUcGNLknp" role="2OqNvi">
+                <node concept="1bVj0M" id="4_dUcGNLknq" role="23t8la">
+                  <node concept="3clFbS" id="4_dUcGNLknr" role="1bW5cS">
+                    <node concept="3clFbF" id="4_dUcGNLkns" role="3cqZAp">
+                      <node concept="17R0WA" id="4_dUcGNLknt" role="3clFbG">
+                        <node concept="13iPFW" id="4_dUcGNLknu" role="3uHU7w" />
+                        <node concept="2OqwBi" id="4_dUcGNLknv" role="3uHU7B">
+                          <node concept="37vLTw" id="4_dUcGNLknw" role="2Oq$k0">
+                            <ref role="3cqZAo" node="4_dUcGNLkny" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="4_dUcGNLknx" role="2OqNvi">
+                            <ref role="3Tt5mk" to="py52:2ccN23odOzm" resolve="target" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="4_dUcGNLkny" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="4_dUcGNLknz" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4_dUcGNLf_J" role="3cqZAp">
+          <node concept="2OqwBi" id="4_dUcGNLm3Q" role="3clFbG">
+            <node concept="2OqwBi" id="4_dUcGNLlcJ" role="2Oq$k0">
+              <node concept="37vLTw" id="4_dUcGNLkn$" role="2Oq$k0">
+                <ref role="3cqZAo" node="4_dUcGNLknm" resolve="myInboundConnections" />
+              </node>
+              <node concept="1uHKPH" id="4_dUcGNLlnC" role="2OqNvi" />
+            </node>
+            <node concept="3TrEf2" id="4_dUcGNLmeW" role="2OqNvi">
+              <ref role="3Tt5mk" to="py52:2ccN23odOzl" resolve="source" />
+            </node>
           </node>
         </node>
       </node>
