@@ -84,5 +84,29 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7BYuSCFN8bY">
+    <property role="3GE5qa" value="patterns" />
+    <ref role="1M2myG" to="lbo2:7BYuSCFMYuE" resolve="PatternGoalStructureElementBase" />
+    <node concept="9S07l" id="7BYuSCFN8bZ" role="9Vyp8">
+      <node concept="3clFbS" id="7BYuSCFN8c0" role="2VODD2">
+        <node concept="3clFbF" id="7BYuSCFN8fW" role="3cqZAp">
+          <node concept="2OqwBi" id="7BYuSCFN8VH" role="3clFbG">
+            <node concept="2OqwBi" id="7BYuSCFN8sz" role="2Oq$k0">
+              <node concept="nLn13" id="7BYuSCFN8fV" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="7BYuSCFN8zk" role="2OqNvi">
+                <node concept="1xMEDy" id="7BYuSCFN8zm" role="1xVPHs">
+                  <node concept="chp4Y" id="7BYuSCFN8Bg" role="ri$Ld">
+                    <ref role="cht4Q" to="lbo2:1qrXfdH1Uhb" resolve="PatternDefinition" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="7BYuSCFN8Ho" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7BYuSCFN9d_" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
