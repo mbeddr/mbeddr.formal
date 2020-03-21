@@ -110,6 +110,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -357,6 +360,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4_dUcGNKIED" role="3cqZAp">
+          <node concept="37vLTI" id="4_dUcGNKJp4" role="3clFbG">
+            <node concept="3clFbT" id="4_dUcGNKJvB" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4_dUcGNKIPu" role="37vLTJ">
+              <node concept="13iPFW" id="4_dUcGNKIEB" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4_dUcGNKJ6y" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -583,6 +599,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4_dUcGNKDE3" role="3cqZAp">
+          <node concept="37vLTI" id="4_dUcGNKEvl" role="3clFbG">
+            <node concept="3clFbT" id="4_dUcGNKE_S" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4_dUcGNKDOZ" role="37vLTJ">
+              <node concept="13iPFW" id="4_dUcGNKDE1" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4_dUcGNKE3k" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -756,6 +785,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4_dUcGNKPec" role="3cqZAp">
+          <node concept="37vLTI" id="4_dUcGNKPee" role="3clFbG">
+            <node concept="3clFbT" id="4_dUcGNKPef" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4_dUcGNKPeg" role="37vLTJ">
+              <node concept="13iPFW" id="4_dUcGNKPeh" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4_dUcGNKPei" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -787,6 +829,19 @@
               <node concept="13iPFW" id="2RlaC$P7vU4" role="2Oq$k0" />
               <node concept="3TrEf2" id="2RlaC$P7wqD" role="2OqNvi">
                 <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4_dUcGNKOcz" role="3cqZAp">
+          <node concept="37vLTI" id="4_dUcGNKOXY" role="3clFbG">
+            <node concept="3clFbT" id="4_dUcGNKP27" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4_dUcGNKOoj" role="37vLTJ">
+              <node concept="13iPFW" id="4_dUcGNKOcx" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4_dUcGNKOCS" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
               </node>
             </node>
           </node>
@@ -883,6 +938,19 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4_dUcGNKPCu" role="3cqZAp">
+          <node concept="37vLTI" id="4_dUcGNKPCw" role="3clFbG">
+            <node concept="3clFbT" id="4_dUcGNKPCx" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4_dUcGNKPCy" role="37vLTJ">
+              <node concept="13iPFW" id="4_dUcGNKPCz" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4_dUcGNKPC$" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
               </node>
             </node>
           </node>

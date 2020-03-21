@@ -293,7 +293,7 @@
             <ref role="3cqZAo" node="6FysnQMUDTT" resolve="notAddressedHazards" />
           </node>
           <node concept="Xl_RD" id="6FysnQMUEQg" role="3uHU7B">
-            <property role="Xl_RC" value="not al claimed hazards have been addressed: " />
+            <property role="Xl_RC" value="not all claimed hazards have been addressed: " />
           </node>
         </node>
         <node concept="1YBJjd" id="6FysnQMUFeF" role="1urrMF">
@@ -553,7 +553,7 @@
                             <ref role="1M0zk5" node="4MR8i$4gVDp" resolve="ca" />
                           </node>
                           <node concept="2qgKlT" id="4MR8i$4hOLq" role="2OqNvi">
-                            <ref role="37wK5l" to="7wf3:4MR8i$4hr6T" resolve="getDirectInstances" />
+                            <ref role="37wK5l" to="7wf3:4MR8i$4hr6T" resolve="getDirectlyContainedInstances" />
                           </node>
                         </node>
                         <node concept="3$u5V9" id="4MR8i$4hOLr" role="2OqNvi">
