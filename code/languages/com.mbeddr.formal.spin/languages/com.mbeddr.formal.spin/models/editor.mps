@@ -422,15 +422,6 @@
       <node concept="l2Vlx" id="4_pH3zvfOfk" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4_pH3zvg35h">
-    <property role="3GE5qa" value="statements" />
-    <ref role="1XX52x" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
-    <node concept="3F0ifn" id="4_pH3zvg35j" role="2wV5jI">
-      <node concept="VPxyj" id="4_pH3zvhFCd" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="4_pH3zvgMHG">
     <property role="3GE5qa" value="statements" />
     <ref role="1XX52x" to="o3hv:4_pH3zvgMHB" resolve="PromelaLocalVariableDeclaration" />
@@ -469,25 +460,26 @@
   <node concept="24kQdi" id="4_pH3zvgMJH">
     <property role="3GE5qa" value="statements" />
     <ref role="1XX52x" to="o3hv:4_pH3zvgMJb" resolve="AssignmentStatement" />
-    <node concept="3EZMnI" id="4_pH3zvgMJJ" role="2wV5jI">
-      <node concept="1kIj98" id="4_pH3zvgMJT" role="3EZMnx">
-        <node concept="3F1sOY" id="4_pH3zvgMK6" role="1kIj9b">
+    <node concept="1WcQYu" id="70QLBAKusFt" role="2wV5jI">
+      <node concept="3EZMnI" id="4_pH3zvgMJJ" role="1LiK7o">
+        <node concept="3F1sOY" id="XLqv_roMDC" role="3EZMnx">
           <ref role="1NtTu8" to="o3hv:4_pH3zvgMJw" resolve="lhs" />
         </node>
-      </node>
-      <node concept="3F0ifn" id="4_pH3zvgMKe" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-      </node>
-      <node concept="3F1sOY" id="4_pH3zvgMKk" role="3EZMnx">
-        <ref role="1NtTu8" to="o3hv:4_pH3zvgMJy" resolve="rhs" />
-      </node>
-      <node concept="3F0ifn" id="4_pH3zvgMKw" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-        <node concept="11L4FC" id="4_pH3zvgMKB" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="3F0ifn" id="4_pH3zvgMKe" role="3EZMnx">
+          <property role="3F0ifm" value="=" />
         </node>
+        <node concept="3F1sOY" id="4_pH3zvgMKk" role="3EZMnx">
+          <ref role="1NtTu8" to="o3hv:4_pH3zvgMJy" resolve="rhs" />
+        </node>
+        <node concept="3F0ifn" id="4_pH3zvgMKw" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+          <node concept="11L4FC" id="4_pH3zvgMKB" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="4_pH3zvgMJM" role="2iSdaV" />
       </node>
-      <node concept="l2Vlx" id="4_pH3zvgMJM" role="2iSdaV" />
+      <node concept="2ElW$n" id="XLqv_rr0vV" role="2El2Yn" />
     </node>
   </node>
   <node concept="24kQdi" id="4_pH3zvgMKG">
@@ -1834,6 +1826,14 @@
       </node>
       <node concept="l2Vlx" id="3xpT6K6zvMP" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="3p36aQ" id="XLqv_rsKBY">
+    <property role="3GE5qa" value="statements" />
+    <ref role="aqKnT" to="o3hv:4_pH3zvgMHB" resolve="PromelaLocalVariableDeclaration" />
+  </node>
+  <node concept="3p36aQ" id="XLqv_ruwdE">
+    <property role="3GE5qa" value="top_level" />
+    <ref role="aqKnT" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
   </node>
 </model>
 

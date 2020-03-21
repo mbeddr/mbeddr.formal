@@ -173,6 +173,7 @@
     <property role="EcuMT" value="5285453794052597018" />
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="Statement" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6kOHW5f_C6b" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
@@ -232,7 +233,8 @@
     <property role="EcuMT" value="5285453794052877259" />
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="AssignmentStatement" />
-    <property role="34LRSv" value="assignment" />
+    <property role="34LRSv" value="=" />
+    <property role="R4oN_" value="assignment" />
     <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
     <node concept="1TJgyj" id="4_pH3zvgMJw" role="1TKVEi">
       <property role="IQ2ns" value="5285453794052877280" />
