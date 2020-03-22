@@ -31,6 +31,7 @@
     <language slang="l:b9f682be-3e03-4c97-ba0a-ac14cf89f12a:com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
     <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="0" />
     <language slang="l:6464626a-ab04-4051-908e-5e8dc75acd78:com.mbeddr.formal.safety.gsn.ext" version="0" />
+    <language slang="l:5e7ffa70-8e23-49f4-8c13-a887bba14c36:com.mbeddr.formal.safety.gsn.external_evidence" version="0" />
     <language slang="l:8c301636-fbda-4009-bce8-7e00c3c1bac5:com.mbeddr.formal.safety.gsn.odd" version="0" />
     <language slang="l:f465db4c-63d4-40ef-afda-acd713dc19a1:com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <language slang="l:2ec00dc3-d0e8-497d-8fe3-82d556eb83ba:com.mbeddr.formal.safety.gsn.req" version="0" />

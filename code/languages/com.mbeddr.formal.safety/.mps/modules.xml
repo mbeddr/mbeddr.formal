@@ -8,6 +8,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.hara/fasten.safety.hara.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety/fasten.safety.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.ext/com.mbeddr.formal.safety.gsn.ext.mpl" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.external_evidence/com.mbeddr.formal.safety.gsn.external_evidence.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.odd/com.mbeddr.formal.safety.gsn.odd.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.patterns/com.mbeddr.formal.safety.gsn.patterns.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.req/com.mbeddr.formal.safety.gsn.req.mpl" folder="gsn" />
