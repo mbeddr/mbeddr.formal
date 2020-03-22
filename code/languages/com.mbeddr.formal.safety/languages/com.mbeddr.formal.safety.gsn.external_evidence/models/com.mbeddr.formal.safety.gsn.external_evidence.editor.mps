@@ -504,7 +504,7 @@
           <ref role="1NtTu8" to="s9pq:6R91tEKNYHh" resolve="resultRegex" />
         </node>
         <node concept="3F0ifn" id="79zp7zi7xmO" role="3EZMnx">
-          <property role="3F0ifm" value="search for successful results" />
+          <property role="3F0ifm" value="means success" />
         </node>
         <node concept="27S6Sx" id="79zp7zi7xmk" role="3EZMnx">
           <ref role="1NtTu8" to="s9pq:79zp7zi7wn6" resolve="regexMatchMeansSuccess" />
