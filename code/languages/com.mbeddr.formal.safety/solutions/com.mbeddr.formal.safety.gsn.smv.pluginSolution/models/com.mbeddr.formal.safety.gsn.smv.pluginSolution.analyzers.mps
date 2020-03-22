@@ -27,6 +27,7 @@
     <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -896,7 +897,7 @@
                 <ref role="3cqZAo" node="3jaLROLu6Ik" resolve="sol" />
               </node>
               <node concept="2qgKlT" id="3jaLROLu6If" role="2OqNvi">
-                <ref role="37wK5l" to="tiyw:62$$j6uT0Us" resolve="computeHashCode" />
+                <ref role="37wK5l" to="89jy:79zp7ziemiv" resolve="computeHashCode" />
                 <node concept="37vLTw" id="3jaLROLu6Iq" role="37wK5m">
                   <ref role="3cqZAo" node="3jaLROLu6Io" resolve="repo" />
                 </node>

@@ -10,6 +10,7 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
@@ -38,6 +39,7 @@
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -725,7 +727,7 @@
                               <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
                             </node>
                             <node concept="2qgKlT" id="62$$j6uTaGA" role="2OqNvi">
-                              <ref role="37wK5l" to="tiyw:62$$j6uT0Us" resolve="computeHashCode" />
+                              <ref role="37wK5l" to="89jy:79zp7ziemiv" resolve="computeHashCode" />
                               <node concept="37vLTw" id="62$$j6uUWc8" role="37wK5m">
                                 <ref role="3cqZAo" node="4qaoH_LWON" resolve="repo" />
                               </node>
@@ -857,7 +859,7 @@
                                 <ref role="3cqZAo" node="4qaoH_SCGD" resolve="sol" />
                               </node>
                               <node concept="2qgKlT" id="CmOUmcatIN" role="2OqNvi">
-                                <ref role="37wK5l" to="tiyw:62$$j6uT0Us" resolve="computeHashCode" />
+                                <ref role="37wK5l" to="89jy:79zp7ziemiv" resolve="computeHashCode" />
                                 <node concept="37vLTw" id="CmOUmcatIO" role="37wK5m">
                                   <ref role="3cqZAo" node="4qaoH_LWON" resolve="repo" />
                                 </node>
