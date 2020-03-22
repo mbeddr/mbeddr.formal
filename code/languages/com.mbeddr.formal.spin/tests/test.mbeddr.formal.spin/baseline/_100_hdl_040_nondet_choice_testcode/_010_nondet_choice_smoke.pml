@@ -35,7 +35,7 @@ active proctype h1(){
         Printf("*** default: no choice could be taken due to false guards ; 6785924186075851682\n");
       }
     }
-  fi
+  fi;
   
   
   c_code {

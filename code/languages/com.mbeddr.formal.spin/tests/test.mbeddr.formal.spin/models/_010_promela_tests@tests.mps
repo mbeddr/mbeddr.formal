@@ -478,6 +478,81 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="XLqv_rqYra" role="1SL9yI">
+      <property role="TrG5h" value="test_010_statements_run" />
+      <node concept="3cqZAl" id="XLqv_rqYrb" role="3clF45" />
+      <node concept="3clFbS" id="XLqv_rqYrc" role="3clF47">
+        <node concept="3cpWs8" id="XLqv_rqYrd" role="3cqZAp">
+          <node concept="3cpWsn" id="XLqv_rqYre" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="XLqv_rqYrf" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="XLqv_rqYrg" role="33vP2m">
+              <node concept="1jxXqW" id="XLqv_rqYrh" role="2Oq$k0" />
+              <node concept="liA8E" id="XLqv_rqYri" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="XLqv_rqYrj" role="3cqZAp">
+          <node concept="3cpWsn" id="XLqv_rqYrk" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="XLqv_rqYrl" role="1tU5fm" />
+            <node concept="2OqwBi" id="XLqv_rqYrm" role="33vP2m">
+              <node concept="2JrnkZ" id="XLqv_rqYrn" role="2Oq$k0">
+                <node concept="1Xw6AR" id="XLqv_rqYro" role="2JrQYb">
+                  <node concept="1dCxOl" id="XLqv_rqYrp" role="1XwpL7">
+                    <property role="1XweGQ" value="r:320f2bdb-f9dc-47e7-90f6-2202e88fc049" />
+                    <node concept="1j_P7g" id="XLqv_rqYrq" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_010_statements_testcode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="XLqv_rqYrr" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                <node concept="37vLTw" id="XLqv_rqYrs" role="37wK5m">
+                  <ref role="3cqZAo" node="XLqv_rqYre" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="XLqv_rqYrt" role="3cqZAp">
+          <node concept="3cpWsn" id="XLqv_rqYru" role="3cpWs9">
+            <property role="TrG5h" value="lr" />
+            <node concept="3uibUv" id="XLqv_rqYrv" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="XLqv_rqYrw" role="33vP2m">
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <node concept="37vLTw" id="XLqv_rqYrx" role="37wK5m">
+                <ref role="3cqZAo" node="XLqv_rqYrk" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="XLqv_rqYry" role="37wK5m">
+                <property role="Xl_RC" value="_010_statements_run" />
+              </node>
+              <node concept="37vLTw" id="XLqv_rqYrz" role="37wK5m">
+                <ref role="3cqZAo" node="XLqv_rqYre" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="XLqv_rqYr$" role="3cqZAp">
+          <node concept="2OqwBi" id="XLqv_rqYr_" role="3vwVQn">
+            <node concept="37vLTw" id="XLqv_rqYrA" role="2Oq$k0">
+              <ref role="3cqZAo" node="XLqv_rqYru" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="XLqv_rqZwp" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2XOHcx" id="407WgdX4X7z">
     <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.spin/" />
@@ -1163,6 +1238,85 @@
             </node>
             <node concept="liA8E" id="3xpT6K6zlbZ" role="2OqNvi">
               <ref role="37wK5l" to="imq8:7XCY$_raaB8" resolve="isFail" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="XLqv_rzc2I">
+    <property role="TrG5h" value="_005_basic_constructs" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1LZb2c" id="XLqv_rzc2J" role="1SL9yI">
+      <property role="TrG5h" value="test_010_mtype" />
+      <node concept="3cqZAl" id="XLqv_rzc2K" role="3clF45" />
+      <node concept="3clFbS" id="XLqv_rzc2L" role="3clF47">
+        <node concept="3cpWs8" id="XLqv_rzc2M" role="3cqZAp">
+          <node concept="3cpWsn" id="XLqv_rzc2N" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="XLqv_rzc2O" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="XLqv_rzc2P" role="33vP2m">
+              <node concept="1jxXqW" id="XLqv_rzc2Q" role="2Oq$k0" />
+              <node concept="liA8E" id="XLqv_rzc2R" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="XLqv_rzc2S" role="3cqZAp">
+          <node concept="3cpWsn" id="XLqv_rzc2T" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="XLqv_rzc2U" role="1tU5fm" />
+            <node concept="2OqwBi" id="XLqv_rzc2V" role="33vP2m">
+              <node concept="2JrnkZ" id="XLqv_rzc2W" role="2Oq$k0">
+                <node concept="1Xw6AR" id="XLqv_rzc2X" role="2JrQYb">
+                  <node concept="1dCxOl" id="XLqv_rzcRN" role="1XwpL7">
+                    <property role="1XweGQ" value="r:7a912427-5f4d-42bf-a299-444737d21b09" />
+                    <node concept="1j_P7g" id="XLqv_rzcRO" role="1j$8Uc">
+                      <property role="1j_P7h" value="test.mbeddr.formal.spin._010_promela_005_basic_constructs_testcode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="XLqv_rzc30" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                <node concept="37vLTw" id="XLqv_rzc31" role="37wK5m">
+                  <ref role="3cqZAo" node="XLqv_rzc2N" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="XLqv_rzc32" role="3cqZAp">
+          <node concept="3cpWsn" id="XLqv_rzc33" role="3cpWs9">
+            <property role="TrG5h" value="lr" />
+            <node concept="3uibUv" id="XLqv_rzc34" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:7XCY$_raa_8" resolve="SpinLiftedResult" />
+            </node>
+            <node concept="2YIFZM" id="XLqv_rzc35" role="33vP2m">
+              <ref role="37wK5l" to="hr62:4QGaVz5ryAm" resolve="checkModel" />
+              <ref role="1Pybhc" to="hr62:4QGaVz5ry$K" resolve="SpinTestingUtils" />
+              <node concept="37vLTw" id="XLqv_rzc36" role="37wK5m">
+                <ref role="3cqZAo" node="XLqv_rzc2T" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="XLqv_rzc37" role="37wK5m">
+                <property role="Xl_RC" value="_010_basic_constructs_010_mtype" />
+              </node>
+              <node concept="37vLTw" id="XLqv_rzc38" role="37wK5m">
+                <ref role="3cqZAo" node="XLqv_rzc2N" resolve="repo" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="XLqv_rzc39" role="3cqZAp">
+          <node concept="2OqwBi" id="XLqv_rzc3a" role="3vwVQn">
+            <node concept="37vLTw" id="XLqv_rzc3b" role="2Oq$k0">
+              <ref role="3cqZAo" node="XLqv_rzc33" resolve="lr" />
+            </node>
+            <node concept="liA8E" id="XLqv_rzdnx" role="2OqNvi">
+              <ref role="37wK5l" to="imq8:7XCY$_raaBq" resolve="isSuccess" />
             </node>
           </node>
         </node>

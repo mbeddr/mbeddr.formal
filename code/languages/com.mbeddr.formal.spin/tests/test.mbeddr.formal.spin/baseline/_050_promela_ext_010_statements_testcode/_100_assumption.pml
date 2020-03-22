@@ -7,7 +7,7 @@ active proctype assumption(){
      :: true -> {
       aa = 22;
     }
-  fi
+  fi;
   end_assumption_failed_0: aa > 10;
   assert(aa != 2);
 }
