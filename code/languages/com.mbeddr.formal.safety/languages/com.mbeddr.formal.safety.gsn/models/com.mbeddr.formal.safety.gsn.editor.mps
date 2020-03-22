@@ -3006,9 +3006,6 @@
     <property role="TrG5h" value="UpdatedInformationArea" />
     <ref role="1XX52x" to="py52:79zp7zi8hlj" resolve="IUpdateableSolution" />
     <node concept="3EZMnI" id="79zp7ziel4R" role="2wV5jI">
-      <node concept="3F0ifn" id="79zp7ziel4T" role="3EZMnx">
-        <property role="3F0ifm" value="ver" />
-      </node>
       <node concept="3EZMnI" id="33qt4wr6k_r" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr6k_s" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr6k_t" role="3EZMnx">

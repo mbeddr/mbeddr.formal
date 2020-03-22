@@ -121,7 +121,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
@@ -789,126 +788,18 @@
         </node>
       </node>
       <node concept="3clFbS" id="3jaLROLu6Hy" role="3clF47">
-        <node concept="3cpWs8" id="3jaLROLu6Hz" role="3cqZAp">
-          <node concept="3cpWsn" id="3jaLROLu6H$" role="3cpWs9">
-            <property role="TrG5h" value="millis" />
-            <node concept="3cpWsb" id="3jaLROLu6H_" role="1tU5fm" />
-            <node concept="2YIFZM" id="3jaLROLu6HA" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
-              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+        <node concept="3clFbF" id="1XxXeb0MNhb" role="3cqZAp">
+          <node concept="2OqwBi" id="1XxXeb0MNtg" role="3clFbG">
+            <node concept="37vLTw" id="1XxXeb0MNha" role="2Oq$k0">
+              <ref role="3cqZAo" node="3jaLROLu6Ik" resolve="sol" />
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3jaLROLu6HB" role="3cqZAp">
-          <node concept="3cpWsn" id="3jaLROLu6HC" role="3cpWs9">
-            <property role="TrG5h" value="date" />
-            <node concept="3uibUv" id="3jaLROLu6HD" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Date" resolve="Date" />
-            </node>
-            <node concept="2ShNRf" id="3jaLROLu6HE" role="33vP2m">
-              <node concept="1pGfFk" id="3jaLROLu6HF" role="2ShVmc">
-                <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;(long)" resolve="Date" />
-                <node concept="37vLTw" id="3jaLROLu6HG" role="37wK5m">
-                  <ref role="3cqZAo" node="3jaLROLu6H$" resolve="millis" />
-                </node>
+            <node concept="2qgKlT" id="1XxXeb0MNLO" role="2OqNvi">
+              <ref role="37wK5l" to="89jy:1XxXeb0MCTM" resolve="updateResult" />
+              <node concept="37vLTw" id="1XxXeb0MNWK" role="37wK5m">
+                <ref role="3cqZAo" node="3jaLROLu6Im" resolve="isSuccess" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3jaLROLu6HH" role="3cqZAp">
-          <node concept="37vLTI" id="3jaLROLu6HI" role="3clFbG">
-            <node concept="2OqwBi" id="3jaLROLu6HJ" role="37vLTx">
-              <node concept="37vLTw" id="3jaLROLu6HK" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jaLROLu6HC" resolve="date" />
-              </node>
-              <node concept="liA8E" id="3jaLROLu6HL" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Date.toString()" resolve="toString" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3jaLROLu6HM" role="37vLTJ">
-              <node concept="37vLTw" id="3jaLROLu6Iu" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jaLROLu6Ik" resolve="sol" />
-              </node>
-              <node concept="3TrcHB" id="3jaLROLu6HO" role="2OqNvi">
-                <ref role="3TsBF5" to="py52:4i__4GxssN7" resolve="dateLong" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3jaLROLu6HP" role="3cqZAp">
-          <node concept="3cpWsn" id="3jaLROLu6HQ" role="3cpWs9">
-            <property role="TrG5h" value="formatter" />
-            <node concept="3uibUv" id="3jaLROLu6HR" role="1tU5fm">
-              <ref role="3uigEE" to="25x5:~SimpleDateFormat" resolve="SimpleDateFormat" />
-            </node>
-            <node concept="2ShNRf" id="3jaLROLu6HS" role="33vP2m">
-              <node concept="1pGfFk" id="3jaLROLu6HT" role="2ShVmc">
-                <ref role="37wK5l" to="25x5:~SimpleDateFormat.&lt;init&gt;(java.lang.String)" resolve="SimpleDateFormat" />
-                <node concept="Xl_RD" id="3jaLROLu6HU" role="37wK5m">
-                  <property role="Xl_RC" value="dd-MM-yyyy HH:mm:ss" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3jaLROLu6HV" role="3cqZAp" />
-        <node concept="3clFbF" id="3jaLROLu6HW" role="3cqZAp">
-          <node concept="37vLTI" id="3jaLROLu6HX" role="3clFbG">
-            <node concept="2OqwBi" id="3jaLROLu6HY" role="37vLTx">
-              <node concept="37vLTw" id="3jaLROLu6HZ" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jaLROLu6HQ" resolve="formatter" />
-              </node>
-              <node concept="liA8E" id="3jaLROLu6I0" role="2OqNvi">
-                <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date)" resolve="format" />
-                <node concept="37vLTw" id="3jaLROLu6I1" role="37wK5m">
-                  <ref role="3cqZAo" node="3jaLROLu6HC" resolve="date" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3jaLROLu6I2" role="37vLTJ">
-              <node concept="37vLTw" id="3jaLROLu6It" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jaLROLu6Ik" resolve="sol" />
-              </node>
-              <node concept="3TrcHB" id="3jaLROLu6I4" role="2OqNvi">
-                <ref role="3TsBF5" to="py52:4i__4GxssLz" resolve="dateShort" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3jaLROLu6I5" role="3cqZAp">
-          <node concept="37vLTI" id="3jaLROLu6I6" role="3clFbG">
-            <node concept="2OqwBi" id="3jaLROLu6I7" role="37vLTJ">
-              <node concept="37vLTw" id="3jaLROLu6Ir" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jaLROLu6Ik" resolve="sol" />
-              </node>
-              <node concept="3TrcHB" id="3jaLROLu6I9" role="2OqNvi">
-                <ref role="3TsBF5" to="py52:4i__4GxssK1" resolve="success" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="3jaLROLu6Iv" role="37vLTx">
-              <ref role="3cqZAo" node="3jaLROLu6Im" resolve="isSuccess" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3jaLROLu6Ib" role="3cqZAp">
-          <node concept="37vLTI" id="3jaLROLu6Ic" role="3clFbG">
-            <node concept="2OqwBi" id="3jaLROLu6Id" role="37vLTx">
-              <node concept="37vLTw" id="3jaLROLu6Iw" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jaLROLu6Ik" resolve="sol" />
-              </node>
-              <node concept="2qgKlT" id="3jaLROLu6If" role="2OqNvi">
-                <ref role="37wK5l" to="89jy:79zp7ziemiv" resolve="computeHashCode" />
-                <node concept="37vLTw" id="3jaLROLu6Iq" role="37wK5m">
-                  <ref role="3cqZAo" node="3jaLROLu6Io" resolve="repo" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3jaLROLu6Ih" role="37vLTJ">
-              <node concept="37vLTw" id="3jaLROLu6Is" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jaLROLu6Ik" resolve="sol" />
-              </node>
-              <node concept="3TrcHB" id="3jaLROLu6Ij" role="2OqNvi">
-                <ref role="3TsBF5" to="py52:4i__4GxsrcS" resolve="hashCode" />
+              <node concept="37vLTw" id="1XxXeb0MO8w" role="37wK5m">
+                <ref role="3cqZAo" node="3jaLROLu6Io" resolve="repo" />
               </node>
             </node>
           </node>
