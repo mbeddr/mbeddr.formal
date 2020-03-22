@@ -280,12 +280,6 @@
     <language id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv">
       <concept id="79421622115301715" name="com.mbeddr.formal.safety.gsn.smv.structure.SupportedBySmvVerificationResults" flags="ng" index="1$Gd3o" />
       <concept id="79421622115107638" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolution" flags="ng" index="1$GyEX" />
-      <concept id="4946522816140912984" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase" flags="ng" index="1_P3Oj">
-        <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
-        <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
-        <property id="4946522816140921857" name="success" index="1_P5xa" />
-        <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
-      </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
       <concept id="1258148499699359659" name="com.mbeddr.formal.base.arch.structure.IContractsContainer" flags="ng" index="3Ic8zf">
@@ -336,6 +330,12 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
+        <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
+        <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
+        <property id="4946522816140921857" name="success" index="1_P5xa" />
+        <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
       </concept>
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
         <reference id="2525617932486527189" name="source" index="3VeSjP" />
@@ -7308,32 +7308,32 @@
       <ref role="3VeSjQ" node="65LrkjiXUS0" resolve="G24" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKxUB" role="2vn1q5">
+      <property role="TrG5h" value="Sn1" />
       <property role="1_P5yc" value="Tue Mar 10 23:08:16 CET 2020" />
       <property role="1_P5wC" value="10-03-2020 23:08:16" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="-2108609196" />
-      <property role="TrG5h" value="Sn1" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKy7Y" role="2vn1q5">
+      <property role="TrG5h" value="Sn2" />
       <property role="1_P5yc" value="Tue Mar 10 23:08:16 CET 2020" />
       <property role="1_P5wC" value="10-03-2020 23:08:16" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="1815499518" />
-      <property role="TrG5h" value="Sn2" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKylo" role="2vn1q5">
+      <property role="TrG5h" value="Sn3" />
       <property role="1_P5yc" value="Tue Mar 10 23:08:16 CET 2020" />
       <property role="1_P5wC" value="10-03-2020 23:08:16" />
-      <property role="1_P2tN" value="-1343039639" />
-      <property role="TrG5h" value="Sn3" />
       <property role="1_P5xa" value="true" />
+      <property role="1_P2tN" value="-1343039639" />
     </node>
     <node concept="1$GyEX" id="2iCnExZKyzB" role="2vn1q5">
+      <property role="TrG5h" value="Sn4" />
       <property role="1_P5yc" value="Tue Mar 10 23:08:16 CET 2020" />
       <property role="1_P5wC" value="10-03-2020 23:08:16" />
       <property role="1_P5xa" value="true" />
       <property role="1_P2tN" value="679835276" />
-      <property role="TrG5h" value="Sn4" />
     </node>
     <node concept="1$Gd3o" id="2iCnExZKyP1" role="2vhqc$">
       <ref role="3VeSjP" node="65LrkjiXUrv" resolve="G21" />
