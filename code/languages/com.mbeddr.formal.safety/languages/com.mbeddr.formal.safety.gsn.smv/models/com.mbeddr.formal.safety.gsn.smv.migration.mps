@@ -115,6 +115,7 @@
       <concept id="6911370362349121511" name="jetbrains.mps.lang.smodel.structure.ConceptId" flags="nn" index="2x4n5u">
         <property id="6911370362349122519" name="conceptName" index="2x4mPI" />
         <property id="6911370362349121516" name="conceptId" index="2x4n5l" />
+        <property id="6911370362349133804" name="isInterface" index="2x4o5l" />
         <child id="6911370362349121514" name="languageIdentity" index="2x4n5j" />
       </concept>
       <concept id="6911370362349167452" name="jetbrains.mps.lang.smodel.structure.PropertyId" flags="ng" index="2x5zR_">
@@ -644,6 +645,338 @@
     </node>
     <node concept="3uibUv" id="3mI4G9o4$tj" role="1zkMxy">
       <ref role="3uigEE" to="slm6:5TUCQr2ybBO" resolve="HasMigrationScriptReference" />
+    </node>
+  </node>
+  <node concept="W$Crc" id="79zp7zi8jhO">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="4" />
+    <property role="TrG5h" value="Update References: dateLong-&gt;dateLong" />
+    <node concept="1w76tK" id="79zp7zi8jhP" role="1w76sc">
+      <node concept="1w76tN" id="79zp7zi8jhQ" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jhR" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jhS" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jhT" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jhU" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="79zp7zi8jhW" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="79zp7zi8jhM" role="hSBgu">
+        <property role="2pBcoG" value="4946522816140922055" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="dateLong" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8jhV" role="hSBgs">
+        <property role="2pBcoG" value="4946522816140922055" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="dateLong" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="79zp7zi8jhX">
+    <property role="Z5qvQ" value="5" />
+    <property role="TrG5h" value="Migrate_MovePropertyUp_5" />
+    <node concept="Z4OXk" id="79zp7zi8ji8" role="Z5rET">
+      <node concept="2pBcaW" id="79zp7zi8ji6" role="Z5P1v">
+        <property role="2pBcoG" value="4946522816140922055" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="dateLong_old" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8ji7" role="Z5P1t">
+        <property role="2pBcoG" value="4946522816140922055" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="dateLong" />
+      </node>
+      <node concept="7a1rK" id="79zp7zi8ji5" role="7agGg">
+        <node concept="2x5zR_" id="79zp7zi8jhZ" role="HTpAA">
+          <property role="2x5zRA" value="dateLong_old" />
+          <property role="2x5zRo" value="11kxfzuvjwtl3" />
+          <node concept="2x4n5u" id="79zp7zi8ji0" role="2x5zRt">
+            <property role="2x4mPI" value="SmvResultsSolutionBase" />
+            <property role="2x4n5l" value="11kxfzuvjwml4" />
+            <node concept="2V$Bhx" id="79zp7zi8ji1" role="2x4n5j">
+              <property role="2V$B1T" value="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn.smv" />
+            </node>
+          </node>
+        </node>
+        <node concept="2x5zR_" id="79zp7zi8ji2" role="HTpA_">
+          <property role="2x5zRA" value="dateLong" />
+          <property role="2x5zRo" value="11kxfzuvjwtl3" />
+          <node concept="2x4n5u" id="79zp7zi8ji3" role="2x5zRt">
+            <property role="2x4mPI" value="IUpdateableSolution" />
+            <property role="2x4o5l" value="true" />
+            <property role="2x4n5l" value="1qmfdcyh7t103" />
+            <node concept="2V$Bhx" id="79zp7zi8ji4" role="2x4n5j">
+              <property role="2V$B1T" value="e8a04d94-4307-4f88-95a2-25f7c4f39437" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="79zp7zi8jjK">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="5" />
+    <property role="TrG5h" value="Update References: dateShort-&gt;dateShort" />
+    <node concept="1w76tK" id="79zp7zi8jjL" role="1w76sc">
+      <node concept="1w76tN" id="79zp7zi8jjM" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jjN" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jjO" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jjP" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jjQ" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="79zp7zi8jjS" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="79zp7zi8jjI" role="hSBgu">
+        <property role="2pBcoG" value="4946522816140921955" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="dateShort" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8jjR" role="hSBgs">
+        <property role="2pBcoG" value="4946522816140921955" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="dateShort" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="79zp7zi8jjT">
+    <property role="Z5qvQ" value="6" />
+    <property role="TrG5h" value="Migrate_MovePropertyUp_6" />
+    <node concept="Z4OXk" id="79zp7zi8jk4" role="Z5rET">
+      <node concept="2pBcaW" id="79zp7zi8jk2" role="Z5P1v">
+        <property role="2pBcoG" value="4946522816140921955" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="dateShort_old" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8jk3" role="Z5P1t">
+        <property role="2pBcoG" value="4946522816140921955" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="dateShort" />
+      </node>
+      <node concept="7a1rK" id="79zp7zi8jk1" role="7agGg">
+        <node concept="2x5zR_" id="79zp7zi8jjV" role="HTpAA">
+          <property role="2x5zRA" value="dateShort_old" />
+          <property role="2x5zRo" value="11kxfzuvjwtib" />
+          <node concept="2x4n5u" id="79zp7zi8jjW" role="2x5zRt">
+            <property role="2x4mPI" value="SmvResultsSolutionBase" />
+            <property role="2x4n5l" value="11kxfzuvjwml4" />
+            <node concept="2V$Bhx" id="79zp7zi8jjX" role="2x4n5j">
+              <property role="2V$B1T" value="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn.smv" />
+            </node>
+          </node>
+        </node>
+        <node concept="2x5zR_" id="79zp7zi8jjY" role="HTpA_">
+          <property role="2x5zRA" value="dateShort" />
+          <property role="2x5zRo" value="11kxfzuvjwtib" />
+          <node concept="2x4n5u" id="79zp7zi8jjZ" role="2x5zRt">
+            <property role="2x4mPI" value="IUpdateableSolution" />
+            <property role="2x4o5l" value="true" />
+            <property role="2x4n5l" value="1qmfdcyh7t103" />
+            <node concept="2V$Bhx" id="79zp7zi8jk0" role="2x4n5j">
+              <property role="2V$B1T" value="e8a04d94-4307-4f88-95a2-25f7c4f39437" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="79zp7zi8jli">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="6" />
+    <property role="TrG5h" value="Update References: success-&gt;success" />
+    <node concept="1w76tK" id="79zp7zi8jlj" role="1w76sc">
+      <node concept="1w76tN" id="79zp7zi8jlk" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jll" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jlm" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jln" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jlo" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="79zp7zi8jlq" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="79zp7zi8jlg" role="hSBgu">
+        <property role="2pBcoG" value="4946522816140921857" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="success" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8jlp" role="hSBgs">
+        <property role="2pBcoG" value="4946522816140921857" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="success" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="79zp7zi8jlr">
+    <property role="Z5qvQ" value="7" />
+    <property role="TrG5h" value="Migrate_MovePropertyUp_7" />
+    <node concept="Z4OXk" id="79zp7zi8jlA" role="Z5rET">
+      <node concept="2pBcaW" id="79zp7zi8jl$" role="Z5P1v">
+        <property role="2pBcoG" value="4946522816140921857" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="success_old" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8jl_" role="Z5P1t">
+        <property role="2pBcoG" value="4946522816140921857" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="success" />
+      </node>
+      <node concept="7a1rK" id="79zp7zi8jlz" role="7agGg">
+        <node concept="2x5zR_" id="79zp7zi8jlt" role="HTpAA">
+          <property role="2x5zRA" value="success_old" />
+          <property role="2x5zRo" value="11kxfzuvjwtfl" />
+          <node concept="2x4n5u" id="79zp7zi8jlu" role="2x5zRt">
+            <property role="2x4mPI" value="SmvResultsSolutionBase" />
+            <property role="2x4n5l" value="11kxfzuvjwml4" />
+            <node concept="2V$Bhx" id="79zp7zi8jlv" role="2x4n5j">
+              <property role="2V$B1T" value="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn.smv" />
+            </node>
+          </node>
+        </node>
+        <node concept="2x5zR_" id="79zp7zi8jlw" role="HTpA_">
+          <property role="2x5zRA" value="success" />
+          <property role="2x5zRo" value="11kxfzuvjwtfl" />
+          <node concept="2x4n5u" id="79zp7zi8jlx" role="2x5zRt">
+            <property role="2x4mPI" value="IUpdateableSolution" />
+            <property role="2x4o5l" value="true" />
+            <property role="2x4n5l" value="1qmfdcyh7t103" />
+            <node concept="2V$Bhx" id="79zp7zi8jly" role="2x4n5j">
+              <property role="2V$B1T" value="e8a04d94-4307-4f88-95a2-25f7c4f39437" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="W$Crc" id="79zp7zi8jmP">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="7" />
+    <property role="TrG5h" value="Update References: hashCode-&gt;hashCode" />
+    <node concept="1w76tK" id="79zp7zi8jmQ" role="1w76sc">
+      <node concept="1w76tN" id="79zp7zi8jmR" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jmS" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jmT" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jmU" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="79zp7zi8jmV" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="79zp7zi8jmX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="79zp7zi8jmN" role="hSBgu">
+        <property role="2pBcoG" value="4946522816140915512" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="hashCode" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8jmW" role="hSBgs">
+        <property role="2pBcoG" value="4946522816140915512" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="hashCode" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="79zp7zi8jmY">
+    <property role="Z5qvQ" value="8" />
+    <property role="TrG5h" value="Migrate_MovePropertyUp_8" />
+    <node concept="Z4OXk" id="79zp7zi8jn9" role="Z5rET">
+      <node concept="2pBcaW" id="79zp7zi8jn7" role="Z5P1v">
+        <property role="2pBcoG" value="4946522816140915512" />
+        <property role="2pBcow" value="r:75e88ff0-50a7-4e0f-918f-50f3340a9e00(com.mbeddr.formal.safety.gsn.smv.structure)" />
+        <property role="2pBc3U" value="hashCode_old" />
+      </node>
+      <node concept="2pBcaW" id="79zp7zi8jn8" role="Z5P1t">
+        <property role="2pBcoG" value="4946522816140915512" />
+        <property role="2pBcow" value="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+        <property role="2pBc3U" value="hashCode" />
+      </node>
+      <node concept="7a1rK" id="79zp7zi8jn6" role="7agGg">
+        <node concept="2x5zR_" id="79zp7zi8jn0" role="HTpAA">
+          <property role="2x5zRA" value="hashCode_old" />
+          <property role="2x5zRo" value="11kxfzuvjwojc" />
+          <node concept="2x4n5u" id="79zp7zi8jn1" role="2x5zRt">
+            <property role="2x4mPI" value="SmvResultsSolutionBase" />
+            <property role="2x4n5l" value="11kxfzuvjwml4" />
+            <node concept="2V$Bhx" id="79zp7zi8jn2" role="2x4n5j">
+              <property role="2V$B1T" value="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn.smv" />
+            </node>
+          </node>
+        </node>
+        <node concept="2x5zR_" id="79zp7zi8jn3" role="HTpA_">
+          <property role="2x5zRA" value="hashCode" />
+          <property role="2x5zRo" value="11kxfzuvjwojc" />
+          <node concept="2x4n5u" id="79zp7zi8jn4" role="2x5zRt">
+            <property role="2x4mPI" value="IUpdateableSolution" />
+            <property role="2x4o5l" value="true" />
+            <property role="2x4n5l" value="1qmfdcyh7t103" />
+            <node concept="2V$Bhx" id="79zp7zi8jn5" role="2x4n5j">
+              <property role="2V$B1T" value="e8a04d94-4307-4f88-95a2-25f7c4f39437" />
+              <property role="2V$B1Q" value="com.mbeddr.formal.safety.gsn" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -5,7 +5,7 @@
     <use id="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba" name="com.mbeddr.formal.safety.gsn.req" version="0" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="5" />
+    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="9" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
     <use id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests" version="0" />
@@ -211,12 +211,6 @@
       <concept id="79421622118208483" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvTestsGoal" flags="ng" index="1$NnDC">
         <reference id="79421622118208485" name="tests" index="1$NnDI" />
       </concept>
-      <concept id="4946522816140912984" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase" flags="ng" index="1_P3Oj">
-        <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
-        <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
-        <property id="4946522816140921857" name="success" index="1_P5xa" />
-        <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
-      </concept>
     </language>
     <language id="cac6875e-14fd-4552-a69e-b3168e27e2ff" name="com.mbeddr.formal.nusmv.tests">
       <concept id="4678075609353207045" name="com.mbeddr.formal.nusmv.tests.structure.TestStep" flags="ng" index="1J0m7Y">
@@ -241,6 +235,12 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
+        <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
+        <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
+        <property id="4946522816140921857" name="success" index="1_P5xa" />
+        <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
       </concept>
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
         <reference id="2525617932486527189" name="source" index="3VeSjP" />
@@ -917,10 +917,10 @@
     </node>
     <node concept="1$GyEX" id="4qaoH_Ejbb" role="2vn1q5">
       <property role="TrG5h" value="S.01" />
-      <property role="1_P2tN" value="-1271990404" />
-      <property role="1_P5xa" value="true" />
-      <property role="1_P5wC" value="08-12-2019 21:11:37" />
       <property role="1_P5yc" value="Sun Dec 08 21:11:37 CET 2019" />
+      <property role="1_P5wC" value="08-12-2019 21:11:37" />
+      <property role="1_P5xa" value="true" />
+      <property role="1_P2tN" value="-1271990404" />
       <node concept="19SGf9" id="4qaoH_Ejbc" role="2vnaTY">
         <node concept="19SUe$" id="4qaoH_Ejbd" role="19SJt6">
           <property role="19SUeA" value="Verification results. " />
@@ -2295,8 +2295,8 @@
     </node>
     <node concept="1$GyEX" id="4qaoH_QMke" role="2vn1q5">
       <property role="TrG5h" value="S.01" />
-      <property role="1_P5wC" value="17-10-2019 15:02:12" />
       <property role="1_P5yc" value="Thu Oct 17 15:02:12 CEST 2019" />
+      <property role="1_P5wC" value="17-10-2019 15:02:12" />
       <node concept="19SGf9" id="4qaoH_QMkf" role="2vnaTY">
         <node concept="19SUe$" id="4qaoH_QMkg" role="19SJt6">
           <property role="19SUeA" value="Verification results." />

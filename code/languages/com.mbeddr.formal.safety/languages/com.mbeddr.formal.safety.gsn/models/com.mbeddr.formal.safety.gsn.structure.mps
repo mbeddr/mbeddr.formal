@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -277,6 +277,31 @@
           <property role="3PKj8l" value="987654" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="79zp7zi8hlj">
+    <property role="EcuMT" value="8242542213102376275" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IUpdateableSolution" />
+    <node concept="1TJgyi" id="4i__4GxssN7" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140922055" />
+      <property role="TrG5h" value="dateLong" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4i__4GxssLz" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140921955" />
+      <property role="TrG5h" value="dateShort" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4i__4GxssK1" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140921857" />
+      <property role="TrG5h" value="success" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4i__4GxsrcS" role="1TKVEl">
+      <property role="IQ2nx" value="4946522816140915512" />
+      <property role="TrG5h" value="hashCode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

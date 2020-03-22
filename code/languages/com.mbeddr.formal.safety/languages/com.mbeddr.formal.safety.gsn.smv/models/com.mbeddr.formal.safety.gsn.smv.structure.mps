@@ -277,23 +277,38 @@
     <ref role="1TJDcQ" to="py52:3GRi4m$r_RC" resolve="Solution" />
     <node concept="1TJgyi" id="4i__4GxsrcS" role="1TKVEl">
       <property role="IQ2nx" value="4946522816140915512" />
-      <property role="TrG5h" value="hashCode" />
+      <property role="TrG5h" value="hashCode_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="79zp7zi8jmZ" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4i__4GxssK1" role="1TKVEl">
       <property role="IQ2nx" value="4946522816140921857" />
-      <property role="TrG5h" value="success" />
+      <property role="TrG5h" value="success_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="79zp7zi8jls" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4i__4GxssLz" role="1TKVEl">
       <property role="IQ2nx" value="4946522816140921955" />
-      <property role="TrG5h" value="dateShort" />
+      <property role="TrG5h" value="dateShort_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="79zp7zi8jjU" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4i__4GxssN7" role="1TKVEl">
       <property role="IQ2nx" value="4946522816140922055" />
-      <property role="TrG5h" value="dateLong" />
+      <property role="TrG5h" value="dateLong_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="79zp7zi8jhY" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
+      </node>
+    </node>
+    <node concept="PrWs8" id="79zp7zi8hlu" role="PzmwI">
+      <ref role="PrY4T" to="py52:79zp7zi8hlj" resolve="IUpdateableSolution" />
     </node>
   </node>
 </model>
