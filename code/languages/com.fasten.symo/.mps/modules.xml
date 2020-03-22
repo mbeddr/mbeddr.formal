@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.symo.hw/com.fasten.symo.hw.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.symo.hw.sandbox/com.fasten.symo.hw.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
