@@ -67,6 +67,11 @@
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
       </concept>
+      <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
+        <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
+        <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
+        <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
+      </concept>
     </language>
   </registry>
   <node concept="2vn7XN" id="3wuU_o8fB0R">
@@ -120,25 +125,48 @@
   </node>
   <node concept="2vn7XN" id="3wuU_o8gBcc">
     <property role="TrG5h" value="_020_gsn_generated_evidence" />
-    <node concept="3t1IUk" id="3wuU_o8gBui" role="2vn1q5">
-      <property role="TrG5h" value="Sn01" />
-      <property role="3t1IUl" value="nusmv _010_binary_counter.smv" />
-      <property role="3t1IUb" value="^-- specification .* is false" />
-      <node concept="9PVaO" id="3wuU_o8gGvp" role="Kn92X">
-        <property role="1RwFax" value="true" />
-        <property role="3N1Lgt" value="external_evidence" />
-      </node>
-    </node>
     <node concept="37mRI7" id="3wuU_o8gBuZ" role="lGtFl">
       <node concept="37mRIm" id="3wuU_o8gBv0" role="37mRID">
         <property role="37mO49" value="4043927170651944850" />
         <node concept="gqqVs" id="3wuU_o8gBuY" role="37mO4d">
-          <property role="gqqTZ" value="81.0" />
-          <property role="gqqTW" value="35.0" />
+          <property role="gqqTZ" value="-9.0" />
+          <property role="gqqTW" value="-2.0" />
           <property role="gqqTX" value="179.0" />
           <property role="gqqTy" value="145.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
+      </node>
+      <node concept="37mRIm" id="1YvQxlwNLlG" role="37mRID">
+        <property role="37mO49" value="2278779721826112829" />
+        <node concept="gqqVs" id="1YvQxlwNLlF" role="37mO4d">
+          <property role="gqqTZ" value="25.0" />
+          <property role="gqqTW" value="16.0" />
+          <property role="gqqTX" value="225.0" />
+          <property role="gqqTy" value="171.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="2gpUZARg1tQ" role="37mRID">
+        <property role="37mO49" value="2601369717536986951" />
+        <node concept="gqqVs" id="2gpUZARg1tP" role="37mO4d">
+          <property role="gqqTZ" value="277.0" />
+          <property role="gqqTW" value="33.0" />
+          <property role="gqqTX" value="179.0" />
+          <property role="gqqTy" value="96.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3t1IUk" id="1YvQxlwNLkX" role="2vn1q5">
+      <property role="3t1IUl" value="nusmv _010_binary_counter.smv" />
+      <property role="3t1IUb" value="^-- specification .* is false" />
+      <property role="TrG5h" value="Sn02" />
+      <property role="1_P5yc" value="Sun Mar 22 16:05:22 CET 2020" />
+      <property role="1_P5wC" value="22-03-2020 16:05:22" />
+      <property role="1_P2tN" value="42" />
+      <node concept="9PVaO" id="1YvQxlwNLms" role="Kn92X">
+        <property role="1RwFax" value="true" />
+        <property role="3N1Lgt" value="external_evidence" />
       </node>
     </node>
   </node>

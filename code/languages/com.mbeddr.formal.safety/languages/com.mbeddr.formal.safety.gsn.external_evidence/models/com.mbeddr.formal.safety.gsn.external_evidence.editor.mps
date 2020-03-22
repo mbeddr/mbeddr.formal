@@ -16,10 +16,12 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="s9pq" ref="r:8ef909e6-5cd8-45b2-9793-5a70f4829a0a(com.mbeddr.formal.safety.gsn.external_evidence.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -40,6 +42,9 @@
       <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
@@ -78,9 +83,6 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
@@ -110,7 +112,6 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -130,11 +131,6 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
-      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
-        <child id="1068580123160" name="condition" index="3clFbw" />
-        <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -457,6 +453,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="79zp7ziiZGc" role="3EZMnx">
+        <ref role="PMmxG" to="g35p:79zp7ziejLG" resolve="UpdatedInformationArea" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3wuU_o8gxIV">
@@ -555,6 +554,20 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="3wuU_o8hCYA" role="3clF47">
+                            <node concept="3cpWs8" id="1XxXeb0N0w$" role="3cqZAp">
+                              <node concept="3cpWsn" id="1XxXeb0N0w_" role="3cpWs9">
+                                <property role="TrG5h" value="repo" />
+                                <node concept="3uibUv" id="1XxXeb0N0uf" role="1tU5fm">
+                                  <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+                                </node>
+                                <node concept="2OqwBi" id="1XxXeb0N0wA" role="33vP2m">
+                                  <node concept="1Q80Hx" id="1XxXeb0N0wB" role="2Oq$k0" />
+                                  <node concept="liA8E" id="1XxXeb0N0wC" role="2OqNvi">
+                                    <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3cpWs8" id="3wuU_o8hFRj" role="3cqZAp">
                               <node concept="3cpWsn" id="3wuU_o8hFRk" role="3cpWs9">
                                 <property role="TrG5h" value="successfulResult" />
@@ -563,42 +576,36 @@
                                   <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
                                   <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
                                   <node concept="pncrf" id="3wuU_o8hFRm" role="37wK5m" />
-                                  <node concept="2OqwBi" id="3wuU_o8hFRn" role="37wK5m">
-                                    <node concept="1Q80Hx" id="3wuU_o8hFRo" role="2Oq$k0" />
-                                    <node concept="liA8E" id="3wuU_o8hFRp" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-                                    </node>
+                                  <node concept="37vLTw" id="1XxXeb0N0wE" role="37wK5m">
+                                    <ref role="3cqZAo" node="1XxXeb0N0w_" resolve="repo" />
                                   </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbJ" id="3wuU_o8hGkt" role="3cqZAp">
-                              <node concept="3clFbS" id="3wuU_o8hGkv" role="3clFbx">
-                                <node concept="3clFbF" id="3wuU_o8hGPs" role="3cqZAp">
-                                  <node concept="2YIFZM" id="3wuU_o8hGR0" role="3clFbG">
-                                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                                    <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                    <node concept="10Nm6u" id="3wuU_o8hHkr" role="37wK5m" />
-                                    <node concept="Xl_RD" id="3wuU_o8hHxc" role="37wK5m">
-                                      <property role="Xl_RC" value="Success!" />
-                                    </node>
+                            <node concept="3clFbF" id="1XxXeb0MYkk" role="3cqZAp">
+                              <node concept="2OqwBi" id="1XxXeb0MYwP" role="3clFbG">
+                                <node concept="pncrf" id="1XxXeb0MYki" role="2Oq$k0" />
+                                <node concept="2qgKlT" id="1XxXeb0MYRZ" role="2OqNvi">
+                                  <ref role="37wK5l" to="89jy:1XxXeb0MCTM" resolve="updateResult" />
+                                  <node concept="37vLTw" id="1XxXeb0MZi3" role="37wK5m">
+                                    <ref role="3cqZAo" node="3wuU_o8hFRk" resolve="successfulResult" />
+                                  </node>
+                                  <node concept="37vLTw" id="1XxXeb0N0wD" role="37wK5m">
+                                    <ref role="3cqZAo" node="1XxXeb0N0w_" resolve="repo" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="37vLTw" id="3wuU_o8hGvR" role="3clFbw">
-                                <ref role="3cqZAo" node="3wuU_o8hFRk" resolve="successfulResult" />
-                              </node>
-                              <node concept="9aQIb" id="3wuU_o8hHVv" role="9aQIa">
-                                <node concept="3clFbS" id="3wuU_o8hHVw" role="9aQI4">
-                                  <node concept="3clFbF" id="3wuU_o8hIj2" role="3cqZAp">
-                                    <node concept="2YIFZM" id="3wuU_o8hIuo" role="3clFbG">
-                                      <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                                      <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                      <node concept="10Nm6u" id="3wuU_o8hIE9" role="37wK5m" />
-                                      <node concept="Xl_RD" id="3wuU_o8hIQd" role="37wK5m">
-                                        <property role="Xl_RC" value="Fail!" />
-                                      </node>
-                                    </node>
+                            </node>
+                            <node concept="3clFbF" id="1YvQxlwNnmM" role="3cqZAp">
+                              <node concept="2OqwBi" id="1YvQxlwNnmJ" role="3clFbG">
+                                <node concept="10M0yZ" id="1YvQxlwNnmK" role="2Oq$k0">
+                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                                </node>
+                                <node concept="liA8E" id="1YvQxlwNnmL" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                                  <node concept="Xl_RD" id="1YvQxlwNpg6" role="37wK5m">
+                                    <property role="Xl_RC" value="################## called update result" />
                                   </node>
                                 </node>
                               </node>
