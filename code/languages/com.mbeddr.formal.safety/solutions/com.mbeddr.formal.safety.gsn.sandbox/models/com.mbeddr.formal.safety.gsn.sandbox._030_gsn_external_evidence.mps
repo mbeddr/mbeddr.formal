@@ -2,7 +2,6 @@
 <model ref="r:f3a137df-42b0-46a2-a6e5-d7c7b93ec8b0(com.mbeddr.formal.safety.gsn.sandbox._030_gsn_external_evidence)">
   <persistence version="9" />
   <languages>
-    <use id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence" version="0" />
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
   </languages>
   <imports />

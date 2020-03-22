@@ -596,20 +596,6 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbF" id="1YvQxlwNnmM" role="3cqZAp">
-                              <node concept="2OqwBi" id="1YvQxlwNnmJ" role="3clFbG">
-                                <node concept="10M0yZ" id="1YvQxlwNnmK" role="2Oq$k0">
-                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                                </node>
-                                <node concept="liA8E" id="1YvQxlwNnmL" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                                  <node concept="Xl_RD" id="1YvQxlwNpg6" role="37wK5m">
-                                    <property role="Xl_RC" value="################## called update result" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
                           </node>
                           <node concept="2AHcQZ" id="3wuU_o8hCYN" role="2AJF6D">
                             <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />

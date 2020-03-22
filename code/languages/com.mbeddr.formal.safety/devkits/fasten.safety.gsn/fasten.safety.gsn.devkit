@@ -6,5 +6,6 @@
   <exported-language name="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba(com.mbeddr.formal.safety.gsn.req)" />
   <exported-language name="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" />
   <exported-language name="434b2bfb-bd7a-47c9-bced-b445035e6d96(com.mbeddr.formal.safety.req)" />
+  <exported-language name="5e7ffa70-8e23-49f4-8c13-a887bba14c36(com.mbeddr.formal.safety.gsn.external_evidence)" />
 </dev-kit>
 
