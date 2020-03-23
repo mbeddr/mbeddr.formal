@@ -1884,27 +1884,80 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="1EKbsQR0H4v" role="3cqZAp">
-                          <node concept="37vLTI" id="1EKbsQR0HlC" role="3clFbG">
-                            <node concept="37vLTw" id="1EKbsQR0H4t" role="37vLTJ">
-                              <ref role="3cqZAo" node="1EKbsQR0Gb2" resolve="lhsLifted" />
+                        <node concept="3clFbJ" id="3nPAywcrWuJ" role="3cqZAp">
+                          <node concept="3clFbS" id="3nPAywcrWuL" role="3clFbx">
+                            <node concept="3clFbF" id="1EKbsQR0H4v" role="3cqZAp">
+                              <node concept="37vLTI" id="1EKbsQR0HlC" role="3clFbG">
+                                <node concept="37vLTw" id="1EKbsQR0H4t" role="37vLTJ">
+                                  <ref role="3cqZAo" node="1EKbsQR0Gb2" resolve="lhsLifted" />
+                                </node>
+                                <node concept="2OqwBi" id="3nPAywcrbhX" role="37vLTx">
+                                  <node concept="2OqwBi" id="3nPAywcr7D5" role="2Oq$k0">
+                                    <node concept="37vLTw" id="3nPAywcr7iP" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="1EKbsQQYTkw" resolve="lhsRaw" />
+                                    </node>
+                                    <node concept="liA8E" id="3nPAywcr890" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
+                                      <node concept="3cpWs3" id="3nPAywcrFif" role="37wK5m">
+                                        <node concept="3cmrfG" id="3nPAywcrFmG" role="3uHU7w">
+                                          <property role="3cmrfH" value="1" />
+                                        </node>
+                                        <node concept="2OqwBi" id="3nPAywcra11" role="3uHU7B">
+                                          <node concept="10M0yZ" id="3nPAywcrnca" role="2Oq$k0">
+                                            <ref role="3cqZAo" to="2w9c:3nPAywcrmaV" resolve="INSTANCE_NAME_OF_FLATTENED_SYSTEM" />
+                                            <ref role="1PxDUh" to="2w9c:1NcemxUMb0z" resolve="AGArchitectureFlatteningNamingUtils" />
+                                          </node>
+                                          <node concept="liA8E" id="3nPAywcralb" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="2OqwBi" id="3nPAywcraOp" role="37wK5m">
+                                        <node concept="37vLTw" id="3nPAywcraA9" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="1EKbsQQYTkw" resolve="lhsRaw" />
+                                        </node>
+                                        <node concept="liA8E" id="3nPAywcrb53" role="2OqNvi">
+                                          <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="3nPAywcrbJF" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                                    <node concept="10M0yZ" id="3nPAywcrbO_" role="37wK5m">
+                                      <ref role="1PxDUh" to="2w9c:1NcemxUMb15" resolve="AGArchitecturePortsFlatteningUtils" />
+                                      <ref role="3cqZAo" to="2w9c:1EKbsQQZRZR" resolve="MANGLED_NAME_SEPARATOR" />
+                                    </node>
+                                    <node concept="Xl_RD" id="3nPAywcrc0l" role="37wK5m">
+                                      <property role="Xl_RC" value="." />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                             </node>
-                            <node concept="3K4zz7" id="1EKbsQRbue4" role="37vLTx">
-                              <node concept="2OqwBi" id="1EKbsQRbutu" role="3K4E3e">
-                                <node concept="37vLTw" id="1EKbsQRbujh" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="1EKbsQQYYI_" resolve="port" />
-                                </node>
-                                <node concept="3TrcHB" id="1EKbsQRbuBI" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                </node>
+                          </node>
+                          <node concept="2OqwBi" id="3nPAywcrWUz" role="3clFbw">
+                            <node concept="37vLTw" id="3nPAywcrWGU" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1EKbsQQYTkw" resolve="lhsRaw" />
+                            </node>
+                            <node concept="liA8E" id="3nPAywcrX9n" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                              <node concept="10M0yZ" id="3nPAywcrXcd" role="37wK5m">
+                                <ref role="3cqZAo" to="2w9c:1EKbsQQZRZR" resolve="MANGLED_NAME_SEPARATOR" />
+                                <ref role="1PxDUh" to="2w9c:1NcemxUMb15" resolve="AGArchitecturePortsFlatteningUtils" />
                               </node>
-                              <node concept="37vLTw" id="1EKbsQRbuMf" role="3K4GZi">
-                                <ref role="3cqZAo" node="1EKbsQQYTkw" resolve="lhsRaw" />
-                              </node>
-                              <node concept="3y3z36" id="1EKbsQRbtXN" role="3K4Cdx">
-                                <node concept="10Nm6u" id="1EKbsQRbu6a" role="3uHU7w" />
-                                <node concept="37vLTw" id="1EKbsQRbtL0" role="3uHU7B">
-                                  <ref role="3cqZAo" node="1EKbsQQYYI_" resolve="port" />
+                            </node>
+                          </node>
+                          <node concept="9aQIb" id="3nPAywcrXEh" role="9aQIa">
+                            <node concept="3clFbS" id="3nPAywcrXEi" role="9aQI4">
+                              <node concept="3clFbF" id="3nPAywcrXS9" role="3cqZAp">
+                                <node concept="37vLTI" id="3nPAywcrXYT" role="3clFbG">
+                                  <node concept="37vLTw" id="3nPAywcrY9q" role="37vLTx">
+                                    <ref role="3cqZAo" node="1EKbsQQYTkw" resolve="lhsRaw" />
+                                  </node>
+                                  <node concept="37vLTw" id="3nPAywcrXS8" role="37vLTJ">
+                                    <ref role="3cqZAo" node="1EKbsQR0Gb2" resolve="lhsLifted" />
+                                  </node>
                                 </node>
                               </node>
                             </node>

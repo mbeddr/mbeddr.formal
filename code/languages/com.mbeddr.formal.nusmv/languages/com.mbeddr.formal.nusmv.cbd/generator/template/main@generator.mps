@@ -773,6 +773,20 @@
               </node>
             </node>
           </node>
+          <node concept="17Uvod" id="3nPAywcrnRz" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="3nPAywcrnR$" role="3zH0cK">
+              <node concept="3clFbS" id="3nPAywcrnR_" role="2VODD2">
+                <node concept="3clFbF" id="3nPAywcrovy" role="3cqZAp">
+                  <node concept="10M0yZ" id="3nPAywcrows" role="3clFbG">
+                    <ref role="3cqZAo" to="2w9c:3nPAywcrmaV" resolve="INSTANCE_NAME_OF_FLATTENED_SYSTEM" />
+                    <ref role="1PxDUh" to="2w9c:1NcemxUMb0z" resolve="AGArchitectureFlatteningNamingUtils" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

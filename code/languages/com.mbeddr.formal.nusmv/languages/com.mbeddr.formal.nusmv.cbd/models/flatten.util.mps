@@ -263,7 +263,16 @@
         <property role="Xl_RC" value="arch_wiring" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1NcemxUMb0A" role="jymVt" />
+    <node concept="Wx3nA" id="3nPAywcrmaV" role="jymVt">
+      <property role="TrG5h" value="INSTANCE_NAME_OF_FLATTENED_SYSTEM" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="3nPAywcrm9B" role="1B3o_S" />
+      <node concept="17QB3L" id="3nPAywcrmaI" role="1tU5fm" />
+      <node concept="Xl_RD" id="3nPAywcrmc0" role="33vP2m">
+        <property role="Xl_RC" value="flattened" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3nPAywcrm8T" role="jymVt" />
     <node concept="2YIFZL" id="1NcemxUMb0B" role="jymVt">
       <property role="TrG5h" value="nameOfGeneratedSystem" />
       <property role="od$2w" value="false" />

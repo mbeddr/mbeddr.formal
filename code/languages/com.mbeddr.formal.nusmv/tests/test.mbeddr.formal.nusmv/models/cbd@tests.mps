@@ -926,7 +926,7 @@
               <ref role="3cqZAo" node="6EFcW_ADb04" resolve="r1" />
             </node>
             <node concept="Xl_RD" id="5a54bO_Kzz3" role="37wK5m">
-              <property role="Xl_RC" value="out" />
+              <property role="Xl_RC" value="sender.out" />
             </node>
             <node concept="Xl_RD" id="5a54bO_Kzz4" role="37wK5m">
               <property role="Xl_RC" value="9" />
@@ -1163,7 +1163,7 @@
               <ref role="3cqZAo" node="67ygqsMej$$" resolve="r2" />
             </node>
             <node concept="Xl_RD" id="5a54bO_KP$5" role="37wK5m">
-              <property role="Xl_RC" value="out_child_2" />
+              <property role="Xl_RC" value="child.out_child_2" />
             </node>
             <node concept="Xl_RD" id="5a54bO_KP$6" role="37wK5m">
               <property role="Xl_RC" value="6" />
@@ -1944,7 +1944,7 @@
               <ref role="3cqZAo" node="VJbr0X0PLa" resolve="r2" />
             </node>
             <node concept="Xl_RD" id="VJbr0X0PLm" role="37wK5m">
-              <property role="Xl_RC" value="out_child_2" />
+              <property role="Xl_RC" value="child.out_child_2" />
             </node>
             <node concept="Xl_RD" id="VJbr0X0PLn" role="37wK5m">
               <property role="Xl_RC" value="6" />
