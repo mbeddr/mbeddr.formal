@@ -374,11 +374,11 @@
       </node>
     </node>
     <node concept="3aamgX" id="1txDGjXgcss" role="3acgRq">
-      <ref role="30HIoZ" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+      <ref role="30HIoZ" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
       <node concept="b5Tf3" id="1txDGjXgcWs" role="1lVwrX" />
     </node>
     <node concept="3aamgX" id="1txDGjXgcWv" role="3acgRq">
-      <ref role="30HIoZ" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
+      <ref role="30HIoZ" to="vzqj:3Cd5_MRERym" resolve="ComponentInterfaceSMV" />
       <node concept="b5Tf3" id="1txDGjXgdsx" role="1lVwrX" />
     </node>
     <node concept="3aamgX" id="2l5A0OFas7P" role="3acgRq">
