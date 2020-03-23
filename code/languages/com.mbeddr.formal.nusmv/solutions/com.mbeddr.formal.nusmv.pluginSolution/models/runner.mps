@@ -5544,7 +5544,7 @@
     </node>
   </node>
   <node concept="312cEu" id="1ZsZb$iS3xC">
-    <property role="3GE5qa" value="lifted_result" />
+    <property role="3GE5qa" value="lifted_result.counterexample" />
     <property role="TrG5h" value="CounterexampleState" />
     <node concept="3Tm1VV" id="1ZsZb$iS3xD" role="1B3o_S" />
     <node concept="2tJIrI" id="1ZsZb$iTn$9" role="jymVt" />
@@ -5654,7 +5654,7 @@
     </node>
   </node>
   <node concept="3HP615" id="1ZsZb$iTdy_">
-    <property role="3GE5qa" value="lifted_result" />
+    <property role="3GE5qa" value="lifted_result.counterexample" />
     <property role="TrG5h" value="INuSMVWitnessEntry" />
     <node concept="3clFb_" id="1ZsZb$iUgJf" role="jymVt">
       <property role="2aFKle" value="false" />
@@ -5683,7 +5683,7 @@
     </node>
   </node>
   <node concept="312cEu" id="1ZsZb$iTgio">
-    <property role="3GE5qa" value="lifted_result" />
+    <property role="3GE5qa" value="lifted_result.counterexample" />
     <property role="TrG5h" value="Var2ValEntry" />
     <node concept="3Tm1VV" id="1ZsZb$iTgip" role="1B3o_S" />
     <node concept="3uibUv" id="1ZsZb$iTgkX" role="EKbjA">
@@ -8549,7 +8549,7 @@
     </node>
   </node>
   <node concept="312cEu" id="4Hts7PYsVqs">
-    <property role="3GE5qa" value="lifted_result" />
+    <property role="3GE5qa" value="lifted_result.counterexample" />
     <property role="TrG5h" value="LoopStartState" />
     <node concept="2tJIrI" id="4Hts7PYsV$v" role="jymVt" />
     <node concept="3clFb_" id="4Hts7PYsV$w" role="jymVt">
