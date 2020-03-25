@@ -18,6 +18,7 @@
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -500,8 +501,8 @@
     <ref role="1XX52x" to="6jj4:4CA5ZMJ3trC" resolve="MessageSequenceChart" />
     <node concept="3EZMnI" id="4CA5ZMJ3tsv" role="2wV5jI">
       <node concept="2iRkQZ" id="4CA5ZMJ3tsw" role="2iSdaV" />
-      <node concept="3F0A7n" id="4CA5ZMJ6b8h" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="4mOCK0sB6Lg" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="4CA5ZMJ6b8y" role="3EZMnx" />
       <node concept="PMmxH" id="3QO5pQQIAyd" role="3EZMnx">
