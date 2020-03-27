@@ -18,7 +18,7 @@
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports>
-    <import index="88nu" ref="r:d4dedad3-46ad-41a8-810f-c3bbd821571a(_010_features._065_patterns_catalogue)" />
+    <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
   </imports>
   <registry>
     <language id="c1b1e23f-b677-40b8-a490-e192dd8d78e5" name="com.mbeddr.formal.nusmv.sm">
@@ -3126,7 +3126,7 @@
     </node>
     <node concept="1VB52A" id="24coDzLtXkd" role="2vn1q5">
       <property role="TrG5h" value="High-level Safety Argumentation Instance" />
-      <ref role="AygKy" to="88nu:66sW2d$FiRa" resolve="High-level Safety Argumentation" />
+      <ref role="AygKy" to="6r4f:66sW2d$FiRa" resolve="High-level Safety Argumentation" />
       <node concept="2vn7XN" id="24coDzLtXke" role="1VB584">
         <property role="TrG5h" value="High-level Safety Argumentation Structure" />
         <node concept="2vmxSQ" id="24coDzLtXkf" role="2vn1q5">
@@ -3442,7 +3442,7 @@
     </node>
     <node concept="1VB52A" id="24coDzLtXGx" role="2vn1q5">
       <property role="TrG5h" value="Risk-based Argumentation Instance" />
-      <ref role="AygKy" to="88nu:66sW2d$Fk0e" resolve="Risk-based Argumentation" />
+      <ref role="AygKy" to="6r4f:66sW2d$Fk0e" resolve="Risk-based Argumentation" />
       <node concept="2vn7XN" id="24coDzLtXGy" role="1VB584">
         <property role="TrG5h" value="Risk-based Argumentation Structure" />
         <node concept="8gVzV" id="24coDzLtXGz" role="2vn1q5">

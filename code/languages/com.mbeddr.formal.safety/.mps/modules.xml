@@ -21,6 +21,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.cbd.pluginSolution/com.mbeddr.formal.safety.gsn.cbd.pluginSolution.msd" folder="gsn" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.patterns.lib/com.mbeddr.formal.safety.gsn.patterns.lib.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.sandbox/com.mbeddr.formal.safety.gsn.sandbox.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.smv.pluginSolution/com.mbeddr.formal.safety.gsn.smv.pluginSolution.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.spin.pluginSolution/com.mbeddr.formal.safety.gsn.spin.pluginSolution.msd" folder="gsn" />

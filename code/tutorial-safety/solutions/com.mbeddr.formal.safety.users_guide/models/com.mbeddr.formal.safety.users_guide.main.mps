@@ -11,8 +11,8 @@
     <import index="c3og" ref="r:03da4936-751b-48d2-80dc-ab1f2a2cdd5b(_010_features._010_requirements)" />
     <import index="xtgl" ref="r:f55b42c2-771a-4828-bc62-5b64fd2520eb(_010_features._020_hazards_and_risk_analysis)" />
     <import index="io0z" ref="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_assurance_cases_gsn)" />
-    <import index="88nu" ref="r:d4dedad3-46ad-41a8-810f-c3bbd821571a(_010_features._065_patterns_catalogue)" />
     <import index="xumq" ref="r:c5a55244-77a5-42ce-8f29-e1a72cf99b7f(_010_features._100_checkable_assurance_demo)" />
+    <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -536,7 +536,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="4U3OABz7YAe" role="3z_lpI">
             <node concept="2NCMab" id="4U3OABz7YBS" role="2NCMaf">
-              <ref role="2NCMaa" to="88nu:3jaLROLvqLi" resolve="Argument Over Hazards" />
+              <ref role="2NCMaa" to="6r4f:3jaLROLvqLi" resolve="Argument Over Hazards" />
             </node>
           </node>
         </node>
