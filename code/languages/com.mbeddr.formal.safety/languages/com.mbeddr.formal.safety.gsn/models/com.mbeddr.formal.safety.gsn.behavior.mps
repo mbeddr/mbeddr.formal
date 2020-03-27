@@ -129,6 +129,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -319,20 +320,27 @@
             <node concept="2I9FWS" id="4_dUcGNLfuu" role="1tU5fm">
               <ref role="2I9WkF" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
             </node>
-            <node concept="2OqwBi" id="4_dUcGNLfuv" role="33vP2m">
-              <node concept="2OqwBi" id="4_dUcGNLfuw" role="2Oq$k0">
-                <node concept="13iPFW" id="4_dUcGNLfux" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="4_dUcGNLfuy" role="2OqNvi">
-                  <node concept="1xMEDy" id="4_dUcGNLfuz" role="1xVPHs">
-                    <node concept="chp4Y" id="4_dUcGNLfu$" role="ri$Ld">
-                      <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+            <node concept="2OqwBi" id="5uFV_KKTcFb" role="33vP2m">
+              <node concept="2OqwBi" id="5uFV_KKT589" role="2Oq$k0">
+                <node concept="2OqwBi" id="4_dUcGNLfuw" role="2Oq$k0">
+                  <node concept="13iPFW" id="4_dUcGNLfux" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="5uFV_KKThjE" role="2OqNvi">
+                    <node concept="1xMEDy" id="5uFV_KKThjG" role="1xVPHs">
+                      <node concept="chp4Y" id="5uFV_KKTh$b" role="ri$Ld">
+                        <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="5uFV_KKTico" role="2OqNvi">
+                  <node concept="1xMEDy" id="5uFV_KKTicq" role="1xVPHs">
+                    <node concept="chp4Y" id="5uFV_KKTiqZ" role="ri$Ld">
+                      <ref role="cht4Q" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3Tsc0h" id="4_dUcGNLfu_" role="2OqNvi">
-                <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-              </node>
+              <node concept="ANE8D" id="5uFV_KKTdrP" role="2OqNvi" />
             </node>
           </node>
         </node>
