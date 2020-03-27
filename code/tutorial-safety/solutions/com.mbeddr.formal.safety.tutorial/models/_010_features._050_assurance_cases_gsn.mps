@@ -5,7 +5,7 @@
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
   </languages>
   <imports>
-    <import index="88nu" ref="r:d4dedad3-46ad-41a8-810f-c3bbd821571a(_010_features._065_patterns_catalogue)" />
+    <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
   </imports>
   <registry>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
@@ -576,7 +576,7 @@
       </node>
     </node>
     <node concept="1VB52A" id="WKGDODSTiW" role="2vn1q5">
-      <ref role="AygKy" to="88nu:3jaLROLvqLi" resolve="Argument Over Hazards" />
+      <ref role="AygKy" to="6r4f:3jaLROLvqLi" resolve="Argument Over Hazards" />
       <node concept="2vn7XN" id="WKGDODSTiX" role="1VB584">
         <node concept="2vn7WC" id="WKGDODSTiY" role="2vn1q5">
           <property role="TrG5h" value="G01" />
