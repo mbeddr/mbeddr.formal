@@ -241,10 +241,10 @@
       <node concept="10P_77" id="7TjUbLQ8iEp" role="3clF45" />
     </node>
     <node concept="13i0hz" id="6FysnQMU8iW" role="13h7CS">
-      <property role="TrG5h" value="getMitigatedHazardGoals" />
+      <property role="TrG5h" value="getHazardGoals" />
       <node concept="3Tm1VV" id="6FysnQMU8iX" role="1B3o_S" />
       <node concept="2I9FWS" id="6FysnQMU8jI" role="3clF45">
-        <ref role="2I9WkF" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
+        <ref role="2I9WkF" to="2qxf:1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
       </node>
       <node concept="3clFbS" id="6FysnQMU8iZ" role="3clF47">
         <node concept="3clFbF" id="6FysnQMUndy" role="3cqZAp">
@@ -254,8 +254,8 @@
                 <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
               </node>
               <node concept="v3k3i" id="6FysnQMUoUq" role="2OqNvi">
-                <node concept="chp4Y" id="6FysnQMUp5s" role="v3oSu">
-                  <ref role="cht4Q" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
+                <node concept="chp4Y" id="1Y8zh0mfQxo" role="v3oSu">
+                  <ref role="cht4Q" to="2qxf:1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
                 </node>
               </node>
             </node>
