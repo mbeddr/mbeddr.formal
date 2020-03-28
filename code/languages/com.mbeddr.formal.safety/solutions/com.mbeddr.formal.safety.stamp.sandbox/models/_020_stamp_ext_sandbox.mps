@@ -139,14 +139,15 @@
         <ref role="1ipxoE" to="v0ty:3Cm$$O2vV6X" resolve="Acknowledgements" />
       </node>
     </node>
-    <node concept="1iq0qn" id="1Y8zh0lTxk6" role="1iq0qk">
+    <node concept="1iq0qn" id="1Y8zh0lVVXq" role="1iq0qk">
       <property role="2Hw5mZ" value="UCA_10" />
       <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <node concept="1iqbzp" id="1Y8zh0lTxkw" role="1iqeDx">
+      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
+      <node concept="1iqibA" id="1Y8zh0lVVXP" role="1iqeDx">
         <ref role="1iq0r3" to="v0ty:1JhvKLLPHfA" resolve="Change altitude" />
       </node>
-      <node concept="1ipxol" id="1Y8zh0lTxky" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:3Cm$$O2vV6X" resolve="Acknowledgements" />
+      <node concept="1ipxol" id="1Y8zh0lVVXR" role="1ipxpF">
+        <ref role="1ipxoE" to="v0ty:1JhvKLLPHoN" resolve="Aim/Fix on target" />
       </node>
     </node>
   </node>
