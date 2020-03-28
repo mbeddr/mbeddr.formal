@@ -21,6 +21,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -64,6 +65,9 @@
     <property role="34LRSv" value="Hazard Mitigated Goal" />
     <property role="3GE5qa" value="hazards" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="PrWs8" id="1Y8zh0lW0B6" role="PzmwI">
+      <ref role="PrY4T" node="1Y8zh0lW0rm" resolve="IHazardReferencingGoal" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7TjUbLQ4nfd">
     <property role="EcuMT" value="9102875167978255309" />
@@ -220,6 +224,11 @@
     <property role="3GE5qa" value="requirements" />
     <property role="TrG5h" value="SupportedByRequirementSatisfiedGoal" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+  </node>
+  <node concept="PlHQZ" id="1Y8zh0lW0rm">
+    <property role="EcuMT" value="2272221112235460310" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="IHazardReferencingGoal" />
   </node>
 </model>
 

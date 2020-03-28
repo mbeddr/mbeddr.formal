@@ -250,6 +250,9 @@
     <property role="3GE5qa" value="hazards" />
     <property role="TrG5h" value="HazardMitigatedGoalTextArea" />
     <ref role="1XX52x" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
+    <node concept="1PE4EZ" id="65Lrkjj21wJ" role="1PM95z">
+      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    </node>
     <node concept="3EZMnI" id="65Lrkjj21wb" role="2wV5jI">
       <node concept="3EZMnI" id="65Lrkjj21wc" role="3EZMnx">
         <node concept="VPM3Z" id="65Lrkjj21wd" role="3F10Kt" />
@@ -272,9 +275,6 @@
       <node concept="xShMh" id="65Lrkjj21wk" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
-    </node>
-    <node concept="1PE4EZ" id="65Lrkjj21wJ" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
     </node>
   </node>
   <node concept="PKFIW" id="65Lrkjj2ym7">
