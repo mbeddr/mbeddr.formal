@@ -47,6 +47,11 @@
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
@@ -55,6 +60,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="1L4MZBxVFrV">
+    <property role="3GE5qa" value="hazards" />
     <ref role="13h7C2" to="cjwq:7TjUbLQ4519" resolve="HazardsList" />
     <node concept="13hLZK" id="1L4MZBxVFrW" role="13h7CW">
       <node concept="3clFbS" id="1L4MZBxVFrX" role="2VODD2">
@@ -71,6 +77,33 @@
                 <node concept="3zrR0B" id="1L4MZBxVKBg" role="2ShVmc">
                   <node concept="3Tqbb2" id="1L4MZBxVKBi" role="3zrR0E">
                     <ref role="ehGHo" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2hOvri9WScV">
+    <property role="3GE5qa" value="losses" />
+    <ref role="13h7C2" to="cjwq:2hOvri9WL4A" resolve="Losses" />
+    <node concept="13hLZK" id="2hOvri9WScW" role="13h7CW">
+      <node concept="3clFbS" id="2hOvri9WScX" role="2VODD2">
+        <node concept="3clFbF" id="2hOvri9WSd6" role="3cqZAp">
+          <node concept="2OqwBi" id="2hOvri9WSd7" role="3clFbG">
+            <node concept="2OqwBi" id="2hOvri9WSd8" role="2Oq$k0">
+              <node concept="13iPFW" id="2hOvri9WSd9" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2hOvri9WSBC" role="2OqNvi">
+                <ref role="3TtcxE" to="cjwq:2hOvri9WL4B" resolve="losses" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="2hOvri9WSdb" role="2OqNvi">
+              <node concept="2ShNRf" id="2hOvri9WSdc" role="25WWJ7">
+                <node concept="3zrR0B" id="2hOvri9WSdd" role="2ShVmc">
+                  <node concept="3Tqbb2" id="2hOvri9WSde" role="3zrR0E">
+                    <ref role="ehGHo" to="cjwq:2hOvri9WL4e" resolve="Loss" />
                   </node>
                 </node>
               </node>

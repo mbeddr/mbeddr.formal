@@ -63,7 +63,7 @@
     <property role="TrG5h" value="HazardMitigatedGoal" />
     <property role="34LRSv" value="Hazard Mitigated Goal" />
     <property role="3GE5qa" value="hazards" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <ref role="1TJDcQ" node="1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
   </node>
   <node concept="1TIwiD" id="7TjUbLQ4nfd">
     <property role="EcuMT" value="9102875167978255309" />
@@ -143,36 +143,6 @@
       <ref role="20lvS9" node="6rlO$dpPTOC" resolve="AbstractComponentRef" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2RlaC$P86Ok">
-    <property role="EcuMT" value="3302592670536330516" />
-    <property role="3GE5qa" value="hazards" />
-    <property role="TrG5h" value="HazardsListRefWord" />
-    <property role="34LRSv" value="@hazardsList" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2RlaC$P86Ol" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="2RlaC$Pcvh7" role="1TKVEi">
-      <property role="IQ2ns" value="3302592670537479239" />
-      <property role="20kJfa" value="hazardsList" />
-      <ref role="20lvS9" to="cjwq:7TjUbLQ4gD0" resolve="IHazardsContainer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2RlaC$PbkQu">
-    <property role="EcuMT" value="3302592670537174430" />
-    <property role="3GE5qa" value="hazards" />
-    <property role="TrG5h" value="HazardRefWord" />
-    <property role="34LRSv" value="@hazard" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2RlaC$PbkQx" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="2RlaC$PcChp" role="1TKVEi">
-      <property role="IQ2ns" value="3302592670537516121" />
-      <property role="20kJfa" value="hazard" />
-      <ref role="20lvS9" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2rzNEUxND_5">
     <property role="EcuMT" value="2802310642588883269" />
     <property role="3GE5qa" value="requirements" />
@@ -220,6 +190,33 @@
     <property role="3GE5qa" value="requirements" />
     <property role="TrG5h" value="SupportedByRequirementSatisfiedGoal" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+  </node>
+  <node concept="1TIwiD" id="1Y8zh0lZjGe">
+    <property role="EcuMT" value="2272221112236325646" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardSubstitutionGoal" />
+    <property role="34LRSv" value="Hazard Substitution Goal" />
+    <ref role="1TJDcQ" node="1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
+  </node>
+  <node concept="1TIwiD" id="1Y8zh0lZjGU">
+    <property role="EcuMT" value="2272221112236325690" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="NegligibleHazardGoal" />
+    <property role="34LRSv" value="Negligible Hazard Goal" />
+    <ref role="1TJDcQ" node="1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
+  </node>
+  <node concept="1TIwiD" id="1Y8zh0lZjGV">
+    <property role="EcuMT" value="2272221112236325691" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="EliminatedHazardGoal" />
+    <property role="34LRSv" value="Eliminated Hazard Goal" />
+    <ref role="1TJDcQ" node="1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
+  </node>
+  <node concept="1TIwiD" id="1Y8zh0lZmaj">
+    <property role="EcuMT" value="2272221112236335763" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardReferencingGoalBase" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
   </node>
 </model>
 
