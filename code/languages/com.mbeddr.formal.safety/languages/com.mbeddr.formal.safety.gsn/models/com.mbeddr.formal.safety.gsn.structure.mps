@@ -201,6 +201,7 @@
     <property role="EcuMT" value="4266958635905770170" />
     <property role="TrG5h" value="InContextOfConnection" />
     <property role="3GE5qa" value="connections" />
+    <property role="34LRSv" value="inContextOf" />
     <ref role="1TJDcQ" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
     <node concept="1TJgyj" id="3GRi4m$sIbL" role="1TKVEi">
       <property role="IQ2ns" value="4266958635905770225" />
@@ -236,6 +237,7 @@
     <property role="EcuMT" value="2525617932486533707" />
     <property role="TrG5h" value="SupportedByConnection" />
     <property role="3GE5qa" value="connections" />
+    <property role="34LRSv" value="supportedBy" />
     <ref role="1TJDcQ" node="2ccN23odOxd" resolve="GoalStructureConnectionBase" />
   </node>
   <node concept="PlHQZ" id="7bxPmtp5I2v">
