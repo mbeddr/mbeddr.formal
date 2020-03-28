@@ -268,6 +268,19 @@
   <node concept="13h7C7" id="7TjUbLQ5Oz3">
     <property role="3GE5qa" value="hazards" />
     <ref role="13h7C2" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
+    <node concept="13i0hz" id="1Y8zh0mggJu" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="1Y8zh0mggJv" role="1B3o_S" />
+      <node concept="3clFbS" id="1Y8zh0mggJw" role="3clF47">
+        <node concept="3clFbF" id="1Y8zh0mggJx" role="3cqZAp">
+          <node concept="Xl_RD" id="1Y8zh0mggJy" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Argument Over Hazards Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1Y8zh0mggJz" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="7TjUbLQ5Oz4" role="13h7CW">
       <node concept="3clFbS" id="7TjUbLQ5Oz5" role="2VODD2">
         <node concept="3clFbF" id="2RlaC$PaR3P" role="3cqZAp">
@@ -1011,6 +1024,19 @@
   <node concept="13h7C7" id="1Y8zh0lZjVe">
     <property role="3GE5qa" value="hazards" />
     <ref role="13h7C2" to="2qxf:1Y8zh0lZjGe" resolve="HazardSubstitutionGoal" />
+    <node concept="13i0hz" id="1Y8zh0mggOS" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="1Y8zh0mggOT" role="1B3o_S" />
+      <node concept="3clFbS" id="1Y8zh0mggOU" role="3clF47">
+        <node concept="3clFbF" id="1Y8zh0mggOV" role="3cqZAp">
+          <node concept="Xl_RD" id="1Y8zh0mggOW" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Argument Over Hazards Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1Y8zh0mggOX" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="1Y8zh0lZjVf" role="13h7CW">
       <node concept="3clFbS" id="1Y8zh0lZjVg" role="2VODD2">
         <node concept="3clFbF" id="1Y8zh0lZmVi" role="3cqZAp">
@@ -1077,6 +1103,19 @@
   <node concept="13h7C7" id="1Y8zh0lZjVO">
     <property role="3GE5qa" value="hazards" />
     <ref role="13h7C2" to="2qxf:1Y8zh0lZjGU" resolve="NegligibleHazardGoal" />
+    <node concept="13i0hz" id="1Y8zh0mggUc" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="1Y8zh0mggUd" role="1B3o_S" />
+      <node concept="3clFbS" id="1Y8zh0mggUe" role="3clF47">
+        <node concept="3clFbF" id="1Y8zh0mggUf" role="3cqZAp">
+          <node concept="Xl_RD" id="1Y8zh0mggUg" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Argument Over Hazards Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1Y8zh0mggUh" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="1Y8zh0lZjVP" role="13h7CW">
       <node concept="3clFbS" id="1Y8zh0lZjVQ" role="2VODD2">
         <node concept="3clFbF" id="1Y8zh0lZllo" role="3cqZAp">
@@ -1139,6 +1178,19 @@
   <node concept="13h7C7" id="1Y8zh0lZjWq">
     <property role="3GE5qa" value="hazards" />
     <ref role="13h7C2" to="2qxf:1Y8zh0lZjGV" resolve="EliminatedHazardGoal" />
+    <node concept="13i0hz" id="1Y8zh0lZmbb" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="1Y8zh0lZmbc" role="1B3o_S" />
+      <node concept="3clFbS" id="1Y8zh0lZmbd" role="3clF47">
+        <node concept="3clFbF" id="1Y8zh0lZmbe" role="3cqZAp">
+          <node concept="Xl_RD" id="1Y8zh0lZmbf" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Argument Over Hazards Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1Y8zh0lZmbg" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="1Y8zh0lZjWr" role="13h7CW">
       <node concept="3clFbS" id="1Y8zh0lZjWs" role="2VODD2">
         <node concept="3clFbF" id="1Y8zh0lZl2s" role="3cqZAp">
@@ -1237,19 +1289,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="1Y8zh0lZmbb" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="1Y8zh0lZmbc" role="1B3o_S" />
-      <node concept="3clFbS" id="1Y8zh0lZmbd" role="3clF47">
-        <node concept="3clFbF" id="1Y8zh0lZmbe" role="3cqZAp">
-          <node concept="Xl_RD" id="1Y8zh0lZmbf" role="3clFbG">
-            <property role="Xl_RC" value="03 Checkable Patterns/Argument Over Hazards Pattern" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="1Y8zh0lZmbg" role="3clF45" />
     </node>
     <node concept="13hLZK" id="1Y8zh0lZmaK" role="13h7CW">
       <node concept="3clFbS" id="1Y8zh0lZmaL" role="2VODD2" />
