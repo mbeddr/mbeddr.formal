@@ -2885,6 +2885,9 @@
     <ref role="1XX52x" to="py52:3GRi4m$rlnF" resolve="Strategy" />
     <node concept="3EZMnI" id="3Ngc4zVhb4d" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVhb4e" role="3EZMnx">
+        <node concept="PMmxH" id="5uFV_KKUnlP" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
+        </node>
         <node concept="VPM3Z" id="3Ngc4zVhb4f" role="3F10Kt" />
         <node concept="3F0ifn" id="3Ngc4zVhb4g" role="3EZMnx">
           <property role="3F0ifm" value="Strategy:" />
@@ -3030,6 +3033,9 @@
     <node concept="3EZMnI" id="33qt4wr8iwt" role="2wV5jI">
       <node concept="3EZMnI" id="33qt4wr8iwu" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr8iwv" role="3F10Kt" />
+        <node concept="PMmxH" id="5uFV_KKTZIo" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:4qaoH_GDoF" resolve="iconCell_" />
+        </node>
         <node concept="3F0ifn" id="33qt4wr8iww" role="3EZMnx">
           <property role="3F0ifm" value="Context:" />
           <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
