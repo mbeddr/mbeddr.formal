@@ -63,6 +63,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -74,6 +77,7 @@
     <property role="34LRSv" value="hazards list" />
     <property role="R4oN_" value="the list of hazards" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="hazards" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7TjUbLQ451N" role="1TKVEi">
       <property role="IQ2ns" value="9102875167978180723" />
@@ -109,14 +113,21 @@
     <property role="EcuMT" value="9102875167978180720" />
     <property role="TrG5h" value="Hazard" />
     <property role="34LRSv" value="hazard" />
+    <property role="3GE5qa" value="hazards" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7TjUbLQ4gDe" role="PzmwI">
       <ref role="PrY4T" node="7TjUbLQ4gDb" resolve="IHazardLike" />
+    </node>
+    <node concept="1TJgyj" id="2hOvri9WUpw" role="1TKVEi">
+      <property role="IQ2ns" value="2626862697025873504" />
+      <property role="20kJfa" value="loss" />
+      <ref role="20lvS9" node="2hOvri9WL4e" resolve="Loss" />
     </node>
   </node>
   <node concept="PlHQZ" id="7TjUbLQ4gD0">
     <property role="EcuMT" value="9102875167978228288" />
     <property role="TrG5h" value="IHazardsContainer" />
+    <property role="3GE5qa" value="hazards" />
     <node concept="PrWs8" id="7TjUbLQ4gD9" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -131,6 +142,7 @@
   <node concept="PlHQZ" id="7TjUbLQ4gDb">
     <property role="EcuMT" value="9102875167978228299" />
     <property role="TrG5h" value="IHazardLike" />
+    <property role="3GE5qa" value="hazards" />
     <node concept="1TJgyi" id="2N7iSwG$CrI" role="1TKVEl">
       <property role="IQ2nx" value="3226630706269685486" />
       <property role="TrG5h" value="id" />
@@ -143,12 +155,47 @@
   <node concept="1TIwiD" id="6W1kQP6AMY_">
     <property role="EcuMT" value="7998766141987827621" />
     <property role="TrG5h" value="HazardRef" />
+    <property role="3GE5qa" value="hazards" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6W1kQP6AMYA" role="1TKVEi">
       <property role="IQ2ns" value="7998766141987827622" />
       <property role="20kJfa" value="hazard" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7TjUbLQ451K" resolve="Hazard" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2hOvri9WL4e">
+    <property role="EcuMT" value="2626862697025835278" />
+    <property role="TrG5h" value="Loss" />
+    <property role="34LRSv" value="loss" />
+    <property role="3GE5qa" value="losses" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2hOvri9WL4h" role="1TKVEl">
+      <property role="IQ2nx" value="2626862697025835281" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2hOvri9WL4f" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2hOvri9WL4A">
+    <property role="EcuMT" value="2626862697025835302" />
+    <property role="TrG5h" value="Losses" />
+    <property role="34LRSv" value="losses" />
+    <property role="R4oN_" value="losses considered during safety concept" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="losses" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2hOvri9WL4B" role="1TKVEi">
+      <property role="IQ2ns" value="2626862697025835303" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="losses" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2hOvri9WL4e" resolve="Loss" />
+    </node>
+    <node concept="PrWs8" id="2hOvri9WL54" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

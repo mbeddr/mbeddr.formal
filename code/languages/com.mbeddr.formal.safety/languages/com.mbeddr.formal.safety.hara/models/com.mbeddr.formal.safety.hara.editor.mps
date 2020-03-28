@@ -62,8 +62,14 @@
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="7TjUbLQ451I">
+    <property role="3GE5qa" value="hazards" />
     <ref role="1XX52x" to="cjwq:7TjUbLQ4519" resolve="HazardsList" />
     <node concept="3EZMnI" id="7TjUbLQ452l" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
@@ -79,6 +85,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7TjUbLQ4520">
+    <property role="3GE5qa" value="hazards" />
     <ref role="1XX52x" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
     <node concept="2r0Tta" id="7TjUbLQ4522" role="2wV5jI">
       <node concept="2reCLk" id="7TjUbLQ4525" role="2r0Tv6">
@@ -98,10 +105,25 @@
             <property role="2rfbtB" value="Hazard Name" />
           </node>
         </node>
+        <node concept="2reCLy" id="2hOvri9WUql" role="2reCL6">
+          <node concept="1iCGBv" id="2hOvri9WUq$" role="2reSmM">
+            <ref role="1NtTu8" to="cjwq:2hOvri9WUpw" resolve="loss" />
+            <node concept="1sVBvm" id="2hOvri9WUqA" role="1sWHZn">
+              <node concept="3F0A7n" id="2hOvri9WUqH" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="cjwq:2hOvri9WL4h" resolve="id" />
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="2hOvri9WUqK" role="2recC9">
+            <property role="2rfbtB" value="Associated loss" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="6W1kQP6AMYC">
+    <property role="3GE5qa" value="hazards" />
     <ref role="1XX52x" to="cjwq:6W1kQP6AMY_" resolve="HazardRef" />
     <node concept="1iCGBv" id="6W1kQP6AMYE" role="2wV5jI">
       <ref role="1NtTu8" to="cjwq:6W1kQP6AMYA" resolve="hazard" />
@@ -111,6 +133,46 @@
           <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2hOvri9WL4j">
+    <property role="3GE5qa" value="losses" />
+    <ref role="1XX52x" to="cjwq:2hOvri9WL4e" resolve="Loss" />
+    <node concept="2r0Tta" id="2hOvri9WL4l" role="2wV5jI">
+      <node concept="2reCLk" id="2hOvri9WL4o" role="2r0Tv6">
+        <node concept="2reCLy" id="2hOvri9WL4p" role="2reCL6">
+          <node concept="3F0A7n" id="2hOvri9WL4q" role="2reSmM">
+            <ref role="1NtTu8" to="cjwq:2hOvri9WL4h" resolve="id" />
+          </node>
+          <node concept="2rfbtV" id="2hOvri9WL4r" role="2recC9">
+            <property role="2rfbtB" value="Loss ID" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="2hOvri9WL4s" role="2reCL6">
+          <node concept="3F0A7n" id="2hOvri9WL4t" role="2reSmM">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="2rfbtV" id="2hOvri9WL4u" role="2recC9">
+            <property role="2rfbtB" value="Loss Name" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2hOvri9WL5x">
+    <property role="3GE5qa" value="losses" />
+    <ref role="1XX52x" to="cjwq:2hOvri9WL4A" resolve="Losses" />
+    <node concept="3EZMnI" id="2hOvri9WL5z" role="2wV5jI">
+      <node concept="PMmxH" id="2hOvri9WL5$" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+      </node>
+      <node concept="3F0ifn" id="2hOvri9WL5_" role="3EZMnx" />
+      <node concept="2rfBfz" id="2hOvri9WL5A" role="3EZMnx">
+        <node concept="2reSaE" id="2hOvri9WL5B" role="2rf8GZ">
+          <ref role="2reCK$" to="cjwq:2hOvri9WL4B" resolve="losses" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="2hOvri9WL5C" role="2iSdaV" />
     </node>
   </node>
 </model>
