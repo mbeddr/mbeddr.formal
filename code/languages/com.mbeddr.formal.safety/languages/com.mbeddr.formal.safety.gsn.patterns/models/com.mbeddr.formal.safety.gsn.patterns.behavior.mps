@@ -12,7 +12,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
-    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" implicit="true" />
+    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" implicit="true" />
   </imports>
@@ -57,6 +57,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -188,7 +189,7 @@
                       </node>
                     </node>
                     <node concept="2pJPED" id="2RlaC$P8aGS" role="36be1Z">
-                      <ref role="2pJxaS" to="2qxf:2RlaC$P86Ok" resolve="HazardsListRefWord" />
+                      <ref role="2pJxaS" to="cjwq:2RlaC$P86Ok" resolve="HazardsListRefWord" />
                     </node>
                     <node concept="2pJPED" id="2RlaC$P8b2t" role="36be1Z">
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
@@ -267,56 +268,6 @@
   <node concept="13h7C7" id="7TjUbLQ5Oz3">
     <property role="3GE5qa" value="hazards" />
     <ref role="13h7C2" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
-    <node concept="13i0hz" id="2RlaC$Pblio" role="13h7CS">
-      <property role="TrG5h" value="getHazard" />
-      <node concept="3Tm1VV" id="2RlaC$Pblip" role="1B3o_S" />
-      <node concept="3Tqbb2" id="2RlaC$Pbliq" role="3clF45">
-        <ref role="ehGHo" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
-      </node>
-      <node concept="3clFbS" id="2RlaC$Pblir" role="3clF47">
-        <node concept="3clFbF" id="2RlaC$Pblis" role="3cqZAp">
-          <node concept="2OqwBi" id="2RlaC$Pblit" role="3clFbG">
-            <node concept="2OqwBi" id="2RlaC$Pbliu" role="2Oq$k0">
-              <node concept="2OqwBi" id="2RlaC$Pbliv" role="2Oq$k0">
-                <node concept="2OqwBi" id="2RlaC$Pbliw" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2RlaC$Pblix" role="2Oq$k0">
-                    <node concept="13iPFW" id="2RlaC$Pbliy" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="2RlaC$Pbliz" role="2OqNvi">
-                      <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="2RlaC$Pbli$" role="2OqNvi">
-                    <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
-                  </node>
-                </node>
-                <node concept="v3k3i" id="2RlaC$Pbli_" role="2OqNvi">
-                  <node concept="chp4Y" id="2RlaC$PblGb" role="v3oSu">
-                    <ref role="cht4Q" to="2qxf:2RlaC$PbkQu" resolve="HazardRefWord" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1uHKPH" id="2RlaC$PbliB" role="2OqNvi" />
-            </node>
-            <node concept="3TrEf2" id="2RlaC$PcS6V" role="2OqNvi">
-              <ref role="3Tt5mk" to="2qxf:2RlaC$PcChp" resolve="hazard" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="7TjUbLQ5OzA" role="13h7CS">
-      <property role="TrG5h" value="paletteFolderName" />
-      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
-      <node concept="3Tm1VV" id="7TjUbLQ5OzB" role="1B3o_S" />
-      <node concept="3clFbS" id="7TjUbLQ5OzC" role="3clF47">
-        <node concept="3clFbF" id="7TjUbLQ5OzD" role="3cqZAp">
-          <node concept="Xl_RD" id="7TjUbLQ5OzE" role="3clFbG">
-            <property role="Xl_RC" value="03 Checkable Patterns/Argument Over Hazards Pattern" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="7TjUbLQ5OzF" role="3clF45" />
-    </node>
     <node concept="13hLZK" id="7TjUbLQ5Oz4" role="13h7CW">
       <node concept="3clFbS" id="7TjUbLQ5Oz5" role="2VODD2">
         <node concept="3clFbF" id="2RlaC$PaR3P" role="3cqZAp">
@@ -337,7 +288,7 @@
                       </node>
                     </node>
                     <node concept="2pJPED" id="2RlaC$PbkY4" role="36be1Z">
-                      <ref role="2pJxaS" to="2qxf:2RlaC$PbkQu" resolve="HazardRefWord" />
+                      <ref role="2pJxaS" to="cjwq:2RlaC$PbkQu" resolve="HazardRefWord" />
                     </node>
                     <node concept="2pJPED" id="2RlaC$PaTf3" role="36be1Z">
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
@@ -1055,6 +1006,253 @@
     </node>
     <node concept="13hLZK" id="4MR8i$4iWm7" role="13h7CW">
       <node concept="3clFbS" id="4MR8i$4iWm8" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1Y8zh0lZjVe">
+    <property role="3GE5qa" value="hazards" />
+    <ref role="13h7C2" to="2qxf:1Y8zh0lZjGe" resolve="HazardSubstitutionGoal" />
+    <node concept="13hLZK" id="1Y8zh0lZjVf" role="13h7CW">
+      <node concept="3clFbS" id="1Y8zh0lZjVg" role="2VODD2">
+        <node concept="3clFbF" id="1Y8zh0lZmVi" role="3cqZAp">
+          <node concept="37vLTI" id="1Y8zh0lZmVj" role="3clFbG">
+            <node concept="2pJPEk" id="1Y8zh0lZmVk" role="37vLTx">
+              <node concept="2pJPED" id="1Y8zh0lZmVl" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="1Y8zh0lZmVm" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="1Y8zh0lZmVn" role="28nt2d">
+                    <node concept="2pJPED" id="1Y8zh0lZmVo" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="1Y8zh0lZmVp" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="1Y8zh0lZmVq" role="28ntcv">
+                          <property role="Xl_RC" value="Hazard " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pJPED" id="1Y8zh0lZmVr" role="36be1Z">
+                      <ref role="2pJxaS" to="cjwq:2RlaC$PbkQu" resolve="HazardRefWord" />
+                    </node>
+                    <node concept="2pJPED" id="1Y8zh0lZmVs" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="1Y8zh0lZmVt" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="1Y8zh0lZmVu" role="28ntcv">
+                          <property role="Xl_RC" value="\n has been substituted \n with hazard " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pJPED" id="1Y8zh0lZn8c" role="36be1Z">
+                      <ref role="2pJxaS" to="cjwq:2RlaC$PbkQu" resolve="HazardRefWord" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1Y8zh0lZmVv" role="37vLTJ">
+              <node concept="13iPFW" id="1Y8zh0lZmVw" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1Y8zh0lZmVx" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Y8zh0lZmVy" role="3cqZAp">
+          <node concept="37vLTI" id="1Y8zh0lZmVz" role="3clFbG">
+            <node concept="3clFbT" id="1Y8zh0lZmV$" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1Y8zh0lZmV_" role="37vLTJ">
+              <node concept="13iPFW" id="1Y8zh0lZmVA" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1Y8zh0lZmVB" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1Y8zh0lZlhx" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1Y8zh0lZjVO">
+    <property role="3GE5qa" value="hazards" />
+    <ref role="13h7C2" to="2qxf:1Y8zh0lZjGU" resolve="NegligibleHazardGoal" />
+    <node concept="13hLZK" id="1Y8zh0lZjVP" role="13h7CW">
+      <node concept="3clFbS" id="1Y8zh0lZjVQ" role="2VODD2">
+        <node concept="3clFbF" id="1Y8zh0lZllo" role="3cqZAp">
+          <node concept="37vLTI" id="1Y8zh0lZllp" role="3clFbG">
+            <node concept="2pJPEk" id="1Y8zh0lZllq" role="37vLTx">
+              <node concept="2pJPED" id="1Y8zh0lZllr" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="1Y8zh0lZlls" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="1Y8zh0lZllt" role="28nt2d">
+                    <node concept="2pJPED" id="1Y8zh0lZllu" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="1Y8zh0lZllv" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="1Y8zh0lZllw" role="28ntcv">
+                          <property role="Xl_RC" value="Risk associated with hazard " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pJPED" id="1Y8zh0lZllx" role="36be1Z">
+                      <ref role="2pJxaS" to="cjwq:2RlaC$PbkQu" resolve="HazardRefWord" />
+                    </node>
+                    <node concept="2pJPED" id="1Y8zh0lZlly" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="1Y8zh0lZllz" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="1Y8zh0lZll$" role="28ntcv">
+                          <property role="Xl_RC" value="\n has been shown negligible" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1Y8zh0lZll_" role="37vLTJ">
+              <node concept="13iPFW" id="1Y8zh0lZllA" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1Y8zh0lZllB" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Y8zh0lZllC" role="3cqZAp">
+          <node concept="37vLTI" id="1Y8zh0lZllD" role="3clFbG">
+            <node concept="3clFbT" id="1Y8zh0lZllE" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1Y8zh0lZllF" role="37vLTJ">
+              <node concept="13iPFW" id="1Y8zh0lZllG" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1Y8zh0lZllH" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1Y8zh0lZjWq">
+    <property role="3GE5qa" value="hazards" />
+    <ref role="13h7C2" to="2qxf:1Y8zh0lZjGV" resolve="EliminatedHazardGoal" />
+    <node concept="13hLZK" id="1Y8zh0lZjWr" role="13h7CW">
+      <node concept="3clFbS" id="1Y8zh0lZjWs" role="2VODD2">
+        <node concept="3clFbF" id="1Y8zh0lZl2s" role="3cqZAp">
+          <node concept="37vLTI" id="1Y8zh0lZl2t" role="3clFbG">
+            <node concept="2pJPEk" id="1Y8zh0lZl2u" role="37vLTx">
+              <node concept="2pJPED" id="1Y8zh0lZl2v" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="1Y8zh0lZl2w" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="1Y8zh0lZl2x" role="28nt2d">
+                    <node concept="2pJPED" id="1Y8zh0lZl2y" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="1Y8zh0lZl2z" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="1Y8zh0lZl2$" role="28ntcv">
+                          <property role="Xl_RC" value="Hazard " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pJPED" id="1Y8zh0lZl2_" role="36be1Z">
+                      <ref role="2pJxaS" to="cjwq:2RlaC$PbkQu" resolve="HazardRefWord" />
+                    </node>
+                    <node concept="2pJPED" id="1Y8zh0lZl2A" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="1Y8zh0lZl2B" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="Xl_RD" id="1Y8zh0lZl2C" role="28ntcv">
+                          <property role="Xl_RC" value="\n has been eliminated \n and can no longer occur" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1Y8zh0lZl2D" role="37vLTJ">
+              <node concept="13iPFW" id="1Y8zh0lZl2E" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1Y8zh0lZl2F" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Y8zh0lZl2G" role="3cqZAp">
+          <node concept="37vLTI" id="1Y8zh0lZl2H" role="3clFbG">
+            <node concept="3clFbT" id="1Y8zh0lZl2I" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1Y8zh0lZl2J" role="37vLTJ">
+              <node concept="13iPFW" id="1Y8zh0lZl2K" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1Y8zh0lZl2L" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1Y8zh0lZmaJ">
+    <property role="3GE5qa" value="hazards" />
+    <ref role="13h7C2" to="2qxf:1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
+    <node concept="13i0hz" id="1Y8zh0lZmaU" role="13h7CS">
+      <property role="TrG5h" value="getHazard" />
+      <node concept="3Tm1VV" id="1Y8zh0lZmaV" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1Y8zh0lZmaW" role="3clF45">
+        <ref role="ehGHo" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
+      </node>
+      <node concept="3clFbS" id="1Y8zh0lZmaX" role="3clF47">
+        <node concept="3clFbF" id="1Y8zh0lZmaY" role="3cqZAp">
+          <node concept="2OqwBi" id="1Y8zh0lZmaZ" role="3clFbG">
+            <node concept="2OqwBi" id="1Y8zh0lZmb0" role="2Oq$k0">
+              <node concept="2OqwBi" id="1Y8zh0lZmb1" role="2Oq$k0">
+                <node concept="2OqwBi" id="1Y8zh0lZmb2" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1Y8zh0lZmb3" role="2Oq$k0">
+                    <node concept="13iPFW" id="1Y8zh0lZmb4" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1Y8zh0lZmb5" role="2OqNvi">
+                      <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="1Y8zh0lZmb6" role="2OqNvi">
+                    <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="1Y8zh0lZmb7" role="2OqNvi">
+                  <node concept="chp4Y" id="1Y8zh0lZmb8" role="v3oSu">
+                    <ref role="cht4Q" to="cjwq:2RlaC$PbkQu" resolve="HazardRefWord" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="1Y8zh0lZmb9" role="2OqNvi" />
+            </node>
+            <node concept="3TrEf2" id="1Y8zh0lZmba" role="2OqNvi">
+              <ref role="3Tt5mk" to="cjwq:2RlaC$PcChp" resolve="hazard" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1Y8zh0lZmbb" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="1Y8zh0lZmbc" role="1B3o_S" />
+      <node concept="3clFbS" id="1Y8zh0lZmbd" role="3clF47">
+        <node concept="3clFbF" id="1Y8zh0lZmbe" role="3cqZAp">
+          <node concept="Xl_RD" id="1Y8zh0lZmbf" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Argument Over Hazards Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1Y8zh0lZmbg" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="1Y8zh0lZmaK" role="13h7CW">
+      <node concept="3clFbS" id="1Y8zh0lZmaL" role="2VODD2" />
     </node>
   </node>
 </model>

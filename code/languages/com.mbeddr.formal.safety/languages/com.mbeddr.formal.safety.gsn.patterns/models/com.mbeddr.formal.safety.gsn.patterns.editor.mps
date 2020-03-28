@@ -16,7 +16,6 @@
     <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
-    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" implicit="true" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -104,76 +103,6 @@
         </node>
       </node>
       <node concept="l2Vlx" id="2RlaC$P5nCO" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2RlaC$P86OD">
-    <property role="3GE5qa" value="hazards" />
-    <ref role="1XX52x" to="2qxf:2RlaC$P86Ok" resolve="HazardsListRefWord" />
-    <node concept="3EZMnI" id="2RlaC$P86OF" role="2wV5jI">
-      <node concept="3F0ifn" id="2RlaC$P86OG" role="3EZMnx">
-        <property role="3F0ifm" value="@hazards" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
-      </node>
-      <node concept="3F0ifn" id="2RlaC$PcSiM" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11L4FC" id="2RlaC$PdzZJ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="2RlaC$PdzZO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="2RlaC$PcSj0" role="3EZMnx">
-        <ref role="1NtTu8" to="2qxf:2RlaC$Pcvh7" resolve="hazardsList" />
-        <node concept="1sVBvm" id="2RlaC$PcSj2" role="1sWHZn">
-          <node concept="3F0A7n" id="2RlaC$PcSjd" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2RlaC$P86OL" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="2RlaC$P86OM" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="2RlaC$P86ON" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2RlaC$Pbl0Y">
-    <property role="3GE5qa" value="hazards" />
-    <ref role="1XX52x" to="2qxf:2RlaC$PbkQu" resolve="HazardRefWord" />
-    <node concept="3EZMnI" id="2RlaC$Pbl10" role="2wV5jI">
-      <node concept="3F0ifn" id="2RlaC$Pbl11" role="3EZMnx">
-        <property role="3F0ifm" value="@hazard" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
-      </node>
-      <node concept="3F0ifn" id="2RlaC$PcChx" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11L4FC" id="2RlaC$PdimF" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="2RlaC$PdimK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="2RlaC$PcChJ" role="3EZMnx">
-        <ref role="1NtTu8" to="2qxf:2RlaC$PcChp" resolve="hazard" />
-        <node concept="1sVBvm" id="2RlaC$PcChL" role="1sWHZn">
-          <node concept="3F0A7n" id="2RlaC$PcCi2" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2RlaC$Pbl16" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="2RlaC$Pbl17" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="2RlaC$Pbl18" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2rzNEUxND_i">
@@ -512,6 +441,99 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="1Y8zh0lZjSV">
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardSubstitutionGoalTextArea" />
+    <ref role="1XX52x" to="2qxf:1Y8zh0lZjGe" resolve="HazardSubstitutionGoal" />
+    <node concept="3EZMnI" id="1Y8zh0lZjSX" role="2wV5jI">
+      <node concept="3EZMnI" id="1Y8zh0lZjSY" role="3EZMnx">
+        <node concept="VPM3Z" id="1Y8zh0lZjSZ" role="3F10Kt" />
+        <node concept="3F0ifn" id="1Y8zh0lZjT0" role="3EZMnx">
+          <property role="3F0ifm" value="Hazard Substitution Goal:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="1Y8zh0lZjT1" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="1Y8zh0lZjT2" role="2iSdaV" />
+      </node>
+      <node concept="3F1sOY" id="1Y8zh0lZjT3" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="2iRkQZ" id="1Y8zh0lZjT4" role="2iSdaV" />
+      <node concept="xShMh" id="1Y8zh0lZjT5" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="1PE4EZ" id="1Y8zh0lZjUH" role="1PM95z">
+      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1Y8zh0lZjTE">
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="NegligableHazardGoalTextArea" />
+    <ref role="1XX52x" to="2qxf:1Y8zh0lZjGU" resolve="NegligibleHazardGoal" />
+    <node concept="3EZMnI" id="1Y8zh0lZjTG" role="2wV5jI">
+      <node concept="3EZMnI" id="1Y8zh0lZjTH" role="3EZMnx">
+        <node concept="VPM3Z" id="1Y8zh0lZjTI" role="3F10Kt" />
+        <node concept="3F0ifn" id="1Y8zh0lZjTJ" role="3EZMnx">
+          <property role="3F0ifm" value="Negligible Hazard Goal:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="1Y8zh0lZjTK" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="1Y8zh0lZjTL" role="2iSdaV" />
+      </node>
+      <node concept="3F1sOY" id="1Y8zh0lZjTM" role="3EZMnx">
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+      </node>
+      <node concept="2iRkQZ" id="1Y8zh0lZjTN" role="2iSdaV" />
+      <node concept="xShMh" id="1Y8zh0lZjTO" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="1PE4EZ" id="1Y8zh0lZjUJ" role="1PM95z">
+      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1Y8zh0lZjUp">
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="EliminatedHazardGoalTextArea" />
+    <ref role="1XX52x" to="2qxf:1Y8zh0lZjGV" resolve="EliminatedHazardGoal" />
+    <node concept="3EZMnI" id="1Y8zh0lZjUr" role="2wV5jI">
+      <node concept="3EZMnI" id="1Y8zh0lZjUs" role="3EZMnx">
+        <node concept="VPM3Z" id="1Y8zh0lZjUt" role="3F10Kt" />
+        <node concept="3F0ifn" id="1Y8zh0lZjUu" role="3EZMnx">
+          <property role="3F0ifm" value="Eliminated Hazard Goal:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="1Y8zh0lZjUv" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="1Y8zh0lZjUw" role="2iSdaV" />
+      </node>
+      <node concept="3F1sOY" id="1Y8zh0lZjUx" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="2iRkQZ" id="1Y8zh0lZjUy" role="2iSdaV" />
+      <node concept="xShMh" id="1Y8zh0lZjUz" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="1PE4EZ" id="1Y8zh0lZjUL" role="1PM95z">
+      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
     </node>
   </node>
 </model>

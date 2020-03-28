@@ -6,7 +6,8 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -196,6 +197,36 @@
     </node>
     <node concept="PrWs8" id="2hOvri9WL54" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2RlaC$P86Ok">
+    <property role="EcuMT" value="3302592670536330516" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardsListRefWord" />
+    <property role="34LRSv" value="@hazardsList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2RlaC$P86Ol" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="2RlaC$Pcvh7" role="1TKVEi">
+      <property role="IQ2ns" value="3302592670537479239" />
+      <property role="20kJfa" value="hazardsList" />
+      <ref role="20lvS9" node="7TjUbLQ4gD0" resolve="IHazardsContainer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2RlaC$PbkQu">
+    <property role="EcuMT" value="3302592670537174430" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="HazardRefWord" />
+    <property role="34LRSv" value="@hazard" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2RlaC$PbkQx" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="2RlaC$PcChp" role="1TKVEi">
+      <property role="IQ2ns" value="3302592670537516121" />
+      <property role="20kJfa" value="hazard" />
+      <ref role="20lvS9" node="7TjUbLQ4gDb" resolve="IHazardLike" />
     </node>
   </node>
 </model>
