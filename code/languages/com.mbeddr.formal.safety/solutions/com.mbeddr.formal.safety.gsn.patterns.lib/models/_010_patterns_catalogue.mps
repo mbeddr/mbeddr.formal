@@ -46,6 +46,12 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence">
+      <concept id="4043927170651692617" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.ExternalEvidenceDocument" flags="ng" index="K87gv" />
+      <concept id="7910860657280411360" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.DocumentBasedExternalEvidenceSolution" flags="ng" index="3t1IcU">
+        <child id="7910860657280411361" name="externalFiles" index="3t1IcV" />
+      </concept>
+    </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
       <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
         <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
@@ -915,8 +921,8 @@
       <node concept="37mRIm" id="66sW2d$Fl$o" role="37mRID">
         <property role="37mO49" value="7033760752849475785" />
         <node concept="gqqVs" id="66sW2d$Fl$n" role="37mO4d">
-          <property role="gqqTZ" value="783.0" />
-          <property role="gqqTW" value="413.0" />
+          <property role="gqqTZ" value="716.0" />
+          <property role="gqqTW" value="406.0" />
           <property role="gqqTX" value="132.0" />
           <property role="gqqTy" value="120.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -1240,6 +1246,34 @@
           </node>
         </node>
       </node>
+      <node concept="37mRIm" id="2hOvri9UBIB" role="37mRID">
+        <property role="37mO49" value="2626862697025272648" />
+        <node concept="gqqVs" id="2hOvri9UBIA" role="37mO4d">
+          <property role="gqqTZ" value="779.0" />
+          <property role="gqqTW" value="446.0" />
+          <property role="gqqTX" value="143.0" />
+          <property role="gqqTy" value="123.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="2hOvri9UBQp" role="37mRID">
+        <property role="37mO49" value="2626862697025273185" />
+        <node concept="2VclpC" id="2hOvri9UBQo" role="37mO4d">
+          <node concept="3ul5H1" id="2hOvri9UBQq" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="2hOvri9UBQr" role="3ul5Gz">
+              <node concept="2VclrF" id="2hOvri9UBQs" role="3wpmZR">
+                <property role="2Vclpx" value="842.0" />
+                <property role="2Vclpz" value="413.25" />
+              </node>
+              <node concept="2VclrF" id="2hOvri9UBQt" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2vmxQI" id="66sW2d$Fl4i" role="2vn1q5">
       <property role="TrG5h" value="Str2.3" />
@@ -1275,14 +1309,6 @@
         </node>
       </node>
     </node>
-    <node concept="2vmhmH" id="66sW2d$Flz9" role="2vn1q5">
-      <property role="TrG5h" value="Sn2" />
-      <node concept="19SGf9" id="66sW2d$Fl_C" role="2vnaTY">
-        <node concept="19SUe$" id="66sW2d$Fl_D" role="19SJt6">
-          <property role="19SUeA" value="{System in operation &#10;test results}" />
-        </node>
-      </node>
-    </node>
     <node concept="3VeUTF" id="66sW2d$FlU3" role="2vhqc$">
       <ref role="3VeSjP" node="66sW2d$FleZ" resolve="Str2.4" />
       <ref role="3VeSjQ" node="66sW2d$Fll5" resolve="G2.6" />
@@ -1290,10 +1316,6 @@
     <node concept="3VeUTF" id="66sW2d$FlWv" role="2vhqc$">
       <ref role="3VeSjP" node="66sW2d$FleZ" resolve="Str2.4" />
       <ref role="3VeSjQ" node="66sW2d$Flns" resolve="G2.7" />
-    </node>
-    <node concept="3VeUTF" id="66sW2d$FlZ2" role="2vhqc$">
-      <ref role="3VeSjP" node="66sW2d$Fll5" resolve="G2.6" />
-      <ref role="3VeSjQ" node="66sW2d$Flz9" resolve="Sn2" />
     </node>
     <node concept="2vmxQI" id="66sW2d$Fm2s" role="2vn1q5">
       <property role="TrG5h" value="Str2.2" />
@@ -1393,6 +1415,19 @@
       <property role="1a4Pjs" value="n" />
       <ref role="3VeSjP" node="1QoXEbd_zn0" />
       <ref role="3VeSjQ" node="66sW2d$FmAk" resolve="G2.5" />
+    </node>
+    <node concept="3t1IcU" id="2hOvri9UBH8" role="2vn1q5">
+      <property role="TrG5h" value="Sn2" />
+      <node concept="K87gv" id="2hOvri9UBWX" role="3t1IcV" />
+      <node concept="19SGf9" id="2hOvri9UBTq" role="2vnaTY">
+        <node concept="19SUe$" id="2hOvri9UBUc" role="19SJt6">
+          <property role="19SUeA" value="Operational testing results" />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="2hOvri9UBPx" role="2vhqc$">
+      <ref role="3VeSjP" node="66sW2d$Fll5" resolve="G2.6" />
+      <ref role="3VeSjQ" node="2hOvri9UBH8" resolve="Sn2" />
     </node>
   </node>
   <node concept="1VB52S" id="1QoXEbd_xJ1">
