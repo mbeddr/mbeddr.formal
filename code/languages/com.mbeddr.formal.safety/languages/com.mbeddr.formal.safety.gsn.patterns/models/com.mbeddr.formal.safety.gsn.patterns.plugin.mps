@@ -151,6 +151,9 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -235,9 +238,9 @@
                 </node>
                 <node concept="2yIwOk" id="7kF4CZHBc9a" role="2OqNvi" />
               </node>
-              <node concept="3O6GUB" id="7kF4CZHBdvV" role="2OqNvi">
-                <node concept="chp4Y" id="7TjUbLQ4yBG" role="3QVz_e">
-                  <ref role="cht4Q" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
+              <node concept="2Zo12i" id="1Y8zh0mf4Bp" role="2OqNvi">
+                <node concept="chp4Y" id="1Y8zh0mf4In" role="2Zo12j">
+                  <ref role="cht4Q" to="2qxf:1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
                 </node>
               </node>
             </node>
@@ -327,11 +330,11 @@
                     <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
                     <node concept="36biLy" id="4qaoH_EWHK" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_EWHL" role="36biLW">
-                        <node concept="chp4Y" id="7TjUbLQ66vf" role="3oSUPX">
-                          <ref role="cht4Q" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
-                        </node>
                         <node concept="37vLTw" id="4qaoH_EWHN" role="1m5AlR">
                           <ref role="3cqZAo" node="4qaoH_EWHm" resolve="toNode" />
+                        </node>
+                        <node concept="chp4Y" id="1Y8zh0mf4Nj" role="3oSUPX">
+                          <ref role="cht4Q" to="2qxf:1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
                         </node>
                       </node>
                     </node>
