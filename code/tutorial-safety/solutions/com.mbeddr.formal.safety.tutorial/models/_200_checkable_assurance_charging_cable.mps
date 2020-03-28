@@ -21,6 +21,16 @@
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
   </imports>
   <registry>
+    <language id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns">
+      <concept id="7240923401194647888" name="com.mbeddr.formal.req.tl_patterns.structure.TLProperty" flags="ng" index="12utKC">
+        <child id="7240923401194648604" name="scope" index="12ut_$" />
+      </concept>
+      <concept id="7240923401194766805" name="com.mbeddr.formal.req.tl_patterns.structure.AfterUntilScope" flags="ng" index="12uYMH" />
+      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
+        <child id="6544290145033523834" name="specs" index="3z0uXc" />
+      </concept>
+      <concept id="6544290145033461193" name="com.mbeddr.formal.req.tl_patterns.structure.TLRequirementSpecification" flags="ng" index="3z7I3Z" />
+    </language>
     <language id="c1b1e23f-b677-40b8-a490-e192dd8d78e5" name="com.mbeddr.formal.nusmv.sm">
       <concept id="4512297433099947043" name="com.mbeddr.formal.nusmv.sm.structure.StateMachineSection" flags="ng" index="2aiEES" />
       <concept id="4512297433100004846" name="com.mbeddr.formal.nusmv.sm.structure.StateVariableDeclaration" flags="ng" index="2aiWHP" />
@@ -89,7 +99,6 @@
       <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
     </language>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
-      <concept id="8790599356044273577" name="com.mbeddr.formal.safety.gsn.ext.structure.OrEntity" flags="ng" index="1idpKz" />
       <concept id="1629165016568013909" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternInstance" flags="ng" index="1VB52A">
         <reference id="1094571097530678975" name="originalDefinition" index="AygKy" />
         <child id="1629165016568014583" name="patternInstance" index="1VB584" />
@@ -139,9 +148,12 @@
       <concept id="2802310642588883269" name="com.mbeddr.formal.safety.gsn.patterns.structure.RequirementDocumentRefWord" flags="ng" index="27blvF">
         <reference id="2802310642588883272" name="requirementDocument" index="27blvA" />
       </concept>
+      <concept id="9102875167978255309" name="com.mbeddr.formal.safety.gsn.patterns.structure.SupportedByHazardMitigationGoal" flags="ng" index="8gDHL" />
       <concept id="9102875167978180679" name="com.mbeddr.formal.safety.gsn.patterns.structure.HazardMitigatedGoal" flags="ng" index="8gVzV" />
       <concept id="3302592670535612952" name="com.mbeddr.formal.safety.gsn.patterns.structure.AbstractComponentRefWord" flags="ng" index="oK52h" />
-      <concept id="3302592670536330516" name="com.mbeddr.formal.safety.gsn.patterns.structure.HazardsListRefWord" flags="ng" index="oXkut" />
+      <concept id="3302592670536330516" name="com.mbeddr.formal.safety.gsn.patterns.structure.HazardsListRefWord" flags="ng" index="oXkut">
+        <reference id="3302592670537479239" name="hazardsList" index="oTdVe" />
+      </concept>
       <concept id="3302592670537174430" name="com.mbeddr.formal.safety.gsn.patterns.structure.HazardRefWord" flags="ng" index="oY6sn">
         <reference id="3302592670537516121" name="hazard" index="oTUVg" />
       </concept>
@@ -251,10 +263,18 @@
       <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
-      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc">
+        <reference id="2626862697025873504" name="loss" index="2HxXJk" />
+      </concept>
       <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
       <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
         <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
       </concept>
     </language>
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
@@ -607,10 +627,11 @@
     </node>
   </node>
   <node concept="8gVzP" id="2VIqKfEJeEr">
-    <property role="TrG5h" value="_020_ladekabel_hazards_list" />
+    <property role="TrG5h" value="_022_ladekabel_hazards_list" />
     <node concept="8gVzc" id="2VIqKfEJeEs" role="8gIbH">
       <property role="0lsPB" value="H01" />
       <property role="TrG5h" value="Electrical hazard" />
+      <ref role="2HxXJk" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
     </node>
     <node concept="8gVzc" id="7n39yospbcP" role="8gIbH">
       <property role="0lsPB" value="H02" />
@@ -629,8 +650,8 @@
       <property role="TrG5h" value="Smoke comes out of the cable" />
     </node>
     <node concept="8gVzc" id="7BYuSCF$ivH" role="8gIbH">
-      <property role="0lsPB" value="H05" />
-      <property role="TrG5h" value="Cable operated beyond limits" />
+      <property role="0lsPB" value="H06" />
+      <property role="TrG5h" value="Tripping" />
     </node>
   </node>
   <node concept="2HdtXS" id="5kaUUWfwhNG">
@@ -3452,7 +3473,9 @@
             <node concept="19SUe$" id="24coDzLtXG_" role="19SJt6">
               <property role="19SUeA" value="Hazard " />
             </node>
-            <node concept="oY6sn" id="24coDzLtXGA" role="19SJt6" />
+            <node concept="oY6sn" id="24coDzLtXGA" role="19SJt6">
+              <ref role="oTUVg" node="2VIqKfEJeEs" resolve="Electrical hazard" />
+            </node>
             <node concept="19SUe$" id="24coDzLtXGB" role="19SJt6">
               <property role="19SUeA" value="&#10; has been mitigated" />
             </node>
@@ -3464,7 +3487,9 @@
             <node concept="19SUe$" id="24coDzLtXGE" role="19SJt6">
               <property role="19SUeA" value="All hazards identified during safety analysis &#10;{sa} " />
             </node>
-            <node concept="oXkut" id="24coDzLtXGF" role="19SJt6" />
+            <node concept="oXkut" id="24coDzLtXGF" role="19SJt6">
+              <ref role="oTdVe" node="2VIqKfEJeEr" resolve="_022_ladekabel_hazards_list" />
+            </node>
             <node concept="19SUe$" id="24coDzLtXGG" role="19SJt6" />
           </node>
         </node>
@@ -3549,7 +3574,6 @@
         </node>
         <node concept="2vn7WC" id="24coDzLtXHb" role="2vn1q5">
           <property role="TrG5h" value="G2.5" />
-          <property role="8uqrb" value="true" />
           <node concept="19SGf9" id="24coDzLtXHc" role="2vnaTY">
             <node concept="19SUe$" id="24coDzLtXHd" role="19SJt6">
               <property role="19SUeA" value="Hazard " />
@@ -3568,7 +3592,6 @@
             </node>
           </node>
         </node>
-        <node concept="1idpKz" id="24coDzLtXHj" role="2vn1q5" />
         <node concept="3VeUTF" id="24coDzLtXHk" role="2vhqc$">
           <ref role="3VeSjP" node="24coDzLtXGK" resolve="Str2.4" />
           <ref role="3VeSjQ" node="24coDzLtXGN" resolve="G2.6" />
@@ -3597,28 +3620,12 @@
           <ref role="3VeSjP" node="24coDzLtXHg" resolve="G2.1" />
           <ref role="3VeSjQ" node="24coDzLtXGC" resolve="Str2.1" />
         </node>
-        <node concept="3VeUTF" id="24coDzLtXHs" role="2vhqc$">
-          <ref role="3VeSjP" node="24coDzLtXHj" />
-          <ref role="3VeSjQ" node="24coDzLtXGz" resolve="G2.2" />
-        </node>
-        <node concept="3VeUTF" id="24coDzLtXHu" role="2vhqc$">
-          <ref role="3VeSjP" node="24coDzLtXHj" />
-          <ref role="3VeSjQ" node="24coDzLtXGZ" resolve="G2.3" />
-        </node>
-        <node concept="3VeUTF" id="24coDzLtXHw" role="2vhqc$">
-          <ref role="3VeSjP" node="24coDzLtXHj" />
-          <ref role="3VeSjQ" node="24coDzLtXH6" resolve="G2.4" />
-        </node>
-        <node concept="3VeUTF" id="24coDzLtXHy" role="2vhqc$">
-          <ref role="3VeSjP" node="24coDzLtXHj" />
-          <ref role="3VeSjQ" node="24coDzLtXHb" resolve="G2.5" />
-        </node>
         <node concept="37mRI7" id="24coDzLtXJv" role="lGtFl">
           <node concept="37mRIm" id="24coDzLtXJw" role="37mRID">
             <property role="37mO49" value="2381386711997864739" />
             <node concept="gqqVs" id="24coDzLtXJx" role="37mO4d">
-              <property role="gqqTZ" value="51.0" />
-              <property role="gqqTW" value="295.0" />
+              <property role="gqqTZ" value="34.0" />
+              <property role="gqqTW" value="284.0" />
               <property role="gqqTX" value="176.0" />
               <property role="gqqTy" value="89.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -3627,8 +3634,8 @@
           <node concept="37mRIm" id="24coDzLtXJy" role="37mRID">
             <property role="37mO49" value="2381386711997864744" />
             <node concept="gqqVs" id="24coDzLtXJz" role="37mO4d">
-              <property role="gqqTZ" value="130.0" />
-              <property role="gqqTW" value="129.0" />
+              <property role="gqqTZ" value="117.0" />
+              <property role="gqqTW" value="125.0" />
               <property role="gqqTX" value="243.0" />
               <property role="gqqTy" value="83.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -4002,6 +4009,28 @@
               </node>
             </node>
           </node>
+          <node concept="37mRIm" id="2hOvri9UB$m" role="37mRID">
+            <property role="37mO49" value="2626862697025272033" />
+            <node concept="2VclpC" id="2hOvri9UB$l" role="37mO4d">
+              <node concept="3ul5H1" id="2hOvri9UB$n" role="3ul5Gx">
+                <property role="3ul5GH" value="label" />
+                <node concept="3wpmZ1" id="2hOvri9UB$o" role="3ul5Gz">
+                  <node concept="2VclrF" id="2hOvri9UB$p" role="3wpmZR">
+                    <property role="2Vclpx" value="195.25" />
+                    <property role="2Vclpz" value="255.0" />
+                  </node>
+                  <node concept="2VclrF" id="2hOvri9UB$q" role="3wpmZP">
+                    <property role="2Vclpx" value="0.0" />
+                    <property role="2Vclpz" value="0.0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="8gDHL" id="2hOvri9UBzx" role="2vhqc$">
+          <ref role="3VeSjP" node="24coDzLtXGC" resolve="Str2.1" />
+          <ref role="3VeSjQ" node="24coDzLtXGz" resolve="G2.2" />
         </node>
       </node>
     </node>
@@ -5837,6 +5866,17 @@
         </node>
         <node concept="3z6Cyy" id="66sW2d$FggM" role="0nOlf" />
       </node>
+      <node concept="0lhDl" id="263iJK2vyeT" role="1VMWzp">
+        <node concept="3z7I3Z" id="263iJK2vyfl" role="1QQeAC">
+          <node concept="12utKC" id="263iJK2vyfp" role="3z0uXc">
+            <node concept="12uYMH" id="263iJK2vyfo" role="12ut_$" />
+          </node>
+        </node>
+        <node concept="1QQeFk" id="263iJK2vyeU" role="0nOlf" />
+        <node concept="19SGf9" id="263iJK2vyeV" role="1QQeG9">
+          <node concept="19SUe$" id="263iJK2vyeW" role="19SJt6" />
+        </node>
+      </node>
       <node concept="1QQeAY" id="4bSVeFVFB7O" role="1QQeAC">
         <node concept="0nzK2" id="4bSVeFVFB7Q" role="1QQeAV">
           <node concept="19SGf9" id="4bSVeFVFB7S" role="0nzdz">
@@ -5945,9 +5985,9 @@
       <node concept="37mRIm" id="6yFQEkQU9sX" role="37mRID">
         <property role="37mO49" value="7542362404087699244" />
         <node concept="gqqVs" id="6yFQEkQU9sW" role="37mO4d">
-          <property role="gqqTZ" value="152.0" />
+          <property role="gqqTZ" value="151.0" />
           <property role="gqqTW" value="83.0" />
-          <property role="gqqTX" value="171.0" />
+          <property role="gqqTX" value="170.0" />
           <property role="gqqTy" value="30.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7741,6 +7781,17 @@
     <node concept="2SQmWS" id="7BYuSCF$jzO" role="2HcuB8" />
     <node concept="2SQmWS" id="7BYuSCF$iWb" role="2HcuB8" />
     <node concept="2SQmWS" id="7BYuSCF$iW7" role="2HcuB8" />
+  </node>
+  <node concept="2HxQMi" id="2hOvri9WU6F">
+    <property role="TrG5h" value="_020_ladekabel_losses" />
+    <node concept="2HxQMU" id="2hOvri9WU6G" role="2HxQMj">
+      <property role="2HxQM_" value="L01" />
+      <property role="TrG5h" value="Loss of life or serious injury to people" />
+    </node>
+    <node concept="2HxQMU" id="2hOvri9WU6H" role="2HxQMj">
+      <property role="2HxQM_" value="L02" />
+      <property role="TrG5h" value="Electrical damage (economic loss)" />
+    </node>
   </node>
 </model>
 
