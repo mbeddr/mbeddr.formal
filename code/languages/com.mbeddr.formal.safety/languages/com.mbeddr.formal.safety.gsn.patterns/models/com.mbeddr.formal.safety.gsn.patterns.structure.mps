@@ -203,7 +203,7 @@
     <property role="3GE5qa" value="hazards" />
     <property role="TrG5h" value="NegligibleHazardGoal" />
     <property role="34LRSv" value="Negligible Hazard Goal" />
-    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <ref role="1TJDcQ" node="1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
   </node>
   <node concept="1TIwiD" id="1Y8zh0lZjGV">
     <property role="EcuMT" value="2272221112236325691" />
