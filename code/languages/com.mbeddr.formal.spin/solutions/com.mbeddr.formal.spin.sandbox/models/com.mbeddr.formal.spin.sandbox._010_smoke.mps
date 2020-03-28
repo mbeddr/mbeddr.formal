@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:29b11bdf-9484-4bfd-9769-910b3dd25e7f(com.mbeddr.formal.spin.sandbox.smoke)">
+<model ref="r:29b11bdf-9484-4bfd-9769-910b3dd25e7f(com.mbeddr.formal.spin.sandbox._010_smoke)">
   <persistence version="9" />
   <languages>
     <devkit ref="5a232fd9-bc69-417b-bce9-56292eaa62a5(fasten.spin)" />

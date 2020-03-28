@@ -740,11 +740,20 @@
   </node>
   <node concept="1TIwiD" id="4Hts7PYpqpR">
     <property role="EcuMT" value="5430620409972500087" />
-    <property role="3GE5qa" value="statements" />
+    <property role="3GE5qa" value="arbitrary_text" />
     <property role="TrG5h" value="CommentLine" />
     <property role="34LRSv" value="//" />
     <property role="R4oN_" value="comment" />
     <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="PrWs8" id="5uFV_KKWYko" role="PzmwI">
+      <ref role="PrY4T" node="4_pH3zvds0D" resolve="IPromelaModelContent" />
+    </node>
+    <node concept="PrWs8" id="5uFV_KKWYkp" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNdmI" resolve="ISUVModuleContent" />
+    </node>
+    <node concept="PrWs8" id="5uFV_KKWYkq" role="PzmwI">
+      <ref role="PrY4T" node="2DjQaub_wFg" resolve="IPromelaType" />
+    </node>
     <node concept="1TJgyi" id="4Hts7PYpqqG" role="1TKVEl">
       <property role="IQ2nx" value="5430620409972500140" />
       <property role="TrG5h" value="text" />
@@ -1265,6 +1274,109 @@
     <property role="34LRSv" value=":: stmt" />
     <property role="R4oN_" value="a choice of form &quot;:: statement&quot;" />
     <ref role="1TJDcQ" node="2DjQaubD1ZH" resolve="ChoiceLike" />
+  </node>
+  <node concept="1TIwiD" id="5uFV_KKYXUR">
+    <property role="EcuMT" value="6317404982043467447" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ChanType" />
+    <property role="34LRSv" value="chan" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="PrWs8" id="5uFV_KKYXUS" role="PzmwI">
+      <ref role="PrY4T" node="2DjQaub_wFg" resolve="IPromelaType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5uFV_KL0VVY">
+    <property role="EcuMT" value="6317404982043983614" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ChInit" />
+    <property role="34LRSv" value="[ ... ] of { type }" />
+    <property role="R4oN_" value="channel init" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="5uFV_KL0VVZ" role="1TKVEi">
+      <property role="IQ2ns" value="6317404982043983615" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="size" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5uFV_KL0VW1" role="1TKVEi">
+      <property role="IQ2ns" value="6317404982043983617" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tpe" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2DjQaub_wFg" resolve="IPromelaType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5uFV_KL2X5j">
+    <property role="EcuMT" value="6317404982044512595" />
+    <property role="3GE5qa" value="expressions.send" />
+    <property role="TrG5h" value="SendBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="5uFV_KL2X5l" role="1TKVEi">
+      <property role="IQ2ns" value="6317404982044512597" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="channelExp" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5uFV_KL2X5n" role="1TKVEi">
+      <property role="IQ2ns" value="6317404982044512599" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5uFV_KL2X5k">
+    <property role="EcuMT" value="6317404982044512596" />
+    <property role="3GE5qa" value="expressions.send" />
+    <property role="TrG5h" value="NormalFifoSend" />
+    <property role="34LRSv" value="!" />
+    <property role="R4oN_" value="normal FIFO send" />
+    <ref role="1TJDcQ" node="5uFV_KL2X5j" resolve="SendBase" />
+  </node>
+  <node concept="1TIwiD" id="5uFV_KL2X6i">
+    <property role="EcuMT" value="6317404982044512658" />
+    <property role="3GE5qa" value="expressions.send" />
+    <property role="TrG5h" value="SortedSend" />
+    <property role="34LRSv" value="!!" />
+    <property role="R4oN_" value="sorted send" />
+    <ref role="1TJDcQ" node="5uFV_KL2X5j" resolve="SendBase" />
+  </node>
+  <node concept="1TIwiD" id="5uFV_KLaUAd">
+    <property role="EcuMT" value="6317404982046599565" />
+    <property role="3GE5qa" value="expressions.receive" />
+    <property role="TrG5h" value="ReceiveBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="5uFV_KLaUAe" role="1TKVEi">
+      <property role="IQ2ns" value="6317404982046599566" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="channelExp" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5uFV_KLaUAg" role="1TKVEi">
+      <property role="IQ2ns" value="6317404982046599568" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5uFV_KLaUSl">
+    <property role="EcuMT" value="6317404982046600725" />
+    <property role="3GE5qa" value="expressions.receive" />
+    <property role="TrG5h" value="NormalReceive" />
+    <property role="34LRSv" value="?" />
+    <property role="R4oN_" value="normal receive" />
+    <ref role="1TJDcQ" node="5uFV_KLaUAd" resolve="ReceiveBase" />
+  </node>
+  <node concept="1TIwiD" id="5uFV_KLaUSA">
+    <property role="EcuMT" value="6317404982046600742" />
+    <property role="3GE5qa" value="expressions.receive" />
+    <property role="TrG5h" value="RandomReceive" />
+    <property role="34LRSv" value="??" />
+    <property role="R4oN_" value="random receive" />
+    <ref role="1TJDcQ" node="5uFV_KLaUAd" resolve="ReceiveBase" />
   </node>
 </model>
 
