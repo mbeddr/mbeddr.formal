@@ -3,17 +3,23 @@
   <persistence version="9" />
   <languages>
     <use id="eccaed1c-88f4-4a5c-9ad8-d1b8c9f330e9" name="com.mbeddr.formal.safety.stamp.ext" version="0" />
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
   </languages>
   <imports>
     <import index="v0ty" ref="r:f4296e65-905c-42ee-8349-52d0474604ad(com.mbeddr.formal.safety.stamp.sandbox._010_sandbox)" />
   </imports>
   <registry>
-    <language id="eccaed1c-88f4-4a5c-9ad8-d1b8c9f330e9" name="com.mbeddr.formal.safety.stamp.ext">
-      <concept id="2626862697025273969" name="com.mbeddr.formal.safety.stamp.ext.structure.Before" flags="ng" index="2HBJR5">
-        <reference id="2626862697025273971" name="action" index="2HBJR7" />
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
       </concept>
-      <concept id="2626862697025273970" name="com.mbeddr.formal.safety.stamp.ext.structure.During" flags="ng" index="2HBJR6">
-        <reference id="2626862697025273973" name="action" index="2HBJR1" />
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="eccaed1c-88f4-4a5c-9ad8-d1b8c9f330e9" name="com.mbeddr.formal.safety.stamp.ext">
+      <concept id="2272221112240816165" name="com.mbeddr.formal.safety.stamp.ext.structure.UnsafeControlActionBoilerplateRefWord" flags="ng" index="9MkOP">
+        <reference id="2272221112240816172" name="boilerplatedUCA" index="9MkOW" />
       </concept>
       <concept id="8790599356040899999" name="com.mbeddr.formal.safety.stamp.ext.structure.After" flags="ng" index="1ipxol">
         <reference id="8790599356040900000" name="action" index="1ipxoE" />
@@ -22,7 +28,7 @@
         <child id="8790599356040772894" name="boilerplates" index="1iq0qk" />
       </concept>
       <concept id="8790599356040772893" name="com.mbeddr.formal.safety.stamp.ext.structure.UnsafeControlActionBoilerplate" flags="ng" index="1iq0qn">
-        <property id="2626862697025906699" name="id" index="2Hw5mZ" />
+        <property id="6988102130960747375" name="id" index="1MUBaM" />
         <reference id="8790599356040772896" name="controller" index="1iq0qE" />
         <reference id="8790599356040772940" name="hazard" index="1iq0r6" />
         <child id="8790599356040900065" name="context" index="1ipxpF" />
@@ -32,122 +38,81 @@
       <concept id="8790599356040778178" name="com.mbeddr.formal.safety.stamp.ext.structure.HazopKeywordBase" flags="ng" index="1iqeD8">
         <reference id="8790599356040772937" name="action" index="1iq0r3" />
       </concept>
-      <concept id="8790599356040778210" name="com.mbeddr.formal.safety.stamp.ext.structure.ProvidingHazopKeyword" flags="ng" index="1iqeDC" />
-      <concept id="8790599356040829290" name="com.mbeddr.formal.safety.stamp.ext.structure.ProvidingTooSoonHazopKeyword" flags="ng" index="1iqibw" />
-      <concept id="8790599356040829292" name="com.mbeddr.formal.safety.stamp.ext.structure.ProvidingTooLateHazopKeyword" flags="ng" index="1iqibA" />
-      <concept id="5282133897419677734" name="com.mbeddr.formal.safety.stamp.ext.structure.AppliedTooLongHazopKeyword" flags="ng" index="1UWwzH" />
-      <concept id="5282133897419677690" name="com.mbeddr.formal.safety.stamp.ext.structure.StoppedTooSoonHazopKeyword" flags="ng" index="1UWzsL" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
+      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
+        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
+        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
+        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
+        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
+        <property id="4583510071007917016" name="transform" index="TgtnS" />
+      </concept>
+      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
+        <child id="8963411245960991904" name="entries" index="37mRID" />
+      </concept>
+      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
+        <property id="8963411245960998400" name="key" index="37mO49" />
+        <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
       </concept>
     </language>
   </registry>
   <node concept="1iq0qg" id="7BYuSCF_D3L">
     <property role="TrG5h" value="_10_boilerplates_container" />
-    <node concept="1iq0qn" id="7BYuSCFA6Qg" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_01" />
-      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3ow6" resolve="battery overheating" />
-      <node concept="1iqibw" id="7BYuSCFA6Qp" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:1JhvKLLPHti" resolve="Communication Checks" />
-      </node>
-    </node>
-    <node concept="1iq0qn" id="7BYuSCFAci1" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_02" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <node concept="1iqeDC" id="7BYuSCFAci5" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:1JhvKLLPHfA" resolve="Change altitude" />
-      </node>
-      <node concept="1ipxol" id="7BYuSCFAmbB" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:3Cm$$O2vV6X" resolve="Acknowledgements" />
-      </node>
-    </node>
-    <node concept="1iq0qn" id="4_dUcGNKC2t" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_03" />
-      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <node concept="1iqibA" id="4_dUcGNKC2$" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:1JhvKLLPHfA" resolve="Change altitude" />
-      </node>
-      <node concept="1ipxol" id="1Y8zh0lTKlV" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:1JhvKLLPHoN" resolve="Aim/Fix on target" />
-      </node>
-    </node>
-    <node concept="1iq0qn" id="4_dUcGNKC2A" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_04" />
-      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <node concept="1iqbzp" id="4_dUcGNKC2J" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:1JhvKLLPHfA" resolve="Change altitude" />
-      </node>
-    </node>
-    <node concept="1iq0qn" id="4_dUcGNKC2L" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_05" />
+    <node concept="1iq0qn" id="63UItOi6hK0" role="1iq0qk">
+      <property role="1MUBaM" value="uca01" />
       <ref role="1iq0qE" to="v0ty:4q9fsxm3ooS" resolve="Circuit Switch" />
       <ref role="1iq0r6" to="v0ty:4q9fsxm3ow6" resolve="battery overheating" />
-      <node concept="1UWwzH" id="4_dUcGNKC2W" role="1iqeDx">
+      <node concept="1iqbzp" id="63UItOi6hK2" role="1iqeDx">
         <ref role="1iq0r3" to="v0ty:4q9fsxm3osI" resolve="Switch Open" />
       </node>
-      <node concept="2HBJR6" id="2hOvri9WHU8" role="1ipxpF">
-        <ref role="2HBJR1" to="v0ty:3Cm$$O2vV6X" resolve="Acknowledgements" />
+      <node concept="1ipxol" id="63UItOi6hK4" role="1ipxpF">
+        <ref role="1ipxoE" to="v0ty:4q9fsxm3Bzk" resolve="Charging Not Allowed" />
       </node>
     </node>
-    <node concept="1iq0qn" id="4_dUcGNKC2Y" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_06" />
-      <ref role="1iq0qE" to="v0ty:4q9fsxm3ooS" resolve="Circuit Switch" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <node concept="1iqibw" id="4_dUcGNKC3b" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:4q9fsxm3osI" resolve="Switch Open" />
-      </node>
-      <node concept="2HBJR5" id="2hOvri9WwPr" role="1ipxpF">
-        <ref role="2HBJR7" to="v0ty:3Cm$$O2vVmx" resolve="Acknowledgements" />
-      </node>
-    </node>
-    <node concept="1iq0qn" id="4_dUcGNKC3d" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_07" />
-      <ref role="1iq0qE" to="v0ty:3Cm$$O2vprc" resolve="Fire Control" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <node concept="1UWzsL" id="4_dUcGNKC3s" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:3Cm$$O2vAoh" resolve="Interceptor Tasking" />
-      </node>
-      <node concept="1ipxol" id="1Y8zh0lTxk4" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:3Cm$$O2vAzi" resolve="Abort" />
+  </node>
+  <node concept="2vn7XN" id="63UItOi7UCD">
+    <property role="TrG5h" value="_20_gsn_example" />
+    <node concept="2vn7WC" id="63UItOi7UCK" role="2vn1q5">
+      <property role="TrG5h" value="G01" />
+      <node concept="19SGf9" id="63UItOi7UCS" role="2vnaTY">
+        <node concept="19SUe$" id="63UItOi7UCT" role="19SJt6">
+          <property role="19SUeA" value="Hazard " />
+        </node>
+        <node concept="9MkOP" id="63UItOi8bfR" role="19SJt6">
+          <ref role="9MkOW" node="63UItOi6hK0" />
+        </node>
+        <node concept="19SUe$" id="63UItOi8bfS" role="19SJt6">
+          <property role="19SUeA" value="&#10;has been mitigated" />
+        </node>
       </node>
     </node>
-    <node concept="1iq0qn" id="2hOvri9UC13" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_08" />
-      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <node concept="1iqibA" id="2hOvri9UC1k" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:1JhvKLLPHti" resolve="Communication Checks" />
-      </node>
-      <node concept="1ipxol" id="2hOvri9WiDt" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:3Cm$$O2vAzi" resolve="Abort" />
-      </node>
-    </node>
-    <node concept="1iq0qn" id="2hOvri9UC1m" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_09" />
-      <ref role="1iq0qE" to="v0ty:4q9fsxm3oih" resolve="Car" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <node concept="1UWzsL" id="2hOvri9UC1D" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:4q9fsxm3onh" resolve="Charging Allowed" />
-      </node>
-      <node concept="1ipxol" id="2hOvri9UC1J" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:3Cm$$O2vV6X" resolve="Acknowledgements" />
-      </node>
-    </node>
-    <node concept="1iq0qn" id="1Y8zh0lVVXq" role="1iq0qk">
-      <property role="2Hw5mZ" value="UCA_10" />
-      <ref role="1iq0qE" to="v0ty:1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3Bz8" resolve="electrical hazard" />
-      <node concept="1iqibA" id="1Y8zh0lVVXP" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:1JhvKLLPHfA" resolve="Change altitude" />
-      </node>
-      <node concept="1ipxol" id="1Y8zh0lVVXR" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:1JhvKLLPHoN" resolve="Aim/Fix on target" />
+    <node concept="37mRI7" id="63UItOi8bfD" role="lGtFl">
+      <node concept="37mRIm" id="63UItOi8bfE" role="37mRID">
+        <property role="37mO49" value="6988102130961721904" />
+        <node concept="gqqVs" id="63UItOi8bfC" role="37mO4d">
+          <property role="gqqTZ" value="107.0" />
+          <property role="gqqTW" value="47.0" />
+          <property role="gqqTX" value="103.0" />
+          <property role="gqqTy" value="76.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
       </node>
     </node>
   </node>
