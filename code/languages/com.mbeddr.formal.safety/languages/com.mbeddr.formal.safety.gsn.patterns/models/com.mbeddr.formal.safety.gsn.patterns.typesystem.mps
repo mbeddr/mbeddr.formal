@@ -844,7 +844,7 @@
           </node>
         </node>
         <node concept="Xl_RD" id="63UItOi572d" role="2MkJ7o">
-          <property role="Xl_RC" value="Exactly one requirement document needs to be referenced in text" />
+          <property role="Xl_RC" value="exactly one requirement document needs to be referenced in text" />
         </node>
         <node concept="1YBJjd" id="63UItOi574I" role="1urrMF">
           <ref role="1YBMHb" node="1Y8zh0mgKqM" resolve="aors" />
@@ -854,6 +854,65 @@
     <node concept="1YaCAy" id="1Y8zh0mgKqM" role="1YuTPh">
       <property role="TrG5h" value="aors" />
       <ref role="1YaFvo" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="63UItOi93Tn">
+    <property role="TrG5h" value="check_ArgumentOverHazardsStrategy_TextFormat" />
+    <property role="3GE5qa" value="hazards" />
+    <node concept="3clFbS" id="63UItOi93To" role="18ibNy">
+      <node concept="3cpWs8" id="63UItOi998C" role="3cqZAp">
+        <node concept="3cpWsn" id="63UItOi998D" role="3cpWs9">
+          <property role="TrG5h" value="seq" />
+          <node concept="A3Dl8" id="63UItOi995d" role="1tU5fm">
+            <node concept="3Tqbb2" id="63UItOi995g" role="A3Ik2">
+              <ref role="ehGHo" to="cjwq:2RlaC$P86Ok" resolve="HazardsListRefWord" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="63UItOi998E" role="33vP2m">
+            <node concept="2OqwBi" id="63UItOi998F" role="2Oq$k0">
+              <node concept="2OqwBi" id="63UItOi998G" role="2Oq$k0">
+                <node concept="1YBJjd" id="63UItOi998H" role="2Oq$k0">
+                  <ref role="1YBMHb" node="63UItOi93Tq" resolve="aohs" />
+                </node>
+                <node concept="3TrEf2" id="63UItOi998I" role="2OqNvi">
+                  <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="63UItOi998J" role="2OqNvi">
+                <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="63UItOi998K" role="2OqNvi">
+              <node concept="chp4Y" id="63UItOi998L" role="v3oSu">
+                <ref role="cht4Q" to="cjwq:2RlaC$P86Ok" resolve="HazardsListRefWord" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="63UItOi997Z" role="3cqZAp">
+        <node concept="3clFbC" id="63UItOi9aqR" role="2MkoU_">
+          <node concept="3cmrfG" id="63UItOi9aPR" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="63UItOi99r6" role="3uHU7B">
+            <node concept="37vLTw" id="63UItOi99dn" role="2Oq$k0">
+              <ref role="3cqZAo" node="63UItOi998D" resolve="seq" />
+            </node>
+            <node concept="34oBXx" id="63UItOi99yW" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="63UItOi9aSj" role="2MkJ7o">
+          <property role="Xl_RC" value="exactly one hazard list needs to be referenced in text" />
+        </node>
+        <node concept="1YBJjd" id="63UItOi9aQz" role="1urrMF">
+          <ref role="1YBMHb" node="63UItOi93Tq" resolve="aohs" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="63UItOi93Tq" role="1YuTPh">
+      <property role="TrG5h" value="aohs" />
+      <ref role="1YaFvo" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
     </node>
   </node>
 </model>
