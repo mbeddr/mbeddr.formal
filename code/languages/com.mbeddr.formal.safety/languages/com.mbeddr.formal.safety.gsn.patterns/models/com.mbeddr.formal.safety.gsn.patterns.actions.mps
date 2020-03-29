@@ -107,7 +107,7 @@
   <node concept="37WguZ" id="7bxPmtp5qqQ">
     <property role="TrG5h" value="patternsInstantiation" />
     <node concept="37WvkG" id="6rlO$dpFLPR" role="37WGs$">
-      <ref role="37XkoT" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+      <ref role="37XkoT" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
       <node concept="37Y9Zx" id="6rlO$dpFLPS" role="37ZfLb">
         <node concept="3clFbS" id="6rlO$dpFLPT" role="2VODD2">
           <node concept="3cpWs8" id="6rlO$dpFLRA" role="3cqZAp">
@@ -280,7 +280,7 @@
       </node>
     </node>
     <node concept="37WvkG" id="7bxPmtp5qqR" role="37WGs$">
-      <ref role="37XkoT" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+      <ref role="37XkoT" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
       <node concept="37Y9Zx" id="7bxPmtp5qqS" role="37ZfLb">
         <node concept="3clFbS" id="7bxPmtp5qqT" role="2VODD2">
           <node concept="3cpWs8" id="7TjUbLQ4kZi" role="3cqZAp">

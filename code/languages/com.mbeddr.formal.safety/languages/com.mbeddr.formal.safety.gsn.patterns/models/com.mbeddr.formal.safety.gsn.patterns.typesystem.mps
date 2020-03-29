@@ -338,7 +338,7 @@
     </node>
     <node concept="1YaCAy" id="6FysnQMU7oj" role="1YuTPh">
       <property role="TrG5h" value="sp" />
-      <ref role="1YaFvo" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+      <ref role="1YaFvo" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
     </node>
   </node>
   <node concept="18kY7G" id="4i__4Gxo8uH">
@@ -458,7 +458,7 @@
     </node>
     <node concept="1YaCAy" id="4i__4Gxo8uK" role="1YuTPh">
       <property role="TrG5h" value="aorsp" />
-      <ref role="1YaFvo" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+      <ref role="1YaFvo" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
     </node>
   </node>
   <node concept="18kY7G" id="4MR8i$4gH98">

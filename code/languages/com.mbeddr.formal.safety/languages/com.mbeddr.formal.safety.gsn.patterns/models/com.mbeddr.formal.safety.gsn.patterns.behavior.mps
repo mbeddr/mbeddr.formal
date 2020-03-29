@@ -136,7 +136,7 @@
   </registry>
   <node concept="13h7C7" id="7bxPmtp7D_8">
     <property role="3GE5qa" value="hazards" />
-    <ref role="13h7C2" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+    <ref role="13h7C2" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
     <node concept="13i0hz" id="2RlaC$P8b$g" role="13h7CS">
       <property role="TrG5h" value="getHazardsList" />
       <node concept="3Tm1VV" id="2RlaC$P8b$h" role="1B3o_S" />
@@ -342,7 +342,7 @@
   </node>
   <node concept="13h7C7" id="1$M4_qbWkGS">
     <property role="3GE5qa" value="requirements" />
-    <ref role="13h7C2" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+    <ref role="13h7C2" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
     <node concept="13i0hz" id="1$M4_qbWkLi" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
@@ -528,6 +528,28 @@
         </node>
       </node>
       <node concept="17QB3L" id="1$M4_qbWA9b" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1Y8zh0mgtoJ" role="13h7CS">
+      <property role="TrG5h" value="getCorrespondingStrategy" />
+      <node concept="3Tm1VV" id="1Y8zh0mgtoK" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1Y8zh0mgtrA" role="3clF45">
+        <ref role="ehGHo" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
+      </node>
+      <node concept="3clFbS" id="1Y8zh0mgtoM" role="3clF47">
+        <node concept="3clFbF" id="1Y8zh0mgtsi" role="3cqZAp">
+          <node concept="1PxgMI" id="1Y8zh0mgu6W" role="3clFbG">
+            <node concept="chp4Y" id="1Y8zh0mgucI" role="3oSUPX">
+              <ref role="cht4Q" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
+            </node>
+            <node concept="2OqwBi" id="1Y8zh0mgtCQ" role="1m5AlR">
+              <node concept="13iPFW" id="1Y8zh0mgtsh" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1Y8zh0mgtRu" role="2OqNvi">
+                <ref role="37wK5l" to="89jy:4_dUcGNLfgE" resolve="getNeighbouringInboundElement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="1$M4_qbWA8W" role="13h7CW">
       <node concept="3clFbS" id="1$M4_qbWA8X" role="2VODD2">

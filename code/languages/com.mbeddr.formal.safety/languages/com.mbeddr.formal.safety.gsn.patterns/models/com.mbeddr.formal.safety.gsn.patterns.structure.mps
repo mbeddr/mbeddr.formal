@@ -47,7 +47,7 @@
   </registry>
   <node concept="1TIwiD" id="7bxPmtp5iOT">
     <property role="EcuMT" value="8278132229936590137" />
-    <property role="TrG5h" value="ArgumentOverHazardsStrategyPattern" />
+    <property role="TrG5h" value="ArgumentOverHazardsStrategy" />
     <property role="34LRSv" value="Argument over Hazards Strategy" />
     <property role="3GE5qa" value="hazards" />
     <ref role="1TJDcQ" node="7bxPmtp7B44" resolve="PatternStrategyBase" />
@@ -73,7 +73,7 @@
   </node>
   <node concept="1TIwiD" id="1$M4_qbW4nS">
     <property role="EcuMT" value="1815533762707998200" />
-    <property role="TrG5h" value="ArgumentOverRequirementsStrategyPattern" />
+    <property role="TrG5h" value="ArgumentOverRequirementsStrategy" />
     <property role="34LRSv" value="Argument over Requirements Strategy" />
     <property role="3GE5qa" value="requirements" />
     <ref role="1TJDcQ" node="7bxPmtp7B44" resolve="PatternStrategyBase" />

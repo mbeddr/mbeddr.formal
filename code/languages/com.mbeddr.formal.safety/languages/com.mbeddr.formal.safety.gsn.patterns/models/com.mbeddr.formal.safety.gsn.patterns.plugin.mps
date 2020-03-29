@@ -253,7 +253,7 @@
               </node>
               <node concept="3O6GUB" id="7kF4CZHBbdU" role="2OqNvi">
                 <node concept="chp4Y" id="7TjUbLQ4yt8" role="3QVz_e">
-                  <ref role="cht4Q" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+                  <ref role="cht4Q" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
                 </node>
               </node>
             </node>
@@ -318,7 +318,7 @@
                     <node concept="36biLy" id="4qaoH_EWHF" role="28nt2d">
                       <node concept="1PxgMI" id="4qaoH_EWHG" role="36biLW">
                         <node concept="chp4Y" id="7TjUbLQ66uL" role="3oSUPX">
-                          <ref role="cht4Q" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+                          <ref role="cht4Q" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
                         </node>
                         <node concept="37vLTw" id="4qaoH_EWHI" role="1m5AlR">
                           <ref role="3cqZAo" node="4qaoH_EWHi" resolve="fromNode" />
@@ -387,7 +387,7 @@
             </node>
             <node concept="3O6GUB" id="7kF4CZHCa3n" role="2OqNvi">
               <node concept="chp4Y" id="7TjUbLQ5UmJ" role="3QVz_e">
-                <ref role="cht4Q" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+                <ref role="cht4Q" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
               </node>
             </node>
           </node>
@@ -614,7 +614,7 @@
               </node>
               <node concept="3O6GUB" id="1QoXEbdC5KO" role="2OqNvi">
                 <node concept="chp4Y" id="1QoXEbdCd6$" role="3QVz_e">
-                  <ref role="cht4Q" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+                  <ref role="cht4Q" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
                 </node>
               </node>
             </node>
@@ -679,7 +679,7 @@
                     <node concept="36biLy" id="1QoXEbdC5Li" role="28nt2d">
                       <node concept="1PxgMI" id="1QoXEbdC5Lj" role="36biLW">
                         <node concept="chp4Y" id="1QoXEbdCdpx" role="3oSUPX">
-                          <ref role="cht4Q" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+                          <ref role="cht4Q" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
                         </node>
                         <node concept="37vLTw" id="1QoXEbdC5Ll" role="1m5AlR">
                           <ref role="3cqZAo" node="1QoXEbdC5KT" resolve="fromNode" />
@@ -748,7 +748,7 @@
             </node>
             <node concept="3O6GUB" id="1QoXEbdC5LI" role="2OqNvi">
               <node concept="chp4Y" id="1QoXEbdCdxL" role="3QVz_e">
-                <ref role="cht4Q" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+                <ref role="cht4Q" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
               </node>
             </node>
           </node>

@@ -369,7 +369,7 @@
   <node concept="PKFIW" id="3Ngc4zVhAxb">
     <property role="3GE5qa" value="hazards" />
     <property role="TrG5h" value="ArgumentOverHazardsStrategyTextArea" />
-    <ref role="1XX52x" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategyPattern" />
+    <ref role="1XX52x" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
     <node concept="1PE4EZ" id="3Ngc4zVhAxd" role="1PM95z">
       <ref role="1PE7su" to="g35p:3Ngc4zVhb40" resolve="StrategyTextArea" />
     </node>
@@ -401,7 +401,7 @@
   <node concept="PKFIW" id="3Ngc4zVhAAj">
     <property role="3GE5qa" value="requirements" />
     <property role="TrG5h" value="ArgumentOverRequirementsStrategyTextArea" />
-    <ref role="1XX52x" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategyPattern" />
+    <ref role="1XX52x" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
     <node concept="1PE4EZ" id="3Ngc4zVhAAl" role="1PM95z">
       <ref role="1PE7su" to="g35p:3Ngc4zVhb40" resolve="StrategyTextArea" />
     </node>
