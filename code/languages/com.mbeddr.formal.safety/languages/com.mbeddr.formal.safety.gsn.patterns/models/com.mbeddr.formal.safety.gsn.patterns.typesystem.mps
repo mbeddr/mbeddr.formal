@@ -12,8 +12,8 @@
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="7wf3" ref="r:c49134f0-ff6f-4ef4-ad9f-10c1a3f47c1a(com.mbeddr.formal.base.arch.behavior)" />
-    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -50,6 +50,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -60,6 +61,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -176,6 +180,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
@@ -342,7 +347,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="4i__4Gxo8uH">
-    <property role="TrG5h" value="check_ArgumentOverRequirementsStrategyPattern" />
+    <property role="TrG5h" value="check_ArgumentOverRequirementsStrategy" />
     <property role="3GE5qa" value="requirements" />
     <node concept="3clFbS" id="4i__4Gxo8uI" role="18ibNy">
       <node concept="3cpWs8" id="4i__4Gxo8xf" role="3cqZAp">
@@ -790,6 +795,65 @@
     <node concept="1YaCAy" id="4MR8i$4gH9b" role="1YuTPh">
       <property role="TrG5h" value="cbdStrategy" />
       <ref role="1YaFvo" to="2qxf:6rlO$dpJSTC" resolve="CBDStrategy" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="1Y8zh0mgKqJ">
+    <property role="TrG5h" value="check_ArgumentOverRequirementsStrategy_TextFormat" />
+    <property role="3GE5qa" value="requirements" />
+    <node concept="3clFbS" id="1Y8zh0mgKqK" role="18ibNy">
+      <node concept="3cpWs8" id="63UItOi54R$" role="3cqZAp">
+        <node concept="3cpWsn" id="63UItOi54R_" role="3cpWs9">
+          <property role="TrG5h" value="rdrwords" />
+          <node concept="A3Dl8" id="63UItOi54QU" role="1tU5fm">
+            <node concept="3Tqbb2" id="63UItOi54QX" role="A3Ik2">
+              <ref role="ehGHo" to="2qxf:2rzNEUxND_5" resolve="RequirementDocumentRefWord" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="63UItOi54RA" role="33vP2m">
+            <node concept="2OqwBi" id="63UItOi54RB" role="2Oq$k0">
+              <node concept="2OqwBi" id="63UItOi54RC" role="2Oq$k0">
+                <node concept="1YBJjd" id="63UItOi54RD" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1Y8zh0mgKqM" resolve="aors" />
+                </node>
+                <node concept="3TrEf2" id="63UItOi54RE" role="2OqNvi">
+                  <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="63UItOi54RF" role="2OqNvi">
+                <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="63UItOi54RG" role="2OqNvi">
+              <node concept="chp4Y" id="63UItOi54RH" role="v3oSu">
+                <ref role="cht4Q" to="2qxf:2rzNEUxND_5" resolve="RequirementDocumentRefWord" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="63UItOi54V1" role="3cqZAp">
+        <node concept="3clFbC" id="63UItOi56cn" role="2MkoU_">
+          <node concept="3cmrfG" id="63UItOi56Bn" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="63UItOi559I" role="3uHU7B">
+            <node concept="37vLTw" id="63UItOi54VZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="63UItOi54R_" resolve="rdrwords" />
+            </node>
+            <node concept="34oBXx" id="63UItOi55kv" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="63UItOi572d" role="2MkJ7o">
+          <property role="Xl_RC" value="Exactly one requirement document needs to be referenced in text" />
+        </node>
+        <node concept="1YBJjd" id="63UItOi574I" role="1urrMF">
+          <ref role="1YBMHb" node="1Y8zh0mgKqM" resolve="aors" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1Y8zh0mgKqM" role="1YuTPh">
+      <property role="TrG5h" value="aors" />
+      <ref role="1YaFvo" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
     </node>
   </node>
 </model>
