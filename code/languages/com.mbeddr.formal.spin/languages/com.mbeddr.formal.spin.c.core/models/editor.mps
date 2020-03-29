@@ -537,6 +537,9 @@
         <node concept="VechU" id="cQ6ZodoF89" role="3F10Kt">
           <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
+        <node concept="11L4FC" id="5uFV_KLdpuQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="5mKzygM2UAB" role="2iSdaV" />
     </node>

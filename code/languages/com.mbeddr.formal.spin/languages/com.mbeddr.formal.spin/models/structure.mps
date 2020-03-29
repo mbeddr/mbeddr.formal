@@ -215,6 +215,13 @@
     <property role="TrG5h" value="ArgumentDeclaration" />
     <property role="34LRSv" value="argument" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5uFV_KLukZ2" role="1TKVEi">
+      <property role="IQ2ns" value="6317404982051688386" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="furtherArguments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4_pH3zvfOeK" resolve="ArgumentDeclaration" />
+    </node>
     <node concept="PrWs8" id="4_pH3zvgMJl" role="PzmwI">
       <ref role="PrY4T" node="4_pH3zvgMJf" resolve="IVariableDeclaration" />
     </node>
@@ -328,9 +335,9 @@
   <node concept="1TIwiD" id="4_pH3zvi8Ka">
     <property role="EcuMT" value="5285453794053229578" />
     <property role="3GE5qa" value="statements.builtin" />
-    <property role="TrG5h" value="PrintfStatement" />
+    <property role="TrG5h" value="PrintfExpression" />
     <property role="34LRSv" value="printf" />
-    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="4_pH3zvi8KK" role="1TKVEi">
       <property role="IQ2ns" value="5285453794053229616" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -916,7 +923,6 @@
       <property role="IQ2ns" value="2291855968617420240" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="tpe" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     </node>
   </node>
@@ -1377,6 +1383,17 @@
     <property role="34LRSv" value="??" />
     <property role="R4oN_" value="random receive" />
     <ref role="1TJDcQ" node="5uFV_KLaUAd" resolve="ReceiveBase" />
+  </node>
+  <node concept="1TIwiD" id="5uFV_KLluSH">
+    <property role="EcuMT" value="6317404982049369645" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="BitType" />
+    <property role="34LRSv" value="bit" />
+    <property role="R4oN_" value="bit type" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="PrWs8" id="5uFV_KLluSI" role="PzmwI">
+      <ref role="PrY4T" node="2DjQaub_wFg" resolve="IPromelaType" />
+    </node>
   </node>
 </model>
 
