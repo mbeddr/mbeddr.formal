@@ -98,6 +98,9 @@
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="63UItOi8GDq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7BYuSCF_D72">
     <property role="EcuMT" value="8790599356040778178" />
