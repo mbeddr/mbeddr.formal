@@ -217,6 +217,9 @@
     <property role="3GE5qa" value="hazards" />
     <property role="TrG5h" value="HazardReferencingGoalBase" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="PrWs8" id="5uFV_KLFj2Q" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
 </model>
 
