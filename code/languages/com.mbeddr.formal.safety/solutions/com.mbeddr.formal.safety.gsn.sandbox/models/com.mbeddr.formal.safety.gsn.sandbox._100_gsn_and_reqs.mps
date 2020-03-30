@@ -28,6 +28,9 @@
       <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
         <child id="3226630706270140651" name="text" index="0nzdz" />
       </concept>
+      <concept id="7094415537350220692" name="com.mbeddr.formal.req.base.structure.ReqRefWord" flags="ng" index="2aGvr3">
+        <reference id="7094415537350220726" name="req" index="2aGvrx" />
+      </concept>
       <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
         <child id="4908298719893728789" name="spec" index="1QQeAV" />
@@ -42,11 +45,6 @@
       </concept>
       <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
         <child id="4908298719893728837" name="requirements" index="1QQeBF" />
-      </concept>
-    </language>
-    <language id="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba" name="com.mbeddr.formal.safety.gsn.req">
-      <concept id="3200301287348913983" name="com.mbeddr.formal.safety.gsn.req.structure.ReqRef" flags="ng" index="2MKooJ">
-        <reference id="3200301287348915699" name="req" index="2MKoNz" />
       </concept>
     </language>
     <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
@@ -284,10 +282,10 @@
         <node concept="19SUe$" id="2LDKh2uEqRF" role="19SJt6">
           <property role="19SUeA" value="No collision due to &#10;malfunctioning controller.&#10;" />
         </node>
-        <node concept="2MKooJ" id="4dCoQOftxrm" role="19SJt6">
-          <ref role="2MKoNz" node="2LDKh2uEoGm" />
+        <node concept="2aGvr3" id="3cxPYidJr1j" role="19SJt6">
+          <ref role="2aGvrx" node="2LDKh2uEoGm" />
         </node>
-        <node concept="19SUe$" id="4dCoQOftxrn" role="19SJt6" />
+        <node concept="19SUe$" id="3cxPYidJr1k" role="19SJt6" />
       </node>
     </node>
     <node concept="37mRI7" id="2LDKh2uEqRW" role="lGtFl">
@@ -1375,10 +1373,10 @@
         <node concept="19SUe$" id="4qaoH_QMhE" role="19SJt6">
           <property role="19SUeA" value="No collision due to &#10;malfunctioning controller.&#10;" />
         </node>
-        <node concept="2MKooJ" id="4qaoH_QMhF" role="19SJt6">
-          <ref role="2MKoNz" node="2LDKh2uEoGm" />
+        <node concept="2aGvr3" id="3cxPYidJr59" role="19SJt6">
+          <ref role="2aGvrx" node="2LDKh2uEoGm" />
         </node>
-        <node concept="19SUe$" id="4qaoH_QMhG" role="19SJt6" />
+        <node concept="19SUe$" id="3cxPYidJr5a" role="19SJt6" />
       </node>
     </node>
     <node concept="37mRI7" id="4qaoH_QMhH" role="lGtFl">
@@ -1962,7 +1960,7 @@
           <property role="gqqTZ" value="180.0" />
           <property role="gqqTW" value="219.0" />
           <property role="gqqTX" value="275.0" />
-          <property role="gqqTy" value="66.0" />
+          <property role="gqqTy" value="68.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
