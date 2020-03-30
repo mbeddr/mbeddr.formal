@@ -2113,19 +2113,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="3kEBMNbY1ye" role="3clF47">
-        <node concept="3clFbJ" id="3kEBMNbY1yf" role="3cqZAp">
-          <node concept="3clFbS" id="3kEBMNbY1yg" role="3clFbx">
-            <node concept="3cpWs6" id="3kEBMNbY1yh" role="3cqZAp">
-              <node concept="3clFbT" id="3kEBMNbY1yi" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="1rXfSq" id="3kEBMNbY1yj" role="3clFbw">
-            <ref role="37wK5l" node="7TjUbLQ7M16" resolve="isStartOfSpecialConnections" />
-            <node concept="37vLTw" id="3kEBMNbY1yk" role="37wK5m">
-              <ref role="3cqZAo" node="3kEBMNbY1yb" resolve="endpoint" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3kEBMNbY1yl" role="3cqZAp">
           <node concept="2OqwBi" id="3kEBMNbY1ym" role="3clFbG">
             <node concept="2Zo12i" id="3kEBMNbY1yn" role="2OqNvi">
@@ -2712,19 +2699,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="3clFbS" id="2MwNMmeYdi5" role="3clF47">
-        <node concept="3clFbJ" id="2MwNMmeYdi6" role="3cqZAp">
-          <node concept="3clFbS" id="2MwNMmeYdi7" role="3clFbx">
-            <node concept="3cpWs6" id="2MwNMmeYdi8" role="3cqZAp">
-              <node concept="3clFbT" id="2MwNMmeYdi9" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="1rXfSq" id="2MwNMmeYdia" role="3clFbw">
-            <ref role="37wK5l" node="7TjUbLQ7M16" resolve="isStartOfSpecialConnections" />
-            <node concept="37vLTw" id="2MwNMmeYdib" role="37wK5m">
-              <ref role="3cqZAo" node="2MwNMmeYdi2" resolve="endpoint" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2MwNMmeYdic" role="3cqZAp">
           <node concept="2OqwBi" id="2MwNMmeYdid" role="3clFbG">
             <node concept="2Zo12i" id="2MwNMmeYdie" role="2OqNvi">
