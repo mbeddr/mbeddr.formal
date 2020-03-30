@@ -3395,5 +3395,40 @@
     </node>
     <node concept="3Tm1VV" id="4MR8i$48tIn" role="1B3o_S" />
   </node>
+  <node concept="24kQdi" id="3cxPYidIPOa">
+    <property role="3GE5qa" value="words" />
+    <ref role="1XX52x" to="z27p:3cxPYidIOW0" resolve="ReqDocumentRefWord" />
+    <node concept="3EZMnI" id="1$M4_qbIbC8" role="2wV5jI">
+      <node concept="3F0ifn" id="1$M4_qbIbCf" role="3EZMnx">
+        <property role="3F0ifm" value="@req-document" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F0ifn" id="1$M4_qbIbCl" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="1$M4_qbIwJn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="1$M4_qbIwJs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="1$M4_qbIbCt" role="3EZMnx">
+        <ref role="1NtTu8" to="z27p:3cxPYidIPNG" resolve="reqDocument" />
+        <node concept="1sVBvm" id="1$M4_qbIbCv" role="1sWHZn">
+          <node concept="3F0A7n" id="1$M4_qbIbCC" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1$M4_qbIbCM" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="1$M4_qbIwJw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1$M4_qbIbCb" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
