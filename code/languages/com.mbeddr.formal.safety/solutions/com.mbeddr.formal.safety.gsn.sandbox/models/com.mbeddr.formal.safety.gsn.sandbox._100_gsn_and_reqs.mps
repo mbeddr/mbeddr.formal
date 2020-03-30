@@ -2,7 +2,6 @@
 <model ref="r:447a941a-2ec9-4b75-8db1-316b8cb606d6(com.mbeddr.formal.safety.gsn.sandbox._100_gsn_and_reqs)">
   <persistence version="9" />
   <languages>
-    <use id="2ec00dc3-d0e8-497d-8fe3-82d556eb83ba" name="com.mbeddr.formal.safety.gsn.req" version="0" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
     <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="9" />

@@ -11,7 +11,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.external_evidence/com.mbeddr.formal.safety.gsn.external_evidence.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.odd/com.mbeddr.formal.safety.gsn.odd.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.patterns/com.mbeddr.formal.safety.gsn.patterns.mpl" folder="gsn" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.req/com.mbeddr.formal.safety.gsn.req.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.smv/com.mbeddr.formal.safety.gsn.smv.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn/com.mbeddr.formal.safety.gsn.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.hara/com.mbeddr.formal.safety.hara.mpl" folder="hara" />
