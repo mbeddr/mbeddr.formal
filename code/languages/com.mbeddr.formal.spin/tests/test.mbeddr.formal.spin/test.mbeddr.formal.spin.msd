@@ -20,7 +20,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">628c1bba-6b54-4c71-927c-3cff044349e4(com.mbeddr.formal.spin.hdl)</dependency>
     <dependency reexport="false">ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)</dependency>
-    <dependency reexport="false">e7468415-0ba6-46da-ae60-1751c7c9c412(com.mbeddr.formal.base.testing.utils)</dependency>
+    <dependency reexport="false">95e21b06-06a6-46fe-b92e-7f5e0f4ceb35(org.mpsqa.gentest.baseline)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
@@ -66,6 +66,7 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
+    <module reference="95e21b06-06a6-46fe-b92e-7f5e0f4ceb35(org.mpsqa.gentest.baseline)" version="0" />
     <module reference="e426e4c3-de55-4827-bb52-c2b0700e1554(test.mbeddr.formal.spin)" version="0" />
   </dependencyVersions>
 </solution>

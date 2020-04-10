@@ -13,7 +13,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="hr62" ref="r:0f006508-b2f4-4b98-82de-5b32de29d868(com.mbeddr.formal.spin.testing_utils)" />
     <import index="imq8" ref="r:828869ae-99a6-40b2-b521-4aef1ed3af63(com.mbeddr.formal.spin.analyzer.model)" />
-    <import index="fd8w" ref="r:16c8ea64-b7a6-4f9e-8081-861be8940c31(com.mbeddr.formal.base.testing.utils.baseline)" />
+    <import index="ckhp" ref="r:10278818-bfd6-4226-91f7-766d588a4eee(org.mpsqa.gentest.baseline)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -140,18 +140,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6kOHW5f_LLq" role="3cqZAp">
-          <node concept="NRdvd" id="6kOHW5f_NHA" role="3clFbG">
-            <ref role="1Pybhc" to="fd8w:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
-            <ref role="37wK5l" to="fd8w:5mQCqLmwV_U" resolve="generateAndCompareWith" />
-            <node concept="1jxXqW" id="6kOHW5f_NHB" role="37wK5m" />
-            <node concept="37vLTw" id="6kOHW5f_NHC" role="37wK5m">
+        <node concept="3clFbF" id="3PN66LDsQD9" role="3cqZAp">
+          <node concept="NRdvd" id="3PN66LDsQI6" role="3clFbG">
+            <ref role="37wK5l" to="ckhp:5mQCqLmwV_U" resolve="generateAndCompareWith" />
+            <ref role="1Pybhc" to="ckhp:5mQCqLmwV_S" resolve="BaseLineGeneratorTestsUtil" />
+            <node concept="1jxXqW" id="3PN66LDsQI7" role="37wK5m" />
+            <node concept="37vLTw" id="3PN66LDsQI8" role="37wK5m">
               <ref role="3cqZAo" node="6kOHW5f_Lsd" resolve="model" />
             </node>
-            <node concept="Xl_RD" id="6kOHW5f_NHD" role="37wK5m">
+            <node concept="Xl_RD" id="3PN66LDsQI9" role="37wK5m">
               <property role="Xl_RC" value="\\baseline\\_050_promela_ext_010_statements_testcode" />
             </node>
-            <node concept="Xl_RD" id="6kOHW5f_NHE" role="37wK5m">
+            <node concept="Xl_RD" id="3PN66LDsQIa" role="37wK5m">
               <property role="Xl_RC" value="pml" />
             </node>
           </node>
