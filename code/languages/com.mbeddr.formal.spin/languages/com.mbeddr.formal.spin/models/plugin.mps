@@ -37,6 +37,7 @@
     <import index="1kj4" ref="r:0bcaf439-5bc6-429b-a457-4e0d9746449f(jetbrains.mps.make.delta)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -73,6 +74,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
+      <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
@@ -124,6 +126,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1816,7 +1821,7 @@
                   <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                   <node concept="2OqwBi" id="4_pH3zvsQLS" role="37wK5m">
                     <node concept="37vLTw" id="1Ia_hLZpa23" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1Ia_hLZoJ64" resolve="promelaFile" />
+                      <ref role="3cqZAo" node="1Ia_hLZoJ64" resolve="file" />
                     </node>
                     <node concept="liA8E" id="4_pH3zvsSnm" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~File.getParent()" resolve="getParent" />
@@ -2113,7 +2118,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="1Ia_hLZoJ64" role="3clF46">
-        <property role="TrG5h" value="promelaFile" />
+        <property role="TrG5h" value="file" />
         <node concept="3uibUv" id="1Ia_hLZpb9O" role="1tU5fm">
           <ref role="3uigEE" to="guwi:~File" resolve="File" />
         </node>
@@ -2211,6 +2216,33 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3PN66LDtTbp" role="3cqZAp">
+          <node concept="3cpWsn" id="3PN66LDtTbq" role="3cpWs9">
+            <property role="TrG5h" value="executableName" />
+            <node concept="17QB3L" id="3PN66LDtT7H" role="1tU5fm" />
+            <node concept="37vLTw" id="3PN66LDtTAv" role="33vP2m">
+              <ref role="3cqZAo" node="5y2MdLwKZj4" resolve="verifierName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3PN66LDu92$" role="3cqZAp">
+          <node concept="3clFbS" id="3PN66LDu92A" role="3clFbx">
+            <node concept="3clFbF" id="3PN66LDu9lQ" role="3cqZAp">
+              <node concept="d57v9" id="3PN66LDu9C5" role="3clFbG">
+                <node concept="Xl_RD" id="3PN66LDu9CL" role="37vLTx">
+                  <property role="Xl_RC" value=".exe" />
+                </node>
+                <node concept="37vLTw" id="3PN66LDu9lO" role="37vLTJ">
+                  <ref role="3cqZAo" node="3PN66LDtTbq" resolve="executableName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="10M0yZ" id="3PN66LDu9bk" role="3clFbw">
+            <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+            <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+          </node>
+        </node>
         <node concept="3clFbF" id="5y2MdLwLeET" role="3cqZAp">
           <node concept="2ShNRf" id="5y2MdLwLeEV" role="3clFbG">
             <node concept="1pGfFk" id="5y2MdLwLeEW" role="2ShVmc">
@@ -2234,13 +2266,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs3" id="5y2MdLwLeF4" role="37wK5m">
-                <node concept="Xl_RD" id="5y2MdLwLeF5" role="3uHU7w">
-                  <property role="Xl_RC" value=".exe" />
-                </node>
-                <node concept="37vLTw" id="5y2MdLwLeF6" role="3uHU7B">
-                  <ref role="3cqZAo" node="5y2MdLwKZj4" resolve="verifierName" />
-                </node>
+              <node concept="37vLTw" id="3PN66LDtTbu" role="37wK5m">
+                <ref role="3cqZAo" node="3PN66LDtTbq" resolve="executableName" />
               </node>
             </node>
           </node>
