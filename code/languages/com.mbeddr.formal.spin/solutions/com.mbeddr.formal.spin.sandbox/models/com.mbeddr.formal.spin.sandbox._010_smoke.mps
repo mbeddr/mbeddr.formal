@@ -7,7 +7,7 @@
   <imports />
   <registry>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
-      <concept id="5285453794053229578" name="com.mbeddr.formal.spin.structure.PrintfStatement" flags="ng" index="2m4jwM">
+      <concept id="5285453794053229578" name="com.mbeddr.formal.spin.structure.PrintfExpression" flags="ng" index="2m4jwM">
         <child id="5285453794053229616" name="arguments" index="2m4jw8" />
       </concept>
       <concept id="5285453794053229581" name="com.mbeddr.formal.spin.structure.StringLiteral" flags="ng" index="2m4jwP">
@@ -193,15 +193,17 @@
             </node>
           </node>
         </node>
-        <node concept="2m4jwM" id="4_pH3zvi_C1" role="2mpP4z">
-          <node concept="2m4jwP" id="4_pH3zvi_D1" role="2m4jw8">
-            <property role="2m4jwQ" value="value = %d, reversed = %d\n" />
-          </node>
-          <node concept="2m6Dwh" id="407WgdX8zTP" role="2m4jw8">
-            <ref role="2m6DZP" node="4_pH3zvhF8P" resolve="value" />
-          </node>
-          <node concept="2m6Dwh" id="407WgdX8zTY" role="2m4jw8">
-            <ref role="2m6DZP" node="4_pH3zvi7dr" resolve="reversed" />
+        <node concept="XdJ7S" id="3Em8_Splipz" role="2mpP4z">
+          <node concept="2m4jwM" id="3Em8_Splipx" role="XdJ0b">
+            <node concept="2m4jwP" id="3Em8_Splj6I" role="2m4jw8">
+              <property role="2m4jwQ" value="value = %d, reversed = %d\n" />
+            </node>
+            <node concept="2m6Dwh" id="3Em8_Splj6J" role="2m4jw8">
+              <ref role="2m6DZP" node="4_pH3zvhF8P" resolve="value" />
+            </node>
+            <node concept="2m6Dwh" id="3Em8_Splj6K" role="2m4jw8">
+              <ref role="2m6DZP" node="4_pH3zvi7dr" resolve="reversed" />
+            </node>
           </node>
         </node>
       </node>
@@ -282,13 +284,15 @@
             <ref role="2m6DZP" node="407WgdX9WnH" resolve="temp" />
           </node>
         </node>
-        <node concept="2m4jwM" id="407WgdXaJgM" role="2mpP4z">
-          <node concept="2m4jwP" id="407WgdXaJhc" role="2m4jw8">
-            <property role="2m4jwQ" value="Process P=%d, n=%d\n" />
-          </node>
-          <node concept="Xbgln" id="407WgdXbwcG" role="2m4jw8" />
-          <node concept="X83sx" id="407WgdXbwcQ" role="2m4jw8">
-            <ref role="2m6DZP" node="407WgdX9ftB" resolve="n" />
+        <node concept="XdJ7S" id="3Em8_SplkxH" role="2mpP4z">
+          <node concept="2m4jwM" id="3Em8_SplkxF" role="XdJ0b">
+            <node concept="2m4jwP" id="3Em8_SplkZI" role="2m4jw8">
+              <property role="2m4jwQ" value="Process P=%d, n=%d\n" />
+            </node>
+            <node concept="Xbgln" id="3Em8_SplkZJ" role="2m4jw8" />
+            <node concept="X83sx" id="3Em8_SplkZK" role="2m4jw8">
+              <ref role="2m6DZP" node="407WgdX9ftB" resolve="n" />
+            </node>
           </node>
         </node>
       </node>
@@ -343,15 +347,17 @@
             <ref role="2m6DZP" node="407WgdXcfWO" resolve="temp" />
           </node>
         </node>
-        <node concept="2m4jwM" id="407WgdXcfZk" role="2mpP4z">
-          <node concept="2m4jwP" id="407WgdXcfZI" role="2m4jw8">
-            <property role="2m4jwQ" value="Process P=%d, incr=%d\n" />
-          </node>
-          <node concept="2m6Dw2" id="407WgdXcfZU" role="2m4jw8">
-            <ref role="2m6DZP" node="407WgdXbwdO" resolve="id" />
-          </node>
-          <node concept="2m6Dw2" id="407WgdXcg0d" role="2m4jw8">
-            <ref role="2m6DZP" node="407WgdXbwe4" resolve="incr" />
+        <node concept="XdJ7S" id="3Em8_SplmbG" role="2mpP4z">
+          <node concept="2m4jwM" id="3Em8_SplmbE" role="XdJ0b">
+            <node concept="2m4jwP" id="3Em8_SplmSA" role="2m4jw8">
+              <property role="2m4jwQ" value="Process P=%d, incr=%d\n" />
+            </node>
+            <node concept="2m6Dw2" id="3Em8_SplmSB" role="2m4jw8">
+              <ref role="2m6DZP" node="407WgdXbwdO" resolve="id" />
+            </node>
+            <node concept="2m6Dw2" id="3Em8_SplmSC" role="2m4jw8">
+              <ref role="2m6DZP" node="407WgdXbwe4" resolve="incr" />
+            </node>
           </node>
         </node>
       </node>
