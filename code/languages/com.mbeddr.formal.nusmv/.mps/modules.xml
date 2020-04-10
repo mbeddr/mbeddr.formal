@@ -28,7 +28,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.msc.sandbox/com.fasten.base.msc.sandbox.msd" folder="lang.base.msc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.allScripts.build/com.mbeddr.formal.allScripts.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.pluginSolution/com.mbeddr.formal.base.pluginSolution.msd" folder="lang.base" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.testing.utils/com.mbeddr.formal.base.testing.utils.msd" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.tooling/com.mbeddr.formal.base.tooling.msd" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.build/com.mbeddr.formal.nusmv.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.cbd.pluginSolution/com.mbeddr.formal.nusmv.cbd.pluginSolution.msd" folder="lang.nusmv" />
