@@ -17,6 +17,7 @@
       <concept id="2291855968617536871" name="com.mbeddr.formal.spin.c.core.structure.CGlobalVariableReference" flags="ng" index="1a0deV" />
       <concept id="2291855968617420983" name="com.mbeddr.formal.spin.c.core.structure.VoidType" flags="ng" index="1a0DpF" />
       <concept id="2291855968617420014" name="com.mbeddr.formal.spin.c.core.structure.SUVDefinition" flags="ng" index="1a0DCM">
+        <child id="8981534439129626893" name="includeDirs" index="aTIzL" />
         <child id="2291855968617421058" name="content" index="1a0Dvu" />
         <child id="2417655713190519891" name="externalPaths" index="3OpL_s" />
       </concept>
@@ -92,6 +93,7 @@
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
         <property id="6156524541422553710" name="path" index="3N1Lgt" />
@@ -116,11 +118,16 @@
         <property role="TrG5h" value="res" />
         <node concept="1a0DGp" id="1vcsY83jihI" role="1a0DGc" />
       </node>
+      <node concept="1a039r" id="3PN66LDutVz" role="1a0O$p">
+        <property role="kiLot" value="true" />
+        <property role="TrG5h" value="crt_state" />
+        <node concept="1a0DGp" id="3PN66LDutVG" role="1a0DGc" />
+      </node>
     </node>
     <node concept="1a0OAr" id="1vcsY83hflh" role="1a0O6w" />
     <node concept="kFILp" id="1vcsY83uGjQ" role="1a0O6w">
-      <node concept="1a0deV" id="1vcsY83zele" role="kFILs">
-        <ref role="2m6DZP" node="1vcsY83xQnw" resolve="crt_state" />
+      <node concept="1a0deV" id="3Em8_Splgix" role="kFILs">
+        <ref role="2m6DZP" node="3PN66LDutVz" resolve="crt_state" />
       </node>
       <node concept="2IPVmt" id="1vcsY83xELn" role="kirKP">
         <property role="2IPVms" value="4" />
@@ -180,15 +187,13 @@
   </node>
   <node concept="1a0DCM" id="1vcsY83hfmF">
     <property role="TrG5h" value="simple_sm" />
+    <node concept="9PVaO" id="3PN66LDum0o" role="aTIzL">
+      <property role="3N1Lgt" value="external_c_files" />
+    </node>
     <node concept="3NXOOs" id="26dfgZlVIxS" role="3OpL_s">
       <property role="1RwFax" value="true" />
       <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="external_c_files/simple_sm.c" />
-    </node>
-    <node concept="3NXOOs" id="7M$OvLQdi1l" role="3OpL_s">
-      <property role="1RwFax" value="true" />
-      <property role="3kgbRO" value="false" />
-      <property role="3N1Lgt" value="external_c_files/simple_sm.h" />
     </node>
     <node concept="1a039r" id="1vcsY83xQnw" role="1a0Dvu">
       <property role="TrG5h" value="crt_state" />

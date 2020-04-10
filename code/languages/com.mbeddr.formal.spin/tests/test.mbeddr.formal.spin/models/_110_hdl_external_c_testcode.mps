@@ -316,11 +316,6 @@
       <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="external_c_files/quicksort.c" />
     </node>
-    <node concept="3NXOOs" id="cQ6ZodoEED" role="3OpL_s">
-      <property role="1RwFax" value="true" />
-      <property role="3kgbRO" value="false" />
-      <property role="3N1Lgt" value="external_c_files/quicksort.h" />
-    </node>
   </node>
   <node concept="2meLlA" id="2yuIwRziuQD">
     <property role="TrG5h" value="_010_quicksort_assertions" />
