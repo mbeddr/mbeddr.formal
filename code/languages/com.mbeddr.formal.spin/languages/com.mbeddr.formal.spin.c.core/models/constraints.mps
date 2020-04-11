@@ -9,7 +9,7 @@
     <import index="35tq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.scope(MPS.Core/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" />
-    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
+    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
@@ -411,7 +411,7 @@
               </node>
               <node concept="2Zo12i" id="1vcsY83jqrV" role="2OqNvi">
                 <node concept="chp4Y" id="1vcsY83jqrW" role="2Zo12j">
-                  <ref role="cht4Q" to="vshk:1vcsY83fkZr" resolve="ICLevelStatement" />
+                  <ref role="cht4Q" to="o3hv:1vcsY83fkZr" resolve="ICLevelStatement" />
                 </node>
               </node>
             </node>
@@ -476,37 +476,6 @@
               </node>
             </node>
             <node concept="3x8VRR" id="5SGsxw7KwD$" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="5SGsxw7KHAn">
-    <property role="3GE5qa" value="statements" />
-    <ref role="1M2myG" to="vshk:1vcsY83fkZr" resolve="ICLevelStatement" />
-    <node concept="9S07l" id="5SGsxw7KHAo" role="9Vyp8">
-      <node concept="3clFbS" id="5SGsxw7KHAp" role="2VODD2">
-        <node concept="3clFbF" id="5SGsxw7KHHK" role="3cqZAp">
-          <node concept="22lmx$" id="5SGsxw7RLyd" role="3clFbG">
-            <node concept="2OqwBi" id="5SGsxw7RLZ3" role="3uHU7B">
-              <node concept="nLn13" id="5SGsxw7RLHd" role="2Oq$k0" />
-              <node concept="2qgKlT" id="5SGsxw7RMvy" role="2OqNvi">
-                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="5SGsxw7KIP6" role="3uHU7w">
-              <node concept="2OqwBi" id="5SGsxw7KHXC" role="2Oq$k0">
-                <node concept="nLn13" id="5SGsxw7KHHJ" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="5SGsxw7KIow" role="2OqNvi">
-                  <node concept="1xMEDy" id="5SGsxw7KIoy" role="1xVPHs">
-                    <node concept="chp4Y" id="5SGsxw7KIzv" role="ri$Ld">
-                      <ref role="cht4Q" to="o3hv:6fYDdj_f_xg" resolve="ICCodeContext" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3x8VRR" id="5SGsxw7KLdR" role="2OqNvi" />
-            </node>
           </node>
         </node>
       </node>

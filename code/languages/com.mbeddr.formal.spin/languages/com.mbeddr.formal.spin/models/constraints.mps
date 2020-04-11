@@ -3,18 +3,21 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
+    <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="oqu9" ref="r:55c09d3a-85de-4c18-ab69-cda997480b6a(com.mbeddr.formal.spin.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="vshk" ref="r:dc20c736-549c-48b4-b95d-eb5e0a95f624(com.mbeddr.formal.spin.c.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -461,7 +464,7 @@
                 <node concept="2DD5aU" id="6Ay06Il0vbG" role="2Oq$k0" />
                 <node concept="2Zo12i" id="6Ay06Il0vYc" role="2OqNvi">
                   <node concept="chp4Y" id="6Ay06Il0vZF" role="2Zo12j">
-                    <ref role="cht4Q" to="vshk:1vcsY83fkZr" resolve="ICLevelStatement" />
+                    <ref role="cht4Q" to="o3hv:1vcsY83fkZr" resolve="ICLevelStatement" />
                   </node>
                 </node>
               </node>
@@ -479,6 +482,23 @@
                 <node concept="2Zo12i" id="6Ay06Il3bFv" role="2OqNvi">
                   <node concept="chp4Y" id="6Ay06Il3bHr" role="2Zo12j">
                     <ref role="cht4Q" to="o3hv:407WgdWWaID" resolve="EmptyStatement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5EqPaYw09AM" role="3cqZAp">
+              <node concept="3clFbS" id="5EqPaYw09AN" role="3clFbx">
+                <node concept="3cpWs6" id="5EqPaYw09AO" role="3cqZAp">
+                  <node concept="3clFbT" id="5EqPaYw09AP" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5EqPaYw09AQ" role="3clFbw">
+                <node concept="2DD5aU" id="5EqPaYw09AR" role="2Oq$k0" />
+                <node concept="2Zo12i" id="5EqPaYw09AS" role="2OqNvi">
+                  <node concept="chp4Y" id="5EqPaYw09IX" role="2Zo12j">
+                    <ref role="cht4Q" to="o3hv:407WgdXcg3V" resolve="ExpressionStatement" />
                   </node>
                 </node>
               </node>
@@ -615,6 +635,37 @@
                   <ref role="cht4Q" to="o3hv:4_pH3zvfOeK" resolve="ArgumentDeclaration" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5SGsxw7KHAn">
+    <property role="3GE5qa" value="statements" />
+    <ref role="1M2myG" to="o3hv:1vcsY83fkZr" resolve="ICLevelStatement" />
+    <node concept="9S07l" id="5SGsxw7KHAo" role="9Vyp8">
+      <node concept="3clFbS" id="5SGsxw7KHAp" role="2VODD2">
+        <node concept="3clFbF" id="5SGsxw7KHHK" role="3cqZAp">
+          <node concept="22lmx$" id="5SGsxw7RLyd" role="3clFbG">
+            <node concept="2OqwBi" id="5SGsxw7RLZ3" role="3uHU7B">
+              <node concept="nLn13" id="5SGsxw7RLHd" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5SGsxw7RMvy" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5SGsxw7KIP6" role="3uHU7w">
+              <node concept="2OqwBi" id="5SGsxw7KHXC" role="2Oq$k0">
+                <node concept="nLn13" id="5SGsxw7KHHJ" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5SGsxw7KIow" role="2OqNvi">
+                  <node concept="1xMEDy" id="5SGsxw7KIoy" role="1xVPHs">
+                    <node concept="chp4Y" id="5SGsxw7KIzv" role="ri$Ld">
+                      <ref role="cht4Q" to="o3hv:6fYDdj_f_xg" resolve="ICCodeContext" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="5SGsxw7KLdR" role="2OqNvi" />
             </node>
           </node>
         </node>
