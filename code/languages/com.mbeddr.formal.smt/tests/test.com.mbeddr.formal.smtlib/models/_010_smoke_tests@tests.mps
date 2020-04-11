@@ -329,7 +329,7 @@
         </node>
         <node concept="3vlDli" id="1MFSGJpdmr$" role="3cqZAp">
           <node concept="Xl_RD" id="1MFSGJpdmr_" role="3tpDZB">
-            <property role="Xl_RC" value="[0 -&gt; 8, else -&gt; 8]" />
+            <property role="Xl_RC" value="[else -&gt; 8]" />
           </node>
           <node concept="2YIFZM" id="1MFSGJpdmrA" role="3tpDZA">
             <ref role="37wK5l" to="evmz:6cjunGyE7D_" resolve="getValue" />
@@ -392,7 +392,7 @@
         </node>
         <node concept="3vlDli" id="1MFSGJpdmFT" role="3cqZAp">
           <node concept="Xl_RD" id="1MFSGJpdmFU" role="3tpDZB">
-            <property role="Xl_RC" value="[0 -&gt; 0, else -&gt; 0]" />
+            <property role="Xl_RC" value="[else -&gt; 0]" />
           </node>
           <node concept="2YIFZM" id="1MFSGJpdmFV" role="3tpDZA">
             <ref role="37wK5l" to="evmz:6cjunGyE7D_" resolve="getValue" />
@@ -440,7 +440,7 @@
         </node>
         <node concept="3vlDli" id="1MFSGJpdn7A" role="3cqZAp">
           <node concept="Xl_RD" id="1MFSGJpdn7B" role="3tpDZB">
-            <property role="Xl_RC" value="[0 -&gt; 0, else -&gt; 0]" />
+            <property role="Xl_RC" value="[else -&gt; 0]" />
           </node>
           <node concept="2YIFZM" id="1MFSGJpdn7C" role="3tpDZA">
             <ref role="37wK5l" to="evmz:6cjunGyE7D_" resolve="getValue" />
