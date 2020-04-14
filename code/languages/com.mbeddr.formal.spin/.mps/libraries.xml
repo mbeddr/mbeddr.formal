@@ -3,6 +3,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="mbedd.platform">
+          <value>
+            <Library>
+              <option name="name" value="mbedd.platform" />
+              <option name="path" value="${mbeddr.formal.home}/build/dependencies/com.mbeddr.platform" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mpsbasics">
           <value>
             <Library>

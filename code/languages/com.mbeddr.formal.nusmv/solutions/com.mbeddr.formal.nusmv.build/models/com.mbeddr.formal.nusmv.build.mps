@@ -976,6 +976,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6Bry4PCVgUL" role="3bR37C">
+          <node concept="3bR9La" id="6Bry4PCVgUM" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2Btqz_w6o5R" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1299,11 +1304,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="Du607kJHOD" role="3bR37C">
-          <node concept="1Busua" id="Du607kJHOE" role="1SiIV1">
-            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
         <node concept="1BupzO" id="5TezZ1VdfvT" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -1324,6 +1324,11 @@
             <node concept="3qWCbU" id="5TezZ1VdfvV" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6Bry4PD8lth" role="3bR37C">
+          <node concept="3bR9La" id="6Bry4PD8lti" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>
@@ -2459,11 +2464,6 @@
         <node concept="1E0d5M" id="6adXBxxZrxQ" role="1E1XAP">
           <ref role="1E0d5P" to="al5i:7uOgiTahf8" resolve="com.mbeddr.mpsutil.jfreechart.runtime" />
         </node>
-        <node concept="1SiIV0" id="40P9s59w8ei" role="3bR37C">
-          <node concept="1Busua" id="40P9s59w8ej" role="1SiIV1">
-            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5yQpAUIgRKv" role="3bR37C">
           <node concept="3bR9La" id="5yQpAUIgRKw" role="1SiIV1">
             <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
@@ -2489,6 +2489,11 @@
             <node concept="3qWCbU" id="5TezZ1VdfzF" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6Bry4PD8lwh" role="3bR37C">
+          <node concept="3bR9La" id="6Bry4PD8lwi" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>

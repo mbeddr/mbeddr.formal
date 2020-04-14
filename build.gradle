@@ -6,7 +6,7 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4+'
     }
 }
 
@@ -68,7 +68,7 @@ ext.dependencyRepositories = [
 // Dependency versions
 // ext.mpsVersion =  '2019.1.4'
 // ext.mbeddrVersion =  '1.3.21722.0d19fb0'
-ext.mpsVersion =  '2019.3.2'
+ext.mpsVersion =  '2019.3.4'
 ext.mbeddrVersion =  '2019.3.+'
 
 // Project versions
