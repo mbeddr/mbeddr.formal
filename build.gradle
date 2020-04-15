@@ -26,7 +26,6 @@ if (project.hasProperty("forceCI")) {
 }
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
 def jdk_home
 
 if (ext.has('java11_home')) {
