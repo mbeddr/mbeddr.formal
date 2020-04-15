@@ -25,7 +25,7 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="true">e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
-    <dependency reexport="true">6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)</dependency>
+    <dependency reexport="true">6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)</dependency>
     <dependency reexport="false">bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)</dependency>
     <dependency reexport="false">945808cb-09a0-4d70-9f2a-186b7f5c6219(com.mbeddr.formal.base.pluginSolution)</dependency>
     <dependency reexport="false">71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)</dependency>
@@ -71,7 +71,7 @@
     <module reference="c1b1e23f-b677-40b8-a490-e192dd8d78e5(com.mbeddr.formal.nusmv.sm)" version="0" />
     <module reference="bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)" version="0" />
     <module reference="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" version="0" />
-    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />

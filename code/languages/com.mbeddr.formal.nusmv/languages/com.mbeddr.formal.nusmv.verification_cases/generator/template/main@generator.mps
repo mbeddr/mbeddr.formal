@@ -176,7 +176,7 @@
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo" />
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRefDotTarget" flags="ng" index="1zjgSo" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>

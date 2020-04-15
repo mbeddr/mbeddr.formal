@@ -153,6 +153,7 @@
     <dependency reexport="false">f8e20673-3f65-44e9-84c0-c4a4b6ede37e(jetbrains.mps.make.facets)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">628c1bba-6b54-4c71-927c-3cff044349e4(com.mbeddr.formal.spin.hdl)</dependency>
+    <dependency reexport="false">ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -236,7 +237,6 @@
     <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
-    <extendedLanguage>ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)</extendedLanguage>
     <extendedLanguage>83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</extendedLanguage>
     <extendedLanguage>ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)</extendedLanguage>
     <extendedLanguage>bd54ef69-17ec-411b-8f49-485702e74565(com.mbeddr.formal.spin.ext)</extendedLanguage>

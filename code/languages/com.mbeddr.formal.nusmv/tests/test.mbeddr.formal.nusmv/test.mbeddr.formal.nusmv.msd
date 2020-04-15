@@ -87,9 +87,9 @@
     <module reference="bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)" version="0" />
     <module reference="450c81f1-1811-41ac-a9c8-8fda59f778ca(com.mbeddr.formal.nusmv.tabular)" version="0" />
     <module reference="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" version="0" />
-    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
     <module reference="c6420b75-4569-420d-aaf7-9bc590ad7b2a(com.mbeddr.mpsutil.comparator)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />

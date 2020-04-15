@@ -251,7 +251,7 @@
                             <node concept="2Rf3mk" id="5uTeY1Fk3QW" role="2OqNvi">
                               <node concept="1xMEDy" id="5uTeY1Fk3QX" role="1xVPHs">
                                 <node concept="chp4Y" id="5uTeY1Fk3QY" role="ri$Ld">
-                                  <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                                  <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                                 </node>
                               </node>
                             </node>

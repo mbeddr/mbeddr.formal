@@ -67,7 +67,7 @@
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
       <concept id="4643937035595555211" name="com.mbeddr.formal.nusmv.structure.SimpleAssignment" flags="ng" index="1lxFmE" />
-      <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VarRef" flags="ng" index="1y$7Wu">
+      <concept id="8482728081216817953" name="com.mbeddr.formal.nusmv.structure.VariableRefDotTarget" flags="ng" index="1y$7Wu">
         <reference id="8482728081216817954" name="var" index="1y$7Wt" />
       </concept>
       <concept id="8482728081216289970" name="com.mbeddr.formal.nusmv.structure.NotExpression" flags="ng" index="1yA0yd" />
@@ -86,7 +86,7 @@
         <reference id="8482728081213209470" name="module" index="1zigX1" />
         <child id="8482728081213209473" name="actuals" index="1zigYY" />
       </concept>
-      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRef" flags="ng" index="1zjgSo" />
+      <concept id="8482728081213471271" name="com.mbeddr.formal.nusmv.structure.DefinitionRefDotTarget" flags="ng" index="1zjgSo" />
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>

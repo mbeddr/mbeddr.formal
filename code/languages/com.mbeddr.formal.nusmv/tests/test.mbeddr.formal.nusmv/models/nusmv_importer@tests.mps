@@ -954,7 +954,7 @@
                 <node concept="37vLTI" id="1IhJc2tJvdd" role="3clFbG">
                   <node concept="2YIFZM" id="L6k24q6Yw6" role="37vLTx">
                     <ref role="37wK5l" to="48kf:4Wn4fzjJqEM" resolve="getSolutionRootPathForNode" />
-                    <ref role="1Pybhc" to="48kf:4Wn4fzjJqEK" resolve="SolutionPathUtil" />
+                    <ref role="1Pybhc" to="48kf:4Wn4fzjJqEK" resolve="SolutionUtil" />
                     <node concept="2OqwBi" id="L6k24q6Yw7" role="37wK5m">
                       <node concept="37vLTw" id="L6k24q6Yw8" role="2Oq$k0">
                         <ref role="3cqZAo" node="L6k24q6YvJ" resolve="allSystems" />

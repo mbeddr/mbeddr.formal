@@ -151,7 +151,7 @@
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="cac6875e-14fd-4552-a69e-b3168e27e2ff(com.mbeddr.formal.nusmv.tests)" version="0" />
-    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />

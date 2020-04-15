@@ -56,12 +56,11 @@
     <module reference="e7468415-0ba6-46da-ae60-1751c7c9c412(com.mbeddr.formal.base.testing.utils)" version="0" />
     <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)" version="0" />
-    <module reference="ef89f137-f966-4966-a202-ab9ea26e79fe(com.mbeddr.formal.spin.c.core)" version="0" />
     <module reference="bd54ef69-17ec-411b-8f49-485702e74565(com.mbeddr.formal.spin.ext)" version="0" />
     <module reference="628c1bba-6b54-4c71-927c-3cff044349e4(com.mbeddr.formal.spin.hdl)" version="0" />
     <module reference="9ce94094-51d9-4013-bdfc-e4db03298f9f(com.mbeddr.formal.spin.pluginSolution)" version="0" />
-    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />

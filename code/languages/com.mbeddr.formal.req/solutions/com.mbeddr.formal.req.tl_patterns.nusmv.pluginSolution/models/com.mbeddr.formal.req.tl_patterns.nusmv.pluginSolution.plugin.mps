@@ -265,13 +265,13 @@
           <node concept="3cpWsn" id="6hWVnwAvmv_" role="3cpWs9">
             <property role="TrG5h" value="scopes" />
             <node concept="2I9FWS" id="6hWVnwAvmvw" role="1tU5fm">
-              <ref role="2I9WkF" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+              <ref role="2I9WkF" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
             </node>
             <node concept="2OqwBi" id="6hWVnwAvmvA" role="33vP2m">
               <node concept="2Rf3mk" id="6hWVnwAvmvB" role="2OqNvi">
                 <node concept="1xMEDy" id="6hWVnwAvmvC" role="1xVPHs">
                   <node concept="chp4Y" id="6hWVnwAvmvD" role="ri$Ld">
-                    <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+                    <ref role="cht4Q" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
                   </node>
                 </node>
               </node>
@@ -662,7 +662,7 @@
             <ref role="1Pybhc" to="3g0o:6fO82$FqF2U" resolve="Concepts2WordSerializerRegistry" />
             <ref role="37wK5l" to="3g0o:6fO82$FqF4M" resolve="registerConcept2WordTranslator" />
             <node concept="35c_gC" id="2w5Gq4UsqS0" role="37wK5m">
-              <ref role="35c_gD" to="uu78:6hWVnwA8mHU" resolve="SystemScope" />
+              <ref role="35c_gD" to="uu78:6hWVnwA8mHU" resolve="FormalSMVModuleScope" />
             </node>
             <node concept="2ShNRf" id="2w5Gq4UsyQC" role="37wK5m">
               <node concept="HV5vD" id="2w5Gq4Uty24" role="2ShVmc">

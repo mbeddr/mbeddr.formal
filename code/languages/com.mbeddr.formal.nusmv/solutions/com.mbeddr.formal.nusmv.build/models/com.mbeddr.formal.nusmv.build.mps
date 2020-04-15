@@ -437,6 +437,9 @@
       <node concept="m$_yC" id="IiE7lRp2JI" role="m$_yJ">
         <ref role="m$_y1" to="al5i:Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
       </node>
+      <node concept="m$_yC" id="1S1Z9bZq6al" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:7yAshxDtbd3" resolve="com.mbeddr.mpsutil.genreview" />
+      </node>
       <node concept="3_J27D" id="42jqVeFkUva" role="m_cZH">
         <node concept="3Mxwew" id="42jqVeFkUvb" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.nusmv" />
@@ -3293,7 +3296,7 @@
         <node concept="1SiIV0" id="1V$lRyiUHM6" role="3bR37C">
           <node concept="3bR9La" id="1V$lRyiUHM7" role="1SiIV1">
             <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="al5i:23klwgWbAsa" resolve="com.mbeddr.mpsutil.codereview.pluginSolution" />
+            <ref role="3bR37D" to="al5i:23klwgWbAsa" resolve="com.mbeddr.mpsutil.genreview" />
           </node>
         </node>
         <node concept="1SiIV0" id="1V$lRyiUHM8" role="3bR37C">

@@ -68,7 +68,7 @@
         <child id="7526568111199936052" name="lower" index="2XEmf_" />
         <child id="7526568111199936055" name="upper" index="2XEmfA" />
       </concept>
-      <concept id="7526568111199936003" name="com.mbeddr.formal.nusmv.ext.structure.IntervalTypeExt" flags="ng" index="2XEmfi">
+      <concept id="7526568111199936003" name="com.mbeddr.formal.nusmv.ext.structure.IntervalTypeExtended" flags="ng" index="2XEmfi">
         <reference id="7526568111199936004" name="intervalDeclaration" index="2XEmfl" />
       </concept>
     </language>

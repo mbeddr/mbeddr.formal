@@ -697,7 +697,7 @@
       <node concept="b5Tf3" id="6xNJt7lQJtf" role="1lVwrX" />
     </node>
     <node concept="3aamgX" id="6xNJt7lQJtj" role="3acgRq">
-      <ref role="30HIoZ" to="6z8w:6xNJt7lQHS3" resolve="IntervalType" />
+      <ref role="30HIoZ" to="6z8w:6xNJt7lQHS3" resolve="IntervalTypeExtended" />
       <node concept="gft3U" id="6xNJt7lQJRd" role="1lVwrX">
         <node concept="dhpfj" id="6xNJt7lQKYC" role="gfFT$">
           <node concept="2IPVmt" id="6xNJt7lQKYM" role="dhpfi">

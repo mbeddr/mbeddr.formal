@@ -16,7 +16,7 @@
     <dependency reexport="false">ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)</dependency>
     <dependency reexport="false">80ea7e60-3c36-4583-be96-3e7d3ad3504e(com.mbeddr.formal.spin.analyses)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
-    <dependency reexport="true">6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)</dependency>
+    <dependency reexport="true">6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)</dependency>
     <dependency reexport="false">9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
@@ -60,8 +60,8 @@
     <module reference="ad8d48af-022b-40dc-8979-2b76074fb438(com.mbeddr.formal.spin)" version="0" />
     <module reference="80ea7e60-3c36-4583-be96-3e7d3ad3504e(com.mbeddr.formal.spin.analyses)" version="0" />
     <module reference="9ce94094-51d9-4013-bdfc-e4db03298f9f(com.mbeddr.formal.spin.pluginSolution)" version="0" />
-    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />

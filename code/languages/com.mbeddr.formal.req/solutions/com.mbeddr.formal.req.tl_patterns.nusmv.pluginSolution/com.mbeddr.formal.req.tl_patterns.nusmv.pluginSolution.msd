@@ -63,7 +63,7 @@
     <module reference="5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)" version="0" />
     <module reference="b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)" version="0" />
     <module reference="1164b831-8cda-44ed-89c4-3c28e36c6eea(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution)" version="0" />
-    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)" version="0" />
     <module reference="fdd69818-de3d-4ebf-9ec6-17ea152db151(com.mpsbasics.docx4j.core)" version="0" />
     <module reference="71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />

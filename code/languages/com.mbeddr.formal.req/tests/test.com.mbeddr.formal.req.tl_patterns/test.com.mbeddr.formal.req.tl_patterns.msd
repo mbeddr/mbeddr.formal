@@ -20,7 +20,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
-    <language slang="l:71797868-de95-425c-8470-36aa52c8ebc4:com.mbeddr.formal.base.arch" version="0" />
+    <language slang="l:71797868-de95-425c-8470-36aa52c8ebc4:com.mbeddr.formal.base.arch" version="1" />
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
     <language slang="l:b3b9fe18-f0c4-4cea-83c5-45faa74e0911:com.mbeddr.formal.base.tabular" version="0" />
     <language slang="l:001b2375-3bd5-4d5e-9958-6b3f62dc8548:com.mbeddr.formal.nusmv" version="0" />
@@ -54,7 +54,7 @@
     <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="1164b831-8cda-44ed-89c4-3c28e36c6eea(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution)" version="0" />
-    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.codereview.pluginSolution)" version="0" />
+    <module reference="6c88fcd1-5552-4d29-9f1b-f00bd84dd40e(com.mbeddr.mpsutil.genreview)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="710e4a44-4764-4107-9c89-e059fb11d8f5(test.com.mbeddr.formal.req.tl_patterns)" version="0" />
   </dependencyVersions>
