@@ -282,8 +282,14 @@
       <node concept="55IIr" id="42jqVeFkUI9" role="398pKh">
         <node concept="2Ry0Ak" id="42jqVeFkULA" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="4MDOjos4th6" role="2Ry0An">
+          <node concept="2Ry0Ak" id="5Xjjs0Nf8Mp" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="5Xjjs0Nf8V4" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="5Xjjs0Nf8V9" role="2Ry0An">
+                <property role="2Ry0Am" value="mbeddr.formal" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -292,13 +298,10 @@
       <property role="TrG5h" value="mps.home" />
       <node concept="398BVA" id="42jqVeFkVem" role="398pKh">
         <ref role="398BVh" node="42jqVeFkUG2" resolve="mbeddr.formal.home" />
-        <node concept="2Ry0Ak" id="6adXBxxVRT2" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="2DcSMg46M8_" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="7olioAzBUwF" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS_2019_3_2_mbeddr_formal" />
-            </node>
+        <node concept="2Ry0Ak" id="5Xjjs0Nf98X" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5Xjjs0Nf9q8" role="2Ry0An">
+            <property role="2Ry0Am" value="mps" />
           </node>
         </node>
       </node>
@@ -2217,7 +2220,7 @@
         <node concept="1SiIV0" id="7he_lUuoWFC" role="3bR37C">
           <node concept="3bR9La" id="7he_lUuoWFD" role="1SiIV1">
             <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="al5i:23klwgWbAsa" resolve="com.mbeddr.mpsutil.codereview.pluginSolution" />
+            <ref role="3bR37D" to="al5i:23klwgWbAsa" resolve="com.mbeddr.mpsutil.genreview" />
           </node>
         </node>
         <node concept="1SiIV0" id="7he_lUuoWFE" role="3bR37C">
@@ -5778,7 +5781,7 @@
         <node concept="1SiIV0" id="1V$lRyiUHM6" role="3bR37C">
           <node concept="3bR9La" id="1V$lRyiUHM7" role="1SiIV1">
             <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="al5i:23klwgWbAsa" resolve="com.mbeddr.mpsutil.codereview.pluginSolution" />
+            <ref role="3bR37D" to="al5i:23klwgWbAsa" resolve="com.mbeddr.mpsutil.genreview" />
           </node>
         </node>
         <node concept="1SiIV0" id="1V$lRyiUHM8" role="3bR37C">
