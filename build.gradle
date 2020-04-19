@@ -26,7 +26,6 @@ if (project.hasProperty("forceCI")) {
 }
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
 def jdk_home
 
 if (ext.has('java11_home')) {
@@ -204,6 +203,10 @@ task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
     script new File("$buildDir/scripts/build-nusmv-languages.xml")
 }
 
+task build_safety_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    script new File("$buildDir/scripts/build-fasten-safe-languages.xml")
+}
+
 task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages]) {
     script new File("$buildDir/scripts/build-fasten-distribution.xml")
 }
@@ -222,7 +225,14 @@ task packageNuSMV(type: Zip, dependsOn: build_smv_languages) {
     include 'com.mbeddr.formal.nusmv/**'
 }
 
+task packageSafety(type: Zip, dependsOn: build_safety_languages) {
+    archiveBaseName = 'com.mbeddr.formal.safety'
+    from artifactsDir
+    include 'com.mbeddr.formal.safety/**'
+}
+
 assemble.dependsOn packageNuSMV
+assemble.dependsOn packageSafety
 
 publishing {
     repositories {
