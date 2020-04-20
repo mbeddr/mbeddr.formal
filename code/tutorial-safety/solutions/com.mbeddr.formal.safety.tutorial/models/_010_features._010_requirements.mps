@@ -184,22 +184,28 @@
       <node concept="1QQeFk" id="5FhZjqTMQMN" role="0nOlf" />
       <node concept="19SGf9" id="5FhZjqTMMrG" role="1QQeG9">
         <node concept="19SUe$" id="5FhZjqTMMrH" role="19SJt6">
-          <property role="19SUeA" value="Textual requirement example " />
+          <property role="19SUeA" value="Airbag functionality overview (Textual Specification)" />
         </node>
       </node>
       <node concept="1QQeAY" id="5FhZjqTMRVs" role="1QQeAC">
         <node concept="0nzK2" id="5FhZjqTMRVt" role="1QQeAV">
           <node concept="19SGf9" id="5FhZjqTMRVu" role="0nzdz">
             <node concept="19SUe$" id="5FhZjqTMRVv" role="19SJt6">
-              <property role="19SUeA" value="Textual specification of the system can include informal artifacts such as pictures.&#10;&#10;&#10;" />
+              <property role="19SUeA" value="An airbag shall protect the passengers of a car in case of impact.&#10;The figure below illustrates intuitively the deployment of airbags.&#10;Requirement " />
             </node>
-            <node concept="3OoTgI" id="VJbr0XaaEe" role="19SJt6">
+            <node concept="2aGvr3" id="5UKHWoLYYL5" role="19SJt6">
+              <ref role="2aGvrx" node="5FhZjqTMRVO" />
+            </node>
+            <node concept="19SUe$" id="5UKHWoLYYL6" role="19SJt6">
+              <property role="19SUeA" value=" contains the specification of the interface&#10;between the car sensors and the airbag system.&#10;&#10;" />
+            </node>
+            <node concept="3OoTgI" id="5UKHWoLYYLa" role="19SJt6">
               <property role="3OpxtG" value="60" />
-              <node concept="3NXOOs" id="VJbr0XaaEj" role="3OoW2A">
+              <node concept="3NXOOs" id="5UKHWoLYYLh" role="3OoW2A">
                 <property role="3N1Lgt" value="images/airbag_sketch.png" />
               </node>
             </node>
-            <node concept="19SUe$" id="VJbr0XaaEf" role="19SJt6" />
+            <node concept="19SUe$" id="5UKHWoLYYLb" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -236,14 +242,14 @@
       <node concept="1QQeFk" id="5FhZjqTNhvR" role="0nOlf" />
       <node concept="19SGf9" id="5FhZjqTNhvS" role="1QQeG9">
         <node concept="19SUe$" id="5FhZjqTNhvT" role="19SJt6">
-          <property role="19SUeA" value="Temporal logic patterns" />
+          <property role="19SUeA" value="Airbag high-level functions" />
         </node>
       </node>
       <node concept="1QQeAY" id="5FhZjqTNhvU" role="1QQeAC">
         <node concept="0nzK2" id="5FhZjqTNhvV" role="1QQeAV">
           <node concept="19SGf9" id="5FhZjqTNhvW" role="0nzdz">
             <node concept="19SUe$" id="5FhZjqTNhvX" role="19SJt6">
-              <property role="19SUeA" value="Use structured natural language text such as sentence boilerplates for temporal patterns" />
+              <property role="19SUeA" value="Airbag requirements are specified below using sentence boilerplates for temporal patterns" />
             </node>
           </node>
         </node>
@@ -255,7 +261,7 @@
             <node concept="3z7eFS" id="5FhZjqTOiAt" role="12uYM6">
               <node concept="19SGf9" id="5FhZjqTOiAu" role="3z7eFT">
                 <node concept="19SUe$" id="5FhZjqTOiAv" role="19SJt6">
-                  <property role="19SUeA" value="speed is between 0 and 120" />
+                  <property role="19SUeA" value="airbag is active unless explicitly deactivated" />
                 </node>
               </node>
             </node>
@@ -266,7 +272,7 @@
             <node concept="3z7eFS" id="5FhZjqTN$eZ" role="12uYNq">
               <node concept="19SGf9" id="5FhZjqTN$f0" role="3z7eFT">
                 <node concept="19SUe$" id="5FhZjqTN$f1" role="19SJt6">
-                  <property role="19SUeA" value="rain was detected" />
+                  <property role="19SUeA" value="impact was detected" />
                 </node>
               </node>
             </node>
@@ -275,7 +281,7 @@
             <node concept="3z7eFS" id="5FhZjqTN$f7" role="12tvb5">
               <node concept="19SGf9" id="5FhZjqTN$f8" role="3z7eFT">
                 <node concept="19SUe$" id="5FhZjqTN$f9" role="19SJt6">
-                  <property role="19SUeA" value="visibility is smaller than 100 m" />
+                  <property role="19SUeA" value="impact severity is high" />
                 </node>
               </node>
             </node>
@@ -283,7 +289,7 @@
               <node concept="3z7eFS" id="5FhZjqTN_Fm" role="12uYYF">
                 <node concept="19SGf9" id="5FhZjqTN_Fn" role="3z7eFT">
                   <node concept="19SUe$" id="5FhZjqTN_Fo" role="19SJt6">
-                    <property role="19SUeA" value="ego vehicle drives immediately to a safe region" />
+                    <property role="19SUeA" value="the airbag will be deployed" />
                   </node>
                 </node>
               </node>
@@ -550,7 +556,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="1L4MZBxTaAV">
-    <property role="TrG5h" value="_040_formal_SMV_module" />
+    <property role="TrG5h" value="_050_formal_SMV_module" />
     <node concept="0lhDl" id="1L4MZBxTaAW" role="1QQeBF">
       <property role="0lsPA" value="040.01" />
       <property role="0ke_I" value="dan" />
@@ -564,7 +570,7 @@
         <node concept="0nzK2" id="1L4MZBxTaB1" role="1QQeAV">
           <node concept="19SGf9" id="1L4MZBxTaB2" role="0nzdz">
             <node concept="19SUe$" id="1L4MZBxTaB3" role="19SJt6">
-              <property role="19SUeA" value="If not in a deactive state, the airbag shall explode whenever a collision is detected - as formalized in the following." />
+              <property role="19SUeA" value="If not in a deactive state, the airbag shall explode whenever a collision &#10;is detected - as formalized in the following." />
             </node>
           </node>
         </node>
@@ -575,7 +581,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="VJbr0XaaMm">
-    <property role="TrG5h" value="_050_trace_other_models" />
+    <property role="TrG5h" value="_060_trace_other_models" />
     <node concept="0lhDl" id="VJbr0XaaMn" role="1QQeBF">
       <property role="0lsPA" value="050.01" />
       <property role="0ke_I" value="dan" />
@@ -589,7 +595,7 @@
         <node concept="0nzK2" id="VJbr0XaaMs" role="1QQeAV">
           <node concept="19SGf9" id="VJbr0XaaMt" role="0nzdz">
             <node concept="19SUe$" id="VJbr0XaaMu" role="19SJt6">
-              <property role="19SUeA" value="If not in a deactive state, the airbag shall explode whenever a collision is detected - as formalized in the following." />
+              <property role="19SUeA" value="If not in a deactive state, the airbag shall explode whenever a collision &#10;is detected - as formalized in the following." />
             </node>
           </node>
         </node>
