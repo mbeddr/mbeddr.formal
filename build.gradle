@@ -269,6 +269,29 @@ publishing {
                     dependencyNode.appendNode('scope', 'provided')
                 }
             }
+        },
+        SafetyLanguages(MavenPublication) {
+            groupId 'com.mbeddr.formal'
+            artifactId 'safety'
+            artifact packageSafety
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
         }
     }
 }
