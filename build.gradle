@@ -223,16 +223,10 @@ task packageNuSMV(type: Zip, dependsOn: build_smv_languages) {
     archiveBaseName = 'com.mbeddr.formal.nusmv'
     from artifactsDir
     include 'com.mbeddr.formal.nusmv/**'
-}
-
-task packageSafety(type: Zip, dependsOn: build_safety_languages) {
-    archiveBaseName = 'com.mbeddr.formal.safety'
-    from artifactsDir
     include 'com.mbeddr.formal.safety/**'
 }
 
 assemble.dependsOn packageNuSMV
-assemble.dependsOn packageSafety
 
 publishing {
     repositories {
@@ -251,7 +245,6 @@ publishing {
             groupId 'com.mbeddr.formal'
             artifactId 'all'
             artifact packageNuSMV
-            artifact packageSafety
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
