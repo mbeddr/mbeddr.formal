@@ -247,7 +247,7 @@ publishing {
         }
     }
     publications {
-        FASTENLanguages(MavenPublication) {
+        NuSMVLanguages(MavenPublication) {
             groupId 'com.mbeddr.formal'
             artifactId 'all'
             artifact packageNuSMV
