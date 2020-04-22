@@ -231,7 +231,21 @@ task packageSafety(type: Zip, dependsOn: build_safety_languages) {
     include 'com.mbeddr.formal.safety/**'
 }
 
+task packageSpin(type: Zip, dependsOn: build_safety_languages) {
+    archiveBaseName = 'com.mbeddr.formal.spin'
+    from artifactsDir
+    include 'com.mbeddr.formal.spin/**'
+}
+
+task packageReq(type: Zip, dependsOn: build_safety_languages) {
+    archiveBaseName = 'com.mbeddr.formal.req'
+    from artifactsDir
+    include 'com.mbeddr.formal.req/**'
+}
+
 assemble.dependsOn packageNuSMV
+assemble.dependsOn packageSpin
+assemble.dependsOn packageReq
 assemble.dependsOn packageSafety
 
 publishing {
@@ -251,31 +265,6 @@ publishing {
             groupId 'com.mbeddr.formal'
             artifactId 'nusmv'
             artifact packageNuSMV
-            pom.withXml {
-                def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                }
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                    dependencyNode.appendNode('scope', 'provided')
-                }
-            }
-        }
-    }
-    publications {
-        NuSMVLanguages(MavenPublication) {
-            groupId 'com.mbeddr.formal'
-            artifactId 'safety'
-            artifact packageSafety
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
