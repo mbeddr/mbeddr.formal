@@ -195,19 +195,19 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
+task build_all_scripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
     script "$buildDir/scripts/build_all_scripts.xml"
 }
 
-task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script new File("$buildDir/scripts/build-nusmv-languages.xml")
-}
-
-task build_safety_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+task build_safety_languages(type: BuildLanguages, dependsOn: [build_all_scripts]) {
     script new File("$buildDir/scripts/build-fasten-safe-languages.xml")
 }
 
-task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages]) {
+task build_smv_languages(type: BuildLanguages, dependsOn: [build_all_scripts]) {
+    script new File("$buildDir/scripts/build-nusmv-languages.xml")
+}
+
+task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages, build_safety_languages]) {
     script new File("$buildDir/scripts/build-fasten-distribution.xml")
 }
 
@@ -277,10 +277,9 @@ task cleanMps(type: Delete) {
     delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
 }
 
-//clean.dependsOn cleanMps
-
+clean.dependsOn cleanMps
 
 defaultTasks 'build_fasten_distribution'
 
-task rebuild(dependsOn:[clean, build_smv_languages])
+task rebuild(dependsOn:[clean, build_fasten_distribution])
 
