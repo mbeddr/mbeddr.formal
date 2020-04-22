@@ -7745,6 +7745,16 @@
             <ref role="1Busuk" node="7he_lUurDmQ" resolve="com.mbeddr.formal.safety.stamp" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3UU9njffTgH" role="3bR37C">
+          <node concept="3bR9La" id="3UU9njffTgI" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3UU9njffTgU" role="3bR37C">
+          <node concept="1Busua" id="3UU9njffTgV" role="1SiIV1">
+            <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7he_lUurug6" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8444,9 +8454,12 @@
         <node concept="2Ry0Ak" id="wUJmWCxY0m" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="wUJmWCxY0n" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="2Ttn9EOyTRM" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS_2019_3_2_mbeddr_formal" />
+            <property role="2Ry0Am" value="mbeddr.formal" />
+            <node concept="2Ry0Ak" id="6TR6HV761YN" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="6TR6HV761YS" role="2Ry0An">
+                <property role="2Ry0Am" value="mps" />
+              </node>
             </node>
           </node>
         </node>
