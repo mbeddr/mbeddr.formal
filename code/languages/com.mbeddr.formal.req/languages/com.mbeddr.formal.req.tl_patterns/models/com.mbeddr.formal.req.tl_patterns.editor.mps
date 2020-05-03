@@ -9,6 +9,7 @@
   <imports>
     <import index="yyq9" ref="r:221f6636-9d4b-4cff-b27b-80f65c39076e(com.mbeddr.formal.req.tl_patterns.structure)" implicit="true" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -20,6 +21,10 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -59,6 +64,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -66,6 +74,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -168,6 +179,12 @@
         <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K7_" role="2iSdaV" />
+      <node concept="PMmxH" id="6BEEv9hsCh4" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9hrMN1" resolve="TimedSpecEditorComponent" />
+      </node>
+      <node concept="PMmxH" id="6BEEv9hu20D" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K80">
@@ -185,6 +202,12 @@
         <property role="3F0ifm" value="holds" />
         <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
+      <node concept="PMmxH" id="6BEEv9hrYuE" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9hrMN1" resolve="TimedSpecEditorComponent" />
+      </node>
+      <node concept="PMmxH" id="6BEEv9hu0PR" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
       <node concept="l2Vlx" id="6hWVnwA1K86" role="2iSdaV" />
     </node>
   </node>
@@ -199,6 +222,12 @@
         <property role="3F0ifm" value="eventually holds" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K8i" role="2iSdaV" />
+      <node concept="PMmxH" id="6BEEv9ht1cS" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9hrMN1" resolve="TimedSpecEditorComponent" />
+      </node>
+      <node concept="PMmxH" id="6BEEv9hu4cS" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K8C">
@@ -487,6 +516,247 @@
         <property role="3F0ifm" value="}" />
       </node>
       <node concept="2iRkQZ" id="5FhZjqTNLRh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Tg5$nepcbC">
+    <property role="3GE5qa" value="time.unit" />
+    <ref role="1XX52x" to="yyq9:1Tg5$nepcb_" resolve="TimeUnit" />
+    <node concept="PMmxH" id="1Tg5$nepcbE" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Tg5$nepcgW">
+    <property role="3GE5qa" value="time" />
+    <ref role="1XX52x" to="yyq9:1Tg5$nepcb$" resolve="UpperTimeBound" />
+    <node concept="3EZMnI" id="1Tg5$nepch1" role="2wV5jI">
+      <node concept="3F0ifn" id="1Tg5$nepch3" role="3EZMnx">
+        <property role="3F0ifm" value="within" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="1Tg5$nepchb" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepcgQ" resolve="exp" />
+      </node>
+      <node concept="3F1sOY" id="1Tg5$nepchj" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepcgO" resolve="unit" />
+      </node>
+      <node concept="l2Vlx" id="1Tg5$nepch4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Tg5$nepchr">
+    <property role="3GE5qa" value="time" />
+    <ref role="1XX52x" to="yyq9:1Tg5$nepcho" resolve="LowerTimeBound" />
+    <node concept="3EZMnI" id="1Tg5$nepcht" role="2wV5jI">
+      <node concept="3F0ifn" id="1Tg5$nepchu" role="3EZMnx">
+        <property role="3F0ifm" value="after" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="1Tg5$nepchv" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepchp" resolve="exp" />
+      </node>
+      <node concept="3F1sOY" id="1Tg5$nepchw" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepcgO" resolve="unit" />
+      </node>
+      <node concept="l2Vlx" id="1Tg5$nepchx" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Tg5$nepchH">
+    <property role="3GE5qa" value="time" />
+    <ref role="1XX52x" to="yyq9:1Tg5$nepchB" resolve="Interval" />
+    <node concept="3EZMnI" id="1Tg5$nepchJ" role="2wV5jI">
+      <node concept="3F0ifn" id="1Tg5$nepchK" role="3EZMnx">
+        <property role="3F0ifm" value="between" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="1Tg5$nepchL" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepchC" resolve="intervalStart" />
+      </node>
+      <node concept="3F0ifn" id="1Tg5$nepchY" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="1Tg5$nepcih" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepchE" resolve="intervalEnd" />
+      </node>
+      <node concept="3F1sOY" id="1Tg5$nepchM" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepcgO" resolve="unit" />
+      </node>
+      <node concept="l2Vlx" id="1Tg5$nepchN" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6BEEv9hrMN1">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="TimedSpecEditorComponent" />
+    <ref role="1XX52x" to="yyq9:6BEEv9hrMMz" resolve="ISpecWithTime" />
+    <node concept="_tjkj" id="3uuRTyhY1r7" role="2wV5jI">
+      <node concept="3F1sOY" id="3uuRTyhY1rj" role="_tjki">
+        <ref role="1NtTu8" to="yyq9:6BEEv9hrMM$" resolve="time" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BEEv9htjUH">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <ref role="1XX52x" to="yyq9:6BEEv9htjUA" resolve="TransientState" />
+    <node concept="3EZMnI" id="6BEEv9htjUJ" role="2wV5jI">
+      <node concept="3F1sOY" id="6BEEv9htjUL" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9htjUE" resolve="p" />
+      </node>
+      <node concept="3F0ifn" id="6BEEv9htjUM" role="3EZMnx">
+        <property role="3F0ifm" value="holds" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F0ifn" id="6BEEv9htjVe" role="3EZMnx">
+        <property role="3F0ifm" value="after" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9htjVF" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9htjVv" resolve="time" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9htjWc" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9htjV$" resolve="timeUnit" />
+      </node>
+      <node concept="PMmxH" id="6BEEv9hu6nT" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
+      <node concept="l2Vlx" id="6BEEv9htjUO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BEEv9htjWS">
+    <property role="3GE5qa" value="probability" />
+    <ref role="1XX52x" to="yyq9:6BEEv9htjWK" resolve="ProbabilityBound" />
+    <node concept="PMmxH" id="6BEEv9htjXb" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BEEv9htjXe">
+    <property role="3GE5qa" value="probability" />
+    <ref role="1XX52x" to="yyq9:6BEEv9htjWJ" resolve="Probability" />
+    <node concept="3EZMnI" id="6BEEv9htjXg" role="2wV5jI">
+      <node concept="3F0ifn" id="6BEEv9htjXx" role="3EZMnx">
+        <property role="3F0ifm" value="with a probability" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9htjXE" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9htjWL" resolve="bound" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9htjXW" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9htjXR" resolve="prob" />
+      </node>
+      <node concept="l2Vlx" id="6BEEv9htjXj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6BEEv9htDxW">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="ProbabilitySpecEditorComponent" />
+    <ref role="1XX52x" to="yyq9:6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    <node concept="_tjkj" id="6BEEv9htEOL" role="2wV5jI">
+      <node concept="3F1sOY" id="6BEEv9hxTG2" role="_tjki">
+        <ref role="1NtTu8" to="yyq9:6BEEv9htDpK" resolve="probability" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BEEv9hzVWE">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <ref role="1XX52x" to="yyq9:6BEEv9hzVWA" resolve="SteadyState" />
+    <node concept="3EZMnI" id="6BEEv9hzVWJ" role="2wV5jI">
+      <node concept="3F1sOY" id="6BEEv9hzVWK" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9hzVWG" resolve="p" />
+      </node>
+      <node concept="3F0ifn" id="6BEEv9hzVWL" role="3EZMnx">
+        <property role="3F0ifm" value="holds in the long run" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="PMmxH" id="6BEEv9hzVWP" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
+      <node concept="l2Vlx" id="6BEEv9hzVWQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BEEv9h$xSy">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <ref role="1XX52x" to="yyq9:6BEEv9h$xRV" resolve="MinimumDuration" />
+    <node concept="3EZMnI" id="6BEEv9h$xS$" role="2wV5jI">
+      <node concept="3F0ifn" id="6BEEv9h$xSW" role="3EZMnx">
+        <property role="3F0ifm" value="once" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9h$xS_" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9h$yZ_" resolve="p" />
+      </node>
+      <node concept="3F0ifn" id="6BEEv9h$xSA" role="3EZMnx">
+        <property role="3F0ifm" value="becomes true it remains so for at least" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9h$xTh" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9h$xRZ" resolve="time" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9h$xTE" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9h$xS2" resolve="timeUnit" />
+      </node>
+      <node concept="PMmxH" id="6BEEv9h$xSB" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
+      <node concept="l2Vlx" id="6BEEv9h$xSC" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BEEv9h_adm">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <ref role="1XX52x" to="yyq9:6BEEv9h_adh" resolve="MaximumDuration" />
+    <node concept="3EZMnI" id="6BEEv9h_ado" role="2wV5jI">
+      <node concept="3F0ifn" id="6BEEv9h_adp" role="3EZMnx">
+        <property role="3F0ifm" value="once" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9h_adq" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9h_adj" resolve="p" />
+      </node>
+      <node concept="3F0ifn" id="6BEEv9h_adr" role="3EZMnx">
+        <property role="3F0ifm" value="becomes true it remains so less than" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9h_ads" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9h_adk" resolve="time" />
+      </node>
+      <node concept="3F1sOY" id="6BEEv9h_adt" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:6BEEv9h_adl" resolve="timeUnit" />
+      </node>
+      <node concept="PMmxH" id="6BEEv9h_adu" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
+      <node concept="l2Vlx" id="6BEEv9h_adv" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="CTc$eJ5nwS">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <ref role="1XX52x" to="yyq9:CTc$eJ5nwF" resolve="Recurrence" />
+    <node concept="3EZMnI" id="CTc$eJ5nwU" role="2wV5jI">
+      <node concept="3F1sOY" id="CTc$eJ5nx4" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:CTc$eJ5nwJ" resolve="p" />
+      </node>
+      <node concept="3F0ifn" id="CTc$eJ5nxd" role="3EZMnx">
+        <property role="3F0ifm" value="holds repeatedly" />
+      </node>
+      <node concept="PMmxH" id="CTc$eJ6edd" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9hrMN1" resolve="TimedSpecEditorComponent" />
+      </node>
+      <node concept="PMmxH" id="CTc$eJ5Q2v" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
+      <node concept="l2Vlx" id="CTc$eJ5nwX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="CTc$eJ5nxm">
+    <property role="3GE5qa" value="time" />
+    <ref role="1XX52x" to="yyq9:CTc$eJ5nxl" resolve="Every" />
+    <node concept="3EZMnI" id="CTc$eJ5nxo" role="2wV5jI">
+      <node concept="3F0ifn" id="CTc$eJ5nxy" role="3EZMnx">
+        <property role="3F0ifm" value="every" />
+      </node>
+      <node concept="3F1sOY" id="CTc$eJ5nxO" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:CTc$eJ5nxL" resolve="exp" />
+      </node>
+      <node concept="3F1sOY" id="CTc$eJ5ny1" role="3EZMnx">
+        <ref role="1NtTu8" to="yyq9:1Tg5$nepcgO" resolve="unit" />
+      </node>
+      <node concept="l2Vlx" id="CTc$eJ5nxr" role="2iSdaV" />
     </node>
   </node>
 </model>
