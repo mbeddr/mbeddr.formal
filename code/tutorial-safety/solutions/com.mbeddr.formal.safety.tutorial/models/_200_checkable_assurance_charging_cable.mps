@@ -103,11 +103,6 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
-    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
-        <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
-      </concept>
-    </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
       <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
         <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
@@ -154,7 +149,6 @@
       <concept id="3302592670535612952" name="com.mbeddr.formal.safety.gsn.patterns.structure.AbstractComponentRefWord" flags="ng" index="oK52h">
         <child id="3302592670535612955" name="component" index="oK52i" />
       </concept>
-      <concept id="3302592670537174430" name="com.mbeddr.formal.safety.gsn.patterns.structure.HazardRefWord" flags="ng" index="oY6sn" />
       <concept id="8278132229936590137" name="com.mbeddr.formal.safety.gsn.patterns.structure.ArgumentOverHazardsStrategy" flags="ng" index="FXfxu" />
       <concept id="7021513436411693954" name="com.mbeddr.formal.safety.gsn.patterns.structure.RequirementRefWord" flags="ng" index="2NwIr6" />
       <concept id="7410059948618598150" name="com.mbeddr.formal.safety.gsn.patterns.structure.CBDRefinementCheckGoal" flags="ng" index="Z5Ll5" />
@@ -273,7 +267,7 @@
       <concept id="3302592670536330516" name="com.mbeddr.formal.safety.hara.structure.HazardsListRefWord" flags="ng" index="oXkut">
         <reference id="3302592670537479239" name="hazardsList" index="oTdVe" />
       </concept>
-      <concept id="3302592670537174430" name="com.mbeddr.formal.safety.hara.structure.HazardRefWord" flags="ng" index="oY6so">
+      <concept id="3302592670537174430" name="com.mbeddr.formal.safety.hara.structure.HazardRefWord" flags="ng" index="oY6sn">
         <reference id="3302592670537516121" name="hazard" index="oTUVg" />
       </concept>
       <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
@@ -6784,7 +6778,7 @@
             <node concept="19SUe$" id="7BYuSCF_1V9" role="19SJt6">
               <property role="19SUeA" value=" provide a voltage outside the expected range while the ControlBox is powered on " />
             </node>
-            <node concept="oY6so" id="2rAfe2tahbx" role="19SJt6" />
+            <node concept="oY6sn" id="2rAfe2tahbx" role="19SJt6" />
             <node concept="19SUe$" id="2rAfe2tahby" role="19SJt6" />
           </node>
         </node>
@@ -6850,8 +6844,6 @@
             <node concept="19SUe$" id="6yFQEkQUfBd" role="19SJt6">
               <property role="19SUeA" value="The Socket does not provide SocketEndTemperature when the control box is powered on " />
             </node>
-            <node concept="oY6sn" id="7BYuSCF$ifi" role="19SJt6" />
-            <node concept="19SUe$" id="7BYuSCF$ifj" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -6880,11 +6872,6 @@
       <property role="2HxQM_" value="L02" />
       <property role="TrG5h" value="Electrical damage (economic loss)" />
     </node>
-  </node>
-  <node concept="1_1swa" id="1Y8zh0lYHxy">
-    <property role="yApLE" value="1" />
-    <property role="3GE5qa" value="_000_item_definition" />
-    <property role="TrG5h" value="_010_case_study_description" />
   </node>
   <node concept="2vn7XN" id="pWUwO6CUvf">
     <property role="TrG5h" value="_100_top_level_safety_argumentation" />
@@ -7502,10 +7489,10 @@
       <node concept="37mRIm" id="1XXvHs0b9hS" role="37mRID">
         <property role="37mO49" value="2269109249150587312" />
         <node concept="gqqVs" id="1XXvHs0b9hR" role="37mO4d">
-          <property role="gqqTZ" value="370.0" />
-          <property role="gqqTW" value="701.0" />
-          <property role="gqqTX" value="1359.0" />
-          <property role="gqqTy" value="657.0" />
+          <property role="gqqTZ" value="414.0" />
+          <property role="gqqTW" value="713.0" />
+          <property role="gqqTX" value="1392.0" />
+          <property role="gqqTy" value="684.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -7552,7 +7539,7 @@
             <node concept="19SUe$" id="1XXvHs0b96O" role="19SJt6">
               <property role="19SUeA" value="Hazard " />
             </node>
-            <node concept="oY6so" id="1XXvHs0b96P" role="19SJt6">
+            <node concept="oY6sn" id="1XXvHs0b96P" role="19SJt6">
               <ref role="oTUVg" node="7n39yospbcX" resolve="Cable temperature too high" />
             </node>
             <node concept="19SUe$" id="1XXvHs0b96Q" role="19SJt6">
@@ -7621,7 +7608,7 @@
             <node concept="19SUe$" id="1XXvHs0b97e" role="19SJt6">
               <property role="19SUeA" value="Risk associated with hazard " />
             </node>
-            <node concept="oY6so" id="1XXvHs0b97f" role="19SJt6">
+            <node concept="oY6sn" id="1XXvHs0b97f" role="19SJt6">
               <ref role="oTUVg" node="7BYuSCF$ivH" resolve="Tripping" />
             </node>
             <node concept="19SUe$" id="1XXvHs0b97g" role="19SJt6">
@@ -7636,13 +7623,13 @@
             <node concept="19SUe$" id="1XXvHs0b97j" role="19SJt6">
               <property role="19SUeA" value="Hazard " />
             </node>
-            <node concept="oY6so" id="1XXvHs0b97k" role="19SJt6">
+            <node concept="oY6sn" id="1XXvHs0b97k" role="19SJt6">
               <ref role="oTUVg" node="7n39yospbdj" resolve="Smoke comes out of the cable" />
             </node>
             <node concept="19SUe$" id="1XXvHs0b97l" role="19SJt6">
               <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
             </node>
-            <node concept="oY6so" id="1XXvHs0b97m" role="19SJt6">
+            <node concept="oY6sn" id="1XXvHs0b97m" role="19SJt6">
               <ref role="oTUVg" node="7n39yospbcX" resolve="Cable temperature too high" />
             </node>
             <node concept="19SUe$" id="1XXvHs0b97n" role="19SJt6" />
@@ -7655,7 +7642,7 @@
             <node concept="19SUe$" id="1XXvHs0b97q" role="19SJt6">
               <property role="19SUeA" value="Hazard " />
             </node>
-            <node concept="oY6so" id="1XXvHs0b97r" role="19SJt6">
+            <node concept="oY6sn" id="1XXvHs0b97r" role="19SJt6">
               <ref role="oTUVg" node="7n39yospbcP" resolve="Explosion of the car" />
             </node>
             <node concept="19SUe$" id="1XXvHs0b97s" role="19SJt6">
@@ -8092,7 +8079,7 @@
                 <node concept="3wpmZ1" id="2UkUklpZsRY" role="3ul5Gz">
                   <node concept="2VclrF" id="2UkUklpZsRZ" role="3wpmZR">
                     <property role="2Vclpx" value="189.0" />
-                    <property role="2Vclpz" value="351.7282615095421" />
+                    <property role="2Vclpz" value="333.7282615095421" />
                   </node>
                   <node concept="2VclrF" id="2UkUklpZsS0" role="3wpmZP">
                     <property role="2Vclpx" value="0.0" />
@@ -8158,13 +8145,13 @@
             <node concept="19SUe$" id="2UkUklpZvE5" role="19SJt6">
               <property role="19SUeA" value="Hazard " />
             </node>
-            <node concept="oY6so" id="2UkUklpZvE6" role="19SJt6">
+            <node concept="oY6sn" id="2UkUklpZvE6" role="19SJt6">
               <ref role="oTUVg" node="7n39yospbd7" resolve="The cable catches fire" />
             </node>
             <node concept="19SUe$" id="2UkUklpZvE7" role="19SJt6">
               <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
             </node>
-            <node concept="oY6so" id="2UkUklpZvE8" role="19SJt6">
+            <node concept="oY6sn" id="2UkUklpZvE8" role="19SJt6">
               <ref role="oTUVg" node="7n39yospbcX" resolve="Cable temperature too high" />
             </node>
             <node concept="19SUe$" id="2UkUklpZvGM" role="19SJt6" />
@@ -8451,7 +8438,7 @@
         <node concept="19SUe$" id="1lvw4mcCXmG" role="19SJt6">
           <property role="19SUeA" value="Hazard " />
         </node>
-        <node concept="oY6so" id="1lvw4mcCXmH" role="19SJt6">
+        <node concept="oY6sn" id="1lvw4mcCXmH" role="19SJt6">
           <ref role="oTUVg" node="2VIqKfEJeEs" resolve="Electrical hazard" />
         </node>
         <node concept="19SUe$" id="1lvw4mcCXmI" role="19SJt6">
