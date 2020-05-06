@@ -199,19 +199,15 @@ task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLangu
     script "$buildDir/scripts/build_all_scripts.xml"
 }
 
-task build_smv_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script new File("$buildDir/scripts/build-nusmv-languages.xml")
+task build_formal_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    script new File("$buildDir/scripts/build-formal-languages.xml")
 }
 
-task build_safety_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script new File("$buildDir/scripts/build-fasten-safe-languages.xml")
+task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [build_formal_languages]) {
+    script new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
 }
 
-task build_fasten_distribution(type: BuildLanguages, dependsOn: [build_smv_languages]) {
-    script new File("$buildDir/scripts/build-fasten-distribution.xml")
-}
-
-task run_smv_tests(type: TestLanguages, dependsOn: build_smv_languages) { 
+task run_smv_tests(type: TestLanguages, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
     print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-nusmv-tests.xml")
@@ -219,20 +215,13 @@ task run_smv_tests(type: TestLanguages, dependsOn: build_smv_languages) {
 
 check.dependsOn run_smv_tests
 
-task packageNuSMV(type: Zip, dependsOn: build_smv_languages) {
-    archiveBaseName = 'com.mbeddr.formal.nusmv'
+task package_formal(type: Zip, dependsOn: build_formal_languages) {
+    archiveBaseName = 'com.mbeddr.formal'
     from artifactsDir
-    include 'com.mbeddr.formal.nusmv/**'
+    include 'com.mbeddr.formal.languages/**'
 }
 
-task packageSafety(type: Zip, dependsOn: build_safety_languages) {
-    archiveBaseName = 'com.mbeddr.formal.safety'
-    from artifactsDir
-    include 'com.mbeddr.formal.safety/**'
-}
-
-assemble.dependsOn packageNuSMV
-assemble.dependsOn packageSafety
+assemble.dependsOn package_formal
 
 publishing {
     repositories {
@@ -248,9 +237,9 @@ publishing {
     }
     publications {
         NuSMVLanguages(MavenPublication) {
-            groupId 'com.mbeddr.formal'
-            artifactId 'nusmv'
-            artifact packageNuSMV
+            groupId 'com.mbeddr'
+            artifactId 'formal'
+            artifact package_formal
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
@@ -280,7 +269,7 @@ task cleanMps(type: Delete) {
 //clean.dependsOn cleanMps
 
 
-defaultTasks 'build_fasten_distribution'
+defaultTasks 'build_fasten_safety_distribution'
 
-task rebuild(dependsOn:[clean, build_smv_languages])
+task rebuild(dependsOn:[clean, build_formal_languages])
 

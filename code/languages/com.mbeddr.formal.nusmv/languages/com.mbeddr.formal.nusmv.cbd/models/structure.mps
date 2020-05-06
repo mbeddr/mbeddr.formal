@@ -549,6 +549,7 @@
     <property role="EcuMT" value="4183024216371329174" />
     <property role="TrG5h" value="ComponentInterfaceSMV" />
     <property role="3GE5qa" value="cbd_new" />
+    <property role="34LRSv" value="interface" />
     <ref role="1TJDcQ" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     <node concept="PrWs8" id="3Cd5_MRERyn" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />
@@ -561,6 +562,7 @@
     <property role="EcuMT" value="4183024216371329180" />
     <property role="TrG5h" value="ComponentAssemblySMV" />
     <property role="3GE5qa" value="cbd_new" />
+    <property role="34LRSv" value="assembly" />
     <ref role="1TJDcQ" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
     <node concept="PrWs8" id="3Cd5_MRERyt" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />

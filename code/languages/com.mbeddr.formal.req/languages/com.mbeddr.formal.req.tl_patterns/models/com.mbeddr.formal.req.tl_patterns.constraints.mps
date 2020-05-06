@@ -24,6 +24,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -31,9 +34,12 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
       </concept>
     </language>
@@ -45,6 +51,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -52,6 +61,11 @@
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
     </language>
   </registry>
@@ -110,6 +124,54 @@
               </node>
             </node>
             <node concept="3x8VRR" id="5FhZjqTO22o" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="CTc$eJ5qcD">
+    <property role="3GE5qa" value="time" />
+    <ref role="1M2myG" to="yyq9:CTc$eJ5nxl" resolve="Every" />
+    <node concept="9S07l" id="CTc$eJ5qcE" role="9Vyp8">
+      <node concept="3clFbS" id="CTc$eJ5qcF" role="2VODD2">
+        <node concept="3clFbF" id="CTc$eJ5qgB" role="3cqZAp">
+          <node concept="2OqwBi" id="CTc$eJ5qpF" role="3clFbG">
+            <node concept="nLn13" id="CTc$eJ5qgA" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="CTc$eJ5qwJ" role="2OqNvi">
+              <node concept="chp4Y" id="CTc$eJ5qAI" role="cj9EA">
+                <ref role="cht4Q" to="yyq9:CTc$eJ5nwF" resolve="Recurrence" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="CTc$eJ6AI7">
+    <property role="3GE5qa" value="specification.occurrence" />
+    <ref role="1M2myG" to="yyq9:CTc$eJ5nwF" resolve="Recurrence" />
+    <node concept="9SLcT" id="CTc$eJ6AI8" role="9SGkU">
+      <node concept="3clFbS" id="CTc$eJ6AI9" role="2VODD2">
+        <node concept="3clFbF" id="CTc$eJ6AM5" role="3cqZAp">
+          <node concept="22lmx$" id="CTc$eJ6BPt" role="3clFbG">
+            <node concept="2OqwBi" id="CTc$eJ6C2W" role="3uHU7w">
+              <node concept="2DD5aU" id="CTc$eJ6BQ_" role="2Oq$k0" />
+              <node concept="2Zo12i" id="CTc$eJ6CpE" role="2OqNvi">
+                <node concept="chp4Y" id="CTc$eJ6Cuk" role="2Zo12j">
+                  <ref role="cht4Q" to="yyq9:CTc$eJ5nxl" resolve="Every" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="CTc$eJ6CzL" role="3uHU7B">
+              <node concept="2OqwBi" id="CTc$eJ6CzN" role="3fr31v">
+                <node concept="2DD5aU" id="CTc$eJ6CzO" role="2Oq$k0" />
+                <node concept="2Zo12i" id="CTc$eJ6CzP" role="2OqNvi">
+                  <node concept="chp4Y" id="CTc$eJ6CzQ" role="2Zo12j">
+                    <ref role="cht4Q" to="yyq9:1Tg5$nepcbz" resolve="Time" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

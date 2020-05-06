@@ -75,7 +75,7 @@
       <ref role="20lvS9" node="6hWVnwA1jgy" resolve="TLSpecificationBase" />
     </node>
     <node concept="t5JxF" id="6hWVnwA1K5X" role="lGtFl">
-      <property role="t5JxN" value="Structured-English grammar taken from 'Konrad et. al. : Real-time Specification Patterns', ICSE'05" />
+      <property role="t5JxN" value="Structured-English grammar taken from 'Konrad et. al. : Real-time Specification Patterns', ICSE'05 and enhanced with http://ps-patterns.wikidot.com/englishgrammar" />
     </node>
   </node>
   <node concept="1TIwiD" id="6hWVnwA1jgx">
@@ -187,7 +187,7 @@
     <property role="EcuMT" value="7240923401194766813" />
     <property role="3GE5qa" value="specification.occurrence" />
     <property role="TrG5h" value="AbsencePattern" />
-    <property role="34LRSv" value="it is never the case that P holds" />
+    <property role="34LRSv" value="it is never the case that P holds [Time][Probability]" />
     <property role="R4oN_" value="absence pattern" />
     <ref role="1TJDcQ" node="6hWVnwA1K7s" resolve="OccurrenceCategory" />
     <node concept="1TJgyj" id="6hWVnwA1K7u" role="1TKVEi">
@@ -196,12 +196,18 @@
       <property role="20kJfa" value="p" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="6BEEv9hsCgI" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9hrMMz" resolve="ISpecWithTime" />
+    </node>
+    <node concept="PrWs8" id="6BEEv9hu20c" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6hWVnwA1K7X">
     <property role="EcuMT" value="7240923401194766845" />
     <property role="3GE5qa" value="specification.occurrence" />
     <property role="TrG5h" value="UniversalityPattern" />
-    <property role="34LRSv" value="it is always the case that P holds" />
+    <property role="34LRSv" value="it is always the case that P holds [Time][Probability]" />
     <property role="R4oN_" value="universality pattern" />
     <ref role="1TJDcQ" node="6hWVnwA1K7s" resolve="OccurrenceCategory" />
     <node concept="1TJgyj" id="6hWVnwA1K7Y" role="1TKVEi">
@@ -210,12 +216,18 @@
       <property role="20kJfa" value="p" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="6BEEv9hrMN3" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9hrMMz" resolve="ISpecWithTime" />
+    </node>
+    <node concept="PrWs8" id="6BEEv9hu0Pq" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6hWVnwA1K8c">
     <property role="EcuMT" value="7240923401194766860" />
     <property role="3GE5qa" value="specification.occurrence" />
     <property role="TrG5h" value="ExistencePattern" />
-    <property role="34LRSv" value="P eventually holds" />
+    <property role="34LRSv" value="P eventually holds [Time][Probability]" />
     <property role="R4oN_" value="existence pattern" />
     <ref role="1TJDcQ" node="6hWVnwA1K7r" resolve="QualitativeType" />
     <node concept="1TJgyj" id="6hWVnwA1K8p" role="1TKVEi">
@@ -223,6 +235,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="p" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6BEEv9hsEmY" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9hrMMz" resolve="ISpecWithTime" />
+    </node>
+    <node concept="PrWs8" id="6BEEv9hu4cv" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
     </node>
   </node>
   <node concept="1TIwiD" id="6hWVnwA1K8_">
@@ -441,6 +459,308 @@
   <node concept="PlHQZ" id="5FhZjqTOItL">
     <property role="EcuMT" value="6544290145033709425" />
     <property role="TrG5h" value="ITLProperty" />
+  </node>
+  <node concept="1TIwiD" id="1Tg5$nepcbz">
+    <property role="EcuMT" value="2184270308345955043" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="Time" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1Tg5$nepcgO" role="1TKVEi">
+      <property role="IQ2ns" value="2184270308345955380" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="unit" />
+      <ref role="20lvS9" node="1Tg5$nepcb_" resolve="TimeUnit" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Tg5$nepcb$">
+    <property role="EcuMT" value="2184270308345955044" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="UpperTimeBound" />
+    <property role="34LRSv" value="within" />
+    <property role="R4oN_" value="upper time bound" />
+    <ref role="1TJDcQ" node="1Tg5$nepcbz" resolve="Time" />
+    <node concept="1TJgyj" id="1Tg5$nepcgQ" role="1TKVEi">
+      <property role="IQ2ns" value="2184270308345955382" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Tg5$nepcb_">
+    <property role="EcuMT" value="2184270308345955045" />
+    <property role="3GE5qa" value="time.unit" />
+    <property role="TrG5h" value="TimeUnit" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1Tg5$nepcbA">
+    <property role="EcuMT" value="2184270308345955046" />
+    <property role="3GE5qa" value="time.unit" />
+    <property role="TrG5h" value="Second" />
+    <property role="34LRSv" value="sec" />
+    <property role="R4oN_" value="seconds" />
+    <ref role="1TJDcQ" node="1Tg5$nepcb_" resolve="TimeUnit" />
+  </node>
+  <node concept="1TIwiD" id="1Tg5$nepcbB">
+    <property role="EcuMT" value="2184270308345955047" />
+    <property role="3GE5qa" value="time.unit" />
+    <property role="TrG5h" value="Millisecond" />
+    <property role="34LRSv" value="ms" />
+    <property role="R4oN_" value="milliseconds" />
+    <ref role="1TJDcQ" node="1Tg5$nepcb_" resolve="TimeUnit" />
+  </node>
+  <node concept="1TIwiD" id="1Tg5$nepcho">
+    <property role="EcuMT" value="2184270308345955416" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="LowerTimeBound" />
+    <property role="34LRSv" value="after" />
+    <property role="R4oN_" value="lower time bound" />
+    <ref role="1TJDcQ" node="1Tg5$nepcbz" resolve="Time" />
+    <node concept="1TJgyj" id="1Tg5$nepchp" role="1TKVEi">
+      <property role="IQ2ns" value="2184270308345955417" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Tg5$nepchB">
+    <property role="EcuMT" value="2184270308345955431" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="Interval" />
+    <property role="34LRSv" value="between" />
+    <property role="R4oN_" value="interval" />
+    <ref role="1TJDcQ" node="1Tg5$nepcbz" resolve="Time" />
+    <node concept="1TJgyj" id="1Tg5$nepchC" role="1TKVEi">
+      <property role="IQ2ns" value="2184270308345955432" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="intervalStart" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1Tg5$nepchE" role="1TKVEi">
+      <property role="IQ2ns" value="2184270308345955434" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="intervalEnd" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6BEEv9hrMMz">
+    <property role="EcuMT" value="7632099376746146979" />
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="ISpecWithTime" />
+    <node concept="1TJgyj" id="6BEEv9hrMM$" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376746146980" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="time" />
+      <ref role="20lvS9" node="1Tg5$nepcbz" resolve="Time" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BEEv9htjUA">
+    <property role="EcuMT" value="7632099376746544806" />
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="TransientState" />
+    <property role="34LRSv" value="P holds after t TimeUnits [Probability]" />
+    <property role="R4oN_" value="transient state" />
+    <ref role="1TJDcQ" node="6hWVnwA1K7s" resolve="OccurrenceCategory" />
+    <node concept="1TJgyj" id="6BEEv9htjUE" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376746544810" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9htjVv" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376746544863" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="time" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9htjV$" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376746544868" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="timeUnit" />
+      <ref role="20lvS9" node="1Tg5$nepcb_" resolve="TimeUnit" />
+    </node>
+    <node concept="PrWs8" id="6BEEv9hu6nD" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BEEv9htjWJ">
+    <property role="EcuMT" value="7632099376746544943" />
+    <property role="3GE5qa" value="probability" />
+    <property role="TrG5h" value="Probability" />
+    <property role="34LRSv" value="with a probability" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6BEEv9htjWL" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376746544945" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="bound" />
+      <ref role="20lvS9" node="6BEEv9htjWK" resolve="ProbabilityBound" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9htjXR" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376746545015" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="prob" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BEEv9htjWK">
+    <property role="EcuMT" value="7632099376746544944" />
+    <property role="3GE5qa" value="probability" />
+    <property role="TrG5h" value="ProbabilityBound" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6BEEv9htjWO">
+    <property role="EcuMT" value="7632099376746544948" />
+    <property role="3GE5qa" value="probability" />
+    <property role="TrG5h" value="LowProbabilityBound" />
+    <property role="34LRSv" value="lower than" />
+    <property role="R4oN_" value="low probability bound" />
+    <ref role="1TJDcQ" node="6BEEv9htjWK" resolve="ProbabilityBound" />
+  </node>
+  <node concept="1TIwiD" id="6BEEv9htjWP">
+    <property role="EcuMT" value="7632099376746544949" />
+    <property role="3GE5qa" value="probability" />
+    <property role="TrG5h" value="LowOrEqProbabilityBound" />
+    <property role="34LRSv" value="lower or equal than" />
+    <property role="R4oN_" value="low or equal probability bound" />
+    <ref role="1TJDcQ" node="6BEEv9htjWK" resolve="ProbabilityBound" />
+  </node>
+  <node concept="1TIwiD" id="6BEEv9htjWQ">
+    <property role="EcuMT" value="7632099376746544950" />
+    <property role="3GE5qa" value="probability" />
+    <property role="TrG5h" value="HighProbabilityBound" />
+    <property role="34LRSv" value="greater than" />
+    <property role="R4oN_" value="high probability bound" />
+    <ref role="1TJDcQ" node="6BEEv9htjWK" resolve="ProbabilityBound" />
+  </node>
+  <node concept="1TIwiD" id="6BEEv9htjWR">
+    <property role="EcuMT" value="7632099376746544951" />
+    <property role="3GE5qa" value="probability" />
+    <property role="TrG5h" value="HighOrEqualProbabilityBound" />
+    <property role="34LRSv" value="greater or equal than" />
+    <property role="R4oN_" value="high or equal probability bound" />
+    <ref role="1TJDcQ" node="6BEEv9htjWK" resolve="ProbabilityBound" />
+  </node>
+  <node concept="PlHQZ" id="6BEEv9htDpJ">
+    <property role="EcuMT" value="7632099376746632815" />
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="ISpecWithProbability" />
+    <node concept="1TJgyj" id="6BEEv9htDpK" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376746632816" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="probability" />
+      <ref role="20lvS9" node="6BEEv9htjWJ" resolve="Probability" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BEEv9hzVWA">
+    <property role="EcuMT" value="7632099376748281638" />
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="SteadyState" />
+    <property role="34LRSv" value="P holds in the long run Probability" />
+    <property role="R4oN_" value="steady state" />
+    <ref role="1TJDcQ" node="6hWVnwA1K7s" resolve="OccurrenceCategory" />
+    <node concept="1TJgyj" id="6BEEv9hzVWG" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376748281644" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6BEEv9hzVWB" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BEEv9h$xRV">
+    <property role="EcuMT" value="7632099376748436987" />
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="MinimumDuration" />
+    <property role="34LRSv" value="once P becomes true it remains so for at least t TimeUnits [Probability]" />
+    <property role="R4oN_" value="minimum duration" />
+    <ref role="1TJDcQ" node="6hWVnwA1K7s" resolve="OccurrenceCategory" />
+    <node concept="PrWs8" id="6BEEv9h$xRW" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9h$yZ_" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376748441573" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9h$xRZ" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376748436991" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="time" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9h$xS2" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376748436994" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="timeUnit" />
+      <ref role="20lvS9" node="1Tg5$nepcb_" resolve="TimeUnit" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6BEEv9h_adh">
+    <property role="EcuMT" value="7632099376748602193" />
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="MaximumDuration" />
+    <property role="34LRSv" value="once P becomes true it remains so for less than t TimeUnits [Probability]" />
+    <property role="R4oN_" value="minimum duration" />
+    <ref role="1TJDcQ" node="6hWVnwA1K7s" resolve="OccurrenceCategory" />
+    <node concept="PrWs8" id="6BEEv9h_adi" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9h_adj" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376748602195" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9h_adk" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376748602196" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="time" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6BEEv9h_adl" role="1TKVEi">
+      <property role="IQ2ns" value="7632099376748602197" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="timeUnit" />
+      <ref role="20lvS9" node="1Tg5$nepcb_" resolve="TimeUnit" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="CTc$eJ5nwF">
+    <property role="EcuMT" value="736675280333404203" />
+    <property role="3GE5qa" value="specification.occurrence" />
+    <property role="TrG5h" value="Recurrence" />
+    <property role="34LRSv" value="P holds repeatedly [every t TimeUnits] [Probability]" />
+    <property role="R4oN_" value="recurrence" />
+    <ref role="1TJDcQ" node="6hWVnwA1K7s" resolve="OccurrenceCategory" />
+    <node concept="1TJgyj" id="CTc$eJ5nwJ" role="1TKVEi">
+      <property role="IQ2ns" value="736675280333404207" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="p" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="CTc$eJ5nwG" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
+    <node concept="PrWs8" id="CTc$eJ6ecX" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9hrMMz" resolve="ISpecWithTime" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="CTc$eJ5nxl">
+    <property role="EcuMT" value="736675280333404245" />
+    <property role="3GE5qa" value="time" />
+    <property role="TrG5h" value="Every" />
+    <property role="34LRSv" value="every" />
+    <property role="R4oN_" value="every" />
+    <ref role="1TJDcQ" node="1Tg5$nepcbz" resolve="Time" />
+    <node concept="1TJgyj" id="CTc$eJ5nxL" role="1TKVEi">
+      <property role="IQ2ns" value="736675280333404273" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
   </node>
 </model>
 
