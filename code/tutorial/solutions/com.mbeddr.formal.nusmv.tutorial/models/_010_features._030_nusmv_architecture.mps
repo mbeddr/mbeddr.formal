@@ -6,6 +6,11 @@
   </languages>
   <imports />
   <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="9066112305501141496" name="com.mbeddr.formal.nusmv.cbd.structure.ContractsSpec" flags="ng" index="3US3jz" />
+      <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
+      <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
+    </language>
     <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
       <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
       <concept id="6584464211391019107" name="com.mbeddr.formal.nusmv.arch.structure.OutputRef" flags="ng" index="JmOWN" />
@@ -15,8 +20,15 @@
       <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
+      <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
+        <property id="2707707741261637861" name="documentation" index="sUxOX" />
+      </concept>
+      <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
+        <child id="8482728081216646944" name="expr" index="1yBDGv" />
+      </concept>
       <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
       <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
         <child id="7842584090743387019" name="type" index="2HdssA" />
       </concept>
@@ -34,12 +46,20 @@
       <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
         <child id="7842584090743880932" name="vars" index="2Hfkx9" />
       </concept>
+      <concept id="9133754867501343024" name="com.mbeddr.formal.nusmv.structure.Finally" flags="ng" index="2Sa3Mo" />
+      <concept id="9133754867501356758" name="com.mbeddr.formal.nusmv.structure.Once" flags="ng" index="2Sa4HY" />
+      <concept id="9133754867501306909" name="com.mbeddr.formal.nusmv.structure.Next" flags="ng" index="2Sa8AP" />
+      <concept id="9133754867501326618" name="com.mbeddr.formal.nusmv.structure.Globally" flags="ng" index="2SafMM" />
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
       <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
         <child id="1989356068342053586" name="definitions" index="32O2ov" />
       </concept>
       <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
+      </concept>
+      <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
+      <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
+        <child id="8482728081216657211" name="exp" index="1yBIc4" />
       </concept>
       <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
@@ -50,6 +70,9 @@
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
+      <concept id="4678075609353342594" name="com.mbeddr.formal.nusmv.structure.DefineRef" flags="ng" index="1J1L9T">
+        <reference id="4678075609353342595" name="def" index="1J1L9S" />
+      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
@@ -59,6 +82,10 @@
       <concept id="7842584090743943169" name="com.mbeddr.formal.base.expressions.structure.Expression" flags="ng" index="2He$iG" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
+      <concept id="1989356068341840849" name="com.mbeddr.formal.base.expressions.structure.ParensExpression" flags="ng" index="32OYss" />
+      <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
+        <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
       <concept id="8482728081213325516" name="com.mbeddr.formal.base.expressions.structure.GenericDotExpression" flags="ng" index="1ziNjN">
         <child id="8482728081213325520" name="target" index="1ziNjJ" />
@@ -122,6 +149,11 @@
       </concept>
       <concept id="4678075609353200435" name="com.mbeddr.formal.nusmv.tests.structure.TestsCollection" flags="ng" index="1J0nZ8">
         <child id="4678075609353201562" name="testCases" index="1J0nHx" />
+      </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="1258148499699359659" name="com.mbeddr.formal.base.arch.structure.IContractsContainer" flags="ng" index="3Ic8zf">
+        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
       </concept>
     </language>
   </registry>
@@ -760,6 +792,9 @@
     <node concept="2Hdtz0" id="413_D7n5c0u" role="2HcuB8">
       <property role="TrG5h" value="controller" />
       <node concept="32O2o0" id="413_D7n5c0L" role="2HcbjO">
+        <node concept="sUyCV" id="413_D7n5fen" role="32O2ov">
+          <property role="sUxOX" value="ToDo: this module shall be completed" />
+        </node>
         <node concept="JlCpM" id="413_D7n5c13" role="32O2ov">
           <property role="TrG5h" value="break_cmd" />
           <node concept="2He$iG" id="413_D7n5c15" role="1zoetD" />
@@ -1162,6 +1197,87 @@
       </node>
       <node concept="2Hdtzr" id="413_D7n5c7$" role="2Hdtzq">
         <property role="TrG5h" value="dist3" />
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="413_D7n5fes">
+    <property role="TrG5h" value="_030_airbag_contracts" />
+    <node concept="2SQmWS" id="413_D7n5fk4" role="2HcuB8" />
+    <node concept="sUyCV" id="413_D7n5flB" role="2HcuB8">
+      <property role="sUxOX" value="pre/postconditions can be annotated explicitly on MODULEs" />
+    </node>
+    <node concept="2SQmWS" id="413_D7n5fl5" role="2HcuB8" />
+    <node concept="2Hdtz0" id="413_D7n5feu" role="2HcuB8">
+      <property role="TrG5h" value="airbag_controller" />
+      <node concept="32O2o0" id="413_D7n5feA" role="2HcbjO">
+        <node concept="JlCpM" id="413_D7n5feY" role="32O2ov">
+          <property role="TrG5h" value="explode_cmd" />
+          <node concept="2He$iJ" id="413_D7n5fgm" role="1zoetD">
+            <ref role="2He$iI" node="413_D7n5ff$" resolve="explode" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="413_D7n5ffo" role="2HcbjO">
+        <node concept="2Hdskp" id="413_D7n5ff$" role="2Hfkx9">
+          <property role="TrG5h" value="explode" />
+          <node concept="2Hds6S" id="413_D7n5fga" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="413_D7n5fe$" role="2Hdtzq">
+        <property role="TrG5h" value="collision" />
+      </node>
+      <node concept="3US3jz" id="413_D7n5fgu" role="lGtFl">
+        <node concept="3US$BV" id="413_D7n5fgw" role="3UnIb_">
+          <property role="TrG5h" value="collision_pre" />
+          <node concept="2SafMM" id="413_D7n5fgA" role="1yBDGv">
+            <node concept="32OYss" id="413_D7n5fgG" role="1yBIc4">
+              <node concept="1yyYsf" id="413_D7n5fgY" role="32OYtT">
+                <node concept="2Sa8AP" id="413_D7n5fhi" role="2H9Ial">
+                  <node concept="32Ogvo" id="413_D7n5fhu" role="1yBIc4">
+                    <ref role="32Ogvr" node="413_D7n5fe$" resolve="collision" />
+                  </node>
+                </node>
+                <node concept="32Ogvo" id="413_D7n5fgS" role="2H9Iav">
+                  <ref role="32Ogvr" node="413_D7n5fe$" resolve="collision" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3UTh7Y" id="413_D7n5fhD" role="3UnIb_">
+          <property role="TrG5h" value="exploded_only_by_collision" />
+          <node concept="2SafMM" id="413_D7n5fhS" role="1yBDGv">
+            <node concept="32OYss" id="413_D7n5fhY" role="1yBIc4">
+              <node concept="1yyYsf" id="413_D7n5fie" role="32OYtT">
+                <node concept="2Sa4HY" id="413_D7n5fiI" role="2H9Ial">
+                  <node concept="32Ogvo" id="413_D7n5fiU" role="1yBIc4">
+                    <ref role="32Ogvr" node="413_D7n5fe$" resolve="collision" />
+                  </node>
+                </node>
+                <node concept="1J1L9T" id="413_D7n5fi6" role="2H9Iav">
+                  <ref role="1J1L9S" node="413_D7n5feY" resolve="explode_cmd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3UTh7Y" id="413_D7n5fiW" role="3UnIb_">
+          <property role="TrG5h" value="explode_when_collision" />
+          <node concept="2SafMM" id="413_D7n5fiX" role="1yBDGv">
+            <node concept="32OYss" id="413_D7n5fiY" role="1yBIc4">
+              <node concept="1yyYsf" id="413_D7n5fiZ" role="32OYtT">
+                <node concept="32Ogvo" id="413_D7n5fjy" role="2H9Iav">
+                  <ref role="32Ogvr" node="413_D7n5fe$" resolve="collision" />
+                </node>
+                <node concept="2Sa3Mo" id="413_D7n5fjS" role="2H9Ial">
+                  <node concept="1J1L9T" id="413_D7n5fk0" role="1yBIc4">
+                    <ref role="1J1L9S" node="413_D7n5feY" resolve="explode_cmd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
