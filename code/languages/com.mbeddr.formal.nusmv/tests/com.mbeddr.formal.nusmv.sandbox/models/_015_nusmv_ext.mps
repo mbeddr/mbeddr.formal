@@ -80,6 +80,7 @@
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744245770" name="com.mbeddr.formal.base.expressions.structure.PlusExpression" flags="ng" index="2H9FEB" />
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
@@ -120,6 +121,9 @@
       </concept>
       <concept id="2406721343445433207" name="com.mbeddr.formal.nusmv.ext.structure.StructMemberDeclaration" flags="ng" index="1s31WS">
         <child id="2406721343445433211" name="type" index="1s31WO" />
+      </concept>
+      <concept id="2406721343445494908" name="com.mbeddr.formal.nusmv.ext.structure.StructMemberRef" flags="ng" index="1s3gwN">
+        <reference id="2406721343445495126" name="structMember" index="1s3g$p" />
       </concept>
       <concept id="2406721343443666554" name="com.mbeddr.formal.nusmv.ext.structure.TypedefDeclaration" flags="ng" index="1sau8P">
         <child id="2406721343443666559" name="originalType" index="1sau8K" />
@@ -656,6 +660,116 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2HdtXS" id="4PN$IszPx7A">
+    <property role="TrG5h" value="_200_complex_example" />
+    <node concept="1sau8P" id="4PN$IszPx7C" role="2HcuB8">
+      <property role="TrG5h" value="Time" />
+      <node concept="dhpfj" id="4PN$IszPx7Q" role="1sau8K">
+        <node concept="2IPVmt" id="4PN$IszPx7P" role="dhpfi">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4PN$IszPx8f" role="dhpfn">
+          <property role="2IPVms" value="100" />
+        </node>
+      </node>
+    </node>
+    <node concept="1sau8P" id="4PN$IszPxes" role="2HcuB8">
+      <property role="TrG5h" value="Speed" />
+      <node concept="dhpfj" id="4PN$IszPxet" role="1sau8K">
+        <node concept="2IPVmt" id="4PN$IszPxeu" role="dhpfi">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4PN$IszPxev" role="dhpfn">
+          <property role="2IPVms" value="100" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4PN$IszPxa6" role="2HcuB8" />
+    <node concept="1s31Vl" id="4PN$IszPxar" role="2HcuB8">
+      <property role="TrG5h" value="Position" />
+      <node concept="1s31WS" id="4PN$IszPxaB" role="1s31w6">
+        <property role="TrG5h" value="x" />
+        <node concept="dhpfj" id="4PN$IszPxaN" role="1s31WO">
+          <node concept="2IPVmt" id="4PN$IszPxaM" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="4PN$IszPxbc" role="dhpfn">
+            <property role="2IPVms" value="100" />
+          </node>
+        </node>
+      </node>
+      <node concept="1s31WS" id="4PN$IszPxbU" role="1s31w6">
+        <property role="TrG5h" value="y" />
+        <node concept="dhpfj" id="4PN$IszPxbV" role="1s31WO">
+          <node concept="2IPVmt" id="4PN$IszPxbW" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="4PN$IszPxbX" role="dhpfn">
+            <property role="2IPVms" value="100" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4PN$IszPxdj" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4PN$IszPxdW" role="2HcuB8">
+      <property role="TrG5h" value="emergency_braking" />
+      <node concept="2Hfkzq" id="4PN$IszPxoR" role="2HcbjO">
+        <node concept="2Hdskp" id="4PN$IszPxpd" role="2Hfkx9">
+          <property role="TrG5h" value="old_car_pos" />
+          <node concept="1s31w3" id="4PN$IszPxpH" role="2HdssA">
+            <ref role="1s31w2" node="4PN$IszPxar" resolve="Position" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="4PN$IszPxhF" role="2HcbjO">
+        <node concept="2HevG6" id="4PN$IszPxiv" role="2HfkAP">
+          <node concept="1ziNjN" id="4PN$IszPxj1" role="2He$ia">
+            <node concept="1s3gwN" id="4PN$IszPxjo" role="1ziNjJ">
+              <ref role="1s3g$p" node="4PN$IszPxaB" resolve="x" />
+            </node>
+            <node concept="32Ogvo" id="4PN$IszPxiR" role="1ziNjM">
+              <ref role="32Ogvr" node="4PN$IszPxh9" resolve="car_pos" />
+            </node>
+          </node>
+          <node concept="2H9FEB" id="4PN$IszPxmK" role="2He$i0">
+            <node concept="32Ogvo" id="4PN$IszPxnp" role="2H9Ial">
+              <ref role="32Ogvr" node="4PN$IszPxep" resolve="crt_speed_x" />
+            </node>
+            <node concept="1ziNjN" id="4PN$IszPxlz" role="2H9Iav">
+              <node concept="1s3gwN" id="4PN$IszPxmx" role="1ziNjJ">
+                <ref role="1s3g$p" node="4PN$IszPxaB" resolve="x" />
+              </node>
+              <node concept="32Ogvo" id="4PN$IszPxle" role="1ziNjM">
+                <ref role="32Ogvr" node="4PN$IszPxh9" resolve="car_pos" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2HevG6" id="4PN$IszPxhK" role="2HfkAP">
+          <node concept="32Ogvo" id="4PN$IszPxi1" role="2He$ia">
+            <ref role="32Ogvr" node="4PN$IszPxep" resolve="crt_speed_x" />
+          </node>
+          <node concept="32Ogvo" id="4PN$IszPxkR" role="2He$i0">
+            <ref role="32Ogvr" node="4PN$IszPxh9" resolve="car_pos" />
+          </node>
+        </node>
+      </node>
+      <node concept="3_qfHp" id="4PN$IszPxep" role="2Hdtzq">
+        <property role="TrG5h" value="crt_speed_x" />
+        <node concept="1savGX" id="4PN$IszPxfR" role="2HdssB">
+          <ref role="1savGW" node="4PN$IszPxes" resolve="Speed" />
+        </node>
+      </node>
+      <node concept="3_qfHp" id="4PN$IszPxh9" role="2Hdtzq">
+        <property role="TrG5h" value="car_pos" />
+        <node concept="1s31w3" id="4PN$IszPxhq" role="2HdssB">
+          <ref role="1s31w2" node="4PN$IszPxar" resolve="Position" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4PN$IszPxpZ" role="2HcuB8" />
+    <node concept="2SQmWS" id="4PN$IszPxqD" role="2HcuB8" />
   </node>
 </model>
 
