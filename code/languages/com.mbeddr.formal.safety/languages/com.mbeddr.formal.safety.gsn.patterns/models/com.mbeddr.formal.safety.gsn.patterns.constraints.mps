@@ -22,6 +22,7 @@
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="g8ih" ref="r:d04ada13-9d56-43be-9fbe-16c353913377(com.mbeddr.formal.safety.gsn.patterns.behavior)" />
+    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -406,6 +407,82 @@
                 </node>
                 <node concept="1j9C0f" id="1Y8zh0me36b" role="2OqNvi">
                   <ref role="1j9C0d" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3TSGpjyG1QF">
+    <property role="3GE5qa" value="hazards" />
+    <ref role="1M2myG" to="2qxf:3TSGpjyG1I_" resolve="GSNHazardRefWord" />
+    <node concept="1N5Pfh" id="3TSGpjyG2b7" role="1Mr941">
+      <ref role="1N5Vy1" to="2qxf:2RlaC$PcChp" resolve="hazard" />
+      <node concept="3dgokm" id="3TSGpjyG2ef" role="1N6uqs">
+        <node concept="3clFbS" id="3TSGpjyG2eg" role="2VODD2">
+          <node concept="3cpWs8" id="3TSGpjyG2k3" role="3cqZAp">
+            <node concept="3cpWsn" id="3TSGpjyG2k6" role="3cpWs9">
+              <property role="TrG5h" value="hrg" />
+              <node concept="3Tqbb2" id="3TSGpjyG2k2" role="1tU5fm">
+                <ref role="ehGHo" to="2qxf:1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
+              </node>
+              <node concept="2OqwBi" id="3TSGpjyG2Mi" role="33vP2m">
+                <node concept="2rP1CM" id="3TSGpjyG2Cq" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="3TSGpjyG2Xn" role="2OqNvi">
+                  <node concept="1xMEDy" id="3TSGpjyG2Xp" role="1xVPHs">
+                    <node concept="chp4Y" id="3TSGpjyG2Zy" role="ri$Ld">
+                      <ref role="cht4Q" to="2qxf:1Y8zh0lZmaj" resolve="HazardReferencingGoalBase" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="3TSGpjyG34t" role="1xVPHs" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="3TSGpjyG3im" role="3cqZAp">
+            <node concept="3cpWsn" id="3TSGpjyG3ip" role="3cpWs9">
+              <property role="TrG5h" value="aohs" />
+              <node concept="3Tqbb2" id="3TSGpjyG3ik" role="1tU5fm">
+                <ref role="ehGHo" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
+              </node>
+              <node concept="2OqwBi" id="3TSGpjyG3AZ" role="33vP2m">
+                <node concept="37vLTw" id="3TSGpjyG3na" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3TSGpjyG2k6" resolve="hrg" />
+                </node>
+                <node concept="2qgKlT" id="3TSGpjyG3UX" role="2OqNvi">
+                  <ref role="37wK5l" to="g8ih:63UItOi8Uht" resolve="getCorrespondingStrategy" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="3TSGpjyG4c8" role="3cqZAp">
+            <node concept="3cpWsn" id="3TSGpjyG4cb" role="3cpWs9">
+              <property role="TrG5h" value="hl" />
+              <node concept="3Tqbb2" id="3TSGpjyG4c6" role="1tU5fm">
+                <ref role="ehGHo" to="cjwq:7TjUbLQ4gD0" resolve="IHazardsContainer" />
+              </node>
+              <node concept="2OqwBi" id="3TSGpjyG4_P" role="33vP2m">
+                <node concept="37vLTw" id="3TSGpjyG4lP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3TSGpjyG3ip" resolve="aohs" />
+                </node>
+                <node concept="2qgKlT" id="3TSGpjyG4QO" role="2OqNvi">
+                  <ref role="37wK5l" to="g8ih:2RlaC$P8b$g" resolve="getHazardsList" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3TSGpjyG5lm" role="3cqZAp">
+            <node concept="2YIFZM" id="3TSGpjyG5xe" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="3TSGpjyG6f7" role="37wK5m">
+                <node concept="37vLTw" id="3TSGpjyG5RA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3TSGpjyG4cb" resolve="hl" />
+                </node>
+                <node concept="3Tsc0h" id="3TSGpjyG7m$" role="2OqNvi">
+                  <ref role="3TtcxE" to="cjwq:7TjUbLQ4gDh" resolve="hazards" />
                 </node>
               </node>
             </node>

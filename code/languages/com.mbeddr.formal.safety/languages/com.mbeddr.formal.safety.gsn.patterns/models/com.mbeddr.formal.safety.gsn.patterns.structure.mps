@@ -221,5 +221,20 @@
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3TSGpjyG1I_">
+    <property role="EcuMT" value="4501543080573279141" />
+    <property role="3GE5qa" value="hazards" />
+    <property role="TrG5h" value="GSNHazardRefWord" />
+    <property role="34LRSv" value="@ha" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2RlaC$PcChp" role="1TKVEi">
+      <property role="IQ2ns" value="3302592670537516121" />
+      <property role="20kJfa" value="hazard" />
+      <ref role="20lvS9" to="cjwq:7TjUbLQ4gDb" resolve="IHazardLike" />
+    </node>
+    <node concept="PrWs8" id="3TSGpjyG1Q0" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
 </model>
 

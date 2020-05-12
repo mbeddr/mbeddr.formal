@@ -17,6 +17,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" implicit="true" />
+    <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -534,6 +535,41 @@
     </node>
     <node concept="1PE4EZ" id="1Y8zh0lZjUL" role="1PM95z">
       <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3TSGpjyG1Q3">
+    <property role="3GE5qa" value="hazards" />
+    <ref role="1XX52x" to="2qxf:3TSGpjyG1I_" resolve="GSNHazardRefWord" />
+    <node concept="3EZMnI" id="2RlaC$Pbl10" role="2wV5jI">
+      <node concept="3F0ifn" id="2RlaC$Pbl11" role="3EZMnx">
+        <property role="3F0ifm" value="@ha" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F0ifn" id="2RlaC$PcChx" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="2RlaC$PdimF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="2RlaC$PdimK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="2RlaC$PcChJ" role="3EZMnx">
+        <ref role="1NtTu8" to="2qxf:2RlaC$PcChp" resolve="hazard" />
+        <node concept="1sVBvm" id="2RlaC$PcChL" role="1sWHZn">
+          <node concept="3F0A7n" id="2RlaC$PcCi2" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2RlaC$Pbl16" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="2RlaC$Pbl17" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2RlaC$Pbl18" role="2iSdaV" />
     </node>
   </node>
 </model>
