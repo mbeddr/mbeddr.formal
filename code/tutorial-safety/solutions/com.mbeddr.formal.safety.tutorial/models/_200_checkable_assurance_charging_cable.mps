@@ -9784,12 +9784,5 @@
       </node>
     </node>
   </node>
-  <node concept="8gVzP" id="3TSGpjyG0p0">
-    <property role="TrG5h" value="vla" />
-    <node concept="8gVzc" id="3TSGpjyG0p1" role="8gIbH">
-      <property role="TrG5h" value="bla" />
-      <property role="0lsPB" value="H19" />
-    </node>
-  </node>
 </model>
 
