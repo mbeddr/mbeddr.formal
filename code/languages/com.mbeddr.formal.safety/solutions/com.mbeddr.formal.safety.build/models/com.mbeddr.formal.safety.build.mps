@@ -501,6 +501,10 @@
         <ref role="m_rDy" node="7he_lUurrgx" resolve="com.mbeddr.formal.safety" />
         <node concept="pUk6x" id="7he_lUurFsG" role="pUk7w" />
       </node>
+      <node concept="m$_wl" id="1FlxJGBMvV1" role="39821P">
+        <ref role="m_rDy" node="1FlxJGBMqg9" resolve="com.mbeddr.formal.safety.build" />
+        <node concept="pUk6x" id="1FlxJGBMwcG" role="pUk7w" />
+      </node>
     </node>
     <node concept="2_Ic$z" id="4N7LxkPJhG0" role="3989C9">
       <property role="2_GNG2" value="6096" />
@@ -700,6 +704,30 @@
       </node>
       <node concept="m$f5U" id="7he_lUuvmGP" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvkGI" resolve="fasten.safety.hara.devkit" />
+      </node>
+    </node>
+    <node concept="m$_wf" id="1FlxJGBMqg9" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.formal.safety.build" />
+      <node concept="3_J27D" id="1FlxJGBMqga" role="m$_yQ">
+        <node concept="3Mxwew" id="1FlxJGBMqgb" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.formal.safety.build" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="1FlxJGBMqgc" role="m$_w8">
+        <node concept="3Mxwey" id="1FlxJGBMqgd" role="3MwsjC">
+          <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="1FlxJGBMqgj" role="m_cZH">
+        <node concept="3Mxwew" id="1FlxJGBMqgk" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.formal.safety.build" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="1FlxJGBMvod" role="m$_yh">
+        <ref role="m$f5T" node="1FlxJGBMsrc" resolve="safety.build" />
+      </node>
+      <node concept="m$_yC" id="1FlxJGBMvDn" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
       </node>
     </node>
     <node concept="2G$12M" id="7he_lUumA35" role="3989C9">
@@ -8429,6 +8457,63 @@
         </node>
         <node concept="3LEz8M" id="5TezZ1VejoB" role="3LEz9a">
           <ref role="3LEz8N" node="7he_lUuvkGJ" resolve="fasten.safety.hara" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="1FlxJGBMsrc" role="3989C9">
+      <property role="TrG5h" value="safety.build" />
+      <node concept="1E1JtA" id="1FlxJGBMtfr" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.build" />
+        <property role="3LESm3" value="b4bbc0a5-248e-4db2-9ddc-4901a463c66c" />
+        <node concept="398BVA" id="1FlxJGBMto2" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="1FlxJGBMtDe" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="1FlxJGBMtUp" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.build" />
+              <node concept="2Ry0Ak" id="1FlxJGBMub$" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.build.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1FlxJGBMuGM" role="3bR37C">
+          <node concept="3bR9La" id="1FlxJGBMuGN" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1FlxJGBMuGO" role="3bR37C">
+          <node concept="3bR9La" id="1FlxJGBMuGP" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1FlxJGBMuGQ" role="3bR37C">
+          <node concept="3bR9La" id="1FlxJGBMuGR" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="1FlxJGBMuH3" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="1FlxJGBMuH4" role="1HemKq">
+            <node concept="398BVA" id="1FlxJGBMuGS" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="1FlxJGBMuGT" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1FlxJGBMuGU" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.build" />
+                  <node concept="2Ry0Ak" id="1FlxJGBMuGV" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1FlxJGBMuH5" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
