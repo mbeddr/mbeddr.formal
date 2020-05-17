@@ -40,11 +40,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
-      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
-        <property id="1221209241505" name="value" index="1lJzqX" />
-      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -331,10 +327,7 @@
           <node concept="2iRkQZ" id="24PsEXF9yIb" role="2iSdaV" />
           <node concept="3F0ifn" id="2ccN23odQq9" role="3EZMnx">
             <property role="3F0ifm" value="supportedBy" />
-            <node concept="VSNWy" id="2ccN23odQqa" role="3F10Kt">
-              <property role="1lJzqX" value="10" />
-            </node>
-            <node concept="VPxyj" id="3xpT6K6EdNF" role="3F10Kt" />
+            <ref role="1k5W1q" to="g35p:71GfFl7qVvB" resolve="GSNConnectionStyle" />
           </node>
           <node concept="3EZMnI" id="24PsEXF9yIp" role="3EZMnx">
             <node concept="VPM3Z" id="24PsEXF9yIr" role="3F10Kt" />
@@ -431,10 +424,7 @@
           <node concept="2iRkQZ" id="35$gPpxbZZI" role="2iSdaV" />
           <node concept="3F0ifn" id="35$gPpxbZZJ" role="3EZMnx">
             <property role="3F0ifm" value="inContextOf" />
-            <node concept="VSNWy" id="35$gPpxbZZK" role="3F10Kt">
-              <property role="1lJzqX" value="10" />
-            </node>
-            <node concept="VPxyj" id="35$gPpxbZZL" role="3F10Kt" />
+            <ref role="1k5W1q" to="g35p:71GfFl7qVvB" resolve="GSNConnectionStyle" />
           </node>
           <node concept="3EZMnI" id="35$gPpxbZZM" role="3EZMnx">
             <node concept="VPM3Z" id="35$gPpxbZZN" role="3F10Kt" />
