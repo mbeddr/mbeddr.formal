@@ -2827,6 +2827,33 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="696iakCzWt" role="3cqZAp">
+          <node concept="2OqwBi" id="696iakCAeb" role="3clFbG">
+            <node concept="37vLTw" id="696iakCzWr" role="2Oq$k0">
+              <ref role="3cqZAo" node="7SQqK0Fdk4$" resolve="descendants" />
+            </node>
+            <node concept="2es0OD" id="696iakCBq1" role="2OqNvi">
+              <node concept="1bVj0M" id="696iakCBq3" role="23t8la">
+                <node concept="3clFbS" id="696iakCBq4" role="1bW5cS">
+                  <node concept="3clFbF" id="696iakCBxd" role="3cqZAp">
+                    <node concept="2OqwBi" id="696iakCBBH" role="3clFbG">
+                      <node concept="37vLTw" id="696iakCBxc" role="2Oq$k0">
+                        <ref role="3cqZAo" node="696iakCBq5" resolve="it" />
+                      </node>
+                      <node concept="liA8E" id="696iakCHYm" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.relayout()" resolve="relayout" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="696iakCBq5" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="696iakCBq6" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7SQqK0Fdk4F" role="3cqZAp">
           <node concept="2OqwBi" id="7SQqK0Fdk4G" role="3clFbG">
             <node concept="2OqwBi" id="7SQqK0Fdk4H" role="2Oq$k0">
