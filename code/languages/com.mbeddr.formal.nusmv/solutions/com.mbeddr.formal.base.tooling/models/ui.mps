@@ -4234,6 +4234,21 @@
   <node concept="312cEu" id="696iakqzmI">
     <property role="TrG5h" value="FASTENNotificationUtils" />
     <node concept="2tJIrI" id="696iakqznG" role="jymVt" />
+    <node concept="Wx3nA" id="71GfFl7hN$8" role="jymVt">
+      <property role="TrG5h" value="fastenBalloonGroup" />
+      <node concept="3uibUv" id="696iakw6LN" role="1tU5fm">
+        <ref role="3uigEE" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
+      </node>
+      <node concept="3Tm6S6" id="71GfFl7hNqC" role="1B3o_S" />
+      <node concept="2YIFZM" id="696iakw6Ml" role="33vP2m">
+        <ref role="37wK5l" to="fnpx:~NotificationGroup.balloonGroup(java.lang.String)" resolve="balloonGroup" />
+        <ref role="1Pybhc" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
+        <node concept="Xl_RD" id="696iakw6Mm" role="37wK5m">
+          <property role="Xl_RC" value="FASTEN" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="71GfFl7hNoU" role="jymVt" />
     <node concept="2YIFZL" id="xCk$O6mi_h" role="jymVt">
       <property role="TrG5h" value="showNotification" />
       <node concept="37vLTG" id="xCk$O6miMZ" role="3clF46">
@@ -4260,21 +4275,6 @@
       </node>
       <node concept="3clFbS" id="xCk$O6mi_k" role="3clF47">
         <node concept="3clFbH" id="xCk$O6mi_G" role="3cqZAp" />
-        <node concept="3cpWs8" id="696iakw6Mj" role="3cqZAp">
-          <node concept="3cpWsn" id="696iakw6Mk" role="3cpWs9">
-            <property role="TrG5h" value="balloonGroup" />
-            <node concept="3uibUv" id="696iakw6LN" role="1tU5fm">
-              <ref role="3uigEE" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
-            </node>
-            <node concept="2YIFZM" id="696iakw6Ml" role="33vP2m">
-              <ref role="1Pybhc" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
-              <ref role="37wK5l" to="fnpx:~NotificationGroup.balloonGroup(java.lang.String)" resolve="balloonGroup" />
-              <node concept="Xl_RD" id="696iakw6Mm" role="37wK5m">
-                <property role="Xl_RC" value="FASTEN" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="xCk$O6miVt" role="3cqZAp">
           <node concept="3cpWsn" id="xCk$O6miVs" role="3cpWs9">
             <property role="3TUv4t" value="true" />
@@ -4286,8 +4286,8 @@
               <node concept="1pGfFk" id="xCk$O6mj3O" role="2ShVmc">
                 <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType,com.intellij.notification.NotificationListener)" resolve="Notification" />
                 <node concept="2OqwBi" id="xCk$O6mjh0" role="37wK5m">
-                  <node concept="37vLTw" id="696iakw6ZM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="696iakw6Mk" resolve="balloonGroup" />
+                  <node concept="37vLTw" id="71GfFl7hNEa" role="2Oq$k0">
+                    <ref role="3cqZAo" node="71GfFl7hN$8" resolve="fastenBalloonGroup" />
                   </node>
                   <node concept="liA8E" id="xCk$O6mjh1" role="2OqNvi">
                     <ref role="37wK5l" to="fnpx:~NotificationGroup.getDisplayId()" resolve="getDisplayId" />
