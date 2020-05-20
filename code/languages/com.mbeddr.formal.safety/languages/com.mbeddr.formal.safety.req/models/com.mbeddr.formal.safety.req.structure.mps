@@ -11,15 +11,31 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -64,6 +80,43 @@
     <property role="34LRSv" value="technical safety" />
     <property role="R4oN_" value="technical safety requirement" />
     <ref role="1TJDcQ" to="z27p:4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
+  <node concept="1TIwiD" id="5et_HVSN_vV">
+    <property role="EcuMT" value="6025137760892770299" />
+    <property role="TrG5h" value="AsilAttribute" />
+    <property role="34LRSv" value="ASIL" />
+    <property role="R4oN_" value="automotive safety integrity level" />
+    <ref role="1TJDcQ" to="z27p:5et_HVSNcF1" resolve="RequirementAttributeBase" />
+    <node concept="1TJgyi" id="5et_HVSN_wA" role="1TKVEl">
+      <property role="IQ2nx" value="6025137760892770342" />
+      <property role="TrG5h" value="asil" />
+      <ref role="AX2Wp" node="5et_HVSN_vW" resolve="AsilValues" />
+    </node>
+  </node>
+  <node concept="25R3W" id="5et_HVSN_vW">
+    <property role="3F6X1D" value="6025137760892770300" />
+    <property role="TrG5h" value="AsilValues" />
+    <ref role="1H5jkz" node="5et_HVSN_vX" resolve="ASIL_A" />
+    <node concept="25R33" id="5et_HVSN_vX" role="25R1y">
+      <property role="3tVfz5" value="6025137760892770301" />
+      <property role="TrG5h" value="ASIL_A" />
+      <property role="1L1pqM" value="A" />
+    </node>
+    <node concept="25R33" id="5et_HVSN_vY" role="25R1y">
+      <property role="3tVfz5" value="6025137760892770302" />
+      <property role="TrG5h" value="ASIL_B" />
+      <property role="1L1pqM" value="B" />
+    </node>
+    <node concept="25R33" id="5et_HVSN_w3" role="25R1y">
+      <property role="3tVfz5" value="6025137760892770307" />
+      <property role="TrG5h" value="ASIL_C" />
+      <property role="1L1pqM" value="C" />
+    </node>
+    <node concept="25R33" id="5et_HVSN_wa" role="25R1y">
+      <property role="3tVfz5" value="6025137760892770314" />
+      <property role="TrG5h" value="ASIL_D" />
+      <property role="1L1pqM" value="D" />
+    </node>
   </node>
 </model>
 
