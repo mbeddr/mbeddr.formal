@@ -137,6 +137,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4gtLUSMLiPR" resolve="IRequirementSpecification" />
     </node>
+    <node concept="1TJgyj" id="5et_HVSNcF2" role="1TKVEi">
+      <property role="IQ2ns" value="6025137760892668610" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5et_HVSNcF1" resolve="RequirementAttributeBase" />
+    </node>
     <node concept="1TJgyi" id="2N7iSwG$CrI" role="1TKVEl">
       <property role="IQ2nx" value="3226630706269685486" />
       <property role="TrG5h" value="id" />
@@ -376,6 +383,12 @@
       <property role="20kJfa" value="reqDocument" />
       <ref role="20lvS9" node="4gtLUSMLiMx" resolve="RequirementDocument" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5et_HVSNcF1">
+    <property role="EcuMT" value="6025137760892668609" />
+    <property role="TrG5h" value="RequirementAttributeBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

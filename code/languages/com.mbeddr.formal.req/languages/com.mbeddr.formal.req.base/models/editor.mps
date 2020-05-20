@@ -528,6 +528,23 @@
               <ref role="1NtTu8" to="z27p:2N7iSwGA0V7" resolve="kind" />
             </node>
           </node>
+          <node concept="3EZMnI" id="5et_HVSNjne" role="3EZMnx">
+            <node concept="VPM3Z" id="5et_HVSNjng" role="3F10Kt" />
+            <node concept="3F0ifn" id="5et_HVSNjni" role="3EZMnx">
+              <property role="3F0ifm" value="attributes:" />
+            </node>
+            <node concept="3F2HdR" id="5et_HVSNjnE" role="3EZMnx">
+              <ref role="1NtTu8" to="z27p:5et_HVSNcF2" resolve="attributes" />
+              <node concept="l2Vlx" id="5et_HVSNjnG" role="2czzBx" />
+              <node concept="3F0ifn" id="5et_HVSO99o" role="2czzBI">
+                <property role="3F0ifm" value="no attributes" />
+                <node concept="VechU" id="5et_HVSO9bF" role="3F10Kt">
+                  <property role="Vb096" value="fLJRk5A/lightGray" />
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="5et_HVSNjnj" role="2iSdaV" />
+          </node>
           <node concept="2iRkQZ" id="2N7iSwG_izp" role="2iSdaV" />
         </node>
         <node concept="VPM3Z" id="2N7iSwG$_7G" role="3F10Kt" />
