@@ -3511,6 +3511,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="696iakwoyg" role="3bR37C">
+          <node concept="3bR9La" id="696iakwoyh" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="696iakwoyi" role="3bR37C">
+          <node concept="3bR9La" id="696iakwoyj" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5yQpAUIgQaT" role="2G$12L">
         <property role="BnDLt" value="true" />

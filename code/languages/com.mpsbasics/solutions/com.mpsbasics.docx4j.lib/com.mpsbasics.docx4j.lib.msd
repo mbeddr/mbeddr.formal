@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="antlr-2.7.7.jar" />
       <sourceRoot location="antlr-runtime-3.5.2.jar" />

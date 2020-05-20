@@ -60,6 +60,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.formal.safety.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.formal.safety.build" />
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.mbeddr.formal.safety.build" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.formal.safety.code}/solutions/com.mbeddr.formal.safety.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.formal.safety.build.jar" />
     </jar>
