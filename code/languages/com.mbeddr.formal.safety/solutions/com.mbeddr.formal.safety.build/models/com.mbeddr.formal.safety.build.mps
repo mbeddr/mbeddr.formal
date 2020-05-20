@@ -6225,6 +6225,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="5et_HVSOwOD" role="3bR37C">
+          <node concept="3bR9La" id="5et_HVSOwOE" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5et_HVSOwOF" role="3bR37C">
+          <node concept="3bR9La" id="5et_HVSOwOG" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5yQpAUIgQaT" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -6572,6 +6582,11 @@
         <node concept="1SiIV0" id="696iakoZqc" role="3bR37C">
           <node concept="1Busua" id="696iakoZqd" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5et_HVSOwPr" role="3bR37C">
+          <node concept="3bR9La" id="5et_HVSOwPs" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
           </node>
         </node>
       </node>
@@ -7782,6 +7797,21 @@
         <node concept="1SiIV0" id="5vMnn5IVyNu" role="3bR37C">
           <node concept="1Busua" id="5vMnn5IVyNv" role="1SiIV1">
             <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5et_HVSOwSP" role="3bR37C">
+          <node concept="3bR9La" id="5et_HVSOwSQ" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5et_HVSOwSR" role="3bR37C">
+          <node concept="3bR9La" id="5et_HVSOwSS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5et_HVSOwT4" role="3bR37C">
+          <node concept="1Busua" id="5et_HVSOwT5" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>
