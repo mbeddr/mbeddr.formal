@@ -119,5 +119,12 @@
       <property role="1L1pqM" value="D" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6RZi9iizsaO">
+    <property role="EcuMT" value="7926133672146485940" />
+    <property role="TrG5h" value="OperatingContextReqKind" />
+    <property role="34LRSv" value="operating context" />
+    <property role="R4oN_" value="requirement on the operating context" />
+    <ref role="1TJDcQ" to="z27p:4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
 </model>
 

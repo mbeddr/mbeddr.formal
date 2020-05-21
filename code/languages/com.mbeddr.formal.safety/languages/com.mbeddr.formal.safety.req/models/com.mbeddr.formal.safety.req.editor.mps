@@ -79,5 +79,14 @@
       <node concept="l2Vlx" id="5et_HVSO7Be" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6RZi9iizsaP">
+    <ref role="1XX52x" to="30zx:6RZi9iizsaO" resolve="OperatingContextReqKind" />
+    <node concept="3EZMnI" id="6RZi9iizsaR" role="2wV5jI">
+      <node concept="3F0ifn" id="6RZi9iizsaS" role="3EZMnx">
+        <property role="3F0ifm" value="operating context" />
+      </node>
+      <node concept="l2Vlx" id="6RZi9iizsaX" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
