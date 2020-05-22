@@ -330,7 +330,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7BYuSCF_mAI">
-    <ref role="1M2myG" to="bewr:7BYuSCF_1Vf" resolve="ControlActionWord" />
+    <ref role="1M2myG" to="bewr:7BYuSCF_1Vf" resolve="ActionWord" />
     <node concept="9S07l" id="7BYuSCF_mAJ" role="9Vyp8">
       <node concept="3clFbS" id="7BYuSCF_mAK" role="2VODD2">
         <node concept="3clFbF" id="7BYuSCF_mEF" role="3cqZAp">
