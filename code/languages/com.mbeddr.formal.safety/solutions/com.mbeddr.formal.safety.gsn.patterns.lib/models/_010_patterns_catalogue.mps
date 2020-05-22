@@ -41,10 +41,10 @@
       <concept id="8278132229936590137" name="com.mbeddr.formal.safety.gsn.patterns.structure.ArgumentOverHazardsStrategy" flags="ng" index="FXfxu" />
       <concept id="7021513436411693954" name="com.mbeddr.formal.safety.gsn.patterns.structure.RequirementRefWord" flags="ng" index="2NwIr6" />
       <concept id="2132725602654764801" name="com.mbeddr.formal.safety.gsn.patterns.structure.SupportedByRequirementSatisfiedGoal" flags="ng" index="3g1GAz" />
-      <concept id="4501543080573279141" name="com.mbeddr.formal.safety.gsn.patterns.structure.GSNHazardRefWord" flags="ng" index="3sMaCL" />
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
       <concept id="3302592670536330516" name="com.mbeddr.formal.safety.hara.structure.HazardsListRefWord" flags="ng" index="oXkut" />
+      <concept id="3302592670537174430" name="com.mbeddr.formal.safety.hara.structure.HazardRefWord" flags="ng" index="oY6sn" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -4713,7 +4713,7 @@
         <node concept="gqqVs" id="3TSGpjyN$Nn" role="37mO4d">
           <property role="gqqTZ" value="169.0" />
           <property role="gqqTW" value="333.0" />
-          <property role="gqqTX" value="197.0" />
+          <property role="gqqTX" value="203.0" />
           <property role="gqqTy" value="52.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -4723,7 +4723,7 @@
         <node concept="gqqVs" id="3TSGpjyN$Np" role="37mO4d">
           <property role="gqqTZ" value="495.0" />
           <property role="gqqTW" value="249.0" />
-          <property role="gqqTX" value="208.0" />
+          <property role="gqqTX" value="215.0" />
           <property role="gqqTy" value="65.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -4733,7 +4733,7 @@
         <node concept="gqqVs" id="3TSGpjyN$Nr" role="37mO4d">
           <property role="gqqTZ" value="240.0" />
           <property role="gqqTW" value="255.5" />
-          <property role="gqqTX" value="235.0" />
+          <property role="gqqTX" value="246.0" />
           <property role="gqqTy" value="52.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -4743,7 +4743,7 @@
         <node concept="gqqVs" id="3TSGpjyN$Nt" role="37mO4d">
           <property role="gqqTZ" value="11.0" />
           <property role="gqqTW" value="249.0" />
-          <property role="gqqTX" value="197.0" />
+          <property role="gqqTX" value="203.0" />
           <property role="gqqTy" value="65.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -5005,8 +5005,8 @@
         <node concept="19SUe$" id="3TSGpjyN$JE" role="19SJt6">
           <property role="19SUeA" value="Hazard " />
         </node>
-        <node concept="3sMaCL" id="3TSGpjyN$JF" role="19SJt6" />
-        <node concept="19SUe$" id="3TSGpjyN$JG" role="19SJt6">
+        <node concept="oY6sn" id="1dsoBXVNuFu" role="19SJt6" />
+        <node concept="19SUe$" id="1dsoBXVNuFv" role="19SJt6">
           <property role="19SUeA" value="&#10; has been mitigated" />
         </node>
       </node>
@@ -5021,12 +5021,12 @@
         <node concept="19SUe$" id="3TSGpjyN$JK" role="19SJt6">
           <property role="19SUeA" value="Hazard " />
         </node>
-        <node concept="3sMaCL" id="3TSGpjyN$JL" role="19SJt6" />
-        <node concept="19SUe$" id="3TSGpjyN$JM" role="19SJt6">
+        <node concept="oY6sn" id="1dsoBXVNuMs" role="19SJt6" />
+        <node concept="19SUe$" id="1dsoBXVNuMt" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
         </node>
-        <node concept="3sMaCL" id="3TSGpjyN$JN" role="19SJt6" />
-        <node concept="19SUe$" id="3TSGpjyN$Ml" role="19SJt6" />
+        <node concept="oY6sn" id="1dsoBXVNuPu" role="19SJt6" />
+        <node concept="19SUe$" id="1dsoBXVNuPv" role="19SJt6" />
       </node>
     </node>
     <node concept="8gDHL" id="3TSGpjyN$JO" role="2vhqc$">
@@ -5039,8 +5039,8 @@
         <node concept="19SUe$" id="3TSGpjyN$JR" role="19SJt6">
           <property role="19SUeA" value="Risk associated with hazard " />
         </node>
-        <node concept="3sMaCL" id="3TSGpjyN$JS" role="19SJt6" />
-        <node concept="19SUe$" id="3TSGpjyN$JT" role="19SJt6">
+        <node concept="oY6sn" id="1dsoBXVNuJs" role="19SJt6" />
+        <node concept="19SUe$" id="1dsoBXVNuJt" role="19SJt6">
           <property role="19SUeA" value="&#10; has been shown negligible" />
         </node>
       </node>
@@ -5051,9 +5051,9 @@
         <node concept="19SUe$" id="3TSGpjyN$JX" role="19SJt6">
           <property role="19SUeA" value="Hazard " />
         </node>
-        <node concept="3sMaCL" id="3TSGpjyN$JY" role="19SJt6" />
-        <node concept="19SUe$" id="3TSGpjyN$JZ" role="19SJt6">
-          <property role="19SUeA" value="&#10; has been eliminated &#10; and can no longer occur" />
+        <node concept="oY6sn" id="1dsoBXVNuHs" role="19SJt6" />
+        <node concept="19SUe$" id="1dsoBXVNuHt" role="19SJt6">
+          <property role="19SUeA" value=" &#10; has been eliminated &#10; and can no longer occur" />
         </node>
       </node>
     </node>
