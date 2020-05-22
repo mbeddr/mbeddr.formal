@@ -33,6 +33,9 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -248,6 +251,11 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="baseLanguage.analysis.action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6RZi9ii$cW_" role="1TKVEi">
+      <property role="IQ2ns" value="7926133672146685733" />
+      <property role="20kJfa" value="hazard" />
+      <ref role="20lvS9" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1JhvKLLO9Ka">
     <property role="EcuMT" value="2004523000582413322" />
@@ -261,6 +269,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="text" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+    <node concept="PrWs8" id="6RZi9iizv5e" role="PzmwI">
+      <ref role="PrY4T" node="6RZi9iizv5a" resolve="IReferenceableActionDescription" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JhvKLLOZ8k">
@@ -283,6 +294,9 @@
       <property role="20kJfa" value="consequence" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1JhvKLLOZ8r" resolve="ConsequenceBase" />
+    </node>
+    <node concept="PrWs8" id="6RZi9iizv5h" role="PzmwI">
+      <ref role="PrY4T" node="6RZi9iizv5a" resolve="IReferenceableActionDescription" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JhvKLLOZ8n">
@@ -367,8 +381,8 @@
   </node>
   <node concept="1TIwiD" id="7BYuSCF_1Vf">
     <property role="EcuMT" value="8790599356040617679" />
-    <property role="TrG5h" value="ControlActionWord" />
-    <property role="34LRSv" value="@controlAction" />
+    <property role="TrG5h" value="ActionWord" />
+    <property role="34LRSv" value="@action" />
     <property role="R4oN_" value="referencing a control action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7BYuSCF_1Vg" role="PzmwI">
@@ -376,9 +390,58 @@
     </node>
     <node concept="1TJgyj" id="7BYuSCF_1Vr" role="1TKVEi">
       <property role="IQ2ns" value="8790599356040617691" />
-      <property role="20kJfa" value="controlAction" />
+      <property role="20kJfa" value="action" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+      <ref role="20lvS9" node="3Cm$$O2vamj" resolve="Action" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6RZi9iizv5a">
+    <property role="EcuMT" value="7926133672146497866" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
+    <property role="TrG5h" value="IReferenceableActionDescription" />
+    <node concept="PrWs8" id="6RZi9iizv5b" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6RZi9iiAzaN">
+    <property role="EcuMT" value="7926133672147301043" />
+    <property role="3GE5qa" value="baseLanguage" />
+    <property role="TrG5h" value="LossScenario" />
+    <property role="34LRSv" value="stpa loss scenario" />
+    <property role="R4oN_" value="stpa loss scenario" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3GRi4m$qYoV" role="1TKVEi">
+      <property role="IQ2ns" value="4266958635905312315" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+    <node concept="1TJgyj" id="6RZi9iiAzbf" role="1TKVEi">
+      <property role="IQ2ns" value="7926133672147301071" />
+      <property role="20kJfa" value="uca" />
+      <ref role="20lvS9" node="6RZi9iizv5a" resolve="IReferenceableActionDescription" />
+    </node>
+    <node concept="PrWs8" id="6RZi9iiAzch" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6RZi9iiAzbi">
+    <property role="EcuMT" value="7926133672147301074" />
+    <property role="3GE5qa" value="baseLanguage" />
+    <property role="TrG5h" value="LossScenarios" />
+    <property role="34LRSv" value="loss scenarios" />
+    <property role="R4oN_" value="stpa loss scenarios" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6RZi9iiAzbI" role="1TKVEi">
+      <property role="IQ2ns" value="7926133672147301102" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lossScenario" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6RZi9iiAzaN" resolve="LossScenario" />
+    </node>
+    <node concept="PrWs8" id="1dsoBXVMQn6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
