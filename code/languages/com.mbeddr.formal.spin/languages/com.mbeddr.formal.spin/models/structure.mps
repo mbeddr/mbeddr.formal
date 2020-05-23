@@ -1399,5 +1399,94 @@
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="ICLevelStatement" />
   </node>
+  <node concept="1TIwiD" id="3VQuWX0ufp">
+    <property role="EcuMT" value="70889840698319833" />
+    <property role="TrG5h" value="InlineDefinition" />
+    <property role="3GE5qa" value="inline" />
+    <property role="34LRSv" value="inline" />
+    <property role="R4oN_" value="inline definition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3VQuWX0Nkw" role="1TKVEi">
+      <property role="IQ2ns" value="70889840698406176" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4_pH3zvfIkp" resolve="StatementsList" />
+    </node>
+    <node concept="1TJgyj" id="3VQuWX0TZC" role="1TKVEi">
+      <property role="IQ2ns" value="70889840698433512" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3VQuWX0$JW" resolve="InlineArgument" />
+    </node>
+    <node concept="PrWs8" id="3VQuWX0xXq" role="PzmwI">
+      <ref role="PrY4T" node="4_pH3zvds0D" resolve="IPromelaModelContent" />
+    </node>
+    <node concept="PrWs8" id="3VQuWX1pf3" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="3VQuWX0M9D" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3VQuWX0$JW">
+    <property role="EcuMT" value="70889840698346492" />
+    <property role="3GE5qa" value="inline" />
+    <property role="TrG5h" value="InlineArgument" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3VQuWX0AAX" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3VQuWX0CW0">
+    <property role="EcuMT" value="70889840698363648" />
+    <property role="3GE5qa" value="inline" />
+    <property role="TrG5h" value="InlineArgumentRef" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="3VQuWX1fkg" role="1TKVEi">
+      <property role="IQ2ns" value="70889840698520848" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3VQuWX0$JW" resolve="InlineArgument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3VQuWXJCmb">
+    <property role="EcuMT" value="70889840710681995" />
+    <property role="3GE5qa" value="expressions.builtin" />
+    <property role="TrG5h" value="Timeout" />
+    <property role="34LRSv" value="timeout" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3VQuWXJNoI">
+    <property role="EcuMT" value="70889840710727214" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="BoolType" />
+    <property role="34LRSv" value="bool" />
+    <property role="R4oN_" value="boolean type" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="PrWs8" id="3VQuWXJP6Z" role="PzmwI">
+      <ref role="PrY4T" node="2DjQaub_wFg" resolve="IPromelaType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3VQuWXMWU5">
+    <property role="EcuMT" value="70889840711552645" />
+    <property role="3GE5qa" value="inline" />
+    <property role="TrG5h" value="InlineCall" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="3VQuWXN15S" role="1TKVEi">
+      <property role="IQ2ns" value="70889840711569784" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="actuals" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3VQuWXMYoA" role="1TKVEi">
+      <property role="IQ2ns" value="70889840711558694" />
+      <property role="20kJfa" value="inlineDefinition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3VQuWX0ufp" resolve="InlineDefinition" />
+    </node>
+  </node>
 </model>
 

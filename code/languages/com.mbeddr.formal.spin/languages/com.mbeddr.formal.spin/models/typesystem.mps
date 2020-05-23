@@ -43,6 +43,14 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
+    </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
@@ -308,6 +316,32 @@
     <node concept="1YaCAy" id="26dfgZmfD3B" role="1YuTPh">
       <property role="TrG5h" value="arrayAccessExpression" />
       <ref role="1YaFvo" to="o3hv:26dfgZmfD1n" resolve="ArrayAccessExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3VQuWXJGiF">
+    <property role="TrG5h" value="typeof_Timeout" />
+    <property role="3GE5qa" value="expressions.builtin" />
+    <node concept="3clFbS" id="3VQuWXJGiG" role="18ibNy">
+      <node concept="1Z5TYs" id="3VQuWXJHXJ" role="3cqZAp">
+        <node concept="mw_s8" id="3VQuWXJIdN" role="1ZfhKB">
+          <node concept="2pJPEk" id="3VQuWXJIdJ" role="mwGJk">
+            <node concept="2pJPED" id="3VQuWXMKnS" role="2pJPEn">
+              <ref role="2pJxaS" to="o3hv:3VQuWXJNoI" resolve="BoolType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3VQuWXJHXM" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3VQuWXJH22" role="mwGJk">
+            <node concept="1YBJjd" id="3VQuWXJHjE" role="1Z2MuG">
+              <ref role="1YBMHb" node="3VQuWXJGiI" resolve="timeout" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3VQuWXJGiI" role="1YuTPh">
+      <property role="TrG5h" value="timeout" />
+      <ref role="1YaFvo" to="o3hv:3VQuWXJCmb" resolve="Timeout" />
     </node>
   </node>
 </model>
