@@ -1382,6 +1382,7 @@
     <property role="3GE5qa" value="cbd_old.nusmv_refinement" />
     <ref role="1XX52x" to="vzqj:2l5A0OF7cwg" resolve="Refine" />
     <node concept="3EZMnI" id="2_LXzlppHp_" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="3EZMnI" id="2_LXzlppH$l" role="3EZMnx">
         <node concept="VPM3Z" id="2_LXzlppH$m" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -1416,7 +1417,15 @@
         </node>
         <node concept="3F0ifn" id="2l5A0OFb5Fr" role="3EZMnx">
           <property role="3F0ifm" value=":" />
+          <node concept="11L4FC" id="5WRxR_T41Mg" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
+        <node concept="l2Vlx" id="2l5A0OF7cy2" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5WRxR_T3k1k" role="3EZMnx">
+        <node concept="VPM3Z" id="5WRxR_T3k1m" role="3F10Kt" />
+        <node concept="3XFhqQ" id="5WRxR_T3k6V" role="3EZMnx" />
         <node concept="3F1sOY" id="2l5A0OF7cyu" role="3EZMnx">
           <ref role="1NtTu8" to="vzqj:2l5A0OF7cx9" resolve="interfaceRef" />
         </node>
@@ -1429,7 +1438,23 @@
         <node concept="3F0ifn" id="2l5A0OF7czV" role="3EZMnx">
           <property role="3F0ifm" value=";" />
         </node>
-        <node concept="l2Vlx" id="2l5A0OF7cy2" role="2iSdaV" />
+        <node concept="l2Vlx" id="5WRxR_T3k1p" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5WRxR_T3kci" role="AHCbl">
+        <node concept="3F0ifn" id="5WRxR_T3kcj" role="3EZMnx">
+          <property role="3F0ifm" value="refinement" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="5WRxR_T3kck" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="5WRxR_T3kcl" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+          <node concept="11L4FC" id="5WRxR_T41Mi" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="5WRxR_T3kcm" role="2iSdaV" />
       </node>
     </node>
     <node concept="3EZMnI" id="2l5A0OFb2yl" role="6VMZX">
