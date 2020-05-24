@@ -138,7 +138,7 @@
     </node>
     <node concept="2SQmWS" id="3VQuWXS0L2" role="2HcuB8" />
     <node concept="2dDAVa" id="3VQuWXS0L3" role="2HcuB8">
-      <property role="TrG5h" value="BrakActivator" />
+      <property role="TrG5h" value="BrakeActivator" />
       <node concept="3UnI9n" id="3VQuWXS0L4" role="3UnI90">
         <property role="TrG5h" value="brake" />
         <node concept="2Hds6S" id="3VQuWXS0L5" role="3UnI80" />
@@ -303,7 +303,7 @@
       <node concept="3Ug1AV" id="3VQuWXS0LY" role="3UgYNK">
         <property role="TrG5h" value="brake_activator" />
         <node concept="3Ug1AZ" id="3VQuWXS0LZ" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3VQuWXS0L3" resolve="BrakActivator" />
+          <ref role="3Ug1AY" node="3VQuWXS0L3" resolve="BrakeActivator" />
         </node>
       </node>
       <node concept="3Ug1$w" id="3VQuWXS0M0" role="3UgYNK">
