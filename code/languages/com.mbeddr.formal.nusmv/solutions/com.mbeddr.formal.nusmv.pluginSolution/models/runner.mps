@@ -2959,13 +2959,8 @@
           <node concept="3cpWsn" id="6f7vJBUkhQX" role="1Duv9x">
             <property role="TrG5h" value="i" />
             <node concept="10Oyi0" id="6f7vJBUki4X" role="1tU5fm" />
-            <node concept="3cpWs3" id="6f7vJBUkj8w" role="33vP2m">
-              <node concept="3cmrfG" id="6f7vJBUkjfU" role="3uHU7w">
-                <property role="3cmrfH" value="1" />
-              </node>
-              <node concept="37vLTw" id="6f7vJBUkikL" role="3uHU7B">
-                <ref role="3cqZAo" node="6f7vJBUk67N" resolve="index" />
-              </node>
+            <node concept="37vLTw" id="6f7vJBUkikL" role="33vP2m">
+              <ref role="3cqZAo" node="6f7vJBUk67N" resolve="index" />
             </node>
           </node>
           <node concept="3eOVzh" id="6f7vJBUkk2G" role="1Dwp0S">
