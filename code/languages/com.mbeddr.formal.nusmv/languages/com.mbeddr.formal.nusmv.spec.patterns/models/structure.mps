@@ -82,6 +82,7 @@
     <property role="3GE5qa" value="tl_patterns.scope" />
     <property role="TrG5h" value="GloballyScope" />
     <property role="34LRSv" value="globally" />
+    <property role="R4oN_" value="globally" />
     <ref role="1TJDcQ" node="6WmpcHMKsao" resolve="AbstractScope" />
   </node>
   <node concept="1TIwiD" id="6WmpcHMKwtr">
@@ -89,6 +90,7 @@
     <property role="3GE5qa" value="tl_patterns.scope" />
     <property role="TrG5h" value="AfterScope" />
     <property role="34LRSv" value="after Q" />
+    <property role="R4oN_" value="after Q" />
     <ref role="1TJDcQ" node="6WmpcHMKsao" resolve="AbstractScope" />
     <node concept="1TJgyj" id="6WmpcHMKwts" role="1TKVEi">
       <property role="IQ2ns" value="8004696212664092508" />
@@ -194,6 +196,7 @@
     <property role="3GE5qa" value="tl_patterns.property" />
     <property role="TrG5h" value="Precedence" />
     <property role="34LRSv" value="S precedes P" />
+    <property role="R4oN_" value="precendence" />
     <ref role="1TJDcQ" node="6WmpcHMKsaj" resolve="AbstractProperty" />
     <node concept="1TJgyj" id="6hWVnwAoCkU" role="1TKVEi">
       <property role="IQ2ns" value="7240923401200764218" />

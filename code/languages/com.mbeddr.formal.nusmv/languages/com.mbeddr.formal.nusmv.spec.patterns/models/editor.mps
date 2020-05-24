@@ -36,6 +36,7 @@
       </concept>
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
         <property id="1139746504291" name="imageFile" index="1ubRXE" />
+        <property id="1139858284555" name="descent" index="1$Qi42" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -104,6 +105,9 @@
         <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
       </node>
       <node concept="l2Vlx" id="6WmpcHMKsav" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="2bJTE4$9EAm" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="PropertiesImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6WmpcHMKwtk">
@@ -253,6 +257,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwAljdT" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="2bJTE4$9EAy" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="PropertiesImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwAlJAx">
     <property role="3GE5qa" value="tl_patterns.property" />
@@ -271,6 +278,9 @@
         <ref role="1NtTu8" to="aoh3:6WmpcHMKsak" resolve="scope" />
       </node>
       <node concept="l2Vlx" id="6hWVnwAlJAB" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="2bJTE4$9EAp" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="PropertiesImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwAoCkv">
@@ -292,6 +302,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwAoCk_" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="2bJTE4$9EAs" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="PropertiesImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwApz6H">
     <property role="3GE5qa" value="tl_patterns.property" />
@@ -312,6 +325,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwApz6O" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="2bJTE4$9EAv" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="PropertiesImage" />
+    </node>
   </node>
   <node concept="PKFIW" id="6hWVnwAIDw3">
     <property role="3GE5qa" value="tl_patterns.scope" />
@@ -325,6 +341,22 @@
       <node concept="2iRkQZ" id="6hWVnwAIHDV" role="2iSdaV" />
       <node concept="1u4HXA" id="6hWVnwAIDFG" role="3EZMnx">
         <property role="1ubRXE" value="${module}/images/scopes.gif" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2bJTE4$9EA5">
+    <property role="3GE5qa" value="tl_patterns.property" />
+    <property role="TrG5h" value="PropertiesImage" />
+    <ref role="1XX52x" to="aoh3:6WmpcHMKsaj" resolve="AbstractProperty" />
+    <node concept="3EZMnI" id="2bJTE4$9EA7" role="2wV5jI">
+      <node concept="3F0ifn" id="2bJTE4$9EA8" role="3EZMnx">
+        <property role="3F0ifm" value="Properties overview:" />
+      </node>
+      <node concept="3F0ifn" id="2bJTE4$9EA9" role="3EZMnx" />
+      <node concept="2iRkQZ" id="2bJTE4$9EAa" role="2iSdaV" />
+      <node concept="1u4HXA" id="2bJTE4$9EAb" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/images/tl_patterns_for_properties.png" />
+        <property role="1$Qi42" value="0" />
       </node>
     </node>
   </node>
