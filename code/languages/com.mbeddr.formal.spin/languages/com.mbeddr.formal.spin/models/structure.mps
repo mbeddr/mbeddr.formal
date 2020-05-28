@@ -103,6 +103,9 @@
     <node concept="PrWs8" id="407WgdX3PnK" role="PzmwI">
       <ref role="PrY4T" to="b19z:407WgdWZ7F6" resolve="IKeywordsProvider" />
     </node>
+    <node concept="PrWs8" id="4eQ$0qklSaU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="4Hts7PYnmJU" role="1TKVEi">
       <property role="IQ2ns" value="5430620409971960826" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -397,9 +400,6 @@
     </node>
     <node concept="PrWs8" id="2DjQaub_wF8" role="PzmwI">
       <ref role="PrY4T" node="4_pH3zvds0D" resolve="IPromelaModelContent" />
-    </node>
-    <node concept="PrWs8" id="2DjQaub_wFh" role="PzmwI">
-      <ref role="PrY4T" node="2DjQaub_wFg" resolve="IPromelaType" />
     </node>
   </node>
   <node concept="PlHQZ" id="2DjQaub_wFg">
@@ -697,9 +697,9 @@
   <node concept="1TIwiD" id="407WgdXfxhc">
     <property role="EcuMT" value="4613921340552778828" />
     <property role="3GE5qa" value="statements.builtin" />
-    <property role="TrG5h" value="RunStatement" />
+    <property role="TrG5h" value="RunOperator" />
     <property role="34LRSv" value="run" />
-    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="407WgdXfxhp" role="1TKVEi">
       <property role="IQ2ns" value="4613921340552778841" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1039,7 +1039,7 @@
     <property role="TrG5h" value="AndExpression" />
     <property role="34LRSv" value="&amp;&amp;" />
     <property role="R4oN_" value="and" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WnsxDR" resolve="AndExpressionBase" />
   </node>
   <node concept="1TIwiD" id="1vcsY83gDww">
     <property role="EcuMT" value="1714872972675815456" />
@@ -1047,7 +1047,7 @@
     <property role="TrG5h" value="OrExpression" />
     <property role="34LRSv" value="||" />
     <property role="R4oN_" value="or" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3Wnte8z" resolve="OrExpressionBase" />
   </node>
   <node concept="1TIwiD" id="1vcsY83hqpS">
     <property role="EcuMT" value="1714872972676015736" />

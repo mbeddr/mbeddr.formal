@@ -344,5 +344,31 @@
       <ref role="1YaFvo" to="o3hv:3VQuWXJCmb" resolve="Timeout" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4eQ$0qkftEx">
+    <property role="TrG5h" value="typeof_MtypeDeclaration" />
+    <property role="3GE5qa" value="top_level" />
+    <node concept="3clFbS" id="4eQ$0qkftEy" role="18ibNy">
+      <node concept="1Z5TYs" id="4eQ$0qkfv$n" role="3cqZAp">
+        <node concept="mw_s8" id="4eQ$0qkfwzF" role="1ZfhKB">
+          <node concept="2pJPEk" id="4eQ$0qkfwzB" role="mwGJk">
+            <node concept="2pJPED" id="4eQ$0qkfwNA" role="2pJPEn">
+              <ref role="2pJxaS" to="o3hv:2DjQaubBFMj" resolve="MtypeType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4eQ$0qkfv$q" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4eQ$0qkfuTo" role="mwGJk">
+            <node concept="1YBJjd" id="4eQ$0qkfvb0" role="1Z2MuG">
+              <ref role="1YBMHb" node="4eQ$0qkftE$" resolve="mtypeDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4eQ$0qkftE$" role="1YuTPh">
+      <property role="TrG5h" value="mtypeDeclaration" />
+      <ref role="1YaFvo" to="o3hv:2DjQaub_wF7" resolve="MtypeDeclaration" />
+    </node>
+  </node>
 </model>
 

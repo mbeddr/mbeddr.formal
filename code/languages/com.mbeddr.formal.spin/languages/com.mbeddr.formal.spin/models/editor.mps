@@ -1066,7 +1066,7 @@
   </node>
   <node concept="24kQdi" id="407WgdXfxhu">
     <property role="3GE5qa" value="statements.builtin" />
-    <ref role="1XX52x" to="o3hv:407WgdXfxhc" resolve="RunStatement" />
+    <ref role="1XX52x" to="o3hv:407WgdXfxhc" resolve="RunOperator" />
     <node concept="3EZMnI" id="407WgdXfxhD" role="2wV5jI">
       <node concept="3F0ifn" id="407WgdXfxhN" role="3EZMnx">
         <property role="3F0ifm" value="run" />
@@ -1098,12 +1098,6 @@
       <node concept="3F0ifn" id="407WgdXfxjM" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="407WgdXfxk8" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="407WgdXfxk$" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-        <node concept="11L4FC" id="407WgdXfxkY" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

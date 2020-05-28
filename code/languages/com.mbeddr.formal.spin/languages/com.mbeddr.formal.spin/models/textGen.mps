@@ -1149,7 +1149,7 @@
   </node>
   <node concept="WtQ9Q" id="407WgdXgsJy">
     <property role="3GE5qa" value="statements.builtin" />
-    <ref role="WuzLi" to="o3hv:407WgdXfxhc" resolve="RunStatement" />
+    <ref role="WuzLi" to="o3hv:407WgdXfxhc" resolve="RunOperator" />
     <node concept="11bSqf" id="407WgdXgsJz" role="11c4hB">
       <node concept="3clFbS" id="407WgdXgsJ$" role="2VODD2">
         <node concept="lc7rE" id="407WgdXgsJU" role="3cqZAp">
@@ -1183,7 +1183,7 @@
             </node>
           </node>
           <node concept="la8eA" id="407WgdXgxMF" role="lcghm">
-            <property role="lacIc" value=");" />
+            <property role="lacIc" value=")" />
           </node>
         </node>
       </node>
