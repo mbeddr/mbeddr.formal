@@ -76,7 +76,7 @@
       <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
         <child id="4613921340551921928" name="exp" index="XdJ0b" />
       </concept>
-      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunStatement" flags="ng" index="Xeulf">
+      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunOperator" flags="ng" index="Xeulf">
         <reference id="4613921340552778838" name="proc" index="Xeull" />
         <child id="4613921340552778841" name="args" index="Xeulq" />
       </concept>
@@ -681,22 +681,26 @@
         </node>
         <node concept="Xfmx0" id="5uFV_KLs6yq" role="2mpP4z">
           <node concept="2mpP4x" id="5uFV_KLs6ys" role="Xfmxj">
-            <node concept="Xeulf" id="5uFV_KLs6yN" role="2mpP4z">
-              <ref role="Xeull" node="5uFV_KLf1W4" resolve="A" />
-              <node concept="2m6Dwh" id="5uFV_KLs6yW" role="Xeulq">
-                <ref role="2m6DZP" node="5uFV_KLs6wK" resolve="a2b" />
-              </node>
-              <node concept="2m6Dwh" id="5uFV_KLs6z9" role="Xeulq">
-                <ref role="2m6DZP" node="5uFV_KLs6xs" resolve="b2a" />
+            <node concept="XdJ7S" id="4eQ$0qkqs3W" role="2mpP4z">
+              <node concept="Xeulf" id="4eQ$0qkqs3X" role="XdJ0b">
+                <ref role="Xeull" node="5uFV_KLf1W4" resolve="A" />
+                <node concept="2m6Dwh" id="4eQ$0qkqs3Y" role="Xeulq">
+                  <ref role="2m6DZP" node="5uFV_KLs6wK" resolve="a2b" />
+                </node>
+                <node concept="2m6Dwh" id="4eQ$0qkqs3Z" role="Xeulq">
+                  <ref role="2m6DZP" node="5uFV_KLs6xs" resolve="b2a" />
+                </node>
               </node>
             </node>
-            <node concept="Xeulf" id="5uFV_KLs6zf" role="2mpP4z">
-              <ref role="Xeull" node="5uFV_KLpYT1" resolve="B" />
-              <node concept="2m6Dwh" id="5uFV_KLs6zz" role="Xeulq">
-                <ref role="2m6DZP" node="5uFV_KLs6xs" resolve="b2a" />
-              </node>
-              <node concept="2m6Dwh" id="5uFV_KLs6zN" role="Xeulq">
-                <ref role="2m6DZP" node="5uFV_KLs6wK" resolve="a2b" />
+            <node concept="XdJ7S" id="4eQ$0qkqs40" role="2mpP4z">
+              <node concept="Xeulf" id="4eQ$0qkqs41" role="XdJ0b">
+                <ref role="Xeull" node="5uFV_KLpYT1" resolve="B" />
+                <node concept="2m6Dwh" id="4eQ$0qkqs42" role="Xeulq">
+                  <ref role="2m6DZP" node="5uFV_KLs6xs" resolve="b2a" />
+                </node>
+                <node concept="2m6Dwh" id="4eQ$0qkqs43" role="Xeulq">
+                  <ref role="2m6DZP" node="5uFV_KLs6wK" resolve="a2b" />
+                </node>
               </node>
             </node>
           </node>

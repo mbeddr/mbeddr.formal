@@ -51,7 +51,7 @@
       <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
         <child id="4613921340551921928" name="exp" index="XdJ0b" />
       </concept>
-      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunStatement" flags="ng" index="Xeulf">
+      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunOperator" flags="ng" index="Xeulf">
         <reference id="4613921340552778838" name="proc" index="Xeull" />
         <child id="4613921340552778841" name="args" index="Xeulq" />
       </concept>
@@ -214,22 +214,26 @@
             <node concept="2xNmgO" id="4eQ$0qkfEon" role="1AE55t" />
           </node>
         </node>
-        <node concept="Xeulf" id="4eQ$0qkfGQn" role="2mpP4z">
-          <ref role="Xeull" node="3VQuWWZYGs" resolve="ping_component" />
-          <node concept="2m6Dwh" id="4eQ$0qkfH_S" role="Xeulq">
-            <ref role="2m6DZP" node="4eQ$0qkfEoj" resolve="pong_to_ping" />
-          </node>
-          <node concept="2m6Dwh" id="4eQ$0qkfIlp" role="Xeulq">
-            <ref role="2m6DZP" node="4eQ$0qkfk2V" resolve="ping_to_pong" />
+        <node concept="XdJ7S" id="4eQ$0qkqs44" role="2mpP4z">
+          <node concept="Xeulf" id="4eQ$0qkqs45" role="XdJ0b">
+            <ref role="Xeull" node="3VQuWWZYGs" resolve="ping_component" />
+            <node concept="2m6Dwh" id="4eQ$0qkqs46" role="Xeulq">
+              <ref role="2m6DZP" node="4eQ$0qkfEoj" resolve="pong_to_ping" />
+            </node>
+            <node concept="2m6Dwh" id="4eQ$0qkqs47" role="Xeulq">
+              <ref role="2m6DZP" node="4eQ$0qkfk2V" resolve="ping_to_pong" />
+            </node>
           </node>
         </node>
-        <node concept="Xeulf" id="4eQ$0qkfI_f" role="2mpP4z">
-          <ref role="Xeull" node="4eQ$0qkeXd$" resolve="pong_component" />
-          <node concept="2m6Dwh" id="4eQ$0qkfJOp" role="Xeulq">
-            <ref role="2m6DZP" node="4eQ$0qkfk2V" resolve="ping_to_pong" />
-          </node>
-          <node concept="2m6Dwh" id="4eQ$0qkfKzT" role="Xeulq">
-            <ref role="2m6DZP" node="4eQ$0qkfEoj" resolve="pong_to_ping" />
+        <node concept="XdJ7S" id="4eQ$0qkqs48" role="2mpP4z">
+          <node concept="Xeulf" id="4eQ$0qkqs49" role="XdJ0b">
+            <ref role="Xeull" node="4eQ$0qkeXd$" resolve="pong_component" />
+            <node concept="2m6Dwh" id="4eQ$0qkqs4a" role="Xeulq">
+              <ref role="2m6DZP" node="4eQ$0qkfk2V" resolve="ping_to_pong" />
+            </node>
+            <node concept="2m6Dwh" id="4eQ$0qkqs4b" role="Xeulq">
+              <ref role="2m6DZP" node="4eQ$0qkfEoj" resolve="pong_to_ping" />
+            </node>
           </node>
         </node>
       </node>

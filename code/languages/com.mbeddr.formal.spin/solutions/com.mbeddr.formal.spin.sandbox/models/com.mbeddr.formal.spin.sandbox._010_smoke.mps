@@ -76,7 +76,7 @@
       <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
         <child id="4613921340551921928" name="exp" index="XdJ0b" />
       </concept>
-      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunStatement" flags="ng" index="Xeulf">
+      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunOperator" flags="ng" index="Xeulf">
         <reference id="4613921340552778838" name="proc" index="Xeull" />
         <child id="4613921340552778841" name="args" index="Xeulq" />
       </concept>
@@ -375,22 +375,26 @@
         </node>
         <node concept="Xfmx0" id="407WgdXfxgF" role="2mpP4z">
           <node concept="2mpP4x" id="407WgdXfxgH" role="Xfmxj">
-            <node concept="Xeulf" id="407WgdXgm$8" role="2mpP4z">
-              <ref role="Xeull" node="407WgdXbwdz" resolve="P" />
-              <node concept="2IPVmt" id="407WgdXgm$g" role="Xeulq">
-                <property role="2IPVms" value="1" />
-              </node>
-              <node concept="2IPVmt" id="407WgdXgm$s" role="Xeulq">
-                <property role="2IPVms" value="10" />
+            <node concept="XdJ7S" id="4eQ$0qkqs3O" role="2mpP4z">
+              <node concept="Xeulf" id="4eQ$0qkqs3P" role="XdJ0b">
+                <ref role="Xeull" node="407WgdXbwdz" resolve="P" />
+                <node concept="2IPVmt" id="4eQ$0qkqs3Q" role="Xeulq">
+                  <property role="2IPVms" value="1" />
+                </node>
+                <node concept="2IPVmt" id="4eQ$0qkqs3R" role="Xeulq">
+                  <property role="2IPVms" value="10" />
+                </node>
               </node>
             </node>
-            <node concept="Xeulf" id="407WgdXgm$S" role="2mpP4z">
-              <ref role="Xeull" node="407WgdXbwdz" resolve="P" />
-              <node concept="2IPVmt" id="407WgdXgm_6" role="Xeulq">
-                <property role="2IPVms" value="2" />
-              </node>
-              <node concept="2IPVmt" id="407WgdXgm_p" role="Xeulq">
-                <property role="2IPVms" value="15" />
+            <node concept="XdJ7S" id="4eQ$0qkqs3S" role="2mpP4z">
+              <node concept="Xeulf" id="4eQ$0qkqs3T" role="XdJ0b">
+                <ref role="Xeull" node="407WgdXbwdz" resolve="P" />
+                <node concept="2IPVmt" id="4eQ$0qkqs3U" role="Xeulq">
+                  <property role="2IPVms" value="2" />
+                </node>
+                <node concept="2IPVmt" id="4eQ$0qkqs3V" role="Xeulq">
+                  <property role="2IPVms" value="15" />
+                </node>
               </node>
             </node>
           </node>

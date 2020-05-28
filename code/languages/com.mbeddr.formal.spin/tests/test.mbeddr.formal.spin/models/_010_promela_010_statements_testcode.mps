@@ -70,7 +70,7 @@
       <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
         <child id="4613921340551921928" name="exp" index="XdJ0b" />
       </concept>
-      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunStatement" flags="ng" index="Xeulf">
+      <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunOperator" flags="ng" index="Xeulf">
         <reference id="4613921340552778838" name="proc" index="Xeull" />
         <child id="4613921340552778841" name="args" index="Xeulq" />
       </concept>
@@ -484,16 +484,20 @@
     <node concept="2xLtbV" id="70QLBAKuski" role="2mr7gi" />
     <node concept="2mr7gl" id="70QLBAKuskt" role="2mr7gi">
       <node concept="2mpP4x" id="70QLBAKuskv" role="2mpP4J">
-        <node concept="Xeulf" id="70QLBAKuskR" role="2mpP4z">
-          <ref role="Xeull" node="70QLBAKuska" resolve="Hello" />
-          <node concept="2IPVmt" id="XLqv_rqY57" role="Xeulq">
-            <property role="2IPVms" value="2" />
+        <node concept="XdJ7S" id="4eQ$0qkqs4g" role="2mpP4z">
+          <node concept="Xeulf" id="4eQ$0qkqs4h" role="XdJ0b">
+            <ref role="Xeull" node="70QLBAKuska" resolve="Hello" />
+            <node concept="2IPVmt" id="4eQ$0qkqs4i" role="Xeulq">
+              <property role="2IPVms" value="2" />
+            </node>
           </node>
         </node>
-        <node concept="Xeulf" id="XLqv_rqY7t" role="2mpP4z">
-          <ref role="Xeull" node="70QLBAKuska" resolve="Hello" />
-          <node concept="2IPVmt" id="XLqv_rqY7E" role="Xeulq">
-            <property role="2IPVms" value="3" />
+        <node concept="XdJ7S" id="4eQ$0qkqs4j" role="2mpP4z">
+          <node concept="Xeulf" id="4eQ$0qkqs4k" role="XdJ0b">
+            <ref role="Xeull" node="70QLBAKuska" resolve="Hello" />
+            <node concept="2IPVmt" id="4eQ$0qkqs4l" role="Xeulq">
+              <property role="2IPVms" value="3" />
+            </node>
           </node>
         </node>
         <node concept="2xKSXg" id="XLqv_rqY5k" role="2mpP4z">
