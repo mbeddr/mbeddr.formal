@@ -306,8 +306,8 @@
                                 </node>
                                 <node concept="2Xjw5R" id="4sMKqP$UkxK" role="2OqNvi">
                                   <node concept="1xMEDy" id="4sMKqP$UkxM" role="1xVPHs">
-                                    <node concept="chp4Y" id="4sMKqP$Uk_p" role="ri$Ld">
-                                      <ref role="cht4Q" to="o3hv:4_pH3zvfIn7" resolve="ProcType" />
+                                    <node concept="chp4Y" id="5mrC_4tzDLB" role="ri$Ld">
+                                      <ref role="cht4Q" to="o3hv:4_pH3zvds0L" resolve="AbstractProcessBase" />
                                     </node>
                                   </node>
                                 </node>

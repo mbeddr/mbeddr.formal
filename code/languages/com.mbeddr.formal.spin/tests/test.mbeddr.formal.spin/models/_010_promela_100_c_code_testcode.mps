@@ -74,6 +74,7 @@
       <concept id="5285453794051997745" name="com.mbeddr.formal.spin.structure.AbstractProcessBase" flags="ng" index="2mr7g9">
         <child id="5285453794052597015" name="body" index="2mpP4J" />
       </concept>
+      <concept id="5285453794051997741" name="com.mbeddr.formal.spin.structure.Init" flags="ng" index="2mr7gl" />
       <concept id="5285453794051997733" name="com.mbeddr.formal.spin.structure.PromelaModel" flags="ng" index="2mr7gt">
         <child id="5285453794051997738" name="content" index="2mr7gi" />
       </concept>
@@ -690,6 +691,64 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2mr7gt" id="5mrC_4tADua">
+    <property role="TrG5h" value="_100_c_code_init_var_ref" />
+    <node concept="2xLtbV" id="5mrC_4tAFOn" role="2mr7gi" />
+    <node concept="2mr7gl" id="5mrC_4tAFP8" role="2mr7gi">
+      <node concept="2mpP4x" id="5mrC_4tAFPa" role="2mpP4J">
+        <node concept="2m6DXv" id="5mrC_4tAG6f" role="2mpP4z">
+          <property role="TrG5h" value="var" />
+          <node concept="X9sYF" id="5mrC_4tAG6g" role="1a0DGc" />
+        </node>
+        <node concept="1a7Kpe" id="5mrC_4tAG6h" role="2mpP4z">
+          <node concept="2m6Dwh" id="5mrC_4tAG6i" role="1a7Kpf">
+            <ref role="2m6DZP" node="5mrC_4tAG6f" resolve="var" />
+          </node>
+          <node concept="2IPVmt" id="5mrC_4tAG6j" role="1a7Kpb">
+            <property role="2IPVms" value="1" />
+          </node>
+          <node concept="2IPVmt" id="5mrC_4tAG6k" role="1a7Kp2">
+            <property role="2IPVms" value="25" />
+          </node>
+        </node>
+        <node concept="Sp3le" id="5mrC_4tAG6l" role="2mpP4z">
+          <node concept="2mpP4x" id="5mrC_4tAG6m" role="Sp3lf">
+            <node concept="1BCXOe" id="5mrC_4tAG6n" role="2mpP4z">
+              <node concept="kwC56" id="5mrC_4tAG6o" role="1BCXOa">
+                <node concept="1a66CA" id="5mrC_4tAG6p" role="kwC57">
+                  <ref role="1a66Jj" node="5mrC_4tAFP8" />
+                  <node concept="2m6Dwh" id="5mrC_4tAG6q" role="32OYtT">
+                    <ref role="2m6DZP" node="5mrC_4tAG6f" resolve="var" />
+                  </node>
+                </node>
+                <node concept="2H9FEB" id="5mrC_4tAG6r" role="kwC55">
+                  <node concept="1a66CA" id="5mrC_4tAG6s" role="2H9Iav">
+                    <ref role="1a66Jj" node="5mrC_4tAFP8" />
+                    <node concept="2m6Dwh" id="5mrC_4tAG6t" role="32OYtT">
+                      <ref role="2m6DZP" node="5mrC_4tAG6f" resolve="var" />
+                    </node>
+                  </node>
+                  <node concept="2IPVmt" id="5mrC_4tAG6u" role="2H9Ial">
+                    <property role="2IPVms" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2xKSXg" id="5mrC_4tAG6v" role="2mpP4z">
+          <node concept="2xSVM6" id="5mrC_4tAG6w" role="2xKS2k">
+            <node concept="2IPVmt" id="5mrC_4tAG6x" role="2H9Ial">
+              <property role="2IPVms" value="21" />
+            </node>
+            <node concept="2m6Dwh" id="5mrC_4tAG6y" role="2H9Iav">
+              <ref role="2m6DZP" node="5mrC_4tAG6f" resolve="var" />
             </node>
           </node>
         </node>

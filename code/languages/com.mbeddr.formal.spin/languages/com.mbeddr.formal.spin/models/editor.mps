@@ -15,8 +15,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="oqu9" ref="r:55c09d3a-85de-4c18-ab69-cda997480b6a(com.mbeddr.formal.spin.behavior)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1305,9 +1305,21 @@
         <node concept="1iCGBv" id="1ZejHLlPykx" role="3EZMnx">
           <ref role="1NtTu8" to="o3hv:1ZejHLlPykf" resolve="proc" />
           <node concept="1sVBvm" id="1ZejHLlPykz" role="1sWHZn">
-            <node concept="3F0A7n" id="1ZejHLlPykV" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="1HlG4h" id="5mrC_4t$4UG" role="2wV5jI">
+              <node concept="1HfYo3" id="5mrC_4t$4UI" role="1HlULh">
+                <node concept="3TQlhw" id="5mrC_4t$4UK" role="1Hhtcw">
+                  <node concept="3clFbS" id="5mrC_4t$4UM" role="2VODD2">
+                    <node concept="3clFbF" id="5mrC_4t$5uV" role="3cqZAp">
+                      <node concept="2OqwBi" id="5mrC_4t$5GR" role="3clFbG">
+                        <node concept="pncrf" id="5mrC_4t$5uU" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="5mrC_4t$6iV" role="2OqNvi">
+                          <ref role="37wK5l" to="oqu9:5mrC_4tzNEH" resolve="processName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

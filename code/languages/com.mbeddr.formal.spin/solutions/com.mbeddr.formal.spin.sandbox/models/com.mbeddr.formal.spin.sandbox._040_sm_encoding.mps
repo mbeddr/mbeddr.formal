@@ -49,6 +49,7 @@
       <concept id="3050019586773371914" name="com.mbeddr.formal.spin.structure.PromelaGlobalVariableDeclaration" flags="ng" index="2xNTiH" />
       <concept id="3050019586774684038" name="com.mbeddr.formal.spin.structure.GreaterExpression" flags="ng" index="2xSS$x" />
       <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
+      <concept id="3050019586774688801" name="com.mbeddr.formal.spin.structure.NotEqualsExpression" flags="ng" index="2xSVM6" />
       <concept id="3050019586773893361" name="com.mbeddr.formal.spin.structure.BreakChoice" flags="ng" index="2xXTxm" />
       <concept id="3050019586773893583" name="com.mbeddr.formal.spin.structure.Else" flags="ng" index="2xXT_C" />
       <concept id="3050019586773884899" name="com.mbeddr.formal.spin.structure.DoStatement" flags="ng" index="2xXWt4">
@@ -75,7 +76,6 @@
       <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
-      <concept id="2291855968616790990" name="com.mbeddr.formal.spin.structure.NotExpression" flags="ng" index="1a3nki" />
       <concept id="2291855968616524582" name="com.mbeddr.formal.spin.structure.SkipStatement" flags="ng" index="1asmnU" />
       <concept id="1112787102640204567" name="com.mbeddr.formal.spin.structure.ChoiceStatement" flags="ng" index="1kW0bI" />
       <concept id="6785924186075445303" name="com.mbeddr.formal.spin.structure.AssignmentExpression" flags="ng" index="1pV$CJ" />
@@ -102,6 +102,11 @@
         <child id="6317404982043983617" name="tpe" index="1AE55t" />
       </concept>
       <concept id="6317404982043467447" name="com.mbeddr.formal.spin.structure.ChanType" flags="ng" index="1Bk33F" />
+    </language>
+    <language id="bd54ef69-17ec-411b-8f49-485702e74565" name="com.mbeddr.formal.spin.ext">
+      <concept id="6377880871154153670" name="com.mbeddr.formal.spin.ext.structure.LogWitnessStatement" flags="ng" index="Sp30q">
+        <child id="6377880871154154774" name="exp" index="Sp3na" />
+      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
@@ -211,6 +216,11 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="Sp30q" id="5mrC_4tyNmr" role="2mpP4z">
+                      <node concept="2m6Dwh" id="5mrC_4tyWYS" role="Sp3na">
+                        <ref role="2m6DZP" node="4eQ$0qklnHF" resolve="in_val" />
+                      </node>
+                    </node>
                     <node concept="XdJ7S" id="4eQ$0qkksRC" role="2mpP4z">
                       <node concept="1AC3W8" id="4eQ$0qkktnn" role="XdJ0b">
                         <node concept="2m6Dw2" id="4eQ$0qkksRA" role="1AC3W9">
@@ -251,6 +261,11 @@
                         <node concept="X83sx" id="4eQ$0qklvzz" role="2H9Iav">
                           <ref role="2m6DZP" node="4eQ$0qkjTRI" resolve="crt_state" />
                         </node>
+                      </node>
+                    </node>
+                    <node concept="Sp30q" id="5mrC_4tyP$J" role="2mpP4z">
+                      <node concept="2m6Dwh" id="5mrC_4tyXuP" role="Sp3na">
+                        <ref role="2m6DZP" node="4eQ$0qklnHF" resolve="in_val" />
                       </node>
                     </node>
                     <node concept="XdJ7S" id="4eQ$0qkl_je" role="2mpP4z">
@@ -297,6 +312,11 @@
               <property role="2IPVms" value="0" />
             </node>
             <node concept="2xNmgO" id="4eQ$0qkks83" role="1AE55t" />
+          </node>
+        </node>
+        <node concept="Sp30q" id="5mrC_4tzv0b" role="2mpP4z">
+          <node concept="2m6Dwh" id="5mrC_4tzvgK" role="Sp3na">
+            <ref role="2m6DZP" node="4eQ$0qkjkOo" resolve="in" />
           </node>
         </node>
         <node concept="XdJ7S" id="4eQ$0qkqs4c" role="2mpP4z">
@@ -386,15 +406,13 @@
     <node concept="1zuO5m" id="4eQ$0qkkBmo" role="2mr7gi">
       <property role="TrG5h" value="RUNNING_IS_NOT_REACHED_FAILS" />
       <node concept="1zsrBC" id="4eQ$0qkkGke" role="1zuO54">
-        <node concept="1a3nki" id="4eQ$0qkkIy6" role="1zspGT">
-          <node concept="32OYss" id="4eQ$0qkkKhs" role="32OYtT">
-            <node concept="2xSSBo" id="4eQ$0qkkKht" role="32OYtT">
-              <node concept="X83sx" id="4eQ$0qkkJ1K" role="2H9Iav">
-                <ref role="2m6DZP" node="4eQ$0qkjTRI" resolve="crt_state" />
-              </node>
-              <node concept="2xMpm2" id="4eQ$0qkkJxU" role="2H9Ial">
-                <ref role="2xMpmb" node="4eQ$0qkk8j$" resolve="running_state" />
-              </node>
+        <node concept="32OYss" id="4eQ$0qkkKhs" role="1zspGT">
+          <node concept="2xSVM6" id="5mrC_4tzkrV" role="32OYtT">
+            <node concept="X83sx" id="4eQ$0qkkJ1K" role="2H9Iav">
+              <ref role="2m6DZP" node="4eQ$0qkjTRI" resolve="crt_state" />
+            </node>
+            <node concept="2xMpm2" id="4eQ$0qkkJxU" role="2H9Ial">
+              <ref role="2xMpmb" node="4eQ$0qkk8j$" resolve="running_state" />
             </node>
           </node>
         </node>

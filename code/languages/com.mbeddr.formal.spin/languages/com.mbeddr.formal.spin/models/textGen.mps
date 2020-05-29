@@ -12,6 +12,7 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="oqu9" ref="r:55c09d3a-85de-4c18-ab69-cda997480b6a(com.mbeddr.formal.spin.behavior)" implicit="true" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1370,8 +1371,8 @@
                   <ref role="3Tt5mk" to="o3hv:1ZejHLlPykf" resolve="proc" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="1ZejHLlPzpt" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2qgKlT" id="5mrC_4tAtyh" role="2OqNvi">
+                <ref role="37wK5l" to="oqu9:5mrC_4tzNEH" resolve="processName" />
               </node>
             </node>
           </node>
