@@ -156,6 +156,9 @@
     <node concept="PrWs8" id="4_pH3zvfIn8" role="PzmwI">
       <ref role="PrY4T" node="4_pH3zvds0D" resolve="IPromelaModelContent" />
     </node>
+    <node concept="PrWs8" id="3q_k9iFGKoR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4_pH3zvfIkp">
     <property role="EcuMT" value="5285453794052597017" />
@@ -431,7 +434,7 @@
   <node concept="1TIwiD" id="2DjQaubB4Ka">
     <property role="EcuMT" value="3050019586773371914" />
     <property role="3GE5qa" value="top_level" />
-    <property role="TrG5h" value="PromelaGlobalVariableDeclaration" />
+    <property role="TrG5h" value="GlobalVariableDeclaration" />
     <property role="34LRSv" value="global variable" />
     <property role="R4oN_" value="global variable declaration in Promela" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -856,6 +859,9 @@
       <property role="20kJfa" value="proc" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4_pH3zvds0L" resolve="AbstractProcessBase" />
+    </node>
+    <node concept="PrWs8" id="3q_k9iFHbyj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ZejHLlQMY8">
@@ -1487,6 +1493,14 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3VQuWX0ufp" resolve="InlineDefinition" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3q_k9iFHWLk">
+    <property role="EcuMT" value="3937642048671698004" />
+    <property role="3GE5qa" value="c.expressions" />
+    <property role="TrG5h" value="Now" />
+    <property role="34LRSv" value="now" />
+    <property role="R4oN_" value="now" />
+    <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
 </model>
 

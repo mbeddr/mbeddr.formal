@@ -113,7 +113,6 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
-      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
@@ -179,35 +178,8 @@
     <ref role="1M2myG" to="o3hv:4_pH3zvgMKD" resolve="LocalVarRef" />
     <node concept="1N5Pfh" id="2DjQaubG2BP" role="1Mr941">
       <ref role="1N5Vy1" to="o3hv:4_pH3zvgMJd" resolve="var" />
-      <node concept="3dgokm" id="2DjQaubG2BQ" role="1N6uqs">
-        <node concept="3clFbS" id="2DjQaubG2BR" role="2VODD2">
-          <node concept="3clFbF" id="2DjQaubG2BS" role="3cqZAp">
-            <node concept="2YIFZM" id="2DjQaubG2BT" role="3clFbG">
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <node concept="2OqwBi" id="2DjQaubG2BU" role="37wK5m">
-                <node concept="2OqwBi" id="2DjQaubG2BV" role="2Oq$k0">
-                  <node concept="2rP1CM" id="2DjQaubG2BW" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="2DjQaubG2BX" role="2OqNvi">
-                    <node concept="1xMEDy" id="2DjQaubG2BY" role="1xVPHs">
-                      <node concept="chp4Y" id="5uFV_KKYVtY" role="ri$Ld">
-                        <ref role="cht4Q" to="o3hv:4_pH3zvds0L" resolve="AbstractProcessBase" />
-                      </node>
-                    </node>
-                    <node concept="1xIGOp" id="2DjQaubG2C0" role="1xVPHs" />
-                  </node>
-                </node>
-                <node concept="2Rf3mk" id="2DjQaubG3lV" role="2OqNvi">
-                  <node concept="1xMEDy" id="2DjQaubG3lX" role="1xVPHs">
-                    <node concept="chp4Y" id="2DjQaubG3se" role="ri$Ld">
-                      <ref role="cht4Q" to="o3hv:4_pH3zvgMHB" resolve="PromelaLocalVariableDeclaration" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="1dDu$B" id="3q_k9iFGVQV" role="1N6uqs">
+        <ref role="1dDu$A" to="o3hv:4_pH3zvgMHB" resolve="PromelaLocalVariableDeclaration" />
       </node>
     </node>
   </node>
@@ -216,28 +188,8 @@
     <ref role="1M2myG" to="o3hv:407WgdX9Woy" resolve="GlobalVarRef" />
     <node concept="1N5Pfh" id="407WgdX9Wpr" role="1Mr941">
       <ref role="1N5Vy1" to="o3hv:4_pH3zvgMJd" resolve="var" />
-      <node concept="3dgokm" id="407WgdX9Wpu" role="1N6uqs">
-        <node concept="3clFbS" id="407WgdX9Wpv" role="2VODD2">
-          <node concept="3clFbF" id="407WgdX9Wsq" role="3cqZAp">
-            <node concept="2YIFZM" id="407WgdX9Wxl" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="407WgdX9Xj$" role="37wK5m">
-                <node concept="2OqwBi" id="407WgdX9WML" role="2Oq$k0">
-                  <node concept="2rP1CM" id="407WgdX9WA4" role="2Oq$k0" />
-                  <node concept="2Rxl7S" id="407WgdX9X39" role="2OqNvi" />
-                </node>
-                <node concept="2Rf3mk" id="407WgdX9X$i" role="2OqNvi">
-                  <node concept="1xMEDy" id="407WgdX9X$k" role="1xVPHs">
-                    <node concept="chp4Y" id="407WgdX9XEr" role="ri$Ld">
-                      <ref role="cht4Q" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="1dDu$B" id="3q_k9iFL3WT" role="1N6uqs">
+        <ref role="1dDu$A" to="o3hv:2DjQaubB4Ka" resolve="GlobalVariableDeclaration" />
       </node>
     </node>
   </node>

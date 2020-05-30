@@ -713,7 +713,7 @@
   </node>
   <node concept="WtQ9Q" id="2DjQaubB4M3">
     <property role="3GE5qa" value="top_level" />
-    <ref role="WuzLi" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
+    <ref role="WuzLi" to="o3hv:2DjQaubB4Ka" resolve="GlobalVariableDeclaration" />
     <node concept="11bSqf" id="2DjQaubB4M4" role="11c4hB">
       <node concept="3clFbS" id="2DjQaubB4M5" role="2VODD2">
         <node concept="lc7rE" id="2DjQaubB4ME" role="3cqZAp">
@@ -2094,6 +2094,27 @@
         <node concept="lc7rE" id="3VQuWXQE3H" role="3cqZAp">
           <node concept="la8eA" id="3VQuWXQEjN" role="lcghm">
             <property role="lacIc" value="timeout" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3q_k9iFI5NR">
+    <property role="3GE5qa" value="c.expressions" />
+    <ref role="WuzLi" to="o3hv:3q_k9iFHWLk" resolve="Now" />
+    <node concept="11bSqf" id="3q_k9iFI5NS" role="11c4hB">
+      <node concept="3clFbS" id="3q_k9iFI5NT" role="2VODD2">
+        <node concept="lc7rE" id="3q_k9iFI6nc" role="3cqZAp">
+          <node concept="la8eA" id="3q_k9iFI6Uy" role="lcghm">
+            <property role="lacIc" value="now." />
+          </node>
+          <node concept="l9hG8" id="3q_k9iFI7uE" role="lcghm">
+            <node concept="2OqwBi" id="3q_k9iFI8bN" role="lb14g">
+              <node concept="117lpO" id="3q_k9iFI82z" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3q_k9iFI8HQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

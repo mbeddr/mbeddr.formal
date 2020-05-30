@@ -720,7 +720,7 @@
   </node>
   <node concept="24kQdi" id="2DjQaubB4KS">
     <property role="3GE5qa" value="top_level" />
-    <ref role="1XX52x" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
+    <ref role="1XX52x" to="o3hv:2DjQaubB4Ka" resolve="GlobalVariableDeclaration" />
     <node concept="3EZMnI" id="2DjQaubB4L3" role="2wV5jI">
       <node concept="1kIj98" id="2DjQaubB4L4" role="3EZMnx">
         <node concept="3F1sOY" id="2DjQaubB4L5" role="1kIj9b">
@@ -1324,7 +1324,7 @@
           </node>
         </node>
         <node concept="3F0ifn" id="1ZejHLlPylj" role="3EZMnx">
-          <property role="3F0ifm" value="." />
+          <property role="3F0ifm" value="-&gt;" />
           <node concept="11L4FC" id="1ZejHLlPymk" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -1930,7 +1930,7 @@
   </node>
   <node concept="3p36aQ" id="XLqv_ruwdE">
     <property role="3GE5qa" value="top_level" />
-    <ref role="aqKnT" to="o3hv:2DjQaubB4Ka" resolve="PromelaGlobalVariableDeclaration" />
+    <ref role="aqKnT" to="o3hv:2DjQaubB4Ka" resolve="GlobalVariableDeclaration" />
   </node>
   <node concept="24kQdi" id="XLqv_rwmGo">
     <property role="3GE5qa" value="statements.if_do" />
@@ -2179,6 +2179,28 @@
         </node>
       </node>
       <node concept="l2Vlx" id="3VQuWXN4yw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3q_k9iFI1Gn">
+    <property role="3GE5qa" value="c.expressions" />
+    <ref role="1XX52x" to="o3hv:3q_k9iFHWLk" resolve="Now" />
+    <node concept="3EZMnI" id="3q_k9iFI1XT" role="2wV5jI">
+      <node concept="3F0ifn" id="3q_k9iFI2fw" role="3EZMnx">
+        <property role="3F0ifm" value="now" />
+      </node>
+      <node concept="3F0ifn" id="3q_k9iFI2fA" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="3q_k9iFI4rN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3q_k9iFI4Ho" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3q_k9iFI2MI" role="3EZMnx">
+        <ref role="1NtTu8" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+      </node>
+      <node concept="l2Vlx" id="3q_k9iFI1XW" role="2iSdaV" />
     </node>
   </node>
 </model>
