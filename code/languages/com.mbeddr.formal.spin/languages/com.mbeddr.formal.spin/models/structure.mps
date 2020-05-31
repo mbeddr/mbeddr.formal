@@ -369,6 +369,7 @@
     <property role="3GE5qa" value="statements.builtin" />
     <property role="TrG5h" value="AssertStatement" />
     <property role="34LRSv" value="assert" />
+    <property role="R4oN_" value="asserts a predicate" />
     <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
     <node concept="1TJgyj" id="2DjQaub$5wN" role="1TKVEi">
       <property role="IQ2ns" value="3050019586772588595" />

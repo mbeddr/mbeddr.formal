@@ -448,7 +448,7 @@
             </node>
           </node>
           <node concept="la8eA" id="4_pH3zvm$IJ" role="lcghm">
-            <property role="lacIc" value=");" />
+            <property role="lacIc" value=")" />
           </node>
         </node>
       </node>
