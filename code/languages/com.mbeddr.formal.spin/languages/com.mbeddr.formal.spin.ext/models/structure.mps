@@ -14,6 +14,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -29,6 +30,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -39,7 +43,8 @@
     <property role="TrG5h" value="LogWitnessStatement" />
     <property role="34LRSv" value="log witness" />
     <property role="R4oN_" value="log a witness in trail" />
-    <ref role="1TJDcQ" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
+    <property role="3GE5qa" value="logging" />
+    <ref role="1TJDcQ" node="1J1L1DAOVn" resolve="LoggingStatementBase" />
     <node concept="1TJgyj" id="5y2MdLwTJOm" role="1TKVEi">
       <property role="IQ2ns" value="6377880871154154774" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -58,6 +63,28 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cond" />
       <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1J1L1DAOVn">
+    <property role="EcuMT" value="31251489487539927" />
+    <property role="TrG5h" value="LoggingStatementBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="logging" />
+    <ref role="1TJDcQ" to="o3hv:4_pH3zvfIkq" resolve="Statement" />
+  </node>
+  <node concept="1TIwiD" id="1J1L1DB1MI">
+    <property role="EcuMT" value="31251489487592622" />
+    <property role="3GE5qa" value="logging" />
+    <property role="TrG5h" value="LogSearchStatement" />
+    <property role="34LRSv" value="log search" />
+    <property role="R4oN_" value="logs every step when this location is reached" />
+    <ref role="1TJDcQ" node="1J1L1DAOVn" resolve="LoggingStatementBase" />
+    <node concept="1TJgyj" id="1J1L1DB85f" role="1TKVEi">
+      <property role="IQ2ns" value="31251489487618383" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
