@@ -7,7 +7,8 @@
   </languages>
   <imports>
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
-    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -75,10 +76,31 @@
   </node>
   <node concept="1TIwiD" id="1J1L1DB1MI">
     <property role="EcuMT" value="31251489487592622" />
-    <property role="3GE5qa" value="logging" />
-    <property role="TrG5h" value="LogSearchStatement" />
-    <property role="34LRSv" value="log search" />
-    <property role="R4oN_" value="logs every step when this location is reached" />
+    <property role="3GE5qa" value="logging.search" />
+    <property role="TrG5h" value="LogSearchToConsole" />
+    <property role="34LRSv" value="log search to console" />
+    <property role="R4oN_" value="logs every step when this location is reached to the console" />
+    <ref role="1TJDcQ" node="4ZxQD5xSKWt" resolve="LogSearchBase" />
+  </node>
+  <node concept="1TIwiD" id="4ZxQD5xSIKs">
+    <property role="EcuMT" value="5756122116703579164" />
+    <property role="3GE5qa" value="logging.search" />
+    <property role="TrG5h" value="LogSearchToFile" />
+    <property role="34LRSv" value="log search to file" />
+    <property role="R4oN_" value="logs every step when this location is reached to a file" />
+    <ref role="1TJDcQ" node="4ZxQD5xSKWt" resolve="LogSearchBase" />
+    <node concept="1TJgyj" id="4ZxQD5xT6ZG" role="1TKVEi">
+      <property role="IQ2ns" value="5756122116703678444" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="file" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4ZxQD5xSKWt">
+    <property role="EcuMT" value="5756122116703588125" />
+    <property role="3GE5qa" value="logging.search" />
+    <property role="TrG5h" value="LogSearchBase" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="1J1L1DAOVn" resolve="LoggingStatementBase" />
     <node concept="1TJgyj" id="1J1L1DB85f" role="1TKVEi">
       <property role="IQ2ns" value="31251489487618383" />

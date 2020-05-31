@@ -6,13 +6,15 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="dinh" ref="r:053017f6-a9b2-4735-890d-9c4181609d2f(com.mbeddr.formal.spin.ext.structure)" implicit="true" />
+    <import index="dinh" ref="r:053017f6-a9b2-4735-890d-9c4181609d2f(com.mbeddr.formal.spin.ext.structure)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -127,8 +129,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="1J1L1DBbDc">
-    <property role="3GE5qa" value="logging" />
-    <ref role="1XX52x" to="dinh:1J1L1DB1MI" resolve="LogSearchStatement" />
+    <property role="3GE5qa" value="logging.search" />
+    <ref role="1XX52x" to="dinh:1J1L1DB1MI" resolve="LogSearchToConsole" />
     <node concept="3EZMnI" id="1J1L1DBdzI" role="2wV5jI">
       <node concept="PMmxH" id="1J1L1DBe6S" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -155,6 +157,46 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1J1L1DBdzL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4ZxQD5xTg0y">
+    <property role="3GE5qa" value="logging.search" />
+    <ref role="1XX52x" to="dinh:4ZxQD5xSIKs" resolve="LogSearchToFile" />
+    <node concept="3EZMnI" id="4ZxQD5xTj14" role="2wV5jI">
+      <node concept="PMmxH" id="4ZxQD5xTj15" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+      </node>
+      <node concept="3F0ifn" id="4ZxQD5xTj16" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="4ZxQD5xTj17" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4ZxQD5xTj18" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="4ZxQD5xTj19" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="dinh:1J1L1DB85f" resolve="args" />
+        <node concept="l2Vlx" id="4ZxQD5xTj1a" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="4ZxQD5xTj1b" role="3EZMnx">
+        <property role="3F0ifm" value=");" />
+        <node concept="11L4FC" id="4ZxQD5xTj1c" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4ZxQD5xTj1d" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="4ZxQD5xUpxe" role="6VMZX">
+      <node concept="l2Vlx" id="4ZxQD5xUpxf" role="2iSdaV" />
+      <node concept="3F0ifn" id="4ZxQD5xUpMM" role="3EZMnx">
+        <property role="3F0ifm" value="File:" />
+      </node>
+      <node concept="3F1sOY" id="4ZxQD5xUqlR" role="3EZMnx">
+        <ref role="1NtTu8" to="dinh:4ZxQD5xT6ZG" resolve="file" />
+      </node>
     </node>
   </node>
 </model>

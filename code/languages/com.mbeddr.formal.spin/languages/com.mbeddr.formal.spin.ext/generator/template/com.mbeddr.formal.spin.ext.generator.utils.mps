@@ -353,5 +353,58 @@
     </node>
     <node concept="3Tm1VV" id="1ZejHLlKMrh" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="4ZxQD5xVBek">
+    <property role="TrG5h" value="LogSearch2FileNamingUtils" />
+    <node concept="2tJIrI" id="4ZxQD5xVCB6" role="jymVt" />
+    <node concept="Wx3nA" id="4ZxQD5xZO3z" role="jymVt">
+      <property role="TrG5h" value="TEXT_WRITING_FUNCTION_NAME" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="4ZxQD5xZO3$" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4ZxQD5xZO3_" role="1B3o_S" />
+      <node concept="Xl_RD" id="4ZxQD5xZO3A" role="33vP2m">
+        <property role="Xl_RC" value="write_string" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4ZxQD5y0x2P" role="jymVt">
+      <property role="TrG5h" value="INIT_FILE_FUNCTION_NAME" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="4ZxQD5y0x2Q" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4ZxQD5y0x2R" role="1B3o_S" />
+      <node concept="Xl_RD" id="4ZxQD5y0x2S" role="33vP2m">
+        <property role="Xl_RC" value="init_file" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4ZxQD5y0zO9" role="jymVt">
+      <property role="TrG5h" value="CLOSE_FILE_FUNCTION_NAME" />
+      <property role="3TUv4t" value="true" />
+      <node concept="17QB3L" id="4ZxQD5y0zOa" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4ZxQD5y0zOb" role="1B3o_S" />
+      <node concept="Xl_RD" id="4ZxQD5y0zOc" role="33vP2m">
+        <property role="Xl_RC" value="close_file" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ZxQD5y10AK" role="jymVt" />
+    <node concept="2YIFZL" id="4ZxQD5y14Pj" role="jymVt">
+      <property role="TrG5h" value="fileDescriptorVariableName" />
+      <node concept="3clFbS" id="4ZxQD5y14Pm" role="3clF47">
+        <node concept="3clFbF" id="4ZxQD5y16Ls" role="3cqZAp">
+          <node concept="Xl_RD" id="4ZxQD5y16Lr" role="3clFbG">
+            <property role="Xl_RC" value="fd" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4ZxQD5y12U0" role="1B3o_S" />
+      <node concept="17QB3L" id="4ZxQD5y13J8" role="3clF45" />
+      <node concept="37vLTG" id="4ZxQD5y15oY" role="3clF46">
+        <property role="TrG5h" value="log" />
+        <node concept="3Tqbb2" id="4ZxQD5y15oX" role="1tU5fm">
+          <ref role="ehGHo" to="dinh:4ZxQD5xSIKs" resolve="LogSearchToFile" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ZxQD5xVCB8" role="jymVt" />
+    <node concept="2tJIrI" id="4ZxQD5xVCBb" role="jymVt" />
+    <node concept="3Tm1VV" id="4ZxQD5xVBel" role="1B3o_S" />
+  </node>
 </model>
 
