@@ -1503,5 +1503,28 @@
     <property role="R4oN_" value="now" />
     <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
   </node>
+  <node concept="1TIwiD" id="4ZxQD5xVNRV">
+    <property role="EcuMT" value="5756122116704386555" />
+    <property role="3GE5qa" value="c.arbitrary_text" />
+    <property role="TrG5h" value="ArbitraryFunctionCall" />
+    <property role="34LRSv" value="# arbitrary function call #" />
+    <property role="R4oN_" value="arbotrary function call" />
+    <ref role="1TJDcQ" node="4_pH3zvfIkq" resolve="Statement" />
+    <node concept="1TJgyj" id="4ZxQD5xVWC0" role="1TKVEi">
+      <property role="IQ2ns" value="5756122116704422400" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="4ZxQD5xVVxY" role="1TKVEl">
+      <property role="IQ2nx" value="5756122116704417918" />
+      <property role="TrG5h" value="function_name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4ZxQD5xVRrs" role="PzmwI">
+      <ref role="PrY4T" node="1vcsY83fkZr" resolve="ICLevelStatement" />
+    </node>
+  </node>
 </model>
 

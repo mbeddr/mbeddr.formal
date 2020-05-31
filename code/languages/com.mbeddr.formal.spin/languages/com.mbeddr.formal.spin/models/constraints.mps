@@ -203,30 +203,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="5y2MdLwWUcr">
-    <property role="3GE5qa" value="c.statements" />
-    <ref role="1M2myG" to="o3hv:2DjQaubCrKG" resolve="PrintfCStatement" />
-    <node concept="9S07l" id="5y2MdLwWUgK" role="9Vyp8">
-      <node concept="3clFbS" id="5y2MdLwWUgL" role="2VODD2">
-        <node concept="3clFbF" id="5y2MdLwWUnW" role="3cqZAp">
-          <node concept="2OqwBi" id="5y2MdLwWVJo" role="3clFbG">
-            <node concept="2OqwBi" id="5y2MdLwWU$V" role="2Oq$k0">
-              <node concept="nLn13" id="5y2MdLwWVaC" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="5y2MdLwWUNL" role="2OqNvi">
-                <node concept="1xMEDy" id="5y2MdLwWUNN" role="1xVPHs">
-                  <node concept="chp4Y" id="5y2MdLwWUWZ" role="ri$Ld">
-                    <ref role="cht4Q" to="o3hv:5y2MdLwTJQi" resolve="CCode" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="5y2MdLwWVuD" role="1xVPHs" />
-              </node>
-            </node>
-            <node concept="3x8VRR" id="5y2MdLwWW6N" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="2yuIwRzn7pc">
     <property role="3GE5qa" value="statements" />
     <ref role="1M2myG" to="o3hv:2yuIwRzn5HR" resolve="EndStateLabel" />

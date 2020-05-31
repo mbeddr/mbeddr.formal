@@ -2120,5 +2120,39 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="4ZxQD5xWk34">
+    <property role="3GE5qa" value="c.arbitrary_text" />
+    <ref role="WuzLi" to="o3hv:4ZxQD5xVNRV" resolve="ArbitraryFunctionCall" />
+    <node concept="11bSqf" id="4ZxQD5xWk35" role="11c4hB">
+      <node concept="3clFbS" id="4ZxQD5xWk36" role="2VODD2">
+        <node concept="lc7rE" id="4ZxQD5xWmij" role="3cqZAp">
+          <node concept="l9hG8" id="4ZxQD5xWnHs" role="lcghm">
+            <node concept="2OqwBi" id="4ZxQD5xWnR5" role="lb14g">
+              <node concept="117lpO" id="4ZxQD5xWnIx" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4ZxQD5xWoEk" role="2OqNvi">
+                <ref role="3TsBF5" to="o3hv:4ZxQD5xVVxY" resolve="function_name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4ZxQD5xWmik" role="lcghm">
+            <property role="lacIc" value="(" />
+          </node>
+          <node concept="l9S2W" id="4ZxQD5xWmil" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value=", " />
+            <node concept="2OqwBi" id="4ZxQD5xWmim" role="lbANJ">
+              <node concept="117lpO" id="4ZxQD5xWmin" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4ZxQD5xWpgC" role="2OqNvi">
+                <ref role="3TtcxE" to="o3hv:4ZxQD5xVWC0" resolve="args" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4ZxQD5xWmip" role="lcghm">
+            <property role="lacIc" value=");" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

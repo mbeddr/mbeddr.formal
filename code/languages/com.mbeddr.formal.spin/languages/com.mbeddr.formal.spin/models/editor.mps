@@ -2203,5 +2203,35 @@
       <node concept="l2Vlx" id="3q_k9iFI1XW" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4ZxQD5xVYh2">
+    <property role="3GE5qa" value="c.arbitrary_text" />
+    <ref role="1XX52x" to="o3hv:4ZxQD5xVNRV" resolve="ArbitraryFunctionCall" />
+    <node concept="3EZMnI" id="4ZxQD5xVYy$" role="2wV5jI">
+      <node concept="3F0A7n" id="4ZxQD5xVYOb" role="3EZMnx">
+        <ref role="1NtTu8" to="o3hv:4ZxQD5xVVxY" resolve="function_name" />
+      </node>
+      <node concept="3F0ifn" id="4ZxQD5xVZnh" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="4ZxQD5xW2Vh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="4ZxQD5xW3um" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="4ZxQD5xVZCT" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="o3hv:4ZxQD5xVWC0" resolve="args" />
+        <node concept="l2Vlx" id="4ZxQD5xVZCV" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="4ZxQD5xW1i8" role="3EZMnx">
+        <property role="3F0ifm" value=");" />
+        <node concept="11L4FC" id="4ZxQD5xW26J" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4ZxQD5xVYyB" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
