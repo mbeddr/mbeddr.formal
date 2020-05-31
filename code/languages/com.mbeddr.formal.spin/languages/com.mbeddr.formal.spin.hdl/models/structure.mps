@@ -512,5 +512,16 @@
       <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4ZxQD5ya1uL">
+    <property role="EcuMT" value="5756122116708112305" />
+    <property role="3GE5qa" value="harness.content" />
+    <property role="TrG5h" value="LogSearchToFileHDL" />
+    <property role="34LRSv" value="log search to file" />
+    <property role="R4oN_" value="logs every step when this location is reached to a file" />
+    <ref role="1TJDcQ" to="dinh:4ZxQD5xSIKs" resolve="LogSearchToFile" />
+    <node concept="PrWs8" id="4ZxQD5ya7P2" role="PzmwI">
+      <ref role="PrY4T" node="1ZejHLlNYZ0" resolve="IHarnessDefinitionContent" />
+    </node>
+  </node>
 </model>
 

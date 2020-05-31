@@ -232,7 +232,7 @@
         <child id="5285453794051997738" name="content" index="2mr7gi" />
       </concept>
       <concept id="3050019586772961884" name="com.mbeddr.formal.spin.structure.EmptyModelContent" flags="ng" index="2xLtbV" />
-      <concept id="3050019586773371914" name="com.mbeddr.formal.spin.structure.PromelaGlobalVariableDeclaration" flags="ng" index="2xNTiH" />
+      <concept id="3050019586773371914" name="com.mbeddr.formal.spin.structure.GlobalVariableDeclaration" flags="ng" index="2xNTiH" />
       <concept id="3050019586774684052" name="com.mbeddr.formal.spin.structure.LessExpression" flags="ng" index="2xSS$N" />
       <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
       <concept id="3050019586773728300" name="com.mbeddr.formal.spin.structure.PrintfCStatement" flags="ng" index="2xWAib">
@@ -403,6 +403,10 @@
       </concept>
     </language>
     <language id="bd54ef69-17ec-411b-8f49-485702e74565" name="com.mbeddr.formal.spin.ext">
+      <concept id="5756122116703588125" name="com.mbeddr.formal.spin.ext.structure.LogSearchBase" flags="ng" index="I0Hmc">
+        <child id="31251489487618383" name="args" index="1DWSpv" />
+      </concept>
+      <concept id="5756122116703579164" name="com.mbeddr.formal.spin.ext.structure.LogSearchToFile" flags="ng" index="I0Nqd" />
       <concept id="6377880871154153670" name="com.mbeddr.formal.spin.ext.structure.LogWitnessStatement" flags="ng" index="Sp30q">
         <child id="6377880871154154774" name="exp" index="Sp3na" />
       </concept>
@@ -515,6 +519,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -2279,6 +2284,54 @@
                   <node concept="3clFbS" id="5SGsxw7W0YR" role="2VODD2">
                     <node concept="3clFbF" id="5SGsxw7W166" role="3cqZAp">
                       <node concept="30H73N" id="5SGsxw7W165" role="3clFbG" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4ZxQD5yafmB" role="3acgRq">
+      <ref role="30HIoZ" to="y6ji:4ZxQD5ya1uL" resolve="LogSearchToFileHDL" />
+      <node concept="gft3U" id="4ZxQD5yafmC" role="1lVwrX">
+        <node concept="I0Nqd" id="4ZxQD5yajCT" role="gfFT$">
+          <node concept="2m4jwP" id="4ZxQD5yakPy" role="1DWSpv">
+            <property role="2m4jwQ" value="str" />
+          </node>
+          <node concept="1pdMLZ" id="4ZxQD5yb33w" role="lGtFl">
+            <node concept="2kFOW8" id="4ZxQD5yb41p" role="2kGFt3">
+              <node concept="3clFbS" id="4ZxQD5yb41q" role="2VODD2">
+                <node concept="3clFbF" id="4ZxQD5yb50m" role="3cqZAp">
+                  <node concept="2pJPEk" id="4ZxQD5yb50k" role="3clFbG">
+                    <node concept="2pJPED" id="4ZxQD5yb618" role="2pJPEn">
+                      <ref role="2pJxaS" to="dinh:4ZxQD5xSIKs" resolve="LogSearchToFile" />
+                      <node concept="2pIpSj" id="4ZxQD5yb6GT" role="2pJxcM">
+                        <ref role="2pIpSl" to="dinh:4ZxQD5xT6ZG" resolve="file" />
+                        <node concept="36biLy" id="4ZxQD5yb6Hy" role="28nt2d">
+                          <node concept="2OqwBi" id="4ZxQD5yb8zO" role="36biLW">
+                            <node concept="2OqwBi" id="4ZxQD5yb7Y0" role="2Oq$k0">
+                              <node concept="30H73N" id="4ZxQD5yb72F" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="4ZxQD5yb8kU" role="2OqNvi">
+                                <ref role="3Tt5mk" to="dinh:4ZxQD5xT6ZG" resolve="file" />
+                              </node>
+                            </node>
+                            <node concept="1$rogu" id="4ZxQD5yb94K" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2pIpSj" id="4ZxQD5yb9q6" role="2pJxcM">
+                        <ref role="2pIpSl" to="dinh:1J1L1DB85f" resolve="args" />
+                        <node concept="36biLy" id="4ZxQD5yb9J$" role="28nt2d">
+                          <node concept="2OqwBi" id="4ZxQD5yban6" role="36biLW">
+                            <node concept="30H73N" id="4ZxQD5yba4X" role="2Oq$k0" />
+                            <node concept="3Tsc0h" id="4ZxQD5ybb5A" role="2OqNvi">
+                              <ref role="3TtcxE" to="dinh:1J1L1DB85f" resolve="args" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
