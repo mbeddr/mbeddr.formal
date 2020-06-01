@@ -955,8 +955,8 @@
         <node concept="3cpWs8" id="7M$OvLQdHIU" role="3cqZAp">
           <node concept="3cpWsn" id="7M$OvLQdHIV" role="3cpWs9">
             <property role="TrG5h" value="entry" />
-            <node concept="3uibUv" id="7M$OvLQdHII" role="1tU5fm">
-              <ref role="3uigEE" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
+            <node concept="3uibUv" id="4ZxQD5yxBoV" role="1tU5fm">
+              <ref role="3uigEE" to="imq8:4ZxQD5yuhrn" resolve="ISpinWitnessEntry" />
             </node>
             <node concept="2OqwBi" id="7M$OvLQdHIW" role="33vP2m">
               <node concept="2OqwBi" id="7M$OvLQdHIX" role="2Oq$k0">
@@ -984,7 +984,7 @@
               <ref role="3cqZAo" node="7M$OvLQdHIV" resolve="entry" />
             </node>
             <node concept="liA8E" id="7M$OvLQdJh$" role="2OqNvi">
-              <ref role="37wK5l" to="imq8:2lN4cj_MGzo" resolve="getLhsString" />
+              <ref role="37wK5l" to="imq8:4ZxQD5yunzd" resolve="getLhsString" />
             </node>
           </node>
           <node concept="3_1$Yv" id="7M$OvLQdKQV" role="3_9lra">
@@ -1009,7 +1009,7 @@
                   <ref role="3cqZAo" node="7M$OvLQdHIV" resolve="entry" />
                 </node>
                 <node concept="liA8E" id="7M$OvLQdM2z" role="2OqNvi">
-                  <ref role="37wK5l" to="imq8:2lN4cj_MGSr" resolve="getRhsString" />
+                  <ref role="37wK5l" to="imq8:4ZxQD5yunzm" resolve="getRhsString" />
                 </node>
               </node>
               <node concept="3_1$Yv" id="7M$OvLQdM2$" role="3_9lra">

@@ -1234,12 +1234,26 @@
                             </node>
                             <node concept="liA8E" id="2k2dPZH4h9w" role="2OqNvi">
                               <ref role="37wK5l" to="vxn5:31nZcrlJSz0" resolve="setWhitnessEntries" />
-                              <node concept="2OqwBi" id="2k2dPZH4h9x" role="37wK5m">
-                                <node concept="37vLTw" id="2k2dPZH4h9y" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2k2dPZH4h8$" resolve="result" />
+                              <node concept="10QFUN" id="4ZxQD5yuZwV" role="37wK5m">
+                                <node concept="1eOMI4" id="4ZxQD5yvosB" role="10QFUP">
+                                  <node concept="10QFUN" id="4ZxQD5yvosA" role="1eOMHV">
+                                    <node concept="2OqwBi" id="4ZxQD5yvosz" role="10QFUP">
+                                      <node concept="37vLTw" id="4ZxQD5yvos$" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2k2dPZH4h8$" resolve="result" />
+                                      </node>
+                                      <node concept="liA8E" id="4ZxQD5yvos_" role="2OqNvi">
+                                        <ref role="37wK5l" to="imq8:2lN4cj_PIQx" resolve="getWhitness" />
+                                      </node>
+                                    </node>
+                                    <node concept="_YKpA" id="4ZxQD5yvpqI" role="10QFUM">
+                                      <node concept="3qTvmN" id="4ZxQD5yvquX" role="_ZDj9" />
+                                    </node>
+                                  </node>
                                 </node>
-                                <node concept="liA8E" id="2k2dPZH4h9z" role="2OqNvi">
-                                  <ref role="37wK5l" to="imq8:2lN4cj_PIQx" resolve="getWhitness" />
+                                <node concept="_YKpA" id="4ZxQD5yuZuG" role="10QFUM">
+                                  <node concept="3uibUv" id="4ZxQD5yuZwR" role="_ZDj9">
+                                    <ref role="3uigEE" to="imq8:4ZxQD5yuhrn" resolve="ISpinWitnessEntry" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1552,8 +1566,8 @@
                       <node concept="3cpWsn" id="2k2dPZHaOXw" role="3cpWs9">
                         <property role="TrG5h" value="selectedState" />
                         <property role="3TUv4t" value="true" />
-                        <node concept="3uibUv" id="2lN4cj_Thib" role="1tU5fm">
-                          <ref role="3uigEE" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
+                        <node concept="3uibUv" id="4ZxQD5yv26c" role="1tU5fm">
+                          <ref role="3uigEE" to="imq8:4ZxQD5yuhrn" resolve="ISpinWitnessEntry" />
                         </node>
                         <node concept="2OqwBi" id="2k2dPZHaOXy" role="33vP2m">
                           <node concept="37vLTw" id="2k2dPZHaOXz" role="2Oq$k0">
@@ -1578,7 +1592,7 @@
                             <ref role="3cqZAo" node="2k2dPZHaOXw" resolve="selectedState" />
                           </node>
                           <node concept="liA8E" id="2k2dPZHaOXF" role="2OqNvi">
-                            <ref role="37wK5l" to="imq8:2lN4cj_MH4B" resolve="getNode" />
+                            <ref role="37wK5l" to="imq8:4ZxQD5yv72S" resolve="getNode" />
                           </node>
                         </node>
                       </node>
@@ -1831,8 +1845,8 @@
     <node concept="3Tm1VV" id="31nZcrlJSx0" role="1B3o_S" />
     <node concept="3uibUv" id="1EZfgaQnOvF" role="1zkMxy">
       <ref role="3uigEE" to="vxn5:31nZcrlJSwS" resolve="WhitnessTableModelBase" />
-      <node concept="3uibUv" id="7XCY$_r9Ni8" role="11_B2D">
-        <ref role="3uigEE" to="imq8:7XCY$_r9H8M" resolve="SpinWhitnessEntry" />
+      <node concept="3uibUv" id="4ZxQD5yuzFP" role="11_B2D">
+        <ref role="3uigEE" to="imq8:4ZxQD5yuhrn" resolve="ISpinWitnessEntry" />
       </node>
     </node>
     <node concept="2tJIrI" id="2lN4cj_OLSQ" role="jymVt" />
@@ -1902,7 +1916,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2lN4cj_RP6z" role="2OqNvi">
-                  <ref role="37wK5l" to="imq8:2lN4cj_MGzo" resolve="getLhsString" />
+                  <ref role="37wK5l" to="imq8:4ZxQD5yunzd" resolve="getLhsString" />
                 </node>
               </node>
             </node>
@@ -1925,7 +1939,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2lN4cj_RPN_" role="2OqNvi">
-              <ref role="37wK5l" to="imq8:2lN4cj_MGSr" resolve="getRhsString" />
+              <ref role="37wK5l" to="imq8:4ZxQD5yunzm" resolve="getRhsString" />
             </node>
           </node>
         </node>
