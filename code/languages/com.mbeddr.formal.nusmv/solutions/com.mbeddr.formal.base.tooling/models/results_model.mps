@@ -255,7 +255,7 @@
     </node>
   </node>
   <node concept="3HP615" id="1EZfgaQmLrT">
-    <property role="TrG5h" value="IWhitnessEntry" />
+    <property role="TrG5h" value="IWitnessEntry" />
     <node concept="2tJIrI" id="1EZfgaQmLsj" role="jymVt" />
     <node concept="3clFb_" id="1EZfgaQmLsS" role="jymVt">
       <property role="2aFKle" value="false" />
@@ -264,12 +264,12 @@
       <node concept="3Tm1VV" id="1EZfgaQmLsW" role="1B3o_S" />
       <node concept="10P_77" id="1EZfgaQmLsM" role="3clF45" />
       <node concept="NWlO9" id="1EZfgaQmLtC" role="lGtFl">
-        <property role="NWlVz" value="Is this whitness entry a major one? Major entries will be printed with BOLD in the whitness." />
+        <property role="NWlVz" value="Is this witness entry a major one? Major entries will be printed with BOLD in the witness." />
       </node>
     </node>
     <node concept="3Tm1VV" id="1EZfgaQmLrU" role="1B3o_S" />
     <node concept="NWlO9" id="1EZfgaQmLts" role="lGtFl">
-      <property role="NWlVz" value="An entry in the whitness list." />
+      <property role="NWlVz" value="An entry in the witness list." />
     </node>
   </node>
   <node concept="312cEu" id="5a54bO_HcYB">
