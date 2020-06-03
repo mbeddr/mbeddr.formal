@@ -1189,6 +1189,14 @@
                             <ref role="37wK5l" to="4c75:6Kf5KB71hLk" resolve="getRawResult" />
                           </node>
                         </node>
+                        <node concept="2OqwBi" id="4ZxQD5yPR$t" role="37wK5m">
+                          <node concept="37vLTw" id="4ZxQD5yPR$u" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1NcemxVJ0_h" resolve="rawResult" />
+                          </node>
+                          <node concept="liA8E" id="4ZxQD5yPR$v" role="2OqNvi">
+                            <ref role="37wK5l" to="4c75:7mSH3Wn4cNx" resolve="isCancel" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
