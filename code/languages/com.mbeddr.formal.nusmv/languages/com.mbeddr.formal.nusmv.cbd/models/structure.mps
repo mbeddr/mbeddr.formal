@@ -550,6 +550,7 @@
     <property role="TrG5h" value="ComponentInterfaceSMV" />
     <property role="3GE5qa" value="cbd_new" />
     <property role="34LRSv" value="interface" />
+    <property role="R4oN_" value="defines an interface" />
     <ref role="1TJDcQ" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     <node concept="PrWs8" id="3Cd5_MRERyn" role="PzmwI">
       <ref role="PrY4T" to="gioj:5_V$TJxCJMd" resolve="ISystemContent" />

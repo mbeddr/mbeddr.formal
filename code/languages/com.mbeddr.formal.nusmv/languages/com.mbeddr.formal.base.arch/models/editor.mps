@@ -37,10 +37,12 @@
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
+      <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
@@ -696,6 +698,17 @@
           <node concept="2iRkQZ" id="7RhjhI7$E7W" role="2czzBx" />
           <node concept="VPM3Z" id="7RhjhI7$E7X" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+          <node concept="4$FPG" id="4ZxQD5yXOYs" role="4_6I_">
+            <node concept="3clFbS" id="4ZxQD5yXOYt" role="2VODD2">
+              <node concept="3clFbF" id="4ZxQD5yXP2I" role="3cqZAp">
+                <node concept="2pJPEk" id="4ZxQD5yXP2G" role="3clFbG">
+                  <node concept="2pJPED" id="4ZxQD5yXP3l" role="2pJPEn">
+                    <ref role="2pJxaS" to="3whv:7RhjhI7$E7x" resolve="EmptyComponentAssemblyBodyContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="l2Vlx" id="7RhjhI7$E64" role="2iSdaV" />
@@ -4776,6 +4789,10 @@
         <node concept="l2Vlx" id="3VQuWXS2dx" role="2iSdaV" />
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="4ZxQD5yXOYr">
+    <property role="3GE5qa" value="cbd.assembly" />
+    <ref role="aqKnT" to="3whv:7RhjhI7$E7x" resolve="EmptyComponentAssemblyBodyContent" />
   </node>
 </model>
 

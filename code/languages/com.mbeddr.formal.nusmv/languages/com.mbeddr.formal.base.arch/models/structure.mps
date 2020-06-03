@@ -207,6 +207,7 @@
     <property role="3GE5qa" value="cbd.assembly.connections" />
     <property role="TrG5h" value="Connection" />
     <property role="34LRSv" value="connection" />
+    <property role="R4oN_" value="a channel" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$lgX" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423293" />
@@ -257,6 +258,7 @@
     <property role="3GE5qa" value="cbd.assembly" />
     <property role="TrG5h" value="Instance" />
     <property role="34LRSv" value="instance" />
+    <property role="R4oN_" value="instantiate another component" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7RhjhI7$liY" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423422" />
