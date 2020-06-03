@@ -207,6 +207,11 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
+      </concept>
+    </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
@@ -320,8 +325,10 @@
   <node concept="24kQdi" id="1gJVC85KmLj">
     <property role="3GE5qa" value="function_macro" />
     <ref role="1XX52x" to="6z8w:1gJVC85KmLf" resolve="FunctionMacroParameterDefinition" />
-    <node concept="3F0A7n" id="1gJVC85KmLp" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="1kIj98" id="4ZxQD5yMEdf" role="2wV5jI">
+      <node concept="3F0A7n" id="1gJVC85KmLp" role="1kIj9b">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1gJVC85KmLx">
