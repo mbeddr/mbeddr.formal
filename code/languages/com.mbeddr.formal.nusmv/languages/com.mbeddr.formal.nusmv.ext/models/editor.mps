@@ -350,6 +350,7 @@
     <node concept="3EZMnI" id="1gJVC85KmMC" role="2wV5jI">
       <node concept="3F0ifn" id="1gJVC85KmMM" role="3EZMnx">
         <property role="3F0ifm" value="#FUNCTION" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="1gJVC85KmN1" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
