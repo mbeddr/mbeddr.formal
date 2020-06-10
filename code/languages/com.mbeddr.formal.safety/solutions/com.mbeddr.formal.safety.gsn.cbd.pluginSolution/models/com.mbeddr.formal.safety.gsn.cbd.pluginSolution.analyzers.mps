@@ -102,6 +102,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -790,6 +791,7 @@
                                 <ref role="2Gs0qQ" node="33qt4wr4wQX" resolve="g" />
                               </node>
                               <node concept="10Nm6u" id="1wencriDH4S" role="37wK5m" />
+                              <node concept="3clFbT" id="2Wcj3fderic" role="37wK5m" />
                             </node>
                           </node>
                         </node>
