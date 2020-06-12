@@ -13,7 +13,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -42,6 +44,10 @@
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
+      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
+        <property id="1139746504291" name="imageFile" index="1ubRXE" />
+        <property id="1139858284555" name="descent" index="1$Qi42" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -93,6 +99,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwA1qcA" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l3At9" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="TLScopesImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1qdd">
     <property role="3GE5qa" value="scope" />
@@ -100,6 +109,9 @@
     <node concept="3F0ifn" id="6hWVnwA1qdf" role="2wV5jI">
       <property role="3F0ifm" value="Globally" />
       <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+    </node>
+    <node concept="PMmxH" id="4g_LT4l3Atd" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="TLScopesImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1yyJ">
@@ -141,6 +153,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K6o" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l3At3" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="TLScopesImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K6I">
     <property role="3GE5qa" value="scope" />
@@ -161,6 +176,9 @@
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K6F" resolve="r" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K6N" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="4g_LT4l3Atb" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="TLScopesImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K7w">
@@ -186,6 +204,9 @@
         <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
       </node>
     </node>
+    <node concept="PMmxH" id="4g_LT4l3Ce7" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K80">
     <property role="3GE5qa" value="specification.occurrence" />
@@ -210,6 +231,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K86" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l3Cep" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K8d">
     <property role="3GE5qa" value="specification.occurrence" />
@@ -229,6 +253,9 @@
         <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
       </node>
     </node>
+    <node concept="PMmxH" id="4g_LT4l3Ced" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K8C">
     <property role="3GE5qa" value="specification.occurrence" />
@@ -246,6 +273,9 @@
         <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K8H" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="4g_LT4l3Ceb" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1K9b">
@@ -440,6 +470,9 @@
       </node>
       <node concept="l2Vlx" id="6hWVnwA2hYN" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l4_sB" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6hWVnwAsTMP">
     <property role="3GE5qa" value="scope" />
@@ -460,6 +493,9 @@
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K7o" resolve="r" />
       </node>
       <node concept="l2Vlx" id="6hWVnwAsTMW" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="4g_LT4l3At7" role="6VMZX">
+      <ref role="PMmxG" node="6hWVnwAIDw3" resolve="TLScopesImage" />
     </node>
   </node>
   <node concept="24kQdi" id="5FhZjqTNhvh">
@@ -619,6 +655,9 @@
       </node>
       <node concept="l2Vlx" id="6BEEv9htjUO" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l3Cen" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6BEEv9htjWS">
     <property role="3GE5qa" value="probability" />
@@ -671,6 +710,9 @@
       </node>
       <node concept="l2Vlx" id="6BEEv9hzVWQ" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l3Cel" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="6BEEv9h$xSy">
     <property role="3GE5qa" value="specification.occurrence" />
@@ -696,6 +738,9 @@
         <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
       </node>
       <node concept="l2Vlx" id="6BEEv9h$xSC" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="4g_LT4l3Ceh" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
     </node>
   </node>
   <node concept="24kQdi" id="6BEEv9h_adm">
@@ -723,6 +768,9 @@
       </node>
       <node concept="l2Vlx" id="6BEEv9h_adv" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l3Cef" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="CTc$eJ5nwS">
     <property role="3GE5qa" value="specification.occurrence" />
@@ -742,6 +790,9 @@
       </node>
       <node concept="l2Vlx" id="CTc$eJ5nwX" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="4g_LT4l3Cej" role="6VMZX">
+      <ref role="PMmxG" node="2bJTE4$9EA5" resolve="TLSpecificationImage" />
+    </node>
   </node>
   <node concept="24kQdi" id="CTc$eJ5nxm">
     <property role="3GE5qa" value="time" />
@@ -757,6 +808,37 @@
         <ref role="1NtTu8" to="yyq9:1Tg5$nepcgO" resolve="unit" />
       </node>
       <node concept="l2Vlx" id="CTc$eJ5nxr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6hWVnwAIDw3">
+    <property role="3GE5qa" value="scope" />
+    <property role="TrG5h" value="TLScopesImage" />
+    <ref role="1XX52x" to="yyq9:6hWVnwA1jgx" resolve="TLScopeBase" />
+    <node concept="3EZMnI" id="6hWVnwAIHDU" role="2wV5jI">
+      <node concept="3F0ifn" id="6hWVnwAIHEc" role="3EZMnx">
+        <property role="3F0ifm" value="Scope visual description:" />
+      </node>
+      <node concept="3F0ifn" id="6hWVnwAIHEl" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6hWVnwAIHDV" role="2iSdaV" />
+      <node concept="1u4HXA" id="6hWVnwAIDFG" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/images/scopes.gif" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2bJTE4$9EA5">
+    <property role="3GE5qa" value="specification" />
+    <property role="TrG5h" value="TLSpecificationImage" />
+    <ref role="1XX52x" to="yyq9:6hWVnwA1jgy" resolve="TLSpecificationBase" />
+    <node concept="3EZMnI" id="2bJTE4$9EA7" role="2wV5jI">
+      <node concept="3F0ifn" id="2bJTE4$9EA8" role="3EZMnx">
+        <property role="3F0ifm" value="Properties overview:" />
+      </node>
+      <node concept="3F0ifn" id="2bJTE4$9EA9" role="3EZMnx" />
+      <node concept="2iRkQZ" id="2bJTE4$9EAa" role="2iSdaV" />
+      <node concept="1u4HXA" id="2bJTE4$9EAb" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/images/tl_patterns_for_properties.png" />
+        <property role="1$Qi42" value="0" />
+      </node>
     </node>
   </node>
 </model>
