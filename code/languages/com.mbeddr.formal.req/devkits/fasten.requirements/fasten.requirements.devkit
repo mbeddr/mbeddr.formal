@@ -5,5 +5,6 @@
   <exported-language name="5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)" />
   <exported-language name="b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)" />
   <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
+  <exported-language name="0054a0d7-50ff-4b4f-beff-7e9b376d56a1(com.mbeddr.formal.req.tl_patterns.arch)" />
 </dev-kit>
 
