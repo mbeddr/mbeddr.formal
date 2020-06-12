@@ -533,6 +533,9 @@
     <ref role="1XX52x" to="3whv:7RhjhI7$E7x" resolve="EmptyComponentAssemblyBodyContent" />
     <node concept="3F0ifn" id="7RhjhI7$E7B" role="2wV5jI">
       <property role="3F0ifm" value="" />
+      <node concept="VPxyj" id="6Svzp35BZe6" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7zUXC">
@@ -4793,6 +4796,19 @@
   <node concept="3p36aQ" id="4ZxQD5yXOYr">
     <property role="3GE5qa" value="cbd.assembly" />
     <ref role="aqKnT" to="3whv:7RhjhI7$E7x" resolve="EmptyComponentAssemblyBodyContent" />
+  </node>
+  <node concept="24kQdi" id="tVLeS4qR6d">
+    <property role="3GE5qa" value="cbd.interface" />
+    <ref role="1XX52x" to="3whv:tVLeS4qI0L" resolve="PortRefDotTarget" />
+    <node concept="1iCGBv" id="tVLeS4qRYZ" role="2wV5jI">
+      <ref role="1NtTu8" to="3whv:tVLeS4qPUw" resolve="port" />
+      <node concept="1sVBvm" id="tVLeS4qRZ1" role="1sWHZn">
+        <node concept="3F0A7n" id="tVLeS4qShZ" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

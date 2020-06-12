@@ -125,12 +125,15 @@
     <node concept="PrWs8" id="15PPQjZhlYG" role="PzmwI">
       <ref role="PrY4T" node="15PPQjZhlYF" resolve="IContractsContainer" />
     </node>
+    <node concept="PrWs8" id="7_ui6X4n5FX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7$loO">
     <property role="EcuMT" value="9066112305507423796" />
     <property role="3GE5qa" value="cbd.assembly" />
     <property role="TrG5h" value="InstanceRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="7RhjhI7$loP" role="1TKVEi">
       <property role="IQ2ns" value="9066112305507423797" />
       <property role="20kJfa" value="instance" />
@@ -334,6 +337,30 @@
       <property role="IQ2nx" value="9066112305501242562" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="tVLeS4qI0L">
+    <property role="EcuMT" value="539241106956279857" />
+    <property role="3GE5qa" value="cbd.interface" />
+    <property role="TrG5h" value="PortRefDotTarget" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+    <node concept="1TJgyj" id="tVLeS4qPUw" role="1TKVEi">
+      <property role="IQ2ns" value="539241106956312224" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7RhjhI7zUWm" resolve="Port" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="tVLeS4qW6A">
+    <property role="EcuMT" value="539241106956337574" />
+    <property role="3GE5qa" value="cbd.interface" />
+    <property role="TrG5h" value="ComponentInterfaceType" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
+    <node concept="1TJgyj" id="tVLeS4qYKc" role="1TKVEi">
+      <property role="IQ2ns" value="539241106956348428" />
+      <property role="20kJfa" value="interface" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
   </node>
 </model>
