@@ -58,6 +58,7 @@
         <child id="2065994219233713618" name="cond" index="35L7Wp" />
         <child id="2065994219233713621" name="then" index="35L7Wu" />
       </concept>
+      <concept id="3088340263173010157" name="com.mbeddr.formal.smtlib.structure.Distinct" flags="ng" index="1xbkZQ" />
       <concept id="1154105409826380420" name="com.mbeddr.formal.smtlib.structure.Script" flags="ng" index="1U2IT5">
         <child id="1154105409826406761" name="content" index="1U2RmC" />
       </concept>
@@ -411,6 +412,115 @@
     </node>
     <node concept="1U56Dw" id="1MFSGJpdnnn" role="1U2RmC" />
     <node concept="35_T0y" id="1MFSGJpggCQ" role="1U2RmC" />
+  </node>
+  <node concept="1U2IT5" id="2FrZhHbXF8u">
+    <property role="TrG5h" value="_040_datatypes_010_scalar_SAT" />
+    <node concept="eng0S" id="2FrZhHbXF9b" role="1U2RmC">
+      <node concept="engXi" id="2FrZhHbXF9d" role="eng2c">
+        <property role="TrG5h" value="Enum" />
+        <node concept="engYB" id="2FrZhHbXF9f" role="eng0e">
+          <property role="TrG5h" value="A" />
+        </node>
+        <node concept="engYB" id="2FrZhHbXF9y" role="eng0e">
+          <property role="TrG5h" value="B" />
+        </node>
+        <node concept="engYB" id="2FrZhHbXF9_" role="eng0e">
+          <property role="TrG5h" value="C" />
+        </node>
+      </node>
+    </node>
+    <node concept="1U2Rm_" id="2FrZhHbXF9T" role="1U2RmC">
+      <property role="TrG5h" value="x" />
+      <node concept="mKvrX" id="2FrZhHbXFa9" role="1U56Fq">
+        <ref role="mKvtK" node="2FrZhHbXF9d" resolve="Enum" />
+      </node>
+    </node>
+    <node concept="1U2Rm_" id="2FrZhHbXFaf" role="1U2RmC">
+      <property role="TrG5h" value="y" />
+      <node concept="mKvrX" id="2FrZhHbXFag" role="1U56Fq">
+        <ref role="mKvtK" node="2FrZhHbXF9d" resolve="Enum" />
+      </node>
+    </node>
+    <node concept="1U2Rm_" id="2FrZhHbXFav" role="1U2RmC">
+      <property role="TrG5h" value="z" />
+      <node concept="mKvrX" id="2FrZhHbXFaw" role="1U56Fq">
+        <ref role="mKvtK" node="2FrZhHbXF9d" resolve="Enum" />
+      </node>
+    </node>
+    <node concept="1U56EO" id="2FrZhHbXFb0" role="1U2RmC">
+      <node concept="1xbkZQ" id="2FrZhHbYMgD" role="1U56ET">
+        <node concept="1U5_Ed" id="2FrZhHbYMgN" role="1UfoCz">
+          <ref role="1U5_Ec" node="2FrZhHbXF9T" resolve="x" />
+        </node>
+        <node concept="1U5_Ed" id="2FrZhHbYMgV" role="1UfoCz">
+          <ref role="1U5_Ec" node="2FrZhHbXFaf" resolve="y" />
+        </node>
+        <node concept="1U5_Ed" id="2FrZhHbYMh7" role="1UfoCz">
+          <ref role="1U5_Ec" node="2FrZhHbXFav" resolve="z" />
+        </node>
+      </node>
+    </node>
+    <node concept="1U56Dw" id="2FrZhHbXF8E" role="1U2RmC" />
+    <node concept="35_T0y" id="2FrZhHbXF8F" role="1U2RmC" />
+  </node>
+  <node concept="1U2IT5" id="2FrZhHc0DBR">
+    <property role="TrG5h" value="_040_datatypes_010_scalar_UNSAT" />
+    <node concept="eng0S" id="2FrZhHc0DBS" role="1U2RmC">
+      <node concept="engXi" id="2FrZhHc0DBT" role="eng2c">
+        <property role="TrG5h" value="Enum" />
+        <node concept="engYB" id="2FrZhHc0DBU" role="eng0e">
+          <property role="TrG5h" value="A" />
+        </node>
+        <node concept="engYB" id="2FrZhHc0DBV" role="eng0e">
+          <property role="TrG5h" value="B" />
+        </node>
+        <node concept="engYB" id="2FrZhHc0DBW" role="eng0e">
+          <property role="TrG5h" value="C" />
+        </node>
+      </node>
+    </node>
+    <node concept="1U2Rm_" id="2FrZhHc0DBX" role="1U2RmC">
+      <property role="TrG5h" value="x" />
+      <node concept="mKvrX" id="2FrZhHc0DBY" role="1U56Fq">
+        <ref role="mKvtK" node="2FrZhHc0DBT" resolve="Enum" />
+      </node>
+    </node>
+    <node concept="1U2Rm_" id="2FrZhHc0DBZ" role="1U2RmC">
+      <property role="TrG5h" value="y" />
+      <node concept="mKvrX" id="2FrZhHc0DC0" role="1U56Fq">
+        <ref role="mKvtK" node="2FrZhHc0DBT" resolve="Enum" />
+      </node>
+    </node>
+    <node concept="1U2Rm_" id="2FrZhHc0DC1" role="1U2RmC">
+      <property role="TrG5h" value="z" />
+      <node concept="mKvrX" id="2FrZhHc0DC2" role="1U56Fq">
+        <ref role="mKvtK" node="2FrZhHc0DBT" resolve="Enum" />
+      </node>
+    </node>
+    <node concept="1U2Rm_" id="2FrZhHc0DC3" role="1U2RmC">
+      <property role="TrG5h" value="w" />
+      <node concept="mKvrX" id="2FrZhHc0DC4" role="1U56Fq">
+        <ref role="mKvtK" node="2FrZhHc0DBT" resolve="Enum" />
+      </node>
+    </node>
+    <node concept="1U56EO" id="2FrZhHc0DC5" role="1U2RmC">
+      <node concept="1xbkZQ" id="2FrZhHc0DC6" role="1U56ET">
+        <node concept="1U5_Ed" id="2FrZhHc0DC7" role="1UfoCz">
+          <ref role="1U5_Ec" node="2FrZhHc0DBX" resolve="x" />
+        </node>
+        <node concept="1U5_Ed" id="2FrZhHc0DC8" role="1UfoCz">
+          <ref role="1U5_Ec" node="2FrZhHc0DBZ" resolve="y" />
+        </node>
+        <node concept="1U5_Ed" id="2FrZhHc0DC9" role="1UfoCz">
+          <ref role="1U5_Ec" node="2FrZhHc0DC1" resolve="z" />
+        </node>
+        <node concept="1U5_Ed" id="2FrZhHc0DCw" role="1UfoCz">
+          <ref role="1U5_Ec" node="2FrZhHc0DC3" resolve="w" />
+        </node>
+      </node>
+    </node>
+    <node concept="1U56Dw" id="2FrZhHc0DCa" role="1U2RmC" />
+    <node concept="35_T0y" id="2FrZhHc0DCb" role="1U2RmC" />
   </node>
 </model>
 

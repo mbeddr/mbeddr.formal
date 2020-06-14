@@ -954,6 +954,7 @@
       </node>
       <node concept="3F0ifn" id="2l5A0OF69yr" role="3EZMnx">
         <property role="3F0ifm" value="declare-datatypes" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="2l5A0OF69yC" role="3EZMnx">
         <property role="3F0ifm" value="(" />

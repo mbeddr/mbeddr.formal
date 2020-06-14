@@ -87,6 +87,9 @@
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
       </concept>
+      <concept id="1171983834376" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertFalse" flags="nn" index="3vFxKo">
+        <child id="1171983854940" name="condition" index="3vFALc" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
@@ -450,6 +453,82 @@
             </node>
             <node concept="Xl_RD" id="1MFSGJpdn7E" role="37wK5m">
               <property role="Xl_RC" value="foo" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2FrZhHc0DL9" role="1SL9yI">
+      <property role="TrG5h" value="_040_test_datatypes_010_scalar_SAT" />
+      <node concept="3cqZAl" id="2FrZhHc0DLa" role="3clF45" />
+      <node concept="3clFbS" id="2FrZhHc0DLb" role="3clF47">
+        <node concept="3cpWs8" id="2FrZhHc0DLc" role="3cqZAp">
+          <node concept="3cpWsn" id="2FrZhHc0DLd" role="3cpWs9">
+            <property role="TrG5h" value="r1" />
+            <node concept="3uibUv" id="2FrZhHc0DLe" role="1tU5fm">
+              <ref role="3uigEE" to="kaug:104dc5E4Mgr" resolve="Z3Result" />
+            </node>
+            <node concept="2OqwBi" id="2FrZhHc0DLf" role="33vP2m">
+              <node concept="2WthIp" id="2FrZhHc0DLg" role="2Oq$k0" />
+              <node concept="2XshWL" id="2FrZhHc0DLh" role="2OqNvi">
+                <ref role="2WH_rO" node="1MFSGJpcs6W" resolve="run" />
+                <node concept="Xl_RD" id="2FrZhHc0DLi" role="2XxRq1">
+                  <property role="Xl_RC" value="_040_datatypes_010_scalar_SAT" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2FrZhHc0DLj" role="3cqZAp">
+          <node concept="2OqwBi" id="2FrZhHc0DLk" role="3vwVQn">
+            <node concept="37vLTw" id="2FrZhHc0DLl" role="2Oq$k0">
+              <ref role="3cqZAo" node="2FrZhHc0DLd" resolve="r1" />
+            </node>
+            <node concept="liA8E" id="2FrZhHc0DLm" role="2OqNvi">
+              <ref role="37wK5l" to="kaug:104dc5E6dkE" resolve="isSat" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2FrZhHc0E5W" role="1SL9yI">
+      <property role="TrG5h" value="_040_test_datatypes_010_scalar_UNSAT" />
+      <node concept="3cqZAl" id="2FrZhHc0E5X" role="3clF45" />
+      <node concept="3clFbS" id="2FrZhHc0E5Y" role="3clF47">
+        <node concept="3cpWs8" id="2FrZhHc0E5Z" role="3cqZAp">
+          <node concept="3cpWsn" id="2FrZhHc0E60" role="3cpWs9">
+            <property role="TrG5h" value="r1" />
+            <node concept="3uibUv" id="2FrZhHc0E61" role="1tU5fm">
+              <ref role="3uigEE" to="kaug:104dc5E4Mgr" resolve="Z3Result" />
+            </node>
+            <node concept="2OqwBi" id="2FrZhHc0E62" role="33vP2m">
+              <node concept="2WthIp" id="2FrZhHc0E63" role="2Oq$k0" />
+              <node concept="2XshWL" id="2FrZhHc0E64" role="2OqNvi">
+                <ref role="2WH_rO" node="1MFSGJpcs6W" resolve="run" />
+                <node concept="Xl_RD" id="2FrZhHc0E65" role="2XxRq1">
+                  <property role="Xl_RC" value="_040_datatypes_010_scalar_UNSAT" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vFxKo" id="2FrZhHc0F5Z" role="3cqZAp">
+          <node concept="2OqwBi" id="2FrZhHc0Fb0" role="3vFALc">
+            <node concept="37vLTw" id="2FrZhHc0F6C" role="2Oq$k0">
+              <ref role="3cqZAo" node="2FrZhHc0E60" resolve="r1" />
+            </node>
+            <node concept="liA8E" id="2FrZhHc0FiD" role="2OqNvi">
+              <ref role="37wK5l" to="kaug:104dc5E6dkE" resolve="isSat" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2FrZhHc0E66" role="3cqZAp">
+          <node concept="2OqwBi" id="2FrZhHc0E67" role="3vwVQn">
+            <node concept="37vLTw" id="2FrZhHc0E68" role="2Oq$k0">
+              <ref role="3cqZAo" node="2FrZhHc0E60" resolve="r1" />
+            </node>
+            <node concept="liA8E" id="2FrZhHc0F3o" role="2OqNvi">
+              <ref role="37wK5l" to="kaug:1MFSGJpcqjW" resolve="isUnsat" />
             </node>
           </node>
         </node>

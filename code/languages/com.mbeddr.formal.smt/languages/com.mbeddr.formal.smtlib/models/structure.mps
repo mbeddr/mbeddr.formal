@@ -747,5 +747,13 @@
     <property role="34LRSv" value="false" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnvIDy" resolve="FalseLiteralBase" />
   </node>
+  <node concept="1TIwiD" id="2FrZhHbXFbH">
+    <property role="EcuMT" value="3088340263173010157" />
+    <property role="3GE5qa" value="expressions.builtin_functions" />
+    <property role="TrG5h" value="Distinct" />
+    <property role="34LRSv" value="distinct" />
+    <property role="R4oN_" value="distinct" />
+    <ref role="1TJDcQ" node="104dc5EerVx" resolve="SMTLibNaryExpression" />
+  </node>
 </model>
 
