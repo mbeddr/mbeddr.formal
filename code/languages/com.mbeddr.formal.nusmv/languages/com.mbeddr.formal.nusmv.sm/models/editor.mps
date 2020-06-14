@@ -55,6 +55,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="7651593722933768974" name="jetbrains.mps.lang.editor.structure.MaxWidthStyleClassItem" flags="ln" index="nf9zX">
         <property id="7651593722933768975" name="value" index="nf9zW" />
+        <child id="7651593722933768976" name="query" index="nf9zz" />
       </concept>
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -82,6 +83,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -101,6 +103,7 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="1165253627126" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup" flags="ng" index="1exORT">
         <property id="1165254125954" name="presentation" index="1ezIyd" />
         <child id="1165253890469" name="parameterObjectType" index="1eyP2E" />
@@ -137,6 +140,7 @@
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -3188,7 +3192,16 @@
                   <property role="VOm3f" value="false" />
                 </node>
                 <node concept="nf9zX" id="1dBJZQQwDMX" role="3F10Kt">
-                  <property role="nf9zW" value="30" />
+                  <property role="nf9zW" value="75" />
+                  <node concept="1cFabM" id="4g_LT4lawic" role="nf9zz">
+                    <node concept="3clFbS" id="4g_LT4lawid" role="2VODD2">
+                      <node concept="3clFbF" id="4g_LT4lcy1N" role="3cqZAp">
+                        <node concept="3cmrfG" id="4g_LT4lcy1M" role="3clFbG">
+                          <property role="3cmrfH" value="125" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="r$x8Z" id="4MR8i$49lGp" role="3EZMnx" />
               </node>
@@ -3197,6 +3210,9 @@
           </node>
           <node concept="VSNWy" id="4MR8i$49lGq" role="3F10Kt">
             <property role="1lJzqX" value="10" />
+          </node>
+          <node concept="2SqB2G" id="4g_LT4lawtB" role="2SqHTX">
+            <property role="TrG5h" value="transitionCell_id" />
           </node>
         </node>
       </node>
