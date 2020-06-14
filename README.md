@@ -5,11 +5,8 @@
 
 ## Building (from command line)
 
-- for the SMV part of FASTEN we have gradle-based scripts (please configure the needed variables in *gradle.properties*)
-- for the other parts (Spin, Safety, etc) we build now only from MPS
-- to build all languages based on SMV, run `gradlew.bat build_smv_languages`
-- to build and execute all unit tests, run `gradlew.bat run_smv_tests` (includes also building all languages)
-- for packaging FASTEN distribution, run `gradlew.bat build_fasten_distribution`
+- for building FASTEN we have gradle-based scripts (please configure the needed variables in *gradle.properties*)
+- for packaging FASTEN distribution, run `gradlew.bat`- this starts the default task `build_fasten_safety_distribution`
 
 ## Building (from MPS)
 - download MPS 2019.3.x
