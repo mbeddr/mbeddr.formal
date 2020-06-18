@@ -1,30 +1,20 @@
 
 name: FASTEN_CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on: [push, pull_request]
 
 env:
   MPS_VER: "2019.3"
   MPS_ZIP: "https://download.jetbrains.com/mps/2019.3/MPS-2019.3.4.zip"
   JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
-  PLUGIN_SOURCE_FOLDER: 'mbeddr.formal.mps-plugins/platform_2019_3_4/'
-  PLUGIN_TARGET_FOLDER: '/home/runner/MPS 2019.3/plugins/'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
     - name: Download MPS
       run: |
         echo "Downloading MPS"
@@ -41,13 +31,6 @@ jobs:
         
         #TODO: Fix JBR location
         tar -C '/home/runner/MPS '${MPS_VER}'/' -zxvf "jbr.tar.gz"
-
-    #- name: Download and move plugins
-    #  run: |
-     #   git clone https://github.com/danielratiu/mbeddr.formal.mps-plugins.git
-     #   echo "Copy plugins from $PLUGIN_SOURCE_FOLDER to $PLUGIN_TARGET_FOLDER"
-     #   cd $PLUGIN_SOURCE_FOLDER
-     #   cp * -r -t "$(eval echo "$PLUGIN_TARGET_FOLDER")"
         
     - name: Change FASTEN config
       run: |
