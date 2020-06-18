@@ -40,7 +40,7 @@ jobs:
         curl -L ${JBR} > "jbr.tar.gz"
         
         #TODO: Fix JBR location
-        tar -C '/home/runner/MPS ${MPS_VER}/' -zxvf "jbr.tar.gz"
+        tar -C '/home/runner/MPS '${MPS_VER}'/' -zxvf "jbr.tar.gz"
 
     #- name: Download and move plugins
     #  run: |
@@ -52,8 +52,8 @@ jobs:
     - name: Change FASTEN config
       run: |
         echo "Changing config"
-        echo "mpsHomeDir=/home/runner/MPS ${MPS_VER}" > gradle.properties
-        echo "mps.home=/home/runner/MPS ${MPS_VER}" >> gradle.properties
+        echo "mpsHomeDir=/home/runner/MPS "${MPS_VER} > gradle.properties
+        echo "mps.home=/home/runner/MPS "${MPS_VER} >> gradle.properties
         echo "mbeddr.formal.home=/home/runner/work/mbeddr.formal" >> gradle.properties
         
         echo "Gradle Properties:"
