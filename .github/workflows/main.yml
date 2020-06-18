@@ -24,12 +24,13 @@ jobs:
         echo "Unzipping MPS"
         unzip -o "MPS.zip" -d ~
         
+        echo "Creating symbolic link to MPS folder"
         ln -s '/home/runner/MPS ${MPS_VER}'/ MPS
         
         echo "Downloading JBR - JetBrainsRuntime"
         curl -L ${JBR} > "jbr.tar.gz"
         
-        #TODO: Fix JBR location
+        echo "Extracting JBR to MPS folder"
         tar -C '/home/runner/MPS '${MPS_VER}'/' -zxvf "jbr.tar.gz"
         
     - name: Change FASTEN config
