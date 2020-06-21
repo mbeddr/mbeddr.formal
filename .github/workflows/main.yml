@@ -1,0 +1,66 @@
+
+name: FASTEN_CI
+
+on: [push, pull_request]
+
+env:
+  MPS_VER: "2019.3"
+  MPS_ZIP: "https://download.jetbrains.com/mps/2019.3/MPS-2019.3.4.zip"
+  JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Download MPS
+      run: |
+        echo "Downloading MPS"
+        echo ${MPS_ZIP}
+        curl -L ${MPS_ZIP} > "MPS.zip"
+        
+        echo "Unzipping MPS"
+        unzip -o "MPS.zip" -d ~
+        
+        echo "Creating symbolic link to MPS folder"
+        ln -s '/home/runner/MPS ${MPS_VER}'/ MPS
+        
+        echo "Downloading JBR - JetBrainsRuntime"
+        curl -L ${JBR} > "jbr.tar.gz"
+        
+        echo "Extracting JBR to MPS folder"
+        tar -C '/home/runner/MPS '${MPS_VER}'/' -zxvf "jbr.tar.gz"
+        
+    - name: Change FASTEN config
+      run: |
+        echo "Changing config"
+        echo "mpsHomeDir=/home/runner/MPS "${MPS_VER} > gradle.properties
+        echo "mps.home=/home/runner/MPS "${MPS_VER} >> gradle.properties
+        echo "mbeddr.formal.home=/home/runner/work/mbeddr.formal" >> gradle.properties
+        
+        echo "Gradle Properties:"
+        cat gradle.properties
+      
+    - name: Set up Gradle
+      run: |
+        echo "Setting up gradle build..."
+        sudo apt install openjdk-11-jdk
+        sudo apt install gradle
+        
+        chmod +x ./gradlew
+        
+    - name: Running Gradle build
+      run: |
+        export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        export JB_JAVA11_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        export JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        ./gradlew
+      
+    - name: Archive distribution
+      uses: actions/upload-artifact@v1
+      with:
+        name: fasten-distribution
+        path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-1.0-SNAPSHOT.zip
+
