@@ -127,6 +127,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -302,19 +305,21 @@
                     <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
                     <node concept="2pJxcG" id="mJkiyMCGhj" role="2pJxcM">
                       <ref role="2pJxcJ" to="ehqg:6mm$FLYVIZj" resolve="value" />
-                      <node concept="3cpWs3" id="mJkiyMCGEY" role="28ntcv">
-                        <node concept="1eOMI4" id="mJkiyMCGH6" role="3uHU7w">
-                          <node concept="3cpWsd" id="mJkiyMCH$0" role="1eOMHV">
-                            <node concept="3cmrfG" id="mJkiyMCH$m" role="3uHU7w">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="37vLTw" id="mJkiyMCGN_" role="3uHU7B">
-                              <ref role="3cqZAo" node="mJkiyMCuBT" resolve="stepsNumber" />
+                      <node concept="WxPPo" id="7eXh0gmQhwk" role="28ntcv">
+                        <node concept="3cpWs3" id="mJkiyMCGEY" role="WxPPp">
+                          <node concept="1eOMI4" id="mJkiyMCGH6" role="3uHU7w">
+                            <node concept="3cpWsd" id="mJkiyMCH$0" role="1eOMHV">
+                              <node concept="3cmrfG" id="mJkiyMCH$m" role="3uHU7w">
+                                <property role="3cmrfH" value="1" />
+                              </node>
+                              <node concept="37vLTw" id="mJkiyMCGN_" role="3uHU7B">
+                                <ref role="3cqZAo" node="mJkiyMCuBT" resolve="stepsNumber" />
+                              </node>
                             </node>
                           </node>
-                        </node>
-                        <node concept="Xl_RD" id="mJkiyMCGji" role="3uHU7B">
-                          <property role="Xl_RC" value="__crtStep = " />
+                          <node concept="Xl_RD" id="mJkiyMCGji" role="3uHU7B">
+                            <property role="Xl_RC" value="__crtStep = " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -349,10 +354,12 @@
                     <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
                     <node concept="2pJxcG" id="4Hts7PYEptN" role="2pJxcM">
                       <ref role="2pJxcJ" to="ehqg:6mm$FLYVIZj" resolve="value" />
-                      <node concept="1rXfSq" id="4Hts7PYEpuF" role="28ntcv">
-                        <ref role="37wK5l" node="4Hts7PYEojQ" resolve="nameForInitialInputPort" />
-                        <node concept="37vLTw" id="4Hts7PYEpvF" role="37wK5m">
-                          <ref role="3cqZAo" node="4Hts7PYEg1f" resolve="currentInputPort" />
+                      <node concept="WxPPo" id="7eXh0gmQhwl" role="28ntcv">
+                        <node concept="1rXfSq" id="4Hts7PYEpuF" role="WxPPp">
+                          <ref role="37wK5l" node="4Hts7PYEojQ" resolve="nameForInitialInputPort" />
+                          <node concept="37vLTw" id="4Hts7PYEpvF" role="37wK5m">
+                            <ref role="3cqZAo" node="4Hts7PYEg1f" resolve="currentInputPort" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -404,12 +411,14 @@
                         <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
                         <node concept="2pJxcG" id="mJkiyMCVP0" role="2pJxcM">
                           <ref role="2pJxcJ" to="ehqg:6mm$FLYVIZj" resolve="value" />
-                          <node concept="3cpWs3" id="mJkiyMCWgA" role="28ntcv">
-                            <node concept="37vLTw" id="mJkiyMCWk_" role="3uHU7w">
-                              <ref role="3cqZAo" node="mJkiyMCuC3" resolve="crtStep" />
-                            </node>
-                            <node concept="Xl_RD" id="mJkiyMCVSz" role="3uHU7B">
-                              <property role="Xl_RC" value="__crtStep = " />
+                          <node concept="WxPPo" id="7eXh0gmQhwm" role="28ntcv">
+                            <node concept="3cpWs3" id="mJkiyMCWgA" role="WxPPp">
+                              <node concept="37vLTw" id="mJkiyMCWk_" role="3uHU7w">
+                                <ref role="3cqZAo" node="mJkiyMCuC3" resolve="crtStep" />
+                              </node>
+                              <node concept="Xl_RD" id="mJkiyMCVSz" role="3uHU7B">
+                                <property role="Xl_RC" value="__crtStep = " />
+                              </node>
                             </node>
                           </node>
                         </node>

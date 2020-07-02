@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:57f949ab-9c4b-4a91-9229-f74fc9798a75(test.fasten.base._020_ts_tests_cbd_msc_testcode)" doNotGenerate="true">
+<model ref="r:57f949ab-9c4b-4a91-9229-f74fc9798a75(test.fasten.base._020_ts_tests_cbd_msc_testcode)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />

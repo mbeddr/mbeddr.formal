@@ -2,15 +2,15 @@
 <model ref="r:0da43dab-51b4-49c4-9dae-6b508a700deb(com.mbeddr.formal.nusmv.arch.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="4" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -41,6 +41,8 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
@@ -93,6 +95,7 @@
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
@@ -109,7 +112,6 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -308,7 +310,7 @@
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -352,6 +354,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
         <child id="8182547171709738803" name="nodes" index="36be1Z" />
@@ -4351,7 +4356,7 @@
                       </node>
                     </node>
                     <node concept="3SKdUt" id="43FRfGJPQuw" role="3cqZAp">
-                      <node concept="1PaTwC" id="52LJyEZhcAs" role="3ndbpf">
+                      <node concept="1PaTwC" id="52LJyEZhcAs" role="1aUNEU">
                         <node concept="3oM_SD" id="52LJyEZhcAt" role="1PaTwD">
                           <property role="3oM_SC" value="patch" />
                         </node>
@@ -4786,7 +4791,7 @@
                       </node>
                     </node>
                     <node concept="3SKdUt" id="43FRfGJS37M" role="3cqZAp">
-                      <node concept="1PaTwC" id="52LJyEZhcAx" role="3ndbpf">
+                      <node concept="1PaTwC" id="52LJyEZhcAx" role="1aUNEU">
                         <node concept="3oM_SD" id="52LJyEZhcAy" role="1PaTwD">
                           <property role="3oM_SC" value="patch" />
                         </node>
@@ -5523,9 +5528,6 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="7Z6$Wo5Ro_4">
-    <ref role="aqKnT" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
-  </node>
   <node concept="24kQdi" id="2QUcAU1XKF$">
     <ref role="1XX52x" to="rvcq:3ZkhnXRcJqG" resolve="ModulesWiringSection" />
     <node concept="3EZMnI" id="6NmtaR1UkYe" role="2wV5jI">
@@ -5640,8 +5642,10 @@
                             <ref role="2pJxaS" to="rvcq:5HwHP1Odz4y" resolve="Output" />
                             <node concept="2pJxcG" id="25Ap4XXzvZA" role="2pJxcM">
                               <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                              <node concept="Xl_RD" id="25Ap4XXzw0u" role="28ntcv">
-                                <property role="Xl_RC" value="port" />
+                              <node concept="WxPPo" id="7eXh0gmQhvN" role="28ntcv">
+                                <node concept="Xl_RD" id="25Ap4XXzw0u" role="WxPPp">
+                                  <property role="Xl_RC" value="port" />
+                                </node>
                               </node>
                             </node>
                             <node concept="2pIpSj" id="25Ap4XXzw1M" role="2pJxcM">
@@ -5953,6 +5957,10 @@
     <node concept="2aJ2om" id="VJbr0X5q6Y" role="CpUAK">
       <ref role="2$4xQ3" to="wfnd:7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
     </node>
+  </node>
+  <node concept="22mcaB" id="7Z6$Wo5Ro_4">
+    <ref role="aqKnT" to="rvcq:43FRfGJQZfY" resolve="UnboundPortExpression" />
+    <node concept="22hDWj" id="7eXh0gmQhuN" role="22hAXT" />
   </node>
 </model>
 

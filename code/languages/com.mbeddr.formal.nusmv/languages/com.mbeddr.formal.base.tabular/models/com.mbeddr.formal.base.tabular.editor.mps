@@ -2,7 +2,7 @@
 <model ref="r:d9a13335-48ea-412b-9ef7-e8781c842768(com.mbeddr.formal.base.tabular.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -23,6 +23,7 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -32,7 +33,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
@@ -53,6 +53,7 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
@@ -80,6 +81,7 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="7985135009827365938" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Placeholder" flags="ng" index="1IAO7e" />
+      <concept id="5624877018226900666" name="jetbrains.mps.lang.editor.structure.TransformationMenu" flags="ng" index="3ICUPy" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
@@ -825,108 +827,6 @@
       </node>
     </node>
   </node>
-  <node concept="IW6AY" id="l_5LCBTaO7">
-    <property role="3GE5qa" value="horizontal_condition_table" />
-    <ref role="aqKnT" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
-    <node concept="1Qtc8_" id="l_5LCBRK3b" role="IW6Ez">
-      <node concept="2j_NTm" id="l_5LCBS3Kd" role="1Qtc8$" />
-      <node concept="IWgqT" id="l_5LCBRK3r" role="1Qtc8A">
-        <node concept="1hCUdq" id="l_5LCBRK3s" role="1hCUd6">
-          <node concept="3clFbS" id="l_5LCBRK3t" role="2VODD2">
-            <node concept="3clFbF" id="l_5LCBRKcw" role="3cqZAp">
-              <node concept="Xl_RD" id="l_5LCBRKcv" role="3clFbG">
-                <property role="Xl_RC" value="Delete Column" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="IWg2L" id="l_5LCBRK3u" role="IWgqQ">
-          <node concept="3clFbS" id="l_5LCBRK3v" role="2VODD2">
-            <node concept="3clFbJ" id="2hJzQOWIPnS" role="3cqZAp">
-              <node concept="3clFbS" id="2hJzQOWIPnU" role="3clFbx">
-                <node concept="3clFbF" id="2hJzQOWITDg" role="3cqZAp">
-                  <node concept="2YIFZM" id="2hJzQOWITE3" role="3clFbG">
-                    <ref role="37wK5l" node="5$Mxnm$sHxN" resolve="removeColumn" />
-                    <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
-                    <node concept="7Obwk" id="2hJzQOWITEE" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="2hJzQOWIQE9" role="3clFbw">
-                <node concept="2OqwBi" id="2hJzQOWIPyV" role="2Oq$k0">
-                  <node concept="7Obwk" id="2hJzQOWIPov" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="2hJzQOWIQbJ" role="2OqNvi">
-                    <node concept="1xMEDy" id="2hJzQOWIQbL" role="1xVPHs">
-                      <node concept="chp4Y" id="2hJzQOWIQdV" role="ri$Ld">
-                        <ref role="cht4Q" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3x8VRR" id="2hJzQOWITAJ" role="2OqNvi" />
-              </node>
-              <node concept="9aQIb" id="2hJzQOWITFi" role="9aQIa">
-                <node concept="3clFbS" id="2hJzQOWITFj" role="9aQI4">
-                  <node concept="3clFbF" id="l_5LCBRL0W" role="3cqZAp">
-                    <node concept="2YIFZM" id="l_5LCBRL1r" role="3clFbG">
-                      <ref role="37wK5l" node="7Z6$Wo5M$fD" resolve="removeColumn" />
-                      <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils_old" />
-                      <node concept="7Obwk" id="l_5LCBRL1K" role="37wK5m" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="IWgqT" id="5$Mxnm$sEw0" role="1Qtc8A">
-        <node concept="1hCUdq" id="5$Mxnm$sEw1" role="1hCUd6">
-          <node concept="3clFbS" id="5$Mxnm$sEw2" role="2VODD2">
-            <node concept="3clFbF" id="5$Mxnm$sEw3" role="3cqZAp">
-              <node concept="Xl_RD" id="5$Mxnm$sEw4" role="3clFbG">
-                <property role="Xl_RC" value="Add Left Column" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="IWg2L" id="5$Mxnm$sEw5" role="IWgqQ">
-          <node concept="3clFbS" id="5$Mxnm$sEw6" role="2VODD2">
-            <node concept="3clFbF" id="5$Mxnm$sEw7" role="3cqZAp">
-              <node concept="2YIFZM" id="5$Mxnm$sEw8" role="3clFbG">
-                <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
-                <ref role="37wK5l" node="5$Mxnm$sHyD" resolve="addLeftColumn" />
-                <node concept="7Obwk" id="5$Mxnm$sEw9" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="IWgqT" id="5$Mxnm$sEwa" role="1Qtc8A">
-        <node concept="1hCUdq" id="5$Mxnm$sEwb" role="1hCUd6">
-          <node concept="3clFbS" id="5$Mxnm$sEwc" role="2VODD2">
-            <node concept="3clFbF" id="5$Mxnm$sEwd" role="3cqZAp">
-              <node concept="Xl_RD" id="5$Mxnm$sEwe" role="3clFbG">
-                <property role="Xl_RC" value="Add Right Column" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="IWg2L" id="5$Mxnm$sEwf" role="IWgqQ">
-          <node concept="3clFbS" id="5$Mxnm$sEwg" role="2VODD2">
-            <node concept="3clFbF" id="5$Mxnm$sEwh" role="3cqZAp">
-              <node concept="2YIFZM" id="5$Mxnm$sEwi" role="3clFbG">
-                <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
-                <ref role="37wK5l" node="5$Mxnm$sHz8" resolve="addRightColumn" />
-                <node concept="7Obwk" id="5$Mxnm$sEwj" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1IAO7e" id="5$Mxnm$sEvs" role="1Qtc8A" />
-    </node>
-  </node>
   <node concept="24kQdi" id="l_5LCC8zoh">
     <property role="3GE5qa" value="new_condition_table.base" />
     <ref role="1XX52x" to="vlrt:l_5LCC8zog" resolve="AbstractSubcondition" />
@@ -1297,57 +1197,6 @@
               <node concept="10M0yZ" id="4pkEwgj1vq3" role="3cqZAk">
                 <ref role="3cqZAo" to="z60i:~Color.DARK_GRAY" resolve="DARK_GRAY" />
                 <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="IW6AY" id="l_5LCC$eLs">
-    <property role="3GE5qa" value="new_condition_table.multiple_actions" />
-    <ref role="aqKnT" to="vlrt:l_5LCCuAuC" resolve="ActionRefOutput" />
-    <node concept="1Qtc8_" id="l_5LCC$eLt" role="IW6Ez">
-      <node concept="2j_NTm" id="l_5LCC$eLx" role="1Qtc8$" />
-      <node concept="IWgqT" id="l_5LCC$eL$" role="1Qtc8A">
-        <node concept="1hCUdq" id="l_5LCC$eL_" role="1hCUd6">
-          <node concept="3clFbS" id="l_5LCC$eLA" role="2VODD2">
-            <node concept="3clFbF" id="l_5LCC$eUq" role="3cqZAp">
-              <node concept="Xl_RD" id="l_5LCC$eUp" role="3clFbG">
-                <property role="Xl_RC" value="Add Left Column" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="IWg2L" id="l_5LCC$eLB" role="IWgqQ">
-          <node concept="3clFbS" id="l_5LCC$eLC" role="2VODD2">
-            <node concept="3clFbF" id="l_5LCC_zAT" role="3cqZAp">
-              <node concept="2YIFZM" id="l_5LCC_zNA" role="3clFbG">
-                <ref role="37wK5l" node="l_5LCC_vGR" resolve="addLeftColumn" />
-                <ref role="1Pybhc" node="l_5LCC_vEP" resolve="ActionTableUtils" />
-                <node concept="7Obwk" id="l_5LCC_zXs" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="IWgqT" id="l_5LCC_zYp" role="1Qtc8A">
-        <node concept="1hCUdq" id="l_5LCC_zYq" role="1hCUd6">
-          <node concept="3clFbS" id="l_5LCC_zYr" role="2VODD2">
-            <node concept="3clFbF" id="l_5LCC_zYs" role="3cqZAp">
-              <node concept="Xl_RD" id="l_5LCC_zYt" role="3clFbG">
-                <property role="Xl_RC" value="Add Right Column" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="IWg2L" id="l_5LCC_zYu" role="IWgqQ">
-          <node concept="3clFbS" id="l_5LCC_zYv" role="2VODD2">
-            <node concept="3clFbF" id="l_5LCC_zYw" role="3cqZAp">
-              <node concept="2YIFZM" id="l_5LCC_$zc" role="3clFbG">
-                <ref role="37wK5l" node="l_5LCC_y7x" resolve="addRightColumn" />
-                <ref role="1Pybhc" node="l_5LCC_vEP" resolve="ActionTableUtils" />
-                <node concept="7Obwk" id="l_5LCC_$zd" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -2707,6 +2556,159 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5$Mxnm$sH$t" role="jymVt" />
+  </node>
+  <node concept="3ICUPy" id="l_5LCBTaO7">
+    <ref role="aqKnT" to="vlrt:3JhRrgbktEe" resolve="IFunctionValueContent" />
+    <node concept="22hDWj" id="7eXh0gmQhuK" role="22hAXT" />
+    <node concept="1Qtc8_" id="l_5LCBRK3b" role="IW6Ez">
+      <node concept="2j_NTm" id="l_5LCBS3Kd" role="1Qtc8$" />
+      <node concept="IWgqT" id="l_5LCBRK3r" role="1Qtc8A">
+        <node concept="1hCUdq" id="l_5LCBRK3s" role="1hCUd6">
+          <node concept="3clFbS" id="l_5LCBRK3t" role="2VODD2">
+            <node concept="3clFbF" id="l_5LCBRKcw" role="3cqZAp">
+              <node concept="Xl_RD" id="l_5LCBRKcv" role="3clFbG">
+                <property role="Xl_RC" value="Delete Column" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="l_5LCBRK3u" role="IWgqQ">
+          <node concept="3clFbS" id="l_5LCBRK3v" role="2VODD2">
+            <node concept="3clFbJ" id="2hJzQOWIPnS" role="3cqZAp">
+              <node concept="3clFbS" id="2hJzQOWIPnU" role="3clFbx">
+                <node concept="3clFbF" id="2hJzQOWITDg" role="3cqZAp">
+                  <node concept="2YIFZM" id="2hJzQOWITE3" role="3clFbG">
+                    <ref role="37wK5l" node="5$Mxnm$sHxN" resolve="removeColumn" />
+                    <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+                    <node concept="7Obwk" id="2hJzQOWITEE" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2hJzQOWIQE9" role="3clFbw">
+                <node concept="2OqwBi" id="2hJzQOWIPyV" role="2Oq$k0">
+                  <node concept="7Obwk" id="2hJzQOWIPov" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="2hJzQOWIQbJ" role="2OqNvi">
+                    <node concept="1xMEDy" id="2hJzQOWIQbL" role="1xVPHs">
+                      <node concept="chp4Y" id="2hJzQOWIQdV" role="ri$Ld">
+                        <ref role="cht4Q" to="vlrt:5$Mxnm$qGSM" resolve="HorizontalConditionTable_new" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="2hJzQOWITAJ" role="2OqNvi" />
+              </node>
+              <node concept="9aQIb" id="2hJzQOWITFi" role="9aQIa">
+                <node concept="3clFbS" id="2hJzQOWITFj" role="9aQI4">
+                  <node concept="3clFbF" id="l_5LCBRL0W" role="3cqZAp">
+                    <node concept="2YIFZM" id="l_5LCBRL1r" role="3clFbG">
+                      <ref role="37wK5l" node="7Z6$Wo5M$fD" resolve="removeColumn" />
+                      <ref role="1Pybhc" node="7Z6$Wo5M$dV" resolve="TableEditorUtils_old" />
+                      <node concept="7Obwk" id="l_5LCBRL1K" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="IWgqT" id="5$Mxnm$sEw0" role="1Qtc8A">
+        <node concept="1hCUdq" id="5$Mxnm$sEw1" role="1hCUd6">
+          <node concept="3clFbS" id="5$Mxnm$sEw2" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEw3" role="3cqZAp">
+              <node concept="Xl_RD" id="5$Mxnm$sEw4" role="3clFbG">
+                <property role="Xl_RC" value="Add Left Column" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="5$Mxnm$sEw5" role="IWgqQ">
+          <node concept="3clFbS" id="5$Mxnm$sEw6" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEw7" role="3cqZAp">
+              <node concept="2YIFZM" id="5$Mxnm$sEw8" role="3clFbG">
+                <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+                <ref role="37wK5l" node="5$Mxnm$sHyD" resolve="addLeftColumn" />
+                <node concept="7Obwk" id="5$Mxnm$sEw9" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="IWgqT" id="5$Mxnm$sEwa" role="1Qtc8A">
+        <node concept="1hCUdq" id="5$Mxnm$sEwb" role="1hCUd6">
+          <node concept="3clFbS" id="5$Mxnm$sEwc" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEwd" role="3cqZAp">
+              <node concept="Xl_RD" id="5$Mxnm$sEwe" role="3clFbG">
+                <property role="Xl_RC" value="Add Right Column" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="5$Mxnm$sEwf" role="IWgqQ">
+          <node concept="3clFbS" id="5$Mxnm$sEwg" role="2VODD2">
+            <node concept="3clFbF" id="5$Mxnm$sEwh" role="3cqZAp">
+              <node concept="2YIFZM" id="5$Mxnm$sEwi" role="3clFbG">
+                <ref role="1Pybhc" node="5$Mxnm$sHxK" resolve="TableEditorUtils_new" />
+                <ref role="37wK5l" node="5$Mxnm$sHz8" resolve="addRightColumn" />
+                <node concept="7Obwk" id="5$Mxnm$sEwj" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IAO7e" id="5$Mxnm$sEvs" role="1Qtc8A" />
+    </node>
+  </node>
+  <node concept="3ICUPy" id="l_5LCC$eLs">
+    <ref role="aqKnT" to="vlrt:l_5LCCuAuC" resolve="ActionRefOutput" />
+    <node concept="22hDWj" id="7eXh0gmQhuL" role="22hAXT" />
+    <node concept="1Qtc8_" id="l_5LCC$eLt" role="IW6Ez">
+      <node concept="2j_NTm" id="l_5LCC$eLx" role="1Qtc8$" />
+      <node concept="IWgqT" id="l_5LCC$eL$" role="1Qtc8A">
+        <node concept="1hCUdq" id="l_5LCC$eL_" role="1hCUd6">
+          <node concept="3clFbS" id="l_5LCC$eLA" role="2VODD2">
+            <node concept="3clFbF" id="l_5LCC$eUq" role="3cqZAp">
+              <node concept="Xl_RD" id="l_5LCC$eUp" role="3clFbG">
+                <property role="Xl_RC" value="Add Left Column" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="l_5LCC$eLB" role="IWgqQ">
+          <node concept="3clFbS" id="l_5LCC$eLC" role="2VODD2">
+            <node concept="3clFbF" id="l_5LCC_zAT" role="3cqZAp">
+              <node concept="2YIFZM" id="l_5LCC_zNA" role="3clFbG">
+                <ref role="37wK5l" node="l_5LCC_vGR" resolve="addLeftColumn" />
+                <ref role="1Pybhc" node="l_5LCC_vEP" resolve="ActionTableUtils" />
+                <node concept="7Obwk" id="l_5LCC_zXs" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="IWgqT" id="l_5LCC_zYp" role="1Qtc8A">
+        <node concept="1hCUdq" id="l_5LCC_zYq" role="1hCUd6">
+          <node concept="3clFbS" id="l_5LCC_zYr" role="2VODD2">
+            <node concept="3clFbF" id="l_5LCC_zYs" role="3cqZAp">
+              <node concept="Xl_RD" id="l_5LCC_zYt" role="3clFbG">
+                <property role="Xl_RC" value="Add Right Column" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="l_5LCC_zYu" role="IWgqQ">
+          <node concept="3clFbS" id="l_5LCC_zYv" role="2VODD2">
+            <node concept="3clFbF" id="l_5LCC_zYw" role="3cqZAp">
+              <node concept="2YIFZM" id="l_5LCC_$zc" role="3clFbG">
+                <ref role="37wK5l" node="l_5LCC_y7x" resolve="addRightColumn" />
+                <ref role="1Pybhc" node="l_5LCC_vEP" resolve="ActionTableUtils" />
+                <node concept="7Obwk" id="l_5LCC_$zd" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

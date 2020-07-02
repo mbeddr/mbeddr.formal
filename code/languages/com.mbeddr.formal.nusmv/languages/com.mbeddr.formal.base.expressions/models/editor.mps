@@ -2,7 +2,7 @@
 <model ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -17,6 +17,8 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="671290755174094691" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_parameterObject" flags="nn" index="2itN01" />
       <concept id="671290755174094686" name="jetbrains.mps.lang.editor.structure.QueryFunction_MethodPresentation" flags="in" index="2itN0W" />
@@ -39,6 +41,7 @@
         <child id="8178273524755058633" name="type" index="3evHYT" />
         <child id="6419604448124516218" name="isMethodCurrent" index="3LVrd1" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -54,6 +57,7 @@
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -65,7 +69,6 @@
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="4526149749187797167" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_StyledText" flags="nn" index="1unZQo" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
@@ -529,10 +532,6 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="6NmtaR20s5N">
-    <property role="3GE5qa" value="expressions.literals" />
-    <ref role="aqKnT" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
-  </node>
   <node concept="24kQdi" id="1IrBcRpi7Ln">
     <property role="3GE5qa" value="expressions.unary" />
     <ref role="1XX52x" to="ehqg:1IrBcRpi7Jh" resolve="ParensExpression" />
@@ -617,10 +616,6 @@
       <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
-  <node concept="3p36aQ" id="7mSH3WnxOXf">
-    <property role="3GE5qa" value="expressions.dot" />
-    <ref role="aqKnT" to="ehqg:7mSH3WmWS3c" resolve="GenericDotExpression" />
-  </node>
   <node concept="24kQdi" id="6mm$FLYVIZK">
     <property role="3GE5qa" value="expressions" />
     <ref role="1XX52x" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
@@ -676,18 +671,6 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
-  </node>
-  <node concept="3p36aQ" id="7Z6$Wo5UqVC">
-    <property role="3GE5qa" value="expressions.arithmetic" />
-    <ref role="aqKnT" to="ehqg:6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
-  </node>
-  <node concept="3p36aQ" id="7Z6$Wo5UXFb">
-    <property role="3GE5qa" value="expressions.comparison" />
-    <ref role="aqKnT" to="ehqg:6NmtaR1YmTj" resolve="BinaryComparisonExpression" />
-  </node>
-  <node concept="3p36aQ" id="7Z6$Wo5UXF_">
-    <property role="3GE5qa" value="expressions.logical" />
-    <ref role="aqKnT" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
   </node>
   <node concept="2$ogZn" id="5bMrXoEyj8A">
     <property role="3GE5qa" value="types" />
@@ -924,6 +907,33 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="22mcaB" id="6NmtaR20s5N">
+    <ref role="aqKnT" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
+    <node concept="22hDWj" id="7eXh0gmQhuF" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="7mSH3WnxOXf">
+    <ref role="aqKnT" to="ehqg:7mSH3WmWS3c" resolve="GenericDotExpression" />
+    <node concept="22hDWj" id="7eXh0gmQhuG" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="7Z6$Wo5UqVC">
+    <ref role="aqKnT" to="ehqg:6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
+    <node concept="22hDWj" id="7eXh0gmQhuH" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="7Z6$Wo5UXFb">
+    <ref role="aqKnT" to="ehqg:6NmtaR1YmTj" resolve="BinaryComparisonExpression" />
+    <node concept="22hDWj" id="7eXh0gmQhuI" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="7Z6$Wo5UXF_">
+    <ref role="aqKnT" to="ehqg:6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
+    <node concept="22hDWj" id="7eXh0gmQhuJ" role="22hAXT" />
+  </node>
+  <node concept="PKFIW" id="7KmK1hX1wYc">
+    <property role="TrG5h" value="DummyForGrammarCells" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3F0ifn" id="7KmK1hX1wYd" role="2wV5jI">
+      <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
     </node>
   </node>
 </model>

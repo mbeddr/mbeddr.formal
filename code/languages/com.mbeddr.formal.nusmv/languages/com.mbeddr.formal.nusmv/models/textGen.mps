@@ -2,7 +2,7 @@
 <model ref="r:699fb963-f4b1-4eea-9d68-b44ea59800fe(com.mbeddr.formal.nusmv.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
@@ -61,7 +61,7 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
@@ -441,7 +441,7 @@
     <node concept="11bSqf" id="6NmtaR23v4X" role="11c4hB">
       <node concept="3clFbS" id="6NmtaR23v4Y" role="2VODD2">
         <node concept="3SKdUt" id="6NmtaR23v6B" role="3cqZAp">
-          <node concept="1PaTwC" id="52LJyEZhcBc" role="3ndbpf">
+          <node concept="1PaTwC" id="52LJyEZhcBc" role="1aUNEU">
             <node concept="3oM_SD" id="52LJyEZhcBd" role="1PaTwD">
               <property role="3oM_SC" value="nothing" />
             </node>

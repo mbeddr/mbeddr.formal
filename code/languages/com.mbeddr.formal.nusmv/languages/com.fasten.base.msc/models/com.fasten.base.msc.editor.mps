@@ -2,7 +2,7 @@
 <model ref="r:b0058297-eda3-420c-b64d-8ff4b7cdc382(com.fasten.base.msc.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -22,6 +22,8 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
@@ -53,6 +55,7 @@
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233823429331" name="jetbrains.mps.lang.editor.structure.HorizontalGapStyleClassItem" flags="ln" index="15ARfc" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
@@ -61,7 +64,6 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
         <property id="1215007802031" name="value" index="3$6WeP" />
@@ -246,7 +248,7 @@
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -885,7 +887,7 @@
                   <node concept="3clFbJ" id="4CA5ZMJ5w7T" role="3cqZAp">
                     <node concept="3clFbS" id="4CA5ZMJ5w7V" role="3clFbx">
                       <node concept="3SKdUt" id="4CA5ZMJ5BhB" role="3cqZAp">
-                        <node concept="1PaTwC" id="4CA5ZMJ5BhC" role="3ndbpf">
+                        <node concept="1PaTwC" id="4CA5ZMJ5BhC" role="1aUNEU">
                           <node concept="3oM_SD" id="4CA5ZMJ5BhD" role="1PaTwD">
                             <property role="3oM_SC" value="triangle" />
                           </node>
@@ -1010,7 +1012,7 @@
                     <node concept="9aQIb" id="4CA5ZMJ5EL$" role="9aQIa">
                       <node concept="3clFbS" id="4CA5ZMJ5EL_" role="9aQI4">
                         <node concept="3SKdUt" id="4CA5ZMJ5Fap" role="3cqZAp">
-                          <node concept="1PaTwC" id="4CA5ZMJ5Faq" role="3ndbpf">
+                          <node concept="1PaTwC" id="4CA5ZMJ5Faq" role="1aUNEU">
                             <node concept="3oM_SD" id="4CA5ZMJ5Far" role="1PaTwD">
                               <property role="3oM_SC" value="triangle" />
                             </node>
@@ -1703,7 +1705,7 @@
         </node>
         <node concept="3clFbH" id="5PdLXX5$WPV" role="3cqZAp" />
         <node concept="3SKdUt" id="5PdLXX5$JtA" role="3cqZAp">
-          <node concept="1PaTwC" id="5PdLXX5$JtB" role="3ndbpf">
+          <node concept="1PaTwC" id="5PdLXX5$JtB" role="1aUNEU">
             <node concept="3oM_SD" id="5PdLXX5$JtC" role="1PaTwD">
               <property role="3oM_SC" value="draw" />
             </node>
@@ -2661,10 +2663,6 @@
     </node>
     <node concept="2tJIrI" id="5PdLXX5NC7m" role="jymVt" />
   </node>
-  <node concept="3p36aQ" id="5PdLXX5CqRi">
-    <property role="3GE5qa" value="timeline" />
-    <ref role="aqKnT" to="6jj4:5PdLXX5$HCw" resolve="EmptyTimelineEntity" />
-  </node>
   <node concept="312cEu" id="5PdLXX5GREX">
     <property role="TrG5h" value="MSCObjectSpacing" />
     <property role="3GE5qa" value="objects" />
@@ -2732,7 +2730,7 @@
               </node>
               <node concept="3clFbH" id="5PdLXX5NxMu" role="3cqZAp" />
               <node concept="3SKdUt" id="5PdLXX5Nydv" role="3cqZAp">
-                <node concept="1PaTwC" id="5PdLXX5Nydw" role="3ndbpf">
+                <node concept="1PaTwC" id="5PdLXX5Nydw" role="1aUNEU">
                   <node concept="3oM_SD" id="5PdLXX5Nydy" role="1PaTwD">
                     <property role="3oM_SC" value="Todo:" />
                   </node>
@@ -4888,6 +4886,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="22mcaB" id="5PdLXX5CqRi">
+    <ref role="aqKnT" to="6jj4:5PdLXX5$HCw" resolve="EmptyTimelineEntity" />
+    <node concept="22hDWj" id="7eXh0gmQhuB" role="22hAXT" />
   </node>
 </model>
 

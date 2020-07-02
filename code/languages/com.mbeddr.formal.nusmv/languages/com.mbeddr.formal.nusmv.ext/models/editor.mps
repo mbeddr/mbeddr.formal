@@ -2,7 +2,7 @@
 <model ref="r:46dae0ae-2b8b-4bf0-87f2-880b816d1d6b(com.mbeddr.formal.nusmv.ext.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -227,6 +227,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -766,10 +769,12 @@
                   <ref role="2pJxaS" to="gioj:6NmtaR1SULQ" resolve="ParameterDeclaration" />
                   <node concept="2pJxcG" id="25dEoZduMDL" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="2OqwBi" id="25dEoZduMDM" role="28ntcv">
-                      <node concept="0IXxy" id="25dEoZduMDN" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="25dEoZduMDO" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="WxPPo" id="7eXh0gmQhw6" role="28ntcv">
+                      <node concept="2OqwBi" id="25dEoZduMDM" role="WxPPp">
+                        <node concept="0IXxy" id="25dEoZduMDN" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="25dEoZduMDO" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -953,10 +958,12 @@
                     <ref role="2pJxaS" to="6z8w:4Jpgh6IGrD8" resolve="TypedParameterDeclaration" />
                     <node concept="2pJxcG" id="25dEoZduzqi" role="2pJxcM">
                       <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                      <node concept="2OqwBi" id="25dEoZduzqj" role="28ntcv">
-                        <node concept="7Obwk" id="25dEoZduzqk" role="2Oq$k0" />
-                        <node concept="3TrcHB" id="25dEoZduzql" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="WxPPo" id="7eXh0gmQhw7" role="28ntcv">
+                        <node concept="2OqwBi" id="25dEoZduzqj" role="WxPPp">
+                          <node concept="7Obwk" id="25dEoZduzqk" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="25dEoZduzql" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
                         </node>
                       </node>
                     </node>

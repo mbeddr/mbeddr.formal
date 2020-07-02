@@ -2,7 +2,7 @@
 <model ref="r:3a502f67-5b5c-4b44-b2ee-59469141accb(com.mbeddr.formal.nusmv.importer.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -20,6 +20,8 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -41,11 +43,11 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -481,18 +483,6 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="7Z6$Wo5OTP8">
-    <ref role="aqKnT" to="l8i4:5Rx4RPFVY8u" resolve="NotReifiedVarRef" />
-  </node>
-  <node concept="3p36aQ" id="7Z6$Wo5U5o5">
-    <ref role="aqKnT" to="l8i4:1WSRfTw4Sme" resolve="NotReified" />
-  </node>
-  <node concept="3p36aQ" id="70Z3iwfl66g">
-    <ref role="aqKnT" to="l8i4:41yfEs6hm3y" resolve="ImporterWarning" />
-  </node>
-  <node concept="3p36aQ" id="2H74AM1EmIF">
-    <ref role="aqKnT" to="l8i4:2H74AM1EmIe" resolve="NotReifiedModuleType" />
-  </node>
   <node concept="24kQdi" id="2H74AM1EmJ5">
     <ref role="1XX52x" to="l8i4:2H74AM1EmIe" resolve="NotReifiedModuleType" />
     <node concept="3EZMnI" id="2H74AM1EmJ7" role="2wV5jI">
@@ -517,8 +507,25 @@
       <node concept="l2Vlx" id="2H74AM1EmJe" role="2iSdaV" />
     </node>
   </node>
-  <node concept="3p36aQ" id="1trCN7leC75">
+  <node concept="22mcaB" id="7Z6$Wo5OTP8">
+    <ref role="aqKnT" to="l8i4:5Rx4RPFVY8u" resolve="NotReifiedVarRef" />
+    <node concept="22hDWj" id="7eXh0gmQhv7" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="7Z6$Wo5U5o5">
+    <ref role="aqKnT" to="l8i4:1WSRfTw4Sme" resolve="NotReified" />
+    <node concept="22hDWj" id="7eXh0gmQhv8" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="70Z3iwfl66g">
+    <ref role="aqKnT" to="l8i4:41yfEs6hm3y" resolve="ImporterWarning" />
+    <node concept="22hDWj" id="7eXh0gmQhv9" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="2H74AM1EmIF">
+    <ref role="aqKnT" to="l8i4:2H74AM1EmIe" resolve="NotReifiedModuleType" />
+    <node concept="22hDWj" id="7eXh0gmQhva" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="1trCN7leC75">
     <ref role="aqKnT" to="l8i4:1uMmOZGjNBN" resolve="NotReifedDotExpression" />
+    <node concept="22hDWj" id="7eXh0gmQhvb" role="22hAXT" />
   </node>
 </model>
 
