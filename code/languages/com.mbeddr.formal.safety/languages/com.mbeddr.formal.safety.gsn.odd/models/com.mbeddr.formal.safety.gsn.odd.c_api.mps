@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c4255d6a-5e54-4d68-b4c9-c8d34b4aa181(com.mbeddr.formal.safety.gsn.odd.c_api)" doNotGenerate="true">
+<model ref="r:c4255d6a-5e54-4d68-b4c9-c8d34b4aa181(com.mbeddr.formal.safety.gsn.odd.c_api)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="ef89f137-f966-4966-a202-ab9ea26e79fe" name="com.mbeddr.formal.spin.c.core" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />

@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -124,6 +124,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
         <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
@@ -228,8 +231,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2RlaC$P8af7" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2RlaC$P8ahF" role="28ntcv">
-                          <property role="Xl_RC" value="All hazards from \n" />
+                        <node concept="WxPPo" id="7KmK1hXsUxw" role="28ntcv">
+                          <node concept="Xl_RD" id="2RlaC$P8ahF" role="WxPPp">
+                            <property role="Xl_RC" value="All hazards from \n" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -240,8 +245,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2RlaC$P8b5d" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2RlaC$P8b7X" role="28ntcv">
-                          <property role="Xl_RC" value="\n have been addressed" />
+                        <node concept="WxPPo" id="7KmK1hXsUxx" role="28ntcv">
+                          <node concept="Xl_RD" id="2RlaC$P8b7X" role="WxPPp">
+                            <property role="Xl_RC" value="\n have been addressed" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -340,8 +347,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2RlaC$PaSNk" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2RlaC$PaSPS" role="28ntcv">
-                          <property role="Xl_RC" value="Hazard " />
+                        <node concept="WxPPo" id="7KmK1hXsUxy" role="28ntcv">
+                          <node concept="Xl_RD" id="2RlaC$PaSPS" role="WxPPp">
+                            <property role="Xl_RC" value="Hazard " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -352,8 +361,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2RlaC$PaTj_" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2RlaC$PaTpT" role="28ntcv">
-                          <property role="Xl_RC" value="\n has been mitigated" />
+                        <node concept="WxPPo" id="7KmK1hXsUxz" role="28ntcv">
+                          <node concept="Xl_RD" id="2RlaC$PaTpT" role="WxPPp">
+                            <property role="Xl_RC" value="\n has been mitigated" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -489,8 +500,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2rzNEUxND6q" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2rzNEUxND8Y" role="28ntcv">
-                          <property role="Xl_RC" value="All requirements from \n" />
+                        <node concept="WxPPo" id="7KmK1hXsUx$" role="28ntcv">
+                          <node concept="Xl_RD" id="2rzNEUxND8Y" role="WxPPp">
+                            <property role="Xl_RC" value="All requirements from \n" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -501,8 +514,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2rzNEUxNDLm" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2rzNEUxNDO6" role="28ntcv">
-                          <property role="Xl_RC" value="\n are satisfied" />
+                        <node concept="WxPPo" id="7KmK1hXsUx_" role="28ntcv">
+                          <node concept="Xl_RD" id="2rzNEUxNDO6" role="WxPPp">
+                            <property role="Xl_RC" value="\n are satisfied" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -613,8 +628,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="65LrkjiWTka" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="65LrkjiWTkb" role="28ntcv">
-                          <property role="Xl_RC" value="\n is satisfied" />
+                        <node concept="WxPPo" id="7KmK1hXsUxA" role="28ntcv">
+                          <node concept="Xl_RD" id="65LrkjiWTkb" role="WxPPp">
+                            <property role="Xl_RC" value="\n is satisfied" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -767,8 +784,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2RlaC$P7v3O" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="5P9zxa4ig8t" role="28ntcv">
-                          <property role="Xl_RC" value="Argumentation based \n on contract-based design \n applied to " />
+                        <node concept="WxPPo" id="7KmK1hXsUxB" role="28ntcv">
+                          <node concept="Xl_RD" id="5P9zxa4ig8t" role="WxPPp">
+                            <property role="Xl_RC" value="Argumentation based \n on contract-based design \n applied to " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -806,8 +825,10 @@
                     <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                     <node concept="2pJxcG" id="2sg$KXfUe70" role="2pJxcM">
                       <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                      <node concept="Xl_RD" id="2sg$KXfUe95" role="28ntcv">
-                        <property role="Xl_RC" value="The contracts of subcomponents refine \n the contract of \n parent component" />
+                      <node concept="WxPPo" id="7KmK1hXsUxC" role="28ntcv">
+                        <node concept="Xl_RD" id="2sg$KXfUe95" role="WxPPp">
+                          <property role="Xl_RC" value="The contracts of subcomponents refine \n the contract of \n parent component" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -848,8 +869,10 @@
                     <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                     <node concept="2pJxcG" id="2RlaC$P7xmI" role="2pJxcM">
                       <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                      <node concept="Xl_RD" id="2RlaC$P7xmJ" role="28ntcv">
-                        <property role="Xl_RC" value="The compatibility of contract \n of subcomponents is checked" />
+                      <node concept="WxPPo" id="7KmK1hXsUxD" role="28ntcv">
+                        <node concept="Xl_RD" id="2RlaC$P7xmJ" role="WxPPp">
+                          <property role="Xl_RC" value="The compatibility of contract \n of subcomponents is checked" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -950,8 +973,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2RlaC$P60Mt" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2RlaC$P60Mu" role="28ntcv">
-                          <property role="Xl_RC" value="The implementation of \n" />
+                        <node concept="WxPPo" id="7KmK1hXsUxE" role="28ntcv">
+                          <node concept="Xl_RD" id="2RlaC$P60Mu" role="WxPPp">
+                            <property role="Xl_RC" value="The implementation of \n" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -962,8 +987,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="2RlaC$P61f7" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="2RlaC$P61f8" role="28ntcv">
-                          <property role="Xl_RC" value="\n complies with its contract" />
+                        <node concept="WxPPo" id="7KmK1hXsUxF" role="28ntcv">
+                          <node concept="Xl_RD" id="2RlaC$P61f8" role="WxPPp">
+                            <property role="Xl_RC" value="\n complies with its contract" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1118,8 +1145,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="1Y8zh0lZmVp" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="1Y8zh0lZmVq" role="28ntcv">
-                          <property role="Xl_RC" value="Hazard " />
+                        <node concept="WxPPo" id="7KmK1hXsUxG" role="28ntcv">
+                          <node concept="Xl_RD" id="1Y8zh0lZmVq" role="WxPPp">
+                            <property role="Xl_RC" value="Hazard " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1130,8 +1159,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="1Y8zh0lZmVt" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="1Y8zh0lZmVu" role="28ntcv">
-                          <property role="Xl_RC" value="\n has been substituted \n with hazard " />
+                        <node concept="WxPPo" id="7KmK1hXsUxH" role="28ntcv">
+                          <node concept="Xl_RD" id="1Y8zh0lZmVu" role="WxPPp">
+                            <property role="Xl_RC" value="\n has been substituted \n with hazard " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1197,8 +1228,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="1Y8zh0lZllv" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="1Y8zh0lZllw" role="28ntcv">
-                          <property role="Xl_RC" value="Risk associated with hazard " />
+                        <node concept="WxPPo" id="7KmK1hXsUxI" role="28ntcv">
+                          <node concept="Xl_RD" id="1Y8zh0lZllw" role="WxPPp">
+                            <property role="Xl_RC" value="Risk associated with hazard " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1209,8 +1242,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="1Y8zh0lZllz" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="1Y8zh0lZll$" role="28ntcv">
-                          <property role="Xl_RC" value="\n has been shown negligible" />
+                        <node concept="WxPPo" id="7KmK1hXsUxJ" role="28ntcv">
+                          <node concept="Xl_RD" id="1Y8zh0lZll$" role="WxPPp">
+                            <property role="Xl_RC" value="\n has been shown negligible" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1272,8 +1307,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="1Y8zh0lZl2z" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="1Y8zh0lZl2$" role="28ntcv">
-                          <property role="Xl_RC" value="Hazard " />
+                        <node concept="WxPPo" id="7KmK1hXsUxK" role="28ntcv">
+                          <node concept="Xl_RD" id="1Y8zh0lZl2$" role="WxPPp">
+                            <property role="Xl_RC" value="Hazard " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1284,8 +1321,10 @@
                       <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                       <node concept="2pJxcG" id="1Y8zh0lZl2B" role="2pJxcM">
                         <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="Xl_RD" id="1Y8zh0lZl2C" role="28ntcv">
-                          <property role="Xl_RC" value="\n has been eliminated \n and can no longer occur" />
+                        <node concept="WxPPo" id="7KmK1hXsUxL" role="28ntcv">
+                          <node concept="Xl_RD" id="1Y8zh0lZl2C" role="WxPPp">
+                            <property role="Xl_RC" value="\n has been eliminated \n and can no longer occur" />
+                          </node>
                         </node>
                       </node>
                     </node>

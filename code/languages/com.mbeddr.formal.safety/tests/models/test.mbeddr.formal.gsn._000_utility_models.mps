@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f8dc5a00-a473-4d87-ac2d-7eacdefe44f8(test.mbeddr.formal.gsn._000_utility_models)" doNotGenerate="true">
+<model ref="r:f8dc5a00-a473-4d87-ac2d-7eacdefe44f8(test.mbeddr.formal.gsn._000_utility_models)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />

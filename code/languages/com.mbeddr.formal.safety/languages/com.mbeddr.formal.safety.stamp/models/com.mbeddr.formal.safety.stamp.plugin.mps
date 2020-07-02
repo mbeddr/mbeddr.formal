@@ -140,6 +140,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -420,8 +423,10 @@
                       <ref role="2pJxaS" to="bewr:3Cm$$O2vamj" resolve="Action" />
                       <node concept="2pJxcG" id="1JhvKLLNw_5" role="2pJxcM">
                         <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                        <node concept="Xl_RD" id="1JhvKLLNw_6" role="28ntcv">
-                          <property role="Xl_RC" value="NoName" />
+                        <node concept="WxPPo" id="7KmK1hXsUxM" role="28ntcv">
+                          <node concept="Xl_RD" id="1JhvKLLNw_6" role="WxPPp">
+                            <property role="Xl_RC" value="NoName" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -547,8 +552,10 @@
                       <ref role="2pJxaS" to="bewr:3Cm$$O2vamj" resolve="Action" />
                       <node concept="2pJxcG" id="1JhvKLLNTMc" role="2pJxcM">
                         <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                        <node concept="Xl_RD" id="1JhvKLLNTMd" role="28ntcv">
-                          <property role="Xl_RC" value="NoName" />
+                        <node concept="WxPPo" id="7KmK1hXsUxN" role="28ntcv">
+                          <node concept="Xl_RD" id="1JhvKLLNTMd" role="WxPPp">
+                            <property role="Xl_RC" value="NoName" />
+                          </node>
                         </node>
                       </node>
                     </node>
