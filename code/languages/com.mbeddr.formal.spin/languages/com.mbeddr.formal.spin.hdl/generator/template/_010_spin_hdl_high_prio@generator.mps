@@ -192,6 +192,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -382,11 +385,13 @@
                                   <ref role="2pJxaS" to="ehqg:6NmtaR20s4K" resolve="NumberLiteral" />
                                   <node concept="2pJxcG" id="26dfgZmjKWY" role="2pJxcM">
                                     <ref role="2pJxcJ" to="ehqg:6NmtaR20s4L" resolve="value" />
-                                    <node concept="2YIFZM" id="26dfgZmjKWZ" role="28ntcv">
-                                      <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                      <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-                                      <node concept="37vLTw" id="26dfgZmjKX0" role="37wK5m">
-                                        <ref role="3cqZAo" node="26dfgZmjKX1" resolve="i" />
+                                    <node concept="WxPPo" id="7KmK1hXoOUG" role="28ntcv">
+                                      <node concept="2YIFZM" id="26dfgZmjKWZ" role="WxPPp">
+                                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                                        <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
+                                        <node concept="37vLTw" id="26dfgZmjKX0" role="37wK5m">
+                                          <ref role="3cqZAo" node="26dfgZmjKX1" resolve="i" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>

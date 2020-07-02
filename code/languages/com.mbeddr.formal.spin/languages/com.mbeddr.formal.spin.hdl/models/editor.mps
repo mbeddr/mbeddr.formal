@@ -2,7 +2,7 @@
 <model ref="r:cb9ab930-524d-4336-9a55-e8be4ab6255b(com.mbeddr.formal.spin.hdl.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="b4f35ed8-45af-4efa-abe4-00ac26956e69" name="com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
@@ -21,6 +21,8 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
@@ -53,6 +55,7 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -60,7 +63,6 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
-      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -169,9 +171,6 @@
       </node>
     </node>
   </node>
-  <node concept="3p36aQ" id="1ZejHLlNgtE">
-    <ref role="aqKnT" to="y6ji:1ZejHLlNgt7" resolve="EmptyHarnessModuleContent" />
-  </node>
   <node concept="24kQdi" id="1ZejHLlNgu_">
     <property role="3GE5qa" value="decl" />
     <ref role="1XX52x" to="y6ji:1ZejHLlNgu$" resolve="EmptyDeclaration" />
@@ -181,10 +180,6 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
-  </node>
-  <node concept="3p36aQ" id="1ZejHLlNgv4">
-    <property role="3GE5qa" value="decl" />
-    <ref role="aqKnT" to="y6ji:1ZejHLlNgu$" resolve="EmptyDeclaration" />
   </node>
   <node concept="24kQdi" id="1ZejHLlNgvx">
     <property role="3GE5qa" value="decl" />
@@ -381,10 +376,6 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
-  </node>
-  <node concept="3p36aQ" id="1ZejHLlNZ2P">
-    <property role="3GE5qa" value="harness" />
-    <ref role="aqKnT" to="y6ji:1ZejHLlNZ1Q" resolve="EmptyHarnessDefinitionContent" />
   </node>
   <node concept="24kQdi" id="1ZejHLlO7$n">
     <property role="3GE5qa" value="harness.content.nondet_random" />
@@ -944,6 +935,18 @@
       </node>
       <node concept="2iRkQZ" id="5SGsxw7S$QM" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="22mcaB" id="1ZejHLlNgtE">
+    <ref role="aqKnT" to="y6ji:1ZejHLlNgt7" resolve="EmptyHarnessModuleContent" />
+    <node concept="22hDWj" id="7KmK1hXoOUy" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="1ZejHLlNgv4">
+    <ref role="aqKnT" to="y6ji:1ZejHLlNgu$" resolve="EmptyDeclaration" />
+    <node concept="22hDWj" id="7KmK1hXoOUz" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="1ZejHLlNZ2P">
+    <ref role="aqKnT" to="y6ji:1ZejHLlNZ1Q" resolve="EmptyHarnessDefinitionContent" />
+    <node concept="22hDWj" id="7KmK1hXoOU$" role="22hAXT" />
   </node>
 </model>
 
