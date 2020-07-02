@@ -9648,13 +9648,13 @@
         </node>
         <node concept="2iDXIW" id="7n39yospbeW" role="0nOlf">
           <node concept="DABN8" id="6W1kQP6Bq6o" role="DABNk">
-            <ref role="DABNb" node="7n39yospbcX" resolve="Cable temperature too high" />
+            <ref role="DABNb" node="3TSGpjyFlES" resolve="Cable temperature too high" />
           </node>
           <node concept="DABN8" id="66sW2d$Fg2v" role="DABNk">
-            <ref role="DABNb" node="7n39yospbdj" resolve="Smoke comes out of the cable" />
+            <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
           </node>
           <node concept="DABN8" id="2UkUklpZvWa" role="DABNk">
-            <ref role="DABNb" node="7n39yospbdj" resolve="Smoke comes out of the cable" />
+            <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
           </node>
         </node>
       </node>
@@ -9665,13 +9665,13 @@
       </node>
       <node concept="2iDXIW" id="7n39yospbeR" role="0nOlf">
         <node concept="DABN8" id="6W1kQP6Bq6q" role="DABNk">
-          <ref role="DABNb" node="7n39yospbcX" resolve="Cable temperature too high" />
+          <ref role="DABNb" node="3TSGpjyFlES" resolve="Cable temperature too high" />
         </node>
         <node concept="DABN8" id="6W1kQP6Bzra" role="DABNk">
-          <ref role="DABNb" node="7n39yospbdj" resolve="Smoke comes out of the cable" />
+          <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
         </node>
         <node concept="DABN8" id="2UkUklpZvW1" role="DABNk">
-          <ref role="DABNb" node="7n39yospbd7" resolve="The cable catches fire" />
+          <ref role="DABNb" node="3TSGpjyFlFc" resolve="The cable catches fire" />
         </node>
       </node>
     </node>

@@ -374,7 +374,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="4U3OABz7Lh5" role="3z_lpI">
             <node concept="2NCMab" id="4U3OABz7Lhu" role="2NCMaf">
-              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_tl_spec_patterns" />
+              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
             </node>
           </node>
         </node>
@@ -387,7 +387,7 @@
         </node>
         <node concept="2SaynC" id="4U3OABz7LiY" role="1_0VJ0">
           <property role="TrG5h" value="checking_requirements_consistency" />
-          <ref role="1wz7Nk" to="c3og:5FhZjqTO18E" resolve="_030_formal_tl_spec_patterns" />
+          <ref role="1wz7Nk" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
           <node concept="2Sb_l4" id="4U3OABz7Ljn" role="2SbwM5">
             <property role="2Sb_kV" value="checking_tl_formal_requirements.png" />
             <ref role="2Sb_kU" node="9TY4XGZias" resolve="img" />
@@ -416,7 +416,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="4U3OABz7LhA" role="3z_lpI">
             <node concept="2NCMab" id="4U3OABz7LhB" role="2NCMaf">
-              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_tl_spec_patterns" />
+              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
             </node>
           </node>
         </node>
