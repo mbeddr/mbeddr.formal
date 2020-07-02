@@ -1545,7 +1545,7 @@
       </node>
       <node concept="2SaynC" id="2RmPJMxI2N0" role="1_0VJ0">
         <property role="TrG5h" value="cbd_diagrammatic_notation" />
-        <ref role="1wz7Nk" to="2ufg:GZcvICZm9$" resolve="TLCSystem" />
+        <ref role="1wz7Nk" to="2ufg:VJbr0X1iW2" resolve="TLCSystem" />
         <node concept="2Sb_l4" id="2RmPJMxI2NQ" role="2SbwM5">
           <property role="2Sb_kV" value="nusmv_cbd_diagramatic_notation.png" />
           <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
@@ -1610,7 +1610,7 @@
       <node concept="2SaynC" id="2RmPJMxI2VL" role="1_0VJ0">
         <property role="TrG5h" value="cbd_simulation" />
         <property role="2Sbq$t" value="true" />
-        <ref role="1wz7Nk" to="2ufg:GZcvICZm9$" resolve="TLCSystem" />
+        <ref role="1wz7Nk" to="2ufg:VJbr0X1iW2" resolve="TLCSystem" />
         <node concept="2Sb_l4" id="2RmPJMxI2VM" role="2SbwM5">
           <property role="2Sb_kV" value="nusmv_cbd_ag_analysis_run_and_simulation.png" />
           <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
@@ -1635,7 +1635,7 @@
     <node concept="2SaynC" id="6xNJt7lLx1$" role="1_0VJ0">
       <property role="TrG5h" value="cbd_bmc_verification" />
       <property role="2Sbq$t" value="true" />
-      <ref role="1wz7Nk" to="2ufg:57ROGn93a3R" resolve="system" />
+      <ref role="1wz7Nk" to="2ufg:VJbr0X1iW5" resolve="system" />
       <node concept="2Sb_l4" id="6xNJt7lLx3i" role="2SbwM5">
         <property role="2Sb_kV" value="nusmv_cbd_bmc_verification.png" />
         <ref role="2Sb_kU" node="2mjHtwTu9e1" resolve="tmp" />
