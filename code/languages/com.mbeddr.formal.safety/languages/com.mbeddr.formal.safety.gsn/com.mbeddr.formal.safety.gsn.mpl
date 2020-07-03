@@ -82,7 +82,6 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">bda054c4-5d71-46ca-aba0-7104e3070b5a(com.mbeddr.mpsutil.treenotation.styles)</dependency>
     <dependency reexport="false">94b17d5e-87d9-4868-8101-157e83e33243(com.mbeddr.mpsutil.editor.querylist.runtime)</dependency>
-    <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)</dependency>
   </dependencies>
   <languageVersions>
@@ -179,8 +178,6 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
-  <extendedLanguages>
-    <extendedLanguage>83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</extendedLanguage>
-  </extendedLanguages>
+  <extendedLanguages />
 </language>
 
