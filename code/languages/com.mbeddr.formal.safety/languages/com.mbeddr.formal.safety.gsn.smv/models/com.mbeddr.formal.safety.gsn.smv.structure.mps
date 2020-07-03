@@ -40,7 +40,6 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
-        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -49,10 +48,6 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
-      </concept>
-      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
-        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
-        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -155,38 +150,6 @@
     <property role="34LRSv" value="SMV Results Solution" />
     <property role="R4oN_" value="solution based on a nusmv verification" />
     <ref role="1TJDcQ" node="4i__4Gxsq_o" resolve="SmvResultsSolutionBase" />
-    <node concept="1TJgyi" id="4qaoH_E0cR" role="1TKVEl">
-      <property role="IQ2nx" value="79421622115107639" />
-      <property role="TrG5h" value="dateLong_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="4i__4GxssNi" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4qaoH_PEf3" role="1TKVEl">
-      <property role="IQ2nx" value="79421622118163395" />
-      <property role="TrG5h" value="dateShort_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="4i__4GxssLI" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4qaoH_E0cT" role="1TKVEl">
-      <property role="IQ2nx" value="79421622115107641" />
-      <property role="TrG5h" value="success_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="4i__4GxssKc" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="62$$j6uRHj9" role="1TKVEl">
-      <property role="IQ2nx" value="6963850566126458057" />
-      <property role="TrG5h" value="hashCode_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-      <node concept="asaX9" id="4i__4Gxsrd3" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolutionBase&quot;" />
-      </node>
-    </node>
     <node concept="1irR5M" id="4qaoH_EiRU" role="rwd14">
       <property role="2$rrk2" value="3" />
       <node concept="1irPie" id="4qaoH_EiRZ" role="1irR9h">
@@ -276,38 +239,6 @@
     <property role="TrG5h" value="SmvResultsSolutionBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:3GRi4m$r_RC" resolve="Solution" />
-    <node concept="1TJgyi" id="4i__4GxsrcS" role="1TKVEl">
-      <property role="IQ2nx" value="4946522816140915512" />
-      <property role="TrG5h" value="hashCode_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-      <node concept="asaX9" id="79zp7zi8jmZ" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4i__4GxssK1" role="1TKVEl">
-      <property role="IQ2nx" value="4946522816140921857" />
-      <property role="TrG5h" value="success_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="79zp7zi8jls" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4i__4GxssLz" role="1TKVEl">
-      <property role="IQ2nx" value="4946522816140921955" />
-      <property role="TrG5h" value="dateShort_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="79zp7zi8jjU" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="4i__4GxssN7" role="1TKVEl">
-      <property role="IQ2nx" value="4946522816140922055" />
-      <property role="TrG5h" value="dateLong_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="79zp7zi8jhY" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution&quot;" />
-      </node>
-    </node>
     <node concept="PrWs8" id="79zp7zi8hlu" role="PzmwI">
       <ref role="PrY4T" to="py52:79zp7zi8hlj" resolve="IUpdateableSolution" />
     </node>
