@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
@@ -1620,7 +1621,7 @@
   </node>
   <node concept="WtQ9Q" id="2mjHtwTs_uM">
     <property role="3GE5qa" value="expressions" />
-    <ref role="WuzLi" to="gioj:2mjHtwTsziH" resolve="ArrayExpression" />
+    <ref role="WuzLi" to="gioj:2mjHtwTsziH" resolve="ArrayLiteral" />
     <node concept="11bSqf" id="2mjHtwTs_uN" role="11c4hB">
       <node concept="3clFbS" id="2mjHtwTs_uO" role="2VODD2">
         <node concept="lc7rE" id="2mjHtwTs_$_" role="3cqZAp">
@@ -2075,6 +2076,38 @@
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1qK9rHkfI3w">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="WuzLi" to="gioj:1qK9rHkf_UU" resolve="ArrayAccessExpression" />
+    <node concept="11bSqf" id="1qK9rHkfI3x" role="11c4hB">
+      <node concept="3clFbS" id="1qK9rHkfI3y" role="2VODD2">
+        <node concept="lc7rE" id="1qK9rHkfI3O" role="3cqZAp">
+          <node concept="l9hG8" id="1qK9rHkfI48" role="lcghm">
+            <node concept="2OqwBi" id="1qK9rHkfId_" role="lb14g">
+              <node concept="117lpO" id="1qK9rHkfI4Y" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1qK9rHkfIrX" role="2OqNvi">
+                <ref role="3Tt5mk" to="ehqg:1IrBcRpi7IO" resolve="exp" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1qK9rHkfIy2" role="lcghm">
+            <property role="lacIc" value="[" />
+          </node>
+          <node concept="l9hG8" id="1qK9rHkfIzx" role="lcghm">
+            <node concept="2OqwBi" id="1qK9rHkfIHq" role="lb14g">
+              <node concept="117lpO" id="1qK9rHkfI$N" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1qK9rHkfIW5" role="2OqNvi">
+                <ref role="3Tt5mk" to="gioj:1qK9rHkf_UV" resolve="idx" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1qK9rHkfIXS" role="lcghm">
+            <property role="lacIc" value="]" />
           </node>
         </node>
       </node>

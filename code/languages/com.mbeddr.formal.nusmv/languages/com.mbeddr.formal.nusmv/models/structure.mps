@@ -1217,7 +1217,7 @@
   <node concept="1TIwiD" id="2mjHtwTsziH">
     <property role="EcuMT" value="2707707741261149357" />
     <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="ArrayExpression" />
+    <property role="TrG5h" value="ArrayLiteral" />
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="array expression" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
@@ -1820,6 +1820,20 @@
     <property role="34LRSv" value="input variable" />
     <property role="R4oN_" value="an ivar declaration" />
     <ref role="1TJDcQ" node="6NmtaR1SV6O" resolve="VariableDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="1qK9rHkf_UU">
+    <property role="EcuMT" value="1634848151237975738" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ArrayAccessExpression" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="access array element - var[i]" />
+    <ref role="1TJDcQ" to="ehqg:1IrBcRpi7GI" resolve="UnaryExpression" />
+    <node concept="1TJgyj" id="1qK9rHkf_UV" role="1TKVEi">
+      <property role="IQ2ns" value="1634848151237975739" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="idx" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
   </node>
 </model>
 

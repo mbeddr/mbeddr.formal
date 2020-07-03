@@ -7,7 +7,7 @@
   <imports />
   <registry>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
-      <concept id="2707707741261149357" name="com.mbeddr.formal.nusmv.structure.ArrayExpression" flags="ng" index="sSo5P">
+      <concept id="2707707741261149357" name="com.mbeddr.formal.nusmv.structure.ArrayLiteral" flags="ng" index="sSo5P">
         <child id="2707707741261149707" name="elements" index="sSofj" />
       </concept>
       <concept id="2707707741260785786" name="com.mbeddr.formal.nusmv.structure.ArrayType" flags="ng" index="sZLQy">
@@ -27,8 +27,14 @@
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
       <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
         <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="1634848151237975738" name="com.mbeddr.formal.nusmv.structure.ArrayAccessExpression" flags="ng" index="12zBG1">
+        <child id="1634848151237975739" name="idx" index="12zBG0" />
       </concept>
       <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
         <child id="1989356068342053586" name="definitions" index="32O2ov" />
@@ -49,6 +55,9 @@
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
+      <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
+        <child id="1989356068341840820" name="exp" index="32OYtT" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -175,6 +184,17 @@
               <node concept="2IPVmt" id="2mjHtwTu0fP" role="sSofj">
                 <property role="2IPVms" value="4" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1zoerA" id="1qK9rHkf_TH" role="32O2ov">
+          <property role="TrG5h" value="arrayAccess" />
+          <node concept="12zBG1" id="1qK9rHkiwtz" role="1zoetD">
+            <node concept="2He$iJ" id="1qK9rHkf_Uv" role="32OYtT">
+              <ref role="2He$iI" node="2mjHtwTswqQ" resolve="arr1" />
+            </node>
+            <node concept="2IPVmt" id="1qK9rHkiwup" role="12zBG0">
+              <property role="2IPVms" value="2" />
             </node>
           </node>
         </node>
