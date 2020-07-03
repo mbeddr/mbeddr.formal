@@ -4,8 +4,8 @@ name: FASTEN_CI
 on: [push, pull_request]
 
 env:
-  MPS_VER: "2019.3"
-  MPS_ZIP: "https://download.jetbrains.com/mps/2019.3/MPS-2019.3.4.zip"
+  MPS_VER: "2020.1"
+  MPS_ZIP: "https://download.jetbrains.com/mps/2020.1/MPS-2020.1.2.zip"
   JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
 
 jobs:
