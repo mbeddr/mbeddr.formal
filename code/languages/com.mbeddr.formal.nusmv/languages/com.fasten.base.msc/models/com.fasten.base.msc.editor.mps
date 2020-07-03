@@ -3886,15 +3886,6 @@
         <property role="3cmrfH" value="5" />
       </node>
     </node>
-    <node concept="312cEg" id="HiEhrZeOC2" role="jymVt">
-      <property role="TrG5h" value="HORIZONTAL_PADDING" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="HiEhrZeOC3" role="1B3o_S" />
-      <node concept="10Oyi0" id="HiEhrZeOC4" role="1tU5fm" />
-      <node concept="3cmrfG" id="HiEhrZeOC5" role="33vP2m">
-        <property role="3cmrfH" value="18" />
-      </node>
-    </node>
     <node concept="Wx3nA" id="HiEhrZeOC6" role="jymVt">
       <property role="TrG5h" value="myFont" />
       <node concept="3uibUv" id="HiEhrZeOC7" role="1tU5fm">

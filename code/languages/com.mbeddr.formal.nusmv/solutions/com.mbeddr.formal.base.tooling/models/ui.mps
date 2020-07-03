@@ -2205,7 +2205,7 @@
                                     <node concept="3uibUv" id="5Pb2U$k6TNG" role="1tU5fm">
                                       <ref role="3uigEE" to="7a0s:6qGpHl7IHpK" resolve="HeadlessEditorComponent" />
                                     </node>
-                                    <node concept="10Nm6u" id="2cjkfC8_ZA3" role="33vP2m" />
+                                    <node concept="10Nm6u" id="3GtOaD$DgxO" role="33vP2m" />
                                   </node>
                                 </node>
                                 <node concept="3J1_TO" id="5Pb2U$k6TP5" role="3cqZAp">
@@ -2549,27 +2549,6 @@
         <node concept="17QB3L" id="7SQqK0FdRfA" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="7SQqK0FdieV" role="3clF47">
-        <node concept="3cpWs8" id="7SQqK0FdFYb" role="3cqZAp">
-          <node concept="3cpWsn" id="7SQqK0FdFYc" role="3cpWs9">
-            <property role="TrG5h" value="editorComp" />
-            <node concept="3uibUv" id="7SQqK0FdNuy" role="1tU5fm">
-              <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-            </node>
-            <node concept="10QFUN" id="7SQqK0FdNYg" role="33vP2m">
-              <node concept="2OqwBi" id="7SQqK0FdNYd" role="10QFUP">
-                <node concept="37vLTw" id="7SQqK0FdNYe" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7SQqK0FdyCT" resolve="cell" />
-                </node>
-                <node concept="liA8E" id="7SQqK0FdNYf" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell.getEditorComponent()" resolve="getEditorComponent" />
-                </node>
-              </node>
-              <node concept="3uibUv" id="7SQqK0FdNYc" role="10QFUM">
-                <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="7SQqK0Fdk1E" role="3cqZAp">
           <node concept="3cpWsn" id="7SQqK0Fdk1F" role="3cpWs9">
             <property role="TrG5h" value="width" />
