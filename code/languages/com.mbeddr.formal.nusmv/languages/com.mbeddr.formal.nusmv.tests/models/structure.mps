@@ -166,7 +166,7 @@
   <node concept="1TIwiD" id="1ZsZb$iK_4w">
     <property role="EcuMT" value="2295987781865984288" />
     <property role="3GE5qa" value="generation_only" />
-    <property role="TrG5h" value="NAryAndExpression" />
+    <property role="TrG5h" value="NAryAndExpression_ForGenerator" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
     <node concept="1TJgyj" id="1ZsZb$iK_4x" role="1TKVEi">
       <property role="IQ2ns" value="2295987781865984289" />

@@ -92,7 +92,7 @@
   </registry>
   <node concept="1M2fIO" id="1ZsZb$iKGLq">
     <property role="3GE5qa" value="generation_only" />
-    <ref role="1M2myG" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression" />
+    <ref role="1M2myG" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression_ForGenerator" />
     <node concept="9S07l" id="1ZsZb$iKGLr" role="9Vyp8">
       <node concept="3clFbS" id="1ZsZb$iKGLs" role="2VODD2">
         <node concept="3clFbF" id="1ZsZb$iKGSB" role="3cqZAp">

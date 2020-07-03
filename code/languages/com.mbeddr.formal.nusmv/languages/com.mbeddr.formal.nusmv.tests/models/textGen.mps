@@ -59,7 +59,7 @@
   </registry>
   <node concept="WtQ9Q" id="1ZsZb$iK_4X">
     <property role="3GE5qa" value="generation_only" />
-    <ref role="WuzLi" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression" />
+    <ref role="WuzLi" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression_ForGenerator" />
     <node concept="11bSqf" id="1ZsZb$iK_4Y" role="11c4hB">
       <node concept="3clFbS" id="1ZsZb$iK_4Z" role="2VODD2">
         <node concept="lc7rE" id="1ZsZb$iK_5j" role="3cqZAp">

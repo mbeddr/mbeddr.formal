@@ -919,7 +919,7 @@
   </node>
   <node concept="24kQdi" id="1ZsZb$iKHui">
     <property role="3GE5qa" value="generation_only" />
-    <ref role="1XX52x" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression" />
+    <ref role="1XX52x" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression_ForGenerator" />
     <node concept="3EZMnI" id="1ZsZb$iKHuk" role="2wV5jI">
       <node concept="3F0ifn" id="1ZsZb$iKHuu" role="3EZMnx">
         <property role="3F0ifm" value="[" />

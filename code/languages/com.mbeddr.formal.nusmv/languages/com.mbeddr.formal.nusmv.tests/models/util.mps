@@ -705,11 +705,11 @@
           <node concept="3cpWsn" id="1uIpCUulvpr" role="3cpWs9">
             <property role="TrG5h" value="conjunctionOfStepsConditions" />
             <node concept="3Tqbb2" id="1uIpCUulvpo" role="1tU5fm">
-              <ref role="ehGHo" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression" />
+              <ref role="ehGHo" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression_ForGenerator" />
             </node>
             <node concept="2pJPEk" id="1uIpCUulvps" role="33vP2m">
               <node concept="2pJPED" id="1uIpCUulvpt" role="2pJPEn">
-                <ref role="2pJxaS" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression" />
+                <ref role="2pJxaS" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression_ForGenerator" />
                 <node concept="2pIpSj" id="1uIpCUulvpu" role="2pJxcM">
                   <ref role="2pIpSl" to="fnq2:1ZsZb$iK_4x" resolve="atomicCondition" />
                   <node concept="36biLy" id="1uIpCUulvpv" role="28nt2d">
@@ -1004,7 +1004,7 @@
         <node concept="3clFbF" id="7Q0jYGK2m$5" role="3cqZAp">
           <node concept="2pJPEk" id="7Q0jYGK2H4J" role="3clFbG">
             <node concept="2pJPED" id="7Q0jYGK2H4K" role="2pJPEn">
-              <ref role="2pJxaS" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression" />
+              <ref role="2pJxaS" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression_ForGenerator" />
               <node concept="2pIpSj" id="7Q0jYGK2H4L" role="2pJxcM">
                 <ref role="2pIpSl" to="fnq2:1ZsZb$iK_4x" resolve="atomicCondition" />
                 <node concept="36biLy" id="7Q0jYGK32ou" role="28nt2d">
