@@ -5716,6 +5716,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="2Jtr3zsHXRa" role="3bR37C">
+            <node concept="3bR9La" id="2Jtr3zsHXRb" role="1SiIV1">
+              <ref role="3bR37D" node="1gJVC85JQA9" resolve="com.mbeddr.formal.nusmv.ext" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5yQpAUIgPRi" role="3bR37C">
           <node concept="3bR9La" id="5yQpAUIgPRj" role="1SiIV1">
@@ -6685,11 +6690,6 @@
         <node concept="1SiIV0" id="5uFV_KLFecy" role="3bR37C">
           <node concept="3bR9La" id="5uFV_KLFecz" role="1SiIV1">
             <ref role="3bR37D" to="al5i:4Hbnsm4OhEo" resolve="com.mbeddr.mpsutil.editor.querylist.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="696iakoZqc" role="3bR37C">
-          <node concept="1Busua" id="696iakoZqd" role="1SiIV1">
-            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
         <node concept="1SiIV0" id="5et_HVSOwPr" role="3bR37C">
