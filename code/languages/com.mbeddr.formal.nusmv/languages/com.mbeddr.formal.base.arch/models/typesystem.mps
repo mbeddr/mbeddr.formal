@@ -56,9 +56,11 @@
       </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
+      <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -147,6 +149,105 @@
     <node concept="1YaCAy" id="6zKmqpS8klG" role="1YuTPh">
       <property role="TrG5h" value="instanceRef" />
       <ref role="1YaFvo" to="3whv:7RhjhI7$loO" resolve="InstanceRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2Jtr3zsGcgc">
+    <property role="TrG5h" value="typeof_CompositePart" />
+    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <node concept="3clFbS" id="2Jtr3zsGcgd" role="18ibNy">
+      <node concept="1Z5TYs" id="2Jtr3zsGcsK" role="3cqZAp">
+        <node concept="mw_s8" id="2Jtr3zsGctp" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2Jtr3zsGctl" role="mwGJk">
+            <node concept="2OqwBi" id="2Jtr3zsGcBY" role="1Z2MuG">
+              <node concept="1YBJjd" id="2Jtr3zsGcud" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Jtr3zsGcgf" resolve="compositePart" />
+              </node>
+              <node concept="3TrEf2" id="2Jtr3zsGcRa" role="2OqNvi">
+                <ref role="3Tt5mk" to="3whv:7RhjhI7$lph" resolve="port" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2Jtr3zsGcsN" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2Jtr3zsGchh" role="mwGJk">
+            <node concept="1YBJjd" id="2Jtr3zsGcj_" role="1Z2MuG">
+              <ref role="1YBMHb" node="2Jtr3zsGcgf" resolve="compositePart" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Jtr3zsGcgf" role="1YuTPh">
+      <property role="TrG5h" value="compositePart" />
+      <ref role="1YaFvo" to="3whv:7RhjhI7$loN" resolve="CompositePart" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2Jtr3zsGdVS">
+    <property role="TrG5h" value="typeof_Port" />
+    <property role="3GE5qa" value="cbd.interface" />
+    <node concept="3clFbS" id="2Jtr3zsGdVT" role="18ibNy">
+      <node concept="1Z5TYs" id="2Jtr3zsGe6M" role="3cqZAp">
+        <node concept="mw_s8" id="2Jtr3zsGe7y" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2Jtr3zsGe7u" role="mwGJk">
+            <node concept="2OqwBi" id="2Jtr3zsGeiH" role="1Z2MuG">
+              <node concept="1YBJjd" id="2Jtr3zsGe88" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Jtr3zsGdVV" resolve="port" />
+              </node>
+              <node concept="3TrEf2" id="2Jtr3zsGexV" role="2OqNvi">
+                <ref role="3Tt5mk" to="3whv:7RhjhI7zUWr" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2Jtr3zsGe6P" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2Jtr3zsGdWD" role="mwGJk">
+            <node concept="1YBJjd" id="2Jtr3zsGdYQ" role="1Z2MuG">
+              <ref role="1YBMHb" node="2Jtr3zsGdVV" resolve="port" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Jtr3zsGdVV" role="1YuTPh">
+      <property role="TrG5h" value="port" />
+      <ref role="1YaFvo" to="3whv:7RhjhI7zUWm" resolve="Port" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2Jtr3zsGgTg">
+    <property role="TrG5h" value="typeof_Connection" />
+    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <node concept="3clFbS" id="2Jtr3zsGgTh" role="18ibNy">
+      <node concept="1ZobV4" id="2Jtr3zsGgTU" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="2Jtr3zsGgUB" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2Jtr3zsGgUz" role="mwGJk">
+            <node concept="2OqwBi" id="2Jtr3zsGh5s" role="1Z2MuG">
+              <node concept="1YBJjd" id="2Jtr3zsGgVk" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Jtr3zsGgTj" resolve="connection" />
+              </node>
+              <node concept="3TrEf2" id="2Jtr3zsGhOE" role="2OqNvi">
+                <ref role="3Tt5mk" to="3whv:7RhjhI7$lgX" resolve="source" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2Jtr3zsGhmu" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2Jtr3zsGhmq" role="mwGJk">
+            <node concept="2OqwBi" id="2Jtr3zsGhx5" role="1Z2MuG">
+              <node concept="1YBJjd" id="2Jtr3zsGhmX" role="2Oq$k0">
+                <ref role="1YBMHb" node="2Jtr3zsGgTj" resolve="connection" />
+              </node>
+              <node concept="3TrEf2" id="2Jtr3zsGi3o" role="2OqNvi">
+                <ref role="3Tt5mk" to="3whv:7RhjhI7$lh0" resolve="target" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2Jtr3zsGgTj" role="1YuTPh">
+      <property role="TrG5h" value="connection" />
+      <ref role="1YaFvo" to="3whv:7RhjhI7$lgV" resolve="Connection" />
     </node>
   </node>
 </model>
