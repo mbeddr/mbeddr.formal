@@ -3,6 +3,9 @@
 ## Homepage
 - FASTEN Home - https://sites.google.com/site/fastenroot/
 
+## Versions
+- Get the [latest release](https://github.com/mbeddr/mbeddr.formal/releases)
+
 ## Building (from command line)
 
 - for building FASTEN we have gradle-based scripts (please configure the needed variables in *gradle.properties*)
