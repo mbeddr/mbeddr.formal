@@ -2750,6 +2750,18 @@
         <property role="1rj3mz" value="Arial" />
       </node>
     </node>
+    <node concept="14StLt" id="1rijVap7LXt" role="V601i">
+      <property role="TrG5h" value="GSNModelElementReferenceStyle" />
+      <node concept="VSNWy" id="1rijVap7LXu" role="3F10Kt">
+        <property role="1lJzqX" value="10" />
+      </node>
+      <node concept="2biZxu" id="1rijVap7LXv" role="3F10Kt">
+        <property role="1rj3mz" value="Arial" />
+      </node>
+      <node concept="VechU" id="1rijVap7Msm" role="3F10Kt">
+        <property role="Vb096" value="fLwANPu/blue" />
+      </node>
+    </node>
     <node concept="14StLt" id="71GfFl7qVvB" role="V601i">
       <property role="TrG5h" value="GSNConnectionStyle" />
       <node concept="VSNWy" id="71GfFl7qVvC" role="3F10Kt">
