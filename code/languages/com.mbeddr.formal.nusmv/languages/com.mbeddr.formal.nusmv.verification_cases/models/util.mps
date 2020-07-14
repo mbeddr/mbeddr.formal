@@ -702,7 +702,7 @@
         <node concept="3clFbF" id="7Q0jYGK33lN" role="3cqZAp">
           <node concept="2pJPEk" id="7Q0jYGK33lO" role="3clFbG">
             <node concept="2pJPED" id="7Q0jYGK33lP" role="2pJPEn">
-              <ref role="2pJxaS" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression" />
+              <ref role="2pJxaS" to="fnq2:1ZsZb$iK_4w" resolve="NAryAndExpression_ForGenerator" />
               <node concept="2pIpSj" id="7Q0jYGK33lQ" role="2pJxcM">
                 <ref role="2pIpSl" to="fnq2:1ZsZb$iK_4x" resolve="atomicCondition" />
                 <node concept="36biLy" id="7Q0jYGK33lR" role="28nt2d">
