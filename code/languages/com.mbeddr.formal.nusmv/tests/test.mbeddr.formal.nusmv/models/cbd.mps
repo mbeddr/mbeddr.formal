@@ -1871,10 +1871,10 @@
         <property role="TrG5h" value="z" />
         <node concept="dhpfj" id="21huxlDulLk" role="1s31WO">
           <node concept="2IPVmt" id="21huxlDulLj" role="dhpfi">
-            <property role="2IPVms" value="-10" />
+            <property role="2IPVms" value="-2" />
           </node>
           <node concept="2IPVmt" id="21huxlDulLH" role="dhpfn">
-            <property role="2IPVms" value="10" />
+            <property role="2IPVms" value="2" />
           </node>
         </node>
       </node>
@@ -1885,10 +1885,10 @@
         <property role="TrG5h" value="x" />
         <node concept="dhpfj" id="1qK9rHkstlN" role="1s31WO">
           <node concept="2IPVmt" id="1qK9rHkstlM" role="dhpfi">
-            <property role="2IPVms" value="-10" />
+            <property role="2IPVms" value="-3" />
           </node>
           <node concept="2IPVmt" id="1qK9rHkstmj" role="dhpfn">
-            <property role="2IPVms" value="10" />
+            <property role="2IPVms" value="3" />
           </node>
         </node>
       </node>
@@ -1896,10 +1896,10 @@
         <property role="TrG5h" value="y" />
         <node concept="dhpfj" id="21huxlDulIQ" role="1s31WO">
           <node concept="2IPVmt" id="21huxlDulIP" role="dhpfi">
-            <property role="2IPVms" value="-10" />
+            <property role="2IPVms" value="-4" />
           </node>
           <node concept="2IPVmt" id="21huxlDulJP" role="dhpfn">
-            <property role="2IPVms" value="10" />
+            <property role="2IPVms" value="4" />
           </node>
         </node>
       </node>
