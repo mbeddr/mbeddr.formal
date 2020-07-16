@@ -5992,6 +5992,11 @@
               <ref role="3bR37D" node="1gJVC85JQA9" resolve="com.mbeddr.formal.nusmv.ext" />
             </node>
           </node>
+          <node concept="1SiIV0" id="V_mseoFoDu" role="3bR37C">
+            <node concept="3bR9La" id="V_mseoFoDv" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="5yQpAUIgPRi" role="3bR37C">
           <node concept="3bR9La" id="5yQpAUIgPRj" role="1SiIV1">

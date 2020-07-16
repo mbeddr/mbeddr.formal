@@ -765,6 +765,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="V_mseoEoZS" role="3bR37C">
+          <node concept="3bR9La" id="V_mseoEoZT" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5yQpAUIgMcT" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2892,6 +2897,16 @@
               <node concept="3qWCbU" id="5TezZ1Vdf_5" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="V_mseoEp5s" role="3bR37C">
+            <node concept="3bR9La" id="V_mseoEp5t" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="V_mseoEp5u" role="3bR37C">
+            <node concept="3bR9La" id="V_mseoEp5v" role="1SiIV1">
+              <ref role="3bR37D" node="1gJVC85JQA9" resolve="com.mbeddr.formal.nusmv.ext" />
             </node>
           </node>
         </node>
