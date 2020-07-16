@@ -64,6 +64,8 @@
       <concept id="4266958635905406579" name="com.mbeddr.formal.safety.gsn.structure.Context" flags="ng" index="2vmxSQ" />
       <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC">
         <property id="9102875167979884151" name="undeveloped" index="8uqrb" />
+        <property id="5082481967878858900" name="away" index="2QdZbZ" />
+        <reference id="5082481967878858987" name="goalDefinition" index="2QdZa0" />
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
@@ -71,9 +73,6 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
-      </concept>
-      <concept id="1629165016566665058" name="com.mbeddr.formal.safety.gsn.structure.AwayGoal" flags="ng" index="1UqfIh">
-        <reference id="1629165016566665059" name="goalDefinition" index="1UqfIg" />
       </concept>
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
         <reference id="2525617932486527189" name="source" index="3VeSjP" />
@@ -701,9 +700,9 @@
         <property role="37mO49" value="1629165016566920467" />
         <node concept="gqqVs" id="1qrXfdGXJkt" role="37mO4d">
           <property role="gqqTZ" value="12.0" />
-          <property role="gqqTW" value="262.0004967285156" />
-          <property role="gqqTX" value="212.0" />
-          <property role="gqqTy" value="62.0" />
+          <property role="gqqTW" value="262.0" />
+          <property role="gqqTX" value="142.0" />
+          <property role="gqqTy" value="43.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -817,6 +816,42 @@
           </node>
         </node>
       </node>
+      <node concept="37mRIm" id="4q8AAJKMl76" role="37mRID">
+        <property role="37mO49" value="5082481967879508331" />
+        <node concept="gqqVs" id="4q8AAJKMl75" role="37mO4d">
+          <property role="gqqTZ" value="194.0" />
+          <property role="gqqTW" value="262.0" />
+          <property role="gqqTX" value="117.0" />
+          <property role="gqqTy" value="43.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4q8AAJKMl8H" role="37mRID">
+        <property role="37mO49" value="5082481967879508507" />
+        <node concept="2VclpC" id="4q8AAJKMl8G" role="37mO4d">
+          <node concept="3ul5H1" id="4q8AAJKMl8I" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4q8AAJKMl8J" role="3ul5Gz">
+              <node concept="2VclrF" id="4q8AAJKMl8K" role="3wpmZR">
+                <property role="2Vclpx" value="249.5" />
+                <property role="2Vclpz" value="209.2501491821289" />
+              </node>
+              <node concept="2VclrF" id="4q8AAJKMl8L" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="4q8AAJKMRbt" role="2Vcluh">
+            <property role="2Vclpx" value="155.49992209722097" />
+            <property role="2Vclpz" value="227.5" />
+          </node>
+          <node concept="2VclrF" id="4q8AAJKMRce" role="2Vcluh">
+            <property role="2Vclpx" value="228.5" />
+            <property role="2Vclpz" value="227.5" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2vn7WC" id="1qrXfdGXtqc" role="2vn1q5">
       <property role="TrG5h" value="Top Goal" />
@@ -827,7 +862,9 @@
     <node concept="2vmxQI" id="1qrXfdGXAeN" role="2vn1q5">
       <property role="TrG5h" value="S.10" />
       <node concept="19SGf9" id="2BjEyIlUxGq" role="2vnaTY">
-        <node concept="19SUe$" id="2BjEyIlUxGr" role="19SJt6" />
+        <node concept="19SUe$" id="2BjEyIlUxGr" role="19SJt6">
+          <property role="19SUeA" value="First strategy" />
+        </node>
       </node>
     </node>
     <node concept="3VeUTF" id="1qrXfdGXJ4e" role="2vhqc$">
@@ -844,16 +881,19 @@
       <ref role="3VeSjP" node="1qrXfdGXAeN" resolve="S.10" />
       <ref role="3VeSjQ" node="1qrXfdGXJkj" resolve="Another Sub-goal" />
     </node>
-    <node concept="1UqfIh" id="1qrXfdH0WuZ" role="2vn1q5">
-      <property role="TrG5h" value="G.010.010" />
-      <ref role="1UqfIg" node="1qrXfdH0LFw" resolve="G.010.010" />
-      <node concept="19SGf9" id="2BjEyIlUxGI" role="2vnaTY">
-        <node concept="19SUe$" id="2BjEyIlUxGJ" role="19SJt6" />
+    <node concept="2vn7WC" id="4q8AAJKMl5F" role="2vn1q5">
+      <property role="TrG5h" value="AG01" />
+      <property role="2QdZbZ" value="true" />
+      <ref role="2QdZa0" node="1qrXfdH0LFw" resolve="G.010.010" />
+      <node concept="19SGf9" id="4q8AAJKMl5G" role="2vnaTY">
+        <node concept="19SUe$" id="4q8AAJKMl5H" role="19SJt6">
+          <property role="19SUeA" value="Example of away goal" />
+        </node>
       </node>
     </node>
-    <node concept="3VeUTF" id="1qrXfdH0Ww1" role="2vhqc$">
+    <node concept="3VeUTF" id="4q8AAJKMl8r" role="2vhqc$">
       <ref role="3VeSjP" node="1qrXfdGXAeN" resolve="S.10" />
-      <ref role="3VeSjQ" node="1qrXfdH0WuZ" resolve="G.010.010" />
+      <ref role="3VeSjQ" node="4q8AAJKMl5F" resolve="AG01" />
     </node>
   </node>
   <node concept="2vn7XN" id="1qrXfdH0LFq">

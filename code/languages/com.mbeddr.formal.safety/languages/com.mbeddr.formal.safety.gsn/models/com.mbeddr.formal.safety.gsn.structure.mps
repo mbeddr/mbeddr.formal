@@ -123,6 +123,11 @@
       <property role="TrG5h" value="undeveloped" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="4q8AAJKJQyk" role="1TKVEl">
+      <property role="IQ2nx" value="5082481967878858900" />
+      <property role="TrG5h" value="away" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1irR5M" id="71RA3dHz6MU" role="rwd14">
       <property role="2$rrk2" value="2" />
       <node concept="1irPie" id="71RA3dHz6N3" role="1irR9h">
@@ -131,6 +136,11 @@
           <property role="3PKj8l" value="987654" />
         </node>
       </node>
+    </node>
+    <node concept="1TJgyj" id="4q8AAJKJQzF" role="1TKVEi">
+      <property role="IQ2ns" value="5082481967878858987" />
+      <property role="20kJfa" value="goalDefinition" />
+      <ref role="20lvS9" node="3GRi4m$qNtH" resolve="Goal" />
     </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$qS5k">
@@ -260,7 +270,7 @@
     <ref role="1TJDcQ" node="3GRi4m$qNtH" resolve="Goal" />
     <node concept="1TJgyj" id="1qrXfdGWKXz" role="1TKVEi">
       <property role="IQ2ns" value="1629165016566665059" />
-      <property role="20kJfa" value="goalDefinition" />
+      <property role="20kJfa" value="goalDefinition_old" />
       <ref role="20lvS9" node="3GRi4m$qNtH" resolve="Goal" />
     </node>
     <node concept="1TJgyi" id="1qrXfdGWQQ9" role="1TKVEl">
@@ -269,6 +279,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
       <node concept="asaX9" id="42InK5bcI8J" role="lGtFl" />
     </node>
+    <node concept="asaX9" id="4q8AAJKPkh$" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7eb_1beKlGf">
     <property role="EcuMT" value="8325911144623594255" />
