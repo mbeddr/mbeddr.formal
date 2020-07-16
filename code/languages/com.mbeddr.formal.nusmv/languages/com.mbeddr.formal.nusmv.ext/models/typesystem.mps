@@ -958,5 +958,34 @@
       <ref role="1YaFvo" to="6z8w:6xNJt7lQHS3" resolve="IntervalTypeExtended" />
     </node>
   </node>
+  <node concept="1YbPZF" id="V_mseolem1">
+    <property role="TrG5h" value="typeof_StructMemberDeclaration" />
+    <property role="3GE5qa" value="udt.struct" />
+    <node concept="3clFbS" id="V_mseolem2" role="18ibNy">
+      <node concept="1Z5TYs" id="V_mseoleyK" role="3cqZAp">
+        <node concept="mw_s8" id="V_mseolez2" role="1ZfhKB">
+          <node concept="2OqwBi" id="V_mseoleHi" role="mwGJk">
+            <node concept="1YBJjd" id="V_mseolez0" role="2Oq$k0">
+              <ref role="1YBMHb" node="V_mseolem4" resolve="smd" />
+            </node>
+            <node concept="3TrEf2" id="V_mseoleWx" role="2OqNvi">
+              <ref role="3Tt5mk" to="6z8w:25Ap4XXqBHV" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="V_mseoleyN" role="1ZfhK$">
+          <node concept="1Z2H0r" id="V_mseolem8" role="mwGJk">
+            <node concept="1YBJjd" id="V_mseolepF" role="1Z2MuG">
+              <ref role="1YBMHb" node="V_mseolem4" resolve="smd" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="V_mseolem4" role="1YuTPh">
+      <property role="TrG5h" value="smd" />
+      <ref role="1YaFvo" to="6z8w:25Ap4XXqBHR" resolve="StructMemberDeclaration" />
+    </node>
+  </node>
 </model>
 
