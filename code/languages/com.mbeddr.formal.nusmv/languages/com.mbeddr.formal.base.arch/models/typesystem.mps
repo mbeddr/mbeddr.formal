@@ -250,5 +250,36 @@
       <ref role="1YaFvo" to="3whv:7RhjhI7$lgV" resolve="Connection" />
     </node>
   </node>
+  <node concept="1YbPZF" id="EDWlnQxAYH">
+    <property role="TrG5h" value="typeof_PortRef" />
+    <property role="3GE5qa" value="cbd.assembly.connections" />
+    <node concept="3clFbS" id="EDWlnQxAYI" role="18ibNy">
+      <node concept="1Z5TYs" id="EDWlnQxBTM" role="3cqZAp">
+        <node concept="mw_s8" id="EDWlnQxBU6" role="1ZfhKB">
+          <node concept="1Z2H0r" id="EDWlnQxBU2" role="mwGJk">
+            <node concept="2OqwBi" id="EDWlnQxC5c" role="1Z2MuG">
+              <node concept="1YBJjd" id="EDWlnQxBUn" role="2Oq$k0">
+                <ref role="1YBMHb" node="EDWlnQxAYK" resolve="portRef" />
+              </node>
+              <node concept="3TrEf2" id="EDWlnQxCl1" role="2OqNvi">
+                <ref role="3Tt5mk" to="3whv:7RhjhI7$li3" resolve="port" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="EDWlnQxBTP" role="1ZfhK$">
+          <node concept="1Z2H0r" id="EDWlnQxBGH" role="mwGJk">
+            <node concept="1YBJjd" id="EDWlnQxBI_" role="1Z2MuG">
+              <ref role="1YBMHb" node="EDWlnQxAYK" resolve="portRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="EDWlnQxAYK" role="1YuTPh">
+      <property role="TrG5h" value="portRef" />
+      <ref role="1YaFvo" to="3whv:7RhjhI7$li2" resolve="PortRef" />
+    </node>
+  </node>
 </model>
 
