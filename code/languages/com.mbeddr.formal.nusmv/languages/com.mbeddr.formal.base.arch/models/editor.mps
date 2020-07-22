@@ -1551,8 +1551,8 @@
                               <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="_wUu$TZFuR" role="2OqNvi">
-                            <ref role="37wK5l" to="7wf3:57ROGn8X5WU" resolve="allInputs" />
+                          <node concept="2qgKlT" id="_wUu$U2uow" role="2OqNvi">
+                            <ref role="37wK5l" to="7wf3:57ROGn8X9ou" resolve="allOutputs" />
                           </node>
                         </node>
                       </node>
@@ -1821,9 +1821,11 @@
     <node concept="3EZMnI" id="7RhjhI7cKj7" role="2wV5jI">
       <node concept="3F0ifn" id="7RhjhI7cKjh" role="3EZMnx">
         <property role="3F0ifm" value="--" />
+        <ref role="1k5W1q" to="xnej:_wUu$U1lWI" resolve="FASTENComment" />
       </node>
       <node concept="3F0A7n" id="7RhjhI7cKjq" role="3EZMnx">
         <ref role="1NtTu8" to="3whv:7RhjhI7cKj2" resolve="text" />
+        <ref role="1k5W1q" to="xnej:_wUu$U1lWI" resolve="FASTENComment" />
       </node>
       <node concept="3F0ifn" id="7RhjhI7dfqR" role="3EZMnx">
         <property role="3F0ifm" value=";" />
