@@ -1860,6 +1860,12 @@
         <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
       </node>
     </node>
+    <node concept="14StLt" id="_wUu$U1lWI" role="V601i">
+      <property role="TrG5h" value="FASTENComment" />
+      <node concept="VechU" id="_wUu$U1mue" role="3F10Kt">
+        <property role="Vb096" value="fLJRk5A/lightGray" />
+      </node>
+    </node>
   </node>
   <node concept="PKFIW" id="6Kf5KB6TZVE">
     <property role="TrG5h" value="SimulationEntryPoint" />
