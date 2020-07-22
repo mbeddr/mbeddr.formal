@@ -11,7 +11,11 @@
     </facet>
   </facets>
   <sourcePath />
-  <languageVersions />
+  <languageVersions>
+    <language slang="l:ab274f70-5238-4883-adc7-02df7a757829:com.fasten.safety.ft" version="0" />
+    <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+  </languageVersions>
   <dependencyVersions>
     <module reference="d1ec7b56-7ba6-4e2d-b536-3487502426c7(com.fasten.safety.ft.sandbox)" version="0" />
   </dependencyVersions>
