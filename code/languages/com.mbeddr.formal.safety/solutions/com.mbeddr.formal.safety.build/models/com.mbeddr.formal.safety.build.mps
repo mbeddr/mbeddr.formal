@@ -8821,6 +8821,9 @@
         <node concept="3LEDTy" id="5TezZ1Vejo_" role="3LEDUa">
           <ref role="3LEDTV" node="7he_lUurDmQ" resolve="com.mbeddr.formal.safety.stamp" />
         </node>
+        <node concept="3LEDTy" id="_wUu$U1lm_" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7he_lUuvmPg" role="3989C9">
