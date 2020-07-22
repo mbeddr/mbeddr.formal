@@ -185,6 +185,31 @@
       </node>
       <node concept="17QB3L" id="4i__4GxoPGX" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="_wUu$TYIOW" role="13h7CS">
+      <property role="TrG5h" value="getDescriptionText" />
+      <ref role="13i0hy" to="tpcu:69Qfsw3IqwE" resolve="getDescriptionText" />
+      <node concept="3Tm1VV" id="_wUu$TYIOX" role="1B3o_S" />
+      <node concept="3clFbS" id="_wUu$TYIP4" role="3clF47">
+        <node concept="3clFbF" id="_wUu$TYIZX" role="3cqZAp">
+          <node concept="2OqwBi" id="_wUu$TYJO_" role="3clFbG">
+            <node concept="2OqwBi" id="_wUu$TYJal" role="2Oq$k0">
+              <node concept="13iPFW" id="_wUu$TYIZR" role="2Oq$k0" />
+              <node concept="3TrEf2" id="_wUu$TYJoJ" role="2OqNvi">
+                <ref role="3Tt5mk" to="z27p:4gtLUSMLiMB" resolve="title" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="_wUu$TYKbC" role="2OqNvi">
+              <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="_wUu$TYIP5" role="3clF46">
+        <property role="TrG5h" value="reference" />
+        <node concept="3Tqbb2" id="_wUu$TYIP6" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="_wUu$TYIP7" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="2N7iSwGA0Vb">
     <ref role="13h7C2" to="z27p:4gtLUSMLiMA" resolve="AbstractRequirement" />

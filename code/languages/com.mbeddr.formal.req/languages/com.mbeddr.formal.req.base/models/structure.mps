@@ -390,5 +390,30 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="_wUu$TYIKg">
+    <property role="EcuMT" value="675797132014971920" />
+    <property role="TrG5h" value="RefinementAttribute" />
+    <property role="34LRSv" value="refines" />
+    <property role="R4oN_" value="requirement refinement" />
+    <ref role="1TJDcQ" node="5et_HVSNcF1" resolve="RequirementAttributeBase" />
+    <node concept="1TJgyj" id="_wUu$TYZrB" role="1TKVEi">
+      <property role="IQ2ns" value="675797132015040231" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="referencedRequirements" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="_wUu$TYIKk" resolve="AbstractRequirementRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="_wUu$TYIKk">
+    <property role="EcuMT" value="675797132014971924" />
+    <property role="TrG5h" value="AbstractRequirementRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="_wUu$TYIKl" role="1TKVEi">
+      <property role="IQ2ns" value="675797132014971925" />
+      <property role="20kJfa" value="req" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4gtLUSMLiMA" resolve="AbstractRequirement" />
+    </node>
+  </node>
 </model>
 
