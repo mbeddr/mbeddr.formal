@@ -1866,6 +1866,12 @@
         <property role="Vb096" value="fLJRk5A/lightGray" />
       </node>
     </node>
+    <node concept="14StLt" id="_wUu$U7_Lc" role="V601i">
+      <property role="TrG5h" value="FASTENUserHint" />
+      <node concept="VechU" id="_wUu$U7_Ld" role="3F10Kt">
+        <property role="Vb096" value="fLJRk5A/lightGray" />
+      </node>
+    </node>
   </node>
   <node concept="PKFIW" id="6Kf5KB6TZVE">
     <property role="TrG5h" value="SimulationEntryPoint" />
