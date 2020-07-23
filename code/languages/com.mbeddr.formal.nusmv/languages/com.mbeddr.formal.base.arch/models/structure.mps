@@ -224,6 +224,9 @@
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="7RhjhI7$lgW" resolve="ConnectionPart" />
     </node>
+    <node concept="PrWs8" id="_wUu$U9kY3" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
     <node concept="PrWs8" id="7RhjhI7$E8j" role="PzmwI">
       <ref role="PrY4T" node="7RhjhI7$E7w" resolve="IComponentAssemblyBodyContent" />
     </node>

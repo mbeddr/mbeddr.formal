@@ -30,6 +30,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="x4mf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus(MPS.Editor/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -84,6 +85,7 @@
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
+        <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
@@ -94,6 +96,7 @@
       <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
         <property id="1235999920262" name="align" index="37lx6p" />
       </concept>
+      <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -103,6 +106,7 @@
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -198,6 +202,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -240,6 +245,7 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
@@ -1066,8 +1072,8 @@
             </node>
           </node>
           <node concept="238au4" id="1EKbsQRarKk" role="3kqczz">
-            <node concept="PMmxH" id="1EKbsQRarTD" role="2wV5jI">
-              <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
+            <node concept="PMmxH" id="_wUu$U8gs5" role="2wV5jI">
+              <ref role="PMmxG" node="_wUu$U8dSM" resolve="ConnectionEditorComponent" />
             </node>
           </node>
           <node concept="2fs66k" id="104dc5E9F6J" role="1ide8m">
@@ -1142,8 +1148,8 @@
             </node>
           </node>
           <node concept="238au4" id="70QLBAKqNn1" role="3kqczz">
-            <node concept="PMmxH" id="70QLBAKqNn2" role="2wV5jI">
-              <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
+            <node concept="PMmxH" id="_wUu$U8gsd" role="2wV5jI">
+              <ref role="PMmxG" node="_wUu$U8dSM" resolve="ConnectionEditorComponent" />
             </node>
           </node>
           <node concept="2fs66k" id="70QLBAKqNn3" role="1ide8m">
@@ -1218,8 +1224,8 @@
             </node>
           </node>
           <node concept="238au4" id="70QLBAKrT5F" role="3kqczz">
-            <node concept="PMmxH" id="70QLBAKrT5G" role="2wV5jI">
-              <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
+            <node concept="PMmxH" id="_wUu$U8gsl" role="2wV5jI">
+              <ref role="PMmxG" node="_wUu$U8dSM" resolve="ConnectionEditorComponent" />
             </node>
           </node>
           <node concept="2fs66k" id="70QLBAKrT5H" role="1ide8m">
@@ -1294,8 +1300,8 @@
             </node>
           </node>
           <node concept="238au4" id="70QLBAKrU81" role="3kqczz">
-            <node concept="PMmxH" id="70QLBAKrU82" role="2wV5jI">
-              <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
+            <node concept="PMmxH" id="_wUu$U8gst" role="2wV5jI">
+              <ref role="PMmxG" node="_wUu$U8dSM" resolve="ConnectionEditorComponent" />
             </node>
           </node>
           <node concept="2fs66k" id="70QLBAKrU83" role="1ide8m">
@@ -1739,6 +1745,16 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7RhjhI7$lha" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="_wUu$U8fWE" role="6VMZX">
+      <node concept="l2Vlx" id="_wUu$U8fWF" role="2iSdaV" />
+      <node concept="3F0ifn" id="_wUu$U8fWK" role="3EZMnx">
+        <property role="3F0ifm" value="name:" />
+      </node>
+      <node concept="3F0A7n" id="_wUu$U8fX9" role="3EZMnx">
+        <property role="1$x2rV" value="noname" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7RhjhI7$li6">
@@ -4734,6 +4750,7 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbT" id="70QLBAKt0SN" role="TjlW2" />
       <node concept="3EZMnI" id="70QLBAKjDSG" role="1ytjkN">
         <node concept="l2Vlx" id="70QLBAKjDSH" role="2iSdaV" />
         <node concept="3F0A7n" id="70QLBAKjDSI" role="3EZMnx">
@@ -4743,7 +4760,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3clFbT" id="70QLBAKt0SN" role="TjlW2" />
     </node>
     <node concept="2aJ2om" id="70QLBAKjCNF" role="CpUAK">
       <ref role="2$4xQ3" node="7mSH3WnI4Ep" resolve="ARCH_GRAPHICAL" />
@@ -4830,6 +4846,57 @@
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="3F0ifn" id="3GtOaD$CnUi" role="2wV5jI">
       <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
+    </node>
+  </node>
+  <node concept="PKFIW" id="_wUu$U8dSM">
+    <property role="3GE5qa" value="cbd.assembly.graphical" />
+    <property role="TrG5h" value="ConnectionEditorComponent" />
+    <ref role="1XX52x" to="3whv:7RhjhI7$lgV" resolve="Connection" />
+    <node concept="3EZMnI" id="_wUu$U8dSO" role="2wV5jI">
+      <node concept="3F0A7n" id="_wUu$U8dUv" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="pkWqt" id="_wUu$U8dUD" role="pqm2j">
+          <node concept="3clFbS" id="_wUu$U8dUE" role="2VODD2">
+            <node concept="3clFbF" id="_wUu$U8dYA" role="3cqZAp">
+              <node concept="2OqwBi" id="_wUu$U8fto" role="3clFbG">
+                <node concept="2OqwBi" id="_wUu$U8egS" role="2Oq$k0">
+                  <node concept="pncrf" id="_wUu$U8dY_" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="_wUu$U8eDq" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="_wUu$U8fVV" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="_wUu$U8dT2" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
+      </node>
+      <node concept="l2Vlx" id="_wUu$U8dSR" role="2iSdaV" />
+      <node concept="VSNWy" id="_wUu$Uar0I" role="3F10Kt">
+        <node concept="1cFabM" id="_wUu$UasK7" role="1d8cEk">
+          <node concept="3clFbS" id="_wUu$UasK8" role="2VODD2">
+            <node concept="3clFbF" id="2N7iSwG_cmr" role="3cqZAp">
+              <node concept="3cpWsd" id="_wUu$UawqZ" role="3clFbG">
+                <node concept="3cmrfG" id="_wUu$Uawr3" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
+                </node>
+                <node concept="2OqwBi" id="2N7iSwG_e5G" role="3uHU7B">
+                  <node concept="2YIFZM" id="2N7iSwG_drY" role="2Oq$k0">
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="2N7iSwG_eKf" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
