@@ -273,6 +273,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7RhjhI7$li$" resolve="ComponentInterfaceRef" />
     </node>
+    <node concept="1TJgyj" id="_wUu$UfjIM" role="1TKVEi">
+      <property role="IQ2ns" value="675797132019317682" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="_wUu$UfjHH" resolve="InstanceAttributeBase" />
+    </node>
     <node concept="PrWs8" id="7RhjhI7$lix" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
@@ -365,6 +372,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="_wUu$UfjHH">
+    <property role="EcuMT" value="675797132019317613" />
+    <property role="3GE5qa" value="cbd.assembly.attributes" />
+    <property role="TrG5h" value="InstanceAttributeBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
