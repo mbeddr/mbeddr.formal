@@ -2412,6 +2412,32 @@
                                           </node>
                                         </node>
                                       </node>
+                                      <node concept="3clFbF" id="41_NtXJn8Z1" role="3cqZAp">
+                                        <node concept="2YIFZM" id="41_NtXJn8Z2" role="3clFbG">
+                                          <ref role="1Pybhc" node="696iakqzmI" resolve="FASTENNotificationUtils" />
+                                          <ref role="37wK5l" node="xCk$O6mi_h" resolve="showNotification" />
+                                          <node concept="Xl_RD" id="41_NtXJn8Z3" role="37wK5m">
+                                            <property role="Xl_RC" value="Error" />
+                                          </node>
+                                          <node concept="3cpWs3" id="41_NtXJn8Z4" role="37wK5m">
+                                            <node concept="2OqwBi" id="41_NtXJnjHb" role="3uHU7w">
+                                              <node concept="37vLTw" id="41_NtXJnje1" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="5Pb2U$k6TPo" resolve="ex" />
+                                              </node>
+                                              <node concept="liA8E" id="41_NtXJnkvg" role="2OqNvi">
+                                                <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                              </node>
+                                            </node>
+                                            <node concept="Xl_RD" id="41_NtXJn8Z6" role="3uHU7B">
+                                              <property role="Xl_RC" value="Error saving image " />
+                                            </node>
+                                          </node>
+                                          <node concept="Rm8GO" id="41_NtXJnl36" role="37wK5m">
+                                            <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
+                                            <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                                          </node>
+                                        </node>
+                                      </node>
                                     </node>
                                   </node>
                                   <node concept="1wplmZ" id="fXWVBp4iM_7" role="1zxBo6">
