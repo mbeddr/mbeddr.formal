@@ -9,6 +9,7 @@
   <imports>
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
+    <import index="bewr" ref="r:a5d87024-d7b0-459e-b0ec-a9c089196f41(com.mbeddr.formal.safety.stamp.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -125,6 +126,18 @@
     <property role="34LRSv" value="operating context" />
     <property role="R4oN_" value="requirement on the operating context" />
     <ref role="1TJDcQ" to="z27p:4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
+  <node concept="1TIwiD" id="41_NtXJpp31">
+    <property role="EcuMT" value="4640341350605492417" />
+    <property role="TrG5h" value="UCARefinementAttribute" />
+    <property role="34LRSv" value="uca refinement" />
+    <property role="R4oN_" value="refines an unintended control action" />
+    <ref role="1TJDcQ" to="z27p:5et_HVSNcF1" resolve="RequirementAttributeBase" />
+    <node concept="1TJgyj" id="41_NtXJpp32" role="1TKVEi">
+      <property role="IQ2ns" value="4640341350605492418" />
+      <property role="20kJfa" value="uca" />
+      <ref role="20lvS9" to="bewr:6RZi9iizv5a" resolve="IReferenceableActionDescription" />
+    </node>
   </node>
 </model>
 

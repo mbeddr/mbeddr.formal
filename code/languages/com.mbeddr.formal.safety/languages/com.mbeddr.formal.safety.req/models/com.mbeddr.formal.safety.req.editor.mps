@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="30zx" ref="r:c74e2282-8641-453d-b9cc-e065e14a0117(com.mbeddr.formal.safety.req.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -21,7 +22,12 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -86,6 +92,24 @@
         <property role="3F0ifm" value="operating context" />
       </node>
       <node concept="l2Vlx" id="6RZi9iizsaX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="41_NtXJpp43">
+    <ref role="1XX52x" to="30zx:41_NtXJpp31" resolve="UCARefinementAttribute" />
+    <node concept="3EZMnI" id="41_NtXJpp45" role="2wV5jI">
+      <node concept="3F0ifn" id="41_NtXJpp4c" role="3EZMnx">
+        <property role="3F0ifm" value="UCA:" />
+      </node>
+      <node concept="1iCGBv" id="41_NtXJpp4i" role="3EZMnx">
+        <ref role="1NtTu8" to="30zx:41_NtXJpp32" resolve="uca" />
+        <node concept="1sVBvm" id="41_NtXJpp4k" role="1sWHZn">
+          <node concept="3F0A7n" id="41_NtXJpp4v" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="41_NtXJpp48" role="2iSdaV" />
     </node>
   </node>
 </model>
