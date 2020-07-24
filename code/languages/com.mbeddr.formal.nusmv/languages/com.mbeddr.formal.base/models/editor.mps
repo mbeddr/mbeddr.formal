@@ -1825,7 +1825,7 @@
   <node concept="V5hpn" id="KwKRgpDZHV">
     <property role="TrG5h" value="MBEDDR_Formal_Styles" />
     <node concept="14StLt" id="KwKRgpDZHZ" role="V601i">
-      <property role="TrG5h" value="BaseLanguageKeyword" />
+      <property role="TrG5h" value="FASTENBaseLanguageKeyword" />
       <node concept="VechU" id="KwKRgpE0AU" role="3F10Kt">
         <node concept="3ZlJ5R" id="KwKRgpE0B0" role="VblUZ">
           <node concept="3clFbS" id="KwKRgpE0B1" role="2VODD2">
@@ -1843,7 +1843,7 @@
       </node>
     </node>
     <node concept="14StLt" id="KwKRgpJu1g" role="V601i">
-      <property role="TrG5h" value="ExtendedLanguageKeyword" />
+      <property role="TrG5h" value="FASTENExtendedLanguageKeyword" />
       <node concept="VechU" id="KwKRgpJu1h" role="3F10Kt">
         <node concept="3ZlJ5R" id="KwKRgpJu1i" role="VblUZ">
           <node concept="3clFbS" id="KwKRgpJu1j" role="2VODD2">
@@ -1869,6 +1869,12 @@
     <node concept="14StLt" id="_wUu$U7_Lc" role="V601i">
       <property role="TrG5h" value="FASTENUserHint" />
       <node concept="VechU" id="_wUu$U7_Ld" role="3F10Kt">
+        <property role="Vb096" value="fLJRk5A/lightGray" />
+      </node>
+    </node>
+    <node concept="14StLt" id="41_NtXJnxMU" role="V601i">
+      <property role="TrG5h" value="FASTENEndOfNodeMarker" />
+      <node concept="VechU" id="41_NtXJnxMV" role="3F10Kt">
         <property role="Vb096" value="fLJRk5A/lightGray" />
       </node>
     </node>
