@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.base/com.mbeddr.formal.req.base.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.msc/com.mbeddr.formal.req.msc.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.nusmv/com.mbeddr.formal.req.nusmv.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.scenarios/com.mbeddr.formal.req.scenarios.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.arch/com.mbeddr.formal.req.tl_patterns.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.nusmv/com.mbeddr.formal.req.tl_patterns.nusmv.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns/com.mbeddr.formal.req.tl_patterns.mpl" folder="lang" />
