@@ -448,5 +448,17 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2rSUIGXuWez">
+    <property role="EcuMT" value="2808252663735239587" />
+    <property role="3GE5qa" value="baseLanguage.analysis.action" />
+    <property role="TrG5h" value="ReferenceableActionDescriptionRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2rSUIGXuWe$" role="1TKVEi">
+      <property role="IQ2ns" value="2808252663735239588" />
+      <property role="20kJfa" value="action" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6RZi9iizv5a" resolve="IReferenceableActionDescription" />
+    </node>
+  </node>
 </model>
 
