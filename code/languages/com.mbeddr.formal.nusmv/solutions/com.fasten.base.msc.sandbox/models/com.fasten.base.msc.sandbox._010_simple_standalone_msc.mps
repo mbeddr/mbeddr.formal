@@ -18,6 +18,7 @@
       <concept id="6723249580495258698" name="com.fasten.base.msc.structure.MSCObjectRef" flags="ng" index="oYKel">
         <reference id="6723249580495258701" name="mscObject" index="oYKei" />
       </concept>
+      <concept id="6723249580495075160" name="com.fasten.base.msc.structure.Environment" flags="ng" index="oZz27" />
       <concept id="5342984381957789434" name="com.fasten.base.msc.structure.Message" flags="ng" index="3_aW46">
         <child id="6723249580495075175" name="target" index="oZz2S" />
         <child id="6723249580495075170" name="source" index="oZz2X" />
@@ -278,6 +279,27 @@
         <property role="ru7PJ" value="third_message" />
       </node>
     </node>
+    <node concept="oRLRZ" id="g4WxncHM8_" role="3_aW3_" />
+    <node concept="3_aW46" id="g4WxncHM98" role="3_aW3_">
+      <node concept="oYKel" id="g4WxncHM9r" role="oZz2X">
+        <ref role="oYKei" node="3QO5pQQtNDu" resolve="Receiver_2" />
+      </node>
+      <node concept="oZz27" id="g4WxncInbZ" role="oZz2S" />
+      <node concept="ru7O1" id="g4WxncInc1" role="3_fVoY">
+        <property role="ru7PJ" value="message_to_environment" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="g4WxncIAQe" role="3_aW3_" />
+    <node concept="3_aW46" id="g4WxncIARj" role="3_aW3_">
+      <node concept="oZz27" id="g4WxncIARG" role="oZz2X" />
+      <node concept="oYKel" id="g4WxncIARI" role="oZz2S">
+        <ref role="oYKei" node="3QO5pQQtNDp" resolve="Sender" />
+      </node>
+      <node concept="ru7O1" id="g4WxncIARK" role="3_fVoY">
+        <property role="ru7PJ" value="message_from_environment" />
+      </node>
+    </node>
+    <node concept="oRLRZ" id="g4WxncIAQV" role="3_aW3_" />
   </node>
 </model>
 
