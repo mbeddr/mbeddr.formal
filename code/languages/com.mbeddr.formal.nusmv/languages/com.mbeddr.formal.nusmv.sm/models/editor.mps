@@ -25,11 +25,13 @@
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tc27" ref="r:92d28f3c-6acc-431a-94ba-30cd184d2da4(de.itemis.mps.editor.diagram.runtime.substitute)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
+    <import index="nkqi" ref="r:cde44992-ee7c-42ec-9844-123dc63448f9(com.mbeddr.formal.nusmv.sm.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -59,6 +61,9 @@
       </concept>
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
+        <child id="4242538589859162459" name="hints" index="2w$qW5" />
+      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -156,7 +161,9 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
+        <child id="7279578193766667847" name="removeHints" index="78xub" />
+      </concept>
       <concept id="1163613035599" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_Query" flags="in" index="3GJtP1" />
       <concept id="1163613549566" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_parameterObject" flags="nn" index="3GLrbK" />
       <concept id="1163613822479" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Abstract_editedNode" flags="nn" index="3GMtW1" />
@@ -560,7 +567,7 @@
         </node>
         <node concept="3F0ifn" id="3UuTDIOPeuV" role="3EZMnx">
           <property role="3F0ifm" value="STATE-MACHINE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="s8t4o" id="3cHtG5tU3NU" role="3EZMnx">
           <property role="28Zw97" value="true" />
@@ -1131,6 +1138,11 @@
         <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="ahnd:4NkweGhcbG5" resolve="members" />
         <node concept="l2Vlx" id="6NmtaR1SWh0" role="2czzBx" />
+        <node concept="2w$q5c" id="g4WxncFWts" role="78xub">
+          <node concept="2aJ2om" id="g4WxncFWtt" role="2w$qW5">
+            <ref role="2$4xQ3" node="7mSH3WnI4Ep" resolve="SM_GRAPHICAL" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="6NmtaR1SWh_" role="3EZMnx">
         <property role="3F0ifm" value="}" />
@@ -1146,7 +1158,7 @@
     <node concept="3EZMnI" id="6NmtaR1VSYI" role="2wV5jI">
       <node concept="3F0ifn" id="6NmtaR1VSZ1" role="3EZMnx">
         <property role="3F0ifm" value="next" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="6NmtaR1VSZj" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1308,7 +1320,7 @@
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9hr" role="3EZMnx">
           <property role="3F0ifm" value="case" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="l2Vlx" id="6NmtaR1W9h5" role="2iSdaV" />
       </node>
@@ -1360,7 +1372,7 @@
         </node>
         <node concept="3F0ifn" id="1$vmWKMuhWV" role="3EZMnx">
           <property role="3F0ifm" value="TRUE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="1$vmWKMuhXd" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -1403,7 +1415,7 @@
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9kn" role="3EZMnx">
           <property role="3F0ifm" value="esac" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6NmtaR1W9lK" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -2114,7 +2126,7 @@
         </node>
         <node concept="3F0ifn" id="1$vmWKMrg88" role="3EZMnx">
           <property role="3F0ifm" value="case" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="l2Vlx" id="1$vmWKMrg89" role="2iSdaV" />
       </node>
@@ -2204,7 +2216,7 @@
         </node>
         <node concept="3F0ifn" id="1$vmWKMrg8k" role="3EZMnx">
           <property role="3F0ifm" value="esac" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="1$vmWKMrg8l" role="3EZMnx">
           <property role="3F0ifm" value=";" />
@@ -2371,7 +2383,7 @@
         </node>
         <node concept="3F0ifn" id="3cHtG5tTDhp" role="3EZMnx">
           <property role="3F0ifm" value="STATE-MACHINE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="s8t4o" id="3cHtG5tTDhr" role="3EZMnx">
           <property role="28Zw97" value="true" />
@@ -2475,7 +2487,7 @@
         </node>
         <node concept="3F0ifn" id="7mSH3Wne5mN" role="3EZMnx">
           <property role="3F0ifm" value="STATE-MACHINE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="7mSH3Wne5mV" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -3835,15 +3847,6 @@
       <node concept="2xQOud" id="1dBJZQQxSAY" role="2xQQDV">
         <ref role="2xQOue" node="4Te4zGtlJMP" resolve="RoundedRectangle" />
       </node>
-      <node concept="3EZMnI" id="1dBJZQQxWan" role="1ytjkN">
-        <node concept="l2Vlx" id="1dBJZQQxWao" role="2iSdaV" />
-        <node concept="3F0A7n" id="1dBJZQQxWap" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="PMmxH" id="1dBJZQQxWaq" role="3EZMnx">
-          <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
-        </node>
-      </node>
       <node concept="2fs66k" id="1dBJZQQxZH9" role="1idfhu">
         <node concept="3clFbS" id="1dBJZQQxZHa" role="2VODD2">
           <node concept="3clFbF" id="1dBJZQQy00s" role="3cqZAp">
@@ -3852,6 +3855,39 @@
               <node concept="3YRAZt" id="1dBJZQQy1oY" role="2OqNvi" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1dBJZQQxWan" role="1ytjkN">
+        <node concept="l2Vlx" id="1dBJZQQxWao" role="2iSdaV" />
+        <node concept="3F0ifn" id="2rSUIGXu_8X" role="3EZMnx">
+          <property role="3F0ifm" value="•" />
+          <node concept="VSNWy" id="2rSUIGXu_95" role="3F10Kt">
+            <property role="1lJzqX" value="18" />
+          </node>
+          <node concept="Vb9p2" id="2rSUIGXu_9q" role="3F10Kt">
+            <property role="Vbekb" value="g1_k_vY/BOLD" />
+          </node>
+          <node concept="pkWqt" id="2rSUIGXu_9w" role="pqm2j">
+            <node concept="3clFbS" id="2rSUIGXu_9x" role="2VODD2">
+              <node concept="3clFbF" id="2rSUIGXu_du" role="3cqZAp">
+                <node concept="2OqwBi" id="2rSUIGXu_wK" role="3clFbG">
+                  <node concept="pncrf" id="2rSUIGXu_dt" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="2rSUIGXuA3a" role="2OqNvi">
+                    <ref role="37wK5l" to="nkqi:2rSUIGXr797" resolve="isInitial" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0A7n" id="1dBJZQQxWap" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="PMmxH" id="1dBJZQQxWaq" role="3EZMnx">
+          <ref role="PMmxG" to="xnej:1$vmWKMlJ9o" resolve="SimulationValueComponentForBaseConcept" />
+        </node>
+        <node concept="xShMh" id="2rSUIGXqRJ$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>
