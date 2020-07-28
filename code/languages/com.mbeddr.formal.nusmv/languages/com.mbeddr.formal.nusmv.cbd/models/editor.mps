@@ -672,7 +672,7 @@
         <node concept="3EZMnI" id="7RhjhI7zUXE" role="3EZMnx">
           <node concept="3F0ifn" id="7RhjhI7zUXO" role="3EZMnx">
             <property role="3F0ifm" value="interface" />
-            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
           </node>
           <node concept="3F0A7n" id="7RhjhI7APv7" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -756,7 +756,7 @@
           </node>
           <node concept="3F0ifn" id="57ROGn90EFi" role="3EZMnx">
             <property role="3F0ifm" value="interface" />
-            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+            <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
           </node>
           <node concept="3F0A7n" id="57ROGn90EFj" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -926,14 +926,14 @@
         </node>
         <node concept="3F0ifn" id="57ROGn90EEU" role="3EZMnx">
           <property role="3F0ifm" value="assembly" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="57ROGn90EEV" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="3F0ifn" id="57ROGn92fHi" role="3EZMnx">
           <property role="3F0ifm" value="implements" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F1sOY" id="57ROGn92fHj" role="3EZMnx">
           <ref role="1NtTu8" to="vzqj:57ROGn8SsaT" resolve="interfaceRef_old" />
@@ -1040,7 +1040,7 @@
       <node concept="3EZMnI" id="7RhjhI7$E4N" role="3EZMnx">
         <node concept="3F0ifn" id="7RhjhI7$E4O" role="3EZMnx">
           <property role="3F0ifm" value="assembly" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="7RhjhI7$E4P" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1050,7 +1050,7 @@
           <node concept="3EZMnI" id="57ROGn93cyQ" role="_tjki">
             <node concept="3F0ifn" id="57ROGn93cz3" role="3EZMnx">
               <property role="3F0ifm" value="implements" />
-              <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+              <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
             </node>
             <node concept="3F1sOY" id="57ROGn93czc" role="3EZMnx">
               <ref role="1NtTu8" to="vzqj:57ROGn8SsaT" resolve="interfaceRef_old" />
@@ -1410,7 +1410,7 @@
       <node concept="3EZMnI" id="2l5A0OF7cxZ" role="3EZMnx">
         <node concept="3F0ifn" id="2l5A0OF7cyf" role="3EZMnx">
           <property role="3F0ifm" value="refinement" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="2l5A0OFb5E$" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1443,7 +1443,7 @@
       <node concept="3EZMnI" id="5WRxR_T3kci" role="AHCbl">
         <node concept="3F0ifn" id="5WRxR_T3kcj" role="3EZMnx">
           <property role="3F0ifm" value="refinement" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="5WRxR_T3kck" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

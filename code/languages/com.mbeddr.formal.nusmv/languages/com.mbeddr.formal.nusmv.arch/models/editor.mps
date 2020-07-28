@@ -3078,7 +3078,7 @@
         </node>
         <node concept="3F0ifn" id="7Je984P9dbv" role="3EZMnx">
           <property role="3F0ifm" value="WIRING" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="7Je984P9dbw" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -3815,7 +3815,7 @@
         </node>
         <node concept="3F0ifn" id="7Je984PaE26" role="3EZMnx">
           <property role="3F0ifm" value="WIRING" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="7Je984PaE27" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -5543,7 +5543,7 @@
         </node>
         <node concept="3F0ifn" id="2QUcAU1XKJJ" role="3EZMnx">
           <property role="3F0ifm" value="WIRING" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6NmtaR1Ul64" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -5590,7 +5590,7 @@
         </node>
         <node concept="3F0ifn" id="2QUcAU1XKP4" role="3EZMnx">
           <property role="3F0ifm" value="WIRING" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="7Je984PaCcB" role="3EZMnx">
           <property role="3F0ifm" value="{" />

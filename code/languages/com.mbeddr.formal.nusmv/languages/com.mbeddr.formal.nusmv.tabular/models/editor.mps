@@ -287,7 +287,7 @@
         </node>
         <node concept="3F0ifn" id="1IrBcRpiVGS" role="3EZMnx">
           <property role="3F0ifm" value="FUNCTION-TABLE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="1IrBcRpiVGT" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -362,7 +362,7 @@
         </node>
         <node concept="3F0ifn" id="7Je984P7Ovt" role="3EZMnx">
           <property role="3F0ifm" value="FUNCTION-TABLE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="7Je984P7Ovu" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -679,7 +679,7 @@
         </node>
         <node concept="3F0ifn" id="l_5LCCvaPq" role="3EZMnx">
           <property role="3F0ifm" value="ACTIONS-TABLE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="l_5LCCvaPr" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -704,7 +704,7 @@
         <node concept="3XFhqQ" id="4pkEwgj0$E5" role="3EZMnx" />
         <node concept="3F0ifn" id="l_5LCC$8Fy" role="3EZMnx">
           <property role="3F0ifm" value="Actions Declarations:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
       </node>
       <node concept="3EZMnI" id="l_5LCC$8G7" role="3EZMnx">
@@ -733,7 +733,7 @@
         </node>
         <node concept="3F0ifn" id="l_5LCCvaPE" role="3EZMnx">
           <property role="3F0ifm" value="ACTIONS-TABLE" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="l_5LCCvaPF" role="3EZMnx">
           <property role="3F0ifm" value="{" />

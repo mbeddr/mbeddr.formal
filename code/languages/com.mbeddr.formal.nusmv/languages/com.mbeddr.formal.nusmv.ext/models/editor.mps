@@ -293,7 +293,7 @@
     <node concept="3EZMnI" id="1gJVC85EQY5" role="2wV5jI">
       <node concept="3F0ifn" id="1gJVC85EQYf" role="3EZMnx">
         <property role="3F0ifm" value="#CONSTANT" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="1gJVC85EQYu" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -354,7 +354,7 @@
     <node concept="3EZMnI" id="1gJVC85KmMC" role="2wV5jI">
       <node concept="3F0ifn" id="1gJVC85KmMM" role="3EZMnx">
         <property role="3F0ifm" value="#FUNCTION" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="1gJVC85KmN1" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -582,7 +582,7 @@
     <node concept="3EZMnI" id="6xNJt7lPy_p" role="2wV5jI">
       <node concept="3F0ifn" id="6xNJt7lPy_z" role="3EZMnx">
         <property role="3F0ifm" value="enum" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="6xNJt7lPy_M" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -616,7 +616,7 @@
     <node concept="3EZMnI" id="6xNJt7lQHS9" role="2wV5jI">
       <node concept="3F0ifn" id="6xNJt7lQHSa" role="3EZMnx">
         <property role="3F0ifm" value="interval" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="6xNJt7lQHSb" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1044,7 +1044,7 @@
     <node concept="3EZMnI" id="25Ap4XXjSq3" role="2wV5jI">
       <node concept="3F0ifn" id="25Ap4XXjSqa" role="3EZMnx">
         <property role="3F0ifm" value="typedef" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="25Ap4XXjSqk" role="3EZMnx">
         <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
@@ -1109,7 +1109,7 @@
         <node concept="VPM3Z" id="25Ap4XXqBJo" role="3F10Kt" />
         <node concept="3F0ifn" id="25Ap4XXqBJ_" role="3EZMnx">
           <property role="3F0ifm" value="struct" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="25Ap4XXqBJO" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

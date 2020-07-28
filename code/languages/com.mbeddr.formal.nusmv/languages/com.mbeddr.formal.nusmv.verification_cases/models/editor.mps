@@ -145,7 +145,7 @@
         <node concept="2iRfu4" id="43FRfGK0XUL" role="2iSdaV" />
         <node concept="3F0ifn" id="43FRfGK0U$E" role="3EZMnx">
           <property role="3F0ifm" value="verification case:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="43FRfGK0YHl" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -209,7 +209,7 @@
         <node concept="2iRfu4" id="2QUcAU1VM$V" role="2iSdaV" />
         <node concept="3F0ifn" id="2QUcAU1VM$W" role="3EZMnx">
           <property role="3F0ifm" value="verification case:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="2QUcAU1VM$X" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

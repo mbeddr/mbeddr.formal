@@ -46,7 +46,7 @@
     <node concept="3EZMnI" id="5PdLXX5OllE" role="2wV5jI">
       <node concept="3F0ifn" id="5PdLXX5OllL" role="3EZMnx">
         <property role="3F0ifm" value="@TIME_DOMAIN" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="5PdLXX5OllR" role="3EZMnx">
         <ref role="1NtTu8" to="822v:5PdLXX5OllA" resolve="domain" />
@@ -59,7 +59,7 @@
     <ref role="1XX52x" to="822v:5PdLXX5OSZD" resolve="TimeLiteral" />
     <node concept="3F0ifn" id="5PdLXX5P0J6" role="2wV5jI">
       <property role="3F0ifm" value="time" />
-      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
     </node>
   </node>
 </model>
