@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn/fasten.safety.gsn.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.hara/fasten.safety.hara.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety/fasten.safety.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.arch.timing/com.fasten.arch.timing.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.ft/com.fasten.safety.ft.mpl" folder="ft" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.ext/com.mbeddr.formal.safety.gsn.ext.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.external_evidence/com.mbeddr.formal.safety.gsn.external_evidence.mpl" folder="gsn" />
