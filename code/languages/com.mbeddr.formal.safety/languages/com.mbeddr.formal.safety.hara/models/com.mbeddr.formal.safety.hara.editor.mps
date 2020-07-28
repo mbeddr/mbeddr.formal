@@ -271,7 +271,7 @@
     <node concept="3EZMnI" id="2RlaC$P86OF" role="2wV5jI">
       <node concept="3F0ifn" id="2RlaC$P86OG" role="3EZMnx">
         <property role="3F0ifm" value="@hazards" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="2RlaC$PcSiM" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -306,7 +306,7 @@
     <node concept="3EZMnI" id="2RlaC$Pbl10" role="2wV5jI">
       <node concept="3F0ifn" id="2RlaC$Pbl11" role="3EZMnx">
         <property role="3F0ifm" value="@hazard" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="2RlaC$PcChx" role="3EZMnx">
         <property role="3F0ifm" value="(" />

@@ -4171,7 +4171,7 @@
         <node concept="VPM3Z" id="5uFV_KKC5W8" role="3F10Kt" />
         <node concept="PMmxH" id="5uFV_KKC5Z6" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
           <node concept="xShMh" id="71GfFl7i3Qn" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -5080,7 +5080,7 @@
       </node>
       <node concept="PMmxH" id="362wVFMd9PW" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="362wVFMd9Q1" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

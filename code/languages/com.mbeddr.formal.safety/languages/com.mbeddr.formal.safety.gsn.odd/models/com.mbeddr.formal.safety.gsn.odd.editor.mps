@@ -157,7 +157,7 @@
         <node concept="VPM3Z" id="33qt4wr7y4R" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wr7y4S" role="3EZMnx">
           <property role="3F0ifm" value="ODD Formal Assumption: " />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="33qt4wr7y4T" role="3EZMnx">
           <property role="1O74Pk" value="true" />
@@ -453,7 +453,7 @@
         <node concept="VPM3Z" id="33qt4wra$PM" role="3F10Kt" />
         <node concept="3F0ifn" id="33qt4wra$PN" role="3EZMnx">
           <property role="3F0ifm" value="ODD-Context:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="33qt4wra$PO" role="3EZMnx">
           <property role="1O74Pk" value="true" />

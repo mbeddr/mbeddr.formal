@@ -228,7 +228,7 @@
         <node concept="VPM3Z" id="WKGDODNprw" role="3F10Kt" />
         <node concept="3F0ifn" id="WKGDODNprx" role="3EZMnx">
           <property role="3F0ifm" value="Instance of pattern:" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="1iCGBv" id="WKGDODNpry" role="3EZMnx">
           <ref role="1NtTu8" to="lbo2:WKGDODIrUZ" resolve="originalDefinition" />
