@@ -1080,14 +1080,12 @@
     <property role="3GE5qa" value="baseLanguage.analysis.action" />
     <ref role="1XX52x" to="bewr:1JhvKLLOZ8k" resolve="PatternActionDescription" />
     <node concept="3EZMnI" id="41_NtXJogBo" role="2wV5jI">
+      <node concept="3F0A7n" id="6RZi9iizXz7" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
+      </node>
       <node concept="2iRkQZ" id="41_NtXJogBp" role="2iSdaV" />
       <node concept="3EZMnI" id="1JhvKLLPb1e" role="3EZMnx">
-        <node concept="3F0A7n" id="6RZi9iizXz7" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          <node concept="VechU" id="6RZi9ii$cWC" role="3F10Kt">
-            <property role="Vb096" value="g1_qVrt/darkMagenta" />
-          </node>
-        </node>
         <node concept="3F1sOY" id="1JhvKLLPb1l" role="3EZMnx">
           <ref role="1NtTu8" to="bewr:1JhvKLLOZ8l" resolve="context" />
         </node>
