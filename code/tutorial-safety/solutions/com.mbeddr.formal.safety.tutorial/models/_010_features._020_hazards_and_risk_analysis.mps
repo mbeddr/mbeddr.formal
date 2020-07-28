@@ -2,9 +2,7 @@
 <model ref="r:f55b42c2-771a-4828-bc62-5b64fd2520eb(_010_features._020_hazards_and_risk_analysis)">
   <persistence version="9" />
   <languages>
-    <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
-    <use id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262" version="0" />
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
   </languages>
   <imports />
   <registry>
@@ -333,6 +331,7 @@
       <node concept="1E0nOJ" id="1L4MZBxVgKz" role="1E0nOC">
         <ref role="1E0n_N" node="1L4MZBxVgEj" resolve="Activate" />
         <node concept="1E0COo" id="1L4MZBxVnXE" role="1E0ucd">
+          <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_01" />
           <node concept="1E0COg" id="1L4MZBxVnXK" role="1E0COp">
             <node concept="19SGf9" id="1L4MZBxVnXM" role="1E0COh">
               <node concept="19SUe$" id="1L4MZBxVnXN" role="19SJt6">
@@ -345,6 +344,7 @@
           </node>
         </node>
         <node concept="1E0COo" id="7L33HENb9v1" role="1E0tWM">
+          <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_02" />
           <node concept="1E0COg" id="7L33HENb9va" role="1E0COp">
             <node concept="19SGf9" id="7L33HENb9vc" role="1E0COh">
               <node concept="19SUe$" id="7L33HENb9vd" role="19SJt6">
@@ -363,6 +363,7 @@
         <ref role="1E0n_N" node="1L4MZBxVgDG" resolve="Deactivate" />
         <node concept="3XErhT" id="1L4MZBxVzdi" role="1E0ucd" />
         <node concept="1E0COo" id="1L4MZBxVzdk" role="1E0tWM">
+          <property role="TrG5h" value="UCA_DRIVER_DEACTIVATE_01" />
           <node concept="1E0COg" id="1L4MZBxVzdq" role="1E0COp">
             <node concept="19SGf9" id="1L4MZBxVzds" role="1E0COh">
               <node concept="19SUe$" id="1L4MZBxVzdt" role="19SJt6">
@@ -383,6 +384,7 @@
       <node concept="1E0nOJ" id="1L4MZBxVze7" role="1E0nOC">
         <ref role="1E0n_N" node="1L4MZBxVgEo" resolve="Activation Status" />
         <node concept="1E0COo" id="1L4MZBxVFnp" role="1E0ucd">
+          <property role="TrG5h" value="UCA_AIRBAG_STATUS_01" />
           <node concept="1E0COg" id="1L4MZBxVFnv" role="1E0COp">
             <node concept="19SGf9" id="1L4MZBxVFnx" role="1E0COh">
               <node concept="19SUe$" id="1L4MZBxVFny" role="19SJt6">
@@ -395,6 +397,7 @@
           </node>
         </node>
         <node concept="1E0COo" id="1L4MZBxVSOT" role="1E0tWM">
+          <property role="TrG5h" value="UCA_AIRBAG_STATUS_02" />
           <node concept="1E0COg" id="1L4MZBxVSOU" role="1E0COp">
             <node concept="19SGf9" id="1L4MZBxVSOV" role="1E0COh">
               <node concept="19SUe$" id="1L4MZBxVSOW" role="19SJt6">
@@ -412,6 +415,7 @@
       <node concept="1E0nOJ" id="7L33HENb9vW" role="1E0nOC">
         <ref role="1E0n_N" node="1L4MZBxVgH3" resolve="Deploy Airbag" />
         <node concept="1E0COo" id="7L33HENb9wb" role="1E0ucd">
+          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_01" />
           <node concept="1E0COg" id="7L33HENb9wc" role="1E0COp">
             <node concept="19SGf9" id="7L33HENb9wd" role="1E0COh">
               <node concept="19SUe$" id="7L33HENb9we" role="19SJt6">
@@ -424,6 +428,7 @@
           </node>
         </node>
         <node concept="1E0COo" id="7L33HENb9wl" role="1E0tWM">
+          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_02" />
           <node concept="1E0COg" id="7L33HENb9wm" role="1E0COp">
             <node concept="19SGf9" id="7L33HENb9wn" role="1E0COh">
               <node concept="19SUe$" id="7L33HENb9wo" role="19SJt6">
@@ -436,6 +441,7 @@
           </node>
         </node>
         <node concept="1E0COo" id="7L33HENb9wv" role="1E0tXe">
+          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_03" />
           <node concept="1E0COg" id="7L33HENb9ww" role="1E0COp">
             <node concept="19SGf9" id="7L33HENb9wx" role="1E0COh">
               <node concept="19SUe$" id="7L33HENb9wy" role="19SJt6">
@@ -448,6 +454,7 @@
           </node>
         </node>
         <node concept="1E0COo" id="7L33HENb9wP" role="1E0tXb">
+          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_04" />
           <node concept="1E0COg" id="7L33HENb9wQ" role="1E0COp">
             <node concept="19SGf9" id="7L33HENb9wR" role="1E0COh">
               <node concept="19SUe$" id="7L33HENb9wS" role="19SJt6">
