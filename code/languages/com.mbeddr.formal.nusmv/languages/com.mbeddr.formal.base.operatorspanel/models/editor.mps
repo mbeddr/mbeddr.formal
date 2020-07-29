@@ -36,6 +36,7 @@
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="8b9w" ref="r:76e92037-38d8-4be4-999f-3a851f86ac42(com.mbeddr.formal.base.operatorspanel.structure)" />
+    <import index="ugkg" ref="r:27d94600-50a7-46c9-b58f-f0c2ab16806b(com.mbeddr.formal.base.operatorspanel.util)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6m3u" ref="r:67761219-191d-44af-aaf0-3da2d685817e(com.mbeddr.formal.base.operatorspanel.behavior)" implicit="true" />
   </imports>
@@ -651,9 +652,9 @@
                             </node>
                             <node concept="3clFbS" id="2QUcAU27THE" role="3clF47">
                               <node concept="3clFbF" id="2QUcAU2806H" role="3cqZAp">
-                                <node concept="2YIFZM" id="2QUcAU280LK" role="3clFbG">
-                                  <ref role="37wK5l" to="mc3u:2QUcAU27U8Y" resolve="reloadAdapterClasses" />
-                                  <ref role="1Pybhc" to="mc3u:2QUcAU27U4b" resolve="AdapterClassesUtils" />
+                                <node concept="2YIFZM" id="6hyv0iVPLRk" role="3clFbG">
+                                  <ref role="37wK5l" to="ugkg:2QUcAU27U8Y" resolve="reloadAdapterClasses" />
+                                  <ref role="1Pybhc" to="ugkg:2QUcAU27U4b" resolve="AdapterClassesUtils" />
                                   <node concept="pncrf" id="2QUcAU2817z" role="37wK5m" />
                                 </node>
                               </node>
