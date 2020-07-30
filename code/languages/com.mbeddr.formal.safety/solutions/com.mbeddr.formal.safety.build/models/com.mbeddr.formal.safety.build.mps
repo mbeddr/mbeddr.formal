@@ -454,6 +454,27 @@
       <node concept="m$_wl" id="1uyUeTt3MWg" role="39821P">
         <ref role="m_rDy" node="1uyUeTt3ODd" resolve="com.mbeddr.formal.base" />
         <node concept="pUk6x" id="1uyUeTt3S5o" role="pUk7w" />
+        <node concept="398223" id="67Nhy_DXRxM" role="39821P">
+          <node concept="3_J27D" id="67Nhy_DXRxN" role="Nbhlr">
+            <node concept="3Mxwew" id="67Nhy_DXREp" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="wUJmWC$hDh" role="39821P">
+            <node concept="398BVA" id="678OVF49ngg" role="2HvfZ0">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="678OVF49nkr" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6mm$FLYQ$9_" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.base.tooling" />
+                  <node concept="2Ry0Ak" id="6mm$FLYQ$9z" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="m$_wl" id="7he_lUumQum" role="39821P">
         <ref role="m_rDy" node="7he_lUumO49" resolve="com.mbeddr.formal.req" />
@@ -479,20 +500,6 @@
                 <node concept="2Ry0Ak" id="wUJmWCzWRb" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
                   <node concept="2Ry0Ak" id="wUJmWCzWRc" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="wUJmWC$hDh" role="39821P">
-            <node concept="398BVA" id="678OVF49ngg" role="2HvfZ0">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-              <node concept="2Ry0Ak" id="678OVF49nkr" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="6mm$FLYQ$9_" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.base.tooling" />
-                  <node concept="2Ry0Ak" id="6mm$FLYQ$9z" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                   </node>
                 </node>
