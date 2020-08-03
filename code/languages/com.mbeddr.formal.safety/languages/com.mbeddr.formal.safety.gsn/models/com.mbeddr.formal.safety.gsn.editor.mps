@@ -4863,17 +4863,11 @@
           <node concept="1HfYo3" id="5uFV_KKCs0P" role="1HlULh">
             <node concept="3TQlhw" id="5uFV_KKCs0R" role="1Hhtcw">
               <node concept="3clFbS" id="5uFV_KKCs0T" role="2VODD2">
-                <node concept="3clFbF" id="5uFV_KKCs5L" role="3cqZAp">
-                  <node concept="2OqwBi" id="5uFV_KKCsOR" role="3clFbG">
-                    <node concept="2OqwBi" id="5uFV_KKCsiR" role="2Oq$k0">
-                      <node concept="pncrf" id="5uFV_KKCs5K" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="5uFV_KKCsCe" role="2OqNvi">
-                        <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="5uFV_KKCtbd" role="2OqNvi">
-                      <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
-                    </node>
+                <node concept="3clFbF" id="4ySbu0CcGgF" role="3cqZAp">
+                  <node concept="2YIFZM" id="4ySbu0CcGgG" role="3clFbG">
+                    <ref role="1Pybhc" node="4ySbu0Cc_cG" resolve="TextualDescriptionUtils" />
+                    <ref role="37wK5l" node="4ySbu0Cc_kd" resolve="getText" />
+                    <node concept="pncrf" id="4ySbu0CcGgH" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -5783,17 +5777,11 @@
         <node concept="1HfYo3" id="362wVFMda1n" role="1HlULh">
           <node concept="3TQlhw" id="362wVFMda1o" role="1Hhtcw">
             <node concept="3clFbS" id="362wVFMda1p" role="2VODD2">
-              <node concept="3clFbF" id="362wVFMda1q" role="3cqZAp">
-                <node concept="2OqwBi" id="362wVFMda1r" role="3clFbG">
-                  <node concept="2OqwBi" id="362wVFMda1s" role="2Oq$k0">
-                    <node concept="pncrf" id="362wVFMda1t" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="362wVFMda1u" role="2OqNvi">
-                      <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="362wVFMda1v" role="2OqNvi">
-                    <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
-                  </node>
+              <node concept="3clFbF" id="4ySbu0CcCvQ" role="3cqZAp">
+                <node concept="2YIFZM" id="4ySbu0CcCFc" role="3clFbG">
+                  <ref role="37wK5l" node="4ySbu0Cc_kd" resolve="getText" />
+                  <ref role="1Pybhc" node="4ySbu0Cc_cG" resolve="TextualDescriptionUtils" />
+                  <node concept="pncrf" id="4ySbu0CcCQt" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -6278,17 +6266,11 @@
             <node concept="1HfYo3" id="4q8AAJKJYpH" role="1HlULh">
               <node concept="3TQlhw" id="4q8AAJKJYpI" role="1Hhtcw">
                 <node concept="3clFbS" id="4q8AAJKJYpJ" role="2VODD2">
-                  <node concept="3clFbF" id="4q8AAJKJYpK" role="3cqZAp">
-                    <node concept="2OqwBi" id="4q8AAJKJYpL" role="3clFbG">
-                      <node concept="2OqwBi" id="4q8AAJKJYpM" role="2Oq$k0">
-                        <node concept="pncrf" id="4q8AAJKJYpN" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="4q8AAJKJYpO" role="2OqNvi">
-                          <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="4q8AAJKJYpP" role="2OqNvi">
-                        <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
-                      </node>
+                  <node concept="3clFbF" id="4ySbu0CcDAL" role="3cqZAp">
+                    <node concept="2YIFZM" id="4ySbu0CcDAM" role="3clFbG">
+                      <ref role="1Pybhc" node="4ySbu0Cc_cG" resolve="TextualDescriptionUtils" />
+                      <ref role="37wK5l" node="4ySbu0Cc_kd" resolve="getText" />
+                      <node concept="pncrf" id="4ySbu0CcDAN" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -6585,17 +6567,11 @@
             <node concept="1HfYo3" id="4q8AAJKK1ea" role="1HlULh">
               <node concept="3TQlhw" id="4q8AAJKK1eb" role="1Hhtcw">
                 <node concept="3clFbS" id="4q8AAJKK1ec" role="2VODD2">
-                  <node concept="3clFbF" id="4q8AAJKK1ed" role="3cqZAp">
-                    <node concept="2OqwBi" id="4q8AAJKK1ee" role="3clFbG">
-                      <node concept="2OqwBi" id="4q8AAJKK1ef" role="2Oq$k0">
-                        <node concept="pncrf" id="4q8AAJKK1eg" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="4q8AAJKK1eh" role="2OqNvi">
-                          <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="4q8AAJKK1ei" role="2OqNvi">
-                        <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
-                      </node>
+                  <node concept="3clFbF" id="4ySbu0CcEf8" role="3cqZAp">
+                    <node concept="2YIFZM" id="4ySbu0CcEf9" role="3clFbG">
+                      <ref role="1Pybhc" node="4ySbu0Cc_cG" resolve="TextualDescriptionUtils" />
+                      <ref role="37wK5l" node="4ySbu0Cc_kd" resolve="getText" />
+                      <node concept="pncrf" id="4ySbu0CcEfa" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -8380,6 +8356,51 @@
     <node concept="2tJIrI" id="71J_h5QWn85" role="jymVt" />
     <node concept="2tJIrI" id="71J_h5QWn8f" role="jymVt" />
     <node concept="3Tm1VV" id="71J_h5QWmUz" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4ySbu0Cc_cG">
+    <property role="3GE5qa" value="textual" />
+    <property role="TrG5h" value="TextualDescriptionUtils" />
+    <node concept="2tJIrI" id="4ySbu0Cc_dY" role="jymVt" />
+    <node concept="2YIFZL" id="4ySbu0Cc_kd" role="jymVt">
+      <property role="TrG5h" value="getText" />
+      <node concept="3clFbS" id="4ySbu0Cc_kg" role="3clF47">
+        <node concept="3clFbF" id="4ySbu0Cc_uj" role="3cqZAp">
+          <node concept="2OqwBi" id="4ySbu0CcATP" role="3clFbG">
+            <node concept="2OqwBi" id="4ySbu0CcAg$" role="2Oq$k0">
+              <node concept="2OqwBi" id="4ySbu0Cc_I4" role="2Oq$k0">
+                <node concept="37vLTw" id="4ySbu0Cc_ui" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4ySbu0Cc_oh" resolve="gseb" />
+                </node>
+                <node concept="3TrEf2" id="4ySbu0CcA4l" role="2OqNvi">
+                  <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="4ySbu0CcAzm" role="2OqNvi">
+                <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4ySbu0CcBnK" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+              <node concept="Xl_RD" id="4ySbu0CcByb" role="37wK5m">
+                <property role="Xl_RC" value="\n" />
+              </node>
+              <node concept="Xl_RD" id="4ySbu0CcBKC" role="37wK5m">
+                <property role="Xl_RC" value=" " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4ySbu0Cc_g1" role="1B3o_S" />
+      <node concept="17QB3L" id="4ySbu0Cc_k2" role="3clF45" />
+      <node concept="37vLTG" id="4ySbu0Cc_oh" role="3clF46">
+        <property role="TrG5h" value="gseb" />
+        <node concept="3Tqbb2" id="4ySbu0Cc_og" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4ySbu0Cc_cH" role="1B3o_S" />
   </node>
 </model>
 
