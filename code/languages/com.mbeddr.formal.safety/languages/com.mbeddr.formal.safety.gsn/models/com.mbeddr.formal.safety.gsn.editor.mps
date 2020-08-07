@@ -2982,18 +2982,18 @@
     <property role="TrG5h" value="StrategyTextArea" />
     <ref role="1XX52x" to="py52:3GRi4m$rlnF" resolve="Strategy" />
     <node concept="3EZMnI" id="3Ngc4zVhb4d" role="2wV5jI">
-      <node concept="3EZMnI" id="3Ngc4zVhb4e" role="3EZMnx">
-        <node concept="VPM3Z" id="3Ngc4zVhb4f" role="3F10Kt" />
-        <node concept="3F0ifn" id="3Ngc4zVhb4g" role="3EZMnx">
+      <node concept="3EZMnI" id="1_o3ZDJr73w" role="3EZMnx">
+        <node concept="VPM3Z" id="1_o3ZDJr73y" role="3F10Kt" />
+        <node concept="3F0ifn" id="1_o3ZDJr73V" role="3EZMnx">
           <property role="3F0ifm" value="Strategy:" />
           <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
         </node>
-        <node concept="3F0A7n" id="3Ngc4zVhb4h" role="3EZMnx">
+        <node concept="3F0A7n" id="1_o3ZDJr73W" role="3EZMnx">
           <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="2iRfu4" id="2BjEyIlT$nY" role="2iSdaV" />
+        <node concept="l2Vlx" id="1_o3ZDJr73_" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="3Ngc4zVhb4k" role="2iSdaV" />
       <node concept="3F1sOY" id="2BjEyIlT5Kd" role="3EZMnx">
@@ -8674,6 +8674,37 @@
           </node>
         </node>
         <node concept="VPM3Z" id="7olAlesPlJ5" role="3F10Kt" />
+        <node concept="3F0ifn" id="1_o3ZDJsGXW" role="3EZMnx">
+          <property role="3F0ifm" value="Away" />
+          <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
+          <node concept="pkWqt" id="1_o3ZDJsGXX" role="pqm2j">
+            <node concept="3clFbS" id="1_o3ZDJsGXY" role="2VODD2">
+              <node concept="3clFbF" id="1_o3ZDJsGXZ" role="3cqZAp">
+                <node concept="1Wc70l" id="1_o3ZDJsHvT" role="3clFbG">
+                  <node concept="2OqwBi" id="1_o3ZDJsHQs" role="3uHU7B">
+                    <node concept="pncrf" id="1_o3ZDJsHAX" role="2Oq$k0" />
+                    <node concept="1mIQ4w" id="1_o3ZDJsIc0" role="2OqNvi">
+                      <node concept="chp4Y" id="1_o3ZDJsIj2" role="cj9EA">
+                        <ref role="cht4Q" to="py52:3GRi4m$qNtH" resolve="Goal" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1_o3ZDJsGY0" role="3uHU7w">
+                    <node concept="1PxgMI" id="1_o3ZDJsIB8" role="2Oq$k0">
+                      <node concept="chp4Y" id="1_o3ZDJsICr" role="3oSUPX">
+                        <ref role="cht4Q" to="py52:3GRi4m$qNtH" resolve="Goal" />
+                      </node>
+                      <node concept="pncrf" id="1_o3ZDJsGY1" role="1m5AlR" />
+                    </node>
+                    <node concept="3TrcHB" id="1_o3ZDJsJ8P" role="2OqNvi">
+                      <ref role="3TsBF5" to="py52:4q8AAJKJQyk" resolve="away" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="PMmxH" id="7olAlesPlJ6" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
@@ -9172,6 +9203,9 @@
         <node concept="l2Vlx" id="7olAlesPlKT" role="2iSdaV" />
         <node concept="VPM3Z" id="7olAlesPlKU" role="3F10Kt" />
       </node>
+    </node>
+    <node concept="PMmxH" id="1_o3ZDJsNt8" role="6VMZX">
+      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
     </node>
   </node>
   <node concept="312cEu" id="7olAlesPJUl">
