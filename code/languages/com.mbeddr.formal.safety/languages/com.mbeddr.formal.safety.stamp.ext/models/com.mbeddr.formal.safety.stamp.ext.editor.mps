@@ -13,7 +13,6 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
     <import index="a6vc" ref="r:e6f4512f-409a-4a84-b8a1-33fc1cc8fd1f(com.mbeddr.formal.safety.stamp.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -77,7 +76,6 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -90,12 +88,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -421,20 +413,6 @@
         <node concept="1HfYo3" id="1Y8zh0lVH0K" role="1HlULh">
           <node concept="3TQlhw" id="1Y8zh0lVH0L" role="1Hhtcw">
             <node concept="3clFbS" id="1Y8zh0lVH0M" role="2VODD2">
-              <node concept="3clFbF" id="1Y8zh0lVH0N" role="3cqZAp">
-                <node concept="2OqwBi" id="1Y8zh0lVH0O" role="3clFbG">
-                  <node concept="10M0yZ" id="1Y8zh0lVH0P" role="2Oq$k0">
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  </node>
-                  <node concept="liA8E" id="1Y8zh0lVH0Q" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                    <node concept="Xl_RD" id="1Y8zh0lVH0R" role="37wK5m">
-                      <property role="Xl_RC" value="################" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="1Y8zh0lVH0S" role="3cqZAp">
                 <node concept="2OqwBi" id="1Y8zh0lVH0T" role="3clFbG">
                   <node concept="2OqwBi" id="1Y8zh0lVH0U" role="2Oq$k0">
@@ -496,20 +474,6 @@
         <node concept="1HfYo3" id="1Y8zh0lVHrO" role="1HlULh">
           <node concept="3TQlhw" id="1Y8zh0lVHrP" role="1Hhtcw">
             <node concept="3clFbS" id="1Y8zh0lVHrQ" role="2VODD2">
-              <node concept="3clFbF" id="1Y8zh0lVHrR" role="3cqZAp">
-                <node concept="2OqwBi" id="1Y8zh0lVHrS" role="3clFbG">
-                  <node concept="10M0yZ" id="1Y8zh0lVHrT" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                  </node>
-                  <node concept="liA8E" id="1Y8zh0lVHrU" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                    <node concept="Xl_RD" id="1Y8zh0lVHrV" role="37wK5m">
-                      <property role="Xl_RC" value="################" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="1Y8zh0lVHrW" role="3cqZAp">
                 <node concept="2OqwBi" id="1Y8zh0lVHrX" role="3clFbG">
                   <node concept="2OqwBi" id="1Y8zh0lVHrY" role="2Oq$k0">
