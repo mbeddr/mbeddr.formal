@@ -2914,6 +2914,56 @@
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
       </node>
+      <node concept="3EZMnI" id="1Q8$RAKNHpR" role="3EZMnx">
+        <node concept="VPM3Z" id="1Q8$RAKNHpT" role="3F10Kt" />
+        <node concept="3F0ifn" id="1Q8$RAKNHpV" role="3EZMnx">
+          <property role="3F0ifm" value="developed in" />
+          <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
+        </node>
+        <node concept="3EZMnI" id="1Q8$RAKNI$O" role="3EZMnx">
+          <node concept="VPM3Z" id="1Q8$RAKNI$Q" role="3F10Kt" />
+          <node concept="1iCGBv" id="1Q8$RAKOBYV" role="3EZMnx">
+            <ref role="1NtTu8" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+            <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
+            <node concept="Vb9p2" id="1Q8$RAKOBZb" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+            <node concept="1sVBvm" id="1Q8$RAKOBYX" role="1sWHZn">
+              <node concept="3F0A7n" id="1Q8$RAKOBZ8" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
+              </node>
+            </node>
+          </node>
+          <node concept="1iCGBv" id="1Q8$RAKNI_D" role="3EZMnx">
+            <ref role="1NtTu8" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+            <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+            <node concept="1sVBvm" id="1Q8$RAKNI_E" role="1sWHZn">
+              <node concept="3F1sOY" id="1Q8$RAKNI_F" role="2wV5jI">
+                <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+            <node concept="Vb9p2" id="1Q8$RAKNI_T" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+          </node>
+          <node concept="2iRkQZ" id="1Q8$RAKNI$T" role="2iSdaV" />
+        </node>
+        <node concept="l2Vlx" id="1Q8$RAKNHpW" role="2iSdaV" />
+        <node concept="pkWqt" id="1Q8$RAKNHqL" role="pqm2j">
+          <node concept="3clFbS" id="1Q8$RAKNHqM" role="2VODD2">
+            <node concept="3clFbF" id="1Q8$RAKNHrl" role="3cqZAp">
+              <node concept="2OqwBi" id="1Q8$RAKNHFB" role="3clFbG">
+                <node concept="pncrf" id="1Q8$RAKNHrk" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1Q8$RAKNI6Q" role="2OqNvi">
+                  <ref role="3TsBF5" to="py52:4q8AAJKJQyk" resolve="away" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="xShMh" id="65Lrkjj1RgQ" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
@@ -2949,16 +2999,41 @@
           <node concept="3F0ifn" id="4q8AAJKJV$C" role="3EZMnx">
             <property role="3F0ifm" value="developed in:" />
           </node>
-          <node concept="1iCGBv" id="4q8AAJKJRz_" role="3EZMnx">
-            <ref role="1NtTu8" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
-            <node concept="1sVBvm" id="4q8AAJKJRzB" role="1sWHZn">
-              <node concept="3F0A7n" id="4q8AAJKJR$1" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="3EZMnI" id="1Q8$RAKLQPT" role="3EZMnx">
+            <node concept="VPM3Z" id="1Q8$RAKLQPV" role="3F10Kt" />
+            <node concept="1iCGBv" id="4q8AAJKJRz_" role="3EZMnx">
+              <ref role="1NtTu8" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+              <node concept="Vb9p2" id="1Q8$RAKNIGp" role="3F10Kt">
+                <property role="Vbekb" value="g1_kEg4/ITALIC" />
+              </node>
+              <node concept="1sVBvm" id="4q8AAJKJRzB" role="1sWHZn">
+                <node concept="3F0A7n" id="4q8AAJKJR$1" role="2wV5jI">
+                  <property role="1Intyy" value="true" />
+                  <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
+            <node concept="3EZMnI" id="1Q8$RAKMJRE" role="3EZMnx">
+              <node concept="VPM3Z" id="1Q8$RAKMJRG" role="3F10Kt" />
+              <node concept="3F0ifn" id="1Q8$RAKMJRI" role="3EZMnx">
+                <property role="3F0ifm" value="Description:" />
+              </node>
+              <node concept="1iCGBv" id="1Q8$RAKK4ug" role="3EZMnx">
+                <ref role="1NtTu8" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+                <node concept="1sVBvm" id="1Q8$RAKK4ui" role="1sWHZn">
+                  <node concept="3F1sOY" id="1Q8$RAKLQQH" role="2wV5jI">
+                    <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+                  </node>
+                </node>
+                <node concept="Vb9p2" id="1Q8$RAKLSb9" role="3F10Kt">
+                  <property role="Vbekb" value="g1_kEg4/ITALIC" />
+                </node>
+              </node>
+              <node concept="l2Vlx" id="1Q8$RAKMJRJ" role="2iSdaV" />
+            </node>
+            <node concept="2iRkQZ" id="1Q8$RAKLQPY" role="2iSdaV" />
           </node>
-          <node concept="l2Vlx" id="4q8AAJKJVzI" role="2iSdaV" />
+          <node concept="l2Vlx" id="1Q8$RAKLQGY" role="2iSdaV" />
           <node concept="pkWqt" id="4q8AAJKJVL0" role="pqm2j">
             <node concept="3clFbS" id="4q8AAJKJVL1" role="2VODD2">
               <node concept="3clFbF" id="4q8AAJKJVPe" role="3cqZAp">
