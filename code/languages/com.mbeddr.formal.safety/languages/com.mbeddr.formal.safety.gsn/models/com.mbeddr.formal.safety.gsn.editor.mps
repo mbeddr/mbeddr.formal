@@ -9401,5 +9401,62 @@
     </node>
     <node concept="3Tm1VV" id="7olAlesPJUm" role="1B3o_S" />
   </node>
+  <node concept="24kQdi" id="2TfVCPOMB8P">
+    <ref role="1XX52x" to="py52:2TfVCPOMB8H" resolve="Justification" />
+    <node concept="PMmxH" id="2TfVCPOMBc9" role="6VMZX">
+      <ref role="PMmxG" node="2TfVCPOMBaF" resolve="JustificationTextAreaInInspector" />
+    </node>
+    <node concept="2ZK4vF" id="2TfVCPOMBce" role="2wV5jI">
+      <ref role="1k5W1q" node="65LrkjiZjs5" resolve="GSNShapeStyle" />
+      <node concept="2xQOud" id="2TfVCPOMBcf" role="2xQQDV">
+        <ref role="2xQOue" node="3GRi4m$roLc" resolve="SolutionCircle" />
+      </node>
+      <node concept="PMmxH" id="2TfVCPOMBcg" role="1ytjkN">
+        <ref role="PMmxG" node="2TfVCPOME$g" resolve="JustificationTextArea" />
+      </node>
+      <node concept="2fs66k" id="2TfVCPOMBch" role="1idfhu">
+        <node concept="3clFbS" id="2TfVCPOMBci" role="2VODD2">
+          <node concept="3clFbF" id="2TfVCPOMBcj" role="3cqZAp">
+            <node concept="2YIFZM" id="2TfVCPOMBck" role="3clFbG">
+              <ref role="1Pybhc" node="WKGDODOElx" resolve="GSNNodeDeleter" />
+              <ref role="37wK5l" node="WKGDODOEpx" resolve="deleteNode" />
+              <node concept="1Pxb5l" id="2TfVCPOMBcl" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2TfVCPOMBaF">
+    <property role="TrG5h" value="JustificationTextAreaInInspector" />
+    <ref role="1XX52x" to="py52:2TfVCPOMB8H" resolve="Justification" />
+    <node concept="PMmxH" id="2TfVCPOMBaK" role="2wV5jI">
+      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="2TfVCPOME$g">
+    <property role="TrG5h" value="JustificationTextArea" />
+    <ref role="1XX52x" to="py52:2TfVCPOMB8H" resolve="Justification" />
+    <node concept="3EZMnI" id="2TfVCPOME_s" role="2wV5jI">
+      <node concept="3EZMnI" id="2TfVCPOME_t" role="3EZMnx">
+        <node concept="VPM3Z" id="2TfVCPOME_u" role="3F10Kt" />
+        <node concept="3F0ifn" id="2TfVCPOME_v" role="3EZMnx">
+          <property role="3F0ifm" value="Justification:" />
+          <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="2TfVCPOME_w" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+        </node>
+        <node concept="l2Vlx" id="2TfVCPOME_x" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="2TfVCPOME_y" role="2iSdaV" />
+      <node concept="3F1sOY" id="2TfVCPOME_z" role="3EZMnx">
+        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+      </node>
+    </node>
+  </node>
 </model>
 
