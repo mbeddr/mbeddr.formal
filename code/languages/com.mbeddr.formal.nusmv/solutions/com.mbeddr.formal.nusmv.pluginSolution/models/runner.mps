@@ -485,6 +485,78 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4Hts7PYtYdS" role="jymVt" />
+    <node concept="2YIFZL" id="4ChNVCzZiS_" role="jymVt">
+      <property role="TrG5h" value="runNuSMVCmdFile" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4ChNVCzZiSA" role="3clF47">
+        <node concept="3cpWs8" id="4ChNVCzZtS2" role="3cqZAp">
+          <node concept="3cpWsn" id="4ChNVCzZtS3" role="3cpWs9">
+            <property role="TrG5h" value="args" />
+            <node concept="_YKpA" id="4ChNVCzZtS4" role="1tU5fm">
+              <node concept="17QB3L" id="4ChNVCzZtS5" role="_ZDj9" />
+            </node>
+            <node concept="2ShNRf" id="4ChNVCzZtS6" role="33vP2m">
+              <node concept="Tc6Ow" id="4ChNVCzZtS7" role="2ShVmc">
+                <node concept="17QB3L" id="4ChNVCzZtS8" role="HW$YZ" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4ChNVCzZtS9" role="3cqZAp">
+          <node concept="2OqwBi" id="4ChNVCzZtSa" role="3clFbG">
+            <node concept="37vLTw" id="4ChNVCzZtSb" role="2Oq$k0">
+              <ref role="3cqZAo" node="4ChNVCzZtS3" resolve="args" />
+            </node>
+            <node concept="TSZUe" id="4ChNVCzZtSc" role="2OqNvi">
+              <node concept="Xl_RD" id="4ChNVCzZtSd" role="25WWJ7">
+                <property role="Xl_RC" value="-source" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4ChNVCzZiSB" role="3cqZAp">
+          <node concept="1rXfSq" id="4ChNVCzZiSC" role="3cqZAk">
+            <ref role="37wK5l" node="4Hts7PYtZ$X" resolve="runNuSMVWithArguments" />
+            <node concept="37vLTw" id="4ChNVCzZiSD" role="37wK5m">
+              <ref role="3cqZAo" node="4ChNVCzZiSL" resolve="m" />
+            </node>
+            <node concept="37vLTw" id="4ChNVCzZnWY" role="37wK5m">
+              <ref role="3cqZAo" node="4ChNVCzZiSN" resolve="cmdFileName" />
+            </node>
+            <node concept="37vLTw" id="4ChNVCzZiSF" role="37wK5m">
+              <ref role="3cqZAo" node="4ChNVCzZiSP" resolve="pi" />
+            </node>
+            <node concept="37vLTw" id="4ChNVCzZvdx" role="37wK5m">
+              <ref role="3cqZAo" node="4ChNVCzZtS3" resolve="args" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4ChNVCzZiSJ" role="1B3o_S" />
+      <node concept="3uibUv" id="4ChNVCzZiSK" role="3clF45">
+        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
+      </node>
+      <node concept="37vLTG" id="4ChNVCzZiSL" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <node concept="H_c77" id="4ChNVCzZiSM" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4ChNVCzZiSN" role="3clF46">
+        <property role="TrG5h" value="cmdFileName" />
+        <node concept="17QB3L" id="4ChNVCzZiSO" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4ChNVCzZiSP" role="3clF46">
+        <property role="TrG5h" value="pi" />
+        <node concept="3uibUv" id="4ChNVCzZiSQ" role="1tU5fm">
+          <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="4ChNVCzZiSR" role="lGtFl">
+        <property role="NWlVz" value="Runs NuSMV on a given file." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ChNVCzZi9g" role="jymVt" />
     <node concept="2YIFZL" id="4Hts7PYua5g" role="jymVt">
       <property role="TrG5h" value="runNuSMVBMC" />
       <property role="od$2w" value="false" />
