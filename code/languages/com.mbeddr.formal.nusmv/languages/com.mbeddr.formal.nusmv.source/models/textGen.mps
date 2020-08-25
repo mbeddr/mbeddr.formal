@@ -193,7 +193,7 @@
           <node concept="l9hG8" id="6glUKoNPtjZ" role="lcghm">
             <node concept="3cpWs3" id="6glUKoNPxFF" role="lb14g">
               <node concept="Xl_RD" id="6glUKoNPxQZ" role="3uHU7w">
-                <property role="Xl_RC" value=".smv" />
+                <property role="Xl_RC" value="___flattenedSystem.smv" />
               </node>
               <node concept="2OqwBi" id="6glUKoNPwOv" role="3uHU7B">
                 <node concept="2OqwBi" id="6glUKoNPwfH" role="2Oq$k0">
