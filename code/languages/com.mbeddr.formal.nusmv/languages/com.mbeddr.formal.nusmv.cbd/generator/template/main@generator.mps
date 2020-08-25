@@ -881,7 +881,7 @@
           <node concept="3clFbF" id="1NcemxUMuoY" role="3cqZAp">
             <node concept="NRdvd" id="1NcemxUMvur" role="3clFbG">
               <ref role="1Pybhc" to="2w9c:1NcemxUMb0z" resolve="AGArchitectureFlatteningNamingUtils" />
-              <ref role="37wK5l" to="2w9c:1NcemxUMb0B" resolve="nameOfGeneratedSystem" />
+              <ref role="37wK5l" to="2w9c:4ChNVC$wuqD" resolve="nameOfGeneratedSystem" />
               <node concept="30H73N" id="1NcemxUMvus" role="37wK5m" />
             </node>
           </node>
