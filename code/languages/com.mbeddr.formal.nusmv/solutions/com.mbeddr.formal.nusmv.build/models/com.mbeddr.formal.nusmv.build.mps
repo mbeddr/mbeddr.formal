@@ -865,8 +865,8 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1tK6zDrn4mn" role="3bR37C">
-          <node concept="3bR9La" id="1tK6zDrn4mo" role="1SiIV1">
+        <node concept="1SiIV0" id="75dSVMD4Uxt" role="3bR37C">
+          <node concept="3bR9La" id="75dSVMD4Uxu" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
@@ -3639,6 +3639,11 @@
             <node concept="3qWCbU" id="5TezZ1VdfBp" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="75dSVMD4UDa" role="3bR37C">
+          <node concept="3bR9La" id="75dSVMD4UDb" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuJ" resolve="com.mbeddr.formal.nusmv.importer.rt" />
           </node>
         </node>
       </node>
