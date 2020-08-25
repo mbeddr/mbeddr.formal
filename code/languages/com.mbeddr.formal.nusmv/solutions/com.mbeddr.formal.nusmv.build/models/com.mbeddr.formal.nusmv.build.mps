@@ -829,11 +829,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="IiE7lRnYew" role="3bR37C">
-          <node concept="3bR9La" id="IiE7lRnYex" role="1SiIV1">
-            <ref role="3bR37D" node="5yQpAUIgOcH" resolve="com.mbeddr.formal.nusmv.cbd" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="IiE7lRnYeH" role="3bR37C">
           <node concept="1Busua" id="IiE7lRnYeI" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
@@ -870,9 +865,9 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="65VbbGlCJPQ" role="3bR37C">
-          <node concept="3bR9La" id="65VbbGlCJPR" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+        <node concept="1SiIV0" id="1tK6zDrn4mn" role="3bR37C">
+          <node concept="3bR9La" id="1tK6zDrn4mo" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>
@@ -3497,11 +3492,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2QUcAU2cCA5" role="3bR37C">
-          <node concept="3bR9La" id="2QUcAU2cCA6" role="1SiIV1">
-            <ref role="3bR37D" node="Kom1UAN5uc" resolve="com.mbeddr.formal.base.operatorspanel" />
           </node>
         </node>
         <node concept="1BupzO" id="5TezZ1VdfB9" role="3bR31x">
