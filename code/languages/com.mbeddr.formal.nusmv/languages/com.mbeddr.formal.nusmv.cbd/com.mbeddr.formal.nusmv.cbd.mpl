@@ -99,16 +99,14 @@
   <dependencies>
     <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">f7ad14aa-a3e2-4301-8822-d919845c8bcf(de.itemis.mps.editor.diagram.shapes)</dependency>
-    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">c0e6afd4-e20f-4e33-9970-004cf26b9bf6(com.mbeddr.formal.nusmv.ext)</dependency>
     <dependency reexport="false">58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)</dependency>
-    <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
     <dependency reexport="false">e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)</dependency>
     <dependency reexport="false">c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)</dependency>
     <dependency reexport="false">0785c32a-102f-45a9-9367-99fd48b107eb(com.mbeddr.formal.nusmv.cbd.pluginSolution)</dependency>
-    <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">f7ad14aa-a3e2-4301-8822-d919845c8bcf(de.itemis.mps.editor.diagram.shapes)</dependency>
+    <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />

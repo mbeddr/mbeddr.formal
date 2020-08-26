@@ -16,7 +16,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" languageLevel="JAVA_8">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -35,7 +35,6 @@
     <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">85d37fe5-2c7e-4ea1-ae78-08007614c543(com.mbeddr.formal.nusmv.importer)</dependency>
-    <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)</dependency>
   </dependencies>
   <languageVersions>

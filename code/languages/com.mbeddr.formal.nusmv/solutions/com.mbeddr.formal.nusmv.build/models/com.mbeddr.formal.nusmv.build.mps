@@ -968,6 +968,22 @@
             <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="3rtmxn" id="75dSVMD606I" role="3bR31x">
+          <node concept="3LXTmp" id="75dSVMD606J" role="3rtmxm">
+            <node concept="398BVA" id="75dSVMD606K" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="75dSVMD606L" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="75dSVMD606M" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.base.msc" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="75dSVMD606O" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2Btqz_w6o5R" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1101,6 +1117,22 @@
         <node concept="1SiIV0" id="2Btqz_w6oXF" role="3bR37C">
           <node concept="1Busua" id="2Btqz_w6oXG" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="75dSVMD61_M" role="3bR31x">
+          <node concept="3LXTmp" id="75dSVMD61_N" role="3rtmxm">
+            <node concept="398BVA" id="75dSVMD61_O" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="75dSVMD61_P" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="75dSVMD61_Q" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.base.arch.msc" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="75dSVMD61_S" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
           </node>
         </node>
       </node>
@@ -2806,11 +2838,6 @@
             <ref role="1Busuk" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5yQpAUIgPqs" role="3bR37C">
-          <node concept="3bR9La" id="5yQpAUIgPqt" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5yQpAUIgPqw" role="3bR37C">
           <node concept="3bR9La" id="5yQpAUIgPqx" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
@@ -2920,11 +2947,6 @@
             <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1EUSzWtKQyY" role="3bR37C">
-          <node concept="3bR9La" id="1EUSzWtKQyZ" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1EUSzWtKQz0" role="3bR37C">
           <node concept="1Busua" id="1EUSzWtKQz1" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
@@ -3004,11 +3026,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2QUcAU2cCzC" role="3bR37C">
-          <node concept="3bR9La" id="2QUcAU2cCzD" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="5yQpAUIgPRZ" role="3bR37C">
@@ -3639,11 +3656,6 @@
             <node concept="3qWCbU" id="5TezZ1VdfBp" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="75dSVMD4UDa" role="3bR37C">
-          <node concept="3bR9La" id="75dSVMD4UDb" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuJ" resolve="com.mbeddr.formal.nusmv.importer.rt" />
           </node>
         </node>
       </node>
