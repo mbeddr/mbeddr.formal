@@ -415,5 +415,13 @@
       <ref role="20lvS9" node="4gtLUSMLiMA" resolve="AbstractRequirement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2TfVCPOL$K$">
+    <property role="EcuMT" value="3337148140221778980" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="Technical" />
+    <property role="34LRSv" value="technical" />
+    <property role="R4oN_" value="a technical requirement" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
 </model>
 

@@ -324,5 +324,20 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2TfVCPOMB8H">
+    <property role="EcuMT" value="3337148140222050861" />
+    <property role="TrG5h" value="Justification" />
+    <property role="34LRSv" value="Justification" />
+    <ref role="1TJDcQ" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="1irR5M" id="2TfVCPOOA2W" role="rwd14">
+      <property role="2$rrk2" value="7" />
+      <node concept="1irPie" id="2TfVCPOOA32" role="1irR9h">
+        <property role="1irPi9" value="J" />
+        <node concept="3PKj8D" id="2TfVCPOOA33" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
