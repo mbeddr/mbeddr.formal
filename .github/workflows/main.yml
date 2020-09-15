@@ -58,6 +58,13 @@ jobs:
         export JB_JAVA11_HOME=/usr/lib/jvm/java-11-openjdk-amd64
         export JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64
         ./gradlew
+        
+    - name: Perform checks and tests
+      run: |
+        export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        export JB_JAVA11_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        export JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        ./gradlew check
       
     - name: Archive distribution
       uses: actions/upload-artifact@v1
