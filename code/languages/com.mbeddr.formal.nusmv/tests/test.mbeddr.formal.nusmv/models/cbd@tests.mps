@@ -35,13 +35,21 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
+        <child id="1215604436604" name="nodeOperations" index="7EUXB" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
+        <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
+      </concept>
+      <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
+        <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
@@ -163,6 +171,7 @@
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
       <concept id="4183024216371329180" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssemblySMV" flags="ng" index="2dDAV0" />
       <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
+      <concept id="4998758146911282919" name="com.mbeddr.formal.nusmv.cbd.structure.AnalyzeArchitecture" flags="ng" index="2lSSVF" />
       <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
     </language>
@@ -178,6 +187,17 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="bf72618c-958a-47f5-9aac-3eff98d79ffd" name="com.mbeddr.formal.nusmv.source">
+      <concept id="7211928790175692107" name="com.mbeddr.formal.nusmv.source.structure.Quit" flags="ng" index="1nK5Td" />
+      <concept id="7211928790174746857" name="com.mbeddr.formal.nusmv.source.structure.FlattenHierarchy" flags="ng" index="1nOEfJ" />
+      <concept id="7211928790174748022" name="com.mbeddr.formal.nusmv.source.structure.BuildModel" flags="ng" index="1nOEpK" />
+      <concept id="7211928790174747661" name="com.mbeddr.formal.nusmv.source.structure.EncodeVariables" flags="ng" index="1nOEsb" />
+      <concept id="7211928790174746324" name="com.mbeddr.formal.nusmv.source.structure.ReadModel" flags="ng" index="1nOERi" />
+      <concept id="7211928790174713950" name="com.mbeddr.formal.nusmv.source.structure.Source" flags="ng" index="1nOMdo">
+        <child id="7211928790174721514" name="content" index="1nOKVG" />
+      </concept>
+      <concept id="747060984333127928" name="com.mbeddr.formal.nusmv.source.structure.CheckCTLSpec" flags="ng" index="3uTczT" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2295987781863215983" name="com.mbeddr.formal.nusmv.structure.NotEqualsExpression" flags="ng" index="dheZm" />
@@ -282,6 +302,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -2556,6 +2579,26 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1_RXhpCyaQ7">
+    <property role="TrG5h" value="_060_redundant_model_read" />
+    <property role="3OwPAg" value="true" />
+    <node concept="1qefOq" id="1_RXhpCyuRJ" role="1SKRRt">
+      <node concept="1nOMdo" id="1_RXhpCyaQ0" role="1qenE9">
+        <property role="TrG5h" value="_060_redundant_model_read" />
+        <node concept="2lSSVF" id="1_RXhpCyuSp" role="1nOKVG" />
+        <node concept="1nOERi" id="1_RXhpCyaQ1" role="1nOKVG">
+          <node concept="7CXmI" id="1_RXhpCyuSy" role="lGtFl">
+            <node concept="1TM$A" id="1_RXhpCyuSz" role="7EUXB" />
+          </node>
+        </node>
+        <node concept="1nOEfJ" id="1_RXhpCyaQ2" role="1nOKVG" />
+        <node concept="1nOEsb" id="1_RXhpCyaQ3" role="1nOKVG" />
+        <node concept="1nOEpK" id="1_RXhpCyaQ4" role="1nOKVG" />
+        <node concept="3uTczT" id="1_RXhpCyaQ5" role="1nOKVG" />
+        <node concept="1nK5Td" id="1_RXhpCyaQ6" role="1nOKVG" />
       </node>
     </node>
   </node>

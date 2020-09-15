@@ -10,6 +10,7 @@
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
+    <import index="rcfd" ref="r:aa6c5e05-6972-4980-b759-3c51783a587d(com.mbeddr.formal.nusmv.source.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -576,6 +577,13 @@
     <property role="EcuMT" value="4183024216371329191" />
     <property role="TrG5h" value="INuSMVRelatedArchitectureElement" />
     <property role="3GE5qa" value="cbd_new" />
+  </node>
+  <node concept="1TIwiD" id="4lva0NgJarB">
+    <property role="EcuMT" value="4998758146911282919" />
+    <property role="TrG5h" value="AnalyzeArchitecture" />
+    <property role="34LRSv" value="analyze_architecture" />
+    <property role="R4oN_" value="triggers nusmv to use a source file (aka. command file)" />
+    <ref role="1TJDcQ" to="rcfd:6glUKoNLO$M" resolve="NuSMVCommand" />
   </node>
 </model>
 
