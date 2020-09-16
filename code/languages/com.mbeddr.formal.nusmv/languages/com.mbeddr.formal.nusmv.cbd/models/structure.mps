@@ -584,6 +584,16 @@
     <property role="34LRSv" value="analyze_architecture" />
     <property role="R4oN_" value="triggers nusmv to use a source file (aka. command file)" />
     <ref role="1TJDcQ" to="rcfd:6glUKoNLO$M" resolve="NuSMVCommand" />
+    <node concept="1TJgyj" id="6glUKoNLOst" role="1TKVEi">
+      <property role="IQ2ns" value="7211928790174746397" />
+      <property role="20kJfa" value="assembly" />
+      <ref role="20lvS9" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+    </node>
+    <node concept="1TJgyi" id="24fsOzjDgvV" role="1TKVEl">
+      <property role="IQ2nx" value="2382249484527929339" />
+      <property role="TrG5h" value="assemblyname" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
