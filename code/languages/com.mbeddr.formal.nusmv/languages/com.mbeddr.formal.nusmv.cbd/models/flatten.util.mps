@@ -321,7 +321,7 @@
                   <property role="Xl_RC" value="___" />
                 </node>
               </node>
-              <node concept="37vLTw" id="4ChNVC$I1_z" role="3uHU7w">
+              <node concept="37vLTw" id="7LDvfPxhd8U" role="3uHU7w">
                 <ref role="3cqZAo" node="3nPAywcrmaV" resolve="INSTANCE_NAME_OF_FLATTENED_SYSTEM" />
               </node>
             </node>
@@ -346,7 +346,7 @@
       <node concept="3clFbS" id="1NcemxUMb0N" role="3clF47">
         <node concept="3clFbF" id="1NcemxUMb0T" role="3cqZAp">
           <node concept="3cpWs3" id="4ChNVC$Eb67" role="3clFbG">
-            <node concept="37vLTw" id="4ChNVC$I1hq" role="3uHU7w">
+            <node concept="37vLTw" id="7LDvfPxhdxQ" role="3uHU7w">
               <ref role="3cqZAo" node="3nPAywcrmaV" resolve="INSTANCE_NAME_OF_FLATTENED_SYSTEM" />
             </node>
             <node concept="3cpWs3" id="1NcemxUMb0W" role="3uHU7B">
