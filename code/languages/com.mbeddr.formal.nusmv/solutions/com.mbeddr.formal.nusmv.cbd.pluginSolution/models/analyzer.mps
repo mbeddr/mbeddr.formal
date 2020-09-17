@@ -661,7 +661,15 @@
             <node concept="10Nm6u" id="5hYaN7eMOkM" role="33vP2m" />
           </node>
         </node>
-        <node concept="3clFbH" id="24fsOzjC6xv" role="3cqZAp" />
+        <node concept="3cpWs8" id="16k3j00_tRy" role="3cqZAp">
+          <node concept="3cpWsn" id="16k3j00_tR_" role="3cpWs9">
+            <property role="TrG5h" value="sourceFileName" />
+            <node concept="17QB3L" id="16k3j00_tRw" role="1tU5fm" />
+            <node concept="Xl_RD" id="16k3j00_uA4" role="33vP2m">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="24fsOzj$boZ" role="3cqZAp" />
         <node concept="3cpWs8" id="15PPQjZebQD" role="3cqZAp">
           <node concept="3cpWsn" id="15PPQjZebQG" role="3cpWs9">
@@ -848,6 +856,21 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbF" id="16k3j00_z6c" role="3cqZAp">
+                        <node concept="37vLTI" id="16k3j00_zt4" role="3clFbG">
+                          <node concept="2OqwBi" id="16k3j00_zZh" role="37vLTx">
+                            <node concept="37vLTw" id="16k3j00_zH0" role="2Oq$k0">
+                              <ref role="3cqZAo" node="24fsOzjC6$s" resolve="source" />
+                            </node>
+                            <node concept="3TrcHB" id="16k3j00_$eT" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                          <node concept="37vLTw" id="16k3j00_z6a" role="37vLTJ">
+                            <ref role="3cqZAo" node="16k3j00_tR_" resolve="sourceFileName" />
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3zACq4" id="5hYaN7eMN8K" role="3cqZAp" />
                     </node>
                   </node>
@@ -887,13 +910,8 @@
             <node concept="2xdQw9" id="1gKQ3XRFpCs" role="3cqZAp">
               <property role="2xdLsb" value="h1akgim/info" />
               <node concept="3cpWs3" id="24fsOzj_lq6" role="9lYJi">
-                <node concept="2OqwBi" id="5hYaN7eMNpq" role="3uHU7w">
-                  <node concept="37vLTw" id="5hYaN7eMNL$" role="2Oq$k0">
-                    <ref role="3cqZAo" node="24fsOzjC6$s" resolve="source" />
-                  </node>
-                  <node concept="3TrcHB" id="5hYaN7eMNCP" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
+                <node concept="37vLTw" id="16k3j00_$OR" role="3uHU7w">
+                  <ref role="3cqZAo" node="16k3j00_tR_" resolve="sourceFileName" />
                 </node>
                 <node concept="Xl_RD" id="1gKQ3XRFpCu" role="3uHU7B">
                   <property role="Xl_RC" value="Calling NuSMV on source file: " />

@@ -12,7 +12,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="7wf3" ref="r:c49134f0-ff6f-4ef4-ad9f-10c1a3f47c1a(com.mbeddr.formal.base.arch.behavior)" />
-    <import index="rcfd" ref="r:aa6c5e05-6972-4980-b759-3c51783a587d(com.mbeddr.formal.nusmv.source.structure)" implicit="true" />
+    <import index="rcfd" ref="r:aa6c5e05-6972-4980-b759-3c51783a587d(com.mbeddr.formal.nusmv.source.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -82,7 +82,6 @@
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
-      <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF" />
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
       </concept>
@@ -424,16 +423,16 @@
       <ref role="1YaFvo" to="vzqj:2l5A0OF7cwg" resolve="Refine" />
     </node>
   </node>
-  <node concept="1YbPZF" id="4lva0NgKoxJ">
-    <property role="TrG5h" value="typeof_Source" />
-    <node concept="3clFbS" id="4lva0NgKoxK" role="18ibNy">
+  <node concept="18kY7G" id="16k3j00A3hD">
+    <property role="TrG5h" value="check_Source" />
+    <node concept="3clFbS" id="16k3j00A3hE" role="18ibNy">
       <node concept="3clFbJ" id="4lva0NgKoxV" role="3cqZAp">
         <node concept="1Wc70l" id="4lva0NgKrKd" role="3clFbw">
           <node concept="2OqwBi" id="4lva0NgKrdv" role="3uHU7B">
             <node concept="2OqwBi" id="4lva0NgKpUG" role="2Oq$k0">
               <node concept="2OqwBi" id="4lva0NgKoGE" role="2Oq$k0">
                 <node concept="1YBJjd" id="4lva0NgKoy7" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4lva0NgKoxM" resolve="source" />
+                  <ref role="1YBMHb" node="16k3j00A3hG" resolve="source" />
                 </node>
                 <node concept="32TBzR" id="4lva0NgKoRo" role="2OqNvi" />
               </node>
@@ -449,7 +448,7 @@
             <node concept="2OqwBi" id="4lva0NgKrMP" role="2Oq$k0">
               <node concept="2OqwBi" id="4lva0NgKrMQ" role="2Oq$k0">
                 <node concept="1YBJjd" id="4lva0NgKrMR" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4lva0NgKoxM" resolve="source" />
+                  <ref role="1YBMHb" node="16k3j00A3hG" resolve="source" />
                 </node>
                 <node concept="32TBzR" id="4lva0NgKrMS" role="2OqNvi" />
               </node>
@@ -471,7 +470,7 @@
               <node concept="2OqwBi" id="4lva0NgKtlZ" role="2Oq$k0">
                 <node concept="2OqwBi" id="4lva0NgKs3F" role="2Oq$k0">
                   <node concept="1YBJjd" id="4lva0NgKrUy" role="2Oq$k0">
-                    <ref role="1YBMHb" node="4lva0NgKoxM" resolve="source" />
+                    <ref role="1YBMHb" node="16k3j00A3hG" resolve="source" />
                   </node>
                   <node concept="32TBzR" id="4lva0NgKsiT" role="2OqNvi" />
                 </node>
@@ -487,7 +486,7 @@
         </node>
       </node>
     </node>
-    <node concept="1YaCAy" id="4lva0NgKoxM" role="1YuTPh">
+    <node concept="1YaCAy" id="16k3j00A3hG" role="1YuTPh">
       <property role="TrG5h" value="source" />
       <ref role="1YaFvo" to="rcfd:6glUKoNLGxu" resolve="Source" />
     </node>

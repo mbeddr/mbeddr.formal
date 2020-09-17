@@ -22,7 +22,9 @@
       <concept id="2685719935121672279" name="com.mbeddr.formal.nusmv.cbd.structure.ModuleRef" flags="ng" index="eml1q">
         <reference id="2685719935121672280" name="module" index="eml1l" />
       </concept>
-      <concept id="4998758146911282919" name="com.mbeddr.formal.nusmv.cbd.structure.AnalyzeArchitecture" flags="ng" index="2lSSVF" />
+      <concept id="4998758146911282919" name="com.mbeddr.formal.nusmv.cbd.structure.AnalyzeArchitecture" flags="ng" index="2lSSVF">
+        <reference id="7211928790174746397" name="assembly" index="1nOEKr" />
+      </concept>
       <concept id="9066112305501141496" name="com.mbeddr.formal.nusmv.cbd.structure.ContractsSpec" flags="ng" index="3US3jz" />
       <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
@@ -2408,7 +2410,9 @@
   </node>
   <node concept="1nOMdo" id="4lva0NgK_MM">
     <property role="TrG5h" value="_210_source_based_AG_analyses_all_pass" />
-    <node concept="2lSSVF" id="1_RXhpCya_I" role="1nOKVG" />
+    <node concept="2lSSVF" id="1_RXhpCya_I" role="1nOKVG">
+      <ref role="1nOEKr" node="4lva0NgK_J5" resolve="_210_Arch_Source_ALL_PASS" />
+    </node>
     <node concept="1nOEfJ" id="6glUKoNQPQ8" role="1nOKVG" />
     <node concept="1nOEsb" id="6glUKoNQPVZ" role="1nOKVG" />
     <node concept="1nOEpK" id="6glUKoNPrfv" role="1nOKVG" />
