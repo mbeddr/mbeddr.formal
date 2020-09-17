@@ -6390,6 +6390,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="244_is40pun" role="3bR37C">
+          <node concept="1Busua" id="244_is40puo" role="1SiIV1">
+            <ref role="1Busuk" node="6glUKoNR9Tl" resolve="com.mbeddr.formal.nusmv.source" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="42jqVeFkUuJ" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -6863,6 +6868,11 @@
             <node concept="3qWCbU" id="5TezZ1VejiJ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="244_is40pwa" role="3bR37C">
+          <node concept="3bR9La" id="244_is40pwb" role="1SiIV1">
+            <ref role="3bR37D" node="6glUKoNR9Tl" resolve="com.mbeddr.formal.nusmv.source" />
           </node>
         </node>
       </node>
