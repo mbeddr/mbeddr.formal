@@ -26,6 +26,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -56,6 +57,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -259,6 +261,14 @@
       <property role="IQ2ns" value="7926133672146685733" />
       <property role="20kJfa" value="hazard" />
       <ref role="20lvS9" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
+      <node concept="asaX9" id="1TjUjQRQU06" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="1TjUjQRQU01" role="1TKVEi">
+      <property role="IQ2ns" value="2185346695491723265" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="hazards" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="cjwq:6W1kQP6AMY_" resolve="HazardRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JhvKLLO9Ka">
@@ -350,7 +360,7 @@
   <node concept="1TIwiD" id="4q9fsxm3ow8">
     <property role="EcuMT" value="5082661585110796296" />
     <property role="3GE5qa" value="baseLanguage.analysis.consequence" />
-    <property role="TrG5h" value="HazardRef" />
+    <property role="TrG5h" value="HazardConsequence" />
     <ref role="1TJDcQ" node="1JhvKLLOZ8r" resolve="ConsequenceBase" />
     <node concept="1TJgyj" id="4q9fsxm3owq" role="1TKVEi">
       <property role="IQ2ns" value="5082661585110796314" />
@@ -446,6 +456,15 @@
     </node>
     <node concept="PrWs8" id="1dsoBXVMQn6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1irR5M" id="1TjUjQRS7FM" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irPie" id="1TjUjQRS7FS" role="1irR9h">
+        <property role="1irPi9" value="L" />
+        <node concept="3PKj8D" id="1TjUjQRS7FZ" role="3PKjny">
+          <property role="3PKj8l" value="555555" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="2rSUIGXuWez">

@@ -256,7 +256,7 @@
                   <ref role="1YBMHb" node="1L4MZBxVLJp" resolve="textualConsequence" />
                 </node>
                 <node concept="3Cnw8n" id="1L4MZBxVQPB" role="1urrFz">
-                  <ref role="QpYPw" node="1L4MZBxVPx$" resolve="replaceTextWithHazardRef" />
+                  <ref role="QpYPw" node="1L4MZBxVPx$" resolve="replaceTextWithHazardConsequence" />
                   <node concept="3CnSsL" id="1L4MZBxVQR9" role="3Coj4f">
                     <ref role="QkamJ" node="1L4MZBxVQdx" resolve="hazard" />
                     <node concept="2GrUjf" id="1L4MZBxVQRm" role="3CoRuB">
@@ -283,7 +283,7 @@
   </node>
   <node concept="Q5z_Y" id="1L4MZBxVPx$">
     <property role="3GE5qa" value="baseLanguage.analysis.consequence" />
-    <property role="TrG5h" value="replaceTextWithHazardRef" />
+    <property role="TrG5h" value="replaceTextWithHazardConsequence" />
     <node concept="Q6JDH" id="1L4MZBxVPxT" role="Q6Id_">
       <property role="TrG5h" value="tc" />
       <node concept="3Tqbb2" id="1L4MZBxVPyO" role="Q6QK4">
@@ -306,7 +306,7 @@
             <node concept="1P9Npp" id="1L4MZBxVQcU" role="2OqNvi">
               <node concept="2pJPEk" id="1L4MZBxVQpa" role="1P9ThW">
                 <node concept="2pJPED" id="1L4MZBxVQrl" role="2pJPEn">
-                  <ref role="2pJxaS" to="bewr:4q9fsxm3ow8" resolve="HazardRef" />
+                  <ref role="2pJxaS" to="bewr:4q9fsxm3ow8" resolve="HazardConsequence" />
                   <node concept="2pIpSj" id="1L4MZBxVQtQ" role="2pJxcM">
                     <ref role="2pIpSl" to="bewr:4q9fsxm3owq" resolve="hazard" />
                     <node concept="36biLy" id="1L4MZBxVQwe" role="28nt2d">
