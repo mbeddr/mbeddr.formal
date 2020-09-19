@@ -91,7 +91,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="24PsEXFbJNA">
-    <ref role="1XX52x" to="1w8j:24PsEXFbC2f" resolve="ISO26262Hazard" />
+    <ref role="1XX52x" to="1w8j:24PsEXFbC2f" resolve="ISO26262HazardousEvent" />
     <node concept="2r0Tta" id="24PsEXFbJNF" role="2wV5jI">
       <node concept="2reCLk" id="24PsEXFbJO3" role="2r0Tv6">
         <node concept="2reCLy" id="7eb_1beMnN5" role="2reCL6">
@@ -99,7 +99,7 @@
             <ref role="1NtTu8" to="cjwq:2N7iSwG$CrI" resolve="id" />
           </node>
           <node concept="2rfbtV" id="7eb_1beMnNq" role="2recC9">
-            <property role="2rfbtB" value="Hazard ID" />
+            <property role="2rfbtB" value="ID" />
           </node>
         </node>
         <node concept="2reCLy" id="24PsEXFbJNI" role="2reCL6">
@@ -107,7 +107,7 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
           <node concept="2rfbtV" id="24PsEXFbJNP" role="2recC9">
-            <property role="2rfbtB" value="Hazard Name" />
+            <property role="2rfbtB" value="Hazardous Event Name" />
           </node>
         </node>
         <node concept="2reCLy" id="24PsEXFbJOh" role="2reCL6">
