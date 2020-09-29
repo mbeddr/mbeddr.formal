@@ -78,7 +78,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
+      <ref role="20lvS9" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
     </node>
     <node concept="1TJgyj" id="1WjQLbKt0uy" role="1TKVEi">
       <property role="IQ2ns" value="2239374314123298722" />
@@ -136,7 +136,7 @@
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="1QMZQ03U2Wx" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
+      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1WjQLbKt0s$">
@@ -145,7 +145,7 @@
     <property role="34LRSv" value="#include" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1QMZQ03RyWv" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
+      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
     </node>
     <node concept="1TJgyj" id="1QMZQ03TlhH" role="1TKVEi">
       <property role="IQ2ns" value="2140053560801711213" />
@@ -165,7 +165,7 @@
       <ref role="AX2Wp" node="1QMZQ03Wtfr" resolve="TimeAnnotationEnum" />
     </node>
     <node concept="PrWs8" id="1QMZQ03ROxS" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
+      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1WjQLbKt0sC">
@@ -724,7 +724,7 @@
       <ref role="PrY4T" node="3WeLjIxRpV1" resolve="IRefinementContent" />
     </node>
     <node concept="PrWs8" id="1QMZQ03S80E" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
+      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="3WeLjIxQAP0">
@@ -811,7 +811,7 @@
   </node>
   <node concept="PlHQZ" id="1QMZQ03RyWh">
     <property role="EcuMT" value="2140053560801242897" />
-    <property role="TrG5h" value="IOrthelloSystemContent" />
+    <property role="TrG5h" value="IOthelloSystemContent" />
     <property role="3GE5qa" value="interfaces" />
   </node>
   <node concept="1TIwiD" id="1QMZQ03TRgW">
