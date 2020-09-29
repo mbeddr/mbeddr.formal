@@ -119,6 +119,7 @@
   <node concept="1TIwiD" id="1WjQLbKt0sy">
     <property role="EcuMT" value="2239374314123298594" />
     <property role="TrG5h" value="AbstractComponent" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1WjQLbKt0u7" role="1TKVEi">
       <property role="IQ2ns" value="2239374314123298695" />
@@ -219,6 +220,7 @@
     <property role="EcuMT" value="2239374314123298608" />
     <property role="TrG5h" value="Variable" />
     <property role="34LRSv" value="variable" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3WeLjIxQAPt" role="PzmwI">
       <ref role="PrY4T" node="3WeLjIxQAP0" resolve="IInterfaceContent" />
