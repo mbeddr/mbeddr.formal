@@ -43,6 +43,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.fasten.base/test.fasten.base.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nusmv/test.mbeddr.formal.nusmv.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nuxmv/test.mbeddr.formal.nuxmv.msd" folder="tests" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.ocra/com.mbeddr.formal.ocra.mpl" folder="lang.ocra" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.ocra/sandbox/com.mbeddr.formal.ocra.sandbox.msd" folder="tests" />
     </projectModules>
   </component>
 </project>

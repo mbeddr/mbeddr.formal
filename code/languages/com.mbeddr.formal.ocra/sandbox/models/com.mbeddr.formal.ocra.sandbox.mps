@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:098b9963-beaa-42d7-9080-d0509664a285(com.bosch.ocra.sandbox)">
+<model ref="r:098b9963-beaa-42d7-9080-d0509664a285(com.mbeddr.formal.ocra.sandbox)">
   <persistence version="9" />
   <languages>
     <use id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.bosch.ocra" version="0" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
   </languages>
   <imports>
-    <import index="hqls" ref="r:9be6a7f5-8948-4321-86ee-36906d4a48b4(com.bosch.ocra.structure)" />
+    <import index="hqls" ref="r:9be6a7f5-8948-4321-86ee-36906d4a48b4(com.mbeddr.formal.ocra.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
   </imports>
   <registry>
