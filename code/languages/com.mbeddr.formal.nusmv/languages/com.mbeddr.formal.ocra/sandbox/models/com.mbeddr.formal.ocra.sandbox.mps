@@ -2,7 +2,7 @@
 <model ref="r:098b9963-beaa-42d7-9080-d0509664a285(com.mbeddr.formal.ocra.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.bosch.ocra" version="0" />
+    <use id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.mbeddr.formal.ocra" version="0" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
   </languages>
   <imports>
@@ -10,108 +10,108 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
   </imports>
   <registry>
-    <language id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.bosch.ocra">
-      <concept id="2140053560803488798" name="com.bosch.ocra.structure.EventType" flags="ng" index="pGCHY" />
-      <concept id="2140053560803573749" name="com.bosch.ocra.structure.ContinuousType" flags="ng" index="pGO2l" />
-      <concept id="2331162319165543993" name="com.bosch.ocra.structure.OrExpression" flags="ng" index="rYEnY" />
-      <concept id="2331162319165543529" name="com.bosch.ocra.structure.AndExpression" flags="ng" index="rYEuI" />
-      <concept id="2331162319165544732" name="com.bosch.ocra.structure.ImpliesExpression" flags="ng" index="rYEFr" />
-      <concept id="2331162319165589174" name="com.bosch.ocra.structure.AlwaysExpression" flags="ng" index="rZvlL" />
-      <concept id="2331162319165590277" name="com.bosch.ocra.structure.ThenExpression" flags="ng" index="rZvz2" />
-      <concept id="2331162319165590020" name="com.bosch.ocra.structure.InTheFutureExpression" flags="ng" index="rZvB3" />
-      <concept id="2140053560801850428" name="com.bosch.ocra.structure.OthelloSystemSpecificationRef" flags="ng" index="uloHs">
+    <language id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.mbeddr.formal.ocra">
+      <concept id="2140053560803488798" name="com.mbeddr.formal.ocra.structure.EventType" flags="ng" index="pGCHY" />
+      <concept id="2140053560803573749" name="com.mbeddr.formal.ocra.structure.ContinuousType" flags="ng" index="pGO2l" />
+      <concept id="2331162319165543993" name="com.mbeddr.formal.ocra.structure.OrExpression" flags="ng" index="rYEnY" />
+      <concept id="2331162319165543529" name="com.mbeddr.formal.ocra.structure.AndExpression" flags="ng" index="rYEuI" />
+      <concept id="2331162319165544732" name="com.mbeddr.formal.ocra.structure.ImpliesExpression" flags="ng" index="rYEFr" />
+      <concept id="2331162319165589174" name="com.mbeddr.formal.ocra.structure.AlwaysExpression" flags="ng" index="rZvlL" />
+      <concept id="2331162319165590277" name="com.mbeddr.formal.ocra.structure.ThenExpression" flags="ng" index="rZvz2" />
+      <concept id="2331162319165590020" name="com.mbeddr.formal.ocra.structure.InTheFutureExpression" flags="ng" index="rZvB3" />
+      <concept id="2140053560801850428" name="com.mbeddr.formal.ocra.structure.OthelloSystemSpecificationRef" flags="ng" index="uloHs">
         <reference id="2140053560801850436" name="target" index="uloG$" />
       </concept>
-      <concept id="4543785933972598077" name="com.bosch.ocra.structure.EmptyLine" flags="ng" index="2uPaw6" />
-      <concept id="9133754867501356758" name="com.bosch.ocra.structure.InThePastExpression" flags="ng" index="2Sa4HY" />
-      <concept id="1940131871293652435" name="com.bosch.ocra.structure.VariableRefDotTarget" flags="ng" index="17cSpV">
+      <concept id="4543785933972598077" name="com.mbeddr.formal.ocra.structure.EmptyLine" flags="ng" index="2uPaw6" />
+      <concept id="9133754867501356758" name="com.mbeddr.formal.ocra.structure.InThePastExpression" flags="ng" index="2Sa4HY" />
+      <concept id="1940131871293652435" name="com.mbeddr.formal.ocra.structure.VariableRefDotTarget" flags="ng" index="17cSpV">
         <reference id="1940131871293698361" name="variable" index="17cOEh" />
       </concept>
-      <concept id="2291855968617420983" name="com.bosch.ocra.structure.VoidType" flags="ng" index="1a0DpF" />
-      <concept id="2291855968617420230" name="com.bosch.ocra.structure.RealType" flags="ng" index="1a0DGq" />
-      <concept id="7554398283340107702" name="com.bosch.ocra.structure.FunctionType" flags="ng" index="3iA5a0">
+      <concept id="2291855968617420983" name="com.mbeddr.formal.ocra.structure.VoidType" flags="ng" index="1a0DpF" />
+      <concept id="2291855968617420230" name="com.mbeddr.formal.ocra.structure.RealType" flags="ng" index="1a0DGq" />
+      <concept id="7554398283340107702" name="com.mbeddr.formal.ocra.structure.FunctionType" flags="ng" index="3iA5a0">
         <child id="7554398283340107705" name="returnType" index="3iA5af" />
         <child id="9009079654209578199" name="argumentTypes" index="3zmGFx" />
       </concept>
-      <concept id="6677499667400081036" name="com.bosch.ocra.structure.SubComponentRef" flags="ng" index="3jw80t">
+      <concept id="6677499667400081036" name="com.mbeddr.formal.ocra.structure.SubComponentRef" flags="ng" index="3jw80t">
         <reference id="821792717075127774" name="subComponent" index="1f8Sn1" />
       </concept>
-      <concept id="4612972969458100422" name="com.bosch.ocra.structure.ChangeExpression" flags="ng" index="3z0ZEZ">
+      <concept id="4612972969458100422" name="com.mbeddr.formal.ocra.structure.ChangeExpression" flags="ng" index="3z0ZEZ">
         <child id="4612972969458100423" name="var" index="3z0ZEY" />
       </concept>
-      <concept id="4612972969458264293" name="com.bosch.ocra.structure.TimeUntilExpression" flags="ng" index="3z3nEs">
+      <concept id="4612972969458264293" name="com.mbeddr.formal.ocra.structure.TimeUntilExpression" flags="ng" index="3z3nEs">
         <child id="4612972969459487046" name="op" index="3z60cZ" />
         <child id="4612972969459483510" name="timeExpr" index="3z614f" />
         <child id="4612972969459320107" name="var" index="3z7Dti" />
       </concept>
-      <concept id="4612972969459486825" name="com.bosch.ocra.structure.GreaterThanOperator" flags="ng" index="3z608g" />
-      <concept id="4612972969459486898" name="com.bosch.ocra.structure.LessOrEqualThanOperator" flags="ng" index="3z60bb" />
-      <concept id="6174591375234686083" name="com.bosch.ocra.structure.ArrayTypeSize" flags="ng" index="1BJlaB">
+      <concept id="4612972969459486825" name="com.mbeddr.formal.ocra.structure.GreaterThanOperator" flags="ng" index="3z608g" />
+      <concept id="4612972969459486898" name="com.mbeddr.formal.ocra.structure.LessOrEqualThanOperator" flags="ng" index="3z60bb" />
+      <concept id="6174591375234686083" name="com.mbeddr.formal.ocra.structure.ArrayTypeSize" flags="ng" index="1BJlaB">
         <child id="6174591375234686087" name="inner" index="1BJlaz" />
         <child id="6174591375234686185" name="size" index="1BJlbd" />
       </concept>
-      <concept id="2239374314123298611" name="com.bosch.ocra.structure.InputPort" flags="ng" index="3JpXKx" />
-      <concept id="2239374314123298609" name="com.bosch.ocra.structure.Port" flags="ng" index="3JpXKz">
+      <concept id="2239374314123298611" name="com.mbeddr.formal.ocra.structure.InputPort" flags="ng" index="3JpXKx" />
+      <concept id="2239374314123298609" name="com.mbeddr.formal.ocra.structure.Port" flags="ng" index="3JpXKz">
         <child id="2239374314123298675" name="type" index="3JpXLx" />
       </concept>
-      <concept id="2239374314123298612" name="com.bosch.ocra.structure.OutputPort" flags="ng" index="3JpXKA" />
-      <concept id="2239374314123298613" name="com.bosch.ocra.structure.Parameter" flags="ng" index="3JpXKB">
+      <concept id="2239374314123298612" name="com.mbeddr.formal.ocra.structure.OutputPort" flags="ng" index="3JpXKA" />
+      <concept id="2239374314123298613" name="com.mbeddr.formal.ocra.structure.Parameter" flags="ng" index="3JpXKB">
         <child id="2239374314123298727" name="type" index="3JpXMP" />
       </concept>
-      <concept id="2239374314123298620" name="com.bosch.ocra.structure.SubComponent" flags="ng" index="3JpXKI">
+      <concept id="2239374314123298620" name="com.mbeddr.formal.ocra.structure.SubComponent" flags="ng" index="3JpXKI">
         <reference id="4543785933973709549" name="component" index="2uTqvm" />
       </concept>
-      <concept id="2239374314123298594" name="com.bosch.ocra.structure.AbstractComponent" flags="ng" index="3JpXKK">
+      <concept id="2239374314123298594" name="com.mbeddr.formal.ocra.structure.AbstractComponent" flags="ng" index="3JpXKK">
         <child id="2239374314123298695" name="interface" index="3JpXMl" />
         <child id="2239374314123298696" name="refinement" index="3JpXMq" />
       </concept>
-      <concept id="2239374314123298593" name="com.bosch.ocra.structure.OthelloSystemSpecification" flags="ng" index="3JpXKN">
+      <concept id="2239374314123298593" name="com.mbeddr.formal.ocra.structure.OthelloSystemSpecification" flags="ng" index="3JpXKN">
         <child id="2140053560801242905" name="content" index="urd1T" />
       </concept>
-      <concept id="2239374314123298598" name="com.bosch.ocra.structure.TimeAnnotation" flags="ng" index="3JpXKO" />
-      <concept id="2239374314123298596" name="com.bosch.ocra.structure.Include" flags="ng" index="3JpXKQ">
+      <concept id="2239374314123298598" name="com.mbeddr.formal.ocra.structure.TimeAnnotation" flags="ng" index="3JpXKO" />
+      <concept id="2239374314123298596" name="com.mbeddr.formal.ocra.structure.Include" flags="ng" index="3JpXKQ">
         <child id="2140053560801711213" name="include" index="ulUGd" />
       </concept>
-      <concept id="2239374314123298602" name="com.bosch.ocra.structure.Component" flags="ng" index="3JpXKS" />
-      <concept id="2239374314123298603" name="com.bosch.ocra.structure.Interface" flags="ng" index="3JpXKT">
+      <concept id="2239374314123298602" name="com.mbeddr.formal.ocra.structure.Component" flags="ng" index="3JpXKS" />
+      <concept id="2239374314123298603" name="com.mbeddr.formal.ocra.structure.Interface" flags="ng" index="3JpXKT">
         <child id="2239374314123298732" name="content" index="3JpXMY" />
       </concept>
-      <concept id="2239374314123298600" name="com.bosch.ocra.structure.SystemComponent" flags="ng" index="3JpXKU" />
-      <concept id="2239374314123298605" name="com.bosch.ocra.structure.Refinement" flags="ng" index="3JpXKZ">
+      <concept id="2239374314123298600" name="com.mbeddr.formal.ocra.structure.SystemComponent" flags="ng" index="3JpXKU" />
+      <concept id="2239374314123298605" name="com.mbeddr.formal.ocra.structure.Refinement" flags="ng" index="3JpXKZ">
         <child id="2239374314123298703" name="content" index="3JpXMt" />
       </concept>
-      <concept id="2239374314123298642" name="com.bosch.ocra.structure.Contract" flags="ng" index="3JpXL0">
+      <concept id="2239374314123298642" name="com.mbeddr.formal.ocra.structure.Contract" flags="ng" index="3JpXL0">
         <child id="2239374314123298698" name="assumption" index="3JpXMo" />
         <child id="2239374314123298699" name="guarantee" index="3JpXMp" />
       </concept>
-      <concept id="2239374314123298644" name="com.bosch.ocra.structure.Assumption" flags="ng" index="3JpXL6" />
-      <concept id="2239374314123298645" name="com.bosch.ocra.structure.Guarantee" flags="ng" index="3JpXL7" />
-      <concept id="2239374314123298651" name="com.bosch.ocra.structure.ContractRef" flags="ng" index="3JpXL9">
+      <concept id="2239374314123298644" name="com.mbeddr.formal.ocra.structure.Assumption" flags="ng" index="3JpXL6" />
+      <concept id="2239374314123298645" name="com.mbeddr.formal.ocra.structure.Guarantee" flags="ng" index="3JpXL7" />
+      <concept id="2239374314123298651" name="com.mbeddr.formal.ocra.structure.ContractRef" flags="ng" index="3JpXL9">
         <reference id="3641293498277779207" name="target" index="3tgiSz" />
       </concept>
-      <concept id="2239374314123298653" name="com.bosch.ocra.structure.ContractPropertyRef" flags="ng" index="3JpXLf">
+      <concept id="2239374314123298653" name="com.mbeddr.formal.ocra.structure.ContractPropertyRef" flags="ng" index="3JpXLf">
         <reference id="7411386123317847571" name="target" index="jh2TU" />
       </concept>
-      <concept id="2239374314123298627" name="com.bosch.ocra.structure.VariableRef" flags="ng" index="3JpXLh">
+      <concept id="2239374314123298627" name="com.mbeddr.formal.ocra.structure.VariableRef" flags="ng" index="3JpXLh">
         <reference id="8314640850580353221" name="variable" index="2eEb$9" />
       </concept>
-      <concept id="2239374314123298631" name="com.bosch.ocra.structure.Constraint" flags="ng" index="3JpXLl" />
-      <concept id="2239374314123298629" name="com.bosch.ocra.structure.Connection" flags="ng" index="3JpXLn">
+      <concept id="2239374314123298631" name="com.mbeddr.formal.ocra.structure.Constraint" flags="ng" index="3JpXLl" />
+      <concept id="2239374314123298629" name="com.mbeddr.formal.ocra.structure.Connection" flags="ng" index="3JpXLn">
         <child id="2239374314123298719" name="variable" index="3JpXMd" />
         <child id="2239374314123298720" name="constraint" index="3JpXMM" />
       </concept>
-      <concept id="2239374314123298634" name="com.bosch.ocra.structure.ValidationProperty" flags="ng" index="3JpXLo">
+      <concept id="2239374314123298634" name="com.mbeddr.formal.ocra.structure.ValidationProperty" flags="ng" index="3JpXLo">
         <child id="2239374314123298687" name="contractProperties" index="3JpXLH" />
       </concept>
-      <concept id="2239374314123298632" name="com.bosch.ocra.structure.RefinedBy" flags="ng" index="3JpXLq">
+      <concept id="2239374314123298632" name="com.mbeddr.formal.ocra.structure.RefinedBy" flags="ng" index="3JpXLq">
         <child id="3641293498277827479" name="contract" index="3tgAEN" />
         <child id="2239374314123298702" name="refinedBy" index="3JpXMs" />
       </concept>
-      <concept id="2239374314123298638" name="com.bosch.ocra.structure.Entailment" flags="ng" index="3JpXLs">
+      <concept id="2239374314123298638" name="com.mbeddr.formal.ocra.structure.Entailment" flags="ng" index="3JpXLs">
         <child id="2239374314123298700" name="constraint" index="3JpXMu" />
       </concept>
-      <concept id="2239374314123298636" name="com.bosch.ocra.structure.Consistency" flags="ng" index="3JpXLu" />
-      <concept id="2239374314123298637" name="com.bosch.ocra.structure.Possibility" flags="ng" index="3JpXLv">
+      <concept id="2239374314123298636" name="com.mbeddr.formal.ocra.structure.Consistency" flags="ng" index="3JpXLu" />
+      <concept id="2239374314123298637" name="com.mbeddr.formal.ocra.structure.Possibility" flags="ng" index="3JpXLv">
         <child id="2239374314123298706" name="constraint" index="3JpXM0" />
       </concept>
     </language>
