@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7b6c2e40-647e-486f-9031-d866d7d6da64(com.bosch.ocra.textGen)">
+<model ref="r:7b6c2e40-647e-486f-9031-d866d7d6da64(com.mbeddr.formal.ocra.textGen)">
   <persistence version="9" />
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />

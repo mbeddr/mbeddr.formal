@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ff2970bc-0161-494f-a95e-c3ae03ee04b0(com.bosch.ocra.editor)">
+<model ref="r:ff2970bc-0161-494f-a95e-c3ae03ee04b0(com.mbeddr.formal.ocra.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -7,7 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="hqls" ref="r:9be6a7f5-8948-4321-86ee-36906d4a48b4(com.bosch.ocra.structure)" />
+    <import index="hqls" ref="r:9be6a7f5-8948-4321-86ee-36906d4a48b4(com.mbeddr.formal.ocra.structure)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -1226,7 +1226,7 @@
     <node concept="3EZMnI" id="1QMZQ03WtfK" role="2wV5jI">
       <node concept="PMmxH" id="1QMZQ03WtfR" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="1QMZQ03Wtg0" role="3EZMnx">
         <ref role="1NtTu8" to="hqls:1WjQLbKt0sB" resolve="value" />
