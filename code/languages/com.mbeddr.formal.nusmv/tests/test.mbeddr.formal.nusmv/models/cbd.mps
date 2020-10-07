@@ -4,6 +4,7 @@
   <languages>
     <use id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd" version="1" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
+    <use id="bf72618c-958a-47f5-9aac-3eff98d79ffd" name="com.mbeddr.formal.nusmv.source" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
@@ -18,9 +19,22 @@
       <concept id="2685719935121672279" name="com.mbeddr.formal.nusmv.cbd.structure.ModuleRef" flags="ng" index="eml1q">
         <reference id="2685719935121672280" name="module" index="eml1l" />
       </concept>
+      <concept id="4998758146911282919" name="com.mbeddr.formal.nusmv.cbd.structure.AnalyzeArchitecture" flags="ng" index="2lSSVF">
+        <reference id="7211928790174746397" name="assembly" index="1nOEKr" />
+      </concept>
       <concept id="9066112305501141496" name="com.mbeddr.formal.nusmv.cbd.structure.ContractsSpec" flags="ng" index="3US3jz" />
       <concept id="9066112305501242592" name="com.mbeddr.formal.nusmv.cbd.structure.Precondition" flags="ng" index="3US$BV" />
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
+    </language>
+    <language id="bf72618c-958a-47f5-9aac-3eff98d79ffd" name="com.mbeddr.formal.nusmv.source">
+      <concept id="7211928790175692107" name="com.mbeddr.formal.nusmv.source.structure.Quit" flags="ng" index="1nK5Td" />
+      <concept id="7211928790176063254" name="com.mbeddr.formal.nusmv.source.structure.CheckLTLSpec" flags="ng" index="1nNFgg" />
+      <concept id="7211928790174746857" name="com.mbeddr.formal.nusmv.source.structure.FlattenHierarchy" flags="ng" index="1nOEfJ" />
+      <concept id="7211928790174748022" name="com.mbeddr.formal.nusmv.source.structure.BuildModel" flags="ng" index="1nOEpK" />
+      <concept id="7211928790174747661" name="com.mbeddr.formal.nusmv.source.structure.EncodeVariables" flags="ng" index="1nOEsb" />
+      <concept id="7211928790174713950" name="com.mbeddr.formal.nusmv.source.structure.Source" flags="ng" index="1nOMdo">
+        <child id="7211928790174721514" name="content" index="1nOKVG" />
+      </concept>
     </language>
     <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
       <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
@@ -2270,6 +2284,137 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2HdtXS" id="4lva0NgK_Iy">
+    <property role="TrG5h" value="_210_source_based_AG_analyses_all_pass" />
+    <node concept="sUyCV" id="4lva0NgK_Iz" role="2HcuB8">
+      <property role="sUxOX" value="test simple post-condition implies pre-condition" />
+    </node>
+    <node concept="2SQmWS" id="4lva0NgK_I$" role="2HcuB8" />
+    <node concept="2dDAVa" id="4lva0NgK_I_" role="2HcuB8">
+      <property role="TrG5h" value="Sender" />
+      <node concept="3UnI9n" id="4lva0NgK_IA" role="3UnI90">
+        <property role="TrG5h" value="out" />
+        <node concept="dhpfj" id="4lva0NgK_IB" role="3UnI80">
+          <node concept="2IPVmt" id="4lva0NgK_IC" role="dhpfi">
+            <property role="2IPVms" value="-10" />
+          </node>
+          <node concept="2IPVmt" id="4lva0NgK_ID" role="dhpfn">
+            <property role="2IPVms" value="10" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4lva0NgK_IE" role="3UnIb_">
+        <property role="TrG5h" value="out_gt_0" />
+        <node concept="2SafMM" id="4lva0NgK_IF" role="1yBDGv">
+          <node concept="nE0YI" id="4lva0NgK_IG" role="1yBIc4">
+            <node concept="3Ug1Ap" id="4lva0NgK_IH" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4lva0NgK_IA" resolve="out" />
+            </node>
+            <node concept="2IPVmt" id="4lva0NgK_II" role="2H9Ial">
+              <property role="2IPVms" value="9" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4lva0NgK_IJ" role="2HcuB8" />
+    <node concept="2dDAVa" id="4lva0NgK_IK" role="2HcuB8">
+      <property role="TrG5h" value="Receiver" />
+      <node concept="3UnI81" id="4lva0NgK_IL" role="3UnI9m">
+        <property role="TrG5h" value="in" />
+        <node concept="dhpfj" id="4lva0NgK_IM" role="3UnI80">
+          <node concept="2IPVmt" id="4lva0NgK_IN" role="dhpfi">
+            <property role="2IPVms" value="-10" />
+          </node>
+          <node concept="2IPVmt" id="4lva0NgK_IO" role="dhpfn">
+            <property role="2IPVms" value="10" />
+          </node>
+        </node>
+      </node>
+      <node concept="3US$BV" id="4lva0NgK_IP" role="3UnIb_">
+        <property role="TrG5h" value="in_gt_0_PASS" />
+        <node concept="2SafMM" id="4lva0NgK_IQ" role="1yBDGv">
+          <node concept="nE0YI" id="4lva0NgK_IR" role="1yBIc4">
+            <node concept="3Ug1Ap" id="4lva0NgK_IS" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4lva0NgK_IL" resolve="in" />
+            </node>
+            <node concept="2IPVmt" id="4lva0NgK_IT" role="2H9Ial">
+              <property role="2IPVms" value="9" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3US$BV" id="4lva0NgK_IU" role="3UnIb_">
+        <property role="TrG5h" value="in_is_9_or_10_PASS" />
+        <node concept="2SafMM" id="4lva0NgK_IV" role="1yBDGv">
+          <node concept="32OYss" id="4lva0NgK_IW" role="1yBIc4">
+            <node concept="2HbMDt" id="4lva0NgK_IX" role="32OYtT">
+              <node concept="2HbLFT" id="4lva0NgK_IY" role="2H9Iav">
+                <node concept="3Ug1Ap" id="4lva0NgK_IZ" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4lva0NgK_IL" resolve="in" />
+                </node>
+                <node concept="2IPVmt" id="4lva0NgK_J0" role="2H9Ial">
+                  <property role="2IPVms" value="9" />
+                </node>
+              </node>
+              <node concept="2HbLFT" id="4lva0NgK_J1" role="2H9Ial">
+                <node concept="2IPVmt" id="4lva0NgK_J2" role="2H9Ial">
+                  <property role="2IPVms" value="10" />
+                </node>
+                <node concept="3Ug1Ap" id="4lva0NgK_J3" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4lva0NgK_IL" resolve="in" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4lva0NgK_J4" role="2HcuB8" />
+    <node concept="2dDAV0" id="4lva0NgK_J5" role="2HcuB8">
+      <property role="3Ijkdo" value="5" />
+      <property role="3Ijkdt" value="true" />
+      <property role="TrG5h" value="_210_Arch_Source_ALL_PASS" />
+      <node concept="3Ug1AV" id="4lva0NgK_J6" role="3UgYNK">
+        <property role="TrG5h" value="sender" />
+        <node concept="3Ug1AZ" id="4lva0NgK_J7" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4lva0NgK_I_" resolve="Sender" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4lva0NgK_J8" role="3UgYNK">
+        <property role="TrG5h" value="receiver" />
+        <node concept="3Ug1AZ" id="4lva0NgK_J9" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4lva0NgK_IK" resolve="Receiver" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4lva0NgK_Ja" role="3UgYNK">
+        <node concept="3Ug1GC" id="4lva0NgK_Jb" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4lva0NgK_IA" resolve="out" />
+          <node concept="3Ug1GJ" id="4lva0NgK_Jc" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4lva0NgK_J6" resolve="sender" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4lva0NgK_Jd" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4lva0NgK_IL" resolve="in" />
+          <node concept="3Ug1GJ" id="4lva0NgK_Je" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4lva0NgK_J8" resolve="receiver" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4lva0NgK_Jf" role="2HcuB8" />
+  </node>
+  <node concept="1nOMdo" id="4lva0NgK_MM">
+    <property role="TrG5h" value="_210_source_based_AG_analyses_all_pass" />
+    <node concept="2lSSVF" id="1_RXhpCya_I" role="1nOKVG">
+      <ref role="1nOEKr" node="4lva0NgK_J5" resolve="_210_Arch_Source_ALL_PASS" />
+    </node>
+    <node concept="1nOEfJ" id="6glUKoNQPQ8" role="1nOKVG" />
+    <node concept="1nOEsb" id="6glUKoNQPVZ" role="1nOKVG" />
+    <node concept="1nOEpK" id="6glUKoNPrfv" role="1nOKVG" />
+    <node concept="1nNFgg" id="6glUKoNQRDE" role="1nOKVG" />
+    <node concept="1nK5Td" id="6glUKoNPt0$" role="1nOKVG" />
   </node>
 </model>
 

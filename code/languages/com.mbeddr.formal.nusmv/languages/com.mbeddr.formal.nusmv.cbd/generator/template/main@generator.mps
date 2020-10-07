@@ -8,6 +8,8 @@
     <use id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="bf72618c-958a-47f5-9aac-3eff98d79ffd" name="com.mbeddr.formal.nusmv.source" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -139,6 +141,9 @@
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
         <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
+      <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
+        <child id="1177093586806" name="templateNode" index="gfFT$" />
+      </concept>
       <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
       <concept id="1170725621272" name="jetbrains.mps.lang.generator.structure.MapSrcMacro_MapperFunction" flags="in" index="2kFOW8" />
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
@@ -205,6 +210,11 @@
       </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
+      </concept>
+    </language>
+    <language id="bf72618c-958a-47f5-9aac-3eff98d79ffd" name="com.mbeddr.formal.nusmv.source">
+      <concept id="7211928790174746324" name="com.mbeddr.formal.nusmv.source.structure.ReadModel" flags="ng" index="1nOERi">
+        <reference id="7211928790174746397" name="system" index="1nOEKr" />
       </concept>
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
@@ -439,6 +449,34 @@
               </node>
               <node concept="2IPVmt" id="1NcemxVvT_4" role="2H9Ial">
                 <property role="2IPVms" value="2" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="16k3j00_Mdi" role="3acgRq">
+      <ref role="30HIoZ" to="vzqj:4lva0NgJarB" resolve="AnalyzeArchitecture" />
+      <node concept="gft3U" id="16k3j00_Mua" role="1lVwrX">
+        <node concept="1nOERi" id="16k3j00_MP5" role="gfFT$">
+          <ref role="1nOEKr" node="7RhjhI7iPN7" resolve="flattened_system" />
+          <node concept="1ZhdrF" id="16k3j00_MP7" role="lGtFl">
+            <property role="2qtEX8" value="system" />
+            <property role="P3scX" value="bf72618c-958a-47f5-9aac-3eff98d79ffd/7211928790174746324/7211928790174746397" />
+            <node concept="3$xsQk" id="16k3j00_MP8" role="3$ytzL">
+              <node concept="3clFbS" id="16k3j00_MP9" role="2VODD2">
+                <node concept="3clFbF" id="16k3j00_OmW" role="3cqZAp">
+                  <node concept="NRdvd" id="16k3j00_OmX" role="3clFbG">
+                    <ref role="1Pybhc" to="2w9c:1NcemxUMb0z" resolve="AGArchitectureFlatteningNamingUtils" />
+                    <ref role="37wK5l" to="2w9c:1NcemxUMb0B" resolve="nameOfGeneratedSystem" />
+                    <node concept="2OqwBi" id="16k3j00_OCz" role="37wK5m">
+                      <node concept="30H73N" id="16k3j00_OmY" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="16k3j00_OSe" role="2OqNvi">
+                        <ref role="3Tt5mk" to="vzqj:6glUKoNLOst" resolve="assembly" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

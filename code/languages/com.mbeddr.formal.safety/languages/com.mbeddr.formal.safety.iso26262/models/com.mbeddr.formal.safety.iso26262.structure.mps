@@ -23,6 +23,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -42,8 +43,9 @@
   </registry>
   <node concept="1TIwiD" id="24PsEXFbC2f">
     <property role="EcuMT" value="2392944874760339599" />
-    <property role="TrG5h" value="ISO26262Hazard" />
-    <property role="34LRSv" value="hazard (iso 26262)" />
+    <property role="TrG5h" value="ISO26262HazardousEvent" />
+    <property role="34LRSv" value="hazardous event" />
+    <property role="R4oN_" value="according to ISO 26262" />
     <ref role="1TJDcQ" to="cjwq:7TjUbLQ451K" resolve="Hazard" />
     <node concept="1TJgyi" id="24PsEXFbNLy" role="1TKVEl">
       <property role="IQ2nx" value="2392944874760387682" />
