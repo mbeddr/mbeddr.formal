@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.nuxmv" uuid="15b78606-0574-4c04-a9f2-d43bce9698b3">
+  <exported-language name="64b11414-c9a3-4cdb-a039-8d032fdcd8b2(com.mbeddr.formal.nuxmv)" />
+  <exported-language name="98d57a7c-6511-4945-8e9c-307874d5259b(com.mbeddr.formal.nuxmv.source)" />
+  <exported-solutions>
+    <exported-solution>263ebba5-d9c9-4f02-b38c-e344aa263f98(com.mbeddr.formal.nuxmv.pluginSolution)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
