@@ -3803,7 +3803,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="4G23_lMx8p5" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.formal.nusmv" />
+      <property role="TrG5h" value="com.mbeddr.formal.nuxmv" />
       <node concept="1E1JtD" id="4G23_lMx8JY" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.formal.nuxmv" />
