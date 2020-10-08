@@ -418,6 +418,12 @@
       <node concept="m$f5U" id="2ShgyhefbhC" role="m$_yh">
         <ref role="m$f5T" node="2Shgyhef7mw" resolve="fasten.nusmv.devkit" />
       </node>
+      <node concept="m$f5U" id="4hZQPnIocCC" role="m$_yh">
+        <ref role="m$f5T" node="4G23_lMx8p5" resolve="com.mbeddr.formal.nuxmv" />
+      </node>
+      <node concept="m$f5U" id="4hZQPnIokah" role="m$_yh">
+        <ref role="m$f5T" node="4hZQPnIogqu" resolve="fasten.nuxmv.devkit" />
+      </node>
       <node concept="m$_yC" id="42jqVeFkUv9" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -512,6 +518,9 @@
           <ref role="3LEDTV" node="6adXBxxUu$i" resolve="com.mbeddr.formal.nusmv.importer" />
         </node>
       </node>
+    </node>
+    <node concept="2G$12M" id="4hZQPnIogqu" role="3989C9">
+      <property role="TrG5h" value="fasten.nuxmv.devkit" />
       <node concept="3LEwk6" id="4G23_lMxa1R" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="fasten.nuxmv" />
