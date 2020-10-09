@@ -16,7 +16,7 @@
     <dependency reexport="false">5ccce04a-9411-450d-8af4-a858c6f99d1e(com.mbeddr.formal.ocra)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:5ccce04a-9411-450d-8af4-a858c6f99d1e:com.bosch.ocra" version="0" />
+    <language slang="l:5ccce04a-9411-450d-8af4-a858c6f99d1e:com.mbeddr.formal.ocra" version="0" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
     <language slang="l:001b2375-3bd5-4d5e-9958-6b3f62dc8548:com.mbeddr.formal.nusmv" version="0" />
