@@ -9,8 +9,8 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -36,7 +36,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -922,6 +924,9 @@
     <property role="34LRSv" value="and" />
     <property role="R4oN_" value="Logical &quot;and&quot; expression" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnsxDR" resolve="AndExpressionBase" />
+    <node concept="PrWs8" id="46t5MkZuz1U" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVCPoT">
     <property role="EcuMT" value="2331162319165543993" />
@@ -930,6 +935,9 @@
     <property role="34LRSv" value="or" />
     <property role="R4oN_" value="Logical &quot;or&quot; expression" />
     <ref role="1TJDcQ" to="ehqg:7mSH3Wnte8z" resolve="OrExpressionBase" />
+    <node concept="PrWs8" id="46t5MkZuxDn" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVCPsq">
     <property role="EcuMT" value="2331162319165544218" />
@@ -938,6 +946,9 @@
     <property role="R4oN_" value="Logical &quot;xor&quot; expression" />
     <property role="34LRSv" value="xor" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnHVWN" resolve="XorExpressionBase" />
+    <node concept="PrWs8" id="46t5MkZux5Y" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVCPwr">
     <property role="EcuMT" value="2331162319165544475" />
@@ -946,6 +957,9 @@
     <property role="R4oN_" value="Logical &quot;if and only if&quot; expression" />
     <property role="34LRSv" value="iff" />
     <ref role="1TJDcQ" to="ehqg:57ROGn90yFJ" resolve="IffExpressionBase" />
+    <node concept="PrWs8" id="46t5MkZuyux" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVCP$s">
     <property role="EcuMT" value="2331162319165544732" />
@@ -954,6 +968,9 @@
     <property role="R4oN_" value="Logical &quot;implies&quot; expression" />
     <property role="34LRSv" value="implies" />
     <ref role="1TJDcQ" to="ehqg:7mSH3WnsxEd" resolve="ImpliesExpressionBase" />
+    <node concept="PrWs8" id="46t5MkZuycN" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVCX3X">
     <property role="EcuMT" value="2331162319165575421" />
@@ -962,6 +979,9 @@
     <property role="R4oN_" value="Logical &quot;not&quot; expression" />
     <property role="34LRSv" value="not" />
     <ref role="1TJDcQ" to="ehqg:7mSH3Wnsy0f" resolve="NotExpressionBase" />
+    <node concept="PrWs8" id="46t5MkZuxV5" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVD0qQ">
     <property role="EcuMT" value="2331162319165589174" />
@@ -970,6 +990,9 @@
     <property role="34LRSv" value="always" />
     <property role="R4oN_" value="LTL &quot;always / globally&quot; expression" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Um38" resolve="BoundedUnaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZsNdF" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVD0C4">
     <property role="EcuMT" value="2331162319165590020" />
@@ -978,6 +1001,9 @@
     <property role="34LRSv" value="in the future" />
     <property role="R4oN_" value="LTL &quot;in the future / finally&quot; expression" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Um38" resolve="BoundedUnaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZuris" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21pWWsVD0G5">
     <property role="EcuMT" value="2331162319165590277" />
@@ -986,6 +1012,9 @@
     <property role="34LRSv" value="then" />
     <property role="R4oN_" value="LTL &quot;then / next state&quot; expression" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Uhgr" resolve="UnaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZus7z" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Uq4L">
     <property role="EcuMT" value="9133754867501343025" />
@@ -994,6 +1023,9 @@
     <property role="R4oN_" value="LTL &quot;until&quot; expression" />
     <property role="34LRSv" value="until" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Uhgs" resolve="BinaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZusWE" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Utri">
     <property role="EcuMT" value="9133754867501356754" />
@@ -1002,6 +1034,9 @@
     <property role="R4oN_" value="LTL &quot;releases&quot; expression" />
     <property role="34LRSv" value="releases" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Uhgs" resolve="BinaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZuqtl" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Utro">
     <property role="EcuMT" value="9133754867501356760" />
@@ -1010,6 +1045,9 @@
     <property role="R4oN_" value="LTL &quot;triggered&quot; expression" />
     <property role="34LRSv" value="triggered" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Uhgs" resolve="BinaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZusph" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Utrn">
     <property role="EcuMT" value="9133754867501356759" />
@@ -1018,6 +1056,9 @@
     <property role="R4oN_" value="LTL &quot;since&quot; expression" />
     <property role="34LRSv" value="since" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Uhgs" resolve="BinaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZur$a" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Utrl">
     <property role="EcuMT" value="9133754867501356757" />
@@ -1026,6 +1067,9 @@
     <property role="R4oN_" value="LTL &quot;historically&quot; expression" />
     <property role="34LRSv" value="historically" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Um38" resolve="BoundedUnaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZuofR" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Utrm">
     <property role="EcuMT" value="9133754867501356758" />
@@ -1034,6 +1078,9 @@
     <property role="34LRSv" value="in the past" />
     <property role="R4oN_" value="LTL &quot;in the past&quot; expression" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Um38" resolve="BoundedUnaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZur0I" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7V1Bqz6Utrj">
     <property role="EcuMT" value="9133754867501356755" />
@@ -1042,6 +1089,9 @@
     <property role="R4oN_" value="LTL &quot;previously&quot; expression" />
     <property role="34LRSv" value="previously" />
     <ref role="1TJDcQ" to="gioj:7V1Bqz6Uhgr" resolve="UnaryLTLExpression" />
+    <node concept="PrWs8" id="46t5MkZupCh" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7mSH3WnwK$u">
     <property role="EcuMT" value="8482728081222732062" />
@@ -1057,6 +1107,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="46t5MkZuul7" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="404$BAz1Qz6">
     <property role="EcuMT" value="4612972969458100422" />
@@ -1071,6 +1124,9 @@
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="46t5MkZutLI" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
     </node>
   </node>
   <node concept="1TIwiD" id="404$BAz2uz_">
@@ -1097,6 +1153,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="timeExpr" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="46t5MkZuvab" role="PzmwI">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
     </node>
   </node>
   <node concept="1TIwiD" id="404$BAz78Ye">
@@ -1169,6 +1228,9 @@
     <property role="EcuMT" value="4612972969459487050" />
     <property role="3GE5qa" value="constraints.relational" />
     <property role="TrG5h" value="RelationalOperator" />
+    <node concept="PrWs8" id="46t5MkZuwy_" role="PrDN$">
+      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IOCRAConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5MFfD6faVUc">
     <property role="EcuMT" value="6677499667400081036" />
@@ -1197,6 +1259,11 @@
     <node concept="PrWs8" id="6PN3fxNg84i" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="46t5MkZsy$k">
+    <property role="EcuMT" value="4727960632554563860" />
+    <property role="3GE5qa" value="constraints" />
+    <property role="TrG5h" value="IOCRAConstraint" />
   </node>
 </model>
 
