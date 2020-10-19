@@ -9043,6 +9043,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4vmsPd9Ax17" role="3bR37C">
+          <node concept="3bR9La" id="4vmsPd9Ax18" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3pWKmbYQ_3m" role="2G$12L">
         <property role="BnDLt" value="true" />
