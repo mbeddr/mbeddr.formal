@@ -90,6 +90,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3whv:7RhjhI7$liw" resolve="Instance" />
     </node>
+    <node concept="PrWs8" id="31P83hzGyef" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7j1NWs13Y0P">
     <property role="EcuMT" value="8413234032528056373" />
@@ -100,17 +103,6 @@
       <property role="20kJfa" value="effect" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffect" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7j1NWs13Y0Q">
-    <property role="EcuMT" value="8413234032528056374" />
-    <property role="TrG5h" value="ComponentFailureModeRef" />
-    <ref role="1TJDcQ" to="6k2r:7j1NWs11Gj0" resolve="FailureModeBase" />
-    <node concept="1TJgyj" id="42QGQFVnga5" role="1TKVEi">
-      <property role="IQ2ns" value="4663111736253809285" />
-      <property role="20kJfa" value="failureMode" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="42QGQFVn62K" resolve="ComponentFailureMode" />
     </node>
   </node>
   <node concept="1TIwiD" id="7j1NWs14dHd">
@@ -164,25 +156,18 @@
     <node concept="1TJgyj" id="42QGQFVncmK" role="1TKVEi">
       <property role="IQ2ns" value="4663111736253793712" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="filureModes" />
+      <property role="20kJfa" value="failureModes" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="42QGQFVn62K" resolve="ComponentFailureMode" />
+      <ref role="20lvS9" node="42QGQFVn62K" resolve="ComponentFailureModeDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="42QGQFVn62K">
     <property role="EcuMT" value="4663111736253767856" />
     <property role="3GE5qa" value="definitions" />
-    <property role="TrG5h" value="ComponentFailureMode" />
+    <property role="TrG5h" value="ComponentFailureModeDefinition" />
     <property role="34LRSv" value="failure mode" />
     <property role="R4oN_" value="failure mode definition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="42QGQFVn62S" role="1TKVEi">
-      <property role="IQ2ns" value="4663111736253767864" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="description" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
+    <ref role="1TJDcQ" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
     <node concept="PrWs8" id="42QGQFVn62Q" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

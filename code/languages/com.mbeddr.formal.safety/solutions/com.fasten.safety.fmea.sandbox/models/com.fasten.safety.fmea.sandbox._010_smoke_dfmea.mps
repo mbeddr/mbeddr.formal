@@ -18,7 +18,11 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
-      <concept id="8413234032527459520" name="com.fasten.safety.fmea.structure.FailureModeBase" flags="ng" index="1PLKG7">
+      <concept id="3491732495478440804" name="com.fasten.safety.fmea.structure.FailureModeDefinitionBase" flags="ng" index="1jQQdg">
+        <child id="4663111736253767864" name="description" index="2VUHfi" />
+      </concept>
+      <concept id="8413234032527459520" name="com.fasten.safety.fmea.structure.FailureModeAndEffects" flags="ng" index="1PLKG7">
+        <reference id="3491732495478507335" name="failureModeDefinition" index="1jQAtN" />
         <child id="8413234032527493605" name="effects" index="1PLCoy" />
       </concept>
       <concept id="8413234032527459451" name="com.fasten.safety.fmea.structure.SubjectBase" flags="ng" index="1PLKIW">
@@ -54,18 +58,13 @@
         <reference id="4663111736253767852" name="interface" index="2VUHf6" />
         <child id="4663111736253793712" name="filureModes" index="2VUBrq" />
       </concept>
-      <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureMode" flags="ng" index="2VUHfq">
-        <child id="4663111736253767864" name="description" index="2VUHfi" />
-      </concept>
+      <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
       <concept id="4663111736253860896" name="com.fasten.safety.fmea.arch.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="8413234032527476648" name="com.fasten.safety.fmea.arch.structure.ComponentInstanceSubject" flags="ng" index="1PLGxJ">
         <reference id="8413234032527476717" name="comp" index="1PLGwE" />
       </concept>
       <concept id="8413234032527468119" name="com.fasten.safety.fmea.arch.structure.DesignFMEA" flags="ng" index="1PLMAg">
         <reference id="8413234032528111728" name="arch" index="1POnuR" />
-      </concept>
-      <concept id="8413234032528056374" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeRef" flags="ng" index="1PNyZL">
-        <reference id="4663111736253809285" name="failureMode" index="2VUV7J" />
       </concept>
       <concept id="8413234032528056373" name="com.fasten.safety.fmea.arch.structure.ComponentEffect" flags="ng" index="1PNyZM">
         <reference id="4663111736254126539" name="effect" index="2VPQEx" />
@@ -120,6 +119,12 @@
           <node concept="19SUe$" id="42QGQFVotAx" role="19SJt6" />
         </node>
       </node>
+      <node concept="2VUvrc" id="31P83hzGOo0" role="2VUkHK">
+        <property role="TrG5h" value="message altered" />
+        <node concept="19SGf9" id="31P83hzGOo1" role="2VUvr4">
+          <node concept="19SUe$" id="31P83hzGOo2" role="19SJt6" />
+        </node>
+      </node>
     </node>
     <node concept="2VURXa" id="42QGQFVotAP" role="1POhhj" />
     <node concept="2VUHfc" id="42QGQFVnOkZ" role="1POhhj">
@@ -143,15 +148,15 @@
       <ref role="1POnuR" node="42QGQFVn3Fg" resolve="SenderReceiverSystem" />
       <node concept="1PLGxJ" id="42QGQFVn3I8" role="1PLElB">
         <ref role="1PLGwE" node="42QGQFVn3FY" resolve="r" />
-        <node concept="1PNyZL" id="42QGQFVnOl$" role="1PLCo$">
-          <ref role="2VUV7J" node="42QGQFVnOl1" resolve="blocked" />
-          <node concept="1PNyZM" id="42QGQFVp2pR" role="1PLCoy">
+        <node concept="1PLKG7" id="31P83hzGOnQ" role="1PLCo$">
+          <ref role="1jQAtN" node="42QGQFVnOl1" resolve="blocked" />
+          <node concept="1PNyZM" id="31P83hzGOnY" role="1PLCoy">
             <ref role="2VPQEx" node="42QGQFVotAu" resolve="message loss" />
           </node>
         </node>
-        <node concept="1PNyZL" id="42QGQFVnOlM" role="1PLCo$">
-          <ref role="2VUV7J" node="42QGQFVnOlA" resolve="too slow" />
-          <node concept="1PNyZM" id="42QGQFVp2pU" role="1PLCoy">
+        <node concept="1PLKG7" id="31P83hzGMP3" role="1PLCo$">
+          <ref role="1jQAtN" node="42QGQFVnOlA" resolve="too slow" />
+          <node concept="1PNyZM" id="31P83hzGMP6" role="1PLCoy">
             <ref role="2VPQEx" node="42QGQFVotAu" resolve="message loss" />
           </node>
         </node>

@@ -233,6 +233,9 @@
       <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
         <reference id="322010710375832947" name="language" index="3LEDTV" />
       </concept>
+      <concept id="322010710375832954" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportSolution" flags="ng" index="3LEDTM">
+        <reference id="322010710375832955" name="solution" index="3LEDTN" />
+      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -415,6 +418,12 @@
       <node concept="m$f5U" id="2ShgyhefbhC" role="m$_yh">
         <ref role="m$f5T" node="2Shgyhef7mw" resolve="fasten.nusmv.devkit" />
       </node>
+      <node concept="m$f5U" id="4hZQPnIocCC" role="m$_yh">
+        <ref role="m$f5T" node="4G23_lMx8p5" resolve="com.mbeddr.formal.nuxmv" />
+      </node>
+      <node concept="m$f5U" id="4hZQPnIokah" role="m$_yh">
+        <ref role="m$f5T" node="4hZQPnIogqu" resolve="fasten.nuxmv.devkit" />
+      </node>
       <node concept="m$_yC" id="42jqVeFkUv9" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -507,6 +516,35 @@
         </node>
         <node concept="3LEDTy" id="5yQpAUIgPII" role="3LEDUa">
           <ref role="3LEDTV" node="6adXBxxUu$i" resolve="com.mbeddr.formal.nusmv.importer" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="4hZQPnIogqu" role="3989C9">
+      <property role="TrG5h" value="fasten.nuxmv.devkit" />
+      <node concept="3LEwk6" id="4G23_lMxa1R" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.nuxmv" />
+        <property role="3LESm3" value="15b78606-0574-4c04-a9f2-d43bce9698b3" />
+        <node concept="398BVA" id="4G23_lMxa3H" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+          <node concept="2Ry0Ak" id="4G23_lMxa3I" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4G23_lMxa3J" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.nuxmv" />
+              <node concept="2Ry0Ak" id="4G23_lMxa6F" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.nuxmv.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="4G23_lMxa88" role="3LEDUa">
+          <ref role="3LEDTV" node="4G23_lMx8JY" resolve="com.mbeddr.formal.nuxmv" />
+        </node>
+        <node concept="3LEDTy" id="4G23_lMxa89" role="3LEDUa">
+          <ref role="3LEDTV" node="4G23_lMx9f7" resolve="com.mbeddr.formal.nuxmv.source" />
+        </node>
+        <node concept="3LEDTM" id="4G23_lMxa8a" role="3LEDUa">
+          <ref role="3LEDTN" node="4G23_lMx9_Y" resolve="com.mbeddr.formal.nuxmv.pluginSolution" />
         </node>
       </node>
     </node>
@@ -980,6 +1018,22 @@
             <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="3rtmxn" id="4G23_lMw9kn" role="3bR31x">
+          <node concept="3LXTmp" id="4G23_lMw9ko" role="3rtmxm">
+            <node concept="398BVA" id="4G23_lMw9kp" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMw9kq" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4G23_lMw9kr" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.base.msc" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMw9kt" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2Btqz_w6o5R" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1113,6 +1167,22 @@
         <node concept="1SiIV0" id="2Btqz_w6oXF" role="3bR37C">
           <node concept="1Busua" id="2Btqz_w6oXG" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4G23_lMw9mf" role="3bR31x">
+          <node concept="3LXTmp" id="4G23_lMw9mg" role="3rtmxm">
+            <node concept="398BVA" id="4G23_lMw9mh" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMw9mi" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4G23_lMw9mj" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.base.arch.msc" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMw9ml" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
           </node>
         </node>
       </node>
@@ -3736,6 +3806,239 @@
             </node>
             <node concept="3qWCbU" id="5TezZ1VdfBB" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="4G23_lMx8p5" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.formal.nuxmv" />
+      <node concept="1E1JtD" id="4G23_lMx8JY" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.nuxmv" />
+        <property role="3LESm3" value="64b11414-c9a3-4cdb-a039-8d032fdcd8b2" />
+        <node concept="398BVA" id="4G23_lMx8Lt" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+          <node concept="2Ry0Ak" id="4G23_lMx8Op" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4G23_lMx8Rk" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv" />
+              <node concept="2Ry0Ak" id="4G23_lMx92L" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4G23_lMx9cV" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4G23_lMx9cW" role="1HemKq">
+            <node concept="398BVA" id="4G23_lMx9cK" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMx9cL" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4G23_lMx9cM" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv" />
+                  <node concept="2Ry0Ak" id="4G23_lMx9cN" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMx9cX" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9cY" role="3bR37C">
+          <node concept="1Busua" id="4G23_lMx9cZ" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUu5" resolve="com.mbeddr.formal.nusmv" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9d0" role="3bR37C">
+          <node concept="1Busua" id="4G23_lMx9d1" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4G23_lMx9w3" role="3bR31x">
+          <node concept="3LXTmp" id="4G23_lMx9w4" role="3rtmxm">
+            <node concept="398BVA" id="4G23_lMx9w5" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMx9w6" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4G23_lMx9w7" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMx9w9" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4G23_lMx9f7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.nuxmv.source" />
+        <property role="3LESm3" value="98d57a7c-6511-4945-8e9c-307874d5259b" />
+        <node concept="398BVA" id="4G23_lMx9gS" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+          <node concept="2Ry0Ak" id="4G23_lMx9gT" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4G23_lMx9gU" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.source" />
+              <node concept="2Ry0Ak" id="4G23_lMx9jQ" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.source.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9u0" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9u1" role="1SiIV1">
+            <ref role="3bR37D" node="6glUKoNR9Tl" resolve="com.mbeddr.formal.nusmv.source" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="4G23_lMx9ud" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4G23_lMx9ue" role="1HemKq">
+            <node concept="398BVA" id="4G23_lMx9u2" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMx9u3" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4G23_lMx9u4" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.source" />
+                  <node concept="2Ry0Ak" id="4G23_lMx9u5" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMx9uf" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9ug" role="3bR37C">
+          <node concept="1Busua" id="4G23_lMx9uh" role="1SiIV1">
+            <ref role="1Busuk" node="6glUKoNR9Tl" resolve="com.mbeddr.formal.nusmv.source" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4G23_lMx9xV" role="3bR31x">
+          <node concept="3LXTmp" id="4G23_lMx9xW" role="3rtmxm">
+            <node concept="398BVA" id="4G23_lMx9xX" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMx9xY" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4G23_lMx9xZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.source" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMx9y1" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="4G23_lMx9_Y" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.nuxmv.pluginSolution" />
+        <property role="3LESm3" value="263ebba5-d9c9-4f02-b38c-e344aa263f98" />
+        <node concept="398BVA" id="4G23_lMx9Cb" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+          <node concept="2Ry0Ak" id="4G23_lMx9Cc" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4G23_lMx9Cd" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.pluginSolution" />
+              <node concept="2Ry0Ak" id="4G23_lMx9HZ" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.pluginSolution.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9Sk" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9Sl" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9Sm" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9Sn" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9So" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9Sp" role="1SiIV1">
+            <ref role="3bR37D" node="6glUKoNR9Tl" resolve="com.mbeddr.formal.nusmv.source" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9Sq" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9Sr" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9Ss" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9St" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9Su" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9Sv" role="1SiIV1">
+            <ref role="3bR37D" node="1V$lRyiUHLD" resolve="com.mbeddr.formal.nusmv.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9Sw" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9Sx" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9Sy" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9Sz" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4G23_lMx9S$" role="3bR37C">
+          <node concept="3bR9La" id="4G23_lMx9S_" role="1SiIV1">
+            <ref role="3bR37D" node="6adXBxxUwrY" resolve="com.mbeddr.formal.base.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="4G23_lMx9SL" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4G23_lMx9SM" role="1HemKq">
+            <node concept="398BVA" id="4G23_lMx9SA" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMx9SB" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4G23_lMx9SC" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.pluginSolution" />
+                  <node concept="2Ry0Ak" id="4G23_lMx9SD" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMx9SN" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4G23_lMx9UN" role="3bR31x">
+          <node concept="3LXTmp" id="4G23_lMx9UO" role="3rtmxm">
+            <node concept="398BVA" id="4G23_lMx9UP" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="4G23_lMx9UQ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4G23_lMx9UR" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nuxmv.pluginSolution" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4G23_lMx9UT" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>
         </node>

@@ -8,10 +8,10 @@
   </languages>
   <imports>
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
+    <import index="1wto" ref="r:d2a5f2a9-7844-41f3-be75-db15de4c0123(com.fasten.safety.fmea.editor)" />
+    <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" implicit="true" />
-    <import index="1wto" ref="r:d2a5f2a9-7844-41f3-be75-db15de4c0123(com.fasten.safety.fmea.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -27,6 +27,9 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
+        <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
       </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -57,6 +60,9 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
+        <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
+      </concept>
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -108,32 +114,11 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="7j1NWs11OAe">
-    <ref role="1XX52x" to="g9vz:7j1NWs11KuC" resolve="ComponentInstanceSubject" />
-    <node concept="2r0Tta" id="42QGQFVn427" role="2wV5jI">
-      <node concept="2reCLk" id="42QGQFVn61Y" role="2r0Tv6">
-        <node concept="2reCLy" id="42QGQFVn620" role="2reCL6">
-          <node concept="1iCGBv" id="7j1NWs11OBk" role="2reSmM">
-            <ref role="1NtTu8" to="g9vz:7j1NWs11KvH" resolve="comp" />
-            <node concept="1sVBvm" id="7j1NWs11OBm" role="1sWHZn">
-              <node concept="3F0A7n" id="7j1NWs11OBw" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="2rfbtV" id="42QGQFVn627" role="2recC9">
-            <property role="2rfbtB" value="Instance" />
-          </node>
-        </node>
-        <node concept="2reSaE" id="42QGQFVn62g" role="2reCL6">
-          <ref role="2reCK$" to="6k2r:7j1NWs11OBz" resolve="failureModes" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="7j1NWs14bxM">
     <ref role="1XX52x" to="g9vz:7j1NWs11Ipn" resolve="DesignFMEA" />
     <node concept="3EZMnI" id="7j1NWs14byS" role="2wV5jI">
@@ -200,54 +185,6 @@
       <node concept="2iRkQZ" id="5rwT_Jny5eT" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="42QGQFVn62o">
-    <ref role="1XX52x" to="g9vz:7j1NWs13Y0Q" resolve="ComponentFailureModeRef" />
-    <node concept="2r0Tta" id="42QGQFVn62v" role="2wV5jI">
-      <node concept="2reCLk" id="42QGQFVngal" role="2r0Tv6">
-        <node concept="2reCLy" id="42QGQFVn62y" role="2reCL6">
-          <node concept="1iCGBv" id="42QGQFVnga7" role="2reSmM">
-            <ref role="1NtTu8" to="g9vz:42QGQFVnga5" resolve="failureMode" />
-            <node concept="1sVBvm" id="42QGQFVnga9" role="1sWHZn">
-              <node concept="3F0A7n" id="42QGQFVngag" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="2rfbtV" id="42QGQFVngaG" role="2recC9">
-            <property role="2rfbtB" value="Failure Mode" />
-          </node>
-        </node>
-        <node concept="2reSaE" id="42QGQFVnga_" role="2reCL6">
-          <ref role="2reCK$" to="6k2r:7j1NWs11OB_" resolve="effects" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="42QGQFVncko">
-    <property role="3GE5qa" value="definitions" />
-    <ref role="1XX52x" to="g9vz:42QGQFVn62K" resolve="ComponentFailureMode" />
-    <node concept="2r0Tta" id="42QGQFVnckq" role="2wV5jI">
-      <node concept="2reCLk" id="42QGQFVnckF" role="2r0Tv6">
-        <node concept="2reCLy" id="42QGQFVnckt" role="2reCL6">
-          <node concept="3F0A7n" id="42QGQFVnck$" role="2reSmM">
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="2rfbtV" id="42QGQFVnckB" role="2recC9">
-            <property role="2rfbtB" value="Failure Mode Name" />
-          </node>
-        </node>
-        <node concept="2reCLy" id="42QGQFVncl8" role="2reCL6">
-          <node concept="3F1sOY" id="42QGQFVnclh" role="2reSmM">
-            <ref role="1NtTu8" to="g9vz:42QGQFVn62S" resolve="description" />
-          </node>
-          <node concept="2rfbtV" id="42QGQFVnclk" role="2recC9">
-            <property role="2rfbtB" value="Description" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="42QGQFVnclw">
     <property role="3GE5qa" value="definitions" />
     <ref role="1XX52x" to="g9vz:42QGQFVn62A" resolve="ComponentFailureModesDefinition" />
@@ -276,7 +213,7 @@
         <node concept="3XFhqQ" id="42QGQFVncmE" role="3EZMnx" />
         <node concept="2rfBfz" id="42QGQFVncmN" role="3EZMnx">
           <node concept="2reSaE" id="42QGQFVncmT" role="2rf8GZ">
-            <ref role="2reCK$" to="g9vz:42QGQFVncmK" resolve="filureModes" />
+            <ref role="2reCK$" to="g9vz:42QGQFVncmK" resolve="failureModes" />
           </node>
         </node>
         <node concept="l2Vlx" id="42QGQFVncmu" role="2iSdaV" />
@@ -364,6 +301,22 @@
       <ref role="1NtTu8" to="g9vz:42QGQFVotBb" resolve="effect" />
       <node concept="1sVBvm" id="42QGQFVotBm" role="1sWHZn">
         <node concept="3F0A7n" id="42QGQFVotBw" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="31P83hzF7oE">
+    <property role="TrG5h" value="ComponentInstance" />
+    <ref role="1XX52x" to="g9vz:7j1NWs11KuC" resolve="ComponentInstanceSubject" />
+    <node concept="1PE4EZ" id="31P83hzF7oG" role="1PM95z">
+      <ref role="1PE7su" to="1wto:31P83hzF77w" resolve="FMEASubjectBaseSubject" />
+    </node>
+    <node concept="1iCGBv" id="31P83hzF7oI" role="2wV5jI">
+      <ref role="1NtTu8" to="g9vz:7j1NWs11KvH" resolve="comp" />
+      <node concept="1sVBvm" id="31P83hzF7oJ" role="1sWHZn">
+        <node concept="3F0A7n" id="31P83hzF7oK" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
