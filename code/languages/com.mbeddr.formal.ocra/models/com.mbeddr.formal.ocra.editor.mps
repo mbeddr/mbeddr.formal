@@ -2,8 +2,8 @@
 <model ref="r:ff2970bc-0161-494f-a95e-c3ae03ee04b0(com.mbeddr.formal.ocra.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1450,6 +1450,41 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2OfmkSXY_uR">
+    <ref role="1XX52x" to="hqls:2OfmkSXY_kt" resolve="OthelloLibrarySpecification" />
+    <node concept="3EZMnI" id="2OfmkSXY_uT" role="2wV5jI">
+      <node concept="PMmxH" id="2OfmkSXY_uU" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+      </node>
+      <node concept="3F0ifn" id="2OfmkSXY_uV" role="3EZMnx">
+        <node concept="pVoyu" id="2OfmkSXY_uW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2OfmkSXY_uX" role="3EZMnx">
+        <ref role="1NtTu8" to="hqls:2OfmkSXY_ku" resolve="content" />
+        <node concept="l2Vlx" id="2OfmkSXY_uY" role="2czzBx" />
+        <node concept="pj6Ft" id="2OfmkSXY_uZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="4$FPG" id="2OfmkSXY_v0" role="4_6I_">
+          <node concept="3clFbS" id="2OfmkSXY_v1" role="2VODD2">
+            <node concept="3clFbF" id="2OfmkSXY_v2" role="3cqZAp">
+              <node concept="2pJPEk" id="2OfmkSXY_v3" role="3clFbG">
+                <node concept="2pJPED" id="2OfmkSXY_v4" role="2pJPEn">
+                  <ref role="2pJxaS" to="hqls:3WeLjIxQAOX" resolve="EmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="2OfmkSXY_v5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2OfmkSXY_v6" role="2iSdaV" />
     </node>
   </node>
 </model>

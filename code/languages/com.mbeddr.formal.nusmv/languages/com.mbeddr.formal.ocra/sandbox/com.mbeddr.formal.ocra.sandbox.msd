@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.formal.ocra" uuid="5ccce04a-9411-450d-8af4-a858c6f99d1e" languageVersion="0" moduleVersion="0">
+<solution name="com.mbeddr.formal.ocra.sandbox" uuid="27594dbf-9414-466f-919a-5664359763fb" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" languageLevel="JAVA_8">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</dependency>
-    <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
-    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
-    <dependency reexport="false">c0e6afd4-e20f-4e33-9970-004cf26b9bf6(com.mbeddr.formal.nusmv.ext)</dependency>
+    <dependency reexport="false">5ccce04a-9411-450d-8af4-a858c6f99d1e(com.mbeddr.formal.ocra)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
+    <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
+    <language slang="l:001b2375-3bd5-4d5e-9958-6b3f62dc8548:com.mbeddr.formal.nusmv" version="0" />
+    <language slang="l:c0e6afd4-e20f-4e33-9970-004cf26b9bf6:com.mbeddr.formal.nusmv.ext" version="0" />
+    <language slang="l:5ccce04a-9411-450d-8af4-a858c6f99d1e:com.mbeddr.formal.ocra" version="0" />
+    <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
-    <language slang="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" version="0" />
+    <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -37,19 +38,13 @@
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="c0e6afd4-e20f-4e33-9970-004cf26b9bf6(com.mbeddr.formal.nusmv.ext)" version="0" />
     <module reference="5ccce04a-9411-450d-8af4-a858c6f99d1e(com.mbeddr.formal.ocra)" version="0" />
+    <module reference="27594dbf-9414-466f-919a-5664359763fb(com.mbeddr.formal.ocra.sandbox)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
-  <extendedLanguages>
-    <extendedLanguage>001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</extendedLanguage>
-    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
-    <extendedLanguage>b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</extendedLanguage>
-    <extendedLanguage>c0e6afd4-e20f-4e33-9970-004cf26b9bf6(com.mbeddr.formal.nusmv.ext)</extendedLanguage>
-  </extendedLanguages>
-</language>
+</solution>
 

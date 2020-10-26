@@ -2,12 +2,16 @@
 <model ref="r:098b9963-beaa-42d7-9080-d0509664a285(com.mbeddr.formal.ocra.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.mbeddr.formal.ocra" version="0" />
-    <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
+    <use id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.mbeddr.formal.ocra" version="-1" />
+    <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="-1" />
   </languages>
   <imports />
   <registry>
     <language id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.mbeddr.formal.ocra">
+      <concept id="3246912048939554077" name="com.mbeddr.formal.ocra.structure.OthelloLibrarySpecification" flags="ng" index="gXgLj">
+        <child id="3246912048939554078" name="content" index="gXgLg" />
+      </concept>
+      <concept id="3246912048940698170" name="com.mbeddr.formal.ocra.structure.EnumDeclaration" flags="ng" index="j19dO" />
       <concept id="2140053560803488798" name="com.mbeddr.formal.ocra.structure.EventType" flags="ng" index="pGCHY" />
       <concept id="2140053560803573749" name="com.mbeddr.formal.ocra.structure.ContinuousType" flags="ng" index="pGO2l" />
       <concept id="2331162319165543993" name="com.mbeddr.formal.ocra.structure.OrExpression" flags="ng" index="rYEnY" />
@@ -16,7 +20,7 @@
       <concept id="2331162319165589174" name="com.mbeddr.formal.ocra.structure.AlwaysExpression" flags="ng" index="rZvlL" />
       <concept id="2331162319165590277" name="com.mbeddr.formal.ocra.structure.ThenExpression" flags="ng" index="rZvz2" />
       <concept id="2331162319165590020" name="com.mbeddr.formal.ocra.structure.InTheFutureExpression" flags="ng" index="rZvB3" />
-      <concept id="2140053560801850428" name="com.mbeddr.formal.ocra.structure.OthelloSystemSpecificationRef" flags="ng" index="uloHs">
+      <concept id="2140053560801850428" name="com.mbeddr.formal.ocra.structure.OthelloSpecificationRef" flags="ng" index="uloHs">
         <reference id="2140053560801850436" name="target" index="uloG$" />
       </concept>
       <concept id="4543785933972598077" name="com.mbeddr.formal.ocra.structure.EmptyLine" flags="ng" index="2uPaw6" />
@@ -135,9 +139,6 @@
         <child id="7842584090743391224" name="members" index="2Hdrtl" />
       </concept>
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
-      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
-        <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
-      </concept>
       <concept id="8482728081225176234" name="com.mbeddr.formal.nusmv.structure.WordType" flags="ng" index="1y4e2l">
         <child id="8482728081225176235" name="size" index="1y4e2k" />
       </concept>
@@ -163,6 +164,14 @@
       <concept id="8482728081213325516" name="com.mbeddr.formal.base.expressions.structure.GenericDotExpression" flags="ng" index="1ziNjN">
         <child id="8482728081213325520" name="target" index="1ziNjJ" />
         <child id="8482728081213325517" name="lhs" index="1ziNjM" />
+      </concept>
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="7526568111198990000" name="com.mbeddr.formal.nusmv.ext.structure.EnumType" flags="ng" index="2XJXdx">
+        <reference id="7526568111198990001" name="enumDeclaration" index="2XJXdw" />
+      </concept>
+      <concept id="7526568111198989908" name="com.mbeddr.formal.nusmv.ext.structure.EnumDeclaration" flags="ng" index="2XJXe5">
+        <child id="7526568111198989997" name="members" index="2XJXdW" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1105,6 +1114,11 @@
   <node concept="3JpXKN" id="5MFfD6f8RtY">
     <property role="TrG5h" value="TLC" />
     <property role="3GE5qa" value="tlc-example" />
+    <node concept="3JpXKQ" id="2OfmkSY3$Q_" role="urd1T">
+      <node concept="uloHs" id="2OfmkSY3J3q" role="ulUGd">
+        <ref role="uloG$" node="2OfmkSY2WCT" resolve="EnumLibrary" />
+      </node>
+    </node>
     <node concept="3JpXKQ" id="5MFfD6f8RYs" role="urd1T">
       <node concept="uloHs" id="5MFfD6f8RYx" role="ulUGd">
         <ref role="uloG$" node="5MFfD6f8Rv8" resolve="Controller" />
@@ -1203,9 +1217,15 @@
         </node>
         <node concept="3JpXKA" id="5MFfD6f8S1Q" role="3JpXMY">
           <property role="TrG5h" value="pedestrian_lights" />
+          <node concept="2XJXdx" id="2OfmkSY3J3u" role="3JpXLx">
+            <ref role="2XJXdw" node="2OfmkSY3vvs" resolve="PEDESTRIAN_LIGHTS" />
+          </node>
         </node>
         <node concept="3JpXKA" id="5MFfD6f8S2q" role="3JpXMY">
           <property role="TrG5h" value="traffic_lights" />
+          <node concept="2XJXdx" id="2OfmkSY3vvb" role="3JpXLx">
+            <ref role="2XJXdw" node="2OfmkSY3vrS" resolve="TRAFFIC_LIGHTS" />
+          </node>
         </node>
         <node concept="2uPaw6" id="5MFfD6f8S0k" role="3JpXMY" />
         <node concept="3JpXL0" id="5MFfD6f8RZ3" role="3JpXMY">
@@ -1339,30 +1359,17 @@
           <property role="TrG5h" value="pedestrian_request" />
           <node concept="2Hds6S" id="5MFfD6f8Rwz" role="3JpXLx" />
         </node>
-        <node concept="2uPaw6" id="5MFfD6f8RwC" role="3JpXMY" />
+        <node concept="2uPaw6" id="2OfmkSXY_lM" role="3JpXMY" />
         <node concept="3JpXKA" id="5MFfD6f8RwL" role="3JpXMY">
           <property role="TrG5h" value="traffic_lights" />
-          <node concept="2Hdrtr" id="5MFfD6f8Rxk" role="3JpXLx">
-            <node concept="2Hdrtq" id="5MFfD6f8Rxl" role="2Hdrtl">
-              <property role="TrG5h" value="RED" />
-            </node>
-            <node concept="2Hdrtq" id="5MFfD6f8Rxv" role="2Hdrtl">
-              <property role="TrG5h" value="YELLOW" />
-            </node>
-            <node concept="2Hdrtq" id="5MFfD6f8RxS" role="2Hdrtl">
-              <property role="TrG5h" value="GREEN" />
-            </node>
+          <node concept="2XJXdx" id="2OfmkSY3vvQ" role="3JpXLx">
+            <ref role="2XJXdw" node="2OfmkSY3vrS" resolve="TRAFFIC_LIGHTS" />
           </node>
         </node>
         <node concept="3JpXKA" id="5MFfD6f8RzS" role="3JpXMY">
           <property role="TrG5h" value="pedestrian_lights" />
-          <node concept="2Hdrtr" id="5MFfD6f8R$5" role="3JpXLx">
-            <node concept="2Hdrtq" id="5MFfD6f8R$6" role="2Hdrtl">
-              <property role="TrG5h" value="WALK" />
-            </node>
-            <node concept="2Hdrtq" id="5MFfD6f8R$u" role="2Hdrtl">
-              <property role="TrG5h" value="DONT_WALK" />
-            </node>
+          <node concept="2XJXdx" id="2OfmkSY3vvW" role="3JpXLx">
+            <ref role="2XJXdw" node="2OfmkSY3vvs" resolve="PEDESTRIAN_LIGHTS" />
           </node>
         </node>
         <node concept="2uPaw6" id="5MFfD6f8R_d" role="3JpXMY" />
@@ -1373,12 +1380,12 @@
               <node concept="32OYss" id="5MFfD6f8RAB" role="1yBIc4">
                 <node concept="rYEFr" id="5MFfD6f8RAR" role="32OYtT">
                   <node concept="rZvB3" id="5MFfD6f8RBl" role="2H9Ial">
-                    <node concept="2HbLFT" id="5MFfD6f8RCB" role="1yBIc4">
-                      <node concept="3JpXLh" id="2LIcOCczt9C" role="2H9Iav">
-                        <ref role="2eEb$9" node="5MFfD6f8RzS" resolve="pedestrian_lights" />
+                    <node concept="2HbLFT" id="70K71XXhMRZ" role="1yBIc4">
+                      <node concept="2IPVmt" id="70K71XXhMTO" role="2H9Ial">
+                        <property role="2IPVms" value="1" />
                       </node>
-                      <node concept="2HeeqP" id="KIGv8HVMSM" role="2H9Ial">
-                        <ref role="2HeeqO" node="5MFfD6f8Rxl" resolve="RED" />
+                      <node concept="3JpXLh" id="70K71XXhMR2" role="2H9Iav">
+                        <ref role="2eEb$9" node="5MFfD6f8RzS" resolve="pedestrian_lights" />
                       </node>
                     </node>
                   </node>
@@ -1408,11 +1415,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="2HbLFT" id="5MFfD6f8RL9" role="2H9Ial">
-                <node concept="2IPVmt" id="5MFfD6f8RLB" role="2H9Ial">
+              <node concept="2HbLFT" id="2OfmkSY3Juv" role="2H9Ial">
+                <node concept="2IPVmt" id="2OfmkSY3Juw" role="2H9Ial">
                   <property role="2IPVms" value="2" />
                 </node>
-                <node concept="3JpXLh" id="2LIcOCcztaa" role="2H9Iav">
+                <node concept="3JpXLh" id="2OfmkSY3Jux" role="2H9Iav">
                   <ref role="2eEb$9" node="5MFfD6f8RzS" resolve="pedestrian_lights" />
                 </node>
               </node>
@@ -1422,7 +1429,31 @@
             <node concept="1yCjRe" id="5MFfD6f8RHs" role="1yBDGv" />
           </node>
         </node>
-        <node concept="2uPaw6" id="5MFfD6f8RGp" role="3JpXMY" />
+      </node>
+    </node>
+  </node>
+  <node concept="gXgLj" id="2OfmkSY2WCT">
+    <property role="3GE5qa" value="tlc-example" />
+    <property role="TrG5h" value="EnumLibrary" />
+    <node concept="j19dO" id="2OfmkSY3vrS" role="gXgLg">
+      <property role="TrG5h" value="TRAFFIC_LIGHTS" />
+      <node concept="2Hdrtq" id="2OfmkSY3vrY" role="2XJXdW">
+        <property role="TrG5h" value="RED" />
+      </node>
+      <node concept="2Hdrtq" id="2OfmkSY3vs1" role="2XJXdW">
+        <property role="TrG5h" value="YELLOW" />
+      </node>
+      <node concept="2Hdrtq" id="2OfmkSY3vs6" role="2XJXdW">
+        <property role="TrG5h" value="GREEN" />
+      </node>
+    </node>
+    <node concept="j19dO" id="2OfmkSY3vvs" role="gXgLg">
+      <property role="TrG5h" value="PEDESTRIAN_LIGHTS" />
+      <node concept="2Hdrtq" id="2OfmkSY3vvC" role="2XJXdW">
+        <property role="TrG5h" value="WALK" />
+      </node>
+      <node concept="2Hdrtq" id="2OfmkSY3vvF" role="2XJXdW">
+        <property role="TrG5h" value="DONT_WALK" />
       </node>
     </node>
   </node>
