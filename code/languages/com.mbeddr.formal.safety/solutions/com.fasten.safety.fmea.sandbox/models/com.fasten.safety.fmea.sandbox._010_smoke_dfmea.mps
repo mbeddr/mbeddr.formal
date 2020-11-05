@@ -18,6 +18,9 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="3491732495478955378" name="" flags="ng" index="1jKNP6">
+        <child id="4663111736253957550" name="" index="2VUvr4" />
+      </concept>
       <concept id="3491732495478440804" name="com.fasten.safety.fmea.structure.FailureModeDefinitionBase" flags="ng" index="1jQQdg">
         <child id="4663111736253767864" name="description" index="2VUHfi" />
       </concept>
@@ -48,9 +51,7 @@
       </concept>
     </language>
     <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
-      <concept id="4663111736253957542" name="com.fasten.safety.fmea.arch.structure.ComponentFailureEffect" flags="ng" index="2VUvrc">
-        <child id="4663111736253957550" name="description" index="2VUvr4" />
-      </concept>
+      <concept id="4663111736253957542" name="com.fasten.safety.fmea.arch.structure.ComponentFailureEffect" flags="ng" index="2VUvrc" />
       <concept id="4663111736253957534" name="com.fasten.safety.fmea.arch.structure.ComponentFailureEffectsDefinition" flags="ng" index="2VUvrO">
         <child id="4663111736254003226" name="effects" index="2VUkHK" />
       </concept>

@@ -102,7 +102,7 @@
       <property role="IQ2ns" value="4663111736254126539" />
       <property role="20kJfa" value="effect" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffect" />
+      <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffectDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7j1NWs14dHd">
@@ -197,25 +197,15 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="effects" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffect" />
+      <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffectDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="42QGQFVnOmA">
     <property role="EcuMT" value="4663111736253957542" />
     <property role="3GE5qa" value="definitions" />
-    <property role="TrG5h" value="ComponentFailureEffect" />
+    <property role="TrG5h" value="ComponentFailureEffectDefinition" />
     <property role="34LRSv" value="failure effect" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="42QGQFVnOmG" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="42QGQFVnOmI" role="1TKVEi">
-      <property role="IQ2ns" value="4663111736253957550" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="description" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
+    <ref role="1TJDcQ" to="6k2r:31P83hzHxPM" resolve="FailureEffectDefinitionBase" />
   </node>
   <node concept="1TIwiD" id="42QGQFVnZwF">
     <property role="EcuMT" value="4663111736254003243" />
@@ -225,7 +215,7 @@
       <property role="IQ2ns" value="4663111736254003244" />
       <property role="20kJfa" value="failureEffect" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffect" />
+      <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffectDefinition" />
     </node>
   </node>
 </model>

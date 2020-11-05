@@ -233,7 +233,7 @@
   </node>
   <node concept="24kQdi" id="42QGQFVnOmK">
     <property role="3GE5qa" value="definitions" />
-    <ref role="1XX52x" to="g9vz:42QGQFVnOmA" resolve="ComponentFailureEffect" />
+    <ref role="1XX52x" to="g9vz:42QGQFVnOmA" resolve="ComponentFailureEffectDefinition" />
     <node concept="2r0Tta" id="42QGQFVnOmR" role="2wV5jI">
       <node concept="2reCLk" id="42QGQFVnOmU" role="2r0Tv6">
         <node concept="2reCLy" id="42QGQFVnOmW" role="2reCL6">
@@ -246,7 +246,7 @@
         </node>
         <node concept="2reCLy" id="42QGQFVnOn7" role="2reCL6">
           <node concept="3F1sOY" id="42QGQFVnOnf" role="2reSmM">
-            <ref role="1NtTu8" to="g9vz:42QGQFVnOmI" resolve="description" />
+            <ref role="1NtTu8" to="6k2r:42QGQFVnOmI" resolve="description" />
           </node>
           <node concept="2rfbtV" id="42QGQFVnOnk" role="2recC9">
             <property role="2rfbtB" value="Description" />
