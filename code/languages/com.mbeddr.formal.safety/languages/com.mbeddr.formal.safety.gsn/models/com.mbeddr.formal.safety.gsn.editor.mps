@@ -59,6 +59,9 @@
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="7418278005949660372" name="jetbrains.mps.lang.editor.structure.FontFamilyStyleClassItem" flags="ln" index="2biZxu" />
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
@@ -192,6 +195,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
       <concept id="4233361609415247331" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Parameter" flags="ig" index="1GhMSn" />
       <concept id="4233361609415240997" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Parameterized" flags="ng" index="1GhOrh">
@@ -539,7 +543,7 @@
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
-        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464360" name="cellLayout" index="2czzBy" />
         <child id="459067182340669610" name="deleteNode" index="2daAY1" />
         <child id="6202678563380433923" name="query" index="sbcd9" />
         <child id="5820306262933755617" name="insertNewNode" index="AS3tk" />
@@ -4899,7 +4903,7 @@
             </node>
           </node>
         </node>
-        <node concept="2iRkQZ" id="5uFV_KKCN_i" role="2czzBx" />
+        <node concept="2iRkQZ" id="5uFV_KKCN_i" role="2czzBy" />
       </node>
       <node concept="2iRkQZ" id="5uFV_KKBj0q" role="2iSdaV" />
     </node>
@@ -5053,7 +5057,7 @@
                 </node>
               </node>
             </node>
-            <node concept="2iRkQZ" id="71GfFl7p6EB" role="2czzBx" />
+            <node concept="2iRkQZ" id="71GfFl7p6EB" role="2czzBy" />
             <node concept="ARxKT" id="71GfFl7p6EC" role="AS3tk">
               <node concept="3clFbS" id="71GfFl7p6ED" role="2VODD2">
                 <node concept="3clFbF" id="71GfFl7p6EE" role="3cqZAp">
@@ -6456,7 +6460,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="2iRkQZ" id="4q8AAJKJYqv" role="2czzBx" />
+              <node concept="2iRkQZ" id="4q8AAJKJYqv" role="2czzBy" />
               <node concept="ARxKT" id="4q8AAJKJYqw" role="AS3tk">
                 <node concept="3clFbS" id="4q8AAJKJYqx" role="2VODD2">
                   <node concept="3clFbF" id="4q8AAJKJYqy" role="3cqZAp">
@@ -6763,7 +6767,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="2iRkQZ" id="4q8AAJKK1eW" role="2czzBx" />
+              <node concept="2iRkQZ" id="4q8AAJKK1eW" role="2czzBy" />
             </node>
             <node concept="1HlG4h" id="4q8AAJKK1f5" role="3v1y6z">
               <node concept="VechU" id="4q8AAJKK1f6" role="3F10Kt">
@@ -6950,6 +6954,23 @@
         <node concept="3F1sOY" id="4q8AAJKOiis" role="3EZMnx">
           <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         </node>
+      </node>
+      <node concept="3F0ifn" id="6dwPixfdDSh" role="3EZMnx" />
+      <node concept="3EZMnI" id="6dwPixfdDSA" role="3EZMnx">
+        <node concept="VPM3Z" id="6dwPixfdDSC" role="3F10Kt" />
+        <node concept="3F0ifn" id="6dwPixfdDSE" role="3EZMnx">
+          <property role="3F0ifm" value="Attributes:" />
+        </node>
+        <node concept="l2Vlx" id="6dwPixfdDSF" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6dwPixfdDSU" role="3EZMnx">
+        <node concept="VPM3Z" id="6dwPixfdDSV" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6dwPixfdDTf" role="3EZMnx" />
+        <node concept="3F2HdR" id="6dwPixfdDTl" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:6dwPixfdDSe" resolve="attributes" />
+          <node concept="2iRkQZ" id="6dwPixfdDTr" role="2czzBx" />
+        </node>
+        <node concept="l2Vlx" id="6dwPixfdDSX" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -8892,7 +8913,7 @@
             </node>
           </node>
         </node>
-        <node concept="2iRkQZ" id="7olAlesPk0K" role="2czzBx" />
+        <node concept="2iRkQZ" id="7olAlesPk0K" role="2czzBy" />
       </node>
       <node concept="2iRkQZ" id="7olAlesPk0L" role="2iSdaV" />
     </node>
@@ -9342,7 +9363,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="2iRkQZ" id="7olAlesPYfJ" role="2czzBx" />
+              <node concept="2iRkQZ" id="7olAlesPYfJ" role="2czzBy" />
               <node concept="ARxKT" id="7olAlesPYfK" role="AS3tk">
                 <node concept="3clFbS" id="7olAlesPYfL" role="2VODD2">
                   <node concept="3clFbF" id="7olAlesPYfM" role="3cqZAp">
