@@ -327,7 +327,7 @@
           <node concept="2iRkQZ" id="24PsEXF9yIb" role="2iSdaV" />
           <node concept="3F0ifn" id="2ccN23odQq9" role="3EZMnx">
             <property role="3F0ifm" value="supportedBy" />
-            <ref role="1k5W1q" to="g35p:71GfFl7qVvB" resolve="GSNConnectionStyle" />
+            <ref role="1k5W1q" to="xnej:71GfFl7qVvB" resolve="ConnectionStyle" />
           </node>
           <node concept="3EZMnI" id="24PsEXF9yIp" role="3EZMnx">
             <node concept="VPM3Z" id="24PsEXF9yIr" role="3F10Kt" />
@@ -424,7 +424,7 @@
           <node concept="2iRkQZ" id="35$gPpxbZZI" role="2iSdaV" />
           <node concept="3F0ifn" id="35$gPpxbZZJ" role="3EZMnx">
             <property role="3F0ifm" value="inContextOf" />
-            <ref role="1k5W1q" to="g35p:71GfFl7qVvB" resolve="GSNConnectionStyle" />
+            <ref role="1k5W1q" to="xnej:71GfFl7qVvB" resolve="ConnectionStyle" />
           </node>
           <node concept="3EZMnI" id="35$gPpxbZZM" role="3EZMnx">
             <node concept="VPM3Z" id="35$gPpxbZZN" role="3F10Kt" />
@@ -478,7 +478,7 @@
     <property role="3GE5qa" value="patterns" />
     <ref role="1XX52x" to="lbo2:7BYuSCFMYuD" resolve="OrEntity" />
     <node concept="2ZK4vF" id="2ccN23o9ouu" role="2wV5jI">
-      <ref role="1k5W1q" to="g35p:65LrkjiZjs5" resolve="GSNShapeStyle" />
+      <ref role="1k5W1q" to="xnej:65LrkjiZjs5" resolve="ShapeStyle" />
       <node concept="2xQOud" id="7TjUbLQaERb" role="2xQQDV">
         <ref role="2xQOue" node="7BYuSCFMZl0" resolve="OrDiamond" />
         <node concept="1Pxb5l" id="7TjUbLQaERj" role="1xbcaF" />
