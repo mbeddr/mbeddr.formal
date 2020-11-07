@@ -119,7 +119,7 @@
   </registry>
   <node concept="1VB52S" id="3jaLROLvqLi">
     <property role="TrG5h" value="Argument Over Hazards" />
-    <property role="3GE5qa" value="Top Level" />
+    <property role="3GE5qa" value="ISO 26262 GSN Patterns" />
     <node concept="2vn7WC" id="3jaLROLvqNF" role="2vn1q5">
       <property role="TrG5h" value="G01" />
       <property role="8uqrb" value="true" />
@@ -185,7 +185,7 @@
     </node>
   </node>
   <node concept="1VB52S" id="WKGDODTVIW">
-    <property role="3GE5qa" value="Top Level" />
+    <property role="3GE5qa" value="ISO 26262 GSN Patterns" />
     <property role="TrG5h" value="Argument Over Safety Related Functions" />
     <node concept="2vn7WC" id="7Y21hZB9LwE" role="2vn1q5">
       <property role="TrG5h" value="G01" />
@@ -393,7 +393,7 @@
   </node>
   <node concept="1VB52S" id="66sW2d$FiRa">
     <property role="TrG5h" value="High-level Safety Argumentation" />
-    <property role="3GE5qa" value="Top Level" />
+    <property role="3GE5qa" value="ISO 26262 GSN Patterns" />
     <node concept="37mRI7" id="66sW2d$FiUe" role="lGtFl">
       <node concept="37mRIm" id="66sW2d$FiUf" role="37mRID">
         <property role="37mO49" value="7033760752849464923" />
@@ -896,7 +896,7 @@
     </node>
   </node>
   <node concept="1VB52S" id="1QoXEbd_xJ1">
-    <property role="3GE5qa" value="Top Level" />
+    <property role="3GE5qa" value="ISO 26262 GSN Patterns" />
     <property role="TrG5h" value="Functional Safety Argumentation Pattern" />
     <node concept="37mRI7" id="1QoXEbd_xKn" role="lGtFl">
       <node concept="37mRIm" id="1QoXEbd_xKo" role="37mRID">
@@ -2198,7 +2198,7 @@
     </node>
   </node>
   <node concept="1VB52S" id="1S7Fn2AJ663">
-    <property role="3GE5qa" value="Top Level" />
+    <property role="3GE5qa" value="ISO 26262 GSN Patterns" />
     <property role="TrG5h" value="Technical Safety Argumentation Pattern" />
     <node concept="37mRI7" id="1S7Fn2AJ664" role="lGtFl">
       <node concept="37mRIm" id="1S7Fn2AJ665" role="37mRID">
@@ -4032,7 +4032,7 @@
   </node>
   <node concept="1VB52S" id="66sW2d$Fk0e">
     <property role="TrG5h" value="Risk-based Argumentation" />
-    <property role="3GE5qa" value="Top Level" />
+    <property role="3GE5qa" value="ISO 26262 GSN Patterns" />
     <node concept="37mRI7" id="66sW2d$Fk5l" role="lGtFl">
       <node concept="37mRIm" id="66sW2d$Fk5m" role="37mRID">
         <property role="37mO49" value="7033760752849469703" />
@@ -5086,7 +5086,7 @@
     </node>
   </node>
   <node concept="1VB52S" id="Zbnj3aOW4n">
-    <property role="3GE5qa" value="Top Level" />
+    <property role="3GE5qa" value="ISO 26262 GSN Patterns" />
     <property role="TrG5h" value="Alternative Argumentation Strategies" />
     <node concept="2vn7WC" id="Zbnj3aOW5k" role="2vn1q5">
       <property role="TrG5h" value="G01" />

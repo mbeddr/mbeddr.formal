@@ -68,7 +68,6 @@
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
-      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -231,19 +230,12 @@
           <property role="3F0ifm" value="Hazard Mitigation Goal:" />
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
-        <node concept="l2Vlx" id="65Lrkjj21wf" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="41_NtXJuTJ$" role="3EZMnx">
-        <node concept="VPM3Z" id="41_NtXJuTJ_" role="3F10Kt" />
-        <node concept="3XFhqQ" id="41_NtXJuTJO" role="3EZMnx" />
-        <node concept="3F0A7n" id="41_NtXJuTJB" role="3EZMnx">
+        <node concept="3F0A7n" id="2K98XVjThjm" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
-        <node concept="l2Vlx" id="41_NtXJuTJC" role="2iSdaV" />
+        <node concept="l2Vlx" id="65Lrkjj21wf" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="41_NtXJuTJT" role="3EZMnx" />
       <node concept="3F1sOY" id="65Lrkjj21wi" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
@@ -423,20 +415,13 @@
           <property role="3F0ifm" value="Argument over Hazards Strategy:" />
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
+        <node concept="3F0A7n" id="2K98XVjThl9" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
         <node concept="l2Vlx" id="3Ngc4zVhAzp" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="3Ngc4zVhAzr" role="2iSdaV" />
-      <node concept="3EZMnI" id="41_NtXJuJl7" role="3EZMnx">
-        <node concept="VPM3Z" id="41_NtXJuJl9" role="3F10Kt" />
-        <node concept="3XFhqQ" id="41_NtXJuJlo" role="3EZMnx" />
-        <node concept="3F0A7n" id="41_NtXJuJlu" role="3EZMnx">
-          <property role="1O74Pk" value="true" />
-          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="l2Vlx" id="41_NtXJuJlc" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="41_NtXJuTIu" role="3EZMnx" />
       <node concept="3F1sOY" id="3Ngc4zVhAzt" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
@@ -501,19 +486,12 @@
           <property role="3F0ifm" value="Hazard Substitution Goal:" />
           <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
         </node>
-        <node concept="l2Vlx" id="1Y8zh0lZjT2" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="41_NtXJuTKZ" role="3EZMnx">
-        <node concept="VPM3Z" id="41_NtXJuTL0" role="3F10Kt" />
-        <node concept="3XFhqQ" id="41_NtXJuTLf" role="3EZMnx" />
-        <node concept="3F0A7n" id="41_NtXJuTL2" role="3EZMnx">
+        <node concept="3F0A7n" id="2K98XVjTh8g" role="3EZMnx">
           <property role="1O74Pk" value="true" />
-          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="l2Vlx" id="41_NtXJuTL3" role="2iSdaV" />
+        <node concept="l2Vlx" id="1Y8zh0lZjT2" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="41_NtXJuTLk" role="3EZMnx" />
       <node concept="3F1sOY" id="1Y8zh0lZjT3" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />

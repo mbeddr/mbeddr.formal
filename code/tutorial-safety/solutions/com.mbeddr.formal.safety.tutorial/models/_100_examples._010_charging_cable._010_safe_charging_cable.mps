@@ -351,7 +351,7 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
         <property id="2392944874760387687" name="controlability" index="1a6$V8" />
         <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
         <property id="2392944874760387682" name="severity" index="1a6$Vd" />
@@ -421,7 +421,7 @@
     </language>
   </registry>
   <node concept="1QQeGf" id="2VIqKfEJe0_">
-    <property role="TrG5h" value="_010_ladekabel_functional_requirements" />
+    <property role="TrG5h" value="_004_ladekabel_functional_requirements" />
     <property role="3GE5qa" value="_000_item_definition" />
     <node concept="0lhDl" id="66sW2d$FcNx" role="1QQeBF">
       <property role="0lsPA" value="FR01" />
@@ -472,7 +472,7 @@
           <node concept="0nzK2" id="4cUeGolY8yh" role="1QQeAV">
             <node concept="19SGf9" id="4cUeGolY8yj" role="0nzdz">
               <node concept="19SUe$" id="4cUeGolY8yk" role="19SJt6">
-                <property role="19SUeA" value="Utilizing the power and protective earth conductors from interface mains to interface EV together with a control pilot function [...] in-cable control box" />
+                <property role="19SUeA" value="Utilizing the power and protective earth conductors from interface mains to interface EV &#10;together with a control pilot function [...] in-cable control box" />
               </node>
             </node>
           </node>
@@ -494,7 +494,7 @@
         <node concept="0nzK2" id="2VIqKfEJeCj" role="1QQeAV">
           <node concept="19SGf9" id="2VIqKfEJeCk" role="0nzdz">
             <node concept="19SUe$" id="2VIqKfEJeCl" role="19SJt6">
-              <property role="19SUeA" value="The cable shall connect the EV to the a.c. supply network utilizing standardized socket-outlets, single-phase [...], and utilizing the power and protective earth conductors together with a control pilot function [...] in-cable control box." />
+              <property role="19SUeA" value="The cable shall connect the EV to the a.c. supply network utilizing standardized socket-outlets, &#10;single-phase [...], and utilizing the power and protective earth conductors together with &#10;a control pilot function [...] in-cable control box." />
             </node>
           </node>
         </node>
@@ -513,7 +513,7 @@
         <node concept="0nzK2" id="2VIqKfEJeDa" role="1QQeAV">
           <node concept="19SGf9" id="2VIqKfEJeDb" role="0nzdz">
             <node concept="19SUe$" id="2VIqKfEJeDc" role="19SJt6">
-              <property role="19SUeA" value="The cable shall contain a mechanical switching device designed to make, carry and break currents under normal service conditions and to cause the opening of the contacts when the residual current attains a given value under specified conditions" />
+              <property role="19SUeA" value="The cable shall contain a mechanical switching device designed to make, carry and break currents &#10;under normal service conditions and to cause the opening of the contacts when the residual current &#10;attains a given value under specified conditions" />
             </node>
           </node>
         </node>
@@ -3028,7 +3028,7 @@
     </node>
   </node>
   <node concept="2HdtXS" id="6bDIMKp8huP">
-    <property role="TrG5h" value="_000_state_model" />
+    <property role="TrG5h" value="_002_state_model" />
     <property role="3GE5qa" value="_000_item_definition" />
     <node concept="2Hdtz0" id="6bDIMKp8huR" role="2HcuB8">
       <property role="TrG5h" value="charging_cable" />
@@ -4823,7 +4823,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="6bDIMKp8B9J">
-    <property role="TrG5h" value="_000_ladekabel_system_requirements" />
+    <property role="TrG5h" value="_003_ladekabel_system_requirements" />
     <property role="3GE5qa" value="_000_item_definition" />
     <node concept="0lhDl" id="6bDIMKp8B9K" role="1QQeBF">
       <property role="0lsPA" value="SR01" />
@@ -5176,7 +5176,7 @@
         <node concept="0nzK2" id="3JuqBheLOtg" role="1QQeAV">
           <node concept="19SGf9" id="3JuqBheLOti" role="0nzdz">
             <node concept="19SUe$" id="3JuqBheLOtj" role="19SJt6">
-              <property role="19SUeA" value="The in-cable control box shall receive information about the temperature at the ends of the cable, the voltage and the current intensity " />
+              <property role="19SUeA" value="The in-cable control box shall receive information about the temperature at &#10;the ends of the cable, the voltage and the current intensity " />
             </node>
           </node>
         </node>
@@ -7141,7 +7141,7 @@
     </node>
   </node>
   <node concept="2HdtXS" id="7BYuSCF$ivt">
-    <property role="TrG5h" value="_000_case_study_description_old" />
+    <property role="TrG5h" value="_001_case_study_description" />
     <property role="3GE5qa" value="_000_item_definition" />
     <node concept="2SQmWS" id="7BYuSCF$ivu" role="2HcuB8" />
     <node concept="3I9x2T" id="7BYuSCF$ivy" role="2HcuB8">
@@ -7940,7 +7940,7 @@
             <node concept="gqqVs" id="1XXvHs0b9aL" role="37mO4d">
               <property role="gqqTZ" value="262.0" />
               <property role="gqqTW" value="216.95652301908422" />
-              <property role="gqqTX" value="274.0" />
+              <property role="gqqTX" value="307.0" />
               <property role="gqqTy" value="90.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -7950,7 +7950,7 @@
             <node concept="gqqVs" id="1XXvHs0b9aN" role="37mO4d">
               <property role="gqqTZ" value="944.913043421374" />
               <property role="gqqTW" value="210.95652301908416" />
-              <property role="gqqTX" value="166.0" />
+              <property role="gqqTX" value="168.0" />
               <property role="gqqTy" value="89.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -7960,7 +7960,7 @@
             <node concept="gqqVs" id="1XXvHs0b9aP" role="37mO4d">
               <property role="gqqTZ" value="900.913043421374" />
               <property role="gqqTW" value="383.9565230190842" />
-              <property role="gqqTX" value="138.0" />
+              <property role="gqqTX" value="144.0" />
               <property role="gqqTy" value="43.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -7970,7 +7970,7 @@
             <node concept="gqqVs" id="1XXvHs0b9aR" role="37mO4d">
               <property role="gqqTZ" value="1074.913043421374" />
               <property role="gqqTW" value="382.9565230190842" />
-              <property role="gqqTX" value="136.0" />
+              <property role="gqqTX" value="144.0" />
               <property role="gqqTy" value="73.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -8094,7 +8094,7 @@
             <node concept="gqqVs" id="1XXvHs0b9br" role="37mO4d">
               <property role="gqqTZ" value="902.9130434213738" />
               <property role="gqqTW" value="509.78073015303227" />
-              <property role="gqqTX" value="151.0" />
+              <property role="gqqTX" value="189.0" />
               <property role="gqqTy" value="123.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -8122,7 +8122,7 @@
             <node concept="gqqVs" id="1XXvHs0b9bz" role="37mO4d">
               <property role="gqqTZ" value="581.0" />
               <property role="gqqTW" value="509.7807301530322" />
-              <property role="gqqTX" value="221.0" />
+              <property role="gqqTX" value="229.0" />
               <property role="gqqTy" value="58.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -8328,7 +8328,7 @@
             <node concept="gqqVs" id="2UkUklpZvE9" role="37mO4d">
               <property role="gqqTZ" value="293.0" />
               <property role="gqqTW" value="509.7807301530322" />
-              <property role="gqqTX" value="199.0" />
+              <property role="gqqTX" value="219.0" />
               <property role="gqqTy" value="105.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -8472,7 +8472,7 @@
             <node concept="gqqVs" id="3TSGpjyNOuA" role="37mO4d">
               <property role="gqqTZ" value="636.0" />
               <property role="gqqTW" value="359.0" />
-              <property role="gqqTX" value="199.0" />
+              <property role="gqqTX" value="219.0" />
               <property role="gqqTy" value="105.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
@@ -8658,7 +8658,7 @@
               <property role="19SUeA" value="System's assumptions about its operating context&#10;as defined in " />
             </node>
             <node concept="27blvF" id="1XXvHs0balx" role="19SJt6">
-              <ref role="27blvA" node="6bDIMKp8B9J" resolve="_000_ladekabel_system_requirements" />
+              <ref role="27blvA" node="6bDIMKp8B9J" resolve="_003_ladekabel_system_requirements" />
             </node>
             <node concept="19SUe$" id="1XXvHs0baly" role="19SJt6" />
           </node>
@@ -8687,7 +8687,7 @@
               <property role="19SUeA" value="System defined in&#10;" />
             </node>
             <node concept="27blvF" id="1XXvHs0balJ" role="19SJt6">
-              <ref role="27blvA" node="2VIqKfEJe0_" resolve="_010_ladekabel_functional_requirements" />
+              <ref role="27blvA" node="2VIqKfEJe0_" resolve="_004_ladekabel_functional_requirements" />
             </node>
             <node concept="19SUe$" id="1XXvHs0balK" role="19SJt6">
               <property role="19SUeA" value="&#10; is sufficiently safe &#10; in the given operating context" />
@@ -8734,7 +8734,7 @@
             <node concept="gqqVs" id="1XXvHs0banS" role="37mO4d">
               <property role="gqqTZ" value="256.95840141948696" />
               <property role="gqqTW" value="316.6256127753827" />
-              <property role="gqqTX" value="200.0" />
+              <property role="gqqTX" value="217.0" />
               <property role="gqqTy" value="80.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
