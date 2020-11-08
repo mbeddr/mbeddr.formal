@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,11 +13,12 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
-    <import index="wxa0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.apache.commons.codec.digest(com.mpsbasics.docx4j.lib/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
+    <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" />
+    <import index="6kvn" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.datatype(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -502,20 +502,37 @@
     <node concept="2YIFZL" id="2QkJsC6G0gk" role="jymVt">
       <property role="TrG5h" value="computeHashCode" />
       <node concept="3clFbS" id="2QkJsC6G0gn" role="3clF47">
-        <node concept="3cpWs8" id="2QkJsC6FMD4" role="3cqZAp">
-          <node concept="3cpWsn" id="2QkJsC6FMD5" role="3cpWs9">
-            <property role="TrG5h" value="is" />
-            <node concept="3uibUv" id="2QkJsC6FM_x" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
+        <node concept="3cpWs8" id="GA19r16O$t" role="3cqZAp">
+          <node concept="3cpWsn" id="GA19r16O$u" role="3cpWs9">
+            <property role="TrG5h" value="md" />
+            <node concept="3uibUv" id="GA19r16O0z" role="1tU5fm">
+              <ref role="3uigEE" to="jgjw:~MessageDigest" resolve="MessageDigest" />
             </node>
-            <node concept="2YIFZM" id="2QkJsC6FMD6" role="33vP2m">
-              <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-              <ref role="37wK5l" to="eoo2:~Files.newInputStream(java.nio.file.Path,java.nio.file.OpenOption...)" resolve="newInputStream" />
-              <node concept="2YIFZM" id="2QkJsC6FMD7" role="37wK5m">
-                <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                <node concept="37vLTw" id="2QkJsC6G0Ct" role="37wK5m">
-                  <ref role="3cqZAo" node="2QkJsC6G0gQ" resolve="path" />
+            <node concept="2YIFZM" id="GA19r16O$v" role="33vP2m">
+              <ref role="37wK5l" to="jgjw:~MessageDigest.getInstance(java.lang.String)" resolve="getInstance" />
+              <ref role="1Pybhc" to="jgjw:~MessageDigest" resolve="MessageDigest" />
+              <node concept="Xl_RD" id="GA19r16O$w" role="37wK5m">
+                <property role="Xl_RC" value="MD5" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="GA19r16OMF" role="3cqZAp">
+          <node concept="2OqwBi" id="GA19r16P5C" role="3clFbG">
+            <node concept="37vLTw" id="GA19r16OMD" role="2Oq$k0">
+              <ref role="3cqZAo" node="GA19r16O$u" resolve="md" />
+            </node>
+            <node concept="liA8E" id="GA19r16PgA" role="2OqNvi">
+              <ref role="37wK5l" to="jgjw:~MessageDigest.update(byte[])" resolve="update" />
+              <node concept="2YIFZM" id="GA19r16R7f" role="37wK5m">
+                <ref role="37wK5l" to="eoo2:~Files.readAllBytes(java.nio.file.Path)" resolve="readAllBytes" />
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <node concept="2YIFZM" id="GA19r16Rd5" role="37wK5m">
+                  <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                  <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                  <node concept="37vLTw" id="GA19r16Rd6" role="37wK5m">
+                    <ref role="3cqZAo" node="2QkJsC6G0gQ" resolve="path" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -525,11 +542,21 @@
           <node concept="3cpWsn" id="2QkJsC6FPoF" role="3cpWs9">
             <property role="TrG5h" value="md5Hex" />
             <node concept="17QB3L" id="2QkJsC6FPqo" role="1tU5fm" />
-            <node concept="2YIFZM" id="2QkJsC6FPoG" role="33vP2m">
-              <ref role="37wK5l" to="wxa0:~DigestUtils.md5Hex(java.io.InputStream)" resolve="md5Hex" />
-              <ref role="1Pybhc" to="wxa0:~DigestUtils" resolve="DigestUtils" />
-              <node concept="37vLTw" id="2QkJsC6FPoH" role="37wK5m">
-                <ref role="3cqZAo" node="2QkJsC6FMD5" resolve="is" />
+            <node concept="2OqwBi" id="6J2m9UdG_$A" role="33vP2m">
+              <node concept="2YIFZM" id="6J2m9UdG_ti" role="2Oq$k0">
+                <ref role="37wK5l" to="33ny:~Base64.getEncoder()" resolve="getEncoder" />
+                <ref role="1Pybhc" to="33ny:~Base64" resolve="Base64" />
+              </node>
+              <node concept="liA8E" id="6J2m9UdG_EI" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Base64$Encoder.encodeToString(byte[])" resolve="encodeToString" />
+                <node concept="2OqwBi" id="GA19r16RD2" role="37wK5m">
+                  <node concept="37vLTw" id="GA19r16RvU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="GA19r16O$u" resolve="md" />
+                  </node>
+                  <node concept="liA8E" id="GA19r16RJR" role="2OqNvi">
+                    <ref role="37wK5l" to="jgjw:~MessageDigest.digest()" resolve="digest" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -546,8 +573,8 @@
         <property role="TrG5h" value="path" />
         <node concept="17QB3L" id="2QkJsC6G0i9" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="2QkJsC6G3z9" role="Sfmx6">
-        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+      <node concept="3uibUv" id="GA19r16vRN" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
     </node>
     <node concept="2tJIrI" id="4MlXWpxaFkv" role="jymVt" />
@@ -597,10 +624,10 @@
         <node concept="3J1_TO" id="2QkJsC6G8p9" role="3cqZAp">
           <node concept="3uVAMA" id="2QkJsC6G8rT" role="1zxBo5">
             <node concept="XOnhg" id="2QkJsC6G8rU" role="1zc67B">
-              <property role="TrG5h" value="ioe" />
+              <property role="TrG5h" value="e" />
               <node concept="nSUau" id="2QkJsC6G8rV" role="1tU5fm">
-                <node concept="3uibUv" id="2QkJsC6G8tT" role="nSUat">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                <node concept="3uibUv" id="GA19r16waP" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                 </node>
               </node>
             </node>
@@ -611,7 +638,7 @@
                   <property role="Xl_RC" value="error while reading the external document" />
                 </node>
                 <node concept="37vLTw" id="2QkJsC6G8xL" role="9lYJj">
-                  <ref role="3cqZAo" node="2QkJsC6G8rU" resolve="ioe" />
+                  <ref role="3cqZAo" node="2QkJsC6G8rU" resolve="e" />
                 </node>
               </node>
             </node>
@@ -619,33 +646,58 @@
           <node concept="3clFbS" id="2QkJsC6G8pb" role="1zxBo7">
             <node concept="3clFbJ" id="2QkJsC6FKDW" role="3cqZAp">
               <node concept="3clFbS" id="2QkJsC6FKDY" role="3clFbx">
-                <node concept="3cpWs8" id="4MlXWpxaFVg" role="3cqZAp">
-                  <node concept="3cpWsn" id="4MlXWpxaFVh" role="3cpWs9">
-                    <property role="TrG5h" value="md5Hex" />
-                    <node concept="17QB3L" id="4MlXWpxaFVi" role="1tU5fm" />
-                    <node concept="2YIFZM" id="2QkJsC6G48Z" role="33vP2m">
-                      <ref role="1Pybhc" node="2QkJsC6G0dk" resolve="ExternalEvidenceDocumentChecker" />
-                      <ref role="37wK5l" node="2QkJsC6G0gk" resolve="computeHashCode" />
-                      <node concept="37vLTw" id="2QkJsC6G4aS" role="37wK5m">
-                        <ref role="3cqZAo" node="2QkJsC6FKAP" resolve="canonicalPath" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="1QHqEF" id="4MlXWpxa8_o" role="3cqZAp">
                   <node concept="1QHqEC" id="4MlXWpxa8_q" role="1QHqEI">
                     <node concept="3clFbS" id="4MlXWpxa8_s" role="1bW5cS">
-                      <node concept="3clFbF" id="2QkJsC6G9us" role="3cqZAp">
-                        <node concept="37vLTI" id="2QkJsC6GaTW" role="3clFbG">
-                          <node concept="37vLTw" id="2QkJsC6GaZF" role="37vLTx">
-                            <ref role="3cqZAo" node="4MlXWpxaFVh" resolve="md5Hex" />
-                          </node>
-                          <node concept="2OqwBi" id="2QkJsC6G9AC" role="37vLTJ">
-                            <node concept="37vLTw" id="4MlXWpxaGNk" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4MlXWpxaF8b" resolve="node" />
+                      <node concept="3J1_TO" id="GA19r16MaS" role="3cqZAp">
+                        <node concept="3uVAMA" id="GA19r16MdG" role="1zxBo5">
+                          <node concept="XOnhg" id="GA19r16MdH" role="1zc67B">
+                            <property role="TrG5h" value="e" />
+                            <node concept="nSUau" id="GA19r16MdI" role="1tU5fm">
+                              <node concept="3uibUv" id="GA19r16Mg9" role="nSUat">
+                                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                              </node>
                             </node>
-                            <node concept="3TrcHB" id="2QkJsC6GaAL" role="2OqNvi">
-                              <ref role="3TsBF5" to="s9pq:2QkJsC6FFwX" resolve="hashCode" />
+                          </node>
+                          <node concept="3clFbS" id="GA19r16MdJ" role="1zc67A">
+                            <node concept="2xdQw9" id="GA19r16MV8" role="3cqZAp">
+                              <property role="2xdLsb" value="gZ5fh_4/error" />
+                              <node concept="Xl_RD" id="GA19r16MV9" role="9lYJi">
+                                <property role="Xl_RC" value="error while reading the external document" />
+                              </node>
+                              <node concept="37vLTw" id="GA19r16MVa" role="9lYJj">
+                                <ref role="3cqZAo" node="GA19r16MdH" resolve="e" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="GA19r16MaU" role="1zxBo7">
+                          <node concept="3cpWs8" id="4MlXWpxaFVg" role="3cqZAp">
+                            <node concept="3cpWsn" id="4MlXWpxaFVh" role="3cpWs9">
+                              <property role="TrG5h" value="md5Hex" />
+                              <node concept="17QB3L" id="4MlXWpxaFVi" role="1tU5fm" />
+                              <node concept="2YIFZM" id="GA19r16MER" role="33vP2m">
+                                <ref role="1Pybhc" node="2QkJsC6G0dk" resolve="ExternalEvidenceDocumentChecker" />
+                                <ref role="37wK5l" node="2QkJsC6G0gk" resolve="computeHashCode" />
+                                <node concept="37vLTw" id="GA19r16MES" role="37wK5m">
+                                  <ref role="3cqZAo" node="2QkJsC6FKAP" resolve="canonicalPath" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="2QkJsC6G9us" role="3cqZAp">
+                            <node concept="37vLTI" id="2QkJsC6GaTW" role="3clFbG">
+                              <node concept="37vLTw" id="GA19r16BzO" role="37vLTx">
+                                <ref role="3cqZAo" node="4MlXWpxaFVh" resolve="md5Hex" />
+                              </node>
+                              <node concept="2OqwBi" id="2QkJsC6G9AC" role="37vLTJ">
+                                <node concept="37vLTw" id="4MlXWpxaGNk" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4MlXWpxaF8b" resolve="node" />
+                                </node>
+                                <node concept="3TrcHB" id="2QkJsC6GaAL" role="2OqNvi">
+                                  <ref role="3TsBF5" to="s9pq:2QkJsC6FFwX" resolve="savedHashCode" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
