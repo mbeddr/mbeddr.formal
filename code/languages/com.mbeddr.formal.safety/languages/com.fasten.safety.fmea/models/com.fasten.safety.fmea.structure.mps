@@ -118,5 +118,16 @@
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1TeaL8Rd8Z$">
+    <property role="EcuMT" value="2183730226556866532" />
+    <property role="TrG5h" value="FailureModeReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1TeaL8RdXsr" role="1TKVEi">
+      <property role="IQ2ns" value="2183730226557081371" />
+      <property role="20kJfa" value="failureMode" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="31P83hzF$d$" resolve="FailureModeDefinitionBase" />
+    </node>
+  </node>
 </model>
 

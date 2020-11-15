@@ -40,5 +40,14 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1TeaL8RdXt5">
+    <ref role="1M2myG" to="6k2r:1TeaL8Rd8Z$" resolve="FailureModeReference" />
+    <node concept="1N5Pfh" id="1TeaL8RdXt6" role="1Mr941">
+      <ref role="1N5Vy1" to="6k2r:1TeaL8RdXsr" resolve="failureMode" />
+      <node concept="1dDu$B" id="1TeaL8RdXtN" role="1N6uqs">
+        <ref role="1dDu$A" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
+      </node>
+    </node>
+  </node>
 </model>
 

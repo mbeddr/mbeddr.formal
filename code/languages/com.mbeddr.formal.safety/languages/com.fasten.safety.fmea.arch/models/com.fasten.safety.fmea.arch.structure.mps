@@ -188,6 +188,8 @@
     <property role="EcuMT" value="4663111736253957534" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="ComponentFailureEffectsDefinition" />
+    <property role="34LRSv" value="component failure effects" />
+    <property role="R4oN_" value="failure effects of a component" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="42QGQFVnOm$" role="PzmwI">
       <ref role="PrY4T" node="42QGQFVnclm" resolve="IDesignFMEARootContent" />
