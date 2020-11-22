@@ -859,7 +859,7 @@
   <node concept="24kQdi" id="2ccN23o9otA">
     <ref role="1XX52x" to="py52:3GRi4m$qNtH" resolve="Goal" />
     <node concept="2ZK4vF" id="2ccN23o9ouu" role="2wV5jI">
-      <ref role="1k5W1q" to="xnej:65LrkjiZjs5" resolve="ShapeStyle" />
+      <ref role="1k5W1q" to="xnej:50UR0qsbFda" resolve="ShapeStyle_Dynamic" />
       <node concept="2xQOud" id="7TjUbLQaERb" role="2xQQDV">
         <ref role="2xQOue" node="7TjUbLQ8uDG" resolve="GoalRectangle" />
         <node concept="1Pxb5l" id="7TjUbLQaERj" role="1xbcaF" />
@@ -920,7 +920,7 @@
   <node concept="24kQdi" id="2ccN23oa2IB">
     <ref role="1XX52x" to="py52:3GRi4m$rlnF" resolve="Strategy" />
     <node concept="2ZK4vF" id="2ccN23oa2J4" role="2wV5jI">
-      <ref role="1k5W1q" to="xnej:65LrkjiZjs5" resolve="ShapeStyle" />
+      <ref role="1k5W1q" to="xnej:50UR0qsbFda" resolve="ShapeStyle_Dynamic" />
       <node concept="2xQOud" id="7TjUbLQa$U1" role="2xQQDV">
         <ref role="2xQOue" node="7TjUbLQ9xzM" resolve="StrategyPolygon" />
         <node concept="1Pxb5l" id="7TjUbLQaEZn" role="1xbcaF" />
@@ -1004,6 +1004,9 @@
         <property role="Vb096" value="6cZGtrcKCoS/black" />
       </node>
     </node>
+    <node concept="PMmxH" id="48_A4oY367v" role="6VMZX">
+      <ref role="PMmxG" node="48_A4oY35Xi" resolve="ConnectionAttributes" />
+    </node>
   </node>
   <node concept="24kQdi" id="2ccN23odQbM">
     <property role="3GE5qa" value="connections" />
@@ -1056,6 +1059,9 @@
       <node concept="3C0NmK" id="3Ngc4zViiBO" role="3F10Kt">
         <property role="Vb096" value="6cZGtrcKCoS/black" />
       </node>
+    </node>
+    <node concept="PMmxH" id="48_A4oY36fN" role="6VMZX">
+      <ref role="PMmxG" node="48_A4oY35Xi" resolve="ConnectionAttributes" />
     </node>
   </node>
   <node concept="312cEu" id="7kF4CZH$k2Q">
@@ -10708,6 +10714,30 @@
     <node concept="3Tm1VV" id="48_A4oXWgEo" role="1B3o_S" />
     <node concept="3uibUv" id="48_A4oXWWOh" role="1zkMxy">
       <ref role="3uigEE" to="rgfa:~DefaultTreeCellRenderer" resolve="DefaultTreeCellRenderer" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="48_A4oY35Xi">
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ConnectionAttributes" />
+    <ref role="1XX52x" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+    <node concept="3EZMnI" id="48_A4oY35Yp" role="2wV5jI">
+      <node concept="3EZMnI" id="48_A4oY35Yq" role="3EZMnx">
+        <node concept="VPM3Z" id="48_A4oY35Yr" role="3F10Kt" />
+        <node concept="3F0ifn" id="48_A4oY35Ys" role="3EZMnx">
+          <property role="3F0ifm" value="Attributes:" />
+        </node>
+        <node concept="l2Vlx" id="48_A4oY35Yt" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="48_A4oY35Yu" role="3EZMnx">
+        <node concept="VPM3Z" id="48_A4oY35Yv" role="3F10Kt" />
+        <node concept="3XFhqQ" id="48_A4oY35Yw" role="3EZMnx" />
+        <node concept="3F2HdR" id="48_A4oY35Yx" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:48_A4oY2iAJ" resolve="attributes" />
+          <node concept="2iRkQZ" id="48_A4oY35Yy" role="2czzBx" />
+        </node>
+        <node concept="l2Vlx" id="48_A4oY35Yz" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="48_A4oY35Y$" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -6,8 +6,9 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -36,7 +37,7 @@
     <property role="TrG5h" value="Confidence" />
     <property role="34LRSv" value="confidence" />
     <property role="R4oN_" value="confidence attribute" />
-    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureElementAttributeBase" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     <node concept="1TJgyi" id="2QkJsC6ubW1" role="1TKVEl">
       <property role="IQ2nx" value="3284458703649554177" />
       <property role="TrG5h" value="belief" />
@@ -46,6 +47,16 @@
       <property role="IQ2nx" value="3284458703649554182" />
       <property role="TrG5h" value="certainty" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="48_A4oY40ha">
+    <property role="EcuMT" value="4766383208097907786" />
+    <property role="TrG5h" value="Weight" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyi" id="48_A4oY40ig" role="1TKVEl">
+      <property role="IQ2nx" value="4766383208097907856" />
+      <property role="TrG5h" value="weight" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
     </node>
   </node>
 </model>

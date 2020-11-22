@@ -161,7 +161,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attributes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureElementAttributeBase" />
+      <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     </node>
     <node concept="PrWs8" id="3GRi4m$rb5M" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -245,6 +245,13 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="48_A4oY2iAJ" role="1TKVEi">
+      <property role="IQ2ns" value="4766383208097458607" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    </node>
     <node concept="1TJgyj" id="2ccN23odOzl" role="1TKVEi">
       <property role="IQ2ns" value="2525617932486527189" />
       <property role="20kJfa" value="source" />
@@ -349,7 +356,7 @@
   <node concept="1TIwiD" id="6dwPixfdDSd">
     <property role="EcuMT" value="7160957776623476237" />
     <property role="3GE5qa" value="base" />
-    <property role="TrG5h" value="GoalStructureElementAttributeBase" />
+    <property role="TrG5h" value="GoalStructureAttributeBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
