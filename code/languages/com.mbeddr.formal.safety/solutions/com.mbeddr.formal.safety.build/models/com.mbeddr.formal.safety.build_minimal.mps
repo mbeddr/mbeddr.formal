@@ -2764,6 +2764,11 @@
             <ref role="3bR37D" to="90a9:48DYfEtkkjU" resolve="de.itemis.mps.editor.collapsible" />
           </node>
         </node>
+        <node concept="1SiIV0" id="48_A4oXWgfR" role="3bR37C">
+          <node concept="3bR9La" id="48_A4oXWgfS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6hyv0iVPlGu" role="2G$12L">
         <property role="BnDLt" value="true" />
