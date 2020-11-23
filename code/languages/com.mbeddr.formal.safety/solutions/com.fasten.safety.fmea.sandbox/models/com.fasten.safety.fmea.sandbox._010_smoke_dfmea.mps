@@ -143,10 +143,41 @@
         </node>
       </node>
     </node>
+    <node concept="2VURXa" id="o0_W81kiyE" role="1POhhj" />
+    <node concept="2VUHfc" id="o0_W81kiy3" role="1POhhj">
+      <ref role="2VUHf6" node="42QGQFVn3Bd" resolve="Sender" />
+      <node concept="2VUHfq" id="o0_W81kiy4" role="2VUBrq">
+        <property role="TrG5h" value="noisy" />
+        <node concept="19SGf9" id="o0_W81kiy5" role="2VUHfi">
+          <node concept="19SUe$" id="o0_W81kiy6" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="2VUHfq" id="o0_W81kiy7" role="2VUBrq">
+        <property role="TrG5h" value="too fast" />
+        <node concept="19SGf9" id="o0_W81kiy8" role="2VUHfi">
+          <node concept="19SUe$" id="o0_W81kiy9" role="19SJt6" />
+        </node>
+      </node>
+    </node>
     <node concept="2VURXa" id="42QGQFVnOld" role="1POhhj" />
     <node concept="2VURXa" id="42QGQFVnOlm" role="1POhhj" />
     <node concept="1PLMAg" id="42QGQFVmZGJ" role="1POhhj">
       <ref role="1POnuR" node="42QGQFVn3Fg" resolve="SenderReceiverSystem" />
+      <node concept="1PLGxJ" id="o0_W81kixT" role="1PLElB">
+        <ref role="1PLGwE" node="42QGQFVn3FJ" resolve="s" />
+        <node concept="1PLKG7" id="o0_W81kiy1" role="1PLCo$">
+          <ref role="1jQAtN" node="o0_W81kiy4" resolve="noisy" />
+          <node concept="1PNyZM" id="o0_W81kizc" role="1PLCoy">
+            <ref role="2VPQEx" node="31P83hzGOo0" resolve="message altered" />
+          </node>
+        </node>
+        <node concept="1PLKG7" id="o0_W81kizi" role="1PLCo$">
+          <ref role="1jQAtN" node="o0_W81kiy7" resolve="too fast" />
+          <node concept="1PNyZM" id="o0_W81kizm" role="1PLCoy">
+            <ref role="2VPQEx" node="42QGQFVotAu" resolve="message loss" />
+          </node>
+        </node>
+      </node>
       <node concept="1PLGxJ" id="42QGQFVn3I8" role="1PLElB">
         <ref role="1PLGwE" node="42QGQFVn3FY" resolve="r" />
         <node concept="1PLKG7" id="31P83hzGOnQ" role="1PLCo$">
