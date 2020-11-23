@@ -79,5 +79,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="o0_W81kdx_">
+    <ref role="1M2myG" to="6oah:48_A4oY40ha" resolve="Weight" />
+    <node concept="9S07l" id="o0_W81kdxA" role="9Vyp8">
+      <node concept="3clFbS" id="o0_W81kdxB" role="2VODD2">
+        <node concept="3clFbF" id="o0_W81kd_x" role="3cqZAp">
+          <node concept="2OqwBi" id="o0_W81keaH" role="3clFbG">
+            <node concept="2OqwBi" id="o0_W81kdIx" role="2Oq$k0">
+              <node concept="nLn13" id="o0_W81kd_w" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="o0_W81kdT6" role="2OqNvi">
+                <node concept="1xMEDy" id="o0_W81kdT8" role="1xVPHs">
+                  <node concept="chp4Y" id="o0_W81kdX0" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="o0_W81kev9" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="o0_W81keiQ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
