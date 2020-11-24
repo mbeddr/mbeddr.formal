@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_functions._030_safe_emergency_break)">
+<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_students_lab._030_safe_emergency_break)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
@@ -10,8 +10,8 @@
   </languages>
   <imports>
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
-    <import index="ee4e" ref="r:6df6dea3-0ed6-4204-928b-52b619b721ef(_100_examples._020_adas_functions._020_safe_acc)" />
-    <import index="kau0" ref="r:dd5bd7c0-777e-4df6-8e2d-9a855cc2e96b(_100_examples._020_adas_functions._010_safe_lane_keeping)" />
+    <import index="ee4e" ref="r:6df6dea3-0ed6-4204-928b-52b619b721ef(_100_examples._020_adas_students_lab._020_safe_acc)" />
+    <import index="kau0" ref="r:dd5bd7c0-777e-4df6-8e2d-9a855cc2e96b(_100_examples._020_adas_students_lab._010_safe_lane_keeping)" />
   </imports>
   <registry>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
@@ -318,7 +318,7 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
         <property id="2392944874760387687" name="controlability" index="1a6$V8" />
         <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
         <property id="2392944874760387682" name="severity" index="1a6$Vd" />
