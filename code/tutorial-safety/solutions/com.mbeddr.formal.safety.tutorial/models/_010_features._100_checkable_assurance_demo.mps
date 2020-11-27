@@ -278,7 +278,7 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
         <property id="2392944874760387687" name="controlability" index="1a6$V8" />
         <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
         <property id="2392944874760387682" name="severity" index="1a6$Vd" />
@@ -7220,7 +7220,7 @@
           <property role="gqqTZ" value="36.0" />
           <property role="gqqTW" value="369.0" />
           <property role="gqqTX" value="192.0" />
-          <property role="gqqTy" value="90.0" />
+          <property role="gqqTy" value="95.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -7230,7 +7230,7 @@
           <property role="gqqTZ" value="254.0" />
           <property role="gqqTW" value="369.0" />
           <property role="gqqTX" value="166.0" />
-          <property role="gqqTy" value="91.0" />
+          <property role="gqqTy" value="95.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -7240,7 +7240,7 @@
           <property role="gqqTZ" value="437.0" />
           <property role="gqqTW" value="371.0" />
           <property role="gqqTX" value="170.0" />
-          <property role="gqqTy" value="90.0" />
+          <property role="gqqTy" value="95.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -7250,7 +7250,7 @@
           <property role="gqqTZ" value="625.0" />
           <property role="gqqTW" value="375.0" />
           <property role="gqqTX" value="190.0" />
-          <property role="gqqTy" value="78.0" />
+          <property role="gqqTy" value="95.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>

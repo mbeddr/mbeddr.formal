@@ -7,7 +7,7 @@
   <imports />
   <registry>
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
-      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardRef" flags="ng" index="gxbn0">
+      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardConsequence" flags="ng" index="gxbn0">
         <reference id="5082661585110796314" name="hazard" index="gxbni" />
       </concept>
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
@@ -105,7 +105,7 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
         <property id="2392944874760387687" name="controlability" index="1a6$V8" />
         <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
         <property id="2392944874760387682" name="severity" index="1a6$Vd" />
