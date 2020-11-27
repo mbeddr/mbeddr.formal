@@ -93,7 +93,7 @@
     <node concept="3EZMnI" id="6hWVnwA1qcz" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1qcN" role="3EZMnx">
         <property role="3F0ifm" value="Before" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1qd2" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1jgH" resolve="r" />
@@ -109,7 +109,7 @@
     <ref role="1XX52x" to="yyq9:6hWVnwA1qdc" resolve="GloballyScope" />
     <node concept="3F0ifn" id="6hWVnwA1qdf" role="2wV5jI">
       <property role="3F0ifm" value="Globally" />
-      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
     </node>
     <node concept="PMmxH" id="4g_LT4l3Atd" role="6VMZX">
       <ref role="PMmxG" node="6hWVnwAIDw3" resolve="TLScopesImage" />
@@ -147,7 +147,7 @@
     <node concept="3EZMnI" id="6hWVnwA1K6l" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1K6s" role="3EZMnx">
         <property role="3F0ifm" value="After" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K6$" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K6y" resolve="q" />
@@ -164,14 +164,14 @@
     <node concept="3EZMnI" id="6hWVnwA1K6K" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1K6R" role="3EZMnx">
         <property role="3F0ifm" value="Between" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K6X" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K6D" resolve="q" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1K75" role="3EZMnx">
         <property role="3F0ifm" value="and" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K7f" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K6F" resolve="r" />
@@ -188,14 +188,14 @@
     <node concept="3EZMnI" id="6hWVnwA1K7y" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1K7D" role="3EZMnx">
         <property role="3F0ifm" value="it is never the case that" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K7J" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K7u" resolve="p" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1K7R" role="3EZMnx">
         <property role="3F0ifm" value="holds" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K7_" role="2iSdaV" />
       <node concept="PMmxH" id="6BEEv9hsCh4" role="3EZMnx">
@@ -215,14 +215,14 @@
     <node concept="3EZMnI" id="6hWVnwA1K82" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1K83" role="3EZMnx">
         <property role="3F0ifm" value="it is always the case that" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K84" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K7Y" resolve="p" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1K85" role="3EZMnx">
         <property role="3F0ifm" value="holds" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="PMmxH" id="6BEEv9hrYuE" role="3EZMnx">
         <ref role="PMmxG" node="6BEEv9hrMN1" resolve="TimedSpecEditorComponent" />
@@ -264,14 +264,14 @@
     <node concept="3EZMnI" id="6hWVnwA1K8E" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1K8L" role="3EZMnx">
         <property role="3F0ifm" value="transitions to state in which" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K8R" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K8A" resolve="p" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1K8Z" role="3EZMnx">
         <property role="3F0ifm" value="holds occur at most twice" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K8H" role="2iSdaV" />
     </node>
@@ -285,14 +285,14 @@
     <node concept="3EZMnI" id="6hWVnwA1K9d" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1K9k" role="3EZMnx">
         <property role="3F0ifm" value=", then " />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K9q" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K99" resolve="s" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1K9y" role="3EZMnx">
         <property role="3F0ifm" value="previously held" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K9g" role="2iSdaV" />
     </node>
@@ -303,7 +303,7 @@
     <node concept="3EZMnI" id="6hWVnwA1K9I" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1K9P" role="3EZMnx">
         <property role="3F0ifm" value="and is succeeded by " />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1K9V" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K9C" resolve="s" />
@@ -316,7 +316,7 @@
       </node>
       <node concept="3F0ifn" id="6hWVnwA1Kap" role="3EZMnx">
         <property role="3F0ifm" value="previously held" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1K9L" role="2iSdaV" />
     </node>
@@ -327,14 +327,14 @@
     <node concept="3EZMnI" id="6hWVnwA1Ka_" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1KaG" role="3EZMnx">
         <property role="3F0ifm" value=", then" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1KaM" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1Kax" resolve="s" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1KaU" role="3EZMnx">
         <property role="3F0ifm" value="previously held and was preceeded by " />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kba" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1Kay" resolve="t" />
@@ -348,7 +348,7 @@
     <node concept="3EZMnI" id="6hWVnwA1Kbn" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1Kbu" role="3EZMnx">
         <property role="3F0ifm" value=", then" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         <node concept="11L4FC" id="4g_LT4l9M8t" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -358,7 +358,7 @@
       </node>
       <node concept="3F0ifn" id="6hWVnwA1KbG" role="3EZMnx">
         <property role="3F0ifm" value="eventually holds" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1Kbq" role="2iSdaV" />
     </node>
@@ -369,7 +369,7 @@
     <node concept="3EZMnI" id="6hWVnwA1KbT" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1Kc0" role="3EZMnx">
         <property role="3F0ifm" value=", then" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kc6" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1KbM" resolve="s" />
@@ -377,7 +377,7 @@
       <node concept="l2Vlx" id="6hWVnwA1KbW" role="2iSdaV" />
       <node concept="3F0ifn" id="6hWVnwA1Kce" role="3EZMnx">
         <property role="3F0ifm" value="eventually holds and is succeeded by" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kco" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1KbO" resolve="t" />
@@ -390,21 +390,21 @@
     <node concept="3EZMnI" id="6hWVnwA1Kcz" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1KcE" role="3EZMnx">
         <property role="3F0ifm" value=", and is succeeded by" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1KcK" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1Kcv" resolve="s" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1KcS" role="3EZMnx">
         <property role="3F0ifm" value=", then" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kd2" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1Kcw" resolve="t" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1Kde" role="3EZMnx">
         <property role="3F0ifm" value="eventually holds after" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kds" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1Kcv" resolve="s" />
@@ -418,35 +418,35 @@
     <node concept="3EZMnI" id="6hWVnwA1KdK" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA1KdR" role="3EZMnx">
         <property role="3F0ifm" value=", then" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1KdX" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1Kd_" resolve="s" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1Ke5" role="3EZMnx">
         <property role="3F0ifm" value="eventually holds and is succeeded by" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kel" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1KdB" resolve="t" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1Kex" role="3EZMnx">
         <property role="3F0ifm" value=", where" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1KeJ" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1KdE" resolve="z" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1KeZ" role="3EZMnx">
         <property role="3F0ifm" value="does not hold between" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kfx" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1Kd_" resolve="s" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA1KfP" role="3EZMnx">
         <property role="3F0ifm" value="and" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA1Kgb" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1KdB" resolve="t" />
@@ -460,14 +460,14 @@
     <node concept="3EZMnI" id="6hWVnwA2hYK" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwA2hYR" role="3EZMnx">
         <property role="3F0ifm" value="it is always the case that if" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA2hZ0" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA2hYX" resolve="p" />
       </node>
       <node concept="3F0ifn" id="6hWVnwA2hZ8" role="3EZMnx">
         <property role="3F0ifm" value="holds" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwA2hZi" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K95" resolve="orderComponent" />
@@ -484,14 +484,14 @@
     <node concept="3EZMnI" id="6hWVnwAsTMR" role="2wV5jI">
       <node concept="3F0ifn" id="6hWVnwAsTMS" role="3EZMnx">
         <property role="3F0ifm" value="After" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwAsTMT" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K7m" resolve="q" />
       </node>
       <node concept="3F0ifn" id="6hWVnwAsTMU" role="3EZMnx">
         <property role="3F0ifm" value="until" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6hWVnwAsTMV" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6hWVnwA1K7o" resolve="r" />
@@ -536,7 +536,7 @@
         <node concept="l2Vlx" id="5FhZjqTNLRZ" role="2iSdaV" />
         <node concept="3F0ifn" id="5FhZjqTNLRl" role="3EZMnx">
           <property role="3F0ifm" value="temporal logics specification" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="5FhZjqTNLS$" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -563,7 +563,7 @@
     <ref role="1XX52x" to="yyq9:1Tg5$nepcb_" resolve="TimeUnit" />
     <node concept="PMmxH" id="1Tg5$nepcbE" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
     </node>
   </node>
   <node concept="24kQdi" id="1Tg5$nepcgW">
@@ -572,7 +572,7 @@
     <node concept="3EZMnI" id="1Tg5$nepch1" role="2wV5jI">
       <node concept="3F0ifn" id="1Tg5$nepch3" role="3EZMnx">
         <property role="3F0ifm" value="within" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="1Tg5$nepchb" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:1Tg5$nepcgQ" resolve="exp" />
@@ -589,7 +589,7 @@
     <node concept="3EZMnI" id="1Tg5$nepcht" role="2wV5jI">
       <node concept="3F0ifn" id="1Tg5$nepchu" role="3EZMnx">
         <property role="3F0ifm" value="after" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="1Tg5$nepchv" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:1Tg5$nepchp" resolve="exp" />
@@ -606,14 +606,14 @@
     <node concept="3EZMnI" id="1Tg5$nepchJ" role="2wV5jI">
       <node concept="3F0ifn" id="1Tg5$nepchK" role="3EZMnx">
         <property role="3F0ifm" value="between" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="1Tg5$nepchL" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:1Tg5$nepchC" resolve="intervalStart" />
       </node>
       <node concept="3F0ifn" id="1Tg5$nepchY" role="3EZMnx">
         <property role="3F0ifm" value="and" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="1Tg5$nepcih" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:1Tg5$nepchE" resolve="intervalEnd" />
@@ -643,7 +643,7 @@
       </node>
       <node concept="3F0ifn" id="6BEEv9htjUM" role="3EZMnx">
         <property role="3F0ifm" value="holds" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="6BEEv9htjVe" role="3EZMnx">
         <property role="3F0ifm" value="after" />
@@ -676,11 +676,11 @@
     <node concept="3EZMnI" id="6BEEv9htjXg" role="2wV5jI">
       <node concept="3F0ifn" id="6BEEv9htjXx" role="3EZMnx">
         <property role="3F0ifm" value="with a probability" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6BEEv9htjXE" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6BEEv9htjWL" resolve="bound" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6BEEv9htjXW" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6BEEv9htjXR" resolve="prob" />
@@ -707,7 +707,7 @@
       </node>
       <node concept="3F0ifn" id="6BEEv9hzVWL" role="3EZMnx">
         <property role="3F0ifm" value="holds in the long run" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="PMmxH" id="6BEEv9hzVWP" role="3EZMnx">
         <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
@@ -730,7 +730,7 @@
       </node>
       <node concept="3F0ifn" id="6BEEv9h$xSA" role="3EZMnx">
         <property role="3F0ifm" value="becomes true it remains so for at least" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6BEEv9h$xTh" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6BEEv9h$xRZ" resolve="time" />
@@ -759,7 +759,7 @@
       </node>
       <node concept="3F0ifn" id="6BEEv9h_adr" role="3EZMnx">
         <property role="3F0ifm" value="becomes true it remains so less than" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="6BEEv9h_ads" role="3EZMnx">
         <ref role="1NtTu8" to="yyq9:6BEEv9h_adk" resolve="time" />
