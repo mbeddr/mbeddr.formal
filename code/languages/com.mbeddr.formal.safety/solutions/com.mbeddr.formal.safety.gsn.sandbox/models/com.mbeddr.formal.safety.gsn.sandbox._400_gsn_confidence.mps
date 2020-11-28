@@ -382,7 +382,7 @@
         </node>
       </node>
       <node concept="GlCK6" id="48_A4oY7ggc" role="Gl$GA">
-        <property role="FV0bb" value="100" />
+        <property role="FV0bb" value="50" />
         <property role="FV0bc" value="100" />
       </node>
     </node>
@@ -773,10 +773,12 @@
     <node concept="2vmhmH" id="48_A4oY7gys" role="2vn1q5">
       <property role="TrG5h" value="S3" />
       <node concept="19SGf9" id="48_A4oY7gyt" role="2vnaTY">
-        <node concept="19SUe$" id="48_A4oY7gyu" role="19SJt6" />
+        <node concept="19SUe$" id="48_A4oY7gyu" role="19SJt6">
+          <property role="19SUeA" value="Slight belief,&#10;low certainty" />
+        </node>
       </node>
       <node concept="GlCK6" id="48_A4oY7g_w" role="Gl$GA">
-        <property role="FV0bb" value="50" />
+        <property role="FV0bb" value="75" />
       </node>
     </node>
     <node concept="2vn7WC" id="48_A4oY7gU9" role="2vn1q5">
