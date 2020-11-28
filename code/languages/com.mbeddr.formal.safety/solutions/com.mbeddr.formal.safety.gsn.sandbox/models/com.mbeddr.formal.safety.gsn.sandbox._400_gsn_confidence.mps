@@ -744,7 +744,7 @@
         </node>
       </node>
       <node concept="GlCK6" id="48_A4oY7ggN" role="Gl$GA">
-        <property role="FV0bb" value="50" />
+        <property role="FV0bb" value="0" />
         <property role="FV0bc" value="0" />
       </node>
     </node>
