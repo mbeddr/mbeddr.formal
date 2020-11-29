@@ -8,6 +8,7 @@
   <imports>
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
     <import index="lr73" ref="r:47b9f784-2d4a-4adf-a2c1-7e71108590c5(com.fasten.safety.hiphops.behavior)" />
+    <import index="wid" ref="r:f00673e3-aa4b-47ab-b1ab-32f93476e624(com.fasten.safety.hiphops.arch.util)" />
     <import index="zsc5" ref="r:fc2953cc-af52-42fa-8e2a-cc41987cb142(com.fasten.safety.hiphops.arch.structure)" implicit="true" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" implicit="true" />
   </imports>
@@ -22,6 +23,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -44,9 +48,7 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="8356039341262087992" name="line" index="1aUNEU" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
@@ -88,14 +90,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -151,23 +145,99 @@
     </node>
   </node>
   <node concept="2S6QgY" id="62cfieEN6wy">
-    <property role="TrG5h" value="createFaultTreeFromAssembly" />
+    <property role="TrG5h" value="createRawFaultTreeFromAssembly" />
     <ref role="2ZfgGC" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
     <node concept="2S6ZIM" id="62cfieEN6wz" role="2ZfVej">
       <node concept="3clFbS" id="62cfieEN6w$" role="2VODD2">
         <node concept="3clFbF" id="62cfieEN6w_" role="3cqZAp">
           <node concept="Xl_RD" id="62cfieEN6wA" role="3clFbG">
-            <property role="Xl_RC" value="Create Fault Tree" />
+            <property role="Xl_RC" value="Create Raw Fault Tree" />
           </node>
         </node>
       </node>
     </node>
     <node concept="2Sbjvc" id="62cfieEN6wB" role="2ZfgGD">
       <node concept="3clFbS" id="62cfieEN6wC" role="2VODD2">
-        <node concept="3SKdUt" id="3txYam0bN6t" role="3cqZAp">
-          <node concept="1PaTwC" id="3txYam0bN6u" role="1aUNEU">
-            <node concept="3oM_SD" id="3txYam0bN6v" role="1PaTwD">
-              <property role="3oM_SC" value="ToDo" />
+        <node concept="3cpWs8" id="3bh1RFvqrQh" role="3cqZAp">
+          <node concept="3cpWsn" id="3bh1RFvqrQi" role="3cpWs9">
+            <property role="TrG5h" value="ft" />
+            <node concept="3Tqbb2" id="3bh1RFvqrQj" role="1tU5fm">
+              <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+            </node>
+            <node concept="2YIFZM" id="3bh1RFvqs7R" role="33vP2m">
+              <ref role="37wK5l" to="wid:62cfieENasK" resolve="buildRawFaultTree" />
+              <ref role="1Pybhc" to="wid:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <node concept="2Sf5sV" id="3bh1RFvqs8Q" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3bh1RFvqrQn" role="3cqZAp">
+          <node concept="2OqwBi" id="3bh1RFvqrQo" role="3clFbG">
+            <node concept="2Sf5sV" id="3bh1RFvqrQp" role="2Oq$k0" />
+            <node concept="HtI8k" id="3bh1RFvqrQq" role="2OqNvi">
+              <node concept="2pJPEk" id="3bh1RFvqrQr" role="HtI8F">
+                <node concept="2pJPED" id="3bh1RFvqrQs" role="2pJPEn">
+                  <ref role="2pJxaS" to="zsc5:62cfieELy5m" resolve="FaultTreeContainer" />
+                  <node concept="2pIpSj" id="3bh1RFvqrQt" role="2pJxcM">
+                    <ref role="2pIpSl" to="zsc5:62cfieELy5p" resolve="ft" />
+                    <node concept="36biLy" id="3bh1RFvqrQu" role="28nt2d">
+                      <node concept="37vLTw" id="3bh1RFvqrQv" role="36biLW">
+                        <ref role="3cqZAo" node="3bh1RFvqrQi" resolve="ft" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3bh1RFvEqSO">
+    <property role="TrG5h" value="createNormalizedFaultTreeFromAssembly" />
+    <ref role="2ZfgGC" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+    <node concept="2S6ZIM" id="3bh1RFvEqSP" role="2ZfVej">
+      <node concept="3clFbS" id="3bh1RFvEqSQ" role="2VODD2">
+        <node concept="3clFbF" id="3bh1RFvEqSR" role="3cqZAp">
+          <node concept="Xl_RD" id="3bh1RFvEqSS" role="3clFbG">
+            <property role="Xl_RC" value="Create Normalized Fault Tree" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3bh1RFvEqST" role="2ZfgGD">
+      <node concept="3clFbS" id="3bh1RFvEqSU" role="2VODD2">
+        <node concept="3cpWs8" id="3bh1RFvEqSV" role="3cqZAp">
+          <node concept="3cpWsn" id="3bh1RFvEqSW" role="3cpWs9">
+            <property role="TrG5h" value="ft" />
+            <node concept="3Tqbb2" id="3bh1RFvEqSX" role="1tU5fm">
+              <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+            </node>
+            <node concept="2YIFZM" id="3bh1RFvEr86" role="33vP2m">
+              <ref role="37wK5l" to="wid:3bh1RFvD$Ne" resolve="buildFaultTree" />
+              <ref role="1Pybhc" to="wid:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <node concept="2Sf5sV" id="3bh1RFvEr87" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3bh1RFvEqT0" role="3cqZAp">
+          <node concept="2OqwBi" id="3bh1RFvEqT1" role="3clFbG">
+            <node concept="2Sf5sV" id="3bh1RFvEqT2" role="2Oq$k0" />
+            <node concept="HtI8k" id="3bh1RFvEqT3" role="2OqNvi">
+              <node concept="2pJPEk" id="3bh1RFvEqT4" role="HtI8F">
+                <node concept="2pJPED" id="3bh1RFvEqT5" role="2pJPEn">
+                  <ref role="2pJxaS" to="zsc5:62cfieELy5m" resolve="FaultTreeContainer" />
+                  <node concept="2pIpSj" id="3bh1RFvEqT6" role="2pJxcM">
+                    <ref role="2pIpSl" to="zsc5:62cfieELy5p" resolve="ft" />
+                    <node concept="36biLy" id="3bh1RFvEqT7" role="28nt2d">
+                      <node concept="37vLTw" id="3bh1RFvEqT8" role="36biLW">
+                        <ref role="3cqZAo" node="3bh1RFvEqSW" resolve="ft" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
