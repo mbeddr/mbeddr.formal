@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c5d47aa8-6cc0-4a5d-a6c4-5a0929924f84(com.mbeddr.formal.safety.gsn.sandbox._400_gsn_confidence)">
+<model ref="r:c5d47aa8-6cc0-4a5d-a6c4-5a0929924f84(com.mbeddr.formal.safety.gsn.sandbox._400_gsn_confidence_dempster_schafer)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>

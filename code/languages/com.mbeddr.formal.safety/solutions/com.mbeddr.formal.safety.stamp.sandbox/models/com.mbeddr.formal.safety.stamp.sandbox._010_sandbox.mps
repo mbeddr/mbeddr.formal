@@ -9,7 +9,7 @@
   <imports />
   <registry>
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
-      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardRef" flags="ng" index="gxbn0">
+      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardConsequence" flags="ng" index="gxbn0">
         <reference id="5082661585110796314" name="hazard" index="gxbni" />
       </concept>
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
