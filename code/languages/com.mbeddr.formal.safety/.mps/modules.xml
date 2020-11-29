@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.ft/com.fasten.safety.ft.mpl" folder="ft" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops.arch/com.fasten.safety.hiphops.arch.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops/com.fasten.safety.hiphops.mpl" folder="fmea_hiphops" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.acp/com.mbeddr.formal.safety.gsn.confidence.acp.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.ext/com.mbeddr.formal.safety.gsn.ext.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.external_evidence/com.mbeddr.formal.safety.gsn.external_evidence.mpl" folder="gsn" />
