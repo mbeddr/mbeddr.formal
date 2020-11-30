@@ -76,13 +76,6 @@
     <property role="EcuMT" value="2239374314123298593" />
     <property role="TrG5h" value="OthelloSystemSpecification" />
     <ref role="1TJDcQ" node="2OfmkSXZL1n" resolve="OthelloSpecification" />
-    <node concept="1TJgyj" id="1QMZQ03RyWp" role="1TKVEi">
-      <property role="IQ2ns" value="2140053560801242905" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
-    </node>
     <node concept="1TJgyj" id="1WjQLbKt0uy" role="1TKVEi">
       <property role="IQ2ns" value="2239374314123298722" />
       <property role="20kJfa" value="preDirectives" />
@@ -111,9 +104,6 @@
     </node>
     <node concept="PrWs8" id="4JMCPGgxFgw" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4JMCPGgy44y" role="PzmwI">
-      <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
     </node>
     <node concept="PrWs8" id="1QMZQ046m41" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -769,6 +759,9 @@
     <property role="EcuMT" value="2140053560801242897" />
     <property role="TrG5h" value="IOrthelloSystemContent" />
     <property role="3GE5qa" value="interfaces" />
+    <node concept="PrWs8" id="7o011GVZ_2O" role="PrDN$">
+      <ref role="PrY4T" node="7o011GVZ_2N" resolve="IOthelloContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1QMZQ03TRgW">
     <property role="EcuMT" value="2140053560801850428" />
@@ -1285,13 +1278,6 @@
     <property role="EcuMT" value="3246912048939554077" />
     <property role="TrG5h" value="OthelloLibrarySpecification" />
     <ref role="1TJDcQ" node="2OfmkSXZL1n" resolve="OthelloSpecification" />
-    <node concept="1TJgyj" id="2OfmkSXY_ku" role="1TKVEi">
-      <property role="IQ2ns" value="3246912048939554078" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2OfmkSY2S4f" resolve="IOthelloLibraryContent" />
-    </node>
     <node concept="PrWs8" id="2OfmkSXY_kz" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
@@ -1303,6 +1289,9 @@
     <property role="EcuMT" value="3246912048940679439" />
     <property role="TrG5h" value="IOthelloLibraryContent" />
     <property role="3GE5qa" value="interfaces" />
+    <node concept="PrWs8" id="7o011GVZ_2Q" role="PrDN$">
+      <ref role="PrY4T" node="7o011GVZ_2N" resolve="IOthelloContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2OfmkSXZL1n">
     <property role="19KtqR" value="true" />
@@ -1310,8 +1299,21 @@
     <property role="TrG5h" value="OthelloSpecification" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7o011GVZ_2S" role="1TKVEi">
+      <property role="IQ2ns" value="8502800611492647096" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7o011GVZ_2N" resolve="IOthelloContent" />
+    </node>
     <node concept="PrWs8" id="2OfmkSXZL1p" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7o011GVZwLH" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6Kf5KB75w8u" resolve="IVisibleElementsScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="7o011GVZHeq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2OfmkSY2WCU">
@@ -1323,6 +1325,11 @@
     <node concept="PrWs8" id="2OfmkSY2WCZ" role="PzmwI">
       <ref role="PrY4T" node="2OfmkSY2S4f" resolve="IOthelloLibraryContent" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="7o011GVZ_2N">
+    <property role="EcuMT" value="8502800611492647091" />
+    <property role="3GE5qa" value="interfaces" />
+    <property role="TrG5h" value="IOthelloContent" />
   </node>
 </model>
 

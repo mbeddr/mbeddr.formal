@@ -8,9 +8,10 @@
   <imports />
   <registry>
     <language id="5ccce04a-9411-450d-8af4-a858c6f99d1e" name="com.mbeddr.formal.ocra">
-      <concept id="3246912048939554077" name="com.mbeddr.formal.ocra.structure.OthelloLibrarySpecification" flags="ng" index="gXgLj">
-        <child id="3246912048939554078" name="content" index="gXgLg" />
+      <concept id="3246912048939864151" name="com.mbeddr.formal.ocra.structure.OthelloSpecification" flags="ng" index="gW4$p">
+        <child id="8502800611492647096" name="content" index="1dZ_iz" />
       </concept>
+      <concept id="3246912048939554077" name="com.mbeddr.formal.ocra.structure.OthelloLibrarySpecification" flags="ng" index="gXgLj" />
       <concept id="3246912048940698170" name="com.mbeddr.formal.ocra.structure.EnumDeclaration" flags="ng" index="j19dO" />
       <concept id="2140053560803488798" name="com.mbeddr.formal.ocra.structure.EventType" flags="ng" index="pGCHY" />
       <concept id="2140053560803573749" name="com.mbeddr.formal.ocra.structure.ContinuousType" flags="ng" index="pGO2l" />
@@ -66,9 +67,7 @@
         <child id="2239374314123298695" name="interface" index="3JpXMl" />
         <child id="2239374314123298696" name="refinement" index="3JpXMq" />
       </concept>
-      <concept id="2239374314123298593" name="com.mbeddr.formal.ocra.structure.OthelloSystemSpecification" flags="ng" index="3JpXKN">
-        <child id="2140053560801242905" name="content" index="urd1T" />
-      </concept>
+      <concept id="2239374314123298593" name="com.mbeddr.formal.ocra.structure.OthelloSystemSpecification" flags="ng" index="3JpXKN" />
       <concept id="2239374314123298598" name="com.mbeddr.formal.ocra.structure.TimeAnnotation" flags="ng" index="3JpXKO" />
       <concept id="2239374314123298596" name="com.mbeddr.formal.ocra.structure.Include" flags="ng" index="3JpXKQ">
         <child id="2140053560801711213" name="include" index="ulUGd" />
@@ -139,6 +138,9 @@
         <child id="7842584090743391224" name="members" index="2Hdrtl" />
       </concept>
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
+        <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
+      </concept>
       <concept id="8482728081225176234" name="com.mbeddr.formal.nusmv.structure.WordType" flags="ng" index="1y4e2l">
         <child id="8482728081225176235" name="size" index="1y4e2k" />
       </concept>
@@ -186,9 +188,9 @@
   <node concept="3JpXKN" id="5iGdg8L_$LI">
     <property role="TrG5h" value="OSS" />
     <property role="3GE5qa" value="test" />
-    <node concept="3JpXKO" id="1QMZQ03WJD9" role="urd1T" />
-    <node concept="2uPaw6" id="1QMZQ03X_gI" role="urd1T" />
-    <node concept="3JpXKU" id="1QMZQ03ZXIA" role="urd1T">
+    <node concept="3JpXKO" id="1QMZQ03WJD9" role="1dZ_iz" />
+    <node concept="2uPaw6" id="1QMZQ03X_gI" role="1dZ_iz" />
+    <node concept="3JpXKU" id="1QMZQ03ZXIA" role="1dZ_iz">
       <property role="TrG5h" value="mySystem" />
       <node concept="3JpXKT" id="1QMZQ03ZXIB" role="3JpXMl">
         <node concept="3JpXKx" id="404$BAyXroL" role="3JpXMY">
@@ -305,12 +307,12 @@
         <node concept="2uPaw6" id="1QMZQ0468we" role="3JpXMY" />
       </node>
     </node>
-    <node concept="2uPaw6" id="404$BAyXrz2" role="urd1T" />
+    <node concept="2uPaw6" id="404$BAyXrz2" role="1dZ_iz" />
   </node>
   <node concept="3JpXKN" id="5MFfD6f6VuJ">
     <property role="TrG5h" value="SimpleExample" />
     <property role="3GE5qa" value="ocra-examples" />
-    <node concept="3JpXKU" id="5MFfD6f6VvS" role="urd1T">
+    <node concept="3JpXKU" id="5MFfD6f6VvS" role="1dZ_iz">
       <property role="TrG5h" value="example1" />
       <node concept="3JpXKZ" id="5MFfD6f6VvT" role="3JpXMq">
         <node concept="3JpXKI" id="5MFfD6faEsN" role="3JpXMt">
@@ -418,8 +420,8 @@
         <node concept="2uPaw6" id="5MFfD6f6VyJ" role="3JpXMY" />
       </node>
     </node>
-    <node concept="2uPaw6" id="5MFfD6f6Vz3" role="urd1T" />
-    <node concept="3JpXKS" id="5MFfD6f6VzQ" role="urd1T">
+    <node concept="2uPaw6" id="5MFfD6f6Vz3" role="1dZ_iz" />
+    <node concept="3JpXKS" id="5MFfD6f6VzQ" role="1dZ_iz">
       <property role="TrG5h" value="A" />
       <node concept="3JpXKT" id="5MFfD6f6VzT" role="3JpXMl">
         <node concept="3JpXKx" id="5MFfD6f6V$n" role="3JpXMY">
@@ -459,8 +461,8 @@
         </node>
       </node>
     </node>
-    <node concept="2uPaw6" id="5MFfD6f6VB7" role="urd1T" />
-    <node concept="3JpXKS" id="5MFfD6f6VCu" role="urd1T">
+    <node concept="2uPaw6" id="5MFfD6f6VB7" role="1dZ_iz" />
+    <node concept="3JpXKS" id="5MFfD6f6VCu" role="1dZ_iz">
       <property role="TrG5h" value="B" />
       <node concept="3JpXKT" id="5MFfD6f6VCx" role="3JpXMl">
         <node concept="3JpXKx" id="5MFfD6f6VDm" role="3JpXMY">
@@ -499,7 +501,7 @@
   <node concept="3JpXKN" id="5MFfD6f6VOq">
     <property role="TrG5h" value="ExampleWithArithmetics" />
     <property role="3GE5qa" value="ocra-examples" />
-    <node concept="3JpXKU" id="5MFfD6f6VP_" role="urd1T">
+    <node concept="3JpXKU" id="5MFfD6f6VP_" role="1dZ_iz">
       <property role="TrG5h" value="example2" />
       <node concept="3JpXKZ" id="5MFfD6f6VPA" role="3JpXMq">
         <node concept="3JpXKI" id="5MFfD6faEqf" role="3JpXMt">
@@ -602,8 +604,8 @@
         <node concept="2uPaw6" id="5MFfD6f6VRV" role="3JpXMY" />
       </node>
     </node>
-    <node concept="2uPaw6" id="5MFfD6f6VSc" role="urd1T" />
-    <node concept="3JpXKS" id="5MFfD6f6VST" role="urd1T">
+    <node concept="2uPaw6" id="5MFfD6f6VSc" role="1dZ_iz" />
+    <node concept="3JpXKS" id="5MFfD6f6VST" role="1dZ_iz">
       <property role="TrG5h" value="A" />
       <node concept="3JpXKT" id="5MFfD6f6VSW" role="3JpXMl">
         <node concept="3JpXKA" id="5MFfD6f6VTp" role="3JpXMY">
@@ -633,8 +635,8 @@
         </node>
       </node>
     </node>
-    <node concept="2uPaw6" id="5MFfD6f6VVk" role="urd1T" />
-    <node concept="3JpXKS" id="5MFfD6f6VWx" role="urd1T">
+    <node concept="2uPaw6" id="5MFfD6f6VVk" role="1dZ_iz" />
+    <node concept="3JpXKS" id="5MFfD6f6VWx" role="1dZ_iz">
       <property role="TrG5h" value="B" />
       <node concept="3JpXKT" id="5MFfD6f6VW$" role="3JpXMl">
         <node concept="3JpXKx" id="5MFfD6f6VXh" role="3JpXMY">
@@ -684,7 +686,7 @@
   <node concept="3JpXKN" id="5MFfD6f6Wew">
     <property role="TrG5h" value="ComplexExample" />
     <property role="3GE5qa" value="ocra-examples" />
-    <node concept="3JpXKU" id="5MFfD6f6WfF" role="urd1T">
+    <node concept="3JpXKU" id="5MFfD6f6WfF" role="1dZ_iz">
       <property role="TrG5h" value="example3" />
       <node concept="3JpXKZ" id="5MFfD6f6WfG" role="3JpXMq">
         <node concept="3JpXKI" id="5MFfD6faEkl" role="3JpXMt">
@@ -953,7 +955,7 @@
         <node concept="2uPaw6" id="5MFfD6f8M8e" role="3JpXMY" />
       </node>
     </node>
-    <node concept="3JpXKS" id="5MFfD6f6WfX" role="urd1T">
+    <node concept="3JpXKS" id="5MFfD6f6WfX" role="1dZ_iz">
       <property role="TrG5h" value="Device" />
       <node concept="3JpXKT" id="5MFfD6f6Wg0" role="3JpXMl">
         <node concept="3JpXKx" id="5MFfD6f8a2Y" role="3JpXMY">
@@ -1013,8 +1015,8 @@
         </node>
       </node>
     </node>
-    <node concept="2uPaw6" id="5MFfD6f8abl" role="urd1T" />
-    <node concept="3JpXKS" id="5MFfD6f6WgN" role="urd1T">
+    <node concept="2uPaw6" id="5MFfD6f8abl" role="1dZ_iz" />
+    <node concept="3JpXKS" id="5MFfD6f6WgN" role="1dZ_iz">
       <property role="TrG5h" value="Monitor" />
       <node concept="3JpXKT" id="5MFfD6f6WgQ" role="3JpXMl">
         <node concept="3JpXKx" id="5MFfD6f6Wh8" role="3JpXMY">
@@ -1114,23 +1116,23 @@
   <node concept="3JpXKN" id="5MFfD6f8RtY">
     <property role="TrG5h" value="TLC" />
     <property role="3GE5qa" value="tlc-example" />
-    <node concept="3JpXKQ" id="2OfmkSY3$Q_" role="urd1T">
+    <node concept="3JpXKQ" id="2OfmkSY3$Q_" role="1dZ_iz">
       <node concept="uloHs" id="2OfmkSY3J3q" role="ulUGd">
         <ref role="uloG$" node="2OfmkSY2WCT" resolve="EnumLibrary" />
       </node>
     </node>
-    <node concept="3JpXKQ" id="5MFfD6f8RYs" role="urd1T">
+    <node concept="3JpXKQ" id="5MFfD6f8RYs" role="1dZ_iz">
       <node concept="uloHs" id="5MFfD6f8RYx" role="ulUGd">
         <ref role="uloG$" node="5MFfD6f8Rv8" resolve="Controller" />
       </node>
     </node>
-    <node concept="3JpXKQ" id="5MFfD6f8RYk" role="urd1T">
+    <node concept="3JpXKQ" id="5MFfD6f8RYk" role="1dZ_iz">
       <node concept="uloHs" id="5MFfD6f8RYm" role="ulUGd">
         <ref role="uloG$" node="5MFfD6f8RuG" resolve="Merger" />
       </node>
     </node>
-    <node concept="2uPaw6" id="5MFfD6f8RYz" role="urd1T" />
-    <node concept="3JpXKU" id="5MFfD6f8RYK" role="urd1T">
+    <node concept="2uPaw6" id="5MFfD6f8RYz" role="1dZ_iz" />
+    <node concept="3JpXKU" id="5MFfD6f8RYK" role="1dZ_iz">
       <property role="TrG5h" value="TLC" />
       <node concept="3JpXKZ" id="5MFfD6f8RYL" role="3JpXMq">
         <node concept="3JpXKI" id="5MFfD6faEvu" role="3JpXMt">
@@ -1236,8 +1238,8 @@
                 <node concept="rYEFr" id="5MFfD6f8Sbn" role="32OYtT">
                   <node concept="rZvB3" id="5MFfD6f8Sd1" role="2H9Ial">
                     <node concept="2HbLFT" id="5MFfD6f8SME" role="1yBIc4">
-                      <node concept="2IPVmt" id="5MFfD6f8SPi" role="2H9Ial">
-                        <property role="2IPVms" value="2" />
+                      <node concept="2HeeqP" id="7o011GW1$x2" role="2H9Ial">
+                        <ref role="2HeeqO" node="2OfmkSY3vvF" resolve="DONT_WALK" />
                       </node>
                       <node concept="3JpXLh" id="2LIcOCcztbQ" role="2H9Iav">
                         <ref role="2eEb$9" node="5MFfD6f8S1Q" resolve="pedestrian_lights" />
@@ -1296,12 +1298,12 @@
         <node concept="2uPaw6" id="5MFfD6f8Sgo" role="3JpXMY" />
       </node>
     </node>
-    <node concept="2uPaw6" id="5MFfD6f8S5p" role="urd1T" />
+    <node concept="2uPaw6" id="5MFfD6f8S5p" role="1dZ_iz" />
   </node>
   <node concept="3JpXKN" id="5MFfD6f8RuG">
     <property role="TrG5h" value="Merger" />
     <property role="3GE5qa" value="tlc-example" />
-    <node concept="3JpXKS" id="5MFfD6f8RNs" role="urd1T">
+    <node concept="3JpXKS" id="5MFfD6f8RNs" role="1dZ_iz">
       <property role="TrG5h" value="Merger" />
       <node concept="3JpXKT" id="5MFfD6f8RNv" role="3JpXMl">
         <node concept="3JpXKx" id="5MFfD6f8RNA" role="3JpXMY">
@@ -1352,7 +1354,7 @@
   <node concept="3JpXKN" id="5MFfD6f8Rv8">
     <property role="3GE5qa" value="tlc-example" />
     <property role="TrG5h" value="Controller" />
-    <node concept="3JpXKS" id="5MFfD6f8Rwh" role="urd1T">
+    <node concept="3JpXKS" id="5MFfD6f8Rwh" role="1dZ_iz">
       <property role="TrG5h" value="Controller" />
       <node concept="3JpXKT" id="5MFfD6f8Rwk" role="3JpXMl">
         <node concept="3JpXKx" id="5MFfD6f8Rwr" role="3JpXMY">
@@ -1435,7 +1437,7 @@
   <node concept="gXgLj" id="2OfmkSY2WCT">
     <property role="3GE5qa" value="tlc-example" />
     <property role="TrG5h" value="EnumLibrary" />
-    <node concept="j19dO" id="2OfmkSY3vrS" role="gXgLg">
+    <node concept="j19dO" id="2OfmkSY3vrS" role="1dZ_iz">
       <property role="TrG5h" value="TRAFFIC_LIGHTS" />
       <node concept="2Hdrtq" id="2OfmkSY3vrY" role="2XJXdW">
         <property role="TrG5h" value="RED" />
@@ -1447,7 +1449,7 @@
         <property role="TrG5h" value="GREEN" />
       </node>
     </node>
-    <node concept="j19dO" id="2OfmkSY3vvs" role="gXgLg">
+    <node concept="j19dO" id="2OfmkSY3vvs" role="1dZ_iz">
       <property role="TrG5h" value="PEDESTRIAN_LIGHTS" />
       <node concept="2Hdrtq" id="2OfmkSY3vvC" role="2XJXdW">
         <property role="TrG5h" value="WALK" />
