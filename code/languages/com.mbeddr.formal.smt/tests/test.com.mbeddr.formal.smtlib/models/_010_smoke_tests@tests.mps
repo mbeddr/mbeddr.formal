@@ -536,7 +536,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="6Kf5KB75Mz6">
-    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv/" />
+    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.smt/" />
   </node>
 </model>
 
