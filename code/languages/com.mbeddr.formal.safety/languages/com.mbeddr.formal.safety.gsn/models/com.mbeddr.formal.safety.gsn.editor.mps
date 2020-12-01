@@ -533,7 +533,6 @@
       <concept id="8637411062076624999" name="de.itemis.mps.editor.diagram.structure.Function_ConnectionTypes" flags="ig" index="1xLmZY" />
       <concept id="8637411062062623445" name="de.itemis.mps.editor.diagram.structure.Parameter_PaletteFolder_Concept" flags="ng" index="1yATlc" />
       <concept id="8637411062062430894" name="de.itemis.mps.editor.diagram.structure.Function_PaletteFolder" flags="ig" index="1yB8kR" />
-      <concept id="6987730699889040828" name="de.itemis.mps.editor.diagram.structure.LineColor" flags="lg" index="3C0NmK" />
       <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
         <child id="9064581101900868073" name="target" index="ljJml" />
@@ -956,6 +955,7 @@
     <property role="3GE5qa" value="connections" />
     <ref role="1XX52x" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
     <node concept="2ZMJ7s" id="2ccN23oa9Fw" role="2wV5jI">
+      <ref role="1k5W1q" to="xnej:50UR0qsbFdm" resolve="ConnectionStyle_Dynamic" />
       <node concept="1PNbMa" id="2ccN23oa9Fy" role="1PN8q7">
         <node concept="23hSZX" id="2ccN23oa9Go" role="ljJml">
           <node concept="2OqwBi" id="2ccN23oa9RB" role="23hSWE">
@@ -1000,9 +1000,6 @@
           <ref role="1k5W1q" to="xnej:71GfFl7qVvB" resolve="ConnectionStyle" />
         </node>
       </node>
-      <node concept="3C0NmK" id="3Ngc4zVhU8c" role="3F10Kt">
-        <property role="Vb096" value="6cZGtrcKCoS/black" />
-      </node>
     </node>
     <node concept="PMmxH" id="48_A4oY367v" role="6VMZX">
       <ref role="PMmxG" node="48_A4oY35Xi" resolve="ConnectionAttributes" />
@@ -1012,6 +1009,7 @@
     <property role="3GE5qa" value="connections" />
     <ref role="1XX52x" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
     <node concept="2ZMJ7s" id="2ccN23odQpT" role="2wV5jI">
+      <ref role="1k5W1q" to="xnej:50UR0qsbFdm" resolve="ConnectionStyle_Dynamic" />
       <node concept="1PNbMa" id="2ccN23odQpU" role="1PN8q7">
         <node concept="23hSZX" id="2ccN23odQpV" role="ljJml">
           <node concept="2OqwBi" id="2ccN23odQpW" role="23hSWE">
@@ -1055,9 +1053,6 @@
           <property role="3F0ifm" value="supportedBy" />
           <ref role="1k5W1q" to="xnej:71GfFl7qVvB" resolve="ConnectionStyle" />
         </node>
-      </node>
-      <node concept="3C0NmK" id="3Ngc4zViiBO" role="3F10Kt">
-        <property role="Vb096" value="6cZGtrcKCoS/black" />
       </node>
     </node>
     <node concept="PMmxH" id="48_A4oY36fN" role="6VMZX">
@@ -4880,7 +4875,7 @@
       <node concept="3F0ifn" id="3uMEL0KtN9k" role="3EZMnx" />
       <node concept="s8t4o" id="5uFV_KKBjEg" role="3EZMnx">
         <property role="S$F3r" value="true" />
-        <ref role="28F8cf" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        <ref role="28F8cf" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
         <node concept="s8sZD" id="5uFV_KKBjEh" role="sbcd9">
           <node concept="3clFbS" id="5uFV_KKBjEi" role="2VODD2">
             <node concept="3clFbF" id="2V4rzbp9Fvn" role="3cqZAp">
