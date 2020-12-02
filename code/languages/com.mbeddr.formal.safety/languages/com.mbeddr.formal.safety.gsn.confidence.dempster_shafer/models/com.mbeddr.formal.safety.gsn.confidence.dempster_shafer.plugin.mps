@@ -115,6 +115,9 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -303,6 +306,25 @@
         <node concept="3Tqbb2" id="2QkJsC6scfs" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="2QkJsC6scft" role="3clF47">
+        <node concept="3clFbJ" id="5rKLCgmESm8" role="3cqZAp">
+          <node concept="3clFbS" id="5rKLCgmESma" role="3clFbx">
+            <node concept="3cpWs6" id="5rKLCgmETg6" role="3cqZAp">
+              <node concept="10Nm6u" id="5rKLCgmETi5" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5rKLCgmESvb" role="3clFbw">
+            <node concept="2OqwBi" id="5rKLCgmESNo" role="3fr31v">
+              <node concept="37vLTw" id="5rKLCgmESC0" role="2Oq$k0">
+                <ref role="3cqZAo" node="2QkJsC6scfr" resolve="n" />
+              </node>
+              <node concept="1mIQ4w" id="5rKLCgmET1E" role="2OqNvi">
+                <node concept="chp4Y" id="5rKLCgmET3V" role="cj9EA">
+                  <ref role="cht4Q" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="o0_W81juxK" role="3cqZAp">
           <node concept="3clFbS" id="o0_W81juxM" role="3clFbx">
             <node concept="3clFbJ" id="2QkJsC6vIiJ" role="3cqZAp">
