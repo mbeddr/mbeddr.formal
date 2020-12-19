@@ -222,6 +222,9 @@
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
         <property id="4237758264760168561" name="bugfixNr" index="1lNJF1" />
+        <child id="6845119683729337285" name="progressY" index="27hAJg" />
+        <child id="6845119683729294884" name="progressColor" index="27hGoL" />
+        <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
         <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
@@ -235,6 +238,10 @@
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
+        <child id="1084163669516694346" name="logoW" index="3KTCDm" />
+        <child id="1084163669516694385" name="logoH" index="3KTCDH" />
+        <child id="1084163669516694195" name="logoX" index="3KTCIJ" />
+        <child id="1084163669516694232" name="logoY" index="3KTCJ4" />
       </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
@@ -10202,7 +10209,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="com.mbeddr.formal.nusmv-201.SNAPSHOT" />
+            <property role="3MwjfP" value="com.fasten-202.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -10454,10 +10461,10 @@
       </node>
     </node>
     <node concept="1zClus" id="42jqVeFkUtq" role="3989C9">
-      <property role="2OjLBK" value="1" />
+      <property role="2OjLBK" value="2" />
       <property role="TrG5h" value="MPS" />
       <property role="2OjLBL" value="2020" />
-      <property role="1lNJF1" value="2" />
+      <property role="1lNJF1" value="3" />
       <node concept="3_J27D" id="42jqVeFkUtu" role="2EteIg">
         <node concept="3Mxwey" id="42jqVeFkUtv" role="3MwsjC">
           <ref role="3Mxwex" node="wUJmWCxY0c" resolve="build.number" />
@@ -10553,6 +10560,33 @@
       <node concept="3_J27D" id="3JuzDYm90B6" role="2gvbiD">
         <node concept="3Mxwew" id="3JuzDYm90B7" role="3MwsjC">
           <property role="3MwjfP" value="fasten" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="2WV$_6PibKN" role="27hAJg">
+        <node concept="3Mxwew" id="2WV$_6PibKM" role="3MwsjC">
+          <property role="3MwjfP" value="210" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="2WV$_6PibKR" role="2gqIGF">
+        <node concept="3Mxwew" id="2WV$_6PibKQ" role="3MwsjC">
+          <property role="3MwjfP" value="6" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="2WV$_6PpsXU" role="27hGoL">
+        <node concept="3Mxwew" id="2WV$_6PpsXT" role="3MwsjC">
+          <property role="3MwjfP" value="191970" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="2WV$_6Puj6G" role="3KTCDm" />
+      <node concept="NbPM2" id="2WV$_6Puj6K" role="3KTCDH" />
+      <node concept="NbPM2" id="2WV$_6P_$k5" role="3KTCIJ">
+        <node concept="3Mxwew" id="2WV$_6P_$k4" role="3MwsjC">
+          <property role="3MwjfP" value="100" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="2WV$_6P_$k9" role="3KTCJ4">
+        <node concept="3Mxwew" id="2WV$_6P_$k8" role="3MwsjC">
+          <property role="3MwjfP" value="50" />
         </node>
       </node>
     </node>
@@ -10758,7 +10792,7 @@
                 </node>
               </node>
               <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
-                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FormAl SpecificaTion ENvironment 2020.1" />
+                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FormAl SpecificaTion ENvironment 2020.2" />
               </node>
             </node>
           </node>
