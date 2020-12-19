@@ -35,7 +35,7 @@
   </registry>
   <node concept="1TIwiD" id="2BJmaNdxL$K">
     <property role="EcuMT" value="3021731374194694448" />
-    <property role="TrG5h" value="ComponentFailurePropagationLogicBase" />
+    <property role="TrG5h" value="IFFMEABase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1TeaL8RdXr_" role="1TKVEi">

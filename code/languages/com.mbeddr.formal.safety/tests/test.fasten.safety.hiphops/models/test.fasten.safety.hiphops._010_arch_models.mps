@@ -20,7 +20,7 @@
       <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
     </language>
     <language id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops">
-      <concept id="3021731374194694448" name="com.fasten.safety.hiphops.structure.ComponentFailurePropagationLogicBase" flags="ng" index="3$q46s">
+      <concept id="3021731374194694448" name="com.fasten.safety.hiphops.structure.IFFMEABase" flags="ng" index="3$q46s">
         <child id="2183730226557081317" name="singleFailurePropagationLogic" index="DuvRR" />
       </concept>
     </language>
@@ -73,7 +73,8 @@
     </language>
     <language id="521724dc-29ef-4d5a-9c15-25f6b680b809" name="com.fasten.safety.hiphops.arch">
       <concept id="2183730226557133088" name="com.fasten.safety.hiphops.arch.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM">
-        <child id="2183730226557133089" name="exp" index="DtCCN" />
+        <child id="5347632610808405202" name="componentMalfunctionLogic" index="26Ggtk" />
+        <child id="2183730226557133089" name="inputDeviationLogic" index="DtCCN" />
         <child id="6957002747779723388" name="failureModeRef" index="3anSPv" />
       </concept>
       <concept id="2183730226557155069" name="com.fasten.safety.hiphops.arch.structure.FailureModeRefExpression" flags="ng" index="DtHRJ">
@@ -84,14 +85,21 @@
         <child id="2183730226556973211" name="failureModes" index="Du1I9" />
         <child id="6957002747779324063" name="tpe" index="3agqmW" />
       </concept>
-      <concept id="2183730226556884064" name="com.fasten.safety.hiphops.arch.structure.ComponentFailurePropagationLogic" flags="ng" index="DuJXM">
+      <concept id="2183730226556884064" name="com.fasten.safety.hiphops.arch.structure.IFFMEA" flags="ng" index="DuJXM">
         <reference id="2183730226556884137" name="interf" index="DuJYV" />
       </concept>
       <concept id="6957002747778834774" name="com.fasten.safety.hiphops.arch.structure.FaultTreeContainer" flags="ng" index="3aixLP">
         <child id="6957002747778834777" name="ft" index="3aixLU" />
       </concept>
+      <concept id="6053347500022004385" name="com.fasten.safety.hiphops.arch.structure.ComponentFailureModeRefExpression" flags="ng" index="3$NFnr">
+        <reference id="6053347500022004386" name="failureMode" index="3$NFno" />
+      </concept>
     </language>
     <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
+      <concept id="4663111736253767846" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModesDefinition" flags="ng" index="2VUHfc">
+        <reference id="4663111736253767852" name="interface" index="2VUHf6" />
+        <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
+      </concept>
       <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
       <concept id="4663111736253860896" name="com.fasten.safety.fmea.arch.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="8413234032528120653" name="com.fasten.safety.fmea.arch.structure.DesignFMEARoot" flags="ng" index="1POhia">
@@ -220,7 +228,7 @@
     <node concept="2SQmWS" id="62cfieENdTT" role="2HcuB8" />
     <node concept="2SQmWS" id="62cfieENdU2" role="2HcuB8" />
     <node concept="2dDAV0" id="62cfieENdUn" role="2HcuB8">
-      <property role="TrG5h" value="System" />
+      <property role="TrG5h" value="EmergencyBrakingSystem" />
       <node concept="3Ug1AV" id="62cfieENdWS" role="3UgYNK">
         <property role="TrG5h" value="dsp" />
         <node concept="3Ug1AZ" id="62cfieENdWQ" role="3Ug1A_">
@@ -315,81 +323,207 @@
         </node>
       </node>
     </node>
-    <node concept="3aixLP" id="3bh1RFvEQyK" role="2HcuB8">
-      <node concept="21ASy4" id="3bh1RFvEQxi" role="3aixLU">
-        <node concept="21ATtL" id="3bh1RFvEQxl" role="21ATqB">
+    <node concept="3aixLP" id="5g1NREKQ3JZ" role="2HcuB8">
+      <node concept="21ASy4" id="5g1NREKQ3If" role="3aixLU">
+        <node concept="21ATtL" id="5g1NREKQ3Ii" role="21ATqB">
           <property role="TrG5h" value="speed__speed too low" />
         </node>
-        <node concept="21ATtL" id="3bh1RFvEQxo" role="21ATqB">
+        <node concept="21ATtL" id="5g1NREKQ3Il" role="21ATqB">
           <property role="TrG5h" value="speed__speed too high" />
         </node>
-        <node concept="21ATtk" id="3bh1RFvEQxt" role="21ATqB">
+        <node concept="21ATtk" id="5g1NREKQ3Io" role="21ATqB">
+          <property role="TrG5h" value="brakeCmd__brake force innacurate" />
+        </node>
+        <node concept="21ATtk" id="5g1NREKQ3Iq" role="21ATqB">
           <property role="TrG5h" value="plausibilizedSpeed__speed innacurate" />
         </node>
-        <node concept="cFNQA" id="3bh1RFvEQxu" role="21ATqB" />
-        <node concept="21oswF" id="3bh1RFvEQxw" role="21ATq_">
-          <ref role="21oszj" node="3bh1RFvEQxu" />
-          <ref role="21oszt" node="3bh1RFvEQxl" resolve="speed__speed too low" />
+        <node concept="21ATtL" id="5g1NREKQ3Is" role="21ATqB">
+          <property role="TrG5h" value="speed__speed too high" />
         </node>
-        <node concept="21oswF" id="3bh1RFvEQxy" role="21ATq_">
-          <ref role="21oszj" node="3bh1RFvEQxu" />
-          <ref role="21oszt" node="3bh1RFvEQxo" resolve="speed__speed too high" />
+        <node concept="21ATtL" id="5g1NREKQ3Iu" role="21ATqB">
+          <property role="TrG5h" value="speed__speed too low" />
         </node>
-        <node concept="21oswF" id="3bh1RFvEQxz" role="21ATq_">
-          <ref role="21oszj" node="3bh1RFvEQxt" resolve="plausibilizedSpeed__speed innacurate" />
-          <ref role="21oszt" node="3bh1RFvEQxu" />
+        <node concept="cFNQA" id="5g1NREKQ3Ir" role="21ATqB" />
+        <node concept="21oswF" id="5g1NREKQ3It" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3Is" resolve="speed__speed too high" />
+          <ref role="21oszj" node="5g1NREKQ3Ir" />
         </node>
-        <node concept="37mRI7" id="3bh1RFvEQzI" role="lGtFl">
-          <node concept="37mRIm" id="3bh1RFvEQzJ" role="37mRID">
-            <property role="37mO49" value="3661716196348880981" />
-            <node concept="gqqVs" id="3bh1RFvEQzH" role="37mO4d">
-              <property role="gqqTZ" value="12.0" />
-              <property role="gqqTW" value="132.00049509277343" />
+        <node concept="21oswF" id="5g1NREKQ3Iv" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3Iu" resolve="speed__speed too low" />
+          <ref role="21oszj" node="5g1NREKQ3Ir" />
+        </node>
+        <node concept="21oswF" id="5g1NREKQ3Iw" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3Ir" />
+          <ref role="21oszj" node="5g1NREKQ3Iq" resolve="plausibilizedSpeed__speed innacurate" />
+        </node>
+        <node concept="21ATtk" id="5g1NREKQ3Iy" role="21ATqB">
+          <property role="TrG5h" value="brakeCmd__brake force innacurate" />
+        </node>
+        <node concept="21ATtL" id="5g1NREKQ3IC" role="21ATqB">
+          <property role="TrG5h" value="speed__speed innacurate" />
+        </node>
+        <node concept="21ATtL" id="5g1NREKQ3IE" role="21ATqB">
+          <property role="TrG5h" value="braking algorithm malfunction" />
+        </node>
+        <node concept="cFNQA" id="5g1NREKQ3IB" role="21ATqB" />
+        <node concept="21oswF" id="5g1NREKQ3ID" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3IC" resolve="speed__speed innacurate" />
+          <ref role="21oszj" node="5g1NREKQ3IB" />
+        </node>
+        <node concept="21oswF" id="5g1NREKQ3IF" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3IE" resolve="braking algorithm malfunction" />
+          <ref role="21oszj" node="5g1NREKQ3IB" />
+        </node>
+        <node concept="21oswF" id="5g1NREKQ3IG" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3IB" />
+          <ref role="21oszj" node="5g1NREKQ3Iy" resolve="brakeCmd__brake force innacurate" />
+        </node>
+        <node concept="21oswF" id="5g1NREKQ3Jn" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3Ii" resolve="speed__speed too low" />
+          <ref role="21oszj" node="5g1NREKQ3Is" resolve="speed__speed too high" />
+        </node>
+        <node concept="21oswF" id="5g1NREKQ3Jo" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3Il" resolve="speed__speed too high" />
+          <ref role="21oszj" node="5g1NREKQ3Iu" resolve="speed__speed too low" />
+        </node>
+        <node concept="21oswF" id="5g1NREKQ3J_" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3Iq" resolve="plausibilizedSpeed__speed innacurate" />
+          <ref role="21oszj" node="5g1NREKQ3IC" resolve="speed__speed innacurate" />
+        </node>
+        <node concept="21oswF" id="5g1NREKQ3JY" role="21ATq_">
+          <ref role="21oszt" node="5g1NREKQ3Iy" resolve="brakeCmd__brake force innacurate" />
+          <ref role="21oszj" node="5g1NREKQ3Io" resolve="brakeCmd__brake force innacurate" />
+        </node>
+        <node concept="37mRI7" id="5g1NREKQ3Lb" role="lGtFl">
+          <node concept="37mRIm" id="5g1NREKQ3Lc" role="37mRID">
+            <property role="37mO49" value="6053347500022578066" />
+            <node concept="gqqVs" id="5g1NREKQ3La" role="37mO4d">
+              <property role="gqqTZ" value="196.0" />
+              <property role="gqqTW" value="551.0015174316407" />
               <property role="gqqTX" value="20.31269375" />
-              <property role="gqqTy" value="30.0" />
+              <property role="gqqTy" value="32.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
-          <node concept="37mRIm" id="3bh1RFvEQzL" role="37mRID">
-            <property role="37mO49" value="3661716196348880984" />
-            <node concept="gqqVs" id="3bh1RFvEQzK" role="37mO4d">
-              <property role="gqqTZ" value="52.31269375" />
-              <property role="gqqTW" value="132.00049509277343" />
+          <node concept="37mRIm" id="5g1NREKQ3Le" role="37mRID">
+            <property role="37mO49" value="6053347500022578069" />
+            <node concept="gqqVs" id="5g1NREKQ3Ld" role="37mO4d">
+              <property role="gqqTZ" value="321.3126937500001" />
+              <property role="gqqTW" value="570.0015174316407" />
               <property role="gqqTX" value="20.31269375" />
-              <property role="gqqTy" value="30.0" />
+              <property role="gqqTy" value="32.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
-          <node concept="37mRIm" id="3bh1RFvEQzN" role="37mRID">
-            <property role="37mO49" value="3661716196348880989" />
-            <node concept="gqqVs" id="3bh1RFvEQzM" role="37mO4d">
-              <property role="gqqTZ" value="12.0" />
-              <property role="gqqTW" value="12.00009836425781" />
+          <node concept="37mRIm" id="5g1NREKQ3Lg" role="37mRID">
+            <property role="37mO49" value="6053347500022578072" />
+            <node concept="gqqVs" id="5g1NREKQ3Lf" role="37mO4d">
+              <property role="gqqTZ" value="123.0" />
+              <property role="gqqTW" value="1.0001136230469" />
               <property role="gqqTX" value="20.31269375" />
-              <property role="gqqTy" value="30.0" />
+              <property role="gqqTy" value="32.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
-          <node concept="37mRIm" id="3bh1RFvEQzP" role="37mRID">
-            <property role="37mO49" value="3661716196348880990" />
-            <node concept="gqqVs" id="3bh1RFvEQzO" role="37mO4d">
-              <property role="gqqTZ" value="12.0" />
-              <property role="gqqTW" value="62.00029672851562" />
+          <node concept="37mRIm" id="5g1NREKQ3Li" role="37mRID">
+            <property role="37mO49" value="6053347500022578074" />
+            <node concept="gqqVs" id="5g1NREKQ3Lh" role="37mO4d">
+              <property role="gqqTZ" value="231.0" />
+              <property role="gqqTW" value="295.0009223388672" />
               <property role="gqqTX" value="20.31269375" />
-              <property role="gqqTy" value="30.0" />
+              <property role="gqqTy" value="32.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
-          <node concept="37mRIm" id="3bh1RFvEQzR" role="37mRID">
-            <property role="37mO49" value="3661716196348880994" />
-            <node concept="2VclpC" id="3bh1RFvEQzQ" role="37mO4d">
-              <node concept="2VclrF" id="3bh1RFvEQzS" role="2Vcluh">
-                <property role="2Vclpx" value="62.6253375" />
-                <property role="2Vclpz" value="112.00039482116699" />
+          <node concept="37mRIm" id="5g1NREKQ3Lk" role="37mRID">
+            <property role="37mO49" value="6053347500022578076" />
+            <node concept="gqqVs" id="5g1NREKQ3Lj" role="37mO4d">
+              <property role="gqqTZ" value="196.0" />
+              <property role="gqqTW" value="438.00131906738284" />
+              <property role="gqqTX" value="20.31269375" />
+              <property role="gqqTy" value="32.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3Lm" role="37mRID">
+            <property role="37mO49" value="6053347500022578078" />
+            <node concept="gqqVs" id="5g1NREKQ3Ll" role="37mO4d">
+              <property role="gqqTZ" value="321.31269375" />
+              <property role="gqqTW" value="471.00131906738284" />
+              <property role="gqqTX" value="20.31269375" />
+              <property role="gqqTy" value="32.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3Lo" role="37mRID">
+            <property role="37mO49" value="6053347500022578075" />
+            <node concept="gqqVs" id="5g1NREKQ3Ln" role="37mO4d">
+              <property role="gqqTZ" value="231.0" />
+              <property role="gqqTW" value="352.00131906738284" />
+              <property role="gqqTX" value="20.31269375" />
+              <property role="gqqTy" value="32.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3Lq" role="37mRID">
+            <property role="37mO49" value="6053347500022578082" />
+            <node concept="gqqVs" id="5g1NREKQ3Lp" role="37mO4d">
+              <property role="gqqTZ" value="123.0" />
+              <property role="gqqTW" value="67.00032724609378" />
+              <property role="gqqTX" value="20.31269375" />
+              <property role="gqqTy" value="32.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3Ls" role="37mRID">
+            <property role="37mO49" value="6053347500022578088" />
+            <node concept="gqqVs" id="5g1NREKQ3Lr" role="37mO4d">
+              <property role="gqqTZ" value="219.0" />
+              <property role="gqqTW" value="182.00072397460937" />
+              <property role="gqqTX" value="20.31269375" />
+              <property role="gqqTy" value="32.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3Lu" role="37mRID">
+            <property role="37mO49" value="6053347500022578090" />
+            <node concept="gqqVs" id="5g1NREKQ3Lt" role="37mO4d">
+              <property role="gqqTZ" value="52.312693749999994" />
+              <property role="gqqTW" value="182.00072397460937" />
+              <property role="gqqTX" value="20.31269375" />
+              <property role="gqqTy" value="32.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3Lw" role="37mRID">
+            <property role="37mO49" value="6053347500022578087" />
+            <node concept="gqqVs" id="5g1NREKQ3Lv" role="37mO4d">
+              <property role="gqqTZ" value="135.0" />
+              <property role="gqqTW" value="118.00054086914065" />
+              <property role="gqqTX" value="20.31269375" />
+              <property role="gqqTy" value="32.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3Ly" role="37mRID">
+            <property role="37mO49" value="6053347500022578079" />
+            <node concept="2VclpC" id="5g1NREKQ3Lx" role="37mO4d">
+              <node concept="2VclrF" id="5g1NREKQ3Lz" role="2Vcluh">
+                <property role="2Vclpx" value="321.0" />
+                <property role="2Vclpz" value="438.0" />
               </node>
-              <node concept="2VclrF" id="3bh1RFvEQzT" role="2Vcluh">
-                <property role="2Vclpx" value="22.31264375" />
-                <property role="2Vclpz" value="112.00039482116699" />
+              <node concept="2VclrF" id="5g1NREKQ3L$" role="2Vcluh">
+                <property role="2Vclpx" value="251.0" />
+                <property role="2Vclpz" value="416.5576411921994" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="5g1NREKQ3LA" role="37mRID">
+            <property role="37mO49" value="6053347500022578091" />
+            <node concept="2VclpC" id="5g1NREKQ3L_" role="37mO4d">
+              <node concept="2VclrF" id="5g1NREKQ3LB" role="2Vcluh">
+                <property role="2Vclpx" value="70.0" />
+                <property role="2Vclpz" value="164.0" />
               </node>
             </node>
           </node>
@@ -471,6 +605,16 @@
       </node>
     </node>
     <node concept="2VURXa" id="3bh1RFvziHa" role="1POhhj" />
+    <node concept="2VUHfc" id="5g1NREKPzec" role="1POhhj">
+      <ref role="2VUHf6" node="62cfieENdX5" resolve="Braking" />
+      <node concept="2VUHfq" id="5g1NREKPzee" role="2VUBrq">
+        <property role="TrG5h" value="braking algorithm malfunction" />
+        <node concept="19SGf9" id="5g1NREKPzeg" role="2VUHfi">
+          <node concept="19SUe$" id="5g1NREKPzeh" role="19SJt6" />
+        </node>
+      </node>
+    </node>
+    <node concept="2VURXa" id="5g1NREKPzfl" role="1POhhj" />
     <node concept="DuJXM" id="3bh1RFvziFV" role="1POhhj">
       <ref role="DuJYV" node="62cfieENdX5" resolve="Braking" />
       <node concept="DtCCM" id="3bh1RFvziFW" role="DuvRR">
@@ -485,6 +629,9 @@
           <node concept="3Ug1Ap" id="3bh1RFvziIG" role="3anSQx">
             <ref role="3Ug1Ao" node="62cfieENdX6" resolve="speed" />
           </node>
+        </node>
+        <node concept="3$NFnr" id="5g1NREKPzgs" role="26Ggtk">
+          <ref role="3$NFno" node="5g1NREKPzee" resolve="braking algorithm malfunction" />
         </node>
       </node>
     </node>

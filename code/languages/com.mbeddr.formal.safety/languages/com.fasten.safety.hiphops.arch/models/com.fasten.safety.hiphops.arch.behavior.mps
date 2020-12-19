@@ -127,7 +127,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1TeaL8Rem0F">
-    <ref role="13h7C2" to="zsc5:1TeaL8Rddhw" resolve="ComponentFailurePropagationLogic" />
+    <ref role="13h7C2" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
     <node concept="13hLZK" id="1TeaL8Rem0G" role="13h7CW">
       <node concept="3clFbS" id="1TeaL8Rem0H" role="2VODD2" />
     </node>

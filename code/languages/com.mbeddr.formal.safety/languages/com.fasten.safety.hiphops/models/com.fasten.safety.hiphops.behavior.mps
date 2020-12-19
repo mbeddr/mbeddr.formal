@@ -49,7 +49,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="1TeaL8RddbN">
-    <ref role="13h7C2" to="ii8j:2BJmaNdxL$K" resolve="ComponentFailurePropagationLogicBase" />
+    <ref role="13h7C2" to="ii8j:2BJmaNdxL$K" resolve="IFFMEABase" />
     <node concept="13i0hz" id="1TeaL8RddbY" role="13h7CS">
       <property role="TrG5h" value="computeFaultTree" />
       <property role="13i0it" value="true" />
