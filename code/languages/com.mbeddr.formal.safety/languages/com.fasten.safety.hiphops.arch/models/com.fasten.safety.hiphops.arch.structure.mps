@@ -46,7 +46,7 @@
     <property role="EcuMT" value="2183730226556884064" />
     <property role="TrG5h" value="IFFMEA" />
     <property role="34LRSv" value="IF-FMEA" />
-    <property role="R4oN_" value="failure propagation logic (HiP-HOPS)" />
+    <property role="R4oN_" value="interface FMEA (HiP-HOPS)" />
     <ref role="1TJDcQ" to="ii8j:2BJmaNdxL$K" resolve="IFFMEABase" />
     <node concept="1TJgyj" id="1TeaL8RddiD" role="1TKVEi">
       <property role="IQ2ns" value="2183730226556884137" />
@@ -63,7 +63,8 @@
   <node concept="1TIwiD" id="1TeaL8Rdz2m">
     <property role="EcuMT" value="2183730226556973206" />
     <property role="TrG5h" value="LogicalTypeFailureModes" />
-    <property role="34LRSv" value="type failure modes (HiP-HOPS)" />
+    <property role="34LRSv" value="type failure modes" />
+    <property role="R4oN_" value="failure modes associated to types of ports (HiP-HOPS)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1TeaL8Rdz2r" role="1TKVEi">
       <property role="IQ2ns" value="2183730226556973211" />
