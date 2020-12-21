@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.fmea/fasten.safety.fmea.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.ft/fasten.safety.ft.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.ext/fasten.safety.gsn.ext.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.formal/fasten.safety.gsn.formal.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn/fasten.safety.gsn.devkit" folder="" />
