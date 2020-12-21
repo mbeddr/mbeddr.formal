@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/devkits/com.fasten.safety.fmea.devkit/com.fasten.safety.fmea.devkit.devkit" folder="fmea" />
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.fmea/fasten.safety.fmea.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.ext/fasten.safety.gsn.ext.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.formal/fasten.safety.gsn.formal.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn/fasten.safety.gsn.devkit" folder="" />
@@ -30,6 +30,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.fmea.sandbox/com.fasten.safety.fmea.sandbox.msd" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.sandbox/com.fasten.safety.ft.sandbox.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.rcp.pluginSolution/com.fasten.safety.rcp.pluginSolution.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.cbd.pluginSolution/com.mbeddr.formal.safety.gsn.cbd.pluginSolution.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.patterns.lib/com.mbeddr.formal.safety.gsn.patterns.lib.msd" folder="gsn" />

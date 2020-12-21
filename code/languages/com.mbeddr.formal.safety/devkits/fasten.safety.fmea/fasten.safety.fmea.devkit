@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.safety.fmea" uuid="bf74abbc-7521-4990-984c-b43ecaf32ba1">
+  <exported-language name="b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)" />
+  <exported-language name="1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)" />
+  <exported-language name="c6d7e8a3-3d80-479a-8799-a11fe1902b1c(com.fasten.safety.hiphops)" />
+  <exported-language name="521724dc-29ef-4d5a-9c15-25f6b680b809(com.fasten.safety.hiphops.arch)" />
+</dev-kit>
+
