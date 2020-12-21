@@ -3,18 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
-    <use id="00a2e56d-f195-410b-8afe-5a3c7e505658" name="com.mbeddr.formal.safety.gsn.confidence.acp" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="00a2e56d-f195-410b-8afe-5a3c7e505658" name="com.mbeddr.formal.safety.gsn.confidence.acp">
-      <concept id="4993311705427915302" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AcpRefWord" flags="ng" index="jBRMG" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -22,6 +19,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -43,21 +43,14 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
     </language>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
-        <child id="1196350785114" name="quotedNode" index="2c44tc" />
-      </concept>
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
         <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -65,6 +58,12 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
+      <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
+        <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
@@ -100,13 +99,6 @@
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
-    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
-      <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
-      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
-      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
-        <child id="4266958635905312315" name="text" index="2vnaTY" />
-      </concept>
-    </language>
   </registry>
   <node concept="37WguZ" id="4lbNCDmP5Hx">
     <property role="TrG5h" value="confidenceArgumentFactory" />
@@ -120,16 +112,51 @@
               <node concept="3Tqbb2" id="4lbNCDmPsUa" role="1tU5fm">
                 <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
               </node>
-              <node concept="2c44tf" id="4lbNCDmPttI" role="33vP2m">
-                <node concept="2vn7WC" id="4lbNCDmPttJ" role="2c44tc">
-                  <property role="TrG5h" value="G-C.01" />
-                  <node concept="19SGf9" id="4lbNCDmPttK" role="2vnaTY">
-                    <node concept="19SUe$" id="4lbNCDmPttL" role="19SJt6">
-                      <property role="19SUeA" value="All defeaters for&#10;" />
+              <node concept="2pJPEk" id="4eD_5l3gkRn" role="33vP2m">
+                <node concept="2pJPED" id="4eD_5l3gm45" role="2pJPEn">
+                  <ref role="2pJxaS" to="py52:3GRi4m$qNtH" resolve="Goal" />
+                  <node concept="2pJxcG" id="4eD_5l3gm4j" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="WxPPo" id="4eD_5l3gm4I" role="28ntcv">
+                      <node concept="Xl_RD" id="4eD_5l3gm4H" role="WxPPp">
+                        <property role="Xl_RC" value="G-C.01" />
+                      </node>
                     </node>
-                    <node concept="jBRMG" id="4lbNCDmPttM" role="19SJt6" />
-                    <node concept="19SUe$" id="4lbNCDmPttN" role="19SJt6">
-                      <property role="19SUeA" value=" &#10;have been eliminated." />
+                  </node>
+                  <node concept="2pIpSj" id="4eD_5l3gm5p" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
+                    <node concept="2pJPED" id="4eD_5l3gmag" role="28nt2d">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                      <node concept="2pIpSj" id="4eD_5l3gmau" role="2pJxcM">
+                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                        <node concept="36be1Y" id="4eD_5l3gmFu" role="28nt2d">
+                          <node concept="2pJPED" id="4eD_5l3gmKu" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="4eD_5l3gmN0" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="4eD_5l3gmPF" role="28ntcv">
+                                <node concept="Xl_RD" id="4eD_5l3gmPE" role="WxPPp">
+                                  <property role="Xl_RC" value="All defeaters for \n" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pJPED" id="4eD_5l3gn2d" role="36be1Z">
+                            <ref role="2pJxaS" to="kqaf:4lbNCDmPb8A" resolve="AcpRefWord" />
+                          </node>
+                          <node concept="2pJPED" id="4eD_5l3gn9M" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="4eD_5l3gncv" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="4eD_5l3gnfc" role="28ntcv">
+                                <node concept="Xl_RD" id="4eD_5l3gnfb" role="WxPPp">
+                                  <property role="Xl_RC" value="\n have been eliminated" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -157,12 +184,37 @@
               <node concept="3Tqbb2" id="4lbNCDmPu3C" role="1tU5fm">
                 <ref role="ehGHo" to="py52:3GRi4m$rlnF" resolve="Strategy" />
               </node>
-              <node concept="2c44tf" id="4lbNCDmPuhH" role="33vP2m">
-                <node concept="2vmxQI" id="4lbNCDmPD4P" role="2c44tc">
-                  <property role="TrG5h" value="S01" />
-                  <node concept="19SGf9" id="4lbNCDmPD4Q" role="2vnaTY">
-                    <node concept="19SUe$" id="4lbNCDmPD4R" role="19SJt6">
-                      <property role="19SUeA" value="Argument on rebutting, &#10;undercutting and&#10;undermining defeaters." />
+              <node concept="2pJPEk" id="4eD_5l3gry7" role="33vP2m">
+                <node concept="2pJPED" id="4eD_5l3gry8" role="2pJPEn">
+                  <ref role="2pJxaS" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+                  <node concept="2pJxcG" id="4eD_5l3gry9" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="WxPPo" id="4eD_5l3grya" role="28ntcv">
+                      <node concept="Xl_RD" id="4eD_5l3gryb" role="WxPPp">
+                        <property role="Xl_RC" value="S01" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="4eD_5l3gryc" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
+                    <node concept="2pJPED" id="4eD_5l3gryd" role="28nt2d">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                      <node concept="2pIpSj" id="4eD_5l3grye" role="2pJxcM">
+                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                        <node concept="36be1Y" id="4eD_5l3gryf" role="28nt2d">
+                          <node concept="2pJPED" id="4eD_5l3gryg" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="4eD_5l3gryh" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="4eD_5l3gryi" role="28ntcv">
+                                <node concept="Xl_RD" id="4eD_5l3gryj" role="WxPPp">
+                                  <property role="Xl_RC" value="Argument on rebutting, \nundercutting and\nundermining defeaters." />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -190,12 +242,37 @@
               <node concept="3Tqbb2" id="4lbNCDmPBvj" role="1tU5fm">
                 <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
               </node>
-              <node concept="2c44tf" id="4lbNCDmPBvk" role="33vP2m">
-                <node concept="2vn7WC" id="4lbNCDmPBvl" role="2c44tc">
-                  <property role="TrG5h" value="G-C.02" />
-                  <node concept="19SGf9" id="4lbNCDmPBvm" role="2vnaTY">
-                    <node concept="19SUe$" id="4lbNCDmPBvn" role="19SJt6">
-                      <property role="19SUeA" value="All rebubtting &#10;defeaters have &#10;been eliminated." />
+              <node concept="2pJPEk" id="4eD_5l3gvXG" role="33vP2m">
+                <node concept="2pJPED" id="4eD_5l3gvXH" role="2pJPEn">
+                  <ref role="2pJxaS" to="py52:3GRi4m$qNtH" resolve="Goal" />
+                  <node concept="2pJxcG" id="4eD_5l3gvXI" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="WxPPo" id="4eD_5l3gvXJ" role="28ntcv">
+                      <node concept="Xl_RD" id="4eD_5l3gvXK" role="WxPPp">
+                        <property role="Xl_RC" value="G-C.02" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="4eD_5l3gvXL" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
+                    <node concept="2pJPED" id="4eD_5l3gvXM" role="28nt2d">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                      <node concept="2pIpSj" id="4eD_5l3gvXN" role="2pJxcM">
+                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                        <node concept="36be1Y" id="4eD_5l3gvXO" role="28nt2d">
+                          <node concept="2pJPED" id="4eD_5l3gvXP" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="4eD_5l3gvXQ" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="4eD_5l3gvXR" role="28ntcv">
+                                <node concept="Xl_RD" id="4eD_5l3gvXS" role="WxPPp">
+                                  <property role="Xl_RC" value="All rebubtting \ndefeaters have \nbeen eliminated." />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -223,12 +300,37 @@
               <node concept="3Tqbb2" id="4lbNCDmPuRc" role="1tU5fm">
                 <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
               </node>
-              <node concept="2c44tf" id="4lbNCDmPvk6" role="33vP2m">
-                <node concept="2vn7WC" id="4lbNCDmPvk7" role="2c44tc">
-                  <property role="TrG5h" value="G-C.03" />
-                  <node concept="19SGf9" id="4lbNCDmPvk8" role="2vnaTY">
-                    <node concept="19SUe$" id="4lbNCDmPvk9" role="19SJt6">
-                      <property role="19SUeA" value="All undercutting &#10;defeaters have &#10;been eliminated." />
+              <node concept="2pJPEk" id="4eD_5l3g_3e" role="33vP2m">
+                <node concept="2pJPED" id="4eD_5l3g_3f" role="2pJPEn">
+                  <ref role="2pJxaS" to="py52:3GRi4m$qNtH" resolve="Goal" />
+                  <node concept="2pJxcG" id="4eD_5l3g_3g" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="WxPPo" id="4eD_5l3g_3h" role="28ntcv">
+                      <node concept="Xl_RD" id="4eD_5l3g_3i" role="WxPPp">
+                        <property role="Xl_RC" value="G-C.01" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="4eD_5l3g_3j" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
+                    <node concept="2pJPED" id="4eD_5l3g_3k" role="28nt2d">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                      <node concept="2pIpSj" id="4eD_5l3g_3l" role="2pJxcM">
+                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                        <node concept="36be1Y" id="4eD_5l3g_3m" role="28nt2d">
+                          <node concept="2pJPED" id="4eD_5l3g_3n" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="4eD_5l3g_3o" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="4eD_5l3g_3p" role="28ntcv">
+                                <node concept="Xl_RD" id="4eD_5l3g_3q" role="WxPPp">
+                                  <property role="Xl_RC" value="All undercutting \ndefeaters have \nbeen eliminated." />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -256,12 +358,37 @@
               <node concept="3Tqbb2" id="4lbNCDmPvUr" role="1tU5fm">
                 <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
               </node>
-              <node concept="2c44tf" id="4lbNCDmPw$y" role="33vP2m">
-                <node concept="2vn7WC" id="4lbNCDmPw$z" role="2c44tc">
-                  <property role="TrG5h" value="G-C.04" />
-                  <node concept="19SGf9" id="4lbNCDmPw$$" role="2vnaTY">
-                    <node concept="19SUe$" id="4lbNCDmPw$_" role="19SJt6">
-                      <property role="19SUeA" value="All undermining &#10;defeaters have &#10;been eliminated." />
+              <node concept="2pJPEk" id="4eD_5l3gEfn" role="33vP2m">
+                <node concept="2pJPED" id="4eD_5l3gEfo" role="2pJPEn">
+                  <ref role="2pJxaS" to="py52:3GRi4m$qNtH" resolve="Goal" />
+                  <node concept="2pJxcG" id="4eD_5l3gEfp" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="WxPPo" id="4eD_5l3gEfq" role="28ntcv">
+                      <node concept="Xl_RD" id="4eD_5l3gEfr" role="WxPPp">
+                        <property role="Xl_RC" value="G-C.04" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="4eD_5l3gEfs" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
+                    <node concept="2pJPED" id="4eD_5l3gEft" role="28nt2d">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                      <node concept="2pIpSj" id="4eD_5l3gEfu" role="2pJxcM">
+                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                        <node concept="36be1Y" id="4eD_5l3gEfv" role="28nt2d">
+                          <node concept="2pJPED" id="4eD_5l3gEfw" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="4eD_5l3gEfx" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="4eD_5l3gEfy" role="28ntcv">
+                                <node concept="Xl_RD" id="4eD_5l3gEfz" role="WxPPp">
+                                  <property role="Xl_RC" value="All undermining \ndefeaters have \nbeen eliminated." />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
