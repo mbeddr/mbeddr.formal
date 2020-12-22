@@ -2,6 +2,7 @@
 
 ## Homepage
 - FASTEN Home - https://sites.google.com/site/fastenroot/
+- Discussion group: fasten-support at googlegroups dot com
 
 ## Versions
 - Get the [latest release](https://github.com/mbeddr/mbeddr.formal/releases)
