@@ -3,6 +3,10 @@
   <extendedDevKits>
     <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
     <extendedDevKit>3970a543-1808-4b9f-a378-71f15d96d819(fasten.safety.hara)</extendedDevKit>
+    <extendedDevKit>bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)</extendedDevKit>
+    <extendedDevKit>a43bbdef-33e6-44ad-a995-6accad936f48(fasten.safety.ft)</extendedDevKit>
+    <extendedDevKit>b80b29fe-1cc4-4054-aee5-cb5c2049985a(fasten.safety.gsn.confidence)</extendedDevKit>
+    <extendedDevKit>7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)</extendedDevKit>
   </extendedDevKits>
 </dev-kit>
 
