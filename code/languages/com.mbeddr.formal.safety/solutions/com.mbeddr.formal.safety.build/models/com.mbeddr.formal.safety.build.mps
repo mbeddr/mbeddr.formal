@@ -769,6 +769,9 @@
       <node concept="m$f5U" id="7he_lUuvms1" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvh8_" resolve="fasten.safety.gsn.devkit" />
       </node>
+      <node concept="m$f5U" id="4eD_5l3mOpY" role="m$_yh">
+        <ref role="m$f5T" node="4eD_5l3mKZ4" resolve="fasten.safety.gsn.confidence.devkit" />
+      </node>
       <node concept="m$f5U" id="7he_lUu$WCt" role="m$_yh">
         <ref role="m$f5T" node="7he_lUu$RbH" resolve="fasten.safety.gsn.ext.devkit" />
       </node>
@@ -777,6 +780,12 @@
       </node>
       <node concept="m$f5U" id="7he_lUuvmGP" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvkGI" resolve="fasten.safety.hara.devkit" />
+      </node>
+      <node concept="m$f5U" id="4eD_5l3mUfS" role="m$_yh">
+        <ref role="m$f5T" node="4eD_5l3mOyE" resolve="fasten.safety.fmea.devkit" />
+      </node>
+      <node concept="m$f5U" id="4eD_5l3mTPV" role="m$_yh">
+        <ref role="m$f5T" node="4eD_5l3mRuX" resolve="fasten.safety.ft.devkit" />
       </node>
     </node>
     <node concept="m$_wf" id="1FlxJGBMqg9" role="3989C9">
@@ -9972,6 +9981,32 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="4eD_5l3mKZ4" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.gsn.confidence.devkit" />
+      <node concept="3LEwk6" id="4eD_5l3mN0R" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.gsn.confidence" />
+        <property role="3LESm3" value="b80b29fe-1cc4-4054-aee5-cb5c2049985a" />
+        <node concept="398BVA" id="4eD_5l3mN9u" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="4eD_5l3mN9v" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4eD_5l3mN9w" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.gsn.confidence" />
+              <node concept="2Ry0Ak" id="4eD_5l3mNzf" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.gsn.confidence.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mO8x" role="3LEDUa">
+          <ref role="3LEDTV" node="4eD_5l3aLAv" resolve="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer" />
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mO8y" role="3LEDUa">
+          <ref role="3LEDTV" node="4eD_5l3ft1H" resolve="com.mbeddr.formal.safety.gsn.confidence.acp" />
+        </node>
+      </node>
+    </node>
     <node concept="2G$12M" id="7he_lUu$RbH" role="3989C9">
       <property role="TrG5h" value="fasten.safety.gsn.ext.devkit" />
       <node concept="3LEwk6" id="7he_lUu$RbI" role="2G$12L">
@@ -10065,6 +10100,64 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="4eD_5l3mOyE" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.fmea.devkit" />
+      <node concept="3LEwk6" id="4eD_5l3mOyF" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.fmea" />
+        <property role="3LESm3" value="bf74abbc-7521-4990-984c-b43ecaf32ba1" />
+        <node concept="398BVA" id="4eD_5l3mOyG" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="4eD_5l3mOyH" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4eD_5l3mOyI" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.fmea" />
+              <node concept="2Ry0Ak" id="4eD_5l3mQbe" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.fmea.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mQKw" role="3LEDUa">
+          <ref role="3LEDTV" node="73rWdFZqzKL" resolve="com.fasten.safety.fmea" />
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mQKx" role="3LEDUa">
+          <ref role="3LEDTV" node="73rWdFZqBpF" resolve="com.fasten.safety.fmea.arch" />
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mQKy" role="3LEDUa">
+          <ref role="3LEDTV" node="4eD_5l3aAE2" resolve="com.fasten.safety.hiphops" />
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mQKz" role="3LEDUa">
+          <ref role="3LEDTV" node="4eD_5l3aC7g" resolve="com.fasten.safety.hiphops.arch" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="4eD_5l3mRuX" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.ft.devkit" />
+      <node concept="3LEwk6" id="4eD_5l3mRuY" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.ft" />
+        <property role="3LESm3" value="a43bbdef-33e6-44ad-a995-6accad936f48" />
+        <node concept="398BVA" id="4eD_5l3mRuZ" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="4eD_5l3mRv0" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4eD_5l3mRv1" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.ft" />
+              <node concept="2Ry0Ak" id="4eD_5l3mSZb" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.ft.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mT$t" role="3LEDUa">
+          <ref role="3LEDTV" node="73rWdFZqGo8" resolve="com.fasten.safety.ft" />
+        </node>
+        <node concept="3LEDTy" id="4eD_5l3mT$u" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
+      </node>
+    </node>
     <node concept="2G$12M" id="7he_lUuvmPg" role="3989C9">
       <property role="TrG5h" value="fasten.safety.devkit" />
       <node concept="3LEwk6" id="7he_lUuvmPh" role="2G$12L">
@@ -10088,6 +10181,18 @@
         </node>
         <node concept="3LEz8M" id="5TezZ1VejoB" role="3LEz9a">
           <ref role="3LEz8N" node="7he_lUuvkGJ" resolve="fasten.safety.hara" />
+        </node>
+        <node concept="3LEz8M" id="4eD_5l3mQK$" role="3LEz9a">
+          <ref role="3LEz8N" node="4eD_5l3mN0R" resolve="fasten.safety.gsn.confidence" />
+        </node>
+        <node concept="3LEz8M" id="4eD_5l3mQK_" role="3LEz9a">
+          <ref role="3LEz8N" node="7he_lUu$RbI" resolve="fasten.safety.gsn.ext" />
+        </node>
+        <node concept="3LEz8M" id="4eD_5l3mRm9" role="3LEz9a">
+          <ref role="3LEz8N" node="4eD_5l3mOyF" resolve="fasten.safety.fmea" />
+        </node>
+        <node concept="3LEz8M" id="4eD_5l3mUPj" role="3LEz9a">
+          <ref role="3LEz8N" node="4eD_5l3mRuY" resolve="fasten.safety.ft" />
         </node>
       </node>
     </node>
