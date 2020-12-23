@@ -2,7 +2,7 @@
 <model ref="r:d7ee43bf-4f3a-4083-9d0e-5a60aedfe5b8(com.fasten.safety.fmea.sandbox._010_smoke_dfmea)">
   <persistence version="9" />
   <languages>
-    <devkit ref="bf74abbc-7521-4990-984c-b43ecaf32ba1(com.fasten.safety.fmea.devkit)" />
+    <devkit ref="bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
