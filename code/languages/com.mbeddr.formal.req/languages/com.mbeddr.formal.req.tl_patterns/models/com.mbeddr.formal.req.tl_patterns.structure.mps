@@ -345,6 +345,12 @@
     <property role="34LRSv" value=", then S eventually holds" />
     <property role="R4oN_" value="response pattern" />
     <ref role="1TJDcQ" node="6hWVnwA1K97" resolve="OrderComponent" />
+    <node concept="PrWs8" id="4eD_5l3jOmj" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9hrMMz" resolve="ISpecWithTime" />
+    </node>
+    <node concept="PrWs8" id="4eD_5l3jOmk" role="PzmwI">
+      <ref role="PrY4T" node="6BEEv9htDpJ" resolve="ISpecWithProbability" />
+    </node>
     <node concept="1TJgyj" id="6hWVnwA1Kbj" role="1TKVEi">
       <property role="IQ2ns" value="7240923401194767059" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
