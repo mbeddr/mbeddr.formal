@@ -354,6 +354,9 @@
     <node concept="1XypPU" id="_wUu$TX70T" role="1X_0G_">
       <ref role="SrP08" node="_wUu$TX70r" resolve="Driver" />
       <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
+      <node concept="Sqzvu" id="3I9hGreIT7k" role="Sq$B$">
+        <property role="TrG5h" value="Activate CEM Function" />
+      </node>
       <node concept="Sqzvu" id="41_NtXJu_8J" role="Sq$B$">
         <property role="TrG5h" value="Deactivate CEM Function" />
       </node>
@@ -483,7 +486,7 @@
         <node concept="3XErhT" id="41_NtXJu_8B" role="1E0ucd" />
       </node>
       <node concept="1E0nOJ" id="41_NtXJu_8O" role="1E0nOC">
-        <ref role="1E0n_N" node="_wUu$TX70U" resolve="Activate CEM Function" />
+        <ref role="1E0n_N" node="3I9hGreIT7k" resolve="Activate CEM Function" />
         <node concept="1E0uc6" id="41_NtXJu_8P" role="1E0tWM">
           <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_01" />
           <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
