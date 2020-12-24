@@ -257,6 +257,10 @@
         <ref role="1NtTu8" to="s9pq:6R91tEKNYrx" resolve="externalFiles" />
         <node concept="2iRkQZ" id="6R91tEKNYHb" role="2czzBx" />
       </node>
+      <node concept="3F0ifn" id="7ktuJEDw84" role="3EZMnx" />
+      <node concept="PMmxH" id="1TD_kqsSdSb" role="3EZMnx">
+        <ref role="PMmxG" to="g35p:1TD_kqsReb9" resolve="AttributesInInspector" />
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="3wuU_o8fzxU">
@@ -877,6 +881,10 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="7ktuJEDwFC" role="3EZMnx" />
+      <node concept="PMmxH" id="7ktuJEDrgV" role="3EZMnx">
+        <ref role="PMmxG" to="g35p:1TD_kqsReb9" resolve="AttributesInInspector" />
       </node>
     </node>
   </node>

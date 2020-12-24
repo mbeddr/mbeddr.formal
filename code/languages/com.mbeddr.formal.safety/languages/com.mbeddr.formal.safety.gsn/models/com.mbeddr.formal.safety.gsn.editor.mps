@@ -912,8 +912,15 @@
     <property role="TrG5h" value="TextInInspector" />
     <property role="3GE5qa" value="base" />
     <ref role="1XX52x" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
-    <node concept="PMmxH" id="4q8AAJKNO4X" role="2wV5jI">
-      <ref role="PMmxG" node="4q8AAJKNO1e" resolve="NameDescriptionComponent" />
+    <node concept="3EZMnI" id="1TD_kqsRmha" role="2wV5jI">
+      <node concept="2iRkQZ" id="1TD_kqsRmhb" role="2iSdaV" />
+      <node concept="PMmxH" id="4q8AAJKNO4X" role="3EZMnx">
+        <ref role="PMmxG" node="4q8AAJKNO1e" resolve="NameDescriptionComponent" />
+      </node>
+      <node concept="3F0ifn" id="1TD_kqsRmhk" role="3EZMnx" />
+      <node concept="PMmxH" id="1TD_kqsRmhw" role="3EZMnx">
+        <ref role="PMmxG" node="1TD_kqsReb9" resolve="AttributesInInspector" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2ccN23oa2IB">
@@ -6952,23 +6959,6 @@
           <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         </node>
       </node>
-      <node concept="3F0ifn" id="6dwPixfdDSh" role="3EZMnx" />
-      <node concept="3EZMnI" id="6dwPixfdDSA" role="3EZMnx">
-        <node concept="VPM3Z" id="6dwPixfdDSC" role="3F10Kt" />
-        <node concept="3F0ifn" id="6dwPixfdDSE" role="3EZMnx">
-          <property role="3F0ifm" value="Attributes:" />
-        </node>
-        <node concept="l2Vlx" id="6dwPixfdDSF" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="6dwPixfdDSU" role="3EZMnx">
-        <node concept="VPM3Z" id="6dwPixfdDSV" role="3F10Kt" />
-        <node concept="3XFhqQ" id="6dwPixfdDTf" role="3EZMnx" />
-        <node concept="3F2HdR" id="6dwPixfdDTl" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:6dwPixfdDSe" resolve="attributes" />
-          <node concept="2iRkQZ" id="6dwPixfdDTr" role="2czzBx" />
-        </node>
-        <node concept="l2Vlx" id="6dwPixfdDSX" role="2iSdaV" />
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="2V4rzbp94Pn">
@@ -10733,6 +10723,30 @@
         <node concept="l2Vlx" id="48_A4oY35Yz" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="48_A4oY35Y$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1TD_kqsReb9">
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="AttributesInInspector" />
+    <ref role="1XX52x" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="3EZMnI" id="1TD_kqsRmgy" role="2wV5jI">
+      <node concept="3EZMnI" id="1TD_kqsRmgG" role="3EZMnx">
+        <node concept="VPM3Z" id="1TD_kqsRmgH" role="3F10Kt" />
+        <node concept="3F0ifn" id="1TD_kqsRmgI" role="3EZMnx">
+          <property role="3F0ifm" value="Attributes:" />
+        </node>
+        <node concept="l2Vlx" id="1TD_kqsRmgJ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1TD_kqsRmgK" role="3EZMnx">
+        <node concept="VPM3Z" id="1TD_kqsRmgL" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1TD_kqsRmgM" role="3EZMnx" />
+        <node concept="3F2HdR" id="1TD_kqsRmgN" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:6dwPixfdDSe" resolve="attributes" />
+          <node concept="2iRkQZ" id="1TD_kqsRmgO" role="2czzBx" />
+        </node>
+        <node concept="l2Vlx" id="1TD_kqsRmgP" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="1TD_kqsRmg_" role="2iSdaV" />
     </node>
   </node>
 </model>
