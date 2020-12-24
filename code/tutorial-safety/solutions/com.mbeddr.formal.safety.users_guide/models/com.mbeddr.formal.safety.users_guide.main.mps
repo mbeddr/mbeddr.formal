@@ -13,6 +13,7 @@
     <import index="io0z" ref="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_assurance_cases_gsn)" />
     <import index="xumq" ref="r:c5a55244-77a5-42ce-8f29-e1a72cf99b7f(_010_features._100_checkable_assurance_demo)" />
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
+    <import index="688z" ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -65,6 +66,7 @@
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="988357225295489881" name="com.mbeddr.doc.structure.TableOfContents" flags="ng" index="3xmJbL" />
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
@@ -674,6 +676,141 @@
     <node concept="1_0LV8" id="3I9hGreJf1A" role="1_0VJ0">
       <node concept="19SGf9" id="3I9hGreJf1B" role="1_0LWR">
         <node concept="19SUe$" id="3I9hGreJf2c" role="19SJt6" />
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="3I9hGreJfoL">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_030_safety_engineering_models" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1mvXsy" id="3I9hGreJfoM" role="1_0VJ0">
+      <property role="TrG5h" value="safety_engineering_models" />
+      <property role="1_0VJr" value="Safety Engineering Models" />
+      <node concept="1_0LV8" id="3I9hGreJfoN" role="1_0VJ0">
+        <node concept="19SGf9" id="3I9hGreJfoO" role="1_0LWR">
+          <node concept="19SUe$" id="3I9hGreJfoP" role="19SJt6">
+            <property role="19SUeA" value="FASTEN offers the possibility to perform several classical safety analyses as presented in the following." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="3I9hGreJfoQ" role="1_0VJ0">
+        <property role="TrG5h" value="dfmea" />
+        <property role="1_0VJr" value="Design Failure Modes and Effects Analysis (DFMEA)" />
+        <node concept="1_0LV8" id="3I9hGreJfpX" role="1_0VJ0">
+          <node concept="19SGf9" id="3I9hGreJfpY" role="1_0LWR">
+            <node concept="19SUe$" id="3I9hGreJfpZ" role="19SJt6">
+              <property role="19SUeA" value="At first we need to specify for each component types their failure modes." />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="3I9hGreJfql" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="3I9hGreJfqm" role="3z_lpI">
+            <node concept="2NCMab" id="3I9hGreJfqz" role="2NCMaf">
+              <ref role="2NCMaa" to="688z:4eD_5l3mJwO" resolve="_020_failure_modes_of_components" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="3I9hGreJfqN" role="1_0VJ0">
+          <node concept="19SGf9" id="3I9hGreJfqO" role="1_0LWR">
+            <node concept="19SUe$" id="3I9hGreJfqP" role="19SJt6">
+              <property role="19SUeA" value="Secondly, we need to specify the effects of failures on the system." />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="3I9hGreJfrn" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="3I9hGreJfro" role="3z_lpI">
+            <node concept="2NCMab" id="3I9hGreJfrF" role="2NCMaf">
+              <ref role="2NCMaa" to="688z:4eD_5l3mJyA" resolve="_030_failure_effects_on_system" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="3I9hGreJfpe" role="1_0VJ0">
+          <node concept="19SGf9" id="3I9hGreJfpf" role="1_0LWR">
+            <node concept="19SUe$" id="3I9hGreJfpg" role="19SJt6">
+              <property role="19SUeA" value="Thirdly, after failure modes specific to components and failure effects at system level are specified, we can perform a DFMEA analysis for a given architecture. In this analysis, the safety engineer investigates for each instance component from the architecture and all its failure modes the possible effects at a higher system level." />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="3I9hGreJfoR" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="3I9hGreJfoS" role="3z_lpI">
+            <node concept="2NCMab" id="3I9hGreJfpN" role="2NCMaf">
+              <ref role="2NCMaa" to="688z:4eD_5l3mJzG" resolve="_040_dfmea" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="3I9hGreJfva" role="1_0VJ0">
+        <property role="TrG5h" value="hip_hops" />
+        <property role="1_0VJr" value="Hierarchically Performed Hazard Origins and Propagation Studies (HiP-HOPS)" />
+        <node concept="1_0LV8" id="3I9hGreJfvz" role="1_0VJ0">
+          <node concept="19SGf9" id="3I9hGreJfv$" role="1_0LWR">
+            <node concept="19SUe$" id="3I9hGreJfv_" role="19SJt6">
+              <property role="19SUeA" value="FASTEN offers tool support for the HiP-HOPS analysis method described in em" />
+            </node>
+            <node concept="28N2ik" id="3I9hGreJfvE" role="19SJt6">
+              <node concept="19SGf9" id="3I9hGreJfvF" role="$DsGW">
+                <node concept="19SUe$" id="3I9hGreJfvG" role="19SJt6">
+                  <property role="19SUeA" value="&quot;Analysis and synthesis of the behaviour of complex programmable electronic systems in conditions of failure&quot;" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="3I9hGreJfvH" role="19SJt6">
+              <property role="19SUeA" value=".&#10;&#10;Firstly, failure modes of interfaces have to be modeled as exemplified below" />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="3I9hGreJfvW" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="3I9hGreJfvX" role="3z_lpI">
+            <node concept="2NCMab" id="3I9hGreJfw8" role="2NCMaf">
+              <ref role="2NCMaa" to="688z:1TeaL8RdKfy" resolve="_210_failure_modes" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="3I9hGreJfwm" role="1_0VJ0">
+          <node concept="19SGf9" id="3I9hGreJfwn" role="1_0LWR">
+            <node concept="19SUe$" id="3I9hGreJfwo" role="19SJt6">
+              <property role="19SUeA" value="Secondly, interface-oriented FMEAs (IFMEA) have to created in order to express for atomic components how output failures originate from input failures and components' malfunction. " />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="3I9hGreJfwE" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="3I9hGreJfwF" role="3z_lpI">
+            <node concept="2NCMab" id="3I9hGreJfx0" role="2NCMaf">
+              <ref role="2NCMaa" to="688z:4eD_5l3mJEf" resolve="_220_IFMEAs" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="3I9hGreJfwB" role="1_0VJ0">
+          <node concept="19SGf9" id="3I9hGreJfwC" role="1_0LWR">
+            <node concept="19SUe$" id="3I9hGreJfwD" role="19SJt6">
+              <property role="19SUeA" value="Thirdly, using an intention (Alt+Enter) on an architecture (" />
+            </node>
+            <node concept="28N2ik" id="3I9hGreJfSO" role="19SJt6">
+              <node concept="19SGf9" id="3I9hGreJfSP" role="$DsGW">
+                <node concept="19SUe$" id="3I9hGreJfSQ" role="19SJt6">
+                  <property role="19SUeA" value="assembly" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="3I9hGreJfSR" role="19SJt6">
+              <property role="19SUeA" value="), the fault tree can be automatically synthethised based on the failure modes of inputs, the failure propagation rules in atomic components, and additional failures originating from within components. " />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpU" id="3I9hGreJfx3" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="2NCZwO" id="3I9hGreJfx4" role="3z_lpI">
+            <node concept="2NCMab" id="3I9hGreJfS3" role="2NCMaf">
+              <ref role="2NCMaa" to="688z:1TeaL8RdujH" resolve="_200_arch" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
