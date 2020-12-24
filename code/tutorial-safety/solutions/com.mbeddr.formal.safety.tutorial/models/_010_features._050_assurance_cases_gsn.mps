@@ -33,12 +33,28 @@
         <property id="4766383208097907856" name="weight" index="1WdpNm" />
       </concept>
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence">
+      <concept id="4043927170651692617" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.ExternalEvidenceDocument" flags="ng" index="K87gv">
+        <property id="3284458703653091389" name="savedHashCode" index="FewnR" />
+        <property id="5518589349818288912" name="updateDate" index="HIrNm" />
+        <child id="4043927170651692618" name="document" index="K87gs" />
+      </concept>
+      <concept id="7910860657280411360" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.DocumentBasedExternalEvidenceSolution" flags="ng" index="3t1IcU">
+        <child id="7910860657280411361" name="externalFiles" index="3t1IcV" />
       </concept>
     </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
@@ -1139,6 +1155,93 @@
       <node concept="1WdpKc" id="2czCwT$U6gD" role="1Wbb7D">
         <property role="1WdpNm" value="1.0f" />
       </node>
+    </node>
+  </node>
+  <node concept="2vn7XN" id="1TD_kqsR8Z6">
+    <property role="TrG5h" value="_040_linking_external_documents" />
+    <node concept="37mRI7" id="1TD_kqsR91W" role="lGtFl">
+      <node concept="37mRIm" id="1TD_kqsR91X" role="37mRID">
+        <property role="37mO49" value="2191446824204406785" />
+        <node concept="gqqVs" id="1TD_kqsR91V" role="37mO4d">
+          <property role="gqqTZ" value="181.0" />
+          <property role="gqqTW" value="149.0" />
+          <property role="gqqTX" value="152.0" />
+          <property role="gqqTy" value="45.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1TD_kqsR938" role="37mRID">
+        <property role="37mO49" value="2191446824204406910" />
+        <node concept="gqqVs" id="1TD_kqsR937" role="37mO4d">
+          <property role="gqqTZ" value="199.0" />
+          <property role="gqqTW" value="32.0" />
+          <property role="gqqTX" value="104.0" />
+          <property role="gqqTy" value="55.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1TD_kqsR981" role="37mRID">
+        <property role="37mO49" value="2191446824204407167" />
+        <node concept="gqqVs" id="1TD_kqsR980" role="37mO4d">
+          <property role="gqqTZ" value="150.0" />
+          <property role="gqqTW" value="178.0" />
+          <property role="gqqTX" value="207.0" />
+          <property role="gqqTy" value="93.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1TD_kqsR9a0" role="37mRID">
+        <property role="37mO49" value="2191446824204407363" />
+        <node concept="2VclpC" id="1TD_kqsR99Z" role="37mO4d">
+          <node concept="3ul5H1" id="1TD_kqsR9a1" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="1TD_kqsR9a2" role="3ul5Gz">
+              <node concept="2VclrF" id="1TD_kqsR9a3" role="3wpmZR">
+                <property role="2Vclpx" value="278.0" />
+                <property role="2Vclpz" value="137.0" />
+              </node>
+              <node concept="2VclrF" id="1TD_kqsR9a4" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1TD_kqsR91Y" role="2vn1q5">
+      <property role="TrG5h" value="G01" />
+      <node concept="19SGf9" id="1TD_kqsR91Z" role="2vnaTY">
+        <node concept="19SUe$" id="1TD_kqsR920" role="19SJt6">
+          <property role="19SUeA" value="Function X is &#10;correctly implemented." />
+        </node>
+      </node>
+    </node>
+    <node concept="3t1IcU" id="1TD_kqsR95Z" role="2vn1q5">
+      <property role="TrG5h" value="S01" />
+      <node concept="19SGf9" id="1TD_kqsR960" role="2vnaTY">
+        <node concept="19SUe$" id="1TD_kqsR961" role="19SJt6">
+          <property role="19SUeA" value="Test results have been produced &#10;by the CI pipeline and have been&#10;manually reviewed." />
+        </node>
+      </node>
+      <node concept="K87gv" id="1TD_kqsR972" role="3t1IcV">
+        <property role="FewnR" value="kxhd7BAD1Mqh7l1w9iUT2A==" />
+        <property role="HIrNm" value="12/24/2020 12:58:42" />
+        <node concept="3NXOOs" id="1TD_kqsR97Y" role="K87gs">
+          <property role="3N1Lgt" value="external_documents/evidences/test_results_1.xml" />
+        </node>
+      </node>
+      <node concept="K87gv" id="7ktuJEDB3D" role="3t1IcV">
+        <property role="FewnR" value="yuXYugRmTP40IHyZ8R8JoQ==" />
+        <property role="HIrNm" value="12/24/2020 13:05:07" />
+        <node concept="3NXOOs" id="7ktuJEDB4B" role="K87gs">
+          <property role="3N1Lgt" value="external_documents/evidences/test_results_2.xml" />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1TD_kqsR993" role="2vhqc$">
+      <ref role="3VeSjP" node="1TD_kqsR91Y" resolve="G01" />
+      <ref role="3VeSjQ" node="1TD_kqsR95Z" resolve="S01" />
     </node>
   </node>
 </model>

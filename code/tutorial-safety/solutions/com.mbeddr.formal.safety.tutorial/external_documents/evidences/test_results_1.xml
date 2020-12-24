@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- a description of the JUnit XML format and how Jenkins parses it. See also junit.xsd -->
+
+<testsuite tests="2" errors="0">
+    <testcase classname="foo1" name="ASuccessfulTest"/>
+    <testcase classname="foo2" name="AnotherSuccessfulTest"/>
+</testsuite>
