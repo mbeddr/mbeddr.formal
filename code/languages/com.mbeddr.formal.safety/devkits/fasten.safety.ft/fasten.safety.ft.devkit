@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.safety.ft" uuid="a43bbdef-33e6-44ad-a995-6accad936f48">
+  <exported-language name="ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)" />
+  <exported-language name="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" />
+</dev-kit>
+

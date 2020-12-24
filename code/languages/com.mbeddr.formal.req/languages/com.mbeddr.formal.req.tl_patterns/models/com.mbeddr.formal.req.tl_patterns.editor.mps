@@ -37,6 +37,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -361,6 +362,12 @@
         <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="l2Vlx" id="6hWVnwA1Kbq" role="2iSdaV" />
+      <node concept="PMmxH" id="4eD_5l3jOza" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9hrMN1" resolve="TimedSpecEditorComponent" />
+      </node>
+      <node concept="PMmxH" id="4eD_5l3jOzb" role="3EZMnx">
+        <ref role="PMmxG" node="6BEEv9htDxW" resolve="ProbabilitySpecEditorComponent" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6hWVnwA1KbR">
@@ -564,6 +571,7 @@
     <node concept="PMmxH" id="1Tg5$nepcbE" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
+      <node concept="VPxyj" id="4eD_5l3kiXE" role="3F10Kt" />
     </node>
   </node>
   <node concept="24kQdi" id="1Tg5$nepcgW">

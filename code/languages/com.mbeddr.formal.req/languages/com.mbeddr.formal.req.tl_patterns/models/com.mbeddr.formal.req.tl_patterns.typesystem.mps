@@ -163,7 +163,7 @@
             <node concept="1Wc70l" id="6BEEv9hzTfH" role="2MkoU_">
               <node concept="2dkUwp" id="6BEEv9hzU8A" role="3uHU7w">
                 <node concept="3cmrfG" id="6BEEv9hzU9g" role="3uHU7w">
-                  <property role="3cmrfH" value="1" />
+                  <property role="3cmrfH" value="100" />
                 </node>
                 <node concept="37vLTw" id="6BEEv9hzTzI" role="3uHU7B">
                   <ref role="3cqZAo" node="6BEEv9hzTrR" resolve="dv" />
@@ -179,7 +179,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="6BEEv9hzUe9" role="2MkJ7o">
-              <property role="Xl_RC" value="probability should be between 0 and 1" />
+              <property role="Xl_RC" value="probability should be between 0 and 100" />
             </node>
             <node concept="1YBJjd" id="6BEEv9hzUtT" role="1urrMF">
               <ref role="1YBMHb" node="6BEEv9hzPbk" resolve="probability" />

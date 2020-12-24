@@ -3,6 +3,10 @@
 ## Homepage
 - FASTEN Home - https://sites.google.com/site/fastenroot/
 
+## Community
+- Questions about using and extending FASTEN: fasten-support@googlegroups.com
+- If you encounter problems, please open an issue [here](https://github.com/mbeddr/mbeddr.formal/issues)
+
 ## Versions
 - Get the [latest release](https://github.com/mbeddr/mbeddr.formal/releases)
 

@@ -494,8 +494,10 @@
   <node concept="24kQdi" id="6NmtaR1U$wM">
     <property role="3GE5qa" value="types" />
     <ref role="1XX52x" to="gioj:6NmtaR1SWfR" resolve="EnumerationMember" />
-    <node concept="3F0A7n" id="6NmtaR1U$wV" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="1kIj98" id="4eD_5l3kF5E" role="2wV5jI">
+      <node concept="3F0A7n" id="6NmtaR1U$wV" role="1kIj9b">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6NmtaR1UNM3">

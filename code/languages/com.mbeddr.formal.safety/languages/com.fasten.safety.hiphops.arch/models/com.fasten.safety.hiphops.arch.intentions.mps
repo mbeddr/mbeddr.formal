@@ -95,7 +95,7 @@
   </registry>
   <node concept="2S6QgY" id="62cfieELy6Q">
     <property role="TrG5h" value="createFaultTree" />
-    <ref role="2ZfgGC" to="zsc5:1TeaL8Rddhw" resolve="ComponentFailurePropagationLogic" />
+    <ref role="2ZfgGC" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
     <node concept="2S6ZIM" id="62cfieELy6R" role="2ZfVej">
       <node concept="3clFbS" id="62cfieELy6S" role="2VODD2">
         <node concept="3clFbF" id="62cfieELzEi" role="3cqZAp">

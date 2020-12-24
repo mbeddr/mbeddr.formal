@@ -76,6 +76,9 @@
         <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
         <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
       </concept>
+      <concept id="2004523000582413321" name="com.mbeddr.formal.safety.stamp.structure.ActionDescriptionBase" flags="ng" index="1E0uc5">
+        <child id="2185346695491723265" name="hazards" index="2Dy4$W" />
+      </concept>
       <concept id="2004523000582413322" name="com.mbeddr.formal.safety.stamp.structure.TextualActionDescription" flags="ng" index="1E0uc6">
         <child id="2004523000582413323" name="text" index="1E0uc7" />
       </concept>
@@ -7034,6 +7037,7 @@
         <ref role="1E0n_N" node="3TSGpjyFlMV" resolve="Voltage" />
         <node concept="3XErhT" id="3TSGpjyEVwk" role="1E0tXe" />
         <node concept="1E0uc6" id="3TSGpjyEVwl" role="1E0tWM">
+          <property role="TrG5h" value="UCA01" />
           <node concept="19SGf9" id="3TSGpjyEVwm" role="1E0uc7">
             <node concept="19SUe$" id="3TSGpjyEVwn" role="19SJt6">
               <property role="19SUeA" value="The " />
@@ -7051,18 +7055,19 @@
               <property role="19SUeA" value=" " />
             </node>
           </node>
+          <node concept="DABN8" id="4eD_5l3mJ4g" role="2Dy4$W">
+            <ref role="DABNb" node="3TSGpjyEYYX" resolve="Electrical hazard" />
+          </node>
         </node>
         <node concept="3XErhT" id="3TSGpjyEVws" role="1E0ucd" />
         <node concept="3XErhT" id="3TSGpjyG0jY" role="1E0tXb" />
       </node>
-    </node>
-    <node concept="1E0nOG" id="6yFQEkQUeS8" role="1E0n_e">
-      <ref role="1E0nOH" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
       <node concept="1E0nOJ" id="6yFQEkQUeS9" role="1E0nOC">
         <ref role="1E0n_N" node="3TSGpjyFlMW" resolve="Intensity" />
         <node concept="3XErhT" id="6yFQEkQUeSs" role="1E0ucd" />
         <node concept="3XErhT" id="6yFQEkQUeSv" role="1E0tXe" />
         <node concept="1E0uc6" id="6yFQEkQUf6y" role="1E0tWM">
+          <property role="TrG5h" value="UCA02" />
           <node concept="19SGf9" id="6yFQEkQUf6_" role="1E0uc7">
             <node concept="19SUe$" id="6yFQEkQUf6A" role="19SJt6">
               <property role="19SUeA" value="The " />
@@ -9625,6 +9630,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="19SGf9" id="1TD_kqsdgHG" role="2vnaTY">
+        <node concept="19SUe$" id="1TD_kqsdgHH" role="19SJt6" />
       </node>
     </node>
   </node>

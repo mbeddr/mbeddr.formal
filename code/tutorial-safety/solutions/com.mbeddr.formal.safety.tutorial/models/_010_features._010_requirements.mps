@@ -8,6 +8,17 @@
   <imports />
   <registry>
     <language id="5ff577d1-1817-495b-9d6c-ff7b52c68609" name="com.mbeddr.formal.req.tl_patterns">
+      <concept id="7632099376746146979" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithTime" flags="ng" index="Sxolh">
+        <child id="7632099376746146980" name="time" index="Sxolm" />
+      </concept>
+      <concept id="7632099376746632815" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithProbability" flags="ng" index="SB3Yt">
+        <child id="7632099376746632816" name="probability" index="SB3Y2" />
+      </concept>
+      <concept id="7632099376746544950" name="com.mbeddr.formal.req.tl_patterns.structure.HighProbabilityBound" flags="ng" index="SBTr4" />
+      <concept id="7632099376746544943" name="com.mbeddr.formal.req.tl_patterns.structure.Probability" flags="ng" index="SBTrt">
+        <child id="7632099376746545015" name="prob" index="SBTq5" />
+        <child id="7632099376746544945" name="bound" index="SBTr3" />
+      </concept>
       <concept id="7240923401194677068" name="com.mbeddr.formal.req.tl_patterns.structure.GloballyScope" flags="ng" index="12ukSO" />
       <concept id="7240923401194647888" name="com.mbeddr.formal.req.tl_patterns.structure.TLProperty" flags="ng" index="12utKC">
         <child id="7240923401194648611" name="specification" index="12ut_r" />
@@ -29,6 +40,13 @@
       <concept id="7240923401194767056" name="com.mbeddr.formal.req.tl_patterns.structure.ResponsePattern" flags="ng" index="12uYYC">
         <child id="7240923401194767059" name="s" index="12uYYF" />
       </concept>
+      <concept id="2184270308345955044" name="com.mbeddr.formal.req.tl_patterns.structure.UpperTimeBound" flags="ng" index="3gddix">
+        <child id="2184270308345955382" name="exp" index="3gdd9N" />
+      </concept>
+      <concept id="2184270308345955047" name="com.mbeddr.formal.req.tl_patterns.structure.Millisecond" flags="ng" index="3gddiy" />
+      <concept id="2184270308345955043" name="com.mbeddr.formal.req.tl_patterns.structure.Time" flags="ng" index="3gddiA">
+        <child id="2184270308345955380" name="unit" index="3gdd9L" />
+      </concept>
       <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
         <child id="6544290145033523834" name="specs" index="3z0uXc" />
       </concept>
@@ -37,9 +55,35 @@
       </concept>
       <concept id="6544290145033461193" name="com.mbeddr.formal.req.tl_patterns.structure.TLRequirementSpecification" flags="ng" index="3z7I3Z" />
     </language>
+    <language id="c1b1e23f-b677-40b8-a490-e192dd8d78e5" name="com.mbeddr.formal.nusmv.sm">
+      <concept id="4512297433099947043" name="com.mbeddr.formal.nusmv.sm.structure.StateMachineSection" flags="ng" index="2aiEES" />
+      <concept id="4512297433100004846" name="com.mbeddr.formal.nusmv.sm.structure.StateVariableDeclaration" flags="ng" index="2aiWHP" />
+      <concept id="1810266507803627052" name="com.mbeddr.formal.nusmv.sm.structure.TransitionForInternalVariable" flags="ng" index="FsPnw" />
+      <concept id="1810266507803627051" name="com.mbeddr.formal.nusmv.sm.structure.TransitionsForInternalVariables" flags="ng" index="FsPnB" />
+      <concept id="1810266507803548366" name="com.mbeddr.formal.nusmv.sm.structure.TransitionsAssignmentForInternalVars" flags="ng" index="Fto42" />
+      <concept id="5536191589039475538" name="com.mbeddr.formal.nusmv.sm.structure.StateRef" flags="ng" index="1tS8IT">
+        <reference id="5536191589039475610" name="state" index="1tS8HL" />
+      </concept>
+      <concept id="5536191589039258301" name="com.mbeddr.formal.nusmv.sm.structure.StateMachineType" flags="ng" index="1tT3Dm" />
+      <concept id="5536191589039454450" name="com.mbeddr.formal.nusmv.sm.structure.Transition" flags="ng" index="1tTNwp">
+        <child id="3570309108902455711" name="stateVarRef" index="3JXa2C" />
+        <child id="3570309108902117744" name="fromState" index="3JZSx7" />
+      </concept>
+      <concept id="5536191589039455159" name="com.mbeddr.formal.nusmv.sm.structure.TransitionsAssignment" flags="ng" index="1tTNHs" />
+      <concept id="5536191589039455651" name="com.mbeddr.formal.nusmv.sm.structure.Transitions" flags="ng" index="1tTNP8" />
+      <concept id="5536191589039455550" name="com.mbeddr.formal.nusmv.sm.structure.StateVariableRef" flags="ng" index="1tTNRl">
+        <reference id="5536191589039455622" name="var" index="1tTNPH" />
+      </concept>
+      <concept id="5536191589039199144" name="com.mbeddr.formal.nusmv.sm.structure.State" flags="ng" index="1tYPd3" />
+      <concept id="3570309108902491816" name="com.mbeddr.formal.nusmv.sm.structure.TransitionRef" flags="ng" index="3JXjYv">
+        <reference id="3570309108902491817" name="transition" index="3JXjYu" />
+      </concept>
+    </language>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
       <concept id="4183024216371329180" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssemblySMV" flags="ng" index="2dDAV0" />
       <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
+      <concept id="9066112305501141496" name="com.mbeddr.formal.nusmv.cbd.structure.ContractsSpec" flags="ng" index="3US3jz" />
+      <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -88,9 +132,25 @@
       <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781863215983" name="com.mbeddr.formal.nusmv.structure.NotEqualsExpression" flags="ng" index="dheZm" />
       <concept id="2707707741262126533" name="com.mbeddr.formal.nusmv.structure.EmptyModuleContent" flags="ng" index="s4Ewt" />
+      <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
+        <child id="8482728081216646944" name="expr" index="1yBDGv" />
+      </concept>
+      <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
+        <child id="7842584090744231304" name="value" index="2H9I4_" />
+        <child id="7842584090744231298" name="guard" index="2H9I4J" />
+      </concept>
+      <concept id="7842584090744230922" name="com.mbeddr.formal.nusmv.structure.CaseExpression" flags="ng" index="2H9I2B">
+        <child id="7842584090744230924" name="cases" index="2H9I2x" />
+      </concept>
+      <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
       <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
       <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
+      <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
+      <concept id="7842584090743391222" name="com.mbeddr.formal.nusmv.structure.EnumerationType" flags="ng" index="2Hdrtr">
+        <child id="7842584090743391224" name="members" index="2Hdrtl" />
+      </concept>
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
         <child id="7842584090743387019" name="type" index="2HdssA" />
@@ -102,6 +162,9 @@
       <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
       <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
         <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
+        <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
       </concept>
       <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
       <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
@@ -119,6 +182,8 @@
         <child id="7842584090743943207" name="lhs" index="2He$ia" />
       </concept>
       <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
+      <concept id="9133754867501306909" name="com.mbeddr.formal.nusmv.structure.Next" flags="ng" index="2Sa8AP" />
+      <concept id="9133754867501326618" name="com.mbeddr.formal.nusmv.structure.Globally" flags="ng" index="2SafMM" />
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
       <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
         <child id="1989356068342053586" name="definitions" index="32O2ov" />
@@ -126,7 +191,12 @@
       <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
+      <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
       <concept id="8482728081216289970" name="com.mbeddr.formal.nusmv.structure.NotExpression" flags="ng" index="1yA0yd" />
+      <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
+        <child id="8482728081216657211" name="exp" index="1yBIc4" />
+      </concept>
+      <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
       <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
       <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
         <reference id="8482728081213209470" name="module" index="1zigX1" />
@@ -135,11 +205,18 @@
       <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
         <child id="8482728081211544406" name="rhs" index="1zoetD" />
       </concept>
+      <concept id="3687734242762943338" name="com.mbeddr.formal.nusmv.structure.EmptySingleCase" flags="ng" index="1IK9QF" />
+      <concept id="4678075609353342594" name="com.mbeddr.formal.nusmv.structure.DefineRef" flags="ng" index="1J1L9T">
+        <reference id="4678075609353342595" name="def" index="1J1L9S" />
+      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
         <child id="7842584090744231480" name="right" index="2H9Ial" />
         <child id="7842584090744231474" name="left" index="2H9Iav" />
+      </concept>
+      <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
+        <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
       <concept id="1989356068341840849" name="com.mbeddr.formal.base.expressions.structure.ParensExpression" flags="ng" index="32OYss" />
       <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
@@ -149,6 +226,17 @@
     <language id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv">
       <concept id="3226630706270395581" name="com.mbeddr.formal.req.nusmv.structure.ModuleRefReqSpec" flags="ng" index="0mxsP">
         <reference id="5900935767007048038" name="mod" index="2rfAiQ" />
+      </concept>
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="7526568111198990000" name="com.mbeddr.formal.nusmv.ext.structure.EnumType" flags="ng" index="2XJXdx">
+        <reference id="7526568111198990001" name="enumDeclaration" index="2XJXdw" />
+      </concept>
+      <concept id="7526568111198989908" name="com.mbeddr.formal.nusmv.ext.structure.EnumDeclaration" flags="ng" index="2XJXe5">
+        <child id="7526568111198989997" name="members" index="2XJXdW" />
+      </concept>
+      <concept id="5465471166991940168" name="com.mbeddr.formal.nusmv.ext.structure.TypedParameterDeclaration" flags="ng" index="3_qfHp">
+        <child id="7842584090743387019" name="type" index="2HdssB" />
       </concept>
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
@@ -180,6 +268,14 @@
         <property id="4583510071007917016" name="transform" index="TgtnS" />
         <child id="738815095926774816" name="portLayouts" index="1pap1a" />
       </concept>
+      <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
+        <child id="2319506556913311101" name="anchors" index="2Vcluh" />
+        <child id="4767615435799372763" name="labels" index="3ul5Gx" />
+      </concept>
+      <concept id="2319506556913310727" name="de.itemis.mps.editor.diagram.layout.structure.Point" flags="ng" index="2VclrF">
+        <property id="2319506556913310861" name="x" index="2Vclpx" />
+        <property id="2319506556913310863" name="y" index="2Vclpz" />
+      </concept>
       <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
         <child id="8963411245960991904" name="entries" index="37mRID" />
       </concept>
@@ -190,6 +286,14 @@
       <concept id="738815095926749345" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Port" flags="ng" index="1pa3jb">
         <property id="7964702570467115501" name="ordinal" index="2gRgW$" />
         <property id="738815095926749379" name="portName" index="1pa3iD" />
+      </concept>
+      <concept id="4767615435799372731" name="de.itemis.mps.editor.diagram.layout.structure.Layout_EdgeLabel" flags="ng" index="3ul5H1">
+        <property id="4767615435799372759" name="type" index="3ul5GH" />
+        <child id="4767615435799372761" name="position" index="3ul5Gz" />
+      </concept>
+      <concept id="3253043142928125505" name="de.itemis.mps.editor.diagram.layout.structure.RelativePosition" flags="ng" index="3wpmZ1">
+        <child id="3253043142928125557" name="referencePoint" index="3wpmZP" />
+        <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
     <language id="b9f682be-3e03-4c97-ba0a-ac14cf89f12a" name="com.mbeddr.formal.req.tl_patterns.nusmv">
@@ -207,6 +311,9 @@
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="1258148499699359659" name="com.mbeddr.formal.base.arch.structure.IContractsContainer" flags="ng" index="3Ic8zf">
+        <child id="9066112305507315710" name="contracts" index="3UnIb_" />
+      </concept>
       <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
         <child id="5906421183240323769" name="interfaceRef" index="2p5x1W" />
       </concept>
@@ -316,6 +423,12 @@
                 </node>
               </node>
             </node>
+            <node concept="SBTrt" id="4eD_5l3jOli" role="SB3Y2">
+              <node concept="SBTr4" id="4eD_5l3jOlk" role="SBTr3" />
+              <node concept="2IPVmt" id="4eD_5l3jOlq" role="SBTq5">
+                <property role="2IPVms" value="99.999" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="12utKC" id="5FhZjqTNyFh" role="3z0uXc">
@@ -342,6 +455,18 @@
                   <node concept="19SUe$" id="5FhZjqTN_Fo" role="19SJt6">
                     <property role="19SUeA" value="the airbag will be deployed" />
                   </node>
+                </node>
+              </node>
+              <node concept="3gddix" id="4eD_5l3kiXi" role="Sxolm">
+                <node concept="2IPVmt" id="4eD_5l3kiXo" role="3gdd9N">
+                  <property role="2IPVms" value="10" />
+                </node>
+                <node concept="3gddiy" id="4eD_5l3kiXB" role="3gdd9L" />
+              </node>
+              <node concept="SBTrt" id="4eD_5l3kDR5" role="SB3Y2">
+                <node concept="SBTr4" id="4eD_5l3kDR7" role="SBTr3" />
+                <node concept="2IPVmt" id="4eD_5l3kDRd" role="SBTq5">
+                  <property role="2IPVms" value="99.9999" />
                 </node>
               </node>
             </node>
@@ -628,7 +753,7 @@
   <node concept="1QQeGf" id="1L4MZBxTaAV">
     <property role="TrG5h" value="_050_formal_SMV_module" />
     <node concept="0lhDl" id="1L4MZBxTaAW" role="1QQeBF">
-      <property role="0lsPA" value="040.01" />
+      <property role="0lsPA" value="050.01" />
       <property role="0ke_I" value="dan" />
       <node concept="3z6Cyy" id="1L4MZBxTaAX" role="0nOlf" />
       <node concept="19SGf9" id="1L4MZBxTaAY" role="1QQeG9">
@@ -651,9 +776,9 @@
     </node>
   </node>
   <node concept="1QQeGf" id="VJbr0XaaMm">
-    <property role="TrG5h" value="_070_trace_other_models" />
+    <property role="TrG5h" value="_070_spec_SM" />
     <node concept="0lhDl" id="VJbr0XaaMn" role="1QQeBF">
-      <property role="0lsPA" value="050.01" />
+      <property role="0lsPA" value="070.01" />
       <property role="0ke_I" value="dan" />
       <node concept="3z6Cyy" id="VJbr0XaaMo" role="0nOlf" />
       <node concept="19SGf9" id="VJbr0XaaMp" role="1QQeG9">
@@ -671,7 +796,7 @@
         </node>
       </node>
       <node concept="3g$em0" id="65VbbGlqZi5" role="1QQeAC">
-        <ref role="3g$em3" node="65VbbGlqZgk" />
+        <ref role="3g$em3" node="4eD_5l3mIAp" />
       </node>
     </node>
   </node>
@@ -731,7 +856,7 @@
   <node concept="1QQeGf" id="4g_LT4l9Mg1">
     <property role="TrG5h" value="_040_formal_tl_spec_patterns_over_SMV" />
     <node concept="0lhDl" id="4g_LT4l9Mg2" role="1QQeBF">
-      <property role="0lsPA" value="030.01" />
+      <property role="0lsPA" value="040.01" />
       <property role="0ke_I" value="dan" />
       <node concept="3z6Cyy" id="4g_LT4l9Mg3" role="0nOlf" />
       <node concept="19SGf9" id="4g_LT4l9Mg4" role="1QQeG9">
@@ -773,7 +898,7 @@
       </node>
     </node>
     <node concept="0lhDl" id="4g_LT4l9Mgk" role="1QQeBF">
-      <property role="0lsPA" value="030.02" />
+      <property role="0lsPA" value="040.02" />
       <property role="0ke_I" value="dan" />
       <node concept="3z6Cyy" id="4g_LT4l9Mgl" role="0nOlf" />
       <node concept="19SGf9" id="4g_LT4l9Mgm" role="1QQeG9">
@@ -814,6 +939,371 @@
               <node concept="12qLwa" id="4g_LT4l9MgB" role="32OYtT">
                 <ref role="12qLwd" node="4g_LT4l9MeJ" resolve="airbag_explode_command" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HdtXS" id="4eD_5l3kF23">
+    <property role="TrG5h" value="_040_airbag_module_sm_implementation" />
+    <property role="3GE5qa" value="system_def" />
+    <node concept="2XJXe5" id="4eD_5l3kF4M" role="2HcuB8">
+      <property role="TrG5h" value="activate_cmd_t" />
+      <node concept="2Hdrtq" id="4eD_5l3mncs" role="2XJXdW">
+        <property role="TrG5h" value="activate" />
+      </node>
+      <node concept="2Hdrtq" id="4eD_5l3mncu" role="2XJXdW">
+        <property role="TrG5h" value="deactivate" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4eD_5l3mni2" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4eD_5l3kF24" role="2HcuB8">
+      <property role="TrG5h" value="airbag_state_machine" />
+      <node concept="32O2o0" id="4eD_5l3kF25" role="2HcbjO">
+        <node concept="JlCpM" id="4eD_5l3kF26" role="32O2ov">
+          <property role="TrG5h" value="airbag_explode_command" />
+          <node concept="2He$iJ" id="4eD_5l3mu68" role="1zoetD">
+            <ref role="2He$iI" node="4eD_5l3mtYL" resolve="explode_cmd" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="4eD_5l3mnjG" role="2HcbjO">
+        <node concept="2aiWHP" id="4eD_5l3mnjI" role="2Hfkx9">
+          <property role="TrG5h" value="_state_" />
+          <node concept="1tT3Dm" id="4eD_5l3mnjJ" role="2HdssA">
+            <node concept="1tYPd3" id="4eD_5l3mnjK" role="2Hdrtl">
+              <property role="TrG5h" value="active" />
+            </node>
+            <node concept="1tYPd3" id="4eD_5l3mnjL" role="2Hdrtl">
+              <property role="TrG5h" value="innactive" />
+            </node>
+            <node concept="1tYPd3" id="4eD_5l3mtUR" role="2Hdrtl">
+              <property role="TrG5h" value="exploded" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Hdskp" id="4eD_5l3mtYL" role="2Hfkx9">
+          <property role="TrG5h" value="explode_cmd" />
+          <node concept="2Hds6S" id="4eD_5l3mtZJ" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2aiEES" id="4eD_5l3mnjD" role="2HcbjO">
+        <node concept="1tTNHs" id="4eD_5l3mnjP" role="2HfkAP">
+          <node concept="1tTNRl" id="4eD_5l3mnjQ" role="2He$ia">
+            <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+          </node>
+          <node concept="1tTNP8" id="4eD_5l3mnjR" role="2He$i0">
+            <node concept="1IK9QF" id="4eD_5l3mnjS" role="2H9I2x" />
+            <node concept="1tTNwp" id="4eD_5l3mtQy" role="2H9I2x">
+              <property role="TrG5h" value="T_1" />
+              <node concept="1tS8IT" id="4eD_5l3mtQz" role="3JZSx7">
+                <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+              </node>
+              <node concept="1tTNRl" id="4eD_5l3mtQ$" role="3JXa2C">
+                <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+              </node>
+              <node concept="2HbLFT" id="4eD_5l3mtTD" role="2H9I4J">
+                <node concept="32Ogvo" id="4eD_5l3mtRk" role="2H9Iav">
+                  <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                </node>
+                <node concept="2HeeqP" id="4eD_5l3mtRS" role="2H9Ial">
+                  <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                </node>
+              </node>
+              <node concept="1tS8IT" id="4eD_5l3mtQA" role="2H9I4_">
+                <ref role="1tS8HL" node="4eD_5l3mnjL" resolve="innactive" />
+              </node>
+            </node>
+            <node concept="1tTNwp" id="4eD_5l3mtS5" role="2H9I2x">
+              <property role="TrG5h" value="T_2" />
+              <node concept="1tS8IT" id="4eD_5l3mtS6" role="3JZSx7">
+                <ref role="1tS8HL" node="4eD_5l3mnjL" resolve="innactive" />
+              </node>
+              <node concept="1tTNRl" id="4eD_5l3mtS7" role="3JXa2C">
+                <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+              </node>
+              <node concept="2HbLFT" id="4eD_5l3mGMx" role="2H9I4J">
+                <node concept="2HeeqP" id="4eD_5l3mGML" role="2H9Ial">
+                  <ref role="2HeeqO" node="4eD_5l3mncs" resolve="activate" />
+                </node>
+                <node concept="32Ogvo" id="4eD_5l3mGMp" role="2H9Iav">
+                  <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                </node>
+              </node>
+              <node concept="1tS8IT" id="4eD_5l3mtS9" role="2H9I4_">
+                <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+              </node>
+            </node>
+            <node concept="1tTNwp" id="4eD_5l3mtWU" role="2H9I2x">
+              <property role="TrG5h" value="T_3" />
+              <node concept="1tS8IT" id="4eD_5l3mtWV" role="3JZSx7">
+                <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+              </node>
+              <node concept="1tTNRl" id="4eD_5l3mtWW" role="3JXa2C">
+                <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+              </node>
+              <node concept="2HbMbg" id="4eD_5l3mGSn" role="2H9I4J">
+                <node concept="dheZm" id="4eD_5l3mGSI" role="2H9Ial">
+                  <node concept="2HeeqP" id="4eD_5l3mGT0" role="2H9Ial">
+                    <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                  </node>
+                  <node concept="32Ogvo" id="4eD_5l3mGS_" role="2H9Iav">
+                    <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                  </node>
+                </node>
+                <node concept="32Ogvo" id="4eD_5l3mtYf" role="2H9Iav">
+                  <ref role="32Ogvr" node="4eD_5l3mngn" resolve="collision_detected" />
+                </node>
+              </node>
+              <node concept="1tS8IT" id="4eD_5l3mtWY" role="2H9I4_">
+                <ref role="1tS8HL" node="4eD_5l3mtUR" resolve="exploded" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2HfkAV" id="4eD_5l3mnjM" role="2HfkAP">
+          <node concept="1tTNRl" id="4eD_5l3mnjN" role="2He$ia">
+            <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+          </node>
+          <node concept="1tS8IT" id="4eD_5l3mnoP" role="2He$i0">
+            <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+          </node>
+        </node>
+        <node concept="2HfkAV" id="4eD_5l3mu3r" role="2HfkAP">
+          <node concept="2He$iJ" id="4eD_5l3mu42" role="2He$ia">
+            <ref role="2He$iI" node="4eD_5l3mtYL" resolve="explode_cmd" />
+          </node>
+          <node concept="1yCjT0" id="4eD_5l3mu4n" role="2He$i0" />
+        </node>
+        <node concept="Fto42" id="4eD_5l3mu53" role="2HfkAP">
+          <node concept="FsPnB" id="4eD_5l3mu56" role="2He$i0">
+            <node concept="FsPnw" id="4eD_5l3mu55" role="2H9I2x">
+              <node concept="3JXjYv" id="4eD_5l3mu5R" role="2H9I4J">
+                <ref role="3JXjYu" node="4eD_5l3mtWU" resolve="T_3" />
+              </node>
+              <node concept="1yCjRe" id="4eD_5l3mu62" role="2H9I4_" />
+            </node>
+          </node>
+          <node concept="2He$iJ" id="4eD_5l3mu5K" role="2He$ia">
+            <ref role="2He$iI" node="4eD_5l3mtYL" resolve="explode_cmd" />
+          </node>
+        </node>
+        <node concept="37mRI7" id="4eD_5l3mtQj" role="lGtFl">
+          <node concept="37mRIm" id="4eD_5l3mtQk" role="37mRID">
+            <property role="37mO49" value="4875591165528339696" />
+            <node concept="gqqVs" id="4eD_5l3mtQi" role="37mO4d">
+              <property role="gqqTZ" value="100.0" />
+              <property role="gqqTW" value="62.0" />
+              <property role="gqqTX" value="87.0" />
+              <property role="gqqTy" value="73.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="4eD_5l3mtQm" role="37mRID">
+            <property role="37mO49" value="4875591165528339697" />
+            <node concept="gqqVs" id="4eD_5l3mtQl" role="37mO4d">
+              <property role="gqqTZ" value="426.0" />
+              <property role="gqqTW" value="62.0" />
+              <property role="gqqTX" value="92.0" />
+              <property role="gqqTy" value="67.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="4eD_5l3mtQN" role="37mRID">
+            <property role="37mO49" value="4875591165528366498" />
+            <node concept="2VclpC" id="4eD_5l3mtQM" role="37mO4d">
+              <node concept="3ul5H1" id="4eD_5l3mtQO" role="3ul5Gx">
+                <property role="3ul5GH" value="label" />
+                <node concept="3wpmZ1" id="4eD_5l3mtQP" role="3ul5Gz">
+                  <node concept="2VclrF" id="4eD_5l3mtQQ" role="3wpmZR">
+                    <property role="2Vclpx" value="217.75009999999997" />
+                    <property role="2Vclpz" value="0.75" />
+                  </node>
+                  <node concept="2VclrF" id="4eD_5l3mtQR" role="3wpmZP">
+                    <property role="2Vclpx" value="0.0" />
+                    <property role="2Vclpz" value="0.0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2VclrF" id="4eD_5l3mtT8" role="2Vcluh">
+                <property role="2Vclpx" value="205.0" />
+                <property role="2Vclpz" value="59.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="4eD_5l3mtSt" role="37mRID">
+            <property role="37mO49" value="4875591165528366597" />
+            <node concept="2VclpC" id="4eD_5l3mtSs" role="37mO4d">
+              <node concept="3ul5H1" id="4eD_5l3mtSu" role="3ul5Gx">
+                <property role="3ul5GH" value="label" />
+                <node concept="3wpmZ1" id="4eD_5l3mtSv" role="3ul5Gz">
+                  <node concept="2VclrF" id="4eD_5l3mtSw" role="3wpmZR">
+                    <property role="2Vclpx" value="325.7501" />
+                    <property role="2Vclpz" value="134.75" />
+                  </node>
+                  <node concept="2VclrF" id="4eD_5l3mtSx" role="3wpmZP">
+                    <property role="2Vclpx" value="0.0" />
+                    <property role="2Vclpz" value="0.0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2VclrF" id="4eD_5l3mtT0" role="2Vcluh">
+                <property role="2Vclpx" value="201.0" />
+                <property role="2Vclpz" value="129.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="4eD_5l3mtW$" role="37mRID">
+            <property role="37mO49" value="4875591165528366775" />
+            <node concept="gqqVs" id="4eD_5l3mtWz" role="37mO4d">
+              <property role="gqqTZ" value="202.0" />
+              <property role="gqqTW" value="232.0" />
+              <property role="gqqTX" value="92.0" />
+              <property role="gqqTy" value="68.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+          <node concept="37mRIm" id="4eD_5l3mtXq" role="37mRID">
+            <property role="37mO49" value="4875591165528366906" />
+            <node concept="2VclpC" id="4eD_5l3mtXp" role="37mO4d">
+              <node concept="3ul5H1" id="4eD_5l3mtXr" role="3ul5Gx">
+                <property role="3ul5GH" value="label" />
+                <node concept="3wpmZ1" id="4eD_5l3mtXs" role="3ul5Gz">
+                  <node concept="2VclrF" id="4eD_5l3mtXt" role="3wpmZR">
+                    <property role="2Vclpx" value="58.0" />
+                    <property role="2Vclpz" value="146.0" />
+                  </node>
+                  <node concept="2VclrF" id="4eD_5l3mtXu" role="3wpmZP">
+                    <property role="2Vclpx" value="0.0" />
+                    <property role="2Vclpz" value="0.0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="0Sh09" id="4eD_5l3mIAp" role="lGtFl">
+          <ref role="0Sh0a" node="VJbr0XaaMn" />
+        </node>
+      </node>
+      <node concept="3_qfHp" id="4eD_5l3mneR" role="2Hdtzq">
+        <property role="TrG5h" value="activate_cmd" />
+        <node concept="2XJXdx" id="4eD_5l3mnf_" role="2HdssB">
+          <ref role="2XJXdw" node="4eD_5l3kF4M" resolve="activate_cmd_t" />
+        </node>
+      </node>
+      <node concept="3_qfHp" id="4eD_5l3mngn" role="2Hdtzq">
+        <property role="TrG5h" value="collision_detected" />
+        <node concept="2Hds6S" id="4eD_5l3mnhc" role="2HdssB" />
+      </node>
+      <node concept="3US3jz" id="4eD_5l3mGlV" role="lGtFl">
+        <node concept="3UTh7Y" id="4eD_5l3mGmJ" role="3UnIb_">
+          <property role="TrG5h" value="do_not_explode_when_deactivated" />
+          <node concept="2SafMM" id="4eD_5l3mH_y" role="1yBDGv">
+            <node concept="32OYss" id="4eD_5l3mH_z" role="1yBIc4">
+              <node concept="1yyYsf" id="4eD_5l3mH_$" role="32OYtT">
+                <node concept="2HbMbg" id="4eD_5l3mH__" role="2H9Iav">
+                  <node concept="2HbLFT" id="4eD_5l3mH_A" role="2H9Iav">
+                    <node concept="32Ogvo" id="4eD_5l3mGmX" role="2H9Iav">
+                      <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                    </node>
+                    <node concept="2HeeqP" id="4eD_5l3mGnp" role="2H9Ial">
+                      <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                    </node>
+                  </node>
+                  <node concept="1yA0yd" id="4eD_5l3mH_B" role="2H9Ial">
+                    <node concept="32OYss" id="4eD_5l3mH_C" role="32OYtT">
+                      <node concept="2HbLFT" id="4eD_5l3mH_D" role="32OYtT">
+                        <node concept="1tTNRl" id="4eD_5l3mHcO" role="2H9Iav">
+                          <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+                        </node>
+                        <node concept="1tS8IT" id="4eD_5l3mHiy" role="2H9Ial">
+                          <ref role="1tS8HL" node="4eD_5l3mtUR" resolve="exploded" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="32OYss" id="4eD_5l3mH_E" role="2H9Ial">
+                  <node concept="2Sa8AP" id="4eD_5l3mH_F" role="32OYtT">
+                    <node concept="1yA0yd" id="4eD_5l3mH_G" role="1yBIc4">
+                      <node concept="1J1L9T" id="4eD_5l3mGo1" role="32OYtT">
+                        <ref role="1J1L9S" node="4eD_5l3kF26" resolve="airbag_explode_command" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3UTh7Y" id="4eD_5l3mGrc" role="3UnIb_">
+          <property role="TrG5h" value="explode_if_active_and_collision_detected" />
+          <node concept="2SafMM" id="4eD_5l3mI9E" role="1yBDGv">
+            <node concept="32OYss" id="4eD_5l3mI9F" role="1yBIc4">
+              <node concept="1yyYsf" id="4eD_5l3mI9G" role="32OYtT">
+                <node concept="2HbMbg" id="4eD_5l3mI9H" role="2H9Iav">
+                  <node concept="2HbMbg" id="4eD_5l3mI9I" role="2H9Iav">
+                    <node concept="2HbLFT" id="4eD_5l3mI9J" role="2H9Iav">
+                      <node concept="1tTNRl" id="4eD_5l3mI0t" role="2H9Iav">
+                        <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+                      </node>
+                      <node concept="1tS8IT" id="4eD_5l3mI0A" role="2H9Ial">
+                        <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+                      </node>
+                    </node>
+                    <node concept="1yA0yd" id="4eD_5l3mIa3" role="2H9Ial">
+                      <node concept="32OYss" id="4eD_5l3mIab" role="32OYtT">
+                        <node concept="2HbLFT" id="4eD_5l3mIat" role="32OYtT">
+                          <node concept="2HeeqP" id="4eD_5l3mImk" role="2H9Ial">
+                            <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                          </node>
+                          <node concept="32Ogvo" id="4eD_5l3mIal" role="2H9Iav">
+                            <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="32Ogvo" id="4eD_5l3mGv2" role="2H9Ial">
+                    <ref role="32Ogvr" node="4eD_5l3mngn" resolve="collision_detected" />
+                  </node>
+                </node>
+                <node concept="2Sa8AP" id="4eD_5l3mI9K" role="2H9Ial">
+                  <node concept="1J1L9T" id="4eD_5l3mGvl" role="1yBIc4">
+                    <ref role="1J1L9S" node="4eD_5l3kF26" resolve="airbag_explode_command" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4eD_5l3kF2B" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4eD_5l3kF2C" role="2HcuB8">
+      <property role="TrG5h" value="main" />
+      <node concept="2Hfkzq" id="4eD_5l3kF2D" role="2HcbjO">
+        <node concept="2Hdskp" id="4eD_5l3kF2E" role="2Hfkx9">
+          <property role="TrG5h" value="my_deactivate_airbag" />
+          <node concept="2XJXdx" id="4eD_5l3mu6k" role="2HdssA">
+            <ref role="2XJXdw" node="4eD_5l3kF4M" resolve="activate_cmd_t" />
+          </node>
+        </node>
+        <node concept="2Hdskp" id="4eD_5l3kF2G" role="2Hfkx9">
+          <property role="TrG5h" value="my_collision_detected" />
+          <node concept="2Hds6S" id="4eD_5l3kF2H" role="2HdssA" />
+        </node>
+        <node concept="2Hdskp" id="4eD_5l3kF2I" role="2Hfkx9">
+          <property role="TrG5h" value="a" />
+          <node concept="1zigX2" id="4eD_5l3kF2J" role="2HdssA">
+            <ref role="1zigX1" node="4eD_5l3kF24" resolve="airbag_state_machine" />
+            <node concept="2He$iJ" id="4eD_5l3kF2K" role="1zigYY">
+              <ref role="2He$iI" node="4eD_5l3kF2E" resolve="my_deactivate_airbag" />
+            </node>
+            <node concept="2He$iJ" id="4eD_5l3kF2L" role="1zigYY">
+              <ref role="2He$iI" node="4eD_5l3kF2G" resolve="my_collision_detected" />
             </node>
           </node>
         </node>

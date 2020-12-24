@@ -4,6 +4,7 @@
   <languages>
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -11,8 +12,8 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
-    <import index="yrt9" ref="r:2f85448a-6ae7-46b9-a1ce-27bf2bfb5fc1(com.mbeddr.formal.nusmv.ext.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="yrt9" ref="r:2f85448a-6ae7-46b9-a1ce-27bf2bfb5fc1(com.mbeddr.formal.nusmv.ext.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -200,6 +201,9 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7320199582618415037" name="com.mbeddr.formal.base.expressions.structure.ArbitraryTextExpression" flags="ng" index="ru7O1">
+        <property id="7320199582618415059" name="value" index="ru7PJ" />
+      </concept>
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -242,6 +246,10 @@
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -691,6 +699,57 @@
     <node concept="3aamgX" id="6xNJt7lPjGZ" role="3acgRq">
       <ref role="30HIoZ" to="6z8w:6xNJt7lN6Tk" resolve="EnumDeclaration" />
       <node concept="b5Tf3" id="6xNJt7lPkCJ" role="1lVwrX" />
+    </node>
+    <node concept="3aamgX" id="4eD_5l3mxJy" role="3acgRq">
+      <ref role="30HIoZ" to="gioj:6NmtaR1VD8o" resolve="EnumerationMemberRef" />
+      <node concept="gft3U" id="4eD_5l3mzGs" role="1lVwrX">
+        <node concept="ru7O1" id="4eD_5l3mzHn" role="gfFT$">
+          <property role="ru7PJ" value="enum_member_ref" />
+          <node concept="17Uvod" id="4eD_5l3mzHp" role="lGtFl">
+            <property role="2qtEX9" value="value" />
+            <property role="P4ACc" value="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f/7320199582618415037/7320199582618415059" />
+            <node concept="3zFVjK" id="4eD_5l3mzHq" role="3zH0cK">
+              <node concept="3clFbS" id="4eD_5l3mzHr" role="2VODD2">
+                <node concept="3clFbF" id="4eD_5l3mzM0" role="3cqZAp">
+                  <node concept="2OqwBi" id="4eD_5l3m$vT" role="3clFbG">
+                    <node concept="2OqwBi" id="4eD_5l3m$0O" role="2Oq$k0">
+                      <node concept="30H73N" id="4eD_5l3mzLZ" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="4eD_5l3m$k9" role="2OqNvi">
+                        <ref role="3Tt5mk" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="4eD_5l3m$Pa" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="4eD_5l3mxZt" role="30HLyM">
+        <node concept="3clFbS" id="4eD_5l3mxZu" role="2VODD2">
+          <node concept="3clFbF" id="4eD_5l3mxZP" role="3cqZAp">
+            <node concept="2OqwBi" id="4eD_5l3mzfL" role="3clFbG">
+              <node concept="2OqwBi" id="4eD_5l3myNy" role="2Oq$k0">
+                <node concept="2OqwBi" id="4eD_5l3myge" role="2Oq$k0">
+                  <node concept="30H73N" id="4eD_5l3mxZO" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="4eD_5l3myyA" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gioj:6NmtaR1VD8p" resolve="enumMember" />
+                  </node>
+                </node>
+                <node concept="1mfA1w" id="4eD_5l3mz6f" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="4eD_5l3mznh" role="2OqNvi">
+                <node concept="chp4Y" id="4eD_5l3mztl" role="cj9EA">
+                  <ref role="cht4Q" to="6z8w:6xNJt7lN6Tk" resolve="EnumDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3aamgX" id="6xNJt7lPaks" role="3acgRq">
       <ref role="30HIoZ" to="6z8w:6xNJt7lN6UK" resolve="EnumType" />

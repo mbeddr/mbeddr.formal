@@ -17,6 +17,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -43,9 +44,10 @@
   </registry>
   <node concept="1TIwiD" id="1TeaL8Rddhw">
     <property role="EcuMT" value="2183730226556884064" />
-    <property role="TrG5h" value="ComponentFailurePropagationLogic" />
-    <property role="34LRSv" value="failure propagation logic (HiP-HOPS)" />
-    <ref role="1TJDcQ" to="ii8j:2BJmaNdxL$K" resolve="ComponentFailurePropagationLogicBase" />
+    <property role="TrG5h" value="IFFMEA" />
+    <property role="34LRSv" value="IF-FMEA" />
+    <property role="R4oN_" value="interface FMEA (HiP-HOPS)" />
+    <ref role="1TJDcQ" to="ii8j:2BJmaNdxL$K" resolve="IFFMEABase" />
     <node concept="1TJgyj" id="1TeaL8RddiD" role="1TKVEi">
       <property role="IQ2ns" value="2183730226556884137" />
       <property role="20kJfa" value="interf" />
@@ -61,7 +63,8 @@
   <node concept="1TIwiD" id="1TeaL8Rdz2m">
     <property role="EcuMT" value="2183730226556973206" />
     <property role="TrG5h" value="LogicalTypeFailureModes" />
-    <property role="34LRSv" value="type failure modes (HiP-HOPS)" />
+    <property role="34LRSv" value="type failure modes" />
+    <property role="R4oN_" value="failure modes associated to types of ports (HiP-HOPS)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1TeaL8Rdz2r" role="1TKVEi">
       <property role="IQ2ns" value="2183730226556973211" />
@@ -113,7 +116,13 @@
     <node concept="1TJgyj" id="1TeaL8Rea4x" role="1TKVEi">
       <property role="IQ2ns" value="2183730226557133089" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exp" />
+      <property role="20kJfa" value="inputDeviationLogic" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4CQASrcxTNi" role="1TKVEi">
+      <property role="IQ2ns" value="5347632610808405202" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="componentMalfunctionLogic" />
       <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
@@ -149,6 +158,17 @@
     </node>
     <node concept="PrWs8" id="62cfieELy5n" role="PzmwI">
       <ref role="PrY4T" to="g9vz:42QGQFVnclm" resolve="IDesignFMEARootContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5g1NREKNREx">
+    <property role="EcuMT" value="6053347500022004385" />
+    <property role="TrG5h" value="ComponentFailureModeRefExpression" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="5g1NREKNREy" role="1TKVEi">
+      <property role="IQ2ns" value="6053347500022004386" />
+      <property role="20kJfa" value="failureMode" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
     </node>
   </node>
 </model>
