@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0a67385e-17ec-4148-b1f8-83ce752e9242(_100_examples._030_adas._010_intersection_handling)">
+<model ref="r:0a67385e-17ec-4148-b1f8-83ce752e9242(_100_examples._030_adas._010_intersection_handling.ihs)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>

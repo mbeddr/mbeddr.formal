@@ -15,6 +15,8 @@
     <dependency reexport="false">676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:3b22dedc-d6cf-4626-9445-6e9909b3e04a:com.fasten.base.arch.msc" version="0" />
+    <language slang="l:81f6a079-965e-4523-87c3-8e6194f66585:com.fasten.base.msc" version="0" />
     <language slang="l:b43c548b-f75f-46e2-ad24-de9edd93e95e:com.fasten.safety.fmea" version="0" />
     <language slang="l:1110e3ef-a98e-444f-9748-1d61fe61c7f7:com.fasten.safety.fmea.arch" version="0" />
     <language slang="l:ab274f70-5238-4883-adc7-02df7a757829:com.fasten.safety.ft" version="0" />
@@ -41,8 +43,10 @@
     <language slang="l:450c81f1-1811-41ac-a9c8-8fda59f778ca:com.mbeddr.formal.nusmv.tabular" version="0" />
     <language slang="l:cac6875e-14fd-4552-a69e-b3168e27e2ff:com.mbeddr.formal.nusmv.tests" version="0" />
     <language slang="l:0da073b7-14da-42e6-8db1-df42c803e079:com.mbeddr.formal.nusmv.verification_cases" version="0" />
+    <language slang="l:24aa32c5-8513-4a94-a289-04392bead64e:com.mbeddr.formal.req.arch" version="0" />
     <language slang="l:0deccdfd-196b-4d8c-895e-0d6cb8014dfd:com.mbeddr.formal.req.base" version="0" />
     <language slang="l:83ad0200-6e50-4939-a389-76bf899be11b:com.mbeddr.formal.req.nusmv" version="0" />
+    <language slang="l:3460ac43-6f59-4f61-b134-9fa2f799c2d3:com.mbeddr.formal.req.scenarios" version="0" />
     <language slang="l:5ff577d1-1817-495b-9d6c-ff7b52c68609:com.mbeddr.formal.req.tl_patterns" version="0" />
     <language slang="l:0054a0d7-50ff-4b4f-beff-7e9b376d56a1:com.mbeddr.formal.req.tl_patterns.arch" version="0" />
     <language slang="l:b9f682be-3e03-4c97-ba0a-ac14cf89f12a:com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
