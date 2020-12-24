@@ -24,7 +24,7 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -179,6 +179,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
   </registry>
   <node concept="312cEu" id="7836$RyWTGT">
@@ -302,7 +309,7 @@
               <node concept="2pNUuL" id="7Y21hZBa7$E" role="2pNNFR">
                 <property role="2pNUuO" value="text" />
                 <node concept="2pMdtt" id="7Y21hZBa7$F" role="2pMdts">
-                  <property role="2pMdty" value="Open FASTEN Safety-Tutorial" />
+                  <property role="2pMdty" value="Open FASTEN.Safe Tutorial" />
                 </node>
               </node>
               <node concept="2pNUuL" id="7Y21hZBa7$G" role="2pNNFR">
@@ -312,19 +319,43 @@
                 </node>
               </node>
             </node>
-            <node concept="2pNNFK" id="7836$RyXe12" role="3o6s8t">
-              <property role="2pNNFO" value="add-to-group" />
-              <property role="qg3DV" value="true" />
-              <node concept="2pNUuL" id="7836$RyXe1_" role="2pNNFR">
-                <property role="2pNUuO" value="group-id" />
-                <node concept="2pMdtt" id="7836$RyXe1D" role="2pMdts">
-                  <property role="2pMdty" value="WelcomeScreen.Documentation" />
+            <node concept="1X3_iC" id="1TD_kqsnMed" role="lGtFl">
+              <property role="3V$3am" value="content" />
+              <property role="3V$3ak" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681415858/1622293396948928802" />
+              <node concept="2pNNFK" id="7836$RyXe12" role="8Wnug">
+                <property role="2pNNFO" value="add-to-group" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="7836$RyXe1_" role="2pNNFR">
+                  <property role="2pNUuO" value="group-id" />
+                  <node concept="2pMdtt" id="7836$RyXe1D" role="2pMdts">
+                    <property role="2pMdty" value="WelcomeScreen.QuickStart" />
+                  </node>
+                </node>
+                <node concept="2pNUuL" id="7836$RyXe1L" role="2pNNFR">
+                  <property role="2pNUuO" value="anchor" />
+                  <node concept="2pMdtt" id="7836$RyXe1V" role="2pMdts">
+                    <property role="2pMdty" value="last" />
+                  </node>
                 </node>
               </node>
-              <node concept="2pNUuL" id="7836$RyXe1L" role="2pNNFR">
-                <property role="2pNUuO" value="anchor" />
-                <node concept="2pMdtt" id="7836$RyXe1V" role="2pMdts">
-                  <property role="2pMdty" value="last" />
+            </node>
+            <node concept="1X3_iC" id="1TD_kqsnMg0" role="lGtFl">
+              <property role="3V$3am" value="content" />
+              <property role="3V$3ak" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681415858/1622293396948928802" />
+              <node concept="2pNNFK" id="1TD_kqsnMcQ" role="8Wnug">
+                <property role="2pNNFO" value="add-to-group" />
+                <property role="qg3DV" value="true" />
+                <node concept="2pNUuL" id="1TD_kqsnMcR" role="2pNNFR">
+                  <property role="2pNUuO" value="group-id" />
+                  <node concept="2pMdtt" id="1TD_kqsnMcS" role="2pMdts">
+                    <property role="2pMdty" value="WelcomeScreen.Documentation" />
+                  </node>
+                </node>
+                <node concept="2pNUuL" id="1TD_kqsnMcT" role="2pNNFR">
+                  <property role="2pNUuO" value="anchor" />
+                  <node concept="2pMdtt" id="1TD_kqsnMcU" role="2pMdts">
+                    <property role="2pMdty" value="last" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -340,7 +371,7 @@
               <node concept="2pNUuL" id="7836$RyXe2z" role="2pNNFR">
                 <property role="2pNUuO" value="anchor" />
                 <node concept="2pMdtt" id="7836$RyXe2$" role="2pMdts">
-                  <property role="2pMdty" value="last" />
+                  <property role="2pMdty" value="first" />
                 </node>
               </node>
             </node>
