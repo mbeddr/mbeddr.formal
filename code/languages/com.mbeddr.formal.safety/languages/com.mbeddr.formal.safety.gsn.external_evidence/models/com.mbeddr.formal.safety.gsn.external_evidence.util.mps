@@ -98,6 +98,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -119,6 +120,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
@@ -382,6 +387,28 @@
                 <node concept="1pGfFk" id="79zp7zi746C" role="2ShVmc">
                   <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3I9hGreJ1VS" role="3cqZAp" />
+        <node concept="2xdQw9" id="3I9hGreJ4S1" role="3cqZAp">
+          <property role="2xdLsb" value="h1akgim/info" />
+          <node concept="3cpWs3" id="3I9hGreJ6gx" role="9lYJi">
+            <node concept="37vLTw" id="3I9hGreJ6jC" role="3uHU7w">
+              <ref role="3cqZAo" node="3wuU_o8gZ2r" resolve="files" />
+            </node>
+            <node concept="3cpWs3" id="3I9hGreJ61T" role="3uHU7B">
+              <node concept="3cpWs3" id="3I9hGreJ5Al" role="3uHU7B">
+                <node concept="Xl_RD" id="3I9hGreJ4S3" role="3uHU7B">
+                  <property role="Xl_RC" value="evidence checked by running command: " />
+                </node>
+                <node concept="37vLTw" id="3I9hGreJ5ER" role="3uHU7w">
+                  <ref role="3cqZAo" node="3wuU_o8gXWF" resolve="toolBinaryName" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="3I9hGreJ6aF" role="3uHU7w">
+                <property role="Xl_RC" value=" " />
               </node>
             </node>
           </node>
