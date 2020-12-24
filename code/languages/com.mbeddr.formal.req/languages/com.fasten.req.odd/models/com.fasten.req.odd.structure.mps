@@ -188,5 +188,20 @@
       <ref role="20lvS9" node="3Jn$RV31nMt" resolve="ODDParameter" />
     </node>
   </node>
+  <node concept="1TIwiD" id="NY_g42e1PC">
+    <property role="EcuMT" value="936349604104379752" />
+    <property role="TrG5h" value="ODDParameterDimensionWordRef" />
+    <property role="34LRSv" value="@odd-param-dim" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="NY_g42e1PD" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="NY_g42e1PF" role="1TKVEi">
+      <property role="IQ2ns" value="936349604104379755" />
+      <property role="20kJfa" value="dim" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3Jn$RV31p8M" resolve="ODDParameterDimension" />
+    </node>
+  </node>
 </model>
 
