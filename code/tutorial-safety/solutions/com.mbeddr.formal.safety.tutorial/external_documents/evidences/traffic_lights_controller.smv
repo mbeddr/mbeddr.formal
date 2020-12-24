@@ -1,0 +1,43 @@
+
+
+MODULE traffic_lights_controller(cross_request)
+  VAR
+    traffic : {Green, Yellow, Red};
+    pedestrian : {Walk, DontWalk};
+    timer : 0..10;
+  ASSIGN
+    init(traffic) := Green;
+    next(traffic) := case
+        traffic = Green & cross_request : Yellow;
+        traffic = Yellow & timer = 0 : Red;
+        traffic = Red & timer = 0 : Green;
+        TRUE : traffic;
+      esac;
+    init(timer) := 0;
+    next(timer) := case
+        traffic = Green & cross_request : 3;
+        traffic = Yellow & timer > 0 : timer - 1;
+        traffic = Yellow & timer = 0 : 10;
+        traffic = Red & timer > 0 : timer - 1;
+        TRUE : timer;
+      esac;
+    init(pedestrian) := DontWalk;
+    next(pedestrian) := case
+        traffic = Red & timer > 0 : Walk;
+        TRUE : DontWalk;
+      esac;
+  -- not WALK and GREEN at the same time
+  SPEC AG !((pedestrian = Walk & traffic = Green))
+  -- when WALK then RED
+  SPEC AG (pedestrian = Walk -> traffic = Red)
+  -- button is taken into consideration
+  SPEC AG (cross_request -> AF pedestrian = Walk)
+
+MODULE main
+  VAR
+    tlc : traffic_lights_controller(button);
+    button : boolean;
+  TRANS
+    button | !(button)
+
+
