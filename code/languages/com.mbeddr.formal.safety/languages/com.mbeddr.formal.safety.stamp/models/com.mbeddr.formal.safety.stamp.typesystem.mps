@@ -35,6 +35,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -380,23 +381,36 @@
                           <ref role="3cqZAo" node="41_NtXJplbg" resolve="it" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="41_NtXJplb8" role="3uHU7B">
-                        <node concept="2OqwBi" id="41_NtXJplb9" role="2Oq$k0">
-                          <node concept="37vLTw" id="41_NtXJplba" role="2Oq$k0">
-                            <ref role="3cqZAo" node="41_NtXJplbg" resolve="it" />
-                          </node>
-                          <node concept="3TrcHB" id="41_NtXJplbb" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="41_NtXJplbc" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                          <node concept="2OqwBi" id="41_NtXJplbd" role="37wK5m">
-                            <node concept="1YBJjd" id="41_NtXJplbe" role="2Oq$k0">
-                              <ref role="1YBMHb" node="41_NtXJpd3j" resolve="iReferenceableActionDescription" />
+                      <node concept="1Wc70l" id="1TD_kqsQP9o" role="3uHU7B">
+                        <node concept="2OqwBi" id="1TD_kqsQQeN" role="3uHU7B">
+                          <node concept="2OqwBi" id="1TD_kqsQP_q" role="2Oq$k0">
+                            <node concept="37vLTw" id="1TD_kqsQPmY" role="2Oq$k0">
+                              <ref role="3cqZAo" node="41_NtXJplbg" resolve="it" />
                             </node>
-                            <node concept="3TrcHB" id="41_NtXJplbf" role="2OqNvi">
+                            <node concept="3TrcHB" id="1TD_kqsQPNZ" role="2OqNvi">
                               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                          <node concept="17RvpY" id="1TD_kqsQQ_A" role="2OqNvi" />
+                        </node>
+                        <node concept="2OqwBi" id="41_NtXJplb8" role="3uHU7w">
+                          <node concept="2OqwBi" id="41_NtXJplb9" role="2Oq$k0">
+                            <node concept="37vLTw" id="41_NtXJplba" role="2Oq$k0">
+                              <ref role="3cqZAo" node="41_NtXJplbg" resolve="it" />
+                            </node>
+                            <node concept="3TrcHB" id="41_NtXJplbb" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="41_NtXJplbc" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                            <node concept="2OqwBi" id="41_NtXJplbd" role="37wK5m">
+                              <node concept="1YBJjd" id="41_NtXJplbe" role="2Oq$k0">
+                                <ref role="1YBMHb" node="41_NtXJpd3j" resolve="iReferenceableActionDescription" />
+                              </node>
+                              <node concept="3TrcHB" id="41_NtXJplbf" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
                             </node>
                           </node>
                         </node>
