@@ -238,10 +238,19 @@
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
+        <child id="437343344536486297" name="help" index="1xUO3H" />
+        <child id="5894421362117323157" name="support" index="3$HL_E" />
+        <child id="5894421362116952242" name="documentation" index="3$Ir1d" />
         <child id="1084163669516694346" name="logoW" index="3KTCDm" />
         <child id="1084163669516694385" name="logoH" index="3KTCDH" />
         <child id="1084163669516694195" name="logoX" index="3KTCIJ" />
         <child id="1084163669516694232" name="logoY" index="3KTCJ4" />
+        <child id="4157435862321767641" name="version" index="3ZAC$U" />
+      </concept>
+      <concept id="7753544965996489992" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingHelp" flags="ng" index="1zDKOp">
+        <child id="437343344536486294" name="url" index="1xUO3y" />
+        <child id="437343344536486295" name="root" index="1xUO3z" />
+        <child id="437343344536486296" name="file" index="1xUO3G" />
       </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
@@ -289,6 +298,12 @@
       <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
+      <concept id="4157435862321765764" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingVersion" flags="ng" index="3ZAF1B">
+        <child id="4157435862321765794" name="versionEap" index="3ZAF11" />
+        <child id="4157435862321765793" name="versionBugfixNr" index="3ZAF12" />
+        <child id="4157435862321765792" name="versionMinor" index="3ZAF13" />
+        <child id="4157435862321765791" name="versionMajor" index="3ZAF1W" />
+      </concept>
     </language>
   </registry>
   <node concept="1l3spW" id="42jqVeFkUtb">
@@ -323,8 +338,8 @@
         <ref role="398BVh" node="42jqVeFkUG2" resolve="mbeddr.formal.home" />
         <node concept="2Ry0Ak" id="51uLzzZ6tyC" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="214ojnldZo" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2020_1_2" />
+          <node concept="2Ry0Ak" id="1TD_kqsfX1Q" role="2Ry0An">
+            <property role="2Ry0Am" value="MPS_2020_2_3" />
           </node>
         </node>
       </node>
@@ -424,7 +439,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2020-07-28" />
+            <property role="3MwjfP" value="2020-12-24" />
           </node>
         </node>
       </node>
@@ -8975,12 +8990,23 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="73rWdFZqIn0" role="3bR31x">
-          <node concept="3LXTmp" id="73rWdFZqIn2" role="3rtmxm">
-            <node concept="3qWCbU" id="73rWdFZqIng" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+        <node concept="3rtmxn" id="1TD_kqslaVj" role="3bR31x">
+          <node concept="3LXTmp" id="1TD_kqslaVk" role="3rtmxm">
+            <node concept="398BVA" id="1TD_kqslaVl" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="1TD_kqslaVm" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1TD_kqslaVn" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.ft" />
+                  <node concept="2Ry0Ak" id="1TD_kqslaVo" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="55IIr" id="73rWdFZqIn4" role="3LXTmr" />
+            <node concept="3LWZYx" id="1TD_kqslaVp" role="3LXTna">
+              <property role="3LWZYw" value="com/fasten/safety/ft/structure/*.png" />
+            </node>
           </node>
         </node>
         <node concept="1yeLz9" id="73rWdFZqI2O" role="1TViLv">
@@ -9056,19 +9082,22 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="73rWdFZqA4X" role="3bR31x">
-          <node concept="3LXTmp" id="73rWdFZqA4Z" role="3rtmxm">
-            <node concept="398BVA" id="73rWdFZqAdK" role="3LXTmr">
+        <node concept="3rtmxn" id="1TD_kqslcyc" role="3bR31x">
+          <node concept="3LXTmp" id="1TD_kqslcyd" role="3rtmxm">
+            <node concept="398BVA" id="1TD_kqslcye" role="3LXTmr">
               <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-              <node concept="2Ry0Ak" id="73rWdFZqAmp" role="iGT6I">
+              <node concept="2Ry0Ak" id="1TD_kqslcyf" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="73rWdFZqAv1" role="2Ry0An">
+                <node concept="2Ry0Ak" id="1TD_kqslcyg" role="2Ry0An">
                   <property role="2Ry0Am" value="com.fasten.safety.fmea" />
+                  <node concept="2Ry0Ak" id="1TD_kqslcyh" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="73rWdFZqABC" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+            <node concept="3LWZYx" id="1TD_kqslcyi" role="3LXTna">
+              <property role="3LWZYw" value="com/fasten/safety/fmea/structure/*.png" />
             </node>
           </node>
         </node>
@@ -9165,12 +9194,23 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="73rWdFZqCQx" role="3bR31x">
-          <node concept="3LXTmp" id="73rWdFZqCQz" role="3rtmxm">
-            <node concept="3qWCbU" id="73rWdFZqCZk" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+        <node concept="3rtmxn" id="1TD_kqsld4H" role="3bR31x">
+          <node concept="3LXTmp" id="1TD_kqsld4I" role="3rtmxm">
+            <node concept="398BVA" id="1TD_kqsld4J" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="1TD_kqsld4K" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1TD_kqsld4L" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.fmea.arch" />
+                  <node concept="2Ry0Ak" id="1TD_kqsld4M" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="55IIr" id="73rWdFZqCQ_" role="3LXTmr" />
+            <node concept="3LWZYx" id="1TD_kqsld4N" role="3LXTna">
+              <property role="3LWZYw" value="com/fasten/safety/fmea/arch/structure/*.png" />
+            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="73rWdFZqCz1" role="3bR37C">
@@ -10722,7 +10762,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20200728" />
+        <property role="hHN3Y" value="20201224" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -10752,8 +10792,8 @@
         <ref role="398BVh" node="wUJmWCxY0g" resolve="mbeddr.formal.home" />
         <node concept="2Ry0Ak" id="wUJmWCxY0m" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3EWkVoQgQes" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2020_1_2" />
+          <node concept="2Ry0Ak" id="1TD_kqsdpAL" role="2Ry0An">
+            <property role="2Ry0Am" value="MPS_2020_2_3" />
           </node>
         </node>
       </node>
@@ -10838,7 +10878,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2020-07-28" />
+            <property role="3MwjfP" value="2020-12-24" />
           </node>
         </node>
       </node>
@@ -11036,11 +11076,7 @@
             <property role="3MwjfP" value="https://sites.google.com/site/fastenroot/" />
           </node>
         </node>
-        <node concept="NbPM2" id="6adXBxxUzpg" role="3fQQh0">
-          <node concept="3Mxwey" id="6adXBxxUzP1" role="3MwsjC">
-            <ref role="3Mxwex" node="wUJmWCxY0a" resolve="build.date" />
-          </node>
-        </node>
+        <node concept="NbPM2" id="6adXBxxUzpg" role="3fQQh0" />
       </node>
       <node concept="398BVA" id="2DcSMg46nSq" role="2EqU2s">
         <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
@@ -11085,17 +11121,17 @@
       </node>
       <node concept="NbPM2" id="2WV$_6PibKN" role="27hAJg">
         <node concept="3Mxwew" id="2WV$_6PibKM" role="3MwsjC">
-          <property role="3MwjfP" value="210" />
+          <property role="3MwjfP" value="175" />
         </node>
       </node>
       <node concept="NbPM2" id="2WV$_6PibKR" role="2gqIGF">
         <node concept="3Mxwew" id="2WV$_6PibKQ" role="3MwsjC">
-          <property role="3MwjfP" value="6" />
+          <property role="3MwjfP" value="8" />
         </node>
       </node>
       <node concept="NbPM2" id="2WV$_6PpsXU" role="27hGoL">
         <node concept="3Mxwew" id="2WV$_6PpsXT" role="3MwsjC">
-          <property role="3MwjfP" value="191970" />
+          <property role="3MwjfP" value="843C0C" />
         </node>
       </node>
       <node concept="NbPM2" id="2WV$_6Puj6G" role="3KTCDm" />
@@ -11108,6 +11144,47 @@
       <node concept="NbPM2" id="2WV$_6P_$k9" role="3KTCJ4">
         <node concept="3Mxwew" id="2WV$_6P_$k8" role="3MwsjC">
           <property role="3MwjfP" value="50" />
+        </node>
+      </node>
+      <node concept="1zDKOp" id="1TD_kqsnMhZ" role="1xUO3H">
+        <node concept="3_J27D" id="1TD_kqsnMi0" role="1xUO3y">
+          <node concept="3Mxwew" id="1TD_kqsnMi7" role="3MwsjC">
+            <property role="3MwjfP" value="https://sites.google.com/site/fastenroot/home/" />
+          </node>
+        </node>
+        <node concept="3_J27D" id="1TD_kqsnMi1" role="1xUO3z">
+          <node concept="3Mxwew" id="1TD_kqsnMi9" role="3MwsjC">
+            <property role="3MwjfP" value="fastenroot" />
+          </node>
+        </node>
+        <node concept="NbPM2" id="1TD_kqsnMi2" role="1xUO3G" />
+      </node>
+      <node concept="NbPM2" id="1TD_kqsnMib" role="3$Ir1d">
+        <node concept="3Mxwew" id="1TD_kqsnMid" role="3MwsjC">
+          <property role="3MwjfP" value="https://sites.google.com/site/fastenroot/home/" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="1TD_kqstk_i" role="3$HL_E">
+        <node concept="3Mxwew" id="1TD_kqstk_h" role="3MwsjC">
+          <property role="3MwjfP" value="https://sites.google.com/site/fastenroot/Users-Manual/" />
+        </node>
+      </node>
+      <node concept="3ZAF1B" id="1TD_kqsGBKs" role="3ZAC$U">
+        <node concept="3_J27D" id="1TD_kqsGBKt" role="3ZAF1W">
+          <node concept="3Mxwew" id="1TD_kqsGBKu" role="3MwsjC">
+            <property role="3MwjfP" value="2020" />
+          </node>
+        </node>
+        <node concept="3_J27D" id="1TD_kqsGBKv" role="3ZAF13">
+          <node concept="3Mxwew" id="1TD_kqsGBKw" role="3MwsjC">
+            <property role="3MwjfP" value="2" />
+          </node>
+        </node>
+        <node concept="NbPM2" id="1TD_kqsGBKy" role="3ZAF11" />
+        <node concept="NbPM2" id="1TD_kqsGBKz" role="3ZAF12">
+          <node concept="3Mxwew" id="1TD_kqsGBK$" role="3MwsjC">
+            <property role="3MwjfP" value=".1" />
+          </node>
         </node>
       </node>
     </node>

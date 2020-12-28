@@ -233,6 +233,7 @@
         <node concept="3F0A7n" id="2K98XVjThjm" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="65Lrkjj21wf" role="2iSdaV" />
       </node>
@@ -418,6 +419,7 @@
         <node concept="3F0A7n" id="2K98XVjThl9" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="3Ngc4zVhAzp" role="2iSdaV" />
       </node>
@@ -489,6 +491,7 @@
         <node concept="3F0A7n" id="2K98XVjTh8g" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
         </node>
         <node concept="l2Vlx" id="1Y8zh0lZjT2" role="2iSdaV" />
       </node>
