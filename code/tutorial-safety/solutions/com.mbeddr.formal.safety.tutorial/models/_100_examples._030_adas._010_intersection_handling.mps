@@ -327,58 +327,39 @@
     <property role="TrG5h" value="_625_ihs_hazards_list" />
     <node concept="1a6Z8w" id="3Jn$RV2Vwq6" role="8gIbH">
       <property role="0lsPB" value="H01" />
-      <property role="TrG5h" value="Inappropriate vehicle behavior while handling a standard intersection" />
+      <property role="TrG5h" value="Vehicle leaves authorised or designated road or highway/Inappropriate vehicle behavior while handling a standard intersection" />
       <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
       <property role="1a6$Vb" value="24PsEXFbNLe/E4" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqc" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqd" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqe" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of mission" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwq7" role="8gIbH">
       <property role="0lsPB" value="H02" />
-      <property role="TrG5h" value="Inappropriate vehicle behavior while handling a connected intersection" />
+      <property role="TrG5h" value="Vehicle does not maintain safe distance to other vehicles or objects/Inappropriate vehicle behavior while handling a connected intersection" />
       <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
       <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqf" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqg" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqh" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of mission" />
-      </node>
-    </node>
-    <node concept="1a6Z8w" id="3Jn$RV2Vwq8" role="8gIbH">
-      <property role="0lsPB" value="H03" />
-      <property role="TrG5h" value="Inappropriate vehicle behavior while approaching an intersection" />
-      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
-      <node concept="3Zv_sa" id="3Jn$RV2Vwqi" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life of in or out of the vehicle humans" />
-      </node>
-      <node concept="3Zv_sa" id="3Jn$RV2Vwqj" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
-      </node>
-      <node concept="3Zv_sa" id="3Jn$RV2Vwqk" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of mission" />
-      </node>
-      <node concept="3Zv_sa" id="3Jn$RV2Vwql" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqX" resolve="Loss of service" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwq9" role="8gIbH">
-      <property role="0lsPB" value="H04" />
-      <property role="TrG5h" value="Inappropriate communication with infrastructure while handling an intersection" />
+      <property role="0lsPB" value="H03" />
+      <property role="TrG5h" value="The vehicle does not maintain safe distance to other vehicles or objects due to inappropriate communication with infrastructure while handling an intersection" />
       <property role="1a6$Vb" value="24PsEXFbNLe/E4" />
       <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqm" role="3Zv_sA">
@@ -386,32 +367,32 @@
       </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwqa" role="8gIbH">
-      <property role="0lsPB" value="H05" />
-      <property role="TrG5h" value="Control of the vehicle with too high longitudinal or lateral accelerations" />
+      <property role="0lsPB" value="H04" />
+      <property role="TrG5h" value="The Intersection Assistant control of the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
       <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
       <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
       <property role="1a6$V8" value="24PsEXFbNLm/C1" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqn" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqo" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwqb" role="8gIbH">
-      <property role="0lsPB" value="H06" />
-      <property role="TrG5h" value="Operation of the vehicle outside the operational environment" />
+      <property role="0lsPB" value="H05" />
+      <property role="TrG5h" value="The vehicle does not maintain safe distance to other vehicles or objects or leaves designated road while operating outside the operational environment " />
       <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
       <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
       <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqp" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqq" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqr" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of mission" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqs" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqX" resolve="Loss of service" />
@@ -430,7 +411,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwqC" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwqP" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwqR" role="19SJt6">
-              <property role="19SUeA" value="AD system shall provide safe control to the vehicle with high availability while operating in the defined ODD" />
+              <property role="19SUeA" value="The Intersection Assistant shall provide safe control to the vehicle with &#10;high availability while operating in the defined ODD" />
             </node>
           </node>
         </node>
@@ -442,16 +423,13 @@
       </node>
       <node concept="2iDXIW" id="3Jn$RV2Vwqz" role="0nOlf">
         <node concept="DABN8" id="3Jn$RV2VwqE" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
+          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway/Inappropriate vehicle behavior while handling a standard intersection" />
         </node>
         <node concept="DABN8" id="3Jn$RV2VwqF" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwqG" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
+          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Vehicle does not maintain safe distance to other vehicles or objects/Inappropriate vehicle behavior while handling a connected intersection" />
         </node>
         <node concept="DABN8" id="3Jn$RV2VwqH" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
+          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="The Intersection Assistant control of the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
         </node>
       </node>
     </node>
@@ -465,7 +443,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwqI" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwqQ" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwqS" role="19SJt6">
-              <property role="19SUeA" value="AD system shall control the vehicle so that it avoids collission with TPO, VRU, road geometry and topology" />
+              <property role="19SUeA" value="The Intersection Assistant shall control the vehicle so that it avoids collission &#10;with TPO, VRU, road geometry and topology" />
             </node>
           </node>
         </node>
@@ -477,19 +455,16 @@
       </node>
       <node concept="2iDXIW" id="3Jn$RV2VwqB" role="0nOlf">
         <node concept="DABN8" id="3Jn$RV2VwqK" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
+          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway/Inappropriate vehicle behavior while handling a standard intersection" />
         </node>
         <node concept="DABN8" id="3Jn$RV2VwqL" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwqM" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
+          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Vehicle does not maintain safe distance to other vehicles or objects/Inappropriate vehicle behavior while handling a connected intersection" />
         </node>
         <node concept="DABN8" id="3Jn$RV2VwqN" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
+          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="The vehicle does not maintain safe distance to other vehicles or objects or leaves designated road while operating outside the operational environment " />
         </node>
         <node concept="DABN8" id="3Jn$RV2VwqO" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
+          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="The Intersection Assistant control of the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
         </node>
       </node>
     </node>
@@ -497,7 +472,7 @@
   <node concept="2HxQMi" id="3Jn$RV2VwqT">
     <property role="TrG5h" value="_620_ihs_losses" />
     <node concept="2HxQMU" id="3Jn$RV2VwqU" role="2HxQMj">
-      <property role="TrG5h" value="Loss of life of in or out of the vehicle humans" />
+      <property role="TrG5h" value="Loss of life or injury of in or out of the vehicle humans" />
       <property role="2HxQM_" value="L01" />
     </node>
     <node concept="2HxQMU" id="3Jn$RV2VwqV" role="2HxQMj">
@@ -505,7 +480,7 @@
       <property role="2HxQM_" value="L02" />
     </node>
     <node concept="2HxQMU" id="3Jn$RV2VwqW" role="2HxQMj">
-      <property role="TrG5h" value="Loss of mission" />
+      <property role="TrG5h" value="Loss of transportation mission" />
       <property role="2HxQM_" value="L03" />
     </node>
     <node concept="2HxQMU" id="3Jn$RV2VwqX" role="2HxQMj">
@@ -587,7 +562,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2VwsU" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
+          <ref role="oTUVg" node="3Jn$RV2Vwqa" resolve="The Intersection Assistant control of the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2VwsV" role="19SJt6">
           <property role="19SUeA" value="&#10;has been mitigated" />
@@ -602,13 +577,13 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2VwsX" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
+          <ref role="oTUVg" node="3Jn$RV2Vwq7" resolve="Vehicle does not maintain safe distance to other vehicles or objects/Inappropriate vehicle behavior while handling a connected intersection" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2VwsY" role="19SJt6">
           <property role="19SUeA" value="&#10;has been substituted &#10;with hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2VwsZ" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
+          <ref role="oTUVg" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway/Inappropriate vehicle behavior while handling a standard intersection" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt0" role="19SJt6" />
       </node>
@@ -640,7 +615,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2Vwt5" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
+          <ref role="oTUVg" node="3Jn$RV2Vwqb" resolve="The vehicle does not maintain safe distance to other vehicles or objects or leaves designated road while operating outside the operational environment " />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt6" role="19SJt6">
           <property role="19SUeA" value=" has been eliminated and can no longer occur" />
@@ -2654,42 +2629,25 @@
     </node>
   </node>
   <node concept="1QQeGf" id="3Jn$RV2Vwx$">
-    <property role="TrG5h" value="_650_ihs_functional_safety_requirements_SG02" />
+    <property role="TrG5h" value="_650_ihs_functional_safety_requirements_sensing" />
     <node concept="0lhDl" id="3Jn$RV2Vwx_" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.5" />
+      <property role="0lsPA" value="FSR05.1" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="2FkW4_" id="3Jn$RV2Vwy3" role="2FklKs">
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2Vwy4" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2Vwzj" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kaC" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2Vwy5" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2Vwzk" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vw_p" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vw_D" role="19SJt6">
-              <property role="19SUeA" value="AD system shall require feedback from multiple sensing technologies &#10;in order to control the vehicle operation on road. " />
+              <property role="19SUeA" value="The Intersection Assistant shall require feedback from multiple sensing technologies &#10;in order to control the vehicle operation on road. " />
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="2iDXIW" id="3Jn$RV2Vwy6" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vwzl" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzm" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzn" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzo" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzp" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
         </node>
       </node>
       <node concept="19SGf9" id="3Jn$RV2Vwy7" role="1QQeG9">
@@ -2697,27 +2655,12 @@
           <property role="19SUeA" value="Multiple Sensing Technologies" />
         </node>
       </node>
+      <node concept="2iDXIW" id="5icisZS$ka3" role="0nOlf" />
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwxA" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.6" />
+      <property role="0lsPA" value="FSR05.2" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2Vwy8" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vwzr" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzs" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzt" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzu" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwzv" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwy8" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwy9" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vwzw" role="19SJt6">
           <property role="19SUeA" value="Sensors Fault Detection" />
@@ -2727,15 +2670,15 @@
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2Vwyb" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2Vwzx" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kaG" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2Vwyc" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2Vwzy" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vw_q" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vw_E" role="19SJt6">
-              <property role="19SUeA" value="AD system shall detect degraded or insufficient information flow &#10;from the environment perception sensors." />
+              <property role="19SUeA" value="The Intersection Assistant shall detect degraded or insufficient information flow &#10;from the environment perception sensors." />
             </node>
           </node>
         </node>
@@ -2743,25 +2686,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxB" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxC" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.7" />
+      <property role="0lsPA" value="FSR05.3" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2Vwyd" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vwzz" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwz$" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vwz_" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzA" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzB" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwyd" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwye" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwzC" role="19SJt6">
           <property role="19SUeA" value="Sensors Limitations Detection w.r.t. Environment" />
@@ -2771,15 +2698,15 @@
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2Vwyg" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2VwzD" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kaJ" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2Vwyh" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwzE" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vw_r" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vw_F" role="19SJt6">
-              <property role="19SUeA" value="AD system shall detect severe limitation of &#10;the environment perception sensors." />
+              <property role="19SUeA" value="The Intersection Assistant shall detect severe limitation of the environment perception sensors." />
             </node>
           </node>
         </node>
@@ -2787,25 +2714,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxD" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxE" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.8" />
+      <property role="0lsPA" value="FSR05.4" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2Vwyi" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2VwzF" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzG" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzH" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzI" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzJ" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwyi" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwyj" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwzK" role="19SJt6">
           <property role="19SUeA" value="Sensing Zones" />
@@ -2815,8 +2726,8 @@
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2Vwyl" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2VwzL" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kaM" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2Vwym" role="1QQeAC">
@@ -2831,25 +2742,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxF" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxG" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.9" />
+      <property role="0lsPA" value="FSR05.5" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2Vwyn" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2VwzN" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzO" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzP" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzQ" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzR" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwyn" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwyo" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwzS" role="19SJt6">
           <property role="19SUeA" value="Sensing Capabilities" />
@@ -2859,15 +2754,15 @@
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2Vwyq" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2VwzT" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kaP" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxE" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2Vwyr" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwzU" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vw_t" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vw_H" role="19SJt6">
-              <property role="19SUeA" value="The sensing zones shall be implemented with different &#10;sensing capabilities to suit the needs of the functionality &#10;that enables a safe operation of the vehicle." />
+              <property role="19SUeA" value="The sensing zones shall be covered by different sensing capabilities to suit the needs &#10;of the functionality that enables a safe operation of the vehicle." />
             </node>
           </node>
         </node>
@@ -2875,35 +2770,19 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxH" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxI" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.10" />
+      <property role="0lsPA" value="FSR05.6" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="19SGf9" id="3Jn$RV2Vwys" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwzV" role="19SJt6">
           <property role="19SUeA" value="Lidars Usage" />
         </node>
       </node>
-      <node concept="2iDXIW" id="3Jn$RV2Vwyt" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2VwzW" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzX" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzY" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwzZ" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$0" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwyt" role="0nOlf" />
       <node concept="1QQeAY" id="3Jn$RV2Vwyu" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2Vw$1" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vw_u" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vw_I" role="19SJt6">
-              <property role="19SUeA" value="The system shall use data from a sensing setup &#10;of lidars to enable TPO, VRU detection functionality." />
+              <property role="19SUeA" value="The system shall use data from a sensing setup of lidars to enable TPO, VRU detection functionality." />
             </node>
           </node>
         </node>
@@ -2919,35 +2798,19 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxJ" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxK" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.11" />
+      <property role="0lsPA" value="FSR05.7" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="19SGf9" id="3Jn$RV2Vwyx" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw$3" role="19SJt6">
           <property role="19SUeA" value="Radars Usage" />
         </node>
       </node>
-      <node concept="2iDXIW" id="3Jn$RV2Vwyy" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$4" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$5" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$6" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$7" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$8" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwyy" role="0nOlf" />
       <node concept="1QQeAY" id="3Jn$RV2Vwyz" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2Vw$9" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vw_v" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vw_J" role="19SJt6">
-              <property role="19SUeA" value="The system shall use data from a sensing setup &#10;of radars to enable TPO, VRU detection functionality." />
+              <property role="19SUeA" value="The system shall use data from a sensing setup of radars to enable TPO, VRU detection functionality." />
             </node>
           </node>
         </node>
@@ -2963,35 +2826,19 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxL" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxM" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.12" />
+      <property role="0lsPA" value="FSR05.8" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="19SGf9" id="3Jn$RV2VwyA" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw$b" role="19SJt6">
           <property role="19SUeA" value="Cameras Usage" />
         </node>
       </node>
-      <node concept="2iDXIW" id="3Jn$RV2VwyB" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$c" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$d" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$e" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$f" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$g" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwyB" role="0nOlf" />
       <node concept="1QQeAY" id="3Jn$RV2VwyC" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2Vw$h" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vw_w" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vw_K" role="19SJt6">
-              <property role="19SUeA" value="The system shall use data from a sensing setup &#10;of cameras to enable TPO, VRU detection functionality." />
+              <property role="19SUeA" value="The system shall use data from a sensing setup of cameras to enable TPO, VRU detection functionality." />
             </node>
           </node>
         </node>
@@ -3007,25 +2854,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxN" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxO" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.13" />
+      <property role="0lsPA" value="FSR05.9" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2VwyF" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$j" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$k" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$l" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$m" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$n" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwyF" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2VwyG" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw$o" role="19SJt6">
           <property role="19SUeA" value="Long Range Sensing" />
@@ -3035,8 +2866,8 @@
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwyI" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2Vw$p" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kaS" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxG" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwyJ" role="1QQeAC">
@@ -3051,25 +2882,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxP" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxQ" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.13.1" />
+      <property role="0lsPA" value="FSR05.9.1" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2VwyK" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$r" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$s" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$t" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$u" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$v" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwyK" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2VwyL" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw$w" role="19SJt6">
           <property role="19SUeA" value="Lidars Usage for Long Range Sensing" />
@@ -3079,11 +2894,8 @@
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwyN" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2Vw$x" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
-        </node>
-        <node concept="KAwnX" id="3Jn$RV2Vw$y" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxI" />
+        <node concept="KAwnX" id="5icisZS$kaW" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxO" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwyO" role="1QQeAC">
@@ -3098,25 +2910,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxR" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxS" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.14" />
+      <property role="0lsPA" value="FSR05.10" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2VwyP" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$$" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$_" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$A" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$B" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$C" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwyP" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2VwyQ" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw$D" role="19SJt6">
           <property role="19SUeA" value="Medium Range Sensing" />
@@ -3126,8 +2922,8 @@
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwyS" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2Vw$E" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kaZ" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxG" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwyT" role="1QQeAC">
@@ -3143,24 +2939,8 @@
     <node concept="0lH3_" id="3Jn$RV2VwxT" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxU" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FSR02.14.1" />
-      <node concept="2iDXIW" id="3Jn$RV2VwyU" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$G" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$H" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$I" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$J" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$K" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <property role="0lsPA" value="FSR05.10.1" />
+      <node concept="2iDXIW" id="3Jn$RV2VwyU" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2VwyV" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw$L" role="19SJt6">
           <property role="19SUeA" value="Radars and Lidars Usage for Medium Range Sensing" />
@@ -3172,12 +2952,6 @@
       <node concept="KAwnT" id="3Jn$RV2VwyX" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2Vw$M" role="KALWe">
           <ref role="KAwnW" node="3Jn$RV2VwxS" />
-        </node>
-        <node concept="KAwnX" id="3Jn$RV2Vw$N" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxI" />
-        </node>
-        <node concept="KAwnX" id="3Jn$RV2Vw$O" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxK" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwyY" role="1QQeAC">
@@ -3193,24 +2967,8 @@
     <node concept="0lH3_" id="3Jn$RV2VwxV" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxW" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FSR02.14.2" />
-      <node concept="2iDXIW" id="3Jn$RV2VwyZ" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$Q" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$R" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$S" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$T" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$U" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <property role="0lsPA" value="FSR05.10.2" />
+      <node concept="2iDXIW" id="3Jn$RV2VwyZ" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwz0" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw$V" role="19SJt6">
           <property role="19SUeA" value="1oo2 Sensors Input Voting" />
@@ -3236,36 +2994,20 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxX" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2VwxY" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.15" />
+      <property role="0lsPA" value="FSR05.11" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2Vwz4" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw$Y" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw$Z" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_0" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_1" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_2" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwz4" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwz5" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw_3" role="19SJt6">
-          <property role="19SUeA" value="Long Range Sensing" />
+          <property role="19SUeA" value="Short Range Sensing" />
         </node>
       </node>
       <node concept="2FkW4_" id="3Jn$RV2Vwz6" role="2FklKs">
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
       <node concept="KAwnT" id="3Jn$RV2Vwz7" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2Vw_4" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+        <node concept="KAwnX" id="5icisZS$kb5" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxG" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2Vwz8" role="1QQeAC">
@@ -3280,25 +3022,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2VwxZ" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2Vwy0" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.15.1" />
+      <property role="0lsPA" value="FSR05.11.1" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2Vwz9" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw_6" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_7" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_8" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_9" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_a" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwz9" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwza" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw_b" role="19SJt6">
           <property role="19SUeA" value="Lidars, Radars and Cameras for Short Range Sensing" />
@@ -3310,15 +3036,6 @@
       <node concept="KAwnT" id="3Jn$RV2Vwzc" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2Vw_c" role="KALWe">
           <ref role="KAwnW" node="3Jn$RV2VwxY" />
-        </node>
-        <node concept="KAwnX" id="3Jn$RV2Vw_d" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxI" />
-        </node>
-        <node concept="KAwnX" id="3Jn$RV2Vw_e" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxK" />
-        </node>
-        <node concept="KAwnX" id="3Jn$RV2Vw_f" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxM" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2Vwzd" role="1QQeAC">
@@ -3333,25 +3050,9 @@
     </node>
     <node concept="0lH3_" id="3Jn$RV2Vwy1" role="1QQeBF" />
     <node concept="0lhDl" id="3Jn$RV2Vwy2" role="1QQeBF">
-      <property role="0lsPA" value="FSR02.15.2" />
+      <property role="0lsPA" value="FSR05.11.2" />
       <property role="0ke_I" value="Daniel P." />
-      <node concept="2iDXIW" id="3Jn$RV2Vwze" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2Vw_h" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_i" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_j" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_k" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Operation of the vehicle outside the operational environment" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2Vw_l" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwze" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2Vwzf" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2Vw_m" role="19SJt6">
           <property role="19SUeA" value="2oo3 Sensors Input Voting" />
@@ -3377,9 +3078,9 @@
     </node>
   </node>
   <node concept="1QQeGf" id="3Jn$RV2Vw_T">
-    <property role="TrG5h" value="_650_ihs_functional_safety_requirements_SG02" />
+    <property role="TrG5h" value="_650_ihs_functional_safety_requirements" />
     <node concept="0lhDl" id="3Jn$RV2Vw_U" role="1QQeBF">
-      <property role="0lsPA" value="FSR01.1" />
+      <property role="0lsPA" value="FSR01" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="2FkW4_" id="3Jn$RV2Vw_Y" role="2FklKs">
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
@@ -3388,23 +3089,9 @@
         <node concept="0nzK2" id="3Jn$RV2VwAi" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwAI" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwAM" role="19SJt6">
-              <property role="19SUeA" value="AD system shall detect static and dynamic VRU, TPU, overridable objects, road geometry and topology &#10;and plan a collision free trajectory, while considering environmental factors." />
+              <property role="19SUeA" value="AD system shall perceive, detect and track static and dynamic VRU, TPU, overridable objects, &#10;road geometry and topology and plan a collision free trajectory, while considering environmental factors." />
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="2iDXIW" id="3Jn$RV2VwA0" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2VwAj" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAk" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAl" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAm" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
         </node>
       </node>
       <node concept="19SGf9" id="3Jn$RV2VwA1" role="1QQeG9">
@@ -3413,13 +3100,14 @@
         </node>
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwA2" role="2FklKs">
-        <node concept="KAwnX" id="3Jn$RV2VwAo" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqu" />
+        <node concept="KAwnX" id="5icisZS$ka$" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
         </node>
       </node>
+      <node concept="2iDXIW" id="5icisZS$kax" role="0nOlf" />
     </node>
     <node concept="0lhDl" id="3Jn$RV2Vw_V" role="1QQeBF">
-      <property role="0lsPA" value="FSR01.2" />
+      <property role="0lsPA" value="FSR02" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="2FkW4_" id="3Jn$RV2VwA3" role="2FklKs">
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
@@ -3433,20 +3121,7 @@
           </node>
         </node>
       </node>
-      <node concept="2iDXIW" id="3Jn$RV2VwA5" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2VwAq" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAr" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAs" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAt" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwA5" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2VwA6" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwAu" role="19SJt6">
           <property role="19SUeA" value="Safe Control" />
@@ -3459,27 +3134,14 @@
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2Vw_W" role="1QQeBF">
-      <property role="0lsPA" value="FSR01.3" />
+      <property role="0lsPA" value="FSR03" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="19SGf9" id="3Jn$RV2VwA8" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwAw" role="19SJt6">
           <property role="19SUeA" value="Fault Detection and Tolerance/Sanity Checks" />
         </node>
       </node>
-      <node concept="2iDXIW" id="3Jn$RV2VwA9" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2VwAx" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAy" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAz" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwA$" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwA9" role="0nOlf" />
       <node concept="1QQeAY" id="3Jn$RV2VwAa" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwA_" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwAK" role="0nzdz">
@@ -3499,7 +3161,7 @@
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2Vw_X" role="1QQeBF">
-      <property role="0lsPA" value="FSR01.4" />
+      <property role="0lsPA" value="FSR04" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="19SGf9" id="3Jn$RV2VwAd" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwAB" role="19SJt6">
@@ -3515,20 +3177,7 @@
           </node>
         </node>
       </node>
-      <node concept="2iDXIW" id="3Jn$RV2VwAf" role="0nOlf">
-        <node concept="DABN8" id="3Jn$RV2VwAD" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="Control of the vehicle with too high longitudinal or lateral accelerations" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAE" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq8" resolve="Inappropriate vehicle behavior while approaching an intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAF" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Inappropriate vehicle behavior while handling a connected intersection" />
-        </node>
-        <node concept="DABN8" id="3Jn$RV2VwAG" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Inappropriate vehicle behavior while handling a standard intersection" />
-        </node>
-      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwAf" role="0nOlf" />
       <node concept="2FkW4_" id="3Jn$RV2VwAg" role="2FklKs">
         <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
       </node>
@@ -3540,7 +3189,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="3Jn$RV2VwAQ">
-    <property role="TrG5h" value="_661_ihs_technical_safety_requirements_FSR02.10" />
+    <property role="TrG5h" value="_661_ihs_technical_safety_requirements_lidar" />
     <node concept="0lhDl" id="3Jn$RV2VwAR" role="1QQeBF">
       <property role="0lsPA" value="TSR01" />
       <property role="0ke_I" value="Daniel P." />
@@ -3730,7 +3379,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="3Jn$RV2VwC4">
-    <property role="TrG5h" value="_662_ihs_technical_safety_requirements_FSR02.11" />
+    <property role="TrG5h" value="_662_ihs_technical_safety_requirements_radar" />
     <node concept="0lhDl" id="3Jn$RV2VwC5" role="1QQeBF">
       <property role="0lsPA" value="TSR06" />
       <property role="0ke_I" value="Daniel P." />
@@ -3847,7 +3496,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="3Jn$RV2VwCN">
-    <property role="TrG5h" value="_663_ihs_technical_safety_requirements_FSR02.12" />
+    <property role="TrG5h" value="_663_ihs_technical_safety_requirements_camera" />
     <node concept="0lhDl" id="3Jn$RV2VwCO" role="1QQeBF">
       <property role="0lsPA" value="TSR09" />
       <property role="0ke_I" value="Daniel P." />
