@@ -263,289 +263,483 @@
           </node>
           <node concept="2EixSi" id="5pJnDA9aVLz" role="2EinRH" />
         </node>
-        <node concept="356sEQ" id="5pJnDA9aVLC" role="383Ya9">
-          <property role="333NGx" value="    " />
-          <node concept="356sEK" id="5pJnDA9aVL$" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVL_" role="356sEH">
-              <property role="TrG5h" value="///////////////////////////" />
+        <node concept="356WMU" id="5pJnDA9i75l" role="383Ya9">
+          <node concept="356sEK" id="5pJnDA9i75m" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i75n" role="356sEH">
+              <property role="TrG5h" value="var uuid_to_vertices_map = {};" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVLB" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i75p" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVLD" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVLE" role="356sEH">
-              <property role="TrG5h" value="var id_to_vertices_map = {};" />
+          <node concept="356sEK" id="5pJnDA9i75q" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i75r" role="356sEH">
+              <property role="TrG5h" value="var uuid_to_positions_map = {};" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVLG" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i75t" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVLH" role="383Ya9">
-            <node concept="2EixSi" id="5pJnDA9aVLK" role="2EinRH" />
+          <node concept="356sEK" id="5pJnDA9i75u" role="383Ya9">
+            <node concept="2EixSi" id="5pJnDA9i75x" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVLL" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVLM" role="356sEH">
-              <property role="TrG5h" value="function draw_solution(graph, parent, uuid, name, text, pos_x, pos_y, width, height)" />
+          <node concept="356sEK" id="5pJnDA9i75y" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i75z" role="356sEH">
+              <property role="TrG5h" value="function update_maps(cell, uuid, pos_x, pos_y) {" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVLO" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i75_" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVLP" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVLQ" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="5pJnDA9aVLS" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="5pJnDA9aVLX" role="383Ya9">
+          <node concept="356sEQ" id="5pJnDA9i75E" role="383Ya9">
             <property role="333NGx" value="    " />
-            <node concept="356sEK" id="5pJnDA9aVLT" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVLU" role="356sEH">
+            <node concept="356sEK" id="5pJnDA9i75A" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i75B" role="356sEH">
+                <property role="TrG5h" value="uuid_to_vertices_map[uuid] = cell;" />
+              </node>
+              <node concept="2EixSi" id="5pJnDA9i75D" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9i75F" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i75G" role="356sEH">
+                <property role="TrG5h" value="cell.uuid = uuid;" />
+              </node>
+              <node concept="2EixSi" id="5pJnDA9i75I" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9i75J" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i75K" role="356sEH">
+                <property role="TrG5h" value="uuid_to_positions_map[uuid] = { x: pos_x, y: pos_y };" />
+              </node>
+              <node concept="2EixSi" id="5pJnDA9i75M" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5pJnDA9i75N" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i75O" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="5pJnDA9i75Q" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5pJnDA9i75R" role="383Ya9">
+            <node concept="2EixSi" id="5pJnDA9i75U" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5pJnDA9i75V" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i75W" role="356sEH">
+              <property role="TrG5h" value="function draw_solution(graph, parent, uuid, name, text, pos_x, pos_y, width, height) {" />
+            </node>
+            <node concept="2EixSi" id="5pJnDA9i75Y" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5pJnDA9i763" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5pJnDA9i75Z" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i760" role="356sEH">
                 <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, 'shape=ellipse;perimeter=ellipsePerimeter;');" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVLW" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i762" role="2EinRH" />
             </node>
-            <node concept="356sEK" id="5pJnDA9aVLY" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVLZ" role="356sEH">
-                <property role="TrG5h" value="id_to_vertices_map[uuid] = v;" />
+            <node concept="356sEK" id="5pJnDA9i764" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i765" role="356sEH">
+                <property role="TrG5h" value="update_maps(v, uuid, pos_x, pos_y);" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVM1" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i767" role="2EinRH" />
             </node>
           </node>
-          <node concept="356sEK" id="5pJnDA9aVM2" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVM3" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i768" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i769" role="356sEH">
               <property role="TrG5h" value="}" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVM5" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i76b" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVM6" role="383Ya9">
-            <node concept="2EixSi" id="5pJnDA9aVM9" role="2EinRH" />
+          <node concept="356sEK" id="5pJnDA9i76c" role="383Ya9">
+            <node concept="2EixSi" id="5pJnDA9i76f" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMa" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVMb" role="356sEH">
-              <property role="TrG5h" value="function draw_goal(graph, parent, uuid, name, text, pos_x, pos_y, width, height)" />
+          <node concept="356sEK" id="5pJnDA9i76g" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i76h" role="356sEH">
+              <property role="TrG5h" value="function draw_goal(graph, parent, uuid, name, text, pos_x, pos_y, width, height) {" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVMd" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i76j" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMe" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVMf" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="5pJnDA9aVMh" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="5pJnDA9aVMm" role="383Ya9">
+          <node concept="356sEQ" id="5pJnDA9i76o" role="383Ya9">
             <property role="333NGx" value="    " />
-            <node concept="356sEK" id="5pJnDA9aVMi" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVMj" role="356sEH">
+            <node concept="356sEK" id="5pJnDA9i76k" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i76l" role="356sEH">
                 <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height);" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVMl" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i76n" role="2EinRH" />
             </node>
-            <node concept="356sEK" id="5pJnDA9aVMn" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVMo" role="356sEH">
-                <property role="TrG5h" value="id_to_vertices_map[uuid] = v;" />
+            <node concept="356sEK" id="5pJnDA9i76p" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i76q" role="356sEH">
+                <property role="TrG5h" value="update_maps(v, uuid, pos_x, pos_y);" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVMq" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i76s" role="2EinRH" />
             </node>
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMr" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVMs" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i76t" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i76u" role="356sEH">
               <property role="TrG5h" value="}" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVMu" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i76w" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMv" role="383Ya9">
-            <node concept="2EixSi" id="5pJnDA9aVMy" role="2EinRH" />
+          <node concept="356sEK" id="5pJnDA9i76x" role="383Ya9">
+            <node concept="2EixSi" id="5pJnDA9i76$" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMz" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVM$" role="356sEH">
-              <property role="TrG5h" value="function BoxShape()" />
+          <node concept="356sEK" id="5pJnDA9i76_" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i76A" role="356sEH">
+              <property role="TrG5h" value="function BoxShape() {" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVMA" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i76C" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMB" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVMC" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="5pJnDA9aVME" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="5pJnDA9aVMJ" role="383Ya9">
-            <property role="333NGx" value="     " />
-            <node concept="356sEK" id="5pJnDA9aVMF" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVMG" role="356sEH">
+          <node concept="356sEQ" id="5pJnDA9i76H" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5pJnDA9i76D" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i76E" role="356sEH">
                 <property role="TrG5h" value="mxCylinder.call(this);" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVMI" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i76G" role="2EinRH" />
             </node>
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMK" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVML" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i76I" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i76J" role="356sEH">
               <property role="TrG5h" value="};" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVMN" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i76L" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMO" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVMP" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i76M" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i76N" role="356sEH">
               <property role="TrG5h" value="mxUtils.extend(BoxShape, mxCylinder);" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVMR" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i76P" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMS" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVMT" role="356sEH">
-              <property role="TrG5h" value="BoxShape.prototype.paintVertexShape = function(path, x, y, w, h)" />
+          <node concept="356sEK" id="5pJnDA9i76Q" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i76R" role="356sEH">
+              <property role="TrG5h" value="BoxShape.prototype.paintVertexShape = function (path, x, y, w, h) {" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVMV" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i76T" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVMW" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVMX" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="5pJnDA9aVMZ" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="5pJnDA9aVN4" role="383Ya9">
+          <node concept="356sEQ" id="5pJnDA9i76Y" role="383Ya9">
             <property role="333NGx" value="    " />
-            <node concept="356sEK" id="5pJnDA9aVN0" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVN1" role="356sEH">
+            <node concept="356sEK" id="5pJnDA9i76U" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i76V" role="356sEH">
                 <property role="TrG5h" value="const bias = 30;" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVN3" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i76X" role="2EinRH" />
             </node>
-            <node concept="356sEK" id="5pJnDA9aVN5" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVN6" role="356sEH">
+            <node concept="356sEK" id="5pJnDA9i76Z" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i770" role="356sEH">
                 <property role="TrG5h" value="path.begin();" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVN8" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i772" role="2EinRH" />
             </node>
-            <node concept="356sEQ" id="5pJnDA9aVNd" role="383Ya9">
-              <property role="333NGx" value=" " />
-              <node concept="356sEK" id="5pJnDA9aVN9" role="383Ya9">
-                <node concept="356sEF" id="5pJnDA9aVNa" role="356sEH">
-                  <property role="TrG5h" value="path.moveTo(x + bias, y);" />
-                </node>
-                <node concept="2EixSi" id="5pJnDA9aVNc" role="2EinRH" />
+            <node concept="356sEK" id="5pJnDA9i773" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i774" role="356sEH">
+                <property role="TrG5h" value="path.moveTo(x + bias, y);" />
               </node>
-              <node concept="356sEK" id="5pJnDA9aVNe" role="383Ya9">
-                <node concept="356sEF" id="5pJnDA9aVNf" role="356sEH">
-                  <property role="TrG5h" value="path.lineTo(x + w, y);" />
-                </node>
-                <node concept="2EixSi" id="5pJnDA9aVNh" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i776" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9i777" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i778" role="356sEH">
+                <property role="TrG5h" value="path.lineTo(x + w, y);" />
               </node>
-              <node concept="356sEK" id="5pJnDA9aVNi" role="383Ya9">
-                <node concept="356sEF" id="5pJnDA9aVNj" role="356sEH">
-                  <property role="TrG5h" value="path.lineTo(x + w - bias, y + h);" />
-                </node>
-                <node concept="2EixSi" id="5pJnDA9aVNl" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i77a" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9i77b" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i77c" role="356sEH">
+                <property role="TrG5h" value="path.lineTo(x + w - bias, y + h);" />
               </node>
-              <node concept="356sEK" id="5pJnDA9aVNm" role="383Ya9">
-                <node concept="356sEF" id="5pJnDA9aVNn" role="356sEH">
-                  <property role="TrG5h" value="path.lineTo(x, y + h);" />
-                </node>
-                <node concept="2EixSi" id="5pJnDA9aVNp" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i77e" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9i77f" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i77g" role="356sEH">
+                <property role="TrG5h" value="path.lineTo(x, y + h);" />
               </node>
-              <node concept="356sEK" id="5pJnDA9aVNq" role="383Ya9">
-                <node concept="356sEF" id="5pJnDA9aVNr" role="356sEH">
-                  <property role="TrG5h" value="path.close();" />
-                </node>
-                <node concept="2EixSi" id="5pJnDA9aVNt" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i77i" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9i77j" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i77k" role="356sEH">
+                <property role="TrG5h" value="path.close();" />
               </node>
-              <node concept="356sEK" id="5pJnDA9aVNu" role="383Ya9">
-                <node concept="356sEF" id="5pJnDA9aVNv" role="356sEH">
-                  <property role="TrG5h" value="path.fillAndStroke();" />
-                </node>
-                <node concept="2EixSi" id="5pJnDA9aVNx" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i77m" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9i77n" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i77o" role="356sEH">
+                <property role="TrG5h" value="path.fillAndStroke();" />
               </node>
+              <node concept="2EixSi" id="5pJnDA9i77q" role="2EinRH" />
             </node>
           </node>
-          <node concept="356sEK" id="5pJnDA9aVNy" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVNz" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i77r" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i77s" role="356sEH">
               <property role="TrG5h" value="};" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVN_" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i77u" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVNA" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVNB" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i77v" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i77w" role="356sEH">
               <property role="TrG5h" value="mxCellRenderer.registerShape('StrategyShape', BoxShape);" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVND" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i77y" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVNE" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVNF" role="356sEH">
-              <property role="TrG5h" value="function draw_strategy(graph, parent, uuid, name, text, pos_x, pos_y, width, height)" />
+          <node concept="356sEK" id="5pJnDA9i77z" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i77$" role="356sEH">
+              <property role="TrG5h" value="function draw_strategy(graph, parent, uuid, name, text, pos_x, pos_y, width, height) {" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVNH" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i77A" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVNI" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVNJ" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="5pJnDA9aVNL" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="5pJnDA9aVNQ" role="383Ya9">
-            <property role="333NGx" value="     " />
-            <node concept="356sEK" id="5pJnDA9aVNM" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVNN" role="356sEH">
+          <node concept="356sEQ" id="5pJnDA9i77F" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5pJnDA9i77B" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i77C" role="356sEH">
                 <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, 'shape=StrategyShape;perimeter=rectanglePerimeter;');" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVNP" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i77E" role="2EinRH" />
             </node>
-            <node concept="356sEK" id="5pJnDA9aVNR" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVNS" role="356sEH">
-                <property role="TrG5h" value="id_to_vertices_map[uuid] = v;" />
+            <node concept="356sEK" id="5pJnDA9i77G" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i77H" role="356sEH">
+                <property role="TrG5h" value="update_maps(v, uuid, pos_x, pos_y);" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVNU" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i77J" role="2EinRH" />
             </node>
           </node>
-          <node concept="356sEK" id="5pJnDA9aVNV" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVNW" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i77K" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i77L" role="356sEH">
               <property role="TrG5h" value="}" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVNY" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i77N" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVNZ" role="383Ya9">
-            <node concept="2EixSi" id="5pJnDA9aVO2" role="2EinRH" />
+          <node concept="356sEK" id="5pJnDA9i77O" role="383Ya9">
+            <node concept="2EixSi" id="5pJnDA9i77R" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVO3" role="383Ya9">
-            <node concept="2EixSi" id="5pJnDA9aVO6" role="2EinRH" />
+          <node concept="356sEK" id="5pJnDA9i77S" role="383Ya9">
+            <node concept="2EixSi" id="5pJnDA9i77V" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVO7" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVO8" role="356sEH">
-              <property role="TrG5h" value="function draw_edge(graph, parent, start_uuid, end_uuid, label)" />
+          <node concept="356sEK" id="5pJnDA9i77W" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i77X" role="356sEH">
+              <property role="TrG5h" value="function draw_edge(graph, parent, start_uuid, end_uuid, label) {" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVOa" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i77Z" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVOb" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVOc" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="5pJnDA9aVOe" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="5pJnDA9aVOj" role="383Ya9">
+          <node concept="356sEQ" id="5pJnDA9i784" role="383Ya9">
             <property role="333NGx" value="    " />
-            <node concept="356sEK" id="5pJnDA9aVOf" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVOg" role="356sEH">
-                <property role="TrG5h" value="var start = id_to_vertices_map[start_uuid];" />
+            <node concept="356sEK" id="5pJnDA9i780" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i781" role="356sEH">
+                <property role="TrG5h" value="var start = uuid_to_vertices_map[start_uuid];" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVOi" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i783" role="2EinRH" />
             </node>
-            <node concept="356sEK" id="5pJnDA9aVOk" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVOl" role="356sEH">
-                <property role="TrG5h" value="var end = id_to_vertices_map[end_uuid];" />
+            <node concept="356sEK" id="5pJnDA9i785" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i786" role="356sEH">
+                <property role="TrG5h" value="var end = uuid_to_vertices_map[end_uuid];" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVOn" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i788" role="2EinRH" />
             </node>
-            <node concept="356sEK" id="5pJnDA9aVOo" role="383Ya9">
-              <node concept="356sEF" id="5pJnDA9aVOp" role="356sEH">
+            <node concept="356sEK" id="5pJnDA9i789" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i78a" role="356sEH">
                 <property role="TrG5h" value="graph.insertEdge(parent, null, label, start, end, 'startArrow=dash;startSize=12;endArrow=block;labelBackgroundColor=#FFFFFF;');" />
               </node>
-              <node concept="2EixSi" id="5pJnDA9aVOr" role="2EinRH" />
+              <node concept="2EixSi" id="5pJnDA9i78c" role="2EinRH" />
             </node>
           </node>
-          <node concept="356sEK" id="5pJnDA9aVOs" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVOt" role="356sEH">
+          <node concept="356sEK" id="5pJnDA9i78d" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i78e" role="356sEH">
               <property role="TrG5h" value="}" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVOv" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i78g" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="5pJnDA9aVOw" role="383Ya9">
-            <node concept="356sEF" id="5pJnDA9aVOx" role="356sEH">
-              <property role="TrG5h" value="///////////////////////////" />
+          <node concept="356sEK" id="5pJnDA9i78h" role="383Ya9">
+            <node concept="2EixSi" id="5pJnDA9i78k" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5pJnDA9i78l" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i78m" role="356sEH">
+              <property role="TrG5h" value="// Handles moving of on cells" />
             </node>
-            <node concept="2EixSi" id="5pJnDA9aVOz" role="2EinRH" />
+            <node concept="2EixSi" id="5pJnDA9i78o" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5pJnDA9i78p" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i78q" role="356sEH">
+              <property role="TrG5h" value="function set_mouse_move_listener(graph) {" />
+            </node>
+            <node concept="2EixSi" id="5pJnDA9i78s" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5pJnDA9i78x" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5pJnDA9i78t" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i78u" role="356sEH">
+                <property role="TrG5h" value="graph.addMouseListener({" />
+              </node>
+              <node concept="2EixSi" id="5pJnDA9i78w" role="2EinRH" />
+            </node>
+            <node concept="356sEQ" id="5pJnDA9i78A" role="383Ya9">
+              <property role="333NGx" value="    " />
+              <node concept="356sEK" id="5pJnDA9i78y" role="383Ya9">
+                <node concept="356sEF" id="5pJnDA9i78z" role="356sEH">
+                  <property role="TrG5h" value="mouseUp: () =&gt; { }," />
+                </node>
+                <node concept="2EixSi" id="5pJnDA9i78_" role="2EinRH" />
+              </node>
+              <node concept="356sEK" id="5pJnDA9i78B" role="383Ya9">
+                <node concept="356sEF" id="5pJnDA9i78C" role="356sEH">
+                  <property role="TrG5h" value="mouseDown: () =&gt; { }," />
+                </node>
+                <node concept="2EixSi" id="5pJnDA9i78E" role="2EinRH" />
+              </node>
+              <node concept="356sEK" id="5pJnDA9i78F" role="383Ya9">
+                <node concept="356sEF" id="5pJnDA9i78G" role="356sEH">
+                  <property role="TrG5h" value="mouseMove: function (sender, me) {" />
+                </node>
+                <node concept="2EixSi" id="5pJnDA9i78I" role="2EinRH" />
+              </node>
+              <node concept="356sEQ" id="5pJnDA9i78N" role="383Ya9">
+                <property role="333NGx" value="    " />
+                <node concept="356sEK" id="5pJnDA9i78J" role="383Ya9">
+                  <node concept="356sEF" id="5pJnDA9i78K" role="356sEH">
+                    <property role="TrG5h" value="var cell = me.getCell();" />
+                  </node>
+                  <node concept="2EixSi" id="5pJnDA9i78M" role="2EinRH" />
+                </node>
+                <node concept="356sEK" id="5pJnDA9i78O" role="383Ya9">
+                  <node concept="356sEF" id="5pJnDA9i78P" role="356sEH">
+                    <property role="TrG5h" value="if (cell != null) {" />
+                  </node>
+                  <node concept="2EixSi" id="5pJnDA9i78R" role="2EinRH" />
+                </node>
+                <node concept="356sEQ" id="5pJnDA9i78W" role="383Ya9">
+                  <property role="333NGx" value="    " />
+                  <node concept="356sEK" id="5pJnDA9i78S" role="383Ya9">
+                    <node concept="356sEF" id="5pJnDA9i78T" role="356sEH">
+                      <property role="TrG5h" value="let old_position = uuid_to_positions_map[cell.uuid];" />
+                    </node>
+                    <node concept="2EixSi" id="5pJnDA9i78V" role="2EinRH" />
+                  </node>
+                  <node concept="356sEK" id="5pJnDA9i78X" role="383Ya9">
+                    <node concept="356sEF" id="5pJnDA9i78Y" role="356sEH">
+                      <property role="TrG5h" value="if (old_position != undefined) {" />
+                    </node>
+                    <node concept="2EixSi" id="5pJnDA9i790" role="2EinRH" />
+                  </node>
+                  <node concept="356sEQ" id="5pJnDA9i795" role="383Ya9">
+                    <property role="333NGx" value="    " />
+                    <node concept="356sEK" id="5pJnDA9i791" role="383Ya9">
+                      <node concept="356sEF" id="5pJnDA9i792" role="356sEH">
+                        <property role="TrG5h" value="let old_x = old_position.x;" />
+                      </node>
+                      <node concept="2EixSi" id="5pJnDA9i794" role="2EinRH" />
+                    </node>
+                    <node concept="356sEK" id="5pJnDA9i796" role="383Ya9">
+                      <node concept="356sEF" id="5pJnDA9i797" role="356sEH">
+                        <property role="TrG5h" value="let old_y = old_position.y;" />
+                      </node>
+                      <node concept="2EixSi" id="5pJnDA9i799" role="2EinRH" />
+                    </node>
+                    <node concept="356sEK" id="5pJnDA9i79a" role="383Ya9">
+                      <node concept="356sEF" id="5pJnDA9i79b" role="356sEH">
+                        <property role="TrG5h" value="let new_x = cell.geometry.x;" />
+                      </node>
+                      <node concept="2EixSi" id="5pJnDA9i79d" role="2EinRH" />
+                    </node>
+                    <node concept="356sEK" id="5pJnDA9i79e" role="383Ya9">
+                      <node concept="356sEF" id="5pJnDA9i79f" role="356sEH">
+                        <property role="TrG5h" value="let new_y = cell.geometry.y;" />
+                      </node>
+                      <node concept="2EixSi" id="5pJnDA9i79h" role="2EinRH" />
+                    </node>
+                    <node concept="356sEK" id="5pJnDA9i79i" role="383Ya9">
+                      <node concept="356sEF" id="5pJnDA9i79j" role="356sEH">
+                        <property role="TrG5h" value="if (old_x != new_x || old_y != new_y) {" />
+                      </node>
+                      <node concept="2EixSi" id="5pJnDA9i79l" role="2EinRH" />
+                    </node>
+                    <node concept="356sEQ" id="5pJnDA9i79q" role="383Ya9">
+                      <property role="333NGx" value="    " />
+                      <node concept="356sEK" id="5pJnDA9i79m" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79n" role="356sEH">
+                          <property role="TrG5h" value="const url_string = window.location.href;" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79p" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79r" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79s" role="356sEH">
+                          <property role="TrG5h" value="let url = new URL(url_string);" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79u" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79v" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79w" role="356sEH">
+                          <property role="TrG5h" value="let gsnNodeParam = url.searchParams.get(&quot;node&quot;);" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79y" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79z" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79$" role="356sEH">
+                          <property role="TrG5h" value="let projectParam = url.searchParams.get(&quot;project&quot;);" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79A" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79B" role="383Ya9">
+                        <node concept="2EixSi" id="5pJnDA9i79E" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79F" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79G" role="356sEH">
+                          <property role="TrG5h" value="let new_url = &quot;http://127.0.0.1:63320/entityPositionChanged?&quot;;" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79I" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79J" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79K" role="356sEH">
+                          <property role="TrG5h" value="new_url = new_url + &quot;gsnNode=&quot; + gsnNodeParam + &quot;&amp;&quot; + &quot;project=&quot; + projectParam;" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79M" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79N" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79O" role="356sEH">
+                          <property role="TrG5h" value="new_url = new_url + &quot;&amp;cellUid=&quot; + cell.uuid + &quot;&amp;x=&quot; + new_x + &quot;&amp;y=&quot; + new_y;" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79Q" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79R" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79S" role="356sEH">
+                          <property role="TrG5h" value="fetch(new_url, { mode: 'no-cors' }).then((response) =&gt; console.log(response.text())).catch((error) =&gt; console.log(&quot;error &quot; + error));" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79U" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="5pJnDA9i79V" role="383Ya9">
+                        <node concept="356sEF" id="5pJnDA9i79W" role="356sEH">
+                          <property role="TrG5h" value="uuid_to_positions_map[cell.uuid] = { x: new_x, y: new_y };" />
+                        </node>
+                        <node concept="2EixSi" id="5pJnDA9i79Y" role="2EinRH" />
+                      </node>
+                    </node>
+                    <node concept="356sEK" id="5pJnDA9i79Z" role="383Ya9">
+                      <node concept="356sEF" id="5pJnDA9i7a0" role="356sEH">
+                        <property role="TrG5h" value="}" />
+                      </node>
+                      <node concept="2EixSi" id="5pJnDA9i7a2" role="2EinRH" />
+                    </node>
+                  </node>
+                  <node concept="356sEK" id="5pJnDA9i7a3" role="383Ya9">
+                    <node concept="356sEF" id="5pJnDA9i7a4" role="356sEH">
+                      <property role="TrG5h" value="}" />
+                    </node>
+                    <node concept="2EixSi" id="5pJnDA9i7a6" role="2EinRH" />
+                  </node>
+                </node>
+                <node concept="356sEK" id="5pJnDA9i7a7" role="383Ya9">
+                  <node concept="356sEF" id="5pJnDA9i7a8" role="356sEH">
+                    <property role="TrG5h" value="}" />
+                  </node>
+                  <node concept="2EixSi" id="5pJnDA9i7aa" role="2EinRH" />
+                </node>
+              </node>
+              <node concept="356sEK" id="5pJnDA9i7ab" role="383Ya9">
+                <node concept="356sEF" id="5pJnDA9i7ac" role="356sEH">
+                  <property role="TrG5h" value="}" />
+                </node>
+                <node concept="2EixSi" id="5pJnDA9i7ae" role="2EinRH" />
+              </node>
+            </node>
+            <node concept="356sEK" id="5pJnDA9i7af" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9i7ag" role="356sEH">
+                <property role="TrG5h" value="});" />
+              </node>
+              <node concept="2EixSi" id="5pJnDA9i7ai" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5pJnDA9i7aj" role="383Ya9">
+            <node concept="356sEF" id="5pJnDA9i7ak" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="5pJnDA9i7am" role="2EinRH" />
           </node>
         </node>
         <node concept="356sEK" id="5pJnDA9aVO$" role="383Ya9">
@@ -1851,6 +2045,12 @@
                 <property role="TrG5h" value="}" />
               </node>
               <node concept="2EixSi" id="5pJnDA9aVRj" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5pJnDA9iea0" role="383Ya9">
+              <node concept="356sEF" id="5pJnDA9iea1" role="356sEH">
+                <property role="TrG5h" value="set_mouse_move_listener(graph);" />
+              </node>
+              <node concept="2EixSi" id="5pJnDA9iea2" role="2EinRH" />
             </node>
           </node>
           <node concept="356sEK" id="5pJnDA9aVRk" role="383Ya9">
