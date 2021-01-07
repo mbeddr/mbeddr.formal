@@ -27,6 +27,7 @@
     <dependency reexport="false">7ab1a6fa-0a11-4b95-9e48-75f363d6cb00(jetbrains.mps.lang.generator.plan)</dependency>
     <dependency reexport="false">5fa23c0a-216d-4571-a163-e286643e6f5f(jetbrains.mps.generator)</dependency>
     <dependency reexport="false">0ca42a58-5150-4a55-89be-ba447ef72356(com.mbeddr.formal.safety.gsn.web)</dependency>
+    <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
   </dependencies>
   <languageVersions />
   <dependencyVersions>
