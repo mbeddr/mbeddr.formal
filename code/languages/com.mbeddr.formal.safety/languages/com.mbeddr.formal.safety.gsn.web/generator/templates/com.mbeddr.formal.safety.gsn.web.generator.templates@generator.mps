@@ -544,6 +544,104 @@
             </node>
             <node concept="2EixSi" id="5pJnDA9i78g" role="2EinRH" />
           </node>
+          <node concept="356sEK" id="2SMJEPnaZvO" role="383Ya9">
+            <node concept="2EixSi" id="2SMJEPnaZvQ" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="2SMJEPnaZHc" role="383Ya9">
+            <node concept="2EixSi" id="2SMJEPnaZHd" role="2EinRH" />
+            <node concept="356sEF" id="2SMJEPnaZUA" role="356sEH">
+              <property role="TrG5h" value="// install change listener" />
+            </node>
+          </node>
+          <node concept="356sEK" id="2SMJEPnaZiv" role="383Ya9">
+            <node concept="356sEF" id="2SMJEPnaZiw" role="356sEH">
+              <property role="TrG5h" value="function install_text_change_listener(graph) {" />
+            </node>
+            <node concept="2EixSi" id="2SMJEPnaZix" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="2SMJEPnaZii" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="2SMJEPnaZij" role="383Ya9">
+              <node concept="356sEF" id="2SMJEPnaZik" role="356sEH">
+                <property role="TrG5h" value="graph.getModel().valueForCellChanged = function(cell, value)" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnaZil" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnaZim" role="383Ya9">
+              <node concept="356sEF" id="2SMJEPnaZin" role="356sEH">
+                <property role="TrG5h" value="{" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnaZio" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnaZip" role="383Ya9">
+              <node concept="373pV1" id="2SMJEPnaZUF" role="356sEH" />
+              <node concept="373pV1" id="2SMJEPnaZUJ" role="356sEH" />
+              <node concept="356sEF" id="2SMJEPnaZiq" role="356sEH">
+                <property role="TrG5h" value="//cell.setAttribute('label', value);" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnaZir" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnaZVb" role="383Ya9">
+              <node concept="2EixSi" id="2SMJEPnaZVc" role="2EinRH" />
+              <node concept="373pV1" id="2SMJEPnaZVd" role="356sEH" />
+              <node concept="373pV1" id="2SMJEPnaZVn" role="356sEH" />
+              <node concept="356sEF" id="2SMJEPnaZVo" role="356sEH">
+                <property role="TrG5h" value="const command = 'changeEntityText';" />
+              </node>
+            </node>
+            <node concept="356sEK" id="2SMJEPnaZVp" role="383Ya9">
+              <node concept="373pV1" id="2SMJEPnaZVz" role="356sEH" />
+              <node concept="373pV1" id="2SMJEPnaZV$" role="356sEH" />
+              <node concept="356sEF" id="2SMJEPnaZV_" role="356sEH">
+                <property role="TrG5h" value="let params_map = new Map();" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnaZVA" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnaZVB" role="383Ya9">
+              <node concept="373pV1" id="2SMJEPnaZVC" role="356sEH" />
+              <node concept="373pV1" id="2SMJEPnaZVM" role="356sEH" />
+              <node concept="356sEF" id="2SMJEPnaZVN" role="356sEH">
+                <property role="TrG5h" value="params_map.set(&quot;entityId&quot;, cell.uuid);" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnaZVO" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnb0hB" role="383Ya9">
+              <node concept="373pV1" id="2SMJEPnb0hC" role="356sEH" />
+              <node concept="373pV1" id="2SMJEPnb0hD" role="356sEH" />
+              <node concept="356sEF" id="2SMJEPnb0hE" role="356sEH">
+                <property role="TrG5h" value="params_map.set(&quot;newText&quot;, value.replaceAll('\n', '__'));" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnb0hF" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnb0iU" role="383Ya9">
+              <node concept="373pV1" id="2SMJEPnb0iV" role="356sEH" />
+              <node concept="373pV1" id="2SMJEPnb0j5" role="356sEH" />
+              <node concept="356sEF" id="2SMJEPnb0j6" role="356sEH">
+                <property role="TrG5h" value="call_model_server(command, params_map);" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnb0j7" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnb0j8" role="383Ya9">
+              <node concept="2EixSi" id="2SMJEPnb0j9" role="2EinRH" />
+              <node concept="373pV1" id="2SMJEPnb0ja" role="356sEH" />
+              <node concept="373pV1" id="2SMJEPnb0jk" role="356sEH" />
+              <node concept="356sEF" id="2SMJEPnb0jl" role="356sEH">
+                <property role="TrG5h" value="setTimeout(function () { location.reload() }, 500);" />
+              </node>
+            </node>
+            <node concept="356sEK" id="2SMJEPnaZis" role="383Ya9">
+              <node concept="356sEF" id="2SMJEPnaZit" role="356sEH">
+                <property role="TrG5h" value="};" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnaZiu" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="2SMJEPnaZif" role="383Ya9">
+            <node concept="356sEF" id="2SMJEPnaZig" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="2SMJEPnaZih" role="2EinRH" />
+          </node>
           <node concept="356sEK" id="5pJnDA9i78h" role="383Ya9">
             <node concept="2EixSi" id="5pJnDA9i78k" role="2EinRH" />
           </node>
@@ -2996,6 +3094,12 @@
                 <property role="TrG5h" value="install_menu(graph);" />
               </node>
               <node concept="2EixSi" id="5pJnDA9iT97" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="2SMJEPnb0mi" role="383Ya9">
+              <node concept="356sEF" id="2SMJEPnb0mj" role="356sEH">
+                <property role="TrG5h" value="install_text_change_listener(graph);" />
+              </node>
+              <node concept="2EixSi" id="2SMJEPnb0mk" role="2EinRH" />
             </node>
           </node>
           <node concept="356sEK" id="5pJnDA9aVRk" role="383Ya9">
