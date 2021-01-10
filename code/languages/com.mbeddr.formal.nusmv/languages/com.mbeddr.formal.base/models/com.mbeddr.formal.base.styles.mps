@@ -19,7 +19,7 @@
       <concept id="1179360813171" name="jetbrains.mps.baseLanguage.structure.HexIntegerLiteral" flags="nn" index="2nou5x">
         <property id="1179360856892" name="value" index="2noCCI" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -103,6 +103,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
@@ -120,6 +123,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -165,11 +176,33 @@
     <node concept="3clFb_" id="2QkJsC6_yVE" role="jymVt">
       <property role="TrG5h" value="getTextBackgroundColor" />
       <node concept="3clFbS" id="2QkJsC6_yVF" role="3clF47">
-        <node concept="3clFbF" id="2QkJsC6_yVG" role="3cqZAp">
-          <node concept="10M0yZ" id="2QkJsC6_zp_" role="3clFbG">
-            <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
-            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+        <node concept="3SKdUt" id="2$It7Xs3C3D" role="3cqZAp">
+          <node concept="1PaTwC" id="2$It7Xs3C3E" role="1aUNEU">
+            <node concept="3oM_SD" id="2$It7Xs3C3F" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2$It7Xs3C3X" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2$It7Xs3C48" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="2$It7Xs3C4s" role="1PaTwD">
+              <property role="3oM_SC" value="background" />
+            </node>
+            <node concept="3oM_SD" id="2$It7Xs3C4T" role="1PaTwD">
+              <property role="3oM_SC" value="color" />
+            </node>
+            <node concept="3oM_SD" id="2$It7Xs3C57" role="1PaTwD">
+              <property role="3oM_SC" value="at" />
+            </node>
+            <node concept="3oM_SD" id="2$It7Xs3C5m" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
           </node>
+        </node>
+        <node concept="3clFbF" id="2$It7Xs3Bk0" role="3cqZAp">
+          <node concept="10Nm6u" id="2$It7Xs3BjZ" role="3clFbG" />
         </node>
       </node>
       <node concept="3Tm1VV" id="2QkJsC6_yVI" role="1B3o_S" />
