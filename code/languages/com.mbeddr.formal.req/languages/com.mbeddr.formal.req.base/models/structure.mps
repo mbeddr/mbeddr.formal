@@ -423,5 +423,29 @@
     <property role="R4oN_" value="a technical requirement" />
     <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
+  <node concept="1TIwiD" id="4Crei7hvjLj">
+    <property role="EcuMT" value="5339924600589204563" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="Operational" />
+    <property role="34LRSv" value="operational" />
+    <property role="R4oN_" value="an operational requirement" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
+  <node concept="1TIwiD" id="RyPjVFcfj$">
+    <property role="EcuMT" value="1000596533440214244" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="RobustnessReq" />
+    <property role="34LRSv" value="robustness" />
+    <property role="R4oN_" value="a robustness requirement" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
+  <node concept="1TIwiD" id="RyPjVFcfj_">
+    <property role="EcuMT" value="1000596533440214245" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="PerformanceReq" />
+    <property role="34LRSv" value="performance" />
+    <property role="R4oN_" value="a performance requirement" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
 </model>
 
