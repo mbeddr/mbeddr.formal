@@ -3366,5 +3366,26 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="4Crei7hvjLr">
+    <property role="3GE5qa" value="req_kind" />
+    <ref role="1XX52x" to="z27p:4Crei7hvjLj" resolve="Operational" />
+    <node concept="3F0ifn" id="4Crei7hvjLt" role="2wV5jI">
+      <property role="3F0ifm" value="operational" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="RyPjVFcfjA">
+    <property role="3GE5qa" value="req_kind" />
+    <ref role="1XX52x" to="z27p:RyPjVFcfj_" resolve="PerformanceReq" />
+    <node concept="3F0ifn" id="RyPjVFcfjI" role="2wV5jI">
+      <property role="3F0ifm" value="performance" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="RyPjVFcfjC">
+    <property role="3GE5qa" value="req_kind" />
+    <ref role="1XX52x" to="z27p:RyPjVFcfj$" resolve="RobustnessReq" />
+    <node concept="3F0ifn" id="RyPjVFcfjE" role="2wV5jI">
+      <property role="3F0ifm" value="robustness" />
+    </node>
+  </node>
 </model>
 
