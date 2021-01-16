@@ -307,7 +307,7 @@
             <node concept="1P9Npp" id="1L4MZBxVQcU" role="2OqNvi">
               <node concept="2pJPEk" id="1L4MZBxVQpa" role="1P9ThW">
                 <node concept="2pJPED" id="1L4MZBxVQrl" role="2pJPEn">
-                  <ref role="2pJxaS" to="bewr:4q9fsxm3ow8" resolve="HazardConsequence" />
+                  <ref role="2pJxaS" to="bewr:4q9fsxm3ow8" resolve="HazardRefConsequence" />
                   <node concept="2pIpSj" id="1L4MZBxVQtQ" role="2pJxcM">
                     <ref role="2pIpSl" to="bewr:4q9fsxm3owq" resolve="hazard" />
                     <node concept="36biLy" id="1L4MZBxVQwe" role="28nt2d">
