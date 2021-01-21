@@ -6,6 +6,8 @@
     <use id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base" version="0" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
     <devkit ref="5a50cadb-4d6e-4722-b5f5-c6b9efb22ffe(fasten.safety.gsn.formal)" />
@@ -14,6 +16,7 @@
   </languages>
   <imports>
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
+    <import index="yi6x" ref="r:ffdc23de-2347-43cf-8b68-9eee3e234e66(com.mbeddr.formal.safety.users_guide.main)" />
   </imports>
   <registry>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
@@ -34,6 +37,31 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+      </concept>
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
+        <property id="5185579450379273119" name="text" index="1xAIam" />
+      </concept>
+      <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
+        <child id="5185579450379273128" name="header" index="1xAIax" />
+        <child id="3350625596580089613" name="text" index="1_0LWR" />
+      </concept>
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+        <child id="3350625596580064250" name="contents" index="1_0VJ0" />
+      </concept>
+      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
+        <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
+      </concept>
+    </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
       <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
       <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
@@ -42,6 +70,10 @@
       </concept>
       <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
         <reference id="467505803006179847" name="req" index="0Sh0a" />
+        <child id="7993788941569402916" name="reqRefs" index="hnKMk" />
+      </concept>
+      <concept id="7993788941569402923" name="com.mbeddr.formal.req.base.structure.RequirementRef" flags="ng" index="hnKMr">
+        <reference id="7993788941569402924" name="req" index="hnKMs" />
       </concept>
       <concept id="5339924600589204563" name="com.mbeddr.formal.req.base.structure.Operational" flags="ng" index="2rpwlM" />
       <concept id="675797132014971920" name="com.mbeddr.formal.req.base.structure.RefinementAttribute" flags="ng" index="KAwnT">
@@ -155,8 +187,17 @@
       </concept>
       <concept id="1258148499700303837" name="com.mbeddr.formal.nusmv.ext.structure.DocumentationMultiline" flags="ng" index="3I9x2T" />
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -212,6 +253,7 @@
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
       <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
+        <child id="5906421183240323769" name="interfaceRef" index="2p5x1W" />
         <child id="9066112305507508715" name="content" index="3UgYNK" />
       </concept>
       <concept id="9066112305507423392" name="com.mbeddr.formal.base.arch.structure.Instance" flags="ng" index="3Ug1AV">
@@ -3071,7 +3113,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwAi" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwAI" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwAM" role="19SJt6">
-              <property role="19SUeA" value="AD system shall perceive, detect and track static and dynamic VRU, TPU, overridable objects, &#10;road geometry and topology and plan a collision free trajectory, while considering environmental factors." />
+              <property role="19SUeA" value="AD system shall timely perceive, detect and track static and dynamic VRU, TPU, overridable objects, &#10;road geometry and topology and plan a collision free trajectory, while considering environmental factors." />
             </node>
           </node>
         </node>
@@ -3128,7 +3170,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwA_" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwAK" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwAO" role="19SJt6">
-              <property role="19SUeA" value="AD system shall perceive system malfunctions and issues control commands to bring &#10;the ego vehicle into a minimum risk condition." />
+              <property role="19SUeA" value="AD system shall timely perceive system malfunctions and issues control commands to bring &#10;the ego vehicle into a minimum risk condition." />
             </node>
           </node>
         </node>
@@ -3314,7 +3356,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwBR" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwBX" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwC1" role="19SJt6">
-              <property role="19SUeA" value="Driver can activate the system of interest only when &#10;the ego vehicle is in standstill." />
+              <property role="19SUeA" value="The driver can activate the system of interest only when &#10;the ego vehicle is in standstill." />
             </node>
           </node>
         </node>
@@ -3333,7 +3375,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwBT" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwBY" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwC2" role="19SJt6">
-              <property role="19SUeA" value="The system shall be integrated in a vehicle that has mounted sensors &#10;and is able to receive remote data from infrastructure." />
+              <property role="19SUeA" value="The system of interest shall be integrated in a vehicle that has mounted sensors &#10;and is able to receive remote data from infrastructure." />
             </node>
           </node>
         </node>
@@ -3352,13 +3394,33 @@
         <node concept="0nzK2" id="3Jn$RV2VwBV" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwBZ" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwC3" role="19SJt6">
-              <property role="19SUeA" value="Systems and sensors integrated in the vehicle are designed to support &#10;a reliable operation inside the ODD." />
+              <property role="19SUeA" value="Systems and sensors integrated in the vehicle are designed &#10;to support a reliable operation inside the ODD." />
             </node>
           </node>
         </node>
       </node>
       <node concept="2rpwlM" id="4Crei7hwgac" role="0nOlf" />
     </node>
+    <node concept="0lhDl" id="4FF4XrTYybl" role="1QQeBF">
+      <property role="0lsPA" value="OR05" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="19SGf9" id="4FF4XrTYybn" role="1QQeG9">
+        <node concept="19SUe$" id="4FF4XrTYybo" role="19SJt6">
+          <property role="19SUeA" value="Fail-Safe Outside the ODD" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4FF4XrTYye9" role="1QQeAC">
+        <node concept="0nzK2" id="4FF4XrTYyeb" role="1QQeAV">
+          <node concept="19SGf9" id="4FF4XrTYyed" role="0nzdz">
+            <node concept="19SUe$" id="4FF4XrTYyee" role="19SJt6">
+              <property role="19SUeA" value="When the system of interest estimates that it approaches the operation &#10;outside the ODD, it shall bring the vehicle to a controlled stop." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2rpwlM" id="4FF4XrTYyiE" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="4FF4XrTYyd0" role="1QQeBF" />
   </node>
   <node concept="1QQeGf" id="3Jn$RV2VwC4">
     <property role="TrG5h" value="_662_ihs_technical_safety_requirements_radar" />
@@ -3643,7 +3705,7 @@
     </node>
   </node>
   <node concept="2HdtXS" id="3Jn$RV2VwDQ">
-    <property role="TrG5h" value="_650_ihs_safety_architecture" />
+    <property role="TrG5h" value="_655_ihs_safety_architecture" />
     <node concept="2XEm0_" id="3Jn$RV2VwDR" role="2HcuB8">
       <property role="TrG5h" value="distance_to_object" />
       <node concept="2IPVmt" id="3Jn$RV2VwEh" role="2XEmf_">
@@ -3812,6 +3874,13 @@
       </node>
     </node>
     <node concept="2SQmWS" id="3Jn$RV2VwEa" role="2HcuB8" />
+    <node concept="2dDAV0" id="6VJDb1ZGa3_" role="2HcuB8">
+      <property role="TrG5h" value="IntersectionHandlingImpl" />
+      <node concept="3Ug1AZ" id="6VJDb1ZGa85" role="2p5x1W">
+        <ref role="3Ug1AY" node="3Jn$RV2VwE9" resolve="IntersectionHandling" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6VJDb1ZG9Za" role="2HcuB8" />
     <node concept="2dDAVa" id="5Fk_m8PnbPH" role="2HcuB8">
       <property role="TrG5h" value="VehiclePlatformManagementSystem" />
     </node>
@@ -4554,6 +4623,14 @@
         <node concept="3Ug1AZ" id="5Fk_m8Pnb_G" role="3Ug1A_">
           <ref role="3Ug1AY" node="5Fk_m8PnaPa" resolve="DriverControl" />
         </node>
+        <node concept="0Sh09" id="6VJDb1ZHfZg" role="lGtFl">
+          <node concept="hnKMr" id="6VJDb1ZHfZl" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwH5" />
+          </node>
+          <node concept="hnKMr" id="6VJDb1ZHfZw" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwH6" />
+          </node>
+        </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbTe" role="3UgYNK">
         <property role="TrG5h" value="vms" />
@@ -4569,8 +4646,8 @@
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbVH" role="3UgYNK">
         <property role="TrG5h" value="ihs" />
-        <node concept="3Ug1AZ" id="5Fk_m8PnbVI" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwE9" resolve="IntersectionHandling" />
+        <node concept="3Ug1AZ" id="6VJDb1ZGa88" role="3Ug1A_">
+          <ref role="3Ug1AY" node="6VJDb1ZGa3_" resolve="IntersectionHandlingImpl" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbZV" role="3UgYNK">
@@ -4615,7 +4692,12 @@
           <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
         </node>
         <node concept="0Sh09" id="RyPjVFcf14" role="lGtFl">
-          <ref role="0Sh0a" node="3Jn$RV2VwAU" />
+          <node concept="hnKMr" id="6VJDb1ZHxte" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwAU" />
+          </node>
+          <node concept="hnKMr" id="6VJDb1ZHxtp" role="hnKMk">
+            <ref role="hnKMs" node="4FF4XrTYygp" />
+          </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnci0" role="3UgYNK">
@@ -4676,8 +4758,27 @@
         </node>
       </node>
     </node>
-    <node concept="0lhDl" id="3Jn$RV2VwH7" role="1QQeBF">
+    <node concept="0lhDl" id="4FF4XrTYygp" role="1QQeBF">
+      <property role="0ke_I" value="Daniel P." />
       <property role="0lsPA" value="FR03" />
+      <node concept="19SGf9" id="4FF4XrTYygr" role="1QQeG9">
+        <node concept="19SUe$" id="4FF4XrTYygs" role="19SJt6">
+          <property role="19SUeA" value="Avoidance of Unintended Activation" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="4FF4XrTYynW" role="0nOlf" />
+      <node concept="1QQeAY" id="4FF4XrTYyo1" role="1QQeAC">
+        <node concept="0nzK2" id="4FF4XrTYyo3" role="1QQeAV">
+          <node concept="19SGf9" id="4FF4XrTYyo5" role="0nzdz">
+            <node concept="19SUe$" id="4FF4XrTYyo6" role="19SJt6">
+              <property role="19SUeA" value="The system of interest shall prevent unintended activation &#10;without driver confirmation." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwH7" role="1QQeBF">
+      <property role="0lsPA" value="FR04" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="1QQeAY" id="3Jn$RV2VwHt" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIg" role="1QQeAV">
@@ -4699,7 +4800,7 @@
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwH8" role="1QQeBF">
-      <property role="0lsPA" value="FR04" />
+      <property role="0lsPA" value="FR05" />
       <property role="0ke_I" value="Daniel P." />
       <node concept="1QQeAY" id="3Jn$RV2VwHx" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIi" role="1QQeAV">
@@ -4722,7 +4823,7 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwH9" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR05" />
+      <property role="0lsPA" value="FR06" />
       <node concept="1QQeAY" id="3Jn$RV2VwH_" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIk" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIM" role="0nzdz">
@@ -4741,7 +4842,7 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHa" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FSR06" />
+      <property role="0lsPA" value="FSR07" />
       <node concept="1QQeAY" id="3Jn$RV2VwHC" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIm" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIN" role="0nzdz">
@@ -4760,7 +4861,7 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHb" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR07" />
+      <property role="0lsPA" value="FR08" />
       <node concept="1QQeAY" id="3Jn$RV2VwHF" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIo" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIO" role="0nzdz">
@@ -4779,7 +4880,7 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHc" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR08" />
+      <property role="0lsPA" value="FR09" />
       <node concept="1QQeAY" id="3Jn$RV2VwHI" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIq" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIP" role="0nzdz">
@@ -4796,9 +4897,28 @@
       </node>
       <node concept="1QQeFk" id="3Jn$RV2VwHK" role="0nOlf" />
     </node>
+    <node concept="0lhDl" id="4FF4XrTYy$a" role="1QQeBF">
+      <property role="0ke_I" value="Daniel P." />
+      <property role="0lsPA" value="FR11" />
+      <node concept="1QQeFk" id="4FF4XrTYy$b" role="0nOlf" />
+      <node concept="19SGf9" id="4FF4XrTYy$c" role="1QQeG9">
+        <node concept="19SUe$" id="4FF4XrTYy$d" role="19SJt6">
+          <property role="19SUeA" value="Detection of Handover Zone" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4FF4XrTYyAD" role="1QQeAC">
+        <node concept="0nzK2" id="4FF4XrTYyAF" role="1QQeAV">
+          <node concept="19SGf9" id="4FF4XrTYyAH" role="0nzdz">
+            <node concept="19SUe$" id="4FF4XrTYyAI" role="19SJt6">
+              <property role="19SUeA" value="The system of interest shall differentiate between &#10;valid and invalid handover zones w.r.t. ODD. &#10;A valid handover zone is a scenario valid w.r.t. ODD." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="0lhDl" id="3Jn$RV2VwHd" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR09" />
+      <property role="0lsPA" value="FR12" />
       <node concept="1QQeFk" id="3Jn$RV2VwHL" role="0nOlf" />
       <node concept="19SGf9" id="3Jn$RV2VwHM" role="1QQeG9">
         <node concept="19SUe$" id="3Jn$RV2VwIs" role="19SJt6">
@@ -4809,14 +4929,14 @@
         <node concept="0nzK2" id="3Jn$RV2VwIt" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIQ" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwJ7" role="19SJt6">
-              <property role="19SUeA" value="The system of interest shall request control from driver when &#10;entering the handover zone. Handover zone is defined as the zone &#10;where the transition from manual to AD is done." />
+              <property role="19SUeA" value="The system of interest shall request control from driver when &#10;entering a valid handover zone. Handover zone is defined as the zone &#10;where the transition from manual to AD is done." />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHe" role="1QQeBF">
-      <property role="0lsPA" value="FR10" />
+      <property role="0lsPA" value="FR13" />
       <property role="0ke_I" value="Daniel" />
       <node concept="1QQeAY" id="3Jn$RV2VwHO" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIu" role="1QQeAV">
@@ -4835,7 +4955,7 @@
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHf" role="1QQeBF">
-      <property role="0lsPA" value="FR11" />
+      <property role="0lsPA" value="FR14" />
       <property role="0ke_I" value="Daniel" />
       <node concept="1QQeAY" id="3Jn$RV2VwHR" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIw" role="1QQeAV">
@@ -4855,12 +4975,12 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHg" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR11.01" />
+      <property role="0lsPA" value="FR14.01" />
       <node concept="1QQeAY" id="3Jn$RV2VwHU" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIy" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIT" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwJa" role="19SJt6">
-              <property role="19SUeA" value="AD system shall detection static TPO, VRU." />
+              <property role="19SUeA" value="AD system shall detect static TPO, VRU." />
             </node>
           </node>
         </node>
@@ -4874,7 +4994,7 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHh" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR11.02" />
+      <property role="0lsPA" value="FR14.02" />
       <node concept="1QQeAY" id="3Jn$RV2VwHX" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwI$" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIU" role="0nzdz">
@@ -4893,12 +5013,12 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHi" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR11.03" />
+      <property role="0lsPA" value="FR14.03" />
       <node concept="1QQeAY" id="3Jn$RV2VwI0" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIA" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIV" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwJc" role="19SJt6">
-              <property role="19SUeA" value="AD system shall detection non-overridable obstacles (small objects, pot holes) &#10;that may affect the dynamic of the ego vehicle if driven over. " />
+              <property role="19SUeA" value="AD system shall detect non-overridable obstacles (small objects, pot holes) &#10;that may affect the dynamic of the ego vehicle if driven over. " />
             </node>
           </node>
         </node>
@@ -4912,12 +5032,12 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHj" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR11.04" />
+      <property role="0lsPA" value="FR14.04" />
       <node concept="1QQeAY" id="3Jn$RV2VwI3" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIC" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIW" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwJd" role="19SJt6">
-              <property role="19SUeA" value="AD system shall detection the road geometry and topology." />
+              <property role="19SUeA" value="AD system shall detect the road geometry and topology." />
             </node>
           </node>
         </node>
@@ -4931,7 +5051,7 @@
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHk" role="1QQeBF">
       <property role="0ke_I" value="Daniel P." />
-      <property role="0lsPA" value="FR11.05" />
+      <property role="0lsPA" value="FR14.05" />
       <node concept="1QQeAY" id="3Jn$RV2VwI6" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIE" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwIX" role="0nzdz">
@@ -4949,7 +5069,7 @@
       <node concept="1QQeFk" id="3Jn$RV2VwI8" role="0nOlf" />
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwHl" role="1QQeBF">
-      <property role="0lsPA" value="FR12" />
+      <property role="0lsPA" value="FR15" />
       <property role="0ke_I" value="Daniel" />
       <node concept="1QQeAY" id="3Jn$RV2VwI9" role="1QQeAC">
         <node concept="0nzK2" id="3Jn$RV2VwIG" role="1QQeAV">
@@ -5072,7 +5192,7 @@
     <node concept="0lH3_" id="3Jn$RV2VwJm" role="1QQeBF" />
   </node>
   <node concept="2HdtXS" id="5Fk_m8PncBL">
-    <property role="TrG5h" value="_650_ihs_lidar_sensing" />
+    <property role="TrG5h" value="_655_ihs_lidar_sensing" />
     <node concept="2dDAV0" id="RyPjVFcf0o" role="2HcuB8">
       <property role="TrG5h" value="lidarSensing" />
       <node concept="3Ug1AV" id="RyPjVFcf0r" role="3UgYNK">
@@ -5112,16 +5232,45 @@
     </node>
   </node>
   <node concept="2HdtXS" id="5Fk_m8PncBN">
-    <property role="TrG5h" value="_650_ihs_radar_sensing" />
+    <property role="TrG5h" value="_655_ihs_radar_sensing" />
     <node concept="2SQmWS" id="5Fk_m8PncBO" role="2HcuB8" />
   </node>
   <node concept="2HdtXS" id="5Fk_m8PncBP">
-    <property role="TrG5h" value="_650_ihs_camera_sensing" />
+    <property role="TrG5h" value="650_ihs_camera_sensing" />
     <node concept="2SQmWS" id="5Fk_m8PncBQ" role="2HcuB8" />
   </node>
-  <node concept="2HdtXS" id="5Fk_m8PncBR">
-    <property role="TrG5h" value="_650_ihs_fail_operational_concept" />
-    <node concept="2SQmWS" id="5Fk_m8PncBS" role="2HcuB8" />
+  <node concept="1_1swa" id="2mjHtwTu97P">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_000_overview" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1_0LV8" id="6VJDb1ZG9CQ" role="1_0VJ0">
+      <node concept="19SGf9" id="6VJDb1ZG9CR" role="1_0LWR">
+        <node concept="19SUe$" id="6VJDb1ZG9Dh" role="19SJt6" />
+      </node>
+      <node concept="1xAIan" id="6VJDb1ZG9CT" role="1xAIax">
+        <property role="1xAIam" value="Item Definition" />
+      </node>
+    </node>
+  </node>
+  <node concept="2SbYGP" id="2mjHtwTu9dY">
+    <property role="TrG5h" value="conf" />
+    <property role="3GE5qa" value="config" />
+    <node concept="2SbYGw" id="9TY4XGZias" role="A10yx">
+      <property role="TrG5h" value="img" />
+      <node concept="9PVaO" id="9TY4XGZiar" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="figures" />
+      </node>
+    </node>
+    <node concept="2SbYGw" id="2mjHtwTu9e1" role="Cbewh">
+      <property role="TrG5h" value="tmp" />
+      <node concept="9PVaO" id="2mjHtwTu9e2" role="9PVG_">
+        <property role="1RwFax" value="true" />
+        <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="figures" />
+      </node>
+    </node>
   </node>
 </model>
 

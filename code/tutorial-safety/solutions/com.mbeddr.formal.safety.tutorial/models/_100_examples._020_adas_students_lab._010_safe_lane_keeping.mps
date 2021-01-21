@@ -551,7 +551,7 @@
     </node>
   </node>
   <node concept="2HxQMi" id="G$XGFsgYc8">
-    <property role="TrG5h" value="_102_safety_assurance_lane_keeping_losses_list" />
+    <property role="TrG5h" value="_102_LKA_losses_list" />
     <node concept="2HxQMU" id="G$XGFsgYc9" role="2HxQMj">
       <property role="2HxQM_" value="L-1" />
       <property role="TrG5h" value="Loss of life or injury to people" />
