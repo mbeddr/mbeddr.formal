@@ -299,14 +299,12 @@
       <property role="IQ2ns" value="2004523000582631957" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="context" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1JhvKLLOZ8n" resolve="ContextBase" />
     </node>
     <node concept="1TJgyj" id="1JhvKLLOZ8o" role="1TKVEi">
       <property role="IQ2ns" value="2004523000582631960" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="consequence" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1JhvKLLOZ8r" resolve="ConsequenceBase" />
     </node>
     <node concept="PrWs8" id="6RZi9iizv5h" role="PzmwI">
@@ -356,11 +354,18 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
+    <node concept="1TJgyj" id="EZNLLOFsnc" role="1TKVEi">
+      <property role="IQ2ns" value="774565382054593996" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="hazardRefs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="cjwq:6W1kQP6AMY_" resolve="HazardRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4q9fsxm3ow8">
     <property role="EcuMT" value="5082661585110796296" />
-    <property role="3GE5qa" value="baseLanguage.analysis.consequence" />
-    <property role="TrG5h" value="HazardConsequence" />
+    <property role="3GE5qa" value="ext.analysis.consequence" />
+    <property role="TrG5h" value="HazardRefConsequence" />
     <ref role="1TJDcQ" node="1JhvKLLOZ8r" resolve="ConsequenceBase" />
     <node concept="1TJgyj" id="4q9fsxm3owq" role="1TKVEi">
       <property role="IQ2ns" value="5082661585110796314" />
@@ -477,6 +482,65 @@
       <property role="20kJfa" value="action" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6RZi9iizv5a" resolve="IReferenceableActionDescription" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="EZNLLOzOsH">
+    <property role="EcuMT" value="774565382052595501" />
+    <property role="3GE5qa" value="ext.analysis.context.catalogue" />
+    <property role="TrG5h" value="ContextsCatalogue" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="contexts definition" />
+    <property role="R4oN_" value="STPA analysis contexts definition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1irR5M" id="EZNLLOzTTh" role="rwd14">
+      <property role="2$rrk2" value="4" />
+      <node concept="1irPie" id="EZNLLOzTTl" role="1irR9h">
+        <property role="1irPi9" value="Ɏ" />
+        <node concept="3PKj8D" id="EZNLLOzTTq" role="3PKjny">
+          <property role="3PKj8l" value="555555" />
+        </node>
+      </node>
+    </node>
+    <node concept="1TJgyj" id="EZNLLOzTUx" role="1TKVEi">
+      <property role="IQ2ns" value="774565382052617889" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="contextDefinitions" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="EZNLLOzTTH" resolve="ContextDefinition" />
+    </node>
+    <node concept="PrWs8" id="EZNLLOzU8E" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="EZNLLOzTTH">
+    <property role="EcuMT" value="774565382052617837" />
+    <property role="3GE5qa" value="ext.analysis.context.catalogue" />
+    <property role="TrG5h" value="ContextDefinition" />
+    <property role="34LRSv" value="context" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="EZNLLOzTTI" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="EZNLLOEAZ4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="1TJgyj" id="EZNLLOzTTM" role="1TKVEi">
+      <property role="IQ2ns" value="774565382052617842" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="description" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="EZNLLO$Hhe">
+    <property role="EcuMT" value="774565382052828238" />
+    <property role="3GE5qa" value="ext.analysis.context" />
+    <property role="TrG5h" value="ContextRefContext" />
+    <ref role="1TJDcQ" node="1JhvKLLOZ8n" resolve="ContextBase" />
+    <node concept="1TJgyj" id="EZNLLO$Hhf" role="1TKVEi">
+      <property role="IQ2ns" value="774565382052828239" />
+      <property role="20kJfa" value="context" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="EZNLLOzTTH" resolve="ContextDefinition" />
     </node>
   </node>
 </model>

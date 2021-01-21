@@ -16,7 +16,7 @@
 - for packaging FASTEN distribution, run `gradlew.bat`- this starts the default task `build_fasten_safety_distribution`
 
 ## Building (from MPS)
-- download MPS 2020.1.x
+- download MPS 2020.2.x
 - clone the repository https://github.com/danielratiu/mbeddr.formal.mps-plugins and copy the content of "platform_2020_1_2/" in the "plugins" directory of MPS
 - start MPS
 - the path variable mbeddr.formal.home in 'Settings->Appearance & Behavior->Path Variables' to point to the directory which contains the cloned 'mbeddr.formal' repository.

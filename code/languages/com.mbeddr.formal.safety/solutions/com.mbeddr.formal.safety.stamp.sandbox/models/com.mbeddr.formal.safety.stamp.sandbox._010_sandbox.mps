@@ -9,7 +9,7 @@
   <imports />
   <registry>
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
-      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardConsequence" flags="ng" index="gxbn0">
+      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardRefConsequence" flags="ng" index="gxbn0">
         <reference id="5082661585110796314" name="hazard" index="gxbni" />
       </concept>
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
@@ -29,6 +29,9 @@
         <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
         <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
       </concept>
+      <concept id="2004523000582413321" name="com.mbeddr.formal.safety.stamp.structure.ActionDescriptionBase" flags="ng" index="1E0uc5">
+        <child id="2185346695491723265" name="hazards" index="2Dy4$W" />
+      </concept>
       <concept id="2004523000582413322" name="com.mbeddr.formal.safety.stamp.structure.TextualActionDescription" flags="ng" index="1E0uc6">
         <child id="2004523000582413323" name="text" index="1E0uc7" />
       </concept>
@@ -41,6 +44,7 @@
       </concept>
       <concept id="2004523000582631975" name="com.mbeddr.formal.safety.stamp.structure.TextualConsequence" flags="ng" index="1E0COF">
         <child id="2004523000582631976" name="text" index="1E0CO$" />
+        <child id="774565382054593996" name="hazardRefs" index="1Y4wFg" />
       </concept>
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
       <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU" />
@@ -52,6 +56,15 @@
       <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.FunctionalControlStructure" flags="ng" index="1X_0jQ">
         <child id="4286195509387832126" name="connections" index="1X_0G_" />
         <child id="4286195509387832124" name="content" index="1X_0GB" />
+      </concept>
+      <concept id="774565382052828238" name="com.mbeddr.formal.safety.stamp.structure.ContextRefContext" flags="ng" index="1YbhHi">
+        <reference id="774565382052828239" name="context" index="1YbhHj" />
+      </concept>
+      <concept id="774565382052617837" name="com.mbeddr.formal.safety.stamp.structure.ContextDefinition" flags="ng" index="1Yc55L">
+        <child id="774565382052617842" name="description" index="1Yc55I" />
+      </concept>
+      <concept id="774565382052595501" name="com.mbeddr.formal.safety.stamp.structure.ContextsCatalogue" flags="ng" index="1Yc8wL">
+        <child id="774565382052617889" name="contextDefinitions" index="1Yc56X" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -71,6 +84,9 @@
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
       <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1354,21 +1370,19 @@
       <ref role="1E0nOH" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
       <node concept="1E0nOJ" id="1JhvKLLOibU" role="1E0nOC">
         <ref role="1E0n_N" node="3Cm$$O2vAwE" resolve="Arm" />
-        <node concept="1E0uc6" id="1JhvKLLOFYy" role="1E0ucd">
-          <node concept="19SGf9" id="1JhvKLLOOt_" role="1E0uc7">
-            <node concept="19SUe$" id="1JhvKLLOOtA" role="19SJt6">
-              <property role="19SUeA" value="" />
-            </node>
-          </node>
-        </node>
         <node concept="1E0uc6" id="1JhvKLLOOtH" role="1E0tWM">
+          <property role="TrG5h" value="ARM_UNINTENDED" />
           <node concept="19SGf9" id="1JhvKLLOOtJ" role="1E0uc7">
             <node concept="19SUe$" id="1JhvKLLOOtK" role="19SJt6">
-              <property role="19SUeA" value="Arm command provided unintentionally." />
+              <property role="19SUeA" value="Arm command provided &#10;unintentionally" />
             </node>
+          </node>
+          <node concept="DABN8" id="EZNLLOG_WJ" role="2Dy4$W">
+            <ref role="DABNb" node="EZNLLOG_WF" resolve="accidental launch" />
           </node>
         </node>
         <node concept="1E0COo" id="1JhvKLLPvln" role="1E0tXe">
+          <property role="TrG5h" value="ARM_TOO_SOON" />
           <node concept="1E0COg" id="1JhvKLLPvlt" role="1E0COp">
             <node concept="19SGf9" id="1JhvKLLPvlv" role="1E0COh">
               <node concept="19SUe$" id="1JhvKLLPvlw" role="19SJt6">
@@ -1382,6 +1396,9 @@
                 <property role="19SUeA" value="leads to accidental launch" />
               </node>
             </node>
+            <node concept="DABN8" id="EZNLLOH1Wc" role="1Y4wFg">
+              <ref role="DABNb" node="EZNLLOG_WF" resolve="accidental launch" />
+            </node>
           </node>
         </node>
       </node>
@@ -1390,23 +1407,27 @@
       <ref role="1E0nOH" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
       <node concept="1E0nOJ" id="6knLqZ8Kr2K" role="1E0nOC">
         <ref role="1E0n_N" node="3Cm$$O2vpuv" resolve="Training" />
-        <node concept="1E0COo" id="6knLqZ8Kr2M" role="1E0ucd">
-          <node concept="1E0COg" id="6knLqZ8Kr2S" role="1E0COp">
-            <node concept="19SGf9" id="6knLqZ8Kr2U" role="1E0COh">
-              <node concept="19SUe$" id="6knLqZ8Kr2V" role="19SJt6">
-                <property role="19SUeA" value="when attack happens" />
+        <node concept="1E0COo" id="EZNLLO_608" role="1E0ucd">
+          <property role="TrG5h" value="NO_TRAINING" />
+          <node concept="1YbhHi" id="EZNLLO_60h" role="1E0COp">
+            <ref role="1YbhHj" node="EZNLLO_600" resolve="attack starts unexpectedly" />
+          </node>
+          <node concept="1E0COF" id="EZNLLO_60s" role="1E0COk">
+            <node concept="19SGf9" id="EZNLLO_60u" role="1E0CO$">
+              <node concept="19SUe$" id="EZNLLOFsmq" role="19SJt6">
+                <property role="19SUeA" value="innefficient defence &#10;can be provided" />
               </node>
             </node>
-          </node>
-          <node concept="1E0COF" id="6knLqZ8Kr30" role="1E0COk">
-            <node concept="19SGf9" id="6knLqZ8Kr32" role="1E0CO$">
-              <node concept="19SUe$" id="6knLqZ8Kr33" role="19SJt6">
-                <property role="19SUeA" value="missed defence" />
-              </node>
+            <node concept="DABN8" id="EZNLLOFR8N" role="1Y4wFg">
+              <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
+            </node>
+            <node concept="DABN8" id="EZNLLOH1Wj" role="1Y4wFg">
+              <ref role="DABNb" node="EZNLLOFR8K" resolve="no defence" />
             </node>
           </node>
         </node>
         <node concept="1E0COo" id="CmOUmc2ZzQ" role="1E0tXe">
+          <property role="TrG5h" value="LATE_TRAINING" />
           <node concept="1E0COg" id="CmOUmc2ZzW" role="1E0COp">
             <node concept="19SGf9" id="CmOUmc2ZzY" role="1E0COh">
               <node concept="19SUe$" id="CmOUmc2ZzZ" role="19SJt6">
@@ -1417,8 +1438,11 @@
           <node concept="1E0COF" id="CmOUmc2Z$4" role="1E0COk">
             <node concept="19SGf9" id="CmOUmc2Z$6" role="1E0CO$">
               <node concept="19SUe$" id="CmOUmc2Z$7" role="19SJt6">
-                <property role="19SUeA" value="innefficient defence" />
+                <property role="19SUeA" value="innefficient defence &#10;can be provided" />
               </node>
+            </node>
+            <node concept="DABN8" id="EZNLLOH1We" role="1Y4wFg">
+              <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
             </node>
           </node>
         </node>
@@ -1428,20 +1452,13 @@
       <ref role="1E0nOH" node="3Cm$$O2vpqe" resolve="Early Warning System" />
       <node concept="1E0nOJ" id="6XKrTzkz8zc" role="1E0nOC">
         <ref role="1E0n_N" node="3Cm$$O2vUZb" resolve="Heartbeat" />
-        <node concept="1E0COo" id="6XKrTzkz8ze" role="1E0ucd">
-          <node concept="1E0COg" id="6XKrTzkz8zk" role="1E0COp">
-            <node concept="19SGf9" id="6XKrTzkz8zm" role="1E0COh">
-              <node concept="19SUe$" id="6XKrTzkz8zn" role="19SJt6">
-                <property role="19SUeA" value="when attack" />
-              </node>
-            </node>
+        <node concept="1E0COo" id="EZNLLOH28Q" role="1E0ucd">
+          <property role="TrG5h" value="NO_HEARTBEAT" />
+          <node concept="1YbhHi" id="EZNLLOH293" role="1E0COp">
+            <ref role="1YbhHj" node="EZNLLOH28U" resolve="peace" />
           </node>
-          <node concept="1E0COF" id="6XKrTzkz8zs" role="1E0COk">
-            <node concept="19SGf9" id="6XKrTzkz8zu" role="1E0CO$">
-              <node concept="19SUe$" id="6XKrTzkz8zv" role="19SJt6">
-                <property role="19SUeA" value="missed response" />
-              </node>
-            </node>
+          <node concept="gxbn0" id="EZNLLOH296" role="1E0COk">
+            <ref role="gxbni" node="EZNLLOG_WF" resolve="accidental launch" />
           </node>
         </node>
       </node>
@@ -2546,11 +2563,45 @@
     <property role="TrG5h" value="_100_car_smart_charger_hazards" />
     <node concept="8gVzc" id="4q9fsxm3ow6" role="8gIbH">
       <property role="TrG5h" value="battery overheating" />
-      <property role="0lsPA" value="H01" />
+      <property role="0lsPA" value="CHARGER_H01" />
     </node>
     <node concept="8gVzc" id="4q9fsxm3Bz8" role="8gIbH">
       <property role="TrG5h" value="electrical hazard" />
-      <property role="0lsPA" value="H02" />
+      <property role="0lsPA" value="CHARGER_H02" />
+    </node>
+  </node>
+  <node concept="1Yc8wL" id="EZNLLO_4YL">
+    <property role="TrG5h" value="_010_ballistic_missle_defence_system_ctx_definition" />
+    <node concept="1Yc55L" id="EZNLLO_600" role="1Yc56X">
+      <property role="TrG5h" value="attack starts unexpectedly" />
+      <node concept="19SGf9" id="EZNLLO_602" role="1Yc55I">
+        <node concept="19SUe$" id="EZNLLO_603" role="19SJt6">
+          <property role="19SUeA" value="when attack starts &#10;unexpextedly" />
+        </node>
+      </node>
+    </node>
+    <node concept="1Yc55L" id="EZNLLOH28U" role="1Yc56X">
+      <property role="TrG5h" value="peace" />
+      <node concept="19SGf9" id="EZNLLOH28V" role="1Yc55I">
+        <node concept="19SUe$" id="EZNLLOH28W" role="19SJt6">
+          <property role="19SUeA" value="during a peace period" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="8gVzP" id="EZNLLOFO$t">
+    <property role="TrG5h" value="_010_ballistic_missle_defence_system_hazards" />
+    <node concept="8gVzc" id="EZNLLOFO$u" role="8gIbH">
+      <property role="0lsPA" value="HAZ_MISSLE_01" />
+      <property role="TrG5h" value="innefficient defence" />
+    </node>
+    <node concept="8gVzc" id="EZNLLOFR8K" role="8gIbH">
+      <property role="0lsPA" value="HAZ_MISSLE_02" />
+      <property role="TrG5h" value="no defence" />
+    </node>
+    <node concept="8gVzc" id="EZNLLOG_WF" role="8gIbH">
+      <property role="0lsPA" value="HAZ_MISSLE_03" />
+      <property role="TrG5h" value="accidental launch" />
     </node>
   </node>
 </model>
