@@ -37,6 +37,9 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
+      <concept id="5285453794052993580" name="com.mbeddr.formal.spin.structure.IntType" flags="ng" index="2m7kok" />
+    </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
@@ -142,7 +145,6 @@
       <concept id="7926133672146485940" name="com.mbeddr.formal.safety.req.structure.OperatingContextReqKind" flags="ng" index="3ZsCCw" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
-      <concept id="7842584090743386570" name="com.mbeddr.formal.base.expressions.structure.Type" flags="ng" index="2HdslB" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -184,6 +186,15 @@
       </concept>
       <concept id="7526568111199936003" name="com.mbeddr.formal.nusmv.ext.structure.IntervalTypeExtended" flags="ng" index="2XEmfi">
         <reference id="7526568111199936004" name="intervalDeclaration" index="2XEmfl" />
+      </concept>
+      <concept id="2406721343445433420" name="com.mbeddr.formal.nusmv.ext.structure.StructType" flags="ng" index="1s31w3">
+        <reference id="2406721343445433421" name="structDeclaration" index="1s31w2" />
+      </concept>
+      <concept id="2406721343445432986" name="com.mbeddr.formal.nusmv.ext.structure.StructDeclaration" flags="ng" index="1s31Vl">
+        <child id="2406721343445433417" name="members" index="1s31w6" />
+      </concept>
+      <concept id="2406721343445433207" name="com.mbeddr.formal.nusmv.ext.structure.StructMemberDeclaration" flags="ng" index="1s31WS">
+        <child id="2406721343445433211" name="type" index="1s31WO" />
       </concept>
       <concept id="1258148499700303837" name="com.mbeddr.formal.nusmv.ext.structure.DocumentationMultiline" flags="ng" index="3I9x2T" />
     </language>
@@ -252,6 +263,10 @@
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="9066112305507423291" name="com.mbeddr.formal.base.arch.structure.Connection" flags="ng" index="3Ug1$w">
+        <child id="9066112305507423293" name="source" index="3Ug1$A" />
+        <child id="9066112305507423296" name="target" index="3Ug1_r" />
+      </concept>
       <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
         <child id="5906421183240323769" name="interfaceRef" index="2p5x1W" />
         <child id="9066112305507508715" name="content" index="3UgYNK" />
@@ -261,6 +276,13 @@
       </concept>
       <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
         <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+      <concept id="9066112305507423795" name="com.mbeddr.formal.base.arch.structure.CompositePart" flags="ng" index="3Ug1GC">
+        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
+        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
+      </concept>
+      <concept id="9066112305507423796" name="com.mbeddr.formal.base.arch.structure.InstanceRef" flags="ng" index="3Ug1GJ">
+        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
       </concept>
       <concept id="9066112305507508705" name="com.mbeddr.formal.base.arch.structure.EmptyComponentAssemblyBodyContent" flags="ng" index="3UgYNU" />
       <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
@@ -321,7 +343,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwpU" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwpZ" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vwq2" role="19SJt6">
-              <property role="19SUeA" value="The system shall control the vehicle to safely handle intersections in urban environments." />
+              <property role="19SUeA" value="The system shall control the vehicle &#10;to safely handle intersections in urban environments." />
             </node>
           </node>
         </node>
@@ -334,7 +356,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwpV" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2Vwq0" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2Vwq3" role="19SJt6">
-              <property role="19SUeA" value="The system shall use local (sensors mounted on ego vehicle) or remote data (infrastructure) sources &#10;to enable a safe control of the ego vehicle. " />
+              <property role="19SUeA" value="The system shall use local (sensors mounted on ego vehicle) &#10;or remote data (infrastructure) sources &#10;to enable a safe control of the ego vehicle. " />
             </node>
           </node>
         </node>
@@ -3211,6 +3233,25 @@
         </node>
       </node>
     </node>
+    <node concept="0lhDl" id="2vEFX4zn81W" role="1QQeBF">
+      <property role="0lsPA" value="FSR05" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeFk" id="2vEFX4zn81X" role="0nOlf" />
+      <node concept="19SGf9" id="2vEFX4zn81Y" role="1QQeG9">
+        <node concept="19SUe$" id="2vEFX4zn81Z" role="19SJt6">
+          <property role="19SUeA" value="Deactivation Condition" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="2vEFX4zn82O" role="1QQeAC">
+        <node concept="0nzK2" id="2vEFX4zn82Q" role="1QQeAV">
+          <node concept="19SGf9" id="2vEFX4zn82S" role="0nzdz">
+            <node concept="19SUe$" id="2vEFX4zn82T" role="19SJt6">
+              <property role="19SUeA" value="If the perception confidence is low, the driver shall be informed &#10;in [200ms] and if in [1s] the driver does not take control, &#10;then the vehicle should reach a minimal risk condition." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1QQeGf" id="3Jn$RV2VwAQ">
     <property role="TrG5h" value="_661_ihs_technical_safety_requirements_lidar" />
@@ -3337,7 +3378,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwBP" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwBW" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwC0" role="19SJt6">
-              <property role="19SUeA" value="The system shall be used with other in-vehicle systems to control a vehicle &#10;to safely handle intersections in urban environments." />
+              <property role="19SUeA" value="The system shall be used with other in-vehicle systems &#10;to control a vehicle to safely handle intersections &#10;in urban environments." />
             </node>
           </node>
         </node>
@@ -3356,7 +3397,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwBR" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwBX" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwC1" role="19SJt6">
-              <property role="19SUeA" value="The driver can activate the system of interest only when &#10;the ego vehicle is in standstill." />
+              <property role="19SUeA" value="The driver can activate the system of interest &#10;only when the ego vehicle is in standstill." />
             </node>
           </node>
         </node>
@@ -3375,7 +3416,7 @@
         <node concept="0nzK2" id="3Jn$RV2VwBT" role="1QQeAV">
           <node concept="19SGf9" id="3Jn$RV2VwBY" role="0nzdz">
             <node concept="19SUe$" id="3Jn$RV2VwC2" role="19SJt6">
-              <property role="19SUeA" value="The system of interest shall be integrated in a vehicle that has mounted sensors &#10;and is able to receive remote data from infrastructure." />
+              <property role="19SUeA" value="The system of interest shall be integrated &#10;in a vehicle that has mounted sensors and &#10;is able to receive remote data from infrastructure." />
             </node>
           </node>
         </node>
@@ -3733,16 +3774,49 @@
         <property role="2IPVms" value="85" />
       </node>
     </node>
+    <node concept="1s31Vl" id="2vEFX4zn7le" role="2HcuB8">
+      <property role="TrG5h" value="vehicleMotion" />
+      <node concept="1s31WS" id="2vEFX4zn7q_" role="1s31w6">
+        <property role="TrG5h" value="acc_X" />
+        <node concept="2m7kok" id="2vEFX4zn7qY" role="1s31WO" />
+      </node>
+      <node concept="1s31WS" id="2vEFX4zn7r6" role="1s31w6">
+        <property role="TrG5h" value="acc_Y" />
+        <node concept="2m7kok" id="2vEFX4zn7ru" role="1s31WO" />
+      </node>
+      <node concept="1s31WS" id="2vEFX4zn7rA" role="1s31w6">
+        <property role="TrG5h" value="acc_Z" />
+        <node concept="2m7kok" id="2vEFX4zn7s0" role="1s31WO" />
+      </node>
+    </node>
+    <node concept="1s31Vl" id="2vEFX4zn89N" role="2HcuB8">
+      <property role="TrG5h" value="HMI_DATA" />
+      <node concept="1s31WS" id="2vEFX4zn8s5" role="1s31w6">
+        <property role="TrG5h" value="activate" />
+        <node concept="2Hds6S" id="2vEFX4zn8s_" role="1s31WO" />
+      </node>
+      <node concept="1s31WS" id="2vEFX4zn8sH" role="1s31w6">
+        <property role="TrG5h" value="deactivate" />
+        <node concept="2Hds6S" id="2vEFX4zn8tf" role="1s31WO" />
+      </node>
+    </node>
+    <node concept="1s31Vl" id="2vEFX4zn8lH" role="2HcuB8">
+      <property role="TrG5h" value="IHS_STATUS" />
+    </node>
     <node concept="2SQmWS" id="3Jn$RV2VwDU" role="2HcuB8" />
     <node concept="2dDAVa" id="5Fk_m8Pna_3" role="2HcuB8">
       <property role="TrG5h" value="UserInterface" />
-      <node concept="3UnI9n" id="5Fk_m8PncnP" role="3UnI90">
+      <node concept="3UnI81" id="2vEFX4zn8rs" role="3UnI9m">
         <property role="TrG5h" value="informUser" />
-        <node concept="2Hds6S" id="5Fk_m8Pncok" role="3UnI80" />
+        <node concept="1s31w3" id="2vEFX4zn8rX" role="3UnI80">
+          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+        </node>
       </node>
       <node concept="3UnI9n" id="5Fk_m8Pncos" role="3UnI90">
         <property role="TrG5h" value="userActions" />
-        <node concept="2HdslB" id="5Fk_m8Pncot" role="3UnI80" />
+        <node concept="1s31w3" id="2vEFX4zn8fW" role="3UnI80">
+          <ref role="1s31w2" node="2vEFX4zn89N" resolve="HMI_DATA" />
+        </node>
       </node>
     </node>
     <node concept="2SQmWS" id="5Fk_m8PnaxR" role="2HcuB8" />
@@ -3752,12 +3826,24 @@
     <node concept="2SQmWS" id="5Fk_m8PnaLU" role="2HcuB8" />
     <node concept="2dDAVa" id="5Fk_m8Pn9xB" role="2HcuB8">
       <property role="TrG5h" value="Chassis" />
+      <node concept="3UnI9n" id="2vEFX4zn7sh" role="3UnI90">
+        <property role="TrG5h" value="vehicleMotionStatus" />
+        <node concept="1s31w3" id="2vEFX4zn7sC" role="3UnI80">
+          <ref role="1s31w2" node="2vEFX4zn7le" resolve="vehicleMotion" />
+        </node>
+      </node>
       <node concept="3UnI81" id="5Fk_m8Pncpz" role="3UnI9m">
         <property role="TrG5h" value="vehicleControl" />
-        <node concept="2HdslB" id="5Fk_m8Pncp$" role="3UnI80" />
+        <node concept="1s31w3" id="2vEFX4zn7s9" role="3UnI80">
+          <ref role="1s31w2" node="2vEFX4zn7le" resolve="vehicleMotion" />
+        </node>
       </node>
     </node>
     <node concept="2SQmWS" id="5Fk_m8Pn9u_" role="2HcuB8" />
+    <node concept="2dDAVa" id="2vEFX4zn61A" role="2HcuB8">
+      <property role="TrG5h" value="Voter" />
+    </node>
+    <node concept="2SQmWS" id="2vEFX4zn5WV" role="2HcuB8" />
     <node concept="2dDAVa" id="3Jn$RV2VwDV" role="2HcuB8">
       <property role="TrG5h" value="Lidar" />
       <node concept="3UnI9n" id="3Jn$RV2VwEn" role="3UnI90">
@@ -3776,6 +3862,32 @@
       </node>
     </node>
     <node concept="2SQmWS" id="3Jn$RV2VwDW" role="2HcuB8" />
+    <node concept="2dDAV0" id="2vEFX4zn5N2" role="2HcuB8">
+      <property role="TrG5h" value="LidarSensingSetup" />
+      <node concept="3Ug1AZ" id="2vEFX4zn5RE" role="2p5x1W">
+        <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn5RI" role="3UgYNK">
+        <property role="TrG5h" value="lidar_1" />
+        <node concept="3Ug1AZ" id="2vEFX4zn5RH" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn5RX" role="3UgYNK">
+        <property role="TrG5h" value="lidar_2" />
+        <node concept="3Ug1AZ" id="2vEFX4zn5RV" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn66r" role="3UgYNK">
+        <property role="TrG5h" value="voter_lidars" />
+        <node concept="3Ug1AZ" id="2vEFX4zn66p" role="3Ug1A_">
+          <ref role="3Ug1AY" node="2vEFX4zn61A" resolve="Voter" />
+        </node>
+      </node>
+      <node concept="3UgYNU" id="2vEFX4zn5Sb" role="3UgYNK" />
+    </node>
+    <node concept="2SQmWS" id="2vEFX4zn5Iv" role="2HcuB8" />
     <node concept="2dDAVa" id="3Jn$RV2VwDX" role="2HcuB8">
       <property role="TrG5h" value="Radar" />
       <node concept="3UnI9n" id="3Jn$RV2VwEq" role="3UnI90">
@@ -3794,6 +3906,44 @@
       </node>
     </node>
     <node concept="2SQmWS" id="3Jn$RV2VwDY" role="2HcuB8" />
+    <node concept="2dDAV0" id="2vEFX4zn6gi" role="2HcuB8">
+      <property role="TrG5h" value="RadarSensingSetup" />
+      <node concept="3Ug1AZ" id="2vEFX4zn6lr" role="2p5x1W">
+        <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6gk" role="3UgYNK">
+        <property role="TrG5h" value="radar_1" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6lu" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6m2" role="3UgYNK">
+        <property role="TrG5h" value="radar_2" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6m3" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6mv" role="3UgYNK">
+        <property role="TrG5h" value="radar_3" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6mw" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6n2" role="3UgYNK">
+        <property role="TrG5h" value="radar_4" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6n3" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6go" role="3UgYNK">
+        <property role="TrG5h" value="voter_radars" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6gp" role="3Ug1A_">
+          <ref role="3Ug1AY" node="2vEFX4zn61A" resolve="Voter" />
+        </node>
+      </node>
+      <node concept="3UgYNU" id="2vEFX4zn6gq" role="3UgYNK" />
+    </node>
+    <node concept="2SQmWS" id="2vEFX4zn66P" role="2HcuB8" />
     <node concept="2dDAVa" id="3Jn$RV2VwDZ" role="2HcuB8">
       <property role="TrG5h" value="Camera" />
       <node concept="3UnI9n" id="3Jn$RV2VwEt" role="3UnI90">
@@ -3806,6 +3956,44 @@
       </node>
     </node>
     <node concept="2SQmWS" id="3Jn$RV2VwE4" role="2HcuB8" />
+    <node concept="2dDAV0" id="2vEFX4zn6AY" role="2HcuB8">
+      <property role="TrG5h" value="CameraSensingSetup" />
+      <node concept="3Ug1AZ" id="2vEFX4zn6Gz" role="2p5x1W">
+        <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6B0" role="3UgYNK">
+        <property role="TrG5h" value="camera_1" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6GA" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6B2" role="3UgYNK">
+        <property role="TrG5h" value="camera_2" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6GG" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6B4" role="3UgYNK">
+        <property role="TrG5h" value="camera_3" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6GM" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6B6" role="3UgYNK">
+        <property role="TrG5h" value="camera_4" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6GS" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn6B8" role="3UgYNK">
+        <property role="TrG5h" value="voter_radars" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6B9" role="3Ug1A_">
+          <ref role="3Ug1AY" node="2vEFX4zn61A" resolve="Voter" />
+        </node>
+      </node>
+      <node concept="3UgYNU" id="2vEFX4zn6Ba" role="3UgYNK" />
+    </node>
+    <node concept="2SQmWS" id="2vEFX4zn6t5" role="2HcuB8" />
     <node concept="2dDAVa" id="3Jn$RV2VwE5" role="2HcuB8">
       <property role="TrG5h" value="EgoVehicleSensors" />
       <node concept="3UnI9n" id="3Jn$RV2VwE$" role="3UnI90">
@@ -3880,10 +4068,6 @@
         <ref role="3Ug1AY" node="3Jn$RV2VwE9" resolve="IntersectionHandling" />
       </node>
     </node>
-    <node concept="2SQmWS" id="6VJDb1ZG9Za" role="2HcuB8" />
-    <node concept="2dDAVa" id="5Fk_m8PnbPH" role="2HcuB8">
-      <property role="TrG5h" value="VehiclePlatformManagementSystem" />
-    </node>
     <node concept="2SQmWS" id="5Fk_m8PnbMd" role="2HcuB8" />
     <node concept="2dDAVa" id="3Jn$RV2VwEb" role="2HcuB8">
       <property role="TrG5h" value="MotionControl" />
@@ -3947,6 +4131,46 @@
       <property role="TrG5h" value="EpbECU" />
     </node>
     <node concept="2SQmWS" id="5Fk_m8PnbsT" role="2HcuB8" />
+    <node concept="2dDAV0" id="2vEFX4zn77I" role="2HcuB8">
+      <property role="TrG5h" value="VehiclePlatformManagementSystem" />
+      <node concept="3UnI9n" id="2vEFX4zn7sP" role="3UnI90">
+        <property role="TrG5h" value="vehicleControl" />
+        <node concept="1s31w3" id="2vEFX4zn7th" role="3UnI80">
+          <ref role="1s31w2" node="2vEFX4zn7le" resolve="vehicleMotion" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn7dn" role="3UgYNK">
+        <property role="TrG5h" value="engineECU" />
+        <node concept="3Ug1AZ" id="2vEFX4zn7dm" role="3Ug1A_">
+          <ref role="3Ug1AY" node="3Jn$RV2VwEd" resolve="EngineECU" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn7dG" role="3UgYNK">
+        <property role="TrG5h" value="breakEcu" />
+        <node concept="3Ug1AZ" id="2vEFX4zn7dE" role="3Ug1A_">
+          <ref role="3Ug1AY" node="5Fk_m8PnaSr" resolve="BreakECU" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn7ee" role="3UgYNK">
+        <property role="TrG5h" value="steeringECU" />
+        <node concept="3Ug1AZ" id="2vEFX4zn7ec" role="3Ug1A_">
+          <ref role="3Ug1AY" node="5Fk_m8Pnb2h" resolve="SteeringECU" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn7eO" role="3UgYNK">
+        <property role="TrG5h" value="gearboxECU" />
+        <node concept="3Ug1AZ" id="2vEFX4zn7eM" role="3Ug1A_">
+          <ref role="3Ug1AY" node="5Fk_m8Pnbcb" resolve="GearBoxECU" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="2vEFX4zn7fu" role="3UgYNK">
+        <property role="TrG5h" value="epbECU" />
+        <node concept="3Ug1AZ" id="2vEFX4zn7fs" role="3Ug1A_">
+          <ref role="3Ug1AY" node="5Fk_m8Pnbmb" resolve="EpbECU" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="2vEFX4zn72z" role="2HcuB8" />
     <node concept="2dDAV0" id="3Jn$RV2VwEf" role="2HcuB8">
       <property role="TrG5h" value="ihsArch" />
       <node concept="3UgYNU" id="3Jn$RV2VwF3" role="3UgYNK" />
@@ -4623,19 +4847,11 @@
         <node concept="3Ug1AZ" id="5Fk_m8Pnb_G" role="3Ug1A_">
           <ref role="3Ug1AY" node="5Fk_m8PnaPa" resolve="DriverControl" />
         </node>
-        <node concept="0Sh09" id="6VJDb1ZHfZg" role="lGtFl">
-          <node concept="hnKMr" id="6VJDb1ZHfZl" role="hnKMk">
-            <ref role="hnKMs" node="3Jn$RV2VwH5" />
-          </node>
-          <node concept="hnKMr" id="6VJDb1ZHfZw" role="hnKMk">
-            <ref role="hnKMs" node="3Jn$RV2VwH6" />
-          </node>
-        </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbTe" role="3UgYNK">
-        <property role="TrG5h" value="vms" />
-        <node concept="3Ug1AZ" id="5Fk_m8PnbTf" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8PnbPH" resolve="VehiclePlatformManagementSystem" />
+        <property role="TrG5h" value="vehiclePlatform" />
+        <node concept="3Ug1AZ" id="2vEFX4zn811" role="3Ug1A_">
+          <ref role="3Ug1AY" node="2vEFX4zn77I" resolve="VehiclePlatformManagementSystem" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbVt" role="3UgYNK">
@@ -4648,6 +4864,11 @@
         <property role="TrG5h" value="ihs" />
         <node concept="3Ug1AZ" id="6VJDb1ZGa88" role="3Ug1A_">
           <ref role="3Ug1AY" node="6VJDb1ZGa3_" resolve="IntersectionHandlingImpl" />
+        </node>
+        <node concept="0Sh09" id="2vEFX4zn83f" role="lGtFl">
+          <node concept="hnKMr" id="2vEFX4zn841" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwHf" />
+          </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbZV" role="3UgYNK">
@@ -4679,6 +4900,11 @@
         <node concept="3Ug1AZ" id="5Fk_m8Pnc7N" role="3Ug1A_">
           <ref role="3Ug1AY" node="5Fk_m8Pna6T" resolve="InfrastructureSensors" />
         </node>
+        <node concept="0Sh09" id="2vEFX4zn83R" role="lGtFl">
+          <node concept="hnKMr" id="2vEFX4zn83W" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwH7" />
+          </node>
+        </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnccu" role="3UgYNK">
         <property role="TrG5h" value="externalEnvironmentSensors" />
@@ -4688,28 +4914,49 @@
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pncfa" role="3UgYNK">
         <property role="TrG5h" value="lidarSensors_2" />
-        <node concept="3Ug1AZ" id="5Fk_m8Pncfb" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
+        <node concept="3Ug1AZ" id="2vEFX4zn66J" role="3Ug1A_">
+          <ref role="3Ug1AY" node="2vEFX4zn5N2" resolve="LidarSensingSetup" />
         </node>
         <node concept="0Sh09" id="RyPjVFcf14" role="lGtFl">
-          <node concept="hnKMr" id="6VJDb1ZHxte" role="hnKMk">
-            <ref role="hnKMs" node="3Jn$RV2VwAU" />
-          </node>
-          <node concept="hnKMr" id="6VJDb1ZHxtp" role="hnKMk">
-            <ref role="hnKMs" node="4FF4XrTYygp" />
+          <node concept="hnKMr" id="2vEFX4zn83s" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwH8" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnci0" role="3UgYNK">
         <property role="TrG5h" value="radarSensors_4" />
-        <node concept="3Ug1AZ" id="5Fk_m8Pnci1" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+        <node concept="3Ug1AZ" id="2vEFX4zn6lB" role="3Ug1A_">
+          <ref role="3Ug1AY" node="2vEFX4zn6gi" resolve="RadarSensingSetup" />
+        </node>
+        <node concept="0Sh09" id="2vEFX4zn83z" role="lGtFl">
+          <node concept="hnKMr" id="2vEFX4zn83H" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwH8" />
+          </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnckU" role="3UgYNK">
         <property role="TrG5h" value="cameraSensors_4" />
         <node concept="3Ug1AZ" id="5Fk_m8PnckV" role="3Ug1A_">
           <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+        </node>
+        <node concept="0Sh09" id="2vEFX4zn83C" role="lGtFl">
+          <node concept="hnKMr" id="2vEFX4zn83M" role="hnKMk">
+            <ref role="hnKMs" node="3Jn$RV2VwH8" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="2vEFX4zn7tY" role="3UgYNK">
+        <node concept="3Ug1GC" id="2vEFX4zn7uO" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="2vEFX4zn7sP" resolve="vehicleControl" />
+          <node concept="3Ug1GJ" id="2vEFX4zn7uN" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="2vEFX4zn7uY" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="5Fk_m8Pncpz" resolve="vehicleControl" />
+          <node concept="3Ug1GJ" id="2vEFX4zn7uX" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="5Fk_m8PnbzE" resolve="chassis" />
+          </node>
         </node>
       </node>
     </node>
@@ -4735,8 +4982,10 @@
           <property role="19SUeA" value="Automated Intersection Handling" />
         </node>
       </node>
-      <node concept="0Sh09" id="4Crei7hwgeB" role="lGtFl">
-        <ref role="0Sh0a" node="3Jn$RV2VwpG" />
+      <node concept="0Sh09" id="2vEFX4zn82Z" role="lGtFl">
+        <node concept="hnKMr" id="2vEFX4zn831" role="hnKMk">
+          <ref role="hnKMs" node="3Jn$RV2VwpG" />
+        </node>
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwH6" role="1QQeBF">
@@ -4795,8 +5044,10 @@
           <property role="19SUeA" value="Communication with Infrastructure" />
         </node>
       </node>
-      <node concept="0Sh09" id="3Jn$RV2VwHw" role="lGtFl">
-        <ref role="0Sh0a" node="3Jn$RV2VwpH" />
+      <node concept="0Sh09" id="2vEFX4zn8tn" role="lGtFl">
+        <node concept="hnKMr" id="2vEFX4zn8tp" role="hnKMk">
+          <ref role="hnKMs" node="3Jn$RV2VwpH" />
+        </node>
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwH8" role="1QQeBF">
@@ -4817,8 +5068,10 @@
           <property role="19SUeA" value="In-vehicle Sensing Capabilities" />
         </node>
       </node>
-      <node concept="0Sh09" id="3Jn$RV2VwH$" role="lGtFl">
-        <ref role="0Sh0a" node="3Jn$RV2VwpH" />
+      <node concept="0Sh09" id="2vEFX4zn8tr" role="lGtFl">
+        <node concept="hnKMr" id="2vEFX4zn8tt" role="hnKMk">
+          <ref role="hnKMs" node="3Jn$RV2VwpH" />
+        </node>
       </node>
     </node>
     <node concept="0lhDl" id="3Jn$RV2VwH9" role="1QQeBF">
