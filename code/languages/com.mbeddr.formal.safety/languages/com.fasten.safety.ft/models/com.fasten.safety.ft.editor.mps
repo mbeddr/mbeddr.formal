@@ -16,6 +16,8 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -68,6 +70,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
@@ -128,6 +131,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -153,6 +157,9 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -190,6 +197,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
@@ -210,8 +218,27 @@
       </concept>
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
+      <concept id="6554619383005871291" name="de.itemis.mps.editor.diagram.structure.PortQuery" flags="ng" index="230Hcy">
+        <child id="6554619383005871296" name="portFactory" index="230Hdp" />
+        <child id="6554619383005871298" name="query" index="230Hdr" />
+      </concept>
+      <concept id="6554619383005758499" name="de.itemis.mps.editor.diagram.structure.Port" flags="ng" index="2316IU">
+        <child id="6554619383005758747" name="label" index="2316E2" />
+        <child id="6554619383005758749" name="shape" index="2316E4" />
+        <child id="6554619383005758751" name="positionY" index="2316E6" />
+        <child id="6554619383005758750" name="positionX" index="2316E7" />
+      </concept>
       <concept id="8433227566817223068" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutAlgorithm" flags="ng" index="39fpm">
         <property id="7623784619795245948" name="direction" index="1NdBj4" />
+      </concept>
+      <concept id="6554619383001705551" name="de.itemis.mps.editor.diagram.structure.ConditionalEndpointTarget" flags="ng" index="23g$fm">
+        <child id="6554619383001705552" name="condition" index="23g$f9" />
+        <child id="6554619383001705554" name="if" index="23g$fb" />
+        <child id="6554619383001705557" name="else" index="23g$fc" />
+      </concept>
+      <concept id="6554619383001456866" name="de.itemis.mps.editor.diagram.structure.PortEndpointTarget" flags="ng" index="23hSXV">
+        <child id="6554619383001456867" name="portName" index="23hSXU" />
+        <child id="6554619383001456869" name="box" index="23hSXW" />
       </concept>
       <concept id="6554619383001456740" name="de.itemis.mps.editor.diagram.structure.BoxEndpointTarget" flags="ng" index="23hSZX">
         <child id="6554619383001456819" name="targetId" index="23hSWE" />
@@ -254,9 +281,11 @@
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="2863449916463668101" name="allowConnections" index="TjlW2" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
+        <child id="1566844231766602492" name="ports2" index="3DrZTU" />
         <child id="6160055369549989399" name="allowScaling" index="3RJMYJ" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
+      <concept id="5468226901223973329" name="de.itemis.mps.editor.diagram.structure.PortObject" flags="ng" index="15kUEO" />
       <concept id="5051221038171022699" name="de.itemis.mps.editor.diagram.structure.ShadeColor" flags="lg" index="38c6YI" />
       <concept id="4277219764978107440" name="de.itemis.mps.editor.diagram.structure.SNodeConncetionType_toNode" flags="ng" index="3m_Ry6" />
       <concept id="4277219764978107398" name="de.itemis.mps.editor.diagram.structure.SNodeConncetionType_fromNode" flags="ng" index="3m_RyK" />
@@ -291,8 +320,14 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -328,10 +363,16 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
   <node concept="24kQdi" id="5rwT_JnuR4F">
@@ -669,11 +710,41 @@
         </node>
       </node>
       <node concept="1PNbMa" id="5rwT_JnwiTS" role="1PN8qh">
-        <node concept="23hSZX" id="3EWkVoQ7qZM" role="ljJml">
-          <node concept="2OqwBi" id="3EWkVoQ7r8W" role="23hSWE">
-            <node concept="1Pxb5l" id="3EWkVoQ7qZZ" role="2Oq$k0" />
-            <node concept="3TrEf2" id="3EWkVoQ7roM" role="2OqNvi">
-              <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+        <node concept="23g$fm" id="1GpuQyT0hFn" role="ljJml">
+          <node concept="2OqwBi" id="1GpuQyT0ibl" role="23g$f9">
+            <node concept="2OqwBi" id="1GpuQyT0hOm" role="2Oq$k0">
+              <node concept="1Pxb5l" id="1GpuQyT0hFJ" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1GpuQyT0i1d" role="2OqNvi">
+                <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="1GpuQyT0io_" role="2OqNvi">
+              <node concept="chp4Y" id="1GpuQyT0iuK" role="cj9EA">
+                <ref role="cht4Q" to="spwl:5rwT_JnuRci" resolve="EventBase" />
+              </node>
+            </node>
+          </node>
+          <node concept="23hSZX" id="1GpuQyT0izV" role="23g$fb">
+            <node concept="2OqwBi" id="1GpuQyT0iGU" role="23hSWE">
+              <node concept="1Pxb5l" id="1GpuQyT0i$6" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1GpuQyT0iTO" role="2OqNvi">
+                <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+              </node>
+            </node>
+          </node>
+          <node concept="23hSXV" id="1GpuQyT06Rh" role="23g$fc">
+            <node concept="23hSZX" id="1GpuQyT06Rj" role="23hSXW">
+              <node concept="2OqwBi" id="1GpuQyT07NJ" role="23hSWE">
+                <node concept="1Pxb5l" id="1GpuQyT07EM" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1GpuQyT08bv" role="2OqNvi">
+                  <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="1GpuQyT0hC_" role="23hSXU">
+              <ref role="37wK5l" node="1GpuQyT0gxs" resolve="getPortId" />
+              <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+              <node concept="1Pxb5l" id="1GpuQyT0hD6" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1359,6 +1430,29 @@
     <property role="3GE5qa" value="gates" />
     <ref role="1XX52x" to="spwl:3EWkVoQ4QSg" resolve="OrGate" />
     <node concept="2ZK4vF" id="3EWkVoQ4QSj" role="2wV5jI">
+      <node concept="230Hcy" id="1GpuQyT0qYt" role="3DrZTU">
+        <node concept="2YIFZM" id="1GpuQyT0qYu" role="230Hdr">
+          <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+          <ref role="37wK5l" node="1GpuQySZgwO" resolve="getIncomingConnections" />
+          <node concept="1Pxb5l" id="1GpuQyT0qYv" role="37wK5m" />
+        </node>
+        <node concept="2316IU" id="1GpuQyT0qYw" role="230Hdp">
+          <node concept="2YIFZM" id="1GpuQyT0qYx" role="2316E2">
+            <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+            <ref role="37wK5l" node="1GpuQyT0gxs" resolve="getPortId" />
+            <node concept="15kUEO" id="1GpuQyT0qYy" role="37wK5m" />
+          </node>
+          <node concept="3b6qkQ" id="1GpuQyT0qY$" role="2316E7">
+            <property role="$nhwW" value="0.5" />
+          </node>
+          <node concept="2xQOud" id="1GpuQyT0Ko0" role="2316E4">
+            <ref role="2xQOue" node="1GpuQyT0zgO" resolve="PortShape" />
+          </node>
+          <node concept="3cmrfG" id="1GpuQyT3lNY" role="2316E6">
+            <property role="3cmrfH" value="1" />
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="3EWkVoQ4YKI" role="1ytjkN">
         <node concept="xShMh" id="3EWkVoQ8k_G" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -1513,11 +1607,37 @@
         </node>
       </node>
     </node>
+    <node concept="3cmrfG" id="1GpuQyT2VJs" role="3pRy3o">
+      <property role="3cmrfH" value="10" />
+    </node>
   </node>
   <node concept="24kQdi" id="3EWkVoQ5lqJ">
     <property role="3GE5qa" value="gates" />
     <ref role="1XX52x" to="spwl:3EWkVoQ5lqI" resolve="AndGate" />
     <node concept="2ZK4vF" id="3EWkVoQ5lqL" role="2wV5jI">
+      <node concept="230Hcy" id="1GpuQySZgt2" role="3DrZTU">
+        <node concept="2YIFZM" id="1GpuQySZp9I" role="230Hdr">
+          <ref role="37wK5l" node="1GpuQySZgwO" resolve="getIncomingConnections" />
+          <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+          <node concept="1Pxb5l" id="1GpuQySZpav" role="37wK5m" />
+        </node>
+        <node concept="2316IU" id="1GpuQySZgt6" role="230Hdp">
+          <node concept="2YIFZM" id="1GpuQyT0hzF" role="2316E2">
+            <ref role="37wK5l" node="1GpuQyT0gxs" resolve="getPortId" />
+            <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+            <node concept="15kUEO" id="1GpuQyT0h$G" role="37wK5m" />
+          </node>
+          <node concept="3cmrfG" id="1GpuQySZLY3" role="2316E6">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="3b6qkQ" id="1GpuQySZYNx" role="2316E7">
+            <property role="$nhwW" value="0.5" />
+          </node>
+          <node concept="2xQOud" id="1GpuQyT0INL" role="2316E4">
+            <ref role="2xQOue" node="1GpuQyT0zgO" resolve="PortShape" />
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="3EWkVoQ5lre" role="1ytjkN">
         <node concept="xShMh" id="3EWkVoQ7h2C" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -1532,6 +1652,7 @@
       <node concept="38c6YI" id="3EWkVoQ8xCd" role="3F10Kt">
         <property role="Vb096" value="6cZGtrcKCoS/black" />
       </node>
+      <node concept="3clFbT" id="1GpuQyT34vV" role="3RJMYJ" />
     </node>
   </node>
   <node concept="2xDbr0" id="3EWkVoQ5ls4">
@@ -1755,6 +1876,264 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="1GpuQySZgto">
+    <property role="TrG5h" value="FTDiagramUtils" />
+    <node concept="2tJIrI" id="1GpuQySZgu4" role="jymVt" />
+    <node concept="2YIFZL" id="1GpuQySZgwO" role="jymVt">
+      <property role="TrG5h" value="getIncomingConnections" />
+      <node concept="3clFbS" id="1GpuQySZgwR" role="3clF47">
+        <node concept="3clFbF" id="1GpuQySZg$v" role="3cqZAp">
+          <node concept="2OqwBi" id="1GpuQySZm6y" role="3clFbG">
+            <node concept="2OqwBi" id="1GpuQySZj2G" role="2Oq$k0">
+              <node concept="2OqwBi" id="1GpuQySZhbD" role="2Oq$k0">
+                <node concept="2OqwBi" id="1GpuQySZgKJ" role="2Oq$k0">
+                  <node concept="37vLTw" id="1GpuQySZg$u" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1GpuQySZgya" resolve="gb" />
+                  </node>
+                  <node concept="2Xjw5R" id="1GpuQySZgXM" role="2OqNvi">
+                    <node concept="1xMEDy" id="1GpuQySZgXO" role="1xVPHs">
+                      <node concept="chp4Y" id="1GpuQySZgZW" role="ri$Ld">
+                        <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="1GpuQySZhq3" role="2OqNvi">
+                  <ref role="3TtcxE" to="spwl:5rwT_JnuR3Y" resolve="connections" />
+                </node>
+              </node>
+              <node concept="3zZkjj" id="1GpuQySZp42" role="2OqNvi">
+                <node concept="1bVj0M" id="1GpuQySZp44" role="23t8la">
+                  <node concept="3clFbS" id="1GpuQySZp45" role="1bW5cS">
+                    <node concept="3clFbF" id="1GpuQySZp46" role="3cqZAp">
+                      <node concept="3clFbC" id="1GpuQySZp47" role="3clFbG">
+                        <node concept="37vLTw" id="1GpuQySZp48" role="3uHU7w">
+                          <ref role="3cqZAo" node="1GpuQySZgya" resolve="gb" />
+                        </node>
+                        <node concept="2OqwBi" id="1GpuQySZp49" role="3uHU7B">
+                          <node concept="37vLTw" id="1GpuQySZp4a" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1GpuQySZp4c" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="1GpuQySZp4b" role="2OqNvi">
+                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="1GpuQySZp4c" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="1GpuQySZp4d" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="1GpuQySZmAt" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1GpuQySZguK" role="1B3o_S" />
+      <node concept="2I9FWS" id="1GpuQySZgww" role="3clF45">
+        <ref role="2I9WkF" to="spwl:5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
+      </node>
+      <node concept="37vLTG" id="1GpuQySZgya" role="3clF46">
+        <property role="TrG5h" value="gb" />
+        <node concept="3Tqbb2" id="1GpuQySZgy9" role="1tU5fm">
+          <ref role="ehGHo" to="spwl:3EWkVoQ4QSf" resolve="GateBase" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1GpuQyT0grv" role="jymVt" />
+    <node concept="2YIFZL" id="1GpuQyT0gxs" role="jymVt">
+      <property role="TrG5h" value="getPortId" />
+      <node concept="3clFbS" id="1GpuQyT0gxv" role="3clF47">
+        <node concept="3clFbF" id="1GpuQyT0gAD" role="3cqZAp">
+          <node concept="2OqwBi" id="1GpuQyT0hlF" role="3clFbG">
+            <node concept="2OqwBi" id="1GpuQyT0gZ1" role="2Oq$k0">
+              <node concept="2JrnkZ" id="1GpuQyT0gKZ" role="2Oq$k0">
+                <node concept="37vLTw" id="1GpuQyT0gAC" role="2JrQYb">
+                  <ref role="3cqZAo" node="1GpuQyT0gzY" resolve="port" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1GpuQyT0he3" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GpuQyT0htr" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1GpuQyT0gui" role="1B3o_S" />
+      <node concept="17QB3L" id="1GpuQyT0gwM" role="3clF45" />
+      <node concept="37vLTG" id="1GpuQyT0gzY" role="3clF46">
+        <property role="TrG5h" value="port" />
+        <node concept="3Tqbb2" id="1GpuQyT0gzX" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1GpuQySZgtp" role="1B3o_S" />
+  </node>
+  <node concept="2xDbr0" id="1GpuQyT0zgO">
+    <property role="TrG5h" value="PortShape" />
+    <node concept="2x7_8O" id="1GpuQyT0zgP" role="2x7_pt">
+      <node concept="3clFbS" id="1GpuQyT0zgQ" role="2VODD2">
+        <node concept="3cpWs8" id="1GpuQyT0zgR" role="3cqZAp">
+          <node concept="3cpWsn" id="1GpuQyT0zgS" role="3cpWs9">
+            <property role="TrG5h" value="x" />
+            <node concept="10Oyi0" id="1GpuQyT0zgT" role="1tU5fm" />
+            <node concept="10QFUN" id="1GpuQyT0zgU" role="33vP2m">
+              <node concept="10Oyi0" id="1GpuQyT0zgV" role="10QFUM" />
+              <node concept="2OqwBi" id="1GpuQyT0zgW" role="10QFUP">
+                <node concept="2xDkLB" id="1GpuQyT0zgX" role="2Oq$k0" />
+                <node concept="liA8E" id="1GpuQyT0zgY" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getX()" resolve="getX" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GpuQyT0zgZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GpuQyT0zh0" role="3cpWs9">
+            <property role="TrG5h" value="y" />
+            <node concept="10Oyi0" id="1GpuQyT0zh1" role="1tU5fm" />
+            <node concept="10QFUN" id="1GpuQyT0zh2" role="33vP2m">
+              <node concept="10Oyi0" id="1GpuQyT0zh3" role="10QFUM" />
+              <node concept="2OqwBi" id="1GpuQyT0zh4" role="10QFUP">
+                <node concept="2xDkLB" id="1GpuQyT0zh5" role="2Oq$k0" />
+                <node concept="liA8E" id="1GpuQyT0zh6" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getY()" resolve="getY" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1GpuQyT0zh7" role="3cqZAp" />
+        <node concept="3cpWs8" id="1GpuQyT0zh8" role="3cqZAp">
+          <node concept="3cpWsn" id="1GpuQyT0zh9" role="3cpWs9">
+            <property role="TrG5h" value="fig" />
+            <node concept="3uibUv" id="1GpuQyT20a5" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Polygon" resolve="Polygon" />
+            </node>
+            <node concept="2ShNRf" id="1GpuQyT0zhb" role="33vP2m">
+              <node concept="1pGfFk" id="1GpuQyT22NH" role="2ShVmc">
+                <ref role="37wK5l" to="z60i:~Polygon.&lt;init&gt;()" resolve="Polygon" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GpuQyT0JqF" role="3cqZAp">
+          <node concept="3cpWsn" id="1GpuQyT0JqG" role="3cpWs9">
+            <property role="TrG5h" value="width" />
+            <node concept="10Oyi0" id="1GpuQyT0Ij7" role="1tU5fm" />
+            <node concept="1eOMI4" id="1GpuQyT3LlF" role="33vP2m">
+              <node concept="10QFUN" id="1GpuQyT3LlE" role="1eOMHV">
+                <node concept="2OqwBi" id="1GpuQyT3LlB" role="10QFUP">
+                  <node concept="2xDkLB" id="1GpuQyT3LlC" role="2Oq$k0" />
+                  <node concept="liA8E" id="1GpuQyT3LlD" role="2OqNvi">
+                    <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth()" resolve="getWidth" />
+                  </node>
+                </node>
+                <node concept="10Oyi0" id="1GpuQyT3LlA" role="10QFUM" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GpuQyT0zhd" role="3cqZAp">
+          <node concept="2OqwBi" id="1GpuQyT0zhe" role="3clFbG">
+            <node concept="37vLTw" id="1GpuQyT0zhf" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GpuQyT0zh9" resolve="fig" />
+            </node>
+            <node concept="liA8E" id="1GpuQyT0zhg" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Polygon.addPoint(int,int)" resolve="addPoint" />
+              <node concept="37vLTw" id="1GpuQyT0zhh" role="37wK5m">
+                <ref role="3cqZAo" node="1GpuQyT0zgS" resolve="x" />
+              </node>
+              <node concept="37vLTw" id="1GpuQyT0zhm" role="37wK5m">
+                <ref role="3cqZAo" node="1GpuQyT0zh0" resolve="y" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GpuQyT1prh" role="3cqZAp">
+          <node concept="2OqwBi" id="1GpuQyT1pri" role="3clFbG">
+            <node concept="37vLTw" id="1GpuQyT1prj" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GpuQyT0zh9" resolve="fig" />
+            </node>
+            <node concept="liA8E" id="1GpuQyT1prk" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Polygon.addPoint(int,int)" resolve="addPoint" />
+              <node concept="37vLTw" id="1GpuQyT1prl" role="37wK5m">
+                <ref role="3cqZAo" node="1GpuQyT0zgS" resolve="x" />
+              </node>
+              <node concept="3cpWs3" id="1GpuQyT2dJa" role="37wK5m">
+                <node concept="37vLTw" id="1GpuQyT1pro" role="3uHU7B">
+                  <ref role="3cqZAo" node="1GpuQyT0zh0" resolve="y" />
+                </node>
+                <node concept="37vLTw" id="1GpuQyT1prn" role="3uHU7w">
+                  <ref role="3cqZAo" node="1GpuQyT0JqG" resolve="width" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GpuQyT0zhn" role="3cqZAp">
+          <node concept="2OqwBi" id="1GpuQyT0zho" role="3clFbG">
+            <node concept="37vLTw" id="1GpuQyT0zhp" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GpuQyT0zh9" resolve="fig" />
+            </node>
+            <node concept="liA8E" id="1GpuQyT0zhq" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Polygon.addPoint(int,int)" resolve="addPoint" />
+              <node concept="3cpWs3" id="1GpuQyT1Qm3" role="37wK5m">
+                <node concept="37vLTw" id="1GpuQyT0zhx" role="3uHU7B">
+                  <ref role="3cqZAo" node="1GpuQyT0zgS" resolve="x" />
+                </node>
+                <node concept="37vLTw" id="1GpuQyT0JqJ" role="3uHU7w">
+                  <ref role="3cqZAo" node="1GpuQyT0JqG" resolve="width" />
+                </node>
+              </node>
+              <node concept="3cpWs3" id="1GpuQyT2dYX" role="37wK5m">
+                <node concept="37vLTw" id="1GpuQyT0zhD" role="3uHU7B">
+                  <ref role="3cqZAo" node="1GpuQyT0zh0" resolve="y" />
+                </node>
+                <node concept="37vLTw" id="1GpuQyT0JqL" role="3uHU7w">
+                  <ref role="3cqZAo" node="1GpuQyT0JqG" resolve="width" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GpuQyT1eY4" role="3cqZAp">
+          <node concept="2OqwBi" id="1GpuQyT1eY5" role="3clFbG">
+            <node concept="37vLTw" id="1GpuQyT1eY6" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GpuQyT0zh9" resolve="fig" />
+            </node>
+            <node concept="liA8E" id="1GpuQyT1eY7" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Polygon.addPoint(int,int)" resolve="addPoint" />
+              <node concept="3cpWs3" id="1GpuQyT1QZT" role="37wK5m">
+                <node concept="37vLTw" id="1GpuQyT1eYa" role="3uHU7B">
+                  <ref role="3cqZAo" node="1GpuQyT0zgS" resolve="x" />
+                </node>
+                <node concept="37vLTw" id="1GpuQyT1eY9" role="3uHU7w">
+                  <ref role="3cqZAo" node="1GpuQyT0JqG" resolve="width" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="1GpuQyT1eYc" role="37wK5m">
+                <ref role="3cqZAo" node="1GpuQyT0zh0" resolve="y" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GpuQyT0zhL" role="3cqZAp">
+          <node concept="37vLTw" id="1GpuQyT0zhM" role="3clFbG">
+            <ref role="3cqZAo" node="1GpuQyT0zh9" resolve="fig" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3cmrfG" id="1GpuQyT3U46" role="3pRy3o">
+      <property role="3cmrfH" value="5" />
     </node>
   </node>
 </model>
