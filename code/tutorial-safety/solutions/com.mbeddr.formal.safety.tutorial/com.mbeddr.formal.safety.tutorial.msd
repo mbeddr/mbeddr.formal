@@ -13,6 +13,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)</dependency>
+    <dependency reexport="false">d873c9ba-1199-4310-897d-5fa1a905f179(com.mbeddr.formal.safety.users_guide)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:3b22dedc-d6cf-4626-9445-6e9909b3e04a:com.fasten.base.arch.msc" version="0" />
@@ -85,6 +86,7 @@
   <dependencyVersions>
     <module reference="676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)" version="0" />
     <module reference="7a642ffb-bd05-4e8c-b81a-08fde9a204ba(com.mbeddr.formal.safety.tutorial)" version="0" />
+    <module reference="d873c9ba-1199-4310-897d-5fa1a905f179(com.mbeddr.formal.safety.users_guide)" version="0" />
   </dependencyVersions>
 </solution>
 
