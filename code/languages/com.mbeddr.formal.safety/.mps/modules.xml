@@ -31,6 +31,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ext/com.mbeddr.formal.safety.stamp.ext.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.fmea.sandbox/com.fasten.safety.fmea.sandbox.msd" folder="fmea" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.pluginSolution/com.fasten.safety.ft.pluginSolution.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.sandbox/com.fasten.safety.ft.sandbox.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.rcp.pluginSolution/com.fasten.safety.rcp.pluginSolution.msd" folder="rcp" />

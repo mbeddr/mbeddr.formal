@@ -6,6 +6,9 @@
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <use id="56c81845-acaf-48a7-bcd8-e29b36c98dd7" name="de.itemis.mps.editor.diagram.styles" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation" version="0" />
+    <use id="bda054c4-5d71-46ca-aba0-7104e3070b5a" name="com.mbeddr.mpsutil.treenotation.styles" version="0" />
+    <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,8 +26,12 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1226339813308" name="jetbrains.mps.lang.editor.structure.PaddingBottomStyleClassItem" flags="ln" index="27z8qx" />
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
@@ -32,11 +39,22 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
+        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
+      </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
@@ -187,6 +205,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation">
+      <concept id="134774857084556552" name="com.mbeddr.mpsutil.treenotation.structure.TreeCell" flags="ng" index="2SWKgc">
+        <child id="134774857084558327" name="treeRoot" index="2SWKFN" />
+        <child id="134774857084558329" name="treeChildren" index="2SWKFX" />
+      </concept>
+    </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
@@ -293,12 +317,23 @@
         <reference id="1981294357059564497" name="linkDeclaration" index="1RuSHD" />
       </concept>
     </language>
+    <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
+      <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
+        <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
+        <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
+        <child id="6202678563380433923" name="query" index="sbcd9" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -353,6 +388,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
   </registry>
   <node concept="24kQdi" id="5rwT_JnuR4F">
@@ -1617,7 +1653,7 @@
               <node concept="2OqwBi" id="1GpuQySZhbD" role="2Oq$k0">
                 <node concept="2OqwBi" id="1GpuQySZgKJ" role="2Oq$k0">
                   <node concept="37vLTw" id="1GpuQySZg$u" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1GpuQySZgya" resolve="gb" />
+                    <ref role="3cqZAo" node="1GpuQySZgya" resolve="fteb" />
                   </node>
                   <node concept="2Xjw5R" id="1GpuQySZgXM" role="2OqNvi">
                     <node concept="1xMEDy" id="1GpuQySZgXO" role="1xVPHs">
@@ -1637,7 +1673,7 @@
                     <node concept="3clFbF" id="1GpuQySZp46" role="3cqZAp">
                       <node concept="3clFbC" id="1GpuQySZp47" role="3clFbG">
                         <node concept="37vLTw" id="1GpuQySZp48" role="3uHU7w">
-                          <ref role="3cqZAo" node="1GpuQySZgya" resolve="gb" />
+                          <ref role="3cqZAo" node="1GpuQySZgya" resolve="fteb" />
                         </node>
                         <node concept="2OqwBi" id="1GpuQySZp49" role="3uHU7B">
                           <node concept="37vLTw" id="1GpuQySZp4a" role="2Oq$k0">
@@ -1666,9 +1702,9 @@
         <ref role="2I9WkF" to="spwl:5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
       </node>
       <node concept="37vLTG" id="1GpuQySZgya" role="3clF46">
-        <property role="TrG5h" value="gb" />
+        <property role="TrG5h" value="fteb" />
         <node concept="3Tqbb2" id="1GpuQySZgy9" role="1tU5fm">
-          <ref role="ehGHo" to="spwl:3EWkVoQ4QSf" resolve="GateBase" />
+          <ref role="ehGHo" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
         </node>
       </node>
     </node>
@@ -1737,6 +1773,284 @@
     </node>
     <node concept="3cmrfG" id="1GpuQyTfbHV" role="3pRy3o">
       <property role="3cmrfH" value="2" />
+    </node>
+  </node>
+  <node concept="2ABfQD" id="4mOCK0sBQkK">
+    <property role="TrG5h" value="FaultTreeHints" />
+    <node concept="2BsEeg" id="4mOCK0sBQkL" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="FT_TREE" />
+      <property role="2BUmq6" value="Tree Projection" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GpuQyThD0a">
+    <property role="3GE5qa" value="tree" />
+    <ref role="1XX52x" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+    <node concept="2aJ2om" id="1GpuQyThD0e" role="CpUAK">
+      <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="FT_TREE" />
+    </node>
+    <node concept="s8t4o" id="1GpuQyThE8a" role="2wV5jI">
+      <property role="28Zw97" value="true" />
+      <ref role="28F8cf" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
+      <node concept="xShMh" id="1GpuQyThE8c" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="s8sZD" id="1GpuQyThE8d" role="sbcd9">
+        <node concept="3clFbS" id="1GpuQyThE8e" role="2VODD2">
+          <node concept="3clFbF" id="1GpuQyThEb1" role="3cqZAp">
+            <node concept="2OqwBi" id="1GpuQyThFXZ" role="3clFbG">
+              <node concept="2OqwBi" id="1GpuQyThEmw" role="2Oq$k0">
+                <node concept="pncrf" id="1GpuQyThEb0" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="1GpuQyThEzV" role="2OqNvi">
+                  <ref role="3TtcxE" to="spwl:5rwT_JnuR3W" resolve="elements" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="1GpuQyThHRk" role="2OqNvi">
+                <node concept="chp4Y" id="1GpuQyThHT9" role="v3oSu">
+                  <ref role="cht4Q" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GpuQyThI5s">
+    <property role="3GE5qa" value="tree" />
+    <ref role="1XX52x" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
+    <node concept="2SWKgc" id="1GpuQyThI5z" role="2wV5jI">
+      <node concept="3EZMnI" id="1GpuQyThI5D" role="2SWKFN">
+        <node concept="3F0A7n" id="1GpuQyThI5W" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="VSNWy" id="1GpuQyThTW2" role="3F10Kt">
+            <property role="1lJzqX" value="9" />
+          </node>
+          <node concept="37jFXN" id="1GpuQyTiZBP" role="3F10Kt">
+            <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+          </node>
+        </node>
+        <node concept="G$OnD" id="1GpuQyThI5K" role="3EZMnx">
+          <node concept="2xQOud" id="1GpuQyThI5P" role="G$OdO">
+            <ref role="2xQOue" node="5rwT_JnvIwR" resolve="TopEventTriangle" />
+          </node>
+          <node concept="37jFXN" id="1GpuQyTiZBT" role="3F10Kt">
+            <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="1GpuQyThI5G" role="2iSdaV" />
+      </node>
+      <node concept="s8t4o" id="1GpuQyThI61" role="2SWKFX">
+        <property role="28Zw97" value="true" />
+        <ref role="28F8cf" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+        <node concept="xShMh" id="1GpuQyThI62" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="s8sZD" id="1GpuQyThI63" role="sbcd9">
+          <node concept="3clFbS" id="1GpuQyThI64" role="2VODD2">
+            <node concept="3clFbF" id="1GpuQyThI8J" role="3cqZAp">
+              <node concept="2OqwBi" id="1GpuQyTioKj" role="3clFbG">
+                <node concept="2YIFZM" id="1GpuQyThIab" role="2Oq$k0">
+                  <ref role="37wK5l" node="1GpuQySZgwO" resolve="getIncomingConnections" />
+                  <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+                  <node concept="pncrf" id="1GpuQyThINZ" role="37wK5m" />
+                </node>
+                <node concept="3$u5V9" id="1GpuQyTiqpD" role="2OqNvi">
+                  <node concept="1bVj0M" id="1GpuQyTiqpF" role="23t8la">
+                    <node concept="3clFbS" id="1GpuQyTiqpG" role="1bW5cS">
+                      <node concept="3clFbF" id="1GpuQyTiqxM" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GpuQyTiqH2" role="3clFbG">
+                          <node concept="37vLTw" id="1GpuQyTiqxL" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1GpuQyTiqpH" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="1GpuQyTiqYH" role="2OqNvi">
+                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="1GpuQyTiqpH" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="1GpuQyTiqpI" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2aJ2om" id="1GpuQyThI5w" role="CpUAK">
+      <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="FT_TREE" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GpuQyThIZ7">
+    <property role="3GE5qa" value="tree" />
+    <ref role="1XX52x" to="spwl:3EWkVoQ5lqI" resolve="AndGate" />
+    <node concept="2SWKgc" id="1GpuQyThIZe" role="2wV5jI">
+      <node concept="3EZMnI" id="1GpuQyThIZk" role="2SWKFN">
+        <node concept="G$OnD" id="1GpuQyTiBhg" role="3EZMnx">
+          <node concept="2xQOud" id="1GpuQyTiBhl" role="G$OdO">
+            <ref role="2xQOue" node="3EWkVoQ4QSv" resolve="AndGate" />
+          </node>
+          <node concept="3cmrfG" id="1GpuQyTiBho" role="2gOmqy">
+            <property role="3cmrfH" value="30" />
+          </node>
+          <node concept="3cmrfG" id="1GpuQyTiBht" role="2gOmqF">
+            <property role="3cmrfH" value="30" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="1GpuQyThIZn" role="2iSdaV" />
+      </node>
+      <node concept="s8t4o" id="1GpuQyThIZz" role="2SWKFX">
+        <property role="28Zw97" value="true" />
+        <ref role="28F8cf" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+        <node concept="xShMh" id="1GpuQyThIZ$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="s8sZD" id="1GpuQyThIZ_" role="sbcd9">
+          <node concept="3clFbS" id="1GpuQyThIZA" role="2VODD2">
+            <node concept="3clFbF" id="1GpuQyThJ2h" role="3cqZAp">
+              <node concept="2OqwBi" id="1GpuQyTifYn" role="3clFbG">
+                <node concept="2YIFZM" id="1GpuQyThJ3H" role="2Oq$k0">
+                  <ref role="37wK5l" node="1GpuQySZgwO" resolve="getIncomingConnections" />
+                  <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+                  <node concept="pncrf" id="1GpuQyThJ6M" role="37wK5m" />
+                </node>
+                <node concept="3$u5V9" id="1GpuQyTihVT" role="2OqNvi">
+                  <node concept="1bVj0M" id="1GpuQyTihVV" role="23t8la">
+                    <node concept="3clFbS" id="1GpuQyTihVW" role="1bW5cS">
+                      <node concept="3clFbF" id="1GpuQyTii49" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GpuQyTiifp" role="3clFbG">
+                          <node concept="37vLTw" id="1GpuQyTii48" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1GpuQyTihVX" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="1GpuQyTii$t" role="2OqNvi">
+                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="1GpuQyTihVX" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="1GpuQyTihVY" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2aJ2om" id="1GpuQyThIZb" role="CpUAK">
+      <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="FT_TREE" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GpuQyThJas">
+    <property role="3GE5qa" value="tree" />
+    <ref role="1XX52x" to="spwl:3EWkVoQ4QSg" resolve="OrGate" />
+    <node concept="2SWKgc" id="1GpuQyThJat" role="2wV5jI">
+      <node concept="3EZMnI" id="1GpuQyThJau" role="2SWKFN">
+        <node concept="G$OnD" id="1GpuQyThJav" role="3EZMnx">
+          <node concept="2xQOud" id="1GpuQyThJkI" role="G$OdO">
+            <ref role="2xQOue" node="3EWkVoQ5ls4" resolve="OrGate" />
+          </node>
+          <node concept="3cmrfG" id="1GpuQyTiNy6" role="2gOmqy">
+            <property role="3cmrfH" value="30" />
+          </node>
+          <node concept="3cmrfG" id="1GpuQyTiNyb" role="2gOmqF">
+            <property role="3cmrfH" value="30" />
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="1GpuQyThJax" role="2iSdaV" />
+      </node>
+      <node concept="s8t4o" id="1GpuQyThJay" role="2SWKFX">
+        <property role="28Zw97" value="true" />
+        <ref role="28F8cf" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+        <node concept="xShMh" id="1GpuQyThJaz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="s8sZD" id="1GpuQyThJa$" role="sbcd9">
+          <node concept="3clFbS" id="1GpuQyThJa_" role="2VODD2">
+            <node concept="3clFbF" id="1GpuQyThJaA" role="3cqZAp">
+              <node concept="2OqwBi" id="1GpuQyTikd7" role="3clFbG">
+                <node concept="2YIFZM" id="1GpuQyThJaB" role="2Oq$k0">
+                  <ref role="37wK5l" node="1GpuQySZgwO" resolve="getIncomingConnections" />
+                  <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+                  <node concept="pncrf" id="1GpuQyThJaC" role="37wK5m" />
+                </node>
+                <node concept="3$u5V9" id="1GpuQyTimNE" role="2OqNvi">
+                  <node concept="1bVj0M" id="1GpuQyTimNG" role="23t8la">
+                    <node concept="3clFbS" id="1GpuQyTimNH" role="1bW5cS">
+                      <node concept="3clFbF" id="1GpuQyTimNU" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GpuQyTimZa" role="3clFbG">
+                          <node concept="37vLTw" id="1GpuQyTimNT" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1GpuQyTimNI" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="1GpuQyTinf6" role="2OqNvi">
+                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="1GpuQyTimNI" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="1GpuQyTimNJ" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2aJ2om" id="1GpuQyThJaD" role="CpUAK">
+      <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="FT_TREE" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GpuQyThJkT">
+    <property role="3GE5qa" value="tree" />
+    <ref role="1XX52x" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+    <node concept="3EZMnI" id="1GpuQyThJkX" role="2wV5jI">
+      <node concept="G$OnD" id="1GpuQyThJl4" role="3EZMnx">
+        <node concept="2xQOud" id="1GpuQyThJl9" role="G$OdO">
+          <ref role="2xQOue" node="3GRi4m$roLc" resolve="BasicEventCircle" />
+        </node>
+        <node concept="3cmrfG" id="1GpuQyTjbAM" role="2gOmqy">
+          <property role="3cmrfH" value="20" />
+        </node>
+        <node concept="3cmrfG" id="1GpuQyTjbAR" role="2gOmqF">
+          <property role="3cmrfH" value="20" />
+        </node>
+        <node concept="37jFXN" id="1GpuQyTjnA9" role="3F10Kt">
+          <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1GpuQyThJlg" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="37jFXN" id="1GpuQyTjnAb" role="3F10Kt">
+          <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+        </node>
+        <node concept="VSNWy" id="1GpuQyTjnAw" role="3F10Kt">
+          <property role="1lJzqX" value="9" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1GpuQyThJlq" role="3EZMnx">
+        <ref role="1NtTu8" to="spwl:5rwT_JnuRcl" resolve="probability" />
+        <node concept="37jFXN" id="1GpuQyTjnAd" role="3F10Kt">
+          <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+        </node>
+        <node concept="VSNWy" id="1GpuQyTjnAi" role="3F10Kt">
+          <property role="1lJzqX" value="9" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="1GpuQyThJl0" role="2iSdaV" />
+    </node>
+    <node concept="2aJ2om" id="1GpuQyThJkV" role="CpUAK">
+      <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="FT_TREE" />
     </node>
   </node>
 </model>
