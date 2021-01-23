@@ -9038,6 +9038,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1GpuQyTjD9b" role="3bR37C">
+          <node concept="3bR9La" id="1GpuQyTjD9c" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4frYVBf39$o" resolve="de.itemis.mps.editor.diagram.styles" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="73rWdFZqzKL" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9983,6 +9988,55 @@
               </node>
             </node>
             <node concept="3qWCbU" id="5TezZ1Vejol" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="1GpuQyTjDGk" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.fasten.safety.ft.pluginSolution" />
+        <property role="3LESm3" value="4dc47fba-0f4f-4162-820b-d2e1e306482d" />
+        <node concept="398BVA" id="1GpuQyTjE3S" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="1GpuQyTjEl4" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="1GpuQyTjEIM" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.safety.ft.pluginSolution" />
+              <node concept="2Ry0Ak" id="1GpuQyTjEZX" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasten.safety.ft.pluginSolution.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1GpuQyTjF_f" role="3bR37C">
+          <node concept="3bR9La" id="1GpuQyTjF_g" role="1SiIV1">
+            <ref role="3bR37D" node="73rWdFZqGo8" resolve="com.fasten.safety.ft" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1GpuQyTjF_h" role="3bR37C">
+          <node concept="3bR9La" id="1GpuQyTjF_i" role="1SiIV1">
+            <ref role="3bR37D" node="6adXBxxUwrY" resolve="com.mbeddr.formal.base.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="1GpuQyTjF_u" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="1GpuQyTjF_v" role="1HemKq">
+            <node concept="398BVA" id="1GpuQyTjF_j" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="1GpuQyTjF_k" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1GpuQyTjF_l" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.ft.pluginSolution" />
+                  <node concept="2Ry0Ak" id="1GpuQyTjF_m" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1GpuQyTjF_w" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
