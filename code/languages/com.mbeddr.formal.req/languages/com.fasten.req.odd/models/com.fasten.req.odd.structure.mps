@@ -159,6 +159,12 @@
     <node concept="PrWs8" id="3Jn$RV31w1m" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="52bCGvYEnPv" role="1TKVEi">
+      <property role="IQ2ns" value="5803911524651728223" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="description" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
     <node concept="1TJgyj" id="3Jn$RV31w2n" role="1TKVEi">
       <property role="IQ2ns" value="4312077340877652119" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

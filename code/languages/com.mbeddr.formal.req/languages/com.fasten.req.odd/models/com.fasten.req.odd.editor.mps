@@ -28,6 +28,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -75,6 +76,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -362,6 +364,18 @@
       <node concept="PMmxH" id="3Jn$RV31w2D" role="3EZMnx">
         <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
+      <node concept="3F0ifn" id="52bCGvYEnPy" role="3EZMnx" />
+      <node concept="3EZMnI" id="52bCGvYEnPO" role="3EZMnx">
+        <node concept="VPM3Z" id="52bCGvYEnPQ" role="3F10Kt" />
+        <node concept="3F0ifn" id="52bCGvYEnPS" role="3EZMnx">
+          <property role="3F0ifm" value="Description:" />
+        </node>
+        <node concept="3F1sOY" id="52bCGvYEnQ7" role="3EZMnx">
+          <ref role="1NtTu8" to="u2ih:52bCGvYEnPv" resolve="description" />
+        </node>
+        <node concept="l2Vlx" id="52bCGvYEnPT" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="52bCGvYEnPH" role="3EZMnx" />
       <node concept="3F2HdR" id="3Jn$RV31w2Y" role="3EZMnx">
         <ref role="1NtTu8" to="u2ih:3Jn$RV31w2n" resolve="concepts" />
         <node concept="2iRkQZ" id="3Jn$RV31w30" role="2czzBx" />
