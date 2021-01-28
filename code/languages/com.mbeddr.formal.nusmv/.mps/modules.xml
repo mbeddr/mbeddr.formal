@@ -27,6 +27,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nusmv/com.mbeddr.formal.nusmv.mpl" folder="lang.nusmv" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nuxmv.source/com.mbeddr.formal.nuxmv.source.mpl" folder="lang.nuxmv" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.nuxmv/com.mbeddr.formal.nuxmv.mpl" folder="lang.nuxmv" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.ocra/com.mbeddr.formal.ocra.mpl" folder="lang.ocra" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.ocra/sandbox/com.mbeddr.formal.ocra.sandbox.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.activity.sandbox/com.fasten.base.activity.sandbox.msd" folder="lang.base.activity" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.msc.sandbox/com.fasten.base.msc.sandbox.msd" folder="lang.base.msc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.pluginSolution/com.mbeddr.formal.base.pluginSolution.msd" folder="lang.base" />
