@@ -38,7 +38,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.importer.rt/com.mbeddr.formal.nusmv.importer.rt.msd" folder="lang.nusmv" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang.nusmv" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nuxmv.pluginSolution/com.mbeddr.formal.nuxmv.pluginSolution.msd" folder="lang.nuxmv" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.ocra.pluginSolution/com.mbeddr.formal.ocra.pluginSolution.msd" folder="lang.ocra" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.pluginSolution/com.mbeddr.formal.rcp.pluginSolution.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.tips_and_tricks/com.mbeddr.formal.rcp.tips_and_tricks.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.tutorialActions/com.mbeddr.formal.rcp.tutorialActions.msd" folder="rcp" />

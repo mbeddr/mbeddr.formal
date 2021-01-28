@@ -2,7 +2,6 @@
 <model ref="r:9be6a7f5-8948-4321-86ee-36906d4a48b4(com.mbeddr.formal.ocra.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -38,7 +37,6 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
         <child id="1169127546356" name="extends" index="PrDN$" />
       </concept>
@@ -77,14 +75,6 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="2239374314123298593" />
     <property role="TrG5h" value="OthelloSystemSpecification" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1QMZQ03RyWp" role="1TKVEi">
-      <property role="IQ2ns" value="2140053560801242905" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
-    </node>
     <ref role="1TJDcQ" node="2OfmkSXZL1n" resolve="OthelloSpecification" />
     <node concept="1TJgyj" id="1WjQLbKt0uy" role="1TKVEi">
       <property role="IQ2ns" value="2239374314123298722" />
@@ -143,7 +133,6 @@
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="1QMZQ03U2Wx" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
       <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
     </node>
   </node>
@@ -153,14 +142,12 @@
     <property role="34LRSv" value="#include" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1QMZQ03RyWv" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
       <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
     </node>
     <node concept="1TJgyj" id="1QMZQ03TlhH" role="1TKVEi">
       <property role="IQ2ns" value="2140053560801711213" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="include" />
-      <ref role="20lvS9" node="1QMZQ03TRgW" resolve="OthelloSystemSpecificationRef" />
       <ref role="20lvS9" node="1QMZQ03TRgW" resolve="OthelloSpecificationRef" />
     </node>
   </node>
@@ -175,7 +162,6 @@
       <ref role="AX2Wp" node="1QMZQ03Wtfr" resolve="TimeAnnotationEnum" />
     </node>
     <node concept="PrWs8" id="1QMZQ03ROxS" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
       <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
     </node>
   </node>
@@ -680,7 +666,6 @@
       <ref role="PrY4T" node="3WeLjIxRpV1" resolve="IRefinementContent" />
     </node>
     <node concept="PrWs8" id="1QMZQ03S80E" role="PzmwI">
-      <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOthelloSystemContent" />
       <ref role="PrY4T" node="1QMZQ03RyWh" resolve="IOrthelloSystemContent" />
     </node>
   </node>
@@ -777,7 +762,6 @@
   </node>
   <node concept="PlHQZ" id="1QMZQ03RyWh">
     <property role="EcuMT" value="2140053560801242897" />
-    <property role="TrG5h" value="IOthelloSystemContent" />
     <property role="TrG5h" value="IOrthelloSystemContent" />
     <property role="3GE5qa" value="interfaces" />
     <node concept="PrWs8" id="7o011GVZ_2O" role="PrDN$">
@@ -786,14 +770,12 @@
   </node>
   <node concept="1TIwiD" id="1QMZQ03TRgW">
     <property role="EcuMT" value="2140053560801850428" />
-    <property role="TrG5h" value="OthelloSystemSpecificationRef" />
     <property role="TrG5h" value="OthelloSpecificationRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1QMZQ03TRh4" role="1TKVEi">
       <property role="IQ2ns" value="2140053560801850436" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1WjQLbKt0sx" resolve="OthelloSystemSpecification" />
       <ref role="20lvS9" node="2OfmkSXZL1n" resolve="OthelloSpecification" />
     </node>
   </node>
@@ -1116,7 +1098,7 @@
       <property role="IQ2ns" value="4612972969459487046" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="op" />
-      <ref role="20lvS9" node="404$BAz795a" resolve="RelationalOperator" />
+      <ref role="20lvS9" node="404$BAz795a" resolve="IRelationalOperator" />
     </node>
     <node concept="1TJgyj" id="404$BAz78dQ" role="1TKVEi">
       <property role="IQ2ns" value="4612972969459483510" />
@@ -1130,80 +1112,56 @@
   </node>
   <node concept="1TIwiD" id="404$BAz78Ye">
     <property role="EcuMT" value="4612972969459486606" />
-    <property role="3GE5qa" value="constraints.relational" />
     <property role="3GE5qa" value="operators" />
     <property role="TrG5h" value="EqualsOperator" />
     <property role="34LRSv" value="=" />
     <property role="R4oN_" value="equals" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="404$BAz796j" role="PzmwI">
-      <ref role="PrY4T" node="404$BAz795a" resolve="RelationalOperator" />
-    </node>
+    <ref role="1TJDcQ" node="720W4DMRzK0" resolve="RelationalOperator" />
   </node>
   <node concept="1TIwiD" id="404$BAz78Zn">
     <property role="EcuMT" value="4612972969459486679" />
-    <property role="3GE5qa" value="constraints.relational" />
     <property role="3GE5qa" value="operators" />
     <property role="TrG5h" value="NotEqualOperator" />
     <property role="34LRSv" value="!=" />
     <property role="R4oN_" value="not equal" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="404$BAz796t" role="PzmwI">
-      <ref role="PrY4T" node="404$BAz795a" resolve="RelationalOperator" />
-    </node>
+    <ref role="1TJDcQ" node="720W4DMRzK0" resolve="RelationalOperator" />
   </node>
   <node concept="1TIwiD" id="404$BAz790w">
     <property role="EcuMT" value="4612972969459486752" />
-    <property role="3GE5qa" value="constraints.relational" />
     <property role="3GE5qa" value="operators" />
     <property role="TrG5h" value="LessThanOperator" />
     <property role="34LRSv" value="&lt;" />
     <property role="R4oN_" value="less" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="404$BAz796r" role="PzmwI">
-      <ref role="PrY4T" node="404$BAz795a" resolve="RelationalOperator" />
-    </node>
+    <ref role="1TJDcQ" node="720W4DMRzK0" resolve="RelationalOperator" />
   </node>
   <node concept="1TIwiD" id="404$BAz791D">
     <property role="EcuMT" value="4612972969459486825" />
-    <property role="3GE5qa" value="constraints.relational" />
     <property role="3GE5qa" value="operators" />
     <property role="TrG5h" value="GreaterThanOperator" />
     <property role="34LRSv" value="&gt;" />
     <property role="R4oN_" value="greater" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="404$BAz796n" role="PzmwI">
-      <ref role="PrY4T" node="404$BAz795a" resolve="RelationalOperator" />
-    </node>
+    <ref role="1TJDcQ" node="720W4DMRzK0" resolve="RelationalOperator" />
   </node>
   <node concept="1TIwiD" id="404$BAz792M">
     <property role="EcuMT" value="4612972969459486898" />
-    <property role="3GE5qa" value="constraints.relational" />
     <property role="3GE5qa" value="operators" />
     <property role="TrG5h" value="LessOrEqualThanOperator" />
     <property role="34LRSv" value="&lt;=" />
     <property role="R4oN_" value="less or equal" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="404$BAz796p" role="PzmwI">
-      <ref role="PrY4T" node="404$BAz795a" resolve="RelationalOperator" />
-    </node>
+    <ref role="1TJDcQ" node="720W4DMRzK0" resolve="RelationalOperator" />
   </node>
   <node concept="1TIwiD" id="404$BAz793V">
     <property role="EcuMT" value="4612972969459486971" />
-    <property role="3GE5qa" value="constraints.relational" />
     <property role="3GE5qa" value="operators" />
     <property role="TrG5h" value="GreaterOrEqualThanOperator" />
     <property role="34LRSv" value="&gt;=" />
     <property role="R4oN_" value="greater or equal" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="404$BAz796l" role="PzmwI">
-      <ref role="PrY4T" node="404$BAz795a" resolve="RelationalOperator" />
-    </node>
+    <ref role="1TJDcQ" node="720W4DMRzK0" resolve="RelationalOperator" />
   </node>
   <node concept="PlHQZ" id="404$BAz795a">
     <property role="EcuMT" value="4612972969459487050" />
     <property role="3GE5qa" value="constraints.relational" />
-    <property role="TrG5h" value="RelationalOperator" />
+    <property role="TrG5h" value="IRelationalOperator" />
   </node>
   <node concept="1TIwiD" id="5MFfD6faVUc">
     <property role="EcuMT" value="6677499667400081036" />
@@ -1233,9 +1191,6 @@
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
-
-
-
   <node concept="1TIwiD" id="1WjQLbKt0tA">
     <property role="EcuMT" value="2239374314123298662" />
     <property role="TrG5h" value="ComponentId" />
@@ -1272,14 +1227,6 @@
       <property role="20kJfa" value="index" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" to="ehqg:6NmtaR1WcS9" resolve="BinaryArithmeticExpression" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="404$BAz795a">
-    <property role="EcuMT" value="4612972969459487050" />
-    <property role="3GE5qa" value="operators" />
-    <property role="TrG5h" value="RelationalOperator" />
-    <node concept="PrWs8" id="46t5MkZuwy_" role="PrDN$">
-      <ref role="PrY4T" node="46t5MkZsy$k" resolve="IConstraint" />
     </node>
   </node>
   <node concept="PlHQZ" id="6Qqb05GupXm">
@@ -1367,6 +1314,16 @@
     <property role="EcuMT" value="8502800611492647091" />
     <property role="3GE5qa" value="interfaces" />
     <property role="TrG5h" value="IOthelloContent" />
+  </node>
+  <node concept="1TIwiD" id="720W4DMRzK0">
+    <property role="EcuMT" value="8106743531812305920" />
+    <property role="3GE5qa" value="operators" />
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="RelationalOperator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="720W4DMRzK1" role="PzmwI">
+      <ref role="PrY4T" node="404$BAz795a" resolve="IRelationalOperator" />
+    </node>
   </node>
 </model>
 
