@@ -9,10 +9,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" />
     <import index="zsc5" ref="r:fc2953cc-af52-42fa-8e2a-cc41987cb142(com.fasten.safety.hiphops.arch.structure)" implicit="true" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -127,7 +127,7 @@
         <node concept="3XFhqQ" id="1TeaL8Rdz47" role="3EZMnx" />
         <node concept="2rfBfz" id="1TeaL8Rdz4D" role="3EZMnx">
           <node concept="2reSaE" id="1TeaL8Rdz4O" role="2rf8GZ">
-            <ref role="2reCK$" to="zsc5:1TeaL8Rdz2r" resolve="failureModes" />
+            <ref role="2reCK$" to="ii8j:1TeaL8Rdz2r" resolve="failureModes" />
           </node>
         </node>
         <node concept="l2Vlx" id="1TeaL8Rdz3S" role="2iSdaV" />
@@ -313,6 +313,13 @@
   <node concept="22mcaB" id="5g1NREKUEqq">
     <ref role="aqKnT" to="zsc5:62cfieELy5m" resolve="FaultTreeContainer" />
     <node concept="22hDWj" id="5g1NREKUEqr" role="22hAXT" />
+  </node>
+  <node concept="PKFIW" id="1f_hJh23yyy">
+    <property role="TrG5h" value="LogicalTypeFailureModesLogicalTypeRef" />
+    <ref role="1XX52x" to="zsc5:1TeaL8Rdz2m" resolve="LogicalTypeFailureModes" />
+    <node concept="3F1sOY" id="1f_hJh23yHa" role="2wV5jI">
+      <ref role="1NtTu8" to="zsc5:62cfieENpyv" resolve="tpe" />
+    </node>
   </node>
 </model>
 

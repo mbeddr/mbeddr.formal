@@ -20,6 +20,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
+    <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" implicit="true" />
   </imports>
@@ -277,7 +278,7 @@
                             <ref role="3cqZAo" node="62cfieEP3hw" resolve="it" />
                           </node>
                           <node concept="3Tsc0h" id="62cfieEP3hv" role="2OqNvi">
-                            <ref role="3TtcxE" to="zsc5:1TeaL8Rdz2r" resolve="failureModes" />
+                            <ref role="3TtcxE" to="ii8j:1TeaL8Rdz2r" resolve="failureModes" />
                           </node>
                         </node>
                       </node>

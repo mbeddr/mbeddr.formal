@@ -20,6 +20,9 @@
       <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
     </language>
     <language id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops">
+      <concept id="1433630071281486525" name="&lt;unknown&gt;" flags="ng" index="1hU4L9">
+        <child id="2183730226556973211" name="failureModes" index="Du1I9" />
+      </concept>
       <concept id="3021731374194694448" name="com.fasten.safety.hiphops.structure.IFFMEABase" flags="ng" index="3$q46s">
         <child id="2183730226557081317" name="singleFailurePropagationLogic" index="DuvRR" />
       </concept>
@@ -82,7 +85,6 @@
         <child id="6957002747779723394" name="port" index="3anSQx" />
       </concept>
       <concept id="2183730226556973206" name="com.fasten.safety.hiphops.arch.structure.LogicalTypeFailureModes" flags="ng" index="Du1I4">
-        <child id="2183730226556973211" name="failureModes" index="Du1I9" />
         <child id="6957002747779324063" name="tpe" index="3agqmW" />
       </concept>
       <concept id="2183730226556884064" name="com.fasten.safety.hiphops.arch.structure.IFFMEA" flags="ng" index="DuJXM">
@@ -465,14 +467,14 @@
     <property role="TrG5h" value="_010_hiphops" />
     <property role="3GE5qa" value="" />
     <node concept="Du1I4" id="62cfieENIh2" role="1POhhj">
+      <node concept="1savGX" id="62cfieENIia" role="3agqmW">
+        <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
+      </node>
       <node concept="2VUHfq" id="62cfieENIji" role="Du1I9">
         <property role="TrG5h" value="speed too low" />
         <node concept="19SGf9" id="62cfieENIjm" role="2VUHfi">
           <node concept="19SUe$" id="62cfieENIjn" role="19SJt6" />
         </node>
-      </node>
-      <node concept="1savGX" id="62cfieENIia" role="3agqmW">
-        <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
       </node>
       <node concept="2VUHfq" id="62cfieENIjB" role="Du1I9">
         <property role="TrG5h" value="speed too high" />
@@ -483,26 +485,26 @@
     </node>
     <node concept="2VURXa" id="62cfieEOvFI" role="1POhhj" />
     <node concept="Du1I4" id="62cfieEOvEB" role="1POhhj">
+      <node concept="1savGX" id="3bh1RFvziCY" role="3agqmW">
+        <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
+      </node>
       <node concept="2VUHfq" id="62cfieEOvEC" role="Du1I9">
         <property role="TrG5h" value="speed innacurate" />
         <node concept="19SGf9" id="62cfieEOvED" role="2VUHfi">
           <node concept="19SUe$" id="62cfieEOvEE" role="19SJt6" />
         </node>
       </node>
-      <node concept="1savGX" id="3bh1RFvziCY" role="3agqmW">
-        <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
-      </node>
     </node>
     <node concept="2VURXa" id="3bh1RFvziE1" role="1POhhj" />
     <node concept="Du1I4" id="3bh1RFvziD4" role="1POhhj">
+      <node concept="1savGX" id="3bh1RFvziEX" role="3agqmW">
+        <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
+      </node>
       <node concept="2VUHfq" id="3bh1RFvziD5" role="Du1I9">
         <property role="TrG5h" value="brake force innacurate" />
         <node concept="19SGf9" id="3bh1RFvziD6" role="2VUHfi">
           <node concept="19SUe$" id="3bh1RFvziD7" role="19SJt6" />
         </node>
-      </node>
-      <node concept="1savGX" id="3bh1RFvziEX" role="3agqmW">
-        <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
       </node>
     </node>
     <node concept="2VURXa" id="62cfieENIif" role="1POhhj" />

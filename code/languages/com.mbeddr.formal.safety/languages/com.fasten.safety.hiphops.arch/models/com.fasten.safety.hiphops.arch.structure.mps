@@ -65,22 +65,12 @@
     <property role="TrG5h" value="LogicalTypeFailureModes" />
     <property role="34LRSv" value="type failure modes" />
     <property role="R4oN_" value="failure modes associated to types of ports (HiP-HOPS)" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1TeaL8Rdz2r" role="1TKVEi">
-      <property role="IQ2ns" value="2183730226556973211" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="failureModes" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
-    </node>
+    <ref role="1TJDcQ" to="ii8j:1f_hJh23gEX" resolve="LogicalTypeFailureModesBase" />
     <node concept="1TJgyj" id="62cfieENpyv" role="1TKVEi">
       <property role="IQ2ns" value="6957002747779324063" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="tpe" />
       <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
-    </node>
-    <node concept="PrWs8" id="1TeaL8Rdz2n" role="PzmwI">
-      <ref role="PrY4T" to="g9vz:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1TeaL8Rdz2u">
