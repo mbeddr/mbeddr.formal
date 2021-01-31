@@ -47,8 +47,10 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)" version="0" />
         <module reference="c6d7e8a3-3d80-479a-8799-a11fe1902b1c(com.fasten.safety.hiphops)" version="0" />
         <module reference="33baa98a-1576-47fb-9901-f77228dd3664(com.fasten.safety.hiphops#01)" version="0" />
+        <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
       </dependencyVersions>
@@ -59,7 +61,6 @@
   <dependencies>
     <dependency reexport="false">ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)</dependency>
     <dependency reexport="false">b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)</dependency>
-    <dependency reexport="false">1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>

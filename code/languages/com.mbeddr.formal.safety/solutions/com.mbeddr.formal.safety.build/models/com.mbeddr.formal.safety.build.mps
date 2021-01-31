@@ -9135,6 +9135,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7ybnZGKpprH" role="3bR37C">
+          <node concept="3bR9La" id="7ybnZGKpprI" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="73rWdFZqBpF" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9346,6 +9351,31 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7ybnZGKppsv" role="3bR37C">
+          <node concept="3bR9La" id="7ybnZGKppsw" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ybnZGKppsx" role="3bR37C">
+          <node concept="3bR9La" id="7ybnZGKppsy" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ybnZGKppsz" role="3bR37C">
+          <node concept="3bR9La" id="7ybnZGKpps$" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ybnZGKppsK" role="3bR37C">
+          <node concept="1Busua" id="7ybnZGKppsL" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ybnZGKppsM" role="3bR37C">
+          <node concept="1Busua" id="7ybnZGKppsN" role="1SiIV1">
+            <ref role="1Busuk" node="73rWdFZqzKL" resolve="com.fasten.safety.fmea" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4eD_5l3aC7g" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9520,6 +9550,11 @@
         <node concept="1SiIV0" id="4eD_5l3aDje" role="3bR37C">
           <node concept="1Busua" id="4eD_5l3aDjf" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ybnZGKpptc" role="3bR37C">
+          <node concept="1Busua" id="7ybnZGKpptd" role="1SiIV1">
+            <ref role="1Busuk" node="73rWdFZqzKL" resolve="com.fasten.safety.fmea" />
           </node>
         </node>
       </node>
