@@ -8,6 +8,7 @@
   <imports>
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -56,10 +57,30 @@
     <property role="TrG5h" value="SingleFailurePropagationLogicBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="62cfieEOV1W" role="1TKVEi">
+      <property role="IQ2ns" value="6957002747779723388" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="failureModeRef" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1f_hJh24IJk" resolve="FailureModeRefExpressionBase" />
+    </node>
+    <node concept="1TJgyj" id="1TeaL8Rea4x" role="1TKVEi">
+      <property role="IQ2ns" value="2183730226557133089" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="inputDeviationLogic" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4CQASrcxTNi" role="1TKVEi">
+      <property role="IQ2ns" value="5347632610808405202" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="componentMalfunctionLogic" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1f_hJh23gEX">
     <property role="EcuMT" value="1433630071281486525" />
     <property role="TrG5h" value="LogicalTypeFailureModesBase" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1f_hJh23gPy" role="PzmwI">
       <ref role="PrY4T" to="g9vz:42QGQFVnclm" resolve="IDesignFMEARootContent" />
@@ -69,6 +90,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="failureModes" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1f_hJh24IJk">
+    <property role="EcuMT" value="1433630071281871828" />
+    <property role="TrG5h" value="FailureModeRefExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    <node concept="1TJgyj" id="1TeaL8RefrY" role="1TKVEi">
+      <property role="IQ2ns" value="2183730226557155070" />
+      <property role="20kJfa" value="failureMode" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
     </node>
   </node>

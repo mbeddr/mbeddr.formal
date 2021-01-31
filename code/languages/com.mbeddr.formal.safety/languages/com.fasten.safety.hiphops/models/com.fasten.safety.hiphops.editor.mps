@@ -27,6 +27,9 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -37,15 +40,30 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
+      <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
+        <child id="1397920687865593523" name="cells" index="2r0Tv6" />
+      </concept>
+      <concept id="1397920687864997170" name="de.slisson.mps.tables.structure.TableNodeCollection" flags="ng" index="2reCL7">
+        <child id="1397920687864997171" name="childTableNodes" index="2reCL6" />
+      </concept>
+      <concept id="1397920687864997153" name="de.slisson.mps.tables.structure.StaticHorizontal" flags="ng" index="2reCLk" />
+      <concept id="1397920687864997143" name="de.slisson.mps.tables.structure.TableCell" flags="ng" index="2reCLy">
+        <child id="1397920687865111420" name="columnHeader" index="2recC9" />
+        <child id="1397920687865064647" name="editorCell" index="2reSmM" />
+      </concept>
       <concept id="1397920687865064415" name="de.slisson.mps.tables.structure.ChildsVertical" flags="ng" index="2reSaE" />
       <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
         <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
+      </concept>
+      <concept id="1397920687864864270" name="de.slisson.mps.tables.structure.StaticHeader" flags="ng" index="2rfbtV">
+        <property id="1397920687864864274" name="text" index="2rfbtB" />
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
@@ -95,6 +113,43 @@
     <ref role="1XX52x" to="ii8j:1f_hJh23gEX" resolve="LogicalTypeFailureModesBase" />
     <node concept="3F0ifn" id="1f_hJh23zKi" role="2wV5jI">
       <property role="3F0ifm" value="PLEASE OVERRIDE EDITOR COMPONENT" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1TeaL8Rea4z">
+    <ref role="1XX52x" to="ii8j:1TeaL8RdXrk" resolve="SingleFailurePropagationLogicBase" />
+    <node concept="2r0Tta" id="62cfieEMXwp" role="2wV5jI">
+      <node concept="2reCLk" id="62cfieEMXwx" role="2r0Tv6">
+        <node concept="2reCLy" id="62cfieEMXwz" role="2reCL6">
+          <node concept="3F1sOY" id="62cfieEMXwE" role="2reSmM">
+            <ref role="1NtTu8" to="ii8j:62cfieEOV1W" resolve="failureModeRef" />
+          </node>
+          <node concept="2rfbtV" id="62cfieEMXx1" role="2recC9">
+            <property role="2rfbtB" value="Output Failure Mode" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="62cfieEMXwL" role="2reCL6">
+          <node concept="3EZMnI" id="3txYam0camn" role="2reSmM">
+            <node concept="l2Vlx" id="3txYam0camo" role="2iSdaV" />
+            <node concept="3F1sOY" id="62cfieEMXwW" role="3EZMnx">
+              <ref role="1NtTu8" to="ii8j:1TeaL8Rea4x" resolve="inputDeviationLogic" />
+            </node>
+          </node>
+          <node concept="2rfbtV" id="62cfieEMXwZ" role="2recC9">
+            <property role="2rfbtB" value="Input Deviation Logic" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="4CQASrcxTNm" role="2reCL6">
+          <node concept="3EZMnI" id="4CQASrcxTNn" role="2reSmM">
+            <node concept="l2Vlx" id="4CQASrcxTNo" role="2iSdaV" />
+            <node concept="3F1sOY" id="4CQASrcxTNp" role="3EZMnx">
+              <ref role="1NtTu8" to="ii8j:4CQASrcxTNi" resolve="componentMalfunctionLogic" />
+            </node>
+          </node>
+          <node concept="2rfbtV" id="4CQASrcxTNq" role="2recC9">
+            <property role="2rfbtB" value="Component Malfunction Logic" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

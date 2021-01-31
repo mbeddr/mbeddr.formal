@@ -204,7 +204,7 @@
       <node concept="2reCLk" id="62cfieEMXwx" role="2r0Tv6">
         <node concept="2reCLy" id="62cfieEMXwz" role="2reCL6">
           <node concept="3F1sOY" id="62cfieEMXwE" role="2reSmM">
-            <ref role="1NtTu8" to="zsc5:62cfieEOV1W" resolve="failureModeRef" />
+            <ref role="1NtTu8" to="ii8j:62cfieEOV1W" resolve="failureModeRef" />
           </node>
           <node concept="2rfbtV" id="62cfieEMXx1" role="2recC9">
             <property role="2rfbtB" value="Output Failure Mode" />
@@ -214,7 +214,7 @@
           <node concept="3EZMnI" id="3txYam0camn" role="2reSmM">
             <node concept="l2Vlx" id="3txYam0camo" role="2iSdaV" />
             <node concept="3F1sOY" id="62cfieEMXwW" role="3EZMnx">
-              <ref role="1NtTu8" to="zsc5:1TeaL8Rea4x" resolve="inputDeviationLogic" />
+              <ref role="1NtTu8" to="ii8j:1TeaL8Rea4x" resolve="inputDeviationLogic" />
             </node>
           </node>
           <node concept="2rfbtV" id="62cfieEMXwZ" role="2recC9">
@@ -225,7 +225,7 @@
           <node concept="3EZMnI" id="4CQASrcxTNn" role="2reSmM">
             <node concept="l2Vlx" id="4CQASrcxTNo" role="2iSdaV" />
             <node concept="3F1sOY" id="4CQASrcxTNp" role="3EZMnx">
-              <ref role="1NtTu8" to="zsc5:4CQASrcxTNi" resolve="componentMalfunctionLogic" />
+              <ref role="1NtTu8" to="ii8j:4CQASrcxTNi" resolve="componentMalfunctionLogic" />
             </node>
           </node>
           <node concept="2rfbtV" id="4CQASrcxTNq" role="2recC9">
@@ -253,7 +253,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="62cfieEOV2F" role="3EZMnx">
-        <ref role="1NtTu8" to="zsc5:1TeaL8RefrY" resolve="failureMode" />
+        <ref role="1NtTu8" to="ii8j:1TeaL8RefrY" resolve="failureMode" />
         <node concept="1sVBvm" id="62cfieEOV2H" role="1sWHZn">
           <node concept="3F0A7n" id="62cfieEOV2U" role="2wV5jI">
             <property role="1Intyy" value="true" />

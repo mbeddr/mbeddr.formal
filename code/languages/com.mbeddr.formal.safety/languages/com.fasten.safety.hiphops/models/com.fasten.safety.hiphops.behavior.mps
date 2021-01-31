@@ -8,7 +8,7 @@
   </languages>
   <imports>
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
-    <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" implicit="true" />
+    <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -27,6 +27,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -62,6 +63,20 @@
     </node>
     <node concept="13hLZK" id="1TeaL8RddbO" role="13h7CW">
       <node concept="3clFbS" id="1TeaL8RddbP" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1f_hJh280UD">
+    <ref role="13h7C2" to="ii8j:1f_hJh24IJk" resolve="FailureModeRefExpressionBase" />
+    <node concept="13i0hz" id="62cfieEPVjc" role="13h7CS">
+      <property role="TrG5h" value="getName" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="62cfieEPVjd" role="1B3o_S" />
+      <node concept="17QB3L" id="62cfieEPVjs" role="3clF45" />
+      <node concept="3clFbS" id="62cfieEPVjf" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="1f_hJh280UE" role="13h7CW">
+      <node concept="3clFbS" id="1f_hJh280UF" role="2VODD2" />
     </node>
   </node>
 </model>

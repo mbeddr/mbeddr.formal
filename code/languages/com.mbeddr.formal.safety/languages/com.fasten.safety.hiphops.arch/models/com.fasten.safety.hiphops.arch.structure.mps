@@ -96,37 +96,12 @@
     <property role="TrG5h" value="SingleFailurePropagationLogic" />
     <property role="34LRSv" value="single failure propagation logic" />
     <ref role="1TJDcQ" to="ii8j:1TeaL8RdXrk" resolve="SingleFailurePropagationLogicBase" />
-    <node concept="1TJgyj" id="62cfieEOV1W" role="1TKVEi">
-      <property role="IQ2ns" value="6957002747779723388" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="failureModeRef" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1TeaL8RefrX" resolve="FailureModeRefExpression" />
-    </node>
-    <node concept="1TJgyj" id="1TeaL8Rea4x" role="1TKVEi">
-      <property role="IQ2ns" value="2183730226557133089" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="inputDeviationLogic" />
-      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="4CQASrcxTNi" role="1TKVEi">
-      <property role="IQ2ns" value="5347632610808405202" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="componentMalfunctionLogic" />
-      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1TeaL8RefrX">
     <property role="EcuMT" value="2183730226557155069" />
     <property role="TrG5h" value="FailureModeRefExpression" />
     <property role="34LRSv" value="failure mode ref" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    <node concept="1TJgyj" id="1TeaL8RefrY" role="1TKVEi">
-      <property role="IQ2ns" value="2183730226557155070" />
-      <property role="20kJfa" value="failureMode" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
-    </node>
+    <ref role="1TJDcQ" to="ii8j:1f_hJh24IJk" resolve="FailureModeRefExpressionBase" />
     <node concept="1TJgyj" id="62cfieEOV22" role="1TKVEi">
       <property role="IQ2ns" value="6957002747779723394" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
