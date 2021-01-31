@@ -107,9 +107,6 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
-        <reference id="1139877738879" name="concept" index="1A0vxQ" />
-      </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
@@ -276,26 +273,6 @@
       </node>
       <node concept="3uibUv" id="31P83hzGyeH" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
-      </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="1TeaL8RdKiL">
-    <ref role="13h7C2" to="g9vz:7j1NWs14dHd" resolve="DesignFMEARoot" />
-    <node concept="13hLZK" id="1TeaL8RdKiM" role="13h7CW">
-      <node concept="3clFbS" id="1TeaL8RdKiN" role="2VODD2">
-        <node concept="3clFbF" id="1TeaL8RdKiX" role="3cqZAp">
-          <node concept="2OqwBi" id="1TeaL8RdLUi" role="3clFbG">
-            <node concept="2OqwBi" id="1TeaL8RdKrH" role="2Oq$k0">
-              <node concept="13iPFW" id="1TeaL8RdKiW" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="1TeaL8RdKA8" role="2OqNvi">
-                <ref role="3TtcxE" to="g9vz:7j1NWs14dIk" resolve="dfmeas" />
-              </node>
-            </node>
-            <node concept="WFELt" id="1TeaL8RdNhB" role="2OqNvi">
-              <ref role="1A0vxQ" to="g9vz:42QGQFVnsKw" resolve="DesignFMEAEmptyLine" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>

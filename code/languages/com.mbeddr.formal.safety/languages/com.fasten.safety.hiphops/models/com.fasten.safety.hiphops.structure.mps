@@ -50,32 +50,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="singleFailurePropagationLogic" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="1TeaL8RdXrk" resolve="SingleFailurePropagationLogicBase" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1TeaL8RdXrk">
-    <property role="EcuMT" value="2183730226557081300" />
-    <property role="TrG5h" value="SingleFailurePropagationLogicBase" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="62cfieEOV1W" role="1TKVEi">
-      <property role="IQ2ns" value="6957002747779723388" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="failureModeRef" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1f_hJh24IJk" resolve="PortFailureModeRefExpressionBase" />
-    </node>
-    <node concept="1TJgyj" id="1TeaL8Rea4x" role="1TKVEi">
-      <property role="IQ2ns" value="2183730226557133089" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="inputDeviationLogic" />
-      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="4CQASrcxTNi" role="1TKVEi">
-      <property role="IQ2ns" value="5347632610808405202" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="componentMalfunctionLogic" />
-      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+      <ref role="20lvS9" node="1TeaL8Rea4w" resolve="SingleFailurePropagationLogic" />
     </node>
   </node>
   <node concept="1TIwiD" id="1f_hJh23gEX">
@@ -84,7 +59,7 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1f_hJh23gPy" role="PzmwI">
-      <ref role="PrY4T" to="g9vz:42QGQFVnclm" resolve="IDesignFMEARootContent" />
+      <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
     <node concept="1TJgyj" id="1TeaL8Rdz2r" role="1TKVEi">
       <property role="IQ2ns" value="2183730226556973211" />
@@ -122,7 +97,25 @@
     <property role="EcuMT" value="2183730226557133088" />
     <property role="TrG5h" value="SingleFailurePropagationLogic" />
     <property role="34LRSv" value="single failure propagation logic" />
-    <ref role="1TJDcQ" node="1TeaL8RdXrk" resolve="SingleFailurePropagationLogicBase" />
+    <node concept="1TJgyj" id="1f_hJh2nY4b" role="1TKVEi">
+      <property role="IQ2ns" value="1433630071286915339" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="failureModeRef" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1f_hJh24IJk" resolve="PortFailureModeRefExpressionBase" />
+    </node>
+    <node concept="1TJgyj" id="1f_hJh2nY4c" role="1TKVEi">
+      <property role="IQ2ns" value="1433630071286915340" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="inputDeviationLogic" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1f_hJh2nY4d" role="1TKVEi">
+      <property role="IQ2ns" value="1433630071286915341" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="componentMalfunctionLogic" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
+    </node>
   </node>
 </model>
 

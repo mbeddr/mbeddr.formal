@@ -6,6 +6,7 @@
     <use id="521724dc-29ef-4d5a-9c15-25f6b680b809" name="com.fasten.safety.hiphops.arch" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops" version="0" />
+    <use id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
@@ -15,11 +16,10 @@
       <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
     </language>
     <language id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops">
-      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM" />
-      <concept id="2183730226557081300" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogicBase" flags="ng" index="DuvR6">
-        <child id="5347632610808405202" name="componentMalfunctionLogic" index="26Ggtk" />
-        <child id="2183730226557133089" name="inputDeviationLogic" index="DtCCN" />
-        <child id="6957002747779723388" name="failureModeRef" index="3anSPv" />
+      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM">
+        <child id="1433630071286915340" name="inputDeviationLogic" index="1hIEvS" />
+        <child id="1433630071286915341" name="componentMalfunctionLogic" index="1hIEvT" />
+        <child id="1433630071286915339" name="failureModeRef" index="1hIEvZ" />
       </concept>
       <concept id="1433630071283045915" name="com.fasten.safety.hiphops.structure.ComponentFailureModeRefExpressionBase" flags="ng" index="1hKp3J">
         <reference id="6053347500022004386" name="failureMode" index="3$NFno" />
@@ -57,8 +57,12 @@
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="3491732495478440804" name="com.fasten.safety.fmea.structure.FailureModeDefinitionBase" flags="ng" index="1jQQdg">
         <child id="4663111736253767864" name="description" index="2VUHfi" />
+      </concept>
+      <concept id="8413234032528120653" name="com.fasten.safety.fmea.structure.DesignFMEARoot" flags="ng" index="1POhia">
+        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
       </concept>
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
@@ -104,10 +108,6 @@
         <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
       </concept>
       <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
-      <concept id="4663111736253860896" name="com.fasten.safety.fmea.arch.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
-      <concept id="8413234032528120653" name="com.fasten.safety.fmea.arch.structure.DesignFMEARoot" flags="ng" index="1POhia">
-        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -566,13 +566,16 @@
     <node concept="DuJXM" id="1TeaL8RdXqH" role="1POhhj">
       <ref role="DuJYV" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
       <node concept="DtCCM" id="62cfieEQj9X" role="DuvRR">
-        <node concept="DtHRJ" id="62cfieEQj9Z" role="3anSPv">
+        <node concept="3$NFnr" id="5g1NREKOpVE" role="1hIEvT">
+          <ref role="3$NFno" node="5g1NREKNQIO" resolve="innacurate_computation" />
+        </node>
+        <node concept="DtHRJ" id="62cfieEQj9Z" role="1hIEvZ">
           <ref role="DtHRG" node="62cfieEOvEC" resolve="speed innacurate" />
           <node concept="3Ug1Ap" id="62cfieEQjaj" role="3anSQx">
             <ref role="3Ug1Ao" node="1TeaL8RdujM" resolve="plausibilizedSpeed" />
           </node>
         </node>
-        <node concept="2HbMDt" id="3txYam0crX6" role="DtCCN">
+        <node concept="2HbMDt" id="3txYam0crX6" role="1hIEvS">
           <node concept="DtHRJ" id="3txYam0baKK" role="2H9Iav">
             <ref role="DtHRG" node="62cfieENIjB" resolve="speed too high" />
             <node concept="3Ug1Ap" id="3txYam0baKL" role="3anSQx">
@@ -585,9 +588,6 @@
               <ref role="3Ug1Ao" node="1TeaL8Rdukn" resolve="speed" />
             </node>
           </node>
-        </node>
-        <node concept="3$NFnr" id="5g1NREKOpVE" role="26Ggtk">
-          <ref role="3$NFno" node="5g1NREKNQIO" resolve="innacurate_computation" />
         </node>
       </node>
     </node>
@@ -734,13 +734,13 @@
     <node concept="DuJXM" id="3bh1RFvziFV" role="1POhhj">
       <ref role="DuJYV" node="62cfieENdX5" resolve="Braking" />
       <node concept="DtCCM" id="3bh1RFvziFW" role="DuvRR">
-        <node concept="DtHRJ" id="3bh1RFvziFX" role="3anSPv">
+        <node concept="DtHRJ" id="3bh1RFvziFX" role="1hIEvZ">
           <ref role="DtHRG" node="3bh1RFvziD5" resolve="brake force innacurate" />
           <node concept="3Ug1Ap" id="3bh1RFvziIc" role="3anSQx">
             <ref role="3Ug1Ao" node="62cfieENdX8" resolve="brakeCmd" />
           </node>
         </node>
-        <node concept="DtHRJ" id="3bh1RFvziIX" role="DtCCN">
+        <node concept="DtHRJ" id="3bh1RFvziIX" role="1hIEvS">
           <ref role="DtHRG" node="62cfieEOvEC" resolve="speed innacurate" />
           <node concept="3Ug1Ap" id="3bh1RFvziIG" role="3anSQx">
             <ref role="3Ug1Ao" node="62cfieENdX6" resolve="speed" />

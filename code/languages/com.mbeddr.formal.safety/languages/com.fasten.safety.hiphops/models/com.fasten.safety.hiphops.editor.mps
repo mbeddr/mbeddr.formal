@@ -122,43 +122,6 @@
       <property role="3F0ifm" value="PLEASE OVERRIDE EDITOR COMPONENT" />
     </node>
   </node>
-  <node concept="24kQdi" id="1TeaL8Rea4z">
-    <ref role="1XX52x" to="ii8j:1TeaL8RdXrk" resolve="SingleFailurePropagationLogicBase" />
-    <node concept="2r0Tta" id="62cfieEMXwp" role="2wV5jI">
-      <node concept="2reCLk" id="62cfieEMXwx" role="2r0Tv6">
-        <node concept="2reCLy" id="62cfieEMXwz" role="2reCL6">
-          <node concept="3F1sOY" id="62cfieEMXwE" role="2reSmM">
-            <ref role="1NtTu8" to="ii8j:62cfieEOV1W" resolve="failureModeRef" />
-          </node>
-          <node concept="2rfbtV" id="62cfieEMXx1" role="2recC9">
-            <property role="2rfbtB" value="Output Failure Mode" />
-          </node>
-        </node>
-        <node concept="2reCLy" id="62cfieEMXwL" role="2reCL6">
-          <node concept="3EZMnI" id="3txYam0camn" role="2reSmM">
-            <node concept="l2Vlx" id="3txYam0camo" role="2iSdaV" />
-            <node concept="3F1sOY" id="62cfieEMXwW" role="3EZMnx">
-              <ref role="1NtTu8" to="ii8j:1TeaL8Rea4x" resolve="inputDeviationLogic" />
-            </node>
-          </node>
-          <node concept="2rfbtV" id="62cfieEMXwZ" role="2recC9">
-            <property role="2rfbtB" value="Input Deviation Logic" />
-          </node>
-        </node>
-        <node concept="2reCLy" id="4CQASrcxTNm" role="2reCL6">
-          <node concept="3EZMnI" id="4CQASrcxTNn" role="2reSmM">
-            <node concept="l2Vlx" id="4CQASrcxTNo" role="2iSdaV" />
-            <node concept="3F1sOY" id="4CQASrcxTNp" role="3EZMnx">
-              <ref role="1NtTu8" to="ii8j:4CQASrcxTNi" resolve="componentMalfunctionLogic" />
-            </node>
-          </node>
-          <node concept="2rfbtV" id="4CQASrcxTNq" role="2recC9">
-            <property role="2rfbtB" value="Component Malfunction Logic" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1f_hJh29Mi6">
     <ref role="1XX52x" to="ii8j:1f_hJh29dor" resolve="ComponentFailureModeRefExpressionBase" />
     <node concept="1iCGBv" id="5g1NREKNRED" role="2wV5jI">
@@ -177,7 +140,7 @@
       <node concept="2reCLk" id="1f_hJh2mQBq" role="2r0Tv6">
         <node concept="2reCLy" id="1f_hJh2mQBr" role="2reCL6">
           <node concept="3F1sOY" id="1f_hJh2mQBs" role="2reSmM">
-            <ref role="1NtTu8" to="ii8j:62cfieEOV1W" resolve="failureModeRef" />
+            <ref role="1NtTu8" to="ii8j:1f_hJh2nY4b" resolve="failureModeRef" />
           </node>
           <node concept="2rfbtV" id="1f_hJh2mQBt" role="2recC9">
             <property role="2rfbtB" value="Output Failure Mode" />
@@ -187,7 +150,7 @@
           <node concept="3EZMnI" id="1f_hJh2mQBv" role="2reSmM">
             <node concept="l2Vlx" id="1f_hJh2mQBw" role="2iSdaV" />
             <node concept="3F1sOY" id="1f_hJh2mQBx" role="3EZMnx">
-              <ref role="1NtTu8" to="ii8j:1TeaL8Rea4x" resolve="inputDeviationLogic" />
+              <ref role="1NtTu8" to="ii8j:1f_hJh2nY4c" resolve="inputDeviationLogic" />
             </node>
           </node>
           <node concept="2rfbtV" id="1f_hJh2mQBy" role="2recC9">
@@ -198,7 +161,7 @@
           <node concept="3EZMnI" id="1f_hJh2mQB$" role="2reSmM">
             <node concept="l2Vlx" id="1f_hJh2mQB_" role="2iSdaV" />
             <node concept="3F1sOY" id="1f_hJh2mQBA" role="3EZMnx">
-              <ref role="1NtTu8" to="ii8j:4CQASrcxTNi" resolve="componentMalfunctionLogic" />
+              <ref role="1NtTu8" to="ii8j:1f_hJh2nY4d" resolve="componentMalfunctionLogic" />
             </node>
           </node>
           <node concept="2rfbtV" id="1f_hJh2mQBB" role="2recC9">

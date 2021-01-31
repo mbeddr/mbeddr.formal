@@ -2,6 +2,7 @@
 <model ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)">
   <persistence version="9" />
   <languages>
+    <use id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea" version="0" />
     <devkit ref="bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)" />
     <devkit ref="a43bbdef-33e6-44ad-a995-6accad936f48(fasten.safety.ft)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
@@ -13,6 +14,20 @@
       <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
     </language>
     <language id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops">
+      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM">
+        <child id="1433630071286915340" name="inputDeviationLogic" index="1hIEvS" />
+        <child id="1433630071286915341" name="componentMalfunctionLogic" index="1hIEvT" />
+        <child id="1433630071286915339" name="failureModeRef" index="1hIEvZ" />
+      </concept>
+      <concept id="1433630071283045915" name="com.fasten.safety.hiphops.structure.ComponentFailureModeRefExpressionBase" flags="ng" index="1hKp3J">
+        <reference id="6053347500022004386" name="failureMode" index="3$NFno" />
+      </concept>
+      <concept id="1433630071281486525" name="com.fasten.safety.hiphops.structure.LogicalTypeFailureModesBase" flags="ng" index="1hU4L9">
+        <child id="2183730226556973211" name="failureModes" index="Du1I9" />
+      </concept>
+      <concept id="1433630071281871828" name="com.fasten.safety.hiphops.structure.PortFailureModeRefExpressionBase" flags="ng" index="1hXUOw">
+        <reference id="2183730226557155070" name="failureMode" index="DtHRG" />
+      </concept>
       <concept id="3021731374194694448" name="com.fasten.safety.hiphops.structure.IFFMEABase" flags="ng" index="3$q46s">
         <child id="2183730226557081317" name="singleFailurePropagationLogic" index="DuvRR" />
       </concept>
@@ -44,6 +59,7 @@
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="3491732495478955378" name="com.fasten.safety.fmea.structure.FailureEffectDefinitionBase" flags="ng" index="1jKNP6">
         <child id="4663111736253957550" name="description" index="2VUvr4" />
       </concept>
@@ -59,6 +75,9 @@
       </concept>
       <concept id="8413234032527459382" name="com.fasten.safety.fmea.structure.FMEABase" flags="ng" index="1PLKJL">
         <child id="8413234032527501984" name="subjects" index="1PLElB" />
+      </concept>
+      <concept id="8413234032528120653" name="com.fasten.safety.fmea.structure.DesignFMEARoot" flags="ng" index="1POhia">
+        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
       </concept>
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
@@ -91,17 +110,10 @@
       </concept>
     </language>
     <language id="521724dc-29ef-4d5a-9c15-25f6b680b809" name="com.fasten.safety.hiphops.arch">
-      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.arch.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM">
-        <child id="5347632610808405202" name="componentMalfunctionLogic" index="26Ggtk" />
-        <child id="2183730226557133089" name="inputDeviationLogic" index="DtCCN" />
-        <child id="6957002747779723388" name="failureModeRef" index="3anSPv" />
-      </concept>
-      <concept id="2183730226557155069" name="com.fasten.safety.hiphops.arch.structure.FailureModeRefExpression" flags="ng" index="DtHRJ">
-        <reference id="2183730226557155070" name="failureMode" index="DtHRG" />
+      <concept id="2183730226557155069" name="com.fasten.safety.hiphops.arch.structure.PortFailureModeRefExpression" flags="ng" index="DtHRJ">
         <child id="6957002747779723394" name="port" index="3anSQx" />
       </concept>
       <concept id="2183730226556973206" name="com.fasten.safety.hiphops.arch.structure.LogicalTypeFailureModes" flags="ng" index="Du1I4">
-        <child id="2183730226556973211" name="failureModes" index="Du1I9" />
         <child id="6957002747779324063" name="tpe" index="3agqmW" />
       </concept>
       <concept id="2183730226556884064" name="com.fasten.safety.hiphops.arch.structure.IFFMEA" flags="ng" index="DuJXM">
@@ -110,9 +122,7 @@
       <concept id="6957002747778834774" name="com.fasten.safety.hiphops.arch.structure.FaultTreeContainer" flags="ng" index="3aixLP">
         <child id="6957002747778834777" name="ft" index="3aixLU" />
       </concept>
-      <concept id="6053347500022004385" name="com.fasten.safety.hiphops.arch.structure.ComponentFailureModeRefExpression" flags="ng" index="3$NFnr">
-        <reference id="6053347500022004386" name="failureMode" index="3$NFno" />
-      </concept>
+      <concept id="6053347500022004385" name="com.fasten.safety.hiphops.arch.structure.ComponentFailureModeRefExpression" flags="ng" index="3$NFnr" />
     </language>
     <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
       <concept id="4663111736253957542" name="com.fasten.safety.fmea.arch.structure.ComponentFailureEffectDefinition" flags="ng" index="2VUvrc" />
@@ -124,7 +134,6 @@
         <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
       </concept>
       <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
-      <concept id="4663111736253860896" name="com.fasten.safety.fmea.arch.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="8413234032527476648" name="com.fasten.safety.fmea.arch.structure.ComponentInstanceSubject" flags="ng" index="1PLGxJ">
         <reference id="8413234032527476717" name="comp" index="1PLGwE" />
       </concept>
@@ -133,9 +142,6 @@
       </concept>
       <concept id="8413234032528056373" name="com.fasten.safety.fmea.arch.structure.ComponentEffect" flags="ng" index="1PNyZM">
         <reference id="4663111736254126539" name="effect" index="2VPQEx" />
-      </concept>
-      <concept id="8413234032528120653" name="com.fasten.safety.fmea.arch.structure.DesignFMEARoot" flags="ng" index="1POhia">
-        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -383,155 +389,6 @@
       </node>
     </node>
   </node>
-  <node concept="1POhia" id="4eD_5l3mJwO">
-    <property role="TrG5h" value="_020_failure_modes_of_components" />
-    <property role="3GE5qa" value="_00_dfmea" />
-    <node concept="2VUHfc" id="4eD_5l3mJwQ" role="1POhhj">
-      <ref role="2VUHf6" node="42QGQFVn3Bd" resolve="HDCamera" />
-      <node concept="2VUHfq" id="4eD_5l3mJwS" role="2VUBrq">
-        <property role="TrG5h" value="bad pixel" />
-        <node concept="19SGf9" id="4eD_5l3mJwU" role="2VUHfi">
-          <node concept="19SUe$" id="4eD_5l3mJwV" role="19SJt6">
-            <property role="19SUeA" value="a pixel is innactive" />
-          </node>
-        </node>
-      </node>
-      <node concept="2VUHfq" id="4eD_5l3mJx1" role="2VUBrq">
-        <property role="TrG5h" value="distorted image" />
-        <node concept="19SGf9" id="4eD_5l3mJx2" role="2VUHfi">
-          <node concept="19SUe$" id="4eD_5l3mJx3" role="19SJt6">
-            <property role="19SUeA" value="image is distorted" />
-          </node>
-        </node>
-      </node>
-      <node concept="2VUHfq" id="4eD_5l3mJxa" role="2VUBrq">
-        <property role="TrG5h" value="low contrast" />
-        <node concept="19SGf9" id="4eD_5l3mJxb" role="2VUHfi">
-          <node concept="19SUe$" id="4eD_5l3mJxc" role="19SJt6" />
-        </node>
-      </node>
-    </node>
-    <node concept="2VURXa" id="4eD_5l3mJxI" role="1POhhj" />
-    <node concept="2VUHfc" id="4eD_5l3mJy7" role="1POhhj">
-      <ref role="2VUHf6" node="42QGQFVn3Dm" resolve="ObjectDetection" />
-      <node concept="2VUHfq" id="4eD_5l3mJy9" role="2VUBrq">
-        <property role="TrG5h" value="erroneous algorithm" />
-        <node concept="19SGf9" id="4eD_5l3mJyb" role="2VUHfi">
-          <node concept="19SUe$" id="4eD_5l3mJyc" role="19SJt6" />
-        </node>
-      </node>
-      <node concept="2VUHfq" id="4eD_5l3mJyt" role="2VUBrq">
-        <property role="TrG5h" value="low robustness of algorithm" />
-        <node concept="19SGf9" id="4eD_5l3mJyu" role="2VUHfi">
-          <node concept="19SUe$" id="4eD_5l3mJyv" role="19SJt6" />
-        </node>
-      </node>
-    </node>
-    <node concept="2VURXa" id="4eD_5l3mJ_Y" role="1POhhj" />
-    <node concept="2VUHfc" id="4eD_5l3mJ_u" role="1POhhj">
-      <ref role="2VUHf6" node="4eD_5l3mJo_" resolve="Manipulator" />
-      <node concept="2VUHfq" id="4eD_5l3mJ_v" role="2VUBrq">
-        <property role="TrG5h" value="force too high" />
-        <node concept="19SGf9" id="4eD_5l3mJ_w" role="2VUHfi">
-          <node concept="19SUe$" id="4eD_5l3mJ_x" role="19SJt6">
-            <property role="19SUeA" value="the manipulator grabs teh object with a too high force" />
-          </node>
-        </node>
-      </node>
-      <node concept="2VUHfq" id="4eD_5l3mJ_y" role="2VUBrq">
-        <property role="TrG5h" value="wrong coordinates" />
-        <node concept="19SGf9" id="4eD_5l3mJ_z" role="2VUHfi">
-          <node concept="19SUe$" id="4eD_5l3mJ_$" role="19SJt6">
-            <property role="19SUeA" value="the manipulator places an object at wrong coordinates" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1POhia" id="4eD_5l3mJyA">
-    <property role="TrG5h" value="_030_failure_effects_on_system" />
-    <property role="3GE5qa" value="_00_dfmea" />
-    <node concept="2VUvrO" id="4eD_5l3mJz1" role="1POhhj">
-      <node concept="2VUvrc" id="4eD_5l3mJz3" role="2VUkHK">
-        <property role="TrG5h" value="erroneous packaging" />
-        <node concept="19SGf9" id="4eD_5l3mJz5" role="2VUvr4">
-          <node concept="19SUe$" id="4eD_5l3mJz6" role="19SJt6">
-            <property role="19SUeA" value="the objects are erroneously packaged together" />
-          </node>
-        </node>
-      </node>
-      <node concept="2VUvrc" id="4eD_5l3mJzn" role="2VUkHK">
-        <property role="TrG5h" value="misplaced object" />
-        <node concept="19SGf9" id="4eD_5l3mJzo" role="2VUvr4">
-          <node concept="19SUe$" id="4eD_5l3mJzp" role="19SJt6" />
-        </node>
-      </node>
-      <node concept="2VUvrc" id="4eD_5l3mJzw" role="2VUkHK">
-        <property role="TrG5h" value="damaged object" />
-        <node concept="19SGf9" id="4eD_5l3mJzx" role="2VUvr4">
-          <node concept="19SUe$" id="4eD_5l3mJzy" role="19SJt6" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1POhia" id="4eD_5l3mJzG">
-    <property role="TrG5h" value="_040_dfmea" />
-    <property role="3GE5qa" value="_00_dfmea" />
-    <node concept="1PLMAg" id="4eD_5l3mJzR" role="1POhhj">
-      <ref role="1POnuR" node="42QGQFVn3Fg" resolve="SmartFactoryPackagingRobot" />
-      <node concept="1PLGxJ" id="4eD_5l3mJzY" role="1PLElB">
-        <ref role="1PLGwE" node="42QGQFVn3FJ" resolve="camera" />
-        <node concept="1PLKG7" id="4eD_5l3mJ$2" role="1PLCo$">
-          <ref role="1jQAtN" node="4eD_5l3mJwS" resolve="bad pixel" />
-          <node concept="1PNyZM" id="4eD_5l3mJ$4" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
-          </node>
-        </node>
-        <node concept="1PLKG7" id="4eD_5l3mJ$8" role="1PLCo$">
-          <ref role="1jQAtN" node="4eD_5l3mJx1" resolve="distorted image" />
-          <node concept="1PNyZM" id="4eD_5l3mJ$c" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJzn" resolve="misplaced object" />
-          </node>
-          <node concept="1PNyZM" id="4eD_5l3mJ$h" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
-          </node>
-        </node>
-      </node>
-      <node concept="1PLGxJ" id="4eD_5l3mJ$l" role="1PLElB">
-        <ref role="1PLGwE" node="42QGQFVn3FY" resolve="objects_detector" />
-        <node concept="1PLKG7" id="4eD_5l3mJ$v" role="1PLCo$">
-          <ref role="1jQAtN" node="4eD_5l3mJy9" resolve="erroneous algorithm" />
-          <node concept="1PNyZM" id="4eD_5l3mJ$x" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJzn" resolve="misplaced object" />
-          </node>
-        </node>
-        <node concept="1PLKG7" id="4eD_5l3mJ$U" role="1PLCo$">
-          <ref role="1jQAtN" node="4eD_5l3mJyt" resolve="low robustness of algorithm" />
-          <node concept="1PNyZM" id="4eD_5l3mJ$Y" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
-          </node>
-        </node>
-      </node>
-      <node concept="1PLGxJ" id="4eD_5l3mJ_0" role="1PLElB">
-        <ref role="1PLGwE" node="4eD_5l3mJsy" resolve="effector" />
-        <node concept="1PLKG7" id="4eD_5l3mJ_f" role="1PLCo$">
-          <ref role="1jQAtN" node="4eD_5l3mJ_v" resolve="force too high" />
-          <node concept="1PNyZM" id="4eD_5l3mJAp" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJzw" resolve="damaged object" />
-          </node>
-        </node>
-        <node concept="1PLKG7" id="4eD_5l3mJB3" role="1PLCo$">
-          <ref role="1jQAtN" node="4eD_5l3mJ_y" resolve="wrong coordinates" />
-          <node concept="1PNyZM" id="4eD_5l3mJB7" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
-          </node>
-          <node concept="1PNyZM" id="4eD_5l3mJBc" role="1PLCoy">
-            <ref role="2VPQEx" node="4eD_5l3mJzn" resolve="misplaced object" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="21ASy4" id="5rwT_JnuXe$">
     <property role="TrG5h" value="_100_fault_tree" />
     <property role="3GE5qa" value="_10_fault_tree" />
@@ -725,64 +582,6 @@
       <ref role="21oszj" node="3EWkVoQ59gs" />
       <ref role="21oszt" node="3EWkVoQ6KvA" resolve="erroneous_time" />
     </node>
-  </node>
-  <node concept="1POhia" id="1TeaL8RdKfy">
-    <property role="TrG5h" value="_210_failure_modes" />
-    <property role="3GE5qa" value="_20_hiphops" />
-    <node concept="Du1I4" id="62cfieENIh2" role="1POhhj">
-      <node concept="2VUHfq" id="62cfieENIji" role="Du1I9">
-        <property role="TrG5h" value="speed too low" />
-        <node concept="19SGf9" id="62cfieENIjm" role="2VUHfi">
-          <node concept="19SUe$" id="62cfieENIjn" role="19SJt6" />
-        </node>
-      </node>
-      <node concept="1savGX" id="62cfieENIia" role="3agqmW">
-        <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
-      </node>
-      <node concept="2VUHfq" id="62cfieENIjB" role="Du1I9">
-        <property role="TrG5h" value="speed too high" />
-        <node concept="19SGf9" id="62cfieENIjF" role="2VUHfi">
-          <node concept="19SUe$" id="62cfieENIjG" role="19SJt6" />
-        </node>
-      </node>
-    </node>
-    <node concept="2VURXa" id="62cfieEOvFI" role="1POhhj" />
-    <node concept="Du1I4" id="62cfieEOvEB" role="1POhhj">
-      <node concept="2VUHfq" id="62cfieEOvEC" role="Du1I9">
-        <property role="TrG5h" value="speed innacurate" />
-        <node concept="19SGf9" id="62cfieEOvED" role="2VUHfi">
-          <node concept="19SUe$" id="62cfieEOvEE" role="19SJt6" />
-        </node>
-      </node>
-      <node concept="1savGX" id="3bh1RFvziCY" role="3agqmW">
-        <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
-      </node>
-    </node>
-    <node concept="2VURXa" id="3bh1RFvziE1" role="1POhhj" />
-    <node concept="Du1I4" id="3bh1RFvziD4" role="1POhhj">
-      <node concept="2VUHfq" id="3bh1RFvziD5" role="Du1I9">
-        <property role="TrG5h" value="brake force innacurate" />
-        <node concept="19SGf9" id="3bh1RFvziD6" role="2VUHfi">
-          <node concept="19SUe$" id="3bh1RFvziD7" role="19SJt6" />
-        </node>
-      </node>
-      <node concept="1savGX" id="3bh1RFvziEX" role="3agqmW">
-        <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
-      </node>
-    </node>
-    <node concept="2VURXa" id="5g1NREKNQJV" role="1POhhj" />
-    <node concept="2VUHfc" id="5g1NREKNQIM" role="1POhhj">
-      <ref role="2VUHf6" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
-      <node concept="2VUHfq" id="5g1NREKNQIO" role="2VUBrq">
-        <property role="TrG5h" value="innacurate_computation" />
-        <node concept="19SGf9" id="5g1NREKNQIQ" role="2VUHfi">
-          <node concept="19SUe$" id="5g1NREKNQIR" role="19SJt6">
-            <property role="19SUeA" value="plausibilization mechanism broken" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2VURXa" id="1TeaL8RdXqm" role="1POhhj" />
   </node>
   <node concept="2HdtXS" id="1TeaL8RdujH">
     <property role="TrG5h" value="_200_arch" />
@@ -1100,34 +899,241 @@
     <node concept="2SQmWS" id="1TeaL8Rdulc" role="2HcuB8" />
     <node concept="2SQmWS" id="1TeaL8Rdulj" role="2HcuB8" />
   </node>
+  <node concept="1POhia" id="4eD_5l3mJwO">
+    <property role="TrG5h" value="_020_failure_modes_of_components" />
+    <property role="3GE5qa" value="_00_dfmea" />
+    <node concept="2VUHfc" id="4eD_5l3mJwQ" role="1POhhj">
+      <ref role="2VUHf6" node="42QGQFVn3Bd" resolve="HDCamera" />
+      <node concept="2VUHfq" id="4eD_5l3mJwS" role="2VUBrq">
+        <property role="TrG5h" value="bad pixel" />
+        <node concept="19SGf9" id="4eD_5l3mJwU" role="2VUHfi">
+          <node concept="19SUe$" id="4eD_5l3mJwV" role="19SJt6">
+            <property role="19SUeA" value="a pixel is innactive" />
+          </node>
+        </node>
+      </node>
+      <node concept="2VUHfq" id="4eD_5l3mJx1" role="2VUBrq">
+        <property role="TrG5h" value="distorted image" />
+        <node concept="19SGf9" id="4eD_5l3mJx2" role="2VUHfi">
+          <node concept="19SUe$" id="4eD_5l3mJx3" role="19SJt6">
+            <property role="19SUeA" value="image is distorted" />
+          </node>
+        </node>
+      </node>
+      <node concept="2VUHfq" id="4eD_5l3mJxa" role="2VUBrq">
+        <property role="TrG5h" value="low contrast" />
+        <node concept="19SGf9" id="4eD_5l3mJxb" role="2VUHfi">
+          <node concept="19SUe$" id="4eD_5l3mJxc" role="19SJt6" />
+        </node>
+      </node>
+    </node>
+    <node concept="2VURXa" id="4eD_5l3mJxI" role="1POhhj" />
+    <node concept="2VUHfc" id="4eD_5l3mJy7" role="1POhhj">
+      <ref role="2VUHf6" node="42QGQFVn3Dm" resolve="ObjectDetection" />
+      <node concept="2VUHfq" id="4eD_5l3mJy9" role="2VUBrq">
+        <property role="TrG5h" value="erroneous algorithm" />
+        <node concept="19SGf9" id="4eD_5l3mJyb" role="2VUHfi">
+          <node concept="19SUe$" id="4eD_5l3mJyc" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="2VUHfq" id="4eD_5l3mJyt" role="2VUBrq">
+        <property role="TrG5h" value="low robustness of algorithm" />
+        <node concept="19SGf9" id="4eD_5l3mJyu" role="2VUHfi">
+          <node concept="19SUe$" id="4eD_5l3mJyv" role="19SJt6" />
+        </node>
+      </node>
+    </node>
+    <node concept="2VURXa" id="4eD_5l3mJ_Y" role="1POhhj" />
+    <node concept="2VUHfc" id="4eD_5l3mJ_u" role="1POhhj">
+      <ref role="2VUHf6" node="4eD_5l3mJo_" resolve="Manipulator" />
+      <node concept="2VUHfq" id="4eD_5l3mJ_v" role="2VUBrq">
+        <property role="TrG5h" value="force too high" />
+        <node concept="19SGf9" id="4eD_5l3mJ_w" role="2VUHfi">
+          <node concept="19SUe$" id="4eD_5l3mJ_x" role="19SJt6">
+            <property role="19SUeA" value="the manipulator grabs teh object with a too high force" />
+          </node>
+        </node>
+      </node>
+      <node concept="2VUHfq" id="4eD_5l3mJ_y" role="2VUBrq">
+        <property role="TrG5h" value="wrong coordinates" />
+        <node concept="19SGf9" id="4eD_5l3mJ_z" role="2VUHfi">
+          <node concept="19SUe$" id="4eD_5l3mJ_$" role="19SJt6">
+            <property role="19SUeA" value="the manipulator places an object at wrong coordinates" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1POhia" id="4eD_5l3mJyA">
+    <property role="TrG5h" value="_030_failure_effects_on_system" />
+    <property role="3GE5qa" value="_00_dfmea" />
+    <node concept="2VUvrO" id="4eD_5l3mJz1" role="1POhhj">
+      <node concept="2VUvrc" id="4eD_5l3mJz3" role="2VUkHK">
+        <property role="TrG5h" value="erroneous packaging" />
+        <node concept="19SGf9" id="4eD_5l3mJz5" role="2VUvr4">
+          <node concept="19SUe$" id="4eD_5l3mJz6" role="19SJt6">
+            <property role="19SUeA" value="the objects are erroneously packaged together" />
+          </node>
+        </node>
+      </node>
+      <node concept="2VUvrc" id="4eD_5l3mJzn" role="2VUkHK">
+        <property role="TrG5h" value="misplaced object" />
+        <node concept="19SGf9" id="4eD_5l3mJzo" role="2VUvr4">
+          <node concept="19SUe$" id="4eD_5l3mJzp" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="2VUvrc" id="4eD_5l3mJzw" role="2VUkHK">
+        <property role="TrG5h" value="damaged object" />
+        <node concept="19SGf9" id="4eD_5l3mJzx" role="2VUvr4">
+          <node concept="19SUe$" id="4eD_5l3mJzy" role="19SJt6" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1POhia" id="4eD_5l3mJzG">
+    <property role="TrG5h" value="_040_dfmea" />
+    <property role="3GE5qa" value="_00_dfmea" />
+    <node concept="1PLMAg" id="4eD_5l3mJzR" role="1POhhj">
+      <ref role="1POnuR" node="42QGQFVn3Fg" resolve="SmartFactoryPackagingRobot" />
+      <node concept="1PLGxJ" id="4eD_5l3mJzY" role="1PLElB">
+        <ref role="1PLGwE" node="42QGQFVn3FJ" resolve="camera" />
+        <node concept="1PLKG7" id="4eD_5l3mJ$2" role="1PLCo$">
+          <ref role="1jQAtN" node="4eD_5l3mJwS" resolve="bad pixel" />
+          <node concept="1PNyZM" id="4eD_5l3mJ$4" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
+          </node>
+        </node>
+        <node concept="1PLKG7" id="4eD_5l3mJ$8" role="1PLCo$">
+          <ref role="1jQAtN" node="4eD_5l3mJx1" resolve="distorted image" />
+          <node concept="1PNyZM" id="4eD_5l3mJ$c" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJzn" resolve="misplaced object" />
+          </node>
+          <node concept="1PNyZM" id="4eD_5l3mJ$h" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
+          </node>
+        </node>
+      </node>
+      <node concept="1PLGxJ" id="4eD_5l3mJ$l" role="1PLElB">
+        <ref role="1PLGwE" node="42QGQFVn3FY" resolve="objects_detector" />
+        <node concept="1PLKG7" id="4eD_5l3mJ$v" role="1PLCo$">
+          <ref role="1jQAtN" node="4eD_5l3mJy9" resolve="erroneous algorithm" />
+          <node concept="1PNyZM" id="4eD_5l3mJ$x" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJzn" resolve="misplaced object" />
+          </node>
+        </node>
+        <node concept="1PLKG7" id="4eD_5l3mJ$U" role="1PLCo$">
+          <ref role="1jQAtN" node="4eD_5l3mJyt" resolve="low robustness of algorithm" />
+          <node concept="1PNyZM" id="4eD_5l3mJ$Y" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
+          </node>
+        </node>
+      </node>
+      <node concept="1PLGxJ" id="4eD_5l3mJ_0" role="1PLElB">
+        <ref role="1PLGwE" node="4eD_5l3mJsy" resolve="effector" />
+        <node concept="1PLKG7" id="4eD_5l3mJ_f" role="1PLCo$">
+          <ref role="1jQAtN" node="4eD_5l3mJ_v" resolve="force too high" />
+          <node concept="1PNyZM" id="4eD_5l3mJAp" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJzw" resolve="damaged object" />
+          </node>
+        </node>
+        <node concept="1PLKG7" id="4eD_5l3mJB3" role="1PLCo$">
+          <ref role="1jQAtN" node="4eD_5l3mJ_y" resolve="wrong coordinates" />
+          <node concept="1PNyZM" id="4eD_5l3mJB7" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
+          </node>
+          <node concept="1PNyZM" id="4eD_5l3mJBc" role="1PLCoy">
+            <ref role="2VPQEx" node="4eD_5l3mJzn" resolve="misplaced object" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1POhia" id="1TeaL8RdKfy">
+    <property role="TrG5h" value="_210_failure_modes" />
+    <property role="3GE5qa" value="_20_hiphops" />
+    <node concept="Du1I4" id="62cfieENIh2" role="1POhhj">
+      <node concept="2VUHfq" id="62cfieENIji" role="Du1I9">
+        <property role="TrG5h" value="speed too low" />
+        <node concept="19SGf9" id="62cfieENIjm" role="2VUHfi">
+          <node concept="19SUe$" id="62cfieENIjn" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="2VUHfq" id="62cfieENIjB" role="Du1I9">
+        <property role="TrG5h" value="speed too high" />
+        <node concept="19SGf9" id="62cfieENIjF" role="2VUHfi">
+          <node concept="19SUe$" id="62cfieENIjG" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="1savGX" id="62cfieENIia" role="3agqmW">
+        <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
+      </node>
+    </node>
+    <node concept="2VURXa" id="62cfieEOvFI" role="1POhhj" />
+    <node concept="Du1I4" id="62cfieEOvEB" role="1POhhj">
+      <node concept="2VUHfq" id="62cfieEOvEC" role="Du1I9">
+        <property role="TrG5h" value="speed innacurate" />
+        <node concept="19SGf9" id="62cfieEOvED" role="2VUHfi">
+          <node concept="19SUe$" id="62cfieEOvEE" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="1savGX" id="3bh1RFvziCY" role="3agqmW">
+        <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
+      </node>
+    </node>
+    <node concept="2VURXa" id="3bh1RFvziE1" role="1POhhj" />
+    <node concept="Du1I4" id="3bh1RFvziD4" role="1POhhj">
+      <node concept="2VUHfq" id="3bh1RFvziD5" role="Du1I9">
+        <property role="TrG5h" value="brake force innacurate" />
+        <node concept="19SGf9" id="3bh1RFvziD6" role="2VUHfi">
+          <node concept="19SUe$" id="3bh1RFvziD7" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="1savGX" id="3bh1RFvziEX" role="3agqmW">
+        <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
+      </node>
+    </node>
+    <node concept="2VURXa" id="5g1NREKNQJV" role="1POhhj" />
+    <node concept="2VUHfc" id="5g1NREKNQIM" role="1POhhj">
+      <ref role="2VUHf6" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
+      <node concept="2VUHfq" id="5g1NREKNQIO" role="2VUBrq">
+        <property role="TrG5h" value="innacurate_computation" />
+        <node concept="19SGf9" id="5g1NREKNQIQ" role="2VUHfi">
+          <node concept="19SUe$" id="5g1NREKNQIR" role="19SJt6">
+            <property role="19SUeA" value="plausibilization mechanism broken" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2VURXa" id="1TeaL8RdXqm" role="1POhhj" />
+  </node>
   <node concept="1POhia" id="4eD_5l3mJEf">
     <property role="TrG5h" value="_220_IFMEAs" />
     <property role="3GE5qa" value="_20_hiphops" />
     <node concept="DuJXM" id="1TeaL8RdXqH" role="1POhhj">
       <ref role="DuJYV" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
-      <node concept="DtCCM" id="62cfieEQj9X" role="DuvRR">
-        <node concept="DtHRJ" id="62cfieEQj9Z" role="3anSPv">
+      <node concept="DtCCM" id="1f_hJh2rmtB" role="DuvRR">
+        <node concept="2HbMDt" id="1f_hJh2rmu7" role="1hIEvS">
+          <node concept="DtHRJ" id="1f_hJh2rmwf" role="2H9Iav">
+            <ref role="DtHRG" node="62cfieENIji" resolve="speed too low" />
+            <node concept="3Ug1Ap" id="1f_hJh2rmvv" role="3anSQx">
+              <ref role="3Ug1Ao" node="1TeaL8Rdukn" resolve="speed" />
+            </node>
+          </node>
+          <node concept="DtHRJ" id="1f_hJh2rmww" role="2H9Ial">
+            <ref role="DtHRG" node="62cfieENIjB" resolve="speed too high" />
+            <node concept="3Ug1Ap" id="1f_hJh2rmwx" role="3anSQx">
+              <ref role="3Ug1Ao" node="1TeaL8Rdukn" resolve="speed" />
+            </node>
+          </node>
+        </node>
+        <node concept="3$NFnr" id="1f_hJh2rmur" role="1hIEvT">
+          <ref role="3$NFno" node="5g1NREKNQIO" resolve="innacurate_computation" />
+        </node>
+        <node concept="DtHRJ" id="1f_hJh2rmv5" role="1hIEvZ">
           <ref role="DtHRG" node="62cfieEOvEC" resolve="speed innacurate" />
-          <node concept="3Ug1Ap" id="62cfieEQjaj" role="3anSQx">
+          <node concept="3Ug1Ap" id="1f_hJh2rmv3" role="3anSQx">
             <ref role="3Ug1Ao" node="1TeaL8RdujM" resolve="plausibilizedSpeed" />
           </node>
-        </node>
-        <node concept="2HbMDt" id="3txYam0crX6" role="DtCCN">
-          <node concept="DtHRJ" id="3txYam0baKK" role="2H9Iav">
-            <ref role="DtHRG" node="62cfieENIjB" resolve="speed too high" />
-            <node concept="3Ug1Ap" id="3txYam0baKL" role="3anSQx">
-              <ref role="3Ug1Ao" node="1TeaL8Rdukn" resolve="speed" />
-            </node>
-          </node>
-          <node concept="DtHRJ" id="3txYam0baLc" role="2H9Ial">
-            <ref role="DtHRG" node="62cfieENIji" resolve="speed too low" />
-            <node concept="3Ug1Ap" id="3txYam0baLd" role="3anSQx">
-              <ref role="3Ug1Ao" node="1TeaL8Rdukn" resolve="speed" />
-            </node>
-          </node>
-        </node>
-        <node concept="3$NFnr" id="5g1NREKOpVE" role="26Ggtk">
-          <ref role="3$NFno" node="5g1NREKNQIO" resolve="innacurate_computation" />
         </node>
       </node>
     </node>
@@ -1265,16 +1271,16 @@
     <node concept="2VURXa" id="3bh1RFvziHa" role="1POhhj" />
     <node concept="DuJXM" id="3bh1RFvziFV" role="1POhhj">
       <ref role="DuJYV" node="62cfieENdX5" resolve="Braking" />
-      <node concept="DtCCM" id="3bh1RFvziFW" role="DuvRR">
-        <node concept="DtHRJ" id="3bh1RFvziFX" role="3anSPv">
+      <node concept="DtCCM" id="1f_hJh2rmwJ" role="DuvRR">
+        <node concept="DtHRJ" id="1f_hJh2rmx1" role="1hIEvZ">
           <ref role="DtHRG" node="3bh1RFvziD5" resolve="brake force innacurate" />
-          <node concept="3Ug1Ap" id="3bh1RFvziIc" role="3anSQx">
+          <node concept="3Ug1Ap" id="1f_hJh2rmwZ" role="3anSQx">
             <ref role="3Ug1Ao" node="62cfieENdX8" resolve="brakeCmd" />
           </node>
         </node>
-        <node concept="DtHRJ" id="3bh1RFvziIX" role="DtCCN">
+        <node concept="DtHRJ" id="1f_hJh2rmxm" role="1hIEvS">
           <ref role="DtHRG" node="62cfieEOvEC" resolve="speed innacurate" />
-          <node concept="3Ug1Ap" id="3bh1RFvziIG" role="3anSQx">
+          <node concept="3Ug1Ap" id="1f_hJh2rmxd" role="3anSQx">
             <ref role="3Ug1Ao" node="62cfieENdX6" resolve="speed" />
           </node>
         </node>

@@ -12,6 +12,7 @@
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea" version="0" />
   </languages>
   <imports>
     <import index="lr73" ref="r:47b9f784-2d4a-4adf-a2c1-7e71108590c5(com.fasten.safety.hiphops.behavior)" />
@@ -92,11 +93,10 @@
       </concept>
     </language>
     <language id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops">
-      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM" />
-      <concept id="2183730226557081300" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogicBase" flags="ng" index="DuvR6">
-        <child id="5347632610808405202" name="componentMalfunctionLogic" index="26Ggtk" />
-        <child id="2183730226557133089" name="inputDeviationLogic" index="DtCCN" />
-        <child id="6957002747779723388" name="failureModeRef" index="3anSPv" />
+      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM">
+        <child id="1433630071286915340" name="inputDeviationLogic" index="1hIEvS" />
+        <child id="1433630071286915341" name="componentMalfunctionLogic" index="1hIEvT" />
+        <child id="1433630071286915339" name="failureModeRef" index="1hIEvZ" />
       </concept>
       <concept id="1433630071283045915" name="com.fasten.safety.hiphops.structure.ComponentFailureModeRefExpressionBase" flags="ng" index="1hKp3J">
         <reference id="6053347500022004386" name="failureMode" index="3$NFno" />
@@ -128,6 +128,12 @@
       <concept id="6260256764176593194" name="com.fasten.safety.ft.structure.BasicEvent" flags="ng" index="21ATtL" />
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
     </language>
+    <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
+      <concept id="8413234032528120653" name="com.fasten.safety.fmea.structure.DesignFMEARoot" flags="ng" index="1POhia">
+        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
+      </concept>
+    </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
     </language>
@@ -148,12 +154,6 @@
         <child id="6957002747778834777" name="ft" index="3aixLU" />
       </concept>
       <concept id="6053347500022004385" name="com.fasten.safety.hiphops.arch.structure.ComponentFailureModeRefExpression" flags="ng" index="3$NFnr" />
-    </language>
-    <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
-      <concept id="4663111736253860896" name="com.fasten.safety.fmea.arch.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
-      <concept id="8413234032528120653" name="com.fasten.safety.fmea.arch.structure.DesignFMEARoot" flags="ng" index="1POhia">
-        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
-      </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -450,13 +450,13 @@
         <node concept="DuJXM" id="3bh1RFvF46W" role="1POhhj">
           <ref role="DuJYV" to="o8e:1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
           <node concept="DtCCM" id="3bh1RFvF46X" role="DuvRR">
-            <node concept="DtHRJ" id="3bh1RFvF46Y" role="3anSPv">
+            <node concept="DtHRJ" id="3bh1RFvF46Y" role="1hIEvZ">
               <ref role="DtHRG" to="o8e:62cfieEOvEC" resolve="speed innacurate" />
               <node concept="3Ug1Ap" id="3bh1RFvF46Z" role="3anSQx">
                 <ref role="3Ug1Ao" to="o8e:1TeaL8RdujM" resolve="plausibilizedSpeed" />
               </node>
             </node>
-            <node concept="2HbMDt" id="3bh1RFvF470" role="DtCCN">
+            <node concept="2HbMDt" id="3bh1RFvF470" role="1hIEvS">
               <node concept="DtHRJ" id="3bh1RFvF471" role="2H9Iav">
                 <ref role="DtHRG" to="o8e:62cfieENIjB" resolve="speed too high" />
                 <node concept="3Ug1Ap" id="3bh1RFvF472" role="3anSQx">
@@ -694,13 +694,16 @@
         <node concept="DuJXM" id="1TeaL8RdXqH" role="1POhhj">
           <ref role="DuJYV" to="9cln:1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
           <node concept="DtCCM" id="62cfieEQj9X" role="DuvRR">
-            <node concept="DtHRJ" id="62cfieEQj9Z" role="3anSPv">
+            <node concept="3$NFnr" id="5g1NREKOpVE" role="1hIEvT">
+              <ref role="3$NFno" to="9cln:5g1NREKNQIO" resolve="innacurate_computation" />
+            </node>
+            <node concept="DtHRJ" id="62cfieEQj9Z" role="1hIEvZ">
               <ref role="DtHRG" to="9cln:62cfieEOvEC" resolve="speed innacurate" />
               <node concept="3Ug1Ap" id="62cfieEQjaj" role="3anSQx">
                 <ref role="3Ug1Ao" to="9cln:1TeaL8RdujM" resolve="plausibilizedSpeed" />
               </node>
             </node>
-            <node concept="2HbMDt" id="3txYam0crX6" role="DtCCN">
+            <node concept="2HbMDt" id="3txYam0crX6" role="1hIEvS">
               <node concept="DtHRJ" id="3txYam0baKK" role="2H9Iav">
                 <ref role="DtHRG" to="9cln:62cfieENIjB" resolve="speed too high" />
                 <node concept="3Ug1Ap" id="3txYam0baKL" role="3anSQx">
@@ -713,9 +716,6 @@
                   <ref role="3Ug1Ao" to="9cln:1TeaL8Rdukn" resolve="speed" />
                 </node>
               </node>
-            </node>
-            <node concept="3$NFnr" id="5g1NREKOpVE" role="26Ggtk">
-              <ref role="3$NFno" to="9cln:5g1NREKNQIO" resolve="innacurate_computation" />
             </node>
           </node>
           <node concept="3xLA65" id="5g1NREKP_iM" role="lGtFl">

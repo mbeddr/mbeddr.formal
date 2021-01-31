@@ -9,6 +9,7 @@
     <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" />
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
+    <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
   </imports>
@@ -53,7 +54,7 @@
       <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
     <node concept="PrWs8" id="1TeaL8Rdulr" role="PzmwI">
-      <ref role="PrY4T" to="g9vz:42QGQFVnclm" resolve="IDesignFMEARootContent" />
+      <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
     <node concept="PrWs8" id="1TeaL8Rem1j" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -97,7 +98,7 @@
       <ref role="20lvS9" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
     </node>
     <node concept="PrWs8" id="62cfieELy5n" role="PzmwI">
-      <ref role="PrY4T" to="g9vz:42QGQFVnclm" resolve="IDesignFMEARootContent" />
+      <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="5g1NREKNREx">

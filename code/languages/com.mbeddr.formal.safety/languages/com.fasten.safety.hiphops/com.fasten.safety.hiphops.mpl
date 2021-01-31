@@ -119,6 +119,7 @@
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</extendedLanguage>
+    <extendedLanguage>b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)</extendedLanguage>
   </extendedLanguages>
 </language>
 

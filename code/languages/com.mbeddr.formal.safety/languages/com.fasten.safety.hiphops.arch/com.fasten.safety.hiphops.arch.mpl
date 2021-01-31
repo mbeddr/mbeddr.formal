@@ -137,6 +137,7 @@
     <extendedLanguage>1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)</extendedLanguage>
     <extendedLanguage>c6d7e8a3-3d80-479a-8799-a11fe1902b1c(com.fasten.safety.hiphops)</extendedLanguage>
     <extendedLanguage>b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</extendedLanguage>
+    <extendedLanguage>b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)</extendedLanguage>
   </extendedLanguages>
 </language>
 

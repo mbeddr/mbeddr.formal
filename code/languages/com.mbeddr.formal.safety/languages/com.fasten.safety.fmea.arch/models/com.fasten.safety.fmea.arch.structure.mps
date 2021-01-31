@@ -13,23 +13,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
-        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
-      </concept>
-      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
-        <property id="2756621024541681854" name="text" index="1irPi9" />
-        <child id="1860120738943552534" name="color" index="3PKjny" />
-      </concept>
-      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
-        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
-        <child id="2756621024541675110" name="layers" index="1irR9h" />
-      </concept>
-      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
-      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
-        <property id="1860120738943552481" name="val" index="3PKj8l" />
-      </concept>
-    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -37,14 +20,11 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
-        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -77,7 +57,7 @@
       <ref role="20lvS9" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
     </node>
     <node concept="PrWs8" id="42QGQFVncls" role="PzmwI">
-      <ref role="PrY4T" node="42QGQFVnclm" resolve="IDesignFMEARootContent" />
+      <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="7j1NWs11KuC">
@@ -105,38 +85,6 @@
       <ref role="20lvS9" node="42QGQFVnOmA" resolve="ComponentFailureEffectDefinition" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7j1NWs14dHd">
-    <property role="EcuMT" value="8413234032528120653" />
-    <property role="TrG5h" value="DesignFMEARoot" />
-    <property role="34LRSv" value="DFMEA container" />
-    <property role="R4oN_" value="design FMEA container" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7j1NWs14dIi" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="7j1NWs14dIk" role="1TKVEi">
-      <property role="IQ2ns" value="8413234032528120724" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dfmeas" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="42QGQFVnclm" resolve="IDesignFMEARootContent" />
-    </node>
-    <node concept="1irR5M" id="42QGQFVoYRy" role="rwd14">
-      <property role="2$rrk2" value="1" />
-      <node concept="1irR9n" id="42QGQFVoYRA" role="1irR9h">
-        <node concept="3PKj8D" id="42QGQFVoYRF" role="3PKjn_">
-          <property role="3PKj8l" value="12FFFF" />
-        </node>
-      </node>
-      <node concept="1irPie" id="42QGQFVoYRM" role="1irR9h">
-        <property role="1irPi9" value="F" />
-        <node concept="3PKj8D" id="42QGQFVoYRT" role="3PKjny">
-          <property role="3PKj8l" value="123456" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1TIwiD" id="42QGQFVn62A">
     <property role="EcuMT" value="4663111736253767846" />
     <property role="TrG5h" value="ComponentFailureModesDefinition" />
@@ -151,7 +99,7 @@
       <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
     </node>
     <node concept="PrWs8" id="42QGQFVnclu" role="PzmwI">
-      <ref role="PrY4T" node="42QGQFVnclm" resolve="IDesignFMEARootContent" />
+      <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
     <node concept="1TJgyj" id="42QGQFVncmK" role="1TKVEi">
       <property role="IQ2ns" value="4663111736253793712" />
@@ -172,18 +120,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="PlHQZ" id="42QGQFVnclm">
-    <property role="EcuMT" value="4663111736253793622" />
-    <property role="TrG5h" value="IDesignFMEARootContent" />
-  </node>
-  <node concept="1TIwiD" id="42QGQFVnsKw">
-    <property role="EcuMT" value="4663111736253860896" />
-    <property role="TrG5h" value="DesignFMEAEmptyLine" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="42QGQFVnsKA" role="PzmwI">
-      <ref role="PrY4T" node="42QGQFVnclm" resolve="IDesignFMEARootContent" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="42QGQFVnOmu">
     <property role="EcuMT" value="4663111736253957534" />
     <property role="3GE5qa" value="definitions" />
@@ -192,7 +128,7 @@
     <property role="R4oN_" value="failure effects of a component" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="42QGQFVnOm$" role="PzmwI">
-      <ref role="PrY4T" node="42QGQFVnclm" resolve="IDesignFMEARootContent" />
+      <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
     <node concept="1TJgyj" id="42QGQFVnZwq" role="1TKVEi">
       <property role="IQ2ns" value="4663111736254003226" />
