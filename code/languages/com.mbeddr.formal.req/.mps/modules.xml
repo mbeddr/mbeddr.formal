@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.arch/com.mbeddr.formal.req.tl_patterns.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.nusmv/com.mbeddr.formal.req.tl_patterns.nusmv.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns/com.mbeddr.formal.req.tl_patterns.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.odd.pluginSolution/com.fasten.req.odd.pluginSolution.msd" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.odd.sandbox/com.fasten.req.odd.sandbox.msd" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.ontology.lib/com.fasten.req.ontology.lib.msd" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.base.pluginSolution/com.mbeddr.formal.req.base.pluginSolution.msd" folder="lang" />

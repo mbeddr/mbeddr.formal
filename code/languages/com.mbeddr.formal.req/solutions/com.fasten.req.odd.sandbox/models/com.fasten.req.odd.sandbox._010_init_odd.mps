@@ -7,6 +7,7 @@
   <imports />
   <registry>
     <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
+      <concept id="8375050574357864792" name="com.fasten.req.odd.structure.EmptyLine" flags="ng" index="2CGw_7" />
       <concept id="1743143573359761951" name="com.fasten.req.odd.structure.OntologyConceptRef" flags="ng" index="MFvB7">
         <reference id="1743143573359761952" name="ontologyConcept" index="MFvBS" />
       </concept>
@@ -87,9 +88,9 @@
   </node>
   <node concept="3SOpcF" id="3Jn$RV31zgb">
     <property role="TrG5h" value="wordnet" />
+    <node concept="2CGw_7" id="7_0zmWzBdAL" role="3SOpfD" />
     <node concept="3SOpcA" id="3Jn$RV31zge" role="3SOpfD">
       <property role="TrG5h" value="visual signal" />
-      <ref role="3SOpc_" node="1UJ51yZA8AC" resolve="signal" />
     </node>
     <node concept="3SOpcA" id="3Jn$RV31zgc" role="3SOpfD">
       <property role="TrG5h" value="light" />

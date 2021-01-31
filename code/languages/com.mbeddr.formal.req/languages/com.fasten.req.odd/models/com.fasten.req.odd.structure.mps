@@ -32,6 +32,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -170,15 +171,20 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="concepts" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3Jn$RV31w1o" resolve="OntologyConcept" />
+      <ref role="20lvS9" node="7gUa1Zsy25c" resolve="IOntologyContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Jn$RV31w1o">
     <property role="EcuMT" value="4312077340877652056" />
     <property role="TrG5h" value="OntologyConcept" />
+    <property role="34LRSv" value="concept" />
+    <property role="R4oN_" value="a concept from the ontology" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Jn$RV31w1p" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7gUa1Zsy25i" role="PzmwI">
+      <ref role="PrY4T" node="7gUa1Zsy25c" resolve="IOntologyContent" />
     </node>
     <node concept="1TJgyj" id="3Jn$RV31w1r" role="1TKVEi">
       <property role="IQ2ns" value="4312077340877652059" />
@@ -191,6 +197,12 @@
       <property role="20kJfa" value="attributes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1wKSXwEBhCv" resolve="OntologyConceptRef" />
+    </node>
+    <node concept="1TJgyj" id="1f_hJh22Fy7" role="1TKVEi">
+      <property role="IQ2ns" value="1433630071281334407" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="explanation" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
   <node concept="1TIwiD" id="1wKSXwEBhCv">
@@ -243,6 +255,18 @@
       <property role="20kJfa" value="dim" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3Jn$RV31p8M" resolve="ODDParameterDimension" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7gUa1Zsy25c">
+    <property role="EcuMT" value="8375050574357864780" />
+    <property role="TrG5h" value="IOntologyContent" />
+  </node>
+  <node concept="1TIwiD" id="7gUa1Zsy25o">
+    <property role="EcuMT" value="8375050574357864792" />
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7gUa1Zsy25p" role="PzmwI">
+      <ref role="PrY4T" node="7gUa1Zsy25c" resolve="IOntologyContent" />
     </node>
   </node>
 </model>
