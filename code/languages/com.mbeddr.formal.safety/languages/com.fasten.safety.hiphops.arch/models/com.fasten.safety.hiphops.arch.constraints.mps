@@ -150,7 +150,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="1TeaL8RelWD">
-    <ref role="1M2myG" to="zsc5:1TeaL8RefrX" resolve="FailureModeRefExpression" />
+    <ref role="1M2myG" to="zsc5:1TeaL8RefrX" resolve="PortFailureModeRefExpression" />
     <node concept="1N5Pfh" id="1TeaL8RelWE" role="1Mr941">
       <ref role="1N5Vy1" to="ii8j:1TeaL8RefrY" resolve="failureMode" />
       <node concept="3dgokm" id="62cfieEP8Gv" role="1N6uqs">
@@ -185,7 +185,7 @@
                         <node concept="2Xjw5R" id="62cfieEPkmH" role="2OqNvi">
                           <node concept="1xMEDy" id="62cfieEPkmI" role="1xVPHs">
                             <node concept="chp4Y" id="62cfieEPkmJ" role="ri$Ld">
-                              <ref role="cht4Q" to="zsc5:1TeaL8RefrX" resolve="FailureModeRefExpression" />
+                              <ref role="cht4Q" to="zsc5:1TeaL8RefrX" resolve="PortFailureModeRefExpression" />
                             </node>
                           </node>
                           <node concept="1xIGOp" id="62cfieEPkmK" role="1xVPHs" />
@@ -328,7 +328,7 @@
   <node concept="1M2fIO" id="5g1NREKNRFi">
     <ref role="1M2myG" to="zsc5:5g1NREKNREx" resolve="ComponentFailureModeRefExpression" />
     <node concept="1N5Pfh" id="5g1NREKNRFj" role="1Mr941">
-      <ref role="1N5Vy1" to="zsc5:5g1NREKNREy" resolve="failureMode" />
+      <ref role="1N5Vy1" to="ii8j:5g1NREKNREy" resolve="failureMode" />
       <node concept="3dgokm" id="5g1NREKNRHz" role="1N6uqs">
         <node concept="3clFbS" id="5g1NREKNRH$" role="2VODD2">
           <node concept="3cpWs8" id="5g1NREKNXVi" role="3cqZAp">

@@ -77,23 +77,9 @@
       <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
-      <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
-        <child id="1397920687865593523" name="cells" index="2r0Tv6" />
-      </concept>
-      <concept id="1397920687864997170" name="de.slisson.mps.tables.structure.TableNodeCollection" flags="ng" index="2reCL7">
-        <child id="1397920687864997171" name="childTableNodes" index="2reCL6" />
-      </concept>
-      <concept id="1397920687864997153" name="de.slisson.mps.tables.structure.StaticHorizontal" flags="ng" index="2reCLk" />
-      <concept id="1397920687864997143" name="de.slisson.mps.tables.structure.TableCell" flags="ng" index="2reCLy">
-        <child id="1397920687865111420" name="columnHeader" index="2recC9" />
-        <child id="1397920687865064647" name="editorCell" index="2reSmM" />
-      </concept>
       <concept id="1397920687865064415" name="de.slisson.mps.tables.structure.ChildsVertical" flags="ng" index="2reSaE" />
       <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
         <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
-      </concept>
-      <concept id="1397920687864864270" name="de.slisson.mps.tables.structure.StaticHeader" flags="ng" index="2rfbtV">
-        <property id="1397920687864864274" name="text" index="2rfbtB" />
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
@@ -138,24 +124,6 @@
       <node concept="2iRkQZ" id="1TeaL8Rdz2K" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1TeaL8Rdz4Y">
-    <ref role="1XX52x" to="zsc5:1TeaL8Rdz2u" resolve="PortFailureModes" />
-    <node concept="2r0Tta" id="1TeaL8Rdz50" role="2wV5jI">
-      <node concept="2reCLk" id="1TeaL8Rdz5c" role="2r0Tv6">
-        <node concept="2reCLy" id="1TeaL8Rdz53" role="2reCL6">
-          <node concept="3F1sOY" id="1TeaL8Rdz57" role="2reSmM">
-            <ref role="1NtTu8" to="zsc5:1TeaL8Rdz2x" resolve="port" />
-          </node>
-          <node concept="2rfbtV" id="1TeaL8RdXd5" role="2recC9">
-            <property role="2rfbtB" value="Port" />
-          </node>
-        </node>
-        <node concept="2reSaE" id="1TeaL8Rdz5m" role="2reCL6">
-          <ref role="2reCK$" to="zsc5:1TeaL8Rdz2v" resolve="failureModes" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1TeaL8Re4pO">
     <ref role="1XX52x" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
     <node concept="3EZMnI" id="1TeaL8Re4pQ" role="2wV5jI">
@@ -198,45 +166,8 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="1TeaL8Rea4z">
-    <ref role="1XX52x" to="zsc5:1TeaL8Rea4w" resolve="SingleFailurePropagationLogic" />
-    <node concept="2r0Tta" id="62cfieEMXwp" role="2wV5jI">
-      <node concept="2reCLk" id="62cfieEMXwx" role="2r0Tv6">
-        <node concept="2reCLy" id="62cfieEMXwz" role="2reCL6">
-          <node concept="3F1sOY" id="62cfieEMXwE" role="2reSmM">
-            <ref role="1NtTu8" to="ii8j:62cfieEOV1W" resolve="failureModeRef" />
-          </node>
-          <node concept="2rfbtV" id="62cfieEMXx1" role="2recC9">
-            <property role="2rfbtB" value="Output Failure Mode" />
-          </node>
-        </node>
-        <node concept="2reCLy" id="62cfieEMXwL" role="2reCL6">
-          <node concept="3EZMnI" id="3txYam0camn" role="2reSmM">
-            <node concept="l2Vlx" id="3txYam0camo" role="2iSdaV" />
-            <node concept="3F1sOY" id="62cfieEMXwW" role="3EZMnx">
-              <ref role="1NtTu8" to="ii8j:1TeaL8Rea4x" resolve="inputDeviationLogic" />
-            </node>
-          </node>
-          <node concept="2rfbtV" id="62cfieEMXwZ" role="2recC9">
-            <property role="2rfbtB" value="Input Deviation Logic" />
-          </node>
-        </node>
-        <node concept="2reCLy" id="4CQASrcxTNm" role="2reCL6">
-          <node concept="3EZMnI" id="4CQASrcxTNn" role="2reSmM">
-            <node concept="l2Vlx" id="4CQASrcxTNo" role="2iSdaV" />
-            <node concept="3F1sOY" id="4CQASrcxTNp" role="3EZMnx">
-              <ref role="1NtTu8" to="ii8j:4CQASrcxTNi" resolve="componentMalfunctionLogic" />
-            </node>
-          </node>
-          <node concept="2rfbtV" id="4CQASrcxTNq" role="2recC9">
-            <property role="2rfbtB" value="Component Malfunction Logic" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="1TeaL8Refs0">
-    <ref role="1XX52x" to="zsc5:1TeaL8RefrX" resolve="FailureModeRefExpression" />
+    <ref role="1XX52x" to="zsc5:1TeaL8RefrX" resolve="PortFailureModeRefExpression" />
     <node concept="3EZMnI" id="62cfieEOV27" role="2wV5jI">
       <node concept="1kIj98" id="1xKUpdtGj_y" role="3EZMnx">
         <node concept="3F1sOY" id="1xKUpdtGj_M" role="1kIj9b">
@@ -296,18 +227,6 @@
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="3F0ifn" id="62cfieEOV2Y" role="2wV5jI">
       <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5g1NREKNRE$">
-    <ref role="1XX52x" to="zsc5:5g1NREKNREx" resolve="ComponentFailureModeRefExpression" />
-    <node concept="1iCGBv" id="5g1NREKNRED" role="2wV5jI">
-      <ref role="1NtTu8" to="zsc5:5g1NREKNREy" resolve="failureMode" />
-      <node concept="1sVBvm" id="5g1NREKNREF" role="1sWHZn">
-        <node concept="3F0A7n" id="5g1NREKNREP" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="22mcaB" id="5g1NREKUEqq">

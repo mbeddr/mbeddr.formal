@@ -12,6 +12,7 @@
     <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="0" />
     <use id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops" version="0" />
   </languages>
   <imports />
   <registry>
@@ -20,15 +21,19 @@
       <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
     </language>
     <language id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops">
+      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM" />
       <concept id="2183730226557081300" name="com.fasten.safety.hiphops.structure.SingleFailurePropagationLogicBase" flags="ng" index="DuvR6">
         <child id="5347632610808405202" name="componentMalfunctionLogic" index="26Ggtk" />
         <child id="2183730226557133089" name="inputDeviationLogic" index="DtCCN" />
         <child id="6957002747779723388" name="failureModeRef" index="3anSPv" />
       </concept>
+      <concept id="1433630071283045915" name="com.fasten.safety.hiphops.structure.ComponentFailureModeRefExpressionBase" flags="ng" index="1hKp3J">
+        <reference id="6053347500022004386" name="failureMode" index="3$NFno" />
+      </concept>
       <concept id="1433630071281486525" name="com.fasten.safety.hiphops.structure.LogicalTypeFailureModesBase" flags="ng" index="1hU4L9">
         <child id="2183730226556973211" name="failureModes" index="Du1I9" />
       </concept>
-      <concept id="1433630071281871828" name="com.fasten.safety.hiphops.structure.FailureModeRefExpressionBase" flags="ng" index="1hXUOw">
+      <concept id="1433630071281871828" name="com.fasten.safety.hiphops.structure.PortFailureModeRefExpressionBase" flags="ng" index="1hXUOw">
         <reference id="2183730226557155070" name="failureMode" index="DtHRG" />
       </concept>
       <concept id="3021731374194694448" name="com.fasten.safety.hiphops.structure.IFFMEABase" flags="ng" index="3$q46s">
@@ -83,8 +88,7 @@
       </concept>
     </language>
     <language id="521724dc-29ef-4d5a-9c15-25f6b680b809" name="com.fasten.safety.hiphops.arch">
-      <concept id="2183730226557133088" name="com.fasten.safety.hiphops.arch.structure.SingleFailurePropagationLogic" flags="ng" index="DtCCM" />
-      <concept id="2183730226557155069" name="com.fasten.safety.hiphops.arch.structure.FailureModeRefExpression" flags="ng" index="DtHRJ">
+      <concept id="2183730226557155069" name="com.fasten.safety.hiphops.arch.structure.PortFailureModeRefExpression" flags="ng" index="DtHRJ">
         <child id="6957002747779723394" name="port" index="3anSQx" />
       </concept>
       <concept id="2183730226556973206" name="com.fasten.safety.hiphops.arch.structure.LogicalTypeFailureModes" flags="ng" index="Du1I4">
@@ -96,9 +100,7 @@
       <concept id="6957002747778834774" name="com.fasten.safety.hiphops.arch.structure.FaultTreeContainer" flags="ng" index="3aixLP">
         <child id="6957002747778834777" name="ft" index="3aixLU" />
       </concept>
-      <concept id="6053347500022004385" name="com.fasten.safety.hiphops.arch.structure.ComponentFailureModeRefExpression" flags="ng" index="3$NFnr">
-        <reference id="6053347500022004386" name="failureMode" index="3$NFno" />
-      </concept>
+      <concept id="6053347500022004385" name="com.fasten.safety.hiphops.arch.structure.ComponentFailureModeRefExpression" flags="ng" index="3$NFnr" />
     </language>
     <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
       <concept id="4663111736253767846" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModesDefinition" flags="ng" index="2VUHfc">

@@ -104,9 +104,7 @@
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -130,23 +128,6 @@
     <ref role="13h7C2" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
     <node concept="13hLZK" id="1TeaL8Rem0G" role="13h7CW">
       <node concept="3clFbS" id="1TeaL8Rem0H" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="1TeaL8Rem0Q" role="13h7CS">
-      <property role="TrG5h" value="computeFaultTree" />
-      <ref role="13i0hy" to="lr73:1TeaL8RddbY" resolve="computeFaultTree" />
-      <node concept="3Tm1VV" id="1TeaL8Rem0R" role="1B3o_S" />
-      <node concept="3clFbS" id="1TeaL8Rem0U" role="3clF47">
-        <node concept="3clFbF" id="62cfieELYCo" role="3cqZAp">
-          <node concept="2YIFZM" id="62cfieEN6KE" role="3clFbG">
-            <ref role="37wK5l" to="wid:62cfieEKYKf" resolve="computeFaultTrees" />
-            <ref role="1Pybhc" to="wid:62cfieEKYIv" resolve="FailurePropagationLogic2FaultTreeConverter" />
-            <node concept="13iPFW" id="62cfieELYDx" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="1TeaL8Rem0V" role="3clF45">
-        <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
-      </node>
     </node>
     <node concept="13i0hz" id="1TeaL8ReWRF" role="13h7CS">
       <property role="TrG5h" value="getScope" />
@@ -215,7 +196,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="62cfieEPVj1">
-    <ref role="13h7C2" to="zsc5:1TeaL8RefrX" resolve="FailureModeRefExpression" />
+    <ref role="13h7C2" to="zsc5:1TeaL8RefrX" resolve="PortFailureModeRefExpression" />
     <node concept="13hLZK" id="62cfieEPVj2" role="13h7CW">
       <node concept="3clFbS" id="62cfieEPVj3" role="2VODD2" />
     </node>

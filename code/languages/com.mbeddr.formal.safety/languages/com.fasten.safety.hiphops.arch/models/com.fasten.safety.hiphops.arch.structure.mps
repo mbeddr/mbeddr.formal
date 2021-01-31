@@ -10,7 +10,6 @@
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" implicit="true" />
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
   </imports>
   <registry>
@@ -73,35 +72,11 @@
       <ref role="20lvS9" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1TeaL8Rdz2u">
-    <property role="EcuMT" value="2183730226556973214" />
-    <property role="TrG5h" value="PortFailureModes" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1TeaL8Rdz2v" role="1TKVEi">
-      <property role="IQ2ns" value="2183730226556973215" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="failureModes" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
-    </node>
-    <node concept="1TJgyj" id="1TeaL8Rdz2x" role="1TKVEi">
-      <property role="IQ2ns" value="2183730226556973217" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="port" />
-      <ref role="20lvS9" to="3whv:7RhjhI7$li2" resolve="PortRef" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1TeaL8Rea4w">
-    <property role="EcuMT" value="2183730226557133088" />
-    <property role="TrG5h" value="SingleFailurePropagationLogic" />
-    <property role="34LRSv" value="single failure propagation logic" />
-    <ref role="1TJDcQ" to="ii8j:1TeaL8RdXrk" resolve="SingleFailurePropagationLogicBase" />
-  </node>
   <node concept="1TIwiD" id="1TeaL8RefrX">
     <property role="EcuMT" value="2183730226557155069" />
-    <property role="TrG5h" value="FailureModeRefExpression" />
+    <property role="TrG5h" value="PortFailureModeRefExpression" />
     <property role="34LRSv" value="failure mode ref" />
-    <ref role="1TJDcQ" to="ii8j:1f_hJh24IJk" resolve="FailureModeRefExpressionBase" />
+    <ref role="1TJDcQ" to="ii8j:1f_hJh24IJk" resolve="PortFailureModeRefExpressionBase" />
     <node concept="1TJgyj" id="62cfieEOV22" role="1TKVEi">
       <property role="IQ2ns" value="6957002747779723394" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -128,13 +103,7 @@
   <node concept="1TIwiD" id="5g1NREKNREx">
     <property role="EcuMT" value="6053347500022004385" />
     <property role="TrG5h" value="ComponentFailureModeRefExpression" />
-    <ref role="1TJDcQ" to="ehqg:6NmtaR1V301" resolve="Expression" />
-    <node concept="1TJgyj" id="5g1NREKNREy" role="1TKVEi">
-      <property role="IQ2ns" value="6053347500022004386" />
-      <property role="20kJfa" value="failureMode" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
-    </node>
+    <ref role="1TJDcQ" to="ii8j:1f_hJh29dor" resolve="ComponentFailureModeRefExpressionBase" />
   </node>
 </model>
 

@@ -9,14 +9,21 @@
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
     <import index="lr73" ref="r:47b9f784-2d4a-4adf-a2c1-7e71108590c5(com.fasten.safety.hiphops.behavior)" />
     <import index="wid" ref="r:f00673e3-aa4b-47ab-b1ab-32f93476e624(com.fasten.safety.hiphops.arch.util)" />
+    <import index="h4ob" ref="r:c1b5027c-c0fd-4ce6-a884-7934c1083045(com.fasten.safety.hiphops.util)" />
     <import index="zsc5" ref="r:fc2953cc-af52-42fa-8e2a-cc41987cb142(com.fasten.safety.hiphops.arch.structure)" implicit="true" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -165,8 +172,13 @@
               <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
             </node>
             <node concept="2YIFZM" id="3bh1RFvqs7R" role="33vP2m">
-              <ref role="37wK5l" to="wid:62cfieENasK" resolve="buildRawFaultTree" />
-              <ref role="1Pybhc" to="wid:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <ref role="1Pybhc" to="h4ob:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <ref role="37wK5l" to="h4ob:62cfieENasK" resolve="buildRawFaultTree" />
+              <node concept="2ShNRf" id="1f_hJh2hyhX" role="37wK5m">
+                <node concept="HV5vD" id="1f_hJh2hyqu" role="2ShVmc">
+                  <ref role="HV5vE" to="wid:1f_hJh2bMms" resolve="ModelAccessor" />
+                </node>
+              </node>
               <node concept="2Sf5sV" id="3bh1RFvqs8Q" role="37wK5m" />
             </node>
           </node>
@@ -214,10 +226,15 @@
             <node concept="3Tqbb2" id="3bh1RFvEqSX" role="1tU5fm">
               <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
             </node>
-            <node concept="2YIFZM" id="3bh1RFvEr86" role="33vP2m">
-              <ref role="37wK5l" to="wid:3bh1RFvD$Ne" resolve="buildFaultTree" />
-              <ref role="1Pybhc" to="wid:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
-              <node concept="2Sf5sV" id="3bh1RFvEr87" role="37wK5m" />
+            <node concept="2YIFZM" id="1f_hJh2kSbv" role="33vP2m">
+              <ref role="1Pybhc" to="h4ob:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <ref role="37wK5l" to="h4ob:3bh1RFvD$Ne" resolve="buildFaultTree" />
+              <node concept="2ShNRf" id="1f_hJh2kSbw" role="37wK5m">
+                <node concept="HV5vD" id="1f_hJh2kSbx" role="2ShVmc">
+                  <ref role="HV5vE" to="wid:1f_hJh2bMms" resolve="ModelAccessor" />
+                </node>
+              </node>
+              <node concept="2Sf5sV" id="1f_hJh2kSby" role="37wK5m" />
             </node>
           </node>
         </node>

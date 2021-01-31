@@ -28,6 +28,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="h4ob" ref="r:c1b5027c-c0fd-4ce6-a884-7934c1083045(com.fasten.safety.hiphops.util)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -55,9 +56,15 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -313,8 +320,13 @@
               <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
             </node>
             <node concept="2YIFZM" id="5g1NREKQ6Kd" role="33vP2m">
-              <ref role="37wK5l" to="wid:62cfieENasK" resolve="buildRawFaultTree" />
-              <ref role="1Pybhc" to="wid:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <ref role="1Pybhc" to="h4ob:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <ref role="37wK5l" to="h4ob:62cfieENasK" resolve="buildRawFaultTree" />
+              <node concept="2ShNRf" id="1f_hJh2hDQy" role="37wK5m">
+                <node concept="HV5vD" id="1f_hJh2hEoc" role="2ShVmc">
+                  <ref role="HV5vE" to="wid:1f_hJh2bMms" resolve="ModelAccessor" />
+                </node>
+              </node>
               <node concept="37vLTw" id="5g1NREKQ6Ke" role="37wK5m">
                 <ref role="3cqZAo" node="5g1NREKPZnp" resolve="cas" />
               </node>
@@ -478,8 +490,13 @@
               <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
             </node>
             <node concept="2YIFZM" id="5g1NREKQ5P_" role="33vP2m">
-              <ref role="37wK5l" to="wid:3bh1RFvD$Ne" resolve="buildFaultTree" />
-              <ref role="1Pybhc" to="wid:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <ref role="1Pybhc" to="h4ob:62cfieENapK" resolve="ComponentAssembly2FaultTreeBuilder" />
+              <ref role="37wK5l" to="h4ob:3bh1RFvD$Ne" resolve="buildFaultTree" />
+              <node concept="2ShNRf" id="1f_hJh2hEy4" role="37wK5m">
+                <node concept="HV5vD" id="1f_hJh2hEy5" role="2ShVmc">
+                  <ref role="HV5vE" to="wid:1f_hJh2bMms" resolve="ModelAccessor" />
+                </node>
+              </node>
               <node concept="37vLTw" id="5g1NREKQ5PA" role="37wK5m">
                 <ref role="3cqZAo" node="5g1NREKQ5Pc" resolve="cas" />
               </node>
