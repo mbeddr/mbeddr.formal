@@ -45,9 +45,9 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.web.rt/com.mbeddr.formal.safety.gsn.web.rt.msd" folder="gsn.web" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.web.sandbox/com.mbeddr.formal.safety.gsn.web.sandbox.msd" folder="gsn.web" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.stamp.sandbox/com.mbeddr.formal.safety.stamp.sandbox.msd" folder="hara.stamp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.fasten.safety.hiphops/test.fasten.safety.hiphops.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.patterns/test.mbeddr.formal.gsn.patterns.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn/test.mbeddr.formal.gsn.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.fasten.safety.hiphops/test.fasten.safety.hiphops.msd" folder="fmea_hiphops.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.patterns/test.mbeddr.formal.gsn.patterns.msd" folder="gsn.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn/test.mbeddr.formal.gsn.msd" folder="gsn.tests" />
     </projectModules>
   </component>
 </project>
