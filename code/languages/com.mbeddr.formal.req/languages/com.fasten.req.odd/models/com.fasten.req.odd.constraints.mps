@@ -69,11 +69,11 @@
   </registry>
   <node concept="1M2fIO" id="3RNDPbM0lO2">
     <property role="3GE5qa" value="ontology" />
-    <ref role="1M2myG" to="u2ih:1wKSXwEBhCv" resolve="OntologyConceptRef" />
+    <ref role="1M2myG" to="u2ih:1wKSXwEBhCv" resolve="OntologyConceptRef_old" />
     <node concept="1N5Pfh" id="3RNDPbM0lO3" role="1Mr941">
-      <ref role="1N5Vy1" to="u2ih:1wKSXwEBhCw" resolve="ontologyConcept" />
+      <ref role="1N5Vy1" to="u2ih:1wKSXwEBhCw" resolve="ontologyConcept_old" />
       <node concept="1dDu$B" id="3RNDPbM0lQl" role="1N6uqs">
-        <ref role="1dDu$A" to="u2ih:3Jn$RV31w1o" resolve="OntologyConcept" />
+        <ref role="1dDu$A" to="u2ih:3Jn$RV31w1o" resolve="OntologyConcept_old" />
       </node>
     </node>
   </node>

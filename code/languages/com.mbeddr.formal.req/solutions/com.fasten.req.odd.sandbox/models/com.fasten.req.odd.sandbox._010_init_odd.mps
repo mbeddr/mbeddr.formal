@@ -2,7 +2,7 @@
 <model ref="r:b30f46eb-89ce-4697-b212-6f60a668aee5(com.fasten.req.odd.sandbox._010_init_odd)">
   <persistence version="9" />
   <languages>
-    <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="-1" />
+    <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="1" />
     <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="-1" />
@@ -54,11 +54,11 @@
       <node concept="3fWYEE" id="3RNDPbM4U6e" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="3RNDPbM4U6z" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEznH" />
+          <ref role="MFvBS" to="1o88:52bCGvYEznH" resolve="Environmental and Weather Conditions" />
         </node>
         <node concept="3fZHMl" id="3RNDPbM4U6x" role="3fWwZA">
           <node concept="MFvB7" id="3RNDPbM4U6A" role="3fZHMq">
-            <ref role="MFvBS" to="1o88:3RNDPbLZQjz" />
+            <ref role="MFvBS" to="1o88:3RNDPbLZQjz" resolve="Air Temperature" />
           </node>
           <node concept="3fUWbm" id="3RNDPbM6AKk" role="3fZHMo">
             <property role="3fUWbn" value="it &lt; 50 C" />
@@ -68,33 +68,33 @@
       <node concept="3fWYEE" id="3RNDPbM3nIC" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="3RNDPbM3nID" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:3RNDPbLZQmG" />
+          <ref role="MFvBS" to="1o88:3RNDPbLZQmG" resolve="Traffic Management Devices" />
         </node>
         <node concept="3fZHMl" id="3RNDPbM4qLR" role="3fWwZA">
           <node concept="MFvB7" id="3RNDPbM4qLP" role="3fZHMq">
-            <ref role="MFvBS" to="1o88:3RNDPbLZQou" />
+            <ref role="MFvBS" to="1o88:3RNDPbLZQou" resolve="Traffic Lights" />
           </node>
         </node>
       </node>
       <node concept="3fWYEE" id="3RNDPbM3nIF" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="3RNDPbM3nIG" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEznQ" />
+          <ref role="MFvBS" to="1o88:52bCGvYEznQ" resolve="Rules of Engagement" />
         </node>
         <node concept="3fZHMl" id="3RNDPbM3TGb" role="3fWwZA">
           <node concept="MFvB7" id="3RNDPbM3nIH" role="3fZHMq">
-            <ref role="MFvBS" to="1o88:3RNDPbLZQvr" />
+            <ref role="MFvBS" to="1o88:3RNDPbLZQvr" resolve="Traffic Laws" />
           </node>
         </node>
       </node>
       <node concept="3fWYEE" id="3RNDPbM3nII" role="3fY04B">
         <node concept="MFvB7" id="3RNDPbM3nIJ" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEznW" />
+          <ref role="MFvBS" to="1o88:52bCGvYEznW" resolve="Considerations of Deployment to Multiple Countries" />
         </node>
       </node>
       <node concept="3fWYEE" id="3RNDPbM3nIK" role="3fY04B">
         <node concept="MFvB7" id="3RNDPbM3nIL" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEzob" />
+          <ref role="MFvBS" to="1o88:52bCGvYEzob" resolve="Availability and freshness of infrastructure characterization data" />
         </node>
       </node>
     </node>
