@@ -10,6 +10,8 @@
     <import index="8js5" ref="r:896eeadf-a850-400e-b516-f92dfb5b5cd9(com.mbeddr.formal.base.pluginSolution.plugin)" />
     <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
     <import index="lfcg" ref="r:0f6163dd-0b56-4e88-b067-4067979ca8c2(com.fasten.req.odd.editor)" />
+    <import index="6wa3" ref="r:fe70b1ce-4411-47cc-b7d1-2d3fab0737d6(com.fasten.req.ontology.structure)" />
+    <import index="xqhh" ref="r:5b0991b2-2f18-4b5e-86ab-dfe0e8034b59(com.fasten.req.ontology.editor)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -46,11 +48,11 @@
   <node concept="33ghlw" id="3onExzPnGul">
     <property role="3GE5qa" value="diagrams" />
     <property role="TrG5h" value="OntologyDiagramSwitcher" />
-    <ref role="2hhq6$" to="u2ih:3Jn$RV31w1o" resolve="OntologyConcept" />
+    <ref role="2hhq6$" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="Ontology Tree View" />
-      <ref role="33glcW" to="lfcg:1wKSXwEAKj6" resolve="OntologyHints" />
-      <ref role="33glcY" to="lfcg:1wKSXwEAKj7" resolve="TREE" />
+      <ref role="33glcW" to="xqhh:1wKSXwEAKj6" resolve="OntologyHints" />
+      <ref role="33glcY" to="xqhh:1wKSXwEAKj7" resolve="TREE" />
     </node>
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="tU$_T" to="8js5:goNQ8fnbtb" resolve="fastenPlatformNotationGroup" />

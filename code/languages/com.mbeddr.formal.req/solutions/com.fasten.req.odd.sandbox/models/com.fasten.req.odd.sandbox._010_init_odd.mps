@@ -3,36 +3,42 @@
   <persistence version="9" />
   <languages>
     <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="-1" />
+    <use id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions" version="0" />
+    <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
+    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="-1" />
   </languages>
-  <imports />
+  <imports>
+    <import index="d1jy" ref="r:9e73f239-cf51-478a-abcd-90185f3a81b5(com.fasten.req.ontology.lib.wordnet)" />
+    <import index="sqn2" ref="r:d135465b-72d0-4d0c-8b44-c34f75c351c6(com.fasten.req.ontology.lib.czarnecki)" />
+    <import index="1o88" ref="r:638d8f46-2b56-4b35-8d3c-bc5e75fa2ac5(com.fasten.req.ontology.lib.koopman)" />
+  </imports>
   <registry>
     <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
-      <concept id="8375050574357864792" name="com.fasten.req.odd.structure.EmptyLine" flags="ng" index="2CGw_7" />
-      <concept id="1743143573359761951" name="com.fasten.req.odd.structure.OntologyConceptRef" flags="ng" index="MFvB7">
-        <reference id="1743143573359761952" name="ontologyConcept" index="MFvBS" />
+      <concept id="4464095630345135492" name="com.fasten.req.odd.structure.PlainTextExpression" flags="ng" index="3fUWbm">
+        <property id="4464095630345135493" name="text" index="3fUWbn" />
       </concept>
-      <concept id="1743143573359941966" name="com.fasten.req.odd.structure.IODDParameterDimensionLike" flags="ng" index="MFNEm">
-        <child id="4312077340877644477" name="alternatives" index="3SOB73" />
+      <concept id="4464095630343556645" name="com.fasten.req.odd.structure.ODDSentenceBase" flags="ng" index="3fWY_R">
+        <child id="4464095630343556618" name="subject" index="3fWY_o" />
       </concept>
-      <concept id="4312077340877652056" name="com.fasten.req.odd.structure.OntologyConcept" flags="ng" index="3SOpcA">
-        <reference id="4312077340877652059" name="superConcept" index="3SOpc_" />
-        <child id="2211008038588194073" name="attributes" index="2xew$1" />
+      <concept id="4464095630343556600" name="com.fasten.req.odd.structure.ConstraintSentence" flags="ng" index="3fWYEE">
+        <property id="4464095630343625971" name="predicate" index="3fWJIx" />
+        <child id="4464095630343645364" name="conceptsConstraints" index="3fWwZA" />
       </concept>
-      <concept id="4312077340877652053" name="com.fasten.req.odd.structure.Ontology" flags="ng" index="3SOpcF">
-        <child id="4312077340877652119" name="concepts" index="3SOpfD" />
+      <concept id="4464095630344300148" name="com.fasten.req.odd.structure.OntologyScope" flags="ng" index="3fY04A">
+        <reference id="4464095630344300151" name="ontology" index="3fY04_" />
+        <child id="4464095630344300149" name="sentences" index="3fY04B" />
       </concept>
-      <concept id="4312077340877623858" name="com.fasten.req.odd.structure.ODDParameterDimension" flags="ng" index="3SOw5c">
-        <child id="2211008038588330122" name="concepts" index="2xe2ii" />
-      </concept>
-      <concept id="4312077340877644469" name="com.fasten.req.odd.structure.DimensionAlternative" flags="ng" index="3SOB7b">
-        <child id="2211008038588376230" name="concepts" index="2xef2Y" />
-      </concept>
-      <concept id="4312077340877618333" name="com.fasten.req.odd.structure.ODDParameter" flags="ng" index="3SOIZz">
-        <child id="1743143573359761978" name="concepts" index="MFvBy" />
-        <child id="4312077340877624469" name="dimensions" index="3SOwvF" />
+      <concept id="4464095630344420295" name="com.fasten.req.odd.structure.OntologyConceptConstraint" flags="ng" index="3fZHMl">
+        <child id="4464095630344420298" name="constraint" index="3fZHMo" />
+        <child id="4464095630344420296" name="conceptRef" index="3fZHMq" />
       </concept>
       <concept id="4312077340877618330" name="com.fasten.req.odd.structure.ODD" flags="ng" index="3SOIZ$">
-        <child id="4312077340877618359" name="parameters" index="3SOIZ9" />
+        <child id="4312077340877618359" name="content" index="3SOIZ9" />
+      </concept>
+    </language>
+    <language id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology">
+      <concept id="1743143573359761951" name="com.fasten.req.ontology.structure.OntologyConceptRef" flags="ng" index="MFvB7">
+        <reference id="1743143573359761952" name="ontologyConcept" index="MFvBS" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -43,143 +49,54 @@
   </registry>
   <node concept="3SOIZ$" id="3Jn$RV31p8J">
     <property role="TrG5h" value="first_odd" />
-    <node concept="3SOIZz" id="3Jn$RV31p8K" role="3SOIZ9">
-      <property role="TrG5h" value="Pedestrian" />
-      <node concept="3SOw5c" id="3Jn$RV31rQS" role="3SOwvF">
-        <property role="TrG5h" value="gender" />
-        <node concept="3SOB7b" id="3Jn$RV31w0F" role="3SOB73">
-          <property role="TrG5h" value="female" />
+    <node concept="3fY04A" id="3RNDPbM3nIg" role="3SOIZ9">
+      <ref role="3fY04_" to="1o88:52bCGvYEnPu" resolve="phil_koopman" />
+      <node concept="3fWYEE" id="3RNDPbM4U6e" role="3fY04B">
+        <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
+        <node concept="MFvB7" id="3RNDPbM4U6z" role="3fWY_o">
+          <ref role="MFvBS" to="1o88:52bCGvYEznH" />
         </node>
-        <node concept="3SOB7b" id="3Jn$RV31w0H" role="3SOB73">
-          <property role="TrG5h" value="male" />
-        </node>
-      </node>
-      <node concept="3SOw5c" id="3Jn$RV31tXA" role="3SOwvF">
-        <property role="TrG5h" value="clothing" />
-        <node concept="MFvB7" id="1UJ51yZ_Yiu" role="2xe2ii">
-          <ref role="MFvBS" node="1wKSXwECsWt" resolve="clothing" />
-        </node>
-        <node concept="3SOB7b" id="1UJ51yZA8zK" role="3SOB73">
-          <property role="TrG5h" value="dress" />
-          <node concept="MFvB7" id="1UJ51yZA8$L" role="2xef2Y">
-            <ref role="MFvBS" node="1UJ51yZA8$v" resolve="dress" />
+        <node concept="3fZHMl" id="3RNDPbM4U6x" role="3fWwZA">
+          <node concept="MFvB7" id="3RNDPbM4U6A" role="3fZHMq">
+            <ref role="MFvBS" to="1o88:3RNDPbLZQjz" />
+          </node>
+          <node concept="3fUWbm" id="3RNDPbM6AKk" role="3fZHMo">
+            <property role="3fUWbn" value="it &lt; 50 C" />
           </node>
         </node>
       </node>
-      <node concept="3SOw5c" id="3Jn$RV31tXD" role="3SOwvF">
-        <property role="TrG5h" value="with umbrella" />
-        <node concept="3SOB7b" id="3Jn$RV31w18" role="3SOB73">
-          <property role="TrG5h" value="true" />
+      <node concept="3fWYEE" id="3RNDPbM3nIC" role="3fY04B">
+        <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
+        <node concept="MFvB7" id="3RNDPbM3nID" role="3fWY_o">
+          <ref role="MFvBS" to="1o88:3RNDPbLZQmG" />
         </node>
-        <node concept="3SOB7b" id="3Jn$RV31w1a" role="3SOB73">
-          <property role="TrG5h" value="false" />
+        <node concept="3fZHMl" id="3RNDPbM4qLR" role="3fWwZA">
+          <node concept="MFvB7" id="3RNDPbM4qLP" role="3fZHMq">
+            <ref role="MFvBS" to="1o88:3RNDPbLZQou" />
+          </node>
         </node>
       </node>
-      <node concept="3SOw5c" id="1UJ51yZA8_5" role="3SOwvF">
-        <property role="TrG5h" value="clothing color" />
+      <node concept="3fWYEE" id="3RNDPbM3nIF" role="3fY04B">
+        <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
+        <node concept="MFvB7" id="3RNDPbM3nIG" role="3fWY_o">
+          <ref role="MFvBS" to="1o88:52bCGvYEznQ" />
+        </node>
+        <node concept="3fZHMl" id="3RNDPbM3TGb" role="3fWwZA">
+          <node concept="MFvB7" id="3RNDPbM3nIH" role="3fZHMq">
+            <ref role="MFvBS" to="1o88:3RNDPbLZQvr" />
+          </node>
+        </node>
       </node>
-      <node concept="MFvB7" id="1wKSXwEBtXU" role="MFvBy">
-        <ref role="MFvBS" node="1wKSXwEBhCm" resolve="pedestrian" />
+      <node concept="3fWYEE" id="3RNDPbM3nII" role="3fY04B">
+        <node concept="MFvB7" id="3RNDPbM3nIJ" role="3fWY_o">
+          <ref role="MFvBS" to="1o88:52bCGvYEznW" />
+        </node>
       </node>
-      <node concept="MFvB7" id="1wKSXwEBX$S" role="MFvBy">
-        <ref role="MFvBS" node="1wKSXwEBX$m" resolve="follower" />
+      <node concept="3fWYEE" id="3RNDPbM3nIK" role="3fY04B">
+        <node concept="MFvB7" id="3RNDPbM3nIL" role="3fWY_o">
+          <ref role="MFvBS" to="1o88:52bCGvYEzob" />
+        </node>
       </node>
-    </node>
-  </node>
-  <node concept="3SOpcF" id="3Jn$RV31zgb">
-    <property role="TrG5h" value="wordnet" />
-    <node concept="2CGw_7" id="7_0zmWzBdAL" role="3SOpfD" />
-    <node concept="3SOpcA" id="3Jn$RV31zge" role="3SOpfD">
-      <property role="TrG5h" value="visual signal" />
-    </node>
-    <node concept="3SOpcA" id="3Jn$RV31zgc" role="3SOpfD">
-      <property role="TrG5h" value="light" />
-      <ref role="3SOpc_" node="3Jn$RV31zge" resolve="visual signal" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBhBS" role="3SOpfD">
-      <property role="TrG5h" value="traffic light" />
-      <ref role="3SOpc_" node="3Jn$RV31zgc" resolve="light" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBhBW" role="3SOpfD">
-      <property role="TrG5h" value="red light" />
-      <ref role="3SOpc_" node="3Jn$RV31zge" resolve="visual signal" />
-    </node>
-    <node concept="3SOpcA" id="1UJ51yZA8__" role="3SOpfD">
-      <property role="TrG5h" value="entity" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBhC1" role="3SOpfD">
-      <property role="TrG5h" value="physical entity" />
-      <ref role="3SOpc_" node="1UJ51yZA8__" resolve="entity" />
-      <node concept="MFvB7" id="1UJ51yZA8AA" role="2xew$1">
-        <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
-      </node>
-    </node>
-    <node concept="3SOpcA" id="1UJ51yZA8_T" role="3SOpfD">
-      <property role="TrG5h" value="abstract entity" />
-      <ref role="3SOpc_" node="1UJ51yZA8__" resolve="entity" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBhC7" role="3SOpfD">
-      <property role="TrG5h" value="object" />
-      <ref role="3SOpc_" node="1wKSXwEBhC1" resolve="physical entity" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBhCe" role="3SOpfD">
-      <property role="TrG5h" value="person" />
-      <ref role="3SOpc_" node="1wKSXwEBhC7" resolve="object" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBXz0" role="3SOpfD">
-      <property role="TrG5h" value="traveller" />
-      <ref role="3SOpc_" node="1wKSXwEBhCe" resolve="person" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBXza" role="3SOpfD">
-      <property role="TrG5h" value="carrier" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBhCm" role="3SOpfD">
-      <property role="TrG5h" value="pedestrian" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBXzl" role="3SOpfD">
-      <property role="TrG5h" value="motorcyclist" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBXzx" role="3SOpfD">
-      <property role="TrG5h" value="runner" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBX$8" role="3SOpfD">
-      <property role="TrG5h" value="rider" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwEBX$m" role="3SOpfD">
-      <property role="TrG5h" value="follower" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
-    </node>
-    <node concept="3SOpcA" id="1wKSXwECsWt" role="3SOpfD">
-      <property role="TrG5h" value="clothing" />
-      <ref role="3SOpc_" node="1wKSXwEBhC7" resolve="object" />
-      <node concept="MFvB7" id="1UJ51yZA8A$" role="2xew$1">
-        <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
-      </node>
-    </node>
-    <node concept="3SOpcA" id="1UJ51yZA8$v" role="3SOpfD">
-      <property role="TrG5h" value="dress" />
-      <ref role="3SOpc_" node="1wKSXwECsWt" resolve="clothing" />
-    </node>
-    <node concept="3SOpcA" id="1UJ51yZA8Ae" role="3SOpfD">
-      <property role="TrG5h" value="visual property" />
-      <ref role="3SOpc_" node="1UJ51yZA8_T" resolve="abstract entity" />
-    </node>
-    <node concept="3SOpcA" id="1UJ51yZA8_i" role="3SOpfD">
-      <property role="TrG5h" value="color" />
-      <ref role="3SOpc_" node="1UJ51yZA8Ae" resolve="visual property" />
-    </node>
-    <node concept="3SOpcA" id="1UJ51yZA8AC" role="3SOpfD">
-      <property role="TrG5h" value="signal" />
-      <ref role="3SOpc_" node="1UJ51yZA8B0" resolve="communication" />
-    </node>
-    <node concept="3SOpcA" id="1UJ51yZA8B0" role="3SOpfD">
-      <property role="TrG5h" value="communication" />
-      <ref role="3SOpc_" node="1UJ51yZA8_T" resolve="abstract entity" />
     </node>
   </node>
 </model>
