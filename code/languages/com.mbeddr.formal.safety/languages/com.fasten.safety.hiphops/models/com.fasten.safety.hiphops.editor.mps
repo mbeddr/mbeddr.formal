@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,6 +24,9 @@
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -52,6 +56,9 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+    </language>
+    <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
+      <concept id="9000758320091481718" name="de.itemis.mps.editor.celllayout.structure.GridLayoutFlattenStyle" flags="lg" index="1QQdxR" />
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
       <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
@@ -92,7 +99,7 @@
           <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="PMmxH" id="1f_hJh23yyu" role="3EZMnx">
-          <ref role="PMmxG" node="1f_hJh23ynO" resolve="LogicalTypesFailureModesTypeRef" />
+          <ref role="PMmxG" node="1f_hJh23ynO" resolve="LogicalTypesFailureModesTypeRefBase" />
         </node>
         <node concept="2iRfu4" id="1TeaL8Rdz2T" role="2iSdaV" />
         <node concept="3F0ifn" id="1TeaL8Rdz3n" role="3EZMnx">
@@ -116,7 +123,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="1f_hJh23ynO">
-    <property role="TrG5h" value="LogicalTypesFailureModesTypeRef" />
+    <property role="TrG5h" value="LogicalTypesFailureModesTypeRefBase" />
     <ref role="1XX52x" to="ii8j:1f_hJh23gEX" resolve="LogicalTypeFailureModesBase" />
     <node concept="3F0ifn" id="1f_hJh23zKi" role="2wV5jI">
       <property role="3F0ifm" value="PLEASE OVERRIDE EDITOR COMPONENT" />
@@ -170,6 +177,47 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="24kQdi" id="6RjZwbylwOb">
+    <ref role="1XX52x" to="ii8j:2BJmaNdxL$K" resolve="IFFMEABase" />
+    <node concept="3EZMnI" id="1TeaL8Re4pQ" role="2wV5jI">
+      <node concept="3EZMnI" id="1TeaL8Re4pX" role="3EZMnx">
+        <node concept="VPM3Z" id="1TeaL8Re4pZ" role="3F10Kt" />
+        <node concept="3F0ifn" id="1TeaL8Re4q8" role="3EZMnx">
+          <property role="3F0ifm" value="interface FMEA (IF-FMEA) for:" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
+        </node>
+        <node concept="PMmxH" id="6RjZwbylwP3" role="3EZMnx">
+          <ref role="PMmxG" node="6RjZwbylwOB" resolve="IFFMEABaseInterfaceRefComponent" />
+        </node>
+        <node concept="3F0ifn" id="1TeaL8Re4qx" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="l2Vlx" id="1TeaL8Re4q2" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1TeaL8Re4qM" role="3EZMnx">
+        <node concept="VPM3Z" id="1TeaL8Re4qO" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1TeaL8Re4r5" role="3EZMnx" />
+        <node concept="2rfBfz" id="62cfieEMXwb" role="3EZMnx">
+          <node concept="2reSaE" id="62cfieEMXwk" role="2rf8GZ">
+            <ref role="2reCK$" to="ii8j:1TeaL8RdXr_" resolve="singleFailurePropagationLogic" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="1TeaL8Re4qR" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="1TeaL8Re4ro" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRkQZ" id="1TeaL8Re4pT" role="2iSdaV" />
+      <node concept="1QQdxR" id="62cfieEMDqP" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6RjZwbylwOB">
+    <property role="TrG5h" value="IFFMEABaseInterfaceRefComponent" />
+    <ref role="1XX52x" to="ii8j:2BJmaNdxL$K" resolve="IFFMEABase" />
+    <node concept="3F0ifn" id="6RjZwbylCyV" role="2wV5jI" />
   </node>
 </model>
 
