@@ -532,8 +532,8 @@
     <ref role="1XX52x" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
     <node concept="2ZK4vF" id="5rwT_JnuRc6" role="2wV5jI">
       <node concept="2316IU" id="1GpuQyTdkiH" role="3DrZTU">
-        <node concept="10M0yZ" id="1GpuQyTdkOB" role="2316E2">
-          <ref role="3cqZAo" node="1GpuQyTdkKv" resolve="SINGLE_PORT_LABEL" />
+        <node concept="10M0yZ" id="5N87GIKj8ac" role="2316E2">
+          <ref role="3cqZAo" node="5N87GIKj85t" resolve="SINGLE_SOURCE_PORT_LABEL" />
           <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
         </node>
         <node concept="2xQOud" id="1GpuQyTdkOU" role="2316E4">
@@ -543,6 +543,21 @@
           <property role="3cmrfH" value="0" />
         </node>
         <node concept="3b6qkQ" id="1GpuQyTdkP9" role="2316E7">
+          <property role="$nhwW" value="0.5" />
+        </node>
+      </node>
+      <node concept="2316IU" id="5N87GIKj8av" role="3DrZTU">
+        <node concept="10M0yZ" id="5N87GIKj8bC" role="2316E2">
+          <ref role="3cqZAo" node="5N87GIKj87I" resolve="SINGLE_TARGET_PORT_LABEL" />
+          <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+        </node>
+        <node concept="2xQOud" id="5N87GIKj8ax" role="2316E4">
+          <ref role="2xQOue" node="2lB3um7b17t" resolve="EmptyShape" />
+        </node>
+        <node concept="3cmrfG" id="5N87GIKj8ay" role="2316E6">
+          <property role="3cmrfH" value="1" />
+        </node>
+        <node concept="3b6qkQ" id="5N87GIKj8az" role="2316E7">
           <property role="$nhwW" value="0.5" />
         </node>
       </node>
@@ -986,8 +1001,8 @@
     <ref role="1XX52x" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
     <node concept="2ZK4vF" id="5rwT_JnvXy8" role="2wV5jI">
       <node concept="2316IU" id="1GpuQyTdSZ_" role="3DrZTU">
-        <node concept="10M0yZ" id="1GpuQyTdT0c" role="2316E2">
-          <ref role="3cqZAo" node="1GpuQyTdkKv" resolve="SINGLE_PORT_LABEL" />
+        <node concept="10M0yZ" id="5N87GIKj9qI" role="2316E2">
+          <ref role="3cqZAo" node="5N87GIKj85t" resolve="SINGLE_SOURCE_PORT_LABEL" />
           <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
         </node>
         <node concept="2xQOud" id="1GpuQyTdT0r" role="2316E4">
@@ -997,6 +1012,21 @@
           <property role="$nhwW" value="0.5" />
         </node>
         <node concept="3cmrfG" id="1GpuQyTdT0y" role="2316E6">
+          <property role="3cmrfH" value="0" />
+        </node>
+      </node>
+      <node concept="2316IU" id="5N87GIKj9px" role="3DrZTU">
+        <node concept="10M0yZ" id="5N87GIKj9py" role="2316E2">
+          <ref role="3cqZAo" node="5N87GIKj87I" resolve="SINGLE_TARGET_PORT_LABEL" />
+          <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+        </node>
+        <node concept="2xQOud" id="5N87GIKj9pz" role="2316E4">
+          <ref role="2xQOue" node="2lB3um7b17t" resolve="EmptyShape" />
+        </node>
+        <node concept="3b6qkQ" id="5N87GIKj9p$" role="2316E7">
+          <property role="$nhwW" value="0.5" />
+        </node>
+        <node concept="3cmrfG" id="5N87GIKj9p_" role="2316E6">
           <property role="3cmrfH" value="1" />
         </node>
       </node>
@@ -1060,18 +1090,47 @@
     <ref role="1XX52x" to="spwl:5rwT_JnwiTK" resolve="Connection" />
     <node concept="2ZMJ7s" id="5rwT_JnwiTN" role="2wV5jI">
       <node concept="1PNbMa" id="5rwT_JnwiTP" role="1PN8q7">
-        <node concept="23hSXV" id="1GpuQyTdlp2" role="ljJml">
-          <node concept="23hSZX" id="1GpuQyTdlp3" role="23hSXW">
-            <node concept="2OqwBi" id="1GpuQyTdlp4" role="23hSWE">
-              <node concept="1Pxb5l" id="1GpuQyTdlp5" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1GpuQyTdlp6" role="2OqNvi">
+        <node concept="23g$fm" id="5N87GIKj9C8" role="ljJml">
+          <node concept="2OqwBi" id="5N87GIKj9C9" role="23g$f9">
+            <node concept="2OqwBi" id="5N87GIKj9Ca" role="2Oq$k0">
+              <node concept="1Pxb5l" id="5N87GIKj9Cb" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5N87GIKja4u" role="2OqNvi">
                 <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
               </node>
             </node>
+            <node concept="1mIQ4w" id="5N87GIKj9Cd" role="2OqNvi">
+              <node concept="chp4Y" id="5N87GIKj9Ce" role="cj9EA">
+                <ref role="cht4Q" to="spwl:5rwT_JnuRci" resolve="EventBase" />
+              </node>
+            </node>
           </node>
-          <node concept="10M0yZ" id="1GpuQyTdlp7" role="23hSXU">
-            <ref role="3cqZAo" node="1GpuQyTdkKv" resolve="SINGLE_PORT_LABEL" />
-            <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+          <node concept="23hSXV" id="5N87GIKj9Cf" role="23g$fb">
+            <node concept="23hSZX" id="5N87GIKj9Cg" role="23hSXW">
+              <node concept="2OqwBi" id="5N87GIKj9Ch" role="23hSWE">
+                <node concept="1Pxb5l" id="5N87GIKj9Ci" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5N87GIKjaeO" role="2OqNvi">
+                  <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
+                </node>
+              </node>
+            </node>
+            <node concept="10M0yZ" id="5N87GIKjacL" role="23hSXU">
+              <ref role="3cqZAo" node="5N87GIKj85t" resolve="SINGLE_SOURCE_PORT_LABEL" />
+              <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+            </node>
+          </node>
+          <node concept="23hSXV" id="5N87GIKj9Cl" role="23g$fc">
+            <node concept="23hSZX" id="5N87GIKj9Cm" role="23hSXW">
+              <node concept="2OqwBi" id="5N87GIKj9Cn" role="23hSWE">
+                <node concept="1Pxb5l" id="5N87GIKj9Co" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5N87GIKjaga" role="2OqNvi">
+                  <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
+                </node>
+              </node>
+            </node>
+            <node concept="10M0yZ" id="5N87GIKjadN" role="23hSXU">
+              <ref role="3cqZAo" node="1GpuQyTdkKv" resolve="SINGLE_PORT_LABEL" />
+              <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
+            </node>
           </node>
         </node>
       </node>
@@ -1099,8 +1158,8 @@
                 </node>
               </node>
             </node>
-            <node concept="10M0yZ" id="1GpuQyTdl0h" role="23hSXU">
-              <ref role="3cqZAo" node="1GpuQyTdkKv" resolve="SINGLE_PORT_LABEL" />
+            <node concept="10M0yZ" id="5N87GIKj9BE" role="23hSXU">
+              <ref role="3cqZAo" node="5N87GIKj87I" resolve="SINGLE_TARGET_PORT_LABEL" />
               <ref role="1PxDUh" node="1GpuQySZgto" resolve="FTDiagramUtils" />
             </node>
           </node>
@@ -1745,6 +1804,24 @@
       <node concept="17QB3L" id="1GpuQyTdkKi" role="1tU5fm" />
       <node concept="Xl_RD" id="1GpuQyTdkNt" role="33vP2m">
         <property role="Xl_RC" value="port" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="5N87GIKj85t" role="jymVt">
+      <property role="TrG5h" value="SINGLE_SOURCE_PORT_LABEL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="5N87GIKj85u" role="1B3o_S" />
+      <node concept="17QB3L" id="5N87GIKj85v" role="1tU5fm" />
+      <node concept="Xl_RD" id="5N87GIKj85w" role="33vP2m">
+        <property role="Xl_RC" value="source_port" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="5N87GIKj87I" role="jymVt">
+      <property role="TrG5h" value="SINGLE_TARGET_PORT_LABEL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="5N87GIKj87J" role="1B3o_S" />
+      <node concept="17QB3L" id="5N87GIKj87K" role="1tU5fm" />
+      <node concept="Xl_RD" id="5N87GIKj87L" role="33vP2m">
+        <property role="Xl_RC" value="target_port" />
       </node>
     </node>
     <node concept="3Tm1VV" id="1GpuQySZgtp" role="1B3o_S" />
