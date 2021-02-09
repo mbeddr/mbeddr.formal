@@ -116,7 +116,7 @@
     <property role="EcuMT" value="1743143573359761951" />
     <property role="TrG5h" value="OntologyConceptRef" />
     <property role="3GE5qa" value="" />
-    <ref role="1TJDcQ" to="u2ih:1wKSXwEBhCv" resolve="OntologyConceptRef_old" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1wKSXwEBhCw" role="1TKVEi">
       <property role="IQ2ns" value="1743143573359761952" />
       <property role="20kJfa" value="ontologyConcept" />

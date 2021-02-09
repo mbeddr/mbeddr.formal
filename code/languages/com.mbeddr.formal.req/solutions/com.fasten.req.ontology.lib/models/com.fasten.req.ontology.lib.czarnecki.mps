@@ -50,7 +50,7 @@
       <property role="TrG5h" value="WISE_Lab_TopConcept" />
     </node>
     <node concept="3SOpcA" id="7gUa1Zsx7gq" role="3SOpfD">
-      <property role="TrG5h" value="Road Structure" />
+      <property role="TrG5h" value="Left Road Structure" />
       <ref role="3SOpc_" node="7gUa1Zsy22B" resolve="WISE_Lab_TopConcept" />
     </node>
     <node concept="3SOpcA" id="7gUa1ZsxKWd" role="3SOpfD">
@@ -68,7 +68,7 @@
     <node concept="2CGw_7" id="5o42uxih0Ay" role="3SOpfD" />
     <node concept="3SOpcA" id="5o42uxih0AL" role="3SOpfD">
       <property role="TrG5h" value="Road type and capacity" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
     </node>
     <node concept="3SOpcA" id="5o42uxih0Bd" role="3SOpfD">
       <property role="TrG5h" value="General Road Classification" />
@@ -265,7 +265,7 @@
     </node>
     <node concept="3SOpcA" id="5o42uxihWnA" role="3SOpfD">
       <property role="TrG5h" value="Road surface type and quality" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
     </node>
     <node concept="2CGw_7" id="5o42uxihWlv" role="3SOpfD" />
     <node concept="3SOpcA" id="5o42uxiiNQL" role="3SOpfD">
@@ -347,7 +347,7 @@
     </node>
     <node concept="3SOpcA" id="1f_hJh21Lla" role="3SOpfD">
       <property role="TrG5h" value="Road Geometry" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
     </node>
     <node concept="3SOpcA" id="1f_hJh21LAI" role="3SOpfD">
       <property role="TrG5h" value="Circular Curves" />
@@ -360,7 +360,7 @@
     <node concept="2CGw_7" id="1f_hJh21LYD" role="3SOpfD" />
     <node concept="3SOpcA" id="1f_hJh21LVJ" role="3SOpfD">
       <property role="TrG5h" value="Cross Section Design" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
       <node concept="MFvB7" id="1f_hJh21MJB" role="2xew$1">
         <ref role="MFvBS" node="1f_hJh21M4A" resolve="Cross Section Design Attribute" />
       </node>
@@ -651,7 +651,7 @@
     <node concept="2CGw_7" id="1f_hJh22ldy" role="3SOpfD" />
     <node concept="3SOpcA" id="1f_hJh22l5D" role="3SOpfD">
       <property role="TrG5h" value="Road Traffic Control Devices" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22AyE" role="3SOpfD">
       <property role="TrG5h" value="Traffic Signs (Devices)" />
@@ -670,9 +670,25 @@
       <property role="TrG5h" value="Stop Sign" />
       <ref role="3SOpc_" node="1f_hJh22BBm" resolve="Right of Way Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_Qln" role="3SOpfD">
+      <property role="TrG5h" value="ALL-WAY (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22BHq" resolve="Stop Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Qhg" role="3SOpfD">
+      <property role="TrG5h" value="STOP" />
+      <ref role="3SOpc_" node="1f_hJh22BHq" resolve="Stop Sign" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22BKt" role="3SOpfD">
       <property role="TrG5h" value="Yield Sign" />
       <ref role="3SOpc_" node="1f_hJh22BBm" resolve="Right of Way Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_QtC" role="3SOpfD">
+      <property role="TrG5h" value="YIELD" />
+      <ref role="3SOpc_" node="1f_hJh22BKt" resolve="Yield Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Qpv" role="3SOpfD">
+      <property role="TrG5h" value="YIELD (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22BKt" resolve="Yield Sign" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22BNw" role="3SOpfD">
       <property role="TrG5h" value="Road Use Control" />
@@ -682,59 +698,472 @@
       <property role="TrG5h" value="Pedestrians Crossings Sign" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_QM$" role="3SOpfD">
+      <property role="TrG5h" value="Cross on Green Light Only" />
+      <ref role="3SOpc_" node="1f_hJh22BZJ" resolve="Pedestrians Crossings Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_QIm" role="3SOpfD">
+      <property role="TrG5h" value="Cross on Walk Signal Only" />
+      <ref role="3SOpc_" node="1f_hJh22BZJ" resolve="Pedestrians Crossings Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_QE9" role="3SOpfD">
+      <property role="TrG5h" value="Cross Only At Crossover" />
+      <ref role="3SOpc_" node="1f_hJh22BZJ" resolve="Pedestrians Crossings Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Q_X" role="3SOpfD">
+      <property role="TrG5h" value="Cross Other Side" />
+      <ref role="3SOpc_" node="1f_hJh22BZJ" resolve="Pedestrians Crossings Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_QxM" role="3SOpfD">
+      <property role="TrG5h" value="Pedestrian Pushbutton" />
+      <ref role="3SOpc_" node="1f_hJh22BZJ" resolve="Pedestrians Crossings Sign" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22C2P" role="3SOpfD">
       <property role="TrG5h" value="Pedestrians Crossover Sign" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_QZk" role="3SOpfD">
+      <property role="TrG5h" value="Pedestrian X" />
+      <ref role="3SOpc_" node="1f_hJh22C2P" resolve="Pedestrians Crossover Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_QV3" role="3SOpfD">
+      <property role="TrG5h" value="Stop for Pedestrians (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22C2P" resolve="Pedestrians Crossover Sign" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_QQN" role="3SOpfD">
+      <property role="TrG5h" value="No Passing Here to Crossing" />
+      <ref role="3SOpc_" node="1f_hJh22C2P" resolve="Pedestrians Crossover Sign" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22C5V" role="3SOpfD">
       <property role="TrG5h" value="Speed Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_RtB" role="3SOpfD">
+      <property role="TrG5h" value="Maximum Speed" />
+      <ref role="3SOpc_" node="1f_hJh22C5V" resolve="Speed Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Rpf" role="3SOpfD">
+      <property role="TrG5h" value="Maximum Speed with Km/H included" />
+      <ref role="3SOpc_" node="1f_hJh22C5V" resolve="Speed Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_RkS" role="3SOpfD">
+      <property role="TrG5h" value="Maximum Speed Begins" />
+      <ref role="3SOpc_" node="1f_hJh22C5V" resolve="Speed Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Rgy" role="3SOpfD">
+      <property role="TrG5h" value="Km/H (Tab-Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22C5V" resolve="Speed Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Rcd" role="3SOpfD">
+      <property role="TrG5h" value="Maximum Speed Ahead" />
+      <ref role="3SOpc_" node="1f_hJh22C5V" resolve="Speed Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_R7T" role="3SOpfD">
+      <property role="TrG5h" value="School Zone Maximum Speed" />
+      <ref role="3SOpc_" node="1f_hJh22C5V" resolve="Speed Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_R3A" role="3SOpfD">
+      <property role="TrG5h" value="School Zone Maximum Speed When Flashing" />
+      <ref role="3SOpc_" node="1f_hJh22C5V" resolve="Speed Control Signs" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22C92" role="3SOpfD">
       <property role="TrG5h" value="Turn Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_S5G" role="3SOpfD">
+      <property role="TrG5h" value="No Straight Through" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_S1b" role="3SOpfD">
+      <property role="TrG5h" value="No Right Turn" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_RWF" role="3SOpfD">
+      <property role="TrG5h" value="No Left Turn" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_RSc" role="3SOpfD">
+      <property role="TrG5h" value="No Left Turn (specified times)" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_RNI" role="3SOpfD">
+      <property role="TrG5h" value="No Straight Through or Right Turn" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_RJh" role="3SOpfD">
+      <property role="TrG5h" value="No Straight Through ot Left Turn" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_REP" role="3SOpfD">
+      <property role="TrG5h" value="No Turns Sign" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_RAq" role="3SOpfD">
+      <property role="TrG5h" value="No U-Turns" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Ry0" role="3SOpfD">
+      <property role="TrG5h" value="Buses Excepted (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22C92" resolve="Turn Control Signs" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22Cca" role="3SOpfD">
       <property role="TrG5h" value="One-Way Traffic Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_SwY" role="3SOpfD">
+      <property role="TrG5h" value="One-Way" />
+      <ref role="3SOpc_" node="1f_hJh22Cca" resolve="One-Way Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Ssp" role="3SOpfD">
+      <property role="TrG5h" value="Do Not Enter" />
+      <ref role="3SOpc_" node="1f_hJh22Cca" resolve="One-Way Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_SnP" role="3SOpfD">
+      <property role="TrG5h" value="Do Not Enter (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22Cca" resolve="One-Way Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Sji" role="3SOpfD">
+      <property role="TrG5h" value="Do Not Enter / Wrong Way" />
+      <ref role="3SOpc_" node="1f_hJh22Cca" resolve="One-Way Traffic Control Signs" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22Cfj" role="3SOpfD">
       <property role="TrG5h" value="Two-Way and Multi‐Lane Traffic Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Tp8" role="3SOpfD">
+      <property role="TrG5h" value="Two-Way Traffic" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Tkn" role="3SOpfD">
+      <property role="TrG5h" value="Keep Right" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TfB" role="3SOpfD">
+      <property role="TrG5h" value="Through Traffic Keep Right" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TaS" role="3SOpfD">
+      <property role="TrG5h" value="Do Not Pass" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_T6a" role="3SOpfD">
+      <property role="TrG5h" value="Passing Permitted" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_T1t" role="3SOpfD">
+      <property role="TrG5h" value="Pass with Care (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_SWL" role="3SOpfD">
+      <property role="TrG5h" value="Keep Right Except to Pass" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_SS6" role="3SOpfD">
+      <property role="TrG5h" value="Slower Traffic Keep Right" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_SNs" role="3SOpfD">
+      <property role="TrG5h" value="Passing Lane 2 K  Ahead" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_SIN" role="3SOpfD">
+      <property role="TrG5h" value="Yield Centre Lane to Opposing Traffic" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_SEb" role="3SOpfD">
+      <property role="TrG5h" value="Stop For School Bus When Signals Flashing" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_S_$" role="3SOpfD">
+      <property role="TrG5h" value="Both Directions (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22Cfj" resolve="Two-Way and Multi‐Lane Traffic Control Signs" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22Cit" role="3SOpfD">
       <property role="TrG5h" value="Turn Lane Designation" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_Ue_" role="3SOpfD">
+      <property role="TrG5h" value="Left Turn Only" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_U9D" role="3SOpfD">
+      <property role="TrG5h" value="Left Lane (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_U4I" role="3SOpfD">
+      <property role="TrG5h" value="Right Turn Only" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TZO" role="3SOpfD">
+      <property role="TrG5h" value="Right Lane (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TUV" role="3SOpfD">
+      <property role="TrG5h" value="Straight Through or Right Turn Only" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TQ3" role="3SOpfD">
+      <property role="TrG5h" value="Straight Through or Right Turn Only" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TLc" role="3SOpfD">
+      <property role="TrG5h" value="Left or Right Turn Only" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TGm" role="3SOpfD">
+      <property role="TrG5h" value="All Movements Permitted" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TBx" role="3SOpfD">
+      <property role="TrG5h" value="Straight Through Only" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TyH" role="3SOpfD">
+      <property role="TrG5h" value="Two-Way Left-Turn Lane" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_TtU" role="3SOpfD">
+      <property role="TrG5h" value="Centre Line Only" />
+      <ref role="3SOpc_" node="1f_hJh22Cit" resolve="Turn Lane Designation" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22ClC" role="3SOpfD">
       <property role="TrG5h" value="Reserved Lane Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_UBw" role="3SOpfD">
+      <property role="TrG5h" value="Reserved Bycicle Lane (overhead or ground-mounted)" />
+      <ref role="3SOpc_" node="1f_hJh22ClC" resolve="Reserved Lane Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Uyv" role="3SOpfD">
+      <property role="TrG5h" value="Reserved Lane (one vehicle class or multiple vehicle classes, overhead or ground-mounted, no days and times)" />
+      <ref role="3SOpc_" node="1f_hJh22ClC" resolve="Reserved Lane Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Utv" role="3SOpfD">
+      <property role="TrG5h" value="3 or more Persons" />
+      <ref role="3SOpc_" node="1f_hJh22ClC" resolve="Reserved Lane Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Uow" role="3SOpfD">
+      <property role="TrG5h" value="Reserved Line Begins (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22ClC" resolve="Reserved Lane Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Ujy" role="3SOpfD">
+      <property role="TrG5h" value="Reserved Line Ends (Tab Sign)" />
+      <ref role="3SOpc_" node="1f_hJh22ClC" resolve="Reserved Lane Signs" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22CoO" role="3SOpfD">
       <property role="TrG5h" value="Parking Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_VvH" role="3SOpfD">
+      <property role="TrG5h" value="No Parking Sign" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Vqx" role="3SOpfD">
+      <property role="TrG5h" value="No Parking Sign (with days)" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Vlm" role="3SOpfD">
+      <property role="TrG5h" value="No Parking Sign (with days and times)" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Vgc" role="3SOpfD">
+      <property role="TrG5h" value="No Parking, Snow Route" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Vb3" role="3SOpfD">
+      <property role="TrG5h" value="No Parking" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_V5V" role="3SOpfD">
+      <property role="TrG5h" value="Emergency Parking Only" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_V0O" role="3SOpfD">
+      <property role="TrG5h" value="Parking Restricted (with days, times and duration)" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_UVI" role="3SOpfD">
+      <property role="TrG5h" value="No Standing Sign (with days and times)" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_UQD" role="3SOpfD">
+      <property role="TrG5h" value="Disabler PArking Permit" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_UL_" role="3SOpfD">
+      <property role="TrG5h" value="Disabled Standing Extemption" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_UGy" role="3SOpfD">
+      <property role="TrG5h" value="Disabled Stopping Extemption" />
+      <ref role="3SOpc_" node="1f_hJh22CoO" resolve="Parking Control Signs" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22Cs1" role="3SOpfD">
       <property role="TrG5h" value="General Truck Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_VJn" role="3SOpfD">
+      <property role="TrG5h" value="Truck Route" />
+      <ref role="3SOpc_" node="1f_hJh22Cs1" resolve="General Truck Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_VE8" role="3SOpfD">
+      <property role="TrG5h" value="Movements Permitted" />
+      <ref role="3SOpc_" node="1f_hJh22Cs1" resolve="General Truck Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_V$U" role="3SOpfD">
+      <property role="TrG5h" value="No Heavy Trucks" />
+      <ref role="3SOpc_" node="1f_hJh22Cs1" resolve="General Truck Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_VOB" role="3SOpfD">
+      <property role="TrG5h" value="Dangerous Goods Carrier Control Signs" />
+      <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_WuM" role="3SOpfD">
+      <property role="TrG5h" value="Dangerous Goods Route" />
+      <ref role="3SOpc_" node="I6X7eF_VOB" resolve="Dangerous Goods Carrier Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Wpu" role="3SOpfD">
+      <property role="TrG5h" value="Dangerous Goods Route (Tab Sign)" />
+      <ref role="3SOpc_" node="I6X7eF_VOB" resolve="Dangerous Goods Carrier Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Wkb" role="3SOpfD">
+      <property role="TrG5h" value="No Dangerous Goods" />
+      <ref role="3SOpc_" node="I6X7eF_VOB" resolve="Dangerous Goods Carrier Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_WeT" role="3SOpfD">
+      <property role="TrG5h" value="Dangerous Goods Carriers Prohibited (Tab Sign)" />
+      <ref role="3SOpc_" node="I6X7eF_VOB" resolve="Dangerous Goods Carrier Control Signs" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22Cvf" role="3SOpfD">
       <property role="TrG5h" value="Control of Other Specific Vehicle Classes" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_X4q" role="3SOpfD">
+      <property role="TrG5h" value="School Bus Loading Tone" />
+      <ref role="3SOpc_" node="1f_hJh22Cvf" resolve="Control of Other Specific Vehicle Classes" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_WYZ" role="3SOpfD">
+      <property role="TrG5h" value="No Tractors" />
+      <ref role="3SOpc_" node="1f_hJh22Cvf" resolve="Control of Other Specific Vehicle Classes" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_WT_" role="3SOpfD">
+      <property role="TrG5h" value="Bicycle Route" />
+      <ref role="3SOpc_" node="1f_hJh22Cvf" resolve="Control of Other Specific Vehicle Classes" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_WOc" role="3SOpfD">
+      <property role="TrG5h" value="No Bicycles" />
+      <ref role="3SOpc_" node="1f_hJh22Cvf" resolve="Control of Other Specific Vehicle Classes" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_WIO" role="3SOpfD">
+      <property role="TrG5h" value="No Pedestrians or Bycicles" />
+      <ref role="3SOpc_" node="1f_hJh22Cvf" resolve="Control of Other Specific Vehicle Classes" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_WDt" role="3SOpfD">
+      <property role="TrG5h" value="Snowmobile Route" />
+      <ref role="3SOpc_" node="1f_hJh22Cvf" resolve="Control of Other Specific Vehicle Classes" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_W$7" role="3SOpfD">
+      <property role="TrG5h" value="No Snowmobiles" />
+      <ref role="3SOpc_" node="1f_hJh22Cvf" resolve="Control of Other Specific Vehicle Classes" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22Cyu" role="3SOpfD">
       <property role="TrG5h" value="Supplementary Traffic Signal Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_XvK" role="3SOpfD">
+      <property role="TrG5h" value="No Right Turn on Red" />
+      <ref role="3SOpc_" node="1f_hJh22Cyu" resolve="Supplementary Traffic Signal Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Xqg" role="3SOpfD">
+      <property role="TrG5h" value="No Left Turn on Red" />
+      <ref role="3SOpc_" node="1f_hJh22Cyu" resolve="Supplementary Traffic Signal Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_XkL" role="3SOpfD">
+      <property role="TrG5h" value="Stop Here on Red Signal" />
+      <ref role="3SOpc_" node="1f_hJh22Cyu" resolve="Supplementary Traffic Signal Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_Xfj" role="3SOpfD">
+      <property role="TrG5h" value="Advanced Green When Flashing" />
+      <ref role="3SOpc_" node="1f_hJh22Cyu" resolve="Supplementary Traffic Signal Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_X9Q" role="3SOpfD">
+      <property role="TrG5h" value="Left-Turn Signal" />
+      <ref role="3SOpc_" node="1f_hJh22Cyu" resolve="Supplementary Traffic Signal Control Signs" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22C_I" role="3SOpfD">
       <property role="TrG5h" value="Regulatory Construction Traffic Control Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_XKm" role="3SOpfD">
+      <property role="TrG5h" value="Construction Zone Begins/Ends" />
+      <ref role="3SOpc_" node="1f_hJh22C_I" resolve="Regulatory Construction Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_XEN" role="3SOpfD">
+      <property role="TrG5h" value="Yield to Oncoming Traffic" />
+      <ref role="3SOpc_" node="1f_hJh22C_I" resolve="Regulatory Construction Traffic Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_X_h" role="3SOpfD">
+      <property role="TrG5h" value="Road Closed" />
+      <ref role="3SOpc_" node="1f_hJh22C_I" resolve="Regulatory Construction Traffic Control Signs" />
+    </node>
     <node concept="3SOpcA" id="1f_hJh22CCZ" role="3SOpfD">
       <property role="TrG5h" value="Community Safety Zone Signs" />
       <ref role="3SOpc_" node="1f_hJh22BNw" resolve="Road Use Control" />
     </node>
+    <node concept="3SOpcA" id="I6X7eF_XVv" role="3SOpfD">
+      <property role="TrG5h" value="Community Safety Zone" />
+      <ref role="3SOpc_" node="1f_hJh22CCZ" resolve="Community Safety Zone Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eF_XPU" role="3SOpfD">
+      <property role="TrG5h" value="Construction Zone Begins/Ends" />
+      <ref role="3SOpc_" node="1f_hJh22CCZ" resolve="Community Safety Zone Signs" />
+    </node>
     <node concept="2CGw_7" id="1f_hJh22CGh" role="3SOpfD" />
+    <node concept="3SOpcA" id="I6X7eFAQsT" role="3SOpfD">
+      <property role="TrG5h" value="Miscellaneous Control Signs" />
+      <ref role="3SOpc_" node="1f_hJh22B43" resolve="Regulatory Traffic Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFAQCd" role="3SOpfD">
+      <property role="TrG5h" value="Walk on Left Facing Traffic" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFAQHS" role="3SOpfD">
+      <property role="TrG5h" value="No Fishing from Bridge" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFAQYT" role="3SOpfD">
+      <property role="TrG5h" value="Vehicles with Lugs Prohibited" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFAR4_" role="3SOpfD">
+      <property role="TrG5h" value="No Littering" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFARai" role="3SOpfD">
+      <property role="TrG5h" value="Maximum Fine for Littering (Tab Sign)" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFARg0" role="3SOpfD">
+      <property role="TrG5h" value="No Littering and Maximum Fine for Littering" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFARlJ" role="3SOpfD">
+      <property role="TrG5h" value="No In-Line Skating" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFARrv" role="3SOpfD">
+      <property role="TrG5h" value="Keep Off Median" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFARxg" role="3SOpfD">
+      <property role="TrG5h" value="No Pedestrians" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="3SOpcA" id="I6X7eFARB2" role="3SOpfD">
+      <property role="TrG5h" value="Fasten Seatbelt Compulsory Tab" />
+      <ref role="3SOpc_" node="I6X7eFAQsT" resolve="Miscellaneous Control Signs" />
+    </node>
+    <node concept="2CGw_7" id="I6X7eFAQng" role="3SOpfD" />
     <node concept="3SOpcA" id="1f_hJh22B6V" role="3SOpfD">
       <property role="TrG5h" value="Warning Traffic Signs" />
       <ref role="3SOpc_" node="1f_hJh22AyE" resolve="Traffic Signs (Devices)" />

@@ -49,6 +49,20 @@
   </registry>
   <node concept="3SOIZ$" id="3Jn$RV31p8J">
     <property role="TrG5h" value="first_odd" />
+    <node concept="3fY04A" id="5hctYtavRSk" role="3SOIZ9">
+      <ref role="3fY04_" to="sqn2:7gUa1Zsx7gl" resolve="czarnecki_part_01_road_structure" />
+      <node concept="3fWYEE" id="5hctYtavRTf" role="3fY04B">
+        <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
+        <node concept="MFvB7" id="5hctYtavRTg" role="3fWY_o">
+          <ref role="MFvBS" to="sqn2:1f_hJh22DZf" resolve="Traffic Control Signals" />
+        </node>
+        <node concept="3fZHMl" id="5hctYtavRTh" role="3fWwZA">
+          <node concept="MFvB7" id="I_4wa9w6V$" role="3fZHMq">
+            <ref role="MFvBS" to="sqn2:1f_hJh22Ehy" resolve="Intersection Pedestrian Signals" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3fY04A" id="3RNDPbM3nIg" role="3SOIZ9">
       <ref role="3fY04_" to="1o88:52bCGvYEnPu" resolve="phil_koopman" />
       <node concept="3fWYEE" id="3RNDPbM4U6e" role="3fY04B">
@@ -57,7 +71,7 @@
           <ref role="MFvBS" to="1o88:52bCGvYEznH" resolve="Environmental and Weather Conditions" />
         </node>
         <node concept="3fZHMl" id="3RNDPbM4U6x" role="3fWwZA">
-          <node concept="MFvB7" id="3RNDPbM4U6A" role="3fZHMq">
+          <node concept="MFvB7" id="I_4wa9w6Vv" role="3fZHMq">
             <ref role="MFvBS" to="1o88:3RNDPbLZQjz" resolve="Air Temperature" />
           </node>
           <node concept="3fUWbm" id="3RNDPbM6AKk" role="3fZHMo">
