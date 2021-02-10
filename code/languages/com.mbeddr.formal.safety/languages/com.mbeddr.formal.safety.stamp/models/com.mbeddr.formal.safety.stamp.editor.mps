@@ -15,6 +15,7 @@
     <import index="n9hi" ref="r:039e393e-a84c-4e15-a316-0fd16d503d3c(com.mbeddr.formal.safety.stamp.plugin)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="bewr" ref="r:a5d87024-d7b0-459e-b0ec-a9c089196f41(com.mbeddr.formal.safety.stamp.structure)" implicit="true" />
     <import index="a6vc" ref="r:e6f4512f-409a-4a84-b8a1-33fc1cc8fd1f(com.mbeddr.formal.safety.stamp.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -43,6 +44,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
@@ -54,9 +58,12 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
+        <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -277,6 +284,9 @@
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
+      </concept>
+      <concept id="6466068411884348300" name="de.slisson.mps.tables.structure.EditorCellHeader" flags="ng" index="1A0rlU">
+        <child id="6466068411884348445" name="editorCell" index="1A0rbF" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -937,6 +947,7 @@
         <node concept="2reCLy" id="1JhvKLLO0p9" role="2reCL6">
           <node concept="1iCGBv" id="1JhvKLLO0pd" role="2reSmM">
             <ref role="1NtTu8" to="bewr:1JhvKLLO08x" resolve="controller" />
+            <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
             <node concept="1sVBvm" id="1JhvKLLO0pf" role="1sWHZn">
               <node concept="3F0A7n" id="1JhvKLLO0pp" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -944,8 +955,11 @@
               </node>
             </node>
           </node>
-          <node concept="2rfbtV" id="1JhvKLLO0ps" role="2recC9">
-            <property role="2rfbtB" value="Source Controller" />
+          <node concept="1A0rlU" id="3x7uzC8q9$0" role="2recC9">
+            <node concept="3F0ifn" id="3x7uzC8q9CT" role="1A0rbF">
+              <property role="3F0ifm" value="Source Controller" />
+              <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+            </node>
           </node>
         </node>
         <node concept="2reSaE" id="1JhvKLLO0pG" role="2reCL6">
@@ -966,32 +980,44 @@
               <node concept="3F0A7n" id="1JhvKLLO0qd" role="2wV5jI">
                 <property role="1Intyy" value="true" />
                 <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
               </node>
             </node>
           </node>
-          <node concept="2rfbtV" id="1JhvKLLO0qg" role="2recC9">
-            <property role="2rfbtB" value="Action" />
+          <node concept="1A0rlU" id="3x7uzC8rcLw" role="2recC9">
+            <node concept="3F0ifn" id="3x7uzC8rcLA" role="1A0rbF">
+              <property role="3F0ifm" value="Action" />
+              <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+            </node>
           </node>
         </node>
         <node concept="2reCLy" id="1JhvKLLOa1k" role="2reCL6">
           <node concept="3F2HdR" id="_wUu$U6xjS" role="2reSmM">
             <ref role="1NtTu8" to="bewr:1JhvKLLO9K1" resolve="notProviding" />
+            <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
             <node concept="2iRkQZ" id="_wUu$U6xjU" role="2czzBx" />
             <node concept="3F0ifn" id="_wUu$U7zYa" role="2czzBI">
               <property role="3F0ifm" value="ToDo" />
               <ref role="1k5W1q" to="xnej:_wUu$U7_Lc" resolve="FASTENUserHint" />
             </node>
           </node>
-          <node concept="2rfbtV" id="1JhvKLLOa1y" role="2recC9">
-            <property role="2rfbtB" value="Not Providing Causes Hazard" />
+          <node concept="1A0rlU" id="3x7uzC8rcLF" role="2recC9">
+            <node concept="3F0ifn" id="3x7uzC8rcLN" role="1A0rbF">
+              <property role="3F0ifm" value="Not Providing Causes Hazard" />
+              <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+            </node>
           </node>
         </node>
         <node concept="2reCLy" id="1JhvKLLOa1I" role="2reCL6">
-          <node concept="2rfbtV" id="1JhvKLLOa1Z" role="2recC9">
-            <property role="2rfbtB" value="Providing Causes Hazard" />
+          <node concept="1A0rlU" id="3x7uzC8rcLS" role="2recC9">
+            <node concept="3F0ifn" id="3x7uzC8rcM0" role="1A0rbF">
+              <property role="3F0ifm" value="Providing Causes Hazard" />
+              <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+            </node>
           </node>
           <node concept="3F2HdR" id="_wUu$U6xjZ" role="2reSmM">
             <ref role="1NtTu8" to="bewr:1JhvKLLOa0Y" resolve="providing" />
+            <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
             <node concept="2iRkQZ" id="_wUu$U6xk0" role="2czzBx" />
             <node concept="3F0ifn" id="_wUu$U7S10" role="2czzBI">
               <property role="3F0ifm" value="ToDo" />
@@ -1000,11 +1026,22 @@
           </node>
         </node>
         <node concept="2reCLy" id="1JhvKLLOa2e" role="2reCL6">
-          <node concept="2rfbtV" id="1JhvKLLOa2y" role="2recC9">
-            <property role="2rfbtB" value="Too Soon/Late, Out of Sequence" />
+          <node concept="1A0rlU" id="3x7uzC8rcM5" role="2recC9">
+            <node concept="3EZMnI" id="3x7uzC8ryvr" role="1A0rbF">
+              <node concept="2iRkQZ" id="3x7uzC8ryvs" role="2iSdaV" />
+              <node concept="3F0ifn" id="3x7uzC8rcMd" role="3EZMnx">
+                <property role="3F0ifm" value="Too Soon/Late," />
+                <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+              </node>
+              <node concept="3F0ifn" id="3x7uzC8ryv_" role="3EZMnx">
+                <property role="3F0ifm" value="Out of Sequence" />
+                <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+              </node>
+            </node>
           </node>
           <node concept="3F2HdR" id="_wUu$U6xk8" role="2reSmM">
             <ref role="1NtTu8" to="bewr:1JhvKLLOa12" resolve="soonLateOutOfSequence" />
+            <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
             <node concept="2iRkQZ" id="_wUu$U6xk9" role="2czzBx" />
             <node concept="3F0ifn" id="_wUu$U7S13" role="2czzBI">
               <property role="3F0ifm" value="ToDo" />
@@ -1013,11 +1050,22 @@
           </node>
         </node>
         <node concept="2reCLy" id="1JhvKLLOa2O" role="2reCL6">
-          <node concept="2rfbtV" id="1JhvKLLOa3b" role="2recC9">
-            <property role="2rfbtB" value="Stopped too Soon, Applied too Long" />
+          <node concept="1A0rlU" id="3x7uzC8rcMi" role="2recC9">
+            <node concept="3EZMnI" id="3x7uzC8ryvE" role="1A0rbF">
+              <node concept="2iRkQZ" id="3x7uzC8ryvF" role="2iSdaV" />
+              <node concept="3F0ifn" id="3x7uzC8rcMq" role="3EZMnx">
+                <property role="3F0ifm" value="Stopped too Soon," />
+                <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+              </node>
+              <node concept="3F0ifn" id="3x7uzC8ryvO" role="3EZMnx">
+                <property role="3F0ifm" value="Applied too Long" />
+                <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
+              </node>
+            </node>
           </node>
           <node concept="3F2HdR" id="_wUu$U6xkh" role="2reSmM">
             <ref role="1NtTu8" to="bewr:1JhvKLLOa17" resolve="stoppedTooSoonAppliedTooLong" />
+            <ref role="1k5W1q" node="3x7uzC8qOMR" resolve="uca_style" />
             <node concept="2iRkQZ" id="_wUu$U6xkj" role="2czzBx" />
             <node concept="3F0ifn" id="_wUu$U7S16" role="2czzBI">
               <property role="3F0ifm" value="ToDo" />
@@ -1439,6 +1487,35 @@
                         <ref role="3Tt5mk" to="bewr:EZNLLOzTTM" resolve="description" />
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="V5hpn" id="3x7uzC8qOMQ">
+    <property role="3GE5qa" value="baseLanguage.analysis" />
+    <property role="TrG5h" value="stpa_styles" />
+    <node concept="14StLt" id="3x7uzC8qOMR" role="V601i">
+      <property role="TrG5h" value="uca_style" />
+      <node concept="VSNWy" id="3x7uzC8qOMX" role="3F10Kt">
+        <node concept="1cFabM" id="3x7uzC8qON1" role="1d8cEk">
+          <node concept="3clFbS" id="3x7uzC8qON2" role="2VODD2">
+            <node concept="3clFbF" id="3x7uzC8qOW9" role="3cqZAp">
+              <node concept="3cpWsd" id="3x7uzC8qQuz" role="3clFbG">
+                <node concept="3cmrfG" id="3x7uzC8qQuB" role="3uHU7w">
+                  <property role="3cmrfH" value="4" />
+                </node>
+                <node concept="2OqwBi" id="3x7uzC8qPvr" role="3uHU7B">
+                  <node concept="2YIFZM" id="3x7uzC8qPgD" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="3x7uzC8qPLB" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                   </node>
                 </node>
               </node>
