@@ -49,6 +49,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
@@ -99,6 +102,23 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="22gnu5EU_k3">
+    <property role="3GE5qa" value="base" />
+    <ref role="13h7C2" to="6k2r:7j1NWs11GhV" resolve="SubjectBase" />
+    <node concept="13i0hz" id="22gnu5EU_ke" role="13h7CS">
+      <property role="TrG5h" value="allFailureModesDefinedForThisComponent" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="22gnu5EU_kf" role="1B3o_S" />
+      <node concept="2I9FWS" id="22gnu5EU_ky" role="3clF45">
+        <ref role="2I9WkF" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
+      </node>
+      <node concept="3clFbS" id="22gnu5EU_kh" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="22gnu5EU_k4" role="13h7CW">
+      <node concept="3clFbS" id="22gnu5EU_k5" role="2VODD2" />
     </node>
   </node>
 </model>
