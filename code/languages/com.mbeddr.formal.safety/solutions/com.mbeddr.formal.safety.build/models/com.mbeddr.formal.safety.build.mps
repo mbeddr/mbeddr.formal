@@ -2125,35 +2125,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="4clv$caDvnI" role="1TViLv">
-          <property role="TrG5h" value="com.fasten.req.ontology.generator" />
-          <property role="3LESm3" value="fca17f0e-784c-4e13-a699-651b57e23496" />
-          <node concept="1BupzO" id="4clv$caDvnW" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="4clv$caDvnX" role="1HemKq">
-              <node concept="398BVA" id="4clv$caDvnJ" role="3LXTmr">
-                <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
-                <node concept="2Ry0Ak" id="4clv$caDvnK" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="4clv$caDvnL" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.fasten.req.ontology" />
-                    <node concept="2Ry0Ak" id="4clv$caDvnM" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="4clv$caDvnN" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="4clv$caDvnY" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="4clv$caDy0$" role="3bR37C">
           <node concept="1Busua" id="4clv$caDy0_" role="1SiIV1">
             <ref role="1Busuk" node="4clv$caDw5k" resolve="com.fasten.req.odd" />
@@ -2255,35 +2226,6 @@
         <node concept="1SiIV0" id="4clv$caDxpw" role="3bR37C">
           <node concept="1Busua" id="4clv$caDxpx" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="4clv$caDxpy" role="1TViLv">
-          <property role="TrG5h" value="com.fasten.req.odd#01" />
-          <property role="3LESm3" value="db8633d4-9a47-4f06-90b9-d184ca03d176" />
-          <node concept="1BupzO" id="4clv$caDxpK" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="4clv$caDxpL" role="1HemKq">
-              <node concept="398BVA" id="4clv$caDxpz" role="3LXTmr">
-                <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
-                <node concept="2Ry0Ak" id="4clv$caDxp$" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="4clv$caDxp_" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.fasten.req.odd" />
-                    <node concept="2Ry0Ak" id="4clv$caDxpA" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="4clv$caDxpB" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="4clv$caDxpM" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
           </node>
         </node>
       </node>
