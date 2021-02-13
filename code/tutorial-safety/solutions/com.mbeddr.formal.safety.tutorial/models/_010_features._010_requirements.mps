@@ -95,14 +95,19 @@
     </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
       <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
       <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
         <child id="3226630706270140651" name="text" index="0nzdz" />
       </concept>
       <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
-        <reference id="467505803006179847" name="req" index="0Sh0a" />
+        <property id="5527923527667070880" name="description" index="18Epq9" />
+        <child id="7993788941569402916" name="reqRefs" index="hnKMk" />
       </concept>
       <concept id="7094415537350220692" name="com.mbeddr.formal.req.base.structure.ReqRefWord" flags="ng" index="2aGvr3">
         <reference id="7094415537350220726" name="req" index="2aGvrx" />
+      </concept>
+      <concept id="7993788941569402923" name="com.mbeddr.formal.req.base.structure.RequirementRef" flags="ng" index="hnKMr">
+        <reference id="7993788941569402924" name="req" index="hnKMs" />
       </concept>
       <concept id="3536307729771763876" name="com.mbeddr.formal.req.base.structure.TracedNodeSpec" flags="ng" index="3g$em0">
         <reference id="3536307729771763879" name="trace" index="3g$em3" />
@@ -112,7 +117,6 @@
         <property id="815900398743502458" name="scale" index="3OpxtG" />
         <child id="815900398743284144" name="imageFile" index="3OoW2A" />
       </concept>
-      <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
         <child id="4908298719893728789" name="spec" index="1QQeAV" />
       </concept>
@@ -133,7 +137,6 @@
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2295987781863215983" name="com.mbeddr.formal.nusmv.structure.NotEqualsExpression" flags="ng" index="dheZm" />
-      <concept id="2707707741262126533" name="com.mbeddr.formal.nusmv.structure.EmptyModuleContent" flags="ng" index="s4Ewt" />
       <concept id="8004696212664077689" name="com.mbeddr.formal.nusmv.structure.AbstractSpecSection" flags="ng" index="tPUAM">
         <child id="8482728081216646944" name="expr" index="1yBDGv" />
       </concept>
@@ -400,7 +403,7 @@
       <node concept="1QQeFk" id="5FhZjqTNhvR" role="0nOlf" />
       <node concept="19SGf9" id="5FhZjqTNhvS" role="1QQeG9">
         <node concept="19SUe$" id="5FhZjqTNhvT" role="19SJt6">
-          <property role="19SUeA" value="Airbag high-level functions" />
+          <property role="19SUeA" value="Airbag activation/deactivation" />
         </node>
       </node>
       <node concept="1QQeAY" id="5FhZjqTNhvU" role="1QQeAC">
@@ -431,41 +434,53 @@
             </node>
           </node>
         </node>
-        <node concept="12utKC" id="5FhZjqTNyFh" role="3z0uXc">
-          <node concept="12uYNE" id="5FhZjqTNyFf" role="12ut_$">
-            <node concept="3z7eFS" id="5FhZjqTN$eZ" role="12uYNq">
-              <node concept="19SGf9" id="5FhZjqTN$f0" role="3z7eFT">
-                <node concept="19SUe$" id="5FhZjqTN$f1" role="19SJt6">
+      </node>
+    </node>
+    <node concept="0lhDl" id="SmAS9iiIik" role="1QQeBF">
+      <property role="0lsPA" value="020.02" />
+      <property role="0ke_I" value="john" />
+      <node concept="1QQeFk" id="SmAS9iiIil" role="0nOlf" />
+      <node concept="19SGf9" id="SmAS9iiIim" role="1QQeG9">
+        <node concept="19SUe$" id="SmAS9iiIin" role="19SJt6">
+          <property role="19SUeA" value="Airbag deployment " />
+        </node>
+      </node>
+      <node concept="3z7I3Z" id="SmAS9iiIis" role="1QQeAC">
+        <node concept="12utKC" id="SmAS9iiIiA" role="3z0uXc">
+          <node concept="12uYNE" id="SmAS9iiIiB" role="12ut_$">
+            <node concept="3z7eFS" id="SmAS9iiIiC" role="12uYNq">
+              <node concept="19SGf9" id="SmAS9iiIiD" role="3z7eFT">
+                <node concept="19SUe$" id="SmAS9iiIiE" role="19SJt6">
                   <property role="19SUeA" value="impact was detected" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="12uYWW" id="5FhZjqTN$f5" role="12ut_r">
-            <node concept="3z7eFS" id="5FhZjqTN$f7" role="12tvb5">
-              <node concept="19SGf9" id="5FhZjqTN$f8" role="3z7eFT">
-                <node concept="19SUe$" id="5FhZjqTN$f9" role="19SJt6">
+          <node concept="12uYWW" id="SmAS9iiIiF" role="12ut_r">
+            <node concept="3z7eFS" id="SmAS9iiIiG" role="12tvb5">
+              <node concept="19SGf9" id="SmAS9iiIiH" role="3z7eFT">
+                <node concept="19SUe$" id="SmAS9iiIiI" role="19SJt6">
                   <property role="19SUeA" value="impact severity is high" />
                 </node>
               </node>
             </node>
-            <node concept="12uYYC" id="5FhZjqTN$fd" role="12uYWX">
-              <node concept="3z7eFS" id="5FhZjqTN_Fm" role="12uYYF">
-                <node concept="19SGf9" id="5FhZjqTN_Fn" role="3z7eFT">
-                  <node concept="19SUe$" id="5FhZjqTN_Fo" role="19SJt6">
+            <node concept="12uYYC" id="SmAS9iiIiJ" role="12uYWX">
+              <node concept="3z7eFS" id="SmAS9iiIiK" role="12uYYF">
+                <node concept="19SGf9" id="SmAS9iiIiL" role="3z7eFT">
+                  <node concept="19SUe$" id="SmAS9iiIiM" role="19SJt6">
                     <property role="19SUeA" value="the airbag will be deployed" />
                   </node>
                 </node>
               </node>
-              <node concept="3gddix" id="4eD_5l3kiXi" role="Sxolm">
-                <node concept="2IPVmt" id="4eD_5l3kiXo" role="3gdd9N">
+              <node concept="3gddix" id="SmAS9iiIiN" role="Sxolm">
+                <node concept="2IPVmt" id="SmAS9iiIiO" role="3gdd9N">
                   <property role="2IPVms" value="10" />
                 </node>
-                <node concept="3gddiy" id="4eD_5l3kiXB" role="3gdd9L" />
+                <node concept="3gddiy" id="SmAS9iiIiP" role="3gdd9L" />
               </node>
-              <node concept="SBTrt" id="4eD_5l3kDR5" role="SB3Y2">
-                <node concept="SBTr4" id="4eD_5l3kDR7" role="SBTr3" />
-                <node concept="2IPVmt" id="4eD_5l3kDRd" role="SBTq5">
+              <node concept="SBTrt" id="SmAS9iiIiQ" role="SB3Y2">
+                <node concept="SBTr4" id="SmAS9iiIiR" role="SBTr3" />
+                <node concept="2IPVmt" id="SmAS9iiIiS" role="SBTq5">
                   <property role="2IPVms" value="99.9999" />
                 </node>
               </node>
@@ -474,6 +489,7 @@
         </node>
       </node>
     </node>
+    <node concept="0lH3_" id="1hVxJaWA7EK" role="1QQeBF" />
   </node>
   <node concept="1QQeGf" id="5FhZjqTO18E">
     <property role="TrG5h" value="_030_formal_architecture_driven_req_spec" />
@@ -495,7 +511,6 @@
           </node>
         </node>
       </node>
-      <node concept="1QQeAL" id="4g_LT4l9MgT" role="1QQeAC" />
       <node concept="12noo2" id="4g_LT4l9MBz" role="1QQeAC">
         <ref role="12no6r" node="4g_LT4l9MA1" resolve="AirbagSystem" />
         <node concept="12utKC" id="4g_LT4l9MBT" role="3z0uXc">
@@ -712,7 +727,6 @@
           </node>
         </node>
       </node>
-      <node concept="s4Ewt" id="1L4MZBxTaom" role="2HcbjO" />
       <node concept="2Hdtzr" id="1L4MZBxTani" role="2Hdtzq">
         <property role="TrG5h" value="deactivate_airbag" />
       </node>
@@ -720,7 +734,9 @@
         <property role="TrG5h" value="collision_detected" />
       </node>
       <node concept="0Sh09" id="65VbbGlqZgk" role="lGtFl">
-        <ref role="0Sh0a" node="VJbr0XaaMn" />
+        <node concept="hnKMr" id="SmAS9ikGWO" role="hnKMk">
+          <ref role="hnKMs" node="VJbr0XaaMn" />
+        </node>
       </node>
     </node>
     <node concept="2SQmWS" id="1L4MZBxTank" role="2HcuB8" />
@@ -1184,7 +1200,10 @@
           </node>
         </node>
         <node concept="0Sh09" id="4eD_5l3mIAp" role="lGtFl">
-          <ref role="0Sh0a" node="VJbr0XaaMn" />
+          <property role="18Epq9" value="airbag_statemachine" />
+          <node concept="hnKMr" id="SmAS9imD3J" role="hnKMk">
+            <ref role="hnKMs" node="VJbr0XaaMn" />
+          </node>
         </node>
       </node>
       <node concept="3_qfHp" id="4eD_5l3mneR" role="2Hdtzq">
