@@ -1506,9 +1506,6 @@
           <node concept="3clFbS" id="3x7uzC8qON2" role="2VODD2">
             <node concept="3clFbF" id="3x7uzC8qOW9" role="3cqZAp">
               <node concept="3cpWsd" id="3x7uzC8qQuz" role="3clFbG">
-                <node concept="3cmrfG" id="3x7uzC8qQuB" role="3uHU7w">
-                  <property role="3cmrfH" value="4" />
-                </node>
                 <node concept="2OqwBi" id="3x7uzC8qPvr" role="3uHU7B">
                   <node concept="2YIFZM" id="3x7uzC8qPgD" role="2Oq$k0">
                     <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
@@ -1517,6 +1514,9 @@
                   <node concept="liA8E" id="3x7uzC8qPLB" role="2OqNvi">
                     <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                   </node>
+                </node>
+                <node concept="3cmrfG" id="SmAS9iohFo" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
                 </node>
               </node>
             </node>
