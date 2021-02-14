@@ -332,7 +332,7 @@
       <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
       <ref role="SrP07" node="5tEenuYOMfq" resolve="Motion Control" />
       <node concept="Sqzvu" id="5tEenuYOMfG" role="Sq$B$">
-        <property role="TrG5h" value="CEM Trajectory2144312" />
+        <property role="TrG5h" value="CEM Trajectory" />
       </node>
     </node>
     <node concept="1XyJaU" id="_wUu$TX6YW" role="1X_0GB">
@@ -417,7 +417,7 @@
     <node concept="1E0nOG" id="5tEenuYOMgu" role="1E0n_e">
       <ref role="1E0nOH" node="5tEenuYOMfd" resolve="CEM Planner" />
       <node concept="1E0nOJ" id="5tEenuYOMgv" role="1E0nOC">
-        <ref role="1E0n_N" node="5tEenuYOMfG" resolve="CEM Trajectory2144312" />
+        <ref role="1E0n_N" node="5tEenuYOMfG" resolve="CEM Trajectory" />
         <node concept="1E0uc6" id="_wUu$TYGPy" role="1E0ucd">
           <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_01" />
           <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
