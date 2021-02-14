@@ -22,6 +22,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="e57v" ref="r:93b2e8e3-0386-4499-a54c-f963e83483f2(com.fasten.req.ontology.util)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -84,6 +85,8 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -1166,6 +1169,72 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Jm8RM1yw0t">
+    <ref role="1XX52x" to="6wa3:7Jm8RM1yw0q" resolve="OntologyConceptRefWord" />
+    <node concept="3EZMnI" id="7Jm8RM1yw0x" role="2wV5jI">
+      <node concept="PMmxH" id="7Jm8RM1yw0F" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="7Jm8RM1yw0K" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="7Jm8RM1y$hP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7Jm8RM1y$hU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="7Jm8RM1yw0S" role="3EZMnx">
+        <ref role="1NtTu8" to="6wa3:7Jm8RM1yw0v" resolve="concept" />
+        <node concept="1sVBvm" id="7Jm8RM1yw0U" role="1sWHZn">
+          <node concept="3F0A7n" id="7Jm8RM1yw13" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7Jm8RM1yw1d" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="7Jm8RM1y$hN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7Jm8RM1yw0$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Jm8RM1z5Bt">
+    <ref role="1XX52x" to="6wa3:7Jm8RM1z5Bo" resolve="OntologyRefWord" />
+    <node concept="3EZMnI" id="7Jm8RM1z5Bv" role="2wV5jI">
+      <node concept="PMmxH" id="7Jm8RM1z5Bw" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="7Jm8RM1z5Bx" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="7Jm8RM1z5By" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7Jm8RM1z5Bz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="7Jm8RM1z5B$" role="3EZMnx">
+        <ref role="1NtTu8" to="6wa3:7Jm8RM1z5Br" resolve="ontology" />
+        <node concept="1sVBvm" id="7Jm8RM1z5B_" role="1sWHZn">
+          <node concept="3F0A7n" id="7Jm8RM1z5BA" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7Jm8RM1z5BB" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="7Jm8RM1z5BC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7Jm8RM1z5BD" role="2iSdaV" />
     </node>
   </node>
 </model>

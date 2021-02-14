@@ -11,6 +11,24 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
+      </concept>
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -27,6 +45,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -79,6 +98,23 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7gUa1Zsy25c" resolve="IOntologyContent" />
     </node>
+    <node concept="1irR5M" id="7Jm8RM1xAx5" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irR9n" id="1hVxJaWA7Fs" role="1irR9h">
+        <node concept="3PKj8D" id="1hVxJaWA7Fz" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="1hVxJaWA7FA" role="3PKjnB">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="1hVxJaWA6z6" role="1irR9h">
+        <property role="1irPi9" value="Ω" />
+        <node concept="3PKj8D" id="1hVxJaWA6zb" role="3PKjny">
+          <property role="3PKj8l" value="770000" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="3Jn$RV31w1o">
     <property role="EcuMT" value="4312077340877652056" />
@@ -122,6 +158,72 @@
       <property role="20kJfa" value="ontologyConcept" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3Jn$RV31w1o" resolve="OntologyConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Jm8RM1yw0q">
+    <property role="EcuMT" value="8923358729337438234" />
+    <property role="TrG5h" value="OntologyConceptRefWord" />
+    <property role="34LRSv" value="@concept" />
+    <property role="R4oN_" value="reference a concept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7Jm8RM1yw0v" role="1TKVEi">
+      <property role="IQ2ns" value="8923358729337438239" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3Jn$RV31w1o" resolve="OntologyConcept" />
+    </node>
+    <node concept="PrWs8" id="7Jm8RM1yw0r" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1irR5M" id="7Jm8RM1z528" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irR9n" id="7Jm8RM1z52d" role="1irR9h">
+        <node concept="3PKj8D" id="7Jm8RM1z52e" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="7Jm8RM1z52f" role="3PKjnB">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="7Jm8RM1z52g" role="1irR9h">
+        <property role="1irPi9" value="ω" />
+        <node concept="3PKj8D" id="7Jm8RM1z52h" role="3PKjny">
+          <property role="3PKj8l" value="770000" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Jm8RM1z5Bo">
+    <property role="EcuMT" value="8923358729337592280" />
+    <property role="TrG5h" value="OntologyRefWord" />
+    <property role="34LRSv" value="@ontology" />
+    <property role="R4oN_" value="reference an ontology" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Jm8RM1z5Bp" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="7Jm8RM1z5Br" role="1TKVEi">
+      <property role="IQ2ns" value="8923358729337592283" />
+      <property role="20kJfa" value="ontology" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3Jn$RV31w1l" resolve="Ontology" />
+    </node>
+    <node concept="1irR5M" id="7Jm8RM1zf74" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irR9n" id="7Jm8RM1zf78" role="1irR9h">
+        <node concept="3PKj8D" id="7Jm8RM1zf79" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="7Jm8RM1zf7a" role="3PKjnB">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="7Jm8RM1zf7b" role="1irR9h">
+        <property role="1irPi9" value="Ω" />
+        <node concept="3PKj8D" id="7Jm8RM1zf7c" role="3PKjny">
+          <property role="3PKj8l" value="770000" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
