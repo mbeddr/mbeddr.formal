@@ -2067,7 +2067,7 @@
               </node>
             </node>
             <node concept="3LWZYx" id="4clv$caDyuY" role="3LXTna">
-              <property role="3LWZYw" value="com/mbeddr/formal/req/ontology/structure/*.png" />
+              <property role="3LWZYw" value="com/fasten/req/ontology/structure/*.png" />
             </node>
           </node>
         </node>
