@@ -2131,6 +2131,45 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="7Jm8RM1zoDc" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.fasten.req.ontology.lib" />
+        <property role="3LESm3" value="8fe22e59-5111-4d11-87a2-2938e839b2fd" />
+        <node concept="398BVA" id="7Jm8RM1zoSS" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
+          <node concept="2Ry0Ak" id="7Jm8RM1zpa4" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="7Jm8RM1zpzM" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.req.ontology.lib" />
+              <node concept="2Ry0Ak" id="7Jm8RM1zpOX" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasten.req.ontology.lib.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="7Jm8RM1zq64" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="7Jm8RM1zq65" role="1HemKq">
+            <node concept="398BVA" id="7Jm8RM1zq5T" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
+              <node concept="2Ry0Ak" id="7Jm8RM1zq5U" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7Jm8RM1zq5V" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.req.ontology.lib" />
+                  <node concept="2Ry0Ak" id="7Jm8RM1zq5W" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7Jm8RM1zq66" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="4clv$caDw5k" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.fasten.req.odd" />
@@ -3063,6 +3102,12 @@
         </node>
         <node concept="3LEDTy" id="4j$kJYQUi_B" role="3LEDUa">
           <ref role="3LEDTV" node="4j$kJYQUgKL" resolve="com.mbeddr.formal.req.tl_patterns.arch" />
+        </node>
+        <node concept="3LEDTy" id="7Jm8RM1zq8U" role="3LEDUa">
+          <ref role="3LEDTV" node="4clv$caDtVU" resolve="com.fasten.req.ontology" />
+        </node>
+        <node concept="3LEDTM" id="7Jm8RM1zqJr" role="3LEDUa">
+          <ref role="3LEDTN" node="7Jm8RM1zoDc" resolve="com.fasten.req.ontology.lib" />
         </node>
       </node>
     </node>
