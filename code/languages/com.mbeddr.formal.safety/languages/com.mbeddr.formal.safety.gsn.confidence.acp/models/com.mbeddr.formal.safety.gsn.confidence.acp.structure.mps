@@ -76,6 +76,7 @@
     <property role="TrG5h" value="ConfidenceArgument" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="confidence argument" />
+    <property role="R4oN_" value="an argument about the confidence in a claim" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="1TJgyj" id="4lbNCDmPWRO" role="1TKVEi">
       <property role="IQ2ns" value="4993311705428119028" />
