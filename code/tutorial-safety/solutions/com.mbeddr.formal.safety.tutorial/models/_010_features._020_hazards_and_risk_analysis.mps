@@ -7,7 +7,7 @@
   <imports />
   <registry>
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
-      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardConsequence" flags="ng" index="gxbn0">
+      <concept id="5082661585110796296" name="com.mbeddr.formal.safety.stamp.structure.HazardRefConsequence" flags="ng" index="gxbn0">
         <reference id="5082661585110796314" name="hazard" index="gxbni" />
       </concept>
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
@@ -46,6 +46,15 @@
         <child id="4286195509387832124" name="content" index="1X_0GB" />
       </concept>
       <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
+      <concept id="774565382052828238" name="com.mbeddr.formal.safety.stamp.structure.ContextRefContext" flags="ng" index="1YbhHi">
+        <reference id="774565382052828239" name="context" index="1YbhHj" />
+      </concept>
+      <concept id="774565382052617837" name="com.mbeddr.formal.safety.stamp.structure.ContextDefinition" flags="ng" index="1Yc55L">
+        <child id="774565382052617842" name="description" index="1Yc55I" />
+      </concept>
+      <concept id="774565382052595501" name="com.mbeddr.formal.safety.stamp.structure.ContextsCatalogue" flags="ng" index="1Yc8wL">
+        <child id="774565382052617889" name="contextDefinitions" index="1Yc56X" />
+      </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -62,7 +71,19 @@
       <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc">
+        <child id="7926133672145657778" name="losses" index="3Zv_sA" />
+      </concept>
       <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+      <concept id="7926133672145657758" name="com.mbeddr.formal.safety.hara.structure.LossRef" flags="ng" index="3Zv_sa">
+        <reference id="7926133672145657759" name="loss" index="3Zv_sb" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -321,6 +342,9 @@
       <node concept="Sqzvu" id="1L4MZBxVgIE" role="Sq$B$">
         <property role="TrG5h" value="Crash Detected" />
       </node>
+      <node concept="Sqzvu" id="7Jm8RM1zonQ" role="Sq$B$">
+        <property role="TrG5h" value="Sensors Health" />
+      </node>
     </node>
   </node>
   <node concept="1E0nO6" id="1L4MZBxVgKw">
@@ -385,15 +409,11 @@
         <ref role="1E0n_N" node="1L4MZBxVgEo" resolve="Activation Status" />
         <node concept="1E0COo" id="1L4MZBxVFnp" role="1E0ucd">
           <property role="TrG5h" value="UCA_AIRBAG_STATUS_01" />
-          <node concept="1E0COg" id="1L4MZBxVFnv" role="1E0COp">
-            <node concept="19SGf9" id="1L4MZBxVFnx" role="1E0COh">
-              <node concept="19SUe$" id="1L4MZBxVFny" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
-              </node>
-            </node>
-          </node>
           <node concept="gxbn0" id="1L4MZBxVSOQ" role="1E0COk">
             <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+          </node>
+          <node concept="1YbhHi" id="7Jm8RM1zooa" role="1E0COp">
+            <ref role="1YbhHj" node="7Jm8RM1zoo0" resolve="vehicle crash at high speed" />
           </node>
         </node>
         <node concept="1E0COo" id="1L4MZBxVSOT" role="1E0tWM">
@@ -470,27 +490,83 @@
     </node>
   </node>
   <node concept="8gVzP" id="1L4MZBxVFrv">
-    <property role="TrG5h" value="_100_airbag_hazards" />
+    <property role="TrG5h" value="_110_airbag_hazards" />
     <node concept="1a6Z8w" id="7L33HENb9vA" role="8gIbH">
       <property role="0lsPA" value="H01" />
       <property role="TrG5h" value="airbag does not deploy" />
       <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
       <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <node concept="3Zv_sa" id="7Jm8RM1zooT" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7Jm8RM1zooO" resolve="driver severe injury which requires hospitalization" />
+      </node>
+      <node concept="3Zv_sa" id="7Jm8RM1zooY" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7Jm8RM1zooH" resolve="passenger severe injury which requires hospitalization" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="7L33HENb9vN" role="8gIbH">
       <property role="0lsPA" value="H02" />
       <property role="TrG5h" value="airbag deploys unintentionally" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
-      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
       <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
+      <node concept="3Zv_sa" id="7Jm8RM1zop2" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7Jm8RM1zooO" resolve="driver severe injury which requires hospitalization" />
+      </node>
+      <node concept="3Zv_sa" id="7Jm8RM1zopl" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7Jm8RM1zooH" resolve="passenger severe injury which requires hospitalization" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="7L33HENb9wH" role="8gIbH">
       <property role="0lsPA" value="H03" />
       <property role="TrG5h" value="airbag deploys too soon or late" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
+      <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <node concept="3Zv_sa" id="7Jm8RM1zopp" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7Jm8RM1zooN" resolve="driver light injury which does not require hospitalization" />
+      </node>
+      <node concept="3Zv_sa" id="7Jm8RM1zopu" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7Jm8RM1zooJ" resolve="passenger light injury which does not require hospitalization" />
+      </node>
+    </node>
+  </node>
+  <node concept="1Yc8wL" id="7Jm8RM1zonU">
+    <property role="TrG5h" value="_005_context_definition" />
+    <node concept="1Yc55L" id="7Jm8RM1zonV" role="1Yc56X">
+      <property role="TrG5h" value="vehicle crash at low speed" />
+      <node concept="19SGf9" id="7Jm8RM1zonW" role="1Yc55I">
+        <node concept="19SUe$" id="7Jm8RM1zonX" role="19SJt6">
+          <property role="19SUeA" value="collision of the vehicle &#10;at relative speed &lt; 30 km/h " />
+        </node>
+      </node>
+    </node>
+    <node concept="1Yc55L" id="7Jm8RM1zoo0" role="1Yc56X">
+      <property role="TrG5h" value="vehicle crash at high speed" />
+      <node concept="19SGf9" id="7Jm8RM1zoo1" role="1Yc55I">
+        <node concept="19SUe$" id="7Jm8RM1zoo2" role="19SJt6">
+          <property role="19SUeA" value="collision of the vehicle &#10;at relative speed &gt; 30 km/h " />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2HxQMi" id="7Jm8RM1zooG">
+    <property role="TrG5h" value="_100_losses" />
+    <node concept="2HxQMU" id="7Jm8RM1zooH" role="2HxQMj">
+      <property role="2HxQM_" value="PASS_SEV_INJ" />
+      <property role="TrG5h" value="passenger severe injury which requires hospitalization" />
+    </node>
+    <node concept="2HxQMU" id="7Jm8RM1zooJ" role="2HxQMj">
+      <property role="2HxQM_" value="PASS_LIGHT_INJ" />
+      <property role="TrG5h" value="passenger light injury which does not require hospitalization" />
+    </node>
+    <node concept="2HxQMU" id="7Jm8RM1zooO" role="2HxQMj">
+      <property role="2HxQM_" value="DRIVER_SEV_INJ" />
+      <property role="TrG5h" value="driver severe injury which requires hospitalization" />
+    </node>
+    <node concept="2HxQMU" id="7Jm8RM1zooN" role="2HxQMj">
+      <property role="2HxQM_" value="DRIVER_LIGHT_INJ" />
+      <property role="TrG5h" value="driver light injury which does not require hospitalization" />
     </node>
   </node>
 </model>

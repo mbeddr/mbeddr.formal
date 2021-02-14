@@ -621,7 +621,7 @@
           </node>
         </node>
         <node concept="WVd_g" id="4g_LT4l9MD_" role="3z0uXc">
-          <property role="WVd_l" value="this requirement is in contradiciton with the one from above" />
+          <property role="WVd_l" value="this requirement is in contradiciton with the one from above - CANNOT be automatically checked here - see the next example" />
         </node>
         <node concept="12utKC" id="4g_LT4l9MDA" role="3z0uXc">
           <node concept="12uYNE" id="4g_LT4l9MDB" role="12ut_$">
@@ -927,7 +927,7 @@
     </node>
   </node>
   <node concept="1QQeGf" id="4g_LT4l9Mg1">
-    <property role="TrG5h" value="_040_formal_tl_spec_patterns_over_SMV" />
+    <property role="TrG5h" value="_040_formal_checkable_tl_spec_patterns_over_SMV" />
     <node concept="0lhDl" id="4g_LT4l9Mg2" role="1QQeBF">
       <property role="0lsPA" value="040.01" />
       <property role="0ke_I" value="dan" />

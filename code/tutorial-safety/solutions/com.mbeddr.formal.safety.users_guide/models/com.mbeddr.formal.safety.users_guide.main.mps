@@ -485,7 +485,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="4U3OABz7Qpf" role="3z_lpI">
             <node concept="2NCMab" id="4U3OABz7Yz6" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:1L4MZBxVFrv" resolve="_100_airbag_hazards" />
+              <ref role="2NCMaa" to="xtgl:1L4MZBxVFrv" resolve="_110_airbag_hazards" />
             </node>
           </node>
         </node>
