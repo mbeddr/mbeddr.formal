@@ -51,6 +51,9 @@
       <concept id="3226630706270076330" name="com.mbeddr.formal.req.base.structure.ListItem" flags="ng" index="0nNoy">
         <child id="3226630706270076331" name="text" index="0nNoz" />
       </concept>
+      <concept id="7094415537350220692" name="com.mbeddr.formal.req.base.structure.ReqRefWord" flags="ng" index="2aGvr3">
+        <reference id="7094415537350220726" name="req" index="2aGvrx" />
+      </concept>
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
         <child id="4908298719893728789" name="spec" index="1QQeAV" />
       </concept>
@@ -7566,11 +7569,11 @@
     <node concept="2iKOIG" id="3O4VKknI$pY" role="2vn1q5">
       <property role="TrG5h" value="G20" />
       <node concept="19SGf9" id="3O4VKknI$pZ" role="2vnaTY">
-        <node concept="19SUe$" id="3O4VKknI$qy" role="19SJt6" />
-        <node concept="2NwIr6" id="3O4VKknI$q0" role="19SJt6">
-          <ref role="2NwIr1" node="35$gPpxdqeM" />
+        <node concept="19SUe$" id="ZH03rPhLW8" role="19SJt6" />
+        <node concept="2aGvr3" id="ZH03rPhLW6" role="19SJt6">
+          <ref role="2aGvrx" node="35$gPpxdqeM" />
         </node>
-        <node concept="19SUe$" id="3O4VKknI$q1" role="19SJt6">
+        <node concept="19SUe$" id="ZH03rPhLW7" role="19SJt6">
           <property role="19SUeA" value=" is satisfied" />
         </node>
       </node>
