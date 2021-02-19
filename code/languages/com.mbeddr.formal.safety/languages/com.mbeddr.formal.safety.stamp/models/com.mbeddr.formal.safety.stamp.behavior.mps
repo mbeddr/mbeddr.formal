@@ -101,6 +101,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
@@ -173,7 +174,7 @@
       <node concept="3clFbS" id="3HVC1H6WxuX" role="3clF47">
         <node concept="3clFbF" id="3HVC1H6Wxvc" role="3cqZAp">
           <node concept="Xl_RD" id="3HVC1H6Wxvb" role="3clFbG">
-            <property role="Xl_RC" value="baselang" />
+            <property role="Xl_RC" value="STAMP Base Lang" />
           </node>
         </node>
       </node>
@@ -186,6 +187,24 @@
         <ref role="2I9WkF" to="bewr:3Cm$$O2vamj" resolve="Action" />
       </node>
       <node concept="3clFbS" id="7BYuSCFAnIw" role="3clF47">
+        <node concept="3cpWs8" id="1FMyjUP5J5u" role="3cqZAp">
+          <node concept="3cpWsn" id="1FMyjUP5J5v" role="3cpWs9">
+            <property role="TrG5h" value="fcs" />
+            <node concept="3Tqbb2" id="1FMyjUP5IfN" role="1tU5fm">
+              <ref role="ehGHo" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
+            </node>
+            <node concept="2OqwBi" id="1FMyjUP5J5w" role="33vP2m">
+              <node concept="13iPFW" id="1FMyjUP5J5x" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1FMyjUP5J5y" role="2OqNvi">
+                <node concept="1xMEDy" id="1FMyjUP5J5z" role="1xVPHs">
+                  <node concept="chp4Y" id="1FMyjUP5J5$" role="ri$Ld">
+                    <ref role="cht4Q" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7BYuSCFArQ9" role="3cqZAp">
           <node concept="3cpWsn" id="7BYuSCFArQa" role="3cpWs9">
             <property role="TrG5h" value="allConnections" />
@@ -193,18 +212,15 @@
               <ref role="2I9WkF" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
             </node>
             <node concept="2OqwBi" id="7BYuSCFArQb" role="33vP2m">
-              <node concept="2OqwBi" id="7BYuSCFArQc" role="2Oq$k0">
-                <node concept="13iPFW" id="7BYuSCFArQd" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="7BYuSCFArQe" role="2OqNvi">
-                  <node concept="1xMEDy" id="7BYuSCFArQf" role="1xVPHs">
-                    <node concept="chp4Y" id="7BYuSCFArQg" role="ri$Ld">
-                      <ref role="cht4Q" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
-                    </node>
+              <node concept="37vLTw" id="1FMyjUP5J5_" role="2Oq$k0">
+                <ref role="3cqZAo" node="1FMyjUP5J5v" resolve="fcs" />
+              </node>
+              <node concept="2Rf3mk" id="1FMyjUP5K2Z" role="2OqNvi">
+                <node concept="1xMEDy" id="1FMyjUP5K31" role="1xVPHs">
+                  <node concept="chp4Y" id="1FMyjUP5Krp" role="ri$Ld">
+                    <ref role="cht4Q" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
                   </node>
                 </node>
-              </node>
-              <node concept="3Tsc0h" id="7BYuSCFArQh" role="2OqNvi">
-                <ref role="3TtcxE" to="bewr:3HVC1H6VUGY" resolve="connections" />
               </node>
             </node>
           </node>

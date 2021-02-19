@@ -203,6 +203,29 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="1FMyjUP5KRr" role="3cqZAp">
+            <node concept="3cpWsn" id="1FMyjUP5KRs" role="3cpWs9">
+              <property role="TrG5h" value="functionalControlStructure" />
+              <node concept="3Tqbb2" id="1FMyjUP5IYX" role="1tU5fm">
+                <ref role="ehGHo" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
+              </node>
+              <node concept="2OqwBi" id="1FMyjUP5KRt" role="33vP2m">
+                <node concept="2OqwBi" id="1FMyjUP5KRu" role="2Oq$k0">
+                  <node concept="2rP1CM" id="1FMyjUP5KRv" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1FMyjUP5KRw" role="2OqNvi">
+                    <node concept="1xMEDy" id="1FMyjUP5KRx" role="1xVPHs">
+                      <node concept="chp4Y" id="1FMyjUP5KRy" role="ri$Ld">
+                        <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="1FMyjUP5KRz" role="2OqNvi">
+                  <ref role="3Tt5mk" to="bewr:1JhvKLLOibX" resolve="functionalControlStructure" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs8" id="1JhvKLLOxnm" role="3cqZAp">
             <node concept="3cpWsn" id="1JhvKLLOxnn" role="3cpWs9">
               <property role="TrG5h" value="allConnections" />
@@ -210,23 +233,15 @@
                 <ref role="2I9WkF" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
               </node>
               <node concept="2OqwBi" id="1JhvKLLOxno" role="33vP2m">
-                <node concept="2OqwBi" id="1JhvKLLOxnp" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1JhvKLLOxnq" role="2Oq$k0">
-                    <node concept="2rP1CM" id="1JhvKLLOxnr" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="1JhvKLLOxns" role="2OqNvi">
-                      <node concept="1xMEDy" id="1JhvKLLOxnt" role="1xVPHs">
-                        <node concept="chp4Y" id="1JhvKLLOxnu" role="ri$Ld">
-                          <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
-                        </node>
-                      </node>
+                <node concept="37vLTw" id="1FMyjUP5KR$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1FMyjUP5KRs" resolve="functionalControlStructure" />
+                </node>
+                <node concept="2Rf3mk" id="1FMyjUP5Lcw" role="2OqNvi">
+                  <node concept="1xMEDy" id="1FMyjUP5Lcy" role="1xVPHs">
+                    <node concept="chp4Y" id="1FMyjUP5LGY" role="ri$Ld">
+                      <ref role="cht4Q" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="1JhvKLLOxnv" role="2OqNvi">
-                    <ref role="3Tt5mk" to="bewr:1JhvKLLOibX" resolve="functionalControlStructure" />
-                  </node>
-                </node>
-                <node concept="3Tsc0h" id="1JhvKLLOxnw" role="2OqNvi">
-                  <ref role="3TtcxE" to="bewr:3HVC1H6VUGY" resolve="connections" />
                 </node>
               </node>
             </node>
