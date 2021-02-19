@@ -3487,6 +3487,11 @@
             <ref role="1Busuk" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1FMyjUPaAIF" role="3bR37C">
+          <node concept="3bR9La" id="1FMyjUPaAIG" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6hyv0iVPlGD" role="2G$12L">
         <property role="BnDLt" value="true" />
