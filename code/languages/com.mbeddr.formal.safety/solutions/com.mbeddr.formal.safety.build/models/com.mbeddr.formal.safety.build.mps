@@ -8765,7 +8765,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="4y8PK54$TBS" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.web.generator" />
+          <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.web#01" />
           <property role="3LESm3" value="31b0df10-2d1f-4744-8de7-461666d7c2d1" />
           <node concept="1SiIV0" id="4y8PK54$TBT" role="3bR37C">
             <node concept="3bR9La" id="4y8PK54$TBU" role="1SiIV1">
@@ -10476,11 +10476,6 @@
         <node concept="1SiIV0" id="4y8PK54$WWB" role="3bR37C">
           <node concept="3bR9La" id="4y8PK54$WWC" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4y8PK54$WWD" role="3bR37C">
-          <node concept="3bR9La" id="4y8PK54$WWE" role="1SiIV1">
-            <ref role="3bR37D" node="4y8PK54$TBS" resolve="com.mbeddr.formal.safety.gsn.web.generator" />
           </node>
         </node>
         <node concept="1SiIV0" id="4y8PK54$WWF" role="3bR37C">
