@@ -87,6 +87,7 @@
       <property role="20kJfa" value="connections" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
+      <node concept="asaX9" id="1FMyjUP84sa" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="3Cm$$O2ux$k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
