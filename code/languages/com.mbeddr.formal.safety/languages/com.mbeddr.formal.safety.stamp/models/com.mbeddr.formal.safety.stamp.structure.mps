@@ -140,7 +140,7 @@
   <node concept="1TIwiD" id="3HVC1H6WzPx">
     <property role="EcuMT" value="4286195509388000609" />
     <property role="TrG5h" value="Controls" />
-    <property role="34LRSv" value="controls" />
+    <property role="34LRSv" value="Controls" />
     <property role="3GE5qa" value="baseLanguage.control_structure" />
     <ref role="1TJDcQ" node="3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
   </node>
@@ -157,7 +157,7 @@
     <property role="EcuMT" value="4185693763139328936" />
     <property role="3GE5qa" value="baseLanguage.control_structure" />
     <property role="TrG5h" value="Feedback" />
-    <property role="34LRSv" value="feedback" />
+    <property role="34LRSv" value="Feedback" />
     <ref role="1TJDcQ" node="3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
   </node>
   <node concept="1TIwiD" id="1JhvKLLO08a">
