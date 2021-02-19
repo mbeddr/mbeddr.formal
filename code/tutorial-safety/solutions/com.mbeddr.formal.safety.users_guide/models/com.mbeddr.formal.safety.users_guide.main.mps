@@ -598,7 +598,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="3I9hGreJf5X" role="3z_lpI">
             <node concept="2NCMab" id="3I9hGreJf69" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:1TD_kqsR8Z6" resolve="_040_linking_solutions_to_external_documents" />
+              <ref role="2NCMaa" to="io0z:1TD_kqsR8Z6" resolve="_050_linking_solutions_to_external_documents" />
             </node>
           </node>
         </node>
@@ -634,7 +634,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="3I9hGreJfb8" role="3z_lpI">
             <node concept="2NCMab" id="3I9hGreJfbj" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:3I9hGreIU2l" resolve="_050_linking_solutions_to_external_tools" />
+              <ref role="2NCMaa" to="io0z:3I9hGreIU2l" resolve="_060_linking_solutions_to_external_tools" />
             </node>
           </node>
         </node>

@@ -9,7 +9,7 @@
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
     <use id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext" version="0" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
@@ -83,14 +83,15 @@
         <child id="2004523000582413323" name="text" index="1E0uc7" />
       </concept>
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
-      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU" />
+      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU">
+        <child id="1941765291767695615" name="startingConnections" index="2I3o71" />
+      </concept>
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
         <reference id="4185693763139125834" name="target" index="SrP07" />
         <reference id="4185693763139125829" name="source" index="SrP08" />
         <child id="4185693763139328937" name="actions" index="Sq$B$" />
       </concept>
       <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.FunctionalControlStructure" flags="ng" index="1X_0jQ">
-        <child id="4286195509387832126" name="connections" index="1X_0G_" />
         <child id="4286195509387832124" name="content" index="1X_0GB" />
       </concept>
       <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
@@ -5332,6 +5333,33 @@
     <property role="TrG5h" value="_025_charging_cable_control_structure" />
     <node concept="1XyJaU" id="6yFQEkQU9pI" role="1X_0GB">
       <property role="TrG5h" value="Control Box" />
+      <node concept="1XypPU" id="7BYuSCF$h3Q" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
+        <ref role="SrP07" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+        <node concept="Sqzvu" id="7BYuSCF$h3R" role="Sq$B$">
+          <property role="TrG5h" value="Get Temperature Status" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="7BYuSCF$hbG" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
+        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <node concept="Sqzvu" id="7BYuSCF$hbH" role="Sq$B$">
+          <property role="TrG5h" value="Get Connections Status" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyEYBP" role="Sq$B$">
+          <property role="TrG5h" value="Connected To EV" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="7BYuSCF$hJM" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
+        <ref role="SrP07" node="7BYuSCF$hCm" resolve="LEDs" />
+        <node concept="Sqzvu" id="7BYuSCF$hJN" role="Sq$B$">
+          <property role="TrG5h" value="Display Power Status" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlMr" role="Sq$B$">
+          <property role="TrG5h" value="Display Connection Status" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="6yFQEkQU9pN" role="lGtFl">
       <node concept="37mRIm" id="6yFQEkQU9pO" role="37mRID">
@@ -6899,133 +6927,106 @@
     </node>
     <node concept="1XyJaU" id="6yFQEkQU9rl" role="1X_0GB">
       <property role="TrG5h" value="Electrical Cable Sensors" />
+      <node concept="Sq$B_" id="7BYuSCF$f8B" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <ref role="SrP07" node="6yFQEkQU9pI" resolve="Control Box" />
+        <node concept="Sqzvu" id="7BYuSCF$f8C" role="Sq$B$">
+          <property role="TrG5h" value="Powered On" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyEYC7" role="Sq$B$">
+          <property role="TrG5h" value="Connected To EV" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlMS" role="Sq$B$">
+          <property role="TrG5h" value="L" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlMT" role="Sq$B$">
+          <property role="TrG5h" value="N" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlMU" role="Sq$B$">
+          <property role="TrG5h" value="PE" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlMV" role="Sq$B$">
+          <property role="TrG5h" value="Voltage" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlMW" role="Sq$B$">
+          <property role="TrG5h" value="Intensity" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="7BYuSCF$fCq" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <ref role="SrP07" node="6yFQEkQU9sG" resolve="Socket" />
+        <node concept="Sqzvu" id="7BYuSCF$fCr" role="Sq$B$">
+          <property role="TrG5h" value="Get Current" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="7BYuSCF$fY8" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <ref role="SrP07" node="6yFQEkQU9rY" resolve="EV" />
+        <node concept="Sqzvu" id="7BYuSCF$fY9" role="Sq$B$">
+          <property role="TrG5h" value="L" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlGV" role="Sq$B$">
+          <property role="TrG5h" value="N" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlGZ" role="Sq$B$">
+          <property role="TrG5h" value="PE" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="6yFQEkQU9rY" role="1X_0GB">
       <property role="TrG5h" value="EV" />
+      <node concept="1XypPU" id="7BYuSCF$fRo" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9rY" resolve="EV" />
+        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <node concept="Sqzvu" id="7BYuSCF$fRp" role="Sq$B$">
+          <property role="TrG5h" value="GetCurrent" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="6yFQEkQU9sG" role="1X_0GB">
       <property role="TrG5h" value="Socket" />
+      <node concept="Sq$B_" id="7BYuSCF$fkW" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9sG" resolve="Socket" />
+        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <node concept="Sqzvu" id="7BYuSCF$fkX" role="Sq$B$">
+          <property role="TrG5h" value="L" />
+        </node>
+        <node concept="Sqzvu" id="7BYuSCF_43U" role="Sq$B$">
+          <property role="TrG5h" value="N" />
+        </node>
+        <node concept="Sqzvu" id="7BYuSCF_43Y" role="Sq$B$">
+          <property role="TrG5h" value="PE" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="6yFQEkQU9_D" role="1X_0GB">
       <property role="TrG5h" value="Cable Temperature Sensors" />
+      <node concept="Sq$B_" id="7BYuSCF$gm2" role="2I3o71">
+        <ref role="SrP08" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+        <ref role="SrP07" node="6yFQEkQU9pI" resolve="Control Box" />
+        <node concept="Sqzvu" id="7BYuSCF$gm3" role="Sq$B$">
+          <property role="TrG5h" value="Socket-end Temperature" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlMn" role="Sq$B$">
+          <property role="TrG5h" value="EV-end temperature" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="7BYuSCF$eHD" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
-    </node>
-    <node concept="1XypPU" id="7BYuSCF$f2T" role="1X_0G_">
-      <ref role="SrP08" node="7BYuSCF$eHD" resolve="Driver" />
-      <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-      <node concept="Sqzvu" id="7BYuSCF$f2U" role="Sq$B$">
-        <property role="TrG5h" value="Connect to Socket" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlGK" role="Sq$B$">
-        <property role="TrG5h" value="Connect to EV" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="7BYuSCF$f8B" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-      <ref role="SrP07" node="6yFQEkQU9pI" resolve="Control Box" />
-      <node concept="Sqzvu" id="7BYuSCF$f8C" role="Sq$B$">
-        <property role="TrG5h" value="Powered On" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyEYC7" role="Sq$B$">
-        <property role="TrG5h" value="Connected To EV" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlMS" role="Sq$B$">
-        <property role="TrG5h" value="L" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlMT" role="Sq$B$">
-        <property role="TrG5h" value="N" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlMU" role="Sq$B$">
-        <property role="TrG5h" value="PE" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlMV" role="Sq$B$">
-        <property role="TrG5h" value="Voltage" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlMW" role="Sq$B$">
-        <property role="TrG5h" value="Intensity" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="7BYuSCF$fkW" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9sG" resolve="Socket" />
-      <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-      <node concept="Sqzvu" id="7BYuSCF$fkX" role="Sq$B$">
-        <property role="TrG5h" value="L" />
-      </node>
-      <node concept="Sqzvu" id="7BYuSCF_43U" role="Sq$B$">
-        <property role="TrG5h" value="N" />
-      </node>
-      <node concept="Sqzvu" id="7BYuSCF_43Y" role="Sq$B$">
-        <property role="TrG5h" value="PE" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="7BYuSCF$fCq" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-      <ref role="SrP07" node="6yFQEkQU9sG" resolve="Socket" />
-      <node concept="Sqzvu" id="7BYuSCF$fCr" role="Sq$B$">
-        <property role="TrG5h" value="Get Current" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="7BYuSCF$fRo" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9rY" resolve="EV" />
-      <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-      <node concept="Sqzvu" id="7BYuSCF$fRp" role="Sq$B$">
-        <property role="TrG5h" value="GetCurrent" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="7BYuSCF$fY8" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-      <ref role="SrP07" node="6yFQEkQU9rY" resolve="EV" />
-      <node concept="Sqzvu" id="7BYuSCF$fY9" role="Sq$B$">
-        <property role="TrG5h" value="L" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlGV" role="Sq$B$">
-        <property role="TrG5h" value="N" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlGZ" role="Sq$B$">
-        <property role="TrG5h" value="PE" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="7BYuSCF$gm2" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
-      <ref role="SrP07" node="6yFQEkQU9pI" resolve="Control Box" />
-      <node concept="Sqzvu" id="7BYuSCF$gm3" role="Sq$B$">
-        <property role="TrG5h" value="Socket-end Temperature" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlMn" role="Sq$B$">
-        <property role="TrG5h" value="EV-end temperature" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="7BYuSCF$h3Q" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
-      <ref role="SrP07" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
-      <node concept="Sqzvu" id="7BYuSCF$h3R" role="Sq$B$">
-        <property role="TrG5h" value="Get Temperature Status" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="7BYuSCF$hbG" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
-      <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-      <node concept="Sqzvu" id="7BYuSCF$hbH" role="Sq$B$">
-        <property role="TrG5h" value="Get Connections Status" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyEYBP" role="Sq$B$">
-        <property role="TrG5h" value="Connected To EV" />
+      <node concept="1XypPU" id="7BYuSCF$f2T" role="2I3o71">
+        <ref role="SrP08" node="7BYuSCF$eHD" resolve="Driver" />
+        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <node concept="Sqzvu" id="7BYuSCF$f2U" role="Sq$B$">
+          <property role="TrG5h" value="Connect to Socket" />
+        </node>
+        <node concept="Sqzvu" id="3TSGpjyFlGK" role="Sq$B$">
+          <property role="TrG5h" value="Connect to EV" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="7BYuSCF$hCm" role="1X_0GB">
       <property role="TrG5h" value="LEDs" />
-    </node>
-    <node concept="1XypPU" id="7BYuSCF$hJM" role="1X_0G_">
-      <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
-      <ref role="SrP07" node="7BYuSCF$hCm" resolve="LEDs" />
-      <node concept="Sqzvu" id="7BYuSCF$hJN" role="Sq$B$">
-        <property role="TrG5h" value="Display Power Status" />
-      </node>
-      <node concept="Sqzvu" id="3TSGpjyFlMr" role="Sq$B$">
-        <property role="TrG5h" value="Display Connection Status" />
-      </node>
     </node>
   </node>
   <node concept="1E0nO6" id="6yFQEkQUeRG">

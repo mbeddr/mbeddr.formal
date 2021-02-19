@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="1839bec5-cea6-41df-b9e0-c405ff35c41e" name="jetbrains.mps.lang.editor.imageGen" version="0" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
     <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
@@ -48,14 +48,15 @@
         <child id="2004523000582413323" name="text" index="1E0uc7" />
       </concept>
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
-      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU" />
+      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU">
+        <child id="1941765291767695615" name="startingConnections" index="2I3o71" />
+      </concept>
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
         <reference id="4185693763139125834" name="target" index="SrP07" />
         <reference id="4185693763139125829" name="source" index="SrP08" />
         <child id="4185693763139328937" name="actions" index="Sq$B$" />
       </concept>
       <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.FunctionalControlStructure" flags="ng" index="1X_0jQ">
-        <child id="4286195509387832126" name="connections" index="1X_0G_" />
         <child id="4286195509387832124" name="content" index="1X_0GB" />
       </concept>
       <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
@@ -751,6 +752,13 @@
     <property role="TrG5h" value="_lane_keeping_L05_control_structure" />
     <node concept="1XyJaU" id="2fZol$t_0Lj" role="1X_0GB">
       <property role="TrG5h" value="Motor providing vibrations to steering wheel&#10;" />
+      <node concept="1XypPU" id="2fZol$t_15f" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Lj" resolve="Motor providing vibrations to steering wheel&#10;" />
+        <ref role="SrP07" node="2fZol$t_0Nn" resolve="Steering wheel" />
+        <node concept="Sqzvu" id="2fZol$t_15g" role="Sq$B$">
+          <property role="TrG5h" value="vibrate" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="2fZol$t_0Ln" role="lGtFl">
       <node concept="37mRIm" id="2fZol$t_0Lo" role="37mRID">
@@ -1436,160 +1444,153 @@
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Ly" role="1X_0GB">
       <property role="TrG5h" value="Motor providing torque to steering wheel" />
+      <node concept="1XypPU" id="2fZol$t_13v" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Ly" resolve="Motor providing torque to steering wheel" />
+        <ref role="SrP07" node="2fZol$t_0Nn" resolve="Steering wheel" />
+        <node concept="Sqzvu" id="2fZol$t_13w" role="Sq$B$">
+          <property role="TrG5h" value="steer" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0LI" role="1X_0GB">
       <property role="TrG5h" value="Environment&#10;" />
+      <node concept="Sq$B_" id="2fZol$t_1B9" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0LI" resolve="Environment&#10;" />
+        <ref role="SrP07" node="2fZol$t_0Mp" resolve="Front camera" />
+        <node concept="Sqzvu" id="2fZol$t_1Ba" role="Sq$B$">
+          <property role="TrG5h" value="observation" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Mp" role="1X_0GB">
       <property role="TrG5h" value="Front camera" />
+      <node concept="Sq$B_" id="2fZol$t_1EL" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Mp" resolve="Front camera" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
+        <node concept="Sqzvu" id="2fZol$t_1EM" role="Sq$B$">
+          <property role="TrG5h" value="visual input" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0MX" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
+      <node concept="1XypPU" id="2fZol$t_0Y_" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
+        <ref role="SrP07" node="2fZol$t_0Nn" resolve="Steering wheel" />
+        <node concept="Sqzvu" id="2fZol$t_0YA" role="Sq$B$">
+          <property role="TrG5h" value="steer" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="2fZol$t_1bv" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
+        <ref role="SrP07" node="2fZol$t_0Rm" resolve="LK Activation button" />
+        <node concept="Sqzvu" id="2fZol$t_1bw" role="Sq$B$">
+          <property role="TrG5h" value="control" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="2fZol$t_1gA" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
+        <ref role="SrP07" node="2fZol$t_126" resolve="Brake sensor" />
+        <node concept="Sqzvu" id="2fZol$t_1gB" role="Sq$B$">
+          <property role="TrG5h" value="push" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Nn" role="1X_0GB">
       <property role="TrG5h" value="Steering wheel" />
+      <node concept="Sq$B_" id="2fZol$t_10c" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Nn" resolve="Steering wheel" />
+        <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
+        <node concept="Sqzvu" id="2fZol$t_10d" role="Sq$B$">
+          <property role="TrG5h" value="vibrate" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0O3" role="1X_0GB">
       <property role="TrG5h" value="Lane Keeping Control Unit" />
+      <node concept="1XypPU" id="2fZol$t_1m9" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
+        <ref role="SrP07" node="2fZol$t_0Ly" resolve="Motor providing torque to steering wheel" />
+        <node concept="Sqzvu" id="2fZol$t_1ma" role="Sq$B$">
+          <property role="TrG5h" value="control" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="2fZol$t_1LH" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
+        <ref role="SrP07" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+        <node concept="Sqzvu" id="2fZol$t_1LI" role="Sq$B$">
+          <property role="TrG5h" value="driver overtake request" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0OJ" role="1X_0GB">
       <property role="TrG5h" value="Display" />
+      <node concept="Sq$B_" id="2fZol$t_1UY" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0OJ" resolve="Display" />
+        <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
+        <node concept="Sqzvu" id="2fZol$t_1UZ" role="Sq$B$">
+          <property role="TrG5h" value="alarm light" />
+        </node>
+        <node concept="Sqzvu" id="1J1VyY6JMuY" role="Sq$B$">
+          <property role="TrG5h" value="display error/malfunction message" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Pf" role="1X_0GB">
       <property role="TrG5h" value="Communication Control Unit" />
+      <node concept="1XypPU" id="2fZol$t_17f" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+        <ref role="SrP07" node="2fZol$t_0OJ" resolve="Display" />
+        <node concept="Sqzvu" id="2fZol$t_17g" role="Sq$B$">
+          <property role="TrG5h" value="alarm signal" />
+        </node>
+        <node concept="Sqzvu" id="1J1VyY6JMus" role="Sq$B$">
+          <property role="TrG5h" value="activation signal" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="2fZol$t_19l" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+        <ref role="SrP07" node="2fZol$t_0PV" resolve="Speaker" />
+        <node concept="Sqzvu" id="2fZol$t_19m" role="Sq$B$">
+          <property role="TrG5h" value="alarm signal" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="2fZol$t_1Q_" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+        <ref role="SrP07" node="2fZol$t_0Lj" resolve="Motor providing vibrations to steering wheel&#10;" />
+        <node concept="Sqzvu" id="2fZol$t_1QA" role="Sq$B$">
+          <property role="TrG5h" value="alarm signal" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0PV" role="1X_0GB">
       <property role="TrG5h" value="Speaker" />
+      <node concept="Sq$B_" id="2fZol$t_1Zm" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0PV" resolve="Speaker" />
+        <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
+        <node concept="Sqzvu" id="2fZol$t_1Zn" role="Sq$B$">
+          <property role="TrG5h" value="alarm tone" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Rm" role="1X_0GB">
       <property role="TrG5h" value="LK Activation button" />
-    </node>
-    <node concept="1XypPU" id="2fZol$t_0Y_" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
-      <ref role="SrP07" node="2fZol$t_0Nn" resolve="Steering wheel" />
-      <node concept="Sqzvu" id="2fZol$t_0YA" role="Sq$B$">
-        <property role="TrG5h" value="steer" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_10c" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Nn" resolve="Steering wheel" />
-      <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
-      <node concept="Sqzvu" id="2fZol$t_10d" role="Sq$B$">
-        <property role="TrG5h" value="vibrate" />
+      <node concept="1XypPU" id="2fZol$t_1dW" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Rm" resolve="LK Activation button" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
+        <node concept="Sqzvu" id="2fZol$t_1dX" role="Sq$B$">
+          <property role="TrG5h" value="activate" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_126" role="1X_0GB">
       <property role="TrG5h" value="Brake sensor" />
-    </node>
-    <node concept="1XypPU" id="2fZol$t_13v" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Ly" resolve="Motor providing torque to steering wheel" />
-      <ref role="SrP07" node="2fZol$t_0Nn" resolve="Steering wheel" />
-      <node concept="Sqzvu" id="2fZol$t_13w" role="Sq$B$">
-        <property role="TrG5h" value="steer" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_15f" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Lj" resolve="Motor providing vibrations to steering wheel&#10;" />
-      <ref role="SrP07" node="2fZol$t_0Nn" resolve="Steering wheel" />
-      <node concept="Sqzvu" id="2fZol$t_15g" role="Sq$B$">
-        <property role="TrG5h" value="vibrate" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_17f" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
-      <ref role="SrP07" node="2fZol$t_0OJ" resolve="Display" />
-      <node concept="Sqzvu" id="2fZol$t_17g" role="Sq$B$">
-        <property role="TrG5h" value="alarm signal" />
-      </node>
-      <node concept="Sqzvu" id="1J1VyY6JMus" role="Sq$B$">
-        <property role="TrG5h" value="activation signal" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_19l" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
-      <ref role="SrP07" node="2fZol$t_0PV" resolve="Speaker" />
-      <node concept="Sqzvu" id="2fZol$t_19m" role="Sq$B$">
-        <property role="TrG5h" value="alarm signal" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1bv" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
-      <ref role="SrP07" node="2fZol$t_0Rm" resolve="LK Activation button" />
-      <node concept="Sqzvu" id="2fZol$t_1bw" role="Sq$B$">
-        <property role="TrG5h" value="control" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1dW" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Rm" resolve="LK Activation button" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
-      <node concept="Sqzvu" id="2fZol$t_1dX" role="Sq$B$">
-        <property role="TrG5h" value="activate" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1gA" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
-      <ref role="SrP07" node="2fZol$t_126" resolve="Brake sensor" />
-      <node concept="Sqzvu" id="2fZol$t_1gB" role="Sq$B$">
-        <property role="TrG5h" value="push" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1j0" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_126" resolve="Brake sensor" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
-      <node concept="Sqzvu" id="2fZol$t_1j1" role="Sq$B$">
-        <property role="TrG5h" value="deactivate" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1m9" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
-      <ref role="SrP07" node="2fZol$t_0Ly" resolve="Motor providing torque to steering wheel" />
-      <node concept="Sqzvu" id="2fZol$t_1ma" role="Sq$B$">
-        <property role="TrG5h" value="control" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1B9" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0LI" resolve="Environment&#10;" />
-      <ref role="SrP07" node="2fZol$t_0Mp" resolve="Front camera" />
-      <node concept="Sqzvu" id="2fZol$t_1Ba" role="Sq$B$">
-        <property role="TrG5h" value="observation" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1EL" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Mp" resolve="Front camera" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
-      <node concept="Sqzvu" id="2fZol$t_1EM" role="Sq$B$">
-        <property role="TrG5h" value="visual input" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1LH" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
-      <ref role="SrP07" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
-      <node concept="Sqzvu" id="2fZol$t_1LI" role="Sq$B$">
-        <property role="TrG5h" value="driver overtake request" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1Q_" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
-      <ref role="SrP07" node="2fZol$t_0Lj" resolve="Motor providing vibrations to steering wheel&#10;" />
-      <node concept="Sqzvu" id="2fZol$t_1QA" role="Sq$B$">
-        <property role="TrG5h" value="alarm signal" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1UY" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0OJ" resolve="Display" />
-      <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
-      <node concept="Sqzvu" id="2fZol$t_1UZ" role="Sq$B$">
-        <property role="TrG5h" value="alarm light" />
-      </node>
-      <node concept="Sqzvu" id="1J1VyY6JMuY" role="Sq$B$">
-        <property role="TrG5h" value="display error/malfunction message" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1Zm" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0PV" resolve="Speaker" />
-      <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
-      <node concept="Sqzvu" id="2fZol$t_1Zn" role="Sq$B$">
-        <property role="TrG5h" value="alarm tone" />
+      <node concept="1XypPU" id="2fZol$t_1j0" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_126" resolve="Brake sensor" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
+        <node concept="Sqzvu" id="2fZol$t_1j1" role="Sq$B$">
+          <property role="TrG5h" value="deactivate" />
+        </node>
       </node>
     </node>
   </node>
@@ -2165,6 +2166,27 @@
     <property role="TrG5h" value="_103_safety_assurance_lane_keeping_control_structure" />
     <node concept="1XyJaU" id="4GKPLBASuiL" role="1X_0GB">
       <property role="TrG5h" value="Control Box" />
+      <node concept="1XypPU" id="4GKPLBASum4" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
+        <ref role="SrP07" node="4GKPLBASukN" resolve="Steering wheel" />
+        <node concept="Sqzvu" id="4GKPLBASum5" role="Sq$B$">
+          <property role="TrG5h" value="vibration" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4GKPLBASuyj" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
+        <ref role="SrP07" node="4GKPLBASuvJ" resolve="Electronic power steering" />
+        <node concept="Sqzvu" id="4GKPLBASuyk" role="Sq$B$">
+          <property role="TrG5h" value="adjust steering angle" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4GKPLBASuJO" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
+        <ref role="SrP07" node="4GKPLBASuv_" resolve="Interface to UI" />
+        <node concept="Sqzvu" id="4GKPLBASuJP" role="Sq$B$">
+          <property role="TrG5h" value="display status" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="4GKPLBASuiP" role="lGtFl">
       <node concept="37mRIm" id="4GKPLBASuiQ" role="37mRID">
@@ -2530,83 +2552,62 @@
     </node>
     <node concept="1XyJaU" id="4GKPLBASuj0" role="1X_0GB">
       <property role="TrG5h" value="Steering&#10;" />
+      <node concept="Sq$B_" id="4GKPLBASuFw" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASuj0" resolve="Steering&#10;" />
+        <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+        <node concept="Sqzvu" id="4GKPLBASuFx" role="Sq$B$">
+          <property role="TrG5h" value="current steering angle" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="4GKPLBASukN" role="1X_0GB">
       <property role="TrG5h" value="Steering wheel" />
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASule" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASukN" resolve="Steering wheel" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASulf" role="Sq$B$">
-        <property role="TrG5h" value="provides steering angle" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4GKPLBASum4" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
-      <ref role="SrP07" node="4GKPLBASukN" resolve="Steering wheel" />
-      <node concept="Sqzvu" id="4GKPLBASum5" role="Sq$B$">
-        <property role="TrG5h" value="vibration" />
+      <node concept="Sq$B_" id="4GKPLBASule" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASukN" resolve="Steering wheel" />
+        <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+        <node concept="Sqzvu" id="4GKPLBASulf" role="Sq$B$">
+          <property role="TrG5h" value="provides steering angle" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="4GKPLBASunx" role="1X_0GB">
       <property role="TrG5h" value="Camera sensor" />
+      <node concept="Sq$B_" id="4GKPLBASusv" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASunx" resolve="Camera sensor" />
+        <ref role="SrP07" node="4GKPLBASur4" resolve="Image processing unit" />
+        <node concept="Sqzvu" id="4GKPLBASusw" role="Sq$B$">
+          <property role="TrG5h" value="provides optical images" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="4GKPLBASur4" role="1X_0GB">
       <property role="TrG5h" value="Image processing unit" />
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASusv" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASunx" resolve="Camera sensor" />
-      <ref role="SrP07" node="4GKPLBASur4" resolve="Image processing unit" />
-      <node concept="Sqzvu" id="4GKPLBASusw" role="Sq$B$">
-        <property role="TrG5h" value="provides optical images" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASutP" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASur4" resolve="Image processing unit" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASutQ" role="Sq$B$">
-        <property role="TrG5h" value="distance to lanes" />
+      <node concept="Sq$B_" id="4GKPLBASutP" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASur4" resolve="Image processing unit" />
+        <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+        <node concept="Sqzvu" id="4GKPLBASutQ" role="Sq$B$">
+          <property role="TrG5h" value="distance to lanes" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="4GKPLBASuv_" role="1X_0GB">
       <property role="TrG5h" value="Interface to UI" />
+      <node concept="Sq$B_" id="4GKPLBASuHF" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASuv_" resolve="Interface to UI" />
+        <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+        <node concept="Sqzvu" id="4GKPLBASuHG" role="Sq$B$">
+          <property role="TrG5h" value="activate/deactivate" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="4GKPLBASuvJ" role="1X_0GB">
       <property role="TrG5h" value="Electronic power steering" />
-    </node>
-    <node concept="1XypPU" id="4GKPLBASuyj" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
-      <ref role="SrP07" node="4GKPLBASuvJ" resolve="Electronic power steering" />
-      <node concept="Sqzvu" id="4GKPLBASuyk" role="Sq$B$">
-        <property role="TrG5h" value="adjust steering angle" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4GKPLBASuzT" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuvJ" resolve="Electronic power steering" />
-      <ref role="SrP07" node="4GKPLBASuj0" resolve="Steering&#10;" />
-      <node concept="Sqzvu" id="4GKPLBASuzU" role="Sq$B$">
-        <property role="TrG5h" value="apply torque" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASuFw" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuj0" resolve="Steering&#10;" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASuFx" role="Sq$B$">
-        <property role="TrG5h" value="current steering angle" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASuHF" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuv_" resolve="Interface to UI" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASuHG" role="Sq$B$">
-        <property role="TrG5h" value="activate/deactivate" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4GKPLBASuJO" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
-      <ref role="SrP07" node="4GKPLBASuv_" resolve="Interface to UI" />
-      <node concept="Sqzvu" id="4GKPLBASuJP" role="Sq$B$">
-        <property role="TrG5h" value="display status" />
+      <node concept="1XypPU" id="4GKPLBASuzT" role="2I3o71">
+        <ref role="SrP08" node="4GKPLBASuvJ" resolve="Electronic power steering" />
+        <ref role="SrP07" node="4GKPLBASuj0" resolve="Steering&#10;" />
+        <node concept="Sqzvu" id="4GKPLBASuzU" role="Sq$B$">
+          <property role="TrG5h" value="apply torque" />
+        </node>
       </node>
     </node>
   </node>
