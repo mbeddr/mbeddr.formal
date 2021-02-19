@@ -2,7 +2,7 @@
 <model ref="r:f4296e65-905c-42ee-8349-52d0474604ad(com.mbeddr.formal.safety.stamp.sandbox._010_sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
   </languages>
@@ -57,7 +57,6 @@
         <child id="4185693763139328937" name="actions" index="Sq$B$" />
       </concept>
       <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.FunctionalControlStructure" flags="ng" index="1X_0jQ">
-        <child id="4286195509387832126" name="connections" index="1X_0G_" />
         <child id="4286195509387832124" name="content" index="1X_0GB" />
       </concept>
       <concept id="774565382052828238" name="com.mbeddr.formal.safety.stamp.structure.ContextRefContext" flags="ng" index="1YbhHi">
@@ -136,6 +135,25 @@
     <property role="TrG5h" value="_010_ballistic_missle_defence_system_control" />
     <node concept="1XyJaU" id="3HVC1H6WxIx" role="1X_0GB">
       <property role="TrG5h" value="Command &#10;Authority" />
+      <node concept="1XypPU" id="3Cm$$O2uxuw" role="2I3o71">
+        <ref role="SrP08" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
+        <ref role="SrP07" node="3HVC1H6WxII" resolve="Operators" />
+        <node concept="Sqzvu" id="3Cm$$O2vpuo" role="Sq$B$">
+          <property role="TrG5h" value="Doctrine" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vpur" role="Sq$B$">
+          <property role="TrG5h" value="Engagement Criteria" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vpuv" role="Sq$B$">
+          <property role="TrG5h" value="Training" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vpu$" role="Sq$B$">
+          <property role="TrG5h" value="TTP" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vpuE" role="Sq$B$">
+          <property role="TrG5h" value="Workarounds" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="3HVC1H6WxI_" role="lGtFl">
       <node concept="37mRIm" id="3HVC1H6WxIA" role="37mRID">
@@ -1045,324 +1063,305 @@
     </node>
     <node concept="1XyJaU" id="3HVC1H6WxII" role="1X_0GB">
       <property role="TrG5h" value="Operators" />
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2uxuw" role="1X_0G_">
-      <ref role="SrP08" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
-      <ref role="SrP07" node="3HVC1H6WxII" resolve="Operators" />
-      <node concept="Sqzvu" id="3Cm$$O2vpuo" role="Sq$B$">
-        <property role="TrG5h" value="Doctrine" />
+      <node concept="1XypPU" id="3Cm$$O2vAeG" role="2I3o71">
+        <ref role="SrP08" node="3HVC1H6WxII" resolve="Operators" />
+        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <node concept="Sqzvu" id="3Cm$$O2vAfQ" role="Sq$B$">
+          <property role="TrG5h" value="Engage Target" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAfT" role="Sq$B$">
+          <property role="TrG5h" value="Operational Mode Change" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAfX" role="Sq$B$">
+          <property role="TrG5h" value="Readiness State Change" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAg2" role="Sq$B$">
+          <property role="TrG5h" value="Weapons Free / Weapons Hold" />
+        </node>
       </node>
-      <node concept="Sqzvu" id="3Cm$$O2vpur" role="Sq$B$">
-        <property role="TrG5h" value="Engagement Criteria" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vpuv" role="Sq$B$">
-        <property role="TrG5h" value="Training" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vpu$" role="Sq$B$">
-        <property role="TrG5h" value="TTP" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vpuE" role="Sq$B$">
-        <property role="TrG5h" value="Workarounds" />
+      <node concept="Sq$B_" id="1JhvKLLMRRX" role="2I3o71">
+        <ref role="SrP08" node="3HVC1H6WxII" resolve="Operators" />
+        <ref role="SrP07" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
+        <node concept="Sqzvu" id="3Cm$$O2vUN1" role="Sq$B$">
+          <property role="TrG5h" value="Exercise Results" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vUN4" role="Sq$B$">
+          <property role="TrG5h" value="Readiness" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vUN8" role="Sq$B$">
+          <property role="TrG5h" value="Status" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vUNd" role="Sq$B$">
+          <property role="TrG5h" value="Wargame Results" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vpqe" role="1X_0GB">
       <property role="TrG5h" value="Early Warning System" />
+      <node concept="Sq$B_" id="1JhvKLLMS9W" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vpqe" resolve="Early Warning System" />
+        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <node concept="Sqzvu" id="3Cm$$O2vUZ4" role="Sq$B$">
+          <property role="TrG5h" value="Launch Report" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vUZ7" role="Sq$B$">
+          <property role="TrG5h" value="Status Report" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vUZb" role="Sq$B$">
+          <property role="TrG5h" value="Heartbeat" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vpqF" role="1X_0GB">
       <property role="TrG5h" value="Radar" />
+      <node concept="Sq$B_" id="1JhvKLLMSgB" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vpqF" resolve="Radar" />
+        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <node concept="Sqzvu" id="3Cm$$O2vUZg" role="Sq$B$">
+          <property role="TrG5h" value="Status" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vUZj" role="Sq$B$">
+          <property role="TrG5h" value="Track Data" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vprc" role="1X_0GB">
       <property role="TrG5h" value="Fire Control" />
+      <node concept="1XypPU" id="3Cm$$O2vAgc" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP07" node="3Cm$$O2vpqe" resolve="Early Warning System" />
+        <node concept="Sqzvu" id="3Cm$$O2vAhn" role="Sq$B$">
+          <property role="TrG5h" value="Status Request" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="3Cm$$O2vAhr" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP07" node="3Cm$$O2vpqF" resolve="Radar" />
+        <node concept="Sqzvu" id="3Cm$$O2vAiI" role="Sq$B$">
+          <property role="TrG5h" value="Radar Tasking" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAiL" role="Sq$B$">
+          <property role="TrG5h" value="Readiness Mode Change" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAiP" role="Sq$B$">
+          <property role="TrG5h" value="Status Request" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="3Cm$$O2vAm9" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <node concept="Sqzvu" id="3Cm$$O2vAnZ" role="Sq$B$">
+          <property role="TrG5h" value="Fire Disable" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAo2" role="Sq$B$">
+          <property role="TrG5h" value="Fire Enable" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAo6" role="Sq$B$">
+          <property role="TrG5h" value="Operational Mode Change" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAob" role="Sq$B$">
+          <property role="TrG5h" value="Readiness State Change" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAoh" role="Sq$B$">
+          <property role="TrG5h" value="Interceptor Tasking" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAoo" role="Sq$B$">
+          <property role="TrG5h" value="Task Cancellation" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="1JhvKLLMSxO" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP07" node="3HVC1H6WxII" resolve="Operators" />
+        <node concept="Sqzvu" id="3Cm$$O2vUR4" role="Sq$B$">
+          <property role="TrG5h" value="Operational Mode" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vUR7" role="Sq$B$">
+          <property role="TrG5h" value="Readiness State" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vURb" role="Sq$B$">
+          <property role="TrG5h" value="System Status" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vURg" role="Sq$B$">
+          <property role="TrG5h" value="Track Data" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vURm" role="Sq$B$">
+          <property role="TrG5h" value="Weapon and System Status" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vprJ" role="1X_0GB">
       <property role="TrG5h" value="Launcher" />
+      <node concept="Sq$B_" id="1JhvKLLNT2t" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vprJ" resolve="Launcher" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <node concept="Sqzvu" id="3Cm$$O2vV7f" role="Sq$B$">
+          <property role="TrG5h" value="BIT Results" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vV7i" role="Sq$B$">
+          <property role="TrG5h" value="Launcher Position" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vpsm" role="1X_0GB">
       <property role="TrG5h" value="Interceptor&#10;Simulator" />
+      <node concept="Sq$B_" id="1JhvKLLMSCB" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vpsm" resolve="Interceptor&#10;Simulator" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <node concept="Sqzvu" id="3Cm$$O2vV6X" role="Sq$B$">
+          <property role="TrG5h" value="Acknowledgements" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vV70" role="Sq$B$">
+          <property role="TrG5h" value="BIT Results" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vV74" role="Sq$B$">
+          <property role="TrG5h" value="Health &amp; Status" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vpsZ" role="1X_0GB">
       <property role="TrG5h" value="Launch Station" />
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vAeG" role="1X_0G_">
-      <ref role="SrP08" node="3HVC1H6WxII" resolve="Operators" />
-      <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <node concept="Sqzvu" id="3Cm$$O2vAfQ" role="Sq$B$">
-        <property role="TrG5h" value="Engage Target" />
+      <node concept="1XypPU" id="3Cm$$O2vAke" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP07" node="3Cm$$O2vprJ" resolve="Launcher" />
+        <node concept="Sqzvu" id="3Cm$$O2vAlH" role="Sq$B$">
+          <property role="TrG5h" value="Launch Position" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAlK" role="Sq$B$">
+          <property role="TrG5h" value="Stow Position" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAlO" role="Sq$B$">
+          <property role="TrG5h" value="Perform BIT" />
+        </node>
       </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAfT" role="Sq$B$">
-        <property role="TrG5h" value="Operational Mode Change" />
+      <node concept="1XypPU" id="3Cm$$O2vApM" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP07" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+        <node concept="Sqzvu" id="3Cm$$O2vArR" role="Sq$B$">
+          <property role="TrG5h" value="Abort" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vArU" role="Sq$B$">
+          <property role="TrG5h" value="Arm" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vArY" role="Sq$B$">
+          <property role="TrG5h" value="BIT Commanf" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAs3" role="Sq$B$">
+          <property role="TrG5h" value="Task Load" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAs9" role="Sq$B$">
+          <property role="TrG5h" value="Launch" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAsg" role="Sq$B$">
+          <property role="TrG5h" value="Operating Mode" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAso" role="Sq$B$">
+          <property role="TrG5h" value="Power" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAsx" role="Sq$B$">
+          <property role="TrG5h" value="Sage" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAsF" role="Sq$B$">
+          <property role="TrG5h" value="Software Updates" />
+        </node>
       </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAfX" role="Sq$B$">
-        <property role="TrG5h" value="Readiness State Change" />
+      <node concept="1XypPU" id="3Cm$$O2vAwR" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP07" node="3Cm$$O2vpsm" resolve="Interceptor&#10;Simulator" />
+        <node concept="Sqzvu" id="3Cm$$O2vAzi" role="Sq$B$">
+          <property role="TrG5h" value="Abort" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAzl" role="Sq$B$">
+          <property role="TrG5h" value="Arm" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAzp" role="Sq$B$">
+          <property role="TrG5h" value="BIT Command" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAzu" role="Sq$B$">
+          <property role="TrG5h" value="Task Load" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAz$" role="Sq$B$">
+          <property role="TrG5h" value="Launch" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAzF" role="Sq$B$">
+          <property role="TrG5h" value="Operating Moed" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAzN" role="Sq$B$">
+          <property role="TrG5h" value="Power" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAzW" role="Sq$B$">
+          <property role="TrG5h" value="Safe" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vA$6" role="Sq$B$">
+          <property role="TrG5h" value="Software Updates" />
+        </node>
       </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAg2" role="Sq$B$">
-        <property role="TrG5h" value="Weapons Free / Weapons Hold" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vAgc" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <ref role="SrP07" node="3Cm$$O2vpqe" resolve="Early Warning System" />
-      <node concept="Sqzvu" id="3Cm$$O2vAhn" role="Sq$B$">
-        <property role="TrG5h" value="Status Request" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vAhr" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <ref role="SrP07" node="3Cm$$O2vpqF" resolve="Radar" />
-      <node concept="Sqzvu" id="3Cm$$O2vAiI" role="Sq$B$">
-        <property role="TrG5h" value="Radar Tasking" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAiL" role="Sq$B$">
-        <property role="TrG5h" value="Readiness Mode Change" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAiP" role="Sq$B$">
-        <property role="TrG5h" value="Status Request" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vAke" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <ref role="SrP07" node="3Cm$$O2vprJ" resolve="Launcher" />
-      <node concept="Sqzvu" id="3Cm$$O2vAlH" role="Sq$B$">
-        <property role="TrG5h" value="Launch Position" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAlK" role="Sq$B$">
-        <property role="TrG5h" value="Stow Position" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAlO" role="Sq$B$">
-        <property role="TrG5h" value="Perform BIT" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vAm9" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <node concept="Sqzvu" id="3Cm$$O2vAnZ" role="Sq$B$">
-        <property role="TrG5h" value="Fire Disable" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAo2" role="Sq$B$">
-        <property role="TrG5h" value="Fire Enable" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAo6" role="Sq$B$">
-        <property role="TrG5h" value="Operational Mode Change" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAob" role="Sq$B$">
-        <property role="TrG5h" value="Readiness State Change" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAoh" role="Sq$B$">
-        <property role="TrG5h" value="Interceptor Tasking" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAoo" role="Sq$B$">
-        <property role="TrG5h" value="Task Cancellation" />
+      <node concept="Sq$B_" id="1JhvKLLNTi0" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <node concept="Sqzvu" id="3Cm$$O2vVsS" role="Sq$B$">
+          <property role="TrG5h" value="Command Responses" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vVsV" role="Sq$B$">
+          <property role="TrG5h" value="System Status" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vVsZ" role="Sq$B$">
+          <property role="TrG5h" value="Launch Report" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vAow" role="1X_0GB">
       <property role="TrG5h" value="Flight&#10;Computer" />
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vApM" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <ref role="SrP07" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
-      <node concept="Sqzvu" id="3Cm$$O2vArR" role="Sq$B$">
-        <property role="TrG5h" value="Abort" />
+      <node concept="1XypPU" id="3Cm$$O2vAuj" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+        <ref role="SrP07" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
+        <node concept="Sqzvu" id="3Cm$$O2vAwE" role="Sq$B$">
+          <property role="TrG5h" value="Arm" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAwH" role="Sq$B$">
+          <property role="TrG5h" value="Sage" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vAwL" role="Sq$B$">
+          <property role="TrG5h" value="Ignite" />
+        </node>
       </node>
-      <node concept="Sqzvu" id="3Cm$$O2vArU" role="Sq$B$">
-        <property role="TrG5h" value="Arm" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vArY" role="Sq$B$">
-        <property role="TrG5h" value="BIT Commanf" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAs3" role="Sq$B$">
-        <property role="TrG5h" value="Task Load" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAs9" role="Sq$B$">
-        <property role="TrG5h" value="Launch" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAsg" role="Sq$B$">
-        <property role="TrG5h" value="Operating Mode" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAso" role="Sq$B$">
-        <property role="TrG5h" value="Power" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAsx" role="Sq$B$">
-        <property role="TrG5h" value="Sage" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAsF" role="Sq$B$">
-        <property role="TrG5h" value="Software Updates" />
+      <node concept="Sq$B_" id="1JhvKLLNWwJ" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <node concept="Sqzvu" id="3Cm$$O2vVmx" role="Sq$B$">
+          <property role="TrG5h" value="Acknowledgements" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vVm$" role="Sq$B$">
+          <property role="TrG5h" value="BIT Results" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vVmC" role="Sq$B$">
+          <property role="TrG5h" value="Health &amp; Status" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="3Cm$$O2vAsU" role="1X_0GB">
       <property role="TrG5h" value="Interceptor&#10;H/W" />
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vAuj" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
-      <ref role="SrP07" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
-      <node concept="Sqzvu" id="3Cm$$O2vAwE" role="Sq$B$">
-        <property role="TrG5h" value="Arm" />
+      <node concept="Sq$B_" id="1JhvKLLNWC_" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
+        <ref role="SrP07" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+        <node concept="Sqzvu" id="3Cm$$O2vVlx" role="Sq$B$">
+          <property role="TrG5h" value="BIT Info" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vVl$" role="Sq$B$">
+          <property role="TrG5h" value="Safe &amp; Arm Status" />
+        </node>
       </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAwH" role="Sq$B$">
-        <property role="TrG5h" value="Sage" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAwL" role="Sq$B$">
-        <property role="TrG5h" value="Ignite" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="3Cm$$O2vAwR" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <ref role="SrP07" node="3Cm$$O2vpsm" resolve="Interceptor&#10;Simulator" />
-      <node concept="Sqzvu" id="3Cm$$O2vAzi" role="Sq$B$">
-        <property role="TrG5h" value="Abort" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAzl" role="Sq$B$">
-        <property role="TrG5h" value="Arm" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAzp" role="Sq$B$">
-        <property role="TrG5h" value="BIT Command" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAzu" role="Sq$B$">
-        <property role="TrG5h" value="Task Load" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAz$" role="Sq$B$">
-        <property role="TrG5h" value="Launch" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAzF" role="Sq$B$">
-        <property role="TrG5h" value="Operating Moed" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAzN" role="Sq$B$">
-        <property role="TrG5h" value="Power" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vAzW" role="Sq$B$">
-        <property role="TrG5h" value="Safe" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vA$6" role="Sq$B$">
-        <property role="TrG5h" value="Software Updates" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLMRRX" role="1X_0G_">
-      <ref role="SrP08" node="3HVC1H6WxII" resolve="Operators" />
-      <ref role="SrP07" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
-      <node concept="Sqzvu" id="3Cm$$O2vUN1" role="Sq$B$">
-        <property role="TrG5h" value="Exercise Results" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vUN4" role="Sq$B$">
-        <property role="TrG5h" value="Readiness" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vUN8" role="Sq$B$">
-        <property role="TrG5h" value="Status" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vUNd" role="Sq$B$">
-        <property role="TrG5h" value="Wargame Results" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLMS9W" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vpqe" resolve="Early Warning System" />
-      <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <node concept="Sqzvu" id="3Cm$$O2vUZ4" role="Sq$B$">
-        <property role="TrG5h" value="Launch Report" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vUZ7" role="Sq$B$">
-        <property role="TrG5h" value="Status Report" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vUZb" role="Sq$B$">
-        <property role="TrG5h" value="Heartbeat" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLMSgB" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vpqF" resolve="Radar" />
-      <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <node concept="Sqzvu" id="3Cm$$O2vUZg" role="Sq$B$">
-        <property role="TrG5h" value="Status" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vUZj" role="Sq$B$">
-        <property role="TrG5h" value="Track Data" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLMSxO" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <ref role="SrP07" node="3HVC1H6WxII" resolve="Operators" />
-      <node concept="Sqzvu" id="3Cm$$O2vUR4" role="Sq$B$">
-        <property role="TrG5h" value="Operational Mode" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vUR7" role="Sq$B$">
-        <property role="TrG5h" value="Readiness State" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vURb" role="Sq$B$">
-        <property role="TrG5h" value="System Status" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vURg" role="Sq$B$">
-        <property role="TrG5h" value="Track Data" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vURm" role="Sq$B$">
-        <property role="TrG5h" value="Weapon and System Status" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLMSCB" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vpsm" resolve="Interceptor&#10;Simulator" />
-      <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <node concept="Sqzvu" id="3Cm$$O2vV6X" role="Sq$B$">
-        <property role="TrG5h" value="Acknowledgements" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vV70" role="Sq$B$">
-        <property role="TrG5h" value="BIT Results" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vV74" role="Sq$B$">
-        <property role="TrG5h" value="Health &amp; Status" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLNT2t" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vprJ" resolve="Launcher" />
-      <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <node concept="Sqzvu" id="3Cm$$O2vV7f" role="Sq$B$">
-        <property role="TrG5h" value="BIT Results" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vV7i" role="Sq$B$">
-        <property role="TrG5h" value="Launcher Position" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLNTi0" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
-      <node concept="Sqzvu" id="3Cm$$O2vVsS" role="Sq$B$">
-        <property role="TrG5h" value="Command Responses" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vVsV" role="Sq$B$">
-        <property role="TrG5h" value="System Status" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vVsZ" role="Sq$B$">
-        <property role="TrG5h" value="Launch Report" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLNWwJ" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
-      <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <node concept="Sqzvu" id="3Cm$$O2vVmx" role="Sq$B$">
-        <property role="TrG5h" value="Acknowledgements" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vVm$" role="Sq$B$">
-        <property role="TrG5h" value="BIT Results" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vVmC" role="Sq$B$">
-        <property role="TrG5h" value="Health &amp; Status" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLNWC_" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
-      <ref role="SrP07" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
-      <node concept="Sqzvu" id="3Cm$$O2vVlx" role="Sq$B$">
-        <property role="TrG5h" value="BIT Info" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vVl$" role="Sq$B$">
-        <property role="TrG5h" value="Safe &amp; Arm Status" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLNWKA" role="1X_0G_">
-      <ref role="SrP08" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
-      <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-      <node concept="Sqzvu" id="3Cm$$O2vVlC" role="Sq$B$">
-        <property role="TrG5h" value="Breakwires" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vVlF" role="Sq$B$">
-        <property role="TrG5h" value="Safe &amp; Arm Status" />
-      </node>
-      <node concept="Sqzvu" id="3Cm$$O2vVlJ" role="Sq$B$">
-        <property role="TrG5h" value="Voltages" />
+      <node concept="Sq$B_" id="1JhvKLLNWKA" role="2I3o71">
+        <ref role="SrP08" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <node concept="Sqzvu" id="3Cm$$O2vVlC" role="Sq$B$">
+          <property role="TrG5h" value="Breakwires" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vVlF" role="Sq$B$">
+          <property role="TrG5h" value="Safe &amp; Arm Status" />
+        </node>
+        <node concept="Sqzvu" id="3Cm$$O2vVlJ" role="Sq$B$">
+          <property role="TrG5h" value="Voltages" />
+        </node>
       </node>
     </node>
   </node>
@@ -1471,6 +1470,32 @@
     <property role="TrG5h" value="_020_atc" />
     <node concept="1XyJaU" id="1JhvKLLP$9p" role="1X_0GB">
       <property role="TrG5h" value="ATC" />
+      <node concept="1XypPU" id="1JhvKLLPH8r" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLP$9p" resolve="ATC" />
+        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <node concept="Sqzvu" id="1JhvKLLPH8s" role="Sq$B$">
+          <property role="TrG5h" value="Grant clearance" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHnZ" role="Sq$B$">
+          <property role="TrG5h" value="Issue ground operation" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHo3" role="Sq$B$">
+          <property role="TrG5h" value="Issue approach/departure instructions" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="1JhvKLLPHxr" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLP$9p" resolve="ATC" />
+        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <node concept="Sqzvu" id="1JhvKLLPI0V" role="Sq$B$">
+          <property role="TrG5h" value="Grant clearance" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPI0W" role="Sq$B$">
+          <property role="TrG5h" value="Issue ground operation" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPI0X" role="Sq$B$">
+          <property role="TrG5h" value="Issue approach/departure instructions" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="1JhvKLLP$9t" role="lGtFl">
       <node concept="37mRIm" id="1JhvKLLP$9u" role="37mRID">
@@ -1912,288 +1937,262 @@
     </node>
     <node concept="1XyJaU" id="1JhvKLLP$9v" role="1X_0GB">
       <property role="TrG5h" value="Mission Planning&#10;and Crew Chief" />
+      <node concept="1XypPU" id="1JhvKLLPH9n" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
+        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <node concept="Sqzvu" id="1JhvKLLPH9o" role="Sq$B$">
+          <property role="TrG5h" value="Issue mission plan" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHow" role="Sq$B$">
+          <property role="TrG5h" value="Issue updates/changes" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="1JhvKLLPH$r" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
+        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <node concept="Sqzvu" id="1JhvKLLPI12" role="Sq$B$">
+          <property role="TrG5h" value="Issue mission plan" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPI13" role="Sq$B$">
+          <property role="TrG5h" value="Issue updates/changes" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="1JhvKLLPH72" role="1X_0GB">
       <property role="TrG5h" value="Team Lead" />
+      <node concept="Sq$B_" id="1JhvKLLPHaz" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP07" node="1JhvKLLP$9p" resolve="ATC" />
+        <node concept="Sqzvu" id="1JhvKLLPI0t" role="Sq$B$">
+          <property role="TrG5h" value="Request takeoff/landing clearance" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPI0u" role="Sq$B$">
+          <property role="TrG5h" value="Request ground clearance" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPI0v" role="Sq$B$">
+          <property role="TrG5h" value="Confirm guidance/instructions" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="1JhvKLLPHbW" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <node concept="Sqzvu" id="1JhvKLLPHbX" role="Sq$B$">
+          <property role="TrG5h" value="Surveil a region" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHo$" role="Sq$B$">
+          <property role="TrG5h" value="Search for a target" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHoC" role="Sq$B$">
+          <property role="TrG5h" value="Identify/Assess target" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHoH" role="Sq$B$">
+          <property role="TrG5h" value="Track target" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHoN" role="Sq$B$">
+          <property role="TrG5h" value="Aim/Fix on target" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHoU" role="Sq$B$">
+          <property role="TrG5h" value="Fire at/Engage target" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHp2" role="Sq$B$">
+          <property role="TrG5h" value="Send formation command" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHpb" role="Sq$B$">
+          <property role="TrG5h" value="Send override command" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="1JhvKLLPHEA" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP07" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
+        <node concept="Sqzvu" id="1JhvKLLPHUQ" role="Sq$B$">
+          <property role="TrG5h" value="Mission Status" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="1JhvKLLPHOR" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <node concept="Sqzvu" id="1JhvKLLPHEB" role="Sq$B$">
+          <property role="TrG5h" value="Positions" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHL0" role="Sq$B$">
+          <property role="TrG5h" value="Predictions" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHL4" role="Sq$B$">
+          <property role="TrG5h" value="Milestones" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHL9" role="Sq$B$">
+          <property role="TrG5h" value="Mission Status" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHLf" role="Sq$B$">
+          <property role="TrG5h" value="UAV override notification" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="1JhvKLLPH79" role="1X_0GB">
       <property role="TrG5h" value="Ground Station" />
+      <node concept="1XypPU" id="1JhvKLLPHji" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <node concept="Sqzvu" id="1JhvKLLPHjj" role="Sq$B$">
+          <property role="TrG5h" value="Takeoff" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHpI" role="Sq$B$">
+          <property role="TrG5h" value="Land" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHpM" role="Sq$B$">
+          <property role="TrG5h" value="Send override command" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHpR" role="Sq$B$">
+          <property role="TrG5h" value="Send altitude command" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHpX" role="Sq$B$">
+          <property role="TrG5h" value="Send airspeed command" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHq4" role="Sq$B$">
+          <property role="TrG5h" value="Start engine" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHqc" role="Sq$B$">
+          <property role="TrG5h" value="Stop engine" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHql" role="Sq$B$">
+          <property role="TrG5h" value="Turn on payload" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHqv" role="Sq$B$">
+          <property role="TrG5h" value="Turn off payload" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHqE" role="Sq$B$">
+          <property role="TrG5h" value="Apply lost link procedure" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="1JhvKLLPHBz" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP07" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
+        <node concept="Sqzvu" id="1JhvKLLPHB$" role="Sq$B$">
+          <property role="TrG5h" value="Mission Status" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="1JhvKLLPHLm" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <node concept="Sqzvu" id="1JhvKLLPHLn" role="Sq$B$">
+          <property role="TrG5h" value="Mission Changes" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHTQ" role="Sq$B$">
+          <property role="TrG5h" value="UAV override notification" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHTU" role="Sq$B$">
+          <property role="TrG5h" value="Takeoff/Landing notification" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="1JhvKLLPHWl" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP07" node="1JhvKLLP$9p" resolve="ATC" />
+        <node concept="Sqzvu" id="1JhvKLLPHxs" role="Sq$B$">
+          <property role="TrG5h" value="Request takeoff/landing clearance" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHVY" role="Sq$B$">
+          <property role="TrG5h" value="Request ground clearance" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHW2" role="Sq$B$">
+          <property role="TrG5h" value="Confirm guidance/instructions" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="1JhvKLLPH7y" role="1X_0GB">
       <property role="TrG5h" value="Autonomous&#10;Controller" />
+      <node concept="Sq$B_" id="1JhvKLLPHdk" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <node concept="Sqzvu" id="1JhvKLLPHdl" role="Sq$B$">
+          <property role="TrG5h" value="Visual" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHti" role="Sq$B$">
+          <property role="TrG5h" value="Communication Checks" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHtm" role="Sq$B$">
+          <property role="TrG5h" value="Position Data" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHtr" role="Sq$B$">
+          <property role="TrG5h" value="Mission Progress Updates" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHtx" role="Sq$B$">
+          <property role="TrG5h" value="Waypoint destination" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHtC" role="Sq$B$">
+          <property role="TrG5h" value="Time to destination" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="1JhvKLLPHf_" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <ref role="SrP07" node="1JhvKLLPH7F" resolve="UAVs" />
+        <node concept="Sqzvu" id="1JhvKLLPHfA" role="Sq$B$">
+          <property role="TrG5h" value="Change altitude" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHpE" role="Sq$B$">
+          <property role="TrG5h" value="Set throttle" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="1JhvKLLPHlj" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <node concept="Sqzvu" id="1JhvKLLPHlk" role="Sq$B$">
+          <property role="TrG5h" value="Engine status" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHvD" role="Sq$B$">
+          <property role="TrG5h" value="Communication checks" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHvH" role="Sq$B$">
+          <property role="TrG5h" value="Current services status + warnings" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHvM" role="Sq$B$">
+          <property role="TrG5h" value="Mission Progress Updates" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHvS" role="Sq$B$">
+          <property role="TrG5h" value="Mission objectives" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHvZ" role="Sq$B$">
+          <property role="TrG5h" value="Position Data" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHw7" role="Sq$B$">
+          <property role="TrG5h" value="Aircraft hardware status" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHwg" role="Sq$B$">
+          <property role="TrG5h" value="Waypoint destination" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHwq" role="Sq$B$">
+          <property role="TrG5h" value="Time to destination" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHwV" role="Sq$B$">
+          <property role="TrG5h" value="Unauthorized requests" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHx7" role="Sq$B$">
+          <property role="TrG5h" value="Lost link successful" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="1JhvKLLPH7F" role="1X_0GB">
       <property role="TrG5h" value="UAVs" />
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPH8r" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLP$9p" resolve="ATC" />
-      <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
-      <node concept="Sqzvu" id="1JhvKLLPH8s" role="Sq$B$">
-        <property role="TrG5h" value="Grant clearance" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHnZ" role="Sq$B$">
-        <property role="TrG5h" value="Issue ground operation" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHo3" role="Sq$B$">
-        <property role="TrG5h" value="Issue approach/departure instructions" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPH9n" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
-      <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
-      <node concept="Sqzvu" id="1JhvKLLPH9o" role="Sq$B$">
-        <property role="TrG5h" value="Issue mission plan" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHow" role="Sq$B$">
-        <property role="TrG5h" value="Issue updates/changes" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHaz" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-      <ref role="SrP07" node="1JhvKLLP$9p" resolve="ATC" />
-      <node concept="Sqzvu" id="1JhvKLLPI0t" role="Sq$B$">
-        <property role="TrG5h" value="Request takeoff/landing clearance" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPI0u" role="Sq$B$">
-        <property role="TrG5h" value="Request ground clearance" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPI0v" role="Sq$B$">
-        <property role="TrG5h" value="Confirm guidance/instructions" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPHbW" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-      <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <node concept="Sqzvu" id="1JhvKLLPHbX" role="Sq$B$">
-        <property role="TrG5h" value="Surveil a region" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHo$" role="Sq$B$">
-        <property role="TrG5h" value="Search for a target" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHoC" role="Sq$B$">
-        <property role="TrG5h" value="Identify/Assess target" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHoH" role="Sq$B$">
-        <property role="TrG5h" value="Track target" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHoN" role="Sq$B$">
-        <property role="TrG5h" value="Aim/Fix on target" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHoU" role="Sq$B$">
-        <property role="TrG5h" value="Fire at/Engage target" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHp2" role="Sq$B$">
-        <property role="TrG5h" value="Send formation command" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHpb" role="Sq$B$">
-        <property role="TrG5h" value="Send override command" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHdk" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
-      <node concept="Sqzvu" id="1JhvKLLPHdl" role="Sq$B$">
-        <property role="TrG5h" value="Visual" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHti" role="Sq$B$">
-        <property role="TrG5h" value="Communication Checks" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHtm" role="Sq$B$">
-        <property role="TrG5h" value="Position Data" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHtr" role="Sq$B$">
-        <property role="TrG5h" value="Mission Progress Updates" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHtx" role="Sq$B$">
-        <property role="TrG5h" value="Waypoint destination" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHtC" role="Sq$B$">
-        <property role="TrG5h" value="Time to destination" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPHf_" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="SrP07" node="1JhvKLLPH7F" resolve="UAVs" />
-      <node concept="Sqzvu" id="1JhvKLLPHfA" role="Sq$B$">
-        <property role="TrG5h" value="Change altitude" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHpE" role="Sq$B$">
-        <property role="TrG5h" value="Set throttle" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHh9" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH7F" resolve="UAVs" />
-      <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <node concept="Sqzvu" id="1JhvKLLPHha" role="Sq$B$">
-        <property role="TrG5h" value="GPS position" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHuH" role="Sq$B$">
-        <property role="TrG5h" value="Altitude" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHuL" role="Sq$B$">
-        <property role="TrG5h" value="Airspeed" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHuQ" role="Sq$B$">
-        <property role="TrG5h" value="Fuel level" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHuW" role="Sq$B$">
-        <property role="TrG5h" value="Engine status" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHv3" role="Sq$B$">
-        <property role="TrG5h" value="Warning/Cautions" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPHji" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-      <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <node concept="Sqzvu" id="1JhvKLLPHjj" role="Sq$B$">
-        <property role="TrG5h" value="Takeoff" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHpI" role="Sq$B$">
-        <property role="TrG5h" value="Land" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHpM" role="Sq$B$">
-        <property role="TrG5h" value="Send override command" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHpR" role="Sq$B$">
-        <property role="TrG5h" value="Send altitude command" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHpX" role="Sq$B$">
-        <property role="TrG5h" value="Send airspeed command" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHq4" role="Sq$B$">
-        <property role="TrG5h" value="Start engine" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHqc" role="Sq$B$">
-        <property role="TrG5h" value="Stop engine" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHql" role="Sq$B$">
-        <property role="TrG5h" value="Turn on payload" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHqv" role="Sq$B$">
-        <property role="TrG5h" value="Turn off payload" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHqE" role="Sq$B$">
-        <property role="TrG5h" value="Apply lost link procedure" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHlj" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-      <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
-      <node concept="Sqzvu" id="1JhvKLLPHlk" role="Sq$B$">
-        <property role="TrG5h" value="Engine status" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHvD" role="Sq$B$">
-        <property role="TrG5h" value="Communication checks" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHvH" role="Sq$B$">
-        <property role="TrG5h" value="Current services status + warnings" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHvM" role="Sq$B$">
-        <property role="TrG5h" value="Mission Progress Updates" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHvS" role="Sq$B$">
-        <property role="TrG5h" value="Mission objectives" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHvZ" role="Sq$B$">
-        <property role="TrG5h" value="Position Data" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHw7" role="Sq$B$">
-        <property role="TrG5h" value="Aircraft hardware status" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHwg" role="Sq$B$">
-        <property role="TrG5h" value="Waypoint destination" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHwq" role="Sq$B$">
-        <property role="TrG5h" value="Time to destination" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHwV" role="Sq$B$">
-        <property role="TrG5h" value="Unauthorized requests" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHx7" role="Sq$B$">
-        <property role="TrG5h" value="Lost link successful" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPHxr" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLP$9p" resolve="ATC" />
-      <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
-      <node concept="Sqzvu" id="1JhvKLLPI0V" role="Sq$B$">
-        <property role="TrG5h" value="Grant clearance" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPI0W" role="Sq$B$">
-        <property role="TrG5h" value="Issue ground operation" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPI0X" role="Sq$B$">
-        <property role="TrG5h" value="Issue approach/departure instructions" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPH$r" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
-      <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
-      <node concept="Sqzvu" id="1JhvKLLPI12" role="Sq$B$">
-        <property role="TrG5h" value="Issue mission plan" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPI13" role="Sq$B$">
-        <property role="TrG5h" value="Issue updates/changes" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHBz" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-      <ref role="SrP07" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
-      <node concept="Sqzvu" id="1JhvKLLPHB$" role="Sq$B$">
-        <property role="TrG5h" value="Mission Status" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHEA" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-      <ref role="SrP07" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
-      <node concept="Sqzvu" id="1JhvKLLPHUQ" role="Sq$B$">
-        <property role="TrG5h" value="Mission Status" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="1JhvKLLPHLm" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-      <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
-      <node concept="Sqzvu" id="1JhvKLLPHLn" role="Sq$B$">
-        <property role="TrG5h" value="Mission Changes" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHTQ" role="Sq$B$">
-        <property role="TrG5h" value="UAV override notification" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHTU" role="Sq$B$">
-        <property role="TrG5h" value="Takeoff/Landing notification" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHOR" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-      <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
-      <node concept="Sqzvu" id="1JhvKLLPHEB" role="Sq$B$">
-        <property role="TrG5h" value="Positions" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHL0" role="Sq$B$">
-        <property role="TrG5h" value="Predictions" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHL4" role="Sq$B$">
-        <property role="TrG5h" value="Milestones" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHL9" role="Sq$B$">
-        <property role="TrG5h" value="Mission Status" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHLf" role="Sq$B$">
-        <property role="TrG5h" value="UAV override notification" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="1JhvKLLPHWl" role="1X_0G_">
-      <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-      <ref role="SrP07" node="1JhvKLLP$9p" resolve="ATC" />
-      <node concept="Sqzvu" id="1JhvKLLPHxs" role="Sq$B$">
-        <property role="TrG5h" value="Request takeoff/landing clearance" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHVY" role="Sq$B$">
-        <property role="TrG5h" value="Request ground clearance" />
-      </node>
-      <node concept="Sqzvu" id="1JhvKLLPHW2" role="Sq$B$">
-        <property role="TrG5h" value="Confirm guidance/instructions" />
+      <node concept="Sq$B_" id="1JhvKLLPHh9" role="2I3o71">
+        <ref role="SrP08" node="1JhvKLLPH7F" resolve="UAVs" />
+        <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <node concept="Sqzvu" id="1JhvKLLPHha" role="Sq$B$">
+          <property role="TrG5h" value="GPS position" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHuH" role="Sq$B$">
+          <property role="TrG5h" value="Altitude" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHuL" role="Sq$B$">
+          <property role="TrG5h" value="Airspeed" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHuQ" role="Sq$B$">
+          <property role="TrG5h" value="Fuel level" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHuW" role="Sq$B$">
+          <property role="TrG5h" value="Engine status" />
+        </node>
+        <node concept="Sqzvu" id="1JhvKLLPHv3" role="Sq$B$">
+          <property role="TrG5h" value="Warning/Cautions" />
+        </node>
       </node>
     </node>
   </node>
@@ -2201,6 +2200,30 @@
     <property role="TrG5h" value="_100_car_smart_charger_connector" />
     <node concept="1XyJaU" id="4q9fsxm3ohX" role="1X_0GB">
       <property role="TrG5h" value="ChargerController" />
+      <node concept="Sq$B_" id="4q9fsxm3ojB" role="2I3o71">
+        <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <ref role="SrP07" node="4q9fsxm3oiB" resolve="Operator" />
+        <node concept="Sqzvu" id="4q9fsxm3ojC" role="Sq$B$">
+          <property role="TrG5h" value="Charging Active" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4q9fsxm3olZ" role="2I3o71">
+        <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <ref role="SrP07" node="4q9fsxm3oih" resolve="Car" />
+        <node concept="Sqzvu" id="4q9fsxm3ooF" role="Sq$B$">
+          <property role="TrG5h" value="Check Status" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4q9fsxm3opO" role="2I3o71">
+        <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <ref role="SrP07" node="4q9fsxm3ooS" resolve="Circuit Switch" />
+        <node concept="Sqzvu" id="4q9fsxm3opP" role="Sq$B$">
+          <property role="TrG5h" value="Close Switch" />
+        </node>
+        <node concept="Sqzvu" id="4q9fsxm3or9" role="Sq$B$">
+          <property role="TrG5h" value="Open Switch" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="4q9fsxm3oi1" role="lGtFl">
       <node concept="37mRIm" id="4q9fsxm3oi2" role="37mRID">
@@ -2405,65 +2428,41 @@
     </node>
     <node concept="1XyJaU" id="4q9fsxm3oih" role="1X_0GB">
       <property role="TrG5h" value="Car" />
+      <node concept="Sq$B_" id="4q9fsxm3ong" role="2I3o71">
+        <ref role="SrP08" node="4q9fsxm3oih" resolve="Car" />
+        <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <node concept="Sqzvu" id="4q9fsxm3onh" role="Sq$B$">
+          <property role="TrG5h" value="Charging Allowed" />
+        </node>
+        <node concept="Sqzvu" id="4q9fsxm3Bzk" role="Sq$B$">
+          <property role="TrG5h" value="Charging Not Allowed" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="4q9fsxm3oiB" role="1X_0GB">
       <property role="TrG5h" value="Operator" />
-    </node>
-    <node concept="1XypPU" id="4q9fsxm3oiW" role="1X_0G_">
-      <ref role="SrP08" node="4q9fsxm3oiB" resolve="Operator" />
-      <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
-      <node concept="Sqzvu" id="4q9fsxm3oiX" role="Sq$B$">
-        <property role="TrG5h" value="Start Charging" />
-      </node>
-      <node concept="Sqzvu" id="4q9fsxm3ooB" role="Sq$B$">
-        <property role="TrG5h" value="Stop Charging" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4q9fsxm3ojB" role="1X_0G_">
-      <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
-      <ref role="SrP07" node="4q9fsxm3oiB" resolve="Operator" />
-      <node concept="Sqzvu" id="4q9fsxm3ojC" role="Sq$B$">
-        <property role="TrG5h" value="Charging Active" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4q9fsxm3olZ" role="1X_0G_">
-      <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
-      <ref role="SrP07" node="4q9fsxm3oih" resolve="Car" />
-      <node concept="Sqzvu" id="4q9fsxm3ooF" role="Sq$B$">
-        <property role="TrG5h" value="Check Status" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4q9fsxm3ong" role="1X_0G_">
-      <ref role="SrP08" node="4q9fsxm3oih" resolve="Car" />
-      <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
-      <node concept="Sqzvu" id="4q9fsxm3onh" role="Sq$B$">
-        <property role="TrG5h" value="Charging Allowed" />
-      </node>
-      <node concept="Sqzvu" id="4q9fsxm3Bzk" role="Sq$B$">
-        <property role="TrG5h" value="Charging Not Allowed" />
+      <node concept="1XypPU" id="4q9fsxm3oiW" role="2I3o71">
+        <ref role="SrP08" node="4q9fsxm3oiB" resolve="Operator" />
+        <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <node concept="Sqzvu" id="4q9fsxm3oiX" role="Sq$B$">
+          <property role="TrG5h" value="Start Charging" />
+        </node>
+        <node concept="Sqzvu" id="4q9fsxm3ooB" role="Sq$B$">
+          <property role="TrG5h" value="Stop Charging" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="4q9fsxm3ooS" role="1X_0GB">
       <property role="TrG5h" value="Circuit Switch" />
-    </node>
-    <node concept="1XypPU" id="4q9fsxm3opO" role="1X_0G_">
-      <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
-      <ref role="SrP07" node="4q9fsxm3ooS" resolve="Circuit Switch" />
-      <node concept="Sqzvu" id="4q9fsxm3opP" role="Sq$B$">
-        <property role="TrG5h" value="Close Switch" />
-      </node>
-      <node concept="Sqzvu" id="4q9fsxm3or9" role="Sq$B$">
-        <property role="TrG5h" value="Open Switch" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4q9fsxm3org" role="1X_0G_">
-      <ref role="SrP08" node="4q9fsxm3ooS" resolve="Circuit Switch" />
-      <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
-      <node concept="Sqzvu" id="4q9fsxm3orh" role="Sq$B$">
-        <property role="TrG5h" value="Switch Closed" />
-      </node>
-      <node concept="Sqzvu" id="4q9fsxm3osI" role="Sq$B$">
-        <property role="TrG5h" value="Switch Open" />
+      <node concept="Sq$B_" id="4q9fsxm3org" role="2I3o71">
+        <ref role="SrP08" node="4q9fsxm3ooS" resolve="Circuit Switch" />
+        <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <node concept="Sqzvu" id="4q9fsxm3orh" role="Sq$B$">
+          <property role="TrG5h" value="Switch Closed" />
+        </node>
+        <node concept="Sqzvu" id="4q9fsxm3osI" role="Sq$B$">
+          <property role="TrG5h" value="Switch Open" />
+        </node>
       </node>
     </node>
   </node>
