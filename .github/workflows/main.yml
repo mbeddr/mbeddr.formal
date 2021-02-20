@@ -47,11 +47,11 @@ jobs:
       
     - name: Set up Gradle
       run: |
+        chmod +x ./gradlew
     #    echo "Setting up gradle build..."
     #    sudo apt-get update
     #    sudo apt install openjdk-11-jdk
     #    sudo apt install gradle    
-        chmod +x ./gradlew
         
     #- name: Running Gradle build
     #  run: |
