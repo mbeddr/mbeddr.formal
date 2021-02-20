@@ -59,6 +59,10 @@ jobs:
         export JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64
         ./gradlew
       
+    - name: Running Tests
+      run: |
+        ./gradlew run_safety_tests
+        
     - name: Archive distribution
       uses: actions/upload-artifact@v1
       with:

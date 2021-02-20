@@ -214,6 +214,22 @@ task run_smv_tests(type: TestLanguages, dependsOn: build_formal_languages) {
 	script new File("$buildDir/scripts/build-nusmv-tests.xml")
 }
 
+task run_safety_tests(type: TestLanguages, dependsOn: build_formal_languages) {
+    description "Will execute all tests from command line"
+    print "mbeddr.formal.home = " + rootDir;
+	script new File("$buildDir/scripts/build-safety-tests.xml")
+	doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.antLib.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
+
 check.dependsOn run_smv_tests
 
 task package_formal(type: Zip, dependsOn: build_formal_languages) {
