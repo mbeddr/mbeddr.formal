@@ -5,7 +5,7 @@ on: [push, pull_request]
 
 env:
   MPS_VER: "2020.2"
-  MPS_ZIP: "https://download.jetbrains.com/mps/2020.1/MPS-2020.1.2.zip"
+  MPS_ZIP: "http://download.jetbrains.com/mps/2020.2/MPS-2020.2.2.zip"
   JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
 
 jobs:
