@@ -12,6 +12,9 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
       <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
         <child id="8489045168660938635" name="warningRef" index="3lydCh" />
       </concept>
@@ -25,6 +28,7 @@
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -216,9 +220,37 @@
           <ref role="1E0nOH" node="1FMyjUPiCUA" resolve="driver" />
           <node concept="1E0nOJ" id="1FMyjUPiCXw" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCVQ" resolve="Accelerate" />
+            <node concept="7CXmI" id="1FMyjUPslhG" role="lGtFl">
+              <node concept="1TM$A" id="1FMyjUPslhN" role="7EUXB">
+                <node concept="2PYRI3" id="1FMyjUPslhO" role="3lydEf">
+                  <ref role="39XzEq" to="blqx:1FMyjUPimXA" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="1E0nOJ" id="1FMyjUPiCXA" role="1E0nOC">
+            <ref role="1E0n_N" node="1FMyjUPiCVQ" resolve="Accelerate" />
+            <node concept="7CXmI" id="1FMyjUPslhR" role="lGtFl">
+              <node concept="1TM$A" id="1FMyjUPslhW" role="7EUXB">
+                <node concept="2PYRI3" id="1FMyjUPslhX" role="3lydEf">
+                  <ref role="39XzEq" to="blqx:1FMyjUPin0C" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1E0nOJ" id="1FMyjUPslht" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCVV" resolve="Decelerate" />
+          </node>
+          <node concept="1E0nOJ" id="1FMyjUPslhx" role="1E0nOC">
+            <ref role="1E0n_N" node="1FMyjUPiCUZ" resolve="Start" />
+          </node>
+          <node concept="1E0nOJ" id="1FMyjUPslhA" role="1E0nOC">
+            <ref role="1E0n_N" node="1FMyjUPiCVM" resolve="Stop" />
+          </node>
+        </node>
+        <node concept="7CXmI" id="1FMyjUPsli0" role="lGtFl">
+          <node concept="7OXhh" id="1FMyjUPsli5" role="7EUXB">
+            <property role="GvXf4" value="true" />
           </node>
         </node>
       </node>
