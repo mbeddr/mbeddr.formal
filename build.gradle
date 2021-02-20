@@ -214,7 +214,7 @@ task run_smv_tests(type: TestLanguages, dependsOn: build_formal_languages) {
 	script new File("$buildDir/scripts/build-nusmv-tests.xml")
 }
 
-task run_safety_tests(type: TestLanguages, dependsOn: build_formal_languages) {
+task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
     print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-safety-tests.xml")
