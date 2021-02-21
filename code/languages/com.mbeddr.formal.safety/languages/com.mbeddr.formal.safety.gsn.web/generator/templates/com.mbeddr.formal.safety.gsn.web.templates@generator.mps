@@ -359,7 +359,7 @@
           </node>
           <node concept="356sEK" id="5pJnDA9i75V" role="383Ya9">
             <node concept="356sEF" id="5pJnDA9i75W" role="356sEH">
-              <property role="TrG5h" value="function draw_solution(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor) {" />
+              <property role="TrG5h" value="function draw_solution(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor, strokeColor, strokeWidth) {" />
             </node>
             <node concept="2EixSi" id="5pJnDA9i75Y" role="2EinRH" />
           </node>
@@ -367,7 +367,7 @@
             <property role="333NGx" value="    " />
             <node concept="356sEK" id="5pJnDA9i75Z" role="383Ya9">
               <node concept="356sEF" id="5pJnDA9i760" role="356sEH">
-                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `shape=ellipse;perimeter=ellipsePerimeter;fillColor=${fillColor}`);" />
+                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `shape=ellipse;perimeter=ellipsePerimeter;fillColor=${fillColor};strokeColor=${strokeColor};strokeWidth=${strokeWidth}`);" />
               </node>
               <node concept="2EixSi" id="5pJnDA9i762" role="2EinRH" />
             </node>
@@ -389,7 +389,7 @@
           </node>
           <node concept="356sEK" id="5pJnDA9i76g" role="383Ya9">
             <node concept="356sEF" id="5pJnDA9i76h" role="356sEH">
-              <property role="TrG5h" value="function draw_goal(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor) {" />
+              <property role="TrG5h" value="function draw_goal(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor, strokeColor, strokeWidth) {" />
             </node>
             <node concept="2EixSi" id="5pJnDA9i76j" role="2EinRH" />
           </node>
@@ -397,7 +397,7 @@
             <property role="333NGx" value="    " />
             <node concept="356sEK" id="5pJnDA9i76k" role="383Ya9">
               <node concept="356sEF" id="5pJnDA9i76l" role="356sEH">
-                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `fillColor=${fillColor};`);" />
+                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `fillColor=${fillColor};strokeColor=${strokeColor};strokeWidth=${strokeWidth};`);" />
               </node>
               <node concept="2EixSi" id="5pJnDA9i76n" role="2EinRH" />
             </node>
@@ -515,7 +515,7 @@
           </node>
           <node concept="356sEK" id="5pJnDA9i77z" role="383Ya9">
             <node concept="356sEF" id="5pJnDA9i77$" role="356sEH">
-              <property role="TrG5h" value="function draw_strategy(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor) {" />
+              <property role="TrG5h" value="function draw_strategy(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor, strokeColor, strokeWidth) {" />
             </node>
             <node concept="2EixSi" id="5pJnDA9i77A" role="2EinRH" />
           </node>
@@ -523,7 +523,7 @@
             <property role="333NGx" value="    " />
             <node concept="356sEK" id="5pJnDA9i77B" role="383Ya9">
               <node concept="356sEF" id="5pJnDA9i77C" role="356sEH">
-                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `shape=StrategyShape;perimeter=rectanglePerimeter;fillColor=${fillColor}`);" />
+                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `shape=StrategyShape;perimeter=rectanglePerimeter;fillColor=${fillColor};strokeColor=${strokeColor};strokeWidth=${strokeWidth}`);" />
               </node>
               <node concept="2EixSi" id="5pJnDA9i77E" role="2EinRH" />
             </node>
@@ -2219,6 +2219,118 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="17Uvod" id="2hB9zGIAb9m" role="lGtFl">
+                    <property role="2qtEX9" value="name" />
+                    <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                    <node concept="3zFVjK" id="2hB9zGIAb9n" role="3zH0cK">
+                      <node concept="3clFbS" id="2hB9zGIAb9o" role="2VODD2">
+                        <node concept="3clFbF" id="2hB9zGIAb9p" role="3cqZAp">
+                          <node concept="3cpWs3" id="2hB9zGIAb9q" role="3clFbG">
+                            <node concept="Xl_RD" id="2hB9zGIAb9r" role="3uHU7w">
+                              <property role="Xl_RC" value="\&quot;" />
+                            </node>
+                            <node concept="3cpWs3" id="2hB9zGIAb9s" role="3uHU7B">
+                              <node concept="Xl_RD" id="2hB9zGIAb9t" role="3uHU7B">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="2YIFZM" id="2hB9zGIAb9u" role="3uHU7w">
+                                <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+                                <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                <node concept="30H73N" id="2hB9zGIAb9v" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="17Uvod" id="2hB9zGIAb1q" role="lGtFl">
+                    <property role="2qtEX9" value="name" />
+                    <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                    <node concept="3zFVjK" id="2hB9zGIAb1r" role="3zH0cK">
+                      <node concept="3clFbS" id="2hB9zGIAb1s" role="2VODD2">
+                        <node concept="3clFbF" id="2hB9zGIAb1t" role="3cqZAp">
+                          <node concept="3cpWs3" id="2hB9zGIAb1u" role="3clFbG">
+                            <node concept="Xl_RD" id="2hB9zGIAb1v" role="3uHU7w">
+                              <property role="Xl_RC" value="\&quot;" />
+                            </node>
+                            <node concept="3cpWs3" id="2hB9zGIAb1w" role="3uHU7B">
+                              <node concept="Xl_RD" id="2hB9zGIAb1x" role="3uHU7B">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="2YIFZM" id="2hB9zGIAb1y" role="3uHU7w">
+                                <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+                                <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                <node concept="30H73N" id="2hB9zGIAb1z" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="356sEF" id="2hB9zGIAcFq" role="356sEH">
+                  <property role="TrG5h" value="," />
+                </node>
+                <node concept="356sEF" id="2hB9zGIBBTk" role="356sEH">
+                  <property role="TrG5h" value="dummy_stroke_color" />
+                  <node concept="17Uvod" id="2hB9zGIBCD4" role="lGtFl">
+                    <property role="2qtEX9" value="name" />
+                    <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                    <node concept="3zFVjK" id="2hB9zGIBCD5" role="3zH0cK">
+                      <node concept="3clFbS" id="2hB9zGIBCD6" role="2VODD2">
+                        <node concept="3clFbF" id="2hB9zGIBCQc" role="3cqZAp">
+                          <node concept="3cpWs3" id="2hB9zGIBCQd" role="3clFbG">
+                            <node concept="Xl_RD" id="2hB9zGIBCQe" role="3uHU7w">
+                              <property role="Xl_RC" value="\&quot;" />
+                            </node>
+                            <node concept="3cpWs3" id="2hB9zGIBCQf" role="3uHU7B">
+                              <node concept="Xl_RD" id="2hB9zGIBCQg" role="3uHU7B">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="2YIFZM" id="2hB9zGIBCQh" role="3uHU7w">
+                                <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                <ref role="37wK5l" to="ra3w:2hB9zGIAf5R" resolve="getStrokeColorForShape" />
+                                <node concept="30H73N" id="2hB9zGIBCQi" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="356sEF" id="2hB9zGIAd9Y" role="356sEH">
+                  <property role="TrG5h" value="," />
+                </node>
+                <node concept="356sEF" id="2hB9zGIBKly" role="356sEH">
+                  <property role="TrG5h" value="dummy_stroke_width" />
+                  <node concept="17Uvod" id="2hB9zGIBL28" role="lGtFl">
+                    <property role="2qtEX9" value="name" />
+                    <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                    <node concept="3zFVjK" id="2hB9zGIBL29" role="3zH0cK">
+                      <node concept="3clFbS" id="2hB9zGIBL2a" role="2VODD2">
+                        <node concept="3clFbF" id="2hB9zGIBLb0" role="3cqZAp">
+                          <node concept="3cpWs3" id="2hB9zGIBLb1" role="3clFbG">
+                            <node concept="Xl_RD" id="2hB9zGIBLb2" role="3uHU7w">
+                              <property role="Xl_RC" value="\&quot;" />
+                            </node>
+                            <node concept="3cpWs3" id="2hB9zGIBLb3" role="3uHU7B">
+                              <node concept="Xl_RD" id="2hB9zGIBLb4" role="3uHU7B">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="2YIFZM" id="2hB9zGIBLb5" role="3uHU7w">
+                                <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                <ref role="37wK5l" to="ra3w:2hB9zGIAkIU" resolve="getStrokeWidthForShape" />
+                                <node concept="30H73N" id="2hB9zGIBLb6" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="356sEF" id="5pJnDA9bgwg" role="356sEH">
                   <property role="TrG5h" value=");" />
@@ -2563,6 +2675,68 @@
                                   <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
                                   <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
                                   <node concept="30H73N" id="2hB9zGI_kBH" role="37wK5m" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBRe7" role="356sEH">
+                    <property role="TrG5h" value="," />
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBRL1" role="356sEH">
+                    <property role="TrG5h" value="dummy_stroke_color" />
+                    <node concept="17Uvod" id="2hB9zGIBS5J" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="2hB9zGIBS5K" role="3zH0cK">
+                        <node concept="3clFbS" id="2hB9zGIBS5L" role="2VODD2">
+                          <node concept="3clFbF" id="2hB9zGIBSeB" role="3cqZAp">
+                            <node concept="3cpWs3" id="2hB9zGIBSeC" role="3clFbG">
+                              <node concept="Xl_RD" id="2hB9zGIBSeD" role="3uHU7w">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="3cpWs3" id="2hB9zGIBSeE" role="3uHU7B">
+                                <node concept="Xl_RD" id="2hB9zGIBSeF" role="3uHU7B">
+                                  <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                                <node concept="2YIFZM" id="2hB9zGIBSeG" role="3uHU7w">
+                                  <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                  <ref role="37wK5l" to="ra3w:2hB9zGIAf5R" resolve="getStrokeColorForShape" />
+                                  <node concept="30H73N" id="2hB9zGIBSeH" role="37wK5m" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBSpy" role="356sEH">
+                    <property role="TrG5h" value="," />
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBSUe" role="356sEH">
+                    <property role="TrG5h" value="dummy_stroke_width" />
+                    <node concept="17Uvod" id="2hB9zGIBTmQ" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="2hB9zGIBTmR" role="3zH0cK">
+                        <node concept="3clFbS" id="2hB9zGIBTmS" role="2VODD2">
+                          <node concept="3clFbF" id="2hB9zGIBTvI" role="3cqZAp">
+                            <node concept="3cpWs3" id="2hB9zGIBTvJ" role="3clFbG">
+                              <node concept="Xl_RD" id="2hB9zGIBTvK" role="3uHU7w">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="3cpWs3" id="2hB9zGIBTvL" role="3uHU7B">
+                                <node concept="Xl_RD" id="2hB9zGIBTvM" role="3uHU7B">
+                                  <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                                <node concept="2YIFZM" id="2hB9zGIBTvN" role="3uHU7w">
+                                  <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                  <ref role="37wK5l" to="ra3w:2hB9zGIAkIU" resolve="getStrokeWidthForShape" />
+                                  <node concept="30H73N" id="2hB9zGIBTvO" role="37wK5m" />
                                 </node>
                               </node>
                             </node>
@@ -2916,6 +3090,68 @@
                                   <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
                                   <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
                                   <node concept="30H73N" id="2hB9zGI_tTo" role="37wK5m" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBTAx" role="356sEH">
+                    <property role="TrG5h" value="," />
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBUf3" role="356sEH">
+                    <property role="TrG5h" value="dummy_stroke_color" />
+                    <node concept="17Uvod" id="2hB9zGIBUIj" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="2hB9zGIBUIk" role="3zH0cK">
+                        <node concept="3clFbS" id="2hB9zGIBUIl" role="2VODD2">
+                          <node concept="3clFbF" id="2hB9zGIBURb" role="3cqZAp">
+                            <node concept="3cpWs3" id="2hB9zGIBURc" role="3clFbG">
+                              <node concept="Xl_RD" id="2hB9zGIBURd" role="3uHU7w">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="3cpWs3" id="2hB9zGIBURe" role="3uHU7B">
+                                <node concept="Xl_RD" id="2hB9zGIBURf" role="3uHU7B">
+                                  <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                                <node concept="2YIFZM" id="2hB9zGIBURg" role="3uHU7w">
+                                  <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                  <ref role="37wK5l" to="ra3w:2hB9zGIAf5R" resolve="getStrokeColorForShape" />
+                                  <node concept="30H73N" id="2hB9zGIBURh" role="37wK5m" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBUYc" role="356sEH">
+                    <property role="TrG5h" value="," />
+                  </node>
+                  <node concept="356sEF" id="2hB9zGIBVz5" role="356sEH">
+                    <property role="TrG5h" value="dummy_stroke_width" />
+                    <node concept="17Uvod" id="2hB9zGIBVR1" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="2hB9zGIBVR2" role="3zH0cK">
+                        <node concept="3clFbS" id="2hB9zGIBVR3" role="2VODD2">
+                          <node concept="3clFbF" id="2hB9zGIBVZT" role="3cqZAp">
+                            <node concept="3cpWs3" id="2hB9zGIBVZU" role="3clFbG">
+                              <node concept="Xl_RD" id="2hB9zGIBVZV" role="3uHU7w">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="3cpWs3" id="2hB9zGIBVZW" role="3uHU7B">
+                                <node concept="Xl_RD" id="2hB9zGIBVZX" role="3uHU7B">
+                                  <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                                <node concept="2YIFZM" id="2hB9zGIBVZY" role="3uHU7w">
+                                  <ref role="37wK5l" to="ra3w:2hB9zGIAkIU" resolve="getStrokeWidthForShape" />
+                                  <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                  <node concept="30H73N" id="2hB9zGIBVZZ" role="37wK5m" />
                                 </node>
                               </node>
                             </node>
