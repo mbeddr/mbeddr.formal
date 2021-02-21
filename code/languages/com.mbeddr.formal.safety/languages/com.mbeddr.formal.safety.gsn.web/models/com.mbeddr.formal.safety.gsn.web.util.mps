@@ -9,6 +9,8 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="e57x" ref="r:99808a14-1913-4248-aed8-3139a5d05f88(com.mbeddr.formal.base.styles)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -1080,6 +1082,244 @@
     </node>
     <node concept="2tJIrI" id="2hB9zGIvrCT" role="jymVt" />
     <node concept="3Tm1VV" id="2hB9zGIvrEr" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="2hB9zGI$eNw">
+    <property role="TrG5h" value="StyleUtil" />
+    <node concept="2tJIrI" id="2hB9zGI$eOu" role="jymVt" />
+    <node concept="2YIFZL" id="2hB9zGI$ePh" role="jymVt">
+      <property role="TrG5h" value="getBackgroundColorForShape" />
+      <node concept="3clFbS" id="2hB9zGI$ePk" role="3clF47">
+        <node concept="3cpWs8" id="2hB9zGI$rgh" role="3cqZAp">
+          <node concept="3cpWsn" id="2hB9zGI$rgi" role="3cpWs9">
+            <property role="TrG5h" value="shapeFillColor" />
+            <node concept="3uibUv" id="2hB9zGI$raV" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="2OqwBi" id="2hB9zGI$rgj" role="33vP2m">
+              <node concept="2YIFZM" id="2hB9zGI$rgk" role="2Oq$k0">
+                <ref role="37wK5l" to="e57x:50UR0qsbou1" resolve="resolveStyleForNode" />
+                <ref role="1Pybhc" to="e57x:50UR0qsbos5" resolve="EditorDynamicStyleResolver" />
+                <node concept="37vLTw" id="2hB9zGI$rmH" role="37wK5m">
+                  <ref role="3cqZAo" node="2hB9zGI$ePH" resolve="gseb" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2hB9zGI$rgm" role="2OqNvi">
+                <ref role="37wK5l" to="e57x:2QkJsC6uzl1" resolve="getShapeFillColor" />
+                <node concept="37vLTw" id="2hB9zGI$rpy" role="37wK5m">
+                  <ref role="3cqZAo" node="2hB9zGI$ePH" resolve="gseb" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2hB9zGI$sl2" role="3cqZAp">
+          <node concept="3cpWsn" id="2hB9zGI$sl3" role="3cpWs9">
+            <property role="TrG5h" value="red" />
+            <node concept="10Oyi0" id="2hB9zGI$skE" role="1tU5fm" />
+            <node concept="2OqwBi" id="2hB9zGI$sl4" role="33vP2m">
+              <node concept="37vLTw" id="2hB9zGI$sl5" role="2Oq$k0">
+                <ref role="3cqZAo" node="2hB9zGI$rgi" resolve="shapeFillColor" />
+              </node>
+              <node concept="liA8E" id="2hB9zGI$sl6" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Color.getRed()" resolve="getRed" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2hB9zGI$sx6" role="3cqZAp">
+          <node concept="3cpWsn" id="2hB9zGI$sx7" role="3cpWs9">
+            <property role="TrG5h" value="green" />
+            <node concept="10Oyi0" id="2hB9zGI$sx8" role="1tU5fm" />
+            <node concept="2OqwBi" id="2hB9zGI$sx9" role="33vP2m">
+              <node concept="37vLTw" id="2hB9zGI$sxa" role="2Oq$k0">
+                <ref role="3cqZAo" node="2hB9zGI$rgi" resolve="shapeFillColor" />
+              </node>
+              <node concept="liA8E" id="2hB9zGI$sBp" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Color.getGreen()" resolve="getGreen" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2hB9zGI$sza" role="3cqZAp">
+          <node concept="3cpWsn" id="2hB9zGI$szb" role="3cpWs9">
+            <property role="TrG5h" value="blue" />
+            <node concept="10Oyi0" id="2hB9zGI$szc" role="1tU5fm" />
+            <node concept="2OqwBi" id="2hB9zGI$szd" role="33vP2m">
+              <node concept="37vLTw" id="2hB9zGI$sze" role="2Oq$k0">
+                <ref role="3cqZAo" node="2hB9zGI$rgi" resolve="shapeFillColor" />
+              </node>
+              <node concept="liA8E" id="2hB9zGI$sQO" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Color.getBlue()" resolve="getBlue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2hB9zGI_4P0" role="3cqZAp">
+          <node concept="3cpWsn" id="2hB9zGI_4P1" role="3cpWs9">
+            <property role="TrG5h" value="redHexString" />
+            <node concept="17QB3L" id="2hB9zGI_4Vw" role="1tU5fm" />
+            <node concept="2YIFZM" id="2hB9zGI_4P2" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~Integer.toHexString(int)" resolve="toHexString" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <node concept="37vLTw" id="2hB9zGI_4P3" role="37wK5m">
+                <ref role="3cqZAo" node="2hB9zGI$sl3" resolve="red" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2hB9zGI_5Fw" role="3cqZAp">
+          <node concept="3clFbS" id="2hB9zGI_5Fy" role="3clFbx">
+            <node concept="3clFbF" id="2hB9zGI_82K" role="3cqZAp">
+              <node concept="37vLTI" id="2hB9zGI_8qy" role="3clFbG">
+                <node concept="3cpWs3" id="2hB9zGI_8tr" role="37vLTx">
+                  <node concept="37vLTw" id="2hB9zGI_8wX" role="3uHU7w">
+                    <ref role="3cqZAo" node="2hB9zGI_4P1" resolve="redHexString" />
+                  </node>
+                  <node concept="Xl_RD" id="2hB9zGI_8sB" role="3uHU7B">
+                    <property role="Xl_RC" value="0" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2hB9zGI_82I" role="37vLTJ">
+                  <ref role="3cqZAo" node="2hB9zGI_4P1" resolve="redHexString" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2hB9zGI_7qE" role="3clFbw">
+            <node concept="3cmrfG" id="2hB9zGI_7YW" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="2hB9zGI_6do" role="3uHU7B">
+              <node concept="37vLTw" id="2hB9zGI_5MJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="2hB9zGI_4P1" resolve="redHexString" />
+              </node>
+              <node concept="liA8E" id="2hB9zGI_6_g" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2hB9zGI_55h" role="3cqZAp">
+          <node concept="3cpWsn" id="2hB9zGI_55i" role="3cpWs9">
+            <property role="TrG5h" value="greenHexString" />
+            <node concept="17QB3L" id="2hB9zGI_59R" role="1tU5fm" />
+            <node concept="2YIFZM" id="2hB9zGI_55j" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~Integer.toHexString(int)" resolve="toHexString" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <node concept="37vLTw" id="2hB9zGI_55k" role="37wK5m">
+                <ref role="3cqZAo" node="2hB9zGI$sx7" resolve="green" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2hB9zGI_8_Q" role="3cqZAp">
+          <node concept="3clFbS" id="2hB9zGI_8_R" role="3clFbx">
+            <node concept="3clFbF" id="2hB9zGI_8_S" role="3cqZAp">
+              <node concept="37vLTI" id="2hB9zGI_8_T" role="3clFbG">
+                <node concept="3cpWs3" id="2hB9zGI_8_U" role="37vLTx">
+                  <node concept="37vLTw" id="2hB9zGI_9S2" role="3uHU7w">
+                    <ref role="3cqZAo" node="2hB9zGI_55i" resolve="greenHexString" />
+                  </node>
+                  <node concept="Xl_RD" id="2hB9zGI_8_W" role="3uHU7B">
+                    <property role="Xl_RC" value="0" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2hB9zGI_9LB" role="37vLTJ">
+                  <ref role="3cqZAo" node="2hB9zGI_55i" resolve="greenHexString" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2hB9zGI_8_Y" role="3clFbw">
+            <node concept="3cmrfG" id="2hB9zGI_8_Z" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="2hB9zGI_8A0" role="3uHU7B">
+              <node concept="37vLTw" id="2hB9zGI_9kh" role="2Oq$k0">
+                <ref role="3cqZAo" node="2hB9zGI_55i" resolve="greenHexString" />
+              </node>
+              <node concept="liA8E" id="2hB9zGI_8A2" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2hB9zGI_5gl" role="3cqZAp">
+          <node concept="3cpWsn" id="2hB9zGI_5gm" role="3cpWs9">
+            <property role="TrG5h" value="blueHexString" />
+            <node concept="17QB3L" id="2hB9zGI_5l8" role="1tU5fm" />
+            <node concept="2YIFZM" id="2hB9zGI_5gn" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~Integer.toHexString(int)" resolve="toHexString" />
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <node concept="37vLTw" id="2hB9zGI_5go" role="37wK5m">
+                <ref role="3cqZAo" node="2hB9zGI$szb" resolve="blue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2hB9zGI_9b7" role="3cqZAp">
+          <node concept="3clFbS" id="2hB9zGI_9b8" role="3clFbx">
+            <node concept="3clFbF" id="2hB9zGI_9b9" role="3cqZAp">
+              <node concept="37vLTI" id="2hB9zGI_9ba" role="3clFbG">
+                <node concept="3cpWs3" id="2hB9zGI_9bb" role="37vLTx">
+                  <node concept="37vLTw" id="2hB9zGI_a3M" role="3uHU7w">
+                    <ref role="3cqZAo" node="2hB9zGI_5gm" resolve="blueHexString" />
+                  </node>
+                  <node concept="Xl_RD" id="2hB9zGI_9bd" role="3uHU7B">
+                    <property role="Xl_RC" value="0" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2hB9zGI_9Xn" role="37vLTJ">
+                  <ref role="3cqZAo" node="2hB9zGI_5gm" resolve="blueHexString" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2hB9zGI_9bf" role="3clFbw">
+            <node concept="3cmrfG" id="2hB9zGI_9bg" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="2hB9zGI_9bh" role="3uHU7B">
+              <node concept="37vLTw" id="2hB9zGI_9Ue" role="2Oq$k0">
+                <ref role="3cqZAo" node="2hB9zGI_5gm" resolve="blueHexString" />
+              </node>
+              <node concept="liA8E" id="2hB9zGI_9bj" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2hB9zGI$sW8" role="3cqZAp">
+          <node concept="3cpWs3" id="2hB9zGI$uh2" role="3clFbG">
+            <node concept="37vLTw" id="2hB9zGI_5gp" role="3uHU7w">
+              <ref role="3cqZAo" node="2hB9zGI_5gm" resolve="blueHexString" />
+            </node>
+            <node concept="3cpWs3" id="2hB9zGI$tIG" role="3uHU7B">
+              <node concept="3cpWs3" id="2hB9zGI$MKE" role="3uHU7B">
+                <node concept="Xl_RD" id="2hB9zGI$MNj" role="3uHU7B">
+                  <property role="Xl_RC" value="#" />
+                </node>
+                <node concept="37vLTw" id="2hB9zGI_4P4" role="3uHU7w">
+                  <ref role="3cqZAo" node="2hB9zGI_4P1" resolve="redHexString" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="2hB9zGI_55l" role="3uHU7w">
+                <ref role="3cqZAo" node="2hB9zGI_55i" resolve="greenHexString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2hB9zGI$eOH" role="1B3o_S" />
+      <node concept="17QB3L" id="2hB9zGI$eP6" role="3clF45" />
+      <node concept="37vLTG" id="2hB9zGI$ePH" role="3clF46">
+        <property role="TrG5h" value="gseb" />
+        <node concept="3Tqbb2" id="2hB9zGI$ePG" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2hB9zGI$eNx" role="1B3o_S" />
   </node>
 </model>
 

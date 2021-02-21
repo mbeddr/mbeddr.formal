@@ -359,7 +359,7 @@
           </node>
           <node concept="356sEK" id="5pJnDA9i75V" role="383Ya9">
             <node concept="356sEF" id="5pJnDA9i75W" role="356sEH">
-              <property role="TrG5h" value="function draw_solution(graph, parent, uuid, name, text, pos_x, pos_y, width, height) {" />
+              <property role="TrG5h" value="function draw_solution(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor) {" />
             </node>
             <node concept="2EixSi" id="5pJnDA9i75Y" role="2EinRH" />
           </node>
@@ -367,7 +367,7 @@
             <property role="333NGx" value="    " />
             <node concept="356sEK" id="5pJnDA9i75Z" role="383Ya9">
               <node concept="356sEF" id="5pJnDA9i760" role="356sEH">
-                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, 'shape=ellipse;perimeter=ellipsePerimeter;');" />
+                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `shape=ellipse;perimeter=ellipsePerimeter;fillColor=${fillColor}`);" />
               </node>
               <node concept="2EixSi" id="5pJnDA9i762" role="2EinRH" />
             </node>
@@ -389,7 +389,7 @@
           </node>
           <node concept="356sEK" id="5pJnDA9i76g" role="383Ya9">
             <node concept="356sEF" id="5pJnDA9i76h" role="356sEH">
-              <property role="TrG5h" value="function draw_goal(graph, parent, uuid, name, text, pos_x, pos_y, width, height) {" />
+              <property role="TrG5h" value="function draw_goal(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor) {" />
             </node>
             <node concept="2EixSi" id="5pJnDA9i76j" role="2EinRH" />
           </node>
@@ -397,7 +397,7 @@
             <property role="333NGx" value="    " />
             <node concept="356sEK" id="5pJnDA9i76k" role="383Ya9">
               <node concept="356sEF" id="5pJnDA9i76l" role="356sEH">
-                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height);" />
+                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `fillColor=${fillColor};`);" />
               </node>
               <node concept="2EixSi" id="5pJnDA9i76n" role="2EinRH" />
             </node>
@@ -515,7 +515,7 @@
           </node>
           <node concept="356sEK" id="5pJnDA9i77z" role="383Ya9">
             <node concept="356sEF" id="5pJnDA9i77$" role="356sEH">
-              <property role="TrG5h" value="function draw_strategy(graph, parent, uuid, name, text, pos_x, pos_y, width, height) {" />
+              <property role="TrG5h" value="function draw_strategy(graph, parent, uuid, name, text, pos_x, pos_y, width, height, fillColor) {" />
             </node>
             <node concept="2EixSi" id="5pJnDA9i77A" role="2EinRH" />
           </node>
@@ -523,7 +523,7 @@
             <property role="333NGx" value="    " />
             <node concept="356sEK" id="5pJnDA9i77B" role="383Ya9">
               <node concept="356sEF" id="5pJnDA9i77C" role="356sEH">
-                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, 'shape=StrategyShape;perimeter=rectanglePerimeter;');" />
+                <property role="TrG5h" value="var v = graph.insertVertex(parent, null, `${name}\n${text}`, pos_x, pos_y, width, height, `shape=StrategyShape;perimeter=rectanglePerimeter;fillColor=${fillColor}`);" />
               </node>
               <node concept="2EixSi" id="5pJnDA9i77E" role="2EinRH" />
             </node>
@@ -2189,6 +2189,37 @@
                     </node>
                   </node>
                 </node>
+                <node concept="356sEF" id="2hB9zGI$dDn" role="356sEH">
+                  <property role="TrG5h" value="," />
+                </node>
+                <node concept="356sEF" id="2hB9zGI$ebR" role="356sEH">
+                  <property role="TrG5h" value="dummy_fill_color" />
+                  <node concept="17Uvod" id="2hB9zGI$eIU" role="lGtFl">
+                    <property role="2qtEX9" value="name" />
+                    <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                    <node concept="3zFVjK" id="2hB9zGI$eIV" role="3zH0cK">
+                      <node concept="3clFbS" id="2hB9zGI$eIW" role="2VODD2">
+                        <node concept="3clFbF" id="2hB9zGI$wtY" role="3cqZAp">
+                          <node concept="3cpWs3" id="2hB9zGI$xxl" role="3clFbG">
+                            <node concept="Xl_RD" id="2hB9zGI$xC7" role="3uHU7w">
+                              <property role="Xl_RC" value="\&quot;" />
+                            </node>
+                            <node concept="3cpWs3" id="2hB9zGI$wYi" role="3uHU7B">
+                              <node concept="Xl_RD" id="2hB9zGI$wtX" role="3uHU7B">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="2YIFZM" id="2hB9zGI$x8d" role="3uHU7w">
+                                <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+                                <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                <node concept="30H73N" id="2hB9zGI$xde" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="356sEF" id="5pJnDA9bgwg" role="356sEH">
                   <property role="TrG5h" value=");" />
                 </node>
@@ -2501,6 +2532,37 @@
                                 </node>
                                 <node concept="Xl_RD" id="5pJnDA9dNgZ" role="3uHU7B">
                                   <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="356sEF" id="2hB9zGI_jEG" role="356sEH">
+                    <property role="TrG5h" value="," />
+                  </node>
+                  <node concept="356sEF" id="2hB9zGI_kBz" role="356sEH">
+                    <property role="TrG5h" value="dummy_fill_color" />
+                    <node concept="17Uvod" id="2hB9zGI_kB$" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="2hB9zGI_kB_" role="3zH0cK">
+                        <node concept="3clFbS" id="2hB9zGI_kBA" role="2VODD2">
+                          <node concept="3clFbF" id="2hB9zGI_kBB" role="3cqZAp">
+                            <node concept="3cpWs3" id="2hB9zGI_kBC" role="3clFbG">
+                              <node concept="Xl_RD" id="2hB9zGI_kBD" role="3uHU7w">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="3cpWs3" id="2hB9zGI_kBE" role="3uHU7B">
+                                <node concept="Xl_RD" id="2hB9zGI_kBF" role="3uHU7B">
+                                  <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                                <node concept="2YIFZM" id="2hB9zGI_kBG" role="3uHU7w">
+                                  <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+                                  <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                  <node concept="30H73N" id="2hB9zGI_kBH" role="37wK5m" />
                                 </node>
                               </node>
                             </node>
@@ -2823,6 +2885,37 @@
                                 </node>
                                 <node concept="Xl_RD" id="5pJnDA9dORk" role="3uHU7B">
                                   <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="356sEF" id="2hB9zGI_sNP" role="356sEH">
+                    <property role="TrG5h" value="," />
+                  </node>
+                  <node concept="356sEF" id="2hB9zGI_tTe" role="356sEH">
+                    <property role="TrG5h" value="dummy_fill_color" />
+                    <node concept="17Uvod" id="2hB9zGI_tTf" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="2hB9zGI_tTg" role="3zH0cK">
+                        <node concept="3clFbS" id="2hB9zGI_tTh" role="2VODD2">
+                          <node concept="3clFbF" id="2hB9zGI_tTi" role="3cqZAp">
+                            <node concept="3cpWs3" id="2hB9zGI_tTj" role="3clFbG">
+                              <node concept="Xl_RD" id="2hB9zGI_tTk" role="3uHU7w">
+                                <property role="Xl_RC" value="\&quot;" />
+                              </node>
+                              <node concept="3cpWs3" id="2hB9zGI_tTl" role="3uHU7B">
+                                <node concept="Xl_RD" id="2hB9zGI_tTm" role="3uHU7B">
+                                  <property role="Xl_RC" value="\&quot;" />
+                                </node>
+                                <node concept="2YIFZM" id="2hB9zGI_tTn" role="3uHU7w">
+                                  <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+                                  <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
+                                  <node concept="30H73N" id="2hB9zGI_tTo" role="37wK5m" />
                                 </node>
                               </node>
                             </node>
