@@ -30,8 +30,14 @@
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="31P83hzGybr">
+    <property role="3GE5qa" value="base" />
     <ref role="1M2myG" to="6k2r:7j1NWs11Gj0" resolve="FailureModeAndEffects" />
     <node concept="1N5Pfh" id="31P83hzGybs" role="1Mr941">
       <ref role="1N5Vy1" to="6k2r:31P83hzFOt7" resolve="failureModeDefinition" />
@@ -41,6 +47,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1TeaL8RdXt5">
+    <property role="3GE5qa" value="base" />
     <ref role="1M2myG" to="6k2r:1TeaL8Rd8Z$" resolve="FailureModeReference" />
     <node concept="1N5Pfh" id="1TeaL8RdXt6" role="1Mr941">
       <ref role="1N5Vy1" to="6k2r:1TeaL8RdXsr" resolve="failureMode" />

@@ -20,6 +20,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
+    <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" implicit="true" />
   </imports>
@@ -149,9 +150,9 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="1TeaL8RelWD">
-    <ref role="1M2myG" to="zsc5:1TeaL8RefrX" resolve="FailureModeRefExpression" />
+    <ref role="1M2myG" to="zsc5:1TeaL8RefrX" resolve="PortFailureModeRefExpression" />
     <node concept="1N5Pfh" id="1TeaL8RelWE" role="1Mr941">
-      <ref role="1N5Vy1" to="zsc5:1TeaL8RefrY" resolve="failureMode" />
+      <ref role="1N5Vy1" to="ii8j:1TeaL8RefrY" resolve="failureMode" />
       <node concept="3dgokm" id="62cfieEP8Gv" role="1N6uqs">
         <node concept="3clFbS" id="62cfieEP8Gw" role="2VODD2">
           <node concept="3cpWs8" id="62cfieEP3gx" role="3cqZAp">
@@ -184,7 +185,7 @@
                         <node concept="2Xjw5R" id="62cfieEPkmH" role="2OqNvi">
                           <node concept="1xMEDy" id="62cfieEPkmI" role="1xVPHs">
                             <node concept="chp4Y" id="62cfieEPkmJ" role="ri$Ld">
-                              <ref role="cht4Q" to="zsc5:1TeaL8RefrX" resolve="FailureModeRefExpression" />
+                              <ref role="cht4Q" to="zsc5:1TeaL8RefrX" resolve="PortFailureModeRefExpression" />
                             </node>
                           </node>
                           <node concept="1xIGOp" id="62cfieEPkmK" role="1xVPHs" />
@@ -277,7 +278,7 @@
                             <ref role="3cqZAo" node="62cfieEP3hw" resolve="it" />
                           </node>
                           <node concept="3Tsc0h" id="62cfieEP3hv" role="2OqNvi">
-                            <ref role="3TtcxE" to="zsc5:1TeaL8Rdz2r" resolve="failureModes" />
+                            <ref role="3TtcxE" to="ii8j:1TeaL8Rdz2r" resolve="failureModes" />
                           </node>
                         </node>
                       </node>
@@ -327,7 +328,7 @@
   <node concept="1M2fIO" id="5g1NREKNRFi">
     <ref role="1M2myG" to="zsc5:5g1NREKNREx" resolve="ComponentFailureModeRefExpression" />
     <node concept="1N5Pfh" id="5g1NREKNRFj" role="1Mr941">
-      <ref role="1N5Vy1" to="zsc5:5g1NREKNREy" resolve="failureMode" />
+      <ref role="1N5Vy1" to="ii8j:5g1NREKNREy" resolve="failureMode" />
       <node concept="3dgokm" id="5g1NREKNRHz" role="1N6uqs">
         <node concept="3clFbS" id="5g1NREKNRH$" role="2VODD2">
           <node concept="3cpWs8" id="5g1NREKNXVi" role="3cqZAp">

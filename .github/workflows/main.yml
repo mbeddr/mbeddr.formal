@@ -4,13 +4,15 @@ name: FASTEN_CI
 on: [push, pull_request]
 
 env:
-  MPS_VER: "2020.1"
-  MPS_ZIP: "https://download.jetbrains.com/mps/2020.1/MPS-2020.1.2.zip"
+  MPS_VER: "2020.2"
+  MPS_ZIP: "http://download.jetbrains.com/mps/2020.2/MPS-2020.2.2.zip"
   JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DISPLAY: ':99'
 
     steps:
     - uses: actions/checkout@v2
@@ -32,7 +34,7 @@ jobs:
         
         echo "Extracting JBR to MPS folder"
         tar -C '/home/runner/MPS '${MPS_VER}'/' -zxvf "jbr.tar.gz"
-        
+                
     - name: Change FASTEN config
       run: |
         echo "Changing config"
@@ -45,23 +47,42 @@ jobs:
       
     - name: Set up Gradle
       run: |
-        echo "Setting up gradle build..."
-        sudo apt-get update
-        sudo apt install openjdk-11-jdk
-        sudo apt install gradle
-        
         chmod +x ./gradlew
         
-    - name: Running Gradle build
+    - name: Setup headless environment
       run: |
-        export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-        export JB_JAVA11_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-        export JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-        ./gradlew
-      
+        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+       
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11  
+        
+    - name: Build FASTEN
+      uses: eskatos/gradle-command-action@v1
+      with: 
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        configuration-cache-enabled: true
+        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+        
+    - name: Run FASTEN.Safe Tests 
+      uses: eskatos/gradle-command-action@v1
+      with: 
+        arguments: run_safety_tests
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        configuration-cache-enabled: true    
+        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+        
+    - name: Publish Test Report
+      uses: mikepenz/action-junit-report@v2
+      with:
+        report_paths: 'build/**/TEST*.xml'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+   
     - name: Archive distribution
       uses: actions/upload-artifact@v1
       with:
         name: fasten-distribution
         path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-1.0-SNAPSHOT.zip
-

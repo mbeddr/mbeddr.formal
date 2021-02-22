@@ -12,7 +12,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="com.mbeddr.formal.safety.gsn.web.generator" uuid="31b0df10-2d1f-4744-8de7-461666d7c2d1">
+    <generator alias="main" namespace="com.mbeddr.formal.safety.gsn.web#01" uuid="31b0df10-2d1f-4744-8de7-461666d7c2d1">
       <models>
         <modelRoot contentPath="${module}/generator" type="default">
           <sourceRoot location="templates" />
@@ -62,7 +62,7 @@
         <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
         <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
         <module reference="0ca42a58-5150-4a55-89be-ba447ef72356(com.mbeddr.formal.safety.gsn.web)" version="0" />
-        <module reference="31b0df10-2d1f-4744-8de7-461666d7c2d1(com.mbeddr.formal.safety.gsn.web.generator)" version="0" />
+        <module reference="31b0df10-2d1f-4744-8de7-461666d7c2d1(com.mbeddr.formal.safety.gsn.web#01)" version="0" />
         <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
         <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
         <module reference="7b45fa94-2707-4a1a-9e6a-ce40c4aaf35a(de.itemis.mps.editor.collapsible.runtime)" version="0" />
@@ -87,6 +87,7 @@
     <dependency reexport="false">e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />

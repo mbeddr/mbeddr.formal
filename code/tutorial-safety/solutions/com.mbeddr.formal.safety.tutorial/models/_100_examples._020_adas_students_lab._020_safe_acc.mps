@@ -6,7 +6,7 @@
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262" version="0" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="0" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
     <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="1" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
@@ -54,14 +54,15 @@
         <child id="2004523000582413323" name="text" index="1E0uc7" />
       </concept>
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
-      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU" />
+      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU">
+        <child id="1941765291767695615" name="startingConnections" index="2I3o71" />
+      </concept>
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
         <reference id="4185693763139125834" name="target" index="SrP07" />
         <reference id="4185693763139125829" name="source" index="SrP08" />
         <child id="4185693763139328937" name="actions" index="Sq$B$" />
       </concept>
       <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.FunctionalControlStructure" flags="ng" index="1X_0jQ">
-        <child id="4286195509387832126" name="connections" index="1X_0G_" />
         <child id="4286195509387832124" name="content" index="1X_0GB" />
       </concept>
       <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
@@ -2002,184 +2003,184 @@
     </node>
     <node concept="1XyJaU" id="2fZol$t_0LI" role="1X_0GB">
       <property role="TrG5h" value="Environment&#10;" />
+      <node concept="Sq$B_" id="2fZol$t_1B9" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0LI" resolve="Environment&#10;" />
+        <ref role="SrP07" node="2fZol$t_0Mp" resolve="Ultrasound Sensor" />
+        <node concept="Sqzvu" id="2fZol$t_1Ba" role="Sq$B$">
+          <property role="TrG5h" value="observation" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="4tgWazNvmpN" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0LI" resolve="Environment&#10;" />
+        <ref role="SrP07" node="4tgWazNvlAH" resolve="Laser Sensor" />
+        <node concept="Sqzvu" id="4tgWazNvmpO" role="Sq$B$">
+          <property role="TrG5h" value="observation" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Mp" role="1X_0GB">
       <property role="TrG5h" value="Ultrasound Sensor" />
+      <node concept="Sq$B_" id="2fZol$t_1EL" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Mp" resolve="Ultrasound Sensor" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <node concept="Sqzvu" id="2fZol$t_1EM" role="Sq$B$">
+          <property role="TrG5h" value="ultrasound input" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0MX" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
+      <node concept="1XypPU" id="2fZol$t_1bv" role="2I3o71">
+        <ref role="SrP07" node="2fZol$t_0Rm" resolve="ACC User interface" />
+        <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
+        <node concept="Sqzvu" id="2fZol$t_1bw" role="Sq$B$">
+          <property role="TrG5h" value="driver control" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4tgWazNvlZO" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
+        <ref role="SrP07" node="4tgWazNvlJV" resolve="Brake" />
+        <node concept="Sqzvu" id="4tgWazNvlZP" role="Sq$B$">
+          <property role="TrG5h" value="push brake " />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4tgWazNvm4l" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
+        <ref role="SrP07" node="4tgWazNvlKb" resolve="Gas pedal" />
+        <node concept="Sqzvu" id="4tgWazNvm4m" role="Sq$B$">
+          <property role="TrG5h" value="push acceleration " />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0O3" role="1X_0GB">
       <property role="TrG5h" value="ACC Control Unit" />
+      <node concept="1XypPU" id="2fZol$t_1LH" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <ref role="SrP07" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+        <node concept="Sqzvu" id="2fZol$t_1LI" role="Sq$B$">
+          <property role="TrG5h" value="driver overtake request" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4tgWazNvlR9" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <ref role="SrP07" node="4tgWazNvlJV" resolve="Brake" />
+        <node concept="Sqzvu" id="4tgWazNvlRa" role="Sq$B$">
+          <property role="TrG5h" value="control brake" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="4tgWazNvlVq" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <ref role="SrP07" node="4tgWazNvlKb" resolve="Gas pedal" />
+        <node concept="Sqzvu" id="4tgWazNvlVr" role="Sq$B$">
+          <property role="TrG5h" value="control acceleration" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0OJ" role="1X_0GB">
       <property role="TrG5h" value="Display" />
+      <node concept="Sq$B_" id="2fZol$t_1UY" role="2I3o71">
+        <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
+        <ref role="SrP08" node="2fZol$t_0OJ" resolve="Display" />
+        <node concept="Sqzvu" id="2fZol$t_1UZ" role="Sq$B$">
+          <property role="TrG5h" value="alarm light" />
+        </node>
+        <node concept="Sqzvu" id="1J1VyY6JMuY" role="Sq$B$">
+          <property role="TrG5h" value="display error/malfunction message" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Pf" role="1X_0GB">
       <property role="TrG5h" value="Communication Control Unit" />
+      <node concept="1XypPU" id="2fZol$t_17f" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+        <ref role="SrP07" node="2fZol$t_0OJ" resolve="Display" />
+        <node concept="Sqzvu" id="2fZol$t_17g" role="Sq$B$">
+          <property role="TrG5h" value="alarm signal display" />
+        </node>
+        <node concept="Sqzvu" id="1J1VyY6JMus" role="Sq$B$">
+          <property role="TrG5h" value="activation signal" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="2fZol$t_19l" role="2I3o71">
+        <ref role="SrP07" node="2fZol$t_0PV" resolve="Speaker" />
+        <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+        <node concept="Sqzvu" id="2fZol$t_19m" role="Sq$B$">
+          <property role="TrG5h" value="alarm signal speaker" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0PV" role="1X_0GB">
       <property role="TrG5h" value="Speaker" />
+      <node concept="Sq$B_" id="2fZol$t_1Zm" role="2I3o71">
+        <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
+        <ref role="SrP08" node="2fZol$t_0PV" resolve="Speaker" />
+        <node concept="Sqzvu" id="2fZol$t_1Zn" role="Sq$B$">
+          <property role="TrG5h" value="alarm tone" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="2fZol$t_0Rm" role="1X_0GB">
       <property role="TrG5h" value="ACC User interface" />
-    </node>
-    <node concept="1XypPU" id="2fZol$t_17f" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
-      <ref role="SrP07" node="2fZol$t_0OJ" resolve="Display" />
-      <node concept="Sqzvu" id="2fZol$t_17g" role="Sq$B$">
-        <property role="TrG5h" value="alarm signal display" />
+      <node concept="1XypPU" id="2fZol$t_1dW" role="2I3o71">
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <ref role="SrP08" node="2fZol$t_0Rm" resolve="ACC User interface" />
+        <node concept="Sqzvu" id="2fZol$t_1dX" role="Sq$B$">
+          <property role="TrG5h" value="activate" />
+        </node>
       </node>
-      <node concept="Sqzvu" id="1J1VyY6JMus" role="Sq$B$">
-        <property role="TrG5h" value="activation signal" />
+      <node concept="1XypPU" id="4tgWazNvmIy" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Rm" resolve="ACC User interface" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <node concept="Sqzvu" id="4tgWazNvmIz" role="Sq$B$">
+          <property role="TrG5h" value="desired distance" />
+        </node>
       </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_19l" role="1X_0G_">
-      <ref role="SrP07" node="2fZol$t_0PV" resolve="Speaker" />
-      <ref role="SrP08" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
-      <node concept="Sqzvu" id="2fZol$t_19m" role="Sq$B$">
-        <property role="TrG5h" value="alarm signal speaker" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1bv" role="1X_0G_">
-      <ref role="SrP07" node="2fZol$t_0Rm" resolve="ACC User interface" />
-      <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
-      <node concept="Sqzvu" id="2fZol$t_1bw" role="Sq$B$">
-        <property role="TrG5h" value="driver control" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1dW" role="1X_0G_">
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <ref role="SrP08" node="2fZol$t_0Rm" resolve="ACC User interface" />
-      <node concept="Sqzvu" id="2fZol$t_1dX" role="Sq$B$">
-        <property role="TrG5h" value="activate" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1B9" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0LI" resolve="Environment&#10;" />
-      <ref role="SrP07" node="2fZol$t_0Mp" resolve="Ultrasound Sensor" />
-      <node concept="Sqzvu" id="2fZol$t_1Ba" role="Sq$B$">
-        <property role="TrG5h" value="observation" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1EL" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Mp" resolve="Ultrasound Sensor" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <node concept="Sqzvu" id="2fZol$t_1EM" role="Sq$B$">
-        <property role="TrG5h" value="ultrasound input" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="2fZol$t_1LH" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <ref role="SrP07" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
-      <node concept="Sqzvu" id="2fZol$t_1LI" role="Sq$B$">
-        <property role="TrG5h" value="driver overtake request" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1UY" role="1X_0G_">
-      <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
-      <ref role="SrP08" node="2fZol$t_0OJ" resolve="Display" />
-      <node concept="Sqzvu" id="2fZol$t_1UZ" role="Sq$B$">
-        <property role="TrG5h" value="alarm light" />
-      </node>
-      <node concept="Sqzvu" id="1J1VyY6JMuY" role="Sq$B$">
-        <property role="TrG5h" value="display error/malfunction message" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="2fZol$t_1Zm" role="1X_0G_">
-      <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
-      <ref role="SrP08" node="2fZol$t_0PV" resolve="Speaker" />
-      <node concept="Sqzvu" id="2fZol$t_1Zn" role="Sq$B$">
-        <property role="TrG5h" value="alarm tone" />
+      <node concept="1XypPU" id="4tgWazNvmOp" role="2I3o71">
+        <ref role="SrP08" node="2fZol$t_0Rm" resolve="ACC User interface" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <node concept="Sqzvu" id="4tgWazNvmOq" role="Sq$B$">
+          <property role="TrG5h" value="desired speed" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="4tgWazNvlAH" role="1X_0GB">
       <property role="TrG5h" value="Laser Sensor" />
+      <node concept="Sq$B_" id="4tgWazNvmuN" role="2I3o71">
+        <ref role="SrP08" node="4tgWazNvlAH" resolve="Laser Sensor" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <node concept="Sqzvu" id="4tgWazNvmuO" role="Sq$B$">
+          <property role="TrG5h" value="laser input" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="4tgWazNvlJV" role="1X_0GB">
       <property role="TrG5h" value="Brake" />
+      <node concept="Sq$B_" id="4tgWazNvmkk" role="2I3o71">
+        <ref role="SrP08" node="4tgWazNvlJV" resolve="Brake" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <node concept="Sqzvu" id="4tgWazNvmkl" role="Sq$B$">
+          <property role="TrG5h" value="driver braking input " />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="4tgWazNvlKb" role="1X_0GB">
       <property role="TrG5h" value="Gas pedal" />
-    </node>
-    <node concept="1XypPU" id="4tgWazNvlR9" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <ref role="SrP07" node="4tgWazNvlJV" resolve="Brake" />
-      <node concept="Sqzvu" id="4tgWazNvlRa" role="Sq$B$">
-        <property role="TrG5h" value="control brake" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4tgWazNvlVq" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <ref role="SrP07" node="4tgWazNvlKb" resolve="Gas pedal" />
-      <node concept="Sqzvu" id="4tgWazNvlVr" role="Sq$B$">
-        <property role="TrG5h" value="control acceleration" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4tgWazNvlZO" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
-      <ref role="SrP07" node="4tgWazNvlJV" resolve="Brake" />
-      <node concept="Sqzvu" id="4tgWazNvlZP" role="Sq$B$">
-        <property role="TrG5h" value="push brake " />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4tgWazNvm4l" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0MX" resolve="Driver" />
-      <ref role="SrP07" node="4tgWazNvlKb" resolve="Gas pedal" />
-      <node concept="Sqzvu" id="4tgWazNvm4m" role="Sq$B$">
-        <property role="TrG5h" value="push acceleration " />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4tgWazNvmf0" role="1X_0G_">
-      <ref role="SrP08" node="4tgWazNvlKb" resolve="Gas pedal" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <node concept="Sqzvu" id="4tgWazNvmf1" role="Sq$B$">
-        <property role="TrG5h" value="driver acceleration input" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4tgWazNvmkk" role="1X_0G_">
-      <ref role="SrP08" node="4tgWazNvlJV" resolve="Brake" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <node concept="Sqzvu" id="4tgWazNvmkl" role="Sq$B$">
-        <property role="TrG5h" value="driver braking input " />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4tgWazNvmpN" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0LI" resolve="Environment&#10;" />
-      <ref role="SrP07" node="4tgWazNvlAH" resolve="Laser Sensor" />
-      <node concept="Sqzvu" id="4tgWazNvmpO" role="Sq$B$">
-        <property role="TrG5h" value="observation" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4tgWazNvmuN" role="1X_0G_">
-      <ref role="SrP08" node="4tgWazNvlAH" resolve="Laser Sensor" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <node concept="Sqzvu" id="4tgWazNvmuO" role="Sq$B$">
-        <property role="TrG5h" value="laser input" />
+      <node concept="Sq$B_" id="4tgWazNvmf0" role="2I3o71">
+        <ref role="SrP08" node="4tgWazNvlKb" resolve="Gas pedal" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <node concept="Sqzvu" id="4tgWazNvmf1" role="Sq$B$">
+          <property role="TrG5h" value="driver acceleration input" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="4tgWazNvm$v" role="1X_0GB">
       <property role="TrG5h" value="Speed Sensor" />
-    </node>
-    <node concept="Sq$B_" id="4tgWazNvmD2" role="1X_0G_">
-      <ref role="SrP08" node="4tgWazNvm$v" resolve="Speed Sensor" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <node concept="Sqzvu" id="4tgWazNvmD3" role="Sq$B$">
-        <property role="TrG5h" value="current speed" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4tgWazNvmIy" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Rm" resolve="ACC User interface" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <node concept="Sqzvu" id="4tgWazNvmIz" role="Sq$B$">
-        <property role="TrG5h" value="desired distance" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4tgWazNvmOp" role="1X_0G_">
-      <ref role="SrP08" node="2fZol$t_0Rm" resolve="ACC User interface" />
-      <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
-      <node concept="Sqzvu" id="4tgWazNvmOq" role="Sq$B$">
-        <property role="TrG5h" value="desired speed" />
+      <node concept="Sq$B_" id="4tgWazNvmD2" role="2I3o71">
+        <ref role="SrP08" node="4tgWazNvm$v" resolve="Speed Sensor" />
+        <ref role="SrP07" node="2fZol$t_0O3" resolve="ACC Control Unit" />
+        <node concept="Sqzvu" id="4tgWazNvmD3" role="Sq$B$">
+          <property role="TrG5h" value="current speed" />
+        </node>
       </node>
     </node>
   </node>

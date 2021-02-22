@@ -13,6 +13,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
+    <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -70,7 +71,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -97,18 +97,10 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
-        <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
@@ -241,16 +233,6 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="GA19r164P0" role="3cqZAp">
-          <node concept="3cpWs3" id="GA19r165cF" role="9lYJi">
-            <node concept="37vLTw" id="GA19r165e2" role="3uHU7w">
-              <ref role="3cqZAo" node="GA19r1644h" resolve="myFmd" />
-            </node>
-            <node concept="Xl_RD" id="GA19r164P2" role="3uHU7B">
-              <property role="Xl_RC" value="myFMD " />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="31P83hzGymh" role="3cqZAp">
           <node concept="2YIFZM" id="31P83hzGyqx" role="3clFbG">
             <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
@@ -278,24 +260,81 @@
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>
-  </node>
-  <node concept="13h7C7" id="1TeaL8RdKiL">
-    <ref role="13h7C2" to="g9vz:7j1NWs14dHd" resolve="DesignFMEARoot" />
-    <node concept="13hLZK" id="1TeaL8RdKiM" role="13h7CW">
-      <node concept="3clFbS" id="1TeaL8RdKiN" role="2VODD2">
-        <node concept="3clFbF" id="1TeaL8RdKiX" role="3cqZAp">
-          <node concept="2OqwBi" id="1TeaL8RdLUi" role="3clFbG">
-            <node concept="2OqwBi" id="1TeaL8RdKrH" role="2Oq$k0">
-              <node concept="13iPFW" id="1TeaL8RdKiW" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="1TeaL8RdKA8" role="2OqNvi">
-                <ref role="3TtcxE" to="g9vz:7j1NWs14dIk" resolve="dfmeas" />
-              </node>
+    <node concept="13i0hz" id="22gnu5EUB_W" role="13h7CS">
+      <property role="TrG5h" value="allFailureModesDefinedForThisComponent" />
+      <ref role="13i0hy" to="arip:22gnu5EU_ke" resolve="allFailureModesDefinedForThisComponent" />
+      <node concept="3Tm1VV" id="22gnu5EUB_X" role="1B3o_S" />
+      <node concept="3clFbS" id="22gnu5EUBA0" role="3clF47">
+        <node concept="3cpWs8" id="22gnu5EUBER" role="3cqZAp">
+          <node concept="3cpWsn" id="22gnu5EUBES" role="3cpWs9">
+            <property role="TrG5h" value="fmds" />
+            <node concept="2I9FWS" id="22gnu5EUBET" role="1tU5fm">
+              <ref role="2I9WkF" to="g9vz:42QGQFVn62A" resolve="ComponentFailureModesDefinition" />
             </node>
-            <node concept="WFELt" id="1TeaL8RdNhB" role="2OqNvi">
-              <ref role="1A0vxQ" to="g9vz:42QGQFVnsKw" resolve="DesignFMEAEmptyLine" />
+            <node concept="2OqwBi" id="22gnu5EUBEU" role="33vP2m">
+              <node concept="2OqwBi" id="22gnu5EUBEV" role="2Oq$k0">
+                <node concept="13iPFW" id="22gnu5EUBEW" role="2Oq$k0" />
+                <node concept="I4A8Y" id="22gnu5EUBEX" role="2OqNvi" />
+              </node>
+              <node concept="1j9C0f" id="22gnu5EUBEY" role="2OqNvi">
+                <ref role="1j9C0d" to="g9vz:42QGQFVn62A" resolve="ComponentFailureModesDefinition" />
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="22gnu5EUExZ" role="3cqZAp">
+          <node concept="2OqwBi" id="22gnu5EUEy1" role="3clFbG">
+            <node concept="2OqwBi" id="22gnu5EUEy2" role="2Oq$k0">
+              <node concept="37vLTw" id="22gnu5EUEy3" role="2Oq$k0">
+                <ref role="3cqZAo" node="22gnu5EUBES" resolve="fmds" />
+              </node>
+              <node concept="1z4cxt" id="22gnu5EUEy4" role="2OqNvi">
+                <node concept="1bVj0M" id="22gnu5EUEy5" role="23t8la">
+                  <node concept="3clFbS" id="22gnu5EUEy6" role="1bW5cS">
+                    <node concept="3clFbF" id="22gnu5EUEy7" role="3cqZAp">
+                      <node concept="3clFbC" id="22gnu5EUEy8" role="3clFbG">
+                        <node concept="2OqwBi" id="22gnu5EUEy9" role="3uHU7w">
+                          <node concept="2OqwBi" id="22gnu5EUEya" role="2Oq$k0">
+                            <node concept="2OqwBi" id="22gnu5EUEyb" role="2Oq$k0">
+                              <node concept="13iPFW" id="22gnu5EUEyc" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="22gnu5EUEyd" role="2OqNvi">
+                                <ref role="3Tt5mk" to="g9vz:7j1NWs11KvH" resolve="comp" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="22gnu5EUEye" role="2OqNvi">
+                              <ref role="3Tt5mk" to="3whv:7RhjhI7$liY" resolve="interfaceRef" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="22gnu5EUEyf" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="22gnu5EUEyg" role="3uHU7B">
+                          <node concept="37vLTw" id="22gnu5EUEyh" role="2Oq$k0">
+                            <ref role="3cqZAo" node="22gnu5EUEyj" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="22gnu5EUEyi" role="2OqNvi">
+                            <ref role="3Tt5mk" to="g9vz:42QGQFVn62G" resolve="interface" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="22gnu5EUEyj" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="22gnu5EUEyk" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="22gnu5EUEyl" role="2OqNvi">
+              <ref role="3TtcxE" to="g9vz:42QGQFVncmK" resolve="failureModes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="22gnu5EUBA1" role="3clF45">
+        <ref role="2I9WkF" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
       </node>
     </node>
   </node>

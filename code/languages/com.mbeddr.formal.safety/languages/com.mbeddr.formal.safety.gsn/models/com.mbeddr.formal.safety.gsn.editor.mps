@@ -2908,6 +2908,31 @@
         <property role="1lJzqX" value="10" />
       </node>
     </node>
+    <node concept="14StLt" id="7Jm8RM1kIhz" role="V601i">
+      <property role="TrG5h" value="GSNTextualNotationsTextStyle" />
+      <node concept="VSNWy" id="7Jm8RM1kJ4v" role="3F10Kt">
+        <node concept="1cFabM" id="7Jm8RM1kJ4z" role="1d8cEk">
+          <node concept="3clFbS" id="7Jm8RM1kJ4$" role="2VODD2">
+            <node concept="3clFbF" id="7Jm8RM1kJdD" role="3cqZAp">
+              <node concept="3cpWsd" id="7Jm8RM1kLHX" role="3clFbG">
+                <node concept="3cmrfG" id="7Jm8RM1kLI1" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="7Jm8RM1kKgk" role="3uHU7B">
+                  <node concept="2YIFZM" id="7Jm8RM1kK1z" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="7Jm8RM1kL11" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="PKFIW" id="65Lrkjj1Rgv">
     <property role="TrG5h" value="GoalTextArea" />
@@ -3521,7 +3546,7 @@
         </node>
         <node concept="s8t4o" id="4mOCK0sD1eQ" role="2SWKFX">
           <property role="28Zw97" value="true" />
-          <ref role="28F8cf" to="tpck:gw2VY9q" resolve="BaseConcept" />
+          <ref role="28F8cf" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
           <node concept="s8sZD" id="4mOCK0sD1eS" role="sbcd9">
             <node concept="3clFbS" id="4mOCK0sD1eT" role="2VODD2">
               <node concept="3clFbF" id="6G8t3lLuwJr" role="3cqZAp">
@@ -3622,6 +3647,7 @@
         <node concept="s8t4o" id="4mOCK0sCq4j" role="2SWKFX">
           <property role="28Zw97" value="true" />
           <ref role="28F8cf" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+          <ref role="1k5W1q" node="7Jm8RM1kIhz" resolve="GSNTextualNotationsTextStyle" />
           <node concept="s8sZD" id="4mOCK0sCq4l" role="sbcd9">
             <node concept="3clFbS" id="4mOCK0sCq4m" role="2VODD2">
               <node concept="3clFbF" id="6G8t3lLw9Sy" role="3cqZAp">
@@ -4948,15 +4974,16 @@
         <node concept="3F0ifn" id="5uFV_KKC5Zj" role="3EZMnx">
           <property role="3F0ifm" value="--" />
         </node>
-        <node concept="1HlG4h" id="5uFV_KKCs0N" role="3EZMnx">
-          <node concept="1HfYo3" id="5uFV_KKCs0P" role="1HlULh">
-            <node concept="3TQlhw" id="5uFV_KKCs0R" role="1Hhtcw">
-              <node concept="3clFbS" id="5uFV_KKCs0T" role="2VODD2">
-                <node concept="3clFbF" id="4ySbu0CcGgF" role="3cqZAp">
-                  <node concept="2YIFZM" id="4ySbu0CcGgG" role="3clFbG">
+        <node concept="1HlG4h" id="7Jm8RM1kNJI" role="3EZMnx">
+          <ref role="1k5W1q" node="7Jm8RM1kIhz" resolve="GSNTextualNotationsTextStyle" />
+          <node concept="1HfYo3" id="7Jm8RM1kNJJ" role="1HlULh">
+            <node concept="3TQlhw" id="7Jm8RM1kNJK" role="1Hhtcw">
+              <node concept="3clFbS" id="7Jm8RM1kNJL" role="2VODD2">
+                <node concept="3clFbF" id="7Jm8RM1kNJM" role="3cqZAp">
+                  <node concept="2YIFZM" id="7Jm8RM1kNJN" role="3clFbG">
                     <ref role="1Pybhc" node="4ySbu0Cc_cG" resolve="TextualDescriptionUtils" />
                     <ref role="37wK5l" node="4ySbu0Cc_kd" resolve="getText" />
-                    <node concept="pncrf" id="4ySbu0CcGgH" role="37wK5m" />
+                    <node concept="pncrf" id="7Jm8RM1kNJO" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -5863,6 +5890,7 @@
         <property role="3F0ifm" value="--" />
       </node>
       <node concept="1HlG4h" id="362wVFMda1m" role="3EZMnx">
+        <ref role="1k5W1q" node="7Jm8RM1kIhz" resolve="GSNTextualNotationsTextStyle" />
         <node concept="1HfYo3" id="362wVFMda1n" role="1HlULh">
           <node concept="3TQlhw" id="362wVFMda1o" role="1Hhtcw">
             <node concept="3clFbS" id="362wVFMda1p" role="2VODD2">
@@ -6351,15 +6379,16 @@
           <node concept="3F0ifn" id="4q8AAJKJYpF" role="3EZMnx">
             <property role="3F0ifm" value="--" />
           </node>
-          <node concept="1HlG4h" id="4q8AAJKJYpG" role="3EZMnx">
-            <node concept="1HfYo3" id="4q8AAJKJYpH" role="1HlULh">
-              <node concept="3TQlhw" id="4q8AAJKJYpI" role="1Hhtcw">
-                <node concept="3clFbS" id="4q8AAJKJYpJ" role="2VODD2">
-                  <node concept="3clFbF" id="4ySbu0CcDAL" role="3cqZAp">
-                    <node concept="2YIFZM" id="4ySbu0CcDAM" role="3clFbG">
+          <node concept="1HlG4h" id="7Jm8RM1kPY8" role="3EZMnx">
+            <ref role="1k5W1q" node="7Jm8RM1kIhz" resolve="GSNTextualNotationsTextStyle" />
+            <node concept="1HfYo3" id="7Jm8RM1kPY9" role="1HlULh">
+              <node concept="3TQlhw" id="7Jm8RM1kPYa" role="1Hhtcw">
+                <node concept="3clFbS" id="7Jm8RM1kPYb" role="2VODD2">
+                  <node concept="3clFbF" id="7Jm8RM1kPYc" role="3cqZAp">
+                    <node concept="2YIFZM" id="7Jm8RM1kPYd" role="3clFbG">
                       <ref role="1Pybhc" node="4ySbu0Cc_cG" resolve="TextualDescriptionUtils" />
                       <ref role="37wK5l" node="4ySbu0Cc_kd" resolve="getText" />
-                      <node concept="pncrf" id="4ySbu0CcDAN" role="37wK5m" />
+                      <node concept="pncrf" id="7Jm8RM1kPYe" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -6653,6 +6682,7 @@
             <property role="3F0ifm" value="--" />
           </node>
           <node concept="1HlG4h" id="4q8AAJKK1e9" role="3EZMnx">
+            <ref role="1k5W1q" node="7Jm8RM1kIhz" resolve="GSNTextualNotationsTextStyle" />
             <node concept="1HfYo3" id="4q8AAJKK1ea" role="1HlULh">
               <node concept="3TQlhw" id="4q8AAJKK1eb" role="1Hhtcw">
                 <node concept="3clFbS" id="4q8AAJKK1ec" role="2VODD2">
@@ -9172,6 +9202,7 @@
           <property role="3F0ifm" value="--" />
         </node>
         <node concept="1HlG4h" id="7olAlesPlJa" role="3EZMnx">
+          <ref role="1k5W1q" node="7Jm8RM1kIhz" resolve="GSNTextualNotationsTextStyle" />
           <node concept="1HfYo3" id="7olAlesPlJb" role="1HlULh">
             <node concept="3TQlhw" id="7olAlesPlJc" role="1Hhtcw">
               <node concept="3clFbS" id="7olAlesPlJd" role="2VODD2">

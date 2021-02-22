@@ -20,7 +20,8 @@
     <import index="ii8j" ref="r:a06544ed-39eb-44c0-b516-bb222deb41dc(com.fasten.safety.hiphops.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="7wf3" ref="r:c49134f0-ff6f-4ef4-ad9f-10c1a3f47c1a(com.mbeddr.formal.base.arch.behavior)" />
-    <import index="wid" ref="r:f00673e3-aa4b-47ab-b1ab-32f93476e624(com.fasten.safety.hiphops.arch.util)" implicit="true" />
+    <import index="wid" ref="r:f00673e3-aa4b-47ab-b1ab-32f93476e624(com.fasten.safety.hiphops.arch.util)" />
+    <import index="h4ob" ref="r:c1b5027c-c0fd-4ce6-a884-7934c1083045(com.fasten.safety.hiphops.util)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -46,11 +47,11 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -104,9 +105,7 @@
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -130,23 +129,6 @@
     <ref role="13h7C2" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
     <node concept="13hLZK" id="1TeaL8Rem0G" role="13h7CW">
       <node concept="3clFbS" id="1TeaL8Rem0H" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="1TeaL8Rem0Q" role="13h7CS">
-      <property role="TrG5h" value="computeFaultTree" />
-      <ref role="13i0hy" to="lr73:1TeaL8RddbY" resolve="computeFaultTree" />
-      <node concept="3Tm1VV" id="1TeaL8Rem0R" role="1B3o_S" />
-      <node concept="3clFbS" id="1TeaL8Rem0U" role="3clF47">
-        <node concept="3clFbF" id="62cfieELYCo" role="3cqZAp">
-          <node concept="2YIFZM" id="62cfieEN6KE" role="3clFbG">
-            <ref role="37wK5l" to="wid:62cfieEKYKf" resolve="computeFaultTrees" />
-            <ref role="1Pybhc" to="wid:62cfieEKYIv" resolve="FailurePropagationLogic2FaultTreeConverter" />
-            <node concept="13iPFW" id="62cfieELYDx" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="1TeaL8Rem0V" role="3clF45">
-        <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
-      </node>
     </node>
     <node concept="13i0hz" id="1TeaL8ReWRF" role="13h7CS">
       <property role="TrG5h" value="getScope" />
@@ -215,19 +197,22 @@
     </node>
   </node>
   <node concept="13h7C7" id="62cfieEPVj1">
-    <ref role="13h7C2" to="zsc5:1TeaL8RefrX" resolve="FailureModeRefExpression" />
-    <node concept="13i0hz" id="62cfieEPVjc" role="13h7CS">
+    <ref role="13h7C2" to="zsc5:1TeaL8RefrX" resolve="PortFailureModeRefExpression" />
+    <node concept="13hLZK" id="62cfieEPVj2" role="13h7CW">
+      <node concept="3clFbS" id="62cfieEPVj3" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1f_hJh28xoj" role="13h7CS">
       <property role="TrG5h" value="getName" />
-      <node concept="3Tm1VV" id="62cfieEPVjd" role="1B3o_S" />
-      <node concept="17QB3L" id="62cfieEPVjs" role="3clF45" />
-      <node concept="3clFbS" id="62cfieEPVjf" role="3clF47">
+      <ref role="13i0hy" to="lr73:62cfieEPVjc" resolve="getName" />
+      <node concept="3Tm1VV" id="1f_hJh28xok" role="1B3o_S" />
+      <node concept="3clFbS" id="1f_hJh28xon" role="3clF47">
         <node concept="3clFbF" id="62cfieEPVjS" role="3cqZAp">
           <node concept="3cpWs3" id="62cfieEPXod" role="3clFbG">
             <node concept="2OqwBi" id="62cfieEPXJ5" role="3uHU7w">
               <node concept="2OqwBi" id="62cfieEPXzD" role="2Oq$k0">
                 <node concept="13iPFW" id="62cfieEPXwF" role="2Oq$k0" />
                 <node concept="3TrEf2" id="62cfieEPX_n" role="2OqNvi">
-                  <ref role="3Tt5mk" to="zsc5:1TeaL8RefrY" resolve="failureMode" />
+                  <ref role="3Tt5mk" to="ii8j:1TeaL8RefrY" resolve="failureMode" />
                 </node>
               </node>
               <node concept="3TrcHB" id="62cfieEPXW5" role="2OqNvi">
@@ -251,16 +236,15 @@
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="62cfieEPXer" role="3uHU7w">
-                <property role="Xl_RC" value="__" />
+              <node concept="10M0yZ" id="5N87GIKnhF1" role="3uHU7w">
+                <ref role="3cqZAo" to="h4ob:5N87GIKneo_" resolve="PORT_FAILURE_MODE_DELIMIMTER" />
+                <ref role="1PxDUh" to="h4ob:1f_hJh2bMQW" resolve="ModelAccessorBase" />
               </node>
             </node>
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13hLZK" id="62cfieEPVj2" role="13h7CW">
-      <node concept="3clFbS" id="62cfieEPVj3" role="2VODD2" />
+      <node concept="17QB3L" id="1f_hJh28xoo" role="3clF45" />
     </node>
   </node>
 </model>

@@ -51,6 +51,8 @@
   <node concept="1TIwiD" id="48_A4oY40ha">
     <property role="EcuMT" value="4766383208097907786" />
     <property role="TrG5h" value="Weight" />
+    <property role="34LRSv" value="weight" />
+    <property role="R4oN_" value="represents the weight of this leg for confidence" />
     <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     <node concept="1TJgyi" id="48_A4oY40ig" role="1TKVEl">
       <property role="IQ2nx" value="4766383208097907856" />

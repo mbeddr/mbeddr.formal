@@ -2,6 +2,7 @@
 <model ref="r:d7ee43bf-4f3a-4083-9d0e-5a60aedfe5b8(com.fasten.safety.fmea.sandbox._010_smoke_dfmea)">
   <persistence version="9" />
   <languages>
+    <use id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea" version="0" />
     <devkit ref="bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
@@ -18,6 +19,7 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="3491732495478955378" name="com.fasten.safety.fmea.structure.FailureEffectDefinitionBase" flags="ng" index="1jKNP6">
         <child id="4663111736253957550" name="description" index="2VUvr4" />
       </concept>
@@ -33,6 +35,9 @@
       </concept>
       <concept id="8413234032527459382" name="com.fasten.safety.fmea.structure.FMEABase" flags="ng" index="1PLKJL">
         <child id="8413234032527501984" name="subjects" index="1PLElB" />
+      </concept>
+      <concept id="8413234032528120653" name="com.fasten.safety.fmea.structure.DesignFMEARoot" flags="ng" index="1POhia">
+        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
       </concept>
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
@@ -60,7 +65,6 @@
         <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
       </concept>
       <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
-      <concept id="4663111736253860896" name="com.fasten.safety.fmea.arch.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="8413234032527476648" name="com.fasten.safety.fmea.arch.structure.ComponentInstanceSubject" flags="ng" index="1PLGxJ">
         <reference id="8413234032527476717" name="comp" index="1PLGwE" />
       </concept>
@@ -69,9 +73,6 @@
       </concept>
       <concept id="8413234032528056373" name="com.fasten.safety.fmea.arch.structure.ComponentEffect" flags="ng" index="1PNyZM">
         <reference id="4663111736254126539" name="effect" index="2VPQEx" />
-      </concept>
-      <concept id="8413234032528120653" name="com.fasten.safety.fmea.arch.structure.DesignFMEARoot" flags="ng" index="1POhia">
-        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -111,6 +112,69 @@
       <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
     </language>
   </registry>
+  <node concept="2HdtXS" id="42QGQFVn3B6">
+    <property role="TrG5h" value="_010_first_architecture" />
+    <node concept="2dDAVa" id="42QGQFVn3Bd" role="2HcuB8">
+      <property role="TrG5h" value="Sender" />
+      <node concept="3UnI9n" id="42QGQFVn3Bg" role="3UnI90">
+        <property role="TrG5h" value="data" />
+        <node concept="dhpfj" id="42QGQFVn3B_" role="3UnI80">
+          <node concept="2IPVmt" id="42QGQFVn3C3" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="42QGQFVn3CB" role="dhpfn">
+            <property role="2IPVms" value="10" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="42QGQFVn3D7" role="2HcuB8" />
+    <node concept="2dDAVa" id="42QGQFVn3Dm" role="2HcuB8">
+      <property role="TrG5h" value="Receiver" />
+      <node concept="3UnI81" id="42QGQFVn3Dv" role="3UnI9m">
+        <property role="TrG5h" value="data" />
+        <node concept="dhpfj" id="42QGQFVn3DR" role="3UnI80">
+          <node concept="2IPVmt" id="42QGQFVn3DQ" role="dhpfi">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="42QGQFVn3El" role="dhpfn">
+            <property role="2IPVms" value="10" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="42QGQFVn3EP" role="2HcuB8" />
+    <node concept="2dDAV0" id="42QGQFVn3Fg" role="2HcuB8">
+      <property role="TrG5h" value="SenderReceiverSystem" />
+      <node concept="3Ug1AV" id="42QGQFVn3FJ" role="3UgYNK">
+        <property role="TrG5h" value="s" />
+        <node concept="3Ug1AZ" id="42QGQFVn3FI" role="3Ug1A_">
+          <ref role="3Ug1AY" node="42QGQFVn3Bd" resolve="Sender" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="42QGQFVn3FY" role="3UgYNK">
+        <property role="TrG5h" value="r" />
+        <node concept="3Ug1AZ" id="42QGQFVn3FW" role="3Ug1A_">
+          <ref role="3Ug1AY" node="42QGQFVn3Dm" resolve="Receiver" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="42QGQFVn3Gf" role="3UgYNK">
+        <node concept="3Ug1GC" id="42QGQFVn3Gn" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="42QGQFVn3Bg" resolve="data" />
+          <node concept="3Ug1GJ" id="42QGQFVn3Gm" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="42QGQFVn3FJ" resolve="s" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="42QGQFVn3GH" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="42QGQFVn3Dv" resolve="data" />
+          <node concept="3Ug1GJ" id="42QGQFVn3GG" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="42QGQFVn3FY" resolve="r" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="42QGQFVn3Fv" role="2HcuB8" />
+  </node>
   <node concept="1POhia" id="42QGQFVmZGD">
     <property role="TrG5h" value="_010_first_dfmea" />
     <node concept="2VUvrO" id="42QGQFVotAs" role="1POhhj">
@@ -194,69 +258,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2HdtXS" id="42QGQFVn3B6">
-    <property role="TrG5h" value="_010_first_architecture" />
-    <node concept="2dDAVa" id="42QGQFVn3Bd" role="2HcuB8">
-      <property role="TrG5h" value="Sender" />
-      <node concept="3UnI9n" id="42QGQFVn3Bg" role="3UnI90">
-        <property role="TrG5h" value="data" />
-        <node concept="dhpfj" id="42QGQFVn3B_" role="3UnI80">
-          <node concept="2IPVmt" id="42QGQFVn3C3" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="42QGQFVn3CB" role="dhpfn">
-            <property role="2IPVms" value="10" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SQmWS" id="42QGQFVn3D7" role="2HcuB8" />
-    <node concept="2dDAVa" id="42QGQFVn3Dm" role="2HcuB8">
-      <property role="TrG5h" value="Receiver" />
-      <node concept="3UnI81" id="42QGQFVn3Dv" role="3UnI9m">
-        <property role="TrG5h" value="data" />
-        <node concept="dhpfj" id="42QGQFVn3DR" role="3UnI80">
-          <node concept="2IPVmt" id="42QGQFVn3DQ" role="dhpfi">
-            <property role="2IPVms" value="0" />
-          </node>
-          <node concept="2IPVmt" id="42QGQFVn3El" role="dhpfn">
-            <property role="2IPVms" value="10" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SQmWS" id="42QGQFVn3EP" role="2HcuB8" />
-    <node concept="2dDAV0" id="42QGQFVn3Fg" role="2HcuB8">
-      <property role="TrG5h" value="SenderReceiverSystem" />
-      <node concept="3Ug1AV" id="42QGQFVn3FJ" role="3UgYNK">
-        <property role="TrG5h" value="s" />
-        <node concept="3Ug1AZ" id="42QGQFVn3FI" role="3Ug1A_">
-          <ref role="3Ug1AY" node="42QGQFVn3Bd" resolve="Sender" />
-        </node>
-      </node>
-      <node concept="3Ug1AV" id="42QGQFVn3FY" role="3UgYNK">
-        <property role="TrG5h" value="r" />
-        <node concept="3Ug1AZ" id="42QGQFVn3FW" role="3Ug1A_">
-          <ref role="3Ug1AY" node="42QGQFVn3Dm" resolve="Receiver" />
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="42QGQFVn3Gf" role="3UgYNK">
-        <node concept="3Ug1GC" id="42QGQFVn3Gn" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="42QGQFVn3Bg" resolve="data" />
-          <node concept="3Ug1GJ" id="42QGQFVn3Gm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="42QGQFVn3FJ" resolve="s" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="42QGQFVn3GH" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="42QGQFVn3Dv" resolve="data" />
-          <node concept="3Ug1GJ" id="42QGQFVn3GG" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="42QGQFVn3FY" resolve="r" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SQmWS" id="42QGQFVn3Fv" role="2HcuB8" />
   </node>
 </model>
 

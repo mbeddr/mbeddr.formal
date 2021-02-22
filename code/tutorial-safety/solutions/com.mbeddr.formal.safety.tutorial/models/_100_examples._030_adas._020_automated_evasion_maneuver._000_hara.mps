@@ -31,14 +31,15 @@
         <child id="2004523000582413323" name="text" index="1E0uc7" />
       </concept>
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
-      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU" />
+      <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU">
+        <child id="1941765291767695615" name="startingConnections" index="2I3o71" />
+      </concept>
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
         <reference id="4185693763139125834" name="target" index="SrP07" />
         <reference id="4185693763139125829" name="source" index="SrP08" />
         <child id="4185693763139328937" name="actions" index="Sq$B$" />
       </concept>
       <concept id="4286195509387830509" name="com.mbeddr.formal.safety.stamp.structure.FunctionalControlStructure" flags="ng" index="1X_0jQ">
-        <child id="4286195509387832126" name="connections" index="1X_0G_" />
         <child id="4286195509387832124" name="content" index="1X_0GB" />
       </concept>
       <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
@@ -124,6 +125,27 @@
     <property role="TrG5h" value="_100_control_structure" />
     <node concept="1XyJaU" id="5tEenuYOMfd" role="1X_0GB">
       <property role="TrG5h" value="CEM Planner" />
+      <node concept="1XypPU" id="5tEenuYOMfF" role="2I3o71">
+        <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <ref role="SrP07" node="5tEenuYOMfq" resolve="Motion Control" />
+        <node concept="Sqzvu" id="5tEenuYOMfG" role="Sq$B$">
+          <property role="TrG5h" value="CEM Trajectory" />
+        </node>
+      </node>
+      <node concept="Sq$B_" id="_wUu$TX726" role="2I3o71">
+        <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <ref role="SrP07" node="_wUu$TX70r" resolve="Driver" />
+        <node concept="Sqzvu" id="_wUu$TX727" role="Sq$B$">
+          <property role="TrG5h" value="CEM Function Active" />
+        </node>
+      </node>
+      <node concept="1XypPU" id="41_NtXJpcYK" role="2I3o71">
+        <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <ref role="SrP07" node="41_NtXJpcXR" resolve="Cloud-based Infos" />
+        <node concept="Sqzvu" id="41_NtXJpcYL" role="Sq$B$">
+          <property role="TrG5h" value="Vehicle Position" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="5tEenuYOMfh" role="lGtFl">
       <node concept="37mRIm" id="5tEenuYOMfi" role="37mRID">
@@ -328,86 +350,65 @@
     <node concept="1XyJaU" id="5tEenuYOMfq" role="1X_0GB">
       <property role="TrG5h" value="Motion Control" />
     </node>
-    <node concept="1XypPU" id="5tEenuYOMfF" role="1X_0G_">
-      <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
-      <ref role="SrP07" node="5tEenuYOMfq" resolve="Motion Control" />
-      <node concept="Sqzvu" id="5tEenuYOMfG" role="Sq$B$">
-        <property role="TrG5h" value="CEM Trajectory2144312" />
-      </node>
-    </node>
     <node concept="1XyJaU" id="_wUu$TX6YW" role="1X_0GB">
       <property role="TrG5h" value="Perception" />
-    </node>
-    <node concept="1XypPU" id="_wUu$TX6Zp" role="1X_0G_">
-      <ref role="SrP08" node="_wUu$TX6YW" resolve="Perception" />
-      <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
-      <node concept="Sqzvu" id="_wUu$TX6Zq" role="Sq$B$">
-        <property role="TrG5h" value="Tracked Traffic Actors" />
-      </node>
-      <node concept="Sqzvu" id="_wUu$TYGPd" role="Sq$B$">
-        <property role="TrG5h" value="Obstacle Detection" />
+      <node concept="1XypPU" id="_wUu$TX6Zp" role="2I3o71">
+        <ref role="SrP08" node="_wUu$TX6YW" resolve="Perception" />
+        <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <node concept="Sqzvu" id="_wUu$TX6Zq" role="Sq$B$">
+          <property role="TrG5h" value="Tracked Traffic Actors" />
+        </node>
+        <node concept="Sqzvu" id="_wUu$TYGPd" role="Sq$B$">
+          <property role="TrG5h" value="Obstacle Detection" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="_wUu$TX70r" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
-    </node>
-    <node concept="1XypPU" id="_wUu$TX70T" role="1X_0G_">
-      <ref role="SrP08" node="_wUu$TX70r" resolve="Driver" />
-      <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
-      <node concept="Sqzvu" id="3I9hGreIT7k" role="Sq$B$">
-        <property role="TrG5h" value="Activate CEM Function" />
-      </node>
-      <node concept="Sqzvu" id="41_NtXJu_8J" role="Sq$B$">
-        <property role="TrG5h" value="Deactivate CEM Function" />
-      </node>
-      <node concept="Sqzvu" id="_wUu$TYcY1" role="Sq$B$">
-        <property role="TrG5h" value="Driver Monitoring Data" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="_wUu$TX726" role="1X_0G_">
-      <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
-      <ref role="SrP07" node="_wUu$TX70r" resolve="Driver" />
-      <node concept="Sqzvu" id="_wUu$TX727" role="Sq$B$">
-        <property role="TrG5h" value="CEM Function Active" />
+      <node concept="1XypPU" id="_wUu$TX70T" role="2I3o71">
+        <ref role="SrP08" node="_wUu$TX70r" resolve="Driver" />
+        <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <node concept="Sqzvu" id="3I9hGreIT7k" role="Sq$B$">
+          <property role="TrG5h" value="Activate CEM Function" />
+        </node>
+        <node concept="Sqzvu" id="41_NtXJu_8J" role="Sq$B$">
+          <property role="TrG5h" value="Deactivate CEM Function" />
+        </node>
+        <node concept="Sqzvu" id="_wUu$TYcY1" role="Sq$B$">
+          <property role="TrG5h" value="Driver Monitoring Data" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="_wUu$U0G1Z" role="1X_0GB">
       <property role="TrG5h" value="Sensing" />
-    </node>
-    <node concept="1XypPU" id="_wUu$U0G24" role="1X_0G_">
-      <ref role="SrP08" node="_wUu$U0G1Z" resolve="Sensing" />
-      <ref role="SrP07" node="_wUu$TX6YW" resolve="Perception" />
-      <node concept="Sqzvu" id="_wUu$U0G25" role="Sq$B$">
-        <property role="TrG5h" value="Camera Data" />
-      </node>
-      <node concept="Sqzvu" id="_wUu$U0G2k" role="Sq$B$">
-        <property role="TrG5h" value="LIDAR Data" />
-      </node>
-      <node concept="Sqzvu" id="41_NtXJnxc0" role="Sq$B$">
-        <property role="TrG5h" value="Radar Data" />
-      </node>
-      <node concept="Sqzvu" id="41_NtXJnxc5" role="Sq$B$">
-        <property role="TrG5h" value="GNSS Data" />
+      <node concept="1XypPU" id="_wUu$U0G24" role="2I3o71">
+        <ref role="SrP08" node="_wUu$U0G1Z" resolve="Sensing" />
+        <ref role="SrP07" node="_wUu$TX6YW" resolve="Perception" />
+        <node concept="Sqzvu" id="_wUu$U0G25" role="Sq$B$">
+          <property role="TrG5h" value="Camera Data" />
+        </node>
+        <node concept="Sqzvu" id="_wUu$U0G2k" role="Sq$B$">
+          <property role="TrG5h" value="LIDAR Data" />
+        </node>
+        <node concept="Sqzvu" id="41_NtXJnxc0" role="Sq$B$">
+          <property role="TrG5h" value="Radar Data" />
+        </node>
+        <node concept="Sqzvu" id="41_NtXJnxc5" role="Sq$B$">
+          <property role="TrG5h" value="GNSS Data" />
+        </node>
       </node>
     </node>
     <node concept="1XyJaU" id="41_NtXJpcXR" role="1X_0GB">
       <property role="TrG5h" value="Cloud-based Infos" />
-    </node>
-    <node concept="1XypPU" id="41_NtXJpcYK" role="1X_0G_">
-      <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
-      <ref role="SrP07" node="41_NtXJpcXR" resolve="Cloud-based Infos" />
-      <node concept="Sqzvu" id="41_NtXJpcYL" role="Sq$B$">
-        <property role="TrG5h" value="Vehicle Position" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="41_NtXJpd0r" role="1X_0G_">
-      <ref role="SrP08" node="41_NtXJpcXR" resolve="Cloud-based Infos" />
-      <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
-      <node concept="Sqzvu" id="41_NtXJpd0s" role="Sq$B$">
-        <property role="TrG5h" value="Road Construction Info" />
-      </node>
-      <node concept="Sqzvu" id="41_NtXJpd2x" role="Sq$B$">
-        <property role="TrG5h" value="Road Data" />
+      <node concept="Sq$B_" id="41_NtXJpd0r" role="2I3o71">
+        <ref role="SrP08" node="41_NtXJpcXR" resolve="Cloud-based Infos" />
+        <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <node concept="Sqzvu" id="41_NtXJpd0s" role="Sq$B$">
+          <property role="TrG5h" value="Road Construction Info" />
+        </node>
+        <node concept="Sqzvu" id="41_NtXJpd2x" role="Sq$B$">
+          <property role="TrG5h" value="Road Data" />
+        </node>
       </node>
     </node>
   </node>
@@ -417,7 +418,7 @@
     <node concept="1E0nOG" id="5tEenuYOMgu" role="1E0n_e">
       <ref role="1E0nOH" node="5tEenuYOMfd" resolve="CEM Planner" />
       <node concept="1E0nOJ" id="5tEenuYOMgv" role="1E0nOC">
-        <ref role="1E0n_N" node="5tEenuYOMfG" resolve="CEM Trajectory2144312" />
+        <ref role="1E0n_N" node="5tEenuYOMfG" resolve="CEM Trajectory" />
         <node concept="1E0uc6" id="_wUu$TYGPy" role="1E0ucd">
           <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_01" />
           <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />

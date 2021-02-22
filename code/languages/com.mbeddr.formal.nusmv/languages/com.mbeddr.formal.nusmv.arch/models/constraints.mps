@@ -152,10 +152,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -456,6 +456,23 @@
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="4RNGGOMRcKH" role="37wK5m">
                 <property role="Xl_RC" value="jetbrains.mps.lang.test" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="SmAS9iq96x" role="3cqZAp">
+          <node concept="3clFbS" id="SmAS9iq96z" role="3clFbx">
+            <node concept="3cpWs6" id="SmAS9iqa0y" role="3cqZAp">
+              <node concept="3clFbT" id="SmAS9iqa7R" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="SmAS9iq9y9" role="3clFbw">
+            <node concept="2DD5aU" id="SmAS9iq9gw" role="2Oq$k0" />
+            <node concept="2Zo12i" id="SmAS9iq9Qa" role="2OqNvi">
+              <node concept="chp4Y" id="SmAS9iq9WP" role="2Zo12j">
+                <ref role="cht4Q" to="b19z:SmAS9in2NW" resolve="IGenericTraceLike" />
               </node>
             </node>
           </node>

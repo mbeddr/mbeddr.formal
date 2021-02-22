@@ -2,19 +2,20 @@
 <model ref="r:9e73f239-cf51-478a-abcd-90185f3a81b5(com.fasten.req.ontology.lib.wordnet)">
   <persistence version="9" />
   <languages>
-    <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="0" />
+    <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="1" />
+    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="-1" />
   </languages>
   <imports />
   <registry>
-    <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
-      <concept id="1743143573359761951" name="com.fasten.req.odd.structure.OntologyConceptRef" flags="ng" index="MFvB7">
+    <language id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology">
+      <concept id="1743143573359761951" name="com.fasten.req.ontology.structure.OntologyConceptRef" flags="ng" index="MFvB7">
         <reference id="1743143573359761952" name="ontologyConcept" index="MFvBS" />
       </concept>
-      <concept id="4312077340877652056" name="com.fasten.req.odd.structure.OntologyConcept" flags="ng" index="3SOpcA">
+      <concept id="4312077340877652056" name="com.fasten.req.ontology.structure.OntologyConcept" flags="ng" index="3SOpcA">
         <reference id="4312077340877652059" name="superConcept" index="3SOpc_" />
         <child id="2211008038588194073" name="attributes" index="2xew$1" />
       </concept>
-      <concept id="4312077340877652053" name="com.fasten.req.odd.structure.Ontology" flags="ng" index="3SOpcF">
+      <concept id="4312077340877652053" name="com.fasten.req.ontology.structure.Ontology" flags="ng" index="3SOpcF">
         <child id="4312077340877652119" name="concepts" index="3SOpfD" />
       </concept>
     </language>

@@ -11,6 +11,7 @@
     <import index="ahnd" ref="r:cd47ef34-90ac-4a4b-bbbb-26a12cc12207(com.mbeddr.formal.nusmv.sm.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -303,6 +304,23 @@
               <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="2obHvWSblXl" role="37wK5m">
                 <property role="Xl_RC" value="jetbrains.mps.lang.test" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="SmAS9in2O0" role="3cqZAp">
+          <node concept="3clFbS" id="SmAS9in2O1" role="3clFbx">
+            <node concept="3cpWs6" id="SmAS9in2O2" role="3cqZAp">
+              <node concept="3clFbT" id="SmAS9in2O3" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="SmAS9in2O4" role="3clFbw">
+            <node concept="2DD5aU" id="SmAS9in2Y$" role="2Oq$k0" />
+            <node concept="2Zo12i" id="SmAS9in3np" role="2OqNvi">
+              <node concept="chp4Y" id="SmAS9in3rb" role="2Zo12j">
+                <ref role="cht4Q" to="b19z:SmAS9in2NW" resolve="IGenericTraceLike" />
               </node>
             </node>
           </node>
