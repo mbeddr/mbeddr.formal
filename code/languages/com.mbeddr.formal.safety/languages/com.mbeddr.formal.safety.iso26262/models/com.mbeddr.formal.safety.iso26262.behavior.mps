@@ -73,11 +73,8 @@
       </concept>
     </language>
   </registry>
-  <node concept="13h7C7" id="55oVyA0kud8">
-    <ref role="13h7C2" to="1w8j:24PsEXFbC2f" resolve="ISO26262HazardousEvent" />
-    <node concept="13hLZK" id="55oVyA0kud9" role="13h7CW">
-      <node concept="3clFbS" id="55oVyA0kuda" role="2VODD2" />
-    </node>
+  <node concept="13h7C7" id="55oVyA0lgYi">
+    <ref role="13h7C2" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituation" />
     <node concept="13i0hz" id="55oVyA0kudj" role="13h7CS">
       <property role="TrG5h" value="computeASIL" />
       <node concept="3Tm1VV" id="55oVyA0kudk" role="1B3o_S" />
@@ -88,7 +85,7 @@
             <node concept="2OqwBi" id="55oVyA0kurQ" role="2Oq$k0">
               <node concept="13iPFW" id="55oVyA0kuea" role="2Oq$k0" />
               <node concept="3TrcHB" id="55oVyA0kuGa" role="2OqNvi">
-                <ref role="3TsBF5" to="1w8j:24PsEXFbNLB" resolve="controlability" />
+                <ref role="3TsBF5" to="1w8j:55oVyA0lgr2" resolve="controlability" />
               </node>
             </node>
             <node concept="21noJN" id="55oVyA0kv2C" role="2OqNvi">
@@ -104,7 +101,7 @@
                   <node concept="2OqwBi" id="55oVyA0kwZ6" role="2Oq$k0">
                     <node concept="13iPFW" id="55oVyA0kwLi" role="2Oq$k0" />
                     <node concept="3TrcHB" id="55oVyA0kxi9" role="2OqNvi">
-                      <ref role="3TsBF5" to="1w8j:24PsEXFbNL$" resolve="exposure" />
+                      <ref role="3TsBF5" to="1w8j:55oVyA0lgr1" resolve="exposure" />
                     </node>
                   </node>
                   <node concept="21noJN" id="55oVyA0kxDN" role="2OqNvi">
@@ -117,7 +114,7 @@
                   <node concept="2OqwBi" id="55oVyA0kvkm" role="2Oq$k0">
                     <node concept="13iPFW" id="55oVyA0kv6M" role="2Oq$k0" />
                     <node concept="3TrcHB" id="55oVyA0kvQD" role="2OqNvi">
-                      <ref role="3TsBF5" to="1w8j:24PsEXFbNLy" resolve="severity" />
+                      <ref role="3TsBF5" to="1w8j:55oVyA0lgr0" resolve="severity" />
                     </node>
                   </node>
                   <node concept="21noJN" id="55oVyA0kw9K" role="2OqNvi">
@@ -141,7 +138,7 @@
                   <node concept="2OqwBi" id="55oVyA0kxR_" role="2Oq$k0">
                     <node concept="13iPFW" id="55oVyA0kxRA" role="2Oq$k0" />
                     <node concept="3TrcHB" id="55oVyA0kxRB" role="2OqNvi">
-                      <ref role="3TsBF5" to="1w8j:24PsEXFbNL$" resolve="exposure" />
+                      <ref role="3TsBF5" to="1w8j:55oVyA0lgr1" resolve="exposure" />
                     </node>
                   </node>
                   <node concept="21noJN" id="55oVyA0kxRC" role="2OqNvi">
@@ -154,7 +151,7 @@
                   <node concept="2OqwBi" id="55oVyA0kxRF" role="2Oq$k0">
                     <node concept="13iPFW" id="55oVyA0kxRG" role="2Oq$k0" />
                     <node concept="3TrcHB" id="55oVyA0kxRH" role="2OqNvi">
-                      <ref role="3TsBF5" to="1w8j:24PsEXFbNLy" resolve="severity" />
+                      <ref role="3TsBF5" to="1w8j:55oVyA0lgr0" resolve="severity" />
                     </node>
                   </node>
                   <node concept="21noJN" id="55oVyA0kxRI" role="2OqNvi">
@@ -178,7 +175,7 @@
                   <node concept="2OqwBi" id="55oVyA0ky1u" role="2Oq$k0">
                     <node concept="13iPFW" id="55oVyA0ky1v" role="2Oq$k0" />
                     <node concept="3TrcHB" id="55oVyA0ky1w" role="2OqNvi">
-                      <ref role="3TsBF5" to="1w8j:24PsEXFbNL$" resolve="exposure" />
+                      <ref role="3TsBF5" to="1w8j:55oVyA0lgr1" resolve="exposure" />
                     </node>
                   </node>
                   <node concept="21noJN" id="55oVyA0ky1x" role="2OqNvi">
@@ -191,7 +188,7 @@
                   <node concept="2OqwBi" id="55oVyA0ky1$" role="2Oq$k0">
                     <node concept="13iPFW" id="55oVyA0ky1_" role="2Oq$k0" />
                     <node concept="3TrcHB" id="55oVyA0ky1A" role="2OqNvi">
-                      <ref role="3TsBF5" to="1w8j:24PsEXFbNLy" resolve="severity" />
+                      <ref role="3TsBF5" to="1w8j:55oVyA0lgr0" resolve="severity" />
                     </node>
                   </node>
                   <node concept="21noJN" id="55oVyA0ky1B" role="2OqNvi">
@@ -222,6 +219,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13hLZK" id="55oVyA0lgYj" role="13h7CW">
+      <node concept="3clFbS" id="55oVyA0lgYk" role="2VODD2" />
     </node>
   </node>
 </model>
