@@ -126,7 +126,6 @@
       <concept id="1397920687865064415" name="de.slisson.mps.tables.structure.ChildsVertical" flags="ng" index="2reSaE" />
       <concept id="1397920687865064509" name="de.slisson.mps.tables.structure.ChildCollection" flags="ng" index="2reSl8">
         <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
-        <child id="2199447184406843652" name="columnHeaders" index="2YiT2b" />
       </concept>
       <concept id="1397920687864864270" name="de.slisson.mps.tables.structure.StaticHeader" flags="ng" index="2rfbtV">
         <property id="1397920687864864274" name="text" index="2rfbtB" />
@@ -168,9 +167,6 @@
         </node>
         <node concept="2reSaE" id="55oVyA0lmW5" role="2reCL6">
           <ref role="2reCK$" to="1w8j:55oVyA0lgr9" resolve="operationalSituations" />
-          <node concept="2rfbtV" id="55oVyA0ln9U" role="2YiT2b">
-            <property role="2rfbtB" value="Operational Situations" />
-          </node>
         </node>
         <node concept="2reCLy" id="2hOvri9WUql" role="2reCL6">
           <node concept="3EZMnI" id="6RZi9iiwjk_" role="2reSmM">
@@ -254,6 +250,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="2rfbtV" id="55oVyA0m$Ij" role="2recC9">
+            <property role="2rfbtB" value="Operational Situation" />
           </node>
         </node>
         <node concept="2reCLy" id="55oVyA0lgIh" role="2reCL6">
