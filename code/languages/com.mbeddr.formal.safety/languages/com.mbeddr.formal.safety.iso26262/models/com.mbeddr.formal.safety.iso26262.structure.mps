@@ -199,7 +199,6 @@
     <node concept="1TJgyj" id="55oVyA0lsaC" role="1TKVEi">
       <property role="IQ2ns" value="5861696777036874408" />
       <property role="20kJfa" value="operationalSituationDeclaration" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="55oVyA0ls9B" resolve="OperationalSituationDeclaration" />
     </node>
   </node>
