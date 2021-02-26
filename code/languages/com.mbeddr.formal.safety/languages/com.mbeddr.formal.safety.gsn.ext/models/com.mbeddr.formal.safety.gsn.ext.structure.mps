@@ -151,6 +151,15 @@
     <property role="TrG5h" value="OrEntity" />
     <property role="34LRSv" value="OR" />
     <ref role="1TJDcQ" node="7BYuSCFMYuE" resolve="PatternGoalStructureElementBase" />
+    <node concept="1irR5M" id="55oVyA0rRVM" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="71RA3dHz6N3" role="1irR9h">
+        <property role="1irPi9" value="|" />
+        <node concept="3PKj8D" id="71RA3dHz6Nc" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="7BYuSCFMYuE">
     <property role="EcuMT" value="8790599356044273578" />
