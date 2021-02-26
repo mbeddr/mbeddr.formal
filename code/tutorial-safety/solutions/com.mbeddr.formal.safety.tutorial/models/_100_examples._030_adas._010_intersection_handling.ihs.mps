@@ -144,7 +144,6 @@
       <concept id="7926133672146485940" name="com.mbeddr.formal.safety.req.structure.OperatingContextReqKind" flags="ng" index="3ZsCCw" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
-      <concept id="7842584090743386570" name="com.mbeddr.formal.base.expressions.structure.Type" flags="ng" index="2HdslB" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -255,10 +254,17 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
-        <property id="2392944874760387687" name="controlability" index="1a6$V8" />
-        <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
-        <property id="2392944874760387682" name="severity" index="1a6$Vd" />
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+      </concept>
+      <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
+        <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
+      </concept>
+      <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <child id="5861696777036874344" name="description" index="3h3iL1" />
+      </concept>
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -375,14 +381,11 @@
     <node concept="0lH3_" id="3Jn$RV2VwpJ" role="1QQeBF" />
   </node>
   <node concept="8gVzP" id="3Jn$RV2Vwq5">
-    <property role="TrG5h" value="_012_ihs_hazards_list" />
+    <property role="TrG5h" value="_013_ihs_hazards_list" />
     <property role="3GE5qa" value="_010_hara" />
     <node concept="1a6Z8w" id="3Jn$RV2Vwq6" role="8gIbH">
       <property role="0lsPB" value="H01" />
-      <property role="TrG5h" value="Vehicle leaves authorised or designated road or highway while handling an intersection" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNLe/E4" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <property role="TrG5h" value="Vehicle leaves authorised or designated road or highway " />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqc" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
@@ -392,13 +395,13 @@
       <node concept="3Zv_sa" id="3Jn$RV2Vwqe" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission (driving off the road)" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mRah" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwq7" role="8gIbH">
       <property role="0lsPB" value="H02" />
       <property role="TrG5h" value="Vehicle does not maintain safe distance to other vehicles or objects while handling an intersection" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqf" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
@@ -408,26 +411,26 @@
       <node concept="3Zv_sa" id="3Jn$RV2Vwqh" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission (driving off the road)" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mRal" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwqa" role="8gIbH">
       <property role="0lsPB" value="H03" />
       <property role="TrG5h" value="The Intersection Assistant controls the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
-      <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqn" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqo" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mRao" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwqb" role="8gIbH">
       <property role="0lsPB" value="H04" />
-      <property role="TrG5h" value="Inappropriate vehicle behavior while operating outside the operational environment " />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLp/C2" />
+      <property role="TrG5h" value="Inappropriate vehicle behavior  " />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqp" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
       </node>
@@ -440,6 +443,9 @@
       <node concept="3Zv_sa" id="3Jn$RV2Vwqs" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqX" resolve="Loss of service" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mRar" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="ZH03rPhNNr" role="8gIbH">
       <property role="0lsPB" value="H05" />
@@ -447,10 +453,13 @@
       <node concept="3Zv_sa" id="ZH03rPhNNI" role="3Zv_sA">
         <ref role="3Zv_sb" node="3Jn$RV2VwqX" resolve="Loss of service" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mRau" role="3h3uzw">
+        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+      </node>
     </node>
   </node>
   <node concept="1QQeGf" id="3Jn$RV2Vwqt">
-    <property role="TrG5h" value="_013_ihs_safety_goals" />
+    <property role="TrG5h" value="_014_ihs_safety_goals" />
     <property role="3GE5qa" value="_010_hara" />
     <node concept="0lhDl" id="3Jn$RV2Vwqu" role="1QQeBF">
       <property role="0lsPA" value="SG01" />
@@ -474,7 +483,7 @@
       </node>
       <node concept="2iDXIW" id="3Jn$RV2Vwqz" role="0nOlf">
         <node concept="DABN8" id="3Jn$RV2VwqE" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway while handling an intersection" />
+          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway " />
         </node>
         <node concept="DABN8" id="3Jn$RV2VwqH" role="DABNk">
           <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="The Intersection Assistant controls the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
@@ -512,7 +521,7 @@
       <property role="0ke_I" value="Carmen C." />
       <node concept="2iDXIW" id="K_MCpHhFGh" role="0nOlf">
         <node concept="DABN8" id="K_MCpHhFGk" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Inappropriate vehicle behavior while operating outside the operational environment " />
+          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Inappropriate vehicle behavior  " />
         </node>
       </node>
       <node concept="19SGf9" id="K_MCpHhFFP" role="1QQeG9">
@@ -666,7 +675,7 @@
           <property role="19SUeA" value="&#10;has been substituted &#10;with hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2VwsZ" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway while handling an intersection" />
+          <ref role="oTUVg" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway " />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt0" role="19SJt6" />
       </node>
@@ -698,7 +707,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2Vwt5" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwqb" resolve="Inappropriate vehicle behavior while operating outside the operational environment " />
+          <ref role="oTUVg" node="3Jn$RV2Vwqb" resolve="Inappropriate vehicle behavior  " />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt6" role="19SJt6">
           <property role="19SUeA" value=" has been eliminated and can no longer occur" />
@@ -716,7 +725,7 @@
           <property role="19SUeA" value="All hazards from &#10;" />
         </node>
         <node concept="oXkut" id="3Jn$RV2Vwt8" role="19SJt6">
-          <ref role="oTdVe" node="3Jn$RV2Vwq5" resolve="_012_ihs_hazards_list" />
+          <ref role="oTdVe" node="3Jn$RV2Vwq5" resolve="_013_ihs_hazards_list" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt9" role="19SJt6">
           <property role="19SUeA" value="&#10;have been addressed" />
@@ -2064,7 +2073,7 @@
           <property role="19SUeA" value="All safety goals from &#10;" />
         </node>
         <node concept="27blvF" id="3Jn$RV2VwtY" role="19SJt6">
-          <ref role="27blvA" node="3Jn$RV2Vwqt" resolve="_013_ihs_safety_goals" />
+          <ref role="27blvA" node="3Jn$RV2Vwqt" resolve="_014_ihs_safety_goals" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2VwtZ" role="19SJt6">
           <property role="19SUeA" value="&#10; are satisfied" />
@@ -7917,7 +7926,7 @@
           <node concept="gqqVs" id="2Bdpt7mpRmc" role="37mO4d">
             <property role="gqqTZ" value="47.0" />
             <property role="gqqTW" value="116.0" />
-            <property role="gqqTX" value="74.0" />
+            <property role="gqqTX" value="76.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="2Bdpt7mpRmf" role="1pap1a">
@@ -7931,7 +7940,7 @@
           <node concept="gqqVs" id="2Bdpt7mpRmg" role="37mO4d">
             <property role="gqqTZ" value="47.0" />
             <property role="gqqTW" value="168.0" />
-            <property role="gqqTX" value="74.0" />
+            <property role="gqqTX" value="76.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="2Bdpt7mpRmi" role="1pap1a">
@@ -7945,7 +7954,7 @@
           <node concept="gqqVs" id="2Bdpt7mpRmj" role="37mO4d">
             <property role="gqqTZ" value="47.0" />
             <property role="gqqTW" value="220.0" />
-            <property role="gqqTX" value="74.0" />
+            <property role="gqqTX" value="76.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="2Bdpt7mpRml" role="1pap1a">
@@ -7959,7 +7968,7 @@
           <node concept="gqqVs" id="2Bdpt7mpRmm" role="37mO4d">
             <property role="gqqTZ" value="47.0" />
             <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="74.0" />
+            <property role="gqqTX" value="76.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="2Bdpt7mpRmo" role="1pap1a">
@@ -7983,7 +7992,7 @@
           <node concept="gqqVs" id="2Bdpt7mpRmr" role="37mO4d">
             <property role="gqqTZ" value="367.0" />
             <property role="gqqTW" value="158.48011084785685" />
-            <property role="gqqTX" value="93.0" />
+            <property role="gqqTX" value="95.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="2Bdpt7mpRmt" role="1pap1a">
@@ -7997,7 +8006,7 @@
           <node concept="gqqVs" id="I19PlZeRsp" role="37mO4d">
             <property role="gqqTZ" value="205.0" />
             <property role="gqqTW" value="77.92818698882301" />
-            <property role="gqqTX" value="98.0" />
+            <property role="gqqTX" value="100.0" />
             <property role="gqqTy" value="108.20448310850944" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="I19PlZeRvN" role="1pap1a">
@@ -8074,7 +8083,7 @@
           <node concept="gqqVs" id="4O8jCOJv_nF" role="37mO4d">
             <property role="gqqTZ" value="12.0" />
             <property role="gqqTW" value="64.0" />
-            <property role="gqqTX" value="109.0" />
+            <property role="gqqTX" value="111.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="4O8jCOJv_pe" role="1pap1a">
@@ -8105,7 +8114,7 @@
           <node concept="gqqVs" id="4O8jCOJv_se" role="37mO4d">
             <property role="gqqTZ" value="367.0" />
             <property role="gqqTW" value="106.48011084785685" />
-            <property role="gqqTX" value="141.0" />
+            <property role="gqqTX" value="143.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="4O8jCOJv_ud" role="1pap1a">
@@ -10547,20 +10556,34 @@
         <property role="TrG5h" value="vehicle" />
       </node>
     </node>
+    <node concept="2SQmWS" id="55oVyA0mOUG" role="2HcuB8" />
+    <node concept="1s31Vl" id="55oVyA0mP5x" role="2HcuB8">
+      <property role="TrG5h" value="POSITION" />
+      <node concept="1s31WS" id="55oVyA0mPaX" role="1s31w6">
+        <property role="TrG5h" value="x" />
+        <node concept="2m7kok" id="55oVyA0mPbf" role="1s31WO" />
+      </node>
+      <node concept="1s31WS" id="55oVyA0mPbn" role="1s31w6">
+        <property role="TrG5h" value="y" />
+        <node concept="2m7kok" id="55oVyA0mPbH" role="1s31WO" />
+      </node>
+    </node>
     <node concept="2SQmWS" id="ZH03rPhS3R" role="2HcuB8" />
     <node concept="1s31Vl" id="ZH03rPhRSh" role="2HcuB8">
       <property role="TrG5h" value="TRACKED_OBJECTS" />
       <node concept="1s31WS" id="ZH03rPhRXr" role="1s31w6">
         <property role="TrG5h" value="position" />
-        <node concept="2HdslB" id="ZH03rPhRXs" role="1s31WO" />
+        <node concept="1s31w3" id="55oVyA0mPbQ" role="1s31WO">
+          <ref role="1s31w2" node="55oVyA0mP5x" resolve="POSITION" />
+        </node>
       </node>
       <node concept="1s31WS" id="ZH03rPhRXA" role="1s31w6">
         <property role="TrG5h" value="velocity" />
         <node concept="2m7kok" id="ZH03rPhStc" role="1s31WO" />
       </node>
       <node concept="1s31WS" id="ZH03rPhRXR" role="1s31w6">
-        <property role="TrG5h" value="orientation" />
-        <node concept="2HdslB" id="ZH03rPhRXS" role="1s31WO" />
+        <property role="TrG5h" value="orientationAngle" />
+        <node concept="2m7kok" id="55oVyA0mPc7" role="1s31WO" />
       </node>
       <node concept="1s31WS" id="ZH03rPhRY8" role="1s31w6">
         <property role="TrG5h" value="type" />
@@ -10570,6 +10593,28 @@
       </node>
     </node>
     <node concept="2SQmWS" id="ZH03rPhRN8" role="2HcuB8" />
+    <node concept="1s31Vl" id="55oVyA0mPLA" role="2HcuB8">
+      <property role="TrG5h" value="OBJECTS_PREDICTION" />
+      <node concept="1s31WS" id="5tEenuYOKgG" role="1s31w6">
+        <property role="TrG5h" value="trackedObjects" />
+        <node concept="1s31w3" id="55oVyA0mPS1" role="1s31WO">
+          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+        </node>
+      </node>
+      <node concept="1s31WS" id="5tEenuYOKhe" role="1s31w6">
+        <property role="TrG5h" value="predictedTrajectoriesTimeFrame1" />
+        <node concept="1s31w3" id="55oVyA0mPUX" role="1s31WO">
+          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+        </node>
+      </node>
+      <node concept="1s31WS" id="55oVyA0mPVw" role="1s31w6">
+        <property role="TrG5h" value="predictedTrajectoriesTimeFrame2" />
+        <node concept="1s31w3" id="55oVyA0mPVx" role="1s31WO">
+          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="55oVyA0mPFY" role="2HcuB8" />
     <node concept="2dDAVa" id="4O8jCOJvzwr" role="2HcuB8">
       <property role="TrG5h" value="MediumRangeSensingVoter" />
       <node concept="3UnI9n" id="4O8jCOJvzX7" role="3UnI90">
@@ -10690,6 +10735,12 @@
     <node concept="2SQmWS" id="ZH03rPhPUC" role="2HcuB8" />
     <node concept="2dDAVa" id="ZH03rPhQ9s" role="2HcuB8">
       <property role="TrG5h" value="Prediction" />
+      <node concept="3UnI9n" id="55oVyA0mPrk" role="3UnI90">
+        <property role="TrG5h" value="predictedObjects" />
+        <node concept="1s31w3" id="55oVyA0mPSl" role="3UnI80">
+          <ref role="1s31w2" node="55oVyA0mPLA" resolve="OBJECTS_PREDICTION" />
+        </node>
+      </node>
       <node concept="3UnI81" id="ZH03rPhSu4" role="3UnI9m">
         <property role="TrG5h" value="trackedObjects" />
         <node concept="1s31w3" id="ZH03rPhSu5" role="3UnI80">
@@ -10702,6 +10753,10 @@
       <property role="TrG5h" value="Planning" />
     </node>
     <node concept="2SQmWS" id="ZH03rPhQFR" role="2HcuB8" />
+    <node concept="2dDAVa" id="55oVyA0mODF" role="2HcuB8">
+      <property role="TrG5h" value="Control" />
+    </node>
+    <node concept="2SQmWS" id="55oVyA0mO$i" role="2HcuB8" />
     <node concept="2dDAV0" id="I19PlZeSnj" role="2HcuB8">
       <property role="TrG5h" value="MissionChannel" />
       <node concept="3UnI81" id="I19PlZeXkj" role="3UnI9m">
@@ -10831,8 +10886,8 @@
         <node concept="37mRIm" id="I19PlZeVHR" role="37mRID">
           <property role="37mO49" value="box_828987054573206196" />
           <node concept="gqqVs" id="I19PlZeVHQ" role="37mO4d">
-            <property role="gqqTZ" value="439.0" />
-            <property role="gqqTW" value="64.0" />
+            <property role="gqqTZ" value="944.5" />
+            <property role="gqqTW" value="180.0" />
             <property role="gqqTX" value="111.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -10859,8 +10914,8 @@
         <node concept="37mRIm" id="I19PlZeVHX" role="37mRID">
           <property role="37mO49" value="box_828987054573206200" />
           <node concept="gqqVs" id="I19PlZeVHW" role="37mO4d">
-            <property role="gqqTZ" value="580.0" />
-            <property role="gqqTW" value="64.0" />
+            <property role="gqqTZ" value="944.5" />
+            <property role="gqqTW" value="214.88652345654918" />
             <property role="gqqTX" value="119.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -10901,8 +10956,8 @@
         <node concept="37mRIm" id="I19PlZeYkL" role="37mRID">
           <property role="37mO49" value="box_828987054573212947" />
           <node concept="gqqVs" id="I19PlZeYkK" role="37mO4d">
-            <property role="gqqTZ" value="81.0" />
-            <property role="gqqTW" value="12.0" />
+            <property role="gqqTZ" value="549.0" />
+            <property role="gqqTW" value="499.0" />
             <property role="gqqTX" value="55.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -10915,8 +10970,8 @@
         <node concept="37mRIm" id="I19PlZeYkO" role="37mRID">
           <property role="37mO49" value="box_828987054573212951" />
           <node concept="gqqVs" id="I19PlZeYkN" role="37mO4d">
-            <property role="gqqTZ" value="471.0003967285156" />
-            <property role="gqqTW" value="12.0" />
+            <property role="gqqTZ" value="525.0" />
+            <property role="gqqTW" value="614.0" />
             <property role="gqqTX" value="79.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -10929,8 +10984,8 @@
         <node concept="37mRIm" id="I19PlZeYkR" role="37mRID">
           <property role="37mO49" value="box_828987054573212953" />
           <node concept="gqqVs" id="I19PlZeYkQ" role="37mO4d">
-            <property role="gqqTZ" value="260.0001983642578" />
-            <property role="gqqTW" value="12.0" />
+            <property role="gqqTZ" value="533.0" />
+            <property role="gqqTW" value="587.0" />
             <property role="gqqTX" value="71.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -10943,8 +10998,8 @@
         <node concept="37mRIm" id="I19PlZeYkU" role="37mRID">
           <property role="37mO49" value="box_828987054573212955" />
           <node concept="gqqVs" id="I19PlZeYkT" role="37mO4d">
-            <property role="gqqTZ" value="705.0003967285156" />
-            <property role="gqqTW" value="12.0" />
+            <property role="gqqTZ" value="501.0" />
+            <property role="gqqTW" value="560.0" />
             <property role="gqqTX" value="103.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -10999,8 +11054,8 @@
         <node concept="37mRIm" id="I19PlZeYl6" role="37mRID">
           <property role="37mO49" value="box_828987054573212963" />
           <node concept="gqqVs" id="I19PlZeYl5" role="37mO4d">
-            <property role="gqqTZ" value="145.0" />
-            <property role="gqqTW" value="64.0" />
+            <property role="gqqTZ" value="493.0" />
+            <property role="gqqTW" value="533.0" />
             <property role="gqqTX" value="111.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -11013,8 +11068,8 @@
         <node concept="37mRIm" id="I19PlZeYl9" role="37mRID">
           <property role="37mO49" value="box_828987054573215673" />
           <node concept="gqqVs" id="I19PlZeYl8" role="37mO4d">
-            <property role="gqqTZ" value="286.0" />
-            <property role="gqqTW" value="64.0" />
+            <property role="gqqTZ" value="493.0" />
+            <property role="gqqTW" value="649.4432617282746" />
             <property role="gqqTX" value="111.0" />
             <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -11257,10 +11312,10 @@
         <node concept="37mRIm" id="ZH03rPhRgD" role="37mRID">
           <property role="37mO49" value="1147573716092678915" />
           <node concept="gqqVs" id="ZH03rPhRgC" role="37mO4d">
-            <property role="gqqTZ" value="663.0" />
-            <property role="gqqTW" value="382.6196801823602" />
+            <property role="gqqTZ" value="669.0" />
+            <property role="gqqTW" value="281.1196801823602" />
             <property role="gqqTX" value="92.0" />
-            <property role="gqqTy" value="132.3810832321023" />
+            <property role="gqqTy" value="335.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="ZH03rPhRBF" role="1pap1a">
               <property role="1pa3iD" value="longRangePointCloud" />
@@ -11295,20 +11350,20 @@
         <node concept="37mRIm" id="ZH03rPhRgF" role="37mRID">
           <property role="37mO49" value="1147573716092679144" />
           <node concept="gqqVs" id="ZH03rPhRgE" role="37mO4d">
-            <property role="gqqTZ" value="361.0002983642578" />
-            <property role="gqqTW" value="12.0" />
+            <property role="gqqTZ" value="830.0001" />
+            <property role="gqqTW" value="382.6196801823602" />
             <property role="gqqTX" value="92.0" />
-            <property role="gqqTy" value="32.0" />
+            <property role="gqqTy" value="132.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
         </node>
         <node concept="37mRIm" id="ZH03rPhRgH" role="37mRID">
           <property role="37mO49" value="1147573716092679029" />
           <node concept="gqqVs" id="ZH03rPhRgG" role="37mO4d">
-            <property role="gqqTZ" value="166.0001" />
-            <property role="gqqTW" value="12.0" />
+            <property role="gqqTZ" value="962.0" />
+            <property role="gqqTW" value="324.0" />
             <property role="gqqTX" value="76.0" />
-            <property role="gqqTy" value="32.0" />
+            <property role="gqqTy" value="207.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
         </node>
@@ -11321,7 +11376,7 @@
             </node>
             <node concept="2VclrF" id="ZH03rPhRBP" role="2Vcluh">
               <property role="2Vclpx" value="611.0" />
-              <property role="2Vclpz" value="422.89847317025425" />
+              <property role="2Vclpz" value="420.2594583836753" />
             </node>
           </node>
         </node>
@@ -11334,7 +11389,7 @@
             </node>
             <node concept="2VclrF" id="ZH03rPhRBT" role="2Vcluh">
               <property role="2Vclpx" value="551.0" />
-              <property role="2Vclpz" value="499.0007634144625" />
+              <property role="2Vclpz" value="496.1712070118324" />
             </node>
           </node>
         </node>
@@ -11347,7 +11402,7 @@
             </node>
             <node concept="2VclrF" id="ZH03rPhRBX" role="2Vcluh">
               <property role="2Vclpx" value="591.0" />
-              <property role="2Vclpz" value="441.89923658512714" />
+              <property role="2Vclpz" value="439.2602217985481" />
             </node>
           </node>
         </node>
@@ -11360,7 +11415,7 @@
             </node>
             <node concept="2VclrF" id="ZH03rPhRC1" role="2Vcluh">
               <property role="2Vclpx" value="571.0" />
-              <property role="2Vclpz" value="460.99923658512716" />
+              <property role="2Vclpz" value="458.36022179854814" />
             </node>
           </node>
         </node>
@@ -11381,7 +11436,7 @@
             </node>
             <node concept="2VclrF" id="ZH03rPhRC9" role="2Vcluh">
               <property role="2Vclpx" value="631.0" />
-              <property role="2Vclpz" value="403.897709754971" />
+              <property role="2Vclpz" value="401.258694968392" />
             </node>
           </node>
         </node>
@@ -11627,8 +11682,42 @@
           </node>
         </node>
       </node>
+      <node concept="3Ug1$w" id="55oVyA0mPcf" role="3UgYNK">
+        <node concept="3Ug1GC" id="55oVyA0mPcg" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="ZH03rPhRrl" resolve="trackedObjects" />
+          <node concept="3Ug1GJ" id="55oVyA0mPch" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="55oVyA0mPci" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="ZH03rPhSu4" resolve="trackedObjects" />
+          <node concept="3Ug1GJ" id="55oVyA0mPcj" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="ZH03rPhRfC" resolve="prediction" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2SQmWS" id="ZH03rPhOS1" role="2HcuB8" />
+  </node>
+  <node concept="3h3iLa" id="55oVyA0mRaa">
+    <property role="3GE5qa" value="_010_hara" />
+    <property role="TrG5h" value="_012_operational_situations" />
+    <node concept="3h3iLe" id="55oVyA0mRab" role="3h3F1H">
+      <property role="TrG5h" value="OS1" />
+      <node concept="19SGf9" id="55oVyA0mRac" role="3h3iL1">
+        <node concept="19SUe$" id="55oVyA0mRad" role="19SJt6">
+          <property role="19SUeA" value="While handling an intersection" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="55oVyA0mRax" role="3h3F1H">
+      <property role="TrG5h" value="OS2" />
+      <node concept="19SGf9" id="55oVyA0mRay" role="3h3iL1">
+        <node concept="19SUe$" id="55oVyA0mRaz" role="19SJt6">
+          <property role="19SUeA" value="While handling an intersection, but operating outside the operational environment" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
