@@ -9044,6 +9044,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="55oVyA0sXc1" role="3bR37C">
+          <node concept="3bR9La" id="55oVyA0sXc2" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="55oVyA0sXc3" role="3bR37C">
+          <node concept="3bR9La" id="55oVyA0sXc4" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7he_lUurDmQ" role="2G$12L">
         <property role="BnDLt" value="true" />
