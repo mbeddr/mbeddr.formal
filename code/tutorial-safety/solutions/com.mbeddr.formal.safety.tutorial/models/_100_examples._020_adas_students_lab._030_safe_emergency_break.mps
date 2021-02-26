@@ -79,10 +79,13 @@
         <child id="3226630706270140651" name="text" index="0nzdz" />
       </concept>
       <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
-        <reference id="467505803006179847" name="req" index="0Sh0a" />
+        <child id="7993788941569402916" name="reqRefs" index="hnKMk" />
       </concept>
       <concept id="7094415537350220692" name="com.mbeddr.formal.req.base.structure.ReqRefWord" flags="ng" index="2aGvr3">
         <reference id="7094415537350220726" name="req" index="2aGvrx" />
+      </concept>
+      <concept id="7993788941569402923" name="com.mbeddr.formal.req.base.structure.RequirementRef" flags="ng" index="hnKMr">
+        <reference id="7993788941569402924" name="req" index="hnKMs" />
       </concept>
       <concept id="6544290145033221524" name="com.mbeddr.formal.req.base.structure.Interface" flags="ng" index="3z6Cyy" />
       <concept id="815900398743272760" name="com.mbeddr.formal.req.base.structure.Image" flags="ng" index="3OoTgI">
@@ -319,10 +322,13 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
-        <property id="2392944874760387687" name="controlability" index="1a6$V8" />
-        <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
-        <property id="2392944874760387682" name="severity" index="1a6$Vd" />
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+      </concept>
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+        <property id="5861696777036826305" name="exposure" index="3h3uzC" />
+        <property id="5861696777036826304" name="severity" index="3h3uzD" />
+        <property id="5861696777036826306" name="controlability" index="3h3uzF" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -548,49 +554,61 @@
     <node concept="1a6Z8w" id="G$XGFsgYdV" role="8gIbH">
       <property role="0lsPB" value="H01" />
       <property role="TrG5h" value="Warning issued too late - ASIL QM" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
-      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <node concept="3h3uym" id="55oVyA0mGR_" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9h" role="8gIbH">
       <property role="0lsPB" value="H02" />
       <property role="TrG5h" value="Braking initiated too late - ASIL A" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <node concept="3h3uym" id="55oVyA0mGRA" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9p" role="8gIbH">
       <property role="0lsPB" value="H03" />
       <property role="TrG5h" value="Car crashes into obstacle - ASIL B" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <node concept="3h3uym" id="55oVyA0mGRB" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9z" role="8gIbH">
       <property role="0lsPB" value="H04" />
       <property role="TrG5h" value="Unnecessary warning - ASIL QM" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+      <node concept="3h3uym" id="55oVyA0mGRC" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9J" role="8gIbH">
       <property role="0lsPB" value="H05" />
       <property role="TrG5h" value="Unnecessary braking - ASIL QM" />
-      <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+      <node concept="3h3uym" id="55oVyA0mGRD" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
+        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9X" role="8gIbH">
       <property role="0lsPB" value="H06" />
       <property role="TrG5h" value="Strong breaking leads to rear end collision - ASIL A" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <node concept="3h3uym" id="55oVyA0mGRE" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+      </node>
     </node>
   </node>
   <node concept="2HxQMi" id="G$XGFsgYc8">
@@ -2767,7 +2785,9 @@
         <node concept="19SUe$" id="4tgWazNvnb6" role="19SJt6">
           <property role="19SUeA" value="EB" />
           <node concept="0Sh09" id="4tgWazNvndt" role="lGtFl">
-            <ref role="0Sh0a" node="4WLVkAsg3oT" />
+            <node concept="hnKMr" id="55oVyA0r$Tg" role="hnKMk">
+              <ref role="hnKMs" node="4WLVkAsg3oT" />
+            </node>
           </node>
         </node>
       </node>
@@ -2833,7 +2853,9 @@
         <node concept="19SUe$" id="4WLVkAsg6H5" role="19SJt6">
           <property role="19SUeA" value="Warn driver" />
           <node concept="0Sh09" id="4j8iycQYkXw" role="lGtFl">
-            <ref role="0Sh0a" node="4tgWazNvlzx" />
+            <node concept="hnKMr" id="55oVyA0r$Te" role="hnKMk">
+              <ref role="hnKMs" node="4tgWazNvlzx" />
+            </node>
           </node>
         </node>
       </node>
@@ -2863,7 +2885,9 @@
         <node concept="19SUe$" id="4j8iycQYmv8" role="19SJt6">
           <property role="19SUeA" value="Sensor function " />
           <node concept="0Sh09" id="4j8iycQYmwb" role="lGtFl">
-            <ref role="0Sh0a" node="4tgWazNvlzR" />
+            <node concept="hnKMr" id="55oVyA0r$Tc" role="hnKMk">
+              <ref role="hnKMs" node="4tgWazNvlzR" />
+            </node>
           </node>
         </node>
       </node>
@@ -5327,7 +5351,9 @@
     <node concept="2dDAVa" id="4tgWazNvqpn" role="2HcuB8">
       <property role="TrG5h" value="EB_Control_Unit" />
       <node concept="0Sh09" id="4tgWazNvrkQ" role="lGtFl">
-        <ref role="0Sh0a" node="2l0tHRMMe1M" />
+        <node concept="hnKMr" id="55oVyA0r_sI" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe1M" />
+        </node>
       </node>
       <node concept="3UnI81" id="4tgWazNvrm3" role="3UnI9m">
         <property role="TrG5h" value="braking" />
@@ -5522,7 +5548,9 @@
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkO" role="lGtFl">
-        <ref role="0Sh0a" node="2l0tHRMMe3x" />
+        <node concept="hnKMr" id="55oVyA0r_t9" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe3x" />
+        </node>
       </node>
       <node concept="3UTh7Y" id="6MaWlu$kzH6" role="3UnIb_">
         <property role="TrG5h" value="Value_Check" />
@@ -5612,7 +5640,9 @@
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkM" role="lGtFl">
-        <ref role="0Sh0a" node="2l0tHRMMe3x" />
+        <node concept="hnKMr" id="55oVyA0r_tp" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe3x" />
+        </node>
       </node>
       <node concept="3UTh7Y" id="4pSWRNV3tHI" role="3UnIb_">
         <property role="TrG5h" value="Value_Check" />
@@ -5718,7 +5748,9 @@
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkG" role="lGtFl">
-        <ref role="0Sh0a" node="2l0tHRMMe1M" />
+        <node concept="hnKMr" id="55oVyA0r_tD" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe1M" />
+        </node>
       </node>
       <node concept="3US$BV" id="6MaWlu$kAsB" role="3UnIb_">
         <property role="TrG5h" value="Value_Check" />
@@ -5766,7 +5798,9 @@
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkK" role="lGtFl">
-        <ref role="0Sh0a" node="2l0tHRMMe1M" />
+        <node concept="hnKMr" id="55oVyA0r_tQ" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe1M" />
+        </node>
       </node>
       <node concept="3UTh7Y" id="4pSWRNV3Poz" role="3UnIb_">
         <property role="TrG5h" value="max_value_check" />
@@ -5892,7 +5926,9 @@
         <node concept="2Hds6S" id="4tgWazNvrw2" role="3UnI80" />
       </node>
       <node concept="0Sh09" id="7qgRsCGQCAQ" role="lGtFl">
-        <ref role="0Sh0a" node="2l0tHRMMe3D" />
+        <node concept="hnKMr" id="55oVyA0r_ui" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe3D" />
+        </node>
       </node>
       <node concept="3UTh7Y" id="7qgRsCGQDbf" role="3UnIb_">
         <property role="TrG5h" value="voting" />
@@ -6056,7 +6092,9 @@
         </node>
       </node>
       <node concept="0Sh09" id="2NJwv_HFJYu" role="lGtFl">
-        <ref role="0Sh0a" node="2NJwv_HFK2a" />
+        <node concept="hnKMr" id="55oVyA0r_u3" role="hnKMk">
+          <ref role="hnKMs" node="2NJwv_HFK2a" />
+        </node>
       </node>
       <node concept="3UTh7Y" id="6MaWlu$kCcj" role="3UnIb_">
         <property role="TrG5h" value="Forward_Warning" />
@@ -6125,7 +6163,9 @@
         <node concept="2Hds6S" id="7qgRsCGQChp" role="3UnI80" />
       </node>
       <node concept="0Sh09" id="7qgRsCGQCAK" role="lGtFl">
-        <ref role="0Sh0a" node="2l0tHRMMe55" />
+        <node concept="hnKMr" id="55oVyA0r_u_" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe55" />
+        </node>
       </node>
       <node concept="3UTh7Y" id="7qgRsCGUpjH" role="3UnIb_">
         <property role="TrG5h" value="EB_brake_command" />
@@ -6188,7 +6228,9 @@
         <node concept="19SUe$" id="2l0tHRMMe1P" role="19SJt6">
           <property role="19SUeA" value="Functionality of EB " />
           <node concept="0Sh09" id="2l0tHRMMe2p" role="lGtFl">
-            <ref role="0Sh0a" node="4tgWazNvnb3" />
+            <node concept="hnKMr" id="55oVyA0r_uM" role="hnKMk">
+              <ref role="hnKMs" node="4tgWazNvnb3" />
+            </node>
           </node>
         </node>
       </node>
@@ -6279,7 +6321,9 @@
         <node concept="19SUe$" id="2l0tHRMMe3b" role="19SJt6">
           <property role="19SUeA" value="HW and SW should function correctly " />
           <node concept="0Sh09" id="2l0tHRMMeer" role="lGtFl">
-            <ref role="0Sh0a" node="4j8iycQYmv5" />
+            <node concept="hnKMr" id="55oVyA0r_uO" role="hnKMk">
+              <ref role="hnKMs" node="4j8iycQYmv5" />
+            </node>
           </node>
         </node>
       </node>
@@ -6300,7 +6344,9 @@
         <node concept="19SUe$" id="2NJwv_HFGO5" role="19SJt6">
           <property role="19SUeA" value="Driver control actions " />
           <node concept="0Sh09" id="3OFTjxLQyiL" role="lGtFl">
-            <ref role="0Sh0a" node="4tgWazNvnb3" />
+            <node concept="hnKMr" id="55oVyA0r_uQ" role="hnKMk">
+              <ref role="hnKMs" node="4tgWazNvnb3" />
+            </node>
           </node>
         </node>
       </node>
@@ -6361,7 +6407,9 @@
         <node concept="19SUe$" id="2NJwv_HFK2d" role="19SJt6">
           <property role="19SUeA" value="System-Driver communication " />
           <node concept="0Sh09" id="3OFTjxLQyiN" role="lGtFl">
-            <ref role="0Sh0a" node="4WLVkAsg6H2" />
+            <node concept="hnKMr" id="55oVyA0r_uS" role="hnKMk">
+              <ref role="hnKMs" node="4WLVkAsg6H2" />
+            </node>
           </node>
         </node>
       </node>

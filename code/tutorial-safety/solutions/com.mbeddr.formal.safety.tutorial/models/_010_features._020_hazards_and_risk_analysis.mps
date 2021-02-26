@@ -127,10 +127,13 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
-        <property id="2392944874760387687" name="controlability" index="1a6$V8" />
-        <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
-        <property id="2392944874760387682" name="severity" index="1a6$Vd" />
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+      </concept>
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+        <property id="5861696777036826305" name="exposure" index="3h3uzC" />
+        <property id="5861696777036826304" name="severity" index="3h3uzD" />
+        <property id="5861696777036826306" name="controlability" index="3h3uzF" />
       </concept>
     </language>
   </registry>
@@ -495,40 +498,46 @@
     <node concept="1a6Z8w" id="7L33HENb9vA" role="8gIbH">
       <property role="0lsPA" value="H01" />
       <property role="TrG5h" value="airbag does not deploy" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <node concept="3Zv_sa" id="7Jm8RM1zooT" role="3Zv_sA">
         <ref role="3Zv_sb" node="7Jm8RM1zooO" resolve="driver severe injury which requires hospitalization" />
       </node>
       <node concept="3Zv_sa" id="7Jm8RM1zooY" role="3Zv_sA">
         <ref role="3Zv_sb" node="7Jm8RM1zooH" resolve="passenger severe injury which requires hospitalization" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mGR1" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="7L33HENb9vN" role="8gIbH">
       <property role="0lsPA" value="H02" />
       <property role="TrG5h" value="airbag deploys unintentionally" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
       <node concept="3Zv_sa" id="7Jm8RM1zop2" role="3Zv_sA">
         <ref role="3Zv_sb" node="7Jm8RM1zooO" resolve="driver severe injury which requires hospitalization" />
       </node>
       <node concept="3Zv_sa" id="7Jm8RM1zopl" role="3Zv_sA">
         <ref role="3Zv_sb" node="7Jm8RM1zooH" resolve="passenger severe injury which requires hospitalization" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mGR2" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="7L33HENb9wH" role="8gIbH">
       <property role="0lsPA" value="H03" />
       <property role="TrG5h" value="airbag deploys too soon or late" />
-      <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <node concept="3Zv_sa" id="7Jm8RM1zopp" role="3Zv_sA">
         <ref role="3Zv_sb" node="7Jm8RM1zooN" resolve="driver light injury which does not require hospitalization" />
       </node>
       <node concept="3Zv_sa" id="7Jm8RM1zopu" role="3Zv_sA">
         <ref role="3Zv_sb" node="7Jm8RM1zooJ" resolve="passenger light injury which does not require hospitalization" />
+      </node>
+      <node concept="3h3uym" id="55oVyA0mGR3" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
       </node>
     </node>
   </node>

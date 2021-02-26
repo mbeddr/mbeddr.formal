@@ -114,10 +114,19 @@
       </concept>
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
-      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262HazardousEvent" flags="ng" index="1a6Z8w">
-        <property id="2392944874760387687" name="controlability" index="1a6$V8" />
-        <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
-        <property id="2392944874760387682" name="severity" index="1a6$Vd" />
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+      </concept>
+      <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
+        <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
+      </concept>
+      <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <child id="5861696777036874344" name="description" index="3h3iL1" />
+      </concept>
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+        <property id="5861696777036826305" name="exposure" index="3h3uzC" />
+        <property id="5861696777036826304" name="severity" index="3h3uzD" />
+        <property id="5861696777036826306" name="controlability" index="3h3uzF" />
       </concept>
     </language>
   </registry>
@@ -549,13 +558,13 @@
       <node concept="3Zv_sa" id="7ktuJEFhGA" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mGRK" role="3h3uzw">
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYbEE" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_01" />
       <property role="TrG5h" value="Collision at very high speed with another vehicle" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <node concept="3Zv_sa" id="_wUu$TYbEL" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEI" resolve="Fatal Injury" />
       </node>
@@ -568,13 +577,15 @@
       <node concept="3Zv_sa" id="_wUu$TYbEQ" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEG" resolve="Vehicle Damage" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mGRL" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYbEK" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_02" />
       <property role="TrG5h" value="Collision at high speed with another vehicle" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <node concept="3Zv_sa" id="_wUu$TYbET" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEH" resolve="Severe Injury" />
       </node>
@@ -584,26 +595,30 @@
       <node concept="3Zv_sa" id="_wUu$TYbF7" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEG" resolve="Vehicle Damage" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mGRM" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYbF9" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_03" />
       <property role="TrG5h" value="Collision at low speed with another vehicle" />
-      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
-      <property role="1a6$Vb" value="24PsEXFbNLe/E4" />
-      <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <node concept="3Zv_sa" id="_wUu$TYbFb" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYbFd" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEG" resolve="Vehicle Damage" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mGRN" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYGOc" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_04" />
       <property role="TrG5h" value="Collision at high speed with VRU" />
-      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
-      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
-      <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <node concept="3Zv_sa" id="_wUu$TYGOf" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEI" resolve="Fatal Injury" />
       </node>
@@ -613,18 +628,25 @@
       <node concept="3Zv_sa" id="_wUu$TYGOk" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
+      <node concept="3h3uym" id="55oVyA0mGRO" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+      </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYGOm" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_05" />
       <property role="TrG5h" value="Collision at low speed with VRU" />
-      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
-      <property role="1a6$Vb" value="24PsEXFbNLe/E4" />
-      <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <node concept="3Zv_sa" id="_wUu$TYGOo" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEH" resolve="Severe Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYGOp" role="3Zv_sA">
         <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
+      </node>
+      <node concept="3h3uym" id="55oVyA0mGRP" role="3h3uzw">
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
       </node>
     </node>
   </node>
@@ -645,6 +667,33 @@
     <node concept="2HxQMU" id="_wUu$TYbEJ" role="2HxQMj">
       <property role="2HxQM_" value="LOSS_INJ_03" />
       <property role="TrG5h" value="Light Injury" />
+    </node>
+  </node>
+  <node concept="3h3iLa" id="55oVyA0mSK9">
+    <property role="TrG5h" value="_000_operational_situations" />
+    <node concept="3h3iLe" id="55oVyA0mSKa" role="3h3F1H">
+      <property role="TrG5h" value="OS1" />
+      <node concept="19SGf9" id="55oVyA0mSKb" role="3h3iL1">
+        <node concept="19SUe$" id="55oVyA0mSKc" role="19SJt6">
+          <property role="19SUeA" value="during normal driving on highway in normal conditions at very high speed at day time" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="55oVyA0mSKu" role="3h3F1H">
+      <property role="TrG5h" value="OS2" />
+      <node concept="19SGf9" id="55oVyA0mSKv" role="3h3iL1">
+        <node concept="19SUe$" id="55oVyA0mSKw" role="19SJt6">
+          <property role="19SUeA" value="during normal driving on highway in normal conditions at high speed at day time" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="55oVyA0mSKB" role="3h3F1H">
+      <property role="TrG5h" value="OS3" />
+      <node concept="19SGf9" id="55oVyA0mSKC" role="3h3iL1">
+        <node concept="19SUe$" id="55oVyA0mSKD" role="19SJt6">
+          <property role="19SUeA" value="during normal driving on highway in normal conditions at low speed at day time" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

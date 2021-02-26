@@ -110,13 +110,13 @@
       </concept>
     </language>
     <language id="521724dc-29ef-4d5a-9c15-25f6b680b809" name="com.fasten.safety.hiphops.arch">
-      <concept id="2183730226557155069" name="com.fasten.safety.hiphops.arch.structure.PortFailureModeRefExpression" flags="ng" index="DtHRJ">
+      <concept id="2183730226557155069" name="com.fasten.safety.hiphops.arch.structure.FailureModeRefExpression" flags="ng" index="DtHRJ">
         <child id="6957002747779723394" name="port" index="3anSQx" />
       </concept>
       <concept id="2183730226556973206" name="com.fasten.safety.hiphops.arch.structure.LogicalTypeFailureModes" flags="ng" index="Du1I4">
         <child id="6957002747779324063" name="tpe" index="3agqmW" />
       </concept>
-      <concept id="2183730226556884064" name="com.fasten.safety.hiphops.arch.structure.IFFMEA" flags="ng" index="DuJXM">
+      <concept id="2183730226556884064" name="com.fasten.safety.hiphops.arch.structure.ComponentFailurePropagationLogic" flags="ng" index="DuJXM">
         <reference id="2183730226556884137" name="interf" index="DuJYV" />
       </concept>
       <concept id="6957002747778834774" name="com.fasten.safety.hiphops.arch.structure.FaultTreeContainer" flags="ng" index="3aixLP">

@@ -80,7 +80,10 @@
     </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
       <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
-        <reference id="467505803006179847" name="req" index="0Sh0a" />
+        <child id="7993788941569402916" name="reqRefs" index="hnKMk" />
+      </concept>
+      <concept id="7993788941569402923" name="com.mbeddr.formal.req.base.structure.RequirementRef" flags="ng" index="hnKMr">
+        <reference id="7993788941569402924" name="req" index="hnKMs" />
       </concept>
       <concept id="675797132014971924" name="com.mbeddr.formal.req.base.structure.AbstractRequirementRef" flags="ng" index="KAwnX">
         <reference id="675797132014971925" name="req" index="KAwnW" />
@@ -2462,7 +2465,9 @@
         </node>
       </node>
       <node concept="0Sh09" id="_wUu$TZDcw" role="lGtFl">
-        <ref role="0Sh0a" to="rd3y:_wUu$TY_gq" />
+        <node concept="hnKMr" id="55oVyA0r_z1" role="hnKMk">
+          <ref role="hnKMs" to="rd3y:_wUu$TY_gq" />
+        </node>
       </node>
     </node>
     <node concept="2SQmWS" id="_wUu$TY_gz" role="2HcuB8" />

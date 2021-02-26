@@ -63,7 +63,7 @@
     <language slang="l:2ec00dc3-d0e8-497d-8fe3-82d556eb83ba:com.mbeddr.formal.safety.gsn.req" version="0" />
     <language slang="l:7f3eac5a-7f9a-4fbe-8264-f69c70ece985:com.mbeddr.formal.safety.gsn.smv" version="9" />
     <language slang="l:17da266c-02d9-4bbd-b69b-8a656b49f45c:com.mbeddr.formal.safety.hara" version="0" />
-    <language slang="l:a798113f-e2cd-4e21-a8e2-ca1903cb9c43:com.mbeddr.formal.safety.iso26262" version="0" />
+    <language slang="l:a798113f-e2cd-4e21-a8e2-ca1903cb9c43:com.mbeddr.formal.safety.iso26262" version="1" />
     <language slang="l:434b2bfb-bd7a-47c9-bced-b445035e6d96:com.mbeddr.formal.safety.req" version="1" />
     <language slang="l:7e777b53-0a6b-4719-b36d-10475788d49f:com.mbeddr.formal.safety.stamp" version="1" />
     <language slang="l:eccaed1c-88f4-4a5c-9ad8-d1b8c9f330e9:com.mbeddr.formal.safety.stamp.ext" version="0" />
