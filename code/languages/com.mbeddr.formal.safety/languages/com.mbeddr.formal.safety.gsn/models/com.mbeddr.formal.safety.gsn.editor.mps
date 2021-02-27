@@ -13,6 +13,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="56c81845-acaf-48a7-bcd8-e29b36c98dd7" name="de.itemis.mps.editor.diagram.styles" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -489,6 +490,7 @@
       </concept>
       <concept id="1110129820007229393" name="de.itemis.mps.editor.diagram.structure.CellModel_Diagram" flags="ng" index="27vDVx">
         <child id="8433227566816393050" name="layoutAlgorithm" index="35U2g" />
+        <child id="6910723851735171798" name="buttonConfig" index="3sAl1G" />
         <child id="8637411062076630380" name="connectionTypes" index="1xLlFP" />
         <child id="8637411062062914773" name="paletteFolder" index="1y_2dc" />
         <child id="1981294357059564524" name="paletteSources" index="1RuSHk" />
@@ -530,6 +532,14 @@
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
       <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
+      <concept id="6910723851735106293" name="de.itemis.mps.editor.diagram.structure.DiagramButtonConfig" flags="ng" index="3sA_1f">
+        <property id="6910723851735128113" name="hasResetViewButton" index="3sAwEb" />
+        <property id="6910723851735128106" name="hasRelayoutAllEdgesButton" index="3sAwEg" />
+        <property id="6910723851735128104" name="hasLayoutDiagramButton" index="3sAwEi" />
+        <property id="6910723851735128109" name="hasMaximizeDiagramButton" index="3sAwEn" />
+        <property id="6910723851735134386" name="hasZoomOutButton" index="3sAy88" />
+        <property id="6910723851735134380" name="hasZoomInButton" index="3sAy8m" />
+      </concept>
       <concept id="3454709602156468860" name="de.itemis.mps.editor.diagram.structure.ShapeParameterDeclaration" flags="ng" index="1xmO9C">
         <child id="3454709602156468949" name="type" index="1xmOb1" />
       </concept>
@@ -900,6 +910,9 @@
       </node>
       <node concept="PMmxH" id="33qt4wr8ixh" role="1ytjkN">
         <ref role="PMmxG" node="33qt4wr8iwl" resolve="ContextTextArea" />
+        <node concept="xShMh" id="6ucyvMUuFAe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="2fs66k" id="WKGDODOQlV" role="1idfhu">
         <node concept="3clFbS" id="WKGDODOQlW" role="2VODD2">
@@ -942,14 +955,15 @@
       </node>
       <node concept="3EZMnI" id="1e9opmpbvVS" role="1ytjkN">
         <node concept="2iRfu4" id="1e9opmpbvVT" role="2iSdaV" />
-        <node concept="3XFhqQ" id="1e9opmpbvWj" role="3EZMnx" />
         <node concept="PMmxH" id="33qt4wr2MfV" role="3EZMnx">
           <ref role="PMmxG" node="3Ngc4zVhb40" resolve="StrategyTextArea" />
           <node concept="15ARfc" id="1e9opmp8LAT" role="3F10Kt">
             <property role="3$6WeP" value="5" />
           </node>
         </node>
-        <node concept="3XFhqQ" id="1e9opmpbvW$" role="3EZMnx" />
+        <node concept="xShMh" id="31CZDUiP3fV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="2fs66k" id="WKGDODOQfF" role="1idfhu">
         <node concept="3clFbS" id="WKGDODOQfG" role="2VODD2">
@@ -2733,6 +2747,14 @@
       <node concept="39fpm" id="42InK5baDIm" role="35U2g">
         <property role="1NdBj4" value="6Bd7VwqYQBY/DOWN" />
       </node>
+      <node concept="3sA_1f" id="6ucyvMUx0gv" role="3sAl1G">
+        <property role="3sAwEi" value="true" />
+        <property role="3sAwEg" value="true" />
+        <property role="3sAwEn" value="true" />
+        <property role="3sAwEb" value="true" />
+        <property role="3sAy8m" value="true" />
+        <property role="3sAy88" value="true" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1qrXfdH2wAj">
@@ -2850,6 +2872,9 @@
       </node>
       <node concept="PMmxH" id="33qt4wr7xfb" role="1ytjkN">
         <ref role="PMmxG" node="33qt4wr7xeK" resolve="AssumptionTextArea" />
+        <node concept="xShMh" id="7lPNUDMsm$0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="2fs66k" id="WKGDODOQjm" role="1idfhu">
         <node concept="3clFbS" id="WKGDODOQjn" role="2VODD2">
@@ -3211,11 +3236,9 @@
       </node>
       <node concept="3EZMnI" id="1e9opmpclHS" role="1ytjkN">
         <node concept="2iRfu4" id="1e9opmpclHT" role="2iSdaV" />
-        <node concept="3XFhqQ" id="1e9opmpclId" role="3EZMnx" />
         <node concept="PMmxH" id="33qt4wr6jXJ" role="3EZMnx">
           <ref role="PMmxG" node="33qt4wr6jMT" resolve="SolutionTextArea" />
         </node>
-        <node concept="3XFhqQ" id="1e9opmpclIq" role="3EZMnx" />
         <node concept="xShMh" id="2QkJsC6y2Za" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -9820,6 +9843,9 @@
       </node>
       <node concept="PMmxH" id="2TfVCPOMBcg" role="1ytjkN">
         <ref role="PMmxG" node="2TfVCPOME$g" resolve="JustificationTextArea" />
+        <node concept="xShMh" id="7lPNUDMsmze" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="2fs66k" id="2TfVCPOMBch" role="1idfhu">
         <node concept="3clFbS" id="2TfVCPOMBci" role="2VODD2">
