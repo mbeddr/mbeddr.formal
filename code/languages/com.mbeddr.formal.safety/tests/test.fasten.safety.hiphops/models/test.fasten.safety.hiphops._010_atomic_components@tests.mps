@@ -22,7 +22,6 @@
     <import index="zsc5" ref="r:fc2953cc-af52-42fa-8e2a-cc41987cb142(com.fasten.safety.hiphops.arch.structure)" />
     <import index="7wpd" ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21/r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.util)" />
     <import index="mqum" ref="r:ec874b45-e888-42e6-995a-a298cefdff55(com.mbeddr.mpsutil.comparator.code)" />
-    <import index="9cln" ref="r:d7458d19-60ce-4f7a-a838-9ee1ecb1ba89(com.fasten.safety.hiphops.sandbox._010_smoke)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -730,28 +729,28 @@
       <node concept="1POhia" id="5g1NREKPzJk" role="1qenE9">
         <property role="TrG5h" value="_dummy" />
         <node concept="DuJXM" id="1TeaL8RdXqH" role="1POhhj">
-          <ref role="DuJYV" to="9cln:1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
+          <ref role="DuJYV" to="o8e:1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
           <node concept="DtCCM" id="62cfieEQj9X" role="DuvRR">
             <node concept="3$NFnr" id="5g1NREKOpVE" role="1hIEvT">
-              <ref role="3$NFno" to="9cln:5g1NREKNQIO" resolve="innacurate_computation" />
+              <ref role="3$NFno" to="o8e:5g1NREKNQIO" resolve="innacurate_computation" />
             </node>
             <node concept="DtHRJ" id="62cfieEQj9Z" role="1hIEvZ">
-              <ref role="DtHRG" to="9cln:62cfieEOvEC" resolve="speed innacurate" />
+              <ref role="DtHRG" to="o8e:62cfieEOvEC" resolve="speed innacurate" />
               <node concept="3Ug1Ap" id="62cfieEQjaj" role="3anSQx">
-                <ref role="3Ug1Ao" to="9cln:1TeaL8RdujM" resolve="plausibilizedSpeed" />
+                <ref role="3Ug1Ao" to="o8e:1TeaL8RdujM" resolve="plausibilizedSpeed" />
               </node>
             </node>
             <node concept="2HbMDt" id="3txYam0crX6" role="1hIEvS">
               <node concept="DtHRJ" id="3txYam0baKK" role="2H9Iav">
-                <ref role="DtHRG" to="9cln:62cfieENIjB" resolve="speed too high" />
+                <ref role="DtHRG" to="o8e:62cfieENIjB" resolve="speed too high" />
                 <node concept="3Ug1Ap" id="3txYam0baKL" role="3anSQx">
-                  <ref role="3Ug1Ao" to="9cln:1TeaL8Rdukn" resolve="speed" />
+                  <ref role="3Ug1Ao" to="o8e:1TeaL8Rdukn" resolve="speed" />
                 </node>
               </node>
               <node concept="DtHRJ" id="3txYam0baLc" role="2H9Ial">
-                <ref role="DtHRG" to="9cln:62cfieENIji" resolve="speed too low" />
+                <ref role="DtHRG" to="o8e:62cfieENIji" resolve="speed too low" />
                 <node concept="3Ug1Ap" id="3txYam0baLd" role="3anSQx">
-                  <ref role="3Ug1Ao" to="9cln:1TeaL8Rdukn" resolve="speed" />
+                  <ref role="3Ug1Ao" to="o8e:1TeaL8Rdukn" resolve="speed" />
                 </node>
               </node>
             </node>
