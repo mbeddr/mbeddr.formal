@@ -34,7 +34,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -191,7 +191,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -265,10 +265,10 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -1026,6 +1026,19 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3GkK2EESFDn" role="jymVt" />
+    <node concept="Wx3nA" id="6ucyvMU$kDN" role="jymVt">
+      <property role="TrG5h" value="ANALYZERS_DIR_PROPERTY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6ucyvMU$7a8" role="1B3o_S" />
+      <node concept="17QB3L" id="6ucyvMU$bkm" role="1tU5fm" />
+      <node concept="Xl_RD" id="6ucyvMU$oGe" role="33vP2m">
+        <property role="Xl_RC" value="ANALYZERS_DIR" />
+      </node>
+      <node concept="NWlO9" id="6ucyvMU$CR6" role="lGtFl">
+        <property role="NWlVz" value="This is used on the build server to make explicit the location of executables such as nusmv, spin, ..." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6ucyvMUJTj6" role="jymVt" />
     <node concept="Wx3nA" id="1XFitunRf7A" role="jymVt">
       <property role="TrG5h" value="IGNORE_TIMEOUT" />
       <property role="3TUv4t" value="true" />
@@ -1841,6 +1854,124 @@
                 <node concept="37vLTw" id="1XFitunRo_4" role="3uHU7B">
                   <ref role="3cqZAo" node="1XFitunRf76" resolve="timeoutInSeconds" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6ucyvMU_3lt" role="3cqZAp" />
+        <node concept="3SKdUt" id="6ucyvMU_9i3" role="3cqZAp">
+          <node concept="1PaTwC" id="6ucyvMU_9i4" role="1aUNEU">
+            <node concept="3oM_SD" id="6ucyvMU_9i5" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_cgA" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_chv" role="1PaTwD">
+              <property role="3oM_SC" value="property" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_c$B" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_c_7" role="1PaTwD">
+              <property role="3oM_SC" value="set," />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_cZX" role="1PaTwD">
+              <property role="3oM_SC" value="use" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_d1_" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_d1P" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_d2W" role="1PaTwD">
+              <property role="3oM_SC" value="build" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_d4v" role="1PaTwD">
+              <property role="3oM_SC" value="fully" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_d71" role="1PaTwD">
+              <property role="3oM_SC" value="qualified" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_dfy" role="1PaTwD">
+              <property role="3oM_SC" value="path" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_diL" role="1PaTwD">
+              <property role="3oM_SC" value="where" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_dkV" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_dl_" role="1PaTwD">
+              <property role="3oM_SC" value="analyzer" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_dnD" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="6ucyvMU_dot" role="1PaTwD">
+              <property role="3oM_SC" value="located" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6ucyvMUzYz3" role="3cqZAp">
+          <node concept="3clFbS" id="6ucyvMUzYz5" role="3clFbx">
+            <node concept="3clFbF" id="6ucyvMUCGxe" role="3cqZAp">
+              <node concept="2OqwBi" id="6ucyvMUCGxb" role="3clFbG">
+                <node concept="10M0yZ" id="6ucyvMUCGxc" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="6ucyvMUCGxd" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <node concept="3cpWs3" id="6ucyvMUCMC4" role="37wK5m">
+                    <node concept="Xl_RD" id="6ucyvMUCKw7" role="3uHU7B">
+                      <property role="Xl_RC" value="Found ANALYZERS DIR PROPERTY: " />
+                    </node>
+                    <node concept="2YIFZM" id="6ucyvMUCN3y" role="3uHU7w">
+                      <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String)" resolve="getenv" />
+                      <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                      <node concept="37vLTw" id="6ucyvMULnH0" role="37wK5m">
+                        <ref role="3cqZAo" node="6ucyvMU$kDN" resolve="ANALYZERS_DIR_PROPERTY" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6ucyvMU$TNh" role="3cqZAp">
+              <node concept="37vLTI" id="6ucyvMU$UBj" role="3clFbG">
+                <node concept="37vLTw" id="6ucyvMU$TNf" role="37vLTJ">
+                  <ref role="3cqZAo" node="7YBOkhBhwOT" resolve="toolBinaryName" />
+                </node>
+                <node concept="3cpWs3" id="6ucyvMU_1iL" role="37vLTx">
+                  <node concept="37vLTw" id="6ucyvMU_2vS" role="3uHU7w">
+                    <ref role="3cqZAo" node="7YBOkhBhwOT" resolve="toolBinaryName" />
+                  </node>
+                  <node concept="3cpWs3" id="6ucyvMU$YrO" role="3uHU7B">
+                    <node concept="2YIFZM" id="6ucyvMUAPes" role="3uHU7B">
+                      <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                      <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String)" resolve="getenv" />
+                      <node concept="37vLTw" id="6ucyvMULvsK" role="37wK5m">
+                        <ref role="3cqZAo" node="6ucyvMU$kDN" resolve="ANALYZERS_DIR_PROPERTY" />
+                      </node>
+                    </node>
+                    <node concept="10M0yZ" id="6ucyvMU_0s5" role="3uHU7w">
+                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                      <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="6ucyvMU$S_w" role="3clFbw">
+            <node concept="10Nm6u" id="6ucyvMU$TEL" role="3uHU7w" />
+            <node concept="2YIFZM" id="6ucyvMUAOgI" role="3uHU7B">
+              <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String)" resolve="getenv" />
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <node concept="37vLTw" id="6ucyvMULrJG" role="37wK5m">
+                <ref role="3cqZAo" node="6ucyvMU$kDN" resolve="ANALYZERS_DIR_PROPERTY" />
               </node>
             </node>
           </node>
