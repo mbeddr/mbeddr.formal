@@ -40,7 +40,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -204,7 +204,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
@@ -266,10 +266,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -1673,26 +1673,8 @@
               <node concept="3cpWsn" id="1IhJc2tHQ2S" role="3cpWs9">
                 <property role="TrG5h" value="dirSeparator" />
                 <node concept="17QB3L" id="1IhJc2tHR8b" role="1tU5fm" />
-                <node concept="3K4zz7" id="1IhJc2tHUwW" role="33vP2m">
-                  <node concept="Xl_RD" id="1IhJc2tHULa" role="3K4E3e">
-                    <property role="Xl_RC" value="\\\\" />
-                  </node>
-                  <node concept="10M0yZ" id="1IhJc2tHVfx" role="3K4GZi">
-                    <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                    <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                  </node>
-                  <node concept="2OqwBi" id="1IhJc2tHSiW" role="3K4Cdx">
-                    <node concept="10M0yZ" id="1IhJc2tHQ2T" role="2Oq$k0">
-                      <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                      <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                    </node>
-                    <node concept="liA8E" id="1IhJc2tHTav" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                      <node concept="Xl_RD" id="1IhJc2tHTsg" role="37wK5m">
-                        <property role="Xl_RC" value="\\" />
-                      </node>
-                    </node>
-                  </node>
+                <node concept="Xl_RD" id="6ucyvMUJXAT" role="33vP2m">
+                  <property role="Xl_RC" value="/" />
                 </node>
               </node>
             </node>
@@ -1717,6 +1699,41 @@
                       <ref role="3cqZAo" node="1IhJc2tHQ2S" resolve="dirSeparator" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6ucyvMUJXGi" role="3cqZAp">
+              <node concept="3clFbS" id="6ucyvMUJXGk" role="3clFbx">
+                <node concept="3clFbF" id="6ucyvMUJYnX" role="3cqZAp">
+                  <node concept="37vLTI" id="6ucyvMUJYsL" role="3clFbG">
+                    <node concept="2OqwBi" id="6ucyvMUJYWd" role="37vLTx">
+                      <node concept="2OqwBi" id="6ucyvMUJYzw" role="2Oq$k0">
+                        <node concept="37vLTw" id="6ucyvMUJYt$" role="2Oq$k0">
+                          <ref role="3cqZAo" node="48FvRI$xTEC" resolve="dir" />
+                        </node>
+                        <node concept="liA8E" id="6ucyvMUJYDV" role="2OqNvi">
+                          <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6ucyvMUJZi7" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
+                        <node concept="Xl_RD" id="6ucyvMUJZip" role="37wK5m">
+                          <property role="Xl_RC" value="\\\\" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="6ucyvMUJYnV" role="37vLTJ">
+                      <ref role="3cqZAo" node="48FvRI$$ELi" resolve="segments" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6ucyvMUJYan" role="3clFbw">
+                <node concept="37vLTw" id="6ucyvMUJXKV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="48FvRI$$ELi" resolve="segments" />
+                </node>
+                <node concept="liA8E" id="6ucyvMUJYn9" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
                 </node>
               </node>
             </node>
