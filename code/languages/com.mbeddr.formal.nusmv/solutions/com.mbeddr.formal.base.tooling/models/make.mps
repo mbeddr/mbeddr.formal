@@ -128,6 +128,7 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -1728,12 +1729,15 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="6ucyvMUJYan" role="3clFbw">
-                <node concept="37vLTw" id="6ucyvMUJXKV" role="2Oq$k0">
-                  <ref role="3cqZAo" node="48FvRI$$ELi" resolve="segments" />
+              <node concept="3clFbC" id="6ucyvMUMdSy" role="3clFbw">
+                <node concept="3cmrfG" id="6ucyvMUMep$" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
                 </node>
-                <node concept="liA8E" id="6ucyvMUJYn9" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+                <node concept="2OqwBi" id="6ucyvMUJYan" role="3uHU7B">
+                  <node concept="37vLTw" id="6ucyvMUJXKV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="48FvRI$$ELi" resolve="segments" />
+                  </node>
+                  <node concept="1Rwk04" id="6ucyvMUMdaP" role="2OqNvi" />
                 </node>
               </node>
             </node>
