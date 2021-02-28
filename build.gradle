@@ -16,6 +16,7 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 }
 
+apply plugin: 'modelcheck'
 
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
@@ -208,10 +209,20 @@ task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [build_fo
     script new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
 }
 
-task run_smv_tests(type: TestLanguages, dependsOn: build_formal_languages) {
+task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
     print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-nusmv-tests.xml")
+	doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.antLib.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport_smv")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport_smv/index.html")
+    }
 }
 
 task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
@@ -230,7 +241,23 @@ task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languag
     }
 }
 
-check.dependsOn run_smv_tests
+task run_all_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
+    description "Will execute all tests from command line"
+    print "mbeddr.formal.home = " + rootDir;
+	script new File("$buildDir/scripts/build-all-tests.xml")
+	doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.antLib.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
+
+check.dependsOn run_all_tests
 
 task package_formal(type: Zip, dependsOn: build_formal_languages) {
     archiveBaseName = 'com.mbeddr.formal'
@@ -289,4 +316,18 @@ task cleanMps(type: Delete) {
 defaultTasks 'build_fasten_safety_distribution'
 
 task rebuild(dependsOn:[clean, build_formal_languages])
+
+File modelcheckresult = new File("$buildDir/modelcheckresult.xml")
+
+modelcheck {
+    macros = [new Macro("mbeddr.formal.home", "$projectDir")]
+	//pluginLocation = new File("$buildDir/mps/plugins")
+	//plugins = [new Plugin("com.mbeddr.formal.base", "mbeddr.formal.base"), new Plugin("com.mbeddr.formal.nusmv", "mbeddr.formal.nusmv"), new Plugin("com.mbeddr.formal.req", "mbeddr.formal.req"), new Plugin("com.mbeddr.formal.safety", "mbeddr.formal.safety"), new Plugin("com.mbeddr.formal.spin", "mbeddr.formal.spin"), new Plugin("de.itemis.mps.editor.diagrams", "slisson.diagrams")]
+    projectLocation = new File("$projectDir/code/tutorial-safety/")
+    mpsConfig = configurations.mps
+    junitFile = modelcheckresult
+    errorNoFail = true
+    maxHeap = "3G"
+    modules = ["com.mbeddr.formal.safety.tutorial", "com.mbeddr.formal.safety.users_guide"]
+}
 
