@@ -7,6 +7,9 @@ env:
   MPS_VER: "2020.2"
   MPS_ZIP: "http://download.jetbrains.com/mps/2020.2/MPS-2020.2.2.zip"
   JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
+  FASTEN_DISTRIBUTION_PACKAGE: "/home/runner/work/mbeddr.formal/mbeddr.formal/build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-1.0-SNAPSHOT.zip"
+  FASTEN_DISTRIBUTION_DIR: "/home/runner/work/mbeddr.formal/mbeddr.formal/build/fasten-1.0-SNAPSHOT"
+  ANALYZERS_DIR: "/home/runner/work/mbeddr.formal/mbeddr.formal/rcp_resources/external_tools"
 
 jobs:
   build:
@@ -44,7 +47,7 @@ jobs:
         
         echo "Gradle Properties:"
         cat gradle.properties
-      
+
     - name: Set up Gradle
       run: |
         chmod +x ./gradlew
@@ -65,22 +68,37 @@ jobs:
         dependencies-cache-enabled: true
         configuration-cache-enabled: true
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
-        
-    - name: Run FASTEN.Safe Tests 
+
+    #- name: Preparing for Checking Consistency of the FASTEN-Safety Tutorial
+    #  run: |
+    #    unzip -o ${FASTEN_DISTRIBUTION_PACKAGE} -d /home/runner/work/mbeddr.formal/mbeddr.formal/build
+    #    /bin/cp -rf ${FASTEN_DISTRIBUTION_DIR}/plugins/* '/home/runner/MPS '${MPS_VER}'/plugins'
+    #    ls -lR '/home/runner/MPS '${MPS_VER}
+
+    #- name: Check Consistency of the FASTEN-Safety Tutorial
+    #  uses: eskatos/gradle-command-action@v1
+    #  with:
+    #    arguments: checkModels
+    #    wrapper-cache-enabled: true
+    #    dependencies-cache-enabled: true
+    #    configuration-cache-enabled: true
+    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+
+    - name: Run Tests
       uses: eskatos/gradle-command-action@v1
       with: 
-        arguments: run_safety_tests
+        arguments: run_all_tests
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         configuration-cache-enabled: true    
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
-        
+
     - name: Publish Test Report
       uses: mikepenz/action-junit-report@v2
       with:
         report_paths: 'build/**/TEST*.xml'
         github_token: ${{ secrets.GITHUB_TOKEN }}
-   
+
     - name: Archive distribution
       uses: actions/upload-artifact@v1
       with:
