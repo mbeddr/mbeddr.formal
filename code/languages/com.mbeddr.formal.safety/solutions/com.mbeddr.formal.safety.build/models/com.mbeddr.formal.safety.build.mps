@@ -2130,6 +2130,21 @@
             <ref role="1Busuk" node="4clv$caDw5k" resolve="com.fasten.req.odd" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4GKcJtbnG0Y" role="3bR37C">
+          <node concept="3bR9La" id="4GKcJtbnG0Z" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4GKcJtbnG10" role="3bR37C">
+          <node concept="3bR9La" id="4GKcJtbnG11" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4GKcJtbnG12" role="3bR37C">
+          <node concept="3bR9La" id="4GKcJtbnG13" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7Jm8RM1zoDc" role="2G$12L">
         <property role="BnDLt" value="true" />
