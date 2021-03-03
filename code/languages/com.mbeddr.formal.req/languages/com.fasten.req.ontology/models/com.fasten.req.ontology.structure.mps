@@ -247,7 +247,6 @@
       <property role="IQ2ns" value="6241199845467736444" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="conceptRef" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1wKSXwEBhCv" resolve="OntologyConceptRef" />
     </node>
   </node>
