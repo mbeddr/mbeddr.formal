@@ -4,7 +4,7 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="1" />
-    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="-1" />
+    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="1" />
   </languages>
   <imports />
   <registry>
@@ -23,10 +23,14 @@
       <concept id="1743143573359761951" name="com.fasten.req.ontology.structure.OntologyConceptRef" flags="ng" index="MFvB7">
         <reference id="1743143573359761952" name="ontologyConcept" index="MFvBS" />
       </concept>
+      <concept id="6241199845467716101" name="com.fasten.req.ontology.structure.ConceptRelationBase" flags="ng" index="1BN$wO">
+        <child id="6241199845467736444" name="conceptRef" index="1BNJHd" />
+      </concept>
+      <concept id="6241199845467716102" name="com.fasten.req.ontology.structure.AttributeRelation" flags="ng" index="1BN$wR" />
       <concept id="4312077340877652056" name="com.fasten.req.ontology.structure.OntologyConcept" flags="ng" index="3SOpcA">
         <reference id="4312077340877652059" name="superConcept" index="3SOpc_" />
-        <child id="2211008038588194073" name="attributes" index="2xew$1" />
         <child id="1433630071281334407" name="explanation" index="1hVZTN" />
+        <child id="6241199845467716106" name="relations" index="1BN$wV" />
       </concept>
       <concept id="4312077340877652053" name="com.fasten.req.ontology.structure.Ontology" flags="ng" index="3SOpcF">
         <child id="5803911524651728223" name="description" index="2I8HYo" />
@@ -131,101 +135,64 @@
     <node concept="3SOpcA" id="5o42uxihVRd" role="3SOpfD">
       <property role="TrG5h" value="Road Capacity" />
       <ref role="3SOpc_" node="5o42uxih0AL" resolve="Road type and capacity" />
-      <node concept="MFvB7" id="5o42uxihVVk" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
+      <node concept="1BN$wR" id="5qtcz4LmGMZ" role="1BN$wV">
+        <node concept="MFvB7" id="5qtcz4LmGN0" role="1BNJHd">
+          <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
+        </node>
       </node>
     </node>
     <node concept="2CGw_7" id="5o42uxihVVm" role="3SOpfD" />
     <node concept="3SOpcA" id="5o42uxihVWj" role="3SOpfD">
       <property role="TrG5h" value="Road Location by Zone" />
       <ref role="3SOpc_" node="5o42uxih0AL" resolve="Road type and capacity" />
-      <node concept="MFvB7" id="5o42uxihVWk" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihVXl" role="3SOpfD">
       <property role="TrG5h" value="Residential" />
       <ref role="3SOpc_" node="5o42uxihVWj" resolve="Road Location by Zone" />
-      <node concept="MFvB7" id="5o42uxihVXm" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihVXT" role="3SOpfD">
       <property role="TrG5h" value="Low Density" />
       <ref role="3SOpc_" node="5o42uxihVXl" resolve="Residential" />
-      <node concept="MFvB7" id="5o42uxihVXU" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihVYv" role="3SOpfD">
       <property role="TrG5h" value="Mixed-Use Medium Density" />
       <ref role="3SOpc_" node="5o42uxihVXl" resolve="Residential" />
-      <node concept="MFvB7" id="5o42uxihVYw" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihVZ7" role="3SOpfD">
       <property role="TrG5h" value="Mixed-Use Medium-High Density" />
       <ref role="3SOpc_" node="5o42uxihVXl" resolve="Residential" />
-      <node concept="MFvB7" id="5o42uxihVZ8" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihVZL" role="3SOpfD">
       <property role="TrG5h" value="Mixed-Use High Density" />
       <ref role="3SOpc_" node="5o42uxihVXl" resolve="Residential" />
-      <node concept="MFvB7" id="5o42uxihVZM" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW0t" role="3SOpfD">
       <property role="TrG5h" value="Commercial" />
       <ref role="3SOpc_" node="5o42uxihVWj" resolve="Road Location by Zone" />
-      <node concept="MFvB7" id="5o42uxihW0u" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW1b" role="3SOpfD">
       <property role="TrG5h" value="City Center" />
       <ref role="3SOpc_" node="5o42uxihW0t" resolve="Commercial" />
-      <node concept="MFvB7" id="5o42uxihW1c" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW1V" role="3SOpfD">
       <property role="TrG5h" value="Commercial Center" />
       <ref role="3SOpc_" node="5o42uxihW0t" resolve="Commercial" />
-      <node concept="MFvB7" id="5o42uxihW1W" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW2H" role="3SOpfD">
       <property role="TrG5h" value="Community Commercial" />
       <ref role="3SOpc_" node="5o42uxihW0t" resolve="Commercial" />
-      <node concept="MFvB7" id="5o42uxihW2I" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW3x" role="3SOpfD">
       <property role="TrG5h" value="Neighbouring Commercial" />
       <ref role="3SOpc_" node="5o42uxihW0t" resolve="Commercial" />
-      <node concept="MFvB7" id="5o42uxihW3y" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW4n" role="3SOpfD">
       <property role="TrG5h" value="Convenience Commercial" />
       <ref role="3SOpc_" node="5o42uxihW0t" resolve="Commercial" />
-      <node concept="MFvB7" id="5o42uxihW4o" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW5f" role="3SOpfD">
       <property role="TrG5h" value="Office" />
       <ref role="3SOpc_" node="5o42uxihW0t" resolve="Commercial" />
-      <node concept="MFvB7" id="5o42uxihW5g" role="2xew$1">
-        <ref role="MFvBS" node="5o42uxihVSl" resolve="Road Capacity Attribute" />
-      </node>
     </node>
     <node concept="3SOpcA" id="5o42uxihW73" role="3SOpfD">
       <property role="TrG5h" value="Employment" />
@@ -361,8 +328,10 @@
     <node concept="3SOpcA" id="1f_hJh21LVJ" role="3SOpfD">
       <property role="TrG5h" value="Cross Section Design" />
       <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
-      <node concept="MFvB7" id="1f_hJh21MJB" role="2xew$1">
-        <ref role="MFvBS" node="1f_hJh21M4A" resolve="Cross Section Design Attribute" />
+      <node concept="1BN$wR" id="5qtcz4LmGNr" role="1BN$wV">
+        <node concept="MFvB7" id="5qtcz4LmGNs" role="1BNJHd">
+          <ref role="MFvBS" node="1f_hJh21M4A" resolve="Cross Section Design Attribute" />
+        </node>
       </node>
     </node>
     <node concept="3SOpcA" id="1f_hJh22k64" role="3SOpfD">

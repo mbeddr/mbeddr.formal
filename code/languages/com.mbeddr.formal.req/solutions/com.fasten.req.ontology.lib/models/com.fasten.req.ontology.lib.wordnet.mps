@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="1" />
-    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="-1" />
+    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="1" />
   </languages>
   <imports />
   <registry>
@@ -11,9 +11,13 @@
       <concept id="1743143573359761951" name="com.fasten.req.ontology.structure.OntologyConceptRef" flags="ng" index="MFvB7">
         <reference id="1743143573359761952" name="ontologyConcept" index="MFvBS" />
       </concept>
+      <concept id="6241199845467716101" name="com.fasten.req.ontology.structure.ConceptRelationBase" flags="ng" index="1BN$wO">
+        <child id="6241199845467736444" name="conceptRef" index="1BNJHd" />
+      </concept>
+      <concept id="6241199845467716102" name="com.fasten.req.ontology.structure.AttributeRelation" flags="ng" index="1BN$wR" />
       <concept id="4312077340877652056" name="com.fasten.req.ontology.structure.OntologyConcept" flags="ng" index="3SOpcA">
         <reference id="4312077340877652059" name="superConcept" index="3SOpc_" />
-        <child id="2211008038588194073" name="attributes" index="2xew$1" />
+        <child id="6241199845467716106" name="relations" index="1BN$wV" />
       </concept>
       <concept id="4312077340877652053" name="com.fasten.req.ontology.structure.Ontology" flags="ng" index="3SOpcF">
         <child id="4312077340877652119" name="concepts" index="3SOpfD" />
@@ -49,8 +53,10 @@
     <node concept="3SOpcA" id="1wKSXwEBhC1" role="3SOpfD">
       <property role="TrG5h" value="physical entity" />
       <ref role="3SOpc_" node="1UJ51yZA8__" resolve="entity" />
-      <node concept="MFvB7" id="1UJ51yZA8AA" role="2xew$1">
-        <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
+      <node concept="1BN$wR" id="5qtcz4LmGNt" role="1BN$wV">
+        <node concept="MFvB7" id="5qtcz4LmGNu" role="1BNJHd">
+          <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
+        </node>
       </node>
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8_T" role="3SOpfD">
@@ -96,8 +102,10 @@
     <node concept="3SOpcA" id="1wKSXwECsWt" role="3SOpfD">
       <property role="TrG5h" value="clothing" />
       <ref role="3SOpc_" node="1wKSXwEBhC7" resolve="object" />
-      <node concept="MFvB7" id="1UJ51yZA8A$" role="2xew$1">
-        <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
+      <node concept="1BN$wR" id="5qtcz4LmGNv" role="1BN$wV">
+        <node concept="MFvB7" id="5qtcz4LmGNw" role="1BNJHd">
+          <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
+        </node>
       </node>
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8$v" role="3SOpfD">
