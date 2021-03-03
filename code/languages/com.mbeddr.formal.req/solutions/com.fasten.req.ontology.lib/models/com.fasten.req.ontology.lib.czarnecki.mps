@@ -47,7 +47,7 @@
     <property role="TrG5h" value="czarnecki_part_01_road_structure" />
     <node concept="19SGf9" id="7gUa1Zsx7gm" role="2I8HYo">
       <node concept="19SUe$" id="7gUa1Zsx7gn" role="19SJt6">
-        <property role="19SUeA" value="This ontology is taken from&#10;&quot;Operational World Model Ontology for Automated Driving Systems Part 1: Road Structure&quot; &#10;by Krzysztof Czarnecki" />
+        <property role="19SUeA" value="This ontology is taken from&#10;&quot;Operational World Model Ontology for Automated Driving Systems - Part 1: Road Structure&quot;, and&#10;&quot;Operational World Model Ontology for Automated Driving Systems - Part 2: Road Users, Animals, Other Obstacles, and Environmental Conditions&quot;&#10;by Krzysztof Czarnecki" />
       </node>
     </node>
     <node concept="3SOpcA" id="7gUa1Zsy22B" role="3SOpfD">
@@ -60,14 +60,747 @@
     <node concept="3SOpcA" id="7gUa1ZsxKWd" role="3SOpfD">
       <property role="TrG5h" value="Road Users" />
       <ref role="3SOpc_" node="7gUa1Zsy22B" resolve="WISE_Lab_TopConcept" />
+      <node concept="1BN$wR" id="2cECkJ_k$ch" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_k$cj" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_k$3C" resolve="road user behavior" />
+        </node>
+      </node>
     </node>
+    <node concept="3SOpcA" id="2cECkJ_jUM6" role="3SOpfD">
+      <property role="TrG5h" value="ground vehicles including their occupants" />
+      <ref role="3SOpc_" node="7gUa1ZsxKWd" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jURI" role="3SOpfD">
+      <property role="TrG5h" value="road vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jUM6" resolve="ground vehicles including their occupants" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jUXn" role="3SOpfD">
+      <property role="TrG5h" value="motor vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jURI" resolve="road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jVvy" role="3SOpfD">
+      <property role="TrG5h" value="passenger cars" />
+      <ref role="3SOpc_" node="2cECkJ_jUXn" resolve="motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0Xl" role="3SOpfD">
+      <property role="TrG5h" value="microcar" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0Rg" role="3SOpfD">
+      <property role="TrG5h" value="sedan" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0Lc" role="3SOpfD">
+      <property role="TrG5h" value="hatchback" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0F9" role="3SOpfD">
+      <property role="TrG5h" value="station wagon" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0_7" role="3SOpfD">
+      <property role="TrG5h" value="stretch limousine" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0v6" role="3SOpfD">
+      <property role="TrG5h" value="coupe" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0p6" role="3SOpfD">
+      <property role="TrG5h" value="convertible" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jZVl" role="3SOpfD">
+      <property role="TrG5h" value="van" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0j7" role="3SOpfD">
+      <property role="TrG5h" value="microvan" />
+      <ref role="3SOpc_" node="2cECkJ_jZVl" resolve="van" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k0d9" role="3SOpfD">
+      <property role="TrG5h" value="minivan" />
+      <ref role="3SOpc_" node="2cECkJ_jZVl" resolve="van" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k07c" role="3SOpfD">
+      <property role="TrG5h" value="multi-purpose passenger vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_jZVl" resolve="van" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k01g" role="3SOpfD">
+      <property role="TrG5h" value="cargo van" />
+      <ref role="3SOpc_" node="2cECkJ_jZVl" resolve="van" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jZPr" role="3SOpfD">
+      <property role="TrG5h" value="sport utility vehicle (SUV)" />
+      <ref role="3SOpc_" node="2cECkJ_jVvy" resolve="passenger cars" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jVpN" role="3SOpfD">
+      <property role="TrG5h" value="trucks" />
+      <ref role="3SOpc_" node="2cECkJ_jUXn" resolve="motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3zj" role="3SOpfD">
+      <property role="TrG5h" value="combination of vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3Kk" role="3SOpfD">
+      <property role="TrG5h" value="articulated truck" />
+      <ref role="3SOpc_" node="2cECkJ_k3zj" resolve="combination of vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3DN" role="3SOpfD">
+      <property role="TrG5h" value="road train" />
+      <ref role="3SOpc_" node="2cECkJ_k3zj" resolve="combination of vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3sO" role="3SOpfD">
+      <property role="TrG5h" value="pick-up truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3mm" role="3SOpfD">
+      <property role="TrG5h" value="motor home" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3fT" role="3SOpfD">
+      <property role="TrG5h" value="box truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k39t" role="3SOpfD">
+      <property role="TrG5h" value="flat bed truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k332" role="3SOpfD">
+      <property role="TrG5h" value="logging truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2WC" role="3SOpfD">
+      <property role="TrG5h" value="long carrier truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2Qf" role="3SOpfD">
+      <property role="TrG5h" value="platform truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2JR" role="3SOpfD">
+      <property role="TrG5h" value="dump truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2Dw" role="3SOpfD">
+      <property role="TrG5h" value="tank truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2za" role="3SOpfD">
+      <property role="TrG5h" value="heavy hauler (possibly with heavy hauler trailer)" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2sP" role="3SOpfD">
+      <property role="TrG5h" value="waste collection truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2mx" role="3SOpfD">
+      <property role="TrG5h" value="armoured vehicle (for carying valuables)" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k2ge" role="3SOpfD">
+      <property role="TrG5h" value="snow plow truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k29W" role="3SOpfD">
+      <property role="TrG5h" value="tow truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k23F" role="3SOpfD">
+      <property role="TrG5h" value="crane equipped breakdown vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1Xr" role="3SOpfD">
+      <property role="TrG5h" value="cement mixer" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1Rc" role="3SOpfD">
+      <property role="TrG5h" value="mobile crane" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1KY" role="3SOpfD">
+      <property role="TrG5h" value="truck tractor unit" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1EL" role="3SOpfD">
+      <property role="TrG5h" value="three, four, five or six axes articulated truck" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1$_" role="3SOpfD">
+      <property role="TrG5h" value="double road train" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1uq" role="3SOpfD">
+      <property role="TrG5h" value="triple road train" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1og" role="3SOpfD">
+      <property role="TrG5h" value="light duty trucks" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1i7" role="3SOpfD">
+      <property role="TrG5h" value="medium trucks" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k1bZ" role="3SOpfD">
+      <property role="TrG5h" value="heavy trucks" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k15S" role="3SOpfD">
+      <property role="TrG5h" value="super-heavy trucks" />
+      <ref role="3SOpc_" node="2cECkJ_jVpN" resolve="trucks" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jVk5" role="3SOpfD">
+      <property role="TrG5h" value="buses" />
+      <ref role="3SOpc_" node="2cECkJ_jUXn" resolve="motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4Ml" role="3SOpfD">
+      <property role="TrG5h" value="coach bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4FE" role="3SOpfD">
+      <property role="TrG5h" value="transit bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4nJ" role="3SOpfD">
+      <property role="TrG5h" value="school bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4_0" role="3SOpfD">
+      <property role="TrG5h" value="standard large" />
+      <ref role="3SOpc_" node="2cECkJ_k4nJ" resolve="school bus" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4un" role="3SOpfD">
+      <property role="TrG5h" value="van-type" />
+      <ref role="3SOpc_" node="2cECkJ_k4nJ" resolve="school bus" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4h8" role="3SOpfD">
+      <property role="TrG5h" value="double-decker bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4ay" role="3SOpfD">
+      <property role="TrG5h" value="single articulated bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k43X" role="3SOpfD">
+      <property role="TrG5h" value="bi-articulated bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3Xp" role="3SOpfD">
+      <property role="TrG5h" value="open top bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k3QQ" role="3SOpfD">
+      <property role="TrG5h" value="trolley bus" />
+      <ref role="3SOpc_" node="2cECkJ_jVk5" resolve="buses" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jVeo" role="3SOpfD">
+      <property role="TrG5h" value="motorcycles" />
+      <ref role="3SOpc_" node="2cECkJ_jUXn" resolve="motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5db" role="3SOpfD">
+      <property role="TrG5h" value="two-wheeled motorcycles" />
+      <ref role="3SOpc_" node="2cECkJ_jVeo" resolve="motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6ho" role="3SOpfD">
+      <property role="TrG5h" value="open motorcycle" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6av" role="3SOpfD">
+      <property role="TrG5h" value="standard motorcycle" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k63B" role="3SOpfD">
+      <property role="TrG5h" value="cruising motorcycle" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5WK" role="3SOpfD">
+      <property role="TrG5h" value="touring motorcycle" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5PU" role="3SOpfD">
+      <property role="TrG5h" value="sport motor-cycle" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5J5" role="3SOpfD">
+      <property role="TrG5h" value="off-road motorcycle" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5Ch" role="3SOpfD">
+      <property role="TrG5h" value="moped (aka. motorized bicycle, motor assisted bycicle)" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5xu" role="3SOpfD">
+      <property role="TrG5h" value="underbone" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5qG" role="3SOpfD">
+      <property role="TrG5h" value="scooter" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k5jV" role="3SOpfD">
+      <property role="TrG5h" value="enclosed motorcycle" />
+      <ref role="3SOpc_" node="2cECkJ_k5db" resolve="two-wheeled motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4T1" role="3SOpfD">
+      <property role="TrG5h" value="motorized tricycle" />
+      <ref role="3SOpc_" node="2cECkJ_jVeo" resolve="motorcycles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k56s" role="3SOpfD">
+      <property role="TrG5h" value="open / enclosed motorized tricycle" />
+      <ref role="3SOpc_" node="2cECkJ_k4T1" resolve="motorized tricycle" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k4ZI" role="3SOpfD">
+      <property role="TrG5h" value="freight trycicle" />
+      <ref role="3SOpc_" node="2cECkJ_k4T1" resolve="motorized tricycle" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jV8G" role="3SOpfD">
+      <property role="TrG5h" value="small and low speed vhicles" />
+      <ref role="3SOpc_" node="2cECkJ_jUXn" resolve="motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6A9" role="3SOpfD">
+      <property role="TrG5h" value="golf cart" />
+      <ref role="3SOpc_" node="2cECkJ_jV8G" resolve="small and low speed vhicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6vd" role="3SOpfD">
+      <property role="TrG5h" value="low-speed electric trolley" />
+      <ref role="3SOpc_" node="2cECkJ_jV8G" resolve="small and low speed vhicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6oi" role="3SOpfD">
+      <property role="TrG5h" value="forklift" />
+      <ref role="3SOpc_" node="2cECkJ_jV8G" resolve="small and low speed vhicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jV31" role="3SOpfD">
+      <property role="TrG5h" value="emergency vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jUXn" resolve="motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k794" role="3SOpfD">
+      <property role="TrG5h" value="ambulance" />
+      <ref role="3SOpc_" node="2cECkJ_jV31" resolve="emergency vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k723" role="3SOpfD">
+      <property role="TrG5h" value="fire truck" />
+      <ref role="3SOpc_" node="2cECkJ_jV31" resolve="emergency vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6V3" role="3SOpfD">
+      <property role="TrG5h" value="police car" />
+      <ref role="3SOpc_" node="2cECkJ_jV31" resolve="emergency vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6O4" role="3SOpfD">
+      <property role="TrG5h" value="police motorcycle" />
+      <ref role="3SOpc_" node="2cECkJ_jV31" resolve="emergency vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k6H6" role="3SOpfD">
+      <property role="TrG5h" value="public utility vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_jV31" resolve="emergency vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jV_i" role="3SOpfD">
+      <property role="TrG5h" value="pedacycles" />
+      <ref role="3SOpc_" node="2cECkJ_jURI" resolve="road vehicles" />
+      <node concept="1BN$wR" id="2cECkJ_kmmn" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_kmmr" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_k7Gj" resolve="number of wheels" />
+        </node>
+      </node>
+      <node concept="1BN$wR" id="2cECkJ_kqtw" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_kqtB" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_k7Nn" resolve="rider position" />
+        </node>
+      </node>
+      <node concept="1BN$wR" id="2cECkJ_kqtD" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_kqtS" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_k7Us" resolve="number of riders" />
+        </node>
+      </node>
+      <node concept="1BN$wR" id="2cECkJ_kqtV" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_kqu5" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_k81y" resolve="propulsion" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jYoh" role="3SOpfD">
+      <property role="TrG5h" value="trailers" />
+      <ref role="3SOpc_" node="2cECkJ_jURI" resolve="road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kr3M" role="3SOpfD">
+      <property role="TrG5h" value="trailers designed to be drawn by motor vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jYoh" resolve="trailers" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ks0Q" role="3SOpfD">
+      <property role="TrG5h" value="semi-trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_krTa" role="3SOpfD">
+      <property role="TrG5h" value="full trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_krLv" role="3SOpfD">
+      <property role="TrG5h" value="livestock trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_krDP" role="3SOpfD">
+      <property role="TrG5h" value="boat trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kryc" role="3SOpfD">
+      <property role="TrG5h" value="motorcycle trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_krq$" role="3SOpfD">
+      <property role="TrG5h" value="dolly" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kriX" role="3SOpfD">
+      <property role="TrG5h" value="bus trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_krbn" role="3SOpfD">
+      <property role="TrG5h" value="caravan" />
+      <ref role="3SOpc_" node="2cECkJ_kr3M" resolve="trailers designed to be drawn by motor vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kqu8" role="3SOpfD">
+      <property role="TrG5h" value="trailers designed to be drawn by pedacycles " />
+      <ref role="3SOpc_" node="2cECkJ_jYoh" resolve="trailers" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kqWe" role="3SOpfD">
+      <property role="TrG5h" value="cargo trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kqu8" resolve="trailers designed to be drawn by pedacycles " />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kqOF" role="3SOpfD">
+      <property role="TrG5h" value="human passenger trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kqu8" resolve="trailers designed to be drawn by pedacycles " />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kqH9" role="3SOpfD">
+      <property role="TrG5h" value="child passenger trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kqu8" resolve="trailers designed to be drawn by pedacycles " />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kq_C" role="3SOpfD">
+      <property role="TrG5h" value="pets as cargo trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kqu8" resolve="trailers designed to be drawn by pedacycles " />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jYu4" role="3SOpfD">
+      <property role="TrG5h" value="off-road vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jUM6" resolve="ground vehicles including their occupants" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ksgh" role="3SOpfD">
+      <property role="TrG5h" value="motorized off-road vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jYu4" resolve="off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ktXY" role="3SOpfD">
+      <property role="TrG5h" value="large wheeled vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_ksgh" resolve="motorized off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ktQ2" role="3SOpfD">
+      <property role="TrG5h" value="tracked vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_ksgh" resolve="motorized off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ktI7" role="3SOpfD">
+      <property role="TrG5h" value="amphibious vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_ksgh" resolve="motorized off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ksBx" role="3SOpfD">
+      <property role="TrG5h" value="all-terrain vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_ksgh" resolve="motorized off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ksvK" role="3SOpfD">
+      <property role="TrG5h" value="motorized snow vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_ksgh" resolve="motorized off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kso0" role="3SOpfD">
+      <property role="TrG5h" value="motorized equipment" />
+      <ref role="3SOpc_" node="2cECkJ_ksgh" resolve="motorized off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ksR6" role="3SOpfD">
+      <property role="TrG5h" value="construction equipment" />
+      <ref role="3SOpc_" node="2cECkJ_kso0" resolve="motorized equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ktAd" role="3SOpfD">
+      <property role="TrG5h" value="wheeled bulldozer" />
+      <ref role="3SOpc_" node="2cECkJ_ksR6" resolve="construction equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ktuk" role="3SOpfD">
+      <property role="TrG5h" value="backhoe loader" />
+      <ref role="3SOpc_" node="2cECkJ_ksR6" resolve="construction equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ktms" role="3SOpfD">
+      <property role="TrG5h" value="excavator" />
+      <ref role="3SOpc_" node="2cECkJ_ksR6" resolve="construction equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kte_" role="3SOpfD">
+      <property role="TrG5h" value="grader" />
+      <ref role="3SOpc_" node="2cECkJ_ksR6" resolve="construction equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ksJj" role="3SOpfD">
+      <property role="TrG5h" value="agricultural equipment" />
+      <ref role="3SOpc_" node="2cECkJ_kso0" resolve="motorized equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kt6J" role="3SOpfD">
+      <property role="TrG5h" value="farm tractor" />
+      <ref role="3SOpc_" node="2cECkJ_ksJj" resolve="agricultural equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ksYU" role="3SOpfD">
+      <property role="TrG5h" value="harvester" />
+      <ref role="3SOpc_" node="2cECkJ_ksJj" resolve="agricultural equipment" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ks8z" role="3SOpfD">
+      <property role="TrG5h" value="animal-drawn vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jYu4" resolve="off-road vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kulS" role="3SOpfD">
+      <property role="TrG5h" value="horse drawn vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_ks8z" resolve="animal-drawn vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ku_T" role="3SOpfD">
+      <property role="TrG5h" value="horse drawn wheeled vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_kulS" resolve="horse drawn vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kved" role="3SOpfD">
+      <property role="TrG5h" value="buggy" />
+      <ref role="3SOpc_" node="2cECkJ_ku_T" resolve="horse drawn wheeled vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kv67" role="3SOpfD">
+      <property role="TrG5h" value="carriage" />
+      <ref role="3SOpc_" node="2cECkJ_ku_T" resolve="horse drawn wheeled vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kuY2" role="3SOpfD">
+      <property role="TrG5h" value="landau" />
+      <ref role="3SOpc_" node="2cECkJ_ku_T" resolve="horse drawn wheeled vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kuPY" role="3SOpfD">
+      <property role="TrG5h" value="wagonette" />
+      <ref role="3SOpc_" node="2cECkJ_ku_T" resolve="horse drawn wheeled vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kuHV" role="3SOpfD">
+      <property role="TrG5h" value="omnibus" />
+      <ref role="3SOpc_" node="2cECkJ_ku_T" resolve="horse drawn wheeled vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kutS" role="3SOpfD">
+      <property role="TrG5h" value="hirse drawn sleighs" />
+      <ref role="3SOpc_" node="2cECkJ_kulS" resolve="horse drawn vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kudT" role="3SOpfD">
+      <property role="TrG5h" value="pulled by one animal" />
+      <ref role="3SOpc_" node="2cECkJ_ks8z" resolve="animal-drawn vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ku5V" role="3SOpfD">
+      <property role="TrG5h" value="pulled by a team of animals" />
+      <ref role="3SOpc_" node="2cECkJ_ks8z" resolve="animal-drawn vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jZig" role="3SOpfD">
+      <property role="TrG5h" value="railed vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jUM6" resolve="ground vehicles including their occupants" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kvA_" role="3SOpfD">
+      <property role="TrG5h" value="street cars (aka. tram)" />
+      <ref role="3SOpc_" node="2cECkJ_jZig" resolve="railed vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kvus" role="3SOpfD">
+      <property role="TrG5h" value="light rail transit trains (aka. fast tram)" />
+      <ref role="3SOpc_" node="2cECkJ_jZig" resolve="railed vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kvmk" role="3SOpfD">
+      <property role="TrG5h" value="railway trains" />
+      <ref role="3SOpc_" node="2cECkJ_jZig" resolve="railed vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jZo5" role="3SOpfD">
+      <property role="TrG5h" value="rail-road vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_jUM6" resolve="ground vehicles including their occupants" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jZzM" role="3SOpfD">
+      <property role="TrG5h" value="animal riders" />
+      <ref role="3SOpc_" node="7gUa1ZsxKWd" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kvIJ" role="3SOpfD">
+      <property role="TrG5h" value="horse rider" />
+      <ref role="3SOpc_" node="2cECkJ_jZzM" resolve="animal riders" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jZDE" role="3SOpfD">
+      <property role="TrG5h" value="pedestrians" />
+      <ref role="3SOpc_" node="7gUa1ZsxKWd" resolve="Road Users" />
+      <node concept="1BN$wR" id="2cECkJ_kzMl" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_kzMn" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kwSN" role="3SOpfD">
+      <property role="TrG5h" value="person riding personal mobility scooter" />
+      <ref role="3SOpc_" node="2cECkJ_jZDE" resolve="pedestrians" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kwnK" role="3SOpfD">
+      <property role="TrG5h" value="person pushing or pulling a vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_jZDE" resolve="pedestrians" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kwCh" role="3SOpfD">
+      <property role="TrG5h" value="person pushing a bicycle" />
+      <ref role="3SOpc_" node="2cECkJ_kwnK" resolve="person pushing or pulling a vehicle" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kww0" role="3SOpfD">
+      <property role="TrG5h" value="person pushing a food stand trailer" />
+      <ref role="3SOpc_" node="2cECkJ_kwnK" resolve="person pushing or pulling a vehicle" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kw7j" role="3SOpfD">
+      <property role="TrG5h" value="person pushing a wheelchair" />
+      <ref role="3SOpc_" node="2cECkJ_jZDE" resolve="pedestrians" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kvZ6" role="3SOpfD">
+      <property role="TrG5h" value="person in a motorized wheelchair at speed &lt; 10 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_jZDE" resolve="pedestrians" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kvQU" role="3SOpfD">
+      <property role="TrG5h" value="person in a non-motorized wheelchair" />
+      <ref role="3SOpc_" node="2cECkJ_jZDE" resolve="pedestrians" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_jZJy" role="3SOpfD">
+      <property role="TrG5h" value="traffic control persons" />
+      <ref role="3SOpc_" node="7gUa1ZsxKWd" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kxq1" role="3SOpfD">
+      <property role="TrG5h" value="construction zone flagger" />
+      <ref role="3SOpc_" node="2cECkJ_jZJy" resolve="traffic control persons" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kxhG" role="3SOpfD">
+      <property role="TrG5h" value="school crossing guard" />
+      <ref role="3SOpc_" node="2cECkJ_jZJy" resolve="traffic control persons" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kx9o" role="3SOpfD">
+      <property role="TrG5h" value="construction zone flagger" />
+      <ref role="3SOpc_" node="2cECkJ_jZJy" resolve="traffic control persons" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kx15" role="3SOpfD">
+      <property role="TrG5h" value="police officer directing traffic" />
+      <ref role="3SOpc_" node="2cECkJ_jZJy" resolve="traffic control persons" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kxyn" role="3SOpfD">
+      <property role="TrG5h" value="police officer traffic mounted on a horse" />
+      <ref role="3SOpc_" node="2cECkJ_kx15" resolve="police officer directing traffic" />
+    </node>
+    <node concept="2CGw_7" id="2cECkJ_jZtV" role="3SOpfD" />
     <node concept="3SOpcA" id="7gUa1Zsy22N" role="3SOpfD">
       <property role="TrG5h" value="Animals" />
       <ref role="3SOpc_" node="7gUa1Zsy22B" resolve="WISE_Lab_TopConcept" />
+      <node concept="1BN$wR" id="2cECkJ_kLCb" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_kLCd" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_kLk3" resolve="Animals size" />
+        </node>
+      </node>
     </node>
+    <node concept="3SOpcA" id="2cECkJ_kKe3" role="3SOpfD">
+      <property role="TrG5h" value="supervised by a human" />
+      <ref role="3SOpc_" node="7gUa1Zsy22N" resolve="Animals" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kKxY" role="3SOpfD">
+      <property role="TrG5h" value="walked pets" />
+      <ref role="3SOpc_" node="2cECkJ_kKe3" resolve="supervised by a human" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kKo0" role="3SOpfD">
+      <property role="TrG5h" value="herded farm animals" />
+      <ref role="3SOpc_" node="2cECkJ_kKe3" resolve="supervised by a human" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kJKi" role="3SOpfD">
+      <property role="TrG5h" value="unsupervised animals" />
+      <ref role="3SOpc_" node="7gUa1Zsy22N" resolve="Animals" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kK47" role="3SOpfD">
+      <property role="TrG5h" value="wandering domestic animals" />
+      <ref role="3SOpc_" node="2cECkJ_kJKi" resolve="unsupervised animals" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kJUc" role="3SOpfD">
+      <property role="TrG5h" value="wild animals" />
+      <ref role="3SOpc_" node="2cECkJ_kJKi" resolve="unsupervised animals" />
+    </node>
+    <node concept="2CGw_7" id="2cECkJ_kKPX" role="3SOpfD" />
+    <node concept="3SOpcA" id="2cECkJ_kLk3" role="3SOpfD">
+      <property role="TrG5h" value="Animals size" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kLu7" role="3SOpfD">
+      <property role="TrG5h" value="Small animals" />
+      <ref role="3SOpc_" node="2cECkJ_kLk3" resolve="Animals size" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kLCf" role="3SOpfD">
+      <property role="TrG5h" value="Medium animals" />
+      <ref role="3SOpc_" node="2cECkJ_kLk3" resolve="Animals size" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kLMm" role="3SOpfD">
+      <property role="TrG5h" value="Large animals" />
+      <ref role="3SOpc_" node="2cECkJ_kLk3" resolve="Animals size" />
+    </node>
+    <node concept="2CGw_7" id="2cECkJ_kLa0" role="3SOpfD" />
     <node concept="3SOpcA" id="7gUa1Zsy22S" role="3SOpfD">
       <property role="TrG5h" value="Other obstacles" />
       <ref role="3SOpc_" node="7gUa1Zsy22B" resolve="WISE_Lab_TopConcept" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kOvN" role="3SOpfD">
+      <property role="TrG5h" value="objects placed by forces of nature" />
+      <ref role="3SOpc_" node="7gUa1Zsy22S" resolve="Other obstacles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kP9d" role="3SOpfD">
+      <property role="TrG5h" value="rocks falling off escarpments" />
+      <ref role="3SOpc_" node="2cECkJ_kOvN" resolve="objects placed by forces of nature" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kOYP" role="3SOpfD">
+      <property role="TrG5h" value="trees blown over by the wind on the road" />
+      <ref role="3SOpc_" node="2cECkJ_kOvN" resolve="objects placed by forces of nature" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kOOu" role="3SOpfD">
+      <property role="TrG5h" value="snow drifts" />
+      <ref role="3SOpc_" node="2cECkJ_kOvN" resolve="objects placed by forces of nature" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kOE8" role="3SOpfD">
+      <property role="TrG5h" value="leaf piles" />
+      <ref role="3SOpc_" node="2cECkJ_kOvN" resolve="objects placed by forces of nature" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kOlv" role="3SOpfD">
+      <property role="TrG5h" value="lost cargo" />
+      <ref role="3SOpc_" node="7gUa1Zsy22S" resolve="Other obstacles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kObc" role="3SOpfD">
+      <property role="TrG5h" value="vehicle parts detached from vehicles" />
+      <ref role="3SOpc_" node="7gUa1Zsy22S" resolve="Other obstacles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kN3z" role="3SOpfD">
+      <property role="TrG5h" value="work- or activity-related objects" />
+      <ref role="3SOpc_" node="7gUa1Zsy22S" resolve="Other obstacles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kO0U" role="3SOpfD">
+      <property role="TrG5h" value="construction equipment" />
+      <ref role="3SOpc_" node="2cECkJ_kN3z" resolve="work- or activity-related objects" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kNQD" role="3SOpfD">
+      <property role="TrG5h" value="waste bins" />
+      <ref role="3SOpc_" node="2cECkJ_kN3z" resolve="work- or activity-related objects" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kNGp" role="3SOpfD">
+      <property role="TrG5h" value="soccer balls" />
+      <ref role="3SOpc_" node="2cECkJ_kN3z" resolve="work- or activity-related objects" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kNya" role="3SOpfD">
+      <property role="TrG5h" value="toys" />
+      <ref role="3SOpc_" node="2cECkJ_kN3z" resolve="work- or activity-related objects" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kMJa" role="3SOpfD">
+      <property role="TrG5h" value="infrastructure decay related" />
+      <ref role="3SOpc_" node="7gUa1Zsy22S" resolve="Other obstacles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kMTm" role="3SOpfD">
+      <property role="TrG5h" value="debris falling from overpasses" />
+      <ref role="3SOpc_" node="2cECkJ_kMJa" resolve="infrastructure decay related" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kMgG" role="3SOpfD">
+      <property role="TrG5h" value="road surface roughness" />
+      <ref role="3SOpc_" node="7gUa1Zsy22S" resolve="Other obstacles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kM$Z" role="3SOpfD">
+      <property role="TrG5h" value="road surface damage" />
+      <ref role="3SOpc_" node="2cECkJ_kMgG" resolve="road surface roughness" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kMqP" role="3SOpfD">
+      <property role="TrG5h" value="improperly installed manholes and gutters" />
+      <ref role="3SOpc_" node="2cECkJ_kMgG" resolve="road surface roughness" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kM6$" role="3SOpfD">
+      <property role="TrG5h" value="maliciously placed or dropped objects" />
+      <ref role="3SOpc_" node="7gUa1Zsy22S" resolve="Other obstacles" />
     </node>
     <node concept="2CGw_7" id="5o42uxih0Ay" role="3SOpfD" />
     <node concept="3SOpcA" id="5o42uxih0AL" role="3SOpfD">
@@ -451,6 +1184,10 @@
       <ref role="3SOpc_" node="1f_hJh21N6x" resolve="Lane Type" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22jIm" role="3SOpfD">
+      <property role="TrG5h" value="Thorough Lanes" />
+      <ref role="3SOpc_" node="1f_hJh21Ncr" resolve="Traffic Lanes" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kzoE" role="3SOpfD">
       <property role="TrG5h" value="Thorough Lanes" />
       <ref role="3SOpc_" node="1f_hJh21Ncr" resolve="Traffic Lanes" />
     </node>
@@ -1380,7 +2117,773 @@
       <ref role="3SOpc_" node="1f_hJh22AN8" resolve="Traffic Control Persons" />
     </node>
     <node concept="2CGw_7" id="1f_hJh22AKm" role="3SOpfD" />
+    <node concept="3SOpcA" id="2cECkJ_k7_f" role="3SOpfD">
+      <property role="TrG5h" value="pedacycle characteristic" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k7Gj" role="3SOpfD">
+      <property role="TrG5h" value="number of wheels" />
+      <ref role="3SOpc_" node="2cECkJ_k7_f" resolve="pedacycle characteristic" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k8Gr" role="3SOpfD">
+      <property role="TrG5h" value="unicycle" />
+      <ref role="3SOpc_" node="2cECkJ_k7Gj" resolve="number of wheels" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k8_f" role="3SOpfD">
+      <property role="TrG5h" value="bicycle" />
+      <ref role="3SOpc_" node="2cECkJ_k7Gj" resolve="number of wheels" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k8fL" role="3SOpfD">
+      <property role="TrG5h" value="tricycle" />
+      <ref role="3SOpc_" node="2cECkJ_k7Gj" resolve="number of wheels" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k8u4" role="3SOpfD">
+      <property role="TrG5h" value="delta configuration" />
+      <ref role="3SOpc_" node="2cECkJ_k8fL" resolve="tricycle" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k8mU" role="3SOpfD">
+      <property role="TrG5h" value="tadpole configuration" />
+      <ref role="3SOpc_" node="2cECkJ_k8fL" resolve="tricycle" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k88D" role="3SOpfD">
+      <property role="TrG5h" value="quadricycle" />
+      <ref role="3SOpc_" node="2cECkJ_k7Gj" resolve="number of wheels" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k7Nn" role="3SOpfD">
+      <property role="TrG5h" value="rider position" />
+      <ref role="3SOpc_" node="2cECkJ_k7_f" resolve="pedacycle characteristic" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k925" role="3SOpfD">
+      <property role="TrG5h" value="upright" />
+      <ref role="3SOpc_" node="2cECkJ_k7Nn" resolve="rider position" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k8UQ" role="3SOpfD">
+      <property role="TrG5h" value="recumbent" />
+      <ref role="3SOpc_" node="2cECkJ_k7Nn" resolve="rider position" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k8NC" role="3SOpfD">
+      <property role="TrG5h" value="prone" />
+      <ref role="3SOpc_" node="2cECkJ_k7Nn" resolve="rider position" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k7Us" role="3SOpfD">
+      <property role="TrG5h" value="number of riders" />
+      <ref role="3SOpc_" node="2cECkJ_k7_f" resolve="pedacycle characteristic" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k9Av" role="3SOpfD">
+      <property role="TrG5h" value="single rider" />
+      <ref role="3SOpc_" node="2cECkJ_k7Us" resolve="number of riders" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k9vb" role="3SOpfD">
+      <property role="TrG5h" value="tandem" />
+      <ref role="3SOpc_" node="2cECkJ_k7Us" resolve="number of riders" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k9nS" role="3SOpfD">
+      <property role="TrG5h" value="triplet" />
+      <ref role="3SOpc_" node="2cECkJ_k7Us" resolve="number of riders" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k9gA" role="3SOpfD">
+      <property role="TrG5h" value="quadruplet" />
+      <ref role="3SOpc_" node="2cECkJ_k7Us" resolve="number of riders" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k99l" role="3SOpfD">
+      <property role="TrG5h" value="party bike (typically quadricycle)" />
+      <ref role="3SOpc_" node="2cECkJ_k7Us" resolve="number of riders" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k81y" role="3SOpfD">
+      <property role="TrG5h" value="propulsion" />
+      <ref role="3SOpc_" node="2cECkJ_k7_f" resolve="pedacycle characteristic" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k9Pa" role="3SOpfD">
+      <property role="TrG5h" value="human muscular power (legs or hands)" />
+      <ref role="3SOpc_" node="2cECkJ_k81y" resolve="propulsion" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k9HO" role="3SOpfD">
+      <property role="TrG5h" value="electric propulsion" />
+      <ref role="3SOpc_" node="2cECkJ_k81y" resolve="propulsion" />
+    </node>
+    <node concept="2CGw_7" id="2cECkJ_kxEI" role="3SOpfD" />
+    <node concept="3SOpcA" id="2cECkJ_kxVv" role="3SOpfD">
+      <property role="TrG5h" value="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ky3T" role="3SOpfD">
+      <property role="TrG5h" value="crossing the roadway" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kycj" role="3SOpfD">
+      <property role="TrG5h" value="walking along the curb" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kykI" role="3SOpfD">
+      <property role="TrG5h" value="accessing vehicles parked at curb" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kyta" role="3SOpfD">
+      <property role="TrG5h" value="performing work" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_ky_B" role="3SOpfD">
+      <property role="TrG5h" value="playing on roadway" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kyI5" role="3SOpfD">
+      <property role="TrG5h" value="retrieving an object" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kyQ$" role="3SOpfD">
+      <property role="TrG5h" value="riding skateboards" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kyZ4" role="3SOpfD">
+      <property role="TrG5h" value="riding roller skates" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kz7_" role="3SOpfD">
+      <property role="TrG5h" value="riding in-line skates" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kzg7" role="3SOpfD">
+      <property role="TrG5h" value="lying on the pavement" />
+      <ref role="3SOpc_" node="2cECkJ_kxVv" resolve="reason for pedestrian entering the roadway" />
+    </node>
+    <node concept="2CGw_7" id="2cECkJ_kzMp" role="3SOpfD" />
+    <node concept="3SOpcA" id="2cECkJ_k$3C" role="3SOpfD">
+      <property role="TrG5h" value="road user behavior" />
+      <node concept="1BN$wR" id="2cECkJ_kJKb" role="1BN$wV">
+        <node concept="MFvB7" id="2cECkJ_kJKf" role="1BNJHd">
+          <ref role="MFvBS" node="2cECkJ_kDW4" resolve="road users behaviour influencer" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k$tG" role="3SOpfD">
+      <property role="TrG5h" value="externally observable state" />
+      <ref role="3SOpc_" node="2cECkJ_k$3C" resolve="road user behavior" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_0A" role="3SOpfD">
+      <property role="TrG5h" value="physical form" />
+      <ref role="3SOpc_" node="2cECkJ_k$tG" resolve="externally observable state" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_qW" role="3SOpfD">
+      <property role="TrG5h" value="doors closed / open" />
+      <ref role="3SOpc_" node="2cECkJ_k_0A" resolve="physical form" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_i9" role="3SOpfD">
+      <property role="TrG5h" value="bending state of articulated body" />
+      <ref role="3SOpc_" node="2cECkJ_k_0A" resolve="physical form" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_9n" role="3SOpfD">
+      <property role="TrG5h" value="postures and gestures due to body movement" />
+      <ref role="3SOpc_" node="2cECkJ_k_0A" resolve="physical form" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k$RQ" role="3SOpfD">
+      <property role="TrG5h" value="relationship between the road user and other objects" />
+      <ref role="3SOpc_" node="2cECkJ_k$tG" resolve="externally observable state" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_Pr" role="3SOpfD">
+      <property role="TrG5h" value="vehicle being occupied / unoccupied" />
+      <ref role="3SOpc_" node="2cECkJ_k$RQ" resolve="relationship between the road user and other objects" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_G_" role="3SOpfD">
+      <property role="TrG5h" value="pedestrian carying an object" />
+      <ref role="3SOpc_" node="2cECkJ_k$RQ" resolve="relationship between the road user and other objects" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_zK" role="3SOpfD">
+      <property role="TrG5h" value="pedestrian pushing a vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_k$RQ" resolve="relationship between the road user and other objects" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k$J7" role="3SOpfD">
+      <property role="TrG5h" value="activity performed by a road user" />
+      <ref role="3SOpc_" node="2cECkJ_k$tG" resolve="externally observable state" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kAoX" role="3SOpfD">
+      <property role="TrG5h" value="vehicle being stopped at stop sign" />
+      <ref role="3SOpc_" node="2cECkJ_k$J7" resolve="activity performed by a road user" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kAg3" role="3SOpfD">
+      <property role="TrG5h" value="vehicle being parked at a curb side" />
+      <ref role="3SOpc_" node="2cECkJ_k$J7" resolve="activity performed by a road user" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kA7a" role="3SOpfD">
+      <property role="TrG5h" value="pedestrian gardening of boulevard strip" />
+      <ref role="3SOpc_" node="2cECkJ_k$J7" resolve="activity performed by a road user" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k_Yi" role="3SOpfD">
+      <property role="TrG5h" value="pedestrian looking to cross the roadway" />
+      <ref role="3SOpc_" node="2cECkJ_k$J7" resolve="activity performed by a road user" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k$Ap" role="3SOpfD">
+      <property role="TrG5h" value="signal state communicated in visible light or radio waves" />
+      <ref role="3SOpc_" node="2cECkJ_k$tG" resolve="externally observable state" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kBeI" role="3SOpfD">
+      <property role="TrG5h" value="turn indicator lights" />
+      <ref role="3SOpc_" node="2cECkJ_k$Ap" resolve="signal state communicated in visible light or radio waves" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kB5I" role="3SOpfD">
+      <property role="TrG5h" value="brake lights" />
+      <ref role="3SOpc_" node="2cECkJ_k$Ap" resolve="signal state communicated in visible light or radio waves" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kAWJ" role="3SOpfD">
+      <property role="TrG5h" value="hazards lights" />
+      <ref role="3SOpc_" node="2cECkJ_k$Ap" resolve="signal state communicated in visible light or radio waves" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kANL" role="3SOpfD">
+      <property role="TrG5h" value="emergency vehicle lights" />
+      <ref role="3SOpc_" node="2cECkJ_k$Ap" resolve="signal state communicated in visible light or radio waves" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kAEO" role="3SOpfD">
+      <property role="TrG5h" value="radio message sent and received by a vehicle" />
+      <ref role="3SOpc_" node="2cECkJ_k$Ap" resolve="signal state communicated in visible light or radio waves" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kAxS" role="3SOpfD">
+      <property role="TrG5h" value="vehicle-ro-vehicle communication" />
+      <ref role="3SOpc_" node="2cECkJ_k$Ap" resolve="signal state communicated in visible light or radio waves" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_k$l0" role="3SOpfD">
+      <property role="TrG5h" value="externally unobservable state" />
+      <ref role="3SOpc_" node="2cECkJ_k$3C" resolve="road user behavior" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kBDL" role="3SOpfD">
+      <property role="TrG5h" value="physical and cognitive capabilities and state" />
+      <ref role="3SOpc_" node="2cECkJ_k$l0" resolve="externally unobservable state" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kCVB" role="3SOpfD">
+      <property role="TrG5h" value="physical capabilities of vehicles" />
+      <ref role="3SOpc_" node="2cECkJ_kBDL" resolve="physical and cognitive capabilities and state" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kDdY" role="3SOpfD">
+      <property role="TrG5h" value="vehicle system capabilities" />
+      <ref role="3SOpc_" node="2cECkJ_kCVB" resolve="physical capabilities of vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kD4M" role="3SOpfD">
+      <property role="TrG5h" value="vehicle system health" />
+      <ref role="3SOpc_" node="2cECkJ_kCVB" resolve="physical capabilities of vehicles" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kDwp" role="3SOpfD">
+      <property role="TrG5h" value="system health due to internal failures" />
+      <ref role="3SOpc_" node="2cECkJ_kD4M" resolve="vehicle system health" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kDnb" role="3SOpfD">
+      <property role="TrG5h" value="system health due to internal faults" />
+      <ref role="3SOpc_" node="2cECkJ_kD4M" resolve="vehicle system health" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kBMN" role="3SOpfD">
+      <property role="TrG5h" value="physical and cognitive capabilities of humans" />
+      <ref role="3SOpc_" node="2cECkJ_kBDL" resolve="physical and cognitive capabilities and state" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kCMt" role="3SOpfD">
+      <property role="TrG5h" value="mental capacity" />
+      <ref role="3SOpc_" node="2cECkJ_kBMN" resolve="physical and cognitive capabilities of humans" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kCDk" role="3SOpfD">
+      <property role="TrG5h" value="skills" />
+      <ref role="3SOpc_" node="2cECkJ_kBMN" resolve="physical and cognitive capabilities of humans" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kCwc" role="3SOpfD">
+      <property role="TrG5h" value="experience" />
+      <ref role="3SOpc_" node="2cECkJ_kBMN" resolve="physical and cognitive capabilities of humans" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kCn5" role="3SOpfD">
+      <property role="TrG5h" value="personality factors" />
+      <ref role="3SOpc_" node="2cECkJ_kBMN" resolve="physical and cognitive capabilities of humans" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kCdZ" role="3SOpfD">
+      <property role="TrG5h" value="attitudes" />
+      <ref role="3SOpc_" node="2cECkJ_kBMN" resolve="physical and cognitive capabilities of humans" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kC4U" role="3SOpfD">
+      <property role="TrG5h" value="emotions" />
+      <ref role="3SOpc_" node="2cECkJ_kBMN" resolve="physical and cognitive capabilities of humans" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kBVQ" role="3SOpfD">
+      <property role="TrG5h" value="alertness" />
+      <ref role="3SOpc_" node="2cECkJ_kBMN" resolve="physical and cognitive capabilities of humans" />
+    </node>
     <node concept="2CGw_7" id="1f_hJh22llv" role="3SOpfD" />
+    <node concept="3SOpcA" id="2cECkJ_kDW4" role="3SOpfD">
+      <property role="TrG5h" value="road users behaviour influencer" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kE5k" role="3SOpfD">
+      <property role="TrG5h" value="behavioral factors" />
+      <ref role="3SOpc_" node="2cECkJ_kDW4" resolve="road users behaviour influencer" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kGRJ" role="3SOpfD">
+      <property role="TrG5h" value="traffic rules" />
+      <ref role="3SOpc_" node="2cECkJ_kE5k" resolve="behavioral factors" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kHaQ" role="3SOpfD">
+      <property role="TrG5h" value="traffic laws" />
+      <ref role="3SOpc_" node="2cECkJ_kGRJ" resolve="traffic rules" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kHBC" role="3SOpfD">
+      <property role="TrG5h" value="regional traffic laws" />
+      <ref role="3SOpc_" node="2cECkJ_kHaQ" resolve="traffic laws" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kHUT" role="3SOpfD">
+      <property role="TrG5h" value="Highway Traffic Act (Ontario)" />
+      <ref role="3SOpc_" node="2cECkJ_kHBC" resolve="regional traffic laws" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kHu1" role="3SOpfD">
+      <property role="TrG5h" value="national traffic laws" />
+      <ref role="3SOpc_" node="2cECkJ_kHaQ" resolve="traffic laws" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kHkr" role="3SOpfD">
+      <property role="TrG5h" value="international traffic laws" />
+      <ref role="3SOpc_" node="2cECkJ_kHaQ" resolve="traffic laws" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kHLg" role="3SOpfD">
+      <property role="TrG5h" value="Vienna Convention on Road Traffic" />
+      <ref role="3SOpc_" node="2cECkJ_kHkr" resolve="international traffic laws" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kH1i" role="3SOpfD">
+      <property role="TrG5h" value="informal best practice rules" />
+      <ref role="3SOpc_" node="2cECkJ_kGRJ" resolve="traffic rules" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kGrc" role="3SOpfD">
+      <property role="TrG5h" value="social norms" />
+      <ref role="3SOpc_" node="2cECkJ_kE5k" resolve="behavioral factors" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kGId" role="3SOpfD">
+      <property role="TrG5h" value="law conformant social norm" />
+      <ref role="3SOpc_" node="2cECkJ_kGrc" resolve="social norms" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kG$G" role="3SOpfD">
+      <property role="TrG5h" value="law non-conformant social norm" />
+      <ref role="3SOpc_" node="2cECkJ_kGrc" resolve="social norms" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kI4z" role="3SOpfD">
+      <property role="TrG5h" value="travel 10-20 kmh above speed limit on freeways" />
+      <ref role="3SOpc_" node="2cECkJ_kG$G" resolve="law non-conformant social norm" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kFfK" role="3SOpfD">
+      <property role="TrG5h" value="individual behavior factors of road users" />
+      <ref role="3SOpc_" node="2cECkJ_kE5k" resolve="behavioral factors" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kGhH" role="3SOpfD">
+      <property role="TrG5h" value="physical and cognitive capacity" />
+      <ref role="3SOpc_" node="2cECkJ_kFfK" resolve="individual behavior factors of road users" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kJAk" role="3SOpfD">
+      <property role="TrG5h" value="physical and mental health" />
+      <ref role="3SOpc_" node="2cECkJ_kGhH" resolve="physical and cognitive capacity" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kJsu" role="3SOpfD">
+      <property role="TrG5h" value="potential intoxication" />
+      <ref role="3SOpc_" node="2cECkJ_kGhH" resolve="physical and cognitive capacity" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kJiD" role="3SOpfD">
+      <property role="TrG5h" value="capacity influenced by age" />
+      <ref role="3SOpc_" node="2cECkJ_kGhH" resolve="physical and cognitive capacity" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kFYM" role="3SOpfD">
+      <property role="TrG5h" value="skill" />
+      <ref role="3SOpc_" node="2cECkJ_kFfK" resolve="individual behavior factors of road users" />
+      <node concept="19SGf9" id="2cECkJ_kIP5" role="1hVZTN">
+        <node concept="19SUe$" id="2cECkJ_kIP6" role="19SJt6">
+          <property role="19SUeA" value="depend e.g. on education" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kFPm" role="3SOpfD">
+      <property role="TrG5h" value="experience" />
+      <ref role="3SOpc_" node="2cECkJ_kFfK" resolve="individual behavior factors of road users" />
+      <node concept="19SGf9" id="2cECkJ_kIP9" role="1hVZTN">
+        <node concept="19SUe$" id="2cECkJ_kIPa" role="19SJt6">
+          <property role="19SUeA" value="" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kIZ1" role="3SOpfD">
+      <property role="TrG5h" value="being a local" />
+      <ref role="3SOpc_" node="2cECkJ_kFPm" resolve="experience" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kIPd" role="3SOpfD">
+      <property role="TrG5h" value="being a visitor" />
+      <ref role="3SOpc_" node="2cECkJ_kFPm" resolve="experience" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kFFV" role="3SOpfD">
+      <property role="TrG5h" value="attitudes and beliefs" />
+      <ref role="3SOpc_" node="2cECkJ_kFfK" resolve="individual behavior factors of road users" />
+      <node concept="19SGf9" id="2cECkJ_kIP1" role="1hVZTN">
+        <node concept="19SUe$" id="2cECkJ_kIP2" role="19SJt6">
+          <property role="19SUeA" value="attitudes and beliefs related to objects, &#10;situations and practices in road traffic" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kFyx" role="3SOpfD">
+      <property role="TrG5h" value="personality factors" />
+      <ref role="3SOpc_" node="2cECkJ_kFfK" resolve="individual behavior factors of road users" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kFp8" role="3SOpfD">
+      <property role="TrG5h" value="emotions" />
+      <ref role="3SOpc_" node="2cECkJ_kFfK" resolve="individual behavior factors of road users" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kInU" role="3SOpfD">
+      <property role="TrG5h" value="anger" />
+      <ref role="3SOpc_" node="2cECkJ_kFp8" resolve="emotions" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kIee" role="3SOpfD">
+      <property role="TrG5h" value="fear" />
+      <ref role="3SOpc_" node="2cECkJ_kFp8" resolve="emotions" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kEx7" role="3SOpfD">
+      <property role="TrG5h" value="vehicle capabilities" />
+      <ref role="3SOpc_" node="2cECkJ_kE5k" resolve="behavioral factors" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kF6p" role="3SOpfD">
+      <property role="TrG5h" value="vehicle acceleration" />
+      <ref role="3SOpc_" node="2cECkJ_kEx7" resolve="vehicle capabilities" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kEX3" role="3SOpfD">
+      <property role="TrG5h" value="vehicle braking" />
+      <ref role="3SOpc_" node="2cECkJ_kEx7" resolve="vehicle capabilities" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kENI" role="3SOpfD">
+      <property role="TrG5h" value="vehicle handling performance" />
+      <ref role="3SOpc_" node="2cECkJ_kEx7" resolve="vehicle capabilities" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kEEq" role="3SOpfD">
+      <property role="TrG5h" value="vehicle ride quality" />
+      <ref role="3SOpc_" node="2cECkJ_kEx7" resolve="vehicle capabilities" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kEnP" role="3SOpfD">
+      <property role="TrG5h" value="behavioral models" />
+      <ref role="3SOpc_" node="2cECkJ_kDW4" resolve="road users behaviour influencer" />
+    </node>
+    <node concept="2CGw_7" id="2cECkJ_kPjA" role="3SOpfD" />
+    <node concept="3SOpcA" id="2cECkJ_kPCr" role="3SOpfD">
+      <property role="TrG5h" value="Environmental Conditions" />
+      <ref role="3SOpc_" node="7gUa1Zsy22B" resolve="WISE_Lab_TopConcept" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kQie" role="3SOpfD">
+      <property role="TrG5h" value="atmospheric conditions" />
+      <ref role="3SOpc_" node="2cECkJ_kPCr" resolve="Environmental Conditions" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kXX2" role="3SOpfD">
+      <property role="TrG5h" value="temperature" />
+      <ref role="3SOpc_" node="2cECkJ_kQie" resolve="atmospheric conditions" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kR6N" role="3SOpfD">
+      <property role="TrG5h" value="visibility" />
+      <ref role="3SOpc_" node="2cECkJ_kQie" resolve="atmospheric conditions" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kQWg" role="3SOpfD">
+      <property role="TrG5h" value="wind" />
+      <ref role="3SOpc_" node="2cECkJ_kQie" resolve="atmospheric conditions" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_l07L" role="3SOpfD">
+      <property role="TrG5h" value="calm &lt; 1 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kZX0" role="3SOpfD">
+      <property role="TrG5h" value="light air 1-5 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kZMg" role="3SOpfD">
+      <property role="TrG5h" value="light breeze 6-11 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kZBx" role="3SOpfD">
+      <property role="TrG5h" value="gentle breeze 12-19 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kZsN" role="3SOpfD">
+      <property role="TrG5h" value="moderate breeze 20-28 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kZi6" role="3SOpfD">
+      <property role="TrG5h" value="fresh breeze 29-38 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kZ7q" role="3SOpfD">
+      <property role="TrG5h" value="strong breeze 39-49 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kYWJ" role="3SOpfD">
+      <property role="TrG5h" value="high wind 50-61 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kYM5" role="3SOpfD">
+      <property role="TrG5h" value="gale 62-74 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kYBs" role="3SOpfD">
+      <property role="TrG5h" value="strong/severe gale 75-88 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kYsO" role="3SOpfD">
+      <property role="TrG5h" value="storm 89-102 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kYid" role="3SOpfD">
+      <property role="TrG5h" value="violent storm 103-117 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kY7B" role="3SOpfD">
+      <property role="TrG5h" value="hurricane force &gt;= 118 kmh" />
+      <ref role="3SOpc_" node="2cECkJ_kQWg" resolve="wind" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kQLI" role="3SOpfD">
+      <property role="TrG5h" value="clouds" />
+      <ref role="3SOpc_" node="2cECkJ_kQie" resolve="atmospheric conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmeJg" role="3SOpfD">
+      <property role="TrG5h" value="sky clear (SKC) = 0 to 1 oktas" />
+      <ref role="3SOpc_" node="2cECkJ_kQLI" resolve="clouds" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbme$q" role="3SOpfD">
+      <property role="TrG5h" value="few clouds (FEW) = 1 to 2 oktas" />
+      <ref role="3SOpc_" node="2cECkJ_kQLI" resolve="clouds" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmep_" role="3SOpfD">
+      <property role="TrG5h" value="scattered clouds (SCA) = 3 to 4 oktas" />
+      <ref role="3SOpc_" node="2cECkJ_kQLI" resolve="clouds" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmeeL" role="3SOpfD">
+      <property role="TrG5h" value="broken clouds (BKN) = 5 to 7 oktas" />
+      <ref role="3SOpc_" node="2cECkJ_kQLI" resolve="clouds" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbme3Y" role="3SOpfD">
+      <property role="TrG5h" value="overcast (OVC) = 8 oktas" />
+      <ref role="3SOpc_" node="2cECkJ_kQLI" resolve="clouds" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kQBd" role="3SOpfD">
+      <property role="TrG5h" value="precipitation" />
+      <ref role="3SOpc_" node="2cECkJ_kQie" resolve="atmospheric conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmgMA" role="3SOpfD">
+      <property role="TrG5h" value="liquid precipitation" />
+      <ref role="3SOpc_" node="2cECkJ_kQBd" resolve="precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmh8H" role="3SOpfD">
+      <property role="TrG5h" value="drizzle" />
+      <ref role="3SOpc_" node="4GKcJtbmgMA" resolve="liquid precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmgXD" role="3SOpfD">
+      <property role="TrG5h" value="rain" />
+      <ref role="3SOpc_" node="4GKcJtbmgMA" resolve="liquid precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmi0g" role="3SOpfD">
+      <property role="TrG5h" value="light rain &lt; 2.5 mm/h" />
+      <ref role="3SOpc_" node="4GKcJtbmgXD" resolve="rain" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmhP7" role="3SOpfD">
+      <property role="TrG5h" value="moderate rain 2.5 &lt; it &lt; 7.6 mm/h" />
+      <ref role="3SOpc_" node="4GKcJtbmgXD" resolve="rain" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmhDZ" role="3SOpfD">
+      <property role="TrG5h" value="heavy rain &gt; 7.6 mm/h" />
+      <ref role="3SOpc_" node="4GKcJtbmgXD" resolve="rain" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmhuS" role="3SOpfD">
+      <property role="TrG5h" value="violent rain &gt; 50 mm/h" />
+      <ref role="3SOpc_" node="4GKcJtbmgXD" resolve="rain" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmhjM" role="3SOpfD">
+      <property role="TrG5h" value="cloud burst &gt; 100 mm/h" />
+      <ref role="3SOpc_" node="4GKcJtbmgXD" resolve="rain" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmg6$" role="3SOpfD">
+      <property role="TrG5h" value="freezing precipitation" />
+      <ref role="3SOpc_" node="2cECkJ_kQBd" resolve="precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmgB$" role="3SOpfD">
+      <property role="TrG5h" value="freezing drizzle" />
+      <ref role="3SOpc_" node="4GKcJtbmg6$" resolve="freezing precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmgsz" role="3SOpfD">
+      <property role="TrG5h" value="freezing rain" />
+      <ref role="3SOpc_" node="4GKcJtbmg6$" resolve="freezing precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmghz" role="3SOpfD">
+      <property role="TrG5h" value="rain and snow mixed" />
+      <ref role="3SOpc_" node="4GKcJtbmg6$" resolve="freezing precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmeU7" role="3SOpfD">
+      <property role="TrG5h" value="frozen precipitation" />
+      <ref role="3SOpc_" node="2cECkJ_kQBd" resolve="precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmfVA" role="3SOpfD">
+      <property role="TrG5h" value="snow" />
+      <ref role="3SOpc_" node="4GKcJtbmeU7" resolve="frozen precipitation" />
+      <node concept="1BN$wR" id="4GKcJtbmqFk" role="1BN$wV">
+        <node concept="MFvB7" id="4GKcJtbmqFm" role="1BNJHd">
+          <ref role="MFvBS" node="4GKcJtbmpYf" resolve="snow visibility attribute" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmiGY" role="3SOpfD">
+      <property role="TrG5h" value="snow flurry" />
+      <ref role="3SOpc_" node="4GKcJtbmfVA" resolve="snow" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmixL" role="3SOpfD">
+      <property role="TrG5h" value="snowsquall" />
+      <ref role="3SOpc_" node="4GKcJtbmfVA" resolve="snow" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmim_" role="3SOpfD">
+      <property role="TrG5h" value="snow storm" />
+      <ref role="3SOpc_" node="4GKcJtbmfVA" resolve="snow" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmibq" role="3SOpfD">
+      <property role="TrG5h" value="blizzard" />
+      <ref role="3SOpc_" node="4GKcJtbmfVA" resolve="snow" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmfKD" role="3SOpfD">
+      <property role="TrG5h" value="snow grains" />
+      <ref role="3SOpc_" node="4GKcJtbmeU7" resolve="frozen precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmf_H" role="3SOpfD">
+      <property role="TrG5h" value="ice pellets / sleet" />
+      <ref role="3SOpc_" node="4GKcJtbmeU7" resolve="frozen precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmfqM" role="3SOpfD">
+      <property role="TrG5h" value="hail" />
+      <ref role="3SOpc_" node="4GKcJtbmeU7" resolve="frozen precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmffS" role="3SOpfD">
+      <property role="TrG5h" value="snow pellets / graupel" />
+      <ref role="3SOpc_" node="4GKcJtbmeU7" resolve="frozen precipitation" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmf4Z" role="3SOpfD">
+      <property role="TrG5h" value="ice crystals" />
+      <ref role="3SOpc_" node="4GKcJtbmeU7" resolve="frozen precipitation" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kQsH" role="3SOpfD">
+      <property role="TrG5h" value="other atmospheric obscuration" />
+      <ref role="3SOpc_" node="2cECkJ_kQie" resolve="atmospheric conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbms6s" role="3SOpfD">
+      <property role="TrG5h" value="fog" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmrV0" role="3SOpfD">
+      <property role="TrG5h" value="mist" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmrJ_" role="3SOpfD">
+      <property role="TrG5h" value="haze" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmr$b" role="3SOpfD">
+      <property role="TrG5h" value="smoke" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmroM" role="3SOpfD">
+      <property role="TrG5h" value="fog and smoke (smog)" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmrdq" role="3SOpfD">
+      <property role="TrG5h" value="dust or sand whirls" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmr23" role="3SOpfD">
+      <property role="TrG5h" value="widespread dust" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmqQH" role="3SOpfD">
+      <property role="TrG5h" value="sandstorm" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmqFo" role="3SOpfD">
+      <property role="TrG5h" value="spray" />
+      <ref role="3SOpc_" node="2cECkJ_kQsH" resolve="other atmospheric obscuration" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kQ7K" role="3SOpfD">
+      <property role="TrG5h" value="lighting conditions" />
+      <ref role="3SOpc_" node="2cECkJ_kPCr" resolve="Environmental Conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmsCQ" role="3SOpfD">
+      <property role="TrG5h" value="street illumination" />
+      <ref role="3SOpc_" node="2cECkJ_kQ7K" resolve="lighting conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmstn" role="3SOpfD">
+      <property role="TrG5h" value="daylight" />
+      <ref role="3SOpc_" node="2cECkJ_kQ7K" resolve="lighting conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmshT" role="3SOpfD">
+      <property role="TrG5h" value="night time" />
+      <ref role="3SOpc_" node="2cECkJ_kQ7K" resolve="lighting conditions" />
+    </node>
+    <node concept="3SOpcA" id="2cECkJ_kPXj" role="3SOpfD">
+      <property role="TrG5h" value="weather-related road surface conditions" />
+      <ref role="3SOpc_" node="2cECkJ_kPCr" resolve="Environmental Conditions" />
+      <node concept="1BN$wR" id="4GKcJtbmuZz" role="1BN$wV">
+        <node concept="MFvB7" id="4GKcJtbmuZ_" role="1BNJHd">
+          <ref role="MFvBS" node="4GKcJtbmuCd" resolve="road winter maintenance status attribute" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmu5i" role="3SOpfD">
+      <property role="TrG5h" value="bare and dry" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmtTF" role="3SOpfD">
+      <property role="TrG5h" value="bare and wet" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmtI5" role="3SOpfD">
+      <property role="TrG5h" value="partly icy" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmtyw" role="3SOpfD">
+      <property role="TrG5h" value="partly snow packed" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmtmW" role="3SOpfD">
+      <property role="TrG5h" value="partly snow covered" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmtbp" role="3SOpfD">
+      <property role="TrG5h" value="snow covered" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmsZR" role="3SOpfD">
+      <property role="TrG5h" value="snow packed" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmsOm" role="3SOpfD">
+      <property role="TrG5h" value="ice covered" />
+      <ref role="3SOpc_" node="2cECkJ_kPXj" resolve="weather-related road surface conditions" />
+    </node>
+    <node concept="2CGw_7" id="4GKcJtbmpBK" role="3SOpfD" />
+    <node concept="3SOpcA" id="4GKcJtbmpYf" role="3SOpfD">
+      <property role="TrG5h" value="snow visibility attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmq9w" role="3SOpfD">
+      <property role="TrG5h" value="light snow" />
+      <ref role="3SOpc_" node="4GKcJtbmpYf" resolve="snow visibility attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmqkL" role="3SOpfD">
+      <property role="TrG5h" value="moderate snow" />
+      <ref role="3SOpc_" node="4GKcJtbmpYf" resolve="snow visibility attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmqw2" role="3SOpfD">
+      <property role="TrG5h" value="heavy snow" />
+      <ref role="3SOpc_" node="4GKcJtbmpYf" resolve="snow visibility attribute" />
+    </node>
+    <node concept="2CGw_7" id="4GKcJtbmugU" role="3SOpfD" />
+    <node concept="3SOpcA" id="4GKcJtbmuCd" role="3SOpfD">
+      <property role="TrG5h" value="road winter maintenance status attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmuNS" role="3SOpfD">
+      <property role="TrG5h" value="untreated" />
+      <ref role="3SOpc_" node="4GKcJtbmuCd" resolve="road winter maintenance status attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmuZB" role="3SOpfD">
+      <property role="TrG5h" value="plowed" />
+      <ref role="3SOpc_" node="4GKcJtbmuCd" resolve="road winter maintenance status attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmvbl" role="3SOpfD">
+      <property role="TrG5h" value="sanded" />
+      <ref role="3SOpc_" node="4GKcJtbmuCd" resolve="road winter maintenance status attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmvn4" role="3SOpfD">
+      <property role="TrG5h" value="salted" />
+      <ref role="3SOpc_" node="4GKcJtbmuCd" resolve="road winter maintenance status attribute" />
+    </node>
+    <node concept="3SOpcA" id="4GKcJtbmvyO" role="3SOpfD">
+      <property role="TrG5h" value="salted and sanded" />
+      <ref role="3SOpc_" node="4GKcJtbmuCd" resolve="road winter maintenance status attribute" />
+    </node>
+    <node concept="2CGw_7" id="2cECkJ_kEe$" role="3SOpfD" />
     <node concept="2CGw_7" id="1f_hJh22lgb" role="3SOpfD" />
     <node concept="2CGw_7" id="1f_hJh21M07" role="3SOpfD" />
     <node concept="2CGw_7" id="1f_hJh21LSV" role="3SOpfD" />
