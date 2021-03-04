@@ -56,6 +56,14 @@
         </node>
       </node>
     </node>
+    <node concept="3h3iLe" id="7V6gmIdKaU4" role="3h3F1H">
+      <property role="TrG5h" value="OpS2" />
+      <node concept="19SGf9" id="7V6gmIdKaU5" role="3h3iL1">
+        <node concept="19SUe$" id="7V6gmIdKaU6" role="19SJt6">
+          <property role="19SUeA" value="Driving on highway at speed lower than 100 km/h" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="8gVzP" id="55oVyA0m$q5">
     <property role="TrG5h" value="_020_vehicle_hazards" />
@@ -67,6 +75,17 @@
         <property role="3h3uzF" value="24PsEXFbNLm/C1" />
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
         <ref role="3h3iM1" node="55oVyA0m$pZ" resolve="OpS1" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="7V6gmIdKaTX" role="8gIbH">
+      <property role="0lsPA" value="H02" />
+      <property role="TrG5h" value="Front-end collision" />
+      <node concept="3h3uym" id="7V6gmIdKaU2" role="3h3uzw">
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="55oVyA0m$pZ" resolve="OpS1" />
+      </node>
+      <node concept="3h3uym" id="7V6gmIdKaUd" role="3h3uzw">
+        <ref role="3h3iM1" node="7V6gmIdKaU4" resolve="OpS2" />
       </node>
     </node>
   </node>

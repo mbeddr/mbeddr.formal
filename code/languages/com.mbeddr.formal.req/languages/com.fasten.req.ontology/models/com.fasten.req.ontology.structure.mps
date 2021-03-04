@@ -30,9 +30,11 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -59,6 +61,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -140,6 +143,14 @@
       <property role="20kJfa" value="attributes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1wKSXwEBhCv" resolve="OntologyConceptRef" />
+      <node concept="asaX9" id="5qtcz4LkW_U" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="5qtcz4LkRCa" role="1TKVEi">
+      <property role="IQ2ns" value="6241199845467716106" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="relations" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5qtcz4LkRC5" resolve="ConceptRelationBase" />
     </node>
     <node concept="1TJgyj" id="1f_hJh22Fy7" role="1TKVEi">
       <property role="IQ2ns" value="1433630071281334407" />
@@ -225,6 +236,33 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="5qtcz4LkRC5">
+    <property role="EcuMT" value="6241199845467716101" />
+    <property role="TrG5h" value="ConceptRelationBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="relations" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5qtcz4LkW_W" role="1TKVEi">
+      <property role="IQ2ns" value="6241199845467736444" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="conceptRef" />
+      <ref role="20lvS9" node="1wKSXwEBhCv" resolve="OntologyConceptRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5qtcz4LkRC6">
+    <property role="EcuMT" value="6241199845467716102" />
+    <property role="3GE5qa" value="relations" />
+    <property role="TrG5h" value="AttributeRelation" />
+    <property role="34LRSv" value="attribute" />
+    <ref role="1TJDcQ" node="5qtcz4LkRC5" resolve="ConceptRelationBase" />
+  </node>
+  <node concept="1TIwiD" id="5qtcz4LkRC9">
+    <property role="EcuMT" value="6241199845467716105" />
+    <property role="3GE5qa" value="relations" />
+    <property role="TrG5h" value="MeronymyRelation" />
+    <property role="34LRSv" value="meronymy" />
+    <ref role="1TJDcQ" node="5qtcz4LkRC6" resolve="AttributeRelation" />
   </node>
 </model>
 
