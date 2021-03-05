@@ -54,7 +54,7 @@
       <property role="TrG5h" value="WISE_Lab_TopConcept" />
     </node>
     <node concept="3SOpcA" id="7gUa1Zsx7gq" role="3SOpfD">
-      <property role="TrG5h" value="Left Road Structure" />
+      <property role="TrG5h" value="Road Structure" />
       <ref role="3SOpc_" node="7gUa1Zsy22B" resolve="WISE_Lab_TopConcept" />
     </node>
     <node concept="3SOpcA" id="7gUa1ZsxKWd" role="3SOpfD">
@@ -805,7 +805,7 @@
     <node concept="2CGw_7" id="5o42uxih0Ay" role="3SOpfD" />
     <node concept="3SOpcA" id="5o42uxih0AL" role="3SOpfD">
       <property role="TrG5h" value="Road type and capacity" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
     </node>
     <node concept="3SOpcA" id="5o42uxih0Bd" role="3SOpfD">
       <property role="TrG5h" value="General Road Classification" />
@@ -965,7 +965,7 @@
     </node>
     <node concept="3SOpcA" id="5o42uxihWnA" role="3SOpfD">
       <property role="TrG5h" value="Road surface type and quality" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
     </node>
     <node concept="2CGw_7" id="5o42uxihWlv" role="3SOpfD" />
     <node concept="3SOpcA" id="5o42uxiiNQL" role="3SOpfD">
@@ -1047,7 +1047,7 @@
     </node>
     <node concept="3SOpcA" id="1f_hJh21Lla" role="3SOpfD">
       <property role="TrG5h" value="Road Geometry" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
     </node>
     <node concept="3SOpcA" id="1f_hJh21LAI" role="3SOpfD">
       <property role="TrG5h" value="Circular Curves" />
@@ -1060,7 +1060,7 @@
     <node concept="2CGw_7" id="1f_hJh21LYD" role="3SOpfD" />
     <node concept="3SOpcA" id="1f_hJh21LVJ" role="3SOpfD">
       <property role="TrG5h" value="Cross Section Design" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
       <node concept="1BN$wR" id="5qtcz4LmGNr" role="1BN$wV">
         <node concept="MFvB7" id="5qtcz4LmGNs" role="1BNJHd">
           <ref role="MFvBS" node="1f_hJh21M4A" resolve="Cross Section Design Attribute" />
@@ -1357,7 +1357,7 @@
     <node concept="2CGw_7" id="1f_hJh22ldy" role="3SOpfD" />
     <node concept="3SOpcA" id="1f_hJh22l5D" role="3SOpfD">
       <property role="TrG5h" value="Road Traffic Control Devices" />
-      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Left Road Structure" />
+      <ref role="3SOpc_" node="7gUa1Zsx7gq" resolve="Road Structure" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22AyE" role="3SOpfD">
       <property role="TrG5h" value="Traffic Signs (Devices)" />
