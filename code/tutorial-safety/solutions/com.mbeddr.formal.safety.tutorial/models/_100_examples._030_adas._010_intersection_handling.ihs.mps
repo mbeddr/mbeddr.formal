@@ -7,7 +7,6 @@
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
     <devkit ref="5a50cadb-4d6e-4722-b5f5-c6b9efb22ffe(fasten.safety.gsn.formal)" />
@@ -16,7 +15,6 @@
   </languages>
   <imports>
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
-    <import index="yi6x" ref="r:ffdc23de-2347-43cf-8b68-9eee3e234e66(com.mbeddr.formal.safety.users_guide.main)" />
   </imports>
   <registry>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
@@ -39,31 +37,6 @@
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="5285453794052993580" name="com.mbeddr.formal.spin.structure.IntType" flags="ng" index="2m7kok" />
-    </language>
-    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
-        <reference id="6657644269295214800" name="config" index="G9hjw" />
-      </concept>
-      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
-        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
-      </concept>
-      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
-        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
-        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
-      </concept>
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
-        <property id="5185579450379273119" name="text" index="1xAIam" />
-      </concept>
-      <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
-        <child id="5185579450379273128" name="header" index="1xAIax" />
-        <child id="3350625596580089613" name="text" index="1_0LWR" />
-      </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
-        <child id="3350625596580064250" name="contents" index="1_0VJ0" />
-      </concept>
-      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
-        <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
-      </concept>
     </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
       <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
@@ -194,14 +167,6 @@
         <child id="2406721343445433211" name="type" index="1s31WO" />
       </concept>
       <concept id="1258148499700303837" name="com.mbeddr.formal.nusmv.ext.structure.DocumentationMultiline" flags="ng" index="3I9x2T" />
-    </language>
-    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -6995,40 +6960,6 @@
         <node concept="KAwnX" id="ZH03rPhIxl" role="KALWe">
           <ref role="KAwnW" node="3Jn$RV2VwHf" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1_1swa" id="2mjHtwTu97P">
-    <property role="yApLE" value="1" />
-    <property role="TrG5h" value="_000_overview" />
-    <property role="3GE5qa" value="_000_item_definition" />
-    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
-    <node concept="1_0LV8" id="6VJDb1ZG9CQ" role="1_0VJ0">
-      <node concept="19SGf9" id="6VJDb1ZG9CR" role="1_0LWR">
-        <node concept="19SUe$" id="6VJDb1ZG9Dh" role="19SJt6" />
-      </node>
-      <node concept="1xAIan" id="6VJDb1ZG9CT" role="1xAIax">
-        <property role="1xAIam" value="Item Definition" />
-      </node>
-    </node>
-  </node>
-  <node concept="2SbYGP" id="2mjHtwTu9dY">
-    <property role="TrG5h" value="conf" />
-    <property role="3GE5qa" value="config" />
-    <node concept="2SbYGw" id="9TY4XGZias" role="A10yx">
-      <property role="TrG5h" value="img" />
-      <node concept="9PVaO" id="9TY4XGZiar" role="9PVG_">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="figures" />
-      </node>
-    </node>
-    <node concept="2SbYGw" id="2mjHtwTu9e1" role="Cbewh">
-      <property role="TrG5h" value="tmp" />
-      <node concept="9PVaO" id="2mjHtwTu9e2" role="9PVG_">
-        <property role="1RwFax" value="true" />
-        <property role="3kgbRO" value="false" />
-        <property role="3N1Lgt" value="figures" />
       </node>
     </node>
   </node>
