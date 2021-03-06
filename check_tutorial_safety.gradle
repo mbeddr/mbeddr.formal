@@ -35,6 +35,8 @@ ext.minor = '0'
 configurations {
     mps
 	languageLibs			
+    // includes also junit tasks support
+    antLib
 }
 
 dependencies {
