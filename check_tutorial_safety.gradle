@@ -1,5 +1,6 @@
 import de.itemis.mps.gradle.*
 
+//will pull the groovy classes/types from nexus to the classpath																
 buildscript {
     repositories {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
@@ -12,25 +13,34 @@ buildscript {
 plugins {
     id 'base'
     id 'maven-publish'
+    id 'co.riiid.gradle' version '0.4.2'										
 }
 
 apply plugin: 'modelcheck'
-
-// Dependency versions
-ext.mpsMajor =  '2020.2'
-ext.mpsVersion =  "$mpsMajor.+"
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
 ]
 
+// Dependency versions
+ext.mpsVersion =  '2020.2.+'
+ext.mbeddrVersion =  '2020.2.+'
+//ext.mbeddrVersion =  'mps-2020.2.+'
+
+// Project versions
+ext.major = '1'
+ext.minor = '0'
+
 configurations {
     mps
+	languageLibs			
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
+	languageLibs "com.mbeddr:platform:$mbeddrVersion"
+    antLib "org.apache.ant:ant-junit:1.10.6"													 										
 }
 
 repositories {
