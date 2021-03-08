@@ -2192,7 +2192,7 @@
       </node>
       <node concept="1E1JtA" id="kZSvS5TJI_" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.fasten.req.odd.pluginSolution" />
+        <property role="TrG5h" value="com.fasten.req.ontology.pluginSolution" />
         <property role="3LESm3" value="f0ea6b3a-8982-4cc9-8499-97dda9c3bd86" />
         <node concept="398BVA" id="kZSvS5TJYz" role="3LF7KH">
           <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
