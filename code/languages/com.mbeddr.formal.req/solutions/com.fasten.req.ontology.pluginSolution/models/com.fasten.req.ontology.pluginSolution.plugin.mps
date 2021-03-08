@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0ce468fe-cd11-4bd0-b286-f546c692582d(com.fasten.req.odd.pluginSolution.plugin)">
+<model ref="r:0ce468fe-cd11-4bd0-b286-f546c692582d(com.fasten.req.ontology.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
