@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.fasten.req.odd.pluginSolution" uuid="f0ea6b3a-8982-4cc9-8499-97dda9c3bd86" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="com.fasten.req.ontology.pluginSolution" uuid="f0ea6b3a-8982-4cc9-8499-97dda9c3bd86" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -36,8 +36,8 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="f52452b6-7f99-441b-98f9-a98c52b92236(com.fasten.req.odd)" version="1" />
-    <module reference="f0ea6b3a-8982-4cc9-8499-97dda9c3bd86(com.fasten.req.odd.pluginSolution)" version="0" />
     <module reference="65ed2ac6-4499-4751-951e-3819684a4b8d(com.fasten.req.ontology)" version="0" />
+    <module reference="f0ea6b3a-8982-4cc9-8499-97dda9c3bd86(com.fasten.req.ontology.pluginSolution)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
     <module reference="945808cb-09a0-4d70-9f2a-186b7f5c6219(com.mbeddr.formal.base.pluginSolution)" version="0" />

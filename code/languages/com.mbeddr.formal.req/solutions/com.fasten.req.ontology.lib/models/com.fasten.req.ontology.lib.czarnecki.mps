@@ -44,7 +44,7 @@
     </language>
   </registry>
   <node concept="3SOpcF" id="7gUa1Zsx7gl">
-    <property role="TrG5h" value="czarnecki_part_01_road_structure" />
+    <property role="TrG5h" value="czarnecki_operational_world_model_for_ads" />
     <node concept="19SGf9" id="7gUa1Zsx7gm" role="2I8HYo">
       <node concept="19SUe$" id="7gUa1Zsx7gn" role="19SJt6">
         <property role="19SUeA" value="This ontology is taken from&#10;&quot;Operational World Model Ontology for Automated Driving Systems - Part 1: Road Structure&quot;, and&#10;&quot;Operational World Model Ontology for Automated Driving Systems - Part 2: Road Users, Animals, Other Obstacles, and Environmental Conditions&quot;&#10;by Krzysztof Czarnecki" />
