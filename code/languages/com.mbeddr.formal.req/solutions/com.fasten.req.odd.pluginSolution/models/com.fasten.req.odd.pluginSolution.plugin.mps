@@ -49,6 +49,11 @@
     <property role="3GE5qa" value="diagrams" />
     <property role="TrG5h" value="OntologyDiagramSwitcher" />
     <ref role="2hhq6$" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+    <node concept="33gmoH" id="kZSvS5RaVU" role="2hfSGL">
+      <property role="33g7Lv" value="Textual Hierarchy" />
+      <ref role="33glcW" to="xqhh:1wKSXwEAKj6" resolve="OntologyHints" />
+      <ref role="33glcY" to="xqhh:kZSvS5QpoH" resolve="HIERARCHY" />
+    </node>
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="Ontology Tree View" />
       <ref role="33glcW" to="xqhh:1wKSXwEAKj6" resolve="OntologyHints" />
