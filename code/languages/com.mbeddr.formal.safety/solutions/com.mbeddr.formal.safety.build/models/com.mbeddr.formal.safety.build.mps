@@ -2145,6 +2145,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="kZSvS5TL2Q" role="3bR37C">
+          <node concept="3bR9La" id="kZSvS5TL2R" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:48DYfEtkinT" resolve="de.itemis.mps.editor.collapsible.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7Jm8RM1zoDc" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2180,6 +2185,60 @@
               </node>
             </node>
             <node concept="3qWCbU" id="7Jm8RM1zq66" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="kZSvS5TJI_" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.fasten.req.odd.pluginSolution" />
+        <property role="3LESm3" value="f0ea6b3a-8982-4cc9-8499-97dda9c3bd86" />
+        <node concept="398BVA" id="kZSvS5TJYz" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
+          <node concept="2Ry0Ak" id="kZSvS5TKfJ" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="kZSvS5TKwU" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.req.ontology.pluginSolution" />
+              <node concept="2Ry0Ak" id="kZSvS5TKM5" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasten.req.ontology.pluginSolution.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="kZSvS5TL3e" role="3bR37C">
+          <node concept="3bR9La" id="kZSvS5TL3f" role="1SiIV1">
+            <ref role="3bR37D" node="6adXBxxUwrY" resolve="com.mbeddr.formal.base.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="kZSvS5TL3g" role="3bR37C">
+          <node concept="3bR9La" id="kZSvS5TL3h" role="1SiIV1">
+            <ref role="3bR37D" node="4clv$caDtVU" resolve="com.fasten.req.ontology" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="kZSvS5TL3i" role="3bR37C">
+          <node concept="3bR9La" id="kZSvS5TL3j" role="1SiIV1">
+            <ref role="3bR37D" node="4clv$caDw5k" resolve="com.fasten.req.odd" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="kZSvS5TL3v" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="kZSvS5TL3w" role="1HemKq">
+            <node concept="398BVA" id="kZSvS5TL3k" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
+              <node concept="2Ry0Ak" id="kZSvS5TL3l" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="kZSvS5TL3m" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.req.ontology.pluginSolution" />
+                  <node concept="2Ry0Ak" id="kZSvS5TL3n" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="kZSvS5TL3x" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
