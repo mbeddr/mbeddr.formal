@@ -16,8 +16,6 @@ plugins {
     id 'co.riiid.gradle' version '0.4.2'
 }
 
-apply plugin: 'modelcheck'
-
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
@@ -316,18 +314,3 @@ task cleanMps(type: Delete) {
 defaultTasks 'build_fasten_safety_distribution'
 
 task rebuild(dependsOn:[clean, build_formal_languages])
-
-File modelcheckresult = new File("$buildDir/modelcheckresult.xml")
-
-modelcheck {
-    macros = [new Macro("mbeddr.formal.home", "$projectDir")]
-	//pluginLocation = new File("$buildDir/mps/plugins")
-	//plugins = [new Plugin("com.mbeddr.formal.base", "mbeddr.formal.base"), new Plugin("com.mbeddr.formal.nusmv", "mbeddr.formal.nusmv"), new Plugin("com.mbeddr.formal.req", "mbeddr.formal.req"), new Plugin("com.mbeddr.formal.safety", "mbeddr.formal.safety"), new Plugin("com.mbeddr.formal.spin", "mbeddr.formal.spin"), new Plugin("de.itemis.mps.editor.diagrams", "slisson.diagrams")]
-    projectLocation = new File("$projectDir/code/tutorial-safety/")
-    mpsConfig = configurations.mps
-    junitFile = modelcheckresult
-    errorNoFail = true
-    maxHeap = "3G"
-    modules = ["com.mbeddr.formal.safety.tutorial", "com.mbeddr.formal.safety.users_guide"]
-}
-
