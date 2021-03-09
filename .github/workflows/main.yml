@@ -72,19 +72,19 @@ jobs:
     - name: Check Consistency of the FASTEN-NuSMV Tutorial
       uses: eskatos/gradle-command-action@v1
       with:
-        arguments: -b check_tutorial_nusmv.gradle
-        #wrapper-cache-enabled: true
-        #dependencies-cache-enabled: true
-        #configuration-cache-enabled: true
+        arguments: -b check_tutorial_nusmv.gradle --offline
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        configuration-cache-enabled: true
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
     - name: Check Consistency of the FASTEN-Safety Tutorial
       uses: eskatos/gradle-command-action@v1
       with:
-        arguments: -b check_tutorial_safety.gradle
-        #wrapper-cache-enabled: true
-        #dependencies-cache-enabled: true
-        #configuration-cache-enabled: true
+        arguments: -b check_tutorial_safety.gradle --offline
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        configuration-cache-enabled: true
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
         
     - name: Run Tests
