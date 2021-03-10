@@ -80,8 +80,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -143,12 +153,19 @@
         <node concept="sUyCV" id="25dEoZdocss" role="2HfkAP">
           <property role="sUxOX" value="the following error is on purpose to demonstrate that variables with two typedefs are not compatible with each other" />
         </node>
-        <node concept="2HevG6" id="25dEoZdocr1" role="2HfkAP">
-          <node concept="2He$iJ" id="25dEoZdocrx" role="2He$ia">
-            <ref role="2He$iI" node="25dEoZdocnd" resolve="my_dist" />
-          </node>
-          <node concept="32Ogvo" id="25dEoZdocrN" role="2He$i0">
-            <ref role="32Ogvr" node="25dEoZdocmw" resolve="time" />
+        <node concept="sUyCV" id="22_ta1podkj" role="2HfkAP">
+          <property role="sUxOX" value="uncomment to get error" />
+        </node>
+        <node concept="1X3_iC" id="22_ta1podku" role="lGtFl">
+          <property role="3V$3am" value="assignments" />
+          <property role="3V$3ak" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/7842584090743880820/7842584090743880984" />
+          <node concept="2HevG6" id="25dEoZdocr1" role="8Wnug">
+            <node concept="2He$iJ" id="25dEoZdocrx" role="2He$ia">
+              <ref role="2He$iI" node="25dEoZdocnd" resolve="my_dist" />
+            </node>
+            <node concept="32Ogvo" id="25dEoZdocrN" role="2He$i0">
+              <ref role="32Ogvr" node="25dEoZdocmw" resolve="time" />
+            </node>
           </node>
         </node>
       </node>
@@ -201,12 +218,19 @@
         <node concept="sUyCV" id="25dEoZdochN" role="2HfkAP">
           <property role="sUxOX" value="the following error is for demo purposes to demonstrate additional checks available when parameters have types" />
         </node>
-        <node concept="1lxFmE" id="25dEoZdocfo" role="2HfkAP">
-          <node concept="2He$iJ" id="25dEoZdocfm" role="2He$ia">
-            <ref role="2He$iI" node="25dEoZdoc8C" resolve="my_len" />
-          </node>
-          <node concept="32Ogvo" id="25dEoZdocfQ" role="2He$i0">
-            <ref role="32Ogvr" node="25dEoZdocat" resolve="active" />
+        <node concept="sUyCV" id="22_ta1podeY" role="2HfkAP">
+          <property role="sUxOX" value="uncomment to have error" />
+        </node>
+        <node concept="1X3_iC" id="22_ta1podfd" role="lGtFl">
+          <property role="3V$3am" value="assignments" />
+          <property role="3V$3ak" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/7842584090743880820/7842584090743880984" />
+          <node concept="1lxFmE" id="25dEoZdocfo" role="8Wnug">
+            <node concept="2He$iJ" id="25dEoZdocfm" role="2He$ia">
+              <ref role="2He$iI" node="25dEoZdoc8C" resolve="my_len" />
+            </node>
+            <node concept="32Ogvo" id="25dEoZdocfQ" role="2He$i0">
+              <ref role="32Ogvr" node="25dEoZdocat" resolve="active" />
+            </node>
           </node>
         </node>
         <node concept="2HeLW8" id="25dEoZdoci3" role="2HfkAP" />

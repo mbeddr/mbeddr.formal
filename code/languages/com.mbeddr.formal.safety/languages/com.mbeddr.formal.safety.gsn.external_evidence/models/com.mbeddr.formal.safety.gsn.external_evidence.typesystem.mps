@@ -222,7 +222,7 @@
                             </node>
                           </node>
                           <node concept="Xl_RD" id="2QkJsC6FVXF" role="2MkJ7o">
-                            <property role="Xl_RC" value="document changed since last review" />
+                            <property role="Xl_RC" value="document changed since last review (new and saved checksums diverge)" />
                           </node>
                           <node concept="1YBJjd" id="2QkJsC6FW64" role="1urrMF">
                             <ref role="1YBMHb" node="2QkJsC6FGrE" resolve="externalEvidenceDocument" />

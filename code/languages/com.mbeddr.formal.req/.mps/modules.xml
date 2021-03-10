@@ -4,7 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/fasten.requirements/fasten.requirements.devkit" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.odd/com.fasten.req.odd.mpl" folder="lang.odd" />
-      <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.ontology/com.fasten.req.ontology.mpl" folder="lang.odd" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.ontology/com.fasten.req.ontology.mpl" folder="lang.ontology" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.arch/com.mbeddr.formal.req.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.base/com.mbeddr.formal.req.base.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.msc/com.mbeddr.formal.req.msc.mpl" folder="lang" />
@@ -13,9 +13,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.arch/com.mbeddr.formal.req.tl_patterns.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.nusmv/com.mbeddr.formal.req.tl_patterns.nusmv.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns/com.mbeddr.formal.req.tl_patterns.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.odd.pluginSolution/com.fasten.req.odd.pluginSolution.msd" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.odd.sandbox/com.fasten.req.odd.sandbox.msd" folder="lang.odd" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.ontology.lib/com.fasten.req.ontology.lib.msd" folder="lang.odd" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.ontology.lib/com.fasten.req.ontology.lib.msd" folder="lang.ontology" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.ontology.pluginSolution/com.fasten.req.ontology.pluginSolution.msd" folder="lang.ontology" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.base.pluginSolution/com.mbeddr.formal.req.base.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.sandbox/com.mbeddr.formal.req.sandbox.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution/com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution.msd" folder="lang" />

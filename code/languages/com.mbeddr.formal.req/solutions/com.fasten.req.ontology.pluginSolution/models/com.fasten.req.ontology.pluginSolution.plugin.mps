@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0ce468fe-cd11-4bd0-b286-f546c692582d(com.fasten.req.odd.pluginSolution.plugin)">
+<model ref="r:0ce468fe-cd11-4bd0-b286-f546c692582d(com.fasten.req.ontology.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
@@ -33,6 +33,8 @@
     </language>
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
       <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <property id="3897771026684496947" name="pushNothing" index="33gmoF" />
+        <property id="6445798029994313462" name="nothingLabel" index="1QNlnu" />
         <reference id="8575378964582005791" name="requiredConcept" index="2hhq6$" />
         <child id="8575378964581617586" name="modification" index="2hfP89" />
         <child id="8575378964581602954" name="options" index="2hfSGL" />
@@ -46,9 +48,16 @@
   </registry>
   <node concept="2DaZZR" id="6iM0fX1N45m" />
   <node concept="33ghlw" id="3onExzPnGul">
-    <property role="3GE5qa" value="diagrams" />
-    <property role="TrG5h" value="OntologyDiagramSwitcher" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="OntologyNotationSwitcher" />
+    <property role="33gmoF" value="true" />
+    <property role="1QNlnu" value="Flat Raw Textual View" />
     <ref role="2hhq6$" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+    <node concept="33gmoH" id="kZSvS5RaVU" role="2hfSGL">
+      <property role="33g7Lv" value="Textual Hierarchy" />
+      <ref role="33glcW" to="xqhh:1wKSXwEAKj6" resolve="OntologyHints" />
+      <ref role="33glcY" to="xqhh:kZSvS5QpoH" resolve="HIERARCHY" />
+    </node>
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="Ontology Tree View" />
       <ref role="33glcW" to="xqhh:1wKSXwEAKj6" resolve="OntologyHints" />

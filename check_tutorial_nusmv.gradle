@@ -1,0 +1,86 @@
+import de.itemis.mps.gradle.*
+
+//will pull the groovy classes/types from nexus to the classpath																					
+buildscript {
+    repositories {
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+		maven { url 'https://mvnrepository.com/artifact/de.itemis.mps' }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4+'
+    }
+}
+
+plugins {
+    id 'base'
+    id 'maven-publish'
+    id 'co.riiid.gradle' version '0.4.2'																						  
+}
+
+apply plugin: 'modelcheck'
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+]
+
+// Dependency versions
+ext.mpsVersion =  '2020.2.+'
+ext.mbeddrVersion =  '2020.2.+'
+//ext.mbeddrVersion =  'mps-2020.2.+'
+
+// Project versions
+ext.major = '1'
+ext.minor = '0'
+
+configurations {
+    mps
+	languageLibs			
+    // includes also junit tasks support
+    antLib
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+	languageLibs "com.mbeddr:platform:$mbeddrVersion"
+    antLib "org.apache.ant:ant-junit:1.10.6"													 										
+}
+
+repositories {
+    mavenLocal()
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+        }
+    }
+    mavenCentral()
+}
+
+
+File modelcheckresult = new File("$buildDir/TEST-tutorial-modelcheckresult.xml")
+
+def pluginsList=[]
+new File("$buildDir/dependencies/com.mbeddr.platform").eachFile {
+    if(it.isDirectory()) {
+        pluginsList.add(new Plugin(it.getName(), it.absolutePath))
+    }
+} 
+new File("$buildDir/artifacts/com.mbeddr.formal.languages").eachFile {
+    if(it.isDirectory()) {
+        pluginsList.add(new Plugin(it.getName(), it.absolutePath))
+    }
+} 
+
+modelcheck {
+	mpsLocation = new File("$buildDir/mps")
+    macros = [new Macro("mbeddr.formal.home", "$projectDir")]
+	plugins = pluginsList
+    projectLocation = new File("$projectDir/code/tutorial/")
+    mpsConfig = configurations.mps
+    junitFile = modelcheckresult
+    errorNoFail = true
+    maxHeap = "3G"
+    modules = ["com.mbeddr.formal.nusmv.tutorial"] //, "com.mbeddr.formal.safety.users_guide"]
+}
+
+defaultTasks 'checkmodels'

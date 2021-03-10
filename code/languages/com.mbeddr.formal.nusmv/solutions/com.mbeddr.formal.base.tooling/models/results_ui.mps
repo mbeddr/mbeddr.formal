@@ -41,7 +41,7 @@
       <concept id="1153422105332" name="jetbrains.mps.baseLanguage.structure.RemExpression" flags="nn" index="2dk9JS" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -269,10 +269,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -648,101 +648,111 @@
             <node concept="Xjq3P" id="1agNx8KPjM3" role="2Oq$k0" />
           </node>
         </node>
-        <node concept="3cpWs8" id="1agNx8KLPE1" role="3cqZAp">
-          <node concept="3cpWsn" id="1agNx8KLPE2" role="3cpWs9">
-            <property role="TrG5h" value="menuShortcutKeyMask" />
-            <node concept="10Oyi0" id="1agNx8KLPE0" role="1tU5fm" />
-            <node concept="2OqwBi" id="1agNx8KLPE3" role="33vP2m">
-              <node concept="2YIFZM" id="1agNx8KLPE4" role="2Oq$k0">
-                <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
-                <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit()" resolve="getDefaultToolkit" />
-              </node>
-              <node concept="liA8E" id="1agNx8KLPE5" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Toolkit.getMenuShortcutKeyMask()" resolve="getMenuShortcutKeyMask" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1agNx8KMLu0" role="3cqZAp">
-          <node concept="2OqwBi" id="1agNx8KMLuG" role="3clFbG">
-            <node concept="Xjq3P" id="1agNx8KPjuo" role="2Oq$k0" />
-            <node concept="liA8E" id="1agNx8KMLtW" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.registerKeyboardAction(java.awt.event.ActionListener,javax.swing.KeyStroke,int)" resolve="registerKeyboardAction" />
-              <node concept="2ShNRf" id="1agNx8KMLuq" role="37wK5m">
-                <node concept="YeOm9" id="1agNx8KMLus" role="2ShVmc">
-                  <node concept="1Y3b0j" id="1agNx8KMLue" role="YeSDq">
-                    <property role="2bfB8j" value="true" />
-                    <property role="1sVAO0" value="false" />
-                    <property role="1EXbeo" value="false" />
-                    <ref role="1Y3XeK" to="dxuu:~AbstractAction" resolve="AbstractAction" />
-                    <ref role="37wK5l" to="dxuu:~AbstractAction.&lt;init&gt;()" resolve="AbstractAction" />
-                    <node concept="3Tm1VV" id="1agNx8KMLui" role="1B3o_S" />
-                    <node concept="3clFb_" id="1agNx8KMLuk" role="jymVt">
-                      <property role="TrG5h" value="actionPerformed" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="2AHcQZ" id="1agNx8KMLum" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-                      </node>
-                      <node concept="37vLTG" id="1agNx8KMLu8" role="3clF46">
-                        <property role="TrG5h" value="e" />
-                        <property role="3TUv4t" value="false" />
-                        <node concept="3uibUv" id="1agNx8KMLua" role="1tU5fm">
-                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="1agNx8KMLuc" role="3clF47">
-                        <node concept="3clFbJ" id="3Hm$$iWkqkG" role="3cqZAp">
-                          <node concept="3clFbS" id="3Hm$$iWkqkI" role="3clFbx">
-                            <node concept="3clFbF" id="1agNx8KMLu2" role="3cqZAp">
-                              <node concept="2OqwBi" id="1agNx8KMLuo" role="3clFbG">
-                                <node concept="37vLTw" id="3DDJouLGsDF" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3DDJouLGc5S" resolve="mySearchPanel" />
-                                </node>
-                                <node concept="liA8E" id="1agNx8KMLug" role="2OqNvi">
-                                  <ref role="37wK5l" to="lg3m:~AbstractSearchPanel.activate()" resolve="activate" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3fqX7Q" id="3DDJouLGShg" role="3clFbw">
-                            <node concept="2OqwBi" id="3DDJouLGShi" role="3fr31v">
-                              <node concept="1rXfSq" id="3DDJouLGShj" role="2Oq$k0">
-                                <ref role="37wK5l" node="3DDJouLGJRi" resolve="inhibitSearchPanel" />
-                              </node>
-                              <node concept="3JPx81" id="3DDJouLGShk" role="2OqNvi">
-                                <node concept="2OqwBi" id="3DDJouLGShl" role="25WWJ7">
-                                  <node concept="37vLTw" id="3DDJouLGShm" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3DDJouLEMgn" resolve="tabbed" />
-                                  </node>
-                                  <node concept="liA8E" id="3DDJouLGShn" role="2OqNvi">
-                                    <ref role="37wK5l" to="dxuu:~JTabbedPane.getSelectedIndex()" resolve="getSelectedIndex" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3Tm1VV" id="1agNx8KMLtU" role="1B3o_S" />
-                      <node concept="3cqZAl" id="1agNx8KMLtY" role="3clF45" />
-                    </node>
+        <node concept="3clFbJ" id="7PtOUCoGS7U" role="3cqZAp">
+          <node concept="3clFbS" id="7PtOUCoGS7W" role="3clFbx">
+            <node concept="3cpWs8" id="1agNx8KLPE1" role="3cqZAp">
+              <node concept="3cpWsn" id="1agNx8KLPE2" role="3cpWs9">
+                <property role="TrG5h" value="menuShortcutKeyMask" />
+                <node concept="10Oyi0" id="1agNx8KLPE0" role="1tU5fm" />
+                <node concept="2OqwBi" id="1agNx8KLPE3" role="33vP2m">
+                  <node concept="2YIFZM" id="1agNx8KLPE4" role="2Oq$k0">
+                    <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+                    <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit()" resolve="getDefaultToolkit" />
+                  </node>
+                  <node concept="liA8E" id="1agNx8KLPE5" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Toolkit.getMenuShortcutKeyMask()" resolve="getMenuShortcutKeyMask" />
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="1agNx8KMLuy" role="37wK5m">
-                <ref role="1Pybhc" to="dxuu:~KeyStroke" resolve="KeyStroke" />
-                <ref role="37wK5l" to="dxuu:~KeyStroke.getKeyStroke(int,int)" resolve="getKeyStroke" />
-                <node concept="1Xhbcc" id="1agNx8KMLuu" role="37wK5m">
-                  <property role="1XhdNS" value="F" />
-                </node>
-                <node concept="37vLTw" id="1agNx8KLPE6" role="37wK5m">
-                  <ref role="3cqZAo" node="1agNx8KLPE2" resolve="menuShortcutKeyMask" />
+            </node>
+            <node concept="3clFbF" id="1agNx8KMLu0" role="3cqZAp">
+              <node concept="2OqwBi" id="1agNx8KMLuG" role="3clFbG">
+                <node concept="Xjq3P" id="1agNx8KPjuo" role="2Oq$k0" />
+                <node concept="liA8E" id="1agNx8KMLtW" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~JComponent.registerKeyboardAction(java.awt.event.ActionListener,javax.swing.KeyStroke,int)" resolve="registerKeyboardAction" />
+                  <node concept="2ShNRf" id="1agNx8KMLuq" role="37wK5m">
+                    <node concept="YeOm9" id="1agNx8KMLus" role="2ShVmc">
+                      <node concept="1Y3b0j" id="1agNx8KMLue" role="YeSDq">
+                        <property role="2bfB8j" value="true" />
+                        <property role="1sVAO0" value="false" />
+                        <property role="1EXbeo" value="false" />
+                        <ref role="1Y3XeK" to="dxuu:~AbstractAction" resolve="AbstractAction" />
+                        <ref role="37wK5l" to="dxuu:~AbstractAction.&lt;init&gt;()" resolve="AbstractAction" />
+                        <node concept="3Tm1VV" id="1agNx8KMLui" role="1B3o_S" />
+                        <node concept="3clFb_" id="1agNx8KMLuk" role="jymVt">
+                          <property role="TrG5h" value="actionPerformed" />
+                          <property role="DiZV1" value="false" />
+                          <property role="od$2w" value="false" />
+                          <node concept="2AHcQZ" id="1agNx8KMLum" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                          </node>
+                          <node concept="37vLTG" id="1agNx8KMLu8" role="3clF46">
+                            <property role="TrG5h" value="e" />
+                            <property role="3TUv4t" value="false" />
+                            <node concept="3uibUv" id="1agNx8KMLua" role="1tU5fm">
+                              <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="1agNx8KMLuc" role="3clF47">
+                            <node concept="3clFbJ" id="3Hm$$iWkqkG" role="3cqZAp">
+                              <node concept="3clFbS" id="3Hm$$iWkqkI" role="3clFbx">
+                                <node concept="3clFbF" id="1agNx8KMLu2" role="3cqZAp">
+                                  <node concept="2OqwBi" id="1agNx8KMLuo" role="3clFbG">
+                                    <node concept="37vLTw" id="3DDJouLGsDF" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="3DDJouLGc5S" resolve="mySearchPanel" />
+                                    </node>
+                                    <node concept="liA8E" id="1agNx8KMLug" role="2OqNvi">
+                                      <ref role="37wK5l" to="lg3m:~AbstractSearchPanel.activate()" resolve="activate" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3fqX7Q" id="3DDJouLGShg" role="3clFbw">
+                                <node concept="2OqwBi" id="3DDJouLGShi" role="3fr31v">
+                                  <node concept="1rXfSq" id="3DDJouLGShj" role="2Oq$k0">
+                                    <ref role="37wK5l" node="3DDJouLGJRi" resolve="inhibitSearchPanel" />
+                                  </node>
+                                  <node concept="3JPx81" id="3DDJouLGShk" role="2OqNvi">
+                                    <node concept="2OqwBi" id="3DDJouLGShl" role="25WWJ7">
+                                      <node concept="37vLTw" id="3DDJouLGShm" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3DDJouLEMgn" resolve="tabbed" />
+                                      </node>
+                                      <node concept="liA8E" id="3DDJouLGShn" role="2OqNvi">
+                                        <ref role="37wK5l" to="dxuu:~JTabbedPane.getSelectedIndex()" resolve="getSelectedIndex" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3Tm1VV" id="1agNx8KMLtU" role="1B3o_S" />
+                          <node concept="3cqZAl" id="1agNx8KMLtY" role="3clF45" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="1agNx8KMLuy" role="37wK5m">
+                    <ref role="1Pybhc" to="dxuu:~KeyStroke" resolve="KeyStroke" />
+                    <ref role="37wK5l" to="dxuu:~KeyStroke.getKeyStroke(int,int)" resolve="getKeyStroke" />
+                    <node concept="1Xhbcc" id="1agNx8KMLuu" role="37wK5m">
+                      <property role="1XhdNS" value="F" />
+                    </node>
+                    <node concept="37vLTw" id="1agNx8KLPE6" role="37wK5m">
+                      <ref role="3cqZAo" node="1agNx8KLPE2" resolve="menuShortcutKeyMask" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="1ZsZb$iX0dR" role="37wK5m">
+                    <ref role="3cqZAo" to="dxuu:~JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT" resolve="WHEN_ANCESTOR_OF_FOCUSED_COMPONENT" />
+                  </node>
                 </node>
               </node>
-              <node concept="37vLTw" id="1ZsZb$iX0dR" role="37wK5m">
-                <ref role="3cqZAo" to="dxuu:~JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT" resolve="WHEN_ANCESTOR_OF_FOCUSED_COMPONENT" />
-              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7PtOUCoGVNF" role="3clFbw">
+            <node concept="2YIFZM" id="7PtOUCoGVNH" role="3fr31v">
+              <ref role="37wK5l" to="z60i:~GraphicsEnvironment.isHeadless()" resolve="isHeadless" />
+              <ref role="1Pybhc" to="z60i:~GraphicsEnvironment" resolve="GraphicsEnvironment" />
             </node>
           </node>
         </node>
