@@ -52,7 +52,7 @@
     <property role="TrG5h" value="OntologyNotationSwitcher" />
     <property role="33gmoF" value="true" />
     <property role="1QNlnu" value="Flat Raw Textual View" />
-    <ref role="2hhq6$" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+    <ref role="2hhq6$" to="6wa3:3Jn$RV31w1l" resolve="Ontology" />
     <node concept="33gmoH" id="kZSvS5RaVU" role="2hfSGL">
       <property role="33g7Lv" value="Textual Hierarchy" />
       <ref role="33glcW" to="xqhh:1wKSXwEAKj6" resolve="OntologyHints" />
