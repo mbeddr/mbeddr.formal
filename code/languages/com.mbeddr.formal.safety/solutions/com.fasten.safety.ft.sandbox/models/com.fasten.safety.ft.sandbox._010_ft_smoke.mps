@@ -77,10 +77,6 @@
           <property role="gqqTX" value="84.0" />
           <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="1GpuQyTepM$" role="1pap1a">
-            <property role="1pa3iD" value="port" />
-            <property role="2gRgW$" value="524088270" />
-          </node>
         </node>
       </node>
       <node concept="37mRIm" id="5rwT_Jnw0S8" role="37mRID">
@@ -91,10 +87,6 @@
           <property role="gqqTX" value="137.0" />
           <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="1GpuQyTepM_" role="1pap1a">
-            <property role="1pa3iD" value="port" />
-            <property role="2gRgW$" value="1602775202" />
-          </node>
         </node>
       </node>
       <node concept="37mRIm" id="3EWkVoQ4xw0" role="37mRID">
@@ -172,10 +164,6 @@
           <property role="gqqTX" value="79.0" />
           <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="1GpuQyTepMF" role="1pap1a">
-            <property role="1pa3iD" value="port" />
-            <property role="2gRgW$" value="523279242" />
-          </node>
         </node>
       </node>
       <node concept="37mRIm" id="3EWkVoQ6Q33" role="37mRID">
@@ -216,10 +204,6 @@
           <property role="gqqTX" value="50.0" />
           <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="1GpuQyTepMG" role="1pap1a">
-            <property role="1pa3iD" value="port" />
-            <property role="2gRgW$" value="751619276" />
-          </node>
         </node>
       </node>
       <node concept="37mRIm" id="3EWkVoQ6VEQ" role="37mRID">
@@ -230,10 +214,6 @@
           <property role="gqqTX" value="55.0" />
           <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          <node concept="1pa3jb" id="1GpuQyTepMH" role="1pap1a">
-            <property role="1pa3iD" value="port" />
-            <property role="2gRgW$" value="1757032073" />
-          </node>
         </node>
       </node>
       <node concept="37mRIm" id="3EWkVoQ6VFD" role="37mRID">
