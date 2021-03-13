@@ -192,7 +192,6 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="3358009230509553641" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListType" flags="in" index="2BANLN" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
@@ -240,8 +239,8 @@
         <node concept="3cpWs8" id="7jevvt_gDRI" role="3cqZAp">
           <node concept="3cpWsn" id="7jevvt_gDRJ" role="3cpWs9">
             <property role="TrG5h" value="args" />
-            <node concept="2BANLN" id="7jevvt_gDPm" role="1tU5fm">
-              <node concept="17QB3L" id="7jevvt_gDPp" role="_ZDj9" />
+            <node concept="_YKpA" id="3oGITguzKVh" role="1tU5fm">
+              <node concept="17QB3L" id="3oGITguzKVj" role="_ZDj9" />
             </node>
             <node concept="2ShNRf" id="7jevvt_gDRK" role="33vP2m">
               <node concept="2Jqq0_" id="7jevvt_gDRL" role="2ShVmc">

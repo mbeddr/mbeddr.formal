@@ -16,7 +16,7 @@
         <child id="6260256764176593148" name="elements" index="21ATqB" />
       </concept>
       <concept id="6260256764176593682" name="com.fasten.safety.ft.structure.EventBase" flags="ng" index="21ATl9">
-        <property id="6260256764176593685" name="probability" index="21ATle" />
+        <child id="1184758059395733807" name="spec" index="2rok82" />
       </concept>
       <concept id="6260256764176593147" name="com.fasten.safety.ft.structure.FaultTreeConnectionBase" flags="ng" index="21ATqw">
         <reference id="6260256764176969352" name="end" index="21oszj" />
@@ -26,6 +26,9 @@
       <concept id="6260256764176593194" name="com.fasten.safety.ft.structure.BasicEvent" flags="ng" index="21ATtL" />
       <concept id="4232349791877945006" name="com.fasten.safety.ft.structure.AndGate" flags="ng" index="cEgko" />
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
+      <concept id="1184758059395759180" name="com.fasten.safety.ft.structure.TextualEventSpec" flags="ng" index="2roqtx">
+        <property id="1184758059396263958" name="fit" index="2rqmGV" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -68,7 +71,9 @@
     <property role="TrG5h" value="_010_first_FT" />
     <node concept="21ATtL" id="7YOjUbFq7fu" role="21ATqB">
       <property role="TrG5h" value="erroneous_speed" />
-      <property role="21ATle" value="10^-4" />
+      <node concept="2roqtx" id="11L6MQb6ksM" role="2rok82">
+        <property role="2rqmGV" value="0.00001" />
+      </node>
     </node>
     <node concept="37mRI7" id="7YOjUbFq7fv" role="lGtFl">
       <node concept="37mRIm" id="7YOjUbFq7fG" role="37mRID">
@@ -244,8 +249,8 @@
         <node concept="gqqVs" id="7YOjUbFqcbu" role="37mO4d">
           <property role="gqqTZ" value="128.45" />
           <property role="gqqTW" value="339.0" />
-          <property role="gqqTX" value="82.0" />
-          <property role="gqqTy" value="43.0" />
+          <property role="gqqTX" value="84.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="7YOjUbFqcbw" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -262,8 +267,8 @@
         <node concept="gqqVs" id="7YOjUbFqcby" role="37mO4d">
           <property role="gqqTZ" value="12.0" />
           <property role="gqqTW" value="118.0" />
-          <property role="gqqTX" value="135.0" />
-          <property role="gqqTy" value="43.0" />
+          <property role="gqqTX" value="137.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="7YOjUbFqcb$" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -280,8 +285,8 @@
         <node concept="gqqVs" id="7YOjUbFqcbA" role="37mO4d">
           <property role="gqqTZ" value="54.5" />
           <property role="gqqTW" value="225.0" />
-          <property role="gqqTX" value="51.55" />
-          <property role="gqqTy" value="50.0" />
+          <property role="gqqTX" value="52.0" />
+          <property role="gqqTy" value="57.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="7YOjUbFqcbC" role="1pap1a">
             <property role="1pa3iD" value="port" />
@@ -302,8 +307,8 @@
         <node concept="gqqVs" id="7YOjUbFqcbF" role="37mO4d">
           <property role="gqqTZ" value="167.0" />
           <property role="gqqTW" value="111.0" />
-          <property role="gqqTX" value="51.55" />
-          <property role="gqqTy" value="50.0" />
+          <property role="gqqTX" value="52.0" />
+          <property role="gqqTy" value="57.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="7YOjUbFqcbH" role="1pap1a">
             <property role="1pa3iD" value="port" />
@@ -324,8 +329,8 @@
         <node concept="gqqVs" id="7YOjUbFqcbK" role="37mO4d">
           <property role="gqqTZ" value="31.45" />
           <property role="gqqTW" value="339.0" />
-          <property role="gqqTX" value="77.0" />
-          <property role="gqqTy" value="43.0" />
+          <property role="gqqTX" value="79.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="7YOjUbFqcbM" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -342,8 +347,8 @@
         <node concept="gqqVs" id="7YOjUbFqcbO" role="37mO4d">
           <property role="gqqTZ" value="177.55" />
           <property role="gqqTW" value="225.0" />
-          <property role="gqqTX" value="48.0" />
-          <property role="gqqTy" value="43.0" />
+          <property role="gqqTX" value="50.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="7YOjUbFqcbQ" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -360,8 +365,8 @@
         <node concept="gqqVs" id="7YOjUbFqcbS" role="37mO4d">
           <property role="gqqTZ" value="165.5" />
           <property role="gqqTW" value="24.0" />
-          <property role="gqqTX" value="53.0" />
-          <property role="gqqTy" value="43.0" />
+          <property role="gqqTX" value="55.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="7YOjUbFqcbU" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -402,12 +407,14 @@
     </node>
     <node concept="21ATtk" id="7YOjUbFq7fw" role="21ATqB">
       <property role="TrG5h" value="erroneous braking distance" />
-      <property role="21ATle" value="10^-4" />
     </node>
     <node concept="cFNQA" id="7YOjUbFq7fx" role="21ATqB" />
     <node concept="cEgko" id="7YOjUbFq7fy" role="21ATqB" />
     <node concept="21ATtL" id="7YOjUbFq7fz" role="21ATqB">
       <property role="TrG5h" value="erroneous_time" />
+      <node concept="2roqtx" id="11L6MQb6ksP" role="2rok82">
+        <property role="2rqmGV" value="0.00001" />
+      </node>
     </node>
     <node concept="21oswF" id="7YOjUbFq7f$" role="21ATq_">
       <ref role="21oszt" node="7YOjUbFq7fu" resolve="erroneous_speed" />
@@ -419,6 +426,9 @@
     </node>
     <node concept="21ATtL" id="7YOjUbFq7fA" role="21ATqB">
       <property role="TrG5h" value="obstacle" />
+      <node concept="2roqtx" id="11L6MQb6ksR" role="2rok82">
+        <property role="2rqmGV" value="0.001" />
+      </node>
     </node>
     <node concept="21ATtk" id="7YOjUbFq7fB" role="21ATqB">
       <property role="TrG5h" value="collision" />
