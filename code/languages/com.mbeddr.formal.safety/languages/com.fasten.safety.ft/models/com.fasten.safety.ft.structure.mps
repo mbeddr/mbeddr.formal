@@ -203,7 +203,7 @@
     <ref role="1TJDcQ" node="11L6MQb45$I" resolve="EventSpecBase" />
     <node concept="1TJgyi" id="11L6MQb670m" role="1TKVEl">
       <property role="IQ2nx" value="1184758059396263958" />
-      <property role="TrG5h" value="fit" />
+      <property role="TrG5h" value="failureRate" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="3oGITguzUlR" role="1TKVEl">

@@ -2392,7 +2392,7 @@
           <property role="3F0ifm" value="FIT:" />
         </node>
         <node concept="3F0A7n" id="11L6MQb671f" role="3EZMnx">
-          <ref role="1NtTu8" to="spwl:11L6MQb670m" resolve="fit" />
+          <ref role="1NtTu8" to="spwl:11L6MQb670m" resolve="failureRate" />
         </node>
         <node concept="2iRfu4" id="11L6MQb6710" role="2iSdaV" />
       </node>
