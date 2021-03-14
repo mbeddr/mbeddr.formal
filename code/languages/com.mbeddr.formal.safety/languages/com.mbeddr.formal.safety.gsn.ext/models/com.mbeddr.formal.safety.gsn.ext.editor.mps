@@ -23,6 +23,7 @@
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
       <concept id="7418278005949660372" name="jetbrains.mps.lang.editor.structure.FontFamilyStyleClassItem" flags="ln" index="2biZxu" />
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
@@ -240,6 +241,17 @@
           </node>
         </node>
         <node concept="l2Vlx" id="WKGDODNpr_" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="25jECTPZ$Qd" role="3EZMnx" />
+      <node concept="3EZMnI" id="25jECTPZ$QP" role="3EZMnx">
+        <node concept="VPM3Z" id="25jECTPZ$QR" role="3F10Kt" />
+        <node concept="3F0ifn" id="25jECTPZ$QT" role="3EZMnx">
+          <property role="3F0ifm" value="Explanation:" />
+        </node>
+        <node concept="3F1sOY" id="25jECTPZ$Rq" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        </node>
+        <node concept="2iRfu4" id="25jECTPZ$QU" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="WKGDODNpog" role="2iSdaV" />
     </node>
