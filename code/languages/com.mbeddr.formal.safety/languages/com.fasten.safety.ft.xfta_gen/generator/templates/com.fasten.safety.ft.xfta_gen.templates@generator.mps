@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9caa2c06-eb61-4ec9-a3d2-83aa0b28c2e9(com.fasten.safety.ft.xfta_gen.generator.templates@generator)">
+<model ref="r:9caa2c06-eb61-4ec9-a3d2-83aa0b28c2e9(com.fasten.safety.ft.xfta_gen.templates@generator)">
   <persistence version="9" />
   <languages>
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
