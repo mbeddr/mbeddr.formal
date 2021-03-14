@@ -502,9 +502,6 @@
         <node concept="1RuTs0" id="5rwT_JnuRbC" role="1RuSHk">
           <ref role="1RuSHD" to="spwl:5rwT_JnuR3W" resolve="elements" />
         </node>
-        <node concept="1RuTs0" id="5rwT_JnuRbH" role="1RuSHk">
-          <ref role="1RuSHD" to="spwl:5rwT_JnuR3Y" resolve="connections" />
-        </node>
         <node concept="39fpm" id="5rwT_JnuRbZ" role="35U2g">
           <property role="1NdBj4" value="6Bd7VwqYQBO/UP" />
         </node>
