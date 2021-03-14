@@ -9561,7 +9561,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="3R_yAtWp6XP" role="1TViLv">
-          <property role="TrG5h" value="com.fasten.safety.ft.xfta_gen.generator" />
+          <property role="TrG5h" value="com.fasten.safety.ft.xfta_gen.#01" />
           <property role="3LESm3" value="0940b90d-aea1-4339-be5b-c8084d7ead33" />
           <node concept="1SiIV0" id="3R_yAtWp6XQ" role="3bR37C">
             <node concept="3bR9La" id="3R_yAtWp6XR" role="1SiIV1">
