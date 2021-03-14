@@ -3,8 +3,8 @@ import de.itemis.mps.gradle.*
 //will pull the groovy classes/types from nexus to the classpath																					
 buildscript {
     repositories {
+		maven { url 'https://mvnrepository.com/artifact/de.itemis.mps' }	
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
-		maven { url 'https://mvnrepository.com/artifact/de.itemis.mps' }
     }
     dependencies {
         classpath 'de.itemis.mps:mps-gradle-plugin:1.4+'

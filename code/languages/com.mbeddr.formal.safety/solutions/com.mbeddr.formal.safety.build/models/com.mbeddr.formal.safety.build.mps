@@ -9071,13 +9071,13 @@
               <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
               <node concept="2Ry0Ak" id="7he_lUurCB8" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="7he_lUurCB9" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.odd" />
+                <node concept="2Ry0Ak" id="7jevvt_h5A_" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.iso26262" />
                 </node>
               </node>
             </node>
             <node concept="3qWCbU" id="7he_lUurCBa" role="3LXTna">
-              <property role="3qWCbO" value="icons/**" />
+              <property role="3qWCbO" value="com/mbeddr/formal/safety/iso26262/structure/*.png" />
             </node>
           </node>
         </node>

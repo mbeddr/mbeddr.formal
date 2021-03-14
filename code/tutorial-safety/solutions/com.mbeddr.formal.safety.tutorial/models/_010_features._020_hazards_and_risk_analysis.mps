@@ -130,10 +130,17 @@
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
         <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
       </concept>
+      <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
+        <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
+      </concept>
+      <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <child id="5861696777036874344" name="description" index="3h3iL1" />
+      </concept>
       <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
         <property id="5861696777036826305" name="exposure" index="3h3uzC" />
         <property id="5861696777036826304" name="severity" index="3h3uzD" />
         <property id="5861696777036826306" name="controlability" index="3h3uzF" />
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
   </registry>
@@ -506,8 +513,15 @@
       </node>
       <node concept="3h3uym" id="55oVyA0mGR1" role="3h3uzw">
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="1LvcKAYEWJP" resolve="OS01" />
+      </node>
+      <node concept="3h3uym" id="1LvcKAYEWK8" role="3h3uzw">
+        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <ref role="3h3iM1" node="1LvcKAYEWJZ" resolve="OS02" />
       </node>
     </node>
     <node concept="1a6Z8w" id="7L33HENb9vN" role="8gIbH">
@@ -577,6 +591,25 @@
     <node concept="2HxQMU" id="7Jm8RM1zooN" role="2HxQMj">
       <property role="2HxQM_" value="DRIVER_LIGHT_INJ" />
       <property role="TrG5h" value="driver light injury which does not require hospitalization" />
+    </node>
+  </node>
+  <node concept="3h3iLa" id="1LvcKAYEWJH">
+    <property role="TrG5h" value="_110_operational_situations" />
+    <node concept="3h3iLe" id="1LvcKAYEWJP" role="3h3F1H">
+      <property role="TrG5h" value="OS01" />
+      <node concept="19SGf9" id="1LvcKAYEWJQ" role="3h3iL1">
+        <node concept="19SUe$" id="1LvcKAYEWJR" role="19SJt6">
+          <property role="19SUeA" value="driving on highway" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="1LvcKAYEWJZ" role="3h3F1H">
+      <property role="TrG5h" value="OS02" />
+      <node concept="19SGf9" id="1LvcKAYEWK0" role="3h3iL1">
+        <node concept="19SUe$" id="1LvcKAYEWK1" role="19SJt6">
+          <property role="19SUeA" value="driving in city" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
