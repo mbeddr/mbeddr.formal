@@ -41,6 +41,9 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
@@ -202,6 +205,20 @@
         <property role="NWlVz" value="Text area containing the ran command." />
       </node>
     </node>
+    <node concept="2tJIrI" id="3R_yAtWnF7h" role="jymVt" />
+    <node concept="312cEg" id="3R_yAtWnE8X" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="liftedResultText" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3R_yAtWnE8Y" role="1B3o_S" />
+      <node concept="3uibUv" id="3R_yAtWnE8Z" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
+      </node>
+      <node concept="NWlO9" id="3R_yAtWnE90" role="lGtFl">
+        <property role="NWlVz" value="Text area containing the lifted result." />
+      </node>
+    </node>
     <node concept="2tJIrI" id="4$9c1ZyA5FH" role="jymVt" />
     <node concept="3clFbW" id="6izRX53q9Aq" role="jymVt">
       <node concept="3cqZAl" id="6izRX53q9Ar" role="3clF45" />
@@ -235,6 +252,22 @@
             </node>
             <node concept="37vLTw" id="4kcU3YrmtmI" role="37vLTJ">
               <ref role="3cqZAo" node="4kcU3YrmsGl" resolve="stderrText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3R_yAtWnHUc" role="3cqZAp">
+          <node concept="37vLTI" id="3R_yAtWnHUd" role="3clFbG">
+            <node concept="1rXfSq" id="3R_yAtWnHUe" role="37vLTx">
+              <ref role="37wK5l" to="vxn5:3DDJouLF9Ul" resolve="createAndAddNewTabWithTextArea" />
+              <node concept="Xl_RD" id="3R_yAtWnHUf" role="37wK5m">
+                <property role="Xl_RC" value="Result" />
+              </node>
+              <node concept="3clFbT" id="3R_yAtWnHUg" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3R_yAtWnJq1" role="37vLTJ">
+              <ref role="3cqZAo" node="3R_yAtWnE8X" resolve="liftedResultText" />
             </node>
           </node>
         </node>
@@ -370,8 +403,8 @@
                                       </node>
                                       <node concept="liA8E" id="1agNx8KK0_E" role="2OqNvi">
                                         <ref role="37wK5l" to="ztk3:1agNx8KJx1_" resolve="setCurrentTextComponent" />
-                                        <node concept="37vLTw" id="1VTqiUVmQ_1" role="37wK5m">
-                                          <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+                                        <node concept="37vLTw" id="3R_yAtWnLk$" role="37wK5m">
+                                          <ref role="3cqZAo" node="3R_yAtWnE8X" resolve="liftedResultText" />
                                         </node>
                                       </node>
                                     </node>
@@ -379,6 +412,26 @@
                                 </node>
                                 <node concept="3cmrfG" id="7jevvt_gfuu" role="3Kbmr1">
                                   <property role="3cmrfH" value="2" />
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="3R_yAtWnK2I" role="3KbHQx">
+                                <node concept="3clFbS" id="3R_yAtWnK2J" role="3Kbo56">
+                                  <node concept="3clFbF" id="3R_yAtWnK2K" role="3cqZAp">
+                                    <node concept="2OqwBi" id="3R_yAtWnK2L" role="3clFbG">
+                                      <node concept="37vLTw" id="3R_yAtWnK2M" role="2Oq$k0">
+                                        <ref role="3cqZAo" to="vxn5:3DDJouLGc5S" resolve="mySearchPanel" />
+                                      </node>
+                                      <node concept="liA8E" id="3R_yAtWnK2N" role="2OqNvi">
+                                        <ref role="37wK5l" to="ztk3:1agNx8KJx1_" resolve="setCurrentTextComponent" />
+                                        <node concept="37vLTw" id="3R_yAtWnK2O" role="37wK5m">
+                                          <ref role="3cqZAo" node="4$9c1ZyA7DQ" resolve="ranCommandText" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3cmrfG" id="3R_yAtWnK2P" role="3Kbmr1">
+                                  <property role="3cmrfH" value="3" />
                                 </node>
                               </node>
                             </node>
@@ -458,6 +511,37 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3R_yAtWnNYM" role="3cqZAp" />
+        <node concept="3clFbF" id="3R_yAtWnNhy" role="3cqZAp">
+          <node concept="2OqwBi" id="3R_yAtWnNhz" role="3clFbG">
+            <node concept="37vLTw" id="3R_yAtWnOPQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="3R_yAtWnE8X" resolve="liftedResultText" />
+            </node>
+            <node concept="liA8E" id="3R_yAtWnNh_" role="2OqNvi">
+              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String)" resolve="setText" />
+              <node concept="2YIFZM" id="3R_yAtWnRb2" role="37wK5m">
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <ref role="37wK5l" to="wyt6:~String.join(java.lang.CharSequence,java.lang.Iterable)" resolve="join" />
+                <node concept="Xl_RD" id="3R_yAtWnSv9" role="37wK5m">
+                  <property role="Xl_RC" value="\n" />
+                </node>
+                <node concept="37vLTw" id="3R_yAtWnX1f" role="37wK5m">
+                  <ref role="3cqZAo" node="3R_yAtWnLKI" resolve="result" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3R_yAtWnNhu" role="3cqZAp">
+          <node concept="2OqwBi" id="3R_yAtWnNhv" role="3clFbG">
+            <node concept="37vLTw" id="3R_yAtWnXSU" role="2Oq$k0">
+              <ref role="3cqZAo" node="3R_yAtWnE8X" resolve="liftedResultText" />
+            </node>
+            <node concept="liA8E" id="3R_yAtWnNhx" role="2OqNvi">
+              <ref role="37wK5l" to="r791:~JTextComponent.updateUI()" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="4kcU3YrmuPL" role="3cqZAp" />
         <node concept="3clFbF" id="4$9c1ZyAk_v" role="3cqZAp">
           <node concept="2OqwBi" id="4$9c1ZyAkZC" role="3clFbG">
@@ -492,6 +576,12 @@
       <node concept="37vLTG" id="6izRX53qxH4" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="17QB3L" id="4kcU3YrkLSI" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3R_yAtWnLKI" role="3clF46">
+        <property role="TrG5h" value="result" />
+        <node concept="_YKpA" id="3R_yAtWnN0m" role="1tU5fm">
+          <node concept="17QB3L" id="3R_yAtWnN9D" role="_ZDj9" />
+        </node>
       </node>
       <node concept="37vLTG" id="4kcU3YrmuEo" role="3clF46">
         <property role="TrG5h" value="err" />
