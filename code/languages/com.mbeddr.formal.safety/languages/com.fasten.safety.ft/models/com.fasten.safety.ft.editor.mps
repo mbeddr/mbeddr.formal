@@ -2386,7 +2386,7 @@
       <node concept="3EZMnI" id="11L6MQb670V" role="3EZMnx">
         <node concept="VPM3Z" id="11L6MQb670X" role="3F10Kt" />
         <node concept="3F0ifn" id="11L6MQb6715" role="3EZMnx">
-          <property role="3F0ifm" value="FIT:" />
+          <property role="3F0ifm" value="lambda:" />
         </node>
         <node concept="3F0A7n" id="11L6MQb671f" role="3EZMnx">
           <ref role="1NtTu8" to="spwl:11L6MQb670m" resolve="failureRate" />
