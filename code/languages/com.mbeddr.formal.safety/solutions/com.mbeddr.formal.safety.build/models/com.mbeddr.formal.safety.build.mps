@@ -10743,6 +10743,11 @@
             <ref role="3bR37D" node="3R_yAtWp53E" resolve="com.fasten.safety.ft.xfta_gen" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2XVAqcwCLiO" role="3bR37C">
+          <node concept="3bR9La" id="2XVAqcwCLiP" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1X3_iC" id="1FMyjUPhLkE" role="lGtFl">
         <property role="3V$3am" value="modules" />
