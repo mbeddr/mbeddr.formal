@@ -43,11 +43,7 @@
     <language id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft">
       <concept id="6260256764176969328" name="com.fasten.safety.ft.structure.Connection" flags="ng" index="21oswF" />
       <concept id="6260256764176592607" name="com.fasten.safety.ft.structure.FaultTree" flags="ng" index="21ASy4">
-        <child id="6260256764176593150" name="connections" index="21ATq_" />
-        <child id="6260256764176593148" name="elements" index="21ATqB" />
-      </concept>
-      <concept id="6260256764176593682" name="com.fasten.safety.ft.structure.EventBase" flags="ng" index="21ATl9">
-        <property id="6260256764176593685" name="probability" index="21ATle" />
+        <child id="2812932810441448772" name="content" index="3CrHoS" />
       </concept>
       <concept id="6260256764176593147" name="com.fasten.safety.ft.structure.FaultTreeConnectionBase" flags="ng" index="21ATqw">
         <reference id="6260256764176969352" name="end" index="21oszj" />
@@ -392,18 +388,14 @@
   <node concept="21ASy4" id="5rwT_JnuXe$">
     <property role="TrG5h" value="_100_fault_tree" />
     <property role="3GE5qa" value="_10_fault_tree" />
-    <node concept="21ATtL" id="5rwT_JnuXB6" role="21ATqB">
-      <property role="TrG5h" value="erroneous_speed" />
-      <property role="21ATle" value="10^-4" />
-    </node>
     <node concept="37mRI7" id="5rwT_JnuXB9" role="lGtFl">
       <node concept="37mRIm" id="5rwT_JnuXBa" role="37mRID">
         <property role="37mO49" value="6260256764176619974" />
         <node concept="gqqVs" id="5rwT_JnuXB8" role="37mO4d">
           <property role="gqqTZ" value="154.95" />
           <property role="gqqTW" value="338.0" />
-          <property role="gqqTX" value="82.0" />
-          <property role="gqqTy" value="42.0" />
+          <property role="gqqTX" value="84.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="SmAS9iozOi" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -420,8 +412,8 @@
         <node concept="gqqVs" id="5rwT_Jnw0S7" role="37mO4d">
           <property role="gqqTZ" value="12.0" />
           <property role="gqqTW" value="118.0" />
-          <property role="gqqTX" value="188.0" />
-          <property role="gqqTy" value="42.0" />
+          <property role="gqqTX" value="190.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="SmAS9iozOk" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -461,20 +453,12 @@
         <node concept="gqqVs" id="3EWkVoQ5ez6" role="37mO4d">
           <property role="gqqTZ" value="81.0" />
           <property role="gqqTW" value="224.0" />
-          <property role="gqqTX" value="51.55" />
-          <property role="gqqTy" value="50.0" />
+          <property role="gqqTX" value="52.0" />
+          <property role="gqqTy" value="52.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="SmAS9iozOm" role="1pap1a">
             <property role="1pa3iD" value="port" />
             <property role="2gRgW$" value="1053092941" />
-          </node>
-          <node concept="1pa3jb" id="SmAS9iozOn" role="1pap1a">
-            <property role="1pa3iD" value="4232349791878340797" />
-            <property role="2gRgW$" value="2128646070" />
-          </node>
-          <node concept="1pa3jb" id="SmAS9iozOo" role="1pap1a">
-            <property role="1pa3iD" value="4232349791878875269" />
-            <property role="2gRgW$" value="1777615089" />
           </node>
         </node>
       </node>
@@ -483,20 +467,12 @@
         <node concept="gqqVs" id="3EWkVoQ5BRj" role="37mO4d">
           <property role="gqqTZ" value="220.0" />
           <property role="gqqTW" value="110.0" />
-          <property role="gqqTX" value="51.55" />
-          <property role="gqqTy" value="50.0" />
+          <property role="gqqTX" value="52.0" />
+          <property role="gqqTy" value="52.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="SmAS9iozOp" role="1pap1a">
             <property role="1pa3iD" value="port" />
             <property role="2gRgW$" value="1053092941" />
-          </node>
-          <node concept="1pa3jb" id="SmAS9iozOq" role="1pap1a">
-            <property role="1pa3iD" value="4232349791878363867" />
-            <property role="2gRgW$" value="2128646070" />
-          </node>
-          <node concept="1pa3jb" id="SmAS9iozOr" role="1pap1a">
-            <property role="1pa3iD" value="4232349791878363873" />
-            <property role="2gRgW$" value="1777615089" />
           </node>
         </node>
       </node>
@@ -505,8 +481,8 @@
         <node concept="gqqVs" id="3EWkVoQ6KvG" role="37mO4d">
           <property role="gqqTZ" value="57.95" />
           <property role="gqqTW" value="338.0" />
-          <property role="gqqTX" value="77.0" />
-          <property role="gqqTy" value="42.0" />
+          <property role="gqqTX" value="79.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="SmAS9iozOs" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -553,8 +529,8 @@
         <node concept="gqqVs" id="3EWkVoQ6VEe" role="37mO4d">
           <property role="gqqTZ" value="206.55" />
           <property role="gqqTW" value="224.0" />
-          <property role="gqqTX" value="96.0" />
-          <property role="gqqTy" value="42.0" />
+          <property role="gqqTX" value="98.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="SmAS9iozOu" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -571,8 +547,8 @@
         <node concept="gqqVs" id="3EWkVoQ6VEP" role="37mO4d">
           <property role="gqqTZ" value="218.5" />
           <property role="gqqTW" value="24.0" />
-          <property role="gqqTX" value="53.0" />
-          <property role="gqqTy" value="42.0" />
+          <property role="gqqTX" value="55.0" />
+          <property role="gqqTy" value="45.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="SmAS9iozOw" role="1pap1a">
             <property role="1pa3iD" value="source_port" />
@@ -602,43 +578,49 @@
         <node concept="2VclpC" id="3EWkVoQ8Syf" role="37mO4d" />
       </node>
     </node>
-    <node concept="21ATtk" id="5rwT_Jnw0S4" role="21ATqB">
-      <property role="TrG5h" value="erroneously computed braking distance" />
-      <property role="21ATle" value="10^-4" />
+    <node concept="21ATtL" id="5rwT_JnuXB6" role="3CrHoS">
+      <property role="TrG5h" value="erroneous_speed" />
     </node>
-    <node concept="cFNQA" id="3EWkVoQ59gs" role="21ATqB" />
-    <node concept="cEgko" id="3EWkVoQ5BRe" role="21ATqB" />
-    <node concept="21ATtL" id="3EWkVoQ6KvA" role="21ATqB">
+    <node concept="21ATtk" id="5rwT_Jnw0S4" role="3CrHoS">
+      <property role="TrG5h" value="erroneously computed braking distance" />
+    </node>
+    <node concept="cFNQA" id="3EWkVoQ59gs" role="3CrHoS">
+      <property role="TrG5h" value="Or Gate 0" />
+    </node>
+    <node concept="cEgko" id="3EWkVoQ5BRe" role="3CrHoS">
+      <property role="TrG5h" value="And Gate 0" />
+    </node>
+    <node concept="21ATtL" id="3EWkVoQ6KvA" role="3CrHoS">
       <property role="TrG5h" value="erroneous_time" />
     </node>
-    <node concept="21oswF" id="3EWkVoQ6Q2X" role="21ATq_">
-      <ref role="21oszj" node="3EWkVoQ59gs" />
-      <ref role="21oszt" node="5rwT_JnuXB6" resolve="erroneous_speed" />
-    </node>
-    <node concept="21oswF" id="3EWkVoQ6Q3T" role="21ATq_">
-      <ref role="21oszj" node="5rwT_Jnw0S4" resolve="erroneously computed braking distance" />
-      <ref role="21oszt" node="3EWkVoQ59gs" />
-    </node>
-    <node concept="21ATtL" id="3EWkVoQ6VE7" role="21ATqB">
+    <node concept="21ATtL" id="3EWkVoQ6VE7" role="3CrHoS">
       <property role="TrG5h" value="driver_not_engaged" />
     </node>
-    <node concept="21ATtk" id="3EWkVoQ6VEg" role="21ATqB">
+    <node concept="21ATtk" id="3EWkVoQ6VEg" role="3CrHoS">
       <property role="TrG5h" value="collision" />
     </node>
-    <node concept="21oswF" id="3EWkVoQ6VFm" role="21ATq_">
+    <node concept="21oswF" id="3EWkVoQ6Q2X" role="3CrHoS">
+      <ref role="21oszj" node="3EWkVoQ59gs" resolve="Or Gate 0" />
+      <ref role="21oszt" node="5rwT_JnuXB6" resolve="erroneous_speed" />
+    </node>
+    <node concept="21oswF" id="3EWkVoQ6Q3T" role="3CrHoS">
+      <ref role="21oszj" node="5rwT_Jnw0S4" resolve="erroneously computed braking distance" />
+      <ref role="21oszt" node="3EWkVoQ59gs" resolve="Or Gate 0" />
+    </node>
+    <node concept="21oswF" id="3EWkVoQ6VFm" role="3CrHoS">
       <ref role="21oszj" node="3EWkVoQ6VEg" resolve="collision" />
-      <ref role="21oszt" node="3EWkVoQ5BRe" />
+      <ref role="21oszt" node="3EWkVoQ5BRe" resolve="And Gate 0" />
     </node>
-    <node concept="21oswF" id="3EWkVoQ6VFr" role="21ATq_">
+    <node concept="21oswF" id="3EWkVoQ6VFr" role="3CrHoS">
       <ref role="21oszt" node="3EWkVoQ6VE7" resolve="driver_not_engaged" />
-      <ref role="21oszj" node="3EWkVoQ5BRe" />
+      <ref role="21oszj" node="3EWkVoQ5BRe" resolve="And Gate 0" />
     </node>
-    <node concept="21oswF" id="3EWkVoQ6VFx" role="21ATq_">
-      <ref role="21oszj" node="3EWkVoQ5BRe" />
-      <ref role="21oszt" node="3EWkVoQ59gs" />
+    <node concept="21oswF" id="3EWkVoQ6VFx" role="3CrHoS">
+      <ref role="21oszj" node="3EWkVoQ5BRe" resolve="And Gate 0" />
+      <ref role="21oszt" node="3EWkVoQ59gs" resolve="Or Gate 0" />
     </node>
-    <node concept="21oswF" id="3EWkVoQ8Sy5" role="21ATq_">
-      <ref role="21oszj" node="3EWkVoQ59gs" />
+    <node concept="21oswF" id="3EWkVoQ8Sy5" role="3CrHoS">
+      <ref role="21oszj" node="3EWkVoQ59gs" resolve="Or Gate 0" />
       <ref role="21oszt" node="3EWkVoQ6KvA" resolve="erroneous_time" />
     </node>
   </node>
@@ -1125,40 +1107,6 @@
     </node>
     <node concept="3aixLP" id="5g1NREKPltf" role="1POhhj">
       <node concept="21ASy4" id="5g1NREKPlsW" role="3aixLU">
-        <node concept="21ATtk" id="5g1NREKPlsX" role="21ATqB">
-          <property role="TrG5h" value="plausibilizedSpeed__speed innacurate" />
-        </node>
-        <node concept="21ATtL" id="5g1NREKPlt7" role="21ATqB">
-          <property role="TrG5h" value="speed__speed too high" />
-        </node>
-        <node concept="21oswF" id="5g1NREKPlt8" role="21ATq_">
-          <ref role="21oszj" node="5g1NREKPlt6" />
-          <ref role="21oszt" node="5g1NREKPlt7" resolve="speed__speed too high" />
-        </node>
-        <node concept="21ATtL" id="5g1NREKPlt9" role="21ATqB">
-          <property role="TrG5h" value="speed__speed too low" />
-        </node>
-        <node concept="21oswF" id="5g1NREKPlta" role="21ATq_">
-          <ref role="21oszj" node="5g1NREKPlt6" />
-          <ref role="21oszt" node="5g1NREKPlt9" resolve="speed__speed too low" />
-        </node>
-        <node concept="cFNQA" id="5g1NREKPlt6" role="21ATqB" />
-        <node concept="21oswF" id="5g1NREKPltb" role="21ATq_">
-          <ref role="21oszj" node="5g1NREKPlt5" />
-          <ref role="21oszt" node="5g1NREKPlt6" />
-        </node>
-        <node concept="21ATtL" id="5g1NREKPltc" role="21ATqB">
-          <property role="TrG5h" value="innacurate_computation" />
-        </node>
-        <node concept="21oswF" id="5g1NREKPltd" role="21ATq_">
-          <ref role="21oszt" node="5g1NREKPltc" resolve="innacurate_computation" />
-          <ref role="21oszj" node="5g1NREKPlt5" />
-        </node>
-        <node concept="cFNQA" id="5g1NREKPlt5" role="21ATqB" />
-        <node concept="21oswF" id="5g1NREKPlte" role="21ATq_">
-          <ref role="21oszj" node="5g1NREKPlsX" resolve="plausibilizedSpeed__speed innacurate" />
-          <ref role="21oszt" node="5g1NREKPlt5" />
-        </node>
         <node concept="37mRI7" id="5g1NREKPlux" role="lGtFl">
           <node concept="37mRIm" id="5g1NREKPluy" role="37mRID">
             <property role="37mO49" value="6053347500022388541" />
@@ -1307,6 +1255,40 @@
             </node>
           </node>
         </node>
+        <node concept="21ATtk" id="5g1NREKPlsX" role="3CrHoS">
+          <property role="TrG5h" value="plausibilizedSpeed__speed innacurate" />
+        </node>
+        <node concept="21ATtL" id="5g1NREKPlt7" role="3CrHoS">
+          <property role="TrG5h" value="speed__speed too high" />
+        </node>
+        <node concept="21ATtL" id="5g1NREKPlt9" role="3CrHoS">
+          <property role="TrG5h" value="speed__speed too low" />
+        </node>
+        <node concept="cFNQA" id="5g1NREKPlt6" role="3CrHoS" />
+        <node concept="21ATtL" id="5g1NREKPltc" role="3CrHoS">
+          <property role="TrG5h" value="innacurate_computation" />
+        </node>
+        <node concept="cFNQA" id="5g1NREKPlt5" role="3CrHoS" />
+        <node concept="21oswF" id="5g1NREKPlt8" role="3CrHoS">
+          <ref role="21oszj" node="5g1NREKPlt6" />
+          <ref role="21oszt" node="5g1NREKPlt7" resolve="speed__speed too high" />
+        </node>
+        <node concept="21oswF" id="5g1NREKPlta" role="3CrHoS">
+          <ref role="21oszj" node="5g1NREKPlt6" />
+          <ref role="21oszt" node="5g1NREKPlt9" resolve="speed__speed too low" />
+        </node>
+        <node concept="21oswF" id="5g1NREKPltb" role="3CrHoS">
+          <ref role="21oszj" node="5g1NREKPlt5" />
+          <ref role="21oszt" node="5g1NREKPlt6" />
+        </node>
+        <node concept="21oswF" id="5g1NREKPltd" role="3CrHoS">
+          <ref role="21oszt" node="5g1NREKPltc" resolve="innacurate_computation" />
+          <ref role="21oszj" node="5g1NREKPlt5" />
+        </node>
+        <node concept="21oswF" id="5g1NREKPlte" role="3CrHoS">
+          <ref role="21oszj" node="5g1NREKPlsX" resolve="plausibilizedSpeed__speed innacurate" />
+          <ref role="21oszt" node="5g1NREKPlt5" />
+        </node>
       </node>
     </node>
     <node concept="2VURXa" id="3bh1RFvziHa" role="1POhhj" />
@@ -1331,28 +1313,6 @@
     <node concept="2VURXa" id="1xKUpdtHa1T" role="1POhhj" />
     <node concept="3aixLP" id="1xKUpdtHa0l" role="1POhhj">
       <node concept="21ASy4" id="1xKUpdtHa0d" role="3aixLU">
-        <node concept="21ATtk" id="1xKUpdtHa0e" role="21ATqB">
-          <property role="TrG5h" value="plausibilizedSpeed__speed innacurate" />
-        </node>
-        <node concept="21ATtL" id="1xKUpdtHa0g" role="21ATqB">
-          <property role="TrG5h" value="speed__speed too high" />
-        </node>
-        <node concept="21oswF" id="1xKUpdtHa0h" role="21ATq_">
-          <ref role="21oszt" node="1xKUpdtHa0g" resolve="speed__speed too high" />
-          <ref role="21oszj" node="1xKUpdtHa0f" />
-        </node>
-        <node concept="21ATtL" id="1xKUpdtHa0i" role="21ATqB">
-          <property role="TrG5h" value="speed__speed too low" />
-        </node>
-        <node concept="21oswF" id="1xKUpdtHa0j" role="21ATq_">
-          <ref role="21oszj" node="1xKUpdtHa0f" />
-          <ref role="21oszt" node="1xKUpdtHa0i" resolve="speed__speed too low" />
-        </node>
-        <node concept="cFNQA" id="1xKUpdtHa0f" role="21ATqB" />
-        <node concept="21oswF" id="1xKUpdtHa0k" role="21ATq_">
-          <ref role="21oszt" node="1xKUpdtHa0f" />
-          <ref role="21oszj" node="1xKUpdtHa0e" resolve="plausibilizedSpeed__speed innacurate" />
-        </node>
         <node concept="37mRI7" id="1xKUpdtHa0T" role="lGtFl">
           <node concept="37mRIm" id="1xKUpdtHa0U" role="37mRID">
             <property role="37mO49" value="1761164273443446798" />
@@ -1447,6 +1407,28 @@
             <property role="37mO49" value="1761164273443446801" />
             <node concept="2VclpC" id="4eD_5l3mJLi" role="37mO4d" />
           </node>
+        </node>
+        <node concept="21ATtk" id="1xKUpdtHa0e" role="3CrHoS">
+          <property role="TrG5h" value="plausibilizedSpeed__speed innacurate" />
+        </node>
+        <node concept="21ATtL" id="1xKUpdtHa0g" role="3CrHoS">
+          <property role="TrG5h" value="speed__speed too high" />
+        </node>
+        <node concept="21ATtL" id="1xKUpdtHa0i" role="3CrHoS">
+          <property role="TrG5h" value="speed__speed too low" />
+        </node>
+        <node concept="cFNQA" id="1xKUpdtHa0f" role="3CrHoS" />
+        <node concept="21oswF" id="1xKUpdtHa0h" role="3CrHoS">
+          <ref role="21oszt" node="1xKUpdtHa0g" resolve="speed__speed too high" />
+          <ref role="21oszj" node="1xKUpdtHa0f" />
+        </node>
+        <node concept="21oswF" id="1xKUpdtHa0j" role="3CrHoS">
+          <ref role="21oszj" node="1xKUpdtHa0f" />
+          <ref role="21oszt" node="1xKUpdtHa0i" resolve="speed__speed too low" />
+        </node>
+        <node concept="21oswF" id="1xKUpdtHa0k" role="3CrHoS">
+          <ref role="21oszt" node="1xKUpdtHa0f" />
+          <ref role="21oszj" node="1xKUpdtHa0e" resolve="plausibilizedSpeed__speed innacurate" />
         </node>
       </node>
     </node>
