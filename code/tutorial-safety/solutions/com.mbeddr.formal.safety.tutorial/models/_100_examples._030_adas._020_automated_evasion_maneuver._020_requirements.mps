@@ -106,13 +106,13 @@
       </node>
       <node concept="2iDXIW" id="_wUu$TYcY7" role="0nOlf">
         <node concept="DABN8" id="_wUu$TYcY9" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TYcYb" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TYcYt" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
       </node>
     </node>
@@ -148,7 +148,7 @@
         <property role="0ke_I" value="dan" />
         <node concept="2iDXIW" id="_wUu$TYcYI" role="0nOlf">
           <node concept="DABN8" id="_wUu$TYcYK" role="DABNk">
-            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
           </node>
         </node>
         <node concept="19SGf9" id="_wUu$TYcYG" role="1QQeG9">
@@ -162,13 +162,13 @@
         <property role="0ke_I" value="dan" />
         <node concept="2iDXIW" id="_wUu$TY_gc" role="0nOlf">
           <node concept="DABN8" id="_wUu$TY_ge" role="DABNk">
-            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
           </node>
           <node concept="DABN8" id="_wUu$TY_gg" role="DABNk">
-            <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+            <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
           </node>
           <node concept="DABN8" id="_wUu$TY_gj" role="DABNk">
-            <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+            <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
           </node>
         </node>
         <node concept="19SGf9" id="_wUu$TY_ga" role="1QQeG9">
@@ -182,13 +182,13 @@
         <property role="0ke_I" value="dan" />
         <node concept="2iDXIW" id="41_NtXJpd2E" role="0nOlf">
           <node concept="DABN8" id="41_NtXJpd2F" role="DABNk">
-            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
           </node>
           <node concept="DABN8" id="41_NtXJpd2G" role="DABNk">
-            <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+            <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
           </node>
           <node concept="DABN8" id="41_NtXJpd2H" role="DABNk">
-            <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+            <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
           </node>
         </node>
         <node concept="19SGf9" id="41_NtXJpd2I" role="1QQeG9">
@@ -219,13 +219,13 @@
       <property role="0ke_I" value="dan" />
       <node concept="2iDXIW" id="_wUu$TY_gu" role="0nOlf">
         <node concept="DABN8" id="_wUu$TZDcV" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZDcY" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZDcN" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZDcP" role="DABNk">
           <ref role="DABNb" to="u9yl:_wUu$TYGOc" resolve="Collision at high speed with VRU" />
@@ -256,13 +256,13 @@
       <property role="0ke_I" value="dan" />
       <node concept="2iDXIW" id="41_NtXJvtUI" role="0nOlf">
         <node concept="DABN8" id="41_NtXJvtUJ" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="41_NtXJvtUK" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="41_NtXJvtUL" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="41_NtXJvtUM" role="DABNk">
           <ref role="DABNb" to="u9yl:_wUu$TYGOc" resolve="Collision at high speed with VRU" />
@@ -304,13 +304,13 @@
       </node>
       <node concept="2iDXIW" id="_wUu$TYGQ7" role="0nOlf">
         <node concept="DABN8" id="_wUu$TYGQ8" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TYGQ9" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TYGQa" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
       </node>
     </node>
@@ -327,13 +327,13 @@
       </node>
       <node concept="2iDXIW" id="_wUu$TYGQS" role="0nOlf">
         <node concept="DABN8" id="_wUu$TYGQU" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TYGQW" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TYGQZ" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
       </node>
       <node concept="19SGf9" id="_wUu$TYGQQ" role="1QQeG9">
@@ -355,13 +355,13 @@
       </node>
       <node concept="2iDXIW" id="_wUu$TZD6K" role="0nOlf">
         <node concept="DABN8" id="_wUu$TZD6L" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZD6M" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZD6N" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZD6R" role="DABNk">
           <ref role="DABNb" to="u9yl:_wUu$TYGOc" resolve="Collision at high speed with VRU" />
@@ -397,13 +397,13 @@
       <node concept="1QQeAL" id="41_NtXJpd2A" role="1QQeAC" />
       <node concept="2iDXIW" id="_wUu$TZD69" role="0nOlf">
         <node concept="DABN8" id="_wUu$TZD6b" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZD6d" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZD6g" role="DABNk">
-          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
         <node concept="DABN8" id="_wUu$TZD6j" role="DABNk">
           <ref role="DABNb" to="u9yl:_wUu$TYGOc" resolve="Collision at high speed with VRU" />
