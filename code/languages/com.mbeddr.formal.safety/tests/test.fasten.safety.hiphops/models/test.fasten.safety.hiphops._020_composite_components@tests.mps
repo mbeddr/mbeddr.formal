@@ -111,8 +111,7 @@
     <language id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft">
       <concept id="6260256764176969328" name="com.fasten.safety.ft.structure.Connection" flags="ng" index="21oswF" />
       <concept id="6260256764176592607" name="com.fasten.safety.ft.structure.FaultTree" flags="ng" index="21ASy4">
-        <child id="6260256764176593150" name="connections" index="21ATq_" />
-        <child id="6260256764176593148" name="elements" index="21ATqB" />
+        <child id="2812932810441448772" name="content" index="3CrHoS" />
       </concept>
       <concept id="6260256764176593147" name="com.fasten.safety.ft.structure.FaultTreeConnectionBase" flags="ng" index="21ATqw">
         <reference id="6260256764176969352" name="end" index="21oszj" />
@@ -564,75 +563,6 @@
     <node concept="1qefOq" id="5g1NREKQ7iZ" role="1SKRRt">
       <node concept="3aixLP" id="5N87GIKkbsS" role="1qenE9">
         <node concept="21ASy4" id="5N87GIKkbr0" role="3aixLU">
-          <node concept="21ATtL" id="5N87GIKkbr3" role="21ATqB">
-            <property role="TrG5h" value="speed__speed too low" />
-          </node>
-          <node concept="21ATtL" id="5N87GIKkbr6" role="21ATqB">
-            <property role="TrG5h" value="speed__speed too high" />
-          </node>
-          <node concept="21ATtk" id="5N87GIKkbr9" role="21ATqB">
-            <property role="TrG5h" value="brakeCmd__brake force innacurate" />
-          </node>
-          <node concept="21ATtk" id="5N87GIKkbrb" role="21ATqB">
-            <property role="TrG5h" value="plausibilizedSpeed__speed innacurate" />
-          </node>
-          <node concept="21ATtL" id="5N87GIKkbrd" role="21ATqB">
-            <property role="TrG5h" value="speed__speed too high" />
-          </node>
-          <node concept="21ATtL" id="5N87GIKkbrf" role="21ATqB">
-            <property role="TrG5h" value="speed__speed too low" />
-          </node>
-          <node concept="cFNQA" id="5N87GIKkbrc" role="21ATqB" />
-          <node concept="21oswF" id="5N87GIKkbre" role="21ATq_">
-            <ref role="21oszt" node="5N87GIKkbrd" resolve="speed__speed too high" />
-            <ref role="21oszj" node="5N87GIKkbrc" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbrg" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKkbrc" />
-            <ref role="21oszt" node="5N87GIKkbrf" resolve="speed__speed too low" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbrh" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKkbrb" resolve="plausibilizedSpeed__speed innacurate" />
-            <ref role="21oszt" node="5N87GIKkbrc" />
-          </node>
-          <node concept="21ATtk" id="5N87GIKkbrj" role="21ATqB">
-            <property role="TrG5h" value="brakeCmd__brake force innacurate" />
-          </node>
-          <node concept="21ATtL" id="5N87GIKkbrp" role="21ATqB">
-            <property role="TrG5h" value="speed__speed innacurate" />
-          </node>
-          <node concept="21ATtL" id="5N87GIKkbrr" role="21ATqB">
-            <property role="TrG5h" value="braking algorithm malfunction" />
-          </node>
-          <node concept="cFNQA" id="5N87GIKkbro" role="21ATqB" />
-          <node concept="21oswF" id="5N87GIKkbrq" role="21ATq_">
-            <ref role="21oszt" node="5N87GIKkbrp" resolve="speed__speed innacurate" />
-            <ref role="21oszj" node="5N87GIKkbro" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbrs" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKkbro" />
-            <ref role="21oszt" node="5N87GIKkbrr" resolve="braking algorithm malfunction" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbrt" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKkbrj" resolve="brakeCmd__brake force innacurate" />
-            <ref role="21oszt" node="5N87GIKkbro" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbs8" role="21ATq_">
-            <ref role="21oszt" node="5N87GIKkbr6" resolve="speed__speed too high" />
-            <ref role="21oszj" node="5N87GIKkbrd" resolve="speed__speed too high" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbs9" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKkbrf" resolve="speed__speed too low" />
-            <ref role="21oszt" node="5N87GIKkbr3" resolve="speed__speed too low" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbsu" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKkbrp" resolve="speed__speed innacurate" />
-            <ref role="21oszt" node="5N87GIKkbrb" resolve="plausibilizedSpeed__speed innacurate" />
-          </node>
-          <node concept="21oswF" id="5N87GIKkbsR" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKkbr9" resolve="brakeCmd__brake force innacurate" />
-            <ref role="21oszt" node="5N87GIKkbrj" resolve="brakeCmd__brake force innacurate" />
-          </node>
           <node concept="37mRI7" id="5N87GIKkbu4" role="lGtFl">
             <node concept="37mRIm" id="5N87GIKkbu5" role="37mRID">
               <property role="37mO49" value="6685627507016775363" />
@@ -867,6 +797,79 @@
               </node>
             </node>
           </node>
+          <node concept="21ATtL" id="5N87GIKkbr3" role="3CrHoS">
+            <property role="TrG5h" value="speed__speed too low" />
+          </node>
+          <node concept="21ATtL" id="5N87GIKkbr6" role="3CrHoS">
+            <property role="TrG5h" value="speed__speed too high" />
+          </node>
+          <node concept="21ATtk" id="5N87GIKkbr9" role="3CrHoS">
+            <property role="TrG5h" value="brakeCmd__brake force innacurate" />
+          </node>
+          <node concept="21ATtk" id="5N87GIKkbrb" role="3CrHoS">
+            <property role="TrG5h" value="plausibilizedSpeed__speed innacurate" />
+          </node>
+          <node concept="21ATtL" id="5N87GIKkbrd" role="3CrHoS">
+            <property role="TrG5h" value="speed__speed too high" />
+          </node>
+          <node concept="21ATtL" id="5N87GIKkbrf" role="3CrHoS">
+            <property role="TrG5h" value="speed__speed too low" />
+          </node>
+          <node concept="cFNQA" id="5N87GIKkbrc" role="3CrHoS">
+            <property role="TrG5h" value="Or Gate 1" />
+          </node>
+          <node concept="21ATtk" id="5N87GIKkbrj" role="3CrHoS">
+            <property role="TrG5h" value="brakeCmd__brake force innacurate" />
+          </node>
+          <node concept="21ATtL" id="5N87GIKkbrp" role="3CrHoS">
+            <property role="TrG5h" value="speed__speed innacurate" />
+          </node>
+          <node concept="21ATtL" id="5N87GIKkbrr" role="3CrHoS">
+            <property role="TrG5h" value="braking algorithm malfunction" />
+          </node>
+          <node concept="cFNQA" id="5N87GIKkbro" role="3CrHoS">
+            <property role="TrG5h" value="Or Gate 2" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbre" role="3CrHoS">
+            <ref role="21oszt" node="5N87GIKkbrd" resolve="speed__speed too high" />
+            <ref role="21oszj" node="5N87GIKkbrc" resolve="Or Gate 1" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbrg" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKkbrc" resolve="Or Gate 1" />
+            <ref role="21oszt" node="5N87GIKkbrf" resolve="speed__speed too low" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbrh" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKkbrb" resolve="plausibilizedSpeed__speed innacurate" />
+            <ref role="21oszt" node="5N87GIKkbrc" resolve="Or Gate 1" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbrq" role="3CrHoS">
+            <ref role="21oszt" node="5N87GIKkbrp" resolve="speed__speed innacurate" />
+            <ref role="21oszj" node="5N87GIKkbro" resolve="Or Gate 2" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbrs" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKkbro" resolve="Or Gate 2" />
+            <ref role="21oszt" node="5N87GIKkbrr" resolve="braking algorithm malfunction" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbrt" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKkbrj" resolve="brakeCmd__brake force innacurate" />
+            <ref role="21oszt" node="5N87GIKkbro" resolve="Or Gate 2" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbs8" role="3CrHoS">
+            <ref role="21oszt" node="5N87GIKkbr6" resolve="speed__speed too high" />
+            <ref role="21oszj" node="5N87GIKkbrd" resolve="speed__speed too high" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbs9" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKkbrf" resolve="speed__speed too low" />
+            <ref role="21oszt" node="5N87GIKkbr3" resolve="speed__speed too low" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbsu" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKkbrp" resolve="speed__speed innacurate" />
+            <ref role="21oszt" node="5N87GIKkbrb" resolve="plausibilizedSpeed__speed innacurate" />
+          </node>
+          <node concept="21oswF" id="5N87GIKkbsR" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKkbr9" resolve="brakeCmd__brake force innacurate" />
+            <ref role="21oszt" node="5N87GIKkbrj" resolve="brakeCmd__brake force innacurate" />
+          </node>
         </node>
         <node concept="3xLA65" id="5N87GIKkbJW" role="lGtFl">
           <property role="TrG5h" value="raw_witness" />
@@ -876,40 +879,6 @@
     <node concept="1qefOq" id="5g1NREKPFcU" role="1SKRRt">
       <node concept="3aixLP" id="5N87GIKnRWU" role="1qenE9">
         <node concept="21ASy4" id="5N87GIKnRV2" role="3aixLU">
-          <node concept="21ATtL" id="5N87GIKnRV5" role="21ATqB">
-            <property role="TrG5h" value="speed__speed too low" />
-          </node>
-          <node concept="21ATtL" id="5N87GIKnRV8" role="21ATqB">
-            <property role="TrG5h" value="speed__speed too high" />
-          </node>
-          <node concept="cFNQA" id="5N87GIKnRVe" role="21ATqB" />
-          <node concept="21oswF" id="5N87GIKnRVg" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKnRVe" />
-            <ref role="21oszt" node="5N87GIKnRV8" resolve="speed__speed too high" />
-          </node>
-          <node concept="21oswF" id="5N87GIKnRVi" role="21ATq_">
-            <ref role="21oszt" node="5N87GIKnRV5" resolve="speed__speed too low" />
-            <ref role="21oszj" node="5N87GIKnRVe" />
-          </node>
-          <node concept="21oswF" id="5N87GIKnRVj" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKnRVq" />
-            <ref role="21oszt" node="5N87GIKnRVe" />
-          </node>
-          <node concept="21ATtk" id="5N87GIKnRVl" role="21ATqB">
-            <property role="TrG5h" value="brakeCmd__brake force innacurate" />
-          </node>
-          <node concept="21ATtL" id="5N87GIKnRVt" role="21ATqB">
-            <property role="TrG5h" value="braking algorithm malfunction" />
-          </node>
-          <node concept="cFNQA" id="5N87GIKnRVq" role="21ATqB" />
-          <node concept="21oswF" id="5N87GIKnRVu" role="21ATq_">
-            <ref role="21oszj" node="5N87GIKnRVq" />
-            <ref role="21oszt" node="5N87GIKnRVt" resolve="braking algorithm malfunction" />
-          </node>
-          <node concept="21oswF" id="5N87GIKnRVv" role="21ATq_">
-            <ref role="21oszt" node="5N87GIKnRVq" />
-            <ref role="21oszj" node="5N87GIKnRVl" resolve="brakeCmd__brake force innacurate" />
-          </node>
           <node concept="37mRI7" id="5N87GIKnRXW" role="lGtFl">
             <node concept="37mRIm" id="5N87GIKnRXX" role="37mRID">
               <property role="37mO49" value="6685627507017744069" />
@@ -1053,6 +1022,44 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="21ATtL" id="5N87GIKnRV5" role="3CrHoS">
+            <property role="TrG5h" value="speed__speed too low" />
+          </node>
+          <node concept="21ATtL" id="5N87GIKnRV8" role="3CrHoS">
+            <property role="TrG5h" value="speed__speed too high" />
+          </node>
+          <node concept="cFNQA" id="5N87GIKnRVe" role="3CrHoS">
+            <property role="TrG5h" value="Or Gate 1" />
+          </node>
+          <node concept="21ATtk" id="5N87GIKnRVl" role="3CrHoS">
+            <property role="TrG5h" value="brakeCmd__brake force innacurate" />
+          </node>
+          <node concept="21ATtL" id="5N87GIKnRVt" role="3CrHoS">
+            <property role="TrG5h" value="braking algorithm malfunction" />
+          </node>
+          <node concept="cFNQA" id="5N87GIKnRVq" role="3CrHoS">
+            <property role="TrG5h" value="Or Gate 2" />
+          </node>
+          <node concept="21oswF" id="5N87GIKnRVg" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKnRVe" resolve="Or Gate 1" />
+            <ref role="21oszt" node="5N87GIKnRV8" resolve="speed__speed too high" />
+          </node>
+          <node concept="21oswF" id="5N87GIKnRVi" role="3CrHoS">
+            <ref role="21oszt" node="5N87GIKnRV5" resolve="speed__speed too low" />
+            <ref role="21oszj" node="5N87GIKnRVe" resolve="Or Gate 1" />
+          </node>
+          <node concept="21oswF" id="5N87GIKnRVj" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKnRVq" resolve="Or Gate 2" />
+            <ref role="21oszt" node="5N87GIKnRVe" resolve="Or Gate 1" />
+          </node>
+          <node concept="21oswF" id="5N87GIKnRVu" role="3CrHoS">
+            <ref role="21oszj" node="5N87GIKnRVq" resolve="Or Gate 2" />
+            <ref role="21oszt" node="5N87GIKnRVt" resolve="braking algorithm malfunction" />
+          </node>
+          <node concept="21oswF" id="5N87GIKnRVv" role="3CrHoS">
+            <ref role="21oszt" node="5N87GIKnRVq" resolve="Or Gate 2" />
+            <ref role="21oszj" node="5N87GIKnRVl" resolve="brakeCmd__brake force innacurate" />
           </node>
         </node>
         <node concept="3xLA65" id="5N87GIKnVmG" role="lGtFl">
