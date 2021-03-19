@@ -154,9 +154,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -245,8 +242,8 @@
                   <node concept="2OqwBi" id="2Lni1O2BLbt" role="3clFbG">
                     <node concept="2OqwBi" id="7YOjUbFqaR3" role="2Oq$k0">
                       <node concept="30H73N" id="7YOjUbFqav9" role="2Oq$k0" />
-                      <node concept="3Tsc0h" id="7YOjUbFqb6y" role="2OqNvi">
-                        <ref role="3TtcxE" to="spwl:5rwT_JnuR3W" resolve="elements" />
+                      <node concept="2qgKlT" id="2s9yRNfpSH7" role="2OqNvi">
+                        <ref role="37wK5l" to="fazf:2s9yRNfoqAa" resolve="elements" />
                       </node>
                     </node>
                     <node concept="v3k3i" id="2Lni1O2BM2F" role="2OqNvi">
@@ -414,8 +411,8 @@
                   <node concept="2OqwBi" id="2Lni1O2BKjq" role="3clFbG">
                     <node concept="2OqwBi" id="2Lni1O2BIDi" role="2Oq$k0">
                       <node concept="30H73N" id="2Lni1O2BIsa" role="2Oq$k0" />
-                      <node concept="3Tsc0h" id="2Lni1O2BIOn" role="2OqNvi">
-                        <ref role="3TtcxE" to="spwl:5rwT_JnuR3W" resolve="elements" />
+                      <node concept="2qgKlT" id="2s9yRNfpSRM" role="2OqNvi">
+                        <ref role="37wK5l" to="fazf:2s9yRNfoqAa" resolve="elements" />
                       </node>
                     </node>
                     <node concept="v3k3i" id="2Lni1O2BL6j" role="2OqNvi">
@@ -489,8 +486,8 @@
                   <node concept="2OqwBi" id="3oGITgu_9um" role="3clFbG">
                     <node concept="2OqwBi" id="3oGITgu_9un" role="2Oq$k0">
                       <node concept="30H73N" id="3oGITgu_9uo" role="2Oq$k0" />
-                      <node concept="3Tsc0h" id="3oGITgu_9up" role="2OqNvi">
-                        <ref role="3TtcxE" to="spwl:5rwT_JnuR3W" resolve="elements" />
+                      <node concept="2qgKlT" id="2s9yRNfpSXE" role="2OqNvi">
+                        <ref role="37wK5l" to="fazf:2s9yRNfoqAa" resolve="elements" />
                       </node>
                     </node>
                     <node concept="v3k3i" id="3oGITgu_9uq" role="2OqNvi">

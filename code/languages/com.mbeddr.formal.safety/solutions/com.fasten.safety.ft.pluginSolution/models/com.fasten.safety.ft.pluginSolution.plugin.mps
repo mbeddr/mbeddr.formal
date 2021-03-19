@@ -50,6 +50,11 @@
     <property role="33gmoF" value="true" />
     <property role="1QNlnu" value="FT Diagramatic View" />
     <ref role="2hhq6$" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+    <node concept="33gmoH" id="7wRJ5ynOjY_" role="2hfSGL">
+      <property role="33g7Lv" value="FT Textual View" />
+      <ref role="33glcW" to="37k7:4mOCK0sBQkK" resolve="FaultTreeHints" />
+      <ref role="33glcY" to="37k7:7wRJ5ynOjYu" resolve="FT_TEXT" />
+    </node>
     <node concept="33gmoH" id="5uFV_KKTMM1" role="2hfSGL">
       <property role="33g7Lv" value="FT Tree View" />
       <ref role="33glcW" to="37k7:4mOCK0sBQkK" resolve="FaultTreeHints" />

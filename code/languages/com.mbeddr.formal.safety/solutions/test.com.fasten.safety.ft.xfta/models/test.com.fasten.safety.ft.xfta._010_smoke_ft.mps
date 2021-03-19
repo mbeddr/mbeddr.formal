@@ -9,8 +9,7 @@
     <language id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft">
       <concept id="6260256764176969328" name="com.fasten.safety.ft.structure.Connection" flags="ng" index="21oswF" />
       <concept id="6260256764176592607" name="com.fasten.safety.ft.structure.FaultTree" flags="ng" index="21ASy4">
-        <child id="6260256764176593150" name="connections" index="21ATq_" />
-        <child id="6260256764176593148" name="elements" index="21ATqB" />
+        <child id="2812932810441448772" name="content" index="3CrHoS" />
       </concept>
       <concept id="6260256764176593682" name="com.fasten.safety.ft.structure.EventBase" flags="ng" index="21ATl9">
         <child id="1184758059395733807" name="spec" index="2rok82" />
@@ -65,9 +64,6 @@
   </registry>
   <node concept="21ASy4" id="3oGITgu_n$7">
     <property role="TrG5h" value="_010_and_gate" />
-    <node concept="21ATtk" id="3oGITgu_n$8" role="21ATqB">
-      <property role="TrG5h" value="top event" />
-    </node>
     <node concept="37mRI7" id="3oGITgu_n$b" role="lGtFl">
       <node concept="37mRIm" id="3oGITgu_n$c" role="37mRID">
         <property role="37mO49" value="3903701221866043656" />
@@ -163,32 +159,37 @@
         </node>
       </node>
     </node>
-    <node concept="cEgko" id="3oGITgu_n$d" role="21ATqB" />
-    <node concept="21ATtL" id="3oGITgu_n$o" role="21ATqB">
+    <node concept="21ATtk" id="3oGITgu_n$8" role="3CrHoS">
+      <property role="TrG5h" value="top event" />
+    </node>
+    <node concept="cEgko" id="3oGITgu_n$d" role="3CrHoS">
+      <property role="TrG5h" value="And Gate 1" />
+    </node>
+    <node concept="21ATtL" id="3oGITgu_n$o" role="3CrHoS">
       <property role="TrG5h" value="basic event 1" />
       <node concept="2roqtx" id="3oGITgu_nAI" role="2rok82">
         <property role="2rqmGV" value="0.0002" />
       </node>
     </node>
-    <node concept="21ATtL" id="3oGITgu_n$z" role="21ATqB">
+    <node concept="21ATtL" id="3oGITgu_n$z" role="3CrHoS">
       <property role="TrG5h" value="basic event 2" />
       <node concept="2roqtx" id="3oGITgu_nAG" role="2rok82">
         <property role="2rqmGV" value="0.001" />
       </node>
     </node>
-    <node concept="21oswF" id="3oGITgu_n$U" role="21ATq_">
-      <ref role="21oszt" node="3oGITgu_n$d" />
+    <node concept="21oswF" id="3oGITgu_n$U" role="3CrHoS">
+      <ref role="21oszt" node="3oGITgu_n$d" resolve="And Gate 1" />
       <ref role="21oszj" node="3oGITgu_n$8" resolve="top event" />
     </node>
-    <node concept="21oswF" id="3oGITgu_n_S" role="21ATq_">
+    <node concept="21oswF" id="3oGITgu_n_S" role="3CrHoS">
       <ref role="21oszt" node="3oGITgu_n$z" resolve="basic event 2" />
-      <ref role="21oszj" node="3oGITgu_n$d" />
+      <ref role="21oszj" node="3oGITgu_n$d" resolve="And Gate 1" />
     </node>
-    <node concept="21oswF" id="3oGITgu_n_Y" role="21ATq_">
+    <node concept="21oswF" id="3oGITgu_n_Y" role="3CrHoS">
       <ref role="21oszt" node="3oGITgu_n$o" resolve="basic event 1" />
-      <ref role="21oszj" node="3oGITgu_n$d" />
+      <ref role="21oszj" node="3oGITgu_n$d" resolve="And Gate 1" />
     </node>
-    <node concept="21oswF" id="3oGITgu_nAT" role="21ATq_" />
+    <node concept="21oswF" id="3oGITgu_nAT" role="3CrHoS" />
   </node>
 </model>
 

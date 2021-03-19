@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="0" />
+    <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <engage id="091b20ea-7bf0-41d6-8e6e-4460a9bd8121" name="com.fasten.safety.ft.xfta_gen" />
   </languages>
@@ -12,8 +12,7 @@
     <language id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft">
       <concept id="6260256764176969328" name="com.fasten.safety.ft.structure.Connection" flags="ng" index="21oswF" />
       <concept id="6260256764176592607" name="com.fasten.safety.ft.structure.FaultTree" flags="ng" index="21ASy4">
-        <child id="6260256764176593150" name="connections" index="21ATq_" />
-        <child id="6260256764176593148" name="elements" index="21ATqB" />
+        <child id="2812932810441448772" name="content" index="3CrHoS" />
       </concept>
       <concept id="6260256764176593682" name="com.fasten.safety.ft.structure.EventBase" flags="ng" index="21ATl9">
         <child id="1184758059395733807" name="spec" index="2rok82" />
@@ -27,7 +26,7 @@
       <concept id="4232349791877945006" name="com.fasten.safety.ft.structure.AndGate" flags="ng" index="cEgko" />
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
       <concept id="1184758059395759180" name="com.fasten.safety.ft.structure.TextualEventSpec" flags="ng" index="2roqtx">
-        <property id="1184758059396263958" name="fit" index="2rqmGV" />
+        <property id="1184758059396263958" name="failureRate" index="2rqmGV" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -69,12 +68,6 @@
   </registry>
   <node concept="21ASy4" id="7YOjUbFq7ft">
     <property role="TrG5h" value="_010_first_FT" />
-    <node concept="21ATtL" id="7YOjUbFq7fu" role="21ATqB">
-      <property role="TrG5h" value="erroneous_speed" />
-      <node concept="2roqtx" id="11L6MQb6ksM" role="2rok82">
-        <property role="2rqmGV" value="0.00001" />
-      </node>
-    </node>
     <node concept="37mRI7" id="7YOjUbFq7fv" role="lGtFl">
       <node concept="37mRIm" id="7YOjUbFq7fG" role="37mRID">
         <property role="37mO49" value="6260256764176619974" />
@@ -405,49 +398,59 @@
         </node>
       </node>
     </node>
-    <node concept="21ATtk" id="7YOjUbFq7fw" role="21ATqB">
+    <node concept="21ATtL" id="7YOjUbFq7fu" role="3CrHoS">
+      <property role="TrG5h" value="erroneous_speed" />
+      <node concept="2roqtx" id="11L6MQb6ksM" role="2rok82">
+        <property role="2rqmGV" value="0.00001" />
+      </node>
+    </node>
+    <node concept="21ATtk" id="7YOjUbFq7fw" role="3CrHoS">
       <property role="TrG5h" value="erroneous braking distance" />
     </node>
-    <node concept="cFNQA" id="7YOjUbFq7fx" role="21ATqB" />
-    <node concept="cEgko" id="7YOjUbFq7fy" role="21ATqB" />
-    <node concept="21ATtL" id="7YOjUbFq7fz" role="21ATqB">
+    <node concept="cFNQA" id="7YOjUbFq7fx" role="3CrHoS">
+      <property role="TrG5h" value="Or Gate 1" />
+    </node>
+    <node concept="cEgko" id="7YOjUbFq7fy" role="3CrHoS">
+      <property role="TrG5h" value="And Gate 1" />
+    </node>
+    <node concept="21ATtL" id="7YOjUbFq7fz" role="3CrHoS">
       <property role="TrG5h" value="erroneous_time" />
       <node concept="2roqtx" id="11L6MQb6ksP" role="2rok82">
         <property role="2rqmGV" value="0.00001" />
       </node>
     </node>
-    <node concept="21oswF" id="7YOjUbFq7f$" role="21ATq_">
-      <ref role="21oszt" node="7YOjUbFq7fu" resolve="erroneous_speed" />
-      <ref role="21oszj" node="7YOjUbFq7fx" />
-    </node>
-    <node concept="21oswF" id="7YOjUbFq7f_" role="21ATq_">
-      <ref role="21oszt" node="7YOjUbFq7fx" />
-      <ref role="21oszj" node="7YOjUbFq7fw" resolve="erroneous braking distance" />
-    </node>
-    <node concept="21ATtL" id="7YOjUbFq7fA" role="21ATqB">
+    <node concept="21ATtL" id="7YOjUbFq7fA" role="3CrHoS">
       <property role="TrG5h" value="obstacle" />
       <node concept="2roqtx" id="11L6MQb6ksR" role="2rok82">
         <property role="2rqmGV" value="0.001" />
       </node>
     </node>
-    <node concept="21ATtk" id="7YOjUbFq7fB" role="21ATqB">
+    <node concept="21ATtk" id="7YOjUbFq7fB" role="3CrHoS">
       <property role="TrG5h" value="collision" />
     </node>
-    <node concept="21oswF" id="7YOjUbFq7fC" role="21ATq_">
-      <ref role="21oszt" node="7YOjUbFq7fy" />
+    <node concept="21oswF" id="7YOjUbFq7f$" role="3CrHoS">
+      <ref role="21oszt" node="7YOjUbFq7fu" resolve="erroneous_speed" />
+      <ref role="21oszj" node="7YOjUbFq7fx" resolve="Or Gate 1" />
+    </node>
+    <node concept="21oswF" id="7YOjUbFq7f_" role="3CrHoS">
+      <ref role="21oszt" node="7YOjUbFq7fx" resolve="Or Gate 1" />
+      <ref role="21oszj" node="7YOjUbFq7fw" resolve="erroneous braking distance" />
+    </node>
+    <node concept="21oswF" id="7YOjUbFq7fC" role="3CrHoS">
+      <ref role="21oszt" node="7YOjUbFq7fy" resolve="And Gate 1" />
       <ref role="21oszj" node="7YOjUbFq7fB" resolve="collision" />
     </node>
-    <node concept="21oswF" id="7YOjUbFq7fD" role="21ATq_">
+    <node concept="21oswF" id="7YOjUbFq7fD" role="3CrHoS">
       <ref role="21oszt" node="7YOjUbFq7fA" resolve="obstacle" />
-      <ref role="21oszj" node="7YOjUbFq7fy" />
+      <ref role="21oszj" node="7YOjUbFq7fy" resolve="And Gate 1" />
     </node>
-    <node concept="21oswF" id="7YOjUbFq7fE" role="21ATq_">
-      <ref role="21oszt" node="7YOjUbFq7fx" />
-      <ref role="21oszj" node="7YOjUbFq7fy" />
+    <node concept="21oswF" id="7YOjUbFq7fE" role="3CrHoS">
+      <ref role="21oszt" node="7YOjUbFq7fx" resolve="Or Gate 1" />
+      <ref role="21oszj" node="7YOjUbFq7fy" resolve="And Gate 1" />
     </node>
-    <node concept="21oswF" id="7YOjUbFq7fF" role="21ATq_">
+    <node concept="21oswF" id="7YOjUbFq7fF" role="3CrHoS">
       <ref role="21oszt" node="7YOjUbFq7fz" resolve="erroneous_time" />
-      <ref role="21oszj" node="7YOjUbFq7fx" />
+      <ref role="21oszj" node="7YOjUbFq7fx" resolve="Or Gate 1" />
     </node>
   </node>
 </model>
