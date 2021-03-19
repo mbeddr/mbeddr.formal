@@ -9506,6 +9506,11 @@
             <ref role="3bR37D" to="90a9:4frYVBf39$o" resolve="de.itemis.mps.editor.diagram.styles" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3ZjKZgVSM0r" role="3bR37C">
+          <node concept="3bR9La" id="3ZjKZgVSM0s" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3R_yAtWp53E" role="2G$12L">
         <property role="BnDLt" value="true" />
