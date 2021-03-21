@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -88,6 +89,12 @@
         </node>
       </node>
     </node>
+    <node concept="1TJgyj" id="5Ac1Q93IIrE" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739589866" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="explanation" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qrXfdH1Uhl">
     <property role="EcuMT" value="1629165016568013909" />
@@ -134,6 +141,12 @@
       <property role="IQ2nx" value="2392944874759792243" />
       <property role="TrG5h" value="max" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93IIdk" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739588948" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="explanation" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
   <node concept="1TIwiD" id="35$gPpxbZQ_">

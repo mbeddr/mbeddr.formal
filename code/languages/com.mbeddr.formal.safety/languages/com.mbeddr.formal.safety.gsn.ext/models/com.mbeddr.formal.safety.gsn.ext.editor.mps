@@ -291,6 +291,18 @@
         <ref role="PMmxG" to="g35p:1qrXfdH1Y7r" resolve="GoalStructureDiagramEditorComponent" />
       </node>
     </node>
+    <node concept="3EZMnI" id="5Ac1Q93IIEY" role="6VMZX">
+      <node concept="2iRkQZ" id="5Ac1Q93IIEZ" role="2iSdaV" />
+      <node concept="3EZMnI" id="5Ac1Q93IIFC" role="3EZMnx">
+        <node concept="l2Vlx" id="5Ac1Q93IIFD" role="2iSdaV" />
+        <node concept="3F0ifn" id="5Ac1Q93IIFG" role="3EZMnx">
+          <property role="3F0ifm" value="Explanation:" />
+        </node>
+        <node concept="3F1sOY" id="5Ac1Q93IIFL" role="3EZMnx">
+          <ref role="1NtTu8" to="lbo2:5Ac1Q93IIrE" resolve="explanation" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="24PsEXF9yxE">
     <property role="3GE5qa" value="patterns" />
@@ -483,6 +495,16 @@
           <ref role="1NtTu8" to="lbo2:24PsEXF9ypN" resolve="max" />
         </node>
         <node concept="l2Vlx" id="35$gPpxc0eL" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5xKN$GcBug$" role="3EZMnx">
+        <node concept="VPM3Z" id="5xKN$GcBugA" role="3F10Kt" />
+        <node concept="3F0ifn" id="5xKN$GcBugC" role="3EZMnx">
+          <property role="3F0ifm" value="explanation:" />
+        </node>
+        <node concept="3F1sOY" id="5Ac1Q93IIr_" role="3EZMnx">
+          <ref role="1NtTu8" to="lbo2:5Ac1Q93IIdk" resolve="explanation" />
+        </node>
+        <node concept="l2Vlx" id="5xKN$GcBugD" role="2iSdaV" />
       </node>
     </node>
   </node>
