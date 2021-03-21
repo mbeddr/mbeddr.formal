@@ -98,6 +98,7 @@
       </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
+        <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
@@ -186,6 +187,7 @@
   <node concept="bUwia" id="5pJnDA9aQRy">
     <property role="TrG5h" value="gsn2html_main" />
     <node concept="3lhOvk" id="5pJnDA9aUWp" role="3lj3bC">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
       <ref role="3lhOvi" node="7kpr6A5UZw5" resolve="argument_name" />
     </node>
