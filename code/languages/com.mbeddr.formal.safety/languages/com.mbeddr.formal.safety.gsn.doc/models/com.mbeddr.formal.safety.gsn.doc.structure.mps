@@ -34,6 +34,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -64,6 +67,128 @@
       <property role="IQ2ns" value="6452540484739610227" />
       <property role="20kJfa" value="goalStructure" />
       <ref role="20lvS9" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93JxkX">
+    <property role="EcuMT" value="6452540484739798333" />
+    <property role="TrG5h" value="ContextWord" />
+    <property role="34LRSv" value="@context" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Ac1Q93JxkY" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93JxlO" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739798388" />
+      <property role="20kJfa" value="context" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:3GRi4m$rlpN" resolve="Context" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93JxlQ">
+    <property role="EcuMT" value="6452540484739798390" />
+    <property role="TrG5h" value="SolutionWord" />
+    <property role="34LRSv" value="@solution" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Ac1Q93JxlR" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93JxlT" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739798393" />
+      <property role="20kJfa" value="solution" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:3GRi4m$r_RC" resolve="Solution" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93JxnZ">
+    <property role="EcuMT" value="6452540484739798527" />
+    <property role="TrG5h" value="StrategyWord" />
+    <property role="34LRSv" value="@strategy" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Ac1Q93Jxo0" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93Jxo2" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739798530" />
+      <property role="20kJfa" value="strategy" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93Jxpy">
+    <property role="EcuMT" value="6452540484739798626" />
+    <property role="TrG5h" value="JustificationWord" />
+    <property role="34LRSv" value="@justification" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Ac1Q93Jxpz" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93Jxp_" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739798629" />
+      <property role="20kJfa" value="justification" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:2TfVCPOMB8H" resolve="Justification" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93Jxr5">
+    <property role="EcuMT" value="6452540484739798725" />
+    <property role="TrG5h" value="AssumptionWord" />
+    <property role="34LRSv" value="@assumption" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Ac1Q93Jxr6" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93Jxr8" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739798728" />
+      <property role="20kJfa" value="assumption" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:7eb_1beKlGf" resolve="Assumption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93Jxtk">
+    <property role="EcuMT" value="6452540484739798868" />
+    <property role="TrG5h" value="AwayGoalWord" />
+    <property role="34LRSv" value="@awayGoal" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Ac1Q93Jxtl" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93Jxtn" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739798871" />
+      <property role="20kJfa" value="awayGoal" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:1qrXfdGWKXy" resolve="AwayGoal" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93JxuR">
+    <property role="EcuMT" value="6452540484739798967" />
+    <property role="TrG5h" value="InContextOfConnectionWord" />
+    <property role="34LRSv" value="@inContextOfConnection" />
+    <property role="3GE5qa" value="connections" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5Ac1Q93JxuS" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739798968" />
+      <property role="20kJfa" value="inContextOfConnection" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+    </node>
+    <node concept="PrWs8" id="5Ac1Q93JxuU" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Ac1Q93JDnH">
+    <property role="EcuMT" value="6452540484739831277" />
+    <property role="TrG5h" value="SupportedByConnectionWord" />
+    <property role="34LRSv" value="@supportedByConnection" />
+    <property role="3GE5qa" value="connections" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5Ac1Q93JDnI" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5Ac1Q93JDnK" role="1TKVEi">
+      <property role="IQ2ns" value="6452540484739831280" />
+      <property role="20kJfa" value="supportedByConnection" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
     </node>
   </node>
 </model>

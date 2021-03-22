@@ -262,6 +262,9 @@
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
+    <node concept="PrWs8" id="5Ac1Q93JxwY" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2ccN23odQ9b">
     <property role="EcuMT" value="2525617932486533707" />
