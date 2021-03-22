@@ -74,6 +74,11 @@
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="5Ac1Q93IRbX">
     <ref role="1M2myG" to="wvti:5Ac1Q93IJNx" resolve="GoalWord" />
@@ -109,6 +114,352 @@
                 <node concept="v3k3i" id="5Ac1Q93IXXk" role="2OqNvi">
                   <node concept="chp4Y" id="5Ac1Q93IY3W" role="v3oSu">
                     <ref role="cht4Q" to="py52:3GRi4m$qNtH" resolve="Goal" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93JxIK">
+    <ref role="1M2myG" to="wvti:5Ac1Q93JxkX" resolve="ContextWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93JxIL" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93JxlO" resolve="context" />
+      <node concept="3dgokm" id="5Ac1Q93JxKt" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93JxKu" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93Jy1p" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93Jy1r" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="5Ac1Q93Jy1s" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93Jy1t" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93Jy1u" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93Jy1v" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93Jy1w" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93Jy1x" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93Jy1y" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93Jy1z" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93Jy1$" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93Jy1_" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93J$zh" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93J$D0" role="v3oSu">
+                    <ref role="cht4Q" to="py52:3GRi4m$rlpN" resolve="Context" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93J$Px">
+    <ref role="1M2myG" to="wvti:5Ac1Q93Jxtk" resolve="AwayGoalWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93J$Py" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93Jxtn" resolve="awayGoal" />
+      <node concept="3dgokm" id="5Ac1Q93J$S5" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93J$S6" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93J$Vj" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93J$Vl" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="5Ac1Q93J$Vm" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93J$Vn" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93J$Vo" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93J$Vp" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93J$Vq" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93J$Vr" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93J$Vs" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93J$Vt" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93J$Vu" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93J$Vv" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93J$Vw" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93J_qh" role="v3oSu">
+                    <ref role="cht4Q" to="py52:1qrXfdGWKXy" resolve="AwayGoal" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93J_xM">
+    <ref role="1M2myG" to="wvti:5Ac1Q93Jxr5" resolve="AssumptionWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93J_xN" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93Jxr8" resolve="assumption" />
+      <node concept="3dgokm" id="5Ac1Q93J_yE" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93J_yF" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93J__S" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93J__U" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="5Ac1Q93J__V" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93J__W" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93J__X" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93J__Y" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93J__Z" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93J_A0" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93J_A1" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93J_A2" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93J_A3" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93J_A4" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93J_A5" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93J_ZR" role="v3oSu">
+                    <ref role="cht4Q" to="py52:7eb_1beKlGf" resolve="Assumption" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93JA7y">
+    <property role="3GE5qa" value="connections" />
+    <ref role="1M2myG" to="wvti:5Ac1Q93JxuR" resolve="InContextOfConnectionWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93JA7z" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93JxuS" resolve="inContextOfConnection" />
+      <node concept="3dgokm" id="5Ac1Q93JAaT" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93JAaU" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93JAe7" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93JAe9" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="5Ac1Q93JAea" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93JAeb" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93JAec" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93JAed" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93JAee" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93JAef" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93JAeg" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93JAeh" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93JAei" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93JAej" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93JAek" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93JALs" role="v3oSu">
+                    <ref role="cht4Q" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93JAXV">
+    <ref role="1M2myG" to="wvti:5Ac1Q93Jxpy" resolve="JustificationWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93JAXW" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93Jxp_" resolve="justification" />
+      <node concept="3dgokm" id="5Ac1Q93JAYN" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93JAYO" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93JB21" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93JB23" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="5Ac1Q93JB24" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93JB25" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93JB26" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93JB27" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93JB28" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93JB29" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93JB2a" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93JB2b" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93JB2c" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93JB2d" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93JB2e" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93JBzk" role="v3oSu">
+                    <ref role="cht4Q" to="py52:2TfVCPOMB8H" resolve="Justification" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93JBET">
+    <ref role="1M2myG" to="wvti:5Ac1Q93JxlQ" resolve="SolutionWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93JBEU" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93JxlT" resolve="solution" />
+      <node concept="3dgokm" id="5Ac1Q93JBGA" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93JBGB" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93JBJO" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93JBJQ" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="5Ac1Q93JBJR" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93JBJS" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93JBJT" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93JBJU" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93JBJV" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93JBJW" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93JBJX" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93JBJY" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93JBJZ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93JBK0" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93JBK1" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93JCf$" role="v3oSu">
+                    <ref role="cht4Q" to="py52:3GRi4m$r_RC" resolve="Solution" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93JCn9">
+    <ref role="1M2myG" to="wvti:5Ac1Q93JxnZ" resolve="StrategyWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93JCna" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93Jxo2" resolve="strategy" />
+      <node concept="3dgokm" id="5Ac1Q93JCoQ" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93JCoR" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93JCs4" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93JCs6" role="3clFbG">
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <node concept="2OqwBi" id="5Ac1Q93JCs7" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93JCs8" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93JCs9" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93JCsa" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93JCsb" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93JCsc" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93JCsd" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93JCse" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93JCsf" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93JCsg" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93JCsh" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93JCUZ" role="v3oSu">
+                    <ref role="cht4Q" to="py52:3GRi4m$rlnF" resolve="Strategy" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Ac1Q93JDq4">
+    <property role="3GE5qa" value="connections" />
+    <ref role="1M2myG" to="wvti:5Ac1Q93JDnH" resolve="SupportedByConnectionWord" />
+    <node concept="1N5Pfh" id="5Ac1Q93JDq5" role="1Mr941">
+      <ref role="1N5Vy1" to="wvti:5Ac1Q93JDnK" resolve="supportedByConnection" />
+      <node concept="3dgokm" id="5Ac1Q93JDtt" role="1N6uqs">
+        <node concept="3clFbS" id="5Ac1Q93JDtu" role="2VODD2">
+          <node concept="3clFbF" id="5Ac1Q93JDIm" role="3cqZAp">
+            <node concept="2YIFZM" id="5Ac1Q93JDIo" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="5Ac1Q93JDIp" role="37wK5m">
+                <node concept="2OqwBi" id="5Ac1Q93JDIq" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5Ac1Q93JDIr" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5Ac1Q93JDIs" role="2Oq$k0">
+                      <node concept="2rP1CM" id="5Ac1Q93JDIt" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5Ac1Q93JDIu" role="2OqNvi">
+                        <node concept="1xMEDy" id="5Ac1Q93JDIv" role="1xVPHs">
+                          <node concept="chp4Y" id="5Ac1Q93JDIw" role="ri$Ld">
+                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5Ac1Q93JDIx" role="2OqNvi">
+                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5Ac1Q93JDIy" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5Ac1Q93JDIz" role="2OqNvi">
+                  <node concept="chp4Y" id="5Ac1Q93JE5I" role="v3oSu">
+                    <ref role="cht4Q" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
                   </node>
                 </node>
               </node>
