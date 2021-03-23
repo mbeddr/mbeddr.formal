@@ -9,6 +9,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -32,6 +33,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -42,6 +44,10 @@
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -74,6 +80,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -93,9 +100,6 @@
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -197,18 +201,33 @@
             <ref role="3cqZAo" node="3oGITgu_Pku" resolve="fteb" />
           </node>
           <node concept="3clFbS" id="7YOjUbFpf2n" role="Jncv$">
-            <node concept="3cpWs6" id="7YOjUbFpfbb" role="3cqZAp">
-              <node concept="2YIFZM" id="3oGITgu_1X0" role="3cqZAk">
-                <ref role="1Pybhc" node="3oGITguzMJW" resolve="XFTAUtils" />
-                <ref role="37wK5l" node="3oGITgu_19m" resolve="normalizeName" />
-                <node concept="2OqwBi" id="7YOjUbFpftM" role="37wK5m">
-                  <node concept="Jnkvi" id="7YOjUbFpfgJ" role="2Oq$k0">
+            <node concept="3clFbJ" id="2s9yRNfrWCD" role="3cqZAp">
+              <node concept="3clFbS" id="2s9yRNfrWCF" role="3clFbx">
+                <node concept="3cpWs6" id="7YOjUbFpfbb" role="3cqZAp">
+                  <node concept="2YIFZM" id="3oGITgu_1X0" role="3cqZAk">
+                    <ref role="1Pybhc" node="3oGITguzMJW" resolve="XFTAUtils" />
+                    <ref role="37wK5l" node="3oGITgu_19m" resolve="normalizeName" />
+                    <node concept="2OqwBi" id="7YOjUbFpftM" role="37wK5m">
+                      <node concept="Jnkvi" id="7YOjUbFpfgJ" role="2Oq$k0">
+                        <ref role="1M0zk5" node="7YOjUbFpf2o" resolve="inc" />
+                      </node>
+                      <node concept="3TrcHB" id="7YOjUbFpfAT" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2s9yRNfrXtn" role="3clFbw">
+                <node concept="2OqwBi" id="2s9yRNfrWPA" role="2Oq$k0">
+                  <node concept="Jnkvi" id="2s9yRNfrWFA" role="2Oq$k0">
                     <ref role="1M0zk5" node="7YOjUbFpf2o" resolve="inc" />
                   </node>
-                  <node concept="3TrcHB" id="7YOjUbFpfAT" role="2OqNvi">
+                  <node concept="3TrcHB" id="2s9yRNfrX6J" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
+                <node concept="17RvpY" id="2s9yRNfrXIP" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -317,8 +336,8 @@
           <node concept="2OqwBi" id="3oGITgu_4w_" role="3clFbG">
             <node concept="2OqwBi" id="7jevvt_fiNw" role="2Oq$k0">
               <node concept="2OqwBi" id="7jevvt_fh54" role="2Oq$k0">
-                <node concept="3Tsc0h" id="7jevvt_fh57" role="2OqNvi">
-                  <ref role="3TtcxE" to="spwl:5rwT_JnuR3W" resolve="elements" />
+                <node concept="2qgKlT" id="2s9yRNfpRZw" role="2OqNvi">
+                  <ref role="37wK5l" to="fazf:2s9yRNfoqAa" resolve="elements" />
                 </node>
                 <node concept="37vLTw" id="3oGITgu_4fb" role="2Oq$k0">
                   <ref role="3cqZAo" node="3oGITgu_49e" resolve="ft" />

@@ -36,6 +36,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -80,6 +81,7 @@
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+      <node concept="asaX9" id="2s9yRNfpQfn" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="5rwT_JnuR3Y" role="1TKVEi">
       <property role="IQ2ns" value="6260256764176593150" />
@@ -87,6 +89,14 @@
       <property role="20kJfa" value="connections" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
+      <node concept="asaX9" id="2s9yRNfpQfx" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="2s9yRNfpPP4" role="1TKVEi">
+      <property role="IQ2ns" value="2812932810441448772" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
     </node>
     <node concept="PrWs8" id="5rwT_JnuR3S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -107,6 +117,12 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7wRJ5ynOLFQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2s9yRNfoxlE" role="PzmwI">
+      <ref role="PrY4T" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5rwT_JnuR3V">
     <property role="EcuMT" value="6260256764176593147" />
@@ -123,6 +139,9 @@
       <property role="IQ2ns" value="6260256764176969352" />
       <property role="20kJfa" value="end" />
       <ref role="20lvS9" node="5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+    </node>
+    <node concept="PrWs8" id="2s9yRNfoxl_" role="PzmwI">
+      <ref role="PrY4T" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="5rwT_JnuR4f">
@@ -194,7 +213,8 @@
   <node concept="1TIwiD" id="5rwT_JnwiTK">
     <property role="EcuMT" value="6260256764176969328" />
     <property role="TrG5h" value="Connection" />
-    <property role="34LRSv" value="connection" />
+    <property role="34LRSv" value="connect" />
+    <property role="3GE5qa" value="connection" />
     <ref role="1TJDcQ" node="5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
   </node>
   <node concept="1TIwiD" id="3EWkVoQ4QSf">
@@ -269,6 +289,34 @@
     <node concept="1TJgyi" id="3oGITguzUlR" role="1TKVEl">
       <property role="IQ2nx" value="3903701221865661815" />
       <property role="TrG5h" value="missionTime" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2s9yRNfoxl$">
+    <property role="EcuMT" value="2812932810441102692" />
+    <property role="TrG5h" value="IFaultTreeContent" />
+  </node>
+  <node concept="1TIwiD" id="3ZjKZgVUW8g">
+    <property role="EcuMT" value="4599235098220151312" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ZjKZgVUW8h" role="PzmwI">
+      <ref role="PrY4T" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ZjKZgVVrtf">
+    <property role="EcuMT" value="4599235098220279631" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="CommentLine" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ZjKZgVVrtg" role="PzmwI">
+      <ref role="PrY4T" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
+    </node>
+    <node concept="1TJgyi" id="3ZjKZgVVrtj" role="1TKVEl">
+      <property role="IQ2nx" value="4599235098220279635" />
+      <property role="TrG5h" value="comment" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

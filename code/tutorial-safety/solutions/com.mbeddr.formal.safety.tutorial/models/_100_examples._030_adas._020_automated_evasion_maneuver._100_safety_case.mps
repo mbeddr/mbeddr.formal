@@ -759,7 +759,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJuIsx" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYbEE" resolve="Collision at very high speed with another vehicle" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJuIsy" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
@@ -800,7 +800,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4eG" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYbEK" resolve="Collision at high speed with another vehicle" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4eH" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
@@ -819,7 +819,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4ge" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYbF9" resolve="Collision at low speed with another vehicle" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4gf" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
