@@ -171,6 +171,10 @@
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
@@ -211,6 +215,7 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -681,13 +686,43 @@
           <node concept="2I9FWS" id="1FMyjUPhN8g" role="1tU5fm">
             <ref role="2I9WkF" to="bewr:3Cm$$O2vamj" resolve="Action" />
           </node>
-          <node concept="2OqwBi" id="1FMyjUPhNkI" role="33vP2m">
-            <node concept="37vLTw" id="1FMyjUPhNkJ" role="2Oq$k0">
-              <ref role="3cqZAo" node="1FMyjUPhMcw" resolve="myController" />
+          <node concept="2OqwBi" id="5KVldFlGPnk" role="33vP2m">
+            <node concept="2OqwBi" id="5KVldFlGHak" role="2Oq$k0">
+              <node concept="2OqwBi" id="1FMyjUPhNkI" role="2Oq$k0">
+                <node concept="37vLTw" id="1FMyjUPhNkJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1FMyjUPhMcw" resolve="myController" />
+                </node>
+                <node concept="2qgKlT" id="1FMyjUPhNkK" role="2OqNvi">
+                  <ref role="37wK5l" to="a6vc:7BYuSCFAnIt" resolve="getActionsOfOutgoingConnections" />
+                </node>
+              </node>
+              <node concept="3zZkjj" id="5KVldFlGK5c" role="2OqNvi">
+                <node concept="1bVj0M" id="5KVldFlGK5e" role="23t8la">
+                  <node concept="3clFbS" id="5KVldFlGK5f" role="1bW5cS">
+                    <node concept="3clFbF" id="5KVldFlGKqn" role="3cqZAp">
+                      <node concept="2OqwBi" id="5KVldFlGMBA" role="3clFbG">
+                        <node concept="2OqwBi" id="5KVldFlGMg5" role="2Oq$k0">
+                          <node concept="37vLTw" id="5KVldFlGLYn" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5KVldFlGK5g" resolve="it" />
+                          </node>
+                          <node concept="1mfA1w" id="5KVldFlGMwG" role="2OqNvi" />
+                        </node>
+                        <node concept="1mIQ4w" id="5KVldFlGO9B" role="2OqNvi">
+                          <node concept="chp4Y" id="5KVldFlGP1x" role="cj9EA">
+                            <ref role="cht4Q" to="bewr:3HVC1H6WzPx" resolve="Controls" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="5KVldFlGK5g" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="5KVldFlGK5h" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="2qgKlT" id="1FMyjUPhNkK" role="2OqNvi">
-              <ref role="37wK5l" to="a6vc:7BYuSCFAnIt" resolve="getActionsOfOutgoingConnections" />
-            </node>
+            <node concept="ANE8D" id="5KVldFlGPFj" role="2OqNvi" />
           </node>
         </node>
       </node>
