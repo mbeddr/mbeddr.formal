@@ -9,6 +9,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
+    <import index="lbo2" ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -67,6 +68,9 @@
       <property role="IQ2ns" value="6452540484739610227" />
       <property role="20kJfa" value="goalStructure" />
       <ref role="20lvS9" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+    </node>
+    <node concept="PrWs8" id="2xfNjApoYgP" role="PzmwI">
+      <ref role="PrY4T" to="lbo2:2xfNjApoY99" resolve="IGSNDocument" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Ac1Q93JxkX">

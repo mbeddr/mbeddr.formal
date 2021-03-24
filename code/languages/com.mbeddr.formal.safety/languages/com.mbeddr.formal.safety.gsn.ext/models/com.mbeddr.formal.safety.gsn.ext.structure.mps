@@ -10,8 +10,6 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="g35p" ref="r:53f7c624-e35c-46e0-a6cd-4bcccc2b91f5(com.mbeddr.formal.safety.gsn.editor)" />
-    <import index="wvti" ref="r:b5f49a49-cb87-432f-9c94-6a91c1e055e1(com.mbeddr.formal.safety.gsn.doc.structure)" />
-    <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -40,7 +38,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -101,7 +101,7 @@
     <node concept="1TJgyj" id="59fClQCJ6cX" role="1TKVEi">
       <property role="IQ2ns" value="5931136657905181501" />
       <property role="20kJfa" value="documentation" />
-      <ref role="20lvS9" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
+      <ref role="20lvS9" node="2xfNjApoY99" resolve="IGSNDocument" />
     </node>
   </node>
   <node concept="1TIwiD" id="1qrXfdH1Uhl">
@@ -188,6 +188,14 @@
     <property role="TrG5h" value="PatternGoalStructureElementBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+  </node>
+  <node concept="PlHQZ" id="2xfNjApoY99">
+    <property role="EcuMT" value="2904765931947549257" />
+    <property role="3GE5qa" value="patterns" />
+    <property role="TrG5h" value="IGSNDocument" />
+    <node concept="PrWs8" id="2xfNjApoY9a" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
