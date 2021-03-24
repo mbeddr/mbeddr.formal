@@ -4792,7 +4792,7 @@
               </node>
               <node concept="356sEK" id="2w$mGKyn4Lv" role="383Ya9">
                 <node concept="356sEF" id="2w$mGKyn4Lw" role="356sEH">
-                  <property role="TrG5h" value="//draw_or(graph, parent, &quot;ST1_UUID&quot;, &quot;St1&quot;, &quot;argument\nover\nhazards&quot;, 100, 200, 120, 70, #FF0000, #00AAAA, 3);" />
+                  <property role="TrG5h" value="//draw_or(graph, parent, &quot;OR_UUID&quot;, &quot;OR&quot;, &quot;OR&quot;, 100, 200, 120, 70, #FF0000, #00AAAA, 3);" />
                 </node>
                 <node concept="2EixSi" id="2w$mGKyn4Lx" role="2EinRH" />
               </node>

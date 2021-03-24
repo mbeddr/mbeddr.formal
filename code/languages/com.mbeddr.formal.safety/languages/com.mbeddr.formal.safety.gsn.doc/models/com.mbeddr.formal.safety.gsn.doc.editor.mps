@@ -69,6 +69,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="625126330682908270" name="jetbrains.mps.lang.editor.structure.CellModel_ReferencePresentation" flags="sg" stub="730538219795961225" index="3SHvHV" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -513,10 +514,7 @@
       <node concept="1iCGBv" id="5Ac1Q93JxwE" role="3EZMnx">
         <ref role="1NtTu8" to="wvti:5Ac1Q93JxuS" resolve="inContextOfConnection" />
         <node concept="1sVBvm" id="5Ac1Q93JxwG" role="1sWHZn">
-          <node concept="3F0A7n" id="5Ac1Q93JV9t" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
+          <node concept="3SHvHV" id="3yPz2by64$x" role="2wV5jI" />
         </node>
       </node>
       <node concept="3F0ifn" id="5Ac1Q93JxvU" role="3EZMnx">
@@ -547,10 +545,7 @@
       <node concept="1iCGBv" id="5Ac1Q93JDoV" role="3EZMnx">
         <ref role="1NtTu8" to="wvti:5Ac1Q93JDnK" resolve="supportedByConnection" />
         <node concept="1sVBvm" id="5Ac1Q93JDoX" role="1sWHZn">
-          <node concept="3F0A7n" id="5Ac1Q93JDpd" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
+          <node concept="3SHvHV" id="7pbcaUWWuJ" role="2wV5jI" />
         </node>
       </node>
       <node concept="3F0ifn" id="5Ac1Q93JDom" role="3EZMnx">
