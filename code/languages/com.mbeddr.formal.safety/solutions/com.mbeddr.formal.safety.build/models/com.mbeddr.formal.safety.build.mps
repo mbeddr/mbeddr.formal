@@ -7997,6 +7997,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="2xfNjApq5j0" role="3bR37C">
+          <node concept="3bR9La" id="2xfNjApq5j1" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7he_lUur$v6" role="2G$12L">
         <property role="BnDLt" value="true" />
