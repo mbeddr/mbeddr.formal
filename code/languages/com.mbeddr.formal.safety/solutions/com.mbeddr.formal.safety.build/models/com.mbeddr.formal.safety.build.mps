@@ -20,7 +20,9 @@
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
-      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW" />
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW">
+        <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
+      </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -13262,6 +13264,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1HO1gFDIr5X" role="3bR37C">
+          <node concept="3bR9La" id="1HO1gFDIr5Y" role="1SiIV1">
+            <ref role="3bR37D" node="1GpuQyTjDGk" resolve="com.fasten.safety.ft.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1HO1gFDIr5Z" role="3bR37C">
+          <node concept="3bR9La" id="1HO1gFDIr60" role="1SiIV1">
+            <ref role="3bR37D" node="3R_yAtWp1Os" resolve="com.fasten.safety.ft.xfta.pluginSolution" />
+          </node>
+        </node>
       </node>
       <node concept="1X3_iC" id="6ucyvMUxQaz" role="lGtFl">
         <property role="3V$3am" value="modules" />
@@ -14220,6 +14232,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1HO1gFDIpvB" role="3bR37C">
+          <node concept="3bR9La" id="1HO1gFDIpvC" role="1SiIV1">
+            <ref role="3bR37D" node="1GpuQyTjDGk" resolve="com.fasten.safety.ft.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1HO1gFDIpvD" role="3bR37C">
+          <node concept="3bR9La" id="1HO1gFDIpvE" role="1SiIV1">
+            <ref role="3bR37D" node="3R_yAtWp1Os" resolve="com.fasten.safety.ft.xfta.pluginSolution" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="6ucyvMUDFeT" role="1hWBAP">
@@ -14242,7 +14264,9 @@
       <node concept="22LTRM" id="1$9jWFVFLN$" role="22LTRK">
         <ref role="22LTRN" node="1$9jWFVFLHG" resolve="test.com.fasten.safety.ft.xfta" />
       </node>
-      <node concept="24cAiW" id="6ucyvMUDFeV" role="24cAkG" />
+      <node concept="24cAiW" id="6ucyvMUDFeV" role="24cAkG">
+        <node concept="NbPM2" id="1tYE378U5fR" role="1psgkv" />
+      </node>
     </node>
   </node>
 </model>
