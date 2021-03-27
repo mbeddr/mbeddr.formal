@@ -61,6 +61,7 @@
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
+      <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
@@ -2810,6 +2811,17 @@
         <property role="3F0ifm" value=";" />
       </node>
       <node concept="l2Vlx" id="3ZjKZgVVrtr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="UfLVhovzCX">
+    <property role="3GE5qa" value="text" />
+    <ref role="1XX52x" to="spwl:5rwT_JnuRci" resolve="EventBase" />
+    <node concept="B$lHz" id="UfLVhovzCZ" role="2wV5jI" />
+    <node concept="2aJ2om" id="UfLVhovD5D" role="CpUAK">
+      <ref role="2$4xQ3" node="7wRJ5ynOjYu" resolve="FT_TEXT" />
+    </node>
+    <node concept="PMmxH" id="UfLVhovD5H" role="6VMZX">
+      <ref role="PMmxG" node="3ZjKZgVHKvX" resolve="EventBaseEditorComponent" />
     </node>
   </node>
 </model>
