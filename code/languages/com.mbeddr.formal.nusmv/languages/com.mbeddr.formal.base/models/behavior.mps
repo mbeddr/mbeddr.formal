@@ -308,5 +308,23 @@
       <node concept="3clFbS" id="1ZejHLlGC97" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="60zS9AZgLAn">
+    <ref role="13h7C2" to="b19z:60zS9AZgHTg" resolve="IFASTENStructureViewRoot" />
+    <node concept="13i0hz" id="60zS9AZgLAV" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="structure" />
+      <node concept="3Tm1VV" id="60zS9AZgLAW" role="1B3o_S" />
+      <node concept="A3Dl8" id="60zS9AZgLMA" role="3clF45">
+        <node concept="3Tqbb2" id="60zS9AZgLMX" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="60zS9AZgLAY" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="60zS9AZgLAo" role="13h7CW">
+      <node concept="3clFbS" id="60zS9AZgLAp" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

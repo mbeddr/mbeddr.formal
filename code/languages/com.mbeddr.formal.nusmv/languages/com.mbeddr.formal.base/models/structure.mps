@@ -194,5 +194,12 @@
       <property role="t5JxN" value="Concepts implementing this act like traces (e.g. to requirements) " />
     </node>
   </node>
+  <node concept="PlHQZ" id="60zS9AZgHTg">
+    <property role="EcuMT" value="6927627602769403472" />
+    <property role="TrG5h" value="IFASTENStructureViewRoot" />
+    <node concept="PrWs8" id="60zS9AZgKE4" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
