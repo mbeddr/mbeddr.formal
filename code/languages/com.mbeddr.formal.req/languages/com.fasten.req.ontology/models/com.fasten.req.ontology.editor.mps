@@ -2201,6 +2201,9 @@
     <node concept="2aJ2om" id="kZSvS5QteV" role="CpUAK">
       <ref role="2$4xQ3" node="kZSvS5QpoH" resolve="HIERARCHY" />
     </node>
+    <node concept="PMmxH" id="74X7RZGrLu0" role="6VMZX">
+      <ref role="PMmxG" node="2cECkJ_ka85" resolve="OntologyConceptInspector" />
+    </node>
   </node>
 </model>
 
