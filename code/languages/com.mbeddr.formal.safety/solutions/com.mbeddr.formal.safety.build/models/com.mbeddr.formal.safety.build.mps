@@ -763,6 +763,9 @@
       <node concept="m$_yC" id="7he_lUurrgC" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="1HO1gFDOwQs" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NTGYE$JTH6" resolve="com.dslfoundry.plaintextgen" />
+      </node>
       <node concept="m$_yC" id="7yAshxDrV14" role="m$_yJ">
         <ref role="m$_y1" node="7he_lUumO49" resolve="com.mbeddr.formal.req" />
       </node>
@@ -9675,6 +9678,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1HO1gFDOwfn" role="3bR37C">
+          <node concept="3bR9La" id="1HO1gFDOwfo" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="73rWdFZqzKL" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -13274,6 +13282,11 @@
             <ref role="3bR37D" node="3R_yAtWp1Os" resolve="com.fasten.safety.ft.xfta.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1HO1gFDOwrS" role="3bR37C">
+          <node concept="3bR9La" id="1HO1gFDOwrT" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
+          </node>
+        </node>
       </node>
       <node concept="1X3_iC" id="6ucyvMUxQaz" role="lGtFl">
         <property role="3V$3am" value="modules" />
@@ -13704,6 +13717,9 @@
         <node concept="3Mxwew" id="6ucyvMUDFe9" role="3MwsjC">
           <property role="3MwjfP" value="1.1" />
         </node>
+      </node>
+      <node concept="m$_yC" id="1HO1gFDOvxh" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NTGYE$JTH6" resolve="com.dslfoundry.plaintextgen" />
       </node>
     </node>
     <node concept="10PD9b" id="6ucyvMUDFea" role="10PD9s" />
@@ -14240,6 +14256,11 @@
         <node concept="1SiIV0" id="1HO1gFDIpvD" role="3bR37C">
           <node concept="3bR9La" id="1HO1gFDIpvE" role="1SiIV1">
             <ref role="3bR37D" node="3R_yAtWp1Os" resolve="com.fasten.safety.ft.xfta.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1HO1gFDOvyH" role="3bR37C">
+          <node concept="3bR9La" id="1HO1gFDOvyI" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
           </node>
         </node>
       </node>
