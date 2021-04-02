@@ -664,13 +664,38 @@
         </node>
       </node>
     </node>
-    <node concept="3EZMnI" id="1JhvKLLP$9R" role="6VMZX">
-      <node concept="l2Vlx" id="1JhvKLLP$9S" role="2iSdaV" />
-      <node concept="3F0ifn" id="1JhvKLLP$a0" role="3EZMnx">
-        <property role="3F0ifm" value="Name:" />
+    <node concept="3EZMnI" id="5t7SqsaptbT" role="6VMZX">
+      <node concept="2iRkQZ" id="5t7SqsaptbU" role="2iSdaV" />
+      <node concept="3EZMnI" id="1JhvKLLP$9R" role="3EZMnx">
+        <node concept="l2Vlx" id="1JhvKLLP$9S" role="2iSdaV" />
+        <node concept="3F0ifn" id="1JhvKLLP$a0" role="3EZMnx">
+          <property role="3F0ifm" value="Name:" />
+        </node>
+        <node concept="2v7bAL" id="3Cm$$O2vice" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
-      <node concept="2v7bAL" id="3Cm$$O2vice" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="3EZMnI" id="5t7SqsaptNh" role="3EZMnx">
+        <node concept="l2Vlx" id="5t7SqsaptNi" role="2iSdaV" />
+        <node concept="3F0ifn" id="5t7SqsaptNj" role="3EZMnx">
+          <property role="3F0ifm" value="Description:" />
+        </node>
+        <node concept="3F1sOY" id="5t7Sqsapva4" role="3EZMnx">
+          <ref role="1NtTu8" to="bewr:5t7SqsapuGH" resolve="description" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5t7SqsaptNX" role="3EZMnx">
+        <node concept="l2Vlx" id="5t7SqsaptNY" role="2iSdaV" />
+        <node concept="3F0ifn" id="5t7SqsaptNZ" role="3EZMnx">
+          <property role="3F0ifm" value="Responsabilities:" />
+        </node>
+        <node concept="3EZMnI" id="5t7SqsaqgNq" role="3EZMnx">
+          <node concept="3F2HdR" id="5t7SqsaqgNy" role="3EZMnx">
+            <ref role="1NtTu8" to="bewr:5t7Sqsap4BI" resolve="responsabilities" />
+            <node concept="2iRkQZ" id="5t7SqsaqgN$" role="2czzBx" />
+          </node>
+          <node concept="2iRkQZ" id="5t7SqsaqgNt" role="2iSdaV" />
+        </node>
       </node>
     </node>
   </node>
