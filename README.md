@@ -25,9 +25,9 @@
 3. start MPS
 4. the path variable mbeddr.formal.home in 'Settings->Appearance & Behavior->Path Variables' to point to the directory which contains the cloned 'mbeddr.formal' repository.
 5. FASTEN sources are organized in several MPS projects. To build FASTEN, each of these projects need to be built. Please open and build the projects in the following order:
-  5.1. `code\languages\com.mbeddr.formal.nusmv`
-    5.1.1. after this build is successful, you should be able to open the `code\tutorial` project (contains only SMV-based DSLs)
-  5.2. `code\languages\com.mbeddr.formal.req`
-  5.3. `code\languages\com.mbeddr.formal.spin`
-  5.4. `code\languages\com.mbeddr.formal.safety`
-    5.4.1. after 5.1, 5.2, 5.3 and 5.4 you should be able to open `code\tutorial-safety` project - it contains the DSLs related to safety
+    1. `code\languages\com.mbeddr.formal.nusmv`
+        1. after this build is successful, you should be able to open the `code\tutorial` project (contains only SMV-based DSLs)
+    2. `code\languages\com.mbeddr.formal.req`
+    3. `code\languages\com.mbeddr.formal.spin`
+    4. `code\languages\com.mbeddr.formal.safety`
+        1. after 5.1 - 5.4 you should be able to open `code\tutorial-safety` project - it contains the DSLs related to safety
