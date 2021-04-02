@@ -21,7 +21,13 @@
 
 ## Building (from MPS)
 1. download MPS 2020.2.x
-2. clone the repository https://github.com/danielratiu/mbeddr.formal.mps-plugins and copy the content of "platform_2020_1_2/" in the "plugins" directory of MPS
+2. clone the repository https://github.com/danielratiu/mbeddr.formal.mps-plugins and copy the content of "platform_2020_2_3/" in the "plugins" directory of MPS
 3. start MPS
 4. the path variable mbeddr.formal.home in 'Settings->Appearance & Behavior->Path Variables' to point to the directory which contains the cloned 'mbeddr.formal' repository.
-5. rebuild the project
+5. FASTEN sources are organized in several MPS projects. To build FASTEN, each of these projects need to be built. Please open and build the projects in the following order:
+5.1. `code\languages\com.mbeddr.formal.nusmv`
+5.1.1. after this build is successful, you should be able to open the `code\tutorial` project (contains only SMV-based DSLs)
+5.2. `code\languages\com.mbeddr.formal.req`
+5.3. `code\languages\com.mbeddr.formal.spin`
+5.4. `code\languages\com.mbeddr.formal.safety`
+5.4.1. after 5.2, 5.3 and 5.4 you should be able to open `code\tutorial-safety` project - it contains the DSLs related to safety
