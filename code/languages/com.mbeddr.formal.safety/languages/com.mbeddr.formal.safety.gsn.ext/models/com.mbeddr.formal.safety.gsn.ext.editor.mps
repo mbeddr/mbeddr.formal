@@ -367,7 +367,7 @@
           <node concept="2iRkQZ" id="24PsEXF9yIb" role="2iSdaV" />
           <node concept="3F0ifn" id="2ccN23odQq9" role="3EZMnx">
             <property role="3F0ifm" value="supportedBy" />
-            <ref role="1k5W1q" to="xnej:71GfFl7qVvB" resolve="ConnectionStyle" />
+            <ref role="1k5W1q" to="g35p:71GfFl7qVvB" resolve="GSNConnectionTextStyle" />
           </node>
           <node concept="3EZMnI" id="24PsEXF9yIp" role="3EZMnx">
             <node concept="VPM3Z" id="24PsEXF9yIr" role="3F10Kt" />
@@ -475,7 +475,7 @@
           <node concept="2iRkQZ" id="35$gPpxbZZI" role="2iSdaV" />
           <node concept="3F0ifn" id="35$gPpxbZZJ" role="3EZMnx">
             <property role="3F0ifm" value="inContextOf" />
-            <ref role="1k5W1q" to="xnej:71GfFl7qVvB" resolve="ConnectionStyle" />
+            <ref role="1k5W1q" to="g35p:71GfFl7qVvB" resolve="GSNConnectionTextStyle" />
           </node>
           <node concept="3EZMnI" id="35$gPpxbZZM" role="3EZMnx">
             <node concept="VPM3Z" id="35$gPpxbZZN" role="3F10Kt" />
