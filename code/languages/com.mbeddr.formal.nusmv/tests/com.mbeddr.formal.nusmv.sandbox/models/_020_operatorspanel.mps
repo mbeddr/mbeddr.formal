@@ -192,11 +192,6 @@
         <property id="8896547661043060224" name="yTitle" index="1cIMNQ" />
         <property id="8896547661043060503" name="xTitle" index="1cIMRx" />
         <child id="5406388886944883536" name="provider" index="CZR_s" />
-        <child id="8896547661042497234" name="list" index="1cGXg$" />
-      </concept>
-      <concept id="8896547661042488063" name="com.mbeddr.formal.base.operatorspanel.structure.XYElement" flags="ng" index="1cGZ09">
-        <property id="8896547661042488483" name="y" index="1cGZpl" />
-        <property id="8896547661042488372" name="x" index="1cGZr2" />
       </concept>
       <concept id="306981062898279371" name="com.mbeddr.formal.base.operatorspanel.structure.TankLevelDisplay" flags="ng" index="1M$7TH">
         <property id="5406388886941949082" name="title" index="CN0qm" />
@@ -1167,22 +1162,6 @@
       <property role="1cIBdT" value="800" />
       <property role="1cIBaa" value="300" />
       <property role="1cGmFK" value="Speed History" />
-      <node concept="1cGZ09" id="6EX6UkDPjaR" role="1cGXg$">
-        <property role="1cGZr2" value="12" />
-        <property role="1cGZpl" value="25" />
-      </node>
-      <node concept="1cGZ09" id="6EX6UkDPjaS" role="1cGXg$">
-        <property role="1cGZr2" value="15" />
-        <property role="1cGZpl" value="31" />
-      </node>
-      <node concept="1cGZ09" id="6EX6UkDPjaT" role="1cGXg$">
-        <property role="1cGZr2" value="25" />
-        <property role="1cGZpl" value="14" />
-      </node>
-      <node concept="1cGZ09" id="6EX6UkDPjaU" role="1cGXg$">
-        <property role="1cGZr2" value="31" />
-        <property role="1cGZpl" value="18" />
-      </node>
       <node concept="28kP9e" id="6EX6UkDPjaW" role="28kP63" />
       <node concept="sjWqJ" id="6adXBxxOKAL" role="CZR_s">
         <ref role="sjWCb" node="7HQSJoRVqom" resolve="speed" />
