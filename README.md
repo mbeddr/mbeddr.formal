@@ -13,10 +13,10 @@
 ## Building (from command line)
 
 1. for building FASTEN we have gradle-based scripts (please configure the needed variables in *gradle.properties*)
-  - in *Windows* please note that the paths should use *slash* instead of *back-slash* 
-    - e.g. mpsHomeDir=C:/work/MPS_2020_2_3
-    - e.g. mbeddr.formal.home=C:/work/mbeddr.formal 
-  - in Unix-based systems we have the "unix paths" (nothing changes)
+    1. in *Windows* please note that the paths should use *slash* instead of *back-slash*, e.g.
+        1. mpsHomeDir=C:/work/MPS_2020_2_3
+        2. mbeddr.formal.home=C:/work/mbeddr.formal 
+    2. in Unix-based systems we have the "unix paths" (nothing changes)
 2. for packaging FASTEN distribution, run `gradlew.bat`- this starts the default task `build_fasten_safety_distribution`
 
 ## Building (from MPS)
