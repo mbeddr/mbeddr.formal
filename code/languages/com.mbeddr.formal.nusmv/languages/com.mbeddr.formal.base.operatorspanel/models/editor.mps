@@ -19,24 +19,19 @@
     <import index="mc8f" ref="r:02240f59-d215-4642-b459-56f9f2ccb58d(de.itemis.mps.editor.celllayout.runtime.cells)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="8en7" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.data.xy(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="k6nw" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.chart(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="jxd7" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.chart.plot.dial(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="zhty" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.data.general(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="b4vq" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.ui(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="381b" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.data.time(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="gu6r" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.chart.plot(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="teca" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.chart.renderer.xy(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="hv8x" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.chart.labels(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="7i4z" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.chart.axis(com.mbeddr.mpsutil.jfreechart.runtime/)" />
-    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="bq1s" ref="7fe13e34-8620-4d5d-92c7-df091b0ed628/java:org.jfree.data.category(com.mbeddr.mpsutil.jfreechart.runtime/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="8b9w" ref="r:76e92037-38d8-4be4-999f-3a851f86ac42(com.mbeddr.formal.base.operatorspanel.structure)" />
     <import index="ugkg" ref="r:27d94600-50a7-46c9-b58f-f0c2ab16806b(com.mbeddr.formal.base.operatorspanel.util)" />
+    <import index="k6nw" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.chart(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="bq1s" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.data.category(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="gu6r" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.chart.plot(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="jxd7" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.chart.plot.dial(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="eneu" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.chart.ui(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="zhty" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.data.general(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="8en7" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.data.xy(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="teca" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.chart.renderer.xy(com.mbeddr.formal.base.operatorspanel.rt/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6m3u" ref="r:67761219-191d-44af-aaf0-3da2d685817e(com.mbeddr.formal.base.operatorspanel.behavior)" implicit="true" />
   </imports>
@@ -110,7 +105,7 @@
       <concept id="1179360813171" name="jetbrains.mps.baseLanguage.structure.HexIntegerLiteral" flags="nn" index="2nou5x">
         <property id="1179360856892" name="value" index="2noCCI" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -304,10 +299,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -2978,13 +2973,13 @@
               <ref role="3cqZAo" node="3b7yvkIsdVO" resolve="dialbackground" />
             </node>
             <node concept="liA8E" id="3b7yvkIsh4i" role="2OqNvi">
-              <ref role="37wK5l" to="jxd7:~DialBackground.setGradientPaintTransformer(org.jfree.ui.GradientPaintTransformer)" resolve="setGradientPaintTransformer" />
+              <ref role="37wK5l" to="jxd7:~DialBackground.setGradientPaintTransformer(org.jfree.chart.ui.GradientPaintTransformer)" resolve="setGradientPaintTransformer" />
               <node concept="2ShNRf" id="3b7yvkIsQ_T" role="37wK5m">
                 <node concept="1pGfFk" id="3b7yvkIsQ_X" role="2ShVmc">
-                  <ref role="37wK5l" to="b4vq:~StandardGradientPaintTransformer.&lt;init&gt;(org.jfree.ui.GradientPaintTransformType)" resolve="StandardGradientPaintTransformer" />
+                  <ref role="37wK5l" to="eneu:~StandardGradientPaintTransformer.&lt;init&gt;(org.jfree.chart.ui.GradientPaintTransformType)" resolve="StandardGradientPaintTransformer" />
                   <node concept="10M0yZ" id="3b7yvkIsSBq" role="37wK5m">
-                    <ref role="3cqZAo" to="b4vq:~GradientPaintTransformType.VERTICAL" resolve="VERTICAL" />
-                    <ref role="1PxDUh" to="b4vq:~GradientPaintTransformType" resolve="GradientPaintTransformType" />
+                    <ref role="1PxDUh" to="eneu:~GradientPaintTransformType" resolve="GradientPaintTransformType" />
+                    <ref role="3cqZAo" to="eneu:~GradientPaintTransformType.VERTICAL" resolve="VERTICAL" />
                   </node>
                 </node>
               </node>
@@ -4304,7 +4299,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="chartPanel" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="2djiQ_FIIPw" role="1tU5fm">
+      <node concept="3uibUv" id="4doguZWHOy" role="1tU5fm">
         <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
       </node>
     </node>
@@ -4312,7 +4307,7 @@
       <property role="TrG5h" value="dataset" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="7HQSJoRPV1s" role="1B3o_S" />
-      <node concept="3uibUv" id="7HQSJoRPV1u" role="1tU5fm">
+      <node concept="3uibUv" id="4doguZWIyf" role="1tU5fm">
         <ref role="3uigEE" to="bq1s:~DefaultCategoryDataset" resolve="DefaultCategoryDataset" />
       </node>
     </node>
@@ -4359,12 +4354,12 @@
         <node concept="3cpWs8" id="3b7yvkI_xxh" role="3cqZAp">
           <node concept="3cpWsn" id="3b7yvkI_xxi" role="3cpWs9">
             <property role="TrG5h" value="chart" />
-            <node concept="3uibUv" id="3b7yvkI_xxj" role="1tU5fm">
+            <node concept="3uibUv" id="4doguZWY6c" role="1tU5fm">
               <ref role="3uigEE" to="k6nw:~JFreeChart" resolve="JFreeChart" />
             </node>
             <node concept="2YIFZM" id="7HQSJoROSvb" role="33vP2m">
-              <ref role="1Pybhc" to="k6nw:~ChartFactory" resolve="ChartFactory" />
               <ref role="37wK5l" to="k6nw:~ChartFactory.createBarChart(java.lang.String,java.lang.String,java.lang.String,org.jfree.data.category.CategoryDataset,org.jfree.chart.plot.PlotOrientation,boolean,boolean,boolean)" resolve="createBarChart" />
+              <ref role="1Pybhc" to="k6nw:~ChartFactory" resolve="ChartFactory" />
               <node concept="Xl_RD" id="7HQSJoROSvc" role="37wK5m">
                 <property role="Xl_RC" value="title" />
               </node>
@@ -4377,7 +4372,7 @@
               <node concept="37vLTw" id="7HQSJoROSvg" role="37wK5m">
                 <ref role="3cqZAo" node="7HQSJoRPV1r" resolve="dataset" />
               </node>
-              <node concept="10M0yZ" id="7HQSJoROSvh" role="37wK5m">
+              <node concept="10M0yZ" id="4doguZXmUD" role="37wK5m">
                 <ref role="3cqZAo" to="gu6r:~PlotOrientation.VERTICAL" resolve="VERTICAL" />
                 <ref role="1PxDUh" to="gu6r:~PlotOrientation" resolve="PlotOrientation" />
               </node>
