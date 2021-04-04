@@ -8,7 +8,6 @@
   <imports>
     <import index="8b9w" ref="r:76e92037-38d8-4be4-999f-3a851f86ac42(com.mbeddr.formal.base.operatorspanel.structure)" />
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
@@ -39,7 +38,6 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
-        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -58,30 +56,9 @@
     <property role="34LRSv" value="definition integer value" />
     <property role="3GE5qa" value="value_provider" />
     <ref role="1TJDcQ" node="2bsfjeWbjC9" resolve="DefinitionValueProviderBase" />
-    <node concept="1TJgyj" id="2bsfjeWbxO6" role="1TKVEi">
-      <property role="IQ2ns" value="2511949984575659270" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="adapter" />
-      <ref role="20lvS9" node="2mjHtwTRzoU" resolve="DefinitionIntegerValueAdapter" />
-      <ref role="20ksaX" node="2mjHtwTRBJr" resolve="adapter" />
-    </node>
     <node concept="PrWs8" id="2mjHtwTR7dS" role="PzmwI">
       <ref role="PrY4T" to="8b9w:2mjHtwTQz3J" resolve="IIntegerValueProvider" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2mjHtwTRzoU">
-    <property role="EcuMT" value="2707707741268227642" />
-    <property role="TrG5h" value="DefinitionIntegerValueAdapter" />
-    <property role="34LRSv" value="integer value adapter" />
-    <property role="3GE5qa" value="adapter" />
-    <ref role="1TJDcQ" node="2bsfjeWbjD3" resolve="DefinitionValueAdapterBase" />
-  </node>
-  <node concept="1TIwiD" id="2mjHtwTR$lp">
-    <property role="EcuMT" value="2707707741268231513" />
-    <property role="TrG5h" value="ValueParameter_Node" />
-    <property role="34LRSv" value="currentSimulationValue" />
-    <property role="3GE5qa" value="adapter" />
-    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2bsfjeWbjC4">
     <property role="EcuMT" value="2511949984575601156" />
@@ -89,13 +66,6 @@
     <property role="34LRSv" value="definition string value" />
     <property role="3GE5qa" value="value_provider" />
     <ref role="1TJDcQ" node="2bsfjeWbjC9" resolve="DefinitionValueProviderBase" />
-    <node concept="1TJgyj" id="2bsfjeWbxOe" role="1TKVEi">
-      <property role="IQ2ns" value="2511949984575659278" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="adapter" />
-      <ref role="20ksaX" node="2mjHtwTRBJr" resolve="adapter" />
-      <ref role="20lvS9" node="2bsfjeWbjTw" resolve="DefinitionStringValueAdapter" />
-    </node>
     <node concept="PrWs8" id="2bsfjeWbjC5" role="PzmwI">
       <ref role="PrY4T" to="8b9w:2bsfjeWbeM2" resolve="IStringValueProvider" />
     </node>
@@ -113,34 +83,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="gioj:7mSH3WmQ5bp" resolve="Definition" />
     </node>
-    <node concept="1TJgyj" id="2mjHtwTRBJr" role="1TKVEi">
-      <property role="IQ2ns" value="2707707741268245467" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="adapter" />
-      <ref role="20lvS9" node="2bsfjeWbjD3" resolve="DefinitionValueAdapterBase" />
-    </node>
     <node concept="1TJgyj" id="1l_ZFOWqu5H" role="1TKVEi">
       <property role="IQ2ns" value="1541918536160108909" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="simulationValueConversionLogic" />
       <ref role="20lvS9" node="1l_ZFOWqsdg" resolve="SimulationValueConversionLogic" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2bsfjeWbjD3">
-    <property role="EcuMT" value="2511949984575601219" />
-    <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="DefinitionValueAdapterBase" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
-    <node concept="PrWs8" id="2QUcAU27Yu5" role="PzmwI">
-      <ref role="PrY4T" to="8b9w:2QUcAU27Yu4" resolve="IValueAdapter" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2bsfjeWbjTw">
-    <property role="EcuMT" value="2511949984575602272" />
-    <property role="3GE5qa" value="adapter" />
-    <property role="TrG5h" value="DefinitionStringValueAdapter" />
-    <property role="34LRSv" value="string value adapter" />
-    <ref role="1TJDcQ" node="2bsfjeWbjD3" resolve="DefinitionValueAdapterBase" />
   </node>
   <node concept="1TIwiD" id="1l_ZFOWqsdg">
     <property role="EcuMT" value="1541918536160101200" />

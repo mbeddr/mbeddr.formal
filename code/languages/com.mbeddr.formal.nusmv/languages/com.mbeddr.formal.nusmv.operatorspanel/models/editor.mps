@@ -87,16 +87,6 @@
         </node>
         <node concept="l2Vlx" id="2mjHtwTRejA" role="2iSdaV" />
       </node>
-      <node concept="3EZMnI" id="2mjHtwTRBKa" role="3EZMnx">
-        <node concept="VPM3Z" id="2mjHtwTRBKc" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3XFhqQ" id="2mjHtwTRBL3" role="3EZMnx" />
-        <node concept="3F1sOY" id="2mjHtwTRBLl" role="3EZMnx">
-          <ref role="1NtTu8" to="ula4:2mjHtwTRBJr" resolve="adapter" />
-        </node>
-        <node concept="l2Vlx" id="2mjHtwTRBKf" role="2iSdaV" />
-      </node>
       <node concept="3EZMnI" id="1l_ZFOWqu5M" role="3EZMnx">
         <node concept="VPM3Z" id="1l_ZFOWqu5N" role="3F10Kt">
           <property role="VOm3f" value="false" />
