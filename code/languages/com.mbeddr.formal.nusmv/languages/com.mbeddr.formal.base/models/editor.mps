@@ -110,6 +110,7 @@
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1240253180846" name="jetbrains.mps.lang.editor.structure.IndentLayoutNoWrapClassItem" flags="ln" index="34QqEe" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
@@ -3501,6 +3502,20 @@
         <property role="VOm3f" value="true" />
       </node>
       <node concept="Vb9p2" id="2CEi94dhicz" role="3F10Kt" />
+      <node concept="11L4FC" id="6UJZwEqlSvq" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="14StLt" id="hFDgi_W" role="V601i">
+      <property role="TrG5h" value="Semicolon" />
+      <node concept="VPxyj" id="hZKAF6K" role="3F10Kt" />
+      <node concept="11L4FC" id="hX5Crjo" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="34QqEe" id="3yOl4C1pxqc" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="Vb9p2" id="1l_ZFOWqvCI" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="2CEi94dgUHC" role="V601i">
       <property role="TrG5h" value="NumberStyle" />
