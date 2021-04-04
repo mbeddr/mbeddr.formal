@@ -338,7 +338,7 @@
         <node concept="3clFbF" id="3ZjKZgVUC5S" role="3cqZAp">
           <node concept="2YIFZM" id="3ZjKZgVUCf5" role="3clFbG">
             <ref role="37wK5l" to="n7z1:3ZjKZgVT5Ke" resolve="fixGatesNames" />
-            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="NamingUtils" />
+            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="FaultTreeNamingUtils" />
             <node concept="37vLTw" id="3ZjKZgVUCfR" role="37wK5m">
               <ref role="3cqZAo" node="5g1NREKQ012" resolve="rawFaultTree" />
             </node>
@@ -517,7 +517,7 @@
         <node concept="3clFbF" id="3ZjKZgVUCQH" role="3cqZAp">
           <node concept="2YIFZM" id="3ZjKZgVUCZs" role="3clFbG">
             <ref role="37wK5l" to="n7z1:3ZjKZgVT5Ke" resolve="fixGatesNames" />
-            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="NamingUtils" />
+            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="FaultTreeNamingUtils" />
             <node concept="37vLTw" id="3ZjKZgVUD0j" role="37wK5m">
               <ref role="3cqZAo" node="5g1NREKQ5Pz" resolve="normalizedFaultTree" />
             </node>
