@@ -275,7 +275,7 @@
         <node concept="3clFbF" id="3ZjKZgVUwma" role="3cqZAp">
           <node concept="2YIFZM" id="3ZjKZgVUw_A" role="3clFbG">
             <ref role="37wK5l" to="n7z1:3ZjKZgVT5Ke" resolve="fixGatesNames" />
-            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="NamingUtils" />
+            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="FaultTreeNamingUtils" />
             <node concept="37vLTw" id="3ZjKZgVUwMk" role="37wK5m">
               <ref role="3cqZAo" node="62cfieEL$ob" resolve="ft" />
             </node>
@@ -728,7 +728,7 @@
         <node concept="3clFbF" id="3ZjKZgVU$Ky" role="3cqZAp">
           <node concept="2YIFZM" id="3ZjKZgVU$PC" role="3clFbG">
             <ref role="37wK5l" to="n7z1:3ZjKZgVT5Ke" resolve="fixGatesNames" />
-            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="NamingUtils" />
+            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="FaultTreeNamingUtils" />
             <node concept="37vLTw" id="3ZjKZgVU$Tk" role="37wK5m">
               <ref role="3cqZAo" node="5g1NREKPzI5" resolve="ft" />
             </node>
@@ -1045,7 +1045,7 @@
         <node concept="3clFbF" id="3ZjKZgVT6P2" role="3cqZAp">
           <node concept="2YIFZM" id="3ZjKZgVT79c" role="3clFbG">
             <ref role="37wK5l" to="n7z1:3ZjKZgVT5Ke" resolve="fixGatesNames" />
-            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="NamingUtils" />
+            <ref role="1Pybhc" to="n7z1:3ZjKZgVT3NI" resolve="FaultTreeNamingUtils" />
             <node concept="37vLTw" id="3ZjKZgVT7em" role="37wK5m">
               <ref role="3cqZAo" node="5N87GIKidto" resolve="ft" />
             </node>
