@@ -9154,6 +9154,9 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="7jevvt_h5A_" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.formal.safety.iso26262" />
+                  <node concept="2Ry0Ak" id="5cnt3YR8XZz" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -12462,9 +12465,6 @@
             <node concept="3_I8Xc" id="5cnt3YQuwPZ" role="39821P">
               <ref role="3_I8Xa" to="al5i:pdbBRzg10k" resolve="com.mbeddr.mpsutil.actionsfilter" />
             </node>
-            <node concept="3_I8Xc" id="5cnt3YQuyqC" role="39821P">
-              <ref role="3_I8Xa" to="al5i:pdbBRzdFOb" resolve="lib" />
-            </node>
             <node concept="3_I8Xc" id="5cnt3YQuwTZ" role="39821P">
               <ref role="3_I8Xa" to="al5i:5fGcQI94qmQ" resolve="com.mbeddr.mpsutil.common" />
             </node>
@@ -12504,9 +12504,6 @@
             <node concept="3_I8Xc" id="5cnt3YQuxM0" role="39821P">
               <ref role="3_I8Xa" to="90a9:4be$WTb1O3_" resolve="de.itemis.mps.editor.diagram" />
             </node>
-            <node concept="3ygNvl" id="5cnt3YQEIx$" role="39821P">
-              <ref role="3ygNvj" to="90a9:4be$WTb1Ofr" resolve="lib" />
-            </node>
             <node concept="3_I8Xc" id="5cnt3YQx$NR" role="39821P">
               <ref role="3_I8Xa" to="90a9:6Y0V2RJk5G9" resolve="de-itemis-mps-selection" />
             </node>
@@ -12522,14 +12519,8 @@
             <node concept="3_I8Xc" id="5cnt3YQx_6V" role="39821P">
               <ref role="3_I8Xa" to="90a9:31bAEZ0ssNL" resolve="mps-apache-commons" />
             </node>
-            <node concept="3_I8Xc" id="5cnt3YQx_bL" role="39821P">
-              <ref role="3_I8Xa" to="90a9:31bAEZ0stbU" resolve="lib" />
-            </node>
             <node concept="3_I8Xc" id="5cnt3YQuxUQ" role="39821P">
               <ref role="3_I8Xa" to="90a9:2H_mjOXw4dd" resolve="de.itemis.mps.nativelibs" />
-            </node>
-            <node concept="3_I8Xc" id="5cnt3YQuyvg" role="39821P">
-              <ref role="3_I8Xa" to="90a9:2$Uje8rsx5l" resolve="lib" />
             </node>
             <node concept="3_I8Xc" id="5cnt3YQuxZk" role="39821P">
               <ref role="3_I8Xa" to="90a9:7szUFELHiFQ" resolve="de.itemis.mps.editor.widgets" />
@@ -12546,17 +12537,11 @@
             <node concept="3_I8Xc" id="5cnt3YQ$C4w" role="39821P">
               <ref role="3_I8Xa" to="90a9:2OJNL7Em24Q" resolve="de.60.mps.libs" />
             </node>
-            <node concept="3_I8Xc" id="5cnt3YQ$C9y" role="39821P">
-              <ref role="3_I8Xa" to="90a9:4_SQzDOofaX" resolve="lib" />
-            </node>
             <node concept="3_I8Xc" id="1uZbIJyDDrK" role="39821P">
               <ref role="3_I8Xa" to="90a9:2NTGYE$JTHj" resolve="com.dslfoundry.plaintextgen" />
             </node>
             <node concept="3_I8Xc" id="5cnt3YQBEA9" role="39821P">
               <ref role="3_I8Xa" to="90a9:4p3FRivDLPx" resolve="mps-multiline" />
-            </node>
-            <node concept="3_I8Xc" id="5cnt3YQBEFb" role="39821P">
-              <ref role="3_I8Xa" to="90a9:3gBYXhg3Gtd" resolve="lib" />
             </node>
             <node concept="3_I8Xc" id="5cnt3YQBEKf" role="39821P">
               <ref role="3_I8Xa" to="al5i:6hpTCZQe4Ro" resolve="com.mbeddr.mpsutil.editor.querylist" />
@@ -12579,13 +12564,10 @@
             <node concept="3_I8Xc" id="5cnt3YQuy8m" role="39821P">
               <ref role="3_I8Xa" to="al5i:6ucYLjol8_u" resolve="mbeddr.doc" />
             </node>
-            <node concept="3_I8Xc" id="5cnt3YQuyzU" role="39821P">
-              <ref role="3_I8Xa" to="al5i:4aKYPQyrf7k" resolve="lib" />
-            </node>
             <node concept="3_I8Xc" id="5cnt3YQx$Xl" role="39821P">
               <ref role="3_I8Xa" to="al5i:6ucYLjolhRD" resolve="mbeddr.platform" />
             </node>
-            <node concept="3_I8Xc" id="5cnt3YQEIDi" role="39821P">
+            <node concept="3_I8Xc" id="5cnt3YR2S7G" role="39821P">
               <ref role="3_I8Xa" to="al5i:64SK4bcO$6K" resolve="com.mbeddr.mpsutil.plantuml" />
             </node>
             <node concept="3_I8Xc" id="5cnt3YQEIIu" role="39821P">
@@ -12596,9 +12578,6 @@
             </node>
             <node concept="3_I8Xc" id="5cnt3YQHLkM" role="39821P">
               <ref role="3_I8Xa" to="90a9:6860Y5A0_cI" resolve="de.itemis.mps.utils" />
-            </node>
-            <node concept="3_I8Xc" id="5cnt3YQHLq4" role="39821P">
-              <ref role="3_I8Xa" to="90a9:6860Y5A0_J4" resolve="lib" />
             </node>
             <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">
               <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
@@ -12624,13 +12603,6 @@
             <node concept="3_I8Xc" id="4aeOpjlAb01" role="39821P">
               <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
             </node>
-            <node concept="1X3_iC" id="1uZbIJywz0k" role="lGtFl">
-              <property role="3V$3am" value="children" />
-              <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
-              <node concept="3_I8Xc" id="3EWkVoQlCH2" role="8Wnug">
-                <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
-              </node>
-            </node>
             <node concept="3_I8Xc" id="3EWkVoQlCKQ" role="39821P">
               <ref role="3_I8Xa" to="ffeo:5lGJ4TaqgiR" resolve="mps-modelchecker" />
             </node>
@@ -12646,17 +12618,11 @@
             <node concept="3_I8Xc" id="7he_lUutsoc" role="39821P">
               <ref role="3_I8Xa" node="7he_lUumPyH" resolve="com.mpsbasics" />
             </node>
-            <node concept="3_I8Xc" id="7he_lUutsQV" role="39821P">
-              <ref role="3_I8Xa" node="7he_lUumPNI" resolve="lib" />
-            </node>
             <node concept="3_I8Xc" id="23wuL6uFACr" role="39821P">
               <ref role="3_I8Xa" node="1uyUeTt3MWg" resolve="com.mbeddr.formal.base" />
             </node>
             <node concept="3_I8Xc" id="7he_lUutsDn" role="39821P">
               <ref role="3_I8Xa" node="wUJmWCyrgV" resolve="com.mbeddr.formal.nusmv" />
-            </node>
-            <node concept="3_I8Xc" id="7he_lUutsFX" role="39821P">
-              <ref role="3_I8Xa" node="wUJmWCzUGy" resolve="lib" />
             </node>
             <node concept="3_I8Xc" id="7he_lUuts$h" role="39821P">
               <ref role="3_I8Xa" node="7he_lUumQum" resolve="com.mbeddr.formal.req" />
