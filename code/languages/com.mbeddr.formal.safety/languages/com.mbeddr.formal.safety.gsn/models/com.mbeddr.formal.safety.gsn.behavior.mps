@@ -85,9 +85,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -650,26 +648,6 @@
         <node concept="3Tqbb2" id="4J4sUayhlVd" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="4J4sUayhlVe" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="1qrXfdH0IVU">
-    <property role="3GE5qa" value="away" />
-    <ref role="13h7C2" to="py52:1qrXfdGWKXy" resolve="AwayGoal" />
-    <node concept="13hLZK" id="1qrXfdH0IVV" role="13h7CW">
-      <node concept="3clFbS" id="1qrXfdH0IVW" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="1qrXfdH0IW5" role="13h7CS">
-      <property role="TrG5h" value="isSourceOfSpecialConnections" />
-      <ref role="13i0hy" node="7TjUbLQ7E1K" resolve="isSourceOfSpecialConnections" />
-      <node concept="3Tm1VV" id="1qrXfdH0IW6" role="1B3o_S" />
-      <node concept="3clFbS" id="1qrXfdH0IWb" role="3clF47">
-        <node concept="3clFbF" id="1qrXfdH0J4v" role="3cqZAp">
-          <node concept="3clFbT" id="1qrXfdH0J4u" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="1qrXfdH0IWc" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="79zp7ziemik">

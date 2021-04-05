@@ -29,7 +29,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -280,26 +279,6 @@
     <node concept="t5JxF" id="7bxPmtp5I2w" role="lGtFl">
       <property role="t5JxN" value="Elements which are instantiated via a pattern" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="1qrXfdGWKXy">
-    <property role="EcuMT" value="1629165016566665058" />
-    <property role="TrG5h" value="AwayGoal" />
-    <property role="34LRSv" value="Away Goal" />
-    <property role="R4oN_" value="goal defined in a different module" />
-    <property role="3GE5qa" value="away" />
-    <ref role="1TJDcQ" node="3GRi4m$qNtH" resolve="Goal" />
-    <node concept="1TJgyj" id="1qrXfdGWKXz" role="1TKVEi">
-      <property role="IQ2ns" value="1629165016566665059" />
-      <property role="20kJfa" value="goalDefinition_old" />
-      <ref role="20lvS9" node="3GRi4m$qNtH" resolve="Goal" />
-    </node>
-    <node concept="1TJgyi" id="1qrXfdGWQQ9" role="1TKVEl">
-      <property role="IQ2nx" value="1629165016566689161" />
-      <property role="TrG5h" value="expanded" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="42InK5bcI8J" role="lGtFl" />
-    </node>
-    <node concept="asaX9" id="4q8AAJKPkh$" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7eb_1beKlGf">
     <property role="EcuMT" value="8325911144623594255" />

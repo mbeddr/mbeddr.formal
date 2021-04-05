@@ -476,13 +476,6 @@
     <node concept="PrWs8" id="2djiQ_FCFiH" role="PzmwI">
       <ref role="PrY4T" node="3G$pWQNtNpd" resolve="IColoredShape" />
     </node>
-    <node concept="1TJgyj" id="7HQSJoRLjri" role="1TKVEi">
-      <property role="IQ2ns" value="8896547661042497234" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7HQSJoRLhbZ" resolve="XYElement" />
-    </node>
     <node concept="1TJgyj" id="4G7mwLzY2dg" role="1TKVEi">
       <property role="IQ2ns" value="5406388886944883536" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
