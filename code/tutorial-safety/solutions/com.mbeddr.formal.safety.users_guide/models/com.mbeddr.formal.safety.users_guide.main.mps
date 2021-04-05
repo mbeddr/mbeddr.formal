@@ -62,6 +62,7 @@
         <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
+      <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="988357225295489881" name="com.mbeddr.doc.structure.TableOfContents" flags="ng" index="3xmJbL" />
@@ -440,46 +441,129 @@
           </node>
         </node>
       </node>
-      <node concept="1_0VNX" id="4U3OABz7QoZ" role="1_0VJ0">
-        <property role="TrG5h" value="control_structure" />
-        <property role="1_0VJr" value="STAMP - Control Structure" />
-        <node concept="3z_lpU" id="4U3OABz7Qp0" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7Qp1" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7YyZ" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
+      <node concept="1_0VNX" id="5cnt3YR9L0G" role="1_0VJ0">
+        <property role="TrG5h" value="STPA" />
+        <property role="1_0VJr" value="STPA" />
+        <node concept="1_1sxE" id="5cnt3YR9L2o" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0LV8" id="5cnt3YR9L2Z" role="1_0VJ0">
+          <node concept="19SGf9" id="5cnt3YR9L30" role="1_0LWR">
+            <node concept="19SUe$" id="5cnt3YR9L31" role="19SJt6">
+              <property role="19SUeA" value="FASTEN offers DSLs for performing STPA as described in the following tutorial:&#10;" />
+            </node>
+            <node concept="1hOBRO" id="5cnt3YR9L3J" role="19SJt6">
+              <node concept="19SGf9" id="5cnt3YR9L3K" role="$DsGW">
+                <node concept="19SUe$" id="5cnt3YR9L3L" role="19SJt6">
+                  <property role="19SUeA" value="http://psas.scripts.mit.edu/home/wp-content/uploads/2014/03/Systems-Theoretic-Process-Analysis-STPA-v9-v2-san.pdf" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="5cnt3YR9L3M" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5cnt3YR9L3o" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="1_0VNX" id="4U3OABz7QoZ" role="1_0VJ0">
+          <property role="TrG5h" value="stpa_control_structure" />
+          <property role="1_0VJr" value="Control Structure" />
+          <node concept="1_0LV8" id="5cnt3YR8XZF" role="1_0VJ0">
+            <node concept="19SGf9" id="5cnt3YR8XZG" role="1_0LWR">
+              <node concept="19SUe$" id="5cnt3YR8XZH" role="19SJt6">
+                <property role="19SUeA" value="In the &quot;control structure root&quot; FASTEN allows modeling of control structures. A control structure is made of controllers (boxes), &#10;control commands (black lines) and feedbacks (blue lines). By selecting controllers (the boxes) or control/feedback commands (the lines) &#10;one can specify the corresponding information (name / description) or actions in the " />
+              </node>
+              <node concept="2vpllh" id="5cnt3YR8Yff" role="19SJt6">
+                <node concept="19SGf9" id="5cnt3YR8Yfg" role="$DsGW">
+                  <node concept="19SUe$" id="5cnt3YR8Yfh" role="19SJt6">
+                    <property role="19SUeA" value="Inspector" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="5cnt3YR8Yfi" role="19SJt6">
+                <property role="19SUeA" value=" window. Pressing &quot;Alt+Enter&quot; on the&#10;selected controller, opens the &quot;Intentions&quot; menu which enables moving top-most controllers inside other controllers (and thereby create &#10;hierarchican controllers)." />
+              </node>
+            </node>
+          </node>
+          <node concept="2SaynC" id="5cnt3YR8YeN" role="1_0VJ0">
+            <property role="TrG5h" value="Control_Structure" />
+            <ref role="1wz7Nk" to="xtgl:1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
+            <node concept="2Sb_l4" id="5cnt3YR8Yfa" role="2SbwM5">
+              <property role="2Sb_kV" value="stpa_control_structure_explanations.png" />
+              <ref role="2Sb_kU" node="9TY4XGZias" resolve="img" />
+            </node>
+            <node concept="OjmMv" id="5cnt3YR8YeR" role="2SaI5j">
+              <node concept="19SGf9" id="5cnt3YR8YeS" role="OjmMu">
+                <node concept="19SUe$" id="5cnt3YR8YeT" role="19SJt6">
+                  <property role="19SUeA" value="Editing control structures can be done via Inspector; creating hierarchical controllers&#10;is done via Intentions." />
+                </node>
+              </node>
+            </node>
+            <node concept="2bctqb" id="5cnt3YR8YeV" role="3SHJ_F" />
+          </node>
+          <node concept="3z_lpU" id="4U3OABz7Qp0" role="1_0VJ0">
+            <property role="3z_lpW" value="mbeddr" />
+            <node concept="2NCZwO" id="4U3OABz7Qp1" role="3z_lpI">
+              <node concept="2NCMab" id="4U3OABz7YyZ" role="2NCMaf">
+                <ref role="2NCMaa" to="xtgl:1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
+              </node>
             </node>
           </node>
         </node>
-      </node>
-      <node concept="1_0VNX" id="4U3OABz7Qp3" role="1_0VJ0">
-        <property role="TrG5h" value="unsafe_contorl_analysis" />
-        <property role="1_0VJr" value="Unsafe Control Analysis" />
-        <node concept="1_0LV8" id="4U3OABz7Qp4" role="1_0VJ0">
-          <node concept="19SGf9" id="4U3OABz7Qp5" role="1_0LWR">
-            <node concept="19SUe$" id="4U3OABz7Qp6" role="19SJt6">
-              <property role="19SUeA" value="FASTEN supports unsafe control analysis for a given control structure - when a control structure is selected, it acts like a scoping mechanism and only controllers from it can be subsequently selected. Once a controller is selected on a table row, it acts as a scope for that row and only its corresponding actions can be subsequently selected. The consequences of failures can be described either as plain text or using higher level models." />
+        <node concept="1_0VNX" id="4U3OABz7Qp3" role="1_0VJ0">
+          <property role="TrG5h" value="stpa_unsafe_contorl_analysis" />
+          <property role="1_0VJr" value="Unsafe Control Analysis" />
+          <node concept="1_0LV8" id="4U3OABz7Qp4" role="1_0VJ0">
+            <node concept="19SGf9" id="4U3OABz7Qp5" role="1_0LWR">
+              <node concept="19SUe$" id="4U3OABz7Qp6" role="19SJt6">
+                <property role="19SUeA" value="FASTEN supports unsafe control analysis for a given control structure - when a control structure is selected, it acts like a scoping mechanism and only controllers from it can be subsequently selected. Once a controller is selected on a table row, it acts as a scope for that row and only its corresponding actions can be subsequently selected. The consequences of failures can be described either as plain text or using higher level models." />
+              </node>
             </node>
           </node>
-        </node>
-        <node concept="3z_lpU" id="4U3OABz7Qp7" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7Qp8" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7Yz3" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:1L4MZBxVgKw" resolve="_020_airbag_unsafe_control_analysis" />
+          <node concept="3z_lpU" id="4U3OABz7Qp7" role="1_0VJ0">
+            <property role="3z_lpW" value="mbeddr" />
+            <node concept="2NCZwO" id="4U3OABz7Qp8" role="3z_lpI">
+              <node concept="2NCMab" id="4U3OABz7Yz3" role="2NCMaf">
+                <ref role="2NCMaa" to="xtgl:1L4MZBxVgKw" resolve="_020_airbag_unsafe_control_analysis" />
+              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="1_0VNX" id="4U3OABz7Qpa" role="1_0VJ0">
         <property role="TrG5h" value="hazards_lists" />
-        <property role="1_0VJr" value="Hazards List" />
+        <property role="1_0VJr" value="Losses, Hazards, Hazardous Events" />
         <node concept="1_0LV8" id="4U3OABz7Qpb" role="1_0VJ0">
           <node concept="19SGf9" id="4U3OABz7Qpc" role="1_0LWR">
             <node concept="19SUe$" id="4U3OABz7Qpd" role="19SJt6">
-              <property role="19SUeA" value="Hazards lists can be modeled explicitly. " />
+              <property role="19SUeA" value="Hazards can be modeled explicitly. When operational situations are considered, then we have hazardous events. Each hazard can be explicitly linked to&#10;one or more losses referenced from the list of losses. " />
             </node>
           </node>
+        </node>
+        <node concept="1_1sxE" id="5cnt3YR9KZH" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5cnt3YR9KY$" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="5cnt3YR9KY_" role="3z_lpI">
+            <node concept="2NCMab" id="5cnt3YR9KYL" role="2NCMaf">
+              <ref role="2NCMaa" to="xtgl:7Jm8RM1zooG" resolve="_100_losses" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5cnt3YR9KZu" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpU" id="5cnt3YR9KYN" role="1_0VJ0">
+          <property role="3z_lpW" value="mbeddr" />
+          <node concept="2NCZwO" id="5cnt3YR9KYO" role="3z_lpI">
+            <node concept="2NCMab" id="5cnt3YR9KZ2" role="2NCMaf">
+              <ref role="2NCMaa" to="xtgl:1LvcKAYEWJH" resolve="_110_operational_situations" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_1sxE" id="5cnt3YR9KZg" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
         </node>
         <node concept="3z_lpU" id="4U3OABz7Qpe" role="1_0VJ0">
           <property role="3z_lpW" value="mbeddr" />

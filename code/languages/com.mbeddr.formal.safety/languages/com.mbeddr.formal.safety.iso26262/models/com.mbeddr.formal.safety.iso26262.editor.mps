@@ -12,6 +12,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="1w8j" ref="r:0631ef51-dd11-46fa-a4db-001e68da09c6(com.mbeddr.formal.safety.iso26262.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="nyh8" ref="r:2a0d2dca-7d49-4884-9cfe-36ffc9e4d6fd(com.mbeddr.formal.safety.iso26262.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -31,7 +32,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -42,9 +42,6 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
-      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
-        <property id="1186414551515" name="flag" index="VOm3f" />
-      </concept>
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -52,6 +49,9 @@
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
         <property id="1139746504291" name="imageFile" index="1ubRXE" />
         <property id="1139858284555" name="descent" index="1$Qi42" />
+      </concept>
+      <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
+        <reference id="1227861587090" name="link" index="3ygfmf" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -243,12 +243,30 @@
           <node concept="1iCGBv" id="55oVyA0lstM" role="2reSmM">
             <ref role="1NtTu8" to="1w8j:55oVyA0lsaC" resolve="operationalSituationDeclaration" />
             <node concept="1sVBvm" id="55oVyA0lstO" role="1sWHZn">
-              <node concept="3F1sOY" id="55oVyA0lsu2" role="2wV5jI">
-                <ref role="1NtTu8" to="1w8j:55oVyA0ls9C" resolve="description" />
-                <node concept="xShMh" id="55oVyA0lsu6" role="3F10Kt">
-                  <property role="VOm3f" value="true" />
+              <node concept="1HlG4h" id="5cnt3YR9BQq" role="2wV5jI">
+                <node concept="1HfYo3" id="5cnt3YR9BQz" role="1HlULh">
+                  <node concept="3TQlhw" id="5cnt3YR9BQG" role="1Hhtcw">
+                    <node concept="3clFbS" id="5cnt3YR9BQP" role="2VODD2">
+                      <node concept="3clFbF" id="5cnt3YR9BVB" role="3cqZAp">
+                        <node concept="2OqwBi" id="5cnt3YR9CCD" role="3clFbG">
+                          <node concept="2OqwBi" id="5cnt3YR9C8D" role="2Oq$k0">
+                            <node concept="pncrf" id="5cnt3YR9BVA" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5cnt3YR9Cse" role="2OqNvi">
+                              <ref role="3Tt5mk" to="1w8j:55oVyA0ls9C" resolve="description" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="5cnt3YR9CRm" role="2OqNvi">
+                            <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
+            </node>
+            <node concept="3yfXC2" id="5cnt3YR9n6c" role="3F10Kt">
+              <ref role="3ygfmf" to="1w8j:55oVyA0lsaC" resolve="operationalSituationDeclaration" />
             </node>
           </node>
           <node concept="2rfbtV" id="55oVyA0m$Ij" role="2recC9">
