@@ -1419,7 +1419,7 @@
       <node concept="37mRIm" id="3CXv$u4Gxz4" role="37mRID">
         <property role="37mO49" value="4312077340876080861" />
         <node concept="gqqVs" id="3CXv$u4Gxz3" role="37mO4d">
-          <property role="gqqTZ" value="1003.5" />
+          <property role="gqqTZ" value="988.0" />
           <property role="gqqTW" value="301.0004967285156" />
           <property role="gqqTX" value="184.0" />
           <property role="gqqTy" value="55.0" />

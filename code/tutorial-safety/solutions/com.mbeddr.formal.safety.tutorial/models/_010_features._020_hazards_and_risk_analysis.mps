@@ -37,6 +37,8 @@
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
       <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU">
         <child id="1941765291767695615" name="startingConnections" index="2I3o71" />
+        <child id="6289243512196426541" name="description" index="1t8wEa" />
+        <child id="6289243512196319726" name="responsabilities" index="1t8Ux9" />
       </concept>
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
         <reference id="4185693763139125834" name="target" index="SrP07" />
@@ -163,6 +165,16 @@
         </node>
         <node concept="Sqzvu" id="1L4MZBxVgH3" role="Sq$B$">
           <property role="TrG5h" value="Deploy Airbag" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="5t7SqsaqGtW" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGtX" role="19SJt6">
+          <property role="19SUeA" value="Inflation module, deciding when the airbag shall be inflated" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="5t7SqsaqGuF" role="1t8Ux9">
+        <node concept="19SUe$" id="5t7SqsaqGuG" role="19SJt6">
+          <property role="19SUeA" value="R1: Inflates airbag when needed" />
         </node>
       </node>
     </node>
@@ -330,6 +342,16 @@
           <property role="TrG5h" value="Activate" />
         </node>
       </node>
+      <node concept="19SGf9" id="5t7SqsaqGtm" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGtn" role="19SJt6">
+          <property role="19SUeA" value="The human driver who controls the vehicle" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="5t7SqsaqGtr" role="1t8Ux9">
+        <node concept="19SUe$" id="5t7SqsaqGts" role="19SJt6">
+          <property role="19SUeA" value="R1: Activate the airbag system&#10;R2: Deactivate the airbag system" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="1L4MZBxVgCY" role="1X_0GB">
       <property role="TrG5h" value="Sensors" />
@@ -343,6 +365,16 @@
           <property role="TrG5h" value="Sensors Health" />
         </node>
       </node>
+      <node concept="19SGf9" id="5t7SqsaqGt_" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGtA" role="19SJt6">
+          <property role="19SUeA" value="The impact sensor" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="5t7SqsaqGuA" role="1t8Ux9">
+        <node concept="19SUe$" id="5t7SqsaqGuB" role="19SJt6">
+          <property role="19SUeA" value="R1: Detect a vehicle crash&#10;R2: Self-monitoring" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="1L4MZBxVgDi" role="1X_0GB">
       <property role="TrG5h" value="Airbag" />
@@ -354,6 +386,11 @@
         </node>
         <node concept="Sqzvu" id="1L4MZBxVgH8" role="Sq$B$">
           <property role="TrG5h" value="Airbag Deployed" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="5t7SqsaqGtw" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGtx" role="19SJt6">
+          <property role="19SUeA" value="A flexible fabric bag" />
         </node>
       </node>
     </node>

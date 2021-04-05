@@ -84,6 +84,7 @@
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
       <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU">
         <child id="1941765291767695615" name="startingConnections" index="2I3o71" />
+        <child id="6289243512196426541" name="description" index="1t8wEa" />
       </concept>
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
         <reference id="4185693763139125834" name="target" index="SrP07" />
@@ -5246,6 +5247,11 @@
           <property role="TrG5h" value="Display Connection Status" />
         </node>
       </node>
+      <node concept="19SGf9" id="5t7SqsaqGue" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGuf" role="19SJt6">
+          <property role="19SUeA" value="The safety control box, deciding when the charging shall be interrupted in order to prevent hazardous events" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="6yFQEkQU9pN" role="lGtFl">
       <node concept="37mRIm" id="6yFQEkQU9pO" role="37mRID">
@@ -5304,7 +5310,7 @@
           <property role="gqqTZ" value="469.0" />
           <property role="gqqTW" value="129.0" />
           <property role="gqqTX" value="174.0" />
-          <property role="gqqTy" value="30.0" />
+          <property role="gqqTy" value="32.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -5314,7 +5320,7 @@
           <property role="gqqTZ" value="269.0" />
           <property role="gqqTW" value="129.0" />
           <property role="gqqTX" value="170.0" />
-          <property role="gqqTy" value="30.0" />
+          <property role="gqqTy" value="32.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -6222,7 +6228,7 @@
           <property role="gqqTZ" value="120.0" />
           <property role="gqqTW" value="129.0" />
           <property role="gqqTX" value="112.0" />
-          <property role="gqqTy" value="30.0" />
+          <property role="gqqTy" value="32.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -6736,7 +6742,7 @@
           <property role="gqqTZ" value="293.5" />
           <property role="gqqTW" value="506.0" />
           <property role="gqqTX" value="268.0" />
-          <property role="gqqTy" value="30.0" />
+          <property role="gqqTy" value="32.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -6858,6 +6864,11 @@
           <property role="TrG5h" value="PE" />
         </node>
       </node>
+      <node concept="19SGf9" id="5t7SqsaqGup" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGuq" role="19SJt6">
+          <property role="19SUeA" value="Sensors for the electricity, and the status of the charging cable" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="6yFQEkQU9rY" role="1X_0GB">
       <property role="TrG5h" value="EV" />
@@ -6866,6 +6877,11 @@
         <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
         <node concept="Sqzvu" id="7BYuSCF$fRp" role="Sq$B$">
           <property role="TrG5h" value="GetCurrent" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="5t7SqsaqGu4" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGu5" role="19SJt6">
+          <property role="19SUeA" value="The electrical vehicle" />
         </node>
       </node>
     </node>
@@ -6884,6 +6900,11 @@
           <property role="TrG5h" value="PE" />
         </node>
       </node>
+      <node concept="19SGf9" id="5t7SqsaqGu9" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGua" role="19SJt6">
+          <property role="19SUeA" value="The socket from which the EV is charged" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="6yFQEkQU9_D" role="1X_0GB">
       <property role="TrG5h" value="Cable Temperature Sensors" />
@@ -6895,6 +6916,11 @@
         </node>
         <node concept="Sqzvu" id="3TSGpjyFlMn" role="Sq$B$">
           <property role="TrG5h" value="EV-end temperature" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="5t7SqsaqGuu" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGuv" role="19SJt6">
+          <property role="19SUeA" value="Sensors for the cable temperature" />
         </node>
       </node>
     </node>
@@ -6910,9 +6936,19 @@
           <property role="TrG5h" value="Connect to EV" />
         </node>
       </node>
+      <node concept="19SGf9" id="5t7SqsaqGtP" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGtQ" role="19SJt6">
+          <property role="19SUeA" value="The human driver who controls the vehicle" />
+        </node>
+      </node>
     </node>
     <node concept="1XyJaU" id="7BYuSCF$hCm" role="1X_0GB">
       <property role="TrG5h" value="LEDs" />
+      <node concept="19SGf9" id="5t7SqsaqGuk" role="1t8wEa">
+        <node concept="19SUe$" id="5t7SqsaqGul" role="19SJt6">
+          <property role="19SUeA" value="LEDs providing visual feedback regarding the charging status" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1E0nO6" id="6yFQEkQUeRG">
@@ -7682,8 +7718,8 @@
       <node concept="37mRIm" id="1XXvHs0batb" role="37mRID">
         <property role="37mO49" value="2269109249150592348" />
         <node concept="gqqVs" id="1XXvHs0bata" role="37mO4d">
-          <property role="gqqTZ" value="642.0" />
-          <property role="gqqTW" value="185.0" />
+          <property role="gqqTZ" value="648.0" />
+          <property role="gqqTW" value="187.0" />
           <property role="gqqTX" value="909.0" />
           <property role="gqqTy" value="504.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -8674,28 +8710,28 @@
           <node concept="37mRIm" id="1XXvHs0banP" role="37mRID">
             <property role="37mO49" value="2269109249150592350" />
             <node concept="gqqVs" id="1XXvHs0banQ" role="37mO4d">
-              <property role="gqqTZ" value="541.0" />
-              <property role="gqqTW" value="157.99999999999994" />
+              <property role="gqqTZ" value="545.0" />
+              <property role="gqqTW" value="169.86501559608962" />
               <property role="gqqTX" value="280.0" />
-              <property role="gqqTy" value="76.0" />
+              <property role="gqqTy" value="55.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
           <node concept="37mRIm" id="1XXvHs0banR" role="37mRID">
             <property role="37mO49" value="2269109249150592355" />
             <node concept="gqqVs" id="1XXvHs0banS" role="37mO4d">
-              <property role="gqqTZ" value="256.95840141948696" />
-              <property role="gqqTW" value="316.6256127753827" />
-              <property role="gqqTX" value="194.0" />
-              <property role="gqqTy" value="59.0" />
+              <property role="gqqTZ" value="259.0" />
+              <property role="gqqTW" value="319.0" />
+              <property role="gqqTX" value="235.0" />
+              <property role="gqqTy" value="121.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
           <node concept="37mRIm" id="1XXvHs0banT" role="37mRID">
             <property role="37mO49" value="2269109249150592358" />
             <node concept="gqqVs" id="1XXvHs0banU" role="37mO4d">
-              <property role="gqqTZ" value="26.95840141948697" />
-              <property role="gqqTW" value="315.6256127753827" />
+              <property role="gqqTZ" value="27.95840141948697" />
+              <property role="gqqTW" value="298.6256127753827" />
               <property role="gqqTX" value="142.0" />
               <property role="gqqTy" value="59.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -8728,8 +8764,8 @@
                 <property role="3ul5GH" value="label" />
                 <node concept="3wpmZ1" id="1XXvHs0bao2" role="3ul5Gz">
                   <node concept="2VclrF" id="1XXvHs0bao3" role="3wpmZR">
-                    <property role="2Vclpx" value="153.70840141948696" />
-                    <property role="2Vclpz" value="268.1256127753827" />
+                    <property role="2Vclpx" value="152.70840141948696" />
+                    <property role="2Vclpz" value="247.1256127753827" />
                   </node>
                   <node concept="2VclrF" id="1XXvHs0bao4" role="3wpmZP">
                     <property role="2Vclpx" value="0.0" />
@@ -8738,12 +8774,12 @@
                 </node>
               </node>
               <node concept="2VclrF" id="1XXvHs0bao5" role="2Vcluh">
-                <property role="2Vclpx" value="229.39572094927294" />
-                <property role="2Vclpz" value="285.7246528498523" />
+                <property role="2Vclpx" value="228.0" />
+                <property role="2Vclpz" value="274.0" />
               </node>
               <node concept="2VclrF" id="1XXvHs0bao6" role="2Vcluh">
-                <property role="2Vclpx" value="138.93404545646086" />
-                <property role="2Vclpz" value="285.7246528498523" />
+                <property role="2Vclpx" value="139.0" />
+                <property role="2Vclpz" value="274.0" />
               </node>
             </node>
           </node>
