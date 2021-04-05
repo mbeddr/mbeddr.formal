@@ -166,49 +166,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="5Ac1Q93J$Px">
-    <ref role="1M2myG" to="wvti:5Ac1Q93Jxtk" resolve="AwayGoalWord" />
-    <node concept="1N5Pfh" id="5Ac1Q93J$Py" role="1Mr941">
-      <ref role="1N5Vy1" to="wvti:5Ac1Q93Jxtn" resolve="awayGoal" />
-      <node concept="3dgokm" id="5Ac1Q93J$S5" role="1N6uqs">
-        <node concept="3clFbS" id="5Ac1Q93J$S6" role="2VODD2">
-          <node concept="3clFbF" id="5Ac1Q93J$Vj" role="3cqZAp">
-            <node concept="2YIFZM" id="5Ac1Q93J$Vl" role="3clFbG">
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <node concept="2OqwBi" id="5Ac1Q93J$Vm" role="37wK5m">
-                <node concept="2OqwBi" id="5Ac1Q93J$Vn" role="2Oq$k0">
-                  <node concept="2OqwBi" id="5Ac1Q93J$Vo" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5Ac1Q93J$Vp" role="2Oq$k0">
-                      <node concept="2rP1CM" id="5Ac1Q93J$Vq" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="5Ac1Q93J$Vr" role="2OqNvi">
-                        <node concept="1xMEDy" id="5Ac1Q93J$Vs" role="1xVPHs">
-                          <node concept="chp4Y" id="5Ac1Q93J$Vt" role="ri$Ld">
-                            <ref role="cht4Q" to="wvti:5Ac1Q93INpM" resolve="DocumentGSN" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3TrEf2" id="5Ac1Q93J$Vu" role="2OqNvi">
-                      <ref role="3Tt5mk" to="wvti:5Ac1Q93INpN" resolve="goalStructure" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="5Ac1Q93J$Vv" role="2OqNvi">
-                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                  </node>
-                </node>
-                <node concept="v3k3i" id="5Ac1Q93J$Vw" role="2OqNvi">
-                  <node concept="chp4Y" id="5Ac1Q93J_qh" role="v3oSu">
-                    <ref role="cht4Q" to="py52:1qrXfdGWKXy" resolve="AwayGoal" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="5Ac1Q93J_xM">
     <ref role="1M2myG" to="wvti:5Ac1Q93Jxr5" resolve="AssumptionWord" />
     <node concept="1N5Pfh" id="5Ac1Q93J_xN" role="1Mr941">

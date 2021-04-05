@@ -462,39 +462,6 @@
       <node concept="2iRfu4" id="5Ac1Q93JxrK" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="5Ac1Q93JxtN">
-    <ref role="1XX52x" to="wvti:5Ac1Q93Jxtk" resolve="AwayGoalWord" />
-    <node concept="3EZMnI" id="5Ac1Q93JxtP" role="2wV5jI">
-      <node concept="3F0ifn" id="5Ac1Q93JxtQ" role="3EZMnx">
-        <property role="3F0ifm" value="@awaygoal" />
-      </node>
-      <node concept="3F0ifn" id="5Ac1Q93JxtR" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <node concept="11L4FC" id="5Ac1Q93JxtS" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="5Ac1Q93JxtT" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="5Ac1Q93Jxuy" role="3EZMnx">
-        <ref role="1NtTu8" to="wvti:5Ac1Q93Jxtn" resolve="awayGoal" />
-        <node concept="1sVBvm" id="5Ac1Q93Jxu$" role="1sWHZn">
-          <node concept="3F0A7n" id="5Ac1Q93JxuO" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="5Ac1Q93JxtX" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="11L4FC" id="5Ac1Q93JxtY" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="5Ac1Q93JxtZ" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5Ac1Q93JxvK">
     <property role="3GE5qa" value="connections" />
     <ref role="1XX52x" to="wvti:5Ac1Q93JxuR" resolve="InContextOfConnectionWord" />

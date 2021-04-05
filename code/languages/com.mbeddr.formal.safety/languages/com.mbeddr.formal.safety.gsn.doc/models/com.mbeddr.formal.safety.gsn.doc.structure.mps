@@ -148,21 +148,6 @@
       <ref role="20lvS9" to="py52:7eb_1beKlGf" resolve="Assumption" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5Ac1Q93Jxtk">
-    <property role="EcuMT" value="6452540484739798868" />
-    <property role="TrG5h" value="AwayGoalWord" />
-    <property role="34LRSv" value="@awayGoal" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5Ac1Q93Jxtl" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="5Ac1Q93Jxtn" role="1TKVEi">
-      <property role="IQ2ns" value="6452540484739798871" />
-      <property role="20kJfa" value="awayGoal" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="py52:1qrXfdGWKXy" resolve="AwayGoal" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5Ac1Q93JxuR">
     <property role="EcuMT" value="6452540484739798967" />
     <property role="TrG5h" value="InContextOfConnectionWord" />

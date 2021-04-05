@@ -68,9 +68,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -139,24 +136,6 @@
     <node concept="1YaCAy" id="4q8AAJKKYRI" role="1YuTPh">
       <property role="TrG5h" value="goal" />
       <ref role="1YaFvo" to="py52:3GRi4m$qNtH" resolve="Goal" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="4q8AAJKPBe4">
-    <property role="TrG5h" value="check_AwayGoal" />
-    <property role="3GE5qa" value="away" />
-    <node concept="3clFbS" id="4q8AAJKPBe5" role="18ibNy">
-      <node concept="2MkqsV" id="4q8AAJKPBeI" role="3cqZAp">
-        <node concept="Xl_RD" id="4q8AAJKPBf1" role="2MkJ7o">
-          <property role="Xl_RC" value="AwayGoal concept was deprecated. Please replace the node with a Goal node and set in inspector the attribute 'away' to true" />
-        </node>
-        <node concept="1YBJjd" id="4q8AAJKPBm5" role="1urrMF">
-          <ref role="1YBMHb" node="4q8AAJKPBe7" resolve="awayGoal" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="4q8AAJKPBe7" role="1YuTPh">
-      <property role="TrG5h" value="awayGoal" />
-      <ref role="1YaFvo" to="py52:1qrXfdGWKXy" resolve="AwayGoal" />
     </node>
   </node>
 </model>
