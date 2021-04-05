@@ -284,10 +284,17 @@
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
         <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
       </concept>
+      <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
+        <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
+      </concept>
+      <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <child id="5861696777036874344" name="description" index="3h3iL1" />
+      </concept>
       <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
         <property id="5861696777036826305" name="exposure" index="3h3uzC" />
         <property id="5861696777036826304" name="severity" index="3h3uzD" />
         <property id="5861696777036826306" name="controlability" index="3h3uzF" />
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
     <language id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv">
@@ -4480,11 +4487,11 @@
           </node>
           <node concept="2VclrF" id="55oVyA0rnLm" role="2Vcluh">
             <property role="2Vclpx" value="302.9355777067832" />
-            <property role="2Vclpz" value="227.0" />
+            <property role="2Vclpz" value="243.9861137892618" />
           </node>
           <node concept="2VclrF" id="55oVyA0rnMt" role="2Vcluh">
             <property role="2Vclpx" value="497.0" />
-            <property role="2Vclpz" value="227.0" />
+            <property role="2Vclpz" value="243.9861137892618" />
           </node>
         </node>
       </node>
@@ -4655,6 +4662,7 @@
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="5t7SqsaqFRU" resolve="OS1" />
       </node>
     </node>
     <node concept="1a6Z8w" id="5P9zxa4g3I2" role="8gIbH">
@@ -4664,6 +4672,7 @@
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="5t7SqsaqFS0" resolve="OS2" />
       </node>
     </node>
     <node concept="1a6Z8w" id="5P9zxa4g3Iq" role="8gIbH">
@@ -4673,6 +4682,7 @@
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="5t7SqsaqFS0" resolve="OS2" />
       </node>
     </node>
     <node concept="1a6Z8w" id="5P9zxa4g3IF" role="8gIbH">
@@ -4682,6 +4692,7 @@
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="5t7SqsaqFS0" resolve="OS2" />
       </node>
     </node>
   </node>
@@ -8837,6 +8848,25 @@
       </node>
       <node concept="eml1q" id="1wencriDZta" role="eml13">
         <ref role="eml1l" node="1wencriDZsl" resolve="link_impl" />
+      </node>
+    </node>
+  </node>
+  <node concept="3h3iLa" id="5t7SqsaqFRT">
+    <property role="TrG5h" value="_021_airbag_operational_situations" />
+    <node concept="3h3iLe" id="5t7SqsaqFRU" role="3h3F1H">
+      <property role="TrG5h" value="OS1" />
+      <node concept="19SGf9" id="5t7SqsaqFRV" role="3h3iL1">
+        <node concept="19SUe$" id="5t7SqsaqFRW" role="19SJt6">
+          <property role="19SUeA" value="when no crash occured" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="5t7SqsaqFS0" role="3h3F1H">
+      <property role="TrG5h" value="OS2" />
+      <node concept="19SGf9" id="5t7SqsaqFS1" role="3h3iL1">
+        <node concept="19SUe$" id="5t7SqsaqFS2" role="19SJt6">
+          <property role="19SUeA" value="when a crash occured" />
+        </node>
       </node>
     </node>
   </node>
