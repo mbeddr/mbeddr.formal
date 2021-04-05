@@ -174,7 +174,7 @@
       </node>
       <node concept="19SGf9" id="5t7SqsaqGuF" role="1t8Ux9">
         <node concept="19SUe$" id="5t7SqsaqGuG" role="19SJt6">
-          <property role="19SUeA" value="R1: Inflates airbag when needed" />
+          <property role="19SUeA" value="R1: Inflates airbag when a crash occurs" />
         </node>
       </node>
     </node>
@@ -372,7 +372,7 @@
       </node>
       <node concept="19SGf9" id="5t7SqsaqGuA" role="1t8Ux9">
         <node concept="19SUe$" id="5t7SqsaqGuB" role="19SJt6">
-          <property role="19SUeA" value="R1: Detect a vehicle crash&#10;R2: Self-monitoring" />
+          <property role="19SUeA" value="R1: Send a message to the Airbag Controller when it detects a vehicle crash&#10;R2: Send a message to the Airbag Controller when it detects a sensor fault" />
         </node>
       </node>
     </node>
