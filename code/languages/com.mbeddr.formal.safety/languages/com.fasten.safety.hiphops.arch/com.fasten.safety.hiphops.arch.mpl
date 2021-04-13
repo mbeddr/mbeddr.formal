@@ -48,7 +48,6 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)" version="0" />
-        <module reference="1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)" version="0" />
         <module reference="c6d7e8a3-3d80-479a-8799-a11fe1902b1c(com.fasten.safety.hiphops)" version="0" />
         <module reference="521724dc-29ef-4d5a-9c15-25f6b680b809(com.fasten.safety.hiphops.arch)" version="0" />
         <module reference="ef206d24-9fa0-4664-a971-0a40e8ed3cd8(com.fasten.safety.hiphops.arch#01)" version="0" />
@@ -66,9 +65,8 @@
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)</dependency>
     <dependency reexport="false">b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)</dependency>
-    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)</dependency>
+    <dependency reexport="false">1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="1" />
@@ -127,16 +125,13 @@
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)" version="0" />
     <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
-    <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
-    <extendedLanguage>1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)</extendedLanguage>
     <extendedLanguage>c6d7e8a3-3d80-479a-8799-a11fe1902b1c(com.fasten.safety.hiphops)</extendedLanguage>
-    <extendedLanguage>b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)</extendedLanguage>
     <extendedLanguage>b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)</extendedLanguage>
   </extendedLanguages>
 </language>
