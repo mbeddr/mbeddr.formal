@@ -12,6 +12,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="e57v" ref="r:93b2e8e3-0386-4499-a54c-f963e83483f2(com.fasten.req.ontology.util)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -90,7 +91,9 @@
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -98,6 +101,11 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
     </language>
   </registry>
@@ -171,6 +179,31 @@
       <node concept="3uibUv" id="1h8BwgBGhyT" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="FfrXQL7oY1">
+    <property role="3GE5qa" value="" />
+    <ref role="13h7C2" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+    <node concept="13i0hz" id="FfrXQL7pWD" role="13h7CS">
+      <property role="TrG5h" value="getDirectSubconcepts" />
+      <node concept="3Tm1VV" id="FfrXQL7pWE" role="1B3o_S" />
+      <node concept="A3Dl8" id="FfrXQL7pWT" role="3clF45">
+        <node concept="3Tqbb2" id="FfrXQL7pX6" role="A3Ik2">
+          <ref role="ehGHo" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="FfrXQL7pWG" role="3clF47">
+        <node concept="3clFbF" id="FfrXQL7pYq" role="3cqZAp">
+          <node concept="2YIFZM" id="FfrXQL7pZd" role="3clFbG">
+            <ref role="37wK5l" to="e57v:1wKSXwEAQTm" resolve="getChildren" />
+            <ref role="1Pybhc" to="e57v:3RNDPbM0uOJ" resolve="OntologyNavigationUtils" />
+            <node concept="13iPFW" id="FfrXQL7pZL" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="FfrXQL7oY2" role="13h7CW">
+      <node concept="3clFbS" id="FfrXQL7oY3" role="2VODD2" />
     </node>
   </node>
 </model>
