@@ -330,7 +330,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
     </language>
   </registry>
   <node concept="24kQdi" id="2mjHtwTP_Wv">
@@ -4548,7 +4547,7 @@
         <node concept="3cpWs8" id="2djiQ_FCl9r" role="3cqZAp">
           <node concept="3cpWsn" id="2djiQ_FCl9q" role="3cpWs9">
             <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="chart" />
+            <property role="TrG5h" value="jfreeChart" />
             <node concept="3uibUv" id="2djiQ_FCl9s" role="1tU5fm">
               <ref role="3uigEE" to="k6nw:~JFreeChart" resolve="JFreeChart" />
             </node>
@@ -4593,7 +4592,7 @@
             <node concept="10QFUN" id="2djiQ_FCl9D" role="33vP2m">
               <node concept="2OqwBi" id="2djiQ_FCmRq" role="10QFUP">
                 <node concept="37vLTw" id="2djiQ_FCmRp" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2djiQ_FCl9q" resolve="chart" />
+                  <ref role="3cqZAo" node="2djiQ_FCl9q" resolve="jfreeChart" />
                 </node>
                 <node concept="liA8E" id="2djiQ_FCmRr" role="2OqNvi">
                   <ref role="37wK5l" to="k6nw:~JFreeChart.getPlot()" resolve="getPlot" />
@@ -4630,18 +4629,19 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="2djiQ_FCla4" role="3cqZAp">
-          <node concept="3cpWsn" id="2djiQ_FCla3" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="chartPanel" />
-            <node concept="3uibUv" id="2djiQ_FCla5" role="1tU5fm">
-              <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
+        <node concept="3clFbF" id="2UWCzdQmGK8" role="3cqZAp">
+          <node concept="37vLTI" id="2UWCzdQmIeC" role="3clFbG">
+            <node concept="2OqwBi" id="2UWCzdQmGKa" role="37vLTJ">
+              <node concept="Xjq3P" id="2UWCzdQmGKb" role="2Oq$k0" />
+              <node concept="2OwXpG" id="2UWCzdQmGKc" role="2OqNvi">
+                <ref role="2Oxat5" node="2djiQ_FD2oe" resolve="chart" />
+              </node>
             </node>
-            <node concept="2ShNRf" id="2djiQ_FClZR" role="33vP2m">
-              <node concept="1pGfFk" id="2djiQ_FCm0h" role="2ShVmc">
+            <node concept="2ShNRf" id="2UWCzdQmK0t" role="37vLTx">
+              <node concept="1pGfFk" id="2UWCzdQmK0u" role="2ShVmc">
                 <ref role="37wK5l" to="k6nw:~ChartPanel.&lt;init&gt;(org.jfree.chart.JFreeChart)" resolve="ChartPanel" />
-                <node concept="37vLTw" id="2djiQ_FCm0i" role="37wK5m">
-                  <ref role="3cqZAo" node="2djiQ_FCl9q" resolve="chart" />
+                <node concept="37vLTw" id="2UWCzdQmK0v" role="37wK5m">
+                  <ref role="3cqZAo" node="2djiQ_FCl9q" resolve="jfreeChart" />
                 </node>
               </node>
             </node>
@@ -4649,9 +4649,6 @@
         </node>
         <node concept="3clFbF" id="2djiQ_FCla8" role="3cqZAp">
           <node concept="2OqwBi" id="2djiQ_FCo2p" role="3clFbG">
-            <node concept="37vLTw" id="2djiQ_FCo2o" role="2Oq$k0">
-              <ref role="3cqZAo" node="2djiQ_FCla3" resolve="chartPanel" />
-            </node>
             <node concept="liA8E" id="2djiQ_FCo2q" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
               <node concept="2ShNRf" id="2djiQ_FCo2r" role="37wK5m">
@@ -4666,16 +4663,9 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2djiQ_FD69s" role="3cqZAp">
-          <node concept="37vLTI" id="2djiQ_FD8Fd" role="3clFbG">
-            <node concept="37vLTw" id="2djiQ_FD9r0" role="37vLTx">
-              <ref role="3cqZAo" node="2djiQ_FCla3" resolve="chartPanel" />
-            </node>
-            <node concept="2OqwBi" id="2djiQ_FD6kx" role="37vLTJ">
-              <node concept="Xjq3P" id="2djiQ_FD69q" role="2Oq$k0" />
-              <node concept="2OwXpG" id="2djiQ_FD6zG" role="2OqNvi">
+            <node concept="2OqwBi" id="2UWCzdQmKSy" role="2Oq$k0">
+              <node concept="Xjq3P" id="2UWCzdQmKSz" role="2Oq$k0" />
+              <node concept="2OwXpG" id="2UWCzdQmKS$" role="2OqNvi">
                 <ref role="2Oxat5" node="2djiQ_FD2oe" resolve="chart" />
               </node>
             </node>
@@ -5018,17 +5008,14 @@
                             <node concept="1QHqEK" id="6UJZwEqlyg7" role="3cqZAp">
                               <node concept="1QHqEC" id="6UJZwEqlyg9" role="1QHqEI">
                                 <node concept="3clFbS" id="6UJZwEqlygb" role="1bW5cS">
-                                  <node concept="3clFbF" id="2H74AM1_5Od" role="3cqZAp">
-                                    <node concept="2OqwBi" id="2H74AM1_5Oe" role="3clFbG">
-                                      <node concept="2OqwBi" id="2H74AM1_5Of" role="2Oq$k0">
-                                        <node concept="37vLTw" id="2H74AM1_5Og" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2H74AM1_5NQ" resolve="n" />
-                                        </node>
-                                        <node concept="2qgKlT" id="2H74AM1_5Oh" role="2OqNvi">
-                                          <ref role="37wK5l" to="6m3u:4G7mwLzZNL3" resolve="getValHistory" />
-                                        </node>
+                                  <node concept="3clFbF" id="2cbtbDFTgFu" role="3cqZAp">
+                                    <node concept="2OqwBi" id="2cbtbDFTgZi" role="3clFbG">
+                                      <node concept="37vLTw" id="2cbtbDFTgFs" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2H74AM1_5NQ" resolve="n" />
                                       </node>
-                                      <node concept="2Kehj3" id="2H74AM1_5Oi" role="2OqNvi" />
+                                      <node concept="2qgKlT" id="2cbtbDFThx2" role="2OqNvi">
+                                        <ref role="37wK5l" to="6m3u:2cbtbDFT6_j" resolve="clearHistory" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>

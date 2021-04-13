@@ -97,6 +97,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -169,6 +170,9 @@
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1207233427108" name="jetbrains.mps.baseLanguage.collections.structure.MapRemoveOperation" flags="nn" index="kI3uX">
+        <child id="1207233489861" name="key" index="kIiFs" />
       </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
@@ -1025,6 +1029,20 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2cbtbDFT6_j" role="13h7CS">
+      <property role="TrG5h" value="clearHistory" />
+      <node concept="3Tm1VV" id="2cbtbDFT6_k" role="1B3o_S" />
+      <node concept="3cqZAl" id="2cbtbDFT6Pp" role="3clF45" />
+      <node concept="3clFbS" id="2cbtbDFT6_m" role="3clF47">
+        <node concept="3clFbF" id="2cbtbDFT6PO" role="3cqZAp">
+          <node concept="2YIFZM" id="2cbtbDFT8$N" role="3clFbG">
+            <ref role="37wK5l" node="2cbtbDFT6S8" resolve="clearHistory" />
+            <ref role="1Pybhc" node="4G7mwLzZV3J" resolve="XYChart_ValuesHistory" />
+            <node concept="13iPFW" id="2cbtbDFT8$O" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="7HQSJoRN74p" role="13h7CW">
       <node concept="3clFbS" id="7HQSJoRN74q" role="2VODD2">
         <node concept="3clFbF" id="7HQSJoRNIqB" role="3cqZAp">
@@ -1421,6 +1439,34 @@
       <node concept="37vLTG" id="4G7mwL$0439" role="3clF46">
         <property role="TrG5h" value="crtVal" />
         <node concept="10Oyi0" id="4G7mwL$044q" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2cbtbDFT6Zl" role="jymVt" />
+    <node concept="2YIFZL" id="2cbtbDFT6S8" role="jymVt">
+      <property role="TrG5h" value="clearHistory" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2cbtbDFT6S9" role="3clF47">
+        <node concept="3clFbF" id="2cbtbDFT7qf" role="3cqZAp">
+          <node concept="2OqwBi" id="2cbtbDFT7NU" role="3clFbG">
+            <node concept="37vLTw" id="2cbtbDFT7qc" role="2Oq$k0">
+              <ref role="3cqZAo" node="4G7mwLzZXav" resolve="chart2Values" />
+            </node>
+            <node concept="kI3uX" id="2cbtbDFT8qy" role="2OqNvi">
+              <node concept="37vLTw" id="2cbtbDFT8sW" role="kIiFs">
+                <ref role="3cqZAo" node="2cbtbDFT6Sp" resolve="chart" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2cbtbDFT71Q" role="3clF45" />
+      <node concept="37vLTG" id="2cbtbDFT6Sp" role="3clF46">
+        <property role="TrG5h" value="chart" />
+        <node concept="3Tqbb2" id="2cbtbDFT6Sq" role="1tU5fm">
+          <ref role="ehGHo" to="8b9w:2djiQ_FCCJB" resolve="XYChart" />
+        </node>
       </node>
     </node>
   </node>
