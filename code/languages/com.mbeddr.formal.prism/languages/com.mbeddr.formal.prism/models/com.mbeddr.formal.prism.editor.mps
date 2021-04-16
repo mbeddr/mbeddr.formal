@@ -522,7 +522,7 @@
     <node concept="3EZMnI" id="1xpXAu0PBs3" role="2wV5jI">
       <node concept="3F0ifn" id="1xpXAu0PBsa" role="3EZMnx">
         <property role="3F0ifm" value="const" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="1xpXAu0PBsg" role="3EZMnx">
         <ref role="1NtTu8" to="c1ru:ZaBFheKpFf" resolve="tpe" />
@@ -556,7 +556,7 @@
     <ref role="1XX52x" to="c1ru:ZaBFheKpFh" resolve="PrismTypeBase" />
     <node concept="PMmxH" id="1xpXAu0Q0DF" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
     </node>
   </node>
   <node concept="24kQdi" id="1xpXAu0QqJd">
