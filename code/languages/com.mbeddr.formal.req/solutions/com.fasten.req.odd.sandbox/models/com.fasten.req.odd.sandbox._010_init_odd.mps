@@ -50,7 +50,7 @@
   <node concept="3SOIZ$" id="3Jn$RV31p8J">
     <property role="TrG5h" value="first_odd" />
     <node concept="3fY04A" id="5hctYtavRSk" role="3SOIZ9">
-      <ref role="3fY04_" to="sqn2:7gUa1Zsx7gl" resolve="czarnecki_part_01_road_structure" />
+      <ref role="3fY04_" to="sqn2:7gUa1Zsx7gl" resolve="czarnecki_operational_world_model_for_ads" />
       <node concept="3fWYEE" id="5hctYtavRTf" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="5hctYtavRTg" role="3fWY_o">
