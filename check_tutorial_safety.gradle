@@ -79,7 +79,7 @@ modelcheck {
     mpsConfig = configurations.mps
     junitFile = modelcheckresult
     errorNoFail = true
-    maxHeap = "3G"
+    //maxHeap = "3G"
     modules = ["com.mbeddr.formal.safety.tutorial"] //, "com.mbeddr.formal.safety.users_guide"]
 }
 
