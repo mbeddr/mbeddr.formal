@@ -515,7 +515,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2gpUZARhhsM" role="jymVt" />
-    <node concept="3Tm1VV" id="2gpUZARhgWu" role="1B3o_S" />
     <node concept="3uibUv" id="2gpUZARhh0z" role="1zkMxy">
       <ref role="3uigEE" to="nkm5:5BPceOJSo9l" resolve="SNodeConnectionType" />
     </node>

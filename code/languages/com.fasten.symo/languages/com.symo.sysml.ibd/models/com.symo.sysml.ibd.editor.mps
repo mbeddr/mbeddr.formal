@@ -15,7 +15,6 @@
     <import index="4hyq" ref="r:cf2fb6e4-988a-44a1-af5e-f0f6a81c5941(com.symo.sysml.ibd.structure)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="74g7" ref="r:2856bbe1-8573-4ce5-b2a1-f031f8b51d72(com.cso.enabler.base.editor)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -114,7 +113,7 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -553,7 +552,7 @@
       </node>
       <node concept="3F0ifn" id="4PDUeYRx2_Z" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="74g7:2CEi94e3iKI" resolve="PassiveTextStyle" />
+        <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
       </node>
       <node concept="2iRkQZ" id="4PDUeYRx2zY" role="2iSdaV" />
     </node>
