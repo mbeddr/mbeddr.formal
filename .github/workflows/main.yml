@@ -4,8 +4,8 @@ name: FASTEN_CI
 on: [push, pull_request]
 
 env:
-  MPS_VER: "2020.2"
-  MPS_ZIP: "http://download.jetbrains.com/mps/2020.2/MPS-2020.2.2.zip"
+  MPS_VER: "2020.3"
+  MPS_ZIP: "http://download.jetbrains.com/mps/2020.3/MPS-2020.3.3.zip"
   JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
   FASTEN_DISTRIBUTION_PACKAGE: "/home/runner/work/mbeddr.formal/mbeddr.formal/build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-1.0-SNAPSHOT.zip"
   FASTEN_DISTRIBUTION_DIR: "/home/runner/work/mbeddr.formal/mbeddr.formal/build/fasten-1.0-SNAPSHOT"
