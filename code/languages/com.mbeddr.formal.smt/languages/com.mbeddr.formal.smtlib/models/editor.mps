@@ -179,7 +179,7 @@
       </node>
       <node concept="3F0ifn" id="6NmtaR1SUMF" role="3EZMnx">
         <property role="3F0ifm" value="echo" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="104dc5E44gF" role="3EZMnx">
         <property role="3F0ifm" value="&quot;" />
@@ -380,7 +380,7 @@
       </node>
       <node concept="3F0ifn" id="104dc5E45T5" role="3EZMnx">
         <property role="3F0ifm" value="declare-const" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="104dc5E45Ti" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -403,7 +403,7 @@
       </node>
       <node concept="3F0ifn" id="104dc5E45U9" role="3EZMnx">
         <property role="3F0ifm" value="assert" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="104dc5E45Uh" role="3EZMnx">
         <ref role="1NtTu8" to="d9cz:104dc5E45TS" resolve="exp" />
@@ -423,7 +423,7 @@
       </node>
       <node concept="3F0ifn" id="104dc5E45UN" role="3EZMnx">
         <property role="3F0ifm" value="check-sat" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="104dc5E45UV" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -440,7 +440,7 @@
       </node>
       <node concept="3F0ifn" id="104dc5E45Vv" role="3EZMnx">
         <property role="3F0ifm" value="declare-fun" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0A7n" id="104dc5Eefn2" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -469,7 +469,7 @@
     <ref role="1XX52x" to="d9cz:104dc5E499F" resolve="IntType" />
     <node concept="3F0ifn" id="104dc5E49a7" role="2wV5jI">
       <property role="3F0ifm" value="Int" />
-      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
     </node>
   </node>
   <node concept="24kQdi" id="104dc5E49a$">
@@ -477,7 +477,7 @@
     <ref role="1XX52x" to="d9cz:104dc5E49aa" resolve="BoolType" />
     <node concept="3F0ifn" id="104dc5E49aA" role="2wV5jI">
       <property role="3F0ifm" value="Bool" />
-      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+      <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
     </node>
   </node>
   <node concept="PKFIW" id="104dc5E49b_">
@@ -617,7 +617,7 @@
         </node>
         <node concept="3F0ifn" id="6cjunGyy0nn" role="3EZMnx">
           <property role="3F0ifm" value="forall" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="6cjunGyy0o2" role="3EZMnx">
           <property role="3F0ifm" value="(" />
@@ -699,7 +699,7 @@
         </node>
         <node concept="3F0ifn" id="6cjunGyyJnC" role="3EZMnx">
           <property role="3F0ifm" value="define-fun" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="6cjunGyyJnD" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -954,7 +954,7 @@
       </node>
       <node concept="3F0ifn" id="2l5A0OF69yr" role="3EZMnx">
         <property role="3F0ifm" value="declare-datatypes" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="2l5A0OF69yC" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1060,7 +1060,7 @@
       </node>
       <node concept="3F0ifn" id="1MFSGJpf7bZ" role="3EZMnx">
         <property role="3F0ifm" value="get-model" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="1MFSGJpf7cc" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1077,7 +1077,7 @@
       </node>
       <node concept="3F0ifn" id="1MFSGJprTRQ" role="3EZMnx">
         <property role="3F0ifm" value="ite" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F1sOY" id="1MFSGJprTS3" role="3EZMnx">
         <ref role="1NtTu8" to="d9cz:1MFSGJprTRi" resolve="cond" />

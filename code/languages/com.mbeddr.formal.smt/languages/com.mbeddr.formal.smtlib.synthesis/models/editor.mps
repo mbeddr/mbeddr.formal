@@ -491,7 +491,7 @@
         </node>
         <node concept="3F0ifn" id="6cjunGyyJnC" role="3EZMnx">
           <property role="3F0ifm" value="define-fun-to-synthethise" />
-          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="6cjunGyyJnD" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
