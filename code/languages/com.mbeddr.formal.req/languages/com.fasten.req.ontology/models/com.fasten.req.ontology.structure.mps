@@ -150,7 +150,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="relations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5qtcz4LkRC5" resolve="ConceptRelationBase" />
+      <ref role="20lvS9" node="4vIVwd76uxy" resolve="IConceptRelation" />
     </node>
     <node concept="1TJgyj" id="1f_hJh22Fy7" role="1TKVEi">
       <property role="IQ2ns" value="1433630071281334407" />
@@ -249,6 +249,9 @@
       <property role="20kJfa" value="conceptRef" />
       <ref role="20lvS9" node="1wKSXwEBhCv" resolve="OntologyConceptRef" />
     </node>
+    <node concept="PrWs8" id="4vIVwd76uxz" role="PzmwI">
+      <ref role="PrY4T" node="4vIVwd76uxy" resolve="IConceptRelation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5qtcz4LkRC6">
     <property role="EcuMT" value="6241199845467716102" />
@@ -263,6 +266,11 @@
     <property role="TrG5h" value="MeronymyRelation" />
     <property role="34LRSv" value="meronymy" />
     <ref role="1TJDcQ" node="5qtcz4LkRC6" resolve="AttributeRelation" />
+  </node>
+  <node concept="PlHQZ" id="4vIVwd76uxy">
+    <property role="EcuMT" value="5183341918995212386" />
+    <property role="3GE5qa" value="relations" />
+    <property role="TrG5h" value="IConceptRelation" />
   </node>
 </model>
 
