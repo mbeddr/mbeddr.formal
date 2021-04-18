@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -216,6 +217,12 @@
     <property role="34LRSv" value="connect" />
     <property role="3GE5qa" value="connection" />
     <ref role="1TJDcQ" node="5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
+    <node concept="1TJgyj" id="4vIVwd777$9" role="1TKVEi">
+      <property role="IQ2ns" value="5183341918995380489" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="description" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3EWkVoQ4QSf">
     <property role="EcuMT" value="4232349791877819919" />
