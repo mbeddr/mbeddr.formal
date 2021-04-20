@@ -960,7 +960,7 @@
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="WordType" />
     <property role="34LRSv" value="word" />
-    <property role="R4oN_" value="word type" />
+    <property role="R4oN_" value="signed / unsigned word type" />
     <ref role="1TJDcQ" to="ehqg:6NmtaR1SV7a" resolve="Type" />
     <node concept="1TJgyj" id="7mSH3WnE5iF" role="1TKVEi">
       <property role="IQ2ns" value="8482728081225176235" />

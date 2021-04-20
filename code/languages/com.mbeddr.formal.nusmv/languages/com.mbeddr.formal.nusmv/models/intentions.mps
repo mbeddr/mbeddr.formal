@@ -62,7 +62,7 @@
   </registry>
   <node concept="2S6QgY" id="7mSH3WnFqWq">
     <property role="3GE5qa" value="types" />
-    <property role="TrG5h" value="toggleSignedness" />
+    <property role="TrG5h" value="toggleSignednessOfWordType" />
     <ref role="2ZfgGC" to="gioj:7mSH3WnE5iE" resolve="WordType" />
     <node concept="2S6ZIM" id="7mSH3WnFqWr" role="2ZfVej">
       <node concept="3clFbS" id="7mSH3WnFqWs" role="2VODD2">
@@ -98,7 +98,7 @@
   </node>
   <node concept="2S6QgY" id="6mm$FLZ1uuL">
     <property role="3GE5qa" value="expressions.literals" />
-    <property role="TrG5h" value="toggleSignedness" />
+    <property role="TrG5h" value="toggleSignednessOfWordConstant" />
     <ref role="2ZfgGC" to="gioj:6mm$FLYZR9W" resolve="WordConstant" />
     <node concept="2S6ZIM" id="6mm$FLZ1uuM" role="2ZfVej">
       <node concept="3clFbS" id="6mm$FLZ1uuN" role="2VODD2">
