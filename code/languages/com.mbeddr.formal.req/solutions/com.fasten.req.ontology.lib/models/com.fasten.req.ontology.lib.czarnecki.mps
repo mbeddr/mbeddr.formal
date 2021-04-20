@@ -663,10 +663,6 @@
       <property role="TrG5h" value="school crossing guard" />
       <ref role="3SOpc_" node="2cECkJ_jZJy" resolve="traffic control persons" />
     </node>
-    <node concept="3SOpcA" id="2cECkJ_kx9o" role="3SOpfD">
-      <property role="TrG5h" value="construction zone flagger" />
-      <ref role="3SOpc_" node="2cECkJ_jZJy" resolve="traffic control persons" />
-    </node>
     <node concept="3SOpcA" id="2cECkJ_kx15" role="3SOpfD">
       <property role="TrG5h" value="police officer directing traffic" />
       <ref role="3SOpc_" node="2cECkJ_jZJy" resolve="traffic control persons" />
@@ -1183,10 +1179,6 @@
       <property role="TrG5h" value="Traffic Lanes" />
       <ref role="3SOpc_" node="1f_hJh21N6x" resolve="Lane Type" />
     </node>
-    <node concept="3SOpcA" id="1f_hJh22jIm" role="3SOpfD">
-      <property role="TrG5h" value="Thorough Lanes" />
-      <ref role="3SOpc_" node="1f_hJh21Ncr" resolve="Traffic Lanes" />
-    </node>
     <node concept="3SOpcA" id="2cECkJ_kzoE" role="3SOpfD">
       <property role="TrG5h" value="Thorough Lanes" />
       <ref role="3SOpc_" node="1f_hJh21Ncr" resolve="Traffic Lanes" />
@@ -1212,7 +1204,7 @@
       <ref role="3SOpc_" node="1f_hJh22jCd" resolve="Auxiliar Lanes" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22jXe" role="3SOpfD">
-      <property role="TrG5h" value="Two-was Left Turn Lane" />
+      <property role="TrG5h" value="Two-way Left Turn Lane" />
       <ref role="3SOpc_" node="1f_hJh22jCd" resolve="Auxiliar Lanes" />
     </node>
     <node concept="3SOpcA" id="1f_hJh22jV3" role="3SOpfD">
