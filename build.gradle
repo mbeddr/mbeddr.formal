@@ -64,19 +64,19 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2020.2.+'
-ext.mbeddrVersion =  '2020.2.+'
+ext.mpsVersion =  '2020.3.+'
+ext.mbeddrVersion =  '2020.3.+'
 //ext.mbeddrVersion =  'mps-2020.2.+'
 
 // Project versions
 ext.major = '2020'
-ext.minor = '2'
+ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
 
     def buildNumber = System.env.BUILD_NUMBER.toInteger()
-    if (branch.startsWith("maintenance") || branch.startsWith("mps")) {
+    if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
         version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
     } else {
         version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)

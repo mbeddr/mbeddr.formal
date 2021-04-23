@@ -982,7 +982,7 @@
     <node concept="3EZMnI" id="V8TAZBaUpj" role="2wV5jI">
       <node concept="3F0ifn" id="V8TAZBaUpq" role="3EZMnx">
         <property role="3F0ifm" value="return" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="_tjkj" id="V8TAZBaUpw" role="3EZMnx">
         <node concept="3F1sOY" id="V8TAZBaUpE" role="_tjki">
@@ -1004,7 +1004,7 @@
     <node concept="3EZMnI" id="V8TAZBcW5s" role="2wV5jI">
       <node concept="3F0ifn" id="V8TAZBcW5z" role="3EZMnx">
         <property role="3F0ifm" value="while" />
-        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="BaseLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="V8TAZBcW5D" role="3EZMnx">
         <property role="3F0ifm" value="(" />

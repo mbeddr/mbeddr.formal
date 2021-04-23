@@ -65,7 +65,7 @@
     <node concept="3EZMnI" id="5y2MdLwTJOr" role="2wV5jI">
       <node concept="3F0ifn" id="5y2MdLwTJO_" role="3EZMnx">
         <property role="3F0ifm" value="log witness" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="5y2MdLwTJOI" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -99,7 +99,7 @@
     <node concept="3EZMnI" id="1ZejHLlJL2d" role="2wV5jI">
       <node concept="3F0ifn" id="1ZejHLlJL2n" role="3EZMnx">
         <property role="3F0ifm" value="assume" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="1ZejHLlJL2w" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -134,7 +134,7 @@
     <node concept="3EZMnI" id="1J1L1DBdzI" role="2wV5jI">
       <node concept="PMmxH" id="1J1L1DBe6S" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="1J1L1DBeot" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -165,7 +165,7 @@
     <node concept="3EZMnI" id="4ZxQD5xTj14" role="2wV5jI">
       <node concept="PMmxH" id="4ZxQD5xTj15" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="ExtendedLanguageKeyword" />
+        <ref role="1k5W1q" to="xnej:KwKRgpJu1g" resolve="FASTENExtendedLanguageKeyword" />
       </node>
       <node concept="3F0ifn" id="4ZxQD5xTj16" role="3EZMnx">
         <property role="3F0ifm" value="(" />
