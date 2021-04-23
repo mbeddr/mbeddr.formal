@@ -69,8 +69,8 @@ ext.mbeddrVersion =  '2020.2.+'
 //ext.mbeddrVersion =  'mps-2020.2.+'
 
 // Project versions
-ext.major = '1'
-ext.minor = '0'
+ext.major = '2020'
+ext.minor = '2'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
