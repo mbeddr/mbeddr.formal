@@ -624,6 +624,14 @@
                 <node concept="2pJPEk" id="62cfieELjsa" role="37vLTx">
                   <node concept="2pJPED" id="62cfieELjvV" role="2pJPEn">
                     <ref role="2pJxaS" to="spwl:3EWkVoQ5lqI" resolve="AndGate" />
+                    <node concept="2pJxcG" id="6byTwwwibwg" role="2pJxcM">
+                      <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="WxPPo" id="6byTwwwib_u" role="28ntcv">
+                        <node concept="Xl_RD" id="6byTwwwib_t" role="WxPPp">
+                          <property role="Xl_RC" value="" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="37vLTw" id="62cfieELjik" role="37vLTJ">
@@ -686,6 +694,14 @@
                 <node concept="2pJPEk" id="62cfieELpfk" role="37vLTx">
                   <node concept="2pJPED" id="62cfieELpvE" role="2pJPEn">
                     <ref role="2pJxaS" to="spwl:3EWkVoQ4QSg" resolve="OrGate" />
+                    <node concept="2pJxcG" id="6byTwwwksbJ" role="2pJxcM">
+                      <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="WxPPo" id="6byTwwwlKon" role="28ntcv">
+                        <node concept="Xl_RD" id="6byTwwwlKom" role="WxPPp">
+                          <property role="Xl_RC" value="" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="37vLTw" id="62cfieELpfm" role="37vLTJ">
