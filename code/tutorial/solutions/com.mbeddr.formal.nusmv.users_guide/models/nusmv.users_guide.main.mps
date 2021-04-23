@@ -884,7 +884,7 @@
           <node concept="2vpllh" id="2mjHtwTDAuj" role="19SJt6">
             <node concept="19SGf9" id="2mjHtwTDAuk" role="$DsGW">
               <node concept="19SUe$" id="2mjHtwTDAul" role="19SJt6">
-                <property role="19SUeA" value="Projection -&gt; Architecture Diagram View" />
+                <property role="19SUeA" value="Notation -&gt; Architecture Diagram View" />
               </node>
             </node>
           </node>
@@ -1140,7 +1140,7 @@
           <node concept="2vpllh" id="2mjHtwTDQ_e" role="19SJt6">
             <node concept="19SGf9" id="2mjHtwTDQ_f" role="$DsGW">
               <node concept="19SUe$" id="2mjHtwTDQ_g" role="19SJt6">
-                <property role="19SUeA" value="Projection -&gt; State-machine Diagram View" />
+                <property role="19SUeA" value="Notation -&gt; State-machine Diagram View" />
               </node>
             </node>
           </node>
