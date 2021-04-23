@@ -94,6 +94,9 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
+      <concept id="8624890525767555426" name="com.mbeddr.doc.structure.ScalingSizeSpec" flags="ng" index="3SG1Pu">
+        <property id="8624890525767555427" name="percentage" index="3SG1Pv" />
+      </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
@@ -1009,7 +1012,7 @@
       <node concept="1_0LV8" id="2mjHtwTDQ$b" role="1_0VJ0">
         <node concept="19SGf9" id="2mjHtwTDQ$c" role="1_0LWR">
           <node concept="19SUe$" id="2mjHtwTDQ$d" role="19SJt6">
-            <property role="19SUeA" value="We created a DSL which restricts the NuSMV base language in order to describe common state-machines." />
+            <property role="19SUeA" value="We created a DSL which restricts the NuSMV base language in order to describe Mealey state-machines (i.e. actions &#10;are exclussively associated with transitions). " />
           </node>
         </node>
       </node>
@@ -1109,12 +1112,29 @@
             </node>
           </node>
           <node concept="19SUe$" id="2mjHtwTDQ$R" role="19SJt6">
-            <property role="19SUeA" value=" section for a traffic-lights controller in textual notation." />
+            <property role="19SUeA" value=" section for a traffic-lights controller in textual notation. &#10;The transitions are encoded via a higher-level construct similar to a " />
+          </node>
+          <node concept="1jUjqm" id="4g_EZjU$sdU" role="19SJt6">
+            <node concept="19SGf9" id="4g_EZjU$sdV" role="$DsGW">
+              <node concept="19SUe$" id="4g_EZjU$sdW" role="19SJt6">
+                <property role="19SUeA" value="case" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="4g_EZjU$sdT" role="19SJt6">
+            <property role="19SUeA" value=" - the guards of different cases are defined only on &#10;the state variable and are only referenced for the other variables. The " />
+          </node>
+          <node concept="1jUjqm" id="4g_EZjU$sdQ" role="19SJt6">
+            <node concept="19SGf9" id="4g_EZjU$sdR" role="$DsGW">
+              <node concept="19SUe$" id="4g_EZjU$sdS" role="19SJt6">
+                <property role="19SUeA" value="otherwise" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="4g_EZjU$sdP" role="19SJt6">
+            <property role="19SUeA" value=" branch ensures that the corresponding variable&#10;does not change when no transition is taken (aka. Mealey automata)." />
           </node>
         </node>
-      </node>
-      <node concept="1_1sxE" id="2mjHtwTDQ_4" role="1_0VJ0">
-        <property role="TrG5h" value="empty_-1" />
       </node>
       <node concept="2SaynC" id="2mjHtwTDQ_5" role="1_0VJ0">
         <property role="TrG5h" value="nusmv_sm_textual_notation" />
@@ -1130,7 +1150,9 @@
             </node>
           </node>
         </node>
-        <node concept="2bctqb" id="2mjHtwTDQ_a" role="3SHJ_F" />
+        <node concept="3SG1Pu" id="4g_EZjU$sfw" role="3SHJ_F">
+          <property role="3SG1Pv" value="90" />
+        </node>
       </node>
       <node concept="1_0LV8" id="2mjHtwTDQ_b" role="1_0VJ0">
         <node concept="19SGf9" id="2mjHtwTDQ_c" role="1_0LWR">
