@@ -577,11 +577,11 @@
       <node concept="m$_yC" id="6hyv0iVPlFt" role="m$_yJ">
         <ref role="m$_y1" node="6hyv0iVPlE6" resolve="fasten.req" />
       </node>
-      <node concept="m$_yC" id="hcRrVPN$cj" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
+      <node concept="m$_yC" id="6canRh3MPYn" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
       </node>
-      <node concept="m$_yC" id="hcRrVPN$4Q" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      <node concept="m$_yC" id="6canRh3MQ5O" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
       </node>
       <node concept="m$_yC" id="67Nhy_DXQHa" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
@@ -2800,13 +2800,13 @@
           </node>
         </node>
         <node concept="1SiIV0" id="5wv$1EVZHoK" role="3bR37C">
-          <node concept="3bR9La" id="hcRrVPN$jK" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:2jlBy7bQtz0" resolve="com.mbeddr.mpsutil.treenotation.styles" />
+          <node concept="3bR9La" id="6canRh3MQdh" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2jlBy7bQtz0" resolve="com.mbeddr.mpsutil.treenotation.styles" />
           </node>
         </node>
         <node concept="1SiIV0" id="5wv$1EVZHoM" role="3bR37C">
-          <node concept="3bR9La" id="hcRrVPN$r8" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:4Hbnsm4OhEo" resolve="com.mbeddr.mpsutil.editor.querylist.runtime" />
+          <node concept="3bR9La" id="6canRh3MQdk" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4Hbnsm4OhEo" resolve="com.mbeddr.mpsutil.editor.querylist.runtime" />
           </node>
         </node>
       </node>
