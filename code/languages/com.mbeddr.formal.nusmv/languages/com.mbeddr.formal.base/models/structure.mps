@@ -66,6 +66,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -197,9 +198,15 @@
   <node concept="PlHQZ" id="60zS9AZgHTg">
     <property role="EcuMT" value="6927627602769403472" />
     <property role="TrG5h" value="IFASTENStructureViewRoot" />
+    <property role="3GE5qa" value="structure_view" />
     <node concept="PrWs8" id="60zS9AZgKE4" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5mW_a0OEuea">
+    <property role="EcuMT" value="6177976204644705162" />
+    <property role="3GE5qa" value="structure_view" />
+    <property role="TrG5h" value="IFASTENHierarchicalStructure" />
   </node>
 </model>
 

@@ -115,6 +115,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -309,6 +312,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="60zS9AZgLAn">
+    <property role="3GE5qa" value="structure_view" />
     <ref role="13h7C2" to="b19z:60zS9AZgHTg" resolve="IFASTENStructureViewRoot" />
     <node concept="13i0hz" id="60zS9AZgLAV" role="13h7CS">
       <property role="13i0iv" value="true" />
@@ -324,6 +328,25 @@
     </node>
     <node concept="13hLZK" id="60zS9AZgLAo" role="13h7CW">
       <node concept="3clFbS" id="60zS9AZgLAp" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5mW_a0OEue_">
+    <property role="3GE5qa" value="structure_view" />
+    <ref role="13h7C2" to="b19z:5mW_a0OEuea" resolve="IFASTENHierarchicalStructure" />
+    <node concept="13i0hz" id="4_dTlOOCDAW" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="subStructure" />
+      <node concept="3Tm1VV" id="4_dTlOOCDAX" role="1B3o_S" />
+      <node concept="A3Dl8" id="1V8XF6FervU" role="3clF45">
+        <node concept="3Tqbb2" id="1V8XF6Ferwh" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4_dTlOOCDAZ" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="5mW_a0OEueA" role="13h7CW">
+      <node concept="3clFbS" id="5mW_a0OEueB" role="2VODD2" />
     </node>
   </node>
 </model>
