@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety/fasten.safety.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.arch.timing/com.fasten.arch.timing.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.arch/com.fasten.safety.fmea.arch.mpl" folder="fmea" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.iso26262/com.fasten.safety.fmea.iso26262.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea/com.fasten.safety.fmea.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.ft.xfta_gen/com.fasten.safety.ft.xfta_gen.mpl" folder="ft" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.ft/com.fasten.safety.ft.mpl" folder="ft" />

@@ -14,6 +14,8 @@
   <languageVersions>
     <language slang="l:b43c548b-f75f-46e2-ad24-de9edd93e95e:com.fasten.safety.fmea" version="0" />
     <language slang="l:1110e3ef-a98e-444f-9748-1d61fe61c7f7:com.fasten.safety.fmea.arch" version="0" />
+    <language slang="l:fff52720-b1df-4cd2-a8f7-d487bca333ba:com.fasten.safety.fmeda" version="0" />
+    <language slang="l:dc773f77-cced-42c8-ba62-465140b810a5:com.fasten.safety.fmeda.electronics" version="0" />
     <language slang="l:c6d7e8a3-3d80-479a-8799-a11fe1902b1c:com.fasten.safety.hiphops" version="0" />
     <language slang="l:521724dc-29ef-4d5a-9c15-25f6b680b809:com.fasten.safety.hiphops.arch" version="0" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />

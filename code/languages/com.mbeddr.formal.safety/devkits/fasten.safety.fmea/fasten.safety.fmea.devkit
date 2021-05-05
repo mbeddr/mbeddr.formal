@@ -4,5 +4,6 @@
   <exported-language name="1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)" />
   <exported-language name="c6d7e8a3-3d80-479a-8799-a11fe1902b1c(com.fasten.safety.hiphops)" />
   <exported-language name="521724dc-29ef-4d5a-9c15-25f6b680b809(com.fasten.safety.hiphops.arch)" />
+  <exported-language name="dc773f77-cced-42c8-ba62-465140b810a5(com.fasten.safety.fmea.iso26262)" />
 </dev-kit>
 

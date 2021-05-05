@@ -235,7 +235,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="42QGQFVotBd">
-    <ref role="1XX52x" to="g9vz:7j1NWs13Y0P" resolve="ComponentEffect" />
+    <ref role="1XX52x" to="g9vz:7j1NWs13Y0P" resolve="ComponentEffectAnalysis" />
     <node concept="1iCGBv" id="42QGQFVotBk" role="2wV5jI">
       <ref role="1NtTu8" to="g9vz:42QGQFVotBb" resolve="effect" />
       <node concept="1sVBvm" id="42QGQFVotBm" role="1sWHZn">

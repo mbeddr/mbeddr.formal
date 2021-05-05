@@ -76,7 +76,7 @@
   </node>
   <node concept="1TIwiD" id="7j1NWs13Y0P">
     <property role="EcuMT" value="8413234032528056373" />
-    <property role="TrG5h" value="ComponentEffect" />
+    <property role="TrG5h" value="ComponentEffectAnalysis" />
     <ref role="1TJDcQ" to="6k2r:7j1NWs11Gk5" resolve="EffectBase" />
     <node concept="1TJgyj" id="42QGQFVotBb" role="1TKVEi">
       <property role="IQ2ns" value="4663111736254126539" />
@@ -116,9 +116,6 @@
     <property role="34LRSv" value="failure mode" />
     <property role="R4oN_" value="failure mode definition" />
     <ref role="1TJDcQ" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
-    <node concept="PrWs8" id="42QGQFVn62Q" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="42QGQFVnOmu">
     <property role="EcuMT" value="4663111736253957534" />
