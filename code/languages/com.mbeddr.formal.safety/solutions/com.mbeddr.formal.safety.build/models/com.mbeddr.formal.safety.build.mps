@@ -12,20 +12,6 @@
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
-    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
-      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
-        <property id="6666499814681541920" name="text" index="2pMdty" />
-      </concept>
-      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
-        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
-        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
-        <child id="1622293396948928802" name="content" index="3o6s8t" />
-      </concept>
-      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
-        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
-        <child id="6666499814681541918" name="value" index="2pMdts" />
-      </concept>
-    </language>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
       <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
@@ -182,7 +168,6 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
-        <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -772,24 +757,6 @@
     </node>
     <node concept="m$_wf" id="7he_lUurrgx" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.formal.safety" />
-      <node concept="2pNNFK" id="2QrTH5hQvUb" role="20twgj">
-        <property role="2pNNFO" value="extensions" />
-        <node concept="2pNUuL" id="2QrTH5hQvUc" role="2pNNFR">
-          <property role="2pNUuO" value="defaultExtensionNs" />
-          <node concept="2pMdtt" id="2QrTH5hQvUd" role="2pMdts">
-            <property role="2pMdty" value="com.intellij" />
-          </node>
-        </node>
-        <node concept="2pNNFK" id="2QrTH5hQvUe" role="3o6s8t">
-          <property role="2pNNFO" value="mps.VisibleModuleMask" />
-          <node concept="2pNUuL" id="2QrTH5hQvUf" role="2pNNFR">
-            <property role="2pNUuO" value="mask" />
-            <node concept="2pMdtt" id="2QrTH5hQvUg" role="2pMdts">
-              <property role="2pMdty" value="fasten.*" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3_J27D" id="7he_lUurrgy" role="m$_yQ">
         <node concept="3Mxwew" id="7he_lUurrgz" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.safety" />
@@ -814,6 +781,9 @@
       </node>
       <node concept="m$_yC" id="647GT0tL_fM" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
+      </node>
+      <node concept="m$_yC" id="6scI_1YnzSI" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
       </node>
       <node concept="m$_yC" id="647GT0tL_oE" role="m$_yJ">
         <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
