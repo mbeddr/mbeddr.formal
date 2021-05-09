@@ -104,7 +104,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Archive distribution
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
-        name: fasten-distribution
         path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-2020.3-SNAPSHOT.zip
