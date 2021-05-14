@@ -64,6 +64,7 @@ jobs:
     - name: Build FASTEN
       uses: eskatos/gradle-command-action@v1
       with: 
+        arguments:  -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         configuration-cache-enabled: true
@@ -72,7 +73,7 @@ jobs:
     - name: Check Consistency of the FASTEN-NuSMV Tutorial 
       uses: eskatos/gradle-command-action@v1
       with:
-        arguments: -b check_tutorial_nusmv.gradle --refresh-dependencies
+        arguments: -b check_tutorial_nusmv.gradle --offline -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         configuration-cache-enabled: true
@@ -81,7 +82,7 @@ jobs:
     - name: Check Consistency of the FASTEN-Safety Tutorial
       uses: eskatos/gradle-command-action@v1
       with:
-        arguments: -b check_tutorial_safety.gradle --refresh-dependencies
+        arguments: -b check_tutorial_safety.gradle --offline -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         configuration-cache-enabled: true
@@ -90,7 +91,7 @@ jobs:
     - name: Run Tests
       uses: eskatos/gradle-command-action@v1
       with: 
-        arguments: run_all_tests
+        arguments: run_all_tests --offline  -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         configuration-cache-enabled: true    
