@@ -428,9 +428,6 @@
       <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
         <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
-      <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
-        <child id="5753587520027644759" name="body" index="3kxCCa" />
-      </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
@@ -877,7 +874,12 @@
       <ref role="1k5W1q" to="xnej:50UR0qsbFda" resolve="ShapeStyle_Dynamic" />
       <node concept="2xQOud" id="7TjUbLQaERb" role="2xQQDV">
         <ref role="2xQOue" node="7TjUbLQ8uDG" resolve="GoalRectangle" />
-        <node concept="1Pxb5l" id="7TjUbLQaERj" role="1xbcaF" />
+        <node concept="2OqwBi" id="3VR5nzkXema" role="1xbcaF">
+          <node concept="1Pxb5l" id="7TjUbLQaERj" role="2Oq$k0" />
+          <node concept="3TrcHB" id="3VR5nzkXeIM" role="2OqNvi">
+            <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="65Lrkjj1Rhx" role="1ytjkN">
         <ref role="PMmxG" node="65Lrkjj1Rgv" resolve="GoalTextArea" />
@@ -948,7 +950,12 @@
       <ref role="1k5W1q" to="xnej:50UR0qsbFda" resolve="ShapeStyle_Dynamic" />
       <node concept="2xQOud" id="7TjUbLQa$U1" role="2xQQDV">
         <ref role="2xQOue" node="7TjUbLQ9xzM" resolve="StrategyPolygon" />
-        <node concept="1Pxb5l" id="7TjUbLQaEZn" role="1xbcaF" />
+        <node concept="2OqwBi" id="3VR5nzkY1Pj" role="1xbcaF">
+          <node concept="1Pxb5l" id="7TjUbLQaEZn" role="2Oq$k0" />
+          <node concept="3TrcHB" id="3VR5nzkY2bp" role="2OqNvi">
+            <ref role="3TsBF5" to="py52:7TjUbLQa$TT" resolve="undeveloped" />
+          </node>
+        </node>
       </node>
       <node concept="3EZMnI" id="1e9opmpbvVS" role="1ytjkN">
         <node concept="2iRfu4" id="1e9opmpbvVT" role="2iSdaV" />
@@ -1423,10 +1430,8 @@
   <node concept="2xDbr0" id="7TjUbLQ8uDG">
     <property role="TrG5h" value="GoalRectangle" />
     <node concept="1xmO9C" id="7TjUbLQaCmR" role="1xmOgE">
-      <property role="TrG5h" value="goal" />
-      <node concept="3Tqbb2" id="7TjUbLQaCn2" role="1xmOb1">
-        <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
-      </node>
+      <property role="TrG5h" value="undeveloped" />
+      <node concept="10P_77" id="3VR5nzkXbOG" role="1xmOb1" />
     </node>
     <node concept="3cmrfG" id="7TjUbLQ8uDY" role="3pRy3o">
       <property role="3cmrfH" value="50" />
@@ -1645,29 +1650,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7TjUbLQahW9" role="3cqZAp" />
-        <node concept="3cpWs8" id="7TjUbLQbcbz" role="3cqZAp">
-          <node concept="3cpWsn" id="7TjUbLQbcb$" role="3cpWs9">
-            <property role="TrG5h" value="undeveloped" />
-            <node concept="10P_77" id="7TjUbLQaEej" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3kxDZ6" id="7TjUbLQbcZ3" role="3cqZAp">
-          <node concept="3clFbF" id="7TjUbLQbcyG" role="3kxCCa">
-            <node concept="37vLTI" id="7TjUbLQbcyI" role="3clFbG">
-              <node concept="2OqwBi" id="7TjUbLQbcb_" role="37vLTx">
-                <node concept="1xnly_" id="7TjUbLQbcbA" role="2Oq$k0">
-                  <ref role="1xnlzC" node="7TjUbLQaCmR" resolve="goal" />
-                </node>
-                <node concept="3TrcHB" id="7TjUbLQbcbB" role="2OqNvi">
-                  <ref role="3TsBF5" to="py52:7TjUbLQa$TR" resolve="undeveloped" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="7TjUbLQbcyM" role="37vLTJ">
-                <ref role="3cqZAo" node="7TjUbLQbcb$" resolve="undeveloped" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="7TjUbLQaCFK" role="3cqZAp">
           <node concept="3clFbS" id="7TjUbLQaCFM" role="3clFbx">
             <node concept="3cpWs8" id="7TjUbLQaj_c" role="3cqZAp">
@@ -1923,8 +1905,8 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="7TjUbLQbcbC" role="3clFbw">
-            <ref role="3cqZAo" node="7TjUbLQbcb$" resolve="undeveloped" />
+          <node concept="1xnly_" id="3VR5nzkXd$M" role="3clFbw">
+            <ref role="1xnlzC" node="7TjUbLQaCmR" resolve="undeveloped" />
           </node>
         </node>
         <node concept="3clFbH" id="7TjUbLQag_W" role="3cqZAp" />
@@ -1962,10 +1944,8 @@
   <node concept="2xDbr0" id="7TjUbLQ9xzM">
     <property role="TrG5h" value="StrategyPolygon" />
     <node concept="1xmO9C" id="7TjUbLQa_g3" role="1xmOgE">
-      <property role="TrG5h" value="strategy" />
-      <node concept="3Tqbb2" id="7TjUbLQa_ge" role="1xmOb1">
-        <ref role="ehGHo" to="py52:3GRi4m$rlnF" resolve="Strategy" />
-      </node>
+      <property role="TrG5h" value="undeveloped" />
+      <node concept="10P_77" id="3VR5nzkXZgp" role="1xmOb1" />
     </node>
     <node concept="2x7_8O" id="7TjUbLQ9xzN" role="2x7_pt">
       <node concept="3clFbS" id="7TjUbLQ9xzO" role="2VODD2">
@@ -2207,30 +2187,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7TjUbLQ9x_M" role="3cqZAp" />
-        <node concept="3cpWs8" id="7TjUbLQbexo" role="3cqZAp">
-          <node concept="3cpWsn" id="7TjUbLQbexp" role="3cpWs9">
-            <property role="TrG5h" value="undeveloped" />
-            <node concept="10P_77" id="7TjUbLQbexq" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3kxDZ6" id="7TjUbLQbexr" role="3cqZAp">
-          <node concept="3clFbF" id="7TjUbLQbexs" role="3kxCCa">
-            <node concept="37vLTI" id="7TjUbLQbext" role="3clFbG">
-              <node concept="2OqwBi" id="7TjUbLQbexu" role="37vLTx">
-                <node concept="1xnly_" id="7TjUbLQbf8O" role="2Oq$k0">
-                  <ref role="1xnlzC" node="7TjUbLQa_g3" resolve="strategy" />
-                </node>
-                <node concept="3TrcHB" id="7TjUbLQbmhi" role="2OqNvi">
-                  <ref role="3TsBF5" to="py52:7TjUbLQa$TT" resolve="undeveloped" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="7TjUbLQbexx" role="37vLTJ">
-                <ref role="3cqZAo" node="7TjUbLQbexp" resolve="undeveloped" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7TjUbLQbebF" role="3cqZAp" />
         <node concept="3clFbJ" id="7TjUbLQa__S" role="3cqZAp">
           <node concept="3clFbS" id="7TjUbLQa__U" role="3clFbx">
             <node concept="3cpWs8" id="7TjUbLQ9C12" role="3cqZAp">
@@ -2486,8 +2442,8 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="7TjUbLQbfBJ" role="3clFbw">
-            <ref role="3cqZAo" node="7TjUbLQbexp" resolve="undeveloped" />
+          <node concept="1xnly_" id="3VR5nzkY1th" role="3clFbw">
+            <ref role="1xnlzC" node="7TjUbLQa_g3" resolve="undeveloped" />
           </node>
         </node>
         <node concept="3clFbH" id="7TjUbLQaC3W" role="3cqZAp" />
