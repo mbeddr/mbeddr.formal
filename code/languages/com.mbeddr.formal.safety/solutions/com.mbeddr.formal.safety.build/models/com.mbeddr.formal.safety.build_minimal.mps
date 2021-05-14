@@ -2701,12 +2701,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6hyv0iVPlQ$" role="3bR37C">
-          <node concept="3bR9La" id="6hyv0iVPm3$" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6hyv0iVPlQ_" role="3bR37C">
           <node concept="3bR9La" id="6hyv0iVPm3_" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
@@ -2807,6 +2801,11 @@
         <node concept="1SiIV0" id="5wv$1EVZHoM" role="3bR37C">
           <node concept="3bR9La" id="6canRh3MQdk" role="1SiIV1">
             <ref role="3bR37D" to="90a9:4Hbnsm4OhEo" resolve="com.mbeddr.mpsutil.editor.querylist.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3VR5nzl2ycK" role="3bR37C">
+          <node concept="1Busua" id="3VR5nzl2ycL" role="1SiIV1">
+            <ref role="1Busuk" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>
