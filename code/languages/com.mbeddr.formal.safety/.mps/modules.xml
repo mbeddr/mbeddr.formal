@@ -29,6 +29,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.web/com.mbeddr.formal.safety.gsn.web.mpl" folder="gsn.web" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn/com.mbeddr.formal.safety.gsn.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.hara/com.mbeddr.formal.safety.hara.mpl" folder="hara" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.iso15026/com.mbeddr.formal.safety.iso15026.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.iso26262/com.mbeddr.formal.safety.iso26262.mpl" folder="hara.iso26262" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ext/com.mbeddr.formal.safety.stamp.ext.mpl" folder="hara.stamp" />
@@ -49,6 +50,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.spin.pluginSolution/com.mbeddr.formal.safety.gsn.spin.pluginSolution.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.web.rt/com.mbeddr.formal.safety.gsn.web.rt.msd" folder="gsn.web" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.web.sandbox/com.mbeddr.formal.safety.gsn.web.sandbox.msd" folder="gsn.web" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.iso15026.sandbox/com.mbeddr.formal.safety.iso15026.sandbox.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.stamp.sandbox/com.mbeddr.formal.safety.stamp.sandbox.msd" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.safety.ft.xfta/test.com.fasten.safety.ft.xfta.msd" folder="ft.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.formal.safety.stamp/test.com.mbeddr.formal.safety.stamp.msd" folder="hara.stamp" />
