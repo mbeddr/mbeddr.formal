@@ -32,6 +32,8 @@ jobs:
         echo "Creating symbolic link to MPS folder"
         ln -s '/home/runner/MPS ${MPS_VER}'/ MPS
         
+        cp -a MPS/bin/win/. MPS/bin
+        
         echo "Downloading JBR - JetBrainsRuntime"
         curl -L ${JBR} > "jbr.tar.gz"
         
