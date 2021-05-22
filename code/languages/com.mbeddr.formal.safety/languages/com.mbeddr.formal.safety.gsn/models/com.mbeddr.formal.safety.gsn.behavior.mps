@@ -979,5 +979,26 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="2p23w$d427b">
+    <property role="3GE5qa" value="attributes.color" />
+    <ref role="13h7C2" to="py52:2p23w$d2KIu" resolve="EntityColorAttribute" />
+    <node concept="13hLZK" id="2p23w$d427c" role="13h7CW">
+      <node concept="3clFbS" id="2p23w$d427d" role="2VODD2">
+        <node concept="3clFbF" id="2p23w$d427n" role="3cqZAp">
+          <node concept="37vLTI" id="2p23w$d42TT" role="3clFbG">
+            <node concept="Xl_RD" id="2p23w$d42YG" role="37vLTx">
+              <property role="Xl_RC" value="ccccff" />
+            </node>
+            <node concept="2OqwBi" id="2p23w$d42g7" role="37vLTJ">
+              <node concept="13iPFW" id="2p23w$d427m" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2p23w$d42qE" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:2p23w$d2KIv" resolve="val" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

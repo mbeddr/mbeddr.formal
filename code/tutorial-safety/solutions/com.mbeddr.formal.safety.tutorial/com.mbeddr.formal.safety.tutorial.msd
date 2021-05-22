@@ -22,6 +22,7 @@
     <language slang="l:65ed2ac6-4499-4751-951e-3819684a4b8d:com.fasten.req.ontology" version="1" />
     <language slang="l:b43c548b-f75f-46e2-ad24-de9edd93e95e:com.fasten.safety.fmea" version="0" />
     <language slang="l:1110e3ef-a98e-444f-9748-1d61fe61c7f7:com.fasten.safety.fmea.arch" version="0" />
+    <language slang="l:dc773f77-cced-42c8-ba62-465140b810a5:com.fasten.safety.fmea.iso26262" version="0" />
     <language slang="l:ab274f70-5238-4883-adc7-02df7a757829:com.fasten.safety.ft" version="1" />
     <language slang="l:091b20ea-7bf0-41d6-8e6e-4460a9bd8121:com.fasten.safety.ft.xfta_gen" version="0" />
     <language slang="l:c6d7e8a3-3d80-479a-8799-a11fe1902b1c:com.fasten.safety.hiphops" version="0" />

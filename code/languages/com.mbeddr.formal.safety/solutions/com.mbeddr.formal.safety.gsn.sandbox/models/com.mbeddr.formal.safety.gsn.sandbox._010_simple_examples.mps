@@ -73,6 +73,10 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
+        <child id="7160957776623476238" name="attributes" index="Gl$GA" />
+      </concept>
+      <concept id="2756781353940487070" name="com.mbeddr.formal.safety.gsn.structure.EntityColorAttribute" flags="ng" index="Figmn">
+        <property id="2756781353940487071" name="val" index="Figmm" />
       </concept>
       <concept id="8325911144623594255" name="com.mbeddr.formal.safety.gsn.structure.Assumption" flags="ng" index="2XiGWt" />
       <concept id="3337148140222050861" name="com.mbeddr.formal.safety.gsn.structure.Justification" flags="ng" index="1qxpMw" />
@@ -982,6 +986,9 @@
         <node concept="19SUe$" id="2BjEyIlUxF7" role="19SJt6">
           <property role="19SUeA" value="Top strategy" />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$d47m4" role="Gl$GA">
+        <property role="Figmm" value="ccffcc" />
       </node>
     </node>
     <node concept="2vn7WC" id="1qrXfdH0LGe" role="2vn1q5">

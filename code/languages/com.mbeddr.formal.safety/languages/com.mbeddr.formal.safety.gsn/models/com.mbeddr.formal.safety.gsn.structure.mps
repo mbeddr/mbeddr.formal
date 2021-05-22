@@ -33,6 +33,12 @@
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -348,6 +354,25 @@
     <property role="TrG5h" value="GoalStructureAttributeBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="Az7Fb" id="2p23w$d2KIt">
+    <property role="3F6X1D" value="2756781353940487069" />
+    <property role="TrG5h" value="ColorString" />
+    <property role="FLfZY" value="[0-9a-zA-Z]{6}" />
+    <property role="3GE5qa" value="attributes.color" />
+  </node>
+  <node concept="1TIwiD" id="2p23w$d2KIu">
+    <property role="EcuMT" value="2756781353940487070" />
+    <property role="3GE5qa" value="attributes.color" />
+    <property role="TrG5h" value="EntityColorAttribute" />
+    <property role="34LRSv" value="color" />
+    <property role="R4oN_" value="the color of an entity" />
+    <ref role="1TJDcQ" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyi" id="2p23w$d2KIv" role="1TKVEl">
+      <property role="IQ2nx" value="2756781353940487071" />
+      <property role="TrG5h" value="val" />
+      <ref role="AX2Wp" node="2p23w$d2KIt" resolve="ColorString" />
+    </node>
   </node>
 </model>
 

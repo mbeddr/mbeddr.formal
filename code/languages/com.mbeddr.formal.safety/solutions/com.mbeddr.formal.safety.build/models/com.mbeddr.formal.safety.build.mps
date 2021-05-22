@@ -7713,35 +7713,6 @@
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
-        <node concept="1yeLz9" id="7he_lUurzmj" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.safety.gsn#01" />
-          <property role="3LESm3" value="a4c390fa-1356-4344-b17a-03eff6739651" />
-          <node concept="1BupzO" id="5TezZ1Vejjp" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="5TezZ1Vejjq" role="1HemKq">
-              <node concept="398BVA" id="5TezZ1Vejjc" role="3LXTmr">
-                <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-                <node concept="2Ry0Ak" id="5TezZ1Vejjd" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="5TezZ1Vejje" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn" />
-                    <node concept="2Ry0Ak" id="5TezZ1Vejjf" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="5TezZ1Vejjg" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="5TezZ1Vejjr" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="7he_lUur_3h" role="3bR37C">
           <node concept="3bR9La" id="7he_lUur_3i" role="1SiIV1">
             <ref role="3bR37D" node="7he_lUury9o" resolve="com.mbeddr.formal.safety.gsn" />
@@ -7802,6 +7773,11 @@
         <node concept="1SiIV0" id="3VR5nzl1y6R" role="3bR37C">
           <node concept="1Busua" id="3VR5nzl1y6S" role="1SiIV1">
             <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2p23w$d5thw" role="3bR37C">
+          <node concept="3bR9La" id="2p23w$d5thx" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>

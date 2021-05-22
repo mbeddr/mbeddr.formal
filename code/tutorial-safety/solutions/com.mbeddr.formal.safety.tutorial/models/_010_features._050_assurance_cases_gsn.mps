@@ -129,6 +129,9 @@
         <property id="4946522816140921857" name="success" index="1_P5xa" />
         <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
       </concept>
+      <concept id="2756781353940487070" name="com.mbeddr.formal.safety.gsn.structure.EntityColorAttribute" flags="ng" index="Figmn">
+        <property id="2756781353940487071" name="val" index="Figmm" />
+      </concept>
       <concept id="8325911144623594255" name="com.mbeddr.formal.safety.gsn.structure.Assumption" flags="ng" index="2XiGWt" />
       <concept id="3337148140222050861" name="com.mbeddr.formal.safety.gsn.structure.Justification" flags="ng" index="1qxpMw" />
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
@@ -228,7 +231,7 @@
         <property role="37mO49" value="3804072175782963270" />
         <node concept="gqqVs" id="3jaLROLvqyJ" role="37mO4d">
           <property role="gqqTZ" value="229.0" />
-          <property role="gqqTW" value="268.0004967285156" />
+          <property role="gqqTW" value="269.0004967285156" />
           <property role="gqqTX" value="85.0" />
           <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -504,6 +507,9 @@
     </node>
     <node concept="2vn7WC" id="3jaLROLvqx6" role="2vn1q5">
       <property role="TrG5h" value="G03" />
+      <node concept="Figmn" id="2p23w$dciSh" role="Gl$GA">
+        <property role="Figmm" value="ccccff" />
+      </node>
       <node concept="19SGf9" id="3jaLROLvqxY" role="2vnaTY">
         <node concept="19SUe$" id="3jaLROLvqxZ" role="19SJt6">
           <property role="19SUeA" value="Hazard H02 has&#10;been mitigated" />
@@ -516,6 +522,9 @@
     </node>
     <node concept="2vmxSQ" id="2hB9zGID8CE" role="2vn1q5">
       <property role="TrG5h" value="C01" />
+      <node concept="Figmn" id="2p23w$dd388" role="Gl$GA">
+        <property role="Figmm" value="ccffff" />
+      </node>
       <node concept="19SGf9" id="2hB9zGID8CF" role="2vnaTY">
         <node concept="19SUe$" id="2hB9zGID8CG" role="19SJt6">
           <property role="19SUeA" value="Environment &#10;description." />
@@ -528,6 +537,9 @@
     </node>
     <node concept="1qxpMw" id="2hB9zGID8Pz" role="2vn1q5">
       <property role="TrG5h" value="J01" />
+      <node concept="Figmn" id="2p23w$dcp0d" role="Gl$GA">
+        <property role="Figmm" value="ccffcc" />
+      </node>
       <node concept="19SGf9" id="2hB9zGID8P$" role="2vnaTY">
         <node concept="19SUe$" id="2hB9zGID8P_" role="19SJt6">
           <property role="19SUeA" value="Widely used top &#10;level strategy" />
@@ -552,6 +564,9 @@
     </node>
     <node concept="2XiGWt" id="2hB9zGID9aw" role="2vn1q5">
       <property role="TrG5h" value="AS01" />
+      <node concept="Figmn" id="2p23w$dcp26" role="Gl$GA">
+        <property role="Figmm" value="ccccff" />
+      </node>
       <node concept="19SGf9" id="2hB9zGID9ax" role="2vnaTY">
         <node concept="19SUe$" id="2hB9zGID9ay" role="19SJt6">
           <property role="19SUeA" value="Operators have&#10;adequate training." />
