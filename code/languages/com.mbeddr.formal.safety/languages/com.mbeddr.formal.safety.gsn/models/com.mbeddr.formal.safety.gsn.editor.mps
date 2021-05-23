@@ -525,6 +525,7 @@
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="5725606875425244480" name="deleteHandler" index="1idfhu" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
+        <child id="1019014873656210396" name="navigationTargets" index="3zeBtW" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
       <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
@@ -624,6 +625,9 @@
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -874,6 +878,11 @@
     <ref role="1XX52x" to="py52:3GRi4m$qNtH" resolve="Goal" />
     <node concept="2ZK4vF" id="2ccN23o9ouu" role="2wV5jI">
       <ref role="1k5W1q" to="xnej:50UR0qsbFda" resolve="ShapeStyle_Dynamic" />
+      <node concept="2YIFZM" id="2p23w$deNTE" role="3zeBtW">
+        <ref role="37wK5l" node="2p23w$deNFO" resolve="getOriginatingGoal" />
+        <ref role="1Pybhc" node="2p23w$deE8D" resolve="AwayGoalNavigation" />
+        <node concept="1Pxb5l" id="2p23w$deNUh" role="37wK5m" />
+      </node>
       <node concept="2xQOud" id="7TjUbLQaERb" role="2xQQDV">
         <ref role="2xQOue" node="7TjUbLQ8uDG" resolve="GoalRectangle" />
         <node concept="2OqwBi" id="3VR5nzkXema" role="1xbcaF">
@@ -10997,6 +11006,66 @@
       </node>
       <node concept="2iRfu4" id="2p23w$d1hPE" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="312cEu" id="2p23w$deE8D">
+    <property role="TrG5h" value="AwayGoalNavigation" />
+    <node concept="2tJIrI" id="2p23w$deE9Z" role="jymVt" />
+    <node concept="2YIFZL" id="2p23w$deNFO" role="jymVt">
+      <property role="TrG5h" value="getOriginatingGoal" />
+      <node concept="3clFbS" id="2p23w$deEfX" role="3clF47">
+        <node concept="3clFbF" id="2p23w$deEq6" role="3cqZAp">
+          <node concept="2OqwBi" id="2p23w$deIud" role="3clFbG">
+            <node concept="2OqwBi" id="2p23w$deFpT" role="2Oq$k0">
+              <node concept="2OqwBi" id="2p23w$deE_f" role="2Oq$k0">
+                <node concept="37vLTw" id="2p23w$deEq5" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2p23w$deEjL" resolve="g" />
+                </node>
+                <node concept="I4A8Y" id="2p23w$deEXQ" role="2OqNvi" />
+              </node>
+              <node concept="1j9C0f" id="2p23w$deFAq" role="2OqNvi">
+                <ref role="1j9C0d" to="py52:3GRi4m$qNtH" resolve="Goal" />
+              </node>
+            </node>
+            <node concept="1z4cxt" id="2p23w$deLTm" role="2OqNvi">
+              <node concept="1bVj0M" id="2p23w$deLTo" role="23t8la">
+                <node concept="3clFbS" id="2p23w$deLTp" role="1bW5cS">
+                  <node concept="3clFbF" id="2p23w$deM2q" role="3cqZAp">
+                    <node concept="3clFbC" id="2p23w$deN4j" role="3clFbG">
+                      <node concept="37vLTw" id="2p23w$deNjC" role="3uHU7w">
+                        <ref role="3cqZAo" node="2p23w$deEjL" resolve="g" />
+                      </node>
+                      <node concept="2OqwBi" id="2p23w$deMiK" role="3uHU7B">
+                        <node concept="37vLTw" id="2p23w$deM2p" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2p23w$deLTq" resolve="it" />
+                        </node>
+                        <node concept="3TrEf2" id="2p23w$deML9" role="2OqNvi">
+                          <ref role="3Tt5mk" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="2p23w$deLTq" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="2p23w$deLTr" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2p23w$deEjL" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3Tqbb2" id="2p23w$deEjK" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2p23w$deEf_" role="3clF45">
+        <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
+      </node>
+      <node concept="3Tm1VV" id="2p23w$deEbW" role="1B3o_S" />
+    </node>
+    <node concept="3Tm1VV" id="2p23w$deE8E" role="1B3o_S" />
   </node>
 </model>
 
