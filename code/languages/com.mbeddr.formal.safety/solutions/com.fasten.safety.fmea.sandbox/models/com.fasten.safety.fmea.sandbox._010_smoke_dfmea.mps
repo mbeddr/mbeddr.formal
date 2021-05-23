@@ -71,7 +71,7 @@
       <concept id="8413234032527468119" name="com.fasten.safety.fmea.arch.structure.DesignFMEA" flags="ng" index="1PLMAg">
         <reference id="8413234032528111728" name="arch" index="1POnuR" />
       </concept>
-      <concept id="8413234032528056373" name="com.fasten.safety.fmea.arch.structure.ComponentEffect" flags="ng" index="1PNyZM">
+      <concept id="8413234032528056373" name="com.fasten.safety.fmea.arch.structure.ComponentEffectAnalysis" flags="ng" index="1PNyZM">
         <reference id="4663111736254126539" name="effect" index="2VPQEx" />
       </concept>
     </language>
