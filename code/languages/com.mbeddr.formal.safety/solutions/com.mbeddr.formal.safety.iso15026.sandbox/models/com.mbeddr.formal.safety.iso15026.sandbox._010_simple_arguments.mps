@@ -15,9 +15,15 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="499b9416-98c1-4b55-b171-aed5472d5e5c" name="com.mbeddr.formal.safety.iso15026">
+      <concept id="6459896964698193466" name="com.mbeddr.formal.safety.iso15026.structure.TextualClaimSpecBase" flags="ng" index="1zOTgE">
+        <child id="1400999319313023862" name="text" index="1lhHC3" />
+      </concept>
+      <concept id="6459896964698192903" name="com.mbeddr.formal.safety.iso15026.structure.TextualClaimProperty" flags="ng" index="1zOTon" />
       <concept id="4537118758312122776" name="com.mbeddr.formal.safety.iso15026.structure.Argument" flags="ng" index="3E0SNw" />
       <concept id="4537118758312354939" name="com.mbeddr.formal.safety.iso15026.structure.Evidence" flags="ng" index="3E3N43" />
-      <concept id="4537118758311796120" name="com.mbeddr.formal.safety.iso15026.structure.Claim" flags="ng" index="3E68zw" />
+      <concept id="4537118758311796120" name="com.mbeddr.formal.safety.iso15026.structure.Claim" flags="ng" index="3E68zw">
+        <child id="6459896964698192906" name="claimProperty" index="1zOToq" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -80,12 +86,17 @@
       <node concept="19SGf9" id="3VR5nzkW2iY" role="2vnaTY">
         <node concept="19SUe$" id="3VR5nzkW2iZ" role="19SJt6" />
       </node>
+      <node concept="1zOTon" id="1dLmnl6dSdD" role="1zOToq">
+        <node concept="19SGf9" id="1dLmnl6e1Kh" role="1lhHC3">
+          <node concept="19SUe$" id="1dLmnl6e1Ki" role="19SJt6" />
+        </node>
+      </node>
     </node>
     <node concept="37mRI7" id="3VR5nzkW2jb" role="lGtFl">
       <node concept="37mRIm" id="3VR5nzkW2jc" role="37mRID">
         <property role="37mO49" value="4537118758311830717" />
         <node concept="gqqVs" id="3VR5nzkW2ja" role="37mO4d">
-          <property role="gqqTZ" value="206.0" />
+          <property role="gqqTZ" value="207.0" />
           <property role="gqqTW" value="54.0" />
           <property role="gqqTX" value="94.0" />
           <property role="gqqTy" value="41.0" />

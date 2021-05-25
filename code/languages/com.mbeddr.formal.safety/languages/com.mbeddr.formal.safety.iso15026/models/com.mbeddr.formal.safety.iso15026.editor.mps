@@ -123,6 +123,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -259,6 +262,46 @@
       <node concept="2iRkQZ" id="65Lrkjj1Riu" role="2iSdaV" />
       <node concept="PMmxH" id="4q8AAJKNOdo" role="3EZMnx">
         <ref role="PMmxG" to="g35p:4q8AAJKNO1e" resolve="NameDescriptionComponent" />
+      </node>
+      <node concept="3EZMnI" id="5AAax0Uts1G" role="3EZMnx">
+        <node concept="VPM3Z" id="5AAax0Uts1I" role="3F10Kt" />
+        <node concept="3F0ifn" id="5AAax0Uts1K" role="3EZMnx">
+          <property role="3F0ifm" value="Property:" />
+        </node>
+        <node concept="3F1sOY" id="5AAax0Uts2T" role="3EZMnx">
+          <ref role="1NtTu8" to="8pv1:5AAax0UtrKa" resolve="claimProperty" />
+        </node>
+        <node concept="2iRfu4" id="5AAax0Uts1L" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5AAax0Uts2X" role="3EZMnx">
+        <node concept="VPM3Z" id="5AAax0Uts2Y" role="3F10Kt" />
+        <node concept="3F0ifn" id="5AAax0Uts2Z" role="3EZMnx">
+          <property role="3F0ifm" value="Property Limitation:" />
+        </node>
+        <node concept="3F1sOY" id="5AAax0Uts30" role="3EZMnx">
+          <ref role="1NtTu8" to="8pv1:5AAax0UtrKd" resolve="claimPropertyLimitation" />
+        </node>
+        <node concept="2iRfu4" id="5AAax0Uts31" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5AAax0Utsa3" role="3EZMnx">
+        <node concept="VPM3Z" id="5AAax0Utsa4" role="3F10Kt" />
+        <node concept="3F0ifn" id="5AAax0Utsa5" role="3EZMnx">
+          <property role="3F0ifm" value="Property Uncertainty:" />
+        </node>
+        <node concept="3F1sOY" id="5AAax0Utsa6" role="3EZMnx">
+          <ref role="1NtTu8" to="8pv1:5AAax0UtrSM" resolve="uncertaintyOfPropertyValue" />
+        </node>
+        <node concept="2iRfu4" id="5AAax0Utsa7" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5AAax0Utshe" role="3EZMnx">
+        <node concept="VPM3Z" id="5AAax0Utshf" role="3F10Kt" />
+        <node concept="3F0ifn" id="5AAax0Utshg" role="3EZMnx">
+          <property role="3F0ifm" value="Property Applicability Duration:" />
+        </node>
+        <node concept="3F1sOY" id="5AAax0Utshh" role="3EZMnx">
+          <ref role="1NtTu8" to="8pv1:5AAax0UtrSY" resolve="applicabilityDurationLimitation" />
+        </node>
+        <node concept="2iRfu4" id="5AAax0Utshi" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="4q8AAJKJRwz" role="3EZMnx">
         <node concept="l2Vlx" id="4q8AAJKJRw$" role="2iSdaV" />
@@ -467,6 +510,13 @@
     <ref role="1XX52x" to="8pv1:3VR5nzkY2hV" resolve="Evidence" />
     <node concept="PMmxH" id="2ccN23oa2ke" role="2wV5jI">
       <ref role="PMmxG" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1dLmnl6dSdO">
+    <property role="3GE5qa" value="claim_properties.textual.base" />
+    <ref role="1XX52x" to="8pv1:5AAax0UtrSU" resolve="TextualClaimSpecBase" />
+    <node concept="3F1sOY" id="1dLmnl6dWuq" role="2wV5jI">
+      <ref role="1NtTu8" to="8pv1:1dLmnl6dSdQ" resolve="text" />
     </node>
   </node>
 </model>
