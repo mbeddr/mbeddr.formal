@@ -95,6 +95,18 @@
       <property role="20kJfa" value="claimApplicabilityCondition" />
       <ref role="20lvS9" node="1dLmnl6e1Kl" resolve="IClaimApplicabilityConditionsLimitations" />
     </node>
+    <node concept="1TJgyj" id="5dfRLjtvuzn" role="1TKVEi">
+      <property role="IQ2ns" value="6003262109016516823" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="claimScope" />
+      <ref role="20lvS9" node="5dfRLjtvutx" resolve="IClaimProductScope" />
+    </node>
+    <node concept="1TJgyj" id="5dfRLjtvDcV" role="1TKVEi">
+      <property role="IQ2ns" value="6003262109016560443" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="riskConsequence" />
+      <ref role="20lvS9" node="5dfRLjtvDcP" resolve="IClaimRiskConsequence" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3VR5nzkX9Ak">
     <property role="EcuMT" value="4537118758312122772" />
@@ -183,6 +195,43 @@
     <ref role="1TJDcQ" node="5AAax0UtrSU" resolve="TextualClaimSpecBase" />
     <node concept="PrWs8" id="1dLmnl6e1Ko" role="PzmwI">
       <ref role="PrY4T" node="1dLmnl6e1Kl" resolve="IClaimApplicabilityConditionsLimitations" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5dfRLjtvi_j">
+    <property role="EcuMT" value="6003262109016467795" />
+    <property role="3GE5qa" value="claim_properties.textual" />
+    <property role="TrG5h" value="TextualClaimPropertyUncertainty" />
+    <ref role="1TJDcQ" node="5AAax0UtrSU" resolve="TextualClaimSpecBase" />
+    <node concept="PrWs8" id="5dfRLjtvi_l" role="PzmwI">
+      <ref role="PrY4T" node="3VR5nzkX9Am" resolve="IClaimedPropertyUncertaintyLimitations" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5dfRLjtvutx">
+    <property role="EcuMT" value="6003262109016516449" />
+    <property role="3GE5qa" value="claim_properties.base.required" />
+    <property role="TrG5h" value="IClaimProductScope" />
+  </node>
+  <node concept="1TIwiD" id="5dfRLjtvuuo">
+    <property role="EcuMT" value="6003262109016516504" />
+    <property role="3GE5qa" value="claim_properties.textual" />
+    <property role="TrG5h" value="TextualClaimProductScope" />
+    <ref role="1TJDcQ" node="5AAax0UtrSU" resolve="TextualClaimSpecBase" />
+    <node concept="PrWs8" id="5dfRLjtvuuq" role="PzmwI">
+      <ref role="PrY4T" node="5dfRLjtvutx" resolve="IClaimProductScope" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5dfRLjtvDcP">
+    <property role="EcuMT" value="6003262109016560437" />
+    <property role="3GE5qa" value="claim_properties.base.required" />
+    <property role="TrG5h" value="IClaimRiskConsequence" />
+  </node>
+  <node concept="1TIwiD" id="5dfRLjtvDcQ">
+    <property role="EcuMT" value="6003262109016560438" />
+    <property role="3GE5qa" value="claim_properties.textual" />
+    <property role="TrG5h" value="TextualClaimRiskConsequence" />
+    <ref role="1TJDcQ" node="5AAax0UtrSU" resolve="TextualClaimSpecBase" />
+    <node concept="PrWs8" id="5dfRLjtvDcS" role="PzmwI">
+      <ref role="PrY4T" node="5dfRLjtvDcP" resolve="IClaimRiskConsequence" />
     </node>
   </node>
 </model>

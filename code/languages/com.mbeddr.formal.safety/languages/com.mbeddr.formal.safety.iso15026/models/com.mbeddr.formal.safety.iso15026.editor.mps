@@ -296,12 +296,42 @@
       <node concept="3EZMnI" id="5AAax0Utshe" role="3EZMnx">
         <node concept="VPM3Z" id="5AAax0Utshf" role="3F10Kt" />
         <node concept="3F0ifn" id="5AAax0Utshg" role="3EZMnx">
-          <property role="3F0ifm" value="Property Applicability Duration:" />
+          <property role="3F0ifm" value="Property Applicability Duration (optional):" />
         </node>
         <node concept="3F1sOY" id="5AAax0Utshh" role="3EZMnx">
           <ref role="1NtTu8" to="8pv1:5AAax0UtrSY" resolve="applicabilityDurationLimitation" />
         </node>
         <node concept="2iRfu4" id="5AAax0Utshi" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5dfRLjtvjti" role="3EZMnx">
+        <node concept="VPM3Z" id="5dfRLjtvjtj" role="3F10Kt" />
+        <node concept="3F0ifn" id="5dfRLjtvjtk" role="3EZMnx">
+          <property role="3F0ifm" value="Property Applicability Condition:" />
+        </node>
+        <node concept="3F1sOY" id="5dfRLjtvjtl" role="3EZMnx">
+          <ref role="1NtTu8" to="8pv1:1dLmnl6e2eW" resolve="claimApplicabilityCondition" />
+        </node>
+        <node concept="2iRfu4" id="5dfRLjtvjtm" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5dfRLjtvuDV" role="3EZMnx">
+        <node concept="VPM3Z" id="5dfRLjtvuDW" role="3F10Kt" />
+        <node concept="3F0ifn" id="5dfRLjtvuDX" role="3EZMnx">
+          <property role="3F0ifm" value="Claim Scope:" />
+        </node>
+        <node concept="3F1sOY" id="5dfRLjtvuDY" role="3EZMnx">
+          <ref role="1NtTu8" to="8pv1:5dfRLjtvuzn" resolve="claimScope" />
+        </node>
+        <node concept="2iRfu4" id="5dfRLjtvuDZ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5dfRLjtvDjw" role="3EZMnx">
+        <node concept="VPM3Z" id="5dfRLjtvDjx" role="3F10Kt" />
+        <node concept="3F0ifn" id="5dfRLjtvDjy" role="3EZMnx">
+          <property role="3F0ifm" value="Claim Risk Consequence:" />
+        </node>
+        <node concept="3F1sOY" id="5dfRLjtvDjz" role="3EZMnx">
+          <ref role="1NtTu8" to="8pv1:5dfRLjtvDcV" resolve="riskConsequence" />
+        </node>
+        <node concept="2iRfu4" id="5dfRLjtvDj$" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="4q8AAJKJRwz" role="3EZMnx">
         <node concept="l2Vlx" id="4q8AAJKJRw$" role="2iSdaV" />
