@@ -578,7 +578,7 @@
             <node concept="TSZUe" id="3VR5nzkZdS6" role="2OqNvi">
               <node concept="2ShNRf" id="3VR5nzkZdS7" role="25WWJ7">
                 <node concept="1pGfFk" id="3VR5nzkZdS8" role="2ShVmc">
-                  <ref role="37wK5l" node="3VR5nzkZ8pU" resolve="ConnectionFromClaimToEvidence" />
+                  <ref role="37wK5l" node="3VR5nzkZ8pU" resolve="ConnectionFromArgumentToEvidence" />
                 </node>
               </node>
             </node>
@@ -891,7 +891,7 @@
   </node>
   <node concept="312cEu" id="3VR5nzkZ8pS">
     <property role="3GE5qa" value="connections.baselang.connections" />
-    <property role="TrG5h" value="ConnectionFromClaimToEvidence" />
+    <property role="TrG5h" value="ConnectionFromArgumentToEvidence" />
     <node concept="2tJIrI" id="3VR5nzkZ8pT" role="jymVt" />
     <node concept="3clFbW" id="3VR5nzkZ8pU" role="jymVt">
       <node concept="3cqZAl" id="3VR5nzkZ8pV" role="3clF45" />
@@ -1037,8 +1037,8 @@
                     <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
                     <node concept="36biLy" id="3VR5nzkZ8r2" role="28nt2d">
                       <node concept="1PxgMI" id="3VR5nzkZ8r3" role="36biLW">
-                        <node concept="chp4Y" id="3VR5nzkZ8r4" role="3oSUPX">
-                          <ref role="cht4Q" to="8pv1:3VR5nzkVTQo" resolve="Claim" />
+                        <node concept="chp4Y" id="1SwRHZYktC3" role="3oSUPX">
+                          <ref role="cht4Q" to="8pv1:3VR5nzkX9Ao" resolve="Argument" />
                         </node>
                         <node concept="37vLTw" id="3VR5nzkZ8r5" role="1m5AlR">
                           <ref role="3cqZAo" node="3VR5nzkZ8qD" resolve="fromNode" />
@@ -1119,8 +1119,8 @@
               <node concept="2yIwOk" id="3VR5nzkZ8rz" role="2OqNvi" />
             </node>
             <node concept="2Zo12i" id="3VR5nzkZ8r$" role="2OqNvi">
-              <node concept="chp4Y" id="3VR5nzkZ8r_" role="2Zo12j">
-                <ref role="cht4Q" to="8pv1:3VR5nzkVTQo" resolve="Claim" />
+              <node concept="chp4Y" id="1SwRHZYktGI" role="2Zo12j">
+                <ref role="cht4Q" to="8pv1:3VR5nzkX9Ao" resolve="Argument" />
               </node>
             </node>
           </node>
