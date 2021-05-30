@@ -18,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.ft/com.fasten.safety.ft.mpl" folder="ft" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops.arch/com.fasten.safety.hiphops.arch.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops/com.fasten.safety.hiphops.mpl" folder="fmea_hiphops" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae/com.mbeddr.formal.safety.cae.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.acp/com.mbeddr.formal.safety.gsn.confidence.acp.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.doc/com.mbeddr.formal.safety.gsn.doc.mpl" folder="gsn" />
@@ -42,6 +43,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.rcp.pluginSolution/com.fasten.safety.rcp.pluginSolution.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.cae.sandbox/com.mbeddr.formal.safety.cae.sandbox.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.cbd.pluginSolution/com.mbeddr.formal.safety.gsn.cbd.pluginSolution.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.patterns.lib/com.mbeddr.formal.safety.gsn.patterns.lib.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.pluginSolution/com.mbeddr.formal.safety.gsn.pluginSolution.msd" folder="gsn" />
