@@ -478,7 +478,7 @@
   </node>
   <node concept="1lYeZD" id="58S6eLQJ3ha">
     <property role="2bfB8j" value="true" />
-    <property role="TrG5h" value="GsnBaseLanConnectionsFactoryProvider_extension" />
+    <property role="TrG5h" value="ISO15026BaseLanConnectionsFactoryProvider_extension" />
     <property role="3GE5qa" value="connections.baselang" />
     <ref role="1lYe$Y" to="p9qi:58S6eLQM0$n" resolve="GsnConnectionsFactoryProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2e" role="1B3o_S" />
@@ -501,7 +501,7 @@
         <node concept="3clFbF" id="58S6eLQJ9xH" role="3cqZAp">
           <node concept="2ShNRf" id="58S6eLQJ9xF" role="3clFbG">
             <node concept="HV5vD" id="58S6eLQJeJN" role="2ShVmc">
-              <ref role="HV5vE" node="3GRi4m$sKhy" resolve="CAEBaseLangConnectionsFactory" />
+              <ref role="HV5vE" node="3GRi4m$sKhy" resolve="ISO15026BaseLangConnectionsFactory" />
             </node>
           </node>
         </node>
@@ -513,7 +513,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3GRi4m$sKhy">
-    <property role="TrG5h" value="CAEBaseLangConnectionsFactory" />
+    <property role="TrG5h" value="ISO15026BaseLangConnectionsFactory" />
     <property role="3GE5qa" value="connections.baselang" />
     <node concept="2tJIrI" id="3GRi4m$sKlS" role="jymVt" />
     <node concept="3clFb_" id="7kF4CZH$RPD" role="jymVt">
