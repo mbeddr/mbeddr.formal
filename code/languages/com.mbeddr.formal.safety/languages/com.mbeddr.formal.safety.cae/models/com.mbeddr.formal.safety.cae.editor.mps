@@ -15,6 +15,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="swi3" ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)" />
     <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -98,6 +99,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -132,6 +137,11 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
       <concept id="6554619383001456740" name="de.itemis.mps.editor.diagram.structure.BoxEndpointTarget" flags="ng" index="23hSZX">
@@ -160,6 +170,10 @@
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
+      <concept id="7899485855305560746" name="de.itemis.mps.editor.diagram.structure.QueryFunction_LineStyle" flags="ig" index="1k5mSy" />
+      <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2">
+        <child id="7899485855305565127" name="query" index="1k5DXf" />
+      </concept>
       <concept id="6987730699889040828" name="de.itemis.mps.editor.diagram.structure.LineColor" flags="lg" index="3C0NmK" />
       <concept id="6987730699889040827" name="de.itemis.mps.editor.diagram.structure.LineWidth" flags="lg" index="3C0NmR">
         <property id="6987730699889499559" name="value" index="3DY3mF" />
@@ -478,9 +492,45 @@
       <node concept="3C0NmR" id="2ojFC2JdJ9G" role="3F10Kt">
         <property role="3DY3mF" value="1.5" />
       </node>
+      <node concept="3C0lA2" id="1zMKqRpr731" role="3F10Kt">
+        <node concept="1k5mSy" id="1zMKqRpr73c" role="1k5DXf">
+          <node concept="3clFbS" id="1zMKqRpr73d" role="2VODD2">
+            <node concept="3clFbF" id="1zMKqRpr78D" role="3cqZAp">
+              <node concept="3K4zz7" id="1zMKqRpr8Ny" role="3clFbG">
+                <node concept="Rm8GO" id="1zMKqRpr8XH" role="3K4E3e">
+                  <ref role="Rm8GQ" to="swi3:4mmPun57bLw" resolve="DASHED" />
+                  <ref role="1Px2BO" to="swi3:4mmPun57bLu" resolve="LineStyle" />
+                </node>
+                <node concept="Rm8GO" id="1zMKqRpr97Z" role="3K4GZi">
+                  <ref role="Rm8GQ" to="swi3:4mmPun57bLv" resolve="SOLID" />
+                  <ref role="1Px2BO" to="swi3:4mmPun57bLu" resolve="LineStyle" />
+                </node>
+                <node concept="2OqwBi" id="1zMKqRpr7rt" role="3K4Cdx">
+                  <node concept="pncrf" id="1zMKqRpr78C" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1zMKqRpr8hN" role="2OqNvi">
+                    <ref role="3TsBF5" to="cdmc:1zMKqRpr7OM" resolve="undeveloped" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="PMmxH" id="65Lrkjj1Rja" role="6VMZX">
-      <ref role="PMmxG" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
+    <node concept="3EZMnI" id="1zMKqRprfgq" role="6VMZX">
+      <node concept="2iRkQZ" id="1zMKqRprfgr" role="2iSdaV" />
+      <node concept="PMmxH" id="65Lrkjj1Rja" role="3EZMnx">
+        <ref role="PMmxG" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
+      </node>
+      <node concept="3EZMnI" id="1zMKqRprlpm" role="3EZMnx">
+        <node concept="2iRfu4" id="1zMKqRprlpn" role="2iSdaV" />
+        <node concept="3F0ifn" id="1zMKqRprlpE" role="3EZMnx">
+          <property role="3F0ifm" value="undeveloped:" />
+        </node>
+        <node concept="27S6Sx" id="1zMKqRprfrl" role="3EZMnx">
+          <ref role="1NtTu8" to="cdmc:1zMKqRpr7OM" resolve="undeveloped" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3VR5nzkXXeO">
@@ -511,9 +561,45 @@
       <node concept="3C0NmR" id="2ojFC2JdJd5" role="3F10Kt">
         <property role="3DY3mF" value="1.5" />
       </node>
+      <node concept="3C0lA2" id="1zMKqRprrt$" role="3F10Kt">
+        <node concept="1k5mSy" id="1zMKqRprrtJ" role="1k5DXf">
+          <node concept="3clFbS" id="1zMKqRprrtK" role="2VODD2">
+            <node concept="3clFbF" id="1zMKqRprrzc" role="3cqZAp">
+              <node concept="3K4zz7" id="1zMKqRprsUk" role="3clFbG">
+                <node concept="Rm8GO" id="1zMKqRpt6eC" role="3K4E3e">
+                  <ref role="Rm8GQ" to="swi3:4mmPun57bLw" resolve="DASHED" />
+                  <ref role="1Px2BO" to="swi3:4mmPun57bLu" resolve="LineStyle" />
+                </node>
+                <node concept="Rm8GO" id="1zMKqRpt6oU" role="3K4GZi">
+                  <ref role="Rm8GQ" to="swi3:4mmPun57bLv" resolve="SOLID" />
+                  <ref role="1Px2BO" to="swi3:4mmPun57bLu" resolve="LineStyle" />
+                </node>
+                <node concept="2OqwBi" id="1zMKqRprrQ0" role="3K4Cdx">
+                  <node concept="pncrf" id="1zMKqRprrzb" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1zMKqRprsad" role="2OqNvi">
+                    <ref role="3TsBF5" to="cdmc:1zMKqRprrr3" resolve="undeveloped" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="PMmxH" id="3VR5nzkXXeY" role="6VMZX">
-      <ref role="PMmxG" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
+    <node concept="3EZMnI" id="1zMKqRptc_s" role="6VMZX">
+      <node concept="2iRkQZ" id="1zMKqRptc_t" role="2iSdaV" />
+      <node concept="PMmxH" id="3VR5nzkXXeY" role="3EZMnx">
+        <ref role="PMmxG" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
+      </node>
+      <node concept="3EZMnI" id="1zMKqRptcR1" role="3EZMnx">
+        <node concept="2iRfu4" id="1zMKqRptcR2" role="2iSdaV" />
+        <node concept="3F0ifn" id="1zMKqRptcR3" role="3EZMnx">
+          <property role="3F0ifm" value="undeveloped:" />
+        </node>
+        <node concept="27S6Sx" id="1zMKqRptcR4" role="3EZMnx">
+          <ref role="1NtTu8" to="cdmc:1zMKqRprrr3" resolve="undeveloped" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="3VR5nzkXXnf">
