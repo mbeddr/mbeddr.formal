@@ -136,11 +136,13 @@
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
@@ -192,6 +194,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -287,13 +292,13 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6fCPE$QLID4">
-    <property role="TrG5h" value="extractAwayGoal" />
-    <ref role="2ZfgGC" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <property role="TrG5h" value="extractAwayEntity" />
+    <ref role="2ZfgGC" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     <node concept="2S6ZIM" id="6fCPE$QLID5" role="2ZfVej">
       <node concept="3clFbS" id="6fCPE$QLID6" role="2VODD2">
         <node concept="3clFbF" id="6fCPE$QLIPA" role="3cqZAp">
           <node concept="Xl_RD" id="6fCPE$QLIP_" role="3clFbG">
-            <property role="Xl_RC" value="Extract Away Goal" />
+            <property role="Xl_RC" value="Extract Away" />
           </node>
         </node>
       </node>
@@ -303,16 +308,30 @@
         <node concept="3clFbF" id="6fCPE$QLRDD" role="3cqZAp">
           <node concept="2YIFZM" id="6fCPE$QLREd" role="3clFbG">
             <ref role="37wK5l" node="6fCPE$QLPmG" resolve="extract" />
-            <ref role="1Pybhc" node="6fCPE$QLPlk" resolve="AwayGoalExtractor" />
+            <ref role="1Pybhc" node="6fCPE$QLPlk" resolve="AwayEntityExtractor" />
             <node concept="2Sf5sV" id="6fCPE$QLRED" role="37wK5m" />
             <node concept="1XNTG" id="6Ut9yCDDx_x" role="37wK5m" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="2SaL7w" id="3$Xa1eBcyx_" role="2ZfVeh">
+      <node concept="3clFbS" id="3$Xa1eBcyxA" role="2VODD2">
+        <node concept="3clFbF" id="3$Xa1eBcyAp" role="3cqZAp">
+          <node concept="2OqwBi" id="3$Xa1eBcyPF" role="3clFbG">
+            <node concept="2Sf5sV" id="3$Xa1eBcyAo" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3$Xa1eBcz74" role="2OqNvi">
+              <node concept="chp4Y" id="3$Xa1eBczdS" role="cj9EA">
+                <ref role="cht4Q" to="py52:3$Xa1eBcsPD" resolve="ICanBeAwayGoalStructureElement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="6fCPE$QLPlk">
-    <property role="TrG5h" value="AwayGoalExtractor" />
+    <property role="TrG5h" value="AwayEntityExtractor" />
     <node concept="2tJIrI" id="6fCPE$QLPlO" role="jymVt" />
     <node concept="2YIFZL" id="6fCPE$QLPmG" role="jymVt">
       <property role="TrG5h" value="extract" />
@@ -422,7 +441,7 @@
           <node concept="3cpWsn" id="6fCPE$QMB$J" role="3cpWs9">
             <property role="TrG5h" value="gAway" />
             <node concept="3Tqbb2" id="6fCPE$QMB$E" role="1tU5fm">
-              <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
+              <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
             </node>
             <node concept="2OqwBi" id="6fCPE$QMBOk" role="33vP2m">
               <node concept="37vLTw" id="6fCPE$QMBEP" role="2Oq$k0">
@@ -433,31 +452,37 @@
           </node>
         </node>
         <node concept="3clFbF" id="6fCPE$QMCeG" role="3cqZAp">
-          <node concept="37vLTI" id="6fCPE$QMD1_" role="3clFbG">
-            <node concept="2OqwBi" id="6fCPE$QMCwR" role="37vLTJ">
-              <node concept="37vLTw" id="6fCPE$QMCeE" role="2Oq$k0">
+          <node concept="2OqwBi" id="3$Xa1eBlpan" role="3clFbG">
+            <node concept="1PxgMI" id="3$Xa1eBloWi" role="2Oq$k0">
+              <node concept="chp4Y" id="3$Xa1eBloYb" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3$Xa1eBcsPD" resolve="ICanBeAwayGoalStructureElement" />
+              </node>
+              <node concept="37vLTw" id="6fCPE$QMCeE" role="1m5AlR">
                 <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="gAway" />
               </node>
-              <node concept="3TrcHB" id="6fCPE$QMCJ7" role="2OqNvi">
-                <ref role="3TsBF5" to="py52:4q8AAJKJQyk" resolve="away" />
-              </node>
             </node>
-            <node concept="3clFbT" id="6fCPE$QMDvR" role="37vLTx">
-              <property role="3clFbU" value="true" />
+            <node concept="2qgKlT" id="3$Xa1eBlpm0" role="2OqNvi">
+              <ref role="37wK5l" to="89jy:3$Xa1eBcuD4" resolve="setAway" />
+              <node concept="3clFbT" id="3$Xa1eBlpwe" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="6fCPE$QMDC0" role="3cqZAp">
-          <node concept="37vLTI" id="6fCPE$QMEbk" role="3clFbG">
-            <node concept="37vLTw" id="6fCPE$QMEdh" role="37vLTx">
-              <ref role="3cqZAo" node="6fCPE$QLPn9" resolve="g" />
-            </node>
-            <node concept="2OqwBi" id="6fCPE$QMDQ3" role="37vLTJ">
-              <node concept="37vLTw" id="6fCPE$QMDBY" role="2Oq$k0">
+          <node concept="2OqwBi" id="3$Xa1eBlq46" role="3clFbG">
+            <node concept="1PxgMI" id="3$Xa1eBlpS2" role="2Oq$k0">
+              <node concept="chp4Y" id="3$Xa1eBlpTU" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3$Xa1eBcsPD" resolve="ICanBeAwayGoalStructureElement" />
+              </node>
+              <node concept="37vLTw" id="6fCPE$QMDBY" role="1m5AlR">
                 <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="gAway" />
               </node>
-              <node concept="3TrEf2" id="6fCPE$QME8x" role="2OqNvi">
-                <ref role="3Tt5mk" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+            </node>
+            <node concept="2qgKlT" id="3$Xa1eBlqfI" role="2OqNvi">
+              <ref role="37wK5l" to="89jy:3$Xa1eBcuN4" resolve="setDefinition" />
+              <node concept="37vLTw" id="3$Xa1eBlqos" role="37wK5m">
+                <ref role="3cqZAo" node="6fCPE$QLPn9" resolve="g" />
               </node>
             </node>
           </node>
@@ -577,7 +602,7 @@
       <node concept="37vLTG" id="6fCPE$QLPn9" role="3clF46">
         <property role="TrG5h" value="g" />
         <node concept="3Tqbb2" id="6fCPE$QLPn8" role="1tU5fm">
-          <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
         </node>
       </node>
       <node concept="37vLTG" id="6Ut9yCDDxNM" role="3clF46">
@@ -850,7 +875,7 @@
       <node concept="37vLTG" id="6fCPE$QLSuo" role="3clF46">
         <property role="TrG5h" value="g" />
         <node concept="3Tqbb2" id="6fCPE$QLSup" role="1tU5fm">
-          <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
         </node>
       </node>
       <node concept="37vLTG" id="6fCPE$QLUOM" role="3clF46">

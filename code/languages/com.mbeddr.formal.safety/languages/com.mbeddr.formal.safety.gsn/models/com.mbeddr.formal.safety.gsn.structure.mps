@@ -154,6 +154,9 @@
     <node concept="PrWs8" id="5mW_a0OFpjW" role="PzmwI">
       <ref role="PrY4T" to="b19z:5mW_a0OEuea" resolve="IFASTENHierarchicalStructure" />
     </node>
+    <node concept="PrWs8" id="3$Xa1eBcsRZ" role="PzmwI">
+      <ref role="PrY4T" node="3$Xa1eBcsPD" resolve="ICanBeAwayGoalStructureElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$qS5k">
     <property role="EcuMT" value="4266958635905286484" />
@@ -373,6 +376,11 @@
       <property role="TrG5h" value="val" />
       <ref role="AX2Wp" node="2p23w$d2KIt" resolve="ColorString" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3$Xa1eBcsPD">
+    <property role="EcuMT" value="4124496898615790953" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ICanBeAwayGoalStructureElement" />
   </node>
 </model>
 

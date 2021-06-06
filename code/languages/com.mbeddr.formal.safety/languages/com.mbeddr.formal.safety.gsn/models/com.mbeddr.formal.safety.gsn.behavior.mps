@@ -141,6 +141,10 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -152,6 +156,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -978,6 +983,97 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3$Xa1eBcv7V" role="13h7CS">
+      <property role="TrG5h" value="setAway" />
+      <ref role="13i0hy" node="3$Xa1eBcuD4" resolve="setAway" />
+      <node concept="3Tm1VV" id="3$Xa1eBcv7W" role="1B3o_S" />
+      <node concept="3clFbS" id="3$Xa1eBcv7Z" role="3clF47">
+        <node concept="3clFbF" id="3$Xa1eBcvbo" role="3cqZAp">
+          <node concept="37vLTI" id="3$Xa1eBcwjp" role="3clFbG">
+            <node concept="37vLTw" id="3$Xa1eBcwGg" role="37vLTx">
+              <ref role="3cqZAo" node="3$Xa1eBcwyL" resolve="away" />
+            </node>
+            <node concept="2OqwBi" id="3$Xa1eBcvnq" role="37vLTJ">
+              <node concept="13iPFW" id="3$Xa1eBcvbn" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3$Xa1eBcvDO" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:4q8AAJKJQyk" resolve="away" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3$Xa1eBcv80" role="3clF45" />
+      <node concept="37vLTG" id="3$Xa1eBcwyL" role="3clF46">
+        <property role="TrG5h" value="away" />
+        <node concept="10P_77" id="3$Xa1eBcwyK" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="3$Xa1eBcv81" role="13h7CS">
+      <property role="TrG5h" value="setDefinition" />
+      <ref role="13i0hy" node="3$Xa1eBcuN4" resolve="setDefinition" />
+      <node concept="3Tm1VV" id="3$Xa1eBcv82" role="1B3o_S" />
+      <node concept="3clFbS" id="3$Xa1eBcv87" role="3clF47">
+        <node concept="3clFbF" id="3$Xa1eBcwGJ" role="3cqZAp">
+          <node concept="37vLTI" id="3$Xa1eBcxKX" role="3clFbG">
+            <node concept="1PxgMI" id="3$Xa1eBcy44" role="37vLTx">
+              <node concept="chp4Y" id="3$Xa1eBcych" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3GRi4m$qNtH" resolve="Goal" />
+              </node>
+              <node concept="37vLTw" id="3$Xa1eBcxRe" role="1m5AlR">
+                <ref role="3cqZAo" node="3$Xa1eBcv88" resolve="definition" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3$Xa1eBcwSL" role="37vLTJ">
+              <node concept="13iPFW" id="3$Xa1eBcwGI" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3$Xa1eBcxvA" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$Xa1eBcv88" role="3clF46">
+        <property role="TrG5h" value="definition" />
+        <node concept="3Tqbb2" id="3$Xa1eBcv89" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3$Xa1eBcv8a" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3$Xa1eBdojl" role="13h7CS">
+      <property role="TrG5h" value="isAway" />
+      <ref role="13i0hy" node="3$Xa1eBdmCd" resolve="isAway" />
+      <node concept="3Tm1VV" id="3$Xa1eBdojm" role="1B3o_S" />
+      <node concept="3clFbS" id="3$Xa1eBdojp" role="3clF47">
+        <node concept="3clFbF" id="3$Xa1eBdozr" role="3cqZAp">
+          <node concept="2OqwBi" id="3$Xa1eBdoLV" role="3clFbG">
+            <node concept="13iPFW" id="3$Xa1eBdozo" role="2Oq$k0" />
+            <node concept="3TrcHB" id="3$Xa1eBdp2J" role="2OqNvi">
+              <ref role="3TsBF5" to="py52:4q8AAJKJQyk" resolve="away" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3$Xa1eBdojq" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3$Xa1eBdojt" role="13h7CS">
+      <property role="TrG5h" value="getDefinition" />
+      <ref role="13i0hy" node="3$Xa1eBdmHX" resolve="getDefinition" />
+      <node concept="3Tm1VV" id="3$Xa1eBdoju" role="1B3o_S" />
+      <node concept="3clFbS" id="3$Xa1eBdojx" role="3clF47">
+        <node concept="3clFbF" id="3$Xa1eBdp64" role="3cqZAp">
+          <node concept="2OqwBi" id="3$Xa1eBdpid" role="3clFbG">
+            <node concept="13iPFW" id="3$Xa1eBdp63" role="2Oq$k0" />
+            <node concept="3TrEf2" id="3$Xa1eBdpP$" role="2OqNvi">
+              <ref role="3Tt5mk" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="3$Xa1eBdojy" role="3clF45">
+        <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2p23w$d427b">
     <property role="3GE5qa" value="attributes.color" />
@@ -998,6 +1094,57 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3$Xa1eBcuAD">
+    <property role="3GE5qa" value="base" />
+    <ref role="13h7C2" to="py52:3$Xa1eBcsPD" resolve="ICanBeAwayGoalStructureElement" />
+    <node concept="13i0hz" id="3$Xa1eBcuD4" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="setAway" />
+      <node concept="3Tm1VV" id="3$Xa1eBcuD5" role="1B3o_S" />
+      <node concept="3cqZAl" id="3$Xa1eBcuDo" role="3clF45" />
+      <node concept="3clFbS" id="3$Xa1eBcuD7" role="3clF47" />
+      <node concept="37vLTG" id="3$Xa1eBcwrb" role="3clF46">
+        <property role="TrG5h" value="away" />
+        <node concept="10P_77" id="3$Xa1eBcwra" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="3$Xa1eBdmCd" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isAway" />
+      <node concept="3Tm1VV" id="3$Xa1eBdmCe" role="1B3o_S" />
+      <node concept="10P_77" id="3$Xa1eBdmHL" role="3clF45" />
+      <node concept="3clFbS" id="3$Xa1eBdmCg" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="3$Xa1eBcuN4" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="setDefinition" />
+      <node concept="3Tm1VV" id="3$Xa1eBcuN5" role="1B3o_S" />
+      <node concept="3cqZAl" id="3$Xa1eBcuN6" role="3clF45" />
+      <node concept="3clFbS" id="3$Xa1eBcuN7" role="3clF47" />
+      <node concept="37vLTG" id="3$Xa1eBcuPT" role="3clF46">
+        <property role="TrG5h" value="definition" />
+        <node concept="3Tqbb2" id="3$Xa1eBcuPS" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3$Xa1eBdmHX" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getDefinition" />
+      <node concept="3Tm1VV" id="3$Xa1eBdmHY" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3$Xa1eBdmIT" role="3clF45">
+        <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+      <node concept="3clFbS" id="3$Xa1eBdmI0" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3$Xa1eBcuAE" role="13h7CW">
+      <node concept="3clFbS" id="3$Xa1eBcuAF" role="2VODD2" />
     </node>
   </node>
 </model>
