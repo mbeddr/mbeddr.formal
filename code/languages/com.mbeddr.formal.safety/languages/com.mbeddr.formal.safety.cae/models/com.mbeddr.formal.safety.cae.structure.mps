@@ -10,6 +10,19 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -19,8 +32,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -63,6 +81,18 @@
       <property role="20kJfa" value="claimDefinition" />
       <ref role="20lvS9" node="2ojFC2JaRek" resolve="Claim" />
     </node>
+    <node concept="PrWs8" id="3$Xa1eBcKHi" role="PzmwI">
+      <ref role="PrY4T" to="py52:3$Xa1eBcsPD" resolve="ICanBeAwayGoalStructureElement" />
+    </node>
+    <node concept="1irR5M" id="3$Xa1eBi8oC" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irPie" id="3$Xa1eBi8oJ" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="3$Xa1eBi8oQ" role="3PKjny">
+          <property role="3PKj8l" value="0000FF" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojFC2JaRne">
     <property role="EcuMT" value="2743728465716671950" />
@@ -76,6 +106,15 @@
       <property role="TrG5h" value="undeveloped" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1irR5M" id="3$Xa1eBi8rp" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irPie" id="3$Xa1eBi8xt" role="1irR9h">
+        <property role="1irPi9" value="A" />
+        <node concept="3PKj8D" id="3$Xa1eBi8x$" role="3PKjny">
+          <property role="3PKj8l" value="00FF00" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojFC2JaRnf">
     <property role="EcuMT" value="2743728465716671951" />
@@ -84,6 +123,15 @@
     <property role="R4oN_" value="an Evidence in the CAE notation" />
     <property role="3GE5qa" value="entities" />
     <ref role="1TJDcQ" node="2ojFC2JaRng" resolve="CAEArgumentElementBase" />
+    <node concept="1irR5M" id="3$Xa1eBi8qS" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="3$Xa1eBi8qZ" role="1irR9h">
+        <property role="1irPi9" value="E" />
+        <node concept="3PKj8D" id="3$Xa1eBi8r6" role="3PKjny">
+          <property role="3PKj8l" value="FF00FF" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojFC2JaRng">
     <property role="EcuMT" value="2743728465716671952" />
@@ -105,6 +153,15 @@
     <property role="TrG5h" value="Warrant" />
     <property role="34LRSv" value="Warrant" />
     <ref role="1TJDcQ" node="2ojFC2JaRek" resolve="Claim" />
+    <node concept="1irR5M" id="3$Xa1eBi8$u" role="rwd14">
+      <property role="2$rrk2" value="4" />
+      <node concept="1irPie" id="3$Xa1eBi8FY" role="1irR9h">
+        <property role="1irPi9" value="W" />
+        <node concept="3PKj8D" id="3$Xa1eBi8G5" role="3PKjny">
+          <property role="3PKj8l" value="A52A2A" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
