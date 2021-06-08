@@ -524,5 +524,32 @@
       <node concept="2iRfu4" id="5Ac1Q93JDoo" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1To8c6dXRnY">
+    <ref role="1XX52x" to="wvti:1To8c6dXRnv" resolve="DocumentGSNWord" />
+    <node concept="3EZMnI" id="1To8c6dXRo0" role="2wV5jI">
+      <node concept="3F0ifn" id="1To8c6dXRo1" role="3EZMnx">
+        <property role="3F0ifm" value="@documentGSN" />
+      </node>
+      <node concept="3F0ifn" id="1To8c6e6qDI" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="1iCGBv" id="1To8c6e6qDW" role="3EZMnx">
+        <ref role="1NtTu8" to="wvti:1To8c6dXRny" resolve="document" />
+        <node concept="1sVBvm" id="1To8c6e6qDY" role="1sWHZn">
+          <node concept="3F0A7n" id="1To8c6e6qE9" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1To8c6dXRo8" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="1To8c6dXRo9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1To8c6dXRoa" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
