@@ -195,5 +195,20 @@
       <ref role="20lvS9" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1To8c6dXRnv">
+    <property role="EcuMT" value="2186533634770957791" />
+    <property role="TrG5h" value="DocumentGSNWord" />
+    <property role="34LRSv" value="@documentGSN" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1To8c6dXRnw" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="1To8c6dXRny" role="1TKVEi">
+      <property role="IQ2ns" value="2186533634770957794" />
+      <property role="20kJfa" value="document" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5Ac1Q93INpM" resolve="DocumentGSN" />
+    </node>
+  </node>
 </model>
 
