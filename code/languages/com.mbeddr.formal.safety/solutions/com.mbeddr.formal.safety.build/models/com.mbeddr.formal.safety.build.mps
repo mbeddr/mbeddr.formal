@@ -9055,20 +9055,28 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="7FGTN4LGKHj" role="3bR31x">
-          <node concept="3LXTmp" id="7FGTN4LGKHk" role="3rtmxm">
-            <node concept="398BVA" id="7FGTN4LGKHl" role="3LXTmr">
+        <node concept="3rtmxn" id="39kKHgIJyHZ" role="3bR31x">
+          <node concept="3LXTmp" id="39kKHgIJyI0" role="3rtmxm">
+            <node concept="398BVA" id="39kKHgIJyI1" role="3LXTmr">
               <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-              <node concept="2Ry0Ak" id="7FGTN4LGKHm" role="iGT6I">
+              <node concept="2Ry0Ak" id="39kKHgIJyI2" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="7FGTN4LGKHn" role="2Ry0An">
+                <node concept="2Ry0Ak" id="39kKHgIJyI3" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae" />
+                  <node concept="2Ry0Ak" id="39kKHgIJyI4" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="7FGTN4LGKHp" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+            <node concept="3LWZYx" id="39kKHgIJyI5" role="3LXTna">
+              <property role="3LWZYw" value="com/mbeddr/formal/safety/cae/structure/*.png" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="39kKHgIJxVF" role="3bR37C">
+          <node concept="3bR9La" id="39kKHgIJxVG" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
       </node>
