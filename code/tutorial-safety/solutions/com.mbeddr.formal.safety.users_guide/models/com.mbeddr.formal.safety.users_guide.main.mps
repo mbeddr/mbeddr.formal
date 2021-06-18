@@ -13,6 +13,9 @@
     <import index="688z" ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" />
   </imports>
   <registry>
+    <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
+      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -56,6 +59,7 @@
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="3352153450711894224" name="configItems" index="2wNnkt" />
         <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
@@ -119,6 +123,7 @@
   <node concept="2SbYGP" id="2mjHtwTu9dY">
     <property role="TrG5h" value="conf" />
     <property role="3GE5qa" value="config" />
+    <node concept="1_07dB" id="5ALe34EIPc" role="2wNnkt" />
     <node concept="2SbYGw" id="9TY4XGZias" role="A10yx">
       <property role="TrG5h" value="img" />
       <node concept="9PVaO" id="9TY4XGZiar" role="9PVG_">
