@@ -616,6 +616,9 @@
       <node concept="m$_yC" id="1uyUeTt3RyX" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7yAshxDtbd3" resolve="com.mbeddr.mpsutil.genreview" />
       </node>
+      <node concept="m$_yC" id="3DZJpXNnCTq" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
+      </node>
       <node concept="3_J27D" id="1uyUeTt3ODf" role="m$_yQ">
         <node concept="3Mxwew" id="1uyUeTt3QtK" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.base" />
@@ -5137,6 +5140,11 @@
         <node concept="1SiIV0" id="5et_HVSOwOF" role="3bR37C">
           <node concept="3bR9La" id="5et_HVSOwOG" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNn_aL" role="3bR37C">
+          <node concept="3bR9La" id="3DZJpXNn_aM" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:39HJr_hyEzS" resolve="jetbrains.mps.ide.vcs.platform" />
           </node>
         </node>
       </node>
@@ -10424,6 +10432,180 @@
               <node concept="3qWCbU" id="2vOK$QwpJ9$" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3DZJpXNnzxP" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.fasten.safety.hazop" />
+        <property role="3LESm3" value="7af989c3-8042-42ae-bf04-8bcfa8f9dbf9" />
+        <node concept="398BVA" id="3DZJpXNnzY9" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="3DZJpXNn$fJ" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3DZJpXNn$xk" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.safety.hazop" />
+              <node concept="2Ry0Ak" id="3DZJpXNn$MT" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasten.safety.hazop.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNn_oR" role="3bR37C">
+          <node concept="3bR9La" id="3DZJpXNn_oS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNn_oT" role="3bR37C">
+          <node concept="3bR9La" id="3DZJpXNn_oU" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNn_oV" role="3bR37C">
+          <node concept="3bR9La" id="3DZJpXNn_oW" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3DZJpXNn_p8" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3DZJpXNn_p9" role="1HemKq">
+            <node concept="398BVA" id="3DZJpXNn_oX" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="3DZJpXNn_oY" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3DZJpXNn_oZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.hazop" />
+                  <node concept="2Ry0Ak" id="3DZJpXNn_p0" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3DZJpXNn_pa" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3DZJpXNnCu8" role="3bR31x">
+          <node concept="3LXTmp" id="3DZJpXNnCu9" role="3rtmxm">
+            <node concept="398BVA" id="3DZJpXNnCua" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="3DZJpXNnCub" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3DZJpXNnCuc" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.hazop" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3DZJpXNnCue" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3DZJpXNn_S4" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.fasten.safety.hazop.iso26262" />
+        <property role="3LESm3" value="f610e51f-b05d-4ea8-a354-7ee51a81bcbc" />
+        <node concept="398BVA" id="3DZJpXNnAkE" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="3DZJpXNnAJ0" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3DZJpXNnB9l" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.safety.hazop.iso26262" />
+              <node concept="2Ry0Ak" id="3DZJpXNnBGq" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasten.safety.hazop.iso26262.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNnCix" role="3bR37C">
+          <node concept="3bR9La" id="3DZJpXNnCiy" role="1SiIV1">
+            <ref role="3bR37D" node="7he_lUurCAX" resolve="com.mbeddr.formal.safety.iso26262" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNnCiz" role="3bR37C">
+          <node concept="3bR9La" id="3DZJpXNnCi$" role="1SiIV1">
+            <ref role="3bR37D" node="3DZJpXNnzxP" resolve="com.fasten.safety.hazop" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3DZJpXNnCiK" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3DZJpXNnCiL" role="1HemKq">
+            <node concept="398BVA" id="3DZJpXNnCi_" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="3DZJpXNnCiA" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3DZJpXNnCiB" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.hazop.iso26262" />
+                  <node concept="2Ry0Ak" id="3DZJpXNnCiC" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3DZJpXNnCiM" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNnCiN" role="3bR37C">
+          <node concept="1Busua" id="3DZJpXNnCiO" role="1SiIV1">
+            <ref role="1Busuk" node="3DZJpXNnzxP" resolve="com.fasten.safety.hazop" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNnCiP" role="3bR37C">
+          <node concept="1Busua" id="3DZJpXNnCiQ" role="1SiIV1">
+            <ref role="1Busuk" node="7he_lUurBQC" resolve="com.mbeddr.formal.safety.hara" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3DZJpXNnCiR" role="1TViLv">
+          <property role="TrG5h" value="com.fasten.safety.hazop.iso26262.generator" />
+          <property role="3LESm3" value="9e1d88fc-f602-4fce-a8da-b49212416b20" />
+          <node concept="1BupzO" id="3DZJpXNnCj5" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="3DZJpXNnCj6" role="1HemKq">
+              <node concept="398BVA" id="3DZJpXNnCiS" role="3LXTmr">
+                <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+                <node concept="2Ry0Ak" id="3DZJpXNnCiT" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3DZJpXNnCiU" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.fasten.safety.hazop.iso26262" />
+                    <node concept="2Ry0Ak" id="3DZJpXNnCiV" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="3DZJpXNnCiW" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="3DZJpXNnCj7" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3DZJpXNnCBl" role="3bR31x">
+          <node concept="3LXTmp" id="3DZJpXNnCBm" role="3rtmxm">
+            <node concept="398BVA" id="3DZJpXNnCBn" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="3DZJpXNnCBo" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3DZJpXNnCBp" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.hazop.iso26262" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3DZJpXNnCBr" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>
         </node>

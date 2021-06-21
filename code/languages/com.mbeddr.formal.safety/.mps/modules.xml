@@ -16,6 +16,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea/com.fasten.safety.fmea.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.ft.xfta_gen/com.fasten.safety.ft.xfta_gen.mpl" folder="ft" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.ft/com.fasten.safety.ft.mpl" folder="ft" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hazop.iso26262/com.fasten.safety.hazop.iso26262.mpl" folder="hazop" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hazop/com.fasten.safety.hazop.mpl" folder="hazop" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops.arch/com.fasten.safety.hiphops.arch.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops/com.fasten.safety.hiphops.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process/com.mbeddr.formal.safety.argument.process.mpl" folder="gsn" />
@@ -41,6 +43,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.sandbox/com.fasten.safety.ft.sandbox.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.xfta.pluginSolution/com.fasten.safety.ft.xfta.pluginSolution.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hara.sandbox/com.fasten.safety.hara.sandbox.msd" folder="hara" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hazop.sandbox/com.fasten.safety.hazop.sandbox.msd" folder="hazop" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.rcp.pluginSolution/com.fasten.safety.rcp.pluginSolution.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" folder="build" />

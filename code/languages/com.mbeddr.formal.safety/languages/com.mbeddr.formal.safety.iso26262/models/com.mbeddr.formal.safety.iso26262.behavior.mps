@@ -78,7 +78,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="55oVyA0lgYi">
-    <ref role="13h7C2" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituation" />
+    <ref role="13h7C2" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituationRef" />
     <node concept="13i0hz" id="55oVyA0kudj" role="13h7CS">
       <property role="TrG5h" value="computeASIL" />
       <node concept="3Tm1VV" id="55oVyA0kudk" role="1B3o_S" />

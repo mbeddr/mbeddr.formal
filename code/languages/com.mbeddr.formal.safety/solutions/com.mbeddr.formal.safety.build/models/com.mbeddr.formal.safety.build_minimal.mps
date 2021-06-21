@@ -510,6 +510,9 @@
       <node concept="m$_yC" id="6hyv0iVPlES" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7yAshxDtbd3" resolve="com.mbeddr.mpsutil.genreview" />
       </node>
+      <node concept="m$_yC" id="3DZJpXNnD_Z" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
+      </node>
       <node concept="3_J27D" id="6hyv0iVPlET" role="m$_yQ">
         <node concept="3Mxwew" id="6hyv0iVPlH8" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.base" />
@@ -2634,6 +2637,11 @@
         <node concept="1SiIV0" id="6hyv0iVPlN7" role="3bR37C">
           <node concept="3bR9La" id="6hyv0iVPlZI" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3DZJpXNnDjC" role="3bR37C">
+          <node concept="3bR9La" id="3DZJpXNnDjD" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:39HJr_hyEzS" resolve="jetbrains.mps.ide.vcs.platform" />
           </node>
         </node>
       </node>

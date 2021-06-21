@@ -236,7 +236,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="55oVyA0lgI8">
-    <ref role="1XX52x" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituation" />
+    <ref role="1XX52x" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituationRef" />
     <node concept="2r0Tta" id="55oVyA0lgIa" role="2wV5jI">
       <node concept="2reCLk" id="55oVyA0lgIe" role="2r0Tv6">
         <node concept="2reCLy" id="55oVyA0lskw" role="2reCL6">

@@ -246,7 +246,7 @@
                         <node concept="TSZUe" id="55oVyA0m9ka" role="2OqNvi">
                           <node concept="2pJPEk" id="55oVyA0mgQY" role="25WWJ7">
                             <node concept="2pJPED" id="55oVyA0mhbe" role="2pJPEn">
-                              <ref role="2pJxaS" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituation" />
+                              <ref role="2pJxaS" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituationRef" />
                               <node concept="2pJxcG" id="55oVyA0mhoo" role="2pJxcM">
                                 <ref role="2pJxcJ" to="1w8j:55oVyA0lgr2" resolve="controlability" />
                                 <node concept="WxPPo" id="55oVyA0mh$I" role="28ntcv">
