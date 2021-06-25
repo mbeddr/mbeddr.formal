@@ -276,16 +276,16 @@ publishing {
                 }
             }
         }
-		maven {​​​​
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/mbeddr/mbeddr.formal")
-            if(project.hasProperty("gpr.token")) {​​​​
-                credentials {​​​​
-                    username = project.findProperty("gpr.user")
-                    password = project.findProperty("gpr.token")
-                }​​​​
-            }​​​​
-        }​​​​
+		maven {
+			name = "GitHubPackages"
+			url = uri("https://maven.pkg.github.com/mbeddr/mbeddr.formal")
+			if(project.hasProperty("gpr.token")) {
+				credentials {
+					username = project.findProperty("gpr.user")
+					password = project.findProperty("gpr.token")
+				}
+			}
+		}
     }
     publications {
         NuSMVLanguages(MavenPublication) {
