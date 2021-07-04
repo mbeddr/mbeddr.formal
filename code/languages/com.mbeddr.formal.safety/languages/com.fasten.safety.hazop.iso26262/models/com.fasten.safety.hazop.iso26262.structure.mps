@@ -105,8 +105,8 @@
     <node concept="1TJgyj" id="3DZJpXNmwqO" role="1TKVEi">
       <property role="IQ2ns" value="4215296268774803124" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="operationalSituation" />
-      <ref role="20lvS9" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituationRef" />
+      <property role="20kJfa" value="hazardContext" />
+      <ref role="20lvS9" to="1w8j:55oVyA0lgqZ" resolve="HazardContext" />
     </node>
     <node concept="1TJgyj" id="3DZJpXNmwqM" role="1TKVEi">
       <property role="IQ2ns" value="4215296268774803122" />
