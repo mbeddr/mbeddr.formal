@@ -323,4 +323,4 @@ task cleanMps(type: Delete) {
 
 defaultTasks 'build_fasten_safety_distribution'
 
-task rebuild(dependsOn:[clean, build_formal_languages])
+task rebuild(dependsOn:[clean, build_fasten_safety_distribution])
