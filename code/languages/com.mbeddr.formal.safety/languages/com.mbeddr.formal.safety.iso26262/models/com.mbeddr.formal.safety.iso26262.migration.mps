@@ -227,7 +227,7 @@
                         <ref role="2Gs0qQ" node="55oVyA0lXlx" resolve="h" />
                       </node>
                       <node concept="3Tsc0h" id="55oVyA0lYrp" role="2OqNvi">
-                        <ref role="3TtcxE" to="1w8j:55oVyA0lgr9" resolve="operationalSituations" />
+                        <ref role="3TtcxE" to="1w8j:55oVyA0lgr9" resolve="hazardContexts" />
                       </node>
                     </node>
                     <node concept="1v1jN8" id="55oVyA0m3Eh" role="2OqNvi" />
@@ -240,13 +240,13 @@
                             <ref role="2Gs0qQ" node="55oVyA0lXlx" resolve="h" />
                           </node>
                           <node concept="3Tsc0h" id="55oVyA0m4lc" role="2OqNvi">
-                            <ref role="3TtcxE" to="1w8j:55oVyA0lgr9" resolve="operationalSituations" />
+                            <ref role="3TtcxE" to="1w8j:55oVyA0lgr9" resolve="hazardContexts" />
                           </node>
                         </node>
                         <node concept="TSZUe" id="55oVyA0m9ka" role="2OqNvi">
                           <node concept="2pJPEk" id="55oVyA0mgQY" role="25WWJ7">
                             <node concept="2pJPED" id="55oVyA0mhbe" role="2pJPEn">
-                              <ref role="2pJxaS" to="1w8j:55oVyA0lgqZ" resolve="OperationalSituationRef" />
+                              <ref role="2pJxaS" to="1w8j:55oVyA0lgqZ" resolve="HazardContext" />
                               <node concept="2pJxcG" id="55oVyA0mhoo" role="2pJxcM">
                                 <ref role="2pJxcJ" to="1w8j:55oVyA0lgr2" resolve="controlability" />
                                 <node concept="WxPPo" id="55oVyA0mh$I" role="28ntcv">

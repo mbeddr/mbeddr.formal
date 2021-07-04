@@ -62,7 +62,7 @@
       <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
         <child id="5861696777036874344" name="description" index="3h3iL1" />
       </concept>
-      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationRef" flags="ng" index="3h3uym">
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
@@ -74,7 +74,7 @@
       <concept id="4215296268774803102" name="com.fasten.safety.hazop.iso26262.structure.ISO26262HAZOPAnalysis" flags="ng" index="199rG1" />
       <concept id="4215296268774803128" name="com.fasten.safety.hazop.iso26262.structure.HazardRefHAZOPEffect" flags="ng" index="199rGB" />
       <concept id="4215296268774803121" name="com.fasten.safety.hazop.iso26262.structure.ISO262626HAZOPHazardousEvent" flags="ng" index="199rGI">
-        <child id="4215296268774803124" name="operationalSituation" index="199rGF" />
+        <child id="4215296268774803124" name="hazardContext" index="199rGF" />
         <child id="4215296268774803122" name="effect" index="199rGH" />
       </concept>
       <concept id="4215296268774803106" name="com.fasten.safety.hazop.iso26262.structure.ISO26262HAZOPParamDeviationEffect" flags="ng" index="199rGX">
@@ -98,9 +98,9 @@
               <property role="3oM_SC" value="level" />
             </node>
           </node>
-          <node concept="1PaTwC" id="3DZJpXNmRkM" role="1PaQFQ">
-            <node concept="3oM_SD" id="3DZJpXNmRkL" role="1PaTwD">
-              <property role="3oM_SC" value="estimation" />
+          <node concept="1PaTwC" id="7s11zFp0pD0" role="1PaQFQ">
+            <node concept="3oM_SD" id="7s11zFp0pFp" role="1PaTwD">
+              <property role="3oM_SC" value="estimation." />
             </node>
           </node>
         </node>
@@ -111,7 +111,7 @@
             <ref role="3h3iM1" node="3DZJpXNnhHw" resolve="OS1" />
           </node>
           <node concept="199rGB" id="3DZJpXNnx2p" role="199rGH">
-            <ref role="DABNb" node="3DZJpXNnhHB" resolve="Érroneous fuel indication" />
+            <ref role="DABNb" node="3DZJpXNnhHB" resolve="Erroneous fuel indication" />
           </node>
         </node>
         <node concept="199rJA" id="3DZJpXNmRkX" role="199rGW">
@@ -176,7 +176,7 @@
     <property role="TrG5h" value="_020_hazards_list" />
     <node concept="8gVzc" id="3DZJpXNnhHB" role="8gIbH">
       <property role="0lsPA" value="H01" />
-      <property role="TrG5h" value="Érroneous fuel indication" />
+      <property role="TrG5h" value="Erroneous fuel indication" />
     </node>
   </node>
 </model>
