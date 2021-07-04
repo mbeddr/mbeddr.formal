@@ -9409,35 +9409,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="7he_lUurCB4" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.safety.iso26262#01" />
-          <property role="3LESm3" value="3389df0d-6fde-4e73-b40a-1e198895cfaf" />
-          <node concept="1BupzO" id="5TezZ1Vejnb" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="5TezZ1Vejnc" role="1HemKq">
-              <node concept="398BVA" id="5TezZ1VejmY" role="3LXTmr">
-                <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-                <node concept="2Ry0Ak" id="5TezZ1VejmZ" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="5TezZ1Vejn0" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.formal.safety.iso26262" />
-                    <node concept="2Ry0Ak" id="5TezZ1Vejn1" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="5TezZ1Vejn2" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="5TezZ1Vejnd" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3rtmxn" id="7he_lUurCB5" role="3bR31x">
           <node concept="3LXTmp" id="7he_lUurCB6" role="3rtmxm">
             <node concept="398BVA" id="7he_lUurCB7" role="3LXTmr">
@@ -9502,6 +9473,11 @@
         <node concept="1SiIV0" id="55oVyA0sXc3" role="3bR37C">
           <node concept="3bR9La" id="55oVyA0sXc4" role="1SiIV1">
             <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JYWwihDhXh" role="3bR37C">
+          <node concept="3bR9La" id="4JYWwihDhXi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
       </node>

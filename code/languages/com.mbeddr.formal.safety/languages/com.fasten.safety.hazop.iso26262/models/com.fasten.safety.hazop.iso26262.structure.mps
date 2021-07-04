@@ -70,7 +70,7 @@
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="4JYWwihDgLw" role="1irR9h">
         <node concept="3PKj8D" id="4JYWwihDgL_" role="3PKjn_">
-          <property role="3PKj8l" value="44AA44" />
+          <property role="3PKj8l" value="55CC55" />
         </node>
       </node>
       <node concept="1irPie" id="4JYWwihDgLG" role="1irR9h">
