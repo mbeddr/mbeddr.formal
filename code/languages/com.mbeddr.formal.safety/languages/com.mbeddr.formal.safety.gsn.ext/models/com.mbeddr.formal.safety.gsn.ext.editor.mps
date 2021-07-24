@@ -14,6 +14,7 @@
     <import index="g35p" ref="r:53f7c624-e35c-46e0-a6cd-4bcccc2b91f5(com.mbeddr.formal.safety.gsn.editor)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="xm38" ref="r:d81a00b5-7941-4066-9929-d2d2283d4215(com.mbeddr.formal.base.tooling.vcs)" />
     <import index="lbo2" ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -22,12 +23,18 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="7418278005949660372" name="jetbrains.mps.lang.editor.structure.FontFamilyStyleClassItem" flags="ln" index="2biZxu" />
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
+        <child id="4242538589859162459" name="hints" index="2w$qW5" />
+      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -71,6 +78,7 @@
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="4242538589862653897" name="addHints" index="2whIAn" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -81,6 +89,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -149,6 +158,9 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -313,6 +325,42 @@
       <node concept="2iRkQZ" id="1qrXfdH2gEN" role="2iSdaV" />
       <node concept="PMmxH" id="1qrXfdH29G2" role="3EZMnx">
         <ref role="PMmxG" to="g35p:1qrXfdH1Y7r" resolve="GoalStructureDiagramEditorComponent" />
+        <node concept="pkWqt" id="3d5AacfxqEU" role="pqm2j">
+          <node concept="3clFbS" id="3d5AacfxqEV" role="2VODD2">
+            <node concept="3clFbF" id="4UQF4xbKLfh" role="3cqZAp">
+              <node concept="3fqX7Q" id="4UQF4xbKLff" role="3clFbG">
+                <node concept="2YIFZM" id="4UQF4xbKLke" role="3fr31v">
+                  <ref role="1Pybhc" to="xm38:4UQF4xbCZ$B" resolve="VCSUtils" />
+                  <ref role="37wK5l" to="xm38:69ZYbdzWubL" resolve="isInDiffView" />
+                  <node concept="1Q80Hx" id="4UQF4xbKLov" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="4UQF4xbKLpl" role="3EZMnx">
+        <node concept="VPM3Z" id="4UQF4xbKLpn" role="3F10Kt" />
+        <node concept="PMmxH" id="4UQF4xbKLxY" role="3EZMnx">
+          <ref role="PMmxG" to="g35p:4UQF4xbK33B" resolve="GoalStructureQueryListBasedEditorComponent" />
+        </node>
+        <node concept="2iRfu4" id="4UQF4xbKLpq" role="2iSdaV" />
+        <node concept="pkWqt" id="4UQF4xbKLy0" role="pqm2j">
+          <node concept="3clFbS" id="4UQF4xbKLy1" role="2VODD2">
+            <node concept="3clFbF" id="4UQF4xbM5lf" role="3cqZAp">
+              <node concept="2YIFZM" id="4UQF4xbM5lh" role="3clFbG">
+                <ref role="37wK5l" to="xm38:69ZYbdzWubL" resolve="isInDiffView" />
+                <ref role="1Pybhc" to="xm38:4UQF4xbCZ$B" resolve="VCSUtils" />
+                <node concept="1Q80Hx" id="4UQF4xbM5li" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2w$q5c" id="4UQF4xbKLJi" role="2whIAn">
+          <node concept="2aJ2om" id="4UQF4xbKLJj" role="2w$qW5">
+            <ref role="2$4xQ3" to="g35p:7olAlesPj8d" resolve="GOAL_STRUCTURE_TEXTUAL_FAST" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3EZMnI" id="5Ac1Q93IIEY" role="6VMZX">
