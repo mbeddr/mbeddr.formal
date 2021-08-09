@@ -346,48 +346,6 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="5Akhy7W3fRN" role="3acgRq">
-      <ref role="30HIoZ" to="wvti:1To8c6dXRnv" resolve="DocumentGSNWord" />
-      <node concept="gft3U" id="5Akhy7W3gfu" role="1lVwrX">
-        <node concept="19SUe$" id="5Akhy7W3gfv" role="gfFT$">
-          <property role="19SUeA" value="DocumentGSN Name" />
-          <node concept="1pdMLZ" id="5Akhy7W3gfw" role="lGtFl">
-            <node concept="2kFOW8" id="5Akhy7W3gfx" role="2kGFt3">
-              <node concept="3clFbS" id="5Akhy7W3gfy" role="2VODD2">
-                <node concept="3clFbF" id="5Akhy7W3gfz" role="3cqZAp">
-                  <node concept="2pJPEk" id="5Akhy7W3gf$" role="3clFbG">
-                    <node concept="2pJPED" id="5Akhy7W3gf_" role="2pJPEn">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                      <node concept="2pJxcG" id="5Akhy7W3gfA" role="2pJxcM">
-                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                        <node concept="WxPPo" id="5Akhy7W3gfB" role="28ntcv">
-                          <node concept="3cpWs3" id="5Akhy7W3gfC" role="WxPPp">
-                            <node concept="2OqwBi" id="5Akhy7W3gfD" role="3uHU7w">
-                              <node concept="2OqwBi" id="5Akhy7W3gfE" role="2Oq$k0">
-                                <node concept="30H73N" id="5Akhy7W3gfF" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="5Akhy7W3h6a" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="wvti:1To8c6dXRny" resolve="document" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="5Akhy7W3gfH" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="5Akhy7W3gfI" role="3uHU7B">
-                              <property role="Xl_RC" value="DocumentGSN " />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 
