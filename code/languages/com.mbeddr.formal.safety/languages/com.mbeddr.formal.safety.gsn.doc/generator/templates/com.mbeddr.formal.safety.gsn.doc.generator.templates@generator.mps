@@ -346,6 +346,48 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="pSY$8GdTuB" role="3acgRq">
+      <ref role="30HIoZ" to="wvti:1To8c6dXRnv" resolve="DocumentGSNWord" />
+      <node concept="gft3U" id="pSY$8GdTuC" role="1lVwrX">
+        <node concept="19SUe$" id="pSY$8GdTuD" role="gfFT$">
+          <property role="19SUeA" value="Document Name" />
+          <node concept="1pdMLZ" id="pSY$8GdTuE" role="lGtFl">
+            <node concept="2kFOW8" id="pSY$8GdTuF" role="2kGFt3">
+              <node concept="3clFbS" id="pSY$8GdTuG" role="2VODD2">
+                <node concept="3clFbF" id="pSY$8GdTuH" role="3cqZAp">
+                  <node concept="2pJPEk" id="pSY$8GdTuI" role="3clFbG">
+                    <node concept="2pJPED" id="pSY$8GdTuJ" role="2pJPEn">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="pSY$8GdTuK" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="WxPPo" id="pSY$8GdTuL" role="28ntcv">
+                          <node concept="3cpWs3" id="pSY$8GdTuM" role="WxPPp">
+                            <node concept="2OqwBi" id="pSY$8GdVc5" role="3uHU7w">
+                              <node concept="2OqwBi" id="pSY$8GdTuO" role="2Oq$k0">
+                                <node concept="30H73N" id="pSY$8GdTuP" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="pSY$8GdUKc" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="wvti:1To8c6dXRny" resolve="document" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="pSY$8GdVKr" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="pSY$8GdTuS" role="3uHU7B">
+                              <property role="Xl_RC" value="GSN Document " />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
