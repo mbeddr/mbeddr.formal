@@ -1,0 +1,8 @@
+# This is a Gradle generated file for dependency locking.
+# Manual edits can break the build and are not advised.
+# This file is expected to be part of source control.
+junit:junit:4.12
+org.apache.ant:ant-junit:1.10.6
+org.apache.ant:ant-launcher:1.10.6
+org.apache.ant:ant:1.10.6
+org.hamcrest:hamcrest-core:1.3

@@ -34,7 +34,7 @@ dependencyLocking {
 
 apply plugin: 'download-jbr'
 
-ext.jbrVers = '11_0_9-b944.49'
+ext.jbrVers = '11_0_10-b1145.9'
 
 downloadJbr {
     jbrVersion = jbrVers
