@@ -20,36 +20,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Download MPS
-      run: |
-        echo "Downloading MPS"
-        echo ${MPS_ZIP}
-        curl -L ${MPS_ZIP} > "MPS.zip"
-        
-        echo "Unzipping MPS"
-        unzip -o "MPS.zip" -d ~
-        
-        echo "Creating symbolic link to MPS folder"
-        ln -s '/home/runner/MPS ${MPS_VER}'/ MPS
-        
-        cp -a '/home/runner/MPS '${MPS_VER}'/bin/win/.' '/home/runner/MPS '${MPS_VER}'/bin/'
-        
-        echo "Downloading JBR - JetBrainsRuntime"
-        curl -L ${JBR} > "jbr.tar.gz"
-        
-        echo "Extracting JBR to MPS folder"
-        tar -C '/home/runner/MPS '${MPS_VER}'/' -zxvf "jbr.tar.gz"
-                
-    - name: Change FASTEN config
-      run: |
-        echo "Changing config"
-        echo "mpsHomeDir=/home/runner/MPS "${MPS_VER} > gradle.properties
-        echo "mps.home=/home/runner/MPS "${MPS_VER} >> gradle.properties
-        echo "mbeddr.formal.home=/home/runner/work/mbeddr.formal" >> gradle.properties
-        
-        echo "Gradle Properties:"
-        cat gradle.properties
-
     - name: Set up Gradle
       run: |
         chmod +x ./gradlew
@@ -64,50 +34,60 @@ jobs:
         java-version: 11  
         
     - name: Build FASTEN
-      uses: eskatos/gradle-command-action@v1
+      uses: eskatos/gradle-command-action@v1.3.3
       with: 
-        arguments: publishAllPublicationsToGitHubPackagesRepository -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000 -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        arguments: publishAllPublicationsToGitHubPackagesRepository -Dorg.gradle.internal.http.connectionTimeout=650000 -Dorg.gradle.internal.http.socketTimeout=650000 -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        dependencies-cache-exact: true
         configuration-cache-enabled: true
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
-    - name: Check Consistency of the FASTEN-NuSMV Tutorial 
-      uses: eskatos/gradle-command-action@v1
-      with:
-        arguments: -b check_tutorial_nusmv.gradle -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    #- name: Check Consistency of the FASTEN-NuSMV Tutorial 
+    #  uses: eskatos/gradle-command-action@v1.3.3
+    #  with:
+    #    arguments: -b check_tutorial_nusmv.gradle -Dorg.gradle.internal.http.connectionTimeout=650000 -Dorg.gradle.internal.http.socketTimeout=650000
+    #    wrapper-cache-enabled: true
+    #    dependencies-cache-enabled: true
+    #    dependencies-cache-key: gradle/dependency-locks/**
+    #    configuration-cache-enabled: true
+    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
-    - name: Check Consistency of the FASTEN-Safety Tutorial
-      uses: eskatos/gradle-command-action@v1
-      with:
-        arguments: -b check_tutorial_safety.gradle -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    #- name: Check Consistency of the FASTEN-Safety Tutorial
+    #  uses: eskatos/gradle-command-action@v1.3.3
+    #  with:
+    #    arguments: -b check_tutorial_safety.gradle -Dorg.gradle.internal.http.connectionTimeout=650000 -Dorg.gradle.internal.http.socketTimeout=650000
+    #    wrapper-cache-enabled: true
+    #    dependencies-cache-enabled: true
+    #    dependencies-cache-key: gradle/dependency-locks/**
+    #    configuration-cache-enabled: true
+    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
         
-    - name: Run Tests
-      uses: eskatos/gradle-command-action@v1
-      with: 
-        arguments: run_all_tests --offline -Dorg.gradle.internal.http.connectionTimeout=180000 -Dorg.gradle.internal.http.socketTimeout=180000
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        configuration-cache-enabled: true    
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    #- name: Run Tests
+    #  uses: eskatos/gradle-command-action@v1
+    #  with: 
+    #    arguments: run_all_tests --offline -Dorg.gradle.internal.http.connectionTimeout=650000 -Dorg.gradle.internal.http.socketTimeout=650000
+    #    wrapper-cache-enabled: true
+    #    dependencies-cache-enabled: true
+    #    dependencies-cache-key: gradle/dependency-locks/**
+    #    configuration-cache-enabled: true    
+    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
-    - name: Publish Test Report
-      uses: mikepenz/action-junit-report@v2
+    #- name: Publish Test Report
+    #  uses: mikepenz/action-junit-report@v2
+    #  with:
+    #    fail_on_failure: true
+    #    report_paths: 'build/**/TEST*.xml'
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Get Current Time
+      id: time
+      uses: nanzm/get-time-action@v1.1
       with:
-        fail_on_failure: true
-        report_paths: 'build/**/TEST*.xml'
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-
+        timeZone: 2
+        format: 'YYYY-MM-DD-HH-mm'
     - name: Archive distribution
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
-        name: fasten-distribution
+        name: fasten-distribution-2020.3-${{ steps.time.outputs.time }}
         path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-2020.3-SNAPSHOT.zip
