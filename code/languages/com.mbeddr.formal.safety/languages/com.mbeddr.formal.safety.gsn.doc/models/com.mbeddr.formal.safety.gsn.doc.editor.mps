@@ -532,6 +532,30 @@
       <node concept="2iRfu4" id="5Ac1Q93JDoo" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4KIvh_tvCkS">
+    <ref role="1XX52x" to="wvti:4KIvh_tvCfy" resolve="TemplateWord" />
+    <node concept="3EZMnI" id="4KIvh_tvCkU" role="2wV5jI">
+      <node concept="3F0ifn" id="4KIvh_tvCl1" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <node concept="11LMrY" id="2RlaC$PdimK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2UJp0AhteVL" role="3EZMnx">
+        <ref role="1NtTu8" to="wvti:3GRi4m$qYoV" resolve="text" />
+      </node>
+      <node concept="3F0ifn" id="3woDyDnZoAH" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="11L4FC" id="2RlaC$PdimF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2SqB2G" id="4jyWgNi3SSb" role="2SqHTX">
+          <property role="TrG5h" value="coll" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4jyWgNi3SSd" role="2iSdaV" />
+    </node>
+  </node>
   <node concept="24kQdi" id="1To8c6dXRnY">
     <ref role="1XX52x" to="wvti:1To8c6dXRnv" resolve="DocumentGSNWord" />
     <node concept="3EZMnI" id="1To8c6dXRo0" role="2wV5jI">
@@ -557,30 +581,6 @@
         </node>
       </node>
       <node concept="2iRfu4" id="1To8c6dXRoa" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="4KIvh_tvCkS">
-    <ref role="1XX52x" to="wvti:4KIvh_tvCfy" resolve="TemplateWord" />
-    <node concept="3EZMnI" id="4KIvh_tvCkU" role="2wV5jI">
-      <node concept="3F0ifn" id="4KIvh_tvCl1" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
-        <node concept="11LMrY" id="2RlaC$PdimK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="2UJp0AhteVL" role="3EZMnx">
-        <ref role="1NtTu8" to="wvti:3GRi4m$qYoV" resolve="text" />
-      </node>
-      <node concept="3F0ifn" id="3woDyDnZoAH" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-        <node concept="11L4FC" id="2RlaC$PdimF" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2SqB2G" id="4jyWgNi3SSb" role="2SqHTX">
-          <property role="TrG5h" value="coll" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="4jyWgNi3SSd" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2UJp0AhtoJw">

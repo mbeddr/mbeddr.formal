@@ -197,23 +197,6 @@
       <ref role="20lvS9" node="5Ac1Q93INpM" resolve="DocumentGSN" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4KIvh_tvCfy">
-    <property role="EcuMT" value="5489462543707440098" />
-    <property role="TrG5h" value="TemplateWord" />
-    <property role="34LRSv" value="{" />
-    <property role="R4oN_" value="template word" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="3GRi4m$qYoV" role="1TKVEi">
-      <property role="IQ2ns" value="4266958635905312315" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
-    <node concept="PrWs8" id="4KIvh_tvCfz" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2UJp0AhtoIv">
     <property role="EcuMT" value="3364017438926932895" />
     <property role="TrG5h" value="SourceWord" />
@@ -240,6 +223,23 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="year" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4KIvh_tvCfy">
+    <property role="EcuMT" value="5489462543707440098" />
+    <property role="TrG5h" value="TemplateWord" />
+    <property role="34LRSv" value="{" />
+    <property role="R4oN_" value="template word" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3GRi4m$qYoV" role="1TKVEi">
+      <property role="IQ2ns" value="4266958635905312315" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+    <node concept="PrWs8" id="4KIvh_tvCfz" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
 </model>
