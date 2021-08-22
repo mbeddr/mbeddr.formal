@@ -1,0 +1,7 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="SansSerif" />
+    <option name="fontScale" value="1.0" />
+    <option name="fontSize" value="11" />
+  </component>
+</application>
