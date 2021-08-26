@@ -6,7 +6,7 @@
     <use id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base" version="0" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
     <devkit ref="5a50cadb-4d6e-4722-b5f5-c6b9efb22ffe(fasten.safety.gsn.formal)" />
@@ -219,7 +219,7 @@
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
-        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
       </concept>
       <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
         <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
@@ -227,7 +227,7 @@
       <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
         <child id="5861696777036874344" name="description" index="3h3iL1" />
       </concept>
-      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>

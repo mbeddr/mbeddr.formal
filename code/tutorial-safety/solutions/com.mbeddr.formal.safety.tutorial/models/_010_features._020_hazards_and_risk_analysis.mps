@@ -131,7 +131,7 @@
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
-        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
       </concept>
       <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
         <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
@@ -139,8 +139,7 @@
       <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
         <child id="5861696777036874344" name="description" index="3h3iL1" />
       </concept>
-      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
-        <property id="5861696777036826305" name="exposure" index="3h3uzC" />
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <property id="5861696777036826304" name="severity" index="3h3uzD" />
         <property id="5861696777036826306" name="controlability" index="3h3uzF" />
         <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
@@ -696,13 +695,11 @@
       </node>
       <node concept="3h3uym" id="55oVyA0mGR1" role="3h3uzw">
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <ref role="3h3iM1" node="1LvcKAYEWJP" resolve="OS01" />
       </node>
       <node concept="3h3uym" id="1LvcKAYEWK8" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKN/S1" />
-        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <ref role="3h3iM1" node="1LvcKAYEWJZ" resolve="OS02" />
       </node>
@@ -718,7 +715,6 @@
       </node>
       <node concept="3h3uym" id="55oVyA0mGR2" role="3h3uzw">
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
         <ref role="3h3iM1" node="1LvcKAYEWJP" resolve="OS01" />
       </node>
@@ -734,7 +730,6 @@
       </node>
       <node concept="3h3uym" id="55oVyA0mGR3" role="3h3uzw">
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
         <ref role="3h3iM1" node="1LvcKAYEWJP" resolve="OS01" />
       </node>

@@ -115,15 +115,16 @@
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
-        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
       </concept>
       <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
         <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
       </concept>
       <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <property id="5476080298365952689" name="exposure" index="3qod2P" />
         <child id="5861696777036874344" name="description" index="3h3iL1" />
       </concept>
-      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <property id="5861696777036826305" name="exposure" index="3h3uzC" />
         <property id="5861696777036826304" name="severity" index="3h3uzD" />
         <property id="5861696777036826306" name="controlability" index="3h3uzF" />
@@ -583,8 +584,8 @@
       </node>
       <node concept="3h3uym" id="55oVyA0sYgQ" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
-        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
         <ref role="3h3iM1" node="55oVyA0mSKa" resolve="OS1" />
       </node>
     </node>
@@ -602,8 +603,8 @@
       </node>
       <node concept="3h3uym" id="55oVyA0sYgS" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
-        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <ref role="3h3iM1" node="55oVyA0mSKu" resolve="OS2" />
       </node>
     </node>
@@ -618,8 +619,8 @@
       </node>
       <node concept="3h3uym" id="55oVyA0sYgV" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
-        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <ref role="3h3iM1" node="55oVyA0sYg4" resolve="OS6" />
       </node>
     </node>
@@ -637,8 +638,8 @@
       </node>
       <node concept="3h3uym" id="55oVyA0sYgY" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
-        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <ref role="3h3iM1" node="55oVyA0sYfJ" resolve="OS5" />
       </node>
     </node>
@@ -653,8 +654,8 @@
       </node>
       <node concept="3h3uym" id="55oVyA0sYh1" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
-        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <ref role="3h3iM1" node="55oVyA0sYft" resolve="OS4" />
       </node>
     </node>
@@ -682,6 +683,7 @@
     <property role="TrG5h" value="_000_operational_situations" />
     <node concept="3h3iLe" id="55oVyA0mSKa" role="3h3F1H">
       <property role="TrG5h" value="OS1" />
+      <property role="3qod2P" value="24PsEXFbNL9/E3" />
       <node concept="19SGf9" id="55oVyA0mSKb" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0mSKc" role="19SJt6">
           <property role="19SUeA" value="during normal driving on highway in normal conditions at very high speed at day time" />
@@ -690,6 +692,7 @@
     </node>
     <node concept="3h3iLe" id="55oVyA0mSKu" role="3h3F1H">
       <property role="TrG5h" value="OS2" />
+      <property role="3qod2P" value="24PsEXFbNLe/E4" />
       <node concept="19SGf9" id="55oVyA0mSKv" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0mSKw" role="19SJt6">
           <property role="19SUeA" value="during normal driving on highway in normal conditions at high speed at day time" />
@@ -698,6 +701,7 @@
     </node>
     <node concept="3h3iLe" id="55oVyA0mSKB" role="3h3F1H">
       <property role="TrG5h" value="OS3" />
+      <property role="3qod2P" value="24PsEXFbNLe/E4" />
       <node concept="19SGf9" id="55oVyA0mSKC" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0mSKD" role="19SJt6">
           <property role="19SUeA" value="during normal driving on highway in normal conditions at low speed at day time" />
@@ -706,6 +710,7 @@
     </node>
     <node concept="3h3iLe" id="55oVyA0sYft" role="3h3F1H">
       <property role="TrG5h" value="OS4" />
+      <property role="3qod2P" value="24PsEXFbNL5/E2" />
       <node concept="19SGf9" id="55oVyA0sYfu" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0sYfv" role="19SJt6">
           <property role="19SUeA" value="during normal driving in urban area in normal conditions at very high speed at day time" />
@@ -714,6 +719,7 @@
     </node>
     <node concept="3h3iLe" id="55oVyA0sYfJ" role="3h3F1H">
       <property role="TrG5h" value="OS5" />
+      <property role="3qod2P" value="24PsEXFbNLe/E4" />
       <node concept="19SGf9" id="55oVyA0sYfK" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0sYfL" role="19SJt6">
           <property role="19SUeA" value="during normal driving in urban area in normal conditions at high speed at day time" />
@@ -722,6 +728,7 @@
     </node>
     <node concept="3h3iLe" id="55oVyA0sYg4" role="3h3F1H">
       <property role="TrG5h" value="OS6" />
+      <property role="3qod2P" value="24PsEXFbNLe/E4" />
       <node concept="19SGf9" id="55oVyA0sYg5" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0sYg6" role="19SJt6">
           <property role="19SUeA" value="during normal driving in urban area in normal conditions at low speed at day time" />

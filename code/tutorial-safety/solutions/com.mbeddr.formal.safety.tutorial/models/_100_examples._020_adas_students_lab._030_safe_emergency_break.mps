@@ -323,9 +323,9 @@
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
-        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
       </concept>
-      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <property id="5861696777036826305" name="exposure" index="3h3uzC" />
         <property id="5861696777036826304" name="severity" index="3h3uzD" />
         <property id="5861696777036826306" name="controlability" index="3h3uzF" />
