@@ -12199,7 +12199,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="com.fasten-203.SNAPSHOT" />
+            <property role="3MwjfP" value="FASTEN-203.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -13075,6 +13075,9 @@
             </node>
             <node concept="3_I8Xc" id="3ZV5FZJFBbM" role="39821P">
               <ref role="3_I8Xa" to="ffeo:6b4RkXS7XdG" resolve="mps-build" />
+            </node>
+            <node concept="3_I8Xc" id="5ehf6dVy_Rd" role="39821P">
+              <ref role="3_I8Xa" to="ffeo:4wxeloVufXE" resolve="mps-git4idea" />
             </node>
             <node concept="3_I8Xc" id="4aeOpjlAb01" role="39821P">
               <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
