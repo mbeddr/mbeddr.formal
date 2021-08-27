@@ -449,6 +449,27 @@
                 </node>
               </node>
             </node>
+            <node concept="2pNNFK" id="1LeaOOdasEi" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <node concept="2pNUuL" id="1LeaOOdasEj" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="1LeaOOdasEk" role="2pMdts">
+                  <property role="2pMdty" value="ShowUsersDocu" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1LeaOOdasEl" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="1LeaOOdasEm" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.ShowUsersDocu" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1LeaOOdasEn" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="1LeaOOdasEo" role="2pMdts">
+                  <property role="2pMdty" value="Users Documentation" />
+                </node>
+              </node>
+            </node>
             <node concept="2pNNFK" id="7Nv7YQoE1ux" role="3o6s8t">
               <property role="2pNNFO" value="action" />
               <node concept="2pNUuL" id="7Nv7YQoE1uy" role="2pNNFR">
@@ -862,6 +883,41 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="7Nv7YQoE3Dv" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="1LeaOOdasEP">
+    <property role="TrG5h" value="ShowUsersDocu" />
+    <property role="3GE5qa" value="show_web" />
+    <node concept="3Tm1VV" id="1LeaOOdasEQ" role="1B3o_S" />
+    <node concept="3uibUv" id="1LeaOOdasER" role="1zkMxy">
+      <ref role="3uigEE" to="2ny0:~ShowSiteAction" resolve="ShowSiteAction" />
+    </node>
+    <node concept="2tJIrI" id="1LeaOOdasES" role="jymVt" />
+    <node concept="3clFbW" id="1LeaOOdasET" role="jymVt">
+      <node concept="3cqZAl" id="1LeaOOdasEU" role="3clF45" />
+      <node concept="3Tm1VV" id="1LeaOOdasEV" role="1B3o_S" />
+      <node concept="3clFbS" id="1LeaOOdasEW" role="3clF47">
+        <node concept="XkiVB" id="1LeaOOdasEX" role="3cqZAp">
+          <ref role="37wK5l" to="2ny0:~ShowSiteAction.&lt;init&gt;(java.lang.String)" resolve="ShowSiteAction" />
+          <node concept="10Nm6u" id="1LeaOOdasEY" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1LeaOOdasEZ" role="jymVt" />
+    <node concept="3clFb_" id="1LeaOOdasF0" role="jymVt">
+      <property role="TrG5h" value="getSiteURL" />
+      <node concept="3Tmbuc" id="1LeaOOdasF1" role="1B3o_S" />
+      <node concept="17QB3L" id="1LeaOOdasF2" role="3clF45" />
+      <node concept="3clFbS" id="1LeaOOdasF3" role="3clF47">
+        <node concept="3clFbF" id="1LeaOOdasF4" role="3cqZAp">
+          <node concept="Xl_RD" id="1LeaOOdasF5" role="3clFbG">
+            <property role="Xl_RC" value="https://danielratiu.github.io/FASTEN-Docs/" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1LeaOOdasF6" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
