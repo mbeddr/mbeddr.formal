@@ -148,7 +148,7 @@
       <property role="TrG5h" value="G01" />
       <node concept="19SGf9" id="7L33HENduwR" role="2vnaTY">
         <node concept="19SUe$" id="7L33HENduwS" role="19SJt6">
-          <property role="19SUeA" value="The airbag system is &#10;sufficiently safe to operate" />
+          <property role="19SUeA" value="The system is &#10;sufficiently safe to operate" />
         </node>
       </node>
     </node>
