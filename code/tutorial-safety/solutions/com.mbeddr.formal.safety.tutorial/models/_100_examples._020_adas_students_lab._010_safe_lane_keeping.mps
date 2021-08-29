@@ -291,12 +291,12 @@
         <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
       </concept>
       <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <property id="5476080298365952689" name="exposure" index="3qod2P" />
         <child id="5861696777036874344" name="description" index="3h3iL1" />
       </concept>
       <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <property id="5861696777036826305" name="exposure" index="3h3uzC" />
-        <property id="5861696777036826304" name="severity" index="3h3uzD" />
-        <property id="5861696777036826306" name="controlability" index="3h3uzF" />
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -595,211 +595,198 @@
       <property role="0lsPB" value="H01" />
       <property role="TrG5h" value="Missing of lane markers - ASIL QM " />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRe" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="75La0fJyPjx" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="55oVyA0mUqx" resolve="OS1_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYeb" role="8gIbH">
       <property role="TrG5h" value="System does not recognize lane - ASIL QM" />
       <property role="0lsPB" value="H03" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRf" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="75La0fJyPj$" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="55oVyA0mUqx" resolve="OS1_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYel" role="8gIbH">
       <property role="TrG5h" value="System recognizes wrong lane -  ASIL B" />
       <property role="0lsPB" value="H04" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRg" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPjO" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="75La0fJyPjB" resolve="OS2_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYex" role="8gIbH">
       <property role="TrG5h" value="Delayed steering - ASIL QM" />
       <property role="0lsPB" value="H05" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRh" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJyPk3" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYeJ" role="8gIbH">
       <property role="TrG5h" value="Overshooting/oszillation of system - ASIL QM" />
       <property role="0lsPB" value="H06" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRi" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJyPk6" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYeZ" role="8gIbH">
       <property role="TrG5h" value="Uncomfortable steering - ASIL QM" />
       <property role="0lsPB" value="H07" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRj" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="75La0fJyPk9" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYfh" role="8gIbH">
       <property role="TrG5h" value="Delayed overtaking of driver - ASIL QM" />
       <property role="0lsPB" value="H08" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRk" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJyPkc" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyPjB" resolve="OS2_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYfV" role="8gIbH">
       <property role="TrG5h" value="Overwrite/prevent driver input - ASIL QM" />
       <property role="0lsPB" value="H10" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRl" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPkf" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYgj" role="8gIbH">
       <property role="TrG5h" value="Compensation of hardware faults - ASIL QM" />
       <property role="0lsPB" value="H11" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRm" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPki" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYgH" role="8gIbH">
       <property role="TrG5h" value="Unnecessary warnings - ASIL QM" />
       <property role="0lsPB" value="H12" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRn" role="3h3uzw">
+      <node concept="3h3uym" id="75La0fJyPkl" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
+        <ref role="3h3iM1" node="75La0fJyPjB" resolve="OS2_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYh9" role="8gIbH">
       <property role="TrG5h" value="Complicated interface - ASIL QM" />
       <property role="0lsPB" value="H13" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRo" role="3h3uzw">
+      <node concept="3h3uym" id="75La0fJyPko" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYhB" role="8gIbH">
       <property role="TrG5h" value="Driver not informed about takeover - ASIL QM" />
       <property role="0lsPB" value="H14" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRp" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPkr" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYi7" role="8gIbH">
       <property role="TrG5h" value="Unwanted deactivation - ASIL QM" />
       <property role="0lsPB" value="H15" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRq" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJyPku" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYiD" role="8gIbH">
       <property role="TrG5h" value="No correction of unintended user input - ASIL QM" />
       <property role="0lsPB" value="H16" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRr" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJyPkx" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYjd" role="8gIbH">
       <property role="TrG5h" value="Wrong data processing (bug) - ASIL QM" />
       <property role="0lsPB" value="H17" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRs" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="75La0fJyPk$" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYkr" role="8gIbH">
       <property role="TrG5h" value="Failure of hardware - ASIL A" />
       <property role="0lsPB" value="H19" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRt" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPkB" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyPjB" resolve="OS2_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYl5" role="8gIbH">
       <property role="TrG5h" value="Camera is dirty - ASIL QM" />
       <property role="0lsPB" value="H20" />
       <ref role="2HxXJk" node="G$XGFsgYch" resolve="Loss of mission" />
-      <node concept="3h3uym" id="55oVyA0mGRu" role="3h3uzw">
+      <node concept="3h3uym" id="75La0fJyPkE" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyPjB" resolve="OS2_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="G$XGFsgYmv" role="8gIbH">
       <property role="TrG5h" value="Overexposed camera - ASIL QM" />
       <property role="0lsPB" value="H21" />
       <ref role="2HxXJk" node="G$XGFsgYch" resolve="Loss of mission" />
-      <node concept="3h3uym" id="55oVyA0mGRv" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJyPkL" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyPjB" resolve="OS2_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="4GKPLBASxXu" role="8gIbH">
       <property role="0lsPB" value="H22" />
       <property role="TrG5h" value="Leaving of lane - ASIL B" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRw" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJyPkO" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <ref role="3h3iM1" node="55oVyA0mUqx" resolve="OS1_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="lV44fsLWj5" role="8gIbH">
       <property role="0lsPB" value="H23" />
       <property role="TrG5h" value="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRx" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPkR" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="lV44fsLWjR" role="8gIbH">
       <property role="0lsPB" value="H24" />
       <property role="TrG5h" value="User interface devices not working properly - ASIL QM" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRy" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPkU" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
     <node concept="1a6Z8w" id="lV44fsLWkF" role="8gIbH">
       <property role="TrG5h" value="Lane keeping system cannot be activated - ASIL QM" />
       <property role="0lsPB" value="H25" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRz" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJyPkX" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL2/E1" />
+        <ref role="3h3iM1" node="75La0fJyPjR" resolve="OS3_LK" />
       </node>
     </node>
   </node>
@@ -7891,9 +7878,28 @@
     <property role="TrG5h" value="_030_operational_situations" />
     <node concept="3h3iLe" id="55oVyA0mUqx" role="3h3F1H">
       <property role="TrG5h" value="OS1_LK" />
+      <property role="3qod2P" value="24PsEXFbNL9/E3" />
       <node concept="19SGf9" id="55oVyA0mUqy" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0mUqz" role="19SJt6">
-          <property role="19SUeA" value="while driving on highway, at high speed, in normal weather conditions, during daylight" />
+          <property role="19SUeA" value="driving on highway, in normal weather conditions, during daylight" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="75La0fJyPjB" role="3h3F1H">
+      <property role="TrG5h" value="OS2_LK" />
+      <property role="3qod2P" value="24PsEXFbNL5/E2" />
+      <node concept="19SGf9" id="75La0fJyPjC" role="3h3iL1">
+        <node concept="19SUe$" id="75La0fJyPjD" role="19SJt6">
+          <property role="19SUeA" value="driving on highway, in foggy weather conditions, during daylight" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="75La0fJyPjR" role="3h3F1H">
+      <property role="TrG5h" value="OS3_LK" />
+      <property role="3qod2P" value="24PsEXFbNL2/E1" />
+      <node concept="19SGf9" id="75La0fJyPjS" role="3h3iL1">
+        <node concept="19SUe$" id="75La0fJyPjT" role="19SJt6">
+          <property role="19SUeA" value="driving on highway, in heavy rain conditions, during night" />
         </node>
       </node>
     </node>
