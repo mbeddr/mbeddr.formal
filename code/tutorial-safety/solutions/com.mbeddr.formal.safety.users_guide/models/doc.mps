@@ -701,7 +701,7 @@
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="4U3OABz7YA1" role="1_0VJ0">
       <property role="TrG5h" value="assurance" />
-      <property role="1_0VJr" value="Assurance Models" />
+      <property role="1_0VJr" value="Structured Assurance Cases" />
       <node concept="1_0LV8" id="4U3OABz7YA2" role="1_0VJ0">
         <node concept="19SGf9" id="4U3OABz7YA3" role="1_0LWR">
           <node concept="19SUe$" id="4U3OABz7YA4" role="19SJt6">
@@ -732,6 +732,33 @@
           <node concept="2NCZwO" id="1LeaOOdal3q" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdal3F" role="2NCMaf">
               <ref role="2NCMaa" to="io0z:7L33HENduwy" resolve="_010_plain_text_gsn" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="75La0fJ_mRh" role="1_0VJ0">
+        <property role="TrG5h" value="plain_cae" />
+        <property role="1_0VJr" value="Plain CAE Models" />
+        <node concept="1_0LV8" id="75La0fJ_mRi" role="1_0VJ0">
+          <node concept="19SGf9" id="75La0fJ_mRj" role="1_0LWR">
+            <node concept="19SUe$" id="75La0fJ_mRk" role="19SJt6">
+              <property role="19SUeA" value="FASTEN allows the creation of structured arguments using Claims-Argument-Evidence language. The content of CAE elements is specified using natural language text." />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="75La0fJ_mRl" role="1_0VJ0">
+          <property role="TrG5h" value="_011_plain_text_cae" />
+          <node concept="OjmMv" id="75La0fJ_mRm" role="3z_lpS">
+            <node concept="19SGf9" id="75La0fJ_mRn" role="OjmMu">
+              <node concept="19SUe$" id="75La0fJ_mRo" role="19SJt6">
+                <property role="19SUeA" value="Example of CAE model using plain text for describing entities. Colors can be used on entities to improve the communication." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="75La0fJ_mRp" role="3z_lpT" />
+          <node concept="2NCZwO" id="75La0fJ_mRq" role="3z_lpI">
+            <node concept="2NCMab" id="75La0fJ_mT7" role="2NCMaf">
+              <ref role="2NCMaa" to="io0z:2ojFC2JbceD" resolve="_011_plain_text_cae" />
             </node>
           </node>
         </node>
