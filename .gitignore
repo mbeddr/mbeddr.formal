@@ -21,6 +21,7 @@ source_gen.caches
 pan_verifier_bin
 result_gen
 jimple_gen
+doc_gen
 
 workspace.xml
 
