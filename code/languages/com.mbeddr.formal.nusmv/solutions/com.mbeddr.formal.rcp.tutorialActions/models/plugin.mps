@@ -268,34 +268,6 @@
           <property role="2pNNFO" value="actions" />
           <node concept="2pNNFK" id="7836$RyXdVZ" role="3o6s8t">
             <property role="2pNNFO" value="group" />
-            <node concept="2pNNFK" id="7836$RyXdWj" role="3o6s8t">
-              <property role="2pNNFO" value="action" />
-              <property role="qg3DV" value="true" />
-              <node concept="2pNUuL" id="7836$RyXdWr" role="2pNNFR">
-                <property role="2pNUuO" value="id" />
-                <node concept="2pMdtt" id="7836$RyXdWv" role="2pMdts">
-                  <property role="2pMdty" value="OpenFastenTutorialProject" />
-                </node>
-              </node>
-              <node concept="2pNUuL" id="7836$RyXdWB" role="2pNNFR">
-                <property role="2pNUuO" value="class" />
-                <node concept="2pMdtt" id="7836$RyXdWL" role="2pMdts">
-                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.OpenFastenTutorialProjectAction" />
-                </node>
-              </node>
-              <node concept="2pNUuL" id="7836$RyXdZK" role="2pNNFR">
-                <property role="2pNUuO" value="text" />
-                <node concept="2pMdtt" id="7836$RyXe00" role="2pMdts">
-                  <property role="2pMdty" value="FASTEN Tutorial" />
-                </node>
-              </node>
-              <node concept="2pNUuL" id="7836$RyXe08" role="2pNNFR">
-                <property role="2pNUuO" value="description" />
-                <node concept="2pMdtt" id="7836$RyXe0u" role="2pMdts">
-                  <property role="2pMdty" value="Opens the FASTEN tutorial from the installation directory" />
-                </node>
-              </node>
-            </node>
             <node concept="2pNNFK" id="7Y21hZBa7$_" role="3o6s8t">
               <property role="2pNNFO" value="action" />
               <property role="qg3DV" value="true" />
@@ -314,13 +286,41 @@
               <node concept="2pNUuL" id="7Y21hZBa7$E" role="2pNNFR">
                 <property role="2pNUuO" value="text" />
                 <node concept="2pMdtt" id="7Y21hZBa7$F" role="2pMdts">
-                  <property role="2pMdty" value="FASTEN.Safety Tutorial" />
+                  <property role="2pMdty" value="Safety Tutorial" />
                 </node>
               </node>
               <node concept="2pNUuL" id="7Y21hZBa7$G" role="2pNNFR">
                 <property role="2pNUuO" value="description" />
                 <node concept="2pMdtt" id="7Y21hZBa7$H" role="2pMdts">
                   <property role="2pMdty" value="Opens the FASTEN safety tutorial from the installation directory" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7836$RyXdWj" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7836$RyXdWr" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="7836$RyXdWv" role="2pMdts">
+                  <property role="2pMdty" value="OpenFastenTutorialProject" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7836$RyXdWB" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="7836$RyXdWL" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.OpenFastenTutorialProjectAction" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7836$RyXdZK" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="7836$RyXe00" role="2pMdts">
+                  <property role="2pMdty" value="Formal.Specs Tutorial" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7836$RyXe08" role="2pNNFR">
+                <property role="2pNUuO" value="description" />
+                <node concept="2pMdtt" id="7836$RyXe0u" role="2pMdts">
+                  <property role="2pMdty" value="Opens the FASTEN tutorial from the installation directory" />
                 </node>
               </node>
             </node>
