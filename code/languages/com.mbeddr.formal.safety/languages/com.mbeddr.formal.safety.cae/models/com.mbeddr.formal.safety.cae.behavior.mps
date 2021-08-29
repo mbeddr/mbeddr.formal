@@ -60,6 +60,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -210,6 +213,39 @@
       <node concept="3Tqbb2" id="3$Xa1eBdqI5" role="3clF45">
         <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="75La0fJ$_7M">
+    <property role="3GE5qa" value="entities" />
+    <ref role="13h7C2" to="cdmc:2ojFC2Jc4iw" resolve="Warrant" />
+    <node concept="13hLZK" id="75La0fJ$_7N" role="13h7CW">
+      <node concept="3clFbS" id="75La0fJ$_7O" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="75La0fJ$_7X" role="13h7CS">
+      <property role="TrG5h" value="isSourceOfSpecialConnections" />
+      <ref role="13i0hy" to="89jy:7TjUbLQ7E1K" resolve="isSourceOfSpecialConnections" />
+      <node concept="3Tm1VV" id="75La0fJ$_7Y" role="1B3o_S" />
+      <node concept="3clFbS" id="75La0fJ$_83" role="3clF47">
+        <node concept="3clFbF" id="75La0fJ$_hO" role="3cqZAp">
+          <node concept="3clFbT" id="75La0fJ$_hN" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="75La0fJ$_84" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="75La0fJ$_i7" role="13h7CS">
+      <property role="TrG5h" value="isTargetOfSpecialConnections" />
+      <ref role="13i0hy" to="89jy:7TjUbLQ7DYX" resolve="isTargetOfSpecialConnections" />
+      <node concept="3Tm1VV" id="75La0fJ$_i8" role="1B3o_S" />
+      <node concept="3clFbS" id="75La0fJ$_id" role="3clF47">
+        <node concept="3clFbF" id="75La0fJ$_s4" role="3cqZAp">
+          <node concept="3clFbT" id="75La0fJ$_s3" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="75La0fJ$_ie" role="3clF45" />
     </node>
   </node>
 </model>
