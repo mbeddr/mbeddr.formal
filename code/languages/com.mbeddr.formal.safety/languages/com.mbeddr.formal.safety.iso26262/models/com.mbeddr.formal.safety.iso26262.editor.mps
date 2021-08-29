@@ -32,6 +32,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -154,6 +155,9 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
     <language id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline">
       <concept id="8006371471054135775" name="de.slisson.mps.editor.multiline.structure.CellModel_Multiline" flags="sg" stub="8664183491941389655" index="2v7bAL" />
@@ -237,16 +241,8 @@
         </node>
       </node>
     </node>
-    <node concept="3EZMnI" id="2bJTE4$9EA7" role="6VMZX">
-      <node concept="3F0ifn" id="2bJTE4$9EA8" role="3EZMnx">
-        <property role="3F0ifm" value="Severity, Exposure and Controlability classes:" />
-      </node>
-      <node concept="3F0ifn" id="2bJTE4$9EA9" role="3EZMnx" />
-      <node concept="2iRkQZ" id="2bJTE4$9EAa" role="2iSdaV" />
-      <node concept="1u4HXA" id="2bJTE4$9EAb" role="3EZMnx">
-        <property role="1ubRXE" value="${module}/images/severity_exposure_controlability.png" />
-        <property role="1$Qi42" value="0" />
-      </node>
+    <node concept="PMmxH" id="75La0fJykCy" role="6VMZX">
+      <ref role="PMmxG" node="75La0fJykt3" resolve="SeverityExposureControlabilityClasses" />
     </node>
   </node>
   <node concept="24kQdi" id="55oVyA0lgI8">
@@ -382,6 +378,9 @@
         </node>
       </node>
     </node>
+    <node concept="PMmxH" id="75La0fJykUZ" role="6VMZX">
+      <ref role="PMmxG" node="75La0fJykt3" resolve="SeverityExposureControlabilityClasses" />
+    </node>
   </node>
   <node concept="24kQdi" id="55oVyA0ls9M">
     <property role="3GE5qa" value="operational_situation" />
@@ -414,6 +413,9 @@
         </node>
       </node>
     </node>
+    <node concept="PMmxH" id="75La0fJyPl6" role="6VMZX">
+      <ref role="PMmxG" node="75La0fJyPl0" resolve="ExposureClasses" />
+    </node>
   </node>
   <node concept="24kQdi" id="55oVyA0l_T2">
     <property role="3GE5qa" value="operational_situation" />
@@ -435,6 +437,36 @@
     <ref role="1XX52x" to="1w8j:4JYWwihCjpF" resolve="TextualRationale" />
     <node concept="3F1sOY" id="4JYWwihCBMf" role="2wV5jI">
       <ref role="1NtTu8" to="1w8j:4JYWwihCjpP" resolve="text" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="75La0fJykt3">
+    <property role="TrG5h" value="SeverityExposureControlabilityClasses" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3EZMnI" id="75La0fJykt5" role="2wV5jI">
+      <node concept="3F0ifn" id="75La0fJykt6" role="3EZMnx">
+        <property role="3F0ifm" value="Severity, Exposure and Controlability classes:" />
+      </node>
+      <node concept="3F0ifn" id="75La0fJykt7" role="3EZMnx" />
+      <node concept="2iRkQZ" id="75La0fJykt8" role="2iSdaV" />
+      <node concept="1u4HXA" id="75La0fJykt9" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/images/severity_exposure_controlability.png" />
+        <property role="1$Qi42" value="0" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="75La0fJyPl0">
+    <property role="TrG5h" value="ExposureClasses" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3EZMnI" id="75La0fJyPl1" role="2wV5jI">
+      <node concept="3F0ifn" id="75La0fJyPl2" role="3EZMnx">
+        <property role="3F0ifm" value="Exposure classes:" />
+      </node>
+      <node concept="3F0ifn" id="75La0fJyPl3" role="3EZMnx" />
+      <node concept="2iRkQZ" id="75La0fJyPl4" role="2iSdaV" />
+      <node concept="1u4HXA" id="75La0fJyPl5" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/images/exposure.png" />
+        <property role="1$Qi42" value="0" />
+      </node>
     </node>
   </node>
 </model>
