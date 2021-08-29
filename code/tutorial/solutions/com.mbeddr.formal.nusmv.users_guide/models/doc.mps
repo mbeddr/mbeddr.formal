@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7933adf1-314d-496c-aac6-e6e6d5fc1e96(nusmv.users_guide.main)">
+<model ref="r:7933adf1-314d-496c-aac6-e6e6d5fc1e96(doc)">
   <persistence version="9" />
   <languages>
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
@@ -147,64 +147,8 @@
   </registry>
   <node concept="1_1swa" id="2mjHtwTu97P">
     <property role="yApLE" value="1" />
-    <property role="TrG5h" value="_000_overview" />
+    <property role="TrG5h" value="FASTEN_FormalSpecs_Tutorial" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
-    <node concept="3xmJbL" id="3slobAdyVWQ" role="1_0VJ0" />
-    <node concept="$CzcT" id="3slobAdyWdQ" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyWrb" role="$CzcU">
-        <ref role="1_0j5g" node="2mjHtwTDzN4" resolve="_010_nusmv_base_language" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="25dEoZdod3f" role="1_0VJ0">
-      <node concept="1_0j5j" id="25dEoZdod6b" role="$CzcU">
-        <ref role="1_0j5g" node="25dEoZdocsX" resolve="_015_nusmv_ext_language" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="3slobAdyWAw" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyWCQ" role="$CzcU">
-        <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="1uIpCUuqi1q" role="1_0VJ0">
-      <node concept="1_0j5j" id="1uIpCUuqi6_" role="$CzcU">
-        <ref role="1_0j5g" node="1uIpCUuqeRD" resolve="_021_scenarios_realizability" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="3slobAdyWHW" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyWPm" role="$CzcU">
-        <ref role="1_0j5g" node="2mjHtwTD$1m" resolve="_030_architecture" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="3slobAdyWKm" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyWPq" role="$CzcU">
-        <ref role="1_0j5g" node="2mjHtwTDQ$8" resolve="_040_state_machines" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="3slobAdyWMO" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyWPu" role="$CzcU">
-        <ref role="1_0j5g" node="2mjHtwTG722" resolve="_050_tables" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="3slobAdyWS8" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyWXw" role="$CzcU">
-        <ref role="1_0j5g" node="67icRu62XMj" resolve="_070_verification_cases" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="3slobAdyWUM" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyWX$" role="$CzcU">
-        <ref role="1_0j5g" node="70Z3iwfi4xA" resolve="_100_operator_panels" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="1uIpCUuqeMY" role="1_0VJ0">
-      <node concept="1_0j5j" id="1LeaOOdah$G" role="$CzcU">
-        <ref role="1_0j5g" node="2RmPJMxI18G" resolve="_300_component_based_design" />
-      </node>
-    </node>
-    <node concept="$CzcT" id="3slobAdyWXC" role="1_0VJ0">
-      <node concept="1_0j5j" id="3slobAdyX0q" role="$CzcU">
-        <ref role="1_0j5g" node="2H74AM1F3Q4" resolve="_500_importer" />
-      </node>
-    </node>
     <node concept="1_1sxE" id="3slobAdyWFB" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
     </node>
@@ -394,6 +338,62 @@
           </node>
         </node>
       </node>
+      <node concept="3xmJbL" id="3slobAdyVWQ" role="1_0VJ0" />
+      <node concept="$CzcT" id="3slobAdyWdQ" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyWrb" role="$CzcU">
+          <ref role="1_0j5g" node="2mjHtwTDzN4" resolve="_010_nusmv_base_language" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="25dEoZdod3f" role="1_0VJ0">
+        <node concept="1_0j5j" id="25dEoZdod6b" role="$CzcU">
+          <ref role="1_0j5g" node="25dEoZdocsX" resolve="_015_nusmv_ext_language" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="3slobAdyWAw" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyWCQ" role="$CzcU">
+          <ref role="1_0j5g" node="2mjHtwTDz15" resolve="_020_unit_testing" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="1uIpCUuqi1q" role="1_0VJ0">
+        <node concept="1_0j5j" id="1uIpCUuqi6_" role="$CzcU">
+          <ref role="1_0j5g" node="1uIpCUuqeRD" resolve="_021_scenarios_realizability" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="3slobAdyWHW" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyWPm" role="$CzcU">
+          <ref role="1_0j5g" node="2mjHtwTD$1m" resolve="_030_architecture" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="3slobAdyWKm" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyWPq" role="$CzcU">
+          <ref role="1_0j5g" node="2mjHtwTDQ$8" resolve="_040_state_machines" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="3slobAdyWMO" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyWPu" role="$CzcU">
+          <ref role="1_0j5g" node="2mjHtwTG722" resolve="_050_tables" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="3slobAdyWS8" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyWXw" role="$CzcU">
+          <ref role="1_0j5g" node="67icRu62XMj" resolve="_070_verification_cases" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="3slobAdyWUM" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyWX$" role="$CzcU">
+          <ref role="1_0j5g" node="70Z3iwfi4xA" resolve="_100_operator_panels" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="1uIpCUuqeMY" role="1_0VJ0">
+        <node concept="1_0j5j" id="1LeaOOdah$G" role="$CzcU">
+          <ref role="1_0j5g" node="2RmPJMxI18G" resolve="_300_component_based_design" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="3slobAdyWXC" role="1_0VJ0">
+        <node concept="1_0j5j" id="3slobAdyX0q" role="$CzcU">
+          <ref role="1_0j5g" node="2H74AM1F3Q4" resolve="_500_importer" />
+        </node>
+      </node>
     </node>
     <node concept="1_1sxE" id="3slobAdyWmU" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -459,6 +459,7 @@
   <node concept="1_1swa" id="2mjHtwTDz15">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_020_unit_testing" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="2mjHtwTD$5A" role="1_0VJ0">
       <property role="TrG5h" value="unit_testing" />
@@ -655,6 +656,7 @@
   <node concept="1_1swa" id="2mjHtwTDzN4">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_010_nusmv_base_language" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="2mjHtwTD$aE" role="1_0VJ0">
       <property role="TrG5h" value="base_language" />
@@ -759,6 +761,7 @@
   <node concept="1_1swa" id="2mjHtwTD$1m">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_030_architecture" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1LeaOOdajke" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_arch_section" />
@@ -1052,6 +1055,7 @@
   <node concept="1_1swa" id="2mjHtwTDQ$8">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_040_state_machines" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1LeaOOdajnS" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_sm" />
@@ -1254,6 +1258,7 @@
   <node concept="1_1swa" id="2mjHtwTG722">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_050_tables" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1LeaOOdajZu" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_tables" />
@@ -1435,6 +1440,7 @@
   <node concept="1_1swa" id="67icRu62XMj">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_070_verification_cases" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1LeaOOdak1w" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_verification_cases" />
@@ -1474,6 +1480,7 @@
   <node concept="1_1swa" id="70Z3iwfi4xA">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_100_operator_panels" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1LeaOOdak1Q" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_operator_panels" />
@@ -1560,6 +1567,7 @@
   <node concept="1_1swa" id="2H74AM1F3Q4">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_500_importer" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1LeaOOdak4A" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_importer" />
@@ -1592,6 +1600,7 @@
   <node concept="1_1swa" id="2RmPJMxI18G">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_300_component_based_design" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1LeaOOdak2M" role="1_0VJ0">
       <property role="TrG5h" value="cbd" />
@@ -1778,6 +1787,7 @@
   <node concept="1_1swa" id="1uIpCUuqeRD">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_021_scenarios_realizability" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="1uIpCUuqeRE" role="1_0VJ0">
       <property role="TrG5h" value="scenario_realizability" />
@@ -1824,6 +1834,7 @@
   <node concept="1_1swa" id="25dEoZdocsX">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_015_nusmv_ext_language" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="25dEoZdocsY" role="1_0VJ0">
       <property role="TrG5h" value="nusmv_ext" />
@@ -1980,7 +1991,7 @@
     <property role="WqcPg" value="FASTEN: Formal Specification Tutorial" />
     <node concept="1TaS0h" id="1LeaOOda8s2" role="30GjaH" />
     <node concept="1_0j5j" id="1LeaOOda8rZ" role="30Gjbj">
-      <ref role="1_0j5g" node="2mjHtwTu97P" resolve="_000_overview" />
+      <ref role="1_0j5g" node="2mjHtwTu97P" resolve="FASTEN_FormalSpecs_Tutorial" />
     </node>
     <node concept="1_05Lf" id="1LeaOOda8s5" role="30Gjbi" />
     <node concept="2SbEIf" id="1LeaOOda8s7" role="30Gjbg">
