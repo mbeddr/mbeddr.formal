@@ -323,6 +323,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -3018,6 +3019,41 @@
           </node>
           <node concept="Vb9p2" id="1e9opmp9IBp" role="3F10Kt">
             <property role="Vbekb" value="g1_kEg4/ITALIC" />
+          </node>
+          <node concept="pkWqt" id="4WMzu8s9Z4d" role="pqm2j">
+            <node concept="3clFbS" id="4WMzu8s9Z4e" role="2VODD2">
+              <node concept="3clFbF" id="4WMzu8s9Z8a" role="3cqZAp">
+                <node concept="17QLQc" id="4WMzu8sa4Dx" role="3clFbG">
+                  <node concept="2OqwBi" id="4WMzu8sa0fE" role="3uHU7B">
+                    <node concept="2OqwBi" id="4WMzu8s9Zqs" role="2Oq$k0">
+                      <node concept="pncrf" id="4WMzu8s9Z89" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="4WMzu8sa01O" role="2OqNvi">
+                        <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="4WMzu8sa0B4" role="2OqNvi">
+                      <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="4WMzu8sa3O2" role="3uHU7w">
+                    <node concept="2OqwBi" id="4WMzu8sa3nr" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4WMzu8sa1Zl" role="2Oq$k0">
+                        <node concept="pncrf" id="4WMzu8sa1Hf" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="4WMzu8sa2_G" role="2OqNvi">
+                          <ref role="3Tt5mk" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="4WMzu8sa3Aj" role="2OqNvi">
+                        <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="4WMzu8sa4fT" role="2OqNvi">
+                      <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2iRkQZ" id="1e9opmp9Iul" role="2iSdaV" />
