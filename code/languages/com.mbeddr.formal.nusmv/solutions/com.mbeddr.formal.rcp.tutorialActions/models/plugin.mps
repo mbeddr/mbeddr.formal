@@ -17,6 +17,8 @@
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="2ny0" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench.actions(MPS.Workbench/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -42,6 +44,7 @@
         <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -174,6 +177,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -190,6 +194,7 @@
   </registry>
   <node concept="312cEu" id="7836$RyWTGT">
     <property role="TrG5h" value="OpenFastenTutorialProjectAction" />
+    <property role="3GE5qa" value="open_tutorial_actions" />
     <node concept="2tJIrI" id="7836$RyWTPb" role="jymVt" />
     <node concept="Wx3nA" id="1uIpCUufwgr" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -263,34 +268,6 @@
           <property role="2pNNFO" value="actions" />
           <node concept="2pNNFK" id="7836$RyXdVZ" role="3o6s8t">
             <property role="2pNNFO" value="group" />
-            <node concept="2pNNFK" id="7836$RyXdWj" role="3o6s8t">
-              <property role="2pNNFO" value="action" />
-              <property role="qg3DV" value="true" />
-              <node concept="2pNUuL" id="7836$RyXdWr" role="2pNNFR">
-                <property role="2pNUuO" value="id" />
-                <node concept="2pMdtt" id="7836$RyXdWv" role="2pMdts">
-                  <property role="2pMdty" value="OpenFastenTutorialProject" />
-                </node>
-              </node>
-              <node concept="2pNUuL" id="7836$RyXdWB" role="2pNNFR">
-                <property role="2pNUuO" value="class" />
-                <node concept="2pMdtt" id="7836$RyXdWL" role="2pMdts">
-                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.OpenFastenTutorialProjectAction" />
-                </node>
-              </node>
-              <node concept="2pNUuL" id="7836$RyXdZK" role="2pNNFR">
-                <property role="2pNUuO" value="text" />
-                <node concept="2pMdtt" id="7836$RyXe00" role="2pMdts">
-                  <property role="2pMdty" value="Open FASTEN Tutorial" />
-                </node>
-              </node>
-              <node concept="2pNUuL" id="7836$RyXe08" role="2pNNFR">
-                <property role="2pNUuO" value="description" />
-                <node concept="2pMdtt" id="7836$RyXe0u" role="2pMdts">
-                  <property role="2pMdty" value="Opens the FASTEN tutorial from the installation directory" />
-                </node>
-              </node>
-            </node>
             <node concept="2pNNFK" id="7Y21hZBa7$_" role="3o6s8t">
               <property role="2pNNFO" value="action" />
               <property role="qg3DV" value="true" />
@@ -309,13 +286,41 @@
               <node concept="2pNUuL" id="7Y21hZBa7$E" role="2pNNFR">
                 <property role="2pNUuO" value="text" />
                 <node concept="2pMdtt" id="7Y21hZBa7$F" role="2pMdts">
-                  <property role="2pMdty" value="Open FASTEN.Safe Tutorial" />
+                  <property role="2pMdty" value="Safety Tutorial" />
                 </node>
               </node>
               <node concept="2pNUuL" id="7Y21hZBa7$G" role="2pNNFR">
                 <property role="2pNUuO" value="description" />
                 <node concept="2pMdtt" id="7Y21hZBa7$H" role="2pMdts">
                   <property role="2pMdty" value="Opens the FASTEN safety tutorial from the installation directory" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7836$RyXdWj" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="7836$RyXdWr" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="7836$RyXdWv" role="2pMdts">
+                  <property role="2pMdty" value="OpenFastenTutorialProject" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7836$RyXdWB" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="7836$RyXdWL" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.OpenFastenTutorialProjectAction" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7836$RyXdZK" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="7836$RyXe00" role="2pMdts">
+                  <property role="2pMdty" value="Formal.Specs Tutorial" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7836$RyXe08" role="2pNNFR">
+                <property role="2pNUuO" value="description" />
+                <node concept="2pMdtt" id="7836$RyXe0u" role="2pMdts">
+                  <property role="2pMdty" value="Opens the FASTEN tutorial from the installation directory" />
                 </node>
               </node>
             </node>
@@ -365,7 +370,7 @@
               <node concept="2pNUuL" id="7836$RyXe2x" role="2pNNFR">
                 <property role="2pNUuO" value="group-id" />
                 <node concept="2pMdtt" id="7836$RyXe2y" role="2pMdts">
-                  <property role="2pMdty" value="MPSWelcomeGettingStartedMenu" />
+                  <property role="2pMdty" value="WelcomeScreen.QuickStart" />
                 </node>
               </node>
               <node concept="2pNUuL" id="7836$RyXe2z" role="2pNNFR">
@@ -382,6 +387,111 @@
               </node>
             </node>
           </node>
+          <node concept="2pNNFK" id="7Nv7YQoE1rz" role="3o6s8t">
+            <property role="2pNNFO" value="group" />
+            <node concept="2pNUuL" id="7Nv7YQoE1sd" role="2pNNFR">
+              <property role="2pNUuO" value="id" />
+              <node concept="2pMdtt" id="7Nv7YQoE1se" role="2pMdts">
+                <property role="2pMdty" value="WelcomeScreen.LearnIdeHelp" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="7Nv7YQoE1sl" role="2pNNFR">
+              <property role="2pNUuO" value="keep-content" />
+              <node concept="2pMdtt" id="7Nv7YQoE1sm" role="2pMdts">
+                <property role="2pMdty" value="false" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="7Nv7YQoE1st" role="2pNNFR">
+              <property role="2pNUuO" value="overrides" />
+              <node concept="2pMdtt" id="7Nv7YQoE1su" role="2pMdts">
+                <property role="2pMdty" value="true" />
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7Nv7YQoE1s_" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <node concept="2pNUuL" id="7Nv7YQoE1sD" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="7Nv7YQoE1sE" role="2pMdts">
+                  <property role="2pMdty" value="ShowHomepage" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Nv7YQoE1sJ" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="7Nv7YQoE1sK" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.ShowHomepage" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Nv7YQoE1u4" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="7Nv7YQoE1u5" role="2pMdts">
+                  <property role="2pMdty" value="Homepage" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7Nv7YQoE1uc" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <node concept="2pNUuL" id="7Nv7YQoE1ud" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="7Nv7YQoE1ue" role="2pMdts">
+                  <property role="2pMdty" value="ShowScreencasts" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Nv7YQoE1uf" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="7Nv7YQoE1ug" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.ShowScreencasts" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Nv7YQoE1uh" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="7Nv7YQoE1ui" role="2pMdts">
+                  <property role="2pMdty" value="Screencasts" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="1LeaOOdasEi" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <node concept="2pNUuL" id="1LeaOOdasEj" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="1LeaOOdasEk" role="2pMdts">
+                  <property role="2pMdty" value="ShowUsersDocu" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1LeaOOdasEl" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="1LeaOOdasEm" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.ShowUsersDocu" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1LeaOOdasEn" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="1LeaOOdasEo" role="2pMdts">
+                  <property role="2pMdty" value="Users Documentation" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7Nv7YQoE1ux" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <node concept="2pNUuL" id="7Nv7YQoE1uy" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="7Nv7YQoE1uz" role="2pMdts">
+                  <property role="2pMdty" value="ShowPublications" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Nv7YQoE1u$" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="7Nv7YQoE1u_" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.ShowPublications" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="7Nv7YQoE1uA" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="7Nv7YQoE1uB" role="2pMdts">
+                  <property role="2pMdty" value="Publications" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -389,6 +499,7 @@
   <node concept="312cEu" id="7Y21hZBa4tk">
     <property role="TrG5h" value="OpenTutorialProjectActionBase" />
     <property role="1sVAO0" value="true" />
+    <property role="3GE5qa" value="open_tutorial_actions" />
     <node concept="2tJIrI" id="7Y21hZBa4yn" role="jymVt" />
     <node concept="3clFbW" id="7Y21hZBa4D9" role="jymVt">
       <node concept="3cqZAl" id="7Y21hZBa4Da" role="3clF45" />
@@ -634,6 +745,7 @@
   </node>
   <node concept="312cEu" id="7Y21hZBa7gy">
     <property role="TrG5h" value="OpenFastenSafetyTutorialProjectAction" />
+    <property role="3GE5qa" value="open_tutorial_actions" />
     <node concept="2tJIrI" id="7Y21hZBa7gz" role="jymVt" />
     <node concept="Wx3nA" id="7Y21hZBa7g$" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -668,6 +780,146 @@
     <node concept="3Tm1VV" id="7Y21hZBa7gL" role="1B3o_S" />
     <node concept="3uibUv" id="7Y21hZBa7gM" role="1zkMxy">
       <ref role="3uigEE" node="7Y21hZBa4tk" resolve="OpenTutorialProjectActionBase" />
+    </node>
+  </node>
+  <node concept="312cEu" id="7Nv7YQoE2HZ">
+    <property role="TrG5h" value="ShowHomepage" />
+    <property role="3GE5qa" value="show_web" />
+    <node concept="3Tm1VV" id="7Nv7YQoE2I0" role="1B3o_S" />
+    <node concept="3uibUv" id="7Nv7YQoE32s" role="1zkMxy">
+      <ref role="3uigEE" to="2ny0:~ShowSiteAction" resolve="ShowSiteAction" />
+    </node>
+    <node concept="2tJIrI" id="7Nv7YQoE3ee" role="jymVt" />
+    <node concept="3clFbW" id="7Nv7YQoE3lm" role="jymVt">
+      <node concept="3cqZAl" id="7Nv7YQoE3lo" role="3clF45" />
+      <node concept="3Tm1VV" id="7Nv7YQoE3lp" role="1B3o_S" />
+      <node concept="3clFbS" id="7Nv7YQoE3lq" role="3clF47">
+        <node concept="XkiVB" id="7Nv7YQoE3nd" role="3cqZAp">
+          <ref role="37wK5l" to="2ny0:~ShowSiteAction.&lt;init&gt;(java.lang.String)" resolve="ShowSiteAction" />
+          <node concept="10Nm6u" id="7Nv7YQoE3oL" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Nv7YQoE3p9" role="jymVt" />
+    <node concept="3clFb_" id="7Nv7YQoE3e$" role="jymVt">
+      <property role="TrG5h" value="getSiteURL" />
+      <node concept="3Tmbuc" id="7Nv7YQoE3e_" role="1B3o_S" />
+      <node concept="17QB3L" id="7Nv7YQoE3iq" role="3clF45" />
+      <node concept="3clFbS" id="7Nv7YQoE3eC" role="3clF47">
+        <node concept="3clFbF" id="7Nv7YQoE3hT" role="3cqZAp">
+          <node concept="Xl_RD" id="7Nv7YQoE3hS" role="3clFbG">
+            <property role="Xl_RC" value="https://sites.google.com/site/fastenroot/home" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Nv7YQoE3eD" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="7Nv7YQoE3vs">
+    <property role="TrG5h" value="ShowScreencasts" />
+    <property role="3GE5qa" value="show_web" />
+    <node concept="3Tm1VV" id="7Nv7YQoE3vt" role="1B3o_S" />
+    <node concept="3uibUv" id="7Nv7YQoE3vu" role="1zkMxy">
+      <ref role="3uigEE" to="2ny0:~ShowSiteAction" resolve="ShowSiteAction" />
+    </node>
+    <node concept="2tJIrI" id="7Nv7YQoE3vv" role="jymVt" />
+    <node concept="3clFbW" id="7Nv7YQoE3vw" role="jymVt">
+      <node concept="3cqZAl" id="7Nv7YQoE3vx" role="3clF45" />
+      <node concept="3Tm1VV" id="7Nv7YQoE3vy" role="1B3o_S" />
+      <node concept="3clFbS" id="7Nv7YQoE3vz" role="3clF47">
+        <node concept="XkiVB" id="7Nv7YQoE3v$" role="3cqZAp">
+          <ref role="37wK5l" to="2ny0:~ShowSiteAction.&lt;init&gt;(java.lang.String)" resolve="ShowSiteAction" />
+          <node concept="10Nm6u" id="7Nv7YQoE3v_" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Nv7YQoE3vA" role="jymVt" />
+    <node concept="3clFb_" id="7Nv7YQoE3vB" role="jymVt">
+      <property role="TrG5h" value="getSiteURL" />
+      <node concept="3Tmbuc" id="7Nv7YQoE3vC" role="1B3o_S" />
+      <node concept="17QB3L" id="7Nv7YQoE3vD" role="3clF45" />
+      <node concept="3clFbS" id="7Nv7YQoE3vE" role="3clF47">
+        <node concept="3clFbF" id="7Nv7YQoE3vF" role="3cqZAp">
+          <node concept="Xl_RD" id="7Nv7YQoE3vG" role="3clFbG">
+            <property role="Xl_RC" value="https://sites.google.com/site/fastenroot/screencasts" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Nv7YQoE3vH" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="7Nv7YQoE3De">
+    <property role="TrG5h" value="ShowPublications" />
+    <property role="3GE5qa" value="show_web" />
+    <node concept="3Tm1VV" id="7Nv7YQoE3Df" role="1B3o_S" />
+    <node concept="3uibUv" id="7Nv7YQoE3Dg" role="1zkMxy">
+      <ref role="3uigEE" to="2ny0:~ShowSiteAction" resolve="ShowSiteAction" />
+    </node>
+    <node concept="2tJIrI" id="7Nv7YQoE3Dh" role="jymVt" />
+    <node concept="3clFbW" id="7Nv7YQoE3Di" role="jymVt">
+      <node concept="3cqZAl" id="7Nv7YQoE3Dj" role="3clF45" />
+      <node concept="3Tm1VV" id="7Nv7YQoE3Dk" role="1B3o_S" />
+      <node concept="3clFbS" id="7Nv7YQoE3Dl" role="3clF47">
+        <node concept="XkiVB" id="7Nv7YQoE3Dm" role="3cqZAp">
+          <ref role="37wK5l" to="2ny0:~ShowSiteAction.&lt;init&gt;(java.lang.String)" resolve="ShowSiteAction" />
+          <node concept="10Nm6u" id="7Nv7YQoE3Dn" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Nv7YQoE3Do" role="jymVt" />
+    <node concept="3clFb_" id="7Nv7YQoE3Dp" role="jymVt">
+      <property role="TrG5h" value="getSiteURL" />
+      <node concept="3Tmbuc" id="7Nv7YQoE3Dq" role="1B3o_S" />
+      <node concept="17QB3L" id="7Nv7YQoE3Dr" role="3clF45" />
+      <node concept="3clFbS" id="7Nv7YQoE3Ds" role="3clF47">
+        <node concept="3clFbF" id="7Nv7YQoE3Dt" role="3cqZAp">
+          <node concept="Xl_RD" id="7Nv7YQoE3Du" role="3clFbG">
+            <property role="Xl_RC" value="https://sites.google.com/site/fastenroot/publications" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Nv7YQoE3Dv" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="1LeaOOdasEP">
+    <property role="TrG5h" value="ShowUsersDocu" />
+    <property role="3GE5qa" value="show_web" />
+    <node concept="3Tm1VV" id="1LeaOOdasEQ" role="1B3o_S" />
+    <node concept="3uibUv" id="1LeaOOdasER" role="1zkMxy">
+      <ref role="3uigEE" to="2ny0:~ShowSiteAction" resolve="ShowSiteAction" />
+    </node>
+    <node concept="2tJIrI" id="1LeaOOdasES" role="jymVt" />
+    <node concept="3clFbW" id="1LeaOOdasET" role="jymVt">
+      <node concept="3cqZAl" id="1LeaOOdasEU" role="3clF45" />
+      <node concept="3Tm1VV" id="1LeaOOdasEV" role="1B3o_S" />
+      <node concept="3clFbS" id="1LeaOOdasEW" role="3clF47">
+        <node concept="XkiVB" id="1LeaOOdasEX" role="3cqZAp">
+          <ref role="37wK5l" to="2ny0:~ShowSiteAction.&lt;init&gt;(java.lang.String)" resolve="ShowSiteAction" />
+          <node concept="10Nm6u" id="1LeaOOdasEY" role="37wK5m" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1LeaOOdasEZ" role="jymVt" />
+    <node concept="3clFb_" id="1LeaOOdasF0" role="jymVt">
+      <property role="TrG5h" value="getSiteURL" />
+      <node concept="3Tmbuc" id="1LeaOOdasF1" role="1B3o_S" />
+      <node concept="17QB3L" id="1LeaOOdasF2" role="3clF45" />
+      <node concept="3clFbS" id="1LeaOOdasF3" role="3clF47">
+        <node concept="3clFbF" id="1LeaOOdasF4" role="3cqZAp">
+          <node concept="Xl_RD" id="1LeaOOdasF5" role="3clFbG">
+            <property role="Xl_RC" value="https://danielratiu.github.io/FASTEN-Docs/" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1LeaOOdasF6" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
 </model>

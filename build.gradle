@@ -1,55 +1,56 @@
+import de.itemis.mps.gradle.CreateDmg
+import de.itemis.mps.gradle.GenerateLibrariesXml
+import de.itemis.mps.gradle.GitBasedVersioning
+import de.itemis.mps.gradle.GetMpsInBrowser
+import de.itemis.mps.gradle.BuildLanguages
+import de.itemis.mps.gradle.TestLanguages
+import de.itemis.mps.gradle.RunAntScript
 import de.itemis.mps.gradle.*
+import org.apache.tools.ant.taskdefs.condition.Os
+
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
+    	mavenCentral()
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4+'
+    }
+    configurations.classpath {
+        resolutionStrategy.activateDependencyLocking()
     }
 }
 
 plugins {
     id 'base'
     id 'maven-publish'
-    id 'co.riiid.gradle' version '0.4.2'
+}
+
+dependencyLocking {
+    lockAllConfigurations()
+}
+
+apply plugin: 'download-jbr'
+
+ext.jbrVers = '11_0_10-b1145.96'
+
+downloadJbr {
+    jbrVersion = jbrVers
 }
 
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
+    ext._buildNumber = System.env.BUILD_NUMBER.toInteger()
+} else if (System.env.CI!=null && System.env.CI.toBoolean()) {
+    ext.ciBuild = true
+    ext._buildNumber = System.env.GITHUB_RUN_NUMBER.toInteger()
 } else {
     // on teamcity we are in a CI build
     ext.ciBuild = project.hasProperty("teamcity")
 }
-
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-def jdk_home
-
-if (ext.has('java11_home')) {
-    jdk_home = ext.get('java11_home')
-} else if (System.getenv('JB_JAVA11_HOME') != null) {
-    jdk_home = System.getenv('JB_JAVA11_HOME')
-} else {
-    def expected = JavaVersion.VERSION_11
-    if (JavaVersion.current() != expected) {
-        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-                + "  * Run Gradle using Java 11")
-    }
-    jdk_home = System.getProperty('java.home')
-}
-
-// Check JDK location
-if (!new File(jdk_home, "lib").exists()) {
-    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-}
-
-logger.info 'Using JDK at {}', jdk_home
-
-ext.jdk_home = jdk_home
 
 // Default repository credentials
 if (!project.hasProperty('nexusUsername')) {
@@ -74,50 +75,39 @@ ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
-
-    def buildNumber = System.env.BUILD_NUMBER.toInteger()
+    def buildNumber = _buildNumber
     if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
         version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
     } else {
         version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
     }
 
-    println "##teamcity[buildNumber '${version}']"
+    println "CI build [buildNumber '${version}']"
 } else {
     println "Local build detected, version will be SNAPSHOT"
     version = "$major.$minor-SNAPSHOT"
 }
 
-/*
-def userHome = System.properties['user.home']
-def mpsPluginsDirPattern
-if (System.properties['os.name'].toLowerCase().contains('mac')) {
-    mpsPluginsDirPattern = "$userHome/Library/Application Support/%s"
-} else {
-    mpsPluginsDirPattern = "$userHome/.%s/config/plugins"
-}
-
-if (project.hasProperty("MPS_PATHS_SELECTOR")) {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
-} else {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
-}
-*/
-
 ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-
 
 configurations {
     mps
     languageLibs
-    // includes also junit tasks support
     antLib
+    jbrWin
+    jbrMac
+    jbrLinux
 }
+
+ext.jarTasks = []
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     antLib "org.apache.ant:ant-junit:1.10.6"
+    jbrWin "com.jetbrains.jdk:jbr:$jbrVers:windows-x64@tgz"
+    jbrMac "com.jetbrains.jdk:jbr:$jbrVers:osx-x64@tgz"
+    jbrLinux"com.jetbrains.jdk:jbr:$jbrVers:linux-x64@tgz"
 }
 
 repositories {
@@ -151,12 +141,11 @@ if (project.skipResolveMps) {
 }
 
 // tools needed for compiler support in ant calls
-ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true } +
-        project.files("$project.jdk_home/lib/tools.jar")
+ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true }
 
 def artifactsDir = file("$buildDir/artifacts")
 def dependenciesDir = file("$buildDir/dependencies")
-
+def jdkDir = file("$buildDir/jdkDir")
 
 // ___________________ utilities ___________________
 
@@ -170,10 +159,30 @@ def defaultScriptArgs = [
         'mps.generator.skipUnmodifiedModels': true
 ]
 
+println "mbeddr.formal.home=$project.rootDir"
+
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+task configureJava{
+    println "Entering Task: configureJava"
+    dependsOn "downloadJbr"
+    doLast {
+        project.ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
+        project.ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
+        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName("downloadJbr").javaExecutable
+        println project.findProperty("itemis.mps.gradle.ant.defaultJavaExecutable")
+    }
+}
+
+task printJavaVersion(type: Exec, dependsOn: [configureJava]) {
+    commandLine "$buildDir/jbrDownload/jbr/bin/java", '--version'
+    standardOutput = new ByteArrayOutputStream()
+    doLast {
+        println "Output: $standardOutput"
+    }
+}
+
+task resolveJarDeps(type: Copy, dependsOn: [configureJava, jarTasks]) {
+}
 
 task resolveLanguageLibs(type: Copy) {
     from {
@@ -195,7 +204,7 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
+task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs, resolveJarDeps]) {
     script "$buildDir/scripts/build_all_scripts.xml"
 }
 
@@ -203,13 +212,21 @@ task build_formal_languages(type: BuildLanguages, dependsOn: [build_allScripts])
     script new File("$buildDir/scripts/build-formal-languages.xml")
 }
 
-task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [build_formal_languages]) {
+task resolveJBR_Win(type: Copy){
+    from { configurations.jbrWin.resolve() }
+    into jdkDir
+    rename { filename ->
+        def resolvedArtifact = configurations.jbrWin.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+        return resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+    }
+}
+
+task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [resolveJBR_Win, build_formal_languages]) {
     script new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
 }
 
 task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-nusmv-tests.xml")
 	doLast {
         ant.taskdef(name: 'junitreport',
@@ -223,9 +240,9 @@ task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages)
     }
 }
 
+
 task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-safety-tests.xml")
 	doLast {
         ant.taskdef(name: 'junitreport',
@@ -241,7 +258,6 @@ task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languag
 
 task run_all_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-all-tests.xml")
 	doLast {
         ant.taskdef(name: 'junitreport',

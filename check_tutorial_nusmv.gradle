@@ -7,44 +7,41 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4+'
+    }
+    configurations.classpath {
+        resolutionStrategy.activateDependencyLocking()
     }
 }
 
 plugins {
     id 'base'
     id 'maven-publish'
-    id 'co.riiid.gradle' version '0.4.2'																						  
 }
 
 apply plugin: 'modelcheck'
+
+dependencyLocking {
+    lockAllConfigurations()
+}
+
+// Dependency versions
+ext.mpsVersion =  '2020.3.+'
+ext.mbeddrVersion =  '2020.3.+'
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
 ]
 
-// Dependency versions
-ext.mpsVersion =  '2020.3.+'
-ext.mbeddrVersion =  '2020.3.+'
-//ext.mbeddrVersion =  'mps-2020.2.+'
-
-// Project versions
-ext.major = '1'
-ext.minor = '0'
-
 configurations {
     mps
-	languageLibs			
-    // includes also junit tasks support
-    antLib
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-	languageLibs "com.mbeddr:platform:$mbeddrVersion"
-    antLib "org.apache.ant:ant-junit:1.10.6"													 										
 }
+
 
 repositories {
     mavenLocal()
@@ -79,7 +76,8 @@ modelcheck {
     mpsConfig = configurations.mps
     junitFile = modelcheckresult
     errorNoFail = true
-    //maxHeap = "3G"
+    debug = false
+    maxHeap = "3G"
     modules = ["com.mbeddr.formal.nusmv.tutorial"] //, "com.mbeddr.formal.safety.users_guide"]
 }
 

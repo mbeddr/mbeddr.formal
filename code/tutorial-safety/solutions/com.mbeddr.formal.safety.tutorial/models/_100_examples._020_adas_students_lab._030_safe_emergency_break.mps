@@ -11,7 +11,6 @@
   <imports>
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
     <import index="ee4e" ref="r:6df6dea3-0ed6-4204-928b-52b619b721ef(_100_examples._020_adas_students_lab._020_safe_acc)" />
-    <import index="kau0" ref="r:dd5bd7c0-777e-4df6-8e2d-9a855cc2e96b(_100_examples._020_adas_students_lab._010_safe_lane_keeping)" />
   </imports>
   <registry>
     <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
@@ -323,12 +322,20 @@
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
-        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
       </concept>
-      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+      <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
+        <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
+      </concept>
+      <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <property id="5476080298365952689" name="exposure" index="3qod2P" />
+        <child id="5861696777036874344" name="description" index="3h3iL1" />
+      </concept>
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <property id="5861696777036826305" name="exposure" index="3h3uzC" />
         <property id="5861696777036826304" name="severity" index="3h3uzD" />
         <property id="5861696777036826306" name="controlability" index="3h3uzF" />
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -555,59 +562,60 @@
       <property role="0lsPB" value="H01" />
       <property role="TrG5h" value="Warning issued too late - ASIL QM" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGR_" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="75La0fJz0jj" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9h" role="8gIbH">
       <property role="0lsPB" value="H02" />
       <property role="TrG5h" value="Braking initiated too late - ASIL A" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRA" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJz0jm" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9p" role="8gIbH">
       <property role="0lsPB" value="H03" />
       <property role="TrG5h" value="Car crashes into obstacle - ASIL B" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRB" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+      <node concept="3h3uym" id="75La0fJz0jp" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9z" role="8gIbH">
       <property role="0lsPB" value="H04" />
       <property role="TrG5h" value="Unnecessary warning - ASIL QM" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRC" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="75La0fJz0jJ" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
+        <ref role="3h3iM1" node="75La0fJz0jA" resolve="EB_OS_002" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9J" role="8gIbH">
       <property role="0lsPB" value="H05" />
       <property role="TrG5h" value="Unnecessary braking - ASIL QM" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-      <node concept="3h3uym" id="55oVyA0mGRD" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="75La0fJz0jM" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+        <ref role="3h3iM1" node="75La0fJz0jA" resolve="EB_OS_002" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9X" role="8gIbH">
       <property role="0lsPB" value="H06" />
       <property role="TrG5h" value="Strong breaking leads to rear end collision - ASIL A" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRE" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+      <node concept="3h3uym" id="75La0fJz0js" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
       </node>
     </node>
   </node>
@@ -7174,7 +7182,7 @@
         <node concept="gqqVs" id="22e91OCPKgL" role="37mO4d">
           <property role="gqqTZ" value="338.0" />
           <property role="gqqTW" value="161.0" />
-          <property role="gqqTX" value="259.0" />
+          <property role="gqqTX" value="277.0" />
           <property role="gqqTy" value="98.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7214,7 +7222,7 @@
         <node concept="gqqVs" id="22e91OCPKgT" role="37mO4d">
           <property role="gqqTZ" value="313.0" />
           <property role="gqqTW" value="-27.0" />
-          <property role="gqqTX" value="286.0" />
+          <property role="gqqTX" value="351.0" />
           <property role="gqqTy" value="113.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7576,7 +7584,7 @@
         <node concept="gqqVs" id="22e91OCPNgW" role="37mO4d">
           <property role="gqqTZ" value="936.0" />
           <property role="gqqTW" value="161.0" />
-          <property role="gqqTX" value="231.0" />
+          <property role="gqqTX" value="275.0" />
           <property role="gqqTy" value="107.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -7962,7 +7970,7 @@
         <node concept="gqqVs" id="22e91OCPQYc" role="37mO4d">
           <property role="gqqTZ" value="1829.0" />
           <property role="gqqTW" value="161.0" />
-          <property role="gqqTX" value="222.0" />
+          <property role="gqqTX" value="274.0" />
           <property role="gqqTy" value="98.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -8929,6 +8937,28 @@
     <node concept="2vhqFZ" id="22e91OCPV7z" role="2vhqc$">
       <ref role="3VeSjP" node="22e91OCPTIj" resolve="G11_EB_Brake_only_if_necessary" />
       <ref role="3VeSjQ" node="22e91OCPUFh" resolve="C7_EB_Low_ASIL" />
+    </node>
+  </node>
+  <node concept="3h3iLa" id="75La0fJyZ18">
+    <property role="3GE5qa" value="eb_item_definition" />
+    <property role="TrG5h" value="_030_operational_situations" />
+    <node concept="3h3iLe" id="75La0fJyZ19" role="3h3F1H">
+      <property role="TrG5h" value="EB_OS_001" />
+      <property role="3qod2P" value="24PsEXFbNL5/E2" />
+      <node concept="19SGf9" id="75La0fJyZ1a" role="3h3iL1">
+        <node concept="19SUe$" id="75La0fJyZ1b" role="19SJt6">
+          <property role="19SUeA" value="driving steep downhill with inclination &gt; 5%" />
+        </node>
+      </node>
+    </node>
+    <node concept="3h3iLe" id="75La0fJz0jA" role="3h3F1H">
+      <property role="TrG5h" value="EB_OS_002" />
+      <property role="3qod2P" value="24PsEXFbNL9/E3" />
+      <node concept="19SGf9" id="75La0fJz0jB" role="3h3iL1">
+        <node concept="19SUe$" id="75La0fJz0jC" role="19SJt6">
+          <property role="19SUeA" value="driving downhill with inclination &lt; 2%" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -342,18 +342,20 @@
     </language>
     <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
       <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
-        <child id="5861696777036826313" name="operationalSituations" index="3h3uzw" />
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
       </concept>
       <concept id="5861696777036874339" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationsCatalogue" flags="ng" index="3h3iLa">
         <child id="5861696777036914244" name="operationalSituationDeclarations" index="3h3F1H" />
       </concept>
       <concept id="5861696777036874343" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituationDeclaration" flags="ng" index="3h3iLe">
+        <property id="5476080298365952689" name="exposure" index="3qod2P" />
         <child id="5861696777036874344" name="description" index="3h3iL1" />
       </concept>
-      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.OperationalSituation" flags="ng" index="3h3uym">
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
         <property id="5861696777036826305" name="exposure" index="3h3uzC" />
         <property id="5861696777036826304" name="severity" index="3h3uzD" />
         <property id="5861696777036826306" name="controlability" index="3h3uzF" />
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -597,58 +599,63 @@
       <property role="TrG5h" value="Electrical hazard" />
       <property role="0lsPB" value="H01" />
       <ref role="2HxXJk" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGR8" role="3h3uzw">
+      <node concept="3h3uym" id="5ehf6dVA6bI" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlEA" role="8gIbH">
       <property role="0lsPB" value="H02" />
       <property role="TrG5h" value="Explosion of the car" />
       <ref role="2HxXJk" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGR9" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+      <node concept="3h3uym" id="5ehf6dVA6bL" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlES" role="8gIbH">
       <property role="0lsPB" value="H03" />
       <property role="TrG5h" value="Cable temperature too high" />
       <ref role="2HxXJk" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
-      <node concept="3h3uym" id="55oVyA0mGRa" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
+      <node concept="3h3uym" id="5ehf6dVA6bS" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlFc" role="8gIbH">
       <property role="0lsPB" value="H04" />
       <property role="TrG5h" value="The cable catches fire" />
       <ref role="2HxXJk" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
-      <node concept="3h3uym" id="55oVyA0mGRb" role="3h3uzw">
+      <node concept="3h3uym" id="5ehf6dVA6bV" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlFy" role="8gIbH">
       <property role="0lsPB" value="H05" />
       <property role="TrG5h" value="Smoke comes out of the cable" />
       <ref role="2HxXJk" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
-      <node concept="3h3uym" id="55oVyA0mGRc" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
-        <property role="3h3uzC" value="24PsEXFbNL2/E1" />
-        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+      <node concept="3h3uym" id="5ehf6dVA6bY" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlFU" role="8gIbH">
       <property role="0lsPB" value="H06" />
       <property role="TrG5h" value="Tripping" />
       <ref role="2HxXJk" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
-      <node concept="3h3uym" id="55oVyA0mGRd" role="3h3uzw">
-        <property role="3h3uzF" value="24PsEXFbNLm/C1" />
-        <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+      <node concept="3h3uym" id="5ehf6dVA8Ox" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
       </node>
     </node>
   </node>
@@ -9060,6 +9067,7 @@
     <property role="TrG5h" value="_005_operational_situations" />
     <node concept="3h3iLe" id="55oVyA0mSMy" role="3h3F1H">
       <property role="TrG5h" value="OS1" />
+      <property role="3qod2P" value="24PsEXFbNLe/E4" />
       <node concept="19SGf9" id="55oVyA0mSMz" role="3h3iL1">
         <node concept="19SUe$" id="55oVyA0mSM$" role="19SJt6">
           <property role="19SUeA" value="while charging" />
