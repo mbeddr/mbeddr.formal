@@ -252,7 +252,6 @@
     <node concept="1TJgyj" id="6RZi9iiwhYv" role="1TKVEi">
       <property role="IQ2ns" value="7926133672145657759" />
       <property role="20kJfa" value="loss" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="cjwq:2hOvri9WL4e" resolve="Loss" />
     </node>
     <node concept="PrWs8" id="6H9fvJFQICf" role="PzmwI">
@@ -272,7 +271,6 @@
     <node concept="1TJgyj" id="6H9fvJFRkEW" role="1TKVEi">
       <property role="IQ2ns" value="7730778387561401020" />
       <property role="20kJfa" value="controlStructure" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
     </node>
   </node>
