@@ -274,5 +274,53 @@
       <ref role="20lvS9" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
     </node>
   </node>
+  <node concept="1TIwiD" id="24qzBt0LLKv">
+    <property role="EcuMT" value="2385375595485142047" />
+    <property role="3GE5qa" value="stpa" />
+    <property role="TrG5h" value="UCAListWord" />
+    <property role="34LRSv" value="@ucaList" />
+    <property role="R4oN_" value="List of Unsafe Control Actions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="24qzBt0LLKw" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="24qzBt0LLKy" role="1TKVEi">
+      <property role="IQ2ns" value="2385375595485142050" />
+      <property role="20kJfa" value="ucas" />
+      <ref role="20lvS9" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="24qzBt0Mhjf">
+    <property role="EcuMT" value="2385375595485271247" />
+    <property role="3GE5qa" value="stpa" />
+    <property role="TrG5h" value="LossesListWord" />
+    <property role="34LRSv" value="@losses" />
+    <property role="R4oN_" value="List of losses" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="24qzBt0Mhjg" role="1TKVEi">
+      <property role="IQ2ns" value="2385375595485271248" />
+      <property role="20kJfa" value="losses" />
+      <ref role="20lvS9" to="cjwq:2hOvri9WL4A" resolve="Losses" />
+    </node>
+    <node concept="PrWs8" id="24qzBt0MhkK" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="24qzBt0MhkH">
+    <property role="EcuMT" value="2385375595485271341" />
+    <property role="3GE5qa" value="stpa" />
+    <property role="TrG5h" value="LossScenariosListWord" />
+    <property role="34LRSv" value="@lossScenarios" />
+    <property role="R4oN_" value="List of loss scenarios" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="24qzBt0MhkI" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="24qzBt0MhkM" role="1TKVEi">
+      <property role="IQ2ns" value="2385375595485271346" />
+      <property role="20kJfa" value="scenarios" />
+      <ref role="20lvS9" to="bewr:6RZi9iiAzbi" resolve="LossScenarios" />
+    </node>
+  </node>
 </model>
 
