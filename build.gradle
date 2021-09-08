@@ -321,6 +321,6 @@ task cleanMps(type: Delete) {
 //clean.dependsOn cleanMps
 
 
-defaultTasks 'build_fasten_safety_distribution'
+defaultTasks 'build_formal_languages'
 
 task rebuild(dependsOn:[clean, build_fasten_safety_distribution])
