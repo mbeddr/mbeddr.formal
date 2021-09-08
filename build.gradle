@@ -43,10 +43,6 @@ downloadJbr {
 // detect if we are in a CI build
 if (project.hasProperty("forceCI")) {
     ext.ciBuild = true
-    ext._buildNumber = System.env.BUILD_NUMBER.toInteger()
-} else if (System.env.CI!=null && System.env.CI.toBoolean()) {
-    ext.ciBuild = true
-    ext._buildNumber = System.env.GITHUB_RUN_NUMBER.toInteger()
 } else {
     // on teamcity we are in a CI build
     ext.ciBuild = project.hasProperty("teamcity")
@@ -75,7 +71,7 @@ ext.minor = '3'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch
-    def buildNumber = _buildNumber
+    def buildNumber = System.env.BUILD_NUMBER.toInteger()
     if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
         version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
     } else {
