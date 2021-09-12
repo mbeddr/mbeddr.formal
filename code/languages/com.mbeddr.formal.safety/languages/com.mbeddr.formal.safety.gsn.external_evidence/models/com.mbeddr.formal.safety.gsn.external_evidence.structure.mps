@@ -61,7 +61,7 @@
     <node concept="1TJgyj" id="6R91tEKNYrx" role="1TKVEi">
       <property role="IQ2ns" value="7910860657280411361" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="externalFiles" />
+      <property role="20kJfa" value="externalRessources" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1UGKBYPwn05" resolve="IExternalRessourceDocument" />
     </node>

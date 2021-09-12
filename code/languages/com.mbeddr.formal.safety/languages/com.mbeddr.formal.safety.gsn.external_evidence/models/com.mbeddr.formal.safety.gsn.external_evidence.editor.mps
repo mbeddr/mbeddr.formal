@@ -995,10 +995,10 @@
       <node concept="2iRkQZ" id="6R91tEKNYH4" role="2iSdaV" />
       <node concept="3F0ifn" id="3wuU_o8f_pq" role="3EZMnx" />
       <node concept="3F0ifn" id="3wuU_o8f_py" role="3EZMnx">
-        <property role="3F0ifm" value="Referenced Files:" />
+        <property role="3F0ifm" value="Referenced Documents:" />
       </node>
       <node concept="3F2HdR" id="6R91tEKNYH9" role="3EZMnx">
-        <ref role="1NtTu8" to="s9pq:6R91tEKNYrx" resolve="externalFiles" />
+        <ref role="1NtTu8" to="s9pq:6R91tEKNYrx" resolve="externalRessources" />
         <node concept="2iRkQZ" id="6R91tEKNYHb" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="7ktuJEDw84" role="3EZMnx" />
