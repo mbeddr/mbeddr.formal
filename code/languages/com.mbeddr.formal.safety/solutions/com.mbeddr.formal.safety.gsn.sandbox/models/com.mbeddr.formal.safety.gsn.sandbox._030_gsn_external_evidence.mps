@@ -43,7 +43,7 @@
         <child id="4043927170651692618" name="document" index="K87gs" />
       </concept>
       <concept id="7910860657280411360" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.DocumentBasedExternalEvidenceSolution" flags="ng" index="3t1IcU">
-        <child id="7910860657280411361" name="externalFiles" index="3t1IcV" />
+        <child id="7910860657280411361" name="externalRessources" index="3t1IcV" />
       </concept>
       <concept id="7910860657280412494" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.GeneratedExternalEvidenceSolution" flags="ng" index="3t1IUk">
         <property id="7910860657280412497" name="resultRegex" index="3t1IUb" />
