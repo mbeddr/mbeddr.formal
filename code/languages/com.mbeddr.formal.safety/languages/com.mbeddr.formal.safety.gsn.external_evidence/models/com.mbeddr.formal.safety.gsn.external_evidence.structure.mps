@@ -8,17 +8,20 @@
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -58,9 +61,9 @@
     <node concept="1TJgyj" id="6R91tEKNYrx" role="1TKVEi">
       <property role="IQ2ns" value="7910860657280411361" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="externalFiles" />
+      <property role="20kJfa" value="externalRessources" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3wuU_o8fDT9" resolve="ExternalEvidenceDocument" />
+      <ref role="20lvS9" node="1UGKBYPwn05" resolve="IExternalRessourceDocument" />
     </node>
   </node>
   <node concept="1TIwiD" id="6R91tEKNYHe">
@@ -96,6 +99,8 @@
   <node concept="1TIwiD" id="3wuU_o8fDT9">
     <property role="EcuMT" value="4043927170651692617" />
     <property role="TrG5h" value="ExternalEvidenceDocument" />
+    <property role="34LRSv" value="external file" />
+    <property role="R4oN_" value="external file containing evidence" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3wuU_o8fDTa" role="1TKVEi">
       <property role="IQ2ns" value="4043927170651692618" />
@@ -111,6 +116,34 @@
     <node concept="1TJgyi" id="4MlXWpxb4Gg" role="1TKVEl">
       <property role="IQ2nx" value="5518589349818288912" />
       <property role="TrG5h" value="updateDate" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1UGKBYPwn06" role="PzmwI">
+      <ref role="PrY4T" node="1UGKBYPwn05" resolve="IExternalRessourceDocument" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1UGKBYPwn05">
+    <property role="EcuMT" value="2210355370893864965" />
+    <property role="TrG5h" value="IExternalRessourceDocument" />
+    <node concept="1TJgyj" id="1UGKBYPwLMo" role="1TKVEi">
+      <property role="IQ2ns" value="2210355370893974680" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="explanation" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1UGKBYPwn08">
+    <property role="EcuMT" value="2210355370893864968" />
+    <property role="TrG5h" value="URLEvidenceDocument" />
+    <property role="34LRSv" value="URL evidence" />
+    <property role="R4oN_" value="an URL referring to a document containing evidence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1UGKBYPwn09" role="PzmwI">
+      <ref role="PrY4T" node="1UGKBYPwn05" resolve="IExternalRessourceDocument" />
+    </node>
+    <node concept="1TJgyi" id="1UGKBYPwn0b" role="1TKVEl">
+      <property role="IQ2nx" value="2210355370893864971" />
+      <property role="TrG5h" value="url" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

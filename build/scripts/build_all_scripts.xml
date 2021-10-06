@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.formal.allScripts" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.formal.allScripts" />
   <property name="mbeddr.formal.home" location="${basedir}/../.." />
-  <property name="mps.home" location="${mbeddr.formal.home}/MPS" />
+  <property name="mps.home" location="${mbeddr.formal.home}/build/mps" />
   <property name="mbeddr.formal.nusmv.code" location="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv" />
   <property name="mbeddr.formal.safety.code" location="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety" />
   <property name="dependencies.root" location="${mbeddr.formal.home}/build/dependencies" />

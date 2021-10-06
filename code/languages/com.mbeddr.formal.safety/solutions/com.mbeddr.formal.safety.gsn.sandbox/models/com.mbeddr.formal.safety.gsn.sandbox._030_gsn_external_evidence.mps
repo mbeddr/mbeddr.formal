@@ -31,13 +31,19 @@
       </concept>
     </language>
     <language id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence">
+      <concept id="2210355370893864968" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.URLEvidenceDocument" flags="ng" index="2Fbr9R">
+        <property id="2210355370893864971" name="url" index="2Fbr9O" />
+      </concept>
+      <concept id="2210355370893864965" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.IExternalRessourceDocument" flags="ng" index="2Fbr9U">
+        <child id="2210355370893974680" name="explanation" index="2FbXVB" />
+      </concept>
       <concept id="4043927170651692617" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.ExternalEvidenceDocument" flags="ng" index="K87gv">
         <property id="3284458703653091389" name="savedHashCode" index="FewnR" />
         <property id="5518589349818288912" name="updateDate" index="HIrNm" />
         <child id="4043927170651692618" name="document" index="K87gs" />
       </concept>
       <concept id="7910860657280411360" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.DocumentBasedExternalEvidenceSolution" flags="ng" index="3t1IcU">
-        <child id="7910860657280411361" name="externalFiles" index="3t1IcV" />
+        <child id="7910860657280411361" name="externalRessources" index="3t1IcV" />
       </concept>
       <concept id="7910860657280412494" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.GeneratedExternalEvidenceSolution" flags="ng" index="3t1IUk">
         <property id="7910860657280412497" name="resultRegex" index="3t1IUb" />
@@ -59,6 +65,17 @@
       <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
         <property id="8963411245960998400" name="key" index="37mO49" />
         <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
@@ -122,6 +139,36 @@
         <node concept="3NXOOs" id="6J2m9UdFTc8" role="K87gs">
           <property role="3N1Lgt" value="external_evidence/D4.2.1_system_testing_report.pdf" />
         </node>
+        <node concept="1Pa9Pv" id="1UGKBYPxd6D" role="2FbXVB">
+          <node concept="1PaTwC" id="1UGKBYPxd6F" role="1PaQFQ">
+            <node concept="3oM_SD" id="1UGKBYPxd6H" role="1PaTwD">
+              <property role="3oM_SC" value="system" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd6J" role="1PaTwD">
+              <property role="3oM_SC" value="testing" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd6M" role="1PaTwD">
+              <property role="3oM_SC" value="report" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="1UGKBYPxd6R" role="1PaQFQ">
+            <node concept="3oM_SD" id="1UGKBYPxd6Q" role="1PaTwD">
+              <property role="3oM_SC" value="containing" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd72" role="1PaTwD">
+              <property role="3oM_SC" value="results" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxwy6" role="1PaTwD">
+              <property role="3oM_SC" value="demonstrating" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxwya" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxwyf" role="1PaTwD">
+              <property role="3oM_SC" value="claims" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -172,6 +219,118 @@
       </node>
       <node concept="19SGf9" id="2BjEyIlV4X3" role="2vnaTY">
         <node concept="19SUe$" id="2BjEyIlV4X4" role="19SJt6" />
+      </node>
+    </node>
+  </node>
+  <node concept="2vn7XN" id="1UGKBYPwxLT">
+    <property role="TrG5h" value="_011_gsn_solution_referencing_url" />
+    <node concept="37mRI7" id="1UGKBYPwxLU" role="lGtFl">
+      <node concept="37mRIm" id="1UGKBYPwxLV" role="37mRID">
+        <property role="37mO49" value="4043927170651684098" />
+        <node concept="gqqVs" id="1UGKBYPwxLW" role="37mO4d">
+          <property role="gqqTZ" value="56.0" />
+          <property role="gqqTW" value="49.0" />
+          <property role="gqqTX" value="271.0" />
+          <property role="gqqTy" value="244.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1UGKBYPwxLX" role="37mRID">
+        <property role="37mO49" value="4043927170651799656" />
+        <node concept="gqqVs" id="1UGKBYPwxLY" role="37mO4d">
+          <property role="gqqTZ" value="57.0" />
+          <property role="gqqTW" value="24.0" />
+          <property role="gqqTX" value="180.0" />
+          <property role="gqqTy" value="52.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1UGKBYPwxLZ" role="37mRID">
+        <property role="37mO49" value="4043927170651943545" />
+        <node concept="gqqVs" id="1UGKBYPwxM0" role="37mO4d">
+          <property role="gqqTZ" value="321.0" />
+          <property role="gqqTW" value="82.0" />
+          <property role="gqqTX" value="179.0" />
+          <property role="gqqTy" value="44.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1UGKBYPwxMj" role="37mRID">
+        <property role="37mO49" value="2210355370893909121" />
+        <node concept="gqqVs" id="1UGKBYPwxMi" role="37mO4d">
+          <property role="gqqTZ" value="56.0" />
+          <property role="gqqTW" value="63.0" />
+          <property role="gqqTX" value="245.0" />
+          <property role="gqqTy" value="41.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3t1IcU" id="1UGKBYPwxM1" role="2vn1q5">
+      <property role="TrG5h" value="Sn01_url_Evidence" />
+      <node concept="19SGf9" id="1UGKBYPwxM2" role="2vnaTY">
+        <node concept="19SUe$" id="1UGKBYPwxM3" role="19SJt6">
+          <property role="19SUeA" value="Published ressources on the web." />
+        </node>
+      </node>
+      <node concept="2Fbr9R" id="1UGKBYPwDEW" role="3t1IcV">
+        <property role="2Fbr9O" value="https://www.youtube.com/watch?v=XKc36bPJgAo" />
+        <node concept="1Pa9Pv" id="1UGKBYPxlDX" role="2FbXVB">
+          <node concept="1PaTwC" id="1UGKBYPxlDY" role="1PaQFQ">
+            <node concept="3oM_SD" id="1UGKBYPxnh$" role="1PaTwD">
+              <property role="3oM_SC" value="L122" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxnhl" role="1PaTwD">
+              <property role="3oM_SC" value="Automated" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxnhm" role="1PaTwD">
+              <property role="3oM_SC" value="Vehicle" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxnhn" role="1PaTwD">
+              <property role="3oM_SC" value="Safety" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxnho" role="1PaTwD">
+              <property role="3oM_SC" value="Update" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxnhp" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxnhq" role="1PaTwD">
+              <property role="3oM_SC" value="2021" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxnhj" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Fbr9R" id="1UGKBYPwLM8" role="3t1IcV">
+        <property role="2Fbr9O" value="https://arxiv.org/pdf/2004.10474" />
+        <node concept="1Pa9Pv" id="1UGKBYPxd7h" role="2FbXVB">
+          <node concept="1PaTwC" id="1UGKBYPxd7l" role="1PaQFQ">
+            <node concept="3oM_SD" id="1UGKBYPxd7n" role="1PaTwD">
+              <property role="3oM_SC" value="Assurance" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd7p" role="1PaTwD">
+              <property role="3oM_SC" value="2.0" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd7s" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd7w" role="1PaTwD">
+              <property role="3oM_SC" value="new" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd7_" role="1PaTwD">
+              <property role="3oM_SC" value="approach" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd7F" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPxd7M" role="1PaTwD">
+              <property role="3oM_SC" value="assurance" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

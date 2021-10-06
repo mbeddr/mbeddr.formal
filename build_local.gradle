@@ -1,0 +1,338 @@
+import de.itemis.mps.gradle.CreateDmg
+import de.itemis.mps.gradle.GenerateLibrariesXml
+import de.itemis.mps.gradle.GitBasedVersioning
+import de.itemis.mps.gradle.GetMpsInBrowser
+import de.itemis.mps.gradle.BuildLanguages
+import de.itemis.mps.gradle.TestLanguages
+import de.itemis.mps.gradle.RunAntScript
+import de.itemis.mps.gradle.*
+import org.apache.tools.ant.taskdefs.condition.Os
+
+
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+    	mavenCentral()
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4+'
+    }
+    configurations.classpath {
+        resolutionStrategy.activateDependencyLocking()
+    }
+}
+
+plugins {
+    id 'base'
+    id 'maven-publish'
+}
+
+dependencyLocking {
+    lockAllConfigurations()
+}
+
+apply plugin: 'download-jbr'
+
+ext.jbrVers = '11_0_10+'
+
+downloadJbr {
+    jbrVersion = jbrVers
+}
+
+// detect if we are in a CI build
+if (project.hasProperty("forceCI")) {
+    ext.ciBuild = true
+} else {
+    // on teamcity we are in a CI build
+    ext.ciBuild = project.hasProperty("teamcity")
+}
+
+// Default repository credentials
+if (!project.hasProperty('nexusUsername')) {
+    ext.nexusUsername = ''
+    ext.nexusPassword = ''
+}
+logger.info 'Repository username: {}', project.nexusUsername
+
+ext.dependencyRepositories = [
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+]
+
+// Dependency versions
+ext.mpsVersion =  '2020.3.+'
+ext.mbeddrVersion =  '2020.3.+'
+//ext.mbeddrVersion =  'mps-2020.2.+'
+
+// Project versions
+ext.major = '2020'
+ext.minor = '3'
+
+if (ciBuild) {
+    String branch = GitBasedVersioning.gitBranch
+    def buildNumber = System.env.BUILD_NUMBER.toInteger()
+    if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
+        version = "$major.$minor.$buildNumber.${GitBasedVersioning.gitShortCommitHash}"
+    } else {
+        version = GitBasedVersioning.getVersionWithCount(major, minor, buildNumber)
+    }
+
+    println "CI build [buildNumber '${version}']"
+} else {
+    println "Local build detected, version will be SNAPSHOT"
+    version = "$major.$minor-SNAPSHOT"
+}
+
+ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+
+configurations {
+    mps
+    languageLibs
+    antLib
+    jbrWin
+    jbrMac
+    jbrLinux
+}
+
+ext.jarTasks = []
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    languageLibs "com.mbeddr:platform:$mbeddrVersion"
+    antLib "org.apache.ant:ant-junit:1.10.6"
+    jbrWin "com.jetbrains.jdk:jbr:$jbrVers:windows-x64@tgz"
+    jbrMac "com.jetbrains.jdk:jbr:$jbrVers:osx-x64@tgz"
+    jbrLinux"com.jetbrains.jdk:jbr:$jbrVers:linux-x64@tgz"
+}
+
+repositories {
+    mavenLocal()
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+        }
+    }
+    mavenCentral()
+}
+
+ext.skipResolveMps = project.hasProperty('mpsHomeDir')
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "$buildDir/mps")
+
+if (project.skipResolveMps) {
+    task resolveMps {
+        doLast {
+            logger.info "MPS resolution skipped"
+            logger.info "MPS home: " + mpsHomeDir.getAbsolutePath()
+        }
+    }
+} else {
+    task resolveMps(type: Copy) {
+        dependsOn configurations.mps
+        from {
+            configurations.mps.resolve().collect { zipTree(it) }
+        }
+        into mpsHomeDir
+    }
+}
+
+// tools needed for compiler support in ant calls
+ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true }
+
+def artifactsDir = file("$buildDir/artifacts")
+def dependenciesDir = file("$buildDir/dependencies")
+def jdkDir = file("$buildDir/jdkDir")
+
+// ___________________ utilities ___________________
+
+def defaultScriptArgs = [
+        'mps.home'                          : mpsHomeDir,
+        'mbeddr.formal.home'                : rootDir,
+        'build.dir'                         : buildDir,
+        'version'                           : version,
+        'build.date'                        : new Date(),
+        //incremental build support
+        'mps.generator.skipUnmodifiedModels': true
+]
+
+println "mbeddr.formal.home=$project.rootDir"
+
+// enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
+task configureJava{
+    println "Entering Task: configureJava"
+    dependsOn "downloadJbr"
+    doLast {
+        project.ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
+        project.ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
+        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName("downloadJbr").javaExecutable
+        println project.findProperty("itemis.mps.gradle.ant.defaultJavaExecutable")
+    }
+}
+
+task printJavaVersion(type: Exec, dependsOn: [configureJava]) {
+    commandLine "$buildDir/jbrDownload/jbr/bin/java", '--version'
+    standardOutput = new ByteArrayOutputStream()
+    doLast {
+        println "Output: $standardOutput"
+    }
+}
+
+task resolveJarDeps(type: Copy, dependsOn: [configureJava, jarTasks]) {
+}
+
+task resolveLanguageLibs(type: Copy) {
+    from {
+        configurations.languageLibs.resolve().collect { zipTree(it) }
+    }
+    into dependenciesDir
+}
+
+task generateLibrariesXml(type: GenerateLibrariesXml) {
+    dependsOn resolveLanguageLibs
+    description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
+    defaults rootProject.file('projectlibraries.properties')
+    overrides rootProject.file('projectlibraries.overrides.properties')
+    destination file('code/languages/com.mbeddr.formal.nusmv/.mps/libraries.xml')
+}
+
+task setup {
+    dependsOn generateLibrariesXml
+    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+}
+
+task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs, resolveJarDeps]) {
+    script "$buildDir/scripts/build_all_scripts.xml"
+}
+
+task build_formal_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    script new File("$buildDir/scripts/build-formal-languages.xml")
+}
+
+task resolveJBR_Win(type: Copy){
+    from { configurations.jbrWin.resolve() }
+    into jdkDir
+    rename { filename ->
+        def resolvedArtifact = configurations.jbrWin.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+        return resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+    }
+}
+
+task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [resolveJBR_Win, build_formal_languages]) {
+    script new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
+}
+
+task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
+    description "Will execute all tests from command line"
+	script new File("$buildDir/scripts/build-nusmv-tests.xml")
+	doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.antLib.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport_smv")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport_smv/index.html")
+    }
+}
+
+
+task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
+    description "Will execute all tests from command line"
+	script new File("$buildDir/scripts/build-safety-tests.xml")
+	doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.antLib.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
+
+task run_all_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
+    description "Will execute all tests from command line"
+	script new File("$buildDir/scripts/build-all-tests.xml")
+	doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.antLib.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
+
+check.dependsOn run_all_tests
+
+task package_formal(type: Zip, dependsOn: build_fasten_safety_distribution) {
+    archiveBaseName = 'com.mbeddr.formal'
+    from artifactsDir
+    include 'com.mbeddr.formal.languages/**'
+}
+
+assemble.dependsOn package_formal
+
+publishing {
+    repositories {
+        maven {
+            url project.publishingRepository
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+		maven {
+			name = "GitHubPackages"
+			url = uri("https://maven.pkg.github.com/mbeddr/mbeddr.formal")
+			if(project.hasProperty("gpr.token")) {
+				credentials {
+					username = project.findProperty("gpr.user")
+					password = project.findProperty("gpr.token")
+				}
+			}
+		}
+    }
+    publications {
+        NuSMVLanguages(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'formal'
+            artifact package_formal
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
+        }
+    }
+}
+
+task cleanMps(type: Delete) {
+    delete fileTree(dir: projectDir, include: ["**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**"])
+}
+
+//clean.dependsOn cleanMps
+
+
+defaultTasks 'build_fasten_safety_distribution'
+
+task rebuild(dependsOn:[clean, build_fasten_safety_distribution])

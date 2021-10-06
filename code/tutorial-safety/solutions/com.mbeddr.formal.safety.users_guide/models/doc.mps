@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ffdc23de-2347-43cf-8b68-9eee3e234e66(com.mbeddr.formal.safety.users_guide.main)">
+<model ref="r:ffdc23de-2347-43cf-8b68-9eee3e234e66(doc)">
   <persistence version="9" />
   <languages>
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
@@ -7,7 +7,7 @@
   <imports>
     <import index="c3og" ref="r:03da4936-751b-48d2-80dc-ab1f2a2cdd5b(_010_features._010_requirements)" />
     <import index="xtgl" ref="r:f55b42c2-771a-4828-bc62-5b64fd2520eb(_010_features._020_hazards_and_risk_analysis)" />
-    <import index="io0z" ref="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_assurance_cases_gsn)" />
+    <import index="io0z" ref="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
     <import index="xumq" ref="r:c5a55244-77a5-42ce-8f29-e1a72cf99b7f(_010_features._100_checkable_assurance_demo)" />
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
     <import index="688z" ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" />
@@ -15,6 +15,7 @@
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -29,7 +30,6 @@
       <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
       <concept id="620304030119138923" name="com.mbeddr.doc.structure.BoldFormattedText" flags="ng" index="2vpllh" />
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
-        <property id="324047639344492301" name="referenceOnly" index="1P4p2h" />
         <child id="6165313375056012515" name="ref" index="$CzcU" />
       </concept>
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
@@ -46,6 +46,7 @@
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
+        <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
         <reference id="2587259889032869885" name="originalNode" index="1wz7Nk" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
@@ -55,6 +56,10 @@
         <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
         <reference id="6386504476136521409" name="path" index="2Sb_kU" />
       </concept>
+      <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
+        <property id="6386504476136554614" name="mappedPath" index="2SbEId" />
+        <reference id="6386504476136554613" name="pathDef" index="2SbEIe" />
+      </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
@@ -63,16 +68,30 @@
         <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
+      <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
+        <child id="6068976060904007487" name="renderer" index="30GjaH" />
+        <child id="6068976060904007490" name="mappings" index="30Gjbg" />
+        <child id="6068976060904007488" name="inactiveRenderer" index="30Gjbi" />
+        <child id="6068976060904007489" name="root" index="30Gjbj" />
+      </concept>
       <concept id="4208238404723595132" name="com.mbeddr.doc.structure.UrlFormattedText" flags="ng" index="1hOBRO" />
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="988357225295489881" name="com.mbeddr.doc.structure.TableOfContents" flags="ng" index="3xmJbL" />
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <child id="6955693250238922832" name="description" index="3z_lpS" />
+        <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
+      </concept>
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
       <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922836" name="language" index="3z_lpW" />
+      </concept>
+      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NullRenderer" flags="ng" index="1_05Lf" />
+      <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
+        <property id="126932837435324910" name="title" index="WqcPg" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -143,7 +162,7 @@
   </node>
   <node concept="1_1swa" id="2mjHtwTu97P">
     <property role="yApLE" value="1" />
-    <property role="TrG5h" value="_000_overview" />
+    <property role="TrG5h" value="FASTEN_Safety_Tutorial" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="2mjHtwTu9dj" role="1_0VJ0">
       <property role="TrG5h" value="Overview" />
@@ -154,17 +173,17 @@
           <node concept="2vpllh" id="2mjHtwTu9kw" role="19SJt6">
             <node concept="19SGf9" id="2mjHtwTu9kx" role="$DsGW">
               <node concept="19SUe$" id="2mjHtwTu9ky" role="19SJt6">
-                <property role="19SUeA" value="FASTEN.Safe" />
+                <property role="19SUeA" value="FASTEN.Safety" />
               </node>
             </node>
           </node>
           <node concept="19SUe$" id="2mjHtwTu9k$" role="19SJt6">
-            <property role="19SUeA" value=" contains a set of domain specific languages and tooling used for specifying functional requirements, analyzing hazards, specifying safety requirements and creating safety arguments. " />
+            <property role="19SUeA" value=" contains a set of DSLs for specifying functional requirements, performing hazards and risks analysis, specifying safety requirements, performing safety analyses and creating safety arguments. " />
           </node>
           <node concept="2vpllh" id="2rbLpQ_Wolt" role="19SJt6">
             <node concept="19SGf9" id="2rbLpQ_Wolu" role="$DsGW">
               <node concept="19SUe$" id="2rbLpQ_Wolv" role="19SJt6">
-                <property role="19SUeA" value="FASTEN.Safe" />
+                <property role="19SUeA" value="FASTEN.Safety" />
               </node>
             </node>
           </node>
@@ -214,6 +233,23 @@
               </node>
               <node concept="19SUe$" id="25dEoZdod6m" role="19SJt6">
                 <property role="19SUeA" value=" - supports hazard analysis using STAMP, DSLs over STAMP and the definition of hazard lists" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="1LeaOOd9ZEI" role="3Xp5NH">
+          <node concept="OjmMv" id="1LeaOOd9ZEJ" role="3X6T9h">
+            <node concept="19SGf9" id="1LeaOOd9ZEK" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOd9ZEL" role="19SJt6" />
+              <node concept="1jUjqm" id="1LeaOOd9ZEM" role="19SJt6">
+                <node concept="19SGf9" id="1LeaOOd9ZEN" role="$DsGW">
+                  <node concept="19SUe$" id="1LeaOOd9ZEO" role="19SJt6">
+                    <property role="19SUeA" value="fasten.safety.fmea" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1LeaOOd9ZEP" role="19SJt6">
+                <property role="19SUeA" value=" - supports performing of FMEAs" />
               </node>
             </node>
           </node>
@@ -297,21 +333,26 @@
       <node concept="1_1sxE" id="2VIqKfEJe17" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
-    </node>
-    <node concept="1_1sxE" id="3slobAdyWmU" role="1_0VJ0">
-      <property role="TrG5h" value="empty_-1" />
-    </node>
-    <node concept="3xmJbL" id="3slobAdyVWQ" role="1_0VJ0" />
-    <node concept="$CzcT" id="3slobAdyWdQ" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
-      <node concept="1_0j5j" id="2rbLpQ_Woj1" role="$CzcU">
-        <ref role="1_0j5g" node="2rbLpQ_WohI" resolve="_010_requirements_modeling" />
+      <node concept="3xmJbL" id="3slobAdyVWQ" role="1_0VJ0" />
+      <node concept="$CzcT" id="3slobAdyWdQ" role="1_0VJ0">
+        <node concept="1_0j5j" id="2rbLpQ_Woj1" role="$CzcU">
+          <ref role="1_0j5g" node="2rbLpQ_WohI" resolve="_010_requirements_modeling" />
+        </node>
       </node>
-    </node>
-    <node concept="$CzcT" id="4U3OABz7Y$F" role="1_0VJ0">
-      <property role="1P4p2h" value="true" />
-      <node concept="1_0j5j" id="4U3OABz7Y_X" role="$CzcU">
-        <ref role="1_0j5g" node="4U3OABz7QoU" resolve="_020_hazards_and_risks_analysis" />
+      <node concept="$CzcT" id="4U3OABz7Y$F" role="1_0VJ0">
+        <node concept="1_0j5j" id="4U3OABz7Y_X" role="$CzcU">
+          <ref role="1_0j5g" node="4U3OABz7QoU" resolve="_020_hazards_and_risks_analysis" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="1LeaOOd9ZaW" role="1_0VJ0">
+        <node concept="1_0j5j" id="1LeaOOd9Zca" role="$CzcU">
+          <ref role="1_0j5g" node="3I9hGreJfoL" resolve="_030_safety_engineering_models" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="1LeaOOd9Zdp" role="1_0VJ0">
+        <node concept="1_0j5j" id="1LeaOOd9ZeD" role="$CzcU">
+          <ref role="1_0j5g" node="4U3OABz7YA0" resolve="_050_assurance_models" />
+        </node>
       </node>
     </node>
     <node concept="1_0j5j" id="2rbLpQ_WoiY" role="1DXQ57">
@@ -320,10 +361,17 @@
     <node concept="1_0j5j" id="4U3OABz7Y_T" role="1DXQ57">
       <ref role="1_0j5g" node="4U3OABz7QoU" resolve="_020_hazards_and_risks_analysis" />
     </node>
+    <node concept="1_0j5j" id="1LeaOOd9Z9y" role="1DXQ57">
+      <ref role="1_0j5g" node="3I9hGreJfoL" resolve="_030_safety_engineering_models" />
+    </node>
+    <node concept="1_0j5j" id="1LeaOOd9Z9G" role="1DXQ57">
+      <ref role="1_0j5g" node="4U3OABz7YA0" resolve="_050_assurance_models" />
+    </node>
   </node>
   <node concept="1_1swa" id="2rbLpQ_WohI">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_010_requirements_modeling" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="4U3OABz7KUi" role="1_0VJ0">
       <property role="TrG5h" value="requirements" />
@@ -338,10 +386,19 @@
       <node concept="1_0VNX" id="4U3OABz7LfW" role="1_0VJ0">
         <property role="TrG5h" value="plain_textual_requirements" />
         <property role="1_0VJr" value="Plain Textual Requirements" />
-        <node concept="3z_lpU" id="4U3OABz7KUC" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7KUD" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7LfK" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakEm" role="1_0VJ0">
+          <property role="TrG5h" value="simple_text_requirements" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakEo" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakEp" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakEq" role="19SJt6">
+                <property role="19SUeA" value="Example of requirements specified in plain text and pictures." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakEs" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakEu" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakEG" role="2NCMaf">
               <ref role="2NCMaa" to="c3og:5FhZjqTMMrD" resolve="_010_simple_text_requirements" />
             </node>
           </node>
@@ -357,10 +414,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="4U3OABz7Lgo" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7Lgp" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7LgX" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakF2" role="1_0VJ0">
+          <property role="TrG5h" value="text_tl_boilerplates_specs" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakF4" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakF5" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakF6" role="19SJt6">
+                <property role="19SUeA" value="Examples of requirements specified using boilerplates specs." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakF8" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakFa" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakFr" role="2NCMaf">
               <ref role="2NCMaa" to="c3og:5FhZjqTNhvP" resolve="_020_text_tl_boilerplates_specs" />
             </node>
           </node>
@@ -376,10 +442,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="4U3OABz7Lh4" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7Lh5" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7Lhu" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakFT" role="1_0VJ0">
+          <property role="TrG5h" value="formal_architecture_driven_req_spec" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakFV" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakFW" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakFX" role="19SJt6">
+                <property role="19SUeA" value="Examples of temporal logics specs referencing inputs/outputs of components." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakFZ" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakG1" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakGr" role="2NCMaf">
               <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
             </node>
           </node>
@@ -393,6 +468,7 @@
         </node>
         <node concept="2SaynC" id="4U3OABz7LiY" role="1_0VJ0">
           <property role="TrG5h" value="checking_requirements_consistency" />
+          <property role="2Sbq$t" value="true" />
           <ref role="1wz7Nk" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
           <node concept="2Sb_l4" id="4U3OABz7Ljn" role="2SbwM5">
             <property role="2Sb_kV" value="checking_tl_formal_requirements.png" />
@@ -418,10 +494,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="4U3OABz7Lh_" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7LhA" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7LhB" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakGT" role="1_0VJ0">
+          <property role="TrG5h" value="formal_architecture_driven_req_spec" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakGV" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakGW" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakGX" role="19SJt6">
+                <property role="19SUeA" value="Example of architecture driven requirements specification." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakGZ" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakH1" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakHi" role="2NCMaf">
               <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
             </node>
           </node>
@@ -432,6 +517,7 @@
   <node concept="1_1swa" id="4U3OABz7QoU">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_020_hazards_and_risks_analysis" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="4U3OABz7QoV" role="1_0VJ0">
       <property role="TrG5h" value="hara" />
@@ -489,6 +575,7 @@
           </node>
           <node concept="2SaynC" id="5cnt3YR8YeN" role="1_0VJ0">
             <property role="TrG5h" value="Control_Structure" />
+            <property role="2Sbq$t" value="true" />
             <ref role="1wz7Nk" to="xtgl:1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
             <node concept="2Sb_l4" id="5cnt3YR8Yfa" role="2SbwM5">
               <property role="2Sb_kV" value="stpa_control_structure_explanations.png" />
@@ -522,10 +609,18 @@
               </node>
             </node>
           </node>
-          <node concept="3z_lpU" id="4U3OABz7Qp7" role="1_0VJ0">
-            <property role="3z_lpW" value="mbeddr" />
-            <node concept="2NCZwO" id="4U3OABz7Qp8" role="3z_lpI">
-              <node concept="2NCMab" id="4U3OABz7Yz3" role="2NCMaf">
+          <node concept="3z_lpz" id="1LeaOOdakHQ" role="1_0VJ0">
+            <property role="TrG5h" value="_020_airbag_unsafe_control_analysis" />
+            <node concept="OjmMv" id="1LeaOOdakHS" role="3z_lpS">
+              <node concept="19SGf9" id="1LeaOOdakHT" role="OjmMu">
+                <node concept="19SUe$" id="1LeaOOdakHU" role="19SJt6">
+                  <property role="19SUeA" value="Example of the unsafe control analysis for control structure presented above." />
+                </node>
+              </node>
+            </node>
+            <node concept="2bctqb" id="1LeaOOdakHW" role="3z_lpT" />
+            <node concept="2NCZwO" id="1LeaOOdakHY" role="3z_lpI">
+              <node concept="2NCMab" id="1LeaOOdakIf" role="2NCMaf">
                 <ref role="2NCMaa" to="xtgl:1L4MZBxVgKw" resolve="_020_airbag_unsafe_control_analysis" />
               </node>
             </node>
@@ -542,38 +637,59 @@
             </node>
           </node>
         </node>
-        <node concept="1_1sxE" id="5cnt3YR9KZH" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3z_lpU" id="5cnt3YR9KY$" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="5cnt3YR9KY_" role="3z_lpI">
-            <node concept="2NCMab" id="5cnt3YR9KYL" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakIs" role="1_0VJ0">
+          <property role="TrG5h" value="_100_losses" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakIu" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakIv" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakIw" role="19SJt6">
+                <property role="19SUeA" value="Example of the definition of losses." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakIy" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakI$" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakIX" role="2NCMaf">
               <ref role="2NCMaa" to="xtgl:7Jm8RM1zooG" resolve="_100_losses" />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="1LeaOOdakJi" role="1_0VJ0">
+          <property role="TrG5h" value="_110_operational_situations" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakJj" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakJk" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakJl" role="19SJt6">
+                <property role="19SUeA" value="Example of the definition of operational situations." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakJm" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakJn" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakJM" role="2NCMaf">
+              <ref role="2NCMaa" to="xtgl:1LvcKAYEWJH" resolve="_110_operational_situations" />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="1LeaOOdakKb" role="1_0VJ0">
+          <property role="TrG5h" value="_110_airbag_hazards" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakKc" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakKd" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakKe" role="19SJt6">
+                <property role="19SUeA" value="Example of the definition of hazards." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakKf" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakKg" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakLb" role="2NCMaf">
+              <ref role="2NCMaa" to="xtgl:1L4MZBxVFrv" resolve="_110_airbag_hazards" />
             </node>
           </node>
         </node>
         <node concept="1_1sxE" id="5cnt3YR9KZu" role="1_0VJ0">
           <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3z_lpU" id="5cnt3YR9KYN" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="5cnt3YR9KYO" role="3z_lpI">
-            <node concept="2NCMab" id="5cnt3YR9KZ2" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:1LvcKAYEWJH" resolve="_110_operational_situations" />
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="5cnt3YR9KZg" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="3z_lpU" id="4U3OABz7Qpe" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7Qpf" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7Yz6" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:1L4MZBxVFrv" resolve="_110_airbag_hazards" />
-            </node>
-          </node>
         </node>
       </node>
     </node>
@@ -581,10 +697,11 @@
   <node concept="1_1swa" id="4U3OABz7YA0">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_050_assurance_models" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="4U3OABz7YA1" role="1_0VJ0">
       <property role="TrG5h" value="assurance" />
-      <property role="1_0VJr" value="Assurance Models" />
+      <property role="1_0VJr" value="Structured Assurance Cases" />
       <node concept="1_0LV8" id="4U3OABz7YA2" role="1_0VJ0">
         <node concept="19SGf9" id="4U3OABz7YA3" role="1_0LWR">
           <node concept="19SUe$" id="4U3OABz7YA4" role="19SJt6">
@@ -602,11 +719,46 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="4U3OABz7YA6" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7YA7" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7YBP" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdal3i" role="1_0VJ0">
+          <property role="TrG5h" value="_010_plain_text_gsn" />
+          <node concept="OjmMv" id="1LeaOOdal3k" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdal3l" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdal3m" role="19SJt6">
+                <property role="19SUeA" value="Example of GSN model using plain text for describing entities. Colors can be used on entities to improve the communication." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdal3o" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdal3q" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdal3F" role="2NCMaf">
               <ref role="2NCMaa" to="io0z:7L33HENduwy" resolve="_010_plain_text_gsn" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="75La0fJ_mRh" role="1_0VJ0">
+        <property role="TrG5h" value="plain_cae" />
+        <property role="1_0VJr" value="Plain CAE Models" />
+        <node concept="1_0LV8" id="75La0fJ_mRi" role="1_0VJ0">
+          <node concept="19SGf9" id="75La0fJ_mRj" role="1_0LWR">
+            <node concept="19SUe$" id="75La0fJ_mRk" role="19SJt6">
+              <property role="19SUeA" value="FASTEN allows the creation of structured arguments using Claims-Argument-Evidence language. The content of CAE elements is specified using natural language text." />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="75La0fJ_mRl" role="1_0VJ0">
+          <property role="TrG5h" value="_011_plain_text_cae" />
+          <node concept="OjmMv" id="75La0fJ_mRm" role="3z_lpS">
+            <node concept="19SGf9" id="75La0fJ_mRn" role="OjmMu">
+              <node concept="19SUe$" id="75La0fJ_mRo" role="19SJt6">
+                <property role="19SUeA" value="Example of CAE model using plain text for describing entities. Colors can be used on entities to improve the communication." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="75La0fJ_mRp" role="3z_lpT" />
+          <node concept="2NCZwO" id="75La0fJ_mRq" role="3z_lpI">
+            <node concept="2NCMab" id="75La0fJ_mT7" role="2NCMaf">
+              <ref role="2NCMaa" to="io0z:2ojFC2JbceD" resolve="_011_plain_text_cae" />
             </node>
           </node>
         </node>
@@ -621,10 +773,18 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="4U3OABz7YAd" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7YAe" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7YBS" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdal4Y" role="1_0VJ0">
+          <property role="TrG5h" value="Argument_Over_Hazards" />
+          <node concept="OjmMv" id="1LeaOOdal50" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdal51" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdal52" role="19SJt6">
+                <property role="19SUeA" value="Example of a pattern definition (argument over hazards)." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdal54" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdal56" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdal5r" role="2NCMaf">
               <ref role="2NCMaa" to="6r4f:3jaLROLvqLi" resolve="Argument Over Hazards" />
             </node>
           </node>
@@ -632,10 +792,18 @@
         <node concept="1_1sxE" id="4U3OABz7YCL" role="1_0VJ0">
           <property role="TrG5h" value="empty_-1" />
         </node>
-        <node concept="3z_lpU" id="4U3OABz7YD2" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7YD3" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7YDe" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdal7L" role="1_0VJ0">
+          <property role="TrG5h" value="_020_patterns_instantiated_from_library" />
+          <node concept="OjmMv" id="1LeaOOdal7N" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdal7O" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdal7P" role="19SJt6">
+                <property role="19SUeA" value="Example of pattern instantiation." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdal7R" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdal7T" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdal8i" role="2NCMaf">
               <ref role="2NCMaa" to="io0z:3jaLROLvqKj" resolve="_020_patterns_instantiated_from_library" />
             </node>
           </node>
@@ -651,10 +819,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="4U3OABz7YAk" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="4U3OABz7YAl" role="3z_lpI">
-            <node concept="2NCMab" id="4U3OABz7YDg" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdal9I" role="1_0VJ0">
+          <property role="TrG5h" value="_100_toplevel_safety_arg_pattern" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdal9K" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdal9L" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdal9M" role="19SJt6">
+                <property role="19SUeA" value="Example of a high level DSL construct formalizing arguments over hazards strategy developed via different high level hazard mitigation goals." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdal9O" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdal9Q" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdala7" role="2NCMaf">
               <ref role="2NCMaa" to="xumq:1$M4_qbIaTb" resolve="_100_toplevel_safety_arg_pattern" />
             </node>
           </node>
@@ -680,10 +857,21 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJf5W" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJf5X" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJf69" role="2NCMaf">
+        <node concept="1_1sxE" id="1LeaOOdald7" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpz" id="1LeaOOdaldA" role="1_0VJ0">
+          <property role="TrG5h" value="_050_linking_solutions_to_external_documents" />
+          <node concept="OjmMv" id="1LeaOOdaldC" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdaldD" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdaldE" role="19SJt6">
+                <property role="19SUeA" value="Example on linking solutions to external documents." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdaldG" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdaldI" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdale7" role="2NCMaf">
               <ref role="2NCMaa" to="io0z:1TD_kqsR8Z6" resolve="_050_linking_solutions_to_external_documents" />
             </node>
           </node>
@@ -716,10 +904,21 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfb7" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJfb8" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfbj" role="2NCMaf">
+        <node concept="1_1sxE" id="1LeaOOdalgl" role="1_0VJ0">
+          <property role="TrG5h" value="empty_-1" />
+        </node>
+        <node concept="3z_lpz" id="1LeaOOdalho" role="1_0VJ0">
+          <property role="TrG5h" value="_060_linking_solutions_to_external_tools" />
+          <node concept="OjmMv" id="1LeaOOdalhq" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdalhr" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdalhs" role="19SJt6">
+                <property role="19SUeA" value="Example of linking solutions to external tools which are used to automatically check the evidence." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdalhu" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdalhw" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdalhT" role="2NCMaf">
               <ref role="2NCMaa" to="io0z:3I9hGreIU2l" resolve="_060_linking_solutions_to_external_tools" />
             </node>
           </node>
@@ -742,10 +941,18 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfgz" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJfg$" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfgN" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdaljj" role="1_0VJ0">
+          <property role="TrG5h" value="_030_confidence_dempster_schafer" />
+          <node concept="OjmMv" id="1LeaOOdaljl" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdaljm" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdaljn" role="19SJt6">
+                <property role="19SUeA" value="Example of formalization of confidence in the assurance case using the Dempster-Schafer approach." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdaljp" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdaljr" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdaljJ" role="2NCMaf">
               <ref role="2NCMaa" to="io0z:4eD_5l3mJSY" resolve="_030_confidence_dempster_schafer" />
             </node>
           </node>
@@ -768,6 +975,7 @@
   <node concept="1_1swa" id="3I9hGreJfoL">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_030_safety_engineering_models" />
+    <property role="3GE5qa" value="features" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="3I9hGreJfoM" role="1_0VJ0">
       <property role="TrG5h" value="safety_engineering_models" />
@@ -789,10 +997,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfql" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJfqm" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfqz" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakLV" role="1_0VJ0">
+          <property role="TrG5h" value="_020_failure_modes_of_components" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakLX" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakLY" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakLZ" role="19SJt6">
+                <property role="19SUeA" value="Example of definition of failure modes for components." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakM1" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakM3" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakMw" role="2NCMaf">
               <ref role="2NCMaa" to="688z:4eD_5l3mJwO" resolve="_020_failure_modes_of_components" />
             </node>
           </node>
@@ -804,10 +1021,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfrn" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJfro" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfrF" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakNh" role="1_0VJ0">
+          <property role="TrG5h" value="_030_failure_effects_on_system" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakNj" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakNk" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakNl" role="19SJt6">
+                <property role="19SUeA" value="Example of definition of failure effects on the system." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakNn" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakNp" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakNU" role="2NCMaf">
               <ref role="2NCMaa" to="688z:4eD_5l3mJyA" resolve="_030_failure_effects_on_system" />
             </node>
           </node>
@@ -819,10 +1045,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfoR" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJfoS" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfpN" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakON" role="1_0VJ0">
+          <property role="TrG5h" value="_040_dfmea" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakOP" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakOQ" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakOR" role="19SJt6">
+                <property role="19SUeA" value="Example of a design FMEA." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakOT" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakOV" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakPw" role="2NCMaf">
               <ref role="2NCMaa" to="688z:4eD_5l3mJzG" resolve="_040_dfmea" />
             </node>
           </node>
@@ -848,10 +1083,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfvW" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJfvX" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfw8" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakQt" role="1_0VJ0">
+          <property role="TrG5h" value="_210_failure_modes" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakQv" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakQw" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakQx" role="19SJt6">
+                <property role="19SUeA" value="Example of the definition of failure modes on signals." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakQz" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakQ_" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakRa" role="2NCMaf">
               <ref role="2NCMaa" to="688z:1TeaL8RdKfy" resolve="_210_failure_modes" />
             </node>
           </node>
@@ -863,10 +1107,19 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfwE" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
-          <node concept="2NCZwO" id="3I9hGreJfwF" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfx0" role="2NCMaf">
+        <node concept="3z_lpz" id="1LeaOOdakSb" role="1_0VJ0">
+          <property role="TrG5h" value="_220_IFMEAs" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakSd" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakSe" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakSf" role="19SJt6">
+                <property role="19SUeA" value="Example of IFMEA - definition of failure propagation logic in atomic components." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakSh" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakSj" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakSW" role="2NCMaf">
               <ref role="2NCMaa" to="688z:4eD_5l3mJEf" resolve="_220_IFMEAs" />
             </node>
           </node>
@@ -888,17 +1141,43 @@
             </node>
           </node>
         </node>
-        <node concept="3z_lpU" id="3I9hGreJfx3" role="1_0VJ0">
-          <property role="3z_lpW" value="mbeddr" />
+        <node concept="3z_lpz" id="1LeaOOdakZR" role="1_0VJ0">
+          <property role="TrG5h" value="_200_arch" />
           <property role="3z_lpJ" value="true" />
-          <node concept="2NCZwO" id="3I9hGreJfx4" role="3z_lpI">
-            <node concept="2NCMab" id="3I9hGreJfS3" role="2NCMaf">
+          <node concept="OjmMv" id="1LeaOOdakZT" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakZU" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakZV" role="19SJt6">
+                <property role="19SUeA" value="Example of the generated fault tree." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakZX" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakZZ" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdal0G" role="2NCMaf">
               <ref role="2NCMaa" to="688z:1TeaL8RdujH" resolve="_200_arch" />
             </node>
           </node>
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1_08Dk" id="1LeaOOd9Zlc">
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="export" />
+    <property role="WqcPg" value="FASTEN.Safe" />
+    <node concept="1TaS0h" id="1LeaOOd9Zli" role="30GjaH" />
+    <node concept="1_0j5j" id="1LeaOOd9Zlf" role="30Gjbj">
+      <ref role="1_0j5g" node="2mjHtwTu97P" resolve="FASTEN_Safety_Tutorial" />
+    </node>
+    <node concept="2SbEIf" id="1LeaOOd9Zll" role="30Gjbg">
+      <property role="2SbEId" value="img" />
+      <ref role="2SbEIe" node="9TY4XGZias" resolve="img" />
+    </node>
+    <node concept="2SbEIf" id="1LeaOOd9Zlq" role="30Gjbg">
+      <property role="2SbEId" value="tmp" />
+      <ref role="2SbEIe" node="2mjHtwTu9e1" resolve="tmp" />
+    </node>
+    <node concept="1_05Lf" id="1LeaOOda0Mx" role="30Gjbi" />
   </node>
 </model>
 

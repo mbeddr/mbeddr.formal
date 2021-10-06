@@ -49,6 +49,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -183,23 +186,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3bh1RFvqrQn" role="3cqZAp">
-          <node concept="2OqwBi" id="3bh1RFvqrQo" role="3clFbG">
-            <node concept="2Sf5sV" id="3bh1RFvqrQp" role="2Oq$k0" />
-            <node concept="HtI8k" id="3bh1RFvqrQq" role="2OqNvi">
-              <node concept="2pJPEk" id="3bh1RFvqrQr" role="HtI8F">
-                <node concept="2pJPED" id="3bh1RFvqrQs" role="2pJPEn">
-                  <ref role="2pJxaS" to="zsc5:62cfieELy5m" resolve="FaultTreeContainer" />
-                  <node concept="2pIpSj" id="3bh1RFvqrQt" role="2pJxcM">
-                    <ref role="2pIpSl" to="zsc5:62cfieELy5p" resolve="ft" />
-                    <node concept="36biLy" id="3bh1RFvqrQu" role="28nt2d">
-                      <node concept="37vLTw" id="3bh1RFvqrQv" role="36biLW">
-                        <ref role="3cqZAo" node="3bh1RFvqrQi" resolve="ft" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+        <node concept="3clFbF" id="75La0fJxUok" role="3cqZAp">
+          <node concept="2YIFZM" id="4XLBpBm5Xox" role="3clFbG">
+            <ref role="37wK5l" to="h4ob:75La0fJxP$Y" resolve="saveFaultTree" />
+            <ref role="1Pybhc" to="h4ob:75La0fJxPz_" resolve="FaultTreeSaver" />
+            <node concept="2Sf5sV" id="75La0fJxUom" role="37wK5m" />
+            <node concept="37vLTw" id="75La0fJxUon" role="37wK5m">
+              <ref role="3cqZAo" node="3bh1RFvqrQi" resolve="ft" />
+            </node>
+            <node concept="3clFbT" id="4TCu33h1hml" role="37wK5m">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
@@ -238,24 +234,15 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3bh1RFvEqT0" role="3cqZAp">
-          <node concept="2OqwBi" id="3bh1RFvEqT1" role="3clFbG">
-            <node concept="2Sf5sV" id="3bh1RFvEqT2" role="2Oq$k0" />
-            <node concept="HtI8k" id="3bh1RFvEqT3" role="2OqNvi">
-              <node concept="2pJPEk" id="3bh1RFvEqT4" role="HtI8F">
-                <node concept="2pJPED" id="3bh1RFvEqT5" role="2pJPEn">
-                  <ref role="2pJxaS" to="zsc5:62cfieELy5m" resolve="FaultTreeContainer" />
-                  <node concept="2pIpSj" id="3bh1RFvEqT6" role="2pJxcM">
-                    <ref role="2pIpSl" to="zsc5:62cfieELy5p" resolve="ft" />
-                    <node concept="36biLy" id="3bh1RFvEqT7" role="28nt2d">
-                      <node concept="37vLTw" id="3bh1RFvEqT8" role="36biLW">
-                        <ref role="3cqZAo" node="3bh1RFvEqSW" resolve="ft" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+        <node concept="3clFbF" id="75La0fJxSJP" role="3cqZAp">
+          <node concept="2YIFZM" id="4XLBpBm5Xoy" role="3clFbG">
+            <ref role="37wK5l" to="h4ob:75La0fJxP$Y" resolve="saveFaultTree" />
+            <ref role="1Pybhc" to="h4ob:75La0fJxPz_" resolve="FaultTreeSaver" />
+            <node concept="2Sf5sV" id="75La0fJxSMm" role="37wK5m" />
+            <node concept="37vLTw" id="75La0fJxSPV" role="37wK5m">
+              <ref role="3cqZAo" node="3bh1RFvEqSW" resolve="ft" />
             </node>
+            <node concept="3clFbT" id="4TCu33h1hag" role="37wK5m" />
           </node>
         </node>
       </node>
