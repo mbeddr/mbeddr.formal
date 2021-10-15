@@ -248,5 +248,75 @@
       <node concept="10P_77" id="75La0fJ$_ie" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="4G_iuUEcvEB">
+    <property role="3GE5qa" value="connection" />
+    <ref role="13h7C2" to="cdmc:2ojFC2JbGgP" resolve="Connection" />
+    <node concept="13i0hz" id="4G_iuUEcu_V" role="13h7CS">
+      <property role="TrG5h" value="getUpstreamElement" />
+      <ref role="13i0hy" to="89jy:4G_iuUEct$e" resolve="getUpstreamElement" />
+      <node concept="3Tm1VV" id="4G_iuUEcu_W" role="1B3o_S" />
+      <node concept="3clFbS" id="4G_iuUEcu_Z" role="3clF47">
+        <node concept="3clFbF" id="4G_iuUEcuAw" role="3cqZAp">
+          <node concept="2OqwBi" id="4G_iuUEcuKp" role="3clFbG">
+            <node concept="13iPFW" id="4G_iuUEcuAv" role="2Oq$k0" />
+            <node concept="3TrEf2" id="4G_iuUEeprr" role="2OqNvi">
+              <ref role="3Tt5mk" to="py52:2ccN23odOzl" resolve="source" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4G_iuUEcuA0" role="3clF45">
+        <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="4G_iuUEcuA1" role="13h7CS">
+      <property role="TrG5h" value="getDownstreamElement" />
+      <ref role="13i0hy" to="89jy:4G_iuUEcuhm" resolve="getDownstreamElement" />
+      <node concept="3Tm1VV" id="4G_iuUEcuA2" role="1B3o_S" />
+      <node concept="3clFbS" id="4G_iuUEcuA5" role="3clF47">
+        <node concept="3clFbF" id="4G_iuUEcv2k" role="3cqZAp">
+          <node concept="2OqwBi" id="4G_iuUEcvcd" role="3clFbG">
+            <node concept="13iPFW" id="4G_iuUEcv2j" role="2Oq$k0" />
+            <node concept="3TrEf2" id="4G_iuUEepDb" role="2OqNvi">
+              <ref role="3Tt5mk" to="py52:2ccN23odOzm" resolve="target" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4G_iuUEcuA6" role="3clF45">
+        <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="4G_iuUEcEsQ" role="13h7CS">
+      <property role="TrG5h" value="setDownstreamElement" />
+      <ref role="13i0hy" to="89jy:4G_iuUEcCKJ" resolve="setDownstreamElement" />
+      <node concept="3Tm1VV" id="4G_iuUEcEsR" role="1B3o_S" />
+      <node concept="3clFbS" id="4G_iuUEcEsW" role="3clF47">
+        <node concept="3clFbF" id="4G_iuUEcEwi" role="3cqZAp">
+          <node concept="37vLTI" id="4G_iuUEcF1L" role="3clFbG">
+            <node concept="37vLTw" id="4G_iuUEcF6J" role="37vLTx">
+              <ref role="3cqZAo" node="4G_iuUEcEsX" resolve="downstream" />
+            </node>
+            <node concept="2OqwBi" id="4G_iuUEcEDE" role="37vLTJ">
+              <node concept="13iPFW" id="4G_iuUEcEwh" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4G_iuUEeITN" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:2ccN23odOzm" resolve="target" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4G_iuUEcEsX" role="3clF46">
+        <property role="TrG5h" value="downstream" />
+        <node concept="3Tqbb2" id="4G_iuUEcEsY" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4G_iuUEcEsZ" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="4G_iuUEcvEC" role="13h7CW">
+      <node concept="3clFbS" id="4G_iuUEcvED" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
