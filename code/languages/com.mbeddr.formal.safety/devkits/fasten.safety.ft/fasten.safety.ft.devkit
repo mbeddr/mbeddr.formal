@@ -3,6 +3,7 @@
   <exported-language name="ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)" />
   <exported-language name="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" />
   <exported-language name="091b20ea-7bf0-41d6-8e6e-4460a9bd8121(com.fasten.safety.ft.xfta_gen)" />
+  <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <exported-solutions>
     <exported-solution>4dc47fba-0f4f-4162-820b-d2e1e306482d(com.fasten.safety.ft.pluginSolution)</exported-solution>
     <exported-solution>54912f5b-43b5-48a6-b710-8bbe3bcf9649(com.fasten.safety.ft.xfta.pluginSolution)</exported-solution>
