@@ -588,6 +588,9 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
+    <node concept="1PE4EZ" id="7O04SQY6w7Z" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
+    </node>
   </node>
   <node concept="24kQdi" id="2ccN23o9otA">
     <property role="3GE5qa" value="entities" />
@@ -602,7 +605,7 @@
         <node concept="3XFhqQ" id="4WMzu8s6dda" role="3EZMnx" />
         <node concept="l2Vlx" id="4WMzu8s63Dp" role="2iSdaV" />
         <node concept="PMmxH" id="65Lrkjj1Rhx" role="3EZMnx">
-          <ref role="PMmxG" node="65Lrkjj1Rgv" resolve="ClaimTextArea" />
+          <ref role="PMmxG" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
         </node>
         <node concept="3XFhqQ" id="4WMzu8s63ED" role="3EZMnx" />
         <node concept="3XFhqQ" id="4WMzu8s6dd5" role="3EZMnx" />
@@ -675,7 +678,7 @@
     <node concept="2ZK4vF" id="3VR5nzkXXeP" role="2wV5jI">
       <ref role="1k5W1q" to="xnej:50UR0qsbFda" resolve="ShapeStyle_Dynamic" />
       <node concept="PMmxH" id="3VR5nzkXXeS" role="1ytjkN">
-        <ref role="PMmxG" node="3VR5nzkXXnf" resolve="ArgumentTextArea" />
+        <ref role="PMmxG" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
       </node>
       <node concept="2fs66k" id="3VR5nzkXXeT" role="1idfhu">
         <node concept="3clFbS" id="3VR5nzkXXeU" role="2VODD2">
@@ -772,6 +775,9 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
+    <node concept="1PE4EZ" id="7O04SQY6wwL" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
+    </node>
   </node>
   <node concept="PKFIW" id="3VR5nzkXXHt">
     <property role="TrG5h" value="ArgumentTextAreaInInspector" />
@@ -813,7 +819,7 @@
       <node concept="3EZMnI" id="1e9opmpclHS" role="1ytjkN">
         <node concept="2iRfu4" id="1e9opmpclHT" role="2iSdaV" />
         <node concept="PMmxH" id="33qt4wr6jXJ" role="3EZMnx">
-          <ref role="PMmxG" node="33qt4wr6jMT" resolve="EvidenceTextArea" />
+          <ref role="PMmxG" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
         </node>
         <node concept="xShMh" id="2QkJsC6y2Za" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -859,6 +865,9 @@
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
       </node>
+    </node>
+    <node concept="1PE4EZ" id="7O04SQY6wwN" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
   </node>
   <node concept="PKFIW" id="33qt4wr6lZ3">
@@ -1050,7 +1059,7 @@
         <node concept="3XFhqQ" id="4WMzu8s6PxR" role="3EZMnx" />
         <node concept="l2Vlx" id="4WMzu8s6Px_" role="2iSdaV" />
         <node concept="PMmxH" id="2ojFC2Jc4kW" role="3EZMnx">
-          <ref role="PMmxG" node="65Lrkjj1Rgv" resolve="ClaimTextArea" />
+          <ref role="PMmxG" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
         </node>
         <node concept="3XFhqQ" id="4WMzu8s6Py0" role="3EZMnx" />
         <node concept="3XFhqQ" id="4WMzu8s6Py6" role="3EZMnx" />
