@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a5eafefc-bb6b-4a97-af32-8fcb507c8874(_010_features._060_reuse_assurance_case_fragments)">
+<model ref="r:a5eafefc-bb6b-4a97-af32-8fcb507c8874(_010_features._060_assurance_case_fragments_reuse)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
@@ -1134,17 +1134,7 @@
       <ref role="1qDcKi" node="x1FXqIkx4" resolve="Goal_Process_Compliance" />
       <node concept="19SGf9" id="x1FXqIESq" role="2vnaTZ">
         <node concept="19SUe$" id="x1FXqIESr" role="19SJt6">
-          <property role="19SUeA" value="All process steps prescribed &#10;by " />
-        </node>
-        <node concept="hkfVV" id="x1FXqIESs" role="19SJt6">
-          <node concept="19SGf9" id="x1FXqIESt" role="2vnaTY">
-            <node concept="19SUe$" id="x1FXqIESu" role="19SJt6">
-              <property role="19SUeA" value="Standard" />
-            </node>
-          </node>
-        </node>
-        <node concept="19SUe$" id="x1FXqIESv" role="19SJt6">
-          <property role="19SUeA" value="have been &#10;performed." />
+          <property role="19SUeA" value="All process steps prescribed &#10;by ISO26262 have been performed." />
         </node>
       </node>
     </node>
@@ -1152,18 +1142,18 @@
       <node concept="37mRIm" id="x1FXqIETC" role="37mRID">
         <property role="37mO49" value="9296093162155545" />
         <node concept="gqqVs" id="x1FXqIETA" role="37mO4d">
-          <property role="gqqTZ" value="46.0" />
-          <property role="gqqTW" value="214.0" />
-          <property role="gqqTX" value="162.0" />
-          <property role="gqqTy" value="69.0" />
+          <property role="gqqTZ" value="66.0" />
+          <property role="gqqTW" value="259.0" />
+          <property role="gqqTX" value="164.0" />
+          <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
       <node concept="37mRIm" id="x1FXqIEWU" role="37mRID">
         <property role="37mO49" value="9296093162155757" />
         <node concept="gqqVs" id="x1FXqIEWT" role="37mO4d">
-          <property role="gqqTZ" value="284.0" />
-          <property role="gqqTW" value="35.0" />
+          <property role="gqqTZ" value="76.0" />
+          <property role="gqqTW" value="50.0" />
           <property role="gqqTX" value="138.0" />
           <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -1172,11 +1162,47 @@
       <node concept="37mRIm" id="x1FXqIEZf" role="37mRID">
         <property role="37mO49" value="9296093162155903" />
         <node concept="gqqVs" id="x1FXqIEZe" role="37mO4d">
-          <property role="gqqTZ" value="243.0" />
-          <property role="gqqTW" value="125.0" />
+          <property role="gqqTZ" value="66.0" />
+          <property role="gqqTW" value="154.0" />
           <property role="gqqTX" value="158.0" />
           <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="x1FXqRo6D" role="37mRID">
+        <property role="37mO49" value="9296093164437862" />
+        <node concept="2VclpC" id="x1FXqRo6C" role="37mO4d">
+          <node concept="3ul5H1" id="x1FXqRo6E" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="x1FXqRo6F" role="3ul5Gz">
+              <node concept="2VclrF" id="x1FXqRo6G" role="3wpmZR">
+                <property role="2Vclpx" value="246.5" />
+                <property role="2Vclpz" value="92.5" />
+              </node>
+              <node concept="2VclrF" id="x1FXqRo6H" role="3wpmZP">
+                <property role="2Vclpx" value="-177.0" />
+                <property role="2Vclpz" value="29.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="x1FXqRo9A" role="37mRID">
+        <property role="37mO49" value="9296093164438049" />
+        <node concept="2VclpC" id="x1FXqRo9_" role="37mO4d">
+          <node concept="3ul5H1" id="x1FXqRo9B" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="x1FXqRo9C" role="3ul5Gz">
+              <node concept="2VclrF" id="x1FXqRo9D" role="3wpmZR">
+                <property role="2Vclpx" value="251.5" />
+                <property role="2Vclpz" value="196.5" />
+              </node>
+              <node concept="2VclrF" id="x1FXqRo9E" role="3wpmZP">
+                <property role="2Vclpx" value="-177.0" />
+                <property role="2Vclpz" value="29.0" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1195,6 +1221,14 @@
           <property role="19SUeA" value="State of the art processes &#10;have been performed." />
         </node>
       </node>
+    </node>
+    <node concept="3VeUTF" id="x1FXqRo5A" role="2vhqc$">
+      <ref role="3VeSjP" node="x1FXqIEVH" resolve="SafetyManagement" />
+      <ref role="3VeSjQ" node="x1FXqIEXZ" resolve="SOTA" />
+    </node>
+    <node concept="3VeUTF" id="x1FXqRo8x" role="2vhqc$">
+      <ref role="3VeSjP" node="x1FXqIEXZ" resolve="SOTA" />
+      <ref role="3VeSjQ" node="x1FXqIESp" resolve="Goal_Process_Compliance Ref" />
     </node>
   </node>
 </model>
