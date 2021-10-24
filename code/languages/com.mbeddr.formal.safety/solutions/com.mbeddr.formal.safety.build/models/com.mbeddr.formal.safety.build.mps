@@ -9199,6 +9199,81 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="x1FXqSKvD" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.cae.ext" />
+        <property role="3LESm3" value="d8195c35-9fa4-406e-b16a-8f62c605380b" />
+        <node concept="398BVA" id="x1FXqSLjf" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="x1FXqSLs7" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="x1FXqSLZe" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext" />
+              <node concept="2Ry0Ak" id="x1FXqSMp_" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSMWr" role="3bR37C">
+          <node concept="3bR9La" id="x1FXqSMWs" role="1SiIV1">
+            <ref role="3bR37D" node="7he_lUurzLh" resolve="com.mbeddr.formal.safety.gsn.ext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSMWt" role="3bR37C">
+          <node concept="3bR9La" id="x1FXqSMWu" role="1SiIV1">
+            <ref role="3bR37D" node="7FGTN4LGIpd" resolve="com.mbeddr.formal.safety.cae" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="x1FXqSMWE" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="x1FXqSMWF" role="1HemKq">
+            <node concept="398BVA" id="x1FXqSMWv" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="x1FXqSMWw" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="x1FXqSMWx" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext" />
+                  <node concept="2Ry0Ak" id="x1FXqSMWy" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="x1FXqSMWG" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSMWH" role="3bR37C">
+          <node concept="1Busua" id="x1FXqSMWI" role="1SiIV1">
+            <ref role="1Busuk" node="7he_lUurzLh" resolve="com.mbeddr.formal.safety.gsn.ext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSMWJ" role="3bR37C">
+          <node concept="1Busua" id="x1FXqSMWK" role="1SiIV1">
+            <ref role="1Busuk" node="7FGTN4LGIpd" resolve="com.mbeddr.formal.safety.cae" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="x1FXqSNbF" role="3bR31x">
+          <node concept="3LXTmp" id="x1FXqSNbG" role="3rtmxm">
+            <node concept="398BVA" id="x1FXqSNbH" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="x1FXqSNbI" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="x1FXqSNbJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="x1FXqSNbL" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="1UGKBYPy7cD" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.formal.safety.cae.external_evidence" />
@@ -9255,6 +9330,22 @@
         <node concept="1SiIV0" id="1UGKBYPy9jc" role="3bR37C">
           <node concept="1Busua" id="1UGKBYPy9jd" role="1SiIV1">
             <ref role="1Busuk" node="7FGTN4LGIpd" resolve="com.mbeddr.formal.safety.cae" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="x1FXqSNle" role="3bR31x">
+          <node concept="3LXTmp" id="x1FXqSNlf" role="3rtmxm">
+            <node concept="398BVA" id="x1FXqSNlg" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="x1FXqSNlh" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="x1FXqSNli" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.external_evidence" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="x1FXqSNlk" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
           </node>
         </node>
       </node>
@@ -11632,6 +11723,9 @@
         <node concept="3LEDTy" id="5TezZ1Vejot" role="3LEDUa">
           <ref role="3LEDTV" node="7he_lUur$v6" resolve="com.mbeddr.formal.safety.gsn.patterns" />
         </node>
+        <node concept="3LEDTy" id="x1FXqSNXX" role="3LEDUa">
+          <ref role="3LEDTV" node="x1FXqSKvD" resolve="com.mbeddr.formal.safety.cae.ext" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7he_lUu$SN2" role="3989C9">
@@ -11765,6 +11859,9 @@
         </node>
         <node concept="3LEDTy" id="3R_yAtWp7LA" role="3LEDUa">
           <ref role="3LEDTV" node="3R_yAtWp53E" resolve="com.fasten.safety.ft.xfta_gen" />
+        </node>
+        <node concept="3LEDTy" id="x1FXqSN1J" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
         </node>
       </node>
     </node>

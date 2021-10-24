@@ -3164,6 +3164,81 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="x1FXqSOrI" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.cae.ext" />
+        <property role="3LESm3" value="d8195c35-9fa4-406e-b16a-8f62c605380b" />
+        <node concept="398BVA" id="x1FXqSODa" role="3LF7KH">
+          <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="x1FXqSOK_" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="x1FXqSPdY" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext" />
+              <node concept="2Ry0Ak" id="x1FXqSPsH" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSPJy" role="3bR37C">
+          <node concept="3bR9La" id="x1FXqSPJz" role="1SiIV1">
+            <ref role="3bR37D" node="6hyv0iVPlGv" resolve="com.mbeddr.formal.safety.gsn.ext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSPJ$" role="3bR37C">
+          <node concept="3bR9La" id="x1FXqSPJ_" role="1SiIV1">
+            <ref role="3bR37D" node="1UGKBYPyaLN" resolve="com.mbeddr.formal.safety.cae" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="x1FXqSPJL" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="x1FXqSPJM" role="1HemKq">
+            <node concept="398BVA" id="x1FXqSPJA" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="x1FXqSPJB" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="x1FXqSPJC" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext" />
+                  <node concept="2Ry0Ak" id="x1FXqSPJD" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="x1FXqSPJN" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSPJO" role="3bR37C">
+          <node concept="1Busua" id="x1FXqSPJP" role="1SiIV1">
+            <ref role="1Busuk" node="6hyv0iVPlGv" resolve="com.mbeddr.formal.safety.gsn.ext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="x1FXqSPJQ" role="3bR37C">
+          <node concept="1Busua" id="x1FXqSPJR" role="1SiIV1">
+            <ref role="1Busuk" node="1UGKBYPyaLN" resolve="com.mbeddr.formal.safety.cae" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="x1FXqSPTg" role="3bR31x">
+          <node concept="3LXTmp" id="x1FXqSPTh" role="3rtmxm">
+            <node concept="398BVA" id="x1FXqSPTi" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="x1FXqSPTj" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="x1FXqSPTk" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.cae.ext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="x1FXqSPTm" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="1UGKBYPyczT" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.formal.safety.cae.external_evidence" />
