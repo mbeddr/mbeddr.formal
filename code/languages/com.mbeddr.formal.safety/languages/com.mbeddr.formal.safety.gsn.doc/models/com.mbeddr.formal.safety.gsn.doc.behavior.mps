@@ -72,7 +72,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="3d5AacfxFe9">
-    <ref role="13h7C2" to="wvti:4KIvh_tvCfy" resolve="TemplateWord" />
+    <ref role="13h7C2" to="wvti:4KIvh_tvCfy" resolve="TemplateWord_old" />
     <node concept="13hLZK" id="3d5AacfxFea" role="13h7CW">
       <node concept="3clFbS" id="3d5AacfxFeb" role="2VODD2" />
     </node>
@@ -94,7 +94,7 @@
                 <node concept="2OqwBi" id="3d5AacfxGtV" role="2Oq$k0">
                   <node concept="13iPFW" id="3d5AacfxGgN" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3d5AacfxGCz" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wvti:3GRi4m$qYoV" resolve="text" />
+                    <ref role="3Tt5mk" to="wvti:3GRi4m$qYoV" resolve="text_old" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="3d5AacfxH4h" role="2OqNvi">
