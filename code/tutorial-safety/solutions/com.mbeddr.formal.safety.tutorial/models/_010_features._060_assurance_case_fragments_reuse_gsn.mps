@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a5eafefc-bb6b-4a97-af32-8fcb507c8874(_010_features._060_assurance_case_fragments_reuse)">
+<model ref="r:a5eafefc-bb6b-4a97-af32-8fcb507c8874(_010_features._060_assurance_case_fragments_reuse_gsn)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
