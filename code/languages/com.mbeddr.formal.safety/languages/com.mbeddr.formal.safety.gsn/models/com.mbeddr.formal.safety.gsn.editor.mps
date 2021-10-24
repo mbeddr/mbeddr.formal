@@ -2865,6 +2865,9 @@
         <ref role="2xQOue" node="3GRi4m$roLc" resolve="SolutionCircle" />
       </node>
       <node concept="3EZMnI" id="4WMzu8s4d7a" role="1ytjkN">
+        <node concept="xShMh" id="x1FXqIFc1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
         <node concept="l2Vlx" id="4WMzu8s4d7b" role="2iSdaV" />
         <node concept="3XFhqQ" id="4WMzu8s4d7u" role="3EZMnx" />
         <node concept="3XFhqQ" id="4WMzu8s56W$" role="3EZMnx" />
@@ -9492,12 +9495,12 @@
         <node concept="2iRfu4" id="4WMzu8s2nwi" role="2iSdaV" />
         <node concept="PMmxH" id="2TfVCPOMBcg" role="3EZMnx">
           <ref role="PMmxG" node="2TfVCPOME$g" resolve="JustificationTextArea" />
-          <node concept="xShMh" id="7lPNUDMsmze" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
         <node concept="3XFhqQ" id="4WMzu8s2nwJ" role="3EZMnx" />
         <node concept="3XFhqQ" id="4WMzu8s3iJm" role="3EZMnx" />
+        <node concept="xShMh" id="x1FXqEHWM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="2fs66k" id="2TfVCPOMBch" role="1idfhu">
         <node concept="3clFbS" id="2TfVCPOMBci" role="2VODD2">
