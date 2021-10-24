@@ -1026,6 +1026,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4KIvh_tvCkS">
+    <property role="3GE5qa" value="words" />
     <ref role="1XX52x" to="lbo2:4KIvh_tvCfy" resolve="TemplateWord" />
     <node concept="3EZMnI" id="4SCnVTc$00X" role="2wV5jI">
       <node concept="3ZSo5i" id="MUKpduBfKt" role="3EZMnx">
@@ -1078,6 +1079,71 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="4SCnVTc$00Y" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="x1FXqRAMQ">
+    <property role="3GE5qa" value="library" />
+    <ref role="1XX52x" to="lbo2:x1FXqxgRr" resolve="LibraryStrategyRef" />
+    <node concept="B$lHz" id="x1FXqRAMR" role="2wV5jI" />
+    <node concept="3EZMnI" id="x1FXqRAMS" role="6VMZX">
+      <node concept="2iRkQZ" id="x1FXqRAMT" role="2iSdaV" />
+      <node concept="PMmxH" id="x1FXqRAMU" role="3EZMnx">
+        <ref role="PMmxG" node="x1FXq_cA7" resolve="LibraryEntityRefEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="x1FXqRAMV" role="3EZMnx" />
+      <node concept="B$lHz" id="x1FXqRAMW" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="x1FXqRAMX">
+    <property role="3GE5qa" value="library" />
+    <ref role="1XX52x" to="lbo2:x1FXqxgRt" resolve="LibrarySolutionRef" />
+    <node concept="B$lHz" id="x1FXqRAMY" role="2wV5jI" />
+    <node concept="3EZMnI" id="x1FXqRAMZ" role="6VMZX">
+      <node concept="2iRkQZ" id="x1FXqRAN0" role="2iSdaV" />
+      <node concept="PMmxH" id="x1FXqRAN1" role="3EZMnx">
+        <ref role="PMmxG" node="x1FXq_cA7" resolve="LibraryEntityRefEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="x1FXqRAN2" role="3EZMnx" />
+      <node concept="B$lHz" id="x1FXqRAN3" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="x1FXqRAN4">
+    <property role="3GE5qa" value="library" />
+    <ref role="1XX52x" to="lbo2:x1FXqxgRv" resolve="LibraryContextRef" />
+    <node concept="B$lHz" id="x1FXqRAN5" role="2wV5jI" />
+    <node concept="3EZMnI" id="x1FXqRAN6" role="6VMZX">
+      <node concept="2iRkQZ" id="x1FXqRAN7" role="2iSdaV" />
+      <node concept="PMmxH" id="x1FXqRAN8" role="3EZMnx">
+        <ref role="PMmxG" node="x1FXq_cA7" resolve="LibraryEntityRefEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="x1FXqRAN9" role="3EZMnx" />
+      <node concept="B$lHz" id="x1FXqRANa" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="x1FXqRANb">
+    <property role="3GE5qa" value="library" />
+    <ref role="1XX52x" to="lbo2:x1FXqxgRx" resolve="LibraryAssumptionRef" />
+    <node concept="B$lHz" id="x1FXqRANc" role="2wV5jI" />
+    <node concept="3EZMnI" id="x1FXqRANd" role="6VMZX">
+      <node concept="2iRkQZ" id="x1FXqRANe" role="2iSdaV" />
+      <node concept="PMmxH" id="x1FXqRANf" role="3EZMnx">
+        <ref role="PMmxG" node="x1FXq_cA7" resolve="LibraryEntityRefEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="x1FXqRANg" role="3EZMnx" />
+      <node concept="B$lHz" id="x1FXqRANh" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="x1FXqRANi">
+    <property role="3GE5qa" value="library" />
+    <ref role="1XX52x" to="lbo2:x1FXqxgRz" resolve="LibraryJustificationRef" />
+    <node concept="B$lHz" id="x1FXqRANj" role="2wV5jI" />
+    <node concept="3EZMnI" id="x1FXqRANk" role="6VMZX">
+      <node concept="2iRkQZ" id="x1FXqRANl" role="2iSdaV" />
+      <node concept="PMmxH" id="x1FXqRANm" role="3EZMnx">
+        <ref role="PMmxG" node="x1FXq_cA7" resolve="LibraryEntityRefEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="x1FXqRANn" role="3EZMnx" />
+      <node concept="B$lHz" id="x1FXqRANo" role="3EZMnx" />
     </node>
   </node>
 </model>

@@ -145,6 +145,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3d5AacfxFe9">
+    <property role="3GE5qa" value="words" />
     <ref role="13h7C2" to="lbo2:4KIvh_tvCfy" resolve="TemplateWord" />
     <node concept="13hLZK" id="3d5AacfxFea" role="13h7CW">
       <node concept="3clFbS" id="3d5AacfxFeb" role="2VODD2" />
