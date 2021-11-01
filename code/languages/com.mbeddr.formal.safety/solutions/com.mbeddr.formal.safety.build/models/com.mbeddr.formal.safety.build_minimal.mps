@@ -2028,6 +2028,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="64FnLWQK$E7" role="3bR37C">
+          <node concept="3bR9La" id="64FnLWQK$E8" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="64FnLWQK$E9" role="3bR37C">
+          <node concept="3bR9La" id="64FnLWQK$Ea" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6hyv0iVPlG4" role="2G$12L">
         <property role="BnDLt" value="true" />
