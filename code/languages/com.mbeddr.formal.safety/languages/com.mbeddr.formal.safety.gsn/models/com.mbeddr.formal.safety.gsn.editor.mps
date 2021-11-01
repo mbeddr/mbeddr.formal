@@ -50,6 +50,7 @@
     <import index="99ht" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.model(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="nf7v" ref="r:323f2e16-a77b-4958-b026-25202f82daa5(com.mbeddr.formal.safety.gsn.util)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
+    <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
@@ -11360,11 +11361,14 @@
                         <node concept="3Tqbb2" id="6YlP5VUh0Zn" role="1tU5fm">
                           <ref role="ehGHo" to="suqv:5P3ZJ9da_0I" resolve="Layout_Box" />
                         </node>
-                        <node concept="2YIFZM" id="6YlP5VUh10A" role="33vP2m">
-                          <ref role="37wK5l" to="nf7v:5pJnDA9dmgD" resolve="getBox" />
-                          <ref role="1Pybhc" to="nf7v:5pJnDA9djfI" resolve="LayoutUtil" />
+                        <node concept="2YIFZM" id="64FnLWQzpLP" role="33vP2m">
+                          <ref role="37wK5l" to="95j3:5pJnDA9dmgD" resolve="getBox" />
+                          <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
                           <node concept="2GrUjf" id="6YlP5VUh10B" role="37wK5m">
                             <ref role="2Gs0qQ" node="6YlP5VUgolY" resolve="gseb" />
+                          </node>
+                          <node concept="35c_gC" id="64FnLWQwCfd" role="37wK5m">
+                            <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
                           </node>
                         </node>
                       </node>
@@ -11416,11 +11420,14 @@
                       </node>
                     </node>
                     <node concept="3clFbF" id="6YlP5VUhfsI" role="3cqZAp">
-                      <node concept="2YIFZM" id="6YlP5VUhfJ4" role="3clFbG">
-                        <ref role="37wK5l" to="nf7v:5pJnDA9hrMj" resolve="setNewPosition" />
-                        <ref role="1Pybhc" to="nf7v:5pJnDA9djfI" resolve="LayoutUtil" />
+                      <node concept="2YIFZM" id="64FnLWQzpLT" role="3clFbG">
+                        <ref role="37wK5l" to="95j3:5pJnDA9hrMj" resolve="setNewPosition" />
+                        <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
                         <node concept="37vLTw" id="6YlP5VUhfQ5" role="37wK5m">
                           <ref role="3cqZAo" node="6YlP5VUh8jY" resolve="copy" />
+                        </node>
+                        <node concept="35c_gC" id="64FnLWQwCVQ" role="37wK5m">
+                          <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
                         </node>
                         <node concept="2OqwBi" id="6YlP5VUhgdZ" role="37wK5m">
                           <node concept="37vLTw" id="6YlP5VUhfZa" role="2Oq$k0">
@@ -11604,11 +11611,14 @@
                                 <node concept="17QB3L" id="6YlP5VUiJAR" role="1Lm7xW" />
                               </node>
                             </node>
-                            <node concept="2YIFZM" id="6YlP5VUiJC7" role="33vP2m">
-                              <ref role="37wK5l" to="nf7v:2hB9zGIx5Bv" resolve="getControlPointsForEdge" />
-                              <ref role="1Pybhc" to="nf7v:5pJnDA9djfI" resolve="LayoutUtil" />
+                            <node concept="2YIFZM" id="64FnLWQzpLX" role="33vP2m">
+                              <ref role="37wK5l" to="95j3:2hB9zGIx5Bv" resolve="getControlPointsForEdge" />
+                              <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
                               <node concept="2GrUjf" id="6YlP5VUiJC8" role="37wK5m">
                                 <ref role="2Gs0qQ" node="6YlP5VUiw_o" resolve="gscb" />
+                              </node>
+                              <node concept="35c_gC" id="64FnLWQwDwA" role="37wK5m">
+                                <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
                               </node>
                             </node>
                           </node>
@@ -11663,11 +11673,14 @@
                           </node>
                         </node>
                         <node concept="3clFbF" id="6YlP5VUiUA3" role="3cqZAp">
-                          <node concept="2YIFZM" id="6YlP5VUiUW0" role="3clFbG">
-                            <ref role="37wK5l" to="nf7v:4G_iuUEjMTw" resolve="setControlPointsForEdge" />
-                            <ref role="1Pybhc" to="nf7v:5pJnDA9djfI" resolve="LayoutUtil" />
+                          <node concept="2YIFZM" id="64FnLWQzpM0" role="3clFbG">
+                            <ref role="37wK5l" to="95j3:4G_iuUEjMTw" resolve="setControlPointsForEdge" />
+                            <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
                             <node concept="37vLTw" id="6YlP5VUiV45" role="37wK5m">
                               <ref role="3cqZAo" node="6YlP5VUiItg" resolve="copy" />
+                            </node>
+                            <node concept="35c_gC" id="64FnLWQwDZz" role="37wK5m">
+                              <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
                             </node>
                             <node concept="37vLTw" id="6YlP5VUjcsV" role="37wK5m">
                               <ref role="3cqZAo" node="6YlP5VUiXZk" resolve="newControlPointsForEdge" />
