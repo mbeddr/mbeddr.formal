@@ -9,7 +9,7 @@ mkdir jbrDownload
 tar xfz jbr.tgz --directory jbrDownload
 
 echo "Downloading mbeddr-platform"
-curl https://projects.itemis.de/nexus/content/repositories/mbeddr/com/mbeddr/platform/2020.3.22951.af80c1c/platform-2020.3.22951.af80c1c.zip --output mbeddr_platform.zip
+curl https://projects.itemis.de/nexus/content/repositories/mbeddr/com/mbeddr/platform/2020.3.23071.2c1c530/platform-2020.3.23071.2c1c530.zip --output mbeddr_platform.zip
 mkdir dependencies
 unzip -q mbeddr_platform.zip -d dependencies
 
