@@ -67,13 +67,6 @@
     <property role="TrG5h" value="CombinedService" />
     <property role="34LRSv" value="Combined Service" />
     <ref role="1TJDcQ" node="7HxyUdTFcgl" resolve="Service" />
-    <node concept="1TJgyj" id="7HxyUdTGEkt" role="1TKVEi">
-      <property role="IQ2ns" value="8890540673643750685" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="composingServices" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7HxyUdTFcgl" resolve="Service" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7HxyUdTFcgo">
     <property role="EcuMT" value="8890540673643365400" />
@@ -104,7 +97,7 @@
     </node>
     <node concept="1TJgyi" id="7HxyUdTGRhj" role="1TKVEl">
       <property role="IQ2nx" value="8890540673643803731" />
-      <property role="TrG5h" value="providedByExternalSystem" />
+      <property role="TrG5h" value="providedByPartnerSystem" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -170,21 +163,15 @@
   </node>
   <node concept="1TIwiD" id="7HxyUdTGNQZ">
     <property role="EcuMT" value="8890540673643789759" />
-    <property role="TrG5h" value="CompositionServiceBlueprint" />
+    <property role="TrG5h" value="ServiceCompositionBlueprint" />
     <property role="34LRSv" value="Composition Service Blueprint" />
     <ref role="1TJDcQ" node="7HxyUdTFcgp" resolve="ServiceBlueprint" />
-    <node concept="1TJgyj" id="7HxyUdTFcgq" role="1TKVEi">
-      <property role="IQ2ns" value="8890540673643365402" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="composingServiceBlueprints" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7HxyUdTFcgp" resolve="ServiceBlueprint" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7HxyUdTGORW">
     <property role="EcuMT" value="8890540673643793916" />
     <property role="TrG5h" value="AbstractServiceBlueprint" />
     <property role="34LRSv" value="Abstract Service Blueprint" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="7HxyUdTFcgp" resolve="ServiceBlueprint" />
     <node concept="1TJgyj" id="7HxyUdTGKpq" role="1TKVEi">
       <property role="IQ2ns" value="8890540673643775578" />
@@ -210,6 +197,24 @@
     <node concept="PrWs8" id="7HxyUdTGQvQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2U1N5o2SH7h">
+    <property role="EcuMT" value="3351184267528032721" />
+    <property role="TrG5h" value="InheritanceServiceRelation" />
+    <property role="34LRSv" value="Inheritance Service Relation" />
+    <ref role="1TJDcQ" node="7HxyUdTFDqf" resolve="ServiceRelationBase" />
+  </node>
+  <node concept="1TIwiD" id="2U1N5o2SH7i">
+    <property role="EcuMT" value="3351184267528032722" />
+    <property role="TrG5h" value="CompositionServiceRelation" />
+    <property role="34LRSv" value="Composition Service Relation" />
+    <ref role="1TJDcQ" node="7HxyUdTFDqf" resolve="ServiceRelationBase" />
+  </node>
+  <node concept="1TIwiD" id="2U1N5o2SH7j">
+    <property role="EcuMT" value="3351184267528032723" />
+    <property role="TrG5h" value="InstantiationServiceRelation" />
+    <property role="34LRSv" value="Instantiation Service Relation" />
+    <ref role="1TJDcQ" node="7HxyUdTFDqf" resolve="ServiceRelationBase" />
   </node>
 </model>
 
