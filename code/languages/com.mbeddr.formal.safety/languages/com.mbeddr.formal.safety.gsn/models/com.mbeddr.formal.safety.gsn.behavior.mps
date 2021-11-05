@@ -55,6 +55,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -76,6 +79,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -917,6 +921,77 @@
       <node concept="37vLTG" id="4G_iuUEcDfj" role="3clF46">
         <property role="TrG5h" value="downstream" />
         <node concept="3Tqbb2" id="4G_iuUEcDfi" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5KMthQY6wJ0" role="13h7CS">
+      <property role="TrG5h" value="getConnectedElement" />
+      <node concept="3Tm1VV" id="5KMthQY6wJ1" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5KMthQY6y6g" role="3clF45">
+        <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+      <node concept="3clFbS" id="5KMthQY6wJ3" role="3clF47">
+        <node concept="3clFbJ" id="5KMthQY6y8M" role="3cqZAp">
+          <node concept="3clFbC" id="5KMthQY6yTb" role="3clFbw">
+            <node concept="37vLTw" id="5KMthQY6z24" role="3uHU7w">
+              <ref role="3cqZAo" node="5KMthQY6y74" resolve="connectedElement" />
+            </node>
+            <node concept="2OqwBi" id="5KMthQY6yjE" role="3uHU7B">
+              <node concept="13iPFW" id="5KMthQY6y96" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5KMthQY6yuE" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:2ccN23odOzl" resolve="source" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="5KMthQY6y8O" role="3clFbx">
+            <node concept="3cpWs6" id="5KMthQY6zaO" role="3cqZAp">
+              <node concept="2OqwBi" id="5KMthQY6zm2" role="3cqZAk">
+                <node concept="13iPFW" id="5KMthQY6zb9" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5KMthQY6zEn" role="2OqNvi">
+                  <ref role="3Tt5mk" to="py52:2ccN23odOzm" resolve="target" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5KMthQY6zNn" role="3cqZAp">
+          <node concept="3clFbC" id="5KMthQY6zNo" role="3clFbw">
+            <node concept="37vLTw" id="5KMthQY6zNp" role="3uHU7w">
+              <ref role="3cqZAo" node="5KMthQY6y74" resolve="connectedElement" />
+            </node>
+            <node concept="2OqwBi" id="5KMthQY6zNq" role="3uHU7B">
+              <node concept="13iPFW" id="5KMthQY6zNr" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5KMthQY6$96" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:2ccN23odOzm" resolve="target" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="5KMthQY6zNt" role="3clFbx">
+            <node concept="3cpWs6" id="5KMthQY6zNu" role="3cqZAp">
+              <node concept="2OqwBi" id="5KMthQY6zNv" role="3cqZAk">
+                <node concept="13iPFW" id="5KMthQY6zNw" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5KMthQY6$tD" role="2OqNvi">
+                  <ref role="3Tt5mk" to="py52:2ccN23odOzl" resolve="source" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="5KMthQY6_e$" role="3cqZAp">
+          <node concept="2ShNRf" id="5KMthQY6_o$" role="YScLw">
+            <node concept="1pGfFk" id="5KMthQY6_vS" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+              <node concept="Xl_RD" id="5KMthQY6_zg" role="37wK5m">
+                <property role="Xl_RC" value="The parameter shall be either the source or the target of this connection." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5KMthQY6y74" role="3clF46">
+        <property role="TrG5h" value="connectedElement" />
+        <node concept="3Tqbb2" id="5KMthQY6y73" role="1tU5fm">
           <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
         </node>
       </node>

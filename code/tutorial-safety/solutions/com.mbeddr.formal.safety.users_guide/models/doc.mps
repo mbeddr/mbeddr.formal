@@ -11,6 +11,8 @@
     <import index="xumq" ref="r:c5a55244-77a5-42ce-8f29-e1a72cf99b7f(_010_features._100_checkable_assurance_demo)" />
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
     <import index="688z" ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" />
+    <import index="u8g7" ref="r:f7c95df2-f519-48c0-b59a-d1876c6eb1f2(_010_features._060_assurance_case_fragments_reuse_cae)" />
+    <import index="gc7o" ref="r:a5eafefc-bb6b-4a97-af32-8fcb507c8874(_010_features._060_assurance_case_fragments_reuse_gsn)" />
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
@@ -789,9 +791,6 @@
             </node>
           </node>
         </node>
-        <node concept="1_1sxE" id="4U3OABz7YCL" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
         <node concept="3z_lpz" id="1LeaOOdal7L" role="1_0VJ0">
           <property role="TrG5h" value="_020_patterns_instantiated_from_library" />
           <node concept="OjmMv" id="1LeaOOdal7N" role="3z_lpS">
@@ -804,6 +803,73 @@
           <node concept="2bctqb" id="1LeaOOdal7R" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdal7T" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdal8i" role="2NCMaf">
+              <ref role="2NCMaa" to="io0z:3jaLROLvqKj" resolve="_020_patterns_instantiated_from_library" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="64FnLWQhGm9" role="1_0VJ0">
+          <node concept="19SGf9" id="64FnLWQhGma" role="1_0LWR">
+            <node concept="19SUe$" id="64FnLWQhGmb" role="19SJt6">
+              <property role="19SUeA" value="Once a pattern is instantiated in an argument, the pattern instance might get additional entities (goals, solutions, ...). To add new entities to a pattern instance, please drag-and-drop goals from the diagram pallette " />
+            </node>
+            <node concept="2vpllh" id="64FnLWQhGmP" role="19SJt6">
+              <node concept="19SGf9" id="64FnLWQhGmQ" role="$DsGW">
+                <node concept="19SUe$" id="64FnLWQhGmR" role="19SJt6">
+                  <property role="19SUeA" value="ONTO" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="64FnLWQhGmS" role="19SJt6">
+              <property role="19SUeA" value=" the pattern instance diagram. Entities from outside of a pattern instance can be moved inside by using the 'Intentions Menu' (alt+enter); similarily, entities from inside pattern instances can be moved outside by using another 'Intention'." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="64FnLWQhGgQ" role="1_0VJ0">
+        <property role="TrG5h" value="gsn_reusable_entities" />
+        <property role="1_0VJr" value="Defining Re-usable Entities (Goals, Strategies, Solutions, ...)" />
+        <node concept="1_0LV8" id="64FnLWQhGgR" role="1_0VJ0">
+          <node concept="19SGf9" id="64FnLWQhGgS" role="1_0LWR">
+            <node concept="19SUe$" id="64FnLWQhGgT" role="19SJt6">
+              <property role="19SUeA" value="There are cases when we want to re-use single entities in order to avoid the duplication. Re-usable entities need firstly to be defined in a container." />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="64FnLWQhGgU" role="1_0VJ0">
+          <property role="TrG5h" value="Process_Level_Reusable_Entities" />
+          <node concept="OjmMv" id="64FnLWQhGgV" role="3z_lpS">
+            <node concept="19SGf9" id="64FnLWQhGgW" role="OjmMu">
+              <node concept="19SUe$" id="64FnLWQhGgX" role="19SJt6">
+                <property role="19SUeA" value="Example of definition of reusable entities in a library." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="64FnLWQhGgY" role="3z_lpT" />
+          <node concept="2NCZwO" id="64FnLWQhGgZ" role="3z_lpI">
+            <node concept="2NCMab" id="64FnLWQhGl8" role="2NCMaf">
+              <ref role="2NCMaa" to="gc7o:x1FXqHGAV" resolve="Process Level Reusable Entities" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="64FnLWQhGlL" role="1_0VJ0">
+          <node concept="19SGf9" id="64FnLWQhGlM" role="1_0LWR">
+            <node concept="19SUe$" id="64FnLWQhGlN" role="19SJt6">
+              <property role="19SUeA" value="Once re-usable entities are defined, they are made available in the &quot;Diagram Pallette&quot;, can be instantiated via drag-and-drop." />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="64FnLWQhGh2" role="1_0VJ0">
+          <property role="TrG5h" value="_020_patterns_instantiated_from_library" />
+          <node concept="OjmMv" id="64FnLWQhGh3" role="3z_lpS">
+            <node concept="19SGf9" id="64FnLWQhGh4" role="OjmMu">
+              <node concept="19SUe$" id="64FnLWQhGh5" role="19SJt6">
+                <property role="19SUeA" value="Example of re-using existing entities from the library as parts of arguments." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="64FnLWQhGh6" role="3z_lpT" />
+          <node concept="2NCZwO" id="64FnLWQhGh7" role="3z_lpI">
+            <node concept="2NCMab" id="64FnLWQhGh8" role="2NCMaf">
               <ref role="2NCMaa" to="io0z:3jaLROLvqKj" resolve="_020_patterns_instantiated_from_library" />
             </node>
           </node>

@@ -12,6 +12,7 @@
     <import index="e57x" ref="r:99808a14-1913-4248-aed8-3139a5d05f88(com.mbeddr.formal.base.styles)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="nf7v" ref="r:323f2e16-a77b-4958-b026-25202f82daa5(com.mbeddr.formal.safety.gsn.util)" />
+    <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -129,6 +130,9 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -174,11 +178,14 @@
       <property role="TrG5h" value="getBox" />
       <node concept="3clFbS" id="5pJnDA9dmgG" role="3clF47">
         <node concept="3clFbF" id="4G_iuUEgw3c" role="3cqZAp">
-          <node concept="2YIFZM" id="4G_iuUEgw5A" role="3clFbG">
-            <ref role="37wK5l" to="nf7v:5pJnDA9dmgD" resolve="getBox" />
-            <ref role="1Pybhc" to="nf7v:5pJnDA9djfI" resolve="LayoutUtil" />
+          <node concept="2YIFZM" id="64FnLWQzpLQ" role="3clFbG">
+            <ref role="37wK5l" to="95j3:5pJnDA9dmgD" resolve="getBox" />
+            <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
             <node concept="37vLTw" id="4G_iuUEgw81" role="37wK5m">
               <ref role="3cqZAo" node="5pJnDA9dmh5" resolve="gseb" />
+            </node>
+            <node concept="35c_gC" id="64FnLWQwCfd" role="37wK5m">
+              <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
           </node>
         </node>
@@ -199,11 +206,14 @@
       <property role="TrG5h" value="setNewPosition" />
       <node concept="3clFbS" id="5pJnDA9hrMk" role="3clF47">
         <node concept="3clFbF" id="4G_iuUEgwDZ" role="3cqZAp">
-          <node concept="2YIFZM" id="4G_iuUEgwVN" role="3clFbG">
-            <ref role="37wK5l" to="nf7v:5pJnDA9hrMj" resolve="setNewPosition" />
-            <ref role="1Pybhc" to="nf7v:5pJnDA9djfI" resolve="LayoutUtil" />
+          <node concept="2YIFZM" id="64FnLWQzpLU" role="3clFbG">
+            <ref role="37wK5l" to="95j3:5pJnDA9hrMj" resolve="setNewPosition" />
+            <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
             <node concept="37vLTw" id="4G_iuUEgwVO" role="37wK5m">
               <ref role="3cqZAo" node="5pJnDA9hrN0" resolve="gseb" />
+            </node>
+            <node concept="35c_gC" id="64FnLWQwLpd" role="37wK5m">
+              <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
             <node concept="37vLTw" id="4G_iuUEgxyP" role="37wK5m">
               <ref role="3cqZAo" node="5pJnDA9hsgs" resolve="x" />
@@ -236,11 +246,14 @@
       <property role="TrG5h" value="getControlPointsForEdge" />
       <node concept="3clFbS" id="2hB9zGIx5By" role="3clF47">
         <node concept="3clFbF" id="4G_iuUEgyhN" role="3cqZAp">
-          <node concept="2YIFZM" id="4G_iuUEgyru" role="3clFbG">
-            <ref role="37wK5l" to="nf7v:2hB9zGIx5Bv" resolve="getControlPointsForEdge" />
-            <ref role="1Pybhc" to="nf7v:5pJnDA9djfI" resolve="LayoutUtil" />
+          <node concept="2YIFZM" id="64FnLWQzpLY" role="3clFbG">
+            <ref role="37wK5l" to="95j3:2hB9zGIx5Bv" resolve="getControlPointsForEdge" />
+            <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
             <node concept="37vLTw" id="4G_iuUEgyEN" role="37wK5m">
               <ref role="3cqZAo" node="2hB9zGIx5FC" resolve="gscb" />
+            </node>
+            <node concept="35c_gC" id="64FnLWQwLvg" role="37wK5m">
+              <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
           </node>
         </node>

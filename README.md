@@ -14,14 +14,14 @@
 
 1. for building FASTEN we have gradle-based scripts (please configure the needed variables in *gradle.properties*)
     1. in *Windows* please note that the paths should use *slash* instead of *back-slash*, e.g.
-        1. mpsHomeDir=C:/work/MPS_2020_2_3
+        1. mpsHomeDir=C:/work/MPS_2020_3_3
         2. mbeddr.formal.home=C:/work/mbeddr.formal 
     2. in Unix-based systems we have the "unix paths" (nothing changes)
 2. for packaging FASTEN distribution, run `gradlew.bat`- this starts the default task `build_fasten_safety_distribution`
 
 ## Building (from MPS)
-1. download MPS 2020.2.x
-2. clone the repository https://github.com/danielratiu/mbeddr.formal.mps-plugins and copy the content of "platform_2020_2_3/" in the "plugins" directory of MPS
+1. download MPS 2020.3.x
+2. clone the repository https://github.com/danielratiu/mbeddr.formal.mps-plugins and copy the content of "platform_2020_3_5/" in the "plugins" directory of MPS
 3. start MPS
 4. the path variable mbeddr.formal.home in 'Settings->Appearance & Behavior->Path Variables' to point to the directory which contains the cloned 'mbeddr.formal' repository.
 5. FASTEN sources are organized in several MPS projects. To build FASTEN, each of these projects need to be built. Please open and build the projects in the following order:
