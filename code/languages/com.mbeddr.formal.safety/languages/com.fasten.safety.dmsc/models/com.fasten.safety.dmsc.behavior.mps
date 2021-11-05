@@ -19,19 +19,26 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="1225194472832" name="isVirtual" index="13i0it" />
-        <property id="1225194472834" name="isAbstract" index="13i0iv" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -43,18 +50,23 @@
       </concept>
     </language>
   </registry>
-  <node concept="13h7C7" id="2U1N5o2RZpz">
-    <ref role="13h7C2" to="8e1n:7HxyUdTGORW" resolve="AbstractServiceBlueprint" />
-    <node concept="13i0hz" id="3HVC1H6VVtU" role="13h7CS">
+  <node concept="13h7C7" id="2U1N5o2SUaT">
+    <ref role="13h7C2" to="8e1n:7HxyUdTFcgp" resolve="ServiceBlueprint" />
+    <node concept="13hLZK" id="2U1N5o2SUaU" role="13h7CW">
+      <node concept="3clFbS" id="2U1N5o2SUaV" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2U1N5o2SVad" role="13h7CS">
       <property role="TrG5h" value="paletteFolderName" />
       <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
-      <node concept="3Tm1VV" id="3HVC1H6VVtV" role="1B3o_S" />
-      <node concept="17QB3L" id="3HVC1H6VVua" role="3clF45" />
-      <node concept="3clFbS" id="3HVC1H6VVtX" role="3clF47" />
-    </node>
-    <node concept="13hLZK" id="2U1N5o2RZp$" role="13h7CW">
-      <node concept="3clFbS" id="2U1N5o2RZp_" role="2VODD2" />
+      <node concept="3Tm1VV" id="2U1N5o2SVae" role="1B3o_S" />
+      <node concept="17QB3L" id="2U1N5o2SVa_" role="3clF45" />
+      <node concept="3clFbS" id="2U1N5o2SVag" role="3clF47">
+        <node concept="3clFbF" id="2U1N5o2SVaL" role="3cqZAp">
+          <node concept="Xl_RD" id="2U1N5o2SVaK" role="3clFbG">
+            <property role="Xl_RC" value="Service Blueprints" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
