@@ -118,13 +118,6 @@
       <property role="TrG5h" value="isAbstract" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyj" id="2U1N5o2Tbre" role="1TKVEi">
-      <property role="IQ2ns" value="3351184267528156878" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="startingRelations" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7HxyUdTFDqf" resolve="ServiceRelationBase" />
-    </node>
     <node concept="1irR5M" id="5NYYsWoBnN3" role="rwd14">
       <property role="2$rrk2" value="2" />
       <node concept="1irPie" id="5NYYsWoBnNa" role="1irR9h">
@@ -134,10 +127,24 @@
         </node>
       </node>
     </node>
+    <node concept="1TJgyj" id="4s4RavXcPlB" role="1TKVEi">
+      <property role="IQ2ns" value="5117457690665375079" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="inputPorts" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4s4RavXcPl_" resolve="InputPort" />
+    </node>
+    <node concept="1TJgyj" id="4s4RavXcPlD" role="1TKVEi">
+      <property role="IQ2ns" value="5117457690665375081" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="outputPorts" />
+      <ref role="20lvS9" node="4s4RavXcPlA" resolve="OutputPort" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7HxyUdTFDqf">
     <property role="EcuMT" value="8890540673643484815" />
     <property role="TrG5h" value="ServiceRelationBase" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7HxyUdTFDqg" role="1TKVEi">
       <property role="IQ2ns" value="8890540673643484816" />
@@ -202,6 +209,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7HxyUdTFcgp" resolve="ServiceBlueprint" />
     </node>
+    <node concept="1TJgyj" id="3GRi4m$sIHx" role="1TKVEi">
+      <property role="IQ2ns" value="4266958635905772385" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="connections" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7HxyUdTFDqf" resolve="ServiceRelationBase" />
+    </node>
     <node concept="PrWs8" id="7HxyUdTGQvQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -232,6 +246,30 @@
     <property role="TrG5h" value="InstantiationServiceRelation" />
     <property role="34LRSv" value="Instantiation Service Relation" />
     <ref role="1TJDcQ" node="7HxyUdTFDqf" resolve="ServiceRelationBase" />
+  </node>
+  <node concept="1TIwiD" id="4s4RavXcPlm">
+    <property role="EcuMT" value="5117457690665375062" />
+    <property role="TrG5h" value="Port" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4s4RavXcPmv" role="1TKVEl">
+      <property role="IQ2nx" value="5117457690665375135" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4s4RavXcPln" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4s4RavXcPl_">
+    <property role="EcuMT" value="5117457690665375077" />
+    <property role="TrG5h" value="InputPort" />
+    <ref role="1TJDcQ" node="4s4RavXcPlm" resolve="Port" />
+  </node>
+  <node concept="1TIwiD" id="4s4RavXcPlA">
+    <property role="EcuMT" value="5117457690665375078" />
+    <property role="TrG5h" value="OutputPort" />
+    <ref role="1TJDcQ" node="4s4RavXcPlm" resolve="Port" />
   </node>
 </model>
 
