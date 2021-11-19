@@ -259,6 +259,14 @@
                   <ref role="2Gs0qQ" node="48_A4oY4224" resolve="oc" />
                 </node>
               </node>
+              <node concept="2MkqsV" id="6OmQ$5rtbUI" role="3cqZAp">
+                <node concept="Xl_RD" id="6OmQ$5rtbV0" role="2MkJ7o">
+                  <property role="Xl_RC" value="weight defined here but not propagated in connections" />
+                </node>
+                <node concept="1YBJjd" id="6OmQ$5rtbWh" role="1urrMF">
+                  <ref role="1YBMHb" node="48_A4oY40jU" resolve="weight" />
+                </node>
+              </node>
             </node>
             <node concept="22lmx$" id="2czCwT$XAsg" role="3clFbw">
               <node concept="3clFbC" id="2czCwT$XBrH" role="3uHU7w">
