@@ -2591,7 +2591,7 @@
                 <node concept="1yATlc" id="1qrXfdH1YCA" role="2Oq$k0" />
                 <node concept="2Zo12i" id="1qrXfdH1YCB" role="2OqNvi">
                   <node concept="chp4Y" id="1qrXfdH1YCC" role="2Zo12j">
-                    <ref role="cht4Q" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
+                    <ref role="cht4Q" to="py52:7bxPmtp5I2v" resolve="IHideInPalletteGoalStructureElement" />
                   </node>
                 </node>
               </node>
@@ -3900,8 +3900,8 @@
                             <ref role="3cqZAo" node="5uFV_KKTntH" resolve="it" />
                           </node>
                           <node concept="1mIQ4w" id="5uFV_KKTntF" role="2OqNvi">
-                            <node concept="chp4Y" id="5uFV_KKTntG" role="cj9EA">
-                              <ref role="cht4Q" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
+                            <node concept="chp4Y" id="6OmQ$5rs7Pz" role="cj9EA">
+                              <ref role="cht4Q" to="py52:6OmQ$5rs7BA" resolve="IHideInTextualNotationGoalStructureElement" />
                             </node>
                           </node>
                         </node>

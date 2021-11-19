@@ -291,9 +291,9 @@
   <node concept="PlHQZ" id="7bxPmtp5I2v">
     <property role="EcuMT" value="8278132229936701599" />
     <property role="3GE5qa" value="base" />
-    <property role="TrG5h" value="IHiddenGoalStructureElement" />
+    <property role="TrG5h" value="IHideInPalletteGoalStructureElement" />
     <node concept="t5JxF" id="7bxPmtp5I2w" role="lGtFl">
-      <property role="t5JxN" value="Elements which are instantiated via a pattern" />
+      <property role="t5JxN" value="Elements which are instantiated via a pattern (e.g. PatternInstance, ILibraryEntityRef) shall be hidden from diagram pallette" />
     </node>
   </node>
   <node concept="1TIwiD" id="7eb_1beKlGf">
@@ -381,6 +381,14 @@
     <property role="EcuMT" value="4124496898615790953" />
     <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="ICanBeAwayGoalStructureElement" />
+  </node>
+  <node concept="PlHQZ" id="6OmQ$5rs7BA">
+    <property role="EcuMT" value="7860710173863606758" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IHideInTextualNotationGoalStructureElement" />
+    <node concept="t5JxF" id="6OmQ$5rs7BB" role="lGtFl">
+      <property role="t5JxN" value="Elements which are are not displayed in textual notation" />
+    </node>
   </node>
 </model>
 

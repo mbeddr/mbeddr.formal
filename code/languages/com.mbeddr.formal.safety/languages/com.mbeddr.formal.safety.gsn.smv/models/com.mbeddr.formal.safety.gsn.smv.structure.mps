@@ -140,7 +140,7 @@
       </node>
     </node>
     <node concept="PrWs8" id="7bxPmtp5Vwg" role="PzmwI">
-      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
+      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHideInPalletteGoalStructureElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4qaoH_E0cQ">

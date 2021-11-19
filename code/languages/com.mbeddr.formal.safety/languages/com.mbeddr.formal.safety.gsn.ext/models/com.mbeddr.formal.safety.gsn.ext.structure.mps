@@ -129,7 +129,10 @@
       <ref role="20lvS9" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     </node>
     <node concept="PrWs8" id="1qrXfdH3Wo9" role="PzmwI">
-      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
+      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHideInPalletteGoalStructureElement" />
+    </node>
+    <node concept="PrWs8" id="6OmQ$5rs7BI" role="PzmwI">
+      <ref role="PrY4T" to="py52:6OmQ$5rs7BA" resolve="IHideInTextualNotationGoalStructureElement" />
     </node>
     <node concept="1TJgyj" id="WKGDODIrUZ" role="1TKVEi">
       <property role="IQ2ns" value="1094571097530678975" />
@@ -365,7 +368,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="x1FXqy2u7" role="PrDN$">
-      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHiddenGoalStructureElement" />
+      <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHideInPalletteGoalStructureElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4KIvh_tvCfy">
