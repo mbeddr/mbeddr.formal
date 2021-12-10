@@ -327,5 +327,12 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1SpkZ1UYccF">
+    <property role="EcuMT" value="2168856987875984171" />
+    <property role="3GE5qa" value="events" />
+    <property role="TrG5h" value="UndevelopedEvent" />
+    <property role="34LRSv" value="Undeveloped Event" />
+    <ref role="1TJDcQ" node="5rwT_JnuRci" resolve="EventBase" />
+  </node>
 </model>
 
