@@ -334,5 +334,17 @@
     <property role="34LRSv" value="Undeveloped Event" />
     <ref role="1TJDcQ" node="5rwT_JnuRci" resolve="EventBase" />
   </node>
+  <node concept="1TIwiD" id="1SpkZ1V6gPJ">
+    <property role="EcuMT" value="2168856987878100335" />
+    <property role="3GE5qa" value="events" />
+    <property role="TrG5h" value="IntermediateEvent" />
+    <property role="34LRSv" value="Intermediate Event" />
+    <ref role="1TJDcQ" node="5rwT_JnuRci" resolve="EventBase" />
+    <node concept="1TJgyj" id="1SpkZ1V83E9" role="1TKVEi">
+      <property role="IQ2ns" value="2168856987878570633" />
+      <property role="20kJfa" value="topEvent" />
+      <ref role="20lvS9" node="5rwT_JnuR4f" resolve="TopEvent" />
+    </node>
+  </node>
 </model>
 
