@@ -333,6 +333,20 @@
     <property role="TrG5h" value="UndevelopedEvent" />
     <property role="34LRSv" value="Undeveloped Event" />
     <ref role="1TJDcQ" node="5rwT_JnuRci" resolve="EventBase" />
+    <node concept="1irR5M" id="6csJveEW9FQ" role="rwd14">
+      <property role="2$rrk2" value="7" />
+      <node concept="1irR9n" id="6csJveEW9FU" role="1irR9h">
+        <node concept="3PKj8D" id="6csJveEW9FV" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="6csJveEW9FW" role="1irR9h">
+        <property role="1irPi9" value="⁝" />
+        <node concept="3PKj8D" id="6csJveEW9FX" role="3PKjny">
+          <property role="3PKj8l" value="0000FF" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="1SpkZ1V6gPJ">
     <property role="EcuMT" value="2168856987878100335" />
@@ -344,6 +358,20 @@
       <property role="IQ2ns" value="2168856987878570633" />
       <property role="20kJfa" value="subtreeStart" />
       <ref role="20lvS9" node="5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+    </node>
+    <node concept="1irR5M" id="6csJveEW9FE" role="rwd14">
+      <property role="2$rrk2" value="6" />
+      <node concept="1irR9n" id="6csJveEW9FI" role="1irR9h">
+        <node concept="3PKj8D" id="6csJveEW9FJ" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="6csJveEW9FK" role="1irR9h">
+        <property role="1irPi9" value="‡" />
+        <node concept="3PKj8D" id="6csJveEW9FL" role="3PKjny">
+          <property role="3PKj8l" value="0000FF" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
