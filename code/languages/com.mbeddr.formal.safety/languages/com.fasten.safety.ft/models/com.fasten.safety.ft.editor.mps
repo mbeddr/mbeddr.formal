@@ -2336,7 +2336,7 @@
       <node concept="3clFbS" id="4vIVwd7v2Me" role="3clF47">
         <node concept="3cpWs8" id="4vIVwd7w5tb" role="3cqZAp">
           <node concept="3cpWsn" id="4vIVwd7w5tc" role="3cpWs9">
-            <property role="TrG5h" value="numberOfIncomingConnections" />
+            <property role="TrG5h" value="numberOfOutgoingConnections" />
             <node concept="10Oyi0" id="4vIVwd7w51X" role="1tU5fm" />
             <node concept="2OqwBi" id="4vIVwd7w5td" role="33vP2m">
               <node concept="1rXfSq" id="4vIVwd7w5te" role="2Oq$k0">
@@ -2355,7 +2355,7 @@
               <property role="3cmrfH" value="2" />
             </node>
             <node concept="37vLTw" id="4vIVwd7w5th" role="3uHU7B">
-              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfIncomingConnections" />
+              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfOutgoingConnections" />
             </node>
           </node>
           <node concept="3clFbS" id="4vIVwd7v33U" role="3clFbx">
@@ -2369,7 +2369,7 @@
         <node concept="3clFbJ" id="4vIVwd7wTwo" role="3cqZAp">
           <node concept="3clFbC" id="4vIVwd7wTwp" role="3clFbw">
             <node concept="37vLTw" id="4vIVwd7wTwr" role="3uHU7B">
-              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfIncomingConnections" />
+              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfOutgoingConnections" />
             </node>
             <node concept="3cmrfG" id="4vIVwd7wTZj" role="3uHU7w">
               <property role="3cmrfH" value="3" />
@@ -2386,7 +2386,7 @@
         <node concept="3clFbJ" id="3$UFsrqjdc_" role="3cqZAp">
           <node concept="3clFbC" id="3$UFsrqjdcA" role="3clFbw">
             <node concept="37vLTw" id="3$UFsrqjdcB" role="3uHU7B">
-              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfIncomingConnections" />
+              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfOutgoingConnections" />
             </node>
             <node concept="3cmrfG" id="3$UFsrqjdcC" role="3uHU7w">
               <property role="3cmrfH" value="4" />
@@ -2403,7 +2403,7 @@
         <node concept="3clFbJ" id="3$UFsrqjS7_" role="3cqZAp">
           <node concept="3clFbC" id="3$UFsrqjS7A" role="3clFbw">
             <node concept="37vLTw" id="3$UFsrqjS7B" role="3uHU7B">
-              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfIncomingConnections" />
+              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfOutgoingConnections" />
             </node>
             <node concept="3cmrfG" id="3$UFsrqjS7C" role="3uHU7w">
               <property role="3cmrfH" value="5" />
