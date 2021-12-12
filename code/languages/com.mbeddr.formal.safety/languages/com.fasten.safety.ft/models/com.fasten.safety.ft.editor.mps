@@ -20,10 +20,10 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="5un2" ref="r:00d6ee44-268c-4818-b3e7-4eecf669c7ee(com.mbeddr.mpsutil.treenotation.styles.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
@@ -1590,7 +1590,7 @@
       <node concept="2xQOud" id="1GpuQyTgNzt" role="2xQQDV">
         <ref role="2xQOue" node="2lB3um7b17t" resolve="EmptyShape" />
       </node>
-      <node concept="3clFbT" id="1HO1gFDPUTr" role="TjlW2">
+      <node concept="3clFbT" id="551EivYDmYb" role="TjlW2">
         <property role="3clFbU" value="true" />
       </node>
     </node>
@@ -1938,8 +1938,9 @@
       <property role="TrG5h" value="orGateName" />
       <node concept="17QB3L" id="4vIVwd7b$mb" role="1xmOb1" />
     </node>
-    <node concept="3cmrfG" id="3EWkVoQ5lsH" role="3pRy3o">
-      <property role="3cmrfH" value="40" />
+    <node concept="10M0yZ" id="551EivYCdn_" role="3pRy3o">
+      <ref role="3cqZAo" node="4vIVwd7rbCP" resolve="GATE_SHAPE_WIDTH" />
+      <ref role="1PxDUh" node="4vIVwd7qvD5" resolve="LabelsDrawingUtils" />
     </node>
     <node concept="2xDzp1" id="4vIVwd78fMi" role="2xOiiv">
       <node concept="3clFbS" id="4vIVwd78fMj" role="2VODD2">
@@ -2305,20 +2306,47 @@
     <node concept="2YIFZL" id="1GpuQyT0gxs" role="jymVt">
       <property role="TrG5h" value="getPortId" />
       <node concept="3clFbS" id="1GpuQyT0gxv" role="3clF47">
-        <node concept="3clFbF" id="1GpuQyT0gAD" role="3cqZAp">
-          <node concept="2OqwBi" id="1GpuQyT0hlF" role="3clFbG">
-            <node concept="2OqwBi" id="1GpuQyT0gZ1" role="2Oq$k0">
-              <node concept="2JrnkZ" id="1GpuQyT0gKZ" role="2Oq$k0">
-                <node concept="37vLTw" id="1GpuQyT0gAC" role="2JrQYb">
-                  <ref role="3cqZAo" node="1GpuQyT0gzY" resolve="port" />
+        <node concept="3cpWs8" id="551EivYE7Ku" role="3cqZAp">
+          <node concept="3cpWsn" id="551EivYE7Kv" role="3cpWs9">
+            <property role="TrG5h" value="nodeId" />
+            <node concept="17QB3L" id="551EivYE7TX" role="1tU5fm" />
+            <node concept="2OqwBi" id="551EivYE7Kw" role="33vP2m">
+              <node concept="2OqwBi" id="551EivYE7Kx" role="2Oq$k0">
+                <node concept="2JrnkZ" id="551EivYE7Ky" role="2Oq$k0">
+                  <node concept="37vLTw" id="551EivYE7Kz" role="2JrQYb">
+                    <ref role="3cqZAo" node="1GpuQyT0gzY" resolve="port" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="551EivYE7K$" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                 </node>
               </node>
-              <node concept="liA8E" id="1GpuQyT0he3" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
+              <node concept="liA8E" id="551EivYE7K_" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
               </node>
             </node>
-            <node concept="liA8E" id="1GpuQyT0htr" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1GpuQyT0gAD" role="3cqZAp">
+          <node concept="2OqwBi" id="551EivYE8e9" role="3clFbG">
+            <node concept="37vLTw" id="551EivYE7KA" role="2Oq$k0">
+              <ref role="3cqZAo" node="551EivYE7Kv" resolve="nodeId" />
+            </node>
+            <node concept="liA8E" id="551EivYE8zB" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
+              <node concept="3cpWsd" id="551EivYE9B6" role="37wK5m">
+                <node concept="3cmrfG" id="551EivYE9CL" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
+                </node>
+                <node concept="2OqwBi" id="551EivYE8LY" role="3uHU7B">
+                  <node concept="37vLTw" id="551EivYE8A0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="551EivYE7Kv" resolve="nodeId" />
+                  </node>
+                  <node concept="liA8E" id="551EivYE8T5" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2417,10 +2445,61 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="551EivYEVN_" role="3cqZAp">
+          <node concept="3clFbC" id="551EivYEVNA" role="3clFbw">
+            <node concept="37vLTw" id="551EivYEVNB" role="3uHU7B">
+              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfOutgoingConnections" />
+            </node>
+            <node concept="3cmrfG" id="551EivYEWk8" role="3uHU7w">
+              <property role="3cmrfH" value="6" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="551EivYEVND" role="3clFbx">
+            <node concept="3cpWs6" id="551EivYEVNE" role="3cqZAp">
+              <node concept="3b6qkQ" id="551EivYEVNF" role="3cqZAk">
+                <property role="$nhwW" value="0.66" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6x0VMRwSG5K" role="3cqZAp">
+          <node concept="3clFbC" id="6x0VMRwSG5L" role="3clFbw">
+            <node concept="37vLTw" id="6x0VMRwSG5M" role="3uHU7B">
+              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfOutgoingConnections" />
+            </node>
+            <node concept="3cmrfG" id="6x0VMRwSG8l" role="3uHU7w">
+              <property role="3cmrfH" value="7" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6x0VMRwSG5O" role="3clFbx">
+            <node concept="3cpWs6" id="6x0VMRwSG5P" role="3cqZAp">
+              <node concept="3b6qkQ" id="6x0VMRwSG5Q" role="3cqZAk">
+                <property role="$nhwW" value="0.64" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6x0VMRwSGa0" role="3cqZAp">
+          <node concept="3clFbC" id="6x0VMRwSGa1" role="3clFbw">
+            <node concept="37vLTw" id="6x0VMRwSGa2" role="3uHU7B">
+              <ref role="3cqZAo" node="4vIVwd7w5tc" resolve="numberOfOutgoingConnections" />
+            </node>
+            <node concept="3cmrfG" id="6x0VMRwSGcG" role="3uHU7w">
+              <property role="3cmrfH" value="8" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6x0VMRwSGa4" role="3clFbx">
+            <node concept="3cpWs6" id="6x0VMRwSGa5" role="3cqZAp">
+              <node concept="3b6qkQ" id="6x0VMRwSGa6" role="3cqZAk">
+                <property role="$nhwW" value="0.62" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="4vIVwd7v7Y6" role="3cqZAp" />
         <node concept="3cpWs6" id="4vIVwd7v9P4" role="3cqZAp">
           <node concept="3b6qkQ" id="4vIVwd7v9T9" role="3cqZAk">
-            <property role="$nhwW" value="0.75" />
+            <property role="$nhwW" value="0.60" />
           </node>
         </node>
       </node>
