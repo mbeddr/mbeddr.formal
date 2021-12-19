@@ -177,6 +177,7 @@
     <property role="EcuMT" value="3731513482756243840" />
     <property role="TrG5h" value="StandardClause" />
     <property role="3GE5qa" value="bibliography" />
+    <property role="34LRSv" value="clause" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3f8ZVRYh461" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -197,14 +198,20 @@
   </node>
   <node concept="1TIwiD" id="3f8ZVRYh476">
     <property role="EcuMT" value="3731513482756243910" />
-    <property role="TrG5h" value="BibliographyEntryRefGSNAttribute" />
+    <property role="TrG5h" value="StandardAndClauseRefGSNAttribute" />
     <property role="3GE5qa" value="bibliography" />
+    <property role="34LRSv" value="standard ref" />
     <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     <node concept="1TJgyj" id="3f8ZVRYh477" role="1TKVEi">
       <property role="IQ2ns" value="3731513482756243911" />
-      <property role="20kJfa" value="entry" />
+      <property role="20kJfa" value="standard" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3f8ZVRYgSle" resolve="IBibliographyEntry" />
+      <ref role="20lvS9" node="3f8ZVRYgSld" resolve="Standard" />
+    </node>
+    <node concept="1TJgyj" id="3f8ZVRYhFRn" role="1TKVEi">
+      <property role="IQ2ns" value="3731513482756406743" />
+      <property role="20kJfa" value="clause" />
+      <ref role="20lvS9" node="3f8ZVRYh460" resolve="StandardClause" />
     </node>
   </node>
 </model>
