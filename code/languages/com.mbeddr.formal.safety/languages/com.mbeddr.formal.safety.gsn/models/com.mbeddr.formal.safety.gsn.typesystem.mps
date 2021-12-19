@@ -741,7 +741,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="3f8ZVRYfNxG">
-    <property role="TrG5h" value="check_PrefixUniqueness" />
+    <property role="TrG5h" value="check_PrefixUniquenessInGlobalScope" />
     <property role="1$Xk0j" value="true" />
     <node concept="3clFbS" id="3f8ZVRYfNxH" role="18ibNy">
       <node concept="3cpWs8" id="3f8ZVRYfNxQ" role="3cqZAp">
