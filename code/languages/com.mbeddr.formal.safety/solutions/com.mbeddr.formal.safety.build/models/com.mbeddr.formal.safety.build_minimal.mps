@@ -3324,6 +3324,76 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="3f8ZVRYhDlD" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.argument.process" />
+        <property role="3LESm3" value="8a4ef392-f4b4-43e7-afb5-b071dce8043d" />
+        <node concept="398BVA" id="3f8ZVRYhDx6" role="3LF7KH">
+          <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="3f8ZVRYhDRb" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3f8ZVRYhE5U" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process" />
+              <node concept="2Ry0Ak" id="3f8ZVRYhEkD" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3f8ZVRYhEBO" role="3bR37C">
+          <node concept="3bR9La" id="3f8ZVRYhEBP" role="1SiIV1">
+            <ref role="3bR37D" node="6hyv0iVPlGt" resolve="com.mbeddr.formal.safety.gsn" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3f8ZVRYhEBQ" role="3bR37C">
+          <node concept="3bR9La" id="3f8ZVRYhEBR" role="1SiIV1">
+            <ref role="3bR37D" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3f8ZVRYhEC3" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3f8ZVRYhEC4" role="1HemKq">
+            <node concept="398BVA" id="3f8ZVRYhEBS" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="3f8ZVRYhEBT" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3f8ZVRYhEBU" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process" />
+                  <node concept="2Ry0Ak" id="3f8ZVRYhEBV" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3f8ZVRYhEC5" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3f8ZVRYhEC6" role="3bR37C">
+          <node concept="1Busua" id="3f8ZVRYhEC7" role="1SiIV1">
+            <ref role="1Busuk" node="6hyv0iVPlGt" resolve="com.mbeddr.formal.safety.gsn" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3f8ZVRYhELD" role="3bR31x">
+          <node concept="3LXTmp" id="3f8ZVRYhELE" role="3rtmxm">
+            <node concept="398BVA" id="3f8ZVRYhELF" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="3f8ZVRYhELG" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3f8ZVRYhELH" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3f8ZVRYhELJ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="6hyv0iVPlGD" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.pluginSolution" />
