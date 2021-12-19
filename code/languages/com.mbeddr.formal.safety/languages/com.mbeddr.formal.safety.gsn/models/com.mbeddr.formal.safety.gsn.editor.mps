@@ -846,6 +846,30 @@
       </node>
       <node concept="2iRkQZ" id="3GRi4m$qQ5t" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="3f8ZVRYdwpS" role="6VMZX">
+      <node concept="2iRkQZ" id="3f8ZVRYdwpT" role="2iSdaV" />
+      <node concept="3EZMnI" id="3f8ZVRYdwra" role="3EZMnx">
+        <node concept="2iRfu4" id="3f8ZVRYdwrb" role="2iSdaV" />
+        <node concept="3F0ifn" id="3f8ZVRYdwr8" role="3EZMnx">
+          <property role="3F0ifm" value="Prefix of IDs:" />
+        </node>
+        <node concept="3F0A7n" id="3f8ZVRYdwrj" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="3f8ZVRYdw_0" role="3EZMnx">
+        <node concept="2iRfu4" id="3f8ZVRYdw_1" role="2iSdaV" />
+        <node concept="3F0ifn" id="3f8ZVRYdw_2" role="3EZMnx">
+          <property role="3F0ifm" value="Current index:" />
+        </node>
+        <node concept="3F0A7n" id="3f8ZVRYdw_3" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="py52:3f8ZVRYdwrn" resolve="crtMaxIndex" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2xDbr0" id="4Te4zGtlJMP">
     <property role="TrG5h" value="ContextRoundedRectangle" />
