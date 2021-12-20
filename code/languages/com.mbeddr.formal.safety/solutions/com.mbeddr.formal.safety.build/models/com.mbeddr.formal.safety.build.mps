@@ -9428,6 +9428,11 @@
             <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3f8ZVRYighl" role="3bR37C">
+          <node concept="3bR9La" id="3f8ZVRYighm" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
       <node concept="1X3_iC" id="1FMyjUPhIJF" role="lGtFl">
         <property role="3V$3am" value="modules" />
