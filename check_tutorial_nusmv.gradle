@@ -3,20 +3,21 @@ import de.itemis.mps.gradle.*
 //will pull the groovy classes/types from nexus to the classpath																					
 buildscript {
     repositories {
-		maven { url 'https://mvnrepository.com/artifact/de.itemis.mps' }	
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+		maven { 
+            url 'https://maven.pkg.github.com/mbeddr/*' 
+            credentials {
+                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+            }
+        }	
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.4+'
-    }
-    configurations.classpath {
-        resolutionStrategy.activateDependencyLocking()
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.5+'
     }
 }
 
 plugins {
     id 'base'
-    id 'maven-publish'
 }
 
 apply plugin: 'modelcheck'
@@ -30,8 +31,7 @@ ext.mpsVersion =  '2020.3.+'
 ext.mbeddrVersion =  '2020.3.+'
 
 ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+        'https://maven.pkg.github.com/mbeddr/*',
 ]
 
 configurations {
@@ -44,15 +44,19 @@ dependencies {
 
 
 repositories {
-    mavenLocal()
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
+            if (repoUrl.startsWith('https://maven.pkg.github.com/')) {
+                credentials {
+                    username project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                    password project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+                }
+            }
         }
     }
     mavenCentral()
 }
-
 
 File modelcheckresult = new File("$buildDir/TEST-tutorial-modelcheckresult.xml")
 

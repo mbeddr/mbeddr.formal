@@ -1,2 +1,4 @@
 mpsHomeDir=<mps_home>
 mbeddr.formal.home=<current_directory>
+github_username=<github user name to be able to access dependencies from github MAVEN packages>
+github_token=<a token for the above use, the token shall have "read_packages" enabled>

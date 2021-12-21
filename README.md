@@ -16,7 +16,10 @@
     1. in *Windows* please note that the paths should use *slash* instead of *back-slash*, e.g.
         1. mpsHomeDir=C:/work/MPS_2020_3_3
         2. mbeddr.formal.home=C:/work/mbeddr.formal 
+        3. github_username=lucky_luke
+        4. github_token=...
     2. in Unix-based systems we have the "unix paths" (nothing changes)
+    3. we use dependencies on MPS DSLs libraries published in maven on github - to be able to access these, a github account is needed (username and token). The token shall have "read_packages" enabled.
 2. for packaging FASTEN distribution, run `gradlew.bat`- this starts the default task `build_fasten_safety_distribution`
 
 ## Building (from MPS)

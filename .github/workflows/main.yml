@@ -5,11 +5,8 @@ on: [push, pull_request]
 
 env:
   MPS_VER: "2020.3"
-  MPS_ZIP: "http://download.jetbrains.com/mps/2020.3/MPS-2020.3.4.zip"
-  JBR: "https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbr-11_0_7-windows-x64-b765.57.tar.gz"
-  FASTEN_DISTRIBUTION_PACKAGE: "/home/runner/work/mbeddr.formal/mbeddr.formal/build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-1.0-SNAPSHOT.zip"
-  FASTEN_DISTRIBUTION_DIR: "/home/runner/work/mbeddr.formal/mbeddr.formal/build/fasten-1.0-SNAPSHOT"
-  ANALYZERS_DIR: "/home/runner/work/mbeddr.formal/mbeddr.formal/rcp_resources/external_tools"
+  GITHUB_ACTOR: ${{ github.actor }}
+  GITHUB_TOKEN: ${{ secrets.FASTEN_GITHUB_PKG_REGISTRY }}
 
 jobs:
   build:
@@ -23,6 +20,8 @@ jobs:
     - name: Set up Gradle
       run: |
         chmod +x ./gradlew
+        chmod +x ./rcp_resources/external_tools/nusmv
+        echo "$(pwd)/rcp_resources/external_tools" >> $GITHUB_PATH
         
     - name: Setup headless environment
       run: |
@@ -34,7 +33,7 @@ jobs:
         java-version: 11  
         
     - name: Build FASTEN
-      uses: eskatos/gradle-command-action@v1.3.3
+      uses: gradle/gradle-build-action@v1.3.3
       with: 
         arguments: build_fasten_safety_distribution -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
@@ -44,42 +43,42 @@ jobs:
         configuration-cache-enabled: true
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
-    #- name: Check Consistency of the FASTEN-NuSMV Tutorial 
-    #  uses: eskatos/gradle-command-action@v1.3.3
-    #  with:
-    #    arguments: -b check_tutorial_nusmv.gradle -Dorg.gradle.internal.http.connectionTimeout=650000 -Dorg.gradle.internal.http.socketTimeout=650000
-    #    wrapper-cache-enabled: true
-    #    dependencies-cache-enabled: true
-    #    dependencies-cache-key: gradle/dependency-locks/**
-    #    configuration-cache-enabled: true
-    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    - name: Check Consistency of the FASTEN-NuSMV Tutorial 
+      uses: gradle/gradle-build-action@v1.3.3
+      with:
+        arguments: -b check_tutorial_nusmv.gradle 
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        configuration-cache-enabled: true
+        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
-    #- name: Check Consistency of the FASTEN-Safety Tutorial
-    #  uses: eskatos/gradle-command-action@v1.3.3
-    #  with:
-    #    arguments: -b check_tutorial_safety.gradle -Dorg.gradle.internal.http.connectionTimeout=650000 -Dorg.gradle.internal.http.socketTimeout=650000
-    #    wrapper-cache-enabled: true
-    #    dependencies-cache-enabled: true
-    #    dependencies-cache-key: gradle/dependency-locks/**
-    #    configuration-cache-enabled: true
-    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    - name: Check Consistency of the FASTEN-Safety Tutorial
+      uses: gradle/gradle-build-action@v1.3.3
+      with:
+        arguments: -b check_tutorial_safety.gradle
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        configuration-cache-enabled: true
+        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
         
-    #- name: Run Tests
-    #  uses: eskatos/gradle-command-action@v1
-    #  with: 
-    #    arguments: run_all_tests --offline -Dorg.gradle.internal.http.connectionTimeout=650000 -Dorg.gradle.internal.http.socketTimeout=650000
-    #    wrapper-cache-enabled: true
-    #    dependencies-cache-enabled: true
-    #    dependencies-cache-key: gradle/dependency-locks/**
-    #    configuration-cache-enabled: true    
-    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    - name: Run Tests
+      uses: gradle/gradle-build-action@v1
+      with: 
+        arguments: run_all_tests 
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        configuration-cache-enabled: true    
+        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
-    #- name: Publish Test Report
-    #  uses: mikepenz/action-junit-report@v2
-    #  with:
-    #    fail_on_failure: true
-    #    report_paths: 'build/**/TEST*.xml'
-    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish Test Report
+      uses: mikepenz/action-junit-report@v2
+      with:
+        fail_on_failure: true
+        report_paths: 'build/**/TEST*.xml'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Get Current Time
       id: time
       uses: nanzm/get-time-action@v1.1

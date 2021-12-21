@@ -3,10 +3,20 @@ import de.itemis.mps.gradle.*
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        mavenCentral()
+        def githubRepos = ["https://maven.pkg.github.com/mbeddr/*"]
+        for (def repo in githubRepos) {
+            maven {
+                url = uri(repo)
+                credentials {
+                    username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                    password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+                }
+            }
+        }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.5.+'
     }
 }
 
@@ -14,6 +24,18 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
+}
+
+dependencyLocking {
+    lockAllConfigurations()
+}
+
+apply plugin: 'download-jbr'
+
+ext.jbrVers = '11_0_10-b1145.96'
+
+downloadJbr {
+    jbrVersion = jbrVers
 }
 
 // detect if we are in a CI build
@@ -59,8 +81,7 @@ if (!project.hasProperty('nexusUsername')) {
 logger.info 'Repository username: {}', project.nexusUsername
 
 ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+        'https://maven.pkg.github.com/mbeddr/*',
 ]
 
 // Dependency versions
@@ -112,12 +133,18 @@ configurations {
     languageLibs
     // includes also junit tasks support
     antLib
+    jbrWin
+    jbrMac
+    jbrLinux
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "com.mbeddr:platform:$mbeddrVersion"
     antLib "org.apache.ant:ant-junit:1.10.6"
+    jbrWin "com.jetbrains.jdk:jbr:$jbrVers:windows-x64@tgz"
+    jbrMac "com.jetbrains.jdk:jbr:$jbrVers:osx-x64@tgz"
+    jbrLinux "com.jetbrains.jdk:jbr:$jbrVers:linux-x64@tgz"
 }
 
 repositories {
@@ -125,6 +152,10 @@ repositories {
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
+            credentials {
+                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+            }
         }
     }
     mavenCentral()
@@ -171,9 +202,18 @@ def defaultScriptArgs = [
 ]
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+task configureJava {
+    dependsOn "downloadJbr"
+    doLast {
+        project.ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
+        project.ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
+        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName("downloadJbr").javaExecutable
+        println project.findProperty("itemis.mps.gradle.ant.defaultJavaExecutable")
+    }
+}
+
+task resolveJarDeps(type: Copy, dependsOn: [configureJava]) {
+}
 
 task resolveLanguageLibs(type: Copy) {
     from {
@@ -195,7 +235,7 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
+task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs, configureJava]) {
     script "$buildDir/scripts/build_all_scripts.xml"
 }
 
@@ -239,7 +279,7 @@ task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languag
     }
 }
 
-task run_all_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
+task run_all_tests(type: TestLanguages, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
     print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-all-tests.xml")

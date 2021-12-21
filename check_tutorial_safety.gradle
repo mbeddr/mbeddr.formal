@@ -3,59 +3,60 @@ import de.itemis.mps.gradle.*
 //will pull the groovy classes/types from nexus to the classpath																
 buildscript {
     repositories {
-		maven { url 'https://mvnrepository.com/artifact/de.itemis.mps' }
-		maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+		maven { 
+            url 'https://maven.pkg.github.com/mbeddr/*' 
+            credentials {
+                username = project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+            }    
+        }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.5+'
     }
 }
 
 plugins {
     id 'base'
-    id 'maven-publish'
-    id 'co.riiid.gradle' version '0.4.2'										
 }
 
 apply plugin: 'modelcheck'
 
-ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
-]
+dependencyLocking {
+    lockAllConfigurations()
+}
 
 // Dependency versions
 ext.mpsVersion =  '2020.3.+'
 ext.mbeddrVersion =  '2020.3.+'
-//ext.mbeddrVersion =  'mps-2020.2.+'
 
-// Project versions
-ext.major = '1'
-ext.minor = '0'
+ext.dependencyRepositories = [
+        'https://maven.pkg.github.com/mbeddr/*',
+]
 
 configurations {
     mps
-	languageLibs			
-    // includes also junit tasks support
-    antLib
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
-	languageLibs "com.mbeddr:platform:$mbeddrVersion"
-    antLib "org.apache.ant:ant-junit:1.10.6"													 										
 }
 
+
 repositories {
-    mavenLocal()
     for (repoUrl in project.dependencyRepositories) {
         maven {
             url repoUrl
+            if (repoUrl.startsWith('https://maven.pkg.github.com/')) {
+                credentials {
+                    username project.findProperty("github_username") ?: System.getenv("GITHUB_ACTOR")
+                    password project.findProperty("github_token") ?: System.getenv("GITHUB_TOKEN")
+                }
+            }
         }
     }
     mavenCentral()
 }
-
 
 File modelcheckresult = new File("$buildDir/TEST-tutorial-safety-modelcheckresult.xml")
 
@@ -79,7 +80,8 @@ modelcheck {
     mpsConfig = configurations.mps
     junitFile = modelcheckresult
     errorNoFail = true
-    //maxHeap = "3G"
+    debug = false
+    maxHeap = "3G"
     modules = ["com.mbeddr.formal.safety.tutorial"] //, "com.mbeddr.formal.safety.users_guide"]
 }
 
