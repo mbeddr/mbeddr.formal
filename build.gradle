@@ -262,7 +262,7 @@ task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languag
     }
 }
 
-task run_all_tests(type: TestLanguages, dependsOn: build_formal_languages) {
+task run_all_tests(type: TestLanguages, dependsOn: configureJava) {
     description "Will execute all tests from command line"
     print "mbeddr.formal.home = " + rootDir;
 	script new File("$buildDir/scripts/build-all-tests.xml")

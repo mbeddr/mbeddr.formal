@@ -9,7 +9,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.FASTEN_GITHUB_PKG_REGISTRY }}
 
 jobs:
-  build:
+  build_fasten_distribution_and_perform_checks:
     runs-on: ubuntu-latest
     env:
       DISPLAY: ':99'
@@ -92,7 +92,7 @@ jobs:
         path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-2020.3-SNAPSHOT.zip
 
 
-  fasten_assurance_package:
+  build_fasten_assurance_package:
     runs-on: ubuntu-latest
     env:
       DISPLAY: ':99'
