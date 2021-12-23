@@ -90,3 +90,36 @@ jobs:
       with:
         name: fasten-distribution-2020.3-${{ steps.time.outputs.time }}
         path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-2020.3-SNAPSHOT.zip
+
+
+  fasten_assurance_package:
+    runs-on: ubuntu-latest
+    env:
+      DISPLAY: ':99'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Gradle
+      run: |
+        chmod +x ./gradlew
+        
+    - name: Setup headless environment
+      run: |
+        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+       
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11  
+        
+    - name: Build FASTEN Assurance Distribution
+      uses: gradle/gradle-build-action@v1.3.3
+      with: 
+        arguments: -b build_fasten_assurance.gradle package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        dependencies-cache-exact: true
+        configuration-cache-enabled: true
+        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew

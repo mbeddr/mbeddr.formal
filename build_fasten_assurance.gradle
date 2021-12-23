@@ -222,71 +222,17 @@ task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLangu
     script "$buildDir/scripts/build_all_scripts.xml"
 }
 
-task build_formal_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script new File("$buildDir/scripts/build-formal-languages.xml")
+task build_assurance_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
+    script new File("$buildDir/scripts/build-assurance-languages.xml")
 }
 
-task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [build_formal_languages]) {
-    script new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
-}
-
-task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
-    description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
-	script new File("$buildDir/scripts/build-nusmv-tests.xml")
-	doLast {
-        ant.taskdef(name: 'junitreport',
-                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
-                classpath: configurations.antLib.asPath)
-        ant.junitreport {
-            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
-            report(format: 'frames', todir: "$buildDir/junitreport_smv")
-        }
-        ant.echo("JUnit report placed into $buildDir/junitreport_smv/index.html")
-    }
-}
-
-task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
-    description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
-	script new File("$buildDir/scripts/build-safety-tests.xml")
-	doLast {
-        ant.taskdef(name: 'junitreport',
-                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
-                classpath: configurations.antLib.asPath)
-        ant.junitreport {
-            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
-            report(format: 'frames', todir: "$buildDir/junitreport")
-        }
-        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
-    }
-}
-
-task run_all_tests(type: TestLanguages, dependsOn: build_formal_languages) {
-    description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
-	script new File("$buildDir/scripts/build-all-tests.xml")
-	doLast {
-        ant.taskdef(name: 'junitreport',
-                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
-                classpath: configurations.antLib.asPath)
-        ant.junitreport {
-            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
-            report(format: 'frames', todir: "$buildDir/junitreport")
-        }
-        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
-    }
-}
-
-check.dependsOn run_all_tests
-
-task package_formal(type: Zip, dependsOn: build_formal_languages) {
-    archiveBaseName = 'com.mbeddr.formal'
+task package_assurance(type: Zip, dependsOn: build_assurance_languages) {
+    archiveBaseName = 'fasten.assurance'
     from artifactsDir
-    include 'com.mbeddr.formal.languages/**'
+    include 'fasten.assurance.languages/**'
 }
 
-assemble.dependsOn package_formal
+assemble.dependsOn package_assurance
 
 publishing {
     repositories {
@@ -313,8 +259,8 @@ publishing {
     publications {
         NuSMVLanguages(MavenPublication) {
             groupId 'com.mbeddr'
-            artifactId 'formal'
-            artifact package_formal
+            artifactId 'assurance'
+            artifact package_assurance
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.languageLibs.resolvedConfiguration.firstLevelModuleDependencies.each {
@@ -344,6 +290,6 @@ task cleanMps(type: Delete) {
 clean.dependsOn cleanMps
 
 
-defaultTasks 'build_formal_languages'
+defaultTasks 'build_assurance_languages'
 
-task rebuild(dependsOn:[clean, build_formal_languages])
+task rebuild(dependsOn:[clean, build_assurance_languages])
