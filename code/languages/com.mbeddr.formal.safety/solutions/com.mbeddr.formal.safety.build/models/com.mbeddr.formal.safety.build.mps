@@ -14810,6 +14810,36 @@
             <ref role="3bR37D" node="7he_lUur$v6" resolve="com.mbeddr.formal.safety.gsn.patterns" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2QSq4JUviMN" role="3bR37C">
+          <node concept="3bR9La" id="2QSq4JUviMO" role="1SiIV1">
+            <ref role="3bR37D" node="7he_lUurzLh" resolve="com.mbeddr.formal.safety.gsn.ext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2QSq4JUviMP" role="3bR37C">
+          <node concept="3bR9La" id="2QSq4JUviMQ" role="1SiIV1">
+            <ref role="3bR37D" node="7he_lUury9o" resolve="com.mbeddr.formal.safety.gsn" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2QSq4JUviMR" role="3bR37C">
+          <node concept="3bR9La" id="2QSq4JUviMS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2QSq4JUviMT" role="3bR37C">
+          <node concept="3bR9La" id="2QSq4JUviMU" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2QSq4JUviMV" role="3bR37C">
+          <node concept="3bR9La" id="2QSq4JUviMW" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2QSq4JUviMX" role="3bR37C">
+          <node concept="3bR9La" id="2QSq4JUviMY" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1$9jWFVFLHG" role="2G$12L">
         <property role="BnDLt" value="true" />

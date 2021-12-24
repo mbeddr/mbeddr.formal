@@ -118,7 +118,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -193,11 +192,6 @@
       </concept>
       <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
         <child id="6985522012210254363" name="expression" index="WxPPp" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1139,18 +1133,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="6csJveEII0P" role="3cqZAp" />
-            <node concept="2xdQw9" id="6csJveEFgHM" role="3cqZAp">
-              <node concept="3cpWs3" id="6csJveEFhmN" role="9lYJi">
-                <node concept="37vLTw" id="6csJveEIIGj" role="3uHU7w">
-                  <ref role="3cqZAo" node="6csJveEADMx" resolve="referencePoint" />
-                </node>
-                <node concept="Xl_RD" id="6csJveEFgHO" role="3uHU7B">
-                  <property role="Xl_RC" value="rePoint=" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="6csJveEII1v" role="3cqZAp" />
           </node>
           <node concept="JncvC" id="6csJveEA63c" role="JncvA">
             <property role="TrG5h" value="lc" />
