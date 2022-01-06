@@ -14,7 +14,6 @@
     <import index="s3z8" ref="r:5b29d604-14e1-4547-b308-d116f5568071(com.mpsbasics.docx4j.core.word)" />
     <import index="gunl" ref="r:62d702fd-8dbf-48ee-8db2-f1a6a94cc884(com.mpsbasics.docx4j.sandbox.java_baselanguage_serializers)" />
     <import index="9qxn" ref="r:b8395387-efa3-4cfc-a1d5-68b4f2c74a54(com.mpsbasics.docx4j.core.paths)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -63,7 +62,6 @@
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -214,15 +212,10 @@
                 <ref role="2WH_rO" node="2w5Gq4Utm4H" resolve="node" />
               </node>
             </node>
-            <node concept="2OqwBi" id="38aFq1iYxkN" role="37wK5m">
-              <node concept="2OqwBi" id="38aFq1iYwz2" role="2Oq$k0">
-                <node concept="2WthIp" id="38aFq1iYwz5" role="2Oq$k0" />
-                <node concept="1DTwFV" id="38aFq1iYwz7" role="2OqNvi">
-                  <ref role="2WH_rO" node="7102xr6dTsc" resolve="proj" />
-                </node>
-              </node>
-              <node concept="liA8E" id="38aFq1iYz7Q" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+            <node concept="2OqwBi" id="38aFq1iYwz2" role="37wK5m">
+              <node concept="2WthIp" id="38aFq1iYwz5" role="2Oq$k0" />
+              <node concept="1DTwFV" id="38aFq1iYwz7" role="2OqNvi">
+                <ref role="2WH_rO" node="7102xr6dTsc" resolve="proj" />
               </node>
             </node>
           </node>

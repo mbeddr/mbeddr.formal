@@ -44,11 +44,20 @@
     <import index="8prx" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.parts(com.mpsbasics.docx4j.lib/)" />
     <import index="e91c" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j(com.mpsbasics.docx4j.lib/)" />
     <import index="eaz0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
+    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="cpcb" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging(com.mpsbasics.docx4j.lib/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1219920932475" name="jetbrains.mps.baseLanguage.structure.VariableArityType" flags="in" index="8X2XB">
+        <child id="1219921048460" name="componentType" index="8Xvag" />
+      </concept>
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -236,6 +245,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
@@ -407,6 +419,22 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="8rr1id7Ion" role="3cqZAp">
+          <node concept="3cpWsn" id="8rr1id7Ioo" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="8rr1id7Ily" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="8rr1id7Iop" role="33vP2m">
+              <node concept="37vLTw" id="8rr1id7Ioq" role="2Oq$k0">
+                <ref role="3cqZAo" node="38aFq1iYq8K" resolve="project" />
+              </node>
+              <node concept="liA8E" id="8rr1id7Ior" role="2OqNvi">
+                <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1QHqEK" id="3jaLROLwBYn" role="3cqZAp">
           <node concept="1QHqEC" id="3jaLROLwBYp" role="1QHqEI">
             <node concept="3clFbS" id="3jaLROLwBYr" role="1bW5cS">
@@ -469,8 +497,8 @@
                       <node concept="37vLTw" id="4K8dCO7y_Ka" role="37wK5m">
                         <ref role="3cqZAo" node="4K8dCO7yz_P" resolve="nodeToSerialize" />
                       </node>
-                      <node concept="37vLTw" id="38aFq1iYr2D" role="37wK5m">
-                        <ref role="3cqZAo" node="38aFq1iYq8K" resolve="repo" />
+                      <node concept="37vLTw" id="8rr1id7JYV" role="37wK5m">
+                        <ref role="3cqZAo" node="8rr1id7Ioo" resolve="repo" />
                       </node>
                     </node>
                   </node>
@@ -506,6 +534,232 @@
                     </node>
                   </node>
                   <node concept="3clFbH" id="3AvLcZoWias" role="3cqZAp" />
+                  <node concept="3clFbF" id="8rr1id71zV" role="3cqZAp">
+                    <node concept="2YIFZM" id="xCk$O6mZNq" role="3clFbG">
+                      <ref role="1Pybhc" node="xCk$O6mgDu" resolve="WordNotificationHelper" />
+                      <ref role="37wK5l" node="xCk$O6mi_h" resolve="showWordExporterNotification" />
+                      <node concept="Xl_RD" id="xCk$O6mZNr" role="37wK5m">
+                        <property role="Xl_RC" value="MS Word File Saved" />
+                      </node>
+                      <node concept="3cpWs3" id="xCk$O6mZNs" role="37wK5m">
+                        <node concept="37vLTw" id="8rr1id7wwP" role="3uHU7w">
+                          <ref role="3cqZAo" node="6fO82$Fr5qq" resolve="pathToWordFile" />
+                        </node>
+                        <node concept="Xl_RD" id="xCk$O6mZNu" role="3uHU7B">
+                          <property role="Xl_RC" value="The Word file has been saved to " />
+                        </node>
+                      </node>
+                      <node concept="Rm8GO" id="xCk$O6mZNv" role="37wK5m">
+                        <ref role="Rm8GQ" to="fnpx:~NotificationType.INFORMATION" resolve="INFORMATION" />
+                        <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                      </node>
+                      <node concept="2ShNRf" id="xCk$O6mZNw" role="37wK5m">
+                        <node concept="YeOm9" id="xCk$O6mZNx" role="2ShVmc">
+                          <node concept="1Y3b0j" id="xCk$O6mZNy" role="YeSDq">
+                            <property role="2bfB8j" value="true" />
+                            <ref role="37wK5l" to="fnpx:~NotificationAction.&lt;init&gt;(java.lang.String)" resolve="NotificationAction" />
+                            <ref role="1Y3XeK" to="fnpx:~NotificationAction" resolve="NotificationAction" />
+                            <node concept="3Tm1VV" id="xCk$O6mZNz" role="1B3o_S" />
+                            <node concept="Xl_RD" id="xCk$O6mZN$" role="37wK5m">
+                              <property role="Xl_RC" value="Reveal" />
+                            </node>
+                            <node concept="3clFb_" id="xCk$O6mZN_" role="jymVt">
+                              <property role="TrG5h" value="actionPerformed" />
+                              <node concept="3Tm1VV" id="xCk$O6mZNA" role="1B3o_S" />
+                              <node concept="3cqZAl" id="xCk$O6mZNB" role="3clF45" />
+                              <node concept="37vLTG" id="xCk$O6mZNC" role="3clF46">
+                                <property role="TrG5h" value="event" />
+                                <node concept="3uibUv" id="xCk$O6mZND" role="1tU5fm">
+                                  <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+                                </node>
+                                <node concept="2AHcQZ" id="xCk$O6mZNE" role="2AJF6D">
+                                  <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                                </node>
+                              </node>
+                              <node concept="37vLTG" id="xCk$O6mZNF" role="3clF46">
+                                <property role="TrG5h" value="notification" />
+                                <node concept="3uibUv" id="xCk$O6mZNG" role="1tU5fm">
+                                  <ref role="3uigEE" to="fnpx:~Notification" resolve="Notification" />
+                                </node>
+                                <node concept="2AHcQZ" id="xCk$O6mZNH" role="2AJF6D">
+                                  <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                                </node>
+                              </node>
+                              <node concept="3clFbS" id="xCk$O6mZNI" role="3clF47">
+                                <node concept="3J1_TO" id="2kYdJbxbfjf" role="3cqZAp">
+                                  <node concept="3uVAMA" id="2kYdJbxbfnm" role="1zxBo5">
+                                    <node concept="XOnhg" id="2kYdJbxbfnn" role="1zc67B">
+                                      <property role="3TUv4t" value="false" />
+                                      <property role="TrG5h" value="ex" />
+                                      <node concept="nSUau" id="2kYdJbxbfno" role="1tU5fm">
+                                        <node concept="3uibUv" id="2kYdJbxbfnp" role="nSUat">
+                                          <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbS" id="2kYdJbxbfnq" role="1zc67A">
+                                      <node concept="3clFbF" id="2kYdJbxbfnr" role="3cqZAp">
+                                        <node concept="2YIFZM" id="2kYdJbxbfns" role="3clFbG">
+                                          <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                          <node concept="2OqwBi" id="8rr1id7Lca" role="37wK5m">
+                                            <node concept="37vLTw" id="8rr1id7pDE" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="38aFq1iYq8K" resolve="project" />
+                                            </node>
+                                            <node concept="liA8E" id="8rr1id7LSZ" role="2OqNvi">
+                                              <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                                            </node>
+                                          </node>
+                                          <node concept="3cpWs3" id="2kYdJbxbfnu" role="37wK5m">
+                                            <node concept="2OqwBi" id="2kYdJbxbfnv" role="3uHU7w">
+                                              <node concept="37vLTw" id="2kYdJbxbfnw" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="2kYdJbxbfnn" resolve="ex" />
+                                              </node>
+                                              <node concept="liA8E" id="2kYdJbxbfnx" role="2OqNvi">
+                                                <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                              </node>
+                                            </node>
+                                            <node concept="Xl_RD" id="2kYdJbxbfny" role="3uHU7B">
+                                              <property role="Xl_RC" value="Failed to open folder: " />
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="2kYdJbxbfnz" role="37wK5m">
+                                            <property role="Xl_RC" value="Failed to open folder" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbS" id="2kYdJbxbfjh" role="1zxBo7">
+                                    <node concept="3cpWs8" id="2kYdJbxbhUk" role="3cqZAp">
+                                      <node concept="3cpWsn" id="2kYdJbxbhUi" role="3cpWs9">
+                                        <property role="TrG5h" value="runtimeCommand" />
+                                        <node concept="17QB3L" id="2kYdJbxbiCn" role="1tU5fm" />
+                                        <node concept="3cpWs3" id="2kYdJbxbj_f" role="33vP2m">
+                                          <node concept="Xl_RD" id="2kYdJbxbji5" role="3uHU7B">
+                                            <property role="Xl_RC" value="explorer /select, " />
+                                          </node>
+                                          <node concept="2OqwBi" id="2kYdJbxc278" role="3uHU7w">
+                                            <node concept="37vLTw" id="8rr1id7r16" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="6fO82$Fr5qq" resolve="pathToWordFile" />
+                                            </node>
+                                            <node concept="liA8E" id="2kYdJbxc2sG" role="2OqNvi">
+                                              <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                                              <node concept="Xl_RD" id="2kYdJbxc341" role="37wK5m">
+                                                <property role="Xl_RC" value="/" />
+                                              </node>
+                                              <node concept="Xl_RD" id="2kYdJbxc49G" role="37wK5m">
+                                                <property role="Xl_RC" value="\\" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="2kYdJbxb8Db" role="3cqZAp">
+                                      <node concept="2OqwBi" id="2kYdJbxb8Lh" role="3clFbG">
+                                        <node concept="2YIFZM" id="2kYdJbxb8EJ" role="2Oq$k0">
+                                          <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
+                                          <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
+                                        </node>
+                                        <node concept="liA8E" id="2kYdJbxb8RW" role="2OqNvi">
+                                          <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String)" resolve="exec" />
+                                          <node concept="37vLTw" id="2kYdJbxbmol" role="37wK5m">
+                                            <ref role="3cqZAo" node="2kYdJbxbhUi" resolve="runtimeCommand" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2AHcQZ" id="xCk$O6mZNO" role="2AJF6D">
+                                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2ShNRf" id="xCk$O6n2RW" role="37wK5m">
+                        <node concept="YeOm9" id="xCk$O6n2RX" role="2ShVmc">
+                          <node concept="1Y3b0j" id="xCk$O6n2RY" role="YeSDq">
+                            <property role="2bfB8j" value="true" />
+                            <ref role="37wK5l" to="fnpx:~NotificationAction.&lt;init&gt;(java.lang.String)" resolve="NotificationAction" />
+                            <ref role="1Y3XeK" to="fnpx:~NotificationAction" resolve="NotificationAction" />
+                            <node concept="3Tm1VV" id="xCk$O6n2RZ" role="1B3o_S" />
+                            <node concept="Xl_RD" id="xCk$O6n2S0" role="37wK5m">
+                              <property role="Xl_RC" value="Copy Path to Clipboard" />
+                            </node>
+                            <node concept="3clFb_" id="xCk$O6n2S1" role="jymVt">
+                              <property role="TrG5h" value="actionPerformed" />
+                              <node concept="3Tm1VV" id="xCk$O6n2S2" role="1B3o_S" />
+                              <node concept="3cqZAl" id="xCk$O6n2S3" role="3clF45" />
+                              <node concept="37vLTG" id="xCk$O6n2S4" role="3clF46">
+                                <property role="TrG5h" value="event" />
+                                <node concept="3uibUv" id="xCk$O6n2S5" role="1tU5fm">
+                                  <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+                                </node>
+                                <node concept="2AHcQZ" id="xCk$O6n2S6" role="2AJF6D">
+                                  <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                                </node>
+                              </node>
+                              <node concept="37vLTG" id="xCk$O6n2S7" role="3clF46">
+                                <property role="TrG5h" value="notification" />
+                                <node concept="3uibUv" id="xCk$O6n2S8" role="1tU5fm">
+                                  <ref role="3uigEE" to="fnpx:~Notification" resolve="Notification" />
+                                </node>
+                                <node concept="2AHcQZ" id="xCk$O6n2S9" role="2AJF6D">
+                                  <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                                </node>
+                              </node>
+                              <node concept="3clFbS" id="xCk$O6n2Sa" role="3clF47">
+                                <node concept="3cpWs8" id="xCk$O6n2Sb" role="3cqZAp">
+                                  <node concept="3cpWsn" id="xCk$O6n2Sc" role="3cpWs9">
+                                    <property role="TrG5h" value="sl" />
+                                    <node concept="3uibUv" id="xCk$O6n2Sd" role="1tU5fm">
+                                      <ref role="3uigEE" to="kt01:~StringSelection" resolve="StringSelection" />
+                                    </node>
+                                    <node concept="2ShNRf" id="xCk$O6n2Se" role="33vP2m">
+                                      <node concept="1pGfFk" id="xCk$O6n2Sf" role="2ShVmc">
+                                        <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
+                                        <node concept="37vLTw" id="8rr1id7oC0" role="37wK5m">
+                                          <ref role="3cqZAo" node="6fO82$Fr5qq" resolve="pathToWordFile" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="xCk$O6n2Sh" role="3cqZAp">
+                                  <node concept="2OqwBi" id="xCk$O6n2Si" role="3clFbG">
+                                    <node concept="2OqwBi" id="xCk$O6n2Sj" role="2Oq$k0">
+                                      <node concept="2YIFZM" id="xCk$O6n2Sk" role="2Oq$k0">
+                                        <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+                                        <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit()" resolve="getDefaultToolkit" />
+                                      </node>
+                                      <node concept="liA8E" id="xCk$O6n2Sl" role="2OqNvi">
+                                        <ref role="37wK5l" to="z60i:~Toolkit.getSystemClipboard()" resolve="getSystemClipboard" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="xCk$O6n2Sm" role="2OqNvi">
+                                      <ref role="37wK5l" to="kt01:~Clipboard.setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)" resolve="setContents" />
+                                      <node concept="37vLTw" id="xCk$O6n2Sn" role="37wK5m">
+                                        <ref role="3cqZAo" node="xCk$O6n2Sc" resolve="sl" />
+                                      </node>
+                                      <node concept="10Nm6u" id="xCk$O6n2So" role="37wK5m" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2AHcQZ" id="xCk$O6n2Sp" role="2AJF6D">
+                                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="8rr1id71qd" role="3cqZAp" />
                   <node concept="2xdQw9" id="2w5Gq4UsjIm" role="3cqZAp">
                     <property role="2xdLsb" value="h1akgim/info" />
                     <node concept="3cpWs3" id="2w5Gq4UsjYA" role="9lYJi">
@@ -573,8 +827,8 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="3jaLROLwCaA" role="ukAjM">
-            <ref role="3cqZAo" node="38aFq1iYq8K" resolve="repo" />
+          <node concept="37vLTw" id="8rr1id7Ios" role="ukAjM">
+            <ref role="3cqZAo" node="8rr1id7Ioo" resolve="repo" />
           </node>
         </node>
       </node>
@@ -582,6 +836,7 @@
       <node concept="3cqZAl" id="6OYO23koTQv" role="3clF45" />
       <node concept="37vLTG" id="6fO82$Fr5qq" role="3clF46">
         <property role="TrG5h" value="pathToWordFile" />
+        <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="4K8dCO7ywQ_" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="4K8dCO7yz_P" role="3clF46">
@@ -589,9 +844,10 @@
         <node concept="3Tqbb2" id="4K8dCO7y$_t" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="38aFq1iYq8K" role="3clF46">
-        <property role="TrG5h" value="repo" />
-        <node concept="3uibUv" id="38aFq1iYqpB" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        <property role="TrG5h" value="project" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="8rr1id7G1W" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
     </node>
@@ -5073,6 +5329,123 @@
       <node concept="3cqZAl" id="38aFq1jq0UY" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="38aFq1jq0ue" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="xCk$O6mgDu">
+    <property role="TrG5h" value="WordNotificationHelper" />
+    <property role="3GE5qa" value="" />
+    <node concept="2tJIrI" id="xCk$O6miyq" role="jymVt" />
+    <node concept="2YIFZL" id="xCk$O6mi_h" role="jymVt">
+      <property role="TrG5h" value="showWordExporterNotification" />
+      <node concept="37vLTG" id="xCk$O6miMZ" role="3clF46">
+        <property role="TrG5h" value="title" />
+        <node concept="17QB3L" id="xCk$O6miOm" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="xCk$O6miON" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="xCk$O6miQd" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="xCk$O6mjqq" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3uibUv" id="xCk$O6mjvr" role="1tU5fm">
+          <ref role="3uigEE" to="fnpx:~NotificationType" resolve="NotificationType" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="xCk$O6miQG" role="3clF46">
+        <property role="TrG5h" value="actions" />
+        <node concept="8X2XB" id="xCk$O6miTQ" role="1tU5fm">
+          <node concept="3uibUv" id="xCk$O6miSQ" role="8Xvag">
+            <ref role="3uigEE" to="fnpx:~NotificationAction" resolve="NotificationAction" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="xCk$O6mi_k" role="3clF47">
+        <node concept="3cpWs8" id="8rr1id84Kx" role="3cqZAp">
+          <node concept="3cpWsn" id="8rr1id84Ky" role="3cpWs9">
+            <property role="TrG5h" value="balloonGroup" />
+            <node concept="3uibUv" id="8rr1id84JX" role="1tU5fm">
+              <ref role="3uigEE" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
+            </node>
+            <node concept="2YIFZM" id="8rr1id84Kz" role="33vP2m">
+              <ref role="37wK5l" to="fnpx:~NotificationGroup.balloonGroup(java.lang.String)" resolve="balloonGroup" />
+              <ref role="1Pybhc" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
+              <node concept="Xl_RD" id="8rr1id84K$" role="37wK5m">
+                <property role="Xl_RC" value="Word Exporter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="xCk$O6miVt" role="3cqZAp">
+          <node concept="3cpWsn" id="xCk$O6miVs" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="notification" />
+            <node concept="3uibUv" id="xCk$O6miVu" role="1tU5fm">
+              <ref role="3uigEE" to="fnpx:~Notification" resolve="Notification" />
+            </node>
+            <node concept="2ShNRf" id="xCk$O6mj3r" role="33vP2m">
+              <node concept="1pGfFk" id="xCk$O6mj3O" role="2ShVmc">
+                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType,com.intellij.notification.NotificationListener)" resolve="Notification" />
+                <node concept="2OqwBi" id="xCk$O6mjh0" role="37wK5m">
+                  <node concept="liA8E" id="xCk$O6mjh1" role="2OqNvi">
+                    <ref role="37wK5l" to="fnpx:~NotificationGroup.getDisplayId()" resolve="getDisplayId" />
+                  </node>
+                  <node concept="37vLTw" id="8rr1id856L" role="2Oq$k0">
+                    <ref role="3cqZAo" node="8rr1id84Ky" resolve="balloonGroup" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="xCk$O6mj3Q" role="37wK5m">
+                  <ref role="3cqZAo" node="xCk$O6miMZ" resolve="title" />
+                </node>
+                <node concept="37vLTw" id="xCk$O6mj3R" role="37wK5m">
+                  <ref role="3cqZAo" node="xCk$O6miON" resolve="message" />
+                </node>
+                <node concept="37vLTw" id="xCk$O6mjA0" role="37wK5m">
+                  <ref role="3cqZAo" node="xCk$O6mjqq" resolve="type" />
+                </node>
+                <node concept="10Nm6u" id="xCk$O6mj3X" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="xCk$O6miV_" role="3cqZAp">
+          <node concept="37vLTw" id="xCk$O6miVI" role="1DdaDG">
+            <ref role="3cqZAo" node="xCk$O6miQG" resolve="actions" />
+          </node>
+          <node concept="3cpWsn" id="xCk$O6miVF" role="1Duv9x">
+            <property role="TrG5h" value="action" />
+            <node concept="3uibUv" id="xCk$O6miVH" role="1tU5fm">
+              <ref role="3uigEE" to="fnpx:~NotificationAction" resolve="NotificationAction" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="xCk$O6miVB" role="2LFqv$">
+            <node concept="3clFbF" id="xCk$O6miVC" role="3cqZAp">
+              <node concept="2OqwBi" id="xCk$O6mj2y" role="3clFbG">
+                <node concept="37vLTw" id="xCk$O6mj2x" role="2Oq$k0">
+                  <ref role="3cqZAo" node="xCk$O6miVs" resolve="notification" />
+                </node>
+                <node concept="liA8E" id="xCk$O6mj2z" role="2OqNvi">
+                  <ref role="37wK5l" to="fnpx:~Notification.addAction(com.intellij.openapi.actionSystem.AnAction)" resolve="addAction" />
+                  <node concept="37vLTw" id="xCk$O6mj2$" role="37wK5m">
+                    <ref role="3cqZAo" node="xCk$O6miVF" resolve="action" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="xCk$O6miVJ" role="3cqZAp">
+          <node concept="2YIFZM" id="xCk$O6mmin" role="3clFbG">
+            <ref role="37wK5l" to="fnpx:~Notifications$Bus.notify(com.intellij.notification.Notification)" resolve="notify" />
+            <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Notifications.Bus" />
+            <node concept="37vLTw" id="xCk$O6mmio" role="37wK5m">
+              <ref role="3cqZAo" node="xCk$O6miVs" resolve="notification" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="xCk$O6mizl" role="1B3o_S" />
+      <node concept="3cqZAl" id="xCk$O6mi_6" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="xCk$O6mgDv" role="1B3o_S" />
   </node>
 </model>
 
