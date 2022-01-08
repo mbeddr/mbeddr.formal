@@ -32,6 +32,7 @@
     <import index="i4w6" ref="r:dff33fe2-c0a9-4081-af46-a022c7542f07(com.mpsbasics.docx4j.core.test_utils)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -455,6 +456,55 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="3n9jAIZJvr9" role="1SL9yI">
+      <property role="TrG5h" value="_100_node_references_test" />
+      <node concept="3cqZAl" id="3n9jAIZJvra" role="3clF45" />
+      <node concept="3clFbS" id="3n9jAIZJvrb" role="3clF47">
+        <node concept="3cpWs8" id="3n9jAIZJvrc" role="3cqZAp">
+          <node concept="3cpWsn" id="3n9jAIZJvrd" role="3cpWs9">
+            <property role="TrG5h" value="documentNodeName" />
+            <node concept="17QB3L" id="3n9jAIZJvre" role="1tU5fm" />
+            <node concept="Xl_RD" id="3n9jAIZJvrf" role="33vP2m">
+              <property role="Xl_RC" value="_100_node_references" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3n9jAIZJvrg" role="3cqZAp">
+          <node concept="3cpWsn" id="3n9jAIZJvrh" role="3cpWs9">
+            <property role="TrG5h" value="newFile" />
+            <node concept="3uibUv" id="3n9jAIZJvri" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2YIFZM" id="3n9jAIZJvrj" role="33vP2m">
+              <ref role="37wK5l" node="4ziKDEneaF8" resolve="generateWord" />
+              <ref role="1Pybhc" node="4ziKDEneaC3" resolve="MyTestingUtils" />
+              <node concept="1Xw6AR" id="3n9jAIZJvrk" role="37wK5m">
+                <node concept="1dCxOl" id="3n9jAIZJvrl" role="1XwpL7">
+                  <property role="1XweGQ" value="r:9d9482af-e942-422d-ba88-55ba18852f77" />
+                  <node concept="1j_P7g" id="3n9jAIZJvrm" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.fasten.safety.doc2word._010_simple_documents_testdata" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1jxXqW" id="3n9jAIZJvrn" role="37wK5m" />
+              <node concept="37vLTw" id="3n9jAIZJvro" role="37wK5m">
+                <ref role="3cqZAo" node="3n9jAIZJvrd" resolve="documentNodeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="3n9jAIZJvrp" role="3cqZAp">
+          <node concept="2YIFZM" id="3n9jAIZJvrq" role="3vwVQn">
+            <ref role="37wK5l" node="4ziKDEnehOS" resolve="checkGeneratedFile" />
+            <ref role="1Pybhc" node="4ziKDEn8YET" resolve="MyDocumentsComparator" />
+            <node concept="37vLTw" id="3n9jAIZJvrr" role="37wK5m">
+              <ref role="3cqZAo" node="3n9jAIZJvrh" resolve="newFile" />
+            </node>
+            <node concept="1jxXqW" id="3n9jAIZJvrs" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="4ziKDEn8YET">
     <property role="TrG5h" value="MyDocumentsComparator" />
@@ -583,24 +633,8 @@
                     <node concept="37vLTw" id="4ziKDEnezcE" role="37wK5m">
                       <ref role="3cqZAo" node="4ziKDEnezcA" resolve="solutionLocationDirectory" />
                     </node>
-                    <node concept="3cpWs3" id="4ziKDEnes6l" role="37wK5m">
-                      <node concept="2OqwBi" id="4ziKDEnesua" role="3uHU7w">
-                        <node concept="37vLTw" id="4ziKDEnes9i" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4ziKDEnei2v" resolve="newFile" />
-                        </node>
-                        <node concept="liA8E" id="4ziKDEnesXV" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
-                        </node>
-                      </node>
-                      <node concept="3cpWs3" id="4ziKDEnerHT" role="3uHU7B">
-                        <node concept="37vLTw" id="4ziKDEngp$S" role="3uHU7B">
-                          <ref role="3cqZAo" node="4ziKDEngp$N" resolve="WITNESS_DIR" />
-                        </node>
-                        <node concept="10M0yZ" id="4ziKDEnerQw" role="3uHU7w">
-                          <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
-                          <ref role="1PxDUh" to="guwi:~File" resolve="File" />
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="4ziKDEngp$S" role="37wK5m">
+                      <ref role="3cqZAo" node="4ziKDEngp$N" resolve="WITNESS_DIR" />
                     </node>
                   </node>
                 </node>
@@ -1041,7 +1075,8 @@
         </node>
         <node concept="3cpWs8" id="4ziKDEn8xuy" role="3cqZAp">
           <node concept="3cpWsn" id="4ziKDEn8xuz" role="3cpWs9">
-            <property role="TrG5h" value="d" />
+            <property role="TrG5h" value="document" />
+            <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="4ziKDEn8xoO" role="1tU5fm">
               <ref role="ehGHo" to="2c95:2TZO3DbuxwK" resolve="Document" />
             </node>
@@ -1106,7 +1141,7 @@
           <node concept="3clFbC" id="4ziKDEneQ5S" role="3clFbw">
             <node concept="10Nm6u" id="4ziKDEneQn3" role="3uHU7w" />
             <node concept="37vLTw" id="4ziKDEneP6n" role="3uHU7B">
-              <ref role="3cqZAo" node="4ziKDEn8xuz" resolve="d" />
+              <ref role="3cqZAo" node="4ziKDEn8xuz" resolve="document" />
             </node>
           </node>
         </node>
@@ -1133,7 +1168,7 @@
               </node>
               <node concept="2OqwBi" id="4ziKDEnd6f1" role="3uHU7B">
                 <node concept="37vLTw" id="4ziKDEnd61R" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4ziKDEn8xuz" resolve="d" />
+                  <ref role="3cqZAo" node="4ziKDEn8xuz" resolve="document" />
                 </node>
                 <node concept="3TrcHB" id="4ziKDEnd6Lq" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1145,6 +1180,7 @@
         <node concept="3cpWs8" id="4ziKDEn8krN" role="3cqZAp">
           <node concept="3cpWsn" id="4ziKDEn8krO" role="3cpWs9">
             <property role="TrG5h" value="newFile" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="4ziKDEn8krP" role="1tU5fm">
               <ref role="3uigEE" to="guwi:~File" resolve="File" />
             </node>
@@ -1182,7 +1218,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="4ziKDEn8_hX" role="37wK5m">
-              <ref role="3cqZAo" node="4ziKDEn8xuz" resolve="d" />
+              <ref role="3cqZAo" node="4ziKDEn8xuz" resolve="document" />
             </node>
             <node concept="1eOMI4" id="4ziKDEn8OXR" role="37wK5m">
               <node concept="10QFUN" id="4ziKDEn8OXO" role="1eOMHV">
@@ -1211,6 +1247,7 @@
       </node>
       <node concept="37vLTG" id="4ziKDEneaIf" role="3clF46">
         <property role="TrG5h" value="project" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4ziKDEneaPc" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
@@ -1218,6 +1255,58 @@
       <node concept="37vLTG" id="4ziKDEnedlH" role="3clF46">
         <property role="TrG5h" value="documentNodeNameToSerialize" />
         <node concept="17QB3L" id="4ziKDEnedxf" role="1tU5fm" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7YjSMFlzo6f">
+    <property role="TrG5h" value="_100_gsn_documents_tests" />
+    <node concept="1LZb2c" id="7YjSMFlzo6g" role="1SL9yI">
+      <property role="TrG5h" value="_110_argument_over_hazards_test" />
+      <node concept="3cqZAl" id="7YjSMFlzo6h" role="3clF45" />
+      <node concept="3clFbS" id="7YjSMFlzo6i" role="3clF47">
+        <node concept="3cpWs8" id="7YjSMFlzo6j" role="3cqZAp">
+          <node concept="3cpWsn" id="7YjSMFlzo6k" role="3cpWs9">
+            <property role="TrG5h" value="documentNodeName" />
+            <node concept="17QB3L" id="7YjSMFlzo6l" role="1tU5fm" />
+            <node concept="Xl_RD" id="7YjSMFlzo6m" role="33vP2m">
+              <property role="Xl_RC" value="_110_argument_over_hazards" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7YjSMFlzo6n" role="3cqZAp">
+          <node concept="3cpWsn" id="7YjSMFlzo6o" role="3cpWs9">
+            <property role="TrG5h" value="newFile" />
+            <node concept="3uibUv" id="7YjSMFlzo6p" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2YIFZM" id="7YjSMFlzo6q" role="33vP2m">
+              <ref role="37wK5l" node="4ziKDEneaF8" resolve="generateWord" />
+              <ref role="1Pybhc" node="4ziKDEneaC3" resolve="MyTestingUtils" />
+              <node concept="1Xw6AR" id="7YjSMFlzo6r" role="37wK5m">
+                <node concept="1dCxOl" id="7YjSMFlzopO" role="1XwpL7">
+                  <property role="1XweGQ" value="r:522f9ef7-c4b9-4333-bba5-c7dd0e83f757" />
+                  <node concept="1j_P7g" id="7YjSMFlzopP" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.fasten.safety.doc2word._100_gsn_documents_testdata" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1jxXqW" id="7YjSMFlzo6u" role="37wK5m" />
+              <node concept="37vLTw" id="7YjSMFlzo6v" role="37wK5m">
+                <ref role="3cqZAo" node="7YjSMFlzo6k" resolve="documentNodeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="7YjSMFlzo6w" role="3cqZAp">
+          <node concept="2YIFZM" id="7YjSMFlzo6x" role="3vwVQn">
+            <ref role="1Pybhc" node="4ziKDEn8YET" resolve="MyDocumentsComparator" />
+            <ref role="37wK5l" node="4ziKDEnehOS" resolve="checkGeneratedFile" />
+            <node concept="37vLTw" id="7YjSMFlzo6y" role="37wK5m">
+              <ref role="3cqZAo" node="7YjSMFlzo6o" resolve="newFile" />
+            </node>
+            <node concept="1jxXqW" id="7YjSMFlzo6z" role="37wK5m" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

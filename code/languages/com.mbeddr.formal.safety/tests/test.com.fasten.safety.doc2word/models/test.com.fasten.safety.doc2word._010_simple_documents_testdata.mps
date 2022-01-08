@@ -15,8 +15,15 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
+        <reference id="2286331641395252233" name="node" index="2NCMaa" />
+      </concept>
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
+        <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
@@ -26,6 +33,13 @@
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <child id="6955693250238922832" name="description" index="3z_lpS" />
+        <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
+      </concept>
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
+      </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
@@ -189,6 +203,27 @@
               <property role="19SUeA" value="Third entry" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="4ziKDEnkSIH">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_100_node_references" />
+    <ref role="G9hjw" node="8rr1id8ph8" resolve="config" />
+    <node concept="3z_lpz" id="4ziKDEnkSII" role="1_0VJ0">
+      <property role="TrG5h" value="config" />
+      <node concept="OjmMv" id="4ziKDEnkSIJ" role="3z_lpS">
+        <node concept="19SGf9" id="4ziKDEnkSIK" role="OjmMu">
+          <node concept="19SUe$" id="4ziKDEnkSIL" role="19SJt6">
+            <property role="19SUeA" value="Example of configuration for mbeddr.doc" />
+          </node>
+        </node>
+      </node>
+      <node concept="2bctqb" id="4ziKDEnkSIM" role="3z_lpT" />
+      <node concept="2NCZwO" id="4ziKDEnkSIN" role="3z_lpI">
+        <node concept="2NCMab" id="4ziKDEnkSIP" role="2NCMaf">
+          <ref role="2NCMaa" node="8rr1id8ph8" resolve="config" />
         </node>
       </node>
     </node>
