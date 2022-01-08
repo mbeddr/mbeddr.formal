@@ -269,6 +269,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -1621,7 +1622,7 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="2w5Gq4Uw23t" role="1B3o_S" />
+      <node concept="3Tmbuc" id="4ziKDEnlIWr" role="1B3o_S" />
       <node concept="3uibUv" id="2N6uepFeHiB" role="3clF45">
         <ref role="3uigEE" to="vgdk:~P" resolve="P" />
       </node>
@@ -2229,7 +2230,7 @@
     <node concept="2tJIrI" id="2w5Gq4UwpdB" role="jymVt" />
     <node concept="2YIFZL" id="1yFmGPnLcLt" role="jymVt">
       <property role="TrG5h" value="createImage" />
-      <node concept="3Tm6S6" id="1yFmGPnLcLu" role="1B3o_S" />
+      <node concept="3Tm6S6" id="4ziKDEnmKdm" role="1B3o_S" />
       <node concept="3cqZAl" id="1yFmGPnLcLv" role="3clF45" />
       <node concept="37vLTG" id="1yFmGPnLcLw" role="3clF46">
         <property role="TrG5h" value="n" />
@@ -2279,9 +2280,8 @@
               <node concept="3cpWsn" id="V7UcT0CDFT" role="3cpWs9">
                 <property role="TrG5h" value="isHeadless" />
                 <node concept="10P_77" id="V7UcT0CDFP" role="1tU5fm" />
-                <node concept="2YIFZM" id="2w5Gq4UvPZC" role="33vP2m">
+                <node concept="1rXfSq" id="3n9jAIZJrOH" role="33vP2m">
                   <ref role="37wK5l" node="7Ubp4TG_kbn" resolve="isHeadlessMode" />
-                  <ref role="1Pybhc" node="2w5Gq4Uv1dA" resolve="CellEditorScreenshoterImageSerializer" />
                 </node>
               </node>
             </node>
@@ -2436,8 +2436,7 @@
                       </node>
                       <node concept="3clFbF" id="2w5Gq4UwnQU" role="3cqZAp">
                         <node concept="37vLTI" id="2w5Gq4UwnQW" role="3clFbG">
-                          <node concept="2YIFZM" id="2w5Gq4UvTOx" role="37vLTx">
-                            <ref role="1Pybhc" node="2w5Gq4Uv1dA" resolve="CellEditorScreenshoterImageSerializer" />
+                          <node concept="1rXfSq" id="3n9jAIZJs3z" role="37vLTx">
                             <ref role="37wK5l" node="7SQqK0Fdjw_" resolve="writeImage" />
                             <node concept="37vLTw" id="2w5Gq4UvTOy" role="37wK5m">
                               <ref role="3cqZAo" node="5Pb2U$k6TO3" resolve="cell" />
@@ -3126,6 +3125,13 @@
     </node>
     <node concept="2tJIrI" id="2w5Gq4UvO9L" role="jymVt" />
     <node concept="3Tm1VV" id="2w5Gq4Uv1dB" role="1B3o_S" />
+    <node concept="3UR2Jj" id="3n9jAIZJsC1" role="lGtFl">
+      <node concept="TZ5HA" id="3n9jAIZJsC2" role="TZ5H$">
+        <node concept="1dT_AC" id="3n9jAIZJsC3" role="1dT_Ay">
+          <property role="1dT_AB" value="TODO: Check similarities with com.mbeddr.formal.base.tooling.ui.CellEditorScreenshooter which is able to handle also diagrams." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="1yFmGPnLcNP">
     <property role="TrG5h" value="ImageTrimmer" />
