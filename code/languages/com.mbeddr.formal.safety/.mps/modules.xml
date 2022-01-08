@@ -38,6 +38,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ext/com.mbeddr.formal.safety.stamp.ext.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="hara.stamp" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.doc2word/com.fasten.safety.doc2word.msd" folder="doc2word" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.fmea.sandbox/com.fasten.safety.fmea.sandbox.msd" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.pluginSolution/com.fasten.safety.ft.pluginSolution.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.sandbox/com.fasten.safety.ft.sandbox.msd" folder="ft" />
@@ -57,6 +58,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.web.rt/com.mbeddr.formal.safety.gsn.web.rt.msd" folder="gsn.web" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.web.sandbox/com.mbeddr.formal.safety.gsn.web.sandbox.msd" folder="gsn.web" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.stamp.sandbox/com.mbeddr.formal.safety.stamp.sandbox.msd" folder="hara.stamp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.safety.doc2word/test.com.fasten.safety.doc2word.msd" folder="doc2word" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.safety.ft.xfta/test.com.fasten.safety.ft.xfta.msd" folder="ft.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.formal.safety.stamp/test.com.mbeddr.formal.safety.stamp.msd" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/tests/test.fasten.safety.hiphops/test.fasten.safety.hiphops.msd" folder="fmea_hiphops.tests" />
