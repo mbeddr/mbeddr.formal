@@ -250,6 +250,7 @@
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -719,8 +720,11 @@
                   <node concept="liA8E" id="4ziKDEngs0h" role="2OqNvi">
                     <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="3cpWs3" id="4ziKDEngsGr" role="37wK5m">
-                      <node concept="37vLTw" id="4ziKDEngsIr" role="3uHU7w">
-                        <ref role="3cqZAo" node="48FvRI$$ELi" resolve="segments" />
+                      <node concept="2OqwBi" id="4ziKDEnkKR6" role="3uHU7w">
+                        <node concept="37vLTw" id="4ziKDEngsIr" role="2Oq$k0">
+                          <ref role="3cqZAo" node="48FvRI$$ELi" resolve="segments" />
+                        </node>
+                        <node concept="39bAoz" id="4ziKDEnkL30" role="2OqNvi" />
                       </node>
                       <node concept="Xl_RD" id="4ziKDEngsbU" role="3uHU7B">
                         <property role="Xl_RC" value="segments: " />
@@ -863,14 +867,14 @@
                 </node>
                 <node concept="3eOVzh" id="48FvRI$$WXS" role="1Dwp0S">
                   <node concept="3cpWsd" id="48FvRI$_cPf" role="3uHU7w">
-                    <node concept="3cmrfG" id="48FvRI$_cPt" role="3uHU7w">
-                      <property role="3cmrfH" value="2" />
-                    </node>
                     <node concept="2OqwBi" id="48FvRI$$ZfC" role="3uHU7B">
                       <node concept="37vLTw" id="48FvRI$$X4R" role="2Oq$k0">
                         <ref role="3cqZAo" node="48FvRI$$ELi" resolve="segments" />
                       </node>
                       <node concept="1Rwk04" id="48FvRI$_6EK" role="2OqNvi" />
+                    </node>
+                    <node concept="3cmrfG" id="4ziKDEnkKEN" role="3uHU7w">
+                      <property role="3cmrfH" value="3" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="48FvRI$$Wmq" role="3uHU7B">
@@ -955,6 +959,30 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4ziKDEnkQ9M" role="3cqZAp">
+          <node concept="3cpWsn" id="4ziKDEnkQ9N" role="3cpWs9">
+            <property role="TrG5h" value="witnessFile" />
+            <node concept="3uibUv" id="4ziKDEnkQ9O" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="4ziKDEnkQrm" role="33vP2m">
+              <node concept="1pGfFk" id="4ziKDEnkQZC" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="4ziKDEnkR5y" role="37wK5m">
+                  <ref role="3cqZAo" node="4ziKDEneinH" resolve="witnessDirectory" />
+                </node>
+                <node concept="2OqwBi" id="4ziKDEnkRu1" role="37wK5m">
+                  <node concept="37vLTw" id="4ziKDEnkRhx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4ziKDEnei2v" resolve="newFile" />
+                  </node>
+                  <node concept="liA8E" id="4ziKDEnkSem" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4ziKDEnfxm9" role="3cqZAp">
           <node concept="2YIFZM" id="4ziKDEnfx$B" role="3clFbG">
             <ref role="37wK5l" to="i4w6:4ziKDEn8YGk" resolve="compare" />
@@ -962,8 +990,8 @@
             <node concept="37vLTw" id="4ziKDEnep1R" role="37wK5m">
               <ref role="3cqZAo" node="4ziKDEnei2v" resolve="newFile" />
             </node>
-            <node concept="37vLTw" id="4ziKDEnet1l" role="37wK5m">
-              <ref role="3cqZAo" node="4ziKDEneinH" resolve="witnessDirectory" />
+            <node concept="37vLTw" id="4ziKDEnkSoA" role="37wK5m">
+              <ref role="3cqZAo" node="4ziKDEnkQ9N" resolve="witnessFile" />
             </node>
           </node>
         </node>
