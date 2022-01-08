@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0" compileInMPS="true">
   <models>
+    <modelRoot contentPath="${module}/lib/moxy/dependencies" type="java_classes">
+      <sourceRoot location="org.eclipse.persistence.asm-2.7.4.jar" />
+      <sourceRoot location="org.eclipse.persistence.core-2.7.4.jar" />
+      <sourceRoot location="org.eclipse.persistence.moxy-2.7.4.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib/moxy" type="java_classes">
+      <sourceRoot location="docx4j-JAXB-MOXy-11.1.3.jar" />
+    </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="antlr-2.7.7.jar" />
       <sourceRoot location="antlr-runtime-3.5.2.jar" />
@@ -32,14 +40,10 @@
       <sourceRoot location="xalan-interpretive-11.0.0.jar" />
       <sourceRoot location="xalan-serializer-11.0.0.jar" />
       <sourceRoot location="xmlgraphics-commons-2.3.jar" />
+      <sourceRoot location="docx4j-diffx-11.1.3.jar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib/moxy/dependencies" type="java_classes">
-      <sourceRoot location="org.eclipse.persistence.asm-2.7.4.jar" />
-      <sourceRoot location="org.eclipse.persistence.core-2.7.4.jar" />
-      <sourceRoot location="org.eclipse.persistence.moxy-2.7.4.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib/moxy" type="java_classes">
-      <sourceRoot location="docx4j-JAXB-MOXy-11.1.3.jar" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="docx4j-diffx-11.1.3.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -82,6 +86,7 @@
     <stubModelEntry path="${module}/lib/xalan-interpretive-11.0.0.jar" />
     <stubModelEntry path="${module}/lib/xalan-serializer-11.0.0.jar" />
     <stubModelEntry path="${module}/lib/xmlgraphics-commons-2.3.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-diffx-11.1.3.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

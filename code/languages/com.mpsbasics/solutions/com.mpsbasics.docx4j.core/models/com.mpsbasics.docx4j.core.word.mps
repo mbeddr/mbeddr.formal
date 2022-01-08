@@ -50,7 +50,7 @@
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="cpcb" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging(com.mpsbasics.docx4j.lib/)" implicit="true" />
+    <import index="cpcb" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging(com.mpsbasics.docx4j.lib/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1118,8 +1118,13 @@
             </node>
             <node concept="liA8E" id="38aFq1j0HX5" role="2OqNvi">
               <ref role="37wK5l" to="vgdk:~PPrBase$PStyle.setVal(java.lang.String)" resolve="setVal" />
-              <node concept="Xl_RD" id="38aFq1j0I6t" role="37wK5m">
-                <property role="Xl_RC" value="heading 1" />
+              <node concept="2OqwBi" id="4ziKDEn7XKU" role="37wK5m">
+                <node concept="37vLTw" id="4ziKDEnfcZW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="38aFq1j0mND" resolve="headingStyle" />
+                </node>
+                <node concept="liA8E" id="4ziKDEn7YeV" role="2OqNvi">
+                  <ref role="37wK5l" to="vgdk:~Style.getStyleId()" resolve="getStyleId" />
+                </node>
               </node>
             </node>
           </node>
@@ -1131,30 +1136,26 @@
             </node>
             <node concept="liA8E" id="38aFq1j0rCk" role="2OqNvi">
               <ref role="37wK5l" to="vgdk:~PPrBase.setPStyle(org.docx4j.wml.PPrBase$PStyle)" resolve="setPStyle" />
-              <node concept="37vLTw" id="38aFq1j0GsL" role="37wK5m">
+              <node concept="37vLTw" id="4ziKDEn7YoF" role="37wK5m">
                 <ref role="3cqZAo" node="38aFq1j0GsI" resolve="style" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="38aFq1j0V0F" role="3cqZAp">
-          <node concept="2OqwBi" id="38aFq1j0WbB" role="3clFbG">
-            <node concept="2OqwBi" id="38aFq1j0Vd_" role="2Oq$k0">
-              <node concept="37vLTw" id="38aFq1j0V0D" role="2Oq$k0">
-                <ref role="3cqZAo" node="38aFq1j0p6J" resolve="p" />
-              </node>
-              <node concept="liA8E" id="38aFq1j0VKT" role="2OqNvi">
-                <ref role="37wK5l" to="vgdk:~P.getContent()" resolve="getContent" />
-              </node>
+          <node concept="2OqwBi" id="38aFq1j0Vd_" role="3clFbG">
+            <node concept="37vLTw" id="38aFq1j0V0D" role="2Oq$k0">
+              <ref role="3cqZAo" node="38aFq1j0p6J" resolve="p" />
             </node>
-            <node concept="liA8E" id="38aFq1j0Zyl" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
-              <node concept="37vLTw" id="38aFq1j0ZWC" role="37wK5m">
+            <node concept="liA8E" id="4ziKDEn5Uya" role="2OqNvi">
+              <ref role="37wK5l" to="vgdk:~P.setPPr(org.docx4j.wml.PPr)" resolve="setPPr" />
+              <node concept="37vLTw" id="4ziKDEn64a9" role="37wK5m">
                 <ref role="3cqZAo" node="38aFq1j0qJk" resolve="ppr" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4ziKDEn6hNp" role="3cqZAp" />
         <node concept="3cpWs8" id="38aFq1j0Jpa" role="3cqZAp">
           <node concept="3cpWsn" id="38aFq1j0Jpb" role="3cpWs9">
             <property role="TrG5h" value="r" />
@@ -1171,6 +1172,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4ziKDEn6wcT" role="3cqZAp" />
         <node concept="3cpWs8" id="38aFq1j0L7E" role="3cqZAp">
           <node concept="3cpWsn" id="38aFq1j0L7F" role="3cpWs9">
             <property role="TrG5h" value="text_" />
@@ -1268,11 +1270,13 @@
         <node concept="17QB3L" id="38aFq1j0mqe" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="38aFq1j0mND" role="3clF46">
-        <property role="TrG5h" value="level" />
-        <node concept="10Oyi0" id="38aFq1j0n2D" role="1tU5fm" />
+        <property role="TrG5h" value="headingStyle" />
+        <node concept="3uibUv" id="4ziKDEnf5zy" role="1tU5fm">
+          <ref role="3uigEE" to="vgdk:~Style" resolve="Style" />
+        </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="38aFq1j0jqz" role="jymVt" />
+    <node concept="2tJIrI" id="4ziKDEn7eQP" role="jymVt" />
     <node concept="2YIFZL" id="2w5Gq4UtAda" role="jymVt">
       <property role="TrG5h" value="addTextParagraph" />
       <node concept="3clFbS" id="2w5Gq4UthIo" role="3clF47">
@@ -5333,6 +5337,22 @@
   <node concept="312cEu" id="xCk$O6mgDu">
     <property role="TrG5h" value="WordNotificationHelper" />
     <property role="3GE5qa" value="" />
+    <node concept="2tJIrI" id="8rr1id982b" role="jymVt" />
+    <node concept="Wx3nA" id="8rr1id97YZ" role="jymVt">
+      <property role="TrG5h" value="wordExporterBalloonGroup" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="8rr1id97YY" role="1B3o_S" />
+      <node concept="3uibUv" id="8rr1id97YV" role="1tU5fm">
+        <ref role="3uigEE" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
+      </node>
+      <node concept="2YIFZM" id="8rr1id97YW" role="33vP2m">
+        <ref role="37wK5l" to="fnpx:~NotificationGroup.balloonGroup(java.lang.String)" resolve="balloonGroup" />
+        <ref role="1Pybhc" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
+        <node concept="Xl_RD" id="8rr1id97YX" role="37wK5m">
+          <property role="Xl_RC" value="Word Exporter" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="xCk$O6miyq" role="jymVt" />
     <node concept="2YIFZL" id="xCk$O6mi_h" role="jymVt">
       <property role="TrG5h" value="showWordExporterNotification" />
@@ -5359,21 +5379,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="xCk$O6mi_k" role="3clF47">
-        <node concept="3cpWs8" id="8rr1id84Kx" role="3cqZAp">
-          <node concept="3cpWsn" id="8rr1id84Ky" role="3cpWs9">
-            <property role="TrG5h" value="balloonGroup" />
-            <node concept="3uibUv" id="8rr1id84JX" role="1tU5fm">
-              <ref role="3uigEE" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
-            </node>
-            <node concept="2YIFZM" id="8rr1id84Kz" role="33vP2m">
-              <ref role="37wK5l" to="fnpx:~NotificationGroup.balloonGroup(java.lang.String)" resolve="balloonGroup" />
-              <ref role="1Pybhc" to="fnpx:~NotificationGroup" resolve="NotificationGroup" />
-              <node concept="Xl_RD" id="8rr1id84K$" role="37wK5m">
-                <property role="Xl_RC" value="Word Exporter" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="xCk$O6miVt" role="3cqZAp">
           <node concept="3cpWsn" id="xCk$O6miVs" role="3cpWs9">
             <property role="3TUv4t" value="true" />
@@ -5388,8 +5393,8 @@
                   <node concept="liA8E" id="xCk$O6mjh1" role="2OqNvi">
                     <ref role="37wK5l" to="fnpx:~NotificationGroup.getDisplayId()" resolve="getDisplayId" />
                   </node>
-                  <node concept="37vLTw" id="8rr1id856L" role="2Oq$k0">
-                    <ref role="3cqZAo" node="8rr1id84Ky" resolve="balloonGroup" />
+                  <node concept="37vLTw" id="8rr1id9895" role="2Oq$k0">
+                    <ref role="3cqZAo" node="8rr1id97YZ" resolve="wordExporterBalloonGroup" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="xCk$O6mj3Q" role="37wK5m">
@@ -5446,6 +5451,97 @@
       <node concept="3cqZAl" id="xCk$O6mi_6" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="xCk$O6mgDv" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4ziKDEneZhV">
+    <property role="3GE5qa" value="facade" />
+    <property role="TrG5h" value="WordStyleFacade" />
+    <node concept="2tJIrI" id="4ziKDEneZj7" role="jymVt" />
+    <node concept="Wx3nA" id="4ziKDEneZs7" role="jymVt">
+      <property role="TrG5h" value="HEADING_1" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4ziKDEneZm1" role="1B3o_S" />
+      <node concept="3uibUv" id="4ziKDEnf0fG" role="1tU5fm">
+        <ref role="3uigEE" to="vgdk:~Style" resolve="Style" />
+      </node>
+      <node concept="1rXfSq" id="4ziKDEnfh5h" role="33vP2m">
+        <ref role="37wK5l" node="4ziKDEn7nqC" resolve="getStyle" />
+        <node concept="Xl_RD" id="4ziKDEnf1rb" role="37wK5m">
+          <property role="Xl_RC" value="Heading1" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4ziKDEnf1IE" role="jymVt">
+      <property role="TrG5h" value="HEADING_2" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4ziKDEnf1IF" role="1B3o_S" />
+      <node concept="3uibUv" id="4ziKDEnf1IG" role="1tU5fm">
+        <ref role="3uigEE" to="vgdk:~Style" resolve="Style" />
+      </node>
+      <node concept="1rXfSq" id="4ziKDEnfh$2" role="33vP2m">
+        <ref role="37wK5l" node="4ziKDEn7nqC" resolve="getStyle" />
+        <node concept="Xl_RD" id="4ziKDEnfhCR" role="37wK5m">
+          <property role="Xl_RC" value="Heading2" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4ziKDEnf1YS" role="jymVt">
+      <property role="TrG5h" value="HEADING_3" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4ziKDEnf1YT" role="1B3o_S" />
+      <node concept="3uibUv" id="4ziKDEnf1YU" role="1tU5fm">
+        <ref role="3uigEE" to="vgdk:~Style" resolve="Style" />
+      </node>
+      <node concept="1rXfSq" id="4ziKDEnfhVg" role="33vP2m">
+        <ref role="37wK5l" node="4ziKDEn7nqC" resolve="getStyle" />
+        <node concept="Xl_RD" id="4ziKDEnfi4U" role="37wK5m">
+          <property role="Xl_RC" value="Heading3" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4ziKDEnf1ZH" role="jymVt">
+      <property role="TrG5h" value="HEADING_4" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4ziKDEnf1ZI" role="1B3o_S" />
+      <node concept="3uibUv" id="4ziKDEnf1ZJ" role="1tU5fm">
+        <ref role="3uigEE" to="vgdk:~Style" resolve="Style" />
+      </node>
+      <node concept="1rXfSq" id="4ziKDEnfiiM" role="33vP2m">
+        <ref role="37wK5l" node="4ziKDEn7nqC" resolve="getStyle" />
+        <node concept="Xl_RD" id="4ziKDEnfinQ" role="37wK5m">
+          <property role="Xl_RC" value="Heading4" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ziKDEnffJZ" role="jymVt" />
+    <node concept="2YIFZL" id="4ziKDEn7nqC" role="jymVt">
+      <property role="TrG5h" value="getStyle" />
+      <node concept="3clFbS" id="4ziKDEn7iLJ" role="3clF47">
+        <node concept="3clFbF" id="4ziKDEn7koh" role="3cqZAp">
+          <node concept="2OqwBi" id="4ziKDEn7kJ$" role="3clFbG">
+            <node concept="2YIFZM" id="4ziKDEn7koj" role="2Oq$k0">
+              <ref role="1Pybhc" to="s1v1:~StyleDefinitionsPart" resolve="StyleDefinitionsPart" />
+              <ref role="37wK5l" to="s1v1:~StyleDefinitionsPart.getKnownStyles()" resolve="getKnownStyles" />
+            </node>
+            <node concept="liA8E" id="4ziKDEn7ljW" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
+              <node concept="37vLTw" id="4ziKDEn7lGA" role="37wK5m">
+                <ref role="3cqZAo" node="4ziKDEn7jGj" resolve="key" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4ziKDEn7jGj" role="3clF46">
+        <property role="TrG5h" value="key" />
+        <node concept="17QB3L" id="4ziKDEn7jGi" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="4ziKDEn7mdi" role="3clF45">
+        <ref role="3uigEE" to="vgdk:~Style" resolve="Style" />
+      </node>
+      <node concept="3Tm1VV" id="4ziKDEn7h1V" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="4ziKDEnffL4" role="jymVt" />
+    <node concept="3Tm1VV" id="4ziKDEneZhW" role="1B3o_S" />
   </node>
 </model>
 
