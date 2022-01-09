@@ -44,6 +44,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -51,6 +52,7 @@
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
@@ -89,6 +91,11 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -141,6 +148,36 @@
           </node>
         </node>
         <node concept="3clFbH" id="38aFq1iY5Oe" role="3cqZAp" />
+        <node concept="3cpWs8" id="7Nwy3y9cY65" role="3cqZAp">
+          <node concept="3cpWsn" id="7Nwy3y9cY66" role="3cpWs9">
+            <property role="TrG5h" value="suggestedFile" />
+            <node concept="3uibUv" id="7Nwy3y9cY67" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="3K4zz7" id="7Nwy3y9cYNs" role="33vP2m">
+              <node concept="37vLTw" id="7Nwy3y9cZ0x" role="3K4E3e">
+                <ref role="3cqZAo" node="38aFq1iY40a" resolve="lastChosenPath" />
+              </node>
+              <node concept="2ShNRf" id="7Nwy3y9cZ4A" role="3K4GZi">
+                <node concept="1pGfFk" id="7Nwy3y9cZxZ" role="2ShVmc">
+                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                  <node concept="37vLTw" id="7Nwy3y9cZBG" role="37wK5m">
+                    <ref role="3cqZAo" node="38aFq1iY40a" resolve="lastChosenPath" />
+                  </node>
+                  <node concept="37vLTw" id="7Nwy3y9d17c" role="37wK5m">
+                    <ref role="3cqZAo" node="7Nwy3y9cXGJ" resolve="suggestedFileName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="7Nwy3y9cYD5" role="3K4Cdx">
+                <node concept="10Nm6u" id="7Nwy3y9cYJY" role="3uHU7w" />
+                <node concept="37vLTw" id="7Nwy3y9cYU9" role="3uHU7B">
+                  <ref role="3cqZAo" node="7Nwy3y9cXGJ" resolve="suggestedFileName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="38aFq1iXWxr" role="3cqZAp">
           <node concept="3cpWsn" id="38aFq1iXWxs" role="3cpWs9">
             <property role="TrG5h" value="jfc" />
@@ -150,7 +187,7 @@
             <node concept="2ShNRf" id="38aFq1iXWQu" role="33vP2m">
               <node concept="1pGfFk" id="38aFq1iXYz6" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JFileChooser.&lt;init&gt;(java.io.File)" resolve="JFileChooser" />
-                <node concept="37vLTw" id="38aFq1iY8PM" role="37wK5m">
+                <node concept="37vLTw" id="7Nwy3y9d9Cd" role="37wK5m">
                   <ref role="3cqZAo" node="38aFq1iY40a" resolve="lastChosenPath" />
                 </node>
               </node>
@@ -166,6 +203,19 @@
               <ref role="37wK5l" to="dxuu:~JFileChooser.setDialogTitle(java.lang.String)" resolve="setDialogTitle" />
               <node concept="Xl_RD" id="38aFq1iYfGq" role="37wK5m">
                 <property role="Xl_RC" value="File to Save" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Nwy3y9d9Yv" role="3cqZAp">
+          <node concept="2OqwBi" id="7Nwy3y9damV" role="3clFbG">
+            <node concept="37vLTw" id="7Nwy3y9d9Yt" role="2Oq$k0">
+              <ref role="3cqZAo" node="38aFq1iXWxs" resolve="jfc" />
+            </node>
+            <node concept="liA8E" id="7Nwy3y9da_n" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JFileChooser.setSelectedFile(java.io.File)" resolve="setSelectedFile" />
+              <node concept="37vLTw" id="7Nwy3y9daMR" role="37wK5m">
+                <ref role="3cqZAo" node="7Nwy3y9cY66" resolve="suggestedFile" />
               </node>
             </node>
           </node>
@@ -259,6 +309,10 @@
       </node>
       <node concept="3Tm1VV" id="38aFq1iY362" role="1B3o_S" />
       <node concept="17QB3L" id="38aFq1iY3yD" role="3clF45" />
+      <node concept="37vLTG" id="7Nwy3y9cXGJ" role="3clF46">
+        <property role="TrG5h" value="suggestedFileName" />
+        <node concept="17QB3L" id="7Nwy3y9cXGI" role="1tU5fm" />
+      </node>
     </node>
     <node concept="3Tm1VV" id="38aFq1iY2vD" role="1B3o_S" />
   </node>
