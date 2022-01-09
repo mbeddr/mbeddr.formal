@@ -12519,7 +12519,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="FASTEN-203.SNAPSHOT_2020-01-09" />
+            <property role="3MwjfP" value="FASTEN-203.SNAPSHOT" />
           </node>
         </node>
       </node>
