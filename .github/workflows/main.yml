@@ -79,6 +79,16 @@ jobs:
         fail_on_failure: true
         report_paths: 'build/**/TEST*.xml'
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish to Github Maven
+      uses: gradle/gradle-build-action@v1.3.3
+      with: 
+        arguments: publish -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        dependencies-cache-exact: true
+        configuration-cache-enabled: true
+        gradle-executable: /home/runner/work/mps-qa/mps-qa/gradlew
     - name: Get Current Time
       id: time
       uses: nanzm/get-time-action@v1.1
