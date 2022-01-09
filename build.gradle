@@ -290,7 +290,7 @@ assemble.dependsOn package_formal
 
 publishing {
     repositories {
-        maven {
+        /*maven {
             url project.publishingRepository
             if (project.hasProperty('nexusUsername')) {
                 credentials {
@@ -298,7 +298,7 @@ publishing {
                     password project.nexusPassword
                 }
             }
-        }
+        }*/
 		maven {
 			name = "GitHubPackages"
 			url = uri("https://maven.pkg.github.com/mbeddr/mbeddr.formal")
