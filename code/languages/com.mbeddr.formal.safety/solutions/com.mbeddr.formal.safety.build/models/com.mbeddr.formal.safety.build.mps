@@ -339,8 +339,8 @@
         <ref role="398BVh" node="42jqVeFkUG2" resolve="mbeddr.formal.home" />
         <node concept="2Ry0Ak" id="51uLzzZ6tyC" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1TD_kqsfX1Q" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2020_2_3" />
+          <node concept="2Ry0Ak" id="7YjSMFl$hT2" role="2Ry0An">
+            <property role="2Ry0Am" value="MPS_2020_3_5" />
           </node>
         </node>
       </node>
@@ -440,7 +440,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2021-08-29" />
+            <property role="3MwjfP" value="2022-01-09" />
           </node>
         </node>
       </node>
@@ -11524,6 +11524,25 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7Nwy3y91sxC" role="3bR31x">
+          <node concept="3LXTmp" id="7Nwy3y91sxD" role="3rtmxm">
+            <node concept="398BVA" id="7Nwy3y91sxE" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="7Nwy3y91sxF" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7Nwy3y91sxG" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.doc2word" />
+                  <node concept="2Ry0Ak" id="7Nwy3y91sxH" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7Nwy3y91sxI" role="3LXTna">
+              <property role="3qWCbO" value="com/fasten/safety/doc2word/plugin/*.png" />
+            </node>
+          </node>
+        </node>
         <node concept="3rtmxn" id="4ziKDEngCD3" role="3bR31x">
           <node concept="3LXTmp" id="4ziKDEngCD4" role="3rtmxm">
             <node concept="398BVA" id="4ziKDEngCD5" role="3LXTmr">
@@ -12492,7 +12511,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20210829" />
+        <property role="hHN3Y" value="20220109" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -12500,7 +12519,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="FASTEN-203.SNAPSHOT" />
+            <property role="3MwjfP" value="FASTEN-203.SNAPSHOT_2020-01-09" />
           </node>
         </node>
       </node>
@@ -12520,10 +12539,10 @@
       <property role="TrG5h" value="mps.home" />
       <node concept="398BVA" id="wUJmWCxY0l" role="398pKh">
         <ref role="398BVh" node="wUJmWCxY0g" resolve="mbeddr.formal.home" />
-        <node concept="2Ry0Ak" id="wUJmWCxY0m" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="7KdgwcVLlqV" role="2Ry0An">
-            <property role="2Ry0Am" value="mps" />
+        <node concept="2Ry0Ak" id="7YjSMFl$i24" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="7Nwy3y94OoE" role="2Ry0An">
+            <property role="2Ry0Am" value="MPS_2020_3_5" />
           </node>
         </node>
       </node>
@@ -12608,7 +12627,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2021-08-29" />
+            <property role="3MwjfP" value="2022-01-09" />
           </node>
         </node>
       </node>
@@ -12947,7 +12966,7 @@
       <node concept="3ZAF1B" id="1TD_kqsGBKs" role="3ZAC$U">
         <node concept="3_J27D" id="1TD_kqsGBKt" role="3ZAF1W">
           <node concept="3Mxwew" id="1TD_kqsGBKu" role="3MwsjC">
-            <property role="3MwjfP" value="2021" />
+            <property role="3MwjfP" value="2022" />
           </node>
         </node>
         <node concept="3_J27D" id="1TD_kqsGBKv" role="3ZAF13">
@@ -13105,9 +13124,9 @@
             </node>
             <node concept="2HvfSZ" id="5MWJzF9DC9u" role="39821P">
               <node concept="398BVA" id="5MWJzF9DC9y" role="2HvfZ0">
-                <ref role="398BVh" node="wUJmWCxY0k" resolve="mps.home" />
+                <ref role="398BVh" node="wUJmWCxY0g" resolve="mbeddr.formal.home" />
                 <node concept="2Ry0Ak" id="4PPhkJT65fy" role="iGT6I">
-                  <property role="2Ry0Am" value=".." />
+                  <property role="2Ry0Am" value="build" />
                   <node concept="2Ry0Ak" id="4PPhkJT65f_" role="2Ry0An">
                     <property role="2Ry0Am" value="jbrDownload" />
                     <node concept="2Ry0Ak" id="7KdgwcVLlqS" role="2Ry0An">
@@ -13167,7 +13186,7 @@
                 </node>
               </node>
               <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
-                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2021.1" />
+                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2022.1" />
               </node>
             </node>
           </node>
