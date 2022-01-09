@@ -164,7 +164,7 @@
   </node>
   <node concept="1_1swa" id="2mjHtwTu97P">
     <property role="yApLE" value="1" />
-    <property role="TrG5h" value="FASTEN_Safety_Tutorial" />
+    <property role="TrG5h" value="FASTEN_Safety_Tutorial_Documentation" />
     <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="2mjHtwTu9dj" role="1_0VJ0">
       <property role="TrG5h" value="Overview" />
@@ -810,7 +810,7 @@
         <node concept="1_0LV8" id="64FnLWQhGm9" role="1_0VJ0">
           <node concept="19SGf9" id="64FnLWQhGma" role="1_0LWR">
             <node concept="19SUe$" id="64FnLWQhGmb" role="19SJt6">
-              <property role="19SUeA" value="Once a pattern is instantiated in an argument, the pattern instance might get additional entities (goals, solutions, ...). To add new entities to a pattern instance, please drag-and-drop goals from the diagram pallette " />
+              <property role="19SUeA" value="Once a pattern is instantiated in an argument, the pattern instance might get additional entities (goals, solutions, ...). To add new entities to a pattern instance, please drag-and-drop goals from the diagram palette " />
             </node>
             <node concept="2vpllh" id="64FnLWQhGmP" role="19SJt6">
               <node concept="19SGf9" id="64FnLWQhGmQ" role="$DsGW">
@@ -820,7 +820,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="64FnLWQhGmS" role="19SJt6">
-              <property role="19SUeA" value=" the pattern instance diagram. Entities from outside of a pattern instance can be moved inside by using the 'Intentions Menu' (alt+enter); similarily, entities from inside pattern instances can be moved outside by using another 'Intention'." />
+              <property role="19SUeA" value=" the pattern instance diagram. Entities from outside of a pattern instance can be moved inside by using the 'Intentions Menu' (alt+enter); similarly, entities from inside pattern instances can be moved outside by using another 'Intention'." />
             </node>
           </node>
         </node>
@@ -854,7 +854,7 @@
         <node concept="1_0LV8" id="64FnLWQhGlL" role="1_0VJ0">
           <node concept="19SGf9" id="64FnLWQhGlM" role="1_0LWR">
             <node concept="19SUe$" id="64FnLWQhGlN" role="19SJt6">
-              <property role="19SUeA" value="Once re-usable entities are defined, they are made available in the &quot;Diagram Pallette&quot;, can be instantiated via drag-and-drop." />
+              <property role="19SUeA" value="Once re-usable entities are defined, they are made available in the &quot;Diagram Palette&quot;, can be instantiated via drag-and-drop." />
             </node>
           </node>
         </node>
@@ -881,7 +881,7 @@
         <node concept="1_0LV8" id="4U3OABz7YAh" role="1_0VJ0">
           <node concept="19SGf9" id="4U3OABz7YAi" role="1_0LWR">
             <node concept="19SUe$" id="4U3OABz7YAj" role="19SJt6">
-              <property role="19SUeA" value="In order to enable advanced consistency checks both intrinsicly on assurance models structure themselves and between the assurance models and the system models, we capture common assurance patterns as higher-level DSL constructs. They contain specialized GSN entities (i.e. specialized goals, strategies, solutions, ...) that extend the standard ones with additional metadata." />
+              <property role="19SUeA" value="In order to enable advanced consistency checks both intrinsically on assurance models structure themselves and between the assurance models and the system models, we capture common assurance patterns as higher-level DSL constructs. They contain specialized GSN entities (i.e. specialized goals, strategies, solutions, ...) that extend the standard ones with additional metadata." />
             </node>
           </node>
         </node>
@@ -909,7 +909,7 @@
         <node concept="1_0LV8" id="3I9hGreJf4w" role="1_0VJ0">
           <node concept="19SGf9" id="3I9hGreJf4x" role="1_0LWR">
             <node concept="19SUe$" id="3I9hGreJf4y" role="19SJt6">
-              <property role="19SUeA" value="Often the evidence is spread accross various documents that are external to FASTEN. In these cases, FASTEN gives the possibility to link solutions to external documents (e.g. pdf, xlxs) by using the " />
+              <property role="19SUeA" value="Often the evidence is spread across various documents that are external to FASTEN. In these cases, FASTEN gives the possibility to link solutions to external documents (e.g. pdf, xlxs) by using the " />
             </node>
             <node concept="28N2ik" id="3I9hGreJf5w" role="19SJt6">
               <node concept="19SGf9" id="3I9hGreJf5x" role="$DsGW">
@@ -1135,12 +1135,12 @@
         <node concept="1_0LV8" id="3I9hGreJfvz" role="1_0VJ0">
           <node concept="19SGf9" id="3I9hGreJfv$" role="1_0LWR">
             <node concept="19SUe$" id="3I9hGreJfv_" role="19SJt6">
-              <property role="19SUeA" value="FASTEN offers tool support for the HiP-HOPS analysis method described in em" />
+              <property role="19SUeA" value="FASTEN offers tool support for the HiP-HOPS analysis method described in " />
             </node>
             <node concept="28N2ik" id="3I9hGreJfvE" role="19SJt6">
               <node concept="19SGf9" id="3I9hGreJfvF" role="$DsGW">
                 <node concept="19SUe$" id="3I9hGreJfvG" role="19SJt6">
-                  <property role="19SUeA" value="&quot;Analysis and synthesis of the behaviour of complex programmable electronic systems in conditions of failure&quot;" />
+                  <property role="19SUeA" value="&quot;Analysis and synthesis of the behavior of complex programmable electronic systems in conditions of failure&quot;" />
                 </node>
               </node>
             </node>
@@ -1203,7 +1203,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="3I9hGreJfSR" role="19SJt6">
-              <property role="19SUeA" value="), the fault tree can be automatically synthethised based on the failure modes of inputs, the failure propagation rules in atomic components, and additional failures originating from within components. " />
+              <property role="19SUeA" value="), the fault tree can be automatically synthetized based on the failure modes of inputs, the failure propagation rules in atomic components, and additional failures originating from within components. " />
             </node>
           </node>
         </node>
@@ -1233,7 +1233,7 @@
     <property role="WqcPg" value="FASTEN.Safe" />
     <node concept="1TaS0h" id="1LeaOOd9Zli" role="30GjaH" />
     <node concept="1_0j5j" id="1LeaOOd9Zlf" role="30Gjbj">
-      <ref role="1_0j5g" node="2mjHtwTu97P" resolve="FASTEN_Safety_Tutorial" />
+      <ref role="1_0j5g" node="2mjHtwTu97P" resolve="FASTEN_Safety_Tutorial_Documentation" />
     </node>
     <node concept="2SbEIf" id="1LeaOOd9Zll" role="30Gjbg">
       <property role="2SbEId" value="img" />
