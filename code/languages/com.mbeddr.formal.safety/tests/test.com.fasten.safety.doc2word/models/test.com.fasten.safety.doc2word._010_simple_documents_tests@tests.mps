@@ -456,6 +456,104 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="2321JT9jM6w" role="1SL9yI">
+      <property role="TrG5h" value="_050_tabular_paragraph_test" />
+      <node concept="3cqZAl" id="2321JT9jM6x" role="3clF45" />
+      <node concept="3clFbS" id="2321JT9jM6y" role="3clF47">
+        <node concept="3cpWs8" id="2321JT9jM6z" role="3cqZAp">
+          <node concept="3cpWsn" id="2321JT9jM6$" role="3cpWs9">
+            <property role="TrG5h" value="documentNodeName" />
+            <node concept="17QB3L" id="2321JT9jM6_" role="1tU5fm" />
+            <node concept="Xl_RD" id="2321JT9jM6A" role="33vP2m">
+              <property role="Xl_RC" value="_050_tabular_paragraph" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2321JT9jM6B" role="3cqZAp">
+          <node concept="3cpWsn" id="2321JT9jM6C" role="3cpWs9">
+            <property role="TrG5h" value="newFile" />
+            <node concept="3uibUv" id="2321JT9jM6D" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2YIFZM" id="2321JT9jM6E" role="33vP2m">
+              <ref role="37wK5l" node="4ziKDEneaF8" resolve="generateWord" />
+              <ref role="1Pybhc" node="4ziKDEneaC3" resolve="MyTestingUtils" />
+              <node concept="1Xw6AR" id="2321JT9jM6F" role="37wK5m">
+                <node concept="1dCxOl" id="2321JT9jM6G" role="1XwpL7">
+                  <property role="1XweGQ" value="r:9d9482af-e942-422d-ba88-55ba18852f77" />
+                  <node concept="1j_P7g" id="2321JT9jM6H" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.fasten.safety.doc2word._010_simple_documents_testdata" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1jxXqW" id="2321JT9jM6I" role="37wK5m" />
+              <node concept="37vLTw" id="2321JT9jM6J" role="37wK5m">
+                <ref role="3cqZAo" node="2321JT9jM6$" resolve="documentNodeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2321JT9jM6K" role="3cqZAp">
+          <node concept="2YIFZM" id="2321JT9jM6L" role="3vwVQn">
+            <ref role="37wK5l" node="4ziKDEnehOS" resolve="checkGeneratedFile" />
+            <ref role="1Pybhc" node="4ziKDEn8YET" resolve="MyDocumentsComparator" />
+            <node concept="37vLTw" id="2321JT9jM6M" role="37wK5m">
+              <ref role="3cqZAo" node="2321JT9jM6C" resolve="newFile" />
+            </node>
+            <node concept="1jxXqW" id="2321JT9jM6N" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2321JT9mejF" role="1SL9yI">
+      <property role="TrG5h" value="_060_external_image_test" />
+      <node concept="3cqZAl" id="2321JT9mejG" role="3clF45" />
+      <node concept="3clFbS" id="2321JT9mejH" role="3clF47">
+        <node concept="3cpWs8" id="2321JT9mejI" role="3cqZAp">
+          <node concept="3cpWsn" id="2321JT9mejJ" role="3cpWs9">
+            <property role="TrG5h" value="documentNodeName" />
+            <node concept="17QB3L" id="2321JT9mejK" role="1tU5fm" />
+            <node concept="Xl_RD" id="2321JT9mejL" role="33vP2m">
+              <property role="Xl_RC" value="_060_external_image" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2321JT9mejM" role="3cqZAp">
+          <node concept="3cpWsn" id="2321JT9mejN" role="3cpWs9">
+            <property role="TrG5h" value="newFile" />
+            <node concept="3uibUv" id="2321JT9mejO" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2YIFZM" id="2321JT9mejP" role="33vP2m">
+              <ref role="37wK5l" node="4ziKDEneaF8" resolve="generateWord" />
+              <ref role="1Pybhc" node="4ziKDEneaC3" resolve="MyTestingUtils" />
+              <node concept="1Xw6AR" id="2321JT9mejQ" role="37wK5m">
+                <node concept="1dCxOl" id="2321JT9mejR" role="1XwpL7">
+                  <property role="1XweGQ" value="r:9d9482af-e942-422d-ba88-55ba18852f77" />
+                  <node concept="1j_P7g" id="2321JT9mejS" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.fasten.safety.doc2word._010_simple_documents_testdata" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1jxXqW" id="2321JT9mejT" role="37wK5m" />
+              <node concept="37vLTw" id="2321JT9mejU" role="37wK5m">
+                <ref role="3cqZAo" node="2321JT9mejJ" resolve="documentNodeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="2321JT9mejV" role="3cqZAp">
+          <node concept="2YIFZM" id="2321JT9mejW" role="3vwVQn">
+            <ref role="37wK5l" node="4ziKDEnehOS" resolve="checkGeneratedFile" />
+            <ref role="1Pybhc" node="4ziKDEn8YET" resolve="MyDocumentsComparator" />
+            <node concept="37vLTw" id="2321JT9mejX" role="37wK5m">
+              <ref role="3cqZAo" node="2321JT9mejN" resolve="newFile" />
+            </node>
+            <node concept="1jxXqW" id="2321JT9mejY" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="3n9jAIZJvr9" role="1SL9yI">
       <property role="TrG5h" value="_100_node_references_test" />
       <node concept="3cqZAl" id="3n9jAIZJvra" role="3clF45" />
@@ -1227,6 +1325,30 @@
                 </node>
                 <node concept="37vLTw" id="4ziKDEn8P06" role="10QFUP">
                   <ref role="3cqZAo" node="4ziKDEneaIf" resolve="project" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2321JT9jUyJ" role="3cqZAp">
+          <node concept="2OqwBi" id="2321JT9jUyG" role="3clFbG">
+            <node concept="10M0yZ" id="2321JT9jUyH" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="2321JT9jUyI" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="2321JT9jVdL" role="37wK5m">
+                <node concept="2OqwBi" id="2321JT9jVum" role="3uHU7w">
+                  <node concept="37vLTw" id="2321JT9jVhw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4ziKDEn8krO" resolve="newFile" />
+                  </node>
+                  <node concept="liA8E" id="2321JT9jVVP" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2321JT9jUFB" role="3uHU7B">
+                  <property role="Xl_RC" value="docx4j file generated: " />
                 </node>
               </node>
             </node>

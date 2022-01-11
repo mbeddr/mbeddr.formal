@@ -291,6 +291,34 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2321JT9iPim" role="3cqZAp">
+          <node concept="2YIFZM" id="2321JT9iPin" role="3clFbG">
+            <ref role="37wK5l" to="3g0o:6fO82$FqF4M" resolve="registerConcept2WordTranslator" />
+            <ref role="1Pybhc" to="3g0o:6fO82$FqF2U" resolve="Concepts2WordSerializerRegistry" />
+            <node concept="35c_gC" id="2321JT9iPio" role="37wK5m">
+              <ref role="35c_gD" to="2c95:4vQSg$ArKJG" resolve="FloatingTableParagraph" />
+            </node>
+            <node concept="2ShNRf" id="2321JT9iPip" role="37wK5m">
+              <node concept="HV5vD" id="2321JT9iPiq" role="2ShVmc">
+                <ref role="HV5vE" to="fmg0:2321JT9ft9I" resolve="FloatingTableParagraphConcept2WordSerializer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2321JT9kKC3" role="3cqZAp">
+          <node concept="2YIFZM" id="2321JT9kKC4" role="3clFbG">
+            <ref role="37wK5l" to="3g0o:6fO82$FqF4M" resolve="registerConcept2WordTranslator" />
+            <ref role="1Pybhc" to="3g0o:6fO82$FqF2U" resolve="Concepts2WordSerializerRegistry" />
+            <node concept="35c_gC" id="2321JT9kKC5" role="37wK5m">
+              <ref role="35c_gD" to="2c95:5yxqZJwyOSj" resolve="ImageParagraph" />
+            </node>
+            <node concept="2ShNRf" id="2321JT9kKC6" role="37wK5m">
+              <node concept="HV5vD" id="2321JT9kKC7" role="2ShVmc">
+                <ref role="HV5vE" to="fmg0:2321JT9k1si" resolve="ImageParagraphConcept2WordSerializer" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="7Nwy3y9c1Ec" role="3cqZAp" />
         <node concept="3clFbF" id="2w5Gq4UspWx" role="3cqZAp">
           <node concept="2YIFZM" id="2w5Gq4UsqRx" role="3clFbG">
