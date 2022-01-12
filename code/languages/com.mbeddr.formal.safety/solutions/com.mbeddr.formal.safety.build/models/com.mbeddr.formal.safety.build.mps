@@ -11735,9 +11735,6 @@
         <node concept="3LEDTy" id="5TezZ1Vejoq" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
         </node>
-        <node concept="3LEDTy" id="2Btqz_w6m7W" role="3LEDUa">
-          <ref role="3LEDTV" node="7he_lUuxic9" resolve="com.mbeddr.formal.safety.req" />
-        </node>
         <node concept="3LEDTy" id="5uFV_KLFhSP" role="3LEDUa">
           <ref role="3LEDTV" node="5uFV_KLFgnB" resolve="com.mbeddr.formal.safety.gsn.external_evidence" />
         </node>
@@ -11799,11 +11796,66 @@
         <node concept="3LEDTy" id="5TezZ1Vejos" role="3LEDUa">
           <ref role="3LEDTV" node="7he_lUurzLh" resolve="com.mbeddr.formal.safety.gsn.ext" />
         </node>
-        <node concept="3LEDTy" id="5TezZ1Vejot" role="3LEDUa">
-          <ref role="3LEDTV" node="7he_lUur$v6" resolve="com.mbeddr.formal.safety.gsn.patterns" />
-        </node>
         <node concept="3LEDTy" id="x1FXqSNXX" role="3LEDUa">
           <ref role="3LEDTV" node="x1FXqSKvD" resolve="com.mbeddr.formal.safety.cae.ext" />
+        </node>
+        <node concept="3LEDTy" id="16Akbu55zO8" role="3LEDUa">
+          <ref role="3LEDTV" node="5uoS5eUXTuN" resolve="com.mbeddr.formal.safety.argument.process" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="16Akbu57rCa" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.gsn.doc.devkit" />
+      <node concept="3LEwk6" id="16Akbu57sKj" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.gsn.doc" />
+        <property role="3LESm3" value="b0b37262-7857-4c92-8e0e-0467c9bc45a6" />
+        <node concept="398BVA" id="16Akbu57sTk" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="16Akbu57tte" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="16Akbu57tSa" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.gsn.doc" />
+              <node concept="2Ry0Ak" id="16Akbu57us3" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.gsn.doc.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="16Akbu57v4e" role="3LEz9a">
+          <ref role="3LEz8N" node="7he_lUuvj8g" resolve="fasten.safety.gsn" />
+        </node>
+        <node concept="3LEDTy" id="16Akbu57v4f" role="3LEDUa">
+          <ref role="3LEDTV" node="4SCnVTcAZiY" resolve="com.mbeddr.formal.safety.gsn.doc" />
+        </node>
+        <node concept="3LEDTM" id="16Akbu57v4g" role="3LEDUa">
+          <ref role="3LEDTN" node="4ziKDEngAys" resolve="com.fasten.safety.doc2word" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="16Akbu57xbL" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.gsn.patterns.devkit" />
+      <node concept="3LEwk6" id="16Akbu57yk2" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.gsn.patterns" />
+        <property role="3LESm3" value="5e597493-feae-41d8-b052-3b0a41743991" />
+        <node concept="398BVA" id="16Akbu57yt3" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="16Akbu57yS0" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="16Akbu57zrT" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.gsn.patterns" />
+              <node concept="2Ry0Ak" id="16Akbu57zZM" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.gsn.patterns.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="16Akbu57$BX" role="3LEz9a">
+          <ref role="3LEz8N" node="7he_lUu$RbI" resolve="fasten.safety.gsn.ext" />
+        </node>
+        <node concept="3LEDTy" id="16Akbu57$BY" role="3LEDUa">
+          <ref role="3LEDTV" node="7he_lUur$v6" resolve="com.mbeddr.formal.safety.gsn.patterns" />
         </node>
       </node>
     </node>

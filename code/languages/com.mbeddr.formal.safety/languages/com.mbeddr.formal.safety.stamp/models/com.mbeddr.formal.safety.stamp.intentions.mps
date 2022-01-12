@@ -172,7 +172,7 @@
             <node concept="3clFbS" id="71GfFl7hLPq" role="1bW5cS">
               <node concept="3clFbF" id="71GfFl7hP0b" role="3cqZAp">
                 <node concept="2YIFZM" id="71GfFl7hP0c" role="3clFbG">
-                  <ref role="37wK5l" to="ztk3:696iakqcN1" resolve="takeScreenshot" />
+                  <ref role="37wK5l" to="ztk3:696iakqcN1" resolve="takeScreenshotAndSaveIntoFile" />
                   <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
                   <node concept="2Sf5sV" id="71GfFl7hP0d" role="37wK5m" />
                 </node>
