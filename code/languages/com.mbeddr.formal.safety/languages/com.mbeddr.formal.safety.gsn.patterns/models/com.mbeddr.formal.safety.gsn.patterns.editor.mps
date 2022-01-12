@@ -204,8 +204,8 @@
     <property role="3GE5qa" value="hazards" />
     <property role="TrG5h" value="HazardMitigatedGoalTextArea" />
     <ref role="1XX52x" to="2qxf:7TjUbLQ4517" resolve="HazardMitigatedGoal" />
-    <node concept="1PE4EZ" id="65Lrkjj21wJ" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu5672$" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="65Lrkjj21wb" role="2wV5jI">
       <node concept="3EZMnI" id="65Lrkjj21wc" role="3EZMnx">
@@ -274,16 +274,16 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
-    <node concept="1PE4EZ" id="65Lrkjj2yoU" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu5673f" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
   </node>
   <node concept="PKFIW" id="3Ngc4zVgJSx">
     <property role="3GE5qa" value="cbd" />
     <property role="TrG5h" value="CBDRefinmentCheckGoalTextArea" />
     <ref role="1XX52x" to="2qxf:6rlO$dpKGs6" resolve="CBDRefinementCheckGoal" />
-    <node concept="1PE4EZ" id="3Ngc4zVgJSz" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu566Ne" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVgJSG" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVgJSH" role="3EZMnx">
@@ -313,8 +313,8 @@
     <property role="3GE5qa" value="cbd" />
     <property role="TrG5h" value="CBDImplementationCorrectnessGoalTextArea" />
     <ref role="1XX52x" to="2qxf:2sg$KXfV8Ya" resolve="CBDImplementationCorrectnessGoal" />
-    <node concept="1PE4EZ" id="3Ngc4zVgTce" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu566Nb" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVgTcn" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVgTco" role="3EZMnx">
@@ -344,8 +344,8 @@
     <property role="3GE5qa" value="cbd" />
     <property role="TrG5h" value="CBDAGCompatibilityGoalTextArea" />
     <ref role="1XX52x" to="2qxf:2sg$KXfUUbh" resolve="CBDAGCompatibilityGoal" />
-    <node concept="1PE4EZ" id="3Ngc4zVgTdo" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu566N8" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVgTdx" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVgTdy" role="3EZMnx">
@@ -375,8 +375,8 @@
     <property role="3GE5qa" value="cbd" />
     <property role="TrG5h" value="CBDStrategyTextArea" />
     <ref role="1XX52x" to="2qxf:6rlO$dpJSTC" resolve="CBDStrategy" />
-    <node concept="1PE4EZ" id="3Ngc4zVhb89" role="1PM95z">
-      <ref role="1PE7su" to="g35p:3Ngc4zVhb40" resolve="StrategyTextArea" />
+    <node concept="1PE4EZ" id="16Akbu566Nh" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVhb9r" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVhb9s" role="3EZMnx">
@@ -406,8 +406,8 @@
     <property role="3GE5qa" value="hazards" />
     <property role="TrG5h" value="ArgumentOverHazardsStrategyTextArea" />
     <ref role="1XX52x" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
-    <node concept="1PE4EZ" id="3Ngc4zVhAxd" role="1PM95z">
-      <ref role="1PE7su" to="g35p:3Ngc4zVhb40" resolve="StrategyTextArea" />
+    <node concept="1PE4EZ" id="16Akbu55QoW" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVhAzl" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVhAzm" role="3EZMnx">
@@ -437,8 +437,8 @@
     <property role="3GE5qa" value="requirements" />
     <property role="TrG5h" value="ArgumentOverRequirementsStrategyTextArea" />
     <ref role="1XX52x" to="2qxf:1$M4_qbW4nS" resolve="ArgumentOverRequirementsStrategy" />
-    <node concept="1PE4EZ" id="3Ngc4zVhAAl" role="1PM95z">
-      <ref role="1PE7su" to="g35p:3Ngc4zVhb40" resolve="StrategyTextArea" />
+    <node concept="1PE4EZ" id="16Akbu566N5" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVhACt" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVhACu" role="3EZMnx">
@@ -504,8 +504,8 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
-    <node concept="1PE4EZ" id="1Y8zh0lZjUH" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu5673a" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
   </node>
   <node concept="PKFIW" id="1Y8zh0lZjTE">
@@ -535,8 +535,8 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
-    <node concept="1PE4EZ" id="1Y8zh0lZjUJ" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu5673c" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
   </node>
   <node concept="PKFIW" id="1Y8zh0lZjUp">
@@ -582,8 +582,8 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
-    <node concept="1PE4EZ" id="1Y8zh0lZjUL" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+    <node concept="1PE4EZ" id="16Akbu566UD" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
   </node>
   <node concept="24kQdi" id="1FyWEdvJZ_L">
