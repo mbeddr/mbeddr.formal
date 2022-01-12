@@ -2,7 +2,6 @@
 <dev-kit name="fasten.safety.gsn" uuid="b64463ba-ae31-4cf7-be7b-afc13cab4daa">
   <exported-language name="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" />
   <exported-language name="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" />
-  <exported-language name="434b2bfb-bd7a-47c9-bced-b445035e6d96(com.mbeddr.formal.safety.req)" />
   <exported-language name="5e7ffa70-8e23-49f4-8c13-a887bba14c36(com.mbeddr.formal.safety.gsn.external_evidence)" />
   <exported-language name="eb32334c-372a-488f-ba9b-e549a59115e9(com.mbeddr.formal.safety.cae)" />
   <exported-language name="402c6c59-bdb3-47fc-8dfa-74ab35e75274(com.mbeddr.formal.safety.cae.external_evidence)" />
