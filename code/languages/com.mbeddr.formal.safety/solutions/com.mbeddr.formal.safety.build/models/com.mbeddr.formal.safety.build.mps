@@ -811,11 +811,17 @@
       <node concept="m$f5U" id="7he_lUuvms1" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvh8_" resolve="fasten.safety.gsn.devkit" />
       </node>
-      <node concept="m$f5U" id="4eD_5l3mOpY" role="m$_yh">
-        <ref role="m$f5T" node="4eD_5l3mKZ4" resolve="fasten.safety.gsn.confidence.devkit" />
-      </node>
       <node concept="m$f5U" id="7he_lUu$WCt" role="m$_yh">
         <ref role="m$f5T" node="7he_lUu$RbH" resolve="fasten.safety.gsn.ext.devkit" />
+      </node>
+      <node concept="m$f5U" id="16Akbu5euVW" role="m$_yh">
+        <ref role="m$f5T" node="16Akbu57rCa" resolve="fasten.safety.gsn.doc.devkit" />
+      </node>
+      <node concept="m$f5U" id="16Akbu5evee" role="m$_yh">
+        <ref role="m$f5T" node="16Akbu57xbL" resolve="fasten.safety.gsn.patterns.devkit" />
+      </node>
+      <node concept="m$f5U" id="4eD_5l3mOpY" role="m$_yh">
+        <ref role="m$f5T" node="4eD_5l3mKZ4" resolve="fasten.safety.gsn.confidence.devkit" />
       </node>
       <node concept="m$f5U" id="7he_lUu$WTn" role="m$_yh">
         <ref role="m$f5T" node="7he_lUu$SN2" resolve="fasten.safety.gsn.formal.devkit" />
