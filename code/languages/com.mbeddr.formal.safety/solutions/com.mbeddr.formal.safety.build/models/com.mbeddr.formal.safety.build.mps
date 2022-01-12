@@ -12032,6 +12032,9 @@
         <node concept="3LEz8M" id="4eD_5l3mUPj" role="3LEz9a">
           <ref role="3LEz8N" node="4eD_5l3mRuY" resolve="fasten.safety.ft" />
         </node>
+        <node concept="3LEDTy" id="16Akbu5cbIl" role="3LEDUa">
+          <ref role="3LEDTV" node="7he_lUuxic9" resolve="com.mbeddr.formal.safety.req" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="1FlxJGBMsrc" role="3989C9">
