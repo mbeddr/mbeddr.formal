@@ -56,7 +56,6 @@
         <module reference="091b20ea-7bf0-41d6-8e6e-4460a9bd8121(com.fasten.safety.ft.xfta_gen)" version="0" />
         <module reference="0940b90d-aea1-4339-be5b-c8084d7ead33(com.fasten.safety.ft.xfta_gen#01)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-        <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -112,7 +111,6 @@
     <module reference="091b20ea-7bf0-41d6-8e6e-4460a9bd8121(com.fasten.safety.ft.xfta_gen)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>

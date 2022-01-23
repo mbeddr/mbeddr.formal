@@ -56,7 +56,6 @@
         <module reference="24aa32c5-8513-4a94-a289-04392bead64e(com.mbeddr.formal.req.arch)" version="0" />
         <module reference="8f9c748a-fa8e-4abe-8f0f-ffaae80656cf(com.mbeddr.formal.req.arch#01)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-        <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -122,7 +121,6 @@
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)</extendedLanguage>

@@ -54,6 +54,7 @@
         <property id="927724900262398947" name="heapSize" index="2_GNG2" />
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
+        <property id="1476884141929960215" name="compilerOptions" index="1amA5q" />
       </concept>
       <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
         <child id="2750015747481074432" name="path" index="2HvfZ0" />
@@ -562,6 +563,7 @@
       <property role="2_GNG2" value="6096" />
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
+      <property role="1amA5q" value="-encoding UTF-8" />
     </node>
     <node concept="1wNqPr" id="3gmMi5swRKS" role="3989C9">
       <property role="1wNuhe" value="true" />
@@ -2094,9 +2096,9 @@
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5vMnn5IVy$0" role="3bR37C">
-          <node concept="3bR9La" id="5vMnn5IVy$1" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+        <node concept="1SiIV0" id="2yeAANTjW$z" role="3bR37C">
+          <node concept="1Busua" id="2yeAANTjW$$" role="1SiIV1">
+            <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>
