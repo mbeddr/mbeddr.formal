@@ -2522,35 +2522,6 @@
             <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
-        <node concept="1yeLz9" id="7he_lUumLtm" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.req.tl_patterns#01" />
-          <property role="3LESm3" value="f80cf969-3988-4554-b28c-f5039d95cf7a" />
-          <node concept="1BupzO" id="5TezZ1Vej6w" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="5TezZ1Vej6x" role="1HemKq">
-              <node concept="398BVA" id="5TezZ1Vej6j" role="3LXTmr">
-                <ref role="398BVh" node="7he_lUumG5e" resolve="mbeddr.formal.req.code" />
-                <node concept="2Ry0Ak" id="5TezZ1Vej6k" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="5TezZ1Vej6l" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.formal.req.tl_patterns" />
-                    <node concept="2Ry0Ak" id="5TezZ1Vej6m" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="5TezZ1Vej6n" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="5TezZ1Vej6y" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="7he_lUumLYB" role="3bR37C">
           <node concept="3bR9La" id="7he_lUumLYC" role="1SiIV1">
             <ref role="3bR37D" node="42jqVeFkUun" resolve="com.mbeddr.formal.base.expressions" />
@@ -13388,7 +13359,7 @@
               <ref role="3_I8Xa" to="al5i:64SK4bcOF5o" resolve="com.mbeddr.mpsutil.suppresswarning" />
             </node>
             <node concept="3_I8Xc" id="5cnt3YQ$C4w" role="39821P">
-              <ref role="3_I8Xa" to="90a9:2OJNL7Em24Q" resolve="de.60.mps.libs" />
+              <ref role="3_I8Xa" to="90a9:2OJNL7Em24Q" resolve="de.q60.mps.collections.libs" />
             </node>
             <node concept="3_I8Xc" id="1uZbIJyDDrK" role="39821P">
               <ref role="3_I8Xa" to="90a9:2NTGYE$JTHj" resolve="com.dslfoundry.plaintextgen" />

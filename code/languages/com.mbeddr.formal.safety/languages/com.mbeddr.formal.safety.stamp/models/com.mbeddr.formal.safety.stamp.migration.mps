@@ -104,7 +104,7 @@
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -242,7 +242,9 @@
                   <ref role="3cqZAo" node="1FMyjUP85RU" resolve="crtModel" />
                 </node>
                 <node concept="2RRcyG" id="1FMyjUP8707" role="2OqNvi">
-                  <ref role="2RRcyH" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
+                  <node concept="chp4Y" id="56SxUJ9miOg" role="3MHsoP">
+                    <ref role="cht4Q" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
+                  </node>
                 </node>
               </node>
             </node>

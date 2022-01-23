@@ -180,12 +180,15 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -414,7 +417,9 @@
                   <ref role="3cqZAo" node="4eD_5l39LQ5" resolve="crtModel" />
                 </node>
                 <node concept="2RRcyG" id="4eD_5l39MkF" role="2OqNvi">
-                  <ref role="2RRcyH" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  <node concept="chp4Y" id="56SxUJ9miOi" role="3MHsoP">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
                 </node>
               </node>
             </node>
