@@ -1707,9 +1707,9 @@
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6hyv0iVPlIQ" role="3bR37C">
-          <node concept="3bR9La" id="6hyv0iVPlVG" role="1SiIV1">
-            <ref role="3bR37D" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
+        <node concept="1SiIV0" id="2YeV2d1V0sP" role="3bR37C">
+          <node concept="1Busua" id="2YeV2d1V0sQ" role="1SiIV1">
+            <ref role="1Busuk" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>

@@ -563,7 +563,7 @@
       <property role="2_GNG2" value="6096" />
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
-      <property role="1amA5q" value="-encoding UTF-8" />
+      <property role="1amA5q" value="-verbose" />
     </node>
     <node concept="1wNqPr" id="3gmMi5swRKS" role="3989C9">
       <property role="1wNuhe" value="true" />
