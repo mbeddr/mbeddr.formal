@@ -163,7 +163,7 @@
   </registry>
   <node concept="24kQdi" id="3Jn$RV31nMw">
     <property role="3GE5qa" value="odd_parameter" />
-    <ref role="1XX52x" to="u2ih:3Jn$RV31nMt" resolve="ODDParameter" />
+    <ref role="1XX52x" to="u2ih:3Jn$RV31nMt" resolve="ODDAttribute" />
     <node concept="3EZMnI" id="3Jn$RV31q$s" role="2wV5jI">
       <node concept="2iRkQZ" id="3Jn$RV31q$t" role="2iSdaV" />
       <node concept="3EZMnI" id="3Jn$RV31nMy" role="3EZMnx">
@@ -220,7 +220,7 @@
   </node>
   <node concept="24kQdi" id="3Jn$RV31p8P">
     <property role="3GE5qa" value="odd_parameter" />
-    <ref role="1XX52x" to="u2ih:3Jn$RV31p8M" resolve="ODDParameterDimension" />
+    <ref role="1XX52x" to="u2ih:3Jn$RV31p8M" resolve="ODDAttributeDimension" />
     <node concept="3EZMnI" id="3Jn$RV31p8R" role="2wV5jI">
       <node concept="3F0ifn" id="3Jn$RV31p8Y" role="3EZMnx">
         <property role="3F0ifm" value="dimension:" />
@@ -426,7 +426,7 @@
   </node>
   <node concept="24kQdi" id="1wKSXwECALv">
     <property role="3GE5qa" value="odd_parameter" />
-    <ref role="1XX52x" to="u2ih:1wKSXwECACA" resolve="ODDParameterWordRef" />
+    <ref role="1XX52x" to="u2ih:1wKSXwECACA" resolve="ODDAttributeWordRef" />
     <node concept="3EZMnI" id="1wKSXwECAL_" role="2wV5jI">
       <node concept="PMmxH" id="1wKSXwECALK" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -461,7 +461,7 @@
   </node>
   <node concept="24kQdi" id="NY_g42e1PO">
     <property role="3GE5qa" value="odd_parameter" />
-    <ref role="1XX52x" to="u2ih:NY_g42e1PC" resolve="ODDParameterDimensionWordRef" />
+    <ref role="1XX52x" to="u2ih:NY_g42e1PC" resolve="ODDAttributeDimensionWordRef" />
     <node concept="3EZMnI" id="NY_g42e1PQ" role="2wV5jI">
       <node concept="PMmxH" id="NY_g42e1PR" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
