@@ -4,7 +4,7 @@ name: FASTEN_CI
 on: [push, pull_request]
 
 env:
-  MPS_VER: "2020.3"
+  MPS_VER: "2021.1"
   GITHUB_ACTOR: ${{ github.actor }}
   GITHUB_TOKEN: ${{ secrets.FASTEN_GITHUB_PKG_REGISTRY }}
 
@@ -98,8 +98,8 @@ jobs:
     - name: Archive distribution
       uses: actions/upload-artifact@v2
       with:
-        name: fasten-distribution-2020.3-${{ steps.time.outputs.time }}
-        path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-2020.3-SNAPSHOT.zip
+        name: fasten-distribution-2021.1-${{ steps.time.outputs.time }}
+        path: build/artifacts/com.mbeddr.formal.safetyDistribution/fasten-2021.1-SNAPSHOT.zip
 
 
   build_fasten_assurance_package:
