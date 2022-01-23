@@ -307,9 +307,6 @@
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
-    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1185281562363" name="jetbrains.mps.lang.typesystem.structure.RuntimeTypeVariable" flags="in" index="3SilvC" />
-    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
@@ -2316,9 +2313,7 @@
           <node concept="3cpWsn" id="6J9WjHyB9Ra" role="3cpWs9">
             <property role="TrG5h" value="firstLine" />
             <node concept="A3Dl8" id="6J9WjHyB842" role="1tU5fm">
-              <node concept="3SilvC" id="6J9WjHyB843" role="A3Ik2">
-                <property role="TrG5h" value="string" />
-              </node>
+              <node concept="17QB3L" id="4c4swlZ0ua1" role="A3Ik2" />
             </node>
             <node concept="2OqwBi" id="6J9WjHyB9Rb" role="33vP2m">
               <node concept="37vLTw" id="6J9WjHyB9Rc" role="2Oq$k0">
