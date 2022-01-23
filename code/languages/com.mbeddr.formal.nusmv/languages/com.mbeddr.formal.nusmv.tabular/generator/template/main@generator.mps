@@ -356,7 +356,7 @@
                 </node>
               </node>
               <node concept="1WS0z7" id="2T3bAwRFTuK" role="lGtFl">
-                <property role="1qytDF" value="indexOfCurrentOutput" />
+                <property role="1qytDF" value="" />
                 <ref role="2rW$FS" node="7Z6$Wo5NJu7" resolve="funValue2Defines" />
                 <node concept="3JmXsc" id="2T3bAwRFTuN" role="3Jn$fo">
                   <node concept="3clFbS" id="2T3bAwRFTuO" role="2VODD2">

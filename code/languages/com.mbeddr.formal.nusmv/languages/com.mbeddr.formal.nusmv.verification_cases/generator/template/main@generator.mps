@@ -64,6 +64,9 @@
         <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
         <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
       </concept>
+      <concept id="2880994019885263148" name="jetbrains.mps.lang.generator.structure.LoopMacroNamespaceAccessor" flags="ng" index="$GB7w">
+        <property id="1501378878163388321" name="variable" index="26SvY3" />
+      </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
@@ -195,9 +198,6 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
-      </concept>
-      <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
-        <property id="7430509679014182818" name="contextVarName" index="1qCSqd" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -461,11 +461,8 @@
                               </node>
                             </node>
                             <node concept="34jXtK" id="4Hts7PYEWgy" role="2OqNvi">
-                              <node concept="2OqwBi" id="4Hts7PYEXhd" role="25WWJ7">
-                                <node concept="1iwH7S" id="4Hts7PYEWSH" role="2Oq$k0" />
-                                <node concept="1qCSth" id="4Hts7PYF1I6" role="2OqNvi">
-                                  <property role="1qCSqd" value="inputIndex" />
-                                </node>
+                              <node concept="$GB7w" id="6J9WjHyDqRc" role="25WWJ7">
+                                <property role="26SvY3" value="1jlY2aid0uu/index" />
                               </node>
                             </node>
                           </node>
@@ -475,7 +472,7 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="4Hts7PYEvaW" role="lGtFl">
-                  <property role="1qytDF" value="inputIndex" />
+                  <property role="1qytDF" value="" />
                   <node concept="3JmXsc" id="4Hts7PYEvaY" role="3Jn$fo">
                     <node concept="3clFbS" id="4Hts7PYEvb0" role="2VODD2">
                       <node concept="3clFbF" id="4Hts7PYEvgc" role="3cqZAp">
@@ -529,11 +526,8 @@
                                 <ref role="1psM6Y" node="48qyILDWkUV" resolve="vc" />
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="4Hts7PYFOfO" role="37wK5m">
-                              <node concept="1iwH7S" id="4Hts7PYFOfP" role="2Oq$k0" />
-                              <node concept="1qCSth" id="4Hts7PYFOfQ" role="2OqNvi">
-                                <property role="1qCSqd" value="currentParameterIndex" />
-                              </node>
+                            <node concept="$GB7w" id="6J9WjHyDqRf" role="37wK5m">
+                              <property role="26SvY3" value="1jlY2aid0uu/index" />
                             </node>
                           </node>
                         </node>
@@ -542,7 +536,7 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="6mm$FLYVpkR" role="lGtFl">
-                  <property role="1qytDF" value="currentParameterIndex" />
+                  <property role="1qytDF" value="" />
                   <ref role="2rW$FS" node="1ZsZb$iJcgr" resolve="param2Definition" />
                   <node concept="3JmXsc" id="6mm$FLYVpkT" role="3Jn$fo">
                     <node concept="3clFbS" id="6mm$FLYVpkV" role="2VODD2">

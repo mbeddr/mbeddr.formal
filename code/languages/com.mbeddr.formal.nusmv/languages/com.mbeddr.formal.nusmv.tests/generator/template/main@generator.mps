@@ -112,6 +112,9 @@
         <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
         <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
       </concept>
+      <concept id="2880994019885263148" name="jetbrains.mps.lang.generator.structure.LoopMacroNamespaceAccessor" flags="ng" index="$GB7w">
+        <property id="1501378878163388321" name="variable" index="26SvY3" />
+      </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -243,9 +246,6 @@
       <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
       </concept>
-      <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
-        <property id="7430509679014182818" name="contextVarName" index="1qCSqd" />
-      </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744245770" name="com.mbeddr.formal.base.expressions.structure.PlusExpression" flags="ng" index="2H9FEB" />
@@ -305,7 +305,7 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -529,11 +529,8 @@
                                 <ref role="1psM6Y" node="48qyILDWkUB" resolve="tc" />
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="mJkiyMDojn" role="37wK5m">
-                              <node concept="1iwH7S" id="mJkiyMDojo" role="2Oq$k0" />
-                              <node concept="1qCSth" id="mJkiyMDojp" role="2OqNvi">
-                                <property role="1qCSqd" value="currentParameterIndex" />
-                              </node>
+                            <node concept="$GB7w" id="6J9WjHyDqR9" role="37wK5m">
+                              <property role="26SvY3" value="1jlY2aid0uu/index" />
                             </node>
                           </node>
                         </node>
@@ -542,7 +539,7 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="6mm$FLYVpkR" role="lGtFl">
-                  <property role="1qytDF" value="currentParameterIndex" />
+                  <property role="1qytDF" value="" />
                   <ref role="2rW$FS" node="1ZsZb$iJcgr" resolve="param2Definition" />
                   <node concept="3JmXsc" id="6mm$FLYVpkT" role="3Jn$fo">
                     <node concept="3clFbS" id="6mm$FLYVpkV" role="2VODD2">
@@ -787,7 +784,9 @@
             <node concept="2OqwBi" id="1ZsZb$iIX0o" role="33vP2m">
               <node concept="1Q6Npb" id="1ZsZb$iIX0p" role="2Oq$k0" />
               <node concept="1j9C0f" id="1ZsZb$iIX0q" role="2OqNvi">
-                <ref role="1j9C0d" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+                <node concept="chp4Y" id="6J9WjHyDqQR" role="3MHPCF">
+                  <ref role="cht4Q" to="fnq2:43FRfGJUEtT" resolve="TestCase" />
+                </node>
               </node>
             </node>
           </node>
