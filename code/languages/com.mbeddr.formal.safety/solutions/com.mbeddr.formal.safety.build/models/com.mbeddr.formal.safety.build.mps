@@ -832,6 +832,9 @@
       <node concept="m$f5U" id="4eD_5l3mUfS" role="m$_yh">
         <ref role="m$f5T" node="4eD_5l3mOyE" resolve="fasten.safety.fmea.devkit" />
       </node>
+      <node concept="m$f5U" id="7jpsyZvv0DW" role="m$_yh">
+        <ref role="m$f5T" node="7jpsyZvuWMd" resolve="fasten.safety.fmea.arch.devkit" />
+      </node>
       <node concept="m$f5U" id="4eD_5l3mTPV" role="m$_yh">
         <ref role="m$f5T" node="4eD_5l3mRuX" resolve="fasten.safety.ft.devkit" />
       </node>
@@ -11950,17 +11953,40 @@
         <node concept="3LEDTy" id="4eD_5l3mQKw" role="3LEDUa">
           <ref role="3LEDTV" node="73rWdFZqzKL" resolve="com.fasten.safety.fmea" />
         </node>
-        <node concept="3LEDTy" id="4eD_5l3mQKx" role="3LEDUa">
-          <ref role="3LEDTV" node="73rWdFZqBpF" resolve="com.fasten.safety.fmea.arch" />
-        </node>
         <node concept="3LEDTy" id="4eD_5l3mQKy" role="3LEDUa">
           <ref role="3LEDTV" node="4eD_5l3aAE2" resolve="com.fasten.safety.hiphops" />
         </node>
-        <node concept="3LEDTy" id="2vOK$QwpJaM" role="3LEDUa">
-          <ref role="3LEDTV" node="2vOK$QwpFPE" resolve="com.fasten.safety.hiphops.arch" />
-        </node>
         <node concept="3LEDTy" id="7e$PM2pdKRv" role="3LEDUa">
           <ref role="3LEDTV" node="7e$PM2p8wVY" resolve="com.fasten.safety.fmea.iso26262" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="7jpsyZvuWMd" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.fmea.arch.devkit" />
+      <node concept="3LEwk6" id="7jpsyZvuXUD" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.fmea.arch" />
+        <property role="3LESm3" value="cc8f24e6-1235-41ad-b4fc-f9b70bfca7d7" />
+        <node concept="398BVA" id="7jpsyZvuY3E" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="7jpsyZvuYuB" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="7jpsyZvuYTz" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.fmea.arch" />
+              <node concept="2Ry0Ak" id="7jpsyZvuZby" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.fmea.arch.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="7jpsyZvuZNH" role="3LEz9a">
+          <ref role="3LEz8N" node="4eD_5l3mOyF" resolve="fasten.safety.fmea" />
+        </node>
+        <node concept="3LEDTy" id="7jpsyZvuZNI" role="3LEDUa">
+          <ref role="3LEDTV" node="73rWdFZqBpF" resolve="com.fasten.safety.fmea.arch" />
+        </node>
+        <node concept="3LEDTy" id="7jpsyZvuZNJ" role="3LEDUa">
+          <ref role="3LEDTV" node="2vOK$QwpFPE" resolve="com.fasten.safety.hiphops.arch" />
         </node>
       </node>
     </node>

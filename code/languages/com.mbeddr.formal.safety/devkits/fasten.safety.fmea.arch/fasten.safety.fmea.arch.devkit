@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.safety.fmea.arch" uuid="cc8f24e6-1235-41ad-b4fc-f9b70bfca7d7">
+  <exported-language name="1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)" />
+  <exported-language name="521724dc-29ef-4d5a-9c15-25f6b680b809(com.fasten.safety.hiphops.arch)" />
+  <extendedDevKits>
+    <extendedDevKit>bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
