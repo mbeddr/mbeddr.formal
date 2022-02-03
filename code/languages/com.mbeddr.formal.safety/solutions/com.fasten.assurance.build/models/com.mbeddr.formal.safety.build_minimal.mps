@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:72cfcab3-f104-4115-bbc7-6a772cf95af2(com.mbeddr.formal.safety.build_minimal)">
+<model ref="r:a9226ef2-0424-4bf6-9d0e-5a67c44389f6(com.mbeddr.formal.safety.build_minimal)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
@@ -746,16 +746,16 @@
       <property role="TrG5h" value="fasten.assurance.build" />
       <node concept="1E1JtA" id="1FlxJGBMtfr" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.formal.safety.build" />
-        <property role="3LESm3" value="b4bbc0a5-248e-4db2-9ddc-4901a463c66c" />
+        <property role="TrG5h" value="com.fasten.assurance.build" />
+        <property role="3LESm3" value="7301161d-854c-45d9-b0d7-121b4fb52625" />
         <node concept="398BVA" id="1FlxJGBMto2" role="3LF7KH">
           <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
           <node concept="2Ry0Ak" id="1FlxJGBMtDe" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="1FlxJGBMtUp" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.formal.safety.build" />
-              <node concept="2Ry0Ak" id="1FlxJGBMub$" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.formal.safety.build.msd" />
+              <property role="2Ry0Am" value="com.fasten.assurance.build" />
+              <node concept="2Ry0Ak" id="gYMUULEZ7f" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasten.assurance.build.msd" />
               </node>
             </node>
           </node>
@@ -796,6 +796,23 @@
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
+          <node concept="3LXTmp" id="gYMUULEZfd" role="1HemKq">
+            <node concept="398BVA" id="gYMUULEZf2" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="gYMUULEZf3" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="gYMUULEZf4" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.assurance.build" />
+                  <node concept="2Ry0Ak" id="gYMUULEZf5" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="gYMUULEZfe" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="7Jv9b4B5bXb" role="3bR31x">
           <node concept="3LXTmp" id="7Jv9b4B5bXc" role="3rtmxm">
@@ -811,6 +828,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="gYMUULEZf0" role="3bR37C">
+          <node concept="3bR9La" id="gYMUULEZf1" role="1SiIV1">
+            <ref role="3bR37D" node="1FlxJGBMtfr" resolve="com.fasten.assurance.build" />
           </node>
         </node>
       </node>

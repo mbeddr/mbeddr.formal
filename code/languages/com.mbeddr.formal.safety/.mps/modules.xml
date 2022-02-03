@@ -41,6 +41,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ext/com.mbeddr.formal.safety.stamp.ext.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="hara.stamp" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.doc2word/com.fasten.safety.doc2word.msd" folder="doc2word" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.fmea.sandbox/com.fasten.safety.fmea.sandbox.msd" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.pluginSolution/com.fasten.safety.ft.pluginSolution.msd" folder="ft" />
