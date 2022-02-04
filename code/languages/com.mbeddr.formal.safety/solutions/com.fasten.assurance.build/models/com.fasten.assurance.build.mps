@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a9226ef2-0424-4bf6-9d0e-5a67c44389f6(com.mbeddr.formal.safety.build_minimal)">
+<model ref="r:a9226ef2-0424-4bf6-9d0e-5a67c44389f6(com.fasten.assurance.build)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
