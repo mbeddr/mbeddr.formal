@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="fasten.requirements" uuid="b0ef168f-6f92-4bd0-82f3-cf0521463683">
   <exported-language name="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" />
-  <exported-language name="83ad0200-6e50-4939-a389-76bf899be11b(com.mbeddr.formal.req.nusmv)" />
   <exported-language name="5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)" />
-  <exported-language name="b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)" />
   <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
-  <exported-language name="0054a0d7-50ff-4b4f-beff-7e9b376d56a1(com.mbeddr.formal.req.tl_patterns.arch)" />
   <exported-language name="65ed2ac6-4499-4751-951e-3819684a4b8d(com.fasten.req.ontology)" />
-  <exported-solutions>
-    <exported-solution>8fe22e59-5111-4d11-87a2-2938e839b2fd(com.fasten.req.ontology.lib)</exported-solution>
-  </exported-solutions>
 </dev-kit>
 

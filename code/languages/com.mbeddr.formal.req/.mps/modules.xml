@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.requirements.formal/fasten.requirements.formal.devkit" folder="lang" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.requirements/fasten.requirements.devkit" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.odd/com.fasten.req.odd.mpl" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.ontology/com.fasten.req.ontology.mpl" folder="lang.ontology" />
