@@ -15,8 +15,6 @@
   <imports>
     <import index="6wa3" ref="r:fe70b1ce-4411-47cc-b7d1-2d3fab0737d6(com.fasten.req.ontology.structure)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
-    <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
-    <import index="lfcg" ref="r:0f6163dd-0b56-4e88-b067-4067979ca8c2(com.fasten.req.odd.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5un2" ref="r:00d6ee44-268c-4818-b3e7-4eecf669c7ee(com.mbeddr.mpsutil.treenotation.styles.editor)" />
@@ -33,6 +31,7 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
@@ -317,7 +316,7 @@
         <property id="5587067268292695547" name="description" index="1VhhnJ" />
         <child id="5587067268292695525" name="insertFunction" index="1VhhnL" />
       </concept>
-      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.InserHandler" flags="ig" index="1XI84t" />
+      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.SimpleInsertFunction" flags="ig" index="1XI84t" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -460,7 +459,7 @@
             <node concept="3clFbF" id="5o42uxigsCl" role="3cqZAp">
               <node concept="2pJPEk" id="5o42uxigsCj" role="3clFbG">
                 <node concept="2pJPED" id="5o42uxigsGc" role="2pJPEn">
-                  <ref role="2pJxaS" to="u2ih:7gUa1Zsy25o" resolve="EmptyLine" />
+                  <ref role="2pJxaS" to="6wa3:84ljAGyZEI" resolve="EmptyLine" />
                 </node>
               </node>
             </node>
@@ -2342,6 +2341,14 @@
     <node concept="2aJ2om" id="4vIVwd75ED2" role="CpUAK">
       <ref role="2$4xQ3" node="4vIVwd75E8L" resolve="COMPACT_PRESENTATION" />
     </node>
+  </node>
+  <node concept="24kQdi" id="84ljAGyZFb">
+    <ref role="1XX52x" to="6wa3:84ljAGyZEI" resolve="EmptyLine" />
+    <node concept="3F0ifn" id="84ljAGyZFd" role="2wV5jI" />
+  </node>
+  <node concept="22mcaB" id="84ljAGyZFE">
+    <ref role="aqKnT" to="6wa3:84ljAGyZEI" resolve="EmptyLine" />
+    <node concept="22hDWj" id="84ljAGyZFF" role="22hAXT" />
   </node>
 </model>
 
