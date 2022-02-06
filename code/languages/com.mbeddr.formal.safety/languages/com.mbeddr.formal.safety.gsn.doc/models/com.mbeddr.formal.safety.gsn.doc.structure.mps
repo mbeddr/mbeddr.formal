@@ -78,6 +78,9 @@
     <node concept="PrWs8" id="2xfNjApoYgP" role="PzmwI">
       <ref role="PrY4T" to="lbo2:2xfNjApoY99" resolve="IGSNDocument" />
     </node>
+    <node concept="PrWs8" id="84ljAGDnAJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5Ac1Q93JxkX">
     <property role="EcuMT" value="6452540484739798333" />
