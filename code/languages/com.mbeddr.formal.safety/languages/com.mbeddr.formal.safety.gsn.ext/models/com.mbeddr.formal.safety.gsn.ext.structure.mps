@@ -9,6 +9,7 @@
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -124,7 +125,7 @@
     <node concept="1TJgyj" id="1qrXfdH1UrR" role="1TKVEi">
       <property role="IQ2ns" value="1629165016568014583" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="patternInstance" />
+      <property role="20kJfa" value="goalStructure" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     </node>
@@ -133,6 +134,9 @@
     </node>
     <node concept="PrWs8" id="6OmQ$5rs7BI" role="PzmwI">
       <ref role="PrY4T" to="py52:6OmQ$5rs7BA" resolve="IHideInTextualNotationGoalStructureElement" />
+    </node>
+    <node concept="PrWs8" id="84ljAGDLxi" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5mW_a0OEuea" resolve="IFASTENHierarchicalStructure" />
     </node>
     <node concept="1TJgyj" id="WKGDODIrUZ" role="1TKVEi">
       <property role="IQ2ns" value="1094571097530678975" />

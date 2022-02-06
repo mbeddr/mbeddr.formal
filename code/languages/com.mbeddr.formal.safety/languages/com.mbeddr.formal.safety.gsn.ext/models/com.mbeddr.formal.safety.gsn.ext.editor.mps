@@ -282,7 +282,7 @@
         <property role="Vb096" value="fLJRk5A/lightGray" />
       </node>
       <node concept="3F1sOY" id="WKGDODO7r2" role="1ytjkN">
-        <ref role="1NtTu8" to="lbo2:1qrXfdH1UrR" resolve="patternInstance" />
+        <ref role="1NtTu8" to="lbo2:1qrXfdH1UrR" resolve="goalStructure" />
       </node>
     </node>
     <node concept="3EZMnI" id="WKGDODNpof" role="6VMZX">

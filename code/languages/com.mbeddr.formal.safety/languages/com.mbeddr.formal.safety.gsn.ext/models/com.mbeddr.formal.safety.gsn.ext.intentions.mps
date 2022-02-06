@@ -335,7 +335,7 @@
             <node concept="2OqwBi" id="5KMthQY6qoM" role="33vP2m">
               <node concept="38Zlrr" id="5KMthQY6qoN" role="2Oq$k0" />
               <node concept="3TrEf2" id="5KMthQY6qoO" role="2OqNvi">
-                <ref role="3Tt5mk" to="lbo2:1qrXfdH1UrR" resolve="patternInstance" />
+                <ref role="3Tt5mk" to="lbo2:1qrXfdH1UrR" resolve="goalStructure" />
               </node>
             </node>
           </node>
@@ -3996,7 +3996,7 @@
                   <node concept="2OqwBi" id="6csJveEOLaZ" role="37wK5m">
                     <node concept="2Sf5sV" id="6csJveEOKMY" role="2Oq$k0" />
                     <node concept="3TrEf2" id="6csJveEOLwe" role="2OqNvi">
-                      <ref role="3Tt5mk" to="lbo2:1qrXfdH1UrR" resolve="patternInstance" />
+                      <ref role="3Tt5mk" to="lbo2:1qrXfdH1UrR" resolve="goalStructure" />
                     </node>
                   </node>
                 </node>
