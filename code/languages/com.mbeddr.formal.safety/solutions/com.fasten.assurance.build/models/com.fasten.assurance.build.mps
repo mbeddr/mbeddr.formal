@@ -3276,6 +3276,11 @@
             <ref role="3bR37D" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="84ljAGF4Ul" role="3bR37C">
+          <node concept="3bR9La" id="84ljAGF4Um" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6hyv0iVPlGu" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3456,11 +3461,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6hyv0iVPlQZ" role="3bR37C">
-          <node concept="3bR9La" id="6hyv0iVPm3Z" role="1SiIV1">
-            <ref role="3bR37D" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6hyv0iVPlR0" role="3bR37C">
           <node concept="3bR9La" id="6hyv0iVPm40" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
@@ -3521,6 +3521,11 @@
         <node concept="1SiIV0" id="x1FXqCZj0" role="3bR37C">
           <node concept="1Busua" id="x1FXqCZj1" role="1SiIV1">
             <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="84ljAGF4V5" role="3bR37C">
+          <node concept="1Busua" id="84ljAGF4V6" role="1SiIV1">
+            <ref role="1Busuk" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
       </node>
@@ -4145,6 +4150,11 @@
             <node concept="3qWCbU" id="4SCnVTcB1wA" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="84ljAGF4Wm" role="3bR37C">
+          <node concept="3bR9La" id="84ljAGF4Wn" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
