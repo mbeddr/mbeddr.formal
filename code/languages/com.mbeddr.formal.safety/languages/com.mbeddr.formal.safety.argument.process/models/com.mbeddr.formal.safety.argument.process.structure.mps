@@ -92,15 +92,15 @@
   </node>
   <node concept="1TIwiD" id="5uoS5eUXEqL">
     <property role="EcuMT" value="6312041527983384241" />
-    <property role="TrG5h" value="ValidState" />
-    <property role="34LRSv" value="valid" />
-    <property role="R4oN_" value="the entity is valid" />
+    <property role="TrG5h" value="VerifiedState" />
+    <property role="34LRSv" value="verified" />
+    <property role="R4oN_" value="the entity is verified" />
     <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" node="5uoS5eUXEqK" resolve="EntityStateBase" />
   </node>
   <node concept="1TIwiD" id="5uoS5eUXErg">
     <property role="EcuMT" value="6312041527983384272" />
-    <property role="TrG5h" value="NeedsVerification" />
+    <property role="TrG5h" value="NeedsVerificationState" />
     <property role="34LRSv" value="needs verification" />
     <property role="R4oN_" value="the entity needs verification" />
     <property role="3GE5qa" value="state" />
@@ -213,6 +213,14 @@
       <property role="20kJfa" value="clause" />
       <ref role="20lvS9" node="3f8ZVRYh460" resolve="StandardClause" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="84ljAGF4_o">
+    <property role="EcuMT" value="145334794181167448" />
+    <property role="3GE5qa" value="state" />
+    <property role="TrG5h" value="DraftState" />
+    <property role="34LRSv" value="draft" />
+    <property role="R4oN_" value="the entity is in draft state" />
+    <ref role="1TJDcQ" node="5uoS5eUXEqK" resolve="EntityStateBase" />
   </node>
 </model>
 
