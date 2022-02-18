@@ -4,12 +4,14 @@
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
+    <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" />
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
@@ -29,6 +31,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
@@ -115,6 +118,14 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1058,6 +1069,42 @@
                   <ref role="cht4Q" to="spwl:1SpkZ1V6gPJ" resolve="IntermediateEvent" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="696iakq7lj">
+    <property role="TrG5h" value="takeScreenshot" />
+    <ref role="2ZfgGC" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+    <node concept="2S6ZIM" id="696iakq7lk" role="2ZfVej">
+      <node concept="3clFbS" id="696iakq7ll" role="2VODD2">
+        <node concept="3clFbF" id="696iakqam3" role="3cqZAp">
+          <node concept="Xl_RD" id="696iakqam2" role="3clFbG">
+            <property role="Xl_RC" value="Take Screenshot" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="696iakq7lm" role="2ZfgGD">
+      <node concept="3clFbS" id="696iakq7ln" role="2VODD2">
+        <node concept="1QHqEQ" id="71GfFl7hLPm" role="3cqZAp">
+          <node concept="1QHqEC" id="71GfFl7hLPo" role="1QHqEI">
+            <node concept="3clFbS" id="71GfFl7hLPq" role="1bW5cS">
+              <node concept="3clFbF" id="696iakqHGD" role="3cqZAp">
+                <node concept="2YIFZM" id="696iakqJQ1" role="3clFbG">
+                  <ref role="37wK5l" to="ztk3:696iakqcN1" resolve="takeScreenshotAndSaveIntoFile" />
+                  <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
+                  <node concept="2Sf5sV" id="696iakqJQL" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="71GfFl7hMbX" role="ukAjM">
+            <node concept="1XNTG" id="71GfFl7hMS9" role="2Oq$k0" />
+            <node concept="liA8E" id="71GfFl7hMmZ" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
