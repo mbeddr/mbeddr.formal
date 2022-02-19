@@ -13,6 +13,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="bewr" ref="r:a5d87024-d7b0-459e-b0ec-a9c089196f41(com.mbeddr.formal.safety.stamp.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="s9pq" ref="r:8ef909e6-5cd8-45b2-9793-5a70f4829a0a(com.mbeddr.formal.safety.gsn.external_evidence.structure)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" implicit="true" />
   </imports>
   <registry>
@@ -23,6 +24,7 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -30,6 +32,10 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -321,6 +327,53 @@
       <property role="20kJfa" value="scenarios" />
       <ref role="20lvS9" to="bewr:6RZi9iiAzbi" resolve="LossScenarios" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5NLmMAKOwwE">
+    <property role="EcuMT" value="6697234355494979626" />
+    <property role="TrG5h" value="ODDSpecificationContext" />
+    <property role="34LRSv" value="ODD Specification Context" />
+    <property role="3GE5qa" value="ml" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$rlpN" resolve="Context" />
+    <node concept="1TJgyi" id="5NLmMAKXdDV" role="1TKVEl">
+      <property role="IQ2nx" value="6697234355497261691" />
+      <property role="TrG5h" value="hashCode" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5NLmMAKPJdP">
+    <property role="EcuMT" value="6697234355495302005" />
+    <property role="3GE5qa" value="ml" />
+    <property role="TrG5h" value="UsedDatasetContext" />
+    <property role="34LRSv" value="Used Dataset Context" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$rlpN" resolve="Context" />
+    <node concept="1TJgyj" id="5NLmMAKWOQQ" role="1TKVEi">
+      <property role="IQ2ns" value="6697234355497160118" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="externalArtifact" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="s9pq:3wuU_o8fDT9" resolve="ExternalEvidenceDocument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5NLmMAKPJdQ">
+    <property role="EcuMT" value="6697234355495302006" />
+    <property role="3GE5qa" value="ml" />
+    <property role="TrG5h" value="DataSufficiencyGoal" />
+    <property role="34LRSv" value="DataSufficiencyGoal" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNtH" resolve="Goal" />
+  </node>
+  <node concept="1TIwiD" id="5NLmMAKTdlL">
+    <property role="EcuMT" value="6697234355496211825" />
+    <property role="3GE5qa" value="ml" />
+    <property role="TrG5h" value="InContextOfODD" />
+    <property role="34LRSv" value="inContextOfODD" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
+  </node>
+  <node concept="1TIwiD" id="5NLmMAKWKxh">
+    <property role="EcuMT" value="6697234355497142353" />
+    <property role="3GE5qa" value="ml" />
+    <property role="TrG5h" value="InContextOfDataset" />
+    <property role="34LRSv" value="inContextOfDataset" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
   </node>
 </model>
 

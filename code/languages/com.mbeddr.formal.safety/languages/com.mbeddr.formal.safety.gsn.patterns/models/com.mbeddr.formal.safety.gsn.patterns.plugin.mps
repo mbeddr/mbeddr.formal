@@ -536,6 +536,34 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5NLmMAKTf1X" role="3cqZAp">
+          <node concept="2OqwBi" id="5NLmMAKTfEL" role="3clFbG">
+            <node concept="37vLTw" id="5NLmMAKTf1V" role="2Oq$k0">
+              <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="5NLmMAKTgIy" role="2OqNvi">
+              <node concept="2ShNRf" id="5NLmMAKTgP3" role="25WWJ7">
+                <node concept="1pGfFk" id="5NLmMAKTCks" role="2ShVmc">
+                  <ref role="37wK5l" node="5NLmMAKToeH" resolve="ConnectionDataSufficiencyGoalToODDSpecificationContext" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5NLmMAKTCuU" role="3cqZAp">
+          <node concept="2OqwBi" id="5NLmMAKTD7I" role="3clFbG">
+            <node concept="37vLTw" id="5NLmMAKTCuS" role="2Oq$k0">
+              <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="5NLmMAKTE3$" role="2OqNvi">
+              <node concept="2ShNRf" id="5NLmMAKTE7N" role="25WWJ7">
+                <node concept="1pGfFk" id="5NLmMAKTEA5" role="2ShVmc">
+                  <ref role="37wK5l" node="5NLmMAKTA1F" resolve="ConnectionDataSufficiencyGoalToUsedDatasetContext" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7kF4CZH_0i2" role="3cqZAp">
           <node concept="37vLTw" id="7kF4CZH_0i0" role="3clFbG">
             <ref role="3cqZAo" node="7kF4CZH$XgM" resolve="res" />
@@ -796,6 +824,500 @@
     <node concept="3uibUv" id="1QoXEbdC5M0" role="1zkMxy">
       <ref role="3uigEE" to="p9qi:7kF4CZH_Khs" resolve="GsnSNodeConnectionBase" />
     </node>
+  </node>
+  <node concept="312cEu" id="5NLmMAKTez2">
+    <property role="3GE5qa" value="connections.verification" />
+    <property role="TrG5h" value="ConnectionDataSufficiencyGoalToODDSpecificationContext" />
+    <node concept="2tJIrI" id="5NLmMAKTeSC" role="jymVt" />
+    <node concept="3clFbW" id="5NLmMAKToeH" role="jymVt">
+      <node concept="3cqZAl" id="5NLmMAKToeJ" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKToeK" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKToeL" role="3clF47">
+        <node concept="XkiVB" id="5NLmMAKToor" role="3cqZAp">
+          <ref role="37wK5l" to="p9qi:7kF4CZH_Kw3" resolve="GsnSNodeConnectionBase" />
+          <node concept="Xl_RD" id="5NLmMAKToos" role="37wK5m">
+            <property role="Xl_RC" value="goal-inContextOf-context" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTpnC" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTpoU" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canCreate" />
+      <node concept="37vLTG" id="5NLmMAKTpoV" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTpoW" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTpoX" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="5NLmMAKTpoY" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTpoZ" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTpp0" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTpp1" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="5NLmMAKTpp2" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="5NLmMAKTpp3" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTpp4" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKTpp5" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKTpp6" role="3cqZAp">
+          <node concept="1Wc70l" id="5NLmMAKTpp7" role="3clFbG">
+            <node concept="2OqwBi" id="5NLmMAKTpp8" role="3uHU7w">
+              <node concept="2OqwBi" id="5NLmMAKTpp9" role="2Oq$k0">
+                <node concept="37vLTw" id="5NLmMAKTppa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5NLmMAKTpoZ" resolve="toNode" />
+                </node>
+                <node concept="2yIwOk" id="5NLmMAKTppb" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="5NLmMAKTt8$" role="2OqNvi">
+                <node concept="chp4Y" id="5NLmMAKTtcM" role="3QVz_e">
+                  <ref role="cht4Q" to="2qxf:5NLmMAKOwwE" resolve="ODDSpecificationContext" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTppe" role="3uHU7B">
+              <node concept="2OqwBi" id="5NLmMAKTppf" role="2Oq$k0">
+                <node concept="37vLTw" id="5NLmMAKTppg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5NLmMAKTpoV" resolve="fromNode" />
+                </node>
+                <node concept="2yIwOk" id="5NLmMAKTpph" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="5NLmMAKTppi" role="2OqNvi">
+                <node concept="chp4Y" id="5NLmMAKTppj" role="3QVz_e">
+                  <ref role="cht4Q" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTppk" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTppl" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTppm" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="create" />
+      <node concept="37vLTG" id="5NLmMAKTppn" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTppo" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTppp" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="5NLmMAKTppq" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTppr" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTpps" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTppt" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="5NLmMAKTppu" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="5NLmMAKTppv" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTppw" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKTppx" role="3clF47">
+        <node concept="3cpWs8" id="5NLmMAKTppy" role="3cqZAp">
+          <node concept="3cpWsn" id="5NLmMAKTppz" role="3cpWs9">
+            <property role="TrG5h" value="gs" />
+            <node concept="3Tqbb2" id="5NLmMAKTpp$" role="1tU5fm">
+              <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTpp_" role="33vP2m">
+              <node concept="37vLTw" id="5NLmMAKTppA" role="2Oq$k0">
+                <ref role="3cqZAo" node="5NLmMAKTppn" resolve="fromNode" />
+              </node>
+              <node concept="2Xjw5R" id="5NLmMAKTppB" role="2OqNvi">
+                <node concept="1xMEDy" id="5NLmMAKTppC" role="1xVPHs">
+                  <node concept="chp4Y" id="5NLmMAKTppD" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5NLmMAKTppE" role="3cqZAp">
+          <node concept="2OqwBi" id="5NLmMAKTppF" role="3clFbG">
+            <node concept="TSZUe" id="5NLmMAKTppG" role="2OqNvi">
+              <node concept="2pJPEk" id="5NLmMAKTppH" role="25WWJ7">
+                <node concept="2pJPED" id="5NLmMAKTppI" role="2pJPEn">
+                  <ref role="2pJxaS" to="2qxf:5NLmMAKTdlL" resolve="InContextOfODD" />
+                  <node concept="2pIpSj" id="5NLmMAKTppJ" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
+                    <node concept="36biLy" id="5NLmMAKTppK" role="28nt2d">
+                      <node concept="1PxgMI" id="5NLmMAKTppL" role="36biLW">
+                        <node concept="chp4Y" id="5NLmMAKTppM" role="3oSUPX">
+                          <ref role="cht4Q" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+                        </node>
+                        <node concept="37vLTw" id="5NLmMAKTppN" role="1m5AlR">
+                          <ref role="3cqZAo" node="5NLmMAKTppn" resolve="fromNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="5NLmMAKTppO" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
+                    <node concept="36biLy" id="5NLmMAKTppP" role="28nt2d">
+                      <node concept="1PxgMI" id="5NLmMAKTppQ" role="36biLW">
+                        <node concept="37vLTw" id="5NLmMAKTppR" role="1m5AlR">
+                          <ref role="3cqZAo" node="5NLmMAKTppr" resolve="toNode" />
+                        </node>
+                        <node concept="chp4Y" id="5NLmMAKTppS" role="3oSUPX">
+                          <ref role="cht4Q" to="2qxf:5NLmMAKOwwE" resolve="ODDSpecificationContext" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTppT" role="2Oq$k0">
+              <node concept="37vLTw" id="5NLmMAKTppU" role="2Oq$k0">
+                <ref role="3cqZAo" node="5NLmMAKTppz" resolve="gs" />
+              </node>
+              <node concept="3Tsc0h" id="5NLmMAKTppV" role="2OqNvi">
+                <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTppW" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTppX" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTppY" role="jymVt">
+      <property role="TrG5h" value="isValidStart" />
+      <node concept="10P_77" id="5NLmMAKTppZ" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTpq0" role="1B3o_S" />
+      <node concept="37vLTG" id="5NLmMAKTpq1" role="3clF46">
+        <property role="TrG5h" value="endpoint" />
+        <node concept="3uibUv" id="5NLmMAKTpq2" role="1tU5fm">
+          <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTpq3" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5NLmMAKTpq4" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKTpq5" role="3cqZAp">
+          <node concept="2OqwBi" id="5NLmMAKTpq6" role="3clFbG">
+            <node concept="2OqwBi" id="5NLmMAKTpq7" role="2Oq$k0">
+              <node concept="2OqwBi" id="5NLmMAKTpq8" role="2Oq$k0">
+                <node concept="37vLTw" id="5NLmMAKTpq9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5NLmMAKTpq1" resolve="endpoint" />
+                </node>
+                <node concept="liA8E" id="5NLmMAKTpqa" role="2OqNvi">
+                  <ref role="37wK5l" to="nkm5:6clvLV1Yg6Z" resolve="getSNode" />
+                </node>
+              </node>
+              <node concept="2yIwOk" id="5NLmMAKTpqb" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="5NLmMAKTpqc" role="2OqNvi">
+              <node concept="chp4Y" id="5NLmMAKTpqd" role="3QVz_e">
+                <ref role="cht4Q" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTpqe" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTpqf" role="jymVt">
+      <property role="TrG5h" value="drawIcon" />
+      <node concept="3cqZAl" id="5NLmMAKTpqg" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTpqh" role="1B3o_S" />
+      <node concept="37vLTG" id="5NLmMAKTpqi" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3uibUv" id="5NLmMAKTpqj" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTpqk" role="3clF46">
+        <property role="TrG5h" value="bounds" />
+        <node concept="3uibUv" id="5NLmMAKTpql" role="1tU5fm">
+          <ref role="3uigEE" to="fbzs:~Rectangle2D" resolve="Rectangle2D" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5NLmMAKTpqm" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKTpqn" role="3cqZAp">
+          <node concept="1rXfSq" id="5NLmMAKTpqo" role="3clFbG">
+            <ref role="37wK5l" to="p9qi:7kF4CZH_UiO" resolve="doDrawIcon" />
+            <node concept="37vLTw" id="5NLmMAKTpqp" role="37wK5m">
+              <ref role="3cqZAo" node="5NLmMAKTpqi" resolve="g" />
+            </node>
+            <node concept="37vLTw" id="5NLmMAKTpqq" role="37wK5m">
+              <ref role="3cqZAo" node="5NLmMAKTpqk" resolve="bounds" />
+            </node>
+            <node concept="Xl_RD" id="5NLmMAKTpqr" role="37wK5m">
+              <property role="Xl_RC" value="O" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTpqs" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTpnL" role="jymVt" />
+    <node concept="3Tm1VV" id="5NLmMAKTez3" role="1B3o_S" />
+    <node concept="3uibUv" id="5NLmMAKToAE" role="1zkMxy">
+      <ref role="3uigEE" to="p9qi:7kF4CZH_Khs" resolve="GsnSNodeConnectionBase" />
+    </node>
+  </node>
+  <node concept="312cEu" id="5NLmMAKTubC">
+    <property role="3GE5qa" value="connections.verification" />
+    <property role="TrG5h" value="ConnectionDataSufficiencyGoalToUsedDatasetContext" />
+    <node concept="3Tm1VV" id="5NLmMAKTubD" role="1B3o_S" />
+    <node concept="3uibUv" id="5NLmMAKTuzF" role="1zkMxy">
+      <ref role="3uigEE" to="p9qi:7kF4CZH_Khs" resolve="GsnSNodeConnectionBase" />
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTu$r" role="jymVt" />
+    <node concept="3clFbW" id="5NLmMAKTA1F" role="jymVt">
+      <node concept="3cqZAl" id="5NLmMAKTA1H" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTA1I" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKTA1J" role="3clF47">
+        <node concept="XkiVB" id="5NLmMAKTBlX" role="3cqZAp">
+          <ref role="37wK5l" to="p9qi:7kF4CZH_Kw3" resolve="GsnSNodeConnectionBase" />
+          <node concept="Xl_RD" id="5NLmMAKTBlY" role="37wK5m">
+            <property role="Xl_RC" value="goal-inContextOf-context" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKT_wh" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTu_k" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canCreate" />
+      <node concept="37vLTG" id="5NLmMAKTu_l" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTu_m" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTu_n" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="5NLmMAKTu_o" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTu_p" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTu_q" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTu_r" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="5NLmMAKTu_s" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="5NLmMAKTu_t" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTu_u" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKTu_v" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKTu_w" role="3cqZAp">
+          <node concept="1Wc70l" id="5NLmMAKTu_x" role="3clFbG">
+            <node concept="2OqwBi" id="5NLmMAKTu_y" role="3uHU7w">
+              <node concept="2OqwBi" id="5NLmMAKTu_z" role="2Oq$k0">
+                <node concept="37vLTw" id="5NLmMAKTu_$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5NLmMAKTu_p" resolve="toNode" />
+                </node>
+                <node concept="2yIwOk" id="5NLmMAKTu__" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="5NLmMAKTu_A" role="2OqNvi">
+                <node concept="chp4Y" id="5NLmMAKTu_B" role="3QVz_e">
+                  <ref role="cht4Q" to="2qxf:5NLmMAKPJdP" resolve="UsedDatasetContext" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTu_C" role="3uHU7B">
+              <node concept="2OqwBi" id="5NLmMAKTu_D" role="2Oq$k0">
+                <node concept="37vLTw" id="5NLmMAKTu_E" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5NLmMAKTu_l" resolve="fromNode" />
+                </node>
+                <node concept="2yIwOk" id="5NLmMAKTu_F" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="5NLmMAKTu_G" role="2OqNvi">
+                <node concept="chp4Y" id="5NLmMAKTu_H" role="3QVz_e">
+                  <ref role="cht4Q" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTu_I" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTu_J" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTu_K" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="create" />
+      <node concept="37vLTG" id="5NLmMAKTu_L" role="3clF46">
+        <property role="TrG5h" value="fromNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTu_M" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTu_N" role="3clF46">
+        <property role="TrG5h" value="fromPort" />
+        <node concept="17QB3L" id="5NLmMAKTu_O" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTu_P" role="3clF46">
+        <property role="TrG5h" value="toNode" />
+        <node concept="3Tqbb2" id="5NLmMAKTu_Q" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTu_R" role="3clF46">
+        <property role="TrG5h" value="toPort" />
+        <node concept="17QB3L" id="5NLmMAKTu_S" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="5NLmMAKTu_T" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTu_U" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKTu_V" role="3clF47">
+        <node concept="3cpWs8" id="5NLmMAKTu_W" role="3cqZAp">
+          <node concept="3cpWsn" id="5NLmMAKTu_X" role="3cpWs9">
+            <property role="TrG5h" value="gs" />
+            <node concept="3Tqbb2" id="5NLmMAKTu_Y" role="1tU5fm">
+              <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTu_Z" role="33vP2m">
+              <node concept="37vLTw" id="5NLmMAKTuA0" role="2Oq$k0">
+                <ref role="3cqZAo" node="5NLmMAKTu_L" resolve="fromNode" />
+              </node>
+              <node concept="2Xjw5R" id="5NLmMAKTuA1" role="2OqNvi">
+                <node concept="1xMEDy" id="5NLmMAKTuA2" role="1xVPHs">
+                  <node concept="chp4Y" id="5NLmMAKTuA3" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5NLmMAKTuA4" role="3cqZAp">
+          <node concept="2OqwBi" id="5NLmMAKTuA5" role="3clFbG">
+            <node concept="TSZUe" id="5NLmMAKTuA6" role="2OqNvi">
+              <node concept="2pJPEk" id="5NLmMAKTuA7" role="25WWJ7">
+                <node concept="2pJPED" id="5NLmMAKTuA8" role="2pJPEn">
+                  <ref role="2pJxaS" to="2qxf:5NLmMAKWKxh" resolve="InContextOfDataset" />
+                  <node concept="2pIpSj" id="5NLmMAKTuA9" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$sIbL" resolve="source" />
+                    <node concept="36biLy" id="5NLmMAKTuAa" role="28nt2d">
+                      <node concept="1PxgMI" id="5NLmMAKTuAb" role="36biLW">
+                        <node concept="chp4Y" id="5NLmMAKTuAc" role="3oSUPX">
+                          <ref role="cht4Q" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+                        </node>
+                        <node concept="37vLTw" id="5NLmMAKTuAd" role="1m5AlR">
+                          <ref role="3cqZAo" node="5NLmMAKTu_L" resolve="fromNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pIpSj" id="5NLmMAKTuAe" role="2pJxcM">
+                    <ref role="2pIpSl" to="py52:3GRi4m$sId6" resolve="target" />
+                    <node concept="36biLy" id="5NLmMAKTuAf" role="28nt2d">
+                      <node concept="1PxgMI" id="5NLmMAKTuAg" role="36biLW">
+                        <node concept="37vLTw" id="5NLmMAKTuAh" role="1m5AlR">
+                          <ref role="3cqZAo" node="5NLmMAKTu_P" resolve="toNode" />
+                        </node>
+                        <node concept="chp4Y" id="5NLmMAKTuAi" role="3oSUPX">
+                          <ref role="cht4Q" to="2qxf:5NLmMAKPJdP" resolve="UsedDatasetContext" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTuAj" role="2Oq$k0">
+              <node concept="37vLTw" id="5NLmMAKTuAk" role="2Oq$k0">
+                <ref role="3cqZAo" node="5NLmMAKTu_X" resolve="gs" />
+              </node>
+              <node concept="3Tsc0h" id="5NLmMAKTuAl" role="2OqNvi">
+                <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTuAm" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTuAn" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTuAo" role="jymVt">
+      <property role="TrG5h" value="isValidStart" />
+      <node concept="10P_77" id="5NLmMAKTuAp" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTuAq" role="1B3o_S" />
+      <node concept="37vLTG" id="5NLmMAKTuAr" role="3clF46">
+        <property role="TrG5h" value="endpoint" />
+        <node concept="3uibUv" id="5NLmMAKTuAs" role="1tU5fm">
+          <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTuAt" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5NLmMAKTuAu" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKTuAv" role="3cqZAp">
+          <node concept="2OqwBi" id="5NLmMAKTuAw" role="3clFbG">
+            <node concept="2OqwBi" id="5NLmMAKTuAx" role="2Oq$k0">
+              <node concept="2OqwBi" id="5NLmMAKTuAy" role="2Oq$k0">
+                <node concept="37vLTw" id="5NLmMAKTuAz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5NLmMAKTuAr" resolve="endpoint" />
+                </node>
+                <node concept="liA8E" id="5NLmMAKTuA$" role="2OqNvi">
+                  <ref role="37wK5l" to="nkm5:6clvLV1Yg6Z" resolve="getSNode" />
+                </node>
+              </node>
+              <node concept="2yIwOk" id="5NLmMAKTuA_" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="5NLmMAKTuAA" role="2OqNvi">
+              <node concept="chp4Y" id="5NLmMAKTuAB" role="3QVz_e">
+                <ref role="cht4Q" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKTuAC" role="jymVt" />
+    <node concept="3clFb_" id="5NLmMAKTuAD" role="jymVt">
+      <property role="TrG5h" value="drawIcon" />
+      <node concept="3cqZAl" id="5NLmMAKTuAE" role="3clF45" />
+      <node concept="3Tm1VV" id="5NLmMAKTuAF" role="1B3o_S" />
+      <node concept="37vLTG" id="5NLmMAKTuAG" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3uibUv" id="5NLmMAKTuAH" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5NLmMAKTuAI" role="3clF46">
+        <property role="TrG5h" value="bounds" />
+        <node concept="3uibUv" id="5NLmMAKTuAJ" role="1tU5fm">
+          <ref role="3uigEE" to="fbzs:~Rectangle2D" resolve="Rectangle2D" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5NLmMAKTuAK" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKTuAL" role="3cqZAp">
+          <node concept="1rXfSq" id="5NLmMAKTuAM" role="3clFbG">
+            <ref role="37wK5l" to="p9qi:7kF4CZH_UiO" resolve="doDrawIcon" />
+            <node concept="37vLTw" id="5NLmMAKTuAN" role="37wK5m">
+              <ref role="3cqZAo" node="5NLmMAKTuAG" resolve="g" />
+            </node>
+            <node concept="37vLTw" id="5NLmMAKTuAO" role="37wK5m">
+              <ref role="3cqZAo" node="5NLmMAKTuAI" resolve="bounds" />
+            </node>
+            <node concept="Xl_RD" id="5NLmMAKTuAP" role="37wK5m">
+              <property role="Xl_RC" value="D" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5NLmMAKTuAQ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5NLmMAKT$Aq" role="jymVt" />
   </node>
 </model>
 

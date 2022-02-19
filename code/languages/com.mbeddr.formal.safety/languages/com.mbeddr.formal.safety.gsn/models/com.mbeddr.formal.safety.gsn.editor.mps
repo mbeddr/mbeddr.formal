@@ -1156,8 +1156,8 @@
         </node>
       </node>
       <node concept="238au4" id="2ccN23odQcf" role="3kqczz">
-        <node concept="3F0ifn" id="2ccN23odQcp" role="2wV5jI">
-          <property role="3F0ifm" value="inContextOf" />
+        <node concept="PMmxH" id="5NLmMAKVT4j" role="2wV5jI">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" node="71GfFl7qVvB" resolve="GSNConnectionTextStyle" />
         </node>
       </node>

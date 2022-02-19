@@ -515,5 +515,19 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5NLmMAKQvtO">
+    <property role="EcuMT" value="6697234355495499636" />
+    <property role="TrG5h" value="ODDWordRef" />
+    <property role="34LRSv" value="@odd" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5NLmMAKQvtP" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5NLmMAKQvtR" role="1TKVEi">
+      <property role="IQ2ns" value="6697234355495499639" />
+      <property role="20kJfa" value="odd" />
+      <ref role="20lvS9" node="3Jn$RV31nMq" resolve="ODD" />
+    </node>
+  </node>
 </model>
 

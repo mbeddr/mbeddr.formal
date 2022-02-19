@@ -21,6 +21,7 @@
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1747,6 +1748,215 @@
     </node>
     <node concept="13hLZK" id="1FyWEdvK1XK" role="13h7CW">
       <node concept="3clFbS" id="1FyWEdvK1XL" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5NLmMAKOwIA">
+    <property role="3GE5qa" value="ml" />
+    <ref role="13h7C2" to="2qxf:5NLmMAKOwwE" resolve="ODDSpecificationContext" />
+    <node concept="13i0hz" id="5NLmMAKTbOP" role="13h7CS">
+      <property role="TrG5h" value="getODD" />
+      <node concept="3Tm1VV" id="5NLmMAKTbOQ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5NLmMAKTbOR" role="3clF45">
+        <ref role="ehGHo" to="u2ih:3Jn$RV31nMq" resolve="ODD" />
+      </node>
+      <node concept="3clFbS" id="5NLmMAKTbOS" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKTbOT" role="3cqZAp">
+          <node concept="2OqwBi" id="5NLmMAKTcUN" role="3clFbG">
+            <node concept="2OqwBi" id="5NLmMAKTbOV" role="2Oq$k0">
+              <node concept="2OqwBi" id="5NLmMAKTbOW" role="2Oq$k0">
+                <node concept="2OqwBi" id="5NLmMAKTbOX" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5NLmMAKTbOY" role="2Oq$k0">
+                    <node concept="13iPFW" id="5NLmMAKTbOZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5NLmMAKTbP0" role="2OqNvi">
+                      <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5NLmMAKTbP1" role="2OqNvi">
+                    <ref role="3TtcxE" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="5NLmMAKTbP2" role="2OqNvi">
+                  <node concept="chp4Y" id="5NLmMAKTbP3" role="v3oSu">
+                    <ref role="cht4Q" to="u2ih:5NLmMAKQvtO" resolve="ODDWordRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="5NLmMAKTbP4" role="2OqNvi" />
+            </node>
+            <node concept="3TrEf2" id="5NLmMAKTdab" role="2OqNvi">
+              <ref role="3Tt5mk" to="u2ih:5NLmMAKQvtR" resolve="odd" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5NLmMAKOx9x" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="5NLmMAKOx9y" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKOx9z" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKOx9$" role="3cqZAp">
+          <node concept="Xl_RD" id="5NLmMAKOx9_" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Checkable ML Data Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5NLmMAKOx9A" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="5NLmMAKOwIB" role="13h7CW">
+      <node concept="3clFbS" id="5NLmMAKOwIC" role="2VODD2">
+        <node concept="3clFbF" id="5NLmMAKRPZD" role="3cqZAp">
+          <node concept="37vLTI" id="5NLmMAKRPZE" role="3clFbG">
+            <node concept="2pJPEk" id="5NLmMAKRPZF" role="37vLTx">
+              <node concept="2pJPED" id="5NLmMAKRPZG" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="5NLmMAKRPZH" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="5NLmMAKRPZI" role="28nt2d">
+                    <node concept="2pJPED" id="5NLmMAKRPZJ" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="5NLmMAKRPZK" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="WxPPo" id="5NLmMAKRPZL" role="28ntcv">
+                          <node concept="Xl_RD" id="5NLmMAKRPZM" role="WxPPp">
+                            <property role="Xl_RC" value="Description of \n operational environment \n" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pJPED" id="5NLmMAKRQB3" role="36be1Z">
+                      <ref role="2pJxaS" to="u2ih:5NLmMAKQvtO" resolve="ODDWordRef" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKRPZS" role="37vLTJ">
+              <node concept="13iPFW" id="5NLmMAKRPZT" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5NLmMAKRPZU" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5NLmMAKPJva">
+    <property role="3GE5qa" value="ml" />
+    <ref role="13h7C2" to="2qxf:5NLmMAKPJdP" resolve="UsedDatasetContext" />
+    <node concept="13i0hz" id="5NLmMAKPJvl" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="5NLmMAKPJvm" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKPJvn" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKPJvo" role="3cqZAp">
+          <node concept="Xl_RD" id="5NLmMAKPJvp" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Checkable ML Data Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5NLmMAKPJvq" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="5NLmMAKPJvb" role="13h7CW">
+      <node concept="3clFbS" id="5NLmMAKPJvc" role="2VODD2">
+        <node concept="3clFbF" id="5NLmMAKTb2Q" role="3cqZAp">
+          <node concept="37vLTI" id="5NLmMAKTb2R" role="3clFbG">
+            <node concept="2pJPEk" id="5NLmMAKTb2S" role="37vLTx">
+              <node concept="2pJPED" id="5NLmMAKTb2T" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="5NLmMAKTb2U" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="5NLmMAKTb2V" role="28nt2d">
+                    <node concept="2pJPED" id="5NLmMAKTb2W" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="5NLmMAKTb2X" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="WxPPo" id="5NLmMAKTb2Y" role="28ntcv">
+                          <node concept="Xl_RD" id="5NLmMAKTb2Z" role="WxPPp">
+                            <property role="Xl_RC" value="Datasets (for development,\n internal test, verification)" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTb30" role="37vLTJ">
+              <node concept="13iPFW" id="5NLmMAKTb31" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5NLmMAKTb32" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5NLmMAKPJvI">
+    <property role="3GE5qa" value="ml" />
+    <ref role="13h7C2" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+    <node concept="13i0hz" id="5NLmMAKPJvT" role="13h7CS">
+      <property role="TrG5h" value="paletteFolderName" />
+      <ref role="13i0hy" to="89jy:71RA3dHxNe3" resolve="paletteFolderName" />
+      <node concept="3Tm1VV" id="5NLmMAKPJvU" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKPJvV" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKPJvW" role="3cqZAp">
+          <node concept="Xl_RD" id="5NLmMAKPJvX" role="3clFbG">
+            <property role="Xl_RC" value="03 Checkable Patterns/Checkable ML Data Pattern" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5NLmMAKPJvY" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="5NLmMAKPJvJ" role="13h7CW">
+      <node concept="3clFbS" id="5NLmMAKPJvK" role="2VODD2">
+        <node concept="3clFbF" id="5NLmMAKTaIb" role="3cqZAp">
+          <node concept="37vLTI" id="5NLmMAKTaIc" role="3clFbG">
+            <node concept="2pJPEk" id="5NLmMAKTaId" role="37vLTx">
+              <node concept="2pJPED" id="5NLmMAKTaIe" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="5NLmMAKTaIf" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="36be1Y" id="5NLmMAKTaIg" role="28nt2d">
+                    <node concept="2pJPED" id="5NLmMAKTaIh" role="36be1Z">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="5NLmMAKTaIi" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="WxPPo" id="5NLmMAKTaIj" role="28ntcv">
+                          <node concept="Xl_RD" id="5NLmMAKTaIk" role="WxPPp">
+                            <property role="Xl_RC" value="The data used to develop and \n verify MLM is sufficient" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKTaIm" role="37vLTJ">
+              <node concept="13iPFW" id="5NLmMAKTaIn" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5NLmMAKTaIo" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5NLmMAKVITN" role="13h7CS">
+      <property role="TrG5h" value="isSourceOfSpecialConnections" />
+      <ref role="13i0hy" to="89jy:7TjUbLQ7E1K" resolve="isSourceOfSpecialConnections" />
+      <node concept="3Tm1VV" id="5NLmMAKVITO" role="1B3o_S" />
+      <node concept="3clFbS" id="5NLmMAKVITT" role="3clF47">
+        <node concept="3clFbF" id="5NLmMAKVJ7Y" role="3cqZAp">
+          <node concept="3clFbT" id="5NLmMAKVJ7X" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5NLmMAKVITU" role="3clF45" />
     </node>
   </node>
 </model>

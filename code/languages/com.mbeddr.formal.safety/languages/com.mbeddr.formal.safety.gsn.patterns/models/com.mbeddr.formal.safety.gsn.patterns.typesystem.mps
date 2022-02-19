@@ -14,6 +14,9 @@
     <import index="7wf3" ref="r:c49134f0-ff6f-4ef4-ad9f-10c1a3f47c1a(com.mbeddr.formal.base.arch.behavior)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
+    <import index="u35n" ref="r:f917b204-e25c-4286-9eae-9081d5f78a78(com.mpsbasics.snode.utils.hashcode)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -23,6 +26,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -33,6 +37,10 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -40,6 +48,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -66,6 +75,7 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -106,6 +116,11 @@
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -125,6 +140,9 @@
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -888,6 +906,99 @@
     <node concept="1YaCAy" id="63UItOi93Tq" role="1YuTPh">
       <property role="TrG5h" value="aohs" />
       <ref role="1YaFvo" to="2qxf:7bxPmtp5iOT" resolve="ArgumentOverHazardsStrategy" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5NLmMAKXdDX">
+    <property role="TrG5h" value="check_ODDSpecificationContext" />
+    <node concept="3clFbS" id="5NLmMAKXdDY" role="18ibNy">
+      <node concept="3cpWs8" id="5NLmMAKXeil" role="3cqZAp">
+        <node concept="3cpWsn" id="5NLmMAKXeim" role="3cpWs9">
+          <property role="TrG5h" value="odd" />
+          <node concept="3Tqbb2" id="5NLmMAKXe8E" role="1tU5fm">
+            <ref role="ehGHo" to="u2ih:3Jn$RV31nMq" resolve="ODD" />
+          </node>
+          <node concept="2OqwBi" id="5NLmMAKXein" role="33vP2m">
+            <node concept="1YBJjd" id="5NLmMAKXeio" role="2Oq$k0">
+              <ref role="1YBMHb" node="5NLmMAKXdE0" resolve="oddSpecificationContext" />
+            </node>
+            <node concept="2qgKlT" id="5NLmMAKXeip" role="2OqNvi">
+              <ref role="37wK5l" to="g8ih:5NLmMAKTbOP" resolve="getODD" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2xdQw9" id="5NLmMAKXtka" role="3cqZAp">
+        <node concept="3cpWs3" id="5NLmMAKXtCK" role="9lYJi">
+          <node concept="2OqwBi" id="5NLmMAKXtWb" role="3uHU7w">
+            <node concept="37vLTw" id="5NLmMAKXtD6" role="2Oq$k0">
+              <ref role="3cqZAo" node="5NLmMAKXeim" resolve="odd" />
+            </node>
+            <node concept="3TrcHB" id="5NLmMAKXudm" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+          <node concept="Xl_RD" id="5NLmMAKXtkc" role="3uHU7B">
+            <property role="Xl_RC" value="odd=" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="5NLmMAKXhvg" role="3cqZAp">
+        <node concept="3cpWsn" id="5NLmMAKXhvh" role="3cpWs9">
+          <property role="TrG5h" value="newHashCode" />
+          <node concept="10Oyi0" id="5NLmMAKXhuB" role="1tU5fm" />
+          <node concept="2YIFZM" id="5NLmMAKXhvi" role="33vP2m">
+            <ref role="37wK5l" to="u35n:62$$j6uTScA" resolve="computeHashCode" />
+            <ref role="1Pybhc" to="u35n:62$$j6uTSaU" resolve="SNodeHashcodeBuilder" />
+            <node concept="37vLTw" id="5NLmMAKXhvj" role="37wK5m">
+              <ref role="3cqZAo" node="5NLmMAKXeim" resolve="odd" />
+            </node>
+            <node concept="2OqwBi" id="5NLmMAKXhvk" role="37wK5m">
+              <node concept="2OqwBi" id="5NLmMAKXhvl" role="2Oq$k0">
+                <node concept="2JrnkZ" id="5NLmMAKXhvm" role="2Oq$k0">
+                  <node concept="37vLTw" id="5NLmMAKXhvn" role="2JrQYb">
+                    <ref role="3cqZAo" node="5NLmMAKXeim" resolve="odd" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5NLmMAKXhvo" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5NLmMAKXhvp" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5NLmMAKXia7" role="3cqZAp">
+        <node concept="3clFbS" id="5NLmMAKXia9" role="3clFbx">
+          <node concept="2MkqsV" id="5NLmMAKXm2r" role="3cqZAp">
+            <node concept="Xl_RD" id="5NLmMAKXm2E" role="2MkJ7o">
+              <property role="Xl_RC" value="The ODD model has been changed. Please check the datasets" />
+            </node>
+            <node concept="1YBJjd" id="5NLmMAKXm4g" role="1urrMF">
+              <ref role="1YBMHb" node="5NLmMAKXdE0" resolve="oddSpecificationContext" />
+            </node>
+          </node>
+        </node>
+        <node concept="17QLQc" id="5NLmMAKXjTA" role="3clFbw">
+          <node concept="2OqwBi" id="5NLmMAKXlif" role="3uHU7w">
+            <node concept="1YBJjd" id="5NLmMAKXkVz" role="2Oq$k0">
+              <ref role="1YBMHb" node="5NLmMAKXdE0" resolve="oddSpecificationContext" />
+            </node>
+            <node concept="3TrcHB" id="5NLmMAKXlDw" role="2OqNvi">
+              <ref role="3TsBF5" to="2qxf:5NLmMAKXdDV" resolve="hashCode" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="5NLmMAKXibT" role="3uHU7B">
+            <ref role="3cqZAo" node="5NLmMAKXhvh" resolve="newHashCode" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5NLmMAKXdE0" role="1YuTPh">
+      <property role="TrG5h" value="oddSpecificationContext" />
+      <ref role="1YaFvo" to="2qxf:5NLmMAKOwwE" resolve="ODDSpecificationContext" />
     </node>
   </node>
 </model>

@@ -21,6 +21,10 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
@@ -31,6 +35,9 @@
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -65,9 +72,11 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -794,6 +803,126 @@
         </node>
       </node>
       <node concept="l2Vlx" id="24qzBt0Mhlq" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5NLmMAKOwIg">
+    <property role="TrG5h" value="ODDSpecificationContextTextArea" />
+    <property role="3GE5qa" value="ml" />
+    <ref role="1XX52x" to="2qxf:5NLmMAKOwwE" resolve="ODDSpecificationContext" />
+    <node concept="1PE4EZ" id="5NLmMAKOwIi" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
+    </node>
+    <node concept="3EZMnI" id="5NLmMAKOwIk" role="2wV5jI">
+      <node concept="3EZMnI" id="5NLmMAKOwIl" role="3EZMnx">
+        <node concept="VPM3Z" id="5NLmMAKOwIm" role="3F10Kt" />
+        <node concept="3F0ifn" id="5NLmMAKOwIn" role="3EZMnx">
+          <property role="3F0ifm" value="ODD Specification Context:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="5NLmMAKOwIo" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="5NLmMAKOwIp" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="5NLmMAKOwIq" role="2iSdaV" />
+      <node concept="3F1sOY" id="5NLmMAKOwIr" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="xShMh" id="5NLmMAKOwIs" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5NLmMAKPJdY">
+    <property role="3GE5qa" value="ml" />
+    <property role="TrG5h" value="UsedDatasetContextTextArea" />
+    <ref role="1XX52x" to="2qxf:5NLmMAKPJdP" resolve="UsedDatasetContext" />
+    <node concept="1PE4EZ" id="5NLmMAKPJe0" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
+    </node>
+    <node concept="3EZMnI" id="5NLmMAKPJe2" role="2wV5jI">
+      <node concept="3EZMnI" id="5NLmMAKPJe3" role="3EZMnx">
+        <node concept="VPM3Z" id="5NLmMAKPJe4" role="3F10Kt" />
+        <node concept="3F0ifn" id="5NLmMAKPJe5" role="3EZMnx">
+          <property role="3F0ifm" value="Used Dataset Context:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="5NLmMAKPJe6" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="5NLmMAKPJe7" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="5NLmMAKPJe8" role="2iSdaV" />
+      <node concept="3F1sOY" id="5NLmMAKPJe9" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="xShMh" id="5NLmMAKPJea" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5NLmMAKPJeP">
+    <property role="3GE5qa" value="ml" />
+    <property role="TrG5h" value="DataSufficiencyGoalTextArea" />
+    <ref role="1XX52x" to="2qxf:5NLmMAKPJdQ" resolve="DataSufficiencyGoal" />
+    <node concept="1PE4EZ" id="5NLmMAKPJeR" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
+    </node>
+    <node concept="3EZMnI" id="5NLmMAKPJeT" role="2wV5jI">
+      <node concept="3EZMnI" id="5NLmMAKPJeU" role="3EZMnx">
+        <node concept="VPM3Z" id="5NLmMAKPJeV" role="3F10Kt" />
+        <node concept="3F0ifn" id="5NLmMAKPJeW" role="3EZMnx">
+          <property role="3F0ifm" value="Data Sufficiency Goal:" />
+          <ref role="1k5W1q" to="g35p:4HjFLZ$nO38" resolve="GSNExtendedLanguageKeyword" />
+        </node>
+        <node concept="3F0A7n" id="5NLmMAKPJeX" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="l2Vlx" id="5NLmMAKPJeY" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="5NLmMAKPJeZ" role="2iSdaV" />
+      <node concept="3F1sOY" id="5NLmMAKPJf0" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="xShMh" id="5NLmMAKPJf1" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5NLmMAKWQNt">
+    <property role="3GE5qa" value="ml" />
+    <property role="TrG5h" value="UsedDatasetContextTextAreaInInspector" />
+    <ref role="1XX52x" to="2qxf:5NLmMAKPJdP" resolve="UsedDatasetContext" />
+    <node concept="3EZMnI" id="5NLmMAKWQNx" role="2wV5jI">
+      <node concept="PMmxH" id="5NLmMAKWQNC" role="3EZMnx">
+        <ref role="PMmxG" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
+      </node>
+      <node concept="3F0ifn" id="5NLmMAKWQNE" role="3EZMnx" />
+      <node concept="3F0ifn" id="5NLmMAKWQNH" role="3EZMnx">
+        <property role="3F0ifm" value="Datasets location:" />
+      </node>
+      <node concept="3EZMnI" id="5NLmMAKWQNQ" role="3EZMnx">
+        <node concept="VPM3Z" id="5NLmMAKWQNS" role="3F10Kt" />
+        <node concept="3XFhqQ" id="5NLmMAKWQO3" role="3EZMnx" />
+        <node concept="3F2HdR" id="5NLmMAKWQO9" role="3EZMnx">
+          <ref role="1NtTu8" to="2qxf:5NLmMAKWOQQ" resolve="externalArtifact" />
+          <node concept="2iRkQZ" id="5NLmMAKWQOf" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="5NLmMAKWQNV" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="5NLmMAKWQN$" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="5NLmMAKWQNv" role="1PM95z">
+      <ref role="1PE7su" to="g35p:33qt4wr8vnQ" resolve="ContextTextAreaInInspector" />
     </node>
   </node>
 </model>
