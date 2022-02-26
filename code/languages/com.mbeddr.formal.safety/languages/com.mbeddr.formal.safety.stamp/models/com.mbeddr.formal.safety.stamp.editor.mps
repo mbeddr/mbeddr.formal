@@ -1462,7 +1462,7 @@
       <node concept="3EZMnI" id="2ynKV3ByZHU" role="3EZMnx">
         <node concept="VPM3Z" id="2ynKV3ByZHW" role="3F10Kt" />
         <node concept="3F0ifn" id="2ynKV3ByZHY" role="3EZMnx">
-          <property role="3F0ifm" value="Using HAZOP Keywords:" />
+          <property role="3F0ifm" value="HAZOP Keywords:" />
         </node>
         <node concept="3F2HdR" id="2ynKV3ByZIk" role="3EZMnx">
           <property role="2czwfO" value="," />
