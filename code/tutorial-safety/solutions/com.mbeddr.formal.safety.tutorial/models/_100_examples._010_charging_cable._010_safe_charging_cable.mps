@@ -9,7 +9,7 @@
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
     <use id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext" version="2" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="2" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
@@ -57,11 +57,16 @@
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF">
+        <child id="2925021647566955740" name="actions" index="3f6qtG" />
+      </concept>
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
       <concept id="8790599356040440363" name="com.mbeddr.formal.safety.stamp.structure.ControllerWord" flags="ng" index="1irL6x">
         <reference id="8790599356040440418" name="controller" index="1irL7C" />
       </concept>
       <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
         <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
         <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
       </concept>
       <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
@@ -70,10 +75,7 @@
       </concept>
       <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
         <reference id="2004523000582375039" name="action" index="1E0n_N" />
-        <child id="2004523000582414398" name="providing" index="1E0tWM" />
-        <child id="2004523000582414407" name="stoppedTooSoonAppliedTooLong" index="1E0tXb" />
-        <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
-        <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
       </concept>
       <concept id="2004523000582413321" name="com.mbeddr.formal.safety.stamp.structure.ActionDescriptionBase" flags="ng" index="1E0uc5">
         <child id="2185346695491723265" name="hazards" index="2Dy4$W" />
@@ -99,7 +101,7 @@
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
       <concept id="1629165016568013909" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternInstance" flags="ng" index="1VB52A">
         <reference id="1094571097530678975" name="originalDefinition" index="AygKy" />
-        <child id="1629165016568014583" name="patternInstance" index="1VB584" />
+        <child id="1629165016568014583" name="goalStructure" index="1VB584" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -7050,114 +7052,149 @@
       <ref role="1E0nOH" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
       <node concept="1E0nOJ" id="3TSGpjyEVwj" role="1E0nOC">
         <ref role="1E0n_N" node="3TSGpjyFlMV" resolve="Voltage" />
-        <node concept="3XErhT" id="3TSGpjyEVwk" role="1E0tXe" />
-        <node concept="1E0uc6" id="3TSGpjyEVwl" role="1E0tWM">
-          <property role="TrG5h" value="ECS_UCA01" />
-          <node concept="19SGf9" id="3TSGpjyEVwm" role="1E0uc7">
-            <node concept="19SUe$" id="3TSGpjyEVwn" role="19SJt6">
-              <property role="19SUeA" value="The " />
+        <node concept="3f6qtF" id="6vZMoXu3Mhp" role="3f6qqO">
+          <node concept="1E0uc6" id="3TSGpjyEVwl" role="3f6qtG">
+            <property role="TrG5h" value="ECS_UCA01" />
+            <node concept="19SGf9" id="3TSGpjyEVwm" role="1E0uc7">
+              <node concept="19SUe$" id="3TSGpjyEVwn" role="19SJt6">
+                <property role="19SUeA" value="The " />
+              </node>
+              <node concept="1irL6x" id="3TSGpjyEVwo" role="19SJt6">
+                <ref role="1irL7C" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+              </node>
+              <node concept="19SUe$" id="3TSGpjyEVwp" role="19SJt6">
+                <property role="19SUeA" value=" provide voltage outside the expected range while the ControlBox is powered on&#10;" />
+              </node>
+              <node concept="oY6sn" id="3TSGpjyGndG" role="19SJt6">
+                <ref role="oTUVg" node="3TSGpjyEYYX" resolve="Electrical hazard" />
+              </node>
+              <node concept="19SUe$" id="3TSGpjyGndH" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
             </node>
-            <node concept="1irL6x" id="3TSGpjyEVwo" role="19SJt6">
-              <ref role="1irL7C" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+            <node concept="DABN8" id="4eD_5l3mJ4g" role="2Dy4$W">
+              <ref role="DABNb" node="3TSGpjyEYYX" resolve="Electrical hazard" />
             </node>
-            <node concept="19SUe$" id="3TSGpjyEVwp" role="19SJt6">
-              <property role="19SUeA" value=" provide voltage outside the expected range while the ControlBox is powered on&#10;" />
-            </node>
-            <node concept="oY6sn" id="3TSGpjyGndG" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyEYYX" resolve="Electrical hazard" />
-            </node>
-            <node concept="19SUe$" id="3TSGpjyGndH" role="19SJt6">
-              <property role="19SUeA" value=" " />
-            </node>
-          </node>
-          <node concept="DABN8" id="4eD_5l3mJ4g" role="2Dy4$W">
-            <ref role="DABNb" node="3TSGpjyEYYX" resolve="Electrical hazard" />
           </node>
         </node>
-        <node concept="3XErhT" id="3TSGpjyEVws" role="1E0ucd" />
-        <node concept="3XErhT" id="3TSGpjyG0jY" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhr" role="3f6qqO">
+          <node concept="3XErhT" id="3TSGpjyEVws" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mht" role="3f6qqO">
+          <node concept="3XErhT" id="3TSGpjyEVwk" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhv" role="3f6qqO">
+          <node concept="3XErhT" id="3TSGpjyG0jY" role="3f6qtG" />
+        </node>
       </node>
       <node concept="1E0nOJ" id="6yFQEkQUeS9" role="1E0nOC">
         <ref role="1E0n_N" node="3TSGpjyFlMW" resolve="Intensity" />
-        <node concept="3XErhT" id="6yFQEkQUeSs" role="1E0ucd" />
-        <node concept="3XErhT" id="6yFQEkQUeSv" role="1E0tXe" />
-        <node concept="1E0uc6" id="6yFQEkQUf6y" role="1E0tWM">
-          <property role="TrG5h" value="ECS_UCA02" />
-          <node concept="19SGf9" id="6yFQEkQUf6_" role="1E0uc7">
-            <node concept="19SUe$" id="6yFQEkQUf6A" role="19SJt6">
-              <property role="19SUeA" value="The " />
-            </node>
-            <node concept="1irL6x" id="3TSGpjyG0ja" role="19SJt6">
-              <ref role="1irL7C" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-            </node>
-            <node concept="19SUe$" id="3TSGpjyG0jb" role="19SJt6">
-              <property role="19SUeA" value=" provide current intensity outside the expected range while the ControlBox is powered on " />
+        <node concept="3f6qtF" id="6vZMoXu3Mhw" role="3f6qqO">
+          <node concept="1E0uc6" id="6yFQEkQUf6y" role="3f6qtG">
+            <property role="TrG5h" value="ECS_UCA02" />
+            <node concept="19SGf9" id="6yFQEkQUf6_" role="1E0uc7">
+              <node concept="19SUe$" id="6yFQEkQUf6A" role="19SJt6">
+                <property role="19SUeA" value="The " />
+              </node>
+              <node concept="1irL6x" id="3TSGpjyG0ja" role="19SJt6">
+                <ref role="1irL7C" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+              </node>
+              <node concept="19SUe$" id="3TSGpjyG0jb" role="19SJt6">
+                <property role="19SUeA" value=" provide current intensity outside the expected range while the ControlBox is powered on " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3XErhT" id="3TSGpjyG0k0" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhx" role="3f6qqO">
+          <node concept="3XErhT" id="6yFQEkQUeSs" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhy" role="3f6qqO">
+          <node concept="3XErhT" id="6yFQEkQUeSv" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhz" role="3f6qqO">
+          <node concept="3XErhT" id="3TSGpjyG0k0" role="3f6qtG" />
+        </node>
       </node>
     </node>
     <node concept="1E0nOG" id="6yFQEkQUf2o" role="1E0n_e">
       <ref role="1E0nOH" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
       <node concept="1E0nOJ" id="6yFQEkQUfmf" role="1E0nOC">
         <ref role="1E0n_N" node="7BYuSCF$gm3" resolve="Socket-end Temperature" />
-        <node concept="1E0uc6" id="6yFQEkQUfna" role="1E0tWM">
-          <property role="TrG5h" value="CTS_UCA04" />
-          <node concept="19SGf9" id="6yFQEkQUfnd" role="1E0uc7">
-            <node concept="19SUe$" id="6yFQEkQUfne" role="19SJt6">
-              <property role="19SUeA" value="The " />
+        <node concept="3f6qtF" id="6vZMoXu3Mh$" role="3f6qqO">
+          <node concept="1E0uc6" id="6yFQEkQUfna" role="3f6qtG">
+            <property role="TrG5h" value="CTS_UCA04" />
+            <node concept="19SGf9" id="6yFQEkQUfnd" role="1E0uc7">
+              <node concept="19SUe$" id="6yFQEkQUfne" role="19SJt6">
+                <property role="19SUeA" value="The " />
+              </node>
+              <node concept="1irL6x" id="3TSGpjyG0jI" role="19SJt6">
+                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+              </node>
+              <node concept="19SUe$" id="3TSGpjyG0jJ" role="19SJt6">
+                <property role="19SUeA" value=" provides Socket-end Temperature outside the expected measurement range  " />
+              </node>
             </node>
-            <node concept="1irL6x" id="3TSGpjyG0jI" role="19SJt6">
-              <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
-            </node>
-            <node concept="19SUe$" id="3TSGpjyG0jJ" role="19SJt6">
-              <property role="19SUeA" value=" provides Socket-end Temperature outside the expected measurement range  " />
+          </node>
+          <node concept="1E0uc6" id="6yFQEkQUf5B" role="3f6qtG">
+            <property role="TrG5h" value="CTS_UCA05" />
+            <node concept="19SGf9" id="6yFQEkQUf5E" role="1E0uc7">
+              <node concept="19SUe$" id="6yFQEkQUf5F" role="19SJt6">
+                <property role="19SUeA" value="The " />
+              </node>
+              <node concept="1irL6x" id="3TSGpjyG0jO" role="19SJt6">
+                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+              </node>
+              <node concept="19SUe$" id="3TSGpjyG0jP" role="19SJt6">
+                <property role="19SUeA" value=" provides Socket-end Temperature in Fahrenheit and not in Celsius as expected " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="6yFQEkQUf5B" role="1E0tWM">
-          <property role="TrG5h" value="CTS_UCA05" />
-          <node concept="19SGf9" id="6yFQEkQUf5E" role="1E0uc7">
-            <node concept="19SUe$" id="6yFQEkQUf5F" role="19SJt6">
-              <property role="19SUeA" value="The " />
-            </node>
-            <node concept="1irL6x" id="3TSGpjyG0jO" role="19SJt6">
-              <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
-            </node>
-            <node concept="19SUe$" id="3TSGpjyG0jP" role="19SJt6">
-              <property role="19SUeA" value=" provides Socket-end Temperature in Fahrenheit and not in Celsius as expected " />
-            </node>
-          </node>
-        </node>
-        <node concept="1E0uc6" id="3TSGpjyG0kt" role="1E0ucd">
-          <property role="TrG5h" value="CTS_UCA03" />
-          <node concept="19SGf9" id="3TSGpjyG0ll" role="1E0uc7">
-            <node concept="19SUe$" id="3TSGpjyG0lm" role="19SJt6">
-              <property role="19SUeA" value="The " />
-            </node>
-            <node concept="1irL6x" id="3TSGpjyG0kr" role="19SJt6">
-              <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
-            </node>
-            <node concept="19SUe$" id="3TSGpjyG0kq" role="19SJt6">
-              <property role="19SUeA" value=" does not provide Socket-end Temperature when the control box is powered on " />
+        <node concept="3f6qtF" id="6vZMoXu3Mh_" role="3f6qqO">
+          <node concept="1E0uc6" id="3TSGpjyG0kt" role="3f6qtG">
+            <property role="TrG5h" value="CTS_UCA03" />
+            <node concept="19SGf9" id="3TSGpjyG0ll" role="1E0uc7">
+              <node concept="19SUe$" id="3TSGpjyG0lm" role="19SJt6">
+                <property role="19SUeA" value="The " />
+              </node>
+              <node concept="1irL6x" id="3TSGpjyG0kr" role="19SJt6">
+                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+              </node>
+              <node concept="19SUe$" id="3TSGpjyG0kq" role="19SJt6">
+                <property role="19SUeA" value=" does not provide Socket-end Temperature when the control box is powered on " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="3TSGpjyG0lu" role="1E0tXe">
-          <node concept="19SGf9" id="3TSGpjyG0lw" role="1E0uc7">
-            <node concept="19SUe$" id="3TSGpjyG0lx" role="19SJt6">
-              <property role="19SUeA" value="The " />
-            </node>
-            <node concept="1irL6x" id="3TSGpjyG0l$" role="19SJt6">
-              <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
-            </node>
-            <node concept="19SUe$" id="3TSGpjyG0l_" role="19SJt6">
-              <property role="19SUeA" value=" provides Socket-end Temperature too rarely " />
+        <node concept="3f6qtF" id="6vZMoXu3MhA" role="3f6qqO">
+          <node concept="1E0uc6" id="3TSGpjyG0lu" role="3f6qtG">
+            <node concept="19SGf9" id="3TSGpjyG0lw" role="1E0uc7">
+              <node concept="19SUe$" id="3TSGpjyG0lx" role="19SJt6">
+                <property role="19SUeA" value="The " />
+              </node>
+              <node concept="1irL6x" id="3TSGpjyG0l$" role="19SJt6">
+                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+              </node>
+              <node concept="19SUe$" id="3TSGpjyG0l_" role="19SJt6">
+                <property role="19SUeA" value=" provides Socket-end Temperature too rarely " />
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3f6qtF" id="6vZMoXu3MhB" role="3f6qqO" />
       </node>
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mho" role="3f73zo">
+      <property role="TrG5h" value="Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mhq" role="3f73zo">
+      <property role="TrG5h" value="Not Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mhs" role="3f73zo">
+      <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mhu" role="3f73zo">
+      <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
     </node>
   </node>
   <node concept="2HdtXS" id="7BYuSCF$ivt">
