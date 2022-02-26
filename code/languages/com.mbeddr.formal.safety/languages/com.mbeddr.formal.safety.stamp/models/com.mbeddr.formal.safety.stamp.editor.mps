@@ -67,6 +67,7 @@
         <property id="1221209241505" name="value" index="1lJzqX" />
         <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
@@ -2574,6 +2575,9 @@
     <ref role="1XX52x" to="bewr:2ynKV3ByZHc" resolve="HazopKeywordDefinition" />
     <node concept="3F0A7n" id="2ynKV3B_I_P" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="30gYXW" id="6vZMoXtZrXU" role="3F10Kt">
+        <property role="Vb096" value="fLJRk5A/lightGray" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2ynKV3BzAjS">
@@ -2679,6 +2683,9 @@
           </node>
           <node concept="1g0IQG" id="2ynKV3BHdxT" role="1geGt4">
             <ref role="VmB1A" node="3x7uzC8qOMR" resolve="uca_style" />
+            <node concept="30gYXW" id="6vZMoXu0faS" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5A/lightGray" />
+            </node>
           </node>
         </node>
       </node>
