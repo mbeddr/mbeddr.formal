@@ -39,7 +39,6 @@
     <import index="ra3w" ref="r:d160eea8-047c-42af-ab07-6b169eeb13fd(com.mbeddr.formal.safety.gsn.web.util)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2t6" ref="r:56ec2cff-9c17-42cb-9eb1-1ca3c51a012d(main@generator)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -205,6 +204,9 @@
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
@@ -262,12 +264,6 @@
         <reference id="7256306938026143658" name="target" index="2aWVGs" />
       </concept>
     </language>
-    <language id="289fcc83-6543-41e8-a5ca-768235715ce4" name="jetbrains.mps.lang.generator.generationParameters">
-      <concept id="3064182000795631740" name="jetbrains.mps.lang.generator.generationParameters.structure.DefaultGenerationParameterId" flags="nn" index="2I5Y$R">
-        <reference id="3064182000795631811" name="parameter" index="2I5YA8" />
-        <reference id="3064182000795631810" name="container" index="2I5YA9" />
-      </concept>
-    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
@@ -314,21 +310,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
-        <property id="8575328350543493365" name="message" index="huDt6" />
-        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -459,32 +451,16 @@
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="5pJnDA9geZs" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1bI_xRMxsf0" role="8Wnug">
-            <node concept="15s5l7" id="7kpr6A60DRo" role="lGtFl">
-              <property role="1eyWvh" value="FLAVOUR_CLASS=&quot;class jetbrains.mps.errors.item.TargetModuleNotImportedReportItem&quot;;FLAVOUR_MESSAGE=&quot;Target module com.cso.enabler.arch.deployment.rt.loadchart#01 should be imported&quot;;FLAVOUR_NODE_FEATURE=&quot;parameter&quot;;" />
-              <property role="huDt6" value="Target module com.cso.enabler.arch.deployment.rt.loadchart#01 should be imported" />
+        <node concept="3SKdUt" id="6vZMoXtYhNg" role="3cqZAp">
+          <node concept="1PaTwC" id="6vZMoXtYhNh" role="1aUNEU">
+            <node concept="3oM_SD" id="6vZMoXtYjWi" role="1PaTwD">
+              <property role="3oM_SC" value="provider.addParameter(genParameter&lt;params&gt;.foo," />
             </node>
-            <node concept="15s5l7" id="7kpr6A60_7i" role="lGtFl">
-              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  params (container) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;container&quot;;FLAVOUR_RULE_ID=&quot;[]&quot;;" />
-              <property role="huDt6" value="The reference  params (container) is out of search scope" />
+            <node concept="3oM_SD" id="6vZMoXtYjWj" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;bar&quot;)" />
             </node>
-            <node concept="2OqwBi" id="1bI_xRMxsJl" role="3clFbG">
-              <node concept="37vLTw" id="1bI_xRMxseY" role="2Oq$k0">
-                <ref role="3cqZAo" node="1bI_xRMxmrH" resolve="provider" />
-              </node>
-              <node concept="liA8E" id="1bI_xRMxu5H" role="2OqNvi">
-                <ref role="37wK5l" to="ap4t:~DefaultGenerationParametersProvider.addParameter(java.lang.String,java.lang.Object)" resolve="addParameter" />
-                <node concept="2I5Y$R" id="7kpr6A5UqCR" role="37wK5m">
-                  <ref role="2I5YA8" to="e2t6:3CWow$4Rrdr" resolve="foo" />
-                  <ref role="2I5YA9" to="e2t6:3CWow$4Rrdq" resolve="params" />
-                </node>
-                <node concept="Xl_RD" id="1bI_xRMxylr" role="37wK5m">
-                  <property role="Xl_RC" value="bar" />
-                </node>
-              </node>
+            <node concept="3oM_SD" id="6vZMoXtYjTu" role="1PaTwD">
+              <property role="3oM_SC" value="" />
             </node>
           </node>
         </node>

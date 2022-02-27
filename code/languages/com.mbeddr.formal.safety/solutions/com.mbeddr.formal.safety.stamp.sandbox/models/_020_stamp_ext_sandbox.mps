@@ -9,6 +9,12 @@
     <import index="v0ty" ref="r:f4296e65-905c-42ee-8349-52d0474604ad(com.mbeddr.formal.safety.stamp.sandbox._010_sandbox)" />
   </imports>
   <registry>
+    <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF" />
+      <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
+      </concept>
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -85,6 +91,10 @@
       <node concept="1ipxol" id="63UItOi6hK4" role="1ipxpF">
         <ref role="1ipxoE" to="v0ty:4q9fsxm3Bzk" resolve="Charging Not Allowed" />
       </node>
+      <node concept="3f6qtF" id="6vZMoXu1P0C" role="3f6qqO" />
+      <node concept="3f6qtF" id="6vZMoXu1P0E" role="3f6qqO" />
+      <node concept="3f6qtF" id="6vZMoXu1P0G" role="3f6qqO" />
+      <node concept="3f6qtF" id="6vZMoXu1P0I" role="3f6qqO" />
     </node>
   </node>
   <node concept="2vn7XN" id="63UItOi7UCD">

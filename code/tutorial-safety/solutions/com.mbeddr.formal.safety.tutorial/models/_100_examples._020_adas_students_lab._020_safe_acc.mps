@@ -6,7 +6,7 @@
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262" version="1" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="2" />
     <use id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req" version="1" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
@@ -32,8 +32,13 @@
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF">
+        <child id="2925021647566955740" name="actions" index="3f6qtG" />
+      </concept>
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
       <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
         <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
         <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
       </concept>
       <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
@@ -42,10 +47,7 @@
       </concept>
       <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
         <reference id="2004523000582375039" name="action" index="1E0n_N" />
-        <child id="2004523000582414398" name="providing" index="1E0tWM" />
-        <child id="2004523000582414407" name="stoppedTooSoonAppliedTooLong" index="1E0tXb" />
-        <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
-        <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
       </concept>
       <concept id="2004523000582413321" name="com.mbeddr.formal.safety.stamp.structure.ActionDescriptionBase" flags="ng" index="1E0uc5">
         <child id="2185346695491723265" name="hazards" index="2Dy4$W" />
@@ -689,250 +691,322 @@
       <ref role="1E0nOH" node="2fZol$t_0O3" resolve="ACC Control Unit" />
       <node concept="1E0nOJ" id="4GKPLBASuiJ" role="1E0nOC">
         <ref role="1E0n_N" node="4tgWazNvlRa" resolve="control brake" />
-        <node concept="1E0uc6" id="4GKPLBASxTl" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_12" />
-          <node concept="19SGf9" id="4GKPLBASxTn" role="1E0uc7">
-            <node concept="19SUe$" id="4tgWazNvsuJ" role="19SJt6">
-              <property role="19SUeA" value="Wrong target speed " />
+        <node concept="3f6qtF" id="6vZMoXu3MiP" role="3f6qqO">
+          <node concept="1E0uc6" id="4GKPLBASxTl" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_12" />
+            <node concept="19SGf9" id="4GKPLBASxTn" role="1E0uc7">
+              <node concept="19SUe$" id="4tgWazNvsuJ" role="19SJt6">
+                <property role="19SUeA" value="Wrong target speed " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="4GKPLBASxTx" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_13" />
-          <node concept="19SGf9" id="4GKPLBASxTz" role="1E0uc7">
-            <node concept="19SUe$" id="4tgWazNvsuH" role="19SJt6">
-              <property role="19SUeA" value="Safe distance is not necessarily kept " />
+        <node concept="3f6qtF" id="6vZMoXu3MiR" role="3f6qqO">
+          <node concept="1E0uc6" id="2vEFX4zn0B4" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_11" />
+            <node concept="19SGf9" id="2vEFX4zn0B6" role="1E0uc7">
+              <node concept="19SUe$" id="2vEFX4zn0B7" role="19SJt6">
+                <property role="19SUeA" value="The ACC does not break, when safe distance to  vehicle in front is violated" />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0Ba" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKZN" role="1E0tXb">
-          <property role="TrG5h" value="UCA_ACC_14" />
-          <node concept="19SGf9" id="cfX0AaFKZP" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKZQ" role="19SJt6">
-              <property role="19SUeA" value="System reacts too harsh " />
+        <node concept="3f6qtF" id="6vZMoXu3MiT" role="3f6qqO">
+          <node concept="1E0uc6" id="4GKPLBASxTx" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_13" />
+            <node concept="19SGf9" id="4GKPLBASxTz" role="1E0uc7">
+              <node concept="19SUe$" id="4tgWazNvsuH" role="19SJt6">
+                <property role="19SUeA" value="Safe distance is not necessarily kept " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="2vEFX4zn0B4" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_11" />
-          <node concept="19SGf9" id="2vEFX4zn0B6" role="1E0uc7">
-            <node concept="19SUe$" id="2vEFX4zn0B7" role="19SJt6">
-              <property role="19SUeA" value="The ACC does not break, when safe distance to  vehicle in front is violated" />
+        <node concept="3f6qtF" id="6vZMoXu3MiV" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKZN" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_14" />
+            <node concept="19SGf9" id="cfX0AaFKZP" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKZQ" role="19SJt6">
+                <property role="19SUeA" value="System reacts too harsh " />
+              </node>
             </node>
-          </node>
-          <node concept="DABN8" id="2vEFX4zn0Ba" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
           </node>
         </node>
       </node>
       <node concept="1E0nOJ" id="cfX0AaFKN7" role="1E0nOC">
         <ref role="1E0n_N" node="4tgWazNvlVr" resolve="control acceleration" />
-        <node concept="1E0uc6" id="cfX0AaFKZY" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_21" />
-          <node concept="19SGf9" id="cfX0AaFL00" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFL01" role="19SJt6">
-              <property role="19SUeA" value="Wrong target speed " />
+        <node concept="3f6qtF" id="6vZMoXu3MiW" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFL09" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_22" />
+            <node concept="19SGf9" id="cfX0AaFL0b" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFL0c" role="19SJt6">
+                <property role="19SUeA" value="Safe distance is not necessarily kept  " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFL09" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_22" />
-          <node concept="19SGf9" id="cfX0AaFL0b" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFL0c" role="19SJt6">
-              <property role="19SUeA" value="Safe distance is not necessarily kept  " />
+        <node concept="3f6qtF" id="6vZMoXu3MiX" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKZY" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_21" />
+            <node concept="19SGf9" id="cfX0AaFL00" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFL01" role="19SJt6">
+                <property role="19SUeA" value="Wrong target speed " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFL0C" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_23" />
-          <node concept="19SGf9" id="cfX0AaFL0E" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFL0F" role="19SJt6">
-              <property role="19SUeA" value="Wrong target speed " />
+        <node concept="3f6qtF" id="6vZMoXu3MiY" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFL0C" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_23" />
+            <node concept="19SGf9" id="cfX0AaFL0E" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFL0F" role="19SJt6">
+                <property role="19SUeA" value="Wrong target speed " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFL0X" role="1E0tXb">
-          <property role="TrG5h" value="UCA_ACC_24" />
-          <node concept="19SGf9" id="cfX0AaFL0Z" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFL10" role="19SJt6">
-              <property role="19SUeA" value="System reacts too harsh " />
+        <node concept="3f6qtF" id="6vZMoXu3MiZ" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFL0X" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_24" />
+            <node concept="19SGf9" id="cfX0AaFL0Z" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFL10" role="19SJt6">
+                <property role="19SUeA" value="System reacts too harsh " />
+              </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="1E0nOJ" id="cfX0AaFKNj" role="1E0nOC">
         <ref role="1E0n_N" node="2fZol$t_1LI" resolve="driver overtake request" />
-        <node concept="1E0uc6" id="cfX0AaFL1m" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_31" />
-          <node concept="19SGf9" id="cfX0AaFL1o" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFL1p" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly and does not take over " />
-            </node>
-          </node>
-          <node concept="DABN8" id="2vEFX4zn0$h" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="cfX0AaFL1B" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_32" />
-          <node concept="19SGf9" id="cfX0AaFL1D" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFL1E" role="19SJt6">
-              <property role="19SUeA" value="Unnecessary warnings " />
+        <node concept="3f6qtF" id="6vZMoXu3Mj0" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFL1B" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_32" />
+            <node concept="19SGf9" id="cfX0AaFL1D" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFL1E" role="19SJt6">
+                <property role="19SUeA" value="Unnecessary warnings " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFL1R" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_33" />
-          <node concept="19SGf9" id="cfX0AaFL1T" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFL1U" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly " />
+        <node concept="3f6qtF" id="6vZMoXu3Mj1" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFL1m" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_31" />
+            <node concept="19SGf9" id="cfX0AaFL1o" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFL1p" role="19SJt6">
+                <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly and does not take over " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0$h" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
-          <node concept="DABN8" id="2vEFX4zn0$n" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mj2" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFL1R" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_33" />
+            <node concept="19SGf9" id="cfX0AaFL1T" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFL1U" role="19SJt6">
+                <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0$n" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+            </node>
           </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFL25" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mj3" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFL25" role="3f6qtG" />
+        </node>
       </node>
     </node>
     <node concept="1E0nOG" id="4tgWazNvmWw" role="1E0n_e">
       <ref role="1E0nOH" node="2fZol$t_0Rm" resolve="ACC User interface" />
       <node concept="1E0nOJ" id="4tgWazNvmWx" role="1E0nOC">
         <ref role="1E0n_N" node="2fZol$t_1dX" resolve="activate" />
-        <node concept="1E0uc6" id="cfX0AaFKXJ" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_41" />
-          <node concept="19SGf9" id="cfX0AaFKXL" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKXM" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is engaged " />
+        <node concept="3f6qtF" id="6vZMoXu3Mj4" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKXX" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mj5" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKXJ" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_41" />
+            <node concept="19SGf9" id="cfX0AaFKXL" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKXM" role="19SJt6">
+                <property role="19SUeA" value="Driver falsely assumes that ACC is engaged " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0$E" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
-          <node concept="DABN8" id="2vEFX4zn0$E" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
-          </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKXX" role="1E0tWM" />
-        <node concept="1E0uc6" id="cfX0AaFKXZ" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_43" />
-          <node concept="19SGf9" id="cfX0AaFKY1" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKY2" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is engaged " />
+        <node concept="3f6qtF" id="6vZMoXu3Mj6" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKXZ" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_43" />
+            <node concept="19SGf9" id="cfX0AaFKY1" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKY2" role="19SJt6">
+                <property role="19SUeA" value="Driver falsely assumes that ACC is engaged " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0$y" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
-          <node concept="DABN8" id="2vEFX4zn0$y" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
-          </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKYk" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mj7" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKYk" role="3f6qtG" />
+        </node>
       </node>
       <node concept="1E0nOJ" id="cfX0AaFKMQ" role="1E0nOC">
         <ref role="1E0n_N" node="4tgWazNvmIz" resolve="desired distance" />
-        <node concept="1E0uc6" id="cfX0AaFKYo" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_51" />
-          <node concept="19SGf9" id="cfX0AaFKYq" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKYr" role="19SJt6">
-              <property role="19SUeA" value="Cruise control cannot operate without desired distance " />
+        <node concept="3f6qtF" id="6vZMoXu3Mj8" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKYz" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mj9" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKYo" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_51" />
+            <node concept="19SGf9" id="cfX0AaFKYq" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKYr" role="19SJt6">
+                <property role="19SUeA" value="Cruise control cannot operate without desired distance " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKYz" role="1E0tWM" />
-        <node concept="3XErhT" id="cfX0AaFKY_" role="1E0tXe" />
-        <node concept="3XErhT" id="cfX0AaFKYB" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mja" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKY_" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mjb" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKYB" role="3f6qtG" />
+        </node>
       </node>
       <node concept="1E0nOJ" id="cfX0AaFKMT" role="1E0nOC">
         <ref role="1E0n_N" node="4tgWazNvmOq" resolve="desired speed" />
-        <node concept="1E0uc6" id="cfX0AaFKYF" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_61" />
-          <node concept="19SGf9" id="cfX0AaFKYH" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKYI" role="19SJt6">
-              <property role="19SUeA" value="Cruise control cannot operate without desired distance " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjc" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKYW" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_62" />
+            <node concept="19SGf9" id="cfX0AaFKYY" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKYZ" role="19SJt6">
+                <property role="19SUeA" value="Wrong target speed " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKYW" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_62" />
-          <node concept="19SGf9" id="cfX0AaFKYY" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKYZ" role="19SJt6">
-              <property role="19SUeA" value="Wrong target speed " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjd" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKYF" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_61" />
+            <node concept="19SGf9" id="cfX0AaFKYH" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKYI" role="19SJt6">
+                <property role="19SUeA" value="Cruise control cannot operate without desired distance " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKZi" role="1E0tXe" />
-        <node concept="3XErhT" id="cfX0AaFKZk" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mje" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKZi" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mjf" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKZk" role="3f6qtG" />
+        </node>
       </node>
     </node>
     <node concept="1E0nOG" id="4tgWazNvmYf" role="1E0n_e">
       <ref role="1E0nOH" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
       <node concept="1E0nOJ" id="4tgWazNvmYg" role="1E0nOC">
         <ref role="1E0n_N" node="1J1VyY6JMus" resolve="activation signal" />
-        <node concept="3XErhT" id="cfX0AaFKTQ" role="1E0ucd" />
-        <node concept="1E0uc6" id="cfX0AaFKTS" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_72" />
-          <node concept="19SGf9" id="cfX0AaFKTU" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKTV" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is engaged " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjg" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKTS" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_72" />
+            <node concept="19SGf9" id="cfX0AaFKTU" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKTV" role="19SJt6">
+                <property role="19SUeA" value="Driver falsely assumes that ACC is engaged " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKUt" role="1E0tXe" />
-        <node concept="3XErhT" id="cfX0AaFKUv" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mjh" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKTQ" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mji" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKUt" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mjj" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKUv" role="3f6qtG" />
+        </node>
       </node>
       <node concept="1E0nOJ" id="cfX0AaFKMX" role="1E0nOC">
         <ref role="1E0n_N" node="2fZol$t_17g" resolve="alarm signal display" />
-        <node concept="1E0uc6" id="cfX0AaFKUD" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_81" />
-          <node concept="19SGf9" id="cfX0AaFKUF" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKUG" role="19SJt6">
-              <property role="19SUeA" value="If the warning is not forwarded to the display, the driver falsely assumes that ACC was working correctly. This might lead to an accident. " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjk" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKWs" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_82" />
+            <node concept="19SGf9" id="cfX0AaFKWu" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKWv" role="19SJt6">
+                <property role="19SUeA" value="A false alarm is an unnecessary warning, affecting customer satisfaction " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKWs" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_82" />
-          <node concept="19SGf9" id="cfX0AaFKWu" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKWv" role="19SJt6">
-              <property role="19SUeA" value="A false alarm is an unnecessary warning, affecting customer satisfaction " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjl" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKUD" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_81" />
+            <node concept="19SGf9" id="cfX0AaFKUF" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKUG" role="19SJt6">
+                <property role="19SUeA" value="If the warning is not forwarded to the display, the driver falsely assumes that ACC was working correctly. This might lead to an accident. " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKWB" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_83" />
-          <node concept="19SGf9" id="cfX0AaFKWD" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKWE" role="19SJt6">
-              <property role="19SUeA" value="If the warning is displayed too late, the driver falsely assumes that ACC was working correctly for too long. This might lead to an accident. " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjm" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKWB" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_83" />
+            <node concept="19SGf9" id="cfX0AaFKWD" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKWE" role="19SJt6">
+                <property role="19SUeA" value="If the warning is displayed too late, the driver falsely assumes that ACC was working correctly for too long. This might lead to an accident. " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKWV" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mjn" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKWV" role="3f6qtG" />
+        </node>
       </node>
       <node concept="1E0nOJ" id="cfX0AaFKN0" role="1E0nOC">
         <ref role="1E0n_N" node="2fZol$t_19m" resolve="alarm signal speaker" />
-        <node concept="1E0uc6" id="cfX0AaFKUR" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_91" />
-          <node concept="19SGf9" id="cfX0AaFKUT" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKUU" role="19SJt6">
-              <property role="19SUeA" value="If the warning is not forwarded to the speaker, the driver falsely assumes that ACC was working correctly. This might lead to an accident. " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjo" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKWZ" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_92" />
+            <node concept="19SGf9" id="cfX0AaFKX1" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKX2" role="19SJt6">
+                <property role="19SUeA" value="A false alarm is an unnecessary warning, affecting customer satisfaction " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKWZ" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_92" />
-          <node concept="19SGf9" id="cfX0AaFKX1" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKX2" role="19SJt6">
-              <property role="19SUeA" value="A false alarm is an unnecessary warning, affecting customer satisfaction " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjp" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKUR" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_91" />
+            <node concept="19SGf9" id="cfX0AaFKUT" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKUU" role="19SJt6">
+                <property role="19SUeA" value="If the warning is not forwarded to the speaker, the driver falsely assumes that ACC was working correctly. This might lead to an accident. " />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKX9" role="1E0tXb" />
-        <node concept="1E0uc6" id="cfX0AaFKXi" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_93" />
-          <node concept="19SGf9" id="cfX0AaFKXk" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKXl" role="19SJt6">
-              <property role="19SUeA" value="If the warning is given out too late, the driver falsely assumes that ACC was working correctly for too long and will not react in time. This might lead to an accident. " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjq" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKXi" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_93" />
+            <node concept="19SGf9" id="cfX0AaFKXk" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKXl" role="19SJt6">
+                <property role="19SUeA" value="If the warning is given out too late, the driver falsely assumes that ACC was working correctly for too long and will not react in time. This might lead to an accident. " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0$b" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
-          <node concept="DABN8" id="2vEFX4zn0$b" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
-          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mjr" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKX9" role="3f6qtG" />
         </node>
       </node>
     </node>
@@ -940,81 +1014,109 @@
       <ref role="1E0nOH" node="4tgWazNvlJV" resolve="Brake" />
       <node concept="1E0nOJ" id="4tgWazNvmYE" role="1E0nOC">
         <ref role="1E0n_N" node="4tgWazNvmkl" resolve="driver braking input " />
-        <node concept="1E0uc6" id="cfX0AaFKSJ" role="1E0ucd">
-          <property role="TrG5h" value="UCA_ACC_101" />
-          <node concept="19SGf9" id="cfX0AaFKSL" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKSM" role="19SJt6">
-              <property role="19SUeA" value="The system detects that the driver wants to override the ACC by evaluating the signal that he pushes the brake. If the signal is not available, the driver cannot take over " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjs" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKT9" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_102" />
+            <node concept="19SGf9" id="cfX0AaFKTb" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKTc" role="19SJt6">
+                <property role="19SUeA" value="If a driver override is falsely detected, the ACC is deactivated by mistake " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0$4" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
-          <node concept="DABN8" id="2vEFX4zn0zZ" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
-          </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKT9" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_102" />
-          <node concept="19SGf9" id="cfX0AaFKTb" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKTc" role="19SJt6">
-              <property role="19SUeA" value="If a driver override is falsely detected, the ACC is deactivated by mistake " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjt" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKSJ" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_101" />
+            <node concept="19SGf9" id="cfX0AaFKSL" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKSM" role="19SJt6">
+                <property role="19SUeA" value="The system detects that the driver wants to override the ACC by evaluating the signal that he pushes the brake. If the signal is not available, the driver cannot take over " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0zZ" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
-          <node concept="DABN8" id="2vEFX4zn0$4" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
-          </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKTD" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_103" />
-          <node concept="19SGf9" id="cfX0AaFKTF" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKTG" role="19SJt6">
-              <property role="19SUeA" value="If a driver override is detected too late, the driver cannot take over on time " />
+        <node concept="3f6qtF" id="6vZMoXu3Mju" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKTD" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_103" />
+            <node concept="19SGf9" id="cfX0AaFKTF" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKTG" role="19SJt6">
+                <property role="19SUeA" value="If a driver override is detected too late, the driver cannot take over on time " />
+              </node>
+            </node>
+            <node concept="DABN8" id="2vEFX4zn0$6" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
             </node>
           </node>
-          <node concept="DABN8" id="2vEFX4zn0$6" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
-          </node>
         </node>
-        <node concept="3XErhT" id="cfX0AaFKTN" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mjv" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKTN" role="3f6qtG" />
+        </node>
       </node>
     </node>
     <node concept="1E0nOG" id="4tgWazNvmZ5" role="1E0n_e">
       <ref role="1E0nOH" node="4tgWazNvlKb" resolve="Gas pedal" />
       <node concept="1E0nOJ" id="4tgWazNvmZ6" role="1E0nOC">
         <ref role="1E0n_N" node="4tgWazNvmf1" resolve="driver acceleration input" />
-        <node concept="3XErhT" id="cfX0AaFKSa" role="1E0ucd" />
-        <node concept="1E0uc6" id="cfX0AaFKSc" role="1E0tWM">
-          <property role="TrG5h" value="UCA_ACC_112" />
-          <node concept="19SGf9" id="cfX0AaFKSe" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKSf" role="19SJt6">
-              <property role="19SUeA" value="A driver's input on the gas pedal overrides the ACC. If an input is detected falsely, ACC is temporaly deactivated and does not keep the target speed " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjw" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKSc" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_112" />
+            <node concept="19SGf9" id="cfX0AaFKSe" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKSf" role="19SJt6">
+                <property role="19SUeA" value="A driver's input on the gas pedal overrides the ACC. If an input is detected falsely, ACC is temporaly deactivated and does not keep the target speed " />
+              </node>
             </node>
-          </node>
-          <node concept="DABN8" id="2vEFX4zn0zV" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+            <node concept="DABN8" id="2vEFX4zn0zV" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+            </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKSn" role="1E0tXe">
-          <property role="TrG5h" value="UCA_ACC_113" />
-          <node concept="19SGf9" id="cfX0AaFKSp" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKSq" role="19SJt6">
-              <property role="19SUeA" value="ACC is temporaly deactivated and does not keep the target speed in case of delayed input " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjx" role="3f6qqO">
+          <node concept="3XErhT" id="cfX0AaFKSa" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mjy" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKSn" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_113" />
+            <node concept="19SGf9" id="cfX0AaFKSp" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKSq" role="19SJt6">
+                <property role="19SUeA" value="ACC is temporaly deactivated and does not keep the target speed in case of delayed input " />
+              </node>
             </node>
-          </node>
-          <node concept="DABN8" id="2vEFX4zn0zT" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+            <node concept="DABN8" id="2vEFX4zn0zT" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+            </node>
           </node>
         </node>
-        <node concept="1E0uc6" id="cfX0AaFKS_" role="1E0tXb">
-          <property role="TrG5h" value="UCA_ACC_114" />
-          <node concept="19SGf9" id="cfX0AaFKSB" role="1E0uc7">
-            <node concept="19SUe$" id="cfX0AaFKSC" role="19SJt6">
-              <property role="19SUeA" value="ACC is temporaly deactivated and does not keep the target speed in case of false input " />
+        <node concept="3f6qtF" id="6vZMoXu3Mjz" role="3f6qqO">
+          <node concept="1E0uc6" id="cfX0AaFKS_" role="3f6qtG">
+            <property role="TrG5h" value="UCA_ACC_114" />
+            <node concept="19SGf9" id="cfX0AaFKSB" role="1E0uc7">
+              <node concept="19SUe$" id="cfX0AaFKSC" role="19SJt6">
+                <property role="19SUeA" value="ACC is temporaly deactivated and does not keep the target speed in case of false input " />
+              </node>
             </node>
-          </node>
-          <node concept="DABN8" id="2vEFX4zn0zR" role="2Dy4$W">
-            <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+            <node concept="DABN8" id="2vEFX4zn0zR" role="2Dy4$W">
+              <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+            </node>
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3MiO" role="3f73zo">
+      <property role="TrG5h" value="Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3MiQ" role="3f73zo">
+      <property role="TrG5h" value="Not Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3MiS" role="3f73zo">
+      <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3MiU" role="3f73zo">
+      <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
     </node>
   </node>
   <node concept="1QQeGf" id="4WLVkAsg3oQ">

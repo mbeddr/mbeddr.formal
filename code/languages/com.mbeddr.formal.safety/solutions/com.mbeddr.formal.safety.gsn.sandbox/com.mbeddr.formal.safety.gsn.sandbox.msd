@@ -15,7 +15,6 @@
     <dependency reexport="false">8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:f52452b6-7f99-441b-98f9-a98c52b92236:com.fasten.req.odd" version="1" />
     <language slang="l:65ed2ac6-4499-4751-951e-3819684a4b8d:com.fasten.req.ontology" version="1" />
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
     <language slang="l:2374bc90-7e37-41f1-a9c4-c2e35194c36a:com.mbeddr.doc" version="3" />
@@ -33,10 +32,7 @@
     <language slang="l:450c81f1-1811-41ac-a9c8-8fda59f778ca:com.mbeddr.formal.nusmv.tabular" version="0" />
     <language slang="l:cac6875e-14fd-4552-a69e-b3168e27e2ff:com.mbeddr.formal.nusmv.tests" version="0" />
     <language slang="l:0deccdfd-196b-4d8c-895e-0d6cb8014dfd:com.mbeddr.formal.req.base" version="0" />
-    <language slang="l:83ad0200-6e50-4939-a389-76bf899be11b:com.mbeddr.formal.req.nusmv" version="0" />
     <language slang="l:5ff577d1-1817-495b-9d6c-ff7b52c68609:com.mbeddr.formal.req.tl_patterns" version="0" />
-    <language slang="l:0054a0d7-50ff-4b4f-beff-7e9b376d56a1:com.mbeddr.formal.req.tl_patterns.arch" version="0" />
-    <language slang="l:b9f682be-3e03-4c97-ba0a-ac14cf89f12a:com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
     <language slang="l:8a4ef392-f4b4-43e7-afb5-b071dce8043d:com.mbeddr.formal.safety.argument.process" version="0" />
     <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="0" />
     <language slang="l:402c6c59-bdb3-47fc-8dfa-74ab35e75274:com.mbeddr.formal.safety.cae.external_evidence" version="0" />
@@ -75,7 +71,6 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="8fe22e59-5111-4d11-87a2-2938e839b2fd(com.fasten.req.ontology.lib)" version="0" />
     <module reference="4405c79a-2cec-40b3-b09e-a2a5fd99a7f6(com.mbeddr.formal.safety.gsn.sandbox)" version="0" />
     <module reference="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
