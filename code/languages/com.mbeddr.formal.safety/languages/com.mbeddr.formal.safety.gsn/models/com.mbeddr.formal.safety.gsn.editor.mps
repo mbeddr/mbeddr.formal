@@ -1142,9 +1142,7 @@
           <node concept="3b6qkQ" id="6XKrTzkwvJ0" role="1xbcaF">
             <property role="$nhwW" value="0.5" />
           </node>
-          <node concept="3clFbT" id="6XKrTzkwvJ1" role="1xbcaF">
-            <property role="3clFbU" value="true" />
-          </node>
+          <node concept="3clFbT" id="6XKrTzkwvJ1" role="1xbcaF" />
         </node>
       </node>
       <node concept="KXoZh" id="2ccN23oaUMV" role="KYgL9">
