@@ -862,13 +862,30 @@
       <node concept="3EZMnI" id="3f8ZVRYdw_0" role="3EZMnx">
         <node concept="2iRfu4" id="3f8ZVRYdw_1" role="2iSdaV" />
         <node concept="3F0ifn" id="3f8ZVRYdw_2" role="3EZMnx">
-          <property role="3F0ifm" value="Current index:" />
+          <property role="3F0ifm" value="Current Index:" />
+          <node concept="VechU" id="5WyjFZRnC0T" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5A/lightGray" />
+          </node>
         </node>
         <node concept="3F0A7n" id="3f8ZVRYdw_3" role="3EZMnx">
           <property role="1O74Pk" value="true" />
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="py52:3f8ZVRYdwrn" resolve="crtMaxIndex" />
+          <node concept="VechU" id="5WyjFZRnC0V" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5A/lightGray" />
+          </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="5WyjFZRl1g7" role="3EZMnx" />
+      <node concept="3EZMnI" id="5WyjFZRl1gs" role="3EZMnx">
+        <node concept="VPM3Z" id="5WyjFZRl1gu" role="3F10Kt" />
+        <node concept="3F0ifn" id="5WyjFZRl1gw" role="3EZMnx">
+          <property role="3F0ifm" value="Show Relations Text:" />
+        </node>
+        <node concept="27S6Sx" id="5WyjFZRl1hd" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:5WyjFZRl16s" resolve="displayRelationNames" />
+        </node>
+        <node concept="2iRfu4" id="5WyjFZRl1gx" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -1158,6 +1175,18 @@
         <node concept="3F0ifn" id="2ccN23odQcp" role="2wV5jI">
           <property role="3F0ifm" value="inContextOf" />
           <ref role="1k5W1q" node="71GfFl7qVvB" resolve="GSNConnectionTextStyle" />
+          <node concept="pkWqt" id="5WyjFZRlR7v" role="pqm2j">
+            <node concept="3clFbS" id="5WyjFZRlR7w" role="2VODD2">
+              <node concept="3clFbF" id="5WyjFZRlRbq" role="3cqZAp">
+                <node concept="2OqwBi" id="5WyjFZRlRqG" role="3clFbG">
+                  <node concept="pncrf" id="5WyjFZRlRbp" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="5WyjFZRlUDh" role="2OqNvi">
+                    <ref role="37wK5l" to="89jy:5WyjFZRlSgP" resolve="shouldDisplayLabel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1212,6 +1241,18 @@
         <node concept="3F0ifn" id="2ccN23odQq9" role="2wV5jI">
           <property role="3F0ifm" value="supportedBy" />
           <ref role="1k5W1q" node="71GfFl7qVvB" resolve="GSNConnectionTextStyle" />
+          <node concept="pkWqt" id="5WyjFZRmNzV" role="pqm2j">
+            <node concept="3clFbS" id="5WyjFZRmNzW" role="2VODD2">
+              <node concept="3clFbF" id="5WyjFZRmN$1" role="3cqZAp">
+                <node concept="2OqwBi" id="5WyjFZRmNNj" role="3clFbG">
+                  <node concept="pncrf" id="5WyjFZRmN$0" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="5WyjFZRmOaj" role="2OqNvi">
+                    <ref role="37wK5l" to="89jy:5WyjFZRlSgP" resolve="shouldDisplayLabel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
