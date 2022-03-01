@@ -156,6 +156,9 @@
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
       </concept>
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+      <concept id="1172028177041" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNull" flags="nn" index="3ykFI1">
+        <child id="1172028236559" name="expression" index="3ykU8v" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -637,6 +640,71 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="5WyjFZRuzTH" role="1SL9yI">
+      <property role="TrG5h" value="_050_top_goal_three_solutions_missing_confidence" />
+      <node concept="3cqZAl" id="5WyjFZRuzTI" role="3clF45" />
+      <node concept="3clFbS" id="5WyjFZRuzTJ" role="3clF47">
+        <node concept="3cpWs8" id="5WyjFZRuzTK" role="3cqZAp">
+          <node concept="3cpWsn" id="5WyjFZRuzTL" role="3cpWs9">
+            <property role="TrG5h" value="computedBelief_01" />
+            <node concept="3uibUv" id="5WyjFZRu$7z" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+            </node>
+            <node concept="2YIFZM" id="5WyjFZRuzTN" role="33vP2m">
+              <ref role="1Pybhc" node="5WyjFZRpYIf" resolve="Utils" />
+              <ref role="37wK5l" node="5WyjFZRpYJo" resolve="computeBelief" />
+              <node concept="Xl_RD" id="5WyjFZRuzTO" role="37wK5m">
+                <property role="Xl_RC" value="_050_top_goal_three_solutions_missing_confidence" />
+              </node>
+              <node concept="Xl_RD" id="5WyjFZRuzTP" role="37wK5m">
+                <property role="Xl_RC" value="G01" />
+              </node>
+              <node concept="2OqwBi" id="5WyjFZRuzTQ" role="37wK5m">
+                <node concept="1jxXqW" id="5WyjFZRuzTR" role="2Oq$k0" />
+                <node concept="liA8E" id="5WyjFZRuzTS" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5WyjFZRuzTT" role="3cqZAp">
+          <node concept="3cpWsn" id="5WyjFZRuzTU" role="3cpWs9">
+            <property role="TrG5h" value="computedCertainty_01" />
+            <node concept="3uibUv" id="5WyjFZRu$8y" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+            </node>
+            <node concept="2YIFZM" id="5WyjFZRuzTW" role="33vP2m">
+              <ref role="37wK5l" node="5WyjFZRq3$1" resolve="computeCertainty" />
+              <ref role="1Pybhc" node="5WyjFZRpYIf" resolve="Utils" />
+              <node concept="Xl_RD" id="5WyjFZRuzTX" role="37wK5m">
+                <property role="Xl_RC" value="_050_top_goal_three_solutions_missing_confidence" />
+              </node>
+              <node concept="Xl_RD" id="5WyjFZRuzTY" role="37wK5m">
+                <property role="Xl_RC" value="G01" />
+              </node>
+              <node concept="2OqwBi" id="5WyjFZRuzTZ" role="37wK5m">
+                <node concept="1jxXqW" id="5WyjFZRuzU0" role="2Oq$k0" />
+                <node concept="liA8E" id="5WyjFZRuzU1" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5WyjFZRuzU2" role="3cqZAp" />
+        <node concept="3ykFI1" id="5WyjFZRu$bq" role="3cqZAp">
+          <node concept="37vLTw" id="5WyjFZRu$dl" role="3ykU8v">
+            <ref role="3cqZAo" node="5WyjFZRuzTL" resolve="computedBelief_01" />
+          </node>
+        </node>
+        <node concept="3ykFI1" id="5WyjFZRu$eQ" role="3cqZAp">
+          <node concept="37vLTw" id="5WyjFZRu$eR" role="3ykU8v">
+            <ref role="3cqZAo" node="5WyjFZRuzTU" resolve="computedCertainty_01" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2XOHcx" id="5WyjFZRpdB6">
     <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety/" />
@@ -660,12 +728,16 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="10Oyi0" id="5WyjFZRq4Md" role="3clF45" />
+      <node concept="3uibUv" id="5WyjFZRuCGT" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+      </node>
       <node concept="3clFbS" id="5WyjFZRpYJr" role="3clF47">
         <node concept="3cpWs8" id="5WyjFZRq03W" role="3cqZAp">
           <node concept="3cpWsn" id="5WyjFZRq03X" role="3cpWs9">
             <property role="TrG5h" value="computedBelief" />
-            <node concept="10Oyi0" id="5WyjFZRq03Y" role="1tU5fm" />
+            <node concept="3uibUv" id="5WyjFZRuCLb" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="5WyjFZRq042" role="3cqZAp">
@@ -839,12 +911,16 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="10Oyi0" id="5WyjFZRq3SO" role="3clF45" />
+      <node concept="3uibUv" id="5WyjFZRuCN2" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+      </node>
       <node concept="3clFbS" id="5WyjFZRq3$b" role="3clF47">
         <node concept="3cpWs8" id="5WyjFZRq3$f" role="3cqZAp">
           <node concept="3cpWsn" id="5WyjFZRq3$g" role="3cpWs9">
             <property role="TrG5h" value="computedCertainty" />
-            <node concept="10Oyi0" id="5WyjFZRq3$h" role="1tU5fm" />
+            <node concept="3uibUv" id="5WyjFZRuCPu" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="5WyjFZRq3$i" role="3cqZAp">

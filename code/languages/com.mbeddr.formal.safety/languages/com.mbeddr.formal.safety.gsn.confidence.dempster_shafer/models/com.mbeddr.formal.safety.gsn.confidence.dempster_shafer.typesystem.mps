@@ -75,10 +75,15 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
@@ -420,7 +425,9 @@
       <node concept="3cpWs8" id="5WyjFZRsg9P" role="3cqZAp">
         <node concept="3cpWsn" id="5WyjFZRsg9Q" role="3cpWs9">
           <property role="TrG5h" value="computedBelief" />
-          <node concept="10OMs4" id="5WyjFZRsg9z" role="1tU5fm" />
+          <node concept="3uibUv" id="5WyjFZRu1bE" role="1tU5fm">
+            <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
+          </node>
           <node concept="2YIFZM" id="5WyjFZRsg9R" role="33vP2m">
             <ref role="37wK5l" to="amuf:5WyjFZRqOsQ" resolve="computeBeliefBasedOnDownwardElements" />
             <ref role="1Pybhc" to="amuf:48_A4oY4APo" resolve="DempsterSchaferConfidenceComputingUtils" />
@@ -471,12 +478,20 @@
             </node>
           </node>
         </node>
-        <node concept="3eOSWO" id="5WyjFZRsJrC" role="3clFbw">
-          <node concept="37vLTw" id="5WyjFZRsJrc" role="3uHU7B">
-            <ref role="3cqZAo" node="5WyjFZRsaz$" resolve="myBelief" />
+        <node concept="1Wc70l" id="5WyjFZRu1tB" role="3clFbw">
+          <node concept="3y3z36" id="5WyjFZRu2dm" role="3uHU7B">
+            <node concept="10Nm6u" id="5WyjFZRu2p_" role="3uHU7w" />
+            <node concept="37vLTw" id="5WyjFZRu1vM" role="3uHU7B">
+              <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
+            </node>
           </node>
-          <node concept="37vLTw" id="5WyjFZRsJrb" role="3uHU7w">
-            <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
+          <node concept="3eOSWO" id="5WyjFZRsJrC" role="3uHU7w">
+            <node concept="37vLTw" id="5WyjFZRsJrc" role="3uHU7B">
+              <ref role="3cqZAo" node="5WyjFZRsaz$" resolve="myBelief" />
+            </node>
+            <node concept="37vLTw" id="5WyjFZRsJrb" role="3uHU7w">
+              <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
+            </node>
           </node>
         </node>
       </node>
@@ -498,7 +513,9 @@
       <node concept="3cpWs8" id="5WyjFZRskhL" role="3cqZAp">
         <node concept="3cpWsn" id="5WyjFZRskhM" role="3cpWs9">
           <property role="TrG5h" value="computedCertainty" />
-          <node concept="10OMs4" id="5WyjFZRskhN" role="1tU5fm" />
+          <node concept="3uibUv" id="5WyjFZRucxz" role="1tU5fm">
+            <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
+          </node>
           <node concept="2YIFZM" id="5WyjFZRslr8" role="33vP2m">
             <ref role="37wK5l" to="amuf:5WyjFZRqQ9h" resolve="computeCertaintyBasedOnDownwardElements" />
             <ref role="1Pybhc" to="amuf:48_A4oY4APo" resolve="DempsterSchaferConfidenceComputingUtils" />
@@ -549,12 +566,20 @@
             </node>
           </node>
         </node>
-        <node concept="3eOSWO" id="5WyjFZRsLMq" role="3clFbw">
-          <node concept="37vLTw" id="5WyjFZRsLMF" role="3uHU7w">
-            <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
+        <node concept="1Wc70l" id="5WyjFZRu2qd" role="3clFbw">
+          <node concept="3y3z36" id="5WyjFZRu3D_" role="3uHU7B">
+            <node concept="10Nm6u" id="5WyjFZRu3Vx" role="3uHU7w" />
+            <node concept="37vLTw" id="5WyjFZRu2Lh" role="3uHU7B">
+              <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
+            </node>
           </node>
-          <node concept="37vLTw" id="5WyjFZRsKXD" role="3uHU7B">
-            <ref role="3cqZAo" node="5WyjFZRsaI6" resolve="myCertainty" />
+          <node concept="3eOSWO" id="5WyjFZRsLMq" role="3uHU7w">
+            <node concept="37vLTw" id="5WyjFZRsLMF" role="3uHU7w">
+              <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
+            </node>
+            <node concept="37vLTw" id="5WyjFZRsKXD" role="3uHU7B">
+              <ref role="3cqZAo" node="5WyjFZRsaI6" resolve="myCertainty" />
+            </node>
           </node>
         </node>
       </node>
