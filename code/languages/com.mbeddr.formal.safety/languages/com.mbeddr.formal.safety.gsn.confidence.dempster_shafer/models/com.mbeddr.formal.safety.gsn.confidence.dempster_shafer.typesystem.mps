@@ -261,7 +261,7 @@
               </node>
               <node concept="2MkqsV" id="6OmQ$5rtbUI" role="3cqZAp">
                 <node concept="Xl_RD" id="6OmQ$5rtbV0" role="2MkJ7o">
-                  <property role="Xl_RC" value="weight defined here but not propagated in connections" />
+                  <property role="Xl_RC" value="if one outbound connection has weight attribute, all outbound connections shall have weight attribute" />
                 </node>
                 <node concept="1YBJjd" id="6OmQ$5rtbWh" role="1urrMF">
                   <ref role="1YBMHb" node="48_A4oY40jU" resolve="weight" />
