@@ -9,6 +9,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
     <import index="6oah" ref="r:c3ace323-0a57-4f8d-b471-fad629604601(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure)" />
+    <import index="amuf" ref="r:b775b7e1-c824-441c-afe0-ed9eafc83544(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -36,6 +37,7 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -62,10 +64,13 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -76,6 +81,7 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -133,6 +139,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -147,6 +156,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="18kY7G" id="48_A4oY40jR">
@@ -334,6 +344,224 @@
     <node concept="1YaCAy" id="48_A4oY40jU" role="1YuTPh">
       <property role="TrG5h" value="weight" />
       <ref role="1YaFvo" to="6oah:48_A4oY40ha" resolve="Weight" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5WyjFZRs5$Q">
+    <property role="TrG5h" value="check_ConfidenceAndBeliefRefinement" />
+    <node concept="3clFbS" id="5WyjFZRs5$R" role="18ibNy">
+      <node concept="3cpWs8" id="5WyjFZRs9Tl" role="3cqZAp">
+        <node concept="3cpWsn" id="5WyjFZRs9Tm" role="3cpWs9">
+          <property role="TrG5h" value="conf" />
+          <node concept="3Tqbb2" id="5WyjFZRs9Tk" role="1tU5fm">
+            <ref role="ehGHo" to="6oah:6dwPixfd_$I" resolve="Confidence" />
+          </node>
+          <node concept="2OqwBi" id="5WyjFZRs9Tn" role="33vP2m">
+            <node concept="2OqwBi" id="5WyjFZRs9To" role="2Oq$k0">
+              <node concept="2OqwBi" id="5WyjFZRs9Tp" role="2Oq$k0">
+                <node concept="1YBJjd" id="5WyjFZRs9Tq" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
+                </node>
+                <node concept="3Tsc0h" id="5WyjFZRs9Tr" role="2OqNvi">
+                  <ref role="3TtcxE" to="py52:6dwPixfdDSe" resolve="attributes" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="5WyjFZRs9Ts" role="2OqNvi">
+                <node concept="chp4Y" id="5WyjFZRs9Tt" role="v3oSu">
+                  <ref role="cht4Q" to="6oah:6dwPixfd_$I" resolve="Confidence" />
+                </node>
+              </node>
+            </node>
+            <node concept="1uHKPH" id="5WyjFZRs9Tu" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5WyjFZRs5_2" role="3cqZAp">
+        <node concept="2OqwBi" id="5WyjFZRsa46" role="3clFbw">
+          <node concept="37vLTw" id="5WyjFZRs9Tv" role="2Oq$k0">
+            <ref role="3cqZAo" node="5WyjFZRs9Tm" resolve="conf" />
+          </node>
+          <node concept="3w_OXm" id="5WyjFZRsaiI" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="5WyjFZRs5_4" role="3clFbx">
+          <node concept="3cpWs6" id="5WyjFZRsamQ" role="3cqZAp" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5WyjFZRsaJ3" role="3cqZAp">
+        <node concept="3clFbS" id="5WyjFZRsaJ5" role="3clFbx">
+          <node concept="3cpWs6" id="5WyjFZRsfpX" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="5WyjFZRsdo7" role="3clFbw">
+          <node concept="2OqwBi" id="5WyjFZRsaYg" role="2Oq$k0">
+            <node concept="1YBJjd" id="5WyjFZRsaJH" role="2Oq$k0">
+              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
+            </node>
+            <node concept="2qgKlT" id="5WyjFZRsbpr" role="2OqNvi">
+              <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
+            </node>
+          </node>
+          <node concept="1v1jN8" id="5WyjFZRsfoY" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="5WyjFZRsamS" role="3cqZAp" />
+      <node concept="3cpWs8" id="5WyjFZRsazz" role="3cqZAp">
+        <node concept="3cpWsn" id="5WyjFZRsaz$" role="3cpWs9">
+          <property role="TrG5h" value="myBelief" />
+          <node concept="10Oyi0" id="5WyjFZRsaqK" role="1tU5fm" />
+          <node concept="2OqwBi" id="5WyjFZRsaz_" role="33vP2m">
+            <node concept="37vLTw" id="5WyjFZRsazA" role="2Oq$k0">
+              <ref role="3cqZAo" node="5WyjFZRs9Tm" resolve="conf" />
+            </node>
+            <node concept="3TrcHB" id="5WyjFZRsazB" role="2OqNvi">
+              <ref role="3TsBF5" to="6oah:2QkJsC6ubW1" resolve="belief" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="5WyjFZRsg9P" role="3cqZAp">
+        <node concept="3cpWsn" id="5WyjFZRsg9Q" role="3cpWs9">
+          <property role="TrG5h" value="computedBelief" />
+          <node concept="10OMs4" id="5WyjFZRsg9z" role="1tU5fm" />
+          <node concept="2YIFZM" id="5WyjFZRsg9R" role="33vP2m">
+            <ref role="37wK5l" to="amuf:5WyjFZRqOsQ" resolve="computeBeliefBasedOnDownwardElements" />
+            <ref role="1Pybhc" to="amuf:48_A4oY4APo" resolve="DempsterSchaferConfidenceComputingUtils" />
+            <node concept="1YBJjd" id="5WyjFZRsg9S" role="37wK5m">
+              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5WyjFZRsIDr" role="3cqZAp">
+        <node concept="3clFbS" id="5WyjFZRsIDt" role="3clFbx">
+          <node concept="2MkqsV" id="5WyjFZRsJs7" role="3cqZAp">
+            <node concept="1YBJjd" id="5WyjFZRsJKA" role="1urrMF">
+              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
+            </node>
+            <node concept="3cpWs3" id="5WyjFZRsJsm" role="2MkJ7o">
+              <node concept="Xl_RD" id="5WyjFZRsJsn" role="3uHU7w">
+                <property role="Xl_RC" value=", the specified belief" />
+              </node>
+              <node concept="3cpWs3" id="5WyjFZRsJso" role="3uHU7B">
+                <node concept="3cpWs3" id="5WyjFZRsJsp" role="3uHU7B">
+                  <node concept="3cpWs3" id="5WyjFZRsJsq" role="3uHU7B">
+                    <node concept="2YIFZM" id="5WyjFZRsJsr" role="3uHU7w">
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                      <node concept="Xl_RD" id="5WyjFZRsJss" role="37wK5m">
+                        <property role="Xl_RC" value="%.2f" />
+                      </node>
+                      <node concept="37vLTw" id="5WyjFZRsJst" role="37wK5m">
+                        <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5WyjFZRsJsu" role="3uHU7B">
+                      <property role="Xl_RC" value="computed belief is " />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="5WyjFZRsJsv" role="3uHU7w">
+                    <property role="Xl_RC" value=" and thereby smaller than " />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5WyjFZRsJsw" role="3uHU7w">
+                  <ref role="3cqZAo" node="5WyjFZRsaz$" resolve="myBelief" />
+                </node>
+              </node>
+            </node>
+            <node concept="AMVWg" id="5WyjFZRsK43" role="lGtFl">
+              <property role="TrG5h" value="defined_belief_bigger_than_computed" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="5WyjFZRsJrC" role="3clFbw">
+          <node concept="37vLTw" id="5WyjFZRsJrc" role="3uHU7B">
+            <ref role="3cqZAo" node="5WyjFZRsaz$" resolve="myBelief" />
+          </node>
+          <node concept="37vLTw" id="5WyjFZRsJrb" role="3uHU7w">
+            <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5WyjFZRsiYm" role="3cqZAp" />
+      <node concept="3cpWs8" id="5WyjFZRsaI3" role="3cqZAp">
+        <node concept="3cpWsn" id="5WyjFZRsaI6" role="3cpWs9">
+          <property role="TrG5h" value="myCertainty" />
+          <node concept="10Oyi0" id="5WyjFZRsaI1" role="1tU5fm" />
+          <node concept="2OqwBi" id="5WyjFZRsfM$" role="33vP2m">
+            <node concept="37vLTw" id="5WyjFZRsfBW" role="2Oq$k0">
+              <ref role="3cqZAo" node="5WyjFZRs9Tm" resolve="conf" />
+            </node>
+            <node concept="3TrcHB" id="5WyjFZRsfWY" role="2OqNvi">
+              <ref role="3TsBF5" to="6oah:2QkJsC6ubW6" resolve="certainty" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="5WyjFZRskhL" role="3cqZAp">
+        <node concept="3cpWsn" id="5WyjFZRskhM" role="3cpWs9">
+          <property role="TrG5h" value="computedCertainty" />
+          <node concept="10OMs4" id="5WyjFZRskhN" role="1tU5fm" />
+          <node concept="2YIFZM" id="5WyjFZRslr8" role="33vP2m">
+            <ref role="37wK5l" to="amuf:5WyjFZRqQ9h" resolve="computeCertaintyBasedOnDownwardElements" />
+            <ref role="1Pybhc" to="amuf:48_A4oY4APo" resolve="DempsterSchaferConfidenceComputingUtils" />
+            <node concept="1YBJjd" id="5WyjFZRslr9" role="37wK5m">
+              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5WyjFZRsKP1" role="3cqZAp">
+        <node concept="3clFbS" id="5WyjFZRsKP3" role="3clFbx">
+          <node concept="2MkqsV" id="5WyjFZRsM0J" role="3cqZAp">
+            <node concept="1YBJjd" id="5WyjFZRsMle" role="1urrMF">
+              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
+            </node>
+            <node concept="3cpWs3" id="5WyjFZRsM0Y" role="2MkJ7o">
+              <node concept="Xl_RD" id="5WyjFZRsM0Z" role="3uHU7w">
+                <property role="Xl_RC" value=", the specified certainty" />
+              </node>
+              <node concept="3cpWs3" id="5WyjFZRsM10" role="3uHU7B">
+                <node concept="3cpWs3" id="5WyjFZRsM11" role="3uHU7B">
+                  <node concept="3cpWs3" id="5WyjFZRsM12" role="3uHU7B">
+                    <node concept="2YIFZM" id="5WyjFZRsM13" role="3uHU7w">
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <node concept="Xl_RD" id="5WyjFZRsM14" role="37wK5m">
+                        <property role="Xl_RC" value="%.2f" />
+                      </node>
+                      <node concept="37vLTw" id="5WyjFZRsM15" role="37wK5m">
+                        <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5WyjFZRsM16" role="3uHU7B">
+                      <property role="Xl_RC" value="computed certainty is " />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="5WyjFZRsM17" role="3uHU7w">
+                    <property role="Xl_RC" value=" and thereby smaller than " />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5WyjFZRsM18" role="3uHU7w">
+                  <ref role="3cqZAo" node="5WyjFZRsaI6" resolve="myCertainty" />
+                </node>
+              </node>
+            </node>
+            <node concept="AMVWg" id="5WyjFZRsMmU" role="lGtFl">
+              <property role="TrG5h" value="defined_certainty_bigger_than_computed" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="5WyjFZRsLMq" role="3clFbw">
+          <node concept="37vLTw" id="5WyjFZRsLMF" role="3uHU7w">
+            <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
+          </node>
+          <node concept="37vLTw" id="5WyjFZRsKXD" role="3uHU7B">
+            <ref role="3cqZAo" node="5WyjFZRsaI6" resolve="myCertainty" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5WyjFZRs5$T" role="1YuTPh">
+      <property role="TrG5h" value="gseb" />
+      <ref role="1YaFvo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
   </node>
 </model>
