@@ -85,6 +85,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -514,6 +515,19 @@
                   <ref role="3cqZAo" node="3f8ZVRYfRjF" resolve="collection" />
                 </node>
                 <node concept="3clFbS" id="3f8ZVRYfRlW" role="2LFqv$">
+                  <node concept="3clFbJ" id="1noKC0JT5JO" role="3cqZAp">
+                    <node concept="3clFbS" id="1noKC0JT5JQ" role="3clFbx">
+                      <node concept="3N13vt" id="1noKC0JT6C_" role="3cqZAp" />
+                    </node>
+                    <node concept="3clFbC" id="1noKC0JT6sD" role="3clFbw">
+                      <node concept="2GrUjf" id="1noKC0JT6_L" role="3uHU7w">
+                        <ref role="2Gs0qQ" node="3f8ZVRYfRlS" resolve="that" />
+                      </node>
+                      <node concept="1YBJjd" id="1noKC0JT5Ls" role="3uHU7B">
+                        <ref role="1YBMHb" node="3f8ZVRYfNzK" resolve="gs" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3cpWs8" id="3f8ZVRYfTM0" role="3cqZAp">
                     <node concept="3cpWsn" id="3f8ZVRYfTM1" role="3cpWs9">
                       <property role="TrG5h" value="thatIdPrefix" />
