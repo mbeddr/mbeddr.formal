@@ -16,6 +16,9 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="kd7o" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.typesystem.dependencies(MPS.Core/)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="2y64" ref="r:b91d3184-5a2f-40d8-b310-14ec3048d9cc(com.mbeddr.formal.base.tooling.project)" />
     <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -120,7 +123,6 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -453,7 +455,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="3f8ZVRYfNxG">
-    <property role="TrG5h" value="check_PrefixUniquenessInGlobalScope" />
+    <property role="TrG5h" value="check_PrefixUniquenessInCurrentProject" />
     <property role="1$Xk0j" value="true" />
     <node concept="3clFbS" id="3f8ZVRYfNxH" role="18ibNy">
       <node concept="3cpWs8" id="3f8ZVRYfNxQ" role="3cqZAp">
@@ -472,122 +474,107 @@
       </node>
       <node concept="3clFbJ" id="3f8ZVRYfNxW" role="3cqZAp">
         <node concept="3clFbS" id="3f8ZVRYfNxX" role="3clFbx">
-          <node concept="3cpWs8" id="3f8ZVRYgzSH" role="3cqZAp">
-            <node concept="3cpWsn" id="3f8ZVRYgzSI" role="3cpWs9">
-              <property role="TrG5h" value="openedProjects" />
-              <node concept="3uibUv" id="3f8ZVRYgzPg" role="1tU5fm">
-                <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                <node concept="3uibUv" id="3f8ZVRYgzPj" role="11_B2D">
-                  <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
-                </node>
+          <node concept="3cpWs8" id="1noKC0JQuml" role="3cqZAp">
+            <node concept="3cpWsn" id="1noKC0JQumm" role="3cpWs9">
+              <property role="TrG5h" value="proj" />
+              <node concept="3uibUv" id="1noKC0JQumn" role="1tU5fm">
+                <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
               </node>
-              <node concept="2OqwBi" id="3f8ZVRYgzSJ" role="33vP2m">
-                <node concept="2YIFZM" id="3f8ZVRYgzSK" role="2Oq$k0">
-                  <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
-                  <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="3f8ZVRYgzSL" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
+              <node concept="2YIFZM" id="1noKC0JQ_pB" role="33vP2m">
+                <ref role="37wK5l" to="2y64:1fyC0RHInUp" resolve="getMPSProjectFrom" />
+                <ref role="1Pybhc" to="2y64:1fyC0RHIfK6" resolve="ProjectHelper" />
+                <node concept="1YBJjd" id="1noKC0JQ_yS" role="37wK5m">
+                  <ref role="1YBMHb" node="3f8ZVRYfNzK" resolve="gs" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2Gpval" id="3f8ZVRYg$2B" role="3cqZAp">
-            <node concept="2GrKxI" id="3f8ZVRYg$2D" role="2Gsz3X">
-              <property role="TrG5h" value="crtProj" />
-            </node>
-            <node concept="37vLTw" id="3f8ZVRYg$ol" role="2GsD0m">
-              <ref role="3cqZAo" node="3f8ZVRYgzSI" resolve="openedProjects" />
-            </node>
-            <node concept="3clFbS" id="3f8ZVRYg$2H" role="2LFqv$">
-              <node concept="L3pyB" id="3f8ZVRYfWhe" role="3cqZAp">
-                <node concept="3clFbS" id="3f8ZVRYfWhg" role="L3pyw">
-                  <node concept="3cpWs8" id="3f8ZVRYfRjE" role="3cqZAp">
-                    <node concept="3cpWsn" id="3f8ZVRYfRjF" role="3cpWs9">
-                      <property role="TrG5h" value="collection" />
-                      <node concept="3vKaQO" id="3f8ZVRYfRhu" role="1tU5fm">
-                        <node concept="3Tqbb2" id="3f8ZVRYfRhx" role="3O5elw">
-                          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-                        </node>
-                      </node>
-                      <node concept="qVDSY" id="3f8ZVRYfRjG" role="33vP2m">
-                        <node concept="chp4Y" id="3f8ZVRYfRjH" role="qVDSX">
-                          <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-                        </node>
-                      </node>
+          <node concept="L3pyB" id="3f8ZVRYfWhe" role="3cqZAp">
+            <node concept="3clFbS" id="3f8ZVRYfWhg" role="L3pyw">
+              <node concept="3cpWs8" id="3f8ZVRYfRjE" role="3cqZAp">
+                <node concept="3cpWsn" id="3f8ZVRYfRjF" role="3cpWs9">
+                  <property role="TrG5h" value="collection" />
+                  <node concept="3vKaQO" id="3f8ZVRYfRhu" role="1tU5fm">
+                    <node concept="3Tqbb2" id="3f8ZVRYfRhx" role="3O5elw">
+                      <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
                     </node>
                   </node>
-                  <node concept="2Gpval" id="3f8ZVRYfRlQ" role="3cqZAp">
-                    <node concept="2GrKxI" id="3f8ZVRYfRlS" role="2Gsz3X">
-                      <property role="TrG5h" value="that" />
-                    </node>
-                    <node concept="37vLTw" id="3f8ZVRYfRmk" role="2GsD0m">
-                      <ref role="3cqZAo" node="3f8ZVRYfRjF" resolve="collection" />
-                    </node>
-                    <node concept="3clFbS" id="3f8ZVRYfRlW" role="2LFqv$">
-                      <node concept="3cpWs8" id="3f8ZVRYfTM0" role="3cqZAp">
-                        <node concept="3cpWsn" id="3f8ZVRYfTM1" role="3cpWs9">
-                          <property role="TrG5h" value="thatIdPrefix" />
-                          <node concept="17QB3L" id="3f8ZVRYfTLX" role="1tU5fm" />
-                          <node concept="2OqwBi" id="3f8ZVRYfTM2" role="33vP2m">
-                            <node concept="2GrUjf" id="3f8ZVRYfTM3" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="3f8ZVRYfRlS" resolve="that" />
-                            </node>
-                            <node concept="3TrcHB" id="3f8ZVRYfTM4" role="2OqNvi">
-                              <ref role="3TsBF5" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbJ" id="3f8ZVRYfT5F" role="3cqZAp">
-                        <node concept="3clFbS" id="3f8ZVRYfT5H" role="3clFbx">
-                          <node concept="3N13vt" id="3f8ZVRYfUt3" role="3cqZAp" />
-                        </node>
-                        <node concept="2OqwBi" id="3f8ZVRYfUlt" role="3clFbw">
-                          <node concept="37vLTw" id="3f8ZVRYfTM5" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3f8ZVRYfTM1" resolve="thatIdPrefix" />
-                          </node>
-                          <node concept="17RlXB" id="3f8ZVRYfUsP" role="2OqNvi" />
-                        </node>
-                      </node>
-                      <node concept="2Mj0R9" id="3f8ZVRYfRnM" role="3cqZAp">
-                        <node concept="3fqX7Q" id="3f8ZVRYfU_a" role="2MkoU_">
-                          <node concept="2OqwBi" id="3f8ZVRYfU_c" role="3fr31v">
-                            <node concept="37vLTw" id="3f8ZVRYfU_d" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3f8ZVRYfNxR" resolve="idPrefix" />
-                            </node>
-                            <node concept="liA8E" id="3f8ZVRYfU_e" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                              <node concept="37vLTw" id="3f8ZVRYfU_f" role="37wK5m">
-                                <ref role="3cqZAo" node="3f8ZVRYfTM1" resolve="thatIdPrefix" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3cpWs3" id="3f8ZVRYgGGu" role="2MkJ7o">
-                          <node concept="3cpWs3" id="3f8ZVRYgGy1" role="3uHU7B">
-                            <node concept="Xl_RD" id="3f8ZVRYfUCk" role="3uHU7B">
-                              <property role="Xl_RC" value="two GoalStructures with the same prefix are not allowed. Prefix " />
-                            </node>
-                            <node concept="37vLTw" id="3f8ZVRYgGBA" role="3uHU7w">
-                              <ref role="3cqZAo" node="3f8ZVRYfNxR" resolve="idPrefix" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="3f8ZVRYgGRz" role="3uHU7w">
-                            <property role="Xl_RC" value=" was already used." />
-                          </node>
-                        </node>
-                        <node concept="2GrUjf" id="3f8ZVRYfUG$" role="1urrMF">
-                          <ref role="2Gs0qQ" node="3f8ZVRYfRlS" resolve="that" />
-                        </node>
-                      </node>
+                  <node concept="qVDSY" id="3f8ZVRYfRjG" role="33vP2m">
+                    <node concept="chp4Y" id="3f8ZVRYfRjH" role="qVDSX">
+                      <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
                     </node>
                   </node>
-                </node>
-                <node concept="2GrUjf" id="3f8ZVRYg$G0" role="L3pyr">
-                  <ref role="2Gs0qQ" node="3f8ZVRYg$2D" resolve="crtProj" />
                 </node>
               </node>
+              <node concept="2Gpval" id="3f8ZVRYfRlQ" role="3cqZAp">
+                <node concept="2GrKxI" id="3f8ZVRYfRlS" role="2Gsz3X">
+                  <property role="TrG5h" value="that" />
+                </node>
+                <node concept="37vLTw" id="3f8ZVRYfRmk" role="2GsD0m">
+                  <ref role="3cqZAo" node="3f8ZVRYfRjF" resolve="collection" />
+                </node>
+                <node concept="3clFbS" id="3f8ZVRYfRlW" role="2LFqv$">
+                  <node concept="3cpWs8" id="3f8ZVRYfTM0" role="3cqZAp">
+                    <node concept="3cpWsn" id="3f8ZVRYfTM1" role="3cpWs9">
+                      <property role="TrG5h" value="thatIdPrefix" />
+                      <node concept="17QB3L" id="3f8ZVRYfTLX" role="1tU5fm" />
+                      <node concept="2OqwBi" id="3f8ZVRYfTM2" role="33vP2m">
+                        <node concept="2GrUjf" id="3f8ZVRYfTM3" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="3f8ZVRYfRlS" resolve="that" />
+                        </node>
+                        <node concept="3TrcHB" id="3f8ZVRYfTM4" role="2OqNvi">
+                          <ref role="3TsBF5" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="3f8ZVRYfT5F" role="3cqZAp">
+                    <node concept="3clFbS" id="3f8ZVRYfT5H" role="3clFbx">
+                      <node concept="3N13vt" id="3f8ZVRYfUt3" role="3cqZAp" />
+                    </node>
+                    <node concept="2OqwBi" id="3f8ZVRYfUlt" role="3clFbw">
+                      <node concept="37vLTw" id="3f8ZVRYfTM5" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3f8ZVRYfTM1" resolve="thatIdPrefix" />
+                      </node>
+                      <node concept="17RlXB" id="3f8ZVRYfUsP" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2Mj0R9" id="3f8ZVRYfRnM" role="3cqZAp">
+                    <node concept="3fqX7Q" id="3f8ZVRYfU_a" role="2MkoU_">
+                      <node concept="2OqwBi" id="3f8ZVRYfU_c" role="3fr31v">
+                        <node concept="37vLTw" id="3f8ZVRYfU_d" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3f8ZVRYfNxR" resolve="idPrefix" />
+                        </node>
+                        <node concept="liA8E" id="3f8ZVRYfU_e" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                          <node concept="37vLTw" id="3f8ZVRYfU_f" role="37wK5m">
+                            <ref role="3cqZAo" node="3f8ZVRYfTM1" resolve="thatIdPrefix" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs3" id="3f8ZVRYgGGu" role="2MkJ7o">
+                      <node concept="3cpWs3" id="3f8ZVRYgGy1" role="3uHU7B">
+                        <node concept="Xl_RD" id="3f8ZVRYfUCk" role="3uHU7B">
+                          <property role="Xl_RC" value="two GoalStructures with the same prefix are not allowed. Prefix " />
+                        </node>
+                        <node concept="37vLTw" id="3f8ZVRYgGBA" role="3uHU7w">
+                          <ref role="3cqZAo" node="3f8ZVRYfNxR" resolve="idPrefix" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="3f8ZVRYgGRz" role="3uHU7w">
+                        <property role="Xl_RC" value=" was already used." />
+                      </node>
+                    </node>
+                    <node concept="2GrUjf" id="3f8ZVRYfUG$" role="1urrMF">
+                      <ref role="2Gs0qQ" node="3f8ZVRYfRlS" resolve="that" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1noKC0JQAtk" role="L3pyr">
+              <ref role="3cqZAo" node="1noKC0JQumm" resolve="proj" />
             </node>
           </node>
         </node>
