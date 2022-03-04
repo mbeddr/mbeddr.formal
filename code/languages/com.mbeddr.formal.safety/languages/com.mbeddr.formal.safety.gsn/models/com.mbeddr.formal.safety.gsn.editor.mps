@@ -551,6 +551,7 @@
         <property id="6910723851735128106" name="hasRelayoutAllEdgesButton" index="3sAwEg" />
         <property id="6910723851735128104" name="hasLayoutDiagramButton" index="3sAwEi" />
         <property id="6910723851735128109" name="hasMaximizeDiagramButton" index="3sAwEn" />
+        <property id="6910723851735134393" name="hasFitSizeAllDiagramButton" index="3sAy83" />
         <property id="6910723851735134386" name="hasZoomOutButton" index="3sAy88" />
         <property id="6910723851735134380" name="hasZoomInButton" index="3sAy8m" />
       </concept>
@@ -2787,11 +2788,12 @@
       </node>
       <node concept="3sA_1f" id="6ucyvMUx0gv" role="3sAl1G">
         <property role="3sAwEi" value="true" />
-        <property role="3sAwEg" value="true" />
+        <property role="3sAwEg" value="false" />
         <property role="3sAwEn" value="true" />
         <property role="3sAwEb" value="true" />
         <property role="3sAy8m" value="true" />
         <property role="3sAy88" value="true" />
+        <property role="3sAy83" value="true" />
       </node>
     </node>
   </node>
