@@ -838,5 +838,25 @@
       </node>
     </node>
   </node>
+  <node concept="1E0nO6" id="1noKC0JX6tS">
+    <ref role="1E05RL" node="1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
+    <node concept="3f73zW" id="1noKC0JX6tV" role="3f73zo">
+      <property role="TrG5h" value="not providing" />
+    </node>
+    <node concept="3f73zW" id="1noKC0JX6tY" role="3f73zo">
+      <property role="TrG5h" value="too big" />
+    </node>
+    <node concept="3f73zW" id="1noKC0JX6u3" role="3f73zo">
+      <property role="TrG5h" value="dd" />
+    </node>
+    <node concept="1E0nOG" id="1noKC0JX6tT" role="1E0n_e">
+      <ref role="1E0nOH" node="1L4MZBxVgDi" resolve="Airbag" />
+      <node concept="1E0nOJ" id="1noKC0JX6tU" role="1E0nOC">
+        <ref role="1E0n_N" node="1L4MZBxVgH8" resolve="Airbag Deployed" />
+        <node concept="3f6qtF" id="1noKC0JX6ua" role="3f6qqO" />
+        <node concept="3f6qtF" id="1noKC0JX6ud" role="3f6qqO" />
+      </node>
+    </node>
+  </node>
 </model>
 
