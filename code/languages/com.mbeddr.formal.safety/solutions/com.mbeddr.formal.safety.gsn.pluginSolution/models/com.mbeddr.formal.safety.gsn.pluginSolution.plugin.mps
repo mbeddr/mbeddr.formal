@@ -69,6 +69,11 @@
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
       <ref role="33glcY" to="g35p:4Cms47V74xp" resolve="GOAL_STRUCTURE_TREE_TABLE" />
     </node>
+    <node concept="33gmoH" id="3EDV2YKNeYH" role="2hfSGL">
+      <property role="33g7Lv" value="GSN Low Level Textual View" />
+      <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
+      <ref role="33glcY" to="g35p:3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
+    </node>
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="2f8Tey" to="8js5:goNQ8fnbte" resolve="fastenProjectionModes" />
       <ref role="tU$_T" to="8js5:goNQ8fnbtb" resolve="fastenPlatformNotationGroup" />
