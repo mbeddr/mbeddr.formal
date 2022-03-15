@@ -55,6 +55,9 @@
         <child id="7429591467341004872" name="parts" index="aenpr" />
         <child id="7429591467341004877" name="condition" index="aenpu" />
       </concept>
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
@@ -151,6 +154,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -172,6 +176,7 @@
       <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
         <child id="1950447826683828796" name="target" index="3XvnJa" />
       </concept>
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -3829,6 +3834,25 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6qVhvNsGxiF">
+    <property role="TrG5h" value="AttributesEditorComponent" />
+    <ref role="1XX52x" to="b19z:6qVhvNsGxid" resolve="IAttributesContainer" />
+    <node concept="3EZMnI" id="6qVhvNsGxiH" role="2wV5jI">
+      <node concept="3F0ifn" id="6qVhvNsGxiO" role="3EZMnx">
+        <property role="3F0ifm" value="Attributes:" />
+      </node>
+      <node concept="3EZMnI" id="6qVhvNsGxiU" role="3EZMnx">
+        <node concept="VPM3Z" id="6qVhvNsGxiW" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6qVhvNsGxji" role="3EZMnx" />
+        <node concept="3F2HdR" id="6qVhvNsGxj6" role="3EZMnx">
+          <ref role="1NtTu8" to="b19z:6qVhvNsGxie" resolve="attributes" />
+          <node concept="2iRkQZ" id="6qVhvNsGxjb" role="2czzBx" />
+        </node>
+        <node concept="l2Vlx" id="6qVhvNsGxiZ" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="6qVhvNsGxiK" role="2iSdaV" />
     </node>
   </node>
 </model>

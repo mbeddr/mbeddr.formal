@@ -372,6 +372,9 @@
     <property role="TrG5h" value="GoalStructureAttributeBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6qVhvNsHTsR" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6qVhvNsGwB7" resolve="IAttribute" />
+    </node>
   </node>
   <node concept="Az7Fb" id="2p23w$d2KIt">
     <property role="3F6X1D" value="2756781353940487069" />

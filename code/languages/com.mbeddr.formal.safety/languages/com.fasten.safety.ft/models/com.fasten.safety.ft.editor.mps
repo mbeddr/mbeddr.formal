@@ -682,6 +682,9 @@
       </node>
       <node concept="2iRkQZ" id="5rwT_Jny5eT" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="6qVhvNsGXSr" role="6VMZX">
+      <ref role="PMmxG" to="xnej:6qVhvNsGxiF" resolve="AttributesEditorComponent" />
+    </node>
   </node>
   <node concept="24kQdi" id="5rwT_JnuRc1">
     <property role="3GE5qa" value="events" />
@@ -2953,6 +2956,9 @@
         </node>
       </node>
     </node>
+    <node concept="PMmxH" id="6qVhvNsGY9W" role="6VMZX">
+      <ref role="PMmxG" to="xnej:6qVhvNsGxiF" resolve="AttributesEditorComponent" />
+    </node>
   </node>
   <node concept="24kQdi" id="1GpuQyThI5s">
     <property role="3GE5qa" value="tree" />
@@ -3478,6 +3484,9 @@
     <node concept="2aJ2om" id="7wRJ5ynOywn" role="CpUAK">
       <ref role="2$4xQ3" node="7wRJ5ynOjYu" resolve="FT_TEXT" />
     </node>
+    <node concept="PMmxH" id="6qVhvNsGYfb" role="6VMZX">
+      <ref role="PMmxG" to="xnej:6qVhvNsGxiF" resolve="AttributesEditorComponent" />
+    </node>
   </node>
   <node concept="24kQdi" id="7wRJ5ynOLFs">
     <property role="3GE5qa" value="text" />
@@ -3499,6 +3508,9 @@
     </node>
     <node concept="2aJ2om" id="7wRJ5ynOLFw" role="CpUAK">
       <ref role="2$4xQ3" node="7wRJ5ynOjYu" resolve="FT_TEXT" />
+    </node>
+    <node concept="PMmxH" id="6qVhvNsHv28" role="6VMZX">
+      <ref role="PMmxG" node="EBYTccZOox" resolve="FaultTreeElementBaseInInspectorEditorComponent" />
     </node>
   </node>
   <node concept="24kQdi" id="7wRJ5ynOLG7">
@@ -6871,6 +6883,10 @@
           <ref role="1NtTu8" to="spwl:EBYTccYRyA" resolve="description" />
         </node>
         <node concept="2iRfu4" id="EBYTccYRzb" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="6qVhvNsHv1V" role="3EZMnx" />
+      <node concept="PMmxH" id="6qVhvNsHv1J" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:6qVhvNsGxiF" resolve="AttributesEditorComponent" />
       </node>
     </node>
   </node>
