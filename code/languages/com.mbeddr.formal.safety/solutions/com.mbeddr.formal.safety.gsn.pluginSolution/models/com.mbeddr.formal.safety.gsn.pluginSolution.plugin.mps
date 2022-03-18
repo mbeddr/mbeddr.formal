@@ -47,7 +47,7 @@
     <property role="3GE5qa" value="diagrams" />
     <property role="TrG5h" value="GsnNotationSwitcher" />
     <property role="33gmoF" value="true" />
-    <property role="1QNlnu" value="GSN Diagramatic View" />
+    <property role="1QNlnu" value="GSN Diagrammatic View" />
     <ref role="2hhq6$" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="GSN Textual View" />
