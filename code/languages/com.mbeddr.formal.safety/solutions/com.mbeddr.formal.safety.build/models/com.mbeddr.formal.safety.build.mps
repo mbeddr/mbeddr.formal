@@ -9386,6 +9386,86 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="5YWtEMPJWqd" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.argument.process.artefacts" />
+        <property role="3LESm3" value="fdecb1e5-875e-41ef-a5fd-4b18f747f204" />
+        <node concept="398BVA" id="5YWtEMPJWTz" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="5YWtEMPJXbz" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5YWtEMPJXAv" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process.artefacts" />
+              <node concept="2Ry0Ak" id="5YWtEMPJXSu" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process.artefacts.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5YWtEMPJYrQ" role="3bR37C">
+          <node concept="3bR9La" id="5YWtEMPJYrR" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5YWtEMPJYrS" role="3bR37C">
+          <node concept="3bR9La" id="5YWtEMPJYrT" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5YWtEMPJYrU" role="3bR37C">
+          <node concept="3bR9La" id="5YWtEMPJYrV" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5YWtEMPJYrW" role="3bR37C">
+          <node concept="3bR9La" id="5YWtEMPJYrX" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5YWtEMPJYrY" role="3bR37C">
+          <node concept="3bR9La" id="5YWtEMPJYrZ" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="5YWtEMPJYsb" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5YWtEMPJYsc" role="1HemKq">
+            <node concept="398BVA" id="5YWtEMPJYs0" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="5YWtEMPJYs1" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5YWtEMPJYs2" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process.artefacts" />
+                  <node concept="2Ry0Ak" id="5YWtEMPJYs3" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5YWtEMPJYsd" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="5YWtEMPJYE_" role="3bR31x">
+          <node concept="3LXTmp" id="5YWtEMPJYEA" role="3rtmxm">
+            <node concept="398BVA" id="5YWtEMPJYEB" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="5YWtEMPJYEC" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5YWtEMPJYED" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process.artefacts" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5YWtEMPJYEF" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1X3_iC" id="1FMyjUPhIJF" role="lGtFl">
         <property role="3V$3am" value="modules" />
         <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/1500819558095907805/1500819558095907806" />
