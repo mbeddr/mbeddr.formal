@@ -24,6 +24,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -163,8 +164,10 @@
   </node>
   <node concept="1TIwiD" id="1noKC0JTirn">
     <property role="EcuMT" value="1574221925581137623" />
-    <property role="3GE5qa" value="ressources" />
+    <property role="3GE5qa" value="ressources.external" />
     <property role="TrG5h" value="FileRessource" />
+    <property role="34LRSv" value="file" />
+    <property role="R4oN_" value="references an external file" />
     <ref role="1TJDcQ" node="1noKC0JTiri" resolve="Ressource" />
     <node concept="1TJgyj" id="1noKC0JTiro" role="1TKVEi">
       <property role="IQ2ns" value="1574221925581137624" />
@@ -175,8 +178,10 @@
   </node>
   <node concept="1TIwiD" id="1noKC0JTirq">
     <property role="EcuMT" value="1574221925581137626" />
-    <property role="3GE5qa" value="ressources" />
+    <property role="3GE5qa" value="ressources.external" />
     <property role="TrG5h" value="UrlRessource" />
+    <property role="34LRSv" value="url" />
+    <property role="R4oN_" value="reference addressed by an url" />
     <ref role="1TJDcQ" node="1noKC0JTiri" resolve="Ressource" />
     <node concept="1TJgyi" id="1noKC0JV7J7" role="1TKVEl">
       <property role="IQ2nx" value="1574221925581618119" />
@@ -394,6 +399,34 @@
     <node concept="25R33" id="1noKC0JTmSo" role="25R1y">
       <property role="3tVfz5" value="1574221925581155864" />
       <property role="TrG5h" value="Revocation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="50Wzfz4tjnH">
+    <property role="EcuMT" value="5781651021712668141" />
+    <property role="3GE5qa" value="ressources.mps" />
+    <property role="TrG5h" value="MPSNodeRessource" />
+    <property role="34LRSv" value="node-reference" />
+    <property role="R4oN_" value="references a node in mps" />
+    <ref role="1TJDcQ" node="1noKC0JTiri" resolve="Ressource" />
+    <node concept="1TJgyi" id="50Wzfz4tTXL" role="1TKVEl">
+      <property role="IQ2nx" value="5781651021712826225" />
+      <property role="TrG5h" value="modelId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="50Wzfz4tUGQ" role="1TKVEl">
+      <property role="IQ2nx" value="5781651021712829238" />
+      <property role="TrG5h" value="modelName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="50Wzfz4tTXN" role="1TKVEl">
+      <property role="IQ2nx" value="5781651021712826227" />
+      <property role="TrG5h" value="nodeId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="50Wzfz4tTXQ" role="1TKVEl">
+      <property role="IQ2nx" value="5781651021712826230" />
+      <property role="TrG5h" value="nodeName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

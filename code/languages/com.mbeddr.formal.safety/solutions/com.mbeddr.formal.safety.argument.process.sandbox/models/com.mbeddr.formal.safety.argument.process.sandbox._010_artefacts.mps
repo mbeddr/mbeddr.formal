@@ -3,8 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="fdecb1e5-875e-41ef-a5fd-4b18f747f204" name="com.mbeddr.formal.safety.argument.process.artefacts" version="-1" />
+    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="v0ty" ref="r:f4296e65-905c-42ee-8349-52d0474604ad(com.mbeddr.formal.safety.stamp.sandbox._010_sandbox)" />
+  </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -15,6 +18,12 @@
       </concept>
     </language>
     <language id="fdecb1e5-875e-41ef-a5fd-4b18f747f204" name="com.mbeddr.formal.safety.argument.process.artefacts">
+      <concept id="5781651021712668141" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.MPSNodeRessource" flags="ng" index="2kir$l">
+        <property id="5781651021712826225" name="modelId" index="2kiLe9" />
+        <property id="5781651021712826227" name="nodeId" index="2kiLeb" />
+        <property id="5781651021712826230" name="nodeName" index="2kiLee" />
+        <property id="5781651021712829238" name="modelName" index="2kiMve" />
+      </concept>
       <concept id="1574221925581155847" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.ArtefactEvent" flags="ng" index="UfqM7">
         <property id="1574221925581155850" name="date" index="UfqMa" />
         <property id="1574221925581155852" name="type" index="UfqMc" />
@@ -29,6 +38,7 @@
       </concept>
       <concept id="1574221925581136308" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Artefact" flags="ng" index="UfucO">
         <property id="1574221925581137602" name="versionId" index="Ufuh2" />
+        <property id="1574221925581137604" name="date" index="Ufuh4" />
         <child id="1574221925581862287" name="events" index="Uafsf" />
         <child id="1574221925581496545" name="ressources" index="UcA9x" />
         <child id="1574221925581155844" name="relations" index="UfqM4" />
@@ -48,11 +58,14 @@
     <node concept="UfucO" id="1noKC0JTP7j" role="UfqWl">
       <property role="Ufuh2" value="1.0" />
       <node concept="19SGf9" id="1noKC0JUE3s" role="Ufuh7">
-        <node concept="19SUe$" id="1noKC0JUE3t" role="19SJt6">
+        <node concept="19SUe$" id="50Wzfz4tjo6" role="19SJt6">
           <property role="19SUeA" value="Initial version" />
         </node>
       </node>
-      <node concept="Ufuhq" id="1noKC0JV7J5" role="UcA9x" />
+      <node concept="Ufuhq" id="1noKC0JV7J5" role="UcA9x">
+        <property role="TrG5h" value="url" />
+        <property role="UfqYJ" value="222" />
+      </node>
       <node concept="Ufuhn" id="1noKC0JVpSs" role="UcA9x">
         <property role="TrG5h" value="hazards_excel" />
         <property role="UfqYJ" value="324" />
@@ -67,6 +80,25 @@
         <property role="UfqMc" value="dd" />
         <property role="TrG5h" value="ff" />
         <property role="UfqYJ" value="ff" />
+      </node>
+    </node>
+    <node concept="UfucO" id="50Wzfz4t_G$" role="UfqWl">
+      <property role="Ufuh2" value="1.1" />
+      <property role="Ufuh4" value="12.12.2022" />
+      <node concept="2kir$l" id="50Wzfz4t_GI" role="UcA9x">
+        <property role="2kiMve" value="_010_patterns_catalogue" />
+        <property role="2kiLe9" value="r:975e4969-1ce0-4ded-8867-b40b46ebd140" />
+        <property role="2kiLeb" value="3804072175782964306" />
+        <property role="TrG5h" value="Alternative Argumentation Strategies" />
+        <property role="2kiLee" value="Argument Over Hazards" />
+        <property role="UfqYJ" value="RES_00" />
+      </node>
+      <node concept="2kir$l" id="50Wzfz4vLwg" role="UcA9x">
+        <property role="2kiMve" value="_010_patterns_catalogue" />
+        <property role="2kiLe9" value="r:975e4969-1ce0-4ded-8867-b40b46ebd140" />
+        <property role="2kiLeb" value="1138105794983870743" />
+        <property role="2kiLee" value="Alternative Argumentation Strategies" />
+        <property role="UfqYJ" value="RES_01" />
       </node>
     </node>
   </node>
