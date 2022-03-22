@@ -996,6 +996,30 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5WyjFZRlSgP" role="13h7CS">
+      <property role="TrG5h" value="shouldDisplayLabel" />
+      <node concept="3Tm1VV" id="5WyjFZRlSgQ" role="1B3o_S" />
+      <node concept="10P_77" id="5WyjFZRlTgf" role="3clF45" />
+      <node concept="3clFbS" id="5WyjFZRlSgS" role="3clF47">
+        <node concept="3clFbF" id="5WyjFZRlThj" role="3cqZAp">
+          <node concept="2OqwBi" id="5WyjFZRlTPE" role="3clFbG">
+            <node concept="2OqwBi" id="5WyjFZRlTrQ" role="2Oq$k0">
+              <node concept="13iPFW" id="5WyjFZRlThi" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5WyjFZRlTAO" role="2OqNvi">
+                <node concept="1xMEDy" id="5WyjFZRlTAQ" role="1xVPHs">
+                  <node concept="chp4Y" id="5WyjFZRlTBs" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrcHB" id="5WyjFZRlU3h" role="2OqNvi">
+              <ref role="3TsBF5" to="py52:5WyjFZRl16s" resolve="displayRelationNames" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5mW_a0OE8bZ">
     <ref role="13h7C2" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />

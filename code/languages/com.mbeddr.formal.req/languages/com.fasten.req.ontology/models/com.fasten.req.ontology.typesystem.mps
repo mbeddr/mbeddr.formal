@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="6wa3" ref="r:fe70b1ce-4411-47cc-b7d1-2d3fab0737d6(com.fasten.req.ontology.structure)" />
-    <import index="qm72" ref="r:9f4492b2-2b79-4150-ab5d-4e79c9c00945(com.fasten.req.odd.typesystem)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>

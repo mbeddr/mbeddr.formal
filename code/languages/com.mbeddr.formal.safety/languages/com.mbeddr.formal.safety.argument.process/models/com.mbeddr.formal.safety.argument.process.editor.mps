@@ -113,7 +113,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5uoS5eUXErh">
-    <property role="3GE5qa" value="state" />
+    <property role="3GE5qa" value="state.definition" />
     <ref role="1XX52x" to="l1gl:5uoS5eUXEqK" resolve="EntityStateBase" />
     <node concept="PMmxH" id="5uoS5eUXErm" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />

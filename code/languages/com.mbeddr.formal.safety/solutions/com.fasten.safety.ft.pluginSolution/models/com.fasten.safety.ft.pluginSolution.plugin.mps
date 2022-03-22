@@ -48,7 +48,7 @@
     <property role="3GE5qa" value="diagrams" />
     <property role="TrG5h" value="FtNotationSwitcher" />
     <property role="33gmoF" value="true" />
-    <property role="1QNlnu" value="FT Diagramatic View" />
+    <property role="1QNlnu" value="FT Diagrammatic View" />
     <ref role="2hhq6$" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
     <node concept="33gmoH" id="7wRJ5ynOjY_" role="2hfSGL">
       <property role="33g7Lv" value="FT Textual View" />

@@ -82,6 +82,45 @@
       <zipfileset file="${mbeddr.formal.safety.code}/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.formal.safety.build-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/com.fasten.assurance.build.jar" />
+    <mkdir dir="${build.tmp}/default/com.fasten.assurance.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.fasten.assurance.build.jar/META-INF/module.xml">
+      <module namespace="com.fasten.assurance.build" type="solution" uuid="7301161d-854c-45d9-b0d7-121b4fb52625">
+        <dependencies>
+          <module ref="b4bbc0a5-248e-4db2-9ddc-4901a463c66c(com.mbeddr.formal.safety.build)" kind="cl" />
+          <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
+          <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
+          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
+          <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
+          <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="com.fasten.assurance.build-src.jar" descriptor="com.fasten.assurance.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/com.fasten.assurance.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.fasten.assurance.build" />
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/com.fasten.assurance.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.fasten.assurance.build-models">
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/com.fasten.assurance.build-src.jar" duplicate="preserve">
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.fasten.assurance.build-models" prefix="module/models" />
+    </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
   </target>
   
@@ -96,7 +135,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.formal.safety.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.formal.safety.build, java.compile.com.fasten.assurance.build" />
   
   <target name="processResources" />
   
@@ -198,6 +237,7 @@
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.runtime.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <chunk>
+        <module file="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" />
         <module file="${mbeddr.formal.safety.code}/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" />
       </chunk>
       <jvmargs>
@@ -234,7 +274,24 @@
     </javac>
   </target>
   
+  <target name="java.compile.com.fasten.assurance.build" depends="java.compile.com.mbeddr.formal.safety.build">
+    <mkdir dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.fasten.assurance.build" />
+    <javac destdir="${build.tmp}/java/out/com.fasten.assurance.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.formal.safety.build" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="cleanSources">
+    <delete dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" />
     <delete dir="${mbeddr.formal.safety.code}/solutions/com.mbeddr.formal.safety.build/source_gen" />
   </target>
 </project>

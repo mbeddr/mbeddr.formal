@@ -170,7 +170,7 @@ ext.buildScriptClasspath = project.configurations.antLib.fileCollection { true }
 
 def artifactsDir = file("$buildDir/artifacts")
 def dependenciesDir = file("$buildDir/dependencies")
-
+def jdkDir = file("$buildDir/jdkDir")
 
 // ___________________ utilities ___________________
 
@@ -228,6 +228,36 @@ task build_formal_languages(type: BuildLanguages, dependsOn: [build_allScripts])
 
 task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [build_formal_languages]) {
     script new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
+}
+
+task resolveJBR_Win(type: Copy) {
+    from { configurations.jbrWin.resolve() }
+    into jdkDir
+    rename { filename ->
+        def resolvedArtifact = configurations.jbrWin.resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+        return resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+    }
+}
+
+task unpackDistribution(type: Copy) {
+   from zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-$major.$minor-SNAPSHOT.zip")
+   into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp") 
+}
+
+task deleteJBR(type: Delete, dependsOn: unpackDistribution) {
+   delete "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-$major.$minor-SNAPSHOT/jbr"
+}
+
+task removeJBR(type: Zip, dependsOn: deleteJBR) {
+   from "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-$major.$minor-SNAPSHOT"
+   archiveName "fasten-$major.$minor-SNAPSHOT_with_removed_JBR.zip"
+   destinationDir(file("$artifactsDir/com.mbeddr.formal.safetyDistribution"))
+}
+
+task package_fasten_safety_distribution_win(type: Zip, dependsOn: [resolveJBR_Win, build_fasten_safety_distribution, removeJBR]) {
+    baseName "fasten-$major.$minor-SNAPSHOT-Win"
+    from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-$major.$minor-SNAPSHOT_with_removed_JBR.zip"))
+    from(tarTree(resources.gzip("$jdkDir/jbr-windows-x64.tgz")))
 }
 
 task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {

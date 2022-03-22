@@ -13,12 +13,10 @@
   <sourcePath />
   <languageVersions>
     <language slang="l:b43c548b-f75f-46e2-ad24-de9edd93e95e:com.fasten.safety.fmea" version="0" />
-    <language slang="l:1110e3ef-a98e-444f-9748-1d61fe61c7f7:com.fasten.safety.fmea.arch" version="0" />
     <language slang="l:dc773f77-cced-42c8-ba62-465140b810a5:com.fasten.safety.fmea.iso26262" version="0" />
     <language slang="l:ab274f70-5238-4883-adc7-02df7a757829:com.fasten.safety.ft" version="1" />
     <language slang="l:091b20ea-7bf0-41d6-8e6e-4460a9bd8121:com.fasten.safety.ft.xfta_gen" version="0" />
     <language slang="l:c6d7e8a3-3d80-479a-8799-a11fe1902b1c:com.fasten.safety.hiphops" version="0" />
-    <language slang="l:521724dc-29ef-4d5a-9c15-25f6b680b809:com.fasten.safety.hiphops.arch" version="0" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
     <language slang="l:0deccdfd-196b-4d8c-895e-0d6cb8014dfd:com.mbeddr.formal.req.base" version="0" />
@@ -35,7 +33,7 @@
     <language slang="l:17da266c-02d9-4bbd-b69b-8a656b49f45c:com.mbeddr.formal.safety.hara" version="0" />
     <language slang="l:a798113f-e2cd-4e21-a8e2-ca1903cb9c43:com.mbeddr.formal.safety.iso26262" version="1" />
     <language slang="l:434b2bfb-bd7a-47c9-bced-b445035e6d96:com.mbeddr.formal.safety.req" version="1" />
-    <language slang="l:7e777b53-0a6b-4719-b36d-10475788d49f:com.mbeddr.formal.safety.stamp" version="1" />
+    <language slang="l:7e777b53-0a6b-4719-b36d-10475788d49f:com.mbeddr.formal.safety.stamp" version="2" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />

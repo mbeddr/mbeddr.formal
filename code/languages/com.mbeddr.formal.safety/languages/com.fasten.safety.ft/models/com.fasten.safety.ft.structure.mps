@@ -8,6 +8,7 @@
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -102,6 +103,9 @@
     <node concept="PrWs8" id="5rwT_JnuR3S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6qVhvNsGXIz" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributesContainer" />
+    </node>
     <node concept="1irR5M" id="5rwT_JnuR41" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irPie" id="5rwT_JnuR48" role="1irR9h">
@@ -123,6 +127,9 @@
     </node>
     <node concept="PrWs8" id="2s9yRNfoxlE" role="PzmwI">
       <ref role="PrY4T" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
+    </node>
+    <node concept="PrWs8" id="6qVhvNsHv1v" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributesContainer" />
     </node>
     <node concept="1TJgyj" id="EBYTccYRyA" role="1TKVEi">
       <property role="IQ2ns" value="767858870486530214" />

@@ -1214,5 +1214,27 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3EDV2YKH5gQ">
+    <property role="3GE5qa" value="diff_view" />
+    <ref role="1XX52x" to="s9pq:6R91tEKNYrw" resolve="DocumentBasedExternalEvidenceSolution" />
+    <node concept="B$lHz" id="3EDV2YKH5gU" role="2wV5jI" />
+    <node concept="2aJ2om" id="3EDV2YKH5gS" role="CpUAK">
+      <ref role="2$4xQ3" to="g35p:3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
+    </node>
+    <node concept="PMmxH" id="3EDV2YKH5gX" role="6VMZX">
+      <ref role="PMmxG" node="7Jm8RM1mJvU" resolve="DocumentBasedExternalEvidenceSolutionTextAreaInInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3EDV2YKH5gZ">
+    <property role="3GE5qa" value="diff_view" />
+    <ref role="1XX52x" to="s9pq:6R91tEKNYHe" resolve="GeneratedExternalEvidenceSolution" />
+    <node concept="B$lHz" id="3EDV2YKH5h0" role="2wV5jI" />
+    <node concept="2aJ2om" id="3EDV2YKH5h1" role="CpUAK">
+      <ref role="2$4xQ3" to="g35p:3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
+    </node>
+    <node concept="PMmxH" id="3EDV2YKH5h2" role="6VMZX">
+      <ref role="PMmxG" node="7Jm8RM1lPxB" resolve="GeneratedExternalEvidenceSolutionTextAreaInInspector" />
+    </node>
+  </node>
 </model>
 

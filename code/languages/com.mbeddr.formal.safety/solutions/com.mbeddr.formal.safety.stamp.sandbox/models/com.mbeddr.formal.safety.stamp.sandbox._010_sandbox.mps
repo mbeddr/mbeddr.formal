@@ -2,7 +2,7 @@
 <model ref="r:f4296e65-905c-42ee-8349-52d0474604ad(com.mbeddr.formal.safety.stamp.sandbox._010_sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="2" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
   </languages>
@@ -14,8 +14,13 @@
       </concept>
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF">
+        <child id="2925021647566955740" name="actions" index="3f6qtG" />
+      </concept>
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
       <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
         <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
         <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
       </concept>
       <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
@@ -24,10 +29,7 @@
       </concept>
       <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
         <reference id="2004523000582375039" name="action" index="1E0n_N" />
-        <child id="2004523000582414398" name="providing" index="1E0tWM" />
-        <child id="2004523000582414407" name="stoppedTooSoonAppliedTooLong" index="1E0tXb" />
-        <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
-        <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
       </concept>
       <concept id="2004523000582413321" name="com.mbeddr.formal.safety.stamp.structure.ActionDescriptionBase" flags="ng" index="1E0uc5">
         <child id="2185346695491723265" name="hazards" index="2Dy4$W" />
@@ -1372,98 +1374,127 @@
       <ref role="1E0nOH" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
       <node concept="1E0nOJ" id="1JhvKLLOibU" role="1E0nOC">
         <ref role="1E0n_N" node="3Cm$$O2vAwE" resolve="Arm" />
-        <node concept="1E0uc6" id="1JhvKLLOOtH" role="1E0tWM">
-          <property role="TrG5h" value="ARM_UNINTENDED" />
-          <node concept="19SGf9" id="1JhvKLLOOtJ" role="1E0uc7">
-            <node concept="19SUe$" id="1JhvKLLOOtK" role="19SJt6">
-              <property role="19SUeA" value="Arm command provided &#10;unintentionally" />
-            </node>
-          </node>
-          <node concept="DABN8" id="EZNLLOG_WJ" role="2Dy4$W">
-            <ref role="DABNb" node="EZNLLOG_WF" resolve="accidental launch" />
-          </node>
-        </node>
-        <node concept="1E0COo" id="1JhvKLLPvln" role="1E0tXe">
-          <property role="TrG5h" value="ARM_TOO_SOON" />
-          <node concept="1E0COg" id="1JhvKLLPvlt" role="1E0COp">
-            <node concept="19SGf9" id="1JhvKLLPvlv" role="1E0COh">
-              <node concept="19SUe$" id="1JhvKLLPvlw" role="19SJt6">
-                <property role="19SUeA" value="when arm is expected" />
+        <node concept="3f6qtF" id="6vZMoXu1P0K" role="3f6qqO">
+          <node concept="1E0uc6" id="1JhvKLLOOtH" role="3f6qtG">
+            <property role="TrG5h" value="ARM_UNINTENDED" />
+            <node concept="19SGf9" id="1JhvKLLOOtJ" role="1E0uc7">
+              <node concept="19SUe$" id="1JhvKLLOOtK" role="19SJt6">
+                <property role="19SUeA" value="Arm command provided &#10;unintentionally" />
               </node>
             </node>
-          </node>
-          <node concept="1E0COF" id="1JhvKLLPvl_" role="1E0COk">
-            <node concept="19SGf9" id="1JhvKLLPvlB" role="1E0CO$">
-              <node concept="19SUe$" id="1JhvKLLPvlC" role="19SJt6">
-                <property role="19SUeA" value="leads to accidental launch" />
-              </node>
-            </node>
-            <node concept="DABN8" id="EZNLLOH1Wc" role="1Y4wFg">
+            <node concept="DABN8" id="EZNLLOG_WJ" role="2Dy4$W">
               <ref role="DABNb" node="EZNLLOG_WF" resolve="accidental launch" />
             </node>
           </node>
         </node>
+        <node concept="3f6qtF" id="6vZMoXu1P0M" role="3f6qqO" />
+        <node concept="3f6qtF" id="6vZMoXu1P0O" role="3f6qqO">
+          <node concept="1E0COo" id="1JhvKLLPvln" role="3f6qtG">
+            <property role="TrG5h" value="ARM_TOO_SOON" />
+            <node concept="1E0COg" id="1JhvKLLPvlt" role="1E0COp">
+              <node concept="19SGf9" id="1JhvKLLPvlv" role="1E0COh">
+                <node concept="19SUe$" id="1JhvKLLPvlw" role="19SJt6">
+                  <property role="19SUeA" value="when arm is expected" />
+                </node>
+              </node>
+            </node>
+            <node concept="1E0COF" id="1JhvKLLPvl_" role="1E0COk">
+              <node concept="19SGf9" id="1JhvKLLPvlB" role="1E0CO$">
+                <node concept="19SUe$" id="1JhvKLLPvlC" role="19SJt6">
+                  <property role="19SUeA" value="leads to accidental launch" />
+                </node>
+              </node>
+              <node concept="DABN8" id="EZNLLOH1Wc" role="1Y4wFg">
+                <ref role="DABNb" node="EZNLLOG_WF" resolve="accidental launch" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu1P0Q" role="3f6qqO" />
       </node>
     </node>
     <node concept="1E0nOG" id="6knLqZ8Kr2v" role="1E0n_e">
       <ref role="1E0nOH" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
       <node concept="1E0nOJ" id="6knLqZ8Kr2K" role="1E0nOC">
         <ref role="1E0n_N" node="3Cm$$O2vpuv" resolve="Training" />
-        <node concept="1E0COo" id="EZNLLO_608" role="1E0ucd">
-          <property role="TrG5h" value="NO_TRAINING" />
-          <node concept="1YbhHi" id="EZNLLO_60h" role="1E0COp">
-            <ref role="1YbhHj" node="EZNLLO_600" resolve="attack starts unexpectedly" />
-          </node>
-          <node concept="1E0COF" id="EZNLLO_60s" role="1E0COk">
-            <node concept="19SGf9" id="EZNLLO_60u" role="1E0CO$">
-              <node concept="19SUe$" id="EZNLLOFsmq" role="19SJt6">
-                <property role="19SUeA" value="innefficient defence &#10;can be provided" />
+        <node concept="3f6qtF" id="6vZMoXu1P0R" role="3f6qqO" />
+        <node concept="3f6qtF" id="6vZMoXu1P0S" role="3f6qqO">
+          <node concept="1E0COo" id="EZNLLO_608" role="3f6qtG">
+            <property role="TrG5h" value="NO_TRAINING" />
+            <node concept="1YbhHi" id="EZNLLO_60h" role="1E0COp">
+              <ref role="1YbhHj" node="EZNLLO_600" resolve="attack starts unexpectedly" />
+            </node>
+            <node concept="1E0COF" id="EZNLLO_60s" role="1E0COk">
+              <node concept="19SGf9" id="EZNLLO_60u" role="1E0CO$">
+                <node concept="19SUe$" id="EZNLLOFsmq" role="19SJt6">
+                  <property role="19SUeA" value="innefficient defence &#10;can be provided" />
+                </node>
               </node>
-            </node>
-            <node concept="DABN8" id="EZNLLOFR8N" role="1Y4wFg">
-              <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
-            </node>
-            <node concept="DABN8" id="EZNLLOH1Wj" role="1Y4wFg">
-              <ref role="DABNb" node="EZNLLOFR8K" resolve="no defence" />
+              <node concept="DABN8" id="EZNLLOFR8N" role="1Y4wFg">
+                <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
+              </node>
+              <node concept="DABN8" id="EZNLLOH1Wj" role="1Y4wFg">
+                <ref role="DABNb" node="EZNLLOFR8K" resolve="no defence" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1E0COo" id="CmOUmc2ZzQ" role="1E0tXe">
-          <property role="TrG5h" value="LATE_TRAINING" />
-          <node concept="1E0COg" id="CmOUmc2ZzW" role="1E0COp">
-            <node concept="19SGf9" id="CmOUmc2ZzY" role="1E0COh">
-              <node concept="19SUe$" id="CmOUmc2ZzZ" role="19SJt6">
-                <property role="19SUeA" value="too late training" />
+        <node concept="3f6qtF" id="6vZMoXu1P0T" role="3f6qqO">
+          <node concept="1E0COo" id="CmOUmc2ZzQ" role="3f6qtG">
+            <property role="TrG5h" value="LATE_TRAINING" />
+            <node concept="1E0COg" id="CmOUmc2ZzW" role="1E0COp">
+              <node concept="19SGf9" id="CmOUmc2ZzY" role="1E0COh">
+                <node concept="19SUe$" id="CmOUmc2ZzZ" role="19SJt6">
+                  <property role="19SUeA" value="too late training" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="1E0COF" id="CmOUmc2Z$4" role="1E0COk">
-            <node concept="19SGf9" id="CmOUmc2Z$6" role="1E0CO$">
-              <node concept="19SUe$" id="CmOUmc2Z$7" role="19SJt6">
-                <property role="19SUeA" value="innefficient defence &#10;can be provided" />
+            <node concept="1E0COF" id="CmOUmc2Z$4" role="1E0COk">
+              <node concept="19SGf9" id="CmOUmc2Z$6" role="1E0CO$">
+                <node concept="19SUe$" id="CmOUmc2Z$7" role="19SJt6">
+                  <property role="19SUeA" value="innefficient defence &#10;can be provided" />
+                </node>
               </node>
-            </node>
-            <node concept="DABN8" id="EZNLLOH1We" role="1Y4wFg">
-              <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
+              <node concept="DABN8" id="EZNLLOH1We" role="1Y4wFg">
+                <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3f6qtF" id="6vZMoXu1P0U" role="3f6qqO" />
       </node>
     </node>
     <node concept="1E0nOG" id="6XKrTzkz8yF" role="1E0n_e">
       <ref role="1E0nOH" node="3Cm$$O2vpqe" resolve="Early Warning System" />
       <node concept="1E0nOJ" id="6XKrTzkz8zc" role="1E0nOC">
         <ref role="1E0n_N" node="3Cm$$O2vUZb" resolve="Heartbeat" />
-        <node concept="1E0COo" id="EZNLLOH28Q" role="1E0ucd">
-          <property role="TrG5h" value="NO_HEARTBEAT" />
-          <node concept="1YbhHi" id="EZNLLOH293" role="1E0COp">
-            <ref role="1YbhHj" node="EZNLLOH28U" resolve="peace" />
-          </node>
-          <node concept="gxbn0" id="EZNLLOH296" role="1E0COk">
-            <ref role="gxbni" node="EZNLLOG_WF" resolve="accidental launch" />
+        <node concept="3f6qtF" id="6vZMoXu1P0V" role="3f6qqO" />
+        <node concept="3f6qtF" id="6vZMoXu1P0W" role="3f6qqO">
+          <node concept="1E0COo" id="EZNLLOH28Q" role="3f6qtG">
+            <property role="TrG5h" value="NO_HEARTBEAT" />
+            <node concept="1YbhHi" id="EZNLLOH293" role="1E0COp">
+              <ref role="1YbhHj" node="EZNLLOH28U" resolve="peace" />
+            </node>
+            <node concept="gxbn0" id="EZNLLOH296" role="1E0COk">
+              <ref role="gxbni" node="EZNLLOG_WF" resolve="accidental launch" />
+            </node>
           </node>
         </node>
+        <node concept="3f6qtF" id="6vZMoXu1P0X" role="3f6qqO" />
+        <node concept="3f6qtF" id="6vZMoXu1P0Y" role="3f6qqO" />
       </node>
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P0J" role="3f73zo">
+      <property role="TrG5h" value="Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P0L" role="3f73zo">
+      <property role="TrG5h" value="Not Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P0N" role="3f73zo">
+      <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P0P" role="3f73zo">
+      <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
     </node>
   </node>
   <node concept="1X_0jQ" id="1JhvKLLP$9l">
@@ -2473,81 +2504,105 @@
       <ref role="1E0nOH" node="4q9fsxm3oiB" resolve="Operator" />
       <node concept="1E0nOJ" id="4q9fsxm3otF" role="1E0nOC">
         <ref role="1E0n_N" node="4q9fsxm3oiX" resolve="Start Charging" />
-        <node concept="1E0COo" id="4q9fsxm3otH" role="1E0tWM">
-          <property role="TrG5h" value="UCA01" />
-          <node concept="1E0COg" id="4q9fsxm3otN" role="1E0COp">
-            <node concept="19SGf9" id="4q9fsxm3otP" role="1E0COh">
-              <node concept="19SUe$" id="4q9fsxm3otQ" role="19SJt6">
-                <property role="19SUeA" value="when battery full" />
+        <node concept="3f6qtF" id="6vZMoXu1P10" role="3f6qqO">
+          <node concept="1E0COo" id="4q9fsxm3otH" role="3f6qtG">
+            <property role="TrG5h" value="UCA01" />
+            <node concept="1E0COg" id="4q9fsxm3otN" role="1E0COp">
+              <node concept="19SGf9" id="4q9fsxm3otP" role="1E0COh">
+                <node concept="19SUe$" id="4q9fsxm3otQ" role="19SJt6">
+                  <property role="19SUeA" value="when battery full" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="1E0COF" id="4q9fsxm3otV" role="1E0COk">
-            <node concept="19SGf9" id="4q9fsxm3otX" role="1E0CO$">
-              <node concept="19SUe$" id="4q9fsxm3otY" role="19SJt6">
-                <property role="19SUeA" value="overheating battery" />
+            <node concept="1E0COF" id="4q9fsxm3otV" role="1E0COk">
+              <node concept="19SGf9" id="4q9fsxm3otX" role="1E0CO$">
+                <node concept="19SUe$" id="4q9fsxm3otY" role="19SJt6">
+                  <property role="19SUeA" value="overheating battery" />
+                </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3f6qtF" id="6vZMoXu1P12" role="3f6qqO" />
+        <node concept="3f6qtF" id="6vZMoXu1P14" role="3f6qqO" />
+        <node concept="3f6qtF" id="6vZMoXu1P16" role="3f6qqO" />
       </node>
     </node>
     <node concept="1E0nOG" id="4q9fsxm3ou9" role="1E0n_e">
       <ref role="1E0nOH" node="4q9fsxm3ohX" resolve="ChargerController" />
       <node concept="1E0nOJ" id="4q9fsxm3ouk" role="1E0nOC">
         <ref role="1E0n_N" node="4q9fsxm3opP" resolve="Close Switch" />
-        <node concept="1E0COo" id="4q9fsxm3oum" role="1E0tWM">
-          <property role="TrG5h" value="UCA02" />
-          <node concept="1E0COg" id="4q9fsxm3ous" role="1E0COp">
-            <node concept="19SGf9" id="4q9fsxm3ouu" role="1E0COh">
-              <node concept="19SUe$" id="4q9fsxm3ouv" role="19SJt6">
-                <property role="19SUeA" value="when charging not allowed" />
+        <node concept="3f6qtF" id="6vZMoXu1P17" role="3f6qqO">
+          <node concept="1E0COo" id="4q9fsxm3oum" role="3f6qtG">
+            <property role="TrG5h" value="UCA02" />
+            <node concept="1E0COg" id="4q9fsxm3ous" role="1E0COp">
+              <node concept="19SGf9" id="4q9fsxm3ouu" role="1E0COh">
+                <node concept="19SUe$" id="4q9fsxm3ouv" role="19SJt6">
+                  <property role="19SUeA" value="when charging not allowed" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="1E0COF" id="4q9fsxm3ouH" role="1E0COk">
-            <node concept="19SGf9" id="4q9fsxm3ouJ" role="1E0CO$">
-              <node concept="19SUe$" id="4q9fsxm3ouK" role="19SJt6">
-                <property role="19SUeA" value="overheating battery" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1E0COo" id="4q9fsxm3ov6" role="1E0tXe">
-          <property role="TrG5h" value="UCA03" />
-          <node concept="1E0COg" id="4q9fsxm3ovc" role="1E0COp">
-            <node concept="19SGf9" id="4q9fsxm3ove" role="1E0COh">
-              <node concept="19SUe$" id="4q9fsxm3ovf" role="19SJt6">
-                <property role="19SUeA" value="when carging not allowed" />
-              </node>
-            </node>
-          </node>
-          <node concept="1E0COF" id="4q9fsxm3ovk" role="1E0COk">
-            <node concept="19SGf9" id="4q9fsxm3ovm" role="1E0CO$">
-              <node concept="19SUe$" id="4q9fsxm3ovn" role="19SJt6">
-                <property role="19SUeA" value="overheating battery" />
+            <node concept="1E0COF" id="4q9fsxm3ouH" role="1E0COk">
+              <node concept="19SGf9" id="4q9fsxm3ouJ" role="1E0CO$">
+                <node concept="19SUe$" id="4q9fsxm3ouK" role="19SJt6">
+                  <property role="19SUeA" value="overheating battery" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="1E0COo" id="4q9fsxm3ovs" role="1E0tXb">
-          <property role="TrG5h" value="UCA04" />
-          <node concept="1E0COg" id="4q9fsxm3ovy" role="1E0COp">
-            <node concept="19SGf9" id="4q9fsxm3ov$" role="1E0COh">
-              <node concept="19SUe$" id="4q9fsxm3ov_" role="19SJt6">
-                <property role="19SUeA" value="when applied too long" />
+        <node concept="3f6qtF" id="6vZMoXu1P18" role="3f6qqO" />
+        <node concept="3f6qtF" id="6vZMoXu1P19" role="3f6qqO">
+          <node concept="1E0COo" id="4q9fsxm3ov6" role="3f6qtG">
+            <property role="TrG5h" value="UCA03" />
+            <node concept="1E0COg" id="4q9fsxm3ovc" role="1E0COp">
+              <node concept="19SGf9" id="4q9fsxm3ove" role="1E0COh">
+                <node concept="19SUe$" id="4q9fsxm3ovf" role="19SJt6">
+                  <property role="19SUeA" value="when carging not allowed" />
+                </node>
+              </node>
+            </node>
+            <node concept="1E0COF" id="4q9fsxm3ovk" role="1E0COk">
+              <node concept="19SGf9" id="4q9fsxm3ovm" role="1E0CO$">
+                <node concept="19SUe$" id="4q9fsxm3ovn" role="19SJt6">
+                  <property role="19SUeA" value="overheating battery" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="1E0COF" id="4q9fsxm3ovE" role="1E0COk">
-            <node concept="19SGf9" id="4q9fsxm3ovG" role="1E0CO$">
-              <node concept="19SUe$" id="4q9fsxm3ovM" role="19SJt6">
-                <property role="19SUeA" value="overheating battery" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu1P1a" role="3f6qqO">
+          <node concept="1E0COo" id="4q9fsxm3ovs" role="3f6qtG">
+            <property role="TrG5h" value="UCA04" />
+            <node concept="1E0COg" id="4q9fsxm3ovy" role="1E0COp">
+              <node concept="19SGf9" id="4q9fsxm3ov$" role="1E0COh">
+                <node concept="19SUe$" id="4q9fsxm3ov_" role="19SJt6">
+                  <property role="19SUeA" value="when applied too long" />
+                </node>
+              </node>
+            </node>
+            <node concept="1E0COF" id="4q9fsxm3ovE" role="1E0COk">
+              <node concept="19SGf9" id="4q9fsxm3ovG" role="1E0CO$">
+                <node concept="19SUe$" id="4q9fsxm3ovM" role="19SJt6">
+                  <property role="19SUeA" value="overheating battery" />
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P0Z" role="3f73zo">
+      <property role="TrG5h" value="Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P11" role="3f73zo">
+      <property role="TrG5h" value="Not Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P13" role="3f73zo">
+      <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu1P15" role="3f73zo">
+      <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
     </node>
   </node>
   <node concept="8gVzP" id="4q9fsxm3ovO">
