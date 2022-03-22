@@ -168,7 +168,7 @@
       <node concept="2iRkQZ" id="3Jn$RV31q$t" role="2iSdaV" />
       <node concept="3EZMnI" id="3Jn$RV31nMy" role="3EZMnx">
         <node concept="3F0ifn" id="3Jn$RV31nMN" role="3EZMnx">
-          <property role="3F0ifm" value="odd parameter:" />
+          <property role="3F0ifm" value="odd category:" />
         </node>
         <node concept="3F0A7n" id="3Jn$RV31nMH" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

@@ -126,7 +126,7 @@
   <node concept="1TIwiD" id="3Jn$RV31nMt">
     <property role="EcuMT" value="4312077340877618333" />
     <property role="TrG5h" value="ODDAttribute" />
-    <property role="34LRSv" value="attribute" />
+    <property role="34LRSv" value="category" />
     <property role="3GE5qa" value="odd_attribute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Jn$RV31nMu" role="PzmwI">
@@ -319,7 +319,7 @@
   <node concept="1TIwiD" id="1wKSXwECACA">
     <property role="EcuMT" value="1743143573360110118" />
     <property role="TrG5h" value="ODDAttributeWordRef" />
-    <property role="34LRSv" value="@odd-attribute" />
+    <property role="34LRSv" value="@odd-category" />
     <property role="3GE5qa" value="odd_attribute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1wKSXwECALk" role="PzmwI">
