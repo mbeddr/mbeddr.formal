@@ -3539,5 +3539,12 @@
     </node>
     <node concept="3Tm1VV" id="SmAS9ihOjb" role="1B3o_S" />
   </node>
+  <node concept="24kQdi" id="ixRZUx3I6G">
+    <property role="3GE5qa" value="req_kind" />
+    <ref role="1XX52x" to="z27p:ixRZUx3I6$" resolve="SystemRequirement" />
+    <node concept="3F0ifn" id="ixRZUx3I6M" role="2wV5jI">
+      <property role="3F0ifm" value="system-level" />
+    </node>
+  </node>
 </model>
 

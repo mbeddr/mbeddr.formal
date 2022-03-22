@@ -488,5 +488,13 @@
       <ref role="20lvS9" node="2N7iSwG$_7t" resolve="Requirement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="ixRZUx3I6$">
+    <property role="EcuMT" value="333794132118921636" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="SystemRequirement" />
+    <property role="34LRSv" value="system-level" />
+    <property role="R4oN_" value="system-level requirement" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
 </model>
 
