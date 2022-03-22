@@ -3546,5 +3546,12 @@
       <property role="3F0ifm" value="system-level" />
     </node>
   </node>
+  <node concept="24kQdi" id="ixRZUx53pX">
+    <property role="3GE5qa" value="req_kind" />
+    <ref role="1XX52x" to="z27p:ixRZUx53pP" resolve="MLRequirement" />
+    <node concept="3F0ifn" id="ixRZUx53pZ" role="2wV5jI">
+      <property role="3F0ifm" value="machine learning" />
+    </node>
+  </node>
 </model>
 

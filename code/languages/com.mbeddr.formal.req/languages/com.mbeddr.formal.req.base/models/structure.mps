@@ -496,5 +496,13 @@
     <property role="R4oN_" value="system-level requirement" />
     <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
   </node>
+  <node concept="1TIwiD" id="ixRZUx53pP">
+    <property role="EcuMT" value="333794132119271029" />
+    <property role="3GE5qa" value="req_kind" />
+    <property role="TrG5h" value="MLRequirement" />
+    <property role="34LRSv" value="machine learning" />
+    <property role="R4oN_" value="machine learning requirement" />
+    <ref role="1TJDcQ" node="4gtLUSMLiPT" resolve="ReqKindBase" />
+  </node>
 </model>
 
