@@ -288,7 +288,7 @@
                       <node concept="2OqwBi" id="3oGITgu_S13" role="3clFbG">
                         <node concept="30H73N" id="3oGITgu_GNb" role="2Oq$k0" />
                         <node concept="2qgKlT" id="3oGITgu_ScQ" role="2OqNvi">
-                          <ref role="37wK5l" to="fazf:3oGITgu_Hla" resolve="getEntitiesFromIncomingConnections" />
+                          <ref role="37wK5l" to="fazf:12e1nc$3fyh" resolve="getDownstreamNeighbouringElements" />
                         </node>
                       </node>
                     </node>

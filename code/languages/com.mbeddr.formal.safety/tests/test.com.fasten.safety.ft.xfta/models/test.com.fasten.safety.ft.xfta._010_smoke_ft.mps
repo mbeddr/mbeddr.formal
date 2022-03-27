@@ -219,16 +219,16 @@
       </node>
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7R" role="3CrHoS">
-      <ref role="21oszt" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
-      <ref role="21oszj" node="5sUzoS9Hb7L" resolve="top event" />
+      <ref role="21oszt" node="5sUzoS9Hb7L" resolve="top event" />
+      <ref role="21oszj" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7S" role="3CrHoS">
-      <ref role="21oszt" node="5sUzoS9Hb7N" resolve="basic event 1" />
-      <ref role="21oszj" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
+      <ref role="21oszj" node="5sUzoS9Hb7N" resolve="basic event 1" />
+      <ref role="21oszt" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7T" role="3CrHoS">
-      <ref role="21oszt" node="5sUzoS9Hb7P" resolve="basic event 2" />
-      <ref role="21oszj" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
+      <ref role="21oszj" node="5sUzoS9Hb7P" resolve="basic event 2" />
+      <ref role="21oszt" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
     </node>
     <node concept="37mRI7" id="5sUzoS9Hbr7" role="lGtFl">
       <node concept="37mRIm" id="5sUzoS9Hbr8" role="37mRID">

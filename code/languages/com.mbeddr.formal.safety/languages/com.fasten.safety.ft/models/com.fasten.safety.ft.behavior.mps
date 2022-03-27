@@ -250,7 +250,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="3oGITguAniH" role="13h7CS">
-      <property role="TrG5h" value="getOutgoingEntity" />
+      <property role="TrG5h" value="getIncomingEntity" />
       <node concept="3Tm1VV" id="3oGITguAniI" role="1B3o_S" />
       <node concept="3Tqbb2" id="3oGITguAnoK" role="3clF45">
         <ref role="ehGHo" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
@@ -290,7 +290,7 @@
                               <ref role="3cqZAo" node="3oGITguAph7" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="3oGITguAph6" role="2OqNvi">
-                              <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
+                              <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
                             </node>
                           </node>
                         </node>
@@ -313,7 +313,7 @@
               <ref role="3cqZAo" node="3oGITguApgO" resolve="ftcb" />
             </node>
             <node concept="3TrEf2" id="3oGITguApPe" role="2OqNvi">
-              <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+              <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
             </node>
           </node>
         </node>
