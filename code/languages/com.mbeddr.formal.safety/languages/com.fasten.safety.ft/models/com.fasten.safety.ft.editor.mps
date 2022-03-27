@@ -540,6 +540,9 @@
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -613,7 +616,6 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
-      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
   </registry>
   <node concept="24kQdi" id="5rwT_JnuR4F">
@@ -3020,31 +3022,14 @@
         <node concept="s8sZD" id="1GpuQyThI63" role="sbcd9">
           <node concept="3clFbS" id="1GpuQyThI64" role="2VODD2">
             <node concept="3clFbF" id="1GpuQyThI8J" role="3cqZAp">
-              <node concept="2OqwBi" id="1GpuQyTioKj" role="3clFbG">
+              <node concept="2OqwBi" id="7EzhnkmR9Ex" role="3clFbG">
                 <node concept="2YIFZM" id="1GpuQyThIab" role="2Oq$k0">
                   <ref role="37wK5l" node="1GpuQySZgwO" resolve="getOutgoingConnections" />
                   <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
                   <node concept="pncrf" id="1GpuQyThINZ" role="37wK5m" />
                 </node>
-                <node concept="3$u5V9" id="1GpuQyTiqpD" role="2OqNvi">
-                  <node concept="1bVj0M" id="1GpuQyTiqpF" role="23t8la">
-                    <node concept="3clFbS" id="1GpuQyTiqpG" role="1bW5cS">
-                      <node concept="3clFbF" id="1GpuQyTiqxM" role="3cqZAp">
-                        <node concept="2OqwBi" id="1GpuQyTiqH2" role="3clFbG">
-                          <node concept="37vLTw" id="1GpuQyTiqxL" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1GpuQyTiqpH" resolve="it" />
-                          </node>
-                          <node concept="3TrEf2" id="1GpuQyTiqYH" role="2OqNvi">
-                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="1GpuQyTiqpH" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="1GpuQyTiqpI" role="1tU5fm" />
-                    </node>
-                  </node>
+                <node concept="13MTOL" id="7EzhnkmRbCS" role="2OqNvi">
+                  <ref role="13MTZf" to="spwl:5rwT_JnwiU8" resolve="end" />
                 </node>
               </node>
             </node>
@@ -3071,32 +3056,11 @@
         </node>
         <node concept="s8sZD" id="1GpuQyThIZ_" role="sbcd9">
           <node concept="3clFbS" id="1GpuQyThIZA" role="2VODD2">
-            <node concept="3clFbF" id="1GpuQyThJ2h" role="3cqZAp">
-              <node concept="2OqwBi" id="1GpuQyTifYn" role="3clFbG">
-                <node concept="2YIFZM" id="1GpuQyThJ3H" role="2Oq$k0">
-                  <ref role="37wK5l" node="1GpuQySZgwO" resolve="getOutgoingConnections" />
-                  <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
-                  <node concept="pncrf" id="1GpuQyThJ6M" role="37wK5m" />
-                </node>
-                <node concept="3$u5V9" id="1GpuQyTihVT" role="2OqNvi">
-                  <node concept="1bVj0M" id="1GpuQyTihVV" role="23t8la">
-                    <node concept="3clFbS" id="1GpuQyTihVW" role="1bW5cS">
-                      <node concept="3clFbF" id="1GpuQyTii49" role="3cqZAp">
-                        <node concept="2OqwBi" id="1GpuQyTiifp" role="3clFbG">
-                          <node concept="37vLTw" id="1GpuQyTii48" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1GpuQyTihVX" resolve="it" />
-                          </node>
-                          <node concept="3TrEf2" id="1GpuQyTii$t" role="2OqNvi">
-                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="1GpuQyTihVX" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="1GpuQyTihVY" role="1tU5fm" />
-                    </node>
-                  </node>
+            <node concept="3clFbF" id="12e1nc$3hns" role="3cqZAp">
+              <node concept="2OqwBi" id="12e1nc$3hEZ" role="3clFbG">
+                <node concept="pncrf" id="12e1nc$3hnr" role="2Oq$k0" />
+                <node concept="2qgKlT" id="12e1nc$3ig4" role="2OqNvi">
+                  <ref role="37wK5l" to="fazf:12e1nc$3fyh" resolve="getDownstreamNeighbouringElements" />
                 </node>
               </node>
             </node>
@@ -3189,32 +3153,11 @@
         </node>
         <node concept="s8sZD" id="1GpuQyThJa$" role="sbcd9">
           <node concept="3clFbS" id="1GpuQyThJa_" role="2VODD2">
-            <node concept="3clFbF" id="1GpuQyThJaA" role="3cqZAp">
-              <node concept="2OqwBi" id="1GpuQyTikd7" role="3clFbG">
-                <node concept="2YIFZM" id="1GpuQyThJaB" role="2Oq$k0">
-                  <ref role="37wK5l" node="1GpuQySZgwO" resolve="getOutgoingConnections" />
-                  <ref role="1Pybhc" node="1GpuQySZgto" resolve="FTDiagramUtils" />
-                  <node concept="pncrf" id="1GpuQyThJaC" role="37wK5m" />
-                </node>
-                <node concept="3$u5V9" id="1GpuQyTimNE" role="2OqNvi">
-                  <node concept="1bVj0M" id="1GpuQyTimNG" role="23t8la">
-                    <node concept="3clFbS" id="1GpuQyTimNH" role="1bW5cS">
-                      <node concept="3clFbF" id="1GpuQyTimNU" role="3cqZAp">
-                        <node concept="2OqwBi" id="1GpuQyTimZa" role="3clFbG">
-                          <node concept="37vLTw" id="1GpuQyTimNT" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1GpuQyTimNI" resolve="it" />
-                          </node>
-                          <node concept="3TrEf2" id="1GpuQyTinf6" role="2OqNvi">
-                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="1GpuQyTimNI" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="1GpuQyTimNJ" role="1tU5fm" />
-                    </node>
-                  </node>
+            <node concept="3clFbF" id="12e1nc$3iSY" role="3cqZAp">
+              <node concept="2OqwBi" id="12e1nc$3iSZ" role="3clFbG">
+                <node concept="pncrf" id="12e1nc$3iT0" role="2Oq$k0" />
+                <node concept="2qgKlT" id="12e1nc$3iT1" role="2OqNvi">
+                  <ref role="37wK5l" to="fazf:12e1nc$3fyh" resolve="getDownstreamNeighbouringElements" />
                 </node>
               </node>
             </node>
