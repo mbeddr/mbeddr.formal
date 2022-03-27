@@ -49,9 +49,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -305,37 +302,6 @@
   </node>
   <node concept="1M2fIO" id="3f8ZVRYdw_A">
     <ref role="1M2myG" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-    <node concept="EnEH3" id="3f8ZVRYdw_B" role="1MhHOB">
-      <ref role="EomxK" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
-      <node concept="1LLf8_" id="3f8ZVRYdwE6" role="1LXaQT">
-        <node concept="3clFbS" id="3f8ZVRYdwE7" role="2VODD2">
-          <node concept="3clFbF" id="3f8ZVRYdx$x" role="3cqZAp">
-            <node concept="37vLTI" id="3f8ZVRYdyP3" role="3clFbG">
-              <node concept="2OqwBi" id="3f8ZVRYdxIm" role="37vLTJ">
-                <node concept="EsrRn" id="3f8ZVRYdx$w" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3f8ZVRYdxY3" role="2OqNvi">
-                  <ref role="3TsBF5" to="py52:3f8ZVRYdwrn" resolve="crtMaxIndex" />
-                </node>
-              </node>
-              <node concept="3cmrfG" id="3f8ZVRYdz9Q" role="37vLTx">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="3f8ZVRYdwFU" role="3cqZAp">
-            <node concept="37vLTI" id="3f8ZVRYdxn8" role="3clFbG">
-              <node concept="1Wqviy" id="3f8ZVRYdxs4" role="37vLTx" />
-              <node concept="2OqwBi" id="3f8ZVRYdwPu" role="37vLTJ">
-                <node concept="EsrRn" id="3f8ZVRYdwFT" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3f8ZVRYdx2r" role="2OqNvi">
-                  <ref role="3TsBF5" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 
