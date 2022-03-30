@@ -99,7 +99,6 @@
       <concept id="1630016958697057551" name="jetbrains.mps.lang.editor.structure.IMenuPartParameterized" flags="ng" index="2ZBHr6">
         <child id="1630016958697057552" name="parameterType" index="2ZBHrp" />
       </concept>
-      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
         <property id="1235999920262" name="align" index="37lx6p" />
       </concept>
@@ -117,6 +116,9 @@
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="7580468736840446506" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_model" flags="nn" index="1rpKSd" />
       <concept id="3982520150125052579" name="jetbrains.mps.lang.editor.structure.QueryFunction_AttributeStyleParameter" flags="ig" index="3sjG9q" />
@@ -3443,9 +3445,7 @@
       </node>
       <node concept="3F0ifn" id="7wRJ5ynOLG0" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <node concept="11L4FC" id="7wRJ5ynOLG5" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="l2Vlx" id="7wRJ5ynOLFD" role="2iSdaV" />
     </node>
@@ -3485,6 +3485,10 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7wRJ5ynOLGh" role="2iSdaV" />
+      <node concept="3F0ifn" id="36k0PnKJGGD" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+      </node>
     </node>
     <node concept="2aJ2om" id="7wRJ5ynOLGb" role="CpUAK">
       <ref role="2$4xQ3" node="7wRJ5ynOjYu" resolve="FT_TEXT" />
@@ -6286,7 +6290,7 @@
       </node>
     </node>
     <node concept="PMmxH" id="1SpkZ1VaqPd" role="6VMZX">
-      <ref role="PMmxG" node="1SpkZ1VaqwM" resolve="IntermediateEventEditorComponent" />
+      <ref role="PMmxG" node="1SpkZ1VaqwM" resolve="IntermediateEventInspectorEditorComponent" />
     </node>
   </node>
   <node concept="2xDbr0" id="1SpkZ1V845g">
@@ -6727,7 +6731,7 @@
   </node>
   <node concept="PKFIW" id="1SpkZ1VaqwM">
     <property role="3GE5qa" value="events" />
-    <property role="TrG5h" value="IntermediateEventEditorComponent" />
+    <property role="TrG5h" value="IntermediateEventInspectorEditorComponent" />
     <ref role="1XX52x" to="spwl:1SpkZ1V6gPJ" resolve="IntermediateEvent" />
     <node concept="3EZMnI" id="1SpkZ1V9EL5" role="2wV5jI">
       <node concept="2iRkQZ" id="1SpkZ1V9EL6" role="2iSdaV" />
@@ -6759,7 +6763,7 @@
       <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="FT_TREE" />
     </node>
     <node concept="PMmxH" id="1SpkZ1VaNDx" role="6VMZX">
-      <ref role="PMmxG" node="1SpkZ1VaqwM" resolve="IntermediateEventEditorComponent" />
+      <ref role="PMmxG" node="1SpkZ1VaqwM" resolve="IntermediateEventInspectorEditorComponent" />
     </node>
     <node concept="G$OnD" id="1SpkZ1VaNDy" role="2wV5jI">
       <node concept="2xQOud" id="1SpkZ1VaNDz" role="G$OdO">
@@ -7055,6 +7059,17 @@
         <property role="3sAy83" value="false" />
       </node>
     </node>
+  </node>
+  <node concept="24kQdi" id="36k0PnKKxbk">
+    <property role="3GE5qa" value="text" />
+    <ref role="1XX52x" to="spwl:1SpkZ1V6gPJ" resolve="IntermediateEvent" />
+    <node concept="PMmxH" id="36k0PnKKxc4" role="6VMZX">
+      <ref role="PMmxG" node="1SpkZ1VaqwM" resolve="IntermediateEventInspectorEditorComponent" />
+    </node>
+    <node concept="2aJ2om" id="36k0PnKKxuI" role="CpUAK">
+      <ref role="2$4xQ3" node="7wRJ5ynOjYu" resolve="FT_TEXT" />
+    </node>
+    <node concept="B$lHz" id="36k0PnKKxx3" role="2wV5jI" />
   </node>
 </model>
 

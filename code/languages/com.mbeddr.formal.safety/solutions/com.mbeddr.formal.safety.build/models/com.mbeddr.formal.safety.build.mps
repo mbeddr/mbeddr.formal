@@ -14794,6 +14794,9 @@
       <node concept="L2wRC" id="4ziKDEnkJpw" role="39821P">
         <ref role="L2wRA" node="4ziKDEnkJiX" resolve="test.com.fasten.safety.doc2word" />
       </node>
+      <node concept="L2wRC" id="36k0PnKL7wU" role="39821P">
+        <ref role="L2wRA" node="36k0PnKL5au" resolve="test.com.fasten.safety.ft" />
+      </node>
     </node>
     <node concept="m$_wf" id="6ucyvMUDFe3" role="3989C9">
       <property role="m$_wk" value="nusmv.tests.dummy" />
@@ -15478,6 +15481,51 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="36k0PnKL5au" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.fasten.safety.ft" />
+        <property role="3LESm3" value="6e248481-1e6c-406d-9f02-c27ea5429a61" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="36k0PnKL5ee" role="3LF7KH">
+          <ref role="398BVh" node="6ucyvMUDFiJ" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="36k0PnKL5ek" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="36k0PnKL7tk" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.fasten.safety.ft" />
+              <node concept="2Ry0Ak" id="36k0PnKL7tp" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.fasten.safety.ft.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="36k0PnKL7vp" role="3bR37C">
+          <node concept="3bR9La" id="36k0PnKL7vq" role="1SiIV1">
+            <ref role="3bR37D" node="73rWdFZqGo8" resolve="com.fasten.safety.ft" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="36k0PnKL7vH" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="36k0PnKL7vI" role="1HemKq">
+            <node concept="398BVA" id="36k0PnKL7vr" role="3LXTmr">
+              <ref role="398BVh" node="6ucyvMUDFiJ" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="36k0PnKL7vs" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="36k0PnKL7vt" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.fasten.safety.ft" />
+                  <node concept="2Ry0Ak" id="36k0PnKL7vu" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="36k0PnKL7vJ" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="22LTRH" id="6ucyvMUDFeT" role="1hWBAP">
       <property role="TrG5h" value="all" />
@@ -15501,6 +15549,9 @@
       </node>
       <node concept="22LTRM" id="4ziKDEnkJqu" role="22LTRK">
         <ref role="22LTRN" node="4ziKDEnkJiX" resolve="test.com.fasten.safety.doc2word" />
+      </node>
+      <node concept="22LTRM" id="36k0PnKL7xU" role="22LTRK">
+        <ref role="22LTRN" node="36k0PnKL5au" resolve="test.com.fasten.safety.ft" />
       </node>
       <node concept="24cAiW" id="6ucyvMUDFeV" role="24cAkG">
         <node concept="NbPM2" id="1tYE378U5fR" role="1psgkv" />
