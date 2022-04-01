@@ -10167,6 +10167,11 @@
             <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5p0HbN8LQfI" role="3bR37C">
+          <node concept="3bR9La" id="5p0HbN8LQfJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3R_yAtWp53E" role="2G$12L">
         <property role="BnDLt" value="true" />
