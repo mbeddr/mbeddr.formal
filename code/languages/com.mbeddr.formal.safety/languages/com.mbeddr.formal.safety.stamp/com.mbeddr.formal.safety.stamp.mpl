@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.formal.safety.stamp" uuid="7e777b53-0a6b-4719-b36d-10475788d49f" languageVersion="1" moduleVersion="0">
+<language namespace="com.mbeddr.formal.safety.stamp" uuid="7e777b53-0a6b-4719-b36d-10475788d49f" languageVersion="2" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

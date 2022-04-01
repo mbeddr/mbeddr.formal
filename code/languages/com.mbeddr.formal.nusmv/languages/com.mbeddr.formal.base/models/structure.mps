@@ -48,6 +48,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
@@ -62,6 +63,13 @@
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -207,6 +215,21 @@
     <property role="EcuMT" value="6177976204644705162" />
     <property role="3GE5qa" value="structure_view" />
     <property role="TrG5h" value="IFASTENHierarchicalStructure" />
+  </node>
+  <node concept="PlHQZ" id="6qVhvNsGwB7">
+    <property role="EcuMT" value="7402587364850272711" />
+    <property role="TrG5h" value="IAttribute" />
+  </node>
+  <node concept="PlHQZ" id="6qVhvNsGxid">
+    <property role="EcuMT" value="7402587364850275469" />
+    <property role="TrG5h" value="IAttributesContainer" />
+    <node concept="1TJgyj" id="6qVhvNsGxie" role="1TKVEi">
+      <property role="IQ2ns" value="7402587364850275470" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6qVhvNsGwB7" resolve="IAttribute" />
+    </node>
   </node>
 </model>
 

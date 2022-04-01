@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="1" />
+    <use id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp" version="2" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports>
@@ -42,8 +42,11 @@
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF" />
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
       <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
         <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
         <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
       </concept>
       <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
@@ -52,6 +55,7 @@
       </concept>
       <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
         <reference id="2004523000582375039" name="action" index="1E0n_N" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
       </concept>
       <concept id="4286195509388000609" name="com.mbeddr.formal.safety.stamp.structure.Controls" flags="ng" index="1XypPU" />
       <concept id="4286195509387940513" name="com.mbeddr.formal.safety.stamp.structure.Controller" flags="ng" index="1XyJaU">
@@ -227,6 +231,10 @@
                 </node>
               </node>
             </node>
+            <node concept="3f6qtF" id="6vZMoXu1P3w" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3y" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3$" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3A" role="3f6qqO" />
           </node>
           <node concept="1E0nOJ" id="1FMyjUPiCXA" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCVQ" resolve="Accelerate" />
@@ -237,21 +245,49 @@
                 </node>
               </node>
             </node>
+            <node concept="3f6qtF" id="6vZMoXu1P3B" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3C" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3D" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3E" role="3f6qqO" />
           </node>
           <node concept="1E0nOJ" id="1FMyjUPslht" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCVV" resolve="Decelerate" />
+            <node concept="3f6qtF" id="6vZMoXu1P3F" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3G" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3H" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3I" role="3f6qqO" />
           </node>
           <node concept="1E0nOJ" id="1FMyjUPslhx" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCUZ" resolve="Start" />
+            <node concept="3f6qtF" id="6vZMoXu1P3J" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3K" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3L" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3M" role="3f6qqO" />
           </node>
           <node concept="1E0nOJ" id="1FMyjUPslhA" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCVM" resolve="Stop" />
+            <node concept="3f6qtF" id="6vZMoXu1P3N" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3O" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3P" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3Q" role="3f6qqO" />
           </node>
         </node>
         <node concept="7CXmI" id="1FMyjUPsli0" role="lGtFl">
           <node concept="7OXhh" id="1FMyjUPsli5" role="7EUXB">
             <property role="GvXf4" value="true" />
           </node>
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3v" role="3f73zo">
+          <property role="TrG5h" value="Providing Causes Hazard" />
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3x" role="3f73zo">
+          <property role="TrG5h" value="Not Providing Causes Hazard" />
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3z" role="3f73zo">
+          <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3_" role="3f73zo">
+          <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
         </node>
       </node>
     </node>
@@ -266,9 +302,17 @@
           <ref role="1E0nOH" node="1FMyjUPiCUA" resolve="driver" />
           <node concept="1E0nOJ" id="1FMyjUPiCXH" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCVQ" resolve="Accelerate" />
+            <node concept="3f6qtF" id="6vZMoXu1P3S" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3U" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3W" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P3Y" role="3f6qqO" />
           </node>
           <node concept="1E0nOJ" id="1FMyjUPiCXI" role="1E0nOC">
             <ref role="1E0n_N" node="1FMyjUPiCVV" resolve="Decelerate" />
+            <node concept="3f6qtF" id="6vZMoXu1P3Z" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P40" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P41" role="3f6qqO" />
+            <node concept="3f6qtF" id="6vZMoXu1P42" role="3f6qqO" />
           </node>
           <node concept="7CXmI" id="1FMyjUPiDeY" role="lGtFl">
             <node concept="29bkU" id="1FMyjUPiEI6" role="7EUXB">
@@ -282,6 +326,18 @@
           <node concept="7OXhh" id="1FMyjUPjzcf" role="7EUXB">
             <property role="GvXf4" value="true" />
           </node>
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3R" role="3f73zo">
+          <property role="TrG5h" value="Providing Causes Hazard" />
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3T" role="3f73zo">
+          <property role="TrG5h" value="Not Providing Causes Hazard" />
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3V" role="3f73zo">
+          <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+        </node>
+        <node concept="3f73zW" id="6vZMoXu1P3X" role="3f73zo">
+          <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
         </node>
       </node>
     </node>

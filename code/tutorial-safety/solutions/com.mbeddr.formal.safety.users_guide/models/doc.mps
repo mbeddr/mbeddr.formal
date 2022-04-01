@@ -1019,7 +1019,7 @@
           <node concept="2bctqb" id="1LeaOOdaljp" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdaljr" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdaljJ" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:4eD_5l3mJSY" resolve="_030_confidence_dempster_schafer" />
+              <ref role="2NCMaa" to="io0z:4eD_5l3mJSY" resolve="_030_confidence_dempster_schafer_evidence_annotated_with_confidence" />
             </node>
           </node>
         </node>

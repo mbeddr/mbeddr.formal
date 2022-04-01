@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -87,23 +88,23 @@
     <property role="EcuMT" value="6312041527983384240" />
     <property role="TrG5h" value="EntityStateBase" />
     <property role="R5$K7" value="true" />
-    <property role="3GE5qa" value="state" />
+    <property role="3GE5qa" value="state.definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="5uoS5eUXEqL">
     <property role="EcuMT" value="6312041527983384241" />
-    <property role="TrG5h" value="ValidState" />
-    <property role="34LRSv" value="valid" />
-    <property role="R4oN_" value="the entity is valid" />
-    <property role="3GE5qa" value="state" />
+    <property role="TrG5h" value="VerifiedState" />
+    <property role="34LRSv" value="verified" />
+    <property role="R4oN_" value="the entity is verified" />
+    <property role="3GE5qa" value="state.definition" />
     <ref role="1TJDcQ" node="5uoS5eUXEqK" resolve="EntityStateBase" />
   </node>
   <node concept="1TIwiD" id="5uoS5eUXErg">
     <property role="EcuMT" value="6312041527983384272" />
-    <property role="TrG5h" value="NeedsVerification" />
+    <property role="TrG5h" value="NeedsVerificationState" />
     <property role="34LRSv" value="needs verification" />
     <property role="R4oN_" value="the entity needs verification" />
-    <property role="3GE5qa" value="state" />
+    <property role="3GE5qa" value="state.definition" />
     <ref role="1TJDcQ" node="5uoS5eUXEqK" resolve="EntityStateBase" />
   </node>
   <node concept="1TIwiD" id="3f8ZVRYgJVz">
@@ -213,6 +214,14 @@
       <property role="20kJfa" value="clause" />
       <ref role="20lvS9" node="3f8ZVRYh460" resolve="StandardClause" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="84ljAGF4_o">
+    <property role="EcuMT" value="145334794181167448" />
+    <property role="3GE5qa" value="state.definition" />
+    <property role="TrG5h" value="DraftState" />
+    <property role="34LRSv" value="draft" />
+    <property role="R4oN_" value="the entity is in draft state" />
+    <ref role="1TJDcQ" node="5uoS5eUXEqK" resolve="EntityStateBase" />
   </node>
 </model>
 

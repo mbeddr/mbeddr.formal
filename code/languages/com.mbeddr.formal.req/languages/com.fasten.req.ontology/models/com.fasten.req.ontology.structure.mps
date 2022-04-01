@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
   </imports>
@@ -38,9 +37,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -72,16 +69,12 @@
     <property role="EcuMT" value="8375050574357864780" />
     <property role="TrG5h" value="IOntologyContent" />
     <property role="3GE5qa" value="" />
-    <node concept="PrWs8" id="1h8BwgBGn4E" role="PrDN$">
-      <ref role="PrY4T" to="u2ih:7gUa1Zsy25c" resolve="IOntologyContent_old" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3Jn$RV31w1l">
     <property role="EcuMT" value="4312077340877652053" />
     <property role="TrG5h" value="Ontology" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="" />
-    <ref role="1TJDcQ" to="u2ih:3Jn$RV31w1l" resolve="Ontology_old" />
     <node concept="PrWs8" id="3Jn$RV31w1m" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -125,7 +118,6 @@
     <property role="34LRSv" value="concept" />
     <property role="R4oN_" value="a concept from the ontology" />
     <property role="3GE5qa" value="" />
-    <ref role="1TJDcQ" to="u2ih:3Jn$RV31w1o" resolve="OntologyConcept_old" />
     <node concept="PrWs8" id="3Jn$RV31w1p" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -271,6 +263,14 @@
     <property role="EcuMT" value="5183341918995212386" />
     <property role="3GE5qa" value="relations" />
     <property role="TrG5h" value="IConceptRelation" />
+  </node>
+  <node concept="1TIwiD" id="84ljAGyZEI">
+    <property role="EcuMT" value="145334794179050158" />
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="84ljAGyZEJ" role="PzmwI">
+      <ref role="PrY4T" node="7gUa1Zsy25c" resolve="IOntologyContent" />
+    </node>
   </node>
 </model>
 

@@ -131,6 +131,11 @@
       <property role="TrG5h" value="crtMaxIndex" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="5WyjFZRl16s" role="1TKVEl">
+      <property role="IQ2nx" value="6855128169206518172" />
+      <property role="TrG5h" value="displayRelationNames" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$qNtH">
     <property role="EcuMT" value="4266958635905267565" />
@@ -367,6 +372,9 @@
     <property role="TrG5h" value="GoalStructureAttributeBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6qVhvNsHTsR" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6qVhvNsGwB7" resolve="IAttribute" />
+    </node>
   </node>
   <node concept="Az7Fb" id="2p23w$d2KIt">
     <property role="3F6X1D" value="2756781353940487069" />

@@ -4,6 +4,7 @@
   <languages>
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
+    <devkit ref="34367ce7-2993-4c7e-896e-c299a2abf50d(fasten.requirements.formal)" />
   </languages>
   <imports />
   <registry>
@@ -217,9 +218,6 @@
       <concept id="4678075609353342594" name="com.mbeddr.formal.nusmv.structure.DefineRef" flags="ng" index="1J1L9T">
         <reference id="4678075609353342595" name="def" index="1J1L9S" />
       </concept>
-    </language>
-    <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
-      <concept id="8375050574357864792" name="com.fasten.req.odd.structure.EmptyLine" flags="ng" index="2CGw_7" />
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
       <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
@@ -1444,7 +1442,6 @@
       <property role="TrG5h" value="collision avoidance maneuver" />
       <ref role="3SOpc_" node="7Jm8RM1yvWG" resolve="active safety" />
     </node>
-    <node concept="2CGw_7" id="7Jm8RM1yvWK" role="3SOpfD" />
   </node>
   <node concept="1QQeGf" id="7Jm8RM1z5xa">
     <property role="TrG5h" value="_025_text_tl_boilerplates_specs_explicit_vocabulary" />

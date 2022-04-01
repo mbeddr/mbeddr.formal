@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.fmea.arch/fasten.safety.fmea.arch.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.fmea/fasten.safety.fmea.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.ft/fasten.safety.ft.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.confidence/fasten.safety.gsn.confidence.devkit" folder="" />
@@ -21,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hazop/com.fasten.safety.hazop.mpl" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops.arch/com.fasten.safety.hiphops.arch.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops/com.fasten.safety.hiphops.mpl" folder="fmea_hiphops" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process.artefacts/com.mbeddr.formal.safety.argument.process.artefacts.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process/com.mbeddr.formal.safety.argument.process.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.ext/com.mbeddr.formal.safety.cae.ext.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.external_evidence/com.mbeddr.formal.safety.cae.external_evidence.mpl" folder="gsn" />
@@ -40,6 +42,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ext/com.mbeddr.formal.safety.stamp.ext.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="hara.stamp" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.doc2word/com.fasten.safety.doc2word.msd" folder="doc2word" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.fmea.sandbox/com.fasten.safety.fmea.sandbox.msd" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.pluginSolution/com.fasten.safety.ft.pluginSolution.msd" folder="ft" />
@@ -49,6 +52,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hazop.sandbox/com.fasten.safety.hazop.sandbox.msd" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.rcp.pluginSolution/com.fasten.safety.rcp.pluginSolution.msd" folder="rcp" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.process.sandbox/com.mbeddr.formal.safety.argument.process.sandbox.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.cae.sandbox/com.mbeddr.formal.safety.cae.sandbox.msd" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.cbd.pluginSolution/com.mbeddr.formal.safety.gsn.cbd.pluginSolution.msd" folder="gsn" />
@@ -62,6 +66,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.stamp.sandbox/com.mbeddr.formal.safety.stamp.sandbox.msd" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.safety.doc2word/test.com.fasten.safety.doc2word.msd" folder="doc2word" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.safety.ft.xfta/test.com.fasten.safety.ft.xfta.msd" folder="ft.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.safety.ft/test.com.fasten.safety.ft.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.formal.safety.stamp/test.com.mbeddr.formal.safety.stamp.msd" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/tests/test.fasten.safety.hiphops/test.fasten.safety.hiphops.msd" folder="fmea_hiphops.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.patterns/test.mbeddr.formal.gsn.patterns.msd" folder="gsn.tests" />

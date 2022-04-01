@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.requirements.formal" uuid="34367ce7-2993-4c7e-896e-c299a2abf50d">
+  <exported-language name="83ad0200-6e50-4939-a389-76bf899be11b(com.mbeddr.formal.req.nusmv)" />
+  <exported-language name="b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)" />
+  <exported-language name="0054a0d7-50ff-4b4f-beff-7e9b376d56a1(com.mbeddr.formal.req.tl_patterns.arch)" />
+  <extendedDevKits>
+    <extendedDevKit>b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+

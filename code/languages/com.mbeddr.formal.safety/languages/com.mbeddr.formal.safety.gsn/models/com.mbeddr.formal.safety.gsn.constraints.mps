@@ -27,6 +27,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -41,16 +42,20 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -112,6 +117,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -131,6 +139,42 @@
   </registry>
   <node concept="1M2fIO" id="4q8AAJKL5sw">
     <ref role="1M2myG" to="py52:3GRi4m$qNtH" resolve="Goal" />
+    <node concept="EnEH3" id="5WyjFZRoE2e" role="1MhHOB">
+      <ref role="EomxK" to="py52:4q8AAJKJQyk" resolve="away" />
+      <node concept="1LLf8_" id="5WyjFZRoE4W" role="1LXaQT">
+        <node concept="3clFbS" id="5WyjFZRoE4X" role="2VODD2">
+          <node concept="3clFbJ" id="5WyjFZRoF4s" role="3cqZAp">
+            <node concept="3clFbS" id="5WyjFZRoF4u" role="3clFbx">
+              <node concept="3clFbF" id="5WyjFZRoF6g" role="3cqZAp">
+                <node concept="37vLTI" id="5WyjFZRoG9X" role="3clFbG">
+                  <node concept="10Nm6u" id="5WyjFZRoGaE" role="37vLTx" />
+                  <node concept="2OqwBi" id="5WyjFZRoFig" role="37vLTJ">
+                    <node concept="EsrRn" id="5WyjFZRoF6f" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5WyjFZRoF$N" role="2OqNvi">
+                      <ref role="3Tt5mk" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="5WyjFZRoF5j" role="3clFbw">
+              <node concept="1Wqviy" id="5WyjFZRoF5M" role="3fr31v" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="5WyjFZRoE6M" role="3cqZAp">
+            <node concept="37vLTI" id="5WyjFZRoEUK" role="3clFbG">
+              <node concept="1Wqviy" id="5WyjFZRoEZ2" role="37vLTx" />
+              <node concept="2OqwBi" id="5WyjFZRoEiM" role="37vLTJ">
+                <node concept="EsrRn" id="5WyjFZRoE6L" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5WyjFZRoE_l" role="2OqNvi">
+                  <ref role="3TsBF5" to="py52:4q8AAJKJQyk" resolve="away" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1N5Pfh" id="4q8AAJKL5sQ" role="1Mr941">
       <ref role="1N5Vy1" to="py52:4q8AAJKJQzF" resolve="goalDefinition" />
       <node concept="3dgokm" id="4q8AAJKL5tk" role="1N6uqs">
@@ -260,37 +304,6 @@
   </node>
   <node concept="1M2fIO" id="3f8ZVRYdw_A">
     <ref role="1M2myG" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-    <node concept="EnEH3" id="3f8ZVRYdw_B" role="1MhHOB">
-      <ref role="EomxK" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
-      <node concept="1LLf8_" id="3f8ZVRYdwE6" role="1LXaQT">
-        <node concept="3clFbS" id="3f8ZVRYdwE7" role="2VODD2">
-          <node concept="3clFbF" id="3f8ZVRYdx$x" role="3cqZAp">
-            <node concept="37vLTI" id="3f8ZVRYdyP3" role="3clFbG">
-              <node concept="2OqwBi" id="3f8ZVRYdxIm" role="37vLTJ">
-                <node concept="EsrRn" id="3f8ZVRYdx$w" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3f8ZVRYdxY3" role="2OqNvi">
-                  <ref role="3TsBF5" to="py52:3f8ZVRYdwrn" resolve="crtMaxIndex" />
-                </node>
-              </node>
-              <node concept="3cmrfG" id="3f8ZVRYdz9Q" role="37vLTx">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="3f8ZVRYdwFU" role="3cqZAp">
-            <node concept="37vLTI" id="3f8ZVRYdxn8" role="3clFbG">
-              <node concept="1Wqviy" id="3f8ZVRYdxs4" role="37vLTx" />
-              <node concept="2OqwBi" id="3f8ZVRYdwPu" role="37vLTJ">
-                <node concept="EsrRn" id="3f8ZVRYdwFT" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3f8ZVRYdx2r" role="2OqNvi">
-                  <ref role="3TsBF5" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 

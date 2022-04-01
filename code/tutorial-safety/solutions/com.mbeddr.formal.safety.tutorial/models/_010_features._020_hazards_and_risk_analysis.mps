@@ -12,8 +12,13 @@
       </concept>
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF">
+        <child id="2925021647566955740" name="actions" index="3f6qtG" />
+      </concept>
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
       <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
         <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
         <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
       </concept>
       <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
@@ -22,10 +27,7 @@
       </concept>
       <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
         <reference id="2004523000582375039" name="action" index="1E0n_N" />
-        <child id="2004523000582414398" name="providing" index="1E0tWM" />
-        <child id="2004523000582414407" name="stoppedTooSoonAppliedTooLong" index="1E0tXb" />
-        <child id="2004523000582414402" name="soonLateOutOfSequence" index="1E0tXe" />
-        <child id="2004523000582413313" name="notProviding" index="1E0ucd" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
       </concept>
       <concept id="2004523000582631964" name="com.mbeddr.formal.safety.stamp.structure.TextualContext" flags="ng" index="1E0COg">
         <child id="2004523000582631965" name="text" index="1E0COh" />
@@ -547,139 +549,183 @@
       <ref role="1E0nOH" node="1L4MZBxVgCS" resolve="Driver" />
       <node concept="1E0nOJ" id="1L4MZBxVgKz" role="1E0nOC">
         <ref role="1E0n_N" node="1L4MZBxVgEj" resolve="Activate" />
-        <node concept="1E0COo" id="1L4MZBxVnXE" role="1E0ucd">
-          <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_01" />
-          <node concept="1E0COg" id="1L4MZBxVnXK" role="1E0COp">
-            <node concept="19SGf9" id="1L4MZBxVnXM" role="1E0COh">
-              <node concept="19SUe$" id="1L4MZBxVnXN" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
+        <node concept="3f6qtF" id="6vZMoXu3Mh5" role="3f6qqO">
+          <node concept="1E0COo" id="7L33HENb9v1" role="3f6qtG">
+            <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_02" />
+            <node concept="1E0COg" id="7L33HENb9va" role="1E0COp">
+              <node concept="19SGf9" id="7L33HENb9vc" role="1E0COh">
+                <node concept="19SUe$" id="7L33HENb9vd" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="gxbn0" id="1L4MZBxVSOM" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
-          </node>
-        </node>
-        <node concept="1E0COo" id="7L33HENb9v1" role="1E0tWM">
-          <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_02" />
-          <node concept="1E0COg" id="7L33HENb9va" role="1E0COp">
-            <node concept="19SGf9" id="7L33HENb9vc" role="1E0COh">
-              <node concept="19SUe$" id="7L33HENb9vd" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
-              </node>
+            <node concept="gxbn0" id="7L33HENb9vU" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vN" resolve="airbag deploys unintentionally" />
             </node>
           </node>
-          <node concept="gxbn0" id="7L33HENb9vU" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vN" resolve="airbag deploys unintentionally" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mh7" role="3f6qqO">
+          <node concept="1E0COo" id="1L4MZBxVnXE" role="3f6qtG">
+            <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_01" />
+            <node concept="1E0COg" id="1L4MZBxVnXK" role="1E0COp">
+              <node concept="19SGf9" id="1L4MZBxVnXM" role="1E0COh">
+                <node concept="19SUe$" id="1L4MZBxVnXN" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
+              </node>
+            </node>
+            <node concept="gxbn0" id="1L4MZBxVSOM" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            </node>
           </node>
         </node>
-        <node concept="3XErhT" id="1L4MZBxVzd1" role="1E0tXe" />
-        <node concept="3XErhT" id="1L4MZBxVzd3" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mh9" role="3f6qqO">
+          <node concept="3XErhT" id="1L4MZBxVzd1" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhb" role="3f6qqO">
+          <node concept="3XErhT" id="1L4MZBxVzd3" role="3f6qtG" />
+        </node>
       </node>
       <node concept="1E0nOJ" id="1L4MZBxVzd5" role="1E0nOC">
         <ref role="1E0n_N" node="1L4MZBxVgDG" resolve="Deactivate" />
-        <node concept="3XErhT" id="1L4MZBxVzdi" role="1E0ucd" />
-        <node concept="1E0COo" id="1L4MZBxVzdk" role="1E0tWM">
-          <property role="TrG5h" value="UCA_DRIVER_DEACTIVATE_01" />
-          <node concept="1E0COg" id="1L4MZBxVzdq" role="1E0COp">
-            <node concept="19SGf9" id="1L4MZBxVzds" role="1E0COh">
-              <node concept="19SUe$" id="1L4MZBxVzdt" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhc" role="3f6qqO">
+          <node concept="1E0COo" id="1L4MZBxVzdk" role="3f6qtG">
+            <property role="TrG5h" value="UCA_DRIVER_DEACTIVATE_01" />
+            <node concept="1E0COg" id="1L4MZBxVzdq" role="1E0COp">
+              <node concept="19SGf9" id="1L4MZBxVzds" role="1E0COh">
+                <node concept="19SUe$" id="1L4MZBxVzdt" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="gxbn0" id="1L4MZBxVSOO" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            <node concept="gxbn0" id="1L4MZBxVSOO" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            </node>
           </node>
         </node>
-        <node concept="3XErhT" id="1L4MZBxVzdE" role="1E0tXe" />
-        <node concept="3XErhT" id="1L4MZBxVzdG" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhd" role="3f6qqO">
+          <node concept="3XErhT" id="1L4MZBxVzdi" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhe" role="3f6qqO">
+          <node concept="3XErhT" id="1L4MZBxVzdE" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhf" role="3f6qqO">
+          <node concept="3XErhT" id="1L4MZBxVzdG" role="3f6qtG" />
+        </node>
       </node>
     </node>
     <node concept="1E0nOG" id="1L4MZBxVzdI" role="1E0n_e">
       <ref role="1E0nOH" node="1L4MZBxVgwH" resolve="Airbag Controller" />
       <node concept="1E0nOJ" id="1L4MZBxVze7" role="1E0nOC">
         <ref role="1E0n_N" node="1L4MZBxVgEo" resolve="Activation Status" />
-        <node concept="1E0COo" id="1L4MZBxVFnp" role="1E0ucd">
-          <property role="TrG5h" value="UCA_AIRBAG_STATUS_01" />
-          <node concept="gxbn0" id="1L4MZBxVSOQ" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
-          </node>
-          <node concept="1YbhHi" id="7Jm8RM1zooa" role="1E0COp">
-            <ref role="1YbhHj" node="7Jm8RM1zoo0" resolve="vehicle crash at high speed" />
-          </node>
-        </node>
-        <node concept="1E0COo" id="1L4MZBxVSOT" role="1E0tWM">
-          <property role="TrG5h" value="UCA_AIRBAG_STATUS_02" />
-          <node concept="1E0COg" id="1L4MZBxVSOU" role="1E0COp">
-            <node concept="19SGf9" id="1L4MZBxVSOV" role="1E0COh">
-              <node concept="19SUe$" id="1L4MZBxVSOW" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhg" role="3f6qqO">
+          <node concept="1E0COo" id="1L4MZBxVSOT" role="3f6qtG">
+            <property role="TrG5h" value="UCA_AIRBAG_STATUS_02" />
+            <node concept="1E0COg" id="1L4MZBxVSOU" role="1E0COp">
+              <node concept="19SGf9" id="1L4MZBxVSOV" role="1E0COh">
+                <node concept="19SUe$" id="1L4MZBxVSOW" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="gxbn0" id="1L4MZBxVSOX" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            <node concept="gxbn0" id="1L4MZBxVSOX" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            </node>
           </node>
         </node>
-        <node concept="3XErhT" id="1L4MZBxVSP3" role="1E0tXe" />
-        <node concept="3XErhT" id="1L4MZBxVSP5" role="1E0tXb" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhh" role="3f6qqO">
+          <node concept="1E0COo" id="1L4MZBxVFnp" role="3f6qtG">
+            <property role="TrG5h" value="UCA_AIRBAG_STATUS_01" />
+            <node concept="gxbn0" id="1L4MZBxVSOQ" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            </node>
+            <node concept="1YbhHi" id="7Jm8RM1zooa" role="1E0COp">
+              <ref role="1YbhHj" node="7Jm8RM1zoo0" resolve="vehicle crash at high speed" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhi" role="3f6qqO">
+          <node concept="3XErhT" id="1L4MZBxVSP3" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mhj" role="3f6qqO">
+          <node concept="3XErhT" id="1L4MZBxVSP5" role="3f6qtG" />
+        </node>
       </node>
       <node concept="1E0nOJ" id="7L33HENb9vW" role="1E0nOC">
         <ref role="1E0n_N" node="1L4MZBxVgH3" resolve="Deploy Airbag" />
-        <node concept="1E0COo" id="7L33HENb9wb" role="1E0ucd">
-          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_01" />
-          <node concept="1E0COg" id="7L33HENb9wc" role="1E0COp">
-            <node concept="19SGf9" id="7L33HENb9wd" role="1E0COh">
-              <node concept="19SUe$" id="7L33HENb9we" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhk" role="3f6qqO">
+          <node concept="1E0COo" id="7L33HENb9wl" role="3f6qtG">
+            <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_02" />
+            <node concept="1E0COg" id="7L33HENb9wm" role="1E0COp">
+              <node concept="19SGf9" id="7L33HENb9wn" role="1E0COh">
+                <node concept="19SUe$" id="7L33HENb9wo" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="gxbn0" id="7L33HENb9wf" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            <node concept="gxbn0" id="7L33HENb9wp" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vN" resolve="airbag deploys unintentionally" />
+            </node>
           </node>
         </node>
-        <node concept="1E0COo" id="7L33HENb9wl" role="1E0tWM">
-          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_02" />
-          <node concept="1E0COg" id="7L33HENb9wm" role="1E0COp">
-            <node concept="19SGf9" id="7L33HENb9wn" role="1E0COh">
-              <node concept="19SUe$" id="7L33HENb9wo" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhl" role="3f6qqO">
+          <node concept="1E0COo" id="7L33HENb9wb" role="3f6qtG">
+            <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_01" />
+            <node concept="1E0COg" id="7L33HENb9wc" role="1E0COp">
+              <node concept="19SGf9" id="7L33HENb9wd" role="1E0COh">
+                <node concept="19SUe$" id="7L33HENb9we" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="gxbn0" id="7L33HENb9wp" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vN" resolve="airbag deploys unintentionally" />
+            <node concept="gxbn0" id="7L33HENb9wf" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            </node>
           </node>
         </node>
-        <node concept="1E0COo" id="7L33HENb9wv" role="1E0tXe">
-          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_03" />
-          <node concept="1E0COg" id="7L33HENb9ww" role="1E0COp">
-            <node concept="19SGf9" id="7L33HENb9wx" role="1E0COh">
-              <node concept="19SUe$" id="7L33HENb9wy" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhm" role="3f6qqO">
+          <node concept="1E0COo" id="7L33HENb9wv" role="3f6qtG">
+            <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_03" />
+            <node concept="1E0COg" id="7L33HENb9ww" role="1E0COp">
+              <node concept="19SGf9" id="7L33HENb9wx" role="1E0COh">
+                <node concept="19SUe$" id="7L33HENb9wy" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="gxbn0" id="7L33HENb9wM" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9wH" resolve="airbag deploys too soon or late" />
+            <node concept="gxbn0" id="7L33HENb9wM" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9wH" resolve="airbag deploys too soon or late" />
+            </node>
           </node>
         </node>
-        <node concept="1E0COo" id="7L33HENb9wP" role="1E0tXb">
-          <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_04" />
-          <node concept="1E0COg" id="7L33HENb9wQ" role="1E0COp">
-            <node concept="19SGf9" id="7L33HENb9wR" role="1E0COh">
-              <node concept="19SUe$" id="7L33HENb9wS" role="19SJt6">
-                <property role="19SUeA" value="when crash" />
+        <node concept="3f6qtF" id="6vZMoXu3Mhn" role="3f6qqO">
+          <node concept="1E0COo" id="7L33HENb9wP" role="3f6qtG">
+            <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_04" />
+            <node concept="1E0COg" id="7L33HENb9wQ" role="1E0COp">
+              <node concept="19SGf9" id="7L33HENb9wR" role="1E0COh">
+                <node concept="19SUe$" id="7L33HENb9wS" role="19SJt6">
+                  <property role="19SUeA" value="when crash" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="gxbn0" id="7L33HENb9wT" role="1E0COk">
-            <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            <node concept="gxbn0" id="7L33HENb9wT" role="1E0COk">
+              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+            </node>
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mh4" role="3f73zo">
+      <property role="TrG5h" value="Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mh6" role="3f73zo">
+      <property role="TrG5h" value="Not Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mh8" role="3f73zo">
+      <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mha" role="3f73zo">
+      <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
     </node>
   </node>
   <node concept="8gVzP" id="1L4MZBxVFrv">
