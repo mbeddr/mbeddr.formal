@@ -219,7 +219,7 @@
                       <node concept="2OqwBi" id="3oGITguAuS1" role="JncvB">
                         <node concept="30H73N" id="3oGITguAuHF" role="2Oq$k0" />
                         <node concept="2qgKlT" id="3oGITguAuZn" role="2OqNvi">
-                          <ref role="37wK5l" to="fazf:3oGITguAniH" resolve="getOutgoingEntity" />
+                          <ref role="37wK5l" to="fazf:3oGITguAniH" resolve="getIncomingEntity" />
                         </node>
                       </node>
                     </node>
