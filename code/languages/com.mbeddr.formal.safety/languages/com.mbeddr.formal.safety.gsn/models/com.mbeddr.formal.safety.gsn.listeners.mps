@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="nf7v" ref="r:323f2e16-a77b-4958-b026-25202f82daa5(com.mbeddr.formal.safety.gsn.util)" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="iihn" ref="r:1ca0ad9f-f283-47a0-9785-0fcac08d0fee(com.mbeddr.formal.base.prefixed_names_utils)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
   </imports>
   <registry>
@@ -42,12 +44,12 @@
   <node concept="jA7cl" id="33rrvp3CtYn">
     <ref role="1M2myG" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="3vq$el" id="33rrvp3CtYo" role="j$A37">
-      <ref role="3vq$9I" to="py52:3f8ZVRYdw4Q" resolve="idPrefix" />
+      <ref role="3vq$9I" to="b19z:3f8ZVRYdw4Q" resolve="idPrefix" />
       <node concept="3clFbS" id="33rrvp3CtYp" role="2VODD2">
         <node concept="3clFbF" id="33rrvp3CTtj" role="3cqZAp">
-          <node concept="2YIFZM" id="33rrvp3CTu5" role="3clFbG">
-            <ref role="37wK5l" to="nf7v:33rrvp3CyGy" resolve="fixPrefix" />
-            <ref role="1Pybhc" to="nf7v:33rrvp3Cvkb" resolve="PrefixFixingUtils" />
+          <node concept="2YIFZM" id="3QMOguhhmPL" role="3clFbG">
+            <ref role="37wK5l" to="iihn:33rrvp3CyGy" resolve="fixPrefix" />
+            <ref role="1Pybhc" to="iihn:33rrvp3Cvkb" resolve="PrefixFixingUtils" />
             <node concept="j_vvf" id="33rrvp3CTuu" role="37wK5m" />
           </node>
         </node>

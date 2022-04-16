@@ -55,6 +55,12 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="4445845612600281072" name="&lt;unknown&gt;" flags="ng" index="2GXxrR">
+        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
+        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
@@ -69,8 +75,6 @@
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <property id="6855128169206518172" name="displayRelationNames" index="2Ct_Wz" />
-        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
-        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
@@ -1970,8 +1974,8 @@
   </node>
   <node concept="2vn7XN" id="3f8ZVRYfHaZ">
     <property role="TrG5h" value="_200_goal_structure_fixed_prefix" />
-    <property role="3dZJ_E" value="6" />
     <property role="3dZJUb" value="ACC_TOP" />
+    <property role="3dZJ_E" value="0" />
     <node concept="2vn7WC" id="3f8ZVRYfHbc" role="2vn1q5">
       <property role="TrG5h" value="ACC_TOP_001" />
       <node concept="19SGf9" id="3f8ZVRYfHbd" role="2vnaTY">

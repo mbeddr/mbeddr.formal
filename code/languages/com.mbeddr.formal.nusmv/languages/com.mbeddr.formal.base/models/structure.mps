@@ -235,10 +235,20 @@
     <property role="EcuMT" value="4445845612600281072" />
     <property role="TrG5h" value="IContainerForEntitiesWithPrefixedNames" />
     <property role="3GE5qa" value="unique_prefix" />
+    <node concept="1TJgyi" id="3f8ZVRYdw4Q" role="1TKVEl">
+      <property role="IQ2nx" value="3731513482755309878" />
+      <property role="TrG5h" value="idPrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3f8ZVRYdwrn" role="1TKVEl">
+      <property role="IQ2nx" value="3731513482755311319" />
+      <property role="TrG5h" value="crtMaxIndex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3QMOguhhcvL">
     <property role="EcuMT" value="4445845612600281073" />
-    <property role="TrG5h" value="IEntityWithNameUsingPrefix" />
+    <property role="TrG5h" value="INamedConceptUsingPrefix" />
     <property role="3GE5qa" value="unique_prefix" />
     <node concept="PrWs8" id="3QMOguhhcvQ" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
