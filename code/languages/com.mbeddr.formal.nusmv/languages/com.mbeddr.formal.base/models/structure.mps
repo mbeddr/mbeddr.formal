@@ -231,5 +231,18 @@
       <ref role="20lvS9" node="6qVhvNsGwB7" resolve="IAttribute" />
     </node>
   </node>
+  <node concept="PlHQZ" id="3QMOguhhcvK">
+    <property role="EcuMT" value="4445845612600281072" />
+    <property role="TrG5h" value="IContainerForEntitiesWithPrefixedNames" />
+    <property role="3GE5qa" value="unique_prefix" />
+  </node>
+  <node concept="PlHQZ" id="3QMOguhhcvL">
+    <property role="EcuMT" value="4445845612600281073" />
+    <property role="TrG5h" value="IEntityWithNameUsingPrefix" />
+    <property role="3GE5qa" value="unique_prefix" />
+    <node concept="PrWs8" id="3QMOguhhcvQ" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

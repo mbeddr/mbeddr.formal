@@ -104,6 +104,9 @@
     <node concept="PrWs8" id="3GRi4m$qPY1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3QMOguhhcvM" role="PzmwI">
+      <ref role="PrY4T" to="b19z:3QMOguhhcvK" resolve="IContainerForEntitiesWithPrefixedNames" />
+    </node>
     <node concept="PrWs8" id="5mW_a0OE8bx" role="PzmwI">
       <ref role="PrY4T" to="b19z:60zS9AZgHTg" resolve="IFASTENStructureViewRoot" />
     </node>
