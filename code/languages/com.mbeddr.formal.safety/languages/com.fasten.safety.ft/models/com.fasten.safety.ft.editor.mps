@@ -686,8 +686,8 @@
       </node>
       <node concept="2iRkQZ" id="5rwT_Jny5eT" role="2iSdaV" />
     </node>
-    <node concept="PMmxH" id="6qVhvNsGXSr" role="6VMZX">
-      <ref role="PMmxG" to="xnej:6qVhvNsGxiF" resolve="AttributesEditorComponent" />
+    <node concept="PMmxH" id="3SCsB3Dpc80" role="6VMZX">
+      <ref role="PMmxG" node="3SCsB3DpaAZ" resolve="FaultTreeInInspectorEditorComponent" />
     </node>
   </node>
   <node concept="24kQdi" id="5rwT_JnuRc1">
@@ -2960,8 +2960,8 @@
         </node>
       </node>
     </node>
-    <node concept="PMmxH" id="6qVhvNsGY9W" role="6VMZX">
-      <ref role="PMmxG" to="xnej:6qVhvNsGxiF" resolve="AttributesEditorComponent" />
+    <node concept="PMmxH" id="3SCsB3Dpblm" role="6VMZX">
+      <ref role="PMmxG" node="3SCsB3DpaAZ" resolve="FaultTreeInInspectorEditorComponent" />
     </node>
   </node>
   <node concept="24kQdi" id="1GpuQyThI5s">
@@ -7070,6 +7070,20 @@
       <ref role="2$4xQ3" node="7wRJ5ynOjYu" resolve="FT_TEXT" />
     </node>
     <node concept="B$lHz" id="36k0PnKKxx3" role="2wV5jI" />
+  </node>
+  <node concept="PKFIW" id="3SCsB3DpaAZ">
+    <property role="TrG5h" value="FaultTreeInInspectorEditorComponent" />
+    <ref role="1XX52x" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+    <node concept="3EZMnI" id="3SCsB3DpaQu" role="2wV5jI">
+      <node concept="PMmxH" id="3SCsB3DpaQv" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3QMOguhhzhR" resolve="IContainerForEntitiesWithPrefixedNamesEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="3SCsB3DpaQw" role="3EZMnx" />
+      <node concept="2iRkQZ" id="3SCsB3DpaQx" role="2iSdaV" />
+      <node concept="PMmxH" id="3SCsB3DpaQy" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:6qVhvNsGxiF" resolve="AttributesEditorComponent" />
+      </node>
+    </node>
   </node>
 </model>
 
