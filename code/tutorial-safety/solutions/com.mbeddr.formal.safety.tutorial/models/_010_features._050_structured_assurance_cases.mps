@@ -138,6 +138,12 @@
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ng" index="2GXxrR">
+        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
+        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
@@ -147,8 +153,6 @@
         <property id="9102875167979884151" name="undeveloped" index="8uqrb" />
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
-        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
-        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
@@ -2951,10 +2955,10 @@
   </node>
   <node concept="2vn7XN" id="5WyjFZRt26F">
     <property role="TrG5h" value="_031_confidence_dempster_schafer_confidence_as_specification" />
-    <property role="3dZJ_E" value="8" />
     <property role="3dZJUb" value="CONF_SPEC" />
+    <property role="3dZJ_E" value="8" />
     <node concept="2vn7WC" id="5WyjFZRt26T" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_003" />
+      <property role="TrG5h" value="CONF_SPEC_001" />
       <node concept="19SGf9" id="5WyjFZRt26U" role="2vnaTY">
         <node concept="19SUe$" id="5WyjFZRt26V" role="19SJt6">
           <property role="19SUeA" value="Top goal. &#10;Minimal confidence to be achieved &#10;for this goal is specified." />
@@ -3190,7 +3194,7 @@
       </node>
     </node>
     <node concept="2vn7WC" id="5WyjFZRt27f" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_004" />
+      <property role="TrG5h" value="CONF_SPEC_002" />
       <node concept="19SGf9" id="5WyjFZRt27g" role="2vnaTY">
         <node concept="19SUe$" id="5WyjFZRt27h" role="19SJt6">
           <property role="19SUeA" value="First subgoal - the specified &#10;confidence to reach needs to be&#10;satisfied by the lower-level legs." />
@@ -3202,7 +3206,7 @@
       </node>
     </node>
     <node concept="2vn7WC" id="5WyjFZRt27H" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_001" />
+      <property role="TrG5h" value="CONF_SPEC_003" />
       <property role="8uqrb" value="true" />
       <node concept="19SGf9" id="5WyjFZRt27I" role="2vnaTY">
         <node concept="19SUe$" id="5WyjFZRt27J" role="19SJt6">
@@ -3215,15 +3219,15 @@
       </node>
     </node>
     <node concept="3VeUTF" id="5WyjFZRt28X" role="2vhqc$">
-      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_003" />
-      <ref role="3VeSjQ" node="5WyjFZRt27f" resolve="CONF_SPEC_004" />
+      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_001" />
+      <ref role="3VeSjQ" node="5WyjFZRt27f" resolve="CONF_SPEC_002" />
     </node>
     <node concept="3VeUTF" id="5WyjFZRt29c" role="2vhqc$">
-      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_003" />
-      <ref role="3VeSjQ" node="5WyjFZRt27H" resolve="CONF_SPEC_001" />
+      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_001" />
+      <ref role="3VeSjQ" node="5WyjFZRt27H" resolve="CONF_SPEC_003" />
     </node>
     <node concept="2vmxQI" id="1JRxVAvOB3I" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_002" />
+      <property role="TrG5h" value="CONF_SPEC_004" />
       <node concept="19SGf9" id="1JRxVAvOB3J" role="2vnaTY">
         <node concept="19SUe$" id="1JRxVAvOB3K" role="19SJt6" />
       </node>
@@ -3241,15 +3245,15 @@
       </node>
     </node>
     <node concept="3VeUTF" id="1JRxVAvOB87" role="2vhqc$">
-      <ref role="3VeSjP" node="5WyjFZRt27f" resolve="CONF_SPEC_004" />
-      <ref role="3VeSjQ" node="1JRxVAvOB3I" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjP" node="5WyjFZRt27f" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjQ" node="1JRxVAvOB3I" resolve="CONF_SPEC_004" />
     </node>
     <node concept="3VeUTF" id="1JRxVAvOB8r" role="2vhqc$">
-      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_004" />
       <ref role="3VeSjQ" node="1JRxVAvOB5w" resolve="CONF_SPEC_005" />
     </node>
     <node concept="3VeUTF" id="1JRxVAvOB8L" role="2vhqc$">
-      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_004" />
       <ref role="3VeSjQ" node="1JRxVAvOB6i" resolve="CONF_SPEC_006" />
     </node>
     <node concept="2vmhmH" id="1JRxVAvOB99" role="2vn1q5">

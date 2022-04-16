@@ -36,7 +36,7 @@
     <language slang="l:8a4ef392-f4b4-43e7-afb5-b071dce8043d:com.mbeddr.formal.safety.argument.process" version="0" />
     <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="0" />
     <language slang="l:402c6c59-bdb3-47fc-8dfa-74ab35e75274:com.mbeddr.formal.safety.cae.external_evidence" version="0" />
-    <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="0" />
+    <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="2" />
     <language slang="l:00a2e56d-f195-410b-8afe-5a3c7e505658:com.mbeddr.formal.safety.gsn.confidence.acp" version="0" />
     <language slang="l:d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8:com.mbeddr.formal.safety.gsn.confidence.dempster_shafer" version="0" />
     <language slang="l:42606624-2faa-4717-ba66-77021cc11b53:com.mbeddr.formal.safety.gsn.doc" version="1" />
