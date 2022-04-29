@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="2" />
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="8a4ef392-f4b4-43e7-afb5-b071dce8043d" name="com.mbeddr.formal.safety.argument.process" version="0" />
   </languages>
   <imports />
@@ -76,6 +76,11 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+        <child id="7402587364850275470" name="attributes" index="2U2l5M" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
       <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC">
@@ -87,7 +92,6 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
-        <child id="7160957776623476238" name="attributes" index="Gl$GA" />
       </concept>
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
         <reference id="2525617932486527189" name="source" index="3VeSjP" />
@@ -1258,14 +1262,14 @@
     <node concept="2vn7WC" id="3f8ZVRYhojj" role="2vn1q5">
       <property role="TrG5h" value="G03" />
       <property role="8uqrb" value="true" />
-      <node concept="3dzbTV" id="3f8ZVRYhZqV" role="Gl$GA">
-        <ref role="3dz$9E" node="3f8ZVRYhFCU" resolve="5.4.3.1" />
-        <ref role="3dzbTU" node="3f8ZVRYhF4k" resolve="ISO26262-8:2018" />
-      </node>
       <node concept="19SGf9" id="3f8ZVRYhokp" role="2vnaTY">
         <node concept="19SUe$" id="3f8ZVRYholm" role="19SJt6">
           <property role="19SUeA" value="DIA is in place and&#10;supplier conforms to&#10;it." />
         </node>
+      </node>
+      <node concept="3dzbTV" id="3f8ZVRYhZqV" role="2U2l5M">
+        <ref role="3dz$9E" node="3f8ZVRYhFCU" resolve="5.4.3.1" />
+        <ref role="3dzbTU" node="3f8ZVRYhF4k" resolve="ISO26262-8:2018" />
       </node>
     </node>
     <node concept="3VeUTF" id="3f8ZVRYhojk" role="2vhqc$">
@@ -1279,14 +1283,14 @@
     <node concept="2vn7WC" id="3f8ZVRYhF4G" role="2vn1q5">
       <property role="TrG5h" value="G04" />
       <property role="8uqrb" value="true" />
-      <node concept="3dzbTV" id="3f8ZVRYhFR9" role="Gl$GA">
-        <ref role="3dzbTU" node="3f8ZVRYhF4k" resolve="ISO26262-8:2018" />
-        <ref role="3dz$9E" node="3f8ZVRYhF4z" resolve="5.4.2.1" />
-      </node>
       <node concept="19SGf9" id="3f8ZVRYhF4H" role="2vnaTY">
         <node concept="19SUe$" id="3f8ZVRYhF4I" role="19SJt6">
           <property role="19SUeA" value="Supplier selection considered&#10;his capability to comply with&#10;quality and safety standards." />
         </node>
+      </node>
+      <node concept="3dzbTV" id="3f8ZVRYhFR9" role="2U2l5M">
+        <ref role="3dzbTU" node="3f8ZVRYhF4k" resolve="ISO26262-8:2018" />
+        <ref role="3dz$9E" node="3f8ZVRYhF4z" resolve="5.4.2.1" />
       </node>
     </node>
     <node concept="3VeUTF" id="3f8ZVRYhFDb" role="2vhqc$">

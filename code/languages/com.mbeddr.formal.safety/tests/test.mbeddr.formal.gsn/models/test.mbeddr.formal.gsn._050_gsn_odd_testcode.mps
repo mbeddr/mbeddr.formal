@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="8c301636-fbda-4009-bce8-7e00c3c1bac5" name="com.mbeddr.formal.safety.gsn.odd" version="0" />
-    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="2" />
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>

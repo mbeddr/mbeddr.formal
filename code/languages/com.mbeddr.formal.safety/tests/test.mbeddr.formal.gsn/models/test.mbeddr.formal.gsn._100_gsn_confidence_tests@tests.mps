@@ -5,7 +5,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="2" />
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
@@ -220,6 +220,11 @@
         <child id="8963411245960998404" name="value" index="37mO4d" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+        <child id="7402587364850275470" name="attributes" index="2U2l5M" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -236,7 +241,6 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
-        <child id="7160957776623476238" name="attributes" index="Gl$GA" />
       </concept>
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
         <reference id="2525617932486527189" name="source" index="3VeSjP" />
@@ -1087,10 +1091,6 @@
           <node concept="19SGf9" id="5WyjFZRs5yG" role="2vnaTY">
             <node concept="19SUe$" id="5WyjFZRs5yH" role="19SJt6" />
           </node>
-          <node concept="GlCK6" id="5WyjFZRs5$s" role="Gl$GA">
-            <property role="FV0bb" value="25" />
-            <property role="FV0bc" value="50" />
-          </node>
           <node concept="7CXmI" id="5WyjFZRs_tn" role="lGtFl">
             <node concept="1TM$A" id="5WyjFZRs_to" role="7EUXB">
               <node concept="2PYRI3" id="5WyjFZRsQIu" role="3lydEf">
@@ -1102,6 +1102,10 @@
                 <ref role="39XzEq" to="ete6:5WyjFZRsM0J" />
               </node>
             </node>
+          </node>
+          <node concept="GlCK6" id="5WyjFZRs5$s" role="2U2l5M">
+            <property role="FV0bb" value="25" />
+            <property role="FV0bc" value="50" />
           </node>
         </node>
         <node concept="37mRI7" id="5WyjFZRs5yS" role="lGtFl">
@@ -1140,7 +1144,7 @@
           <node concept="19SGf9" id="5WyjFZRs5yV" role="2vnaTY">
             <node concept="19SUe$" id="5WyjFZRs5yW" role="19SJt6" />
           </node>
-          <node concept="GlCK6" id="5WyjFZRs5$k" role="Gl$GA" />
+          <node concept="GlCK6" id="5WyjFZRs5$k" role="2U2l5M" />
         </node>
         <node concept="3VeUTF" id="5WyjFZRs5zs" role="2vhqc$">
           <ref role="3VeSjP" node="5WyjFZRs5yF" resolve="G01" />
@@ -1160,7 +1164,7 @@
           <node concept="19SGf9" id="5WyjFZRsY0W" role="2vnaTY">
             <node concept="19SUe$" id="5WyjFZRsY0X" role="19SJt6" />
           </node>
-          <node concept="GlCK6" id="5WyjFZRsY0Y" role="Gl$GA">
+          <node concept="GlCK6" id="5WyjFZRsY0Y" role="2U2l5M">
             <property role="FV0bb" value="25" />
             <property role="FV0bc" value="50" />
           </node>
@@ -1221,7 +1225,7 @@
           <node concept="19SGf9" id="5WyjFZRsY1d" role="2vnaTY">
             <node concept="19SUe$" id="5WyjFZRsY1e" role="19SJt6" />
           </node>
-          <node concept="GlCK6" id="5WyjFZRsY1f" role="Gl$GA">
+          <node concept="GlCK6" id="5WyjFZRsY1f" role="2U2l5M">
             <property role="FV0bb" value="75" />
             <property role="FV0bc" value="100" />
           </node>

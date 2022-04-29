@@ -107,7 +107,7 @@
       <ref role="PrY4T" to="b19z:3QMOguhhcvK" resolve="IContainerForEntitiesWithPrefixedNames" />
     </node>
     <node concept="PrWs8" id="6qVhvNsGXIz" role="PzmwI">
-      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributesContainer" />
+      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributeContainer" />
     </node>
     <node concept="1irR5M" id="5rwT_JnuR41" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -135,7 +135,7 @@
       <ref role="PrY4T" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
     </node>
     <node concept="PrWs8" id="6qVhvNsHv1v" role="PzmwI">
-      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributesContainer" />
+      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributeContainer" />
     </node>
     <node concept="1TJgyj" id="EBYTccYRyA" role="1TKVEi">
       <property role="IQ2ns" value="767858870486530214" />
