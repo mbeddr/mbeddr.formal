@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -48,6 +49,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -59,6 +62,7 @@
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -219,10 +223,12 @@
   <node concept="PlHQZ" id="6qVhvNsGwB7">
     <property role="EcuMT" value="7402587364850272711" />
     <property role="TrG5h" value="IAttribute" />
+    <property role="3GE5qa" value="attribute" />
   </node>
   <node concept="PlHQZ" id="6qVhvNsGxid">
     <property role="EcuMT" value="7402587364850275469" />
-    <property role="TrG5h" value="IAttributesContainer" />
+    <property role="TrG5h" value="IAttributeContainer" />
+    <property role="3GE5qa" value="attribute" />
     <node concept="1TJgyj" id="6qVhvNsGxie" role="1TKVEi">
       <property role="IQ2ns" value="7402587364850275470" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -252,6 +258,39 @@
     <property role="3GE5qa" value="unique_prefix" />
     <node concept="PrWs8" id="3QMOguhhcvQ" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3cGyC6fA47t">
+    <property role="EcuMT" value="3687474483974128093" />
+    <property role="TrG5h" value="IAnnotationProvidersContainer" />
+    <property role="3GE5qa" value="annotation_provider" />
+    <node concept="1TJgyj" id="3cGyC6fA47v" role="1TKVEi">
+      <property role="IQ2ns" value="3687474483974128095" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="annotationProviders" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3cGyC6fA47u" resolve="IAnnotationProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3cGyC6fA47u">
+    <property role="EcuMT" value="3687474483974128094" />
+    <property role="TrG5h" value="IAnnotationProvider" />
+    <property role="3GE5qa" value="annotation_provider" />
+  </node>
+  <node concept="1TIwiD" id="3cGyC6fC0Yv">
+    <property role="EcuMT" value="3687474483974639519" />
+    <property role="3GE5qa" value="annotation_provider" />
+    <property role="TrG5h" value="GenericAttributeAnnotationProviderBase" />
+    <property role="34LRSv" value="from attribute" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3cGyC6fC0Yw" role="PzmwI">
+      <ref role="PrY4T" node="3cGyC6fA47u" resolve="IAnnotationProvider" />
+    </node>
+    <node concept="1TJgyi" id="3cGyC6fCrHv" role="1TKVEl">
+      <property role="IQ2nx" value="3687474483974749023" />
+      <property role="TrG5h" value="attributeConceptNodeID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
