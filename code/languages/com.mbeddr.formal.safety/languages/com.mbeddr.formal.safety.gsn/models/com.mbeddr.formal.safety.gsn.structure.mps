@@ -114,6 +114,9 @@
     <node concept="PrWs8" id="5mW_a0OE8bx" role="PzmwI">
       <ref role="PrY4T" to="b19z:60zS9AZgHTg" resolve="IFASTENStructureViewRoot" />
     </node>
+    <node concept="PrWs8" id="3cGyC6fFNdU" role="PzmwI">
+      <ref role="PrY4T" to="b19z:3cGyC6fA47t" resolve="IAnnotationProvidersContainer" />
+    </node>
     <node concept="1irR5M" id="2LDKh2uE0R3" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="2LDKh2uE1oj" role="1irR9h">
@@ -204,12 +207,24 @@
     <node concept="1TJgyj" id="6dwPixfdDSe" role="1TKVEi">
       <property role="IQ2ns" value="7160957776623476238" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes_old" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+      <node concept="asaX9" id="3Px2xUV1gzT" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3Px2xUV1gzV" role="1TKVEi">
+      <property role="IQ2ns" value="4422827436157503739" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attributes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+      <ref role="20ksaX" to="b19z:6qVhvNsGxie" resolve="attributes" />
     </node>
     <node concept="PrWs8" id="3QMOguhhfSS" role="PzmwI">
       <ref role="PrY4T" to="b19z:3QMOguhhcvL" resolve="INamedConceptUsingPrefix" />
+    </node>
+    <node concept="PrWs8" id="3cGyC6fGUEN" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributeContainer" />
     </node>
     <node concept="PrWs8" id="4J4sUayh4sl" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
@@ -422,6 +437,12 @@
     <node concept="t5JxF" id="6OmQ$5rs7BB" role="lGtFl">
       <property role="t5JxN" value="Elements which are are not displayed in textual notation" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3Px2xUV4m9W">
+    <property role="EcuMT" value="4422827436158313084" />
+    <property role="TrG5h" value="GenericGSNAttributeAnnotationProvider" />
+    <property role="34LRSv" value="from attribute" />
+    <ref role="1TJDcQ" to="b19z:3cGyC6fC0Yv" resolve="GenericAttributeAnnotationProviderBase" />
   </node>
 </model>
 

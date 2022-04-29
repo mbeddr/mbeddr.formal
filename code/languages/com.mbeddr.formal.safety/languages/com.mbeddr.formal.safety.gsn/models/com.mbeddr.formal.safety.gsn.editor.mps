@@ -859,6 +859,10 @@
         </node>
         <node concept="2iRfu4" id="5WyjFZRl1gx" role="2iSdaV" />
       </node>
+      <node concept="3F0ifn" id="3cGyC6fDROD" role="3EZMnx" />
+      <node concept="PMmxH" id="3cGyC6fEQ4A" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fA47W" resolve="AnnotationProvidersContainerEditorComponent" />
+      </node>
     </node>
   </node>
   <node concept="2xDbr0" id="4Te4zGtlJMP">
@@ -3123,6 +3127,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="3cGyC6fBN3n" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
+      </node>
       <node concept="xShMh" id="65Lrkjj1RgQ" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
@@ -3247,6 +3254,9 @@
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
       </node>
+      <node concept="PMmxH" id="3Px2xUV5Eu9" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
+      </node>
       <node concept="xShMh" id="3Ngc4zVhb4p" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
@@ -3301,6 +3311,9 @@
       <node concept="3F1sOY" id="33qt4wr6jX1" role="3EZMnx">
         <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+      </node>
+      <node concept="PMmxH" id="3Px2xUV5EtF" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
       </node>
     </node>
     <node concept="1PE4EZ" id="3JvPdC9bfik" role="1PM95z">
@@ -3378,6 +3391,9 @@
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
       </node>
+      <node concept="PMmxH" id="3Px2xUV79ll" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
+      </node>
     </node>
     <node concept="1PE4EZ" id="3JvPdC9bf4O" role="1PM95z">
       <ref role="1PE7su" node="3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
@@ -3417,6 +3433,9 @@
       <node concept="3F1sOY" id="33qt4wr8iw_" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="PMmxH" id="3Px2xUV78fW" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
       </node>
     </node>
     <node concept="1PE4EZ" id="3JvPdC9bf4Q" role="1PM95z">
@@ -9634,6 +9653,9 @@
         <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
       </node>
+      <node concept="PMmxH" id="3Px2xUV78gq" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
+      </node>
     </node>
     <node concept="1PE4EZ" id="3JvPdC9bfii" role="1PM95z">
       <ref role="1PE7su" node="3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
@@ -10752,7 +10774,7 @@
         <node concept="VPM3Z" id="1TD_kqsRmgL" role="3F10Kt" />
         <node concept="3XFhqQ" id="1TD_kqsRmgM" role="3EZMnx" />
         <node concept="3F2HdR" id="1TD_kqsRmgN" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:6dwPixfdDSe" resolve="attributes" />
+          <ref role="1NtTu8" to="py52:3Px2xUV1gzV" resolve="attributes" />
           <node concept="2iRkQZ" id="1TD_kqsRmgO" role="2czzBx" />
           <node concept="3F0ifn" id="2p23w$daYbV" role="2czzBI">
             <property role="3F0ifm" value="press enter to add attributes" />

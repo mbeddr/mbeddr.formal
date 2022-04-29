@@ -66,6 +66,8 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
@@ -76,6 +78,7 @@
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
@@ -107,6 +110,9 @@
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -302,6 +308,23 @@
   </node>
   <node concept="1M2fIO" id="3f8ZVRYdw_A">
     <ref role="1M2myG" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+  </node>
+  <node concept="1M2fIO" id="3Px2xUV5DxF">
+    <ref role="1M2myG" to="py52:3Px2xUV4m9W" resolve="GenericGSNAttributeAnnotationProvider" />
+    <node concept="9S07l" id="3Px2xUV5DxG" role="9Vyp8">
+      <node concept="3clFbS" id="3Px2xUV5DxH" role="2VODD2">
+        <node concept="3clFbF" id="3Px2xUV5D_B" role="3cqZAp">
+          <node concept="2OqwBi" id="3Px2xUV5DMa" role="3clFbG">
+            <node concept="nLn13" id="3Px2xUV5D_A" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3Px2xUV5DZI" role="2OqNvi">
+              <node concept="chp4Y" id="3Px2xUV5E9e" role="cj9EA">
+                <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
