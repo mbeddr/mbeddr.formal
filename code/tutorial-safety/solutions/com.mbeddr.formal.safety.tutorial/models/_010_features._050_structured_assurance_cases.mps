@@ -143,6 +143,9 @@
         <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
         <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
       </concept>
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+        <child id="7402587364850275470" name="attributes" index="2U2l5M" />
+      </concept>
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
@@ -158,7 +161,6 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
-        <child id="7160957776623476238" name="attributes" index="Gl$GA" />
       </concept>
       <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
         <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
@@ -544,13 +546,13 @@
     </node>
     <node concept="2vn7WC" id="3jaLROLvqx6" role="2vn1q5">
       <property role="TrG5h" value="G03" />
-      <node concept="Figmn" id="2p23w$dciSh" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
       <node concept="19SGf9" id="3jaLROLvqxY" role="2vnaTY">
         <node concept="19SUe$" id="3jaLROLvqxZ" role="19SJt6">
           <property role="19SUeA" value="Hazard H02 has&#10;been mitigated" />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dciSh" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="3VeUTF" id="3jaLROLvq$y" role="2vhqc$">
@@ -559,13 +561,13 @@
     </node>
     <node concept="2vmxSQ" id="2hB9zGID8CE" role="2vn1q5">
       <property role="TrG5h" value="C01" />
-      <node concept="Figmn" id="2p23w$dd388" role="Gl$GA">
-        <property role="Figmm" value="ccffff" />
-      </node>
       <node concept="19SGf9" id="2hB9zGID8CF" role="2vnaTY">
         <node concept="19SUe$" id="2hB9zGID8CG" role="19SJt6">
           <property role="19SUeA" value="Environment &#10;description." />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dd388" role="2U2l5M">
+        <property role="Figmm" value="ccffff" />
       </node>
     </node>
     <node concept="2vhqFZ" id="2hB9zGID8FF" role="2vhqc$">
@@ -574,13 +576,13 @@
     </node>
     <node concept="1qxpMw" id="2hB9zGID8Pz" role="2vn1q5">
       <property role="TrG5h" value="J01" />
-      <node concept="Figmn" id="2p23w$dcp0d" role="Gl$GA">
-        <property role="Figmm" value="ccffcc" />
-      </node>
       <node concept="19SGf9" id="2hB9zGID8P$" role="2vnaTY">
         <node concept="19SUe$" id="2hB9zGID8P_" role="19SJt6">
           <property role="19SUeA" value="Widely used top &#10;level strategy" />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dcp0d" role="2U2l5M">
+        <property role="Figmm" value="ccffcc" />
       </node>
     </node>
     <node concept="2vhqFZ" id="2hB9zGID8U$" role="2vhqc$">
@@ -601,13 +603,13 @@
     </node>
     <node concept="2XiGWt" id="2hB9zGID9aw" role="2vn1q5">
       <property role="TrG5h" value="AS01" />
-      <node concept="Figmn" id="2p23w$dcp26" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
       <node concept="19SGf9" id="2hB9zGID9ax" role="2vnaTY">
         <node concept="19SUe$" id="2hB9zGID9ay" role="19SJt6">
           <property role="19SUeA" value="Operators have&#10;adequate training." />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dcp26" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="2vhqFZ" id="2hB9zGID9e4" role="2vhqc$">
@@ -1099,7 +1101,7 @@
           <property role="gqqTZ" value="280.5" />
           <property role="gqqTW" value="16.0" />
           <property role="gqqTX" value="105.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1119,7 +1121,7 @@
           <property role="gqqTZ" value="101.0" />
           <property role="gqqTW" value="243.0" />
           <property role="gqqTX" value="110.0" />
-          <property role="gqqTy" value="69.0" />
+          <property role="gqqTy" value="70.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1129,7 +1131,7 @@
           <property role="gqqTZ" value="286.5" />
           <property role="gqqTW" value="245.0" />
           <property role="gqqTX" value="99.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1139,7 +1141,7 @@
           <property role="gqqTZ" value="60.0" />
           <property role="gqqTW" value="360.0" />
           <property role="gqqTX" value="192.0" />
-          <property role="gqqTy" value="69.0" />
+          <property role="gqqTy" value="70.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1221,7 +1223,7 @@
           <property role="gqqTZ" value="286.5" />
           <property role="gqqTW" value="374.0" />
           <property role="gqqTX" value="139.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1249,7 +1251,7 @@
           <property role="gqqTZ" value="446.0" />
           <property role="gqqTW" value="252.0" />
           <property role="gqqTX" value="94.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1277,7 +1279,7 @@
           <property role="gqqTZ" value="446.0" />
           <property role="gqqTW" value="374.0" />
           <property role="gqqTX" value="136.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1331,7 +1333,7 @@
           <property role="19SUeA" value="All steps have been logged &#10;and documents related to &#10;process are available." />
         </node>
       </node>
-      <node concept="GlCK6" id="2czCwT$U5Yb" role="Gl$GA">
+      <node concept="GlCK6" id="2czCwT$U5Yb" role="2U2l5M">
         <property role="FV0bb" value="75" />
         <property role="FV0bc" value="100" />
       </node>
@@ -1365,7 +1367,7 @@
           <property role="19SUeA" value="Very convincing &#10;evidence." />
         </node>
       </node>
-      <node concept="GlCK6" id="2czCwT$U65i" role="Gl$GA">
+      <node concept="GlCK6" id="2czCwT$U65i" role="2U2l5M">
         <property role="FV0bb" value="100" />
         <property role="FV0bc" value="50" />
       </node>
@@ -1396,7 +1398,7 @@
           <property role="19SUeA" value="Unconvincing &#10;evidence." />
         </node>
       </node>
-      <node concept="GlCK6" id="2czCwT$U6gV" role="Gl$GA">
+      <node concept="GlCK6" id="2czCwT$U6gV" role="2U2l5M">
         <property role="FV0bb" value="0" />
         <property role="FV0bc" value="50" />
       </node>
@@ -1987,13 +1989,13 @@
     <property role="TrG5h" value="_011_plain_text_cae" />
     <node concept="29edOk" id="2ojFC2JbceP" role="2vn1q5">
       <property role="TrG5h" value="C01" />
-      <node concept="Figmn" id="75La0fJ_mV8" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
       <node concept="19SGf9" id="2ojFC2JbceQ" role="2vnaTY">
         <node concept="19SUe$" id="2ojFC2JbceR" role="19SJt6">
           <property role="19SUeA" value="System is safe &#10;to operate." />
         </node>
+      </node>
+      <node concept="Figmn" id="75La0fJ_mV8" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="37mRI7" id="2ojFC2Jbcf7" role="lGtFl">
@@ -2394,13 +2396,13 @@
     <property role="TrG5h" value="_051_cae_linking_evidence_to_external_ressources" />
     <node concept="29edOk" id="1UGKBYPAxlk" role="2vn1q5">
       <property role="TrG5h" value="C01" />
-      <node concept="Figmn" id="1UGKBYPAxll" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
       <node concept="19SGf9" id="1UGKBYPAxlm" role="2vnaTY">
         <node concept="19SUe$" id="1UGKBYPAxln" role="19SJt6">
           <property role="19SUeA" value="Function X is &#10;correctly implemented." />
         </node>
+      </node>
+      <node concept="Figmn" id="1UGKBYPAxll" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="37mRI7" id="1UGKBYPAxlo" role="lGtFl">
@@ -2964,7 +2966,7 @@
           <property role="19SUeA" value="Top goal. &#10;Minimal confidence to be achieved &#10;for this goal is specified." />
         </node>
       </node>
-      <node concept="GlCK6" id="5WyjFZRt28x" role="Gl$GA">
+      <node concept="GlCK6" id="5WyjFZRt28x" role="2U2l5M">
         <property role="FV0bb" value="75" />
         <property role="FV0bc" value="50" />
       </node>
@@ -3200,7 +3202,7 @@
           <property role="19SUeA" value="First subgoal - the specified &#10;confidence to reach needs to be&#10;satisfied by the lower-level legs." />
         </node>
       </node>
-      <node concept="GlCK6" id="1JRxVAvOBgt" role="Gl$GA">
+      <node concept="GlCK6" id="1JRxVAvOBgt" role="2U2l5M">
         <property role="FV0bb" value="50" />
         <property role="FV0bc" value="0" />
       </node>
@@ -3213,7 +3215,7 @@
           <property role="19SUeA" value="Second subgoal - undeveloped but we have &#10;maximal confidence." />
         </node>
       </node>
-      <node concept="GlCK6" id="1JRxVAvOBgd" role="Gl$GA">
+      <node concept="GlCK6" id="1JRxVAvOBgd" role="2U2l5M">
         <property role="FV0bb" value="100" />
         <property role="FV0bc" value="100" />
       </node>
