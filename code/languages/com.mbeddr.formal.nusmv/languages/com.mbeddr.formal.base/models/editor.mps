@@ -197,6 +197,7 @@
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="4242538589862653897" name="addHints" index="2whIAn" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -3653,15 +3654,6 @@
         <property role="Vb096" value="fLJRk5A/lightGray" />
       </node>
     </node>
-    <node concept="14StLt" id="3cGyC6fJeOj" role="V601i">
-      <property role="TrG5h" value="AnnotationProviderStyle" />
-      <node concept="VSNWy" id="65LrkjiZl6c" role="3F10Kt">
-        <property role="1lJzqX" value="9" />
-      </node>
-      <node concept="2biZxu" id="65LrkjiZl6h" role="3F10Kt">
-        <property role="1rj3mz" value="Arial" />
-      </node>
-    </node>
   </node>
   <node concept="PKFIW" id="4qaoH_GDoF">
     <property role="TrG5h" value="iconCell_" />
@@ -4169,6 +4161,11 @@
           </node>
         </node>
       </node>
+      <node concept="2w$q5c" id="1r1mR59pjzk" role="2whIAn">
+        <node concept="2aJ2om" id="1r1mR59pjzl" role="2w$qW5">
+          <ref role="2$4xQ3" node="3cGyC6fBMuN" resolve="ANNOTATION_PROVIDER" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3cGyC6fC1qM">
@@ -4315,6 +4312,30 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="V5hpn" id="1r1mR59qrsC">
+    <property role="3GE5qa" value="annotation_provider" />
+    <property role="TrG5h" value="annotation_providers_styles" />
+    <node concept="14StLt" id="3cGyC6fJeOj" role="V601i">
+      <property role="TrG5h" value="AnnotationProviderStyle" />
+      <node concept="VSNWy" id="65LrkjiZl6c" role="3F10Kt">
+        <property role="1lJzqX" value="8" />
+      </node>
+      <node concept="2biZxu" id="65LrkjiZl6h" role="3F10Kt">
+        <property role="1rj3mz" value="Arial" />
+      </node>
+    </node>
+    <node concept="14StLt" id="1r1mR59pGcz" role="V601i">
+      <property role="TrG5h" value="AnnotationProviderKeywordStyle" />
+      <node concept="3Xmtl4" id="1r1mR59pGem" role="3F10Kt">
+        <node concept="1wgc9g" id="1r1mR59pGeo" role="3XvnJa">
+          <ref role="1wgcnl" node="3cGyC6fJeOj" resolve="AnnotationProviderStyle" />
+        </node>
+      </node>
+      <node concept="VechU" id="1r1mR59pGeQ" role="3F10Kt">
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
       </node>
     </node>
   </node>
