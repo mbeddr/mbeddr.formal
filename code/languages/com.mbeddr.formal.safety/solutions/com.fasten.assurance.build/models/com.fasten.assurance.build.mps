@@ -5181,6 +5181,16 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1r1mR59Va_P" role="3bR37C">
+          <node concept="3bR9La" id="1r1mR59Va_Q" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1r1mR59Va_R" role="3bR37C">
+          <node concept="3bR9La" id="1r1mR59Va_S" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3rkUgzovbK_" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5832,9 +5842,6 @@
         </node>
         <node concept="3LEDTy" id="16Akbu55zO8" role="3LEDUa">
           <ref role="3LEDTV" node="3f8ZVRYhDlD" resolve="com.mbeddr.formal.safety.argument.process" />
-        </node>
-        <node concept="3LEDTy" id="1r1mR59FF9G" role="3LEDUa">
-          <ref role="3LEDTV" node="5YWtEMPIdDz" resolve="com.mbeddr.formal.safety.argument.process.artefacts" />
         </node>
       </node>
     </node>
