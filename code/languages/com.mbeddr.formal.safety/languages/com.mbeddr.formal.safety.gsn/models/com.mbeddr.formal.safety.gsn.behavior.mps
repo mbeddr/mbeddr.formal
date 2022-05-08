@@ -1255,6 +1255,32 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1r1mR59uNyI" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="text" />
+      <node concept="3Tm1VV" id="1r1mR59uNyJ" role="1B3o_S" />
+      <node concept="3clFbS" id="1r1mR59uNyM" role="3clF47">
+        <node concept="3clFbF" id="1r1mR59uNyP" role="3cqZAp">
+          <node concept="3cpWs3" id="1r1mR59uPlF" role="3clFbG">
+            <node concept="Xl_RD" id="1r1mR59uPoQ" role="3uHU7w">
+              <property role="Xl_RC" value=" (rgb)" />
+            </node>
+            <node concept="3cpWs3" id="1r1mR59uNPL" role="3uHU7B">
+              <node concept="Xl_RD" id="1r1mR59uNyO" role="3uHU7B">
+                <property role="Xl_RC" value="color " />
+              </node>
+              <node concept="2OqwBi" id="1r1mR59uOHg" role="3uHU7w">
+                <node concept="13iPFW" id="1r1mR59uOzG" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1r1mR59uOQ4" role="2OqNvi">
+                  <ref role="3TsBF5" to="py52:2p23w$d2KIv" resolve="val" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1r1mR59uNyN" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="3$Xa1eBcuAD">
     <property role="3GE5qa" value="base" />
