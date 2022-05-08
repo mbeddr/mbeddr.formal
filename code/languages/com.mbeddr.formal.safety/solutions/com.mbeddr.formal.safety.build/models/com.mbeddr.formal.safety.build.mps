@@ -15609,6 +15609,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1r1mR59Vb$6" role="3bR37C">
+          <node concept="3bR9La" id="1r1mR59Vb$7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="6ucyvMUDFeT" role="1hWBAP">
