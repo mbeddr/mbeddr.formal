@@ -9,8 +9,22 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
@@ -39,6 +53,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -235,6 +250,16 @@
     <node concept="PrWs8" id="1noKC0JTmNf" role="PzmwI">
       <ref role="PrY4T" node="1noKC0JTi6M" resolve="IArtefactElement" />
     </node>
+    <node concept="PrWs8" id="1r1mR59u3cQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="1TJgyj" id="1r1mR59sBQi" role="1TKVEi">
+      <property role="IQ2ns" value="1639692281461243282" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="role" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1r1mR59sBPS" resolve="RoleRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1noKC0JTmNe">
     <property role="EcuMT" value="1574221925581155534" />
@@ -251,10 +276,21 @@
     <property role="EcuMT" value="1574221925581155691" />
     <property role="3GE5qa" value="participant" />
     <property role="TrG5h" value="Person" />
+    <property role="34LRSv" value="person" />
     <ref role="1TJDcQ" node="1noKC0JTmNd" resolve="Participant" />
     <node concept="1TJgyi" id="1noKC0JTmPG" role="1TKVEl">
       <property role="IQ2nx" value="1574221925581155692" />
       <property role="TrG5h" value="email" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1r1mR59sjNb" role="1TKVEl">
+      <property role="IQ2nx" value="1639692281461161163" />
+      <property role="TrG5h" value="firstName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1r1mR59sjNg" role="1TKVEl">
+      <property role="IQ2nx" value="1639692281461161168" />
+      <property role="TrG5h" value="surname" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -271,10 +307,26 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1noKC0JTmPF" resolve="Person" />
     </node>
+    <node concept="1TJgyj" id="1r1mR59sBQl" role="1TKVEi">
+      <property role="IQ2ns" value="1639692281461243285" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="roleDefinitions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1r1mR59sBPE" resolve="RoleDefinition" />
+    </node>
     <node concept="1TJgyj" id="1noKC0JTsy$" role="1TKVEi">
       <property role="IQ2ns" value="1574221925581179044" />
       <property role="20kJfa" value="parentOrganization" />
       <ref role="20lvS9" node="1noKC0JTmPI" resolve="Organization" />
+    </node>
+    <node concept="1irR5M" id="1r1mR59s2Id" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irPie" id="1r1mR59s2Ij" role="1irR9h">
+        <property role="1irPi9" value="✵" />
+        <node concept="3PKj8D" id="1r1mR59s2Iq" role="3PKjny">
+          <property role="3PKj8l" value="FF0022" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1noKC0JTmPJ">
@@ -427,6 +479,42 @@
       <property role="IQ2nx" value="5781651021712826230" />
       <property role="TrG5h" value="nodeName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1r1mR59sBPE">
+    <property role="EcuMT" value="1639692281461243242" />
+    <property role="3GE5qa" value="participant.role" />
+    <property role="TrG5h" value="RoleDefinition" />
+    <property role="34LRSv" value="role" />
+    <property role="R4oN_" value="role definition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1r1mR59sBPF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1r1mR59sBPS">
+    <property role="EcuMT" value="1639692281461243256" />
+    <property role="3GE5qa" value="participant.role" />
+    <property role="TrG5h" value="RoleRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1r1mR59sBPT" role="1TKVEi">
+      <property role="IQ2ns" value="1639692281461243257" />
+      <property role="20kJfa" value="role" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1r1mR59sBPE" resolve="RoleDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1r1mR59sWT1">
+    <property role="EcuMT" value="1639692281461329473" />
+    <property role="TrG5h" value="GSNAttributeParticipantRef" />
+    <property role="34LRSv" value="responsible" />
+    <property role="3GE5qa" value="gsn_attributes" />
+    <property role="R4oN_" value="responsible for the argument leg" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyj" id="1r1mR59sWT2" role="1TKVEi">
+      <property role="IQ2ns" value="1639692281461329474" />
+      <property role="20kJfa" value="participant" />
+      <ref role="20lvS9" node="1noKC0JTmNd" resolve="Participant" />
     </node>
   </node>
 </model>
