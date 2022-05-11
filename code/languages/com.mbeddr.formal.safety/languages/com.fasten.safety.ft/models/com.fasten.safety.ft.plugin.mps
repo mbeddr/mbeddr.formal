@@ -20,7 +20,6 @@
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -165,11 +164,6 @@
         <reference id="6478870542308703669" name="decl" index="3tTeZr" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -201,9 +195,6 @@
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -275,26 +266,6 @@
         <node concept="3Tqbb2" id="1r1mR59JwYx" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="1r1mR59JwYy" role="3clF47">
-        <node concept="2xdQw9" id="1r1mR59S$fV" role="3cqZAp">
-          <node concept="3cpWs3" id="1r1mR59S$hT" role="9lYJi">
-            <node concept="2OqwBi" id="1r1mR59S$_F" role="3uHU7w">
-              <node concept="1PxgMI" id="1r1mR59S$w7" role="2Oq$k0">
-                <node concept="chp4Y" id="1r1mR59S$yq" role="3oSUPX">
-                  <ref role="cht4Q" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
-                </node>
-                <node concept="37vLTw" id="1r1mR59S$nF" role="1m5AlR">
-                  <ref role="3cqZAo" node="1r1mR59JwYw" resolve="n" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="1r1mR59S$Gf" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="1r1mR59S$fX" role="3uHU7B">
-              <property role="Xl_RC" value="node should be RED " />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1r1mR59Rcdh" role="3cqZAp">
           <node concept="10M0yZ" id="1r1mR59Rcdj" role="3clFbG">
             <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
