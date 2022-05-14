@@ -342,5 +342,27 @@
       <ref role="2$4xQ3" to="xnej:3cGyC6fBMuN" resolve="ANNOTATION_PROVIDER" />
     </node>
   </node>
+  <node concept="24kQdi" id="7LZ1KAVSg3G">
+    <property role="3GE5qa" value="state" />
+    <ref role="1XX52x" to="l1gl:5uoS5eUXEqH" resolve="ArgumentEntityStateAttribute" />
+    <node concept="3EZMnI" id="7LZ1KAVSg3H" role="2wV5jI">
+      <node concept="3F0ifn" id="7LZ1KAVSg3I" role="3EZMnx">
+        <property role="3F0ifm" value="state:" />
+        <ref role="1k5W1q" to="xnej:1r1mR59pGcz" resolve="AnnotationProviderKeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="7LZ1KAVSg3J" role="3EZMnx">
+        <ref role="1NtTu8" to="l1gl:5uoS5eUXEqM" resolve="state" />
+        <ref role="1k5W1q" to="xnej:3cGyC6fJeOj" resolve="AnnotationProviderStyle" />
+      </node>
+      <node concept="3F0ifn" id="7LZ1KAVSg3K" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+      </node>
+      <node concept="l2Vlx" id="7LZ1KAVSg3L" role="2iSdaV" />
+    </node>
+    <node concept="2aJ2om" id="7LZ1KAVSg3M" role="CpUAK">
+      <ref role="2$4xQ3" to="xnej:3cGyC6fBMuN" resolve="ANNOTATION_PROVIDER" />
+    </node>
+  </node>
 </model>
 
