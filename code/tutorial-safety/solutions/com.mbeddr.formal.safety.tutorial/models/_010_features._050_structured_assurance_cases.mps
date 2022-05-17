@@ -21,7 +21,30 @@
         <reference id="4993311705428119028" name="acp" index="jB0dY" />
       </concept>
     </language>
+    <language id="8a4ef392-f4b4-43e7-afb5-b071dce8043d" name="com.mbeddr.formal.safety.argument.process">
+      <concept id="3731513482756161251" name="com.mbeddr.formal.safety.argument.process.structure.Bibliography" flags="ng" index="3dyw5u">
+        <child id="3731513482756243838" name="entries" index="3dzbV3" />
+      </concept>
+      <concept id="3731513482756195661" name="com.mbeddr.formal.safety.argument.process.structure.Standard" flags="ng" index="3dyRFK">
+        <child id="3731513482756244090" name="clauses" index="3dzbR7" />
+      </concept>
+      <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ng" index="3dyRFN">
+        <property id="3731513482756243948" name="publicationYear" index="3dzbTh" />
+        <property id="3731513482756243946" name="longTitle" index="3dzbTn" />
+      </concept>
+      <concept id="3731513482756243840" name="com.mbeddr.formal.safety.argument.process.structure.StandardClause" flags="ng" index="3dzbSX">
+        <property id="3731513482756243853" name="page" index="3dzbSK" />
+        <property id="3731513482756361198" name="description" index="3dzJhj" />
+      </concept>
+      <concept id="3731513482756243910" name="com.mbeddr.formal.safety.argument.process.structure.StandardAndClauseRefGSNAttribute" flags="ng" index="3dzbTV">
+        <reference id="3731513482756243911" name="standard" index="3dzbTU" />
+        <reference id="3731513482756406743" name="clause" index="3dz$9E" />
+      </concept>
+    </language>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
+      <concept id="5489462543707440098" name="com.mbeddr.formal.safety.gsn.ext.structure.TemplateWord" flags="ng" index="hkfVV">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
       <concept id="1629165016568013909" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternInstance" flags="ng" index="1VB52A">
         <reference id="1094571097530678975" name="originalDefinition" index="AygKy" />
         <child id="1629165016568014583" name="goalStructure" index="1VB584" />
@@ -138,7 +161,23 @@
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ng" index="2GXxrR">
+        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
+        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
+      </concept>
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+        <child id="7402587364850275470" name="attributes" index="2U2l5M" />
+      </concept>
+      <concept id="3687474483974639519" name="com.mbeddr.formal.base.structure.GenericAttributeAnnotationProviderBase" flags="ng" index="2Wz8ku">
+        <property id="3687474483974749023" name="attributeConceptNodeID" index="2Wzj7u" />
+      </concept>
+      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ng" index="2WHcHs">
+        <child id="3687474483974128095" name="annotationProviders" index="2WHcHu" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4422827436158313084" name="com.mbeddr.formal.safety.gsn.structure.GenericGSNAttributeAnnotationProvider" flags="ng" index="26s6xy" />
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
       <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
@@ -147,14 +186,11 @@
         <property id="9102875167979884151" name="undeveloped" index="8uqrb" />
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
-        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
-        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
-        <child id="4266958635905312315" name="text" index="2vnaTY" />
-        <child id="7160957776623476238" name="attributes" index="Gl$GA" />
+        <child id="4266958635905312315" name="text" index="2vnaTZ" />
       </concept>
       <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
         <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
@@ -179,7 +215,7 @@
     <property role="TrG5h" value="_010_plain_text_gsn" />
     <node concept="2vn7WC" id="7L33HENduwJ" role="2vn1q5">
       <property role="TrG5h" value="G01" />
-      <node concept="19SGf9" id="7L33HENduwR" role="2vnaTY">
+      <node concept="19SGf9" id="7L33HENduwR" role="2vnaTZ">
         <node concept="19SUe$" id="7L33HENduwS" role="19SJt6">
           <property role="19SUeA" value="The system is &#10;sufficiently safe to operate" />
         </node>
@@ -515,7 +551,7 @@
     </node>
     <node concept="2vmxQI" id="7L33HENduxg" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <node concept="19SGf9" id="7L33HENduxr" role="2vnaTY">
+      <node concept="19SGf9" id="7L33HENduxr" role="2vnaTZ">
         <node concept="19SUe$" id="7L33HENduxs" role="19SJt6">
           <property role="19SUeA" value="Argument over hazards." />
         </node>
@@ -528,7 +564,7 @@
     <node concept="2vn7WC" id="7L33HENduy0" role="2vn1q5">
       <property role="TrG5h" value="G02" />
       <property role="8uqrb" value="true" />
-      <node concept="19SGf9" id="7L33HENduye" role="2vnaTY">
+      <node concept="19SGf9" id="7L33HENduye" role="2vnaTZ">
         <node concept="19SUe$" id="7L33HENduyf" role="19SJt6">
           <property role="19SUeA" value="Hazard H01 has &#10;been mitigated" />
         </node>
@@ -540,13 +576,13 @@
     </node>
     <node concept="2vn7WC" id="3jaLROLvqx6" role="2vn1q5">
       <property role="TrG5h" value="G03" />
-      <node concept="Figmn" id="2p23w$dciSh" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
-      <node concept="19SGf9" id="3jaLROLvqxY" role="2vnaTY">
+      <node concept="19SGf9" id="3jaLROLvqxY" role="2vnaTZ">
         <node concept="19SUe$" id="3jaLROLvqxZ" role="19SJt6">
           <property role="19SUeA" value="Hazard H02 has&#10;been mitigated" />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dciSh" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="3VeUTF" id="3jaLROLvq$y" role="2vhqc$">
@@ -555,13 +591,13 @@
     </node>
     <node concept="2vmxSQ" id="2hB9zGID8CE" role="2vn1q5">
       <property role="TrG5h" value="C01" />
-      <node concept="Figmn" id="2p23w$dd388" role="Gl$GA">
-        <property role="Figmm" value="ccffff" />
-      </node>
-      <node concept="19SGf9" id="2hB9zGID8CF" role="2vnaTY">
+      <node concept="19SGf9" id="2hB9zGID8CF" role="2vnaTZ">
         <node concept="19SUe$" id="2hB9zGID8CG" role="19SJt6">
           <property role="19SUeA" value="Environment &#10;description." />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dd388" role="2U2l5M">
+        <property role="Figmm" value="ccffff" />
       </node>
     </node>
     <node concept="2vhqFZ" id="2hB9zGID8FF" role="2vhqc$">
@@ -570,13 +606,13 @@
     </node>
     <node concept="1qxpMw" id="2hB9zGID8Pz" role="2vn1q5">
       <property role="TrG5h" value="J01" />
-      <node concept="Figmn" id="2p23w$dcp0d" role="Gl$GA">
-        <property role="Figmm" value="ccffcc" />
-      </node>
-      <node concept="19SGf9" id="2hB9zGID8P$" role="2vnaTY">
+      <node concept="19SGf9" id="2hB9zGID8P$" role="2vnaTZ">
         <node concept="19SUe$" id="2hB9zGID8P_" role="19SJt6">
           <property role="19SUeA" value="Widely used top &#10;level strategy" />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dcp0d" role="2U2l5M">
+        <property role="Figmm" value="ccffcc" />
       </node>
     </node>
     <node concept="2vhqFZ" id="2hB9zGID8U$" role="2vhqc$">
@@ -585,7 +621,7 @@
     </node>
     <node concept="2vmhmH" id="2hB9zGID91J" role="2vn1q5">
       <property role="TrG5h" value="Sol01" />
-      <node concept="19SGf9" id="2hB9zGID91K" role="2vnaTY">
+      <node concept="19SGf9" id="2hB9zGID91K" role="2vnaTZ">
         <node concept="19SUe$" id="2hB9zGID91L" role="19SJt6">
           <property role="19SUeA" value="Testing results." />
         </node>
@@ -597,13 +633,13 @@
     </node>
     <node concept="2XiGWt" id="2hB9zGID9aw" role="2vn1q5">
       <property role="TrG5h" value="AS01" />
-      <node concept="Figmn" id="2p23w$dcp26" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
-      <node concept="19SGf9" id="2hB9zGID9ax" role="2vnaTY">
+      <node concept="19SGf9" id="2hB9zGID9ax" role="2vnaTZ">
         <node concept="19SUe$" id="2hB9zGID9ay" role="19SJt6">
           <property role="19SUeA" value="Operators have&#10;adequate training." />
         </node>
+      </node>
+      <node concept="Figmn" id="2p23w$dcp26" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="2vhqFZ" id="2hB9zGID9e4" role="2vhqc$">
@@ -615,7 +651,7 @@
     <property role="TrG5h" value="_020_patterns_instantiated_from_library" />
     <node concept="2vn7WC" id="3jaLROLvr3A" role="2vn1q5">
       <property role="TrG5h" value="G01" />
-      <node concept="19SGf9" id="3jaLROLvr5b" role="2vnaTY">
+      <node concept="19SGf9" id="3jaLROLvr5b" role="2vnaTZ">
         <node concept="19SUe$" id="3jaLROLvr5c" role="19SJt6">
           <property role="19SUeA" value="System X is acceptably&#10;safe to operate." />
         </node>
@@ -854,7 +890,7 @@
       <node concept="2vn7XN" id="WKGDODSTiX" role="1VB584">
         <node concept="2vn7WC" id="WKGDODSTiY" role="2vn1q5">
           <property role="TrG5h" value="G01" />
-          <node concept="19SGf9" id="WKGDODSTiZ" role="2vnaTY">
+          <node concept="19SGf9" id="WKGDODSTiZ" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODSTj0" role="19SJt6">
               <property role="19SUeA" value="Hazard {hazard_1} has &#10;been mitigated" />
             </node>
@@ -862,7 +898,7 @@
         </node>
         <node concept="2vmxQI" id="WKGDODSTj1" role="2vn1q5">
           <property role="TrG5h" value="S01" />
-          <node concept="19SGf9" id="WKGDODSTj2" role="2vnaTY">
+          <node concept="19SGf9" id="WKGDODSTj2" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODSTj3" role="19SJt6">
               <property role="19SUeA" value="Argument over hazards." />
             </node>
@@ -986,7 +1022,7 @@
         </node>
         <node concept="2vn7WC" id="WKGDODSTv0" role="2vn1q5">
           <property role="TrG5h" value="G02" />
-          <node concept="19SGf9" id="WKGDODSTwM" role="2vnaTY">
+          <node concept="19SGf9" id="WKGDODSTwM" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODSTwN" role="19SJt6">
               <property role="19SUeA" value="Hazard h2 has been &#10;mitigated." />
             </node>
@@ -1005,7 +1041,7 @@
           <ref role="3VeSjQ" node="WKGDODSTIv" resolve="S03" />
         </node>
       </node>
-      <node concept="19SGf9" id="1TD_kqsdgHE" role="2vnaTY">
+      <node concept="19SGf9" id="1TD_kqsdgHE" role="2vnaTZ">
         <node concept="19SUe$" id="1TD_kqsdgHF" role="19SJt6" />
       </node>
     </node>
@@ -1015,7 +1051,7 @@
     </node>
     <node concept="2vmxQI" id="WKGDODSTH9" role="2vn1q5">
       <property role="TrG5h" value="S02" />
-      <node concept="19SGf9" id="WKGDODSTMX" role="2vnaTY">
+      <node concept="19SGf9" id="WKGDODSTMX" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODSTMY" role="19SJt6">
           <property role="19SUeA" value="Fault tree analysis." />
         </node>
@@ -1023,7 +1059,7 @@
     </node>
     <node concept="2vmxQI" id="WKGDODSTIv" role="2vn1q5">
       <property role="TrG5h" value="S03" />
-      <node concept="19SGf9" id="WKGDODSTMc" role="2vnaTY">
+      <node concept="19SGf9" id="WKGDODSTMc" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODSTMd" role="19SJt6">
           <property role="19SUeA" value="FMEA-based analyses." />
         </node>
@@ -1031,7 +1067,7 @@
     </node>
     <node concept="2vn7WC" id="WKGDODSTNI" role="2vn1q5">
       <property role="TrG5h" value="G03" />
-      <node concept="19SGf9" id="WKGDODSTT5" role="2vnaTY">
+      <node concept="19SGf9" id="WKGDODSTT5" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODSTT6" role="19SJt6">
           <property role="19SUeA" value="Show that the probability &#10;of event X causing hazard &#10;H1 is &lt; 10^-5" />
         </node>
@@ -1039,7 +1075,7 @@
     </node>
     <node concept="2vn7WC" id="WKGDODSTQo" role="2vn1q5">
       <property role="TrG5h" value="G04" />
-      <node concept="19SGf9" id="WKGDODSTTQ" role="2vnaTY">
+      <node concept="19SGf9" id="WKGDODSTTQ" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODSTTR" role="19SJt6">
           <property role="19SUeA" value="Criticality of single component &#10;failures is enough for the chosen&#10;integrity level." />
         </node>
@@ -1047,7 +1083,7 @@
     </node>
     <node concept="2vmhmH" id="WKGDODSTW1" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <node concept="19SGf9" id="WKGDODSU0f" role="2vnaTY">
+      <node concept="19SGf9" id="WKGDODSU0f" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODSU0g" role="19SJt6">
           <property role="19SUeA" value="Fault-tree analysis results." />
         </node>
@@ -1055,7 +1091,7 @@
     </node>
     <node concept="2vmhmH" id="WKGDODSU10" role="2vn1q5">
       <property role="TrG5h" value="S02" />
-      <node concept="19SGf9" id="WKGDODSU2z" role="2vnaTY">
+      <node concept="19SGf9" id="WKGDODSU2z" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODSU2$" role="19SJt6">
           <property role="19SUeA" value="FMEA analysis results." />
         </node>
@@ -1082,7 +1118,7 @@
     <property role="TrG5h" value="_030_confidence_dempster_schafer_evidence_annotated_with_confidence" />
     <node concept="2vn7WC" id="2czCwT$U5V6" role="2vn1q5">
       <property role="TrG5h" value="G01" />
-      <node concept="19SGf9" id="2czCwT$U5V7" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U5V7" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U5V8" role="19SJt6">
           <property role="19SUeA" value="System is acceptable&#10;safe to operate." />
         </node>
@@ -1095,7 +1131,7 @@
           <property role="gqqTZ" value="280.5" />
           <property role="gqqTW" value="16.0" />
           <property role="gqqTX" value="105.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1115,7 +1151,7 @@
           <property role="gqqTZ" value="101.0" />
           <property role="gqqTW" value="243.0" />
           <property role="gqqTX" value="110.0" />
-          <property role="gqqTy" value="69.0" />
+          <property role="gqqTy" value="70.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1125,7 +1161,7 @@
           <property role="gqqTZ" value="286.5" />
           <property role="gqqTW" value="245.0" />
           <property role="gqqTX" value="99.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1135,7 +1171,7 @@
           <property role="gqqTZ" value="60.0" />
           <property role="gqqTW" value="360.0" />
           <property role="gqqTX" value="192.0" />
-          <property role="gqqTy" value="69.0" />
+          <property role="gqqTy" value="70.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1217,7 +1253,7 @@
           <property role="gqqTZ" value="286.5" />
           <property role="gqqTW" value="374.0" />
           <property role="gqqTX" value="139.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1245,7 +1281,7 @@
           <property role="gqqTZ" value="446.0" />
           <property role="gqqTW" value="252.0" />
           <property role="gqqTX" value="94.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1273,7 +1309,7 @@
           <property role="gqqTZ" value="446.0" />
           <property role="gqqTW" value="374.0" />
           <property role="gqqTX" value="136.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="56.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1298,7 +1334,7 @@
     </node>
     <node concept="2vmxQI" id="2czCwT$U5Vn" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <node concept="19SGf9" id="2czCwT$U5Vo" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U5Vo" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U5Vp" role="19SJt6">
           <property role="19SUeA" value="Argument over&#10;hazards" />
         </node>
@@ -1306,7 +1342,7 @@
     </node>
     <node concept="2vn7WC" id="2czCwT$U5VK" role="2vn1q5">
       <property role="TrG5h" value="G02" />
-      <node concept="19SGf9" id="2czCwT$U5VL" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U5VL" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U5VM" role="19SJt6">
           <property role="19SUeA" value="System development&#10;followed strictly &#10;the IEC61508 process." />
         </node>
@@ -1314,7 +1350,7 @@
     </node>
     <node concept="2vn7WC" id="2czCwT$U5Wb" role="2vn1q5">
       <property role="TrG5h" value="G03" />
-      <node concept="19SGf9" id="2czCwT$U5Wc" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U5Wc" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U5Wd" role="19SJt6">
           <property role="19SUeA" value="Hazard 1 has &#10;been mitigated." />
         </node>
@@ -1322,12 +1358,12 @@
     </node>
     <node concept="2vmhmH" id="2czCwT$U5Xk" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <node concept="19SGf9" id="2czCwT$U5Xl" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U5Xl" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U5Xm" role="19SJt6">
           <property role="19SUeA" value="All steps have been logged &#10;and documents related to &#10;process are available." />
         </node>
       </node>
-      <node concept="GlCK6" id="2czCwT$U5Yb" role="Gl$GA">
+      <node concept="GlCK6" id="2czCwT$U5Yb" role="2U2l5M">
         <property role="FV0bb" value="75" />
         <property role="FV0bc" value="100" />
       </node>
@@ -1356,12 +1392,12 @@
     </node>
     <node concept="2vmhmH" id="2czCwT$U64O" role="2vn1q5">
       <property role="TrG5h" value="S02" />
-      <node concept="19SGf9" id="2czCwT$U64P" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U64P" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U64Q" role="19SJt6">
           <property role="19SUeA" value="Very convincing &#10;evidence." />
         </node>
       </node>
-      <node concept="GlCK6" id="2czCwT$U65i" role="Gl$GA">
+      <node concept="GlCK6" id="2czCwT$U65i" role="2U2l5M">
         <property role="FV0bb" value="100" />
         <property role="FV0bc" value="50" />
       </node>
@@ -1372,7 +1408,7 @@
     </node>
     <node concept="2vn7WC" id="2czCwT$U69p" role="2vn1q5">
       <property role="TrG5h" value="G04" />
-      <node concept="19SGf9" id="2czCwT$U69q" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U69q" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U69r" role="19SJt6">
           <property role="19SUeA" value="Hazard 2 has&#10;been mitigated." />
         </node>
@@ -1387,12 +1423,12 @@
     </node>
     <node concept="2vmhmH" id="2czCwT$U6dp" role="2vn1q5">
       <property role="TrG5h" value="S03" />
-      <node concept="19SGf9" id="2czCwT$U6dq" role="2vnaTY">
+      <node concept="19SGf9" id="2czCwT$U6dq" role="2vnaTZ">
         <node concept="19SUe$" id="2czCwT$U6dr" role="19SJt6">
           <property role="19SUeA" value="Unconvincing &#10;evidence." />
         </node>
       </node>
-      <node concept="GlCK6" id="2czCwT$U6gV" role="Gl$GA">
+      <node concept="GlCK6" id="2czCwT$U6gV" role="2U2l5M">
         <property role="FV0bb" value="0" />
         <property role="FV0bc" value="50" />
       </node>
@@ -1456,7 +1492,7 @@
     </node>
     <node concept="2vn7WC" id="1TD_kqsR91Y" role="2vn1q5">
       <property role="TrG5h" value="G01" />
-      <node concept="19SGf9" id="1TD_kqsR91Z" role="2vnaTY">
+      <node concept="19SGf9" id="1TD_kqsR91Z" role="2vnaTZ">
         <node concept="19SUe$" id="1TD_kqsR920" role="19SJt6">
           <property role="19SUeA" value="Function X is &#10;correctly implemented." />
         </node>
@@ -1464,7 +1500,7 @@
     </node>
     <node concept="3t1IcU" id="1TD_kqsR95Z" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <node concept="19SGf9" id="1TD_kqsR960" role="2vnaTY">
+      <node concept="19SGf9" id="1TD_kqsR960" role="2vnaTZ">
         <node concept="19SUe$" id="1TD_kqsR961" role="19SJt6">
           <property role="19SUeA" value="Test results have been produced &#10;by the CI pipeline and have been&#10;manually reviewed." />
         </node>
@@ -1609,7 +1645,7 @@
     </node>
     <node concept="2vn7WC" id="3I9hGreIU2z" role="2vn1q5">
       <property role="TrG5h" value="G01" />
-      <node concept="19SGf9" id="3I9hGreIU2$" role="2vnaTY">
+      <node concept="19SGf9" id="3I9hGreIU2$" role="2vnaTZ">
         <node concept="19SUe$" id="3I9hGreIU2_" role="19SJt6">
           <property role="19SUeA" value="The core algorithm of the&#10;traffic lights controller &#10;works propertly." />
         </node>
@@ -1623,7 +1659,7 @@
       <property role="1_P5wC" value="24-12-2020 15:18:29" />
       <property role="1_P2tN" value="42" />
       <property role="1_P5xa" value="true" />
-      <node concept="19SGf9" id="3I9hGreIU8e" role="2vnaTY">
+      <node concept="19SGf9" id="3I9hGreIU8e" role="2vnaTZ">
         <node concept="19SUe$" id="3I9hGreIU8f" role="19SJt6">
           <property role="19SUeA" value="Traffic lights controller has been&#10;formally specified using SMV and is &#10;successfully verified." />
         </node>
@@ -1641,7 +1677,7 @@
     <property role="TrG5h" value="_040_confidence_assurance_claim_points" />
     <node concept="2vn7WC" id="4y8PK53Yr$c" role="2vn1q5">
       <property role="TrG5h" value="G01" />
-      <node concept="19SGf9" id="4y8PK53Yr$d" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53Yr$d" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53Yr$e" role="19SJt6">
           <property role="19SUeA" value="Component X works &#10;correctly in specified&#10;environment." />
         </node>
@@ -1745,7 +1781,7 @@
     </node>
     <node concept="2vmxSQ" id="4y8PK53YrDd" role="2vn1q5">
       <property role="TrG5h" value="C01" />
-      <node concept="19SGf9" id="4y8PK53YrDe" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53YrDe" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53YrDf" role="19SJt6">
           <property role="19SUeA" value="The set of assumptions&#10;is fully specified." />
         </node>
@@ -1761,7 +1797,7 @@
     </node>
     <node concept="2vmhmH" id="4y8PK53YrM4" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <node concept="19SGf9" id="4y8PK53YrM5" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53YrM5" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53YrM6" role="19SJt6">
           <property role="19SUeA" value="Testing results with &#10;show the correct &#10;implementation&#10;of requirements." />
         </node>
@@ -1778,7 +1814,7 @@
     <ref role="jB0dY" node="4y8PK53Ys1A" resolve="ACP_01" />
     <node concept="2vn7WC" id="4y8PK53YrTO" role="2vn1q5">
       <property role="TrG5h" value="G-C.01" />
-      <node concept="19SGf9" id="4y8PK53YrTP" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53YrTP" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53YrTQ" role="19SJt6">
           <property role="19SUeA" value="All defeaters for &#10;" />
         </node>
@@ -1792,7 +1828,7 @@
     </node>
     <node concept="2vmxQI" id="4y8PK53YrTT" role="2vn1q5">
       <property role="TrG5h" value="S01" />
-      <node concept="19SGf9" id="4y8PK53YrTU" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53YrTU" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53YrTV" role="19SJt6">
           <property role="19SUeA" value="Argument on rebutting, &#10;undercutting and&#10;undermining defeaters." />
         </node>
@@ -1800,7 +1836,7 @@
     </node>
     <node concept="2vn7WC" id="4y8PK53YrTW" role="2vn1q5">
       <property role="TrG5h" value="G-C.02" />
-      <node concept="19SGf9" id="4y8PK53YrTX" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53YrTX" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53YrTY" role="19SJt6">
           <property role="19SUeA" value="All rebubtting &#10;defeaters have &#10;been eliminated." />
         </node>
@@ -1808,7 +1844,7 @@
     </node>
     <node concept="2vn7WC" id="4y8PK53YrTZ" role="2vn1q5">
       <property role="TrG5h" value="G-C.01" />
-      <node concept="19SGf9" id="4y8PK53YrU0" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53YrU0" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53YrU1" role="19SJt6">
           <property role="19SUeA" value="All undercutting &#10;defeaters have &#10;been eliminated." />
         </node>
@@ -1816,7 +1852,7 @@
     </node>
     <node concept="2vn7WC" id="4y8PK53YrU2" role="2vn1q5">
       <property role="TrG5h" value="G-C.04" />
-      <node concept="19SGf9" id="4y8PK53YrU3" role="2vnaTY">
+      <node concept="19SGf9" id="4y8PK53YrU3" role="2vnaTZ">
         <node concept="19SUe$" id="4y8PK53YrU4" role="19SJt6">
           <property role="19SUeA" value="All undermining &#10;defeaters have &#10;been eliminated." />
         </node>
@@ -1983,13 +2019,13 @@
     <property role="TrG5h" value="_011_plain_text_cae" />
     <node concept="29edOk" id="2ojFC2JbceP" role="2vn1q5">
       <property role="TrG5h" value="C01" />
-      <node concept="Figmn" id="75La0fJ_mV8" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
-      <node concept="19SGf9" id="2ojFC2JbceQ" role="2vnaTY">
+      <node concept="19SGf9" id="2ojFC2JbceQ" role="2vnaTZ">
         <node concept="19SUe$" id="2ojFC2JbceR" role="19SJt6">
           <property role="19SUeA" value="System is safe &#10;to operate." />
         </node>
+      </node>
+      <node concept="Figmn" id="75La0fJ_mV8" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="37mRI7" id="2ojFC2Jbcf7" role="lGtFl">
@@ -2289,7 +2325,7 @@
     </node>
     <node concept="29edHe" id="2ojFC2Jbcfq" role="2vn1q5">
       <property role="TrG5h" value="A01" />
-      <node concept="19SGf9" id="2ojFC2Jbcfr" role="2vnaTY">
+      <node concept="19SGf9" id="2ojFC2Jbcfr" role="2vnaTZ">
         <node concept="19SUe$" id="2ojFC2Jbcfs" role="19SJt6">
           <property role="19SUeA" value="All hazards have&#10;been identified and&#10;risks mitigated." />
         </node>
@@ -2297,7 +2333,7 @@
     </node>
     <node concept="29edHf" id="2ojFC2Jbcgb" role="2vn1q5">
       <property role="TrG5h" value="E02" />
-      <node concept="19SGf9" id="2ojFC2Jbcgc" role="2vnaTY">
+      <node concept="19SGf9" id="2ojFC2Jbcgc" role="2vnaTZ">
         <node concept="19SUe$" id="2ojFC2Jbcgd" role="19SJt6">
           <property role="19SUeA" value="Comprehensive V&amp;V." />
         </node>
@@ -2305,7 +2341,7 @@
     </node>
     <node concept="29edHf" id="2ojFC2JbcgQ" role="2vn1q5">
       <property role="TrG5h" value="E01" />
-      <node concept="19SGf9" id="2ojFC2JbcgR" role="2vnaTY">
+      <node concept="19SGf9" id="2ojFC2JbcgR" role="2vnaTZ">
         <node concept="19SUe$" id="2ojFC2JbcgS" role="19SJt6">
           <property role="19SUeA" value="Active field &#10;monitoring." />
         </node>
@@ -2313,7 +2349,7 @@
     </node>
     <node concept="298YCw" id="2ojFC2Jc9WF" role="2vn1q5">
       <property role="TrG5h" value="W1" />
-      <node concept="19SGf9" id="2ojFC2Jc9WG" role="2vnaTY">
+      <node concept="19SGf9" id="2ojFC2Jc9WG" role="2vnaTZ">
         <node concept="19SUe$" id="2ojFC2Jc9WH" role="19SJt6">
           <property role="19SUeA" value="A systematic procedure has&#10;been applied for the &#10;identification of hazards." />
         </node>
@@ -2322,7 +2358,7 @@
     <node concept="29edOk" id="75La0fJ$qkG" role="2vn1q5">
       <property role="TrG5h" value="C02" />
       <property role="31BFMv" value="true" />
-      <node concept="19SGf9" id="75La0fJ$qkH" role="2vnaTY">
+      <node concept="19SGf9" id="75La0fJ$qkH" role="2vnaTZ">
         <node concept="19SUe$" id="75La0fJ$qkI" role="19SJt6">
           <property role="19SUeA" value="Procedure is supported by&#10;tools which check coverage &#10;of operational situations." />
         </node>
@@ -2331,7 +2367,7 @@
     <node concept="29edOk" id="75La0fJ_lQj" role="2vn1q5">
       <property role="TrG5h" value="C03" />
       <property role="31BFMv" value="true" />
-      <node concept="19SGf9" id="75La0fJ_lQk" role="2vnaTY">
+      <node concept="19SGf9" id="75La0fJ_lQk" role="2vnaTZ">
         <node concept="19SUe$" id="75La0fJ_lQl" role="19SJt6">
           <property role="19SUeA" value="Hazard analysis procedure &#10;conforms to accepted &#10;standards." />
         </node>
@@ -2351,7 +2387,7 @@
     </node>
     <node concept="29edOk" id="75La0fJ_n5R" role="2vn1q5">
       <property role="TrG5h" value="C04" />
-      <node concept="19SGf9" id="75La0fJ_n5S" role="2vnaTY">
+      <node concept="19SGf9" id="75La0fJ_n5S" role="2vnaTZ">
         <node concept="19SUe$" id="75La0fJ_n5T" role="19SJt6">
           <property role="19SUeA" value="All relevant stakeholders&#10;were involved in reviewing&#10;the HARA." />
         </node>
@@ -2363,7 +2399,7 @@
     </node>
     <node concept="29edHf" id="75La0fJ_nCq" role="2vn1q5">
       <property role="TrG5h" value="E03" />
-      <node concept="19SGf9" id="75La0fJ_nCr" role="2vnaTY">
+      <node concept="19SGf9" id="75La0fJ_nCr" role="2vnaTZ">
         <node concept="19SUe$" id="75La0fJ_nCs" role="19SJt6">
           <property role="19SUeA" value="Track of performed&#10;reviews." />
         </node>
@@ -2390,13 +2426,13 @@
     <property role="TrG5h" value="_051_cae_linking_evidence_to_external_ressources" />
     <node concept="29edOk" id="1UGKBYPAxlk" role="2vn1q5">
       <property role="TrG5h" value="C01" />
-      <node concept="Figmn" id="1UGKBYPAxll" role="Gl$GA">
-        <property role="Figmm" value="ccccff" />
-      </node>
-      <node concept="19SGf9" id="1UGKBYPAxlm" role="2vnaTY">
+      <node concept="19SGf9" id="1UGKBYPAxlm" role="2vnaTZ">
         <node concept="19SUe$" id="1UGKBYPAxln" role="19SJt6">
           <property role="19SUeA" value="Function X is &#10;correctly implemented." />
         </node>
+      </node>
+      <node concept="Figmn" id="1UGKBYPAxll" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
       </node>
     </node>
     <node concept="37mRI7" id="1UGKBYPAxlo" role="lGtFl">
@@ -2884,7 +2920,7 @@
     </node>
     <node concept="29edHe" id="1UGKBYPAxmD" role="2vn1q5">
       <property role="TrG5h" value="A01" />
-      <node concept="19SGf9" id="1UGKBYPAxmE" role="2vnaTY">
+      <node concept="19SGf9" id="1UGKBYPAxmE" role="2vnaTZ">
         <node concept="19SUe$" id="1UGKBYPAxmF" role="19SJt6">
           <property role="19SUeA" value="Sufficient QA &#10;has been performed." />
         </node>
@@ -2896,7 +2932,7 @@
     </node>
     <node concept="2FaGEZ" id="1UGKBYPAxH$" role="2vn1q5">
       <property role="TrG5h" value="EV01" />
-      <node concept="19SGf9" id="1UGKBYPAxH_" role="2vnaTY">
+      <node concept="19SGf9" id="1UGKBYPAxH_" role="2vnaTZ">
         <node concept="19SUe$" id="1UGKBYPAxHA" role="19SJt6">
           <property role="19SUeA" value="Test results and audit trail &#10;of peer reviews." />
         </node>
@@ -2951,16 +2987,16 @@
   </node>
   <node concept="2vn7XN" id="5WyjFZRt26F">
     <property role="TrG5h" value="_031_confidence_dempster_schafer_confidence_as_specification" />
-    <property role="3dZJ_E" value="8" />
     <property role="3dZJUb" value="CONF_SPEC" />
+    <property role="3dZJ_E" value="8" />
     <node concept="2vn7WC" id="5WyjFZRt26T" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_003" />
-      <node concept="19SGf9" id="5WyjFZRt26U" role="2vnaTY">
+      <property role="TrG5h" value="CONF_SPEC_001" />
+      <node concept="19SGf9" id="5WyjFZRt26U" role="2vnaTZ">
         <node concept="19SUe$" id="5WyjFZRt26V" role="19SJt6">
           <property role="19SUeA" value="Top goal. &#10;Minimal confidence to be achieved &#10;for this goal is specified." />
         </node>
       </node>
-      <node concept="GlCK6" id="5WyjFZRt28x" role="Gl$GA">
+      <node concept="GlCK6" id="5WyjFZRt28x" role="2U2l5M">
         <property role="FV0bb" value="75" />
         <property role="FV0bc" value="50" />
       </node>
@@ -3190,77 +3226,77 @@
       </node>
     </node>
     <node concept="2vn7WC" id="5WyjFZRt27f" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_004" />
-      <node concept="19SGf9" id="5WyjFZRt27g" role="2vnaTY">
+      <property role="TrG5h" value="CONF_SPEC_002" />
+      <node concept="19SGf9" id="5WyjFZRt27g" role="2vnaTZ">
         <node concept="19SUe$" id="5WyjFZRt27h" role="19SJt6">
           <property role="19SUeA" value="First subgoal - the specified &#10;confidence to reach needs to be&#10;satisfied by the lower-level legs." />
         </node>
       </node>
-      <node concept="GlCK6" id="1JRxVAvOBgt" role="Gl$GA">
+      <node concept="GlCK6" id="1JRxVAvOBgt" role="2U2l5M">
         <property role="FV0bb" value="50" />
         <property role="FV0bc" value="0" />
       </node>
     </node>
     <node concept="2vn7WC" id="5WyjFZRt27H" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_001" />
+      <property role="TrG5h" value="CONF_SPEC_003" />
       <property role="8uqrb" value="true" />
-      <node concept="19SGf9" id="5WyjFZRt27I" role="2vnaTY">
+      <node concept="19SGf9" id="5WyjFZRt27I" role="2vnaTZ">
         <node concept="19SUe$" id="5WyjFZRt27J" role="19SJt6">
           <property role="19SUeA" value="Second subgoal - undeveloped but we have &#10;maximal confidence." />
         </node>
       </node>
-      <node concept="GlCK6" id="1JRxVAvOBgd" role="Gl$GA">
+      <node concept="GlCK6" id="1JRxVAvOBgd" role="2U2l5M">
         <property role="FV0bb" value="100" />
         <property role="FV0bc" value="100" />
       </node>
     </node>
     <node concept="3VeUTF" id="5WyjFZRt28X" role="2vhqc$">
-      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_003" />
-      <ref role="3VeSjQ" node="5WyjFZRt27f" resolve="CONF_SPEC_004" />
+      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_001" />
+      <ref role="3VeSjQ" node="5WyjFZRt27f" resolve="CONF_SPEC_002" />
     </node>
     <node concept="3VeUTF" id="5WyjFZRt29c" role="2vhqc$">
-      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_003" />
-      <ref role="3VeSjQ" node="5WyjFZRt27H" resolve="CONF_SPEC_001" />
+      <ref role="3VeSjP" node="5WyjFZRt26T" resolve="CONF_SPEC_001" />
+      <ref role="3VeSjQ" node="5WyjFZRt27H" resolve="CONF_SPEC_003" />
     </node>
     <node concept="2vmxQI" id="1JRxVAvOB3I" role="2vn1q5">
-      <property role="TrG5h" value="CONF_SPEC_002" />
-      <node concept="19SGf9" id="1JRxVAvOB3J" role="2vnaTY">
+      <property role="TrG5h" value="CONF_SPEC_004" />
+      <node concept="19SGf9" id="1JRxVAvOB3J" role="2vnaTZ">
         <node concept="19SUe$" id="1JRxVAvOB3K" role="19SJt6" />
       </node>
     </node>
     <node concept="2vn7WC" id="1JRxVAvOB5w" role="2vn1q5">
       <property role="TrG5h" value="CONF_SPEC_005" />
-      <node concept="19SGf9" id="1JRxVAvOB5x" role="2vnaTY">
+      <node concept="19SGf9" id="1JRxVAvOB5x" role="2vnaTZ">
         <node concept="19SUe$" id="1JRxVAvOB5y" role="19SJt6" />
       </node>
     </node>
     <node concept="2vn7WC" id="1JRxVAvOB6i" role="2vn1q5">
       <property role="TrG5h" value="CONF_SPEC_006" />
-      <node concept="19SGf9" id="1JRxVAvOB6j" role="2vnaTY">
+      <node concept="19SGf9" id="1JRxVAvOB6j" role="2vnaTZ">
         <node concept="19SUe$" id="1JRxVAvOB6k" role="19SJt6" />
       </node>
     </node>
     <node concept="3VeUTF" id="1JRxVAvOB87" role="2vhqc$">
-      <ref role="3VeSjP" node="5WyjFZRt27f" resolve="CONF_SPEC_004" />
-      <ref role="3VeSjQ" node="1JRxVAvOB3I" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjP" node="5WyjFZRt27f" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjQ" node="1JRxVAvOB3I" resolve="CONF_SPEC_004" />
     </node>
     <node concept="3VeUTF" id="1JRxVAvOB8r" role="2vhqc$">
-      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_004" />
       <ref role="3VeSjQ" node="1JRxVAvOB5w" resolve="CONF_SPEC_005" />
     </node>
     <node concept="3VeUTF" id="1JRxVAvOB8L" role="2vhqc$">
-      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_002" />
+      <ref role="3VeSjP" node="1JRxVAvOB3I" resolve="CONF_SPEC_004" />
       <ref role="3VeSjQ" node="1JRxVAvOB6i" resolve="CONF_SPEC_006" />
     </node>
     <node concept="2vmhmH" id="1JRxVAvOB99" role="2vn1q5">
       <property role="TrG5h" value="CONF_SPEC_007" />
-      <node concept="19SGf9" id="1JRxVAvOB9a" role="2vnaTY">
+      <node concept="19SGf9" id="1JRxVAvOB9a" role="2vnaTZ">
         <node concept="19SUe$" id="1JRxVAvOB9b" role="19SJt6" />
       </node>
     </node>
     <node concept="2vmhmH" id="1JRxVAvOBa7" role="2vn1q5">
       <property role="TrG5h" value="CONF_SPEC_008" />
-      <node concept="19SGf9" id="1JRxVAvOBa8" role="2vnaTY">
+      <node concept="19SGf9" id="1JRxVAvOBa8" role="2vnaTZ">
         <node concept="19SUe$" id="1JRxVAvOBa9" role="19SJt6" />
       </node>
     </node>
@@ -3271,6 +3307,415 @@
     <node concept="3VeUTF" id="1JRxVAvOBcZ" role="2vhqc$">
       <ref role="3VeSjP" node="1JRxVAvOB5w" resolve="CONF_SPEC_005" />
       <ref role="3VeSjQ" node="1JRxVAvOBa7" resolve="CONF_SPEC_008" />
+    </node>
+  </node>
+  <node concept="3dyw5u" id="1r1mR59oSzb">
+    <property role="TrG5h" value="_900_safety_standards_bibliography" />
+    <node concept="3dyRFK" id="1r1mR59oSzh" role="3dzbV3">
+      <property role="TrG5h" value="ISO26262-3" />
+      <property role="3dzbTn" value="Road Vehicles - Functional Safety - Part 3: Concept Phase" />
+      <property role="3dzbTh" value="2018" />
+      <node concept="3dzbSX" id="1r1mR59oSzl" role="3dzbR7">
+        <property role="TrG5h" value="5.4.1" />
+        <property role="3dzbSK" value="4" />
+        <property role="3dzJhj" value="Item Definition - Requirements" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59oSzs" role="3dzbR7">
+        <property role="TrG5h" value="5.4.2" />
+        <property role="3dzbSK" value="5" />
+        <property role="3dzJhj" value="Item Definition - Boundary of the Item" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59oSz_" role="3dzbR7">
+        <property role="TrG5h" value="6.4.1" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="Initiation of HARA" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59oSzD" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="Situation analysis and hazard identification" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59oSzK" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="Classification of hazardous events" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59qri4" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2" />
+        <property role="3dzbSK" value="14" />
+        <property role="3dzJhj" value="Derivation of functional safety requirements" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59qrib" role="3dzbR7">
+        <property role="TrG5h" value="7.4.3" />
+        <property role="3dzbSK" value="16" />
+        <property role="3dzJhj" value="Safety validation criteria" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59qrij" role="3dzbR7">
+        <property role="TrG5h" value="7.4.4" />
+        <property role="3dzbSK" value="16" />
+        <property role="3dzJhj" value="Verification of the functional safety concept" />
+      </node>
+    </node>
+    <node concept="3dyRFK" id="1r1mR59oSzn" role="3dzbV3">
+      <property role="TrG5h" value="ISO26262-4" />
+      <property role="3dzbTn" value="Road Vehicles - Functional Safety - Part 4: Product Development at the System Level" />
+      <property role="3dzbTh" value="2018" />
+      <node concept="3dzbSX" id="1r1mR59oSzI" role="3dzbR7">
+        <property role="TrG5h" value="6.4.1" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="Specification of the technical safety requirements" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59oSzQ" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="Safety mechanisms" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59oSzT" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3" />
+        <property role="3dzbSK" value="9" />
+        <property role="3dzJhj" value="System architectural design specification and technical safety concept" />
+      </node>
+      <node concept="3dzbSX" id="1r1mR59oS$j" role="3dzbR7">
+        <property role="TrG5h" value="6.4.4" />
+        <property role="3dzbSK" value="9" />
+        <property role="3dzJhj" value="Safety analyses and avoidance of systematic failures" />
+      </node>
+    </node>
+  </node>
+  <node concept="2vn7XN" id="1r1mR59oS$o">
+    <property role="TrG5h" value="_100_compliance_argument_to_iso26262" />
+    <property role="3dZJ_E" value="0" />
+    <node concept="2vn7WC" id="1r1mR59oS$A" role="2vn1q5">
+      <property role="TrG5h" value="ISO26262_Compliance" />
+      <node concept="19SGf9" id="1r1mR59oS$B" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oS$C" role="19SJt6">
+          <property role="19SUeA" value="Safety process complies &#10;to ISO26262." />
+        </node>
+      </node>
+    </node>
+    <node concept="37mRI7" id="1r1mR59oS$U" role="lGtFl">
+      <node concept="37mRIm" id="1r1mR59oS$V" role="37mRID">
+        <property role="37mO49" value="1639692281460263206" />
+        <node concept="gqqVs" id="1r1mR59oS$T" role="37mO4d">
+          <property role="gqqTZ" value="49.5" />
+          <property role="gqqTW" value="50.0001" />
+          <property role="gqqTX" value="129.0" />
+          <property role="gqqTy" value="56.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSA0" role="37mRID">
+        <property role="37mO49" value="1639692281460263273" />
+        <node concept="gqqVs" id="1r1mR59oS_Z" role="37mO4d">
+          <property role="gqqTZ" value="57.0" />
+          <property role="gqqTW" value="144.00029836425782" />
+          <property role="gqqTX" value="137.0" />
+          <property role="gqqTy" value="94.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSBp" role="37mRID">
+        <property role="37mO49" value="1639692281460263315" />
+        <node concept="2VclpC" id="1r1mR59oSBo" role="37mO4d">
+          <node concept="2VclrF" id="1r1mR59oSBq" role="2Vcluh">
+            <property role="2Vclpx" value="111.50005" />
+            <property role="2Vclpz" value="124.00019836425781" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSCd" role="37mRID">
+        <property role="37mO49" value="1639692281460263410" />
+        <node concept="gqqVs" id="1r1mR59oSCc" role="37mO4d">
+          <property role="gqqTZ" value="212.0" />
+          <property role="gqqTW" value="144.00029836425782" />
+          <property role="gqqTX" value="135.0" />
+          <property role="gqqTy" value="94.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSET" role="37mRID">
+        <property role="37mO49" value="1639692281460263601" />
+        <node concept="gqqVs" id="1r1mR59oSEU" role="37mO4d">
+          <property role="gqqTX" value="135.0" />
+          <property role="gqqTy" value="70.0" />
+          <property role="gqqTZ" value="520.0" />
+          <property role="gqqTW" value="144.00029836425782" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSHt" role="37mRID">
+        <property role="37mO49" value="1639692281460263766" />
+        <node concept="gqqVs" id="1r1mR59oSHu" role="37mO4d">
+          <property role="gqqTX" value="135.0" />
+          <property role="gqqTy" value="70.0" />
+          <property role="gqqTZ" value="365.0" />
+          <property role="gqqTW" value="145.00029836425782" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSJA" role="37mRID">
+        <property role="37mO49" value="1639692281460263461" />
+        <node concept="2VclpC" id="1r1mR59oSJ_" role="37mO4d">
+          <node concept="2VclrF" id="1r1mR59oSJB" role="2Vcluh">
+            <property role="2Vclpx" value="111.50005" />
+            <property role="2Vclpz" value="124.00019836425781" />
+          </node>
+          <node concept="2VclrF" id="1r1mR59oSJC" role="2Vcluh">
+            <property role="2Vclpx" value="275.4383890419698" />
+            <property role="2Vclpz" value="124.00019836425781" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSJE" role="37mRID">
+        <property role="37mO49" value="1639692281460263890" />
+        <node concept="2VclpC" id="1r1mR59oSJD" role="37mO4d">
+          <node concept="2VclrF" id="1r1mR59oSJF" role="2Vcluh">
+            <property role="2Vclpx" value="111.50005" />
+            <property role="2Vclpz" value="124.00019836425781" />
+          </node>
+          <node concept="2VclrF" id="1r1mR59oSJG" role="2Vcluh">
+            <property role="2Vclpx" value="587.566122533974" />
+            <property role="2Vclpz" value="124.00019836425781" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSNx" role="37mRID">
+        <property role="37mO49" value="1639692281460263873" />
+        <node concept="2VclpC" id="1r1mR59oSNw" role="37mO4d">
+          <node concept="2VclrF" id="1r1mR59oSNy" role="2Vcluh">
+            <property role="2Vclpx" value="111.0" />
+            <property role="2Vclpz" value="124.0" />
+          </node>
+          <node concept="2VclrF" id="1r1mR59oSOb" role="2Vcluh">
+            <property role="2Vclpx" value="439.0718571513709" />
+            <property role="2Vclpz" value="124.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSRA" role="37mRID">
+        <property role="37mO49" value="1639692281460264369" />
+        <node concept="gqqVs" id="1r1mR59oSR_" role="37mO4d">
+          <property role="gqqTZ" value="356.74747474747477" />
+          <property role="gqqTW" value="303.5050505050505" />
+          <property role="gqqTX" value="139.0" />
+          <property role="gqqTy" value="70.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSSw" role="37mRID">
+        <property role="37mO49" value="1639692281460264477" />
+        <node concept="gqqVs" id="1r1mR59oSSx" role="37mO4d">
+          <property role="gqqTX" value="133.0" />
+          <property role="gqqTy" value="106.0" />
+          <property role="gqqTZ" value="56.747474747474755" />
+          <property role="gqqTW" value="303.5050505050505" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSVs" role="37mRID">
+        <property role="37mO49" value="1639692281460264647" />
+        <node concept="2VclpC" id="1r1mR59oSVr" role="37mO4d">
+          <node concept="2VclrF" id="1r1mR59oSVt" role="2Vcluh">
+            <property role="2Vclpx" value="124.92929292929293" />
+            <property role="2Vclpz" value="272.04040404040404" />
+          </node>
+          <node concept="2VclrF" id="1r1mR59oSWe" role="2Vcluh">
+            <property role="2Vclpx" value="417.55828432169324" />
+            <property role="2Vclpz" value="272.04046019993996" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSW$" role="37mRID">
+        <property role="37mO49" value="1639692281460264737" />
+        <node concept="gqqVs" id="1r1mR59oSW_" role="37mO4d">
+          <property role="gqqTX" value="138.0" />
+          <property role="gqqTy" value="118.0" />
+          <property role="gqqTZ" value="203.74747474747477" />
+          <property role="gqqTW" value="303.5050505050505" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59oSZa" role="37mRID">
+        <property role="37mO49" value="1639692281460264871" />
+        <node concept="2VclpC" id="1r1mR59oSZ9" role="37mO4d">
+          <node concept="2VclrF" id="1r1mR59oSZb" role="2Vcluh">
+            <property role="2Vclpx" value="125.93939393939394" />
+            <property role="2Vclpz" value="272.0505050505051" />
+          </node>
+          <node concept="2VclrF" id="1r1mR59oT02" role="2Vcluh">
+            <property role="2Vclpx" value="284.5767142906393" />
+            <property role="2Vclpz" value="272.0505050505051" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="1r1mR59pgaf" role="37mRID">
+        <property role="37mO49" value="1639692281460264628" />
+        <node concept="2VclpC" id="1r1mR59pgae" role="37mO4d">
+          <node concept="2VclrF" id="1r1mR59pgag" role="2Vcluh">
+            <property role="2Vclpx" value="125.6234456934401" />
+            <property role="2Vclpz" value="281.28001135000574" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1r1mR59oS_D" role="2vn1q5">
+      <property role="TrG5h" value="Concept_Level_Compl" />
+      <node concept="19SGf9" id="1r1mR59oS_E" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oS_F" role="19SJt6">
+          <property role="19SUeA" value="Development of " />
+        </node>
+        <node concept="hkfVV" id="1r1mR59oSE1" role="19SJt6">
+          <node concept="19SGf9" id="1r1mR59oSE2" role="2vnaTY">
+            <node concept="19SUe$" id="1r1mR59oSE3" role="19SJt6">
+              <property role="19SUeA" value="Product" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="1r1mR59oSE4" role="19SJt6">
+          <property role="19SUeA" value=" &#10;in concept phase complies &#10;to ISO 26262." />
+        </node>
+      </node>
+      <node concept="3dzbTV" id="1r1mR59oSAJ" role="2U2l5M">
+        <ref role="3dzbTU" node="1r1mR59oSzh" resolve="ISO26262-3" />
+      </node>
+      <node concept="Figmn" id="1r1mR59qrfL" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1r1mR59oSAj" role="2vhqc$">
+      <ref role="3VeSjP" node="1r1mR59oS$A" resolve="ISO26262_Compliance" />
+      <ref role="3VeSjQ" node="1r1mR59oS_D" resolve="Concept_Level_Compl" />
+    </node>
+    <node concept="2vn7WC" id="1r1mR59oSBM" role="2vn1q5">
+      <property role="TrG5h" value="System_Level_Compl" />
+      <node concept="19SGf9" id="1r1mR59oSBN" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oSBO" role="19SJt6" />
+        <node concept="hkfVV" id="1r1mR59oSD2" role="19SJt6">
+          <node concept="19SGf9" id="1r1mR59oSD3" role="2vnaTY">
+            <node concept="19SUe$" id="1r1mR59oSD4" role="19SJt6">
+              <property role="19SUeA" value="Product" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="1r1mR59oSD5" role="19SJt6">
+          <property role="19SUeA" value=" development at &#10;system level complies to &#10;ISO26262." />
+        </node>
+      </node>
+      <node concept="3dzbTV" id="1r1mR59oSDo" role="2U2l5M">
+        <ref role="3dzbTU" node="1r1mR59oSzn" resolve="ISO26262-4" />
+      </node>
+      <node concept="Figmn" id="1r1mR59qIkb" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1r1mR59oSC_" role="2vhqc$">
+      <ref role="3VeSjP" node="1r1mR59oS$A" resolve="ISO26262_Compliance" />
+      <ref role="3VeSjQ" node="1r1mR59oSBM" resolve="System_Level_Compl" />
+    </node>
+    <node concept="2vn7WC" id="1r1mR59oSEL" role="2vn1q5">
+      <property role="TrG5h" value="G_Software_Level" />
+      <node concept="Figmn" id="1r1mR59qIkE" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
+      </node>
+      <node concept="19SGf9" id="1r1mR59oSEM" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oSEN" role="19SJt6" />
+        <node concept="hkfVV" id="1r1mR59oSEO" role="19SJt6">
+          <node concept="19SGf9" id="1r1mR59oSEP" role="2vnaTY">
+            <node concept="19SUe$" id="1r1mR59oSEQ" role="19SJt6">
+              <property role="19SUeA" value="Product" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="1r1mR59oSER" role="19SJt6">
+          <property role="19SUeA" value=" development at &#10;software level complies to &#10;ISO26262." />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1r1mR59oSHm" role="2vn1q5">
+      <property role="TrG5h" value="G_Hardware_Level" />
+      <node concept="Figmn" id="1r1mR59qIkr" role="2U2l5M">
+        <property role="Figmm" value="ccccff" />
+      </node>
+      <node concept="19SGf9" id="1r1mR59oSHn" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oSHo" role="19SJt6" />
+        <node concept="hkfVV" id="1r1mR59oSHp" role="19SJt6">
+          <node concept="19SGf9" id="1r1mR59oSHq" role="2vnaTY">
+            <node concept="19SUe$" id="1r1mR59oSHr" role="19SJt6">
+              <property role="19SUeA" value="Product" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="1r1mR59oSHs" role="19SJt6">
+          <property role="19SUeA" value=" development at &#10;hardware level complies to &#10;ISO26262." />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1r1mR59oSJ1" role="2vhqc$">
+      <ref role="3VeSjP" node="1r1mR59oS$A" resolve="ISO26262_Compliance" />
+      <ref role="3VeSjQ" node="1r1mR59oSHm" resolve="G_Hardware_Level" />
+    </node>
+    <node concept="3VeUTF" id="1r1mR59oSJi" role="2vhqc$">
+      <ref role="3VeSjP" node="1r1mR59oS$A" resolve="ISO26262_Compliance" />
+      <ref role="3VeSjQ" node="1r1mR59oSEL" resolve="G_Software_Level" />
+    </node>
+    <node concept="2vn7WC" id="1r1mR59oSQL" role="2vn1q5">
+      <property role="TrG5h" value="G_FSC" />
+      <node concept="19SGf9" id="1r1mR59oSQM" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oSQN" role="19SJt6">
+          <property role="19SUeA" value="Functional safety concept is &#10;performed according to &#10;requirements of ISO26262." />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1r1mR59oSSt" role="2vn1q5">
+      <property role="TrG5h" value="G_Item_Definition" />
+      <node concept="19SGf9" id="1r1mR59oSSu" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oSSv" role="19SJt6">
+          <property role="19SUeA" value="Item definition is performed&#10;according to requirements of&#10;ISO26262." />
+        </node>
+      </node>
+      <node concept="3dzbTV" id="1r1mR59oT38" role="2U2l5M">
+        <ref role="3dzbTU" node="1r1mR59oSzh" resolve="ISO26262-3" />
+        <ref role="3dz$9E" node="1r1mR59oSzl" resolve="5.4.1" />
+      </node>
+      <node concept="3dzbTV" id="1r1mR59oT4C" role="2U2l5M">
+        <ref role="3dzbTU" node="1r1mR59oSzh" resolve="ISO26262-3" />
+        <ref role="3dz$9E" node="1r1mR59oSzs" resolve="5.4.2" />
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1r1mR59oSUO" role="2vhqc$">
+      <ref role="3VeSjP" node="1r1mR59oS_D" resolve="Concept_Level_Compl" />
+      <ref role="3VeSjQ" node="1r1mR59oSSt" resolve="G_Item_Definition" />
+    </node>
+    <node concept="3VeUTF" id="1r1mR59oSV7" role="2vhqc$">
+      <ref role="3VeSjP" node="1r1mR59oS_D" resolve="Concept_Level_Compl" />
+      <ref role="3VeSjQ" node="1r1mR59oSQL" resolve="G_FSC" />
+    </node>
+    <node concept="2vn7WC" id="1r1mR59oSWx" role="2vn1q5">
+      <property role="TrG5h" value="G_HARA" />
+      <node concept="19SGf9" id="1r1mR59oSWy" role="2vnaTZ">
+        <node concept="19SUe$" id="1r1mR59oSWz" role="19SJt6">
+          <property role="19SUeA" value="Hazard and risk analysis is &#10;performed according to &#10;requirements of ISO26262." />
+        </node>
+      </node>
+      <node concept="3dzbTV" id="1r1mR59qrg2" role="2U2l5M">
+        <ref role="3dzbTU" node="1r1mR59oSzh" resolve="ISO26262-3" />
+        <ref role="3dz$9E" node="1r1mR59oSz_" resolve="6.4.1" />
+      </node>
+      <node concept="3dzbTV" id="1r1mR59qrgI" role="2U2l5M">
+        <ref role="3dzbTU" node="1r1mR59oSzh" resolve="ISO26262-3" />
+        <ref role="3dz$9E" node="1r1mR59oSzD" resolve="6.4.2" />
+      </node>
+      <node concept="3dzbTV" id="1r1mR59qrhA" role="2U2l5M">
+        <ref role="3dzbTU" node="1r1mR59oSzh" resolve="ISO26262-3" />
+        <ref role="3dz$9E" node="1r1mR59oSzK" resolve="6.4.3" />
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1r1mR59oSYB" role="2vhqc$">
+      <ref role="3VeSjP" node="1r1mR59oS_D" resolve="Concept_Level_Compl" />
+      <ref role="3VeSjQ" node="1r1mR59oSWx" resolve="G_HARA" />
+    </node>
+    <node concept="26s6xy" id="1r1mR59oT2v" role="2WHcHu">
+      <property role="2Wzj7u" value="3731513482756243910" />
     </node>
   </node>
 </model>

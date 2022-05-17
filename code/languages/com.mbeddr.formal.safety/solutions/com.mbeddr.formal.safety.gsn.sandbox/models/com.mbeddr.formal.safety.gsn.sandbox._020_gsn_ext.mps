@@ -2,7 +2,7 @@
 <model ref="r:b36ddf06-5e53-47cd-9c07-2b286b519024(com.mbeddr.formal.safety.gsn.sandbox._020_gsn_ext)">
   <persistence version="9" />
   <languages>
-    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext" version="2" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
@@ -78,6 +78,12 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ng" index="2GXxrR">
+        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
+        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
@@ -87,8 +93,6 @@
         <property id="9102875167979884151" name="undeveloped" index="8uqrb" />
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
-        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
-        <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
@@ -425,8 +429,8 @@
   </node>
   <node concept="2vn7XN" id="24PsEXFbjMi">
     <property role="TrG5h" value="_100_patterns_instances" />
-    <property role="3dZJ_E" value="8" />
     <property role="3dZJUb" value="PAT" />
+    <property role="3dZJ_E" value="0" />
     <node concept="37mRI7" id="24PsEXFbjMw" role="lGtFl">
       <node concept="37mRIm" id="24PsEXFbjMx" role="37mRID">
         <property role="37mO49" value="2392944874760256664" />
@@ -668,11 +672,11 @@
       </node>
     </node>
     <node concept="1VB52A" id="WKGDODNDr2" role="2vn1q5">
-      <property role="TrG5h" value="PAT_008" />
+      <property role="TrG5h" value="PAT_001" />
       <ref role="AygKy" node="1qrXfdH2gCU" resolve="_010_argument_over_hazards_baselang_pattern" />
       <node concept="2vn7XN" id="WKGDODNDr3" role="1VB584">
         <node concept="2vn7WC" id="WKGDODNDr4" role="2vn1q5">
-          <property role="TrG5h" value="PAT_007" />
+          <property role="TrG5h" value="PAT_002" />
           <node concept="19SGf9" id="WKGDODNDr5" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODNDr6" role="19SJt6">
               <property role="19SUeA" value="The system is acceptably &#10;safe to operate." />
@@ -680,7 +684,7 @@
           </node>
         </node>
         <node concept="2vmxQI" id="WKGDODNDr7" role="2vn1q5">
-          <property role="TrG5h" value="PAT_004" />
+          <property role="TrG5h" value="PAT_003" />
           <node concept="19SGf9" id="WKGDODNDr8" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODNDr9" role="19SJt6">
               <property role="19SUeA" value="All hazards have been &#10;addressed." />
@@ -688,7 +692,7 @@
           </node>
         </node>
         <node concept="2vn7WC" id="WKGDODNDra" role="2vn1q5">
-          <property role="TrG5h" value="PAT_006" />
+          <property role="TrG5h" value="PAT_004" />
           <node concept="19SGf9" id="WKGDODNDrb" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODNDrc" role="19SJt6">
               <property role="19SUeA" value="Hazard {h} has&#10;been addressed. " />
@@ -696,7 +700,7 @@
           </node>
         </node>
         <node concept="2vmxSQ" id="WKGDODNDrd" role="2vn1q5">
-          <property role="TrG5h" value="PAT_002" />
+          <property role="TrG5h" value="PAT_005" />
           <node concept="19SGf9" id="WKGDODP4ID" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODP4IE" role="19SJt6">
               <property role="19SUeA" value="Concrete context reference" />
@@ -704,16 +708,16 @@
           </node>
         </node>
         <node concept="3VeUTF" id="WKGDODNDre" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr4" resolve="PAT_007" />
-          <ref role="3VeSjQ" node="WKGDODNDr7" resolve="PAT_004" />
+          <ref role="3VeSjP" node="WKGDODNDr4" resolve="PAT_002" />
+          <ref role="3VeSjQ" node="WKGDODNDr7" resolve="PAT_003" />
         </node>
         <node concept="3VeUTF" id="WKGDODNDrg" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr7" resolve="PAT_004" />
-          <ref role="3VeSjQ" node="WKGDODNDra" resolve="PAT_006" />
+          <ref role="3VeSjP" node="WKGDODNDr7" resolve="PAT_003" />
+          <ref role="3VeSjQ" node="WKGDODNDra" resolve="PAT_004" />
         </node>
         <node concept="2vhqFZ" id="WKGDODNDri" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr4" resolve="PAT_007" />
-          <ref role="3VeSjQ" node="WKGDODNDrd" resolve="PAT_002" />
+          <ref role="3VeSjP" node="WKGDODNDr4" resolve="PAT_002" />
+          <ref role="3VeSjQ" node="WKGDODNDrd" resolve="PAT_005" />
         </node>
         <node concept="37mRI7" id="WKGDODNDs$" role="lGtFl">
           <node concept="37mRIm" id="WKGDODNDs_" role="37mRID">
@@ -892,7 +896,7 @@
           </node>
         </node>
         <node concept="2vn7WC" id="WKGDODNEs3" role="2vn1q5">
-          <property role="TrG5h" value="PAT_001" />
+          <property role="TrG5h" value="PAT_006" />
           <node concept="19SGf9" id="WKGDODODkc" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODODkd" role="19SJt6">
               <property role="19SUeA" value="Hazard {h2} has &#10;been addressed." />
@@ -900,12 +904,12 @@
           </node>
         </node>
         <node concept="3VeUTF" id="WKGDODNEt0" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr7" resolve="PAT_004" />
-          <ref role="3VeSjQ" node="WKGDODNEs3" resolve="PAT_001" />
+          <ref role="3VeSjP" node="WKGDODNDr7" resolve="PAT_003" />
+          <ref role="3VeSjQ" node="WKGDODNEs3" resolve="PAT_006" />
         </node>
         <node concept="3VeUTF" id="WKGDODNEA6" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDra" resolve="PAT_006" />
-          <ref role="3VeSjQ" node="WKGDODNE$g" resolve="PAT_003" />
+          <ref role="3VeSjP" node="WKGDODNDra" resolve="PAT_004" />
+          <ref role="3VeSjQ" node="WKGDODNE$g" resolve="PAT_008" />
         </node>
       </node>
       <node concept="19SGf9" id="25jECTPZSdz" role="2vnaTZ">
@@ -915,11 +919,11 @@
       </node>
     </node>
     <node concept="3VeUTF" id="WKGDODODnw" role="2vhqc$">
-      <ref role="3VeSjP" node="WKGDODNE$g" resolve="PAT_003" />
-      <ref role="3VeSjQ" node="WKGDODNEu7" resolve="PAT_005" />
+      <ref role="3VeSjP" node="WKGDODNE$g" resolve="PAT_008" />
+      <ref role="3VeSjQ" node="WKGDODNEu7" resolve="PAT_007" />
     </node>
     <node concept="2vn7WC" id="WKGDODNEu7" role="2vn1q5">
-      <property role="TrG5h" value="PAT_005" />
+      <property role="TrG5h" value="PAT_007" />
       <node concept="19SGf9" id="WKGDODODoK" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODODoL" role="19SJt6">
           <property role="19SUeA" value="Top event has &#10;probability &lt; 10^-5" />
@@ -927,7 +931,7 @@
       </node>
     </node>
     <node concept="2vmxQI" id="WKGDODNE$g" role="2vn1q5">
-      <property role="TrG5h" value="PAT_003" />
+      <property role="TrG5h" value="PAT_008" />
       <node concept="19SGf9" id="WKGDODODna" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODODnb" role="19SJt6">
           <property role="19SUeA" value="Fault tree analysis" />

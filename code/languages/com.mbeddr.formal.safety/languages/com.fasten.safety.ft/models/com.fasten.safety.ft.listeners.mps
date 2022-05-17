@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fb5b6819-6434-47ed-a169-7d93d1c8bee7(com.mbeddr.formal.safety.gsn.listeners)">
+<model ref="r:116a88ab-4190-4d88-9674-83f968e77b41(com.fasten.safety.ft.listeners)">
   <persistence version="9" />
   <languages>
     <use id="309e0004-4976-4416-b947-ec02ae4ecef2" name="com.mbeddr.mpsutil.modellisteners" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="nf7v" ref="r:323f2e16-a77b-4958-b026-25202f82daa5(com.mbeddr.formal.safety.gsn.util)" />
-    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="iihn" ref="r:1ca0ad9f-f283-47a0-9785-0fcac08d0fee(com.mbeddr.formal.base.prefixed_names_utils)" />
-    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
+    <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -41,15 +40,15 @@
       </concept>
     </language>
   </registry>
-  <node concept="jA7cl" id="33rrvp3CtYn">
-    <ref role="1M2myG" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-    <node concept="3vq$el" id="33rrvp3CtYo" role="j$A37">
+  <node concept="jA7cl" id="3SCsB3Dohhg">
+    <ref role="1M2myG" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+    <node concept="3vq$el" id="3SCsB3Dohhh" role="j$A37">
       <ref role="3vq$9I" to="b19z:3f8ZVRYdw4Q" resolve="idPrefix" />
-      <node concept="3clFbS" id="33rrvp3CtYp" role="2VODD2">
+      <node concept="3clFbS" id="3SCsB3Dohhi" role="2VODD2">
         <node concept="3clFbF" id="33rrvp3CTtj" role="3cqZAp">
           <node concept="2YIFZM" id="3QMOguhhmPL" role="3clFbG">
-            <ref role="37wK5l" to="iihn:33rrvp3CyGy" resolve="fixPrefix" />
             <ref role="1Pybhc" to="iihn:33rrvp3Cvkb" resolve="PrefixFixingUtils" />
+            <ref role="37wK5l" to="iihn:33rrvp3CyGy" resolve="fixPrefix" />
             <node concept="j_vvf" id="33rrvp3CTuu" role="37wK5m" />
           </node>
         </node>

@@ -9,6 +9,7 @@
     <import index="a26" ref="r:b988bb97-cb77-4d7a-a6c4-09b093af22b3(com.mbeddr.formal.safety.gsn.typesystem)" />
     <import index="lbo2" ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
+    <import index="eczd" ref="r:dd550c2a-2764-4271-8387-b3bf83be80dd(com.mbeddr.formal.base.typesystem)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -142,9 +143,9 @@
         </node>
       </node>
       <node concept="3clFbF" id="84ljAGDzAG" role="3cqZAp">
-        <node concept="2YIFZM" id="84ljAGDzBo" role="3clFbG">
-          <ref role="37wK5l" to="a26:84ljAGCXd3" resolve="doCheckPrefix" />
-          <ref role="1Pybhc" to="a26:84ljAGCVUm" resolve="PrefixCheckerUtils" />
+        <node concept="2YIFZM" id="3QMOguhhz7J" role="3clFbG">
+          <ref role="37wK5l" to="eczd:84ljAGCXd3" resolve="doCheckPrefix" />
+          <ref role="1Pybhc" to="eczd:84ljAGCVUm" resolve="PrefixCheckerUtils" />
           <node concept="37vLTw" id="84ljAGD$jh" role="37wK5m">
             <ref role="3cqZAo" node="84ljAGDzIV" resolve="gs" />
           </node>

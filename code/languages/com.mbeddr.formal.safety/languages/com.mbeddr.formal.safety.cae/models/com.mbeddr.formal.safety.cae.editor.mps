@@ -579,6 +579,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="3cGyC6fBN3n" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
+      </node>
       <node concept="xShMh" id="65Lrkjj1RgQ" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
@@ -766,6 +769,9 @@
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
       </node>
+      <node concept="PMmxH" id="3Px2xUV79kp" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
+      </node>
       <node concept="xShMh" id="3VR5nzkXXnP" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
@@ -859,6 +865,9 @@
       <node concept="3F1sOY" id="33qt4wr6jX1" role="3EZMnx">
         <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
         <ref role="1k5W1q" to="g35p:65LrkjiZl64" resolve="GSNTextStyle" />
+      </node>
+      <node concept="PMmxH" id="3Px2xUV79kR" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
       </node>
     </node>
     <node concept="1PE4EZ" id="7O04SQY6wwN" role="1PM95z">
