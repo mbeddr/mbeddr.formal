@@ -43,7 +43,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="8prx" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.parts(com.mpsbasics.docx4j.lib/)" />
     <import index="e91c" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j(com.mpsbasics.docx4j.lib/)" />
-    <import index="eaz0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
@@ -52,6 +51,7 @@
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="cpcb" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging(com.mpsbasics.docx4j.lib/)" />
     <import index="1dej" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.model.table(com.mpsbasics.docx4j.lib/)" />
+    <import index="ifn4" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:jakarta.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="2uyo" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.model.structure(com.mpsbasics.docx4j.lib/)" implicit="true" />
   </imports>
   <registry>
@@ -977,8 +977,8 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="3uibUv" id="7TJK71y7t7E" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+      <node concept="3uibUv" id="4RkG2sMZ1Xa" role="Sfmx6">
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
     </node>
   </node>
@@ -4928,8 +4928,8 @@
       </node>
       <node concept="3Tm1VV" id="38aFq1j6$Lp" role="1B3o_S" />
       <node concept="3cqZAl" id="38aFq1j6$Lq" role="3clF45" />
-      <node concept="3uibUv" id="7TJK71y7swf" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+      <node concept="3uibUv" id="4RkG2sMZbeU" role="Sfmx6">
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="38aFq1j6$Ls" role="3clF47">
         <node concept="3cpWs8" id="38aFq1jloXc" role="3cqZAp">
