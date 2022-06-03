@@ -254,5 +254,20 @@
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.formal.safety.gsn.ext&quot;" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5t37uj6vdh0">
+    <property role="EcuMT" value="6287902373159162944" />
+    <property role="TrG5h" value="GoalStructureWord" />
+    <property role="34LRSv" value="@goal-structure" />
+    <property role="R4oN_" value="reference a goal structure" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5t37uj6vdh1" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="5t37uj6vdh3" role="1TKVEi">
+      <property role="IQ2ns" value="6287902373159162947" />
+      <property role="20kJfa" value="goalStructure" />
+      <ref role="20lvS9" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+    </node>
+  </node>
 </model>
 

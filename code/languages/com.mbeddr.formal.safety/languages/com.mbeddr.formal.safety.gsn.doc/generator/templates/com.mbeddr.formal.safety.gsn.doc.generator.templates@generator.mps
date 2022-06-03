@@ -95,10 +95,10 @@
   <node concept="bUwia" id="5Ac1Q93IJFQ">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="1M3oF_76Xqs" role="3acgRq">
-      <ref role="30HIoZ" to="wvti:5Ac1Q93IJNx" resolve="GoalWord" />
+      <ref role="30HIoZ" to="wvti:5t37uj6vdh0" resolve="GoalStructureWord" />
       <node concept="gft3U" id="1M3oF_76Xqw" role="1lVwrX">
         <node concept="19SUe$" id="1M3oF_76YCQ" role="gfFT$">
-          <property role="19SUeA" value="Goal Name" />
+          <property role="19SUeA" value="Goal Structure Name" />
           <node concept="1pdMLZ" id="1M3oF_76Z5Z" role="lGtFl">
             <node concept="2kFOW8" id="1M3oF_76Z61" role="2kGFt3">
               <node concept="3clFbS" id="1M3oF_76Z62" role="2VODD2">
@@ -122,6 +122,48 @@
                               </node>
                             </node>
                             <node concept="Xl_RD" id="1M3oF_776Mi" role="3uHU7B">
+                              <property role="Xl_RC" value="Goal Structure " />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5t37uj6vi$3" role="3acgRq">
+      <ref role="30HIoZ" to="wvti:5Ac1Q93IJNx" resolve="GoalWord" />
+      <node concept="gft3U" id="5t37uj6vi$4" role="1lVwrX">
+        <node concept="19SUe$" id="5t37uj6vi$5" role="gfFT$">
+          <property role="19SUeA" value="Goal Name" />
+          <node concept="1pdMLZ" id="5t37uj6vi$6" role="lGtFl">
+            <node concept="2kFOW8" id="5t37uj6vi$7" role="2kGFt3">
+              <node concept="3clFbS" id="5t37uj6vi$8" role="2VODD2">
+                <node concept="3clFbF" id="5t37uj6vi$9" role="3cqZAp">
+                  <node concept="2pJPEk" id="5t37uj6vi$a" role="3clFbG">
+                    <node concept="2pJPED" id="5t37uj6vi$b" role="2pJPEn">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="5t37uj6vi$c" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="WxPPo" id="5t37uj6vi$d" role="28ntcv">
+                          <node concept="3cpWs3" id="5t37uj6vi$e" role="WxPPp">
+                            <node concept="2OqwBi" id="5t37uj6vi$f" role="3uHU7w">
+                              <node concept="2OqwBi" id="5t37uj6vi$g" role="2Oq$k0">
+                                <node concept="30H73N" id="5t37uj6vi$h" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="5t37uj6vi$i" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="wvti:5Ac1Q93IJWa" resolve="goal" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="5t37uj6vi$j" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="5t37uj6vi$k" role="3uHU7B">
                               <property role="Xl_RC" value="Goal " />
                             </node>
                           </node>
