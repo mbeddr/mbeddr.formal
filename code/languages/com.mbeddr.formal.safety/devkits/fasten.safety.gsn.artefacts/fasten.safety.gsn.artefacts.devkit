@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.safety.gsn.artefacts" uuid="58430e3c-3d97-455c-a27e-8eeba7f8513e">
+  <exported-language name="fdecb1e5-875e-41ef-a5fd-4b18f747f204(com.mbeddr.formal.safety.argument.process.artefacts)" />
+  <extendedDevKits>
+    <extendedDevKit>7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+

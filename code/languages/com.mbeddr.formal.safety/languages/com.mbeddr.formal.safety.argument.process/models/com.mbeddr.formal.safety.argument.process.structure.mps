@@ -75,6 +75,7 @@
     <property role="TrG5h" value="ArgumentEntityStateAttribute" />
     <property role="34LRSv" value="state" />
     <property role="3GE5qa" value="state" />
+    <property role="R4oN_" value="state of the entity" />
     <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     <node concept="1TJgyj" id="5uoS5eUXEqM" role="1TKVEi">
       <property role="IQ2ns" value="6312041527983384242" />
@@ -202,6 +203,7 @@
     <property role="TrG5h" value="StandardAndClauseRefGSNAttribute" />
     <property role="3GE5qa" value="bibliography" />
     <property role="34LRSv" value="standard ref" />
+    <property role="R4oN_" value="reference to standard" />
     <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     <node concept="1TJgyj" id="3f8ZVRYh477" role="1TKVEi">
       <property role="IQ2ns" value="3731513482756243911" />

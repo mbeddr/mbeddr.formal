@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="0" />
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer" version="0" />
     <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="9" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
@@ -70,6 +70,11 @@
     <language id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv">
       <concept id="79421622115107638" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolution" flags="ng" index="1$GyEX" />
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+        <child id="7402587364850275470" name="attributes" index="2U2l5M" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
       <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
@@ -80,7 +85,6 @@
       </concept>
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
-        <child id="7160957776623476238" name="attributes" index="Gl$GA" />
       </concept>
       <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
         <reference id="2525617932486527189" name="source" index="3VeSjP" />
@@ -99,7 +103,7 @@
           <property role="19SUeA" value="Medium belief,&#10;high certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="2QkJsC6vQnI" role="Gl$GA">
+      <node concept="GlCK6" id="2QkJsC6vQnI" role="2U2l5M">
         <property role="FV0bb" value="50" />
         <property role="FV0bc" value="100" />
       </node>
@@ -153,7 +157,7 @@
           <property role="19SUeA" value="Full disbelief,&#10;low certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="2QkJsC6xbii" role="Gl$GA">
+      <node concept="GlCK6" id="2QkJsC6xbii" role="2U2l5M">
         <property role="FV0bb" value="0" />
         <property role="FV0bc" value="0" />
       </node>
@@ -165,7 +169,7 @@
           <property role="19SUeA" value="High belief, high certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="2QkJsC6xbpG" role="Gl$GA">
+      <node concept="GlCK6" id="2QkJsC6xbpG" role="2U2l5M">
         <property role="FV0bc" value="100" />
         <property role="FV0bb" value="100" />
       </node>
@@ -188,7 +192,7 @@
           <property role="19SUeA" value="Medium belief,&#10;high certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="48_A4oY4kHQ" role="Gl$GA">
+      <node concept="GlCK6" id="48_A4oY4kHQ" role="2U2l5M">
         <property role="FV0bb" value="100" />
         <property role="FV0bc" value="100" />
       </node>
@@ -344,7 +348,7 @@
           <property role="19SUeA" value="Full disbelief,&#10;low certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="48_A4oY4kI3" role="Gl$GA">
+      <node concept="GlCK6" id="48_A4oY4kI3" role="2U2l5M">
         <property role="FV0bb" value="50" />
         <property role="FV0bc" value="0" />
       </node>
@@ -381,7 +385,7 @@
           <property role="19SUeA" value="Medium belief,&#10;high certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="48_A4oY7ggc" role="Gl$GA">
+      <node concept="GlCK6" id="48_A4oY7ggc" role="2U2l5M">
         <property role="FV0bb" value="50" />
         <property role="FV0bc" value="100" />
       </node>
@@ -743,7 +747,7 @@
           <property role="19SUeA" value="Full disbelief,&#10;low certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="48_A4oY7ggN" role="Gl$GA">
+      <node concept="GlCK6" id="48_A4oY7ggN" role="2U2l5M">
         <property role="FV0bb" value="0" />
         <property role="FV0bc" value="0" />
       </node>
@@ -777,7 +781,7 @@
           <property role="19SUeA" value="Slight belief,&#10;low certainty" />
         </node>
       </node>
-      <node concept="GlCK6" id="48_A4oY7g_w" role="Gl$GA">
+      <node concept="GlCK6" id="48_A4oY7g_w" role="2U2l5M">
         <property role="FV0bb" value="75" />
       </node>
     </node>

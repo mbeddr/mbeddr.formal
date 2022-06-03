@@ -12,9 +12,11 @@
     <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" />
+    <import index="3f8v" ref="r:50ca0529-8a5f-4820-895a-98152d428af3(com.fasten.safety.ft.plugin)" />
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -49,12 +51,16 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -1110,6 +1116,73 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2S6QgY" id="1r1mR59Royc">
+    <property role="TrG5h" value="addToCutset" />
+    <ref role="2ZfgGC" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+    <node concept="2S6ZIM" id="1r1mR59Royd" role="2ZfVej">
+      <node concept="3clFbS" id="1r1mR59Roye" role="2VODD2">
+        <node concept="3clFbF" id="1r1mR59RoBe" role="3cqZAp">
+          <node concept="Xl_RD" id="1r1mR59RoBd" role="3clFbG">
+            <property role="Xl_RC" value="Add to Cutset (temporary, for testing)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1r1mR59Royf" role="2ZfgGD">
+      <node concept="3clFbS" id="1r1mR59Royg" role="2VODD2">
+        <node concept="3clFbF" id="1r1mR59Rusj" role="3cqZAp">
+          <node concept="2OqwBi" id="1r1mR59RwIA" role="3clFbG">
+            <node concept="10M0yZ" id="1r1mR59Rutc" role="2Oq$k0">
+              <ref role="3cqZAo" node="1r1mR59RurD" resolve="cutset" />
+              <ref role="1PxDUh" node="1r1mR59Rsno" resolve="CurrentCutset" />
+            </node>
+            <node concept="TSZUe" id="1r1mR59Rzqq" role="2OqNvi">
+              <node concept="2Sf5sV" id="1r1mR59RzHA" role="25WWJ7" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1r1mR59R$av" role="3cqZAp">
+          <node concept="2YIFZM" id="1r1mR59R$sC" role="3clFbG">
+            <ref role="37wK5l" to="3f8v:1r1mR59Lp5_" resolve="setNewCutset" />
+            <ref role="1Pybhc" to="3f8v:1r1mR59LkUf" resolve="CutsetInfluenceComputer" />
+            <node concept="10M0yZ" id="1r1mR59R$vE" role="37wK5m">
+              <ref role="3cqZAo" node="1r1mR59RurD" resolve="cutset" />
+              <ref role="1PxDUh" node="1r1mR59Rsno" resolve="CurrentCutset" />
+            </node>
+            <node concept="2OqwBi" id="1r1mR59R_oi" role="37wK5m">
+              <node concept="2OqwBi" id="1r1mR59R_7v" role="2Oq$k0">
+                <node concept="1XNTG" id="1r1mR59R$XT" role="2Oq$k0" />
+                <node concept="liA8E" id="1r1mR59R_h$" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1r1mR59R_wH" role="2OqNvi">
+                <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="1r1mR59Rsno">
+    <property role="TrG5h" value="CurrentCutset" />
+    <node concept="2tJIrI" id="1r1mR59Rsoo" role="jymVt" />
+    <node concept="Wx3nA" id="1r1mR59RurD" role="jymVt">
+      <property role="TrG5h" value="cutset" />
+      <node concept="2I9FWS" id="1r1mR59RsoE" role="1tU5fm">
+        <ref role="2I9WkF" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+      </node>
+      <node concept="2ShNRf" id="1r1mR59RspE" role="33vP2m">
+        <node concept="2T8Vx0" id="1r1mR59RugG" role="2ShVmc">
+          <node concept="2I9FWS" id="1r1mR59RugI" role="2T96Bj">
+            <ref role="2I9WkF" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1r1mR59Rsnp" role="1B3o_S" />
   </node>
 </model>
 

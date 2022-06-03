@@ -30,6 +30,10 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118929411" name="build" index="YLPcu" />
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -104,8 +108,14 @@
     <node concept="PrWs8" id="3GRi4m$qPY1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3QMOguhhcvM" role="PzmwI">
+      <ref role="PrY4T" to="b19z:3QMOguhhcvK" resolve="IContainerForEntitiesWithPrefixedNames" />
+    </node>
     <node concept="PrWs8" id="5mW_a0OE8bx" role="PzmwI">
       <ref role="PrY4T" to="b19z:60zS9AZgHTg" resolve="IFASTENStructureViewRoot" />
+    </node>
+    <node concept="PrWs8" id="3cGyC6fFNdU" role="PzmwI">
+      <ref role="PrY4T" to="b19z:3cGyC6fA47t" resolve="IAnnotationProvidersContainer" />
     </node>
     <node concept="1irR5M" id="2LDKh2uE0R3" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -123,13 +133,21 @@
     </node>
     <node concept="1TJgyi" id="3f8ZVRYdw4Q" role="1TKVEl">
       <property role="IQ2nx" value="3731513482755309878" />
-      <property role="TrG5h" value="idPrefix" />
+      <property role="TrG5h" value="idPrefix_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="3QMOguhheEH" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames&quot;" />
+        <property role="YLPcu" value="16.04.2022" />
+      </node>
     </node>
     <node concept="1TJgyi" id="3f8ZVRYdwrn" role="1TKVEl">
       <property role="IQ2nx" value="3731513482755311319" />
-      <property role="TrG5h" value="crtMaxIndex" />
+      <property role="TrG5h" value="crtMaxIndex_old" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="3QMOguhheFn" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames&quot;" />
+        <property role="YLPcu" value="16.04.2022" />
+      </node>
     </node>
     <node concept="1TJgyi" id="5WyjFZRl16s" role="1TKVEl">
       <property role="IQ2nx" value="6855128169206518172" />
@@ -189,12 +207,24 @@
     <node concept="1TJgyj" id="6dwPixfdDSe" role="1TKVEi">
       <property role="IQ2ns" value="7160957776623476238" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes_old" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+      <node concept="asaX9" id="3Px2xUV1gzT" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3Px2xUV1gzV" role="1TKVEi">
+      <property role="IQ2ns" value="4422827436157503739" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attributes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+      <ref role="20ksaX" to="b19z:6qVhvNsGxie" resolve="attributes" />
     </node>
-    <node concept="PrWs8" id="3GRi4m$rb5M" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="3QMOguhhfSS" role="PzmwI">
+      <ref role="PrY4T" to="b19z:3QMOguhhcvL" resolve="INamedConceptUsingPrefix" />
+    </node>
+    <node concept="PrWs8" id="3cGyC6fGUEN" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributeContainer" />
     </node>
     <node concept="PrWs8" id="4J4sUayh4sl" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
@@ -407,6 +437,12 @@
     <node concept="t5JxF" id="6OmQ$5rs7BB" role="lGtFl">
       <property role="t5JxN" value="Elements which are are not displayed in textual notation" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3Px2xUV4m9W">
+    <property role="EcuMT" value="4422827436158313084" />
+    <property role="TrG5h" value="GenericGSNAttributeAnnotationProvider" />
+    <property role="34LRSv" value="from attribute" />
+    <ref role="1TJDcQ" to="b19z:3cGyC6fC0Yv" resolve="GenericAttributeAnnotationProviderBase" />
   </node>
 </model>
 
