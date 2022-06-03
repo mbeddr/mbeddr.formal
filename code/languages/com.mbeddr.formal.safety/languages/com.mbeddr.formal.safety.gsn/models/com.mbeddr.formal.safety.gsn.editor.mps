@@ -12074,5 +12074,17 @@
       <node concept="2iRkQZ" id="3EDV2YKNkzu" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5t37uj6yZi$">
+    <ref role="1XX52x" to="py52:5t37uj6yZix" resolve="GoalStructureRef" />
+    <node concept="1iCGBv" id="5t37uj6yZiD" role="2wV5jI">
+      <ref role="1NtTu8" to="py52:5t37uj6yZiy" resolve="goalStructure" />
+      <node concept="1sVBvm" id="5t37uj6yZiF" role="1sWHZn">
+        <node concept="3F0A7n" id="5t37uj6yZiM" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

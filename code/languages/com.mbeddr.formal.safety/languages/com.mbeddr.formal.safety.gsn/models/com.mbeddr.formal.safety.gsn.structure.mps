@@ -444,5 +444,16 @@
     <property role="34LRSv" value="from attribute" />
     <ref role="1TJDcQ" to="b19z:3cGyC6fC0Yv" resolve="GenericAttributeAnnotationProviderBase" />
   </node>
+  <node concept="1TIwiD" id="5t37uj6yZix">
+    <property role="EcuMT" value="6287902373160154273" />
+    <property role="TrG5h" value="GoalStructureRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5t37uj6yZiy" role="1TKVEi">
+      <property role="IQ2ns" value="6287902373160154274" />
+      <property role="20kJfa" value="goalStructure" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3GRi4m$qNsQ" resolve="GoalStructure" />
+    </node>
+  </node>
 </model>
 
