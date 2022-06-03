@@ -75,7 +75,7 @@
     </node>
     <node concept="13i0hz" id="1r1mR59uIKo" role="13h7CS">
       <property role="TrG5h" value="text" />
-      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="text" />
+      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="asText" />
       <node concept="3Tm1VV" id="1r1mR59uIKp" role="1B3o_S" />
       <node concept="3clFbS" id="1r1mR59uIKs" role="3clF47">
         <node concept="3clFbF" id="1r1mR59uIKv" role="3cqZAp">
