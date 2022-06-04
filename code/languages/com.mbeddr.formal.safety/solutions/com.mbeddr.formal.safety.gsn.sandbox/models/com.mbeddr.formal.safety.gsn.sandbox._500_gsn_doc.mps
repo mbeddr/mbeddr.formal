@@ -24,6 +24,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
       <concept id="5785245534399928042" name="com.mbeddr.doc.structure.AbstractTableParagraph" flags="ng" index="C6Wj3">
         <property id="5785245534399940634" name="numCols" index="C6TCN" />
         <property id="8903209210859212281" name="lineAtBottom" index="1tGk1y" />
@@ -66,11 +67,12 @@
       <concept id="5185579450379471854" name="com.mbeddr.doc.structure.TableRow" flags="ng" index="1xAuFB">
         <child id="5185579450379471857" name="cells" index="1xAuFS" />
       </concept>
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <child id="6955693250238922832" name="description" index="3z_lpS" />
+        <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
+      </concept>
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
-      </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
-        <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
         <property id="126932837435324910" name="title" index="WqcPg" />
@@ -1091,10 +1093,18 @@
       <node concept="1_1sxE" id="5t37uj6zUc3" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
-      <node concept="3z_lpU" id="5t37uj6zUb1" role="1_0VJ0">
-        <property role="3z_lpW" value="mbeddr" />
-        <node concept="2NCZwO" id="5t37uj6zUb2" role="3z_lpI">
-          <node concept="2NCMab" id="5t37uj6zUc1" role="2NCMaf">
+      <node concept="3z_lpz" id="5t37uj6$rKO" role="1_0VJ0">
+        <property role="TrG5h" value="assurance_case" />
+        <node concept="OjmMv" id="5t37uj6$rKQ" role="3z_lpS">
+          <node concept="19SGf9" id="5t37uj6$rKR" role="OjmMu">
+            <node concept="19SUe$" id="5t37uj6$rKS" role="19SJt6">
+              <property role="19SUeA" value="Assurance ML pedestrian detection" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="5t37uj6$rKU" role="3z_lpT" />
+        <node concept="2NCZwO" id="5t37uj6$rKW" role="3z_lpI">
+          <node concept="2NCMab" id="5t37uj6$rM6" role="2NCMaf">
             <ref role="2NCMaa" node="3yPz2by7H15" resolve="_010_ml_ped_detection" />
           </node>
         </node>
@@ -1252,13 +1262,13 @@
     <node concept="2SbYGw" id="3yPz2by7HeY" role="A10yx">
       <property role="TrG5h" value="img" />
       <node concept="9PVaO" id="3yPz2by7HeZ" role="9PVG_">
-        <property role="3N1Lgt" value="log" />
+        <property role="3N1Lgt" value="img" />
       </node>
     </node>
     <node concept="2SbYGw" id="3yPz2by7Hf0" role="Cbewh">
       <property role="TrG5h" value="temp" />
       <node concept="9PVaO" id="3yPz2by7Hf1" role="9PVG_">
-        <property role="3N1Lgt" value="log" />
+        <property role="3N1Lgt" value="temp" />
       </node>
     </node>
     <node concept="1_07dB" id="5t37uj6zwk7" role="2wNnkt" />
