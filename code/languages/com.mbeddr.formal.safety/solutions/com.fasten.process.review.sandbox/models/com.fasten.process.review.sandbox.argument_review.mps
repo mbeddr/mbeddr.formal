@@ -26,10 +26,9 @@
       <concept id="6287902373160834666" name="com.fasten.process.review.structure.Review" flags="ng" index="2hPkIe">
         <property id="6287902373161726592" name="implemented" index="2hSeX$" />
         <property id="6287902373161726590" name="date" index="2hSeYq" />
-        <child id="6287902373161712475" name="review" index="2hSaqZ" />
+        <child id="6287902373161712475" name="reviewText" index="2hSaqZ" />
       </concept>
       <concept id="6287902373160858064" name="com.fasten.process.review.structure.ToDo" flags="ng" index="2hPqKO" />
-      <concept id="6287902373160858065" name="com.fasten.process.review.structure.InProgress" flags="ng" index="2hPqKP" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -87,14 +86,6 @@
       </node>
     </node>
     <node concept="2hPqKO" id="5t37uj6CVHo" role="2hPqKR" />
-  </node>
-  <node concept="2hPkI3" id="5t37uj6G8ob">
-    <property role="2hRKsj" value="17" />
-    <ref role="2hPnBl" to="zbl0:5t37uj6BrLH" resolve="020" />
-    <node concept="2hPkIe" id="5t37uj6GaAH" role="2hTLal">
-      <property role="2hSeYq" value="2022/06/05 17:29 MESZ" />
-    </node>
-    <node concept="2hPqKP" id="5t37uj6GaAE" role="2hPqKR" />
   </node>
 </model>
 

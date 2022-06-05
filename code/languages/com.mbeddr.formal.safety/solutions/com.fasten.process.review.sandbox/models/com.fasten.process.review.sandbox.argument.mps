@@ -4,6 +4,7 @@
   <languages>
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="6d475058-7ea2-490d-87e7-0f7f46dccc66" name="com.fasten.process.review" version="0" />
+    <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
   </languages>
   <imports>
     <import index="t3u4" ref="r:5c41598e-c66f-4e8b-a6fb-0fedbfe86144(com.fasten.process.review.sandbox.argument_review)" />
