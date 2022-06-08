@@ -3199,7 +3199,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="5t37uj6UFbw" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              <property role="3qWCbO" value="com/fasten/process/review/structure/*.png" />
             </node>
           </node>
         </node>
@@ -4062,7 +4062,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="5YWtEMPIf3S" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              <property role="3qWCbO" value="com/mbeddr/formal/safety/argument/process/artefacts/structure/*.png" />
             </node>
           </node>
         </node>
@@ -5249,7 +5249,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="551EivYy0jS" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              <property role="3qWCbO" value="com/fasten/safety/ft/structure/*.png" />
             </node>
           </node>
         </node>

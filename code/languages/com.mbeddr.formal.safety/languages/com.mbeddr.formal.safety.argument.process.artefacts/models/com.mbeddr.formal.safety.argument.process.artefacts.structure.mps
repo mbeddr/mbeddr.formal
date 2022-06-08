@@ -24,6 +24,9 @@
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
@@ -146,6 +149,9 @@
     </node>
     <node concept="PrWs8" id="1noKC0JTmQn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1QGGSu" id="5fX5a81pV8W" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/artefacts.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="1noKC0JTi6M">
