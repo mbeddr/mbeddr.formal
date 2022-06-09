@@ -5341,7 +5341,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="5t37uj6UFbw" role="3LXTna">
-              <property role="3qWCbO" value="com/fasten/process/review/structure/*.png" />
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -5386,7 +5386,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="5t37uj6UF_e" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+              <property role="3qWCbO" value="com/fasten/process/review/structure/*.png" />
             </node>
           </node>
         </node>
@@ -9568,7 +9568,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="5YWtEMPJYsd" role="3LXTna">
-              <property role="3qWCbO" value="com/mbeddr/formal/safety/argument/process/artefacts/structure/*.png" />
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -9584,7 +9584,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="5YWtEMPJYEF" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+              <property role="3qWCbO" value="com/mbeddr/formal/safety/argument/process/artefacts/structure/*.png" />
             </node>
           </node>
         </node>
@@ -10252,26 +10252,7 @@
               </node>
             </node>
             <node concept="3qWCbU" id="73rWdFZqI2L" role="3LXTna">
-              <property role="3qWCbO" value="com/fasten/safety/ft/structure/*.png" />
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="1TD_kqslaVj" role="3bR31x">
-          <node concept="3LXTmp" id="1TD_kqslaVk" role="3rtmxm">
-            <node concept="398BVA" id="1TD_kqslaVl" role="3LXTmr">
-              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-              <node concept="2Ry0Ak" id="1TD_kqslaVm" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="1TD_kqslaVn" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.fasten.safety.ft" />
-                  <node concept="2Ry0Ak" id="1TD_kqslaVo" role="2Ry0An">
-                    <property role="2Ry0Am" value="source_gen" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3LWZYx" id="1TD_kqslaVp" role="3LXTna">
-              <property role="3LWZYw" value="com/fasten/safety/ft/structure/*.png" />
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -10323,6 +10304,22 @@
         <node concept="1SiIV0" id="1r1mR59Vbl4" role="3bR37C">
           <node concept="3bR9La" id="1r1mR59Vbl5" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1UEjDjh42r4" role="3bR31x">
+          <node concept="3LXTmp" id="1UEjDjh42r5" role="3rtmxm">
+            <node concept="398BVA" id="1UEjDjh42r6" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="1UEjDjh42r7" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="1UEjDjh42r8" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.ft" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1UEjDjh42ra" role="3LXTna">
+              <property role="3qWCbO" value="com/fasten/safety/ft/structure/*.png" />
+            </node>
           </node>
         </node>
       </node>
