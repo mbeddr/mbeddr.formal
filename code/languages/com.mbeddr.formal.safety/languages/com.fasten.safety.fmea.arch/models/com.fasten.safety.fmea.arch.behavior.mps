@@ -2,7 +2,7 @@
 <model ref="r:f2f1b66e-1bdf-4e5b-97b7-fe9959d935ea(com.fasten.safety.fmea.arch.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -98,13 +98,16 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -170,7 +173,9 @@
                 <node concept="I4A8Y" id="GA19r163Ok" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="GA19r163Ol" role="2OqNvi">
-                <ref role="1j9C0d" to="g9vz:42QGQFVn62A" resolve="ComponentFailureModesDefinition" />
+                <node concept="chp4Y" id="56SxUJ9miO4" role="3MHPCF">
+                  <ref role="cht4Q" to="g9vz:42QGQFVn62A" resolve="ComponentFailureModesDefinition" />
+                </node>
               </node>
             </node>
           </node>
@@ -277,7 +282,9 @@
                 <node concept="I4A8Y" id="22gnu5EUBEX" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="22gnu5EUBEY" role="2OqNvi">
-                <ref role="1j9C0d" to="g9vz:42QGQFVn62A" resolve="ComponentFailureModesDefinition" />
+                <node concept="chp4Y" id="56SxUJ9miO5" role="3MHPCF">
+                  <ref role="cht4Q" to="g9vz:42QGQFVn62A" resolve="ComponentFailureModesDefinition" />
+                </node>
               </node>
             </node>
           </node>

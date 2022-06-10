@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn/fasten.safety.gsn.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.hara/fasten.safety.hara.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety/fasten.safety.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.process.review/com.fasten.process.review.mpl" folder="process" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.arch/com.fasten.safety.fmea.arch.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.iso26262/com.fasten.safety.fmea.iso26262.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea/com.fasten.safety.fmea.mpl" folder="fmea" />
@@ -44,6 +45,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ext/com.mbeddr.formal.safety.stamp.ext.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.process.review.sandbox/com.fasten.process.review.sandbox.msd" folder="process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.doc2word/com.fasten.safety.doc2word.msd" folder="doc2word" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.fmea.sandbox/com.fasten.safety.fmea.sandbox.msd" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.pluginSolution/com.fasten.safety.ft.pluginSolution.msd" folder="ft" />

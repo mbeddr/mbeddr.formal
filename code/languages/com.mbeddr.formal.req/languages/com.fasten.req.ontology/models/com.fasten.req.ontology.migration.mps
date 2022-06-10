@@ -126,7 +126,7 @@
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -238,7 +238,9 @@
                   <ref role="3cqZAo" node="5qtcz4Ll4E2" resolve="crtModel" />
                 </node>
                 <node concept="2RRcyG" id="5qtcz4Ll59D" role="2OqNvi">
-                  <ref role="2RRcyH" to="6wa3:3Jn$RV31w1l" resolve="Ontology" />
+                  <node concept="chp4Y" id="56SxUJ9eEBH" role="3MHsoP">
+                    <ref role="cht4Q" to="6wa3:3Jn$RV31w1l" resolve="Ontology" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbS" id="5qtcz4Ll4Mp" role="2LFqv$">

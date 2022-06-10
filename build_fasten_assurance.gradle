@@ -16,7 +16,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.5.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.8.305.+'
     }
 }
 
@@ -85,8 +85,8 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2020.3.+'
-ext.mbeddrVersion =  '2020.3.+'
+ext.mpsVersion =  '2021.1.+'
+ext.mbeddrVersion =  '2021.1.+'
 //ext.mbeddrVersion =  'mps-2020.2.+'
 
 // Project versions

@@ -5,7 +5,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
   </languages>
   <imports>
     <import index="qofe" ref="r:6e99ad70-095a-4dfc-9cd7-6fd79b5cd071(com.fasten.safety.ft.xfta.pluginSolution.runner)" />
@@ -95,13 +95,16 @@
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
       <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
         <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -182,7 +185,9 @@
                     <ref role="3cqZAo" node="2XVAqcw05JZ" resolve="m" />
                   </node>
                   <node concept="2RRcyG" id="2XVAqcw0c32" role="2OqNvi">
-                    <ref role="2RRcyH" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                    <node concept="chp4Y" id="56SxUJ9miOk" role="3MHsoP">
+                      <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1z4cxt" id="2XVAqcw0c33" role="2OqNvi">
@@ -285,7 +290,9 @@
                     <ref role="3cqZAo" node="5sUzoS9G9G2" resolve="m" />
                   </node>
                   <node concept="2RRcyG" id="5sUzoS9G9Gm" role="2OqNvi">
-                    <ref role="2RRcyH" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                    <node concept="chp4Y" id="56SxUJ9miOl" role="3MHsoP">
+                      <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1z4cxt" id="5sUzoS9G9Gn" role="2OqNvi">

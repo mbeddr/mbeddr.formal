@@ -2,7 +2,7 @@
 <model ref="r:20bb7136-9452-4bac-8213-62deb5681702(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -258,7 +258,7 @@
     </node>
     <node concept="13i0hz" id="1r1mR59uKE_" role="13h7CS">
       <property role="TrG5h" value="text" />
-      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="text" />
+      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="asText" />
       <node concept="3Tm1VV" id="1r1mR59uKEA" role="1B3o_S" />
       <node concept="3clFbS" id="1r1mR59uKED" role="3clF47">
         <node concept="3clFbF" id="1r1mR59uKEG" role="3cqZAp">
@@ -298,7 +298,7 @@
     </node>
     <node concept="13i0hz" id="1r1mR59v17T" role="13h7CS">
       <property role="TrG5h" value="text" />
-      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="text" />
+      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="asText" />
       <node concept="3Tm1VV" id="1r1mR59v17U" role="1B3o_S" />
       <node concept="3clFbS" id="1r1mR59v17X" role="3clF47">
         <node concept="3clFbF" id="1r1mR59v180" role="3cqZAp">

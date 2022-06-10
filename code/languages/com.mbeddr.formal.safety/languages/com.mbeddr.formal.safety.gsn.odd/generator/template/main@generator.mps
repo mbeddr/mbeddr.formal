@@ -235,6 +235,9 @@
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
+      <concept id="2880994019885263148" name="jetbrains.mps.lang.generator.structure.LoopMacroNamespaceAccessor" flags="ng" index="$GB7w">
+        <property id="1501378878163388321" name="variable" index="26SvY3" />
+      </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -284,9 +287,6 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
-      </concept>
-      <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
-        <property id="7430509679014182818" name="contextVarName" index="1qCSqd" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -1126,11 +1126,8 @@
                                             <node concept="Xl_RD" id="4b60pu4xonD" role="3uHU7w">
                                               <property role="Xl_RC" value="" />
                                             </node>
-                                            <node concept="2OqwBi" id="4b60pu4xmV7" role="3uHU7B">
-                                              <node concept="1iwH7S" id="4b60pu4xmIL" role="2Oq$k0" />
-                                              <node concept="1qCSth" id="4b60pu4xn7U" role="2OqNvi">
-                                                <property role="1qCSqd" value="monitoredVarIndex" />
-                                              </node>
+                                            <node concept="$GB7w" id="56SxUJ9miOt" role="3uHU7B">
+                                              <property role="26SvY3" value="1jlY2aid0uu/index" />
                                             </node>
                                           </node>
                                         </node>
@@ -1182,7 +1179,7 @@
                         </node>
                       </node>
                       <node concept="1WS0z7" id="4b60pu4xluw" role="lGtFl">
-                        <property role="1qytDF" value="monitoredVarIndex" />
+                        <property role="1qytDF" value="" />
                         <node concept="3JmXsc" id="4b60pu4xlux" role="3Jn$fo">
                           <node concept="3clFbS" id="4b60pu4xluy" role="2VODD2">
                             <node concept="3clFbF" id="4b60pu4xlxi" role="3cqZAp">

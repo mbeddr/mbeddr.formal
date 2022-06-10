@@ -2,7 +2,7 @@
 <model ref="r:81276bb5-f206-413b-8ad2-f00bca3de034(com.fasten.req.odd.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -134,7 +134,7 @@
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -289,7 +289,9 @@
                     <node concept="I4A8Y" id="3RNDPbM2bB5" role="2OqNvi" />
                   </node>
                   <node concept="1j9C0f" id="3RNDPbM2bB6" role="2OqNvi">
-                    <ref role="1j9C0d" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+                    <node concept="chp4Y" id="56SxUJ9eEBG" role="3MHPCF">
+                      <ref role="cht4Q" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+                    </node>
                   </node>
                 </node>
               </node>

@@ -10,7 +10,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
   </languages>
   <imports>
     <import index="82db" ref="r:d9e70cd7-5bba-4146-b9d2-6eab353213c5(test.mbeddr.formal.nusmv.tests)" />
@@ -189,7 +189,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -407,7 +407,9 @@
                         <ref role="3cqZAo" node="1ZejHLm0W9Q" resolve="m" />
                       </node>
                       <node concept="2RRcyG" id="6mm$FLYRCN4" role="2OqNvi">
-                        <ref role="2RRcyH" to="fnq2:43FRfGJUEcN" resolve="TestsCollection" />
+                        <node concept="chp4Y" id="6J9WjHyDqR3" role="3MHsoP">
+                          <ref role="cht4Q" to="fnq2:43FRfGJUEcN" resolve="TestsCollection" />
+                        </node>
                       </node>
                     </node>
                     <node concept="1z4cxt" id="6mm$FLYRCN5" role="2OqNvi">
@@ -691,7 +693,9 @@
                         <ref role="3cqZAo" node="1vcsY82HNzA" resolve="m" />
                       </node>
                       <node concept="2RRcyG" id="59AZjhg27Fc" role="2OqNvi">
-                        <ref role="2RRcyH" to="gioj:6NmtaR1SUJl" resolve="System" />
+                        <node concept="chp4Y" id="6J9WjHyDqR4" role="3MHsoP">
+                          <ref role="cht4Q" to="gioj:6NmtaR1SUJl" resolve="System" />
+                        </node>
                       </node>
                     </node>
                     <node concept="1z4cxt" id="59AZjhg27Fd" role="2OqNvi">

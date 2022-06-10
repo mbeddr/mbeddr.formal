@@ -6,7 +6,7 @@ buildscript {
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.8.305.+'
     }
 }
 
@@ -64,13 +64,13 @@ ext.dependencyRepositories = [
 ]
 
 // Dependency versions
-ext.mpsVersion =  '2020.3.+'
-ext.mbeddrVersion =  '2020.3.+'
+ext.mpsVersion =  '2021.1.+'
+ext.mbeddrVersion =  '2021.1.+'
 //ext.mbeddrVersion =  'mps-2020.2.+'
 
 // Project versions
-ext.major = '2020'
-ext.minor = '3'
+ext.major = '2021'
+ext.minor = '1'
 
 if (ciBuild) {
     String branch = GitBasedVersioning.gitBranch

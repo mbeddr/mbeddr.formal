@@ -80,7 +80,7 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
-        <reference id="1176109685394" name="concept" index="3lApI3" />
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -128,7 +128,9 @@
                   <node concept="I4A8Y" id="6xNJt7lLoBx" role="2OqNvi" />
                 </node>
                 <node concept="3lApI0" id="6xNJt7lLoBy" role="2OqNvi">
-                  <ref role="3lApI3" to="gioj:6NmtaR1SUJl" resolve="System" />
+                  <node concept="chp4Y" id="6J9WjHyDqQQ" role="3MHPDn">
+                    <ref role="cht4Q" to="gioj:6NmtaR1SUJl" resolve="System" />
+                  </node>
                 </node>
               </node>
             </node>

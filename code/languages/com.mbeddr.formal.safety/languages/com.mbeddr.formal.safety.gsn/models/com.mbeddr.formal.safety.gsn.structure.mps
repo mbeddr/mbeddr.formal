@@ -117,6 +117,9 @@
     <node concept="PrWs8" id="3cGyC6fFNdU" role="PzmwI">
       <ref role="PrY4T" to="b19z:3cGyC6fA47t" resolve="IAnnotationProvidersContainer" />
     </node>
+    <node concept="PrWs8" id="5t37uj6_RTG" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5t37uj6_E0b" resolve="IReviewSubject" />
+    </node>
     <node concept="1irR5M" id="2LDKh2uE0R3" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="2LDKh2uE1oj" role="1irR9h">
@@ -443,6 +446,17 @@
     <property role="TrG5h" value="GenericGSNAttributeAnnotationProvider" />
     <property role="34LRSv" value="from attribute" />
     <ref role="1TJDcQ" to="b19z:3cGyC6fC0Yv" resolve="GenericAttributeAnnotationProviderBase" />
+  </node>
+  <node concept="1TIwiD" id="5t37uj6yZix">
+    <property role="EcuMT" value="6287902373160154273" />
+    <property role="TrG5h" value="GoalStructureRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5t37uj6yZiy" role="1TKVEi">
+      <property role="IQ2ns" value="6287902373160154274" />
+      <property role="20kJfa" value="goalStructure" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3GRi4m$qNsQ" resolve="GoalStructure" />
+    </node>
   </node>
 </model>
 

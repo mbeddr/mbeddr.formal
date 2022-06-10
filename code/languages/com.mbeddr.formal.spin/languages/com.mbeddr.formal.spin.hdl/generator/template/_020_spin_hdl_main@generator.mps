@@ -325,6 +325,9 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
+      <concept id="2880994019885263148" name="jetbrains.mps.lang.generator.structure.LoopMacroNamespaceAccessor" flags="ng" index="$GB7w">
+        <property id="1501378878163388321" name="variable" index="26SvY3" />
+      </concept>
       <concept id="1021062414717307707" name="jetbrains.mps.lang.generator.structure.WeavingAnchorQuery" flags="ig" index="O$s7w" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
@@ -434,9 +437,6 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
-      </concept>
-      <concept id="7430509679014182526" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ContextVarRef" flags="ng" index="1qCSth">
-        <property id="7430509679014182818" name="contextVarName" index="1qCSqd" />
       </concept>
     </language>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
@@ -1085,11 +1085,8 @@
                               <node concept="2YIFZM" id="1ZejHLm3AE6" role="3clFbG">
                                 <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                                 <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                <node concept="2OqwBi" id="1ZejHLm3B4W" role="37wK5m">
-                                  <node concept="1iwH7S" id="1ZejHLm3ANF" role="2Oq$k0" />
-                                  <node concept="1qCSth" id="1ZejHLm3Bsc" role="2OqNvi">
-                                    <property role="1qCSqd" value="idx" />
-                                  </node>
+                                <node concept="$GB7w" id="5ZKp9JraKi" role="37wK5m">
+                                  <property role="26SvY3" value="1jlY2aid0uu/index" />
                                 </node>
                               </node>
                             </node>
@@ -1206,7 +1203,7 @@
                     </node>
                   </node>
                   <node concept="1WS0z7" id="1ZejHLm3eKS" role="lGtFl">
-                    <property role="1qytDF" value="idx" />
+                    <property role="1qytDF" value="" />
                     <node concept="3JmXsc" id="1ZejHLm3eKV" role="3Jn$fo">
                       <node concept="3clFbS" id="1ZejHLm3eKW" role="2VODD2">
                         <node concept="3clFbF" id="1ZejHLm3eL2" role="3cqZAp">
@@ -3286,11 +3283,8 @@
                                     <node concept="2YIFZM" id="5SGsxw7NC6F" role="WxPPp">
                                       <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                                       <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                      <node concept="2OqwBi" id="5SGsxw7NCmT" role="37wK5m">
-                                        <node concept="1iwH7S" id="5SGsxw7NCbK" role="2Oq$k0" />
-                                        <node concept="1qCSth" id="5SGsxw7NC_i" role="2OqNvi">
-                                          <property role="1qCSqd" value="counter" />
-                                        </node>
+                                      <node concept="$GB7w" id="5ZKp9JraKl" role="37wK5m">
+                                        <property role="26SvY3" value="1jlY2aid0uu/index" />
                                       </node>
                                     </node>
                                   </node>
@@ -3379,7 +3373,7 @@
               </node>
               <node concept="raruj" id="5SGsxw7Nm08" role="lGtFl" />
               <node concept="1WS0z7" id="5SGsxw7Nm0a" role="lGtFl">
-                <property role="1qytDF" value="counter" />
+                <property role="1qytDF" value="" />
                 <node concept="3JmXsc" id="5SGsxw7Nm0d" role="3Jn$fo">
                   <node concept="3clFbS" id="5SGsxw7Nm0e" role="2VODD2">
                     <node concept="3clFbF" id="5SGsxw7Nm0k" role="3cqZAp">

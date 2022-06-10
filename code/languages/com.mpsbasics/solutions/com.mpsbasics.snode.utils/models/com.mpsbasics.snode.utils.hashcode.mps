@@ -2,7 +2,7 @@
 <model ref="r:f917b204-e25c-4286-9eae-9081d5f78a78(com.mpsbasics.snode.utils.hashcode)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -123,6 +123,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -153,6 +154,39 @@
   <node concept="312cEu" id="62$$j6uTSaU">
     <property role="TrG5h" value="SNodeHashcodeBuilder" />
     <node concept="2tJIrI" id="62$$j6uTSb$" role="jymVt" />
+    <node concept="2YIFZL" id="5t37uj6B81G" role="jymVt">
+      <property role="TrG5h" value="computeHashCode" />
+      <node concept="3clFbS" id="5t37uj6B81J" role="3clF47">
+        <node concept="3clFbF" id="5t37uj6B8np" role="3cqZAp">
+          <node concept="1rXfSq" id="5t37uj6B8no" role="3clFbG">
+            <ref role="37wK5l" node="62$$j6uTScA" resolve="computeHashCode" />
+            <node concept="37vLTw" id="5t37uj6B8tv" role="37wK5m">
+              <ref role="3cqZAo" node="5t37uj6B89O" resolve="aNode" />
+            </node>
+            <node concept="2OqwBi" id="5t37uj6B9pZ" role="37wK5m">
+              <node concept="2JrnkZ" id="5t37uj6B9iX" role="2Oq$k0">
+                <node concept="2OqwBi" id="5t37uj6B8VF" role="2JrQYb">
+                  <node concept="37vLTw" id="5t37uj6B8Lc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5t37uj6B89O" resolve="aNode" />
+                  </node>
+                  <node concept="I4A8Y" id="5t37uj6B95V" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5t37uj6B9Hi" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5t37uj6B7PS" role="1B3o_S" />
+      <node concept="10Oyi0" id="5t37uj6B7ZJ" role="3clF45" />
+      <node concept="37vLTG" id="5t37uj6B89O" role="3clF46">
+        <property role="TrG5h" value="aNode" />
+        <node concept="3Tqbb2" id="5t37uj6B89N" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5t37uj6B8eb" role="jymVt" />
     <node concept="2YIFZL" id="62$$j6uTScA" role="jymVt">
       <property role="TrG5h" value="computeHashCode" />
       <node concept="3clFbS" id="62$$j6uTScD" role="3clF47">

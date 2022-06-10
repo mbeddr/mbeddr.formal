@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -141,7 +141,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -188,7 +188,9 @@
                 <node concept="I4A8Y" id="62cfieENhnS" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="62cfieENhHG" role="2OqNvi">
-                <ref role="1j9C0d" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
+                <node concept="chp4Y" id="56SxUJ9miO8" role="3MHPCF">
+                  <ref role="cht4Q" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
+                </node>
               </node>
             </node>
             <node concept="1z4cxt" id="62cfieENmER" role="2OqNvi">
@@ -385,7 +387,9 @@
                   <node concept="I4A8Y" id="3bh1RFvrx$z" role="2OqNvi" />
                 </node>
                 <node concept="1j9C0f" id="3bh1RFvrx$$" role="2OqNvi">
-                  <ref role="1j9C0d" to="zsc5:1TeaL8Rdz2m" resolve="LogicalTypeFailureModes" />
+                  <node concept="chp4Y" id="56SxUJ9miO9" role="3MHPCF">
+                    <ref role="cht4Q" to="zsc5:1TeaL8Rdz2m" resolve="LogicalTypeFailureModes" />
+                  </node>
                 </node>
               </node>
               <node concept="1z4cxt" id="3bh1RFvrx$_" role="2OqNvi">
@@ -521,7 +525,9 @@
                 <node concept="I4A8Y" id="1f_hJh2erwN" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="1f_hJh2erwO" role="2OqNvi">
-                <ref role="1j9C0d" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
+                <node concept="chp4Y" id="56SxUJ9miOa" role="3MHPCF">
+                  <ref role="cht4Q" to="zsc5:1TeaL8Rddhw" resolve="IFFMEA" />
+                </node>
               </node>
             </node>
             <node concept="1z4cxt" id="1f_hJh2erwP" role="2OqNvi">
