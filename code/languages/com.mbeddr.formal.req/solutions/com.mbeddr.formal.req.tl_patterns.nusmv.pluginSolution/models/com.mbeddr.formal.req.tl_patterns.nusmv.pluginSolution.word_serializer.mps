@@ -14,7 +14,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="yyq9" ref="r:221f6636-9d4b-4cff-b27b-80f65c39076e(com.mbeddr.formal.req.tl_patterns.structure)" />
-    <import index="eaz0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
+    <import index="ifn4" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:jakarta.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="uu78" ref="r:baa6538f-2440-4773-b250-0be24637647a(com.mbeddr.formal.req.tl_patterns.nusmv.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mfj7" ref="r:ee47bf96-1b35-44b4-ac78-bd6585583564(com.mbeddr.formal.req.tl_patterns.behavior)" implicit="true" />
@@ -196,7 +196,7 @@
       <node concept="3Tm1VV" id="38aFq1jjIt2" role="1B3o_S" />
       <node concept="3cqZAl" id="38aFq1jjIt3" role="3clF45" />
       <node concept="3uibUv" id="5MWJzF9_T$U" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="38aFq1jjIt5" role="3clF47">
         <node concept="3cpWs8" id="38aFq1jjIt6" role="3cqZAp">
