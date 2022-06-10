@@ -11,7 +11,6 @@
   <imports>
     <import index="s3z8" ref="r:5b29d604-14e1-4547-b308-d116f5568071(com.mpsbasics.docx4j.core.word)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="eaz0" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:javax.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
     <import index="3g0o" ref="r:a6263c3c-f5c8-43aa-8a86-c420dd6b206e(com.mpsbasics.docx4j.core.registry)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -24,6 +23,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="ifn4" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:jakarta.xml.bind(com.mpsbasics.docx4j.lib/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -259,7 +259,7 @@
       <node concept="3Tm1VV" id="2w5Gq4UsCcQ" role="1B3o_S" />
       <node concept="3cqZAl" id="2w5Gq4UsCcR" role="3clF45" />
       <node concept="3uibUv" id="52LJyEZg5R8" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="2w5Gq4UsCcT" role="3clF47">
         <node concept="3cpWs8" id="7YjSMFlxN0S" role="3cqZAp">
@@ -529,7 +529,7 @@
       <node concept="3Tm1VV" id="8rr1id8q67" role="1B3o_S" />
       <node concept="3cqZAl" id="8rr1id8q68" role="3clF45" />
       <node concept="3uibUv" id="8rr1id8q69" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="8rr1id8q6a" role="3clF47">
         <node concept="3cpWs8" id="7YjSMFlyl2F" role="3cqZAp">
@@ -629,8 +629,8 @@
       </node>
       <node concept="3Tm1VV" id="8rr1id8wYP" role="1B3o_S" />
       <node concept="3cqZAl" id="8rr1id8wYQ" role="3clF45" />
-      <node concept="3uibUv" id="8rr1id8wYR" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+      <node concept="3uibUv" id="4Ymm0M5AKRm" role="Sfmx6">
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="8rr1id8wYS" role="3clF47">
         <node concept="3cpWs8" id="7YjSMFlxTqG" role="3cqZAp">
@@ -773,7 +773,7 @@
       <node concept="3Tm1VV" id="8rr1id8B8s" role="1B3o_S" />
       <node concept="3cqZAl" id="8rr1id8B8t" role="3clF45" />
       <node concept="3uibUv" id="8rr1id8B8u" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="8rr1id8B8v" role="3clF47">
         <node concept="3cpWs8" id="7YjSMFly9ip" role="3cqZAp">
@@ -931,8 +931,8 @@
       </node>
       <node concept="3Tm1VV" id="4ziKDEnfARQ" role="1B3o_S" />
       <node concept="3cqZAl" id="4ziKDEnfARR" role="3clF45" />
-      <node concept="3uibUv" id="4ziKDEnfARS" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+      <node concept="3uibUv" id="4Ymm0M5ASfX" role="Sfmx6">
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="4ziKDEnfART" role="3clF47">
         <node concept="3cpWs8" id="4ziKDEnfJIf" role="3cqZAp">
@@ -1063,7 +1063,7 @@
       <node concept="3Tm1VV" id="4ziKDEnkSJ0" role="1B3o_S" />
       <node concept="3cqZAl" id="4ziKDEnkSJ1" role="3clF45" />
       <node concept="3uibUv" id="4ziKDEnkSJ2" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="4ziKDEnkSJ3" role="3clF47">
         <node concept="3cpWs8" id="4ziKDEnkSJ4" role="3cqZAp">
@@ -1247,7 +1247,7 @@
       <node concept="3Tm1VV" id="7Nwy3y9bNhW" role="1B3o_S" />
       <node concept="3cqZAl" id="7Nwy3y9bNhX" role="3clF45" />
       <node concept="3uibUv" id="7Nwy3y9bNhY" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="7Nwy3y9bNhZ" role="3clF47">
         <node concept="3cpWs8" id="7Nwy3y9c0Jh" role="3cqZAp">
@@ -1353,7 +1353,7 @@
       <node concept="3Tm1VV" id="2321JT9ft9R" role="1B3o_S" />
       <node concept="3cqZAl" id="2321JT9ft9S" role="3clF45" />
       <node concept="3uibUv" id="2321JT9ft9T" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="2321JT9ft9U" role="3clF47">
         <node concept="3cpWs8" id="2321JT9hCCQ" role="3cqZAp">
@@ -1574,7 +1574,7 @@
       <node concept="3Tm1VV" id="2321JT9k1sr" role="1B3o_S" />
       <node concept="3cqZAl" id="2321JT9k1ss" role="3clF45" />
       <node concept="3uibUv" id="2321JT9k1st" role="Sfmx6">
-        <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
+        <ref role="3uigEE" to="ifn4:~JAXBException" resolve="JAXBException" />
       </node>
       <node concept="3clFbS" id="2321JT9k1su" role="3clF47">
         <node concept="3cpWs8" id="2321JT9kw_8" role="3cqZAp">
