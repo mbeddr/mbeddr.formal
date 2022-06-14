@@ -11092,6 +11092,50 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="y1G8y6b95A" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.argument.modelquery.genplan" />
+        <property role="3LESm3" value="28c9d1d8-7af8-472d-8679-9b314648c201" />
+        <node concept="398BVA" id="y1G8y6b9_n" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="y1G8y6ba59" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="y1G8y6basZ" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.modelquery.genplan" />
+              <node concept="2Ry0Ak" id="y1G8y6baGU" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.modelquery.genplan.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="y1G8y6bbic" role="3bR37C">
+          <node concept="3bR9La" id="y1G8y6bbid" role="1SiIV1">
+            <ref role="3bR37D" node="y1G8y6aW2D" resolve="com.mbeddr.formal.safety.argument.modelquery.generator" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="y1G8y6bbip" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="y1G8y6bbiq" role="1HemKq">
+            <node concept="398BVA" id="y1G8y6bbie" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="y1G8y6bbif" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="y1G8y6bbig" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.modelquery.genplan" />
+                  <node concept="2Ry0Ak" id="y1G8y6bbih" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="y1G8y6bbir" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="7he_lUurug6" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.cbd.pluginSolution" />
@@ -12073,6 +12117,9 @@
         <node concept="3LEDTy" id="1UGKBYPya0x" role="3LEDUa">
           <ref role="3LEDTV" node="1UGKBYPy7cD" resolve="com.mbeddr.formal.safety.cae.external_evidence" />
         </node>
+        <node concept="3LEDTy" id="y1G8y6bbjZ" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4eD_5l3mKZ4" role="3989C9">
@@ -12240,6 +12287,15 @@
         </node>
         <node concept="3LEDTy" id="y1G8y6b7rU" role="3LEDUa">
           <ref role="3LEDTV" node="y1G8y6aUhJ" resolve="com.mbeddr.formal.safety.argument.modelquery" />
+        </node>
+        <node concept="3LEDTy" id="y1G8y6bbk0" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="y1G8y6bbk1" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
+        <node concept="3LEDTM" id="y1G8y6bbVC" role="3LEDUa">
+          <ref role="3LEDTN" node="y1G8y6b95A" resolve="com.mbeddr.formal.safety.argument.modelquery.genplan" />
         </node>
       </node>
     </node>

@@ -5,5 +5,6 @@
   <exported-language name="5e7ffa70-8e23-49f4-8c13-a887bba14c36(com.mbeddr.formal.safety.gsn.external_evidence)" />
   <exported-language name="eb32334c-372a-488f-ba9b-e549a59115e9(com.mbeddr.formal.safety.cae)" />
   <exported-language name="402c6c59-bdb3-47fc-8dfa-74ab35e75274(com.mbeddr.formal.safety.cae.external_evidence)" />
+  <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
 </dev-kit>
 
