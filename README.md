@@ -7,7 +7,7 @@
 - Questions about using and extending FASTEN: fasten-support@googlegroups.com
 - If you encounter problems, please open an issue [here](https://github.com/mbeddr/mbeddr.formal/issues)
 
-## Versions
+## Version
 - Get the [latest release](https://github.com/mbeddr/mbeddr.formal/releases)
 
 ## Building (from command line)
