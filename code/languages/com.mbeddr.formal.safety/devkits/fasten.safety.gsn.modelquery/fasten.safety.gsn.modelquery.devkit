@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.safety.gsn.modelquery" uuid="ad50662a-9851-40b5-8a07-e7535a82f5bb">
+  <exported-language name="57ecebe4-dfb8-4fef-9175-0008e04a3684(com.mbeddr.formal.safety.argument.modelquery)" />
+  <extendedDevKits>
+    <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+

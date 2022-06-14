@@ -841,6 +841,9 @@
       <node concept="m$f5U" id="7he_lUu$WTn" role="m$_yh">
         <ref role="m$f5T" node="7he_lUu$SN2" resolve="fasten.safety.gsn.formal.devkit" />
       </node>
+      <node concept="m$f5U" id="y1G8y6b83Y" role="m$_yh">
+        <ref role="m$f5T" node="y1G8y6b4FY" resolve="fasten.safety.gsn.modelquery.devkit" />
+      </node>
       <node concept="m$f5U" id="7he_lUuvmGP" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvkGI" resolve="fasten.safety.hara.devkit" />
       </node>
@@ -12211,6 +12214,32 @@
         </node>
         <node concept="3LEDTy" id="16Akbu57$BY" role="3LEDUa">
           <ref role="3LEDTV" node="7he_lUur$v6" resolve="com.mbeddr.formal.safety.gsn.patterns" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="y1G8y6b4FY" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.gsn.modelquery.devkit" />
+      <node concept="3LEwk6" id="y1G8y6b5Po" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.gsn.modelquery" />
+        <property role="3LESm3" value="ad50662a-9851-40b5-8a07-e7535a82f5bb" />
+        <node concept="398BVA" id="y1G8y6b5Xn" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="y1G8y6b6le" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="y1G8y6b6_9" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.gsn.modelquery" />
+              <node concept="2Ry0Ak" id="y1G8y6b6P4" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.gsn.modelquery.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="y1G8y6b7rT" role="3LEz9a">
+          <ref role="3LEz8N" node="7he_lUuvj8g" resolve="fasten.safety.gsn" />
+        </node>
+        <node concept="3LEDTy" id="y1G8y6b7rU" role="3LEDUa">
+          <ref role="3LEDTV" node="y1G8y6aUhJ" resolve="com.mbeddr.formal.safety.argument.modelquery" />
         </node>
       </node>
     </node>
