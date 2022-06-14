@@ -24,6 +24,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hazop/com.fasten.safety.hazop.mpl" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops.arch/com.fasten.safety.hiphops.arch.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops/com.fasten.safety.hiphops.mpl" folder="fmea_hiphops" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.modelquery/com.mbeddr.formal.safety.argument.modelquery.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process.artefacts/com.mbeddr.formal.safety.argument.process.artefacts.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process/com.mbeddr.formal.safety.argument.process.mpl" folder="gsn" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.ext/com.mbeddr.formal.safety.cae.ext.mpl" folder="gsn" />
@@ -74,6 +75,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.fasten.safety.hiphops/test.fasten.safety.hiphops.msd" folder="fmea_hiphops.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.patterns/test.mbeddr.formal.gsn.patterns.msd" folder="gsn.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn/test.mbeddr.formal.gsn.msd" folder="gsn.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.safety.argument.modelquery/test.mbeddr.formal.safety.argument.modelquery.msd" folder="gsn.tests" />
     </projectModules>
   </component>
 </project>

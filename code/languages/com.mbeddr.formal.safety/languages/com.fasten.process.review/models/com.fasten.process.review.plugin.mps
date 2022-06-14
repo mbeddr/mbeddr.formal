@@ -118,7 +118,7 @@
   </node>
   <node concept="2DaZZR" id="Cf$VZbUBKa" />
   <node concept="2E2WTH" id="5t37uj6BWAy">
-    <property role="TrG5h" value="ReviewsSubject" />
+    <property role="TrG5h" value="Reviews Subject" />
     <ref role="2E2WTM" to="kivz:5t37uj6__pB" resolve="ReviewsContainer" />
     <node concept="1QGGSu" id="5t37uj6BWAz" role="3xeRvj">
       <property role="1iqoE4" value="${module}/icons/magnifier.png" />
@@ -140,7 +140,7 @@
         <ref role="2vPdvl" node="5t37uj6BFNU" resolve="Reviews" />
       </node>
       <node concept="2vPdvi" id="5t37uj6BYtt" role="2vPdvg">
-        <ref role="2vPdvl" node="5t37uj6BWAy" resolve="ReviewsSubject" />
+        <ref role="2vPdvl" node="5t37uj6BWAy" resolve="Reviews Subject" />
       </node>
     </node>
   </node>
@@ -164,7 +164,7 @@
     </node>
   </node>
   <node concept="2E2WTH" id="5t37uj6C0dM">
-    <property role="TrG5h" value="SubjectReview" />
+    <property role="TrG5h" value="Subject of Review" />
     <ref role="2E2WTM" to="b19z:5t37uj6_E0b" resolve="IReviewSubject" />
     <node concept="1QGGSu" id="5t37uj6C0dN" role="3xeRvj">
       <property role="1iqoE4" value="${module}/icons/magnifier.png" />
@@ -219,7 +219,7 @@
         <ref role="2vPdvl" node="5t37uj6C03M" resolve="Subject" />
       </node>
       <node concept="2vPdvi" id="5t37uj6C0ef" role="2vPdvg">
-        <ref role="2vPdvl" node="5t37uj6C0dM" resolve="SubjectReview" />
+        <ref role="2vPdvl" node="5t37uj6C0dM" resolve="Subject of Review" />
       </node>
     </node>
   </node>
