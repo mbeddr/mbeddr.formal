@@ -3558,6 +3558,16 @@
             <ref role="1Busuk" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="56pBK14yoW_" role="3bR37C">
+          <node concept="3bR9La" id="56pBK14yoWA" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="56pBK14yoWB" role="3bR37C">
+          <node concept="3bR9La" id="56pBK14yoWC" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1UGKBYPyaLN" role="2G$12L">
         <property role="BnDLt" value="true" />

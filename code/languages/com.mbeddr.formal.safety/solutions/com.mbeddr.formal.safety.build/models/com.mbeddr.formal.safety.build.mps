@@ -8130,6 +8130,16 @@
             <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="56pBK14ypBH" role="3bR37C">
+          <node concept="3bR9La" id="56pBK14ypBI" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="56pBK14ypBJ" role="3bR37C">
+          <node concept="3bR9La" id="56pBK14ypBK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7he_lUur$v6" role="2G$12L">
         <property role="BnDLt" value="true" />

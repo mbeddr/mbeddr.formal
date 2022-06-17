@@ -410,5 +410,26 @@
       <ref role="20lvS9" node="2xfNjApoY99" resolve="IGSNDocument" />
     </node>
   </node>
+  <node concept="1TIwiD" id="56pBK14tHBo">
+    <property role="EcuMT" value="5879905612006349272" />
+    <property role="3GE5qa" value="words" />
+    <property role="TrG5h" value="GenericNamedModelElementRefWord" />
+    <property role="R4oN_" value="typed model element" />
+    <property role="34LRSv" value="@model-elem" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="56pBK14tHBp" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyi" id="56pBK14tHBt" role="1TKVEl">
+      <property role="IQ2nx" value="5879905612006349277" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="56pBK14tHBv" role="1TKVEi">
+      <property role="IQ2ns" value="5879905612006349279" />
+      <property role="20kJfa" value="elem" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
