@@ -5,12 +5,16 @@
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext" version="2" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
       <concept id="5489462543707440098" name="com.mbeddr.formal.safety.gsn.ext.structure.TemplateWord" flags="ng" index="hkfVV">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="5879905612006349272" name="com.mbeddr.formal.safety.gsn.ext.structure.GenericNamedModelElementRefWord" flags="ng" index="lVOro">
+        <property id="5879905612006349277" name="type" index="lVOrt" />
       </concept>
       <concept id="2392944874759792240" name="com.mbeddr.formal.safety.gsn.ext.structure.SupportedByConnectionPattern" flags="ng" index="1a4Pjv" />
       <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ng" index="1a7XsH">
@@ -1227,6 +1231,16 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
+      <node concept="37mRIm" id="56pBK14uNRk" role="37mRID">
+        <property role="37mO49" value="5879905612006636982" />
+        <node concept="gqqVs" id="56pBK14uNRj" role="37mO4d">
+          <property role="gqqTZ" value="380.0" />
+          <property role="gqqTW" value="137.0" />
+          <property role="gqqTX" value="204.0" />
+          <property role="gqqTy" value="55.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
     </node>
     <node concept="2vmxQI" id="x1FXqy4aq" role="2vn1q5">
       <property role="TrG5h" value="Strategy_Systematic_HARA" />
@@ -1251,6 +1265,20 @@
         </node>
         <node concept="19SUe$" id="x1FXqClL7" role="19SJt6">
           <property role="19SUeA" value="." />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="56pBK14uNQQ" role="2vn1q5">
+      <property role="TrG5h" value="Hazard_Mitigated" />
+      <node concept="19SGf9" id="56pBK14uNQR" role="2vnaTZ">
+        <node concept="19SUe$" id="56pBK14uNQS" role="19SJt6">
+          <property role="19SUeA" value="Hazard" />
+        </node>
+        <node concept="lVOro" id="56pBK14uNRA" role="19SJt6">
+          <property role="lVOrt" value="hazard" />
+        </node>
+        <node concept="19SUe$" id="56pBK14uNRB" role="19SJt6">
+          <property role="19SUeA" value="&#10;has been mitigated." />
         </node>
       </node>
     </node>
