@@ -5888,28 +5888,49 @@
             <node concept="3uibUv" id="1GgrF833P6Q" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
             </node>
-            <node concept="2ShNRf" id="1GgrF833RtR" role="33vP2m">
-              <node concept="1pGfFk" id="1GgrF833RtS" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
-                <node concept="2OqwBi" id="1GgrF833RtT" role="37wK5m">
-                  <node concept="2OwXpG" id="1GgrF833RtU" role="2OqNvi">
-                    <ref role="2Oxat5" node="JsaLOcpHxc" resolve="whitnessTable" />
+            <node concept="10Nm6u" id="56pBK14B6Av" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="56pBK14AhEH" role="3cqZAp">
+          <node concept="3clFbS" id="56pBK14AhEJ" role="3clFbx">
+            <node concept="3clFbF" id="56pBK14ATHQ" role="3cqZAp">
+              <node concept="37vLTI" id="56pBK14ATHS" role="3clFbG">
+                <node concept="2ShNRf" id="1GgrF833RtR" role="37vLTx">
+                  <node concept="1pGfFk" id="1GgrF833RtS" role="2ShVmc">
+                    <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
+                    <node concept="2OqwBi" id="1GgrF833RtT" role="37wK5m">
+                      <node concept="2OwXpG" id="1GgrF833RtU" role="2OqNvi">
+                        <ref role="2Oxat5" node="JsaLOcpHxc" resolve="whitnessTable" />
+                      </node>
+                      <node concept="Xjq3P" id="1GgrF833RtV" role="2Oq$k0" />
+                    </node>
                   </node>
-                  <node concept="Xjq3P" id="1GgrF833RtV" role="2Oq$k0" />
+                </node>
+                <node concept="37vLTw" id="56pBK14ATHW" role="37vLTJ">
+                  <ref role="3cqZAo" node="1GgrF833P6P" resolve="counterexampleScrollPane" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2k2dPZHaqJo" role="3cqZAp">
+              <node concept="2OqwBi" id="2k2dPZHaqJp" role="3clFbG">
+                <node concept="37vLTw" id="2k2dPZHbaqI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JsaLOcpHxc" resolve="whitnessTable" />
+                </node>
+                <node concept="liA8E" id="2k2dPZHaqJr" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Component.addMouseListener(java.awt.event.MouseListener)" resolve="addMouseListener" />
+                  <node concept="1rXfSq" id="2k2dPZHaqJs" role="37wK5m">
+                    <ref role="37wK5l" node="2k2dPZHavJv" resolve="registerActionOnWhitnessTable" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="2k2dPZHaqJo" role="3cqZAp">
-          <node concept="2OqwBi" id="2k2dPZHaqJp" role="3clFbG">
-            <node concept="37vLTw" id="2k2dPZHbaqI" role="2Oq$k0">
-              <ref role="3cqZAo" node="JsaLOcpHxc" resolve="whitnessTable" />
-            </node>
-            <node concept="liA8E" id="2k2dPZHaqJr" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.addMouseListener(java.awt.event.MouseListener)" resolve="addMouseListener" />
-              <node concept="1rXfSq" id="2k2dPZHaqJs" role="37wK5m">
-                <ref role="37wK5l" node="2k2dPZHavJv" resolve="registerActionOnWhitnessTable" />
+          <node concept="3y3z36" id="56pBK14ABr7" role="3clFbw">
+            <node concept="10Nm6u" id="56pBK14AChn" role="3uHU7w" />
+            <node concept="2OqwBi" id="56pBK14Aql_" role="3uHU7B">
+              <node concept="Xjq3P" id="56pBK14AnYv" role="2Oq$k0" />
+              <node concept="2OwXpG" id="56pBK14AvY6" role="2OqNvi">
+                <ref role="2Oxat5" node="JsaLOcpHxc" resolve="whitnessTable" />
               </node>
             </node>
           </node>
@@ -6099,16 +6120,26 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4_pSipqULti" role="3cqZAp">
-          <node concept="2OqwBi" id="4_pSipqULtj" role="3clFbG">
-            <node concept="37vLTw" id="4_pSipqULtt" role="2Oq$k0">
-              <ref role="3cqZAo" node="5Ac5QKE2LWd" resolve="bottomHalf" />
-            </node>
-            <node concept="liA8E" id="4_pSipqULtl" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
-              <node concept="37vLTw" id="1GgrF833T7T" role="37wK5m">
-                <ref role="3cqZAo" node="1GgrF833P6P" resolve="counterexampleScrollPane" />
+        <node concept="3clFbJ" id="56pBK14BfTp" role="3cqZAp">
+          <node concept="3clFbS" id="56pBK14BfTr" role="3clFbx">
+            <node concept="3clFbF" id="4_pSipqULti" role="3cqZAp">
+              <node concept="2OqwBi" id="4_pSipqULtj" role="3clFbG">
+                <node concept="37vLTw" id="4_pSipqULtt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5Ac5QKE2LWd" resolve="bottomHalf" />
+                </node>
+                <node concept="liA8E" id="4_pSipqULtl" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
+                  <node concept="37vLTw" id="1GgrF833T7T" role="37wK5m">
+                    <ref role="3cqZAo" node="1GgrF833P6P" resolve="counterexampleScrollPane" />
+                  </node>
+                </node>
               </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="56pBK14Brcj" role="3clFbw">
+            <node concept="10Nm6u" id="56pBK14BsNp" role="3uHU7w" />
+            <node concept="37vLTw" id="56pBK14BmqR" role="3uHU7B">
+              <ref role="3cqZAo" node="1GgrF833P6P" resolve="counterexampleScrollPane" />
             </node>
           </node>
         </node>
@@ -6563,20 +6594,30 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="4_pSipqULGD" role="3cqZAp">
-                        <node concept="2OqwBi" id="4_pSipqULGE" role="3clFbG">
-                          <node concept="37vLTw" id="2k2dPZHcZSR" role="2Oq$k0">
-                            <ref role="3cqZAo" node="JsaLOcpHxc" resolve="whitnessTable" />
-                          </node>
-                          <node concept="liA8E" id="4_pSipqULGG" role="2OqNvi">
-                            <ref role="37wK5l" node="2k2dPZHcNmO" resolve="setWhitnessEntries" />
-                            <node concept="2ShNRf" id="4_TEPtlLgPs" role="37wK5m">
-                              <node concept="2Jqq0_" id="4_TEPtlLgPt" role="2ShVmc">
-                                <node concept="16syzq" id="2k2dPZHfAne" role="HW$YZ">
-                                  <ref role="16sUi3" node="2k2dPZH9VGS" resolve="T" />
+                      <node concept="3clFbJ" id="56pBK14CtrK" role="3cqZAp">
+                        <node concept="3clFbS" id="56pBK14CtrM" role="3clFbx">
+                          <node concept="3clFbF" id="4_pSipqULGD" role="3cqZAp">
+                            <node concept="2OqwBi" id="4_pSipqULGE" role="3clFbG">
+                              <node concept="37vLTw" id="2k2dPZHcZSR" role="2Oq$k0">
+                                <ref role="3cqZAo" node="JsaLOcpHxc" resolve="whitnessTable" />
+                              </node>
+                              <node concept="liA8E" id="4_pSipqULGG" role="2OqNvi">
+                                <ref role="37wK5l" node="2k2dPZHcNmO" resolve="setWhitnessEntries" />
+                                <node concept="2ShNRf" id="4_TEPtlLgPs" role="37wK5m">
+                                  <node concept="2Jqq0_" id="4_TEPtlLgPt" role="2ShVmc">
+                                    <node concept="16syzq" id="2k2dPZHfAne" role="HW$YZ">
+                                      <ref role="16sUi3" node="2k2dPZH9VGS" resolve="T" />
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
+                          </node>
+                        </node>
+                        <node concept="3y3z36" id="56pBK14CBsT" role="3clFbw">
+                          <node concept="10Nm6u" id="56pBK14CD7r" role="3uHU7w" />
+                          <node concept="37vLTw" id="56pBK14Czfz" role="3uHU7B">
+                            <ref role="3cqZAo" node="JsaLOcpHxc" resolve="whitnessTable" />
                           </node>
                         </node>
                       </node>
