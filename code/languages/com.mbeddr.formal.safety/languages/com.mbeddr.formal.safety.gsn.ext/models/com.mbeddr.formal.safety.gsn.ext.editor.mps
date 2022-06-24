@@ -469,6 +469,10 @@
       </node>
     </node>
     <node concept="3EZMnI" id="5Ac1Q93IIEY" role="6VMZX">
+      <node concept="PMmxH" id="3QMOguhhzzH" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3QMOguhhzhR" resolve="IContainerForEntitiesWithPrefixedNamesEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="4bL3rTRDaU7" role="3EZMnx" />
       <node concept="2iRkQZ" id="5Ac1Q93IIEZ" role="2iSdaV" />
       <node concept="3EZMnI" id="5Ac1Q93IIFC" role="3EZMnx">
         <node concept="l2Vlx" id="5Ac1Q93IIFD" role="2iSdaV" />

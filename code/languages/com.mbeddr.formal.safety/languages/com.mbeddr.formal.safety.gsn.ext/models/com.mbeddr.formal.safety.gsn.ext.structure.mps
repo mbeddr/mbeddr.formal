@@ -115,6 +115,9 @@
         <property role="YLQ7P" value="The link was moved to concept &quot;com.mbeddr.formal.safety.gsn.ext.structure.AbstractReusableArgumentFragmentsContainer&quot;" />
       </node>
     </node>
+    <node concept="PrWs8" id="4bL3rTRC37l" role="PzmwI">
+      <ref role="PrY4T" to="b19z:3QMOguhhcvK" resolve="IContainerForEntitiesWithPrefixedNames" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1qrXfdH1Uhl">
     <property role="EcuMT" value="1629165016568013909" />

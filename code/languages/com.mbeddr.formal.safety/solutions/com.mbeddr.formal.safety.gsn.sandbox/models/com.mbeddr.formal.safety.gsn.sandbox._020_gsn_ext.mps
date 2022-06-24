@@ -112,8 +112,10 @@
   </registry>
   <node concept="1VB52S" id="1qrXfdH2gCU">
     <property role="TrG5h" value="_010_argument_over_hazards_baselang_pattern" />
+    <property role="3dZJUb" value="HAZ_PAT" />
+    <property role="3dZJ_E" value="4" />
     <node concept="2vn7WC" id="1qrXfdH2gD1" role="2vn1q5">
-      <property role="TrG5h" value="G.01" />
+      <property role="TrG5h" value="HAZ_PAT_001" />
       <node concept="19SGf9" id="24PsEXFb0Aa" role="2vnaTZ">
         <node concept="19SUe$" id="24PsEXFb0Ab" role="19SJt6">
           <property role="19SUeA" value="The system is acceptably &#10;safe to operate." />
@@ -270,9 +272,9 @@
       <node concept="37mRIm" id="24PsEXFb0Bh" role="37mRID">
         <property role="37mO49" value="2392944874760178106" />
         <node concept="gqqVs" id="24PsEXFb0Bg" role="37mO4d">
-          <property role="gqqTZ" value="167.5" />
+          <property role="gqqTZ" value="161.5" />
           <property role="gqqTW" value="243.0" />
-          <property role="gqqTX" value="89.0" />
+          <property role="gqqTX" value="101.0" />
           <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -391,7 +393,7 @@
       </node>
     </node>
     <node concept="2vmxQI" id="1qrXfdH2gDu" role="2vn1q5">
-      <property role="TrG5h" value="S.01" />
+      <property role="TrG5h" value="HAZ_PAT_002" />
       <node concept="19SGf9" id="24PsEXFb0AB" role="2vnaTZ">
         <node concept="19SUe$" id="24PsEXFb0AC" role="19SJt6">
           <property role="19SUeA" value="All hazards have been &#10;addressed." />
@@ -399,25 +401,35 @@
       </node>
     </node>
     <node concept="2vn7WC" id="24PsEXFb0AU" role="2vn1q5">
-      <property role="TrG5h" value="G.02" />
+      <property role="TrG5h" value="HAZ_PAT_003" />
       <node concept="19SGf9" id="24PsEXFb0B7" role="2vnaTZ">
         <node concept="19SUe$" id="24PsEXFb0B8" role="19SJt6">
-          <property role="19SUeA" value="Hazard {h} has&#10;been addressed. " />
+          <property role="19SUeA" value="Hazard " />
+        </node>
+        <node concept="hkfVV" id="4bL3rTRDsa_" role="19SJt6">
+          <node concept="19SGf9" id="4bL3rTRDsaA" role="2vnaTY">
+            <node concept="19SUe$" id="4bL3rTRDsaB" role="19SJt6">
+              <property role="19SUeA" value="h" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="4bL3rTRDsaC" role="19SJt6">
+          <property role="19SUeA" value=" has&#10;been addressed. " />
         </node>
       </node>
     </node>
     <node concept="3VeUTF" id="24PsEXFb8ph" role="2vhqc$">
-      <ref role="3VeSjP" node="1qrXfdH2gD1" resolve="G.01" />
-      <ref role="3VeSjQ" node="1qrXfdH2gDu" resolve="S.01" />
+      <ref role="3VeSjP" node="1qrXfdH2gD1" resolve="HAZ_PAT_001" />
+      <ref role="3VeSjQ" node="1qrXfdH2gDu" resolve="HAZ_PAT_002" />
     </node>
     <node concept="1a4Pjv" id="24PsEXFb8qG" role="2vhqc$">
       <property role="1a4Pju" value="1" />
       <property role="1a4Pjs" value="n" />
-      <ref role="3VeSjP" node="1qrXfdH2gDu" resolve="S.01" />
-      <ref role="3VeSjQ" node="24PsEXFb0AU" resolve="G.02" />
+      <ref role="3VeSjP" node="1qrXfdH2gDu" resolve="HAZ_PAT_002" />
+      <ref role="3VeSjQ" node="24PsEXFb0AU" resolve="HAZ_PAT_003" />
     </node>
     <node concept="2vmxSQ" id="35$gPpxcyFs" role="2vn1q5">
-      <property role="TrG5h" value="C01" />
+      <property role="TrG5h" value="HAZ_PAT_004" />
       <node concept="19SGf9" id="WKGDODP4IT" role="2vnaTZ">
         <node concept="19SUe$" id="WKGDODP4IU" role="19SJt6">
           <property role="19SUeA" value="Describe intended context" />
@@ -427,8 +439,8 @@
     <node concept="1giVVN" id="35$gPpxcyH0" role="2vhqc$">
       <property role="1a4Pju" value="1" />
       <property role="1a4Pjs" value="n" />
-      <ref role="3VeSjP" node="1qrXfdH2gD1" resolve="G.01" />
-      <ref role="3VeSjQ" node="35$gPpxcyFs" resolve="C01" />
+      <ref role="3VeSjP" node="1qrXfdH2gD1" resolve="HAZ_PAT_001" />
+      <ref role="3VeSjQ" node="35$gPpxcyFs" resolve="HAZ_PAT_004" />
     </node>
   </node>
   <node concept="2vn7XN" id="24PsEXFbjMi">
