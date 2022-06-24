@@ -8140,6 +8140,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4bL3rTRDt9$" role="3bR37C">
+          <node concept="3bR9La" id="4bL3rTRDt9_" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7he_lUur$v6" role="2G$12L">
         <property role="BnDLt" value="true" />
