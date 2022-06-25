@@ -102,6 +102,9 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
@@ -212,6 +215,44 @@
     </node>
     <node concept="2Sbjvc" id="1FMyjUP12$q" role="2ZfgGD">
       <node concept="3clFbS" id="1FMyjUP12$r" role="2VODD2">
+        <node concept="3cpWs8" id="4bL3rTRLnht" role="3cqZAp">
+          <node concept="3cpWsn" id="4bL3rTRLnhu" role="3cpWs9">
+            <property role="TrG5h" value="fcs" />
+            <node concept="3Tqbb2" id="4bL3rTRLmW6" role="1tU5fm">
+              <ref role="ehGHo" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
+            </node>
+            <node concept="2OqwBi" id="4bL3rTRLnhv" role="33vP2m">
+              <node concept="2Sf5sV" id="4bL3rTRLnhw" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4bL3rTRLnhx" role="2OqNvi">
+                <node concept="1xMEDy" id="4bL3rTRLnhy" role="1xVPHs">
+                  <node concept="chp4Y" id="4bL3rTRLnhz" role="ri$Ld">
+                    <ref role="cht4Q" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4bL3rTRLprs" role="3cqZAp">
+          <node concept="3cpWsn" id="4bL3rTRLprt" role="3cpWs9">
+            <property role="TrG5h" value="connections" />
+            <node concept="2I9FWS" id="4bL3rTRLppQ" role="1tU5fm">
+              <ref role="2I9WkF" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
+            </node>
+            <node concept="2OqwBi" id="4bL3rTRLpru" role="33vP2m">
+              <node concept="37vLTw" id="4bL3rTRLprv" role="2Oq$k0">
+                <ref role="3cqZAo" node="4bL3rTRLnhu" resolve="fcs" />
+              </node>
+              <node concept="2Rf3mk" id="4bL3rTRLprw" role="2OqNvi">
+                <node concept="1xMEDy" id="4bL3rTRLprx" role="1xVPHs">
+                  <node concept="chp4Y" id="4bL3rTRLpry" role="ri$Ld">
+                    <ref role="cht4Q" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1FMyjUP59Oe" role="3cqZAp">
           <node concept="3cpWsn" id="1FMyjUP59Of" role="3cpWs9">
             <property role="TrG5h" value="connectionsOriginatingFromNode" />
@@ -221,24 +262,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="1FMyjUP59Og" role="33vP2m">
-              <node concept="2OqwBi" id="1FMyjUP59Oh" role="2Oq$k0">
-                <node concept="2OqwBi" id="1FMyjUP59Oi" role="2Oq$k0">
-                  <node concept="2Sf5sV" id="1FMyjUP59Oj" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="1FMyjUP59Ok" role="2OqNvi">
-                    <node concept="1xMEDy" id="1FMyjUP59Ol" role="1xVPHs">
-                      <node concept="chp4Y" id="1FMyjUP59Om" role="ri$Ld">
-                        <ref role="cht4Q" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2Rf3mk" id="1FMyjUP59On" role="2OqNvi">
-                  <node concept="1xMEDy" id="1FMyjUP59Oo" role="1xVPHs">
-                    <node concept="chp4Y" id="1FMyjUP59Op" role="ri$Ld">
-                      <ref role="cht4Q" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
-                    </node>
-                  </node>
-                </node>
+              <node concept="37vLTw" id="4bL3rTRLprz" role="2Oq$k0">
+                <ref role="3cqZAo" node="4bL3rTRLprt" resolve="connections" />
               </node>
               <node concept="3zZkjj" id="1FMyjUP59Oq" role="2OqNvi">
                 <node concept="1bVj0M" id="1FMyjUP59Or" role="23t8la">

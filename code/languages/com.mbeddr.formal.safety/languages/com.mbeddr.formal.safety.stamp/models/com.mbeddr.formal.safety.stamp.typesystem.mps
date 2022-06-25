@@ -42,6 +42,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -114,6 +115,9 @@
         <child id="1207055552304" name="warningText" index="a7wSD" />
       </concept>
       <concept id="7992060018732187444" name="jetbrains.mps.lang.typesystem.structure.WarningStatementAnnotation" flags="ng" index="AMVWa" />
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -840,6 +844,40 @@
     <node concept="1YaCAy" id="1FMyjUPhLRW" role="1YuTPh">
       <property role="TrG5h" value="unsafeController" />
       <ref role="1YaFvo" to="bewr:1JhvKLLO08w" resolve="UnsafeController" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4bL3rTRLrrU">
+    <property role="TrG5h" value="check_SafetyControlStructureConnectionBase" />
+    <property role="3GE5qa" value="base" />
+    <node concept="3clFbS" id="4bL3rTRLrrV" role="18ibNy">
+      <node concept="2Mj0R9" id="4bL3rTRLrs1" role="3cqZAp">
+        <node concept="17R0WA" id="4bL3rTRLrUO" role="2MkoU_">
+          <node concept="2OqwBi" id="4bL3rTRLrZA" role="3uHU7w">
+            <node concept="1YBJjd" id="4bL3rTRLrVp" role="2Oq$k0">
+              <ref role="1YBMHb" node="4bL3rTRLrrX" resolve="safetyControlStructureConnectionBase" />
+            </node>
+            <node concept="1mfA1w" id="4bL3rTRLs1r" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="4bL3rTRLr_Y" role="3uHU7B">
+            <node concept="1YBJjd" id="4bL3rTRLrsl" role="2Oq$k0">
+              <ref role="1YBMHb" node="4bL3rTRLrrX" resolve="safetyControlStructureConnectionBase" />
+            </node>
+            <node concept="3TrEf2" id="4bL3rTRLrJp" role="2OqNvi">
+              <ref role="3Tt5mk" to="bewr:3Cm$$O2us95" resolve="source" />
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="4bL3rTRLs2n" role="2MkJ7o">
+          <property role="Xl_RC" value="source of a connection shall be the controller containing this connection" />
+        </node>
+        <node concept="1YBJjd" id="4bL3rTRLs8G" role="1urrMF">
+          <ref role="1YBMHb" node="4bL3rTRLrrX" resolve="safetyControlStructureConnectionBase" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4bL3rTRLrrX" role="1YuTPh">
+      <property role="TrG5h" value="safetyControlStructureConnectionBase" />
+      <ref role="1YaFvo" to="bewr:3HVC1H6VUjJ" resolve="SafetyControlStructureConnectionBase" />
     </node>
   </node>
 </model>
