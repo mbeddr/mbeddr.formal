@@ -504,9 +504,6 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
       <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
         <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
@@ -4095,8 +4092,8 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3Tsc0h" id="3cGyC6fAeeO" role="2OqNvi">
-                    <ref role="3TtcxE" to="b19z:3cGyC6fA47v" resolve="annotationProviders" />
+                  <node concept="2qgKlT" id="7tmSxcqhcQ2" role="2OqNvi">
+                    <ref role="37wK5l" to="w873:7tmSxcqhbLv" resolve="annotationProviders" />
                   </node>
                 </node>
                 <node concept="3goQfb" id="3cGyC6fDDQ6" role="2OqNvi">
@@ -4142,8 +4139,8 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="3cGyC6fA7Yz" role="2OqNvi">
-                  <ref role="3TtcxE" to="b19z:3cGyC6fA47v" resolve="annotationProviders" />
+                <node concept="2qgKlT" id="7tmSxcqhc_I" role="2OqNvi">
+                  <ref role="37wK5l" to="w873:7tmSxcqhbLv" resolve="annotationProviders" />
                 </node>
               </node>
               <node concept="2HwmR7" id="3cGyC6fAbdP" role="2OqNvi">

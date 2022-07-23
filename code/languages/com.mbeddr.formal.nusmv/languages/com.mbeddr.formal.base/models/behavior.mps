@@ -151,7 +151,9 @@
       </concept>
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -820,6 +822,41 @@
     </node>
     <node concept="13hLZK" id="5t37uj6BgLb" role="13h7CW">
       <node concept="3clFbS" id="5t37uj6BgLc" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7tmSxcqhbKU">
+    <property role="3GE5qa" value="annotation_provider" />
+    <ref role="13h7C2" to="b19z:3cGyC6fA47t" resolve="IAnnotationProvidersContainer" />
+    <node concept="13i0hz" id="7tmSxcqhbLv" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="annotationProviders" />
+      <node concept="3Tm1VV" id="7tmSxcqhbLw" role="1B3o_S" />
+      <node concept="2I9FWS" id="7tmSxcqhbLN" role="3clF45">
+        <ref role="2I9WkF" to="b19z:3cGyC6fA47u" resolve="IAnnotationProvider" />
+      </node>
+      <node concept="3clFbS" id="7tmSxcqhbLy" role="3clF47">
+        <node concept="3clFbF" id="7tmSxcqhbMC" role="3cqZAp">
+          <node concept="2OqwBi" id="7tmSxcqhbW9" role="3clFbG">
+            <node concept="13iPFW" id="7tmSxcqhbMB" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="7tmSxcqhc9e" role="2OqNvi">
+              <ref role="3TtcxE" to="b19z:3cGyC6fA47v" resolve="annotationProviders" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="7tmSxcqhciq" role="lGtFl">
+        <node concept="TZ5HA" id="7tmSxcqhcir" role="TZ5H$">
+          <node concept="1dT_AC" id="7tmSxcqhcis" role="1dT_Ay">
+            <property role="1dT_AB" value="This is a hook to be overridden if additional annotation providers are contributed." />
+          </node>
+        </node>
+        <node concept="x79VA" id="7tmSxcqhcit" role="3nqlJM">
+          <property role="x79VB" value="the list of annotation providers" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7tmSxcqhbKV" role="13h7CW">
+      <node concept="3clFbS" id="7tmSxcqhbKW" role="2VODD2" />
     </node>
   </node>
 </model>
