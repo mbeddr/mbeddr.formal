@@ -40,6 +40,11 @@
         <reference id="3731513482756243911" name="standard" index="3dzbTU" />
         <reference id="3731513482756406743" name="clause" index="3dz$9E" />
       </concept>
+      <concept id="6312041527983384272" name="com.mbeddr.formal.safety.argument.process.structure.NeedsVerificationState" flags="ng" index="3Hr$q3" />
+      <concept id="6312041527983384241" name="com.mbeddr.formal.safety.argument.process.structure.VerifiedState" flags="ng" index="3Hr$ry" />
+      <concept id="6312041527983384237" name="com.mbeddr.formal.safety.argument.process.structure.ArgumentEntityStateAttribute" flags="ng" index="3Hr$rY">
+        <child id="6312041527983384242" name="state" index="3Hr$rx" />
+      </concept>
     </language>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
       <concept id="5489462543707440098" name="com.mbeddr.formal.safety.gsn.ext.structure.TemplateWord" flags="ng" index="hkfVV">
@@ -656,15 +661,18 @@
           <property role="19SUeA" value="System X is acceptably&#10;safe to operate." />
         </node>
       </node>
+      <node concept="3Hr$rY" id="7tmSxcqh2tu" role="2U2l5M">
+        <node concept="3Hr$q3" id="7tmSxcqh2tJ" role="3Hr$rx" />
+      </node>
     </node>
     <node concept="37mRI7" id="3jaLROLvr4m" role="lGtFl">
       <node concept="37mRIm" id="3jaLROLvr4n" role="37mRID">
         <property role="37mO49" value="3804072175782965478" />
         <node concept="gqqVs" id="3jaLROLvr4l" role="37mO4d">
-          <property role="gqqTZ" value="149.5" />
-          <property role="gqqTW" value="65.59420289855072" />
+          <property role="gqqTZ" value="158.5" />
+          <property role="gqqTW" value="67.59420289855072" />
           <property role="gqqTX" value="113.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTy" value="79.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -895,6 +903,9 @@
               <property role="19SUeA" value="Hazard {hazard_1} has &#10;been mitigated" />
             </node>
           </node>
+          <node concept="3Hr$rY" id="7tmSxcqh2sf" role="2U2l5M">
+            <node concept="3Hr$ry" id="7tmSxcqh2sw" role="3Hr$rx" />
+          </node>
         </node>
         <node concept="2vmxQI" id="WKGDODSTj1" role="2vn1q5">
           <property role="TrG5h" value="S01" />
@@ -902,6 +913,9 @@
             <node concept="19SUe$" id="WKGDODSTj3" role="19SJt6">
               <property role="19SUeA" value="Argument over hazards." />
             </node>
+          </node>
+          <node concept="3Hr$rY" id="7tmSxcqh2rI" role="2U2l5M">
+            <node concept="3Hr$q3" id="7tmSxcqh2uc" role="3Hr$rx" />
           </node>
         </node>
         <node concept="3VeUTF" id="WKGDODSTj5" role="2vhqc$">
@@ -915,17 +929,17 @@
               <property role="gqqTZ" value="27.0" />
               <property role="gqqTW" value="130.0" />
               <property role="gqqTX" value="117.0" />
-              <property role="gqqTy" value="55.0" />
+              <property role="gqqTy" value="79.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
           <node concept="37mRIm" id="WKGDODSTjk" role="37mRID">
             <property role="37mO49" value="1094571097533420737" />
             <node concept="gqqVs" id="WKGDODSTjl" role="37mO4d">
-              <property role="gqqTZ" value="94.0" />
+              <property role="gqqTZ" value="104.0" />
               <property role="gqqTW" value="19.0" />
-              <property role="gqqTX" value="168.0" />
-              <property role="gqqTy" value="52.0" />
+              <property role="gqqTX" value="155.0" />
+              <property role="gqqTy" value="65.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
@@ -946,6 +960,10 @@
                 </node>
               </node>
               <node concept="2VclrF" id="WKGDODSTto" role="2Vcluh">
+                <property role="2Vclpx" value="157.88759343953467" />
+                <property role="2Vclpz" value="109.38759343953473" />
+              </node>
+              <node concept="2VclrF" id="3ALtb$im2bK" role="2Vcluh">
                 <property role="2Vclpx" value="123.3875934395347" />
                 <property role="2Vclpz" value="109.38759343953473" />
               </node>
@@ -957,7 +975,7 @@
               <property role="gqqTZ" value="194.0" />
               <property role="gqqTW" value="130.0" />
               <property role="gqqTX" value="109.0" />
-              <property role="gqqTy" value="55.0" />
+              <property role="gqqTy" value="79.0" />
               <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
@@ -978,6 +996,10 @@
                 </node>
               </node>
               <node concept="2VclrF" id="WKGDODSTAw" role="2Vcluh">
+                <property role="2Vclpx" value="201.62307275267457" />
+                <property role="2Vclpz" value="113.0" />
+              </node>
+              <node concept="2VclrF" id="3ALtb$im2bp" role="2Vcluh">
                 <property role="2Vclpx" value="230.0" />
                 <property role="2Vclpz" value="113.0" />
               </node>
@@ -1022,6 +1044,9 @@
         </node>
         <node concept="2vn7WC" id="WKGDODSTv0" role="2vn1q5">
           <property role="TrG5h" value="G02" />
+          <node concept="3Hr$rY" id="7tmSxcqh2sK" role="2U2l5M">
+            <node concept="3Hr$q3" id="7tmSxcqh2t1" role="3Hr$rx" />
+          </node>
           <node concept="19SGf9" id="WKGDODSTwM" role="2vnaTZ">
             <node concept="19SUe$" id="WKGDODSTwN" role="19SJt6">
               <property role="19SUeA" value="Hazard h2 has been &#10;mitigated." />
@@ -1112,6 +1137,9 @@
     <node concept="3VeUTF" id="WKGDODSU_K" role="2vhqc$">
       <ref role="3VeSjP" node="WKGDODSTNI" resolve="G03" />
       <ref role="3VeSjQ" node="WKGDODSTW1" resolve="S01" />
+    </node>
+    <node concept="26s6xy" id="3ALtb$im2a9" role="2WHcHu">
+      <property role="2Wzj7u" value="6312041527983384237" />
     </node>
   </node>
   <node concept="2vn7XN" id="4eD_5l3mJSY">
