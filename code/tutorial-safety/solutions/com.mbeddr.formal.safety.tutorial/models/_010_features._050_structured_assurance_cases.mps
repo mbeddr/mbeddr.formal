@@ -3338,7 +3338,7 @@
     </node>
   </node>
   <node concept="3dyw5u" id="1r1mR59oSzb">
-    <property role="TrG5h" value="_900_safety_standards_bibliography" />
+    <property role="TrG5h" value="_900_iso26262_safety_standard" />
     <node concept="3dyRFK" id="1r1mR59oSzh" role="3dzbV3">
       <property role="TrG5h" value="ISO26262-3" />
       <property role="3dzbTn" value="Road Vehicles - Functional Safety - Part 3: Concept Phase" />
@@ -3346,42 +3346,297 @@
       <node concept="3dzbSX" id="1r1mR59oSzl" role="3dzbR7">
         <property role="TrG5h" value="5.4.1" />
         <property role="3dzbSK" value="4" />
-        <property role="3dzJhj" value="Item Definition - Requirements" />
+        <property role="3dzJhj" value="Item Definition - Requirements&#10;The requirements of the item shall be made available, including:&#10;&#10;a) legal requirements, national and international standards;&#10;&#10;b) the functional behaviour at the vehicle level, including the operating modes or states;&#10;&#10;c) the required quality, performance and availability of the functionality, if applicable;&#10;&#10;d) constraints regarding the item such as functional dependencies, dependencies on other items, and the operating environment;&#10;&#10;e) potential consequences of behavioural shortfalls including known failure modes and hazards, if any; and&#10;&#10;f) the capabilities of the actuators, or their assumed capabilities.&#10;" />
       </node>
       <node concept="3dzbSX" id="1r1mR59oSzs" role="3dzbR7">
         <property role="TrG5h" value="5.4.2" />
         <property role="3dzbSK" value="5" />
-        <property role="3dzJhj" value="Item Definition - Boundary of the Item" />
+        <property role="3dzJhj" value="Item Definition - Boundary of the Item, Interfaces, Assumptions related to the interaction with other Items and Elements&#10;The boundary of the item, its interfaces, and the assumptions concerning its interaction with other items and elements, shall be defined considering:&#10;&#10;a) the elements of the item;&#10;&#10;b) the assumptions concerning the effects of the item's behaviour on the vehicle;&#10;&#10;c) the functionality of the item under consideration required by other items and elements;&#10;&#10;d) the functionality of other items and elements required by the item under consideration;&#10;&#10;e) the allocation and distribution of functions among the involved systems and elements; and&#10;&#10;f) the operational scenarios which impact the functionality of the item.&#10;" />
       </node>
       <node concept="3dzbSX" id="1r1mR59oSz_" role="3dzbR7">
         <property role="TrG5h" value="6.4.1" />
         <property role="3dzbSK" value="6" />
-        <property role="3dzJhj" value="Initiation of HARA" />
+        <property role="3dzJhj" value="Initiation of hazard analysis and risk assessment&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iohHo" role="3dzbR7">
+        <property role="TrG5h" value="6.4.1.1" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="The hazard analysis and risk assessment shall be based on the item definition.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iohHz" role="3dzbR7">
+        <property role="TrG5h" value="6.4.1.2" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="The item without internal safety mechanisms shall be evaluated during the hazard analysis and risk assessment, i.e. safety mechanisms intended to be implemented or that have already been implemented in predecessor items shall not be considered in the hazard analysis and risk assessment.&#10;" />
       </node>
       <node concept="3dzbSX" id="1r1mR59oSzD" role="3dzbR7">
         <property role="TrG5h" value="6.4.2" />
         <property role="3dzbSK" value="6" />
-        <property role="3dzJhj" value="Situation analysis and hazard identification" />
+        <property role="3dzJhj" value="Situation analysis and hazard identification&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$inCW7" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2.1" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="The operational situations and operating modes in which an item's malfunctioning behaviour will result in a hazardous event shall be described; both when the vehicle is correctly used and when it is incorrectly used in a reasonably foreseeable way.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iorUb" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2.2" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="The hazards shall be determined systematically based on possible malfunctioning behaviour of the item.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iorUM" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2.3" />
+        <property role="3dzbSK" value="6" />
+        <property role="3dzJhj" value="Hazards caused by malfunctioning behaviour of the item shall be defined at the vehicle level.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iorV0" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2.4" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="If there are hazards identified in this clause that are outside of the scope of ISO 26262 (see Clause 1), then these hazards shall be addressed according to organization specific procedures.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iorVf" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2.5" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="Relevant hazardous events shall be determined.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iorVZ" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2.6" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="The consequences of hazardous events shall be identified.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$iorWg" role="3dzbR7">
+        <property role="TrG5h" value="6.4.2.7" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="It shall be ensured that the chosen level of detail of the list of operational situations does not lead to an inappropriate lowering of the ASIL.&#10;" />
       </node>
       <node concept="3dzbSX" id="1r1mR59oSzK" role="3dzbR7">
         <property role="TrG5h" value="6.4.3" />
         <property role="3dzbSK" value="7" />
-        <property role="3dzJhj" value="Classification of hazardous events" />
+        <property role="3dzJhj" value="Classification of hazardous events&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAV6" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.1" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="All hazardous events identified in 6.4.2 shall be classified, except those that are outside the scope of ISO 26262.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAVp" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.2" />
+        <property role="3dzbSK" value="7" />
+        <property role="3dzJhj" value="The severity of potential harm shall be estimated based on a defined rationale for each hazardous event. The severity shall be assigned to one of the severity classes S0, S1, S2 or S3 in accordance with Table 1.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAVH" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.3" />
+        <property role="3dzbSK" value="8" />
+        <property role="3dzJhj" value="There are operational situations that result in harm (e.g. an accident). A subsequent malfunctioning behaviour of the item in such an operational situation can increase, or fail to decrease, the resulting harm. In this case the classification of the severity may be limited to the difference between the severity caused by the initial operational situation (e.g. the accident) and the malfunctioning behaviour of the item.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAWG" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.4" />
+        <property role="3dzbSK" value="8" />
+        <property role="3dzJhj" value="The severity class S0 may be assigned if the hazard analysis and risk assessment determines that the consequences of a malfunctioning behaviour of the item are clearly limited to material damage. If a hazardous event is assigned severity class S0, no ASIL assignment is required.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAX2" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.5" />
+        <property role="3dzbSK" value="8" />
+        <property role="3dzJhj" value="The probability of exposure of each operational situation shall be estimated based on a defined rationale for each hazardous event. The probability of exposure shall be assigned to one of the probability classes, E0, E1, E2, E3 or E4 in accordance with Table 2.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAXp" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.6" />
+        <property role="3dzbSK" value="8" />
+        <property role="3dzJhj" value="The number of vehicles equipped with the item shall not be considered when estimating the probability of exposure.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAXL" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.7" />
+        <property role="3dzbSK" value="8" />
+        <property role="3dzJhj" value="Class E0 may be used for those operational situations that are suggested during hazard analysis and risk assessment, but that are considered incredible, and therefore not explored further. A rationale shall be recorded for the exclusion of these situations. If a hazardous event is assigned exposure class E0, no ASIL assignment is required.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAYa" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.8" />
+        <property role="3dzbSK" value="9" />
+        <property role="3dzJhj" value="The controllability of each hazardous event, by the driver or other persons involved in the operational situation shall be estimated based on a defined rationale for each hazardous event. The controllability shall be assigned to one of the controllability classes C0, C1, C2 or C3 in accordance with Table 3.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAY$" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.9" />
+        <property role="3dzbSK" value="9" />
+        <property role="3dzJhj" value="Class C0 may be used for hazards addressing the unavailability of the item if they do not affect the safe operation of the vehicle (e.g. some driver assistance systems) or if an accident can be avoided by routine driver actions. If a hazardous event is assigned controllability class C0, no ASIL assignment is required.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAYZ" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.10" />
+        <property role="3dzbSK" value="9" />
+        <property role="3dzJhj" value="An ASIL shall be determined for each hazardous event based on the classification of severity, probability of exposure and controllability, in accordance with Table 4.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAZr" role="3dzbR7">
+        <property role="TrG5h" value="6.4.3.11" />
+        <property role="3dzbSK" value="10" />
+        <property role="3dzJhj" value="If several unlikely situations are combined that result in a lower probability of exposure than E1, QM may be argued for S3, C3 based on this combination.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioAZS" role="3dzbR7">
+        <property role="TrG5h" value="6.4.4" />
+        <property role="3dzbSK" value="10" />
+        <property role="3dzJhj" value="Determination of safety goals&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB0m" role="3dzbR7">
+        <property role="TrG5h" value="6.4.4.1" />
+        <property role="3dzbSK" value="10" />
+        <property role="3dzJhj" value="A safety goal shall be determined for each hazardous event with an ASIL evaluated in the hazard analysis and risk assessment. If similar safety goals are determined, these may be combined into one safety goal.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB0P" role="3dzbR7">
+        <property role="TrG5h" value="6.4.4.2" />
+        <property role="3dzbSK" value="10" />
+        <property role="3dzJhj" value="The ASIL determined for the hazardous event shall be assigned to the corresponding safety goal. If similar safety goals are combined into a single one, in accordance with 6.4.4.1, the highest ASIL shall be assigned to the combined safety goal.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB1l" role="3dzbR7">
+        <property role="TrG5h" value="6.4.4.3" />
+        <property role="3dzbSK" value="10" />
+        <property role="3dzJhj" value="The safety goals together with their ASIL shall be specified in accordance with ISO 26262-8:2018, Clause 6.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB1Q" role="3dzbR7">
+        <property role="TrG5h" value="6.4.4.4" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="Assumptions used for, or resulting from the hazard analysis and risk assessment which are relevant for ASIL determination (if applicable, including hazardous events classified QM or with no ASIL assigned) shall be identified. These assumptions shall be validated in accordance with ISO 26262-4:2018, Clause 8 for the integrated item.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB2o" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="Management of variances of T&amp;B in hazard analysis and risk assessment&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB2V" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5.1" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="The requirements in 6.4.5 shall only be applied to T&amp;B.#&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB3v" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5.2" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="The following variances shall be considered when conducting a hazard analysis and risk assessment for a T&amp;B vehicle:&#10;&#10;a) type of base vehicle;&#10;&#10;b) the T&amp;B vehicle configuration; and&#10;&#10;c) the T&amp;B vehicle operation.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB44" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5.3" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="When conducting a hazard analysis and risk assessment each relevant type of base vehicle shall be considered.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB4E" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5.4" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="The number of vehicles of a given type of base vehicle shall not be considered when estimating the probability of exposure.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB5h" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5.5" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="The number of vehicles equipped with a specific configuration shall not be considered when estimating the probability of exposure.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB5T" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5.6" />
+        <property role="3dzbSK" value="11" />
+        <property role="3dzJhj" value="When conducting a hazard analysis and risk assessment the variances in operational situations that have impact on technical parameters shall be considered.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB6y" role="3dzbR7">
+        <property role="TrG5h" value="6.4.5.7" />
+        <property role="3dzbSK" value="12" />
+        <property role="3dzJhj" value="When classifying the parameters Severity, Exposure and Controllability, an appropriate combination of the variance types for an item shall be considered.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB7c" role="3dzbR7">
+        <property role="TrG5h" value="6.4.6" />
+        <property role="3dzbSK" value="12" />
+        <property role="3dzJhj" value="Verification.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB7R" role="3dzbR7">
+        <property role="TrG5h" value="6.4.6.1" />
+        <property role="3dzbSK" value="12" />
+        <property role="3dzJhj" value="The hazard analysis and risk assessment including the safety goals shall be verified in accordance with ISO 26262-8:2018, Clause 9, to provide evidence for the:&#10;&#10;a) appropriate selection with regard to operational situations and hazard identification (and T&amp;B vehicle configuration);&#10;&#10;b) compliance with the item definition;&#10;&#10;c) consistency with related hazard analyses and risk assessments of other items;&#10;&#10;d) completeness of the coverage of the hazardous events; and&#10;&#10;e) consistency of the safety goals with the assigned ASILs and the corresponding hazardous events.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioB8z" role="3dzbR7">
+        <property role="TrG5h" value="7" />
+        <property role="3dzbSK" value="12" />
+        <property role="3dzJhj" value="Functional Safety Concept&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBaE" role="3dzbR7">
+        <property role="TrG5h" value="7.1" />
+        <property role="3dzbSK" value="12" />
+        <property role="3dzJhj" value="Objectives&#10;The objectives of this clause are:&#10;&#10;a) to specify the functional or degraded functional behaviour of the item in accordance with its safety goals;&#10;&#10;b) to specify the constraints regarding suitable and timely detection and control of relevant faults in accordance with its safety goals;&#10;&#10;c) to specify the item level strategies or measures to achieve the required fault tolerance or adequately mitigate the effects of relevant faults by the item itself, by the driver or by external measures;&#10;&#10;d) to allocate the functional safety requirements to the system architectural design, or to external measures; and&#10;&#10;e) to verify the functional safety concept and specify the safety validation criteria.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBbo" role="3dzbR7">
+        <property role="TrG5h" value="7.2" />
+        <property role="3dzbSK" value="13" />
+        <property role="3dzJhj" value="General&#10;To comply with the safety goals, the functional safety concept contains safety measures, including the safety mechanisms, to be implemented in the item’s architectural elements and specified in the functional safety requirements.&#10;&#10;Figure 2 illustrates the hierarchical approach by which the safety goals are determined as a result of the hazard analysis and risk assessment. The functional safety requirements are then derived from the safety goals and are allocated to the system architectural design.&#10;&#10;Using preliminary architectural assumptions provides a means to handle immature architectural information in early development phases.&#10;&#10;For the structure and distribution of safety requirements within the corresponding Parts of ISO 26262, see ISO 26262-8:2018, Figure 2.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBc7" role="3dzbR7">
+        <property role="TrG5h" value="7.4.1" />
+        <property role="3dzbSK" value="14" />
+        <property role="3dzJhj" value="The functional safety requirements shall be specified in accordance with ISO 26262-8:2018, Clause 6.&#10;" />
       </node>
       <node concept="3dzbSX" id="1r1mR59qri4" role="3dzbR7">
         <property role="TrG5h" value="7.4.2" />
         <property role="3dzbSK" value="14" />
-        <property role="3dzJhj" value="Derivation of functional safety requirements" />
+        <property role="3dzJhj" value="Derivation of functional safety requirements&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBcR" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.1" />
+        <property role="3dzbSK" value="14" />
+        <property role="3dzJhj" value="The functional safety requirements shall be derived from the safety goals, considering the system architectural design.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBdC" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.2" />
+        <property role="3dzbSK" value="14" />
+        <property role="3dzJhj" value="At least one functional safety requirement shall be derived from each safety goal.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBeq" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.3" />
+        <property role="3dzbSK" value="14" />
+        <property role="3dzJhj" value="The functional safety requirements shall specify, if applicable, strategies for:&#10;&#10;a) fault avoidance;&#10;&#10;b) fault detection and control of faults or the resulting malfunctioning behaviour;&#10;&#10;c) transitioning to a safe state, and if applicable, from a safe state;&#10;&#10;d) fault tolerance;&#10;&#10;e) the degradation of the functionality in the presence of a fault and its interaction with f) or g);&#10;&#10;f) driver warnings needed to reduce the risk exposure time to an acceptable duration;&#10;&#10;g) driver warnings needed to increase the controllability by the driver (e.g. engine malfunction indicator lamp, ABS fault warning lamp);&#10;&#10;h) how timing requirements at the vehicle level are met, i.e. how the fault tolerant time interval shall be met by defining a fault handling time interval; and&#10;&#10;i) avoidance or mitigation of a hazardous event due to improper arbitration of multiple control requests generated simultaneously by different functions.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBfd" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.4" />
+        <property role="3dzbSK" value="14" />
+        <property role="3dzJhj" value="Each functional safety requirement shall be specified by considering the following, as applicable:&#10;&#10;a) operating modes;&#10;&#10;b) fault tolerant time interval;&#10;&#10;c) safe states;&#10;&#10;d) emergency operation time interval; and&#10;&#10;e) functional redundancies (e.g. fault tolerance).&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBg1" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.5" />
+        <property role="3dzbSK" value="14" />
+        <property role="3dzJhj" value="If a safety goal violation can be prevented by transitioning to, or by maintaining, one or more safe states, then the corresponding safe state(s) shall be specified.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBgQ" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.6" />
+        <property role="3dzbSK" value="15" />
+        <property role="3dzJhj" value="If a safe state cannot be reached by a transition within an acceptable time interval, an emergency operation shall be specified.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBhG" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.7" />
+        <property role="3dzbSK" value="15" />
+        <property role="3dzJhj" value="If assumptions are made about the necessary actions of the driver, or other persons, in order to prevent the violation of a safety goal, then the following shall apply:&#10;&#10;a) these actions shall be specified in the functional safety concept; and&#10;&#10;b) the adequate means and controls available to the driver or other persons shall be specified in the functional safety concept.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBiz" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.8" />
+        <property role="3dzbSK" value="15" />
+        <property role="3dzJhj" value="The functional safety requirements shall be allocated to the elements of the system architectural design:&#10;&#10;a) During requirement allocation, the ASIL and information given in 7.4.2.4 shall be inherited from the associated safety goal. If ASIL decomposition is applied then the requirements of ISO 26262-9:2018, Clause 5 are also applicable.&#10;&#10;b) If freedom from interference in accordance with ISO 26262-9:2018, Clause 6 between elements implementing safety requirements cannot be argued in the system architectural design, then the architectural elements shall be developed in accordance with the highest ASIL for those safety requirements.&#10;&#10;c) If the item comprises more than one E/E system, then the functional safety requirements for the individual E/E systems and their interfaces shall be specified, considering the system architectural design. These functional safety requirements shall be allocated to the E/E systems.&#10;&#10;d) If the item comprises more than one E/E system then the corresponding target values for random hardware fault metrics (see ISO 26262-5:2018, Clauses 8 and 9) can be specified and allocated to each individual E/E system in accordance with ISO 26262-4:2018, 6.4.5.2.&#10;&#10;e) If ASIL decomposition is applied during the allocation of the functional safety requirements, then it shall be applied in accordance with ISO 26262-9:2018, Clause 5.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBjr" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.9" />
+        <property role="3dzbSK" value="15" />
+        <property role="3dzJhj" value="If the functional safety concept relies on elements of other technologies, then the following shall apply:&#10;&#10;a) the functional safety requirements implemented by elements of other technologies shall be derived and allocated to the corresponding elements of the architecture;&#10;&#10;b) the functional safety requirements relating to the interfaces with elements of other technologies shall be specified;&#10;&#10;c) the implementation of functional safety requirements by elements of other technologies shall be ensured through specific measures that are outside the scope of ISO 26262; and&#10;&#10;d) no ASIL should be assigned to safety requirements allocated to these elements.&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBkk" role="3dzbR7">
+        <property role="TrG5h" value="7.4.2.10" />
+        <property role="3dzbSK" value="16" />
+        <property role="3dzJhj" value="If the functional safety concept relies on external measures, then the following shall apply:&#10;&#10;a) the functional safety requirements implemented by external measures shall be derived and communicated;&#10;&#10;b) the functional safety requirements of interfaces with external measures shall be specified; and&#10;&#10;c) if the external measures are implemented by one or more E/E systems, the functional safety requirements shall be addressed using ISO 26262.&#10;" />
       </node>
       <node concept="3dzbSX" id="1r1mR59qrib" role="3dzbR7">
         <property role="TrG5h" value="7.4.3" />
         <property role="3dzbSK" value="16" />
-        <property role="3dzJhj" value="Safety validation criteria" />
+        <property role="3dzJhj" value="Safety validation criteria&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBle" role="3dzbR7">
+        <property role="TrG5h" value="7.4.3.1" />
+        <property role="3dzbSK" value="16" />
+        <property role="3dzJhj" value="The acceptance criteria for safety validation of the item shall be specified based on the functional safety requirements and the safety goals.&#10;" />
       </node>
       <node concept="3dzbSX" id="1r1mR59qrij" role="3dzbR7">
         <property role="TrG5h" value="7.4.4" />
         <property role="3dzbSK" value="16" />
-        <property role="3dzJhj" value="Verification of the functional safety concept" />
+        <property role="3dzJhj" value="Verification of the functional safety concept&#10;" />
+      </node>
+      <node concept="3dzbSX" id="3ALtb$ioBm9" role="3dzbR7">
+        <property role="TrG5h" value="7.4.4.1" />
+        <property role="3dzbSK" value="16" />
+        <property role="3dzJhj" value="The functional safety concept shall be verified in accordance with ISO 26262-8:2018, Clause 9, to provide evidence for:&#10;&#10;a) its consistency and compliance with the safety goals; and&#10;&#10;b) its ability to mitigate or avoid the hazards.&#10;" />
       </node>
     </node>
     <node concept="3dyRFK" id="1r1mR59oSzn" role="3dzbV3">
