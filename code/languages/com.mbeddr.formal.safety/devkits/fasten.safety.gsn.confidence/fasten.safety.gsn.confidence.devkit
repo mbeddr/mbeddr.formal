@@ -2,5 +2,8 @@
 <dev-kit name="fasten.safety.gsn.confidence" uuid="b80b29fe-1cc4-4054-aee5-cb5c2049985a">
   <exported-language name="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer)" />
   <exported-language name="00a2e56d-f195-410b-8afe-5a3c7e505658(com.mbeddr.formal.safety.gsn.confidence.acp)" />
+  <extendedDevKits>
+    <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
+  </extendedDevKits>
 </dev-kit>
 
