@@ -495,6 +495,9 @@
       </concept>
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
+      <concept id="8433227566816385664" name="de.itemis.mps.editor.diagram.structure.ILayoutAlgorithm" flags="ng" index="35SPa">
+        <child id="2064429317493348220" name="config" index="3pGojU" />
+      </concept>
       <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
       <concept id="8433227566817223068" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutAlgorithm" flags="ng" index="39fpm">
         <property id="7623784619795245948" name="direction" index="1NdBj4" />
@@ -546,6 +549,9 @@
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
       <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
+      <concept id="2064429317493348219" name="de.itemis.mps.editor.diagram.structure.DiagramLayoutConfig" flags="ng" index="3pGojX">
+        <property id="3028818438357202735" name="hierarchyHandling" index="2DpV5X" />
+      </concept>
       <concept id="6910723851735106293" name="de.itemis.mps.editor.diagram.structure.DiagramButtonConfig" flags="ng" index="3sA_1f">
         <property id="6910723851735128113" name="hasResetViewButton" index="3sAwEb" />
         <property id="6910723851735128106" name="hasRelayoutAllEdgesButton" index="3sAwEg" />
@@ -564,6 +570,9 @@
       <concept id="8637411062076624999" name="de.itemis.mps.editor.diagram.structure.Function_ConnectionTypes" flags="ig" index="1xLmZY" />
       <concept id="8637411062062623445" name="de.itemis.mps.editor.diagram.structure.Parameter_PaletteFolder_Concept" flags="ng" index="1yATlc" />
       <concept id="8637411062062430894" name="de.itemis.mps.editor.diagram.structure.Function_PaletteFolder" flags="ig" index="1yB8kR" />
+      <concept id="3333801137936756207" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutConfig" flags="ng" index="3GLQun">
+        <property id="2064429317495021368" name="subdiagramDirection" index="3p_KMY" />
+      </concept>
       <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
         <child id="9064581101900868073" name="target" index="ljJml" />
@@ -2768,6 +2777,10 @@
       </node>
       <node concept="39fpm" id="42InK5baDIm" role="35U2g">
         <property role="1NdBj4" value="6Bd7VwqYQBY/DOWN" />
+        <node concept="3GLQun" id="6vCDfsKO5OL" role="3pGojU">
+          <property role="3p_KMY" value="6Bd7VwqYQBY/DOWN" />
+          <property role="2DpV5X" value="64PP31wF2qq/INCLUDE_CHILDREN" />
+        </node>
       </node>
       <node concept="3sA_1f" id="6ucyvMUx0gv" role="3sAl1G">
         <property role="3sAwEi" value="true" />

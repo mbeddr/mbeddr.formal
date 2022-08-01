@@ -1,4 +1,5 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-com.mbeddr:platform:2021.1.23268.0dcfdbc
+com.mbeddr:platform:2021.1.23346.90b20cb
+
