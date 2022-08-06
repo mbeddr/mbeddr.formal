@@ -144,7 +144,8 @@
     <property role="EcuMT" value="3731513482756195661" />
     <property role="TrG5h" value="Standard" />
     <property role="34LRSv" value="standard" />
-    <property role="3GE5qa" value="bibliography" />
+    <property role="3GE5qa" value="bibliography.standard" />
+    <property role="R4oN_" value="a standard" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3f8ZVRYh49U" role="1TKVEi">
       <property role="IQ2ns" value="3731513482756244090" />
@@ -178,7 +179,7 @@
   <node concept="1TIwiD" id="3f8ZVRYh460">
     <property role="EcuMT" value="3731513482756243840" />
     <property role="TrG5h" value="StandardClause" />
-    <property role="3GE5qa" value="bibliography" />
+    <property role="3GE5qa" value="bibliography.standard" />
     <property role="34LRSv" value="clause" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3f8ZVRYh461" role="PzmwI">
@@ -201,7 +202,7 @@
   <node concept="1TIwiD" id="3f8ZVRYh476">
     <property role="EcuMT" value="3731513482756243910" />
     <property role="TrG5h" value="StandardAndClauseRefGSNAttribute" />
-    <property role="3GE5qa" value="bibliography" />
+    <property role="3GE5qa" value="bibliography.standard" />
     <property role="34LRSv" value="standard ref" />
     <property role="R4oN_" value="reference to standard" />
     <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
@@ -224,6 +225,79 @@
     <property role="34LRSv" value="draft" />
     <property role="R4oN_" value="the entity is in draft state" />
     <ref role="1TJDcQ" node="5uoS5eUXEqK" resolve="EntityStateBase" />
+  </node>
+  <node concept="1TIwiD" id="5gjf2NSjE2u">
+    <property role="EcuMT" value="6058252087585579166" />
+    <property role="3GE5qa" value="bibliography.academic" />
+    <property role="TrG5h" value="TechnicalReport" />
+    <property role="34LRSv" value="technical report" />
+    <property role="R4oN_" value="a technical report" />
+    <ref role="1TJDcQ" node="5gjf2NSjEY9" resolve="AbstractPaper" />
+  </node>
+  <node concept="1TIwiD" id="5gjf2NSjE2x">
+    <property role="EcuMT" value="6058252087585579169" />
+    <property role="3GE5qa" value="bibliography.academic" />
+    <property role="TrG5h" value="AcademicPaperPart" />
+    <property role="34LRSv" value="part" />
+    <property role="R4oN_" value="a part of an academic paper (section, chapter, ...)" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5gjf2NSjE3n" role="1TKVEl">
+      <property role="IQ2nx" value="6058252087585579223" />
+      <property role="TrG5h" value="page" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5gjf2NSjE3o" role="1TKVEl">
+      <property role="IQ2nx" value="6058252087585579224" />
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5gjf2NSjEgd" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5gjf2NSjEY6">
+    <property role="EcuMT" value="6058252087585582982" />
+    <property role="3GE5qa" value="bibliography.academic" />
+    <property role="TrG5h" value="Paper" />
+    <property role="34LRSv" value="paper" />
+    <property role="R4oN_" value="a paper" />
+    <ref role="1TJDcQ" node="5gjf2NSjEY9" resolve="AbstractPaper" />
+  </node>
+  <node concept="1TIwiD" id="5gjf2NSjEY9">
+    <property role="EcuMT" value="6058252087585582985" />
+    <property role="3GE5qa" value="bibliography.academic" />
+    <property role="TrG5h" value="AbstractPaper" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5gjf2NSjE2y" role="1TKVEi">
+      <property role="IQ2ns" value="6058252087585579170" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parts" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5gjf2NSjE2x" resolve="AcademicPaperPart" />
+    </node>
+    <node concept="PrWs8" id="5gjf2NSjEYa" role="PzmwI">
+      <ref role="PrY4T" node="3f8ZVRYgSle" resolve="IBibliographyEntry" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5gjf2NSk5qt">
+    <property role="EcuMT" value="6058252087585691293" />
+    <property role="TrG5h" value="PaperAndPartRefGSNAttribute" />
+    <property role="3GE5qa" value="bibliography.academic" />
+    <property role="34LRSv" value="paper ref" />
+    <property role="R4oN_" value="reference to academic paper" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyj" id="5gjf2NSk5qu" role="1TKVEi">
+      <property role="IQ2ns" value="6058252087585691294" />
+      <property role="20kJfa" value="paper" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5gjf2NSjEY9" resolve="AbstractPaper" />
+    </node>
+    <node concept="1TJgyj" id="5gjf2NSk5qv" role="1TKVEi">
+      <property role="IQ2ns" value="6058252087585691295" />
+      <property role="20kJfa" value="part" />
+      <ref role="20lvS9" node="5gjf2NSjE2x" resolve="AcademicPaperPart" />
+    </node>
   </node>
 </model>
 

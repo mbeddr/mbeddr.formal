@@ -75,7 +75,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="3f8ZVRYhOhx">
-    <property role="3GE5qa" value="bibliography" />
+    <property role="3GE5qa" value="bibliography.standard" />
     <ref role="1M2myG" to="l1gl:3f8ZVRYh476" resolve="StandardAndClauseRefGSNAttribute" />
     <node concept="1N5Pfh" id="3f8ZVRYhOhy" role="1Mr941">
       <ref role="1N5Vy1" to="l1gl:3f8ZVRYhFRn" resolve="clause" />
@@ -99,6 +99,39 @@
                 </node>
                 <node concept="3Tsc0h" id="3f8ZVRYhQBQ" role="2OqNvi">
                   <ref role="3TtcxE" to="l1gl:3f8ZVRYh49U" resolve="clauses" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5gjf2NSk7UT">
+    <property role="3GE5qa" value="bibliography.academic" />
+    <ref role="1M2myG" to="l1gl:5gjf2NSk5qt" resolve="PaperAndPartRefGSNAttribute" />
+    <node concept="1N5Pfh" id="5gjf2NSk7UU" role="1Mr941">
+      <ref role="1N5Vy1" to="l1gl:5gjf2NSk5qv" resolve="part" />
+      <node concept="3dgokm" id="5gjf2NSk7UV" role="1N6uqs">
+        <node concept="3clFbS" id="5gjf2NSk7UW" role="2VODD2">
+          <node concept="3clFbF" id="5gjf2NSk7UX" role="3cqZAp">
+            <node concept="2YIFZM" id="5gjf2NSk7UY" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="5gjf2NSk7UZ" role="37wK5m">
+                <node concept="2OqwBi" id="5gjf2NSk7V0" role="2Oq$k0">
+                  <node concept="1PxgMI" id="5gjf2NSk7V1" role="2Oq$k0">
+                    <node concept="chp4Y" id="5gjf2NSk7V2" role="3oSUPX">
+                      <ref role="cht4Q" to="l1gl:5gjf2NSk5qt" resolve="PaperAndPartRefGSNAttribute" />
+                    </node>
+                    <node concept="2rP1CM" id="5gjf2NSk7V3" role="1m5AlR" />
+                  </node>
+                  <node concept="3TrEf2" id="5gjf2NSk7V4" role="2OqNvi">
+                    <ref role="3Tt5mk" to="l1gl:5gjf2NSk5qu" resolve="paper" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="5gjf2NSk7V5" role="2OqNvi">
+                  <ref role="3TtcxE" to="l1gl:5gjf2NSjE2y" resolve="parts" />
                 </node>
               </node>
             </node>
