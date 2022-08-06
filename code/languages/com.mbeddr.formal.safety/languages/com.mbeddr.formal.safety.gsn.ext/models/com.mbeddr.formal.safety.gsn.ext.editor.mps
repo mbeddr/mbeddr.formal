@@ -8,6 +8,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -307,6 +308,9 @@
         <child id="8587703283523590803" name="shape" index="1PNbKK" />
       </concept>
     </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
@@ -499,6 +503,22 @@
         </node>
         <node concept="l2Vlx" id="59fClQCI4ST" role="2iSdaV" />
       </node>
+      <node concept="3F0ifn" id="5gjf2NSj1um" role="3EZMnx" />
+      <node concept="3EZMnI" id="5WyjFZRl1gs" role="3EZMnx">
+        <node concept="VPM3Z" id="5WyjFZRl1gu" role="3F10Kt" />
+        <node concept="3F0ifn" id="5WyjFZRl1gw" role="3EZMnx">
+          <property role="3F0ifm" value="Show Relations Text:" />
+        </node>
+        <node concept="27S6Sx" id="5WyjFZRl1hd" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:5WyjFZRl16s" resolve="displayRelationNames" />
+        </node>
+        <node concept="2iRfu4" id="5WyjFZRl1gx" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3cGyC6fDROD" role="3EZMnx" />
+      <node concept="PMmxH" id="3cGyC6fEQ4A" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fA47W" resolve="AnnotationProvidersContainerEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="5gjf2NSj1u_" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="24PsEXF9yxE">
