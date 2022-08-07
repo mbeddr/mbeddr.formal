@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/fasten.requirements.formal/fasten.requirements.formal.devkit" folder="lang" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.requirements/fasten.requirements.devkit" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.asam_open_odd/com.fasten.req.asam_open_odd.mpl" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.odd/com.fasten.req.odd.mpl" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.req.ontology/com.fasten.req.ontology.mpl" folder="lang.ontology" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.arch/com.mbeddr.formal.req.arch.mpl" folder="lang" />
@@ -14,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.arch/com.mbeddr.formal.req.tl_patterns.arch.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns.nusmv/com.mbeddr.formal.req.tl_patterns.nusmv.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.req.tl_patterns/com.mbeddr.formal.req.tl_patterns.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.asam_open_odd.sandbox/com.fasten.req.asam_open_odd.sandbox.msd" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.odd.sandbox/com.fasten.req.odd.sandbox.msd" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.ontology.lib/com.fasten.req.ontology.lib.msd" folder="lang.ontology" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.req.ontology.pluginSolution/com.fasten.req.ontology.pluginSolution.msd" folder="lang.ontology" />
