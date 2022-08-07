@@ -17,7 +17,7 @@ For building FASTEN we have gradle-based scripts which automatically manage all 
 1. [download](https://www.jetbrains.com/mps/download/previous.html) and install MPS 2021.1.x
 2. configure the needed variables in *gradle.properties*
     * copy the *gradle.properties.example* as *gradle.properties* and replace "<...>" with your paths)
-        - in *Windows* please note that the paths should use *slash* instead of *back-slash*, e.g.
+        - in *Windows* please note that the paths should use *slash* instead of *back-slash*, and they must NOT contain any *space* character (' ') - e.g.
            + mpsHomeDir=C:/work/MPS_2021_1_3
            + mbeddr.formal.home=C:/work/mbeddr.formal 
         - in Unix-based systems we have the "unix paths" (nothing changes)
