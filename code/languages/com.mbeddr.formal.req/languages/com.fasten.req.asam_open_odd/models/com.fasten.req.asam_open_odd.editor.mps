@@ -50,7 +50,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="3KAT90sYJ3z">
-    <ref role="1XX52x" to="aggw:3KAT90sYJ37" resolve="OddAttributesContainer" />
+    <ref role="1XX52x" to="aggw:3KAT90sYJ37" resolve="OddAttributesTaxonomy" />
     <node concept="3EZMnI" id="3Jn$RV31nVT" role="2wV5jI">
       <node concept="PMmxH" id="3Jn$RV31nW0" role="3EZMnx">
         <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
@@ -100,20 +100,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="3KAT90sYKPz">
-    <ref role="1XX52x" to="aggw:3KAT90sYKPf" resolve="OddTaxonomiesCatalog" />
-    <node concept="3EZMnI" id="3KAT90sYKP_" role="2wV5jI">
-      <node concept="PMmxH" id="3KAT90sYKPA" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
-      </node>
-      <node concept="3F0ifn" id="3KAT90sYKPB" role="3EZMnx" />
-      <node concept="3F2HdR" id="3KAT90sYKPC" role="3EZMnx">
-        <ref role="1NtTu8" to="aggw:3KAT90sYKPn" resolve="oddTaxonomies" />
-        <node concept="2iRkQZ" id="3KAT90sYKPD" role="2czzBx" />
-      </node>
-      <node concept="2iRkQZ" id="3KAT90sYKPE" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -39,7 +39,7 @@
   </registry>
   <node concept="1TIwiD" id="3KAT90sYJ37">
     <property role="EcuMT" value="4334402999003312327" />
-    <property role="TrG5h" value="OddAttributesContainer" />
+    <property role="TrG5h" value="OddAttributesTaxonomy" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="ODD Attributes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -70,33 +70,7 @@
     <node concept="1TJgyj" id="3KAT90sYKPp" role="1TKVEi">
       <property role="IQ2ns" value="4334402999003319641" />
       <property role="20kJfa" value="source" />
-      <ref role="20lvS9" node="3KAT90sYKPi" resolve="OddTaxonomy" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3KAT90sYKPf">
-    <property role="EcuMT" value="4334402999003319631" />
-    <property role="TrG5h" value="OddTaxonomiesCatalog" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="ODD Taxonomies Catalog" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3KAT90sYKPg" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3KAT90sYKPn" role="1TKVEi">
-      <property role="IQ2ns" value="4334402999003319639" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="oddTaxonomies" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3KAT90sYKPi" resolve="OddTaxonomy" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3KAT90sYKPi">
-    <property role="EcuMT" value="4334402999003319634" />
-    <property role="TrG5h" value="OddTaxonomy" />
-    <property role="34LRSv" value="ODD Taxonomy" />
-    <ref role="1TJDcQ" node="3KAT90sYJ37" resolve="OddAttributesContainer" />
-    <node concept="PrWs8" id="3KAT90sYKPj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="20lvS9" node="3KAT90sYJ37" resolve="OddAttributesTaxonomy" />
     </node>
   </node>
 </model>
