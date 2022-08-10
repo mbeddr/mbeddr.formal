@@ -61,9 +61,6 @@
   <node concept="wR1hn" id="2jtY4wYFdE0">
     <property role="TrG5h" value="BSI PAS 1883" />
   </node>
-  <node concept="wR1hn" id="2jtY4wYFdE1">
-    <property role="TrG5h" value="AVSC Lexicon" />
-  </node>
   <node concept="2nzRdi" id="7rhGTfxnN5j">
     <property role="TrG5h" value="Exemplary ODD Specification" />
     <node concept="2nzRdO" id="7rhGTfxnUKJ" role="2nzRdT">
