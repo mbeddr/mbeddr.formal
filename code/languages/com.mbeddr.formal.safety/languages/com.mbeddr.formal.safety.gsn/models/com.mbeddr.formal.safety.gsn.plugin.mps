@@ -5,6 +5,7 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +21,21 @@
     <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="2450897840534683979" name="jetbrains.mps.lang.plugin.structure.EditorTabReference" flags="nn" index="2vPdvi">
+        <reference id="2450897840534683980" name="editorTab" index="2vPdvl" />
+      </concept>
+      <concept id="2450897840534683975" name="jetbrains.mps.lang.plugin.structure.Order" flags="ng" index="2vPdvu">
+        <child id="2450897840534683977" name="tab" index="2vPdvg" />
+      </concept>
+      <concept id="3743831881070611759" name="jetbrains.mps.lang.plugin.structure.EditorTab" flags="ng" index="2E2WTH">
+        <reference id="3743831881070611760" name="baseNodeConcept" index="2E2WTM" />
+        <child id="3743831881070613126" name="order" index="2E2X74" />
+        <child id="3743831881070612960" name="nodesBlock" index="2E2Xay" />
+      </concept>
+      <concept id="1203851983563" name="jetbrains.mps.lang.plugin.structure.GetNodeBlock" flags="in" index="1baRJj" />
+      <concept id="1203853034639" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_node" flags="nn" index="1beSmn" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -56,6 +72,9 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -3804,6 +3823,22 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5WyjFZRoMiD" role="jymVt" />
+  </node>
+  <node concept="2E2WTH" id="xQCLqFsoU9">
+    <property role="TrG5h" value="Goal Structure" />
+    <ref role="2E2WTM" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+    <node concept="1baRJj" id="xQCLqFsoUa" role="2E2Xay">
+      <node concept="3clFbS" id="xQCLqFsoUb" role="2VODD2">
+        <node concept="3clFbF" id="xQCLqFsoUc" role="3cqZAp">
+          <node concept="1beSmn" id="xQCLqFsoUd" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vPdvu" id="xQCLqFsoUe" role="2E2X74">
+      <node concept="2vPdvi" id="xQCLqFsoUf" role="2vPdvg">
+        <ref role="2vPdvl" node="xQCLqFsoU9" resolve="Goal Structure" />
+      </node>
+    </node>
   </node>
 </model>
 
