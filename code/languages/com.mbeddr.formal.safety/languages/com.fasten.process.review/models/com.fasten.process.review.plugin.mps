@@ -10,8 +10,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="kivz" ref="r:dd766917-4a5c-40cc-9eef-1d695686872d(com.fasten.process.review.structure)" implicit="true" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
+    <import index="kivz" ref="r:dd766917-4a5c-40cc-9eef-1d695686872d(com.fasten.process.review.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -76,8 +76,8 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
+      <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -97,53 +97,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
-  <node concept="2E2WTH" id="5t37uj6BFNU">
-    <property role="TrG5h" value="Reviews" />
-    <ref role="2E2WTM" to="kivz:5t37uj6__pB" resolve="ReviewsContainer" />
-    <node concept="1QGGSu" id="5t37uj6BFNV" role="3xeRvj">
-      <property role="1iqoE4" value="${module}/icons/magnifier.png" />
-    </node>
-    <node concept="1baRJj" id="5t37uj6BFNX" role="2E2Xay">
-      <node concept="3clFbS" id="5t37uj6BFNY" role="2VODD2">
-        <node concept="3clFbF" id="5t37uj6BQpX" role="3cqZAp">
-          <node concept="1beSmn" id="5t37uj6BQpW" role="3clFbG" />
-        </node>
-      </node>
-    </node>
-    <node concept="2vPdvu" id="5t37uj6BSKg" role="2E2X74">
-      <node concept="2vPdvi" id="5t37uj6BSKh" role="2vPdvg">
-        <ref role="2vPdvl" node="5t37uj6BFNU" resolve="Reviews" />
-      </node>
-    </node>
-  </node>
   <node concept="2DaZZR" id="Cf$VZbUBKa" />
-  <node concept="2E2WTH" id="5t37uj6BWAy">
-    <property role="TrG5h" value="Reviews Subject" />
-    <ref role="2E2WTM" to="kivz:5t37uj6__pB" resolve="ReviewsContainer" />
-    <node concept="1QGGSu" id="5t37uj6BWAz" role="3xeRvj">
-      <property role="1iqoE4" value="${module}/icons/magnifier.png" />
-    </node>
-    <node concept="1baRJj" id="5t37uj6BWA$" role="2E2Xay">
-      <node concept="3clFbS" id="5t37uj6BWA_" role="2VODD2">
-        <node concept="3clFbF" id="5t37uj6BWAW" role="3cqZAp">
-          <node concept="2OqwBi" id="5t37uj6BWPx" role="3clFbG">
-            <node concept="1beSmn" id="5t37uj6BWAX" role="2Oq$k0" />
-            <node concept="3TrEf2" id="5t37uj6BX5g" role="2OqNvi">
-              <ref role="3Tt5mk" to="kivz:5t37uj6_AgL" resolve="subject" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2vPdvu" id="5t37uj6BWAY" role="2E2X74">
-      <node concept="2vPdvi" id="5t37uj6BWAZ" role="2vPdvg">
-        <ref role="2vPdvl" node="5t37uj6BFNU" resolve="Reviews" />
-      </node>
-      <node concept="2vPdvi" id="5t37uj6BYtt" role="2vPdvg">
-        <ref role="2vPdvl" node="5t37uj6BWAy" resolve="Reviews Subject" />
-      </node>
-    </node>
-  </node>
   <node concept="2E2WTH" id="5t37uj6C03M">
     <property role="TrG5h" value="Subject" />
     <ref role="2E2WTM" to="b19z:5t37uj6_E0b" resolve="IReviewSubject" />
@@ -179,8 +133,8 @@
                   <node concept="1beSmn" id="5t37uj6C0dW" role="2Oq$k0" />
                   <node concept="I4A8Y" id="5t37uj6C0dX" role="2OqNvi" />
                 </node>
-                <node concept="1j9C0f" id="5t37uj6C0dY" role="2OqNvi">
-                  <node concept="chp4Y" id="5t37uj6C0dZ" role="3MHPCF">
+                <node concept="3lApI0" id="xQCLqFsnGM" role="2OqNvi">
+                  <node concept="chp4Y" id="xQCLqFsnOR" role="3MHPDn">
                     <ref role="cht4Q" to="kivz:5t37uj6__pB" resolve="ReviewsContainer" />
                   </node>
                 </node>

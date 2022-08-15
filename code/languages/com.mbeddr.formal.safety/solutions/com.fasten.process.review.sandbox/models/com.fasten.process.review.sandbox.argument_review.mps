@@ -28,7 +28,7 @@
         <property id="6287902373161726590" name="date" index="2hSeYq" />
         <child id="6287902373161712475" name="reviewText" index="2hSaqZ" />
       </concept>
-      <concept id="6287902373160858064" name="com.fasten.process.review.structure.ToDo" flags="ng" index="2hPqKO" />
+      <concept id="6287902373160858065" name="com.fasten.process.review.structure.InProgress" flags="ng" index="2hPqKP" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -40,6 +40,14 @@
     <property role="TrG5h" value="_010_top_level_argument_review" />
     <property role="2hRKsj" value="70398" />
     <ref role="2hPnBl" to="zbl0:5t37uj6_OCL" resolve="_010_top_level" />
+    <node concept="2hPkIe" id="xQCLqFscko" role="2hTLal">
+      <property role="2hSeYq" value="2022/08/03 22:15 MESZ" />
+      <node concept="19SGf9" id="xQCLqFsckp" role="2hSaqZ">
+        <node concept="19SUe$" id="xQCLqFsckq" role="19SJt6">
+          <property role="19SUeA" value="some text" />
+        </node>
+      </node>
+    </node>
     <node concept="2hPkIe" id="5t37uj6HIcB" role="2hTLal">
       <property role="2hSeYq" value="2022/06/05 18:04 MESZ" />
       <node concept="19SGf9" id="5t37uj6HIcC" role="2hSaqZ">
@@ -85,7 +93,7 @@
         </node>
       </node>
     </node>
-    <node concept="2hPqKO" id="5t37uj6CVHo" role="2hPqKR" />
+    <node concept="2hPqKP" id="5cWeplFVFP3" role="2hPqKR" />
   </node>
 </model>
 

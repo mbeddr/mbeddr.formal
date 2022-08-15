@@ -66,10 +66,10 @@
       <node concept="37mRIm" id="5t37uj6BrLe" role="37mRID">
         <property role="37mO49" value="6287902373161319482" />
         <node concept="gqqVs" id="5t37uj6BrLc" role="37mO4d">
-          <property role="gqqTZ" value="181.0" />
-          <property role="gqqTW" value="110.0" />
+          <property role="gqqTZ" value="154.0" />
+          <property role="gqqTW" value="30.0" />
           <property role="gqqTX" value="85.0" />
-          <property role="gqqTy" value="41.0" />
+          <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
