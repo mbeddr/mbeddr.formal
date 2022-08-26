@@ -3,10 +3,10 @@ import de.itemis.mps.gradle.*
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.8.305.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:2.0.315.+'
     }
 }
 
@@ -14,9 +14,8 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'co.riiid.gradle' version '0.4.2'
+    id 'download-jbr' version 'latest.release'
 }
-
-apply plugin: 'download-jbr'
 
 ext.jbrVers = '11_0_11-b1341.60'
 
@@ -67,8 +66,7 @@ if (!project.hasProperty('nexusUsername')) {
 logger.info 'Repository username: {}', project.nexusUsername
 
 ext.dependencyRepositories = [
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
+        'https://artifacts.itemis.cloud/repository/maven-mps'
 ]
 
 // Dependency versions
@@ -112,7 +110,7 @@ if (project.hasProperty("MPS_PATHS_SELECTOR")) {
 }
 */
 
-ext.publishingRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.publishingRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases'
 
 
 configurations {
@@ -194,8 +192,7 @@ task configureJava {
     doLast {
         project.ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
         project.ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName("downloadJbr").javaExecutable
-        println project.findProperty("itemis.mps.gradle.ant.defaultJavaExecutable")
+        project.ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName("downloadJbr").javaExecutable.get()
     }
 }
 
@@ -220,21 +217,20 @@ task setup {
 }
 
 task build_allScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveLanguageLibs]) {
-    script "$buildDir/scripts/build_all_scripts.xml"
+    script = "$buildDir/scripts/build_all_scripts.xml"
 }
 
 task build_formal_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script new File("$buildDir/scripts/build-formal-languages.xml")
+    script = new File("$buildDir/scripts/build-formal-languages.xml")
 }
 
 task build_fasten_safety_distribution(type: BuildLanguages, dependsOn: [build_formal_languages]) {
-    script new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
+    script = new File("$buildDir/scripts/build-fasten-safe-distribution.xml")
 }
 
 task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
-	script new File("$buildDir/scripts/build-nusmv-tests.xml")
+	script = new File("$buildDir/scripts/build-nusmv-tests.xml")
 	doLast {
         ant.taskdef(name: 'junitreport',
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
@@ -249,8 +245,7 @@ task run_smv_tests(type: TestLanguages) { //, dependsOn: build_formal_languages)
 
 task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
-	script new File("$buildDir/scripts/build-safety-tests.xml")
+	script = new File("$buildDir/scripts/build-safety-tests.xml")
 	doLast {
         ant.taskdef(name: 'junitreport',
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
@@ -265,8 +260,7 @@ task run_safety_tests(type: TestLanguages) { //, dependsOn: build_formal_languag
 
 task run_all_tests(type: TestLanguages) { //, dependsOn: build_formal_languages) {
     description "Will execute all tests from command line"
-    print "mbeddr.formal.home = " + rootDir;
-	script new File("$buildDir/scripts/build-all-tests.xml")
+	script = new File("$buildDir/scripts/build-all-tests.xml")
 	doLast {
         ant.taskdef(name: 'junitreport',
                 classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
@@ -288,7 +282,7 @@ task package_formal(type: Zip, dependsOn: build_formal_languages) {
 }
 
 task build_assurance_languages(type: BuildLanguages, dependsOn: [build_allScripts]) {
-    script new File("$buildDir/scripts/build-assurance-languages.xml")
+    script = new File("$buildDir/scripts/build-assurance-languages.xml")
 }
 
 task package_assurance(type: Zip, dependsOn: build_assurance_languages) {
@@ -303,10 +297,10 @@ publishing {
     repositories {
         maven {
             url project.publishingRepository
-            if (project.hasProperty('nexusUsername')) {
+            if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
                 credentials {
-                    username project.nexusUsername
-                    password project.nexusPassword
+                    username project.getProperty('artifacts.itemis.cloud.user')
+                    password project.getProperty('artifacts.itemis.cloud.pw')
                 }
             }
         }
