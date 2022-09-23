@@ -176,7 +176,7 @@
   </node>
   <node concept="1M2fIO" id="cBoIpCTl84">
     <property role="3GE5qa" value="statements" />
-    <ref role="1M2myG" to="aggw:cBoIpCTl6L" resolve="SuitableODDStatement" />
+    <ref role="1M2myG" to="aggw:cBoIpCTl6L" resolve="SuitableWhenODDStatement" />
     <node concept="1N5Pfh" id="cBoIpCTl85" role="1Mr941">
       <ref role="1N5Vy1" to="aggw:cBoIpCTl80" resolve="attribute" />
       <node concept="3dgokm" id="cBoIpCTl9x" role="1N6uqs">

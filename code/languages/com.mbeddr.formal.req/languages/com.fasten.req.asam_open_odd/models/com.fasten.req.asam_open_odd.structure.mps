@@ -78,10 +78,7 @@
     <property role="EcuMT" value="4334402999003312332" />
     <property role="TrG5h" value="OddAttribute" />
     <property role="34LRSv" value="ODD Attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3KAT90sYJ3d" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+    <ref role="1TJDcQ" node="dewOy1Unut" resolve="ODDElement" />
     <node concept="1TJgyj" id="3KAT90sYJ3h" role="1TKVEi">
       <property role="IQ2ns" value="4334402999003312337" />
       <property role="20kJfa" value="isTypeOf" />
@@ -91,11 +88,6 @@
       <property role="IQ2ns" value="4334402999003319641" />
       <property role="20kJfa" value="source" />
       <ref role="20lvS9" node="3KAT90sYJ37" resolve="OddAttributesTaxonomy" />
-    </node>
-    <node concept="1TJgyi" id="2jtY4wYFdE2" role="1TKVEl">
-      <property role="IQ2nx" value="2656552344391309954" />
-      <property role="TrG5h" value="included" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="7rhGTfxmGDE" role="1TKVEi">
       <property role="IQ2ns" value="8561821814330411626" />
@@ -109,19 +101,11 @@
     <property role="EcuMT" value="2656552344391340799" />
     <property role="TrG5h" value="OddParameter" />
     <property role="34LRSv" value="ODD Parameter" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="dewOy1Unut" resolve="ODDElement" />
     <node concept="1TJgyj" id="7rhGTfxmGCV" role="1TKVEi">
       <property role="IQ2ns" value="8561821814330411579" />
       <property role="20kJfa" value="isTypeOf" />
       <ref role="20lvS9" node="2jtY4wYFlbZ" resolve="OddParameter" />
-    </node>
-    <node concept="PrWs8" id="2jtY4wYFlc0" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="7rhGTfxmGCZ" role="1TKVEl">
-      <property role="IQ2nx" value="8561821814330411583" />
-      <property role="TrG5h" value="included" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="7rhGTfxmGD1" role="1TKVEl">
       <property role="IQ2nx" value="8561821814330411585" />
@@ -176,6 +160,11 @@
       <property role="TrG5h" value="float" />
       <property role="1L1pqM" value="float" />
     </node>
+    <node concept="25R33" id="dewOy1UJA2" role="25R1y">
+      <property role="3tVfz5" value="238272177737759106" />
+      <property role="TrG5h" value="boolean" />
+      <property role="1L1pqM" value="boolean" />
+    </node>
   </node>
   <node concept="25R3W" id="7rhGTfxmGE6">
     <property role="3F6X1D" value="8561821814330411654" />
@@ -200,6 +189,46 @@
       <property role="TrG5h" value="milimetersPerHour" />
       <property role="1L1pqM" value="mm/h" />
     </node>
+    <node concept="25R33" id="dewOy1T9jV" role="25R1y">
+      <property role="3tVfz5" value="238272177737340155" />
+      <property role="TrG5h" value="meter" />
+      <property role="1L1pqM" value="m" />
+    </node>
+    <node concept="25R33" id="dewOy1T9k1" role="25R1y">
+      <property role="3tVfz5" value="238272177737340161" />
+      <property role="TrG5h" value="kilometer" />
+      <property role="1L1pqM" value="km" />
+    </node>
+    <node concept="25R33" id="dewOy1T9k8" role="25R1y">
+      <property role="3tVfz5" value="238272177737340168" />
+      <property role="TrG5h" value="feet" />
+      <property role="1L1pqM" value="ft" />
+    </node>
+    <node concept="25R33" id="dewOy1T9kg" role="25R1y">
+      <property role="3tVfz5" value="238272177737340176" />
+      <property role="TrG5h" value="landmile" />
+      <property role="1L1pqM" value="mile" />
+    </node>
+    <node concept="25R33" id="dewOy1T9kp" role="25R1y">
+      <property role="3tVfz5" value="238272177737340185" />
+      <property role="TrG5h" value="kilometersPerHour" />
+      <property role="1L1pqM" value="km/h" />
+    </node>
+    <node concept="25R33" id="dewOy1T9kz" role="25R1y">
+      <property role="3tVfz5" value="238272177737340195" />
+      <property role="TrG5h" value="kilogram" />
+      <property role="1L1pqM" value="kg" />
+    </node>
+    <node concept="25R33" id="dewOy1T9kI" role="25R1y">
+      <property role="3tVfz5" value="238272177737340206" />
+      <property role="TrG5h" value="percent" />
+      <property role="1L1pqM" value="%" />
+    </node>
+    <node concept="25R33" id="dewOy1T9kU" role="25R1y">
+      <property role="3tVfz5" value="238272177737340218" />
+      <property role="TrG5h" value="metricTons" />
+      <property role="1L1pqM" value="t" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7rhGTfxnG31">
     <property role="EcuMT" value="8561821814330671297" />
@@ -215,12 +244,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20kJfa" value="oddStatements" />
-      <ref role="20lvS9" node="7rhGTfxnG3$" resolve="OddStatementBase" />
+      <ref role="20lvS9" node="7rhGTfxnG3$" resolve="ODDStatementBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="7rhGTfxnG3$">
     <property role="EcuMT" value="8561821814330671332" />
-    <property role="TrG5h" value="OddStatementBase" />
+    <property role="TrG5h" value="ODDStatementBase" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="statements" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -231,9 +260,9 @@
   <node concept="1TIwiD" id="7rhGTfxnG3B">
     <property role="EcuMT" value="8561821814330671335" />
     <property role="TrG5h" value="IncludeOddStatement" />
-    <property role="34LRSv" value="Odd Include Statement" />
     <property role="3GE5qa" value="statements" />
-    <ref role="1TJDcQ" node="7rhGTfxnG3$" resolve="OddStatementBase" />
+    <property role="34LRSv" value="INCLUDE &lt;attributes taxonomy&gt;" />
+    <ref role="1TJDcQ" node="7rhGTfxnG3$" resolve="ODDStatementBase" />
     <node concept="1TJgyj" id="7rhGTfxnG3C" role="1TKVEi">
       <property role="IQ2ns" value="8561821814330671336" />
       <property role="20kJfa" value="includedAttributesTaxonomy" />
@@ -243,9 +272,10 @@
   </node>
   <node concept="1TIwiD" id="cBoIpCTl6L">
     <property role="EcuMT" value="227259047947358641" />
-    <property role="TrG5h" value="SuitableODDStatement" />
+    <property role="TrG5h" value="SuitableWhenODDStatement" />
     <property role="3GE5qa" value="statements" />
-    <ref role="1TJDcQ" node="7rhGTfxnG3$" resolve="OddStatementBase" />
+    <property role="34LRSv" value="SUITABLE WHEN &lt;condition&gt;" />
+    <ref role="1TJDcQ" node="7rhGTfxnG3$" resolve="ODDStatementBase" />
     <node concept="1TJgyj" id="cBoIpCTl80" role="1TKVEi">
       <property role="IQ2ns" value="227259047947358720" />
       <property role="20kJfa" value="attribute" />
@@ -254,7 +284,7 @@
     <node concept="1TJgyj" id="cBoIpCTw_K" role="1TKVEi">
       <property role="IQ2ns" value="227259047947405680" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exceptWhenOddParameters" />
+      <property role="20kJfa" value="whenOddParameters" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="cBoIpCTwy2" resolve="OddParameterRef" />
     </node>
@@ -271,6 +301,14 @@
       <property role="20kJfa" value="oddParameter" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2jtY4wYFlbZ" resolve="OddParameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="dewOy1Unut">
+    <property role="EcuMT" value="238272177737660317" />
+    <property role="TrG5h" value="ODDElement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="dewOy1Unuu" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

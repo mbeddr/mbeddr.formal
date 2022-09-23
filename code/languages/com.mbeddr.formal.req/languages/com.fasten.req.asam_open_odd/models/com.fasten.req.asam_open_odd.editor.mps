@@ -23,7 +23,6 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
-      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -61,9 +60,6 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
-    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -100,15 +96,6 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="3EZMnI" id="4q8AAJKJRwz" role="3EZMnx">
-        <node concept="l2Vlx" id="4q8AAJKJRw$" role="2iSdaV" />
-        <node concept="3F0ifn" id="4q8AAJKJRw_" role="3EZMnx">
-          <property role="3F0ifm" value="included:" />
-        </node>
-        <node concept="27S6Sx" id="4q8AAJKJRwA" role="3EZMnx">
-          <ref role="1NtTu8" to="aggw:2jtY4wYFdE2" resolve="included" />
         </node>
       </node>
       <node concept="3F0ifn" id="2jtY4wYFgTn" role="3EZMnx" />
@@ -269,7 +256,7 @@
   </node>
   <node concept="24kQdi" id="cBoIpCTwx5">
     <property role="3GE5qa" value="statements" />
-    <ref role="1XX52x" to="aggw:cBoIpCTl6L" resolve="SuitableODDStatement" />
+    <ref role="1XX52x" to="aggw:cBoIpCTl6L" resolve="SuitableWhenODDStatement" />
     <node concept="3EZMnI" id="cBoIpCTwx7" role="2wV5jI">
       <node concept="3F0ifn" id="cBoIpCTwxi" role="3EZMnx">
         <property role="3F0ifm" value="SUITABLE" />
@@ -284,11 +271,11 @@
         </node>
       </node>
       <node concept="3F0ifn" id="cBoIpCTwxF" role="3EZMnx">
-        <property role="3F0ifm" value="EXCEPT WHEN" />
+        <property role="3F0ifm" value="WHEN" />
       </node>
       <node concept="3F2HdR" id="cBoIpCTw_U" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="aggw:cBoIpCTw_K" resolve="exceptWhenOddParameters" />
+        <ref role="1NtTu8" to="aggw:cBoIpCTw_K" resolve="whenOddParameters" />
         <node concept="2iRfu4" id="cBoIpCTw_W" role="2czzBx" />
       </node>
       <node concept="2iRfu4" id="cBoIpCTwxa" role="2iSdaV" />

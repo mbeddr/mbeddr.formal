@@ -104,7 +104,7 @@
   </registry>
   <node concept="13h7C7" id="cBoIpCTNjt">
     <property role="3GE5qa" value="statements" />
-    <ref role="13h7C2" to="aggw:cBoIpCTl6L" resolve="SuitableODDStatement" />
+    <ref role="13h7C2" to="aggw:cBoIpCTl6L" resolve="SuitableWhenODDStatement" />
     <node concept="13hLZK" id="cBoIpCTNju" role="13h7CW">
       <node concept="3clFbS" id="cBoIpCTNjv" role="2VODD2" />
     </node>
