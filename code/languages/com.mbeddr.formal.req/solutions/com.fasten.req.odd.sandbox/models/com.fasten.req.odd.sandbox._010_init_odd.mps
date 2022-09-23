@@ -14,6 +14,9 @@
   </imports>
   <registry>
     <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
+      <concept id="1743143573359941966" name="com.fasten.req.odd.structure.IODDParameterDimensionLike" flags="ng" index="MFNEm">
+        <child id="4312077340877644477" name="alternatives" index="3SOB73" />
+      </concept>
       <concept id="4464095630345135492" name="com.fasten.req.odd.structure.PlainTextExpression" flags="ng" index="3fUWbm">
         <property id="4464095630345135493" name="text" index="3fUWbn" />
       </concept>
@@ -32,6 +35,13 @@
         <child id="4464095630344420298" name="constraint" index="3fZHMo" />
         <child id="4464095630344420296" name="conceptRef" index="3fZHMq" />
       </concept>
+      <concept id="4312077340877623858" name="com.fasten.req.odd.structure.ODDAttributeDimension" flags="ng" index="3SOw5c" />
+      <concept id="4312077340877644469" name="com.fasten.req.odd.structure.DimensionAlternative" flags="ng" index="3SOB7b">
+        <property id="2976078900098330226" name="included" index="3QE4Af" />
+      </concept>
+      <concept id="4312077340877618333" name="com.fasten.req.odd.structure.ODDAttribute" flags="ng" index="3SOIZz">
+        <child id="4312077340877624469" name="dimensions" index="3SOwvF" />
+      </concept>
       <concept id="4312077340877618330" name="com.fasten.req.odd.structure.ODD" flags="ng" index="3SOIZ$">
         <child id="4312077340877618359" name="content" index="3SOIZ9" />
       </concept>
@@ -49,6 +59,37 @@
   </registry>
   <node concept="3SOIZ$" id="3Jn$RV31p8J">
     <property role="TrG5h" value="first_odd" />
+    <node concept="3SOIZz" id="dewOy1VvSU" role="3SOIZ9">
+      <property role="TrG5h" value="Pedestrian" />
+      <node concept="3SOw5c" id="dewOy1VvTk" role="3SOwvF">
+        <property role="TrG5h" value="gender" />
+        <node concept="3SOB7b" id="dewOy1VvTm" role="3SOB73">
+          <property role="TrG5h" value="female" />
+          <property role="3QE4Af" value="true" />
+        </node>
+        <node concept="3SOB7b" id="dewOy1VvT$" role="3SOB73">
+          <property role="TrG5h" value="male" />
+          <property role="3QE4Af" value="true" />
+        </node>
+      </node>
+      <node concept="3SOw5c" id="dewOy1VvTG" role="3SOwvF">
+        <property role="TrG5h" value="height" />
+        <node concept="3SOB7b" id="dewOy1VvTW" role="3SOB73">
+          <property role="TrG5h" value="100-120" />
+        </node>
+        <node concept="3SOB7b" id="dewOy1VvTY" role="3SOB73">
+          <property role="TrG5h" value="120-140" />
+        </node>
+        <node concept="3SOB7b" id="dewOy1VvU1" role="3SOB73">
+          <property role="TrG5h" value="150-170" />
+          <property role="3QE4Af" value="true" />
+        </node>
+        <node concept="3SOB7b" id="dewOy1VvU5" role="3SOB73">
+          <property role="TrG5h" value="170-200" />
+          <property role="3QE4Af" value="true" />
+        </node>
+      </node>
+    </node>
     <node concept="3fY04A" id="5hctYtavRSk" role="3SOIZ9">
       <ref role="3fY04_" to="sqn2:7gUa1Zsx7gl" resolve="czarnecki_operational_world_model_for_ads" />
       <node concept="3fWYEE" id="5hctYtavRTf" role="3fY04B">
