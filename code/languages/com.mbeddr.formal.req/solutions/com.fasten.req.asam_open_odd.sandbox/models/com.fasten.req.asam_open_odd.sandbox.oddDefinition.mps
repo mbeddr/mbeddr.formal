@@ -8,7 +8,6 @@
   <imports />
   <registry>
     <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
-      <concept id="7842584090743943169" name="com.mbeddr.formal.base.expressions.structure.Expression" flags="ng" index="2He$iG" />
       <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
         <property id="7842584090745356593" name="value" index="2IPVms" />
       </concept>
@@ -43,59 +42,146 @@
       <concept id="227259047947405442" name="com.fasten.req.asam_open_odd.structure.OddParameterRef" flags="ng" index="1FKmD$">
         <reference id="227259047947405443" name="oddParameter" index="1FKmD_" />
       </concept>
-      <concept id="227259047947358641" name="com.fasten.req.asam_open_odd.structure.SuitableODDStatement" flags="ng" index="1FKzdn">
+      <concept id="227259047947358641" name="com.fasten.req.asam_open_odd.structure.SuitableWhenODDStatement" flags="ng" index="1FKzdn">
         <reference id="227259047947358720" name="attribute" index="1FKz3A" />
-        <child id="227259047947405680" name="exceptWhenOddParameters" index="1FKmIm" />
+        <child id="227259047947405680" name="whenOddParameters" index="1FKmIm" />
       </concept>
     </language>
   </registry>
   <node concept="wR1hn" id="3KAT90sYKP7">
     <property role="TrG5h" value="Examplary ODD Attributes" />
-    <node concept="wR1hs" id="3KAT90sYNGW" role="wR1hv">
-      <property role="TrG5h" value="Weather" />
-    </node>
-    <node concept="wR1hs" id="3KAT90sYKP8" role="wR1hv">
-      <property role="TrG5h" value="Precipitation" />
-      <ref role="wR1h1" node="3KAT90sYNGW" resolve="Weather" />
-    </node>
     <node concept="wR1hs" id="3KAT90sYKPa" role="wR1hv">
       <property role="TrG5h" value="Rainfall" />
-      <ref role="wR1h1" node="3KAT90sYKP8" resolve="Precipitation" />
       <ref role="wRuB9" node="2jtY4wYFdE0" resolve="BSI PAS 1883" />
-      <node concept="qsaER" id="7rhGTfxmYdy" role="2nyRBT">
-        <property role="TrG5h" value="Rainfall_Rate" />
-        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
-        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
-      </node>
-      <node concept="qsaER" id="7rhGTfxnG2w" role="2nyRBT">
-        <property role="TrG5h" value="Light_Rainfall_Rate" />
-        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
-        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
-        <ref role="2nyRAC" node="7rhGTfxmYdy" resolve="Rainfall_Rate" />
-        <node concept="2He$iG" id="an1ndITQDt" role="1GsJE7" />
-      </node>
-      <node concept="qsaER" id="an1ndITQDv" role="2nyRBT">
-        <node concept="2IPVmt" id="cBoIpCTb5H" role="1GsJ67">
-          <property role="2IPVms" value="2.0" />
-        </node>
-        <node concept="2IPVmt" id="cBoIpCTb5N" role="1GsJE7">
-          <property role="2IPVms" value="4.0" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="wR1hn" id="2jtY4wYFdE0">
     <property role="TrG5h" value="BSI PAS 1883" />
+    <node concept="wR1hs" id="dewOy1TFTK" role="wR1hv">
+      <property role="TrG5h" value="EnvironmentalConditions" />
+    </node>
+    <node concept="wR1hs" id="dewOy1TFTM" role="wR1hv">
+      <property role="TrG5h" value="Weather" />
+      <ref role="wR1h1" node="dewOy1TFTK" resolve="EnvironmentalConditions" />
+    </node>
+    <node concept="wR1hs" id="dewOy1TFUs" role="wR1hv">
+      <property role="TrG5h" value="Rainfall" />
+      <ref role="wR1h1" node="dewOy1TFTM" resolve="Weather" />
+      <node concept="qsaER" id="dewOy1TFUC" role="2nyRBT">
+        <property role="TrG5h" value="rain rate" />
+        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
+        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
+      </node>
+      <node concept="qsaER" id="dewOy1U7Oy" role="2nyRBT">
+        <property role="TrG5h" value="light rain" />
+        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
+        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
+        <ref role="2nyRAC" node="dewOy1TFUC" resolve="rain rate" />
+        <node concept="2IPVmt" id="dewOy1U7OG" role="1GsJ67">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="dewOy1U7OM" role="1GsJE7">
+          <property role="2IPVms" value="2.5" />
+        </node>
+      </node>
+      <node concept="qsaER" id="dewOy1UJy5" role="2nyRBT">
+        <property role="TrG5h" value="moderate rain" />
+        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
+        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
+        <ref role="2nyRAC" node="dewOy1TFUC" resolve="rain rate" />
+        <node concept="2IPVmt" id="dewOy1UJyi" role="1GsJ67">
+          <property role="2IPVms" value="2.5" />
+        </node>
+        <node concept="2IPVmt" id="dewOy1UJyo" role="1GsJE7">
+          <property role="2IPVms" value="7.6" />
+        </node>
+      </node>
+      <node concept="qsaER" id="dewOy1TFVN" role="2nyRBT">
+        <property role="TrG5h" value="heavy rain" />
+        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
+        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
+        <ref role="2nyRAC" node="dewOy1TFUC" resolve="rain rate" />
+        <node concept="2IPVmt" id="dewOy1TFVU" role="1GsJ67">
+          <property role="2IPVms" value="7.6" />
+        </node>
+        <node concept="2IPVmt" id="dewOy1TFW0" role="1GsJE7">
+          <property role="2IPVms" value="50" />
+        </node>
+      </node>
+      <node concept="qsaER" id="dewOy1UJyq" role="2nyRBT">
+        <property role="TrG5h" value="violent rain" />
+        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
+        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
+        <ref role="2nyRAC" node="dewOy1TFUC" resolve="rain rate" />
+        <node concept="2IPVmt" id="dewOy1UJyE" role="1GsJ67">
+          <property role="2IPVms" value="50" />
+        </node>
+        <node concept="2IPVmt" id="dewOy1UJyK" role="1GsJE7">
+          <property role="2IPVms" value="100" />
+        </node>
+      </node>
+      <node concept="qsaER" id="dewOy1UJyM" role="2nyRBT">
+        <property role="TrG5h" value="cloud burst" />
+        <property role="2nyRBi" value="7rhGTfxmGE2/float" />
+        <property role="2nyRBn" value="7rhGTfxmGEf/milimetersPerHour" />
+        <ref role="2nyRAC" node="dewOy1TFUC" resolve="rain rate" />
+        <node concept="2IPVmt" id="dewOy1UJz5" role="1GsJ67">
+          <property role="2IPVms" value="100" />
+        </node>
+      </node>
+    </node>
+    <node concept="wR1hs" id="dewOy1TFUE" role="wR1hv">
+      <property role="TrG5h" value="Scenery" />
+    </node>
+    <node concept="wR1hs" id="dewOy1TFUS" role="wR1hv">
+      <property role="TrG5h" value="Drivable area" />
+    </node>
+    <node concept="wR1hs" id="dewOy1TFV7" role="wR1hv">
+      <property role="TrG5h" value="Drivable area type" />
+      <ref role="wR1h1" node="dewOy1TFUS" resolve="Drivable area" />
+    </node>
+    <node concept="wR1hs" id="dewOy1TFVn" role="wR1hv">
+      <property role="TrG5h" value="Motorway" />
+      <ref role="wR1h1" node="dewOy1TFV7" resolve="Drivable area type" />
+      <node concept="qsaER" id="dewOy1UJ_Y" role="2nyRBT">
+        <property role="TrG5h" value="active traffic management" />
+        <property role="2nyRBi" value="dewOy1UJA2/boolean" />
+      </node>
+    </node>
+    <node concept="wR1hs" id="dewOy1UJzt" role="wR1hv">
+      <property role="TrG5h" value="Radial roads" />
+      <ref role="wR1h1" node="dewOy1TFV7" resolve="Drivable area type" />
+    </node>
+    <node concept="wR1hs" id="dewOy1UJzP" role="wR1hv">
+      <property role="TrG5h" value="Distributor roads" />
+      <ref role="wR1h1" node="dewOy1TFV7" resolve="Drivable area type" />
+    </node>
+    <node concept="wR1hs" id="dewOy1UJ$e" role="wR1hv">
+      <property role="TrG5h" value="Minor roads" />
+      <ref role="wR1h1" node="dewOy1TFV7" resolve="Drivable area type" />
+    </node>
+    <node concept="wR1hs" id="dewOy1UJ$E" role="wR1hv">
+      <property role="TrG5h" value="Slip roads" />
+      <ref role="wR1h1" node="dewOy1TFV7" resolve="Drivable area type" />
+    </node>
+    <node concept="wR1hs" id="dewOy1UJ_5" role="wR1hv">
+      <property role="TrG5h" value="Parking" />
+      <ref role="wR1h1" node="dewOy1TFV7" resolve="Drivable area type" />
+    </node>
+    <node concept="wR1hs" id="dewOy1UJ_x" role="wR1hv">
+      <property role="TrG5h" value="Shared space" />
+      <ref role="wR1h1" node="dewOy1TFV7" resolve="Drivable area type" />
+    </node>
   </node>
   <node concept="2nzRdi" id="cBoIpCTl6I">
     <property role="TrG5h" value="Exemplary ODD Specification" />
     <node concept="2nzRdO" id="cBoIpCTl6J" role="2nzRdT">
-      <ref role="2nzRdV" node="3KAT90sYKP7" resolve="Examplary ODD Attributes" />
+      <ref role="2nzRdV" node="2jtY4wYFdE0" resolve="BSI PAS 1883" />
     </node>
-    <node concept="1FKzdn" id="cBoIpCTNjn" role="2nzRdT">
-      <ref role="1FKz3A" node="3KAT90sYKPa" resolve="Rainfall" />
-      <node concept="1FKmD$" id="cBoIpCTS9$" role="1FKmIm">
-        <ref role="1FKmD_" node="7rhGTfxnG2w" resolve="Light_Rainfall_Rate" />
+    <node concept="1FKzdn" id="dewOy1UJxT" role="2nzRdT">
+      <ref role="1FKz3A" node="dewOy1TFUs" resolve="Rainfall" />
+      <node concept="1FKmD$" id="dewOy1UJxY" role="1FKmIm">
+        <ref role="1FKmD_" node="dewOy1U7Oy" resolve="light rain" />
       </node>
     </node>
   </node>
