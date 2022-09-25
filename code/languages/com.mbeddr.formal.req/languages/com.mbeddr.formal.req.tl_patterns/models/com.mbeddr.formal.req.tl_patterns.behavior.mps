@@ -84,6 +84,7 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -1347,11 +1348,14 @@
                 <node concept="Xl_RD" id="6BEEv9htBSC" role="3uHU7B">
                   <property role="Xl_RC" value="with a probability " />
                 </node>
-                <node concept="2OqwBi" id="6BEEv9htBJq" role="3uHU7w">
-                  <node concept="13iPFW" id="6BEEv9htB_F" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="6BEEv9htC3y" role="2OqNvi">
-                    <ref role="3Tt5mk" to="yyq9:6BEEv9htjWL" resolve="bound" />
+                <node concept="2OqwBi" id="5qMf5MQN_L4" role="3uHU7w">
+                  <node concept="2OqwBi" id="6BEEv9htBJq" role="2Oq$k0">
+                    <node concept="13iPFW" id="6BEEv9htB_F" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="6BEEv9htC3y" role="2OqNvi">
+                      <ref role="3Tt5mk" to="yyq9:6BEEv9htjWL" resolve="bound" />
+                    </node>
                   </node>
+                  <node concept="2Iv5rx" id="5qMf5MQN_L5" role="2OqNvi" />
                 </node>
               </node>
               <node concept="Xl_RD" id="6BEEv9htCtO" role="3uHU7w">
