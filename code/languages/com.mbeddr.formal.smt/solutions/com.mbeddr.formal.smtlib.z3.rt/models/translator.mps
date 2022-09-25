@@ -4,7 +4,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
@@ -192,6 +192,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -1315,8 +1316,11 @@
         <node concept="RRSsy" id="7xXCuh1_qXW" role="3cqZAp">
           <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="7xXCuh1_tue" role="RRSoy">
-            <node concept="37vLTw" id="7xXCuh1_uAg" role="3uHU7w">
-              <ref role="3cqZAo" node="104dc5E4T93" resolve="exp" />
+            <node concept="2OqwBi" id="5qMf5MQQdNK" role="3uHU7w">
+              <node concept="37vLTw" id="7xXCuh1_uAg" role="2Oq$k0">
+                <ref role="3cqZAo" node="104dc5E4T93" resolve="exp" />
+              </node>
+              <node concept="2Iv5rx" id="5qMf5MQQdNL" role="2OqNvi" />
             </node>
             <node concept="Xl_RD" id="7xXCuh1_qXY" role="3uHU7B">
               <property role="Xl_RC" value="translating: " />

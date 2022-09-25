@@ -142,6 +142,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -282,8 +283,11 @@
         <node concept="RRSsy" id="104dc5EipEs" role="3cqZAp">
           <property role="RRSoG" value="gZ5frni/trace" />
           <node concept="3cpWs3" id="6cjunGyxSRV" role="RRSoy">
-            <node concept="37vLTw" id="6cjunGyxT4F" role="3uHU7w">
-              <ref role="3cqZAo" node="104dc5Eg9zJ" resolve="cmd" />
+            <node concept="2OqwBi" id="5qMf5MQQdiK" role="3uHU7w">
+              <node concept="37vLTw" id="6cjunGyxT4F" role="2Oq$k0">
+                <ref role="3cqZAo" node="104dc5Eg9zJ" resolve="cmd" />
+              </node>
+              <node concept="2Iv5rx" id="5qMf5MQQdiL" role="2OqNvi" />
             </node>
             <node concept="Xl_RD" id="104dc5EipEu" role="3uHU7B">
               <property role="Xl_RC" value="entered translator for command " />
