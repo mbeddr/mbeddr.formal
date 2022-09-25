@@ -4,7 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -273,7 +273,7 @@
                 <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
               </node>
               <node concept="2YIFZM" id="1noKC0JQ_pB" role="33vP2m">
-                <ref role="37wK5l" to="2y64:1fyC0RHInUp" resolve="getMPSProjectFrom" />
+                <ref role="37wK5l" to="2y64:1fyC0RHInUp" resolve="getMPSProjectForNode" />
                 <ref role="1Pybhc" to="2y64:1fyC0RHIfK6" resolve="ProjectHelper" />
                 <node concept="1YBJjd" id="1noKC0JQ_yS" role="37wK5m">
                   <ref role="1YBMHb" node="3f8ZVRYfNzK" resolve="containerForEntitiesWithPrefixedNames" />
