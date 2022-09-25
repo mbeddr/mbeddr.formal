@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -222,6 +222,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -755,8 +756,11 @@
               <node concept="2xdQw9" id="6XKrTzkuGQT" role="3cqZAp">
                 <property role="2xdLsb" value="gZ5fh_4/error" />
                 <node concept="3cpWs3" id="6XKrTzkuH86" role="9lYJi">
-                  <node concept="37vLTw" id="6XKrTzkuHaK" role="3uHU7w">
-                    <ref role="3cqZAo" node="6XKrTzkry3o" resolve="goal" />
+                  <node concept="2OqwBi" id="5qMf5MQW9O5" role="3uHU7w">
+                    <node concept="37vLTw" id="6XKrTzkuHaK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6XKrTzkry3o" resolve="goal" />
+                    </node>
+                    <node concept="2Iv5rx" id="5qMf5MQW9O6" role="2OqNvi" />
                   </node>
                   <node concept="Xl_RD" id="6XKrTzkuGQV" role="3uHU7B">
                     <property role="Xl_RC" value="goal " />
