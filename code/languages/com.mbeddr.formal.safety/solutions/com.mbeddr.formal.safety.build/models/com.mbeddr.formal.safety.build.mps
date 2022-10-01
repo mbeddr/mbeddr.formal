@@ -9691,6 +9691,105 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="6VBHnHRiYOJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.xml_gen" />
+        <property role="3LESm3" value="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" />
+        <node concept="398BVA" id="6VBHnHRiZ47" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="6VBHnHRiZhB" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6VBHnHRiZGw" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.xml_gen" />
+              <node concept="2Ry0Ak" id="6VBHnHRiZTZ" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.xml_gen.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="6VBHnHRj0eo" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6VBHnHRj0ep" role="1HemKq">
+            <node concept="398BVA" id="6VBHnHRj0ed" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="6VBHnHRj0ee" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6VBHnHRj0ef" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.xml_gen" />
+                  <node concept="2Ry0Ak" id="6VBHnHRj0eg" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6VBHnHRj0eq" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6VBHnHRj0pX" role="3bR31x">
+          <node concept="3LXTmp" id="6VBHnHRj0pY" role="3rtmxm">
+            <node concept="398BVA" id="6VBHnHRj0pZ" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="6VBHnHRj0q0" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="6VBHnHRj0q1" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.modelquery" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6VBHnHRj0q2" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="6VBHnHRj0er" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.xml_gen.generator" />
+          <property role="3LESm3" value="ee6eeaae-ffd5-470a-941e-cd79223a6a02" />
+          <node concept="1SiIV0" id="6VBHnHRj0es" role="3bR37C">
+            <node concept="3bR9La" id="6VBHnHRj0et" role="1SiIV1">
+              <ref role="3bR37D" node="7he_lUury9o" resolve="com.mbeddr.formal.safety.gsn" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6VBHnHRj0eu" role="3bR37C">
+            <node concept="3bR9La" id="6VBHnHRj0ev" role="1SiIV1">
+              <ref role="3bR37D" node="7he_lUurzLh" resolve="com.mbeddr.formal.safety.gsn.ext" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6VBHnHRj0ew" role="3bR37C">
+            <node concept="3bR9La" id="6VBHnHRj0ex" role="1SiIV1">
+              <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+            </node>
+          </node>
+          <node concept="1BupzO" id="6VBHnHRj0eJ" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="6VBHnHRj0eK" role="1HemKq">
+              <node concept="398BVA" id="6VBHnHRj0ey" role="3LXTmr">
+                <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+                <node concept="2Ry0Ak" id="6VBHnHRj0ez" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="6VBHnHRj0e$" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.xml_gen" />
+                    <node concept="2Ry0Ak" id="6VBHnHRj0e_" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="6VBHnHRj0eA" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="6VBHnHRj0eL" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1X3_iC" id="1FMyjUPhIJF" role="lGtFl">
         <property role="3V$3am" value="modules" />
         <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/1500819558095907805/1500819558095907806" />
@@ -12154,6 +12253,9 @@
         </node>
         <node concept="3LEDTy" id="y1G8y6bbjZ" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="6VBHnHRj2CU" role="3LEDUa">
+          <ref role="3LEDTV" node="6VBHnHRiYOJ" resolve="com.mbeddr.formal.safety.gsn.xml_gen" />
         </node>
       </node>
     </node>

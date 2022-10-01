@@ -42,6 +42,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.patterns/com.mbeddr.formal.safety.gsn.patterns.mpl" folder="gsn._100_checkable_patterns" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.smv/com.mbeddr.formal.safety.gsn.smv.mpl" folder="gsn._100_checkable_patterns" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.web/com.mbeddr.formal.safety.gsn.web.mpl" folder="gsn._110_web" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.xml_gen/com.mbeddr.formal.safety.gsn.xml_gen.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn/com.mbeddr.formal.safety.gsn.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.hara/com.mbeddr.formal.safety.hara.mpl" folder="hara" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.iso26262/com.mbeddr.formal.safety.iso26262.mpl" folder="hara.iso26262" />
