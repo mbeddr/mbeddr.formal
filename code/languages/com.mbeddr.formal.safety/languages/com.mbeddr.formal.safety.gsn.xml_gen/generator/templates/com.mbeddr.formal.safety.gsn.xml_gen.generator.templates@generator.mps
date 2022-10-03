@@ -78,10 +78,12 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
+      <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+        <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
       <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
         <reference id="1168285871518" name="applicableConcept" index="3gUMe" />
@@ -119,7 +121,9 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -146,8 +150,22 @@
   <node concept="bUwia" id="6VBHnHRhA_Y">
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="6VBHnHRiWhd" role="3lj3bC">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
       <ref role="3lhOvi" node="6VBHnHRhCJo" resolve="goal_structure_2_xml_file" />
+      <node concept="30G5F_" id="6VBHnHRmzKE" role="30HLyM">
+        <node concept="3clFbS" id="6VBHnHRmzKF" role="2VODD2">
+          <node concept="3clFbF" id="6VBHnHRmzO_" role="3cqZAp">
+            <node concept="2OqwBi" id="6VBHnHRm$B7" role="3clFbG">
+              <node concept="2OqwBi" id="6VBHnHRm$75" role="2Oq$k0">
+                <node concept="30H73N" id="6VBHnHRmzO$" role="2Oq$k0" />
+                <node concept="1mfA1w" id="6VBHnHRm$tS" role="2OqNvi" />
+              </node>
+              <node concept="3w_OXm" id="6VBHnHRm$IW" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2pMbU2" id="6VBHnHRhCJo">

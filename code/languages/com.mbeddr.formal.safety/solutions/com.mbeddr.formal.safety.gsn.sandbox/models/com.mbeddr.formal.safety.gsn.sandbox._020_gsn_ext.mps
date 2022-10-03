@@ -6,6 +6,7 @@
     <use id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext" version="2" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
+    <use id="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" name="com.mbeddr.formal.safety.gsn.xml_gen" version="0" />
   </languages>
   <imports />
   <registry>
@@ -34,6 +35,9 @@
       </concept>
       <concept id="1629165016568013899" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternDefinition" flags="ng" index="1VB52S" />
     </language>
+    <language id="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" name="com.mbeddr.formal.safety.gsn.xml_gen">
+      <concept id="7991555605679066221" name="com.mbeddr.formal.safety.gsn.xml_gen.structure.GenerateGoalStructure2XML" flags="ng" index="pFZ$m" />
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -44,6 +48,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1348,6 +1353,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="pFZ$m" id="6VBHnHRib32">
+    <property role="3GE5qa" value="config" />
   </node>
 </model>
 
