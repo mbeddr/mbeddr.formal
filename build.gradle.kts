@@ -147,6 +147,7 @@ val buildScriptClasspath = project.configurations["antLib"] +
 
 val artifactsDir = file("$buildDir/artifacts")
 val dependenciesDir = file("$buildDir/dependencies")
+val jdkDir = file("$buildDir/jdkDir")
 
 
 // ___________________ utilities ___________________
@@ -283,6 +284,39 @@ tasks {
         archiveBaseName.set("fasten.assurance")
         from(artifactsDir)
         include("fasten.assurance.languages/**")
+    }
+
+    val resolveJBR_Win by registering(Copy::class) {
+        from(configurations["jbrWin"])
+        into(jdkDir)
+        rename { filename ->
+            val resolvedArtifact = configurations["jbrWin"].resolvedConfiguration.resolvedArtifacts.find { ra -> ra.file.name == filename }!!
+            resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+        }
+    }
+
+    val unpackDistribution by registering(Copy::class) {
+        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-$major.$minor-SNAPSHOT.zip"))
+        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
+    }
+
+    val deleteJBR by registering(Delete::class) {
+        dependsOn(unpackDistribution)
+        delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-$major.$minor-SNAPSHOT/jbr")
+    }
+
+    val removeJBR by registering(Zip::class) {
+        dependsOn(deleteJBR)
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-$major.$minor-SNAPSHOT")
+        archiveFileName.set("fasten-$major.$minor-SNAPSHOT_with_removed_JBR.zip")
+        destinationDirectory.set(file("$artifactsDir/com.mbeddr.formal.safetyDistribution"))
+    }
+
+    val package_fasten_safety_distribution_win by registering(Zip::class) {
+        dependsOn(resolveJBR_Win, build_fasten_safety_distribution, removeJBR)
+        archiveBaseName.set("fasten-$major.$minor-SNAPSHOT-Win")
+        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-$major.$minor-SNAPSHOT_with_removed_JBR.zip"))
+        from(tarTree("$jdkDir/jbr-windows-x64.tgz"))
     }
 
     assemble { dependsOn(package_formal) }

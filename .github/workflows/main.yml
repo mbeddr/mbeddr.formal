@@ -33,7 +33,7 @@ jobs:
     - name: Build FASTEN
       uses: gradle/gradle-build-action@v1.3.3
       with: 
-        arguments: -b build_ci_github.gradle package_fasten_safety_distribution_win -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        arguments: package_fasten_safety_distribution_win -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
