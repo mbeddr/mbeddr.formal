@@ -315,7 +315,7 @@ tasks {
         dependsOn(resolveJBR_Win, build_fasten_safety_distribution, removeJBR)
         archiveBaseName.set("fasten-$major.$minor-SNAPSHOT-Win")
         from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-$major.$minor-SNAPSHOT_with_removed_JBR.zip"))
-        from(tarTree("$jdkDir/jbr-windows-x64.tgz"))
+        from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
     }
 
     assemble { dependsOn(package_formal) }
