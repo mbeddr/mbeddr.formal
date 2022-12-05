@@ -19,8 +19,6 @@ jobs:
 
     - name: Set up Gradle
       run: |
-        chmod +x ./gradlew
-        chmod +x ./rcp_resources/external_tools/nusmv
         echo "$(pwd)/rcp_resources/external_tools" >> $GITHUB_PATH
         
     - name: Setup headless environment
