@@ -127,7 +127,7 @@ jobs:
     - name: Build FASTEN Assurance Distribution
       uses: gradle/gradle-build-action@v1.3.3
       with: 
-        arguments: -b build_fasten_assurance.gradle package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        arguments: package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**

@@ -318,7 +318,7 @@ tasks {
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
     }
 
-    assemble { dependsOn(package_formal) }
+    assemble { dependsOn(package_formal, package_assurance) }
 
     val cleanMps by registering(Delete::class) {
         delete(fileTree(projectDir) { include("**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**") })
