@@ -4,11 +4,9 @@ import java.util.Date
 
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
-    repositories {
-        maven("https://artifacts.itemis.cloud/repository/maven-mps")
-    }
     dependencies {
-        classpath("de.itemis.mps:mps-gradle-plugin:2.0.+")
+        // Version must match download-jbr plugin below
+        classpath("de.itemis.mps:mps-gradle-plugin:1.11.+")
     }
 
     dependencyLocking { lockAllConfigurations() }
@@ -18,13 +16,14 @@ plugins {
     base
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
-    id("download-jbr") version "latest.release"
+    // Version must match buildscript mps-gradle-plugin dependency above
+    id("download-jbr") version "1.11.+"
 }
 
 val jbrVers = "11_0_11-b1341.60"
 
 downloadJbr {
-    jbrVersion.set(jbrVers)
+    jbrVersion = jbrVers
 }
 
 // detect if we are in a CI build
@@ -174,7 +173,7 @@ tasks {
         doLast {
             extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D$it.key=$it.value".toString() }
             extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-            extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = downloadJbr.get().javaExecutable.get()
+            extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = downloadJbr.get().javaExecutable
         }
     }
 
@@ -199,22 +198,22 @@ tasks {
 
     val build_allScripts by registering(BuildLanguages::class) {
         dependsOn(resolveMps, resolveLanguageLibs)
-        script.set("$buildDir/scripts/build_all_scripts.xml")
+        script = "$buildDir/scripts/build_all_scripts.xml"
     }
 
     val build_formal_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
-        script.set("$buildDir/scripts/build-formal-languages.xml")
+        script = "$buildDir/scripts/build-formal-languages.xml"
     }
 
     val build_fasten_safety_distribution by registering(BuildLanguages::class) {
         dependsOn(build_formal_languages)
-        script.set("$buildDir/scripts/build-fasten-safe-distribution.xml")
+        script = "$buildDir/scripts/build-fasten-safe-distribution.xml"
     }
 
     val run_smv_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script.set("$buildDir/scripts/build-nusmv-tests.xml")
+        script = "$buildDir/scripts/build-nusmv-tests.xml"
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
@@ -231,7 +230,7 @@ tasks {
 
     val run_safety_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script.set("$buildDir/scripts/build-safety-tests.xml")
+        script = "$buildDir/scripts/build-safety-tests.xml"
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
@@ -248,7 +247,7 @@ tasks {
 
     val run_all_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script.set("$buildDir/scripts/build-all-tests.xml")
+        script = "$buildDir/scripts/build-all-tests.xml"
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
@@ -276,7 +275,7 @@ tasks {
 
     val build_assurance_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
-        script.set("$buildDir/scripts/build-assurance-languages.xml")
+        script = "$buildDir/scripts/build-assurance-languages.xml"
     }
 
     val package_assurance by registering(Zip::class) {
