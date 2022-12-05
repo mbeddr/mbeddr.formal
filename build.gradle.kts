@@ -162,7 +162,7 @@ val defaultScriptArgs = mapOf(
 )
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D$it.key=$it.value".toString() }
+extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
 extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
 extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = File(jdk_home, "bin/java")
 
@@ -171,7 +171,7 @@ tasks {
         val downloadJbr = named("downloadJbr", DownloadJbrForPlatform::class)
         dependsOn(downloadJbr)
         doLast {
-            extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D$it.key=$it.value".toString() }
+            extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
             extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
             extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = downloadJbr.get().javaExecutable
         }
