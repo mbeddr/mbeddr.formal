@@ -44,7 +44,7 @@ jobs:
     - name: Check Consistency of the FASTEN-NuSMV Tutorial 
       uses: gradle/gradle-build-action@v1.3.3
       with:
-        arguments: -b check_tutorial_nusmv.gradle 
+        arguments: -PcheckProject=nusmv
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
@@ -54,7 +54,7 @@ jobs:
     - name: Check Consistency of the FASTEN-Safety Tutorial
       uses: gradle/gradle-build-action@v1.3.3
       with:
-        arguments: -b check_tutorial_safety.gradle
+        arguments: -PcheckProject=safety
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**

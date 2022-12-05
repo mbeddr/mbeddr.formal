@@ -1,5 +1,7 @@
 import de.itemis.mps.gradle.*
 import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
+import de.itemis.mps.gradle.modelcheck.ModelCheckPluginExtensions
+import de.itemis.mps.gradle.modelcheck.ModelcheckMpsProjectPlugin
 import java.util.Date
 
 //will pull the groovy classes/types from nexus to the classpath
@@ -16,6 +18,7 @@ plugins {
     base
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
+
     // Version must match buildscript mps-gradle-plugin dependency above
     id("download-jbr") version "1.11.+"
 }
@@ -325,10 +328,6 @@ tasks {
     }
 
     //clean { dependsOn(cleanMps) }
-
-
-    defaultTasks(build_formal_languages.name)
-
     val rebuild by registering { dependsOn(clean, build_formal_languages) }
 }
 
@@ -402,4 +401,50 @@ publishing {
             }
         }
     }
+}
+
+enum class ProjectToCheck(val projectDirectory: String, val module: String) {
+    SAFETY("tutorial-safety", "com.mbeddr.formal.safety.tutorial"),
+    NUSMV("tutorial", "com.mbeddr.formal.nusmv.tutorial")
+}
+
+val projectToCheck = (project.findProperty("checkProject") as String?)?.let { ProjectToCheck.valueOf(it.toUpperCase()) }
+
+if (projectToCheck != null) {
+    apply<ModelcheckMpsProjectPlugin>()
+
+    val pluginsProvider = provider {
+        val result = mutableListOf<de.itemis.mps.gradle.Plugin>()
+        File("$buildDir/dependencies/com.mbeddr.platform").listFiles().forEach {
+            if (it.isDirectory) {
+                result.add(Plugin(it.name, it.absolutePath))
+            }
+        }
+
+        File("$buildDir/artifacts/com.mbeddr.formal.languages").listFiles().forEach {
+            if (it.isDirectory) {
+                result.add(Plugin(it.name, it.absolutePath))
+            }
+        }
+
+        result
+    }
+
+
+    configure<ModelCheckPluginExtensions> {
+        mpsLocation = File("$buildDir/mps")
+        macros = listOf(Macro("mbeddr.formal.home", "$projectDir"))
+        pluginsProperty.set(pluginsProvider)
+        projectLocation = File("$projectDir/code/${projectToCheck.projectDirectory}/")
+        mpsConfig = configurations["mps"]
+        junitFile = File("$buildDir/TEST-${projectToCheck.name.toLowerCase()}-modelcheckresult.xml")
+        errorNoFail = true
+        debug = false
+        maxHeap = "3G"
+        modules = listOf(projectToCheck.module)
+    }
+
+    defaultTasks("checkmodels")
+} else {
+    defaultTasks("build_formal_languages")
 }
