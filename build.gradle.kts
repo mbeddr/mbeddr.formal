@@ -23,7 +23,7 @@ plugins {
     id("download-jbr") version "1.11.+"
 }
 
-val jbrVers = "11_0_11-b1341.60"
+val jbrVers = "11_0_12-b1504.28"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -68,12 +68,12 @@ logger.info("Repository username: {}", nexusUsername)
 val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps")
 
 // Dependency versions
-val mpsVersion = "2021.1.+"
-val mbeddrVersion = "2021.1.+"
+val mpsVersion = "2021.2.+"
+val mbeddrVersion = "2021.2.+"
 
 // Project versions
 val major = "2021"
-val minor = "1"
+val minor = "2"
 
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
