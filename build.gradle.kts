@@ -65,15 +65,12 @@ if (nexusUsername == null) {
 }
 logger.info("Repository username: {}", nexusUsername)
 
-val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps")
-
-// Dependency versions
-val mpsVersion = "2021.2.+"
-val mbeddrVersion = "2021.2.+"
-
 // Project versions
 val major = "2021"
 val minor = "2"
+
+// Dependency versions
+val platformVersion = "$major.$minor.+"
 
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
@@ -103,8 +100,9 @@ configurations {
     val jbrLinux by creating
 
     dependencies {
-        mps("com.jetbrains:mps:$mpsVersion")
-        languageLibs("com.mbeddr:platform:$mbeddrVersion")
+        mps("com.jetbrains:mps:$platformVersion")
+        languageLibs("com.mbeddr:platform:$platformVersion")
+        languageLibs("org.mpsqa:all-in-one:$platformVersion")
         antLib("org.apache.ant:ant-junit:1.10.6")
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
         jbrMac("com.jetbrains.jdk:jbr_jcef:$jbrVers:osx-x64@tgz")
@@ -115,9 +113,19 @@ configurations {
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
+    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
+            "https://maven.pkg.github.com/mbeddr/*")
+
     for (repoUrl in dependencyRepositories) {
         maven {
             url = uri(repoUrl)
+
+            if (repoUrl.startsWith("https://maven.pkg.github.com/")) {
+                credentials {
+                    username = project.property("gpr.user") as String
+                    password = project.property("gpr.token") as String
+                }
+            }
         }
     }
     mavenCentral()

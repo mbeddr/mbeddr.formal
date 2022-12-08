@@ -3,7 +3,7 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mbedd.platform">
+        <entry key="mbeddr.platform">
           <value>
             <Library>
               <option name="name" value="mbedd.platform" />
@@ -16,6 +16,14 @@
             <Library>
               <option name="name" value="mpsbasics" />
               <option name="path" value="${mbeddr.formal.home}/code/languages/com.mpsbasics" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mpsqa">
+          <value>
+            <Library>
+              <option name="name" value="mpsqa" />
+              <option name="path" value="${mbeddr.formal.home}/build/dependencies/org.mpsqa.allInOne" />
             </Library>
           </value>
         </entry>
