@@ -6,7 +6,7 @@
     <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen" version="0" />
   </languages>
   <imports>
-    <import index="hbry" ref="r:bf658a5c-3bda-4f96-8dda-0c8202ea6196(com.mbeddr.formal.safety.gsn.web#01.templates@generator)" />
+    <import index="hbry" ref="r:bf658a5c-3bda-4f96-8dda-0c8202ea6196(com.mbeddr.formal.safety.gsn.web.templates@generator)" />
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">

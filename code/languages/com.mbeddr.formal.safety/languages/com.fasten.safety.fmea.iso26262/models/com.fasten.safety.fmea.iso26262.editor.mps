@@ -11,7 +11,7 @@
   <imports>
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="vicv" ref="r:b37643be-188d-4d39-96f8-132e87814a06(com.fasten.safety.fmea.iso26262.structure)" />
-    <import index="b64w" ref="r:6afcb499-f0e8-4360-a726-91f0159f2fd9(com.fasten.safety.fmeda.electronics.behavior)" />
+    <import index="b64w" ref="r:6afcb499-f0e8-4360-a726-91f0159f2fd9(com.fasten.safety.fmea.iso26262.behavior)" />
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
