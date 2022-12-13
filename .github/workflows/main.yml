@@ -44,7 +44,7 @@ jobs:
     - name: Check Consistency of the FASTEN-NuSMV Tutorial 
       uses: gradle/gradle-build-action@v1.3.3
       with:
-        arguments: -PcheckProject=nusmv
+        arguments: -PcheckProject=nusmv -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
@@ -54,7 +54,7 @@ jobs:
     - name: Check Consistency of the FASTEN-Safety Tutorial
       uses: gradle/gradle-build-action@v1.3.3
       with:
-        arguments: -PcheckProject=safety
+        arguments: -PcheckProject=safety -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
@@ -64,7 +64,7 @@ jobs:
     - name: Run Tests
       uses: gradle/gradle-build-action@v1
       with: 
-        arguments: run_all_tests 
+        arguments: run_all_tests -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
@@ -111,10 +111,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up Gradle
-      run: |
-        chmod +x ./gradlew
-        
     - name: Setup headless environment
       run: |
         Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
