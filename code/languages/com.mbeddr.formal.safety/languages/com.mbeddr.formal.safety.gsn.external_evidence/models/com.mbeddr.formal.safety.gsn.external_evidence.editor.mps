@@ -295,7 +295,7 @@
     <property role="TrG5h" value="DocumentBasedExternalEvidenceSolutionTextArea" />
     <ref role="1XX52x" to="s9pq:6R91tEKNYrw" resolve="DocumentBasedExternalEvidenceSolution" />
     <node concept="1PE4EZ" id="3wuU_o8fzzV" role="1PM95z">
-      <ref role="1PE7su" to="g35p:33qt4wr6jMT" resolve="SolutionTextArea" />
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="33qt4wr6k_h" role="2wV5jI">
       <node concept="3EZMnI" id="33qt4wr6k_i" role="3EZMnx">
@@ -672,7 +672,7 @@
     <property role="TrG5h" value="GeneratedExternalEvidenceSolutionTextArea" />
     <ref role="1XX52x" to="s9pq:6R91tEKNYHe" resolve="GeneratedExternalEvidenceSolution" />
     <node concept="1PE4EZ" id="3wuU_o8gxV7" role="1PM95z">
-      <ref role="1PE7su" to="g35p:33qt4wr6jMT" resolve="SolutionTextArea" />
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3wuU_o8gxV9" role="2wV5jI">
       <node concept="3EZMnI" id="3wuU_o8gxVa" role="3EZMnx">
@@ -1063,28 +1063,6 @@
     </node>
     <node concept="2aJ2om" id="7Jm8RM1smBa" role="CpUAK">
       <ref role="2$4xQ3" to="g35p:7olAlesPj8d" resolve="GOAL_STRUCTURE_TEXTUAL_FAST" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7Jm8RM1smBd">
-    <property role="3GE5qa" value="tree_notation" />
-    <ref role="1XX52x" to="s9pq:6R91tEKNYrw" resolve="DocumentBasedExternalEvidenceSolution" />
-    <node concept="2aJ2om" id="7Jm8RM1smBl" role="CpUAK">
-      <ref role="2$4xQ3" to="g35p:4mOCK0sBQkL" resolve="GOAL_STRUCTURE_TREE" />
-    </node>
-    <node concept="PMmxH" id="7Jm8RM1smBf" role="6VMZX">
-      <ref role="PMmxG" node="7Jm8RM1mJvU" resolve="DocumentBasedExternalEvidenceSolutionTextAreaInInspector" />
-    </node>
-    <node concept="B$lHz" id="7Jm8RM1smBg" role="2wV5jI" />
-  </node>
-  <node concept="24kQdi" id="7Jm8RM1smBh">
-    <property role="3GE5qa" value="tree_notation" />
-    <ref role="1XX52x" to="s9pq:6R91tEKNYHe" resolve="GeneratedExternalEvidenceSolution" />
-    <node concept="B$lHz" id="7Jm8RM1smBi" role="2wV5jI" />
-    <node concept="PMmxH" id="7Jm8RM1smBj" role="6VMZX">
-      <ref role="PMmxG" node="7Jm8RM1lPxB" resolve="GeneratedExternalEvidenceSolutionTextAreaInInspector" />
-    </node>
-    <node concept="2aJ2om" id="7Jm8RM1smBo" role="CpUAK">
-      <ref role="2$4xQ3" to="g35p:4mOCK0sBQkL" resolve="GOAL_STRUCTURE_TREE" />
     </node>
   </node>
   <node concept="24kQdi" id="1UGKBYPwn0d">

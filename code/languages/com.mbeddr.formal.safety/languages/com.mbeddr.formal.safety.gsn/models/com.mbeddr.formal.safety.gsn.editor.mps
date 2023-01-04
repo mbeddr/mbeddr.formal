@@ -46,7 +46,6 @@
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
-    <import index="5un2" ref="r:00d6ee44-268c-4818-b3e7-4eecf669c7ee(com.mbeddr.mpsutil.treenotation.styles.editor)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" implicit="true" />
   </imports>
@@ -181,12 +180,7 @@
         <property id="7228435049763093186" name="family" index="1rj3mz" />
       </concept>
       <concept id="7580468736840446506" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_model" flags="nn" index="1rpKSd" />
-      <concept id="3982520150125052579" name="jetbrains.mps.lang.editor.structure.QueryFunction_AttributeStyleParameter" flags="ig" index="3sjG9q" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
-      <concept id="3982520150122341378" name="jetbrains.mps.lang.editor.structure.AttributeStyleClassItem" flags="lg" index="3tD6jV">
-        <reference id="3982520150122346707" name="attribute" index="3tD7wE" />
-        <child id="3982520150122341379" name="query" index="3tD6jU" />
-      </concept>
       <concept id="4056398722183895535" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_SubMenu" flags="ng" index="1vlq3a">
         <child id="5692353713941631155" name="textFunction" index="1hCDOS" />
         <child id="4056398722183895554" name="items" index="1vlqcB" />
@@ -472,19 +466,6 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
-    </language>
-    <language id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation">
-      <concept id="134774857084556552" name="com.mbeddr.mpsutil.treenotation.structure.TreeCell" flags="ng" index="2SWKgc">
-        <child id="134774857084558327" name="treeRoot" index="2SWKFN" />
-        <child id="134774857084558329" name="treeChildren" index="2SWKFX" />
-        <child id="5587067268292708715" name="insertHandlers" index="1Vhs_Z" />
-      </concept>
-      <concept id="5587067268292695520" name="com.mbeddr.mpsutil.treenotation.structure.SimpleInsertHandler" flags="ng" index="1VhhnO">
-        <property id="5587067268292695547" name="description" index="1VhhnJ" />
-        <child id="5587067268292695525" name="insertFunction" index="1VhhnL" />
-      </concept>
-      <concept id="8877288515760224194" name="com.mbeddr.mpsutil.treenotation.structure.SimpleInsertFunction" flags="ig" index="1XI84t" />
-      <concept id="8877288515760224565" name="com.mbeddr.mpsutil.treenotation.structure.Parameter_index" flags="ng" index="1XI8ZE" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -3703,100 +3684,8 @@
       <node concept="2iRkQZ" id="79zp7ziel4U" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4mOCK0sBPRx">
-    <property role="3GE5qa" value="tree" />
-    <ref role="1XX52x" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-    <node concept="3EZMnI" id="4mOCK0sBQwi" role="2wV5jI">
-      <node concept="PMmxH" id="4mOCK0sBQwj" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
-        <node concept="pkWqt" id="4mOCK0sBQwk" role="pqm2j">
-          <node concept="3clFbS" id="4mOCK0sBQwl" role="2VODD2">
-            <node concept="3clFbF" id="4mOCK0sBQwm" role="3cqZAp">
-              <node concept="2OqwBi" id="4mOCK0sBQwn" role="3clFbG">
-                <node concept="2OqwBi" id="4mOCK0sBQwo" role="2Oq$k0">
-                  <node concept="pncrf" id="4mOCK0sBQwp" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="4mOCK0sBQwq" role="2OqNvi" />
-                </node>
-                <node concept="3w_OXm" id="4mOCK0sBQwr" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4mOCK0sBQws" role="3EZMnx">
-        <node concept="pkWqt" id="4mOCK0sBQwt" role="pqm2j">
-          <node concept="3clFbS" id="4mOCK0sBQwu" role="2VODD2">
-            <node concept="3clFbF" id="4mOCK0sBQwv" role="3cqZAp">
-              <node concept="2OqwBi" id="4mOCK0sBQww" role="3clFbG">
-                <node concept="2OqwBi" id="4mOCK0sBQwx" role="2Oq$k0">
-                  <node concept="pncrf" id="4mOCK0sBQwy" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="4mOCK0sBQwz" role="2OqNvi" />
-                </node>
-                <node concept="3w_OXm" id="4mOCK0sBQw$" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2SWKgc" id="4mOCK0sBQHv" role="3EZMnx">
-        <node concept="3F0ifn" id="4mOCK0sBQJ3" role="2SWKFN">
-          <property role="3F0ifm" value="root" />
-        </node>
-        <node concept="s8t4o" id="4mOCK0sD1eQ" role="2SWKFX">
-          <property role="28Zw97" value="true" />
-          <ref role="28F8cf" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
-          <node concept="s8sZD" id="4mOCK0sD1eS" role="sbcd9">
-            <node concept="3clFbS" id="4mOCK0sD1eT" role="2VODD2">
-              <node concept="3clFbF" id="6G8t3lLuwJr" role="3cqZAp">
-                <node concept="2YIFZM" id="6G8t3lLuwJs" role="3clFbG">
-                  <ref role="37wK5l" node="2V4rzbp9ERw" resolve="clearCache" />
-                  <ref role="1Pybhc" node="2V4rzbp94Pn" resolve="GoalStructureFilteredModelAccessCache" />
-                </node>
-              </node>
-              <node concept="3clFbF" id="6G8t3lLuwJt" role="3cqZAp">
-                <node concept="2YIFZM" id="6G8t3lLuwJu" role="3clFbG">
-                  <ref role="1Pybhc" node="2V4rzbp94Pn" resolve="GoalStructureFilteredModelAccessCache" />
-                  <ref role="37wK5l" node="2V4rzbp94XN" resolve="refreshCache" />
-                  <node concept="pncrf" id="6G8t3lLuwJv" role="37wK5m" />
-                </node>
-              </node>
-              <node concept="3clFbF" id="5uFV_KKTpab" role="3cqZAp">
-                <node concept="2YIFZM" id="5uFV_KKTpfX" role="3clFbG">
-                  <ref role="37wK5l" node="5uFV_KKTne5" resolve="rootNodes" />
-                  <ref role="1Pybhc" node="6f7vJBUc0xj" resolve="TreeActionsUtil" />
-                  <node concept="pncrf" id="5uFV_KKTpt0" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="xShMh" id="4mOCK0sFEoI" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3tD6jV" id="7O04SQY7Dwq" role="3F10Kt">
-          <ref role="3tD7wE" to="5un2:148yUDVgwr0" resolve="tree-show-delete-icon" />
-          <node concept="3sjG9q" id="7O04SQY7Dwr" role="3tD6jU">
-            <node concept="3clFbS" id="7O04SQY7Dws" role="2VODD2">
-              <node concept="3clFbF" id="7O04SQY7DEd" role="3cqZAp">
-                <node concept="3clFbT" id="7O04SQY7DEc" role="3clFbG" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2iRkQZ" id="4mOCK0sBQwA" role="2iSdaV" />
-    </node>
-    <node concept="2aJ2om" id="4mOCK0sBQGh" role="CpUAK">
-      <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="GOAL_STRUCTURE_TREE" />
-    </node>
-  </node>
   <node concept="2ABfQD" id="4mOCK0sBQkK">
     <property role="TrG5h" value="GoalStructureHints" />
-    <node concept="2BsEeg" id="4mOCK0sBQkL" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="GOAL_STRUCTURE_TREE" />
-      <property role="2BUmq6" value="Tree Projection" />
-    </node>
     <node concept="2BsEeg" id="5uFV_KKBhnn" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="GOAL_STRUCTURE_TEXTUAL" />
@@ -3818,141 +3707,8 @@
       <property role="2BUmq6" value="Plain Textual Projection" />
     </node>
   </node>
-  <node concept="24kQdi" id="4mOCK0sCq46">
-    <property role="3GE5qa" value="tree" />
-    <ref role="1XX52x" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
-    <node concept="3EZMnI" id="4mOCK0sDoeM" role="2wV5jI">
-      <node concept="2iRkQZ" id="4mOCK0sDoeN" role="2iSdaV" />
-      <node concept="2SWKgc" id="4mOCK0sCq4a" role="3EZMnx">
-        <node concept="s8t4o" id="4mOCK0sCq4j" role="2SWKFX">
-          <property role="28Zw97" value="true" />
-          <ref role="28F8cf" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
-          <ref role="1k5W1q" node="7Jm8RM1kIhz" resolve="GSNTextualNotationsTextStyle" />
-          <node concept="s8sZD" id="4mOCK0sCq4l" role="sbcd9">
-            <node concept="3clFbS" id="4mOCK0sCq4m" role="2VODD2">
-              <node concept="3clFbF" id="6G8t3lLw9Sy" role="3cqZAp">
-                <node concept="2YIFZM" id="6G8t3lLw9Vu" role="3clFbG">
-                  <ref role="37wK5l" node="2V4rzbp9nJi" resolve="getNeighbouringOutboundElements" />
-                  <ref role="1Pybhc" node="2V4rzbp94Pn" resolve="GoalStructureFilteredModelAccessCache" />
-                  <node concept="pncrf" id="6G8t3lLw9Ye" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="AVF6i" id="6f7vJBUdZXZ" role="2daAY1">
-            <node concept="3clFbS" id="6f7vJBUdZY0" role="2VODD2">
-              <node concept="3clFbF" id="6f7vJBUePGf" role="3cqZAp">
-                <node concept="2YIFZM" id="6f7vJBUePHM" role="3clFbG">
-                  <ref role="37wK5l" node="6f7vJBUc0Br" resolve="deleteGsnElementBase" />
-                  <ref role="1Pybhc" node="6f7vJBUc0xj" resolve="TreeActionsUtil" />
-                  <node concept="1PxgMI" id="6f7vJBUePUl" role="37wK5m">
-                    <node concept="chp4Y" id="6f7vJBUePVg" role="3oSUPX">
-                      <ref role="cht4Q" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
-                    </node>
-                    <node concept="2dRY2x" id="6f7vJBUePIm" role="1m5AlR" />
-                  </node>
-                  <node concept="2ShNRf" id="6f7vJBUfgrM" role="37wK5m">
-                    <node concept="2T8Vx0" id="6f7vJBUfkH0" role="2ShVmc">
-                      <node concept="2I9FWS" id="6f7vJBUfkH2" role="2T96Bj" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="pkWqt" id="7O04SQY5iWv" role="pqm2j">
-            <node concept="3clFbS" id="7O04SQY5iWw" role="2VODD2">
-              <node concept="3clFbF" id="7O04SQY5j5j" role="3cqZAp">
-                <node concept="2OqwBi" id="7O04SQY5liu" role="3clFbG">
-                  <node concept="2YIFZM" id="7O04SQY5j5l" role="2Oq$k0">
-                    <ref role="1Pybhc" node="2V4rzbp94Pn" resolve="GoalStructureFilteredModelAccessCache" />
-                    <ref role="37wK5l" node="2V4rzbp9nJi" resolve="getNeighbouringOutboundElements" />
-                    <node concept="pncrf" id="7O04SQY5j5m" role="37wK5m" />
-                  </node>
-                  <node concept="3GX2aA" id="7O04SQY5oD0" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pkWqt" id="4mOCK0sDohJ" role="pqm2j">
-          <node concept="3clFbS" id="4mOCK0sDohK" role="2VODD2">
-            <node concept="3clFbF" id="4mOCK0sDosk" role="3cqZAp">
-              <node concept="2OqwBi" id="4mOCK0sDqOo" role="3clFbG">
-                <node concept="2OqwBi" id="4mOCK0sDoEE" role="2Oq$k0">
-                  <node concept="pncrf" id="4mOCK0sDosj" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="4mOCK0sDoVv" role="2OqNvi">
-                    <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
-                  </node>
-                </node>
-                <node concept="3GX2aA" id="4mOCK0sDtJc" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1VhhnO" id="4mOCK0sGlx1" role="1Vhs_Z">
-          <property role="1VhhnJ" value="insert sibling" />
-          <node concept="1XI84t" id="4mOCK0sGlx3" role="1VhhnL">
-            <node concept="3clFbS" id="4mOCK0sGlx5" role="2VODD2">
-              <node concept="3clFbF" id="6f7vJBUclry" role="3cqZAp">
-                <node concept="2YIFZM" id="6f7vJBUclNC" role="3clFbG">
-                  <ref role="37wK5l" node="6f7vJBUc2Yn" resolve="insertNewSiblingNode" />
-                  <ref role="1Pybhc" node="6f7vJBUc0xj" resolve="TreeActionsUtil" />
-                  <node concept="pncrf" id="6f7vJBUcmbj" role="37wK5m" />
-                  <node concept="1XI8ZE" id="6f7vJBUcmcE" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="xShMh" id="6f7vJBUaNtO" role="3F10Kt" />
-        <node concept="3tD6jV" id="7O04SQY6EWR" role="3F10Kt">
-          <ref role="3tD7wE" to="5un2:148yUDVgwr0" resolve="tree-show-delete-icon" />
-          <node concept="3sjG9q" id="7O04SQY6EWT" role="3tD6jU">
-            <node concept="3clFbS" id="7O04SQY6EWV" role="2VODD2">
-              <node concept="3clFbF" id="7O04SQY6FeB" role="3cqZAp">
-                <node concept="3clFbT" id="7O04SQY6FeA" role="3clFbG" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="PMmxH" id="3JvPdC98DoF" role="2SWKFN">
-          <ref role="PMmxG" node="3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
-          <node concept="VPXOz" id="3JvPdC9aer4" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="PMmxH" id="7O04SQY5p1V" role="3EZMnx">
-        <ref role="PMmxG" node="3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
-        <node concept="VPXOz" id="7O04SQY5qu_" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pkWqt" id="7O04SQY5quF" role="pqm2j">
-          <node concept="3clFbS" id="7O04SQY5quG" role="2VODD2">
-            <node concept="3clFbF" id="7O04SQY5qy_" role="3cqZAp">
-              <node concept="2OqwBi" id="7O04SQY5qyA" role="3clFbG">
-                <node concept="2YIFZM" id="7O04SQY5qyB" role="2Oq$k0">
-                  <ref role="1Pybhc" node="2V4rzbp94Pn" resolve="GoalStructureFilteredModelAccessCache" />
-                  <ref role="37wK5l" node="2V4rzbp9nJi" resolve="getNeighbouringOutboundElements" />
-                  <node concept="pncrf" id="7O04SQY5qyC" role="37wK5m" />
-                </node>
-                <node concept="1v1jN8" id="7O04SQY5tZc" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2aJ2om" id="4mOCK0sCq48" role="CpUAK">
-      <ref role="2$4xQ3" node="4mOCK0sBQkL" resolve="GOAL_STRUCTURE_TREE" />
-    </node>
-    <node concept="PMmxH" id="4mOCK0sCOn4" role="6VMZX">
-      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
-    </node>
-  </node>
   <node concept="312cEu" id="6f7vJBUc0xj">
-    <property role="3GE5qa" value="tree" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="TreeActionsUtil" />
     <node concept="2tJIrI" id="6f7vJBUc0yJ" role="jymVt" />
     <node concept="2YIFZL" id="5uFV_KKTne5" role="jymVt">
