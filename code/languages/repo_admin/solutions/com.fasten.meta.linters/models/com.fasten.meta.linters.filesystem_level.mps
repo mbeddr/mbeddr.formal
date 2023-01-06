@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:54059a0b-024a-42ab-b8cd-2453fed4f7ff(com.fasten.meta.linters.module_level)">
+<model ref="r:658ef549-33b5-44f8-b8d5-9f14f61b2587(com.fasten.meta.linters.filesystem_level)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
   <imports>
-    <import index="wpu7" ref="r:cadc46fc-2365-43d7-bda1-08e980cf970d(org.mpsqa.lint.generic.linters_library.modules)" />
     <import index="54p5" ref="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
+    <import index="mjm5" ref="r:1cfdc492-ba5c-44bc-987a-7d4e55b9c1ad(org.mpsqa.lint.generic.linters_library.nodes)" implicit="true" />
   </imports>
   <registry>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
@@ -40,20 +41,11 @@
       </concept>
     </language>
   </registry>
-  <node concept="2wR3oc" id="6wRVFFwyqlI">
-    <ref role="2wR3oD" to="wpu7:52u1lglB0sa" resolve="not_migrated_modules" />
+  <node concept="2wR3oc" id="6wRVFFwzf92">
+    <ref role="2wR3oD" to="mjm5:1WMZ_AZ2QHN" resolve="not_updated_resolve_info" />
   </node>
-  <node concept="2wR3oc" id="6wRVFFwyqlJ">
-    <ref role="2wR3oD" to="wpu7:1anGYsMsnkr" resolve="broken_module_dependencies" />
-  </node>
-  <node concept="2wR3oc" id="6wRVFFwyqlK">
-    <ref role="2wR3oD" to="wpu7:7hx0FZiTgg2" resolve="not_used_module_dependencies" />
-  </node>
-  <node concept="2wR3oc" id="6wRVFFwyqlL">
-    <ref role="2wR3oD" to="wpu7:3$9W3co2Xpl" resolve="modules_in_project_directory_on_harddisk_but_not_added_to_project" />
-  </node>
-  <node concept="2wR3oc" id="6wRVFFwyqlM">
-    <ref role="2wR3oD" to="wpu7:3jiJ$OUGH7s" resolve="modules_in_same_project_with_same_IDs" />
+  <node concept="2wR3oc" id="6wRVFFwzf93">
+    <ref role="2wR3oD" to="mjm5:ST9rMmXyNm" resolve="root_nodes_without_children" />
   </node>
   <node concept="2wR3oc" id="4lfwJVE_q9k">
     <property role="2oM2pl" value="1c_Dn$lNzd7/WARNING" />
