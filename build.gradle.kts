@@ -105,6 +105,7 @@ configurations {
     dependencies {
         mps("com.jetbrains:mps:$mpsVersion")
         languageLibs("com.mbeddr:platform:$mbeddrVersion")
+        languageLibs("org.mpsqa:all-in-one:2021.1.+")        
         antLib("org.apache.ant:ant-junit:1.10.6")
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
         jbrMac("com.jetbrains.jdk:jbr_jcef:$jbrVers:osx-x64@tgz")
@@ -118,6 +119,13 @@ repositories {
     for (repoUrl in dependencyRepositories) {
         maven {
             url = uri(repoUrl)
+        }
+    }
+    maven {
+        url = uri("https://maven.pkg.github.com/mbeddr/*")
+        credentials {
+            username = project.findProperty("github_username")?.toString() ?: System.getenv("GITHUB_ACTOR")
+            password = project.findProperty("github_token")?.toString() ?: System.getenv("GITHUB_TOKEN")
         }
     }
     mavenCentral()

@@ -86,6 +86,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.patterns/test.mbeddr.formal.gsn.patterns.msd" folder="gsn._100_checkable_patterns.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn/test.mbeddr.formal.gsn.msd" folder="gsn._010_base.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.safety.argument.modelquery/test.mbeddr.formal.safety.argument.modelquery.msd" folder="gsn._050_modelquery.tests" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/repo_admin/solutions/com.fasten.meta.linters/com.fasten.meta.linters.msd" folder="" />
     </projectModules>
   </component>
 </project>
