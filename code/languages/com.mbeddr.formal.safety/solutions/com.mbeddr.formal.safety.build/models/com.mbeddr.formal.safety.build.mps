@@ -445,7 +445,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2022-01-09" />
+            <property role="3MwjfP" value="2023-01-08" />
           </node>
         </node>
       </node>
@@ -9417,19 +9417,22 @@
             <ref role="1Busuk" node="7he_lUury9o" resolve="com.mbeddr.formal.safety.gsn" />
           </node>
         </node>
-        <node concept="3rtmxn" id="5uoS5eUXVMR" role="3bR31x">
-          <node concept="3LXTmp" id="5uoS5eUXVMS" role="3rtmxm">
-            <node concept="398BVA" id="5uoS5eUXVMT" role="3LXTmr">
+        <node concept="3rtmxn" id="fo0j1lMLdd" role="3bR31x">
+          <node concept="3LXTmp" id="fo0j1lMLde" role="3rtmxm">
+            <node concept="398BVA" id="fo0j1lMLdf" role="3LXTmr">
               <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-              <node concept="2Ry0Ak" id="5uoS5eUXVMU" role="iGT6I">
+              <node concept="2Ry0Ak" id="fo0j1lMLdg" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="5uoS5eUXVMV" role="2Ry0An">
+                <node concept="2Ry0Ak" id="fo0j1lMLdh" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.process" />
+                  <node concept="2Ry0Ak" id="fo0j1lMLdi" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="5uoS5eUXVMX" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+            <node concept="3qWCbU" id="fo0j1lMLdj" role="3LXTna">
+              <property role="3qWCbO" value="com/mbeddr/formal/safety/argument/process/structure/*.png" />
             </node>
           </node>
         </node>
@@ -10500,6 +10503,9 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="1UEjDjh42r8" role="2Ry0An">
                   <property role="2Ry0Am" value="com.fasten.safety.ft" />
+                  <node concept="2Ry0Ak" id="hxRFPW2NAZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -13231,7 +13237,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20220109" />
+        <property role="hHN3Y" value="20230108" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -13347,7 +13353,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2022-01-09" />
+            <property role="3MwjfP" value="2023-01-08" />
           </node>
         </node>
       </node>
@@ -13686,7 +13692,7 @@
       <node concept="3ZAF1B" id="1TD_kqsGBKs" role="3ZAC$U">
         <node concept="3_J27D" id="1TD_kqsGBKt" role="3ZAF1W">
           <node concept="3Mxwew" id="1TD_kqsGBKu" role="3MwsjC">
-            <property role="3MwjfP" value="2022" />
+            <property role="3MwjfP" value="2023" />
           </node>
         </node>
         <node concept="3_J27D" id="1TD_kqsGBKv" role="3ZAF13">
@@ -13906,7 +13912,7 @@
                 </node>
               </node>
               <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
-                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2022.1" />
+                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2023.1" />
               </node>
             </node>
           </node>
@@ -14276,8 +14282,8 @@
             <node concept="1TblLo" id="42jqVeFkUvW" role="1TblLl">
               <property role="1TblLn" value="version" />
               <node concept="NbPM2" id="42jqVeFkUvX" role="1TblLm">
-                <node concept="3Mxwew" id="42jqVeFkUvY" role="3MwsjC">
-                  <property role="3MwjfP" value="1.0" />
+                <node concept="3Mxwey" id="hxRFPVSzKh" role="3MwsjC">
+                  <ref role="3Mxwex" node="wUJmWCxY0H" resolve="version" />
                 </node>
               </node>
             </node>
