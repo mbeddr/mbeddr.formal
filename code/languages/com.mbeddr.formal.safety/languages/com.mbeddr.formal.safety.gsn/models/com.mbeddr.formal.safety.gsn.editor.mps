@@ -152,6 +152,9 @@
       <concept id="8998492695583129991" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_CanSubstitute" flags="ng" index="16NL3D">
         <child id="8998492695583129992" name="query" index="16NL3A" />
       </concept>
+      <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
+        <property id="1235999920262" name="align" index="37lx6p" />
+      </concept>
       <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="7342352913006985483" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Action" flags="ng" index="3eGOop">
@@ -3382,6 +3385,9 @@
     <node concept="3EZMnI" id="7eb_1beKlGz" role="2wV5jI">
       <node concept="3EZMnI" id="7eb_1beKlG$" role="3EZMnx">
         <node concept="VPM3Z" id="7eb_1beKlGA" role="3F10Kt" />
+        <node concept="37jFXN" id="hxRFPVFBUo" role="3F10Kt">
+          <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+        </node>
         <node concept="PMmxH" id="4doguZRxlV" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
@@ -10288,6 +10294,9 @@
     <node concept="3EZMnI" id="2TfVCPOME_s" role="2wV5jI">
       <node concept="3EZMnI" id="2TfVCPOME_t" role="3EZMnx">
         <node concept="VPM3Z" id="2TfVCPOME_u" role="3F10Kt" />
+        <node concept="37jFXN" id="hxRFPVGAFG" role="3F10Kt">
+          <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+        </node>
         <node concept="PMmxH" id="4doguZRxAF" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
