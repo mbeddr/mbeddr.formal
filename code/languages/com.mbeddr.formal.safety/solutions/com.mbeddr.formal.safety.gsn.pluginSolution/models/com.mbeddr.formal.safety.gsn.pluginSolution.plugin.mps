@@ -59,11 +59,6 @@
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
       <ref role="33glcY" to="g35p:7olAlesPj8d" resolve="GOAL_STRUCTURE_TEXTUAL_FAST" />
     </node>
-    <node concept="33gmoH" id="5uFV_KKTMM1" role="2hfSGL">
-      <property role="33g7Lv" value="GSN Tree View" />
-      <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
-      <ref role="33glcY" to="g35p:4mOCK0sBQkL" resolve="GOAL_STRUCTURE_TREE" />
-    </node>
     <node concept="33gmoH" id="5li4g21ecOd" role="2hfSGL">
       <property role="33g7Lv" value="GSN Tree View Fast" />
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />

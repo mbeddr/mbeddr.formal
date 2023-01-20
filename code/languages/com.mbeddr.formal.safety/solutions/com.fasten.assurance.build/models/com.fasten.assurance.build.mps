@@ -392,7 +392,7 @@
       <node concept="aVJcg" id="6hyv0iVPlEz" role="aVJcv">
         <node concept="NbPM2" id="6hyv0iVPlGV" role="aVJcq">
           <node concept="3Mxwew" id="6hyv0iVPlUa" role="3MwsjC">
-            <property role="3MwjfP" value="2020-08-29" />
+            <property role="3MwjfP" value="2023-01-08" />
           </node>
         </node>
       </node>
@@ -6273,7 +6273,7 @@
     <node concept="2kB4xC" id="6hyv0iVPmt7" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="6hyv0iVPmtt" role="aVJcv">
-        <property role="hHN3Y" value="20200728" />
+        <property role="hHN3Y" value="20230108" />
       </node>
     </node>
     <node concept="2kB4xC" id="6hyv0iVPmt8" role="1l3spd">
@@ -6281,7 +6281,7 @@
       <node concept="aVJcg" id="6hyv0iVPmtu" role="aVJcv">
         <node concept="NbPM2" id="6hyv0iVPmtY" role="aVJcq">
           <node concept="3Mxwew" id="6hyv0iVPmuy" role="3MwsjC">
-            <property role="3MwjfP" value="com.mbeddr.formal.nusmv-201.SNAPSHOT" />
+            <property role="3MwjfP" value="com.fasten-201.2023.1" />
           </node>
         </node>
       </node>
@@ -6389,7 +6389,7 @@
       <node concept="aVJcg" id="6hyv0iVPmtC" role="aVJcv">
         <node concept="NbPM2" id="6hyv0iVPmu7" role="aVJcq">
           <node concept="3Mxwew" id="6hyv0iVPmuD" role="3MwsjC">
-            <property role="3MwjfP" value="2020-07-28" />
+            <property role="3MwjfP" value="2023-01-08" />
           </node>
         </node>
       </node>
@@ -6580,8 +6580,8 @@
     <node concept="1zClus" id="6hyv0iVPmtl" role="3989C9">
       <property role="2OjLBK" value="1" />
       <property role="TrG5h" value="MPS" />
-      <property role="2OjLBL" value="2020" />
-      <property role="1lNJF1" value="2" />
+      <property role="2OjLBL" value="2021" />
+      <property role="1lNJF1" value="4" />
       <node concept="3_J27D" id="6hyv0iVPmtH" role="2EteIg">
         <node concept="3Mxwey" id="6hyv0iVPmuh" role="3MwsjC">
           <ref role="3Mxwex" node="6hyv0iVPmt8" resolve="build.number" />
@@ -6882,7 +6882,7 @@
                 </node>
               </node>
               <node concept="1zDrgl" id="6hyv0iVPmwC" role="39821P">
-                <ref role="1zDrgn" node="6hyv0iVPmtl" resolve="FormAl SpecificaTion ENvironment 2020.1" />
+                <ref role="1zDrgn" node="6hyv0iVPmtl" resolve="FormAl SpecificaTion ENvironment 2021.1" />
               </node>
             </node>
           </node>
@@ -6947,6 +6947,9 @@
             </node>
           </node>
           <node concept="398223" id="6hyv0iVPmv3" role="39821P">
+            <node concept="3ygNvl" id="hxRFPVRfSc" role="39821P">
+              <ref role="3ygNvj" to="90a9:7szUFELHiFQ" resolve="de.itemis.mps.editor.widgets" />
+            </node>
             <node concept="3ygNvl" id="6hyv0iVPmvB" role="39821P">
               <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
               <node concept="3LWZYq" id="6hyv0iVPmwT" role="1juEy9">
@@ -7076,8 +7079,12 @@
               <node concept="3LWZYq" id="6hyv0iVPmyi" role="1juEy9">
                 <property role="3LWZYl" value="**/de.itemis.mps.build.gradlesupport/**" />
               </node>
-              <node concept="3LWZYq" id="67Nhy_E4Kjg" role="1juEy9">
-                <property role="3LWZYl" value="**/de.itemis.mps.tooltips/**" />
+              <node concept="1X3_iC" id="hxRFPVRfI1" role="lGtFl">
+                <property role="3V$3am" value="selectors" />
+                <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/5610619299013057363/6789562173791401562" />
+                <node concept="3LWZYq" id="67Nhy_E4Kjg" role="8Wnug">
+                  <property role="3LWZYl" value="**/de.itemis.mps.tooltips/**" />
+                </node>
               </node>
               <node concept="3LWZYq" id="67Nhy_E4Kk6" role="1juEy9">
                 <property role="3LWZYl" value="**/de.itemis.mps.utils/**" />
@@ -7283,8 +7290,8 @@
             <node concept="1TblLo" id="6hyv0iVPmw6" role="1TblLl">
               <property role="1TblLn" value="version" />
               <node concept="NbPM2" id="6hyv0iVPmxJ" role="1TblLm">
-                <node concept="3Mxwew" id="6hyv0iVPmyD" role="3MwsjC">
-                  <property role="3MwjfP" value="1.0" />
+                <node concept="3Mxwey" id="hxRFPVRfHZ" role="3MwsjC">
+                  <ref role="3Mxwex" node="6hyv0iVPmti" resolve="version" />
                 </node>
               </node>
             </node>
