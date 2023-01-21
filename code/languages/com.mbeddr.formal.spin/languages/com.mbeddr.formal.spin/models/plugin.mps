@@ -19,11 +19,15 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="et5u" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.messages(MPS.Core/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" />
-    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
+    <import index="8oaq" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.io(MPS.ThirdParty/)" />
+    <import index="n8ay" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.lang(MPS.ThirdParty/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -235,6 +239,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
@@ -316,6 +323,9 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
@@ -431,15 +441,50 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3cpWs8" id="jZav4mCzNk" role="3cqZAp">
+                      <node concept="3cpWsn" id="jZav4mCzNl" role="3cpWs9">
+                        <property role="TrG5h" value="facet" />
+                        <node concept="3uibUv" id="jZav4mCzLk" role="1tU5fm">
+                          <ref role="3uigEE" to="b0pz:~JavaModuleFacet" resolve="JavaModuleFacet" />
+                        </node>
+                        <node concept="2OqwBi" id="jZav4mCzNm" role="33vP2m">
+                          <node concept="2OqwBi" id="jZav4mCzNn" role="2Oq$k0">
+                            <node concept="2JrnkZ" id="jZav4mCzNo" role="2Oq$k0">
+                              <node concept="37vLTw" id="jZav4mCzNp" role="2JrQYb">
+                                <ref role="3cqZAo" node="26dfgZlWH2i" resolve="m" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="jZav4mCzNq" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="jZav4mCzNr" role="2OqNvi">
+                            <ref role="37wK5l" to="lui2:~SModule.getFacet(java.lang.Class)" resolve="getFacet" />
+                            <node concept="3VsKOn" id="jZav4mCzNs" role="37wK5m">
+                              <ref role="3VsUkX" to="b0pz:~JavaModuleFacet" resolve="JavaModuleFacet" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3cpWs8" id="6KI2Y3YZT5i" role="3cqZAp">
                       <node concept="3cpWsn" id="6KI2Y3YZT5j" role="3cpWs9">
                         <property role="TrG5h" value="sourceGenPath" />
                         <node concept="17QB3L" id="6KI2Y3YZT5k" role="1tU5fm" />
-                        <node concept="2YIFZM" id="6KI2Y3YZT5t" role="33vP2m">
-                          <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                          <ref role="37wK5l" to="z1c3:~SModuleOperations.getOutputPathFor(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputPathFor" />
-                          <node concept="37vLTw" id="26dfgZlWHdy" role="37wK5m">
-                            <ref role="3cqZAo" node="26dfgZlWH2i" resolve="m" />
+                        <node concept="2OqwBi" id="jZav4mC_W9" role="33vP2m">
+                          <node concept="2OqwBi" id="jZav4mC$Fs" role="2Oq$k0">
+                            <node concept="37vLTw" id="jZav4mC$oH" role="2Oq$k0">
+                              <ref role="3cqZAo" node="jZav4mCzNl" resolve="facet" />
+                            </node>
+                            <node concept="liA8E" id="jZav4mC_ql" role="2OqNvi">
+                              <ref role="37wK5l" to="b0pz:~JavaModuleFacet.getOutputLocation(org.jetbrains.mps.openapi.model.SModel)" resolve="getOutputLocation" />
+                              <node concept="37vLTw" id="jZav4mC_Ml" role="37wK5m">
+                                <ref role="3cqZAo" node="26dfgZlWH2i" resolve="m" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="jZav4mCAHG" role="2OqNvi">
+                            <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
                           </node>
                         </node>
                       </node>
@@ -2243,9 +2288,9 @@
               </node>
             </node>
           </node>
-          <node concept="10M0yZ" id="3PN66LDu9bk" role="3clFbw">
-            <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
-            <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+          <node concept="10M0yZ" id="jZav4mCYas" role="3clFbw">
+            <ref role="3cqZAo" to="n8ay:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+            <ref role="1PxDUh" to="n8ay:~SystemUtils" resolve="SystemUtils" />
           </node>
         </node>
         <node concept="3clFbF" id="5y2MdLwLeET" role="3cqZAp">
