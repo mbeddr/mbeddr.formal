@@ -67,7 +67,7 @@ logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
 val major = "2021"
-val minor = "2"
+val minor = "3"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
