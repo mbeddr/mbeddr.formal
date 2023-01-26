@@ -679,7 +679,22 @@
           <node concept="2pNNFK" id="6VBHnHRhYAq" role="3o6s8t">
             <property role="2pNNFO" value="common_info" />
             <node concept="5jKBG" id="6VBHnHRhYAr" role="lGtFl">
-              <ref role="v9R2y" node="6VBHnHRhPqc" resolve="goal_structure_entity_base_template" />
+              <ref role="v9R2y" node="6VBHnHRhZp7" resolve="goal_structure_connection_base_template" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="57s6VtsIGz8" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
+      <node concept="gft3U" id="57s6VtsIGz9" role="1lVwrX">
+        <node concept="2pNNFK" id="57s6VtsIGza" role="gfFT$">
+          <property role="2pNNFO" value="supported_by" />
+          <node concept="2pNNFK" id="57s6VtsIGzb" role="3o6s8t">
+            <property role="2pNNFO" value="common_info" />
+            <node concept="5jKBG" id="57s6VtsIGzc" role="lGtFl">
+              <ref role="v9R2y" node="6VBHnHRhZp7" resolve="goal_structure_connection_base_template" />
             </node>
           </node>
         </node>
