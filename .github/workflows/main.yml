@@ -134,3 +134,13 @@ jobs:
         dependencies-cache-exact: true
         configuration-cache-enabled: true
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    - name: Publish FASTEN.Assurance to Github Maven
+      uses: gradle/gradle-build-action@v1.3.3
+      with: 
+        arguments: publishFASTENSafetyLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        wrapper-cache-enabled: true
+        dependencies-cache-enabled: true
+        dependencies-cache-key: gradle/dependency-locks/**
+        dependencies-cache-exact: true
+        configuration-cache-enabled: true
+        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
