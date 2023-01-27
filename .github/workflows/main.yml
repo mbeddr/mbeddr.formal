@@ -124,17 +124,17 @@ jobs:
       with:
         java-version: 11  
         
-    - name: Build FASTEN Assurance Distribution
-      uses: gradle/gradle-build-action@v1.3.3
-      with: 
-        arguments: package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        dependencies-cache-key: gradle/dependency-locks/**
-        dependencies-cache-exact: true
-        configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
-    - name: Publish FASTEN.Assurance to Github Maven
+    #- name: Build FASTEN Assurance Distribution
+    #  uses: gradle/gradle-build-action@v1.3.3
+    #  with: 
+    #    arguments: package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+    #    wrapper-cache-enabled: true
+    #    dependencies-cache-enabled: true
+    #    dependencies-cache-key: gradle/dependency-locks/**
+    #    dependencies-cache-exact: true
+    #    configuration-cache-enabled: true
+    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    - name: Build and Publish FASTEN Assurance to Github Maven Packages
       uses: gradle/gradle-build-action@v1.3.3
       with: 
         arguments: publishFASTENSafetyLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}

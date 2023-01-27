@@ -78,7 +78,10 @@ val minor = "1"
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
 
-    val buildNumber = System.getenv("BUILD_NUMBER")!!.toInt()
+    val buildNumber =  if (System.getenv("GITHUB_RUN_NUMBER") != null) 
+                                System.getenv("GITHUB_RUN_NUMBER").toInt() 
+                            else 
+                                System.getenv("BUILD_NUMBER")!!.toInt()
     if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
         version = "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
     } else {
