@@ -30,7 +30,7 @@ downloadJbr {
 }
 
 // detect if we are in a CI build
-val ciBuild = project.hasProperty("forceCI") || project.hasProperty("teamcity")
+val ciBuild = (System.getenv("CI") != null && System.getenv("CI").toBoolean()) || project.hasProperty("forceCI") || project.hasProperty("teamcity")
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
 val jdk_home: String = if (project.hasProperty("java11_home")) {
