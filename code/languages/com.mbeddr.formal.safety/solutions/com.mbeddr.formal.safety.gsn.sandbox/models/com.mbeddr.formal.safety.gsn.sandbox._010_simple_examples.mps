@@ -70,6 +70,9 @@
       </concept>
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="3514655602814462718" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureDoc" flags="ng" index="9kjDo">
+        <child id="3514655602814462801" name="documentation" index="9kjJR" />
+      </concept>
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
       <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI">
@@ -83,6 +86,7 @@
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <property id="6855128169206518172" name="displayRelationNames" index="2Ct_Wz" />
+        <child id="3514655602814221387" name="documentation" index="9lmNH" />
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
@@ -232,7 +236,7 @@
         <node concept="gqqVs" id="2ccN23oa9Bf" role="37mO4d">
           <property role="gqqTZ" value="151.0" />
           <property role="gqqTW" value="378.0" />
-          <property role="gqqTX" value="116.0" />
+          <property role="gqqTX" value="123.0" />
           <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -521,6 +525,26 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
+      <node concept="37mRIm" id="336$aoTBgMl" role="37mRID">
+        <property role="37mO49" value="3514655602814815368" />
+        <node concept="gqqVs" id="336$aoTBgMk" role="37mO4d">
+          <property role="gqqTZ" value="236.0" />
+          <property role="gqqTW" value="-16.0" />
+          <property role="gqqTX" value="191.0" />
+          <property role="gqqTy" value="60.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="336$aoTD0wQ" role="37mRID">
+        <property role="37mO49" value="3514655602815273001" />
+        <node concept="gqqVs" id="336$aoTD0wP" role="37mO4d">
+          <property role="gqqTZ" value="189.5" />
+          <property role="gqqTW" value="-15.0" />
+          <property role="gqqTX" value="246.0" />
+          <property role="gqqTy" value="28.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
     </node>
     <node concept="2vmxSQ" id="3GRi4m$rEQ0" role="2vn1q5">
       <property role="TrG5h" value="C1" />
@@ -593,6 +617,13 @@
     <node concept="3VeUTF" id="6XKrTzkx_pE" role="2vhqc$">
       <ref role="3VeSjP" node="3GRi4m$s$DN" resolve="St1" />
       <ref role="3VeSjQ" node="3GRi4m$u6uD" resolve="G2.2" />
+    </node>
+    <node concept="9kjDo" id="336$aoTD0wD" role="9lmNH">
+      <node concept="19SGf9" id="336$aoTD0wE" role="9kjJR">
+        <node concept="19SUe$" id="336$aoTD0wF" role="19SJt6">
+          <property role="19SUeA" value="Example of a basic structured argument." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2vn7XN" id="7TjUbLQa$K1">
@@ -1982,7 +2013,7 @@
   <node concept="2vn7XN" id="3f8ZVRYfHaZ">
     <property role="TrG5h" value="_200_goal_structure_fixed_prefix" />
     <property role="3dZJUb" value="ACC_TOP" />
-    <property role="3dZJ_E" value="0" />
+    <property role="3dZJ_E" value="6" />
     <node concept="2vn7WC" id="3f8ZVRYfHbc" role="2vn1q5">
       <property role="TrG5h" value="ACC_TOP_001" />
       <node concept="19SGf9" id="3f8ZVRYfHbd" role="2vnaTY">
