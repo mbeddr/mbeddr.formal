@@ -5202,6 +5202,75 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="5FTX57fE4q0" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.fasten.base.git" />
+        <property role="3LESm3" value="e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476" />
+        <node concept="398BVA" id="5FTX57fE4CL" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+          <node concept="2Ry0Ak" id="5FTX57fE4SH" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5FTX57fE5gz" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.base.git" />
+              <node concept="2Ry0Ak" id="5FTX57fE5wu" role="2Ry0An">
+                <property role="2Ry0Am" value="com.fasten.base.git.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FTX57fE5Rh" role="3bR37C">
+          <node concept="3bR9La" id="5FTX57fE5Ri" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FTX57fE5Rj" role="3bR37C">
+          <node concept="3bR9La" id="5FTX57fE5Rk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FTX57fE5Rl" role="3bR37C">
+          <node concept="3bR9La" id="5FTX57fE5Rm" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FTX57fE5Rp" role="3bR37C">
+          <node concept="3bR9La" id="5FTX57fE5Rq" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FTX57fE5Rr" role="3bR37C">
+          <node concept="3bR9La" id="5FTX57fE5Rs" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FTX57fE5Rv" role="3bR37C">
+          <node concept="3bR9La" id="5FTX57fE5Rw" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="5FTX57fE5RG" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5FTX57fE5RH" role="1HemKq">
+            <node concept="398BVA" id="5FTX57fE5Rx" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="5FTX57fE5Ry" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5FTX57fE5Rz" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.base.git" />
+                  <node concept="2Ry0Ak" id="5FTX57fE5R$" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5FTX57fE5RI" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="5t37uj6UEjA" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.fasten.process.review" />
@@ -12262,6 +12331,9 @@
         </node>
         <node concept="3LEDTy" id="6VBHnHRj2CU" role="3LEDUa">
           <ref role="3LEDTV" node="6VBHnHRiYOJ" resolve="com.mbeddr.formal.safety.gsn.xml_gen" />
+        </node>
+        <node concept="3LEDTy" id="5FTX57fE6KA" role="3LEDUa">
+          <ref role="3LEDTV" node="5FTX57fE4q0" resolve="com.fasten.base.git" />
         </node>
       </node>
     </node>
