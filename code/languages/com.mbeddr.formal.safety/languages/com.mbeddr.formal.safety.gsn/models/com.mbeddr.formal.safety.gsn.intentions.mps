@@ -287,13 +287,13 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="696iakq7lj">
-    <property role="TrG5h" value="takeScreenshot" />
+    <property role="TrG5h" value="takeScreenshotAsPNG" />
     <ref role="2ZfgGC" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="2S6ZIM" id="696iakq7lk" role="2ZfVej">
       <node concept="3clFbS" id="696iakq7ll" role="2VODD2">
         <node concept="3clFbF" id="696iakqam3" role="3cqZAp">
           <node concept="Xl_RD" id="696iakqam2" role="3clFbG">
-            <property role="Xl_RC" value="Take Screenshot" />
+            <property role="Xl_RC" value="Take Screenshot to PNG" />
           </node>
         </node>
       </node>
@@ -306,7 +306,7 @@
               <node concept="3clFbF" id="696iakqHGD" role="3cqZAp">
                 <node concept="2YIFZM" id="696iakqJQ1" role="3clFbG">
                   <ref role="37wK5l" to="ztk3:696iakqcN1" resolve="takeScreenshotAndSaveIntoFile" />
-                  <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
+                  <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
                   <node concept="2Sf5sV" id="696iakqJQL" role="37wK5m" />
                 </node>
               </node>
@@ -1825,6 +1825,42 @@
     <node concept="2tJIrI" id="4WMzu8sc7LL" role="jymVt" />
     <node concept="2tJIrI" id="4WMzu8sc7NE" role="jymVt" />
     <node concept="3Tm1VV" id="4WMzu8sc7NF" role="1B3o_S" />
+  </node>
+  <node concept="2S6QgY" id="5FTX57fM9Rd">
+    <property role="TrG5h" value="takeScreenshotAsSVN" />
+    <ref role="2ZfgGC" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+    <node concept="2S6ZIM" id="5FTX57fM9Re" role="2ZfVej">
+      <node concept="3clFbS" id="5FTX57fM9Rf" role="2VODD2">
+        <node concept="3clFbF" id="5FTX57fM9Rg" role="3cqZAp">
+          <node concept="Xl_RD" id="5FTX57fM9Rh" role="3clFbG">
+            <property role="Xl_RC" value="Take Screenshot to SVG" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5FTX57fM9Ri" role="2ZfgGD">
+      <node concept="3clFbS" id="5FTX57fM9Rj" role="2VODD2">
+        <node concept="1QHqEQ" id="5FTX57fM9Rk" role="3cqZAp">
+          <node concept="1QHqEC" id="5FTX57fM9Rl" role="1QHqEI">
+            <node concept="3clFbS" id="5FTX57fM9Rm" role="1bW5cS">
+              <node concept="3clFbF" id="5FTX57fM9Rn" role="3cqZAp">
+                <node concept="2YIFZM" id="5FTX57fMa3C" role="3clFbG">
+                  <ref role="37wK5l" to="ztk3:xCk$O6ov8n" resolve="takeScreenshotAndSaveIntoFile" />
+                  <ref role="1Pybhc" to="ztk3:5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
+                  <node concept="2Sf5sV" id="5FTX57fMa3D" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5FTX57fM9Rq" role="ukAjM">
+            <node concept="1XNTG" id="5FTX57fM9Rr" role="2Oq$k0" />
+            <node concept="liA8E" id="5FTX57fM9Rs" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

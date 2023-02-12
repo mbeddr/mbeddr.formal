@@ -628,6 +628,9 @@
       <node concept="m$_yC" id="5t37uj6Y1l2" role="m$_yJ">
         <ref role="m$_y1" node="7he_lUumEw2" resolve="com.mpsbasics" />
       </node>
+      <node concept="m$_yC" id="5FTX57fNojd" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      </node>
       <node concept="3_J27D" id="1uyUeTt3ODf" role="m$_yQ">
         <node concept="3Mxwew" id="1uyUeTt3QtK" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.base" />
@@ -5136,6 +5139,11 @@
         <node concept="1SiIV0" id="3DZJpXNn_aL" role="3bR37C">
           <node concept="3bR9La" id="3DZJpXNn_aM" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:39HJr_hyEzS" resolve="jetbrains.mps.ide.vcs.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FTX57fNmeC" role="3bR37C">
+          <node concept="3bR9La" id="5FTX57fNmeD" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
           </node>
         </node>
       </node>
