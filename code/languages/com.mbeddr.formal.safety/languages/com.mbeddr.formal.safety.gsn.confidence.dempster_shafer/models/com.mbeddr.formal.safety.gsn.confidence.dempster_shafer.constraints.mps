@@ -184,5 +184,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3AZUhOjM1mQ">
+    <ref role="1M2myG" to="6oah:3AZUhOjLBlp" resolve="Trustworthiness" />
+    <node concept="9S07l" id="3AZUhOjM1_9" role="9Vyp8">
+      <node concept="3clFbS" id="3AZUhOjM1_a" role="2VODD2">
+        <node concept="3clFbF" id="3AZUhOjM1GG" role="3cqZAp">
+          <node concept="2OqwBi" id="3AZUhOjM1GI" role="3clFbG">
+            <node concept="2OqwBi" id="3AZUhOjM1GJ" role="2Oq$k0">
+              <node concept="nLn13" id="3AZUhOjM1GK" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="3AZUhOjM1GL" role="2OqNvi">
+                <node concept="1xMEDy" id="3AZUhOjM1GM" role="1xVPHs">
+                  <node concept="chp4Y" id="3AZUhOjM1GN" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="3AZUhOjM1GO" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="3AZUhOjM1GP" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

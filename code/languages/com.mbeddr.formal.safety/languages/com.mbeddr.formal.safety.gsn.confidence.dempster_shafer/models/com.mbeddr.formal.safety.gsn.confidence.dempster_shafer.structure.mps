@@ -11,6 +11,15 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -58,6 +67,93 @@
       <property role="IQ2nx" value="4766383208097907856" />
       <property role="TrG5h" value="weight" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3AZUhOjLBlp">
+    <property role="EcuMT" value="4161300891808724313" />
+    <property role="TrG5h" value="Trustworthiness" />
+    <property role="34LRSv" value="trust" />
+    <property role="R4oN_" value="Trust one has in the evidence" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyi" id="3AZUhOjLBn5" role="1TKVEl">
+      <property role="IQ2nx" value="4161300891808724421" />
+      <property role="TrG5h" value="confidence" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3AZUhOjLBn7" role="1TKVEl">
+      <property role="IQ2nx" value="4161300891808724423" />
+      <property role="TrG5h" value="decision" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6sbhWpXO2AV">
+    <property role="EcuMT" value="7425107328490285499" />
+    <property role="TrG5h" value="AssignedTrust" />
+    <property role="34LRSv" value="Assigned Trust" />
+    <property role="R4oN_" value="Trust assigned " />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyi" id="18nEFui5m1V" role="1TKVEl">
+      <property role="IQ2nx" value="1303698322553659515" />
+      <property role="TrG5h" value="conf" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="18nEFui5m1X" role="1TKVEl">
+      <property role="IQ2nx" value="1303698322553659517" />
+      <property role="TrG5h" value="dec" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="18nEFuhW1y_">
+    <property role="EcuMT" value="1303698322551216293" />
+    <property role="TrG5h" value="ComputedTrust" />
+    <property role="34LRSv" value="Computed Trust" />
+    <property role="R4oN_" value="Trust assigned " />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyi" id="18nEFui61Dd" role="1TKVEl">
+      <property role="IQ2nx" value="1303698322553838157" />
+      <property role="TrG5h" value="dec" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="18nEFui61Df" role="1TKVEl">
+      <property role="IQ2nx" value="1303698322553838159" />
+      <property role="TrG5h" value="conf" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="18nEFui9dM4">
+    <property role="EcuMT" value="1303698322554674308" />
+    <property role="TrG5h" value="ArgumentType" />
+    <property role="34LRSv" value="Argument Type" />
+    <property role="R4oN_" value="Type of connection between the Sub-Goals" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyi" id="18nEFui9dM5" role="1TKVEl">
+      <property role="IQ2nx" value="1303698322554674309" />
+      <property role="TrG5h" value="argtype" />
+      <ref role="AX2Wp" node="18nEFui9ksT" resolve="ArgumentList" />
+    </node>
+  </node>
+  <node concept="25R3W" id="18nEFui9ksT">
+    <property role="3F6X1D" value="1303698322554701625" />
+    <property role="TrG5h" value="ArgumentList" />
+    <node concept="25R33" id="18nEFui9ksV" role="25R1y">
+      <property role="3tVfz5" value="1303698322554701627" />
+      <property role="TrG5h" value="Redundant" />
+    </node>
+    <node concept="25R33" id="18nEFui9kt4" role="25R1y">
+      <property role="3tVfz5" value="1303698322554701636" />
+      <property role="TrG5h" value="Complementary" />
+    </node>
+    <node concept="25R33" id="18nEFui9ksY" role="25R1y">
+      <property role="3tVfz5" value="1303698322554701630" />
+      <property role="TrG5h" value="PartialRedundant" />
+    </node>
+    <node concept="25R33" id="18nEFui9kt8" role="25R1y">
+      <property role="3tVfz5" value="1303698322554701640" />
+      <property role="TrG5h" value="PartialComplementary" />
+    </node>
+    <node concept="25R33" id="18nEFui9ktd" role="25R1y">
+      <property role="3tVfz5" value="1303698322554701645" />
+      <property role="TrG5h" value="Disparate" />
     </node>
   </node>
 </model>
