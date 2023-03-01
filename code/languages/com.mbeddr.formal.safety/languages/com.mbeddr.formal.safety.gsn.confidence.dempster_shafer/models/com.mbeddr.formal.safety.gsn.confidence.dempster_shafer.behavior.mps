@@ -940,10 +940,10 @@
             <node concept="3uibUv" id="6sbhWpXOOcD" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
             </node>
-            <node concept="2YIFZM" id="6sbhWpXOOcE" role="33vP2m">
-              <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferConfidenceComputingUtils1" />
+            <node concept="2YIFZM" id="3U$zn$8Qdf_" role="33vP2m">
               <ref role="37wK5l" to="amuf:1vtrvyEeejL" resolve="computeConfidenceBasedOnDownwardElements" />
-              <node concept="37vLTw" id="18nEFuhXqp7" role="37wK5m">
+              <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferTrustComputingUtils" />
+              <node concept="37vLTw" id="3U$zn$8QdfA" role="37wK5m">
                 <ref role="3cqZAo" node="18nEFuhXpw4" resolve="gseb" />
               </node>
             </node>
@@ -955,10 +955,10 @@
             <node concept="3uibUv" id="6sbhWpXOOcI" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
             </node>
-            <node concept="2YIFZM" id="6sbhWpXOOcJ" role="33vP2m">
-              <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferConfidenceComputingUtils1" />
+            <node concept="2YIFZM" id="3U$zn$8Qdom" role="33vP2m">
               <ref role="37wK5l" to="amuf:1vtrvyEeeih" resolve="computeDecisionBasedOnDownwardElements" />
-              <node concept="37vLTw" id="18nEFuhXqu_" role="37wK5m">
+              <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferTrustComputingUtils" />
+              <node concept="37vLTw" id="3U$zn$8Qdon" role="37wK5m">
                 <ref role="3cqZAo" node="18nEFuhXpw4" resolve="gseb" />
               </node>
             </node>
@@ -970,10 +970,10 @@
             <node concept="3uibUv" id="6sbhWpXOOcN" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
             </node>
-            <node concept="2YIFZM" id="6sbhWpXOOcO" role="33vP2m">
-              <ref role="1Pybhc" to="amuf:2vP6RvEY4Om" resolve="DempsterSchaferBeliefComputingUtils1" />
+            <node concept="2YIFZM" id="3U$zn$8QdZM" role="33vP2m">
               <ref role="37wK5l" to="amuf:2vP6RvEYgLA" resolve="computeBeliefBasedOnDownwardElements" />
-              <node concept="37vLTw" id="18nEFuhXqDl" role="37wK5m">
+              <ref role="1Pybhc" to="amuf:2vP6RvEY4Om" resolve="DempsterSchaferBeliefComputingUtils" />
+              <node concept="37vLTw" id="3U$zn$8QdZN" role="37wK5m">
                 <ref role="3cqZAo" node="18nEFuhXpw4" resolve="gseb" />
               </node>
             </node>
@@ -985,10 +985,10 @@
             <node concept="3uibUv" id="6sbhWpXOOcS" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
             </node>
-            <node concept="2YIFZM" id="6sbhWpXOOcT" role="33vP2m">
-              <ref role="1Pybhc" to="amuf:2vP6RvEY4Om" resolve="DempsterSchaferBeliefComputingUtils1" />
+            <node concept="2YIFZM" id="3U$zn$8Qe8M" role="33vP2m">
               <ref role="37wK5l" to="amuf:2vP6RvEY4Q0" resolve="computeDisbeliefBasedOnDownwardElements" />
-              <node concept="37vLTw" id="18nEFuhXre9" role="37wK5m">
+              <ref role="1Pybhc" to="amuf:2vP6RvEY4Om" resolve="DempsterSchaferBeliefComputingUtils" />
+              <node concept="37vLTw" id="3U$zn$8Qe8N" role="37wK5m">
                 <ref role="3cqZAo" node="18nEFuhXpw4" resolve="gseb" />
               </node>
             </node>

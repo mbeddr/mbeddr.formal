@@ -19,9 +19,9 @@
       </concept>
     </language>
     <language id="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer">
-      <concept id="7160957776623458606" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.Confidence" flags="ng" index="GlCK6">
-        <property id="3284458703649554177" name="belief" index="FV0bb" />
-        <property id="3284458703649554182" name="certainty" index="FV0bc" />
+      <concept id="4161300891808724313" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.Trustworthiness" flags="ng" index="EupL4">
+        <property id="4161300891808724421" name="confidence" index="EupNo" />
+        <property id="4161300891808724423" name="decision" index="EupNq" />
       </concept>
       <concept id="4766383208097907786" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.Weight" flags="ng" index="1WdpKc">
         <property id="4766383208097907856" name="weight" index="1WdpNm" />
@@ -98,14 +98,14 @@
     <property role="TrG5h" value="_010_simple_solutions" />
     <node concept="2vmhmH" id="6dwPixfdDQ9" role="2vn1q5">
       <property role="TrG5h" value="S1" />
+      <node concept="EupL4" id="3U$zn$8NhXk" role="2U2l5M">
+        <property role="EupNq" value="50" />
+        <property role="EupNo" value="100" />
+      </node>
       <node concept="19SGf9" id="6dwPixfdDQa" role="2vnaTY">
         <node concept="19SUe$" id="6dwPixfdDQb" role="19SJt6">
-          <property role="19SUeA" value="Medium belief,&#10;high certainty" />
+          <property role="19SUeA" value="Average decision,&#10;high confidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="2QkJsC6vQnI" role="2U2l5M">
-        <property role="FV0bb" value="50" />
-        <property role="FV0bc" value="100" />
       </node>
     </node>
     <node concept="37mRI7" id="6dwPixfdDQm" role="lGtFl">
@@ -114,7 +114,7 @@
         <node concept="gqqVs" id="6dwPixfdDQl" role="37mO4d">
           <property role="gqqTZ" value="27.0" />
           <property role="gqqTW" value="27.0" />
-          <property role="gqqTX" value="124.0" />
+          <property role="gqqTX" value="158.0" />
           <property role="gqqTy" value="64.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -122,10 +122,10 @@
       <node concept="37mRIm" id="2QkJsC6vHGt" role="37mRID">
         <property role="37mO49" value="3284458703649954573" />
         <node concept="gqqVs" id="2QkJsC6vHGs" role="37mO4d">
-          <property role="gqqTZ" value="171.0" />
-          <property role="gqqTW" value="4.0" />
-          <property role="gqqTX" value="134.0" />
-          <property role="gqqTy" value="59.0" />
+          <property role="gqqTZ" value="227.5" />
+          <property role="gqqTW" value="10.0" />
+          <property role="gqqTX" value="162.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -134,8 +134,8 @@
         <node concept="gqqVs" id="2QkJsC6xbaL" role="37mO4d">
           <property role="gqqTZ" value="209.0" />
           <property role="gqqTW" value="109.0" />
-          <property role="gqqTX" value="175.0" />
-          <property role="gqqTy" value="95.0" />
+          <property role="gqqTX" value="246.0" />
+          <property role="gqqTy" value="100.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -144,41 +144,38 @@
         <node concept="gqqVs" id="2QkJsC6xbCK" role="37mO4d">
           <property role="gqqTZ" value="27.0" />
           <property role="gqqTW" value="163.0" />
-          <property role="gqqTX" value="135.0" />
-          <property role="gqqTy" value="59.0" />
+          <property role="gqqTX" value="185.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
     </node>
     <node concept="2vmhmH" id="2QkJsC6vHGd" role="2vn1q5">
       <property role="TrG5h" value="S2" />
+      <node concept="EupL4" id="3U$zn$8Ni2Y" role="2U2l5M" />
       <node concept="19SGf9" id="2QkJsC6vHGe" role="2vnaTY">
         <node concept="19SUe$" id="2QkJsC6vHGf" role="19SJt6">
-          <property role="19SUeA" value="Full disbelief,&#10;low certainty" />
+          <property role="19SUeA" value="Strongly rejectable,&#10;no confidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="2QkJsC6xbii" role="2U2l5M">
-        <property role="FV0bb" value="0" />
-        <property role="FV0bc" value="0" />
       </node>
     </node>
     <node concept="1$GyEX" id="2QkJsC6xb9D" role="2vn1q5">
       <property role="TrG5h" value="S3" />
+      <node concept="EupL4" id="3U$zn$8Niau" role="2U2l5M">
+        <property role="EupNq" value="100" />
+        <property role="EupNo" value="50" />
+      </node>
       <node concept="19SGf9" id="2QkJsC6xb9E" role="2vnaTY">
         <node concept="19SUe$" id="2QkJsC6xb9F" role="19SJt6">
-          <property role="19SUeA" value="High belief, high certainty" />
+          <property role="19SUeA" value="Strongly acceptable, medium confidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="2QkJsC6xbpG" role="2U2l5M">
-        <property role="FV0bc" value="100" />
-        <property role="FV0bb" value="100" />
       </node>
     </node>
     <node concept="2vmhmH" id="2QkJsC6xbBz" role="2vn1q5">
       <property role="TrG5h" value="S4" />
       <node concept="19SGf9" id="2QkJsC6xbB$" role="2vnaTY">
         <node concept="19SUe$" id="2QkJsC6xbB_" role="19SJt6">
-          <property role="19SUeA" value="Solution without&#10;confidence attached" />
+          <property role="19SUeA" value="Solution without&#10;Trustworthiness attached" />
         </node>
       </node>
     </node>
@@ -187,14 +184,14 @@
     <property role="TrG5h" value="_020_goal_with_solutions" />
     <node concept="2vmhmH" id="48_A4oY4kHN" role="2vn1q5">
       <property role="TrG5h" value="S1" />
+      <node concept="EupL4" id="3U$zn$8Nij2" role="2U2l5M">
+        <property role="EupNq" value="75" />
+        <property role="EupNo" value="100" />
+      </node>
       <node concept="19SGf9" id="48_A4oY4kHO" role="2vnaTY">
         <node concept="19SUe$" id="48_A4oY4kHP" role="19SJt6">
-          <property role="19SUeA" value="Medium belief,&#10;high certainty" />
+          <property role="19SUeA" value="Acceptable,&#10;high cofidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="48_A4oY4kHQ" role="2U2l5M">
-        <property role="FV0bb" value="100" />
-        <property role="FV0bc" value="100" />
       </node>
     </node>
     <node concept="37mRI7" id="48_A4oY4kHR" role="lGtFl">
@@ -243,8 +240,8 @@
         <node concept="gqqVs" id="48_A4oY4kKb" role="37mO4d">
           <property role="gqqTZ" value="23.0" />
           <property role="gqqTW" value="144.0" />
-          <property role="gqqTX" value="120.0" />
-          <property role="gqqTy" value="59.0" />
+          <property role="gqqTX" value="156.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -253,8 +250,8 @@
         <node concept="gqqVs" id="48_A4oY4kKd" role="37mO4d">
           <property role="gqqTZ" value="190.0" />
           <property role="gqqTW" value="144.0" />
-          <property role="gqqTX" value="120.0" />
-          <property role="gqqTy" value="59.0" />
+          <property role="gqqTX" value="162.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -283,8 +280,8 @@
         <node concept="gqqVs" id="48_A4oY4kQF" role="37mO4d">
           <property role="gqqTZ" value="104.0" />
           <property role="gqqTW" value="17.0" />
-          <property role="gqqTX" value="117.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="120.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -343,14 +340,14 @@
     </node>
     <node concept="2vmhmH" id="48_A4oY4kI0" role="2vn1q5">
       <property role="TrG5h" value="S2" />
+      <node concept="EupL4" id="3U$zn$8NipB" role="2U2l5M">
+        <property role="EupNq" value="0" />
+        <property role="EupNo" value="25" />
+      </node>
       <node concept="19SGf9" id="48_A4oY4kI1" role="2vnaTY">
         <node concept="19SUe$" id="48_A4oY4kI2" role="19SJt6">
-          <property role="19SUeA" value="Full disbelief,&#10;low certainty" />
+          <property role="19SUeA" value="Strongly rejectable,&#10;low confidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="48_A4oY4kI3" role="2U2l5M">
-        <property role="FV0bb" value="50" />
-        <property role="FV0bc" value="0" />
       </node>
     </node>
     <node concept="2vn7WC" id="48_A4oY4kPy" role="2vn1q5">
@@ -380,14 +377,14 @@
     <property role="TrG5h" value="_020_three_levels" />
     <node concept="2vmhmH" id="48_A4oY7gg9" role="2vn1q5">
       <property role="TrG5h" value="S1" />
+      <node concept="EupL4" id="3U$zn$8NiCW" role="2U2l5M">
+        <property role="EupNq" value="50" />
+        <property role="EupNo" value="100" />
+      </node>
       <node concept="19SGf9" id="48_A4oY7gga" role="2vnaTY">
         <node concept="19SUe$" id="48_A4oY7ggb" role="19SJt6">
-          <property role="19SUeA" value="Medium belief,&#10;high certainty" />
+          <property role="19SUeA" value="Average decision,&#10;high confidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="48_A4oY7ggc" role="2U2l5M">
-        <property role="FV0bb" value="50" />
-        <property role="FV0bc" value="100" />
       </node>
     </node>
     <node concept="37mRI7" id="48_A4oY7ggd" role="lGtFl">
@@ -538,8 +535,8 @@
         <node concept="gqqVs" id="48_A4oY7giV" role="37mO4d">
           <property role="gqqTZ" value="37.49995" />
           <property role="gqqTW" value="281.0002983642578" />
-          <property role="gqqTX" value="120.0" />
-          <property role="gqqTy" value="59.0" />
+          <property role="gqqTX" value="156.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -548,8 +545,8 @@
         <node concept="gqqVs" id="48_A4oY7giX" role="37mO4d">
           <property role="gqqTZ" value="190.99995" />
           <property role="gqqTW" value="281.0002983642578" />
-          <property role="gqqTX" value="120.0" />
-          <property role="gqqTy" value="59.0" />
+          <property role="gqqTX" value="162.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -558,8 +555,8 @@
         <node concept="gqqVs" id="48_A4oY7giZ" role="37mO4d">
           <property role="gqqTZ" value="125.49995000000001" />
           <property role="gqqTW" value="162.0001" />
-          <property role="gqqTX" value="117.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="120.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -621,7 +618,7 @@
           <property role="gqqTZ" value="351.0" />
           <property role="gqqTW" value="281.0002983642578" />
           <property role="gqqTX" value="152.0" />
-          <property role="gqqTy" value="59.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -630,8 +627,8 @@
         <node concept="gqqVs" id="48_A4oY7gVp" role="37mO4d">
           <property role="gqqTZ" value="369.0" />
           <property role="gqqTW" value="162.0001" />
-          <property role="gqqTX" value="116.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="121.0" />
+          <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -659,7 +656,7 @@
           <property role="gqqTZ" value="258.0" />
           <property role="gqqTW" value="67.0" />
           <property role="gqqTX" value="152.0" />
-          <property role="gqqTy" value="45.0" />
+          <property role="gqqTy" value="47.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -669,7 +666,7 @@
           <property role="gqqTZ" value="287.0" />
           <property role="gqqTW" value="-17.0" />
           <property role="gqqTX" value="94.0" />
-          <property role="gqqTy" value="41.0" />
+          <property role="gqqTy" value="47.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -742,14 +739,11 @@
     </node>
     <node concept="2vmhmH" id="48_A4oY7ggK" role="2vn1q5">
       <property role="TrG5h" value="S2" />
+      <node concept="EupL4" id="3U$zn$8NiKs" role="2U2l5M" />
       <node concept="19SGf9" id="48_A4oY7ggL" role="2vnaTY">
         <node concept="19SUe$" id="48_A4oY7ggM" role="19SJt6">
-          <property role="19SUeA" value="Full disbelief,&#10;low certainty" />
+          <property role="19SUeA" value="Strongly rejectable,&#10;no confidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="48_A4oY7ggN" role="2U2l5M">
-        <property role="FV0bb" value="0" />
-        <property role="FV0bc" value="0" />
       </node>
     </node>
     <node concept="2vn7WC" id="48_A4oY7ggO" role="2vn1q5">
@@ -776,13 +770,13 @@
     </node>
     <node concept="2vmhmH" id="48_A4oY7gys" role="2vn1q5">
       <property role="TrG5h" value="S3" />
+      <node concept="EupL4" id="3U$zn$8NiOg" role="2U2l5M">
+        <property role="EupNq" value="75" />
+      </node>
       <node concept="19SGf9" id="48_A4oY7gyt" role="2vnaTY">
         <node concept="19SUe$" id="48_A4oY7gyu" role="19SJt6">
-          <property role="19SUeA" value="Slight belief,&#10;low certainty" />
+          <property role="19SUeA" value="acceptable,&#10;no confidence" />
         </node>
-      </node>
-      <node concept="GlCK6" id="48_A4oY7g_w" role="2U2l5M">
-        <property role="FV0bb" value="75" />
       </node>
     </node>
     <node concept="2vn7WC" id="48_A4oY7gU9" role="2vn1q5">

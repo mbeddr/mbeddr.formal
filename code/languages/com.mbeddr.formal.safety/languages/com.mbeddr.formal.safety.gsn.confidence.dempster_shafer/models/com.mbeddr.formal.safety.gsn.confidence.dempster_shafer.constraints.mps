@@ -11,11 +11,17 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7" name="jetbrains.mps.lang.context" version="0" />
     <use id="ad93155d-79b2-4759-b10c-55123e763903" name="jetbrains.mps.lang.messages" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="6oah" ref="r:c3ace323-0a57-4f8d-b471-fad629604601(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure)" implicit="true" />
-    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
+    <import index="6oah" ref="r:c3ace323-0a57-4f8d-b471-fad629604601(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure)" />
+    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
+    <import index="c366" ref="r:3118059b-5e2a-4cf8-b2e0-4218ed318875(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.editor)" />
+    <import index="amuf" ref="r:b775b7e1-c824-441c-afe0-ed9eafc83544(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -34,6 +40,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -56,14 +63,20 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
       <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -87,17 +100,28 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="1M2fIO" id="48_A4oY3TH3">
@@ -202,6 +226,92 @@
               </node>
             </node>
             <node concept="3x8VRR" id="3AZUhOjM1GP" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3U$zn$8M18u">
+    <ref role="1M2myG" to="6oah:6sbhWpXO2AV" resolve="AssignedTrust" />
+    <node concept="9S07l" id="3U$zn$8M_al" role="9Vyp8">
+      <node concept="3clFbS" id="3U$zn$8M_am" role="2VODD2">
+        <node concept="3clFbF" id="3U$zn$8M_aH" role="3cqZAp">
+          <node concept="2OqwBi" id="3U$zn$8MGAa" role="3clFbG">
+            <node concept="2OqwBi" id="3U$zn$8MFMi" role="2Oq$k0">
+              <node concept="2OqwBi" id="3U$zn$8MDCR" role="2Oq$k0">
+                <node concept="2OqwBi" id="3U$zn$8M_RI" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3U$zn$8M_lm" role="2Oq$k0">
+                    <node concept="nLn13" id="3U$zn$8M_aG" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="3U$zn$8M_uG" role="2OqNvi">
+                      <node concept="1xMEDy" id="3U$zn$8M_uI" role="1xVPHs">
+                        <node concept="chp4Y" id="3U$zn$8M_yA" role="ri$Ld">
+                          <ref role="cht4Q" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="3U$zn$8M_E7" role="1xVPHs" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="3U$zn$8MBCm" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3Px2xUV1gzV" resolve="attributes" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="3U$zn$8MFxl" role="2OqNvi">
+                  <node concept="chp4Y" id="3U$zn$8MFyM" role="v3oSu">
+                    <ref role="cht4Q" to="6oah:3AZUhOjLBlp" resolve="Trustworthiness" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="3U$zn$8MGk$" role="2OqNvi" />
+            </node>
+            <node concept="3x8VRR" id="3U$zn$8MGXo" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3U$zn$8N703">
+    <ref role="1M2myG" to="6oah:18nEFuhW1y_" resolve="ComputedTrust" />
+    <node concept="9S07l" id="3U$zn$8N704" role="9Vyp8">
+      <node concept="3clFbS" id="3U$zn$8N705" role="2VODD2">
+        <node concept="3clFbF" id="3U$zn$8N73Y" role="3cqZAp">
+          <node concept="1Wc70l" id="3U$zn$8N4jp" role="3clFbG">
+            <node concept="2OqwBi" id="3U$zn$8N4jq" role="3uHU7B">
+              <node concept="2OqwBi" id="3U$zn$8N4jr" role="2Oq$k0">
+                <node concept="2OqwBi" id="3U$zn$8N4js" role="2Oq$k0">
+                  <node concept="nLn13" id="3U$zn$8N7$_" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="3U$zn$8N4ju" role="2OqNvi">
+                    <node concept="1xMEDy" id="3U$zn$8N4jv" role="1xVPHs">
+                      <node concept="chp4Y" id="3U$zn$8N4jw" role="ri$Ld">
+                        <ref role="cht4Q" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="3U$zn$8N7Nw" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="3U$zn$8N4jx" role="2OqNvi">
+                  <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="3U$zn$8N4jy" role="2OqNvi" />
+            </node>
+            <node concept="3y3z36" id="3U$zn$8N4jz" role="3uHU7w">
+              <node concept="10Nm6u" id="3U$zn$8N4j$" role="3uHU7w" />
+              <node concept="2YIFZM" id="3U$zn$8QfOr" role="3uHU7B">
+                <ref role="37wK5l" to="amuf:1vtrvyEeejL" resolve="computeConfidenceBasedOnDownwardElements" />
+                <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferTrustComputingUtils" />
+                <node concept="2OqwBi" id="3U$zn$8QfOs" role="37wK5m">
+                  <node concept="nLn13" id="3U$zn$8QfOt" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="3U$zn$8QfOu" role="2OqNvi">
+                    <node concept="1xMEDy" id="3U$zn$8QfOv" role="1xVPHs">
+                      <node concept="chp4Y" id="3U$zn$8QfOw" role="ri$Ld">
+                        <ref role="cht4Q" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="3U$zn$8QfOx" role="1xVPHs" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

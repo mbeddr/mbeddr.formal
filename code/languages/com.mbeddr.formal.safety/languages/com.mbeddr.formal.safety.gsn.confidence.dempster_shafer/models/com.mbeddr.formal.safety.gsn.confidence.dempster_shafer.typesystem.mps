@@ -355,244 +355,6 @@
       <ref role="1YaFvo" to="6oah:48_A4oY40ha" resolve="Weight" />
     </node>
   </node>
-  <node concept="18kY7G" id="5WyjFZRs5$Q">
-    <property role="TrG5h" value="check_ConfidenceAndBeliefRefinement" />
-    <node concept="3clFbS" id="5WyjFZRs5$R" role="18ibNy">
-      <node concept="3cpWs8" id="5WyjFZRs9Tl" role="3cqZAp">
-        <node concept="3cpWsn" id="5WyjFZRs9Tm" role="3cpWs9">
-          <property role="TrG5h" value="conf" />
-          <node concept="3Tqbb2" id="5WyjFZRs9Tk" role="1tU5fm">
-            <ref role="ehGHo" to="6oah:6dwPixfd_$I" resolve="Confidence" />
-          </node>
-          <node concept="2OqwBi" id="5WyjFZRs9Tn" role="33vP2m">
-            <node concept="2OqwBi" id="5WyjFZRs9To" role="2Oq$k0">
-              <node concept="2OqwBi" id="5WyjFZRs9Tp" role="2Oq$k0">
-                <node concept="1YBJjd" id="5WyjFZRs9Tq" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
-                </node>
-                <node concept="3Tsc0h" id="5WyjFZRs9Tr" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3Px2xUV1gzV" resolve="attributes" />
-                </node>
-              </node>
-              <node concept="v3k3i" id="5WyjFZRs9Ts" role="2OqNvi">
-                <node concept="chp4Y" id="5WyjFZRs9Tt" role="v3oSu">
-                  <ref role="cht4Q" to="6oah:6dwPixfd_$I" resolve="Confidence" />
-                </node>
-              </node>
-            </node>
-            <node concept="1uHKPH" id="5WyjFZRs9Tu" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="5WyjFZRs5_2" role="3cqZAp">
-        <node concept="2OqwBi" id="5WyjFZRsa46" role="3clFbw">
-          <node concept="37vLTw" id="5WyjFZRs9Tv" role="2Oq$k0">
-            <ref role="3cqZAo" node="5WyjFZRs9Tm" resolve="conf" />
-          </node>
-          <node concept="3w_OXm" id="5WyjFZRsaiI" role="2OqNvi" />
-        </node>
-        <node concept="3clFbS" id="5WyjFZRs5_4" role="3clFbx">
-          <node concept="3cpWs6" id="5WyjFZRsamQ" role="3cqZAp" />
-        </node>
-      </node>
-      <node concept="3clFbJ" id="5WyjFZRsaJ3" role="3cqZAp">
-        <node concept="3clFbS" id="5WyjFZRsaJ5" role="3clFbx">
-          <node concept="3cpWs6" id="5WyjFZRsfpX" role="3cqZAp" />
-        </node>
-        <node concept="2OqwBi" id="5WyjFZRsdo7" role="3clFbw">
-          <node concept="2OqwBi" id="5WyjFZRsaYg" role="2Oq$k0">
-            <node concept="1YBJjd" id="5WyjFZRsaJH" role="2Oq$k0">
-              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
-            </node>
-            <node concept="2qgKlT" id="5WyjFZRsbpr" role="2OqNvi">
-              <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
-            </node>
-          </node>
-          <node concept="1v1jN8" id="5WyjFZRsfoY" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="3clFbH" id="5WyjFZRsamS" role="3cqZAp" />
-      <node concept="3cpWs8" id="5WyjFZRsazz" role="3cqZAp">
-        <node concept="3cpWsn" id="5WyjFZRsaz$" role="3cpWs9">
-          <property role="TrG5h" value="myBelief" />
-          <node concept="10Oyi0" id="5WyjFZRsaqK" role="1tU5fm" />
-          <node concept="2OqwBi" id="5WyjFZRsaz_" role="33vP2m">
-            <node concept="37vLTw" id="5WyjFZRsazA" role="2Oq$k0">
-              <ref role="3cqZAo" node="5WyjFZRs9Tm" resolve="conf" />
-            </node>
-            <node concept="3TrcHB" id="5WyjFZRsazB" role="2OqNvi">
-              <ref role="3TsBF5" to="6oah:2QkJsC6ubW1" resolve="belief" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cpWs8" id="5WyjFZRsg9P" role="3cqZAp">
-        <node concept="3cpWsn" id="5WyjFZRsg9Q" role="3cpWs9">
-          <property role="TrG5h" value="computedBelief" />
-          <node concept="3uibUv" id="5WyjFZRu1bE" role="1tU5fm">
-            <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
-          </node>
-          <node concept="2YIFZM" id="5WyjFZRsg9R" role="33vP2m">
-            <ref role="37wK5l" to="amuf:5WyjFZRqOsQ" resolve="computeBeliefBasedOnDownwardElements" />
-            <ref role="1Pybhc" to="amuf:48_A4oY4APo" resolve="DempsterSchaferConfidenceComputingUtils" />
-            <node concept="1YBJjd" id="5WyjFZRsg9S" role="37wK5m">
-              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="5WyjFZRsIDr" role="3cqZAp">
-        <node concept="3clFbS" id="5WyjFZRsIDt" role="3clFbx">
-          <node concept="2MkqsV" id="5WyjFZRsJs7" role="3cqZAp">
-            <node concept="1YBJjd" id="5WyjFZRsJKA" role="1urrMF">
-              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
-            </node>
-            <node concept="3cpWs3" id="5WyjFZRsJsm" role="2MkJ7o">
-              <node concept="Xl_RD" id="5WyjFZRsJsn" role="3uHU7w">
-                <property role="Xl_RC" value=", the specified belief" />
-              </node>
-              <node concept="3cpWs3" id="5WyjFZRsJso" role="3uHU7B">
-                <node concept="3cpWs3" id="5WyjFZRsJsp" role="3uHU7B">
-                  <node concept="3cpWs3" id="5WyjFZRsJsq" role="3uHU7B">
-                    <node concept="2YIFZM" id="5WyjFZRsJsr" role="3uHU7w">
-                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
-                      <node concept="Xl_RD" id="5WyjFZRsJss" role="37wK5m">
-                        <property role="Xl_RC" value="%.2f" />
-                      </node>
-                      <node concept="37vLTw" id="5WyjFZRsJst" role="37wK5m">
-                        <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="5WyjFZRsJsu" role="3uHU7B">
-                      <property role="Xl_RC" value="computed belief is " />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="5WyjFZRsJsv" role="3uHU7w">
-                    <property role="Xl_RC" value=" and thereby smaller than " />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="5WyjFZRsJsw" role="3uHU7w">
-                  <ref role="3cqZAo" node="5WyjFZRsaz$" resolve="myBelief" />
-                </node>
-              </node>
-            </node>
-            <node concept="AMVWg" id="5WyjFZRsK43" role="lGtFl">
-              <property role="TrG5h" value="defined_belief_bigger_than_computed" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="5WyjFZRu1tB" role="3clFbw">
-          <node concept="3y3z36" id="5WyjFZRu2dm" role="3uHU7B">
-            <node concept="10Nm6u" id="5WyjFZRu2p_" role="3uHU7w" />
-            <node concept="37vLTw" id="5WyjFZRu1vM" role="3uHU7B">
-              <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
-            </node>
-          </node>
-          <node concept="3eOSWO" id="5WyjFZRsJrC" role="3uHU7w">
-            <node concept="37vLTw" id="5WyjFZRsJrc" role="3uHU7B">
-              <ref role="3cqZAo" node="5WyjFZRsaz$" resolve="myBelief" />
-            </node>
-            <node concept="37vLTw" id="5WyjFZRsJrb" role="3uHU7w">
-              <ref role="3cqZAo" node="5WyjFZRsg9Q" resolve="computedBelief" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="5WyjFZRsiYm" role="3cqZAp" />
-      <node concept="3cpWs8" id="5WyjFZRsaI3" role="3cqZAp">
-        <node concept="3cpWsn" id="5WyjFZRsaI6" role="3cpWs9">
-          <property role="TrG5h" value="myCertainty" />
-          <node concept="10Oyi0" id="5WyjFZRsaI1" role="1tU5fm" />
-          <node concept="2OqwBi" id="5WyjFZRsfM$" role="33vP2m">
-            <node concept="37vLTw" id="5WyjFZRsfBW" role="2Oq$k0">
-              <ref role="3cqZAo" node="5WyjFZRs9Tm" resolve="conf" />
-            </node>
-            <node concept="3TrcHB" id="5WyjFZRsfWY" role="2OqNvi">
-              <ref role="3TsBF5" to="6oah:2QkJsC6ubW6" resolve="certainty" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cpWs8" id="5WyjFZRskhL" role="3cqZAp">
-        <node concept="3cpWsn" id="5WyjFZRskhM" role="3cpWs9">
-          <property role="TrG5h" value="computedCertainty" />
-          <node concept="3uibUv" id="5WyjFZRucxz" role="1tU5fm">
-            <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
-          </node>
-          <node concept="2YIFZM" id="5WyjFZRslr8" role="33vP2m">
-            <ref role="37wK5l" to="amuf:5WyjFZRqQ9h" resolve="computeCertaintyBasedOnDownwardElements" />
-            <ref role="1Pybhc" to="amuf:48_A4oY4APo" resolve="DempsterSchaferConfidenceComputingUtils" />
-            <node concept="1YBJjd" id="5WyjFZRslr9" role="37wK5m">
-              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="5WyjFZRsKP1" role="3cqZAp">
-        <node concept="3clFbS" id="5WyjFZRsKP3" role="3clFbx">
-          <node concept="2MkqsV" id="5WyjFZRsM0J" role="3cqZAp">
-            <node concept="1YBJjd" id="5WyjFZRsMle" role="1urrMF">
-              <ref role="1YBMHb" node="5WyjFZRs5$T" resolve="gseb" />
-            </node>
-            <node concept="3cpWs3" id="5WyjFZRsM0Y" role="2MkJ7o">
-              <node concept="Xl_RD" id="5WyjFZRsM0Z" role="3uHU7w">
-                <property role="Xl_RC" value=", the specified certainty" />
-              </node>
-              <node concept="3cpWs3" id="5WyjFZRsM10" role="3uHU7B">
-                <node concept="3cpWs3" id="5WyjFZRsM11" role="3uHU7B">
-                  <node concept="3cpWs3" id="5WyjFZRsM12" role="3uHU7B">
-                    <node concept="2YIFZM" id="5WyjFZRsM13" role="3uHU7w">
-                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
-                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                      <node concept="Xl_RD" id="5WyjFZRsM14" role="37wK5m">
-                        <property role="Xl_RC" value="%.2f" />
-                      </node>
-                      <node concept="37vLTw" id="5WyjFZRsM15" role="37wK5m">
-                        <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="5WyjFZRsM16" role="3uHU7B">
-                      <property role="Xl_RC" value="computed certainty is " />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="5WyjFZRsM17" role="3uHU7w">
-                    <property role="Xl_RC" value=" and thereby smaller than " />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="5WyjFZRsM18" role="3uHU7w">
-                  <ref role="3cqZAo" node="5WyjFZRsaI6" resolve="myCertainty" />
-                </node>
-              </node>
-            </node>
-            <node concept="AMVWg" id="5WyjFZRsMmU" role="lGtFl">
-              <property role="TrG5h" value="defined_certainty_bigger_than_computed" />
-            </node>
-          </node>
-        </node>
-        <node concept="1Wc70l" id="5WyjFZRu2qd" role="3clFbw">
-          <node concept="3y3z36" id="5WyjFZRu3D_" role="3uHU7B">
-            <node concept="10Nm6u" id="5WyjFZRu3Vx" role="3uHU7w" />
-            <node concept="37vLTw" id="5WyjFZRu2Lh" role="3uHU7B">
-              <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
-            </node>
-          </node>
-          <node concept="3eOSWO" id="5WyjFZRsLMq" role="3uHU7w">
-            <node concept="37vLTw" id="5WyjFZRsLMF" role="3uHU7w">
-              <ref role="3cqZAo" node="5WyjFZRskhM" resolve="computedCertainty" />
-            </node>
-            <node concept="37vLTw" id="5WyjFZRsKXD" role="3uHU7B">
-              <ref role="3cqZAo" node="5WyjFZRsaI6" resolve="myCertainty" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5WyjFZRs5$T" role="1YuTPh">
-      <property role="TrG5h" value="gseb" />
-      <ref role="1YaFvo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
-    </node>
-  </node>
   <node concept="18kY7G" id="3AZUhOkgy6X">
     <property role="TrG5h" value="check_DecisionAndConfidenceRefinement" />
     <node concept="3clFbS" id="3AZUhOkgy6Y" role="18ibNy">
@@ -670,10 +432,10 @@
           <node concept="3uibUv" id="3AZUhOkgEf7" role="1tU5fm">
             <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
           </node>
-          <node concept="2YIFZM" id="3AZUhOkppcK" role="33vP2m">
-            <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferConfidenceComputingUtils1" />
+          <node concept="2YIFZM" id="3U$zn$8Qie1" role="33vP2m">
             <ref role="37wK5l" to="amuf:1vtrvyEeeih" resolve="computeDecisionBasedOnDownwardElements" />
-            <node concept="1YBJjd" id="3AZUhOkppcL" role="37wK5m">
+            <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferTrustComputingUtils" />
+            <node concept="1YBJjd" id="3U$zn$8Qie2" role="37wK5m">
               <ref role="1YBMHb" node="3AZUhOkgy8u" resolve="gseb" />
             </node>
           </node>
@@ -716,7 +478,7 @@
               </node>
             </node>
             <node concept="AMVWg" id="3AZUhOkgy7N" role="lGtFl">
-              <property role="TrG5h" value="defined_belief_bigger_than_computed" />
+              <property role="TrG5h" value="defined_Decision_bigger_than_computed" />
             </node>
           </node>
         </node>
@@ -758,10 +520,10 @@
           <node concept="3uibUv" id="3AZUhOkgy84" role="1tU5fm">
             <ref role="3uigEE" to="wyt6:~Float" resolve="Float" />
           </node>
-          <node concept="2YIFZM" id="3AZUhOkpten" role="33vP2m">
-            <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferConfidenceComputingUtils1" />
+          <node concept="2YIFZM" id="3U$zn$8Qiub" role="33vP2m">
             <ref role="37wK5l" to="amuf:1vtrvyEeejL" resolve="computeConfidenceBasedOnDownwardElements" />
-            <node concept="1YBJjd" id="3AZUhOkpteo" role="37wK5m">
+            <ref role="1Pybhc" to="amuf:3AZUhOjMEBZ" resolve="DempsterSchaferTrustComputingUtils" />
+            <node concept="1YBJjd" id="3U$zn$8Qiuc" role="37wK5m">
               <ref role="1YBMHb" node="3AZUhOkgy8u" resolve="gseb" />
             </node>
           </node>
@@ -804,7 +566,7 @@
               </node>
             </node>
             <node concept="AMVWg" id="3AZUhOkgy8m" role="lGtFl">
-              <property role="TrG5h" value="defined_certainty_bigger_than_computed" />
+              <property role="TrG5h" value="defined_Confidence_bigger_than_computed" />
             </node>
           </node>
         </node>
@@ -838,9 +600,6 @@
         <node concept="3cpWsn" id="6sbhWpY6ZHN" role="3cpWs9">
           <property role="TrG5h" value="lb" />
           <node concept="10OMs4" id="6sbhWpY6ZHI" role="1tU5fm" />
-          <node concept="3cmrfG" id="6sbhWpY6ZIX" role="33vP2m">
-            <property role="3cmrfH" value="0" />
-          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="6sbhWpY6G7y" role="3cqZAp">
