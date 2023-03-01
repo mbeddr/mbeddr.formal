@@ -59,6 +59,7 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -73,6 +74,10 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -91,9 +96,6 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
-      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
-        <child id="1175517761460" name="condition" index="2MkoU_" />
-      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -268,6 +270,26 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="3U$zn$8STV8" role="3cqZAp">
+            <node concept="d57v9" id="3U$zn$8STVa" role="3clFbG">
+              <node concept="2YIFZM" id="3U$zn$8STVb" role="37vLTx">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="3U$zn$8STVc" role="37wK5m">
+                  <node concept="37vLTw" id="3U$zn$8STVd" role="2Oq$k0">
+                    <ref role="3cqZAo" node="48_A4oY47gh" resolve="w" />
+                  </node>
+                  <node concept="3TrcHB" id="3U$zn$8STVe" role="2OqNvi">
+                    <ref role="3TsBF5" to="6oah:48_A4oY40ig" resolve="weight" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="3U$zn$8STVf" role="37vLTJ">
+                <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="3U$zn$8STCX" role="3cqZAp" />
           <node concept="3clFbJ" id="48_A4oY47iY" role="3cqZAp">
             <node concept="3clFbS" id="48_A4oY47j0" role="3clFbx">
               <node concept="2MkqsV" id="48_A4oY47G7" role="3cqZAp">
@@ -306,26 +328,28 @@
                 <node concept="3w_OXm" id="48_A4oY47BT" role="2OqNvi" />
               </node>
             </node>
-            <node concept="9aQIb" id="48_A4oY48GU" role="9aQIa">
-              <node concept="3clFbS" id="48_A4oY48GV" role="9aQI4">
-                <node concept="3clFbF" id="48_A4oY48H9" role="3cqZAp">
-                  <node concept="d57v9" id="48_A4oY49fF" role="3clFbG">
-                    <node concept="2YIFZM" id="48_A4oY4aFq" role="37vLTx">
-                      <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
-                      <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
-                      <node concept="2OqwBi" id="48_A4oY49uY" role="37wK5m">
-                        <node concept="37vLTw" id="48_A4oY49fS" role="2Oq$k0">
-                          <ref role="3cqZAo" node="48_A4oY47gh" resolve="w" />
-                        </node>
-                        <node concept="3TrcHB" id="48_A4oY49Dj" role="2OqNvi">
-                          <ref role="3TsBF5" to="6oah:48_A4oY40ig" resolve="weight" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="48_A4oY48H8" role="37vLTJ">
+            <node concept="3eNFk2" id="3U$zn$8STWL" role="3eNLev">
+              <node concept="3clFbS" id="3U$zn$8STWM" role="3eOfB_">
+                <node concept="2MkqsV" id="3U$zn$8SUET" role="3cqZAp">
+                  <node concept="37vLTw" id="3U$zn$8SUFg" role="1urrMF">
+                    <ref role="3cqZAo" node="48_A4oY41bC" resolve="source" />
+                  </node>
+                  <node concept="3cpWs3" id="3U$zn$8SXLO" role="2MkJ7o">
+                    <node concept="37vLTw" id="3U$zn$8SXMZ" role="3uHU7w">
                       <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
                     </node>
+                    <node concept="Xl_RD" id="3U$zn$8SUF5" role="3uHU7B">
+                      <property role="Xl_RC" value="the sum of all weights of outgoing connections shall be less than or equal to 1, the current sum of weights is = " />
+                    </node>
                   </node>
+                </node>
+              </node>
+              <node concept="3eOSWO" id="3U$zn$8SUyX" role="3eO9$A">
+                <node concept="3cmrfG" id="3U$zn$8SUz0" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="37vLTw" id="3U$zn$8SU05" role="3uHU7B">
+                  <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
                 </node>
               </node>
             </node>
@@ -333,22 +357,6 @@
         </node>
       </node>
       <node concept="3clFbH" id="48_A4oY4bnt" role="3cqZAp" />
-      <node concept="2Mj0R9" id="48_A4oY4buQ" role="3cqZAp">
-        <node concept="3clFbC" id="48_A4oY4c5x" role="2MkoU_">
-          <node concept="3cmrfG" id="48_A4oY4cn5" role="3uHU7w">
-            <property role="3cmrfH" value="1" />
-          </node>
-          <node concept="37vLTw" id="48_A4oY4byT" role="3uHU7B">
-            <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
-          </node>
-        </node>
-        <node concept="Xl_RD" id="48_A4oY4cJQ" role="2MkJ7o">
-          <property role="Xl_RC" value="the sum of all weights of outgoing connections shall be 1" />
-        </node>
-        <node concept="37vLTw" id="48_A4oY4cMc" role="1urrMF">
-          <ref role="3cqZAo" node="48_A4oY41bC" resolve="source" />
-        </node>
-      </node>
     </node>
     <node concept="1YaCAy" id="48_A4oY40jU" role="1YuTPh">
       <property role="TrG5h" value="weight" />
