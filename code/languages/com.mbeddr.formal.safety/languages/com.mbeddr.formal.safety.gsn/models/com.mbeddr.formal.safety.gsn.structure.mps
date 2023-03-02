@@ -10,7 +10,6 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
-    <import index="6oah" ref="r:c3ace323-0a57-4f8d-b471-fad629604601(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -241,11 +240,6 @@
     </node>
     <node concept="PrWs8" id="4J4sUayh4sl" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
-    </node>
-    <node concept="1TJgyj" id="3AZUhOjONYs" role="1TKVEi">
-      <property role="IQ2ns" value="4161300891809562524" />
-      <property role="20kJfa" value="trust" />
-      <ref role="20lvS9" to="6oah:3AZUhOjLBlp" resolve="Trustworthiness" />
     </node>
   </node>
   <node concept="1TIwiD" id="3GRi4m$rlnF">

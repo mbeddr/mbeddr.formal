@@ -107,7 +107,7 @@
     <property role="EcuMT" value="1303698322551216293" />
     <property role="TrG5h" value="ComputedTrust" />
     <property role="34LRSv" value="Computed Trust" />
-    <property role="R4oN_" value="Trust assigned " />
+    <property role="R4oN_" value="Trust computed based on assigned trust " />
     <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     <node concept="1TJgyi" id="18nEFui61Dd" role="1TKVEl">
       <property role="IQ2nx" value="1303698322553838157" />
@@ -124,7 +124,7 @@
     <property role="EcuMT" value="1303698322554674308" />
     <property role="TrG5h" value="ArgumentType" />
     <property role="34LRSv" value="Argument Type" />
-    <property role="R4oN_" value="Type of connection between the Sub-Goals" />
+    <property role="R4oN_" value="Type of connection between the Sub-nodes" />
     <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
     <node concept="1TJgyi" id="18nEFui9dM5" role="1TKVEl">
       <property role="IQ2nx" value="1303698322554674309" />

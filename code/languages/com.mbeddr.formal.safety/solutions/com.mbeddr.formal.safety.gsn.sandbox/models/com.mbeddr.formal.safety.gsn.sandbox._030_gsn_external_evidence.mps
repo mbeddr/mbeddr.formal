@@ -88,7 +88,6 @@
       <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
         <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
         <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
-        <property id="4946522816140921857" name="success" index="1_P5xa" />
         <property id="4946522816140922055" name="dateLong" index="1_P5yc" />
       </concept>
     </language>
@@ -111,7 +110,7 @@
         <node concept="gqqVs" id="3wuU_o8g42o" role="37mO4d">
           <property role="gqqTZ" value="57.0" />
           <property role="gqqTW" value="24.0" />
-          <property role="gqqTX" value="190.0" />
+          <property role="gqqTX" value="180.0" />
           <property role="gqqTy" value="52.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -211,10 +210,9 @@
       <property role="3t1IUl" value="nusmv _010_binary_counter.smv" />
       <property role="3t1IUb" value="^-- specification .* is false" />
       <property role="TrG5h" value="Sn02" />
-      <property role="1_P5yc" value="Mon Feb 27 10:20:53 CET 2023" />
-      <property role="1_P5wC" value="27-02-2023 10:20:53" />
+      <property role="1_P5yc" value="Sun Mar 22 16:05:22 CET 2020" />
+      <property role="1_P5wC" value="22-03-2020 16:05:22" />
       <property role="1_P2tN" value="42" />
-      <property role="1_P5xa" value="true" />
       <node concept="9PVaO" id="1YvQxlwNLms" role="Kn92X">
         <property role="1RwFax" value="true" />
         <property role="3N1Lgt" value="external_evidence" />
@@ -263,7 +261,7 @@
           <property role="gqqTZ" value="56.0" />
           <property role="gqqTW" value="63.0" />
           <property role="gqqTX" value="245.0" />
-          <property role="gqqTy" value="46.0" />
+          <property role="gqqTy" value="41.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>

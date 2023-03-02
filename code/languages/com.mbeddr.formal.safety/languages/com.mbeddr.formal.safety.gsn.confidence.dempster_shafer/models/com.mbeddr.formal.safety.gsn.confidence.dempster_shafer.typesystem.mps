@@ -59,7 +59,6 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
-        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -74,10 +73,6 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
-        <child id="1206060619838" name="condition" index="3eO9$A" />
-        <child id="1206060644605" name="statementList" index="3eOfB_" />
-      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -328,29 +323,30 @@
                 <node concept="3w_OXm" id="48_A4oY47BT" role="2OqNvi" />
               </node>
             </node>
-            <node concept="3eNFk2" id="3U$zn$8STWL" role="3eNLev">
-              <node concept="3clFbS" id="3U$zn$8STWM" role="3eOfB_">
-                <node concept="2MkqsV" id="3U$zn$8SUET" role="3cqZAp">
-                  <node concept="37vLTw" id="3U$zn$8SUFg" role="1urrMF">
-                    <ref role="3cqZAo" node="48_A4oY41bC" resolve="source" />
+          </node>
+          <node concept="3clFbJ" id="6RMm_$5icNh" role="3cqZAp">
+            <node concept="3clFbS" id="6RMm_$5icNj" role="3clFbx">
+              <node concept="2MkqsV" id="3U$zn$8SUET" role="3cqZAp">
+                <node concept="37vLTw" id="3U$zn$8SUFg" role="1urrMF">
+                  <ref role="3cqZAo" node="48_A4oY41bC" resolve="source" />
+                </node>
+                <node concept="3cpWs3" id="3U$zn$8SXLO" role="2MkJ7o">
+                  <node concept="37vLTw" id="3U$zn$8SXMZ" role="3uHU7w">
+                    <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
                   </node>
-                  <node concept="3cpWs3" id="3U$zn$8SXLO" role="2MkJ7o">
-                    <node concept="37vLTw" id="3U$zn$8SXMZ" role="3uHU7w">
-                      <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
-                    </node>
-                    <node concept="Xl_RD" id="3U$zn$8SUF5" role="3uHU7B">
-                      <property role="Xl_RC" value="the sum of all weights of outgoing connections shall be less than or equal to 1, the current sum of weights is = " />
-                    </node>
+                  <node concept="Xl_RD" id="3U$zn$8SUF5" role="3uHU7B">
+                    <property role="Xl_RC" value="the sum of all weights of outgoing connections shall be less than or equal to 1, the current sum of weights is = " />
                   </node>
                 </node>
               </node>
-              <node concept="3eOSWO" id="3U$zn$8SUyX" role="3eO9$A">
-                <node concept="3cmrfG" id="3U$zn$8SUz0" role="3uHU7w">
-                  <property role="3cmrfH" value="1" />
-                </node>
-                <node concept="37vLTw" id="3U$zn$8SU05" role="3uHU7B">
-                  <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
-                </node>
+              <node concept="3clFbH" id="6RMm_$5icNi" role="3cqZAp" />
+            </node>
+            <node concept="3eOSWO" id="6RMm_$5id_4" role="3clFbw">
+              <node concept="3cmrfG" id="6RMm_$5id_7" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="37vLTw" id="6RMm_$5icNY" role="3uHU7B">
+                <ref role="3cqZAo" node="48_A4oY429j" resolve="totalWeight" />
               </node>
             </node>
           </node>

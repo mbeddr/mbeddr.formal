@@ -225,7 +225,7 @@
       </node>
       <node concept="3cpWs8" id="6sbhWpY6nA4" role="3cqZAp">
         <node concept="3cpWsn" id="6sbhWpY6nA7" role="3cpWs9">
-          <property role="TrG5h" value="countGS" />
+          <property role="TrG5h" value="countGoalToSolConn" />
           <node concept="10Oyi0" id="6sbhWpY6nA2" role="1tU5fm" />
           <node concept="3cmrfG" id="6sbhWpY6nBe" role="33vP2m">
             <property role="3cmrfH" value="0" />
@@ -234,7 +234,7 @@
       </node>
       <node concept="3cpWs8" id="18nEFuibgpI" role="3cqZAp">
         <node concept="3cpWsn" id="18nEFuibgpL" role="3cpWs9">
-          <property role="TrG5h" value="countGG" />
+          <property role="TrG5h" value="countGoalToGoalConn" />
           <node concept="10Oyi0" id="18nEFuibgpG" role="1tU5fm" />
           <node concept="3cmrfG" id="18nEFuibgsh" role="33vP2m">
             <property role="3cmrfH" value="0" />
@@ -292,7 +292,7 @@
               <node concept="3clFbF" id="6sbhWpY6rho" role="3cqZAp">
                 <node concept="3uNrnE" id="6sbhWpY6rXm" role="3clFbG">
                   <node concept="37vLTw" id="6sbhWpY6rXo" role="2$L3a6">
-                    <ref role="3cqZAo" node="6sbhWpY6nA7" resolve="countGS" />
+                    <ref role="3cqZAo" node="6sbhWpY6nA7" resolve="countGoalToSolConn" />
                   </node>
                 </node>
               </node>
@@ -341,7 +341,7 @@
               <node concept="3clFbF" id="18nEFuibgt5" role="3cqZAp">
                 <node concept="3uNrnE" id="18nEFuibgt6" role="3clFbG">
                   <node concept="37vLTw" id="18nEFuibgt7" role="2$L3a6">
-                    <ref role="3cqZAo" node="18nEFuibgpL" resolve="countGG" />
+                    <ref role="3cqZAo" node="18nEFuibgpL" resolve="countGoalToGoalConn" />
                   </node>
                 </node>
               </node>
@@ -353,11 +353,11 @@
       <node concept="3clFbJ" id="6sbhWpY6sh0" role="3cqZAp">
         <node concept="3clFbS" id="6sbhWpY6sh2" role="3clFbx">
           <node concept="2MkqsV" id="6sbhWpY6s_z" role="3cqZAp">
-            <node concept="Xl_RD" id="6sbhWpY6s_$" role="2MkJ7o">
-              <property role="Xl_RC" value="Goal must not be connected to multiple solutions directly (Use a strategy)" />
-            </node>
             <node concept="1YBJjd" id="6sbhWpY6sAc" role="1urrMF">
               <ref role="1YBMHb" node="6sbhWpY6iCM" resolve="gseb" />
+            </node>
+            <node concept="Xl_RD" id="6RMm_$5fKqq" role="2MkJ7o">
+              <property role="Xl_RC" value="ADMT GSN design recommendations strongly recommend that a Goal shall not be connected to multiple Solutions directly. Please use strategy in-between" />
             </node>
           </node>
         </node>
@@ -366,7 +366,7 @@
             <property role="3cmrfH" value="2" />
           </node>
           <node concept="37vLTw" id="6sbhWpY6sjj" role="3uHU7B">
-            <ref role="3cqZAo" node="6sbhWpY6nA7" resolve="countGS" />
+            <ref role="3cqZAo" node="6sbhWpY6nA7" resolve="countGoalToSolConn" />
           </node>
         </node>
       </node>
@@ -374,7 +374,7 @@
         <node concept="3clFbS" id="18nEFuibhij" role="3clFbx">
           <node concept="2MkqsV" id="18nEFuibhik" role="3cqZAp">
             <node concept="Xl_RD" id="18nEFuibhil" role="2MkJ7o">
-              <property role="Xl_RC" value="ADMT GSN design recommendations strongly recommend that goal shall not be connected to multiple sub-goals. Please use strategy in-between" />
+              <property role="Xl_RC" value="ADMT GSN design recommendations strongly recommend that a Goal shall not be connected to multiple Sub-Goals directly. Please use strategy in-between" />
             </node>
             <node concept="1YBJjd" id="18nEFuibhim" role="1urrMF">
               <ref role="1YBMHb" node="6sbhWpY6iCM" resolve="gseb" />
@@ -386,7 +386,7 @@
             <property role="3cmrfH" value="2" />
           </node>
           <node concept="37vLTw" id="18nEFuibhip" role="3uHU7B">
-            <ref role="3cqZAo" node="18nEFuibgpL" resolve="countGG" />
+            <ref role="3cqZAo" node="18nEFuibgpL" resolve="countGoalToGoalConn" />
           </node>
         </node>
       </node>
