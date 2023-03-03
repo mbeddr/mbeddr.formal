@@ -66,6 +66,9 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -84,6 +87,7 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -198,6 +202,13 @@
       <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
+      <concept id="6626851894249711936" name="jetbrains.mps.lang.extension.structure.ExtensionPointExpression" flags="nn" index="2O5UvJ">
+        <reference id="6626851894249712469" name="extensionPoint" index="2O5UnU" />
+      </concept>
+      <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
+      <concept id="3175313036448544056" name="jetbrains.mps.lang.extension.structure.ExtensionPointType" flags="in" index="Sf$Xq">
+        <reference id="3175313036448544057" name="extensionPoint" index="Sf$Xr" />
+      </concept>
       <concept id="126958800891274162" name="jetbrains.mps.lang.extension.structure.Extension" flags="ig" index="1lYeZD">
         <reference id="126958800891274597" name="extensionPoint" index="1lYe$Y" />
       </concept>
@@ -308,6 +319,14 @@
       </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
@@ -3839,6 +3858,120 @@
         <ref role="2vPdvl" node="xQCLqFsoU9" resolve="Goal Structure" />
       </node>
     </node>
+  </node>
+  <node concept="vrV6u" id="6RMm_$5Keao">
+    <property role="3GE5qa" value="connections" />
+    <property role="TrG5h" value="GsnConnectionDecoratorProvider" />
+    <node concept="3uibUv" id="6RMm_$5Ked_" role="luc8K">
+      <ref role="3uigEE" node="3x6hjiFQOKT" resolve="GsnConnectionDecorator" />
+    </node>
+  </node>
+  <node concept="312cEu" id="6RMm_$5LciV">
+    <property role="3GE5qa" value="connections" />
+    <property role="TrG5h" value="GSNConnectionsDecoratorsFacade" />
+    <node concept="2tJIrI" id="6RMm_$5Lckb" role="jymVt" />
+    <node concept="2tJIrI" id="6RMm_$5Lckd" role="jymVt" />
+    <node concept="2YIFZL" id="6RMm_$5LcB1" role="jymVt">
+      <property role="TrG5h" value="decorateConnection" />
+      <node concept="3clFbS" id="6RMm_$5LcB4" role="3clF47">
+        <node concept="3cpWs8" id="50UR0qsbqUA" role="3cqZAp">
+          <node concept="3cpWsn" id="50UR0qsbqUB" role="3cpWs9">
+            <property role="TrG5h" value="provider" />
+            <node concept="Sf$Xq" id="50UR0qsbqQl" role="1tU5fm">
+              <ref role="Sf$Xr" node="6RMm_$5Keao" resolve="GsnConnectionDecoratorProvider" />
+            </node>
+            <node concept="2O5UvJ" id="50UR0qsbqUC" role="33vP2m">
+              <ref role="2O5UnU" node="6RMm_$5Keao" resolve="GsnConnectionDecoratorProvider" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="50UR0qsbqVX" role="3cqZAp">
+          <node concept="2GrKxI" id="50UR0qsbqVZ" role="2Gsz3X">
+            <property role="TrG5h" value="p" />
+          </node>
+          <node concept="2OqwBi" id="50UR0qsbr9Z" role="2GsD0m">
+            <node concept="37vLTw" id="50UR0qsbqX2" role="2Oq$k0">
+              <ref role="3cqZAo" node="50UR0qsbqUB" resolve="provider" />
+            </node>
+            <node concept="SfwO_" id="50UR0qsbrhc" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="50UR0qsbqW3" role="2LFqv$">
+            <node concept="3clFbF" id="6RMm_$5LpIB" role="3cqZAp">
+              <node concept="2OqwBi" id="6RMm_$5LpOy" role="3clFbG">
+                <node concept="2GrUjf" id="6RMm_$5LpIA" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="50UR0qsbqVZ" resolve="p" />
+                </node>
+                <node concept="liA8E" id="6RMm_$5Lq0L" role="2OqNvi">
+                  <ref role="37wK5l" node="3x6hjiFQS1K" resolve="deco" />
+                  <node concept="37vLTw" id="6RMm_$5Lq4p" role="37wK5m">
+                    <ref role="3cqZAo" node="6RMm_$5LcID" resolve="conn" />
+                  </node>
+                  <node concept="37vLTw" id="6RMm_$5Lqe6" role="37wK5m">
+                    <ref role="3cqZAo" node="6RMm_$5K_5D" resolve="g" />
+                  </node>
+                  <node concept="37vLTw" id="6RMm_$5Lqj_" role="37wK5m">
+                    <ref role="3cqZAo" node="6RMm_$5K_5F" resolve="bounds" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6RMm_$5Lco3" role="1B3o_S" />
+      <node concept="3cqZAl" id="6RMm_$5LpBw" role="3clF45" />
+      <node concept="37vLTG" id="6RMm_$5LcID" role="3clF46">
+        <property role="TrG5h" value="conn" />
+        <node concept="3Tqbb2" id="6RMm_$5LcIC" role="1tU5fm">
+          <ref role="ehGHo" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6RMm_$5K_5D" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3uibUv" id="6RMm_$5K_5E" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6RMm_$5K_5F" role="3clF46">
+        <property role="TrG5h" value="bounds" />
+        <node concept="3uibUv" id="6RMm_$5K_5G" role="1tU5fm">
+          <ref role="3uigEE" to="fbzs:~Rectangle2D" resolve="Rectangle2D" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6RMm_$5LciW" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="3x6hjiFQOKT">
+    <property role="3GE5qa" value="connections" />
+    <property role="TrG5h" value="GsnConnectionDecorator" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="3x6hjiFQR_T" role="jymVt" />
+    <node concept="3clFb_" id="3x6hjiFQS1K" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="deco" />
+      <node concept="37vLTG" id="6RMm_$5Le3s" role="3clF46">
+        <property role="TrG5h" value="conn" />
+        <node concept="3Tqbb2" id="6RMm_$5Lejx" role="1tU5fm">
+          <ref role="ehGHo" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3x6hjiFQSdp" role="3clF46">
+        <property role="TrG5h" value="g" />
+        <node concept="3uibUv" id="3x6hjiFQSdq" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Graphics2D" resolve="Graphics2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3x6hjiFQSdr" role="3clF46">
+        <property role="TrG5h" value="bounds" />
+        <node concept="3uibUv" id="3x6hjiFQSds" role="1tU5fm">
+          <ref role="3uigEE" to="fbzs:~Rectangle2D" resolve="Rectangle2D" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3x6hjiFQS1N" role="3clF47" />
+      <node concept="3Tm1VV" id="3x6hjiFQRGH" role="1B3o_S" />
+      <node concept="3cqZAl" id="3x6hjiFQSd5" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="3x6hjiFQOKU" role="1B3o_S" />
   </node>
 </model>
 
