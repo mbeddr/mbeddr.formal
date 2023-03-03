@@ -90,6 +90,9 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
@@ -705,22 +708,22 @@
           </node>
         </node>
         <node concept="3clFbS" id="6sbhWpY6wld" role="3clFbx">
-          <node concept="2MkqsV" id="6sbhWpY6Aov" role="3cqZAp">
-            <node concept="3cpWs3" id="6sbhWpY6Cgh" role="2MkJ7o">
-              <node concept="3cpWs3" id="6sbhWpY6AET" role="3uHU7B">
-                <node concept="Xl_RD" id="6sbhWpY6AoF" role="3uHU7B">
+          <node concept="a7r0C" id="3x6hjiGh6$1" role="3cqZAp">
+            <node concept="1YBJjd" id="3x6hjiGh6_$" role="1urrMF">
+              <ref role="1YBMHb" node="6sbhWpY6wl4" resolve="trust" />
+            </node>
+            <node concept="3cpWs3" id="3x6hjiGh6$V" role="a7wSD">
+              <node concept="3cpWs3" id="3x6hjiGh6$W" role="3uHU7B">
+                <node concept="Xl_RD" id="3x6hjiGh6$X" role="3uHU7B">
                   <property role="Xl_RC" value="Confidence must be between " />
                 </node>
-                <node concept="37vLTw" id="3U$zn$8QNME" role="3uHU7w">
+                <node concept="37vLTw" id="3x6hjiGh6$Y" role="3uHU7w">
                   <ref role="3cqZAo" node="6sbhWpY6ZHN" resolve="lb" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="6sbhWpY6CvX" role="3uHU7w">
+              <node concept="Xl_RD" id="3x6hjiGh6$Z" role="3uHU7w">
                 <property role="Xl_RC" value=" and 100" />
               </node>
-            </node>
-            <node concept="1YBJjd" id="6sbhWpY6Djc" role="1urrMF">
-              <ref role="1YBMHb" node="6sbhWpY6wl4" resolve="trust" />
             </node>
           </node>
         </node>

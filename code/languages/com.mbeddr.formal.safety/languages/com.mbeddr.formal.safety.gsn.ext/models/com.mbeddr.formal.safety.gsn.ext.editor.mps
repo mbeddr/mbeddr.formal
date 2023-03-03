@@ -493,7 +493,7 @@
           <property role="3F0ifm" value="Documentation:" />
         </node>
         <node concept="1iCGBv" id="59fClQCJ6kN" role="3EZMnx">
-          <ref role="1NtTu8" to="lbo2:x1FXqHSaO" resolve="documentation" />
+          <ref role="1NtTu8" to="lbo2:x1FXqHSaO" resolve="documentationRef" />
           <node concept="1sVBvm" id="59fClQCJ6kP" role="1sWHZn">
             <node concept="3F0A7n" id="59fClQCJ6l1" role="2wV5jI">
               <property role="1Intyy" value="true" />
