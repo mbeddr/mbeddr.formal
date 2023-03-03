@@ -1,0 +1,5 @@
+mpsHomeDir=<path_to_mps_installation_directory>
+mbeddr.formal.home=<path_to_the_current_directory>
+
+github_username=<a github user name>
+github_token=<token for package access>
