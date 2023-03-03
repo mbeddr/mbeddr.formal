@@ -26,6 +26,8 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -37,13 +39,21 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
+      </concept>
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
+      <concept id="1223386653097" name="jetbrains.mps.lang.editor.structure.StrikeOutStyleSheet" flags="ln" index="3nxI2P" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -194,7 +204,13 @@
       <node concept="3EZMnI" id="2QkJsC6u5dH" role="3EZMnx">
         <node concept="l2Vlx" id="2QkJsC6u5dI" role="2iSdaV" />
         <node concept="3F0ifn" id="6dwPixfdByf" role="3EZMnx">
-          <property role="3F0ifm" value="confidence:" />
+          <property role="3F0ifm" value="confidence" />
+          <node concept="3nxI2P" id="5TwIvQFjoPl" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="5TwIvQFjoPz" role="3EZMnx">
+          <property role="3F0ifm" value="(deprecated, use trustworrhiness):" />
         </node>
       </node>
       <node concept="3EZMnI" id="2QkJsC6u5e1" role="3EZMnx">
@@ -202,9 +218,15 @@
         <node concept="3XFhqQ" id="2QkJsC6u5ea" role="3EZMnx" />
         <node concept="3F0ifn" id="2QkJsC6u5eg" role="3EZMnx">
           <property role="3F0ifm" value="belief" />
+          <node concept="3nxI2P" id="5TwIvQFjoPp" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="3F0ifn" id="2QkJsC6ucHn" role="3EZMnx">
           <property role="3F0ifm" value="(0 - full disbelief, 100 - full belief)" />
+          <node concept="3nxI2P" id="5TwIvQFjoPn" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="VSNWy" id="2QkJsC6wOLJ" role="3F10Kt">
           <property role="1lJzqX" value="11" />
@@ -428,9 +450,15 @@
         <node concept="3XFhqQ" id="2QkJsC6u5eQ" role="3EZMnx" />
         <node concept="3F0ifn" id="2QkJsC6u5eR" role="3EZMnx">
           <property role="3F0ifm" value="certainty" />
+          <node concept="3nxI2P" id="5TwIvQFjoPr" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="3F0ifn" id="2QkJsC6wXOb" role="3EZMnx">
           <property role="3F0ifm" value="(0 - uncertain, 100 - certain" />
+          <node concept="3nxI2P" id="5TwIvQFjoPt" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
       </node>
       <node concept="3EZMnI" id="2QkJsC6wVOt" role="3EZMnx">
@@ -1177,6 +1205,10 @@
       </node>
       <node concept="l2Vlx" id="18nEFui9g9F" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="22mcaB" id="5TwIvQFjo_t">
+    <ref role="aqKnT" to="6oah:6dwPixfd_$I" resolve="Confidence" />
+    <node concept="22hDWj" id="5TwIvQFjo_u" role="22hAXT" />
   </node>
 </model>
 
