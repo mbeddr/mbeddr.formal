@@ -188,7 +188,7 @@
       <ref role="3uigEE" to="p9qi:3x6hjiFQOKT" resolve="GsnConnectionDecorator" />
     </node>
     <node concept="3clFb_" id="3x6hjiFQT$z" role="jymVt">
-      <property role="TrG5h" value="deco" />
+      <property role="TrG5h" value="decorate" />
       <node concept="37vLTG" id="3x6hjiFQT$$" role="3clF46">
         <property role="TrG5h" value="conn" />
         <node concept="3Tqbb2" id="3x6hjiFQT$_" role="1tU5fm">
@@ -219,12 +219,17 @@
                     <node concept="3cpWsn" id="6RMm_$5KMCk" role="3cpWs9">
                       <property role="TrG5h" value="width" />
                       <node concept="10P55v" id="6RMm_$5KMCf" role="1tU5fm" />
-                      <node concept="2OqwBi" id="6RMm_$5KNcW" role="33vP2m">
-                        <node concept="37vLTw" id="6RMm_$5KMYi" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3x6hjiFQT$C" resolve="bounds" />
+                      <node concept="17qRlL" id="12dBHBFGbSq" role="33vP2m">
+                        <node concept="3cmrfG" id="12dBHBFGbU2" role="3uHU7w">
+                          <property role="3cmrfH" value="2" />
                         </node>
-                        <node concept="liA8E" id="6RMm_$5KO9Q" role="2OqNvi">
-                          <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth()" resolve="getWidth" />
+                        <node concept="2OqwBi" id="6RMm_$5KNcW" role="3uHU7B">
+                          <node concept="37vLTw" id="6RMm_$5KMYi" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3x6hjiFQT$C" resolve="bounds" />
+                          </node>
+                          <node concept="liA8E" id="6RMm_$5KO9Q" role="2OqNvi">
+                            <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth()" resolve="getWidth" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -233,12 +238,17 @@
                     <node concept="3cpWsn" id="6RMm_$5KOjA" role="3cpWs9">
                       <property role="TrG5h" value="height" />
                       <node concept="10P55v" id="6RMm_$5KOjx" role="1tU5fm" />
-                      <node concept="2OqwBi" id="6RMm_$5KOI0" role="33vP2m">
-                        <node concept="37vLTw" id="6RMm_$5KOv1" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3x6hjiFQT$C" resolve="bounds" />
+                      <node concept="17qRlL" id="12dBHBFG4eq" role="33vP2m">
+                        <node concept="3cmrfG" id="12dBHBFG4g2" role="3uHU7w">
+                          <property role="3cmrfH" value="2" />
                         </node>
-                        <node concept="liA8E" id="6RMm_$5KOVi" role="2OqNvi">
-                          <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
+                        <node concept="2OqwBi" id="6RMm_$5KOI0" role="3uHU7B">
+                          <node concept="37vLTw" id="6RMm_$5KOv1" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3x6hjiFQT$C" resolve="bounds" />
+                          </node>
+                          <node concept="liA8E" id="6RMm_$5KOVi" role="2OqNvi">
+                            <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -289,12 +299,12 @@
                     <node concept="3cpWsn" id="7z30MUmevXz" role="3cpWs9">
                       <property role="TrG5h" value="centerY" />
                       <node concept="10P55v" id="7z30MUmevXu" role="1tU5fm" />
-                      <node concept="3cpWs3" id="7z30MUmezjj" role="33vP2m">
-                        <node concept="FJ1c_" id="7z30MUme$KY" role="3uHU7w">
-                          <node concept="3cmrfG" id="7z30MUme$L3" role="3uHU7w">
-                            <property role="3cmrfH" value="2" />
+                      <node concept="3cpWs3" id="12dBHBFGsS8" role="33vP2m">
+                        <node concept="FJ1c_" id="12dBHBFGtyS" role="3uHU7w">
+                          <node concept="3cmrfG" id="12dBHBFGt$w" role="3uHU7w">
+                            <property role="3cmrfH" value="4" />
                           </node>
-                          <node concept="37vLTw" id="7z30MUme$jZ" role="3uHU7B">
+                          <node concept="37vLTw" id="12dBHBFGtnn" role="3uHU7B">
                             <ref role="3cqZAo" node="6RMm_$5KOjA" resolve="height" />
                           </node>
                         </node>
@@ -333,7 +343,7 @@
                       <property role="TrG5h" value="offset" />
                       <node concept="10P55v" id="6RMm_$5CwoU" role="1tU5fm" />
                       <node concept="3cmrfG" id="6RMm_$5CwoV" role="33vP2m">
-                        <property role="3cmrfH" value="10" />
+                        <property role="3cmrfH" value="20" />
                       </node>
                     </node>
                   </node>
