@@ -15,6 +15,7 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer">
+      <concept id="1303698322551216293" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.ComputedTrust" flags="ng" index="23TV8i" />
       <concept id="4161300891808724313" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.Trustworthiness" flags="ng" index="EupL4">
         <property id="4161300891808724421" name="confidence" index="EupNo" />
         <property id="4161300891808724423" name="decision" index="EupNq" />
@@ -336,6 +337,7 @@
     <property role="TrG5h" value="_040_top_goal_three_solutions_no_weight_definition" />
     <node concept="2vn7WC" id="5WyjFZRrN37" role="2vn1q5">
       <property role="TrG5h" value="G01" />
+      <node concept="23TV8i" id="7$wo37z9ebj" role="2U2l5M" />
       <node concept="19SGf9" id="5WyjFZRrN38" role="2vnaTY">
         <node concept="19SUe$" id="5WyjFZRrN39" role="19SJt6" />
       </node>
@@ -420,7 +422,7 @@
           <property role="gqqTZ" value="53.5" />
           <property role="gqqTW" value="12.000100000000003" />
           <property role="gqqTX" value="63.0" />
-          <property role="gqqTy" value="45.0" />
+          <property role="gqqTy" value="47.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -430,7 +432,7 @@
           <property role="gqqTZ" value="344.0" />
           <property role="gqqTW" value="97.00029836425782" />
           <property role="gqqTX" value="146.0" />
-          <property role="gqqTy" value="45.0" />
+          <property role="gqqTy" value="47.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -440,7 +442,7 @@
           <property role="gqqTZ" value="12.0" />
           <property role="gqqTW" value="97.00029836425782" />
           <property role="gqqTX" value="146.0" />
-          <property role="gqqTy" value="45.0" />
+          <property role="gqqTy" value="47.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -452,7 +454,7 @@
         <property role="37mO49" value="6855128169208295715" />
         <node concept="gqqVs" id="5WyjFZRrN4C" role="37mO4d">
           <property role="gqqTX" value="146.0" />
-          <property role="gqqTy" value="45.0" />
+          <property role="gqqTy" value="47.0" />
           <property role="gqqTZ" value="178.0" />
           <property role="gqqTW" value="97.00029836425782" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
