@@ -19,6 +19,10 @@
       </concept>
     </language>
     <language id="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer">
+      <concept id="1303698322554674308" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.ArgumentType" flags="ng" index="20cRoN">
+        <property id="1303698322554674309" name="argtype" index="20cRoM" />
+      </concept>
+      <concept id="1303698322551216293" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.ComputedTrust" flags="ng" index="23TV8i" />
       <concept id="4161300891808724313" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure.Trustworthiness" flags="ng" index="EupL4">
         <property id="4161300891808724421" name="confidence" index="EupNo" />
         <property id="4161300891808724423" name="decision" index="EupNq" />
@@ -838,6 +842,7 @@
     <property role="3dZJ_E" value="12" />
     <node concept="2vn7WC" id="XPkLuupEaj" role="2vn1q5">
       <property role="TrG5h" value="Sensitivity_001" />
+      <node concept="23TV8i" id="XPkLuuzsXz" role="2U2l5M" />
       <node concept="19SGf9" id="XPkLuupEak" role="2vnaTY">
         <node concept="19SUe$" id="XPkLuupEal" role="19SJt6" />
       </node>
@@ -946,8 +951,8 @@
       <node concept="37mRIm" id="XPkLuupEqk" role="37mRID">
         <property role="37mO49" value="1113887843750946335" />
         <node concept="gqqVs" id="XPkLuupEqj" role="37mO4d">
-          <property role="gqqTZ" value="211.0" />
-          <property role="gqqTW" value="377.0011070800781" />
+          <property role="gqqTZ" value="185.0" />
+          <property role="gqqTW" value="392.0011070800781" />
           <property role="gqqTX" value="197.0" />
           <property role="gqqTy" value="47.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -1005,6 +1010,9 @@
     </node>
     <node concept="2vmxQI" id="XPkLuupEbn" role="2vn1q5">
       <property role="TrG5h" value="Sensitivity_002" />
+      <node concept="20cRoN" id="XPkLuuA224" role="2U2l5M">
+        <property role="20cRoM" value="18nEFui9ksV/Redundant" />
+      </node>
       <node concept="19SGf9" id="XPkLuupEbo" role="2vnaTY">
         <node concept="19SUe$" id="XPkLuupEbp" role="19SJt6" />
       </node>
@@ -1023,6 +1031,9 @@
     </node>
     <node concept="2vmxQI" id="XPkLuupEf4" role="2vn1q5">
       <property role="TrG5h" value="Sensitivity_005" />
+      <node concept="20cRoN" id="XPkLuuA24U" role="2U2l5M">
+        <property role="20cRoM" value="18nEFui9kt4/Complementary" />
+      </node>
       <node concept="19SGf9" id="XPkLuupEf5" role="2vnaTY">
         <node concept="19SUe$" id="XPkLuupEf6" role="19SJt6" />
       </node>
@@ -1035,6 +1046,7 @@
     </node>
     <node concept="2vn7WC" id="XPkLuupEhT" role="2vn1q5">
       <property role="TrG5h" value="Sensitivity_007" />
+      <node concept="23TV8i" id="XPkLuuAXz2" role="2U2l5M" />
       <node concept="19SGf9" id="XPkLuupEhU" role="2vnaTY">
         <node concept="19SUe$" id="XPkLuupEhV" role="19SJt6" />
       </node>
@@ -1042,8 +1054,8 @@
     <node concept="2vmhmH" id="XPkLuupEjr" role="2vn1q5">
       <property role="TrG5h" value="Sensitivity_008" />
       <node concept="EupL4" id="XPkLuupFdV" role="2U2l5M">
-        <property role="EupNq" value="75" />
-        <property role="EupNo" value="100" />
+        <property role="EupNq" value="74" />
+        <property role="EupNo" value="50" />
       </node>
       <node concept="19SGf9" id="XPkLuupEjs" role="2vnaTY">
         <node concept="19SUe$" id="XPkLuupEjt" role="19SJt6" />
@@ -1062,8 +1074,8 @@
     <node concept="2vmhmH" id="XPkLuupEmI" role="2vn1q5">
       <property role="TrG5h" value="Sensitivity_010" />
       <node concept="EupL4" id="XPkLuupEW6" role="2U2l5M">
-        <property role="EupNq" value="25" />
-        <property role="EupNo" value="50" />
+        <property role="EupNq" value="75" />
+        <property role="EupNo" value="25" />
       </node>
       <node concept="19SGf9" id="XPkLuupEmJ" role="2vnaTY">
         <node concept="19SUe$" id="XPkLuupEmK" role="19SJt6" />
@@ -1073,7 +1085,7 @@
       <property role="TrG5h" value="Sensitivity_011" />
       <node concept="EupL4" id="XPkLuupF0M" role="2U2l5M">
         <property role="EupNq" value="50" />
-        <property role="EupNo" value="100" />
+        <property role="EupNo" value="25" />
       </node>
       <node concept="19SGf9" id="XPkLuupEow" role="2vnaTY">
         <node concept="19SUe$" id="XPkLuupEox" role="19SJt6" />
