@@ -7,6 +7,7 @@
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
     <use id="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" name="com.mbeddr.formal.safety.gsn.xml_gen" version="0" />
+    <use id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence" version="0" />
   </languages>
   <imports />
   <registry>
@@ -55,6 +56,17 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence">
+      <concept id="3018165286098577129" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.URLEvidenceDocumentAttribute" flags="ng" index="uG8IZ">
+        <child id="3018165286098585686" name="urlReferenceDocument" index="uGek0" />
+      </concept>
+      <concept id="2210355370893864968" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.URLEvidenceDocument" flags="ng" index="2Fbr9R">
+        <property id="2210355370893864971" name="url" index="2Fbr9O" />
+      </concept>
+      <concept id="2210355370893864965" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.IExternalRessourceDocument" flags="ng" index="2Fbr9U">
+        <child id="2210355370893974680" name="explanation" index="2FbXVB" />
+      </concept>
+    </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
       <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
         <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
@@ -87,13 +99,34 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
       <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ng" index="2GXxrR">
         <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
         <property id="3731513482755309878" name="idPrefix" index="3dZJUb" />
       </concept>
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+        <child id="7402587364850275470" name="attributes" index="2U2l5M" />
+      </concept>
+      <concept id="3687474483974639519" name="com.mbeddr.formal.base.structure.GenericAttributeAnnotationProviderBase" flags="ng" index="2Wz8ku">
+        <property id="3687474483974749023" name="attributeConceptNodeID" index="2Wzj7u" />
+      </concept>
+      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ng" index="2WHcHs">
+        <child id="3687474483974128095" name="annotationProviders" index="2WHcHu" />
+      </concept>
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4422827436158313084" name="com.mbeddr.formal.safety.gsn.structure.GenericGSNAttributeAnnotationProvider" flags="ng" index="26s6xy" />
       <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
       <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
       <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
@@ -1356,6 +1389,153 @@
   </node>
   <node concept="pFZ$m" id="6VBHnHRib32">
     <property role="3GE5qa" value="config" />
+  </node>
+  <node concept="2vn7XN" id="2ByFloRlq4G">
+    <property role="TrG5h" value="_200_" />
+    <node concept="2vn7WC" id="2ByFloRlq4N" role="2vn1q5">
+      <property role="TrG5h" value="G01_UL_4600" />
+      <node concept="19SGf9" id="2ByFloRlq4O" role="2vnaTZ">
+        <node concept="19SUe$" id="2ByFloRlq4P" role="19SJt6">
+          <property role="19SUeA" value="Development complies&#10;to UL 4600." />
+        </node>
+      </node>
+      <node concept="uG8IZ" id="2ByFloRlq58" role="2U2l5M">
+        <property role="TrG5h" value="ul4600 - https://ulse.org ..." />
+        <node concept="2Fbr9R" id="2ByFloRlq5i" role="uGek0">
+          <property role="2Fbr9O" value="https://ulse.org/ul-standards-engagement/presenting-standard-safety-evaluation-autonomous-vehicles-and-other-1" />
+          <node concept="1Pa9Pv" id="2ByFloRlq5s" role="2FbXVB">
+            <node concept="1PaTwC" id="2ByFloRlq5t" role="1PaQFQ">
+              <node concept="3oM_SD" id="2ByFloRlq5y" role="1PaTwD">
+                <property role="3oM_SC" value="ANSI/UL" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5z" role="1PaTwD">
+                <property role="3oM_SC" value="4600" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5$" role="1PaTwD">
+                <property role="3oM_SC" value="Standard" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5_" role="1PaTwD">
+                <property role="3oM_SC" value="for" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5A" role="1PaTwD">
+                <property role="3oM_SC" value="Safety" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5B" role="1PaTwD">
+                <property role="3oM_SC" value="for" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5C" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5D" role="1PaTwD">
+                <property role="3oM_SC" value="Evaluation" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5E" role="1PaTwD">
+                <property role="3oM_SC" value="of" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5F" role="1PaTwD">
+                <property role="3oM_SC" value="Autonomous" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5G" role="1PaTwD">
+                <property role="3oM_SC" value="Products" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5H" role="1PaTwD">
+                <property role="3oM_SC" value="encompasses" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5I" role="1PaTwD">
+                <property role="3oM_SC" value="fully" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5J" role="1PaTwD">
+                <property role="3oM_SC" value="autonomous" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5K" role="1PaTwD">
+                <property role="3oM_SC" value="systems" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5L" role="1PaTwD">
+                <property role="3oM_SC" value="that" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5M" role="1PaTwD">
+                <property role="3oM_SC" value="move" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5N" role="1PaTwD">
+                <property role="3oM_SC" value="such" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5O" role="1PaTwD">
+                <property role="3oM_SC" value="as" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5P" role="1PaTwD">
+                <property role="3oM_SC" value="self-driving" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5Q" role="1PaTwD">
+                <property role="3oM_SC" value="cars" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5R" role="1PaTwD">
+                <property role="3oM_SC" value="along" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5S" role="1PaTwD">
+                <property role="3oM_SC" value="with" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5T" role="1PaTwD">
+                <property role="3oM_SC" value="applications" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5U" role="1PaTwD">
+                <property role="3oM_SC" value="in" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5V" role="1PaTwD">
+                <property role="3oM_SC" value="mining," />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5W" role="1PaTwD">
+                <property role="3oM_SC" value="agriculture," />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5X" role="1PaTwD">
+                <property role="3oM_SC" value="maintenance," />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5Y" role="1PaTwD">
+                <property role="3oM_SC" value="and" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq5Z" role="1PaTwD">
+                <property role="3oM_SC" value="other" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq60" role="1PaTwD">
+                <property role="3oM_SC" value="vehicles" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq61" role="1PaTwD">
+                <property role="3oM_SC" value="including" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq62" role="1PaTwD">
+                <property role="3oM_SC" value="lightweight" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq63" role="1PaTwD">
+                <property role="3oM_SC" value="unmanned" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq64" role="1PaTwD">
+                <property role="3oM_SC" value="aerial" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq65" role="1PaTwD">
+                <property role="3oM_SC" value="vehicles" />
+              </node>
+              <node concept="3oM_SD" id="2ByFloRlq66" role="1PaTwD">
+                <property role="3oM_SC" value="(UAVs)." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="37mRI7" id="2ByFloRlq4U" role="lGtFl">
+      <node concept="37mRIm" id="2ByFloRlq4V" role="37mRID">
+        <property role="37mO49" value="3018165286098805043" />
+        <node concept="gqqVs" id="2ByFloRlq4T" role="37mO4d">
+          <property role="gqqTZ" value="324.0" />
+          <property role="gqqTW" value="16.0" />
+          <property role="gqqTX" value="119.0" />
+          <property role="gqqTy" value="84.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="26s6xy" id="2ByFloRlq6O" role="2WHcHu">
+      <property role="2Wzj7u" value="3018165286098577129" />
+    </node>
   </node>
 </model>
 
