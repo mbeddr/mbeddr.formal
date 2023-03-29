@@ -3512,6 +3512,11 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2ByFloRlxHS" role="3bR37C">
+          <node concept="3bR9La" id="2ByFloRlxHT" role="1SiIV1">
+            <ref role="3bR37D" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6hyv0iVPlGv" role="2G$12L">
         <property role="BnDLt" value="true" />
