@@ -19,6 +19,7 @@
     <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="s9pq" ref="r:8ef909e6-5cd8-45b2-9793-5a70f4829a0a(com.mbeddr.formal.safety.gsn.external_evidence.structure)" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
@@ -1212,6 +1213,39 @@
     </node>
     <node concept="PMmxH" id="3EDV2YKH5h2" role="6VMZX">
       <ref role="PMmxG" node="7Jm8RM1lPxB" resolve="GeneratedExternalEvidenceSolutionTextAreaInInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2ByFloRk$xv">
+    <ref role="1XX52x" to="s9pq:2ByFloRkyrD" resolve="URLEvidenceDocumentAttribute" />
+    <node concept="3EZMnI" id="2ByFloRk$xx" role="2wV5jI">
+      <node concept="3F0ifn" id="2ByFloRk$xC" role="3EZMnx">
+        <property role="3F0ifm" value="url:" />
+      </node>
+      <node concept="3EZMnI" id="2ByFloRljMW" role="3EZMnx">
+        <node concept="3F0A7n" id="2ByFloRljN6" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRkQZ" id="2ByFloRljMX" role="2iSdaV" />
+        <node concept="3F1sOY" id="2ByFloRk$xI" role="3EZMnx">
+          <ref role="1NtTu8" to="s9pq:2ByFloRk$xm" resolve="urlReferenceDocument" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="2ByFloRk$x$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2ByFloRlqbR">
+    <ref role="1XX52x" to="s9pq:2ByFloRkyrD" resolve="URLEvidenceDocumentAttribute" />
+    <node concept="2aJ2om" id="1r1mR59J9xj" role="CpUAK">
+      <ref role="2$4xQ3" to="xnej:3cGyC6fBMuN" resolve="ANNOTATION_PROVIDER" />
+    </node>
+    <node concept="3EZMnI" id="2ByFloRlqbU" role="2wV5jI">
+      <node concept="3F0ifn" id="2ByFloRlqc1" role="3EZMnx">
+        <property role="3F0ifm" value="url:" />
+      </node>
+      <node concept="3F0A7n" id="2ByFloRlqcb" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="2ByFloRlqbX" role="2iSdaV" />
     </node>
   </node>
 </model>

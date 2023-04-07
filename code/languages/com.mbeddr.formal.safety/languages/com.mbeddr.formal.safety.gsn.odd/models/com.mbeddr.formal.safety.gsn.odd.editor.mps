@@ -150,7 +150,7 @@
     <property role="TrG5h" value="ODDFormalAssumptionTextArea" />
     <ref role="1XX52x" to="z4ol:7eb_1beN3H8" resolve="ODDFormalAssumption" />
     <node concept="1PE4EZ" id="33qt4wr7xHc" role="1PM95z">
-      <ref role="1PE7su" to="g35p:33qt4wr7xeK" resolve="AssumptionTextArea" />
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="33qt4wr7y4P" role="2wV5jI">
       <node concept="3EZMnI" id="33qt4wr7y4Q" role="3EZMnx">
@@ -446,7 +446,7 @@
     <property role="TrG5h" value="ODDFormalContextTextArea" />
     <ref role="1XX52x" to="z4ol:2_iMKAX4lX5" resolve="ODDFormalContext" />
     <node concept="1PE4EZ" id="33qt4wra$u7" role="1PM95z">
-      <ref role="1PE7su" to="g35p:33qt4wr8iwl" resolve="ContextTextArea" />
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="33qt4wra$PK" role="2wV5jI">
       <node concept="3EZMnI" id="33qt4wra$PL" role="3EZMnx">

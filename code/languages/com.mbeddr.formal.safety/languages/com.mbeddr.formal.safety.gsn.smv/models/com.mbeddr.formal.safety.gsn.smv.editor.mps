@@ -253,7 +253,7 @@
     <property role="TrG5h" value="SmvSpecGoalTextArea" />
     <ref role="1XX52x" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
     <node concept="1PE4EZ" id="3Ngc4zVfXEj" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVfXEr" role="2wV5jI">
       <node concept="3EZMnI" id="3Ngc4zVfXEs" role="3EZMnx">
@@ -321,7 +321,7 @@
     <property role="TrG5h" value="SmvSpecGoalTextAreaInInpector" />
     <ref role="1XX52x" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
     <node concept="1PE4EZ" id="3Ngc4zVfXFI" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rig" resolve="GoalTextAreaInInspector" />
+      <ref role="1PE7su" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
     </node>
     <node concept="3EZMnI" id="3Ngc4zVfXFQ" role="2wV5jI">
       <node concept="2iRkQZ" id="3Ngc4zVfXFR" role="2iSdaV" />
@@ -422,8 +422,8 @@
         <ref role="PMmxG" to="g35p:79zp7ziejLG" resolve="UpdatedInformationArea" />
       </node>
     </node>
-    <node concept="1PE4EZ" id="33qt4wr6lpP" role="1PM95z">
-      <ref role="1PE7su" to="g35p:33qt4wr6jMT" resolve="SolutionTextArea" />
+    <node concept="1PE4EZ" id="18nEFuieQfK" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
     </node>
   </node>
   <node concept="PKFIW" id="33qt4wr6m1H">
@@ -477,9 +477,6 @@
     <property role="3GE5qa" value="gsn.dsl.smv.tests" />
     <property role="TrG5h" value="SmvTestsGoalTextArea" />
     <ref role="1XX52x" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
-    <node concept="1PE4EZ" id="33qt4wr8Tf7" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rgv" resolve="GoalTextArea" />
-    </node>
     <node concept="3EZMnI" id="33qt4wr8Tff" role="2wV5jI">
       <node concept="3EZMnI" id="33qt4wr8Tfg" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr8Tfh" role="3F10Kt" />
@@ -541,13 +538,16 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
+    <node concept="1PE4EZ" id="6EndY1pZ8DR" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
+    </node>
   </node>
   <node concept="PKFIW" id="33qt4wr8Tgu">
     <property role="3GE5qa" value="gsn.dsl.smv.tests" />
     <property role="TrG5h" value="SmvTestsGoalTextAreaInInspector" />
     <ref role="1XX52x" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
     <node concept="1PE4EZ" id="33qt4wr8Tgw" role="1PM95z">
-      <ref role="1PE7su" to="g35p:65Lrkjj1Rig" resolve="GoalTextAreaInInspector" />
+      <ref role="1PE7su" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
     </node>
     <node concept="3EZMnI" id="33qt4wr8TgC" role="2wV5jI">
       <node concept="2iRkQZ" id="33qt4wr8TgD" role="2iSdaV" />
@@ -611,9 +611,6 @@
     <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <property role="TrG5h" value="SmvSpecContextTextArea" />
     <ref role="1XX52x" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
-    <node concept="1PE4EZ" id="33qt4wr9tct" role="1PM95z">
-      <ref role="1PE7su" to="g35p:33qt4wr8iwl" resolve="ContextTextArea" />
-    </node>
     <node concept="3EZMnI" id="33qt4wr9tc_" role="2wV5jI">
       <node concept="3EZMnI" id="33qt4wr9tcA" role="3EZMnx">
         <node concept="VPM3Z" id="33qt4wr9tcB" role="3F10Kt" />
@@ -668,13 +665,16 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
+    <node concept="1PE4EZ" id="6EndY1pYz97" role="1PM95z">
+      <ref role="1PE7su" to="g35p:3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
+    </node>
   </node>
   <node concept="PKFIW" id="33qt4wr9tdA">
     <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <property role="TrG5h" value="SmvSpecContextTextAreaInInspector" />
     <ref role="1XX52x" to="bsp8:4qaoH_DQhh" resolve="SmvSpecContext" />
     <node concept="1PE4EZ" id="33qt4wr9tdC" role="1PM95z">
-      <ref role="1PE7su" to="g35p:33qt4wr8vnQ" resolve="ContextTextAreaInInspector" />
+      <ref role="1PE7su" to="g35p:2ccN23oa1rM" resolve="TextInInspector" />
     </node>
     <node concept="3EZMnI" id="33qt4wr9tdK" role="2wV5jI">
       <node concept="2iRkQZ" id="33qt4wr9tdL" role="2iSdaV" />

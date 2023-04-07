@@ -147,5 +147,21 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2ByFloRkyrD">
+    <property role="EcuMT" value="3018165286098577129" />
+    <property role="TrG5h" value="URLEvidenceDocumentAttribute" />
+    <property role="34LRSv" value="url" />
+    <property role="R4oN_" value="url pointer to a document" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="PrWs8" id="2ByFloRkyrE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2ByFloRk$xm" role="1TKVEi">
+      <property role="IQ2ns" value="3018165286098585686" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="urlReferenceDocument" />
+      <ref role="20lvS9" node="1UGKBYPwn08" resolve="URLEvidenceDocument" />
+    </node>
+  </node>
 </model>
 

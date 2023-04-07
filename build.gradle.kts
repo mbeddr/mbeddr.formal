@@ -30,7 +30,7 @@ downloadJbr {
 }
 
 // detect if we are in a CI build
-val ciBuild = project.hasProperty("forceCI") || project.hasProperty("teamcity")
+val ciBuild = (System.getenv("CI") != null && System.getenv("CI").toBoolean()) || project.hasProperty("forceCI") || project.hasProperty("teamcity")
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
 val jdk_home: String = if (project.hasProperty("java11_home")) {
@@ -75,7 +75,10 @@ val platformVersion = "$major.$minor.+"
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
 
-    val buildNumber = System.getenv("BUILD_NUMBER")!!.toInt()
+    val buildNumber =  if (System.getenv("GITHUB_RUN_NUMBER") != null) 
+                                System.getenv("GITHUB_RUN_NUMBER").toInt() 
+                            else 
+                                System.getenv("BUILD_NUMBER")!!.toInt()
     if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
         version = "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
     } else {
@@ -306,26 +309,26 @@ tasks {
     }
 
     val unpackDistribution by registering(Copy::class) {
-        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-$major.$minor-SNAPSHOT.zip"))
+        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}.zip"))
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
     }
 
     val deleteJBR by registering(Delete::class) {
         dependsOn(unpackDistribution)
-        delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-$major.$minor-SNAPSHOT/jbr")
+        delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/jbr")
     }
 
     val removeJBR by registering(Zip::class) {
         dependsOn(deleteJBR)
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-$major.$minor-SNAPSHOT")
-        archiveFileName.set("fasten-$major.$minor-SNAPSHOT_with_removed_JBR.zip")
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}")
+        archiveFileName.set("fasten-${version}_with_removed_JBR.zip")
         destinationDirectory.set(file("$artifactsDir/com.mbeddr.formal.safetyDistribution"))
     }
 
     val package_fasten_safety_distribution_win by registering(Zip::class) {
         dependsOn(resolveJBR_Win, build_fasten_safety_distribution, removeJBR)
-        archiveBaseName.set("fasten-$major.$minor-SNAPSHOT-Win")
-        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-$major.$minor-SNAPSHOT_with_removed_JBR.zip"))
+        archiveBaseName.set("fasten-${version}-Win")
+        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}_with_removed_JBR.zip"))
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
     }
 
