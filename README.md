@@ -16,7 +16,7 @@ For building FASTEN we have Gradle-based scripts which automatically manage all 
 and build the languages.
 
 1. configure the needed variables in *gradle.properties*:
-   * copy the *gradle.properties.example* as *gradle.properties* and replace "<...>" with your paths)
+   * copy the *gradle.properties.example* as *gradle.properties* and replace "<...>" with your paths, github-username and a token with rights to access github-packages
      - in *Windows* please note that the paths should use *slash* instead of *back-slash*, and they must NOT contain any *space* character (' ') - e.g.
        ```properties
        mpsHomeDir=C:/work/MPS`
