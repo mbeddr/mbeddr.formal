@@ -19,7 +19,7 @@ and build the languages.
    * copy the *gradle.properties.example* as *gradle.properties* and replace "<...>" with your paths, github-username and a token with rights to access github-packages
      - in *Windows* please note that the paths should use *slash* instead of *back-slash*, and they must NOT contain any *space* character (' ') - e.g.
        ```properties
-       mpsHomeDir=C:/work/MPS`
+       mpsHomeDir=C:/work/MPS_2021.3.x
        mbeddr.formal.home=C:/work/mbeddr.formal
        ``` 
      - in Unix-based systems we have the "unix paths" (nothing changes)
@@ -29,7 +29,7 @@ and build the languages.
 
 ## Building (from MPS)
 
-1. [download](https://www.jetbrains.com/mps/download/previous.html) and install MPS 2021.2.x
+1. [download](https://www.jetbrains.com/mps/download/previous.html) and install MPS 2021.3.x
 2. run `gradlew.bat setup`. You can skip this step if you have built the project with Gradle already. 
 3. start MPS
 4. in 'Settings->Appearance & Behavior->Path Variables', set the path variable `mbeddr.formal.home`  to point to the directory which contains the cloned 'mbeddr.formal' repository.
