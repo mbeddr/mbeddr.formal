@@ -31,7 +31,7 @@ jobs:
         java-version: 11  
         
     - name: Build FASTEN
-      uses: gradle/gradle-build-action@v1.3.3
+      uses: gradle/gradle-build-action@v2.4.2
       with: 
         arguments: package_fasten_safety_distribution_win -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
@@ -42,7 +42,7 @@ jobs:
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
     - name: Check Consistency of the FASTEN-NuSMV Tutorial 
-      uses: gradle/gradle-build-action@v1.3.3
+      uses: gradle/gradle-build-action@v2.4.2
       with:
         arguments: -PcheckProject=nusmv -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
@@ -52,7 +52,7 @@ jobs:
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
 
     - name: Check Consistency of the FASTEN-Safety Tutorial
-      uses: gradle/gradle-build-action@v1.3.3
+      uses: gradle/gradle-build-action@v2.4.2
       with:
         arguments: -PcheckProject=safety -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
@@ -62,7 +62,7 @@ jobs:
         gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
         
     - name: Run Tests
-      uses: gradle/gradle-build-action@v1
+      uses: gradle/gradle-build-action@v2.4.2
       with: 
         arguments: run_all_tests -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
@@ -78,7 +78,7 @@ jobs:
         report_paths: 'build/**/TEST*.xml'
         github_token: ${{ secrets.GITHUB_TOKEN }}
     #- name: Publish to Github Maven
-    #  uses: gradle/gradle-build-action@v1.3.3
+    #  uses: gradle/gradle-build-action@v2.4.2
     #  with: 
     #    arguments: publishNuSMVLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
     #    wrapper-cache-enabled: true
@@ -121,7 +121,7 @@ jobs:
         java-version: 11  
         
     #- name: Build FASTEN Assurance Distribution
-    #  uses: gradle/gradle-build-action@v1.3.3
+    #  uses: gradle/gradle-build-action@v2.4.2
     #  with: 
     #    arguments: package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
     #    wrapper-cache-enabled: true
@@ -131,7 +131,7 @@ jobs:
     #    configuration-cache-enabled: true
     #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
     - name: Build and Publish FASTEN Assurance to Github Maven Packages
-      uses: gradle/gradle-build-action@v1.3.3
+      uses: gradle/gradle-build-action@v2.4.2
       with: 
         arguments: publishFASTENSafetyLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
