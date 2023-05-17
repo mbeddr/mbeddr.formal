@@ -176,7 +176,7 @@
               <node concept="3clFbF" id="71GfFl7hP0b" role="3cqZAp">
                 <node concept="2YIFZM" id="71GfFl7hP0c" role="3clFbG">
                   <ref role="37wK5l" to="ztk3:696iakqcN1" resolve="takeScreenshotAndSaveIntoFile" />
-                  <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
+                  <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
                   <node concept="2Sf5sV" id="71GfFl7hP0d" role="37wK5m" />
                 </node>
               </node>

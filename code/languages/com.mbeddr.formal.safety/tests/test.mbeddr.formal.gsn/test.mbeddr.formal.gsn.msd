@@ -34,6 +34,7 @@
     <dependency reexport="false">d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476:com.fasten.base.git" version="0" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:71797868-de95-425c-8470-36aa52c8ebc4:com.mbeddr.formal.base.arch" version="1" />
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />

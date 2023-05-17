@@ -172,7 +172,7 @@
             </node>
             <node concept="2YIFZM" id="2avYeLoQj2l" role="33vP2m">
               <ref role="37wK5l" to="ztk3:1yFmGPnLcLt" resolve="createImage" />
-              <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="CellEditorScreenshooter" />
+              <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
               <node concept="37vLTw" id="2avYeLoQj2m" role="37wK5m">
                 <ref role="3cqZAo" node="2w5Gq4UvCAw" resolve="aNode" />
               </node>

@@ -12,6 +12,7 @@
   </facets>
   <sourcePath />
   <languageVersions>
+    <language slang="l:e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476:com.fasten.base.git" version="0" />
     <language slang="l:6d475058-7ea2-490d-87e7-0f7f46dccc66:com.fasten.process.review" version="0" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:8a4ef392-f4b4-43e7-afb5-b071dce8043d:com.mbeddr.formal.safety.argument.process" version="0" />
