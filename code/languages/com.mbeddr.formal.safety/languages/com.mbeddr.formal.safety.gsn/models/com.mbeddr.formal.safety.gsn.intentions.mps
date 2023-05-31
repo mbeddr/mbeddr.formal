@@ -27,9 +27,9 @@
     <import index="kchc" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.canvas(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="5u6a" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.layout(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="ra3w" ref="r:d160eea8-047c-42af-ab07-6b169eeb13fd(com.mbeddr.formal.safety.gsn.web.util)" />
     <import index="p8va" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.swing(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="nf7v" ref="r:323f2e16-a77b-4958-b026-25202f82daa5(com.mbeddr.formal.safety.gsn.util)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -2786,9 +2786,9 @@
           <node concept="3cpWsn" id="47PB7GsPcbQ" role="3cpWs9">
             <property role="TrG5h" value="color" />
             <node concept="17QB3L" id="47PB7GsQNFd" role="1tU5fm" />
-            <node concept="2YIFZM" id="47PB7GsPwCv" role="33vP2m">
-              <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
-              <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+            <node concept="2YIFZM" id="4h5BVce9hJL" role="33vP2m">
+              <ref role="37wK5l" to="nf7v:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+              <ref role="1Pybhc" to="nf7v:2hB9zGI$eNw" resolve="StyleUtil" />
               <node concept="37vLTw" id="47PB7GsPwCw" role="37wK5m">
                 <ref role="3cqZAo" node="47PB7GsPcbu" resolve="topNode" />
               </node>
@@ -3573,9 +3573,9 @@
                   <node concept="3cpWsn" id="47PB7GsJuJa" role="3cpWs9">
                     <property role="TrG5h" value="color" />
                     <node concept="17QB3L" id="47PB7GsJJyl" role="1tU5fm" />
-                    <node concept="2YIFZM" id="47PB7GsJOIq" role="33vP2m">
-                      <ref role="1Pybhc" to="ra3w:2hB9zGI$eNw" resolve="StyleUtil" />
-                      <ref role="37wK5l" to="ra3w:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+                    <node concept="2YIFZM" id="4h5BVce9hJM" role="33vP2m">
+                      <ref role="37wK5l" to="nf7v:2hB9zGI$ePh" resolve="getBackgroundColorForShape" />
+                      <ref role="1Pybhc" to="nf7v:2hB9zGI$eNw" resolve="StyleUtil" />
                       <node concept="2GrUjf" id="47PB7GsJQvU" role="37wK5m">
                         <ref role="2Gs0qQ" node="47PB7GsJlBU" resolve="element" />
                       </node>
