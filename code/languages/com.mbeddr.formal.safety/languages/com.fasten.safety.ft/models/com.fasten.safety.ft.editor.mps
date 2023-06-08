@@ -782,6 +782,9 @@
           </node>
         </node>
       </node>
+      <node concept="xShMh" id="1o6a6fGj87y" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
     <node concept="PMmxH" id="3ZjKZgVHKNX" role="6VMZX">
       <ref role="PMmxG" node="3ZjKZgVHKvX" resolve="EventBaseEditorComponent" />
@@ -1167,6 +1170,7 @@
         <node concept="37jFXN" id="1GpuQyTexVv" role="3F10Kt">
           <property role="37lx6p" value="hZ7kQ4a/CENTER" />
         </node>
+        <node concept="VPM3Z" id="3BbeeDyWE5q" role="3F10Kt" />
         <node concept="2YIFZM" id="3f8ZVRXT1CJ" role="2gOmqF">
           <ref role="37wK5l" node="3f8ZVRXz6Ge" resolve="computeRequiredEventShapeHeight" />
           <ref role="1Pybhc" node="4vIVwd7qvD5" resolve="LabelsDrawingUtils" />
@@ -1191,6 +1195,9 @@
             <ref role="1PxDUh" node="4vIVwd7qvD5" resolve="LabelsDrawingUtils" />
           </node>
         </node>
+      </node>
+      <node concept="xShMh" id="1o6a6fGiCtf" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
     <node concept="PMmxH" id="3ZjKZgVHL2u" role="6VMZX">
@@ -1427,6 +1434,9 @@
       </node>
       <node concept="38c6YI" id="3EWkVoQ8xCp" role="3F10Kt">
         <property role="Vb096" value="6cZGtrcKCoS/black" />
+      </node>
+      <node concept="xShMh" id="1o6a6fGj8Zx" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
       <node concept="2xQOud" id="1GpuQyTgNzt" role="2xQQDV">
         <ref role="2xQOue" node="2lB3um7b17t" resolve="EmptyShape" />
@@ -1908,6 +1918,9 @@
       </node>
       <node concept="38c6YI" id="3EWkVoQ8xCd" role="3F10Kt">
         <property role="Vb096" value="6cZGtrcKCoS/black" />
+      </node>
+      <node concept="xShMh" id="1o6a6fGj8Hh" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
       <node concept="3clFbT" id="1GpuQyT34vV" role="3RJMYJ">
         <property role="3clFbU" value="true" />
@@ -6328,6 +6341,9 @@
           </node>
         </node>
       </node>
+      <node concept="xShMh" id="1o6a6fGjNkE" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
     <node concept="PMmxH" id="1SpkZ1UYFAI" role="6VMZX">
       <ref role="PMmxG" node="3ZjKZgVHKvX" resolve="EventBaseEditorComponent" />
@@ -6338,6 +6354,9 @@
     <ref role="1XX52x" to="spwl:1SpkZ1V6gPJ" resolve="IntermediateEvent" />
     <node concept="2ZK4vF" id="1SpkZ1V83Ec" role="2wV5jI">
       <ref role="1k5W1q" to="xnej:50UR0qsbFda" resolve="ShapeStyle_Dynamic" />
+      <node concept="xShMh" id="1o6a6fGj8nJ" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
       <node concept="2316IU" id="1SpkZ1V83Ed" role="3DrZTU">
         <node concept="10M0yZ" id="6csJveEVxyh" role="2316E2">
           <ref role="3cqZAo" node="5N87GIKj87I" resolve="SINGLE_TARGET_PORT_LABEL" />
