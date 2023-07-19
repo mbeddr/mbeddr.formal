@@ -41,7 +41,7 @@
     </language>
   </registry>
   <node concept="2wR3oc" id="6wRVFFwyqlI">
-    <ref role="2wR3oD" to="wpu7:52u1lglB0sa" resolve="not_migrated_modules" />
+    <ref role="2wR3oD" to="wpu7:52u1lglB0sa" resolve="not_migrated_modules_and_models" />
   </node>
   <node concept="2wR3oc" id="6wRVFFwyqlJ">
     <ref role="2wR3oD" to="wpu7:1anGYsMsnkr" resolve="broken_module_dependencies" />
