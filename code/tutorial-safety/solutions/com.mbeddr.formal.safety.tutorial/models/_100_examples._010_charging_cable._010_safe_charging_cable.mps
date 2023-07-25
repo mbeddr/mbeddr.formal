@@ -567,7 +567,7 @@
       </node>
       <node concept="2iDXIW" id="5kaUUWfwhcL" role="0nOlf">
         <node concept="DABN8" id="3TSGpjyFlXL" role="DABNk">
-          <ref role="DABNb" node="3TSGpjyEYYX" resolve="Electrical hazard" />
+          <ref role="DABNb" node="3TSGpjyEYYX" />
         </node>
       </node>
     </node>
@@ -590,7 +590,7 @@
       </node>
       <node concept="2iDXIW" id="5kaUUWfwhcQ" role="0nOlf">
         <node concept="DABN8" id="3TSGpjyFlXO" role="DABNk">
-          <ref role="DABNb" node="3TSGpjyEYYX" resolve="Electrical hazard" />
+          <ref role="DABNb" node="3TSGpjyEYYX" />
         </node>
       </node>
     </node>
@@ -600,64 +600,64 @@
     <node concept="1a6Z8w" id="3TSGpjyEYYX" role="8gIbH">
       <property role="TrG5h" value="Electrical hazard" />
       <property role="0lsPB" value="H01" />
-      <ref role="2HxXJk" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
+      <ref role="2HxXJk" node="2hOvri9WU6G" />
       <node concept="3h3uym" id="5ehf6dVA6bI" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzD" value="24PsEXFbNKN/S1" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlEA" role="8gIbH">
       <property role="0lsPB" value="H02" />
       <property role="TrG5h" value="Explosion of the car" />
-      <ref role="2HxXJk" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
+      <ref role="2HxXJk" node="2hOvri9WU6G" />
       <node concept="3h3uym" id="5ehf6dVA6bL" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlES" role="8gIbH">
       <property role="0lsPB" value="H03" />
       <property role="TrG5h" value="Cable temperature too high" />
-      <ref role="2HxXJk" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
+      <ref role="2HxXJk" node="2hOvri9WU6H" />
       <node concept="3h3uym" id="5ehf6dVA6bS" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlFc" role="8gIbH">
       <property role="0lsPB" value="H04" />
       <property role="TrG5h" value="The cable catches fire" />
-      <ref role="2HxXJk" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
+      <ref role="2HxXJk" node="2hOvri9WU6H" />
       <node concept="3h3uym" id="5ehf6dVA6bV" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlFy" role="8gIbH">
       <property role="0lsPB" value="H05" />
       <property role="TrG5h" value="Smoke comes out of the cable" />
-      <ref role="2HxXJk" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
+      <ref role="2HxXJk" node="2hOvri9WU6H" />
       <node concept="3h3uym" id="5ehf6dVA6bY" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3TSGpjyFlFU" role="8gIbH">
       <property role="0lsPB" value="H06" />
       <property role="TrG5h" value="Tripping" />
-      <ref role="2HxXJk" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
+      <ref role="2HxXJk" node="2hOvri9WU6G" />
       <node concept="3h3uym" id="5ehf6dVA8Ox" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
-        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" />
       </node>
     </node>
   </node>
@@ -678,19 +678,19 @@
       <node concept="3UnI81" id="5kaUUWfwhOj" role="3UnI9m">
         <property role="TrG5h" value="l" />
         <node concept="2XEmfi" id="pWUwO6CUdc" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI81" id="5kaUUWfwhOK" role="3UnI9m">
         <property role="TrG5h" value="n" />
         <node concept="2XEmfi" id="pWUwO6CUdq" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI81" id="5kaUUWfwhR2" role="3UnI9m">
         <property role="TrG5h" value="pe" />
         <node concept="2XEmfi" id="pWUwO6CUe9" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI81" id="5kaUUWfwhUn" role="3UnI9m">
@@ -766,7 +766,7 @@
                 <node concept="2HbMbg" id="pWUwO6CSS0" role="2H9Iav">
                   <node concept="2HbLFT" id="pWUwO6CSS1" role="2H9Iav">
                     <node concept="3Ug1Ap" id="pWUwO6COta" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="5kaUUWfwhOK" resolve="n" />
+                      <ref role="3Ug1Ao" node="5kaUUWfwhOK" />
                     </node>
                     <node concept="2IPVmt" id="pWUwO6CSS2" role="2H9Ial">
                       <property role="2IPVms" value="0" />
@@ -774,7 +774,7 @@
                   </node>
                   <node concept="2HbLFT" id="pWUwO6CSS3" role="2H9Ial">
                     <node concept="3Ug1Ap" id="pWUwO6COyJ" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="5kaUUWfwhR2" resolve="pe" />
+                      <ref role="3Ug1Ao" node="5kaUUWfwhR2" />
                     </node>
                     <node concept="2IPVmt" id="pWUwO6CSS4" role="2H9Ial">
                       <property role="2IPVms" value="0" />
@@ -783,7 +783,7 @@
                 </node>
                 <node concept="2HbLFT" id="pWUwO6CSS5" role="2H9Ial">
                   <node concept="3Ug1Ap" id="pWUwO6CORf" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="5kaUUWfwhOj" resolve="l" />
+                    <ref role="3Ug1Ao" node="5kaUUWfwhOj" />
                   </node>
                   <node concept="2IPVmt" id="pWUwO6CSS6" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -794,10 +794,10 @@
                 <node concept="32OYss" id="pWUwO6CSTe" role="32OYtT">
                   <node concept="2HbMbg" id="pWUwO6CSTt" role="32OYtT">
                     <node concept="3Ug1Ap" id="pWUwO6CTUC" role="2H9Ial">
-                      <ref role="3Ug1Ao" node="5kaUUWfwhWX" resolve="socket_connected" />
+                      <ref role="3Ug1Ao" node="5kaUUWfwhWX" />
                     </node>
                     <node concept="3Ug1Ap" id="pWUwO6CSTo" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="5kaUUWfwhUn" resolve="ev_connected" />
+                      <ref role="3Ug1Ao" node="5kaUUWfwhUn" />
                     </node>
                   </node>
                 </node>
@@ -816,7 +816,7 @@
         <node concept="2HbMbg" id="1ef6u74hUem" role="1yBDGv">
           <node concept="nE0YJ" id="1ef6u74hUen" role="2H9Iav">
             <node concept="3Ug1Ap" id="1ef6u74hU9B" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hTR4" resolve="voltage" />
+              <ref role="3Ug1Ao" node="1ef6u74hTR4" />
             </node>
             <node concept="2IPVmt" id="1ef6u74hUeo" role="2H9Ial">
               <property role="2IPVms" value="225" />
@@ -827,7 +827,7 @@
               <property role="2IPVms" value="235" />
             </node>
             <node concept="3Ug1Ap" id="1ef6u74hUeJ" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hTR4" resolve="voltage" />
+              <ref role="3Ug1Ao" node="1ef6u74hTR4" />
             </node>
           </node>
         </node>
@@ -842,7 +842,7 @@
         <node concept="2HbMbg" id="1ef6u74hUd1" role="1yBDGv">
           <node concept="nE0YJ" id="1ef6u74hUd2" role="2H9Iav">
             <node concept="3Ug1Ap" id="1ef6u74hUaj" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hTRl" resolve="intensity" />
+              <ref role="3Ug1Ao" node="1ef6u74hTRl" />
             </node>
             <node concept="2IPVmt" id="1ef6u74hUd3" role="2H9Ial">
               <property role="2IPVms" value="14" />
@@ -853,7 +853,7 @@
               <property role="2IPVms" value="16" />
             </node>
             <node concept="3Ug1Ap" id="1ef6u74hUdo" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hTRl" resolve="intensity" />
+              <ref role="3Ug1Ao" node="1ef6u74hTRl" />
             </node>
           </node>
         </node>
@@ -869,10 +869,10 @@
           <node concept="32OYss" id="1JJRV36A3BB" role="1yBIc4">
             <node concept="1yyYsf" id="1JJRV36A3OJ" role="32OYtT">
               <node concept="3Ug1Ap" id="1JJRV36A3Pb" role="2H9Ial">
-                <ref role="3Ug1Ao" node="1JJRV36A3xD" resolve="powered_led" />
+                <ref role="3Ug1Ao" node="1JJRV36A3xD" />
               </node>
               <node concept="3Ug1Ap" id="1JJRV36A3OE" role="2H9Iav">
-                <ref role="3Ug1Ao" node="5kaUUWfwhWX" resolve="socket_connected" />
+                <ref role="3Ug1Ao" node="5kaUUWfwhWX" />
               </node>
             </node>
           </node>
@@ -890,17 +890,17 @@
             <node concept="1yyYsf" id="5Jr7irfQCSv" role="32OYtT">
               <node concept="2HbMbg" id="5Jr7irfQCSw" role="2H9Iav">
                 <node concept="3Ug1Ap" id="5Jr7irfQCHK" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5kaUUWfwhWX" resolve="socket_connected" />
+                  <ref role="3Ug1Ao" node="5kaUUWfwhWX" />
                 </node>
                 <node concept="32OYss" id="5Jr7irfQCSx" role="2H9Ial">
                   <node concept="nE0YJ" id="5Jr7irfQCSy" role="32OYtT">
                     <node concept="2EDkE1" id="5Jr7irfQCHN" role="2H9Iav">
                       <node concept="2H9Eef" id="5Jr7irfQCHO" role="32OYtT">
                         <node concept="3Ug1Ap" id="5Jr7irfQCHP" role="2H9Ial">
-                          <ref role="3Ug1Ao" node="5kaUUWfwhOK" resolve="n" />
+                          <ref role="3Ug1Ao" node="5kaUUWfwhOK" />
                         </node>
                         <node concept="3Ug1Ap" id="5Jr7irfQCHQ" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="5kaUUWfwhOj" resolve="l" />
+                          <ref role="3Ug1Ao" node="5kaUUWfwhOj" />
                         </node>
                       </node>
                     </node>
@@ -912,7 +912,7 @@
               </node>
               <node concept="2Sa8AP" id="5Jr7irfQCS$" role="2H9Ial">
                 <node concept="3Ug1Ap" id="5Jr7irfQCHW" role="1yBIc4">
-                  <ref role="3Ug1Ao" node="6ll6Fcue2YM" resolve="disconnect_led" />
+                  <ref role="3Ug1Ao" node="6ll6Fcue2YM" />
                 </node>
               </node>
             </node>
@@ -932,19 +932,19 @@
       <node concept="3UnI81" id="4bSVeFVFBMF" role="3UnI9m">
         <property role="TrG5h" value="l" />
         <node concept="2XEmfi" id="4bSVeFVFBMG" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI81" id="4bSVeFVFBMH" role="3UnI9m">
         <property role="TrG5h" value="n" />
         <node concept="2XEmfi" id="4bSVeFVFBMI" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI81" id="4bSVeFVFBMJ" role="3UnI9m">
         <property role="TrG5h" value="pe" />
         <node concept="2XEmfi" id="4bSVeFVFBMK" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI81" id="4bSVeFVFBML" role="3UnI9m">
@@ -1050,7 +1050,7 @@
                 <node concept="2HbMbg" id="4bSVeFVFBMn" role="2H9Iav">
                   <node concept="2HbLFT" id="4bSVeFVFBMo" role="2H9Iav">
                     <node concept="3Ug1Ap" id="4bSVeFVFBMp" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBMH" resolve="n" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBMH" />
                     </node>
                     <node concept="2IPVmt" id="4bSVeFVFBMq" role="2H9Ial">
                       <property role="2IPVms" value="0" />
@@ -1058,7 +1058,7 @@
                   </node>
                   <node concept="2HbLFT" id="4bSVeFVFBMr" role="2H9Ial">
                     <node concept="3Ug1Ap" id="4bSVeFVFBMs" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBMJ" resolve="pe" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBMJ" />
                     </node>
                     <node concept="2IPVmt" id="4bSVeFVFBMt" role="2H9Ial">
                       <property role="2IPVms" value="0" />
@@ -1067,7 +1067,7 @@
                 </node>
                 <node concept="2HbLFT" id="4bSVeFVFBMu" role="2H9Ial">
                   <node concept="3Ug1Ap" id="4bSVeFVFBMv" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4bSVeFVFBMF" resolve="l" />
+                    <ref role="3Ug1Ao" node="4bSVeFVFBMF" />
                   </node>
                   <node concept="2IPVmt" id="4bSVeFVFBMw" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -1078,10 +1078,10 @@
                 <node concept="32OYss" id="4bSVeFVFBMy" role="32OYtT">
                   <node concept="2HbMbg" id="4bSVeFVFBMz" role="32OYtT">
                     <node concept="3Ug1Ap" id="4bSVeFVFBM$" role="2H9Ial">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBMN" resolve="socket_connected" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBMN" />
                     </node>
                     <node concept="3Ug1Ap" id="4bSVeFVFBM_" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBML" resolve="ev_connected" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBML" />
                     </node>
                   </node>
                 </node>
@@ -1100,7 +1100,7 @@
         <node concept="2HbMbg" id="1ef6u74hUgt" role="1yBDGv">
           <node concept="nE0YJ" id="1ef6u74hUgu" role="2H9Iav">
             <node concept="3Ug1Ap" id="1ef6u74hUoX" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hUlN" resolve="voltage" />
+              <ref role="3Ug1Ao" node="1ef6u74hUlN" />
             </node>
             <node concept="2IPVmt" id="1ef6u74hUgw" role="2H9Ial">
               <property role="2IPVms" value="225" />
@@ -1111,7 +1111,7 @@
               <property role="2IPVms" value="235" />
             </node>
             <node concept="3Ug1Ap" id="1ef6u74hUp9" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hUlN" resolve="voltage" />
+              <ref role="3Ug1Ao" node="1ef6u74hUlN" />
             </node>
           </node>
         </node>
@@ -1126,7 +1126,7 @@
         <node concept="2HbMbg" id="1ef6u74hUii" role="1yBDGv">
           <node concept="nE0YJ" id="1ef6u74hUij" role="2H9Iav">
             <node concept="3Ug1Ap" id="1ef6u74hUp1" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hUmE" resolve="intensity" />
+              <ref role="3Ug1Ao" node="1ef6u74hUmE" />
             </node>
             <node concept="2IPVmt" id="1ef6u74hUil" role="2H9Ial">
               <property role="2IPVms" value="14" />
@@ -1137,7 +1137,7 @@
               <property role="2IPVms" value="18" />
             </node>
             <node concept="3Ug1Ap" id="1ef6u74hUpd" role="2H9Iav">
-              <ref role="3Ug1Ao" node="1ef6u74hUmE" resolve="intensity" />
+              <ref role="3Ug1Ao" node="1ef6u74hUmE" />
             </node>
           </node>
         </node>
@@ -1154,17 +1154,17 @@
             <node concept="1yyYsf" id="1JJRV36A1Le" role="32OYtT">
               <node concept="2HbMbg" id="1JJRV36A68A" role="2H9Iav">
                 <node concept="3Ug1Ap" id="1JJRV36A6fc" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="4bSVeFVFBMN" resolve="socket_connected" />
+                  <ref role="3Ug1Ao" node="4bSVeFVFBMN" />
                 </node>
                 <node concept="32OYss" id="1JJRV36A1Lf" role="2H9Ial">
                   <node concept="nE0YJ" id="1JJRV36A1Lg" role="32OYtT">
                     <node concept="2EDkE1" id="1JJRV36A0vf" role="2H9Iav">
                       <node concept="2H9Eef" id="1JJRV36A0vt" role="32OYtT">
                         <node concept="3Ug1Ap" id="1JJRV36A0vB" role="2H9Ial">
-                          <ref role="3Ug1Ao" node="4bSVeFVFBMH" resolve="n" />
+                          <ref role="3Ug1Ao" node="4bSVeFVFBMH" />
                         </node>
                         <node concept="3Ug1Ap" id="1JJRV36A0vn" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="4bSVeFVFBMF" resolve="l" />
+                          <ref role="3Ug1Ao" node="4bSVeFVFBMF" />
                         </node>
                       </node>
                     </node>
@@ -1178,10 +1178,10 @@
                 <node concept="32OYss" id="1JJRV36A1Lj" role="1yBIc4">
                   <node concept="2HbMbg" id="1JJRV36A1Lk" role="32OYtT">
                     <node concept="3Ug1Ap" id="1JJRV36A1Al" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBMB" resolve="open_circuit" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBMB" />
                     </node>
                     <node concept="3Ug1Ap" id="6ll6Fcue2YJ" role="2H9Ial">
-                      <ref role="3Ug1Ao" node="6ll6Fcue2NT" resolve="disconnect_led" />
+                      <ref role="3Ug1Ao" node="6ll6Fcue2NT" />
                     </node>
                   </node>
                 </node>
@@ -1204,16 +1204,16 @@
                 <node concept="32OYss" id="1JJRV36A1as" role="32OYtT">
                   <node concept="2HbMbg" id="1JJRV36A1au" role="32OYtT">
                     <node concept="3Ug1Ap" id="1JJRV36A1av" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBMN" resolve="socket_connected" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBMN" />
                     </node>
                     <node concept="3Ug1Ap" id="1JJRV36A1aw" role="2H9Ial">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBML" resolve="ev_connected" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBML" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="3Ug1Ap" id="1JJRV36A1v9" role="2H9Ial">
-                <ref role="3Ug1Ao" node="4bSVeFVFBMB" resolve="open_circuit" />
+                <ref role="3Ug1Ao" node="4bSVeFVFBMB" />
               </node>
             </node>
           </node>
@@ -1225,14 +1225,14 @@
           <node concept="32OYss" id="1JJRV36A5zD" role="1yBIc4">
             <node concept="1yyYsf" id="1JJRV36A5zE" role="32OYtT">
               <node concept="3Ug1Ap" id="1JJRV36A5_L" role="2H9Iav">
-                <ref role="3Ug1Ao" node="1JJRV36A5_4" resolve="shutdown_button_pressed" />
+                <ref role="3Ug1Ao" node="1JJRV36A5_4" />
               </node>
               <node concept="2HbMbg" id="1JJRV36A5zG" role="2H9Ial">
                 <node concept="3Ug1Ap" id="1JJRV36A5zH" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="4bSVeFVFBMB" resolve="open_circuit" />
+                  <ref role="3Ug1Ao" node="4bSVeFVFBMB" />
                 </node>
                 <node concept="3Ug1Ap" id="1JJRV36A5zI" role="2H9Ial">
-                  <ref role="3Ug1Ao" node="6ll6Fcue2NT" resolve="disconnect_led" />
+                  <ref role="3Ug1Ao" node="6ll6Fcue2NT" />
                 </node>
               </node>
             </node>
@@ -1250,10 +1250,10 @@
           <node concept="32OYss" id="1JJRV36A6mT" role="1yBIc4">
             <node concept="1yyYsf" id="1JJRV36A6mU" role="32OYtT">
               <node concept="3Ug1Ap" id="1JJRV36A6mV" role="2H9Ial">
-                <ref role="3Ug1Ao" node="1JJRV36A5Cg" resolve="powered_led" />
+                <ref role="3Ug1Ao" node="1JJRV36A5Cg" />
               </node>
               <node concept="3Ug1Ap" id="1JJRV36A6mW" role="2H9Iav">
-                <ref role="3Ug1Ao" node="4bSVeFVFBMN" resolve="socket_connected" />
+                <ref role="3Ug1Ao" node="4bSVeFVFBMN" />
               </node>
             </node>
           </node>
@@ -1271,17 +1271,17 @@
             <node concept="1yyYsf" id="1JJRV36A6is" role="32OYtT">
               <node concept="1yA0yd" id="1JJRV36A6it" role="2H9Ial">
                 <node concept="3Ug1Ap" id="1JJRV36A6iu" role="32OYtT">
-                  <ref role="3Ug1Ao" node="4bSVeFVFBMB" resolve="open_circuit" />
+                  <ref role="3Ug1Ao" node="4bSVeFVFBMB" />
                 </node>
               </node>
               <node concept="32OYss" id="1JJRV36A6iv" role="2H9Iav">
                 <node concept="2HbMbg" id="1JJRV36A6iw" role="32OYtT">
                   <node concept="2HbMbg" id="1JJRV36A6ix" role="2H9Iav">
                     <node concept="3Ug1Ap" id="1JJRV36A6iy" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBMN" resolve="socket_connected" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBMN" />
                     </node>
                     <node concept="3Ug1Ap" id="1JJRV36A6iz" role="2H9Ial">
-                      <ref role="3Ug1Ao" node="4bSVeFVFBML" resolve="ev_connected" />
+                      <ref role="3Ug1Ao" node="4bSVeFVFBML" />
                     </node>
                   </node>
                   <node concept="32OYss" id="1JJRV36A6i$" role="2H9Ial">
@@ -1289,10 +1289,10 @@
                       <node concept="2EDkE1" id="1JJRV36A6iA" role="2H9Iav">
                         <node concept="2H9Eef" id="1JJRV36A6iB" role="32OYtT">
                           <node concept="3Ug1Ap" id="1JJRV36A6iC" role="2H9Ial">
-                            <ref role="3Ug1Ao" node="4bSVeFVFBMH" resolve="n" />
+                            <ref role="3Ug1Ao" node="4bSVeFVFBMH" />
                           </node>
                           <node concept="3Ug1Ap" id="1JJRV36A6iD" role="2H9Iav">
-                            <ref role="3Ug1Ao" node="4bSVeFVFBMF" resolve="l" />
+                            <ref role="3Ug1Ao" node="4bSVeFVFBMF" />
                           </node>
                         </node>
                       </node>
@@ -1339,14 +1339,14 @@
             <node concept="1yyYsf" id="1ef6u74hUsK" role="32OYtT">
               <node concept="2HbLFT" id="1ef6u74hUsL" role="2H9Iav">
                 <node concept="3Ug1Ap" id="1ef6u74hUpH" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="4bSVeFVFBVW" resolve="ping" />
+                  <ref role="3Ug1Ao" node="4bSVeFVFBVW" />
                 </node>
                 <node concept="2IPVmt" id="1ef6u74hUsM" role="2H9Ial">
                   <property role="2IPVms" value="0" />
                 </node>
               </node>
               <node concept="3Ug1Ap" id="1ef6u74hUr2" role="2H9Ial">
-                <ref role="3Ug1Ao" node="4bSVeFVFBWj" resolve="reset" />
+                <ref role="3Ug1Ao" node="4bSVeFVFBWj" />
               </node>
             </node>
           </node>
@@ -1406,19 +1406,19 @@
       <node concept="3UnI9n" id="pWUwO6COmc" role="3UnI90">
         <property role="TrG5h" value="n" />
         <node concept="2XEmfi" id="pWUwO6CUeS" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI9n" id="pWUwO6COmg" role="3UnI90">
         <property role="TrG5h" value="pe" />
         <node concept="2XEmfi" id="pWUwO6CUlh" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI9n" id="pWUwO6COmk" role="3UnI90">
         <property role="TrG5h" value="l" />
         <node concept="2XEmfi" id="pWUwO6CUlI" role="3UnI80">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3UnI9n" id="6bDIMKp8hai" role="3UnI90">
@@ -1470,7 +1470,7 @@
         <node concept="2HbMbg" id="6bDIMKp8i9C" role="1yBDGv">
           <node concept="nE0YJ" id="6bDIMKp8hfK" role="2H9Iav">
             <node concept="3Ug1Ap" id="6bDIMKp8heL" role="2H9Iav">
-              <ref role="3Ug1Ao" node="6bDIMKp8hai" resolve="voltage" />
+              <ref role="3Ug1Ao" node="6bDIMKp8hai" />
             </node>
             <node concept="2IPVmt" id="6bDIMKp8hfL" role="2H9Ial">
               <property role="2IPVms" value="225" />
@@ -1481,7 +1481,7 @@
               <property role="2IPVms" value="235" />
             </node>
             <node concept="3Ug1Ap" id="6bDIMKp8hg8" role="2H9Iav">
-              <ref role="3Ug1Ao" node="6bDIMKp8hai" resolve="voltage" />
+              <ref role="3Ug1Ao" node="6bDIMKp8hai" />
             </node>
           </node>
         </node>
@@ -1496,7 +1496,7 @@
         <node concept="2HbMbg" id="6bDIMKp8iak" role="1yBDGv">
           <node concept="nE0YJ" id="6bDIMKp8hji" role="2H9Iav">
             <node concept="3Ug1Ap" id="6bDIMKp8hiu" role="2H9Iav">
-              <ref role="3Ug1Ao" node="6bDIMKp8hd6" resolve="intensity" />
+              <ref role="3Ug1Ao" node="6bDIMKp8hd6" />
             </node>
             <node concept="2IPVmt" id="6bDIMKp8hjj" role="2H9Ial">
               <property role="2IPVms" value="14" />
@@ -1507,7 +1507,7 @@
               <property role="2IPVms" value="18" />
             </node>
             <node concept="3Ug1Ap" id="6bDIMKp8hjG" role="2H9Iav">
-              <ref role="3Ug1Ao" node="6bDIMKp8hd6" resolve="intensity" />
+              <ref role="3Ug1Ao" node="6bDIMKp8hd6" />
             </node>
           </node>
         </node>
@@ -1524,18 +1524,18 @@
       <property role="3Ijkdo" value="0" />
       <property role="TrG5h" value="controlBox_impl" />
       <node concept="3Ug1AZ" id="6TziiKuhweK" role="2p5x1W">
-        <ref role="3Ug1AY" node="65VbbGlC$M_" resolve="ControlBox" />
+        <ref role="3Ug1AY" node="65VbbGlC$M_" />
       </node>
       <node concept="3Ug1AV" id="6TziiKuhweO" role="3UgYNK">
         <property role="TrG5h" value="controller" />
         <node concept="3Ug1AZ" id="6TziiKuhweN" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MA" resolve="ChargingCableController" />
+          <ref role="3Ug1AY" node="65VbbGlC$MA" />
         </node>
       </node>
       <node concept="3Ug1AV" id="6TziiKuhweX" role="3UgYNK">
         <property role="TrG5h" value="watchDog" />
         <node concept="3Ug1AZ" id="6TziiKuhweV" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MB" resolve="WatchDog" />
+          <ref role="3Ug1AY" node="65VbbGlC$MB" />
         </node>
         <node concept="0Sh09" id="7n39yospaYn" role="lGtFl">
           <node concept="hnKMr" id="55oVyA0rar1" role="hnKMk">
@@ -1546,26 +1546,26 @@
       <node concept="3Ug1AV" id="6W1kQP6__5$" role="3UgYNK">
         <property role="TrG5h" value="circuitBreaker" />
         <node concept="3Ug1AZ" id="6W1kQP6__5y" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MC" resolve="CircuitBreaker" />
+          <ref role="3Ug1AY" node="65VbbGlC$MC" />
         </node>
       </node>
       <node concept="3Ug1AV" id="6W1kQP6__X6" role="3UgYNK">
         <property role="TrG5h" value="tempSensor" />
         <node concept="3Ug1AZ" id="6W1kQP6__X4" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MD" resolve="TemperatureSensor" />
+          <ref role="3Ug1AY" node="65VbbGlC$MD" />
         </node>
       </node>
       <node concept="3Ug1$w" id="6TziiKuhwiN" role="3UgYNK">
         <node concept="3Ug1GC" id="6TziiKuhwiO" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4bSVeFVFBVu" resolve="pingWatchDog" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBVu" />
           <node concept="3Ug1GJ" id="6TziiKuhwiP" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6TziiKuhwiQ" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4bSVeFVFBVW" resolve="ping" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBVW" />
           <node concept="3Ug1GJ" id="6TziiKuhwiR" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweX" resolve="watchDog" />
+            <ref role="3Ug1GI" node="6TziiKuhweX" />
           </node>
         </node>
         <node concept="0Sh09" id="7n39yospaYp" role="lGtFl">
@@ -1576,15 +1576,15 @@
       </node>
       <node concept="3Ug1$w" id="6TziiKuhwkD" role="3UgYNK">
         <node concept="3Ug1GC" id="6TziiKuhwkE" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4bSVeFVFBWj" resolve="reset" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBWj" />
           <node concept="3Ug1GJ" id="6TziiKuhwkF" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweX" resolve="watchDog" />
+            <ref role="3Ug1GI" node="6TziiKuhweX" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6TziiKuhwkG" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4bSVeFVFBWC" resolve="reset" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBWC" />
           <node concept="3Ug1GJ" id="6TziiKuhwkH" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
         <node concept="0Sh09" id="7n39yospaYr" role="lGtFl">
@@ -1595,161 +1595,161 @@
       </node>
       <node concept="3Ug1$w" id="34jvijxCpur" role="3UgYNK">
         <node concept="3Ug1Ap" id="34jvijxCpxU" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5kaUUWfwhOj" resolve="l" />
+          <ref role="3Ug1Ao" node="5kaUUWfwhOj" />
         </node>
         <node concept="3Ug1GC" id="34jvijxCpA5" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4bSVeFVFBMF" resolve="l" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBMF" />
           <node concept="3Ug1GJ" id="34jvijxCpA4" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="34jvijxCpFi" role="3UgYNK">
         <node concept="3Ug1Ap" id="34jvijxCpKa" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5kaUUWfwhOK" resolve="n" />
+          <ref role="3Ug1Ao" node="5kaUUWfwhOK" />
         </node>
         <node concept="3Ug1GC" id="34jvijxCpFk" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4bSVeFVFBMH" resolve="n" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBMH" />
           <node concept="3Ug1GJ" id="34jvijxCpFl" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="34jvijxCpFO" role="3UgYNK">
         <node concept="3Ug1Ap" id="34jvijxCpUx" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5kaUUWfwhR2" resolve="pe" />
+          <ref role="3Ug1Ao" node="5kaUUWfwhR2" />
         </node>
         <node concept="3Ug1GC" id="34jvijxCpFQ" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4bSVeFVFBMJ" resolve="pe" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBMJ" />
           <node concept="3Ug1GJ" id="34jvijxCpFR" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="34jvijxCpGq" role="3UgYNK">
         <node concept="3Ug1Ap" id="34jvijxCpXE" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5kaUUWfwhUn" resolve="ev_connected" />
+          <ref role="3Ug1Ao" node="5kaUUWfwhUn" />
         </node>
         <node concept="3Ug1GC" id="34jvijxCpGs" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4bSVeFVFBML" resolve="ev_connected" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBML" />
           <node concept="3Ug1GJ" id="34jvijxCpGt" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="34jvijxCq0N" role="3UgYNK">
         <node concept="3Ug1Ap" id="34jvijxCq4B" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5kaUUWfwhWX" resolve="socket_connected" />
+          <ref role="3Ug1Ao" node="5kaUUWfwhWX" />
         </node>
         <node concept="3Ug1GC" id="34jvijxCq0P" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4bSVeFVFBMN" resolve="socket_connected" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBMN" />
           <node concept="3Ug1GJ" id="34jvijxCq0Q" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6__at" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6__au" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4bSVeFVFBMB" resolve="open_circuit" />
+          <ref role="3Ug1Ha" node="4bSVeFVFBMB" />
           <node concept="3Ug1GJ" id="6W1kQP6__av" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6W1kQP6__aw" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="6W1kQP6__4$" resolve="open_cmd" />
+          <ref role="3Ug1Ha" node="6W1kQP6__4$" />
           <node concept="3Ug1GJ" id="6W1kQP6__ax" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6W1kQP6__5$" resolve="circuitBreaker" />
+            <ref role="3Ug1GI" node="6W1kQP6__5$" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_Ae5" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6_Ae6" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5Jr7irfQDmq" resolve="temperature" />
+          <ref role="3Ug1Ha" node="5Jr7irfQDmq" />
           <node concept="3Ug1GJ" id="6W1kQP6_Ae7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6W1kQP6__X6" resolve="tempSensor" />
+            <ref role="3Ug1GI" node="6W1kQP6__X6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_Ae8" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="6W1kQP6__q8" resolve="controlBox_temperature" />
+          <ref role="3Ug1Ha" node="6W1kQP6__q8" />
           <node concept="3Ug1GJ" id="6W1kQP6_Ae9" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_Ars" role="3UgYNK">
         <node concept="3Ug1Ap" id="6W1kQP6_Asi" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="6W1kQP6__tV" resolve="ev_end_temperature" />
+          <ref role="3Ug1Ao" node="6W1kQP6__tV" />
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_Asl" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="1ef6u74hUn_" resolve="ev_end_temperature" />
+          <ref role="3Ug1Ha" node="1ef6u74hUn_" />
           <node concept="3Ug1GJ" id="6W1kQP6_Ask" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_Ath" role="3UgYNK">
         <node concept="3Ug1Ap" id="6W1kQP6_Aub" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="6W1kQP6__A9" resolve="socket_end_temperature" />
+          <ref role="3Ug1Ao" node="6W1kQP6__A9" />
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_Aue" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="6W1kQP6__ni" resolve="socket_end_temperature" />
+          <ref role="3Ug1Ha" node="6W1kQP6__ni" />
           <node concept="3Ug1GJ" id="6W1kQP6_Aud" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_Azn" role="3UgYNK">
         <node concept="3Ug1Ap" id="6W1kQP6_A$l" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="6ll6Fcue342" resolve="shutdown_button_pressed" />
+          <ref role="3Ug1Ao" node="6ll6Fcue342" />
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_A$o" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="1JJRV36A5_4" resolve="shutdown_button_pressed" />
+          <ref role="3Ug1Ha" node="1JJRV36A5_4" />
           <node concept="3Ug1GJ" id="6W1kQP6_A$n" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_A_s" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6_AAv" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="1JJRV36A5Cg" resolve="powered_led" />
+          <ref role="3Ug1Ha" node="1JJRV36A5Cg" />
           <node concept="3Ug1GJ" id="6W1kQP6_AAu" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="6W1kQP6_AAy" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="1JJRV36A3xD" resolve="powered_led" />
+          <ref role="3Ug1Ao" node="1JJRV36A3xD" />
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_ABD" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6_ACK" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="6ll6Fcue2NT" resolve="disconnect_led" />
+          <ref role="3Ug1Ha" node="6ll6Fcue2NT" />
           <node concept="3Ug1GJ" id="6W1kQP6_ACJ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="6W1kQP6_ACN" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="6ll6Fcue2YM" resolve="disconnect_led" />
+          <ref role="3Ug1Ao" node="6ll6Fcue2YM" />
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_AHc" role="3UgYNK">
         <node concept="3Ug1Ap" id="6W1kQP6_AIm" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="1ef6u74hTR4" resolve="voltage" />
+          <ref role="3Ug1Ao" node="1ef6u74hTR4" />
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_AIp" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="1ef6u74hUlN" resolve="voltage" />
+          <ref role="3Ug1Ha" node="1ef6u74hUlN" />
           <node concept="3Ug1GJ" id="6W1kQP6_AIo" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_AJD" role="3UgYNK">
         <node concept="3Ug1Ap" id="6W1kQP6_AKR" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="1ef6u74hTRl" resolve="intensity" />
+          <ref role="3Ug1Ao" node="1ef6u74hTRl" />
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_AKU" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="1ef6u74hUmE" resolve="intensity" />
+          <ref role="3Ug1Ha" node="1ef6u74hUmE" />
           <node concept="3Ug1GJ" id="6W1kQP6_AKT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="6TziiKuhweO" resolve="controller" />
+            <ref role="3Ug1GI" node="6TziiKuhweO" />
           </node>
         </node>
       </node>
@@ -2361,170 +2361,170 @@
       <node concept="3Ug1AV" id="5kaUUWfwhZs" role="3UgYNK">
         <property role="TrG5h" value="controlBox" />
         <node concept="3Ug1AZ" id="6TziiKuhwf2" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MI" resolve="controlBox_impl" />
+          <ref role="3Ug1AY" node="65VbbGlC$MI" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5kaUUWfwi0D" role="3UgYNK">
         <property role="TrG5h" value="evSensors" />
         <node concept="3Ug1AZ" id="5kaUUWfwi5r" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MF" resolve="EVSensors" />
+          <ref role="3Ug1AY" node="65VbbGlC$MF" />
         </node>
       </node>
       <node concept="3Ug1AV" id="pWUwO6CTVe" role="3UgYNK">
         <property role="TrG5h" value="cableSensors" />
         <node concept="3Ug1AZ" id="pWUwO6CTVc" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MH" resolve="CableSensors" />
+          <ref role="3Ug1AY" node="65VbbGlC$MH" />
         </node>
       </node>
       <node concept="3Ug1AV" id="pWUwO6COce" role="3UgYNK">
         <property role="TrG5h" value="socketSensors" />
         <node concept="3Ug1AZ" id="pWUwO6COcf" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$MG" resolve="SocketSensors" />
+          <ref role="3Ug1AY" node="65VbbGlC$MG" />
         </node>
       </node>
       <node concept="3Ug1AV" id="66sW2d$Fi9h" role="3UgYNK">
         <property role="TrG5h" value="shutdownButton" />
         <node concept="3Ug1AZ" id="66sW2d$Fi9f" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlC$ME" resolve="ShutdownButton" />
+          <ref role="3Ug1AY" node="65VbbGlC$ME" />
         </node>
       </node>
       <node concept="3Ug1$w" id="5kaUUWfwi5F" role="3UgYNK">
         <node concept="3Ug1GC" id="pWUwO6CO2X" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmk" resolve="l" />
+          <ref role="3Ug1Ha" node="pWUwO6COmk" />
           <node concept="3Ug1GJ" id="pWUwO6CTVK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+            <ref role="3Ug1GI" node="pWUwO6CTVe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="5kaUUWfwi5Y" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhOj" resolve="l" />
+          <ref role="3Ug1Ha" node="5kaUUWfwhOj" />
           <node concept="3Ug1GJ" id="5kaUUWfwi5X" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5kaUUWfwi6j" role="3UgYNK">
         <node concept="3Ug1GC" id="5kaUUWfwi6B" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5kaUUWfwhWy" resolve="ev_connected" />
+          <ref role="3Ug1Ha" node="5kaUUWfwhWy" />
           <node concept="3Ug1GJ" id="5kaUUWfwi6A" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwi0D" resolve="evSensors" />
+            <ref role="3Ug1GI" node="5kaUUWfwi0D" />
           </node>
         </node>
         <node concept="3Ug1GC" id="5kaUUWfwi6F" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhUn" resolve="ev_connected" />
+          <ref role="3Ug1Ha" node="5kaUUWfwhUn" />
           <node concept="3Ug1GJ" id="5kaUUWfwi6E" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5kaUUWfwi75" role="3UgYNK">
         <node concept="3Ug1GC" id="5kaUUWfwi7u" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmc" resolve="n" />
+          <ref role="3Ug1Ha" node="pWUwO6COmc" />
           <node concept="3Ug1GJ" id="pWUwO6CTVN" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+            <ref role="3Ug1GI" node="pWUwO6CTVe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="5kaUUWfwi7y" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhOK" resolve="n" />
+          <ref role="3Ug1Ha" node="5kaUUWfwhOK" />
           <node concept="3Ug1GJ" id="5kaUUWfwi7x" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5kaUUWfwi81" role="3UgYNK">
         <node concept="3Ug1GC" id="5kaUUWfwi8v" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6COmg" resolve="pe" />
+          <ref role="3Ug1Ha" node="pWUwO6COmg" />
           <node concept="3Ug1GJ" id="pWUwO6CTVQ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+            <ref role="3Ug1GI" node="pWUwO6CTVe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="5kaUUWfwi8z" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhR2" resolve="pe" />
+          <ref role="3Ug1Ha" node="5kaUUWfwhR2" />
           <node concept="3Ug1GJ" id="5kaUUWfwi8y" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="pWUwO6COdG" role="3UgYNK">
         <node concept="3Ug1GC" id="pWUwO6COdH" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="pWUwO6CObN" resolve="socket_connected" />
+          <ref role="3Ug1Ha" node="pWUwO6CObN" />
           <node concept="3Ug1GJ" id="pWUwO6COdI" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6COce" resolve="socketSensors" />
+            <ref role="3Ug1GI" node="pWUwO6COce" />
           </node>
         </node>
         <node concept="3Ug1GC" id="pWUwO6COdJ" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5kaUUWfwhWX" resolve="socket_connected" />
+          <ref role="3Ug1Ha" node="5kaUUWfwhWX" />
           <node concept="3Ug1GJ" id="pWUwO6COdK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_AR1" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6_ARA" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="6bDIMKp8hki" resolve="ev_end_temperature" />
+          <ref role="3Ug1Ha" node="6bDIMKp8hki" />
           <node concept="3Ug1GJ" id="6W1kQP6_AR_" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+            <ref role="3Ug1GI" node="pWUwO6CTVe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_ARE" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="6W1kQP6__tV" resolve="ev_end_temperature" />
+          <ref role="3Ug1Ha" node="6W1kQP6__tV" />
           <node concept="3Ug1GJ" id="6W1kQP6_ARD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_ASl" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6_ASZ" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="6W1kQP6__KJ" resolve="socket_end_temperature" />
+          <ref role="3Ug1Ha" node="6W1kQP6__KJ" />
           <node concept="3Ug1GJ" id="6W1kQP6_ASY" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+            <ref role="3Ug1GI" node="pWUwO6CTVe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_AT3" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="6W1kQP6__A9" resolve="socket_end_temperature" />
+          <ref role="3Ug1Ha" node="6W1kQP6__A9" />
           <node concept="3Ug1GJ" id="6W1kQP6_AT2" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_ATN" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6_AUy" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="6bDIMKp8hd6" resolve="intensity" />
+          <ref role="3Ug1Ha" node="6bDIMKp8hd6" />
           <node concept="3Ug1GJ" id="6W1kQP6_AUx" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+            <ref role="3Ug1GI" node="pWUwO6CTVe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_AUA" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="1ef6u74hTRl" resolve="intensity" />
+          <ref role="3Ug1Ha" node="1ef6u74hTRl" />
           <node concept="3Ug1GJ" id="6W1kQP6_AU_" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="6W1kQP6_AVr" role="3UgYNK">
         <node concept="3Ug1GC" id="6W1kQP6_AWf" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="6bDIMKp8hai" resolve="voltage" />
+          <ref role="3Ug1Ha" node="6bDIMKp8hai" />
           <node concept="3Ug1GJ" id="6W1kQP6_AWe" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="pWUwO6CTVe" resolve="cableSensors" />
+            <ref role="3Ug1GI" node="pWUwO6CTVe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="6W1kQP6_AWj" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="1ef6u74hTR4" resolve="voltage" />
+          <ref role="3Ug1Ha" node="1ef6u74hTR4" />
           <node concept="3Ug1GJ" id="6W1kQP6_AWi" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="66sW2d$FibY" role="3UgYNK">
         <node concept="3Ug1GC" id="66sW2d$FicT" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="66sW2d$Fi7Y" resolve="pressed" />
+          <ref role="3Ug1Ha" node="66sW2d$Fi7Y" />
           <node concept="3Ug1GJ" id="66sW2d$FicS" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="66sW2d$Fi9h" resolve="shutdownButton" />
+            <ref role="3Ug1GI" node="66sW2d$Fi9h" />
           </node>
         </node>
         <node concept="3Ug1GC" id="66sW2d$FicX" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="6ll6Fcue342" resolve="shutdown_button_pressed" />
+          <ref role="3Ug1Ha" node="6ll6Fcue342" />
           <node concept="3Ug1GJ" id="66sW2d$FicW" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5kaUUWfwhZs" resolve="controlBox" />
+            <ref role="3Ug1GI" node="5kaUUWfwhZs" />
           </node>
         </node>
       </node>
@@ -2971,13 +2971,13 @@
         <node concept="2Hdskp" id="6bDIMKp8ibX" role="2Hfkx9">
           <property role="TrG5h" value="l" />
           <node concept="2XEmfi" id="6bDIMKp8icl" role="2HdssA">
-            <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+            <ref role="2XEmfl" node="pWUwO6CU8K" />
           </node>
         </node>
         <node concept="2Hdskp" id="6bDIMKp8icK" role="2Hfkx9">
           <property role="TrG5h" value="n" />
           <node concept="2XEmfi" id="6bDIMKp8ida" role="2HdssA">
-            <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+            <ref role="2XEmfl" node="pWUwO6CU8K" />
           </node>
         </node>
         <node concept="2Hdskp" id="6bDIMKp8AUP" role="2Hfkx9">
@@ -2994,30 +2994,30 @@
       <node concept="2aiEES" id="6bDIMKp8hv1" role="2HcbjO">
         <node concept="2HfkAV" id="6bDIMKp8hv2" role="2HfkAP">
           <node concept="1tTNRl" id="6bDIMKp8hv3" role="2He$ia">
-            <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+            <ref role="1tTNPH" node="6bDIMKp8huX" />
           </node>
           <node concept="1tS8IT" id="6bDIMKp8hv4" role="2He$i0">
-            <ref role="1tS8HL" node="6bDIMKp8huW" resolve="initial" />
+            <ref role="1tS8HL" node="6bDIMKp8huW" />
           </node>
         </node>
         <node concept="1tTNHs" id="6bDIMKp8hv5" role="2HfkAP">
           <node concept="1tTNRl" id="6bDIMKp8hv6" role="2He$ia">
-            <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+            <ref role="1tTNPH" node="6bDIMKp8huX" />
           </node>
           <node concept="1tTNP8" id="6bDIMKp8hv7" role="2He$i0">
             <node concept="1tTNwp" id="6bDIMKp8hHZ" role="2H9I2x">
               <property role="TrG5h" value="init2startup" />
               <node concept="1tTNRl" id="6bDIMKp8hI0" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hI7" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8huW" resolve="initial" />
+                <ref role="1tS8HL" node="6bDIMKp8huW" />
               </node>
               <node concept="32Ogvo" id="6bDIMKp8hIj" role="2H9I4J">
-                <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                <ref role="32Ogvr" node="6bDIMKp8hGO" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hIo" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8huZ" resolve="startup" />
+                <ref role="1tS8HL" node="6bDIMKp8huZ" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBmd" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90gB" role="hnKMk">
@@ -3028,19 +3028,19 @@
             <node concept="1tTNwp" id="6ll6Fcue2pO" role="2H9I2x">
               <property role="TrG5h" value="startup2safe" />
               <node concept="1tTNRl" id="6ll6Fcue2pQ" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6ll6Fcue2qZ" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8huW" resolve="initial" />
+                <ref role="1tS8HL" node="6bDIMKp8huW" />
               </node>
               <node concept="nE0YJ" id="6ll6Fcue2xE" role="2H9I4J">
                 <node concept="2EDkE1" id="6ll6Fcue2rC" role="2H9Iav">
                   <node concept="2H9Eef" id="6ll6Fcue2rY" role="32OYtT">
                     <node concept="2He$iJ" id="6ll6Fcue2ta" role="2H9Ial">
-                      <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+                      <ref role="2He$iI" node="6bDIMKp8icK" />
                     </node>
                     <node concept="2He$iJ" id="6ll6Fcue2rK" role="2H9Iav">
-                      <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
+                      <ref role="2He$iI" node="6bDIMKp8ibX" />
                     </node>
                   </node>
                 </node>
@@ -3049,7 +3049,7 @@
                 </node>
               </node>
               <node concept="1tS8IT" id="6ll6Fcue2$J" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8h_9" resolve="safe" />
+                <ref role="1tS8HL" node="6bDIMKp8h_9" />
               </node>
               <node concept="0Sh09" id="1JJRV36A3ox" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90gD" role="hnKMk">
@@ -3060,10 +3060,10 @@
             <node concept="1tTNwp" id="6bDIMKp8hXV" role="2H9I2x">
               <property role="TrG5h" value="startup2operate" />
               <node concept="1tTNRl" id="6bDIMKp8hXX" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hYa" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8huZ" resolve="startup" />
+                <ref role="1tS8HL" node="6bDIMKp8huZ" />
               </node>
               <node concept="2HbMbg" id="1JJRV36A3RJ" role="2H9I4J">
                 <node concept="nE0YL" id="1JJRV36A3TK" role="2H9Ial">
@@ -3073,20 +3073,20 @@
                   <node concept="2EDkE1" id="1JJRV36A3RZ" role="2H9Iav">
                     <node concept="2H9Eef" id="1JJRV36A3Sl" role="32OYtT">
                       <node concept="2He$iJ" id="1JJRV36A3Tx" role="2H9Ial">
-                        <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+                        <ref role="2He$iI" node="6bDIMKp8icK" />
                       </node>
                       <node concept="2He$iJ" id="1JJRV36A3S7" role="2H9Iav">
-                        <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
+                        <ref role="2He$iI" node="6bDIMKp8ibX" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="32Ogvo" id="6bDIMKp8hYo" role="2H9Iav">
-                  <ref role="32Ogvr" node="6bDIMKp8hGb" resolve="ev_connected" />
+                  <ref role="32Ogvr" node="6bDIMKp8hGb" />
                 </node>
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hYt" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hz3" resolve="operate" />
+                <ref role="1tS8HL" node="6bDIMKp8hz3" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBo6" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90gF" role="hnKMk">
@@ -3097,22 +3097,22 @@
             <node concept="1tTNwp" id="6bDIMKp8hYX" role="2H9I2x">
               <property role="TrG5h" value="operate2safe" />
               <node concept="1tTNRl" id="6bDIMKp8hYZ" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hZh" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hz3" resolve="operate" />
+                <ref role="1tS8HL" node="6bDIMKp8hz3" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xdG" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8h_9" resolve="safe" />
+                <ref role="1tS8HL" node="6bDIMKp8h_9" />
               </node>
               <node concept="nE0YJ" id="6bDIMKp8xd3" role="2H9I4J">
                 <node concept="2EDkE1" id="6ll6Fcue2Sh" role="2H9Iav">
                   <node concept="2H9Eef" id="6ll6Fcue2SB" role="32OYtT">
                     <node concept="2He$iJ" id="6ll6Fcue2TN" role="2H9Ial">
-                      <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+                      <ref role="2He$iI" node="6bDIMKp8icK" />
                     </node>
                     <node concept="2He$iJ" id="6ll6Fcue2Sp" role="2H9Iav">
-                      <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
+                      <ref role="2He$iI" node="6bDIMKp8ibX" />
                     </node>
                   </node>
                 </node>
@@ -3129,13 +3129,13 @@
             <node concept="1tTNwp" id="6bDIMKp8xe6" role="2H9I2x">
               <property role="TrG5h" value="init2shutdown" />
               <node concept="1tTNRl" id="6bDIMKp8xe8" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xez" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8huW" resolve="initial" />
+                <ref role="1tS8HL" node="6bDIMKp8huW" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xeA" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                <ref role="1tS8HL" node="6bDIMKp8hAL" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBlV" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90gJ" role="hnKMk">
@@ -3145,24 +3145,24 @@
               <node concept="2HbMDt" id="6ll6Fcue28u" role="2H9I4J">
                 <node concept="1yA0yd" id="6ll6Fcue28K" role="2H9Ial">
                   <node concept="32Ogvo" id="6ll6Fcue28B" role="32OYtT">
-                    <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                    <ref role="32Ogvr" node="6bDIMKp8hGO" />
                   </node>
                 </node>
                 <node concept="32Ogvo" id="1JJRV36A3pb" role="2H9Iav">
-                  <ref role="32Ogvr" node="1ef6u74hU$_" resolve="shutdown_button_pressed" />
+                  <ref role="32Ogvr" node="1ef6u74hU$_" />
                 </node>
               </node>
             </node>
             <node concept="1tTNwp" id="6bDIMKp8xf3" role="2H9I2x">
               <property role="TrG5h" value="startup2shutdown" />
               <node concept="1tTNRl" id="6bDIMKp8xf5" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xf$" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8huZ" resolve="startup" />
+                <ref role="1tS8HL" node="6bDIMKp8huZ" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xfB" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                <ref role="1tS8HL" node="6bDIMKp8hAL" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBlX" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90gL" role="hnKMk">
@@ -3172,11 +3172,11 @@
               <node concept="32OYss" id="1JJRV36A3qi" role="2H9I4J">
                 <node concept="2HbMDt" id="1JJRV36A3qj" role="32OYtT">
                   <node concept="32Ogvo" id="1JJRV36A3pi" role="2H9Iav">
-                    <ref role="32Ogvr" node="1ef6u74hU$_" resolve="shutdown_button_pressed" />
+                    <ref role="32Ogvr" node="1ef6u74hU$_" />
                   </node>
                   <node concept="1yA0yd" id="1JJRV36A3qk" role="2H9Ial">
                     <node concept="32Ogvo" id="1JJRV36A3pS" role="32OYtT">
-                      <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                      <ref role="32Ogvr" node="6bDIMKp8hGO" />
                     </node>
                   </node>
                 </node>
@@ -3185,13 +3185,13 @@
             <node concept="1tTNwp" id="6bDIMKp8xg8" role="2H9I2x">
               <property role="TrG5h" value="operate2shutdown" />
               <node concept="1tTNRl" id="6bDIMKp8xga" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xgH" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hz3" resolve="operate" />
+                <ref role="1tS8HL" node="6bDIMKp8hz3" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xgK" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                <ref role="1tS8HL" node="6bDIMKp8hAL" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBlZ" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90gN" role="hnKMk">
@@ -3201,11 +3201,11 @@
               <node concept="32OYss" id="1JJRV36A3qI" role="2H9I4J">
                 <node concept="2HbMDt" id="1JJRV36A3qJ" role="32OYtT">
                   <node concept="32Ogvo" id="1JJRV36A3qK" role="2H9Iav">
-                    <ref role="32Ogvr" node="1ef6u74hU$_" resolve="shutdown_button_pressed" />
+                    <ref role="32Ogvr" node="1ef6u74hU$_" />
                   </node>
                   <node concept="1yA0yd" id="1JJRV36A3qL" role="2H9Ial">
                     <node concept="32Ogvo" id="1JJRV36A3qM" role="32OYtT">
-                      <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                      <ref role="32Ogvr" node="6bDIMKp8hGO" />
                     </node>
                   </node>
                 </node>
@@ -3214,13 +3214,13 @@
             <node concept="1tTNwp" id="6bDIMKp8xhl" role="2H9I2x">
               <property role="TrG5h" value="safe2shutdown" />
               <node concept="1tTNRl" id="6bDIMKp8xhn" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8huX" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8huX" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xhY" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8h_9" resolve="safe" />
+                <ref role="1tS8HL" node="6bDIMKp8h_9" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8xi1" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hAL" resolve="shutdown" />
+                <ref role="1tS8HL" node="6bDIMKp8hAL" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBm1" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90gP" role="hnKMk">
@@ -3230,11 +3230,11 @@
               <node concept="32OYss" id="1JJRV36A3r2" role="2H9I4J">
                 <node concept="2HbMDt" id="1JJRV36A3r3" role="32OYtT">
                   <node concept="32Ogvo" id="1JJRV36A3r4" role="2H9Iav">
-                    <ref role="32Ogvr" node="1ef6u74hU$_" resolve="shutdown_button_pressed" />
+                    <ref role="32Ogvr" node="1ef6u74hU$_" />
                   </node>
                   <node concept="1yA0yd" id="1JJRV36A3r5" role="2H9Ial">
                     <node concept="32Ogvo" id="1JJRV36A3r6" role="32OYtT">
-                      <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                      <ref role="32Ogvr" node="6bDIMKp8hGO" />
                     </node>
                   </node>
                 </node>
@@ -3244,10 +3244,10 @@
         </node>
         <node concept="2HfkAV" id="6bDIMKp8i5c" role="2HfkAP">
           <node concept="2He$iJ" id="6bDIMKp8i5L" role="2He$ia">
-            <ref role="2He$iI" node="6bDIMKp8i2a" resolve="circuit_breaker" />
+            <ref role="2He$iI" node="6bDIMKp8i2a" />
           </node>
           <node concept="2HeeqP" id="6bDIMKp8i66" role="2He$i0">
-            <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+            <ref role="2HeeqO" node="6bDIMKp8i44" />
           </node>
           <node concept="0Sh09" id="1JJRV36A13I" role="lGtFl">
             <node concept="hnKMr" id="5cnt3YR90gR" role="hnKMk">
@@ -3259,10 +3259,10 @@
           <node concept="FsPnB" id="6bDIMKp8i7$" role="2He$i0">
             <node concept="FsPnw" id="6bDIMKp8i7z" role="2H9I2x">
               <node concept="3JXjYv" id="6bDIMKp8i8n" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8hXV" resolve="startup2operate" />
+                <ref role="3JXjYu" node="6bDIMKp8hXV" />
               </node>
               <node concept="2HeeqP" id="6bDIMKp8i8$" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i4w" resolve="close" />
+                <ref role="2HeeqO" node="6bDIMKp8i4w" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBoe" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90hu" role="hnKMk">
@@ -3272,10 +3272,10 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBfY" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBgh" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8hYX" resolve="operate2safe" />
+                <ref role="3JXjYu" node="6bDIMKp8hYX" />
               </node>
               <node concept="2HeeqP" id="4bSVeFVFBgs" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBoi" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90hw" role="hnKMk">
@@ -3285,10 +3285,10 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBcY" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBdL" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xe6" resolve="init2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xe6" />
               </node>
               <node concept="2HeeqP" id="4bSVeFVFBe0" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBIn" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90hy" role="hnKMk">
@@ -3298,10 +3298,10 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBe2" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBec" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xf3" resolve="startup2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xf3" />
               </node>
               <node concept="2HeeqP" id="4bSVeFVFBfv" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBIp" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90h$" role="hnKMk">
@@ -3311,10 +3311,10 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBer" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBeC" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xg8" resolve="operate2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xg8" />
               </node>
               <node concept="2HeeqP" id="4bSVeFVFBfH" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBIr" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90hA" role="hnKMk">
@@ -3324,10 +3324,10 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBeR" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBf7" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xhl" resolve="safe2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xhl" />
               </node>
               <node concept="2HeeqP" id="4bSVeFVFBfV" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="4bSVeFVFBIt" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR90hC" role="hnKMk">
@@ -3337,12 +3337,12 @@
             </node>
           </node>
           <node concept="2He$iJ" id="6bDIMKp8i8a" role="2He$ia">
-            <ref role="2He$iI" node="6bDIMKp8i2a" resolve="circuit_breaker" />
+            <ref role="2He$iI" node="6bDIMKp8i2a" />
           </node>
         </node>
         <node concept="2HfkAV" id="6bDIMKp8AXt" role="2HfkAP">
           <node concept="2He$iJ" id="6bDIMKp8AYE" role="2He$ia">
-            <ref role="2He$iI" node="6bDIMKp8AUP" resolve="disconnect_led" />
+            <ref role="2He$iI" node="6bDIMKp8AUP" />
           </node>
           <node concept="1yCjT0" id="6bDIMKp8AYW" role="2He$i0" />
         </node>
@@ -3350,7 +3350,7 @@
           <node concept="FsPnB" id="6bDIMKp8B0b" role="2He$i0">
             <node concept="FsPnw" id="6bDIMKp8B0a" role="2H9I2x">
               <node concept="3JXjYv" id="6bDIMKp8B1s" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8hYX" resolve="operate2safe" />
+                <ref role="3JXjYu" node="6bDIMKp8hYX" />
               </node>
               <node concept="1yCjRe" id="6bDIMKp8B1D" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBok" role="lGtFl">
@@ -3361,7 +3361,7 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBGN" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBGV" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xe6" resolve="init2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xe6" />
               </node>
               <node concept="1yCjRe" id="1ef6u74hUzN" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIl" role="lGtFl">
@@ -3372,7 +3372,7 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBH5" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBHg" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xf3" resolve="startup2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xf3" />
               </node>
               <node concept="1yCjRe" id="1ef6u74hUzZ" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIj" role="lGtFl">
@@ -3383,7 +3383,7 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBHq" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBHC" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xg8" resolve="operate2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xg8" />
               </node>
               <node concept="1yCjRe" id="1ef6u74hU$b" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIh" role="lGtFl">
@@ -3394,7 +3394,7 @@
             </node>
             <node concept="FsPnw" id="4bSVeFVFBHO" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBI5" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8xhl" resolve="safe2shutdown" />
+                <ref role="3JXjYu" node="6bDIMKp8xhl" />
               </node>
               <node concept="1yCjRe" id="1ef6u74hU$n" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBIf" role="lGtFl">
@@ -3405,12 +3405,12 @@
             </node>
           </node>
           <node concept="2He$iJ" id="6bDIMKp8B1l" role="2He$ia">
-            <ref role="2He$iI" node="6bDIMKp8AUP" resolve="disconnect_led" />
+            <ref role="2He$iI" node="6bDIMKp8AUP" />
           </node>
         </node>
         <node concept="2HfkAV" id="4bSVeFVFBrd" role="2HfkAP">
           <node concept="2He$iJ" id="4bSVeFVFBt8" role="2He$ia">
-            <ref role="2He$iI" node="4bSVeFVFBoH" resolve="powered_led" />
+            <ref role="2He$iI" node="4bSVeFVFBoH" />
           </node>
           <node concept="1yCjT0" id="4bSVeFVFBtp" role="2He$i0" />
         </node>
@@ -3418,7 +3418,7 @@
           <node concept="FsPnB" id="4bSVeFVFBvq" role="2He$i0">
             <node concept="FsPnw" id="4bSVeFVFBvp" role="2H9I2x">
               <node concept="3JXjYv" id="4bSVeFVFBxB" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8hHZ" resolve="init2startup" />
+                <ref role="3JXjYu" node="6bDIMKp8hHZ" />
               </node>
               <node concept="1yCjRe" id="4bSVeFVFBxM" role="2H9I4_" />
               <node concept="0Sh09" id="4bSVeFVFBxR" role="lGtFl">
@@ -3430,12 +3430,12 @@
             </node>
           </node>
           <node concept="2He$iJ" id="4bSVeFVFBxw" role="2He$ia">
-            <ref role="2He$iI" node="4bSVeFVFBoH" resolve="powered_led" />
+            <ref role="2He$iI" node="4bSVeFVFBoH" />
           </node>
         </node>
         <node concept="2HfkAV" id="6bDIMKp8ihv" role="2HfkAP">
           <node concept="2He$iJ" id="6bDIMKp8iib" role="2He$ia">
-            <ref role="2He$iI" node="6bDIMKp8ibX" resolve="l" />
+            <ref role="2He$iI" node="6bDIMKp8ibX" />
           </node>
           <node concept="2IPVmt" id="6bDIMKp8iim" role="2He$i0">
             <property role="2IPVms" value="0" />
@@ -3443,7 +3443,7 @@
         </node>
         <node concept="2HfkAV" id="6bDIMKp8ijl" role="2HfkAP">
           <node concept="2He$iJ" id="6bDIMKp8ik5" role="2He$ia">
-            <ref role="2He$iI" node="6bDIMKp8icK" resolve="n" />
+            <ref role="2He$iI" node="6bDIMKp8icK" />
           </node>
           <node concept="2IPVmt" id="6bDIMKp8ikg" role="2He$i0">
             <property role="2IPVms" value="0" />
@@ -4024,12 +4024,12 @@
           <node concept="2HbMbg" id="6bDIMKp9iZp" role="1yBDGv">
             <node concept="1yA0yd" id="6bDIMKp9iZq" role="2H9Iav">
               <node concept="32Ogvo" id="6bDIMKp9iZd" role="32OYtT">
-                <ref role="32Ogvr" node="6bDIMKp8hGb" resolve="ev_connected" />
+                <ref role="32Ogvr" node="6bDIMKp8hGb" />
               </node>
             </node>
             <node concept="1yA0yd" id="6bDIMKp9iZ$" role="2H9Ial">
               <node concept="32Ogvo" id="6bDIMKp9iZI" role="32OYtT">
-                <ref role="32Ogvr" node="6bDIMKp8hGO" resolve="socket_connected" />
+                <ref role="32Ogvr" node="6bDIMKp8hGO" />
               </node>
             </node>
           </node>
@@ -4094,30 +4094,30 @@
       <node concept="2aiEES" id="6bDIMKp8hJE" role="2HcbjO">
         <node concept="2HfkAV" id="6bDIMKp8hJF" role="2HfkAP">
           <node concept="1tTNRl" id="6bDIMKp8hJG" role="2He$ia">
-            <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+            <ref role="1tTNPH" node="6bDIMKp8hJA" />
           </node>
           <node concept="1tS8IT" id="6bDIMKp8hJH" role="2He$i0">
-            <ref role="1tS8HL" node="6bDIMKp8hJ_" resolve="initial" />
+            <ref role="1tS8HL" node="6bDIMKp8hJ_" />
           </node>
         </node>
         <node concept="1tTNHs" id="6bDIMKp8hJI" role="2HfkAP">
           <node concept="1tTNRl" id="6bDIMKp8hJJ" role="2He$ia">
-            <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+            <ref role="1tTNPH" node="6bDIMKp8hJA" />
           </node>
           <node concept="1tTNP8" id="6bDIMKp8hJK" role="2He$i0">
             <node concept="1tTNwp" id="6bDIMKp8hTV" role="2H9I2x">
               <property role="TrG5h" value="init2startup" />
               <node concept="1tTNRl" id="6bDIMKp8hTX" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8hJA" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hU5" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hJ_" resolve="initial" />
+                <ref role="1tS8HL" node="6bDIMKp8hJ_" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hVB" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hOS" resolve="startup" />
+                <ref role="1tS8HL" node="6bDIMKp8hOS" />
               </node>
               <node concept="32Ogvo" id="1JJRV36A4iI" role="2H9I4J">
-                <ref role="32Ogvr" node="1JJRV36A2V_" resolve="socket_connected" />
+                <ref role="32Ogvr" node="1JJRV36A2V_" />
               </node>
               <node concept="0Sh09" id="1JJRV36A6la" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aVV" role="hnKMk">
@@ -4128,19 +4128,19 @@
             <node concept="1tTNwp" id="1JJRV36A4j2" role="2H9I2x">
               <property role="TrG5h" value="startup2safe" />
               <node concept="1tTNRl" id="1JJRV36A4j4" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8hJA" />
               </node>
               <node concept="1tS8IT" id="1JJRV36A4jm" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hOS" resolve="startup" />
+                <ref role="1tS8HL" node="6bDIMKp8hOS" />
               </node>
               <node concept="nE0YJ" id="1JJRV36A4jp" role="2H9I4J">
                 <node concept="2EDkE1" id="1JJRV36A4jq" role="2H9Iav">
                   <node concept="2H9Eef" id="1JJRV36A4jr" role="32OYtT">
                     <node concept="32Ogvo" id="1JJRV36A4ll" role="2H9Ial">
-                      <ref role="32Ogvr" node="1JJRV36A49q" resolve="n" />
+                      <ref role="32Ogvr" node="1JJRV36A49q" />
                     </node>
                     <node concept="32Ogvo" id="1JJRV36A4k3" role="2H9Iav">
-                      <ref role="32Ogvr" node="1JJRV36A48z" resolve="l" />
+                      <ref role="32Ogvr" node="1JJRV36A48z" />
                     </node>
                   </node>
                 </node>
@@ -4149,7 +4149,7 @@
                 </node>
               </node>
               <node concept="1tS8IT" id="1JJRV36A4k0" role="2H9I4_">
-                <ref role="1tS8HL" node="1JJRV36A4ft" resolve="safe" />
+                <ref role="1tS8HL" node="1JJRV36A4ft" />
               </node>
               <node concept="0Sh09" id="1JJRV36A5BX" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aVX" role="hnKMk">
@@ -4160,14 +4160,14 @@
             <node concept="1tTNwp" id="6bDIMKp8hWf" role="2H9I2x">
               <property role="TrG5h" value="startup2operate" />
               <node concept="1tTNRl" id="6bDIMKp8hWh" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8hJA" />
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hWu" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hOS" resolve="startup" />
+                <ref role="1tS8HL" node="6bDIMKp8hOS" />
               </node>
               <node concept="2HbMbg" id="1JJRV36A4mM" role="2H9I4J">
                 <node concept="32Ogvo" id="1JJRV36A4mE" role="2H9Iav">
-                  <ref role="32Ogvr" node="1JJRV36A2Vz" resolve="ev_connected" />
+                  <ref role="32Ogvr" node="1JJRV36A2Vz" />
                 </node>
                 <node concept="nE0YL" id="1JJRV36A4nL" role="2H9Ial">
                   <node concept="2IPVmt" id="1JJRV36A4oq" role="2H9Ial">
@@ -4176,17 +4176,17 @@
                   <node concept="2EDkE1" id="1JJRV36A4mX" role="2H9Iav">
                     <node concept="2H9Eef" id="1JJRV36A4mY" role="32OYtT">
                       <node concept="32Ogvo" id="1JJRV36A4mZ" role="2H9Ial">
-                        <ref role="32Ogvr" node="1JJRV36A49q" resolve="n" />
+                        <ref role="32Ogvr" node="1JJRV36A49q" />
                       </node>
                       <node concept="32Ogvo" id="1JJRV36A4n0" role="2H9Iav">
-                        <ref role="32Ogvr" node="1JJRV36A48z" resolve="l" />
+                        <ref role="32Ogvr" node="1JJRV36A48z" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="1tS8IT" id="6bDIMKp8hWF" role="2H9I4_">
-                <ref role="1tS8HL" node="6bDIMKp8hRM" resolve="operate" />
+                <ref role="1tS8HL" node="6bDIMKp8hRM" />
               </node>
               <node concept="0Sh09" id="1JJRV36A6gZ" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aVZ" role="hnKMk">
@@ -4197,19 +4197,19 @@
             <node concept="1tTNwp" id="1JJRV36A4p6" role="2H9I2x">
               <property role="TrG5h" value="operate2safe" />
               <node concept="1tTNRl" id="1JJRV36A4p8" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8hJA" />
               </node>
               <node concept="1tS8IT" id="1JJRV36A4pF" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hRM" resolve="operate" />
+                <ref role="1tS8HL" node="6bDIMKp8hRM" />
               </node>
               <node concept="nE0YJ" id="1JJRV36A4pI" role="2H9I4J">
                 <node concept="2EDkE1" id="1JJRV36A4pJ" role="2H9Iav">
                   <node concept="2H9Eef" id="1JJRV36A4pK" role="32OYtT">
                     <node concept="32Ogvo" id="1JJRV36A4pL" role="2H9Ial">
-                      <ref role="32Ogvr" node="1JJRV36A49q" resolve="n" />
+                      <ref role="32Ogvr" node="1JJRV36A49q" />
                     </node>
                     <node concept="32Ogvo" id="1JJRV36A4pM" role="2H9Iav">
-                      <ref role="32Ogvr" node="1JJRV36A48z" resolve="l" />
+                      <ref role="32Ogvr" node="1JJRV36A48z" />
                     </node>
                   </node>
                 </node>
@@ -4218,7 +4218,7 @@
                 </node>
               </node>
               <node concept="1tS8IT" id="1JJRV36A4qt" role="2H9I4_">
-                <ref role="1tS8HL" node="1JJRV36A4ft" resolve="safe" />
+                <ref role="1tS8HL" node="1JJRV36A4ft" />
               </node>
               <node concept="0Sh09" id="1JJRV36A5BZ" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aW1" role="hnKMk">
@@ -4229,16 +4229,16 @@
             <node concept="1tTNwp" id="1JJRV36A4_F" role="2H9I2x">
               <property role="TrG5h" value="startup2shutdown" />
               <node concept="1tTNRl" id="1JJRV36A4_H" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8hJA" />
               </node>
               <node concept="1tS8IT" id="1JJRV36A4Aq" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hOS" resolve="startup" />
+                <ref role="1tS8HL" node="6bDIMKp8hOS" />
               </node>
               <node concept="32Ogvo" id="1JJRV36A4AA" role="2H9I4J">
-                <ref role="32Ogvr" node="1JJRV36A45r" resolve="shutdown_button_pressed" />
+                <ref role="32Ogvr" node="1JJRV36A45r" />
               </node>
               <node concept="1tS8IT" id="1JJRV36A4AF" role="2H9I4_">
-                <ref role="1tS8HL" node="1JJRV36A4zG" resolve="shutdown" />
+                <ref role="1tS8HL" node="1JJRV36A4zG" />
               </node>
               <node concept="0Sh09" id="1JJRV36A5yo" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aW3" role="hnKMk">
@@ -4249,23 +4249,23 @@
             <node concept="1tTNwp" id="1JJRV36A5wy" role="2H9I2x">
               <property role="TrG5h" value="safe2shutdown" />
               <node concept="1tTNRl" id="1JJRV36A5w$" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8hJA" />
               </node>
               <node concept="1tS8IT" id="1JJRV36A5xr" role="3JZSx7">
-                <ref role="1tS8HL" node="1JJRV36A4ft" resolve="safe" />
+                <ref role="1tS8HL" node="1JJRV36A4ft" />
               </node>
               <node concept="2HbMDt" id="1JJRV36A5xW" role="2H9I4J">
                 <node concept="32Ogvo" id="1JJRV36A5ye" role="2H9Iav">
-                  <ref role="32Ogvr" node="1JJRV36A45r" resolve="shutdown_button_pressed" />
+                  <ref role="32Ogvr" node="1JJRV36A45r" />
                 </node>
                 <node concept="1yA0yd" id="1JJRV36A5xJ" role="2H9Ial">
                   <node concept="32Ogvo" id="1JJRV36A5xB" role="32OYtT">
-                    <ref role="32Ogvr" node="1JJRV36A2V_" resolve="socket_connected" />
+                    <ref role="32Ogvr" node="1JJRV36A2V_" />
                   </node>
                 </node>
               </node>
               <node concept="1tS8IT" id="1JJRV36A5xR" role="2H9I4_">
-                <ref role="1tS8HL" node="1JJRV36A4zG" resolve="shutdown" />
+                <ref role="1tS8HL" node="1JJRV36A4zG" />
               </node>
               <node concept="0Sh09" id="1JJRV36A5yk" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aW5" role="hnKMk">
@@ -4276,16 +4276,16 @@
             <node concept="1tTNwp" id="1JJRV36A4C0" role="2H9I2x">
               <property role="TrG5h" value="operate2shutdown" />
               <node concept="1tTNRl" id="1JJRV36A4C2" role="3JXa2C">
-                <ref role="1tTNPH" node="6bDIMKp8hJA" resolve="_crtState" />
+                <ref role="1tTNPH" node="6bDIMKp8hJA" />
               </node>
               <node concept="1tS8IT" id="1JJRV36A4CO" role="3JZSx7">
-                <ref role="1tS8HL" node="6bDIMKp8hRM" resolve="operate" />
+                <ref role="1tS8HL" node="6bDIMKp8hRM" />
               </node>
               <node concept="32Ogvo" id="1JJRV36A4D0" role="2H9I4J">
-                <ref role="32Ogvr" node="1JJRV36A45r" resolve="shutdown_button_pressed" />
+                <ref role="32Ogvr" node="1JJRV36A45r" />
               </node>
               <node concept="1tS8IT" id="1JJRV36A4D5" role="2H9I4_">
-                <ref role="1tS8HL" node="1JJRV36A4zG" resolve="shutdown" />
+                <ref role="1tS8HL" node="1JJRV36A4zG" />
               </node>
               <node concept="0Sh09" id="1JJRV36A5ym" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aW7" role="hnKMk">
@@ -4297,20 +4297,20 @@
         </node>
         <node concept="2HfkAV" id="1JJRV36A4ap" role="2HfkAP">
           <node concept="2He$iJ" id="1JJRV36A4aU" role="2He$ia">
-            <ref role="2He$iI" node="1JJRV36A46M" resolve="circuit_breaker" />
+            <ref role="2He$iI" node="1JJRV36A46M" />
           </node>
           <node concept="2HeeqP" id="1JJRV36A4bg" role="2He$i0">
-            <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+            <ref role="2HeeqO" node="6bDIMKp8i44" />
           </node>
         </node>
         <node concept="Fto42" id="1JJRV36A4rn" role="2HfkAP">
           <node concept="FsPnB" id="1JJRV36A4rq" role="2He$i0">
             <node concept="FsPnw" id="1JJRV36A4sV" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4t2" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4j2" resolve="startup2safe" />
+                <ref role="3JXjYu" node="1JJRV36A4j2" />
               </node>
               <node concept="2HeeqP" id="1JJRV36A4te" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="1JJRV36A6pO" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aW9" role="hnKMk">
@@ -4320,10 +4320,10 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A4rp" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4sI" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8hWf" resolve="startup2operate" />
+                <ref role="3JXjYu" node="6bDIMKp8hWf" />
               </node>
               <node concept="2HeeqP" id="1JJRV36A4sT" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i4w" resolve="close" />
+                <ref role="2HeeqO" node="6bDIMKp8i4w" />
               </node>
               <node concept="0Sh09" id="1JJRV36A6pQ" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aWb" role="hnKMk">
@@ -4333,10 +4333,10 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A4tg" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4tq" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4p6" resolve="operate2safe" />
+                <ref role="3JXjYu" node="1JJRV36A4p6" />
               </node>
               <node concept="2HeeqP" id="1JJRV36A4tC" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="1JJRV36A6pS" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aWd" role="hnKMk">
@@ -4346,10 +4346,10 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A4AH" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4AU" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4_F" resolve="startup2shutdown" />
+                <ref role="3JXjYu" node="1JJRV36A4_F" />
               </node>
               <node concept="2HeeqP" id="1JJRV36A4B6" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="1JJRV36A6pU" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aWf" role="hnKMk">
@@ -4359,10 +4359,10 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A5Ax" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A5AL" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4C0" resolve="operate2shutdown" />
+                <ref role="3JXjYu" node="1JJRV36A4C0" />
               </node>
               <node concept="2HeeqP" id="1JJRV36A5AU" role="2H9I4_">
-                <ref role="2HeeqO" node="6bDIMKp8i44" resolve="open" />
+                <ref role="2HeeqO" node="6bDIMKp8i44" />
               </node>
               <node concept="0Sh09" id="1JJRV36A6pW" role="lGtFl">
                 <node concept="hnKMr" id="5cnt3YR9aWh" role="hnKMk">
@@ -4372,13 +4372,13 @@
             </node>
           </node>
           <node concept="2He$iJ" id="1JJRV36A4sx" role="2He$ia">
-            <ref role="2He$iI" node="1JJRV36A46M" resolve="circuit_breaker" />
+            <ref role="2He$iI" node="1JJRV36A46M" />
           </node>
         </node>
         <node concept="2HeLW8" id="1JJRV36A4bK" role="2HfkAP" />
         <node concept="2HfkAV" id="1JJRV36A4cr" role="2HfkAP">
           <node concept="2He$iJ" id="1JJRV36A4d4" role="2He$ia">
-            <ref role="2He$iI" node="1JJRV36A47k" resolve="disconnect_led" />
+            <ref role="2He$iI" node="1JJRV36A47k" />
           </node>
           <node concept="1yCjT0" id="1JJRV36A4di" role="2He$i0" />
         </node>
@@ -4386,7 +4386,7 @@
           <node concept="FsPnB" id="1JJRV36A4xB" role="2He$i0">
             <node concept="FsPnw" id="1JJRV36A4xA" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4z5" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4j2" resolve="startup2safe" />
+                <ref role="3JXjYu" node="1JJRV36A4j2" />
               </node>
               <node concept="1yCjRe" id="1JJRV36A4zg" role="2H9I4_" />
               <node concept="0Sh09" id="1JJRV36A6q0" role="lGtFl">
@@ -4397,7 +4397,7 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A4zl" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4zs" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4p6" resolve="operate2safe" />
+                <ref role="3JXjYu" node="1JJRV36A4p6" />
               </node>
               <node concept="1yCjRe" id="1JJRV36A4zB" role="2H9I4_" />
               <node concept="0Sh09" id="1JJRV36A6q2" role="lGtFl">
@@ -4408,7 +4408,7 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A4B8" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4EF" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4_F" resolve="startup2shutdown" />
+                <ref role="3JXjYu" node="1JJRV36A4_F" />
               </node>
               <node concept="1yCjRe" id="1JJRV36A4EQ" role="2H9I4_" />
               <node concept="0Sh09" id="1JJRV36A6q4" role="lGtFl">
@@ -4419,7 +4419,7 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A5A1" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A5Ah" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A5wy" resolve="safe2shutdown" />
+                <ref role="3JXjYu" node="1JJRV36A5wy" />
               </node>
               <node concept="1yCjRe" id="1JJRV36A5As" role="2H9I4_" />
               <node concept="0Sh09" id="1JJRV36A6q6" role="lGtFl">
@@ -4430,7 +4430,7 @@
             </node>
             <node concept="FsPnw" id="1JJRV36A4EV" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4F8" role="2H9I4J">
-                <ref role="3JXjYu" node="1JJRV36A4C0" resolve="operate2shutdown" />
+                <ref role="3JXjYu" node="1JJRV36A4C0" />
               </node>
               <node concept="1yCjRe" id="1JJRV36A4Fj" role="2H9I4_" />
               <node concept="0Sh09" id="1JJRV36A6q8" role="lGtFl">
@@ -4441,13 +4441,13 @@
             </node>
           </node>
           <node concept="2He$iJ" id="1JJRV36A4yY" role="2He$ia">
-            <ref role="2He$iI" node="1JJRV36A47k" resolve="disconnect_led" />
+            <ref role="2He$iI" node="1JJRV36A47k" />
           </node>
         </node>
         <node concept="2HeLW8" id="1JJRV36A4dx" role="2HfkAP" />
         <node concept="2HfkAV" id="1JJRV36A4ek" role="2HfkAP">
           <node concept="2He$iJ" id="1JJRV36A4f1" role="2He$ia">
-            <ref role="2He$iI" node="1JJRV36A47C" resolve="powered_led" />
+            <ref role="2He$iI" node="1JJRV36A47C" />
           </node>
           <node concept="1yCjT0" id="1JJRV36A4fe" role="2He$i0" />
         </node>
@@ -4455,7 +4455,7 @@
           <node concept="FsPnB" id="1JJRV36A4uL" role="2He$i0">
             <node concept="FsPnw" id="1JJRV36A4uK" role="2H9I2x">
               <node concept="3JXjYv" id="1JJRV36A4we" role="2H9I4J">
-                <ref role="3JXjYu" node="6bDIMKp8hTV" resolve="init2startup" />
+                <ref role="3JXjYu" node="6bDIMKp8hTV" />
               </node>
               <node concept="1yCjRe" id="1JJRV36A4wl" role="2H9I4_" />
               <node concept="0Sh09" id="1JJRV36A6pY" role="lGtFl">
@@ -4466,7 +4466,7 @@
             </node>
           </node>
           <node concept="2He$iJ" id="1JJRV36A4w7" role="2He$ia">
-            <ref role="2He$iI" node="1JJRV36A47C" resolve="powered_led" />
+            <ref role="2He$iI" node="1JJRV36A47C" />
           </node>
         </node>
         <node concept="37mRI7" id="1XXvHs0b7h7" role="lGtFl">
@@ -4774,13 +4774,13 @@
       <node concept="3_qfHp" id="1JJRV36A48z" role="2Hdtzq">
         <property role="TrG5h" value="l" />
         <node concept="2XEmfi" id="1JJRV36A48O" role="2HdssB">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3_qfHp" id="1JJRV36A49q" role="2Hdtzq">
         <property role="TrG5h" value="n" />
         <node concept="2XEmfi" id="1JJRV36A49H" role="2HdssB">
-          <ref role="2XEmfl" node="pWUwO6CU8K" resolve="current_range" />
+          <ref role="2XEmfl" node="pWUwO6CU8K" />
         </node>
       </node>
       <node concept="3US3jz" id="1JJRV36A3k9" role="lGtFl">
@@ -4789,12 +4789,12 @@
           <node concept="2HbMbg" id="1JJRV36A3kc" role="1yBDGv">
             <node concept="1yA0yd" id="1JJRV36A3kd" role="2H9Iav">
               <node concept="32Ogvo" id="1JJRV36A3ke" role="32OYtT">
-                <ref role="32Ogvr" node="1JJRV36A2Vz" resolve="ev_connected" />
+                <ref role="32Ogvr" node="1JJRV36A2Vz" />
               </node>
             </node>
             <node concept="1yA0yd" id="1JJRV36A3kf" role="2H9Ial">
               <node concept="32Ogvo" id="1JJRV36A3kg" role="32OYtT">
-                <ref role="32Ogvr" node="1JJRV36A2V_" resolve="socket_connected" />
+                <ref role="32Ogvr" node="1JJRV36A2V_" />
               </node>
             </node>
           </node>
@@ -5315,15 +5315,15 @@
     <node concept="1XyJaU" id="6yFQEkQU9pI" role="1X_0GB">
       <property role="TrG5h" value="Control Box" />
       <node concept="1XypPU" id="7BYuSCF$h3Q" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
-        <ref role="SrP07" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+        <ref role="SrP08" node="6yFQEkQU9pI" />
+        <ref role="SrP07" node="6yFQEkQU9_D" />
         <node concept="Sqzvu" id="7BYuSCF$h3R" role="Sq$B$">
           <property role="TrG5h" value="Get Temperature Status" />
         </node>
       </node>
       <node concept="1XypPU" id="7BYuSCF$hbG" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
-        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <ref role="SrP08" node="6yFQEkQU9pI" />
+        <ref role="SrP07" node="6yFQEkQU9rl" />
         <node concept="Sqzvu" id="7BYuSCF$hbH" role="Sq$B$">
           <property role="TrG5h" value="Get Connections Status" />
         </node>
@@ -5332,8 +5332,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="7BYuSCF$hJM" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9pI" resolve="Control Box" />
-        <ref role="SrP07" node="7BYuSCF$hCm" resolve="LEDs" />
+        <ref role="SrP08" node="6yFQEkQU9pI" />
+        <ref role="SrP07" node="7BYuSCF$hCm" />
         <node concept="Sqzvu" id="7BYuSCF$hJN" role="Sq$B$">
           <property role="TrG5h" value="Display Power Status" />
         </node>
@@ -6914,8 +6914,8 @@
     <node concept="1XyJaU" id="6yFQEkQU9rl" role="1X_0GB">
       <property role="TrG5h" value="Electrical Cable Sensors" />
       <node concept="Sq$B_" id="7BYuSCF$f8B" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-        <ref role="SrP07" node="6yFQEkQU9pI" resolve="Control Box" />
+        <ref role="SrP08" node="6yFQEkQU9rl" />
+        <ref role="SrP07" node="6yFQEkQU9pI" />
         <node concept="Sqzvu" id="7BYuSCF$f8C" role="Sq$B$">
           <property role="TrG5h" value="Powered On" />
         </node>
@@ -6939,15 +6939,15 @@
         </node>
       </node>
       <node concept="1XypPU" id="7BYuSCF$fCq" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-        <ref role="SrP07" node="6yFQEkQU9sG" resolve="Socket" />
+        <ref role="SrP08" node="6yFQEkQU9rl" />
+        <ref role="SrP07" node="6yFQEkQU9sG" />
         <node concept="Sqzvu" id="7BYuSCF$fCr" role="Sq$B$">
           <property role="TrG5h" value="Get Current" />
         </node>
       </node>
       <node concept="Sq$B_" id="7BYuSCF$fY8" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
-        <ref role="SrP07" node="6yFQEkQU9rY" resolve="EV" />
+        <ref role="SrP08" node="6yFQEkQU9rl" />
+        <ref role="SrP07" node="6yFQEkQU9rY" />
         <node concept="Sqzvu" id="7BYuSCF$fY9" role="Sq$B$">
           <property role="TrG5h" value="L" />
         </node>
@@ -6967,8 +6967,8 @@
     <node concept="1XyJaU" id="6yFQEkQU9rY" role="1X_0GB">
       <property role="TrG5h" value="EV" />
       <node concept="1XypPU" id="7BYuSCF$fRo" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9rY" resolve="EV" />
-        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <ref role="SrP08" node="6yFQEkQU9rY" />
+        <ref role="SrP07" node="6yFQEkQU9rl" />
         <node concept="Sqzvu" id="7BYuSCF$fRp" role="Sq$B$">
           <property role="TrG5h" value="GetCurrent" />
         </node>
@@ -6982,8 +6982,8 @@
     <node concept="1XyJaU" id="6yFQEkQU9sG" role="1X_0GB">
       <property role="TrG5h" value="Socket" />
       <node concept="Sq$B_" id="7BYuSCF$fkW" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9sG" resolve="Socket" />
-        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <ref role="SrP08" node="6yFQEkQU9sG" />
+        <ref role="SrP07" node="6yFQEkQU9rl" />
         <node concept="Sqzvu" id="7BYuSCF$fkX" role="Sq$B$">
           <property role="TrG5h" value="L" />
         </node>
@@ -7003,8 +7003,8 @@
     <node concept="1XyJaU" id="6yFQEkQU9_D" role="1X_0GB">
       <property role="TrG5h" value="Cable Temperature Sensors" />
       <node concept="Sq$B_" id="7BYuSCF$gm2" role="2I3o71">
-        <ref role="SrP08" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
-        <ref role="SrP07" node="6yFQEkQU9pI" resolve="Control Box" />
+        <ref role="SrP08" node="6yFQEkQU9_D" />
+        <ref role="SrP07" node="6yFQEkQU9pI" />
         <node concept="Sqzvu" id="7BYuSCF$gm3" role="Sq$B$">
           <property role="TrG5h" value="Socket-end Temperature" />
         </node>
@@ -7021,8 +7021,8 @@
     <node concept="1XyJaU" id="7BYuSCF$eHD" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
       <node concept="1XypPU" id="7BYuSCF$f2T" role="2I3o71">
-        <ref role="SrP08" node="7BYuSCF$eHD" resolve="Driver" />
-        <ref role="SrP07" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+        <ref role="SrP08" node="7BYuSCF$eHD" />
+        <ref role="SrP07" node="6yFQEkQU9rl" />
         <node concept="Sqzvu" id="7BYuSCF$f2U" role="Sq$B$">
           <property role="TrG5h" value="Connect to Socket" />
         </node>
@@ -7047,11 +7047,11 @@
   </node>
   <node concept="1E0nO6" id="6yFQEkQUeRG">
     <property role="TrG5h" value="_026_charging_cable_unsafe_control_actions" />
-    <ref role="1E05RL" node="6yFQEkQU9by" resolve="_025_charging_cable_control_structure" />
+    <ref role="1E05RL" node="6yFQEkQU9by" />
     <node concept="1E0nOG" id="3TSGpjyEVwi" role="1E0n_e">
-      <ref role="1E0nOH" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+      <ref role="1E0nOH" node="6yFQEkQU9rl" />
       <node concept="1E0nOJ" id="3TSGpjyEVwj" role="1E0nOC">
-        <ref role="1E0n_N" node="3TSGpjyFlMV" resolve="Voltage" />
+        <ref role="1E0n_N" node="3TSGpjyFlMV" />
         <node concept="3f6qtF" id="6vZMoXu3Mhp" role="3f6qqO">
           <node concept="1E0uc6" id="3TSGpjyEVwl" role="3f6qtG">
             <property role="TrG5h" value="ECS_UCA01" />
@@ -7060,20 +7060,20 @@
                 <property role="19SUeA" value="The " />
               </node>
               <node concept="1irL6x" id="3TSGpjyEVwo" role="19SJt6">
-                <ref role="1irL7C" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+                <ref role="1irL7C" node="6yFQEkQU9rl" />
               </node>
               <node concept="19SUe$" id="3TSGpjyEVwp" role="19SJt6">
                 <property role="19SUeA" value=" provide voltage outside the expected range while the ControlBox is powered on&#10;" />
               </node>
               <node concept="oY6sn" id="3TSGpjyGndG" role="19SJt6">
-                <ref role="oTUVg" node="3TSGpjyEYYX" resolve="Electrical hazard" />
+                <ref role="oTUVg" node="3TSGpjyEYYX" />
               </node>
               <node concept="19SUe$" id="3TSGpjyGndH" role="19SJt6">
                 <property role="19SUeA" value=" " />
               </node>
             </node>
             <node concept="DABN8" id="4eD_5l3mJ4g" role="2Dy4$W">
-              <ref role="DABNb" node="3TSGpjyEYYX" resolve="Electrical hazard" />
+              <ref role="DABNb" node="3TSGpjyEYYX" />
             </node>
           </node>
         </node>
@@ -7088,7 +7088,7 @@
         </node>
       </node>
       <node concept="1E0nOJ" id="6yFQEkQUeS9" role="1E0nOC">
-        <ref role="1E0n_N" node="3TSGpjyFlMW" resolve="Intensity" />
+        <ref role="1E0n_N" node="3TSGpjyFlMW" />
         <node concept="3f6qtF" id="6vZMoXu3Mhw" role="3f6qqO">
           <node concept="1E0uc6" id="6yFQEkQUf6y" role="3f6qtG">
             <property role="TrG5h" value="ECS_UCA02" />
@@ -7097,7 +7097,7 @@
                 <property role="19SUeA" value="The " />
               </node>
               <node concept="1irL6x" id="3TSGpjyG0ja" role="19SJt6">
-                <ref role="1irL7C" node="6yFQEkQU9rl" resolve="Electrical Cable Sensors" />
+                <ref role="1irL7C" node="6yFQEkQU9rl" />
               </node>
               <node concept="19SUe$" id="3TSGpjyG0jb" role="19SJt6">
                 <property role="19SUeA" value=" provide current intensity outside the expected range while the ControlBox is powered on " />
@@ -7117,9 +7117,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="6yFQEkQUf2o" role="1E0n_e">
-      <ref role="1E0nOH" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+      <ref role="1E0nOH" node="6yFQEkQU9_D" />
       <node concept="1E0nOJ" id="6yFQEkQUfmf" role="1E0nOC">
-        <ref role="1E0n_N" node="7BYuSCF$gm3" resolve="Socket-end Temperature" />
+        <ref role="1E0n_N" node="7BYuSCF$gm3" />
         <node concept="3f6qtF" id="6vZMoXu3Mh$" role="3f6qqO">
           <node concept="1E0uc6" id="6yFQEkQUfna" role="3f6qtG">
             <property role="TrG5h" value="CTS_UCA04" />
@@ -7128,7 +7128,7 @@
                 <property role="19SUeA" value="The " />
               </node>
               <node concept="1irL6x" id="3TSGpjyG0jI" role="19SJt6">
-                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+                <ref role="1irL7C" node="6yFQEkQU9_D" />
               </node>
               <node concept="19SUe$" id="3TSGpjyG0jJ" role="19SJt6">
                 <property role="19SUeA" value=" provides Socket-end Temperature outside the expected measurement range  " />
@@ -7142,7 +7142,7 @@
                 <property role="19SUeA" value="The " />
               </node>
               <node concept="1irL6x" id="3TSGpjyG0jO" role="19SJt6">
-                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+                <ref role="1irL7C" node="6yFQEkQU9_D" />
               </node>
               <node concept="19SUe$" id="3TSGpjyG0jP" role="19SJt6">
                 <property role="19SUeA" value=" provides Socket-end Temperature in Fahrenheit and not in Celsius as expected " />
@@ -7158,7 +7158,7 @@
                 <property role="19SUeA" value="The " />
               </node>
               <node concept="1irL6x" id="3TSGpjyG0kr" role="19SJt6">
-                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+                <ref role="1irL7C" node="6yFQEkQU9_D" />
               </node>
               <node concept="19SUe$" id="3TSGpjyG0kq" role="19SJt6">
                 <property role="19SUeA" value=" does not provide Socket-end Temperature when the control box is powered on " />
@@ -7173,7 +7173,7 @@
                 <property role="19SUeA" value="The " />
               </node>
               <node concept="1irL6x" id="3TSGpjyG0l$" role="19SJt6">
-                <ref role="1irL7C" node="6yFQEkQU9_D" resolve="Cable Temperature Sensors" />
+                <ref role="1irL7C" node="6yFQEkQU9_D" />
               </node>
               <node concept="19SUe$" id="3TSGpjyG0l_" role="19SJt6">
                 <property role="19SUeA" value=" provides Socket-end Temperature too rarely " />
@@ -7887,7 +7887,7 @@
               <property role="19SUeA" value="All hazards identified during safety analysis &#10;{sa} " />
             </node>
             <node concept="oXkut" id="1XXvHs0b96U" role="19SJt6">
-              <ref role="oTdVe" node="2VIqKfEJeEr" resolve="_022_charging_cable_hazards_list" />
+              <ref role="oTdVe" node="2VIqKfEJeEr" />
             </node>
             <node concept="19SUe$" id="1XXvHs0b96V" role="19SJt6" />
           </node>
@@ -7942,7 +7942,7 @@
               <property role="19SUeA" value="Risk associated with hazard " />
             </node>
             <node concept="oY6sn" id="1XXvHs0b97f" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyFlFU" resolve="Tripping" />
+              <ref role="oTUVg" node="3TSGpjyFlFU" />
             </node>
             <node concept="19SUe$" id="1XXvHs0b97g" role="19SJt6">
               <property role="19SUeA" value="&#10; has been shown negligible" />
@@ -7958,28 +7958,28 @@
           </node>
         </node>
         <node concept="3VeUTF" id="1XXvHs0b97w" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96W" resolve="Str2.3" />
-          <ref role="3VeSjQ" node="1XXvHs0b96Z" resolve="G2.6" />
+          <ref role="3VeSjP" node="1XXvHs0b96W" />
+          <ref role="3VeSjQ" node="1XXvHs0b96Z" />
         </node>
         <node concept="3VeUTF" id="1XXvHs0b97x" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96W" resolve="Str2.3" />
-          <ref role="3VeSjQ" node="1XXvHs0b972" resolve="G2.7" />
+          <ref role="3VeSjP" node="1XXvHs0b96W" />
+          <ref role="3VeSjQ" node="1XXvHs0b972" />
         </node>
         <node concept="3VeUTF" id="1XXvHs0b97y" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b975" resolve="G2.1" />
-          <ref role="3VeSjQ" node="1XXvHs0b96W" resolve="Str2.3" />
+          <ref role="3VeSjP" node="1XXvHs0b975" />
+          <ref role="3VeSjQ" node="1XXvHs0b96W" />
         </node>
         <node concept="3VeUTF" id="1XXvHs0b97z" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b975" resolve="G2.1" />
-          <ref role="3VeSjQ" node="1XXvHs0b96R" resolve="Str2.1" />
+          <ref role="3VeSjP" node="1XXvHs0b975" />
+          <ref role="3VeSjQ" node="1XXvHs0b96R" />
         </node>
         <node concept="3VeUTF" id="1XXvHs0b97$" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96Z" resolve="G2.6" />
-          <ref role="3VeSjQ" node="1XXvHs0b978" resolve="Sn2" />
+          <ref role="3VeSjP" node="1XXvHs0b96Z" />
+          <ref role="3VeSjQ" node="1XXvHs0b978" />
         </node>
         <node concept="2vhqFZ" id="1XXvHs0b97H" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96R" resolve="Str2.1" />
-          <ref role="3VeSjQ" node="1XXvHs0b97t" resolve="A2" />
+          <ref role="3VeSjP" node="1XXvHs0b96R" />
+          <ref role="3VeSjQ" node="1XXvHs0b97t" />
         </node>
         <node concept="37mRI7" id="1XXvHs0b9aH" role="lGtFl">
           <node concept="37mRIm" id="1XXvHs0b9aI" role="37mRID">
@@ -8655,13 +8655,13 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="2UkUklpZvE6" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyFlFc" resolve="The cable catches fire" />
+              <ref role="oTUVg" node="3TSGpjyFlFc" />
             </node>
             <node concept="19SUe$" id="2UkUklpZvE7" role="19SJt6">
               <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
             </node>
             <node concept="oY6sn" id="2UkUklpZvE8" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyFlES" resolve="Cable temperature too high" />
+              <ref role="oTUVg" node="3TSGpjyFlES" />
             </node>
             <node concept="19SUe$" id="2UkUklpZvGM" role="19SJt6" />
           </node>
@@ -8674,7 +8674,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="23wuL6uKwgl" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyEYYX" resolve="Electrical hazard" />
+              <ref role="oTUVg" node="3TSGpjyEYYX" />
             </node>
             <node concept="19SUe$" id="23wuL6uKwgk" role="19SJt6">
               <property role="19SUeA" value="&#10; has been mitigated" />
@@ -8682,8 +8682,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="3TSGpjyNN_L" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96R" resolve="Str2.1" />
-          <ref role="3VeSjQ" node="3TSGpjyNNnE" resolve="G2.2" />
+          <ref role="3VeSjP" node="1XXvHs0b96R" />
+          <ref role="3VeSjQ" node="3TSGpjyNNnE" />
         </node>
         <node concept="8gVzV" id="3TSGpjyNNPf" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -8693,7 +8693,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="23wuL6uKwgv" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyFlES" resolve="Cable temperature too high" />
+              <ref role="oTUVg" node="3TSGpjyFlES" />
             </node>
             <node concept="19SUe$" id="23wuL6uKwgu" role="19SJt6">
               <property role="19SUeA" value="&#10; has been mitigated" />
@@ -8701,8 +8701,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="3TSGpjyNO0f" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96R" resolve="Str2.1" />
-          <ref role="3VeSjQ" node="3TSGpjyNNPf" resolve="G2.3" />
+          <ref role="3VeSjP" node="1XXvHs0b96R" />
+          <ref role="3VeSjQ" node="3TSGpjyNNPf" />
         </node>
         <node concept="atroF" id="3TSGpjyNO74" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -8712,7 +8712,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="41_NtXJv4eG" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyFlEA" resolve="Explosion of the car" />
+              <ref role="oTUVg" node="3TSGpjyFlEA" />
             </node>
             <node concept="19SUe$" id="23wuL6uKwgb" role="19SJt6">
               <property role="19SUeA" value="&#10; has been eliminated &#10; and can no longer occur" />
@@ -8720,8 +8720,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="3TSGpjyNOcn" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96R" resolve="Str2.1" />
-          <ref role="3VeSjQ" node="3TSGpjyNO74" resolve="G2.4" />
+          <ref role="3VeSjP" node="1XXvHs0b96R" />
+          <ref role="3VeSjQ" node="3TSGpjyNO74" />
         </node>
         <node concept="atrou" id="3TSGpjyNOuw" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -8731,13 +8731,13 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="23wuL6uKwgC" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
+              <ref role="oTUVg" node="3TSGpjyFlFy" />
             </node>
             <node concept="19SUe$" id="3TSGpjyNOu$" role="19SJt6">
               <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
             </node>
             <node concept="oY6sn" id="23wuL6uKwgM" role="19SJt6">
-              <ref role="oTUVg" node="3TSGpjyFlES" resolve="Cable temperature too high" />
+              <ref role="oTUVg" node="3TSGpjyFlES" />
             </node>
             <node concept="19SUe$" id="23wuL6uKwgL" role="19SJt6">
               <property role="19SUeA" value="" />
@@ -8745,16 +8745,16 @@
           </node>
         </node>
         <node concept="8gDHL" id="3TSGpjyNSA$" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96R" resolve="Str2.1" />
-          <ref role="3VeSjQ" node="3TSGpjyNOuw" resolve="G2.5" />
+          <ref role="3VeSjP" node="1XXvHs0b96R" />
+          <ref role="3VeSjQ" node="3TSGpjyNOuw" />
         </node>
         <node concept="8gDHL" id="55oVyA0raTG" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96R" resolve="Str2.1" />
-          <ref role="3VeSjQ" node="2UkUklpZvE3" resolve="G2.7" />
+          <ref role="3VeSjP" node="1XXvHs0b96R" />
+          <ref role="3VeSjQ" node="2UkUklpZvE3" />
         </node>
         <node concept="8gDHL" id="55oVyA0raYS" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0b96R" resolve="Str2.1" />
-          <ref role="3VeSjQ" node="1XXvHs0b97c" resolve="G2.5" />
+          <ref role="3VeSjP" node="1XXvHs0b96R" />
+          <ref role="3VeSjQ" node="1XXvHs0b97c" />
         </node>
       </node>
       <node concept="19SGf9" id="23wuL6uKwgU" role="2vnaTY">
@@ -8775,7 +8775,7 @@
               <property role="19SUeA" value="System's assumptions about its operating context&#10;as defined in " />
             </node>
             <node concept="27blvF" id="1XXvHs0balx" role="19SJt6">
-              <ref role="27blvA" node="6bDIMKp8B9J" resolve="_003_ladekabel_system_requirements" />
+              <ref role="27blvA" node="6bDIMKp8B9J" />
             </node>
             <node concept="19SUe$" id="1XXvHs0baly" role="19SJt6" />
           </node>
@@ -8804,7 +8804,7 @@
               <property role="19SUeA" value="System defined in&#10;" />
             </node>
             <node concept="27blvF" id="1XXvHs0balJ" role="19SJt6">
-              <ref role="27blvA" node="2VIqKfEJe0_" resolve="_004_ladekabel_functional_requirements" />
+              <ref role="27blvA" node="2VIqKfEJe0_" />
             </node>
             <node concept="19SUe$" id="1XXvHs0balK" role="19SJt6">
               <property role="19SUeA" value="&#10; is sufficiently safe &#10; in the given operating context" />
@@ -8820,20 +8820,20 @@
           </node>
         </node>
         <node concept="3VeUTF" id="1XXvHs0balO" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0balG" resolve="G1.1" />
-          <ref role="3VeSjQ" node="1XXvHs0balA" resolve="Str1.1" />
+          <ref role="3VeSjP" node="1XXvHs0balG" />
+          <ref role="3VeSjQ" node="1XXvHs0balA" />
         </node>
         <node concept="3VeUTF" id="1XXvHs0balP" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0balG" resolve="G1.1" />
-          <ref role="3VeSjQ" node="1XXvHs0balz" resolve="Str1.2" />
+          <ref role="3VeSjP" node="1XXvHs0balG" />
+          <ref role="3VeSjQ" node="1XXvHs0balz" />
         </node>
         <node concept="2vhqFZ" id="1XXvHs0balQ" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0balG" resolve="G1.1" />
-          <ref role="3VeSjQ" node="1XXvHs0balu" resolve="A1 - Context Assumptions" />
+          <ref role="3VeSjP" node="1XXvHs0balG" />
+          <ref role="3VeSjQ" node="1XXvHs0balu" />
         </node>
         <node concept="2vhqFZ" id="1XXvHs0balS" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0balG" resolve="G1.1" />
-          <ref role="3VeSjQ" node="1XXvHs0balL" resolve="C2" />
+          <ref role="3VeSjP" node="1XXvHs0balG" />
+          <ref role="3VeSjQ" node="1XXvHs0balL" />
         </node>
         <node concept="37mRI7" id="1XXvHs0banO" role="lGtFl">
           <node concept="37mRIm" id="1XXvHs0banP" role="37mRID">
@@ -9022,8 +9022,8 @@
           </node>
         </node>
         <node concept="3VeUTF" id="1XXvHs0baDi" role="2vhqc$">
-          <ref role="3VeSjP" node="1XXvHs0balA" resolve="Str1.1" />
-          <ref role="3VeSjQ" node="1XXvHs0b975" resolve="G2.1" />
+          <ref role="3VeSjP" node="1XXvHs0balA" />
+          <ref role="3VeSjQ" node="1XXvHs0b975" />
         </node>
       </node>
       <node concept="19SGf9" id="23wuL6uKwgY" role="2vnaTY">
@@ -9067,13 +9067,13 @@
         </node>
         <node concept="2iDXIW" id="7n39yospbeW" role="0nOlf">
           <node concept="DABN8" id="6W1kQP6Bq6o" role="DABNk">
-            <ref role="DABNb" node="3TSGpjyFlES" resolve="Cable temperature too high" />
+            <ref role="DABNb" node="3TSGpjyFlES" />
           </node>
           <node concept="DABN8" id="66sW2d$Fg2v" role="DABNk">
-            <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
+            <ref role="DABNb" node="3TSGpjyFlFy" />
           </node>
           <node concept="DABN8" id="2UkUklpZvWa" role="DABNk">
-            <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
+            <ref role="DABNb" node="3TSGpjyFlFy" />
           </node>
         </node>
       </node>
@@ -9084,13 +9084,13 @@
       </node>
       <node concept="2iDXIW" id="7n39yospbeR" role="0nOlf">
         <node concept="DABN8" id="6W1kQP6Bq6q" role="DABNk">
-          <ref role="DABNb" node="3TSGpjyFlES" resolve="Cable temperature too high" />
+          <ref role="DABNb" node="3TSGpjyFlES" />
         </node>
         <node concept="DABN8" id="6W1kQP6Bzra" role="DABNk">
-          <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
+          <ref role="DABNb" node="3TSGpjyFlFy" />
         </node>
         <node concept="DABN8" id="2UkUklpZvW1" role="DABNk">
-          <ref role="DABNb" node="3TSGpjyFlFc" resolve="The cable catches fire" />
+          <ref role="DABNb" node="3TSGpjyFlFc" />
         </node>
       </node>
     </node>

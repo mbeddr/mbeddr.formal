@@ -323,8 +323,8 @@
     <node concept="1XyJaU" id="1L4MZBxVgCS" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
       <node concept="1XypPU" id="1L4MZBxVgDF" role="2I3o71">
-        <ref role="SrP08" node="1L4MZBxVgCS" resolve="Driver" />
-        <ref role="SrP07" node="1L4MZBxVgwH" resolve="Airbag Controller" />
+        <ref role="SrP08" node="1L4MZBxVgCS" />
+        <ref role="SrP07" node="1L4MZBxVgwH" />
         <node concept="Sqzvu" id="1L4MZBxVgDG" role="Sq$B$">
           <property role="TrG5h" value="Deactivate" />
         </node>
@@ -366,15 +366,15 @@
           </node>
         </node>
         <node concept="Sq$B_" id="1L4MZBxVgEn" role="2I3o71">
-          <ref role="SrP08" node="1L4MZBxVgwH" resolve="Airbag Controller" />
-          <ref role="SrP07" node="1L4MZBxVgCS" resolve="Driver" />
+          <ref role="SrP08" node="1L4MZBxVgwH" />
+          <ref role="SrP07" node="1L4MZBxVgCS" />
           <node concept="Sqzvu" id="1L4MZBxVgEo" role="Sq$B$">
             <property role="TrG5h" value="Activation Status" />
           </node>
         </node>
         <node concept="1XypPU" id="1L4MZBxVgFQ" role="2I3o71">
-          <ref role="SrP08" node="1L4MZBxVgwH" resolve="Airbag Controller" />
-          <ref role="SrP07" node="1L4MZBxVgDi" resolve="Airbag" />
+          <ref role="SrP08" node="1L4MZBxVgwH" />
+          <ref role="SrP07" node="1L4MZBxVgDi" />
           <node concept="Sqzvu" id="1L4MZBxVgFR" role="Sq$B$">
             <property role="TrG5h" value="Check Health" />
           </node>
@@ -512,8 +512,8 @@
           </node>
         </node>
         <node concept="1XypPU" id="1L4MZBxVgID" role="2I3o71">
-          <ref role="SrP08" node="1L4MZBxVgCY" resolve="Sensors" />
-          <ref role="SrP07" node="1L4MZBxVgwH" resolve="Airbag Controller" />
+          <ref role="SrP08" node="1L4MZBxVgCY" />
+          <ref role="SrP07" node="1L4MZBxVgwH" />
           <node concept="Sqzvu" id="1L4MZBxVgIE" role="Sq$B$">
             <property role="TrG5h" value="Crash Detected" />
           </node>
@@ -530,8 +530,8 @@
           </node>
         </node>
         <node concept="Sq$B_" id="1L4MZBxVgH7" role="2I3o71">
-          <ref role="SrP08" node="1L4MZBxVgDi" resolve="Airbag" />
-          <ref role="SrP07" node="1L4MZBxVgwH" resolve="Airbag Controller" />
+          <ref role="SrP08" node="1L4MZBxVgDi" />
+          <ref role="SrP07" node="1L4MZBxVgwH" />
           <node concept="Sqzvu" id="1L4MZBxVgKl" role="Sq$B$">
             <property role="TrG5h" value="Airbag Health Status" />
           </node>
@@ -544,11 +544,11 @@
   </node>
   <node concept="1E0nO6" id="1L4MZBxVgKw">
     <property role="TrG5h" value="_020_airbag_unsafe_control_analysis" />
-    <ref role="1E05RL" node="1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
+    <ref role="1E05RL" node="1L4MZBxVgwF" />
     <node concept="1E0nOG" id="1L4MZBxVgKx" role="1E0n_e">
-      <ref role="1E0nOH" node="1L4MZBxVgCS" resolve="Driver" />
+      <ref role="1E0nOH" node="1L4MZBxVgCS" />
       <node concept="1E0nOJ" id="1L4MZBxVgKz" role="1E0nOC">
-        <ref role="1E0n_N" node="1L4MZBxVgEj" resolve="Activate" />
+        <ref role="1E0n_N" node="1L4MZBxVgEj" />
         <node concept="3f6qtF" id="6vZMoXu3Mh5" role="3f6qqO">
           <node concept="1E0COo" id="7L33HENb9v1" role="3f6qtG">
             <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_02" />
@@ -560,7 +560,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="7L33HENb9vU" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vN" resolve="airbag deploys unintentionally" />
+              <ref role="gxbni" node="7L33HENb9vN" />
             </node>
           </node>
         </node>
@@ -575,7 +575,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="1L4MZBxVSOM" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+              <ref role="gxbni" node="7L33HENb9vA" />
             </node>
           </node>
         </node>
@@ -587,7 +587,7 @@
         </node>
       </node>
       <node concept="1E0nOJ" id="1L4MZBxVzd5" role="1E0nOC">
-        <ref role="1E0n_N" node="1L4MZBxVgDG" resolve="Deactivate" />
+        <ref role="1E0n_N" node="1L4MZBxVgDG" />
         <node concept="3f6qtF" id="6vZMoXu3Mhc" role="3f6qqO">
           <node concept="1E0COo" id="1L4MZBxVzdk" role="3f6qtG">
             <property role="TrG5h" value="UCA_DRIVER_DEACTIVATE_01" />
@@ -599,7 +599,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="1L4MZBxVSOO" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+              <ref role="gxbni" node="7L33HENb9vA" />
             </node>
           </node>
         </node>
@@ -615,9 +615,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="1L4MZBxVzdI" role="1E0n_e">
-      <ref role="1E0nOH" node="1L4MZBxVgwH" resolve="Airbag Controller" />
+      <ref role="1E0nOH" node="1L4MZBxVgwH" />
       <node concept="1E0nOJ" id="1L4MZBxVze7" role="1E0nOC">
-        <ref role="1E0n_N" node="1L4MZBxVgEo" resolve="Activation Status" />
+        <ref role="1E0n_N" node="1L4MZBxVgEo" />
         <node concept="3f6qtF" id="6vZMoXu3Mhg" role="3f6qqO">
           <node concept="1E0COo" id="1L4MZBxVSOT" role="3f6qtG">
             <property role="TrG5h" value="UCA_AIRBAG_STATUS_02" />
@@ -629,7 +629,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="1L4MZBxVSOX" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+              <ref role="gxbni" node="7L33HENb9vA" />
             </node>
           </node>
         </node>
@@ -637,10 +637,10 @@
           <node concept="1E0COo" id="1L4MZBxVFnp" role="3f6qtG">
             <property role="TrG5h" value="UCA_AIRBAG_STATUS_01" />
             <node concept="gxbn0" id="1L4MZBxVSOQ" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+              <ref role="gxbni" node="7L33HENb9vA" />
             </node>
             <node concept="1YbhHi" id="7Jm8RM1zooa" role="1E0COp">
-              <ref role="1YbhHj" node="7Jm8RM1zoo0" resolve="vehicle crash at high speed" />
+              <ref role="1YbhHj" node="7Jm8RM1zoo0" />
             </node>
           </node>
         </node>
@@ -652,7 +652,7 @@
         </node>
       </node>
       <node concept="1E0nOJ" id="7L33HENb9vW" role="1E0nOC">
-        <ref role="1E0n_N" node="1L4MZBxVgH3" resolve="Deploy Airbag" />
+        <ref role="1E0n_N" node="1L4MZBxVgH3" />
         <node concept="3f6qtF" id="6vZMoXu3Mhk" role="3f6qqO">
           <node concept="1E0COo" id="7L33HENb9wl" role="3f6qtG">
             <property role="TrG5h" value="UCA_AIRBAG_DEPLOY_02" />
@@ -664,7 +664,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="7L33HENb9wp" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vN" resolve="airbag deploys unintentionally" />
+              <ref role="gxbni" node="7L33HENb9vN" />
             </node>
           </node>
         </node>
@@ -679,7 +679,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="7L33HENb9wf" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+              <ref role="gxbni" node="7L33HENb9vA" />
             </node>
           </node>
         </node>
@@ -694,7 +694,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="7L33HENb9wM" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9wH" resolve="airbag deploys too soon or late" />
+              <ref role="gxbni" node="7L33HENb9wH" />
             </node>
           </node>
         </node>
@@ -709,7 +709,7 @@
               </node>
             </node>
             <node concept="gxbn0" id="7L33HENb9wT" role="1E0COk">
-              <ref role="gxbni" node="7L33HENb9vA" resolve="airbag does not deploy" />
+              <ref role="gxbni" node="7L33HENb9vA" />
             </node>
           </node>
         </node>
@@ -734,50 +734,50 @@
       <property role="0lsPA" value="H01" />
       <property role="TrG5h" value="airbag does not deploy" />
       <node concept="3Zv_sa" id="7Jm8RM1zooT" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7Jm8RM1zooO" resolve="driver severe injury which requires hospitalization" />
+        <ref role="3Zv_sb" node="7Jm8RM1zooO" />
       </node>
       <node concept="3Zv_sa" id="7Jm8RM1zooY" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7Jm8RM1zooH" resolve="passenger severe injury which requires hospitalization" />
+        <ref role="3Zv_sb" node="7Jm8RM1zooH" />
       </node>
       <node concept="3h3uym" id="55oVyA0mGR1" role="3h3uzw">
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
-        <ref role="3h3iM1" node="1LvcKAYEWJP" resolve="OS01" />
+        <ref role="3h3iM1" node="1LvcKAYEWJP" />
       </node>
       <node concept="3h3uym" id="1LvcKAYEWK8" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKN/S1" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
-        <ref role="3h3iM1" node="1LvcKAYEWJZ" resolve="OS02" />
+        <ref role="3h3iM1" node="1LvcKAYEWJZ" />
       </node>
     </node>
     <node concept="1a6Z8w" id="7L33HENb9vN" role="8gIbH">
       <property role="0lsPA" value="H02" />
       <property role="TrG5h" value="airbag deploys unintentionally" />
       <node concept="3Zv_sa" id="7Jm8RM1zop2" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7Jm8RM1zooO" resolve="driver severe injury which requires hospitalization" />
+        <ref role="3Zv_sb" node="7Jm8RM1zooO" />
       </node>
       <node concept="3Zv_sa" id="7Jm8RM1zopl" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7Jm8RM1zooH" resolve="passenger severe injury which requires hospitalization" />
+        <ref role="3Zv_sb" node="7Jm8RM1zooH" />
       </node>
       <node concept="3h3uym" id="55oVyA0mGR2" role="3h3uzw">
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
-        <ref role="3h3iM1" node="1LvcKAYEWJP" resolve="OS01" />
+        <ref role="3h3iM1" node="1LvcKAYEWJP" />
       </node>
     </node>
     <node concept="1a6Z8w" id="7L33HENb9wH" role="8gIbH">
       <property role="0lsPA" value="H03" />
       <property role="TrG5h" value="airbag deploys too soon or late" />
       <node concept="3Zv_sa" id="7Jm8RM1zopp" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7Jm8RM1zooN" resolve="driver light injury which does not require hospitalization" />
+        <ref role="3Zv_sb" node="7Jm8RM1zooN" />
       </node>
       <node concept="3Zv_sa" id="7Jm8RM1zopu" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7Jm8RM1zooJ" resolve="passenger light injury which does not require hospitalization" />
+        <ref role="3Zv_sb" node="7Jm8RM1zooJ" />
       </node>
       <node concept="3h3uym" id="55oVyA0mGR3" role="3h3uzw">
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
-        <ref role="3h3iM1" node="1LvcKAYEWJP" resolve="OS01" />
+        <ref role="3h3iM1" node="1LvcKAYEWJP" />
       </node>
     </node>
   </node>

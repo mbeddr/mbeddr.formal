@@ -126,13 +126,13 @@
       <node concept="3UnI9n" id="3VQuWXS0KY" role="3UnI90">
         <property role="TrG5h" value="plaus_val" />
         <node concept="1savGX" id="3VQuWXS0KZ" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXS0Kr" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXS0Kr" />
         </node>
       </node>
       <node concept="3UnI81" id="3VQuWXS0L0" role="3UnI9m">
         <property role="TrG5h" value="raw_value" />
         <node concept="1savGX" id="3VQuWXS0L1" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXS0Kr" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXS0Kr" />
         </node>
       </node>
     </node>
@@ -146,7 +146,7 @@
       <node concept="3UnI81" id="3VQuWXS0Lm" role="3UnI9m">
         <property role="TrG5h" value="sensor_val" />
         <node concept="1savGX" id="3VQuWXS0Ln" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXS0Kr" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXS0Kr" />
         </node>
       </node>
     </node>
@@ -157,7 +157,7 @@
       <node concept="3UnI81" id="3VQuWXS0LD" role="3UnI9m">
         <property role="TrG5h" value="raw_data" />
         <node concept="1savGX" id="3VQuWXS0LE" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXS0Kr" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXS0Kr" />
         </node>
       </node>
       <node concept="3UnI9n" id="3VQuWXS0LF" role="3UnI90">
@@ -297,49 +297,49 @@
       <node concept="3Ug1AV" id="3VQuWXS0LW" role="3UgYNK">
         <property role="TrG5h" value="sensor_plausibilizer" />
         <node concept="3Ug1AZ" id="3VQuWXS0LX" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3VQuWXS0K$" resolve="SensorPlausibilization" />
+          <ref role="3Ug1AY" node="3VQuWXS0K$" />
         </node>
       </node>
       <node concept="3Ug1AV" id="3VQuWXS0LY" role="3UgYNK">
         <property role="TrG5h" value="brake_activator" />
         <node concept="3Ug1AZ" id="3VQuWXS0LZ" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3VQuWXS0L3" resolve="BrakeActivator" />
+          <ref role="3Ug1AY" node="3VQuWXS0L3" />
         </node>
       </node>
       <node concept="3Ug1$w" id="3VQuWXS0M0" role="3UgYNK">
         <node concept="3Ug1Ap" id="3VQuWXS0M1" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="3VQuWXS0LD" resolve="raw_data" />
+          <ref role="3Ug1Ao" node="3VQuWXS0LD" />
         </node>
         <node concept="3Ug1GC" id="3VQuWXS0M2" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3VQuWXS0L0" resolve="raw_value" />
+          <ref role="3Ug1Ha" node="3VQuWXS0L0" />
           <node concept="3Ug1GJ" id="3VQuWXS0M3" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXS0LW" resolve="sensor_plausibilizer" />
+            <ref role="3Ug1GI" node="3VQuWXS0LW" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3VQuWXS0M4" role="3UgYNK">
         <node concept="3Ug1GC" id="3VQuWXS0M5" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3VQuWXS0KY" resolve="plaus_val" />
+          <ref role="3Ug1Ha" node="3VQuWXS0KY" />
           <node concept="3Ug1GJ" id="3VQuWXS0M6" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXS0LW" resolve="sensor_plausibilizer" />
+            <ref role="3Ug1GI" node="3VQuWXS0LW" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3VQuWXS0M7" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3VQuWXS0Lm" resolve="sensor_val" />
+          <ref role="3Ug1Ha" node="3VQuWXS0Lm" />
           <node concept="3Ug1GJ" id="3VQuWXS0M8" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXS0LY" resolve="brake_activator" />
+            <ref role="3Ug1GI" node="3VQuWXS0LY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3VQuWXS0M9" role="3UgYNK">
         <node concept="3Ug1GC" id="3VQuWXS0Ma" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3VQuWXS0L4" resolve="brake" />
+          <ref role="3Ug1Ha" node="3VQuWXS0L4" />
           <node concept="3Ug1GJ" id="3VQuWXS0Mb" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXS0LY" resolve="brake_activator" />
+            <ref role="3Ug1GI" node="3VQuWXS0LY" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="3VQuWXS0Mc" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="3VQuWXS0LF" resolve="brake" />
+          <ref role="3Ug1Ao" node="3VQuWXS0LF" />
         </node>
       </node>
     </node>

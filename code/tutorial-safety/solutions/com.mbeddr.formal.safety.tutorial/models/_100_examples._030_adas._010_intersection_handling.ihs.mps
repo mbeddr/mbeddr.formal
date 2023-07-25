@@ -351,74 +351,74 @@
       <property role="0lsPB" value="H01" />
       <property role="TrG5h" value="Vehicle leaves authorised or designated road or highway " />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqc" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqd" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqV" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqe" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission (driving off the road)" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqW" />
       </node>
       <node concept="3h3uym" id="55oVyA0mRah" role="3h3uzw">
-        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mRab" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwq7" role="8gIbH">
       <property role="0lsPB" value="H02" />
       <property role="TrG5h" value="Vehicle does not maintain safe distance to other vehicles or objects while handling an intersection" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqf" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqg" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqV" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqh" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission (driving off the road)" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqW" />
       </node>
       <node concept="3h3uym" id="55oVyA0mRal" role="3h3uzw">
-        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mRab" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwqa" role="8gIbH">
       <property role="0lsPB" value="H03" />
       <property role="TrG5h" value="The Intersection Assistant controls the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqn" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqo" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqV" />
       </node>
       <node concept="3h3uym" id="55oVyA0mRao" role="3h3uzw">
-        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mRab" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3Jn$RV2Vwqb" role="8gIbH">
       <property role="0lsPB" value="H04" />
       <property role="TrG5h" value="Inappropriate vehicle behavior while operating outside the operational environment " />
       <node concept="3Zv_sa" id="3Jn$RV2Vwqp" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqU" resolve="Loss of life or injury of in or out of the vehicle humans" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqU" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqq" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqV" resolve="Damage to infrastructure, TPO or ego vehicle" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqV" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqr" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqW" resolve="Loss of transportation mission (driving off the road)" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqW" />
       </node>
       <node concept="3Zv_sa" id="3Jn$RV2Vwqs" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqX" resolve="Loss of service" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqX" />
       </node>
       <node concept="3h3uym" id="55oVyA0mRar" role="3h3uzw">
-        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mRab" />
       </node>
     </node>
     <node concept="1a6Z8w" id="ZH03rPhNNr" role="8gIbH">
       <property role="0lsPB" value="H05" />
       <property role="TrG5h" value="Vehicle does not complete route and arrives at incorrect destination" />
       <node concept="3Zv_sa" id="ZH03rPhNNI" role="3Zv_sA">
-        <ref role="3Zv_sb" node="3Jn$RV2VwqX" resolve="Loss of service" />
+        <ref role="3Zv_sb" node="3Jn$RV2VwqX" />
       </node>
       <node concept="3h3uym" id="55oVyA0mRau" role="3h3uzw">
-        <ref role="3h3iM1" node="55oVyA0mRab" resolve="OS1" />
+        <ref role="3h3iM1" node="55oVyA0mRab" />
       </node>
     </node>
   </node>
@@ -447,10 +447,10 @@
       </node>
       <node concept="2iDXIW" id="3Jn$RV2Vwqz" role="0nOlf">
         <node concept="DABN8" id="3Jn$RV2VwqE" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway " />
+          <ref role="DABNb" node="3Jn$RV2Vwq6" />
         </node>
         <node concept="DABN8" id="3Jn$RV2VwqH" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqa" resolve="The Intersection Assistant controls the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
+          <ref role="DABNb" node="3Jn$RV2Vwqa" />
         </node>
       </node>
     </node>
@@ -476,7 +476,7 @@
       </node>
       <node concept="2iDXIW" id="3Jn$RV2VwqB" role="0nOlf">
         <node concept="DABN8" id="3Jn$RV2VwqL" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwq7" resolve="Vehicle does not maintain safe distance to other vehicles or objects while handling an intersection" />
+          <ref role="DABNb" node="3Jn$RV2Vwq7" />
         </node>
       </node>
     </node>
@@ -485,7 +485,7 @@
       <property role="0ke_I" value="Carmen C." />
       <node concept="2iDXIW" id="K_MCpHhFGh" role="0nOlf">
         <node concept="DABN8" id="K_MCpHhFGk" role="DABNk">
-          <ref role="DABNb" node="3Jn$RV2Vwqb" resolve="Inappropriate vehicle behavior while operating outside the operational environment " />
+          <ref role="DABNb" node="3Jn$RV2Vwqb" />
         </node>
       </node>
       <node concept="19SGf9" id="K_MCpHhFFP" role="1QQeG9">
@@ -618,7 +618,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2VwsU" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwqa" resolve="The Intersection Assistant controls the vehicle with too high longitudinal or lateral accelerations or too low decceleration while handling an intersection" />
+          <ref role="oTUVg" node="3Jn$RV2Vwqa" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2VwsV" role="19SJt6">
           <property role="19SUeA" value="&#10;has been mitigated" />
@@ -633,13 +633,13 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2VwsX" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwq7" resolve="Vehicle does not maintain safe distance to other vehicles or objects while handling an intersection" />
+          <ref role="oTUVg" node="3Jn$RV2Vwq7" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2VwsY" role="19SJt6">
           <property role="19SUeA" value="&#10;has been substituted &#10;with hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2VwsZ" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway " />
+          <ref role="oTUVg" node="3Jn$RV2Vwq6" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt0" role="19SJt6" />
       </node>
@@ -652,7 +652,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="3Jn$RV2Vwt5" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwqb" resolve="Inappropriate vehicle behavior while operating outside the operational environment " />
+          <ref role="oTUVg" node="3Jn$RV2Vwqb" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt6" role="19SJt6">
           <property role="19SUeA" value=" has been &#10;eliminated and can no longer occur" />
@@ -660,8 +660,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="3Jn$RV2Vwru" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrv" resolve="Str2.1" />
-      <ref role="3VeSjQ" node="3Jn$RV2Vwrt" resolve="G2.1.1" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrv" />
+      <ref role="3VeSjQ" node="3Jn$RV2Vwrt" />
     </node>
     <node concept="FXfxu" id="3Jn$RV2Vwrv" role="2vn1q5">
       <property role="TrG5h" value="Str2.1" />
@@ -670,7 +670,7 @@
           <property role="19SUeA" value="All hazards from " />
         </node>
         <node concept="oXkut" id="3Jn$RV2Vwt8" role="19SJt6">
-          <ref role="oTdVe" node="3Jn$RV2Vwq5" resolve="_013_ihs_hazards_list" />
+          <ref role="oTdVe" node="3Jn$RV2Vwq5" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2Vwt9" role="19SJt6">
           <property role="19SUeA" value="&#10;have been addressed" />
@@ -2110,8 +2110,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="3Jn$RV2Vwry" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrx" resolve="G2" />
-      <ref role="3VeSjQ" node="3Jn$RV2Vwrv" resolve="Str2.1" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrx" />
+      <ref role="3VeSjQ" node="3Jn$RV2Vwrv" />
     </node>
     <node concept="2XiGWt" id="3Jn$RV2Vwrz" role="2vn1q5">
       <property role="TrG5h" value="A2" />
@@ -2122,16 +2122,16 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="3Jn$RV2Vwr$" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrv" resolve="Str2.1" />
-      <ref role="3VeSjQ" node="3Jn$RV2Vwrz" resolve="A2" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrv" />
+      <ref role="3VeSjQ" node="3Jn$RV2Vwrz" />
     </node>
     <node concept="8gDHL" id="3Jn$RV2VwrB" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrv" resolve="Str2.1" />
-      <ref role="3VeSjQ" node="3Jn$RV2Vwrq" resolve="G2.1.3" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrv" />
+      <ref role="3VeSjQ" node="3Jn$RV2Vwrq" />
     </node>
     <node concept="8gDHL" id="3Jn$RV2VwrC" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrv" resolve="Str2.1" />
-      <ref role="3VeSjQ" node="3Jn$RV2Vwrp" resolve="G2.1.4" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrv" />
+      <ref role="3VeSjQ" node="3Jn$RV2Vwrp" />
     </node>
     <node concept="2iKOIG" id="3Jn$RV2VwrD" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -2147,8 +2147,8 @@
       </node>
     </node>
     <node concept="3g1GAz" id="3Jn$RV2VwrE" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrH" resolve="Str2.1.4" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrD" resolve="AG2.1.4.2" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrH" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrD" />
     </node>
     <node concept="2iKOIG" id="3Jn$RV2VwrF" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -2164,8 +2164,8 @@
       </node>
     </node>
     <node concept="3g1GAz" id="3Jn$RV2VwrG" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrH" resolve="Str2.1.4" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrF" resolve="AG2.1.4.1" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrH" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrF" />
     </node>
     <node concept="2iK_uI" id="3Jn$RV2VwrH" role="2vn1q5">
       <property role="TrG5h" value="Str2.1.4" />
@@ -2174,7 +2174,7 @@
           <property role="19SUeA" value="All safety goals from " />
         </node>
         <node concept="27blvF" id="3Jn$RV2VwtY" role="19SJt6">
-          <ref role="27blvA" node="3Jn$RV2Vwqt" resolve="_014_ihs_safety_goals" />
+          <ref role="27blvA" node="3Jn$RV2Vwqt" />
         </node>
         <node concept="19SUe$" id="3Jn$RV2VwtZ" role="19SJt6">
           <property role="19SUeA" value="&#10; are satisfied" />
@@ -2182,8 +2182,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrI" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrp" resolve="G2.1.4" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrH" resolve="Str2.1.4" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrp" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrH" />
     </node>
     <node concept="2vmxQI" id="3Jn$RV2VwrJ" role="2vn1q5">
       <property role="TrG5h" value="Str3.2" />
@@ -2202,12 +2202,12 @@
       </node>
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrL" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrJ" resolve="Str3.2" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrK" resolve="G3.2.1" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrJ" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrK" />
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrM" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrx" resolve="G2" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrJ" resolve="Str3.2" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrx" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrJ" />
     </node>
     <node concept="3t1IcU" id="3Jn$RV2VwrN" role="2vn1q5">
       <property role="TrG5h" value="Sn2.2.1" />
@@ -2218,8 +2218,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrO" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrK" resolve="G3.2.1" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrN" resolve="Sn2.2.1" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrK" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrN" />
     </node>
     <node concept="2vmxQI" id="3Jn$RV2VwrP" role="2vn1q5">
       <property role="TrG5h" value="Str2.2" />
@@ -2246,16 +2246,16 @@
       </node>
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrS" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrP" resolve="Str2.2" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrQ" resolve="G2.2.1" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrP" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrQ" />
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrT" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrQ" resolve="G2.2.1" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrR" resolve="Sn2.2.1" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrQ" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrR" />
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrU" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrx" resolve="G2" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrP" resolve="Str2.2" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrx" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrP" />
     </node>
     <node concept="2vn7WC" id="3Jn$RV2VwrV" role="2vn1q5">
       <property role="TrG5h" value="G5.6" />
@@ -2266,8 +2266,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="3Jn$RV2VwrW" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrJ" resolve="Str3.2" />
-      <ref role="3VeSjQ" node="3Jn$RV2VwrV" resolve="G5.6" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrJ" />
+      <ref role="3VeSjQ" node="3Jn$RV2VwrV" />
     </node>
     <node concept="2iKOIG" id="55oVyA0rqn3" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -2283,8 +2283,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="55oVyA0rqx1" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2VwrH" resolve="Str2.1.4" />
-      <ref role="3VeSjQ" node="55oVyA0rqn3" resolve="AG2.1.4.3" />
+      <ref role="3VeSjP" node="3Jn$RV2VwrH" />
+      <ref role="3VeSjQ" node="55oVyA0rqn3" />
     </node>
     <node concept="8gVzV" id="55oVyA0rqHL" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -2294,7 +2294,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="55oVyA0rqHO" role="19SJt6">
-          <ref role="oTUVg" node="3Jn$RV2Vwq6" resolve="Vehicle leaves authorised or designated road or highway " />
+          <ref role="oTUVg" node="3Jn$RV2Vwq6" />
         </node>
         <node concept="19SUe$" id="55oVyA0rqHP" role="19SJt6">
           <property role="19SUeA" value="&#10; has been mitigated" />
@@ -2302,8 +2302,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="55oVyA0rqRW" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrv" resolve="Str2.1" />
-      <ref role="3VeSjQ" node="55oVyA0rqHL" resolve="G2.1.5" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrv" />
+      <ref role="3VeSjQ" node="55oVyA0rqHL" />
     </node>
     <node concept="8gVzV" id="55oVyA0rr64" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -2313,7 +2313,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="55oVyA0rr67" role="19SJt6">
-          <ref role="oTUVg" node="ZH03rPhNNr" resolve="Vehicle does not complete route and arrives at incorrect destination" />
+          <ref role="oTUVg" node="ZH03rPhNNr" />
         </node>
         <node concept="19SUe$" id="55oVyA0rr68" role="19SJt6">
           <property role="19SUeA" value="&#10; has been mitigated" />
@@ -2321,8 +2321,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="55oVyA0rrht" role="2vhqc$">
-      <ref role="3VeSjP" node="3Jn$RV2Vwrv" resolve="Str2.1" />
-      <ref role="3VeSjQ" node="55oVyA0rr64" resolve="G2.1.6" />
+      <ref role="3VeSjP" node="3Jn$RV2Vwrv" />
+      <ref role="3VeSjQ" node="55oVyA0rr64" />
     </node>
   </node>
   <node concept="2vn7XN" id="3Jn$RV2VwvT">
@@ -2361,7 +2361,7 @@
           <property role="8uqrb" value="true" />
           <property role="TrG5h" value="G1.2" />
           <property role="2QdZbZ" value="true" />
-          <ref role="2QdZa0" node="3Jn$RV2Vwrx" resolve="G2" />
+          <ref role="2QdZa0" node="3Jn$RV2Vwrx" />
           <node concept="19SGf9" id="3Jn$RV2Vwwg" role="2vnaTY">
             <node concept="19SUe$" id="3Jn$RV2Vww_" role="19SJt6">
               <property role="19SUeA" value="" />
@@ -2375,7 +2375,7 @@
               <property role="19SUeA" value="System defined in&#10;" />
             </node>
             <node concept="27blvF" id="3Jn$RV2VwwB" role="19SJt6">
-              <ref role="27blvA" node="3Jn$RV2VwpF" resolve="_002_ihs_system_requirements" />
+              <ref role="27blvA" node="3Jn$RV2VwpF" />
             </node>
             <node concept="19SUe$" id="3Jn$RV2VwwC" role="19SJt6">
               <property role="19SUeA" value="&#10; is sufficiently safe &#10; in the given operating context" />
@@ -2389,31 +2389,31 @@
               <property role="19SUeA" value="Item Definition &#10;" />
             </node>
             <node concept="27blvF" id="3Jn$RV2VwwE" role="19SJt6">
-              <ref role="27blvA" node="3Jn$RV2VwpF" resolve="_002_ihs_system_requirements" />
+              <ref role="27blvA" node="3Jn$RV2VwpF" />
             </node>
             <node concept="19SUe$" id="3Jn$RV2VwwF" role="19SJt6">
               <property role="19SUeA" value="&#10;" />
             </node>
             <node concept="27blvF" id="3Jn$RV2VwwG" role="19SJt6">
-              <ref role="27blvA" node="3Jn$RV2VwH4" resolve="_003_ihs_functional_requirements" />
+              <ref role="27blvA" node="3Jn$RV2VwH4" />
             </node>
             <node concept="19SUe$" id="3Jn$RV2VwwH" role="19SJt6">
               <property role="19SUeA" value="&#10;" />
             </node>
             <node concept="27blvF" id="3Jn$RV2VwwI" role="19SJt6">
-              <ref role="27blvA" node="3Jn$RV2VwJg" resolve="_004_ihs_technical_requirements" />
+              <ref role="27blvA" node="3Jn$RV2VwJg" />
             </node>
             <node concept="19SUe$" id="3Jn$RV2VwwJ" role="19SJt6">
               <property role="19SUeA" value="&#10;" />
             </node>
             <node concept="27blvF" id="3Jn$RV2VwwK" role="19SJt6">
-              <ref role="27blvA" node="3Jn$RV2VwBz" resolve="_002_ihs_operational_requirements" />
+              <ref role="27blvA" node="3Jn$RV2VwBz" />
             </node>
             <node concept="19SUe$" id="3Jn$RV2VwwL" role="19SJt6">
               <property role="19SUeA" value="&#10;" />
             </node>
             <node concept="27blvF" id="3Jn$RV2VwwM" role="19SJt6">
-              <ref role="27blvA" node="3Jn$RV2VwqZ" resolve="_011_ihs_operational_safety_concept" />
+              <ref role="27blvA" node="3Jn$RV2VwqZ" />
             </node>
             <node concept="19SUe$" id="3Jn$RV2VwwN" role="19SJt6">
               <property role="19SUeA" value="&#10;" />
@@ -2421,20 +2421,20 @@
           </node>
         </node>
         <node concept="3VeUTF" id="3Jn$RV2Vww4" role="2vhqc$">
-          <ref role="3VeSjP" node="3Jn$RV2Vww2" resolve="G1.1" />
-          <ref role="3VeSjQ" node="3Jn$RV2Vww0" resolve="Str1.1" />
+          <ref role="3VeSjP" node="3Jn$RV2Vww2" />
+          <ref role="3VeSjQ" node="3Jn$RV2Vww0" />
         </node>
         <node concept="3VeUTF" id="3Jn$RV2Vww5" role="2vhqc$">
-          <ref role="3VeSjP" node="3Jn$RV2Vww2" resolve="G1.1" />
-          <ref role="3VeSjQ" node="3Jn$RV2VwvZ" resolve="Str1.2" />
+          <ref role="3VeSjP" node="3Jn$RV2Vww2" />
+          <ref role="3VeSjQ" node="3Jn$RV2VwvZ" />
         </node>
         <node concept="3VeUTF" id="3Jn$RV2Vww6" role="2vhqc$">
-          <ref role="3VeSjP" node="3Jn$RV2Vww0" resolve="Str1.1" />
-          <ref role="3VeSjQ" node="3Jn$RV2Vww1" resolve="G1.2" />
+          <ref role="3VeSjP" node="3Jn$RV2Vww0" />
+          <ref role="3VeSjQ" node="3Jn$RV2Vww1" />
         </node>
         <node concept="2vhqFZ" id="3Jn$RV2Vww7" role="2vhqc$">
-          <ref role="3VeSjP" node="3Jn$RV2Vww2" resolve="G1.1" />
-          <ref role="3VeSjQ" node="3Jn$RV2Vww3" resolve="C2" />
+          <ref role="3VeSjP" node="3Jn$RV2Vww2" />
+          <ref role="3VeSjQ" node="3Jn$RV2Vww3" />
         </node>
         <node concept="37mRI7" id="3Jn$RV2Vww8" role="lGtFl">
           <node concept="37mRIm" id="3Jn$RV2Vwwj" role="37mRID">
@@ -2857,12 +2857,12 @@
           </node>
         </node>
         <node concept="2vhqFZ" id="3Jn$RV2Vwwa" role="2vhqc$">
-          <ref role="3VeSjP" node="3Jn$RV2VwvZ" resolve="Str1.2" />
-          <ref role="3VeSjQ" node="3Jn$RV2Vww9" resolve="C1.2" />
+          <ref role="3VeSjP" node="3Jn$RV2VwvZ" />
+          <ref role="3VeSjQ" node="3Jn$RV2Vww9" />
         </node>
         <node concept="2vhqFZ" id="3Jn$RV2Vwwb" role="2vhqc$">
-          <ref role="3VeSjP" node="3Jn$RV2Vww2" resolve="G1.1" />
-          <ref role="3VeSjQ" node="3Jn$RV2VwvY" resolve="A1 - Context Assumptions" />
+          <ref role="3VeSjP" node="3Jn$RV2Vww2" />
+          <ref role="3VeSjQ" node="3Jn$RV2VwvY" />
         </node>
       </node>
       <node concept="19SGf9" id="1TD_kqsdgHI" role="2vnaTY">
@@ -4066,7 +4066,7 @@
       <node concept="3UnI9n" id="2vEFX4zn7sP" role="3UnI90">
         <property role="TrG5h" value="vehicleControl" />
         <node concept="1s31w3" id="2vEFX4zn7th" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn7le" resolve="VEHICLE_MOTION" />
+          <ref role="1s31w2" node="2vEFX4zn7le" />
         </node>
       </node>
       <node concept="3UnI9n" id="2Bdpt7mpQ99" role="3UnI90">
@@ -4095,68 +4095,68 @@
       <node concept="3Ug1AV" id="2vEFX4zn7dn" role="3UgYNK">
         <property role="TrG5h" value="engineECU" />
         <node concept="3Ug1AZ" id="2vEFX4zn7dm" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwEd" resolve="EngineECU" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwEd" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn7dG" role="3UgYNK">
         <property role="TrG5h" value="brakeEcu" />
         <node concept="3Ug1AZ" id="2vEFX4zn7dE" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8PnaSr" resolve="BrakeECU" />
+          <ref role="3Ug1AY" node="5Fk_m8PnaSr" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn7ee" role="3UgYNK">
         <property role="TrG5h" value="steeringECU" />
         <node concept="3Ug1AZ" id="2vEFX4zn7ec" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8Pnb2h" resolve="SteeringECU" />
+          <ref role="3Ug1AY" node="5Fk_m8Pnb2h" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn7eO" role="3UgYNK">
         <property role="TrG5h" value="gearboxECU" />
         <node concept="3Ug1AZ" id="2vEFX4zn7eM" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8Pnbcb" resolve="GearBoxECU" />
+          <ref role="3Ug1AY" node="5Fk_m8Pnbcb" />
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQPX" role="3UgYNK">
         <node concept="3Ug1Ap" id="2Bdpt7mpQQ_" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpQ99" resolve="rpm" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpQ99" />
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQQR" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3Jn$RV2VwEL" resolve="desiredRPM" />
+          <ref role="3Ug1Ha" node="3Jn$RV2VwEL" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQQQ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn7dn" resolve="engineECU" />
+            <ref role="3Ug1GI" node="2vEFX4zn7dn" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQUj" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQV0" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIiv" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIiv" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQUZ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn7dG" resolve="brakeEcu" />
+            <ref role="3Ug1GI" node="2vEFX4zn7dG" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="2Bdpt7mpQV9" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpQ9d" resolve="brakingForce" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpQ9d" />
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQWk" role="3UgYNK">
         <node concept="3Ug1Ap" id="2Bdpt7mpQX4" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpQ9f" resolve="desiredGear" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpQ9f" />
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQXa" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIxY" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIxY" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQX9" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn7eO" resolve="gearboxECU" />
+            <ref role="3Ug1GI" node="2vEFX4zn7eO" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQYA" role="3UgYNK">
         <node concept="3Ug1Ap" id="2Bdpt7mpQZq" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpQ9h" resolve="steeringAngle" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpQ9h" />
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQZw" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIyj" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIyj" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQZv" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn7ee" resolve="steeringECU" />
+            <ref role="3Ug1GI" node="2vEFX4zn7ee" />
           </node>
         </node>
       </node>
@@ -4388,13 +4388,13 @@
       <node concept="3UnI81" id="2vEFX4zn8rs" role="3UnI9m">
         <property role="TrG5h" value="ihsInfo" />
         <node concept="1s31w3" id="2vEFX4zn8rX" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+          <ref role="1s31w2" node="2vEFX4zn8lH" />
         </node>
       </node>
       <node concept="3UnI9n" id="5Fk_m8Pncos" role="3UnI90">
         <property role="TrG5h" value="userCommands" />
         <node concept="1s31w3" id="2vEFX4zn8fW" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn89N" resolve="HMI_DATA" />
+          <ref role="1s31w2" node="2vEFX4zn89N" />
         </node>
       </node>
     </node>
@@ -4431,11 +4431,11 @@
       <node concept="3UnI81" id="jTtg7cq7a9" role="3UnI9m">
         <property role="TrG5h" value="trajectory" />
         <node concept="1s31w3" id="jTtg7cq7aa" role="3UnI80">
-          <ref role="1s31w2" node="jTtg7cq6rQ" resolve="TRAJECTORY" />
+          <ref role="1s31w2" node="jTtg7cq6rQ" />
         </node>
       </node>
       <node concept="3Ug1AZ" id="jTtg7cq78O" role="2p5x1W">
-        <ref role="3Ug1AY" node="5Fk_m8PnaPa" resolve="MotionControl" />
+        <ref role="3Ug1AY" node="5Fk_m8PnaPa" />
       </node>
       <node concept="37mRI7" id="jTtg7cq78S" role="lGtFl">
         <node concept="37mRIm" id="jTtg7cq78T" role="37mRID">
@@ -4504,7 +4504,7 @@
         <node concept="2Hds6S" id="2Bdpt7mpGia" role="3UnI80" />
       </node>
       <node concept="3Ug1AZ" id="2Bdpt7mpJqU" role="2p5x1W">
-        <ref role="3Ug1AY" node="5Fk_m8PnaPa" resolve="MotionControl" />
+        <ref role="3Ug1AY" node="5Fk_m8PnaPa" />
       </node>
       <node concept="37mRI7" id="2Bdpt7mpRhS" role="lGtFl">
         <node concept="37mRIm" id="2Bdpt7mpRhT" role="37mRID">
@@ -4599,13 +4599,13 @@
       <node concept="3UnI9n" id="2vEFX4zn7sh" role="3UnI90">
         <property role="TrG5h" value="vehicleMotionStatus" />
         <node concept="1s31w3" id="2vEFX4zn7sC" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn7le" resolve="VEHICLE_MOTION" />
+          <ref role="1s31w2" node="2vEFX4zn7le" />
         </node>
       </node>
       <node concept="3UnI81" id="5Fk_m8Pncpz" role="3UnI9m">
         <property role="TrG5h" value="vehicleControl" />
         <node concept="1s31w3" id="2vEFX4zn7s9" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn7le" resolve="VEHICLE_MOTION" />
+          <ref role="1s31w2" node="2vEFX4zn7le" />
         </node>
       </node>
     </node>
@@ -5966,31 +5966,31 @@
       <node concept="3Ug1AV" id="5Fk_m8PnbzE" role="3UgYNK">
         <property role="TrG5h" value="chassis" />
         <node concept="3Ug1AZ" id="5Fk_m8PnbzF" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8Pn9xB" resolve="Chassis" />
+          <ref role="3Ug1AY" node="5Fk_m8Pn9xB" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnb_F" role="3UgYNK">
         <property role="TrG5h" value="driverControl" />
         <node concept="3Ug1AZ" id="2Bdpt7mpJrb" role="3Ug1A_">
-          <ref role="3Ug1AY" node="2Bdpt7mpJjH" resolve="DriverControl" />
+          <ref role="3Ug1AY" node="2Bdpt7mpJjH" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbTe" role="3UgYNK">
         <property role="TrG5h" value="vehiclePlatform" />
         <node concept="3Ug1AZ" id="2vEFX4zn811" role="3Ug1A_">
-          <ref role="3Ug1AY" node="2vEFX4zn77I" resolve="VehiclePlatformManagementSystem" />
+          <ref role="3Ug1AY" node="2vEFX4zn77I" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbVt" role="3UgYNK">
         <property role="TrG5h" value="ui" />
         <node concept="3Ug1AZ" id="5Fk_m8PnbVu" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8Pna_3" resolve="UserInterface" />
+          <ref role="3Ug1AY" node="5Fk_m8Pna_3" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8PnbVH" role="3UgYNK">
         <property role="TrG5h" value="ihs" />
         <node concept="3Ug1AZ" id="6VJDb1ZGa88" role="3Ug1A_">
-          <ref role="3Ug1AY" node="6VJDb1ZGa3_" resolve="IntersectionHandlingImpl" />
+          <ref role="3Ug1AY" node="6VJDb1ZGa3_" />
         </node>
         <node concept="0Sh09" id="ZH03rPhIOR" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhIPA" role="hnKMk">
@@ -6019,31 +6019,31 @@
       <node concept="3Ug1AV" id="5Fk_m8PnbZV" role="3UgYNK">
         <property role="TrG5h" value="egoVehicleSensors" />
         <node concept="3Ug1AZ" id="5Fk_m8PnbZW" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwE5" resolve="EgoVehicleSensors" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwE5" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnc2m" role="3UgYNK">
         <property role="TrG5h" value="localEnvSensor" />
         <node concept="3Ug1AZ" id="2Bdpt7mpHQg" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwE7" resolve="EnvironmentSensor" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwE7" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnc4M" role="3UgYNK">
         <property role="TrG5h" value="gps" />
         <node concept="3Ug1AZ" id="5Fk_m8Pnc4N" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8Pn9O7" resolve="GlobalPositioningSystem" />
+          <ref role="3Ug1AY" node="5Fk_m8Pn9O7" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnc7f" role="3UgYNK">
         <property role="TrG5h" value="imu" />
         <node concept="3Ug1AZ" id="5Fk_m8Pnc7g" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8Pn9Xt" resolve="InertialMeasurementUnit" />
+          <ref role="3Ug1AY" node="5Fk_m8Pn9Xt" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pnc7M" role="3UgYNK">
         <property role="TrG5h" value="infrastructureSensors" />
         <node concept="3Ug1AZ" id="5Fk_m8Pnc7N" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5Fk_m8Pna6T" resolve="InfrastructureSensors" />
+          <ref role="3Ug1AY" node="5Fk_m8Pna6T" />
         </node>
         <node concept="0Sh09" id="2vEFX4zn83R" role="lGtFl">
           <node concept="hnKMr" id="2vEFX4zn83W" role="hnKMk">
@@ -6060,13 +6060,13 @@
       <node concept="3Ug1AV" id="5Fk_m8Pnccu" role="3UgYNK">
         <property role="TrG5h" value="externalEnvSensor" />
         <node concept="3Ug1AZ" id="5Fk_m8Pnccv" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwE7" resolve="EnvironmentSensor" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwE7" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5Fk_m8Pncfa" role="3UgYNK">
         <property role="TrG5h" value="lidarSensors_2" />
         <node concept="3Ug1AZ" id="2vEFX4zn66J" role="3Ug1A_">
-          <ref role="3Ug1AY" node="2vEFX4zn5N2" resolve="LidarSensingSetup" />
+          <ref role="3Ug1AY" node="2vEFX4zn5N2" />
         </node>
         <node concept="0Sh09" id="RyPjVFcf14" role="lGtFl">
           <node concept="hnKMr" id="2vEFX4zn83s" role="hnKMk">
@@ -6077,7 +6077,7 @@
       <node concept="3Ug1AV" id="5Fk_m8Pnci0" role="3UgYNK">
         <property role="TrG5h" value="radarSensors_4" />
         <node concept="3Ug1AZ" id="2vEFX4zn6lB" role="3Ug1A_">
-          <ref role="3Ug1AY" node="2vEFX4zn6gi" resolve="RadarSensingSetup" />
+          <ref role="3Ug1AY" node="2vEFX4zn6gi" />
         </node>
         <node concept="0Sh09" id="2vEFX4zn83z" role="lGtFl">
           <node concept="hnKMr" id="2vEFX4zn83H" role="hnKMk">
@@ -6088,7 +6088,7 @@
       <node concept="3Ug1AV" id="4O8jCOJvAaE" role="3UgYNK">
         <property role="TrG5h" value="cameraSensingSetup" />
         <node concept="3Ug1AZ" id="4O8jCOJvAaF" role="3Ug1A_">
-          <ref role="3Ug1AY" node="2vEFX4zn6AY" resolve="CameraSensingSetup" />
+          <ref role="3Ug1AY" node="2vEFX4zn6AY" />
         </node>
         <node concept="0Sh09" id="ZH03rPhKi2" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhKid" role="hnKMk">
@@ -6098,407 +6098,407 @@
       </node>
       <node concept="3Ug1$w" id="2vEFX4zn7tY" role="3UgYNK">
         <node concept="3Ug1GC" id="2vEFX4zn7uO" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2vEFX4zn7sP" resolve="vehicleControl" />
+          <ref role="3Ug1Ha" node="2vEFX4zn7sP" />
           <node concept="3Ug1GJ" id="2vEFX4zn7uN" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2vEFX4zn7uY" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5Fk_m8Pncpz" resolve="vehicleControl" />
+          <ref role="3Ug1Ha" node="5Fk_m8Pncpz" />
           <node concept="3Ug1GJ" id="2vEFX4zn7uX" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbzE" resolve="chassis" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbzE" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpGbq" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpGca" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpG9U" resolve="informUser" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpG9U" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGc9" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpGck" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2vEFX4zn8rs" resolve="ihsInfo" />
+          <ref role="3Ug1Ha" node="2vEFX4zn8rs" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGcj" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVt" resolve="ui" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVt" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpGdV" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpGeW" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5Fk_m8Pncos" resolve="userCommands" />
+          <ref role="3Ug1Ha" node="5Fk_m8Pncos" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGeV" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVt" resolve="ui" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVt" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpGf6" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpGap" resolve="userCommands" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpGap" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGf5" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpGl2" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpGlW" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5Fk_m8PncoO" resolve="disableDriverControl" />
+          <ref role="3Ug1Ha" node="5Fk_m8PncoO" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGlV" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpGm6" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpGi9" resolve="disableManualControl" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpGi9" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGm5" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" resolve="driverControl" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpGnO" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpGoN" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2vEFX4zn7sP" resolve="vehicleControl" />
+          <ref role="3Ug1Ha" node="2vEFX4zn7sP" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGoM" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpGoX" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5Fk_m8Pncpz" resolve="vehicleControl" />
+          <ref role="3Ug1Ha" node="5Fk_m8Pncpz" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGoW" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbzE" resolve="chassis" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbzE" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpGqw" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpGr$" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2vEFX4zn7sh" resolve="vehicleMotionStatus" />
+          <ref role="3Ug1Ha" node="2vEFX4zn7sh" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGrz" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbzE" resolve="chassis" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbzE" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpGrI" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpGmv" resolve="vehicleMotionStatus" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpGmv" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGrH" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbZV" resolve="egoVehicleSensors" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbZV" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpGte" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpGun" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2vEFX4zn7sh" resolve="vehicleMotionStatus" />
+          <ref role="3Ug1Ha" node="2vEFX4zn7sh" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGum" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbzE" resolve="chassis" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbzE" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpGux" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpGmF" resolve="vehicleMotionStatus" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpGmF" />
           <node concept="3Ug1GJ" id="2Bdpt7mpGuw" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnc7f" resolve="imu" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnc7f" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpP0J" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpP27" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3Jn$RV2VwE$" resolve="speed" />
+          <ref role="3Ug1Ha" node="3Jn$RV2VwE$" />
           <node concept="3Ug1GJ" id="2Bdpt7mpP26" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbZV" resolve="egoVehicleSensors" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbZV" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpP2t" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpP3q" resolve="speed" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpP3q" />
           <node concept="3Ug1GJ" id="2Bdpt7mpP2s" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpHBJ" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpHCX" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpH_f" resolve="envData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpH_f" />
           <node concept="3Ug1GJ" id="2Bdpt7mpHCW" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnc2m" resolve="localEnvSensor" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnc2m" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpHR3" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpHAi" resolve="envData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpHAi" />
           <node concept="3Ug1GJ" id="2Bdpt7mpHR2" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpP6P" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpP8i" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIA$" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIA$" />
           <node concept="3Ug1GJ" id="2Bdpt7mpP8h" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pncfa" resolve="lidarSensors_2" />
+            <ref role="3Ug1GI" node="5Fk_m8Pncfa" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpP8s" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOXl" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOXl" />
           <node concept="3Ug1GJ" id="2Bdpt7mpP8r" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpPal" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpPbR" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPbQ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnci0" resolve="radarSensors_4" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnci0" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpPc1" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOYS" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOYS" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPc0" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpPhN" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpPjv" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpHUF" resolve="egoPosition" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpHUF" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPju" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnc4M" resolve="gps" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnc4M" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpPjD" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI9Q" resolve="egoPosition" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI9Q" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPjC" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpPrZ" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpPtK" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpGv2" resolve="infrData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpGv2" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPtJ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnc7M" resolve="infrastructureSensors" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnc7M" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpPtU" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpHcX" resolve="infrData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpHcX" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPtT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpHSH" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpHU0" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpH_f" resolve="envData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpH_f" />
           <node concept="3Ug1GJ" id="2Bdpt7mpHTZ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnccu" resolve="externalEnvSensor" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnccu" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpHUa" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpHAi" resolve="envData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpHAi" />
           <node concept="3Ug1GJ" id="2Bdpt7mpHU9" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpPI4" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpPJV" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_8" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_8" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPJU" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" resolve="driverControl" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQ79" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ9d" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ9d" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ78" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpPM8" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpPO3" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_a" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_a" />
           <node concept="3Ug1GJ" id="2Bdpt7mpPO2" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" resolve="driverControl" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQ7o" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ9f" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ9f" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ7n" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQ0A" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQ2A" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_4" resolve="rpm" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_4" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ2_" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" resolve="driverControl" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQ7Q" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ99" resolve="rpm" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ99" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ7P" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQ4W" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQ6Z" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_c" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_c" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ6Y" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" resolve="driverControl" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnb_F" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQ8v" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ9h" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ9h" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ8u" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQfB" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQfC" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIyS" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIyS" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQjK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQfE" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ9d" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ9d" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQfF" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQfG" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQfH" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIyU" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIyU" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQkJ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQfJ" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ9f" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ9f" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQfK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQfQ" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQfR" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIyO" resolve="rpm" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIyO" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQlV" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQfT" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ99" resolve="rpm" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ99" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQfU" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQfV" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQfW" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIyW" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIyW" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQng" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQfY" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpQ9h" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpQ9h" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQfZ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbTe" resolve="vehiclePlatform" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbTe" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2Bdpt7mpQ$p" role="3UgYNK">
         <node concept="3Ug1GC" id="2Bdpt7mpQ$q" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOYS" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOYS" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ$r" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2Bdpt7mpQ$s" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOYS" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOYS" />
           <node concept="3Ug1GJ" id="2Bdpt7mpQ$t" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeOQO" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeOTA" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeO25" resolve="acceleration" />
+          <ref role="3Ug1Ha" node="I19PlZeO25" />
           <node concept="3Ug1GJ" id="I19PlZeOT_" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnc7f" resolve="imu" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnc7f" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeOTK" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeONn" resolve="acceleration" />
+          <ref role="3Ug1Ha" node="I19PlZeONn" />
           <node concept="3Ug1GJ" id="I19PlZeOTJ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvxIr" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvxIs" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwmv" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwmv" />
           <node concept="3Ug1GJ" id="4O8jCOJvxIt" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pncfa" resolve="lidarSensors_2" />
+            <ref role="3Ug1GI" node="5Fk_m8Pncfa" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvxIu" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvxH_" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvxH_" />
           <node concept="3Ug1GJ" id="4O8jCOJvxIv" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvy6h" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvy6i" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwvX" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwvX" />
           <node concept="3Ug1GJ" id="4O8jCOJvy6j" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnci0" resolve="radarSensors_4" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnci0" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvy6k" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvy0x" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvy0x" />
           <node concept="3Ug1GJ" id="4O8jCOJvy6l" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvAi$" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvAiB" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOXF" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOXF" />
           <node concept="3Ug1GJ" id="4O8jCOJvAiC" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvAs8" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" />
           <node concept="3Ug1GJ" id="4O8jCOJvAs7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvAaE" resolve="cameraSensingSetup" />
+            <ref role="3Ug1GI" node="4O8jCOJvAaE" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvAzs" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvAAc" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeO25" resolve="acceleration" />
+          <ref role="3Ug1Ha" node="I19PlZeO25" />
           <node concept="3Ug1GJ" id="4O8jCOJvAAb" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8Pnc7f" resolve="imu" />
+            <ref role="3Ug1GI" node="5Fk_m8Pnc7f" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvAAm" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_na" resolve="acceleration" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_na" />
           <node concept="3Ug1GJ" id="4O8jCOJvAAl" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvAaE" resolve="cameraSensingSetup" />
+            <ref role="3Ug1GI" node="4O8jCOJvAaE" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvAJ_" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvAMq" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJv_s5" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_s5" />
           <node concept="3Ug1GJ" id="4O8jCOJvAMp" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvAaE" resolve="cameraSensingSetup" />
+            <ref role="3Ug1GI" node="4O8jCOJvAaE" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvAN4" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvAOw" resolve="cameraUncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvAOw" />
           <node concept="3Ug1GJ" id="4O8jCOJvAN3" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5Fk_m8PnbVH" resolve="ihs" />
+            <ref role="3Ug1GI" node="5Fk_m8PnbVH" />
           </node>
         </node>
       </node>
@@ -7146,7 +7146,7 @@
       <node concept="3UnI9n" id="2Bdpt7mpIA$" role="3UnI90">
         <property role="TrG5h" value="pointCloud" />
         <node concept="1s31w3" id="2Bdpt7mpIUM" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI9n" id="4O8jCOJvwmv" role="3UnI90">
@@ -7160,7 +7160,7 @@
       <node concept="3UnI9n" id="4O8jCOJvuQN" role="3UnI90">
         <property role="TrG5h" value="fusedPointcloud" />
         <node concept="1s31w3" id="4O8jCOJvuRq" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI9n" id="4O8jCOJvuUg" role="3UnI90">
@@ -7170,7 +7170,7 @@
       <node concept="3UnI81" id="4O8jCOJvuPS" role="3UnI9m">
         <property role="TrG5h" value="pointCloud1" />
         <node concept="1s31w3" id="4O8jCOJvuPT" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvwoo" role="3UnI9m">
@@ -7180,7 +7180,7 @@
       <node concept="3UnI81" id="4O8jCOJvuQn" role="3UnI9m">
         <property role="TrG5h" value="pointCloud2" />
         <node concept="1s31w3" id="4O8jCOJvuQo" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvwpy" role="3UnI9m">
@@ -7192,18 +7192,18 @@
     <node concept="2dDAV0" id="2vEFX4zn5N2" role="2HcuB8">
       <property role="TrG5h" value="LidarSensingSetup" />
       <node concept="3Ug1AZ" id="2vEFX4zn5RE" role="2p5x1W">
-        <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
+        <ref role="3Ug1AY" node="3Jn$RV2VwDV" />
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn5RI" role="3UgYNK">
         <property role="TrG5h" value="lidar_1" />
         <node concept="3Ug1AZ" id="2vEFX4zn5RH" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDV" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn5RX" role="3UgYNK">
         <property role="TrG5h" value="lidar_2" />
         <node concept="3Ug1AZ" id="2vEFX4zn5RV" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDV" resolve="Lidar" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDV" />
         </node>
       </node>
       <node concept="3UgYNU" id="2vEFX4zn5Sb" role="3UgYNK" />
@@ -7404,85 +7404,85 @@
       <node concept="3Ug1AV" id="4O8jCOJvuPa" role="3UgYNK">
         <property role="TrG5h" value="lidarFusion" />
         <node concept="3Ug1AZ" id="4O8jCOJvuPb" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4O8jCOJvutk" resolve="LidarFusion" />
+          <ref role="3Ug1AY" node="4O8jCOJvutk" />
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvuRy" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvuRz" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIA$" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIA$" />
           <node concept="3Ug1GJ" id="4O8jCOJvuR$" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn5RI" resolve="lidar_1" />
+            <ref role="3Ug1GI" node="2vEFX4zn5RI" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvuR_" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvuPS" resolve="pointCloud1" />
+          <ref role="3Ug1Ha" node="4O8jCOJvuPS" />
           <node concept="3Ug1GJ" id="4O8jCOJvuRA" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvuPa" resolve="lidarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvuPa" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvuS4" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvuS5" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpIA$" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpIA$" />
           <node concept="3Ug1GJ" id="4O8jCOJvuS6" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn5RX" resolve="lidar_2" />
+            <ref role="3Ug1GI" node="2vEFX4zn5RX" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvuS7" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvuQn" resolve="pointCloud2" />
+          <ref role="3Ug1Ha" node="4O8jCOJvuQn" />
           <node concept="3Ug1GJ" id="4O8jCOJvuS8" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvuPa" resolve="lidarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvuPa" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvuST" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvuSU" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvuQN" resolve="fusedPointcloud" />
+          <ref role="3Ug1Ha" node="4O8jCOJvuQN" />
           <node concept="3Ug1GJ" id="4O8jCOJvuSV" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvuPa" resolve="lidarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvuPa" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="4O8jCOJvuSW" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpIA$" resolve="pointCloud" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpIA$" />
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwqR" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwqS" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwmv" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwmv" />
           <node concept="3Ug1GJ" id="4O8jCOJvwqT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn5RX" resolve="lidar_2" />
+            <ref role="3Ug1GI" node="2vEFX4zn5RX" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwqU" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwpy" resolve="uncertaintyLevel2" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwpy" />
           <node concept="3Ug1GJ" id="4O8jCOJvwqV" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvuPa" resolve="lidarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvuPa" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwrI" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwrJ" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwmv" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwmv" />
           <node concept="3Ug1GJ" id="4O8jCOJvwrK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn5RI" resolve="lidar_1" />
+            <ref role="3Ug1GI" node="2vEFX4zn5RI" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwrL" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwoo" resolve="uncertaintyLevel1" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwoo" />
           <node concept="3Ug1GJ" id="4O8jCOJvwrM" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvuPa" resolve="lidarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvuPa" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwKM" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwKN" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvuUg" resolve="lidarUncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvuUg" />
           <node concept="3Ug1GJ" id="4O8jCOJvwKO" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvuPa" resolve="lidarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvuPa" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="4O8jCOJvwKP" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="4O8jCOJvwmv" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ao" node="4O8jCOJvwmv" />
         </node>
       </node>
     </node>
@@ -7492,7 +7492,7 @@
       <node concept="3UnI9n" id="2Bdpt7mpO$o" role="3UnI90">
         <property role="TrG5h" value="objectList" />
         <node concept="1s31w3" id="2Bdpt7mpO$V" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI9n" id="4O8jCOJvwvX" role="3UnI90">
@@ -7506,7 +7506,7 @@
       <node concept="3UnI9n" id="4O8jCOJvwbN" role="3UnI90">
         <property role="TrG5h" value="fusedObjectList" />
         <node concept="1s31w3" id="4O8jCOJvwbO" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI9n" id="4O8jCOJvwca" role="3UnI90">
@@ -7516,7 +7516,7 @@
       <node concept="3UnI81" id="4O8jCOJvwam" role="3UnI9m">
         <property role="TrG5h" value="objectList1" />
         <node concept="1s31w3" id="4O8jCOJvwan" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvwxX" role="3UnI9m">
@@ -7526,7 +7526,7 @@
       <node concept="3UnI81" id="4O8jCOJvwaJ" role="3UnI9m">
         <property role="TrG5h" value="objectList2" />
         <node concept="1s31w3" id="4O8jCOJvwaK" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvwz3" role="3UnI9m">
@@ -7536,7 +7536,7 @@
       <node concept="3UnI81" id="4O8jCOJvwaW" role="3UnI9m">
         <property role="TrG5h" value="objectList3" />
         <node concept="1s31w3" id="4O8jCOJvwaX" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvw$h" role="3UnI9m">
@@ -7546,7 +7546,7 @@
       <node concept="3UnI81" id="4O8jCOJvwbb" role="3UnI9m">
         <property role="TrG5h" value="objectList4" />
         <node concept="1s31w3" id="4O8jCOJvwbc" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvw_B" role="3UnI9m">
@@ -7558,30 +7558,30 @@
     <node concept="2dDAV0" id="2vEFX4zn6gi" role="2HcuB8">
       <property role="TrG5h" value="RadarSensingSetup" />
       <node concept="3Ug1AZ" id="2vEFX4zn6lr" role="2p5x1W">
-        <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+        <ref role="3Ug1AY" node="3Jn$RV2VwDX" />
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6gk" role="3UgYNK">
         <property role="TrG5h" value="radar_1" />
         <node concept="3Ug1AZ" id="2vEFX4zn6lu" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6m2" role="3UgYNK">
         <property role="TrG5h" value="radar_2" />
         <node concept="3Ug1AZ" id="2vEFX4zn6m3" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6mv" role="3UgYNK">
         <property role="TrG5h" value="radar_3" />
         <node concept="3Ug1AZ" id="2vEFX4zn6mw" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6n2" role="3UgYNK">
         <property role="TrG5h" value="radar_4" />
         <node concept="3Ug1AZ" id="2vEFX4zn6n3" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDX" resolve="Radar" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDX" />
         </node>
       </node>
       <node concept="3UgYNU" id="2vEFX4zn6gq" role="3UgYNK" />
@@ -7895,141 +7895,141 @@
       <node concept="3Ug1AV" id="4O8jCOJvwef" role="3UgYNK">
         <property role="TrG5h" value="radarFusion" />
         <node concept="3Ug1AZ" id="4O8jCOJvweg" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4O8jCOJvvLH" resolve="RadarFusion" />
+          <ref role="3Ug1AY" node="4O8jCOJvvLH" />
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwff" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwfg" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" />
           <node concept="3Ug1GJ" id="4O8jCOJvwfh" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6gk" resolve="radar_1" />
+            <ref role="3Ug1GI" node="2vEFX4zn6gk" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwfi" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwam" resolve="objectList1" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwam" />
           <node concept="3Ug1GJ" id="4O8jCOJvwfj" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwfP" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwfQ" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" />
           <node concept="3Ug1GJ" id="4O8jCOJvwfR" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6m2" resolve="radar_2" />
+            <ref role="3Ug1GI" node="2vEFX4zn6m2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwfS" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwaJ" resolve="objectList2" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwaJ" />
           <node concept="3Ug1GJ" id="4O8jCOJvwfT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwgw" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwgx" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" />
           <node concept="3Ug1GJ" id="4O8jCOJvwgy" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6mv" resolve="radar_3" />
+            <ref role="3Ug1GI" node="2vEFX4zn6mv" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwgz" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwaW" resolve="objectList3" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwaW" />
           <node concept="3Ug1GJ" id="4O8jCOJvwg$" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwhk" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwhl" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" resolve="objectList" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpO$o" />
           <node concept="3Ug1GJ" id="4O8jCOJvwhm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6n2" resolve="radar_4" />
+            <ref role="3Ug1GI" node="2vEFX4zn6n2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwhn" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwbb" resolve="objectList4" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwbb" />
           <node concept="3Ug1GJ" id="4O8jCOJvwho" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwid" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwie" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwbN" resolve="fusedObjectList" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwbN" />
           <node concept="3Ug1GJ" id="4O8jCOJvwif" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="4O8jCOJvwig" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpO$o" resolve="objectList" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpO$o" />
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwDY" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwDZ" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwvX" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwvX" />
           <node concept="3Ug1GJ" id="4O8jCOJvwE0" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6n2" resolve="radar_4" />
+            <ref role="3Ug1GI" node="2vEFX4zn6n2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwE1" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvw_B" resolve="uncertaintyLevel4" />
+          <ref role="3Ug1Ha" node="4O8jCOJvw_B" />
           <node concept="3Ug1GJ" id="4O8jCOJvwE2" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwF3" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwF4" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwvX" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwvX" />
           <node concept="3Ug1GJ" id="4O8jCOJvwF5" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6mv" resolve="radar_3" />
+            <ref role="3Ug1GI" node="2vEFX4zn6mv" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwF6" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvw$h" resolve="uncertaintyLevel3" />
+          <ref role="3Ug1Ha" node="4O8jCOJvw$h" />
           <node concept="3Ug1GJ" id="4O8jCOJvwF7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwGd" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwGe" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwvX" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwvX" />
           <node concept="3Ug1GJ" id="4O8jCOJvwGf" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6m2" resolve="radar_2" />
+            <ref role="3Ug1GI" node="2vEFX4zn6m2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwGg" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwz3" resolve="uncertaintyLevel2" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwz3" />
           <node concept="3Ug1GJ" id="4O8jCOJvwGh" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwHs" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwHt" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwvX" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwvX" />
           <node concept="3Ug1GJ" id="4O8jCOJvwHu" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6gk" resolve="radar_1" />
+            <ref role="3Ug1GI" node="2vEFX4zn6gk" />
           </node>
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvwHv" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvwxX" resolve="uncertaintyLevel1" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwxX" />
           <node concept="3Ug1GJ" id="4O8jCOJvwHw" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvwNu" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJvwNv" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvwca" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvwca" />
           <node concept="3Ug1GJ" id="4O8jCOJvwNw" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJvwef" resolve="radarFusion" />
+            <ref role="3Ug1GI" node="4O8jCOJvwef" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="4O8jCOJvwNx" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="4O8jCOJvwvX" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ao" node="4O8jCOJvwvX" />
         </node>
       </node>
     </node>
@@ -8039,7 +8039,7 @@
       <node concept="3UnI9n" id="2Bdpt7mpOOd" role="3UnI90">
         <property role="TrG5h" value="cameraData" />
         <node concept="1s31w3" id="2Bdpt7mpOOI" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
     </node>
@@ -8049,7 +8049,7 @@
       <node concept="3UnI9n" id="I19PlZeRrJ" role="3UnI90">
         <property role="TrG5h" value="fusedCameraData" />
         <node concept="1s31w3" id="I19PlZeRxU" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI9n" id="4O8jCOJv_qE" role="3UnI90">
@@ -8059,31 +8059,31 @@
       <node concept="3UnI81" id="4O8jCOJv_mm" role="3UnI9m">
         <property role="TrG5h" value="acceleration" />
         <node concept="1s31w3" id="4O8jCOJv_n2" role="3UnI80">
-          <ref role="1s31w2" node="I19PlZeOze" resolve="ACCELERATION" />
+          <ref role="1s31w2" node="I19PlZeOze" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeRp2" role="3UnI9m">
         <property role="TrG5h" value="cameraData1" />
         <node concept="1s31w3" id="I19PlZeRpB" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeRpJ" role="3UnI9m">
         <property role="TrG5h" value="cameraData2" />
         <node concept="1s31w3" id="I19PlZeRq8" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeRqg" role="3UnI9m">
         <property role="TrG5h" value="cameraData3" />
         <node concept="1s31w3" id="I19PlZeRqJ" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeRqR" role="3UnI9m">
         <property role="TrG5h" value="cameraData4" />
         <node concept="1s31w3" id="I19PlZeRrA" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
     </node>
@@ -8097,34 +8097,34 @@
       <node concept="3UnI81" id="4O8jCOJv_na" role="3UnI9m">
         <property role="TrG5h" value="acceleration" />
         <node concept="1s31w3" id="4O8jCOJv_nz" role="3UnI80">
-          <ref role="1s31w2" node="I19PlZeOze" resolve="ACCELERATION" />
+          <ref role="1s31w2" node="I19PlZeOze" />
         </node>
       </node>
       <node concept="3Ug1AZ" id="2vEFX4zn6Gz" role="2p5x1W">
-        <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+        <ref role="3Ug1AY" node="3Jn$RV2VwDZ" />
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6B0" role="3UgYNK">
         <property role="TrG5h" value="camera_1" />
         <node concept="3Ug1AZ" id="2vEFX4zn6GA" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6B2" role="3UgYNK">
         <property role="TrG5h" value="camera_2" />
         <node concept="3Ug1AZ" id="2vEFX4zn6GG" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6B4" role="3UgYNK">
         <property role="TrG5h" value="camera_3" />
         <node concept="3Ug1AZ" id="2vEFX4zn6GM" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" />
         </node>
       </node>
       <node concept="3Ug1AV" id="2vEFX4zn6B6" role="3UgYNK">
         <property role="TrG5h" value="camera_4" />
         <node concept="3Ug1AZ" id="2vEFX4zn6GS" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" resolve="Camera" />
+          <ref role="3Ug1AY" node="3Jn$RV2VwDZ" />
         </node>
       </node>
       <node concept="3UgYNU" id="I19PlZeP4N" role="3UgYNK" />
@@ -8353,96 +8353,96 @@
       <node concept="3Ug1AV" id="I19PlZeRs6" role="3UgYNK">
         <property role="TrG5h" value="imageFusion" />
         <node concept="3Ug1AZ" id="I19PlZeRs7" role="3Ug1A_">
-          <ref role="3Ug1AY" node="I19PlZeRad" resolve="ImageFusion" />
+          <ref role="3Ug1AY" node="I19PlZeRad" />
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeRt3" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeRt4" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" />
           <node concept="3Ug1GJ" id="I19PlZeRt5" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6B0" resolve="camera_1" />
+            <ref role="3Ug1GI" node="2vEFX4zn6B0" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeRt6" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeRp2" resolve="cameraData1" />
+          <ref role="3Ug1Ha" node="I19PlZeRp2" />
           <node concept="3Ug1GJ" id="I19PlZeRt7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeRs6" resolve="imageFusion" />
+            <ref role="3Ug1GI" node="I19PlZeRs6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeRt_" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeRtA" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" />
           <node concept="3Ug1GJ" id="I19PlZeRtB" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6B4" resolve="camera_3" />
+            <ref role="3Ug1GI" node="2vEFX4zn6B4" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeRtC" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeRqg" resolve="cameraData3" />
+          <ref role="3Ug1Ha" node="I19PlZeRqg" />
           <node concept="3Ug1GJ" id="I19PlZeRtD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeRs6" resolve="imageFusion" />
+            <ref role="3Ug1GI" node="I19PlZeRs6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeRuk" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeRul" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" />
           <node concept="3Ug1GJ" id="I19PlZeRum" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6B2" resolve="camera_2" />
+            <ref role="3Ug1GI" node="2vEFX4zn6B2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeRun" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeRpJ" resolve="cameraData2" />
+          <ref role="3Ug1Ha" node="I19PlZeRpJ" />
           <node concept="3Ug1GJ" id="I19PlZeRuo" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeRs6" resolve="imageFusion" />
+            <ref role="3Ug1GI" node="I19PlZeRs6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeRv2" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeRv3" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpOOd" />
           <node concept="3Ug1GJ" id="I19PlZeRv4" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="2vEFX4zn6B6" resolve="camera_4" />
+            <ref role="3Ug1GI" node="2vEFX4zn6B6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeRv5" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeRqR" resolve="cameraData4" />
+          <ref role="3Ug1Ha" node="I19PlZeRqR" />
           <node concept="3Ug1GJ" id="I19PlZeRv6" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeRs6" resolve="imageFusion" />
+            <ref role="3Ug1GI" node="I19PlZeRs6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeRy2" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeRy3" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeRrJ" resolve="fusedCameraData" />
+          <ref role="3Ug1Ha" node="I19PlZeRrJ" />
           <node concept="3Ug1GJ" id="I19PlZeRy4" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeRs6" resolve="imageFusion" />
+            <ref role="3Ug1GI" node="I19PlZeRs6" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="I19PlZeRy5" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpOOd" resolve="cameraData" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpOOd" />
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_ol" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_om" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJv_na" resolve="acceleration" />
+          <ref role="3Ug1Ao" node="4O8jCOJv_na" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_on" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_mm" resolve="acceleration" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_mm" />
           <node concept="3Ug1GJ" id="4O8jCOJv_oo" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeRs6" resolve="imageFusion" />
+            <ref role="3Ug1GI" node="I19PlZeRs6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_tf" role="3UgYNK">
         <node concept="3Ug1GC" id="4O8jCOJv_tg" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJv_qE" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_qE" />
           <node concept="3Ug1GJ" id="4O8jCOJv_th" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeRs6" resolve="imageFusion" />
+            <ref role="3Ug1GI" node="I19PlZeRs6" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="4O8jCOJv_ti" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="4O8jCOJv_s5" resolve="uncertaintyLevel" />
+          <ref role="3Ug1Ao" node="4O8jCOJv_s5" />
         </node>
       </node>
     </node>
@@ -8452,7 +8452,7 @@
       <node concept="3UnI81" id="2Bdpt7mpGmv" role="3UnI9m">
         <property role="TrG5h" value="vehicleMotionStatus" />
         <node concept="1s31w3" id="2Bdpt7mpGmw" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn7le" resolve="VEHICLE_MOTION" />
+          <ref role="1s31w2" node="2vEFX4zn7le" />
         </node>
       </node>
       <node concept="3UnI9n" id="3Jn$RV2VwE$" role="3UnI90">
@@ -8473,7 +8473,7 @@
       <node concept="3UnI9n" id="2Bdpt7mpHUF" role="3UnI90">
         <property role="TrG5h" value="egoPosition" />
         <node concept="1s31w3" id="2Bdpt7mpI9x" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpI1O" resolve="GPS_COORDINATES" />
+          <ref role="1s31w2" node="2Bdpt7mpI1O" />
         </node>
       </node>
     </node>
@@ -8483,13 +8483,13 @@
       <node concept="3UnI9n" id="I19PlZeO25" role="3UnI90">
         <property role="TrG5h" value="acceleration" />
         <node concept="1s31w3" id="I19PlZeOMQ" role="3UnI80">
-          <ref role="1s31w2" node="I19PlZeOze" resolve="ACCELERATION" />
+          <ref role="1s31w2" node="I19PlZeOze" />
         </node>
       </node>
       <node concept="3UnI81" id="2Bdpt7mpGmF" role="3UnI9m">
         <property role="TrG5h" value="vehicleMotionStatus" />
         <node concept="1s31w3" id="2Bdpt7mpGmG" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn7le" resolve="VEHICLE_MOTION" />
+          <ref role="1s31w2" node="2vEFX4zn7le" />
         </node>
       </node>
     </node>
@@ -8499,7 +8499,7 @@
       <node concept="3UnI9n" id="2Bdpt7mpGv2" role="3UnI90">
         <property role="TrG5h" value="infrData" />
         <node concept="1s31w3" id="2Bdpt7mpH60" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpGMw" resolve="INFRASTRUCTURE_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpGMw" />
         </node>
       </node>
     </node>
@@ -8509,7 +8509,7 @@
       <node concept="3UnI9n" id="2Bdpt7mpH_f" role="3UnI90">
         <property role="TrG5h" value="envData" />
         <node concept="1s31w3" id="2Bdpt7mpH_Z" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpHjx" resolve="ENVIRONMENT_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpHjx" />
         </node>
       </node>
     </node>
@@ -8533,25 +8533,25 @@
       <node concept="3UnI81" id="I19PlZeXmo" role="3UnI9m">
         <property role="TrG5h" value="infrData" />
         <node concept="1s31w3" id="I19PlZeXmp" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpGMw" resolve="INFRASTRUCTURE_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpGMw" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeXmq" role="3UnI9m">
         <property role="TrG5h" value="envData" />
         <node concept="1s31w3" id="I19PlZeXmr" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpHjx" resolve="ENVIRONMENT_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpHjx" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeXms" role="3UnI9m">
         <property role="TrG5h" value="egoPosition" />
         <node concept="1s31w3" id="I19PlZeXmt" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpI1O" resolve="GPS_COORDINATES" />
+          <ref role="1s31w2" node="2Bdpt7mpI1O" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeXmu" role="3UnI9m">
         <property role="TrG5h" value="pointCloud" />
         <node concept="1s31w3" id="I19PlZeXmv" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvxQU" role="3UnI9m">
@@ -8561,7 +8561,7 @@
       <node concept="3UnI81" id="I19PlZeXmw" role="3UnI9m">
         <property role="TrG5h" value="objectList" />
         <node concept="1s31w3" id="I19PlZeXmx" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvxSr" role="3UnI9m">
@@ -8571,7 +8571,7 @@
       <node concept="3UnI81" id="I19PlZeXmy" role="3UnI9m">
         <property role="TrG5h" value="cameraData" />
         <node concept="1s31w3" id="I19PlZeXmz" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvBio" role="3UnI9m">
@@ -8581,13 +8581,13 @@
       <node concept="3UnI81" id="I19PlZeXm$" role="3UnI9m">
         <property role="TrG5h" value="acceleration" />
         <node concept="1s31w3" id="I19PlZeXm_" role="3UnI80">
-          <ref role="1s31w2" node="I19PlZeOze" resolve="ACCELERATION" />
+          <ref role="1s31w2" node="I19PlZeOze" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeY1y" role="3UnI9m">
         <property role="TrG5h" value="userCommands" />
         <node concept="1s31w3" id="I19PlZeY1z" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn89N" resolve="HMI_DATA" />
+          <ref role="1s31w2" node="2vEFX4zn89N" />
         </node>
       </node>
       <node concept="3UnI9n" id="I19PlZeVGh" role="3UnI90">
@@ -8620,7 +8620,7 @@
       <node concept="3UnI9n" id="I19PlZeVGt" role="3UnI90">
         <property role="TrG5h" value="informUser" />
         <node concept="1s31w3" id="I19PlZeVGu" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+          <ref role="1s31w2" node="2vEFX4zn8lH" />
         </node>
       </node>
       <node concept="37mRI7" id="I19PlZeVJK" role="lGtFl">
@@ -8911,7 +8911,7 @@
       <node concept="3UnI81" id="I19PlZeVAo" role="3UnI9m">
         <property role="TrG5h" value="informUser_in" />
         <node concept="1s31w3" id="I19PlZeVAp" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+          <ref role="1s31w2" node="2vEFX4zn8lH" />
         </node>
       </node>
       <node concept="3UnI9n" id="I19PlZeUij" role="3UnI90">
@@ -8944,7 +8944,7 @@
       <node concept="3UnI9n" id="I19PlZeUix" role="3UnI90">
         <property role="TrG5h" value="informUser" />
         <node concept="1s31w3" id="I19PlZeUiy" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+          <ref role="1s31w2" node="2vEFX4zn8lH" />
         </node>
       </node>
       <node concept="37mRI7" id="I19PlZeURe" role="lGtFl">
@@ -9149,25 +9149,25 @@
       <node concept="3UnI81" id="2Bdpt7mpHcX" role="3UnI9m">
         <property role="TrG5h" value="infrData" />
         <node concept="1s31w3" id="2Bdpt7mpHcY" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpGMw" resolve="INFRASTRUCTURE_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpGMw" />
         </node>
       </node>
       <node concept="3UnI81" id="2Bdpt7mpHAi" role="3UnI9m">
         <property role="TrG5h" value="envData" />
         <node concept="1s31w3" id="2Bdpt7mpHAj" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpHjx" resolve="ENVIRONMENT_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpHjx" />
         </node>
       </node>
       <node concept="3UnI81" id="2Bdpt7mpI9Q" role="3UnI9m">
         <property role="TrG5h" value="egoPosition" />
         <node concept="1s31w3" id="2Bdpt7mpI9R" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpI1O" resolve="GPS_COORDINATES" />
+          <ref role="1s31w2" node="2Bdpt7mpI1O" />
         </node>
       </node>
       <node concept="3UnI81" id="2Bdpt7mpOXl" role="3UnI9m">
         <property role="TrG5h" value="pointCloud" />
         <node concept="1s31w3" id="2Bdpt7mpOXm" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvxH_" role="3UnI9m">
@@ -9177,7 +9177,7 @@
       <node concept="3UnI81" id="2Bdpt7mpOYS" role="3UnI9m">
         <property role="TrG5h" value="objectList" />
         <node concept="1s31w3" id="2Bdpt7mpOYT" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvy0x" role="3UnI9m">
@@ -9187,7 +9187,7 @@
       <node concept="3UnI81" id="2Bdpt7mpOXF" role="3UnI9m">
         <property role="TrG5h" value="cameraData" />
         <node concept="1s31w3" id="2Bdpt7mpOXG" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvAOw" role="3UnI9m">
@@ -9197,13 +9197,13 @@
       <node concept="3UnI81" id="I19PlZeONn" role="3UnI9m">
         <property role="TrG5h" value="acceleration" />
         <node concept="1s31w3" id="I19PlZeONo" role="3UnI80">
-          <ref role="1s31w2" node="I19PlZeOze" resolve="ACCELERATION" />
+          <ref role="1s31w2" node="I19PlZeOze" />
         </node>
       </node>
       <node concept="3UnI81" id="2Bdpt7mpGap" role="3UnI9m">
         <property role="TrG5h" value="userCommands" />
         <node concept="1s31w3" id="2Bdpt7mpGaq" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn89N" resolve="HMI_DATA" />
+          <ref role="1s31w2" node="2vEFX4zn89N" />
         </node>
       </node>
       <node concept="3UnI9n" id="2Bdpt7mpIyO" role="3UnI90">
@@ -9236,7 +9236,7 @@
       <node concept="3UnI9n" id="2Bdpt7mpG9U" role="3UnI90">
         <property role="TrG5h" value="informUser" />
         <node concept="1s31w3" id="2Bdpt7mpG9V" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+          <ref role="1s31w2" node="2vEFX4zn8lH" />
         </node>
       </node>
     </node>
@@ -9244,7 +9244,7 @@
     <node concept="2dDAV0" id="6VJDb1ZGa3_" role="2HcuB8">
       <property role="TrG5h" value="IntersectionHandlingImpl" />
       <node concept="3Ug1AZ" id="6VJDb1ZGa85" role="2p5x1W">
-        <ref role="3Ug1AY" node="3Jn$RV2VwE9" resolve="IntersectionHandlingSystem" />
+        <ref role="3Ug1AY" node="3Jn$RV2VwE9" />
       </node>
       <node concept="37mRI7" id="2Bdpt7mpRnq" role="lGtFl">
         <node concept="37mRIm" id="2Bdpt7mpRnr" role="37mRID">
@@ -10231,19 +10231,19 @@
       <node concept="3Ug1AV" id="I19PlZeTm4" role="3UgYNK">
         <property role="TrG5h" value="missionChannel" />
         <node concept="3Ug1AZ" id="I19PlZeTm5" role="3Ug1A_">
-          <ref role="3Ug1AY" node="I19PlZeSnj" resolve="MissionChannel" />
+          <ref role="3Ug1AY" node="I19PlZeSnj" />
         </node>
       </node>
       <node concept="3Ug1AV" id="I19PlZeTo6" role="3UgYNK">
         <property role="TrG5h" value="complementaryChannel" />
         <node concept="3Ug1AZ" id="I19PlZeTo7" role="3Ug1A_">
-          <ref role="3Ug1AY" node="I19PlZeT6l" resolve="ComplementaryChannel" />
+          <ref role="3Ug1AY" node="I19PlZeT6l" />
         </node>
       </node>
       <node concept="3Ug1AV" id="I19PlZeUcU" role="3UgYNK">
         <property role="TrG5h" value="arbitration" />
         <node concept="3Ug1AZ" id="I19PlZeUcV" role="3Ug1A_">
-          <ref role="3Ug1AY" node="I19PlZeTX1" resolve="Arbitration" />
+          <ref role="3Ug1AY" node="I19PlZeTX1" />
         </node>
         <node concept="0Sh09" id="ZH03rPhL8R" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhL9w" role="hnKMk">
@@ -10253,499 +10253,499 @@
       </node>
       <node concept="3Ug1$w" id="I19PlZeUqg" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeUqh" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeUij" resolve="rpm" />
+          <ref role="3Ug1Ha" node="I19PlZeUij" />
           <node concept="3Ug1GJ" id="I19PlZeUqi" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="I19PlZeUqj" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpIyO" resolve="rpm" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpIyO" />
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeUs8" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeUs9" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeUin" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="I19PlZeUin" />
           <node concept="3Ug1GJ" id="I19PlZeUsa" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="I19PlZeUsb" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpIyS" resolve="brakingForce" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpIyS" />
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeUtG" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeUtH" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeUip" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="I19PlZeUip" />
           <node concept="3Ug1GJ" id="I19PlZeUtI" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="I19PlZeUtJ" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpIyU" resolve="desiredGear" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpIyU" />
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeUvk" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeUvl" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeUir" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="I19PlZeUir" />
           <node concept="3Ug1GJ" id="I19PlZeUvm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="I19PlZeUvn" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpIyW" resolve="steeringAngle" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpIyW" />
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeUyK" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeUyL" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeUiv" resolve="disableDriverControl" />
+          <ref role="3Ug1Ha" node="I19PlZeUiv" />
           <node concept="3Ug1GJ" id="I19PlZeUyM" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="I19PlZeUyN" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="5Fk_m8PncoO" resolve="disableDriverControl" />
+          <ref role="3Ug1Ao" node="5Fk_m8PncoO" />
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeU$$" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeU$_" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeUix" resolve="informUser" />
+          <ref role="3Ug1Ha" node="I19PlZeUix" />
           <node concept="3Ug1GJ" id="I19PlZeU$A" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="I19PlZeU$B" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2Bdpt7mpG9U" resolve="informUser" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpG9U" />
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeVT_" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeVUI" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVEO" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="I19PlZeVEO" />
           <node concept="3Ug1GJ" id="I19PlZeVUH" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeW8r" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAg" resolve="brakingForce_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAg" />
           <node concept="3Ug1GJ" id="I19PlZeW8q" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeVW1" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeVXd" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVEQ" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="I19PlZeVEQ" />
           <node concept="3Ug1GJ" id="I19PlZeVXc" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeW8P" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAi" resolve="desiredGear_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAi" />
           <node concept="3Ug1GJ" id="I19PlZeW8O" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeVYz" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeVZM" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVEU" resolve="disableDriverControl" />
+          <ref role="3Ug1Ha" node="I19PlZeVEU" />
           <node concept="3Ug1GJ" id="I19PlZeVZL" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeW9f" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAm" resolve="disableDriverControl_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAm" />
           <node concept="3Ug1GJ" id="I19PlZeW9e" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeW1b" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeW2t" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVEK" resolve="rpm" />
+          <ref role="3Ug1Ha" node="I19PlZeVEK" />
           <node concept="3Ug1GJ" id="I19PlZeW2s" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWax" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAc" resolve="rpm_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAc" />
           <node concept="3Ug1GJ" id="I19PlZeWaw" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeW45" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeW5q" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVES" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="I19PlZeVES" />
           <node concept="3Ug1GJ" id="I19PlZeW5p" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWbV" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAk" resolve="steeringAngle_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAk" />
           <node concept="3Ug1GJ" id="I19PlZeWbU" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeW6T" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeW8h" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVEW" resolve="informUser" />
+          <ref role="3Ug1Ha" node="I19PlZeVEW" />
           <node concept="3Ug1GJ" id="I19PlZeW8g" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWcl" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAo" resolve="informUser_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAo" />
           <node concept="3Ug1GJ" id="I19PlZeWck" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWej" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeWek" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVGl" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="I19PlZeVGl" />
           <node concept="3Ug1GJ" id="I19PlZeWi7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWem" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAg" resolve="brakingForce_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAg" />
           <node concept="3Ug1GJ" id="I19PlZeWen" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWeo" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeWep" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVGn" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="I19PlZeVGn" />
           <node concept="3Ug1GJ" id="I19PlZeWiM" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWer" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAi" resolve="desiredGear_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAi" />
           <node concept="3Ug1GJ" id="I19PlZeWes" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWet" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeWeu" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVGr" resolve="disableDriverControl" />
+          <ref role="3Ug1Ha" node="I19PlZeVGr" />
           <node concept="3Ug1GJ" id="I19PlZeWjr" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWew" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAm" resolve="disableDriverControl_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAm" />
           <node concept="3Ug1GJ" id="I19PlZeWex" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWey" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeWez" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVGh" resolve="rpm" />
+          <ref role="3Ug1Ha" node="I19PlZeVGh" />
           <node concept="3Ug1GJ" id="I19PlZeWk2" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWe_" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAc" resolve="rpm_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAc" />
           <node concept="3Ug1GJ" id="I19PlZeWeA" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWeB" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeWeC" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVGp" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="I19PlZeVGp" />
           <node concept="3Ug1GJ" id="I19PlZeWlp" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWeE" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAk" resolve="steeringAngle_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAk" />
           <node concept="3Ug1GJ" id="I19PlZeWeF" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWeG" role="3UgYNK">
         <node concept="3Ug1GC" id="I19PlZeWeH" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="I19PlZeVGt" resolve="informUser" />
+          <ref role="3Ug1Ha" node="I19PlZeVGt" />
           <node concept="3Ug1GJ" id="I19PlZeWlW" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
         <node concept="3Ug1GC" id="I19PlZeWeJ" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeVAo" resolve="informUser_in" />
+          <ref role="3Ug1Ha" node="I19PlZeVAo" />
           <node concept="3Ug1GJ" id="I19PlZeWeK" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeUcU" resolve="arbitration" />
+            <ref role="3Ug1GI" node="I19PlZeUcU" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWAT" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeWCY" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpP3q" resolve="speed" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpP3q" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXj6" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkj" resolve="egoSpeed" />
+          <ref role="3Ug1Ha" node="I19PlZeXkj" />
           <node concept="3Ug1GJ" id="I19PlZeXj5" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWFl" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeWHs" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeONn" resolve="acceleration" />
+          <ref role="3Ug1Ao" node="I19PlZeONn" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXpE" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkz" resolve="egoAcceleration" />
+          <ref role="3Ug1Ha" node="I19PlZeXkz" />
           <node concept="3Ug1GJ" id="I19PlZeXpD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWWX" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeWZc" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpI9Q" resolve="egoPosition" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpI9Q" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXqi" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkr" resolve="egoPosition" />
+          <ref role="3Ug1Ha" node="I19PlZeXkr" />
           <node concept="3Ug1GJ" id="I19PlZeXqh" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeX1x" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeX3M" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpHAi" resolve="envData" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpHAi" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXqU" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkp" resolve="envData" />
+          <ref role="3Ug1Ha" node="I19PlZeXkp" />
           <node concept="3Ug1GJ" id="I19PlZeXqT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeX69" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeX8s" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpHcX" resolve="infrData" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpHcX" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXrE" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkn" resolve="infrData" />
+          <ref role="3Ug1Ha" node="I19PlZeXkn" />
           <node concept="3Ug1GJ" id="I19PlZeXrD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWJD" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeWLM" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpOXF" resolve="cameraData" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpOXF" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXsV" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkx" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="I19PlZeXkx" />
           <node concept="3Ug1GJ" id="I19PlZeXsU" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWO1" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeWQc" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpOYS" resolve="objectList" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpOYS" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXtz" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkv" resolve="objectList" />
+          <ref role="3Ug1Ha" node="I19PlZeXkv" />
           <node concept="3Ug1GJ" id="I19PlZeXty" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeWSt" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeWUE" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpOXl" resolve="pointCloud" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpOXl" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXun" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXkt" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="I19PlZeXkt" />
           <node concept="3Ug1GJ" id="I19PlZeXum" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXf_" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfA" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpP3q" resolve="speed" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpP3q" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXzE" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXmk" resolve="speed" />
+          <ref role="3Ug1Ha" node="I19PlZeXmk" />
           <node concept="3Ug1GJ" id="I19PlZeXzD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXfB" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfC" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeONn" resolve="acceleration" />
+          <ref role="3Ug1Ao" node="I19PlZeONn" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeX$Z" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXm$" resolve="acceleration" />
+          <ref role="3Ug1Ha" node="I19PlZeXm$" />
           <node concept="3Ug1GJ" id="I19PlZeX$Y" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXfD" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfE" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpI9Q" resolve="egoPosition" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpI9Q" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeX_m" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXms" resolve="egoPosition" />
+          <ref role="3Ug1Ha" node="I19PlZeXms" />
           <node concept="3Ug1GJ" id="I19PlZeX_l" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXfF" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfG" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpHAi" resolve="envData" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpHAi" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeX_H" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXmq" resolve="envData" />
+          <ref role="3Ug1Ha" node="I19PlZeXmq" />
           <node concept="3Ug1GJ" id="I19PlZeX_G" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXfH" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfI" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpHcX" resolve="infrData" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpHcX" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXDc" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXmo" resolve="infrData" />
+          <ref role="3Ug1Ha" node="I19PlZeXmo" />
           <node concept="3Ug1GJ" id="I19PlZeXDb" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXfL" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfM" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpOXF" resolve="cameraData" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpOXF" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXDz" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXmy" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="I19PlZeXmy" />
           <node concept="3Ug1GJ" id="I19PlZeXDy" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXfN" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfO" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpOYS" resolve="objectList" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpOYS" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXDU" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXmw" resolve="objectList" />
+          <ref role="3Ug1Ha" node="I19PlZeXmw" />
           <node concept="3Ug1GJ" id="I19PlZeXDT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeXfP" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeXfQ" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpOXl" resolve="pointCloud" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpOXl" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeXEn" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXmu" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="I19PlZeXmu" />
           <node concept="3Ug1GJ" id="I19PlZeXEm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeY3J" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeY3K" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpGap" resolve="userCommands" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpGap" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeY3L" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeXYT" resolve="userCommands" />
+          <ref role="3Ug1Ha" node="I19PlZeXYT" />
           <node concept="3Ug1GJ" id="I19PlZeY3M" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="I19PlZeY7Y" role="3UgYNK">
         <node concept="3Ug1Ap" id="I19PlZeY7Z" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2Bdpt7mpGap" resolve="userCommands" />
+          <ref role="3Ug1Ao" node="2Bdpt7mpGap" />
         </node>
         <node concept="3Ug1GC" id="I19PlZeY80" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="I19PlZeY1y" resolve="userCommands" />
+          <ref role="3Ug1Ha" node="I19PlZeY1y" />
           <node concept="3Ug1GJ" id="I19PlZeY81" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvydI" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJvydJ" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvxH_" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvxH_" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvydK" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvxQU" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvxQU" />
           <node concept="3Ug1GJ" id="4O8jCOJvydL" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvyid" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJvyie" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvy0x" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvy0x" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvyif" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvxSr" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvxSr" />
           <node concept="3Ug1GJ" id="4O8jCOJvyig" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvB0M" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJvB0N" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvxH_" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvxH_" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvB0O" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvxUW" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvxUW" />
           <node concept="3Ug1GJ" id="4O8jCOJvB0P" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvB6B" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJvB6C" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvy0x" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvy0x" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvB6D" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvxXN" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvxXN" />
           <node concept="3Ug1GJ" id="4O8jCOJvB6E" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvBdx" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJvBdy" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvAOw" resolve="cameraUncertaintyLevel" />
+          <ref role="3Ug1Ao" node="4O8jCOJvAOw" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvBdz" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvBbX" resolve="cameraUncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvBbX" />
           <node concept="3Ug1GJ" id="4O8jCOJvBd$" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTm4" resolve="missionChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTm4" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvBkq" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJvBkr" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvAOw" resolve="cameraUncertaintyLevel" />
+          <ref role="3Ug1Ao" node="4O8jCOJvAOw" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvBks" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvBio" resolve="cameraUncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJvBio" />
           <node concept="3Ug1GJ" id="4O8jCOJvBkt" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="I19PlZeTo6" resolve="complementaryChannel" />
+            <ref role="3Ug1GI" node="I19PlZeTo6" />
           </node>
         </node>
       </node>
@@ -10783,7 +10783,7 @@
       <node concept="1s31WS" id="ZH03rPhRXr" role="1s31w6">
         <property role="TrG5h" value="position" />
         <node concept="1s31w3" id="55oVyA0mPbQ" role="1s31WO">
-          <ref role="1s31w2" node="55oVyA0mP5x" resolve="POSITION" />
+          <ref role="1s31w2" node="55oVyA0mP5x" />
         </node>
       </node>
       <node concept="1s31WS" id="ZH03rPhRXA" role="1s31w6">
@@ -10797,7 +10797,7 @@
       <node concept="1s31WS" id="ZH03rPhRY8" role="1s31w6">
         <property role="TrG5h" value="type" />
         <node concept="2XJXdx" id="ZH03rPhSe$" role="1s31WO">
-          <ref role="2XJXdw" node="ZH03rPhS9a" resolve="OBJECT_TYPE" />
+          <ref role="2XJXdw" node="ZH03rPhS9a" />
         </node>
       </node>
     </node>
@@ -10815,19 +10815,19 @@
       <node concept="1s31WS" id="5tEenuYOKgG" role="1s31w6">
         <property role="TrG5h" value="trackedObjects" />
         <node concept="1s31w3" id="55oVyA0mPS1" role="1s31WO">
-          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+          <ref role="1s31w2" node="ZH03rPhRSh" />
         </node>
       </node>
       <node concept="1s31WS" id="5tEenuYOKhe" role="1s31w6">
         <property role="TrG5h" value="predictedTrajectoriesTimeFrame1" />
         <node concept="1s31w3" id="55oVyA0mPUX" role="1s31WO">
-          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+          <ref role="1s31w2" node="ZH03rPhRSh" />
         </node>
       </node>
       <node concept="1s31WS" id="55oVyA0mPVw" role="1s31w6">
         <property role="TrG5h" value="predictedTrajectoriesTimeFrame2" />
         <node concept="1s31w3" id="55oVyA0mPVx" role="1s31WO">
-          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+          <ref role="1s31w2" node="ZH03rPhRSh" />
         </node>
       </node>
     </node>
@@ -10837,7 +10837,7 @@
       <node concept="3UnI9n" id="4O8jCOJvzX7" role="3UnI90">
         <property role="TrG5h" value="fusedMediumRangeObjectList" />
         <node concept="1s31w3" id="4O8jCOJvzYc" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI9n" id="4O8jCOJvzYx" role="3UnI90">
@@ -10847,7 +10847,7 @@
       <node concept="3UnI81" id="4O8jCOJvzWz" role="3UnI9m">
         <property role="TrG5h" value="pointCloud" />
         <node concept="1s31w3" id="4O8jCOJvzW$" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvzW_" role="3UnI9m">
@@ -10857,7 +10857,7 @@
       <node concept="3UnI81" id="4O8jCOJvzWB" role="3UnI9m">
         <property role="TrG5h" value="objectList" />
         <node concept="1s31w3" id="4O8jCOJvzWC" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvzWD" role="3UnI9m">
@@ -10871,7 +10871,7 @@
       <node concept="3UnI9n" id="4O8jCOJv_kj" role="3UnI90">
         <property role="TrG5h" value="fusedShortRangeObjectList" />
         <node concept="1s31w3" id="4O8jCOJv_kk" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI9n" id="4O8jCOJv_yb" role="3UnI90">
@@ -10881,7 +10881,7 @@
       <node concept="3UnI81" id="4O8jCOJv_ka" role="3UnI9m">
         <property role="TrG5h" value="cameraData" />
         <node concept="1s31w3" id="4O8jCOJv_kb" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJv_wl" role="3UnI9m">
@@ -10891,7 +10891,7 @@
       <node concept="3UnI81" id="4O8jCOJv_xl" role="3UnI9m">
         <property role="TrG5h" value="pointCloud" />
         <node concept="1s31w3" id="4O8jCOJv_xm" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJv_xn" role="3UnI9m">
@@ -10901,7 +10901,7 @@
       <node concept="3UnI81" id="4O8jCOJv_xp" role="3UnI9m">
         <property role="TrG5h" value="objectList" />
         <node concept="1s31w3" id="4O8jCOJv_xq" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJv_xr" role="3UnI9m">
@@ -10915,13 +10915,13 @@
       <node concept="3UnI9n" id="ZH03rPhRrl" role="3UnI90">
         <property role="TrG5h" value="trackedObjects" />
         <node concept="1s31w3" id="ZH03rPhStW" role="3UnI80">
-          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+          <ref role="1s31w2" node="ZH03rPhRSh" />
         </node>
       </node>
       <node concept="3UnI81" id="ZH03rPhRpj" role="3UnI9m">
         <property role="TrG5h" value="longRangePointCloud" />
         <node concept="1s31w3" id="ZH03rPhRpk" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
       </node>
       <node concept="3UnI81" id="ZH03rPhRpl" role="3UnI9m">
@@ -10931,7 +10931,7 @@
       <node concept="3UnI81" id="ZH03rPhRqc" role="3UnI9m">
         <property role="TrG5h" value="fusedMediumRangeObjectList" />
         <node concept="1s31w3" id="ZH03rPhRqd" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="ZH03rPhRqe" role="3UnI9m">
@@ -10941,7 +10941,7 @@
       <node concept="3UnI81" id="ZH03rPhRqB" role="3UnI9m">
         <property role="TrG5h" value="fusedShortRangeObjectList" />
         <node concept="1s31w3" id="ZH03rPhRqC" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="ZH03rPhRqD" role="3UnI9m">
@@ -10951,13 +10951,13 @@
       <node concept="3UnI81" id="jTtg7cq1jr" role="3UnI9m">
         <property role="TrG5h" value="infrData" />
         <node concept="1s31w3" id="jTtg7cq1js" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpGMw" resolve="INFRASTRUCTURE_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpGMw" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq1jt" role="3UnI9m">
         <property role="TrG5h" value="envData" />
         <node concept="1s31w3" id="jTtg7cq1ju" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpHjx" resolve="ENVIRONMENT_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpHjx" />
         </node>
       </node>
     </node>
@@ -10967,13 +10967,13 @@
       <node concept="3UnI9n" id="55oVyA0mPrk" role="3UnI90">
         <property role="TrG5h" value="predictedObjects" />
         <node concept="1s31w3" id="55oVyA0mPSl" role="3UnI80">
-          <ref role="1s31w2" node="55oVyA0mPLA" resolve="OBJECTS_PREDICTION" />
+          <ref role="1s31w2" node="55oVyA0mPLA" />
         </node>
       </node>
       <node concept="3UnI81" id="ZH03rPhSu4" role="3UnI9m">
         <property role="TrG5h" value="trackedObjects" />
         <node concept="1s31w3" id="ZH03rPhSu5" role="3UnI80">
-          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+          <ref role="1s31w2" node="ZH03rPhRSh" />
         </node>
       </node>
     </node>
@@ -10983,13 +10983,13 @@
       <node concept="3UnI9n" id="jTtg7cq5Rc" role="3UnI90">
         <property role="TrG5h" value="plannedTrajectories" />
         <node concept="1s31w3" id="jTtg7cq5Rd" role="3UnI80">
-          <ref role="1s31w2" node="41_NtXJuHGi" resolve="TRAJECTORIES_LIST" />
+          <ref role="1s31w2" node="41_NtXJuHGi" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq2tq" role="3UnI9m">
         <property role="TrG5h" value="egoAcceleration" />
         <node concept="1s31w3" id="jTtg7cq2tr" role="3UnI80">
-          <ref role="1s31w2" node="I19PlZeOze" resolve="ACCELERATION" />
+          <ref role="1s31w2" node="I19PlZeOze" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq2tO" role="3UnI9m">
@@ -11006,13 +11006,13 @@
       <node concept="3UnI81" id="jTtg7cq2uG" role="3UnI9m">
         <property role="TrG5h" value="egoPosition" />
         <node concept="1s31w3" id="jTtg7cq2uH" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpI1O" resolve="GPS_COORDINATES" />
+          <ref role="1s31w2" node="2Bdpt7mpI1O" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq5UX" role="3UnI9m">
         <property role="TrG5h" value="predictedObjects" />
         <node concept="1s31w3" id="jTtg7cq5UY" role="3UnI80">
-          <ref role="1s31w2" node="55oVyA0mPLA" resolve="OBJECTS_PREDICTION" />
+          <ref role="1s31w2" node="55oVyA0mPLA" />
         </node>
       </node>
     </node>
@@ -11022,19 +11022,19 @@
       <node concept="3UnI81" id="jTtg7cq5PO" role="3UnI9m">
         <property role="TrG5h" value="plannedTrajectories" />
         <node concept="1s31w3" id="jTtg7cq5PP" role="3UnI80">
-          <ref role="1s31w2" node="41_NtXJuHGi" resolve="TRAJECTORIES_LIST" />
+          <ref role="1s31w2" node="41_NtXJuHGi" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq2RZ" role="3UnI9m">
         <property role="TrG5h" value="userCommands" />
         <node concept="1s31w3" id="jTtg7cq2S0" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn89N" resolve="HMI_DATA" />
+          <ref role="1s31w2" node="2vEFX4zn89N" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq7Pl" role="3UnI9m">
         <property role="TrG5h" value="safeTrajectory" />
         <node concept="1s31w3" id="jTtg7cq7Pm" role="3UnI80">
-          <ref role="1s31w2" node="jTtg7cq6rQ" resolve="TRAJECTORY" />
+          <ref role="1s31w2" node="jTtg7cq6rQ" />
         </node>
       </node>
       <node concept="3UnI9n" id="jTtg7cq2RE" role="3UnI90">
@@ -11044,13 +11044,13 @@
       <node concept="3UnI9n" id="jTtg7cq2RG" role="3UnI90">
         <property role="TrG5h" value="informUser" />
         <node concept="1s31w3" id="jTtg7cq2RH" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+          <ref role="1s31w2" node="2vEFX4zn8lH" />
         </node>
       </node>
       <node concept="3UnI9n" id="jTtg7cq6zY" role="3UnI90">
         <property role="TrG5h" value="chosenTrajectory" />
         <node concept="1s31w3" id="jTtg7cq6$V" role="3UnI80">
-          <ref role="1s31w2" node="jTtg7cq6rQ" resolve="TRAJECTORY" />
+          <ref role="1s31w2" node="jTtg7cq6rQ" />
         </node>
       </node>
     </node>
@@ -11060,19 +11060,19 @@
       <node concept="3UnI9n" id="jTtg7cq7AS" role="3UnI90">
         <property role="TrG5h" value="safeTrajectory" />
         <node concept="1s31w3" id="jTtg7cq7Bf" role="3UnI80">
-          <ref role="1s31w2" node="jTtg7cq6rQ" resolve="TRAJECTORY" />
+          <ref role="1s31w2" node="jTtg7cq6rQ" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq7Aw" role="3UnI9m">
         <property role="TrG5h" value="trackedObjects" />
         <node concept="1s31w3" id="jTtg7cq7OJ" role="3UnI80">
-          <ref role="1s31w2" node="ZH03rPhRSh" resolve="TRACKED_OBJECTS" />
+          <ref role="1s31w2" node="ZH03rPhRSh" />
         </node>
       </node>
       <node concept="3UnI81" id="jTtg7cq8ft" role="3UnI9m">
         <property role="TrG5h" value="envData" />
         <node concept="1s31w3" id="jTtg7cq8fu" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpHjx" resolve="ENVIRONMENT_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpHjx" />
         </node>
       </node>
     </node>
@@ -11093,25 +11093,25 @@
       <node concept="3UnI81" id="I19PlZeXkn" role="3UnI9m">
         <property role="TrG5h" value="infrData" />
         <node concept="1s31w3" id="I19PlZeXko" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpGMw" resolve="INFRASTRUCTURE_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpGMw" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeXkp" role="3UnI9m">
         <property role="TrG5h" value="envData" />
         <node concept="1s31w3" id="I19PlZeXkq" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpHjx" resolve="ENVIRONMENT_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpHjx" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeXkr" role="3UnI9m">
         <property role="TrG5h" value="egoPosition" />
         <node concept="1s31w3" id="I19PlZeXks" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpI1O" resolve="GPS_COORDINATES" />
+          <ref role="1s31w2" node="2Bdpt7mpI1O" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeXkt" role="3UnI9m">
         <property role="TrG5h" value="pointCloud" />
         <node concept="1s31w3" id="I19PlZeXku" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpII2" resolve="POINT_CLOUD" />
+          <ref role="1s31w2" node="2Bdpt7mpII2" />
         </node>
         <node concept="0Sh09" id="ZH03rPhKSQ" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhKT9" role="hnKMk">
@@ -11126,7 +11126,7 @@
       <node concept="3UnI81" id="I19PlZeXkv" role="3UnI9m">
         <property role="TrG5h" value="objectList" />
         <node concept="1s31w3" id="I19PlZeXkw" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOqk" resolve="OBJECT_LIST" />
+          <ref role="1s31w2" node="2Bdpt7mpOqk" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvxXN" role="3UnI9m">
@@ -11136,7 +11136,7 @@
       <node concept="3UnI81" id="I19PlZeXkx" role="3UnI9m">
         <property role="TrG5h" value="cameraData" />
         <node concept="1s31w3" id="I19PlZeXky" role="3UnI80">
-          <ref role="1s31w2" node="2Bdpt7mpOG5" resolve="CAMERA_DATA" />
+          <ref role="1s31w2" node="2Bdpt7mpOG5" />
         </node>
       </node>
       <node concept="3UnI81" id="4O8jCOJvBbX" role="3UnI9m">
@@ -11146,13 +11146,13 @@
       <node concept="3UnI81" id="I19PlZeXkz" role="3UnI9m">
         <property role="TrG5h" value="egoAcceleration" />
         <node concept="1s31w3" id="I19PlZeXk$" role="3UnI80">
-          <ref role="1s31w2" node="I19PlZeOze" resolve="ACCELERATION" />
+          <ref role="1s31w2" node="I19PlZeOze" />
         </node>
       </node>
       <node concept="3UnI81" id="I19PlZeXYT" role="3UnI9m">
         <property role="TrG5h" value="userCommands" />
         <node concept="1s31w3" id="I19PlZeXYU" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn89N" resolve="HMI_DATA" />
+          <ref role="1s31w2" node="2vEFX4zn89N" />
         </node>
       </node>
       <node concept="3UnI9n" id="I19PlZeVEK" role="3UnI90">
@@ -11185,7 +11185,7 @@
       <node concept="3UnI9n" id="I19PlZeVEW" role="3UnI90">
         <property role="TrG5h" value="informUser" />
         <node concept="1s31w3" id="I19PlZeVEX" role="3UnI80">
-          <ref role="1s31w2" node="2vEFX4zn8lH" resolve="IHS_STATUS" />
+          <ref role="1s31w2" node="2vEFX4zn8lH" />
         </node>
       </node>
       <node concept="37mRI7" id="I19PlZeVHN" role="lGtFl">
@@ -12076,7 +12076,7 @@
       <node concept="3Ug1AV" id="4O8jCOJv_yY" role="3UgYNK">
         <property role="TrG5h" value="mediumRangeSensing" />
         <node concept="3Ug1AZ" id="4O8jCOJv_yZ" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4O8jCOJvzwr" resolve="MediumRangeSensingVoter" />
+          <ref role="3Ug1AY" node="4O8jCOJvzwr" />
         </node>
         <node concept="0Sh09" id="ZH03rPhKRd" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhKRq" role="hnKMk">
@@ -12086,52 +12086,52 @@
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_Ag" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_Ah" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkt" resolve="pointCloud" />
+          <ref role="3Ug1Ao" node="I19PlZeXkt" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_Ai" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvzWz" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="4O8jCOJvzWz" />
           <node concept="3Ug1GJ" id="4O8jCOJv_Aj" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_yY" resolve="mediumRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_yY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_B_" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_BA" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvxUW" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvxUW" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_BB" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvzW_" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvzW_" />
           <node concept="3Ug1GJ" id="4O8jCOJv_BC" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_yY" resolve="mediumRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_yY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_CY" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_CZ" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvxXN" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvxXN" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_D0" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvzWD" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvzWD" />
           <node concept="3Ug1GJ" id="4O8jCOJv_D1" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_yY" resolve="mediumRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_yY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_Er" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_Es" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkv" resolve="objectList" />
+          <ref role="3Ug1Ao" node="I19PlZeXkv" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_Et" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJvzWB" resolve="objectList" />
+          <ref role="3Ug1Ha" node="4O8jCOJvzWB" />
           <node concept="3Ug1GJ" id="4O8jCOJv_Eu" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_yY" resolve="mediumRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_yY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="4O8jCOJv_Lo" role="3UgYNK">
         <property role="TrG5h" value="shortRangeSensing" />
         <node concept="3Ug1AZ" id="4O8jCOJv_Lp" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4O8jCOJv$RO" resolve="ShortRangeSensingVoter" />
+          <ref role="3Ug1AY" node="4O8jCOJv$RO" />
         </node>
         <node concept="0Sh09" id="ZH03rPhKRB" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhKRS" role="hnKMk">
@@ -12141,408 +12141,408 @@
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_Pj" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_Pk" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkx" resolve="cameraData" />
+          <ref role="3Ug1Ao" node="I19PlZeXkx" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_Pl" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_ka" resolve="cameraData" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_ka" />
           <node concept="3Ug1GJ" id="4O8jCOJv_Pm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_Sw" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_Sx" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkt" resolve="pointCloud" />
+          <ref role="3Ug1Ao" node="I19PlZeXkt" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_Sy" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_xl" resolve="pointCloud" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_xl" />
           <node concept="3Ug1GJ" id="4O8jCOJv_Sz" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_Ub" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_Uc" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvxUW" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvxUW" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_Ud" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_xn" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_xn" />
           <node concept="3Ug1GJ" id="4O8jCOJv_Ue" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_VU" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_VV" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkv" resolve="objectList" />
+          <ref role="3Ug1Ao" node="I19PlZeXkv" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_VW" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_xp" resolve="objectList" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_xp" />
           <node concept="3Ug1GJ" id="4O8jCOJv_VX" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJv_YL" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJv_YM" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvxXN" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvxXN" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJv_YN" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_xr" resolve="radarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_xr" />
           <node concept="3Ug1GJ" id="4O8jCOJv_YO" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4O8jCOJvB_K" role="3UgYNK">
         <node concept="3Ug1Ap" id="4O8jCOJvB_L" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvBbX" resolve="cameraUncertaintyLevel" />
+          <ref role="3Ug1Ao" node="4O8jCOJvBbX" />
         </node>
         <node concept="3Ug1GC" id="4O8jCOJvB_M" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4O8jCOJv_wl" resolve="cameraUncertaintyLevel" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_wl" />
           <node concept="3Ug1GJ" id="4O8jCOJvB_N" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="ZH03rPhRc3" role="3UgYNK">
         <property role="TrG5h" value="perception" />
         <node concept="3Ug1AZ" id="ZH03rPhRc1" role="3Ug1A_">
-          <ref role="3Ug1AY" node="ZH03rPhPYk" resolve="Perception" />
+          <ref role="3Ug1AY" node="ZH03rPhPYk" />
         </node>
       </node>
       <node concept="3Ug1AV" id="ZH03rPhRfC" role="3UgYNK">
         <property role="TrG5h" value="prediction" />
         <node concept="3Ug1AZ" id="ZH03rPhRfA" role="3Ug1A_">
-          <ref role="3Ug1AY" node="ZH03rPhQ9s" resolve="Prediction" />
+          <ref role="3Ug1AY" node="ZH03rPhQ9s" />
         </node>
       </node>
       <node concept="3Ug1AV" id="ZH03rPhRdP" role="3UgYNK">
         <property role="TrG5h" value="planning" />
         <node concept="3Ug1AZ" id="ZH03rPhRdN" role="3Ug1A_">
-          <ref role="3Ug1AY" node="ZH03rPhQkE" resolve="Planning" />
+          <ref role="3Ug1AY" node="ZH03rPhQkE" />
         </node>
       </node>
       <node concept="3Ug1$w" id="ZH03rPhRrU" role="3UgYNK">
         <node concept="3Ug1Ap" id="ZH03rPhRrV" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4O8jCOJvxUW" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ao" node="4O8jCOJvxUW" />
         </node>
         <node concept="3Ug1GC" id="ZH03rPhRrW" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="ZH03rPhRpl" resolve="lidarUncertaintyMap" />
+          <ref role="3Ug1Ha" node="ZH03rPhRpl" />
           <node concept="3Ug1GJ" id="ZH03rPhRrX" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="ZH03rPhRt$" role="3UgYNK">
         <node concept="3Ug1Ap" id="ZH03rPhRt_" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkt" resolve="pointCloud" />
+          <ref role="3Ug1Ao" node="I19PlZeXkt" />
         </node>
         <node concept="3Ug1GC" id="ZH03rPhRtA" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="ZH03rPhRpj" resolve="longRangePointCloud" />
+          <ref role="3Ug1Ha" node="ZH03rPhRpj" />
           <node concept="3Ug1GJ" id="ZH03rPhRtB" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="ZH03rPhRvi" role="3UgYNK">
         <node concept="3Ug1GC" id="ZH03rPhRvj" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvzX7" resolve="fusedMediumRangeObjectList" />
+          <ref role="3Ug1Ha" node="4O8jCOJvzX7" />
           <node concept="3Ug1GJ" id="ZH03rPhRvk" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_yY" resolve="mediumRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_yY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="ZH03rPhRvl" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="ZH03rPhRqc" resolve="fusedMediumRangeObjectList" />
+          <ref role="3Ug1Ha" node="ZH03rPhRqc" />
           <node concept="3Ug1GJ" id="ZH03rPhRvm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="ZH03rPhRx8" role="3UgYNK">
         <node concept="3Ug1GC" id="ZH03rPhRx9" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJv_kj" resolve="fusedShortRangeObjectList" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_kj" />
           <node concept="3Ug1GJ" id="ZH03rPhRxa" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
         <node concept="3Ug1GC" id="ZH03rPhRxb" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="ZH03rPhRqB" resolve="fusedShortRangeObjectList" />
+          <ref role="3Ug1Ha" node="ZH03rPhRqB" />
           <node concept="3Ug1GJ" id="ZH03rPhRxc" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="ZH03rPhRzA" role="3UgYNK">
         <node concept="3Ug1GC" id="ZH03rPhRzB" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJvzYx" resolve="uncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJvzYx" />
           <node concept="3Ug1GJ" id="ZH03rPhRzC" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_yY" resolve="mediumRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_yY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="ZH03rPhRzD" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="ZH03rPhRqe" resolve="mediumRangeUncertaintyMap" />
+          <ref role="3Ug1Ha" node="ZH03rPhRqe" />
           <node concept="3Ug1GJ" id="ZH03rPhRzE" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="ZH03rPhR_A" role="3UgYNK">
         <node concept="3Ug1GC" id="ZH03rPhR_B" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4O8jCOJv_yb" resolve="uncertaintyMap" />
+          <ref role="3Ug1Ha" node="4O8jCOJv_yb" />
           <node concept="3Ug1GJ" id="ZH03rPhR_C" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="4O8jCOJv_Lo" resolve="shortRangeSensing" />
+            <ref role="3Ug1GI" node="4O8jCOJv_Lo" />
           </node>
         </node>
         <node concept="3Ug1GC" id="ZH03rPhR_D" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="ZH03rPhRqD" resolve="shortRangeUncertaintyMap" />
+          <ref role="3Ug1Ha" node="ZH03rPhRqD" />
           <node concept="3Ug1GJ" id="ZH03rPhR_E" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="55oVyA0mPcf" role="3UgYNK">
         <node concept="3Ug1GC" id="55oVyA0mPcg" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="ZH03rPhRrl" resolve="trackedObjects" />
+          <ref role="3Ug1Ha" node="ZH03rPhRrl" />
           <node concept="3Ug1GJ" id="55oVyA0mPch" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
         <node concept="3Ug1GC" id="55oVyA0mPci" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="ZH03rPhSu4" resolve="trackedObjects" />
+          <ref role="3Ug1Ha" node="ZH03rPhSu4" />
           <node concept="3Ug1GJ" id="55oVyA0mPcj" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRfC" resolve="prediction" />
+            <ref role="3Ug1GI" node="ZH03rPhRfC" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq1lh" role="3UgYNK">
         <node concept="3Ug1Ap" id="jTtg7cq1li" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkn" resolve="infrData" />
+          <ref role="3Ug1Ao" node="I19PlZeXkn" />
         </node>
         <node concept="3Ug1GC" id="jTtg7cq1lj" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq1jr" resolve="infrData" />
+          <ref role="3Ug1Ha" node="jTtg7cq1jr" />
           <node concept="3Ug1GJ" id="jTtg7cq1lk" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq1ns" role="3UgYNK">
         <node concept="3Ug1Ap" id="jTtg7cq1nt" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkp" resolve="envData" />
+          <ref role="3Ug1Ao" node="I19PlZeXkp" />
         </node>
         <node concept="3Ug1GC" id="jTtg7cq1nu" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq1jt" resolve="envData" />
+          <ref role="3Ug1Ha" node="jTtg7cq1jt" />
           <node concept="3Ug1GJ" id="jTtg7cq1nv" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="jTtg7cq1C1" role="3UgYNK">
         <property role="TrG5h" value="motionControl" />
         <node concept="3Ug1AZ" id="jTtg7cq7bv" role="3Ug1A_">
-          <ref role="3Ug1AY" node="jTtg7cq6Xs" resolve="AutomatedMotionControl" />
+          <ref role="3Ug1AY" node="jTtg7cq6Xs" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq1Ed" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq1Ee" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_4" resolve="rpm" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_4" />
           <node concept="3Ug1GJ" id="jTtg7cq1Ef" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq1C1" resolve="motionControl" />
+            <ref role="3Ug1GI" node="jTtg7cq1C1" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="jTtg7cq1Eg" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="I19PlZeVEK" resolve="rpm" />
+          <ref role="3Ug1Ao" node="I19PlZeVEK" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq1KB" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq1KC" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_8" resolve="brakingForce" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_8" />
           <node concept="3Ug1GJ" id="jTtg7cq1KD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq1C1" resolve="motionControl" />
+            <ref role="3Ug1GI" node="jTtg7cq1C1" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="jTtg7cq1KE" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="I19PlZeVEO" resolve="brakingForce" />
+          <ref role="3Ug1Ao" node="I19PlZeVEO" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq1N5" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq1N6" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_a" resolve="desiredGear" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_a" />
           <node concept="3Ug1GJ" id="jTtg7cq1N7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq1C1" resolve="motionControl" />
+            <ref role="3Ug1GI" node="jTtg7cq1C1" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="jTtg7cq1N8" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="I19PlZeVEQ" resolve="desiredGear" />
+          <ref role="3Ug1Ao" node="I19PlZeVEQ" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq1PB" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq1PC" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2Bdpt7mpI_c" resolve="steeringAngle" />
+          <ref role="3Ug1Ha" node="2Bdpt7mpI_c" />
           <node concept="3Ug1GJ" id="jTtg7cq1PD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq1C1" resolve="motionControl" />
+            <ref role="3Ug1GI" node="jTtg7cq1C1" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="jTtg7cq1PE" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="I19PlZeVES" resolve="steeringAngle" />
+          <ref role="3Ug1Ao" node="I19PlZeVES" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq2vb" role="3UgYNK">
         <node concept="3Ug1Ap" id="jTtg7cq2vc" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkr" resolve="egoPosition" />
+          <ref role="3Ug1Ao" node="I19PlZeXkr" />
         </node>
         <node concept="3Ug1GC" id="jTtg7cq2vd" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq2uG" resolve="egoPosition" />
+          <ref role="3Ug1Ha" node="jTtg7cq2uG" />
           <node concept="3Ug1GJ" id="jTtg7cq2ve" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRdP" resolve="planning" />
+            <ref role="3Ug1GI" node="ZH03rPhRdP" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq2xK" role="3UgYNK">
         <node concept="3Ug1Ap" id="jTtg7cq2xL" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkj" resolve="egoSpeed" />
+          <ref role="3Ug1Ao" node="I19PlZeXkj" />
         </node>
         <node concept="3Ug1GC" id="jTtg7cq2xM" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq2tO" resolve="egoSpeed" />
+          <ref role="3Ug1Ha" node="jTtg7cq2tO" />
           <node concept="3Ug1GJ" id="jTtg7cq2xN" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRdP" resolve="planning" />
+            <ref role="3Ug1GI" node="ZH03rPhRdP" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq2At" role="3UgYNK">
         <node concept="3Ug1Ap" id="jTtg7cq2Au" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkz" resolve="egoAcceleration" />
+          <ref role="3Ug1Ao" node="I19PlZeXkz" />
         </node>
         <node concept="3Ug1GC" id="jTtg7cq2Av" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq2tq" resolve="egoAcceleration" />
+          <ref role="3Ug1Ha" node="jTtg7cq2tq" />
           <node concept="3Ug1GJ" id="jTtg7cq2Aw" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRdP" resolve="planning" />
+            <ref role="3Ug1GI" node="ZH03rPhRdP" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="jTtg7cq2Il" role="3UgYNK">
         <property role="TrG5h" value="decisionMaking" />
         <node concept="3Ug1AZ" id="jTtg7cq2Im" role="3Ug1A_">
-          <ref role="3Ug1AY" node="jTtg7cq2df" resolve="DecisionMaking" />
+          <ref role="3Ug1AY" node="jTtg7cq2df" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq2Z5" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq2Z6" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="jTtg7cq2RE" resolve="disableDriverControl" />
+          <ref role="3Ug1Ha" node="jTtg7cq2RE" />
           <node concept="3Ug1GJ" id="jTtg7cq2Z7" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq2Il" resolve="decisionMaking" />
+            <ref role="3Ug1GI" node="jTtg7cq2Il" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="jTtg7cq2Z8" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="I19PlZeVEU" resolve="disableDriverControl" />
+          <ref role="3Ug1Ao" node="I19PlZeVEU" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq31S" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq31T" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="jTtg7cq2RG" resolve="informUser" />
+          <ref role="3Ug1Ha" node="jTtg7cq2RG" />
           <node concept="3Ug1GJ" id="jTtg7cq31U" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq2Il" resolve="decisionMaking" />
+            <ref role="3Ug1GI" node="jTtg7cq2Il" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="jTtg7cq31V" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="I19PlZeVEW" resolve="informUser" />
+          <ref role="3Ug1Ao" node="I19PlZeVEW" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq34J" role="3UgYNK">
         <node concept="3Ug1Ap" id="jTtg7cq34K" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXYT" resolve="userCommands" />
+          <ref role="3Ug1Ao" node="I19PlZeXYT" />
         </node>
         <node concept="3Ug1GC" id="jTtg7cq34L" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq2RZ" resolve="userCommands" />
+          <ref role="3Ug1Ha" node="jTtg7cq2RZ" />
           <node concept="3Ug1GJ" id="jTtg7cq34M" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq2Il" resolve="decisionMaking" />
+            <ref role="3Ug1GI" node="jTtg7cq2Il" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq5Ru" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq5Rv" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="jTtg7cq5Rc" resolve="plannedTrajectories" />
+          <ref role="3Ug1Ha" node="jTtg7cq5Rc" />
           <node concept="3Ug1GJ" id="jTtg7cq5Rw" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRdP" resolve="planning" />
+            <ref role="3Ug1GI" node="ZH03rPhRdP" />
           </node>
         </node>
         <node concept="3Ug1GC" id="jTtg7cq5Rx" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq5PO" resolve="plannedTrajectories" />
+          <ref role="3Ug1Ha" node="jTtg7cq5PO" />
           <node concept="3Ug1GJ" id="jTtg7cq5Ry" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq2Il" resolve="decisionMaking" />
+            <ref role="3Ug1GI" node="jTtg7cq2Il" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq5Wk" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq5Wl" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="55oVyA0mPrk" resolve="predictedObjects" />
+          <ref role="3Ug1Ha" node="55oVyA0mPrk" />
           <node concept="3Ug1GJ" id="jTtg7cq5Wm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRfC" resolve="prediction" />
+            <ref role="3Ug1GI" node="ZH03rPhRfC" />
           </node>
         </node>
         <node concept="3Ug1GC" id="jTtg7cq5Wn" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq5UX" resolve="predictedObjects" />
+          <ref role="3Ug1Ha" node="jTtg7cq5UX" />
           <node concept="3Ug1GJ" id="jTtg7cq5Wo" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRdP" resolve="planning" />
+            <ref role="3Ug1GI" node="ZH03rPhRdP" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq7bH" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq7bI" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="jTtg7cq6zY" resolve="chosenTrajectory" />
+          <ref role="3Ug1Ha" node="jTtg7cq6zY" />
           <node concept="3Ug1GJ" id="jTtg7cq7bJ" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq2Il" resolve="decisionMaking" />
+            <ref role="3Ug1GI" node="jTtg7cq2Il" />
           </node>
         </node>
         <node concept="3Ug1GC" id="jTtg7cq7bK" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq7a9" resolve="trajectory" />
+          <ref role="3Ug1Ha" node="jTtg7cq7a9" />
           <node concept="3Ug1GJ" id="jTtg7cq7bL" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq1C1" resolve="motionControl" />
+            <ref role="3Ug1GI" node="jTtg7cq1C1" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="jTtg7cq7Bn" role="3UgYNK">
         <property role="TrG5h" value="safetyMonitor" />
         <node concept="3Ug1AZ" id="jTtg7cq7Bo" role="3Ug1A_">
-          <ref role="3Ug1AY" node="jTtg7cq7u9" resolve="SafetyMonitor" />
+          <ref role="3Ug1AY" node="jTtg7cq7u9" />
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq7Q4" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq7Q5" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="jTtg7cq7AS" resolve="safeTrajectory" />
+          <ref role="3Ug1Ha" node="jTtg7cq7AS" />
           <node concept="3Ug1GJ" id="jTtg7cq7Q6" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq7Bn" resolve="safetyMonitor" />
+            <ref role="3Ug1GI" node="jTtg7cq7Bn" />
           </node>
         </node>
         <node concept="3Ug1GC" id="jTtg7cq7Q7" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq7Pl" resolve="safeTrajectory" />
+          <ref role="3Ug1Ha" node="jTtg7cq7Pl" />
           <node concept="3Ug1GJ" id="jTtg7cq7Q8" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq2Il" resolve="decisionMaking" />
+            <ref role="3Ug1GI" node="jTtg7cq2Il" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq844" role="3UgYNK">
         <node concept="3Ug1GC" id="jTtg7cq845" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="ZH03rPhRrl" resolve="trackedObjects" />
+          <ref role="3Ug1Ha" node="ZH03rPhRrl" />
           <node concept="3Ug1GJ" id="jTtg7cq846" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="ZH03rPhRc3" resolve="perception" />
+            <ref role="3Ug1GI" node="ZH03rPhRc3" />
           </node>
         </node>
         <node concept="3Ug1GC" id="jTtg7cq847" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq7Aw" resolve="trackedObjects" />
+          <ref role="3Ug1Ha" node="jTtg7cq7Aw" />
           <node concept="3Ug1GJ" id="jTtg7cq848" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq7Bn" resolve="safetyMonitor" />
+            <ref role="3Ug1GI" node="jTtg7cq7Bn" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="jTtg7cq8pk" role="3UgYNK">
         <node concept="3Ug1Ap" id="jTtg7cq8sb" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="I19PlZeXkp" resolve="envData" />
+          <ref role="3Ug1Ao" node="I19PlZeXkp" />
         </node>
         <node concept="3Ug1GC" id="jTtg7cq8sh" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="jTtg7cq8ft" resolve="envData" />
+          <ref role="3Ug1Ha" node="jTtg7cq8ft" />
           <node concept="3Ug1GJ" id="jTtg7cq8sg" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="jTtg7cq7Bn" resolve="safetyMonitor" />
+            <ref role="3Ug1GI" node="jTtg7cq7Bn" />
           </node>
         </node>
       </node>

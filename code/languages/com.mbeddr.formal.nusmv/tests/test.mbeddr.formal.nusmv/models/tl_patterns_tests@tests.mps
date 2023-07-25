@@ -2,7 +2,7 @@
 <model ref="r:1904c7e6-c57f-4a98-b862-a31e763953a3(test.mbeddr.formal.nusmv.tl_patterns_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -33,6 +33,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -221,6 +222,7 @@
   <node concept="1lH9Xt" id="1gJVC85Lt8Y">
     <property role="TrG5h" value="_010_absence" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1gJVC85Lt8Z" role="1SL9yI">
       <property role="TrG5h" value="test_absence_globally" />
       <node concept="3cqZAl" id="1gJVC85Lt90" role="3clF45" />
@@ -1334,6 +1336,7 @@
   <node concept="1lH9Xt" id="6hWVnwAmh_d">
     <property role="TrG5h" value="_020_universality" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6hWVnwAmh_e" role="1SL9yI">
       <property role="TrG5h" value="test_universality_globally" />
       <node concept="3cqZAl" id="6hWVnwAmh_f" role="3clF45" />
@@ -2038,6 +2041,7 @@
   <node concept="1lH9Xt" id="6hWVnwAn9f8">
     <property role="TrG5h" value="_030_existence" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6hWVnwAn9f9" role="1SL9yI">
       <property role="TrG5h" value="test_existence_globally" />
       <node concept="3cqZAl" id="6hWVnwAn9fa" role="3clF45" />

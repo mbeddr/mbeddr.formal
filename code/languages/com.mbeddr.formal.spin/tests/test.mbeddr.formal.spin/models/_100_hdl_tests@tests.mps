@@ -2,7 +2,7 @@
 <model ref="r:96d54a87-c488-4215-8b07-40ab3514f40a(test.mbeddr.formal.spin._100_hdl_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -32,6 +32,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -208,6 +209,7 @@
   <node concept="1lH9Xt" id="1ZejHLm7kEg">
     <property role="TrG5h" value="_010_nondets" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1ZejHLm7kEh" role="1SL9yI">
       <property role="TrG5h" value="test_010_nondets_discrete_values" />
       <node concept="3cqZAl" id="1ZejHLm7kEj" role="3clF45" />
@@ -605,6 +607,7 @@
   <node concept="1lH9Xt" id="1vcsY83fhN7">
     <property role="TrG5h" value="_020_assume" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1vcsY83fhN8" role="1SL9yI">
       <property role="TrG5h" value="test_010_assume_smoke" />
       <node concept="3cqZAl" id="1vcsY83fhN9" role="3clF45" />
@@ -823,6 +826,7 @@
   <node concept="1lH9Xt" id="7M$OvLQdrxU">
     <property role="TrG5h" value="_030_multistep" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7M$OvLQdrxV" role="1SL9yI">
       <property role="TrG5h" value="test_030_multistep_smoke" />
       <node concept="3cqZAl" id="7M$OvLQdrxW" role="3clF45" />
@@ -1052,6 +1056,7 @@
   <node concept="1lH9Xt" id="2kmJJKRTPjK">
     <property role="TrG5h" value="_000_loggers" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="2kmJJKRTPjL" role="1SL9yI">
       <property role="TrG5h" value="test_000_logger_smoke" />
       <node concept="3cqZAl" id="2kmJJKRTPjM" role="3clF45" />
@@ -1326,6 +1331,7 @@
   <node concept="1lH9Xt" id="5SGsxw7KWEV">
     <property role="TrG5h" value="_015_random" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5SGsxw7KWEW" role="1SL9yI">
       <property role="TrG5h" value="test_010_random_range_values" />
       <node concept="3cqZAl" id="5SGsxw7KWEX" role="3clF45" />
@@ -1682,6 +1688,7 @@
   <node concept="1lH9Xt" id="5SGsxw7M6YL">
     <property role="TrG5h" value="_040_nondet_choice" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5SGsxw7M6YM" role="1SL9yI">
       <property role="TrG5h" value="test_010_nondets_choice_smoke" />
       <node concept="3cqZAl" id="5SGsxw7M6YN" role="3clF45" />
@@ -1950,6 +1957,7 @@
   <node concept="1lH9Xt" id="5SGsxw7TmlA">
     <property role="TrG5h" value="_050_when_do" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5SGsxw7TmlB" role="1SL9yI">
       <property role="TrG5h" value="test_010_when_do_smoke" />
       <node concept="3cqZAl" id="5SGsxw7TmlC" role="3clF45" />
@@ -2079,6 +2087,7 @@
   <node concept="1lH9Xt" id="5SGsxw7VWDt">
     <property role="TrG5h" value="_100_combinatorial" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5SGsxw7VWDu" role="1SL9yI">
       <property role="TrG5h" value="test_010_combinatorial_smoke" />
       <node concept="3cqZAl" id="5SGsxw7VWDv" role="3clF45" />

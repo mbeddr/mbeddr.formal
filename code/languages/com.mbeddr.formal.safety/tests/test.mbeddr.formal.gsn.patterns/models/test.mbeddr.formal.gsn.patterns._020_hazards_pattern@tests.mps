@@ -2,7 +2,7 @@
 <model ref="r:2b837d5d-be8c-49e1-ba4a-3deddb194ffc(test.mbeddr.formal.gsn.patterns._020_hazards_pattern@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
@@ -33,6 +33,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -162,6 +163,7 @@
   </node>
   <node concept="1lH9Xt" id="1qK9rHkjjvw">
     <property role="TrG5h" value="TestNotAllHazardsHaveBeenAddressed" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1qK9rHkjjvx" role="1SKRRt">
       <node concept="2vn7XN" id="1qK9rHkjjvy" role="1qenE9">
         <node concept="37mRI7" id="1qK9rHkjjvz" role="lGtFl">

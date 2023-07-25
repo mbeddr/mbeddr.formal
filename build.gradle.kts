@@ -23,7 +23,7 @@ plugins {
     id("download-jbr") version "1.11.+"
 }
 
-val jbrVers = "11_0_12-b1504.28"
+val jbrVers = "17.0.3-b469.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -33,12 +33,12 @@ downloadJbr {
 val ciBuild = (System.getenv("CI") != null && System.getenv("CI").toBoolean()) || project.hasProperty("forceCI") || project.hasProperty("teamcity")
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-val jdk_home: String = if (project.hasProperty("java11_home")) {
-    project.findProperty("java11_home") as String
-} else if (System.getenv("JB_JAVA11_HOME") != null) {
-    System.getenv("JB_JAVA11_HOME")!!
+val jdk_home: String = if (project.hasProperty("java17_home")) {
+    project.findProperty("java17_home") as String
+} else if (System.getenv("JB_JAVA17_HOME") != null) {
+    System.getenv("JB_JAVA17_HOME")!!
 } else {
-    val expected = JavaVersion.VERSION_11
+    val expected = JavaVersion.VERSION_17
     if (JavaVersion.current() != expected) {
         throw GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
                 + "  * Use project property java11_home to point to the Java 11 JDK.\n"
@@ -48,12 +48,12 @@ val jdk_home: String = if (project.hasProperty("java11_home")) {
     System.getProperty("java.home")!!
 }
 
+logger.info("Using JDK at {}", jdk_home)
+
 // Check JDK location
 if (!File(jdk_home, "lib").exists()) {
     throw GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
 }
-
-logger.info("Using JDK at {}", jdk_home)
 
 var nexusUsername: String? by extra
 var nexusPassword: String? by extra
@@ -66,8 +66,8 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2021"
-val minor = "3"
+val major = "2022"
+val minor = "2"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"

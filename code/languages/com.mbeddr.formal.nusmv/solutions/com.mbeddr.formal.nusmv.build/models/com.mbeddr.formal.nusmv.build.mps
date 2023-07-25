@@ -3958,11 +3958,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2VEfskbCnmu" role="3bR37C">
-          <node concept="3bR9La" id="2VEfskbCnmv" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
         <node concept="3rtmxn" id="1hUQF5WmqIb" role="3bR31x">
           <node concept="3LXTmp" id="1hUQF5WmqIc" role="3rtmxm">
             <node concept="3qWCbU" id="1hUQF5WmqId" role="3LXTna">
@@ -3977,11 +3972,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2QUcAU2cCzC" role="3bR37C">
-          <node concept="3bR9La" id="2QUcAU2cCzD" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="5yQpAUIgPRZ" role="3bR37C">
@@ -4128,6 +4118,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7v6gTM_NoEp" role="3bR37C">
+          <node concept="3bR9La" id="7v6gTM_NoEq" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
       </node>
@@ -4552,6 +4547,11 @@
         <node concept="1SiIV0" id="72ufn5vsCLr" role="3bR37C">
           <node concept="3bR9La" id="72ufn5vsCLs" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7v6gTM_NoGa" role="3bR37C">
+          <node concept="3bR9La" id="7v6gTM_NoGb" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
           </node>
         </node>
       </node>

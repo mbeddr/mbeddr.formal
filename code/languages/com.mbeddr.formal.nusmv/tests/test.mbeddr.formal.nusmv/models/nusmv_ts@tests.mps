@@ -2,7 +2,7 @@
 <model ref="r:a2aa58cb-2f8d-49e5-b43f-ed19006d33c4(test.mbeddr.formal.nusmv.nusmv_ts@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -23,6 +23,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -108,6 +109,7 @@
   </registry>
   <node concept="1lH9Xt" id="4Jpgh6INhbk">
     <property role="TrG5h" value="_100_types" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4Jpgh6INhbl" role="1SKRRt">
       <node concept="2HdtXS" id="4Jpgh6INhbp" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -210,6 +212,7 @@
   </node>
   <node concept="1lH9Xt" id="6hWVnwAJFfB">
     <property role="TrG5h" value="_020_ivar" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6hWVnwAJFfC" role="1SKRRt">
       <node concept="2HdtXS" id="6hWVnwAJFfH" role="1qenE9">
         <property role="TrG5h" value="_020_ivar" />

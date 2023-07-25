@@ -2,7 +2,7 @@
 <model ref="r:ecd6425c-213f-4297-b5c3-539328f0b346(test.com.fasten.safety.doc2word._010_simple_documents_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
@@ -41,6 +41,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -267,6 +268,7 @@
   </node>
   <node concept="1lH9Xt" id="4ziKDEn8eCQ">
     <property role="TrG5h" value="_010_simple_documents_tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="4ziKDEn8eH5" role="1SL9yI">
       <property role="TrG5h" value="_010_only_text_paragraph_test" />
       <node concept="3cqZAl" id="4ziKDEn8eH6" role="3clF45" />
@@ -1479,6 +1481,7 @@
   </node>
   <node concept="1lH9Xt" id="7YjSMFlzo6f">
     <property role="TrG5h" value="_100_gsn_documents_tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7YjSMFlzo6g" role="1SL9yI">
       <property role="TrG5h" value="_110_argument_over_hazards_test" />
       <node concept="3cqZAl" id="7YjSMFlzo6h" role="3clF45" />
