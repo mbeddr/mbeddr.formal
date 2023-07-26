@@ -69,8 +69,10 @@ logger.info("Repository username: {}", nexusUsername)
 val major = "2022"
 val minor = "2"
 
+val mpsVersion ="$major.$minor"
+
 // Dependency versions
-val platformVersion = "$major.$minor"
+val platformVersion = "$major.$minor.+"
 
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
@@ -103,7 +105,7 @@ configurations {
     val jbrLinux by creating
 
     dependencies {
-        mps("com.jetbrains:mps:$platformVersion")
+        mps("com.jetbrains:mps:$mpsVersion")
         languageLibs("com.mbeddr:platform:$platformVersion")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
         antLib("org.apache.ant:ant-junit:1.10.6")
