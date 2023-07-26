@@ -115,6 +115,9 @@ configurations {
     }
 }
 
+System.setProperty("jdk.nio.zipfs.allowDotZipEntry", "true");
+System.setProperty("jdk.util.zip.disableZip64ExtraFieldValidation", "true");
+ 
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
@@ -213,10 +216,6 @@ tasks {
     }
 
     val build_allScripts by registering(BuildLanguages::class) {
-	doFirst {
-		System.setProperty("jdk.nio.zipfs.allowDotZipEntry", "true");
-        	System.setProperty("jdk.util.zip.disableZip64ExtraFieldValidation", "true");
-	}
         dependsOn(resolveMps, resolveLanguageLibs)
         script = "$buildDir/scripts/build_all_scripts.xml"
     }
