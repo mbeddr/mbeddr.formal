@@ -70,7 +70,7 @@ val major = "2022"
 val minor = "2"
 
 // Dependency versions
-val platformVersion = "$major.$minor.+"
+val platformVersion = "$major.$minor"
 
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
