@@ -114,9 +114,6 @@ configurations {
         jbrLinux("com.jetbrains.jdk:jbr_jcef:$jbrVers:linux-x64@tgz")
     }
 }
-
-System.setProperty("jdk.nio.zipfs.allowDotZipEntry", "true");
-System.setProperty("jdk.util.zip.disableZip64ExtraFieldValidation", "true");
  
 dependencyLocking { lockAllConfigurations() }
 
@@ -177,7 +174,9 @@ val defaultScriptArgs = mapOf(
         "version" to version,
         "build.date" to Date(),
         //incremental build support
-        "mps.generator.skipUnmodifiedModels" to true
+        "mps.generator.skipUnmodifiedModels" to true,
+        "jdk.nio.zipfs.allowDotZipEntry" to true,
+        "jdk.util.zip.disableZip64ExtraFieldValidation" to true
 )
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
