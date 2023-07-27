@@ -30,12 +30,16 @@ jobs:
       with:
         java-version: 17  
       
-    - name: Check java
-      run: |
-        java -version
-        export JB_JAVA17_HOME=$JAVA_HOME
-        set
-      
+    - name: Resolve MPS
+      uses: gradle/gradle-build-action@v2.4.2
+      with:
+        arguments: resolveMps
+
+    - name: Report MPS Integrity
+      run:
+        ls -l build/mps/lib/app.jar
+        sha256sum build/mps/lib/app.jar
+
     - name: Build FASTEN
       uses: gradle/gradle-build-action@v2.4.2
       with: 
