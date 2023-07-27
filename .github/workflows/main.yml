@@ -33,7 +33,7 @@ jobs:
     - name: Resolve MPS
       uses: gradle/gradle-build-action@v2.4.2
       with:
-        arguments: resolveMps
+        arguments: resolveMps -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Report MPS Integrity
       run:
