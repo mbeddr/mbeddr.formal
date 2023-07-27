@@ -3419,35 +3419,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
-        <node concept="1yeLz9" id="6hyv0iVPlQM" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.external_evidence#01" />
-          <property role="3LESm3" value="87ebb3b1-4381-4afa-84d4-0b68cdc0b4c1" />
-          <node concept="1BupzO" id="6hyv0iVPm3M" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="6hyv0iVPmcr" role="1HemKq">
-              <node concept="398BVA" id="6hyv0iVPmhI" role="3LXTmr">
-                <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
-                <node concept="2Ry0Ak" id="6hyv0iVPmln" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="6hyv0iVPmof" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.external_evidence" />
-                    <node concept="2Ry0Ak" id="6hyv0iVPmpL" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="6hyv0iVPmqo" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="6hyv0iVPmhJ" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="6hyv0iVPlQN" role="3bR37C">
           <node concept="3bR9La" id="6hyv0iVPm3N" role="1SiIV1">
             <ref role="3bR37D" node="6hyv0iVPlGc" resolve="com.mbeddr.formal.base.tooling" />
@@ -5063,35 +5034,6 @@
             <ref role="3bR37D" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
-        <node concept="1yeLz9" id="6hyv0iVPlSc" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.safety.hara#01" />
-          <property role="3LESm3" value="b8537360-767e-4845-8543-5f5765e2c91d" />
-          <node concept="1BupzO" id="6hyv0iVPm5l" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="6hyv0iVPmda" role="1HemKq">
-              <node concept="398BVA" id="6hyv0iVPmid" role="3LXTmr">
-                <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
-                <node concept="2Ry0Ak" id="6hyv0iVPmlE" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="6hyv0iVPmot" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.formal.safety.hara" />
-                    <node concept="2Ry0Ak" id="6hyv0iVPmpR" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="6hyv0iVPmqu" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="6hyv0iVPmie" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1BupzO" id="6hyv0iVPlSd" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -5311,35 +5253,6 @@
               <property role="2Ry0Am" value="com.mbeddr.formal.safety.stamp" />
               <node concept="2Ry0Ak" id="6hyv0iVPmim" role="2Ry0An">
                 <property role="2Ry0Am" value="com.mbeddr.formal.safety.stamp.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="6hyv0iVPlSp" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.safety.stamp#01" />
-          <property role="3LESm3" value="866aea87-64e8-40c2-9129-519078a53a91" />
-          <node concept="1BupzO" id="6hyv0iVPm5y" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="6hyv0iVPmdm" role="1HemKq">
-              <node concept="398BVA" id="6hyv0iVPmin" role="3LXTmr">
-                <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
-                <node concept="2Ry0Ak" id="6hyv0iVPmlK" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="6hyv0iVPmoy" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.formal.safety.stamp" />
-                    <node concept="2Ry0Ak" id="6hyv0iVPmpT" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="6hyv0iVPmqw" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="6hyv0iVPmio" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>
           </node>
