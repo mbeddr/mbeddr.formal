@@ -36,7 +36,7 @@ jobs:
         arguments: resolveMps -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Report MPS Integrity
-      run:
+      run: |
         ls -l build/mps/lib/app.jar
         sha256sum build/mps/lib/app.jar
 
