@@ -33,6 +33,7 @@ jobs:
     - name: Check java
       run: |
         java -version
+        export JB_JAVA17_HOME=$JAVA_HOME
         set
       
     - name: Build FASTEN
