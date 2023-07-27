@@ -29,7 +29,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 17  
-        
+      
+    - name: Check java
+      run: |
+        java -version
+        set
+      
     - name: Build FASTEN
       uses: gradle/gradle-build-action@v2.4.2
       with: 
