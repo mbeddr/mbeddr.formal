@@ -100,12 +100,18 @@ configurations {
     val languageLibs by creating
     // includes also junit tasks support
     val antLib by creating
+    val jbrWin by creating
+    val jbrMac by creating
+    val jbrLinux by creating
 
     dependencies {
         mps("com.jetbrains:mps:$mpsVersion")
         languageLibs("com.mbeddr:platform:$platformVersion")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
         antLib("org.apache.ant:ant-junit:1.10.6")
+        jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
+        jbrMac("com.jetbrains.jdk:jbr_jcef:$jbrVers:osx-x64@tgz")
+        jbrLinux("com.jetbrains.jdk:jbr_jcef:$jbrVers:linux-x64@tgz")
     }
 }
  
