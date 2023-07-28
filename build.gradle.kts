@@ -5,15 +5,6 @@ import de.itemis.mps.gradle.modelcheck.ModelcheckMpsProjectPlugin
 import java.util.Date
 
 //will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    dependencies {
-        // Version must match download-jbr plugin below
-        classpath("de.itemis.mps:mps-gradle-plugin:1.11.+")
-    }
-
-    dependencyLocking { lockAllConfigurations() }
-}
-
 plugins {
     base
     `maven-publish`
@@ -21,6 +12,7 @@ plugins {
 
     // Version must match buildscript mps-gradle-plugin dependency above
     id("download-jbr") version "1.11.+"
+    id("de.itemis.mps.gradle.common") version "1.17.+"
 }
 
 val jbrVers = "17.0.6-b653.34"
@@ -31,29 +23,6 @@ downloadJbr {
 
 // detect if we are in a CI build
 val ciBuild = (System.getenv("CI") != null && System.getenv("CI").toBoolean()) || project.hasProperty("forceCI") || project.hasProperty("teamcity")
-
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-val jdk_home: String = if (project.hasProperty("java17_home")) {
-    project.findProperty("java17_home") as String
-} else if (System.getenv("JB_JAVA17_HOME") != null) {
-    System.getenv("JB_JAVA17_HOME")!!
-} else {
-    val expected = JavaVersion.VERSION_17
-    if (JavaVersion.current() != expected) {
-        throw GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-                + "  * Run Gradle using Java 11")
-    }
-    System.getProperty("java.home")!!
-}
-
-logger.info("Using JDK at {}", jdk_home)
-
-// Check JDK location
-if (!File(jdk_home, "lib").exists()) {
-    throw GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-}
 
 var nexusUsername: String? by extra
 var nexusPassword: String? by extra
@@ -157,8 +126,7 @@ val resolveMps = if (skipResolveMps) {
 }
 
 // tools needed for compiler support in ant calls
-val buildScriptClasspath = project.configurations["antLib"] +
-        project.files("$project.jdk_home/lib/tools.jar")
+val buildScriptClasspath = project.configurations["antLib"]
 
 val artifactsDir = file("$buildDir/artifacts")
 val dependenciesDir = file("$buildDir/dependencies")
@@ -178,11 +146,6 @@ val defaultScriptArgs = mapOf(
         "jdk.nio.zipfs.allowDotZipEntry" to true,
         "jdk.util.zip.disableZip64ExtraFieldValidation" to true
 )
-
-// enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
-extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = File(jdk_home, "bin/java")
 
 tasks {
     val configureJava by registering {
