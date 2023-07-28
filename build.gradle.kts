@@ -11,7 +11,7 @@ plugins {
     id("co.riiid.gradle") version "0.4.2"
 
     // Version must match buildscript mps-gradle-plugin dependency above
-    id("download-jbr") version "1.11.+"
+    id("download-jbr") version "1.17.+"
     id("de.itemis.mps.gradle.common") version "1.17.+"
 }
 
@@ -152,9 +152,9 @@ tasks {
         val downloadJbr = named("downloadJbr", DownloadJbrForPlatform::class)
         dependsOn(downloadJbr)
         doLast {
-            extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
-            extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-            extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = downloadJbr.get().javaExecutable
+            project.extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
+            project.extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
+            project.extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = downloadJbr.get().javaExecutable
         }
     }
 
