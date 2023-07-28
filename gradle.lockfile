@@ -1,7 +1,6 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-com.jetbrains.jdk:jbr_jcef:11_0_12-b1504.28=jbrLinux,jbrMac,jbrWin
 com.jetbrains:mps:2022.2=mps
 com.mbeddr:platform:2022.2.23910.af50257=languageLibs
 junit:junit:4.12=antLib
