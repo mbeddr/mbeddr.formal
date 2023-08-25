@@ -12,7 +12,7 @@ plugins {
 
     // Version must match buildscript mps-gradle-plugin dependency above
     id("download-jbr") version "1.17.+"
-    id("de.itemis.mps.gradle.common") version "1.17.+"
+    id("de.itemis.mps.gradle.common") version "1.18.+"
 }
 
 val jbrVers = "17.0.6-b653.34"
