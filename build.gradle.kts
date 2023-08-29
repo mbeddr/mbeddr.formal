@@ -227,6 +227,7 @@ tasks {
     }
 
     val run_all_tests by registering(TestLanguages::class) {
+        dependsOn(configureJava)
         description = "Will execute all tests from command line"
         script = "$buildDir/scripts/build-all-tests.xml"
         doLast {
