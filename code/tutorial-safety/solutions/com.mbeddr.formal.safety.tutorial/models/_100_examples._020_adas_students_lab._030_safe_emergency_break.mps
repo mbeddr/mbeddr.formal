@@ -563,61 +563,61 @@
     <node concept="1a6Z8w" id="G$XGFsgYdV" role="8gIbH">
       <property role="0lsPB" value="H01" />
       <property role="TrG5h" value="Warning issued too late - ASIL QM" />
-      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" />
       <node concept="3h3uym" id="75La0fJz0jj" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
+        <ref role="3h3iM1" node="75La0fJyZ19" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9h" role="8gIbH">
       <property role="0lsPB" value="H02" />
       <property role="TrG5h" value="Braking initiated too late - ASIL A" />
-      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" />
       <node concept="3h3uym" id="75La0fJz0jm" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
+        <ref role="3h3iM1" node="75La0fJyZ19" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9p" role="8gIbH">
       <property role="0lsPB" value="H03" />
       <property role="TrG5h" value="Car crashes into obstacle - ASIL B" />
-      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" />
       <node concept="3h3uym" id="75La0fJz0jp" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
+        <ref role="3h3iM1" node="75La0fJyZ19" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9z" role="8gIbH">
       <property role="0lsPB" value="H04" />
       <property role="TrG5h" value="Unnecessary warning - ASIL QM" />
-      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" />
       <node concept="3h3uym" id="75La0fJz0jJ" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <ref role="3h3iM1" node="75La0fJz0jA" resolve="EB_OS_002" />
+        <ref role="3h3iM1" node="75La0fJz0jA" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9J" role="8gIbH">
       <property role="0lsPB" value="H05" />
       <property role="TrG5h" value="Unnecessary braking - ASIL QM" />
-      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" />
       <node concept="3h3uym" id="75La0fJz0jM" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <ref role="3h3iM1" node="75La0fJz0jA" resolve="EB_OS_002" />
+        <ref role="3h3iM1" node="75La0fJz0jA" />
       </node>
     </node>
     <node concept="1a6Z8w" id="3XLpsf2__9X" role="8gIbH">
       <property role="0lsPB" value="H06" />
       <property role="TrG5h" value="Strong breaking leads to rear end collision - ASIL A" />
-      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" />
       <node concept="3h3uym" id="75La0fJz0js" role="3h3uzw">
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
-        <ref role="3h3iM1" node="75La0fJyZ19" resolve="EB_OS_001" />
+        <ref role="3h3iM1" node="75La0fJyZ19" />
       </node>
     </node>
   </node>
@@ -2010,15 +2010,15 @@
     <node concept="1XyJaU" id="3XLpsf2__c9" role="1X_0GB">
       <property role="TrG5h" value="EB Control Unit" />
       <node concept="1XypPU" id="3XLpsf2_A_4" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__c9" resolve="EB Control Unit" />
-        <ref role="SrP07" node="3XLpsf2__gX" resolve="Brake" />
+        <ref role="SrP08" node="3XLpsf2__c9" />
+        <ref role="SrP07" node="3XLpsf2__gX" />
         <node concept="Sqzvu" id="3XLpsf2_A_5" role="Sq$B$">
           <property role="TrG5h" value="control break" />
         </node>
       </node>
       <node concept="Sq$B_" id="3XLpsf2_ALC" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__c9" resolve="EB Control Unit" />
-        <ref role="SrP07" node="3XLpsf2__Nb" resolve="Communication Unit" />
+        <ref role="SrP08" node="3XLpsf2__c9" />
+        <ref role="SrP07" node="3XLpsf2__Nb" />
         <node concept="Sqzvu" id="3XLpsf2_ALD" role="Sq$B$">
           <property role="TrG5h" value="warning" />
         </node>
@@ -2027,8 +2027,8 @@
     <node concept="1XyJaU" id="3XLpsf2__gX" role="1X_0GB">
       <property role="TrG5h" value="Brake" />
       <node concept="Sq$B_" id="3XLpsf2_AFd" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__gX" resolve="Brake" />
-        <ref role="SrP07" node="3XLpsf2__c9" resolve="EB Control Unit" />
+        <ref role="SrP08" node="3XLpsf2__gX" />
+        <ref role="SrP07" node="3XLpsf2__c9" />
         <node concept="Sqzvu" id="3XLpsf2_AFe" role="Sq$B$">
           <property role="TrG5h" value="manual driver input" />
         </node>
@@ -2037,15 +2037,15 @@
     <node concept="1XyJaU" id="3XLpsf2__h3" role="1X_0GB">
       <property role="TrG5h" value="Environment" />
       <node concept="Sq$B_" id="3XLpsf2_AdE" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__h3" resolve="Environment" />
-        <ref role="SrP07" node="3XLpsf2__qB" resolve="Laser Sensor" />
+        <ref role="SrP08" node="3XLpsf2__h3" />
+        <ref role="SrP07" node="3XLpsf2__qB" />
         <node concept="Sqzvu" id="3XLpsf2_AdF" role="Sq$B$">
           <property role="TrG5h" value="Observation" />
         </node>
       </node>
       <node concept="Sq$B_" id="3XLpsf2_AdT" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__h3" resolve="Environment" />
-        <ref role="SrP07" node="3XLpsf2__qv" resolve="Ultrasound Snsor" />
+        <ref role="SrP08" node="3XLpsf2__h3" />
+        <ref role="SrP07" node="3XLpsf2__qv" />
         <node concept="Sqzvu" id="3XLpsf2_AdU" role="Sq$B$">
           <property role="TrG5h" value="observation" />
         </node>
@@ -2054,8 +2054,8 @@
     <node concept="1XyJaU" id="3XLpsf2__qv" role="1X_0GB">
       <property role="TrG5h" value="Ultrasound Snsor" />
       <node concept="Sq$B_" id="3XLpsf2_A2K" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__qv" resolve="Ultrasound Snsor" />
-        <ref role="SrP07" node="3XLpsf2__c9" resolve="EB Control Unit" />
+        <ref role="SrP08" node="3XLpsf2__qv" />
+        <ref role="SrP07" node="3XLpsf2__c9" />
         <node concept="Sqzvu" id="3XLpsf2_A2L" role="Sq$B$">
           <property role="TrG5h" value="provides distance to obstacle" />
         </node>
@@ -2064,8 +2064,8 @@
     <node concept="1XyJaU" id="3XLpsf2__qB" role="1X_0GB">
       <property role="TrG5h" value="Laser Sensor" />
       <node concept="Sq$B_" id="3XLpsf2_A89" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__qB" resolve="Laser Sensor" />
-        <ref role="SrP07" node="3XLpsf2__c9" resolve="EB Control Unit" />
+        <ref role="SrP08" node="3XLpsf2__qB" />
+        <ref role="SrP07" node="3XLpsf2__c9" />
         <node concept="Sqzvu" id="3XLpsf2_A8a" role="Sq$B$">
           <property role="TrG5h" value="provides distance to obstacle" />
         </node>
@@ -2074,8 +2074,8 @@
     <node concept="1XyJaU" id="3XLpsf2__$d" role="1X_0GB">
       <property role="TrG5h" value="Gas Pedal" />
       <node concept="Sq$B_" id="3XLpsf2_Av2" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__$d" resolve="Gas Pedal" />
-        <ref role="SrP07" node="3XLpsf2__c9" resolve="EB Control Unit" />
+        <ref role="SrP08" node="3XLpsf2__$d" />
+        <ref role="SrP07" node="3XLpsf2__c9" />
         <node concept="Sqzvu" id="3XLpsf2_Av3" role="Sq$B$">
           <property role="TrG5h" value="manual driver input" />
         </node>
@@ -2084,8 +2084,8 @@
     <node concept="1XyJaU" id="3XLpsf2__$n" role="1X_0GB">
       <property role="TrG5h" value="Speed Sensor" />
       <node concept="Sq$B_" id="3XLpsf2_Ap6" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__$n" resolve="Speed Sensor" />
-        <ref role="SrP07" node="3XLpsf2__c9" resolve="EB Control Unit" />
+        <ref role="SrP08" node="3XLpsf2__$n" />
+        <ref role="SrP07" node="3XLpsf2__c9" />
         <node concept="Sqzvu" id="3XLpsf2_Ap7" role="Sq$B$">
           <property role="TrG5h" value="provides current speed" />
         </node>
@@ -2094,15 +2094,15 @@
     <node concept="1XyJaU" id="3XLpsf2__I8" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
       <node concept="1XypPU" id="3XLpsf2_Bjc" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__I8" resolve="Driver" />
-        <ref role="SrP07" node="3XLpsf2__$d" resolve="Gas Pedal" />
+        <ref role="SrP08" node="3XLpsf2__I8" />
+        <ref role="SrP07" node="3XLpsf2__$d" />
         <node concept="Sqzvu" id="3XLpsf2_Bjd" role="Sq$B$">
           <property role="TrG5h" value="manual acceleration" />
         </node>
       </node>
       <node concept="1XypPU" id="3XLpsf2_BjL" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__I8" resolve="Driver" />
-        <ref role="SrP07" node="3XLpsf2__gX" resolve="Brake" />
+        <ref role="SrP08" node="3XLpsf2__I8" />
+        <ref role="SrP07" node="3XLpsf2__gX" />
         <node concept="Sqzvu" id="3XLpsf2_BjM" role="Sq$B$">
           <property role="TrG5h" value="manual braking" />
         </node>
@@ -2111,15 +2111,15 @@
     <node concept="1XyJaU" id="3XLpsf2__Nb" role="1X_0GB">
       <property role="TrG5h" value="Communication Unit" />
       <node concept="1XypPU" id="3XLpsf2_ASh" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__Nb" resolve="Communication Unit" />
-        <ref role="SrP07" node="3XLpsf2__SC" resolve="steering wheel" />
+        <ref role="SrP08" node="3XLpsf2__Nb" />
+        <ref role="SrP07" node="3XLpsf2__SC" />
         <node concept="Sqzvu" id="3XLpsf2_ASi" role="Sq$B$">
           <property role="TrG5h" value="vibrate" />
         </node>
       </node>
       <node concept="1XypPU" id="3XLpsf2_ASI" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__Nb" resolve="Communication Unit" />
-        <ref role="SrP07" node="3XLpsf2__Sq" resolve="Display" />
+        <ref role="SrP08" node="3XLpsf2__Nb" />
+        <ref role="SrP07" node="3XLpsf2__Sq" />
         <node concept="Sqzvu" id="3XLpsf2_ASJ" role="Sq$B$">
           <property role="TrG5h" value="warning message" />
         </node>
@@ -2128,8 +2128,8 @@
     <node concept="1XyJaU" id="3XLpsf2__Sq" role="1X_0GB">
       <property role="TrG5h" value="Display" />
       <node concept="Sq$B_" id="3XLpsf2_B5u" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__Sq" resolve="Display" />
-        <ref role="SrP07" node="3XLpsf2__I8" resolve="Driver" />
+        <ref role="SrP08" node="3XLpsf2__Sq" />
+        <ref role="SrP07" node="3XLpsf2__I8" />
         <node concept="Sqzvu" id="3XLpsf2_B5v" role="Sq$B$">
           <property role="TrG5h" value="warning message" />
         </node>
@@ -2138,8 +2138,8 @@
     <node concept="1XyJaU" id="3XLpsf2__SC" role="1X_0GB">
       <property role="TrG5h" value="steering wheel" />
       <node concept="Sq$B_" id="3XLpsf2_Bch" role="2I3o71">
-        <ref role="SrP08" node="3XLpsf2__SC" resolve="steering wheel" />
-        <ref role="SrP07" node="3XLpsf2__I8" resolve="Driver" />
+        <ref role="SrP08" node="3XLpsf2__SC" />
+        <ref role="SrP07" node="3XLpsf2__I8" />
         <node concept="Sqzvu" id="3XLpsf2_Bci" role="Sq$B$">
           <property role="TrG5h" value="vibrate" />
         </node>
@@ -2148,11 +2148,11 @@
   </node>
   <node concept="1E0nO6" id="4GKPLBASuiH">
     <property role="TrG5h" value="_104_eb_unsafe_control_actions" />
-    <ref role="1E05RL" node="2fZol$t_0Lh" resolve="_103_eb_control_structure" />
+    <ref role="1E05RL" node="2fZol$t_0Lh" />
     <node concept="1E0nOG" id="3XLpsf2_BRS" role="1E0n_e">
-      <ref role="1E0nOH" node="3XLpsf2__c9" resolve="EB Control Unit" />
+      <ref role="1E0nOH" node="3XLpsf2__c9" />
       <node concept="1E0nOJ" id="3XLpsf2_BRT" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_ALD" resolve="warning" />
+        <ref role="1E0n_N" node="3XLpsf2_ALD" />
         <node concept="3f6qtF" id="6vZMoXu3Mj_" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_BRY" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_12" />
@@ -2161,7 +2161,7 @@
                 <property role="19SUeA" value="unnecessary warnings &#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BS4" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BS5" role="19SJt6" />
             </node>
@@ -2178,7 +2178,7 @@
                 <property role="19SUeA" value="Warning too late&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BSf" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BSg" role="19SJt6" />
             </node>
@@ -2189,7 +2189,7 @@
         </node>
       </node>
       <node concept="1E0nOJ" id="3XLpsf2_BTk" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_A_5" resolve="control break" />
+        <ref role="1E0n_N" node="3XLpsf2_A_5" />
         <node concept="3f6qtF" id="6vZMoXu3MjG" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_BTI" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_22" />
@@ -2198,7 +2198,7 @@
                 <property role="19SUeA" value="Unnecessary breaking may result in an rear-end collision&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BTO" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BTP" role="19SJt6" />
             </node>
@@ -2212,7 +2212,7 @@
                 <property role="19SUeA" value="system does not fullfill its function and that leads to a crash&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BTD" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BTE" role="19SJt6" />
             </node>
@@ -2226,7 +2226,7 @@
                 <property role="19SUeA" value="system does not fullfill its function if it brakes too late and that leads to a crash&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BU1" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BU0" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2242,13 +2242,13 @@
                 <property role="19SUeA" value="if applied too long, stopping may cause an rear-end collsion." />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BUe" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BUd" role="19SJt6">
                 <property role="19SUeA" value="&#10;If it is stopped too soon, the car crashed into the obstacle " />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BUl" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BUk" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2259,9 +2259,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="3XLpsf2_BUs" role="1E0n_e">
-      <ref role="1E0nOH" node="3XLpsf2__Nb" resolve="Communication Unit" />
+      <ref role="1E0nOH" node="3XLpsf2__Nb" />
       <node concept="1E0nOJ" id="3XLpsf2_BUt" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_ASJ" resolve="warning message" />
+        <ref role="1E0n_N" node="3XLpsf2_ASJ" />
         <node concept="3f6qtF" id="6vZMoXu3MjK" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_BVe" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_32" />
@@ -2270,7 +2270,7 @@
                 <property role="19SUeA" value="unnecessary warnings &#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BVl" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BVk" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2289,7 +2289,7 @@
                 <property role="19SUeA" value="Warning too late&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BVE" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BVD" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2302,7 +2302,7 @@
         </node>
       </node>
       <node concept="1E0nOJ" id="3XLpsf2_BV8" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_ASi" resolve="vibrate" />
+        <ref role="1E0n_N" node="3XLpsf2_ASi" />
         <node concept="3f6qtF" id="6vZMoXu3MjO" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_BVr" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_42" />
@@ -2311,7 +2311,7 @@
                 <property role="19SUeA" value="unnecessary warnings &#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BVy" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BVz" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2330,7 +2330,7 @@
                 <property role="19SUeA" value="Warning too late&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BVX" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BVY" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2344,9 +2344,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="3XLpsf2_BW6" role="1E0n_e">
-      <ref role="1E0nOH" node="3XLpsf2__qB" resolve="Laser Sensor" />
+      <ref role="1E0nOH" node="3XLpsf2__qB" />
       <node concept="1E0nOJ" id="3XLpsf2_BW7" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_A8a" resolve="provides distance to obstacle" />
+        <ref role="1E0n_N" node="3XLpsf2_A8a" />
         <node concept="3f6qtF" id="6vZMoXu3MjS" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_BYr" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_52" />
@@ -2355,27 +2355,27 @@
                 <property role="19SUeA" value="If sensor data is wrong, the system cannot react properly&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BYx" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BYB" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BYA" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BYJ" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BYI" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BYT" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BYS" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9h" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZ5" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BZ4" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9J" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZj" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BZi" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZk" role="19SJt6" />
             </node>
@@ -2389,7 +2389,7 @@
                 <property role="19SUeA" value="system cannot detect obstacle. Crash avoidance can't be provided " />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BYm" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BYn" role="19SJt6" />
             </node>
@@ -2403,27 +2403,27 @@
                 <property role="19SUeA" value="Too soon not possible. Too late: the system cannot react properly&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_BZD" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZE" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BZF" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZG" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BZH" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZI" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BZJ" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9h" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZK" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BZL" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9J" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZM" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_BZN" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_BZO" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2437,9 +2437,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="3XLpsf2_BXa" role="1E0n_e">
-      <ref role="1E0nOH" node="3XLpsf2__qv" resolve="Ultrasound Snsor" />
+      <ref role="1E0nOH" node="3XLpsf2__qv" />
       <node concept="1E0nOJ" id="3XLpsf2_BXb" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_A2L" resolve="provides distance to obstacle" />
+        <ref role="1E0n_N" node="3XLpsf2_A2L" />
         <node concept="3f6qtF" id="6vZMoXu3MjW" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_C0I" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_62" />
@@ -2448,27 +2448,27 @@
                 <property role="19SUeA" value="If sensor data is wrong, the system cannot react properly&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C0Z" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0Y" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0X" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0W" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0V" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0U" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0T" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9h" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0S" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0R" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9J" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0Q" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0P" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0O" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2484,7 +2484,7 @@
                 <property role="19SUeA" value="system cannot detect obstacle. Crash avoidance can't be provided " />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C1g" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C1f" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2500,27 +2500,27 @@
                 <property role="19SUeA" value="Too soon not possible. Too late: the system cannot react properly&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C0e" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0f" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0g" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0h" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0i" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0j" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0k" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9h" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0l" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0m" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9J" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0n" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C0o" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C0p" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2534,9 +2534,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="3XLpsf2_C1m" role="1E0n_e">
-      <ref role="1E0nOH" node="3XLpsf2__$n" resolve="Speed Sensor" />
+      <ref role="1E0nOH" node="3XLpsf2__$n" />
       <node concept="1E0nOJ" id="3XLpsf2_C1n" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_Ap7" resolve="provides current speed" />
+        <ref role="1E0n_N" node="3XLpsf2_Ap7" />
         <node concept="3f6qtF" id="6vZMoXu3Mk0" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_C3L" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_72" />
@@ -2545,27 +2545,27 @@
                 <property role="19SUeA" value="If sensor data is wrong, the system cannot react properly&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C3Y" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C3X" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C3W" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C3V" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C3U" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C3T" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C3S" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9h" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C3R" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C3Q" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9J" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C3P" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C3O" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C3N" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2581,7 +2581,7 @@
                 <property role="19SUeA" value="system can't interpret the distance data " />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C3G" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C3H" role="19SJt6" />
             </node>
@@ -2595,27 +2595,27 @@
                 <property role="19SUeA" value="Too soon not possible. Too late: the system cannot react properly&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C4r" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C4s" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C4t" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9z" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C4u" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C4v" role="19SJt6">
-                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+                <ref role="oTUVg" node="G$XGFsgYdV" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C4w" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C4x" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9h" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C4y" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C4z" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+                <ref role="oTUVg" node="3XLpsf2__9J" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C4$" role="19SJt6" />
               <node concept="oY6sn" id="3XLpsf2_C4_" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C4A" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2629,9 +2629,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="3XLpsf2_C4R" role="1E0n_e">
-      <ref role="1E0nOH" node="3XLpsf2__$d" resolve="Gas Pedal" />
+      <ref role="1E0nOH" node="3XLpsf2__$d" />
       <node concept="1E0nOJ" id="3XLpsf2_C4S" role="1E0nOC">
-        <ref role="1E0n_N" node="3XLpsf2_Av3" resolve="manual driver input" />
+        <ref role="1E0n_N" node="3XLpsf2_Av3" />
         <node concept="3f6qtF" id="6vZMoXu3Mk4" role="3f6qqO">
           <node concept="1E0uc6" id="3XLpsf2_C7T" role="3f6qtG">
             <property role="TrG5h" value="UCA_EB_82" />
@@ -2640,7 +2640,7 @@
                 <property role="19SUeA" value="if the system falsely detects a driver input, it deactivates even it shouldn't&#10;" />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C7Z" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+                <ref role="oTUVg" node="3XLpsf2__9p" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C80" role="19SJt6">
                 <property role="19SUeA" value="&#10;" />
@@ -2656,7 +2656,7 @@
                 <property role="19SUeA" value="driver override cannot be detected. This may lead the following vehicle to crash into the vehicle. " />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C7O" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C7P" role="19SJt6" />
             </node>
@@ -2670,7 +2670,7 @@
                 <property role="19SUeA" value="Too soon not possible. Too late may lead the following vehicle to crash into the vehicle. " />
               </node>
               <node concept="oY6sn" id="3XLpsf2_C8b" role="19SJt6">
-                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+                <ref role="oTUVg" node="3XLpsf2__9X" />
               </node>
               <node concept="19SUe$" id="3XLpsf2_C8a" role="19SJt6">
                 <property role="19SUeA" value="" />
@@ -2715,10 +2715,10 @@
         </node>
         <node concept="2iDXIW" id="54T4ifBJt0f" role="0nOlf">
           <node concept="DABN8" id="54T4ifBJt0i" role="DABNk">
-            <ref role="DABNb" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+            <ref role="DABNb" node="3XLpsf2__9p" />
           </node>
           <node concept="DABN8" id="54T4ifBJt2b" role="DABNk">
-            <ref role="DABNb" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+            <ref role="DABNb" node="3XLpsf2__9h" />
           </node>
         </node>
         <node concept="19SGf9" id="54T4ifBJt09" role="1QQeG9">
@@ -2741,10 +2741,10 @@
         </node>
         <node concept="2iDXIW" id="54T4ifBJt0x" role="0nOlf">
           <node concept="DABN8" id="54T4ifBJt0$" role="DABNk">
-            <ref role="DABNb" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+            <ref role="DABNb" node="3XLpsf2__9X" />
           </node>
           <node concept="DABN8" id="54T4ifBJt24" role="DABNk">
-            <ref role="DABNb" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+            <ref role="DABNb" node="3XLpsf2__9J" />
           </node>
         </node>
         <node concept="19SGf9" id="54T4ifBJt0m" role="1QQeG9">
@@ -2755,13 +2755,13 @@
       </node>
       <node concept="2iDXIW" id="4WLVkAsg3p2" role="0nOlf">
         <node concept="DABN8" id="54T4ifBJt02" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+          <ref role="DABNb" node="3XLpsf2__9p" />
         </node>
         <node concept="DABN8" id="54T4ifBJt10" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+          <ref role="DABNb" node="3XLpsf2__9X" />
         </node>
         <node concept="DABN8" id="54T4ifBJt1j" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+          <ref role="DABNb" node="3XLpsf2__9h" />
         </node>
       </node>
       <node concept="19SGf9" id="4WLVkAsg3oV" role="1QQeG9">
@@ -2793,13 +2793,13 @@
       </node>
       <node concept="2iDXIW" id="4tgWazNvlzO" role="0nOlf">
         <node concept="DABN8" id="54T4ifBJt14" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+          <ref role="DABNb" node="3XLpsf2__9z" />
         </node>
         <node concept="DABN8" id="54T4ifBJt19" role="DABNk">
-          <ref role="DABNb" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+          <ref role="DABNb" node="G$XGFsgYdV" />
         </node>
         <node concept="DABN8" id="22e91OCPK8D" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+          <ref role="DABNb" node="3XLpsf2__9p" />
         </node>
       </node>
       <node concept="19SGf9" id="4tgWazNvlzz" role="1QQeG9">
@@ -2823,16 +2823,16 @@
       </node>
       <node concept="2iDXIW" id="4tgWazNvl_7" role="0nOlf">
         <node concept="DABN8" id="54T4ifBJt1d" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+          <ref role="DABNb" node="3XLpsf2__9h" />
         </node>
         <node concept="DABN8" id="54T4ifBJt1r" role="DABNk">
-          <ref role="DABNb" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+          <ref role="DABNb" node="G$XGFsgYdV" />
         </node>
         <node concept="DABN8" id="54T4ifBJt1z" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+          <ref role="DABNb" node="3XLpsf2__9J" />
         </node>
         <node concept="DABN8" id="54T4ifBJt1V" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+          <ref role="DABNb" node="3XLpsf2__9z" />
         </node>
       </node>
       <node concept="19SGf9" id="4tgWazNvlzT" role="1QQeG9">
@@ -2858,13 +2858,13 @@
       </node>
       <node concept="2iDXIW" id="4tgWazNvndk" role="0nOlf">
         <node concept="DABN8" id="54T4ifBJtau" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+          <ref role="DABNb" node="3XLpsf2__9p" />
         </node>
         <node concept="DABN8" id="54T4ifBJtaz" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+          <ref role="DABNb" node="3XLpsf2__9h" />
         </node>
         <node concept="DABN8" id="54T4ifBJtaF" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+          <ref role="DABNb" node="3XLpsf2__9X" />
         </node>
       </node>
       <node concept="19SGf9" id="4tgWazNvnb5" role="1QQeG9">
@@ -2895,7 +2895,7 @@
         </node>
         <node concept="2iDXIW" id="54T4ifBJt8n" role="0nOlf">
           <node concept="DABN8" id="54T4ifBJtb2" role="DABNk">
-            <ref role="DABNb" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+            <ref role="DABNb" node="3XLpsf2__9p" />
           </node>
         </node>
         <node concept="19SGf9" id="54T4ifBJt7E" role="1QQeG9">
@@ -2918,7 +2918,7 @@
         </node>
         <node concept="2iDXIW" id="54T4ifBJt8q" role="0nOlf">
           <node concept="DABN8" id="54T4ifBJtb4" role="DABNk">
-            <ref role="DABNb" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+            <ref role="DABNb" node="3XLpsf2__9p" />
           </node>
         </node>
         <node concept="19SGf9" id="54T4ifBJt7M" role="1QQeG9">
@@ -2929,10 +2929,10 @@
       </node>
       <node concept="2iDXIW" id="4WLVkAsg6Hk" role="0nOlf">
         <node concept="DABN8" id="54T4ifBJtaK" role="DABNk">
-          <ref role="DABNb" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+          <ref role="DABNb" node="G$XGFsgYdV" />
         </node>
         <node concept="DABN8" id="54T4ifBJtaP" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+          <ref role="DABNb" node="3XLpsf2__9z" />
         </node>
       </node>
       <node concept="19SGf9" id="4WLVkAsg6H4" role="1QQeG9">
@@ -2979,10 +2979,10 @@
       </node>
       <node concept="2iDXIW" id="4tgWazNvn8l" role="0nOlf">
         <node concept="DABN8" id="54T4ifBJtaT" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+          <ref role="DABNb" node="3XLpsf2__9z" />
         </node>
         <node concept="DABN8" id="54T4ifBJtaY" role="DABNk">
-          <ref role="DABNb" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+          <ref role="DABNb" node="3XLpsf2__9J" />
         </node>
       </node>
     </node>
@@ -3098,19 +3098,19 @@
       <node concept="3UnI9n" id="2l0tHRMMepZ" role="3UnI90">
         <property role="TrG5h" value="display_message_OUT" />
         <node concept="2XEmfi" id="2r$08YM5BaF" role="3UnI80">
-          <ref role="2XEmfl" node="2r$08YM5tsB" resolve="DISPLAY_MESSAGE" />
+          <ref role="2XEmfl" node="2r$08YM5tsB" />
         </node>
       </node>
       <node concept="3UnI9n" id="2l0tHRMMeqm" role="3UnI90">
         <property role="TrG5h" value="state_OUT" />
         <node concept="2XJXdx" id="2r$08YM5Bcb" role="3UnI80">
-          <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state_eb" />
+          <ref role="2XJXdw" node="2Q6_IeFkaVR" />
         </node>
       </node>
       <node concept="3UnI9n" id="2r$08YM5vHH" role="3UnI90">
         <property role="TrG5h" value="brake_OUT" />
         <node concept="2XEmfi" id="2r$08YM5HE3" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
         </node>
       </node>
       <node concept="37mRI7" id="4tgWazNvrD_" role="lGtFl">
@@ -5008,270 +5008,270 @@
       <node concept="3Ug1AV" id="54T4ifBJyQK" role="3UgYNK">
         <property role="TrG5h" value="Ultrasound1" />
         <node concept="3Ug1AZ" id="54T4ifBJyQL" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvqSt" resolve="Ultrasound_Sensor" />
+          <ref role="3Ug1AY" node="4tgWazNvqSt" />
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJyQQ" role="3UgYNK">
         <property role="TrG5h" value="Laser1" />
         <node concept="3Ug1AZ" id="54T4ifBJyQR" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvqWb" resolve="Laser_Sensor" />
+          <ref role="3Ug1AY" node="4tgWazNvqWb" />
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJyW2" role="3UgYNK">
         <property role="TrG5h" value="Sensor_Voter" />
         <node concept="3Ug1AZ" id="54T4ifBJyW3" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvrrE" resolve="Sensor_Voter" />
+          <ref role="3Ug1AY" node="4tgWazNvrrE" />
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJz6q" role="3UgYNK">
         <property role="TrG5h" value="Ultrasound2" />
         <node concept="3Ug1AZ" id="54T4ifBJz6r" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvqSt" resolve="Ultrasound_Sensor" />
+          <ref role="3Ug1AY" node="4tgWazNvqSt" />
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJz6A" role="3UgYNK">
         <property role="TrG5h" value="Laser2" />
         <node concept="3Ug1AZ" id="54T4ifBJz6B" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvqWb" resolve="Laser_Sensor" />
+          <ref role="3Ug1AY" node="4tgWazNvqWb" />
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJzbY" role="3UgYNK">
         <property role="TrG5h" value="EB_Control_Unit" />
         <node concept="3Ug1AZ" id="54T4ifBJzbZ" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvqpn" resolve="EB_Control_Unit" />
+          <ref role="3Ug1AY" node="4tgWazNvqpn" />
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJzhq" role="3UgYNK">
         <property role="TrG5h" value="Brake" />
         <node concept="3Ug1AZ" id="54T4ifBJzhr" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvrdx" resolve="Brake" />
+          <ref role="3Ug1AY" node="4tgWazNvrdx" />
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzxK" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzxL" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvqWg" resolve="distance" />
+          <ref role="3Ug1Ha" node="4tgWazNvqWg" />
           <node concept="3Ug1GJ" id="54T4ifBJzxM" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyQQ" resolve="Laser1" />
+            <ref role="3Ug1GI" node="54T4ifBJyQQ" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzxN" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvrtx" resolve="laser1" />
+          <ref role="3Ug1Ha" node="4tgWazNvrtx" />
           <node concept="3Ug1GJ" id="54T4ifBJzxO" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyW2" resolve="Sensor_Voter" />
+            <ref role="3Ug1GI" node="54T4ifBJyW2" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzya" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzyb" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvqWg" resolve="distance" />
+          <ref role="3Ug1Ha" node="4tgWazNvqWg" />
           <node concept="3Ug1GJ" id="54T4ifBJzyc" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJz6A" resolve="Laser2" />
+            <ref role="3Ug1GI" node="54T4ifBJz6A" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzyd" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7qgRsCGQDaI" resolve="laser2" />
+          <ref role="3Ug1Ha" node="7qgRsCGQDaI" />
           <node concept="3Ug1GJ" id="54T4ifBJzye" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyW2" resolve="Sensor_Voter" />
+            <ref role="3Ug1GI" node="54T4ifBJyW2" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzyD" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzyE" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvqTx" resolve="distance" />
+          <ref role="3Ug1Ha" node="4tgWazNvqTx" />
           <node concept="3Ug1GJ" id="54T4ifBJzyF" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyQK" resolve="Ultrasound1" />
+            <ref role="3Ug1GI" node="54T4ifBJyQK" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzyG" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvrtW" resolve="ultrasound1" />
+          <ref role="3Ug1Ha" node="4tgWazNvrtW" />
           <node concept="3Ug1GJ" id="54T4ifBJzyH" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyW2" resolve="Sensor_Voter" />
+            <ref role="3Ug1GI" node="54T4ifBJyW2" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzzd" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzze" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvqTx" resolve="distance" />
+          <ref role="3Ug1Ha" node="4tgWazNvqTx" />
           <node concept="3Ug1GJ" id="54T4ifBJzzf" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJz6q" resolve="Ultrasound2" />
+            <ref role="3Ug1GI" node="54T4ifBJz6q" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzzg" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvrup" resolve="ultrasound2" />
+          <ref role="3Ug1Ha" node="4tgWazNvrup" />
           <node concept="3Ug1GJ" id="54T4ifBJzzh" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyW2" resolve="Sensor_Voter" />
+            <ref role="3Ug1GI" node="54T4ifBJyW2" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJz$$" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJz$_" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvrfM" resolve="braking" />
+          <ref role="3Ug1Ha" node="4tgWazNvrfM" />
           <node concept="3Ug1GJ" id="54T4ifBJz$A" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzhq" resolve="Brake" />
+            <ref role="3Ug1GI" node="54T4ifBJzhq" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJz$B" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvrm3" resolve="braking" />
+          <ref role="3Ug1Ha" node="4tgWazNvrm3" />
           <node concept="3Ug1GJ" id="54T4ifBJz$C" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJz_n" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJz_o" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvrvj" resolve="distance_front" />
+          <ref role="3Ug1Ha" node="4tgWazNvrvj" />
           <node concept="3Ug1GJ" id="54T4ifBJz_p" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyW2" resolve="Sensor_Voter" />
+            <ref role="3Ug1GI" node="54T4ifBJyW2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJz_q" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvrnG" resolve="distance_front" />
+          <ref role="3Ug1Ha" node="4tgWazNvrnG" />
           <node concept="3Ug1GJ" id="54T4ifBJz_r" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzAf" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzAg" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvrx3" resolve="reference_velocity" />
+          <ref role="3Ug1Ha" node="4tgWazNvrx3" />
           <node concept="3Ug1GJ" id="54T4ifBJzAh" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyW2" resolve="Sensor_Voter" />
+            <ref role="3Ug1GI" node="54T4ifBJyW2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzAi" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvryb" resolve="reference_velocity" />
+          <ref role="3Ug1Ha" node="4tgWazNvryb" />
           <node concept="3Ug1GJ" id="54T4ifBJzAj" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzBc" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzBd" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvrvB" resolve="alert" />
+          <ref role="3Ug1Ha" node="4tgWazNvrvB" />
           <node concept="3Ug1GJ" id="54T4ifBJzBe" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyW2" resolve="Sensor_Voter" />
+            <ref role="3Ug1GI" node="54T4ifBJyW2" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzBf" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvryR" resolve="alert" />
+          <ref role="3Ug1Ha" node="4tgWazNvryR" />
           <node concept="3Ug1GJ" id="54T4ifBJzBg" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJzCY" role="3UgYNK">
         <property role="TrG5h" value="Speed_Sensor" />
         <node concept="3Ug1AZ" id="54T4ifBJzCZ" role="3Ug1A_">
-          <ref role="3Ug1AY" node="4tgWazNvr83" resolve="Speed_Sensor" />
+          <ref role="3Ug1AY" node="4tgWazNvr83" />
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzE1" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzE2" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvr88" resolve="current_speed" />
+          <ref role="3Ug1Ha" node="4tgWazNvr88" />
           <node concept="3Ug1GJ" id="54T4ifBJzE3" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzCY" resolve="Speed_Sensor" />
+            <ref role="3Ug1GI" node="54T4ifBJzCY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzE4" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvrn7" resolve="current_speed" />
+          <ref role="3Ug1Ha" node="4tgWazNvrn7" />
           <node concept="3Ug1GJ" id="54T4ifBJzE5" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJzUx" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJzUy" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvreR" resolve="push" />
+          <ref role="3Ug1Ha" node="4tgWazNvreR" />
           <node concept="3Ug1GJ" id="54T4ifBJzUz" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzhq" resolve="Brake" />
+            <ref role="3Ug1GI" node="54T4ifBJzhq" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJzU$" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvsms" resolve="brake" />
+          <ref role="3Ug1Ha" node="4tgWazNvsms" />
           <node concept="3Ug1GJ" id="54T4ifBJzU_" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJ$w7" role="3UgYNK">
         <property role="TrG5h" value="EB_Communication_Unit" />
         <node concept="3Ug1AZ" id="54T4ifBJ$w8" role="3Ug1A_">
-          <ref role="3Ug1AY" node="16Ng_xNT8KQ" resolve="EB_Communication_Unit" />
+          <ref role="3Ug1AY" node="16Ng_xNT8KQ" />
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJ$Ba" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJ$Bb" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="16Ng_xNT8ss" resolve="warning_out" />
+          <ref role="3Ug1Ha" node="16Ng_xNT8ss" />
           <node concept="3Ug1GJ" id="54T4ifBJ$Bc" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJ$Bd" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="16Ng_xNT8Mt" resolve="driver_warning_in" />
+          <ref role="3Ug1Ha" node="16Ng_xNT8Mt" />
           <node concept="3Ug1GJ" id="54T4ifBJ$Be" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$w7" resolve="EB_Communication_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJ$w7" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJ$C_" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJ$CA" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvrTe" resolve="state" />
+          <ref role="3Ug1Ha" node="4tgWazNvrTe" />
           <node concept="3Ug1GJ" id="54T4ifBJ$CB" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJ$CC" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="16Ng_xNT8ME" resolve="state_in" />
+          <ref role="3Ug1Ha" node="16Ng_xNT8ME" />
           <node concept="3Ug1GJ" id="54T4ifBJ$CD" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$w7" resolve="EB_Communication_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJ$w7" />
           </node>
         </node>
       </node>
       <node concept="3Ug1AV" id="54T4ifBJ$TQ" role="3UgYNK">
         <property role="TrG5h" value="Brake_Monitor" />
         <node concept="3Ug1AZ" id="54T4ifBJ$TR" role="3Ug1A_">
-          <ref role="3Ug1AY" node="7qgRsCGQBta" resolve="Brake_Monitor" />
+          <ref role="3Ug1AY" node="7qgRsCGQBta" />
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJ_1j" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJ_1k" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvr88" resolve="current_speed" />
+          <ref role="3Ug1Ha" node="4tgWazNvr88" />
           <node concept="3Ug1GJ" id="54T4ifBJ_1l" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzCY" resolve="Speed_Sensor" />
+            <ref role="3Ug1GI" node="54T4ifBJzCY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJ_1m" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7qgRsCGQCet" resolve="velocity" />
+          <ref role="3Ug1Ha" node="7qgRsCGQCet" />
           <node concept="3Ug1GJ" id="54T4ifBJ_1n" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$TQ" resolve="Brake_Monitor" />
+            <ref role="3Ug1GI" node="54T4ifBJ$TQ" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJ_36" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJ_37" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="7qgRsCGUqVJ" resolve="old_speed" />
+          <ref role="3Ug1Ha" node="7qgRsCGUqVJ" />
           <node concept="3Ug1GJ" id="54T4ifBJ_38" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzCY" resolve="Speed_Sensor" />
+            <ref role="3Ug1GI" node="54T4ifBJzCY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJ_39" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7qgRsCGQC9d" resolve="old_velocity" />
+          <ref role="3Ug1Ha" node="7qgRsCGQC9d" />
           <node concept="3Ug1GJ" id="54T4ifBJ_3a" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$TQ" resolve="Brake_Monitor" />
+            <ref role="3Ug1GI" node="54T4ifBJ$TQ" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="54T4ifBJ_77" role="3UgYNK">
         <node concept="3Ug1GC" id="54T4ifBJ_78" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="7qgRsCGQCh4" resolve="alert" />
+          <ref role="3Ug1Ha" node="7qgRsCGQCh4" />
           <node concept="3Ug1GJ" id="54T4ifBJ_79" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$TQ" resolve="Brake_Monitor" />
+            <ref role="3Ug1GI" node="54T4ifBJ$TQ" />
           </node>
         </node>
         <node concept="3Ug1GC" id="54T4ifBJ_7a" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvryR" resolve="alert" />
+          <ref role="3Ug1Ha" node="4tgWazNvryR" />
           <node concept="3Ug1GJ" id="54T4ifBJ_7b" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
@@ -5281,155 +5281,155 @@
       </node>
       <node concept="3Ug1$w" id="54T4ifBJ_CM" role="3UgYNK">
         <node concept="3Ug1Ap" id="54T4ifBJ_CN" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="54T4ifBJ_jJ" resolve="Throttle_IN" />
+          <ref role="3Ug1Ao" node="54T4ifBJ_jJ" />
         </node>
         <node concept="3Ug1GC" id="54T4ifBJ_CO" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4tgWazNvrm$" resolve="accelerating" />
+          <ref role="3Ug1Ha" node="4tgWazNvrm$" />
           <node concept="3Ug1GJ" id="54T4ifBJ_CP" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
       </node>
       <node concept="3UnI81" id="7hUqFOkxqdU" role="3UnI9m">
         <property role="TrG5h" value="distance" />
         <node concept="2XEmfi" id="2r$08YM5HBr" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="3UnI81" id="4pSWRNV3E4f" role="3UnI9m">
         <property role="TrG5h" value="speed_IN" />
         <node concept="2XEmfi" id="2r$08YM5HCN" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="3UnI81" id="2r$08YM5vEK" role="3UnI9m">
         <property role="TrG5h" value="brake_IN" />
         <node concept="2XEmfi" id="2r$08YM5HDr" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
         </node>
       </node>
       <node concept="3Ug1$w" id="7hUqFOkxqmd" role="3UgYNK">
         <node concept="3Ug1Ap" id="7hUqFOkxqme" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="7hUqFOkxqdU" resolve="distance" />
+          <ref role="3Ug1Ao" node="7hUqFOkxqdU" />
         </node>
         <node concept="3Ug1GC" id="7hUqFOkxqmf" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7hUqFOkxqen" resolve="distance_in" />
+          <ref role="3Ug1Ha" node="7hUqFOkxqen" />
           <node concept="3Ug1GJ" id="7hUqFOkxqmg" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJz6q" resolve="Ultrasound2" />
+            <ref role="3Ug1GI" node="54T4ifBJz6q" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="7hUqFOkxqoi" role="3UgYNK">
         <node concept="3Ug1Ap" id="7hUqFOkxqoj" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="7hUqFOkxqdU" resolve="distance" />
+          <ref role="3Ug1Ao" node="7hUqFOkxqdU" />
         </node>
         <node concept="3Ug1GC" id="7hUqFOkxqok" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7hUqFOkxqeu" resolve="distance_in" />
+          <ref role="3Ug1Ha" node="7hUqFOkxqeu" />
           <node concept="3Ug1GJ" id="7hUqFOkxqol" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyQQ" resolve="Laser1" />
+            <ref role="3Ug1GI" node="54T4ifBJyQQ" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="7hUqFOkxqqr" role="3UgYNK">
         <node concept="3Ug1Ap" id="7hUqFOkxqqs" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="7hUqFOkxqdU" resolve="distance" />
+          <ref role="3Ug1Ao" node="7hUqFOkxqdU" />
         </node>
         <node concept="3Ug1GC" id="7hUqFOkxqqt" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7hUqFOkxqeu" resolve="distance_in" />
+          <ref role="3Ug1Ha" node="7hUqFOkxqeu" />
           <node concept="3Ug1GJ" id="7hUqFOkxqqu" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJz6A" resolve="Laser2" />
+            <ref role="3Ug1GI" node="54T4ifBJz6A" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="7hUqFOkxqsC" role="3UgYNK">
         <node concept="3Ug1Ap" id="7hUqFOkxqsD" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="7hUqFOkxqdU" resolve="distance" />
+          <ref role="3Ug1Ao" node="7hUqFOkxqdU" />
         </node>
         <node concept="3Ug1GC" id="7hUqFOkxqsE" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7hUqFOkxqen" resolve="distance_in" />
+          <ref role="3Ug1Ha" node="7hUqFOkxqen" />
           <node concept="3Ug1GJ" id="7hUqFOkxqsF" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJyQK" resolve="Ultrasound1" />
+            <ref role="3Ug1GI" node="54T4ifBJyQK" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="4pSWRNV3HPc" role="3UgYNK">
         <node concept="3Ug1Ap" id="4pSWRNV3HPd" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="4pSWRNV3E4f" resolve="speed_IN" />
+          <ref role="3Ug1Ao" node="4pSWRNV3E4f" />
         </node>
         <node concept="3Ug1GC" id="4pSWRNV3HPe" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="4pSWRNV3E4O" resolve="speed_in" />
+          <ref role="3Ug1Ha" node="4pSWRNV3E4O" />
           <node concept="3Ug1GJ" id="4pSWRNV3HPf" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzCY" resolve="Speed_Sensor" />
+            <ref role="3Ug1GI" node="54T4ifBJzCY" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2r$08YM5vT1" role="3UgYNK">
         <node concept="3Ug1GC" id="2r$08YM5vT2" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="2r$08YM5vGZ" resolve="brake_out" />
+          <ref role="3Ug1Ha" node="2r$08YM5vGZ" />
           <node concept="3Ug1GJ" id="2r$08YM5vT3" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzhq" resolve="Brake" />
+            <ref role="3Ug1GI" node="54T4ifBJzhq" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="2r$08YM5vT4" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2r$08YM5vHH" resolve="brake_OUT" />
+          <ref role="3Ug1Ao" node="2r$08YM5vHH" />
         </node>
       </node>
       <node concept="3Ug1$w" id="2r$08YM5vVB" role="3UgYNK">
         <node concept="3Ug1Ap" id="2r$08YM5vVC" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="2r$08YM5vEK" resolve="brake_IN" />
+          <ref role="3Ug1Ao" node="2r$08YM5vEK" />
         </node>
         <node concept="3Ug1GC" id="2r$08YM5vVD" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="2r$08YM5vGe" resolve="brake_in" />
+          <ref role="3Ug1Ha" node="2r$08YM5vGe" />
           <node concept="3Ug1GJ" id="2r$08YM5vVE" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzhq" resolve="Brake" />
+            <ref role="3Ug1GI" node="54T4ifBJzhq" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2r$08YM5B7P" role="3UgYNK">
         <node concept="3Ug1GC" id="2r$08YM5B7Q" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="16Ng_xNT8RK" resolve="alert_signal" />
+          <ref role="3Ug1Ha" node="16Ng_xNT8RK" />
           <node concept="3Ug1GJ" id="2r$08YM5B7R" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$w7" resolve="EB_Communication_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJ$w7" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="2r$08YM5B7S" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2l0tHRMMenx" resolve="alert_OUT" />
+          <ref role="3Ug1Ao" node="2l0tHRMMenx" />
         </node>
       </node>
       <node concept="3Ug1$w" id="2r$08YM5BfA" role="3UgYNK">
         <node concept="3Ug1GC" id="2r$08YM5BfB" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="16Ng_xNT8RX" resolve="state" />
+          <ref role="3Ug1Ha" node="16Ng_xNT8RX" />
           <node concept="3Ug1GJ" id="2r$08YM5BfC" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$w7" resolve="EB_Communication_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJ$w7" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="2r$08YM5BfD" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2l0tHRMMeqm" resolve="state_OUT" />
+          <ref role="3Ug1Ao" node="2l0tHRMMeqm" />
         </node>
       </node>
       <node concept="3Ug1$w" id="2r$08YM5Bmv" role="3UgYNK">
         <node concept="3Ug1GC" id="2r$08YM5Bmw" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvsms" resolve="brake" />
+          <ref role="3Ug1Ha" node="4tgWazNvsms" />
           <node concept="3Ug1GJ" id="2r$08YM5Bmx" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJzbY" resolve="EB_Control_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJzbY" />
           </node>
         </node>
         <node concept="3Ug1GC" id="2r$08YM5Bmy" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="7qgRsCGQCeU" resolve="eb_brake" />
+          <ref role="3Ug1Ha" node="7qgRsCGQCeU" />
           <node concept="3Ug1GJ" id="2r$08YM5Bmz" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$TQ" resolve="Brake_Monitor" />
+            <ref role="3Ug1GI" node="54T4ifBJ$TQ" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="2r$08YM5Bt7" role="3UgYNK">
         <node concept="3Ug1GC" id="2r$08YM5Bt8" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="4tgWazNvqYR" resolve="display_message" />
+          <ref role="3Ug1Ha" node="4tgWazNvqYR" />
           <node concept="3Ug1GJ" id="2r$08YM5Bt9" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="54T4ifBJ$w7" resolve="EB_Communication_Unit" />
+            <ref role="3Ug1GI" node="54T4ifBJ$w7" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="2r$08YM5Bta" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="2l0tHRMMepZ" resolve="display_message_OUT" />
+          <ref role="3Ug1Ao" node="2l0tHRMMepZ" />
         </node>
       </node>
     </node>
@@ -5452,19 +5452,19 @@
       <node concept="3UnI81" id="4tgWazNvrn7" role="3UnI9m">
         <property role="TrG5h" value="current_speed" />
         <node concept="2XEmfi" id="2r$08YM5HEF" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="3UnI81" id="4tgWazNvrnG" role="3UnI9m">
         <property role="TrG5h" value="distance_front" />
         <node concept="2XEmfi" id="2r$08YM5HFj" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="3UnI81" id="4tgWazNvryb" role="3UnI9m">
         <property role="TrG5h" value="reference_velocity" />
         <node concept="2XEmfi" id="2r$08YM5HGb" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="3UnI81" id="4tgWazNvryR" role="3UnI9m">
@@ -5474,7 +5474,7 @@
       <node concept="3UnI9n" id="4tgWazNvrTe" role="3UnI90">
         <property role="TrG5h" value="state" />
         <node concept="2XJXdx" id="4tgWazNvsiC" role="3UnI80">
-          <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state_eb" />
+          <ref role="2XJXdw" node="2Q6_IeFkaVR" />
         </node>
       </node>
       <node concept="3UnI9n" id="16Ng_xNT8ss" role="3UnI90">
@@ -5484,7 +5484,7 @@
       <node concept="3UnI9n" id="4tgWazNvsms" role="3UnI90">
         <property role="TrG5h" value="brake" />
         <node concept="2XEmfi" id="2r$08YM5HH3" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
         </node>
       </node>
       <node concept="3UTh7Y" id="6MaWlu$kClq" role="3UnIb_">
@@ -5493,19 +5493,19 @@
           <node concept="32OYss" id="6MaWlu$kCsh" role="1yBIc4">
             <node concept="1yyYsf" id="6MaWlu$kCsi" role="32OYtT">
               <node concept="3Ug1Ap" id="6MaWlu$kClA" role="2H9Iav">
-                <ref role="3Ug1Ao" node="4tgWazNvrm$" resolve="accelerating" />
+                <ref role="3Ug1Ao" node="4tgWazNvrm$" />
               </node>
               <node concept="2Sa8AP" id="6MaWlu$kCsj" role="2H9Ial">
                 <node concept="32OYss" id="6MaWlu$kCsk" role="1yBIc4">
                   <node concept="2HbMbg" id="6MaWlu$kCsl" role="32OYtT">
                     <node concept="1yA0yd" id="6MaWlu$kCsm" role="2H9Iav">
                       <node concept="3Ug1Ap" id="6MaWlu$kClZ" role="32OYtT">
-                        <ref role="3Ug1Ao" node="4tgWazNvsms" resolve="brake" />
+                        <ref role="3Ug1Ao" node="4tgWazNvsms" />
                       </node>
                     </node>
                     <node concept="1yA0yd" id="6MaWlu$kCsn" role="2H9Ial">
                       <node concept="3Ug1Ap" id="6MaWlu$kCmN" role="32OYtT">
-                        <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="warning_out" />
+                        <ref role="3Ug1Ao" node="16Ng_xNT8ss" />
                       </node>
                     </node>
                   </node>
@@ -5521,20 +5521,20 @@
           <node concept="32OYss" id="6MaWlu$kCAC" role="1yBIc4">
             <node concept="1yyYsf" id="6MaWlu$kCAD" role="32OYtT">
               <node concept="3Ug1Ap" id="6MaWlu$kCtj" role="2H9Iav">
-                <ref role="3Ug1Ao" node="4tgWazNvryR" resolve="alert" />
+                <ref role="3Ug1Ao" node="4tgWazNvryR" />
               </node>
               <node concept="32OYss" id="6MaWlu$kCAE" role="2H9Ial">
                 <node concept="2HbMbg" id="6MaWlu$kCAF" role="32OYtT">
                   <node concept="3Ug1Ap" id="6MaWlu$kCtK" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="warning_out" />
+                    <ref role="3Ug1Ao" node="16Ng_xNT8ss" />
                   </node>
                   <node concept="32OYss" id="6MaWlu$kCAG" role="2H9Ial">
                     <node concept="2HbLFT" id="6MaWlu$kCAH" role="32OYtT">
                       <node concept="3Ug1Ap" id="6MaWlu$kCu6" role="2H9Iav">
-                        <ref role="3Ug1Ao" node="4tgWazNvrTe" resolve="state" />
+                        <ref role="3Ug1Ao" node="4tgWazNvrTe" />
                       </node>
                       <node concept="2HeeqP" id="2r$08YM5_DL" role="2H9Ial">
-                        <ref role="2HeeqO" node="7hUqFOkxssq" resolve="warning" />
+                        <ref role="2HeeqO" node="7hUqFOkxssq" />
                       </node>
                     </node>
                   </node>
@@ -5554,30 +5554,30 @@
                   <node concept="32OYss" id="6MaWlu$kEyc" role="2H9Iav">
                     <node concept="2H9DuE" id="6MaWlu$kEyd" role="32OYtT">
                       <node concept="3Ug1Ap" id="6MaWlu$kCD5" role="2H9Iav">
-                        <ref role="3Ug1Ao" node="4tgWazNvrnG" resolve="distance_front" />
+                        <ref role="3Ug1Ao" node="4tgWazNvrnG" />
                       </node>
                       <node concept="3Ug1Ap" id="6MaWlu$kCDp" role="2H9Ial">
-                        <ref role="3Ug1Ao" node="4tgWazNvryb" resolve="reference_velocity" />
+                        <ref role="3Ug1Ao" node="4tgWazNvryb" />
                       </node>
                     </node>
                   </node>
                   <node concept="hx854" id="6MaWlu$kCEB" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
+                    <ref role="hx9HS" node="6MaWlu$kyrV" />
                   </node>
                 </node>
               </node>
               <node concept="32OYss" id="6MaWlu$kEye" role="2H9Ial">
                 <node concept="2HbMbg" id="6MaWlu$kEyf" role="32OYtT">
                   <node concept="3Ug1Ap" id="6MaWlu$kCFv" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="warning_out" />
+                    <ref role="3Ug1Ao" node="16Ng_xNT8ss" />
                   </node>
                   <node concept="32OYss" id="6MaWlu$kEyg" role="2H9Ial">
                     <node concept="2HbLFT" id="6MaWlu$kEyh" role="32OYtT">
                       <node concept="3Ug1Ap" id="6MaWlu$kD2_" role="2H9Iav">
-                        <ref role="3Ug1Ao" node="4tgWazNvrTe" resolve="state" />
+                        <ref role="3Ug1Ao" node="4tgWazNvrTe" />
                       </node>
                       <node concept="2HeeqP" id="2r$08YM5t99" role="2H9Ial">
-                        <ref role="2HeeqO" node="6MaWlu$kzly" resolve="warning" />
+                        <ref role="2HeeqO" node="6MaWlu$kzly" />
                       </node>
                     </node>
                   </node>
@@ -5597,25 +5597,25 @@
                   <node concept="32OYss" id="6MaWlu$kE$c" role="2H9Iav">
                     <node concept="2H9DuE" id="6MaWlu$kE$d" role="32OYtT">
                       <node concept="3Ug1Ap" id="6MaWlu$kE$e" role="2H9Iav">
-                        <ref role="3Ug1Ao" node="4tgWazNvrnG" resolve="distance_front" />
+                        <ref role="3Ug1Ao" node="4tgWazNvrnG" />
                       </node>
                       <node concept="3Ug1Ap" id="6MaWlu$kE$f" role="2H9Ial">
-                        <ref role="3Ug1Ao" node="4tgWazNvryb" resolve="reference_velocity" />
+                        <ref role="3Ug1Ao" node="4tgWazNvryb" />
                       </node>
                     </node>
                   </node>
                   <node concept="hx854" id="6MaWlu$kE$R" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
+                    <ref role="hx9HS" node="6MaWlu$kyMH" />
                   </node>
                 </node>
               </node>
               <node concept="32OYss" id="6MaWlu$kE$h" role="2H9Ial">
                 <node concept="2HbMbg" id="6MaWlu$kE$i" role="32OYtT">
                   <node concept="3Ug1Ap" id="6MaWlu$kE$j" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="warning_out" />
+                    <ref role="3Ug1Ao" node="16Ng_xNT8ss" />
                   </node>
                   <node concept="3Ug1Ap" id="6MaWlu$kF3M" role="2H9Ial">
-                    <ref role="3Ug1Ao" node="4tgWazNvsms" resolve="brake" />
+                    <ref role="3Ug1Ao" node="4tgWazNvsms" />
                   </node>
                 </node>
               </node>
@@ -5630,7 +5630,7 @@
       <node concept="3UnI9n" id="4tgWazNvqTx" role="3UnI90">
         <property role="TrG5h" value="distance" />
         <node concept="2XEmfi" id="2r$08YM5HJv" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkO" role="lGtFl">
@@ -5646,20 +5646,20 @@
               <node concept="32OYss" id="7hUqFOkxrPY" role="2H9Iav">
                 <node concept="nE0YJ" id="7hUqFOkxrPZ" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3tJn" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="7hUqFOkxqen" resolve="distance_in" />
+                    <ref role="3Ug1Ao" node="7hUqFOkxqen" />
                   </node>
                   <node concept="hx854" id="7hUqFOkxrzV" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$k$iO" resolve="MAX_ULTRA" />
+                    <ref role="hx9HS" node="6MaWlu$k$iO" />
                   </node>
                 </node>
               </node>
               <node concept="32OYss" id="7hUqFOkxrQ0" role="2H9Ial">
                 <node concept="2HbLFT" id="7hUqFOkxrQ1" role="32OYtT">
                   <node concept="3Ug1Ap" id="7hUqFOkxrGu" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvqTx" resolve="distance" />
+                    <ref role="3Ug1Ao" node="4tgWazNvqTx" />
                   </node>
                   <node concept="hx854" id="7hUqFOkxrIC" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$k$iO" resolve="MAX_ULTRA" />
+                    <ref role="hx9HS" node="6MaWlu$k$iO" />
                   </node>
                 </node>
               </node>
@@ -5675,7 +5675,7 @@
               <property role="2IPVms" value="0" />
             </node>
             <node concept="3Ug1Ap" id="7hUqFOkxrRf" role="2H9Iav">
-              <ref role="3Ug1Ao" node="7hUqFOkxqen" resolve="distance_in" />
+              <ref role="3Ug1Ao" node="7hUqFOkxqen" />
             </node>
           </node>
         </node>
@@ -5688,7 +5688,7 @@
               <node concept="32OYss" id="7hUqFOkxs9E" role="2H9Iav">
                 <node concept="nE0YL" id="7hUqFOkxs9F" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3tJy" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="7hUqFOkxqen" resolve="distance_in" />
+                    <ref role="3Ug1Ao" node="7hUqFOkxqen" />
                   </node>
                   <node concept="2IPVmt" id="7hUqFOkxs9G" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -5698,7 +5698,7 @@
               <node concept="32OYss" id="7hUqFOkxs9H" role="2H9Ial">
                 <node concept="2HbLFT" id="7hUqFOkxs9I" role="32OYtT">
                   <node concept="3Ug1Ap" id="7hUqFOkxrUm" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvqTx" resolve="distance" />
+                    <ref role="3Ug1Ao" node="4tgWazNvqTx" />
                   </node>
                   <node concept="2IPVmt" id="7hUqFOkxs9J" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -5712,7 +5712,7 @@
       <node concept="3UnI81" id="7hUqFOkxqen" role="3UnI9m">
         <property role="TrG5h" value="distance_in" />
         <node concept="2XEmfi" id="2r$08YM5HI3" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
     </node>
@@ -5722,7 +5722,7 @@
       <node concept="3UnI9n" id="4tgWazNvqWg" role="3UnI90">
         <property role="TrG5h" value="distance" />
         <node concept="2XEmfi" id="2r$08YM5HM9" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkM" role="lGtFl">
@@ -5738,20 +5738,20 @@
               <node concept="32OYss" id="4pSWRNV3tHM" role="2H9Iav">
                 <node concept="nE0YJ" id="4pSWRNV3tHN" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3tJH" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="7hUqFOkxqeu" resolve="distance_in" />
+                    <ref role="3Ug1Ao" node="7hUqFOkxqeu" />
                   </node>
                   <node concept="hx854" id="4pSWRNV3tJL" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+                    <ref role="hx9HS" node="6MaWlu$kzVw" />
                   </node>
                 </node>
               </node>
               <node concept="32OYss" id="4pSWRNV3tHQ" role="2H9Ial">
                 <node concept="2HbLFT" id="4pSWRNV3tHR" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3tHS" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvqWg" resolve="distance" />
+                    <ref role="3Ug1Ao" node="4tgWazNvqWg" />
                   </node>
                   <node concept="hx854" id="4pSWRNV3tJP" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+                    <ref role="hx9HS" node="6MaWlu$kzVw" />
                   </node>
                 </node>
               </node>
@@ -5767,7 +5767,7 @@
               <property role="2IPVms" value="0" />
             </node>
             <node concept="3Ug1Ap" id="4pSWRNV3tHY" role="2H9Iav">
-              <ref role="3Ug1Ao" node="7hUqFOkxqeu" resolve="distance_in" />
+              <ref role="3Ug1Ao" node="7hUqFOkxqeu" />
             </node>
           </node>
         </node>
@@ -5780,7 +5780,7 @@
               <node concept="32OYss" id="4pSWRNV3tI3" role="2H9Iav">
                 <node concept="nE0YL" id="4pSWRNV3tI4" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3tK4" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="7hUqFOkxqeu" resolve="distance_in" />
+                    <ref role="3Ug1Ao" node="7hUqFOkxqeu" />
                   </node>
                   <node concept="2IPVmt" id="4pSWRNV3tI6" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -5790,7 +5790,7 @@
               <node concept="32OYss" id="4pSWRNV3tI7" role="2H9Ial">
                 <node concept="2HbLFT" id="4pSWRNV3tI8" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3tI9" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvqWg" resolve="distance" />
+                    <ref role="3Ug1Ao" node="4tgWazNvqWg" />
                   </node>
                   <node concept="2IPVmt" id="4pSWRNV3tIa" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -5804,7 +5804,7 @@
       <node concept="3UnI81" id="7hUqFOkxqeu" role="3UnI9m">
         <property role="TrG5h" value="distance_in" />
         <node concept="2XEmfi" id="2r$08YM5HKH" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
     </node>
@@ -5814,13 +5814,13 @@
       <node concept="3UnI81" id="4tgWazNvreR" role="3UnI9m">
         <property role="TrG5h" value="push" />
         <node concept="2XEmfi" id="2r$08YM5HNn" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
         </node>
       </node>
       <node concept="3UnI81" id="2r$08YM5vGe" role="3UnI9m">
         <property role="TrG5h" value="brake_in" />
         <node concept="2XEmfi" id="2r$08YM5HOl" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
         </node>
       </node>
       <node concept="3UnI9n" id="4tgWazNvrfM" role="3UnI90">
@@ -5830,7 +5830,7 @@
       <node concept="3UnI9n" id="2r$08YM5vGZ" role="3UnI90">
         <property role="TrG5h" value="brake_out" />
         <node concept="2XEmfi" id="2r$08YM5HP4" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkG" role="lGtFl">
@@ -5846,17 +5846,17 @@
               <node concept="32OYss" id="6MaWlu$kAEZ" role="2H9Iav">
                 <node concept="nE0YL" id="6MaWlu$kAF0" role="32OYtT">
                   <node concept="3Ug1Ap" id="6MaWlu$kAtg" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvreR" resolve="push" />
+                    <ref role="3Ug1Ao" node="4tgWazNvreR" />
                   </node>
                   <node concept="hx854" id="6MaWlu$kAur" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$kAfV" resolve="MAX_BRAKE" />
+                    <ref role="hx9HS" node="6MaWlu$kAfV" />
                   </node>
                 </node>
               </node>
               <node concept="32OYss" id="6MaWlu$kAF1" role="2H9Ial">
                 <node concept="nE0YI" id="2r$08YM5vYF" role="32OYtT">
                   <node concept="3Ug1Ap" id="6MaWlu$kAuZ" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvreR" resolve="push" />
+                    <ref role="3Ug1Ao" node="4tgWazNvreR" />
                   </node>
                   <node concept="2IPVmt" id="6MaWlu$kAF3" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -5874,13 +5874,13 @@
       <node concept="3UnI9n" id="4tgWazNvr88" role="3UnI90">
         <property role="TrG5h" value="current_speed" />
         <node concept="2XEmfi" id="2r$08YM5HQK" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="3UnI9n" id="7qgRsCGUqVJ" role="3UnI90">
         <property role="TrG5h" value="old_speed" />
         <node concept="2XEmfi" id="2r$08YM5HSe" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="0Sh09" id="4tgWazNvrkK" role="lGtFl">
@@ -5896,20 +5896,20 @@
               <node concept="32OYss" id="4pSWRNV3QDp" role="2H9Iav">
                 <node concept="nE0YJ" id="4pSWRNV3QDq" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3QoH" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4pSWRNV3E4O" resolve="speed_in" />
+                    <ref role="3Ug1Ao" node="4pSWRNV3E4O" />
                   </node>
                   <node concept="hx854" id="4pSWRNV3Qp0" role="2H9Ial">
-                    <ref role="hx9HS" node="4pSWRNV3PC4" resolve="MAX_SPEED" />
+                    <ref role="hx9HS" node="4pSWRNV3PC4" />
                   </node>
                 </node>
               </node>
               <node concept="32OYss" id="4pSWRNV3QDr" role="2H9Ial">
                 <node concept="2HbLFT" id="4pSWRNV3QDs" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3QpI" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvr88" resolve="current_speed" />
+                    <ref role="3Ug1Ao" node="4tgWazNvr88" />
                   </node>
                   <node concept="hx854" id="4pSWRNV3Qqd" role="2H9Ial">
-                    <ref role="hx9HS" node="4pSWRNV3PC4" resolve="MAX_SPEED" />
+                    <ref role="hx9HS" node="4pSWRNV3PC4" />
                   </node>
                 </node>
               </node>
@@ -5925,20 +5925,20 @@
               <node concept="32OYss" id="4pSWRNV3QQ8" role="2H9Iav">
                 <node concept="nE0YL" id="4pSWRNV3QQ9" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3Qri" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4pSWRNV3E4O" resolve="speed_in" />
+                    <ref role="3Ug1Ao" node="4pSWRNV3E4O" />
                   </node>
                   <node concept="hx854" id="4pSWRNV3Qr_" role="2H9Ial">
-                    <ref role="hx9HS" node="4pSWRNV3Q7f" resolve="MIN_SPEED" />
+                    <ref role="hx9HS" node="4pSWRNV3Q7f" />
                   </node>
                 </node>
               </node>
               <node concept="32OYss" id="4pSWRNV3QQa" role="2H9Ial">
                 <node concept="2HbLFT" id="4pSWRNV3QQb" role="32OYtT">
                   <node concept="3Ug1Ap" id="4pSWRNV3Qsj" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvr88" resolve="current_speed" />
+                    <ref role="3Ug1Ao" node="4tgWazNvr88" />
                   </node>
                   <node concept="hx854" id="4pSWRNV3QsQ" role="2H9Ial">
-                    <ref role="hx9HS" node="4pSWRNV3Q7f" resolve="MIN_SPEED" />
+                    <ref role="hx9HS" node="4pSWRNV3Q7f" />
                   </node>
                 </node>
               </node>
@@ -5952,10 +5952,10 @@
           <node concept="2Sa8AP" id="4pSWRNV3QR$" role="1yBIc4">
             <node concept="2HbLFT" id="4pSWRNV3QRX" role="1yBIc4">
               <node concept="3Ug1Ap" id="4pSWRNV3QSA" role="2H9Ial">
-                <ref role="3Ug1Ao" node="4tgWazNvr88" resolve="current_speed" />
+                <ref role="3Ug1Ao" node="4tgWazNvr88" />
               </node>
               <node concept="3Ug1Ap" id="4pSWRNV3QRT" role="2H9Iav">
-                <ref role="3Ug1Ao" node="7qgRsCGUqVJ" resolve="old_speed" />
+                <ref role="3Ug1Ao" node="7qgRsCGUqVJ" />
               </node>
             </node>
           </node>
@@ -5964,7 +5964,7 @@
       <node concept="3UnI81" id="4pSWRNV3E4O" role="3UnI9m">
         <property role="TrG5h" value="speed_in" />
         <node concept="2XEmfi" id="2r$08YM5HPM" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
     </node>
@@ -5974,37 +5974,37 @@
       <node concept="3UnI81" id="4tgWazNvrtx" role="3UnI9m">
         <property role="TrG5h" value="laser1" />
         <node concept="2XEmfi" id="2r$08YM5HTc" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="3UnI81" id="7qgRsCGQDaI" role="3UnI9m">
         <property role="TrG5h" value="laser2" />
         <node concept="2XEmfi" id="2r$08YM5HUA" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="3UnI81" id="4tgWazNvrtW" role="3UnI9m">
         <property role="TrG5h" value="ultrasound1" />
         <node concept="2XEmfi" id="2r$08YM5HW0" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="3UnI81" id="4tgWazNvrup" role="3UnI9m">
         <property role="TrG5h" value="ultrasound2" />
         <node concept="2XEmfi" id="2r$08YM5HXq" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="3UnI9n" id="4tgWazNvrvj" role="3UnI90">
         <property role="TrG5h" value="distance_front" />
         <node concept="2XEmfi" id="2r$08YM5HYO" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" resolve="distance_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzH_nu" />
         </node>
       </node>
       <node concept="3UnI9n" id="4tgWazNvrx3" role="3UnI90">
         <property role="TrG5h" value="reference_velocity" />
         <node concept="2XEmfi" id="2r$08YM5HZM" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="3UnI9n" id="4tgWazNvrvB" role="3UnI90">
@@ -6027,7 +6027,7 @@
                     <node concept="2HbMbg" id="7qgRsCGQQ2X" role="2H9Iav">
                       <node concept="2HbLFT" id="7qgRsCGQQ2Y" role="2H9Iav">
                         <node concept="3Ug1Ap" id="7qgRsCGQDbF" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="4tgWazNvrtx" resolve="laser1" />
+                          <ref role="3Ug1Ao" node="4tgWazNvrtx" />
                         </node>
                         <node concept="2IPVmt" id="7qgRsCGQQ2Z" role="2H9Ial">
                           <property role="2IPVms" value="0" />
@@ -6035,7 +6035,7 @@
                       </node>
                       <node concept="2HbLFT" id="7qgRsCGQQ30" role="2H9Ial">
                         <node concept="3Ug1Ap" id="7qgRsCGQDet" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="7qgRsCGQDaI" resolve="laser2" />
+                          <ref role="3Ug1Ao" node="7qgRsCGQDaI" />
                         </node>
                         <node concept="2IPVmt" id="7qgRsCGQQ31" role="2H9Ial">
                           <property role="2IPVms" value="0" />
@@ -6046,7 +6046,7 @@
                       <node concept="2HbMbg" id="7qgRsCGQQ33" role="2H9Iav">
                         <node concept="2HbLFT" id="7qgRsCGQQ34" role="2H9Iav">
                           <node concept="3Ug1Ap" id="7qgRsCGQDBy" role="2H9Iav">
-                            <ref role="3Ug1Ao" node="4tgWazNvrtx" resolve="laser1" />
+                            <ref role="3Ug1Ao" node="4tgWazNvrtx" />
                           </node>
                           <node concept="2IPVmt" id="7qgRsCGQQ35" role="2H9Ial">
                             <property role="2IPVms" value="0" />
@@ -6054,7 +6054,7 @@
                         </node>
                         <node concept="2HbLFT" id="7qgRsCGQQ36" role="2H9Ial">
                           <node concept="3Ug1Ap" id="7qgRsCGQDPk" role="2H9Iav">
-                            <ref role="3Ug1Ao" node="4tgWazNvrtW" resolve="ultrasound1" />
+                            <ref role="3Ug1Ao" node="4tgWazNvrtW" />
                           </node>
                           <node concept="2IPVmt" id="7qgRsCGQQ37" role="2H9Ial">
                             <property role="2IPVms" value="0" />
@@ -6063,7 +6063,7 @@
                       </node>
                       <node concept="2HbLFT" id="7qgRsCGQQ38" role="2H9Ial">
                         <node concept="3Ug1Ap" id="7qgRsCGQEnk" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="4tgWazNvrup" resolve="ultrasound2" />
+                          <ref role="3Ug1Ao" node="4tgWazNvrup" />
                         </node>
                         <node concept="2IPVmt" id="7qgRsCGQQ39" role="2H9Ial">
                           <property role="2IPVms" value="0" />
@@ -6075,7 +6075,7 @@
                     <node concept="2HbMbg" id="7qgRsCGQQ3b" role="2H9Iav">
                       <node concept="2HbLFT" id="7qgRsCGQQ3c" role="2H9Iav">
                         <node concept="3Ug1Ap" id="7qgRsCGQFKg" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="7qgRsCGQDaI" resolve="laser2" />
+                          <ref role="3Ug1Ao" node="7qgRsCGQDaI" />
                         </node>
                         <node concept="2IPVmt" id="7qgRsCGQQ3d" role="2H9Ial">
                           <property role="2IPVms" value="0" />
@@ -6083,7 +6083,7 @@
                       </node>
                       <node concept="2HbLFT" id="7qgRsCGQQ3e" role="2H9Ial">
                         <node concept="3Ug1Ap" id="7qgRsCGQIVI" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="4tgWazNvrtW" resolve="ultrasound1" />
+                          <ref role="3Ug1Ao" node="4tgWazNvrtW" />
                         </node>
                         <node concept="2IPVmt" id="7qgRsCGQQ3f" role="2H9Ial">
                           <property role="2IPVms" value="0" />
@@ -6095,7 +6095,7 @@
                         <property role="2IPVms" value="0" />
                       </node>
                       <node concept="3Ug1Ap" id="7qgRsCGQQ5m" role="2H9Iav">
-                        <ref role="3Ug1Ao" node="4tgWazNvrup" resolve="ultrasound2" />
+                        <ref role="3Ug1Ao" node="4tgWazNvrup" />
                       </node>
                     </node>
                   </node>
@@ -6103,7 +6103,7 @@
               </node>
               <node concept="2Sa8AP" id="4pSWRNV3zBM" role="2H9Ial">
                 <node concept="3Ug1Ap" id="4pSWRNV3zC0" role="1yBIc4">
-                  <ref role="3Ug1Ao" node="4tgWazNvrvB" resolve="alert" />
+                  <ref role="3Ug1Ao" node="4tgWazNvrvB" />
                 </node>
               </node>
             </node>
@@ -6120,7 +6120,7 @@
                   <node concept="32OYss" id="6MaWlu$kCaV" role="2H9Iav">
                     <node concept="nE0YL" id="6MaWlu$kCaW" role="32OYtT">
                       <node concept="3Ug1Ap" id="6MaWlu$kCaX" role="2H9Iav">
-                        <ref role="3Ug1Ao" node="4tgWazNvrvj" resolve="distance_front" />
+                        <ref role="3Ug1Ao" node="4tgWazNvrvj" />
                       </node>
                       <node concept="2IPVmt" id="6MaWlu$kCaY" role="2H9Ial">
                         <property role="2IPVms" value="0" />
@@ -6130,10 +6130,10 @@
                   <node concept="32OYss" id="6MaWlu$kCaZ" role="2H9Ial">
                     <node concept="nE0YJ" id="6MaWlu$kCb0" role="32OYtT">
                       <node concept="3Ug1Ap" id="6MaWlu$kCb1" role="2H9Iav">
-                        <ref role="3Ug1Ao" node="4tgWazNvrvj" resolve="distance_front" />
+                        <ref role="3Ug1Ao" node="4tgWazNvrvj" />
                       </node>
                       <node concept="hx854" id="6MaWlu$kCb2" role="2H9Ial">
-                        <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+                        <ref role="hx9HS" node="6MaWlu$kzVw" />
                       </node>
                     </node>
                   </node>
@@ -6141,7 +6141,7 @@
               </node>
               <node concept="2Sa8AP" id="4pSWRNV3zBp" role="2H9Ial">
                 <node concept="3Ug1Ap" id="4pSWRNV3zBB" role="1yBIc4">
-                  <ref role="3Ug1Ao" node="4tgWazNvrvB" resolve="alert" />
+                  <ref role="3Ug1Ao" node="4tgWazNvrvB" />
                 </node>
               </node>
             </node>
@@ -6158,7 +6158,7 @@
       <node concept="3UnI81" id="16Ng_xNT8ME" role="3UnI9m">
         <property role="TrG5h" value="state_in" />
         <node concept="2XJXdx" id="2r$08YM5tad" role="3UnI80">
-          <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state_eb" />
+          <ref role="2XJXdw" node="2Q6_IeFkaVR" />
         </node>
       </node>
       <node concept="3UnI9n" id="16Ng_xNT8RK" role="3UnI90">
@@ -6168,13 +6168,13 @@
       <node concept="3UnI9n" id="4tgWazNvqYR" role="3UnI90">
         <property role="TrG5h" value="display_message" />
         <node concept="2XEmfi" id="2r$08YM5tH2" role="3UnI80">
-          <ref role="2XEmfl" node="2r$08YM5tsB" resolve="DISPLAY_MESSAGE" />
+          <ref role="2XEmfl" node="2r$08YM5tsB" />
         </node>
       </node>
       <node concept="3UnI9n" id="16Ng_xNT8RX" role="3UnI90">
         <property role="TrG5h" value="state" />
         <node concept="2XJXdx" id="2r$08YM5taC" role="3UnI80">
-          <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state_eb" />
+          <ref role="2XJXdw" node="2Q6_IeFkaVR" />
         </node>
       </node>
       <node concept="0Sh09" id="2NJwv_HFJYu" role="lGtFl">
@@ -6186,12 +6186,12 @@
         <property role="TrG5h" value="Forward_Warning" />
         <node concept="1yyYsf" id="6MaWlu$kChv" role="1yBDGv">
           <node concept="3Ug1Ap" id="6MaWlu$kCcX" role="2H9Iav">
-            <ref role="3Ug1Ao" node="16Ng_xNT8Mt" resolve="driver_warning_in" />
+            <ref role="3Ug1Ao" node="16Ng_xNT8Mt" />
           </node>
           <node concept="32OYss" id="6MaWlu$kChw" role="2H9Ial">
             <node concept="2HbMbg" id="6MaWlu$kChx" role="32OYtT">
               <node concept="3Ug1Ap" id="6MaWlu$kCdS" role="2H9Iav">
-                <ref role="3Ug1Ao" node="16Ng_xNT8RK" resolve="alert_signal" />
+                <ref role="3Ug1Ao" node="16Ng_xNT8RK" />
               </node>
               <node concept="32OYss" id="6MaWlu$kChz" role="2H9Ial">
                 <node concept="2HbLFT" id="2r$08YM5tbH" role="32OYtT">
@@ -6199,7 +6199,7 @@
                     <property role="2IPVms" value="0" />
                   </node>
                   <node concept="3Ug1Ap" id="6MaWlu$kCeq" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="4tgWazNvqYR" resolve="display_message" />
+                    <ref role="3Ug1Ao" node="4tgWazNvqYR" />
                   </node>
                 </node>
               </node>
@@ -6213,10 +6213,10 @@
           <node concept="32OYss" id="6MaWlu$kCkv" role="1yBIc4">
             <node concept="2HbLFT" id="6MaWlu$kCkw" role="32OYtT">
               <node concept="3Ug1Ap" id="6MaWlu$kCjy" role="2H9Iav">
-                <ref role="3Ug1Ao" node="16Ng_xNT8ME" resolve="state_in" />
+                <ref role="3Ug1Ao" node="16Ng_xNT8ME" />
               </node>
               <node concept="3Ug1Ap" id="6MaWlu$kCjS" role="2H9Ial">
-                <ref role="3Ug1Ao" node="16Ng_xNT8RX" resolve="state" />
+                <ref role="3Ug1Ao" node="16Ng_xNT8RX" />
               </node>
             </node>
           </node>
@@ -6229,19 +6229,19 @@
       <node concept="3UnI81" id="7qgRsCGQC9d" role="3UnI9m">
         <property role="TrG5h" value="old_velocity" />
         <node concept="2XEmfi" id="2r$08YM5I0w" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="3UnI81" id="7qgRsCGQCet" role="3UnI9m">
         <property role="TrG5h" value="velocity" />
         <node concept="2XEmfi" id="2r$08YM5I0$" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
         </node>
       </node>
       <node concept="3UnI81" id="7qgRsCGQCeU" role="3UnI9m">
         <property role="TrG5h" value="eb_brake" />
         <node concept="2XEmfi" id="2r$08YM5I2c" role="3UnI80">
-          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
         </node>
       </node>
       <node concept="3UnI9n" id="7qgRsCGQCh4" role="3UnI90">
@@ -6264,7 +6264,7 @@
                     <node concept="32OYss" id="2r$08YM5AWF" role="2H9Iav">
                       <node concept="nE0YJ" id="2r$08YM5AWG" role="32OYtT">
                         <node concept="3Ug1Ap" id="7qgRsCGUpk5" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="7qgRsCGQCeU" resolve="eb_brake" />
+                          <ref role="3Ug1Ao" node="7qgRsCGQCeU" />
                         </node>
                         <node concept="2IPVmt" id="2r$08YM5AWH" role="2H9Ial">
                           <property role="2IPVms" value="0" />
@@ -6274,10 +6274,10 @@
                     <node concept="32OYss" id="2r$08YM5AWI" role="2H9Ial">
                       <node concept="nE0YK" id="2r$08YM5AWJ" role="32OYtT">
                         <node concept="3Ug1Ap" id="7qgRsCGUpkM" role="2H9Iav">
-                          <ref role="3Ug1Ao" node="7qgRsCGQC9d" resolve="old_velocity" />
+                          <ref role="3Ug1Ao" node="7qgRsCGQC9d" />
                         </node>
                         <node concept="3Ug1Ap" id="3p1$yKVlhQw" role="2H9Ial">
-                          <ref role="3Ug1Ao" node="7qgRsCGQCet" resolve="velocity" />
+                          <ref role="3Ug1Ao" node="7qgRsCGQCet" />
                         </node>
                       </node>
                     </node>
@@ -6285,7 +6285,7 @@
                 </node>
                 <node concept="2Sa8AP" id="2r$08YM5AWK" role="2H9Ial">
                   <node concept="3Ug1Ap" id="4pSWRNV3Cf6" role="1yBIc4">
-                    <ref role="3Ug1Ao" node="7qgRsCGQCh4" resolve="alert" />
+                    <ref role="3Ug1Ao" node="7qgRsCGQCh4" />
                   </node>
                 </node>
               </node>
@@ -6535,10 +6535,10 @@
           <property role="TrG5h" value="state" />
           <node concept="d4bQV" id="4pSWRNV3Ypp" role="1zoetD">
             <node concept="2HeeqP" id="4pSWRNV3YIE" role="d498F">
-              <ref role="2HeeqO" node="7hUqFOkxssq" resolve="warning" />
+              <ref role="2HeeqO" node="7hUqFOkxssq" />
             </node>
             <node concept="2HeeqP" id="4pSWRNV3YIZ" role="d498I">
-              <ref role="2HeeqO" node="7hUqFOkxssn" resolve="ok" />
+              <ref role="2HeeqO" node="7hUqFOkxssn" />
             </node>
             <node concept="32OYss" id="4pSWRNV3Yoh" role="d498Q">
               <node concept="2HbMbg" id="4pSWRNV3Yoi" role="32OYtT">
@@ -6546,22 +6546,22 @@
                   <node concept="2HbMDt" id="4pSWRNV3Yok" role="32OYtT">
                     <node concept="2HbMDt" id="4pSWRNV3Yol" role="2H9Iav">
                       <node concept="32Ogvo" id="4pSWRNV3XuB" role="2H9Iav">
-                        <ref role="32Ogvr" node="6MaWlu$kFfz" resolve="alert" />
+                        <ref role="32Ogvr" node="6MaWlu$kFfz" />
                       </node>
                       <node concept="32OYss" id="4pSWRNV3Yom" role="2H9Ial">
                         <node concept="nE0YK" id="4pSWRNV3Yon" role="32OYtT">
                           <node concept="32OYss" id="4pSWRNV3Yoo" role="2H9Iav">
                             <node concept="2H9DuE" id="4pSWRNV3Yop" role="32OYtT">
                               <node concept="32Ogvo" id="4pSWRNV3XuG" role="2H9Iav">
-                                <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                                <ref role="32Ogvr" node="6MaWlu$kFfo" />
                               </node>
                               <node concept="32Ogvo" id="4pSWRNV3XuH" role="2H9Ial">
-                                <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                                <ref role="32Ogvr" node="6MaWlu$kFft" />
                               </node>
                             </node>
                           </node>
                           <node concept="hx854" id="4pSWRNV3XuI" role="2H9Ial">
-                            <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
+                            <ref role="hx9HS" node="6MaWlu$kyrV" />
                           </node>
                         </node>
                       </node>
@@ -6571,15 +6571,15 @@
                         <node concept="32OYss" id="4pSWRNV3Yos" role="2H9Iav">
                           <node concept="2H9DuE" id="4pSWRNV3Yot" role="32OYtT">
                             <node concept="32Ogvo" id="4pSWRNV3XuN" role="2H9Iav">
-                              <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                              <ref role="32Ogvr" node="6MaWlu$kFfo" />
                             </node>
                             <node concept="32Ogvo" id="4pSWRNV3XuO" role="2H9Ial">
-                              <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                              <ref role="32Ogvr" node="6MaWlu$kFft" />
                             </node>
                           </node>
                         </node>
                         <node concept="hx854" id="4pSWRNV3XuP" role="2H9Ial">
-                          <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
+                          <ref role="hx9HS" node="6MaWlu$kyMH" />
                         </node>
                       </node>
                     </node>
@@ -6587,7 +6587,7 @@
                 </node>
                 <node concept="1yA0yd" id="4pSWRNV3You" role="2H9Ial">
                   <node concept="32Ogvo" id="4pSWRNV3XuR" role="32OYtT">
-                    <ref role="32Ogvr" node="6MaWlu$kFfh" resolve="accelerating" />
+                    <ref role="32Ogvr" node="6MaWlu$kFfh" />
                   </node>
                 </node>
               </node>
@@ -6597,13 +6597,13 @@
         <node concept="JlCpM" id="4pSWRNV3Tnu" role="32O2ov">
           <property role="TrG5h" value="warning_out" />
           <node concept="2He$iJ" id="6i8f1VRXKmH" role="1zoetD">
-            <ref role="2He$iI" node="6i8f1VRXKi4" resolve="my_warning" />
+            <ref role="2He$iI" node="6i8f1VRXKi4" />
           </node>
         </node>
         <node concept="JlCpM" id="6i8f1VRXKgJ" role="32O2ov">
           <property role="TrG5h" value="brake" />
           <node concept="2He$iJ" id="6i8f1VRXKhC" role="1zoetD">
-            <ref role="2He$iI" node="6i8f1VRXK5w" resolve="my_brake" />
+            <ref role="2He$iI" node="6i8f1VRXK5w" />
           </node>
         </node>
       </node>
@@ -6611,7 +6611,7 @@
         <node concept="2Hdskp" id="6i8f1VRXK5w" role="2Hfkx9">
           <property role="TrG5h" value="my_brake" />
           <node concept="2XEmfi" id="6i8f1VRXK5Q" role="2HdssA">
-            <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+            <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" />
           </node>
         </node>
         <node concept="2Hdskp" id="6i8f1VRXKi4" role="2Hfkx9">
@@ -6622,7 +6622,7 @@
       <node concept="2Hfkzp" id="6i8f1VRXK7f" role="2HcbjO">
         <node concept="2HfkAV" id="6i8f1VRXK8k" role="2HfkAP">
           <node concept="2He$iJ" id="6i8f1VRXK8L" role="2He$ia">
-            <ref role="2He$iI" node="6i8f1VRXK5w" resolve="my_brake" />
+            <ref role="2He$iI" node="6i8f1VRXK5w" />
           </node>
           <node concept="2IPVmt" id="6i8f1VRXK92" role="2He$i0">
             <property role="2IPVms" value="0" />
@@ -6630,13 +6630,13 @@
         </node>
         <node concept="2HfkAV" id="6i8f1VRXKjd" role="2HfkAP">
           <node concept="2He$iJ" id="6i8f1VRXKk2" role="2He$ia">
-            <ref role="2He$iI" node="6i8f1VRXKi4" resolve="my_warning" />
+            <ref role="2He$iI" node="6i8f1VRXKi4" />
           </node>
           <node concept="1yCjT0" id="6i8f1VRXKkj" role="2He$i0" />
         </node>
         <node concept="2HevG6" id="6i8f1VRXK9Y" role="2HfkAP">
           <node concept="2He$iJ" id="6i8f1VRXKau" role="2He$ia">
-            <ref role="2He$iI" node="6i8f1VRXK5w" resolve="my_brake" />
+            <ref role="2He$iI" node="6i8f1VRXK5w" />
           </node>
           <node concept="2HbMbg" id="6i8f1VRXKaF" role="2He$i0">
             <node concept="32OYss" id="6i8f1VRXKaG" role="2H9Iav">
@@ -6644,22 +6644,22 @@
                 <node concept="32OYss" id="6i8f1VRXKaI" role="2H9Iav">
                   <node concept="2H9DuE" id="6i8f1VRXKaJ" role="32OYtT">
                     <node concept="32Ogvo" id="6i8f1VRXKaK" role="2H9Iav">
-                      <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                      <ref role="32Ogvr" node="6MaWlu$kFfo" />
                     </node>
                     <node concept="32Ogvo" id="6i8f1VRXKaL" role="2H9Ial">
-                      <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                      <ref role="32Ogvr" node="6MaWlu$kFft" />
                     </node>
                   </node>
                 </node>
                 <node concept="hx854" id="6i8f1VRXKaM" role="2H9Ial">
-                  <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
+                  <ref role="hx9HS" node="6MaWlu$kyMH" />
                 </node>
               </node>
             </node>
             <node concept="32OYss" id="6i8f1VRXKaN" role="2H9Ial">
               <node concept="1yA0yd" id="6i8f1VRXKaO" role="32OYtT">
                 <node concept="32Ogvo" id="6i8f1VRXKaP" role="32OYtT">
-                  <ref role="32Ogvr" node="6MaWlu$kFfh" resolve="accelerating" />
+                  <ref role="32Ogvr" node="6MaWlu$kFfh" />
                 </node>
               </node>
             </node>
@@ -6667,29 +6667,29 @@
         </node>
         <node concept="2HevG6" id="6i8f1VRXKkR" role="2HfkAP">
           <node concept="2He$iJ" id="6i8f1VRXKlF" role="2He$ia">
-            <ref role="2He$iI" node="6i8f1VRXKi4" resolve="my_warning" />
+            <ref role="2He$iI" node="6i8f1VRXKi4" />
           </node>
           <node concept="2HbMbg" id="4pSWRNV3Tnv" role="2He$i0">
             <node concept="32OYss" id="4pSWRNV3Tnw" role="2H9Iav">
               <node concept="2HbMDt" id="4pSWRNV3Tnx" role="32OYtT">
                 <node concept="2HbMDt" id="4pSWRNV3Tny" role="2H9Iav">
                   <node concept="32Ogvo" id="4pSWRNV3SPC" role="2H9Iav">
-                    <ref role="32Ogvr" node="6MaWlu$kFfz" resolve="alert" />
+                    <ref role="32Ogvr" node="6MaWlu$kFfz" />
                   </node>
                   <node concept="32OYss" id="4pSWRNV3Tnz" role="2H9Ial">
                     <node concept="nE0YK" id="4pSWRNV3Tn$" role="32OYtT">
                       <node concept="32OYss" id="4pSWRNV3Tn_" role="2H9Iav">
                         <node concept="2H9DuE" id="4pSWRNV3TnA" role="32OYtT">
                           <node concept="32Ogvo" id="4pSWRNV3SQV" role="2H9Iav">
-                            <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                            <ref role="32Ogvr" node="6MaWlu$kFfo" />
                           </node>
                           <node concept="32Ogvo" id="4pSWRNV3SSM" role="2H9Ial">
-                            <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                            <ref role="32Ogvr" node="6MaWlu$kFft" />
                           </node>
                         </node>
                       </node>
                       <node concept="hx854" id="4pSWRNV3SQ7" role="2H9Ial">
-                        <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
+                        <ref role="hx9HS" node="6MaWlu$kyrV" />
                       </node>
                     </node>
                   </node>
@@ -6699,15 +6699,15 @@
                     <node concept="32OYss" id="4pSWRNV3TnD" role="2H9Iav">
                       <node concept="2H9DuE" id="4pSWRNV3TnE" role="32OYtT">
                         <node concept="32Ogvo" id="4pSWRNV3STO" role="2H9Iav">
-                          <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                          <ref role="32Ogvr" node="6MaWlu$kFfo" />
                         </node>
                         <node concept="32Ogvo" id="4pSWRNV3STK" role="2H9Ial">
-                          <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                          <ref role="32Ogvr" node="6MaWlu$kFft" />
                         </node>
                       </node>
                     </node>
                     <node concept="hx854" id="4pSWRNV3STy" role="2H9Ial">
-                      <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
+                      <ref role="hx9HS" node="6MaWlu$kyMH" />
                     </node>
                   </node>
                 </node>
@@ -6715,7 +6715,7 @@
             </node>
             <node concept="1yA0yd" id="4pSWRNV3TnF" role="2H9Ial">
               <node concept="32Ogvo" id="4pSWRNV3SXw" role="32OYtT">
-                <ref role="32Ogvr" node="6MaWlu$kFfh" resolve="accelerating" />
+                <ref role="32Ogvr" node="6MaWlu$kFfh" />
               </node>
             </node>
           </node>
@@ -6743,10 +6743,10 @@
     <node concept="eml0t" id="6MaWlu$kFdq" role="2HcuB8">
       <property role="TrG5h" value="EB_Control_Unit_Refinement" />
       <node concept="3Ug1AZ" id="6MaWlu$kFf8" role="eml14">
-        <ref role="3Ug1AY" node="4tgWazNvqpn" resolve="EB_Control_Unit" />
+        <ref role="3Ug1AY" node="4tgWazNvqpn" />
       </node>
       <node concept="eml1q" id="6MaWlu$kFfb" role="eml13">
-        <ref role="eml1l" node="6MaWlu$kFck" resolve="EB_Control_Unit_Implementation" />
+        <ref role="eml1l" node="6MaWlu$kFck" />
       </node>
     </node>
     <node concept="2SQmWS" id="6MaWlu$kFcU" role="2HcuB8" />
@@ -6757,18 +6757,18 @@
           <property role="TrG5h" value="distance" />
           <node concept="d4bQV" id="7hUqFOkxspF" role="1zoetD">
             <node concept="hx854" id="7hUqFOkxsq9" role="d498F">
-              <ref role="hx9HS" node="6MaWlu$k$iO" resolve="MAX_ULTRA" />
+              <ref role="hx9HS" node="6MaWlu$k$iO" />
             </node>
             <node concept="32Ogvo" id="7hUqFOkxsqB" role="d498I">
-              <ref role="32Ogvr" node="7hUqFOkxqz0" resolve="distance_in" />
+              <ref role="32Ogvr" node="7hUqFOkxqz0" />
             </node>
             <node concept="32OYss" id="7hUqFOkxspu" role="d498Q">
               <node concept="nE0YJ" id="7hUqFOkxspv" role="32OYtT">
                 <node concept="32Ogvo" id="7hUqFOkxsaR" role="2H9Iav">
-                  <ref role="32Ogvr" node="7hUqFOkxqz0" resolve="distance_in" />
+                  <ref role="32Ogvr" node="7hUqFOkxqz0" />
                 </node>
                 <node concept="hx854" id="7hUqFOkxsoR" role="2H9Ial">
-                  <ref role="hx9HS" node="6MaWlu$k$iO" resolve="MAX_ULTRA" />
+                  <ref role="hx9HS" node="6MaWlu$k$iO" />
                 </node>
               </node>
             </node>
@@ -6783,10 +6783,10 @@
     <node concept="eml0t" id="7hUqFOkxsxL" role="2HcuB8">
       <property role="TrG5h" value="Ultrasound_Refinement" />
       <node concept="3Ug1AZ" id="7hUqFOkxs_I" role="eml14">
-        <ref role="3Ug1AY" node="4tgWazNvqSt" resolve="Ultrasound_Sensor" />
+        <ref role="3Ug1AY" node="4tgWazNvqSt" />
       </node>
       <node concept="eml1q" id="7hUqFOkxs_L" role="eml13">
-        <ref role="eml1l" node="6MaWlu$kFjA" resolve="Ultrasound_Sensor_Implementation" />
+        <ref role="eml1l" node="6MaWlu$kFjA" />
       </node>
     </node>
     <node concept="2SQmWS" id="7hUqFOkxqwW" role="2HcuB8" />
@@ -6798,18 +6798,18 @@
           <property role="TrG5h" value="distance" />
           <node concept="d4bQV" id="4pSWRNV3vs3" role="1zoetD">
             <node concept="hx854" id="4pSWRNV3vss" role="d498F">
-              <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+              <ref role="hx9HS" node="6MaWlu$kzVw" />
             </node>
             <node concept="32Ogvo" id="4pSWRNV3vs5" role="d498I">
-              <ref role="32Ogvr" node="7hUqFOkxqz3" resolve="distance_in" />
+              <ref role="32Ogvr" node="7hUqFOkxqz3" />
             </node>
             <node concept="32OYss" id="4pSWRNV3vs6" role="d498Q">
               <node concept="nE0YJ" id="4pSWRNV3vs7" role="32OYtT">
                 <node concept="32Ogvo" id="4pSWRNV3vs8" role="2H9Iav">
-                  <ref role="32Ogvr" node="7hUqFOkxqz3" resolve="distance_in" />
+                  <ref role="32Ogvr" node="7hUqFOkxqz3" />
                 </node>
                 <node concept="hx854" id="4pSWRNV3vso" role="2H9Ial">
-                  <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+                  <ref role="hx9HS" node="6MaWlu$kzVw" />
                 </node>
               </node>
             </node>
@@ -6824,10 +6824,10 @@
     <node concept="eml0t" id="6MaWlu$kFoU" role="2HcuB8">
       <property role="TrG5h" value="Laser_Sensor_Refinement" />
       <node concept="3Ug1AZ" id="6MaWlu$kFq$" role="eml14">
-        <ref role="3Ug1AY" node="4tgWazNvqWb" resolve="Laser_Sensor" />
+        <ref role="3Ug1AY" node="4tgWazNvqWb" />
       </node>
       <node concept="eml1q" id="6MaWlu$kFoW" role="eml13">
-        <ref role="eml1l" node="6MaWlu$kFoP" resolve="Laser_Sensor_Implementation" />
+        <ref role="eml1l" node="6MaWlu$kFoP" />
       </node>
     </node>
     <node concept="2SQmWS" id="6MaWlu$kFoX" role="2HcuB8" />
@@ -6841,7 +6841,7 @@
               <node concept="32OYss" id="4pSWRNV40Lc" role="32OYtT">
                 <node concept="nE0YJ" id="4pSWRNV40Nf" role="32OYtT">
                   <node concept="32Ogvo" id="4pSWRNV40Gv" role="2H9Iav">
-                    <ref role="32Ogvr" node="6MaWlu$kFrE" resolve="push" />
+                    <ref role="32Ogvr" node="6MaWlu$kFrE" />
                   </node>
                   <node concept="2IPVmt" id="4pSWRNV40Pn" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -6856,7 +6856,7 @@
         <node concept="JlCpM" id="2r$08YM5BxS" role="32O2ov">
           <property role="TrG5h" value="brake_out" />
           <node concept="32Ogvo" id="2r$08YM5BDy" role="1zoetD">
-            <ref role="32Ogvr" node="6MaWlu$kFrE" resolve="push" />
+            <ref role="32Ogvr" node="6MaWlu$kFrE" />
           </node>
         </node>
       </node>
@@ -6871,10 +6871,10 @@
     <node concept="eml0t" id="6MaWlu$kFsK" role="2HcuB8">
       <property role="TrG5h" value="Brake_Refinement" />
       <node concept="3Ug1AZ" id="6MaWlu$kFtV" role="eml14">
-        <ref role="3Ug1AY" node="4tgWazNvrdx" resolve="Brake" />
+        <ref role="3Ug1AY" node="4tgWazNvrdx" />
       </node>
       <node concept="eml1q" id="6MaWlu$kFtY" role="eml13">
-        <ref role="eml1l" node="6MaWlu$kFqB" resolve="Brake_Implementation" />
+        <ref role="eml1l" node="6MaWlu$kFqB" />
       </node>
     </node>
     <node concept="2SQmWS" id="4lqXlWx1ZIk" role="2HcuB8" />
@@ -6887,30 +6887,30 @@
             <node concept="32OYss" id="4pSWRNV3Vv9" role="d498Q">
               <node concept="nE0YJ" id="4pSWRNV3Vva" role="32OYtT">
                 <node concept="32Ogvo" id="4pSWRNV3E8a" role="2H9Iav">
-                  <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+                  <ref role="32Ogvr" node="4pSWRNV3E5m" />
                 </node>
                 <node concept="hx854" id="4pSWRNV3Vqk" role="2H9Ial">
-                  <ref role="hx9HS" node="4pSWRNV3PC4" resolve="MAX_SPEED" />
+                  <ref role="hx9HS" node="4pSWRNV3PC4" />
                 </node>
               </node>
             </node>
             <node concept="hx854" id="4pSWRNV3Vs6" role="d498F">
-              <ref role="hx9HS" node="4pSWRNV3PC4" resolve="MAX_SPEED" />
+              <ref role="hx9HS" node="4pSWRNV3PC4" />
             </node>
             <node concept="d4bQV" id="4pSWRNV3Vvw" role="d498I">
               <node concept="hx854" id="4pSWRNV3Vxx" role="d498F">
-                <ref role="hx9HS" node="4pSWRNV3Q7f" resolve="MIN_SPEED" />
+                <ref role="hx9HS" node="4pSWRNV3Q7f" />
               </node>
               <node concept="32Ogvo" id="4pSWRNV3VxO" role="d498I">
-                <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+                <ref role="32Ogvr" node="4pSWRNV3E5m" />
               </node>
               <node concept="32OYss" id="4pSWRNV3Vvb" role="d498Q">
                 <node concept="nE0YL" id="4pSWRNV3Vvc" role="32OYtT">
                   <node concept="32Ogvo" id="4pSWRNV3Vsu" role="2H9Iav">
-                    <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+                    <ref role="32Ogvr" node="4pSWRNV3E5m" />
                   </node>
                   <node concept="hx854" id="4pSWRNV3VsZ" role="2H9Ial">
-                    <ref role="hx9HS" node="4pSWRNV3Q7f" resolve="MIN_SPEED" />
+                    <ref role="hx9HS" node="4pSWRNV3Q7f" />
                   </node>
                 </node>
               </node>
@@ -6920,7 +6920,7 @@
         <node concept="JlCpM" id="6MaWlu$kFBV" role="32O2ov">
           <property role="TrG5h" value="old_speed" />
           <node concept="2He$iJ" id="4pSWRNV3N$v" role="1zoetD">
-            <ref role="2He$iI" node="4pSWRNV3JT4" resolve="my_old_speed" />
+            <ref role="2He$iI" node="4pSWRNV3JT4" />
           </node>
         </node>
       </node>
@@ -6928,14 +6928,14 @@
         <node concept="2Hdskp" id="4pSWRNV3JT4" role="2Hfkx9">
           <property role="TrG5h" value="my_old_speed" />
           <node concept="2XEmfi" id="2r$08YM5PyL" role="2HdssA">
-            <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+            <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" />
           </node>
         </node>
       </node>
       <node concept="2Hfkzp" id="4pSWRNV3JTL" role="2HcbjO">
         <node concept="2HfkAV" id="4pSWRNV3JU2" role="2HfkAP">
           <node concept="2He$iJ" id="4pSWRNV3JUG" role="2He$ia">
-            <ref role="2He$iI" node="4pSWRNV3JT4" resolve="my_old_speed" />
+            <ref role="2He$iI" node="4pSWRNV3JT4" />
           </node>
           <node concept="2IPVmt" id="4pSWRNV3JUR" role="2He$i0">
             <property role="2IPVms" value="0" />
@@ -6943,10 +6943,10 @@
         </node>
         <node concept="2HevG6" id="4pSWRNV3JVj" role="2HfkAP">
           <node concept="2He$iJ" id="4pSWRNV3JVV" role="2He$ia">
-            <ref role="2He$iI" node="4pSWRNV3JT4" resolve="my_old_speed" />
+            <ref role="2He$iI" node="4pSWRNV3JT4" />
           </node>
           <node concept="32Ogvo" id="4pSWRNV3JWy" role="2He$i0">
-            <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+            <ref role="32Ogvr" node="4pSWRNV3E5m" />
           </node>
         </node>
       </node>
@@ -6957,10 +6957,10 @@
     <node concept="eml0t" id="6MaWlu$kFCG" role="2HcuB8">
       <property role="TrG5h" value="Speed_Sensor_Refinement" />
       <node concept="3Ug1AZ" id="6MaWlu$kFE5" role="eml14">
-        <ref role="3Ug1AY" node="4tgWazNvr83" resolve="Speed_Sensor" />
+        <ref role="3Ug1AY" node="4tgWazNvr83" />
       </node>
       <node concept="eml1q" id="6MaWlu$kFE8" role="eml13">
-        <ref role="eml1l" node="6MaWlu$kF$U" resolve="Speed_Sensor_Impelementation" />
+        <ref role="eml1l" node="6MaWlu$kF$U" />
       </node>
     </node>
     <node concept="2SQmWS" id="6MaWlu$kFEb" role="2HcuB8" />
@@ -6975,18 +6975,18 @@
             <node concept="2HbMDt" id="4pSWRNV3xdd" role="2H9Iav">
               <node concept="2HbMDt" id="4pSWRNV3xde" role="2H9Iav">
                 <node concept="32Ogvo" id="4pSWRNV3xbn" role="2H9Iav">
-                  <ref role="32Ogvr" node="4lqXlWx1Zxg" resolve="laser1" />
+                  <ref role="32Ogvr" node="4lqXlWx1Zxg" />
                 </node>
                 <node concept="32Ogvo" id="4pSWRNV3xbZ" role="2H9Ial">
-                  <ref role="32Ogvr" node="4lqXlWx1Zz6" resolve="laser2" />
+                  <ref role="32Ogvr" node="4lqXlWx1Zz6" />
                 </node>
               </node>
               <node concept="32Ogvo" id="4pSWRNV3xcU" role="2H9Ial">
-                <ref role="32Ogvr" node="4lqXlWx1Zzd" resolve="ultrasound1" />
+                <ref role="32Ogvr" node="4lqXlWx1Zzd" />
               </node>
             </node>
             <node concept="32Ogvo" id="4pSWRNV3xdQ" role="2H9Ial">
-              <ref role="32Ogvr" node="4lqXlWx1Zzi" resolve="ultrasound2" />
+              <ref role="32Ogvr" node="4lqXlWx1Zzi" />
             </node>
           </node>
         </node>
@@ -6999,7 +6999,7 @@
         <node concept="JlCpM" id="4lqXlWx1ZAe" role="32O2ov">
           <property role="TrG5h" value="alert" />
           <node concept="2He$iJ" id="4pSWRNV3xQb" role="1zoetD">
-            <ref role="2He$iI" node="4pSWRNV3xeQ" resolve="my_alert" />
+            <ref role="2He$iI" node="4pSWRNV3xeQ" />
           </node>
         </node>
       </node>
@@ -7025,13 +7025,13 @@
       <node concept="2Hfkzp" id="4pSWRNV3xfV" role="2HcbjO">
         <node concept="2HfkAV" id="4pSWRNV3xgk" role="2HfkAP">
           <node concept="2He$iJ" id="4pSWRNV3xgM" role="2He$ia">
-            <ref role="2He$iI" node="4pSWRNV3xeQ" resolve="my_alert" />
+            <ref role="2He$iI" node="4pSWRNV3xeQ" />
           </node>
           <node concept="1yCjT0" id="4pSWRNV3xh3" role="2He$i0" />
         </node>
         <node concept="2HevG6" id="4pSWRNV3xho" role="2HfkAP">
           <node concept="2He$iJ" id="4pSWRNV3xhU" role="2He$ia">
-            <ref role="2He$iI" node="4pSWRNV3xeQ" resolve="my_alert" />
+            <ref role="2He$iI" node="4pSWRNV3xeQ" />
           </node>
           <node concept="2HbMDt" id="4pSWRNV3AdK" role="2He$i0">
             <node concept="2HbMDt" id="4pSWRNV3AdL" role="2H9Iav">
@@ -7040,12 +7040,12 @@
                   <node concept="2HbMbg" id="4pSWRNV3AdO" role="32OYtT">
                     <node concept="1yA0yd" id="4pSWRNV3AdP" role="2H9Iav">
                       <node concept="32Ogvo" id="4pSWRNV3xiz" role="32OYtT">
-                        <ref role="32Ogvr" node="4lqXlWx1Zxg" resolve="laser1" />
+                        <ref role="32Ogvr" node="4lqXlWx1Zxg" />
                       </node>
                     </node>
                     <node concept="1yA0yd" id="4pSWRNV3AdQ" role="2H9Ial">
                       <node concept="32Ogvo" id="4pSWRNV3xjn" role="32OYtT">
-                        <ref role="32Ogvr" node="4lqXlWx1Zz6" resolve="laser2" />
+                        <ref role="32Ogvr" node="4lqXlWx1Zz6" />
                       </node>
                     </node>
                   </node>
@@ -7056,12 +7056,12 @@
                       <node concept="2HbMbg" id="4pSWRNV3AdU" role="32OYtT">
                         <node concept="1yA0yd" id="4pSWRNV3AdV" role="2H9Iav">
                           <node concept="32Ogvo" id="4pSWRNV3xkv" role="32OYtT">
-                            <ref role="32Ogvr" node="4lqXlWx1Zzd" resolve="ultrasound1" />
+                            <ref role="32Ogvr" node="4lqXlWx1Zzd" />
                           </node>
                         </node>
                         <node concept="1yA0yd" id="4pSWRNV3AdW" role="2H9Ial">
                           <node concept="32Ogvo" id="4pSWRNV3xlz" role="32OYtT">
-                            <ref role="32Ogvr" node="4lqXlWx1Zzi" resolve="ultrasound2" />
+                            <ref role="32Ogvr" node="4lqXlWx1Zzi" />
                           </node>
                         </node>
                       </node>
@@ -7070,12 +7070,12 @@
                       <node concept="2HbMDt" id="4pSWRNV3AdY" role="32OYtT">
                         <node concept="1yA0yd" id="4pSWRNV3AdZ" role="2H9Iav">
                           <node concept="32Ogvo" id="4pSWRNV3xmy" role="32OYtT">
-                            <ref role="32Ogvr" node="4lqXlWx1Zxg" resolve="laser1" />
+                            <ref role="32Ogvr" node="4lqXlWx1Zxg" />
                           </node>
                         </node>
                         <node concept="1yA0yd" id="4pSWRNV3Ae0" role="2H9Ial">
                           <node concept="32Ogvo" id="4pSWRNV3xnu" role="32OYtT">
-                            <ref role="32Ogvr" node="4lqXlWx1Zz6" resolve="laser2" />
+                            <ref role="32Ogvr" node="4lqXlWx1Zz6" />
                           </node>
                         </node>
                       </node>
@@ -7086,7 +7086,7 @@
               <node concept="32OYss" id="4pSWRNV3Ae1" role="2H9Ial">
                 <node concept="nE0YL" id="4pSWRNV3Ae2" role="32OYtT">
                   <node concept="1J1L9T" id="4pSWRNV3zD5" role="2H9Iav">
-                    <ref role="1J1L9S" node="4pSWRNV3xdb" resolve="distance_front" />
+                    <ref role="1J1L9S" node="4pSWRNV3xdb" />
                   </node>
                   <node concept="2IPVmt" id="4pSWRNV3Ae3" role="2H9Ial">
                     <property role="2IPVms" value="0" />
@@ -7097,10 +7097,10 @@
             <node concept="32OYss" id="4pSWRNV3Ae4" role="2H9Ial">
               <node concept="nE0YJ" id="4pSWRNV3Ae5" role="32OYtT">
                 <node concept="1J1L9T" id="4pSWRNV3zNB" role="2H9Iav">
-                  <ref role="1J1L9S" node="4pSWRNV3xdb" resolve="distance_front" />
+                  <ref role="1J1L9S" node="4pSWRNV3xdb" />
                 </node>
                 <node concept="hx854" id="4pSWRNV3zTx" role="2H9Ial">
-                  <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+                  <ref role="hx9HS" node="6MaWlu$kzVw" />
                 </node>
               </node>
             </node>
@@ -7112,10 +7112,10 @@
     <node concept="eml0t" id="4lqXlWx1Zy6" role="2HcuB8">
       <property role="TrG5h" value="Sensor_Voter_Refinement" />
       <node concept="3Ug1AZ" id="6MaWlu$kFUk" role="eml14">
-        <ref role="3Ug1AY" node="4tgWazNvrrE" resolve="Sensor_Voter" />
+        <ref role="3Ug1AY" node="4tgWazNvrrE" />
       </node>
       <node concept="eml1q" id="6MaWlu$kFUn" role="eml13">
-        <ref role="eml1l" node="4lqXlWx1Zwl" resolve="Sensor_Voter_Implementation" />
+        <ref role="eml1l" node="4lqXlWx1Zwl" />
       </node>
     </node>
     <node concept="2SQmWS" id="4lqXlWx1ZBd" role="2HcuB8" />
@@ -7125,14 +7125,14 @@
         <node concept="JlCpM" id="6MaWlu$kFXR" role="32O2ov">
           <property role="TrG5h" value="alert_signal" />
           <node concept="32Ogvo" id="4pSWRNV3Vo8" role="1zoetD">
-            <ref role="32Ogvr" node="6MaWlu$kFXm" resolve="driver_warning_in" />
+            <ref role="32Ogvr" node="6MaWlu$kFXm" />
           </node>
         </node>
         <node concept="JlCpM" id="6MaWlu$kFYW" role="32O2ov">
           <property role="TrG5h" value="display_message" />
           <node concept="d4bQV" id="6i8f1VRXB1z" role="1zoetD">
             <node concept="32Ogvo" id="6i8f1VRXB1S" role="d498Q">
-              <ref role="32Ogvr" node="6MaWlu$kFXm" resolve="driver_warning_in" />
+              <ref role="32Ogvr" node="6MaWlu$kFXm" />
             </node>
             <node concept="2IPVmt" id="6i8f1VRXB24" role="d498F">
               <property role="2IPVms" value="0" />
@@ -7145,7 +7145,7 @@
         <node concept="JlCpM" id="6MaWlu$kG1j" role="32O2ov">
           <property role="TrG5h" value="state" />
           <node concept="32Ogvo" id="4pSWRNV3VoD" role="1zoetD">
-            <ref role="32Ogvr" node="6MaWlu$kFXo" resolve="state_in" />
+            <ref role="32Ogvr" node="6MaWlu$kFXo" />
           </node>
         </node>
       </node>
@@ -7160,10 +7160,10 @@
     <node concept="eml0t" id="6MaWlu$kG1N" role="2HcuB8">
       <property role="TrG5h" value="EB_Communication_Unit_Refinement" />
       <node concept="3Ug1AZ" id="6MaWlu$kG3G" role="eml14">
-        <ref role="3Ug1AY" node="16Ng_xNT8KQ" resolve="EB_Communication_Unit" />
+        <ref role="3Ug1AY" node="16Ng_xNT8KQ" />
       </node>
       <node concept="eml1q" id="6MaWlu$kG3J" role="eml13">
-        <ref role="eml1l" node="6MaWlu$kFVE" resolve="EB_Communication_Unit_Implementation" />
+        <ref role="eml1l" node="6MaWlu$kFVE" />
       </node>
     </node>
     <node concept="2SQmWS" id="6MaWlu$kG3M" role="2HcuB8" />
@@ -7173,7 +7173,7 @@
         <node concept="JlCpM" id="6MaWlu$kGaC" role="32O2ov">
           <property role="TrG5h" value="alert" />
           <node concept="2He$iJ" id="4pSWRNV3Cme" role="1zoetD">
-            <ref role="2He$iI" node="4pSWRNV3CfG" resolve="my_alert" />
+            <ref role="2He$iI" node="4pSWRNV3CfG" />
           </node>
         </node>
       </node>
@@ -7195,29 +7195,29 @@
       <node concept="2Hfkzp" id="4pSWRNV3Cgo" role="2HcbjO">
         <node concept="2HfkAV" id="4pSWRNV3Cgz" role="2HfkAP">
           <node concept="2He$iJ" id="4pSWRNV3Ch0" role="2He$ia">
-            <ref role="2He$iI" node="4pSWRNV3CfG" resolve="my_alert" />
+            <ref role="2He$iI" node="4pSWRNV3CfG" />
           </node>
           <node concept="1yCjT0" id="4pSWRNV3ClW" role="2He$i0" />
         </node>
         <node concept="2HevG6" id="4pSWRNV3ChH" role="2HfkAP">
           <node concept="2He$iJ" id="4pSWRNV3Cif" role="2He$ia">
-            <ref role="2He$iI" node="4pSWRNV3CfG" resolve="my_alert" />
+            <ref role="2He$iI" node="4pSWRNV3CfG" />
           </node>
           <node concept="2HbMbg" id="6i8f1VRXFzz" role="2He$i0">
             <node concept="32OYss" id="6i8f1VRXFz$" role="2H9Iav">
               <node concept="nE0YK" id="6i8f1VRXFz_" role="32OYtT">
                 <node concept="32Ogvo" id="4pSWRNV3CiM" role="2H9Iav">
-                  <ref role="32Ogvr" node="6MaWlu$kG9n" resolve="old_velocity" />
+                  <ref role="32Ogvr" node="6MaWlu$kG9n" />
                 </node>
                 <node concept="32Ogvo" id="4pSWRNV3CjP" role="2H9Ial">
-                  <ref role="32Ogvr" node="6MaWlu$kG9q" resolve="velocity" />
+                  <ref role="32Ogvr" node="6MaWlu$kG9q" />
                 </node>
               </node>
             </node>
             <node concept="32OYss" id="6i8f1VRXFzA" role="2H9Ial">
               <node concept="nE0YJ" id="6i8f1VRXFzB" role="32OYtT">
                 <node concept="32Ogvo" id="4pSWRNV3CkG" role="2H9Iav">
-                  <ref role="32Ogvr" node="6MaWlu$kG9C" resolve="eb_brake" />
+                  <ref role="32Ogvr" node="6MaWlu$kG9C" />
                 </node>
                 <node concept="2IPVmt" id="6i8f1VRXFzC" role="2H9Ial">
                   <property role="2IPVms" value="0" />
@@ -7231,10 +7231,10 @@
     <node concept="eml0t" id="6MaWlu$kGbf" role="2HcuB8">
       <property role="TrG5h" value="Brake_Monitor_Refinement" />
       <node concept="3Ug1AZ" id="6MaWlu$kGdj" role="eml14">
-        <ref role="3Ug1AY" node="7qgRsCGQBta" resolve="Brake_Monitor" />
+        <ref role="3Ug1AY" node="7qgRsCGQBta" />
       </node>
       <node concept="eml1q" id="6MaWlu$kGdm" role="eml13">
-        <ref role="eml1l" node="6MaWlu$kG7t" resolve="Brake_Monitor_Implementation" />
+        <ref role="eml1l" node="6MaWlu$kG7t" />
       </node>
     </node>
     <node concept="2SQmWS" id="6MaWlu$kFyz" role="2HcuB8" />
@@ -8475,7 +8475,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="22e91OCPKdV" role="19SJt6">
-          <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+          <ref role="oTUVg" node="3XLpsf2__9h" />
         </node>
         <node concept="19SUe$" id="22e91OCPKdW" role="19SJt6">
           <property role="19SUeA" value="&#10;&quot;braking initiated too late&quot; has been mitigated" />
@@ -8483,8 +8483,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="22e91OCPKdX" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdN" resolve="S1_EB_Hazard_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPKdS" resolve="G2_EB_Braking_Initiaded_on_time" />
+      <ref role="3VeSjP" node="22e91OCPKdN" />
+      <ref role="3VeSjQ" node="22e91OCPKdS" />
     </node>
     <node concept="FXfxu" id="22e91OCPKdN" role="2vn1q5">
       <property role="TrG5h" value="S1_EB_Hazard_Risk_Management" />
@@ -8493,7 +8493,7 @@
           <property role="19SUeA" value="All hazards from &#10;" />
         </node>
         <node concept="oXkut" id="22e91OCPKdQ" role="19SJt6">
-          <ref role="oTdVe" node="G$XGFsgYdQ" resolve="_101_eb_hazard_list_ASIL_B_H03" />
+          <ref role="oTdVe" node="G$XGFsgYdQ" />
         </node>
         <node concept="19SUe$" id="22e91OCPKdR" role="19SJt6">
           <property role="19SUeA" value="&#10; have been addressed" />
@@ -8513,7 +8513,7 @@
       <node concept="19SGf9" id="22e91OCPKAC" role="2vnaTY">
         <node concept="19SUe$" id="22e91OCPKDN" role="19SJt6" />
         <node concept="oXkut" id="22e91OCPKDM" role="19SJt6">
-          <ref role="oTdVe" node="G$XGFsgYdQ" resolve="_101_eb_hazard_list_ASIL_B_H03" />
+          <ref role="oTdVe" node="G$XGFsgYdQ" />
         </node>
         <node concept="19SUe$" id="22e91OCPKDO" role="19SJt6" />
       </node>
@@ -8527,16 +8527,16 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="22e91OCPKQL" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKwR" resolve="G1_EB_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPKGV" resolve="C2_EB_Item_Definition" />
+      <ref role="3VeSjP" node="22e91OCPKwR" />
+      <ref role="3VeSjQ" node="22e91OCPKGV" />
     </node>
     <node concept="2vhqFZ" id="22e91OCPKTS" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKwR" resolve="G1_EB_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPKAB" resolve="C1_EB_Hazards" />
+      <ref role="3VeSjP" node="22e91OCPKwR" />
+      <ref role="3VeSjQ" node="22e91OCPKAB" />
     </node>
     <node concept="3VeUTF" id="22e91OCPLdn" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKwR" resolve="G1_EB_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPKdN" resolve="S1_EB_Hazard_Risk_Management" />
+      <ref role="3VeSjP" node="22e91OCPKwR" />
+      <ref role="3VeSjQ" node="22e91OCPKdN" />
     </node>
     <node concept="2vmxQI" id="22e91OCPLtx" role="2vn1q5">
       <property role="TrG5h" value="S2_EB_Obstacle_Detection" />
@@ -8565,8 +8565,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPLwV" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdS" resolve="G2_EB_Braking_Initiaded_on_time" />
-      <ref role="3VeSjQ" node="22e91OCPLtx" resolve="S2_EB_Obstacle_Detection" />
+      <ref role="3VeSjP" node="22e91OCPKdS" />
+      <ref role="3VeSjQ" node="22e91OCPLtx" />
     </node>
     <node concept="2vn7WC" id="22e91OCPLFe" role="2vn1q5">
       <property role="TrG5h" value="G3_EB_Reliable_Sensors" />
@@ -8587,8 +8587,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPLXN" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPLtx" resolve="S2_EB_Obstacle_Detection" />
-      <ref role="3VeSjQ" node="22e91OCPLFe" resolve="G3_EB_Reliable_Sensors" />
+      <ref role="3VeSjP" node="22e91OCPLtx" />
+      <ref role="3VeSjQ" node="22e91OCPLFe" />
     </node>
     <node concept="2vmhmH" id="22e91OCPM2r" role="2vn1q5">
       <property role="TrG5h" value="Sol1_EB_Sensor_Redundancy" />
@@ -8639,12 +8639,12 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPMt7" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPLFe" resolve="G3_EB_Reliable_Sensors" />
-      <ref role="3VeSjQ" node="22e91OCPM2r" resolve="Sol1_EB_Sensor_Redundancy" />
+      <ref role="3VeSjP" node="22e91OCPLFe" />
+      <ref role="3VeSjQ" node="22e91OCPM2r" />
     </node>
     <node concept="3VeUTF" id="22e91OCPMwV" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPLFe" resolve="G3_EB_Reliable_Sensors" />
-      <ref role="3VeSjQ" node="22e91OCPM6X" resolve="Sol2_EB_Voter_Simulation" />
+      <ref role="3VeSjP" node="22e91OCPLFe" />
+      <ref role="3VeSjQ" node="22e91OCPM6X" />
     </node>
     <node concept="2vmhmH" id="22e91OCPMIC" role="2vn1q5">
       <property role="TrG5h" value="Sol4_EB_Simulation_Monitor" />
@@ -8655,12 +8655,12 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPMN3" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPLFe" resolve="G3_EB_Reliable_Sensors" />
-      <ref role="3VeSjQ" node="22e91OCPM42" resolve="Sol3_EB_Failure_Detection" />
+      <ref role="3VeSjP" node="22e91OCPLFe" />
+      <ref role="3VeSjQ" node="22e91OCPM42" />
     </node>
     <node concept="3VeUTF" id="22e91OCPMX8" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPLFe" resolve="G3_EB_Reliable_Sensors" />
-      <ref role="3VeSjQ" node="22e91OCPMIC" resolve="Sol4_EB_Simulation_Monitor" />
+      <ref role="3VeSjP" node="22e91OCPLFe" />
+      <ref role="3VeSjQ" node="22e91OCPMIC" />
     </node>
     <node concept="8gVzV" id="22e91OCPNeZ" role="2vn1q5">
       <property role="TrG5h" value="G4_EB_Prevent_Obstacle_Crash" />
@@ -8669,7 +8669,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="22e91OCPNf2" role="19SJt6">
-          <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+          <ref role="oTUVg" node="3XLpsf2__9p" />
         </node>
         <node concept="19SUe$" id="22e91OCPNf3" role="19SJt6">
           <property role="19SUeA" value="&#10;&quot;Crash into obstacle&quot; has been mitigated." />
@@ -8677,8 +8677,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="22e91OCPNkJ" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdN" resolve="S1_EB_Hazard_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPNeZ" resolve="G4_EB_Prevent_Obstacle_Crash" />
+      <ref role="3VeSjP" node="22e91OCPKdN" />
+      <ref role="3VeSjQ" node="22e91OCPNeZ" />
     </node>
     <node concept="2vmxSQ" id="22e91OCPNw_" role="2vn1q5">
       <property role="TrG5h" value="C3_EB_ASIL" />
@@ -8689,8 +8689,8 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="22e91OCPNBu" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdS" resolve="G2_EB_Braking_Initiaded_on_time" />
-      <ref role="3VeSjQ" node="22e91OCPNw_" resolve="C3_EB_ASIL" />
+      <ref role="3VeSjP" node="22e91OCPKdS" />
+      <ref role="3VeSjQ" node="22e91OCPNw_" />
     </node>
     <node concept="2vmxSQ" id="22e91OCPNJc" role="2vn1q5">
       <property role="TrG5h" value="C4_EB_ASIL" />
@@ -8717,16 +8717,16 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="22e91OCPO6z" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPNeZ" resolve="G4_EB_Prevent_Obstacle_Crash" />
-      <ref role="3VeSjQ" node="22e91OCPNWr" resolve="A1_EB_Driver_Presence" />
+      <ref role="3VeSjP" node="22e91OCPNeZ" />
+      <ref role="3VeSjQ" node="22e91OCPNWr" />
     </node>
     <node concept="2vhqFZ" id="22e91OCPObh" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPNeZ" resolve="G4_EB_Prevent_Obstacle_Crash" />
-      <ref role="3VeSjQ" node="22e91OCPNPi" resolve="C5_EB_Safe_Distance_Violated" />
+      <ref role="3VeSjP" node="22e91OCPNeZ" />
+      <ref role="3VeSjQ" node="22e91OCPNPi" />
     </node>
     <node concept="2vhqFZ" id="22e91OCPOc$" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPNeZ" resolve="G4_EB_Prevent_Obstacle_Crash" />
-      <ref role="3VeSjQ" node="22e91OCPNJc" resolve="C4_EB_ASIL" />
+      <ref role="3VeSjP" node="22e91OCPNeZ" />
+      <ref role="3VeSjQ" node="22e91OCPNJc" />
     </node>
     <node concept="2vmxQI" id="22e91OCPOHJ" role="2vn1q5">
       <property role="TrG5h" value="S3_EB_Driver_Warning" />
@@ -8749,8 +8749,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPOTj" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPNeZ" resolve="G4_EB_Prevent_Obstacle_Crash" />
-      <ref role="3VeSjQ" node="22e91OCPOHJ" resolve="S3_EB_Driver_Warning" />
+      <ref role="3VeSjP" node="22e91OCPNeZ" />
+      <ref role="3VeSjQ" node="22e91OCPOHJ" />
     </node>
     <node concept="2vn7WC" id="22e91OCPOYq" role="2vn1q5">
       <property role="TrG5h" value="G5_EB_Failure_Detection" />
@@ -8765,16 +8765,16 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPP6j" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPOHJ" resolve="S3_EB_Driver_Warning" />
-      <ref role="3VeSjQ" node="22e91OCPOYq" resolve="G5_EB_Failure_Detection" />
+      <ref role="3VeSjP" node="22e91OCPOHJ" />
+      <ref role="3VeSjQ" node="22e91OCPOYq" />
     </node>
     <node concept="3VeUTF" id="22e91OCPPbz" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPOYq" resolve="G5_EB_Failure_Detection" />
-      <ref role="3VeSjQ" node="22e91OCPMIC" resolve="Sol4_EB_Simulation_Monitor" />
+      <ref role="3VeSjP" node="22e91OCPOYq" />
+      <ref role="3VeSjQ" node="22e91OCPMIC" />
     </node>
     <node concept="3VeUTF" id="22e91OCPPcU" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPOYq" resolve="G5_EB_Failure_Detection" />
-      <ref role="3VeSjQ" node="22e91OCPM42" resolve="Sol3_EB_Failure_Detection" />
+      <ref role="3VeSjP" node="22e91OCPOYq" />
+      <ref role="3VeSjQ" node="22e91OCPM42" />
     </node>
     <node concept="2vn7WC" id="22e91OCPPsH" role="2vn1q5">
       <property role="TrG5h" value="G6_EB_System_Driver_Communication" />
@@ -8801,12 +8801,12 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPPKm" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPOHJ" resolve="S3_EB_Driver_Warning" />
-      <ref role="3VeSjQ" node="22e91OCPPsH" resolve="G6_EB_System_Driver_Communication" />
+      <ref role="3VeSjP" node="22e91OCPOHJ" />
+      <ref role="3VeSjQ" node="22e91OCPPsH" />
     </node>
     <node concept="3VeUTF" id="22e91OCPPWX" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPPsH" resolve="G6_EB_System_Driver_Communication" />
-      <ref role="3VeSjQ" node="22e91OCPPv3" resolve="Sol5_EB_Display_Error" />
+      <ref role="3VeSjP" node="22e91OCPPsH" />
+      <ref role="3VeSjQ" node="22e91OCPPv3" />
     </node>
     <node concept="2vn7WC" id="22e91OCPQ3M" role="2vn1q5">
       <property role="TrG5h" value="G7_EB_Warn_Collision" />
@@ -8821,8 +8821,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPQgq" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPOHJ" resolve="S3_EB_Driver_Warning" />
-      <ref role="3VeSjQ" node="22e91OCPQ3M" resolve="G7_EB_Warn_Collision" />
+      <ref role="3VeSjP" node="22e91OCPOHJ" />
+      <ref role="3VeSjQ" node="22e91OCPQ3M" />
     </node>
     <node concept="2vmhmH" id="22e91OCPQ$L" role="2vn1q5">
       <property role="TrG5h" value="Sol6_EB_Issue_Warning" />
@@ -8845,8 +8845,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPQPk" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPQ3M" resolve="G7_EB_Warn_Collision" />
-      <ref role="3VeSjQ" node="22e91OCPQ$L" resolve="Sol6_EB_Issue_Warning" />
+      <ref role="3VeSjP" node="22e91OCPQ3M" />
+      <ref role="3VeSjQ" node="22e91OCPQ$L" />
     </node>
     <node concept="8gVzV" id="22e91OCPQVs" role="2vn1q5">
       <property role="TrG5h" value="G8_EB_Avoid_RearEnd_Collision" />
@@ -8855,7 +8855,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="22e91OCPQVv" role="19SJt6">
-          <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+          <ref role="oTUVg" node="3XLpsf2__9X" />
         </node>
         <node concept="19SUe$" id="22e91OCPQVw" role="19SJt6">
           <property role="19SUeA" value="&#10;&quot;Read-end collision&quot; has been mitigated" />
@@ -8863,8 +8863,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="22e91OCPR3H" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdN" resolve="S1_EB_Hazard_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPQVs" resolve="G8_EB_Avoid_RearEnd_Collision" />
+      <ref role="3VeSjP" node="22e91OCPKdN" />
+      <ref role="3VeSjQ" node="22e91OCPQVs" />
     </node>
     <node concept="2vmxSQ" id="22e91OCPRnk" role="2vn1q5">
       <property role="TrG5h" value="C5_EB_ASIL" />
@@ -8875,12 +8875,12 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="22e91OCPR_n" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPQVs" resolve="G8_EB_Avoid_RearEnd_Collision" />
-      <ref role="3VeSjQ" node="22e91OCPNWr" resolve="A1_EB_Driver_Presence" />
+      <ref role="3VeSjP" node="22e91OCPQVs" />
+      <ref role="3VeSjQ" node="22e91OCPNWr" />
     </node>
     <node concept="2vhqFZ" id="22e91OCPRIX" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPQVs" resolve="G8_EB_Avoid_RearEnd_Collision" />
-      <ref role="3VeSjQ" node="22e91OCPRnk" resolve="C5_EB_ASIL" />
+      <ref role="3VeSjP" node="22e91OCPQVs" />
+      <ref role="3VeSjQ" node="22e91OCPRnk" />
     </node>
     <node concept="2vmxSQ" id="22e91OCPRWe" role="2vn1q5">
       <property role="TrG5h" value="C6_EB_Sensor_Reliability_ok" />
@@ -8891,8 +8891,8 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="22e91OCPS5X" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPQVs" resolve="G8_EB_Avoid_RearEnd_Collision" />
-      <ref role="3VeSjQ" node="22e91OCPRWe" resolve="C6_EB_Sensor_Reliability_ok" />
+      <ref role="3VeSjP" node="22e91OCPQVs" />
+      <ref role="3VeSjQ" node="22e91OCPRWe" />
     </node>
     <node concept="2vmxQI" id="22e91OCPSfK" role="2vn1q5">
       <property role="TrG5h" value="S4_EB_Avoid_RearEnd_Collision" />
@@ -8917,12 +8917,12 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="22e91OCPSxF" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPQVs" resolve="G8_EB_Avoid_RearEnd_Collision" />
-      <ref role="3VeSjQ" node="22e91OCPSnH" resolve="C7_EB_Avoid_unnecessary_braking" />
+      <ref role="3VeSjP" node="22e91OCPQVs" />
+      <ref role="3VeSjQ" node="22e91OCPSnH" />
     </node>
     <node concept="3VeUTF" id="22e91OCPSJP" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPQVs" resolve="G8_EB_Avoid_RearEnd_Collision" />
-      <ref role="3VeSjQ" node="22e91OCPSfK" resolve="S4_EB_Avoid_RearEnd_Collision" />
+      <ref role="3VeSjP" node="22e91OCPQVs" />
+      <ref role="3VeSjQ" node="22e91OCPSfK" />
     </node>
     <node concept="2vn7WC" id="22e91OCPSLh" role="2vn1q5">
       <property role="TrG5h" value="G8_EB_Driver_Override" />
@@ -8933,8 +8933,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPSVS" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPSfK" resolve="S4_EB_Avoid_RearEnd_Collision" />
-      <ref role="3VeSjQ" node="22e91OCPSLh" resolve="G8_EB_Driver_Override" />
+      <ref role="3VeSjP" node="22e91OCPSfK" />
+      <ref role="3VeSjQ" node="22e91OCPSLh" />
     </node>
     <node concept="2vmhmH" id="22e91OCPT34" role="2vn1q5">
       <property role="TrG5h" value="Sol9_EB_Driver_Reaction" />
@@ -8951,8 +8951,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="22e91OCPThw" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPSLh" resolve="G8_EB_Driver_Override" />
-      <ref role="3VeSjQ" node="22e91OCPT34" resolve="Sol9_EB_Driver_Reaction" />
+      <ref role="3VeSjP" node="22e91OCPSLh" />
+      <ref role="3VeSjQ" node="22e91OCPT34" />
     </node>
     <node concept="atroE" id="22e91OCPTqQ" role="2vn1q5">
       <property role="TrG5h" value="G9_EB_Warn_on_time" />
@@ -8961,7 +8961,7 @@
           <property role="19SUeA" value="Risk associated with hazard " />
         </node>
         <node concept="oY6sn" id="22e91OCPTqT" role="19SJt6">
-          <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+          <ref role="oTUVg" node="G$XGFsgYdV" />
         </node>
         <node concept="19SUe$" id="22e91OCPTqU" role="19SJt6">
           <property role="19SUeA" value="&#10;has been shown negligible." />
@@ -8975,7 +8975,7 @@
           <property role="19SUeA" value="Risk associated with hazard " />
         </node>
         <node concept="oY6sn" id="22e91OCPTIm" role="19SJt6">
-          <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+          <ref role="oTUVg" node="3XLpsf2__9J" />
         </node>
         <node concept="19SUe$" id="22e91OCPTIn" role="19SJt6">
           <property role="19SUeA" value="&#10;has been shown negligible" />
@@ -8989,7 +8989,7 @@
           <property role="19SUeA" value="Risk associated with hazard " />
         </node>
         <node concept="oY6sn" id="22e91OCPTLC" role="19SJt6">
-          <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+          <ref role="oTUVg" node="3XLpsf2__9z" />
         </node>
         <node concept="19SUe$" id="22e91OCPTLD" role="19SJt6">
           <property role="19SUeA" value="&#10;has been shown negligible" />
@@ -8997,16 +8997,16 @@
       </node>
     </node>
     <node concept="8gDHL" id="22e91OCPUcO" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdN" resolve="S1_EB_Hazard_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPTIj" resolve="G11_EB_Brake_only_if_necessary" />
+      <ref role="3VeSjP" node="22e91OCPKdN" />
+      <ref role="3VeSjQ" node="22e91OCPTIj" />
     </node>
     <node concept="8gDHL" id="22e91OCPUep" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdN" resolve="S1_EB_Hazard_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPTL_" resolve="G10_EB_Warn_only_if_necessary" />
+      <ref role="3VeSjP" node="22e91OCPKdN" />
+      <ref role="3VeSjQ" node="22e91OCPTL_" />
     </node>
     <node concept="8gDHL" id="22e91OCPUkY" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPKdN" resolve="S1_EB_Hazard_Risk_Management" />
-      <ref role="3VeSjQ" node="22e91OCPTqQ" resolve="G9_EB_Warn_on_time" />
+      <ref role="3VeSjP" node="22e91OCPKdN" />
+      <ref role="3VeSjQ" node="22e91OCPTqQ" />
     </node>
     <node concept="2vmxSQ" id="22e91OCPUFh" role="2vn1q5">
       <property role="TrG5h" value="C7_EB_Low_ASIL" />
@@ -9017,16 +9017,16 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="22e91OCPUQA" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPTqQ" resolve="G9_EB_Warn_on_time" />
-      <ref role="3VeSjQ" node="22e91OCPUFh" resolve="C7_EB_Low_ASIL" />
+      <ref role="3VeSjP" node="22e91OCPTqQ" />
+      <ref role="3VeSjQ" node="22e91OCPUFh" />
     </node>
     <node concept="2vhqFZ" id="22e91OCPUZw" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPTL_" resolve="G10_EB_Warn_only_if_necessary" />
-      <ref role="3VeSjQ" node="22e91OCPUFh" resolve="C7_EB_Low_ASIL" />
+      <ref role="3VeSjP" node="22e91OCPTL_" />
+      <ref role="3VeSjQ" node="22e91OCPUFh" />
     </node>
     <node concept="2vhqFZ" id="22e91OCPV7z" role="2vhqc$">
-      <ref role="3VeSjP" node="22e91OCPTIj" resolve="G11_EB_Brake_only_if_necessary" />
-      <ref role="3VeSjQ" node="22e91OCPUFh" resolve="C7_EB_Low_ASIL" />
+      <ref role="3VeSjP" node="22e91OCPTIj" />
+      <ref role="3VeSjQ" node="22e91OCPUFh" />
     </node>
   </node>
   <node concept="3h3iLa" id="75La0fJyZ18">

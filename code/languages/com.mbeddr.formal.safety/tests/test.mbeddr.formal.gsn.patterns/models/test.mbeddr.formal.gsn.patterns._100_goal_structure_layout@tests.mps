@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -26,6 +26,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -195,6 +196,7 @@
   </node>
   <node concept="1lH9Xt" id="4kPUbDDugfZ">
     <property role="TrG5h" value="_010_TestAutolayoutSimpleGoalStructures" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6K99IwmoNQh" role="1SL9yI">
       <property role="TrG5h" value="_010_testAutolayoutOneParentGoalThreeSubgoals" />
       <node concept="3cqZAl" id="6K99IwmoNQi" role="3clF45" />
@@ -2702,6 +2704,7 @@
   </node>
   <node concept="1lH9Xt" id="6K99IwmFD$G">
     <property role="TrG5h" value="_100_TestAutolayoutGoalStructuresWithPatternInstances" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6K99IwmFD$H" role="1SL9yI">
       <property role="TrG5h" value="_010_testAutolayoutOneTopGoalAndOnePatternInstance" />
       <node concept="3cqZAl" id="6K99IwmFD$I" role="3clF45" />
@@ -2865,6 +2868,7 @@
   </node>
   <node concept="1lH9Xt" id="6K99IwmFY1J">
     <property role="TrG5h" value="_005_TestTopLevelGoalStructureEntities" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6K99IwmFY1K" role="1SL9yI">
       <property role="TrG5h" value="_110_testTopLevelEntitiesOneTopGoalAndOnePatternInstance" />
       <node concept="3cqZAl" id="6K99IwmFY1L" role="3clF45" />

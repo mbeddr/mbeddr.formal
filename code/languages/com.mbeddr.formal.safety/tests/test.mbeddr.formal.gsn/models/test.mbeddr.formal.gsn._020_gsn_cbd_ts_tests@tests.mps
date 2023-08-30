@@ -2,7 +2,7 @@
 <model ref="r:dfcb6740-8cba-4559-9f5b-c71472c2147c(test.mbeddr.formal.gsn._020_gsn_cbd_ts_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <use id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch" version="1" />
@@ -27,6 +27,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -110,6 +111,7 @@
   </registry>
   <node concept="1lH9Xt" id="4MR8i$4iSsp">
     <property role="TrG5h" value="_010_all_components_of_assembly_are_referenced_in_CBD_implementationGoals" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4MR8i$4iStz" role="1SKRRt">
       <node concept="2vn7XN" id="4MR8i$4iSty" role="1qenE9">
         <node concept="Z5Ll5" id="4MR8i$4iSun" role="2vn1q5">

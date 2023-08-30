@@ -2,7 +2,7 @@
 <model ref="r:c0083739-8701-4962-aa00-a6342ea638c8(test.mbeddr.formal.nusmv.tests_source@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -30,6 +30,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -234,6 +235,7 @@
   <node concept="1lH9Xt" id="59AZjhg2j3J">
     <property role="TrG5h" value="_000_no_verification_condition" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="59AZjhg2j3K" role="1SL9yI">
       <property role="TrG5h" value="test_no_verification_condition" />
       <node concept="3cqZAl" id="59AZjhg2j3L" role="3clF45" />
@@ -557,6 +559,7 @@
   <node concept="1lH9Xt" id="6xNJt7lEIiV">
     <property role="TrG5h" value="_100_bmc_runs" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6xNJt7lEIiW" role="1SL9yI">
       <property role="TrG5h" value="test_bmc_all_properties_pass" />
       <node concept="3cqZAl" id="6xNJt7lEIiX" role="3clF45" />
@@ -806,6 +809,7 @@
   <node concept="1lH9Xt" id="Mk4_OnYDSG">
     <property role="TrG5h" value="_010_specs" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="Mk4_OnYDSH" role="1SL9yI">
       <property role="TrG5h" value="test_check_ltl_spec" />
       <node concept="3cqZAl" id="Mk4_OnYDSI" role="3clF45" />
@@ -956,6 +960,7 @@
   <node concept="1lH9Xt" id="6XKrTzkzbAt">
     <property role="TrG5h" value="_200_finding_originating_properties_based_on_names" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6XKrTzkzbAu" role="1SL9yI">
       <property role="TrG5h" value="test_find_properties" />
       <node concept="3cqZAl" id="6XKrTzkzbAv" role="3clF45" />

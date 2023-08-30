@@ -181,7 +181,7 @@
               <property role="2IPVms" value="0" />
             </node>
             <node concept="3Ug1Ap" id="3VQuWXRTYV" role="2H9Iav">
-              <ref role="3Ug1Ao" node="3VQuWXRTWo" resolve="raw_value" />
+              <ref role="3Ug1Ao" node="3VQuWXRTWo" />
             </node>
           </node>
         </node>
@@ -193,18 +193,18 @@
             <node concept="1yyYsf" id="3VQuWXRUa6" role="32OYtT">
               <node concept="nE0YJ" id="3VQuWXRUa7" role="2H9Iav">
                 <node concept="3Ug1Ap" id="3VQuWXRU6V" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="3VQuWXRTWo" resolve="raw_value" />
+                  <ref role="3Ug1Ao" node="3VQuWXRTWo" />
                 </node>
                 <node concept="hx854" id="3VQuWXRU9r" role="2H9Ial">
-                  <ref role="hx9HS" node="3VQuWXRU81" resolve="TRESHOLD" />
+                  <ref role="hx9HS" node="3VQuWXRU81" />
                 </node>
               </node>
               <node concept="2HbLFT" id="3VQuWXRUas" role="2H9Ial">
                 <node concept="hx854" id="3VQuWXRUbA" role="2H9Ial">
-                  <ref role="hx9HS" node="3VQuWXRU81" resolve="TRESHOLD" />
+                  <ref role="hx9HS" node="3VQuWXRU81" />
                 </node>
                 <node concept="3Ug1Ap" id="3VQuWXRUan" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="3VQuWXRTXj" resolve="plaus_val" />
+                  <ref role="3Ug1Ao" node="3VQuWXRTXj" />
                 </node>
               </node>
             </node>
@@ -218,18 +218,18 @@
             <node concept="1yyYsf" id="3VQuWXRUdj" role="32OYtT">
               <node concept="nE0YK" id="3VQuWXRUdR" role="2H9Iav">
                 <node concept="3Ug1Ap" id="3VQuWXRUdl" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="3VQuWXRTWo" resolve="raw_value" />
+                  <ref role="3Ug1Ao" node="3VQuWXRTWo" />
                 </node>
                 <node concept="hx854" id="3VQuWXRUdm" role="2H9Ial">
-                  <ref role="hx9HS" node="3VQuWXRU81" resolve="TRESHOLD" />
+                  <ref role="hx9HS" node="3VQuWXRU81" />
                 </node>
               </node>
               <node concept="2HbLFT" id="3VQuWXRUdn" role="2H9Ial">
                 <node concept="3Ug1Ap" id="3VQuWXRUeU" role="2H9Ial">
-                  <ref role="3Ug1Ao" node="3VQuWXRTWo" resolve="raw_value" />
+                  <ref role="3Ug1Ao" node="3VQuWXRTWo" />
                 </node>
                 <node concept="3Ug1Ap" id="3VQuWXRUdp" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="3VQuWXRTXj" resolve="plaus_val" />
+                  <ref role="3Ug1Ao" node="3VQuWXRTXj" />
                 </node>
               </node>
             </node>
@@ -239,13 +239,13 @@
       <node concept="3UnI9n" id="3VQuWXRTXj" role="3UnI90">
         <property role="TrG5h" value="plaus_val" />
         <node concept="1savGX" id="3VQuWXRU6p" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXRU4f" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXRU4f" />
         </node>
       </node>
       <node concept="3UnI81" id="3VQuWXRTWo" role="3UnI9m">
         <property role="TrG5h" value="raw_value" />
         <node concept="1savGX" id="3VQuWXRU64" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXRU4f" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXRU4f" />
         </node>
       </node>
     </node>
@@ -261,10 +261,10 @@
         <node concept="2SafMM" id="3VQuWXRUfz" role="1yBDGv">
           <node concept="nE0YK" id="3VQuWXRUfM" role="1yBIc4">
             <node concept="hx854" id="3VQuWXRUg2" role="2H9Ial">
-              <ref role="hx9HS" node="3VQuWXRU81" resolve="TRESHOLD" />
+              <ref role="hx9HS" node="3VQuWXRU81" />
             </node>
             <node concept="3Ug1Ap" id="3VQuWXRUfH" role="2H9Iav">
-              <ref role="3Ug1Ao" node="3VQuWXRU2x" resolve="sensor_val" />
+              <ref role="3Ug1Ao" node="3VQuWXRU2x" />
             </node>
           </node>
         </node>
@@ -276,16 +276,16 @@
             <node concept="1yyYsf" id="3VQuWXRUl9" role="32OYtT">
               <node concept="nE0YJ" id="3VQuWXRUla" role="2H9Iav">
                 <node concept="3Ug1Ap" id="3VQuWXRUi9" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="3VQuWXRU2x" resolve="sensor_val" />
+                  <ref role="3Ug1Ao" node="3VQuWXRU2x" />
                 </node>
                 <node concept="hx854" id="3VQuWXRUiv" role="2H9Ial">
-                  <ref role="hx9HS" node="3VQuWXRUgE" resolve="BRAKING_SPEED" />
+                  <ref role="hx9HS" node="3VQuWXRUgE" />
                 </node>
               </node>
               <node concept="2Sa8AP" id="3VQuWXRUlt" role="2H9Ial">
                 <node concept="2HbLFT" id="3VQuWXRUlb" role="1yBIc4">
                   <node concept="3Ug1Ap" id="3VQuWXRUj$" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="3VQuWXRUgn" resolve="brake" />
+                    <ref role="3Ug1Ao" node="3VQuWXRUgn" />
                   </node>
                   <node concept="1yCjRe" id="3VQuWXRUjZ" role="2H9Ial" />
                 </node>
@@ -297,7 +297,7 @@
       <node concept="3UnI81" id="3VQuWXRU2x" role="3UnI9m">
         <property role="TrG5h" value="sensor_val" />
         <node concept="1savGX" id="3VQuWXRUfa" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXRU4f" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXRU4f" />
         </node>
       </node>
     </node>
@@ -312,15 +312,15 @@
             <node concept="1yyYsf" id="3VQuWXRUt5" role="32OYtT">
               <node concept="nE0YJ" id="3VQuWXRUt6" role="2H9Iav">
                 <node concept="3Ug1Ap" id="3VQuWXRUrO" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="3VQuWXRUpG" resolve="raw_data" />
+                  <ref role="3Ug1Ao" node="3VQuWXRUpG" />
                 </node>
                 <node concept="hx854" id="3VQuWXRUsq" role="2H9Ial">
-                  <ref role="hx9HS" node="3VQuWXRUgE" resolve="BRAKING_SPEED" />
+                  <ref role="hx9HS" node="3VQuWXRUgE" />
                 </node>
               </node>
               <node concept="2Sa3Mo" id="3VQuWXRUth" role="2H9Ial">
                 <node concept="3Ug1Ap" id="3VQuWXRUtv" role="1yBIc4">
-                  <ref role="3Ug1Ao" node="3VQuWXRUq1" resolve="brake" />
+                  <ref role="3Ug1Ao" node="3VQuWXRUq1" />
                 </node>
               </node>
             </node>
@@ -335,7 +335,7 @@
               <property role="2IPVms" value="1" />
             </node>
             <node concept="3Ug1Ap" id="3VQuWXRXAX" role="2H9Iav">
-              <ref role="3Ug1Ao" node="3VQuWXRUpG" resolve="raw_data" />
+              <ref role="3Ug1Ao" node="3VQuWXRUpG" />
             </node>
           </node>
         </node>
@@ -343,7 +343,7 @@
       <node concept="3UnI81" id="3VQuWXRUpG" role="3UnI9m">
         <property role="TrG5h" value="raw_data" />
         <node concept="1savGX" id="3VQuWXRUpV" role="3UnI80">
-          <ref role="1savGW" node="3VQuWXRU4f" resolve="data_t" />
+          <ref role="1savGW" node="3VQuWXRU4f" />
         </node>
       </node>
       <node concept="3UnI9n" id="3VQuWXRUq1" role="3UnI90">
@@ -419,49 +419,49 @@
       <node concept="3Ug1AV" id="3VQuWXRUuW" role="3UgYNK">
         <property role="TrG5h" value="sensor_plausibilizer" />
         <node concept="3Ug1AZ" id="3VQuWXRUuX" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3VQuWXRTWl" resolve="SensorPlausibilization" />
+          <ref role="3Ug1AY" node="3VQuWXRTWl" />
         </node>
       </node>
       <node concept="3Ug1AV" id="3VQuWXRUv6" role="3UgYNK">
         <property role="TrG5h" value="brake_activator" />
         <node concept="3Ug1AZ" id="3VQuWXRUv7" role="3Ug1A_">
-          <ref role="3Ug1AY" node="3VQuWXRU2d" resolve="BrakeActivator" />
+          <ref role="3Ug1AY" node="3VQuWXRU2d" />
         </node>
       </node>
       <node concept="3Ug1$w" id="3VQuWXRUvE" role="3UgYNK">
         <node concept="3Ug1Ap" id="3VQuWXRUvF" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="3VQuWXRUpG" resolve="raw_data" />
+          <ref role="3Ug1Ao" node="3VQuWXRUpG" />
         </node>
         <node concept="3Ug1GC" id="3VQuWXRUvG" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3VQuWXRTWo" resolve="raw_value" />
+          <ref role="3Ug1Ha" node="3VQuWXRTWo" />
           <node concept="3Ug1GJ" id="3VQuWXRUvH" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXRUuW" resolve="sensor_plausibilizer" />
+            <ref role="3Ug1GI" node="3VQuWXRUuW" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3VQuWXRUvU" role="3UgYNK">
         <node concept="3Ug1GC" id="3VQuWXRUvV" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3VQuWXRTXj" resolve="plaus_val" />
+          <ref role="3Ug1Ha" node="3VQuWXRTXj" />
           <node concept="3Ug1GJ" id="3VQuWXRUvW" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXRUuW" resolve="sensor_plausibilizer" />
+            <ref role="3Ug1GI" node="3VQuWXRUuW" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3VQuWXRUvX" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3VQuWXRU2x" resolve="sensor_val" />
+          <ref role="3Ug1Ha" node="3VQuWXRU2x" />
           <node concept="3Ug1GJ" id="3VQuWXRUvY" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXRUv6" resolve="brake_activator" />
+            <ref role="3Ug1GI" node="3VQuWXRUv6" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3VQuWXRUwk" role="3UgYNK">
         <node concept="3Ug1GC" id="3VQuWXRUwl" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3VQuWXRUgn" resolve="brake" />
+          <ref role="3Ug1Ha" node="3VQuWXRUgn" />
           <node concept="3Ug1GJ" id="3VQuWXRUwm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3VQuWXRUv6" resolve="brake_activator" />
+            <ref role="3Ug1GI" node="3VQuWXRUv6" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="3VQuWXRUwn" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="3VQuWXRUq1" resolve="brake" />
+          <ref role="3Ug1Ao" node="3VQuWXRUq1" />
         </node>
       </node>
     </node>

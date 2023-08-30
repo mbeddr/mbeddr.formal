@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
@@ -26,6 +26,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -229,6 +230,7 @@
   </node>
   <node concept="1lH9Xt" id="1r1mR59M$33">
     <property role="TrG5h" value="_010_and_gate_propagation" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1r1mR59M$9M" role="1SL9yI">
       <property role="TrG5h" value="testAndGate" />
       <node concept="3cqZAl" id="1r1mR59M$9N" role="3clF45" />
@@ -576,6 +578,7 @@
   </node>
   <node concept="1lH9Xt" id="1r1mR59NU2I">
     <property role="TrG5h" value="_020_or_gate_propagation" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1r1mR59NU2J" role="1SL9yI">
       <property role="TrG5h" value="testOrGate" />
       <node concept="3cqZAl" id="1r1mR59NU2K" role="3clF45" />
@@ -961,6 +964,7 @@
   </node>
   <node concept="1lH9Xt" id="1r1mR59OqPX">
     <property role="TrG5h" value="_030_modularized_trees_propagation" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1r1mR59OqPY" role="1SL9yI">
       <property role="TrG5h" value="testModularizedTreePropagation" />
       <node concept="3cqZAl" id="1r1mR59OqPZ" role="3clF45" />

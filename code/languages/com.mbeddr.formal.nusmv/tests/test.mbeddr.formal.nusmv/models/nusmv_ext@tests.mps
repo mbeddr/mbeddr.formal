@@ -2,7 +2,7 @@
 <model ref="r:d1c4dc57-486e-45cb-a4b4-7c11d3a25cd3(test.mbeddr.formal.nusmv.nusmv_ext@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -45,6 +45,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -304,6 +305,7 @@
   <node concept="1lH9Xt" id="6xNJt7lQn_y">
     <property role="TrG5h" value="_010_udt_enum" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6xNJt7lQn_z" role="1SL9yI">
       <property role="TrG5h" value="test_010_udt_enum" />
       <node concept="3cqZAl" id="6xNJt7lQn__" role="3clF45" />
@@ -948,6 +950,7 @@
   <node concept="1lH9Xt" id="6xNJt7lR6Su">
     <property role="TrG5h" value="_010_udt_interval" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6xNJt7lR6Sv" role="1SL9yI">
       <property role="TrG5h" value="test_010_udt_interval" />
       <node concept="3cqZAl" id="6xNJt7lR6Sw" role="3clF45" />
@@ -1059,6 +1062,7 @@
   </node>
   <node concept="1lH9Xt" id="4Jpgh6INhbk">
     <property role="TrG5h" value="_500_typed_params" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="4Jpgh6INhiS" role="1SL9yI">
       <property role="TrG5h" value="testTypedParams" />
       <node concept="3cqZAl" id="4Jpgh6INhiT" role="3clF45" />
@@ -1189,6 +1193,7 @@
   <node concept="1lH9Xt" id="1gJVC85Lt8Y">
     <property role="TrG5h" value="_020_structures" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1gJVC85Lt8Z" role="1SL9yI">
       <property role="TrG5h" value="test_struct_test1_PASS" />
       <node concept="3cqZAl" id="1gJVC85Lt90" role="3clF45" />

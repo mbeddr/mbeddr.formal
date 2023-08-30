@@ -2,7 +2,7 @@
 <model ref="r:c3e576e7-b254-4551-80d5-d8b63b67c943(test.mbeddr.formal.gsn.patterns._010_requirements_pattern@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f465db4c-63d4-40ef-afda-acd713dc19a1" name="com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
@@ -23,6 +23,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -97,6 +98,7 @@
   </registry>
   <node concept="1lH9Xt" id="63UItOi6agd">
     <property role="TrG5h" value="TestTextFormatConstraintsForArgumentOverRequirementsStrategy" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="63UItOi6agf" role="1SKRRt">
       <node concept="2vn7XN" id="63UItOi6age" role="1qenE9">
         <node concept="2iK_uI" id="63UItOi6ahb" role="2vn1q5">

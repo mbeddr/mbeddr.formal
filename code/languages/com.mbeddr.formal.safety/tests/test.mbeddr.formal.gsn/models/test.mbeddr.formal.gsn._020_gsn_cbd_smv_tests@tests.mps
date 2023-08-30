@@ -2,7 +2,7 @@
 <model ref="r:c26bc628-bb41-4426-812a-c7efd7a95d18(test.mbeddr.formal.gsn._020_gsn_cbd_smv_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
@@ -37,6 +37,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -254,6 +255,7 @@
   <node concept="1lH9Xt" id="1xpXAu11HaG">
     <property role="TrG5h" value="_010_CBD_tests_PASS" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1xpXAu11HaH" role="1SL9yI">
       <property role="TrG5h" value="gsn_cbd_tests_holds" />
       <node concept="3cqZAl" id="1xpXAu11HaJ" role="3clF45" />
@@ -664,6 +666,7 @@
   <node concept="1lH9Xt" id="1xpXAu123dV">
     <property role="TrG5h" value="_010_CBD_tests_FAIL" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1xpXAu123dW" role="1SL9yI">
       <property role="TrG5h" value="gsn_cbd_tests_fail" />
       <node concept="3cqZAl" id="1xpXAu123dX" role="3clF45" />

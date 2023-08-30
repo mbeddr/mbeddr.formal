@@ -567,24 +567,24 @@
         </node>
       </node>
       <node concept="12noo2" id="4g_LT4l9MBz" role="1QQeAC">
-        <ref role="12no6r" node="4g_LT4l9MA1" resolve="AirbagSystem" />
+        <ref role="12no6r" node="4g_LT4l9MA1" />
         <node concept="12utKC" id="4g_LT4l9MBT" role="3z0uXc">
           <node concept="12ukSO" id="4g_LT4l9MBU" role="12ut_$" />
           <node concept="12uYXO" id="4g_LT4l9MBV" role="12ut_r">
             <node concept="3Ug1Ap" id="4g_LT4l9MCs" role="12uYXx">
-              <ref role="3Ug1Ao" node="4g_LT4l9M$p" resolve="collision_detected" />
+              <ref role="3Ug1Ao" node="4g_LT4l9M$p" />
             </node>
           </node>
         </node>
         <node concept="12utKC" id="4g_LT4l9MBX" role="3z0uXc">
           <node concept="12uYNE" id="4g_LT4l9MBY" role="12ut_$">
             <node concept="3Ug1Ap" id="4g_LT4l9MCc" role="12uYNq">
-              <ref role="3Ug1Ao" node="4g_LT4l9M$p" resolve="collision_detected" />
+              <ref role="3Ug1Ao" node="4g_LT4l9M$p" />
             </node>
           </node>
           <node concept="12uYM5" id="4g_LT4l9MC0" role="12ut_r">
             <node concept="3Ug1Ap" id="4g_LT4l9MCD" role="12uYM6">
-              <ref role="3Ug1Ao" node="4g_LT4l9M_h" resolve="explode_command" />
+              <ref role="3Ug1Ao" node="4g_LT4l9M_h" />
             </node>
           </node>
         </node>
@@ -609,12 +609,12 @@
         </node>
       </node>
       <node concept="12noo2" id="4g_LT4l9MDd" role="1QQeAC">
-        <ref role="12no6r" node="4g_LT4l9MA1" resolve="AirbagSystem" />
+        <ref role="12no6r" node="4g_LT4l9MA1" />
         <node concept="12utKC" id="4g_LT4l9MDx" role="3z0uXc">
           <node concept="12ukSO" id="4g_LT4l9MDy" role="12ut_$" />
           <node concept="12uYXO" id="4g_LT4l9MDz" role="12ut_r">
             <node concept="3Ug1Ap" id="4g_LT4l9ME1" role="12uYXx">
-              <ref role="3Ug1Ao" node="4g_LT4l9M$U" resolve="deactivate_airbag" />
+              <ref role="3Ug1Ao" node="4g_LT4l9M$U" />
             </node>
           </node>
         </node>
@@ -624,13 +624,13 @@
         <node concept="12utKC" id="4g_LT4l9MDA" role="3z0uXc">
           <node concept="12uYNE" id="4g_LT4l9MDB" role="12ut_$">
             <node concept="3Ug1Ap" id="4g_LT4l9MDS" role="12uYNq">
-              <ref role="3Ug1Ao" node="4g_LT4l9M$U" resolve="deactivate_airbag" />
+              <ref role="3Ug1Ao" node="4g_LT4l9M$U" />
             </node>
           </node>
           <node concept="12uYM5" id="4g_LT4l9MDD" role="12ut_r">
             <node concept="1yA0yd" id="4g_LT4l9MDE" role="12uYM6">
               <node concept="3Ug1Ap" id="4g_LT4l9ME5" role="32OYtT">
-                <ref role="3Ug1Ao" node="4g_LT4l9M_h" resolve="explode_command" />
+                <ref role="3Ug1Ao" node="4g_LT4l9M_h" />
               </node>
             </node>
           </node>
@@ -661,7 +661,7 @@
     <node concept="2dDAV0" id="4g_LT4l9MA1" role="2HcuB8">
       <property role="TrG5h" value="AirbagSystem" />
       <node concept="3Ug1AZ" id="4g_LT4l9MAh" role="2p5x1W">
-        <ref role="3Ug1AY" node="4g_LT4l9MzZ" resolve="AirbagInterface" />
+        <ref role="3Ug1AY" node="4g_LT4l9MzZ" />
       </node>
       <node concept="37mRI7" id="4g_LT4l9MAl" role="lGtFl">
         <node concept="37mRIm" id="4g_LT4l9MAm" role="37mRID">
@@ -718,7 +718,7 @@
         <node concept="JlCpM" id="1L4MZBxTand" role="32O2ov">
           <property role="TrG5h" value="airbag_explode_command" />
           <node concept="2He$iJ" id="1L4MZBxTane" role="1zoetD">
-            <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+            <ref role="2He$iI" node="1L4MZBxTang" />
           </node>
         </node>
       </node>
@@ -735,47 +735,47 @@
       <node concept="2Hfkzp" id="1L4MZBxTap4" role="2HcbjO">
         <node concept="2HfkAV" id="1L4MZBxTaqE" role="2HfkAP">
           <node concept="2He$iJ" id="1L4MZBxTaqV" role="2He$ia">
-            <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+            <ref role="2He$iI" node="1L4MZBxTapX" />
           </node>
           <node concept="1yCjT0" id="1L4MZBxTatV" role="2He$i0" />
         </node>
         <node concept="2HevG6" id="1L4MZBxTarY" role="2HfkAP">
           <node concept="2He$iJ" id="1L4MZBxTasi" role="2He$ia">
-            <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+            <ref role="2He$iI" node="1L4MZBxTapX" />
           </node>
           <node concept="2HbMDt" id="1L4MZBxTau$" role="2He$i0">
             <node concept="32Ogvo" id="1L4MZBxTav0" role="2H9Ial">
-              <ref role="32Ogvr" node="1L4MZBxTani" resolve="deactivate_airbag" />
+              <ref role="32Ogvr" node="1L4MZBxTani" />
             </node>
             <node concept="2He$iJ" id="1L4MZBxTaug" role="2H9Iav">
-              <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+              <ref role="2He$iI" node="1L4MZBxTapX" />
             </node>
           </node>
         </node>
         <node concept="2HeLW8" id="1L4MZBxTavE" role="2HfkAP" />
         <node concept="2HfkAV" id="1L4MZBxTava" role="2HfkAP">
           <node concept="2He$iJ" id="1L4MZBxTaw4" role="2He$ia">
-            <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+            <ref role="2He$iI" node="1L4MZBxTang" />
           </node>
           <node concept="1yCjT0" id="1L4MZBxTavc" role="2He$i0" />
         </node>
         <node concept="2HevG6" id="1L4MZBxTav5" role="2HfkAP">
           <node concept="2He$iJ" id="1L4MZBxTawB" role="2He$ia">
-            <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+            <ref role="2He$iI" node="1L4MZBxTang" />
           </node>
           <node concept="2HbMDt" id="1L4MZBxTazU" role="2He$i0">
             <node concept="2He$iJ" id="1L4MZBxTay6" role="2H9Iav">
-              <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+              <ref role="2He$iI" node="1L4MZBxTang" />
             </node>
             <node concept="32OYss" id="1L4MZBxTazV" role="2H9Ial">
               <node concept="2HbMbg" id="1L4MZBxTazW" role="32OYtT">
                 <node concept="1yA0yd" id="1L4MZBxTazX" role="2H9Iav">
                   <node concept="2He$iJ" id="1L4MZBxTazH" role="32OYtT">
-                    <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+                    <ref role="2He$iI" node="1L4MZBxTapX" />
                   </node>
                 </node>
                 <node concept="32Ogvo" id="1L4MZBxTa$K" role="2H9Ial">
-                  <ref role="32Ogvr" node="1L4MZBxTanj" resolve="collision_detected" />
+                  <ref role="32Ogvr" node="1L4MZBxTanj" />
                 </node>
               </node>
             </node>
@@ -809,12 +809,12 @@
         <node concept="2Hdskp" id="1L4MZBxTanr" role="2Hfkx9">
           <property role="TrG5h" value="a" />
           <node concept="1zigX2" id="1L4MZBxTans" role="2HdssA">
-            <ref role="1zigX1" node="1L4MZBxTanb" resolve="airbag" />
+            <ref role="1zigX1" node="1L4MZBxTanb" />
             <node concept="2He$iJ" id="1L4MZBxTant" role="1zigYY">
-              <ref role="2He$iI" node="1L4MZBxTann" resolve="my_deactivate_airbag" />
+              <ref role="2He$iI" node="1L4MZBxTann" />
             </node>
             <node concept="2He$iJ" id="1L4MZBxTanu" role="1zigYY">
-              <ref role="2He$iI" node="1L4MZBxTanp" resolve="my_collision_detected" />
+              <ref role="2He$iI" node="1L4MZBxTanp" />
             </node>
           </node>
         </node>
@@ -842,7 +842,7 @@
         </node>
       </node>
       <node concept="0mxsP" id="1L4MZBxTaBG" role="1QQeAC">
-        <ref role="2rfAiQ" node="1L4MZBxTanb" resolve="airbag" />
+        <ref role="2rfAiQ" node="1L4MZBxTanb" />
       </node>
     </node>
   </node>
@@ -880,7 +880,7 @@
         <node concept="JlCpM" id="4g_LT4l9MeJ" role="32O2ov">
           <property role="TrG5h" value="airbag_explode_command" />
           <node concept="2He$iJ" id="4g_LT4l9MeK" role="1zoetD">
-            <ref role="2He$iI" node="4g_LT4l9MeM" resolve="explode_state" />
+            <ref role="2He$iI" node="4g_LT4l9MeM" />
           </node>
         </node>
       </node>
@@ -912,12 +912,12 @@
         <node concept="2Hdskp" id="4g_LT4l9MeX" role="2Hfkx9">
           <property role="TrG5h" value="a" />
           <node concept="1zigX2" id="4g_LT4l9MeY" role="2HdssA">
-            <ref role="1zigX1" node="4g_LT4l9MeH" resolve="airbag" />
+            <ref role="1zigX1" node="4g_LT4l9MeH" />
             <node concept="2He$iJ" id="4g_LT4l9MeZ" role="1zigYY">
-              <ref role="2He$iI" node="4g_LT4l9MeT" resolve="my_deactivate_airbag" />
+              <ref role="2He$iI" node="4g_LT4l9MeT" />
             </node>
             <node concept="2He$iJ" id="4g_LT4l9Mf0" role="1zigYY">
-              <ref role="2He$iI" node="4g_LT4l9MeV" resolve="my_collision_detected" />
+              <ref role="2He$iI" node="4g_LT4l9MeV" />
             </node>
           </node>
         </node>
@@ -945,24 +945,24 @@
         </node>
       </node>
       <node concept="12noo3" id="4g_LT4l9Mga" role="1QQeAC">
-        <ref role="12no6s" node="4g_LT4l9MeH" resolve="airbag" />
+        <ref role="12no6s" node="4g_LT4l9MeH" />
         <node concept="12utKC" id="4g_LT4l9Mgb" role="3z0uXc">
           <node concept="12ukSO" id="4g_LT4l9Mgc" role="12ut_$" />
           <node concept="12uYXO" id="4g_LT4l9Mgd" role="12ut_r">
             <node concept="12qyU8" id="4g_LT4l9Mge" role="12uYXx">
-              <ref role="12qyFn" node="4g_LT4l9MeP" resolve="collision_detected" />
+              <ref role="12qyFn" node="4g_LT4l9MeP" />
             </node>
           </node>
         </node>
         <node concept="12utKC" id="4g_LT4l9Mgf" role="3z0uXc">
           <node concept="12uYNE" id="4g_LT4l9Mgg" role="12ut_$">
             <node concept="12qyU8" id="4g_LT4l9Mgh" role="12uYNq">
-              <ref role="12qyFn" node="4g_LT4l9MeP" resolve="collision_detected" />
+              <ref role="12qyFn" node="4g_LT4l9MeP" />
             </node>
           </node>
           <node concept="12uYM5" id="4g_LT4l9Mgi" role="12ut_r">
             <node concept="12qLwa" id="4g_LT4l9Mgj" role="12uYM6">
-              <ref role="12qLwd" node="4g_LT4l9MeJ" resolve="airbag_explode_command" />
+              <ref role="12qLwd" node="4g_LT4l9MeJ" />
             </node>
           </node>
         </node>
@@ -987,12 +987,12 @@
         </node>
       </node>
       <node concept="12noo3" id="4g_LT4l9Mgs" role="1QQeAC">
-        <ref role="12no6s" node="4g_LT4l9MeH" resolve="airbag" />
+        <ref role="12no6s" node="4g_LT4l9MeH" />
         <node concept="12utKC" id="4g_LT4l9Mgt" role="3z0uXc">
           <node concept="12ukSO" id="4g_LT4l9Mgu" role="12ut_$" />
           <node concept="12uYXO" id="4g_LT4l9Mgv" role="12ut_r">
             <node concept="12qyU8" id="4g_LT4l9Mgw" role="12uYXx">
-              <ref role="12qyFn" node="4g_LT4l9MeO" resolve="deactivate_airbag" />
+              <ref role="12qyFn" node="4g_LT4l9MeO" />
             </node>
           </node>
         </node>
@@ -1002,13 +1002,13 @@
         <node concept="12utKC" id="4g_LT4l9Mgy" role="3z0uXc">
           <node concept="12uYNE" id="4g_LT4l9Mgz" role="12ut_$">
             <node concept="12qyU8" id="4g_LT4l9Mg$" role="12uYNq">
-              <ref role="12qyFn" node="4g_LT4l9MeO" resolve="deactivate_airbag" />
+              <ref role="12qyFn" node="4g_LT4l9MeO" />
             </node>
           </node>
           <node concept="12uYM5" id="4g_LT4l9Mg_" role="12ut_r">
             <node concept="1yA0yd" id="4g_LT4l9MgA" role="12uYM6">
               <node concept="12qLwa" id="4g_LT4l9MgB" role="32OYtT">
-                <ref role="12qLwd" node="4g_LT4l9MeJ" resolve="airbag_explode_command" />
+                <ref role="12qLwd" node="4g_LT4l9MeJ" />
               </node>
             </node>
           </node>
@@ -1035,7 +1035,7 @@
         <node concept="JlCpM" id="4eD_5l3kF26" role="32O2ov">
           <property role="TrG5h" value="airbag_explode_command" />
           <node concept="2He$iJ" id="4eD_5l3mu68" role="1zoetD">
-            <ref role="2He$iI" node="4eD_5l3mtYL" resolve="explode_cmd" />
+            <ref role="2He$iI" node="4eD_5l3mtYL" />
           </node>
         </node>
       </node>
@@ -1062,88 +1062,88 @@
       <node concept="2aiEES" id="4eD_5l3mnjD" role="2HcbjO">
         <node concept="1tTNHs" id="4eD_5l3mnjP" role="2HfkAP">
           <node concept="1tTNRl" id="4eD_5l3mnjQ" role="2He$ia">
-            <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+            <ref role="1tTNPH" node="4eD_5l3mnjI" />
           </node>
           <node concept="1tTNP8" id="4eD_5l3mnjR" role="2He$i0">
             <node concept="1IK9QF" id="4eD_5l3mnjS" role="2H9I2x" />
             <node concept="1tTNwp" id="4eD_5l3mtQy" role="2H9I2x">
               <property role="TrG5h" value="T_1" />
               <node concept="1tS8IT" id="4eD_5l3mtQz" role="3JZSx7">
-                <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+                <ref role="1tS8HL" node="4eD_5l3mnjK" />
               </node>
               <node concept="1tTNRl" id="4eD_5l3mtQ$" role="3JXa2C">
-                <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+                <ref role="1tTNPH" node="4eD_5l3mnjI" />
               </node>
               <node concept="2HbLFT" id="4eD_5l3mtTD" role="2H9I4J">
                 <node concept="32Ogvo" id="4eD_5l3mtRk" role="2H9Iav">
-                  <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                  <ref role="32Ogvr" node="4eD_5l3mneR" />
                 </node>
                 <node concept="2HeeqP" id="4eD_5l3mtRS" role="2H9Ial">
-                  <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                  <ref role="2HeeqO" node="4eD_5l3mncu" />
                 </node>
               </node>
               <node concept="1tS8IT" id="4eD_5l3mtQA" role="2H9I4_">
-                <ref role="1tS8HL" node="4eD_5l3mnjL" resolve="innactive" />
+                <ref role="1tS8HL" node="4eD_5l3mnjL" />
               </node>
             </node>
             <node concept="1tTNwp" id="4eD_5l3mtS5" role="2H9I2x">
               <property role="TrG5h" value="T_2" />
               <node concept="1tS8IT" id="4eD_5l3mtS6" role="3JZSx7">
-                <ref role="1tS8HL" node="4eD_5l3mnjL" resolve="innactive" />
+                <ref role="1tS8HL" node="4eD_5l3mnjL" />
               </node>
               <node concept="1tTNRl" id="4eD_5l3mtS7" role="3JXa2C">
-                <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+                <ref role="1tTNPH" node="4eD_5l3mnjI" />
               </node>
               <node concept="2HbLFT" id="4eD_5l3mGMx" role="2H9I4J">
                 <node concept="2HeeqP" id="4eD_5l3mGML" role="2H9Ial">
-                  <ref role="2HeeqO" node="4eD_5l3mncs" resolve="activate" />
+                  <ref role="2HeeqO" node="4eD_5l3mncs" />
                 </node>
                 <node concept="32Ogvo" id="4eD_5l3mGMp" role="2H9Iav">
-                  <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                  <ref role="32Ogvr" node="4eD_5l3mneR" />
                 </node>
               </node>
               <node concept="1tS8IT" id="4eD_5l3mtS9" role="2H9I4_">
-                <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+                <ref role="1tS8HL" node="4eD_5l3mnjK" />
               </node>
             </node>
             <node concept="1tTNwp" id="4eD_5l3mtWU" role="2H9I2x">
               <property role="TrG5h" value="T_3" />
               <node concept="1tS8IT" id="4eD_5l3mtWV" role="3JZSx7">
-                <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+                <ref role="1tS8HL" node="4eD_5l3mnjK" />
               </node>
               <node concept="1tTNRl" id="4eD_5l3mtWW" role="3JXa2C">
-                <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+                <ref role="1tTNPH" node="4eD_5l3mnjI" />
               </node>
               <node concept="2HbMbg" id="4eD_5l3mGSn" role="2H9I4J">
                 <node concept="dheZm" id="4eD_5l3mGSI" role="2H9Ial">
                   <node concept="2HeeqP" id="4eD_5l3mGT0" role="2H9Ial">
-                    <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                    <ref role="2HeeqO" node="4eD_5l3mncu" />
                   </node>
                   <node concept="32Ogvo" id="4eD_5l3mGS_" role="2H9Iav">
-                    <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                    <ref role="32Ogvr" node="4eD_5l3mneR" />
                   </node>
                 </node>
                 <node concept="32Ogvo" id="4eD_5l3mtYf" role="2H9Iav">
-                  <ref role="32Ogvr" node="4eD_5l3mngn" resolve="collision_detected" />
+                  <ref role="32Ogvr" node="4eD_5l3mngn" />
                 </node>
               </node>
               <node concept="1tS8IT" id="4eD_5l3mtWY" role="2H9I4_">
-                <ref role="1tS8HL" node="4eD_5l3mtUR" resolve="exploded" />
+                <ref role="1tS8HL" node="4eD_5l3mtUR" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2HfkAV" id="4eD_5l3mnjM" role="2HfkAP">
           <node concept="1tTNRl" id="4eD_5l3mnjN" role="2He$ia">
-            <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+            <ref role="1tTNPH" node="4eD_5l3mnjI" />
           </node>
           <node concept="1tS8IT" id="4eD_5l3mnoP" role="2He$i0">
-            <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+            <ref role="1tS8HL" node="4eD_5l3mnjK" />
           </node>
         </node>
         <node concept="2HfkAV" id="4eD_5l3mu3r" role="2HfkAP">
           <node concept="2He$iJ" id="4eD_5l3mu42" role="2He$ia">
-            <ref role="2He$iI" node="4eD_5l3mtYL" resolve="explode_cmd" />
+            <ref role="2He$iI" node="4eD_5l3mtYL" />
           </node>
           <node concept="1yCjT0" id="4eD_5l3mu4n" role="2He$i0" />
         </node>
@@ -1151,13 +1151,13 @@
           <node concept="FsPnB" id="4eD_5l3mu56" role="2He$i0">
             <node concept="FsPnw" id="4eD_5l3mu55" role="2H9I2x">
               <node concept="3JXjYv" id="4eD_5l3mu5R" role="2H9I4J">
-                <ref role="3JXjYu" node="4eD_5l3mtWU" resolve="T_3" />
+                <ref role="3JXjYu" node="4eD_5l3mtWU" />
               </node>
               <node concept="1yCjRe" id="4eD_5l3mu62" role="2H9I4_" />
             </node>
           </node>
           <node concept="2He$iJ" id="4eD_5l3mu5K" role="2He$ia">
-            <ref role="2He$iI" node="4eD_5l3mtYL" resolve="explode_cmd" />
+            <ref role="2He$iI" node="4eD_5l3mtYL" />
           </node>
         </node>
         <node concept="37mRI7" id="4eD_5l3mtQj" role="lGtFl">
@@ -1264,7 +1264,7 @@
       <node concept="3_qfHp" id="4eD_5l3mneR" role="2Hdtzq">
         <property role="TrG5h" value="activate_cmd" />
         <node concept="2XJXdx" id="4eD_5l3mnf_" role="2HdssB">
-          <ref role="2XJXdw" node="4eD_5l3kF4M" resolve="activate_cmd_t" />
+          <ref role="2XJXdw" node="4eD_5l3kF4M" />
         </node>
       </node>
       <node concept="3_qfHp" id="4eD_5l3mngn" role="2Hdtzq">
@@ -1280,20 +1280,20 @@
                 <node concept="2HbMbg" id="4eD_5l3mH__" role="2H9Iav">
                   <node concept="2HbLFT" id="4eD_5l3mH_A" role="2H9Iav">
                     <node concept="32Ogvo" id="4eD_5l3mGmX" role="2H9Iav">
-                      <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                      <ref role="32Ogvr" node="4eD_5l3mneR" />
                     </node>
                     <node concept="2HeeqP" id="4eD_5l3mGnp" role="2H9Ial">
-                      <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                      <ref role="2HeeqO" node="4eD_5l3mncu" />
                     </node>
                   </node>
                   <node concept="1yA0yd" id="4eD_5l3mH_B" role="2H9Ial">
                     <node concept="32OYss" id="4eD_5l3mH_C" role="32OYtT">
                       <node concept="2HbLFT" id="4eD_5l3mH_D" role="32OYtT">
                         <node concept="1tTNRl" id="4eD_5l3mHcO" role="2H9Iav">
-                          <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+                          <ref role="1tTNPH" node="4eD_5l3mnjI" />
                         </node>
                         <node concept="1tS8IT" id="4eD_5l3mHiy" role="2H9Ial">
-                          <ref role="1tS8HL" node="4eD_5l3mtUR" resolve="exploded" />
+                          <ref role="1tS8HL" node="4eD_5l3mtUR" />
                         </node>
                       </node>
                     </node>
@@ -1303,7 +1303,7 @@
                   <node concept="2Sa8AP" id="4eD_5l3mH_F" role="32OYtT">
                     <node concept="1yA0yd" id="4eD_5l3mH_G" role="1yBIc4">
                       <node concept="1J1L9T" id="4eD_5l3mGo1" role="32OYtT">
-                        <ref role="1J1L9S" node="4eD_5l3kF26" resolve="airbag_explode_command" />
+                        <ref role="1J1L9S" node="4eD_5l3kF26" />
                       </node>
                     </node>
                   </node>
@@ -1321,32 +1321,32 @@
                   <node concept="2HbMbg" id="4eD_5l3mI9I" role="2H9Iav">
                     <node concept="2HbLFT" id="4eD_5l3mI9J" role="2H9Iav">
                       <node concept="1tTNRl" id="4eD_5l3mI0t" role="2H9Iav">
-                        <ref role="1tTNPH" node="4eD_5l3mnjI" resolve="_state_" />
+                        <ref role="1tTNPH" node="4eD_5l3mnjI" />
                       </node>
                       <node concept="1tS8IT" id="4eD_5l3mI0A" role="2H9Ial">
-                        <ref role="1tS8HL" node="4eD_5l3mnjK" resolve="active" />
+                        <ref role="1tS8HL" node="4eD_5l3mnjK" />
                       </node>
                     </node>
                     <node concept="1yA0yd" id="4eD_5l3mIa3" role="2H9Ial">
                       <node concept="32OYss" id="4eD_5l3mIab" role="32OYtT">
                         <node concept="2HbLFT" id="4eD_5l3mIat" role="32OYtT">
                           <node concept="2HeeqP" id="4eD_5l3mImk" role="2H9Ial">
-                            <ref role="2HeeqO" node="4eD_5l3mncu" resolve="deactivate" />
+                            <ref role="2HeeqO" node="4eD_5l3mncu" />
                           </node>
                           <node concept="32Ogvo" id="4eD_5l3mIal" role="2H9Iav">
-                            <ref role="32Ogvr" node="4eD_5l3mneR" resolve="activate_cmd" />
+                            <ref role="32Ogvr" node="4eD_5l3mneR" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
                   <node concept="32Ogvo" id="4eD_5l3mGv2" role="2H9Ial">
-                    <ref role="32Ogvr" node="4eD_5l3mngn" resolve="collision_detected" />
+                    <ref role="32Ogvr" node="4eD_5l3mngn" />
                   </node>
                 </node>
                 <node concept="2Sa8AP" id="4eD_5l3mI9K" role="2H9Ial">
                   <node concept="1J1L9T" id="4eD_5l3mGvl" role="1yBIc4">
-                    <ref role="1J1L9S" node="4eD_5l3kF26" resolve="airbag_explode_command" />
+                    <ref role="1J1L9S" node="4eD_5l3kF26" />
                   </node>
                 </node>
               </node>
@@ -1362,7 +1362,7 @@
         <node concept="2Hdskp" id="4eD_5l3kF2E" role="2Hfkx9">
           <property role="TrG5h" value="my_deactivate_airbag" />
           <node concept="2XJXdx" id="4eD_5l3mu6k" role="2HdssA">
-            <ref role="2XJXdw" node="4eD_5l3kF4M" resolve="activate_cmd_t" />
+            <ref role="2XJXdw" node="4eD_5l3kF4M" />
           </node>
         </node>
         <node concept="2Hdskp" id="4eD_5l3kF2G" role="2Hfkx9">
@@ -1372,12 +1372,12 @@
         <node concept="2Hdskp" id="4eD_5l3kF2I" role="2Hfkx9">
           <property role="TrG5h" value="a" />
           <node concept="1zigX2" id="4eD_5l3kF2J" role="2HdssA">
-            <ref role="1zigX1" node="4eD_5l3kF24" resolve="airbag_state_machine" />
+            <ref role="1zigX1" node="4eD_5l3kF24" />
             <node concept="2He$iJ" id="4eD_5l3kF2K" role="1zigYY">
-              <ref role="2He$iI" node="4eD_5l3kF2E" resolve="my_deactivate_airbag" />
+              <ref role="2He$iI" node="4eD_5l3kF2E" />
             </node>
             <node concept="2He$iJ" id="4eD_5l3kF2L" role="1zigYY">
-              <ref role="2He$iI" node="4eD_5l3kF2G" resolve="my_collision_detected" />
+              <ref role="2He$iI" node="4eD_5l3kF2G" />
             </node>
           </node>
         </node>
@@ -1396,51 +1396,51 @@
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvWT" role="3SOpfD">
       <property role="TrG5h" value="passive safety" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWB" resolve="car safety feature" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWB" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvX5" role="3SOpfD">
       <property role="TrG5h" value="airbag system" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvZv" role="3SOpfD">
       <property role="TrG5h" value="rear passenger airbag" />
-      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="airbag system" />
+      <ref role="3SOpc_" node="7Jm8RM1yvX5" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvZh" role="3SOpfD">
       <property role="TrG5h" value="front passenger airbag" />
-      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="airbag system" />
+      <ref role="3SOpc_" node="7Jm8RM1yvX5" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvZ4" role="3SOpfD">
       <property role="TrG5h" value="front driver airbag" />
-      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="airbag system" />
+      <ref role="3SOpc_" node="7Jm8RM1yvX5" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvXj" role="3SOpfD">
       <property role="TrG5h" value="anti lock brakes" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvXz" role="3SOpfD">
       <property role="TrG5h" value="electronic stability control" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvXP" role="3SOpfD">
       <property role="TrG5h" value="adaptive headlights" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvY9" role="3SOpfD">
       <property role="TrG5h" value="traction control" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvWG" role="3SOpfD">
       <property role="TrG5h" value="active safety" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWB" resolve="car safety feature" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWB" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvYv" role="3SOpfD">
       <property role="TrG5h" value="emergency braking" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWG" resolve="active safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWG" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvYR" role="3SOpfD">
       <property role="TrG5h" value="collision avoidance maneuver" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWG" resolve="active safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWG" />
     </node>
   </node>
   <node concept="1QQeGf" id="7Jm8RM1z5xa">
@@ -1461,7 +1461,7 @@
               <property role="19SUeA" value="Airbag requirements are specified below using sentence boilerplates for temporal patterns&#10;and the predicates can reference ontology concepts -- in this example from " />
             </node>
             <node concept="3UmBE$" id="7Jm8RM1zfC8" role="19SJt6">
-              <ref role="3UmBEB" node="7Jm8RM1yomw" resolve="_000_car_safety_features_ontology" />
+              <ref role="3UmBEB" node="7Jm8RM1yomw" />
             </node>
             <node concept="19SUe$" id="7Jm8RM1zfC9" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1477,7 +1477,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xo" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5yP" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5yN" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvX5" resolve="airbag system" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvX5" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5yO" role="19SJt6">
                   <property role="19SUeA" value=" is active unless explicitly deactivated" />
@@ -1498,7 +1498,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xw" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5yV" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5yT" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="front passenger airbag" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvZh" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5yU" role="19SJt6">
                   <property role="19SUeA" value=" deactivation button is turned off" />
@@ -1509,7 +1509,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xz" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5z1" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5yZ" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="front passenger airbag" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvZh" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5z0" role="19SJt6">
                   <property role="19SUeA" value=" activation button is turned on" />
@@ -1522,7 +1522,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xB" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5z7" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5z5" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="front passenger airbag" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvZh" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5z6" role="19SJt6">
                   <property role="19SUeA" value=" does not explode" />
@@ -1575,7 +1575,7 @@
                     <property role="19SUeA" value="the " />
                   </node>
                   <node concept="3Un2dA" id="7Jm8RM1z5zb" role="19SJt6">
-                    <ref role="3Un2dz" node="7Jm8RM1yvX5" resolve="airbag system" />
+                    <ref role="3Un2dz" node="7Jm8RM1yvX5" />
                   </node>
                   <node concept="19SUe$" id="7Jm8RM1z5zc" role="19SJt6">
                     <property role="19SUeA" value=" will be deployed" />

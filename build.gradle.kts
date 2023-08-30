@@ -5,25 +5,17 @@ import de.itemis.mps.gradle.modelcheck.ModelcheckMpsProjectPlugin
 import java.util.Date
 
 //will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    dependencies {
-        // Version must match download-jbr plugin below
-        classpath("de.itemis.mps:mps-gradle-plugin:1.11.+")
-    }
-
-    dependencyLocking { lockAllConfigurations() }
-}
-
 plugins {
     base
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
     // Version must match buildscript mps-gradle-plugin dependency above
-    id("download-jbr") version "1.11.+"
+    id("download-jbr") version "1.17.+"
+    id("de.itemis.mps.gradle.common") version "1.18.+"
 }
 
-val jbrVers = "11_0_12-b1504.28"
+val jbrVers = "17.0.6-b653.34"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -31,29 +23,6 @@ downloadJbr {
 
 // detect if we are in a CI build
 val ciBuild = (System.getenv("CI") != null && System.getenv("CI").toBoolean()) || project.hasProperty("forceCI") || project.hasProperty("teamcity")
-
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-val jdk_home: String = if (project.hasProperty("java11_home")) {
-    project.findProperty("java11_home") as String
-} else if (System.getenv("JB_JAVA11_HOME") != null) {
-    System.getenv("JB_JAVA11_HOME")!!
-} else {
-    val expected = JavaVersion.VERSION_11
-    if (JavaVersion.current() != expected) {
-        throw GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-                + "  * Run Gradle using Java 11")
-    }
-    System.getProperty("java.home")!!
-}
-
-// Check JDK location
-if (!File(jdk_home, "lib").exists()) {
-    throw GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-}
-
-logger.info("Using JDK at {}", jdk_home)
 
 var nexusUsername: String? by extra
 var nexusPassword: String? by extra
@@ -66,8 +35,10 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2021"
-val minor = "3"
+val major = "2022"
+val minor = "2"
+
+val mpsVersion ="$major.$minor"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
@@ -103,7 +74,7 @@ configurations {
     val jbrLinux by creating
 
     dependencies {
-        mps("com.jetbrains:mps:$platformVersion")
+        mps("com.jetbrains:mps:$mpsVersion")
         languageLibs("com.mbeddr:platform:$platformVersion")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
         antLib("org.apache.ant:ant-junit:1.10.6")
@@ -112,7 +83,7 @@ configurations {
         jbrLinux("com.jetbrains.jdk:jbr_jcef:$jbrVers:linux-x64@tgz")
     }
 }
-
+ 
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
@@ -155,8 +126,7 @@ val resolveMps = if (skipResolveMps) {
 }
 
 // tools needed for compiler support in ant calls
-val buildScriptClasspath = project.configurations["antLib"] +
-        project.files("$project.jdk_home/lib/tools.jar")
+val buildScriptClasspath = project.configurations["antLib"]
 
 val artifactsDir = file("$buildDir/artifacts")
 val dependenciesDir = file("$buildDir/dependencies")
@@ -172,22 +142,19 @@ val defaultScriptArgs = mapOf(
         "version" to version,
         "build.date" to Date(),
         //incremental build support
-        "mps.generator.skipUnmodifiedModels" to true
+        "mps.generator.skipUnmodifiedModels" to true,
+        "jdk.nio.zipfs.allowDotZipEntry" to true,
+        "jdk.util.zip.disableZip64ExtraFieldValidation" to true
 )
-
-// enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
-extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
-extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = File(jdk_home, "bin/java")
 
 tasks {
     val configureJava by registering {
         val downloadJbr = named("downloadJbr", DownloadJbrForPlatform::class)
         dependsOn(downloadJbr)
         doLast {
-            extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
-            extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
-            extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = downloadJbr.get().javaExecutable
+            project.extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
+            project.extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
+            project.extra["itemis.mps.gradle.ant.defaultJavaExecutable"] = downloadJbr.get().javaExecutable
         }
     }
 
@@ -260,6 +227,7 @@ tasks {
     }
 
     val run_all_tests by registering(TestLanguages::class) {
+        dependsOn(configureJava)
         description = "Will execute all tests from command line"
         script = "$buildDir/scripts/build-all-tests.xml"
         doLast {

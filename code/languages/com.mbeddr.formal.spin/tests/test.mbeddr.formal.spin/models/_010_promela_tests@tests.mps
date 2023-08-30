@@ -2,7 +2,7 @@
 <model ref="r:49f5b4dd-e065-4abf-8a5e-ad60f9a74b41(test.mbeddr.formal.spin._010_promela_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -23,6 +23,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -136,6 +137,7 @@
   <node concept="1lH9Xt" id="2DjQaubG7mP">
     <property role="TrG5h" value="_010_statements" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="2DjQaubG7mQ" role="1SL9yI">
       <property role="TrG5h" value="test_010_statements_if" />
       <node concept="3cqZAl" id="2DjQaubG7mR" role="3clF45" />
@@ -593,6 +595,7 @@
   <node concept="1lH9Xt" id="1ZejHLlQ_4n">
     <property role="TrG5h" value="_100_c_code" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1ZejHLlQ_4o" role="1SL9yI">
       <property role="TrG5h" value="test_100_c_code_assertions" />
       <node concept="3cqZAl" id="1ZejHLlQ_4p" role="3clF45" />
@@ -1047,6 +1050,7 @@
   <node concept="1lH9Xt" id="1ZejHLm0W9F">
     <property role="TrG5h" value="_000_arbitrary_text" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1ZejHLm0W9G" role="1SL9yI">
       <property role="TrG5h" value="test_000_arbitrary_text_top_level" />
       <node concept="3cqZAl" id="1ZejHLm0W9H" role="3clF45" />
@@ -1201,6 +1205,7 @@
   <node concept="1lH9Xt" id="3xpT6K6zh5M">
     <property role="TrG5h" value="_050_specs" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="3xpT6K6zh5N" role="1SL9yI">
       <property role="TrG5h" value="test_010_spec_smoke" />
       <node concept="3cqZAl" id="3xpT6K6zh5O" role="3clF45" />
@@ -1430,6 +1435,7 @@
   <node concept="1lH9Xt" id="XLqv_rzc2I">
     <property role="TrG5h" value="_005_basic_constructs" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="XLqv_rzc2J" role="1SL9yI">
       <property role="TrG5h" value="test_010_mtype" />
       <node concept="3cqZAl" id="XLqv_rzc2K" role="3clF45" />
@@ -1584,6 +1590,7 @@
   <node concept="1lH9Xt" id="4ZxQD5yKFco">
     <property role="TrG5h" value="_500_default_witness" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="4ZxQD5yKFcp" role="1SL9yI">
       <property role="TrG5h" value="test_010_simple_witness" />
       <node concept="3cqZAl" id="4ZxQD5yKFcq" role="3clF45" />

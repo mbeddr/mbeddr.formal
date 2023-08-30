@@ -182,7 +182,7 @@
         <node concept="1zoerA" id="1ksR6$CePq2" role="32O2ov">
           <property role="TrG5h" value="perform_pace" />
           <node concept="2He$iJ" id="1ksR6$CePqj" role="1zoetD">
-            <ref role="2He$iI" node="1ksR6$CeOai" resolve="paced" />
+            <ref role="2He$iI" node="1ksR6$CeOai" />
           </node>
         </node>
       </node>
@@ -217,98 +217,98 @@
       <node concept="2aiEES" id="1ksR6$CeNNY" role="2HcbjO">
         <node concept="2HfkAV" id="1ksR6$CeNQw" role="2HfkAP">
           <node concept="1tTNRl" id="1ksR6$CeNQM" role="2He$ia">
-            <ref role="1tTNPH" node="1ksR6$CeNOG" resolve="_state_" />
+            <ref role="1tTNPH" node="1ksR6$CeNOG" />
           </node>
           <node concept="1tS8IT" id="1ksR6$CeNQV" role="2He$i0">
-            <ref role="1tS8HL" node="1ksR6$CeNOI" resolve="Operating" />
+            <ref role="1tS8HL" node="1ksR6$CeNOI" />
           </node>
         </node>
         <node concept="1tTNHs" id="1ksR6$CeNRi" role="2HfkAP">
           <node concept="1tTNRl" id="1ksR6$CeNRK" role="2He$ia">
-            <ref role="1tTNPH" node="1ksR6$CeNOG" resolve="_state_" />
+            <ref role="1tTNPH" node="1ksR6$CeNOG" />
           </node>
           <node concept="1tTNP8" id="1ksR6$CeNRQ" role="2He$i0">
             <node concept="1tTNwp" id="1ksR6$CeNRR" role="2H9I2x">
               <property role="TrG5h" value="waiting" />
               <node concept="1tTNRl" id="1ksR6$CeNS1" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CeNOG" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CeNOG" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CeNS6" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CeNOI" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CeNOI" />
               </node>
               <node concept="nE0YL" id="1ksR6$CeNUQ" role="2H9I4J">
                 <node concept="hx854" id="1ksR6$CeNYN" role="2H9Ial">
-                  <ref role="hx9HS" node="1ksR6$CeNXv" resolve="LRL" />
+                  <ref role="hx9HS" node="1ksR6$CeNXv" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeNUz" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+                  <ref role="2He$iI" node="1ksR6$CeNS$" />
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CeNYT" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CeNOI" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CeNOI" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CeO5C" role="2H9I2x">
               <property role="TrG5h" value="pace" />
               <node concept="1tTNRl" id="1ksR6$CeO5D" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CeNOG" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CeNOG" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CeO6t" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CeNOI" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CeNOI" />
               </node>
               <node concept="2HbLFT" id="1ksR6$CeO6P" role="2H9I4J">
                 <node concept="hx854" id="1ksR6$CeO87" role="2H9Ial">
-                  <ref role="hx9HS" node="1ksR6$CeNXv" resolve="LRL" />
+                  <ref role="hx9HS" node="1ksR6$CeNXv" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeO6_" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+                  <ref role="2He$iI" node="1ksR6$CeNS$" />
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CeO8d" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CeNOJ" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CeNOJ" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CeOxo" role="2H9I2x">
               <property role="TrG5h" value="pacing" />
               <node concept="1tTNRl" id="1ksR6$CeOxp" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CeNOG" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CeNOG" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CeO$Z" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CeNOJ" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CeNOJ" />
               </node>
               <node concept="2HbLFT" id="1ksR6$CeOzq" role="2H9I4J">
                 <node concept="1yCjT0" id="1ksR6$CeO$0" role="2H9Ial" />
                 <node concept="2He$iJ" id="1ksR6$CeOzg" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CeOai" resolve="paced" />
+                  <ref role="2He$iI" node="1ksR6$CeOai" />
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CeO$9" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CeNOJ" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CeNOJ" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CeO8j" role="2H9I2x">
               <property role="TrG5h" value="back" />
               <node concept="1tTNRl" id="1ksR6$CeO8k" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CeNOG" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CeNOG" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CeO9$" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CeNOJ" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CeNOJ" />
               </node>
               <node concept="2HbLFT" id="1ksR6$CeOcj" role="2H9I4J">
                 <node concept="1yCjRe" id="1ksR6$CeOwi" role="2H9Ial" />
                 <node concept="2He$iJ" id="1ksR6$CeOc3" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CeOai" resolve="paced" />
+                  <ref role="2He$iI" node="1ksR6$CeOai" />
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CeOdd" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CeNOI" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CeNOI" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2HfkAV" id="1ksR6$CeNZR" role="2HfkAP">
           <node concept="2He$iJ" id="1ksR6$CeO0X" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+            <ref role="2He$iI" node="1ksR6$CeNS$" />
           </node>
           <node concept="2IPVmt" id="1ksR6$CeO1f" role="2He$i0">
             <property role="2IPVms" value="0" />
@@ -318,20 +318,20 @@
           <node concept="FsPnB" id="1ksR6$CeO2v" role="2He$i0">
             <node concept="FsPnw" id="1ksR6$CeO2u" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CeO41" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CeNRR" resolve="waiting" />
+                <ref role="3JXjYu" node="1ksR6$CeNRR" />
               </node>
               <node concept="2H9FEB" id="1ksR6$CeO4m" role="2H9I4_">
                 <node concept="2IPVmt" id="1ksR6$CeO4H" role="2H9Ial">
                   <property role="2IPVms" value="1" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeO47" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+                  <ref role="2He$iI" node="1ksR6$CeNS$" />
                 </node>
               </node>
             </node>
             <node concept="FsPnw" id="1ksR6$CeOui" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CeOuF" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CeO5C" resolve="pace" />
+                <ref role="3JXjYu" node="1ksR6$CeO5C" />
               </node>
               <node concept="2IPVmt" id="1ksR6$CeOuO" role="2H9I4_">
                 <property role="2IPVms" value="0" />
@@ -339,12 +339,12 @@
             </node>
           </node>
           <node concept="2He$iJ" id="1ksR6$CeO3M" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+            <ref role="2He$iI" node="1ksR6$CeNS$" />
           </node>
         </node>
         <node concept="2HfkAV" id="1ksR6$CeOfK" role="2HfkAP">
           <node concept="2He$iJ" id="1ksR6$CeOiq" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CeOai" resolve="paced" />
+            <ref role="2He$iI" node="1ksR6$CeOai" />
           </node>
           <node concept="1yCjT0" id="1ksR6$CeOvL" role="2He$i0" />
         </node>
@@ -352,19 +352,19 @@
           <node concept="FsPnB" id="1ksR6$CeOlw" role="2He$i0">
             <node concept="FsPnw" id="1ksR6$CeOlv" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CeOuW" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CeO8j" resolve="back" />
+                <ref role="3JXjYu" node="1ksR6$CeO8j" />
               </node>
               <node concept="1yCjT0" id="1ksR6$CeO$Q" role="2H9I4_" />
             </node>
             <node concept="FsPnw" id="1ksR6$CeOx7" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CeO$f" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CeOxo" resolve="pacing" />
+                <ref role="3JXjYu" node="1ksR6$CeOxo" />
               </node>
               <node concept="1yCjRe" id="1ksR6$CeO$B" role="2H9I4_" />
             </node>
           </node>
           <node concept="2He$iJ" id="1ksR6$CeOon" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CeOai" resolve="paced" />
+            <ref role="2He$iI" node="1ksR6$CeOai" />
           </node>
         </node>
         <node concept="37mRI7" id="1ksR6$CeO_6" role="lGtFl">
@@ -621,10 +621,10 @@
         <node concept="1yBCNs" id="1ksR6$CeSzm" role="1yBDGv">
           <node concept="nE0YK" id="1ksR6$CeTFV" role="1yBIc4">
             <node concept="2He$iJ" id="1ksR6$CeScL" role="2H9Iav">
-              <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+              <ref role="2He$iI" node="1ksR6$CeNS$" />
             </node>
             <node concept="hx854" id="1ksR6$CeSez" role="2H9Ial">
-              <ref role="hx9HS" node="1ksR6$CeNXv" resolve="LRL" />
+              <ref role="hx9HS" node="1ksR6$CeNXv" />
             </node>
           </node>
         </node>
@@ -638,16 +638,16 @@
             <node concept="1yyYsf" id="1ksR6$CeSEx" role="32OYtT">
               <node concept="2HbLFT" id="1ksR6$CeSEy" role="2H9Iav">
                 <node concept="2He$iJ" id="1ksR6$CeS_1" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+                  <ref role="2He$iI" node="1ksR6$CeNS$" />
                 </node>
                 <node concept="hx854" id="1ksR6$CeSFW" role="2H9Ial">
-                  <ref role="hx9HS" node="1ksR6$CeNXv" resolve="LRL" />
+                  <ref role="hx9HS" node="1ksR6$CeNXv" />
                 </node>
               </node>
               <node concept="tNTbz" id="1ksR6$CeSFq" role="2H9Ial">
                 <node concept="tNTbz" id="1ksR6$CeSFz" role="1yBIc4">
                   <node concept="1J1L9T" id="1ksR6$CeSFd" role="1yBIc4">
-                    <ref role="1J1L9S" node="1ksR6$CePq2" resolve="perform_pace" />
+                    <ref role="1J1L9S" node="1ksR6$CePq2" />
                   </node>
                 </node>
               </node>
@@ -669,13 +669,13 @@
                       <property role="2IPVms" value="0" />
                     </node>
                     <node concept="2He$iJ" id="1ksR6$CeT2M" role="2H9Iav">
-                      <ref role="2He$iI" node="1ksR6$CeNS$" resolve="current_tick" />
+                      <ref role="2He$iI" node="1ksR6$CeNS$" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="1J1L9T" id="1ksR6$CeT26" role="2H9Iav">
-                <ref role="1J1L9S" node="1ksR6$CePq2" resolve="perform_pace" />
+                <ref role="1J1L9S" node="1ksR6$CePq2" />
               </node>
             </node>
           </node>
@@ -689,7 +689,7 @@
         <node concept="2Hdskp" id="1ksR6$CeT_W" role="2Hfkx9">
           <property role="TrG5h" value="aoo" />
           <node concept="1zigX2" id="1ksR6$CeTAw" role="2HdssA">
-            <ref role="1zigX1" node="1ksR6$CeNNN" resolve="AOO_Mode" />
+            <ref role="1zigX1" node="1ksR6$CeNNN" />
           </node>
         </node>
       </node>
@@ -724,7 +724,7 @@
         <node concept="1zoerA" id="1ksR6$CePqu" role="32O2ov">
           <property role="TrG5h" value="perform_pace" />
           <node concept="2He$iJ" id="1ksR6$CePqv" role="1zoetD">
-            <ref role="2He$iI" node="1ksR6$CePqD" resolve="paced" />
+            <ref role="2He$iI" node="1ksR6$CePqD" />
           </node>
         </node>
       </node>
@@ -773,163 +773,163 @@
       <node concept="2aiEES" id="1ksR6$CePqF" role="2HcbjO">
         <node concept="2HfkAV" id="1ksR6$CePqG" role="2HfkAP">
           <node concept="1tTNRl" id="1ksR6$CePqH" role="2He$ia">
-            <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+            <ref role="1tTNPH" node="1ksR6$CePqx" />
           </node>
           <node concept="1tS8IT" id="1ksR6$CePqI" role="2He$i0">
-            <ref role="1tS8HL" node="1ksR6$CePqz" resolve="Operating" />
+            <ref role="1tS8HL" node="1ksR6$CePqz" />
           </node>
         </node>
         <node concept="1tTNHs" id="1ksR6$CePqJ" role="2HfkAP">
           <node concept="1tTNRl" id="1ksR6$CePqK" role="2He$ia">
-            <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+            <ref role="1tTNPH" node="1ksR6$CePqx" />
           </node>
           <node concept="1tTNP8" id="1ksR6$CePqL" role="2He$i0">
             <node concept="1tTNwp" id="1ksR6$CePqM" role="2H9I2x">
               <property role="TrG5h" value="waiting" />
               <node concept="1tTNRl" id="1ksR6$CePqN" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CePqx" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CePqO" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CePqz" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CePqz" />
               </node>
               <node concept="2HbMbg" id="1ksR6$CePyZ" role="2H9I4J">
                 <node concept="nE0YL" id="1ksR6$CePz0" role="2H9Iav">
                   <node concept="2He$iJ" id="1ksR6$CePqR" role="2H9Iav">
-                    <ref role="2He$iI" node="1ksR6$CePq_" resolve="current_tick" />
+                    <ref role="2He$iI" node="1ksR6$CePq_" />
                   </node>
                   <node concept="hx854" id="1ksR6$CePqQ" role="2H9Ial">
-                    <ref role="hx9HS" node="1ksR6$CeNXv" resolve="LRL" />
+                    <ref role="hx9HS" node="1ksR6$CeNXv" />
                   </node>
                 </node>
                 <node concept="1yA0yd" id="1ksR6$CePzn" role="2H9Ial">
                   <node concept="32Ogvo" id="1ksR6$CePzA" role="32OYtT">
-                    <ref role="32Ogvr" node="1ksR6$CePxq" resolve="ventricle_sense" />
+                    <ref role="32Ogvr" node="1ksR6$CePxq" />
                   </node>
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CePqS" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CePqz" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CePqz" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CePzG" role="2H9I2x">
               <property role="TrG5h" value="pace" />
               <node concept="1tTNRl" id="1ksR6$CePzH" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CePqx" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CeP$H" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CePqz" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CePqz" />
               </node>
               <node concept="2HbMbg" id="1ksR6$CePDB" role="2H9I4J">
                 <node concept="nE0YI" id="1ksR6$CePDC" role="2H9Iav">
                   <node concept="2He$iJ" id="1ksR6$CeP$Q" role="2H9Iav">
-                    <ref role="2He$iI" node="1ksR6$CePq_" resolve="current_tick" />
+                    <ref role="2He$iI" node="1ksR6$CePq_" />
                   </node>
                   <node concept="hx854" id="1ksR6$CePDr" role="2H9Ial">
-                    <ref role="hx9HS" node="1ksR6$CeNXv" resolve="LRL" />
+                    <ref role="hx9HS" node="1ksR6$CeNXv" />
                   </node>
                 </node>
                 <node concept="1yA0yd" id="1ksR6$CePDZ" role="2H9Ial">
                   <node concept="32Ogvo" id="1ksR6$CePEf" role="32OYtT">
-                    <ref role="32Ogvr" node="1ksR6$CePxq" resolve="ventricle_sense" />
+                    <ref role="32Ogvr" node="1ksR6$CePxq" />
                   </node>
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CePEl" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CePq$" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CePq$" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CePEr" role="2H9I2x">
               <property role="TrG5h" value="pacing" />
               <node concept="1tTNRl" id="1ksR6$CePEs" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CePqx" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CePG4" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CePq$" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CePq$" />
               </node>
               <node concept="1yA0yd" id="1ksR6$CePGc" role="2H9I4J">
                 <node concept="2He$iJ" id="1ksR6$CePGr" role="32OYtT">
-                  <ref role="2He$iI" node="1ksR6$CePqD" resolve="paced" />
+                  <ref role="2He$iI" node="1ksR6$CePqD" />
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CePGz" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CePq$" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CePq$" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CePKt" role="2H9I2x">
               <property role="TrG5h" value="pace_to_refrac" />
               <node concept="1tTNRl" id="1ksR6$CePKu" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CePqx" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CePMu" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CePq$" resolve="Pacing" />
+                <ref role="1tS8HL" node="1ksR6$CePq$" />
               </node>
               <node concept="2He$iJ" id="1ksR6$CePMB" role="2H9I4J">
-                <ref role="2He$iI" node="1ksR6$CePqD" resolve="paced" />
+                <ref role="2He$iI" node="1ksR6$CePqD" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CePMJ" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CePuG" resolve="Refrac" />
+                <ref role="1tS8HL" node="1ksR6$CePuG" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CePNg" role="2H9I2x">
               <property role="TrG5h" value="oper_to_refrac" />
               <node concept="1tTNRl" id="1ksR6$CePNh" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CePqx" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CePP_" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CePqz" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CePqz" />
               </node>
               <node concept="32Ogvo" id="1ksR6$CePPI" role="2H9I4J">
-                <ref role="32Ogvr" node="1ksR6$CePxq" resolve="ventricle_sense" />
+                <ref role="32Ogvr" node="1ksR6$CePxq" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CePPO" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CePuG" resolve="Refrac" />
+                <ref role="1tS8HL" node="1ksR6$CePuG" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CePUw" role="2H9I2x">
               <property role="TrG5h" value="refr_to_refr" />
               <node concept="1tTNRl" id="1ksR6$CePUx" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CePqx" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CePX9" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CePuG" resolve="Refrac" />
+                <ref role="1tS8HL" node="1ksR6$CePuG" />
               </node>
               <node concept="nE0YL" id="1ksR6$CePX_" role="2H9I4J">
                 <node concept="hx854" id="1ksR6$CeQye" role="2H9Ial">
-                  <ref role="hx9HS" node="1ksR6$CeQrm" resolve="VRP" />
+                  <ref role="hx9HS" node="1ksR6$CeQrm" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CePXh" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CePR$" resolve="current_refr_time" />
+                  <ref role="2He$iI" node="1ksR6$CePR$" />
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CePYq" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CePuG" resolve="Refrac" />
+                <ref role="1tS8HL" node="1ksR6$CePuG" />
               </node>
             </node>
             <node concept="1tTNwp" id="1ksR6$CeQlr" role="2H9I2x">
               <property role="TrG5h" value="refr_to_operating" />
               <node concept="1tTNRl" id="1ksR6$CeQls" role="3JXa2C">
-                <ref role="1tTNPH" node="1ksR6$CePqx" resolve="_state_" />
+                <ref role="1tTNPH" node="1ksR6$CePqx" />
               </node>
               <node concept="1tS8IT" id="1ksR6$CeQow" role="3JZSx7">
-                <ref role="1tS8HL" node="1ksR6$CePuG" resolve="Refrac" />
+                <ref role="1tS8HL" node="1ksR6$CePuG" />
               </node>
               <node concept="nE0YI" id="1ksR6$CeQoX" role="2H9I4J">
                 <node concept="hx854" id="1ksR6$CeQyk" role="2H9Ial">
-                  <ref role="hx9HS" node="1ksR6$CeQrm" resolve="VRP" />
+                  <ref role="hx9HS" node="1ksR6$CeQrm" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeQoD" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CePR$" resolve="current_refr_time" />
+                  <ref role="2He$iI" node="1ksR6$CePR$" />
                 </node>
               </node>
               <node concept="1tS8IT" id="1ksR6$CeQqe" role="2H9I4_">
-                <ref role="1tS8HL" node="1ksR6$CePqz" resolve="Operating" />
+                <ref role="1tS8HL" node="1ksR6$CePqz" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2HfkAV" id="1ksR6$CePre" role="2HfkAP">
           <node concept="2He$iJ" id="1ksR6$CePrf" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CePq_" resolve="current_tick" />
+            <ref role="2He$iI" node="1ksR6$CePq_" />
           </node>
           <node concept="2IPVmt" id="1ksR6$CePrg" role="2He$i0">
             <property role="2IPVms" value="0" />
@@ -939,20 +939,20 @@
           <node concept="FsPnB" id="1ksR6$CePri" role="2He$i0">
             <node concept="FsPnw" id="1ksR6$CePrj" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CePrk" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CePqM" resolve="waiting" />
+                <ref role="3JXjYu" node="1ksR6$CePqM" />
               </node>
               <node concept="2H9FEB" id="1ksR6$CePrl" role="2H9I4_">
                 <node concept="2IPVmt" id="1ksR6$CePrm" role="2H9Ial">
                   <property role="2IPVms" value="1" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CePrn" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CePq_" resolve="current_tick" />
+                  <ref role="2He$iI" node="1ksR6$CePq_" />
                 </node>
               </node>
             </node>
             <node concept="FsPnw" id="1ksR6$CePro" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CePrp" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CePzG" resolve="pace" />
+                <ref role="3JXjYu" node="1ksR6$CePzG" />
               </node>
               <node concept="2IPVmt" id="1ksR6$CePrq" role="2H9I4_">
                 <property role="2IPVms" value="0" />
@@ -960,7 +960,7 @@
             </node>
             <node concept="FsPnw" id="1ksR6$CePPU" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CePQv" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CePNg" resolve="oper_to_refrac" />
+                <ref role="3JXjYu" node="1ksR6$CePNg" />
               </node>
               <node concept="2IPVmt" id="1ksR6$CePQC" role="2H9I4_">
                 <property role="2IPVms" value="0" />
@@ -968,12 +968,12 @@
             </node>
           </node>
           <node concept="2He$iJ" id="1ksR6$CePrr" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CePq_" resolve="current_tick" />
+            <ref role="2He$iI" node="1ksR6$CePq_" />
           </node>
         </node>
         <node concept="2HfkAV" id="1ksR6$CePrs" role="2HfkAP">
           <node concept="2He$iJ" id="1ksR6$CePrt" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CePqD" resolve="paced" />
+            <ref role="2He$iI" node="1ksR6$CePqD" />
           </node>
           <node concept="1yCjT0" id="1ksR6$CePru" role="2He$i0" />
         </node>
@@ -981,19 +981,19 @@
           <node concept="FsPnB" id="1ksR6$CePrw" role="2He$i0">
             <node concept="FsPnw" id="1ksR6$CePr$" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CePr_" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CePEr" resolve="pacing" />
+                <ref role="3JXjYu" node="1ksR6$CePEr" />
               </node>
               <node concept="1yCjRe" id="1ksR6$CePrA" role="2H9I4_" />
             </node>
             <node concept="FsPnw" id="1ksR6$CePrx" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CePry" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CePKt" resolve="pace_to_refrac" />
+                <ref role="3JXjYu" node="1ksR6$CePKt" />
               </node>
               <node concept="1yCjT0" id="1ksR6$CePrz" role="2H9I4_" />
             </node>
           </node>
           <node concept="2He$iJ" id="1ksR6$CePrB" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CePqD" resolve="paced" />
+            <ref role="2He$iI" node="1ksR6$CePqD" />
           </node>
         </node>
         <node concept="37mRI7" id="1ksR6$CePrC" role="lGtFl">
@@ -1670,7 +1670,7 @@
         </node>
         <node concept="2HfkAV" id="1ksR6$CeQ3t" role="2HfkAP">
           <node concept="2He$iJ" id="1ksR6$CeQ8B" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CePR$" resolve="current_refr_time" />
+            <ref role="2He$iI" node="1ksR6$CePR$" />
           </node>
           <node concept="2IPVmt" id="1ksR6$CeQ8T" role="2He$i0">
             <property role="2IPVms" value="0" />
@@ -1680,20 +1680,20 @@
           <node concept="FsPnB" id="1ksR6$CeQed" role="2He$i0">
             <node concept="FsPnw" id="1ksR6$CeQec" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CeQjM" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CePUw" resolve="refr_to_refr" />
+                <ref role="3JXjYu" node="1ksR6$CePUw" />
               </node>
               <node concept="2H9FEB" id="1ksR6$CeQk9" role="2H9I4_">
                 <node concept="2IPVmt" id="1ksR6$CeQkw" role="2H9Ial">
                   <property role="2IPVms" value="1" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeQjU" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CePR$" resolve="current_refr_time" />
+                  <ref role="2He$iI" node="1ksR6$CePR$" />
                 </node>
               </node>
             </node>
             <node concept="FsPnw" id="1ksR6$CeQqk" role="2H9I2x">
               <node concept="3JXjYv" id="1ksR6$CeQqH" role="2H9I4J">
-                <ref role="3JXjYu" node="1ksR6$CeQlr" resolve="refr_to_operating" />
+                <ref role="3JXjYu" node="1ksR6$CeQlr" />
               </node>
               <node concept="2IPVmt" id="1ksR6$CeQqQ" role="2H9I4_">
                 <property role="2IPVms" value="0" />
@@ -1701,7 +1701,7 @@
             </node>
           </node>
           <node concept="2He$iJ" id="1ksR6$CeQj$" role="2He$ia">
-            <ref role="2He$iI" node="1ksR6$CePR$" resolve="current_refr_time" />
+            <ref role="2He$iI" node="1ksR6$CePR$" />
           </node>
         </node>
       </node>
@@ -1713,15 +1713,15 @@
           <node concept="1yyYsf" id="1ksR6$CeWdx" role="1yBIc4">
             <node concept="2HbLFT" id="1ksR6$CeWdy" role="2H9Iav">
               <node concept="2He$iJ" id="1ksR6$CeWbC" role="2H9Iav">
-                <ref role="2He$iI" node="1ksR6$CePq_" resolve="current_tick" />
+                <ref role="2He$iI" node="1ksR6$CePq_" />
               </node>
               <node concept="hx854" id="1ksR6$CeWdh" role="2H9Ial">
-                <ref role="hx9HS" node="1ksR6$CeNXv" resolve="LRL" />
+                <ref role="hx9HS" node="1ksR6$CeNXv" />
               </node>
             </node>
             <node concept="tNTbz" id="1ksR6$CeWdU" role="2H9Ial">
               <node concept="1J1L9T" id="1ksR6$CeWe4" role="1yBIc4">
-                <ref role="1J1L9S" node="1ksR6$CePqu" resolve="perform_pace" />
+                <ref role="1J1L9S" node="1ksR6$CePqu" />
               </node>
             </node>
           </node>
@@ -1739,12 +1739,12 @@
                   <property role="2IPVms" value="0" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeXxU" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CePR$" resolve="current_refr_time" />
+                  <ref role="2He$iI" node="1ksR6$CePR$" />
                 </node>
               </node>
             </node>
             <node concept="1J1L9T" id="1ksR6$CeXxl" role="2H9Iav">
-              <ref role="1J1L9S" node="1ksR6$CePqu" resolve="perform_pace" />
+              <ref role="1J1L9S" node="1ksR6$CePqu" />
             </node>
           </node>
         </node>
@@ -1761,7 +1761,7 @@
                   <property role="2IPVms" value="0" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeZ$o" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CePR$" resolve="current_refr_time" />
+                  <ref role="2He$iI" node="1ksR6$CePR$" />
                 </node>
               </node>
             </node>
@@ -1771,11 +1771,11 @@
                   <property role="2IPVms" value="0" />
                 </node>
                 <node concept="2He$iJ" id="1ksR6$CeZ_8" role="2H9Iav">
-                  <ref role="2He$iI" node="1ksR6$CePq_" resolve="current_tick" />
+                  <ref role="2He$iI" node="1ksR6$CePq_" />
                 </node>
               </node>
               <node concept="32Ogvo" id="1ksR6$CeZzJ" role="2H9Iav">
-                <ref role="32Ogvr" node="1ksR6$CePxq" resolve="ventricle_sense" />
+                <ref role="32Ogvr" node="1ksR6$CePxq" />
               </node>
             </node>
           </node>
@@ -1796,9 +1796,9 @@
         <node concept="2Hdskp" id="1ksR6$Cf0ET" role="2Hfkx9">
           <property role="TrG5h" value="vvi" />
           <node concept="1zigX2" id="1ksR6$Cf0Fl" role="2HdssA">
-            <ref role="1zigX1" node="1ksR6$CePqs" resolve="VVI_Mode" />
+            <ref role="1zigX1" node="1ksR6$CePqs" />
             <node concept="2He$iJ" id="1ksR6$Cf0Fz" role="1zigYY">
-              <ref role="2He$iI" node="1ksR6$Cf0DC" resolve="ventricle_sense" />
+              <ref role="2He$iI" node="1ksR6$Cf0DC" />
             </node>
           </node>
         </node>
