@@ -35,11 +35,6 @@ jobs:
       with:
         arguments: resolveMps -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
-    - name: Report MPS Integrity
-      run: |
-        ls -l build/mps/lib/app.jar
-        sha256sum build/mps/lib/app.jar
-
     - name: Build FASTEN
       uses: gradle/gradle-build-action@v2.4.2
       with: 
