@@ -30,11 +30,6 @@ jobs:
       with:
         java-version: 17  
       
-    - name: Resolve MPS
-      uses: gradle/gradle-build-action@v2.4.2
-      with:
-        arguments: resolveMps -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-
     - name: Build FASTEN
       uses: gradle/gradle-build-action@v2.4.2
       with: 
