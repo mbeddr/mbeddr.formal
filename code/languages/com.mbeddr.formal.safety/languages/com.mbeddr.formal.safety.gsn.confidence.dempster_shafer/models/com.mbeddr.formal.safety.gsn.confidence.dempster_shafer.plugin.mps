@@ -135,9 +135,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
-        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
-      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -388,37 +386,11 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1jzC6AKd_Vu" role="3cqZAp">
-          <node concept="3cpWsn" id="1jzC6AKd_Vv" role="3cpWs9">
-            <property role="TrG5h" value="confidenceColor" />
-            <node concept="3uibUv" id="1jzC6AKd_Ia" role="1tU5fm">
-              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-            </node>
-            <node concept="1rXfSq" id="1jzC6AKd_Vw" role="33vP2m">
-              <ref role="37wK5l" node="3AZUhOjM97D" resolve="computeConfidenceColor" />
-              <node concept="37vLTw" id="1jzC6AKd_Vx" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjMiN$" resolve="confidence" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="3AZUhOjMiND" role="3cqZAp">
-          <node concept="2ShNRf" id="1jzC6AKdC1Y" role="3cqZAk">
-            <node concept="1pGfFk" id="1jzC6AKdC1Z" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-              <node concept="3uibUv" id="1jzC6AKdC20" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="3uibUv" id="1jzC6AKdC21" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdC22" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKd_Vv" resolve="confidenceColor" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdC23" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKd_Vv" resolve="confidenceColor" />
-              </node>
+          <node concept="1rXfSq" id="8xY_IhDnPd" role="3cqZAk">
+            <ref role="37wK5l" node="3AZUhOjM97D" resolve="computeConfidenceColor" />
+            <node concept="37vLTw" id="8xY_IhDnPe" role="37wK5m">
+              <ref role="3cqZAo" node="3AZUhOjMiN$" resolve="confidence" />
             </node>
           </node>
         </node>
@@ -525,37 +497,11 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1jzC6AKdAmw" role="3cqZAp">
-          <node concept="3cpWsn" id="1jzC6AKdAmx" role="3cpWs9">
-            <property role="TrG5h" value="decisionColor" />
-            <node concept="3uibUv" id="1jzC6AKdAbn" role="1tU5fm">
-              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-            </node>
-            <node concept="1rXfSq" id="1jzC6AKdAmy" role="33vP2m">
-              <ref role="37wK5l" node="3AZUhOjM98f" resolve="computeDecisionColor" />
-              <node concept="37vLTw" id="1jzC6AKdAmz" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjMrM3" resolve="decision" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="3AZUhOjMiOg" role="3cqZAp">
-          <node concept="2ShNRf" id="1jzC6AKdBGR" role="3cqZAk">
-            <node concept="1pGfFk" id="1jzC6AKdBGS" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-              <node concept="3uibUv" id="1jzC6AKdBGT" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="3uibUv" id="1jzC6AKdBGU" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdBGV" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKdAmx" resolve="decisionColor" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdBGW" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKdAmx" resolve="decisionColor" />
-              </node>
+          <node concept="1rXfSq" id="8xY_IhDoqX" role="3cqZAk">
+            <ref role="37wK5l" node="3AZUhOjM98f" resolve="computeDecisionColor" />
+            <node concept="37vLTw" id="8xY_IhDoqY" role="37wK5m">
+              <ref role="3cqZAo" node="3AZUhOjMrM3" resolve="decision" />
             </node>
           </node>
         </node>
@@ -628,37 +574,11 @@
             <node concept="10Oyi0" id="3AZUhOjM8la" role="1tU5fm" />
           </node>
         </node>
-        <node concept="3cpWs8" id="1jzC6AKdtwS" role="3cqZAp">
-          <node concept="3cpWsn" id="1jzC6AKdtwT" role="3cpWs9">
-            <property role="TrG5h" value="confidenceColor" />
-            <node concept="3uibUv" id="1jzC6AKdtm5" role="1tU5fm">
-              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-            </node>
-            <node concept="1rXfSq" id="1jzC6AKdtwU" role="33vP2m">
-              <ref role="37wK5l" node="3AZUhOjM97D" resolve="computeConfidenceColor" />
-              <node concept="37vLTw" id="1jzC6AKdtwV" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjM8l5" resolve="confidence" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="3AZUhOjM8lb" role="3cqZAp">
-          <node concept="2ShNRf" id="1jzC6AKduan" role="3cqZAk">
-            <node concept="1pGfFk" id="1jzC6AKdv1f" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-              <node concept="3uibUv" id="1jzC6AKdvAQ" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="3uibUv" id="1jzC6AKdwm9" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdwK7" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKdtwT" resolve="confidenceColor" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdxyq" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKdtwT" resolve="confidenceColor" />
-              </node>
+          <node concept="1rXfSq" id="8xY_IhB9Pa" role="3cqZAk">
+            <ref role="37wK5l" node="3AZUhOjM97D" resolve="computeConfidenceColor" />
+            <node concept="37vLTw" id="8xY_IhB9Pb" role="37wK5m">
+              <ref role="3cqZAo" node="3AZUhOjM8l5" resolve="confidence" />
             </node>
           </node>
         </node>
@@ -734,37 +654,11 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1jzC6AKdt5i" role="3cqZAp">
-          <node concept="3cpWsn" id="1jzC6AKdt5j" role="3cpWs9">
-            <property role="TrG5h" value="decisionColor" />
-            <node concept="3uibUv" id="1jzC6AKdsTx" role="1tU5fm">
-              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-            </node>
-            <node concept="1rXfSq" id="1jzC6AKdt5k" role="33vP2m">
-              <ref role="37wK5l" node="3AZUhOjM98f" resolve="computeDecisionColor" />
-              <node concept="37vLTw" id="1jzC6AKdt5l" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjM8ly" resolve="decision" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="3AZUhOjM8lC" role="3cqZAp">
-          <node concept="2ShNRf" id="1jzC6AKdxOD" role="3cqZAk">
-            <node concept="1pGfFk" id="1jzC6AKdxOF" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-              <node concept="3uibUv" id="1jzC6AKdxOG" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="3uibUv" id="1jzC6AKdxOH" role="1pMfVU">
-                <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdxOI" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKdt5j" resolve="decisionColor" />
-              </node>
-              <node concept="37vLTw" id="1jzC6AKdyR0" role="37wK5m">
-                <ref role="3cqZAo" node="1jzC6AKdt5j" resolve="decisionColor" />
-              </node>
+          <node concept="1rXfSq" id="8xY_IhB9el" role="3cqZAk">
+            <ref role="37wK5l" node="3AZUhOjM98f" resolve="computeDecisionColor" />
+            <node concept="37vLTw" id="8xY_IhB9em" role="37wK5m">
+              <ref role="3cqZAo" node="3AZUhOjM8ly" resolve="decision" />
             </node>
           </node>
         </node>
@@ -3565,7 +3459,13 @@
       <property role="TrG5h" value="computeConfidenceColor" />
       <node concept="3Tmbuc" id="3AZUhOjM97E" role="1B3o_S" />
       <node concept="3uibUv" id="3AZUhOjM97F" role="3clF45">
-        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        <ref role="3uigEE" to="18ew:~Pair" resolve="Pair" />
+        <node concept="3uibUv" id="8xY_Ih$Bjy" role="11_B2D">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
+        <node concept="3uibUv" id="8xY_Ih$BGC" role="11_B2D">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
       </node>
       <node concept="3clFbS" id="3AZUhOjM97G" role="3clF47">
         <node concept="3clFbF" id="3AZUhOjM97H" role="3cqZAp">
@@ -3630,18 +3530,38 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="8xY_Ih$BKp" role="3cqZAp">
+          <node concept="3cpWsn" id="8xY_Ih$BKq" role="3cpWs9">
+            <property role="TrG5h" value="color" />
+            <node concept="3uibUv" id="8xY_Ih$BHX" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="2ShNRf" id="8xY_Ih$BKr" role="33vP2m">
+              <node concept="1pGfFk" id="8xY_Ih$BKs" role="2ShVmc">
+                <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                <node concept="37vLTw" id="8xY_Ih$BKt" role="37wK5m">
+                  <ref role="3cqZAo" node="3AZUhOjM97P" resolve="grayColor" />
+                </node>
+                <node concept="37vLTw" id="8xY_Ih$BKu" role="37wK5m">
+                  <ref role="3cqZAo" node="3AZUhOjM97P" resolve="grayColor" />
+                </node>
+                <node concept="37vLTw" id="8xY_Ih$BKv" role="37wK5m">
+                  <ref role="3cqZAo" node="3AZUhOjM97P" resolve="grayColor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="3AZUhOjM986" role="3cqZAp">
-          <node concept="2ShNRf" id="3AZUhOjM987" role="3cqZAk">
-            <node concept="1pGfFk" id="3AZUhOjM988" role="2ShVmc">
-              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-              <node concept="37vLTw" id="3AZUhOjM989" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjM97P" resolve="grayColor" />
+          <node concept="2ShNRf" id="8xY_Ih$BW6" role="3cqZAk">
+            <node concept="1pGfFk" id="8xY_Ih$QNF" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+              <node concept="37vLTw" id="8xY_Ih$R9A" role="37wK5m">
+                <ref role="3cqZAo" node="8xY_Ih$BKq" resolve="color" />
               </node>
-              <node concept="37vLTw" id="3AZUhOjM98a" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjM97P" resolve="grayColor" />
-              </node>
-              <node concept="37vLTw" id="3AZUhOjM98b" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjM97P" resolve="grayColor" />
+              <node concept="37vLTw" id="8xY_Ih$Rzr" role="37wK5m">
+                <ref role="3cqZAo" node="8xY_Ih$BKq" resolve="color" />
               </node>
             </node>
           </node>
@@ -3657,7 +3577,13 @@
       <property role="TrG5h" value="computeDecisionColor" />
       <node concept="3Tmbuc" id="3AZUhOjM98g" role="1B3o_S" />
       <node concept="3uibUv" id="3AZUhOjM98h" role="3clF45">
-        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        <ref role="3uigEE" to="18ew:~Pair" resolve="Pair" />
+        <node concept="3uibUv" id="8xY_Ih$SXw" role="11_B2D">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
+        <node concept="3uibUv" id="8xY_Ih$TkA" role="11_B2D">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
       </node>
       <node concept="3clFbS" id="3AZUhOjM98i" role="3clF47">
         <node concept="3clFbF" id="3AZUhOjM98j" role="3cqZAp">
@@ -3713,18 +3639,38 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="8xY_Ih$S6h" role="3cqZAp">
+          <node concept="3cpWsn" id="8xY_Ih$S6i" role="3cpWs9">
+            <property role="TrG5h" value="color" />
+            <node concept="3uibUv" id="8xY_Ih$S3T" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="2ShNRf" id="8xY_Ih$S6j" role="33vP2m">
+              <node concept="1pGfFk" id="8xY_Ih$S6k" role="2ShVmc">
+                <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                <node concept="37vLTw" id="8xY_Ih$S6l" role="37wK5m">
+                  <ref role="3cqZAo" node="3AZUhOjM98$" resolve="redColor" />
+                </node>
+                <node concept="37vLTw" id="8xY_Ih$S6m" role="37wK5m">
+                  <ref role="3cqZAo" node="3AZUhOjM98r" resolve="greenColor" />
+                </node>
+                <node concept="3cmrfG" id="8xY_Ih$S6n" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="3AZUhOjM98D" role="3cqZAp">
-          <node concept="2ShNRf" id="3AZUhOjM98E" role="3cqZAk">
-            <node concept="1pGfFk" id="3AZUhOjM98F" role="2ShVmc">
-              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-              <node concept="37vLTw" id="3AZUhOjM98G" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjM98$" resolve="redColor" />
+          <node concept="2ShNRf" id="8xY_Ih$Tx4" role="3cqZAk">
+            <node concept="1pGfFk" id="8xY_Ih$UnJ" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+              <node concept="37vLTw" id="8xY_Ih$UAm" role="37wK5m">
+                <ref role="3cqZAo" node="8xY_Ih$S6i" resolve="color" />
               </node>
-              <node concept="37vLTw" id="3AZUhOjM98H" role="37wK5m">
-                <ref role="3cqZAo" node="3AZUhOjM98r" resolve="greenColor" />
-              </node>
-              <node concept="3cmrfG" id="3AZUhOjM98I" role="37wK5m">
-                <property role="3cmrfH" value="0" />
+              <node concept="37vLTw" id="8xY_Ih$V4B" role="37wK5m">
+                <ref role="3cqZAo" node="8xY_Ih$S6i" resolve="color" />
               </node>
             </node>
           </node>
