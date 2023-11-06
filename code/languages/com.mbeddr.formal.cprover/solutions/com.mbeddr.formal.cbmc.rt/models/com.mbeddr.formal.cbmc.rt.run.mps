@@ -230,7 +230,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="6mvxENQDoy9" role="3clF45">
-        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
       <node concept="37vLTG" id="6mvxENQDoya" role="3clF46">
         <property role="TrG5h" value="files" />
@@ -266,10 +266,10 @@
           <node concept="3cpWsn" id="6mvxENQHf9I" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="6mvxENQHf3d" role="1tU5fm">
-              <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+              <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
             </node>
             <node concept="1rXfSq" id="6mvxENQHf9J" role="33vP2m">
-              <ref role="37wK5l" node="6mvxENQDoy5" resolve="doRun" />
+              <ref role="37wK5l" node="6mvxENQDoy5" resolve="runTool" />
               <node concept="37vLTw" id="6mvxENQHf9K" role="37wK5m">
                 <ref role="3cqZAo" node="6mvxENQFlZ8" resolve="files" />
               </node>
@@ -339,14 +339,14 @@
     <node concept="312cEg" id="6mvxENQFno4" role="jymVt">
       <property role="TrG5h" value="res" />
       <node concept="3uibUv" id="6mvxENQFnlC" role="1tU5fm">
-        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
       <node concept="3Tm1VV" id="6mvxENQFGoI" role="1B3o_S" />
     </node>
     <node concept="312cEg" id="6mvxENQEDRM" role="jymVt">
       <property role="TrG5h" value="status" />
       <node concept="3uibUv" id="6mvxENQEDQF" role="1tU5fm">
-        <ref role="3uigEE" node="6mvxENQECsY" resolve="RAW_RESULT_STATE" />
+        <ref role="3uigEE" node="6mvxENQECsY" resolve="RawResult.RAW_RESULT_STATE" />
       </node>
       <node concept="3Tm1VV" id="6mvxENQFGpx" role="1B3o_S" />
     </node>
@@ -400,7 +400,7 @@
       <node concept="37vLTG" id="6mvxENQFo7p" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="3uibUv" id="6mvxENQFo7o" role="1tU5fm">
-          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
         </node>
       </node>
     </node>
@@ -418,15 +418,15 @@
       </node>
       <node concept="QsSxf" id="6mvxENQECzH" role="Qtgdg">
         <property role="TrG5h" value="CBMC_ERROR" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="6mvxENQEDSU" role="Qtgdg">
         <property role="TrG5h" value="PARSE_ERROR" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="6mvxENQEE3m" role="Qtgdg">
         <property role="TrG5h" value="RESULT_PARSED_OK" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="6mvxENQECsZ" role="1B3o_S" />
       <node concept="2tJIrI" id="6mvxENQEDMC" role="jymVt" />
@@ -491,7 +491,7 @@
       <property role="TrG5h" value="res" />
       <node concept="3Tm6S6" id="6mvxENQFsjY" role="1B3o_S" />
       <node concept="3uibUv" id="6mvxENQFsPp" role="1tU5fm">
-        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
     </node>
     <node concept="2tJIrI" id="6mvxENQFrIP" role="jymVt" />
@@ -516,7 +516,7 @@
       <node concept="37vLTG" id="6mvxENQFr3T" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="3uibUv" id="6mvxENQFr3S" role="1tU5fm">
-          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
         </node>
       </node>
     </node>
@@ -593,7 +593,7 @@
                 <node concept="3K4zz7" id="529Qsa9JQPV" role="37vLTx">
                   <node concept="Rm8GO" id="529Qsa9JSQO" role="3K4E3e">
                     <ref role="Rm8GQ" node="529Qsa9JJpn" resolve="SUCCESS" />
-                    <ref role="1Px2BO" node="6mvxENQECsY" resolve="RAW_RESULT_STATE" />
+                    <ref role="1Px2BO" node="6mvxENQECsY" resolve="RawResult.RAW_RESULT_STATE" />
                   </node>
                   <node concept="2OqwBi" id="529Qsa9JNmm" role="3K4Cdx">
                     <node concept="2OqwBi" id="529Qsa9JKq$" role="2Oq$k0">
@@ -616,7 +616,7 @@
                   </node>
                   <node concept="Rm8GO" id="529Qsa9JUh8" role="3K4GZi">
                     <ref role="Rm8GQ" node="529Qsa9JJ_M" resolve="FAILURE" />
-                    <ref role="1Px2BO" node="6mvxENQECsY" resolve="RAW_RESULT_STATE" />
+                    <ref role="1Px2BO" node="6mvxENQECsY" resolve="RawResult.RAW_RESULT_STATE" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="529Qsa9JKqC" role="37vLTJ">
@@ -1026,7 +1026,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="6mvxENQEFl6" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="6mvxENQEQ9D" role="jymVt" />
@@ -1313,7 +1313,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="6mvxENQEQ_o" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="529Qsa9KK2j" role="jymVt" />
@@ -1366,7 +1366,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="529Qsa9KM$H" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="6mvxENQEFdF" role="jymVt" />
@@ -1501,7 +1501,7 @@
                 </node>
                 <node concept="2OqwBi" id="6mvxENQEwEJ" role="33vP2m">
                   <node concept="37vLTw" id="6mvxENQEwq9" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6mvxENQEwf0" resolve="fabrique" />
+                    <ref role="3cqZAo" node="6mvxENQEwf0" resolve="factory" />
                   </node>
                   <node concept="liA8E" id="6mvxENQEwEK" role="2OqNvi">
                     <ref role="37wK5l" to="vpqd:~SAXParserFactory.newSAXParser()" resolve="newSAXParser" />
@@ -1513,8 +1513,8 @@
             <node concept="3clFbF" id="6mvxENQHmtu" role="3cqZAp">
               <node concept="2OqwBi" id="6mvxENQHmtr" role="3clFbG">
                 <node concept="10M0yZ" id="6mvxENQHmts" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="6mvxENQHmtt" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1624,7 +1624,7 @@
       <node concept="37vLTG" id="1ZsZb$iSBkE" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="3uibUv" id="1ZsZb$iWHjn" role="1tU5fm">
-          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+          <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
         </node>
       </node>
     </node>

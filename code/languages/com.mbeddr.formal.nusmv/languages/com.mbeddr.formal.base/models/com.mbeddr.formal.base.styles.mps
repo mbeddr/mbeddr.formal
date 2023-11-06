@@ -320,7 +320,7 @@
           <node concept="2OqwBi" id="7$7IYOpa9Pq" role="3clFbG">
             <node concept="10M0yZ" id="7$7IYOpa9Bk" role="2Oq$k0">
               <ref role="3cqZAo" node="1t0qU$W8Alr" resolve="INSTANCE" />
-              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="GREY" />
+              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="FASTENMaterialPaletteColors.GREY" />
             </node>
             <node concept="liA8E" id="7$7IYOpaa60" role="2OqNvi">
               <ref role="37wK5l" node="3gs8MHKVZff" resolve="getColorPair" />
@@ -805,23 +805,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Ac4" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Ac5" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Ac6" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Ac9" resolve="PURPLE" />
+            <ref role="37wK5l" node="1t0qU$W8Ac9" resolve="FASTENMaterialPaletteColors.PURPLE" />
             <node concept="10M0yZ" id="7$7IYOpa48F" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ac2" resolve="PURPLE" />
+              <ref role="1PxDUh" node="1t0qU$W8Ac2" resolve="FASTENMaterialPaletteColors.PURPLE" />
               <ref role="3cqZAo" node="1t0qU$W8Acp" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48G" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ac2" resolve="PURPLE" />
+              <ref role="1PxDUh" node="1t0qU$W8Ac2" resolve="FASTENMaterialPaletteColors.PURPLE" />
               <ref role="3cqZAo" node="1t0qU$W8Acu" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48H" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ac2" resolve="PURPLE" />
+              <ref role="1PxDUh" node="1t0qU$W8Ac2" resolve="FASTENMaterialPaletteColors.PURPLE" />
               <ref role="3cqZAo" node="1t0qU$W8Acz" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Ac7" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Ac2" resolve="PURPLE" />
+          <ref role="3uigEE" node="1t0qU$W8Ac2" resolve="FASTENMaterialPaletteColors.PURPLE" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W8Ac8" role="jymVt" />
@@ -922,23 +922,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8AcU" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8AcV" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8AcW" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8AcE" resolve="DEEPPURPLE" />
+            <ref role="37wK5l" node="1t0qU$W8AcE" resolve="FASTENMaterialPaletteColors.DEEPPURPLE" />
             <node concept="10M0yZ" id="7$7IYOpa48I" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AcD" resolve="DEEPPURPLE" />
+              <ref role="1PxDUh" node="1t0qU$W8AcD" resolve="FASTENMaterialPaletteColors.DEEPPURPLE" />
               <ref role="3cqZAo" node="1t0qU$W8Ad0" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48J" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AcD" resolve="DEEPPURPLE" />
+              <ref role="1PxDUh" node="1t0qU$W8AcD" resolve="FASTENMaterialPaletteColors.DEEPPURPLE" />
               <ref role="3cqZAo" node="1t0qU$W8Ad5" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48K" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AcD" resolve="DEEPPURPLE" />
+              <ref role="1PxDUh" node="1t0qU$W8AcD" resolve="FASTENMaterialPaletteColors.DEEPPURPLE" />
               <ref role="3cqZAo" node="1t0qU$W8Ada" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8AcX" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8AcD" resolve="DEEPPURPLE" />
+          <ref role="3uigEE" node="1t0qU$W8AcD" resolve="FASTENMaterialPaletteColors.DEEPPURPLE" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9ecz" role="jymVt" />
@@ -1039,23 +1039,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Adx" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Ady" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Adz" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Adh" resolve="INDIGO" />
+            <ref role="37wK5l" node="1t0qU$W8Adh" resolve="FASTENMaterialPaletteColors.INDIGO" />
             <node concept="10M0yZ" id="7$7IYOpa48L" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Adg" resolve="INDIGO" />
+              <ref role="1PxDUh" node="1t0qU$W8Adg" resolve="FASTENMaterialPaletteColors.INDIGO" />
               <ref role="3cqZAo" node="1t0qU$W8AdB" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48M" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Adg" resolve="INDIGO" />
+              <ref role="1PxDUh" node="1t0qU$W8Adg" resolve="FASTENMaterialPaletteColors.INDIGO" />
               <ref role="3cqZAo" node="1t0qU$W8AdG" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48N" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Adg" resolve="INDIGO" />
+              <ref role="1PxDUh" node="1t0qU$W8Adg" resolve="FASTENMaterialPaletteColors.INDIGO" />
               <ref role="3cqZAo" node="1t0qU$W8AdL" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Ad$" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Adg" resolve="INDIGO" />
+          <ref role="3uigEE" node="1t0qU$W8Adg" resolve="FASTENMaterialPaletteColors.INDIGO" />
         </node>
       </node>
       <node concept="3Tm1VV" id="1t0qU$W8Ad_" role="1B3o_S" />
@@ -1156,23 +1156,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Ae8" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Ae9" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Aea" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8AdS" resolve="BLUE" />
+            <ref role="37wK5l" node="1t0qU$W8AdS" resolve="FASTENMaterialPaletteColors.BLUE" />
             <node concept="10M0yZ" id="7$7IYOpa48O" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AdR" resolve="BLUE" />
+              <ref role="1PxDUh" node="1t0qU$W8AdR" resolve="FASTENMaterialPaletteColors.BLUE" />
               <ref role="3cqZAo" node="1t0qU$W8Aee" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48P" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AdR" resolve="BLUE" />
+              <ref role="1PxDUh" node="1t0qU$W8AdR" resolve="FASTENMaterialPaletteColors.BLUE" />
               <ref role="3cqZAo" node="1t0qU$W8Aej" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48Q" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AdR" resolve="BLUE" />
+              <ref role="1PxDUh" node="1t0qU$W8AdR" resolve="FASTENMaterialPaletteColors.BLUE" />
               <ref role="3cqZAo" node="1t0qU$W8Aeo" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Aeb" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8AdR" resolve="BLUE" />
+          <ref role="3uigEE" node="1t0qU$W8AdR" resolve="FASTENMaterialPaletteColors.BLUE" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9ixh" role="jymVt" />
@@ -1273,23 +1273,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Afm" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Afn" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Afo" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Af6" resolve="CYAN" />
+            <ref role="37wK5l" node="1t0qU$W8Af6" resolve="FASTENMaterialPaletteColors.CYAN" />
             <node concept="10M0yZ" id="7$7IYOpa48R" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Af5" resolve="CYAN" />
+              <ref role="1PxDUh" node="1t0qU$W8Af5" resolve="FASTENMaterialPaletteColors.CYAN" />
               <ref role="3cqZAo" node="1t0qU$W8Afs" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48S" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Af5" resolve="CYAN" />
+              <ref role="1PxDUh" node="1t0qU$W8Af5" resolve="FASTENMaterialPaletteColors.CYAN" />
               <ref role="3cqZAo" node="1t0qU$W8Afx" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48T" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Af5" resolve="CYAN" />
+              <ref role="1PxDUh" node="1t0qU$W8Af5" resolve="FASTENMaterialPaletteColors.CYAN" />
               <ref role="3cqZAo" node="1t0qU$W8AfA" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Afp" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Af5" resolve="CYAN" />
+          <ref role="3uigEE" node="1t0qU$W8Af5" resolve="FASTENMaterialPaletteColors.CYAN" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9iJT" role="jymVt" />
@@ -1390,23 +1390,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8AfX" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8AfY" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8AfZ" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8AfH" resolve="TEAL" />
+            <ref role="37wK5l" node="1t0qU$W8AfH" resolve="FASTENMaterialPaletteColors.TEAL" />
             <node concept="10M0yZ" id="7$7IYOpa48U" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AfG" resolve="TEAL" />
+              <ref role="1PxDUh" node="1t0qU$W8AfG" resolve="FASTENMaterialPaletteColors.TEAL" />
               <ref role="3cqZAo" node="1t0qU$W8Ag3" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48V" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AfG" resolve="TEAL" />
+              <ref role="1PxDUh" node="1t0qU$W8AfG" resolve="FASTENMaterialPaletteColors.TEAL" />
               <ref role="3cqZAo" node="1t0qU$W8Ag8" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48W" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AfG" resolve="TEAL" />
+              <ref role="1PxDUh" node="1t0qU$W8AfG" resolve="FASTENMaterialPaletteColors.TEAL" />
               <ref role="3cqZAo" node="1t0qU$W8Agd" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Ag0" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8AfG" resolve="TEAL" />
+          <ref role="3uigEE" node="1t0qU$W8AfG" resolve="FASTENMaterialPaletteColors.TEAL" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9iPS" role="jymVt" />
@@ -1506,23 +1506,23 @@
         <node concept="3Tm1VV" id="1t0qU$WnPcU" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$WnPcV" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$WnPcW" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$WnPd2" resolve="RED" />
+            <ref role="37wK5l" node="1t0qU$WnPd2" resolve="FASTENMaterialPaletteColors.RED" />
             <node concept="10M0yZ" id="7$7IYOpa48X" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$WnPcC" resolve="RED" />
+              <ref role="1PxDUh" node="1t0qU$WnPcC" resolve="FASTENMaterialPaletteColors.RED" />
               <ref role="3cqZAo" node="1t0qU$WnPcD" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48Y" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$WnPcC" resolve="RED" />
+              <ref role="1PxDUh" node="1t0qU$WnPcC" resolve="FASTENMaterialPaletteColors.RED" />
               <ref role="3cqZAo" node="1t0qU$WnPcI" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa48Z" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$WnPcC" resolve="RED" />
+              <ref role="1PxDUh" node="1t0qU$WnPcC" resolve="FASTENMaterialPaletteColors.RED" />
               <ref role="3cqZAo" node="1t0qU$WnPcN" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$WnPd0" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$WnPcC" resolve="RED" />
+          <ref role="3uigEE" node="1t0qU$WnPcC" resolve="FASTENMaterialPaletteColors.RED" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$WnPd1" role="jymVt" />
@@ -1623,23 +1623,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Ag$" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Ag_" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8AgA" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Agk" resolve="GREEN" />
+            <ref role="37wK5l" node="1t0qU$W8Agk" resolve="FASTENMaterialPaletteColors.GREEN" />
             <node concept="10M0yZ" id="7$7IYOpa490" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Agj" resolve="GREEN" />
+              <ref role="1PxDUh" node="1t0qU$W8Agj" resolve="FASTENMaterialPaletteColors.GREEN" />
               <ref role="3cqZAo" node="1t0qU$W8AgE" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa491" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Agj" resolve="GREEN" />
+              <ref role="1PxDUh" node="1t0qU$W8Agj" resolve="FASTENMaterialPaletteColors.GREEN" />
               <ref role="3cqZAo" node="1t0qU$W8AgJ" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa492" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Agj" resolve="GREEN" />
+              <ref role="1PxDUh" node="1t0qU$W8Agj" resolve="FASTENMaterialPaletteColors.GREEN" />
               <ref role="3cqZAo" node="1t0qU$W8AgO" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8AgB" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Agj" resolve="GREEN" />
+          <ref role="3uigEE" node="1t0qU$W8Agj" resolve="FASTENMaterialPaletteColors.GREEN" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9iXc" role="jymVt" />
@@ -1740,23 +1740,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8AhM" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8AhN" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8AhO" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Ahy" resolve="LIME" />
+            <ref role="37wK5l" node="1t0qU$W8Ahy" resolve="FASTENMaterialPaletteColors.LIME" />
             <node concept="10M0yZ" id="7$7IYOpa493" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ahx" resolve="LIME" />
+              <ref role="1PxDUh" node="1t0qU$W8Ahx" resolve="FASTENMaterialPaletteColors.LIME" />
               <ref role="3cqZAo" node="1t0qU$W8AhS" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa494" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ahx" resolve="LIME" />
+              <ref role="1PxDUh" node="1t0qU$W8Ahx" resolve="FASTENMaterialPaletteColors.LIME" />
               <ref role="3cqZAo" node="1t0qU$W8AhX" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa495" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ahx" resolve="LIME" />
+              <ref role="1PxDUh" node="1t0qU$W8Ahx" resolve="FASTENMaterialPaletteColors.LIME" />
               <ref role="3cqZAo" node="1t0qU$W8Ai2" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8AhP" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Ahx" resolve="LIME" />
+          <ref role="3uigEE" node="1t0qU$W8Ahx" resolve="FASTENMaterialPaletteColors.LIME" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9jav" role="jymVt" />
@@ -1857,23 +1857,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Aip" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Aiq" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Air" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Ai9" resolve="YELLOW" />
+            <ref role="37wK5l" node="1t0qU$W8Ai9" resolve="FASTENMaterialPaletteColors.YELLOW" />
             <node concept="10M0yZ" id="7$7IYOpa496" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ai8" resolve="YELLOW" />
+              <ref role="1PxDUh" node="1t0qU$W8Ai8" resolve="FASTENMaterialPaletteColors.YELLOW" />
               <ref role="3cqZAo" node="1t0qU$W8Aiv" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa497" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ai8" resolve="YELLOW" />
+              <ref role="1PxDUh" node="1t0qU$W8Ai8" resolve="FASTENMaterialPaletteColors.YELLOW" />
               <ref role="3cqZAo" node="1t0qU$W8Ai$" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa498" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ai8" resolve="YELLOW" />
+              <ref role="1PxDUh" node="1t0qU$W8Ai8" resolve="FASTENMaterialPaletteColors.YELLOW" />
               <ref role="3cqZAo" node="1t0qU$W8AiD" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Ais" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Ai8" resolve="YELLOW" />
+          <ref role="3uigEE" node="1t0qU$W8Ai8" resolve="FASTENMaterialPaletteColors.YELLOW" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W8Ain" role="jymVt" />
@@ -1974,23 +1974,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Aj0" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Aj1" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Aj2" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8AiK" resolve="AMBER" />
+            <ref role="37wK5l" node="1t0qU$W8AiK" resolve="FASTENMaterialPaletteColors.AMBER" />
             <node concept="10M0yZ" id="7$7IYOpa499" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AiJ" resolve="AMBER" />
+              <ref role="1PxDUh" node="1t0qU$W8AiJ" resolve="FASTENMaterialPaletteColors.AMBER" />
               <ref role="3cqZAo" node="1t0qU$W8Aj6" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49a" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AiJ" resolve="AMBER" />
+              <ref role="1PxDUh" node="1t0qU$W8AiJ" resolve="FASTENMaterialPaletteColors.AMBER" />
               <ref role="3cqZAo" node="1t0qU$W8Ajb" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49b" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AiJ" resolve="AMBER" />
+              <ref role="1PxDUh" node="1t0qU$W8AiJ" resolve="FASTENMaterialPaletteColors.AMBER" />
               <ref role="3cqZAo" node="1t0qU$W8Ajg" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Aj3" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8AiJ" resolve="AMBER" />
+          <ref role="3uigEE" node="1t0qU$W8AiJ" resolve="FASTENMaterialPaletteColors.AMBER" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9jnM" role="jymVt" />
@@ -2091,23 +2091,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8AjB" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8AjC" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8AjD" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Ajn" resolve="ORANGE" />
+            <ref role="37wK5l" node="1t0qU$W8Ajn" resolve="FASTENMaterialPaletteColors.ORANGE" />
             <node concept="10M0yZ" id="7$7IYOpa49c" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ajm" resolve="ORANGE" />
+              <ref role="1PxDUh" node="1t0qU$W8Ajm" resolve="FASTENMaterialPaletteColors.ORANGE" />
               <ref role="3cqZAo" node="1t0qU$W8AjH" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49d" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ajm" resolve="ORANGE" />
+              <ref role="1PxDUh" node="1t0qU$W8Ajm" resolve="FASTENMaterialPaletteColors.ORANGE" />
               <ref role="3cqZAo" node="1t0qU$W8AjM" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49e" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Ajm" resolve="ORANGE" />
+              <ref role="1PxDUh" node="1t0qU$W8Ajm" resolve="FASTENMaterialPaletteColors.ORANGE" />
               <ref role="3cqZAo" node="1t0qU$W8AjR" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8AjE" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Ajm" resolve="ORANGE" />
+          <ref role="3uigEE" node="1t0qU$W8Ajm" resolve="FASTENMaterialPaletteColors.ORANGE" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9jv5" role="jymVt" />
@@ -2208,23 +2208,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Ake" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Akf" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Akg" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8AjY" resolve="DEEPORANGE" />
+            <ref role="37wK5l" node="1t0qU$W8AjY" resolve="FASTENMaterialPaletteColors.DEEPORANGE" />
             <node concept="10M0yZ" id="7$7IYOpa49f" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AjX" resolve="DEEPORANGE" />
+              <ref role="1PxDUh" node="1t0qU$W8AjX" resolve="FASTENMaterialPaletteColors.DEEPORANGE" />
               <ref role="3cqZAo" node="1t0qU$W8Akk" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49g" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AjX" resolve="DEEPORANGE" />
+              <ref role="1PxDUh" node="1t0qU$W8AjX" resolve="FASTENMaterialPaletteColors.DEEPORANGE" />
               <ref role="3cqZAo" node="1t0qU$W8Akp" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49h" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AjX" resolve="DEEPORANGE" />
+              <ref role="1PxDUh" node="1t0qU$W8AjX" resolve="FASTENMaterialPaletteColors.DEEPORANGE" />
               <ref role="3cqZAo" node="1t0qU$W8Aku" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Akh" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8AjX" resolve="DEEPORANGE" />
+          <ref role="3uigEE" node="1t0qU$W8AjX" resolve="FASTENMaterialPaletteColors.DEEPORANGE" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9j_5" role="jymVt" />
@@ -2325,23 +2325,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Als" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Alt" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Alu" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8Alc" resolve="GREY" />
+            <ref role="37wK5l" node="1t0qU$W8Alc" resolve="FASTENMaterialPaletteColors.GREY" />
             <node concept="10M0yZ" id="7$7IYOpa49i" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="GREY" />
+              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="FASTENMaterialPaletteColors.GREY" />
               <ref role="3cqZAo" node="1t0qU$W8Aly" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49j" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="GREY" />
+              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="FASTENMaterialPaletteColors.GREY" />
               <ref role="3cqZAo" node="1t0qU$W8AlB" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49k" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="GREY" />
+              <ref role="1PxDUh" node="1t0qU$W8Alb" resolve="FASTENMaterialPaletteColors.GREY" />
               <ref role="3cqZAo" node="1t0qU$W8AlG" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Alv" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8Alb" resolve="GREY" />
+          <ref role="3uigEE" node="1t0qU$W8Alb" resolve="FASTENMaterialPaletteColors.GREY" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W9jMo" role="jymVt" />
@@ -2442,23 +2442,23 @@
         <node concept="3Tm1VV" id="1t0qU$W8Am3" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$W8Am4" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$W8Am5" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$W8AlN" resolve="BLUEGREY" />
+            <ref role="37wK5l" node="1t0qU$W8AlN" resolve="FASTENMaterialPaletteColors.BLUEGREY" />
             <node concept="10M0yZ" id="7$7IYOpa49l" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AlM" resolve="BLUEGREY" />
+              <ref role="1PxDUh" node="1t0qU$W8AlM" resolve="FASTENMaterialPaletteColors.BLUEGREY" />
               <ref role="3cqZAo" node="1t0qU$W8Am9" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49m" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AlM" resolve="BLUEGREY" />
+              <ref role="1PxDUh" node="1t0qU$W8AlM" resolve="FASTENMaterialPaletteColors.BLUEGREY" />
               <ref role="3cqZAo" node="1t0qU$W8Ame" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49n" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$W8AlM" resolve="BLUEGREY" />
+              <ref role="1PxDUh" node="1t0qU$W8AlM" resolve="FASTENMaterialPaletteColors.BLUEGREY" />
               <ref role="3cqZAo" node="1t0qU$W8Amj" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$W8Am6" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$W8AlM" resolve="BLUEGREY" />
+          <ref role="3uigEE" node="1t0qU$W8AlM" resolve="FASTENMaterialPaletteColors.BLUEGREY" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$W8Am1" role="jymVt" />
@@ -2560,23 +2560,23 @@
         <node concept="3Tm1VV" id="1t0qU$Wq9ZP" role="1B3o_S" />
         <node concept="2ShNRf" id="1t0qU$Wq9ZQ" role="33vP2m">
           <node concept="1pGfFk" id="1t0qU$Wq9ZR" role="2ShVmc">
-            <ref role="37wK5l" node="1t0qU$Wq9ZX" resolve="BLACK" />
+            <ref role="37wK5l" node="1t0qU$Wq9ZX" resolve="FASTENMaterialPaletteColors.BLACK" />
             <node concept="10M0yZ" id="7$7IYOpa49o" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$Wq9Zz" resolve="BLACK" />
+              <ref role="1PxDUh" node="1t0qU$Wq9Zz" resolve="FASTENMaterialPaletteColors.BLACK" />
               <ref role="3cqZAo" node="1t0qU$Wq9Z$" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49p" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$Wq9Zz" resolve="BLACK" />
+              <ref role="1PxDUh" node="1t0qU$Wq9Zz" resolve="FASTENMaterialPaletteColors.BLACK" />
               <ref role="3cqZAo" node="1t0qU$Wq9ZD" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49q" role="37wK5m">
-              <ref role="1PxDUh" node="1t0qU$Wq9Zz" resolve="BLACK" />
+              <ref role="1PxDUh" node="1t0qU$Wq9Zz" resolve="FASTENMaterialPaletteColors.BLACK" />
               <ref role="3cqZAo" node="1t0qU$Wq9ZI" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="1t0qU$Wq9ZV" role="1tU5fm">
-          <ref role="3uigEE" node="1t0qU$Wq9Zz" resolve="BLACK" />
+          <ref role="3uigEE" node="1t0qU$Wq9Zz" resolve="FASTENMaterialPaletteColors.BLACK" />
         </node>
       </node>
       <node concept="2tJIrI" id="1t0qU$Wq9ZW" role="jymVt" />
@@ -2677,23 +2677,23 @@
         <node concept="3Tm1VV" id="4GrFzjduUGi" role="1B3o_S" />
         <node concept="2ShNRf" id="4GrFzjduUGj" role="33vP2m">
           <node concept="1pGfFk" id="4GrFzjduUGk" role="2ShVmc">
-            <ref role="37wK5l" node="4GrFzjduUGn" resolve="WHITE" />
+            <ref role="37wK5l" node="4GrFzjduUGn" resolve="FASTENMaterialPaletteColors.WHITE" />
             <node concept="10M0yZ" id="7$7IYOpa49r" role="37wK5m">
-              <ref role="1PxDUh" node="4GrFzjduUG0" resolve="WHITE" />
+              <ref role="1PxDUh" node="4GrFzjduUG0" resolve="FASTENMaterialPaletteColors.WHITE" />
               <ref role="3cqZAo" node="4GrFzjduUG1" resolve="DARK" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49s" role="37wK5m">
-              <ref role="1PxDUh" node="4GrFzjduUG0" resolve="WHITE" />
+              <ref role="1PxDUh" node="4GrFzjduUG0" resolve="FASTENMaterialPaletteColors.WHITE" />
               <ref role="3cqZAo" node="4GrFzjduUG6" resolve="DEFAULT" />
             </node>
             <node concept="10M0yZ" id="7$7IYOpa49t" role="37wK5m">
-              <ref role="1PxDUh" node="4GrFzjduUG0" resolve="WHITE" />
+              <ref role="1PxDUh" node="4GrFzjduUG0" resolve="FASTENMaterialPaletteColors.WHITE" />
               <ref role="3cqZAo" node="4GrFzjduUGb" resolve="LIGHT" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="4GrFzjduUGl" role="1tU5fm">
-          <ref role="3uigEE" node="4GrFzjduUG0" resolve="WHITE" />
+          <ref role="3uigEE" node="4GrFzjduUG0" resolve="FASTENMaterialPaletteColors.WHITE" />
         </node>
       </node>
       <node concept="2tJIrI" id="4GrFzjduUGm" role="jymVt" />

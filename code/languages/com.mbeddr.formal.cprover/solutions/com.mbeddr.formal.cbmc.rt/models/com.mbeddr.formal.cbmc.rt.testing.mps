@@ -150,7 +150,7 @@
         <node concept="3clFbF" id="6mvxENQDKAL" role="3cqZAp">
           <node concept="2OqwBi" id="6mvxENQDL5a" role="3clFbG">
             <node concept="37vLTw" id="6mvxENQDKAJ" role="2Oq$k0">
-              <ref role="3cqZAo" node="6mvxENQDKmS" resolve="list" />
+              <ref role="3cqZAo" node="6mvxENQDKmS" resolve="allArgs" />
             </node>
             <node concept="X8dFx" id="6mvxENQDM3m" role="2OqNvi">
               <node concept="37vLTw" id="6mvxENQDMg1" role="25WWJ7">
@@ -165,7 +165,7 @@
               <ref role="3cqZAo" node="6mvxENQDCc3" resolve="runner" />
             </node>
             <node concept="liA8E" id="6mvxENQDCv1" role="2OqNvi">
-              <ref role="37wK5l" to="2xjj:6mvxENQDoy5" resolve="run" />
+              <ref role="37wK5l" to="2xjj:6mvxENQDoy5" resolve="runTool" />
               <node concept="2ShNRf" id="6mvxENQDC$7" role="37wK5m">
                 <node concept="Tc6Ow" id="6mvxENQDDgR" role="2ShVmc">
                   <node concept="17QB3L" id="6mvxENQDDJ4" role="HW$YZ" />
@@ -175,7 +175,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="6mvxENQDKmX" role="37wK5m">
-                <ref role="3cqZAo" node="6mvxENQDKmS" resolve="list" />
+                <ref role="3cqZAo" node="6mvxENQDKmS" resolve="allArgs" />
               </node>
               <node concept="2ShNRf" id="6mvxENQDGM4" role="37wK5m">
                 <node concept="1pGfFk" id="6mvxENQDHoS" role="2ShVmc">
@@ -211,7 +211,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="6mvxENQDoy9" role="3clF45">
-        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
       <node concept="3Tm1VV" id="6mvxENQDoy8" role="1B3o_S" />
     </node>
@@ -279,7 +279,7 @@
               <ref role="3cqZAo" node="6mvxENQFzWe" resolve="runner" />
             </node>
             <node concept="liA8E" id="6mvxENQFzWz" role="2OqNvi">
-              <ref role="37wK5l" to="2xjj:6mvxENQFlYW" resolve="run" />
+              <ref role="37wK5l" to="2xjj:6mvxENQFlYW" resolve="runAndBuildRawResults" />
               <node concept="2ShNRf" id="6mvxENQFzW$" role="37wK5m">
                 <node concept="Tc6Ow" id="6mvxENQFzW_" role="2ShVmc">
                   <node concept="17QB3L" id="6mvxENQFzWA" role="HW$YZ" />

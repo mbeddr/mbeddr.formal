@@ -2,7 +2,7 @@
 <model ref="r:8549dce4-77a3-4d5e-93dc-77ce55bcf2a1(test.com.mbeddr.formal.cbmc._010_cbmc_smoke@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -27,6 +27,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -179,6 +180,7 @@
   </registry>
   <node concept="1lH9Xt" id="2gpUZARg$Op">
     <property role="TrG5h" value="_010_simple_runs" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="2gpUZARg$Qu" role="1SL9yI">
       <property role="TrG5h" value="_010_Assertion_Check_PASS" />
       <node concept="3cqZAl" id="2gpUZARg$Qv" role="3clF45" />
@@ -187,7 +189,7 @@
           <node concept="3cpWsn" id="6mvxENQH_Dt" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="6mvxENQH_CE" role="1tU5fm">
-              <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+              <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
             </node>
             <node concept="2YIFZM" id="6mvxENQH_Du" role="33vP2m">
               <ref role="37wK5l" node="6mvxENQHvzd" resolve="run" />
@@ -233,6 +235,7 @@
   </node>
   <node concept="1lH9Xt" id="6mvxENQH2lO">
     <property role="TrG5h" value="_020_raw_results" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6mvxENQH2mZ" role="1SL9yI">
       <property role="TrG5h" value="_010_Assertion_Check_Raw_Result_PASS" />
       <node concept="3cqZAl" id="6mvxENQH2n0" role="3clF45" />
@@ -246,7 +249,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6mvxENQHans" role="33vP2m">
-              <ref role="37wK5l" node="6mvxENQDJU_" resolve="doRun" />
+              <ref role="37wK5l" node="6mvxENQDJU_" resolve="runAndBuildRawResults" />
               <ref role="1Pybhc" node="6mvxENQD310" resolve="Utils" />
               <node concept="2OqwBi" id="6mvxENQHant" role="37wK5m">
                 <node concept="1jxXqW" id="6mvxENQHanu" role="2Oq$k0" />
@@ -339,7 +342,7 @@
           </node>
           <node concept="2OqwBi" id="6mvxENQHFkE" role="3tpDZA">
             <node concept="37vLTw" id="529Qsa9MZ1g" role="2Oq$k0">
-              <ref role="3cqZAo" node="529Qsa9MZ1b" resolve="result" />
+              <ref role="3cqZAo" node="529Qsa9MZ1b" resolve="crtRes" />
             </node>
             <node concept="2OwXpG" id="6mvxENQHFkI" role="2OqNvi">
               <ref role="2Oxat5" to="2xjj:6mvxENQEEzT" resolve="property" />
@@ -606,7 +609,7 @@
           <node concept="2OqwBi" id="1RFaOawU77y" role="3tpDZA">
             <node concept="2OqwBi" id="1RFaOawU77z" role="2Oq$k0">
               <node concept="37vLTw" id="1RFaOawU77$" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RFaOawU77o" resolve="step_0" />
+                <ref role="3cqZAo" node="1RFaOawU77o" resolve="step_1" />
               </node>
               <node concept="liA8E" id="1RFaOawU77_" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
@@ -668,7 +671,7 @@
           <node concept="2OqwBi" id="1RFaOawU$Hf" role="3tpDZA">
             <node concept="2OqwBi" id="1RFaOawU$Hg" role="2Oq$k0">
               <node concept="37vLTw" id="1RFaOawU$Hh" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RFaOawU$H5" resolve="step_1" />
+                <ref role="3cqZAo" node="1RFaOawU$H5" resolve="step_2" />
               </node>
               <node concept="liA8E" id="1RFaOawU$Hi" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
@@ -829,7 +832,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6mvxENQH6$l" role="33vP2m">
-              <ref role="37wK5l" to="mjqf:6mvxENQFzWb" resolve="run" />
+              <ref role="37wK5l" to="mjqf:6mvxENQFzWb" resolve="runAndBuildRawResults" />
               <ref role="1Pybhc" to="mjqf:6mvxENQD310" resolve="CBMCRunnerTestingFacade" />
               <node concept="37vLTw" id="6mvxENQHa6v" role="37wK5m">
                 <ref role="3cqZAo" node="6mvxENQH9IW" resolve="fileName" />
@@ -1014,7 +1017,7 @@
       </node>
       <node concept="3Tm1VV" id="6mvxENQHv$3" role="1B3o_S" />
       <node concept="3uibUv" id="6mvxENQHx15" role="3clF45">
-        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunResult" />
+        <ref role="3uigEE" to="2avh:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
     </node>
     <node concept="2tJIrI" id="6mvxENQF$ir" role="jymVt" />
@@ -1024,8 +1027,8 @@
         <node concept="3clFbF" id="529Qsa9NV$x" role="3cqZAp">
           <node concept="2OqwBi" id="529Qsa9NV$u" role="3clFbG">
             <node concept="10M0yZ" id="529Qsa9NV$v" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="529Qsa9NV$w" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1046,8 +1049,8 @@
             <node concept="3clFbF" id="529Qsa9NSuL" role="3cqZAp">
               <node concept="2OqwBi" id="529Qsa9NSuI" role="3clFbG">
                 <node concept="10M0yZ" id="529Qsa9NSuJ" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" />
-                  <ref role="3cqZAo" to="wyt6:~System.err" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                 </node>
                 <node concept="liA8E" id="529Qsa9NSuK" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1072,8 +1075,8 @@
         <node concept="3clFbF" id="529Qsa9NWZH" role="3cqZAp">
           <node concept="2OqwBi" id="529Qsa9NWZE" role="3clFbG">
             <node concept="10M0yZ" id="529Qsa9NWZF" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="529Qsa9NWZG" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />

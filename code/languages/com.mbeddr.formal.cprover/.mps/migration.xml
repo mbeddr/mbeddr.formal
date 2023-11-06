@@ -3,5 +3,6 @@
   <component name="MigrationProperties">
     <entry key="jetbrains.mps.ide.mpsmigration.v_2021_3.ExtractMPSBootStubs" value="executed" />
     <entry key="project.baseline.version" value="213" />
+    <entry key="project.migrated.version" value="222" />
   </component>
 </project>
