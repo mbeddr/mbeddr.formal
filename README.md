@@ -21,6 +21,8 @@ and build the languages.
        ```properties
        mpsHomeDir=C:/work/MPS_2021.3.x
        mbeddr.formal.home=C:/work/mbeddr.formal
+       gpr.user=<a github user name>
+       gpr.token=<token for package access>
        ``` 
      - in Unix-based systems we have the "unix paths" (nothing changes)
 2. run `gradlew.bat`- this starts the default task which downloads dependencies and builds FASTEN languages
