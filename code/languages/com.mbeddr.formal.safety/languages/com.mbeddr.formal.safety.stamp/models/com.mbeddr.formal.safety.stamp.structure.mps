@@ -154,7 +154,7 @@
     <node concept="1TJgyj" id="5t7Sqsap4BI" role="1TKVEi">
       <property role="IQ2ns" value="6289243512196319726" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="responsabilities" />
+      <property role="20kJfa" value="responsibilities" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
@@ -246,7 +246,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="unsafeActions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1JhvKLLO08z" resolve="UnsafeControllerAction" />
+      <ref role="20lvS9" node="1JhvKLLO08z" resolve="UnsafeControlAction" />
     </node>
     <node concept="1TJgyj" id="1JhvKLLO08x" role="1TKVEi">
       <property role="IQ2ns" value="2004523000582373921" />
