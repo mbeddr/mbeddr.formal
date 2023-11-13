@@ -4029,7 +4029,7 @@
           <node concept="3clFbS" id="2o_v82yBrAa" role="2VODD2">
             <node concept="3clFbF" id="2o_v82yBzjs" role="3cqZAp">
               <node concept="Xl_RD" id="2o_v82yBzjr" role="3clFbG">
-                <property role="Xl_RC" value="Reset Counter" />
+                <property role="Xl_RC" value="Propagate Prefix" />
               </node>
             </node>
           </node>

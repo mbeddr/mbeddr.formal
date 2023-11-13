@@ -878,37 +878,8 @@
       </node>
       <node concept="2iRkQZ" id="3GRi4m$qQ5t" role="2iSdaV" />
     </node>
-    <node concept="3EZMnI" id="3f8ZVRYdwpS" role="6VMZX">
-      <node concept="2iRkQZ" id="3f8ZVRYdwpT" role="2iSdaV" />
-      <node concept="PMmxH" id="3QMOguhhzzH" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:3QMOguhhzhR" resolve="IContainerForEntitiesWithPrefixedNamesEditorComponent" />
-      </node>
-      <node concept="3F0ifn" id="5WyjFZRl1g7" role="3EZMnx" />
-      <node concept="3EZMnI" id="5WyjFZRl1gs" role="3EZMnx">
-        <node concept="VPM3Z" id="5WyjFZRl1gu" role="3F10Kt" />
-        <node concept="3F0ifn" id="5WyjFZRl1gw" role="3EZMnx">
-          <property role="3F0ifm" value="Show Relations Text:" />
-        </node>
-        <node concept="27S6Sx" id="5WyjFZRl1hd" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:5WyjFZRl16s" resolve="displayRelationNames" />
-        </node>
-        <node concept="2iRfu4" id="5WyjFZRl1gx" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="3cGyC6fDROD" role="3EZMnx" />
-      <node concept="PMmxH" id="3cGyC6fEQ4A" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:3cGyC6fA47W" resolve="AnnotationProvidersContainerEditorComponent" />
-      </node>
-      <node concept="3F0ifn" id="336$aoT_0OY" role="3EZMnx" />
-      <node concept="3EZMnI" id="336$aoT_0Pl" role="3EZMnx">
-        <node concept="VPM3Z" id="336$aoT_0Pn" role="3F10Kt" />
-        <node concept="3F0ifn" id="336$aoT_0Pp" role="3EZMnx">
-          <property role="3F0ifm" value="Documentation:" />
-        </node>
-        <node concept="3F1sOY" id="336$aoT_0PK" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:336$aoT$ZLb" resolve="documentation" />
-        </node>
-        <node concept="2iRfu4" id="336$aoT_0Pq" role="2iSdaV" />
-      </node>
+    <node concept="PMmxH" id="3ydH56R7Q$p" role="6VMZX">
+      <ref role="PMmxG" node="3ydH56R7QiE" resolve="GoalStructureInInspector_EditorComponent" />
     </node>
   </node>
   <node concept="2xDbr0" id="4Te4zGtlJMP">
@@ -5061,6 +5032,9 @@
     </node>
     <node concept="2aJ2om" id="5uFV_KKBkOT" role="CpUAK">
       <ref role="2$4xQ3" node="5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
+    </node>
+    <node concept="PMmxH" id="3ydH56R9VXv" role="6VMZX">
+      <ref role="PMmxG" node="3ydH56R7QiE" resolve="GoalStructureInInspector_EditorComponent" />
     </node>
   </node>
   <node concept="24kQdi" id="5uFV_KKBleS">
@@ -9310,6 +9284,9 @@
       </node>
       <node concept="2iRkQZ" id="7olAlesPk0L" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="3ydH56R8Uk2" role="6VMZX">
+      <ref role="PMmxG" node="3ydH56R7QiE" resolve="GoalStructureInInspector_EditorComponent" />
+    </node>
   </node>
   <node concept="24kQdi" id="7olAlesPkOF">
     <property role="3GE5qa" value="textual_fast" />
@@ -10663,6 +10640,9 @@
     </node>
     <node concept="2aJ2om" id="4Cms47V7voF" role="CpUAK">
       <ref role="2$4xQ3" node="4Cms47V74xp" resolve="GOAL_STRUCTURE_TREE_TABLE" />
+    </node>
+    <node concept="PMmxH" id="3ydH56R8T$L" role="6VMZX">
+      <ref role="PMmxG" node="3ydH56R7QiE" resolve="GoalStructureInInspector_EditorComponent" />
     </node>
   </node>
   <node concept="312cEu" id="48_A4oXEn4j">
@@ -12531,6 +12511,9 @@
       </node>
       <node concept="2iRkQZ" id="3EDV2YKNkzu" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="3ydH56R8TXq" role="6VMZX">
+      <ref role="PMmxG" node="3ydH56R7QiE" resolve="GoalStructureInInspector_EditorComponent" />
+    </node>
   </node>
   <node concept="24kQdi" id="5t37uj6yZi$">
     <ref role="1XX52x" to="py52:5t37uj6yZix" resolve="GoalStructureRef" />
@@ -12960,6 +12943,42 @@
     </node>
     <node concept="2aJ2om" id="1jzC6AJYERh" role="CpUAK">
       <ref role="2$4xQ3" node="3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="3ydH56R7QiE">
+    <property role="TrG5h" value="GoalStructureInInspector_EditorComponent" />
+    <ref role="1XX52x" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+    <node concept="3EZMnI" id="3ydH56R7QiN" role="2wV5jI">
+      <node concept="2iRkQZ" id="3ydH56R7QiO" role="2iSdaV" />
+      <node concept="PMmxH" id="3ydH56R7QiP" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3QMOguhhzhR" resolve="IContainerForEntitiesWithPrefixedNamesEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="3ydH56R7QiQ" role="3EZMnx" />
+      <node concept="3EZMnI" id="3ydH56R7QiR" role="3EZMnx">
+        <node concept="VPM3Z" id="3ydH56R7QiS" role="3F10Kt" />
+        <node concept="3F0ifn" id="3ydH56R7QiT" role="3EZMnx">
+          <property role="3F0ifm" value="Show Relations Text:" />
+        </node>
+        <node concept="27S6Sx" id="3ydH56R7QiU" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:5WyjFZRl16s" resolve="displayRelationNames" />
+        </node>
+        <node concept="2iRfu4" id="3ydH56R7QiV" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3ydH56R7QiW" role="3EZMnx" />
+      <node concept="PMmxH" id="3ydH56R7QiX" role="3EZMnx">
+        <ref role="PMmxG" to="xnej:3cGyC6fA47W" resolve="AnnotationProvidersContainerEditorComponent" />
+      </node>
+      <node concept="3F0ifn" id="3ydH56R7QiY" role="3EZMnx" />
+      <node concept="3EZMnI" id="3ydH56R7QiZ" role="3EZMnx">
+        <node concept="VPM3Z" id="3ydH56R7Qj0" role="3F10Kt" />
+        <node concept="3F0ifn" id="3ydH56R7Qj1" role="3EZMnx">
+          <property role="3F0ifm" value="Documentation:" />
+        </node>
+        <node concept="3F1sOY" id="3ydH56R7Qj2" role="3EZMnx">
+          <ref role="1NtTu8" to="py52:336$aoT$ZLb" resolve="documentation" />
+        </node>
+        <node concept="2iRfu4" id="3ydH56R7Qj3" role="2iSdaV" />
+      </node>
     </node>
   </node>
 </model>
