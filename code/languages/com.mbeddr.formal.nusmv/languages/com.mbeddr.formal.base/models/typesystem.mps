@@ -152,6 +152,7 @@
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
       </concept>
       <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
       <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
@@ -160,6 +161,7 @@
       <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
         <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
       </concept>
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -449,6 +451,15 @@
         </node>
       </node>
     </node>
+    <node concept="QznSV" id="2bKcjDgHJjL" role="QzAvj">
+      <node concept="3clFbS" id="2bKcjDgHJjM" role="2VODD2">
+        <node concept="3clFbF" id="2bKcjDgHJoy" role="3cqZAp">
+          <node concept="Xl_RD" id="2bKcjDgHJox" role="3clFbG">
+            <property role="Xl_RC" value="Propagate Prefix Changes" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="18kY7G" id="3f8ZVRYdzmR">
     <property role="TrG5h" value="check_IndexPrefix" />
@@ -605,7 +616,6 @@
                     <ref role="3cqZAo" node="84ljAGCXdv" resolve="nodeUsingPrefix" />
                   </node>
                   <node concept="3Cnw8n" id="3f8ZVRYf_jS" role="1urrFz">
-                    <property role="ARO6o" value="true" />
                     <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
                     <node concept="3CnSsL" id="3f8ZVRYf_oM" role="3Coj4f">
                       <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
@@ -808,7 +818,6 @@
                   </node>
                   <node concept="2Mj0R9" id="3f8ZVRYe7X$" role="3cqZAp">
                     <node concept="3Cnw8n" id="3f8ZVRYfD01" role="1urrFz">
-                      <property role="ARO6o" value="true" />
                       <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
                       <node concept="3CnSsL" id="3f8ZVRYfD02" role="3Coj4f">
                         <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
