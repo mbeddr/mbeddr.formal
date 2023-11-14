@@ -226,7 +226,9 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
+        <child id="5861024100072578575" name="addHints" index="3xwHhi" />
+      </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
         <child id="7279578193766667846" name="addHints" index="78xua" />
         <child id="1182233390675" name="filter" index="12AuX0" />
@@ -12976,9 +12978,26 @@
         </node>
         <node concept="3F1sOY" id="3ydH56R7Qj2" role="3EZMnx">
           <ref role="1NtTu8" to="py52:336$aoT$ZLb" resolve="documentation" />
+          <node concept="2w$q5c" id="5l6J5csz8uE" role="3xwHhi">
+            <node concept="2aJ2om" id="5l6J5csz8uF" role="2w$qW5">
+              <ref role="2$4xQ3" node="5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
+            </node>
+          </node>
+          <node concept="VPXOz" id="5l6J5cs$87w" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="2iRfu4" id="3ydH56R7Qj3" role="2iSdaV" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5l6J5csz8l6">
+    <ref role="1XX52x" to="py52:336$aoT_UFY" resolve="GoalStructureDoc" />
+    <node concept="3F1sOY" id="5l6J5csz8la" role="2wV5jI">
+      <ref role="1NtTu8" to="py52:336$aoT_UHh" resolve="documentation" />
+    </node>
+    <node concept="2aJ2om" id="5l6J5csz8l8" role="CpUAK">
+      <ref role="2$4xQ3" node="5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
     </node>
   </node>
 </model>
