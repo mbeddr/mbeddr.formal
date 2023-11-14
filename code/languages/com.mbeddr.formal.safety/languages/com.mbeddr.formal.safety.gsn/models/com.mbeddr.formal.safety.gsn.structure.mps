@@ -30,10 +30,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118929411" name="build" index="YLPcu" />
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -141,24 +138,6 @@
         <node concept="3PKj8D" id="2LDKh2uE0Ro" role="3PKjny">
           <property role="3PKj8l" value="987654" />
         </node>
-      </node>
-    </node>
-    <node concept="1TJgyi" id="3f8ZVRYdw4Q" role="1TKVEl">
-      <property role="IQ2nx" value="3731513482755309878" />
-      <property role="TrG5h" value="idPrefix_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="3QMOguhheEH" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames&quot;" />
-        <property role="YLPcu" value="16.04.2022" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="3f8ZVRYdwrn" role="1TKVEl">
-      <property role="IQ2nx" value="3731513482755311319" />
-      <property role="TrG5h" value="crtMaxIndex_old" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-      <node concept="asaX9" id="3QMOguhheFn" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames&quot;" />
-        <property role="YLPcu" value="16.04.2022" />
       </node>
     </node>
     <node concept="1TJgyi" id="5WyjFZRl16s" role="1TKVEl">
