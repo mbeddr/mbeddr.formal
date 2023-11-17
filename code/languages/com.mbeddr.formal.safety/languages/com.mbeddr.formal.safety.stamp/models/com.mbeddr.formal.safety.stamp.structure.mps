@@ -9,6 +9,7 @@
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
+    <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -628,6 +629,19 @@
       <property role="20kJfa" value="actions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1JhvKLLO9K9" resolve="ActionDescriptionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="wPGLh8JaJr">
+    <property role="EcuMT" value="591575825770130395" />
+    <property role="3GE5qa" value="baseLanguage.analysis.context" />
+    <property role="TrG5h" value="ComplexExpressionContext" />
+    <property role="34LRSv" value="expression context" />
+    <ref role="1TJDcQ" node="1JhvKLLOZ8n" resolve="ContextBase" />
+    <node concept="1TJgyj" id="wPGLh8JaJs" role="1TKVEi">
+      <property role="IQ2ns" value="591575825770130396" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" to="ehqg:6NmtaR1V301" resolve="Expression" />
     </node>
   </node>
 </model>

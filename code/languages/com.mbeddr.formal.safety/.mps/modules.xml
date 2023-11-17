@@ -48,6 +48,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.iso26262/com.mbeddr.formal.safety.iso26262.mpl" folder="hara.iso26262" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.req/com.mbeddr.formal.safety.req.mpl" folder="req" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ext/com.mbeddr.formal.safety.stamp.ext.mpl" folder="hara.stamp" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp.ops/com.mbeddr.formal.safety.stamp.ops.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.stamp/com.mbeddr.formal.safety.stamp.mpl" folder="hara.stamp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.process.review.sandbox/com.fasten.process.review.sandbox.msd" folder="process" />
