@@ -17,6 +17,7 @@
       </concept>
       <concept id="5879905612006349272" name="com.mbeddr.formal.safety.gsn.ext.structure.GenericNamedModelElementRefWord" flags="ng" index="lVOro">
         <property id="5879905612006349277" name="type" index="lVOrt" />
+        <reference id="5879905612006349279" name="elem" index="lVOrv" />
       </concept>
       <concept id="2392944874759792240" name="com.mbeddr.formal.safety.gsn.ext.structure.SupportedByConnectionPattern" flags="ng" index="1a4Pjv" />
       <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ng" index="1a7XsH">
@@ -46,6 +47,16 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+      </concept>
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
+        <child id="9102875167978228305" name="hazards" index="8gIbH" />
+      </concept>
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
+      <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1246,7 +1257,7 @@
         <node concept="gqqVs" id="x1FXqw_vs" role="37mO4d">
           <property role="gqqTZ" value="93.0" />
           <property role="gqqTW" value="16.0" />
-          <property role="gqqTX" value="141.0" />
+          <property role="gqqTX" value="161.0" />
           <property role="gqqTy" value="97.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -1256,8 +1267,8 @@
         <node concept="gqqVs" id="x1FXqy4aJ" role="37mO4d">
           <property role="gqqTZ" value="67.0" />
           <property role="gqqTW" value="136.0" />
-          <property role="gqqTX" value="193.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="217.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1276,17 +1287,17 @@
         <node concept="gqqVs" id="x1FXqClKN" role="37mO4d">
           <property role="gqqTZ" value="376.0" />
           <property role="gqqTW" value="15.0" />
-          <property role="gqqTX" value="205.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="222.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
       <node concept="37mRIm" id="56pBK14uNRk" role="37mRID">
         <property role="37mO49" value="5879905612006636982" />
         <node concept="gqqVs" id="56pBK14uNRj" role="37mO4d">
-          <property role="gqqTZ" value="380.0" />
-          <property role="gqqTW" value="137.0" />
-          <property role="gqqTX" value="204.0" />
+          <property role="gqqTZ" value="357.5" />
+          <property role="gqqTW" value="136.0" />
+          <property role="gqqTX" value="259.0" />
           <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -1322,10 +1333,11 @@
       <property role="TrG5h" value="Hazard_Mitigated" />
       <node concept="19SGf9" id="56pBK14uNQR" role="2vnaTZ">
         <node concept="19SUe$" id="56pBK14uNQS" role="19SJt6">
-          <property role="19SUeA" value="Hazard" />
+          <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="lVOro" id="56pBK14uNRA" role="19SJt6">
           <property role="lVOrt" value="hazard" />
+          <ref role="lVOrv" node="5l6J5csSGJ1" resolve="Unintended acceleration" />
         </node>
         <node concept="19SUe$" id="56pBK14uNRB" role="19SJt6">
           <property role="19SUeA" value="&#10;has been mitigated." />
@@ -1391,7 +1403,7 @@
     <property role="3GE5qa" value="config" />
   </node>
   <node concept="2vn7XN" id="2ByFloRlq4G">
-    <property role="TrG5h" value="_200_" />
+    <property role="TrG5h" value="_200_url_attribute" />
     <node concept="2vn7WC" id="2ByFloRlq4N" role="2vn1q5">
       <property role="TrG5h" value="G01_UL_4600" />
       <node concept="19SGf9" id="2ByFloRlq4O" role="2vnaTZ">
@@ -1525,9 +1537,9 @@
       <node concept="37mRIm" id="2ByFloRlq4V" role="37mRID">
         <property role="37mO49" value="3018165286098805043" />
         <node concept="gqqVs" id="2ByFloRlq4T" role="37mO4d">
-          <property role="gqqTZ" value="324.0" />
-          <property role="gqqTW" value="16.0" />
-          <property role="gqqTX" value="119.0" />
+          <property role="gqqTZ" value="171.0" />
+          <property role="gqqTW" value="33.0" />
+          <property role="gqqTX" value="128.0" />
           <property role="gqqTy" value="84.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -1535,6 +1547,13 @@
     </node>
     <node concept="26s6xy" id="2ByFloRlq6O" role="2WHcHu">
       <property role="2Wzj7u" value="3018165286098577129" />
+    </node>
+  </node>
+  <node concept="8gVzP" id="5l6J5csSGJ0">
+    <property role="TrG5h" value="_000_hazards_list" />
+    <node concept="8gVzc" id="5l6J5csSGJ1" role="8gIbH">
+      <property role="0lsPA" value="H01" />
+      <property role="TrG5h" value="Unintended acceleration" />
     </node>
   </node>
 </model>
