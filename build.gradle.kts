@@ -37,8 +37,11 @@ logger.info("Repository username: {}", nexusUsername)
 // Project versions
 val major = "2022"
 val minor = "3"
+val bugfix = "1"
 
-val mpsVersion ="$major.$minor"
+fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
+
+val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
