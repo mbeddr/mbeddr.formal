@@ -292,12 +292,12 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="41_NtXJuI4l" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuI0R" />
-      <ref role="3VeSjQ" node="41_NtXJuI1r" />
+      <ref role="3VeSjP" node="41_NtXJuI0R" resolve="G_CEM_TOP_1" />
+      <ref role="3VeSjQ" node="41_NtXJuI1r" resolve="A_CEM_TOP_1" />
     </node>
     <node concept="2vhqFZ" id="41_NtXJuI55" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuI0R" />
-      <ref role="3VeSjQ" node="41_NtXJuI2z" />
+      <ref role="3VeSjP" node="41_NtXJuI0R" resolve="G_CEM_TOP_1" />
+      <ref role="3VeSjQ" node="41_NtXJuI2z" resolve="A_CEM_TOP_2" />
     </node>
     <node concept="2vmxQI" id="41_NtXJuI63" role="2vn1q5">
       <property role="TrG5h" value="S_CEM_TOP_1" />
@@ -308,13 +308,13 @@
       </node>
     </node>
     <node concept="3VeUTF" id="41_NtXJuI6Y" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuI0R" />
-      <ref role="3VeSjQ" node="41_NtXJuI63" />
+      <ref role="3VeSjP" node="41_NtXJuI0R" resolve="G_CEM_TOP_1" />
+      <ref role="3VeSjQ" node="41_NtXJuI63" resolve="S_CEM_TOP_1" />
     </node>
     <node concept="2vn7WC" id="41_NtXJuI79" role="2vn1q5">
       <property role="TrG5h" value="G_CEM_TOP_2" />
       <property role="2QdZbZ" value="true" />
-      <ref role="2QdZa0" node="41_NtXJuIdI" />
+      <ref role="2QdZa0" node="41_NtXJuIdI" resolve="G_CEM_LEVEL3_TOP" />
       <node concept="19SGf9" id="41_NtXJuI7a" role="2vnaTY">
         <node concept="19SUe$" id="41_NtXJuI7b" role="19SJt6">
           <property role="19SUeA" value="CEM function is safe to operate&#10;on a highway in SAE Level 3 mode." />
@@ -330,12 +330,12 @@
       </node>
     </node>
     <node concept="3VeUTF" id="41_NtXJuI9W" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuI63" />
-      <ref role="3VeSjQ" node="41_NtXJuI79" />
+      <ref role="3VeSjP" node="41_NtXJuI63" resolve="S_CEM_TOP_1" />
+      <ref role="3VeSjQ" node="41_NtXJuI79" resolve="G_CEM_TOP_2" />
     </node>
     <node concept="3VeUTF" id="41_NtXJuIbm" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuI63" />
-      <ref role="3VeSjQ" node="41_NtXJuI8z" />
+      <ref role="3VeSjP" node="41_NtXJuI63" resolve="S_CEM_TOP_1" />
+      <ref role="3VeSjQ" node="41_NtXJuI8z" resolve="G_CEM_TOP_3" />
     </node>
   </node>
   <node concept="2vn7XN" id="41_NtXJuIdA">
@@ -735,13 +735,13 @@
     <node concept="8gVzV" id="41_NtXJuIso" role="2vn1q5">
       <property role="TrG5h" value="G_CEM_LEVEL3_TOP_2" />
       <property role="2QdZbZ" value="true" />
-      <ref role="2QdZa0" node="41_NtXJv5kp" />
+      <ref role="2QdZa0" node="41_NtXJv5kp" resolve="G_CEM_LEVEL3_COLLISION_1" />
       <node concept="19SGf9" id="41_NtXJuIsp" role="2vnaTY">
         <node concept="19SUe$" id="41_NtXJuIsq" role="19SJt6">
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJuIsr" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" />
+          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJuIss" role="19SJt6">
           <property role="19SUeA" value=" has &#10;been mitigated when driving on highway" />
@@ -749,8 +749,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="41_NtXJuIst" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuIsj" />
-      <ref role="3VeSjQ" node="41_NtXJuIso" />
+      <ref role="3VeSjP" node="41_NtXJuIsj" resolve="S_CEM_LEVEL3_TOP" />
+      <ref role="3VeSjQ" node="41_NtXJuIso" resolve="G_CEM_LEVEL3_TOP_2" />
     </node>
     <node concept="atrou" id="41_NtXJuIsu" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -760,20 +760,20 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJuIsx" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYbEE" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJuIsy" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJuIsz" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" />
+          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJuIuc" role="19SJt6" />
       </node>
     </node>
     <node concept="8gDHL" id="41_NtXJuIs$" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuIsj" />
-      <ref role="3VeSjQ" node="41_NtXJuIsu" />
+      <ref role="3VeSjP" node="41_NtXJuIsj" resolve="S_CEM_LEVEL3_TOP" />
+      <ref role="3VeSjQ" node="41_NtXJuIsu" resolve="G_CEM_LEVEL3_TOP_3" />
     </node>
     <node concept="FXfxu" id="41_NtXJuIsj" role="2vn1q5">
       <property role="TrG5h" value="S_CEM_LEVEL3_TOP" />
@@ -782,7 +782,7 @@
           <property role="19SUeA" value="All hazards from " />
         </node>
         <node concept="oXkut" id="41_NtXJuIsm" role="19SJt6">
-          <ref role="oTdVe" to="u9yl:_wUu$TYbEC" />
+          <ref role="oTdVe" to="u9yl:_wUu$TYbEC" resolve="_020_hazards_list" />
         </node>
         <node concept="19SUe$" id="41_NtXJuIsn" role="19SJt6">
           <property role="19SUeA" value=" have been addressed." />
@@ -790,8 +790,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="41_NtXJuIBB" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuIdI" />
-      <ref role="3VeSjQ" node="41_NtXJuIsj" />
+      <ref role="3VeSjP" node="41_NtXJuIdI" resolve="G_CEM_LEVEL3_TOP" />
+      <ref role="3VeSjQ" node="41_NtXJuIsj" resolve="S_CEM_LEVEL3_TOP" />
     </node>
     <node concept="atrou" id="41_NtXJv4eD" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -801,13 +801,13 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4eG" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYbEK" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4eH" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4eI" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" />
+          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4f9" role="19SJt6" />
       </node>
@@ -820,24 +820,24 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4ge" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYbF9" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4gf" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4gg" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" />
+          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4it" role="19SJt6" />
       </node>
     </node>
     <node concept="8gDHL" id="41_NtXJv4qC" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuIsj" />
-      <ref role="3VeSjQ" node="41_NtXJv4eD" />
+      <ref role="3VeSjP" node="41_NtXJuIsj" resolve="S_CEM_LEVEL3_TOP" />
+      <ref role="3VeSjQ" node="41_NtXJv4eD" resolve="G_CEM_LEVEL3_TOP_4" />
     </node>
     <node concept="8gDHL" id="41_NtXJv4tH" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuIsj" />
-      <ref role="3VeSjQ" node="41_NtXJv4gb" />
+      <ref role="3VeSjP" node="41_NtXJuIsj" resolve="S_CEM_LEVEL3_TOP" />
+      <ref role="3VeSjQ" node="41_NtXJv4gb" resolve="G_CEM_LEVEL3_TOP_5" />
     </node>
     <node concept="atrou" id="41_NtXJv4Gx" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -847,20 +847,20 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4G$" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYGOm" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYGOm" resolve="Collision at low speed with VRU" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4G_" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJv4GA" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" />
+          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJv4Hm" role="19SJt6" />
       </node>
     </node>
     <node concept="8gDHL" id="41_NtXJv4Qu" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuIsj" />
-      <ref role="3VeSjQ" node="41_NtXJv4Gx" />
+      <ref role="3VeSjP" node="41_NtXJuIsj" resolve="S_CEM_LEVEL3_TOP" />
+      <ref role="3VeSjQ" node="41_NtXJv4Gx" resolve="G_CEM_LEVEL3_TOP_6" />
     </node>
     <node concept="8gVzV" id="55oVyA0r$mc" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -870,7 +870,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="55oVyA0r$mf" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$TYGOc" />
+          <ref role="oTUVg" to="u9yl:_wUu$TYGOc" resolve="Collision at high speed with VRU" />
         </node>
         <node concept="19SUe$" id="55oVyA0r$mg" role="19SJt6">
           <property role="19SUeA" value="&#10; has been mitigated" />
@@ -878,8 +878,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="55oVyA0r$rh" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJuIsj" />
-      <ref role="3VeSjQ" node="55oVyA0r$mc" />
+      <ref role="3VeSjP" node="41_NtXJuIsj" resolve="S_CEM_LEVEL3_TOP" />
+      <ref role="3VeSjQ" node="55oVyA0r$mc" resolve="G_CEM_LEVEL3_TOP7" />
     </node>
   </node>
   <node concept="2vn7XN" id="41_NtXJv5hE">
@@ -891,7 +891,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="41_NtXJvjaa" role="19SJt6">
-          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" />
+          <ref role="oTUVg" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
         </node>
         <node concept="19SUe$" id="41_NtXJvjab" role="19SJt6">
           <property role="19SUeA" value="&#10;has been mitigated when driving &#10;on highway.            " />
@@ -1213,32 +1213,32 @@
           <property role="19SUeA" value="Argument over identified safety requirements from&#10;" />
         </node>
         <node concept="2YADz$" id="41_NtXJviZU" role="19SJt6">
-          <ref role="2YACG8" to="rd3y:41_NtXJuHgG" />
+          <ref role="2YACG8" to="rd3y:41_NtXJuHgG" resolve="_010_FSR_activation_lower_level" />
         </node>
         <node concept="19SUe$" id="41_NtXJviZV" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2YADz$" id="41_NtXJvj1L" role="19SJt6">
-          <ref role="2YACG8" to="rd3y:41_NtXJuHXI" />
+          <ref role="2YACG8" to="rd3y:41_NtXJuHXI" resolve="_010_FSR_deactivation" />
         </node>
         <node concept="19SUe$" id="41_NtXJvj1M" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2YADz$" id="41_NtXJvj5$" role="19SJt6">
-          <ref role="2YACG8" to="rd3y:41_NtXJuH0r" />
+          <ref role="2YACG8" to="rd3y:41_NtXJuH0r" resolve="_020_FSR_cem_collision_neighbouring_lane_lower_level" />
         </node>
         <node concept="19SUe$" id="41_NtXJvjjb" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2YADz$" id="41_NtXJvji9" role="19SJt6">
-          <ref role="2YACG8" to="rd3y:41_NtXJr_GH" />
+          <ref role="2YACG8" to="rd3y:41_NtXJr_GH" resolve="_020_FSR_cem_collision_same_lane" />
         </node>
         <node concept="19SUe$" id="41_NtXJvj5_" role="19SJt6" />
       </node>
     </node>
     <node concept="3VeUTF" id="41_NtXJvjdN" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJv5kp" />
-      <ref role="3VeSjQ" node="41_NtXJviME" />
+      <ref role="3VeSjP" node="41_NtXJv5kp" resolve="G_CEM_LEVEL3_COLLISION_1" />
+      <ref role="3VeSjQ" node="41_NtXJviME" resolve="S_CEM_LEVEL3_COLLISION_1" />
     </node>
     <node concept="2XiGWt" id="41_NtXJvjtH" role="2vn1q5">
       <property role="TrG5h" value="A_CEM_LEVEL3_COLLISION_1" />
@@ -1249,8 +1249,8 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="41_NtXJvjy8" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJv5kp" />
-      <ref role="3VeSjQ" node="41_NtXJvjtH" />
+      <ref role="3VeSjP" node="41_NtXJv5kp" resolve="G_CEM_LEVEL3_COLLISION_1" />
+      <ref role="3VeSjQ" node="41_NtXJvjtH" resolve="A_CEM_LEVEL3_COLLISION_1" />
     </node>
     <node concept="2XiGWt" id="41_NtXJvj$P" role="2vn1q5">
       <property role="TrG5h" value="A_CEM_LEVEL3_COLLISION_2" />
@@ -1279,12 +1279,12 @@
       </node>
     </node>
     <node concept="3VeUTF" id="41_NtXJvk0d" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJviME" />
-      <ref role="3VeSjQ" node="41_NtXJvjP0" />
+      <ref role="3VeSjP" node="41_NtXJviME" resolve="S_CEM_LEVEL3_COLLISION_1" />
+      <ref role="3VeSjQ" node="41_NtXJvjP0" resolve="G_CEM_LEVEL3_COLLISION_2" />
     </node>
     <node concept="3VeUTF" id="41_NtXJvk57" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJviME" />
-      <ref role="3VeSjQ" node="41_NtXJvjSM" />
+      <ref role="3VeSjP" node="41_NtXJviME" resolve="S_CEM_LEVEL3_COLLISION_1" />
+      <ref role="3VeSjQ" node="41_NtXJvjSM" resolve="G_CEM_LEVEL3_COLLISION_3" />
     </node>
     <node concept="2vn7WC" id="41_NtXJvka9" role="2vn1q5">
       <property role="TrG5h" value="G_CEM_LEVEL3_COLLISION_4" />
@@ -1298,7 +1298,7 @@
     <node concept="2vn7WC" id="41_NtXJvkg5" role="2vn1q5">
       <property role="TrG5h" value="G_CEM_LEVEL3_COLLISION_5" />
       <property role="2QdZbZ" value="true" />
-      <ref role="2QdZa0" node="41_NtXJvkGR" />
+      <ref role="2QdZa0" node="41_NtXJvkGR" resolve="G_CEM_LEVEL3_COLLISION_NL_1" />
       <node concept="19SGf9" id="41_NtXJvkg6" role="2vnaTY">
         <node concept="19SUe$" id="41_NtXJvkg7" role="19SJt6">
           <property role="19SUeA" value="Collision with vehicles on &#10;neighbouring lane is avoided." />
@@ -1306,16 +1306,16 @@
       </node>
     </node>
     <node concept="2vhqFZ" id="41_NtXJvkpE" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJviME" />
-      <ref role="3VeSjQ" node="41_NtXJvj$P" />
+      <ref role="3VeSjP" node="41_NtXJviME" resolve="S_CEM_LEVEL3_COLLISION_1" />
+      <ref role="3VeSjQ" node="41_NtXJvj$P" resolve="A_CEM_LEVEL3_COLLISION_2" />
     </node>
     <node concept="3VeUTF" id="41_NtXJvkuM" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJviME" />
-      <ref role="3VeSjQ" node="41_NtXJvka9" />
+      <ref role="3VeSjP" node="41_NtXJviME" resolve="S_CEM_LEVEL3_COLLISION_1" />
+      <ref role="3VeSjQ" node="41_NtXJvka9" resolve="G_CEM_LEVEL3_COLLISION_4" />
     </node>
     <node concept="3VeUTF" id="41_NtXJvk$2" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJviME" />
-      <ref role="3VeSjQ" node="41_NtXJvkg5" />
+      <ref role="3VeSjP" node="41_NtXJviME" resolve="S_CEM_LEVEL3_COLLISION_1" />
+      <ref role="3VeSjQ" node="41_NtXJvkg5" resolve="G_CEM_LEVEL3_COLLISION_5" />
     </node>
   </node>
   <node concept="2vn7XN" id="41_NtXJvkFX">
@@ -1475,7 +1475,7 @@
           <property role="19SUeA" value="Safety requirements from&#10;" />
         </node>
         <node concept="2YADz$" id="41_NtXJvkUH" role="19SJt6">
-          <ref role="2YACG8" to="rd3y:41_NtXJuH0r" />
+          <ref role="2YACG8" to="rd3y:41_NtXJuH0r" resolve="_020_FSR_cem_collision_neighbouring_lane_lower_level" />
         </node>
         <node concept="19SUe$" id="41_NtXJvkUI" role="19SJt6">
           <property role="19SUeA" value="&#10;   have been addressed." />
@@ -1483,8 +1483,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="41_NtXJvl11" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJvkGR" />
-      <ref role="3VeSjQ" node="41_NtXJvkSF" />
+      <ref role="3VeSjP" node="41_NtXJvkGR" resolve="G_CEM_LEVEL3_COLLISION_NL_1" />
+      <ref role="3VeSjQ" node="41_NtXJvkSF" resolve="S_CEM_LEVEL3_COLLISION_NL_1" />
     </node>
     <node concept="2vn7WC" id="41_NtXJvl3j" role="2vn1q5">
       <property role="TrG5h" value="G_CEM_LEVEL3_COLLISION_NL_2" />
@@ -1530,16 +1530,16 @@
       </node>
     </node>
     <node concept="3VeUTF" id="41_NtXJvllk" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJvkSF" />
-      <ref role="3VeSjQ" node="41_NtXJvl3j" />
+      <ref role="3VeSjP" node="41_NtXJvkSF" resolve="S_CEM_LEVEL3_COLLISION_NL_1" />
+      <ref role="3VeSjQ" node="41_NtXJvl3j" resolve="G_CEM_LEVEL3_COLLISION_NL_2" />
     </node>
     <node concept="3VeUTF" id="41_NtXJvloO" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJvkSF" />
-      <ref role="3VeSjQ" node="41_NtXJvl6r" />
+      <ref role="3VeSjP" node="41_NtXJvkSF" resolve="S_CEM_LEVEL3_COLLISION_NL_1" />
+      <ref role="3VeSjQ" node="41_NtXJvl6r" resolve="G_CEM_LEVEL3_COLLISION_NL_3" />
     </node>
     <node concept="3VeUTF" id="41_NtXJvlrr" role="2vhqc$">
-      <ref role="3VeSjP" node="41_NtXJvkSF" />
-      <ref role="3VeSjQ" node="41_NtXJvlh7" />
+      <ref role="3VeSjP" node="41_NtXJvkSF" resolve="S_CEM_LEVEL3_COLLISION_NL_1" />
+      <ref role="3VeSjQ" node="41_NtXJvlh7" resolve="G_CEM_LEVEL3_COLLISION_NL_4                                     " />
     </node>
   </node>
 </model>

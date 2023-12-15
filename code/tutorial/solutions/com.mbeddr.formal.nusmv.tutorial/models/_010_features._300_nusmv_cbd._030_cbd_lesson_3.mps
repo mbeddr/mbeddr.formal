@@ -249,7 +249,7 @@
               <property role="2IPVms" value="0" />
             </node>
             <node concept="3Ug1Ap" id="5WRxR_T288F" role="2H9Iav">
-              <ref role="3Ug1Ao" node="5WRxR_T287L" />
+              <ref role="3Ug1Ao" node="5WRxR_T287L" resolve="raw_value" />
             </node>
           </node>
         </node>
@@ -261,18 +261,18 @@
             <node concept="1yyYsf" id="5WRxR_T288G" role="32OYtT">
               <node concept="nE0YJ" id="5WRxR_T288U" role="2H9Iav">
                 <node concept="3Ug1Ap" id="5WRxR_T2892" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5WRxR_T287L" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287L" resolve="raw_value" />
                 </node>
                 <node concept="hx854" id="5WRxR_T2893" role="2H9Ial">
-                  <ref role="hx9HS" node="5WRxR_T287x" />
+                  <ref role="hx9HS" node="5WRxR_T287x" resolve="TRESHOLD" />
                 </node>
               </node>
               <node concept="2HbLFT" id="5WRxR_T288V" role="2H9Ial">
                 <node concept="hx854" id="5WRxR_T2894" role="2H9Ial">
-                  <ref role="hx9HS" node="5WRxR_T287x" />
+                  <ref role="hx9HS" node="5WRxR_T287x" resolve="TRESHOLD" />
                 </node>
                 <node concept="3Ug1Ap" id="5WRxR_T2895" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5WRxR_T287K" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287K" resolve="plaus_val" />
                 </node>
               </node>
             </node>
@@ -286,18 +286,18 @@
             <node concept="1yyYsf" id="5WRxR_T288H" role="32OYtT">
               <node concept="nE0YK" id="5WRxR_T288W" role="2H9Iav">
                 <node concept="3Ug1Ap" id="5WRxR_T2896" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5WRxR_T287L" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287L" resolve="raw_value" />
                 </node>
                 <node concept="hx854" id="5WRxR_T2897" role="2H9Ial">
-                  <ref role="hx9HS" node="5WRxR_T287x" />
+                  <ref role="hx9HS" node="5WRxR_T287x" resolve="TRESHOLD" />
                 </node>
               </node>
               <node concept="2HbLFT" id="5WRxR_T288X" role="2H9Ial">
                 <node concept="3Ug1Ap" id="5WRxR_T2898" role="2H9Ial">
-                  <ref role="3Ug1Ao" node="5WRxR_T287L" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287L" resolve="raw_value" />
                 </node>
                 <node concept="3Ug1Ap" id="5WRxR_T2899" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5WRxR_T287K" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287K" resolve="plaus_val" />
                 </node>
               </node>
             </node>
@@ -307,13 +307,13 @@
       <node concept="3UnI9n" id="5WRxR_T287K" role="3UnI90">
         <property role="TrG5h" value="plaus_val" />
         <node concept="1savGX" id="5WRxR_T2885" role="3UnI80">
-          <ref role="1savGW" node="5WRxR_T287w" />
+          <ref role="1savGW" node="5WRxR_T287w" resolve="data_t" />
         </node>
       </node>
       <node concept="3UnI81" id="5WRxR_T287L" role="3UnI9m">
         <property role="TrG5h" value="raw_value" />
         <node concept="1savGX" id="5WRxR_T2886" role="3UnI80">
-          <ref role="1savGW" node="5WRxR_T287w" />
+          <ref role="1savGW" node="5WRxR_T287w" resolve="data_t" />
         </node>
       </node>
     </node>
@@ -329,10 +329,10 @@
         <node concept="2SafMM" id="5WRxR_T2888" role="1yBDGv">
           <node concept="nE0YK" id="5WRxR_T288u" role="1yBIc4">
             <node concept="hx854" id="5WRxR_T288I" role="2H9Ial">
-              <ref role="hx9HS" node="5WRxR_T287x" />
+              <ref role="hx9HS" node="5WRxR_T287x" resolve="TRESHOLD" />
             </node>
             <node concept="3Ug1Ap" id="5WRxR_T288J" role="2H9Iav">
-              <ref role="3Ug1Ao" node="5WRxR_T287P" />
+              <ref role="3Ug1Ao" node="5WRxR_T287P" resolve="sensor_val" />
             </node>
           </node>
         </node>
@@ -344,16 +344,16 @@
             <node concept="1yyYsf" id="5WRxR_T288K" role="32OYtT">
               <node concept="nE0YJ" id="5WRxR_T288Y" role="2H9Iav">
                 <node concept="3Ug1Ap" id="5WRxR_T289a" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5WRxR_T287P" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287P" resolve="sensor_val" />
                 </node>
                 <node concept="hx854" id="5WRxR_T289b" role="2H9Ial">
-                  <ref role="hx9HS" node="5WRxR_T287y" />
+                  <ref role="hx9HS" node="5WRxR_T287y" resolve="BRAKING_SPEED" />
                 </node>
               </node>
               <node concept="2Sa8AP" id="5WRxR_T288Z" role="2H9Ial">
                 <node concept="2HbLFT" id="5WRxR_T289c" role="1yBIc4">
                   <node concept="3Ug1Ap" id="5WRxR_T289g" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="5WRxR_T287M" />
+                    <ref role="3Ug1Ao" node="5WRxR_T287M" resolve="brake" />
                   </node>
                   <node concept="1yCjRe" id="5WRxR_T289h" role="2H9Ial" />
                 </node>
@@ -365,7 +365,7 @@
       <node concept="3UnI81" id="5WRxR_T287P" role="3UnI9m">
         <property role="TrG5h" value="sensor_val" />
         <node concept="1savGX" id="5WRxR_T288a" role="3UnI80">
-          <ref role="1savGW" node="5WRxR_T287w" />
+          <ref role="1savGW" node="5WRxR_T287w" resolve="data_t" />
         </node>
       </node>
     </node>
@@ -380,15 +380,15 @@
             <node concept="1yyYsf" id="5WRxR_T288L" role="32OYtT">
               <node concept="nE0YJ" id="5WRxR_T2890" role="2H9Iav">
                 <node concept="3Ug1Ap" id="5WRxR_T289d" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5WRxR_T287S" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287S" resolve="raw_data" />
                 </node>
                 <node concept="hx854" id="5WRxR_T289e" role="2H9Ial">
-                  <ref role="hx9HS" node="5WRxR_T287y" />
+                  <ref role="hx9HS" node="5WRxR_T287y" resolve="BRAKING_SPEED" />
                 </node>
               </node>
               <node concept="2Sa3Mo" id="5WRxR_T2891" role="2H9Ial">
                 <node concept="3Ug1Ap" id="5WRxR_T289f" role="1yBIc4">
-                  <ref role="3Ug1Ao" node="5WRxR_T287T" />
+                  <ref role="3Ug1Ao" node="5WRxR_T287T" resolve="brake" />
                 </node>
               </node>
             </node>
@@ -403,7 +403,7 @@
               <property role="2IPVms" value="1" />
             </node>
             <node concept="3Ug1Ap" id="5WRxR_T288N" role="2H9Iav">
-              <ref role="3Ug1Ao" node="5WRxR_T287S" />
+              <ref role="3Ug1Ao" node="5WRxR_T287S" resolve="raw_data" />
             </node>
           </node>
         </node>
@@ -411,7 +411,7 @@
       <node concept="3UnI81" id="5WRxR_T287S" role="3UnI9m">
         <property role="TrG5h" value="raw_data" />
         <node concept="1savGX" id="5WRxR_T288d" role="3UnI80">
-          <ref role="1savGW" node="5WRxR_T287w" />
+          <ref role="1savGW" node="5WRxR_T287w" resolve="data_t" />
         </node>
       </node>
       <node concept="3UnI9n" id="5WRxR_T287T" role="3UnI90">
@@ -551,49 +551,49 @@
       <node concept="3Ug1AV" id="5WRxR_T287V" role="3UgYNK">
         <property role="TrG5h" value="sensor_plausibilizer" />
         <node concept="3Ug1AZ" id="5WRxR_T288j" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5WRxR_T287$" />
+          <ref role="3Ug1AY" node="5WRxR_T287$" resolve="SensorPlausibilization" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5WRxR_T287W" role="3UgYNK">
         <property role="TrG5h" value="brake_activator" />
         <node concept="3Ug1AZ" id="5WRxR_T288k" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5WRxR_T287A" />
+          <ref role="3Ug1AY" node="5WRxR_T287A" resolve="BrakeActivator" />
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T287X" role="3UgYNK">
         <node concept="3Ug1Ap" id="5WRxR_T288l" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5WRxR_T287S" />
+          <ref role="3Ug1Ao" node="5WRxR_T287S" resolve="raw_data" />
         </node>
         <node concept="3Ug1GC" id="5WRxR_T288m" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5WRxR_T287L" />
+          <ref role="3Ug1Ha" node="5WRxR_T287L" resolve="raw_value" />
           <node concept="3Ug1GJ" id="5WRxR_T288A" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T287V" />
+            <ref role="3Ug1GI" node="5WRxR_T287V" resolve="sensor_plausibilizer" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T287Y" role="3UgYNK">
         <node concept="3Ug1GC" id="5WRxR_T288n" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5WRxR_T287K" />
+          <ref role="3Ug1Ha" node="5WRxR_T287K" resolve="plaus_val" />
           <node concept="3Ug1GJ" id="5WRxR_T288B" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T287V" />
+            <ref role="3Ug1GI" node="5WRxR_T287V" resolve="sensor_plausibilizer" />
           </node>
         </node>
         <node concept="3Ug1GC" id="5WRxR_T288o" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5WRxR_T287P" />
+          <ref role="3Ug1Ha" node="5WRxR_T287P" resolve="sensor_val" />
           <node concept="3Ug1GJ" id="5WRxR_T288C" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T287W" />
+            <ref role="3Ug1GI" node="5WRxR_T287W" resolve="brake_activator" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T287Z" role="3UgYNK">
         <node concept="3Ug1GC" id="5WRxR_T288p" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5WRxR_T287M" />
+          <ref role="3Ug1Ha" node="5WRxR_T287M" resolve="brake" />
           <node concept="3Ug1GJ" id="5WRxR_T288D" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T287W" />
+            <ref role="3Ug1GI" node="5WRxR_T287W" resolve="brake_activator" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="5WRxR_T288q" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="5WRxR_T287T" />
+          <ref role="3Ug1Ao" node="5WRxR_T287T" resolve="brake" />
         </node>
       </node>
     </node>
@@ -607,18 +607,18 @@
           <property role="TrG5h" value="plaus_val" />
           <node concept="d4bQV" id="5WRxR_T28gZ" role="1zoetD">
             <node concept="32Ogvo" id="5WRxR_T28hs" role="d498F">
-              <ref role="32Ogvr" node="5WRxR_T28dn" />
+              <ref role="32Ogvr" node="5WRxR_T28dn" resolve="raw_value" />
             </node>
             <node concept="hx854" id="5WRxR_T28hG" role="d498I">
-              <ref role="hx9HS" node="5WRxR_T287x" />
+              <ref role="hx9HS" node="5WRxR_T287x" resolve="TRESHOLD" />
             </node>
             <node concept="32OYss" id="5WRxR_T28fV" role="d498Q">
               <node concept="nE0YL" id="5WRxR_T28gt" role="32OYtT">
                 <node concept="hx854" id="5WRxR_T28gV" role="2H9Ial">
-                  <ref role="hx9HS" node="5WRxR_T287x" />
+                  <ref role="hx9HS" node="5WRxR_T287x" resolve="TRESHOLD" />
                 </node>
                 <node concept="32Ogvo" id="5WRxR_T28ge" role="2H9Iav">
-                  <ref role="32Ogvr" node="5WRxR_T28dn" />
+                  <ref role="32Ogvr" node="5WRxR_T28dn" resolve="raw_value" />
                 </node>
               </node>
             </node>
@@ -632,10 +632,10 @@
     <node concept="eml0t" id="5WRxR_T28jH" role="2HcuB8">
       <property role="TrG5h" value="sensor_plausibilization_refinement" />
       <node concept="3Ug1AZ" id="5WRxR_T28kr" role="eml14">
-        <ref role="3Ug1AY" node="5WRxR_T287$" />
+        <ref role="3Ug1AY" node="5WRxR_T287$" resolve="SensorPlausibilization" />
       </node>
       <node concept="eml1q" id="5WRxR_T28ku" role="eml13">
-        <ref role="eml1l" node="5WRxR_T28ca" />
+        <ref role="eml1l" node="5WRxR_T28ca" resolve="SensorPlausibImpl" />
       </node>
     </node>
   </node>
@@ -651,7 +651,7 @@
       <node concept="3UnI81" id="5WRxR_T28Pn" role="3UnI9m">
         <property role="TrG5h" value="sensor_val" />
         <node concept="1savGX" id="5WRxR_T28Pu" role="3UnI80">
-          <ref role="1savGW" node="5WRxR_T287w" />
+          <ref role="1savGW" node="5WRxR_T287w" resolve="data_t" />
         </node>
       </node>
     </node>
@@ -665,16 +665,16 @@
             <node concept="1yyYsf" id="5WRxR_T3ikJ" role="32OYtT">
               <node concept="nE0YJ" id="5WRxR_T3jLR" role="2H9Iav">
                 <node concept="3Ug1Ap" id="5WRxR_T3ikL" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="5WRxR_T28QK" />
+                  <ref role="3Ug1Ao" node="5WRxR_T28QK" resolve="sensor_val" />
                 </node>
                 <node concept="hx854" id="5WRxR_T3ikM" role="2H9Ial">
-                  <ref role="hx9HS" node="5WRxR_T287y" />
+                  <ref role="hx9HS" node="5WRxR_T287y" resolve="BRAKING_SPEED" />
                 </node>
               </node>
               <node concept="2Sa8AP" id="5WRxR_T3ikN" role="2H9Ial">
                 <node concept="2HbLFT" id="5WRxR_T3ikO" role="1yBIc4">
                   <node concept="3Ug1Ap" id="5WRxR_T3ikP" role="2H9Iav">
-                    <ref role="3Ug1Ao" node="5WRxR_T28R1" />
+                    <ref role="3Ug1Ao" node="5WRxR_T28R1" resolve="brake" />
                   </node>
                   <node concept="1yCjRe" id="5WRxR_T3ikQ" role="2H9Ial" />
                 </node>
@@ -690,7 +690,7 @@
       <node concept="3UnI81" id="5WRxR_T28QK" role="3UnI9m">
         <property role="TrG5h" value="sensor_val" />
         <node concept="1savGX" id="5WRxR_T28QV" role="3UnI80">
-          <ref role="1savGW" node="5WRxR_T287w" />
+          <ref role="1savGW" node="5WRxR_T287w" resolve="data_t" />
         </node>
       </node>
     </node>
@@ -703,15 +703,15 @@
           <node concept="2SafMM" id="5WRxR_T3iqn" role="2H9Iav">
             <node concept="2HbLFT" id="5WRxR_T3iqo" role="1yBIc4">
               <node concept="3Ug1Ap" id="5WRxR_T3ipN" role="2H9Iav">
-                <ref role="3Ug1Ao" node="5WRxR_T3ipe" />
+                <ref role="3Ug1Ao" node="5WRxR_T3ipe" resolve="brake_cmd" />
               </node>
               <node concept="3Ug1Ap" id="5WRxR_T3iq7" role="2H9Ial">
-                <ref role="3Ug1Ao" node="5WRxR_T3ios" />
+                <ref role="3Ug1Ao" node="5WRxR_T3ios" resolve="brake_1" />
               </node>
             </node>
           </node>
           <node concept="3Ug1Ap" id="5WRxR_T3iqB" role="2H9Ial">
-            <ref role="3Ug1Ao" node="5WRxR_T3ioL" />
+            <ref role="3Ug1Ao" node="5WRxR_T3ioL" resolve="brake_2" />
           </node>
         </node>
       </node>
@@ -732,7 +732,7 @@
     <node concept="2dDAV0" id="5WRxR_T28NL" role="2HcuB8">
       <property role="TrG5h" value="BrakeActivatorImpl" />
       <node concept="3Ug1AZ" id="5WRxR_T28NS" role="2p5x1W">
-        <ref role="3Ug1AY" node="5WRxR_T287A" />
+        <ref role="3Ug1AY" node="5WRxR_T287A" resolve="BrakeActivator" />
       </node>
       <node concept="37mRI7" id="5WRxR_T28NW" role="lGtFl">
         <node concept="37mRIm" id="5WRxR_T28NX" role="37mRID">
@@ -918,80 +918,80 @@
       <node concept="3Ug1AV" id="5WRxR_T3imj" role="3UgYNK">
         <property role="TrG5h" value="mission_channel" />
         <node concept="3Ug1AZ" id="5WRxR_T3imi" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5WRxR_T28P9" />
+          <ref role="3Ug1AY" node="5WRxR_T28P9" resolve="BrakeActivator_MissionChannel" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5WRxR_T3ims" role="3UgYNK">
         <property role="TrG5h" value="safety_channel" />
         <node concept="3Ug1AZ" id="5WRxR_T3imq" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5WRxR_T28Qs" />
+          <ref role="3Ug1AY" node="5WRxR_T28Qs" resolve="BrakeActivator_SafetyChannel" />
         </node>
       </node>
       <node concept="3Ug1AV" id="5WRxR_T3iqM" role="3UgYNK">
         <property role="TrG5h" value="voter" />
         <node concept="3Ug1AZ" id="5WRxR_T3iqK" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5WRxR_T3inM" />
+          <ref role="3Ug1AY" node="5WRxR_T3inM" resolve="Voter" />
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T3ir1" role="3UgYNK">
         <node concept="3Ug1Ap" id="5WRxR_T3ira" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5WRxR_T287P" />
+          <ref role="3Ug1Ao" node="5WRxR_T287P" resolve="sensor_val" />
         </node>
         <node concept="3Ug1GC" id="5WRxR_T3ird" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5WRxR_T28Pn" />
+          <ref role="3Ug1Ha" node="5WRxR_T28Pn" resolve="sensor_val" />
           <node concept="3Ug1GJ" id="5WRxR_T3irc" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T3imj" />
+            <ref role="3Ug1GI" node="5WRxR_T3imj" resolve="mission_channel" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T3irs" role="3UgYNK">
         <node concept="3Ug1Ap" id="5WRxR_T3irD" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="5WRxR_T287P" />
+          <ref role="3Ug1Ao" node="5WRxR_T287P" resolve="sensor_val" />
         </node>
         <node concept="3Ug1GC" id="5WRxR_T3irG" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5WRxR_T28QK" />
+          <ref role="3Ug1Ha" node="5WRxR_T28QK" resolve="sensor_val" />
           <node concept="3Ug1GJ" id="5WRxR_T3irF" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T3ims" />
+            <ref role="3Ug1GI" node="5WRxR_T3ims" resolve="safety_channel" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T3irZ" role="3UgYNK">
         <node concept="3Ug1GC" id="5WRxR_T3ish" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5WRxR_T28P$" />
+          <ref role="3Ug1Ha" node="5WRxR_T28P$" resolve="brake" />
           <node concept="3Ug1GJ" id="5WRxR_T3isg" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T3imj" />
+            <ref role="3Ug1GI" node="5WRxR_T3imj" resolve="mission_channel" />
           </node>
         </node>
         <node concept="3Ug1GC" id="5WRxR_T3isl" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5WRxR_T3ios" />
+          <ref role="3Ug1Ha" node="5WRxR_T3ios" resolve="brake_1" />
           <node concept="3Ug1GJ" id="5WRxR_T3isk" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T3iqM" />
+            <ref role="3Ug1GI" node="5WRxR_T3iqM" resolve="voter" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T3iso" role="3UgYNK">
         <node concept="3Ug1GC" id="5WRxR_T3isp" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5WRxR_T28R1" />
+          <ref role="3Ug1Ha" node="5WRxR_T28R1" resolve="brake" />
           <node concept="3Ug1GJ" id="5WRxR_T3isP" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T3ims" />
+            <ref role="3Ug1GI" node="5WRxR_T3ims" resolve="safety_channel" />
           </node>
         </node>
         <node concept="3Ug1GC" id="5WRxR_T3isr" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="5WRxR_T3ioL" />
+          <ref role="3Ug1Ha" node="5WRxR_T3ioL" resolve="brake_2" />
           <node concept="3Ug1GJ" id="5WRxR_T3iss" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T3iqM" />
+            <ref role="3Ug1GI" node="5WRxR_T3iqM" resolve="voter" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="5WRxR_T3iti" role="3UgYNK">
         <node concept="3Ug1GC" id="5WRxR_T3itI" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="5WRxR_T3ipe" />
+          <ref role="3Ug1Ha" node="5WRxR_T3ipe" resolve="brake_cmd" />
           <node concept="3Ug1GJ" id="5WRxR_T3itH" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="5WRxR_T3iqM" />
+            <ref role="3Ug1GI" node="5WRxR_T3iqM" resolve="voter" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="5WRxR_T3itL" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="5WRxR_T287M" />
+          <ref role="3Ug1Ao" node="5WRxR_T287M" resolve="brake" />
         </node>
       </node>
     </node>
@@ -1005,7 +1005,7 @@
         <node concept="JlCpM" id="5WRxR_T3jdI" role="32O2ov">
           <property role="TrG5h" value="brake" />
           <node concept="2He$iJ" id="5WRxR_T3jik" role="1zoetD">
-            <ref role="2He$iI" node="5WRxR_T3jeg" />
+            <ref role="2He$iI" node="5WRxR_T3jeg" resolve="brake_internal" />
           </node>
         </node>
       </node>
@@ -1018,23 +1018,23 @@
       <node concept="2Hfkzp" id="5WRxR_T3jf2" role="2HcbjO">
         <node concept="2HfkAV" id="5WRxR_T3jfd" role="2HfkAP">
           <node concept="2He$iJ" id="5WRxR_T3jfw" role="2He$ia">
-            <ref role="2He$iI" node="5WRxR_T3jeg" />
+            <ref role="2He$iI" node="5WRxR_T3jeg" resolve="brake_internal" />
           </node>
           <node concept="1yCjT0" id="5WRxR_T3jfL" role="2He$i0" />
         </node>
         <node concept="2HevG6" id="5WRxR_T3jg5" role="2HfkAP">
           <node concept="2He$iJ" id="5WRxR_T3jgv" role="2He$ia">
-            <ref role="2He$iI" node="5WRxR_T3jeg" />
+            <ref role="2He$iI" node="5WRxR_T3jeg" resolve="brake_internal" />
           </node>
           <node concept="d4bQV" id="5WRxR_T3jh2" role="2He$i0">
             <node concept="1yCjRe" id="5WRxR_T3jhS" role="d498F" />
             <node concept="1yCjT0" id="5WRxR_T3ji6" role="d498I" />
             <node concept="nE0YJ" id="5WRxR_T3jhr" role="d498Q">
               <node concept="hx854" id="5WRxR_T3jhH" role="2H9Ial">
-                <ref role="hx9HS" node="5WRxR_T287y" />
+                <ref role="hx9HS" node="5WRxR_T287y" resolve="BRAKING_SPEED" />
               </node>
               <node concept="32Ogvo" id="5WRxR_T3jgK" role="2H9Iav">
-                <ref role="32Ogvr" node="5WRxR_T3jdw" />
+                <ref role="32Ogvr" node="5WRxR_T3jdw" resolve="sensor_val" />
               </node>
             </node>
           </node>
@@ -1048,10 +1048,10 @@
     <node concept="eml0t" id="5WRxR_T3jj9" role="2HcuB8">
       <property role="TrG5h" value="brake_activator_safety_channel_refinement" />
       <node concept="3Ug1AZ" id="5WRxR_T3jjB" role="eml14">
-        <ref role="3Ug1AY" node="5WRxR_T28Qs" />
+        <ref role="3Ug1AY" node="5WRxR_T28Qs" resolve="BrakeActivator_SafetyChannel" />
       </node>
       <node concept="eml1q" id="5WRxR_T3jjE" role="eml13">
-        <ref role="eml1l" node="5WRxR_T3jdq" />
+        <ref role="eml1l" node="5WRxR_T3jdq" resolve="BrakeActivator_SafetyChannel_Impl" />
       </node>
     </node>
   </node>

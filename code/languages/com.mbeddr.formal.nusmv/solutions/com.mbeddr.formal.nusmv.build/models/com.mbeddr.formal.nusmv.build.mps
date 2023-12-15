@@ -717,6 +717,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6oMDOnZlbo6" role="3bR37C">
+          <node concept="3bR9La" id="6oMDOnZlbo7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6hyv0iVPlFI" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5749,7 +5754,7 @@
               <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
             </node>
             <node concept="3_I8Xc" id="6Kf5KB6_shL" role="39821P">
-              <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
+              <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
             </node>
             <node concept="3_I8Xc" id="6Kf5KB6_sIG" role="39821P">
               <ref role="3_I8Xa" to="ffeo:RJsmGEig2V" resolve="mps-vcs" />

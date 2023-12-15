@@ -1012,6 +1012,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="12q9egM5YjR" role="3bR37C">
+          <node concept="3bR9La" id="12q9egM5YjS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7he_lUumABC" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -14064,7 +14069,7 @@
               <ref role="3_I8Xa" to="ffeo:6Hpa5co69Cc" resolve="mps-tooltips" />
             </node>
             <node concept="3_I8Xc" id="6Kf5KB6_shL" role="39821P">
-              <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
+              <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
             </node>
             <node concept="3_I8Xc" id="6Kf5KB6_sIG" role="39821P">
               <ref role="3_I8Xa" to="ffeo:RJsmGEig2V" resolve="mps-vcs" />
