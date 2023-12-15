@@ -5,12 +5,15 @@
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen" version="0" />
+    <use id="b67a6ca0-735e-4903-b238-4b525bddf96a" name="com.mbeddr.mpsutil.genutil" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="189537ea-2a28-44c9-91aa-a8e68b3e1e1b" name="com.mbeddr.mpsutil.blutil.genutil" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" />
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
     <import index="ltf9" ref="r:ce008aba-ba99-4e5f-b6e7-aee317483633(com.fasten.safety.ft.xfta_gen.util)" />
+    <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -89,17 +92,23 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
+      <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+        <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
@@ -115,6 +124,9 @@
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
+    </language>
+    <language id="189537ea-2a28-44c9-91aa-a8e68b3e1e1b" name="com.mbeddr.mpsutil.blutil.genutil">
+      <concept id="4213334375081881491" name="com.mbeddr.mpsutil.blutil.genutil.structure.MappingExecuteOnceExpression" flags="ng" index="10MAFp" />
     </language>
     <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen">
       <concept id="5082088080656902716" name="com.dslfoundry.plaintextgen.structure.NewlineMarker" flags="ng" index="2EixSi" />
@@ -170,6 +182,9 @@
   </registry>
   <node concept="bUwia" id="7YOjUbFpdHa">
     <property role="TrG5h" value="main" />
+    <node concept="aNPBN" id="12q9egMH$Ii" role="aQYdv">
+      <ref role="aOQi4" to="gioj:6NmtaR1SUJl" resolve="System" />
+    </node>
     <node concept="3aamgX" id="7YOjUbFq9ZN" role="3acgRq">
       <ref role="30HIoZ" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
       <node concept="b5Tf3" id="7YOjUbFq9ZR" role="1lVwrX" />
@@ -177,10 +192,24 @@
     <node concept="3lhOvk" id="7YOjUbFplmp" role="3lj3bC">
       <ref role="30HIoZ" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
       <ref role="3lhOvi" node="7YOjUbFpdHb" resolve="dummy_ft_xml" />
+      <node concept="30G5F_" id="12q9egMHmXC" role="30HLyM">
+        <node concept="3clFbS" id="12q9egMHmXD" role="2VODD2">
+          <node concept="3clFbF" id="12q9egMHqKI" role="3cqZAp">
+            <node concept="10MAFp" id="12q9egMHvcK" role="3clFbG" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3lhOvk" id="7jevvt_flwA" role="3lj3bC">
       <ref role="30HIoZ" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
       <ref role="3lhOvi" node="7jevvt_fgor" resolve="dummy" />
+      <node concept="30G5F_" id="12q9egMHvhQ" role="30HLyM">
+        <node concept="3clFbS" id="12q9egMHvhR" role="2VODD2">
+          <node concept="3clFbF" id="12q9egMHvim" role="3cqZAp">
+            <node concept="10MAFp" id="12q9egMHvil" role="3clFbG" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2pMbU2" id="7YOjUbFpdHb">

@@ -14,7 +14,7 @@
   <generators>
     <generator alias="main" namespace="com.fasten.safety.ft.xfta_gen#01" uuid="0940b90d-aea1-4339-be5b-c8084d7ead33">
       <models>
-        <modelRoot contentPath="${module}/generator" type="default">
+        <modelRoot type="default" contentPath="${module}/generator">
           <sourceRoot location="templates" />
         </modelRoot>
       </models>
@@ -26,9 +26,12 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)</dependency>
+        <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:990507d3-3527-4c54-bfe9-0ca3c9c6247a:com.dslfoundry.plaintextgen" version="0" />
+        <language slang="l:189537ea-2a28-44c9-91aa-a8e68b3e1e1b:com.mbeddr.mpsutil.blutil.genutil" version="0" />
+        <language slang="l:b67a6ca0-735e-4903-b238-4b525bddf96a:com.mbeddr.mpsutil.genutil" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -59,7 +62,10 @@
         <module reference="091b20ea-7bf0-41d6-8e6e-4460a9bd8121(com.fasten.safety.ft.xfta_gen)" version="0" />
         <module reference="0940b90d-aea1-4339-be5b-c8084d7ead33(com.fasten.safety.ft.xfta_gen#01)" version="0" />
         <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
+        <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
+        <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
