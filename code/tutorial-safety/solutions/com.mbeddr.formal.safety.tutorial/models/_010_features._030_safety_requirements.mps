@@ -53,7 +53,7 @@
       <property role="0ke_I" value="mike" />
       <node concept="2iDXIW" id="7L33HENb9x8" role="0nOlf">
         <node concept="DABN8" id="6W1kQP6Bq6h" role="DABNk">
-          <ref role="DABNb" to="xtgl:7L33HENb9vN" />
+          <ref role="DABNb" to="xtgl:7L33HENb9vN" resolve="airbag deploys unintentionally" />
         </node>
       </node>
       <node concept="19SGf9" id="7L33HENb9x2" role="1QQeG9">
@@ -68,7 +68,7 @@
       <property role="0ke_I" value="john" />
       <node concept="2iDXIW" id="7L33HENduwv" role="0nOlf">
         <node concept="DABN8" id="6W1kQP6Bq6i" role="DABNk">
-          <ref role="DABNb" to="xtgl:7L33HENb9vA" />
+          <ref role="DABNb" to="xtgl:7L33HENb9vA" resolve="airbag does not deploy" />
         </node>
       </node>
       <node concept="19SGf9" id="7L33HENduwj" role="1QQeG9">
