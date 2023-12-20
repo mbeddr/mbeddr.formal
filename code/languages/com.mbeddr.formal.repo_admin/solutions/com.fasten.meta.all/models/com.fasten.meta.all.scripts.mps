@@ -156,7 +156,7 @@
     </language>
   </registry>
   <node concept="1MOzCq" id="FwxqrAsqkE">
-    <property role="TrG5h" value="update_mpsqa_all" />
+    <property role="TrG5h" value="update_fasten_all" />
     <node concept="2HLcI0" id="FwxqrAs_6x" role="1MOzCr">
       <node concept="3clFbS" id="FwxqrAs_6z" role="3RSQip">
         <node concept="3cpWs8" id="6r0uA12M7iR" role="3cqZAp">
@@ -572,7 +572,19 @@
                 </node>
                 <node concept="TSZUe" id="yuql$cxQkE" role="2OqNvi">
                   <node concept="Xl_RD" id="yuql$cxQkF" role="25WWJ7">
-                    <property role="Xl_RC" value="\t\t\t&lt;modulePath path=\&quot;$PROJECT_DIR$/solutions/org.mpsqa.all.admin/org.mpsqa.all.admin.msd\&quot; folder=\&quot;\&quot; /&gt;" />
+                    <property role="Xl_RC" value="\t\t\t&lt;modulePath path=\&quot;$PROJECT_DIR$/solutions/com.fasten.meta.all/com.fasten.meta.all.msd\&quot; folder=\&quot;\&quot; /&gt;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="VPILObi8Rj" role="3cqZAp">
+              <node concept="2OqwBi" id="VPILObi8Rk" role="3clFbG">
+                <node concept="37vLTw" id="VPILObi8Rl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="yuql$cxEkm" resolve="lines" />
+                </node>
+                <node concept="TSZUe" id="VPILObi8Rm" role="2OqNvi">
+                  <node concept="Xl_RD" id="VPILObi8Rn" role="25WWJ7">
+                    <property role="Xl_RC" value="\t\t\t&lt;modulePath path=\&quot;$PROJECT_DIR$/solutions/com.fasten.meta.linters/com.fasten.meta.linters.msd\&quot; folder=\&quot;\&quot; /&gt;" />
                   </node>
                 </node>
               </node>
