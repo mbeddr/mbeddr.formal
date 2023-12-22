@@ -2,9 +2,6 @@
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="docx4j-diffx-11.4.9.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="docx4j-core-11.4.9.jar" />
       <sourceRoot location="docx4j-openxml-objects-11.4.9.jar" />
       <sourceRoot location="docx4j-openxml-objects-pml-11.4.9.jar" />
@@ -72,7 +69,6 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/docx4j-core-11.4.9.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-diffx-11.4.9.jar" />
     <stubModelEntry path="${module}/lib/docx4j-JAXB-MOXy-11.4.9.jar" />
     <stubModelEntry path="${module}/lib/docx4j-openxml-objects-11.4.9.jar" />
     <stubModelEntry path="${module}/lib/docx4j-openxml-objects-pml-11.4.9.jar" />
