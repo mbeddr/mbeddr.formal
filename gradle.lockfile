@@ -2,7 +2,7 @@
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
 com.jetbrains.jdk:jbr_jcef:17.0.6-b653.34=jbrLinux,jbrMac,jbrWin
-com.jetbrains:mps:2022.2=mps
+com.jetbrains:mps:2022.2.2=mps
 com.mbeddr:platform:2022.2.23910.af50257=languageLibs
 junit:junit:4.12=antLib
 org.apache.ant:ant-junit:1.10.6=antLib
