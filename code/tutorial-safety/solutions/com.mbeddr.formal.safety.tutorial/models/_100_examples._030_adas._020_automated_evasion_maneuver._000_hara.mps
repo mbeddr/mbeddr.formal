@@ -139,22 +139,22 @@
     <node concept="1XyJaU" id="5tEenuYOMfd" role="1X_0GB">
       <property role="TrG5h" value="CEM Planner" />
       <node concept="1XypPU" id="5tEenuYOMfF" role="2I3o71">
-        <ref role="SrP08" node="5tEenuYOMfd" />
-        <ref role="SrP07" node="5tEenuYOMfq" />
+        <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <ref role="SrP07" node="5tEenuYOMfq" resolve="Motion Control" />
         <node concept="Sqzvu" id="5tEenuYOMfG" role="Sq$B$">
           <property role="TrG5h" value="CEM Trajectory" />
         </node>
       </node>
       <node concept="Sq$B_" id="_wUu$TX726" role="2I3o71">
-        <ref role="SrP08" node="5tEenuYOMfd" />
-        <ref role="SrP07" node="_wUu$TX70r" />
+        <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <ref role="SrP07" node="_wUu$TX70r" resolve="Driver" />
         <node concept="Sqzvu" id="_wUu$TX727" role="Sq$B$">
           <property role="TrG5h" value="CEM Function Active" />
         </node>
       </node>
       <node concept="1XypPU" id="41_NtXJpcYK" role="2I3o71">
-        <ref role="SrP08" node="5tEenuYOMfd" />
-        <ref role="SrP07" node="41_NtXJpcXR" />
+        <ref role="SrP08" node="5tEenuYOMfd" resolve="CEM Planner" />
+        <ref role="SrP07" node="41_NtXJpcXR" resolve="Cloud-based Infos" />
         <node concept="Sqzvu" id="41_NtXJpcYL" role="Sq$B$">
           <property role="TrG5h" value="Vehicle Position" />
         </node>
@@ -366,8 +366,8 @@
     <node concept="1XyJaU" id="_wUu$TX6YW" role="1X_0GB">
       <property role="TrG5h" value="Perception" />
       <node concept="1XypPU" id="_wUu$TX6Zp" role="2I3o71">
-        <ref role="SrP08" node="_wUu$TX6YW" />
-        <ref role="SrP07" node="5tEenuYOMfd" />
+        <ref role="SrP08" node="_wUu$TX6YW" resolve="Perception" />
+        <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
         <node concept="Sqzvu" id="_wUu$TX6Zq" role="Sq$B$">
           <property role="TrG5h" value="Tracked Traffic Actors" />
         </node>
@@ -379,8 +379,8 @@
     <node concept="1XyJaU" id="_wUu$TX70r" role="1X_0GB">
       <property role="TrG5h" value="Driver" />
       <node concept="1XypPU" id="_wUu$TX70T" role="2I3o71">
-        <ref role="SrP08" node="_wUu$TX70r" />
-        <ref role="SrP07" node="5tEenuYOMfd" />
+        <ref role="SrP08" node="_wUu$TX70r" resolve="Driver" />
+        <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
         <node concept="Sqzvu" id="3I9hGreIT7k" role="Sq$B$">
           <property role="TrG5h" value="Activate CEM Function" />
         </node>
@@ -395,8 +395,8 @@
     <node concept="1XyJaU" id="_wUu$U0G1Z" role="1X_0GB">
       <property role="TrG5h" value="Sensing" />
       <node concept="1XypPU" id="_wUu$U0G24" role="2I3o71">
-        <ref role="SrP08" node="_wUu$U0G1Z" />
-        <ref role="SrP07" node="_wUu$TX6YW" />
+        <ref role="SrP08" node="_wUu$U0G1Z" resolve="Sensing" />
+        <ref role="SrP07" node="_wUu$TX6YW" resolve="Perception" />
         <node concept="Sqzvu" id="_wUu$U0G25" role="Sq$B$">
           <property role="TrG5h" value="Camera Data" />
         </node>
@@ -414,8 +414,8 @@
     <node concept="1XyJaU" id="41_NtXJpcXR" role="1X_0GB">
       <property role="TrG5h" value="Cloud-based Infos" />
       <node concept="Sq$B_" id="41_NtXJpd0r" role="2I3o71">
-        <ref role="SrP08" node="41_NtXJpcXR" />
-        <ref role="SrP07" node="5tEenuYOMfd" />
+        <ref role="SrP08" node="41_NtXJpcXR" resolve="Cloud-based Infos" />
+        <ref role="SrP07" node="5tEenuYOMfd" resolve="CEM Planner" />
         <node concept="Sqzvu" id="41_NtXJpd0s" role="Sq$B$">
           <property role="TrG5h" value="Road Construction Info" />
         </node>
@@ -427,15 +427,15 @@
   </node>
   <node concept="1E0nO6" id="5tEenuYOMgt">
     <property role="TrG5h" value="_110_unsafe_control_actions" />
-    <ref role="1E05RL" node="5tEenuYOMfb" />
+    <ref role="1E05RL" node="5tEenuYOMfb" resolve="_100_control_structure" />
     <node concept="1E0nOG" id="5tEenuYOMgu" role="1E0n_e">
-      <ref role="1E0nOH" node="5tEenuYOMfd" />
+      <ref role="1E0nOH" node="5tEenuYOMfd" resolve="CEM Planner" />
       <node concept="1E0nOJ" id="5tEenuYOMgv" role="1E0nOC">
-        <ref role="1E0n_N" node="5tEenuYOMfG" />
+        <ref role="1E0n_N" node="5tEenuYOMfG" resolve="CEM Trajectory" />
         <node concept="3f6qtF" id="6vZMoXu3Mk9" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$U7zXT" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_02" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$U7zXU" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$U7zXV" role="19SJt6">
                 <property role="19SUeA" value="when another vehicle drives parallel to the object and ego enters the other lane =&gt; collision" />
@@ -444,7 +444,7 @@
           </node>
           <node concept="1E0uc6" id="_wUu$U7zXM" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_03" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$U7zXQ" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$U7zXR" role="19SJt6">
                 <property role="19SUeA" value="when another vehicle drives parallel to the object and the other vehicle enters (comes too close to) ego lane =&gt; potential collision" />
@@ -455,7 +455,7 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkb" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGPy" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGP$" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGP_" role="19SJt6">
                 <property role="19SUeA" value="during L3 driving and in presence of an object in ego lane =&gt; potential collision / activation of emergency braking" />
@@ -466,7 +466,7 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkd" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGP1" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_04" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGP2" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGP3" role="19SJt6">
                 <property role="19SUeA" value="when computed too late can lead to the necessity of an emergency maneuver =&gt; potential collision" />
@@ -479,11 +479,11 @@
         </node>
       </node>
       <node concept="1E0nOJ" id="_wUu$U7zXZ" role="1E0nOC">
-        <ref role="1E0n_N" node="_wUu$TX727" />
+        <ref role="1E0n_N" node="_wUu$TX727" resolve="CEM Function Active" />
         <node concept="3f6qtF" id="6vZMoXu3Mkg" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$U7zY1" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_FUN_ACT_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$U7zY2" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$U7zY3" role="19SJt6">
                 <property role="19SUeA" value="during highway L3 mode, false provision leads to driver thinking CEM is executed, if obstacle =&gt; collision" />
@@ -499,13 +499,13 @@
       </node>
     </node>
     <node concept="1E0nOG" id="41_NtXJu_80" role="1E0n_e">
-      <ref role="1E0nOH" node="_wUu$TX70r" />
+      <ref role="1E0nOH" node="_wUu$TX70r" resolve="Driver" />
       <node concept="1E0nOJ" id="41_NtXJu_81" role="1E0nOC">
-        <ref role="1E0n_N" node="41_NtXJu_8J" />
+        <ref role="1E0n_N" node="41_NtXJu_8J" resolve="Deactivate CEM Function" />
         <node concept="3f6qtF" id="6vZMoXu3Mkk" role="3f6qqO">
           <node concept="1E0uc6" id="41_NtXJu_8_" role="3f6qtG">
             <property role="TrG5h" value="UCA_DRIVER_DEACTIVATE_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="41_NtXJu_8E" role="1E0uc7">
               <node concept="19SUe$" id="41_NtXJu_8F" role="19SJt6">
                 <property role="19SUeA" value="when driving on highway, if driver is not aware that L3 mode is abandoned =&gt; collision" />
@@ -520,11 +520,11 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkn" role="3f6qqO" />
       </node>
       <node concept="1E0nOJ" id="41_NtXJu_8O" role="1E0nOC">
-        <ref role="1E0n_N" node="3I9hGreIT7k" />
+        <ref role="1E0n_N" node="3I9hGreIT7k" resolve="Activate CEM Function" />
         <node concept="3f6qtF" id="6vZMoXu3Mko" role="3f6qqO">
           <node concept="1E0uc6" id="41_NtXJu_8P" role="3f6qtG">
             <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="41_NtXJu_8Q" role="1E0uc7">
               <node concept="19SUe$" id="41_NtXJu_8R" role="19SJt6">
                 <property role="19SUeA" value="when driving on highway, if driver is not aware but CEM is active =&gt; confusion of the driver possible leading to collision" />
@@ -540,16 +540,16 @@
       </node>
     </node>
     <node concept="1E0nOG" id="_wUu$TYbEo" role="1E0n_e">
-      <ref role="1E0nOH" node="_wUu$TX6YW" />
+      <ref role="1E0nOH" node="_wUu$TX6YW" resolve="Perception" />
       <node concept="1E0nOJ" id="_wUu$TYbEp" role="1E0nOC">
-        <ref role="1E0n_N" node="_wUu$TX6Zq" />
+        <ref role="1E0n_N" node="_wUu$TX6Zq" resolve="Tracked Traffic Actors" />
         <node concept="3f6qtF" id="6vZMoXu3Mks" role="3f6qqO">
           <node concept="3XErhT" id="_wUu$TYbEB" role="3f6qtG" />
         </node>
         <node concept="3f6qtF" id="6vZMoXu3Mkt" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGP4" role="3f6qtG">
             <property role="TrG5h" value="UCA_PER_TRACKING_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGP5" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGP6" role="19SJt6">
                 <property role="19SUeA" value="when driving =&gt; collision" />
@@ -561,11 +561,11 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkv" role="3f6qqO" />
       </node>
       <node concept="1E0nOJ" id="_wUu$TYGP7" role="1E0nOC">
-        <ref role="1E0n_N" node="_wUu$TYGPd" />
+        <ref role="1E0n_N" node="_wUu$TYGPd" resolve="Obstacle Detection" />
         <node concept="3f6qtF" id="6vZMoXu3Mkw" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGPg" role="3f6qtG">
             <property role="TrG5h" value="UCA_PER_OBST_DET_02" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" />
+            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGPh" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGPi" role="19SJt6">
                 <property role="19SUeA" value="- false positive / imprecise detection during driving =&gt; unnecessary evasion maneuver / &quot;chaotic&quot; behavior of EGO =&gt; potential collision with other participants" />
@@ -576,7 +576,7 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkx" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGP9" role="3f6qtG">
             <property role="TrG5h" value="UCA_PER_OBST_DET_01" />
-            <ref role="3ZrSuL" node="_wUu$TYbEK" />
+            <ref role="3ZrSuL" node="_wUu$TYbEK" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGPa" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGPb" role="19SJt6">
                 <property role="19SUeA" value="- during L3 driving =&gt; later activation of emergency braking / potential collision" />
@@ -607,108 +607,108 @@
       <property role="0lsPA" value="Hazard_Coll_00" />
       <property role="TrG5h" value="Collision with another vehicle" />
       <node concept="3Zv_sa" id="7ktuJEFhGF" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEG" />
+        <ref role="3Zv_sb" node="_wUu$TYbEG" resolve="Vehicle Damage" />
       </node>
       <node concept="3Zv_sa" id="7ktuJEFhGA" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEJ" />
+        <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
       <node concept="3h3uym" id="55oVyA0sYgI" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
-        <ref role="3h3iM1" node="55oVyA0mSKB" />
+        <ref role="3h3iM1" node="55oVyA0mSKB" resolve="OS3" />
       </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYbEE" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_01" />
       <property role="TrG5h" value="Collision with another vehicle" />
       <node concept="3Zv_sa" id="_wUu$TYbEL" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEI" />
+        <ref role="3Zv_sb" node="_wUu$TYbEI" resolve="Fatal Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYbEN" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEH" />
+        <ref role="3Zv_sb" node="_wUu$TYbEH" resolve="Severe Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYbEY" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEJ" />
+        <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYbEQ" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEG" />
+        <ref role="3Zv_sb" node="_wUu$TYbEG" resolve="Vehicle Damage" />
       </node>
       <node concept="3h3uym" id="55oVyA0sYgQ" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNL9/E3" />
-        <ref role="3h3iM1" node="55oVyA0mSKa" />
+        <ref role="3h3iM1" node="55oVyA0mSKa" resolve="OS1" />
       </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYbEK" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_02" />
       <property role="TrG5h" value="Collision with another vehicle" />
       <node concept="3Zv_sa" id="_wUu$TYbET" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEH" />
+        <ref role="3Zv_sb" node="_wUu$TYbEH" resolve="Severe Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYbF1" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEJ" />
+        <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYbF7" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEG" />
+        <ref role="3Zv_sb" node="_wUu$TYbEG" resolve="Vehicle Damage" />
       </node>
       <node concept="3h3uym" id="55oVyA0sYgS" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
-        <ref role="3h3iM1" node="55oVyA0mSKu" />
+        <ref role="3h3iM1" node="55oVyA0mSKu" resolve="OS2" />
       </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYbF9" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_03" />
       <property role="TrG5h" value="Collision with another vehicle" />
       <node concept="3Zv_sa" id="_wUu$TYbFb" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEJ" />
+        <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYbFd" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEG" />
+        <ref role="3Zv_sb" node="_wUu$TYbEG" resolve="Vehicle Damage" />
       </node>
       <node concept="3h3uym" id="55oVyA0sYgV" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
         <property role="3h3uzF" value="24PsEXFbNLp/C2" />
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
-        <ref role="3h3iM1" node="55oVyA0sYg4" />
+        <ref role="3h3iM1" node="55oVyA0sYg4" resolve="OS6" />
       </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYGOc" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_04" />
       <property role="TrG5h" value="Collision at high speed with VRU" />
       <node concept="3Zv_sa" id="_wUu$TYGOf" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEI" />
+        <ref role="3Zv_sb" node="_wUu$TYbEI" resolve="Fatal Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYGOh" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEH" />
+        <ref role="3Zv_sb" node="_wUu$TYbEH" resolve="Severe Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYGOk" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEJ" />
+        <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
       <node concept="3h3uym" id="55oVyA0sYgY" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNLe/E4" />
-        <ref role="3h3iM1" node="55oVyA0sYfJ" />
+        <ref role="3h3iM1" node="55oVyA0sYfJ" resolve="OS5" />
       </node>
     </node>
     <node concept="1a6Z8w" id="_wUu$TYGOm" role="8gIbH">
       <property role="0lsPA" value="Hazard_Coll_05" />
       <property role="TrG5h" value="Collision at low speed with VRU" />
       <node concept="3Zv_sa" id="_wUu$TYGOo" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEH" />
+        <ref role="3Zv_sb" node="_wUu$TYbEH" resolve="Severe Injury" />
       </node>
       <node concept="3Zv_sa" id="_wUu$TYGOp" role="3Zv_sA">
-        <ref role="3Zv_sb" node="_wUu$TYbEJ" />
+        <ref role="3Zv_sb" node="_wUu$TYbEJ" resolve="Light Injury" />
       </node>
       <node concept="3h3uym" id="55oVyA0sYh1" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLt/C3" />
         <property role="3h3uzC" value="24PsEXFbNL5/E2" />
-        <ref role="3h3iM1" node="55oVyA0sYft" />
+        <ref role="3h3iM1" node="55oVyA0sYft" resolve="OS4" />
       </node>
     </node>
   </node>

@@ -165,7 +165,7 @@
   <node concept="1_1swa" id="2mjHtwTu97P">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="FASTEN_Safety_Tutorial_Documentation" />
-    <ref role="G9hjw" node="2mjHtwTu9dY" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="2mjHtwTu9dj" role="1_0VJ0">
       <property role="TrG5h" value="Overview" />
       <property role="1_0VJr" value="Overview" />
@@ -338,43 +338,43 @@
       <node concept="3xmJbL" id="3slobAdyVWQ" role="1_0VJ0" />
       <node concept="$CzcT" id="3slobAdyWdQ" role="1_0VJ0">
         <node concept="1_0j5j" id="2rbLpQ_Woj1" role="$CzcU">
-          <ref role="1_0j5g" node="2rbLpQ_WohI" />
+          <ref role="1_0j5g" node="2rbLpQ_WohI" resolve="_010_requirements_modeling" />
         </node>
       </node>
       <node concept="$CzcT" id="4U3OABz7Y$F" role="1_0VJ0">
         <node concept="1_0j5j" id="4U3OABz7Y_X" role="$CzcU">
-          <ref role="1_0j5g" node="4U3OABz7QoU" />
+          <ref role="1_0j5g" node="4U3OABz7QoU" resolve="_020_hazards_and_risks_analysis" />
         </node>
       </node>
       <node concept="$CzcT" id="1LeaOOd9ZaW" role="1_0VJ0">
         <node concept="1_0j5j" id="1LeaOOd9Zca" role="$CzcU">
-          <ref role="1_0j5g" node="3I9hGreJfoL" />
+          <ref role="1_0j5g" node="3I9hGreJfoL" resolve="_030_safety_engineering_models" />
         </node>
       </node>
       <node concept="$CzcT" id="1LeaOOd9Zdp" role="1_0VJ0">
         <node concept="1_0j5j" id="1LeaOOd9ZeD" role="$CzcU">
-          <ref role="1_0j5g" node="4U3OABz7YA0" />
+          <ref role="1_0j5g" node="4U3OABz7YA0" resolve="_050_assurance_models" />
         </node>
       </node>
     </node>
     <node concept="1_0j5j" id="2rbLpQ_WoiY" role="1DXQ57">
-      <ref role="1_0j5g" node="2rbLpQ_WohI" />
+      <ref role="1_0j5g" node="2rbLpQ_WohI" resolve="_010_requirements_modeling" />
     </node>
     <node concept="1_0j5j" id="4U3OABz7Y_T" role="1DXQ57">
-      <ref role="1_0j5g" node="4U3OABz7QoU" />
+      <ref role="1_0j5g" node="4U3OABz7QoU" resolve="_020_hazards_and_risks_analysis" />
     </node>
     <node concept="1_0j5j" id="1LeaOOd9Z9y" role="1DXQ57">
-      <ref role="1_0j5g" node="3I9hGreJfoL" />
+      <ref role="1_0j5g" node="3I9hGreJfoL" resolve="_030_safety_engineering_models" />
     </node>
     <node concept="1_0j5j" id="1LeaOOd9Z9G" role="1DXQ57">
-      <ref role="1_0j5g" node="4U3OABz7YA0" />
+      <ref role="1_0j5g" node="4U3OABz7YA0" resolve="_050_assurance_models" />
     </node>
   </node>
   <node concept="1_1swa" id="2rbLpQ_WohI">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_010_requirements_modeling" />
     <property role="3GE5qa" value="features" />
-    <ref role="G9hjw" node="2mjHtwTu9dY" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="4U3OABz7KUi" role="1_0VJ0">
       <property role="TrG5h" value="requirements" />
       <property role="1_0VJr" value="Requirements Specification" />
@@ -401,7 +401,7 @@
           <node concept="2bctqb" id="1LeaOOdakEs" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakEu" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakEG" role="2NCMaf">
-              <ref role="2NCMaa" to="c3og:5FhZjqTMMrD" />
+              <ref role="2NCMaa" to="c3og:5FhZjqTMMrD" resolve="_010_simple_text_requirements" />
             </node>
           </node>
         </node>
@@ -429,7 +429,7 @@
           <node concept="2bctqb" id="1LeaOOdakF8" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakFa" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakFr" role="2NCMaf">
-              <ref role="2NCMaa" to="c3og:5FhZjqTNhvP" />
+              <ref role="2NCMaa" to="c3og:5FhZjqTNhvP" resolve="_020_text_tl_boilerplates_specs" />
             </node>
           </node>
         </node>
@@ -457,7 +457,7 @@
           <node concept="2bctqb" id="1LeaOOdakFZ" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakG1" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakGr" role="2NCMaf">
-              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" />
+              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
             </node>
           </node>
         </node>
@@ -471,10 +471,10 @@
         <node concept="2SaynC" id="4U3OABz7LiY" role="1_0VJ0">
           <property role="TrG5h" value="checking_requirements_consistency" />
           <property role="2Sbq$t" value="true" />
-          <ref role="1wz7Nk" to="c3og:5FhZjqTO18E" />
+          <ref role="1wz7Nk" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
           <node concept="2Sb_l4" id="4U3OABz7Ljn" role="2SbwM5">
             <property role="2Sb_kV" value="checking_tl_formal_requirements.png" />
-            <ref role="2Sb_kU" node="9TY4XGZias" />
+            <ref role="2Sb_kU" node="9TY4XGZias" resolve="img" />
           </node>
           <node concept="OjmMv" id="4U3OABz7Lj2" role="2SaI5j">
             <node concept="19SGf9" id="4U3OABz7Lj3" role="OjmMu">
@@ -509,7 +509,7 @@
           <node concept="2bctqb" id="1LeaOOdakGZ" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakH1" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakHi" role="2NCMaf">
-              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" />
+              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
             </node>
           </node>
         </node>
@@ -520,7 +520,7 @@
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_020_hazards_and_risks_analysis" />
     <property role="3GE5qa" value="features" />
-    <ref role="G9hjw" node="2mjHtwTu9dY" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="4U3OABz7QoV" role="1_0VJ0">
       <property role="TrG5h" value="hara" />
       <property role="1_0VJr" value="Hazards and Risks Analysis" />
@@ -578,10 +578,10 @@
           <node concept="2SaynC" id="5cnt3YR8YeN" role="1_0VJ0">
             <property role="TrG5h" value="Control_Structure" />
             <property role="2Sbq$t" value="true" />
-            <ref role="1wz7Nk" to="xtgl:1L4MZBxVgwF" />
+            <ref role="1wz7Nk" to="xtgl:1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
             <node concept="2Sb_l4" id="5cnt3YR8Yfa" role="2SbwM5">
               <property role="2Sb_kV" value="stpa_control_structure_explanations.png" />
-              <ref role="2Sb_kU" node="9TY4XGZias" />
+              <ref role="2Sb_kU" node="9TY4XGZias" resolve="img" />
             </node>
             <node concept="OjmMv" id="5cnt3YR8YeR" role="2SaI5j">
               <node concept="19SGf9" id="5cnt3YR8YeS" role="OjmMu">
@@ -596,7 +596,7 @@
             <property role="3z_lpW" value="mbeddr" />
             <node concept="2NCZwO" id="4U3OABz7Qp1" role="3z_lpI">
               <node concept="2NCMab" id="4U3OABz7YyZ" role="2NCMaf">
-                <ref role="2NCMaa" to="xtgl:1L4MZBxVgwF" />
+                <ref role="2NCMaa" to="xtgl:1L4MZBxVgwF" resolve="_010_airbag_controller_functional_control_structure" />
               </node>
             </node>
           </node>
@@ -623,7 +623,7 @@
             <node concept="2bctqb" id="1LeaOOdakHW" role="3z_lpT" />
             <node concept="2NCZwO" id="1LeaOOdakHY" role="3z_lpI">
               <node concept="2NCMab" id="1LeaOOdakIf" role="2NCMaf">
-                <ref role="2NCMaa" to="xtgl:1L4MZBxVgKw" />
+                <ref role="2NCMaa" to="xtgl:1L4MZBxVgKw" resolve="_020_airbag_unsafe_control_analysis" />
               </node>
             </node>
           </node>
@@ -652,7 +652,7 @@
           <node concept="2bctqb" id="1LeaOOdakIy" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakI$" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakIX" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:7Jm8RM1zooG" />
+              <ref role="2NCMaa" to="xtgl:7Jm8RM1zooG" resolve="_100_losses" />
             </node>
           </node>
         </node>
@@ -669,7 +669,7 @@
           <node concept="2bctqb" id="1LeaOOdakJm" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakJn" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakJM" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:1LvcKAYEWJH" />
+              <ref role="2NCMaa" to="xtgl:1LvcKAYEWJH" resolve="_110_operational_situations" />
             </node>
           </node>
         </node>
@@ -686,7 +686,7 @@
           <node concept="2bctqb" id="1LeaOOdakKf" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakKg" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakLb" role="2NCMaf">
-              <ref role="2NCMaa" to="xtgl:1L4MZBxVFrv" />
+              <ref role="2NCMaa" to="xtgl:1L4MZBxVFrv" resolve="_110_airbag_hazards" />
             </node>
           </node>
         </node>
@@ -700,7 +700,7 @@
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_050_assurance_models" />
     <property role="3GE5qa" value="features" />
-    <ref role="G9hjw" node="2mjHtwTu9dY" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="4U3OABz7YA1" role="1_0VJ0">
       <property role="TrG5h" value="assurance" />
       <property role="1_0VJr" value="Structured Assurance Cases" />
@@ -733,7 +733,7 @@
           <node concept="2bctqb" id="1LeaOOdal3o" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdal3q" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdal3F" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:7L33HENduwy" />
+              <ref role="2NCMaa" to="io0z:7L33HENduwy" resolve="_010_plain_text_gsn" />
             </node>
           </node>
         </node>
@@ -760,7 +760,7 @@
           <node concept="2bctqb" id="75La0fJ_mRp" role="3z_lpT" />
           <node concept="2NCZwO" id="75La0fJ_mRq" role="3z_lpI">
             <node concept="2NCMab" id="75La0fJ_mT7" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:2ojFC2JbceD" />
+              <ref role="2NCMaa" to="io0z:2ojFC2JbceD" resolve="_011_plain_text_cae" />
             </node>
           </node>
         </node>
@@ -803,7 +803,7 @@
           <node concept="2bctqb" id="1LeaOOdal7R" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdal7T" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdal8i" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:3jaLROLvqKj" />
+              <ref role="2NCMaa" to="io0z:3jaLROLvqKj" resolve="_020_patterns_instantiated_from_library" />
             </node>
           </node>
         </node>
@@ -847,7 +847,7 @@
           <node concept="2bctqb" id="64FnLWQhGgY" role="3z_lpT" />
           <node concept="2NCZwO" id="64FnLWQhGgZ" role="3z_lpI">
             <node concept="2NCMab" id="64FnLWQhGl8" role="2NCMaf">
-              <ref role="2NCMaa" to="gc7o:x1FXqHGAV" />
+              <ref role="2NCMaa" to="gc7o:x1FXqHGAV" resolve="Process Level Reusable Entities" />
             </node>
           </node>
         </node>
@@ -870,7 +870,7 @@
           <node concept="2bctqb" id="64FnLWQhGh6" role="3z_lpT" />
           <node concept="2NCZwO" id="64FnLWQhGh7" role="3z_lpI">
             <node concept="2NCMab" id="64FnLWQhGh8" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:3jaLROLvqKj" />
+              <ref role="2NCMaa" to="io0z:3jaLROLvqKj" resolve="_020_patterns_instantiated_from_library" />
             </node>
           </node>
         </node>
@@ -898,7 +898,7 @@
           <node concept="2bctqb" id="1LeaOOdal9O" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdal9Q" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdala7" role="2NCMaf">
-              <ref role="2NCMaa" to="xumq:1$M4_qbIaTb" />
+              <ref role="2NCMaa" to="xumq:1$M4_qbIaTb" resolve="_100_toplevel_safety_arg_pattern" />
             </node>
           </node>
         </node>
@@ -938,7 +938,7 @@
           <node concept="2bctqb" id="1LeaOOdaldG" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdaldI" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdale7" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:1TD_kqsR8Z6" />
+              <ref role="2NCMaa" to="io0z:1TD_kqsR8Z6" resolve="_050_linking_solutions_to_external_documents" />
             </node>
           </node>
         </node>
@@ -985,7 +985,7 @@
           <node concept="2bctqb" id="1LeaOOdalhu" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdalhw" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdalhT" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:3I9hGreIU2l" />
+              <ref role="2NCMaa" to="io0z:3I9hGreIU2l" resolve="_060_linking_solutions_to_external_tools" />
             </node>
           </node>
         </node>
@@ -1019,7 +1019,7 @@
           <node concept="2bctqb" id="1LeaOOdaljp" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdaljr" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdaljJ" role="2NCMaf">
-              <ref role="2NCMaa" to="io0z:4eD_5l3mJSY" />
+              <ref role="2NCMaa" to="io0z:4eD_5l3mJSY" resolve="_030_confidence_dempster_schafer_evidence_annotated_with_confidence" />
             </node>
           </node>
         </node>
@@ -1042,7 +1042,7 @@
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_030_safety_engineering_models" />
     <property role="3GE5qa" value="features" />
-    <ref role="G9hjw" node="2mjHtwTu9dY" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
     <node concept="1mvXsy" id="3I9hGreJfoM" role="1_0VJ0">
       <property role="TrG5h" value="safety_engineering_models" />
       <property role="1_0VJr" value="Safety Engineering Models" />
@@ -1076,7 +1076,7 @@
           <node concept="2bctqb" id="1LeaOOdakM1" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakM3" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakMw" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:4eD_5l3mJwO" />
+              <ref role="2NCMaa" to="688z:4eD_5l3mJwO" resolve="_020_failure_modes_of_components" />
             </node>
           </node>
         </node>
@@ -1100,7 +1100,7 @@
           <node concept="2bctqb" id="1LeaOOdakNn" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakNp" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakNU" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:4eD_5l3mJyA" />
+              <ref role="2NCMaa" to="688z:4eD_5l3mJyA" resolve="_030_failure_effects_on_system" />
             </node>
           </node>
         </node>
@@ -1124,7 +1124,7 @@
           <node concept="2bctqb" id="1LeaOOdakOT" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakOV" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakPw" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:4eD_5l3mJzG" />
+              <ref role="2NCMaa" to="688z:4eD_5l3mJzG" resolve="_040_dfmea" />
             </node>
           </node>
         </node>
@@ -1162,7 +1162,7 @@
           <node concept="2bctqb" id="1LeaOOdakQz" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakQ_" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakRa" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:1TeaL8RdKfy" />
+              <ref role="2NCMaa" to="688z:1TeaL8RdKfy" resolve="_210_failure_modes" />
             </node>
           </node>
         </node>
@@ -1186,7 +1186,7 @@
           <node concept="2bctqb" id="1LeaOOdakSh" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakSj" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakSW" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:4eD_5l3mJEf" />
+              <ref role="2NCMaa" to="688z:4eD_5l3mJEf" resolve="_220_IFMEAs" />
             </node>
           </node>
         </node>
@@ -1220,7 +1220,7 @@
           <node concept="2bctqb" id="1LeaOOdakZX" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakZZ" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdal0G" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:1TeaL8RdujH" />
+              <ref role="2NCMaa" to="688z:1TeaL8RdujH" resolve="_200_arch" />
             </node>
           </node>
         </node>
@@ -1233,15 +1233,15 @@
     <property role="WqcPg" value="FASTEN.Safe" />
     <node concept="1TaS0h" id="1LeaOOd9Zli" role="30GjaH" />
     <node concept="1_0j5j" id="1LeaOOd9Zlf" role="30Gjbj">
-      <ref role="1_0j5g" node="2mjHtwTu97P" />
+      <ref role="1_0j5g" node="2mjHtwTu97P" resolve="FASTEN_Safety_Tutorial_Documentation" />
     </node>
     <node concept="2SbEIf" id="1LeaOOd9Zll" role="30Gjbg">
       <property role="2SbEId" value="img" />
-      <ref role="2SbEIe" node="9TY4XGZias" />
+      <ref role="2SbEIe" node="9TY4XGZias" resolve="img" />
     </node>
     <node concept="2SbEIf" id="1LeaOOd9Zlq" role="30Gjbg">
       <property role="2SbEId" value="tmp" />
-      <ref role="2SbEIe" node="2mjHtwTu9e1" />
+      <ref role="2SbEIe" node="2mjHtwTu9e1" resolve="tmp" />
     </node>
     <node concept="1_05Lf" id="1LeaOOda0Mx" role="30Gjbi" />
   </node>

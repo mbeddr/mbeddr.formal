@@ -124,7 +124,7 @@
         </node>
       </node>
       <node concept="1vGDkK" id="1r1mR59uoPJ" role="2U2l5M">
-        <ref role="1vGDkN" node="1r1mR59sjN5" />
+        <ref role="1vGDkN" node="1r1mR59sjN5" resolve="Josh Manager" />
       </node>
     </node>
     <node concept="37mRI7" id="1r1mR59sWSw" role="lGtFl">
@@ -213,12 +213,12 @@
         </node>
       </node>
       <node concept="1vGDkK" id="1r1mR59tIGf" role="2U2l5M">
-        <ref role="1vGDkN" node="1r1mR59sWS3" />
+        <ref role="1vGDkN" node="1r1mR59sWS3" resolve="Mike Johnson" />
       </node>
     </node>
     <node concept="3VeUTF" id="1r1mR59uoAr" role="2vhqc$">
-      <ref role="3VeSjP" node="1r1mR59s2rI" />
-      <ref role="3VeSjQ" node="1r1mR59to2k" />
+      <ref role="3VeSjP" node="1r1mR59s2rI" resolve="G01" />
+      <ref role="3VeSjQ" node="1r1mR59to2k" resolve="G02" />
     </node>
     <node concept="2vn7WC" id="1r1mR59uoAG" role="2vn1q5">
       <property role="TrG5h" value="G03" />
@@ -228,7 +228,7 @@
         </node>
       </node>
       <node concept="1vGDkK" id="1r1mR59uoAJ" role="2U2l5M">
-        <ref role="1vGDkN" node="1r1mR59sWS3" />
+        <ref role="1vGDkN" node="1r1mR59sWS3" resolve="Mike Johnson" />
       </node>
     </node>
     <node concept="2vmxSQ" id="1r1mR59uoCZ" role="2vn1q5">
@@ -239,16 +239,16 @@
         </node>
       </node>
       <node concept="1vGDkK" id="1r1mR59uoFg" role="2U2l5M">
-        <ref role="1vGDkN" node="1r1mR59sWPu" />
+        <ref role="1vGDkN" node="1r1mR59sWPu" resolve="System Guy" />
       </node>
     </node>
     <node concept="2vhqFZ" id="1r1mR59uoEW" role="2vhqc$">
-      <ref role="3VeSjP" node="1r1mR59s2rI" />
-      <ref role="3VeSjQ" node="1r1mR59uoCZ" />
+      <ref role="3VeSjP" node="1r1mR59s2rI" resolve="G01" />
+      <ref role="3VeSjQ" node="1r1mR59uoCZ" resolve="C01" />
     </node>
     <node concept="3VeUTF" id="1r1mR59uoFI" role="2vhqc$">
-      <ref role="3VeSjP" node="1r1mR59s2rI" />
-      <ref role="3VeSjQ" node="1r1mR59uoAG" />
+      <ref role="3VeSjP" node="1r1mR59s2rI" resolve="G01" />
+      <ref role="3VeSjQ" node="1r1mR59uoAG" resolve="G03" />
     </node>
     <node concept="2vn7WC" id="1r1mR59uoHQ" role="2vn1q5">
       <property role="TrG5h" value="G04" />
@@ -258,12 +258,12 @@
         </node>
       </node>
       <node concept="1vGDkK" id="1r1mR59uoM7" role="2U2l5M">
-        <ref role="1vGDkN" node="1r1mR59sWS1" />
+        <ref role="1vGDkN" node="1r1mR59sWS1" resolve="Lucky Luke" />
       </node>
     </node>
     <node concept="3VeUTF" id="1r1mR59uoK4" role="2vhqc$">
-      <ref role="3VeSjP" node="1r1mR59s2rI" />
-      <ref role="3VeSjQ" node="1r1mR59uoHQ" />
+      <ref role="3VeSjP" node="1r1mR59s2rI" resolve="G01" />
+      <ref role="3VeSjQ" node="1r1mR59uoHQ" resolve="G04" />
     </node>
     <node concept="26s6xy" id="1r1mR59uoM_" role="2WHcHu">
       <property role="2Wzj7u" value="1639692281461329473" />
@@ -272,17 +272,17 @@
   <node concept="UfqZI" id="1r1mR59s2s1">
     <property role="TrG5h" value="_011_implanatable_medical_devices_system_team" />
     <property role="3GE5qa" value="organisation" />
-    <ref role="UfgC$" node="1r1mR59sjN4" />
+    <ref role="UfgC$" node="1r1mR59sjN4" resolve="_010_implanatable_medical_devices_team" />
     <node concept="UfqZF" id="1r1mR59sWPu" role="UfqW8">
       <property role="UfqYJ" value="0023" />
       <property role="1vG6uU" value="System" />
       <property role="1vG6ux" value="Guy" />
       <property role="UfqZG" value="sys_guy@a.com" />
       <node concept="1vGMo9" id="1r1mR59sWRp" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWPj" />
+        <ref role="1vGMo8" node="1r1mR59sWPj" resolve="system engineer" />
       </node>
       <node concept="1vGMo9" id="1r1mR59udUo" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWPn" />
+        <ref role="1vGMo8" node="1r1mR59sWPn" resolve="hardware engineer" />
       </node>
     </node>
     <node concept="UfqZF" id="1r1mR59sWRB" role="UfqW8">
@@ -291,7 +291,7 @@
       <property role="1vG6ux" value="Guy" />
       <property role="UfqZG" value="hw_guy@a.com" />
       <node concept="1vGMo9" id="1r1mR59sWRC" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWPn" />
+        <ref role="1vGMo8" node="1r1mR59sWPn" resolve="hardware engineer" />
       </node>
     </node>
     <node concept="1vGMor" id="1r1mR59sWPj" role="1vGMr$">
@@ -316,21 +316,21 @@
       <property role="1vG6ux" value="Manager" />
       <property role="UfqZG" value="josh_manager@a.com" />
       <node concept="1vGMo9" id="1r1mR59sWSe" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWRP" />
+        <ref role="1vGMo8" node="1r1mR59sWRP" resolve="project manager" />
       </node>
     </node>
   </node>
   <node concept="UfqZI" id="1r1mR59sWS0">
     <property role="TrG5h" value="_011_implanatable_medical_devices_safety_team" />
     <property role="3GE5qa" value="organisation" />
-    <ref role="UfgC$" node="1r1mR59sjN4" />
+    <ref role="UfgC$" node="1r1mR59sjN4" resolve="_010_implanatable_medical_devices_team" />
     <node concept="UfqZF" id="1r1mR59sWS1" role="UfqW8">
       <property role="UfqYJ" value="0023" />
       <property role="1vG6uU" value="Lucky" />
       <property role="1vG6ux" value="Luke" />
       <property role="UfqZG" value="luke@a.com" />
       <node concept="1vGMo9" id="1r1mR59sWS2" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWS5" />
+        <ref role="1vGMo8" node="1r1mR59sWS5" resolve="safety manager" />
       </node>
     </node>
     <node concept="UfqZF" id="1r1mR59sWS3" role="UfqW8">
@@ -339,7 +339,7 @@
       <property role="1vG6ux" value="Johnson" />
       <property role="UfqZG" value="johnson@a.com" />
       <node concept="1vGMo9" id="1r1mR59sWS4" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWS6" />
+        <ref role="1vGMo8" node="1r1mR59sWS6" resolve="safety engineer" />
       </node>
     </node>
     <node concept="1vGMor" id="1r1mR59sWS5" role="1vGMr$">
@@ -352,14 +352,14 @@
   <node concept="UfqZI" id="1r1mR59sWS7">
     <property role="TrG5h" value="_011_implanatable_medical_devices_software_team" />
     <property role="3GE5qa" value="organisation" />
-    <ref role="UfgC$" node="1r1mR59sjN4" />
+    <ref role="UfgC$" node="1r1mR59sjN4" resolve="_010_implanatable_medical_devices_team" />
     <node concept="UfqZF" id="1r1mR59sWS8" role="UfqW8">
       <property role="UfqYJ" value="0023" />
       <property role="1vG6uU" value="Software" />
       <property role="1vG6ux" value="Guy" />
       <property role="UfqZG" value="sw_guy@a.com" />
       <node concept="1vGMo9" id="1r1mR59sWS9" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWSc" />
+        <ref role="1vGMo8" node="1r1mR59sWSc" resolve="software engineer" />
       </node>
     </node>
     <node concept="UfqZF" id="1r1mR59sWSa" role="UfqW8">
@@ -368,7 +368,7 @@
       <property role="1vG6ux" value="Guy" />
       <property role="UfqZG" value="test_guy@a.com" />
       <node concept="1vGMo9" id="1r1mR59sWSb" role="1vGMrz">
-        <ref role="1vGMo8" node="1r1mR59sWSd" />
+        <ref role="1vGMo8" node="1r1mR59sWSd" resolve="test engineer" />
       </node>
     </node>
     <node concept="1vGMor" id="1r1mR59sWSc" role="1vGMr$">
