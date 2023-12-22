@@ -2,12 +2,42 @@
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="docx4j-JAXB-MOXy-11.4.5.jar" />
-      <sourceRoot location="org.eclipse.persistence.asm-9.1.0.jar" />
-      <sourceRoot location="org.eclipse.persistence.core-3.0.2.jar" />
-      <sourceRoot location="org.eclipse.persistence.moxy-3.0.2.jar" />
+      <sourceRoot location="docx4j-diffx-11.4.9.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="docx4j-core-11.4.9.jar" />
+      <sourceRoot location="docx4j-openxml-objects-11.4.9.jar" />
+      <sourceRoot location="docx4j-openxml-objects-pml-11.4.9.jar" />
+      <sourceRoot location="docx4j-openxml-objects-sml-11.4.9.jar" />
+      <sourceRoot location="dependencies/antlr-2.7.7.jar" />
+      <sourceRoot location="dependencies/antlr-runtime-3.5.2.jar" />
+      <sourceRoot location="dependencies/checker-qual-2.8.1.jar" />
+      <sourceRoot location="dependencies/commons-codec-1.12.jar" />
+      <sourceRoot location="dependencies/commons-compress-1.21.jar" />
+      <sourceRoot location="dependencies/commons-io-2.7.jar" />
+      <sourceRoot location="dependencies/commons-lang3-3.9.jar" />
+      <sourceRoot location="dependencies/error_prone_annotations-2.3.3.jar" />
+      <sourceRoot location="dependencies/fontbox-2.0.24.jar" />
+      <sourceRoot location="dependencies/jakarta.activation-2.0.1.jar" />
+      <sourceRoot location="dependencies/jakarta.xml.bind-api-3.0.1.jar" />
+      <sourceRoot location="dependencies/jaxb-svg11-11.4.0.jar" />
+      <sourceRoot location="dependencies/jcl-over-slf4j-2.0.0-alpha5.jar" />
+      <sourceRoot location="dependencies/mbassador-1.3.2.jar" />
+      <sourceRoot location="dependencies/qdox-1.12.jar" />
+      <sourceRoot location="dependencies/slf4j-api-2.0.0-alpha6.jar" />
+      <sourceRoot location="dependencies/stringtemplate-3.2.1.jar" />
+      <sourceRoot location="dependencies/wmf2svg-0.9.8.jar" />
+      <sourceRoot location="dependencies/xalan-interpretive-11.0.0.jar" />
+      <sourceRoot location="dependencies/xalan-serializer-11.0.0.jar" />
+      <sourceRoot location="dependencies/xmlgraphics-commons-2.7.jar" />
+      <sourceRoot location="docx4j-JAXB-MOXy-11.4.9.jar" />
+      <sourceRoot location="dependencies/org.eclipse.persistence.asm-9.1.0.jar" />
+      <sourceRoot location="dependencies/org.eclipse.persistence.core-3.0.2.jar" />
+      <sourceRoot location="dependencies/org.eclipse.persistence.moxy-3.0.2.jar" />
+      <sourceRoot location="dependencies/jakarta.mail-2.0.1.jar" />
+      <sourceRoot location="docx4j-diffx-11.4.9.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib/dependencies" type="java_classes">
       <sourceRoot location="antlr-2.7.7.jar" />
       <sourceRoot location="antlr-runtime-3.5.2.jar" />
       <sourceRoot location="checker-qual-2.8.1.jar" />
@@ -15,11 +45,6 @@
       <sourceRoot location="commons-compress-1.21.jar" />
       <sourceRoot location="commons-io-2.7.jar" />
       <sourceRoot location="commons-lang3-3.9.jar" />
-      <sourceRoot location="docx4j-core-11.4.5.jar" />
-      <sourceRoot location="docx4j-JAXB-MOXy-11.4.5.jar" />
-      <sourceRoot location="docx4j-openxml-objects-11.4.5.jar" />
-      <sourceRoot location="docx4j-openxml-objects-pml-11.4.5.jar" />
-      <sourceRoot location="docx4j-openxml-objects-sml-11.4.5.jar" />
       <sourceRoot location="error_prone_annotations-2.3.3.jar" />
       <sourceRoot location="fontbox-2.0.24.jar" />
       <sourceRoot location="jakarta.activation-2.0.1.jar" />
@@ -38,10 +63,6 @@
       <sourceRoot location="xalan-interpretive-11.0.0.jar" />
       <sourceRoot location="xalan-serializer-11.0.0.jar" />
       <sourceRoot location="xmlgraphics-commons-2.7.jar" />
-      <sourceRoot location="docx4j-diffx-11.4.7.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="docx4j-diffx-11.4.7.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -50,37 +71,37 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/antlr-2.7.7.jar" />
-    <stubModelEntry path="${module}/lib/antlr-runtime-3.5.2.jar" />
-    <stubModelEntry path="${module}/lib/checker-qual-2.8.1.jar" />
-    <stubModelEntry path="${module}/lib/commons-codec-1.12.jar" />
-    <stubModelEntry path="${module}/lib/commons-compress-1.21.jar" />
-    <stubModelEntry path="${module}/lib/commons-io-2.7.jar" />
-    <stubModelEntry path="${module}/lib/commons-lang3-3.9.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-core-11.4.5.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-JAXB-MOXy-11.4.5.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-11.4.5.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-pml-11.4.5.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-sml-11.4.5.jar" />
-    <stubModelEntry path="${module}/lib/error_prone_annotations-2.3.3.jar" />
-    <stubModelEntry path="${module}/lib/fontbox-2.0.24.jar" />
-    <stubModelEntry path="${module}/lib/jakarta.activation-2.0.1.jar" />
-    <stubModelEntry path="${module}/lib/jakarta.mail-2.0.1.jar" />
-    <stubModelEntry path="${module}/lib/jakarta.xml.bind-api-3.0.1.jar" />
-    <stubModelEntry path="${module}/lib/jaxb-svg11-11.4.0.jar" />
-    <stubModelEntry path="${module}/lib/jcl-over-slf4j-2.0.0-alpha5.jar" />
-    <stubModelEntry path="${module}/lib/mbassador-1.3.2.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.persistence.asm-9.1.0.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.persistence.core-3.0.2.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.persistence.moxy-3.0.2.jar" />
-    <stubModelEntry path="${module}/lib/qdox-1.12.jar" />
-    <stubModelEntry path="${module}/lib/slf4j-api-2.0.0-alpha6.jar" />
-    <stubModelEntry path="${module}/lib/stringtemplate-3.2.1.jar" />
-    <stubModelEntry path="${module}/lib/wmf2svg-0.9.8.jar" />
-    <stubModelEntry path="${module}/lib/xalan-interpretive-11.0.0.jar" />
-    <stubModelEntry path="${module}/lib/xalan-serializer-11.0.0.jar" />
-    <stubModelEntry path="${module}/lib/xmlgraphics-commons-2.7.jar" />
-    <stubModelEntry path="${module}/lib/docx4j-diffx-11.4.7.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-core-11.4.9.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-diffx-11.4.9.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-JAXB-MOXy-11.4.9.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-11.4.9.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-pml-11.4.9.jar" />
+    <stubModelEntry path="${module}/lib/docx4j-openxml-objects-sml-11.4.9.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/antlr-2.7.7.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/antlr-runtime-3.5.2.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/checker-qual-2.8.1.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/commons-codec-1.12.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/commons-compress-1.21.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/commons-io-2.7.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/commons-lang3-3.9.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/error_prone_annotations-2.3.3.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/fontbox-2.0.24.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/jakarta.activation-2.0.1.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/jakarta.mail-2.0.1.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/jakarta.xml.bind-api-3.0.1.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/jaxb-svg11-11.4.0.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/jcl-over-slf4j-2.0.0-alpha5.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/mbassador-1.3.2.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/org.eclipse.persistence.asm-9.1.0.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/org.eclipse.persistence.core-3.0.2.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/org.eclipse.persistence.moxy-3.0.2.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/qdox-1.12.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/slf4j-api-2.0.0-alpha6.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/stringtemplate-3.2.1.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/wmf2svg-0.9.8.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/xalan-interpretive-11.0.0.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/xalan-serializer-11.0.0.jar" />
+    <stubModelEntry path="${module}/lib/dependencies/xmlgraphics-commons-2.7.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
