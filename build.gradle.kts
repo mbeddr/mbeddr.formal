@@ -15,7 +15,7 @@ plugins {
     id("de.itemis.mps.gradle.common") version "1.20.+"
 }
 
-val jbrVers = "17.0.6-b653.34"
+val jbrVers = "17.0.6-b469.82"
 
 downloadJbr {
     jbrVersion = jbrVers
