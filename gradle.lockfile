@@ -3,11 +3,11 @@
 # This file is expected to be part of source control.
 com.jetbrains.jdk:jbr_jcef:17.0.6-b653.34=jbrLinux,jbrMac,jbrWin
 com.jetbrains:mps:2022.2=mps
-com.mbeddr:platform:2022.2.23910.af50257=languageLibs
+com.mbeddr:platform:2022.2.24226.5efe184=languageLibs
 junit:junit:4.12=antLib
 org.apache.ant:ant-junit:1.10.6=antLib
 org.apache.ant:ant-launcher:1.10.6=antLib
 org.apache.ant:ant:1.10.6=antLib
 org.hamcrest:hamcrest-core:1.3=antLib
-org.mpsqa:all-in-one:2022.2.196.16ea23c=languageLibs
+org.mpsqa:all-in-one:2022.2.280.2af29a4=languageLibs
 empty=

@@ -32,6 +32,7 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">5e7ffa70-8e23-49f4-8c13-a887bba14c36(com.mbeddr.formal.safety.gsn.external_evidence)</dependency>
     <dependency reexport="false">d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer)</dependency>
+    <dependency reexport="false">a7775cc7-19db-41cf-a724-3212ac4437b9(com.mbeddr.formal.safety.gsn.importer)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476:com.fasten.base.git" version="0" />
@@ -57,6 +58,7 @@
     <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="3" />
     <language slang="l:d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8:com.mbeddr.formal.safety.gsn.confidence.dempster_shafer" version="0" />
     <language slang="l:5e7ffa70-8e23-49f4-8c13-a887bba14c36:com.mbeddr.formal.safety.gsn.external_evidence" version="0" />
+    <language slang="l:a7775cc7-19db-41cf-a724-3212ac4437b9:com.mbeddr.formal.safety.gsn.importer" version="0" />
     <language slang="l:8c301636-fbda-4009-bce8-7e00c3c1bac5:com.mbeddr.formal.safety.gsn.odd" version="0" />
     <language slang="l:f465db4c-63d4-40ef-afda-acd713dc19a1:com.mbeddr.formal.safety.gsn.patterns" version="0" />
     <language slang="l:7f3eac5a-7f9a-4fbe-8264-f69c70ece985:com.mbeddr.formal.safety.gsn.smv" version="9" />
@@ -102,6 +104,7 @@
     <module reference="6eae6fbd-9940-4c94-855c-110c062b01e3(com.mbeddr.formal.safety.gsn.cbd.pluginSolution)" version="0" />
     <module reference="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer)" version="0" />
     <module reference="5e7ffa70-8e23-49f4-8c13-a887bba14c36(com.mbeddr.formal.safety.gsn.external_evidence)" version="0" />
+    <module reference="a7775cc7-19db-41cf-a724-3212ac4437b9(com.mbeddr.formal.safety.gsn.importer)" version="0" />
     <module reference="8c301636-fbda-4009-bce8-7e00c3c1bac5(com.mbeddr.formal.safety.gsn.odd)" version="0" />
     <module reference="f465db4c-63d4-40ef-afda-acd713dc19a1(com.mbeddr.formal.safety.gsn.patterns)" version="0" />
     <module reference="7f3eac5a-7f9a-4fbe-8264-f69c70ece985(com.mbeddr.formal.safety.gsn.smv)" version="8" />

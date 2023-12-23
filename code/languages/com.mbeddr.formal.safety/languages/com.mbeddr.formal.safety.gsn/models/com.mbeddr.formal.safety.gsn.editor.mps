@@ -3797,6 +3797,11 @@
       <property role="TrG5h" value="GOAL_STRUCTURE_DIFF_VIEW" />
       <property role="2BUmq6" value="Plain Textual Projection" />
     </node>
+    <node concept="2BsEeg" id="3Sfdbygn1_l" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="LAYOUT_INFO_ONLY" />
+      <property role="2BUmq6" value="LAYOUT_INFO_ONLY" />
+    </node>
   </node>
   <node concept="312cEu" id="6f7vJBUc0xj">
     <property role="3GE5qa" value="" />
@@ -12429,6 +12434,11 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VPxyj" id="1jzC6AK4MO9" role="3F10Kt" />
+        <node concept="2w$q5c" id="3Sfdbygn1xy" role="78xua">
+          <node concept="2aJ2om" id="3Sfdbygn1xz" role="2w$qW5">
+            <ref role="2$4xQ3" node="3Sfdbygn1_l" resolve="LAYOUT_INFO_ONLY" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="3EDV2YKAnez" role="3EZMnx">
         <property role="3F0ifm" value="Entities:" />
@@ -12489,25 +12499,6 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="3EDV2YKNkyj" role="3EZMnx">
-        <node concept="pkWqt" id="3EDV2YKNkyk" role="pqm2j">
-          <node concept="3clFbS" id="3EDV2YKNkyl" role="2VODD2">
-            <node concept="3clFbF" id="3EDV2YKNkym" role="3cqZAp">
-              <node concept="2OqwBi" id="3EDV2YKNkyn" role="3clFbG">
-                <node concept="2OqwBi" id="3EDV2YKNkyo" role="2Oq$k0">
-                  <node concept="pncrf" id="3EDV2YKNkyp" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="3EDV2YKNkyq" role="2OqNvi" />
-                </node>
-                <node concept="3w_OXm" id="3EDV2YKNkyr" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="PMmxH" id="336$aoTFLwC" role="3EZMnx">
-        <ref role="PMmxG" node="1qrXfdH1Y7r" resolve="GoalStructureDiagramEditorComponent" />
-      </node>
-      <node concept="3F0ifn" id="336$aoTD246" role="3EZMnx" />
       <node concept="PMmxH" id="3EDV2YKNkzt" role="3EZMnx">
         <ref role="PMmxG" node="3EDV2YKBoSr" resolve="GoalStructure_Diff_View" />
       </node>
@@ -12937,16 +12928,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="1jzC6AJYEMm">
-    <property role="3GE5qa" value="diff_view" />
-    <ref role="1XX52x" to="suqv:7L$rKAVfLie" resolve="LayoutMap" />
-    <node concept="3F0ifn" id="1jzC6AJZE7_" role="2wV5jI">
-      <property role="3F0ifm" value="layout information" />
-    </node>
-    <node concept="2aJ2om" id="1jzC6AJYERh" role="CpUAK">
-      <ref role="2$4xQ3" node="3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
-    </node>
-  </node>
   <node concept="PKFIW" id="3ydH56R7QiE">
     <property role="TrG5h" value="GoalStructureInInspector_EditorComponent" />
     <ref role="1XX52x" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
@@ -12998,6 +12979,16 @@
     </node>
     <node concept="2aJ2om" id="5l6J5csz8l8" role="CpUAK">
       <ref role="2$4xQ3" node="5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1jzC6AJYEMm">
+    <property role="3GE5qa" value="diff_view" />
+    <ref role="1XX52x" to="suqv:7L$rKAVfLie" resolve="LayoutMap" />
+    <node concept="2aJ2om" id="1jzC6AJYERh" role="CpUAK">
+      <ref role="2$4xQ3" node="3Sfdbygn1_l" resolve="LAYOUT_INFO_ONLY" />
+    </node>
+    <node concept="3F0ifn" id="1jzC6AJZE7_" role="2wV5jI">
+      <property role="3F0ifm" value="layout information" />
     </node>
   </node>
 </model>

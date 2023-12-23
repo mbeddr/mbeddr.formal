@@ -4599,6 +4599,81 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="5L9YWLTDLG6" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.formal.safety.gsn.importer" />
+        <property role="3LESm3" value="a7775cc7-19db-41cf-a724-3212ac4437b9" />
+        <node concept="398BVA" id="5L9YWLTDLVL" role="3LF7KH">
+          <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="5L9YWLTDM9h" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5L9YWLTDMtt" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.importer" />
+              <node concept="2Ry0Ak" id="5L9YWLTDMEW" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.importer.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5L9YWLTDMZj" role="3bR37C">
+          <node concept="3bR9La" id="5L9YWLTDMZk" role="1SiIV1">
+            <ref role="3bR37D" node="6hyv0iVPlGt" resolve="com.mbeddr.formal.safety.gsn" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5L9YWLTDMZn" role="3bR37C">
+          <node concept="3bR9La" id="5L9YWLTDMZo" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5L9YWLTDMZp" role="3bR37C">
+          <node concept="3bR9La" id="5L9YWLTDMZq" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5L9YWLTDMZr" role="3bR37C">
+          <node concept="3bR9La" id="5L9YWLTDMZs" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="5L9YWLTDMZC" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5L9YWLTDMZD" role="1HemKq">
+            <node concept="398BVA" id="5L9YWLTDMZt" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="5L9YWLTDMZu" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5L9YWLTDMZv" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.importer" />
+                  <node concept="2Ry0Ak" id="5L9YWLTDMZw" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5L9YWLTDMZE" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="5L9YWLTDN9N" role="3bR31x">
+          <node concept="3LXTmp" id="5L9YWLTDN9O" role="3rtmxm">
+            <node concept="398BVA" id="5L9YWLTDN9P" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="5L9YWLTDN9Q" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5L9YWLTDN9R" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.importer" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5L9YWLTDN9T" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="y1G8y6eZfq" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.formal.safety.argument.modelquery.genplan" />
@@ -6081,6 +6156,9 @@
         </node>
         <node concept="3LEDTy" id="8xY_IhvzQb" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="1Z78qHuQxb3" role="3LEDUa">
+          <ref role="3LEDTV" node="5L9YWLTDLG6" resolve="com.mbeddr.formal.safety.gsn.importer" />
         </node>
       </node>
     </node>
