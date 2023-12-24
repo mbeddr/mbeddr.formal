@@ -11771,6 +11771,10 @@
         </node>
       </node>
       <node concept="2iRfu4" id="2p23w$d1hPE" role="2iSdaV" />
+      <node concept="3F0ifn" id="7NA168q7J5k" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2p23w$deE8D">
@@ -12989,6 +12993,29 @@
     </node>
     <node concept="3F0ifn" id="1jzC6AJZE7_" role="2wV5jI">
       <property role="3F0ifm" value="layout information" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7NA168q5x3D">
+    <property role="3GE5qa" value="attributes.color" />
+    <ref role="1XX52x" to="py52:7NA168q5wko" resolve="PlainTextAttribute" />
+    <node concept="3EZMnI" id="7NA168q5x7l" role="2wV5jI">
+      <node concept="3F0A7n" id="7NA168q5xaJ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="Vb9p2" id="7NA168q5QGZ" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7NA168q5xct" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="7NA168q5xgI" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:7NA168q5wRL" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="7NA168q5QLZ" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+      </node>
+      <node concept="2iRfu4" id="7NA168q5x7o" role="2iSdaV" />
     </node>
   </node>
 </model>

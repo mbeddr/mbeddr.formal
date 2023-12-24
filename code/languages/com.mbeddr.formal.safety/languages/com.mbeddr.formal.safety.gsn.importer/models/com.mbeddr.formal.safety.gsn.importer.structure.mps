@@ -34,6 +34,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -59,6 +62,7 @@
     <property role="EcuMT" value="7684814078447297810" />
     <property role="TrG5h" value="ImportFormatBase" />
     <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="formats" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6E_Wr0YLqJl">
@@ -66,13 +70,21 @@
     <property role="TrG5h" value="XmlImportFormat" />
     <property role="34LRSv" value="xml format" />
     <property role="R4oN_" value="imports from xml" />
+    <property role="3GE5qa" value="formats" />
     <ref role="1TJDcQ" node="6E_Wr0YLqki" resolve="ImportFormatBase" />
+    <node concept="1TJgyj" id="7NA168q3Hmg" role="1TKVEi">
+      <property role="IQ2ns" value="8999885724737000848" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dir" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6E_Wr0YLv6b">
     <property role="EcuMT" value="7684814078447317387" />
     <property role="TrG5h" value="CsvImportFormat" />
     <property role="34LRSv" value="csv format" />
     <property role="R4oN_" value="imports from csv" />
+    <property role="3GE5qa" value="formats" />
     <ref role="1TJDcQ" node="6E_Wr0YLqki" resolve="ImportFormatBase" />
     <node concept="1TJgyj" id="6E_Wr0YLwjr" role="1TKVEi">
       <property role="IQ2ns" value="7684814078447322331" />

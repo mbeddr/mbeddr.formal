@@ -55,6 +55,9 @@
         <child id="1629165016568014583" name="goalStructure" index="1VB584" />
       </concept>
     </language>
+    <language id="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" name="com.mbeddr.formal.safety.gsn.xml_gen">
+      <concept id="7991555605679066221" name="com.mbeddr.formal.safety.gsn.xml_gen.structure.GenerateGoalStructure2XML" flags="ng" index="pFZ$m" />
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -4053,5 +4056,6 @@
       <property role="2Wzj7u" value="3731513482756243910" />
     </node>
   </node>
+  <node concept="pFZ$m" id="3SfdbygP7uM" />
 </model>
 

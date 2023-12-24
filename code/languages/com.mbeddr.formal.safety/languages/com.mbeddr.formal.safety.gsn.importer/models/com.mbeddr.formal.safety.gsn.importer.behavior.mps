@@ -101,12 +101,16 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="13h7C7" id="6E_Wr0YLtOh">
+    <property role="3GE5qa" value="formats" />
     <ref role="13h7C2" to="64cq:6E_Wr0YLqki" resolve="ImportFormatBase" />
     <node concept="13i0hz" id="6E_Wr0YLtV0" role="13h7CS">
       <property role="TrG5h" value="importGoalStructure" />
@@ -127,6 +131,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6E_Wr0YLw8S">
+    <property role="3GE5qa" value="formats" />
     <ref role="13h7C2" to="64cq:6E_Wr0YLv6b" resolve="CsvImportFormat" />
     <node concept="13hLZK" id="6E_Wr0YLw8T" role="13h7CW">
       <node concept="3clFbS" id="6E_Wr0YLw8U" role="2VODD2" />
@@ -196,6 +201,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6E_Wr0YPAwS">
+    <property role="3GE5qa" value="formats" />
     <ref role="13h7C2" to="64cq:6E_Wr0YLqJl" resolve="XmlImportFormat" />
     <node concept="13hLZK" id="6E_Wr0YPAwT" role="13h7CW">
       <node concept="3clFbS" id="6E_Wr0YPAwU" role="2VODD2" />
@@ -204,7 +210,57 @@
       <property role="TrG5h" value="importGoalStructure" />
       <ref role="13i0hy" node="6E_Wr0YLtV0" resolve="importGoalStructure" />
       <node concept="3Tm1VV" id="6E_Wr0YPAze" role="1B3o_S" />
-      <node concept="3clFbS" id="6E_Wr0YPAzh" role="3clF47" />
+      <node concept="3clFbS" id="6E_Wr0YPAzh" role="3clF47">
+        <node concept="3cpWs8" id="7NA168qhJ$O" role="3cqZAp">
+          <node concept="3cpWsn" id="7NA168qhJ$P" role="3cpWs9">
+            <property role="TrG5h" value="nonCanonicalPath" />
+            <node concept="17QB3L" id="7NA168qhJ1b" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="7NA168qhJQq" role="3cqZAp">
+          <node concept="1QHqEC" id="7NA168qhJQs" role="1QHqEI">
+            <node concept="3clFbS" id="7NA168qhJQu" role="1bW5cS">
+              <node concept="3clFbF" id="7NA168qhJIy" role="3cqZAp">
+                <node concept="37vLTI" id="7NA168qhJI$" role="3clFbG">
+                  <node concept="2OqwBi" id="7NA168qhJ$Q" role="37vLTx">
+                    <node concept="2OqwBi" id="7NA168qhJ$R" role="2Oq$k0">
+                      <node concept="13iPFW" id="7NA168qhJ$S" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="7NA168qhJ$T" role="2OqNvi">
+                        <ref role="3Tt5mk" to="64cq:7NA168q3Hmg" resolve="dir" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="7NA168qhJ$U" role="2OqNvi">
+                      <ref role="37wK5l" to="48kf:2_BfG8PE78n" resolve="getNonCanonicalPath" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7NA168qhJIC" role="37vLTJ">
+                    <ref role="3cqZAo" node="7NA168qhJ$P" resolve="nonCanonicalPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="7NA168qhJUI" role="ukAjM">
+            <ref role="3cqZAo" node="6E_Wr0YPKzO" resolve="repo" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NA168qhCHX" role="3cqZAp">
+          <node concept="2YIFZM" id="7NA168qhCLa" role="3clFbG">
+            <ref role="37wK5l" to="mn49:3SfdbygP4sV" resolve="importGoalStructuresFromDirectory" />
+            <ref role="1Pybhc" to="mn49:3SfdbygP4qz" resolve="XmlImporter" />
+            <node concept="37vLTw" id="7NA168qhCMx" role="37wK5m">
+              <ref role="3cqZAo" node="6E_Wr0YPKzO" resolve="repo" />
+            </node>
+            <node concept="37vLTw" id="7NA168qhJ$V" role="37wK5m">
+              <ref role="3cqZAo" node="7NA168qhJ$P" resolve="nonCanonicalPath" />
+            </node>
+            <node concept="2OqwBi" id="7NA168qhE80" role="37wK5m">
+              <node concept="13iPFW" id="7NA168qhE4S" role="2Oq$k0" />
+              <node concept="I4A8Y" id="7NA168qhEdk" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3cqZAl" id="6E_Wr0YPAzi" role="3clF45" />
       <node concept="37vLTG" id="6E_Wr0YPKzO" role="3clF46">
         <property role="TrG5h" value="repo" />

@@ -161,18 +161,23 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="6E_Wr0YLrC0">
+    <property role="3GE5qa" value="formats" />
     <ref role="1XX52x" to="64cq:6E_Wr0YLqki" resolve="ImportFormatBase" />
     <node concept="PMmxH" id="6E_Wr0YLrS1" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="6E_Wr0YLxS5">
+    <property role="3GE5qa" value="formats" />
     <ref role="1XX52x" to="64cq:6E_Wr0YLv6b" resolve="CsvImportFormat" />
     <node concept="3EZMnI" id="6E_Wr0YLxYX" role="2wV5jI">
       <node concept="3F0ifn" id="6E_Wr0YLymB" role="3EZMnx">
@@ -368,6 +373,119 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="6E_Wr0YLHYR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7NA168q4usl">
+    <property role="3GE5qa" value="formats" />
+    <ref role="1XX52x" to="64cq:6E_Wr0YLqJl" resolve="XmlImportFormat" />
+    <node concept="3EZMnI" id="7NA168q4u$T" role="2wV5jI">
+      <node concept="3F0ifn" id="7NA168q4u$U" role="3EZMnx">
+        <property role="3F0ifm" value="xml import:" />
+      </node>
+      <node concept="3EZMnI" id="7NA168q4u$V" role="3EZMnx">
+        <node concept="VPM3Z" id="7NA168q4u$W" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7NA168q4u$X" role="3EZMnx" />
+        <node concept="3F0ifn" id="7NA168q4u$Y" role="3EZMnx">
+          <property role="3F0ifm" value="file:" />
+        </node>
+        <node concept="3F1sOY" id="7NA168q4u$Z" role="3EZMnx">
+          <ref role="1NtTu8" to="64cq:7NA168q3Hmg" resolve="dir" />
+        </node>
+        <node concept="2iRfu4" id="7NA168q4u_0" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="7NA168q4u_1" role="3EZMnx" />
+      <node concept="3F0ifn" id="7NA168q4u_2" role="3EZMnx">
+        <property role="3F0ifm" value="Documentation:" />
+      </node>
+      <node concept="3EZMnI" id="7NA168q4u_3" role="3EZMnx">
+        <node concept="VPM3Z" id="7NA168q4u_4" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7NA168q4u_5" role="3EZMnx" />
+        <node concept="3EZMnI" id="7NA168q4u_6" role="3EZMnx">
+          <node concept="VPM3Z" id="7NA168q4u_7" role="3F10Kt" />
+          <node concept="3F0ifn" id="7NA168q4u_8" role="3EZMnx">
+            <property role="3F0ifm" value="expected file format (same as exported by the xml_gen exporter of FASTEN):" />
+            <node concept="VechU" id="7NA168q4u_9" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4u_a" role="3EZMnx" />
+          <node concept="3F0ifn" id="7NA168q4vzz" role="3EZMnx">
+            <property role="3F0ifm" value="&lt;goal_structure name=&quot;example_1&quot;&gt;" />
+            <node concept="VechU" id="7NA168qho_c" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4u_d" role="3EZMnx">
+            <property role="3F0ifm" value="  &lt;goal&gt;" />
+            <node concept="VechU" id="7NA168q4u_e" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4xhZ" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;name&gt;G01&lt;/name&gt;" />
+            <node concept="VechU" id="7NA168q4xi0" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4xiX" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;node_id&gt;2134431&lt;/node_id&gt;" />
+            <node concept="VechU" id="7NA168q4xiY" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4xKe" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;description&gt;The description&lt;/description&gt;" />
+            <node concept="VechU" id="7NA168q4xKf" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4xLi" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;attributes&gt;" />
+            <node concept="VechU" id="7NA168q4xLj" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4xO0" role="3EZMnx">
+            <property role="3F0ifm" value="       &lt;attribute&gt;" />
+            <node concept="VechU" id="7NA168q4xO1" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4_0Z" role="3EZMnx">
+            <property role="3F0ifm" value="         &lt;name&gt;responsible&lt;/name&gt;" />
+            <node concept="VechU" id="7NA168q4_10" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4_2b" role="3EZMnx">
+            <property role="3F0ifm" value="         &lt;value&gt;John&lt;/value&gt;" />
+            <node concept="VechU" id="7NA168q4_2c" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4_3p" role="3EZMnx">
+            <property role="3F0ifm" value="       &lt;/attribute&gt;" />
+            <node concept="VechU" id="7NA168q4_3q" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4yWg" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;/attributes&gt;" />
+            <node concept="VechU" id="7NA168q4yWh" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7NA168q4xjz" role="3EZMnx">
+            <property role="3F0ifm" value="  &lt;goal&gt;" />
+            <node concept="VechU" id="7NA168q4xj$" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="2iRkQZ" id="7NA168q4u_j" role="2iSdaV" />
+        </node>
+        <node concept="2iRfu4" id="7NA168q4u_k" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="7NA168q4u_l" role="2iSdaV" />
     </node>
   </node>
 </model>

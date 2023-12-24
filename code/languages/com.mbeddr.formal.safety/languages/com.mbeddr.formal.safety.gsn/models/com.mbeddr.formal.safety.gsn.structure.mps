@@ -461,5 +461,21 @@
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7NA168q5wko">
+    <property role="EcuMT" value="8999885724737471768" />
+    <property role="3GE5qa" value="attributes.color" />
+    <property role="TrG5h" value="PlainTextAttribute" />
+    <property role="34LRSv" value="plain text" />
+    <property role="R4oN_" value="name and value are freely definable" />
+    <ref role="1TJDcQ" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="1TJgyi" id="7NA168q5wRL" role="1TKVEl">
+      <property role="IQ2nx" value="8999885724737474033" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7NA168q5x2p" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

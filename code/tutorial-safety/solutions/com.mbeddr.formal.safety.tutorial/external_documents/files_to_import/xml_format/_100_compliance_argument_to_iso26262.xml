@@ -1,0 +1,151 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<goal_structure name="_100_compliance_argument_to_iso26262">
+  <goal>
+    <name>ISO26262_Compliance</name>
+    <node_id>1639692281460263206</node_id>
+    <description>Safety process complies 
+to ISO26262.</description>
+    <attributes></attributes>
+  </goal>
+  <goal>
+    <name>Concept_Level_Compl</name>
+    <node_id>1639692281460263273</node_id>
+    <description>Development of { Product } 
+in concept phase complies 
+to ISO 26262.</description>
+    <attributes>
+      <attribute>
+        <name>standard ref</name>
+        <value>standard: ISO26262-3</value>
+      </attribute>
+      <attribute>
+        <name>color</name>
+        <value>color ccccff (rgb)</value>
+      </attribute>
+    </attributes>
+  </goal>
+  <goal>
+    <name>System_Level_Compl</name>
+    <node_id>1639692281460263410</node_id>
+    <description>{ Product } development at 
+system level complies to 
+ISO26262.</description>
+    <attributes>
+      <attribute>
+        <name>standard ref</name>
+        <value>standard: ISO26262-4</value>
+      </attribute>
+      <attribute>
+        <name>color</name>
+        <value>color ccccff (rgb)</value>
+      </attribute>
+    </attributes>
+  </goal>
+  <goal>
+    <name>G_Software_Level</name>
+    <node_id>1639692281460263601</node_id>
+    <description>{ Product } development at 
+software level complies to 
+ISO26262.</description>
+    <attributes>
+      <attribute>
+        <name>color</name>
+        <value>color ccccff (rgb)</value>
+      </attribute>
+    </attributes>
+  </goal>
+  <goal>
+    <name>G_Hardware_Level</name>
+    <node_id>1639692281460263766</node_id>
+    <description>{ Product } development at 
+hardware level complies to 
+ISO26262.</description>
+    <attributes>
+      <attribute>
+        <name>color</name>
+        <value>color ccccff (rgb)</value>
+      </attribute>
+    </attributes>
+  </goal>
+  <goal>
+    <name>G_FSC</name>
+    <node_id>1639692281460264369</node_id>
+    <description>Functional safety concept is 
+performed according to 
+requirements of ISO26262.</description>
+    <attributes></attributes>
+  </goal>
+  <goal>
+    <name>G_Item_Definition</name>
+    <node_id>1639692281460264477</node_id>
+    <description>Item definition is performed
+according to requirements of
+ISO26262.</description>
+    <attributes>
+      <attribute>
+        <name>standard ref</name>
+        <value>standard: ISO26262-3, clause: 5.4.1</value>
+      </attribute>
+      <attribute>
+        <name>standard ref</name>
+        <value>standard: ISO26262-3, clause: 5.4.2</value>
+      </attribute>
+    </attributes>
+  </goal>
+  <goal>
+    <name>G_HARA</name>
+    <node_id>1639692281460264737</node_id>
+    <description>Hazard and risk analysis is 
+performed according to 
+requirements of ISO26262.</description>
+    <attributes>
+      <attribute>
+        <name>standard ref</name>
+        <value>standard: ISO26262-3, clause: 6.4.1</value>
+      </attribute>
+      <attribute>
+        <name>standard ref</name>
+        <value>standard: ISO26262-3, clause: 6.4.2</value>
+      </attribute>
+      <attribute>
+        <name>standard ref</name>
+        <value>standard: ISO26262-3, clause: 6.4.3</value>
+      </attribute>
+    </attributes>
+  </goal>
+  <supported_by>
+    <source_node_id>1639692281460263206</source_node_id>
+    <target_node_id>1639692281460263273</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>1639692281460263206</source_node_id>
+    <target_node_id>1639692281460263410</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>1639692281460263206</source_node_id>
+    <target_node_id>1639692281460263766</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>1639692281460263206</source_node_id>
+    <target_node_id>1639692281460263601</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>1639692281460263273</source_node_id>
+    <target_node_id>1639692281460264477</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>1639692281460263273</source_node_id>
+    <target_node_id>1639692281460264369</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>1639692281460263273</source_node_id>
+    <target_node_id>1639692281460264737</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+</goal_structure>
