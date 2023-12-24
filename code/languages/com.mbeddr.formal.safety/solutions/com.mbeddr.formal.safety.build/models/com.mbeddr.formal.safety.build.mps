@@ -347,8 +347,8 @@
         <ref role="398BVh" node="42jqVeFkUG2" resolve="mbeddr.formal.home" />
         <node concept="2Ry0Ak" id="51uLzzZ6tyC" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3ALtb$iAT1G" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2021_1_4" />
+          <node concept="2Ry0Ak" id="3Sfdbyg_LZt" role="2Ry0An">
+            <property role="2Ry0Am" value="MPS_2022_2_2" />
           </node>
         </node>
       </node>
@@ -448,7 +448,7 @@
       <node concept="aVJcg" id="4aeOpjlAysR" role="aVJcv">
         <node concept="NbPM2" id="4aeOpjlAysQ" role="aVJcq">
           <node concept="3Mxwew" id="4aeOpjlAysP" role="3MwsjC">
-            <property role="3MwjfP" value="2023-01-08" />
+            <property role="3MwjfP" value="2023-12-24" />
           </node>
         </node>
       </node>
@@ -13283,7 +13283,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20230108" />
+        <property role="hHN3Y" value="20231224" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -13291,7 +13291,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="FASTEN-211.SNAPSHOT" />
+            <property role="3MwjfP" value="FASTEN-222.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -13313,8 +13313,8 @@
         <ref role="398BVh" node="wUJmWCxY0g" resolve="mbeddr.formal.home" />
         <node concept="2Ry0Ak" id="7YjSMFl$i24" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3ALtb$iwa8L" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2021_1_4" />
+          <node concept="2Ry0Ak" id="3SfdbygrgG8" role="2Ry0An">
+            <property role="2Ry0Am" value="MPS_2022_2_2" />
           </node>
         </node>
       </node>
@@ -13399,7 +13399,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2023-01-08" />
+            <property role="3MwjfP" value="2023-12-24" />
           </node>
         </node>
       </node>
@@ -13743,7 +13743,7 @@
         </node>
         <node concept="3_J27D" id="1TD_kqsGBKv" role="3ZAF13">
           <node concept="3Mxwew" id="7Nv7YQoyFIY" role="3MwsjC">
-            <property role="3MwjfP" value="1" />
+            <property role="3MwjfP" value="2" />
           </node>
         </node>
         <node concept="NbPM2" id="1TD_kqsGBKy" role="3ZAF11" />
@@ -14092,6 +14092,12 @@
             <node concept="3_I8Xc" id="5cnt3YQ$BxO" role="39821P">
               <ref role="3_I8Xa" to="90a9:1sO539bGQvs" resolve="mps-richtext" />
             </node>
+            <node concept="3_I8Xc" id="3SfdbygKk42" role="39821P">
+              <ref role="3_I8Xa" to="90a9:4p3FRivDLPx" resolve="mps-multiline" />
+            </node>
+            <node concept="3_I8Xc" id="3SfdbygKk6K" role="39821P">
+              <ref role="3_I8Xa" to="90a9:5QhEsDNBgC7" resolve="de.itemis.mps.celllayout" />
+            </node>
             <node concept="3_I8Xc" id="5cnt3YQ$BAI" role="39821P">
               <ref role="3_I8Xa" to="al5i:64SK4bcOF5o" resolve="com.mbeddr.mpsutil.suppresswarning" />
             </node>
@@ -14109,6 +14115,9 @@
             </node>
             <node concept="3_I8Xc" id="5cnt3YQEHdp" role="39821P">
               <ref role="3_I8Xa" to="al5i:64SK4bcOniE" resolve="com.mbeddr.mpsutil.editorsupport" />
+            </node>
+            <node concept="3_I8Xc" id="3SfdbygKjSB" role="39821P">
+              <ref role="3_I8Xa" to="ffeo:1jjxZP6JHO_" resolve="mps-console" />
             </node>
             <node concept="28u9K_" id="5cnt3YQNQ$1" role="39821P">
               <property role="28hIV_" value="editor hints changing requires refactoring which in turn requires contextactions" />
@@ -14139,6 +14148,9 @@
             </node>
             <node concept="3_I8Xc" id="5cnt3YQHLkM" role="39821P">
               <ref role="3_I8Xa" to="90a9:6860Y5A0_cI" resolve="de.itemis.mps.utils" />
+            </node>
+            <node concept="3_I8Xc" id="3SfdbygGMSx" role="39821P">
+              <ref role="3_I8Xa" to="90a9:2Y$Ewq9ERUo" resolve="MPS.ThirdParty" />
             </node>
             <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">
               <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
