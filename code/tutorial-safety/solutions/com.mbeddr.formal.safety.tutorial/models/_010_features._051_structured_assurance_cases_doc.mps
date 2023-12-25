@@ -7,11 +7,16 @@
     <devkit ref="b80b29fe-1cc4-4054-aee5-cb5c2049985a(fasten.safety.gsn.confidence)" />
     <devkit ref="7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)" />
     <devkit ref="b0b37262-7857-4c92-8e0e-0467c9bc45a6(fasten.safety.gsn.doc)" />
+    <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
   </imports>
   <registry>
+    <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
+      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -21,6 +26,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
       <concept id="5785245534399928042" name="com.mbeddr.doc.structure.AbstractTableParagraph" flags="ng" index="C6Wj3">
         <property id="5785245534399940634" name="numCols" index="C6TCN" />
         <child id="5785245534399940635" name="rows" index="C6TCM" />
@@ -31,12 +37,29 @@
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
+        <reference id="2286331641395252233" name="node" index="2NCMaa" />
+      </concept>
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
+        <child id="2286331641395252236" name="elements" index="2NCMaf" />
+      </concept>
+      <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
+        <property id="6386504476136554614" name="mappedPath" index="2SbEId" />
+        <reference id="6386504476136554613" name="pathDef" index="2SbEIe" />
+      </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
       </concept>
       <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="3352153450711894224" name="configItems" index="2wNnkt" />
         <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+      </concept>
+      <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
+        <child id="6068976060904007487" name="renderer" index="30GjaH" />
+        <child id="6068976060904007490" name="mappings" index="30Gjbg" />
+        <child id="6068976060904007488" name="inactiveRenderer" index="30Gjbi" />
+        <child id="6068976060904007489" name="root" index="30Gjbj" />
       </concept>
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
       <concept id="5185579450379471852" name="com.mbeddr.doc.structure.FloatingTableParagraph" flags="ng" index="1xAuF_">
@@ -44,6 +67,21 @@
       </concept>
       <concept id="5185579450379471854" name="com.mbeddr.doc.structure.TableRow" flags="ng" index="1xAuFB">
         <child id="5185579450379471857" name="cells" index="1xAuFS" />
+      </concept>
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <child id="6955693250238922832" name="description" index="3z_lpS" />
+        <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
+      </concept>
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
+        <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
+      </concept>
+      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NullRenderer" flags="ng" index="1_05Lf" />
+      <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
+        <property id="126932837435324910" name="title" index="WqcPg" />
+      </concept>
+      <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
+        <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
       <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
@@ -1386,6 +1424,23 @@
           </node>
         </node>
       </node>
+      <node concept="3z_lpz" id="6z_kt5mZaQp" role="1_0VJ0">
+        <property role="TrG5h" value="_015_cross_referencing_goal_structure" />
+        <property role="3z_lpJ" value="true" />
+        <node concept="OjmMv" id="6z_kt5mZaQr" role="3z_lpS">
+          <node concept="19SGf9" id="6z_kt5mZaQs" role="OjmMu">
+            <node concept="19SUe$" id="6z_kt5mZaQt" role="19SJt6">
+              <property role="19SUeA" value="The goal structure used for this example. " />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="6z_kt5mZaQv" role="3z_lpT" />
+        <node concept="2NCZwO" id="6z_kt5mZaQx" role="3z_lpI">
+          <node concept="2NCMab" id="6z_kt5mZaR2" role="2NCMaf">
+            <ref role="2NCMaa" node="1$lk9M65ZUC" resolve="_015_cross_referencing_goal_structure" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2SbYGP" id="2mjHtwTu9dY">
@@ -1407,6 +1462,25 @@
         <property role="3N1Lgt" value="figures" />
       </node>
     </node>
+    <node concept="1_07dB" id="3yqvquzJibo" role="2wNnkt" />
+  </node>
+  <node concept="1_08Dk" id="3yqvquzJhdd">
+    <property role="TrG5h" value="export" />
+    <property role="WqcPg" value="Document Export Example" />
+    <property role="3GE5qa" value="config" />
+    <node concept="1TaS0h" id="3yqvquzJhoe" role="30GjaH" />
+    <node concept="1_0j5j" id="3yqvquzJhdf" role="30Gjbj">
+      <ref role="1_0j5g" node="1$lk9M66st8" resolve="_016_goal_structure_explanation" />
+    </node>
+    <node concept="2SbEIf" id="3yqvquzJhpT" role="30Gjbg">
+      <property role="2SbEId" value="img" />
+      <ref role="2SbEIe" node="9TY4XGZias" resolve="img" />
+    </node>
+    <node concept="2SbEIf" id="3yqvquzJhvB" role="30Gjbg">
+      <property role="2SbEId" value="tmp" />
+      <ref role="2SbEIe" node="2mjHtwTu9e1" resolve="tmp" />
+    </node>
+    <node concept="1_05Lf" id="3yqvquzJhO0" role="30Gjbi" />
   </node>
 </model>
 
