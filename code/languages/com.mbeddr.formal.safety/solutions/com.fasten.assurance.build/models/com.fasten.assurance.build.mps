@@ -547,6 +547,9 @@
       <node concept="m$_yC" id="6hyv0iVPlES" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7yAshxDtbd3" resolve="com.mbeddr.mpsutil.genreview" />
       </node>
+      <node concept="m$_yC" id="26E6nZcGYVG" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5fGcQI8WTaQ" resolve="com.mbeddr.mpsutil.smodule" />
+      </node>
       <node concept="m$_yC" id="3DZJpXNnD_Z" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
       </node>
@@ -2759,6 +2762,11 @@
         <node concept="1SiIV0" id="4w58iiKwu57" role="3bR37C">
           <node concept="3bR9La" id="4w58iiKwu58" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="26E6nZcGZi$" role="3bR37C">
+          <node concept="3bR9La" id="26E6nZcGZi_" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:lse_ua97Px" resolve="com.mbeddr.mpsutil.smodule.runtime" />
           </node>
         </node>
       </node>
@@ -6014,6 +6022,9 @@
         <node concept="3LEDTy" id="8xY_IhvzQ6" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
         </node>
+        <node concept="3LEDTy" id="26E6nZcCDAM" role="3LEDUa">
+          <ref role="3LEDTV" node="6hyv0iVPlFT" resolve="com.mbeddr.formal.req.scenarios" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3rkUgzov67U" role="3989C9">
@@ -6278,6 +6289,9 @@
         </node>
         <node concept="3LEDTM" id="55RZzcIFqXH" role="3LEDUa">
           <ref role="3LEDTN" node="4ziKDEngAys" resolve="com.fasten.safety.doc2word" />
+        </node>
+        <node concept="3LEz8M" id="26E6nZcCDAN" role="3LEz9a">
+          <ref role="3LEz8N" to="al5i:7tNo_gxoK9_" resolve="com.mbeddr.documentation" />
         </node>
       </node>
     </node>

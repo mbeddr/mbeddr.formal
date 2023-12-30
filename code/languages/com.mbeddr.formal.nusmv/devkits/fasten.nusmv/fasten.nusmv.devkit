@@ -16,5 +16,7 @@
   <exported-language name="85d37fe5-2c7e-4ea1-ae78-08007614c543(com.mbeddr.formal.nusmv.importer)" />
   <exported-language name="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" />
   <exported-language name="58bd9c99-ba42-4205-b3c9-ce445fd870e6(com.mbeddr.formal.nusmv.cbd)" />
+  <exported-language name="3b22dedc-d6cf-4626-9445-6e9909b3e04a(com.fasten.base.arch.msc)" />
+  <exported-language name="81f6a079-965e-4523-87c3-8e6194f66585(com.fasten.base.msc)" />
 </dev-kit>
 

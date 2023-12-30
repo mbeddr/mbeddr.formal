@@ -3,6 +3,7 @@
   <exported-language name="42606624-2faa-4717-ba66-77021cc11b53(com.mbeddr.formal.safety.gsn.doc)" />
   <extendedDevKits>
     <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
+    <extendedDevKit>54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)</extendedDevKit>
   </extendedDevKits>
   <exported-solutions>
     <exported-solution>e1b41d7d-269e-4a91-a7d8-91bd657028d7(com.fasten.safety.doc2word)</exported-solution>

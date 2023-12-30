@@ -9,7 +9,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -444,6 +444,33 @@
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
     </node>
+    <node concept="m$_wf" id="7he_lUumEw2" role="3989C9">
+      <property role="m$_wk" value="com.mpsbasics" />
+      <node concept="3_J27D" id="7he_lUumEw4" role="m$_yQ">
+        <node concept="3Mxwew" id="7he_lUumFzi" role="3MwsjC">
+          <property role="3MwjfP" value="com.mpsbasics" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="7he_lUumEw6" role="m_cZH">
+        <node concept="3Mxwew" id="7he_lUumFzk" role="3MwsjC">
+          <property role="3MwjfP" value="com.mpsbasics" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="7he_lUumEw8" role="m$_w8">
+        <node concept="3Mxwey" id="7he_lUumFFG" role="3MwsjC">
+          <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="7he_lUumFO4" role="m$_yh">
+        <ref role="m$f5T" node="6hyv0iVPlEb" resolve="com.mpsbasics" />
+      </node>
+      <node concept="m$_yC" id="7yAshxDrNUC" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="7yAshxDrNok" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
+    </node>
     <node concept="m$_wf" id="42jqVeFkUv3" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.formal.nusmv" />
       <node concept="3_J27D" id="42jqVeFkUv4" role="m$_yQ">
@@ -471,8 +498,11 @@
       <node concept="m$f5U" id="3ALtb$iq$YM" role="m$_yh">
         <ref role="m$f5T" node="6hyv0iVPlEb" resolve="com.mpsbasics" />
       </node>
-      <node concept="m$_yC" id="42jqVeFkUv9" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      <node concept="m$_yC" id="6HG3hcznq$3" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:6rBfBe1WhKl" resolve="com.mbeddr.mpsutil.interpreter" />
+      </node>
+      <node concept="m$_yC" id="26E6nZcCEtv" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
       </node>
       <node concept="m$_yC" id="4aeOpjl$egK" role="m$_yJ">
         <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
@@ -495,8 +525,11 @@
       <node concept="m$_yC" id="6HG3hcznqwv" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
       </node>
-      <node concept="m$_yC" id="6HG3hcznq$3" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:6rBfBe1WhKl" resolve="com.mbeddr.mpsutil.interpreter" />
+      <node concept="m$_yC" id="26E6nZcE6W2" role="m$_yJ">
+        <ref role="m$_y1" node="7he_lUumEw2" resolve="com.mpsbasics" />
+      </node>
+      <node concept="m$_yC" id="26E6nZcE8uD" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
       <node concept="3_J27D" id="42jqVeFkUva" role="m_cZH">
         <node concept="3Mxwew" id="42jqVeFkUvb" role="3MwsjC">
@@ -569,6 +602,12 @@
         </node>
         <node concept="3LEDTy" id="5yQpAUIgPII" role="3LEDUa">
           <ref role="3LEDTV" node="6adXBxxUu$i" resolve="com.mbeddr.formal.nusmv.importer" />
+        </node>
+        <node concept="3LEDTy" id="26E6nZcCC7m" role="3LEDUa">
+          <ref role="3LEDTV" node="2Btqz_w6o5R" resolve="com.fasten.base.arch.msc" />
+        </node>
+        <node concept="3LEDTy" id="26E6nZcCC7n" role="3LEDUa">
+          <ref role="3LEDTV" node="2Btqz_w6mDq" resolve="com.fasten.base.msc" />
         </node>
       </node>
     </node>
