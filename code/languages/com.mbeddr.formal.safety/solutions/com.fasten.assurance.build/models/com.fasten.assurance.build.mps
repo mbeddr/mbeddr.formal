@@ -4681,6 +4681,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="26E6nZcP$Qh" role="3bR37C">
+          <node concept="3bR9La" id="26E6nZcP$Qi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="y1G8y6eZfq" role="2G$12L">
         <property role="BnDLt" value="true" />

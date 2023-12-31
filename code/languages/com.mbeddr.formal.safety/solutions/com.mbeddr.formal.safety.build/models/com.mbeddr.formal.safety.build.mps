@@ -9875,6 +9875,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="26E6nZcP$kL" role="3bR37C">
+          <node concept="3bR9La" id="26E6nZcP$kM" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
       </node>
       <node concept="1X3_iC" id="1FMyjUPhIJF" role="lGtFl">
         <property role="3V$3am" value="modules" />
