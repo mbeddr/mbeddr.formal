@@ -10,12 +10,15 @@
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="rvbb" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.projectPane(MPS.Workbench/)" />
     <import index="64cq" ref="r:a10cf8fb-d7db-44ec-bd00-59dfaa3a8842(com.mbeddr.formal.safety.gsn.importer.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="wzxk" ref="r:2931d8d2-dd6f-45fd-bbbd-056f34b734a8(com.mbeddr.formal.safety.gsn.importer.behavior)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
+    <import index="bnjk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.projectView(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -86,6 +89,9 @@
       </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -350,6 +356,33 @@
                                       <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                                     </node>
                                   </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="26E6nZcN5dt" role="3cqZAp">
+                              <node concept="2OqwBi" id="26E6nZcNbke" role="3clFbG">
+                                <node concept="2OqwBi" id="26E6nZcNa2o" role="2Oq$k0">
+                                  <node concept="2YIFZM" id="26E6nZcN7nn" role="2Oq$k0">
+                                    <ref role="37wK5l" to="rvbb:~ProjectPane.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
+                                    <ref role="1Pybhc" to="rvbb:~ProjectPane" resolve="ProjectPane" />
+                                    <node concept="2OqwBi" id="26E6nZcN8WR" role="37wK5m">
+                                      <node concept="2OqwBi" id="26E6nZcN8xx" role="2Oq$k0">
+                                        <node concept="1Q80Hx" id="26E6nZcN88O" role="2Oq$k0" />
+                                        <node concept="liA8E" id="26E6nZcN8Lp" role="2OqNvi">
+                                          <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="26E6nZcN9fU" role="2OqNvi">
+                                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="26E6nZcNaPk" role="2OqNvi">
+                                    <ref role="37wK5l" to="rvbb:~BaseLogicalViewProjectPane.getProjectView()" resolve="getProjectView" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="26E6nZcNbBC" role="2OqNvi">
+                                  <ref role="37wK5l" to="bnjk:~ProjectView.refresh()" resolve="refresh" />
                                 </node>
                               </node>
                             </node>
