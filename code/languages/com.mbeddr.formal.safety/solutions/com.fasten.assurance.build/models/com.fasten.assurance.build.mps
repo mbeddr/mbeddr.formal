@@ -5557,14 +5557,14 @@
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
-        <node concept="1SiIV0" id="8xY_IhvzOH" role="3bR37C">
-          <node concept="3bR9La" id="8xY_IhvzOI" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="_yKhEdNKS_" role="3bR37C">
           <node concept="1Busua" id="_yKhEdNKSA" role="1SiIV1">
             <ref role="1Busuk" node="6hyv0iVPlG3" resolve="com.mbeddr.formal.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="26E6nZcRD$S" role="3bR37C">
+          <node concept="1Busua" id="26E6nZcRD$T" role="1SiIV1">
+            <ref role="1Busuk" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
           </node>
         </node>
       </node>
