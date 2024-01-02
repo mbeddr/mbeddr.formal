@@ -5,6 +5,7 @@
     <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="c38abce1-4c09-44cb-9ebf-2a764e824bb5" name="com.mbeddr.mpsutil.actionsfilter" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -218,6 +219,15 @@
       <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
         <property id="1863527487546097500" name="moduleId" index="1XweGW" />
         <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
+      </concept>
+    </language>
+    <language id="c38abce1-4c09-44cb-9ebf-2a764e824bb5" name="com.mbeddr.mpsutil.actionsfilter">
+      <concept id="6552539437647632793" name="com.mbeddr.mpsutil.actionsfilter.structure.RemoveAction" flags="ng" index="2flH9Z">
+        <property id="6552539437647632800" name="actionId" index="2flH96" />
+      </concept>
+      <concept id="6552539437647632745" name="com.mbeddr.mpsutil.actionsfilter.structure.ActionsProfile" flags="ng" index="2flHaf">
+        <property id="3224768364827527719" name="isActiveByDefault" index="CHIup" />
+        <child id="6552539437647632794" name="actions" index="2flH9W" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1434,6 +1444,25 @@
         <property role="3V$3am" value="reference" />
         <property role="3V$3ak" value="28f9e497-3b42-4291-aeba-0a1039153ab1/1207145163717/1207145201301" />
       </node>
+    </node>
+  </node>
+  <node concept="2flHaf" id="2ToO$l33Glv">
+    <property role="TrG5h" value="FASTEN Actions Filter" />
+    <property role="CHIup" value="true" />
+    <node concept="2flH9Z" id="bdFrIOrRyq" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.core.base.pluginSolution.plugin.CreateMbeddrModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="1NDILsSDAoK" role="2flH9W">
+      <property role="2flH96" value="com.mbeddr.core.base.pluginSolution.plugin.CreateMbeddrRoots_ActionGroup" />
+    </node>
+    <node concept="2flH9Z" id="bdFrIOrRys" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="bdFrIOrRyv" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubModel_Action" />
+    </node>
+    <node concept="2flH9Z" id="2ToO$l38whw" role="2flH9W">
+      <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubTestModel_Action" />
     </node>
   </node>
 </model>
