@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpfzcQ">
+    <property role="TrG5h" value="extract_from_G1.2.1.5" />
+    <property role="3GE5qa" value="1_nominal_operation.1_2_SDV_design" />
+    <node concept="2vn7WC" id="1e9opmpdFFG" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHfP" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKD" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements are appropriately&#10;developed from system requirements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFFI" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHfQ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKE" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements are comprehensive" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFFK" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHfR" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKF" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements elicitation checklist" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFFM" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHfS" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKG" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements elicitation peer&#10;review " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFFO" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHfT" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKH" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements coverage to use&#10;cases " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFFQ" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHfU" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKI" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements coverage to misuse&#10;cases " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFFS" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHfV" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKJ" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements coverage to product&#10;lifecycle " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFFU" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHfW" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKK" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements traceability to&#10;safety and system requirements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFFW" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.1.7" />
+      <node concept="19SGf9" id="1e9opmpdHfX" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKL" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements traceability to&#10;hardware architecture " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFFY" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHfY" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKM" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements are verified for&#10;gaps and omissions " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFG0" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHfZ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKN" role="19SJt6">
+          <property role="19SUeA" value="Structured walk-through " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFG2" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHg0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKO" role="19SJt6">
+          <property role="19SUeA" value="Review of requirements and scenarios&#10;/ use cases " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFG4" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHg1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKP" role="19SJt6">
+          <property role="19SUeA" value="Requirements gaps/omissions and requirements&#10;defects " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFG6" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHg2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKQ" role="19SJt6">
+          <property role="19SUeA" value="Response to violation of requirement&#10;assumptions " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFG8" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.5.3" />
+      <node concept="19SGf9" id="1e9opmpdHg3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKR" role="19SJt6">
+          <property role="19SUeA" value="Hardware requirements are verified to&#10;be internally and externally consistent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFGa" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHg4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKS" role="19SJt6">
+          <property role="19SUeA" value="Requirements authoring style guide " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFGc" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHg5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKT" role="19SJt6">
+          <property role="19SUeA" value="Requirements review checklist " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFGe" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.5.4" />
+      <node concept="19SGf9" id="1e9opmpdHg6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKU" role="19SJt6">
+          <property role="19SUeA" value="Requirements errors follow a systematic&#10;process for root cause and mitigation" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFGg" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHg7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKV" role="19SJt6">
+          <property role="19SUeA" value="Anomaly resolution process.  See G3 for&#10;details " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFGi" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.5.5" />
+      <node concept="19SGf9" id="1e9opmpdHg8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKW" role="19SJt6">
+          <property role="19SUeA" value="An accurate, complete, configuration-managed&#10;hardware architecture model is developed&#10;and maintained " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFGk" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHg9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKX" role="19SJt6">
+          <property role="19SUeA" value="HW functional architecture description" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFGm" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHga" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKY" role="19SJt6">
+          <property role="19SUeA" value="HW physical architecture description" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFGo" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.5.3" />
+      <node concept="19SGf9" id="1e9opmpdHgb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJKZ" role="19SJt6">
+          <property role="19SUeA" value="HW functionality mapped to architecture&#10;elements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFGq" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.5.5.4" />
+      <node concept="19SGf9" id="1e9opmpdHgc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJL0" role="19SJt6">
+          <property role="19SUeA" value="HW configuration definition " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFJ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFG" resolve="G1.2.1.5" />
+      <ref role="3VeSjQ" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFL" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFFK" resolve="Sn1.2.1.5.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFN" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFFM" resolve="Sn1.2.1.5.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFP" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFFO" resolve="Sn1.2.1.5.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFR" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFFQ" resolve="Sn1.2.1.5.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFT" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFFS" resolve="Sn1.2.1.5.1.5" />
+      <ref role="3VeSjP" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFV" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFFU" resolve="Sn1.2.1.5.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFX" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFFW" resolve="Sn1.2.1.5.1.7" />
+      <ref role="3VeSjP" node="1e9opmpdFFI" resolve="G1.2.1.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFFZ" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFFY" resolve="G1.2.1.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdFFG" resolve="G1.2.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFG1" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFG0" resolve="Sn1.2.1.5.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdFFY" resolve="G1.2.1.5.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFG3" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFG2" resolve="Sn1.2.1.5.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdFFY" resolve="G1.2.1.5.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFG5" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFY" resolve="G1.2.1.5.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFG4" resolve="Sn1.2.1.5.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFG7" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFY" resolve="G1.2.1.5.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFG6" resolve="Sn1.2.1.5.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFG9" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFFG" resolve="G1.2.1.5" />
+      <ref role="3VeSjQ" node="1e9opmpdFG8" resolve="G1.2.1.5.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGb" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGa" resolve="Sn1.2.1.5.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdFG8" resolve="G1.2.1.5.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGd" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGc" resolve="Sn1.2.1.5.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdFG8" resolve="G1.2.1.5.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGf" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGe" resolve="G1.2.1.5.4" />
+      <ref role="3VeSjP" node="1e9opmpdFFG" resolve="G1.2.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGh" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGg" resolve="Sn1.2.1.5.4.1" />
+      <ref role="3VeSjP" node="1e9opmpdFGe" resolve="G1.2.1.5.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGj" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGi" resolve="G1.2.1.5.5" />
+      <ref role="3VeSjP" node="1e9opmpdFFG" resolve="G1.2.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGl" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGk" resolve="Sn1.2.1.5.5.1" />
+      <ref role="3VeSjP" node="1e9opmpdFGi" resolve="G1.2.1.5.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGn" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGm" resolve="Sn1.2.1.5.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdFGi" resolve="G1.2.1.5.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGp" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFGo" resolve="Sn1.2.1.5.5.3" />
+      <ref role="3VeSjP" node="1e9opmpdFGi" resolve="G1.2.1.5.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFGr" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFGi" resolve="G1.2.1.5.5" />
+      <ref role="3VeSjQ" node="1e9opmpdFGq" resolve="Sn1.2.1.5.5.4" />
+    </node>
+  </node>
+</model>
+

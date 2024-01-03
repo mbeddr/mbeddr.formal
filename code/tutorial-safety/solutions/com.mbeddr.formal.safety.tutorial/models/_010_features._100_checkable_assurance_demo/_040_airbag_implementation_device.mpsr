@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:c5a55244-77a5-42ce-8f29-e1a72cf99b7f(_010_features._100_checkable_assurance_demo)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="2685719935121672208" name="com.mbeddr.formal.nusmv.cbd.structure.Refine" flags="ng" index="eml0t">
+        <child id="2685719935121672270" name="moduleRef" index="eml13" />
+        <child id="2685719935121672265" name="interfaceRef" index="eml14" />
+      </concept>
+      <concept id="2685719935121672279" name="com.mbeddr.formal.nusmv.cbd.structure.ModuleRef" flags="ng" index="eml1q">
+        <reference id="2685719935121672280" name="module" index="eml1l" />
+      </concept>
+    </language>
+    <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
+      <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
+    </language>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
+        <child id="7842584090744231304" name="value" index="2H9I4_" />
+        <child id="7842584090744231298" name="guard" index="2H9I4J" />
+      </concept>
+      <concept id="7842584090744230922" name="com.mbeddr.formal.nusmv.structure.CaseExpression" flags="ng" index="2H9I2B">
+        <child id="7842584090744230924" name="cases" index="2H9I2x" />
+      </concept>
+      <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
+      <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
+      <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
+      </concept>
+      <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
+        <child id="7842584090743586905" name="content" index="2HcbjO" />
+        <child id="7842584090743385207" name="params" index="2Hdtzq" />
+      </concept>
+      <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
+        <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
+      </concept>
+      <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
+      <concept id="7842584090743880820" name="com.mbeddr.formal.nusmv.structure.AssignmentsSection" flags="ng" index="2Hfkzp">
+        <child id="7842584090743880984" name="assignments" index="2HfkAP" />
+      </concept>
+      <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
+        <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="7842584090743880983" name="com.mbeddr.formal.nusmv.structure.AbstractAssignment" flags="ng" index="2HfkAU">
+        <child id="7842584090743943213" name="rhs" index="2He$i0" />
+        <child id="7842584090743943207" name="lhs" index="2He$ia" />
+      </concept>
+      <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
+        <child id="1989356068342053586" name="definitions" index="32O2ov" />
+      </concept>
+      <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
+        <reference id="1989356068341979926" name="param" index="32Ogvr" />
+      </concept>
+      <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
+      <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
+      <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
+        <child id="8482728081211544406" name="rhs" index="1zoetD" />
+      </concept>
+    </language>
+    <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
+        <child id="7842584090744231480" name="right" index="2H9Ial" />
+        <child id="7842584090744231474" name="left" index="2H9Iav" />
+      </concept>
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="7526568111198989908" name="com.mbeddr.formal.nusmv.ext.structure.EnumDeclaration" flags="ng" index="2XJXe5">
+        <child id="7526568111198989997" name="members" index="2XJXdW" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
+        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HdtXS" id="2iCnExZGrZ_">
+    <property role="TrG5h" value="_040_airbag_implementation_device" />
+    <node concept="2XJXe5" id="2iCnExZGvLy" role="2HcuB8">
+      <property role="TrG5h" value="message_types_enum" />
+      <node concept="2Hdrtq" id="2iCnExZGvMJ" role="2XJXdW">
+        <property role="TrG5h" value="no_message" />
+      </node>
+      <node concept="2Hdrtq" id="2iCnExZGvME" role="2XJXdW">
+        <property role="TrG5h" value="explode" />
+      </node>
+      <node concept="2Hdrtq" id="2iCnExZGvMG" role="2XJXdW">
+        <property role="TrG5h" value="other_message" />
+      </node>
+    </node>
+    <node concept="2Hdtz0" id="2iCnExZGrZE" role="2HcuB8">
+      <property role="TrG5h" value="device_impl" />
+      <node concept="32O2o0" id="2iCnExZGs3$" role="2HcbjO">
+        <node concept="JlCpM" id="2iCnExZGs4q" role="32O2ov">
+          <property role="TrG5h" value="exploded" />
+          <node concept="2He$iJ" id="2iCnExZGs9B" role="1zoetD">
+            <ref role="2He$iI" node="2iCnExZGs5T" resolve="my_exploded" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="2iCnExZGs5D" role="2HcbjO">
+        <node concept="2Hdskp" id="2iCnExZGs5T" role="2Hfkx9">
+          <property role="TrG5h" value="my_exploded" />
+          <node concept="2Hds6S" id="2iCnExZGs6p" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="2iCnExZGsaq" role="2HcbjO">
+        <node concept="2HfkAV" id="2iCnExZGsbA" role="2HfkAP">
+          <node concept="2He$iJ" id="2iCnExZGsbW" role="2He$ia">
+            <ref role="2He$iI" node="2iCnExZGs5T" resolve="my_exploded" />
+          </node>
+          <node concept="1yCjT0" id="2iCnExZGscd" role="2He$i0" />
+        </node>
+        <node concept="2HevG6" id="2iCnExZGsbc" role="2HfkAP">
+          <node concept="2He$iJ" id="2iCnExZGsbq" role="2He$ia">
+            <ref role="2He$iI" node="2iCnExZGs5T" resolve="my_exploded" />
+          </node>
+          <node concept="2H9I2B" id="2iCnExZGscD" role="2He$i0">
+            <node concept="2H9I2A" id="2iCnExZGsdF" role="2H9I2x">
+              <node concept="2HbMbg" id="2iCnExZGshR" role="2H9I4J">
+                <node concept="2HbMbg" id="2iCnExZGshS" role="2H9Iav">
+                  <node concept="2HbLFT" id="2iCnExZGshT" role="2H9Iav">
+                    <node concept="32Ogvo" id="2iCnExZGsdE" role="2H9Iav">
+                      <ref role="32Ogvr" node="2iCnExZGs3W" resolve="message" />
+                    </node>
+                    <node concept="2HeeqP" id="2iCnExZGvMO" role="2H9Ial">
+                      <ref role="2HeeqO" node="2iCnExZGvME" resolve="explode" />
+                    </node>
+                  </node>
+                  <node concept="32Ogvo" id="2iCnExZGseT" role="2H9Ial">
+                    <ref role="32Ogvr" node="2iCnExZGs3F" resolve="NewDataAvailable" />
+                  </node>
+                </node>
+                <node concept="32Ogvo" id="2iCnExZGsfB" role="2H9Ial">
+                  <ref role="32Ogvr" node="2iCnExZGs3S" resolve="ValidCRC" />
+                </node>
+              </node>
+              <node concept="1yCjRe" id="2iCnExZGsjX" role="2H9I4_" />
+            </node>
+            <node concept="2H9I2A" id="2iCnExZGskC" role="2H9I2x">
+              <node concept="1yCjRe" id="2iCnExZGskA" role="2H9I4J" />
+              <node concept="2He$iJ" id="2iCnExZKuwt" role="2H9I4_">
+                <ref role="2He$iI" node="2iCnExZGs5T" resolve="my_exploded" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="2iCnExZGs3F" role="2Hdtzq">
+        <property role="TrG5h" value="NewDataAvailable" />
+      </node>
+      <node concept="2Hdtzr" id="2iCnExZGs3S" role="2Hdtzq">
+        <property role="TrG5h" value="ValidCRC" />
+      </node>
+      <node concept="2Hdtzr" id="2iCnExZGs3W" role="2Hdtzq">
+        <property role="TrG5h" value="message" />
+      </node>
+    </node>
+    <node concept="eml0t" id="2iCnExZGsuh" role="2HcuB8">
+      <property role="TrG5h" value="device_2_device_impl" />
+      <node concept="3Ug1AZ" id="68hjykAQtoh" role="eml14">
+        <ref role="3Ug1AY" node="65VbbGlC$Mz" resolve="Device" />
+      </node>
+      <node concept="eml1q" id="2iCnExZGsvv" role="eml13">
+        <ref role="eml1l" node="2iCnExZGrZE" resolve="device_impl" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="2iCnExZGrZA" role="2HcuB8" />
+  </node>
+</model>
+

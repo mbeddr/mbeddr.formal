@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:5c521345-fa17-4da4-84c9-85fa0d8abf06(_100_examples._030_adas._020_automated_evasion_maneuver._050_architecture)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
+    </language>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="2406721343445433420" name="com.mbeddr.formal.nusmv.ext.structure.StructType" flags="ng" index="1s31w3">
+        <reference id="2406721343445433421" name="structDeclaration" index="1s31w2" />
+      </concept>
+      <concept id="2406721343445432986" name="com.mbeddr.formal.nusmv.ext.structure.StructDeclaration" flags="ng" index="1s31Vl" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
+      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
+    </language>
+  </registry>
+  <node concept="2HdtXS" id="_wUu$UbzVf">
+    <property role="TrG5h" value="_040_collision_avoidance_monitor" />
+    <property role="3GE5qa" value="_010_structure_view" />
+    <node concept="1s31Vl" id="41_NtXJuDjp" role="2HcuB8">
+      <property role="TrG5h" value="ShortTermRegionOfNonCollision" />
+    </node>
+    <node concept="2SQmWS" id="41_NtXJuDjV" role="2HcuB8" />
+    <node concept="2dDAVa" id="_wUu$UbzVh" role="2HcuB8">
+      <property role="TrG5h" value="ComplementaryADS" />
+      <node concept="3UnI9n" id="_wUu$UbzYZ" role="3UnI90">
+        <property role="TrG5h" value="shortTermTrajectory" />
+        <node concept="1s31w3" id="41_NtXJuDk_" role="3UnI80">
+          <ref role="1s31w2" node="41_NtXJuDjp" resolve="ShortTermRegionOfNonCollision" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$UbzVj" role="3UnI9m">
+        <property role="TrG5h" value="frontRadar" />
+        <node concept="1s31w3" id="_wUu$UbzVG" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOK3l" resolve="RadarData" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$UbzWc" role="3UnI9m">
+        <property role="TrG5h" value="backRadar" />
+        <node concept="1s31w3" id="_wUu$UbzWd" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOK3l" resolve="RadarData" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$UbzWt" role="3UnI9m">
+        <property role="TrG5h" value="frontCamera" />
+        <node concept="1s31w3" id="_wUu$UbzWV" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOJYp" resolve="CameraData" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$UbzX2" role="3UnI9m">
+        <property role="TrG5h" value="backCamera" />
+        <node concept="1s31w3" id="_wUu$UbzXw" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOJYp" resolve="CameraData" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$UbzXB" role="3UnI9m">
+        <property role="TrG5h" value="leftCamera" />
+        <node concept="1s31w3" id="_wUu$UbzY5" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOJYp" resolve="CameraData" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$UbzYc" role="3UnI9m">
+        <property role="TrG5h" value="rightCamera" />
+        <node concept="1s31w3" id="_wUu$UbzYS" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOJYp" resolve="CameraData" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="_wUu$Ub$cP" role="2HcuB8" />
+    <node concept="1s31Vl" id="41_NtXJuCL$" role="2HcuB8">
+      <property role="TrG5h" value="SanityCheckerState" />
+    </node>
+    <node concept="2SQmWS" id="41_NtXJuCNu" role="2HcuB8" />
+    <node concept="2dDAVa" id="_wUu$Ub$c3" role="2HcuB8">
+      <property role="TrG5h" value="SanityChecker" />
+      <node concept="3UnI9n" id="_wUu$Ub$c4" role="3UnI90">
+        <property role="TrG5h" value="driverTakeoverRequest" />
+        <node concept="2Hds6S" id="_wUu$Ub$eI" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="_wUu$Ub$eP" role="3UnI90">
+        <property role="TrG5h" value="trajectory" />
+        <node concept="1s31w3" id="_wUu$Ub$fI" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOKZb" resolve="Trajectory" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$Ub$c6" role="3UnI9m">
+        <property role="TrG5h" value="shortTermTrajectories" />
+        <node concept="1s31w3" id="41_NtXJuDkL" role="3UnI80">
+          <ref role="1s31w2" node="41_NtXJuDjp" resolve="ShortTermRegionOfNonCollision" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="_wUu$Ub$c8" role="3UnI9m">
+        <property role="TrG5h" value="longTermTrajectory" />
+        <node concept="1s31w3" id="_wUu$Ub$e3" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOKZb" resolve="Trajectory" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

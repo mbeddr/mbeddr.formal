@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_students_lab._030_safe_emergency_break)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="ee4e" ref="r:6df6dea3-0ed6-4204-928b-52b619b721ef(_100_examples._020_adas_students_lab._020_safe_acc)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="2685719935121672208" name="com.mbeddr.formal.nusmv.cbd.structure.Refine" flags="ng" index="eml0t">
+        <child id="2685719935121672270" name="moduleRef" index="eml13" />
+        <child id="2685719935121672265" name="interfaceRef" index="eml14" />
+      </concept>
+      <concept id="2685719935121672279" name="com.mbeddr.formal.nusmv.cbd.structure.ModuleRef" flags="ng" index="eml1q">
+        <reference id="2685719935121672280" name="module" index="eml1l" />
+      </concept>
+    </language>
+    <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
+      <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
+    </language>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781866635522" name="com.mbeddr.formal.nusmv.structure.ConditionalExpression" flags="ng" index="d4bQV">
+        <child id="2295987781866647186" name="thenExpr" index="d498F" />
+        <child id="2295987781866647191" name="elseExpr" index="d498I" />
+        <child id="2295987781866647183" name="cond" index="d498Q" />
+      </concept>
+      <concept id="2858146662931636880" name="com.mbeddr.formal.nusmv.structure.GreaterExpression" flags="ng" index="nE0YJ" />
+      <concept id="2858146662931636879" name="com.mbeddr.formal.nusmv.structure.LessEqualsExpression" flags="ng" index="nE0YK" />
+      <concept id="2858146662931636878" name="com.mbeddr.formal.nusmv.structure.LessExpression" flags="ng" index="nE0YL" />
+      <concept id="2707707741262126533" name="com.mbeddr.formal.nusmv.structure.EmptyModuleContent" flags="ng" index="s4Ewt" />
+      <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
+      <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
+      <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
+      </concept>
+      <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
+        <child id="7842584090743586905" name="content" index="2HcbjO" />
+        <child id="7842584090743385207" name="params" index="2Hdtzq" />
+      </concept>
+      <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
+        <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
+      </concept>
+      <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
+      <concept id="7842584090744023973" name="com.mbeddr.formal.nusmv.structure.EmptyAssignment" flags="ng" index="2HeLW8" />
+      <concept id="7842584090743880820" name="com.mbeddr.formal.nusmv.structure.AssignmentsSection" flags="ng" index="2Hfkzp">
+        <child id="7842584090743880984" name="assignments" index="2HfkAP" />
+      </concept>
+      <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
+        <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="7842584090743880983" name="com.mbeddr.formal.nusmv.structure.AbstractAssignment" flags="ng" index="2HfkAU">
+        <child id="7842584090743943213" name="rhs" index="2He$i0" />
+        <child id="7842584090743943207" name="lhs" index="2He$ia" />
+      </concept>
+      <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
+        <child id="1989356068342053586" name="definitions" index="32O2ov" />
+      </concept>
+      <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
+        <reference id="1989356068341979926" name="param" index="32Ogvr" />
+      </concept>
+      <concept id="5536191589037395463" name="com.mbeddr.formal.nusmv.structure.EmptyVariableDeclaration" flags="ng" index="1tKcVG" />
+      <concept id="8482728081216289970" name="com.mbeddr.formal.nusmv.structure.NotExpression" flags="ng" index="1yA0yd" />
+      <concept id="8482728081215818225" name="com.mbeddr.formal.nusmv.structure.TrueLiteral" flags="ng" index="1yCjRe" />
+      <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
+      <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
+        <child id="8482728081211544406" name="rhs" index="1zoetD" />
+      </concept>
+      <concept id="4678075609353342594" name="com.mbeddr.formal.nusmv.structure.DefineRef" flags="ng" index="1J1L9T">
+        <reference id="4678075609353342595" name="def" index="1J1L9S" />
+      </concept>
+    </language>
+    <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744251143" name="com.mbeddr.formal.base.expressions.structure.DivisionExpression" flags="ng" index="2H9DuE" />
+      <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
+        <child id="7842584090744231480" name="right" index="2H9Ial" />
+        <child id="7842584090744231474" name="left" index="2H9Iav" />
+      </concept>
+      <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
+        <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
+      <concept id="1989356068341840849" name="com.mbeddr.formal.base.expressions.structure.ParensExpression" flags="ng" index="32OYss" />
+      <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
+        <child id="1989356068341840820" name="exp" index="32OYtT" />
+      </concept>
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="1454643446872240070" name="com.mbeddr.formal.nusmv.ext.structure.ConstantRef" flags="ng" index="hx854">
+        <reference id="1454643446872241658" name="constant" index="hx9HS" />
+      </concept>
+      <concept id="7526568111199936003" name="com.mbeddr.formal.nusmv.ext.structure.IntervalTypeExtended" flags="ng" index="2XEmfi">
+        <reference id="7526568111199936004" name="intervalDeclaration" index="2XEmfl" />
+      </concept>
+      <concept id="7526568111198989908" name="com.mbeddr.formal.nusmv.ext.structure.EnumDeclaration" flags="ng" index="2XJXe5">
+        <child id="7526568111198989997" name="members" index="2XJXdW" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
+        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HdtXS" id="2Q6_IeFkfKQ">
+    <property role="TrG5h" value="_206_eb_implementation" />
+    <node concept="1X3_iC" id="2r$08YM5_E5" role="lGtFl">
+      <property role="3V$3am" value="content" />
+      <property role="3V$3ak" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/7842584090743385045/7842584090743643493" />
+      <node concept="2XJXe5" id="7hUqFOkxssl" role="8Wnug">
+        <property role="TrG5h" value="enum_state" />
+        <node concept="2Hdrtq" id="7hUqFOkxssm" role="2XJXdW">
+          <property role="TrG5h" value="sensor_fail" />
+        </node>
+        <node concept="2Hdrtq" id="7hUqFOkxssn" role="2XJXdW">
+          <property role="TrG5h" value="ok" />
+        </node>
+        <node concept="2Hdrtq" id="7hUqFOkxsso" role="2XJXdW">
+          <property role="TrG5h" value="eb_fail" />
+        </node>
+        <node concept="2Hdrtq" id="7hUqFOkxssp" role="2XJXdW">
+          <property role="TrG5h" value="driver_engages" />
+        </node>
+        <node concept="2Hdrtq" id="7hUqFOkxssq" role="2XJXdW">
+          <property role="TrG5h" value="warning" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="2Q6_IeFkfKS" role="2HcuB8" />
+    <node concept="2SQmWS" id="6MaWlu$kFbp" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6MaWlu$kFck" role="2HcuB8">
+      <property role="TrG5h" value="EB_Control_Unit_Implementation" />
+      <node concept="32O2o0" id="6MaWlu$kFfE" role="2HcbjO">
+        <node concept="JlCpM" id="4pSWRNV3Yog" role="32O2ov">
+          <property role="TrG5h" value="state" />
+          <node concept="d4bQV" id="4pSWRNV3Ypp" role="1zoetD">
+            <node concept="2HeeqP" id="4pSWRNV3YIE" role="d498F">
+              <ref role="2HeeqO" node="7hUqFOkxssq" resolve="warning" />
+            </node>
+            <node concept="2HeeqP" id="4pSWRNV3YIZ" role="d498I">
+              <ref role="2HeeqO" node="7hUqFOkxssn" resolve="ok" />
+            </node>
+            <node concept="32OYss" id="4pSWRNV3Yoh" role="d498Q">
+              <node concept="2HbMbg" id="4pSWRNV3Yoi" role="32OYtT">
+                <node concept="32OYss" id="4pSWRNV3Yoj" role="2H9Iav">
+                  <node concept="2HbMDt" id="4pSWRNV3Yok" role="32OYtT">
+                    <node concept="2HbMDt" id="4pSWRNV3Yol" role="2H9Iav">
+                      <node concept="32Ogvo" id="4pSWRNV3XuB" role="2H9Iav">
+                        <ref role="32Ogvr" node="6MaWlu$kFfz" resolve="alert" />
+                      </node>
+                      <node concept="32OYss" id="4pSWRNV3Yom" role="2H9Ial">
+                        <node concept="nE0YK" id="4pSWRNV3Yon" role="32OYtT">
+                          <node concept="32OYss" id="4pSWRNV3Yoo" role="2H9Iav">
+                            <node concept="2H9DuE" id="4pSWRNV3Yop" role="32OYtT">
+                              <node concept="32Ogvo" id="4pSWRNV3XuG" role="2H9Iav">
+                                <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                              </node>
+                              <node concept="32Ogvo" id="4pSWRNV3XuH" role="2H9Ial">
+                                <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="hx854" id="4pSWRNV3XuI" role="2H9Ial">
+                            <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="32OYss" id="4pSWRNV3Yoq" role="2H9Ial">
+                      <node concept="nE0YK" id="4pSWRNV3Yor" role="32OYtT">
+                        <node concept="32OYss" id="4pSWRNV3Yos" role="2H9Iav">
+                          <node concept="2H9DuE" id="4pSWRNV3Yot" role="32OYtT">
+                            <node concept="32Ogvo" id="4pSWRNV3XuN" role="2H9Iav">
+                              <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                            </node>
+                            <node concept="32Ogvo" id="4pSWRNV3XuO" role="2H9Ial">
+                              <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="hx854" id="4pSWRNV3XuP" role="2H9Ial">
+                          <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1yA0yd" id="4pSWRNV3You" role="2H9Ial">
+                  <node concept="32Ogvo" id="4pSWRNV3XuR" role="32OYtT">
+                    <ref role="32Ogvr" node="6MaWlu$kFfh" resolve="accelerating" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="JlCpM" id="4pSWRNV3Tnu" role="32O2ov">
+          <property role="TrG5h" value="warning_out" />
+          <node concept="2He$iJ" id="6i8f1VRXKmH" role="1zoetD">
+            <ref role="2He$iI" node="6i8f1VRXKi4" resolve="my_warning" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="6i8f1VRXKgJ" role="32O2ov">
+          <property role="TrG5h" value="brake" />
+          <node concept="2He$iJ" id="6i8f1VRXKhC" role="1zoetD">
+            <ref role="2He$iI" node="6i8f1VRXK5w" resolve="my_brake" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="6i8f1VRXK4q" role="2HcbjO">
+        <node concept="2Hdskp" id="6i8f1VRXK5w" role="2Hfkx9">
+          <property role="TrG5h" value="my_brake" />
+          <node concept="2XEmfi" id="6i8f1VRXK5Q" role="2HdssA">
+            <ref role="2XEmfl" to="ee4e:SQH6SzHC8S" resolve="brake_t" />
+          </node>
+        </node>
+        <node concept="2Hdskp" id="6i8f1VRXKi4" role="2Hfkx9">
+          <property role="TrG5h" value="my_warning" />
+          <node concept="2Hds6S" id="6i8f1VRXKiN" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="6i8f1VRXK7f" role="2HcbjO">
+        <node concept="2HfkAV" id="6i8f1VRXK8k" role="2HfkAP">
+          <node concept="2He$iJ" id="6i8f1VRXK8L" role="2He$ia">
+            <ref role="2He$iI" node="6i8f1VRXK5w" resolve="my_brake" />
+          </node>
+          <node concept="2IPVmt" id="6i8f1VRXK92" role="2He$i0">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+        <node concept="2HfkAV" id="6i8f1VRXKjd" role="2HfkAP">
+          <node concept="2He$iJ" id="6i8f1VRXKk2" role="2He$ia">
+            <ref role="2He$iI" node="6i8f1VRXKi4" resolve="my_warning" />
+          </node>
+          <node concept="1yCjT0" id="6i8f1VRXKkj" role="2He$i0" />
+        </node>
+        <node concept="2HevG6" id="6i8f1VRXK9Y" role="2HfkAP">
+          <node concept="2He$iJ" id="6i8f1VRXKau" role="2He$ia">
+            <ref role="2He$iI" node="6i8f1VRXK5w" resolve="my_brake" />
+          </node>
+          <node concept="2HbMbg" id="6i8f1VRXKaF" role="2He$i0">
+            <node concept="32OYss" id="6i8f1VRXKaG" role="2H9Iav">
+              <node concept="nE0YK" id="6i8f1VRXKaH" role="32OYtT">
+                <node concept="32OYss" id="6i8f1VRXKaI" role="2H9Iav">
+                  <node concept="2H9DuE" id="6i8f1VRXKaJ" role="32OYtT">
+                    <node concept="32Ogvo" id="6i8f1VRXKaK" role="2H9Iav">
+                      <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                    </node>
+                    <node concept="32Ogvo" id="6i8f1VRXKaL" role="2H9Ial">
+                      <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="hx854" id="6i8f1VRXKaM" role="2H9Ial">
+                  <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
+                </node>
+              </node>
+            </node>
+            <node concept="32OYss" id="6i8f1VRXKaN" role="2H9Ial">
+              <node concept="1yA0yd" id="6i8f1VRXKaO" role="32OYtT">
+                <node concept="32Ogvo" id="6i8f1VRXKaP" role="32OYtT">
+                  <ref role="32Ogvr" node="6MaWlu$kFfh" resolve="accelerating" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2HevG6" id="6i8f1VRXKkR" role="2HfkAP">
+          <node concept="2He$iJ" id="6i8f1VRXKlF" role="2He$ia">
+            <ref role="2He$iI" node="6i8f1VRXKi4" resolve="my_warning" />
+          </node>
+          <node concept="2HbMbg" id="4pSWRNV3Tnv" role="2He$i0">
+            <node concept="32OYss" id="4pSWRNV3Tnw" role="2H9Iav">
+              <node concept="2HbMDt" id="4pSWRNV3Tnx" role="32OYtT">
+                <node concept="2HbMDt" id="4pSWRNV3Tny" role="2H9Iav">
+                  <node concept="32Ogvo" id="4pSWRNV3SPC" role="2H9Iav">
+                    <ref role="32Ogvr" node="6MaWlu$kFfz" resolve="alert" />
+                  </node>
+                  <node concept="32OYss" id="4pSWRNV3Tnz" role="2H9Ial">
+                    <node concept="nE0YK" id="4pSWRNV3Tn$" role="32OYtT">
+                      <node concept="32OYss" id="4pSWRNV3Tn_" role="2H9Iav">
+                        <node concept="2H9DuE" id="4pSWRNV3TnA" role="32OYtT">
+                          <node concept="32Ogvo" id="4pSWRNV3SQV" role="2H9Iav">
+                            <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                          </node>
+                          <node concept="32Ogvo" id="4pSWRNV3SSM" role="2H9Ial">
+                            <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="hx854" id="4pSWRNV3SQ7" role="2H9Ial">
+                        <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="32OYss" id="4pSWRNV3TnB" role="2H9Ial">
+                  <node concept="nE0YK" id="4pSWRNV3TnC" role="32OYtT">
+                    <node concept="32OYss" id="4pSWRNV3TnD" role="2H9Iav">
+                      <node concept="2H9DuE" id="4pSWRNV3TnE" role="32OYtT">
+                        <node concept="32Ogvo" id="4pSWRNV3STO" role="2H9Iav">
+                          <ref role="32Ogvr" node="6MaWlu$kFfo" resolve="distance_front" />
+                        </node>
+                        <node concept="32Ogvo" id="4pSWRNV3STK" role="2H9Ial">
+                          <ref role="32Ogvr" node="6MaWlu$kFft" resolve="reference_velocity" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="hx854" id="4pSWRNV3STy" role="2H9Ial">
+                      <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1yA0yd" id="4pSWRNV3TnF" role="2H9Ial">
+              <node concept="32Ogvo" id="4pSWRNV3SXw" role="32OYtT">
+                <ref role="32Ogvr" node="6MaWlu$kFfh" resolve="accelerating" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kFff" role="2Hdtzq">
+        <property role="TrG5h" value="braking" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kFfh" role="2Hdtzq">
+        <property role="TrG5h" value="accelerating" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kFfk" role="2Hdtzq">
+        <property role="TrG5h" value="current_speed" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kFfo" role="2Hdtzq">
+        <property role="TrG5h" value="distance_front" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kFft" role="2Hdtzq">
+        <property role="TrG5h" value="reference_velocity" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kFfz" role="2Hdtzq">
+        <property role="TrG5h" value="alert" />
+      </node>
+    </node>
+    <node concept="eml0t" id="6MaWlu$kFdq" role="2HcuB8">
+      <property role="TrG5h" value="EB_Control_Unit_Refinement" />
+      <node concept="3Ug1AZ" id="6MaWlu$kFf8" role="eml14">
+        <ref role="3Ug1AY" node="4tgWazNvqpn" resolve="EB_Control_Unit" />
+      </node>
+      <node concept="eml1q" id="6MaWlu$kFfb" role="eml13">
+        <ref role="eml1l" node="6MaWlu$kFck" resolve="EB_Control_Unit_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6MaWlu$kFcU" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6MaWlu$kFjA" role="2HcuB8">
+      <property role="TrG5h" value="Ultrasound_Sensor_Implementation" />
+      <node concept="32O2o0" id="6MaWlu$kFkq" role="2HcbjO">
+        <node concept="JlCpM" id="7hUqFOkxspt" role="32O2ov">
+          <property role="TrG5h" value="distance" />
+          <node concept="d4bQV" id="7hUqFOkxspF" role="1zoetD">
+            <node concept="hx854" id="7hUqFOkxsq9" role="d498F">
+              <ref role="hx9HS" node="6MaWlu$k$iO" resolve="MAX_ULTRA" />
+            </node>
+            <node concept="32Ogvo" id="7hUqFOkxsqB" role="d498I">
+              <ref role="32Ogvr" node="7hUqFOkxqz0" resolve="distance_in" />
+            </node>
+            <node concept="32OYss" id="7hUqFOkxspu" role="d498Q">
+              <node concept="nE0YJ" id="7hUqFOkxspv" role="32OYtT">
+                <node concept="32Ogvo" id="7hUqFOkxsaR" role="2H9Iav">
+                  <ref role="32Ogvr" node="7hUqFOkxqz0" resolve="distance_in" />
+                </node>
+                <node concept="hx854" id="7hUqFOkxsoR" role="2H9Ial">
+                  <ref role="hx9HS" node="6MaWlu$k$iO" resolve="MAX_ULTRA" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="s4Ewt" id="6MaWlu$kFjB" role="2HcbjO" />
+      <node concept="2Hdtzr" id="7hUqFOkxqz0" role="2Hdtzq">
+        <property role="TrG5h" value="distance_in" />
+      </node>
+    </node>
+    <node concept="eml0t" id="7hUqFOkxsxL" role="2HcuB8">
+      <property role="TrG5h" value="Ultrasound_Refinement" />
+      <node concept="3Ug1AZ" id="7hUqFOkxs_I" role="eml14">
+        <ref role="3Ug1AY" node="4tgWazNvqSt" resolve="Ultrasound_Sensor" />
+      </node>
+      <node concept="eml1q" id="7hUqFOkxs_L" role="eml13">
+        <ref role="eml1l" node="6MaWlu$kFjA" resolve="Ultrasound_Sensor_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="7hUqFOkxqwW" role="2HcuB8" />
+    <node concept="2SQmWS" id="6MaWlu$kFmU" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6MaWlu$kFoP" role="2HcuB8">
+      <property role="TrG5h" value="Laser_Sensor_Implementation" />
+      <node concept="32O2o0" id="6MaWlu$kFoQ" role="2HcbjO">
+        <node concept="JlCpM" id="4pSWRNV3vs2" role="32O2ov">
+          <property role="TrG5h" value="distance" />
+          <node concept="d4bQV" id="4pSWRNV3vs3" role="1zoetD">
+            <node concept="hx854" id="4pSWRNV3vss" role="d498F">
+              <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+            </node>
+            <node concept="32Ogvo" id="4pSWRNV3vs5" role="d498I">
+              <ref role="32Ogvr" node="7hUqFOkxqz3" resolve="distance_in" />
+            </node>
+            <node concept="32OYss" id="4pSWRNV3vs6" role="d498Q">
+              <node concept="nE0YJ" id="4pSWRNV3vs7" role="32OYtT">
+                <node concept="32Ogvo" id="4pSWRNV3vs8" role="2H9Iav">
+                  <ref role="32Ogvr" node="7hUqFOkxqz3" resolve="distance_in" />
+                </node>
+                <node concept="hx854" id="4pSWRNV3vso" role="2H9Ial">
+                  <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="s4Ewt" id="6MaWlu$kFoT" role="2HcbjO" />
+      <node concept="2Hdtzr" id="7hUqFOkxqz3" role="2Hdtzq">
+        <property role="TrG5h" value="distance_in" />
+      </node>
+    </node>
+    <node concept="eml0t" id="6MaWlu$kFoU" role="2HcuB8">
+      <property role="TrG5h" value="Laser_Sensor_Refinement" />
+      <node concept="3Ug1AZ" id="6MaWlu$kFq$" role="eml14">
+        <ref role="3Ug1AY" node="4tgWazNvqWb" resolve="Laser_Sensor" />
+      </node>
+      <node concept="eml1q" id="6MaWlu$kFoW" role="eml13">
+        <ref role="eml1l" node="6MaWlu$kFoP" resolve="Laser_Sensor_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6MaWlu$kFoX" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6MaWlu$kFqB" role="2HcuB8">
+      <property role="TrG5h" value="Brake_Implementation" />
+      <node concept="32O2o0" id="6MaWlu$kFrJ" role="2HcbjO">
+        <node concept="JlCpM" id="4pSWRNV40L9" role="32O2ov">
+          <property role="TrG5h" value="braking" />
+          <node concept="d4bQV" id="4pSWRNV40LF" role="1zoetD">
+            <node concept="32OYss" id="4pSWRNV40La" role="d498Q">
+              <node concept="32OYss" id="4pSWRNV40Lc" role="32OYtT">
+                <node concept="nE0YJ" id="4pSWRNV40Nf" role="32OYtT">
+                  <node concept="32Ogvo" id="4pSWRNV40Gv" role="2H9Iav">
+                    <ref role="32Ogvr" node="6MaWlu$kFrE" resolve="push" />
+                  </node>
+                  <node concept="2IPVmt" id="4pSWRNV40Pn" role="2H9Ial">
+                    <property role="2IPVms" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1yCjRe" id="4pSWRNV40PO" role="d498F" />
+            <node concept="1yCjT0" id="4pSWRNV40Ql" role="d498I" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="2r$08YM5BxS" role="32O2ov">
+          <property role="TrG5h" value="brake_out" />
+          <node concept="32Ogvo" id="2r$08YM5BDy" role="1zoetD">
+            <ref role="32Ogvr" node="6MaWlu$kFrE" resolve="push" />
+          </node>
+        </node>
+      </node>
+      <node concept="s4Ewt" id="6MaWlu$kFqC" role="2HcbjO" />
+      <node concept="2Hdtzr" id="6MaWlu$kFrE" role="2Hdtzq">
+        <property role="TrG5h" value="push" />
+      </node>
+      <node concept="2Hdtzr" id="2r$08YM5Bxl" role="2Hdtzq">
+        <property role="TrG5h" value="brake_in" />
+      </node>
+    </node>
+    <node concept="eml0t" id="6MaWlu$kFsK" role="2HcuB8">
+      <property role="TrG5h" value="Brake_Refinement" />
+      <node concept="3Ug1AZ" id="6MaWlu$kFtV" role="eml14">
+        <ref role="3Ug1AY" node="4tgWazNvrdx" resolve="Brake" />
+      </node>
+      <node concept="eml1q" id="6MaWlu$kFtY" role="eml13">
+        <ref role="eml1l" node="6MaWlu$kFqB" resolve="Brake_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4lqXlWx1ZIk" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6MaWlu$kF$U" role="2HcuB8">
+      <property role="TrG5h" value="Speed_Sensor_Impelementation" />
+      <node concept="32O2o0" id="6MaWlu$kFAc" role="2HcbjO">
+        <node concept="JlCpM" id="4pSWRNV3Vv7" role="32O2ov">
+          <property role="TrG5h" value="current_speed" />
+          <node concept="d4bQV" id="4pSWRNV3Vv8" role="1zoetD">
+            <node concept="32OYss" id="4pSWRNV3Vv9" role="d498Q">
+              <node concept="nE0YJ" id="4pSWRNV3Vva" role="32OYtT">
+                <node concept="32Ogvo" id="4pSWRNV3E8a" role="2H9Iav">
+                  <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+                </node>
+                <node concept="hx854" id="4pSWRNV3Vqk" role="2H9Ial">
+                  <ref role="hx9HS" node="4pSWRNV3PC4" resolve="MAX_SPEED" />
+                </node>
+              </node>
+            </node>
+            <node concept="hx854" id="4pSWRNV3Vs6" role="d498F">
+              <ref role="hx9HS" node="4pSWRNV3PC4" resolve="MAX_SPEED" />
+            </node>
+            <node concept="d4bQV" id="4pSWRNV3Vvw" role="d498I">
+              <node concept="hx854" id="4pSWRNV3Vxx" role="d498F">
+                <ref role="hx9HS" node="4pSWRNV3Q7f" resolve="MIN_SPEED" />
+              </node>
+              <node concept="32Ogvo" id="4pSWRNV3VxO" role="d498I">
+                <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+              </node>
+              <node concept="32OYss" id="4pSWRNV3Vvb" role="d498Q">
+                <node concept="nE0YL" id="4pSWRNV3Vvc" role="32OYtT">
+                  <node concept="32Ogvo" id="4pSWRNV3Vsu" role="2H9Iav">
+                    <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+                  </node>
+                  <node concept="hx854" id="4pSWRNV3VsZ" role="2H9Ial">
+                    <ref role="hx9HS" node="4pSWRNV3Q7f" resolve="MIN_SPEED" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="JlCpM" id="6MaWlu$kFBV" role="32O2ov">
+          <property role="TrG5h" value="old_speed" />
+          <node concept="2He$iJ" id="4pSWRNV3N$v" role="1zoetD">
+            <ref role="2He$iI" node="4pSWRNV3JT4" resolve="my_old_speed" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="4pSWRNV3JSP" role="2HcbjO">
+        <node concept="2Hdskp" id="4pSWRNV3JT4" role="2Hfkx9">
+          <property role="TrG5h" value="my_old_speed" />
+          <node concept="2XEmfi" id="2r$08YM5PyL" role="2HdssA">
+            <ref role="2XEmfl" to="ee4e:SQH6SzHBvC" resolve="velocity_t" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="4pSWRNV3JTL" role="2HcbjO">
+        <node concept="2HfkAV" id="4pSWRNV3JU2" role="2HfkAP">
+          <node concept="2He$iJ" id="4pSWRNV3JUG" role="2He$ia">
+            <ref role="2He$iI" node="4pSWRNV3JT4" resolve="my_old_speed" />
+          </node>
+          <node concept="2IPVmt" id="4pSWRNV3JUR" role="2He$i0">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+        <node concept="2HevG6" id="4pSWRNV3JVj" role="2HfkAP">
+          <node concept="2He$iJ" id="4pSWRNV3JVV" role="2He$ia">
+            <ref role="2He$iI" node="4pSWRNV3JT4" resolve="my_old_speed" />
+          </node>
+          <node concept="32Ogvo" id="4pSWRNV3JWy" role="2He$i0">
+            <ref role="32Ogvr" node="4pSWRNV3E5m" resolve="speed_in" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="4pSWRNV3E5m" role="2Hdtzq">
+        <property role="TrG5h" value="speed_in" />
+      </node>
+    </node>
+    <node concept="eml0t" id="6MaWlu$kFCG" role="2HcuB8">
+      <property role="TrG5h" value="Speed_Sensor_Refinement" />
+      <node concept="3Ug1AZ" id="6MaWlu$kFE5" role="eml14">
+        <ref role="3Ug1AY" node="4tgWazNvr83" resolve="Speed_Sensor" />
+      </node>
+      <node concept="eml1q" id="6MaWlu$kFE8" role="eml13">
+        <ref role="eml1l" node="6MaWlu$kF$U" resolve="Speed_Sensor_Impelementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6MaWlu$kFEb" role="2HcuB8" />
+    <node concept="2SQmWS" id="6MaWlu$kFO_" role="2HcuB8" />
+    <node concept="2SQmWS" id="4j8iycQYp2k" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4lqXlWx1Zwl" role="2HcuB8">
+      <property role="TrG5h" value="Sensor_Voter_Implementation" />
+      <node concept="32O2o0" id="4lqXlWx1Zx9" role="2HcbjO">
+        <node concept="JlCpM" id="4pSWRNV3xdb" role="32O2ov">
+          <property role="TrG5h" value="distance_front" />
+          <node concept="2HbMDt" id="4pSWRNV3xdc" role="1zoetD">
+            <node concept="2HbMDt" id="4pSWRNV3xdd" role="2H9Iav">
+              <node concept="2HbMDt" id="4pSWRNV3xde" role="2H9Iav">
+                <node concept="32Ogvo" id="4pSWRNV3xbn" role="2H9Iav">
+                  <ref role="32Ogvr" node="4lqXlWx1Zxg" resolve="laser1" />
+                </node>
+                <node concept="32Ogvo" id="4pSWRNV3xbZ" role="2H9Ial">
+                  <ref role="32Ogvr" node="4lqXlWx1Zz6" resolve="laser2" />
+                </node>
+              </node>
+              <node concept="32Ogvo" id="4pSWRNV3xcU" role="2H9Ial">
+                <ref role="32Ogvr" node="4lqXlWx1Zzd" resolve="ultrasound1" />
+              </node>
+            </node>
+            <node concept="32Ogvo" id="4pSWRNV3xdQ" role="2H9Ial">
+              <ref role="32Ogvr" node="4lqXlWx1Zzi" resolve="ultrasound2" />
+            </node>
+          </node>
+        </node>
+        <node concept="JlCpM" id="4lqXlWx1Z_z" role="32O2ov">
+          <property role="TrG5h" value="reference_velocity" />
+          <node concept="2IPVmt" id="4lqXlWx1ZAR" role="1zoetD">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="4lqXlWx1ZAe" role="32O2ov">
+          <property role="TrG5h" value="alert" />
+          <node concept="2He$iJ" id="4pSWRNV3xQb" role="1zoetD">
+            <ref role="2He$iI" node="4pSWRNV3xeQ" resolve="my_alert" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="4lqXlWx1Zxg" role="2Hdtzq">
+        <property role="TrG5h" value="laser1" />
+      </node>
+      <node concept="2Hdtzr" id="4lqXlWx1Zz6" role="2Hdtzq">
+        <property role="TrG5h" value="laser2" />
+      </node>
+      <node concept="2Hdtzr" id="4lqXlWx1Zzd" role="2Hdtzq">
+        <property role="TrG5h" value="ultrasound1" />
+      </node>
+      <node concept="2Hdtzr" id="4lqXlWx1Zzi" role="2Hdtzq">
+        <property role="TrG5h" value="ultrasound2" />
+      </node>
+      <node concept="2Hfkzq" id="4pSWRNV3xet" role="2HcbjO">
+        <node concept="2Hdskp" id="4pSWRNV3xeQ" role="2Hfkx9">
+          <property role="TrG5h" value="my_alert" />
+          <node concept="2Hds6S" id="4pSWRNV3xfw" role="2HdssA" />
+        </node>
+        <node concept="1tKcVG" id="4pSWRNV3xeu" role="2Hfkx9" />
+      </node>
+      <node concept="2Hfkzp" id="4pSWRNV3xfV" role="2HcbjO">
+        <node concept="2HfkAV" id="4pSWRNV3xgk" role="2HfkAP">
+          <node concept="2He$iJ" id="4pSWRNV3xgM" role="2He$ia">
+            <ref role="2He$iI" node="4pSWRNV3xeQ" resolve="my_alert" />
+          </node>
+          <node concept="1yCjT0" id="4pSWRNV3xh3" role="2He$i0" />
+        </node>
+        <node concept="2HevG6" id="4pSWRNV3xho" role="2HfkAP">
+          <node concept="2He$iJ" id="4pSWRNV3xhU" role="2He$ia">
+            <ref role="2He$iI" node="4pSWRNV3xeQ" resolve="my_alert" />
+          </node>
+          <node concept="2HbMDt" id="4pSWRNV3AdK" role="2He$i0">
+            <node concept="2HbMDt" id="4pSWRNV3AdL" role="2H9Iav">
+              <node concept="2HbMDt" id="4pSWRNV3AdM" role="2H9Iav">
+                <node concept="32OYss" id="4pSWRNV3AdN" role="2H9Iav">
+                  <node concept="2HbMbg" id="4pSWRNV3AdO" role="32OYtT">
+                    <node concept="1yA0yd" id="4pSWRNV3AdP" role="2H9Iav">
+                      <node concept="32Ogvo" id="4pSWRNV3xiz" role="32OYtT">
+                        <ref role="32Ogvr" node="4lqXlWx1Zxg" resolve="laser1" />
+                      </node>
+                    </node>
+                    <node concept="1yA0yd" id="4pSWRNV3AdQ" role="2H9Ial">
+                      <node concept="32Ogvo" id="4pSWRNV3xjn" role="32OYtT">
+                        <ref role="32Ogvr" node="4lqXlWx1Zz6" resolve="laser2" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="32OYss" id="4pSWRNV3AdR" role="2H9Ial">
+                  <node concept="2HbMbg" id="4pSWRNV3AdS" role="32OYtT">
+                    <node concept="32OYss" id="4pSWRNV3AdT" role="2H9Iav">
+                      <node concept="2HbMbg" id="4pSWRNV3AdU" role="32OYtT">
+                        <node concept="1yA0yd" id="4pSWRNV3AdV" role="2H9Iav">
+                          <node concept="32Ogvo" id="4pSWRNV3xkv" role="32OYtT">
+                            <ref role="32Ogvr" node="4lqXlWx1Zzd" resolve="ultrasound1" />
+                          </node>
+                        </node>
+                        <node concept="1yA0yd" id="4pSWRNV3AdW" role="2H9Ial">
+                          <node concept="32Ogvo" id="4pSWRNV3xlz" role="32OYtT">
+                            <ref role="32Ogvr" node="4lqXlWx1Zzi" resolve="ultrasound2" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="32OYss" id="4pSWRNV3AdX" role="2H9Ial">
+                      <node concept="2HbMDt" id="4pSWRNV3AdY" role="32OYtT">
+                        <node concept="1yA0yd" id="4pSWRNV3AdZ" role="2H9Iav">
+                          <node concept="32Ogvo" id="4pSWRNV3xmy" role="32OYtT">
+                            <ref role="32Ogvr" node="4lqXlWx1Zxg" resolve="laser1" />
+                          </node>
+                        </node>
+                        <node concept="1yA0yd" id="4pSWRNV3Ae0" role="2H9Ial">
+                          <node concept="32Ogvo" id="4pSWRNV3xnu" role="32OYtT">
+                            <ref role="32Ogvr" node="4lqXlWx1Zz6" resolve="laser2" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="32OYss" id="4pSWRNV3Ae1" role="2H9Ial">
+                <node concept="nE0YL" id="4pSWRNV3Ae2" role="32OYtT">
+                  <node concept="1J1L9T" id="4pSWRNV3zD5" role="2H9Iav">
+                    <ref role="1J1L9S" node="4pSWRNV3xdb" resolve="distance_front" />
+                  </node>
+                  <node concept="2IPVmt" id="4pSWRNV3Ae3" role="2H9Ial">
+                    <property role="2IPVms" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="32OYss" id="4pSWRNV3Ae4" role="2H9Ial">
+              <node concept="nE0YJ" id="4pSWRNV3Ae5" role="32OYtT">
+                <node concept="1J1L9T" id="4pSWRNV3zNB" role="2H9Iav">
+                  <ref role="1J1L9S" node="4pSWRNV3xdb" resolve="distance_front" />
+                </node>
+                <node concept="hx854" id="4pSWRNV3zTx" role="2H9Ial">
+                  <ref role="hx9HS" node="6MaWlu$kzVw" resolve="MAX_LASER" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2HeLW8" id="4pSWRNV3xfW" role="2HfkAP" />
+      </node>
+    </node>
+    <node concept="eml0t" id="4lqXlWx1Zy6" role="2HcuB8">
+      <property role="TrG5h" value="Sensor_Voter_Refinement" />
+      <node concept="3Ug1AZ" id="6MaWlu$kFUk" role="eml14">
+        <ref role="3Ug1AY" node="4tgWazNvrrE" resolve="Sensor_Voter" />
+      </node>
+      <node concept="eml1q" id="6MaWlu$kFUn" role="eml13">
+        <ref role="eml1l" node="4lqXlWx1Zwl" resolve="Sensor_Voter_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4lqXlWx1ZBd" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6MaWlu$kFVE" role="2HcuB8">
+      <property role="TrG5h" value="EB_Communication_Unit_Implementation" />
+      <node concept="32O2o0" id="6MaWlu$kFXu" role="2HcbjO">
+        <node concept="JlCpM" id="6MaWlu$kFXR" role="32O2ov">
+          <property role="TrG5h" value="alert_signal" />
+          <node concept="32Ogvo" id="4pSWRNV3Vo8" role="1zoetD">
+            <ref role="32Ogvr" node="6MaWlu$kFXm" resolve="driver_warning_in" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="6MaWlu$kFYW" role="32O2ov">
+          <property role="TrG5h" value="display_message" />
+          <node concept="d4bQV" id="6i8f1VRXB1z" role="1zoetD">
+            <node concept="32Ogvo" id="6i8f1VRXB1S" role="d498Q">
+              <ref role="32Ogvr" node="6MaWlu$kFXm" resolve="driver_warning_in" />
+            </node>
+            <node concept="2IPVmt" id="6i8f1VRXB24" role="d498F">
+              <property role="2IPVms" value="0" />
+            </node>
+            <node concept="2IPVmt" id="6i8f1VRXB2q" role="d498I">
+              <property role="2IPVms" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="JlCpM" id="6MaWlu$kG1j" role="32O2ov">
+          <property role="TrG5h" value="state" />
+          <node concept="32Ogvo" id="4pSWRNV3VoD" role="1zoetD">
+            <ref role="32Ogvr" node="6MaWlu$kFXo" resolve="state_in" />
+          </node>
+        </node>
+      </node>
+      <node concept="s4Ewt" id="6MaWlu$kFVF" role="2HcbjO" />
+      <node concept="2Hdtzr" id="6MaWlu$kFXm" role="2Hdtzq">
+        <property role="TrG5h" value="driver_warning_in" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kFXo" role="2Hdtzq">
+        <property role="TrG5h" value="state_in" />
+      </node>
+    </node>
+    <node concept="eml0t" id="6MaWlu$kG1N" role="2HcuB8">
+      <property role="TrG5h" value="EB_Communication_Unit_Refinement" />
+      <node concept="3Ug1AZ" id="6MaWlu$kG3G" role="eml14">
+        <ref role="3Ug1AY" node="16Ng_xNT8KQ" resolve="EB_Communication_Unit" />
+      </node>
+      <node concept="eml1q" id="6MaWlu$kG3J" role="eml13">
+        <ref role="eml1l" node="6MaWlu$kFVE" resolve="EB_Communication_Unit_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6MaWlu$kG3M" role="2HcuB8" />
+    <node concept="2Hdtz0" id="6MaWlu$kG7t" role="2HcuB8">
+      <property role="TrG5h" value="Brake_Monitor_Implementation" />
+      <node concept="32O2o0" id="6MaWlu$kG9G" role="2HcbjO">
+        <node concept="JlCpM" id="6MaWlu$kGaC" role="32O2ov">
+          <property role="TrG5h" value="alert" />
+          <node concept="2He$iJ" id="4pSWRNV3Cme" role="1zoetD">
+            <ref role="2He$iI" node="4pSWRNV3CfG" resolve="my_alert" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kG9n" role="2Hdtzq">
+        <property role="TrG5h" value="old_velocity" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kG9q" role="2Hdtzq">
+        <property role="TrG5h" value="velocity" />
+      </node>
+      <node concept="2Hdtzr" id="6MaWlu$kG9C" role="2Hdtzq">
+        <property role="TrG5h" value="eb_brake" />
+      </node>
+      <node concept="2Hfkzq" id="4pSWRNV3Cfw" role="2HcbjO">
+        <node concept="2Hdskp" id="4pSWRNV3CfG" role="2Hfkx9">
+          <property role="TrG5h" value="my_alert" />
+          <node concept="2Hds6S" id="4pSWRNV3Cg8" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="4pSWRNV3Cgo" role="2HcbjO">
+        <node concept="2HfkAV" id="4pSWRNV3Cgz" role="2HfkAP">
+          <node concept="2He$iJ" id="4pSWRNV3Ch0" role="2He$ia">
+            <ref role="2He$iI" node="4pSWRNV3CfG" resolve="my_alert" />
+          </node>
+          <node concept="1yCjT0" id="4pSWRNV3ClW" role="2He$i0" />
+        </node>
+        <node concept="2HevG6" id="4pSWRNV3ChH" role="2HfkAP">
+          <node concept="2He$iJ" id="4pSWRNV3Cif" role="2He$ia">
+            <ref role="2He$iI" node="4pSWRNV3CfG" resolve="my_alert" />
+          </node>
+          <node concept="2HbMbg" id="6i8f1VRXFzz" role="2He$i0">
+            <node concept="32OYss" id="6i8f1VRXFz$" role="2H9Iav">
+              <node concept="nE0YK" id="6i8f1VRXFz_" role="32OYtT">
+                <node concept="32Ogvo" id="4pSWRNV3CiM" role="2H9Iav">
+                  <ref role="32Ogvr" node="6MaWlu$kG9n" resolve="old_velocity" />
+                </node>
+                <node concept="32Ogvo" id="4pSWRNV3CjP" role="2H9Ial">
+                  <ref role="32Ogvr" node="6MaWlu$kG9q" resolve="velocity" />
+                </node>
+              </node>
+            </node>
+            <node concept="32OYss" id="6i8f1VRXFzA" role="2H9Ial">
+              <node concept="nE0YJ" id="6i8f1VRXFzB" role="32OYtT">
+                <node concept="32Ogvo" id="4pSWRNV3CkG" role="2H9Iav">
+                  <ref role="32Ogvr" node="6MaWlu$kG9C" resolve="eb_brake" />
+                </node>
+                <node concept="2IPVmt" id="6i8f1VRXFzC" role="2H9Ial">
+                  <property role="2IPVms" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eml0t" id="6MaWlu$kGbf" role="2HcuB8">
+      <property role="TrG5h" value="Brake_Monitor_Refinement" />
+      <node concept="3Ug1AZ" id="6MaWlu$kGdj" role="eml14">
+        <ref role="3Ug1AY" node="7qgRsCGQBta" resolve="Brake_Monitor" />
+      </node>
+      <node concept="eml1q" id="6MaWlu$kGdm" role="eml13">
+        <ref role="eml1l" node="6MaWlu$kG7t" resolve="Brake_Monitor_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="6MaWlu$kFyz" role="2HcuB8" />
+    <node concept="2SQmWS" id="6MaWlu$kFzI" role="2HcuB8" />
+    <node concept="2SQmWS" id="4lqXlWx1ZJp" role="2HcuB8" />
+    <node concept="2SQmWS" id="4lqXlWx1ZKv" role="2HcuB8" />
+  </node>
+</model>
+

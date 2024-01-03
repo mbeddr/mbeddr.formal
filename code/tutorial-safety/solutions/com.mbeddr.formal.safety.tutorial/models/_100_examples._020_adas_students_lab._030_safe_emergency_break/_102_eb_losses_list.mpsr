@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_students_lab._030_safe_emergency_break)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HxQMi" id="G$XGFsgYc8">
+    <property role="TrG5h" value="_102_eb_losses_list" />
+    <property role="3GE5qa" value="" />
+    <node concept="2HxQMU" id="G$XGFsgYc9" role="2HxQMj">
+      <property role="2HxQM_" value="L-1" />
+      <property role="TrG5h" value="Loss of life or injury to people" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYca" role="2HxQMj">
+      <property role="2HxQM_" value="L-2" />
+      <property role="TrG5h" value="Loss of or damage to vehicle" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYcd" role="2HxQMj">
+      <property role="TrG5h" value="Loss of damage to objects outside the vehicle" />
+      <property role="2HxQM_" value="L-3" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYch" role="2HxQMj">
+      <property role="TrG5h" value="Loss of mission" />
+      <property role="2HxQM_" value="L-4" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYcm" role="2HxQMj">
+      <property role="TrG5h" value="Loss of customer satisfaction" />
+      <property role="2HxQM_" value="L-5" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYd1" role="2HxQMj">
+      <property role="TrG5h" value="Environmental loss" />
+      <property role="2HxQM_" value="L-6" />
+    </node>
+  </node>
+</model>
+

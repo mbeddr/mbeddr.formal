@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="5X1JwjFKS_e">
+    <property role="TrG5h" value="extract_from_G2.1.1.2" />
+    <property role="3GE5qa" value="2_failure_operation" />
+    <node concept="2vn7WC" id="1e9opmpdGfu" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHxI" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2y" role="19SJt6">
+          <property role="19SUeA" value="Fault models used to evaluate the Self-Driving&#10;Enterprise are comprehensive " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGfw" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHxJ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2z" role="19SJt6">
+          <property role="19SUeA" value="The fault models used to evaluate the&#10;Self-Driving Enterprise are identified&#10;and comprehensive " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfy" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHxK" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2$" role="19SJt6">
+          <property role="19SUeA" value="Self-Driving Enterprise fault model(s)" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGf$" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHxL" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2_" role="19SJt6">
+          <property role="19SUeA" value="Self-Driving Enterprise degradation fault&#10;model(s) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfA" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHxM" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2A" role="19SJt6">
+          <property role="19SUeA" value="Peer review of identified fault models" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfC" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHxN" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2B" role="19SJt6">
+          <property role="19SUeA" value="Use of industry best practices for safety&#10;critical fault models " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfE" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHxO" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2C" role="19SJt6">
+          <property role="19SUeA" value="Justification fault model contains all&#10;reasonable failure modes " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGfG" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHxP" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2D" role="19SJt6">
+          <property role="19SUeA" value="The fault models used to evaluates the&#10;Self-Driving Vehicle are identified and&#10;comprehensive " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfI" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHxQ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2E" role="19SJt6">
+          <property role="19SUeA" value="Self-Driving Vehicle fault model(s) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfK" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHxR" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2F" role="19SJt6">
+          <property role="19SUeA" value="Self-Driving Vehicle degradation fault&#10;model(s) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfM" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHxS" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2G" role="19SJt6">
+          <property role="19SUeA" value="Peer review of identified fault models" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfO" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHxT" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2H" role="19SJt6">
+          <property role="19SUeA" value="Use of industry best practices for safety&#10;critical fault models " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfQ" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHxU" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2I" role="19SJt6">
+          <property role="19SUeA" value="Justification fault model contains all&#10;reasonable failure modes " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGfS" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHxV" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2J" role="19SJt6">
+          <property role="19SUeA" value="The fault models used to evaluate subsystems&#10;are identified and comprehensive " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfU" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHxW" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2K" role="19SJt6">
+          <property role="19SUeA" value="Subsystem fault model(s) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfW" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHxX" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2L" role="19SJt6">
+          <property role="19SUeA" value="Subsystem degradation fault model(s)" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGfY" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHxY" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2M" role="19SJt6">
+          <property role="19SUeA" value="Peer review of identified fault models" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGg0" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHxZ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2N" role="19SJt6">
+          <property role="19SUeA" value="Use of industry best practices for safety&#10;critical fault models " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGg2" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.3.5" />
+      <node concept="19SGf9" id="1e9opmpdHy0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2O" role="19SJt6">
+          <property role="19SUeA" value="Justification fault model contains all&#10;reasonable failure modes " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGg4" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHy1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2P" role="19SJt6">
+          <property role="19SUeA" value="The fault models used to evaluate components&#10;are identified and comprehensive " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGg6" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHy2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2Q" role="19SJt6">
+          <property role="19SUeA" value="Component fault model(s) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGg8" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHy3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2R" role="19SJt6">
+          <property role="19SUeA" value="Component degradation fault model(s)" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGga" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.4.3" />
+      <node concept="19SGf9" id="1e9opmpdHy4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2S" role="19SJt6">
+          <property role="19SUeA" value="Peer review of identified fault models" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGgc" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.4.4" />
+      <node concept="19SGf9" id="1e9opmpdHy5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2T" role="19SJt6">
+          <property role="19SUeA" value="Use of industry best practices for safety&#10;critical fault models " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGge" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.2.4.5" />
+      <node concept="19SGf9" id="1e9opmpdHy6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK2U" role="19SJt6">
+          <property role="19SUeA" value="Justification fault model contains all&#10;reasonable failure modes " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfx" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfu" resolve="G2.1.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGfw" resolve="G2.1.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfz" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfy" resolve="Sn2.1.1.2.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGfw" resolve="G2.1.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGf_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfw" resolve="G2.1.1.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGf$" resolve="Sn2.1.1.2.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfB" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfA" resolve="Sn2.1.1.2.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdGfw" resolve="G2.1.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfD" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfw" resolve="G2.1.1.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGfC" resolve="Sn2.1.1.2.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfE" resolve="Sn2.1.1.2.1.5" />
+      <ref role="3VeSjP" node="1e9opmpdGfw" resolve="G2.1.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfH" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfu" resolve="G2.1.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGfG" resolve="G2.1.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfJ" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfI" resolve="Sn2.1.1.2.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGfG" resolve="G2.1.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfL" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfK" resolve="Sn2.1.1.2.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGfG" resolve="G2.1.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfN" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfM" resolve="Sn2.1.1.2.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdGfG" resolve="G2.1.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfP" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfO" resolve="Sn2.1.1.2.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdGfG" resolve="G2.1.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfR" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfG" resolve="G2.1.1.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGfQ" resolve="Sn2.1.1.2.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfT" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfu" resolve="G2.1.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGfS" resolve="G2.1.1.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfV" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfS" resolve="G2.1.1.2.3" />
+      <ref role="3VeSjQ" node="1e9opmpdGfU" resolve="Sn2.1.1.2.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfX" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfW" resolve="Sn2.1.1.2.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdGfS" resolve="G2.1.1.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGfZ" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGfY" resolve="Sn2.1.1.2.3.3" />
+      <ref role="3VeSjP" node="1e9opmpdGfS" resolve="G2.1.1.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGg1" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGfS" resolve="G2.1.1.2.3" />
+      <ref role="3VeSjQ" node="1e9opmpdGg0" resolve="Sn2.1.1.2.3.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGg3" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGg2" resolve="Sn2.1.1.2.3.5" />
+      <ref role="3VeSjP" node="1e9opmpdGfS" resolve="G2.1.1.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGg5" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGg4" resolve="G2.1.1.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdGfu" resolve="G2.1.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGg7" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGg6" resolve="Sn2.1.1.2.4.1" />
+      <ref role="3VeSjP" node="1e9opmpdGg4" resolve="G2.1.1.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGg9" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGg8" resolve="Sn2.1.1.2.4.2" />
+      <ref role="3VeSjP" node="1e9opmpdGg4" resolve="G2.1.1.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGgb" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGg4" resolve="G2.1.1.2.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGga" resolve="Sn2.1.1.2.4.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGgd" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGg4" resolve="G2.1.1.2.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGgc" resolve="Sn2.1.1.2.4.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGgf" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGge" resolve="Sn2.1.1.2.4.5" />
+      <ref role="3VeSjP" node="1e9opmpdGg4" resolve="G2.1.1.2.4" />
+    </node>
+  </node>
+</model>
+

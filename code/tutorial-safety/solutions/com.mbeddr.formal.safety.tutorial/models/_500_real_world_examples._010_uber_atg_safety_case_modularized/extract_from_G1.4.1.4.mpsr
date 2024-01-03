@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="5X1JwjFKKDt">
+    <property role="TrG5h" value="extract_from_G1.4.1.4" />
+    <property role="3GE5qa" value="1_nominal_operation.1_4_SDV_:operations" />
+    <node concept="2vn7WC" id="1e9opmpdGb6" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHvy" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0m" role="19SJt6">
+          <property role="19SUeA" value="Only Mission Specialists are able to&#10;operate Self Driving Vehicles " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGb8" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHvz" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0n" role="19SJt6">
+          <property role="19SUeA" value="The Mission Specialist is properly authenticated&#10;and identifiable to both the " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGba" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHv$" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0o" role="19SJt6">
+          <property role="19SUeA" value="Secure start procedure documented\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbc" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHv_" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0p" role="19SJt6">
+          <property role="19SUeA" value="SRA on secure start procedure\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbe" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHvA" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0q" role="19SJt6">
+          <property role="19SUeA" value="Operational policies / guidelines\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbg" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHvB" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0r" role="19SJt6">
+          <property role="19SUeA" value="Fault injection testing for authentication&#10;/ security\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbi" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHvC" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0s" role="19SJt6">
+          <property role="19SUeA" value="Fault injection test plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbk" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHvD" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0t" role="19SJt6">
+          <property role="19SUeA" value="Peer review and approval of test plan&#10;and results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGbm" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHvE" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0u" role="19SJt6">
+          <property role="19SUeA" value="Access to vehicles and vehicle keys are&#10;restricted to qualified Mission Specialists\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbo" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHvF" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0v" role="19SJt6">
+          <property role="19SUeA" value="Policy showing storage of keys and access&#10;to vehicles\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbq" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHvG" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0w" role="19SJt6">
+          <property role="19SUeA" value="Mission Specialist credential register\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbs" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHvH" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0x" role="19SJt6">
+          <property role="19SUeA" value="Operational policies / guidelines\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbu" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHvI" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0y" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audit\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGbw" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHvJ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0z" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audit schedule\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGby" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.4.2.6" />
+      <node concept="19SGf9" id="1e9opmpdHvK" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0$" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audit results " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGb9" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGb6" resolve="G1.4.1.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGb8" resolve="G1.4.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbb" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGba" resolve="Sn1.4.1.4.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGb8" resolve="G1.4.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbd" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGb8" resolve="G1.4.1.4.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGbc" resolve="Sn1.4.1.4.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbf" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGbe" resolve="Sn1.4.1.4.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdGb8" resolve="G1.4.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbh" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGbg" resolve="Sn1.4.1.4.1.4" />
+      <ref role="3VeSjP" node="1e9opmpdGb8" resolve="G1.4.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbj" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGbi" resolve="Sn1.4.1.4.1.5" />
+      <ref role="3VeSjP" node="1e9opmpdGb8" resolve="G1.4.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbl" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGbk" resolve="Sn1.4.1.4.1.6" />
+      <ref role="3VeSjP" node="1e9opmpdGb8" resolve="G1.4.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbn" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGb6" resolve="G1.4.1.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGbm" resolve="G1.4.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbp" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGbm" resolve="G1.4.1.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGbo" resolve="Sn1.4.1.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbr" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGbm" resolve="G1.4.1.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGbq" resolve="Sn1.4.1.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbt" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGbs" resolve="Sn1.4.1.4.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdGbm" resolve="G1.4.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbv" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGbu" resolve="Sn1.4.1.4.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdGbm" resolve="G1.4.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbx" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGbw" resolve="Sn1.4.1.4.2.5" />
+      <ref role="3VeSjP" node="1e9opmpdGbm" resolve="G1.4.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGbz" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGbm" resolve="G1.4.1.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGby" resolve="Sn1.4.1.4.2.6" />
+    </node>
+  </node>
+</model>
+

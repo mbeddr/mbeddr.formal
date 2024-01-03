@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_students_lab._030_safe_emergency_break)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="6544290145033221524" name="com.mbeddr.formal.req.base.structure.Interface" flags="ng" index="3z6Cyy" />
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728634" name="com.mbeddr.formal.req.base.structure.Functional" flags="ng" index="1QQeFk" />
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="1HNBDjrJCC9">
+    <property role="TrG5h" value="_020_eb_system_requirements" />
+    <property role="3GE5qa" value="eb_item_definition" />
+    <node concept="0lhDl" id="5et_HVSMSIF" role="1QQeBF">
+      <property role="0lsPA" value="IR01_EB" />
+      <property role="0ke_I" value="Jonas &amp; Moritz" />
+      <node concept="1QQeAY" id="5et_HVSMSIU" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMSIW" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMSIY" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMSIZ" role="19SJt6">
+              <property role="19SUeA" value="The system shall notify the user via a display message and vibration of the steering wheel." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="5et_HVSMSIH" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMSII" role="19SJt6">
+          <property role="19SUeA" value="User Interface (UI)" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="5et_HVSMSIP" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="5et_HVSMSJf" role="1QQeBF">
+      <property role="0lsPA" value="IR02_EB" />
+      <property role="0ke_I" value="Jonas &amp; Moritz" />
+      <node concept="1QQeAY" id="5et_HVSMSJB" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMSJD" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMSJF" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMSJG" role="19SJt6">
+              <property role="19SUeA" value="Decelerate the vehicle by giving signals to the breaking system  of the vehicle" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="5et_HVSMSJh" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMSJi" role="19SJt6">
+          <property role="19SUeA" value="Brake Control" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="5et_HVSMSJy" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="1HNBDjrJCCJ" role="1QQeBF" />
+    <node concept="0lhDl" id="1HNBDjrJCE0" role="1QQeBF">
+      <property role="0lsPA" value="IR03_EB" />
+      <property role="0ke_I" value="Jonas &amp; Moritz" />
+      <node concept="1QQeAY" id="1HNBDjrJCEJ" role="1QQeAC">
+        <node concept="0nzK2" id="1HNBDjrJCEL" role="1QQeAV">
+          <node concept="19SGf9" id="1HNBDjrJCEN" role="0nzdz">
+            <node concept="19SUe$" id="1HNBDjrJCEO" role="19SJt6">
+              <property role="19SUeA" value="The detection range of the sensors are the following:&#10;- Laser sensor: 40 m&#10;- Ultrasound: 4 m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="1HNBDjrJCE2" role="1QQeG9">
+        <node concept="19SUe$" id="1HNBDjrJCE3" role="19SJt6">
+          <property role="19SUeA" value="Sensors" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="1HNBDjrJCE_" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="1HNBDjrJCD9" role="1QQeBF" />
+    <node concept="0lhDl" id="5et_HVSMYCF" role="1QQeBF">
+      <property role="0lsPA" value="CR01_EB" />
+      <property role="0ke_I" value="Jonas &amp; Moritz" />
+      <node concept="1QQeAY" id="5et_HVSMYDb" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYDd" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYDf" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYDg" role="19SJt6">
+              <property role="19SUeA" value="The EB system will be activated in manually driven vehicles, in automated mode level 1 vehicles, &#10;where the driver is assisted by EB or in level 2 vehicles, able to drive in a platoon" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="5et_HVSMYCH" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYCI" role="19SJt6">
+          <property role="19SUeA" value="Vehicle Assumptions" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="1HNBDjrJCEE" role="0nOlf" />
+    </node>
+  </node>
+</model>
+
