@@ -2997,6 +2997,26 @@
       <property role="TrG5h" value="GSNTextStyle" />
       <node concept="VSNWy" id="65LrkjiZl6c" role="3F10Kt">
         <property role="1lJzqX" value="9" />
+        <node concept="1cFabM" id="3Q78AXM_2J" role="1d8cEk">
+          <node concept="3clFbS" id="3Q78AXM_2K" role="2VODD2">
+            <node concept="3clFbF" id="3Q78AXM_3g" role="3cqZAp">
+              <node concept="3cpWsd" id="3Q78AXM_3h" role="3clFbG">
+                <node concept="3cmrfG" id="3Q78AXM_3i" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="3Q78AXM_3j" role="3uHU7B">
+                  <node concept="2YIFZM" id="3Q78AXM_3k" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="3Q78AXM_3l" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2biZxu" id="65LrkjiZl6h" role="3F10Kt">
         <property role="1rj3mz" value="Arial" />
@@ -3044,7 +3064,27 @@
         </node>
       </node>
       <node concept="VSNWy" id="4HjFLZ$nO29" role="3F10Kt">
-        <property role="1lJzqX" value="8" />
+        <property role="1lJzqX" value="9" />
+        <node concept="1cFabM" id="3Q78AXM$Pp" role="1d8cEk">
+          <node concept="3clFbS" id="3Q78AXM$Pq" role="2VODD2">
+            <node concept="3clFbF" id="3Q78AXM$PU" role="3cqZAp">
+              <node concept="3cpWsd" id="3Q78AXM$PV" role="3clFbG">
+                <node concept="3cmrfG" id="3Q78AXM$PW" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="3Q78AXM$PX" role="3uHU7B">
+                  <node concept="2YIFZM" id="3Q78AXM$PY" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="3Q78AXM$PZ" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="14StLt" id="71GfFl7qVvB" role="V601i">
@@ -3066,7 +3106,27 @@
         </node>
       </node>
       <node concept="VSNWy" id="4HjFLZ$nO8O" role="3F10Kt">
-        <property role="1lJzqX" value="8" />
+        <property role="1lJzqX" value="9" />
+        <node concept="1cFabM" id="3Q78AXM$tQ" role="1d8cEk">
+          <node concept="3clFbS" id="3Q78AXM$tR" role="2VODD2">
+            <node concept="3clFbF" id="3Q78AXM$No" role="3cqZAp">
+              <node concept="3cpWsd" id="3Q78AXM$Np" role="3clFbG">
+                <node concept="3cmrfG" id="3Q78AXM$Nq" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="3Q78AXM$Nr" role="3uHU7B">
+                  <node concept="2YIFZM" id="3Q78AXM$Ns" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="3Q78AXM$Nt" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="14StLt" id="7Jm8RM1kIhz" role="V601i">
