@@ -243,6 +243,31 @@
           </node>
         </node>
       </node>
+      <node concept="m$_wl" id="2MrvZqtDm59" role="39821P">
+        <ref role="m_rDy" node="2MrvZqtDklV" resolve="com.mpsbasics.testutils" />
+        <node concept="pUk6x" id="2MrvZqtDm5a" role="pUk7w" />
+        <node concept="398223" id="2MrvZqtDm5b" role="39821P">
+          <node concept="3_J27D" id="2MrvZqtDm5c" role="Nbhlr">
+            <node concept="3Mxwew" id="2MrvZqtDm5d" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="2MrvZqtDm5e" role="39821P">
+            <node concept="398BVA" id="2MrvZqtDm5f" role="2HvfZ0">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="2MrvZqtDm5g" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2MrvZqtDm5h" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.diffx.lib" />
+                  <node concept="2Ry0Ak" id="2MrvZqtDm5i" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="L2wRC" id="wUJmWCwVZN" role="39821P">
         <ref role="L2wRA" node="5jdn85oHU1h" resolve="com.mpsbasics.build" />
       </node>
@@ -280,6 +305,30 @@
         <node concept="3Mxwew" id="42jqVeFkUvb" role="3MwsjC">
           <property role="3MwjfP" value="com.mpsbasics" />
         </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="2MrvZqtDklV" role="3989C9">
+      <property role="m$_wk" value="com.mpsbasics.testutils" />
+      <node concept="3_J27D" id="2MrvZqtDklW" role="m$_yQ">
+        <node concept="3Mxwew" id="2MrvZqtDklX" role="3MwsjC">
+          <property role="3MwjfP" value="com.mpsbasics.testutils" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="2MrvZqtDklY" role="m$_w8">
+        <node concept="3Mxwey" id="2MrvZqtDklZ" role="3MwsjC">
+          <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="2MrvZqtDlpY" role="m$_yh">
+        <ref role="m$f5T" node="2MrvZqtDg3S" resolve="com.mpsbasics.docx4j.testutils" />
+      </node>
+      <node concept="3_J27D" id="2MrvZqtDkm2" role="m_cZH">
+        <node concept="3Mxwew" id="2MrvZqtDkm3" role="3MwsjC">
+          <property role="3MwjfP" value="com.mpsbasics.testutils" />
+        </node>
+      </node>
+      <node concept="m$_yC" id="2MrvZqtDlR$" role="m$_yJ">
+        <ref role="m$_y1" node="42jqVeFkUv3" resolve="com.mpsbasics" />
       </node>
     </node>
     <node concept="2G$12M" id="42jqVeFkUv2" role="3989C9">
@@ -391,11 +440,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5Z1A3yy1nIk" role="3bR37C">
-          <node concept="3bR9La" id="5Z1A3yy1nIl" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5Z1A3yy1nIm" role="3bR37C">
           <node concept="3bR9La" id="5Z1A3yy1nIn" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
@@ -445,18 +489,18 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiHrmy" resolve="jetbrains.mps.java.stub" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp1A" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp1B" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp1p" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhPO" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhPP" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhPB" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp1q" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhPC" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp1r" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhPD" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp1s" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhPE" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp1t" role="2Ry0An">
-                      <property role="2Ry0Am" value="antlr-2.7.7.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhPF" role="2Ry0An">
+                      <property role="2Ry0Am" value="docx4j-core-11.4.9.jar" />
                     </node>
                   </node>
                 </node>
@@ -464,18 +508,18 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp1P" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp1Q" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp1C" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhQi" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhQj" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhQ5" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp1D" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhQ6" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp1E" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhQ7" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp1F" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhQ8" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp1G" role="2Ry0An">
-                      <property role="2Ry0Am" value="antlr-runtime-3.5.2.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhQ9" role="2Ry0An">
+                      <property role="2Ry0Am" value="docx4j-JAXB-MOXy-11.4.9.jar" />
                     </node>
                   </node>
                 </node>
@@ -483,18 +527,18 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp2j" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp2k" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp26" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhQx" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhQy" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhQk" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp27" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhQl" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp28" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhQm" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp29" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhQn" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp2a" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-codec-1.12.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhQo" role="2Ry0An">
+                      <property role="2Ry0Am" value="docx4j-openxml-objects-11.4.9.jar" />
                     </node>
                   </node>
                 </node>
@@ -502,18 +546,18 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp30" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp31" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp2N" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhQK" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhQL" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhQz" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp2O" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhQ$" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp2P" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhQ_" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp2Q" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhQA" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp2R" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-lang3-3.9.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhQB" role="2Ry0An">
+                      <property role="2Ry0Am" value="docx4j-openxml-objects-pml-11.4.9.jar" />
                     </node>
                   </node>
                 </node>
@@ -521,18 +565,18 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp6K" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp6L" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp6z" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhQZ" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhR0" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhQM" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp6$" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhQN" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp6_" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhQO" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp6A" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhQP" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp6B" role="2Ry0An">
-                      <property role="2Ry0Am" value="mbassador-1.3.2.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhQQ" role="2Ry0An">
+                      <property role="2Ry0Am" value="docx4j-openxml-objects-sml-11.4.9.jar" />
                     </node>
                   </node>
                 </node>
@@ -540,18 +584,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp7t" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp7u" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp7g" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhRg" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhRh" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhR1" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp7h" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhR2" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp7i" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhR3" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp7j" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhR4" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp7k" role="2Ry0An">
-                      <property role="2Ry0Am" value="stringtemplate-3.2.1.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhR5" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhR6" role="2Ry0An">
+                        <property role="2Ry0Am" value="antlr-2.7.7.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -559,18 +606,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp7G" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp7H" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp7v" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhRx" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhRy" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhRi" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp7w" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhRj" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp7x" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhRk" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp7y" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhRl" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp7z" role="2Ry0An">
-                      <property role="2Ry0Am" value="wmf2svg-0.9.8.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhRm" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhRn" role="2Ry0An">
+                        <property role="2Ry0Am" value="antlr-runtime-3.5.2.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -578,18 +628,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp7V" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp7W" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp7I" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhRM" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhRN" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhRz" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp7J" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhR$" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp7K" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhR_" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp7L" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhRA" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp7M" role="2Ry0An">
-                      <property role="2Ry0Am" value="xalan-interpretive-11.0.0.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhRB" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhRC" role="2Ry0An">
+                        <property role="2Ry0Am" value="checker-qual-2.8.1.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -597,18 +650,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3jaLROLwp8a" role="3bR37C">
-          <node concept="1BurEX" id="3jaLROLwp8b" role="1SiIV1">
-            <node concept="398BVA" id="3jaLROLwp7X" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhS3" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhS4" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhRO" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="3jaLROLwp7Y" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhRP" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3jaLROLwp7Z" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhRQ" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="3jaLROLwp80" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhRR" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3jaLROLwp81" role="2Ry0An">
-                      <property role="2Ry0Am" value="xalan-serializer-11.0.0.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhRS" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhRT" role="2Ry0An">
+                        <property role="2Ry0Am" value="commons-codec-1.12.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -616,18 +672,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUSh" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUSi" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUS4" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhSk" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhSl" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhS5" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUS5" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhS6" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUS6" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhS7" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUS7" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhS8" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUS8" role="2Ry0An">
-                      <property role="2Ry0Am" value="checker-qual-2.8.1.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhS9" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhSa" role="2Ry0An">
+                        <property role="2Ry0Am" value="commons-compress-1.21.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -635,18 +694,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUSH" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUSI" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUSw" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhS_" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhSA" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhSm" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUSx" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhSn" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUSy" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhSo" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUSz" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhSp" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUS$" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-compress-1.21.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhSq" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhSr" role="2Ry0An">
+                        <property role="2Ry0Am" value="commons-io-2.7.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -654,18 +716,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUSW" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUSX" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUSJ" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhSQ" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhSR" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhSB" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUSK" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhSC" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUSL" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhSD" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUSM" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhSE" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUSN" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-io-2.7.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhSF" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhSG" role="2Ry0An">
+                        <property role="2Ry0Am" value="commons-lang3-3.9.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -673,18 +738,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUTo" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUTp" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUTb" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhT7" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhT8" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhSS" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUTc" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhST" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUTd" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhSU" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUTe" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhSV" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUTf" role="2Ry0An">
-                      <property role="2Ry0Am" value="docx4j-core-11.4.5.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhSW" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhSX" role="2Ry0An">
+                        <property role="2Ry0Am" value="error_prone_annotations-2.3.3.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -692,18 +760,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUTB" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUTC" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUTq" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhTo" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhTp" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhT9" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUTr" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhTa" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUTs" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhTb" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUTt" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhTc" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUTu" role="2Ry0An">
-                      <property role="2Ry0Am" value="docx4j-JAXB-MOXy-11.4.5.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhTd" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhTe" role="2Ry0An">
+                        <property role="2Ry0Am" value="fontbox-2.0.24.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -711,18 +782,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUTQ" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUTR" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUTD" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhTD" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhTE" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhTq" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUTE" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhTr" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUTF" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhTs" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUTG" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhTt" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUTH" role="2Ry0An">
-                      <property role="2Ry0Am" value="docx4j-openxml-objects-11.4.5.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhTu" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhTv" role="2Ry0An">
+                        <property role="2Ry0Am" value="jakarta.activation-2.0.1.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -730,18 +804,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUU5" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUU6" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUTS" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhTU" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhTV" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhTF" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUTT" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhTG" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUTU" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhTH" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUTV" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhTI" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUTW" role="2Ry0An">
-                      <property role="2Ry0Am" value="docx4j-openxml-objects-pml-11.4.5.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhTJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhTK" role="2Ry0An">
+                        <property role="2Ry0Am" value="jakarta.mail-2.0.1.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -749,18 +826,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUUk" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUUl" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUU7" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhUb" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhUc" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhTW" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUU8" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhTX" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUU9" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhTY" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUUa" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhTZ" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUUb" role="2Ry0An">
-                      <property role="2Ry0Am" value="docx4j-openxml-objects-sml-11.4.5.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhU0" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhU1" role="2Ry0An">
+                        <property role="2Ry0Am" value="jakarta.xml.bind-api-3.0.1.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -768,18 +848,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUUz" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUU$" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUUm" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhUs" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhUt" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhUd" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUUn" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhUe" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUUo" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhUf" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUUp" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhUg" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUUq" role="2Ry0An">
-                      <property role="2Ry0Am" value="error_prone_annotations-2.3.3.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhUh" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhUi" role="2Ry0An">
+                        <property role="2Ry0Am" value="jaxb-svg11-11.4.0.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -787,18 +870,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUUM" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUUN" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUU_" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhUH" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhUI" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhUu" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUUA" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhUv" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUUB" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhUw" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUUC" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhUx" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUUD" role="2Ry0An">
-                      <property role="2Ry0Am" value="fontbox-2.0.24.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhUy" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhUz" role="2Ry0An">
+                        <property role="2Ry0Am" value="jcl-over-slf4j-2.0.0-alpha5.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -806,18 +892,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUV1" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUV2" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUUO" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhUY" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhUZ" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhUJ" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUUP" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhUK" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUUQ" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhUL" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUUR" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhUM" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUUS" role="2Ry0An">
-                      <property role="2Ry0Am" value="jakarta.activation-2.0.1.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhUN" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhUO" role="2Ry0An">
+                        <property role="2Ry0Am" value="mbassador-1.3.2.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -825,18 +914,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUVg" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUVh" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUV3" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhVf" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhVg" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhV0" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUV4" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhV1" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUV5" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhV2" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUV6" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhV3" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUV7" role="2Ry0An">
-                      <property role="2Ry0Am" value="jakarta.mail-2.0.1.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhV4" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhV5" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.eclipse.persistence.asm-9.1.0.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -844,18 +936,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUVv" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUVw" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUVi" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhVw" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhVx" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhVh" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUVj" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhVi" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUVk" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhVj" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUVl" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhVk" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUVm" role="2Ry0An">
-                      <property role="2Ry0Am" value="jakarta.xml.bind-api-3.0.1.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhVl" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhVm" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.eclipse.persistence.core-3.0.2.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -863,18 +958,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUVI" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUVJ" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUVx" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhVL" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhVM" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhVy" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUVy" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhVz" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUVz" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhV$" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUV$" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhV_" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUV_" role="2Ry0An">
-                      <property role="2Ry0Am" value="jaxb-svg11-11.4.0.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhVA" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhVB" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.eclipse.persistence.moxy-3.0.2.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -882,18 +980,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUVX" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUVY" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUVK" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhW2" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhW3" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhVN" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUVL" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhVO" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUVM" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhVP" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUVN" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhVQ" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUVO" role="2Ry0An">
-                      <property role="2Ry0Am" value="jcl-over-slf4j-2.0.0-alpha5.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhVR" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhVS" role="2Ry0An">
+                        <property role="2Ry0Am" value="qdox-1.12.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -901,18 +1002,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUWp" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUWq" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUWc" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhWj" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhWk" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhW4" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUWd" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhW5" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUWe" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhW6" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUWf" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhW7" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUWg" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.persistence.asm-9.1.0.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhW8" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhW9" role="2Ry0An">
+                        <property role="2Ry0Am" value="slf4j-api-2.0.0-alpha6.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -920,18 +1024,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUWC" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUWD" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUWr" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhW$" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhW_" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhWl" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUWs" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhWm" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUWt" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhWn" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUWu" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhWo" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUWv" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.persistence.core-3.0.2.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhWp" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhWq" role="2Ry0An">
+                        <property role="2Ry0Am" value="stringtemplate-3.2.1.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -939,18 +1046,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUWR" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUWS" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUWE" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhWP" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhWQ" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhWA" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUWF" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhWB" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUWG" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhWC" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUWH" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhWD" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUWI" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.persistence.moxy-3.0.2.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhWE" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhWF" role="2Ry0An">
+                        <property role="2Ry0Am" value="wmf2svg-0.9.8.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -958,18 +1068,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUX6" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUX7" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUWT" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhX6" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhX7" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhWR" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUWU" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhWS" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUWV" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhWT" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUWW" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhWU" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUWX" role="2Ry0An">
-                      <property role="2Ry0Am" value="qdox-1.12.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhWV" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhWW" role="2Ry0An">
+                        <property role="2Ry0Am" value="xalan-interpretive-11.0.0.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -977,18 +1090,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUXl" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUXm" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUX8" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhXn" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhXo" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhX8" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUX9" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhX9" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUXa" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhXa" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUXb" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhXb" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUXc" role="2Ry0An">
-                      <property role="2Ry0Am" value="slf4j-api-2.0.0-alpha6.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhXc" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhXd" role="2Ry0An">
+                        <property role="2Ry0Am" value="xalan-serializer-11.0.0.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -996,18 +1112,21 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUYo" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUYp" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUYb" role="1BurEY">
+        <node concept="1SiIV0" id="rrK$a3LhXC" role="3bR37C">
+          <node concept="1BurEX" id="rrK$a3LhXD" role="1SiIV1">
+            <node concept="398BVA" id="rrK$a3LhXp" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUYc" role="iGT6I">
+              <node concept="2Ry0Ak" id="rrK$a3LhXq" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUYd" role="2Ry0An">
+                <node concept="2Ry0Ak" id="rrK$a3LhXr" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUYe" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="rrK$a3LhXs" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUYf" role="2Ry0An">
-                      <property role="2Ry0Am" value="xmlgraphics-commons-2.7.jar" />
+                    <node concept="2Ry0Ak" id="rrK$a3LhXt" role="2Ry0An">
+                      <property role="2Ry0Am" value="dependencies" />
+                      <node concept="2Ry0Ak" id="rrK$a3LhXu" role="2Ry0An">
+                        <property role="2Ry0Am" value="xmlgraphics-commons-2.7.jar" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1015,22 +1134,107 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="72ufn5vqUYB" role="3bR37C">
-          <node concept="1BurEX" id="72ufn5vqUYC" role="1SiIV1">
-            <node concept="398BVA" id="72ufn5vqUYq" role="1BurEY">
+      </node>
+    </node>
+    <node concept="2G$12M" id="2MrvZqtDg3S" role="3989C9">
+      <property role="TrG5h" value="com.mpsbasics.docx4j.testutils" />
+      <node concept="1E1JtA" id="2MrvZqtDgLZ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mpsbasics.docx4j.diffx.lib" />
+        <property role="3LESm3" value="1cb48442-05da-4cad-b5c5-e31ddd69e322" />
+        <property role="2GAjPV" value="true" />
+        <node concept="398BVA" id="2MrvZqtDh3X" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+          <node concept="2Ry0Ak" id="2MrvZqtDhmt" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="2MrvZqtDhCW" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mpsbasics.docx4j.diffx.lib" />
+              <node concept="2Ry0Ak" id="2MrvZqtDhV1" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mpsbasics.docx4j.diffx.lib.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2MrvZqtDib6" role="3bR37C">
+          <node concept="3bR9La" id="2MrvZqtDib7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2MrvZqtDib8" role="3bR37C">
+          <node concept="3bR9La" id="2MrvZqtDib9" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mpsbasics.docx4j.lib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2MrvZqtDibn" role="3bR37C">
+          <node concept="1BurEX" id="2MrvZqtDibo" role="1SiIV1">
+            <node concept="398BVA" id="2MrvZqtDiba" role="1BurEY">
               <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="72ufn5vqUYr" role="iGT6I">
+              <node concept="2Ry0Ak" id="2MrvZqtDibb" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="72ufn5vqUYs" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="72ufn5vqUYt" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2MrvZqtDibc" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.diffx.lib" />
+                  <node concept="2Ry0Ak" id="2MrvZqtDibd" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="72ufn5vqUYu" role="2Ry0An">
-                      <property role="2Ry0Am" value="docx4j-diffx-11.4.7.jar" />
+                    <node concept="2Ry0Ak" id="2MrvZqtDibe" role="2Ry0An">
+                      <property role="2Ry0Am" value="docx4j-diffx-11.4.9.jar" />
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="2MrvZqtDizQ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mpsbasics.docx4j.testutils" />
+        <property role="3LESm3" value="5f04c496-eb21-4501-981b-4e5fc2ab46ec" />
+        <node concept="398BVA" id="2MrvZqtDiKJ" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+          <node concept="2Ry0Ak" id="2MrvZqtDj3D" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="2MrvZqtDjmW" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mpsbasics.docx4j.testutils" />
+              <node concept="2Ry0Ak" id="2MrvZqtDjC7" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mpsbasics.docx4j.testutils.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2MrvZqtDjUI" role="3bR37C">
+          <node concept="3bR9La" id="2MrvZqtDjUJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2MrvZqtDjUK" role="3bR37C">
+          <node concept="3bR9La" id="2MrvZqtDjUL" role="1SiIV1">
+            <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mpsbasics.docx4j.lib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2MrvZqtDjUM" role="3bR37C">
+          <node concept="3bR9La" id="2MrvZqtDjUN" role="1SiIV1">
+            <ref role="3bR37D" node="2MrvZqtDgLZ" resolve="com.mpsbasics.docx4j.diffx.lib" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="2MrvZqtDjUZ" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="2MrvZqtDjV0" role="1HemKq">
+            <node concept="398BVA" id="2MrvZqtDjUO" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="2MrvZqtDjUP" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2MrvZqtDjUQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.testutils" />
+                  <node concept="2Ry0Ak" id="2MrvZqtDjUR" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="2MrvZqtDjV1" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>

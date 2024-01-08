@@ -15,7 +15,7 @@ plugins {
     id("de.itemis.mps.gradle.common") version "1.20.+"
 }
 
-val jbrVers = "17.0.6-b653.34"
+val jbrVers = "17.0.6-b469.82"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -38,7 +38,7 @@ logger.info("Repository username: {}", nexusUsername)
 val major = "2022"
 val minor = "2"
 
-val mpsVersion ="$major.$minor"
+val mpsVersion ="2022.2.2"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
