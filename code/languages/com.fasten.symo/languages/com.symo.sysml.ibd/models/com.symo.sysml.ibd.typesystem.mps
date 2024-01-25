@@ -256,7 +256,7 @@
                       <ref role="37wK5l" to="3o3z:~Multimap.put(java.lang.Object,java.lang.Object)" resolve="put" />
                       <node concept="2OqwBi" id="6eYU0xi7I8j" role="37wK5m">
                         <node concept="37vLTw" id="6eYU0xi7HUX" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2hED36G5YKW" />
+                          <ref role="3cqZAo" node="2hED36G5YKW" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6eYU0xi7In5" role="2OqNvi">
                           <ref role="3Tt5mk" to="4hyq:4PDUeYRxeq$" resolve="instance" />
@@ -264,7 +264,7 @@
                       </node>
                       <node concept="2OqwBi" id="6eYU0xi7IBZ" role="37wK5m">
                         <node concept="37vLTw" id="6eYU0xi7Iz$" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2hED36G5YKW" />
+                          <ref role="3cqZAo" node="2hED36G5YKW" resolve="it" />
                         </node>
                         <node concept="3TrEf2" id="6eYU0xi7IKS" role="2OqNvi">
                           <ref role="3Tt5mk" to="4hyq:4PDUeYRxeqF" resolve="componentPort" />
@@ -297,7 +297,7 @@
                       <node concept="2OqwBi" id="6eYU0xi7CjE" role="2Oq$k0">
                         <node concept="2OqwBi" id="6eYU0xi7CjF" role="2Oq$k0">
                           <node concept="37vLTw" id="6eYU0xi7CjG" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36G5YKY" />
+                            <ref role="3cqZAo" node="2hED36G5YKY" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="6eYU0xi7CjH" role="2OqNvi">
                             <ref role="3Tt5mk" to="4hyq:4PDUeYRx7XD" resolve="block" />
@@ -329,12 +329,12 @@
                     <node concept="liA8E" id="6eYU0xi7Juf" role="2OqNvi">
                       <ref role="37wK5l" to="3o3z:~Multimap.containsKey(java.lang.Object)" resolve="containsKey" />
                       <node concept="37vLTw" id="6eYU0xi7JCq" role="37wK5m">
-                        <ref role="3cqZAo" node="2hED36G5YL2" />
+                        <ref role="3cqZAo" node="2hED36G5YL2" resolve="compInstance" />
                       </node>
                     </node>
                   </node>
                   <node concept="37vLTw" id="6eYU0xi7$ie" role="1urrMF">
-                    <ref role="3cqZAo" node="2hED36G5YL2" />
+                    <ref role="3cqZAo" node="2hED36G5YL2" resolve="compInstance" />
                   </node>
                   <node concept="2YIFZM" id="6eYU0xi7$75" role="2MkJ7o">
                     <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
@@ -355,7 +355,7 @@
                         <node concept="2OqwBi" id="6eYU0xi7NWH" role="33vP2m">
                           <node concept="2OqwBi" id="6eYU0xi7NWI" role="2Oq$k0">
                             <node concept="37vLTw" id="6eYU0xi7NWJ" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2hED36G5YL2" />
+                              <ref role="3cqZAo" node="2hED36G5YL2" resolve="compInstance" />
                             </node>
                             <node concept="3TrEf2" id="6eYU0xi7NWK" role="2OqNvi">
                               <ref role="3Tt5mk" to="4hyq:4PDUeYRx7XD" resolve="block" />
@@ -383,7 +383,7 @@
                           <node concept="liA8E" id="6eYU0xi7Kz$" role="2OqNvi">
                             <ref role="37wK5l" to="3o3z:~Multimap.get(java.lang.Object)" resolve="get" />
                             <node concept="37vLTw" id="6eYU0xi7Kz_" role="37wK5m">
-                              <ref role="3cqZAo" node="2hED36G5YL2" />
+                              <ref role="3cqZAo" node="2hED36G5YL2" resolve="compInstance" />
                             </node>
                           </node>
                         </node>
@@ -405,12 +405,12 @@
                                   <node concept="liA8E" id="6eYU0xi836z" role="2OqNvi">
                                     <ref role="37wK5l" to="33ny:~Collection.contains(java.lang.Object)" resolve="contains" />
                                     <node concept="37vLTw" id="6eYU0xi83oy" role="37wK5m">
-                                      <ref role="3cqZAo" node="2hED36G5YL0" />
+                                      <ref role="3cqZAo" node="2hED36G5YL0" resolve="it" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="6eYU0xi8ej8" role="1urrMF">
-                                  <ref role="3cqZAo" node="2hED36G5YL2" />
+                                  <ref role="3cqZAo" node="2hED36G5YL2" resolve="compInstance" />
                                 </node>
                                 <node concept="3cpWs3" id="6eYU0xi8G6k" role="2MkJ7o">
                                   <node concept="Xl_RD" id="6eYU0xi8Gjc" role="3uHU7w">
@@ -424,7 +424,7 @@
                                         </node>
                                         <node concept="2OqwBi" id="6eYU0xi8pl5" role="3uHU7w">
                                           <node concept="37vLTw" id="6eYU0xi8oW9" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="2hED36G5YL0" />
+                                            <ref role="3cqZAo" node="2hED36G5YL0" resolve="it" />
                                           </node>
                                           <node concept="3TrcHB" id="6eYU0xi8pHU" role="2OqNvi">
                                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -437,7 +437,7 @@
                                     </node>
                                     <node concept="2OqwBi" id="6eYU0xi8Fra" role="3uHU7w">
                                       <node concept="37vLTw" id="6eYU0xi8F3N" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="2hED36G5YL2" />
+                                        <ref role="3cqZAo" node="2hED36G5YL2" resolve="compInstance" />
                                       </node>
                                       <node concept="3TrcHB" id="6eYU0xi8FSt" role="2OqNvi">
                                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -463,7 +463,7 @@
                     <node concept="liA8E" id="6eYU0xi7JPr" role="2OqNvi">
                       <ref role="37wK5l" to="3o3z:~Multimap.containsKey(java.lang.Object)" resolve="containsKey" />
                       <node concept="37vLTw" id="6eYU0xi7JPs" role="37wK5m">
-                        <ref role="3cqZAo" node="2hED36G5YL2" />
+                        <ref role="3cqZAo" node="2hED36G5YL2" resolve="compInstance" />
                       </node>
                     </node>
                   </node>

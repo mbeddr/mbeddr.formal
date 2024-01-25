@@ -305,7 +305,7 @@
                           <node concept="2OqwBi" id="6hWVnwAv2_U" role="1m5AlR">
                             <node concept="2OqwBi" id="6hWVnwAuZZy" role="2Oq$k0">
                               <node concept="37vLTw" id="6hWVnwAuZOI" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2hED36EN4t$" />
+                                <ref role="3cqZAo" node="2hED36EN4t$" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="6hWVnwAv0i1" role="2OqNvi">
                                 <ref role="3Tt5mk" to="uu78:6hWVnwA8mNz" resolve="module" />

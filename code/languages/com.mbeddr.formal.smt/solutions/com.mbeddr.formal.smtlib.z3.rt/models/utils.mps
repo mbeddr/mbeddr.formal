@@ -179,7 +179,7 @@
                       <node concept="2OqwBi" id="6cjunGyDMQG" role="3clFbG">
                         <node concept="2OqwBi" id="6cjunGyDMQH" role="2Oq$k0">
                           <node concept="37vLTw" id="6cjunGyDMQI" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36Gak9Q" />
+                            <ref role="3cqZAo" node="2hED36Gak9Q" resolve="it" />
                           </node>
                           <node concept="3TrcHB" id="6cjunGyDMQJ" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />

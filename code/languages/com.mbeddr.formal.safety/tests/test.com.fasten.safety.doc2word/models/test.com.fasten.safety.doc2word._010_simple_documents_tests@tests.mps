@@ -1293,7 +1293,7 @@
                       <node concept="2OqwBi" id="4ziKDEn8xuG" role="3clFbG">
                         <node concept="2OqwBi" id="4ziKDEn8xuH" role="2Oq$k0">
                           <node concept="37vLTw" id="4ziKDEn8xuI" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36FpC$z" />
+                            <ref role="3cqZAo" node="2hED36FpC$z" resolve="it" />
                           </node>
                           <node concept="3TrcHB" id="4ziKDEn8xuJ" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />

@@ -255,7 +255,7 @@
                           <node concept="1pGfFk" id="6hWVnwAONq6" role="2ShVmc">
                             <ref role="37wK5l" node="6hWVnwAOhJ_" resolve="NuSMVReqConsistencyAnalysisLiftedResult" />
                             <node concept="37vLTw" id="6hWVnwAONwB" role="37wK5m">
-                              <ref role="3cqZAo" node="2hED36EN4tw" />
+                              <ref role="3cqZAo" node="2hED36EN4tw" resolve="it" />
                             </node>
                           </node>
                         </node>

@@ -274,7 +274,7 @@
                       <node concept="2OqwBi" id="2gpUZARgSS_" role="3clFbG">
                         <node concept="2OqwBi" id="2gpUZARgSSA" role="2Oq$k0">
                           <node concept="37vLTw" id="2gpUZARgSSB" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36FpC$V" />
+                            <ref role="3cqZAo" node="2hED36FpC$V" resolve="it" />
                           </node>
                           <node concept="3TrcHB" id="2gpUZARgSSC" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />

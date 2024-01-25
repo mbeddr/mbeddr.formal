@@ -347,7 +347,7 @@
                         <node concept="2OqwBi" id="1HYO_kn5VEo" role="3clFbG">
                           <node concept="2OqwBi" id="1HYO_kn5Sfb" role="2Oq$k0">
                             <node concept="37vLTw" id="1HYO_kn5R52" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2hED36FpCxj" />
+                              <ref role="3cqZAo" node="2hED36FpCxj" resolve="it" />
                             </node>
                             <node concept="2qgKlT" id="1HYO_kn5TaZ" role="2OqNvi">
                               <ref role="37wK5l" to="89jy:71GfFl7iCHN" resolve="getInboundConnections" />

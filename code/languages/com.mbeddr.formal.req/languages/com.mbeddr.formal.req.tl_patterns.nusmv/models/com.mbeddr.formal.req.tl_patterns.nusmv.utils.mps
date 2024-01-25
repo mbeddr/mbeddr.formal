@@ -149,7 +149,7 @@
                       <node concept="2OqwBi" id="6hWVnwAb4RN" role="3clFbG">
                         <node concept="2OqwBi" id="6hWVnwAb4RO" role="2Oq$k0">
                           <node concept="37vLTw" id="6hWVnwAb4RP" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36EN4tc" />
+                            <ref role="3cqZAo" node="2hED36EN4tc" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="6hWVnwAb4RQ" role="2OqNvi">
                             <ref role="3Tt5mk" to="gioj:6NmtaR1SVeb" resolve="type" />

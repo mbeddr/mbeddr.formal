@@ -147,7 +147,7 @@
                         <node concept="1beSmn" id="5t37uj6C0e5" role="3uHU7w" />
                         <node concept="2OqwBi" id="5t37uj6C0e6" role="3uHU7B">
                           <node concept="37vLTw" id="5t37uj6C0e7" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36FpCvH" />
+                            <ref role="3cqZAo" node="2hED36FpCvH" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="5t37uj6C0e8" role="2OqNvi">
                             <ref role="3Tt5mk" to="kivz:5t37uj6_AgL" resolve="subject" />

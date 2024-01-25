@@ -764,7 +764,7 @@
                           <node concept="2OqwBi" id="38aFq1j6lm9" role="2Oq$k0">
                             <node concept="2OqwBi" id="38aFq1j6gXT" role="2Oq$k0">
                               <node concept="37vLTw" id="38aFq1j6gMB" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2hED36EN4tu" />
+                                <ref role="3cqZAo" node="2hED36EN4tu" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="38aFq1j6hhM" role="2OqNvi">
                                 <ref role="3Tt5mk" to="z27p:2N7iSwGA7QF" resolve="text" />

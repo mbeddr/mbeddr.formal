@@ -360,7 +360,7 @@
                   <node concept="3clFbF" id="3x7uzC8sp3t" role="3cqZAp">
                     <node concept="2OqwBi" id="3x7uzC8sp3u" role="3clFbG">
                       <node concept="37vLTw" id="3x7uzC8sp3v" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2hED36FpCvQ" />
+                        <ref role="3cqZAo" node="2hED36FpCvQ" resolve="it" />
                       </node>
                       <node concept="3TrEf2" id="3x7uzC8sp3w" role="2OqNvi">
                         <ref role="3Tt5mk" to="6k2r:31P83hzFOt7" resolve="failureModeDefinition" />
@@ -427,7 +427,7 @@
                       <node concept="3clFbF" id="22gnu5EV2rP" role="3cqZAp">
                         <node concept="2OqwBi" id="22gnu5EV2Fl" role="3clFbG">
                           <node concept="37vLTw" id="22gnu5EV2rO" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36FpCvS" />
+                            <ref role="3cqZAo" node="2hED36FpCvS" resolve="it" />
                           </node>
                           <node concept="3TrcHB" id="22gnu5EV2Vv" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />

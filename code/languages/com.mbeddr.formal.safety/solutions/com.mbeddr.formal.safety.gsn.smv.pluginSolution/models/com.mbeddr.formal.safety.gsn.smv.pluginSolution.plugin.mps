@@ -433,7 +433,7 @@
                   <node concept="3clFbF" id="6xNJt7lKWd8" role="3cqZAp">
                     <node concept="2OqwBi" id="6xNJt7lKZv2" role="3clFbG">
                       <node concept="37vLTw" id="6xNJt7lKZ6o" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2hED36FpC$n" />
+                        <ref role="3cqZAo" node="2hED36FpC$n" resolve="it" />
                       </node>
                       <node concept="2qgKlT" id="6xNJt7lL0Am" role="2OqNvi">
                         <ref role="37wK5l" to="23hk:6Kf5KB77M0o" resolve="actsAsMainModule" />

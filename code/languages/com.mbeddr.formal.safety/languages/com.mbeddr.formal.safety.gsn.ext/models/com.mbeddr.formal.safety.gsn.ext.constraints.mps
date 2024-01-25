@@ -258,7 +258,7 @@
                         <node concept="2OqwBi" id="56pBK14wEzH" role="3clFbG">
                           <node concept="2OqwBi" id="56pBK14wEzI" role="2Oq$k0">
                             <node concept="37vLTw" id="56pBK14wEzJ" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2hED36FpCxs" />
+                              <ref role="3cqZAo" node="2hED36FpCxs" resolve="it" />
                             </node>
                             <node concept="liA8E" id="56pBK14wEzK" role="2OqNvi">
                               <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
@@ -306,7 +306,7 @@
                           <node concept="3bZ5Sz" id="56pBK14wKaE" role="1tU5fm" />
                           <node concept="2OqwBi" id="56pBK14wKi3" role="33vP2m">
                             <node concept="37vLTw" id="56pBK14wKi4" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2hED36FpCxu" />
+                              <ref role="3cqZAo" node="2hED36FpCxu" resolve="it" />
                             </node>
                             <node concept="2yIwOk" id="56pBK14wKi5" role="2OqNvi" />
                           </node>

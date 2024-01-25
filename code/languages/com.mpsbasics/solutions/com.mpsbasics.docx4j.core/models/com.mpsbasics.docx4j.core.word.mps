@@ -3621,7 +3621,7 @@
                       </node>
                       <node concept="2OqwBi" id="7SQqK0Fk5KA" role="33vP2m">
                         <node concept="37vLTw" id="7SQqK0Fk5KB" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2hED36CAms1" />
+                          <ref role="3cqZAo" node="2hED36CAms1" resolve="it" />
                         </node>
                         <node concept="liA8E" id="7SQqK0Fk5KC" role="2OqNvi">
                           <ref role="37wK5l" to="exr9:~EditorCell_WithComponent.getComponent()" resolve="getComponent" />
@@ -5946,7 +5946,7 @@
                         <node concept="1rXfSq" id="38aFq1jl25G" role="3clFbG">
                           <ref role="37wK5l" node="38aFq1jlbBT" resolve="doCheckCanComputeString4DefaultEditor" />
                           <node concept="37vLTw" id="38aFq1jl25H" role="37wK5m">
-                            <ref role="3cqZAo" node="2hED36CAms3" />
+                            <ref role="3cqZAo" node="2hED36CAms3" resolve="it" />
                           </node>
                         </node>
                       </node>
