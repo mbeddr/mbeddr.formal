@@ -1,5 +1,0 @@
-mpsHomeDir=<path_to_mps_installation_directory>
-mbeddr.formal.home=<path_to_the_current_directory>
-
-gpr.user=<a github user name>
-gpr.token=<token for package access>
