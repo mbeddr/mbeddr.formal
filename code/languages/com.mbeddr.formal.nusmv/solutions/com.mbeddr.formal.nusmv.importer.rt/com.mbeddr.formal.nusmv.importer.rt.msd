@@ -6,22 +6,22 @@
     </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="asm-tree-7.0.jar" />
-      <sourceRoot location="parboiled-java-1.3.0.jar" />
+      <sourceRoot location="parboiled-java-1.4.1.jar" />
       <sourceRoot location="asm-7.0.jar" />
       <sourceRoot location="asm-analysis-7.0.jar" />
       <sourceRoot location="asm-util-7.0.jar" />
-      <sourceRoot location="parboiled-core-1.3.0.jar" />
+      <sourceRoot location="parboiled-core-1.4.1.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/asm-tree-7.0.jar" />
-      <library location="${module}/lib/parboiled-java-1.3.0.jar" />
+      <library location="${module}/lib/parboiled-java-1.4.1.jar" />
       <library location="${module}/lib/asm-7.0.jar" />
       <library location="${module}/lib/asm-analysis-7.0.jar" />
       <library location="${module}/lib/asm-util-7.0.jar" />
-      <library location="${module}/lib/parboiled-core-1.3.0.jar" />
+      <library location="${module}/lib/parboiled-core-1.4.1.jar" />
     </facet>
   </facets>
   <dependencies>
@@ -67,4 +67,3 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
 </solution>
-
