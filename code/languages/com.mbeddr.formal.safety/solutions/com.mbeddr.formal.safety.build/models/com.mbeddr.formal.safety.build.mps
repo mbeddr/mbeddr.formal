@@ -7135,7 +7135,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66hf" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66hg" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-tree-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-tree-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -7173,7 +7173,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66hH" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66hI" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -7192,7 +7192,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66hW" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66hX" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-analysis-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-analysis-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -7211,7 +7211,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66ib" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66ic" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-util-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-util-9.2.jar" />
                     </node>
                   </node>
                 </node>
