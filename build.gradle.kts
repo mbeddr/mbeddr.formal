@@ -11,11 +11,11 @@ plugins {
     id("co.riiid.gradle") version "0.4.2"
 
     // Version must match buildscript mps-gradle-plugin dependency above
-    id("download-jbr") version "1.17.+"
-    id("de.itemis.mps.gradle.common") version "1.20.+"
+    id("download-jbr") version "1.22.+"
+    id("de.itemis.mps.gradle.common") version "1.22.+"
 }
 
-val jbrVers = "17.0.6-b653.34"
+val jbrVers = "17.0.8.1-b1000.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -35,9 +35,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2022"
-val minor = "3"
-val bugfix = "1"
+val major = "2023"
+val minor = "2"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
