@@ -2,7 +2,7 @@
 <model ref="r:b79595f7-8350-4c32-8b59-20629b485a08(com.mbeddr.formal.safety.gsn.web.rt.gsn_genplan)">
   <persistence version="9" />
   <languages>
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
     <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen" version="0" />
   </languages>
   <imports>
@@ -10,11 +10,14 @@
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
+      <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">
+        <child id="1152961914448136208" name="language" index="2Qf6Ng" />
+      </concept>
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
       <concept id="1820634577908471810" name="jetbrains.mps.lang.generator.plan.structure.Transform" flags="ng" index="2VgMA2">
-        <child id="2944629966652439181" name="languages" index="1t_9vn" />
+        <child id="1152961914448142326" name="entries" index="2Qf7GQ" />
       </concept>
     </language>
     <language id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen">
@@ -27,7 +30,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -35,9 +38,11 @@
   <node concept="2VgMpV" id="kPkqqqMHTt">
     <property role="TrG5h" value="generateGSNGenplan" />
     <node concept="2Pg1uL" id="kPkqqqMW0U" role="2VgMA7">
-      <node concept="2Pgd6e" id="kPkqqqMW0V" role="1t_9vn" />
       <node concept="3Vl8EG" id="kPkqqqMW0W" role="3VlUeB">
         <ref role="3Vl8EH" to="hbry:5pJnDA9aQRy" resolve="gsn2html_main" />
+      </node>
+      <node concept="2Qf6Nf" id="2hED36FpCvu" role="2Qf7GQ">
+        <node concept="2Pgd6e" id="kPkqqqMW0V" role="2Qf6Ng" />
       </node>
     </node>
   </node>

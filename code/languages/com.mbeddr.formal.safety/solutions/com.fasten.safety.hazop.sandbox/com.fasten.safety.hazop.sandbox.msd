@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.fasten.safety.hazop.sandbox" uuid="f88997db-a96e-4a9b-8e7e-26d879867c92" moduleVersion="0" compileInMPS="true">
+<solution name="com.fasten.safety.hazop.sandbox" uuid="f88997db-a96e-4a9b-8e7e-26d879867c92" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:7af989c3-8042-42ae-bf04-8bcfa8f9dbf9:com.fasten.safety.hazop" version="0" />
     <language slang="l:f610e51f-b05d-4ea8-a354-7ee51a81bcbc:com.fasten.safety.hazop.iso26262" version="0" />
