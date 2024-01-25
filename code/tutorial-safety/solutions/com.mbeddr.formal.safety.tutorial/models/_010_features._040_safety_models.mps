@@ -148,7 +148,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1239,28 +1239,28 @@
           <property role="TrG5h" value="speed__speed too low" />
         </node>
         <node concept="21oswF" id="12q9egMHORW" role="3CrHoS">
-          <ref role="21oszt" node="12q9egMHORU" resolve="" />
+          <ref role="21oszt" node="12q9egMHORU" resolve="Or Gate 1" />
           <ref role="21oszj" node="12q9egMHORV" resolve="speed__speed too low" />
         </node>
         <node concept="21ATtL" id="12q9egMHORX" role="3CrHoS">
           <property role="TrG5h" value="speed__speed too high" />
         </node>
         <node concept="21oswF" id="12q9egMHORY" role="3CrHoS">
-          <ref role="21oszt" node="12q9egMHORU" resolve="" />
+          <ref role="21oszt" node="12q9egMHORU" resolve="Or Gate 1" />
           <ref role="21oszj" node="12q9egMHORX" resolve="speed__speed too high" />
         </node>
         <node concept="cFNQA" id="12q9egMHORU" role="3CrHoS">
           <property role="TrG5h" value="Or Gate 1" />
         </node>
         <node concept="21oswF" id="12q9egMHORZ" role="3CrHoS">
-          <ref role="21oszt" node="12q9egMHORT" resolve="" />
-          <ref role="21oszj" node="12q9egMHORU" resolve="" />
+          <ref role="21oszt" node="12q9egMHORT" resolve="Or Gate 2" />
+          <ref role="21oszj" node="12q9egMHORU" resolve="Or Gate 1" />
         </node>
         <node concept="21ATtL" id="12q9egMHOS0" role="3CrHoS">
           <property role="TrG5h" value="innacurate_computation" />
         </node>
         <node concept="21oswF" id="12q9egMHOS1" role="3CrHoS">
-          <ref role="21oszt" node="12q9egMHORT" resolve="" />
+          <ref role="21oszt" node="12q9egMHORT" resolve="Or Gate 2" />
           <ref role="21oszj" node="12q9egMHOS0" resolve="innacurate_computation" />
         </node>
         <node concept="cFNQA" id="12q9egMHORT" role="3CrHoS">
@@ -1268,7 +1268,7 @@
         </node>
         <node concept="21oswF" id="12q9egMHOS2" role="3CrHoS">
           <ref role="21oszt" node="12q9egMHORL" resolve="plausibilizedSpeed__speed innacurate" />
-          <ref role="21oszj" node="12q9egMHORT" resolve="" />
+          <ref role="21oszj" node="12q9egMHORT" resolve="Or Gate 2" />
         </node>
         <node concept="37mRI7" id="12q9egMHOTv" role="lGtFl">
           <node concept="37mRIm" id="12q9egMHOTw" role="37mRID">
