@@ -243,7 +243,7 @@
                     <node concept="2OqwBi" id="y1G8y66xb3" role="3clFbG">
                       <node concept="2OqwBi" id="y1G8y66xb4" role="2Oq$k0">
                         <node concept="37vLTw" id="y1G8y66xb5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2hED36D1DtQ" />
+                          <ref role="3cqZAo" node="2hED36D1DtQ" resolve="it" />
                         </node>
                         <node concept="liA8E" id="y1G8y66xb6" role="2OqNvi">
                           <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />

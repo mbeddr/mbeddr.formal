@@ -1085,13 +1085,13 @@
                                   <ref role="37wK5l" node="2DKZaNk2FmX" resolve="FASTENStructureViewModel.Presentation" />
                                   <node concept="2OqwBi" id="2DKZaNke9ZQ" role="37wK5m">
                                     <node concept="37vLTw" id="2DKZaNk38de" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="2hED36D1DtM" />
+                                      <ref role="3cqZAo" node="2hED36D1DtM" resolve="it" />
                                     </node>
                                     <node concept="iZEcu" id="2DKZaNkeal4" role="2OqNvi" />
                                   </node>
                                   <node concept="2OqwBi" id="2DKZaNke6LD" role="37wK5m">
                                     <node concept="37vLTw" id="2DKZaNke6rt" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="2hED36D1DtM" />
+                                      <ref role="3cqZAo" node="2hED36D1DtM" resolve="it" />
                                     </node>
                                     <node concept="3TrcHB" id="2DKZaNke7et" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1104,7 +1104,7 @@
                                     <node concept="liA8E" id="2DKZaNkeOSI" role="2OqNvi">
                                       <ref role="37wK5l" to="sn11:192HKKPOd3m" resolve="getIconFor" />
                                       <node concept="37vLTw" id="2DKZaNkePp4" role="37wK5m">
-                                        <ref role="3cqZAo" node="2hED36D1DtM" />
+                                        <ref role="3cqZAo" node="2hED36D1DtM" resolve="it" />
                                       </node>
                                     </node>
                                   </node>
@@ -1143,7 +1143,7 @@
                   <node concept="3clFbF" id="4w58iiKvGu3" role="3cqZAp">
                     <node concept="2OqwBi" id="4w58iiKvGDf" role="3clFbG">
                       <node concept="37vLTw" id="4w58iiKvGu2" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2hED36D1DtO" />
+                        <ref role="3cqZAo" node="2hED36D1DtO" resolve="it" />
                       </node>
                       <node concept="liA8E" id="4w58iiKvGRM" role="2OqNvi">
                         <ref role="37wK5l" to="2ymi:~ModelListener.onModelChanged()" resolve="onModelChanged" />

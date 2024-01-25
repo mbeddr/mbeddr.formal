@@ -1007,7 +1007,7 @@
                             <node concept="2OqwBi" id="6WmpcHMOgge" role="3clFbG">
                               <node concept="2OqwBi" id="6WmpcHMOfu3" role="2Oq$k0">
                                 <node concept="37vLTw" id="6WmpcHMOfhy" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2hED36D1Dw8" />
+                                  <ref role="3cqZAo" node="2hED36D1Dw8" resolve="it" />
                                 </node>
                                 <node concept="3TrcHB" id="6WmpcHMOfGB" role="2OqNvi">
                                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1186,7 +1186,7 @@
                       <node concept="2OqwBi" id="6hWVnwAk6Jh" role="3clFbG">
                         <node concept="2OqwBi" id="6hWVnwAk6Ji" role="2Oq$k0">
                           <node concept="37vLTw" id="6hWVnwAk6Jj" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2hED36D1Dwa" />
+                            <ref role="3cqZAo" node="2hED36D1Dwa" resolve="it" />
                           </node>
                           <node concept="liA8E" id="6hWVnwAk6Jk" role="2OqNvi">
                             <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />
@@ -1268,7 +1268,7 @@
                             <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="2OqwBi" id="6hWVnwAkieH" role="37wK5m">
                               <node concept="37vLTw" id="6hWVnwAkhUY" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2hED36D1Dwc" />
+                                <ref role="3cqZAo" node="2hED36D1Dwc" resolve="it" />
                               </node>
                               <node concept="liA8E" id="6hWVnwAkm8h" role="2OqNvi">
                                 <ref role="37wK5l" to="4c75:7mSH3Wn4cMJ" resolve="getUserFriendlyMessage" />

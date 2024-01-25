@@ -807,7 +807,7 @@
                           <node concept="liA8E" id="4CtHBqNls$z" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                             <node concept="37vLTw" id="4CtHBqNls$$" role="37wK5m">
-                              <ref role="3cqZAo" node="2hED36D1Dum" />
+                              <ref role="3cqZAo" node="2hED36D1Dum" resolve="it" />
                             </node>
                           </node>
                         </node>
@@ -876,7 +876,7 @@
                           <node concept="liA8E" id="4CtHBqNls_1" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                             <node concept="37vLTw" id="4CtHBqNls_2" role="37wK5m">
-                              <ref role="3cqZAo" node="2hED36D1Duo" />
+                              <ref role="3cqZAo" node="2hED36D1Duo" resolve="it" />
                             </node>
                           </node>
                         </node>
@@ -1657,7 +1657,7 @@
                               <node concept="liA8E" id="1mocVhABLTE" role="2OqNvi">
                                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                 <node concept="37vLTw" id="1mocVhABMx9" role="37wK5m">
-                                  <ref role="3cqZAo" node="2hED36D1Duq" />
+                                  <ref role="3cqZAo" node="2hED36D1Duq" resolve="it" />
                                 </node>
                               </node>
                             </node>
@@ -1716,7 +1716,7 @@
                               <node concept="liA8E" id="1mocVhABWZU" role="2OqNvi">
                                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                 <node concept="37vLTw" id="1mocVhABWZV" role="37wK5m">
-                                  <ref role="3cqZAo" node="2hED36D1Dus" />
+                                  <ref role="3cqZAo" node="2hED36D1Dus" resolve="it" />
                                 </node>
                               </node>
                             </node>

@@ -376,7 +376,7 @@
                                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                                   <node concept="WxPPo" id="7eXh0gmQhwL" role="28ntcv">
                                     <node concept="37vLTw" id="6f7vJBUj6C2" role="WxPPp">
-                                      <ref role="3cqZAo" node="2hED36D1DuU" />
+                                      <ref role="3cqZAo" node="2hED36D1DuU" resolve="it" />
                                     </node>
                                   </node>
                                 </node>
@@ -394,7 +394,7 @@
                             </node>
                             <node concept="3EllGN" id="1wencriP5gH" role="37vLTJ">
                               <node concept="37vLTw" id="1wencriP5x4" role="3ElVtu">
-                                <ref role="3cqZAo" node="2hED36D1DuU" />
+                                <ref role="3cqZAo" node="2hED36D1DuU" resolve="it" />
                               </node>
                               <node concept="37vLTw" id="1wencriP4Tv" role="3ElQJh">
                                 <ref role="3cqZAo" node="1wencriP1Ez" resolve="variableName2CorrespondingMSCObject" />
@@ -577,7 +577,7 @@
                                     <node concept="2OqwBi" id="6f7vJBUkCiP" role="3clFbG">
                                       <node concept="2OqwBi" id="6f7vJBUkCiQ" role="2Oq$k0">
                                         <node concept="37vLTw" id="6f7vJBUkCiR" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2hED36D1DuW" />
+                                          <ref role="3cqZAo" node="2hED36D1DuW" resolve="it" />
                                         </node>
                                         <node concept="liA8E" id="6f7vJBUkCiS" role="2OqNvi">
                                           <ref role="37wK5l" to="4c75:1ZsZb$iUjw_" resolve="getLhsString" />

@@ -2812,7 +2812,7 @@
                   <node concept="3clFbF" id="696iakCBxd" role="3cqZAp">
                     <node concept="2OqwBi" id="696iakCBBH" role="3clFbG">
                       <node concept="37vLTw" id="696iakCBxc" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2hED36D1Duu" />
+                        <ref role="3cqZAo" node="2hED36D1Duu" resolve="it" />
                       </node>
                       <node concept="liA8E" id="696iakCHYm" role="2OqNvi">
                         <ref role="37wK5l" to="f4zo:~EditorCell.relayout()" resolve="relayout" />
@@ -2851,7 +2851,7 @@
                       </node>
                       <node concept="2OqwBi" id="7SQqK0Fk5KA" role="33vP2m">
                         <node concept="37vLTw" id="7SQqK0Fk5KB" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2hED36D1Duw" />
+                          <ref role="3cqZAo" node="2hED36D1Duw" resolve="it" />
                         </node>
                         <node concept="liA8E" id="7SQqK0Fk5KC" role="2OqNvi">
                           <ref role="37wK5l" to="exr9:~EditorCell_WithComponent.getComponent()" resolve="getComponent" />
@@ -4602,7 +4602,7 @@
                                   </node>
                                   <node concept="2OqwBi" id="5FTX57fMJ4l" role="33vP2m">
                                     <node concept="37vLTw" id="5FTX57fMJ4m" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="2hED36D1Duy" />
+                                      <ref role="3cqZAo" node="2hED36D1Duy" resolve="it" />
                                     </node>
                                     <node concept="liA8E" id="5FTX57fMJ4n" role="2OqNvi">
                                       <ref role="37wK5l" to="exr9:~EditorCell_WithComponent.getComponent()" resolve="getComponent" />

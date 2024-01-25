@@ -113,7 +113,7 @@
                   <node concept="3clFbF" id="4Jpgh6IFXDd" role="3cqZAp">
                     <node concept="2OqwBi" id="4Jpgh6IFXOa" role="3clFbG">
                       <node concept="37vLTw" id="4Jpgh6IFXDc" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2hED36D1Drt" />
+                        <ref role="3cqZAo" node="2hED36D1Drt" resolve="it" />
                       </node>
                       <node concept="3YRAZt" id="4Jpgh6IFZQQ" role="2OqNvi" />
                     </node>
