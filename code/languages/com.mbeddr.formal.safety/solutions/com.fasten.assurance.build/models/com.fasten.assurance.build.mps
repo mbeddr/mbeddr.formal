@@ -179,7 +179,6 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -957,7 +956,6 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mpsbasics.docx4j.lib" />
         <property role="3LESm3" value="71bb25aa-20fa-4c18-8954-1b176576f52d" />
-        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="6hyv0iVPlHB" role="3LF7KH">
           <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
           <node concept="2Ry0Ak" id="6hyv0iVPlUt" role="iGT6I">
