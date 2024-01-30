@@ -380,6 +380,55 @@
     <property role="TrG5h" value="NuSMVParser" />
     <property role="3GE5qa" value="parser" />
     <node concept="2tJIrI" id="5Yu7EhkmFEC" role="jymVt" />
+    <node concept="Wx3nA" id="5F2isghPo8r" role="jymVt">
+      <property role="TrG5h" value="INSTANCE" />
+      <node concept="3uibUv" id="5F2isghPo8u" role="1tU5fm">
+        <ref role="3uigEE" node="63Mqfg9ORDV" resolve="NuSMVParser" />
+      </node>
+      <node concept="10Nm6u" id="5F2isghPo8v" role="33vP2m" />
+      <node concept="3Tm6S6" id="5F2isghPo8t" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5F2isghNHBn" role="jymVt" />
+    <node concept="2YIFZL" id="5F2isghPdV5" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <node concept="3clFbS" id="5F2isghPdV7" role="3clF47">
+        <node concept="3clFbJ" id="5F2isghPdV8" role="3cqZAp">
+          <node concept="3clFbC" id="5F2isghPdV9" role="3clFbw">
+            <node concept="10Nm6u" id="5F2isghPdVa" role="3uHU7w" />
+            <node concept="37vLTw" id="5F2isghPdVb" role="3uHU7B">
+              <ref role="3cqZAo" node="5F2isghPo8r" resolve="INSTANCE" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="5F2isghPdVc" role="3clFbx">
+            <node concept="3clFbF" id="5F2isghPdVd" role="3cqZAp">
+              <node concept="37vLTI" id="5F2isghPdVe" role="3clFbG">
+                <node concept="37vLTw" id="5F2isghPdVf" role="37vLTJ">
+                  <ref role="3cqZAo" node="5F2isghPo8r" resolve="INSTANCE" />
+                </node>
+                <node concept="2YIFZM" id="5F2isghPdVg" role="37vLTx">
+                  <ref role="1Pybhc" to="6rs6:~Parboiled" resolve="Parboiled" />
+                  <ref role="37wK5l" to="6rs6:~Parboiled.createParser(java.lang.Class,java.lang.Object...)" resolve="createParser" />
+                  <node concept="3VsKOn" id="5F2isghPdVh" role="37wK5m">
+                    <ref role="3VsUkX" node="63Mqfg9ORDV" resolve="NuSMVParser" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5F2isghPdVi" role="3cqZAp" />
+        <node concept="3cpWs6" id="5F2isghPdVj" role="3cqZAp">
+          <node concept="37vLTw" id="5F2isghPdVk" role="3cqZAk">
+            <ref role="3cqZAo" node="5F2isghPo8r" resolve="INSTANCE" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5F2isghPdVm" role="3clF45">
+        <ref role="3uigEE" node="63Mqfg9ORDV" resolve="NuSMVParser" />
+      </node>
+      <node concept="3Tm1VV" id="5F2isghPdVl" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5F2isghNdJ7" role="jymVt" />
     <node concept="3clFb_" id="63Mqfg9Pg7i" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="NuSMV" />
@@ -2037,12 +2086,8 @@
             <node concept="3uibUv" id="5uReZOjGm4P" role="1tU5fm">
               <ref role="3uigEE" node="63Mqfg9ORDV" resolve="NuSMVParser" />
             </node>
-            <node concept="2YIFZM" id="5uReZOjFDGe" role="33vP2m">
-              <ref role="1Pybhc" to="6rs6:~Parboiled" resolve="Parboiled" />
-              <ref role="37wK5l" to="6rs6:~Parboiled.createParser(java.lang.Class,java.lang.Object...)" resolve="createParser" />
-              <node concept="3VsKOn" id="5uReZOjFDGf" role="37wK5m">
-                <ref role="3VsUkX" node="63Mqfg9ORDV" resolve="NuSMVParser" />
-              </node>
+            <node concept="1rXfSq" id="5F2isghPDYc" role="33vP2m">
+              <ref role="37wK5l" node="5F2isghPdV5" resolve="getInstance" />
             </node>
           </node>
         </node>
