@@ -20,9 +20,7 @@
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
-      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
-        <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
-      </concept>
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW" />
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -16033,6 +16031,7 @@
       <node concept="22LTRM" id="6ucyvMUDFj$" role="22LTRK">
         <ref role="22LTRN" node="6ucyvMUDFfZ" resolve="test.fasten.safety.hiphops" />
       </node>
+      <node concept="24cAiW" id="6ucyvMUDFeV" role="24cAkG" />
       <node concept="22LTRM" id="6ucyvMUMpYk" role="22LTRK">
         <ref role="22LTRN" node="6ucyvMUMpPI" resolve="test.mbeddr.formal.gsn" />
       </node>
@@ -16051,9 +16050,7 @@
       <node concept="22LTRM" id="y1G8y6b21U" role="22LTRK">
         <ref role="22LTRN" node="y1G8y6aWtw" resolve="test.mbeddr.formal.safety.argument.modelquery" />
       </node>
-      <node concept="24cAiW" id="6ucyvMUDFeV" role="24cAkG">
-        <node concept="NbPM2" id="1tYE378U5fR" role="1psgkv" />
-      </node>
     </node>
   </node>
 </model>
+
