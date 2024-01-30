@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.nusmv.importer.rt" uuid="18cd78f6-e870-412b-81e1-d3955c4ecc88" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.formal.nusmv.importer.rt" uuid="18cd78f6-e870-412b-81e1-d3955c4ecc88" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="asm-tree-7.0.jar" />
-      <sourceRoot location="parboiled-java-1.3.0.jar" />
-      <sourceRoot location="asm-7.0.jar" />
-      <sourceRoot location="asm-analysis-7.0.jar" />
-      <sourceRoot location="asm-util-7.0.jar" />
-      <sourceRoot location="parboiled-core-1.3.0.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="asm-tree-9.2.jar" />
+      <sourceRoot location="parboiled-java-1.4.1.jar" />
+      <sourceRoot location="asm-9.2.jar" />
+      <sourceRoot location="asm-analysis-9.2.jar" />
+      <sourceRoot location="asm-util-9.2.jar" />
+      <sourceRoot location="parboiled-core-1.4.1.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/asm-tree-9.2.jar" />
+      <library location="${module}/lib/parboiled-java-1.4.1.jar" />
+      <library location="${module}/lib/asm-9.2.jar" />
+      <library location="${module}/lib/asm-analysis-9.2.jar" />
+      <library location="${module}/lib/asm-util-9.2.jar" />
+      <library location="${module}/lib/parboiled-core-1.4.1.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/asm-tree-7.0.jar" />
-    <stubModelEntry path="${module}/lib/parboiled-java-1.3.0.jar" />
-    <stubModelEntry path="${module}/lib/asm-7.0.jar" />
-    <stubModelEntry path="${module}/lib/asm-analysis-7.0.jar" />
-    <stubModelEntry path="${module}/lib/asm-util-7.0.jar" />
-    <stubModelEntry path="${module}/lib/parboiled-core-1.3.0.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)</dependency>
@@ -39,7 +36,7 @@
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
-    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
+    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
@@ -70,4 +67,3 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
 </solution>
-

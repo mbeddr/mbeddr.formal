@@ -85,7 +85,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -122,7 +122,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -162,7 +162,6 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -733,7 +732,6 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mpsbasics.docx4j.lib" />
         <property role="3LESm3" value="71bb25aa-20fa-4c18-8954-1b176576f52d" />
-        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="6hyv0iVPlHB" role="3LF7KH">
           <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
           <node concept="2Ry0Ak" id="6hyv0iVPlUt" role="iGT6I">
@@ -4028,26 +4026,7 @@
                   <node concept="2Ry0Ak" id="IiE7lRnYjt" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="IiE7lRnYju" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-tree-7.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="IiE7lRnYjQ" role="3bR37C">
-          <node concept="1BurEX" id="IiE7lRnYjR" role="1SiIV1">
-            <node concept="398BVA" id="IiE7lRnYjD" role="1BurEY">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
-              <node concept="2Ry0Ak" id="IiE7lRnYjE" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="IiE7lRnYjF" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
-                  <node concept="2Ry0Ak" id="IiE7lRnYjG" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="IiE7lRnYjH" role="2Ry0An">
-                      <property role="2Ry0Am" value="parboiled-java-1.3.0.jar" />
+                      <property role="2Ry0Am" value="asm-tree-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -4066,7 +4045,7 @@
                   <node concept="2Ry0Ak" id="IiE7lRnYjV" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="IiE7lRnYjW" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -4085,7 +4064,7 @@
                   <node concept="2Ry0Ak" id="IiE7lRnYka" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="IiE7lRnYkb" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-analysis-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-analysis-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -4104,7 +4083,7 @@
                   <node concept="2Ry0Ak" id="IiE7lRnYkp" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="IiE7lRnYkq" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-util-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-util-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -4123,7 +4102,7 @@
                   <node concept="2Ry0Ak" id="IiE7lRnYkC" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="IiE7lRnYkD" role="2Ry0An">
-                      <property role="2Ry0Am" value="parboiled-core-1.3.0.jar" />
+                      <property role="2Ry0Am" value="parboiled-core-1.4.1.jar" />
                     </node>
                   </node>
                 </node>
@@ -4134,6 +4113,25 @@
         <node concept="1SiIV0" id="7v6gTM_NoEp" role="3bR37C">
           <node concept="3bR9La" id="7v6gTM_NoEq" role="1SiIV1">
             <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="cyyxQXALyw" role="3bR37C">
+          <node concept="1BurEX" id="cyyxQXALyx" role="1SiIV1">
+            <node concept="398BVA" id="cyyxQXALyj" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="cyyxQXALyk" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="cyyxQXALyl" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.nusmv.importer.rt" />
+                  <node concept="2Ry0Ak" id="cyyxQXALym" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="cyyxQXALyn" role="2Ry0An">
+                      <property role="2Ry0Am" value="parboiled-java-1.4.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

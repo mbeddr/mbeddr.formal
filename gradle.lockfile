@@ -1,13 +1,34 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-com.jetbrains.jdk:jbr_jcef:17.0.6-b653.34=jbrLinux,jbrMac,jbrWin
-com.jetbrains:mps:2022.3.1=mps
-com.mbeddr:platform:2022.3.24165.f0c4f91=languageLibs
+com.fasterxml.jackson.core:jackson-annotations:2.11.4=modelcheckBackend
+com.fasterxml.jackson.core:jackson-core:2.11.4=modelcheckBackend
+com.fasterxml.jackson.core:jackson-databind:2.11.4=modelcheckBackend
+com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.4=modelcheckBackend
+com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.11.4=modelcheckBackend
+com.fasterxml.woodstox:woodstox-core:6.2.3=modelcheckBackend
+com.jetbrains.jdk:jbr_jcef:17.0.8.1-b1000.32=jbrLinux,jbrMac,jbrWin
+com.jetbrains:mps:2023.2=mps
+com.mbeddr:platform:2023.2.24284.85fe583=languageLibs
+com.xenomachina:kotlin-argparser:2.0.7=executeBackend,generateBackend,modelcheckBackend
+com.xenomachina:xenocom:0.0.7=executeBackend,generateBackend,modelcheckBackend
+de.itemis.mps.build-backends:execute-generators:1.14.2.67.afe740c=generateBackend
+de.itemis.mps.build-backends:execute:1.14.2.67.afe740c=executeBackend
+de.itemis.mps.build-backends:modelcheck:1.14.2.67.afe740c=modelcheckBackend
+de.itemis.mps.build-backends:project-loader:2.0.0.67.afe740c=executeBackend,generateBackend,modelcheckBackend
+jakarta.activation:jakarta.activation-api:1.2.1=modelcheckBackend
+jakarta.xml.bind:jakarta.xml.bind-api:2.3.2=modelcheckBackend
 junit:junit:4.12=antLib
 org.apache.ant:ant-junit:1.10.6=antLib
 org.apache.ant:ant-launcher:1.10.6=antLib
 org.apache.ant:ant:1.10.6=antLib
+org.codehaus.woodstox:stax2-api:4.2.1=modelcheckBackend
 org.hamcrest:hamcrest-core:1.3=antLib
-org.mpsqa:all-in-one:2022.3.235.5d33320=languageLibs
+org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10=executeBackend,generateBackend,modelcheckBackend
+org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10=executeBackend,generateBackend,modelcheckBackend
+org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10=executeBackend,generateBackend,modelcheckBackend
+org.jetbrains.kotlin:kotlin-stdlib:1.6.10=executeBackend,generateBackend,modelcheckBackend
+org.jetbrains.kotlin:kotlin-test:1.6.10=modelcheckBackend
+org.jetbrains:annotations:13.0=executeBackend,generateBackend,modelcheckBackend
+org.mpsqa:all-in-one:2023.2.264.338602f=languageLibs
 empty=

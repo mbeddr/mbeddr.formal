@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.safety.argument.process.sandbox" uuid="eff87b86-68b7-40e7-aaaf-a3ef396b574c" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.formal.safety.argument.process.sandbox" uuid="eff87b86-68b7-40e7-aaaf-a3ef396b574c" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">b1743c9b-5a13-4d6d-9530-c307d7257206(com.mbeddr.formal.safety.stamp.sandbox)</dependency>
   </dependencies>

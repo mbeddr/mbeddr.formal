@@ -20,9 +20,7 @@
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
-      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
-        <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
-      </concept>
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW" />
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -103,7 +101,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -146,7 +144,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -199,7 +197,6 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -1022,7 +1019,6 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mpsbasics.docx4j.lib" />
         <property role="3LESm3" value="71bb25aa-20fa-4c18-8954-1b176576f52d" />
-        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="7he_lUumABD" role="3LF7KH">
           <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
           <node concept="2Ry0Ak" id="7he_lUumABE" role="iGT6I">
@@ -7137,7 +7133,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66hf" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66hg" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-tree-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-tree-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -7156,7 +7152,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66hu" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66hv" role="2Ry0An">
-                      <property role="2Ry0Am" value="parboiled-java-1.3.0.jar" />
+                      <property role="2Ry0Am" value="parboiled-java-1.4.1.jar" />
                     </node>
                   </node>
                 </node>
@@ -7175,7 +7171,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66hH" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66hI" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -7194,7 +7190,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66hW" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66hX" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-analysis-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-analysis-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -7213,7 +7209,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66ib" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66ic" role="2Ry0An">
-                      <property role="2Ry0Am" value="asm-util-7.0.jar" />
+                      <property role="2Ry0Am" value="asm-util-9.2.jar" />
                     </node>
                   </node>
                 </node>
@@ -7232,7 +7228,7 @@
                   <node concept="2Ry0Ak" id="3mI4G9o66iq" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3mI4G9o66ir" role="2Ry0An">
-                      <property role="2Ry0Am" value="parboiled-core-1.3.0.jar" />
+                      <property role="2Ry0Am" value="parboiled-core-1.4.1.jar" />
                     </node>
                   </node>
                 </node>
@@ -12852,11 +12848,6 @@
           <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
         </node>
       </node>
-      <node concept="1SiIV0" id="gYMUULBChG" role="3bR37C">
-        <node concept="3bR9La" id="gYMUULBChH" role="1SiIV1">
-          <ref role="3bR37D" node="5Xjjs0Nf2r4" resolve="com.mbeddr.formal.safety.build" />
-        </node>
-      </node>
       <node concept="1SiIV0" id="gYMUULBChI" role="3bR37C">
         <node concept="3bR9La" id="gYMUULBChJ" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
@@ -16040,6 +16031,7 @@
       <node concept="22LTRM" id="6ucyvMUDFj$" role="22LTRK">
         <ref role="22LTRN" node="6ucyvMUDFfZ" resolve="test.fasten.safety.hiphops" />
       </node>
+      <node concept="24cAiW" id="6ucyvMUDFeV" role="24cAkG" />
       <node concept="22LTRM" id="6ucyvMUMpYk" role="22LTRK">
         <ref role="22LTRN" node="6ucyvMUMpPI" resolve="test.mbeddr.formal.gsn" />
       </node>
@@ -16057,9 +16049,6 @@
       </node>
       <node concept="22LTRM" id="y1G8y6b21U" role="22LTRK">
         <ref role="22LTRN" node="y1G8y6aWtw" resolve="test.mbeddr.formal.safety.argument.modelquery" />
-      </node>
-      <node concept="24cAiW" id="6ucyvMUDFeV" role="24cAkG">
-        <node concept="NbPM2" id="1tYE378U5fR" role="1psgkv" />
       </node>
     </node>
   </node>

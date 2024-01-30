@@ -14,7 +14,7 @@
         <child id="2601369717537236697" name="elements" index="2jmwOw" />
         <child id="2601369717537276289" name="connections" index="2jnmDS" />
       </concept>
-      <concept id="2601369717537276292" name="com.fasten.symo.hw.structure.IPlatformArchitectureConnection" flags="ng" index="2jnmDX">
+      <concept id="2601369717537276292" name="com.fasten.symo.hw.structure.IPlatformArchitectureConnection" flags="ngI" index="2jnmDX">
         <reference id="2601369717537277059" name="source" index="2jnmXU" />
         <reference id="2601369717537277061" name="target" index="2jnmXW" />
       </concept>
@@ -24,7 +24,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

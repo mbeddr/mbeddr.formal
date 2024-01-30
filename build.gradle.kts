@@ -11,11 +11,11 @@ plugins {
     id("co.riiid.gradle") version "0.4.2"
 
     // Version must match buildscript mps-gradle-plugin dependency above
-    id("download-jbr") version "1.17.+"
-    id("de.itemis.mps.gradle.common") version "1.20.+"
+    id("download-jbr") version "1.22.+"
+    id("de.itemis.mps.gradle.common") version "1.22.+"
 }
 
-val jbrVers = "17.0.6-b653.34"
+val jbrVers = "17.0.8.1-b1000.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -35,9 +35,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2022"
-val minor = "3"
-val bugfix = "1"
+val major = "2023"
+val minor = "2"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -150,6 +150,8 @@ val defaultScriptArgs = mapOf(
         "jdk.util.zip.disableZip64ExtraFieldValidation" to true
 )
 
+fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/patched/$relativePath")
+
 tasks {
     val configureJava by registering {
         val downloadJbr = named("downloadJbr", DownloadJbrForPlatform::class)
@@ -180,24 +182,45 @@ tasks {
         description = "Set up MPS project libraries. Libraries are read in from projectlibraries.properties file."
     }
 
-    val build_allScripts by registering(BuildLanguages::class) {
+    val build_allScripts_unpatched by registering(BuildLanguages::class) {
         dependsOn(resolveMps, resolveLanguageLibs)
         script = "$buildDir/scripts/build_all_scripts.xml"
     }
 
+    // Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
+    val patch_allScripts by registering(Copy::class) {
+        dependsOn(build_allScripts_unpatched)
+        from("build/scripts")
+        exclude("patched")
+        exclude("build")
+        into("build/scripts/patched")
+
+        val isAarch64 = System.getProperty("os.arch") == "aarch64"
+        val jnaArch = if (isAarch64) "aarch64" else "amd64"
+
+        filter { line: String ->
+            line.replace("\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna\"",
+                    "\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna/" + jnaArch + "\"")
+        }
+    }
+
+    val build_allScripts by registering {
+        dependsOn(patch_allScripts, resolveLanguageLibs)
+    }
+
     val build_formal_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
-        script = "$buildDir/scripts/build-formal-languages.xml"
+        script = scriptFile("build-formal-languages.xml")
     }
 
     val build_fasten_safety_distribution by registering(BuildLanguages::class) {
         dependsOn(build_formal_languages)
-        script = "$buildDir/scripts/build-fasten-safe-distribution.xml"
+        script = scriptFile("build-fasten-safe-distribution.xml")
     }
 
     val run_smv_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script = "$buildDir/scripts/build-nusmv-tests.xml"
+        script = scriptFile("build-nusmv-tests.xml")
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
@@ -214,7 +237,7 @@ tasks {
 
     val run_safety_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script = "$buildDir/scripts/build-safety-tests.xml"
+        script = scriptFile("build-safety-tests.xml")
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
@@ -232,7 +255,7 @@ tasks {
     val run_all_tests by registering(TestLanguages::class) {
         dependsOn(configureJava)
         description = "Will execute all tests from command line"
-        script = "$buildDir/scripts/build-all-tests.xml"
+        script = scriptFile("build-all-tests.xml")
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
@@ -260,7 +283,7 @@ tasks {
 
     val build_assurance_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
-        script = "$buildDir/scripts/build-assurance-languages.xml"
+        script = scriptFile("build-assurance-languages.xml")
     }
 
     val package_assurance by registering(Zip::class) {
