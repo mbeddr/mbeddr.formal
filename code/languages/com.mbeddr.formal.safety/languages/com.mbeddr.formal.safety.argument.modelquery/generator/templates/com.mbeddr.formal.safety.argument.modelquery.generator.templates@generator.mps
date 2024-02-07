@@ -14,6 +14,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="oq0u" ref="r:e0fdabfa-18f0-4762-8817-0e7b1735bd5d(com.mbeddr.formal.safety.argument.modelquery.util)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="agne" ref="r:2538c08a-32a3-4d93-89c3-b508268173db(com.mpsbasics.project.utils.project_finder)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -240,9 +241,9 @@
             <node concept="3uibUv" id="y1G8y66_Oo" role="1tU5fm">
               <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
             </node>
-            <node concept="2YIFZM" id="y1G8y67ZRR" role="33vP2m">
-              <ref role="37wK5l" to="2y64:1fyC0RHInUp" resolve="getMPSProjectForNode" />
-              <ref role="1Pybhc" to="2y64:1fyC0RHIfK6" resolve="ProjectHelper" />
+            <node concept="2YIFZM" id="2u7UHDCh3mq" role="33vP2m">
+              <ref role="37wK5l" to="agne:1fyC0RHInUp" resolve="getMPSProjectForNode" />
+              <ref role="1Pybhc" to="agne:1fyC0RHIfK6" resolve="ProjectHelper" />
               <node concept="37vLTw" id="y1G8y67ZRS" role="37wK5m">
                 <ref role="3cqZAo" node="y1G8y68boG" resolve="node" />
               </node>

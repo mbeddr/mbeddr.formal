@@ -13,10 +13,8 @@
   </languages>
   <imports>
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="2y64" ref="r:b91d3184-5a2f-40d8-b310-14ec3048d9cc(com.mbeddr.formal.base.tooling.project)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" />
     <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
@@ -36,6 +34,8 @@
     <import index="lhjl" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.w3c.dom(JDK/)" />
     <import index="ujg5" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.dom(org.apache.batik/)" />
     <import index="nxzt" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.svggen(org.apache.batik/)" />
+    <import index="5yhu" ref="r:019d0cc6-143d-4aa3-9dc5-d01fd5b71098(com.mpsbasics.editor.utils.notifications)" />
+    <import index="agne" ref="r:2538c08a-32a3-4d93-89c3-b508268173db(com.mpsbasics.project.utils.project_finder)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -349,9 +349,9 @@
             <node concept="3uibUv" id="5FTX57fL662" role="1tU5fm">
               <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
             </node>
-            <node concept="2YIFZM" id="5FTX57fL663" role="33vP2m">
-              <ref role="1Pybhc" to="2y64:1fyC0RHIfK6" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="2y64:1fyC0RHIAoI" resolve="getIdeaProjectOrDefaultFrom" />
+            <node concept="2YIFZM" id="2u7UHDCh3mu" role="33vP2m">
+              <ref role="37wK5l" to="agne:1fyC0RHIAoI" resolve="getIdeaProjectOrDefaultFrom" />
+              <ref role="1Pybhc" to="agne:1fyC0RHIfK6" resolve="ProjectHelper" />
               <node concept="37vLTw" id="5FTX57fL664" role="37wK5m">
                 <ref role="3cqZAo" node="5FTX57fL67Z" resolve="n" />
               </node>
@@ -443,9 +443,9 @@
               </node>
             </node>
             <node concept="3clFbF" id="5FTX57fL66A" role="3cqZAp">
-              <node concept="2YIFZM" id="5FTX57fL66B" role="3clFbG">
-                <ref role="37wK5l" to="ztk3:xCk$O6mi_h" resolve="showNotification" />
-                <ref role="1Pybhc" to="ztk3:696iakqzmI" resolve="FASTENNotificationUtils" />
+              <node concept="2YIFZM" id="2u7UHDCerTr" role="3clFbG">
+                <ref role="37wK5l" to="5yhu:xCk$O6mi_h" resolve="showNotification" />
+                <ref role="1Pybhc" to="5yhu:696iakqzmI" resolve="FASTENNotificationUtils" />
                 <node concept="Xl_RD" id="5FTX57fL66C" role="37wK5m">
                   <property role="Xl_RC" value="Info" />
                 </node>
@@ -2267,9 +2267,9 @@
                                         </node>
                                       </node>
                                       <node concept="3clFbF" id="3mpcDUdxFY9" role="3cqZAp">
-                                        <node concept="2YIFZM" id="3mpcDUdxFYa" role="3clFbG">
-                                          <ref role="1Pybhc" to="ztk3:696iakqzmI" resolve="FASTENNotificationUtils" />
-                                          <ref role="37wK5l" to="ztk3:xCk$O6mi_h" resolve="showNotification" />
+                                        <node concept="2YIFZM" id="2u7UHDCerTs" role="3clFbG">
+                                          <ref role="37wK5l" to="5yhu:xCk$O6mi_h" resolve="showNotification" />
+                                          <ref role="1Pybhc" to="5yhu:696iakqzmI" resolve="FASTENNotificationUtils" />
                                           <node concept="Xl_RD" id="3mpcDUdxFYb" role="37wK5m">
                                             <property role="Xl_RC" value="Error" />
                                           </node>
