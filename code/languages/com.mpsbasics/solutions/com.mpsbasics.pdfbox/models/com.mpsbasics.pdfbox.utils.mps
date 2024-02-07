@@ -21,6 +21,7 @@
     <import index="8l7n" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.pdmodel.common(com.fasten.safety.pdfbox/)" />
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
     <import index="mryx" ref="r:da23d8da-3a75-4f33-96d8-7b3d3c2b2ccd(com.mpsbasics.editor.utils.screenshooter)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -126,6 +127,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -470,8 +472,18 @@
                     <node concept="1pGfFk" id="4lZTrcOBw1d" role="2ShVmc">
                       <property role="373rjd" value="true" />
                       <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="Xl_RD" id="4lZTrcOBwkU" role="37wK5m">
-                        <property role="Xl_RC" value="c:\\work\\temp\\aa\\aa.pdf" />
+                      <node concept="2OqwBi" id="2u7UHDCqEkk" role="37wK5m">
+                        <node concept="2OqwBi" id="2u7UHDCqD$K" role="2Oq$k0">
+                          <node concept="37vLTw" id="2u7UHDCqD6i" role="2Oq$k0">
+                            <ref role="3cqZAo" node="54ozzUwn_7d" resolve="exportConfig" />
+                          </node>
+                          <node concept="3TrEf2" id="2u7UHDCqDUV" role="2OqNvi">
+                            <ref role="3Tt5mk" to="1ob6:2u7UHDCouDx" resolve="location" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="2u7UHDCqEGu" role="2OqNvi">
+                          <ref role="37wK5l" to="48kf:2_BfG8PE78n" resolve="getNonCanonicalPath" />
+                        </node>
                       </node>
                     </node>
                   </node>

@@ -5,6 +5,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -70,6 +71,12 @@
       <property role="20kJfa" value="pages" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="24pF5$oXkiA" resolve="IPdfPage" />
+    </node>
+    <node concept="1TJgyj" id="2u7UHDCouDx" role="1TKVEi">
+      <property role="IQ2ns" value="2848503513110145633" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="location" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
     </node>
     <node concept="1irR5M" id="2u7UHDC13be" role="rwd14">
       <property role="2$rrk2" value="1" />

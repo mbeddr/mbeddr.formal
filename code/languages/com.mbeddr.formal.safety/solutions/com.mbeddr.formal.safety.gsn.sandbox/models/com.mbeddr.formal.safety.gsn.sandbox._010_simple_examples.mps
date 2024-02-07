@@ -25,6 +25,12 @@
       <concept id="9053345654769769563" name="com.fasten.base.git.structure.GitCommitHashWord" flags="ng" index="1SKMQN" />
       <concept id="9053345654770096926" name="com.fasten.base.git.structure.GitBranchWord" flags="ng" index="1SLyFQ" />
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+    </language>
     <language id="ece26728-2885-4b26-9f61-67d2821fc361" name="com.mpsbasics.pdfexporter">
       <concept id="2385126976340186078" name="com.mpsbasics.pdfexporter.structure.EmptyPage" flags="ng" index="TVfY7" />
       <concept id="2385126976340136793" name="com.mpsbasics.pdfexporter.structure.RootNodesRef" flags="ng" index="TVjW0">
@@ -32,6 +38,7 @@
       </concept>
       <concept id="2385126976339379921" name="com.mpsbasics.pdfexporter.structure.PdfExportConfiguration" flags="ng" index="TWaE8">
         <child id="2385126976340183148" name="pages" index="TVegP" />
+        <child id="2848503513110145633" name="location" index="1fTw2V" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -2975,6 +2982,9 @@
     </node>
     <node concept="TVjW0" id="24pF5$oXQiJ" role="TVegP">
       <ref role="TVjpn" node="3f8ZVRYfHaZ" resolve="_200_goal_structure_fixed_prefix" />
+    </node>
+    <node concept="3NXOOs" id="2u7UHDCq_MM" role="1fTw2V">
+      <property role="3N1Lgt" value="temp/export.pdf" />
     </node>
   </node>
 </model>
