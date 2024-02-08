@@ -61,7 +61,7 @@
     <property role="TrG5h" value="PdfExportConfiguration" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="pdf export config" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="24pF5$oX8QD" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -96,7 +96,7 @@
   <node concept="1TIwiD" id="24pF5$oX9dp">
     <property role="EcuMT" value="2385126976340136793" />
     <property role="TrG5h" value="RootNodesRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="24pF5$oX9Ce" role="1TKVEi">
       <property role="IQ2ns" value="2385126976340138510" />
       <property role="20kJfa" value="rootNode" />
@@ -114,7 +114,7 @@
     <property role="EcuMT" value="2385126976340186078" />
     <property role="TrG5h" value="EmptyPage" />
     <property role="34LRSv" value="empty page" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="24pF5$oXloP" role="PzmwI">
       <ref role="PrY4T" node="24pF5$oXkiA" resolve="IPdfPage" />
     </node>

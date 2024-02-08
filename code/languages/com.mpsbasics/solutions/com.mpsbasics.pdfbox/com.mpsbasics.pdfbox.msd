@@ -22,6 +22,8 @@
     <dependency reexport="false">ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)</dependency>
     <dependency reexport="false">6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)</dependency>
     <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
+    <dependency reexport="false">5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -45,6 +47,7 @@
     <module reference="bc7d0863-298c-41cf-984f-a0421e757da5(com.mpsbasics.pdfbox)" version="0" />
     <module reference="ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)" version="0" />
   </dependencyVersions>
 </solution>
 

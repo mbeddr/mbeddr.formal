@@ -21,6 +21,10 @@
     <import index="8l7n" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.pdmodel.common(com.fasten.safety.pdfbox/)" />
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
     <import index="mryx" ref="r:da23d8da-3a75-4f33-96d8-7b3d3c2b2ccd(com.mpsbasics.editor.utils.screenshooter)" />
+    <import index="8tn1" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.rendering(com.mpsbasics.pdfbox/)" />
+    <import index="nxzt" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.svggen(org.apache.batik/)" />
+    <import index="5yhu" ref="r:019d0cc6-143d-4aa3-9dc5-d01fd5b71098(com.mpsbasics.editor.utils.notifications)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -54,8 +58,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
@@ -133,6 +139,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -156,8 +163,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -288,7 +305,7 @@
                       <ref role="37wK5l" to="r4xz:~PDType1Font.&lt;init&gt;(org.apache.pdfbox.pdmodel.font.Standard14Fonts$FontName)" resolve="PDType1Font" />
                       <node concept="Rm8GO" id="24pF5$oSK56" role="37wK5m">
                         <ref role="Rm8GQ" to="r4xz:~Standard14Fonts$FontName.HELVETICA_BOLD" resolve="HELVETICA_BOLD" />
-                        <ref role="1Px2BO" to="r4xz:~Standard14Fonts$FontName" resolve="FontName" />
+                        <ref role="1Px2BO" to="r4xz:~Standard14Fonts$FontName" resolve="Standard14Fonts.FontName" />
                       </node>
                     </node>
                   </node>
@@ -408,7 +425,7 @@
                   <node concept="3clFbS" id="24pF5$oXE7Z" role="Jncv$">
                     <node concept="3clFbF" id="24pF5$oXF8o" role="3cqZAp">
                       <node concept="1rXfSq" id="24pF5$oXF8n" role="3clFbG">
-                        <ref role="37wK5l" node="24pF5$oXym2" resolve="exportPage" />
+                        <ref role="37wK5l" node="24pF5$oXym2" resolve="createPageFromPNG" />
                         <node concept="2OqwBi" id="24pF5$oXFFR" role="37wK5m">
                           <node concept="Jnkvi" id="24pF5$oXFnb" role="2Oq$k0">
                             <ref role="1M0zk5" node="24pF5$oXE80" resolve="nr" />
@@ -419,6 +436,37 @@
                         </node>
                         <node concept="37vLTw" id="24pF5$oXGBG" role="37wK5m">
                           <ref role="3cqZAo" node="4lZTrcOzSGX" resolve="document" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1X3_iC" id="40SicFf8_vX" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="6v3euY37kkR" role="8Wnug">
+                        <node concept="1rXfSq" id="6v3euY37kkP" role="3clFbG">
+                          <ref role="37wK5l" node="6v3euY36RS8" resolve="createPageFromSVG" />
+                          <node concept="2OqwBi" id="6v3euY37kzY" role="37wK5m">
+                            <node concept="Jnkvi" id="6v3euY37kzZ" role="2Oq$k0">
+                              <ref role="1M0zk5" node="24pF5$oXE80" resolve="nr" />
+                            </node>
+                            <node concept="3TrEf2" id="6v3euY37k$0" role="2OqNvi">
+                              <ref role="3Tt5mk" to="1ob6:24pF5$oX9Ce" resolve="rootNode" />
+                            </node>
+                          </node>
+                          <node concept="37vLTw" id="6v3euY37k$1" role="37wK5m">
+                            <ref role="3cqZAo" node="4lZTrcOzSGX" resolve="document" />
+                          </node>
+                          <node concept="3cpWs3" id="6v3euY37mSw" role="37wK5m">
+                            <node concept="3cmrfG" id="6v3euY37mSO" role="3uHU7w">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                            <node concept="2OqwBi" id="6v3euY37lvj" role="3uHU7B">
+                              <node concept="2GrUjf" id="6v3euY37lj$" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="24pF5$oXD4P" resolve="p" />
+                              </node>
+                              <node concept="2bSWHS" id="6v3euY37lWp" role="2OqNvi" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -456,7 +504,7 @@
                         <node concept="liA8E" id="24pF5$oXTA_" role="2OqNvi">
                           <ref role="37wK5l" to="yid2:~PDDocument.addPage(org.apache.pdfbox.pdmodel.PDPage)" resolve="addPage" />
                           <node concept="37vLTw" id="24pF5$oXTTw" role="37wK5m">
-                            <ref role="3cqZAo" node="24pF5$oXRKC" resolve="titlePage" />
+                            <ref role="3cqZAo" node="24pF5$oXRKC" resolve="emptyPage" />
                           </node>
                         </node>
                       </node>
@@ -551,6 +599,23 @@
               </node>
             </node>
             <node concept="3clFbH" id="4lZTrcO$UHB" role="3cqZAp" />
+            <node concept="3clFbF" id="47a1noDVisG" role="3cqZAp">
+              <node concept="2YIFZM" id="47a1noDVCcc" role="3clFbG">
+                <ref role="37wK5l" to="5yhu:47a1noDV2Ib" resolve="showNotificationAboutSavedFile" />
+                <ref role="1Pybhc" to="5yhu:47a1noDV6Nf" resolve="PredefinedNotifications" />
+                <node concept="2OqwBi" id="47a1noDVEQR" role="37wK5m">
+                  <node concept="37vLTw" id="47a1noDVCcd" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6v3euY33DkT" resolve="exportFile" />
+                  </node>
+                  <node concept="liA8E" id="47a1noDVFM7" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="47a1noDVCce" role="37wK5m">
+                  <ref role="3cqZAo" node="47a1noDV2I3" resolve="proj" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="4lZTrcOzUw2" role="3cqZAp" />
@@ -563,10 +628,17 @@
           <ref role="ehGHo" to="1ob6:24pF5$oUgrh" resolve="PdfExportConfiguration" />
         </node>
       </node>
+      <node concept="37vLTG" id="47a1noDV2I3" role="3clF46">
+        <property role="TrG5h" value="proj" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="47a1noDV2I4" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="24pF5$oXxQ7" role="jymVt" />
     <node concept="2YIFZL" id="24pF5$oXym2" role="jymVt">
-      <property role="TrG5h" value="exportPage" />
+      <property role="TrG5h" value="createPageFromPNG" />
       <node concept="3clFbS" id="24pF5$oXym5" role="3clF47">
         <node concept="3cpWs8" id="4lZTrcO$K_f" role="3cqZAp">
           <node concept="3cpWsn" id="5IjKmr_Cyac" role="3cpWs9">
@@ -751,6 +823,110 @@
       </node>
       <node concept="3uibUv" id="24pF5$oXBrG" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6v3euY36T13" role="jymVt" />
+    <node concept="1X3_iC" id="40SicFf8_Lb" role="lGtFl">
+      <property role="3V$3am" value="member" />
+      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
+      <node concept="2YIFZL" id="6v3euY36RS8" role="8Wnug">
+        <property role="TrG5h" value="createPageFromSVG" />
+        <node concept="3clFbS" id="6v3euY36RS9" role="3clF47">
+          <node concept="3cpWs8" id="6v3euY384ih" role="3cqZAp">
+            <node concept="3cpWsn" id="6v3euY384ii" role="3cpWs9">
+              <property role="TrG5h" value="imagePage" />
+              <node concept="3uibUv" id="6v3euY384ij" role="1tU5fm">
+                <ref role="3uigEE" to="yid2:~PDPage" resolve="PDPage" />
+              </node>
+              <node concept="2ShNRf" id="6v3euY384ik" role="33vP2m">
+                <node concept="1pGfFk" id="6v3euY384il" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="yid2:~PDPage.&lt;init&gt;()" resolve="PDPage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6v3euY384in" role="3cqZAp">
+            <node concept="2OqwBi" id="6v3euY384io" role="3clFbG">
+              <node concept="37vLTw" id="6v3euY384ip" role="2Oq$k0">
+                <ref role="3cqZAo" node="6v3euY36RTb" resolve="document" />
+              </node>
+              <node concept="liA8E" id="6v3euY384iq" role="2OqNvi">
+                <ref role="37wK5l" to="yid2:~PDDocument.addPage(org.apache.pdfbox.pdmodel.PDPage)" resolve="addPage" />
+                <node concept="37vLTw" id="6v3euY384ir" role="37wK5m">
+                  <ref role="3cqZAo" node="6v3euY384ii" resolve="imagePage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="6v3euY383dA" role="3cqZAp" />
+          <node concept="3cpWs8" id="6v3euY36Z$1" role="3cqZAp">
+            <node concept="3cpWsn" id="6v3euY36Z$2" role="3cpWs9">
+              <property role="TrG5h" value="r" />
+              <node concept="3uibUv" id="6v3euY36Z$3" role="1tU5fm">
+                <ref role="3uigEE" to="8tn1:~PDFRenderer" resolve="PDFRenderer" />
+              </node>
+              <node concept="2ShNRf" id="6v3euY3711J" role="33vP2m">
+                <node concept="1pGfFk" id="6v3euY372nb" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="8tn1:~PDFRenderer.&lt;init&gt;(org.apache.pdfbox.pdmodel.PDDocument)" resolve="PDFRenderer" />
+                  <node concept="37vLTw" id="6v3euY372Hh" role="37wK5m">
+                    <ref role="3cqZAo" node="6v3euY36RTb" resolve="document" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6v3euY374sE" role="3cqZAp">
+            <node concept="3cpWsn" id="6v3euY374sF" role="3cpWs9">
+              <property role="TrG5h" value="svgScreenshot" />
+              <node concept="3uibUv" id="6v3euY374h_" role="1tU5fm">
+                <ref role="3uigEE" to="nxzt:~SVGGraphics2D" resolve="SVGGraphics2D" />
+              </node>
+              <node concept="2YIFZM" id="6v3euY374sG" role="33vP2m">
+                <ref role="37wK5l" to="mryx:6v3euY3663n" resolve="takeSvgScreenshot" />
+                <ref role="1Pybhc" to="mryx:5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
+                <node concept="37vLTw" id="6v3euY374sH" role="37wK5m">
+                  <ref role="3cqZAo" node="6v3euY36RT9" resolve="n" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6v3euY37hYI" role="3cqZAp">
+            <node concept="2OqwBi" id="6v3euY37ige" role="3clFbG">
+              <node concept="37vLTw" id="6v3euY37hYG" role="2Oq$k0">
+                <ref role="3cqZAo" node="6v3euY36Z$2" resolve="r" />
+              </node>
+              <node concept="liA8E" id="6v3euY37iAT" role="2OqNvi">
+                <ref role="37wK5l" to="8tn1:~PDFRenderer.renderPageToGraphics(int,java.awt.Graphics2D)" resolve="renderPageToGraphics" />
+                <node concept="37vLTw" id="6v3euY37oXA" role="37wK5m">
+                  <ref role="3cqZAo" node="6v3euY37noN" resolve="pageIndex" />
+                </node>
+                <node concept="37vLTw" id="6v3euY37j8z" role="37wK5m">
+                  <ref role="3cqZAo" node="6v3euY374sF" resolve="svgScreenshot" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cqZAl" id="6v3euY36RT8" role="3clF45" />
+        <node concept="37vLTG" id="6v3euY36RT9" role="3clF46">
+          <property role="TrG5h" value="n" />
+          <node concept="3Tqbb2" id="6v3euY36RTa" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="6v3euY36RTb" role="3clF46">
+          <property role="TrG5h" value="document" />
+          <node concept="3uibUv" id="6v3euY36RTc" role="1tU5fm">
+            <ref role="3uigEE" to="yid2:~PDDocument" resolve="PDDocument" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="6v3euY37noN" role="3clF46">
+          <property role="TrG5h" value="pageIndex" />
+          <node concept="10Oyi0" id="6v3euY37nZS" role="1tU5fm" />
+        </node>
+        <node concept="3uibUv" id="6v3euY36RTd" role="Sfmx6">
+          <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4lZTrcOzGQq" role="1B3o_S" />
