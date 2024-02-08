@@ -22,6 +22,7 @@
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
     <import index="mryx" ref="r:da23d8da-3a75-4f33-96d8-7b3d3c2b2ccd(com.mpsbasics.editor.utils.screenshooter)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -84,6 +85,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -103,6 +105,10 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
@@ -139,6 +145,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -163,7 +172,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="4lZTrcOzGQp">
-    <property role="TrG5h" value="Exporter" />
+    <property role="TrG5h" value="PdfExporter" />
     <node concept="2tJIrI" id="4lZTrcOzGQJ" role="jymVt" />
     <node concept="2tJIrI" id="4lZTrcOzGQU" role="jymVt" />
     <node concept="2YIFZL" id="4lZTrcOzRVZ" role="jymVt">
@@ -461,6 +470,63 @@
               </node>
             </node>
             <node concept="3clFbH" id="24pF5$oXwL6" role="3cqZAp" />
+            <node concept="3cpWs8" id="6v3euY33Brk" role="3cqZAp">
+              <node concept="3cpWsn" id="6v3euY33Brl" role="3cpWs9">
+                <property role="TrG5h" value="exportDir" />
+                <node concept="3uibUv" id="6v3euY33AK4" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="6v3euY33Brm" role="33vP2m">
+                  <node concept="1pGfFk" id="6v3euY33Brn" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="2OqwBi" id="6v3euY33Bro" role="37wK5m">
+                      <node concept="2OqwBi" id="6v3euY33Brp" role="2Oq$k0">
+                        <node concept="37vLTw" id="6v3euY33Brq" role="2Oq$k0">
+                          <ref role="3cqZAo" node="54ozzUwn_7d" resolve="exportConfig" />
+                        </node>
+                        <node concept="3TrEf2" id="6v3euY33Brr" role="2OqNvi">
+                          <ref role="3Tt5mk" to="1ob6:2u7UHDCouDx" resolve="location" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="6v3euY33Brs" role="2OqNvi">
+                        <ref role="37wK5l" to="48kf:2_BfG8PE78n" resolve="getNonCanonicalPath" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6v3euY33DkS" role="3cqZAp">
+              <node concept="3cpWsn" id="6v3euY33DkT" role="3cpWs9">
+                <property role="TrG5h" value="exportFile" />
+                <node concept="3uibUv" id="6v3euY33DkU" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="6v3euY33DO_" role="33vP2m">
+                  <node concept="1pGfFk" id="6v3euY33GfJ" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="6v3euY33GtM" role="37wK5m">
+                      <ref role="3cqZAo" node="6v3euY33Brl" resolve="exportDir" />
+                    </node>
+                    <node concept="3cpWs3" id="6v3euY33JDh" role="37wK5m">
+                      <node concept="Xl_RD" id="6v3euY33JRk" role="3uHU7w">
+                        <property role="Xl_RC" value=".pdf" />
+                      </node>
+                      <node concept="2OqwBi" id="6v3euY33IJw" role="3uHU7B">
+                        <node concept="37vLTw" id="6v3euY33IqR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="54ozzUwn_7d" resolve="exportConfig" />
+                        </node>
+                        <node concept="3TrcHB" id="6v3euY33J8L" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="4lZTrcO$Xi8" role="3cqZAp">
               <node concept="2OqwBi" id="4lZTrcO$XOs" role="3clFbG">
                 <node concept="37vLTw" id="4lZTrcO$Xtl" role="2Oq$k0">
@@ -468,24 +534,8 @@
                 </node>
                 <node concept="liA8E" id="4lZTrcO$XOt" role="2OqNvi">
                   <ref role="37wK5l" to="yid2:~PDDocument.save(java.io.File)" resolve="save" />
-                  <node concept="2ShNRf" id="4lZTrcOBveX" role="37wK5m">
-                    <node concept="1pGfFk" id="4lZTrcOBw1d" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="2OqwBi" id="2u7UHDCqEkk" role="37wK5m">
-                        <node concept="2OqwBi" id="2u7UHDCqD$K" role="2Oq$k0">
-                          <node concept="37vLTw" id="2u7UHDCqD6i" role="2Oq$k0">
-                            <ref role="3cqZAo" node="54ozzUwn_7d" resolve="exportConfig" />
-                          </node>
-                          <node concept="3TrEf2" id="2u7UHDCqDUV" role="2OqNvi">
-                            <ref role="3Tt5mk" to="1ob6:2u7UHDCouDx" resolve="location" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="2u7UHDCqEGu" role="2OqNvi">
-                          <ref role="37wK5l" to="48kf:2_BfG8PE78n" resolve="getNonCanonicalPath" />
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="37vLTw" id="6v3euY33Brt" role="37wK5m">
+                    <ref role="3cqZAo" node="6v3euY33DkT" resolve="exportFile" />
                   </node>
                 </node>
               </node>

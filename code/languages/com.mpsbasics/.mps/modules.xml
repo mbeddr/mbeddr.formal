@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.sandbox/com.mpsbasics.docx4j.sandbox.msd" folder="docx4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.testutils/com.mpsbasics.docx4j.testutils.msd" folder="docx4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.editor.utils/com.mpsbasics.editor.utils.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox.sandbox/com.mpsbasics.pdfbox.sandbox.msd" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox/com.mpsbasics.pdfbox.msd" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.project.utils/com.mpsbasics.project.utils.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.snode.utils/com.mpsbasics.snode.utils.msd" folder="" />

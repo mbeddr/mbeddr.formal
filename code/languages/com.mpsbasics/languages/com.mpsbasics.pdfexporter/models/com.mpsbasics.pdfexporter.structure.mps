@@ -76,7 +76,7 @@
       <property role="IQ2ns" value="2848503513110145633" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="location" />
-      <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
+      <ref role="20lvS9" to="68mc:5Wocj7wnolM" resolve="AbstractFolderPicker" />
     </node>
     <node concept="1irR5M" id="2u7UHDC13be" role="rwd14">
       <property role="2$rrk2" value="1" />
