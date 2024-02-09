@@ -2058,7 +2058,7 @@
                                       <node concept="3clFbF" id="3mpcDUdxFY9" role="3cqZAp">
                                         <node concept="2YIFZM" id="2u7UHDCerTs" role="3clFbG">
                                           <ref role="37wK5l" to="5yhu:xCk$O6mi_h" resolve="showNotification" />
-                                          <ref role="1Pybhc" to="5yhu:696iakqzmI" resolve="FASTENNotificationUtils" />
+                                          <ref role="1Pybhc" to="5yhu:696iakqzmI" resolve="NotificationUtils" />
                                           <node concept="Xl_RD" id="3mpcDUdxFYb" role="37wK5m">
                                             <property role="Xl_RC" value="Error" />
                                           </node>
