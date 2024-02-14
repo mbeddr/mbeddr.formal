@@ -23,10 +23,24 @@
         <child id="2385126976340183148" name="pages" index="TVegP" />
         <child id="2848503513110145633" name="location" index="1fTw2V" />
       </concept>
+      <concept id="6256601700975303250" name="com.mpsbasics.pdfexporter.structure.TitlePage" flags="ng" index="19rN1b">
+        <child id="6256601700975886072" name="text" index="195_jx" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -34,6 +48,26 @@
     <property role="TrG5h" value="export_config_1" />
     <node concept="9PVaO" id="6v3euY34qTI" role="1fTw2V">
       <property role="3N1Lgt" value="exports" />
+    </node>
+    <node concept="19rN1b" id="5rjUx$vMkpD" role="TVegP">
+      <node concept="1Pa9Pv" id="5rjUx$vMkpF" role="195_jx">
+        <node concept="1PaTwC" id="5rjUx$vMkpH" role="1PaQFQ">
+          <node concept="3oM_SD" id="5rjUx$vMksE" role="1PaTwD">
+            <property role="3oM_SC" value="Automatically" />
+          </node>
+          <node concept="3oM_SD" id="5rjUx$vMkwm" role="1PaTwD">
+            <property role="3oM_SC" value="Generated" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5rjUx$vMkys" role="1PaQFQ">
+          <node concept="3oM_SD" id="5rjUx$vMKH5" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="5rjUx$vMkzQ" role="1PaTwD">
+            <property role="3oM_SC" value="FASTEN.mpsbasics" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="TVjW0" id="6v3euY34qTK" role="TVegP">
       <ref role="TVjpn" to="1ob6:24pF5$oUgrh" resolve="PdfExportConfiguration" />

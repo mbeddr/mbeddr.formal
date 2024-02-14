@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -116,6 +117,22 @@
     <property role="34LRSv" value="empty page" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="24pF5$oXloP" role="PzmwI">
+      <ref role="PrY4T" node="24pF5$oXkiA" resolve="IPdfPage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5rjUx$vJdDi">
+    <property role="EcuMT" value="6256601700975303250" />
+    <property role="TrG5h" value="TitlePage" />
+    <property role="34LRSv" value="title page" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5rjUx$vLrVS" role="1TKVEi">
+      <property role="IQ2ns" value="6256601700975886072" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+    <node concept="PrWs8" id="5rjUx$vLrQa" role="PzmwI">
       <ref role="PrY4T" node="24pF5$oXkiA" resolve="IPdfPage" />
     </node>
   </node>
