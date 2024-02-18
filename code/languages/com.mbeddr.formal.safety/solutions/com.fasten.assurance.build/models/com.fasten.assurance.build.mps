@@ -430,6 +430,20 @@
               </node>
             </node>
           </node>
+          <node concept="2HvfSZ" id="1hVhF3lkf3q" role="39821P">
+            <node concept="398BVA" id="1hVhF3lkfdq" role="2HvfZ0">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="1hVhF3lkfmQ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1hVhF3lkfoZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="1hVhF3lkfqk" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="pUk6x" id="6hyv0iVPlGX" role="pUk7w" />
       </node>
