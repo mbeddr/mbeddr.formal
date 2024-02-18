@@ -48,7 +48,7 @@
   <node concept="TWaE8" id="3TNxfDZ8toW">
     <property role="TrG5h" value="operations_export" />
     <node concept="9PVaO" id="3TNxfDZ8tuf" role="1fTw2V">
-      <property role="3N1Lgt" value="doc_gen" />
+      <property role="3N1Lgt" value="pdf_export_dir" />
     </node>
     <node concept="19rN1b" id="3TNxfDZ8txx" role="TVegP">
       <node concept="1Pa9Pv" id="3TNxfDZ8txy" role="195_jx">
