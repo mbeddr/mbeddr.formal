@@ -10128,11 +10128,6 @@
         <node concept="1yeLz9" id="y1G8y6aW2D" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.formal.safety.argument.modelquery.generator" />
           <property role="3LESm3" value="43d5f6b1-f45e-44e8-8beb-2ef9aabefcbc" />
-          <node concept="1SiIV0" id="y1G8y6aW2E" role="3bR37C">
-            <node concept="3bR9La" id="y1G8y6aW2F" role="1SiIV1">
-              <ref role="3bR37D" node="42jqVeFkUuP" resolve="com.mbeddr.formal.base.tooling" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="y1G8y6aW2G" role="3bR37C">
             <node concept="3bR9La" id="y1G8y6aW2H" role="1SiIV1">
               <ref role="3bR37D" node="7he_lUury9o" resolve="com.mbeddr.formal.safety.gsn" />
@@ -10199,6 +10194,9 @@
           <node concept="1Busua" id="8xY_IhvyWR" role="1SiIV1">
             <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="1hVhF3lqy4f" role="1E1XAP">
+          <ref role="1E0d5P" node="2u7UHDCnPLY" resolve="com.mpsbasics.project.utils" />
         </node>
       </node>
       <node concept="1E1JtD" id="6VBHnHRiYOJ" role="2G$12L">
