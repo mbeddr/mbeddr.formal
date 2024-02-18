@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="fasten.safety.gsn.doc" uuid="b0b37262-7857-4c92-8e0e-0467c9bc45a6">
   <exported-language name="42606624-2faa-4717-ba66-77021cc11b53(com.mbeddr.formal.safety.gsn.doc)" />
+  <exported-language name="73a95f17-cede-4922-8013-3fd0d236439a(com.mbeddr.formal.safety.gsn.pdfexport)" />
+  <exported-language name="ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)" />
   <extendedDevKits>
     <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
     <extendedDevKit>54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)</extendedDevKit>
