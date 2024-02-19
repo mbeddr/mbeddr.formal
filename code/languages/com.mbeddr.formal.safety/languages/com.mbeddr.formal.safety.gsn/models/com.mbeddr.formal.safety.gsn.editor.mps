@@ -75,7 +75,9 @@
       <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
-      <concept id="7418278005949660372" name="jetbrains.mps.lang.editor.structure.FontFamilyStyleClassItem" flags="ln" index="2biZxu" />
+      <concept id="7418278005949660372" name="jetbrains.mps.lang.editor.structure.FontFamilyStyleClassItem" flags="ln" index="2biZxu">
+        <child id="7418278005949660373" name="query" index="2biZxv" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -86,6 +88,7 @@
       <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="3308309804690746362" name="jetbrains.mps.lang.editor.structure.QueryFunction_ColorComposit" flags="ig" index="mot77" />
+      <concept id="5358065249857880460" name="jetbrains.mps.lang.editor.structure.QueryFunction_FontFamily" flags="in" index="2nvQDS" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1177327570013" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_Substitute" flags="in" index="ucgPf" />
@@ -3000,18 +3003,13 @@
         <node concept="1cFabM" id="3Q78AXM_2J" role="1d8cEk">
           <node concept="3clFbS" id="3Q78AXM_2K" role="2VODD2">
             <node concept="3clFbF" id="3Q78AXM_3g" role="3cqZAp">
-              <node concept="3cpWsd" id="3Q78AXM_3h" role="3clFbG">
-                <node concept="3cmrfG" id="3Q78AXM_3i" role="3uHU7w">
-                  <property role="3cmrfH" value="1" />
+              <node concept="2OqwBi" id="3Q78AXM_3j" role="3clFbG">
+                <node concept="2YIFZM" id="3Q78AXM_3k" role="2Oq$k0">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                 </node>
-                <node concept="2OqwBi" id="3Q78AXM_3j" role="3uHU7B">
-                  <node concept="2YIFZM" id="3Q78AXM_3k" role="2Oq$k0">
-                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
-                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                  </node>
-                  <node concept="liA8E" id="3Q78AXM_3l" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
-                  </node>
+                <node concept="liA8E" id="3Q78AXM_3l" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                 </node>
               </node>
             </node>
@@ -3019,7 +3017,21 @@
         </node>
       </node>
       <node concept="2biZxu" id="65LrkjiZl6h" role="3F10Kt">
-        <property role="1rj3mz" value="Arial" />
+        <node concept="2nvQDS" id="47a1noEj99y" role="2biZxv">
+          <node concept="3clFbS" id="47a1noEj99z" role="2VODD2">
+            <node concept="3clFbF" id="47a1noEj9fN" role="3cqZAp">
+              <node concept="2OqwBi" id="47a1noEj9fP" role="3clFbG">
+                <node concept="2YIFZM" id="47a1noEj9fQ" role="2Oq$k0">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                </node>
+                <node concept="liA8E" id="47a1noEj9Lz" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getFontFamily()" resolve="getFontFamily" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="VechU" id="8xY_IhGjzx" role="3F10Kt">
         <node concept="mot77" id="8xY_IhAbgz" role="VblUZ">
