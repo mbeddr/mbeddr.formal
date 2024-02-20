@@ -3080,18 +3080,13 @@
         <node concept="1cFabM" id="3Q78AXM$Pp" role="1d8cEk">
           <node concept="3clFbS" id="3Q78AXM$Pq" role="2VODD2">
             <node concept="3clFbF" id="3Q78AXM$PU" role="3cqZAp">
-              <node concept="3cpWsd" id="3Q78AXM$PV" role="3clFbG">
-                <node concept="3cmrfG" id="3Q78AXM$PW" role="3uHU7w">
-                  <property role="3cmrfH" value="1" />
+              <node concept="2OqwBi" id="3Q78AXM$PX" role="3clFbG">
+                <node concept="2YIFZM" id="3Q78AXM$PY" role="2Oq$k0">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                 </node>
-                <node concept="2OqwBi" id="3Q78AXM$PX" role="3uHU7B">
-                  <node concept="2YIFZM" id="3Q78AXM$PY" role="2Oq$k0">
-                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
-                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                  </node>
-                  <node concept="liA8E" id="3Q78AXM$PZ" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
-                  </node>
+                <node concept="liA8E" id="3Q78AXM$PZ" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                 </node>
               </node>
             </node>
@@ -3157,6 +3152,37 @@
                     <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
                   </node>
                   <node concept="liA8E" id="7Jm8RM1kL11" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="4afdSTbTtoR" role="V601i">
+      <property role="TrG5h" value="GSNTextualNotationBaseLanguageKeyword" />
+      <node concept="3Xmtl4" id="4afdSTbTtoS" role="3F10Kt">
+        <node concept="1wgc9g" id="4afdSTbTtoT" role="3XvnJa">
+          <ref role="1wgcnl" to="xnej:2QkJsC6_xPA" resolve="FASTENBaseLanguageKeyword_Dynamic" />
+        </node>
+      </node>
+      <node concept="VSNWy" id="4afdSTbTtoU" role="3F10Kt">
+        <property role="1lJzqX" value="9" />
+        <node concept="1cFabM" id="4afdSTbTtoV" role="1d8cEk">
+          <node concept="3clFbS" id="4afdSTbTtoW" role="2VODD2">
+            <node concept="3clFbF" id="4afdSTbTtoX" role="3cqZAp">
+              <node concept="3cpWsd" id="4afdSTbTuEa" role="3clFbG">
+                <node concept="3cmrfG" id="4afdSTbTuEe" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="4afdSTbTtoY" role="3uHU7B">
+                  <node concept="2YIFZM" id="4afdSTbTtoZ" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="4afdSTbTtp0" role="2OqNvi">
                     <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                   </node>
                 </node>
@@ -5153,7 +5179,7 @@
         <node concept="VPM3Z" id="5uFV_KKC5W8" role="3F10Kt" />
         <node concept="3F0ifn" id="3$Xa1eBdls4" role="3EZMnx">
           <property role="3F0ifm" value="Away" />
-          <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
+          <ref role="1k5W1q" node="4afdSTbTtoR" resolve="GSNTextualNotationBaseLanguageKeyword" />
           <node concept="pkWqt" id="3$Xa1eBdls5" role="pqm2j">
             <node concept="3clFbS" id="3$Xa1eBdls6" role="2VODD2">
               <node concept="3clFbF" id="3$Xa1eBdls7" role="3cqZAp">
@@ -5184,7 +5210,7 @@
         </node>
         <node concept="PMmxH" id="5uFV_KKC5Z6" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-          <ref role="1k5W1q" node="4HjFLZ$nN39" resolve="GSNBaseLanguageKeyword" />
+          <ref role="1k5W1q" node="4afdSTbTtoR" resolve="GSNTextualNotationBaseLanguageKeyword" />
           <node concept="xShMh" id="71GfFl7i3Qn" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -12410,6 +12436,7 @@
       <node concept="3EZMnI" id="3EDV2YKAng_" role="3EZMnx">
         <node concept="PMmxH" id="3EDV2YKAngG" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+          <ref role="1k5W1q" node="4afdSTbTtoR" resolve="GSNTextualNotationBaseLanguageKeyword" />
         </node>
         <node concept="3F0A7n" id="3EDV2YKAngL" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
