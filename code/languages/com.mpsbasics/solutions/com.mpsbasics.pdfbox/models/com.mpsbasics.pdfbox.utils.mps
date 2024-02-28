@@ -14,15 +14,8 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="yid2" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.pdmodel(com.fasten.safety.pdfbox/)" />
     <import index="r4xz" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.pdmodel.font(com.mpsbasics.pdfbox/)" />
-    <import index="krsg" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.pdmodel.graphics.image(com.mpsbasics.pdfbox/)" />
-    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="8l7n" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.pdmodel.common(com.mpsbasics.pdfbox/)" />
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
-    <import index="mryx" ref="r:da23d8da-3a75-4f33-96d8-7b3d3c2b2ccd(com.mpsbasics.editor.utils.screenshooter)" />
-    <import index="8tn1" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.rendering(com.mpsbasics.pdfbox/)" />
-    <import index="nxzt" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.svggen(org.apache.batik/)" />
     <import index="5yhu" ref="r:019d0cc6-143d-4aa3-9dc5-d01fd5b71098(com.mpsbasics.editor.utils.notifications)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="vix4" ref="r:aa11d86f-6764-4648-8123-242eb11e6f81(com.mpsbasics.pdfexporter.behavior)" implicit="true" />
