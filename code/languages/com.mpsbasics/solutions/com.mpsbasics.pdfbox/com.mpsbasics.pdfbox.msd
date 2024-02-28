@@ -6,6 +6,10 @@
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="pdfbox-app-3.0.1.jar" />
+      <sourceRoot location="graphics2d-3.0.1.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="graphics2d-3.0.1.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -15,6 +19,7 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/pdfbox-app-3.0.1.jar" />
+    <stubModelEntry path="${module}/lib/graphics2d-3.0.1.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

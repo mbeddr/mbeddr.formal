@@ -329,7 +329,7 @@
                 </node>
                 <node concept="TSZUe" id="3TNxfDZ6dNN" role="2OqNvi">
                   <node concept="37vLTw" id="3TNxfDZ6e7r" role="25WWJ7">
-                    <ref role="3cqZAo" node="3TNxfDZ62_3" resolve="ancestor" />
+                    <ref role="3cqZAo" node="3TNxfDZ62_3" resolve="crtGoalStructure" />
                   </node>
                 </node>
               </node>
@@ -338,7 +338,7 @@
               <node concept="BsUDl" id="3TNxfDZ6puG" role="3clFbG">
                 <ref role="37wK5l" node="3TNxfDZ5$jM" resolve="collectLeg" />
                 <node concept="37vLTw" id="3TNxfDZ6pxw" role="37wK5m">
-                  <ref role="3cqZAo" node="3TNxfDZ62_3" resolve="ancestor" />
+                  <ref role="3cqZAo" node="3TNxfDZ62_3" resolve="crtGoalStructure" />
                 </node>
                 <node concept="37vLTw" id="3TNxfDZ6pCf" role="37wK5m">
                   <ref role="3cqZAo" node="3TNxfDZ5$Eg" resolve="goalStructures" />
@@ -349,7 +349,7 @@
           <node concept="2OqwBi" id="3TNxfDZ5I5I" role="2GsD0m">
             <node concept="2OqwBi" id="3TNxfDZ5DqO" role="2Oq$k0">
               <node concept="37vLTw" id="3TNxfDZ5D9M" role="2Oq$k0">
-                <ref role="3cqZAo" node="3TNxfDZ5CRy" resolve="gs" />
+                <ref role="3cqZAo" node="3TNxfDZ5CRy" resolve="seed" />
               </node>
               <node concept="2Rf3mk" id="3TNxfDZ5Ed3" role="2OqNvi">
                 <node concept="1xMEDy" id="3TNxfDZ5Ed5" role="1xVPHs">

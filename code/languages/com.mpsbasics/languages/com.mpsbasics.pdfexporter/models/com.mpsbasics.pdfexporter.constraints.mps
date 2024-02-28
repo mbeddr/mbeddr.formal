@@ -58,8 +58,8 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
+      <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
+        <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
     </language>
   </registry>
@@ -78,8 +78,8 @@
                   <node concept="2rP1CM" id="6v3euY350$p" role="2Oq$k0" />
                   <node concept="I4A8Y" id="6v3euY350Xj" role="2OqNvi" />
                 </node>
-                <node concept="1j9C0f" id="6v3euY351p9" role="2OqNvi">
-                  <node concept="chp4Y" id="6v3euY35jzO" role="3MHPCF">
+                <node concept="3lApI0" id="3GMd7ba95IQ" role="2OqNvi">
+                  <node concept="chp4Y" id="3GMd7ba95Oa" role="3MHPDn">
                     <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
                 </node>

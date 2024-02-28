@@ -2016,7 +2016,7 @@
         </node>
         <node concept="1SiIV0" id="2u7UHDC1VSB" role="3bR37C">
           <node concept="3bR9La" id="2u7UHDC1VSC" role="1SiIV1">
-            <ref role="3bR37D" node="2u7UHDC1TKp" />
+            <ref role="3bR37D" node="2u7UHDC1TKp" resolve="com.mpsbasics.pdfexporter" />
           </node>
         </node>
         <node concept="1SiIV0" id="2u7UHDCnTe3" role="3bR37C">
@@ -2037,6 +2037,25 @@
         <node concept="1SiIV0" id="3TNxfDZ5bWy" role="3bR37C">
           <node concept="3bR9La" id="3TNxfDZ5bWz" role="1SiIV1">
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2ZPTSaoSrPW" role="3bR37C">
+          <node concept="1BurEX" id="2ZPTSaoSrPX" role="1SiIV1">
+            <node concept="398BVA" id="2ZPTSaoSrPJ" role="1BurEY">
+              <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="2ZPTSaoSrPK" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2ZPTSaoSrPL" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="2ZPTSaoSrPM" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="2ZPTSaoSrPN" role="2Ry0An">
+                      <property role="2Ry0Am" value="graphics2d-3.0.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2111,6 +2130,16 @@
         <node concept="1SiIV0" id="3TNxfDZ5bX4" role="3bR37C">
           <node concept="3bR9La" id="3TNxfDZ5bX5" role="1SiIV1">
             <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2ZPTSaoSrQ9" role="3bR37C">
+          <node concept="3bR9La" id="2ZPTSaoSrQa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2ZPTSaoSrQb" role="3bR37C">
+          <node concept="3bR9La" id="2ZPTSaoSrQc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
       </node>
@@ -14620,7 +14649,7 @@
                 </node>
               </node>
               <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
-                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2023.1" />
+                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2023.2" />
               </node>
             </node>
           </node>

@@ -40,7 +40,7 @@
     <property role="EcuMT" value="4500086664082091755" />
     <property role="TrG5h" value="ArgumentLeg" />
     <property role="34LRSv" value="argument leg" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3TNxfDZ5wws" role="1TKVEi">
       <property role="IQ2ns" value="4500086664082098204" />
       <property role="20kJfa" value="goalStructure" />

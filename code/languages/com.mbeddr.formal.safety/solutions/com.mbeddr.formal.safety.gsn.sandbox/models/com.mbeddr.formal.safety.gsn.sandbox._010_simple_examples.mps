@@ -2977,6 +2977,13 @@
       <ref role="TVjpn" node="3GRi4m$r5TO" resolve="_010_simple_pattern_baselang" />
     </node>
     <node concept="TVfY7" id="24pF5$oXQit" role="TVegP" />
+    <node concept="TVjW0" id="3GMd7ba95hG" role="TVegP">
+      <ref role="TVjpn" node="1qrXfdH0LFq" resolve="_100_away_goal_010_definition" />
+    </node>
+    <node concept="TVjW0" id="3GMd7ba95hN" role="TVegP">
+      <ref role="TVjpn" node="1qrXfdGXjNu" resolve="_100_away_goal_020_reference" />
+    </node>
+    <node concept="TVfY7" id="3GMd7ba95iq" role="TVegP" />
     <node concept="TVjW0" id="24pF5$oXQi_" role="TVegP">
       <ref role="TVjpn" node="7lPNUDMt_br" resolve="_120_all_entities" />
     </node>

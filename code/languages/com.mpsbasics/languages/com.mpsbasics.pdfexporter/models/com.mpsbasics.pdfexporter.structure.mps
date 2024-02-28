@@ -33,6 +33,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -43,6 +44,10 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -101,6 +106,11 @@
     <property role="34LRSv" value="root node" />
     <property role="R4oN_" value="page generated from a root node" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3GMd7ba7JPU" role="1TKVEl">
+      <property role="IQ2nx" value="4265529464695225722" />
+      <property role="TrG5h" value="exportPictureAsPng" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="24pF5$oX9Ce" role="1TKVEi">
       <property role="IQ2ns" value="2385126976340138510" />
       <property role="20kJfa" value="rootNode" />
@@ -127,7 +137,7 @@
     <property role="EcuMT" value="6256601700975303250" />
     <property role="TrG5h" value="TitlePage" />
     <property role="34LRSv" value="title page" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5rjUx$vLrVS" role="1TKVEi">
       <property role="IQ2ns" value="6256601700975886072" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

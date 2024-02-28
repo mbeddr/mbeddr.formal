@@ -4,6 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
+    <devkit ref="b0b37262-7857-4c92-8e0e-0467c9bc45a6(fasten.safety.gsn.doc)" />
   </languages>
   <imports />
 </model>

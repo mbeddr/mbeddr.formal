@@ -3168,8 +3168,8 @@
       <node concept="3clFbS" id="BKGoaZN_d3" role="2VODD2">
         <node concept="3clFbF" id="1Nl9e7EggVY" role="3cqZAp">
           <node concept="2YIFZM" id="1Nl9e7EghkC" role="3clFbG">
-            <ref role="37wK5l" node="1Nl9e7Eg0nv" />
-            <ref role="1Pybhc" node="1Nl9e7EfLVY" />
+            <ref role="37wK5l" node="1Nl9e7Eg0nv" resolve="execute" />
+            <ref role="1Pybhc" node="1Nl9e7EfLVY" resolve="FASTENNewRootNodeUtils" />
             <node concept="2OqwBi" id="1Nl9e7EghRN" role="37wK5m">
               <node concept="2WthIp" id="1Nl9e7EghCx" role="2Oq$k0" />
               <node concept="1DTwFV" id="1Nl9e7Egice" role="2OqNvi">
@@ -3928,7 +3928,7 @@
         <node concept="3clFbF" id="1Nl9e7Eg0Ca" role="3cqZAp">
           <node concept="37vLTI" id="1Nl9e7Eg0Cb" role="3clFbG">
             <node concept="1rXfSq" id="1Nl9e7Egc1R" role="37vLTx">
-              <ref role="37wK5l" node="1Nl9e7EfNwo" resolve="determinePackage" />
+              <ref role="37wK5l" node="1Nl9e7EfNwo" resolve="getVirtualPackage" />
               <node concept="37vLTw" id="1Nl9e7EgcTE" role="37wK5m">
                 <ref role="3cqZAo" node="1Nl9e7Egchb" resolve="treeNode" />
               </node>

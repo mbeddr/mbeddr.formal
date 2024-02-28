@@ -1247,7 +1247,7 @@
                         <node concept="1rXfSq" id="7NA168qhyNT" role="33vP2m">
                           <ref role="37wK5l" node="7NA168pX2k3" resolve="importXml" />
                           <node concept="37vLTw" id="23H9md0voAM" role="37wK5m">
-                            <ref role="3cqZAo" node="23H9md0voAH" resolve="readFileToString" />
+                            <ref role="3cqZAo" node="23H9md0voAH" resolve="contentAsString" />
                           </node>
                         </node>
                       </node>
@@ -1949,7 +1949,7 @@
                         </node>
                         <node concept="2OqwBi" id="7NA168q4U8C" role="3uHU7w">
                           <node concept="37vLTw" id="7NA168q4UGn" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7NA168q4UGi" resolve="elementsByTagName" />
+                            <ref role="3cqZAo" node="7NA168q4UGi" resolve="attributeNodes" />
                           </node>
                           <node concept="liA8E" id="7NA168q4YRy" role="2OqNvi">
                             <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
