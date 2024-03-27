@@ -39,7 +39,7 @@
     <language slang="l:5e7ffa70-8e23-49f4-8c13-a887bba14c36:com.mbeddr.formal.safety.gsn.external_evidence" version="0" />
     <language slang="l:a7775cc7-19db-41cf-a724-3212ac4437b9:com.mbeddr.formal.safety.gsn.importer" version="0" />
     <language slang="l:ca32bc98-ea47-4b42-82e1-76bebf8a4e7d:com.mbeddr.formal.safety.gsn.xml_gen" version="0" />
-    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
+    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="3" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung" version="0" />
     <language slang="l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node" version="0" />

@@ -7,6 +7,7 @@
     <use id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -115,6 +116,11 @@
     <language id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts">
       <concept id="1734392475491235550" name="jetbrains.mps.console.scripts.structure.ConsoleScript" flags="ng" index="1MOzCq">
         <child id="1734392475491235551" name="command" index="1MOzCr" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -635,6 +641,21 @@
                 </node>
                 <node concept="37vLTw" id="yuql$cy7t_" role="37wK5m">
                   <ref role="3cqZAo" node="yuql$cxEkm" resolve="lines" />
+                </node>
+              </node>
+            </node>
+            <node concept="2xdQw9" id="1y75PbziWYa" role="3cqZAp">
+              <node concept="3cpWs3" id="1y75PbziXCb" role="9lYJi">
+                <node concept="2OqwBi" id="1y75PbziXOz" role="3uHU7w">
+                  <node concept="37vLTw" id="1y75PbziXCF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6r0uA12NdbN" resolve="modulesFile" />
+                  </node>
+                  <node concept="liA8E" id="1y75PbziYkU" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="1y75PbziWYc" role="3uHU7B">
+                  <property role="Xl_RC" value="wrote lines in " />
                 </node>
               </node>
             </node>

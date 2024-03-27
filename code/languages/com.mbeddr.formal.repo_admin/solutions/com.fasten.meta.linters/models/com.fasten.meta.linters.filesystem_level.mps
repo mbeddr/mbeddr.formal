@@ -45,7 +45,7 @@
     <ref role="2wR3oD" to="mjm5:1WMZ_AZ2QHN" resolve="not_updated_resolve_info" />
   </node>
   <node concept="2wR3oc" id="6wRVFFwzf93">
-    <ref role="2wR3oD" to="mjm5:ST9rMmXyNm" resolve="root_nodes_without_children" />
+    <ref role="2wR3oD" to="mjm5:ST9rMmXyNm" resolve="empty_root_nodes" />
   </node>
   <node concept="2wR3oc" id="4lfwJVE_q9k">
     <property role="2oM2pl" value="1c_Dn$lNzd7/WARNING" />
