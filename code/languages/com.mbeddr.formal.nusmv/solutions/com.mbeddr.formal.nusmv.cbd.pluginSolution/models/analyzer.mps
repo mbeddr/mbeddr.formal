@@ -5,10 +5,11 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -238,9 +239,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -264,6 +262,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
@@ -397,8 +409,12 @@
       <node concept="3uibUv" id="1wu5Hv6f_vi" role="1tU5fm">
         <ref role="3uigEE" to="2ocj:5A94f9EE$RB" resolve="MPSToolAdapter" />
       </node>
-      <node concept="NWlO9" id="5uY69zuQO8o" role="lGtFl">
-        <property role="NWlVz" value="Tool adapter." />
+      <node concept="z59LJ" id="1y75Pbzy7UY" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7UW" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7UX" role="1dT_Ay">
+            <property role="1dT_AB" value="Tool adapter." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1U03KaUJfh8" role="jymVt" />
@@ -409,8 +425,12 @@
       <node concept="3uibUv" id="vbJ3AuJmr8" role="1tU5fm">
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
-      <node concept="NWlO9" id="5KHBa6l32_L" role="lGtFl">
-        <property role="NWlVz" value="Model repository." />
+      <node concept="z59LJ" id="1y75Pbzy7V1" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7UZ" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7V0" role="1dT_Ay">
+            <property role="1dT_AB" value="Model repository." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7mSH3Wn59zF" role="jymVt" />
@@ -422,10 +442,14 @@
       <node concept="3Tqbb2" id="7mSH3Wn59RV" role="1tU5fm">
         <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
       </node>
-      <node concept="NWlO9" id="7mSH3Wn5a7t" role="lGtFl">
-        <property role="NWlVz" value="Analyzed module" />
-      </node>
       <node concept="3Tmbuc" id="7mSH3Wn5aeP" role="1B3o_S" />
+      <node concept="z59LJ" id="1y75Pbzy7V4" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7V2" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7V3" role="1dT_Ay">
+            <property role="1dT_AB" value="Analyzed module" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="7mSH3Wn48hB" role="jymVt" />
     <node concept="3clFbW" id="7mSH3Wn4kz0" role="jymVt">
@@ -490,8 +514,12 @@
           <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
         </node>
       </node>
-      <node concept="NWlO9" id="7mSH3Wn4kQP" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="1y75Pbzy7V7" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7V5" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7V6" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7mSH3Wn4mtk" role="jymVt" />
@@ -535,8 +563,12 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="NWlO9" id="7mSH3Wn5b_$" role="lGtFl">
-      <property role="NWlVz" value="Factory for NuSMV-based AG analyses." />
+    <node concept="3UR2Jj" id="1y75Pbzy7Va" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy7V8" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy7V9" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for NuSMV-based AG analyses." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7mSH3Wn48yg">
@@ -552,8 +584,12 @@
       <node concept="3Tqbb2" id="7mSH3Wn4A1N" role="1tU5fm">
         <ref role="ehGHo" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
       </node>
-      <node concept="NWlO9" id="7mSH3Wn4AI8" role="lGtFl">
-        <property role="NWlVz" value="Component-assembly node which will be analyzed." />
+      <node concept="z59LJ" id="1y75Pbzy7Vd" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7Vb" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7Vc" role="1dT_Ay">
+            <property role="1dT_AB" value="Component-assembly node which will be analyzed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7mSH3Wn4Axz" role="jymVt" />
@@ -608,8 +644,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="7mSH3Wn48YV" role="1B3o_S" />
-      <node concept="NWlO9" id="7mSH3Wn4q8z" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="1y75Pbzy7Vg" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7Ve" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7Vf" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7mSH3Wn492i" role="jymVt" />
@@ -1110,11 +1150,15 @@
     </node>
     <node concept="2tJIrI" id="1ZsZb$iSKc9" role="jymVt" />
     <node concept="2tJIrI" id="1NcemxVIyJn" role="jymVt" />
-    <node concept="NWlO9" id="7mSH3Wn4pYv" role="lGtFl">
-      <property role="NWlVz" value="Analyzer for running NuSMV to check Assume/Guarantees." />
-    </node>
     <node concept="3uibUv" id="1ZsZb$iRrnf" role="1zkMxy">
       <ref role="3uigEE" to="4c75:1ZsZb$iRm$D" resolve="NuSMVAnalyzerBase" />
+    </node>
+    <node concept="3UR2Jj" id="1y75Pbzy7Vj" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy7Vh" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy7Vi" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer for running NuSMV to check Assume/Guarantees." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1EKbsQQY5wF">
@@ -1131,8 +1175,12 @@
         <property role="Xl_RC" value="all contracts passed the BMC with given depth" />
       </node>
       <node concept="3Tm1VV" id="6xNJt7lCCFU" role="1B3o_S" />
-      <node concept="NWlO9" id="6xNJt7lCVv4" role="lGtFl">
-        <property role="NWlVz" value="Message that all contracts were verified successfully by BMC." />
+      <node concept="z59LJ" id="1y75Pbzy7Vm" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7Vk" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7Vl" role="1dT_Ay">
+            <property role="1dT_AB" value="Message that all contracts were verified successfully by BMC." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4gtLUSMIqW_" role="jymVt" />
@@ -1146,8 +1194,12 @@
         <property role="Xl_RC" value="no contracts found" />
       </node>
       <node concept="3Tm1VV" id="4gtLUSMIpQb" role="1B3o_S" />
-      <node concept="NWlO9" id="4gtLUSMIpQc" role="lGtFl">
-        <property role="NWlVz" value="Message that no contracts were found." />
+      <node concept="z59LJ" id="1y75Pbzy7Vp" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7Vn" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7Vo" role="1dT_Ay">
+            <property role="1dT_AB" value="Message that no contracts were found." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EKbsQQY5zf" role="jymVt" />
@@ -2004,8 +2056,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="1EKbsQQYHDp" role="1B3o_S" />
-      <node concept="NWlO9" id="1EKbsQQYKu7" role="lGtFl">
-        <property role="NWlVz" value="Lifts a list of results from &quot;general NuSMV results&quot; to AG specific results." />
+      <node concept="P$JXv" id="1y75Pbzy7Vs" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7Vq" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7Vr" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts a list of results from &quot;general NuSMV results&quot; to AG specific results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EKbsQQY5zi" role="jymVt" />
@@ -2477,8 +2533,12 @@
         <ref role="ehGHo" to="3whv:7RhjhI7zUWm" resolve="Port" />
       </node>
       <node concept="3Tm6S6" id="1EKbsQQYW3i" role="1B3o_S" />
-      <node concept="NWlO9" id="1EKbsQRavXz" role="lGtFl">
-        <property role="NWlVz" value="Returns a port represented by this fully qualified name." />
+      <node concept="P$JXv" id="1y75Pbzy7Vv" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7Vt" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7Vu" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a port represented by this fully qualified name." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EKbsQQZK6A" role="jymVt" />
@@ -2848,8 +2908,12 @@
         <ref role="ehGHo" to="3whv:7RhjhI7$lgV" resolve="Connection" />
       </node>
       <node concept="3Tm6S6" id="1EKbsQRbjmo" role="1B3o_S" />
-      <node concept="NWlO9" id="1EKbsQRbjmp" role="lGtFl">
-        <property role="NWlVz" value="Returns a connection which starts from this port and instance" />
+      <node concept="P$JXv" id="1y75Pbzy7Vy" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7Vw" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7Vx" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a connection which starts from this port and instance" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EKbsQRblQ9" role="jymVt" />
@@ -3739,8 +3803,12 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="1EKbsQQY5wG" role="1B3o_S" />
-    <node concept="NWlO9" id="1EKbsQQYLgb" role="lGtFl">
-      <property role="NWlVz" value="Lifter of NuSMV results to AG results." />
+    <node concept="3UR2Jj" id="1y75Pbzy7V_" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy7Vz" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy7V$" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter of NuSMV results to AG results." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1EKbsQRa7_e">
@@ -3749,9 +3817,6 @@
     <node concept="3Tm1VV" id="1EKbsQRa7_f" role="1B3o_S" />
     <node concept="3uibUv" id="1EKbsQRa7FN" role="1zkMxy">
       <ref role="3uigEE" to="mc3u:3fsZMFLI1jW" resolve="SimulationStepPerformerBase" />
-    </node>
-    <node concept="NWlO9" id="1EKbsQRa7Gt" role="lGtFl">
-      <property role="NWlVz" value="Simulation performer for CBD." />
     </node>
     <node concept="2tJIrI" id="1EKbsQRa7GJ" role="jymVt" />
     <node concept="Wx3nA" id="3fsZMFLIy84" role="jymVt">
@@ -3768,8 +3833,12 @@
           <ref role="HV5vE" node="1EKbsQRa7_e" resolve="CBDSimulationStepPerformer" />
         </node>
       </node>
-      <node concept="NWlO9" id="3fsZMFLIAdE" role="lGtFl">
-        <property role="NWlVz" value="Unique instance." />
+      <node concept="z59LJ" id="1y75Pbzy7VF" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7VD" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7VE" role="1dT_Ay">
+            <property role="1dT_AB" value="Unique instance." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EKbsQRadWo" role="jymVt" />
@@ -3848,6 +3917,13 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3UR2Jj" id="1y75Pbzy7VC" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy7VA" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy7VB" role="1dT_Ay">
+          <property role="1dT_AB" value="Simulation performer for CBD." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2l5A0OFaLuL">
     <property role="TrG5h" value="RefinementAnalyzer" />
@@ -3862,8 +3938,12 @@
       <node concept="3Tqbb2" id="2l5A0OFaLuP" role="1tU5fm">
         <ref role="ehGHo" to="vzqj:2l5A0OF7cwg" resolve="Refine" />
       </node>
-      <node concept="NWlO9" id="2l5A0OFaLuQ" role="lGtFl">
-        <property role="NWlVz" value="Refinement node which will be analyzed." />
+      <node concept="z59LJ" id="1y75Pbzy7VI" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7VG" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7VH" role="1dT_Ay">
+            <property role="1dT_AB" value="Refinement node which will be analyzed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2l5A0OFaLuR" role="jymVt" />
@@ -3918,8 +3998,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="2l5A0OFaLvb" role="1B3o_S" />
-      <node concept="NWlO9" id="2l5A0OFaLvc" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="1y75Pbzy7VL" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7VJ" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7VK" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2l5A0OFaLvd" role="jymVt" />
@@ -4344,11 +4428,15 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="NWlO9" id="2l5A0OFaLwV" role="lGtFl">
-      <property role="NWlVz" value="Analyzer for running NuSMV to check the refinement between a ComponentInterface and Module implmenting it." />
-    </node>
     <node concept="3uibUv" id="2l5A0OFaLwW" role="1zkMxy">
       <ref role="3uigEE" to="4c75:1ZsZb$iRm$D" resolve="NuSMVAnalyzerBase" />
+    </node>
+    <node concept="3UR2Jj" id="1y75Pbzy7VO" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy7VM" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy7VN" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer for running NuSMV to check the refinement between a ComponentInterface and Module implmenting it." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2l5A0OFb7t7">
@@ -4366,8 +4454,12 @@
       <node concept="3uibUv" id="2l5A0OFb7td" role="1tU5fm">
         <ref role="3uigEE" to="2ocj:5A94f9EE$RB" resolve="MPSToolAdapter" />
       </node>
-      <node concept="NWlO9" id="2l5A0OFb7te" role="lGtFl">
-        <property role="NWlVz" value="Tool adapter." />
+      <node concept="z59LJ" id="1y75Pbzy7VR" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7VP" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7VQ" role="1dT_Ay">
+            <property role="1dT_AB" value="Tool adapter." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2l5A0OFb7tf" role="jymVt" />
@@ -4378,8 +4470,12 @@
       <node concept="3uibUv" id="2l5A0OFb7ti" role="1tU5fm">
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
-      <node concept="NWlO9" id="2l5A0OFb7tj" role="lGtFl">
-        <property role="NWlVz" value="Model repository." />
+      <node concept="z59LJ" id="1y75Pbzy7VU" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7VS" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7VT" role="1dT_Ay">
+            <property role="1dT_AB" value="Model repository." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2l5A0OFb7tk" role="jymVt" />
@@ -4391,10 +4487,14 @@
       <node concept="3Tqbb2" id="2l5A0OFb7tm" role="1tU5fm">
         <ref role="ehGHo" to="vzqj:2l5A0OF7cwg" resolve="Refine" />
       </node>
-      <node concept="NWlO9" id="2l5A0OFb7tn" role="lGtFl">
-        <property role="NWlVz" value="Analyzed refinement." />
-      </node>
       <node concept="3Tmbuc" id="2l5A0OFb7to" role="1B3o_S" />
+      <node concept="z59LJ" id="1y75Pbzy7VX" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7VV" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7VW" role="1dT_Ay">
+            <property role="1dT_AB" value="Analyzed refinement." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="2l5A0OFb7tp" role="jymVt" />
     <node concept="3clFbW" id="2l5A0OFb7tq" role="jymVt">
@@ -4459,8 +4559,12 @@
           <ref role="ehGHo" to="vzqj:2l5A0OF7cwg" resolve="Refine" />
         </node>
       </node>
-      <node concept="NWlO9" id="2l5A0OFb7tQ" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="1y75Pbzy7W0" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy7VY" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy7VZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2l5A0OFb7tR" role="jymVt" />
@@ -4504,8 +4608,12 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="NWlO9" id="2l5A0OFb7u6" role="lGtFl">
-      <property role="NWlVz" value="Factory for NuSMV-based analyses of the refinement of component-interfaces and NuSMV modules." />
+    <node concept="3UR2Jj" id="1y75Pbzy7W3" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy7W1" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy7W2" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for NuSMV-based analyses of the refinement of component-interfaces and NuSMV modules." />
+        </node>
+      </node>
     </node>
   </node>
 </model>
