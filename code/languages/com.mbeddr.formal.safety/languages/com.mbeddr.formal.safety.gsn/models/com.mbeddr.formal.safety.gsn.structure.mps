@@ -30,7 +30,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -194,14 +193,6 @@
       <property role="20kJfa" value="text" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
-    <node concept="1TJgyj" id="6dwPixfdDSe" role="1TKVEi">
-      <property role="IQ2ns" value="7160957776623476238" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="attributes_old" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
-      <node concept="asaX9" id="3Px2xUV1gzT" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3Px2xUV1gzV" role="1TKVEi">
       <property role="IQ2ns" value="4422827436157503739" />

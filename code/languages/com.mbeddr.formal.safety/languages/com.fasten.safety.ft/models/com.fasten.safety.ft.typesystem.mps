@@ -63,7 +63,6 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
-      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -130,9 +129,6 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
-        <child id="1207055552304" name="warningText" index="a7wSD" />
-      </concept>
       <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
@@ -140,7 +136,6 @@
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
-        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
       </concept>
       <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
       <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
@@ -149,7 +144,6 @@
       <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
         <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
       </concept>
-      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -227,7 +221,6 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1215467301810" name="jetbrains.mps.lang.smodel.structure.Property_RemoveOperation" flags="nn" index="3ZvMEC" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -261,39 +254,6 @@
     <property role="TrG5h" value="check_EventBase" />
     <property role="3GE5qa" value="events.base" />
     <node concept="3clFbS" id="11L6MQb4hf7" role="18ibNy">
-      <node concept="3clFbJ" id="11L6MQb4hfd" role="3cqZAp">
-        <node concept="2OqwBi" id="11L6MQb4i0j" role="3clFbw">
-          <node concept="2OqwBi" id="11L6MQb4hqW" role="2Oq$k0">
-            <node concept="1YBJjd" id="11L6MQb4hfp" role="2Oq$k0">
-              <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
-            </node>
-            <node concept="3TrcHB" id="11L6MQb4hBB" role="2OqNvi">
-              <ref role="3TsBF5" to="spwl:5rwT_JnuRcl" resolve="probability" />
-            </node>
-          </node>
-          <node concept="17RvpY" id="11L6MQb4ifr" role="2OqNvi" />
-        </node>
-        <node concept="3clFbS" id="11L6MQb4hff" role="3clFbx">
-          <node concept="a7r0C" id="11L6MQb4ifD" role="3cqZAp">
-            <node concept="Xl_RD" id="11L6MQb4ifV" role="a7wSD">
-              <property role="Xl_RC" value="'probability' field is deprecated - please delete this field and use events specifications in inspector" />
-            </node>
-            <node concept="1YBJjd" id="11L6MQb4ik5" role="1urrMF">
-              <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
-            </node>
-            <node concept="3Cnw8n" id="11L6MQb5OAS" role="1urrFz">
-              <ref role="QpYPw" node="11L6MQb5NcQ" resolve="deleteProperty" />
-              <node concept="3CnSsL" id="11L6MQb5OBp" role="3Coj4f">
-                <ref role="QkamJ" node="11L6MQb5NBg" resolve="eb" />
-                <node concept="1YBJjd" id="11L6MQb5OBD" role="3CoRuB">
-                  <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="33PksMocP7" role="3cqZAp" />
       <node concept="3clFbJ" id="33PksMocPB" role="3cqZAp">
         <node concept="3clFbS" id="33PksMocPD" role="3clFbx">
           <node concept="2MkqsV" id="33PksMonKM" role="3cqZAp">
@@ -340,42 +300,6 @@
     <node concept="1YaCAy" id="11L6MQb4hf9" role="1YuTPh">
       <property role="TrG5h" value="eventBase" />
       <ref role="1YaFvo" to="spwl:5rwT_JnuRci" resolve="EventBase" />
-    </node>
-  </node>
-  <node concept="Q5z_Y" id="11L6MQb5NcQ">
-    <property role="3GE5qa" value="events.base" />
-    <property role="TrG5h" value="deleteProperty" />
-    <node concept="Q6JDH" id="11L6MQb5NBg" role="Q6Id_">
-      <property role="TrG5h" value="eb" />
-      <node concept="3Tqbb2" id="11L6MQb5NBp" role="Q6QK4">
-        <ref role="ehGHo" to="spwl:5rwT_JnuRci" resolve="EventBase" />
-      </node>
-    </node>
-    <node concept="Q5ZZ6" id="11L6MQb5NcR" role="Q6x$H">
-      <node concept="3clFbS" id="11L6MQb5NcS" role="2VODD2">
-        <node concept="3clFbF" id="11L6MQb5NBK" role="3cqZAp">
-          <node concept="2OqwBi" id="11L6MQb5OiW" role="3clFbG">
-            <node concept="2OqwBi" id="11L6MQb5NLu" role="2Oq$k0">
-              <node concept="QwW4i" id="11L6MQb5NBJ" role="2Oq$k0">
-                <ref role="QwW4h" node="11L6MQb5NBg" resolve="eb" />
-              </node>
-              <node concept="3TrcHB" id="11L6MQb5NYi" role="2OqNvi">
-                <ref role="3TsBF5" to="spwl:5rwT_JnuRcl" resolve="probability" />
-              </node>
-            </node>
-            <node concept="3ZvMEC" id="11L6MQb5Oyh" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="QznSV" id="11L6MQb5Nd9" role="QzAvj">
-      <node concept="3clFbS" id="11L6MQb5Nda" role="2VODD2">
-        <node concept="3clFbF" id="11L6MQb5NhI" role="3cqZAp">
-          <node concept="Xl_RD" id="11L6MQb5NhH" role="3clFbG">
-            <property role="Xl_RC" value="Delete Probability Property" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="18kY7G" id="7wRJ5ynOyOe">

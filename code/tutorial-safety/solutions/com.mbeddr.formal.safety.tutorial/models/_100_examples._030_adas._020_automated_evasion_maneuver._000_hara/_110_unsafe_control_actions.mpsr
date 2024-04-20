@@ -22,7 +22,7 @@
         <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
       </concept>
       <concept id="2004523000582413321" name="com.mbeddr.formal.safety.stamp.structure.ActionDescriptionBase" flags="ng" index="1E0uc5">
-        <reference id="7926133672146685733" name="hazard" index="3ZrSuL" />
+        <child id="2185346695491723265" name="hazards" index="2Dy4$W" />
       </concept>
       <concept id="2004523000582413322" name="com.mbeddr.formal.safety.stamp.structure.TextualActionDescription" flags="ng" index="1E0uc6">
         <child id="2004523000582413323" name="text" index="1E0uc7" />
@@ -35,6 +35,11 @@
       </concept>
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -53,42 +58,50 @@
         <node concept="3f6qtF" id="6vZMoXu3Mk9" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$U7zXT" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_02" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$U7zXU" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$U7zXV" role="19SJt6">
                 <property role="19SUeA" value="when another vehicle drives parallel to the object and ego enters the other lane =&gt; collision" />
               </node>
             </node>
+            <node concept="DABN8" id="31dqLs$$zHl" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
+            </node>
           </node>
           <node concept="1E0uc6" id="_wUu$U7zXM" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_03" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$U7zXQ" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$U7zXR" role="19SJt6">
                 <property role="19SUeA" value="when another vehicle drives parallel to the object and the other vehicle enters (comes too close to) ego lane =&gt; potential collision" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHn" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
         <node concept="3f6qtF" id="6vZMoXu3Mkb" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGPy" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGP$" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGP_" role="19SJt6">
                 <property role="19SUeA" value="during L3 driving and in presence of an object in ego lane =&gt; potential collision / activation of emergency braking" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHp" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
         <node concept="3f6qtF" id="6vZMoXu3Mkd" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGP1" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_TRAJ_04" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGP2" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGP3" role="19SJt6">
                 <property role="19SUeA" value="when computed too late can lead to the necessity of an emergency maneuver =&gt; potential collision" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHr" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
@@ -101,11 +114,13 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkg" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$U7zY1" role="3f6qtG">
             <property role="TrG5h" value="UCA_PLAN_CEM_FUN_ACT_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$U7zY2" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$U7zY3" role="19SJt6">
                 <property role="19SUeA" value="during highway L3 mode, false provision leads to driver thinking CEM is executed, if obstacle =&gt; collision" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHt" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
@@ -123,11 +138,13 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkk" role="3f6qqO">
           <node concept="1E0uc6" id="41_NtXJu_8_" role="3f6qtG">
             <property role="TrG5h" value="UCA_DRIVER_DEACTIVATE_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="41_NtXJu_8E" role="1E0uc7">
               <node concept="19SUe$" id="41_NtXJu_8F" role="19SJt6">
                 <property role="19SUeA" value="when driving on highway, if driver is not aware that L3 mode is abandoned =&gt; collision" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHv" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
@@ -142,11 +159,13 @@
         <node concept="3f6qtF" id="6vZMoXu3Mko" role="3f6qqO">
           <node concept="1E0uc6" id="41_NtXJu_8P" role="3f6qtG">
             <property role="TrG5h" value="UCA_DRIVER_ACTIVATE_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="41_NtXJu_8Q" role="1E0uc7">
               <node concept="19SUe$" id="41_NtXJu_8R" role="19SJt6">
                 <property role="19SUeA" value="when driving on highway, if driver is not aware but CEM is active =&gt; confusion of the driver possible leading to collision" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHx" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
@@ -167,11 +186,13 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkt" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGP4" role="3f6qtG">
             <property role="TrG5h" value="UCA_PER_TRACKING_01" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGP5" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGP6" role="19SJt6">
                 <property role="19SUeA" value="when driving =&gt; collision" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHz" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
@@ -183,22 +204,26 @@
         <node concept="3f6qtF" id="6vZMoXu3Mkw" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGPg" role="3f6qtG">
             <property role="TrG5h" value="UCA_PER_OBST_DET_02" />
-            <ref role="3ZrSuL" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGPh" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGPi" role="19SJt6">
                 <property role="19SUeA" value="- false positive / imprecise detection during driving =&gt; unnecessary evasion maneuver / &quot;chaotic&quot; behavior of EGO =&gt; potential collision with other participants" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zH_" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$U7zXF" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>
         <node concept="3f6qtF" id="6vZMoXu3Mkx" role="3f6qqO">
           <node concept="1E0uc6" id="_wUu$TYGP9" role="3f6qtG">
             <property role="TrG5h" value="UCA_PER_OBST_DET_01" />
-            <ref role="3ZrSuL" node="_wUu$TYbEK" resolve="Collision with another vehicle" />
             <node concept="19SGf9" id="_wUu$TYGPa" role="1E0uc7">
               <node concept="19SUe$" id="_wUu$TYGPb" role="19SJt6">
                 <property role="19SUeA" value="- during L3 driving =&gt; later activation of emergency braking / potential collision" />
               </node>
+            </node>
+            <node concept="DABN8" id="31dqLs$$zHB" role="2Dy4$W">
+              <ref role="DABNb" node="_wUu$TYbEK" resolve="Collision with another vehicle" />
             </node>
           </node>
         </node>

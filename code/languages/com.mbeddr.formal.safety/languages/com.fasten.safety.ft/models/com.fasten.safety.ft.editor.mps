@@ -3402,30 +3402,6 @@
           <property role="37lx6p" value="hZ7kQ4a/CENTER" />
         </node>
       </node>
-      <node concept="3F0A7n" id="1GpuQyThJlq" role="3EZMnx">
-        <ref role="1NtTu8" to="spwl:5rwT_JnuRcl" resolve="probability" />
-        <node concept="37jFXN" id="1GpuQyTjnAd" role="3F10Kt">
-          <property role="37lx6p" value="hZ7kQ4a/CENTER" />
-        </node>
-        <node concept="VSNWy" id="1GpuQyTjnAi" role="3F10Kt">
-          <property role="1lJzqX" value="9" />
-        </node>
-        <node concept="pkWqt" id="11L6MQb4bLJ" role="pqm2j">
-          <node concept="3clFbS" id="11L6MQb4bLK" role="2VODD2">
-            <node concept="3clFbF" id="11L6MQb4dNE" role="3cqZAp">
-              <node concept="2OqwBi" id="11L6MQb4f1Y" role="3clFbG">
-                <node concept="2OqwBi" id="11L6MQb4e3W" role="2Oq$k0">
-                  <node concept="pncrf" id="11L6MQb4dND" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="11L6MQb4elF" role="2OqNvi">
-                    <ref role="3TsBF5" to="spwl:5rwT_JnuRcl" resolve="probability" />
-                  </node>
-                </node>
-                <node concept="17RvpY" id="11L6MQb4frT" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="2iRkQZ" id="1GpuQyThJl0" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="1GpuQyThJkV" role="CpUAK">
@@ -3687,30 +3663,6 @@
     <node concept="3EZMnI" id="3ZjKZgVHKvZ" role="2wV5jI">
       <node concept="PMmxH" id="3f8ZVRXtyns" role="3EZMnx">
         <ref role="PMmxG" node="EBYTccZOox" resolve="FaultTreeElementBaseInInspectorEditorComponent" />
-      </node>
-      <node concept="3EZMnI" id="3ZjKZgVHKw4" role="3EZMnx">
-        <node concept="2iRfu4" id="3ZjKZgVHKw5" role="2iSdaV" />
-        <node concept="3F0ifn" id="3ZjKZgVHKw6" role="3EZMnx">
-          <property role="3F0ifm" value="FIT:" />
-        </node>
-        <node concept="3F0A7n" id="3ZjKZgVHKw7" role="3EZMnx">
-          <ref role="1NtTu8" to="spwl:5rwT_JnuRcl" resolve="probability" />
-        </node>
-        <node concept="pkWqt" id="3ZjKZgVHKw8" role="pqm2j">
-          <node concept="3clFbS" id="3ZjKZgVHKw9" role="2VODD2">
-            <node concept="3clFbF" id="3ZjKZgVHKwa" role="3cqZAp">
-              <node concept="2OqwBi" id="3ZjKZgVHKwb" role="3clFbG">
-                <node concept="2OqwBi" id="3ZjKZgVHKwc" role="2Oq$k0">
-                  <node concept="pncrf" id="3ZjKZgVHKwd" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="3ZjKZgVHKwe" role="2OqNvi">
-                    <ref role="3TsBF5" to="spwl:5rwT_JnuRcl" resolve="probability" />
-                  </node>
-                </node>
-                <node concept="17RvpY" id="3ZjKZgVHKwf" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="PMmxH" id="3ZjKZgVHKwg" role="3EZMnx">
         <ref role="PMmxG" node="11L6MQb4h46" resolve="EventSpecEditorComponent" />
